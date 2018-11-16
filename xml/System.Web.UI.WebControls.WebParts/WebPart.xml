@@ -60,7 +60,7 @@
 ## Examples  
  The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.WebParts.WebPart> control and reference it in a Web page.  
   
- The first part of the example contains the code for a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control named `TextDisplayWebPart`. This control demonstrates how to create a simple custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control that gives you access to the features of the Web Parts control set. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example assumes that you compile the source code into an assembly, place it in a Bin subfolder of your Web application, and reference the assembly with a `Register` directive in your Web page. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The first part of the example contains the code for a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control named `TextDisplayWebPart`. This control demonstrates how to create a simple custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control that gives you access to the features of the Web Parts control set. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example assumes that you compile the source code into an assembly, place it in a Bin subfolder of your Web application, and reference the assembly with a `Register` directive in your Web page. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_General_TextDisplayPart#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/CS/textdisplaywebpart.cs#2)]
  [!code-vb[WebParts_General_TextDisplayPart#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/VB/textdisplaywebpart.vb#2)]  
@@ -73,10 +73,10 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Overview:  The Web Parts Control Set</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/13525a0a-22b8-4861-b24c-99df859e2cb5">Introduction to Web Parts</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Overview:  The Web Parts Control Set</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/13525a0a-22b8-4861-b24c-99df859e2cb5">Introduction to Web Parts</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -105,7 +105,7 @@
 ## Examples  
  The following code example demonstrates how a control that derives from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class inherits the default property values set in the base <xref:System.Web.UI.WebControls.WebParts.WebPart.%23ctor%2A> constructor, but then changes the value of one property in the constructor of the derived control.  
   
- The first part of this example contains the code for a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control named `TextDisplayWebPart`. This control demonstrates how to create a simple custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control that gives you access to the features of the Web Parts control set. Note that in the constructor of the custom control, the `TextDisplayWebPart.AllowClose` property is set to `false`, which has the effect of preventing users from closing the control on a Web page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example assumes that you compile the source code into an assembly, place it in a Bin subfolder of your Web application, and reference the assembly with a `Register` directive in your Web page. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The first part of this example contains the code for a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control named `TextDisplayWebPart`. This control demonstrates how to create a simple custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control that gives you access to the features of the Web Parts control set. Note that in the constructor of the custom control, the `TextDisplayWebPart.AllowClose` property is set to `false`, which has the effect of preventing users from closing the control on a Web page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example assumes that you compile the source code into an assembly, place it in a Bin subfolder of your Web application, and reference the assembly with a `Register` directive in your Web page. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_General_TextDisplayPart#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/CS/textdisplaywebpart.cs#2)]
  [!code-vb[WebParts_General_TextDisplayPart#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/VB/textdisplaywebpart.vb#2)]  
@@ -117,7 +117,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AllowClose">
@@ -172,16 +172,16 @@
   
  If a developer sets the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowClose%2A> property to `false`, a close verb does not appear on the control, and the user is not able to close the control.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
- The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
    
   
 ## Examples  
  The following code example demonstrates how to change the default setting of the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowClose%2A> property for a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, so that it cannot be closed.  
   
- The first part of this example contains the code for a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control named `TextDisplayWebPart`. Note that in the constructor of the custom control, the `TextDisplayWebPart.AllowClose` property is set to `false`, which has the effect of preventing users from closing the control on a Web page. This means that the close verb on the verbs menu of the control will be disabled for users. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example assumes that you compile the source code into an assembly, place it in a Bin subfolder of your Web application, and reference the assembly with a `Register` directive in your Web page. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The first part of this example contains the code for a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control named `TextDisplayWebPart`. Note that in the constructor of the custom control, the `TextDisplayWebPart.AllowClose` property is set to `false`, which has the effect of preventing users from closing the control on a Web page. This means that the close verb on the verbs menu of the control will be disabled for users. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example assumes that you compile the source code into an assembly, place it in a Bin subfolder of your Web application, and reference the assembly with a `Register` directive in your Web page. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_General_TextDisplayPart#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/CS/textdisplaywebpart.cs#2)]
  [!code-vb[WebParts_General_TextDisplayPart#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/VB/textdisplaywebpart.vb#2)]  
@@ -195,7 +195,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Hidden" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowHide" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AllowConnect">
@@ -240,14 +240,14 @@
 ## Remarks  
  The property value can be set declaratively in page markup, or programmatically.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
- The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.CanConnectWebParts" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AllowEdit">
@@ -295,21 +295,21 @@
   
  When the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowEdit%2A> property is set to `false` either declaratively or programmatically, editing options are limited. The only possible editing operations are changes to the page's layout, using a <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart> control, or other basic operations enabled through custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls.  
   
- For an example that uses <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls from the Web Parts control set and shows how to enable editing of a custom Web Parts control, see [Walkthrough: Creating a Web Parts Page](http://msdn.microsoft.com/library/e05b659c-d6da-46cb-b177-48efe55f2770).  
+ For an example that uses <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls from the Web Parts control set and shows how to enable editing of a custom Web Parts control, see [Walkthrough: Creating a Web Parts Page](https://msdn.microsoft.com/library/e05b659c-d6da-46cb-b177-48efe55f2770).  
   
 > [!IMPORTANT]
->  The effect that the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowEdit%2A> property has on a control's behavior is also impacted by the current personalization scope of the Web page, and the individual Web Parts controls on that page. For more information, see [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+>  The effect that the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowEdit%2A> property has on a control's behavior is also impacted by the current personalization scope of the Web page, and the individual Web Parts controls on that page. For more information, see [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
- The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
    
   
 ## Examples  
  The following code example demonstrates how to change the default setting of the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowEdit%2A> property for a Web Parts control, so that the control cannot be edited. This example assumes the use of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, `TextDisplayWebPart`, which is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
   
- The code example also uses a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The code example also uses a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-aspx-csharp[WebParts_WebPart_AllowEdit#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowEdit/CS/displaymodemenucs.ascx#5)]
  [!code-aspx-vb[WebParts_WebPart_AllowEdit#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowEdit/VB/displaymodemenuvb.ascx#5)]  
@@ -321,10 +321,10 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/e05b659c-d6da-46cb-b177-48efe55f2770">Walkthrough: Creating a Web Parts Page</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0">Walkthrough: Changing Display Modes on a Web Parts Page</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e05b659c-d6da-46cb-b177-48efe55f2770">Walkthrough: Creating a Web Parts Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0">Walkthrough: Changing Display Modes on a Web Parts Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AllowHide">
@@ -372,16 +372,16 @@
   
  Hidden controls are distinct from controls that are closed, because the <xref:System.Web.UI.WebControls.WebParts.WebPart.Hidden%2A> property has a distinct meaning within the Web Parts control set. Closed controls are not even rendered on a page, and do not participate in page life cycle events. In contrast, while hidden <xref:System.Web.UI.WebControls.WebParts.WebPart> controls are not visible to users, they are still rendered on a Web page, are still contained in a zone, and can still maintain connections with other <xref:System.Web.UI.WebControls.WebParts.WebPart> controls as part of a Web Parts application.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
- The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
    
   
 ## Examples  
  The following code example demonstrates how to change the default setting of the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowHide%2A> property for a custom Web Parts control, so that the custom control cannot be hidden by a user. This example assumes the use of a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, `TextDisplayWebPart`, which is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
   
- The code example also uses a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The code example also uses a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-aspx-csharp[WebParts_WebPart_AllowHide#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowHide/CS/displaymodemenucs.ascx#5)]
  [!code-aspx-vb[WebParts_WebPart_AllowHide#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowHide/VB/displaymodemenuvb.ascx#5)]  
@@ -394,7 +394,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Hidden" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AllowMinimize">
@@ -442,9 +442,9 @@
   
  When a user minimizes a control, it reduces the control's size down to a minimal area that displays only part of the control's title bar and title.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
- The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
    
   
@@ -458,7 +458,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AllowZoneChange">
@@ -504,16 +504,16 @@
 ## Remarks  
  When the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowZoneChange%2A> property is `true`, and a Web page is in a display mode that allows layout changes (such as edit or design mode), a user can change the page layout by moving a control to another <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone on the page. If the property is set to `false`, a control cannot be moved between zones, but can still be moved within its current zone.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
- The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
    
   
 ## Examples  
  The following code example demonstrates how to change the default setting of the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowZoneChange%2A> property for a custom Web Parts control, so that an end user cannot move the control to a different zone. This example assumes the use of a custom control, `TextDisplayWebPart`, which is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
   
- The code example also uses a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The code example also uses a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-aspx-csharp[WebParts_WebPart_AllowZoneChange#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowZoneChange/CS/displaymodemenucs.ascx#5)]
  [!code-aspx-vb[WebParts_WebPart_AllowZoneChange#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowZoneChange/VB/displaymodemenuvb.ascx#5)]  
@@ -525,7 +525,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AuthorizationFilter">
@@ -569,9 +569,9 @@
   
  In some cases, the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property might be used with the ASP.NET role manager feature, so that if a user is in a certain role, and if the string value of the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property meets certain conditions set by the developer, then the control can be added. This approach allows developers to create custom views of a page based on a combination of roles and other authorization criteria that they specify.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
- The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
    
   
@@ -608,7 +608,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
           <para>To use this property, you must create a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control, and override either its <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnAuthorizeWebPart(System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs)" /> method or its <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized(System.Web.UI.WebControls.WebParts.WebPart)" /> method to handle the check for the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter" /> property.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CatalogIconImageUrl">
@@ -654,14 +654,14 @@ protected void mgr1_AuthorizeWebPart(object sender,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
    
   
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.WebParts.WebPart.CatalogIconImageUrl%2A> property for a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, so that an image appears with the control in a catalog of controls. This example assumes the use of a custom control, `TextDisplayWebPart`, created in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
   
- The code example also uses a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The code example also uses a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-aspx-csharp[WebParts_WebPart_CatalogIconImageUrl#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_CatalogIconImageURL/CS/displaymodemenucs.ascx#5)]
  [!code-aspx-vb[WebParts_WebPart_CatalogIconImageUrl#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_CatalogIconImageURL/VB/displaymodemenuvb.ascx#5)]  
@@ -674,7 +674,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The internal validation system has determined that the URL might contain script attacks.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ChromeState">
@@ -716,7 +716,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeState" /> values.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.ChromeState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ChromeType">
@@ -757,7 +757,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeType" /> values.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.ChromeType" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectErrorMessage">
@@ -798,7 +798,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateEditorParts">
@@ -839,7 +839,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.WebBrowsableObject" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -877,12 +877,12 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  For a code example that uses this property, see the base <xref:System.Web.UI.WebControls.WebParts.Part.Description%2A> property.  
   
- The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Description" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -918,7 +918,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Panel.Direction" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayTitle">
@@ -966,7 +966,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Description" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Subtitle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ExportMode">
@@ -1017,16 +1017,16 @@ protected void mgr1_AuthorizeWebPart(object sender,
 >   
 >  `</webParts>`  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
- The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
    
   
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property. Note that for the export code example to work, you must also update your Web.config file by adding the attribute `enableExport="true"` to the `<webParts>` element, as indicated in the Remarks section.  
   
- The first part of this example contains the code for a control named `TextDisplayWebPart`. This control is the same as the custom control that is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview, except that it adds a `Personalizable` attribute to the `TextDisplayWebPart.ContentText` property so the property can be exported. Note that the attribute declaration includes a value of `true` for the `isSensitive` parameter, meaning that the property is marked as sensitive data for export purposes. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example assumes that you compile the source code into an assembly, place it in a Bin subfolder of your Web application, and reference the assembly with a `Register` directive in your Web page. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The first part of this example contains the code for a control named `TextDisplayWebPart`. This control is the same as the custom control that is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview, except that it adds a `Personalizable` attribute to the `TextDisplayWebPart.ContentText` property so the property can be exported. Note that the attribute declaration includes a value of `true` for the `isSensitive` parameter, meaning that the property is marked as sensitive data for export purposes. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example assumes that you compile the source code into an assembly, place it in a Bin subfolder of your Web application, and reference the assembly with a `Register` directive in your Web page. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPart_ExportMode#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_ExportMode/CS/textdisplaywebpart.cs#2)]
  [!code-vb[WebParts_WebPart_ExportMode#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_ExportMode/VB/textdisplaywebpart.vb#2)]  
@@ -1044,7 +1044,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <exception cref="T:System.InvalidOperationException">The control is already loaded and the personalization scope of the control is set to the <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.User" /> scope.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.PersonalizableAttribute" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.ImportErrorMessage" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="HasSharedData">
@@ -1088,8 +1088,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="HasUserData">
@@ -1133,8 +1133,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -1165,7 +1165,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Internet Explorer rendering modes can affect the height of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control and the height of the zone that contains it. Internet Explorer renders Web pages either in compatibility mode (backward compatible with previous browser versions) or in standards mode (determined by the presence of a `DOCTYPE` declaration in the page). For information about these modes, see the DHTML [compatMode](http://go.microsoft.com/fwlink/?LinkId=57175) property.  
+ Internet Explorer rendering modes can affect the height of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control and the height of the zone that contains it. Internet Explorer renders Web pages either in compatibility mode (backward compatible with previous browser versions) or in standards mode (determined by the presence of a `DOCTYPE` declaration in the page). For information about these modes, see the DHTML [compatMode](https://go.microsoft.com/fwlink/?LinkId=57175) property.  
   
  When Internet Explorer renders a page in standards mode, under some circumstances it might not resize cells in tables, even when a cell's HTML markup is `<td height="100%">`. As a result, <xref:System.Web.UI.WebControls.WebParts.WebPart> controls and their containing zone are rendered so that the controls do not stretch to the full height of the zone.  
   
@@ -1243,9 +1243,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
 |<xref:System.Web.UI.WebControls.WebParts.WebPartHelpMode.Modeless>|Opens a separate browser window, if the browser has this capability. A user does not have to close the window before returning to the Web page.|  
 |<xref:System.Web.UI.WebControls.WebParts.WebPartHelpMode.Navigate>|Replaces the Web Parts page in the browser window.|  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
- The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
    
   
@@ -1277,7 +1277,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartHelpMode" /> values.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="HelpUrl">
@@ -1325,9 +1325,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
 ## Remarks  
  To enable a verb menu with a help verb in the verbs menu of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, you must provide a value for the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl%2A> property. The manner in which the Help content is displayed in the browser is determined by the value of the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpMode%2A> property.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
- The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
    
   
@@ -1359,7 +1359,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
         <exception cref="T:System.ArgumentException">The internal validation system has determined that the URL might contain script attacks.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.HelpMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Hidden">
@@ -1409,7 +1409,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  When the <xref:System.Web.UI.WebControls.WebParts.WebPart.Hidden%2A> property on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is set to `false`, which is the default, the control is displayed on the page. Note that if the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowHide%2A> property is set to `false`, end users are not allowed to edit the <xref:System.Web.UI.WebControls.WebParts.WebPart.Hidden%2A> property value.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -1424,7 +1424,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowHide" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ImportErrorMessage">
@@ -1465,9 +1465,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  For a full code example that demonstrates both exporting and importing .WebPart description files for <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, which includes use of the <xref:System.Web.UI.WebControls.WebParts.WebPart.ImportErrorMessage%2A> property, see the <xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart> class.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
- The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
  ]]></format>
         </remarks>
@@ -1518,7 +1518,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowClose" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IsShared">
@@ -1563,7 +1563,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  If a dynamic control is added while a user is viewing the page in shared personalization scope, the control will be shared. If the control is added while the user is in user personalization scope, the <xref:System.Web.UI.WebControls.WebParts.WebPart.IsShared%2A> property value for that control will be `false`.  
   
- For more information about shared and per-user controls, see [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ For more information about shared and per-user controls, see [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
    
   
@@ -1578,8 +1578,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsStandalone" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IsStandalone">
@@ -1618,8 +1618,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is not contained in a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> zone; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsShared" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IsStatic">
@@ -1663,8 +1663,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnClosing">
@@ -1699,7 +1699,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowClose" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsClosed" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnConnectModeChanged">
@@ -1735,7 +1735,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>A derived control needs to override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnConnectModeChanged(System.EventArgs)" /> method. Developers can raise custom events or carry out other actions. The method is called by the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control when the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.BeginWebPartConnecting(System.Web.UI.WebControls.WebParts.WebPart)" /> and <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.EndWebPartConnecting" /> methods are called to establish connections between controls.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnDeleting">
@@ -1771,7 +1771,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>A derived control needs to override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnDeleting(System.EventArgs)" /> method. Developers can raise custom events or carry out other actions. The method is called when the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" /> method is called.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnEditModeChanged">
@@ -1807,7 +1807,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>A derived control needs to override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnEditModeChanged(System.EventArgs)" /> method, and use the overridden method to raise a custom event. Developers can raise custom events or carry out other actions. The method is called when the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.BeginWebPartEditing(System.Web.UI.WebControls.WebParts.WebPart)" /> and <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.EndWebPartEditing" /> methods are called during editing.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetPersonalizationDirty">
@@ -1817,7 +1817,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       </AssemblyInfo>
       <Docs>
         <summary>Sets a flag indicating that personalization data has changed for a Web Parts control or a server control placed in a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> zone.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="SetPersonalizationDirty">
@@ -1853,7 +1853,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.WebPartManager" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SetPersonalizationDirty">
@@ -1888,7 +1888,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <exception cref="T:System.ArgumentNullException">The object in the <paramref name="control" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The control derives from <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" />. Controls that derive from <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> should use the protected <see cref="M:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty" /> method instead.</exception>
         <exception cref="T:System.InvalidOperationException">The page associated with the control does not have a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Subtitle">
@@ -1938,14 +1938,14 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  If you provide a value for the <xref:System.Web.UI.WebControls.WebParts.WebPart.Subtitle%2A> property in a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, the Web Parts control set automatically appends it to the value of the <xref:System.Web.UI.WebControls.WebParts.WebPart.Title%2A> property to create a complete title for the control.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
 ## Examples  
  The following code example demonstrates how to provide a subtitle for instances of a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
   
- The first part of this example contains the code for a custom control named `TextDisplayWebPart`. This control is the same as the custom control which is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview, except that it also overrides the <xref:System.Web.UI.WebControls.WebParts.WebPart.Subtitle%2A> property to provide a standard subtitle containing a fictitious company name for instances of the custom control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example assumes that you compile the source code into an assembly, place it in a Bin subfolder of your Web application, and reference the assembly with a `Register` directive in your Web page. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The first part of this example contains the code for a custom control named `TextDisplayWebPart`. This control is the same as the custom control which is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview, except that it also overrides the <xref:System.Web.UI.WebControls.WebParts.WebPart.Subtitle%2A> property to provide a standard subtitle containing a fictitious company name for instances of the custom control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example assumes that you compile the source code into an assembly, place it in a Bin subfolder of your Web application, and reference the assembly with a `Register` directive in your Web page. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPart_Subtitle#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Subtitle/CS/textdisplaywebpart.cs#2)]
  [!code-vb[WebParts_WebPart_Subtitle#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Subtitle/VB/textdisplaywebpart.vb#2)]  
@@ -1961,7 +1961,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
           <para>To supply a subtitle for instances of a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control, you must override the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Subtitle" /> property.</para>
         </block>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -2006,7 +2006,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="TitleIconImageUrl">
@@ -2052,7 +2052,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
    
   
@@ -2067,7 +2067,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The internal validation system has determined that the URL might contain script attacks.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="TitleUrl">
@@ -2118,9 +2118,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
 ## Remarks  
  When you assign a URL to the <xref:System.Web.UI.WebControls.WebParts.WebPart.TitleUrl%2A> property, the title of the control becomes a link to supplemental information about the control. The URL is not rendered when the page is in a display mode where controls can be dragged, such as design, edit, or catalog mode.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
- The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
    
   
@@ -2135,7 +2135,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The internal validation system has determined that the URL might contain script attacks.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -2229,7 +2229,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
           <para>Derived classes can override the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Verbs" /> property to allow users to add custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> objects to the verb collection for a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebBrowsableObject">
@@ -2277,7 +2277,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.IWebEditable.WebBrowsableObject" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.WebBrowsableObject" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartManager">
@@ -2315,7 +2315,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -2387,7 +2387,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
 ## Examples  
  The following code example demonstrates how to access the <xref:System.Web.UI.WebControls.WebParts.WebPart.Zone%2A> and <xref:System.Web.UI.WebControls.WebParts.WebPart.ZoneIndex%2A> properties for a custom Web Parts control. This example assumes the use of a custom control, `TextDisplayWebPart`, created in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
   
- The code example includes a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The code example includes a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-aspx-csharp[WebParts_WebPart_Zone#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Zone/CS/displaymodemenucs.ascx#5)]
  [!code-aspx-vb[WebParts_WebPart_Zone#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Zone/VB/displaymodemenuvb.ascx#5)]  
@@ -2402,7 +2402,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebZone" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZone" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ZoneIndex">
@@ -2452,7 +2452,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
 ## Examples  
  The following code example demonstrates how to access the <xref:System.Web.UI.WebControls.WebParts.WebPart.Zone%2A> and <xref:System.Web.UI.WebControls.WebParts.WebPart.ZoneIndex%2A> properties for a custom Web Parts control. This example assumes the use of a custom control, `TextDisplayWebPart`, created in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
   
- The code example includes a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The code example includes a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-aspx-csharp[WebParts_WebPart_Zone#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Zone/CS/displaymodemenucs.ascx#5)]
  [!code-aspx-vb[WebParts_WebPart_Zone#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Zone/VB/displaymodemenuvb.ascx#5)]  
@@ -2467,7 +2467,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebZone" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZone" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

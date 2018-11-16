@@ -24,7 +24,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Converts managed <see cref="T:System.Printing.PrintTicket" /> objects to unmanaged Graphics Device Interface (GDI) [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structures, and vice versa.</summary>
+    <summary>Converts managed <see cref="T:System.Printing.PrintTicket" /> objects to unmanaged Graphics Device Interface (GDI) [DEVMODE](https://go.microsoft.com/fwlink/?LinkId=89844) structures, and vice versa.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -60,7 +60,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information on the DEVMODE structure, see [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565).  
+ For more information on the DEVMODE structure, see [DEVMODE](https://msdn.microsoft.com/library/windows/desktop/dd183565).  
   
  ]]></format>
         </remarks>
@@ -69,7 +69,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="clientPrintSchemaVersion" /> is 0 or less.</exception>
         <exception cref="T:System.Printing.PrintQueueException">The converter was unable to bind to <paramref name="deviceName" />.</exception>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=186397">Print Schema</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=186397">Print Schema</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ConvertDevModeToPrintTicket">
@@ -78,7 +78,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Converts the specified [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure to a managed code <see cref="T:System.Printing.PrintTicket" />.</summary>
+        <summary>Converts the specified [DEVMODE](https://go.microsoft.com/fwlink/?LinkId=89844) structure to a managed code <see cref="T:System.Printing.PrintTicket" />.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="ConvertDevModeToPrintTicket">
@@ -107,13 +107,13 @@
       </Parameters>
       <Docs>
         <param name="devMode">A <see cref="T:System.Byte" /> array that contains the DEVMODE structure.</param>
-        <summary>Converts the specified [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure to a managed code <see cref="T:System.Printing.PrintTicket" />.</summary>
+        <summary>Converts the specified [DEVMODE](https://go.microsoft.com/fwlink/?LinkId=89844) structure to a managed code <see cref="T:System.Printing.PrintTicket" />.</summary>
         <returns>The new managed <see cref="T:System.Printing.PrintTicket" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information on the DEVMODE structure, see [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565).  
+ For more information on the DEVMODE structure, see [DEVMODE](https://msdn.microsoft.com/library/windows/desktop/dd183565).  
   
  The scope of the returned <xref:System.Printing.PrintTicket> is the entire print job.  
   
@@ -150,7 +150,7 @@
       <Docs>
         <param name="devMode">A <see cref="T:System.Byte" /> buffer containing the DEVMODE structure to convert.</param>
         <param name="scope">A <see cref="T:System.Printing.PrintTicketScope" /> value that specifies whether the new <see cref="T:System.Printing.PrintTicket" /> applies to a page, a document, or an entire print job.</param>
-        <summary>Converts the specified [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure to a managed code <see cref="T:System.Printing.PrintTicket" /> that has the specified scope.</summary>
+        <summary>Converts the specified [DEVMODE](https://go.microsoft.com/fwlink/?LinkId=89844) structure to a managed code <see cref="T:System.Printing.PrintTicket" /> that has the specified scope.</summary>
         <returns>The new <see cref="T:System.Printing.PrintTicket" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -158,7 +158,7 @@
 ## Remarks  
  This method does not validate the <xref:System.Printing.PrintTicket>. To validate it, use <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A>.  
   
- For more information on the DEVMODE structure, see [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565).  
+ For more information on the DEVMODE structure, see [DEVMODE](https://msdn.microsoft.com/library/windows/desktop/dd183565).  
   
  ]]></format>
         </remarks>
@@ -175,7 +175,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Converts the specified <see cref="T:System.Printing.PrintTicket" /> to an unmanaged [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure.</summary>
+        <summary>Converts the specified <see cref="T:System.Printing.PrintTicket" /> to an unmanaged [DEVMODE](https://go.microsoft.com/fwlink/?LinkId=89844) structure.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="ConvertPrintTicketToDevMode">
@@ -205,7 +205,7 @@
       <Docs>
         <param name="printTicket">The <see cref="T:System.Printing.PrintTicket" /> to convert.</param>
         <param name="baseType">A value that identifies whether to use the user default or printer default DEVMODE as the base DEVMODE.</param>
-        <summary>Converts the specified managed <see cref="T:System.Printing.PrintTicket" /> to an unmanaged [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure that is based on the [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure identified by the <see cref="T:System.Printing.Interop.BaseDevModeType" />.</summary>
+        <summary>Converts the specified managed <see cref="T:System.Printing.PrintTicket" /> to an unmanaged [DEVMODE](https://go.microsoft.com/fwlink/?LinkId=89844) structure that is based on the [DEVMODE](https://go.microsoft.com/fwlink/?LinkId=89844) structure identified by the <see cref="T:System.Printing.Interop.BaseDevModeType" />.</summary>
         <returns>A <see cref="T:System.Byte" /> array that contains the new <see href="https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodea">DEVMODE</see> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -215,7 +215,7 @@
   
  This method does not validate the <xref:System.Printing.PrintTicket>. To validate it, use <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A>.  
   
- For more information on the DEVMODE structure, see [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565).  
+ For more information on the DEVMODE structure, see [DEVMODE](https://msdn.microsoft.com/library/windows/desktop/dd183565).  
   
  ]]></format>
         </remarks>
@@ -250,7 +250,7 @@
         <param name="printTicket">The <see cref="T:System.Printing.PrintTicket" /> to convert.</param>
         <param name="baseType">A value that identifies whether to use the user default or printer default DEVMODE as the base DEVMODE.</param>
         <param name="scope">A <see cref="T:System.Printing.PrintTicketScope" /> value that specifies whether the conversion of the <see cref="T:System.Printing.PrintTicket" /> should be done at the scope of a page, a document, or an entire print job.</param>
-        <summary>Converts the specified managed code <see cref="T:System.Printing.PrintTicket" /> with the specified scope, into an unmanaged [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure that is based on the [DEVMODE](http://go.microsoft.com/fwlink/?LinkId=89844) structure identified by the <see cref="T:System.Printing.Interop.BaseDevModeType" />.</summary>
+        <summary>Converts the specified managed code <see cref="T:System.Printing.PrintTicket" /> with the specified scope, into an unmanaged [DEVMODE](https://go.microsoft.com/fwlink/?LinkId=89844) structure that is based on the [DEVMODE](https://go.microsoft.com/fwlink/?LinkId=89844) structure identified by the <see cref="T:System.Printing.Interop.BaseDevModeType" />.</summary>
         <returns>A <see cref="T:System.Byte" /> buffer that represents the new <see href="https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodea">DEVMODE</see> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -258,7 +258,7 @@
 ## Remarks  
  This method does not validate the <xref:System.Printing.PrintTicket>. To validate it, use <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A>.  
   
- For more information on the DEVMODE structure, see [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565).  
+ For more information on the DEVMODE structure, see [DEVMODE](https://msdn.microsoft.com/library/windows/desktop/dd183565).  
   
  ]]></format>
         </remarks>
@@ -320,10 +320,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) version that <see cref="T:System.Printing.Interop.PrintTicketConverter" /> can support.</summary>
-        <value>The maximum [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) version that <see cref="T:System.Printing.Interop.PrintTicketConverter" /> can support.</value>
+        <summary>Gets the maximum [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) version that <see cref="T:System.Printing.Interop.PrintTicketConverter" /> can support.</summary>
+        <value>The maximum [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) version that <see cref="T:System.Printing.Interop.PrintTicketConverter" /> can support.</value>
         <remarks>To be added.</remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=186397">Print Schema</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=186397">Print Schema</related>
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">

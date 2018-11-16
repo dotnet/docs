@@ -41,7 +41,7 @@
 ## Remarks  
  This algorithm supports key lengths of 128, 192, or 256 bits; defaulting to 256 bits. This algorithm supports block sizes of 128, 192, or 256 bits; defaulting to 128 bits (<xref:System.Security.Cryptography.Aes>-compatible).  
   
- The <xref:System.Security.Cryptography.Rijndael> class is the predecessor of the <xref:System.Security.Cryptography.Aes> algorithm. You should use the <xref:System.Security.Cryptography.Aes> algorithm instead of <xref:System.Security.Cryptography.Rijndael>. For more information, see the entry [The Differences Between Rijndael and AES](http://go.microsoft.com/fwlink/?LinkId=200932) in the .NET Security blog.  
+ The <xref:System.Security.Cryptography.Rijndael> class is the predecessor of the <xref:System.Security.Cryptography.Aes> algorithm. You should use the <xref:System.Security.Cryptography.Aes> algorithm instead of <xref:System.Security.Cryptography.Rijndael>. For more information, see the entry [The Differences Between Rijndael and AES](https://go.microsoft.com/fwlink/?LinkId=200932) in the .NET Security blog.  
   
    
   

@@ -19,7 +19,7 @@
 ## Remarks  
  The <xref:System.Web.UI.IStateFormatter> interface defines methods that a type can implement to serialize and deserialize the state that an ASP.NET Web server control maintains in its <xref:System.Web.UI.Control.ViewState%2A> property. This infrastructure is used by classes that derive from the <xref:System.Web.UI.PageStatePersister> class to maintain an ASP.NET page's state between requests. By default, ASP.NET page state is serialized and deserialized by an instance of the <xref:System.Web.UI.ObjectStateFormatter> class; however, site and adapter developers can implement the <xref:System.Web.UI.IStateFormatter> interface on their own types to perform this work.  
   
- For more information about Web server control state management and view state, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)) and [Dynamic Web Server Controls and View State](http://msdn.microsoft.com/library/c1ea6a66-3307-4c98-8187-cad462e1c027).  
+ For more information about Web server control state management and view state, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)) and [Dynamic Web Server Controls and View State](https://msdn.microsoft.com/library/c1ea6a66-3307-4c98-8187-cad462e1c027).  
   
    
   

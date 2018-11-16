@@ -402,7 +402,7 @@
 ## Remarks  
  <xref:System.Net.Sockets.TcpClient.Available%2A> is a way to determine whether data is queued for reading. If data is available, call <xref:System.Net.Sockets.NetworkStream.Read%2A> to get the data. The available data is the total amount of data queued in the network buffer for reading. If no data is queued in the network buffer, <xref:System.Net.Sockets.TcpClient.Available%2A> returns 0.  
   
- If the remote host shuts down or closes the connection, <xref:System.Net.Sockets.TcpClient.Available%2A> may throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library) for a detailed description of the error.  
+ If the remote host shuts down or closes the connection, <xref:System.Net.Sockets.TcpClient.Available%2A> may throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library) for a detailed description of the error.  
   
    
   
@@ -919,7 +919,7 @@
  This method is typically used immediately after a call to the <xref:System.Net.Dns.BeginGetHostAddresses%2A> method, which can return multiple IP addresses for a single host. Call the <xref:System.Net.Sockets.TcpClient.Connect%2A> method to establish a synchronous remote host connection to the host specified by the array of <xref:System.Net.IPAddress> elements and the port number. The <xref:System.Net.Sockets.TcpClient.Connect%2A> method will block until it either connects or fails. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this <xref:System.Net.Sockets.NetworkStream> to send and receive data.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library) for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library) for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -1129,7 +1129,7 @@
  This method is typically used immediately after a call to the <xref:System.Net.Dns.BeginGetHostAddresses%2A> method, which can return multiple IP addresses for a single host. Call this method to establish a synchronous remote host connection to the host specified by the array of <xref:System.Net.IPAddress> elements and the port number as an asynchronous operation. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this <xref:System.Net.Sockets.NetworkStream> to send and receive data.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library) for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library) for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -1389,7 +1389,7 @@
  This method blocks until the operation is complete. To perform this operation synchronously, use a <xref:System.Net.Sockets.TcpClient.Connect%2A> method.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library) for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library) for a detailed description of the error.  
   
    
   

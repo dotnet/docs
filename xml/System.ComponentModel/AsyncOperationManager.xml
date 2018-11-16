@@ -42,7 +42,7 @@
 ## Examples  
  The following code example demonstrates using the <xref:System.ComponentModel.AsyncOperationManager> class to create a class that supports asynchronous operations for any application model. It shows how to implement a class that tests a number to determine whether it is prime. This calculation can be time consuming, so it is done on a separate thread. Progress reports, incremental results, and completion notifications are handled by the <xref:System.ComponentModel.AsyncOperation> class, which ensures that the client's event handlers are called on the proper thread or context.  
   
- For a full code listing, see [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](http://msdn.microsoft.com/library/3c1aa4d4-da87-4a03-b812-3d167b8c57cf). For a full code listing of a client form, see [How to: Implement a Client of the Event-based Asynchronous Pattern](~/docs/standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
+ For a full code listing, see [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](https://msdn.microsoft.com/library/3c1aa4d4-da87-4a03-b812-3d167b8c57cf). For a full code listing of a client form, see [How to: Implement a Client of the Event-based Asynchronous Pattern](~/docs/standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
   
  [!code-csharp[System.ComponentModel.AsyncOperationManager#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs#3)]
  [!code-vb[System.ComponentModel.AsyncOperationManager#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/VB/primenumbercalculatormain.vb#3)]  
@@ -50,8 +50,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.ComponentModel.AsyncOperation" />
-    <related type="Article" href="http://msdn.microsoft.com/library/43402d19-8d30-426d-8785-1a4478233bfa">Implementing the Event-based Asynchronous Pattern</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/e51988e7-7f4b-4646-a06d-1416cee8d557">Managed Threading Best Practices</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/43402d19-8d30-426d-8785-1a4478233bfa">Implementing the Event-based Asynchronous Pattern</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/e51988e7-7f4b-4646-a06d-1416cee8d557">Managed Threading Best Practices</related>
   </Docs>
   <Members>
     <Member MemberName="CreateOperation">
@@ -114,8 +114,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.AsyncOperation" />
-        <related type="Article" href="http://msdn.microsoft.com/library/43402d19-8d30-426d-8785-1a4478233bfa">Implementing the Event-based Asynchronous Pattern</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e51988e7-7f4b-4646-a06d-1416cee8d557">Managed Threading Best Practices</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/43402d19-8d30-426d-8785-1a4478233bfa">Implementing the Event-based Asynchronous Pattern</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e51988e7-7f4b-4646-a06d-1416cee8d557">Managed Threading Best Practices</related>
       </Docs>
     </Member>
     <Member MemberName="SynchronizationContext">

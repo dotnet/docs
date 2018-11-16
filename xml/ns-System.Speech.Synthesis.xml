@@ -19,7 +19,7 @@
   
  **Generate Speech**  
   
- To generate speech from a string or from a <xref:System.Speech.Synthesis.Prompt> or <xref:System.Speech.Synthesis.PromptBuilder> object, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> methods. To generate speech from SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> methods. See [Speech Synthesis Markup Language Reference](http://msdn.microsoft.com/library/0c51279e-84d2-4f73-a924-8832039abf94) for a guide to SSML markup.  
+ To generate speech from a string or from a <xref:System.Speech.Synthesis.Prompt> or <xref:System.Speech.Synthesis.PromptBuilder> object, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> methods. To generate speech from SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> methods. See [Speech Synthesis Markup Language Reference](https://msdn.microsoft.com/library/0c51279e-84d2-4f73-a924-8832039abf94) for a guide to SSML markup.  
   
  You can guide the pronunciation of words by using the <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithHint%2A> or <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithPronunciation%2A> methods, and by adding or removing lexicons for a <xref:System.Speech.Synthesis.SpeechSynthesizer> instance using the <xref:System.Speech.Synthesis.SpeechSynthesizer.AddLexicon%2A> and <xref:System.Speech.Synthesis.SpeechSynthesizer.RemoveLexicon%2A> methods.  
   

@@ -83,7 +83,7 @@
   
  Derive from this class if you want to create a user control using the code-behind technique. This is recommended if you are developing Web Forms pages using this technique.  
   
- For information about creating user controls declaratively, see [ASP.NET User Controls](http://msdn.microsoft.com/library/5e601b3d-bb16-4dbe-9e35-7e92a34565ca).  
+ For information about creating user controls declaratively, see [ASP.NET User Controls](https://msdn.microsoft.com/library/5e601b3d-bb16-4dbe-9e35-7e92a34565ca).  
   
    
   
@@ -91,7 +91,7 @@
  The class defined in the following example, `SimpleControl`, inherits the <xref:System.Web.UI.UserControl> class and can be used as an ASP.NET code-behind class. It uses the <xref:System.Web.UI.WebControls.TextBox>, <xref:System.Web.UI.WebControls.Label>, and <xref:System.Web.UI.WebControls.Button> Web server controls and defines a `myButton_Click` method that assigns the <xref:System.Web.UI.WebControls.TextBox.Text%2A?displayProperty=nameWithType> property value, along with two strings, to the <xref:System.Web.UI.WebControls.Label.Text%2A?displayProperty=nameWithType> property.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[Sys.Web.UI.TemplateControl_UserControl#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Sys.Web.UI.TemplateControl_UserControl/CS/simplecontrol.cs#2)]
  [!code-vb[Sys.Web.UI.TemplateControl_UserControl#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Sys.Web.UI.TemplateControl_UserControl/VB/simplecontrol.vb#2)]  
@@ -106,7 +106,7 @@
     <altmember cref="T:System.Web.UI.TemplateControl" />
     <altmember cref="T:System.Web.UI.IAttributeAccessor" />
     <altmember cref="T:System.Web.UI.Page" />
-    <related type="Article" href="http://msdn.microsoft.com/library/5e601b3d-bb16-4dbe-9e35-7e92a34565ca">Web Forms User Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/5e601b3d-bb16-4dbe-9e35-7e92a34565ca">Web Forms User Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -141,7 +141,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.TemplateControl.LoadControl(System.String)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/da13433e-e6a7-4c29-ad07-f1a83b5b21ae">How to: Create Instances of User Controls Programmatically</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/da13433e-e6a7-4c29-ad07-f1a83b5b21ae">How to: Create Instances of User Controls Programmatically</related>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -278,7 +278,7 @@
  The following example uses the <xref:System.Web.UI.UserControl.Cache%2A> property to store the <xref:System.Web.UI.WebControls.Label.Text%2A> property value of a <xref:System.Web.UI.WebControls.Label> Web server control, `txtValue`, in the <xref:System.Web.Caching.Cache> object associated with the user control's application. It uses the <xref:System.Web.UI.UserControl.Cache%2A> property to do so, assigning the item a key parameter value of `txtName.Text`.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[Classic Cache.this Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Cache.this Example/CS/source.cs#2)]
  [!code-vb[Classic Cache.this Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Cache.this Example/VB/source.vb#2)]  
@@ -339,7 +339,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.BasePartialCachingControl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/cdd8e523-7305-4685-a456-c5be1de1367e">Caching Portions of an ASP.NET Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/cdd8e523-7305-4685-a456-c5be1de1367e">Caching Portions of an ASP.NET Page</related>
       </Docs>
     </Member>
     <Member MemberName="DesignerInitialize">
@@ -382,7 +382,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Page.DesignerInitialize" />
-        <related type="Article" href="http://msdn.microsoft.com/library/4881917b-628f-4689-b872-472e4f8a4e3a">Design-Time Architecture</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4881917b-628f-4689-b872-472e4f8a4e3a">Design-Time Architecture</related>
       </Docs>
     </Member>
     <Member MemberName="InitializeAsUserControl">
@@ -687,7 +687,7 @@
         </remarks>
         <altmember cref="T:System.Web.HttpResponse" />
         <altmember cref="P:System.Web.UI.Page.Response" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d9d67414-2e53-42b1-976d-50e308165a34">Page and Application Context in ASP.NET Web Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d9d67414-2e53-42b1-976d-50e308165a34">Page and Application Context in ASP.NET Web Applications</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -780,7 +780,7 @@
         </remarks>
         <altmember cref="T:System.Web.HttpServerUtility" />
         <altmember cref="P:System.Web.UI.Page.Server" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d9d67414-2e53-42b1-976d-50e308165a34">Page and Application Context in ASP.NET Web Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d9d67414-2e53-42b1-976d-50e308165a34">Page and Application Context in ASP.NET Web Applications</related>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -827,7 +827,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.Page.Session" />
         <altmember cref="T:System.Web.SessionState.HttpSessionState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d9d67414-2e53-42b1-976d-50e308165a34">Page and Application Context in ASP.NET Web Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d9d67414-2e53-42b1-976d-50e308165a34">Page and Application Context in ASP.NET Web Applications</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.GetAttribute">
@@ -996,13 +996,13 @@
 ## Remarks  
  Tracing tracks and presents the execution details about a Web request. For trace data to be visible in a rendered page, you must enable tracing for that page.  
   
- By default, page tracing is disabled. To enable tracing for a page, use the [@ Page](http://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive as follows: \<%@ Page trace="true" %>  
+ By default, page tracing is disabled. To enable tracing for a page, use the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive as follows: \<%@ Page trace="true" %>  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.TraceContext" />
         <altmember cref="P:System.Web.UI.Page.Trace" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d9d67414-2e53-42b1-976d-50e308165a34">Page and Application Context in ASP.NET Web Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d9d67414-2e53-42b1-976d-50e308165a34">Page and Application Context in ASP.NET Web Applications</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="TryUpdateModel&lt;TModel&gt;">

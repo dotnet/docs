@@ -43,7 +43,7 @@
   
  Individual properties without this attribute are excluded from personalization if no special handling through the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable> interface is used.  
   
- For more information about using attributes, see [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ For more information about using attributes, see [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
    
   
@@ -55,7 +55,7 @@
  The following code is for the `ColorSelector.ascx` control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[WebParts_SimplePersonalization#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_SimplePersonalization/CS/ColorSelector.ascx#2)]  
   

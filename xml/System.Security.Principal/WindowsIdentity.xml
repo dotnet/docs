@@ -210,7 +210,7 @@
  A UPN has the format *username*@*domainname*.com, in other words, an email address. The UPN identified in `sUserPrincipalName` is used to retrieve a token for that user through the Win32 API `LsaLogonUser` function. In turn that token is used to identify the user. An exception might be returned due to the inability to log on using the supplied UPN.  
   
 > [!NOTE]
->  This constructor is intended for use only on computers joined to Windows Server 2003 or later domains. An exception is thrown for earlier domain types. This restriction is due to the fact that this constructor uses the [KERB_S4U_LOGON structure](http://go.microsoft.com/fwlink/?LinkId=143533), which was first introduced in Windows Server 2003.  
+>  This constructor is intended for use only on computers joined to Windows Server 2003 or later domains. An exception is thrown for earlier domain types. This restriction is due to the fact that this constructor uses the [KERB_S4U_LOGON structure](https://go.microsoft.com/fwlink/?LinkId=143533), which was first introduced in Windows Server 2003.  
   
  ]]></format>
         </remarks>
@@ -398,7 +398,7 @@
  The UPN identified in `sUserPrincipalName` is used to retrieve a token for that user through the Win32 API `LsaLogonUser` function. In turn that token is used to identify the user. An exception might be returned due to the inability to log on using the supplied UPN.  
   
 > [!NOTE]
->  This constructor is intended for use only on computers joined to Windows Server 2003 or later domains. An exception is thrown for earlier domain types. This restriction is due to the fact that this constructor uses the [KERB_S4U_LOGON structure](http://go.microsoft.com/fwlink/?LinkId=143533), which was first introduced in Windows Server 2003.  
+>  This constructor is intended for use only on computers joined to Windows Server 2003 or later domains. An exception is thrown for earlier domain types. This restriction is due to the fact that this constructor uses the [KERB_S4U_LOGON structure](https://go.microsoft.com/fwlink/?LinkId=143533), which was first introduced in Windows Server 2003.  
   
  ]]></format>
         </remarks>

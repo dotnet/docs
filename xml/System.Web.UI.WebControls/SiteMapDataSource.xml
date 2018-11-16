@@ -123,10 +123,10 @@
     <altmember cref="T:System.Web.SiteMapProvider" />
     <altmember cref="T:System.Web.UI.WebControls.TreeView" />
     <altmember cref="T:System.Web.UI.WebControls.SiteMapPath" />
-    <related type="Article" href="http://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -150,10 +150,10 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ContainsListCollection">
@@ -195,10 +195,10 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetHierarchicalView">
@@ -229,10 +229,10 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode" /> is <see langword="true" /> but the <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" /> is set.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" /> is set but the <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" /> cannot resolve a node for the specified URL.</exception>
         <altmember cref="M:System.Web.UI.WebControls.SiteMapDataSource.GetView(System.String)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetList">
@@ -266,10 +266,10 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.ContainsListCollection" />
-        <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -310,10 +310,10 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode" /> is <see langword="true" /> but the <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" /> is set.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" /> is set but the <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" /> cannot resolve a node for the specified URL.</exception>
         <altmember cref="M:System.Web.UI.WebControls.SiteMapDataSource.GetViewNames" />
-        <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetViewNames">
@@ -348,10 +348,10 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.SiteMapDataSource.GetView(System.String)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -398,10 +398,10 @@
   
  No default provider is configured for the site.</exception>
         <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.SiteMapProvider" />
-        <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ShowStartingNode">
@@ -442,10 +442,10 @@
         <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" />
         <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode" />
         <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset" />
-        <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SiteMapProvider">
@@ -508,10 +508,10 @@
         </remarks>
         <altmember cref="T:System.Web.SiteMap" />
         <altmember cref="T:System.Web.SiteMapProvider" />
-        <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StartFromCurrentNode">
@@ -550,10 +550,10 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StartingNodeOffset">
@@ -625,10 +625,10 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" />
         <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StartingNodeUrl">
@@ -683,10 +683,10 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.ShowStartingNode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IListSource.ContainsListCollection">
@@ -718,11 +718,11 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.ComponentModel.IListSource.GetList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
         <related type="Article" href="https://msdn.microsoft.com/library/a5ff235e-397f-4bbe-9bfe-2720b6e7ab9d">ASP.NET Data Access Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IListSource.GetList">
@@ -753,10 +753,10 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SiteMapDataSource.System#ComponentModel#IListSource#ContainsListCollection" />
-        <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataSource.DataSourceChanged">
@@ -836,10 +836,10 @@
         <exception cref="T:System.Web.HttpException">No <see cref="T:System.Web.SiteMapProvider" /> is configured or available for the site.</exception>
         <altmember cref="M:System.Web.UI.WebControls.SiteMapDataSource.GetHierarchicalView(System.String)" />
         <altmember cref="M:System.Web.UI.WebControls.SiteMapDataSource.GetViewNames" />
-        <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataSource.GetViewNames">
@@ -878,10 +878,10 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.SiteMapDataSource.GetView(System.String)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/00246b5b-7c0e-45ed-80ba-0ce383d47218">SiteMapDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
   </Members>

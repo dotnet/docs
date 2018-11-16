@@ -38,7 +38,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.SessionState.SessionStateUtility" />
-    <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -89,7 +89,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="id" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Abandon">
@@ -122,7 +122,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -160,7 +160,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -186,7 +186,7 @@
       <Docs>
         <summary>Removes all values and keys from the session-state collection.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CodePage">
@@ -221,7 +221,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CookieMode">
@@ -259,7 +259,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -289,7 +289,7 @@
         <param name="index">The zero-based index in <c>array</c> from which copying starts.</param>
         <summary>Copies the collection of session-state values to a one-dimensional array, starting at the specified index in the array.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -315,7 +315,7 @@
         <summary>Gets the number of items in the session-state collection.</summary>
         <value>The number of items in the collection.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -342,7 +342,7 @@
         <summary>Returns an enumerator that can be used to read all the session-state variable names in the current session.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can iterate through the variable names in the session-state collection.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsAbandoned">
@@ -371,7 +371,7 @@
         <value>
           <see langword="true" /> if the current session has been abandoned; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsCookieless">
@@ -406,7 +406,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.SessionState.HttpSessionState.IsCookieless" />
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsNewSession">
@@ -438,7 +438,7 @@
         <value>
           <see langword="true" /> if the session was created with the current request; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -470,7 +470,7 @@
         <value>
           <see langword="true" /> if the session is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -503,7 +503,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -513,7 +513,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Gets or sets individual session values.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -543,7 +543,7 @@
         <summary>Gets or sets a session value by numerical index.</summary>
         <value>The session-state value stored at the specified index.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -573,7 +573,7 @@
         <summary>Gets or sets a session value by name.</summary>
         <value>The session-state value with the specified name.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -599,7 +599,7 @@
         <summary>Gets a collection of the keys for all values stored in the session-state collection.</summary>
         <value>The <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> that contains all the session keys.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LCID">
@@ -634,7 +634,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -668,11 +668,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about how to configure your server for <xref:System.Web.SessionState.SessionStateMode.StateServer> or <xref:System.Web.SessionState.SessionStateMode.SQLServer> session-state storage mode, see [ASP.NET Session State Overview](http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
+ For information about how to configure your server for <xref:System.Web.SessionState.SessionStateMode.StateServer> or <xref:System.Web.SessionState.SessionStateMode.SQLServer> session-state storage mode, see [ASP.NET Session State Overview](https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -708,7 +708,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAll">
@@ -746,7 +746,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -781,7 +781,7 @@
  \- or -  
   
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Web.SessionState.HttpSessionStateContainer.Count" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SessionID">
@@ -807,7 +807,7 @@
         <summary>Gets the unique identifier for the session.</summary>
         <value>The unique session identifier.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StaticObjects">
@@ -847,7 +847,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -873,7 +873,7 @@
         <summary>Gets an object that can be used to synchronize access to the collection of session-state values.</summary>
         <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -909,7 +909,7 @@
  \- or -  
   
  An attempt was made to set the <see cref="P:System.Web.SessionState.HttpSessionStateContainer.Timeout" /> value to an integer value greater than the maximum allowed when <see cref="P:System.Web.SessionState.HttpSessionState.Mode" /> is set to <see cref="F:System.Web.SessionState.SessionStateMode.InProc" /> or <see cref="F:System.Web.SessionState.SessionStateMode.StateServer" />. The maximum allowed is 525,600 (one year).</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
   </Members>

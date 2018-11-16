@@ -59,14 +59,14 @@ You can create a custom profile implementation that inherits from the <xref:Syst
  The following code example defines a class that inherits from the <xref:System.Web.Profile.ProfileBase> class to create a custom profile. The type of the custom profile is specified in the `inherits` attribute of the  configuration element in the Web.config file for an application.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[System.Web.Profile.ProfileBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileBase/CS/employeeprofile.cs#1)]
  [!code-vb[System.Web.Profile.ProfileBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileBase/VB/employeeprofile.vb#1)]  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -133,7 +133,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
  The following ASP.NET page reads and sets the `ZipCode` property specified for the user profile.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.HttpProfileBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/CS/defaultcs.aspx#1)]
  [!code-aspx-vb[System.Web.Profile.HttpProfileBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/VB/defaultvb.aspx#1)]  
@@ -162,7 +162,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
  -or-  
   
  A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the  section.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Create">
@@ -172,7 +172,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
       </AssemblyInfo>
       <Docs>
         <summary>Creates an instance of a user profile.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Create">
@@ -244,7 +244,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
  -or-  
   
  A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the  section.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -314,7 +314,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
  -or-  
   
  A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the  section.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetProfileGroup">
@@ -412,7 +412,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
  The following ASP.NET page reads and sets the grouped properties specified for the user profile.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.HttpProfileGroupBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileGroupBase/CS/defaultcs.aspx#1)]
  [!code-aspx-vb[System.Web.Profile.HttpProfileGroupBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.HttpProfileGroupBase/VB/defaultvb.aspx#1)]  
@@ -420,7 +420,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">The specified profile property group name was not found in the  configuration section.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPropertyValue">
@@ -460,7 +460,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
  The following code example shows an ASP.NET page that reads and sets the `ZipCode` property specified for the user profile. For an example of a Web.config file that specifies properties for the user profile, see the example provided for the <xref:System.Web.Profile.ProfileBase> class.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.HttpProfileBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/CS/defaultcs.aspx#1)]
  [!code-aspx-vb[System.Web.Profile.HttpProfileBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/VB/defaultvb.aspx#1)]  
@@ -477,7 +477,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
  -or-  
   
  The provider for the specified profile property did not recognize the specified property.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -513,7 +513,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsAnonymous">
@@ -544,7 +544,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsDirty">
@@ -577,7 +577,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -631,7 +631,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
  The provider for the specified profile property did not recognize the specified property.</exception>
         <exception cref="T:System.Configuration.SettingsPropertyIsReadOnlyException">An attempt was made to set a property value that was marked as read-only.</exception>
         <exception cref="T:System.Configuration.SettingsPropertyWrongTypeException">An attempt was made to assign a value to a property using an incompatible type.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LastActivityDate">
@@ -661,7 +661,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LastUpdatedDate">
@@ -691,7 +691,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -750,7 +750,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
  -or-  
   
  A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the  section.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -782,7 +782,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SetPropertyValue">
@@ -823,7 +823,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
  The following code example shows an ASP.NET page that reads and sets the `ZipCode` property specified for the user profile. For an example of a Web.config file that specifies properties for the user profile, see the example provided for the <xref:System.Web.Profile.ProfileBase> class.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.HttpProfileBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/CS/defaultcs.aspx#1)]
  [!code-aspx-vb[System.Web.Profile.HttpProfileBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/VB/defaultvb.aspx#1)]  
@@ -842,7 +842,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
  The provider for the specified profile property did not recognize the specified property.</exception>
         <exception cref="T:System.Configuration.SettingsPropertyIsReadOnlyException">An attempt was made to set a value value on a property that was marked as read-only.</exception>
         <exception cref="T:System.Configuration.SettingsPropertyWrongTypeException">An attempt was made to assign a value to a property using an incompatible type.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -879,7 +879,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
   </Members>

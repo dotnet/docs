@@ -29,7 +29,7 @@
  The following example shows how to use the <xref:System.Web.Mail.MailMessage> class.  
   
 > [!IMPORTANT]
->  This control has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This control has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Mail.MailMessage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Mail.MailMessage/CS/mailformcs.aspx#1)]
  [!code-aspx-vb[System.Web.Mail.MailMessage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Mail.MailMessage/VB/mailformvb.aspx#1)]  

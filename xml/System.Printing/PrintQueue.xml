@@ -109,7 +109,7 @@
 ## Remarks  
  <xref:System.Printing.PrintQueue> constructors that do not include a <xref:System.Printing.PrintSystemDesiredAccess> parameter  default to <xref:System.Printing.PrintSystemDesiredAccess.UsePrinter> access.  
   
- The [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) version released with Windows Vista is "1".  
+ The [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) version released with Windows Vista is "1".  
   
  ]]></format>
         </remarks>
@@ -258,7 +258,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) version released with Windows Vista is "1".  
+ The [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) version released with Windows Vista is "1".  
   
  ]]></format>
         </remarks>
@@ -549,7 +549,7 @@
 ## Remarks  
  If `fastCopy` is `true`, then the printer must be an [Printing Overview](~/docs/framework/wpf/advanced/printing-overview.md). If it is not, the <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> method throws an exception.  
   
- If `fastCopy` is `false`, then it is not necessary to use an XPSDrv printer. The [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] file being added to the queue is converted to the printer's page description language, such as PCL or Postscript. However, this kind of printing makes a call to [!INCLUDE[TLA#tla_com](~/includes/tlasharptla-com-md.md)]. The call to [!INCLUDE[TLA2#tla_com](~/includes/tla2sharptla-com-md.md)] requires that the calling thread have a single-threaded apartment (<xref:System.Threading.ApartmentState.STA>) instead of multiple-threaded apartment (<xref:System.Threading.ApartmentState.MTA>) which is the default in [!INCLUDE[TLA#tla_net](~/includes/tlasharptla-net-md.md)] 2.0 and later. (For more on threading and apartment states, see [Managed and Unmanaged Threading](http://msdn.microsoft.com/library/db425c20-4b2f-4433-bf96-76071c7881e5), and <xref:System.Threading.ApartmentState>.) There are two ways of doing this:  
+ If `fastCopy` is `false`, then it is not necessary to use an XPSDrv printer. The [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] file being added to the queue is converted to the printer's page description language, such as PCL or Postscript. However, this kind of printing makes a call to [!INCLUDE[TLA#tla_com](~/includes/tlasharptla-com-md.md)]. The call to [!INCLUDE[TLA2#tla_com](~/includes/tla2sharptla-com-md.md)] requires that the calling thread have a single-threaded apartment (<xref:System.Threading.ApartmentState.STA>) instead of multiple-threaded apartment (<xref:System.Threading.ApartmentState.MTA>) which is the default in [!INCLUDE[TLA#tla_net](~/includes/tlasharptla-net-md.md)] 2.0 and later. (For more on threading and apartment states, see [Managed and Unmanaged Threading](https://msdn.microsoft.com/library/db425c20-4b2f-4433-bf96-76071c7881e5), and <xref:System.Threading.ApartmentState>.) There are two ways of doing this:  
   
 -   The simplest way is to add the <xref:System.STAThreadAttribute> (that is, "`[System.STAThreadAttribute()]`") just above the first line of the application's `Main` method (usually "`static void Main(string[] args)`").  
   
@@ -572,8 +572,8 @@
         </remarks>
         <altmember cref="T:System.Threading.ApartmentState" />
         <altmember cref="T:System.STAThreadAttribute" />
-        <related type="Article" href="http://msdn.microsoft.com/library/e78b14f1-e487-43cd-9c6d-1a07483f1730">Exposing COM Components to the .NET Framework</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e78b14f1-e487-43cd-9c6d-1a07483f1730">Exposing COM Components to the .NET Framework</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
       </Docs>
     </Member>
     <Member MemberName="AddJob">
@@ -659,16 +659,16 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the version of the <see href="https://docs.microsoft.com/windows/desktop/printdocs/printschema">Print Schema</see>.</summary>
-        <value>The version of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) in use.</value>
+        <value>The version of the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) in use.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) version released with Windows Vista is 1.  
+ The [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) version released with Windows Vista is 1.  
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=186397">Print Schema</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=186397">Print Schema</related>
       </Docs>
     </Member>
     <Member MemberName="Comment">
@@ -758,7 +758,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates an <see cref="T:System.Windows.Xps.XpsDocumentWriter" /> object.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CreateXpsDocumentWriter">
@@ -804,7 +804,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
       </Docs>
     </Member>
     <Member MemberName="CreateXpsDocumentWriter">
@@ -840,7 +840,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
       </Docs>
     </Member>
     <Member MemberName="CreateXpsDocumentWriter">
@@ -881,7 +881,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
       </Docs>
     </Member>
     <Member MemberName="CreateXpsDocumentWriter">
@@ -926,7 +926,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
       </Docs>
     </Member>
     <Member MemberName="CreateXpsDocumentWriter">
@@ -976,7 +976,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
       </Docs>
     </Member>
     <Member MemberName="CreateXpsDocumentWriter">
@@ -1025,7 +1025,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3">isXPS Conformance Tool</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentJobSettings">
@@ -1330,7 +1330,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Printing.PrintTicket> parameter is used as the basis on which to construct the <xref:System.Printing.PrintCapabilities> object. For example, suppose the printer supported only media types A and B from input bin 1 and it only supported media type C from input bin 2. If the `printTicket` parameter specified input bin 1, then the <xref:System.Printing.PrintCapabilities> object that is returned would include all three media types, but it would report type C as "constrained." If the `printTicket` parameter specified input bin 2, then the <xref:System.Printing.PrintCapabilities> object that is returned would include all three media types, but it would report types A and B as "constrained." See the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) for more information on constraints.  
+ The <xref:System.Printing.PrintTicket> parameter is used as the basis on which to construct the <xref:System.Printing.PrintCapabilities> object. For example, suppose the printer supported only media types A and B from input bin 1 and it only supported media type C from input bin 2. If the `printTicket` parameter specified input bin 1, then the <xref:System.Printing.PrintCapabilities> object that is returned would include all three media types, but it would report type C as "constrained." If the `printTicket` parameter specified input bin 2, then the <xref:System.Printing.PrintCapabilities> object that is returned would include all three media types, but it would report types A and B as "constrained." See the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) for more information on constraints.  
   
  If `printTicket` is `null`, the <xref:System.Printing.PrintQueue.UserPrintTicket%2A> is used.  
   
@@ -1348,12 +1348,12 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Gets a <see cref="T:System.IO.MemoryStream" /> object that specifies the printer's capabilities as an XML stream that complies with the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+        <summary>Gets a <see cref="T:System.IO.MemoryStream" /> object that specifies the printer's capabilities as an XML stream that complies with the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The XML schema used is called "PrintCapabilities," a part of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) system.  
+ The XML schema used is called "PrintCapabilities," a part of the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) system.  
   
  ]]></format>
         </remarks>
@@ -1382,7 +1382,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a <see cref="T:System.IO.MemoryStream" /> object that specifies the printer's capabilities as an XML stream that complies with the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+        <summary>Gets a <see cref="T:System.IO.MemoryStream" /> object that specifies the printer's capabilities as an XML stream that complies with the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397).</summary>
         <returns>A <see cref="T:System.IO.MemoryStream" /> specifying the printer's capabilities by using the XML schema "PrintCapabilities," a part of the <see href="https://docs.microsoft.com/windows/desktop/printdocs/printschema">Print Schema</see> system.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Printing.PrintQueueException">The print capabilities could not be retrieved.</exception>
@@ -1414,13 +1414,13 @@
       </Parameters>
       <Docs>
         <param name="printTicket">A print ticket that provides the basis on which the print capabilities are reported.</param>
-        <summary>Gets a <see cref="T:System.IO.MemoryStream" /> object that specifies the printer's capabilities in an XML format that complies with the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+        <summary>Gets a <see cref="T:System.IO.MemoryStream" /> object that specifies the printer's capabilities in an XML format that complies with the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397).</summary>
         <returns>A <see cref="T:System.IO.MemoryStream" /> specifying the printer's capabilities by using the XML schema "PrintCapabilities," a part of the <see href="https://docs.microsoft.com/windows/desktop/printdocs/printschema">Print Schema</see> system.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Printing.PrintTicket> parameter is used as the basis on which to construct the print capabilities XML. For example, suppose the printer supported only media types A and B from input bin 1 and it only supported media type C from input bin 2. If the `printTicket` parameter specified input bin 1, then the print capabilities XML that is returned would include all three media types, but it would report type C as "constrained." If the `printTicket` parameter specified input bin 2, then the print capabilities XML that is returned would include all three media types, but it would report types A and B as "constrained." See the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) for more information on constraints.  
+ The <xref:System.Printing.PrintTicket> parameter is used as the basis on which to construct the print capabilities XML. For example, suppose the printer supported only media types A and B from input bin 1 and it only supported media type C from input bin 2. If the `printTicket` parameter specified input bin 1, then the print capabilities XML that is returned would include all three media types, but it would report type C as "constrained." If the `printTicket` parameter specified input bin 2, then the print capabilities XML that is returned would include all three media types, but it would report types A and B as "constrained." See the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) for more information on constraints.  
   
  If `printTicket` is `null`, the <xref:System.Printing.PrintQueue.UserPrintTicket%2A> is used.  
   
@@ -2706,17 +2706,17 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the most recent possible version number of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) that the queue can use.</summary>
-        <value>The most recent version number of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) that the queue can use.</value>
+        <summary>Gets the most recent possible version number of the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) that the queue can use.</summary>
+        <value>The most recent version number of the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) that the queue can use.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The version of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) released with Windows Vista is 1.  
+ The version of the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) released with Windows Vista is 1.  
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=186397">Print Schema</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=186397">Print Schema</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="MergeAndValidatePrintTicket">
@@ -2762,7 +2762,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The method produces a viable print ticket; that is, a ticket that does not request printing features that the printer does not support. The method first validates the two input print tickets against the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397). If either is invalid, an exception is thrown.  
+ The method produces a viable print ticket; that is, a ticket that does not request printing features that the printer does not support. The method first validates the two input print tickets against the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397). If either is invalid, an exception is thrown.  
   
  The two tickets are then merged. If they have different values for a particular property then the resulting merged ticket initially uses the value of the delta ticket.  
   
@@ -2825,7 +2825,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The method produces a viable print ticket; that is, a ticket that does not request printing features that the printer does not support. The method first validates the two input print tickets against the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397). If either is invalid, an exception is thrown.  
+ The method produces a viable print ticket; that is, a ticket that does not request printing features that the printer does not support. The method first validates the two input print tickets against the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397). If either is invalid, an exception is thrown.  
   
  The two tickets are then merged. If they have different values for a particular property then the resulting merged ticket initially uses the value of the delta ticket.  
   
@@ -2835,7 +2835,7 @@
   
  The `deltaPrintTicket` parameter can be `null`, in which case the `basePrintTicket` is validated, checked for viability, and returned, possibly with changes.  
   
- If the `scope` is a job, then the print ticket returned in the <xref:System.Printing.ValidationResult> can include [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) parameters with Job, Document, and Page prefixes. If the `scope` is a document, then per-job settings in `deltaPrintTicket` are ignored, and the returned ticket can include parameters with Document and Page prefixes. If the `scope` is a page, then the per-job settings and the per-document settings in `deltaPrintTicket` are ignored, and the returned ticket can include parameters with only the Page prefix.  
+ If the `scope` is a job, then the print ticket returned in the <xref:System.Printing.ValidationResult> can include [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) parameters with Job, Document, and Page prefixes. If the `scope` is a document, then per-job settings in `deltaPrintTicket` are ignored, and the returned ticket can include parameters with Document and Page prefixes. If the `scope` is a page, then the per-job settings and the per-document settings in `deltaPrintTicket` are ignored, and the returned ticket can include parameters with only the Page prefix.  
   
  ]]></format>
         </remarks>

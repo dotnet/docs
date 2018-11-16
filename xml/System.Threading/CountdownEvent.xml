@@ -97,7 +97,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="initialCount" /> is less than 0.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AddCount">
@@ -109,7 +109,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Increments the <see cref="T:System.Threading.CountdownEvent" />'s current count.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddCount">
@@ -149,7 +149,7 @@
  -or-  
   
  <see cref="P:System.Threading.CountdownEvent.CurrentCount" /> is equal to or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="AddCount">
@@ -194,7 +194,7 @@
  -or-  
   
  <see cref="P:System.Threading.CountdownEvent.CurrentCount" /> is equal to or greater than <see cref="F:System.Int32.MaxValue" /> after count is incremented by <paramref name="signalCount." /></exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentCount">
@@ -239,7 +239,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Releases resources used by the current instance of the <see cref="T:System.Threading.CountdownEvent" /> class.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Dispose">
@@ -288,7 +288,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -365,7 +365,7 @@
         <summary>Gets the numbers of signals initially required to set the event.</summary>
         <value>The number of signals initially required to set the event.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="IsSet">
@@ -418,7 +418,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Resets the <see cref="P:System.Threading.CountdownEvent.CurrentCount" /> value.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Reset">
@@ -506,7 +506,7 @@
         <exception cref="T:System.ObjectDisposedException">The current instance has alread been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="count" /> is less than 0.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Signal">
@@ -554,7 +554,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The current instance is already set.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Signal">
@@ -596,7 +596,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="signalCount" /> is less than 1.</exception>
         <exception cref="T:System.InvalidOperationException">The current instance is already set. -or- Or <paramref name="signalCount" /> is greater than <see cref="P:System.Threading.CountdownEvent.CurrentCount" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="TryAddCount">
@@ -608,7 +608,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Attempts to increment <see cref="P:System.Threading.CountdownEvent.CurrentCount" />.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="TryAddCount">
@@ -647,7 +647,7 @@
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Threading.CountdownEvent.CurrentCount" /> is equal to <see cref="F:System.Int32.MaxValue" />.
         </exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="TryAddCount">
@@ -702,7 +702,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Blocks the current thread until the <see cref="T:System.Threading.CountdownEvent" /> is set.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Wait">
@@ -744,7 +744,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -785,7 +785,7 @@
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -831,7 +831,7 @@
         <exception cref="T:System.OperationCanceledException">
           <paramref name="cancellationToken" /> has been canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed. -or- The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -872,7 +872,7 @@
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -916,7 +916,7 @@
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed. -or- The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -960,7 +960,7 @@
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed. -or- The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </Member>
     <Member MemberName="WaitHandle">
@@ -1002,7 +1002,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eec3812a-e20f-4ecd-bfef-6921d508b708">CountdownEvent</related>
       </Docs>
     </Member>
   </Members>

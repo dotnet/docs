@@ -24,7 +24,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/8fcd18c1-9958-42e7-b442-7903f7bdb563">TcpTransport element</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/8fcd18c1-9958-42e7-b442-7903f7bdb563">TcpTransport element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -352,9 +352,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property enables Teredo for the underlying TCP socket. For more information, see [Teredo Overview](http://go.microsoft.com/fwlink/?LinkId=96651).  
+ This property enables Teredo for the underlying TCP socket. For more information, see [Teredo Overview](https://go.microsoft.com/fwlink/?LinkId=96651).  
   
- This property is only applicable on [!INCLUDE[wxpsp2](~/includes/wxpsp2-md.md)] and [!INCLUDE[ws2003](~/includes/ws2003-md.md)]. [!INCLUDE[wv](~/includes/wv-md.md)] has a machine-wide configuration option for Teredo, so when running [!INCLUDE[wv](~/includes/wv-md.md)], this property is ignored. Teredo requires that the client and service machines both have the Microsoft IPv6 stack installed and correctly configured for Teredo usage. For more information about configuring Teredo, see [Teredo Overview](http://go.microsoft.com/fwlink/?LinkId=96651). For more information, see [Windows Server 2003 Technology Centers](http://go.microsoft.com/fwlink/?LinkId=96652).  
+ This property is only applicable on [!INCLUDE[wxpsp2](~/includes/wxpsp2-md.md)] and [!INCLUDE[ws2003](~/includes/ws2003-md.md)]. [!INCLUDE[wv](~/includes/wv-md.md)] has a machine-wide configuration option for Teredo, so when running [!INCLUDE[wv](~/includes/wv-md.md)], this property is ignored. Teredo requires that the client and service machines both have the Microsoft IPv6 stack installed and correctly configured for Teredo usage. For more information about configuring Teredo, see [Teredo Overview](https://go.microsoft.com/fwlink/?LinkId=96651). For more information, see [Windows Server 2003 Technology Centers](https://go.microsoft.com/fwlink/?LinkId=96652).  
   
  ]]></format>
         </remarks>

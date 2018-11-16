@@ -36,12 +36,12 @@
  The summary can be displayed on the Web page and in a message box by setting the <xref:System.Web.UI.WebControls.ValidationSummary.ShowSummary%2A> and <xref:System.Web.UI.WebControls.ValidationSummary.ShowMessageBox%2A> properties, respectively.  
   
 > [!NOTE]
->  When you use the <xref:System.Web.UI.WebControls.ValidationSummary> control inside an <xref:System.Web.UI.UpdatePanel> control, make sure that the validator control and the control it is associated with are in the same panel. For more information about using the <xref:System.Web.UI.UpdatePanel> control for partial-page updates, see [Partial-Page Rendering Overview](http://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
+>  When you use the <xref:System.Web.UI.WebControls.ValidationSummary> control inside an <xref:System.Web.UI.UpdatePanel> control, make sure that the validator control and the control it is associated with are in the same panel. For more information about using the <xref:System.Web.UI.UpdatePanel> control for partial-page updates, see [Partial-Page Rendering Overview](https://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.ValidationSummary>, see the <xref:System.Web.UI.WebControls.ValidationSummary.%23ctor%2A> constructor.  
   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
    
   
@@ -49,7 +49,7 @@
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.ValidationSummary> control to summarize the error messages from all validation controls on a Web page and display them in a bulleted list.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[Classic ValidationSummary Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ValidationSummary Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic ValidationSummary Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ValidationSummary Example/VB/sourcevb.aspx#1)]  
@@ -161,7 +161,7 @@
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.ValidationSummary.DisplayMode%2A> property to display a bulleted list.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[Classic ValidationSummary.DisplayMode Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ValidationSummary.DisplayMode Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic ValidationSummary.DisplayMode Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ValidationSummary.DisplayMode Example/VB/sourcevb.aspx#1)]  
@@ -207,7 +207,7 @@
 ## Remarks  
  Use this property to specify whether the <xref:System.Web.UI.WebControls.ValidationSummary> control updates itself using client-side script. When this property is set to `true`, client-side script is rendered on the client to update the <xref:System.Web.UI.WebControls.ValidationSummary> control, if the browser supports that feature. When this property is set to `false`, no client-side script is rendered on the client and the <xref:System.Web.UI.WebControls.ValidationSummary> control only updates itself on round trips to the server. In this situation, the <xref:System.Web.UI.WebControls.ValidationSummary.ShowMessageBox%2A> property has no effect.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -305,7 +305,7 @@
   
  The <xref:System.Web.UI.WebControls.ValidationSummary.HeaderText%2A> property is not HTML encoded. Therefore, HTML tags can be included in <xref:System.Web.UI.WebControls.ValidationSummary.HeaderText%2A>.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -348,7 +348,7 @@
   
 -   The <xref:System.Web.UI.WebControls.ValidationSummary.ForeColor%2A> property is not already set.  
   
--   The <xref:System.Web.UI.Control.RenderingCompatibility%2A?displayProperty=nameWithType> property indicates an ASP.NET version earlier than 4. By default, in ASP.NET 4 and later versions, validator controls do not display error messages in red. For information about how to control the visual appearance of validator controls, see [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+-   The <xref:System.Web.UI.Control.RenderingCompatibility%2A?displayProperty=nameWithType> property indicates an ASP.NET version earlier than 4. By default, in ASP.NET 4 and later versions, validator controls do not display error messages in red. For information about how to control the visual appearance of validator controls, see [Validating User Input in ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  ]]></format>
         </remarks>
@@ -385,7 +385,7 @@
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.ValidationSummary.OnPreRender%2A> method so that it always displays error messages as bold in a custom <xref:System.Web.UI.WebControls.ValidationSummary> server control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CustomValidationSummaryOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidationSummaryOnPreRender/CS/custom_validationsummary_addattributestorendercs.aspx#1)]
  [!code-aspx-vb[CustomValidationSummaryOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidationSummaryOnPreRender/VB/custom_validationsummary_addattributestorendervb.aspx#1)]  
@@ -426,7 +426,7 @@
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.ValidationSummary.Render%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.ValidationSummary> control is surrounded by a <xref:System.Web.UI.HtmlTextWriterTag.Small> tag.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CustomValidationSummaryRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidationSummaryRender/CS/custom_validationsummary_rendercs.aspx#1)]
  [!code-aspx-vb[CustomValidationSummaryRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidationSummaryRender/VB/custom_validationsummary_rendervb.aspx#1)]  
@@ -563,7 +563,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ValidationSummary.ShowMessageBox%2A> and <xref:System.Web.UI.WebControls.ValidationSummary.ShowSummary%2A> properties to specify that the validation summary is displayed in both a message box and on the Web page.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[Classic ValidationSummary.ShowSummary Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ValidationSummary.ShowSummary Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic ValidationSummary.ShowSummary Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ValidationSummary.ShowSummary Example/VB/sourcevb.aspx#1)]  
@@ -670,7 +670,7 @@
   
  When you specify a value for the <xref:System.Web.UI.WebControls.ValidationSummary> property, only error messages from the validation controls that are part of the specified group are summarized. If you do not set a value for this property, all error messages from validation controls on the page that are not assigned to a validation group are summarized.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>

@@ -208,7 +208,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
     <threadsafe>This type is thread safe.</threadsafe>
     <related type="Article" href="~/docs/standard/threading/threads-and-threading.md">Threads and Threading</related>
     <related type="Article" href="~/docs/standard/threading/using-threads-and-threading.md">Using Threads and Threading</related>
-    <related type="ExternalDocumentation" href="http://referencesource.microsoft.com/#mscorlib/system/threading/thread.cs#3980e012bae82e96">Reference Source for the Thread Class</related>
+    <related type="ExternalDocumentation" href="https://referencesource.microsoft.com/#mscorlib/system/threading/thread.cs#3980e012bae82e96">Reference Source for the Thread Class</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -875,7 +875,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
 > [!IMPORTANT]
 >  In the .NET Framework version 2.0, new threads are initialized as <xref:System.Threading.ApartmentState.MTA?displayProperty=nameWithType> if their apartment state has not been set before they are started. The main application thread is initialized to <xref:System.Threading.ApartmentState.MTA?displayProperty=nameWithType> by default. You can no longer set the main application thread to <xref:System.Threading.ApartmentState.STA?displayProperty=nameWithType> by setting the <xref:System.Threading.ApartmentState?displayProperty=nameWithType> property on the first line of code. Use the <xref:System.STAThreadAttribute> instead.  
   
- In the .NET Framework version 2.0, you can specify the COM threading model for a C++ application using the [/CLRTHREADATTRIBUTE (Set CLR Thread Attribute)](http://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8) linker option.  
+ In the .NET Framework version 2.0, you can specify the COM threading model for a C++ application using the [/CLRTHREADATTRIBUTE (Set CLR Thread Attribute)](https://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8) linker option.  
   
    
   
@@ -3113,7 +3113,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  You can specify <xref:System.Threading.Timeout.Infinite?displayProperty=nameWithType> for the `millisecondsTimeout` parameter to suspend the thread indefinitely. However, we recommend that you use other <xref:System.Threading?displayProperty=nameWithType> classes such as <xref:System.Threading.Mutex>, <xref:System.Threading.Monitor>, <xref:System.Threading.EventWaitHandle>, or <xref:System.Threading.Semaphore> instead to sychronize threads or manage resources.  
   
- The system clock ticks at a specific rate called the clock resolution. The actual timeout might not be exactly the specified timeout, because the specified timeout will be adjusted to coincide with clock ticks. For more information on clock resolution and the waiting time, see the [Sleep function](http://msdn.microsoft.com/library/windows/desktop/ms686298.aspx) topic. This method calls the [Sleep function](http://msdn.microsoft.com/library/windows/desktop/ms686298.aspx) from the Windows system APIs.  
+ The system clock ticks at a specific rate called the clock resolution. The actual timeout might not be exactly the specified timeout, because the specified timeout will be adjusted to coincide with clock ticks. For more information on clock resolution and the waiting time, see the [Sleep function](https://msdn.microsoft.com/library/windows/desktop/ms686298.aspx) topic. This method calls the [Sleep function](https://msdn.microsoft.com/library/windows/desktop/ms686298.aspx) from the Windows system APIs.  
   
  This method does not perform standard COM and SendMessage pumping.  
   

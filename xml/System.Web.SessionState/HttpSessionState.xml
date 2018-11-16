@@ -38,9 +38,9 @@
   
  Session state does not persist across ASP.NET application boundaries. If a browser navigates to another application, the session information is not available to the new application.  
   
- Session values are stored in memory on the Web server, by default. You can also store session values in a SQL Server database, an ASP.NET state server, or a custom server. This enables you to preserve session values in cases where the ASP.NET or IIS process or the ASP.NET application restarts and to make session values available across all the servers in a Web farm. This behavior is configured by setting the `mode` attribute to a valid <xref:System.Web.SessionState.SessionStateMode> value in the  element of your application configuration. For more information, see [Session-State Modes](http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4).  
+ Session values are stored in memory on the Web server, by default. You can also store session values in a SQL Server database, an ASP.NET state server, or a custom server. This enables you to preserve session values in cases where the ASP.NET or IIS process or the ASP.NET application restarts and to make session values available across all the servers in a Web farm. This behavior is configured by setting the `mode` attribute to a valid <xref:System.Web.SessionState.SessionStateMode> value in the  element of your application configuration. For more information, see [Session-State Modes](https://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4).  
   
- Alternatives to session state include application state (see the <xref:System.Web.HttpApplication.Application%2A> property) and the ASP.NET cache (see the <xref:System.Web.Caching> namespace), which store variables that can be accessed by all users of an ASP.NET application; the ASP.NET profile (see the <xref:System.Web.Profile> namespace), which persists user values in a data store without expiring them using a time-out; ASP.NET <xref:System.Web.UI.WebControls?displayProperty=nameWithType>, which persist control values in the <xref:System.Web.UI.Control.ViewState%2A>; <xref:System.Web.HttpResponse.Cookies%2A>; the <xref:System.Web.HttpRequest.QueryString%2A> property; and fields on an HTML form that are available from an HTTP `POST` using the <xref:System.Web.HttpRequest.Form%2A> collection. For more details on the differences between session state and other state-management alternatives, see [ASP.NET State Management Recommendations](http://msdn.microsoft.com/library/af79fa0d-4bc8-47a6-9915-d8e355bfb732).  
+ Alternatives to session state include application state (see the <xref:System.Web.HttpApplication.Application%2A> property) and the ASP.NET cache (see the <xref:System.Web.Caching> namespace), which store variables that can be accessed by all users of an ASP.NET application; the ASP.NET profile (see the <xref:System.Web.Profile> namespace), which persists user values in a data store without expiring them using a time-out; ASP.NET <xref:System.Web.UI.WebControls?displayProperty=nameWithType>, which persist control values in the <xref:System.Web.UI.Control.ViewState%2A>; <xref:System.Web.HttpResponse.Cookies%2A>; the <xref:System.Web.HttpRequest.QueryString%2A> property; and fields on an HTML form that are available from an HTTP `POST` using the <xref:System.Web.HttpRequest.Form%2A> collection. For more details on the differences between session state and other state-management alternatives, see [ASP.NET State Management Recommendations](https://msdn.microsoft.com/library/af79fa0d-4bc8-47a6-9915-d8e355bfb732).  
   
    
   
@@ -48,7 +48,7 @@
  The following code example sets and retrieves values from session state.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[HttpSessionState#30](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpSessionState/CS/session2cs.aspx#30)]
  [!code-aspx-vb[HttpSessionState#30](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpSessionState/VB/session2vb.aspx#30)]  
@@ -57,8 +57,8 @@
     </remarks>
     <altmember cref="N:System.Web.Profile" />
     <altmember cref="N:System.Web.Caching" />
-    <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Abandon">
@@ -87,13 +87,13 @@
 ## Remarks  
  Once the <xref:System.Web.SessionState.HttpSessionState.Abandon%2A> method is called, the current session is no longer valid and a new session can be started. <xref:System.Web.SessionState.HttpSessionState.Abandon%2A> causes the <xref:System.Web.SessionState.SessionStateModule.End> event to be raised. A new <xref:System.Web.SessionState.SessionStateModule.Start> event will be raised on the next request.  
   
- Session identifiers for abandoned or expired sessions are recycled by default. That is, if a request is made that includes the session identifier for an expired or abandoned session, a new session is started using the same session identifier. You can disable this by setting `regenerateExpiredSessionId` attribute of the  configuration element to `true`. For more information, see [Session Identifiers](http://msdn.microsoft.com/library/146ca206-d151-4f2e-a548-bcca05ccf0cb).  
+ Session identifiers for abandoned or expired sessions are recycled by default. That is, if a request is made that includes the session identifier for an expired or abandoned session, a new session is started using the same session identifier. You can disable this by setting `regenerateExpiredSessionId` attribute of the  configuration element to `true`. For more information, see [Session Identifiers](https://msdn.microsoft.com/library/146ca206-d151-4f2e-a548-bcca05ccf0cb).  
   
  The <xref:System.Web.SessionState.SessionStateModule.End> event is supported only when the <xref:System.Web.SessionState.HttpSessionState.Mode%2A> property is set to <xref:System.Web.SessionState.SessionStateMode.InProc>.  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -133,15 +133,15 @@
  The following example shows how to store values in session state by using the <xref:System.Web.SessionState.HttpSessionState.Add%2A> method. It also shows how to remove values in session state by using the <xref:System.Web.SessionState.HttpSessionState.Remove%2A> method. A <xref:System.Web.UI.WebControls.Repeater> control is used to display the contents session state on the Web page. The <xref:System.Web.SessionState.HttpSessionState.GetEnumerator%2A> method is used to iterate through the session-state collection and populate the <xref:System.Web.UI.WebControls.Repeater> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[HttpSessionState#13](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpSessionState/CS/HttpSessionStateAddCS.aspx#13)]
  [!code-aspx-vb[HttpSessionState#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpSessionState/VB/HttpSessionStateAddVB.aspx#13)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -165,7 +165,7 @@
       <Docs>
         <summary>Removes all keys and values from the session-state collection.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CodePage">
@@ -198,7 +198,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Contents">
@@ -237,7 +237,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CookieMode">
@@ -283,7 +283,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -314,7 +314,7 @@
         <param name="index">The zero-based index in <c>array</c> from which copying starts.</param>
         <summary>Copies the collection of session-state values to a one-dimensional array, starting at the specified index in the array.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -341,7 +341,7 @@
         <summary>Gets the number of items in the session-state collection.</summary>
         <value>The number of items in the collection.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -379,7 +379,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsCookieless">
@@ -446,7 +446,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsNewSession">
@@ -471,7 +471,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
         <value>
           <see langword="true" /> if the session was created with the current request; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -496,7 +496,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
         <value>
           <see langword="true" /> if the session is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -524,7 +524,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
         <value>
           <see langword="true" /> if access to the collection is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -534,7 +534,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
       </AssemblyInfo>
       <Docs>
         <summary>Gets or sets individual session values.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -562,7 +562,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
         <summary>Gets or sets a session value by numerical index.</summary>
         <value>The session-state value stored at the specified index, or <see langword="null" /> if the item does not exist.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -590,7 +590,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
         <summary>Gets or sets a session value by name.</summary>
         <value>The session-state value with the specified name, or <see langword="null" /> if the item does not exist.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -614,7 +614,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
         <summary>Gets a collection of the keys for all values stored in the session-state collection.</summary>
         <value>The <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> that contains all the session keys.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LCID">
@@ -647,7 +647,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -674,7 +674,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about how to configure your server for <xref:System.Web.SessionState.SessionStateMode.StateServer> or <xref:System.Web.SessionState.SessionStateMode.SQLServer> session-state storage, see [ASP.NET Session State Overview](http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
+ For information about how to configure your server for <xref:System.Web.SessionState.SessionStateMode.StateServer> or <xref:System.Web.SessionState.SessionStateMode.SQLServer> session-state storage, see [ASP.NET Session State Overview](https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
   
    
   
@@ -695,7 +695,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -737,7 +737,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAll">
@@ -773,7 +773,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -806,7 +806,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
  \- or -  
   
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Web.SessionState.HttpSessionState.Count" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SessionID">
@@ -861,7 +861,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StaticObjects">
@@ -902,7 +902,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -929,7 +929,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
         <summary>Gets an object that can be used to synchronize access to the collection of session-state values.</summary>
         <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -978,7 +978,7 @@ http://www.example.com/(S(4danlfat035muve4g0mvgfrr))/orderform.aspx
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
   </Members>

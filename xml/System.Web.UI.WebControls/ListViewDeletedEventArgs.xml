@@ -48,7 +48,7 @@
     <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.ExceptionHandled" />
     <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys" />
     <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values" />
-    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -93,7 +93,7 @@
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
         <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemDeleted(System.Web.UI.WebControls.ListViewDeletedEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -147,7 +147,7 @@
         <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemDeleted(System.Web.UI.WebControls.ListViewDeletedEventArgs)" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ConflictDetection" />
         <altmember cref="T:System.Web.UI.ConflictOptions" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -195,7 +195,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -244,7 +244,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -293,8 +293,8 @@
         <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
         <altmember cref="T:System.Collections.DictionaryEntry" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/aa3f28c5-fd99-4978-8a66-c7709e0816c4">How a Data Source Control Creates Parameters for Data-bound Fields</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa3f28c5-fd99-4978-8a66-c7709e0816c4">How a Data Source Control Creates Parameters for Data-bound Fields</related>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -323,7 +323,7 @@
  Use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values%2A> property to access the values of the non-key fields for a deleted item. For example, you can use these values to keep a log of deleted items.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values%2A> property is populated only when two-way binding expressions are used in the <xref:System.Web.UI.WebControls.ListView> templates, such as the <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A> template. For more information about two-way binding expressions, see [Data-Binding Expression Syntax](http://msdn.microsoft.com/library/676beb1d-ddfa-4153-bba8-3c86dcb7ceca).  
+>  The <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values%2A> property is populated only when two-way binding expressions are used in the <xref:System.Web.UI.WebControls.ListView> templates, such as the <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A> template. For more information about two-way binding expressions, see [Data-Binding Expression Syntax](https://msdn.microsoft.com/library/676beb1d-ddfa-4153-bba8-3c86dcb7ceca).  
   
  The <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary> interface. The object contains <xref:System.Collections.DictionaryEntry> objects that represent the non-key fields of the deleted item.  
   
@@ -346,8 +346,8 @@
         <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
         <altmember cref="T:System.Collections.DictionaryEntry" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/aa3f28c5-fd99-4978-8a66-c7709e0816c4">How a Data Source Control Creates Parameters for Data-bound Fields</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/aa3f28c5-fd99-4978-8a66-c7709e0816c4">How a Data Source Control Creates Parameters for Data-bound Fields</related>
       </Docs>
     </Member>
   </Members>

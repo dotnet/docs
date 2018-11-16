@@ -78,7 +78,7 @@
     <altmember cref="T:System.Web.Management.WebManagementEvent" />
     <altmember cref="T:System.Web.Management.WebErrorEvent" />
     <altmember cref="T:System.Web.Management.WebRequestEvent" />
-    <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -245,7 +245,7 @@
   
  This method also calls the parent <xref:System.Web.Management.WebBaseEvent.IncrementPerfCounters%2A>, which increments the Events Raised counter. This counter tracks the total number of events raised.  
   
- To view these performance counters in System Monitor (PerfMon), in the **Add Counters** window select **ASP.NET** in the **Performance object** drop-down list, select the performance counter you want to view, and click the **Add** button. For more information, see [Using the System Monitor (PerfMon) with ASP.NET Applications](http://go.microsoft.com/fwlink/?linkid=36882&clcid=0x409) in the IIS documentation on MSDN.  
+ To view these performance counters in System Monitor (PerfMon), in the **Add Counters** window select **ASP.NET** in the **Performance object** drop-down list, select the performance counter you want to view, and click the **Add** button. For more information, see [Using the System Monitor (PerfMon) with ASP.NET Applications](https://go.microsoft.com/fwlink/?linkid=36882&clcid=0x409) in the IIS documentation on MSDN.  
   
  ]]></format>
         </remarks>

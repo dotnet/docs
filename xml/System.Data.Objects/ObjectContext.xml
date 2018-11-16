@@ -41,7 +41,7 @@
    
   
 ## Examples  
- This example is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example shows you how to construct an <xref:System.Data.Objects.ObjectContext>.  
+ This example is based on the [AdventureWorks Sales Model](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example shows you how to construct an <xref:System.Data.Objects.ObjectContext>.  
   
  [!code-csharp[DP ObjectServices Concepts#ObjectContext](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#objectcontext)]
  [!code-vb[DP ObjectServices Concepts#ObjectContext](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#objectcontext)]  
@@ -49,7 +49,7 @@
  ]]></format>
     </remarks>
     <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -87,7 +87,7 @@
  -or-  
   
  The metadata workspace is invalid.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -120,7 +120,7 @@
    
   
 ## Examples  
- The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example shows how to construct an <xref:System.Data.Objects.ObjectContext>.  
+ The example in this topic is based on the [AdventureWorks Sales Model](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example shows how to construct an <xref:System.Data.Objects.ObjectContext>.  
   
  [!code-csharp[DP ObjectServices Concepts#ObjectContext](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#objectcontext)]
  [!code-vb[DP ObjectServices Concepts#ObjectContext](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#objectcontext)]  
@@ -133,7 +133,7 @@
  -or-  
   
  The metadata workspace is not valid.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -160,7 +160,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="connection" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="connection" />, <paramref name="defaultContainerName" />, or metadata workspace is not valid.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -194,7 +194,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="connectionString" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="connectionString" />, <paramref name="defaultContainerName" />, or metadata workspace is not valid.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="AcceptAllChanges">
@@ -228,7 +228,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="AddObject">
@@ -259,7 +259,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call <xref:System.Data.Objects.ObjectContext.AddObject%2A> on the <xref:System.Data.Objects.ObjectContext> to add the object to the object context. Do this when the object is a new object that does not yet exist in the data source. For more information, see [Attaching and Detaching Objects](http://msdn.microsoft.com/library/41d5c1ef-1b78-4502-aa10-7e1438d62d23).  
+ Call <xref:System.Data.Objects.ObjectContext.AddObject%2A> on the <xref:System.Data.Objects.ObjectContext> to add the object to the object context. Do this when the object is a new object that does not yet exist in the data source. For more information, see [Attaching and Detaching Objects](https://msdn.microsoft.com/library/41d5c1ef-1b78-4502-aa10-7e1438d62d23).  
   
  Objects are added to the <xref:System.Data.Objects.ObjectStateManager> in the <xref:System.Data.EntityState.Detached>, <xref:System.Data.EntityState.Deleted> or <xref:System.Data.EntityState.Added> state.  
   
@@ -269,7 +269,7 @@
   
 -   Set the <xref:System.Data.Objects.DataClasses.EntityReference%601.Value%2A> property of the <xref:System.Data.Objects.DataClasses.EntityReference%601> to the related object. Do this for a one-to-one or many-to-one relationship.  
   
- For more information, see [Creating, Adding, Modifying, and Deleting Objects](http://msdn.microsoft.com/library/f76f1fad-c553-4b59-820b-89b3dec2fad1).  
+ For more information, see [Creating, Adding, Modifying, and Deleting Objects](https://msdn.microsoft.com/library/f76f1fad-c553-4b59-820b-89b3dec2fad1).  
   
  If the object is in a detached state it must not have an <xref:System.Data.EntityKey>.  
   
@@ -284,7 +284,7 @@
    
   
 ## Examples  
- This example is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example adds a new product and saves the changes to the database.  
+ This example is based on the [AdventureWorks Sales Model](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example adds a new product and saves the changes to the database.  
   
  [!code-csharp[DP ObjectServices Concepts#AddObject](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#addobject)]
  [!code-vb[DP ObjectServices Concepts#AddObject](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#addobject)]  
@@ -297,7 +297,7 @@
   
  The <paramref name="entitySetName" /> does not qualify.</exception>
         <altmember cref="M:System.Data.Objects.ObjectSet`1.AddObject(`0)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="ApplyCurrentValues&lt;TEntity&gt;">
@@ -336,11 +336,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Objects.ObjectContext.ApplyCurrentValues%2A> method is used to apply changes that were made to objects outside the <xref:System.Data.Objects.ObjectContext>, such as detached objects that are received by a Web service. The method copies the scalar values from the supplied object into the object in the <xref:System.Data.Objects.ObjectContext> that has the same key. You can use the <xref:System.Data.EntityKey> of the detached object to retrieve an instance of this object from the data source. For more information, see [How to: Return a Specific Object Using its Key](http://msdn.microsoft.com/library/2e9902af-29b0-4e5d-92db-03dfe6ec49bd). Any values that differ from the original values of the object are marked as modified. Note, the method does not apply the current values to the related objects of `currentEntity`.  
+ The <xref:System.Data.Objects.ObjectContext.ApplyCurrentValues%2A> method is used to apply changes that were made to objects outside the <xref:System.Data.Objects.ObjectContext>, such as detached objects that are received by a Web service. The method copies the scalar values from the supplied object into the object in the <xref:System.Data.Objects.ObjectContext> that has the same key. You can use the <xref:System.Data.EntityKey> of the detached object to retrieve an instance of this object from the data source. For more information, see [How to: Return a Specific Object Using its Key](https://msdn.microsoft.com/library/2e9902af-29b0-4e5d-92db-03dfe6ec49bd). Any values that differ from the original values of the object are marked as modified. Note, the method does not apply the current values to the related objects of `currentEntity`.  
   
  If you have a graph with the current values and want to apply the original values, call <xref:System.Data.Objects.ObjectContext.ApplyOriginalValues%2A> method.  
   
- You may also use the <xref:System.Data.Objects.ObjectSet%601.ApplyCurrentValues%2A> of the <xref:System.Data.Objects.ObjectSet%601> or <xref:System.Data.Objects.ObjectStateEntry.ApplyCurrentValues%2A> method of the <xref:System.Data.Objects.ObjectStateEntry>. For more information, see [Building N-Tier Applications](http://msdn.microsoft.com/library/9439d2ba-6b5f-44e8-be65-8a442d922cbb).  
+ You may also use the <xref:System.Data.Objects.ObjectSet%601.ApplyCurrentValues%2A> of the <xref:System.Data.Objects.ObjectSet%601> or <xref:System.Data.Objects.ObjectStateEntry.ApplyCurrentValues%2A> method of the <xref:System.Data.Objects.ObjectStateEntry>. For more information, see [Building N-Tier Applications](https://msdn.microsoft.com/library/9439d2ba-6b5f-44e8-be65-8a442d922cbb).  
   
  ]]></format>
         </remarks>
@@ -397,11 +397,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Objects.ObjectContext.ApplyOriginalValues%2A> method is used to apply changes that were made to objects outside the <xref:System.Data.Objects.ObjectContext>, such as detached objects that are received by a Web service. The method copies the scalar values from the supplied object into the object in the <xref:System.Data.Objects.ObjectContext> that has the same key. You can use the <xref:System.Data.EntityKey> of the detached object to retrieve an instance of this object from the data source. For more information, see [How to: Return a Specific Object Using its Key](http://msdn.microsoft.com/library/2e9902af-29b0-4e5d-92db-03dfe6ec49bd). Any values that differ from the current values of the object are marked as modified. Note, the method does not apply the current values to the related objects of `originalEntity`.  
+ The <xref:System.Data.Objects.ObjectContext.ApplyOriginalValues%2A> method is used to apply changes that were made to objects outside the <xref:System.Data.Objects.ObjectContext>, such as detached objects that are received by a Web service. The method copies the scalar values from the supplied object into the object in the <xref:System.Data.Objects.ObjectContext> that has the same key. You can use the <xref:System.Data.EntityKey> of the detached object to retrieve an instance of this object from the data source. For more information, see [How to: Return a Specific Object Using its Key](https://msdn.microsoft.com/library/2e9902af-29b0-4e5d-92db-03dfe6ec49bd). Any values that differ from the current values of the object are marked as modified. Note, the method does not apply the current values to the related objects of `originalEntity`.  
   
  If you have a graph with the original values and want to apply the current values, call <xref:System.Data.Objects.ObjectContext.ApplyCurrentValues%2A> method.  
   
- You may also use the <xref:System.Data.Objects.ObjectSet%601.ApplyOriginalValues%2A> of the <xref:System.Data.Objects.ObjectSet%601> or <xref:System.Data.Objects.ObjectStateEntry.ApplyOriginalValues%2A> method of the <xref:System.Data.Objects.ObjectStateEntry>. For more information, see [Building N-Tier Applications](http://msdn.microsoft.com/library/9439d2ba-6b5f-44e8-be65-8a442d922cbb).  
+ You may also use the <xref:System.Data.Objects.ObjectSet%601.ApplyOriginalValues%2A> of the <xref:System.Data.Objects.ObjectSet%601> or <xref:System.Data.Objects.ObjectStateEntry.ApplyOriginalValues%2A> method of the <xref:System.Data.Objects.ObjectStateEntry>. For more information, see [Building N-Tier Applications](https://msdn.microsoft.com/library/9439d2ba-6b5f-44e8-be65-8a442d922cbb).  
   
  ]]></format>
         </remarks>
@@ -520,7 +520,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call <xref:System.Data.Objects.ObjectContext.Attach%2A> on the <xref:System.Data.Objects.ObjectContext> to attach the object to the object context. Do this when the object already exists in the data source but is currently not attached to the context. For more information, see [Customizing Objects](http://msdn.microsoft.com/library/af6f07ce-2261-4c65-87cf-d018ad082921).  
+ Call <xref:System.Data.Objects.ObjectContext.Attach%2A> on the <xref:System.Data.Objects.ObjectContext> to attach the object to the object context. Do this when the object already exists in the data source but is currently not attached to the context. For more information, see [Customizing Objects](https://msdn.microsoft.com/library/af6f07ce-2261-4c65-87cf-d018ad082921).  
   
  <xref:System.Data.Objects.ObjectContext.Attach%2A> is used to attach an object or the top-level object in an object graph.  
   
@@ -541,7 +541,7 @@
    
   
 ## Examples  
- The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). In this example, two objects are attached and then the relationship is defined.  
+ The example in this topic is based on the [AdventureWorks Sales Model](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). In this example, two objects are attached and then the relationship is defined.  
   
  [!code-csharp[DP ObjectServices Concepts#AttachRelatedObjects](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#attachrelatedobjects)]
  [!code-vb[DP ObjectServices Concepts#AttachRelatedObjects](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#attachrelatedobjects)]  
@@ -581,7 +581,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call <xref:System.Data.Objects.ObjectContext.AttachTo%2A> on the <xref:System.Data.Objects.ObjectContext> to attach the object to a specific entity set in the object context or if the object has a `null` (`Nothing` in Visual Basic) <xref:System.Data.EntityKey> value. For more information, see [Attaching and Detaching Objects](http://msdn.microsoft.com/library/41d5c1ef-1b78-4502-aa10-7e1438d62d23).  
+ Call <xref:System.Data.Objects.ObjectContext.AttachTo%2A> on the <xref:System.Data.Objects.ObjectContext> to attach the object to a specific entity set in the object context or if the object has a `null` (`Nothing` in Visual Basic) <xref:System.Data.EntityKey> value. For more information, see [Attaching and Detaching Objects](https://msdn.microsoft.com/library/41d5c1ef-1b78-4502-aa10-7e1438d62d23).  
   
  The object being attached can be a single object or be part of the graph.  
   
@@ -628,7 +628,7 @@
   
  Any object from the object graph already exists in another state manager.</exception>
         <altmember cref="M:System.Data.Objects.ObjectSet`1.Attach(`0)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="CommandTimeout">
@@ -669,7 +669,7 @@
    
   
 ## Examples  
- [Object Queries](http://msdn.microsoft.com/library/0768033c-876f-471d-85d5-264884349276)  
+ [Object Queries](https://msdn.microsoft.com/library/0768033c-876f-471d-85d5-264884349276)  
   
  ]]></format>
         </remarks>
@@ -712,7 +712,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">When the <see cref="T:System.Data.Objects.ObjectContext" /> instance has been disposed.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="ContextOptions">
@@ -846,7 +846,7 @@
    
   
 ## Examples  
- The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). In this example, <xref:System.Data.Objects.ObjectContext.CreateEntityKey%2A> is used to retrieve the entity key of an existing object.  
+ The example in this topic is based on the [AdventureWorks Sales Model](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). In this example, <xref:System.Data.Objects.ObjectContext.CreateEntityKey%2A> is used to retrieve the entity key of an existing object.  
   
  [!code-csharp[DP ObjectServices Concepts#ApplyItemUpdatesGetObject](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#applyitemupdatesgetobject)]
  [!code-vb[DP ObjectServices Concepts#ApplyItemUpdatesGetObject](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#applyitemupdatesgetobject)]  
@@ -897,7 +897,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Objects.ObjectContext.CreateObject%2A> method is used with POCO custom data classes to make sure that the returned object can be managed correctly by the Entity Framework. For more information, see [Requirements for Creating POCO Proxies](http://msdn.microsoft.com/library/dcdbf982-9b9d-4582-806a-64de4a1c03c8) and [Working with POCO Entities](http://msdn.microsoft.com/library/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
+ The <xref:System.Data.Objects.ObjectContext.CreateObject%2A> method is used with POCO custom data classes to make sure that the returned object can be managed correctly by the Entity Framework. For more information, see [Requirements for Creating POCO Proxies](https://msdn.microsoft.com/library/dcdbf982-9b9d-4582-806a-64de4a1c03c8) and [Working with POCO Entities](https://msdn.microsoft.com/library/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
   
  ]]></format>
         </remarks>
@@ -1007,7 +1007,7 @@
 ## Remarks  
  Individual types in the `types` enumeration that do not map to an entity type in the conceptual model are ignored.  
   
- For more information, see [Requirements for Creating POCO Proxies](http://msdn.microsoft.com/library/dcdbf982-9b9d-4582-806a-64de4a1c03c8) and [Working with POCO Entities](http://msdn.microsoft.com/library/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
+ For more information, see [Requirements for Creating POCO Proxies](https://msdn.microsoft.com/library/dcdbf982-9b9d-4582-806a-64de4a1c03c8) and [Working with POCO Entities](https://msdn.microsoft.com/library/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
   
  ]]></format>
         </remarks>
@@ -1057,7 +1057,7 @@
    
   
 ## Examples  
- This example is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832).  
+ This example is based on the [AdventureWorks Sales Model](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832).  
   
  The example creates a simple query and iterates through the collection of results.  
   
@@ -1133,7 +1133,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteDatabase">
@@ -1204,7 +1204,7 @@
    
   
 ## Examples  
- These examples are based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832).  
+ These examples are based on the [AdventureWorks Sales Model](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832).  
   
  This example constructs an <xref:System.Data.EntityKey> with a specific ProductID, uses the key to retrieve a Product object from the data source, deletes the product, and saves the changes to the database.  
   
@@ -1223,7 +1223,7 @@
         <exception cref="T:System.InvalidOperationException">
           <paramref name="entity" /> does not exist.</exception>
         <altmember cref="M:System.Data.Objects.ObjectSet`1.DeleteObject(`0)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="Detach">
@@ -1252,7 +1252,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Removes the object from the <xref:System.Data.Objects.ObjectStateManager>. This disables change tracking and identity resolution for that object. For more information, see [Attaching and Detaching Objects](http://msdn.microsoft.com/library/41d5c1ef-1b78-4502-aa10-7e1438d62d23).  
+ Removes the object from the <xref:System.Data.Objects.ObjectStateManager>. This disables change tracking and identity resolution for that object. For more information, see [Attaching and Detaching Objects](https://msdn.microsoft.com/library/41d5c1ef-1b78-4502-aa10-7e1438d62d23).  
   
  After the <xref:System.Data.Objects.ObjectContext.Detach%2A> method is called, the system will no longer keep references that point to this object and it can be collected by the garbage collector.  
   
@@ -1267,7 +1267,7 @@
   
 -   Cascade delete directives and referential constraints are not enforced during a detach operation.  
   
- For more information, see [Attaching and Detaching Objects](http://msdn.microsoft.com/library/41d5c1ef-1b78-4502-aa10-7e1438d62d23).  
+ For more information, see [Attaching and Detaching Objects](https://msdn.microsoft.com/library/41d5c1ef-1b78-4502-aa10-7e1438d62d23).  
   
    
   
@@ -1280,7 +1280,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="entity" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <paramref name="entity" /> is not associated with this <see cref="T:System.Data.Objects.ObjectContext" /> (for example, was newly created and not associated with any context yet, or was obtained through some other context, or was already detached).</exception>
         <altmember cref="M:System.Data.Objects.ObjectSet`1.Detach(`0)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="DetectChanges">
@@ -1341,13 +1341,13 @@
 ## Remarks  
  This method closes the connection if it was opened by the Entity Framework. After <xref:System.Data.Objects.ObjectContext.Dispose%2A> is called, operations that require an open connection, such as executing a query or calling the <xref:System.Data.Objects.ObjectQuery.ToTraceString%2A> method, will cause an exception. Operations that do not require an open connection, such as composing a query or attaching objects, will not cause an exception. The <xref:System.Data.Objects.ObjectContext.Dispose%2A> method does not close any explicitly opened connections.  
   
- Limiting the scope of an <xref:System.Data.Objects.ObjectContext> within a `using` block (`Using` in Visual Basic) ensures that resources are correctly disposed. For more information, see [Managing Connections and Transactions](http://msdn.microsoft.com/library/b6659d2a-9a45-4e98-acaa-d7a8029e5b99).  
+ Limiting the scope of an <xref:System.Data.Objects.ObjectContext> within a `using` block (`Using` in Visual Basic) ensures that resources are correctly disposed. For more information, see [Managing Connections and Transactions](https://msdn.microsoft.com/library/b6659d2a-9a45-4e98-acaa-d7a8029e5b99).  
   
  The <xref:System.Data.Objects.ObjectContext.Dispose> method calls the `virtual` (`Overridable` in Visual Basic) <xref:System.Data.Objects.ObjectContext.Dispose%28System.Boolean%29> method.  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -1379,11 +1379,11 @@
 ## Remarks  
  This method closes the connection. After <xref:System.Data.Objects.ObjectContext.Dispose%2A> is called, operations that require an open connection, such as executing a query or calling the <xref:System.Data.Objects.ObjectQuery.ToTraceString%2A> method, will cause an exception. Operations that do not require an open connection, such as composing a query or attaching objects, will not cause an exception.  
   
- Limiting the scope of an <xref:System.Data.Objects.ObjectContext> within a `using` block (`Using` in Visual Basic) ensures that resources are properly disposed. For more information, see [Managing Connections and Transactions](http://msdn.microsoft.com/library/b6659d2a-9a45-4e98-acaa-d7a8029e5b99).  
+ Limiting the scope of an <xref:System.Data.Objects.ObjectContext> within a `using` block (`Using` in Visual Basic) ensures that resources are properly disposed. For more information, see [Managing Connections and Transactions](https://msdn.microsoft.com/library/b6659d2a-9a45-4e98-acaa-d7a8029e5b99).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="ExecuteFunction">
@@ -1474,7 +1474,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Objects.ObjectContext.ExecuteFunction%2A> method is a helper method that is used to execute stored procedures or functions that are defined in the data source and expressed in the conceptual model. The Entity Data Model tools generate a method for each  in the conceptual model. These methods call a strongly-typed `ExecuteFunction` to return a typed <xref:System.Data.Objects.ObjectResult%601>. For more information, see [Application Code using Stored Procedures (Enity Framework)](http://msdn.microsoft.com/library/d13dd33f-fcf9-4e86-bd00-74bc31521536).  
+ The <xref:System.Data.Objects.ObjectContext.ExecuteFunction%2A> method is a helper method that is used to execute stored procedures or functions that are defined in the data source and expressed in the conceptual model. The Entity Data Model tools generate a method for each  in the conceptual model. These methods call a strongly-typed `ExecuteFunction` to return a typed <xref:System.Data.Objects.ObjectResult%601>. For more information, see [Application Code using Stored Procedures (Enity Framework)](https://msdn.microsoft.com/library/d13dd33f-fcf9-4e86-bd00-74bc31521536).  
   
  All parameters for the function are required in the parameters array and all types are checked against the metadata for the import function, including the type of the function itself. `null` values are permitted for CLR value types. Parameter validation is performed by the provider.  
   
@@ -1493,7 +1493,7 @@
  -or-  
   
  There is a type mismatch on the reader and the <paramref name="function" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="ExecuteFunction&lt;TElement&gt;">
@@ -1535,7 +1535,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Objects.ObjectContext.ExecuteFunction%2A> method is a helper method that is used to execute stored procedures or functions that are defined in the data source and expressed in conceptual model. The Entity Data Model tools generate a method for each  in the conceptual model. These methods call a strongly-typed `ExecuteFunction` to return a typed <xref:System.Data.Objects.ObjectResult%601>. For more information, see [Application Code using Stored Procedures (Enity Framework)](http://msdn.microsoft.com/library/d13dd33f-fcf9-4e86-bd00-74bc31521536).  
+ The <xref:System.Data.Objects.ObjectContext.ExecuteFunction%2A> method is a helper method that is used to execute stored procedures or functions that are defined in the data source and expressed in conceptual model. The Entity Data Model tools generate a method for each  in the conceptual model. These methods call a strongly-typed `ExecuteFunction` to return a typed <xref:System.Data.Objects.ObjectResult%601>. For more information, see [Application Code using Stored Procedures (Enity Framework)](https://msdn.microsoft.com/library/d13dd33f-fcf9-4e86-bd00-74bc31521536).  
   
  All parameters for the function are required in the parameters array and all types are checked against the metadata for the import function, including the type of the function itself. `null` values are permitted for CLR value types. Parameter validation is performed by the provider.  
   
@@ -1552,7 +1552,7 @@
  -or-  
   
  There is a type mismatch on the reader and the <paramref name="function" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="ExecuteStoreCommand">
@@ -1597,9 +1597,9 @@
   
  For more information, see:  
   
- [Directly Executing Store Commands](http://msdn.microsoft.com/library/5708d0a2-3f76-4825-978a-d06ff5c4bb3d) and  
+ [Directly Executing Store Commands](https://msdn.microsoft.com/library/5708d0a2-3f76-4825-978a-d06ff5c4bb3d) and  
   
- [How to: Directly Execute Commands Against the Data Source](http://msdn.microsoft.com/library/def3cc87-cfff-4dee-83cf-1a40c73a2d01)  
+ [How to: Directly Execute Commands Against the Data Source](https://msdn.microsoft.com/library/def3cc87-cfff-4dee-83cf-1a40c73a2d01)  
   
  ]]></format>
         </remarks>
@@ -1662,9 +1662,9 @@
   
  For more information, see:  
   
- [Directly Executing Store Commands](http://msdn.microsoft.com/library/5708d0a2-3f76-4825-978a-d06ff5c4bb3d) and  
+ [Directly Executing Store Commands](https://msdn.microsoft.com/library/5708d0a2-3f76-4825-978a-d06ff5c4bb3d) and  
   
- [How to: Directly Execute Commands Against the Data Source](http://msdn.microsoft.com/library/def3cc87-cfff-4dee-83cf-1a40c73a2d01)  
+ [How to: Directly Execute Commands Against the Data Source](https://msdn.microsoft.com/library/def3cc87-cfff-4dee-83cf-1a40c73a2d01)  
   
  ]]></format>
         </remarks>
@@ -1725,9 +1725,9 @@
   
  For more information, see:  
   
- [Directly Executing Store Commands](http://msdn.microsoft.com/library/5708d0a2-3f76-4825-978a-d06ff5c4bb3d) and  
+ [Directly Executing Store Commands](https://msdn.microsoft.com/library/5708d0a2-3f76-4825-978a-d06ff5c4bb3d) and  
   
- [How to: Directly Execute Commands Against the Data Source](http://msdn.microsoft.com/library/def3cc87-cfff-4dee-83cf-1a40c73a2d01)  
+ [How to: Directly Execute Commands Against the Data Source](https://msdn.microsoft.com/library/def3cc87-cfff-4dee-83cf-1a40c73a2d01)  
   
  ]]></format>
         </remarks>
@@ -1756,7 +1756,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Objects.ObjectContext.GetKnownProxyTypes%2A> method is used when proxy object generation is enabled for POCO entities. For more information, see [Requirements for Creating POCO Proxies](http://msdn.microsoft.com/library/dcdbf982-9b9d-4582-806a-64de4a1c03c8) and [Working with POCO Entities](http://msdn.microsoft.com/library/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
+ The <xref:System.Data.Objects.ObjectContext.GetKnownProxyTypes%2A> method is used when proxy object generation is enabled for POCO entities. For more information, see [Requirements for Creating POCO Proxies](https://msdn.microsoft.com/library/dcdbf982-9b9d-4582-806a-64de4a1c03c8) and [Working with POCO Entities](https://msdn.microsoft.com/library/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
   
  ]]></format>
         </remarks>
@@ -1789,7 +1789,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Data.Objects.ObjectContext.GetObjectByKey%2A> tries to retrieve an object that has the specified <xref:System.Data.EntityKey> from the <xref:System.Data.Objects.ObjectStateManager>. If the object is currently not loaded into the object context, a query is executed in an attempt to return the object from the data source. For more information, see [Object Queries](http://msdn.microsoft.com/library/0768033c-876f-471d-85d5-264884349276).  
+ <xref:System.Data.Objects.ObjectContext.GetObjectByKey%2A> tries to retrieve an object that has the specified <xref:System.Data.EntityKey> from the <xref:System.Data.Objects.ObjectStateManager>. If the object is currently not loaded into the object context, a query is executed in an attempt to return the object from the data source. For more information, see [Object Queries](https://msdn.microsoft.com/library/0768033c-876f-471d-85d5-264884349276).  
   
  <xref:System.Data.Objects.ObjectContext.GetObjectByKey%2A> raises an <xref:System.Data.ObjectNotFoundException> when the object cannot be found. To avoid handling this exception, instead use the <xref:System.Data.Objects.ObjectContext.TryGetObjectByKey%2A> method.  
   
@@ -1800,7 +1800,7 @@
    
   
 ## Examples  
- This example is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example creates an <xref:System.Data.EntityKey> for an entity of the given type and then fetches an entity by key.  
+ This example is based on the [AdventureWorks Sales Model](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example creates an <xref:System.Data.EntityKey> for an entity of the given type and then fetches an entity by key.  
   
  [!code-csharp[DP ObjectServices Concepts#EntityKeyClass_GetObjectByKey](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#entitykeyclass_getobjectbykey)]
  [!code-vb[DP ObjectServices Concepts#EntityKeyClass_GetObjectByKey](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#entitykeyclass_getobjectbykey)]  
@@ -1810,7 +1810,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Data.ObjectNotFoundException">The object is not found in either the <see cref="T:System.Data.Objects.ObjectStateManager" /> or the data source.</exception>
         <related type="Article" href="~/docs/framework/data/adonet/ef/querying-a-conceptual-model.md">Querying Data as Objects (Entity Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="GetObjectType">
@@ -1838,7 +1838,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Objects.ObjectContext.GetObjectType%2A> method is used when proxy object generation is enabled for POCO entities. For more information, see [Requirements for Creating POCO Proxies](http://msdn.microsoft.com/library/dcdbf982-9b9d-4582-806a-64de4a1c03c8) and [Working with POCO Entities](http://msdn.microsoft.com/library/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
+ The <xref:System.Data.Objects.ObjectContext.GetObjectType%2A> method is used when proxy object generation is enabled for POCO entities. For more information, see [Requirements for Creating POCO Proxies](https://msdn.microsoft.com/library/dcdbf982-9b9d-4582-806a-64de4a1c03c8) and [Working with POCO Entities](https://msdn.microsoft.com/library/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
   
  ]]></format>
         </remarks>
@@ -2084,11 +2084,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Metadata.Edm.MetadataWorkspace> class is a central runtime API that you can use to interact with the Entity Data Model (EDM) metadata in the context of an application. For more information, see [Metadata Workspace](http://msdn.microsoft.com/library/601aee56-3eda-4caa-9082-a01df76c5e84).  
+ The <xref:System.Data.Metadata.Edm.MetadataWorkspace> class is a central runtime API that you can use to interact with the Entity Data Model (EDM) metadata in the context of an application. For more information, see [Metadata Workspace](https://msdn.microsoft.com/library/601aee56-3eda-4caa-9082-a01df76c5e84).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="ObjectMaterialized">
@@ -2141,7 +2141,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- These examples are based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). This example gets the <xref:System.Data.Objects.ObjectStateManager> from the <xref:System.Data.Objects.ObjectContext> and uses the state manager to access an object in the context.  
+ These examples are based on the [AdventureWorks Sales Model](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). This example gets the <xref:System.Data.Objects.ObjectStateManager> from the <xref:System.Data.Objects.ObjectContext> and uses the state manager to access an object in the context.  
   
  [!code-csharp[DP ObjectServices Concepts#ObjectStateManager](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#objectstatemanager)]
  [!code-vb[DP ObjectServices Concepts#ObjectStateManager](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#objectstatemanager)]  
@@ -2153,7 +2153,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="QueryProvider">
@@ -2221,7 +2221,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method has the dual purpose of allowing objects in the object context to be refreshed with data from the data source, and being the mechanism by which conflicts can be resolved. For more information, see [Saving Changes and Managing Concurrency](http://msdn.microsoft.com/library/b8378601-4f26-4a05-a24a-f50aeb68610e).  
+ This method has the dual purpose of allowing objects in the object context to be refreshed with data from the data source, and being the mechanism by which conflicts can be resolved. For more information, see [Saving Changes and Managing Concurrency](https://msdn.microsoft.com/library/b8378601-4f26-4a05-a24a-f50aeb68610e).  
   
  The order in which objects are refreshed is nondeterministic.  
   
@@ -2241,7 +2241,7 @@
  -or-  
   
  An object is not attached to the context.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -2271,7 +2271,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Data.Objects.ObjectContext.Refresh%2A> has the dual purpose of allowing an object to be refreshed with data from the data source and being the mechanism by which conflicts can be resolved. For more information, see [Saving Changes and Managing Concurrency](http://msdn.microsoft.com/library/b8378601-4f26-4a05-a24a-f50aeb68610e).  
+ <xref:System.Data.Objects.ObjectContext.Refresh%2A> has the dual purpose of allowing an object to be refreshed with data from the data source and being the mechanism by which conflicts can be resolved. For more information, see [Saving Changes and Managing Concurrency](https://msdn.microsoft.com/library/b8378601-4f26-4a05-a24a-f50aeb68610e).  
   
  The order in which objects are refreshed is nondeterministic.  
   
@@ -2282,7 +2282,7 @@
    
   
 ## Examples  
- This example is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example tries to save changes, and this may cause a concurrency conflict. Then it shows how to resolve the concurrency conflict by refreshing the object context before re-saving changes.  
+ This example is based on the [AdventureWorks Sales Model](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example tries to save changes, and this may cause a concurrency conflict. Then it shows how to resolve the concurrency conflict by refreshing the object context before re-saving changes.  
   
  [!code-csharp[DP ObjectServices Concepts#Concurrency](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#concurrency)]
  [!code-vb[DP ObjectServices Concepts#Concurrency](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#concurrency)]  
@@ -2299,7 +2299,7 @@
  -or-  
   
  An object is not attached to the context.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SaveChanges">
@@ -2340,16 +2340,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To ensure that objects on the client have been updated by data source-side logic, you can call the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode.StoreWins> value after you call <xref:System.Data.Objects.ObjectContext.SaveChanges%2A>. For more information, see [Saving Changes and Managing Concurrency](http://msdn.microsoft.com/library/b8378601-4f26-4a05-a24a-f50aeb68610e).  
+ To ensure that objects on the client have been updated by data source-side logic, you can call the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode.StoreWins> value after you call <xref:System.Data.Objects.ObjectContext.SaveChanges%2A>. For more information, see [Saving Changes and Managing Concurrency](https://msdn.microsoft.com/library/b8378601-4f26-4a05-a24a-f50aeb68610e).  
   
  <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> operates within a transaction. <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> will roll back that transaction and throw an exception if any of the dirty <xref:System.Data.Objects.ObjectStateEntry> objects cannot be persisted.  
   
- If an optimistic concurrency violation has occurred, an <xref:System.Data.OptimisticConcurrencyException> is thrown. You can resolve an optimistic concurrency violation by catching it, calling the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode.StoreWins> or <xref:System.Data.Objects.RefreshMode.ClientWins> value, and then calling <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> again. For more information, see [How to: Manage Data Concurrency in the Object Context](http://msdn.microsoft.com/library/25ffe70d-ce97-4f0a-8ae0-22b7c40f748a).  
+ If an optimistic concurrency violation has occurred, an <xref:System.Data.OptimisticConcurrencyException> is thrown. You can resolve an optimistic concurrency violation by catching it, calling the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode.StoreWins> or <xref:System.Data.Objects.RefreshMode.ClientWins> value, and then calling <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> again. For more information, see [How to: Manage Data Concurrency in the Object Context](https://msdn.microsoft.com/library/25ffe70d-ce97-4f0a-8ae0-22b7c40f748a).  
   
    
   
 ## Examples  
- This example is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). This example tries to save changes, which may cause a concurrency conflict. Then, it demonstrates how to resolve the concurrency conflict by refreshing the object context before re-saving changes.  
+ This example is based on the [AdventureWorks Sales Model](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). This example tries to save changes, which may cause a concurrency conflict. Then, it demonstrates how to resolve the concurrency conflict by refreshing the object context before re-saving changes.  
   
  [!code-csharp[DP ObjectServices Concepts#Concurrency](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#concurrency)]
  [!code-vb[DP ObjectServices Concepts#Concurrency](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#concurrency)]  
@@ -2357,7 +2357,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.OptimisticConcurrencyException">An optimistic concurrency violation has occurred in the data source.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="SaveChanges">
@@ -2437,7 +2437,7 @@
   
  To make sure that objects on the client have been updated by data source-side logic, you can call the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode.StoreWins> value after you call <xref:System.Data.Objects.ObjectContext.SaveChanges%2A>. The <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method operates in a transaction. <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> will roll back that transaction and throw an exception if any one of the dirty <xref:System.Data.Objects.ObjectStateEntry> objects cannot be persisted.  
   
- If an optimistic concurrency violation has occurred, an <xref:System.Data.OptimisticConcurrencyException> is thrown. You can resolve an optimistic concurrency violation by catching it, calling the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode.StoreWins> or <xref:System.Data.Objects.RefreshMode.ClientWins> values, and then calling the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method again. For more information, see [How to: Manage Data Concurrency in the Object Context](http://msdn.microsoft.com/library/25ffe70d-ce97-4f0a-8ae0-22b7c40f748a).  
+ If an optimistic concurrency violation has occurred, an <xref:System.Data.OptimisticConcurrencyException> is thrown. You can resolve an optimistic concurrency violation by catching it, calling the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode.StoreWins> or <xref:System.Data.Objects.RefreshMode.ClientWins> values, and then calling the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method again. For more information, see [How to: Manage Data Concurrency in the Object Context](https://msdn.microsoft.com/library/25ffe70d-ce97-4f0a-8ae0-22b7c40f748a).  
   
  ]]></format>
         </remarks>
@@ -2471,14 +2471,14 @@
    
   
 ## Examples  
- This example is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). This registers a handler for the <xref:System.Data.Objects.ObjectContext.SavingChanges> event that performs entity state validation.  
+ This example is based on the [AdventureWorks Sales Model](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). This registers a handler for the <xref:System.Data.Objects.ObjectContext.SavingChanges> event that performs entity state validation.  
   
  [!code-csharp[DP ObjectServices Concepts#SavingChanges](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#savingchanges)]
  [!code-vb[DP ObjectServices Concepts#SavingChanges](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#savingchanges)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="Translate&lt;TElement&gt;">
@@ -2517,9 +2517,9 @@
   
  For more information, see:  
   
- [Directly Executing Store Commands](http://msdn.microsoft.com/library/5708d0a2-3f76-4825-978a-d06ff5c4bb3d) and  
+ [Directly Executing Store Commands](https://msdn.microsoft.com/library/5708d0a2-3f76-4825-978a-d06ff5c4bb3d) and  
   
- [How to: Directly Execute Commands Against the Data Source](http://msdn.microsoft.com/library/def3cc87-cfff-4dee-83cf-1a40c73a2d01)  
+ [How to: Directly Execute Commands Against the Data Source](https://msdn.microsoft.com/library/def3cc87-cfff-4dee-83cf-1a40c73a2d01)  
   
  ]]></format>
         </remarks>
@@ -2565,9 +2565,9 @@
   
  For more information, see:  
   
- [Directly Executing Store Commands](http://msdn.microsoft.com/library/5708d0a2-3f76-4825-978a-d06ff5c4bb3d) and  
+ [Directly Executing Store Commands](https://msdn.microsoft.com/library/5708d0a2-3f76-4825-978a-d06ff5c4bb3d) and  
   
- [How to: Directly Execute Commands Against the Data Source](http://msdn.microsoft.com/library/def3cc87-cfff-4dee-83cf-1a40c73a2d01)  
+ [How to: Directly Execute Commands Against the Data Source](https://msdn.microsoft.com/library/def3cc87-cfff-4dee-83cf-1a40c73a2d01)  
   
  ]]></format>
         </remarks>
@@ -2606,7 +2606,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Data.Objects.ObjectContext.TryGetObjectByKey%2A> tries to retrieve an object that has the specified <xref:System.Data.EntityKey> from the <xref:System.Data.Objects.ObjectStateManager>. If the object is currently not loaded into the object context, a query is executed in an attempt to return the object from the data source. For more information, see [Object Queries](http://msdn.microsoft.com/library/0768033c-876f-471d-85d5-264884349276).  
+ <xref:System.Data.Objects.ObjectContext.TryGetObjectByKey%2A> tries to retrieve an object that has the specified <xref:System.Data.EntityKey> from the <xref:System.Data.Objects.ObjectStateManager>. If the object is currently not loaded into the object context, a query is executed in an attempt to return the object from the data source. For more information, see [Object Queries](https://msdn.microsoft.com/library/0768033c-876f-471d-85d5-264884349276).  
   
  Use the <xref:System.Data.Objects.ObjectContext.TryGetObjectByKey%2A> method to avoid handling the <xref:System.Data.ObjectNotFoundException> raised by <xref:System.Data.Objects.ObjectContext.GetObjectByKey%2A> when the object cannot be found.  
   
@@ -2619,7 +2619,7 @@
    
   
 ## Examples  
- The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example creates an <xref:System.Data.EntityKey> for an entity of the given type and then tries to retrieve an entity by key.  
+ The example in this topic is based on the [AdventureWorks Sales Model](https://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). The example creates an <xref:System.Data.EntityKey> for an entity of the given type and then tries to retrieve an entity by key.  
   
  [!code-csharp[DP ObjectServices Concepts#EntityKeyClass_TryGetObjectByKey](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#entitykeyclass_trygetobjectbykey)]
  [!code-vb[DP ObjectServices Concepts#EntityKeyClass_TryGetObjectByKey](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#entitykeyclass_trygetobjectbykey)]  
@@ -2629,7 +2629,7 @@
         <exception cref="T:System.ArgumentException">Incompatible metadata for <paramref name="key" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/338d8a55-05cc-46b0-bbb8-1379d77068e9">Working with Objects (Entity Framework)</related>
       </Docs>
     </Member>
   </Members>

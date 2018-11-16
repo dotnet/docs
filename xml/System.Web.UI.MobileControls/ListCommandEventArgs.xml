@@ -29,7 +29,7 @@
  The following code example shows how you can use the <xref:System.Web.UI.MobileControls.ListCommandEventArgs> object to modify the status of tasks in a list when the item is clicked. This example is part of a larger example for the <xref:System.Web.UI.MobileControls.List> overview.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-csharp[MobileListSample#2](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListSample/cs/Default.aspx#2)]
  [!code-vb[MobileListSample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListSample/vb/Default.aspx#2)]  
@@ -187,7 +187,7 @@
  The following code example demonstrates how to the use the <xref:System.Web.UI.MobileControls.ObjectList.DefaultCommand%2A> property to specify "Check" as the default command.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MobileCmdEventArgsSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileCmdEventArgsSample/cs/Default.aspx#1)]  
   

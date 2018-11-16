@@ -21,14 +21,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Message> structure wraps messages that Windows sends. You can use this structure to wrap a message and assign it to the window procedure to be dispatched. You can also use this structure to get information about a message the system sends to your application or controls. For more information about Windows messages, see [Messages and Message Queues](http://go.microsoft.com/fwlink/?LinkId=198815).  
+ The <xref:System.Windows.Forms.Message> structure wraps messages that Windows sends. You can use this structure to wrap a message and assign it to the window procedure to be dispatched. You can also use this structure to get information about a message the system sends to your application or controls. For more information about Windows messages, see [Messages and Message Queues](https://go.microsoft.com/fwlink/?LinkId=198815).  
   
  You cannot create the <xref:System.Windows.Forms.Message> directly. Instead, use the <xref:System.Windows.Forms.Message.Create%2A> method. For the sake of efficiency, the <xref:System.Windows.Forms.Message> uses its pool of existing <xref:System.Windows.Forms.Message>s instead of instantiating a new one, if possible. However, if a <xref:System.Windows.Forms.Message> is not available in the pool, a new one is instantiated.  
   
    
   
 ## Examples  
- The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message>. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. For information about the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=nameWithType> values, see the [MSG Structure](http://go.microsoft.com/fwlink/?LinkId=198816) documentation. For information about the actual constant values, see [Message Constants](http://go.microsoft.com/fwlink/?LinkId=198817).  
+ The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message>. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. For information about the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=nameWithType> values, see the [MSG Structure](https://go.microsoft.com/fwlink/?LinkId=198816) documentation. For information about the actual constant values, see [Message Constants](https://go.microsoft.com/fwlink/?LinkId=198817).  
   
  [!code-cpp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CS/form1.cs#1)]
@@ -36,9 +36,9 @@
   
  ]]></format>
     </remarks>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198815">Messages and Message Queues</related>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198816">MSG Structure</related>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198817">Message Constants</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=198815">Messages and Message Queues</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=198816">MSG Structure</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=198817">Message Constants</related>
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -235,9 +235,9 @@
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198815">Messages and Message Queues</related>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198816">MSG Structure</related>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198817">Message Constants</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=198815">Messages and Message Queues</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=198816">MSG Structure</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=198817">Message Constants</related>
       </Docs>
     </Member>
     <Member MemberName="Msg">
@@ -272,7 +272,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message>. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. For information about the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=nameWithType> values, see the [MSG Structure](http://go.microsoft.com/fwlink/?LinkId=198816) documentation. For information about the actual constant values, see [Message Constants](http://go.microsoft.com/fwlink/?LinkId=198817).  
+ The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message>. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. For information about the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=nameWithType> values, see the [MSG Structure](https://go.microsoft.com/fwlink/?LinkId=198816) documentation. For information about the actual constant values, see [Message Constants](https://go.microsoft.com/fwlink/?LinkId=198817).  
   
  [!code-cpp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CS/form1.cs#1)]
@@ -280,9 +280,9 @@
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198815">Messages and Message Queues</related>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198816">MSG Structure</related>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198817">Message Constants</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=198815">Messages and Message Queues</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=198816">MSG Structure</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=198817">Message Constants</related>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -439,7 +439,7 @@
    
   
 ## Examples  
- The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message>. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. For information about the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=nameWithType> values, see the [MSG Structure](http://go.microsoft.com/fwlink/?LinkId=198816) documentation. For information about the actual constant values, see [Message Constants](http://go.microsoft.com/fwlink/?LinkId=198817).  
+ The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message>. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. For information about the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=nameWithType> values, see the [MSG Structure](https://go.microsoft.com/fwlink/?LinkId=198816) documentation. For information about the actual constant values, see [Message Constants](https://go.microsoft.com/fwlink/?LinkId=198817).  
   
  [!code-cpp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CS/form1.cs#1)]
@@ -447,9 +447,9 @@
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198815">Messages and Message Queues</related>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198816">MSG Structure</related>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198817">Message Constants</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=198815">Messages and Message Queues</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=198816">MSG Structure</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=198817">Message Constants</related>
       </Docs>
     </Member>
   </Members>

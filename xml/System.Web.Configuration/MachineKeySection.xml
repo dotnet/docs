@@ -48,7 +48,7 @@
       <para>If you to specify keys in this configuration section, as is required in Web-farm scenarios, it is recommended that you encrypt this section by using protected configuration.</para>
     </block>
     <altmember cref="T:System.Configuration.ConfigurationSection" />
-    <related type="Article" href="http://msdn.microsoft.com/library/a211c071-cdf5-4869-8b7f-c4bec398c299">Forms Authentication Credentials</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/a211c071-cdf5-4869-8b7f-c4bec398c299">Forms Authentication Credentials</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -165,7 +165,7 @@
   
 -   The framework will not produce signed-only payloads. Forms authentication tickets will always be both encrypted and signed, regardless of how the `protection` attribute of the `forms` element is set in the Web.config file. View state will always be both encrypted and signed if either `EnableViewStateMac` or `RequireViewStateEncryption` is set for a given page.  
   
- As a result of the security update that is described in [Microsoft security bulletin MS10-070](http://technet.microsoft.com/security/bulletin/MS10-070), the default encryption behavior is the same for the `Framework20SP1` and `Framework20SP2` settings. Changing the default behavior is not recommended, but if you want to do that, see [How to configure legacy encryption mode in ASP.NET](http://support.microsoft.com/kb/2425938).  
+ As a result of the security update that is described in [Microsoft security bulletin MS10-070](https://technet.microsoft.com/security/bulletin/MS10-070), the default encryption behavior is the same for the `Framework20SP1` and `Framework20SP2` settings. Changing the default behavior is not recommended, but if you want to do that, see [How to configure legacy encryption mode in ASP.NET](https://support.microsoft.com/kb/2425938).  
   
  ]]></format>
         </remarks>
@@ -303,7 +303,7 @@
   
  If you add the "IsolateByAppId" modifier to the "AutoGenerate" <xref:System.Web.Configuration.MachineKeySection.ValidationKey%2A> value, ASP.NET generates a unique encrypted key for each application by using each application's <xref:System.Web.HttpRuntime.AppDomainAppId%2A>. If two distinct applications share a virtual path (perhaps because those applications are running on different ports), this flag can be used to further distinguish them from one another. The "IsolateByAppId" flag is understood only by ASP.NET 4.5, but it can be used regardless of the <xref:System.Web.Configuration.MachineKeySection.CompatibilityMode?displayProperty=nameWithType> setting.  
   
- If you need to support configuration across a network of Web servers (a Web farm), set the <xref:System.Web.Configuration.MachineKeySection.DecryptionKey%2A> property manually to ensure consistent configuration. For information about how to manually generate values for the `DecryptionKey` attribute, see [How To: Configure MachineKey in ASP.NET 2.0](http://go.microsoft.com/fwlink/?linkid=155113).  
+ If you need to support configuration across a network of Web servers (a Web farm), set the <xref:System.Web.Configuration.MachineKeySection.DecryptionKey%2A> property manually to ensure consistent configuration. For information about how to manually generate values for the `DecryptionKey` attribute, see [How To: Configure MachineKey in ASP.NET 2.0](https://go.microsoft.com/fwlink/?linkid=155113).  
   
  This property is  typically set declaratively in the `DecryptionKey` attribute of the  element of the Web.config file. For more information, see the  element.  
   
@@ -526,7 +526,7 @@
   
  If you add the "IsolateByAppId" modifier to the "AutoGenerate" <xref:System.Web.Configuration.MachineKeySection.ValidationKey%2A> value, ASP.NET generates a unique encrypted key for each application by using each application's <xref:System.Web.HttpRuntime.AppDomainAppId%2A>. If two distinct applications share a virtual path (perhaps because those applications are running on different ports), this flag can be used to further distinguish them from one another. The "IsolateByAppId" flag is understood only by ASP.NET 4.5, but it can be used regardless of the <xref:System.Web.Configuration.MachineKeySection.CompatibilityMode?displayProperty=nameWithType> setting.  
   
- If you need to support configuration across a network of Web servers (a Web farm), set the <xref:System.Web.Configuration.MachineKeySection.ValidationKey%2A> property manually to ensure consistent configuration. For information about how to manually generate values for the `DecryptionKey` attribute, see [How To: Configure MachineKey in ASP.NET 2.0](http://go.microsoft.com/fwlink/?linkid=155113).  
+ If you need to support configuration across a network of Web servers (a Web farm), set the <xref:System.Web.Configuration.MachineKeySection.ValidationKey%2A> property manually to ensure consistent configuration. For information about how to manually generate values for the `DecryptionKey` attribute, see [How To: Configure MachineKey in ASP.NET 2.0](https://go.microsoft.com/fwlink/?linkid=155113).  
   
  This property is typically set declaratively in the `validationKey` attribute of the  element of the Web.config file.  
   

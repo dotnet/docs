@@ -22,7 +22,7 @@
     <summary>Provides a synchronization context for the Windows Forms application model.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Threading.SynchronizationContext" />
-    <related type="Article" href="http://msdn.microsoft.com/library/792aa8da-918b-458e-b154-9836b97735f3">Event-based Asynchronous Pattern Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/792aa8da-918b-458e-b154-9836b97735f3">Event-based Asynchronous Pattern Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,7 +42,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.WindowsFormsSynchronizationContext" /> class.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Threading.SynchronizationContext" />
-        <related type="Article" href="http://msdn.microsoft.com/library/792aa8da-918b-458e-b154-9836b97735f3">Event-based Asynchronous Pattern Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/792aa8da-918b-458e-b154-9836b97735f3">Event-based Asynchronous Pattern Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AutoInstall">
@@ -82,7 +82,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.SynchronizationContext" />
-        <related type="Article" href="http://msdn.microsoft.com/library/792aa8da-918b-458e-b154-9836b97735f3">Event-based Asynchronous Pattern Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/792aa8da-918b-458e-b154-9836b97735f3">Event-based Asynchronous Pattern Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateCopy">
@@ -107,7 +107,7 @@
         <returns>A copy of the synchronization context.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Threading.SynchronizationContext" />
-        <related type="Article" href="http://msdn.microsoft.com/library/792aa8da-918b-458e-b154-9836b97735f3">Event-based Asynchronous Pattern Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/792aa8da-918b-458e-b154-9836b97735f3">Event-based Asynchronous Pattern Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -178,7 +178,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.SynchronizationContext" />
-        <related type="Article" href="http://msdn.microsoft.com/library/792aa8da-918b-458e-b154-9836b97735f3">Event-based Asynchronous Pattern Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/792aa8da-918b-458e-b154-9836b97735f3">Event-based Asynchronous Pattern Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -215,7 +215,7 @@
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidAsynchronousStateException">The destination thread no longer exists.</exception>
         <altmember cref="T:System.Threading.SynchronizationContext" />
-        <related type="Article" href="http://msdn.microsoft.com/library/792aa8da-918b-458e-b154-9836b97735f3">Event-based Asynchronous Pattern Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/792aa8da-918b-458e-b154-9836b97735f3">Event-based Asynchronous Pattern Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -253,7 +253,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.SynchronizationContext" />
-        <related type="Article" href="http://msdn.microsoft.com/library/792aa8da-918b-458e-b154-9836b97735f3">Event-based Asynchronous Pattern Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/792aa8da-918b-458e-b154-9836b97735f3">Event-based Asynchronous Pattern Overview</related>
       </Docs>
     </Member>
   </Members>

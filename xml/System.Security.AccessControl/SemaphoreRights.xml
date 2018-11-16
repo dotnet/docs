@@ -39,7 +39,7 @@
 ## Remarks  
  Use the <xref:System.Security.AccessControl.SemaphoreRights> enumeration to specify access control rights when you create <xref:System.Security.AccessControl.SemaphoreSecurity> objects. To apply access rights to a named system semaphore, use <xref:System.Security.AccessControl.SemaphoreSecurity> objects with the <xref:System.Threading.Semaphore.%23ctor%28System.Int32%2CSystem.Int32%2CSystem.String%2CSystem.Boolean%40%2CSystem.Security.AccessControl.SemaphoreSecurity%29?displayProperty=nameWithType> constructor and the <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType> method.  
   
- For the numeric values of the underlying Windows access rights, see [Synchronization Object Security and Access Rights (Windows)](http://go.microsoft.com/fwlink/p/?LinkId=243073) in the MSDN Library.  
+ For the numeric values of the underlying Windows access rights, see [Synchronization Object Security and Access Rights (Windows)](https://go.microsoft.com/fwlink/p/?LinkId=243073) in the MSDN Library.  
   
 > [!NOTE]
 >  Security on synchronization objects is not supported for Windows 98 or Windows Millennium Edition.  

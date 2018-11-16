@@ -37,8 +37,8 @@
     <altmember cref="T:System.Web.UI.Control" />
     <altmember cref="T:System.Web.UI.ITemplate" />
     <altmember cref="T:System.Web.UI.Design.ControlPersister" />
-    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="ParseControl">
@@ -48,8 +48,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates a control from the specified markup.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ParseControl">
@@ -98,8 +98,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A parameter is not valid.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="ParseControl">
@@ -150,8 +150,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A parameter is not valid.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="ParseControls">
@@ -197,8 +197,8 @@
  <paramref name="controlText" /> is <see langword="null" /> or an empty string ("").</exception>
         <altmember cref="Overload:System.Web.UI.Design.ControlParser.ParseControl" />
         <altmember cref="T:System.Web.UI.Control" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ParseTemplate">
@@ -208,8 +208,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates an <see cref="T:System.Web.UI.ITemplate" /> interface from the specified template markup.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ParseTemplate">
@@ -248,8 +248,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="designerHost" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="ParseTemplate">
@@ -290,8 +290,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="designerHost" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

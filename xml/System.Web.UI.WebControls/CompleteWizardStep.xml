@@ -32,7 +32,7 @@
     <altmember cref="T:System.Web.UI.WebControls.CreateUserWizard" />
     <altmember cref="P:System.Web.UI.WebControls.CreateUserWizard.CompleteStep" />
     <altmember cref="T:System.Web.UI.WebControls.CreateUserWizardStep" />
-    <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,7 +56,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CompleteWizardStep" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StepType">
@@ -104,12 +104,12 @@
 > [!CAUTION]
 >  The <xref:System.Web.UI.WebControls.CompleteWizardStep.StepType%2A> property overrides the <xref:System.Web.UI.WebControls.WizardStepBase.StepType%2A?displayProperty=nameWithType> property to ensure that <xref:System.Web.UI.WebControls.CompleteWizardStep> is always set to the <xref:System.Web.UI.WebControls.WizardStepType.Complete> value of the <xref:System.Web.UI.WebControls.WizardStepType> enumeration. Attempting to set the <xref:System.Web.UI.WebControls.CompleteWizardStep.StepType%2A> property to a different value will result in an <xref:System.InvalidOperationException>.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Web.UI.WebControls.CompleteWizardStep.StepType" /> property.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -140,11 +140,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control Overview</related>
       </Docs>
     </Member>
   </Members>

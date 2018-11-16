@@ -62,7 +62,7 @@
  You can also specify how many rows or columns in the table, represented by a <xref:System.Web.UI.WebControls.Table> control, are occupied by an individual cell. The <xref:System.Web.UI.WebControls.TableCell.RowSpan%2A> and <xref:System.Web.UI.WebControls.TableCell.ColumnSpan%2A> properties control how many rows and columns are used, respectively.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Securing Standard Controls](https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -119,7 +119,7 @@
  The following code example demonstrates how to create a table, add elements to the table programmatically, and display the table on the Web page. Note how <xref:System.Web.UI.WebControls.TableCell> controls are instantiated and their property values are set.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]
  [!code-aspx-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  
@@ -133,10 +133,10 @@
     <altmember cref="P:System.Web.UI.WebControls.TableCell.Wrap" />
     <altmember cref="P:System.Web.UI.WebControls.TableCell.RowSpan" />
     <altmember cref="P:System.Web.UI.WebControls.TableCell.ColumnSpan" />
-    <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461">Introduction to Validating User Input in ASP.NET Web Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461">Introduction to Validating User Input in ASP.NET Web Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -177,7 +177,7 @@
  ]]></format>
         </remarks>
         <altmember cref="F:System.Web.UI.HtmlTextWriterTag.Td" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -231,7 +231,7 @@
         <altmember cref="P:System.Web.UI.WebControls.TableCell.RowSpan" />
         <altmember cref="P:System.Web.UI.WebControls.TableCell.ColumnSpan" />
         <altmember cref="P:System.Web.UI.WebControls.TableCell.AssociatedHeaderCellID" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -273,7 +273,7 @@
         <altmember cref="P:System.Web.UI.WebControls.TableCell.Text" />
         <altmember cref="T:System.Web.UI.LiteralControl" />
         <altmember cref="T:System.Web.UI.ControlCollection" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AssociatedHeaderCellID">
@@ -335,7 +335,7 @@ HorizontalAlign="Left">(2,0)
         <altmember cref="T:System.Web.UI.WebControls.TableHeaderCell" />
         <altmember cref="M:System.Web.UI.WebControls.TableCell.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
         <altmember cref="T:System.Web.UI.WebControls.StringArrayConverter" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ColumnSpan">
@@ -397,7 +397,7 @@ HorizontalAlign="Left">(2,0)
         <altmember cref="P:System.Web.UI.WebControls.TableCell.RowSpan" />
         <altmember cref="T:System.Web.UI.WebControls.Table" />
         <altmember cref="T:System.Web.UI.WebControls.TableHeaderCell" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -447,7 +447,7 @@ HorizontalAlign="Left">(2,0)
         <altmember cref="P:System.Web.UI.WebControls.TableCell.Wrap" />
         <altmember cref="P:System.Web.UI.WebControls.TableCell.HorizontalAlign" />
         <altmember cref="P:System.Web.UI.WebControls.TableCell.VerticalAlign" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -508,7 +508,7 @@ HorizontalAlign="Left">(2,0)
         <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
         <altmember cref="P:System.Web.UI.WebControls.TableCell.VerticalAlign" />
         <altmember cref="T:System.Web.UI.WebControls.TableHeaderCell" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -555,7 +555,7 @@ HorizontalAlign="Left">(2,0)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RowSpan">
@@ -597,7 +597,7 @@ HorizontalAlign="Left">(2,0)
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than <see langword="0" />.</exception>
         <altmember cref="P:System.Web.UI.WebControls.TableCell.ColumnSpan" />
         <altmember cref="T:System.Web.UI.WebControls.Table" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -676,9 +676,9 @@ HorizontalAlign="Left">(2,0)
 >  Setting the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property will clear any other controls contained in the <xref:System.Web.UI.WebControls.TableCell>.  
   
 > [!CAUTION]
->  The <xref:System.Web.UI.WebControls.TableCell.Text%2A> control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+>  The <xref:System.Web.UI.WebControls.TableCell.Text%2A> control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Securing Standard Controls](https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -694,10 +694,10 @@ HorizontalAlign="Left">(2,0)
         </remarks>
         <altmember cref="F:System.String.Empty" />
         <altmember cref="P:System.Web.UI.WebControls.TableCell.Text" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461">Introduction to Validating User Input in ASP.NET Web Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461">Introduction to Validating User Input in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="VerticalAlign">
@@ -738,7 +738,7 @@ HorizontalAlign="Left">(2,0)
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.VerticalAlign" />
         <altmember cref="P:System.Web.UI.WebControls.TableCell.HorizontalAlign" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -779,7 +779,7 @@ HorizontalAlign="Left">(2,0)
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.TableItemStyle.Wrap" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
   </Members>

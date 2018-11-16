@@ -26,7 +26,7 @@
    
   
 ## Examples  
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=192870).  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](https://go.microsoft.com/fwlink/?LinkId=192870).  
   
  The following example demonstrates how to use the <xref:System.Web.HttpServerUtility.HtmlEncode%2A> method and the <xref:System.Web.HttpServerUtility.UrlEncode%2A> method of the <xref:System.Web.HttpServerUtility> class. The <xref:System.Web.HttpServerUtility.HtmlEncode%2A> method helps ensure that any user-supplied string input will be rendered as static text in browsers instead of executable script or HTML elements. The <xref:System.Web.HttpServerUtility.UrlEncode%2A> method encodes URLs so that they are correctly transmitted in the HTTP stream.  
   

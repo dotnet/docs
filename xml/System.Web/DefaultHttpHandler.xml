@@ -29,13 +29,13 @@
 ## Remarks  
  A <xref:System.Web.DefaultHttpHandler> object intercepts incoming requests in the HTTP pipeline when both request interception has been configured through Internet Information Services (IIS) 6.0 and no explicit  bindings apply to the requested extension.  
   
- Request interception can be set up through the wildcard application mapping feature introduced in IIS 6.0. For more information, search the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118) for information about using wildcard application maps to remap a URL.  
+ Request interception can be set up through the wildcard application mapping feature introduced in IIS 6.0. For more information, search the [MSDN Library](https://go.microsoft.com/fwlink/?linkid=37118) for information about using wildcard application maps to remap a URL.  
   
- The <xref:System.Web.DefaultHttpHandler> class implements the <xref:System.Web.IHttpAsyncHandler> interface to provide asynchronous request processing. For general information about HTTP handlers, see [HTTP Handlers and HTTP Modules Overview](http://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b). Additionally, for more information see the following:  
+ The <xref:System.Web.DefaultHttpHandler> class implements the <xref:System.Web.IHttpAsyncHandler> interface to provide asynchronous request processing. For general information about HTTP handlers, see [HTTP Handlers and HTTP Modules Overview](https://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b). Additionally, for more information see the following:  
   
--   About creating asynchronous HTTP handlers, see [Walkthrough: Creating an Asynchronous HTTP Handler](http://msdn.microsoft.com/library/1b5c4a27-599b-44d0-8a06-72edc6765aa9).  
+-   About creating asynchronous HTTP handlers, see [Walkthrough: Creating an Asynchronous HTTP Handler](https://msdn.microsoft.com/library/1b5c4a27-599b-44d0-8a06-72edc6765aa9).  
   
--   About registering HTTP handlers, see [How to: Register HTTP Handlers](http://msdn.microsoft.com/library/d5633f9a-03fb-4ccc-a799-dc67d656fa60).  
+-   About registering HTTP handlers, see [How to: Register HTTP Handlers](https://msdn.microsoft.com/library/d5633f9a-03fb-4ccc-a799-dc67d656fa60).  
   
  Classes can derive from the <xref:System.Web.DefaultHttpHandler> class to provide customized handling of requests. An asynchronous HTTP handler that is derived from the <xref:System.Web.DefaultHttpHandler> could override the <xref:System.Web.DefaultHttpHandler.BeginProcessRequest%2A> method to change how requests are processed.  
   
@@ -51,8 +51,8 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/d5633f9a-03fb-4ccc-a799-dc67d656fa60">How to: Register HTTP Handlers</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/1b5c4a27-599b-44d0-8a06-72edc6765aa9">How to: Create an Asynchronous HTTP Handler</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/d5633f9a-03fb-4ccc-a799-dc67d656fa60">How to: Register HTTP Handlers</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/1b5c4a27-599b-44d0-8a06-72edc6765aa9">How to: Create an Asynchronous HTTP Handler</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -275,7 +275,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Preconditions are specified by the client in the request-header fields and are evaluated on the Web server. For example, by using preconditions, clients can prevent a requested method (for example, GET) from being applied to a resource other than the one intended. For more information, see section 14, "Header Field Definitions," in the [Hypertext Transfer Protocol -- HTTP/1.1](http://go.microsoft.com/fwlink/?LinkID=73147) specification on the World Wide Web Consortium (W3C) Web site.  
+ Preconditions are specified by the client in the request-header fields and are evaluated on the Web server. For example, by using preconditions, clients can prevent a requested method (for example, GET) from being applied to a resource other than the one intended. For more information, see section 14, "Header Field Definitions," in the [Hypertext Transfer Protocol -- HTTP/1.1](https://go.microsoft.com/fwlink/?LinkID=73147) specification on the World Wide Web Consortium (W3C) Web site.  
   
  The <xref:System.Web.DefaultHttpHandler.OnExecuteUrlPreconditionFailure%2A> method is called when preconditions prevent the <xref:System.Web.DefaultHttpHandler> object from processing a request. A deriving class might override the <xref:System.Web.DefaultHttpHandler.OnExecuteUrlPreconditionFailure%2A> method to throw an exception when the preconditions fail. The <xref:System.Web.DefaultHttpHandler> does not throw an exception in the <xref:System.Web.DefaultHttpHandler.OnExecuteUrlPreconditionFailure%2A> method.  
   

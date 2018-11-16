@@ -17,7 +17,7 @@
   <Docs>
     <summary>Represents an XML data store for writing and reading user annotations.</summary>
     <remarks>To be added.</remarks>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=73824">XML Markup Compatibility Specification</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=73824">XML Markup Compatibility Specification</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -444,7 +444,7 @@
         </remarks>
         <altmember cref="P:System.Windows.Annotations.Storage.XmlStreamStore.IgnoredNamespaces" />
         <altmember cref="P:System.Windows.Annotations.Storage.XmlStreamStore.WellKnownNamespaces" />
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=73824">XML Markup Compatibility Specification</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=73824">XML Markup Compatibility Specification</related>
       </Docs>
     </Member>
     <Member MemberName="IgnoredNamespaces">
@@ -477,13 +477,13 @@
 ## Remarks  
  The <xref:System.Windows.Annotations.Storage.XmlStreamStore.IgnoredNamespaces%2A> property will never return `null`, however the returned list can be empty if no namespaces are ignored.  
   
- <xref:System.Windows.Annotations.Storage.XmlStreamStore.IgnoredNamespaces%2A> helps in XML markup compatibility when the program reads annotation content created by different versions of the [!INCLUDE[TLA#tla_caf](~/includes/tlasharptla-caf-md.md)].  When an older application is given annotation content created using a newer version of the [!INCLUDE[TLA2#tla_caf](~/includes/tla2sharptla-caf-md.md)], <xref:System.Windows.Annotations.Storage.XmlStreamStore.IgnoredNamespaces%2A> returns a list of the XML namespaces for elements and attributes not known to the older framework.  Unknown XML elements and attributes associated with newer namespaces are ignored when the annotation content is read and deserialized by the older application.  For more information see the *XML Markup Compatibility Specification* available at [http://go.microsoft.com/fwlink/?LinkId=73824](http://go.microsoft.com/fwlink/?LinkId=73824).  
+ <xref:System.Windows.Annotations.Storage.XmlStreamStore.IgnoredNamespaces%2A> helps in XML markup compatibility when the program reads annotation content created by different versions of the [!INCLUDE[TLA#tla_caf](~/includes/tlasharptla-caf-md.md)].  When an older application is given annotation content created using a newer version of the [!INCLUDE[TLA2#tla_caf](~/includes/tla2sharptla-caf-md.md)], <xref:System.Windows.Annotations.Storage.XmlStreamStore.IgnoredNamespaces%2A> returns a list of the XML namespaces for elements and attributes not known to the older framework.  Unknown XML elements and attributes associated with newer namespaces are ignored when the annotation content is read and deserialized by the older application.  For more information see the *XML Markup Compatibility Specification* available at [http://go.microsoft.com/fwlink/?LinkId=73824](https://go.microsoft.com/fwlink/?LinkId=73824).  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Windows.Annotations.Storage.XmlStreamStore.WellKnownNamespaces" />
         <altmember cref="M:System.Windows.Annotations.Storage.XmlStreamStore.GetWellKnownCompatibleNamespaces(System.Uri)" />
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=73824">XML Markup Compatibility Specification</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=73824">XML Markup Compatibility Specification</related>
       </Docs>
     </Member>
     <Member MemberName="OnStoreContentChanged">
@@ -546,7 +546,7 @@
         </remarks>
         <altmember cref="P:System.Windows.Annotations.Storage.XmlStreamStore.IgnoredNamespaces" />
         <altmember cref="M:System.Windows.Annotations.Storage.XmlStreamStore.GetWellKnownCompatibleNamespaces(System.Uri)" />
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=73824">XML Markup Compatibility Specification</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=73824">XML Markup Compatibility Specification</related>
       </Docs>
     </Member>
   </Members>

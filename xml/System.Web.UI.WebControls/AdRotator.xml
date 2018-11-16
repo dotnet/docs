@@ -200,7 +200,7 @@
     <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventArgs" />
     <altmember cref="T:System.Web.UI.WebControls.AdCreatedEventHandler" />
     <altmember cref="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
-    <related type="Article" href="http://msdn.microsoft.com/library/30d5cc6d-b11e-4ff8-a51c-c58020eb41f9">AdRotator Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/30d5cc6d-b11e-4ff8-a51c-c58020eb41f9">AdRotator Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -236,7 +236,7 @@
  The following code example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.AdRotator> class. The new <xref:System.Web.UI.WebControls.AdRotator> control is then added to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of a <xref:System.Web.UI.WebControls.PlaceHolder> control and displayed on the Web Forms page.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[AdRotatorCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdRotatorCtor/CS/adrotatorctorcs.aspx#1)]
  [!code-aspx-vb[AdRotatorCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdRotatorCtor/VB/adrotatorctorvb.aspx#1)]  
@@ -285,7 +285,7 @@
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event. It gets the URL associated with the advertisement, when the <xref:System.Web.UI.WebControls.AdRotator> control is created, and displays it below the control.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic AdCreatedEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic AdCreatedEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/VB/sourcevb.aspx#1)]  
@@ -318,7 +318,7 @@
 ```  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[AdCreatedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdCreatedEventHandler/CS/adcreatedeventhandlercs.aspx#1)]
  [!code-aspx-vb[AdCreatedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdCreatedEventHandler/VB/adcreatedeventhandlervb.aspx#1)]  
@@ -1145,7 +1145,7 @@
  Use the <xref:System.Web.UI.WebControls.AdRotator.Target%2A> property to specify the target window or frame that displays the contents of the Web page linked to when the <xref:System.Web.UI.WebControls.AdRotator> control is clicked.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.AdRotator.Target%2A> property renders as a `target` attribute . The `target` attribute on anchor (`a`) elements is not allowed in XHTML 1.1. Therefore, if rendered markup must conform to XHTML standards or must conform to accessibility standards, do not set the <xref:System.Web.UI.WebControls.AdRotator.Target%2A> property. For more information, see [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97) and [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13).  
+>  The <xref:System.Web.UI.WebControls.AdRotator.Target%2A> property renders as a `target` attribute . The `target` attribute on anchor (`a`) elements is not allowed in XHTML 1.1. Therefore, if rendered markup must conform to XHTML standards or must conform to accessibility standards, do not set the <xref:System.Web.UI.WebControls.AdRotator.Target%2A> property. For more information, see [XHTML Standards in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97) and [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13).  
   
  The <xref:System.Web.UI.WebControls.AdRotator.Target%2A> value must begin with a letter in the range of A to Z (case-insensitive), except for the following special values, which begin with an underscore.  
   

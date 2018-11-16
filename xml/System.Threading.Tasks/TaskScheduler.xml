@@ -104,12 +104,12 @@
 This example has some limitations. For example, only 32-bits-per-pixel images are supported; images in other formats are corrupted by the <xref:System.Windows.Media.Imaging.BitmapImage> object during the resizing operation. Also, the source images must all be larger than the tile size. As a further exercise, you can add functionality to handle multiple pixel formats and file sizes.  
   
 ## Examples  
- The following example is taken from the [Samples for Parallel Programming with the .NET Framework 4](http://go.microsoft.com/fwlink/?LinkID=165717) on the MSDN Code Gallery Web site.  It creates a custom task scheduler that limits the number of threads used by the app. It then launches two sets of tasks and displays information about the task and the thread on which the task is executing.  
+ The following example is taken from the [Samples for Parallel Programming with the .NET Framework 4](https://go.microsoft.com/fwlink/?LinkID=165717) on the MSDN Code Gallery Web site.  It creates a custom task scheduler that limits the number of threads used by the app. It then launches two sets of tasks and displays information about the task and the thread on which the task is executing.  
   
  [!code-csharp[TPL_Schedulers#02](~/samples/snippets/csharp/VS_Snippets_Misc/tpl_schedulers/cs/limitex1.cs#02)]
  [!code-vb[TPL_Schedulers#02](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpl_schedulers/vb/module2.vb#02)]  
   
- In addition, several sample task schedulers are available on Code Gallery: [Samples for Parallel Programming with the .NET Framework 4](http://go.microsoft.com/fwlink/?LinkID=165717).  
+ In addition, several sample task schedulers are available on Code Gallery: [Samples for Parallel Programming with the .NET Framework 4](https://go.microsoft.com/fwlink/?LinkID=165717).  
   
  ]]></format>
     </remarks>

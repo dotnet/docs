@@ -135,7 +135,7 @@
   
 <a name="accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -294,7 +294,7 @@
  The following code example demonstrates how to define a <xref:System.Web.UI.WebControls.Wizard> control to collect a user's name and address, with the option to enter a separate shipping address. If the user does not select **SeparateShippingCheckBox**, thereby issuing a request to add a separate shipping address, the <xref:System.Web.UI.WebControls.Wizard> control moves directly from `Step2` to `Finish`. On the `Finish` step, the user has the option to return to the beginning of the <xref:System.Web.UI.WebControls.Wizard> control by clicking **GoBackButton**; however, it takes the user to `Step2` because the <xref:System.Web.UI.WebControls.WizardStepBase.AllowReturn%2A> property for `Step1` is set to `false`.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.WebControls.Wizard#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.Wizard/CS/wizardclasscs.aspx#1)]
  [!code-aspx-vb[System.Web.UI.WebControls.Wizard#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.Wizard/VB/wizardclassvb.aspx#1)]  
@@ -308,7 +308,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.CompositeControl" />
     <altmember cref="T:System.Web.UI.Control" />
-    <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Introduction to the ASP.NET Wizard Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Introduction to the ASP.NET Wizard Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -339,7 +339,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="ActiveStep">
@@ -390,7 +390,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The corresponding <see cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" /> is less than -1 or greater than the number of <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> objects in the <see cref="T:System.Web.UI.WebControls.Wizard" />.</exception>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="ActiveStepChanged">
@@ -430,7 +430,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.Wizard.OnActiveStepChanged(System.Object,System.EventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="ActiveStepIndex">
@@ -475,7 +475,7 @@
   
 -   If you programmatically set <xref:System.Web.UI.WebControls.Wizard.ActiveStepIndex%2A> to -1, the control will not render.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -490,7 +490,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is higher than the number of wizard steps defined in the <see cref="P:System.Web.UI.WebControls.Wizard.WizardSteps" /> collection.</exception>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStep" />
         <altmember cref="M:System.Web.UI.WebControls.Wizard.MoveTo(System.Web.UI.WebControls.WizardStepBase)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="AllowNavigationToStep">
@@ -535,7 +535,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" />
         <altmember cref="P:System.Web.UI.WebControls.WizardStepBase.AllowReturn" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonClick">
@@ -575,7 +575,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.Wizard.OnCancelButtonClick(System.EventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonID">
@@ -605,7 +605,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonImageUrl">
@@ -654,7 +654,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonStyle">
@@ -710,7 +710,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonText">
@@ -752,7 +752,7 @@
  <xref:System.Web.UI.WebControls.ButtonType.Link>  
  Text appears as a link.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  ]]></format>
         </remarks>
@@ -761,7 +761,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonType">
@@ -793,7 +793,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelCommandName">
@@ -823,7 +823,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelDestinationPageUrl">
@@ -868,7 +868,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl%2A> property specifies the step that is displayed when the user clicks the **Cancel** button on the <xref:System.Web.UI.WebControls.Wizard> control. If the <xref:System.Web.UI.WebControls.Wizard.DisplayCancelButton%2A> property is set to `true` and the <xref:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl%2A> property is not set, the Web page is refreshed and the <xref:System.Web.UI.WebControls.Wizard.OnCancelButtonClick%2A> event is raised.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
@@ -877,7 +877,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -921,7 +921,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CellSpacing" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -965,7 +965,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CellPadding" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -1037,7 +1037,7 @@
         <altmember cref="M:System.Web.UI.WebControls.Wizard.CreateChildControls" />
         <altmember cref="M:System.Web.UI.WebControls.Wizard.CreateControlCollection" />
         <altmember cref="M:System.Web.UI.WebControls.Wizard.CreateControlStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -1090,7 +1090,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CustomNextButtonID">
@@ -1120,7 +1120,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CustomPreviousButtonID">
@@ -1150,7 +1150,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataListID">
@@ -1180,7 +1180,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayCancelButton">
@@ -1212,14 +1212,14 @@
         <value>
           <see langword="true" /> to display **Cancel** on the <see cref="T:System.Web.UI.WebControls.Wizard" />; otherwise, <see langword="false" />. The default is <see langword="false" />.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <see cref="T:System.Web.UI.ThemeableAttribute" /> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).</value>
+ This property cannot be set by themes or style sheet themes. For more information, see <see cref="T:System.Web.UI.ThemeableAttribute" /> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DisplaySideBar">
@@ -1254,7 +1254,7 @@
         <value>
           <see langword="true" /> to display the sidebar area on the <see cref="T:System.Web.UI.WebControls.Wizard" />; otherwise, <see langword="false" />. The default is <see langword="true" />.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <see cref="T:System.Web.UI.ThemeableAttribute" /> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).</value>
+ This property cannot be set by themes or style sheet themes. For more information, see <see cref="T:System.Web.UI.ThemeableAttribute" /> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1266,7 +1266,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarButtonStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishButtonClick">
@@ -1306,7 +1306,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.Wizard.OnFinishButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishButtonID">
@@ -1336,7 +1336,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonImageUrl">
@@ -1383,7 +1383,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonStyle">
@@ -1437,7 +1437,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonText">
@@ -1479,14 +1479,14 @@
  <xref:System.Web.UI.WebControls.ButtonType.Link>  
  Text appears as link text.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonType">
@@ -1517,7 +1517,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishDestinationPageUrl">
@@ -1562,14 +1562,14 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.FinishDestinationPageUrl%2A> property specifies the step that is displayed when the user clicks the **Finish** button on the <xref:System.Web.UI.WebControls.Wizard> control.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishNavigationTemplate">
@@ -1627,7 +1627,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate%2A> property to create a custom template for the navigation area of the <xref:System.Web.UI.WebControls.WizardStepType.Finish> step for the <xref:System.Web.UI.WebControls.Wizard> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.WebControls.WizardFinishNavigationTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishNavigationTemplate/CS/wizardfinishnavigationtemplatecs.aspx#1)]
  [!code-aspx-vb[System.Web.UI.WebControls.WizardFinishNavigationTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardFinishNavigationTemplate/VB/wizardfinishnavigationtemplatevb.aspx#1)]  
@@ -1637,7 +1637,7 @@
         <altmember cref="F:System.Web.UI.WebControls.WizardStepType.Finish" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNavigationTemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonID">
@@ -1667,7 +1667,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonImageUrl">
@@ -1714,7 +1714,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonStyle">
@@ -1767,7 +1767,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonText">
@@ -1809,14 +1809,14 @@
  <xref:System.Web.UI.WebControls.ButtonType.Link>  
  Text appears as a link.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonType">
@@ -1847,7 +1847,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignModeState">
@@ -1901,7 +1901,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetStepType">
@@ -1947,7 +1947,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WizardStepType" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="HeaderPlaceholderId">
@@ -2026,7 +2026,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderText" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplate">
@@ -2079,7 +2079,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderText" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -2120,7 +2120,7 @@
 > [!NOTE]
 >  If both the <xref:System.Web.UI.WebControls.Wizard.HeaderText%2A> and <xref:System.Web.UI.WebControls.Wizard.HeaderTemplate%2A> properties are defined, the <xref:System.Web.UI.WebControls.Wizard.HeaderText%2A> property has no effect.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -2134,7 +2134,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="LayoutTemplate">
@@ -2274,7 +2274,7 @@
         <altmember cref="F:System.Web.UI.WebControls.Wizard.MoveNextCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.Wizard.MovePreviousCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.Wizard.MoveToCommandName" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="MoveNextCommandName">
@@ -2304,7 +2304,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="MovePreviousCommandName">
@@ -2334,7 +2334,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="MoveTo">
@@ -2381,7 +2381,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="MoveToCommandName">
@@ -2411,7 +2411,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="NavigationButtonStyle">
@@ -2480,7 +2480,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationStyle" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="NavigationPlaceholderId">
@@ -2578,7 +2578,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="NextButtonClick">
@@ -2618,7 +2618,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.Wizard.OnNextButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnActiveStepChanged">
@@ -2669,7 +2669,7 @@
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnActiveStepChanged(System.Object,System.EventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnActiveStepChanged(System.Object,System.EventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.Wizard.ActiveStepChanged" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -2747,7 +2747,7 @@
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnCancelButtonClick(System.EventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnCancelButtonClick(System.EventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.Wizard.CancelButtonClick" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnFinishButtonClick">
@@ -2796,7 +2796,7 @@
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnFinishButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnFinishButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.Wizard.FinishButtonClick" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -2870,7 +2870,7 @@
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnNextButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnNextButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.Wizard.NextButtonClick" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreviousButtonClick">
@@ -2919,7 +2919,7 @@
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnPreviousButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnPreviousButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.Wizard.PreviousButtonClick" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnSideBarButtonClick">
@@ -2971,7 +2971,7 @@
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.Wizard.SideBarButtonClick" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousButtonClick">
@@ -3011,7 +3011,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.Wizard.OnPreviousButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RegisterCommandEvents">
@@ -3037,7 +3037,7 @@
         <param name="button">The <see cref="T:System.Web.UI.WebControls.IButtonControl" /> for which the new instance of <see cref="T:System.Web.UI.WebControls.CommandEventHandler" /> is registered.</param>
         <summary>Registers a new instance of the <see cref="T:System.Web.UI.WebControls.CommandEventHandler" /> class for the specified <see cref="T:System.Web.UI.WebControls.IButtonControl" /> object.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -3151,7 +3151,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SideBarButtonID">
@@ -3181,7 +3181,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SideBarButtonStyle">
@@ -3256,7 +3256,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplaySideBar" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SideBarPlaceholderId">
@@ -3359,7 +3359,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplaySideBar" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SideBarTemplate">
@@ -3436,7 +3436,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplaySideBar" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SkipLinkText">
@@ -3472,11 +3472,11 @@
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.Wizard.DisplaySideBar%2A> property is set to `false`, the <xref:System.Web.UI.WebControls.Wizard.SkipLinkText%2A> property does not create a hidden image with alternate text.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StartNavigationTemplate">
@@ -3533,7 +3533,7 @@
         <altmember cref="F:System.Web.UI.WebControls.WizardStepType.Start" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNavigationTemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonID">
@@ -3563,7 +3563,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonImageUrl">
@@ -3611,7 +3611,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonStyle">
@@ -3666,7 +3666,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonText">
@@ -3708,7 +3708,7 @@
  <xref:System.Web.UI.WebControls.ButtonType.Link>  
  Text appears as a link.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  ]]></format>
         </remarks>
@@ -3716,7 +3716,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonType">
@@ -3748,7 +3748,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepNavigationTemplate">
@@ -3804,7 +3804,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonID">
@@ -3834,7 +3834,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonImageUrl">
@@ -3881,7 +3881,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonType" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonStyle">
@@ -3935,7 +3935,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonType" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonText">
@@ -3977,14 +3977,14 @@
  <xref:System.Web.UI.WebControls.ButtonType.Link>  
  Text appears as a link.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonType" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonType">
@@ -4015,7 +4015,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonText" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonID">
@@ -4045,7 +4045,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonImageUrl">
@@ -4092,7 +4092,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonType" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonStyle">
@@ -4146,7 +4146,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonType" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonText">
@@ -4188,14 +4188,14 @@
  <xref:System.Web.UI.WebControls.ButtonType.Link>  
  Text appears as a link.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonType" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonType">
@@ -4226,7 +4226,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonText" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepStyle">
@@ -4299,7 +4299,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -4330,7 +4330,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -4432,7 +4432,7 @@
   
  If the <xref:System.Web.UI.WebControls.Wizard> control contains multiple <xref:System.Web.UI.WebControls.WizardStepCollection> collections, the collections will be merged.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -4446,7 +4446,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WizardStepCollection" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
   </Members>

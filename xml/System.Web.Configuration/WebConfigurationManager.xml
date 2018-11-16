@@ -72,7 +72,7 @@
     </block>
     <altmember cref="T:System.Configuration.Configuration" />
     <altmember cref="T:System.Configuration.ConfigurationManager" />
-    <related type="Article" href="http://msdn.microsoft.com/library/a202175f-a85a-44fd-bc35-c8b5c82f31c3">ASP.NET Configuration Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/a202175f-a85a-44fd-bc35-c8b5c82f31c3">ASP.NET Configuration Overview</related>
   </Docs>
   <Members>
     <Member MemberName="AppSettings">
@@ -159,7 +159,7 @@
         <summary>Retrieves the specified configuration section from the current Web application's default configuration file.</summary>
         <altmember cref="T:System.Configuration.Configuration" />
         <altmember cref="T:System.Configuration.ConfigurationManager" />
-        <related type="Article" href="http://msdn.microsoft.com/library/a202175f-a85a-44fd-bc35-c8b5c82f31c3">ASP.NET Configuration Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a202175f-a85a-44fd-bc35-c8b5c82f31c3">ASP.NET Configuration Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetSection">
@@ -530,7 +530,7 @@
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
         <altmember cref="T:System.Configuration.Configuration" />
         <altmember cref="T:System.Security.Principal.WindowsIdentity" />
-        <related type="Article" href="http://msdn.microsoft.com/library/eca7606e-ebfb-4f47-b8d9-289903fdc045">Consuming Unmanaged DLL Functions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eca7606e-ebfb-4f47-b8d9-289903fdc045">Consuming Unmanaged DLL Functions</related>
       </Docs>
     </Member>
     <Member MemberName="OpenMachineConfiguration">
@@ -1092,7 +1092,7 @@
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A valid configuration file could not be loaded.</exception>
         <altmember cref="T:System.Configuration.Configuration" />
         <altmember cref="T:System.Security.Principal.WindowsIdentity" />
-        <related type="Article" href="http://msdn.microsoft.com/library/eca7606e-ebfb-4f47-b8d9-289903fdc045">Consuming Unmanaged DLL Functions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eca7606e-ebfb-4f47-b8d9-289903fdc045">Consuming Unmanaged DLL Functions</related>
       </Docs>
     </Member>
     <Member MemberName="OpenWebConfiguration">
@@ -1136,7 +1136,7 @@
   
  To obtain the <xref:System.Configuration.Configuration> object for a remote resource, your code must have administrative privileges on the remote computer.  
   
- You might need to run the [ASP.NET IIS Registration Tool (Aspnet_regiis.exe)](http://msdn.microsoft.com/library/6491c41e-e2b0-481f-9863-db3614d5f96b) with the `-config+` option to enable access to the configuration files on the remote computer.  
+ You might need to run the [ASP.NET IIS Registration Tool (Aspnet_regiis.exe)](https://msdn.microsoft.com/library/6491c41e-e2b0-481f-9863-db3614d5f96b) with the `-config+` option to enable access to the configuration files on the remote computer.  
   
    
   
@@ -1151,7 +1151,7 @@
         <exception cref="T:System.ArgumentException">The <paramref name="server" /> or <paramref name="userName" /> and <paramref name="password" /> parameters were invalid.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">Could not load a valid configuration file.</exception>
         <altmember cref="T:System.Configuration.Configuration" />
-        <related type="Article" href="http://msdn.microsoft.com/library/6491c41e-e2b0-481f-9863-db3614d5f96b">ASP.NET IIS Registration Tool (Aspnet_regiis.exe)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6491c41e-e2b0-481f-9863-db3614d5f96b">ASP.NET IIS Registration Tool (Aspnet_regiis.exe)</related>
       </Docs>
     </Member>
   </Members>

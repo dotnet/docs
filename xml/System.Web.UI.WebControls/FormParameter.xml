@@ -38,7 +38,7 @@
  The following code example demonstrates how to insert data into a database using the <xref:System.Web.UI.WebControls.SqlDataSource> control and a simple ASP.NET Web page. The current data in the data table is displayed in the <xref:System.Web.UI.WebControls.DropDownList> control. You can add new records by entering values in the <xref:System.Web.UI.WebControls.TextBox> controls and clicking the button. When the button is clicked, the specified values are inserted into the database, and the <xref:System.Web.UI.WebControls.DropDownList> is refreshed.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/CS/sql24cs.aspx#1)]
  [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/VB/sql24vb.aspx#1)]  

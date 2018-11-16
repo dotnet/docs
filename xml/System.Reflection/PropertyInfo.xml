@@ -547,7 +547,7 @@
  In unmanaged metadata, the Constant table is used to store constant values for fields, parameters, and properties. Constant information does not directly influence runtime behavior. Compilers inspect this information, at compile time, when importing metadata. If used, the value of a constant is embedded in the Microsoft intermediate language (MSIL) stream the compiler emits. There are no MSIL instructions that can be used to access the Constant table at run time.  
   
 > [!NOTE]
->  For more information on constant values and the Constant table, see the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+>  For more information on constant values and the Constant table, see the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
  ]]></format>
         </remarks>
@@ -857,7 +857,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.PropertyInfo.GetOptionalCustomModifiers%2A> and <xref:System.Reflection.PropertyInfo.GetRequiredCustomModifiers%2A> methods are provided for designers of managed compilers. For more information on custom modifiers, see <xref:System.Runtime.CompilerServices.IsBoxed> and related classes in the <xref:System.Runtime.CompilerServices> namespace and the metadata specification in the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+ The <xref:System.Reflection.PropertyInfo.GetOptionalCustomModifiers%2A> and <xref:System.Reflection.PropertyInfo.GetRequiredCustomModifiers%2A> methods are provided for designers of managed compilers. For more information on custom modifiers, see <xref:System.Runtime.CompilerServices.IsBoxed> and related classes in the <xref:System.Runtime.CompilerServices> namespace and the metadata specification in the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
  ]]></format>
         </remarks>
@@ -908,7 +908,7 @@
  In unmanaged metadata, the Constant table is used to store constant values for fields, parameters, and properties. Constant information does not directly influence runtime behavior. Compilers inspect this information, at compile time, when importing metadata. If used, the value of a constant is embedded in the Microsoft intermediate language (MSIL) stream the compiler emits. There are no MSIL instructions that can be used to access the Constant table at run time.  
   
 > [!NOTE]
->  For more information on constant values and the Constant table, see the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+>  For more information on constant values and the Constant table, see the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
  ]]></format>
         </remarks>
@@ -954,7 +954,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.PropertyInfo.GetOptionalCustomModifiers%2A> and <xref:System.Reflection.PropertyInfo.GetRequiredCustomModifiers%2A> methods are provided for designers of managed compilers. For more information on custom modifiers, see <xref:System.Runtime.CompilerServices.IsBoxed> and related classes in the <xref:System.Runtime.CompilerServices> namespace and the metadata specification in the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+ The <xref:System.Reflection.PropertyInfo.GetOptionalCustomModifiers%2A> and <xref:System.Reflection.PropertyInfo.GetRequiredCustomModifiers%2A> methods are provided for designers of managed compilers. For more information on custom modifiers, see <xref:System.Runtime.CompilerServices.IsBoxed> and related classes in the <xref:System.Runtime.CompilerServices> namespace and the metadata specification in the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
  ]]></format>
         </remarks>

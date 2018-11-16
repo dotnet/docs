@@ -63,7 +63,7 @@
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
     <altmember cref="T:System.GC" />
-    <related type="Article" href="http://msdn.microsoft.com/library/6a600fe5-3af3-4c64-82da-10a0a8e2d79b">Weak References</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6a600fe5-3af3-4c64-82da-10a0a8e2d79b">Weak References</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -203,7 +203,7 @@
         <altmember cref="T:System.Object" />
         <altmember cref="T:System.Boolean" />
         <altmember cref="T:System.Runtime.InteropServices.GCHandle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/6a600fe5-3af3-4c64-82da-10a0a8e2d79b">Weak References</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6a600fe5-3af3-4c64-82da-10a0a8e2d79b">Weak References</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -409,7 +409,7 @@
         </remarks>
         <altmember cref="T:System.GC" />
         <altmember cref="T:System.Object" />
-        <related type="Article" href="http://msdn.microsoft.com/library/6a600fe5-3af3-4c64-82da-10a0a8e2d79b">Weak References</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6a600fe5-3af3-4c64-82da-10a0a8e2d79b">Weak References</related>
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -474,7 +474,7 @@
         <exception cref="T:System.InvalidOperationException">The reference to the target object is invalid. This exception can be thrown while setting this property if the value is a null reference or if the object has been finalized during the set operation.</exception>
         <altmember cref="T:System.Object" />
         <altmember cref="T:System.GC" />
-        <related type="Article" href="http://msdn.microsoft.com/library/6a600fe5-3af3-4c64-82da-10a0a8e2d79b">Weak References</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6a600fe5-3af3-4c64-82da-10a0a8e2d79b">Weak References</related>
       </Docs>
     </Member>
     <Member MemberName="TrackResurrection">
@@ -521,7 +521,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.GC" />
-        <related type="Article" href="http://msdn.microsoft.com/library/6a600fe5-3af3-4c64-82da-10a0a8e2d79b">Weak References</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6a600fe5-3af3-4c64-82da-10a0a8e2d79b">Weak References</related>
       </Docs>
     </Member>
   </Members>

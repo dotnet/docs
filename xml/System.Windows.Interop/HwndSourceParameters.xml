@@ -274,7 +274,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the extended [!INCLUDE[TLA#tla_win](~/includes/tlasharptla-win-md.md)] styles for the window.</summary>
-        <value>The extended window styles. See [CreateWindowEx](http://go.microsoft.com/fwlink/?LinkId=98462) for a list of these styles. The default is 0 (no extended window styles).</value>
+        <value>The extended window styles. See [CreateWindowEx](https://go.microsoft.com/fwlink/?LinkId=98462) for a list of these styles. The default is 0 (no extended window styles).</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Interop.HwndSource" />
       </Docs>
@@ -855,7 +855,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the [!INCLUDE[TLA#tla_win](~/includes/tlasharptla-win-md.md)] class style for the window.</summary>
-        <value>The window class style. See [Window Class Styles](http://go.microsoft.com/fwlink/?LinkId=178417) for detailed information. The default is 0 (no window class style).</value>
+        <value>The window class style. See [Window Class Styles](https://go.microsoft.com/fwlink/?LinkId=178417) for detailed information. The default is 0 (no window class style).</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Interop.HwndSource" />
       </Docs>
@@ -923,7 +923,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the style for the window.</summary>
-        <value>The window style. See the [CreateWindowEx](http://go.microsoft.com/fwlink/?LinkId=98462) function for a complete list of style bits. Defaults: WS_VISIBLE, WS_CAPTION, WS_SYSMENU, WS_THICKFRAME, WS_MINIMIZEBOX, WS_MAXIMIZEBOX, WS_CLIPCHILDREN</value>
+        <value>The window style. See the [CreateWindowEx](https://go.microsoft.com/fwlink/?LinkId=98462) function for a complete list of style bits. Defaults: WS_VISIBLE, WS_CAPTION, WS_SYSMENU, WS_THICKFRAME, WS_MINIMIZEBOX, WS_MAXIMIZEBOX, WS_CLIPCHILDREN</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

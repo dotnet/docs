@@ -36,7 +36,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Content types Cert, Pkcs12, and SerializedCert can be exported as byte arrays. Therefore, all three formats are serialized certificates. SerializedCert differs from an exported Cert file in that it is created by using the [CertSerializeCertificateStoreElement function](http://go.microsoft.com/fwlink/?LinkId=183293), which serializes both the encoded certificate and its encoded properties. If you export the same <xref:System.Security.Cryptography.X509Certificates.X509Certificate> object in both formats and view the resulting byte arrays, you will see that the two are different.  
+ Content types Cert, Pkcs12, and SerializedCert can be exported as byte arrays. Therefore, all three formats are serialized certificates. SerializedCert differs from an exported Cert file in that it is created by using the [CertSerializeCertificateStoreElement function](https://go.microsoft.com/fwlink/?LinkId=183293), which serializes both the encoded certificate and its encoded properties. If you export the same <xref:System.Security.Cryptography.X509Certificates.X509Certificate> object in both formats and view the resulting byte arrays, you will see that the two are different.  
   
  ]]></format>
     </remarks>

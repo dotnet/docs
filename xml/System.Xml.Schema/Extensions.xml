@@ -37,7 +37,7 @@
    
   
 ## Examples  
- The XSD in [Sample XSD File: Customers and Orders](http://msdn.microsoft.com/library/8b05efe3-cc5e-4c7b-b322-892dbda41687) contains a schema that can be used to validate the XML document in [Sample XML File: Customers and Orders (LINQ to XML)](http://msdn.microsoft.com/library/26790c41-5976-4558-a096-d0f67bfc4d92). The following example loads the schema and the document, validates the document, changes the document so that the `xs:key` and `xs:keyref` relationship is not valid, and then attempts to validate again.  
+ The XSD in [Sample XSD File: Customers and Orders](https://msdn.microsoft.com/library/8b05efe3-cc5e-4c7b-b322-892dbda41687) contains a schema that can be used to validate the XML document in [Sample XML File: Customers and Orders (LINQ to XML)](https://msdn.microsoft.com/library/26790c41-5976-4558-a096-d0f67bfc4d92). The following example loads the schema and the document, validates the document, changes the document so that the `xs:key` and `xs:keyref` relationship is not valid, and then attempts to validate again.  
   
 ```csharp  
   

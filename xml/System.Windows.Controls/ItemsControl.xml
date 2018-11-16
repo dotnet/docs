@@ -70,7 +70,7 @@ ListBox that contains multiple types of objects
 >   
 >  While an object **x** is in use by an <xref:System.Windows.Controls.ItemsControl> the value returned by **x.**`GetHashCode()` must not change.  Changes to this value are unsupported, and lead to unpredictable behavior.  
   
- Dependency properties for this control might be set by the control’s default style. If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running. For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+ Dependency properties for this control might be set by the control’s default style. If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running. For more information, see [Default WPF Themes](https://go.microsoft.com/fwlink/?LinkID=158252).  
   
    
   
@@ -1303,7 +1303,7 @@ ListBox that contains multiple types of objects
   
  Both of the preceding scenarios produce the same result. However, one of the advantages of making the style available as a resource is that you can reuse the style. Setting the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property explicitly can also provide greater readability.  
   
- For the complete example, see [Introduction to Styling and Templating Sample](http://go.microsoft.com/fwlink/?LinkID=160010).  
+ For the complete example, see [Introduction to Styling and Templating Sample](https://go.microsoft.com/fwlink/?LinkID=160010).  
   
  The following example is designed to illustrate the function of the different styling and templating related properties provided by the <xref:System.Windows.Controls.ItemsControl>. The <xref:System.Windows.Controls.ItemsControl> in this example is bound to a collection of `Task` objects. For demonstration purposes, the styles and templates in this example are all declared inline.  
   
@@ -1317,7 +1317,7 @@ ListBox that contains multiple types of objects
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
       </Docs>
     </Member>
     <Member MemberName="ItemContainerStyleProperty">
@@ -1620,7 +1620,7 @@ ListBox that contains multiple types of objects
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160010">Introduction to Styling and Templating Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160010">Introduction to Styling and Templating Sample</related>
       </Docs>
     </Member>
     <Member MemberName="ItemsPanelProperty">
@@ -1882,7 +1882,7 @@ ListBox that contains multiple types of objects
   
  [!code-xaml[DataTemplatingIntro_snip#MyTaskTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#mytasktemplate)]  
   
- For the complete sample, see [Introduction to Data Templating Sample](http://go.microsoft.com/fwlink/?LinkID=160009).  
+ For the complete sample, see [Introduction to Data Templating Sample](https://go.microsoft.com/fwlink/?LinkID=160009).  
   
  ]]></format>
         </remarks>
@@ -1994,7 +1994,7 @@ ListBox that contains multiple types of objects
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
       </Docs>
     </Member>
     <Member MemberName="ItemTemplateSelectorProperty">

@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This helper class is designed to assist with writing authenticated mobile Web sites. The class objects provide mobile device-compatible versions of the ASP.NET <xref:System.Web.Security.FormsAuthentication> class methods, <xref:System.Web.Mobile.MobileFormsAuthentication.RedirectFromLoginPage%2A> and <xref:System.Web.Mobile.MobileFormsAuthentication.SignOut%2A>. For more information on securing your Web application, see [Basic Security Practices for Web Applications](http://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad).  
+ This helper class is designed to assist with writing authenticated mobile Web sites. The class objects provide mobile device-compatible versions of the ASP.NET <xref:System.Web.Security.FormsAuthentication> class methods, <xref:System.Web.Mobile.MobileFormsAuthentication.RedirectFromLoginPage%2A> and <xref:System.Web.Mobile.MobileFormsAuthentication.SignOut%2A>. For more information on securing your Web application, see [Basic Security Practices for Web Applications](https://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad).  
   
    
   
@@ -41,7 +41,7 @@
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="Overload:System.Web.Mobile.MobileFormsAuthentication.RedirectFromLoginPage" />
     <altmember cref="T:System.Web.Security.FormsAuthentication" />
-    <related type="Article" href="http://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad">Basic Security Practices for Web Applications</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad">Basic Security Practices for Web Applications</related>
     <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
     <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to Membership</related>
   </Docs>
@@ -96,7 +96,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad">Basic Security Practices for Web Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad">Basic Security Practices for Web Applications</related>
         <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to Membership</related>
       </Docs>
@@ -144,7 +144,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad">Basic Security Practices for Web Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad">Basic Security Practices for Web Applications</related>
         <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to Membership</related>
       </Docs>
@@ -172,7 +172,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.IPageAdapter.PersistCookielessData" />
         <altmember cref="M:System.Web.Security.FormsAuthentication.SignOut" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad">Basic Security Practices for Web Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad">Basic Security Practices for Web Applications</related>
         <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to Membership</related>
       </Docs>

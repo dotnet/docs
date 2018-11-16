@@ -581,7 +581,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.SspiFlag" /> property specifies the flags to pass to the Security Support Provider Interface (SSPI) InitializeSecurityContext function.  For more information about the InitializeSecurityContext function, see the InitializeSecurityContext function topic in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).</summary>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.SspiFlag" /> property specifies the flags to pass to the Security Support Provider Interface (SSPI) InitializeSecurityContext function.  For more information about the InitializeSecurityContext function, see the InitializeSecurityContext function topic in the MSDN library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).</summary>
         <value>The flags to pass to the SSPI InitializeSecurityContext function.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>

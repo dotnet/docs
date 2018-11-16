@@ -96,7 +96,7 @@
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
-      <para>To be a component, a class must implement the <see cref="T:System.ComponentModel.IComponent" /> interface and provide a basic constructor that requires no parameters or a single parameter of type <see cref="T:System.ComponentModel.IContainer" />. For more information about implementing <see cref="T:System.ComponentModel.IComponent" />, see [Programming with Components](http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3).</para>
+      <para>To be a component, a class must implement the <see cref="T:System.ComponentModel.IComponent" /> interface and provide a basic constructor that requires no parameters or a single parameter of type <see cref="T:System.ComponentModel.IContainer" />. For more information about implementing <see cref="T:System.ComponentModel.IComponent" />, see [Programming with Components](https://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3).</para>
     </block>
     <altmember cref="T:System.ComponentModel.Container" />
     <altmember cref="T:System.ComponentModel.IContainer" />

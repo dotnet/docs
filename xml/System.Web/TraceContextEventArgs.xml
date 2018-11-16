@@ -35,7 +35,7 @@
     <altmember cref="T:System.Web.TraceContextEventHandler" />
     <altmember cref="E:System.Web.TraceContext.TraceFinished" />
     <altmember cref="T:System.Web.TraceContext" />
-    <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,7 +63,7 @@
         <param name="records">A collection of <see cref="T:System.Web.TraceContextRecord" /> objects that represent all the trace records logged for the current request.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.TraceContextEventArgs" /> class, using the provided collection of trace records.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TraceRecords">
@@ -111,7 +111,7 @@
         <altmember cref="T:System.Web.TraceContextRecord" />
         <altmember cref="T:System.Web.TraceContextEventHandler" />
         <altmember cref="T:System.Web.TraceContext" />
-        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
   </Members>

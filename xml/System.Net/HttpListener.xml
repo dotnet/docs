@@ -75,7 +75,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/8bf0b428-5a21-4299-8d6e-bf8251fd978a">Changes to NTLM authentication for HTTPWebRequest in Version 3.5 SP1</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/8bf0b428-5a21-4299-8d6e-bf8251fd978a">Changes to NTLM authentication for HTTPWebRequest in Version 3.5 SP1</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1059,7 +1059,7 @@
  After you have started an <xref:System.Net.HttpListener> object, you can use the <xref:System.Net.HttpListener.Stop%2A> method to stop it.  
   
 > [!NOTE]
->  If this listener instance uses https, you must install and select a Server Certificate. Otherwise, an <xref:System.Net.HttpWebRequest> query of this <xref:System.Net.HttpListener> will fail with an unexpected close of the connection. You can configure Server Certificates and other listener options by using HttpCfg.exe. See [http://msdn.microsoft.com/library/default.asp?url=/library/http/http/httpcfg_exe.asp](http://msdn.microsoft.com/library/default.asp?url=/library/http/http/httpcfg_exe.asp) for more details.  
+>  If this listener instance uses https, you must install and select a Server Certificate. Otherwise, an <xref:System.Net.HttpWebRequest> query of this <xref:System.Net.HttpListener> will fail with an unexpected close of the connection. You can configure Server Certificates and other listener options by using HttpCfg.exe. See [http://msdn.microsoft.com/library/default.asp?url=/library/http/http/httpcfg_exe.asp](https://msdn.microsoft.com/library/default.asp?url=/library/http/http/httpcfg_exe.asp) for more details.  
   
    
   

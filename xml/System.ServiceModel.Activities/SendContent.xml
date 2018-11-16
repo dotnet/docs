@@ -62,7 +62,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to use the <xref:System.ServiceModel.Activities.SendContent> class to specify the <xref:System.ServiceModel.Activities.SendMessageContent> for a <xref:System.ServiceModel.Activities.SendReply> activity. This example uses a lambda expression to specify the <xref:System.Activities.InArgument>. For more information about lambda expressions, see [Lambda Expressions](http://go.microsoft.com/fwlink/?LinkId=182082)  
+ The following example shows how to use the <xref:System.ServiceModel.Activities.SendContent> class to specify the <xref:System.ServiceModel.Activities.SendMessageContent> for a <xref:System.ServiceModel.Activities.SendReply> activity. This example uses a lambda expression to specify the <xref:System.Activities.InArgument>. For more information about lambda expressions, see [Lambda Expressions](https://go.microsoft.com/fwlink/?LinkId=182082)  
   
  [!code-csharp[ContentBasedCorrelation#2](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/service.cs#2)]  
   

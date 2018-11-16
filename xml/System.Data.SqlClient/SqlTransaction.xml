@@ -45,7 +45,7 @@
 > [!NOTE]
 >  `Try`/`Catch` exception handling should always be used when committing or rolling back a <xref:System.Data.SqlClient.SqlTransaction>. Both <xref:System.Data.SqlClient.SqlTransaction.Commit%2A> and <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> generate an <xref:System.InvalidOperationException> if the connection is terminated or if the transaction has already been rolled back on the server.  
   
- For more information on SQL Server transactions, see [Explicit Transactions](http://msdn.microsoft.com/library/ms175127\(SQL.105\).aspx) and [Coding Efficient Transactions](http://msdn.microsoft.com/library/ms187484\(SQL.105\).aspx).  
+ For more information on SQL Server transactions, see [Explicit Transactions](https://msdn.microsoft.com/library/ms175127\(SQL.105\).aspx) and [Coding Efficient Transactions](https://msdn.microsoft.com/library/ms187484\(SQL.105\).aspx).  
   
    
   

@@ -40,7 +40,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -50,7 +50,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.Security.RolePrincipal" /> class.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -92,7 +92,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="identity" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -166,7 +166,7 @@
  -or-  
   
  <paramref name="encryptedTicket" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -208,7 +208,7 @@
  -or-  
   
  <paramref name="providerName" /> refers to a role provider that does not exist in the configuration for the application.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -259,7 +259,7 @@
  -or-  
   
  <paramref name="providerName" /> refers to a role provider that does not exist in the configuration for the application.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName="CachedListChanged">
@@ -305,7 +305,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName="CookiePath">
@@ -343,7 +343,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName="Expired">
@@ -382,7 +382,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName="ExpireDate">
@@ -415,7 +415,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -491,7 +491,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">The <see cref="P:System.Web.Security.RolePrincipal.Identity" /> property is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName="Identity">
@@ -534,7 +534,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName="IsInRole">
@@ -580,7 +580,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">The <see cref="P:System.Web.Security.RolePrincipal.Identity" /> property is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName="IsRoleListCached">
@@ -624,7 +624,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName="IssueDate">
@@ -657,7 +657,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderName">
@@ -694,7 +694,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName="SetDirty">
@@ -724,7 +724,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -804,7 +804,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -847,7 +847,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195">Managing Authorization Using ASP.NET Roles</related>
       </Docs>
     </Member>
   </Members>

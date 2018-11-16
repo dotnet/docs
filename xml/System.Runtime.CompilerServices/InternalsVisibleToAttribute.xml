@@ -61,9 +61,9 @@
   
  For more information about how to use this attribute, see the following topics:  
   
--   [Friend Assemblies (C++)](http://msdn.microsoft.com/library/8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd)  
+-   [Friend Assemblies (C++)](https://msdn.microsoft.com/library/8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd)  
   
--   [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055)  
+-   [Friend Assemblies](https://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055)  
   
 <a name="Key"></a>   
 ## Getting the full public key  
@@ -83,7 +83,7 @@
  If you use the C# compiler to compile the friend assembly, you must explicitly specify the name of the output file (.exe or .dll) by using the **/out** compiler option. This is required because the compiler has not yet generated the name for the assembly it is building at the time it is binding to external references. The **/out** compiler option is optional for the Visual Basic compiler, and the corresponding **-out** or **-o** compiler option should not be used when compiling friend assemblies with the F# compiler.  
   
 ## Compiling the friend assembly with C++  
- In C++, in order to make the internal members enabled by the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute accessible to a friend assembly, you must use the `as_friend` attribute in the C++  directive. For more information, see [Friend Assemblies (C++)](http://msdn.microsoft.com/library/8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd).  
+ In C++, in order to make the internal members enabled by the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute accessible to a friend assembly, you must use the `as_friend` attribute in the C++  directive. For more information, see [Friend Assemblies (C++)](https://msdn.microsoft.com/library/8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd).  
   
    
   
@@ -176,9 +176,9 @@
   
  For more information about how to use the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute, see the following topics:  
   
--   [Friend Assemblies (C++)](http://msdn.microsoft.com/library/8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd)  
+-   [Friend Assemblies (C++)](https://msdn.microsoft.com/library/8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd)  
   
--   [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055)  
+-   [Friend Assemblies](https://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055)  
   
    
   
@@ -284,9 +284,9 @@
 ## Remarks  
  For more information about how to use the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute, see the following topics:  
   
--   [Friend Assemblies (C++)](http://msdn.microsoft.com/library/8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd)  
+-   [Friend Assemblies (C++)](https://msdn.microsoft.com/library/8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd)  
   
--   [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055)  
+-   [Friend Assemblies](https://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055)  
   
  ]]></format>
         </remarks>

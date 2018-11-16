@@ -102,7 +102,7 @@
  It is to your advantage to use the type-specific implementation of the <xref:System.Collections.Generic.List%601> class instead of using the <xref:System.Collections.ArrayList> class or writing a strongly typed wrapper collection yourself. The reason is your implementation must do what the .NET Framework does for you already, and the common language runtime can share Microsoft intermediate language code and metadata, which your implementation cannot.  
   
 ## F# Considerations  
- The <xref:System.Collections.Generic.List%601> class is used infrequently in F# code.  Instead, [Lists](http://msdn.microsoft.com/library/83102799-f251-42e1-93ef-64232e8c5b1d), which are immutable, singly-linked lists, are typically preferred. An F# List provides an ordered, immutable series of values, and is supported for use in functional-style development. When used from F#, the <xref:System.Collections.Generic.List%601> class is typically referred to by the  [ResizeArray\<'T>](https://msdn.microsoft.com/library/ee353447.aspx) type abbreviation to avoid naming conflicts with F# Lists  
+ The <xref:System.Collections.Generic.List%601> class is used infrequently in F# code.  Instead, [Lists](https://msdn.microsoft.com/library/83102799-f251-42e1-93ef-64232e8c5b1d), which are immutable, singly-linked lists, are typically preferred. An F# List provides an ordered, immutable series of values, and is supported for use in functional-style development. When used from F#, the <xref:System.Collections.Generic.List%601> class is typically referred to by the  [ResizeArray\<'T>](https://msdn.microsoft.com/library/ee353447.aspx) type abbreviation to avoid naming conflicts with F# Lists  
   
    
   
@@ -138,7 +138,7 @@
     <altmember cref="T:System.Collections.IList" />
     <altmember cref="T:System.Collections.Immutable.ImmutableList`1" />
     <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7">Iterators (C# and Visual Basic)</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7">Iterators (C# and Visual Basic)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -1471,7 +1471,7 @@
  [!code-csharp[System.Collections.Generic.List.ContainsExists#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.list.containsexists/cs/program.cs#1)]
  [!code-vb[System.Collections.Generic.List.ContainsExists#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.list.containsexists/vb/module1.vb#1)]  
   
- The following example demonstrates the find methods for the <xref:System.Collections.Generic.List%601> class. The example for the <xref:System.Collections.Generic.List%601> class contains `book` objects, of class `Book`, using the data from the [Sample XML File: Books (LINQ to XML)](http://msdn.microsoft.com/library/94252daf-6097-4625-afc2-0eb778958d4f). The `FillList` method in the example uses [LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13) to parse the values from the XML to property values of the `book` objects.  
+ The following example demonstrates the find methods for the <xref:System.Collections.Generic.List%601> class. The example for the <xref:System.Collections.Generic.List%601> class contains `book` objects, of class `Book`, using the data from the [Sample XML File: Books (LINQ to XML)](https://msdn.microsoft.com/library/94252daf-6097-4625-afc2-0eb778958d4f). The `FillList` method in the example uses [LINQ to XML](https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13) to parse the values from the XML to property values of the `book` objects.  
   
  The following table describes the examples provided for the find methods.  
   
@@ -1549,7 +1549,7 @@
    
   
 ## Examples  
- The following example demonstrates the find methods for the <xref:System.Collections.Generic.List%601> class. The example for the <xref:System.Collections.Generic.List%601> class contains `book` objects, of class `Book`, using the data from the [Sample XML File: Books (LINQ to XML)](http://msdn.microsoft.com/library/94252daf-6097-4625-afc2-0eb778958d4f). The `FillList` method in the example uses [LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13) to parse the values from the XML to property values of the `book` objects.  
+ The following example demonstrates the find methods for the <xref:System.Collections.Generic.List%601> class. The example for the <xref:System.Collections.Generic.List%601> class contains `book` objects, of class `Book`, using the data from the [Sample XML File: Books (LINQ to XML)](https://msdn.microsoft.com/library/94252daf-6097-4625-afc2-0eb778958d4f). The `FillList` method in the example uses [LINQ to XML](https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13) to parse the values from the XML to property values of the `book` objects.  
   
  The following table describes the examples provided for the find methods.  
   
@@ -1917,7 +1917,7 @@ Public Function StartsWith(e As Employee) As Boolean
    
   
 ## Examples  
- The following example demonstrates the find methods for the <xref:System.Collections.Generic.List%601> class. The example for the <xref:System.Collections.Generic.List%601> class contains `book` objects, of class `Book`, using the data from the [Sample XML File: Books (LINQ to XML)](http://msdn.microsoft.com/library/94252daf-6097-4625-afc2-0eb778958d4f). The `FillList` method in the example uses [LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13) to parse the values from the XML to property values of the `book` objects.  
+ The following example demonstrates the find methods for the <xref:System.Collections.Generic.List%601> class. The example for the <xref:System.Collections.Generic.List%601> class contains `book` objects, of class `Book`, using the data from the [Sample XML File: Books (LINQ to XML)](https://msdn.microsoft.com/library/94252daf-6097-4625-afc2-0eb778958d4f). The `FillList` method in the example uses [LINQ to XML](https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13) to parse the values from the XML to property values of the `book` objects.  
   
  The following table describes the examples provided for the find methods.  
   
@@ -2008,7 +2008,7 @@ Public Function StartsWith(e As Employee) As Boolean
    
   
 ## Examples  
- The following example demonstrates the find methods for the <xref:System.Collections.Generic.List%601> class. The example for the <xref:System.Collections.Generic.List%601> class contains `book` objects, of class `Book`, using the data from the [Sample XML File: Books (LINQ to XML)](http://msdn.microsoft.com/library/94252daf-6097-4625-afc2-0eb778958d4f). The `FillList` method in the example uses [LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13) to parse the values from the XML to property values of the `book` objects.  
+ The following example demonstrates the find methods for the <xref:System.Collections.Generic.List%601> class. The example for the <xref:System.Collections.Generic.List%601> class contains `book` objects, of class `Book`, using the data from the [Sample XML File: Books (LINQ to XML)](https://msdn.microsoft.com/library/94252daf-6097-4625-afc2-0eb778958d4f). The `FillList` method in the example uses [LINQ to XML](https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13) to parse the values from the XML to property values of the `book` objects.  
   
  The following table describes the examples provided for the find methods.  
   
@@ -2156,7 +2156,7 @@ Public Function StartsWith(e As Employee) As Boolean
    
   
 ## Examples  
- The following example demonstrates the find methods for the <xref:System.Collections.Generic.List%601> class. The example for the <xref:System.Collections.Generic.List%601> class contains `book` objects, of class `Book`, using the data from the [Sample XML File: Books (LINQ to XML)](http://msdn.microsoft.com/library/94252daf-6097-4625-afc2-0eb778958d4f). The `FillList` method in the example uses [LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13) to parse the values from the XML to property values of the `book` objects.  
+ The following example demonstrates the find methods for the <xref:System.Collections.Generic.List%601> class. The example for the <xref:System.Collections.Generic.List%601> class contains `book` objects, of class `Book`, using the data from the [Sample XML File: Books (LINQ to XML)](https://msdn.microsoft.com/library/94252daf-6097-4625-afc2-0eb778958d4f). The `FillList` method in the example uses [LINQ to XML](https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13) to parse the values from the XML to property values of the `book` objects.  
   
  The following table describes the examples provided for the find methods.  
   

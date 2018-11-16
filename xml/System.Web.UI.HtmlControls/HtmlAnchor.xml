@@ -36,7 +36,7 @@
  There are two ways to use the <xref:System.Web.UI.HtmlControls.HtmlAnchor> class. The first is for navigation: using the <xref:System.Web.UI.HtmlControls.HtmlAnchor.HRef%2A> property to define the location of the page to link to. The second is for postback events: using the <xref:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick> event to programmatically handle the user's clicking a link.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](https://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlAnchor>, see the <xref:System.Web.UI.HtmlControls.HtmlAnchor.%23ctor%2A> constructor.  
   
@@ -540,9 +540,9 @@
  Use the <xref:System.Web.UI.HtmlControls.HtmlAnchor.Target%2A> property to specify the target window or frame that displays the contents of the Web page that is linked to when the <xref:System.Web.UI.HtmlControls.HtmlAnchor> control is clicked.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.HtmlControls.HtmlAnchor.Target%2A> property renders as a `target` attribute. The `target` attribute on `a` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.HtmlControls.HtmlAnchor.Target%2A> property if the rendered output for the <xref:System.Web.UI.HtmlControls.HtmlAnchor> must be compliant with XHTML 1.1. For more information, see [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
+>  The <xref:System.Web.UI.HtmlControls.HtmlAnchor.Target%2A> property renders as a `target` attribute. The `target` attribute on `a` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.HtmlControls.HtmlAnchor.Target%2A> property if the rendered output for the <xref:System.Web.UI.HtmlControls.HtmlAnchor> must be compliant with XHTML 1.1. For more information, see [XHTML Standards in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
 >   
->  When creating accessible Web pages, avoid using the <xref:System.Web.UI.HtmlControls.HtmlAnchor.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/library/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
+>  When creating accessible Web pages, avoid using the <xref:System.Web.UI.HtmlControls.HtmlAnchor.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](https://msdn.microsoft.com/library/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
   
  The <xref:System.Web.UI.HtmlControls.HtmlAnchor.Target%2A> value must begin with a letter in the range of A to Z (case-insensitive), except for the following special values, which begin with an underscore.  
   
@@ -567,7 +567,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
       </Docs>
     </Member>
     <Member MemberName="Title">

@@ -685,7 +685,7 @@
  [!code-csharp[System.Timers.Timer.Interval#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer.interval/cs/resolution1.cs#2)]
  [!code-vb[System.Timers.Timer.Interval#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timers.timer.interval/vb/resolution1.vb#2)]  
   
- If your app requires greater resolution than that offered by the <xref:System.Timers.Timer> class or the system clock, use the high-resolution multimedia timers; see [How to: Use the High-Resolution Timer](http://msdn.microsoft.com/library/aa964692.aspx).  
+ If your app requires greater resolution than that offered by the <xref:System.Timers.Timer> class or the system clock, use the high-resolution multimedia timers; see [How to: Use the High-Resolution Timer](https://msdn.microsoft.com/library/aa964692.aspx).  
   
  If the interval is set after the <xref:System.Timers.Timer> has started, the count is reset. For example, if you set the interval to 5 seconds and then set the <xref:System.Timers.Timer.Enabled%2A> property to `true`, the count starts at the time <xref:System.Timers.Timer.Enabled%2A> is set. If you reset the interval to 10 seconds when count is 3 seconds, the <xref:System.Timers.Timer.Elapsed> event is raised for the first time 13 seconds after <xref:System.Timers.Timer.Enabled%2A> was set to `true`.  
   

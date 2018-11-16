@@ -158,7 +158,7 @@
 > [!NOTE]
 >  When this property is set, all images displayed in an <xref:System.Web.UI.WebControls.ImageField> object share the same alternate text. As an alternative, you can bind the alternate text to a field in a data source by setting the <xref:System.Web.UI.WebControls.ImageField.DataAlternateTextField%2A> property instead of this property. This allows you to have different alternate text for each image displayed. If both the <xref:System.Web.UI.WebControls.ImageField.AlternateText%2A> and <xref:System.Web.UI.WebControls.ImageField.DataAlternateTextField%2A> properties are set, the <xref:System.Web.UI.WebControls.ImageField.DataAlternateTextField%2A> property takes precedence.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -903,7 +903,7 @@
 > [!NOTE]
 >  As an alternative, you can display an alternate image when the field value is `null` by setting the <xref:System.Web.UI.WebControls.ImageField.NullImageUrl%2A> property instead of this property. If the <xref:System.Web.UI.WebControls.ImageField.NullImageUrl%2A> and <xref:System.Web.UI.WebControls.ImageField.NullDisplayText%2A> properties are both set, the <xref:System.Web.UI.WebControls.ImageField.NullImageUrl%2A> property has precedence.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   

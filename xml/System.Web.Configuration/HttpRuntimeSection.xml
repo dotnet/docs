@@ -327,7 +327,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c6d99815-e022-4d2c-9420-1d7ab5b9d504">Using Application Domains</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c6d99815-e022-4d2c-9420-1d7ab5b9d504">Using Application Domains</related>
       </Docs>
     </Member>
     <Member MemberName="EnableHeaderChecking">
@@ -383,7 +383,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/985fe5d8-eb71-4024-b361-41fbdc1618d8">HTTP</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/985fe5d8-eb71-4024-b361-41fbdc1618d8">HTTP</related>
       </Docs>
     </Member>
     <Member MemberName="EnableKernelOutputCache">
@@ -438,8 +438,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce">ASP.NET Caching Features</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f882bf1b-a009-4312-ac06-74370ffabc0b">Performance Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce">ASP.NET Caching Features</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f882bf1b-a009-4312-ac06-74370ffabc0b">Performance Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableVersionHeader">
@@ -483,7 +483,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903">Assembly Versioning</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903">Assembly Versioning</related>
       </Docs>
     </Member>
     <Member MemberName="EncoderType">
@@ -518,7 +518,7 @@
 ## Remarks  
  ASP.NET uses the <xref:System.Web.Util.HttpEncoder> type as the default handler for HTML and URL encoding tasks.  
   
- To customize encoding behavior, you can create a class that inherits from the <xref:System.Web.Util.HttpEncoder> type. In the configuration file for an application, you then set the <xref:System.Web.Configuration.HttpRuntimeSection.EncoderType%2A> attribute of the `httpRuntime` element to the fully qualified string name of the custom type. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
+ To customize encoding behavior, you can create a class that inherits from the <xref:System.Web.Util.HttpEncoder> type. In the configuration file for an application, you then set the <xref:System.Web.Configuration.HttpRuntimeSection.EncoderType%2A> attribute of the `httpRuntime` element to the fully qualified string name of the custom type. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
   
  ]]></format>
         </remarks>
@@ -636,7 +636,7 @@
 > [!NOTE]
 >  Extremely small values can make a Web site unusable.  
   
- You can set this value in a configuration file by setting the `maxQueryStringLength` attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
+ You can set this value in a configuration file by setting the `maxQueryStringLength` attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
   
 > [!NOTE]
 >  There is also an IIS setting that controls query string length. See the `maxQueryString` attribute in [Request Limits \<requestLimits>](http://www.iis.net/ConfigReference/system.webServer/security/requestFiltering/requestLimits).  
@@ -730,7 +730,7 @@
   
  If the length of the request URL (which is the value of the <xref:System.Web.HttpRequest.Path%2A> property) exceeds the configured size limit, ASP.NET returns an HTTP 400 (Bad Request) status code  
   
- You can set this value in a configuration file by setting the <xref:System.Web.Configuration.HttpRuntimeSection.MaxUrlLength%2A> attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
+ You can set this value in a configuration file by setting the <xref:System.Web.Configuration.HttpRuntimeSection.MaxUrlLength%2A> attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
   
  ]]></format>
         </remarks>
@@ -939,7 +939,7 @@
 ## Remarks  
  The <xref:System.Web.Configuration.HttpRuntimeSection.RelaxedUrlToFileSystemMapping%2A> property determines how the URL in an incoming HTTP request will be validated. If this property is `false`, the URL is validated by using the same rules that determine whether a Windows file system path is valid.  
   
- You can set this value in a configuration file by setting the <xref:System.Web.Configuration.HttpRuntimeSection.RelaxedUrlToFileSystemMapping%2A> attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
+ You can set this value in a configuration file by setting the <xref:System.Web.Configuration.HttpRuntimeSection.RelaxedUrlToFileSystemMapping%2A> attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
   
  ]]></format>
         </remarks>
@@ -1020,7 +1020,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To set this value in a configuration file, you can assign a comma-separated string of characters to the `requestPathInvalidCharacters` attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
+ To set this value in a configuration file, you can assign a comma-separated string of characters to the `requestPathInvalidCharacters` attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
   
  ]]></format>
         </remarks>
@@ -1072,7 +1072,7 @@
 
  In ASP.NET 4.6, and later any numeric value  greater than  `0.0` and  less than `4.0` (for example, `3.7`, `2.9`, or `1.0`) is interpreted as `2.0`. Any number greater than `4.5` is interpreted as `4.5`
   
- To set this value in a configuration file, you can assign a value to the `requestValidationMode` attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
+ To set this value in a configuration file, you can assign a value to the `requestValidationMode` attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
   
  ]]></format>
         </remarks>
@@ -1108,7 +1108,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To customize ASP.NET request validation behavior, you can create a class that inherits from the <xref:System.Web.Util.RequestValidator> type. In the configuration file for an application, you then set the `requestValidationType` attribute of the `httpRuntime` element to the fully qualified string name of the custom type. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
+ To customize ASP.NET request validation behavior, you can create a class that inherits from the <xref:System.Web.Util.RequestValidator> type. In the configuration file for an application, you then set the `requestValidationType` attribute of the `httpRuntime` element to the fully qualified string name of the custom type. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
   
  ]]></format>
         </remarks>

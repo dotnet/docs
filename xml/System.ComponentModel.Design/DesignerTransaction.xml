@@ -73,7 +73,7 @@ using (host.CreateTransaction() {
   
  There is extensive support for this feature in Visual Studio.  
   
- Also see [Walkthrough: Automatically Populating the Toolbox with Custom Components](http://msdn.microsoft.com/library/fw694kde\(v=vs.110\).aspx).  
+ Also see [Walkthrough: Automatically Populating the Toolbox with Custom Components](https://msdn.microsoft.com/library/fw694kde\(v=vs.110\).aspx).  
   
  The designer can optionally display notifications about designer transaction events. If you add an instance of the `DTComponent` to a form while in design mode, a message box appears asking whether you would like to receive designer transaction event notifications. You may toggle these notifications using the shortcut menu that appears when you right-click an instance of the `DTComponent`. Transactions are created when you change values using the Properties window. You can also have the designer perform a transaction by clicking **Perform Example Transaction** on the shortcut menu for the component.  
   

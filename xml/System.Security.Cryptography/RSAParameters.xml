@@ -56,9 +56,9 @@
  Encryption of plaintext m to ciphertext c is defined as c = (m ^ e) mod n. Decryption would then be defined as m = (c ^ d) mod n.  
   
 ## Summary of Fields  
- Section A.1.2 of the [PKCS #1: RSA Cryptography Standard](http://go.microsoft.com/fwlink/?LinkId=113155) on the RSA Laboratories Web site defines a format for RSA private keys.  
+ Section A.1.2 of the [PKCS #1: RSA Cryptography Standard](https://go.microsoft.com/fwlink/?LinkId=113155) on the RSA Laboratories Web site defines a format for RSA private keys.  
   
- The following table summarizes the fields of the <xref:System.Security.Cryptography.RSAParameters> structure. The third column provides the corresponding field in section A.1.2 of [PKCS #1: RSA Cryptography Standard](http://go.microsoft.com/fwlink/?LinkId=113155).  
+ The following table summarizes the fields of the <xref:System.Security.Cryptography.RSAParameters> structure. The third column provides the corresponding field in section A.1.2 of [PKCS #1: RSA Cryptography Standard](https://go.microsoft.com/fwlink/?LinkId=113155).  
   
 |<xref:System.Security.Cryptography.RSAParameters> field|Contains|Corresponding PKCS #1 field|  
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------|  
@@ -82,7 +82,7 @@
  ]]></format>
     </remarks>
     <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
-    <related type="ExternalDocumentation" href="http://blogs.msdn.com/b/shawnfa/archive/2005/11/17/493972.aspx">All About RSAParameters</related>
+    <related type="ExternalDocumentation" href="https://blogs.msdn.com/b/shawnfa/archive/2005/11/17/493972.aspx">All About RSAParameters</related>
   </Docs>
   <Members>
     <Member MemberName="D">

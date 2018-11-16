@@ -19,7 +19,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Personalization scope is a key concept in Web Parts personalization and is tightly integrated with other settings, including the scope that the page, through the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control, is running in; the scope associated with each property on a control; and the way in which the control was added to the page. For more information on personalization scope, see [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ Personalization scope is a key concept in Web Parts personalization and is tightly integrated with other settings, including the scope that the page, through the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control, is running in; the scope associated with each property on a control; and the way in which the control was added to the page. For more information on personalization scope, see [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
  Personalization scope refers to how personalization data is applicable to different sets of users. Some personalization data is applicable to only a specific user and control on a page. Other personalization data is applicable to all users who view a site. Personalization scope is used in various areas of personalization to indicate which set of data should be retrieved and displayed.  
   

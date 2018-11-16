@@ -169,7 +169,7 @@
 ## Remarks  
  WMI providers can be hosted by an application or by the WMI service. WMI providers hosted by an application are called decoupled providers. Those hosted by the WMI service are called in-process providers. The hosting model value determines both the hosting model and, in the case of in-process providers, the account (security context) under which the provider runs. For more detail about the possible values of HostingModel, see <xref:System.Management.Instrumentation.ManagementHostingModel>.  
   
- To learn more about hosting models, see the [Provider Hosting and Security](http://go.microsoft.com/fwlink/?LinkId=100075) topic in the WMI SDK on MSDN.  
+ To learn more about hosting models, see the [Provider Hosting and Security](https://go.microsoft.com/fwlink/?LinkId=100075) topic in the WMI SDK on MSDN.  
   
    
   
@@ -221,7 +221,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see the "Provider Hosting and Security" topic in the MSDN library online at [http://www.msdn.com](http://www.msdn.com/).  
+ For more information, see the "Provider Hosting and Security" topic in the MSDN library online at [http://www.msdn.com](https://www.msdn.com/).  
   
    
   
@@ -267,7 +267,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about how to represent security descriptors in SDDL format, see the [Security Descriptor String Format](http://go.microsoft.com/fwlink/?LinkId=100763) topic in the MSDN library online.  
+ For more information about how to represent security descriptors in SDDL format, see the [Security Descriptor String Format](https://go.microsoft.com/fwlink/?LinkId=100763) topic in the MSDN library online.  
   
    
   
@@ -341,7 +341,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a security descriptor for the WMI provider. For more information, see the SecurityDescriptor property information in the "__Win32Provider" topic in the MSDN online library at [http://www.msdn.com](http://www.msdn.com/).</summary>
+        <summary>Gets or sets a security descriptor for the WMI provider. For more information, see the SecurityDescriptor property information in the "__Win32Provider" topic in the MSDN online library at [http://www.msdn.com](https://www.msdn.com/).</summary>
         <value>A <see cref="T:System.String" /> value that contains the security descriptor for the WMI provider.</value>
         <remarks>To be added.</remarks>
       </Docs>

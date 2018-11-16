@@ -504,7 +504,7 @@
           <paramref name="tokens" /> is empty.</exception>
         <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
         <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6f4f3804-2ed7-41b4-a97a-6e32b93f6e05">How to: Listen for Multiple Cancellation Requests</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6f4f3804-2ed7-41b4-a97a-6e32b93f6e05">How to: Listen for Multiple Cancellation Requests</related>
       </Docs>
     </Member>
     <Member MemberName="CreateLinkedTokenSource">
@@ -547,7 +547,7 @@
         <exception cref="T:System.ObjectDisposedException">A <see cref="T:System.Threading.CancellationTokenSource" /> associated with one of the source tokens has been disposed.</exception>
         <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
         <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6f4f3804-2ed7-41b4-a97a-6e32b93f6e05">How to: Listen for Multiple Cancellation Requests</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6f4f3804-2ed7-41b4-a97a-6e32b93f6e05">How to: Listen for Multiple Cancellation Requests</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">

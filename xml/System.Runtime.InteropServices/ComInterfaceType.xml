@@ -91,7 +91,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Indicates that the interface is exposed to COM as a [dual interface](http://msdn.microsoft.com/library/1d39d64c-e23a-4249-a167-4369d5bd2b65), which enables both early and late binding. <see cref="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual" /> is the default value.</summary>
+        <summary>Indicates that the interface is exposed to COM as a [dual interface](https://msdn.microsoft.com/library/1d39d64c-e23a-4249-a167-4369d5bd2b65), which enables both early and late binding. <see cref="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual" /> is the default value.</summary>
       </Docs>
     </Member>
     <Member MemberName="InterfaceIsIDispatch">
@@ -136,7 +136,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Indicates that an interface is exposed to COM as a <see href="http://msdn.microsoft.com/library/e8c18ae5-3d9e-4dff-aa20-b5acc723eacf">dispinterface</see>, which enables late binding only.</summary>
+        <summary>Indicates that an interface is exposed to COM as a <see href="https://msdn.microsoft.com/library/e8c18ae5-3d9e-4dff-aa20-b5acc723eacf">dispinterface</see>, which enables late binding only.</summary>
       </Docs>
     </Member>
     <Member MemberName="InterfaceIsIInspectable">
@@ -213,7 +213,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Indicates that an interface is exposed to COM as an interface that is derived from <see href="http://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see>, which enables only early binding.</summary>
+        <summary>Indicates that an interface is exposed to COM as an interface that is derived from <see href="https://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see>, which enables only early binding.</summary>
       </Docs>
     </Member>
   </Members>

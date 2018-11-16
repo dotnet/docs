@@ -15,12 +15,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a Toolset in MSBuild. For more information about Toolsets, see <see href="http://msdn.microsoft.com/library/15a048c8-5ad3-448e-b6e9-e3c5d7147ed2">Standard and Custom Toolset Configurations</see>.</summary>
+    <summary>Represents a Toolset in MSBuild. For more information about Toolsets, see <see href="https://msdn.microsoft.com/library/15a048c8-5ad3-448e-b6e9-e3c5d7147ed2">Standard and Custom Toolset Configurations</see>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:Microsoft.Build.BuildEngine.Toolset> object has a corresponding `ToolsVersion` value that represents the value of the `ToolsVersion` attribute on the [Project Element (MSBuild)](http://msdn.microsoft.com/library/d1cda56a-dbef-4109-9201-39e962e3f653) as well as a `ToolsPath` value that indicates where the Toolset is located.  
+ A <xref:Microsoft.Build.BuildEngine.Toolset> object has a corresponding `ToolsVersion` value that represents the value of the `ToolsVersion` attribute on the [Project Element (MSBuild)](https://msdn.microsoft.com/library/d1cda56a-dbef-4109-9201-39e962e3f653) as well as a `ToolsPath` value that indicates where the Toolset is located.  
   
  ]]></format>
     </remarks>

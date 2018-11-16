@@ -112,7 +112,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/07d5f01a-7b5b-40ea-9b15-f21561098fe4">How to: Define a Generic Type with Reflection Emit</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/07d5f01a-7b5b-40ea-9b15-f21561098fe4">How to: Define a Generic Type with Reflection Emit</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -709,7 +709,7 @@
  This overload is provided for designers of managed compilers.  
   
 > [!NOTE]
->  For more information on custom modifiers, see the ECMA Partition II Metadata documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+>  For more information on custom modifiers, see the ECMA Partition II Metadata documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
  ]]></format>
         </remarks>
@@ -1027,7 +1027,7 @@
           <paramref name="names" /> is an empty array.</exception>
         <altmember cref="T:System.Reflection.Emit.GenericTypeParameterBuilder" />
         <altmember cref="P:System.Reflection.Emit.TypeBuilder.IsGenericType" />
-        <related type="Article" href="http://msdn.microsoft.com/library/07d5f01a-7b5b-40ea-9b15-f21561098fe4">How to: Define a Generic Type with Reflection Emit</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/07d5f01a-7b5b-40ea-9b15-f21561098fe4">How to: Define a Generic Type with Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName="DefineInitializedData">
@@ -1416,7 +1416,7 @@
  Use this overload if you need to specify custom modifiers. If you need to specify custom modifiers after the method has been created, as you would, for example, with a generic method whose parameter types are specified by its generic type parameters, you can use the <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%28System.String%2CSystem.Reflection.MethodAttributes%29> or <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%28System.String%2CSystem.Reflection.MethodAttributes%2CSystem.Reflection.CallingConventions%29> method overloads to define the method and then use the <xref:System.Reflection.Emit.MethodBuilder.SetSignature%2A?displayProperty=nameWithType> method to define the parameter and return types with custom modifiers.  
   
 > [!NOTE]
->  For more information on custom modifiers, see the ECMA Partition II Metadata documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+>  For more information on custom modifiers, see the ECMA Partition II Metadata documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
  ]]></format>
         </remarks>
@@ -1486,7 +1486,7 @@
  `DefineMethodOverride` defines a `methodimpl`, which consists of a pair of metadata tokens. One token points to an implementation, and the other token points to a declaration that the body implements. The body must be defined on the type the method impl is defined on, and the body must be virtual (`Overridable` in Visual Basic). The declaration can be made to a method defined on an interface implemented by the type, a method on a derived class, or a method defined in the type. If the declaration is on an interface only, the slot defined for the interface is altered. If the declaration is made to a method on a base type, the slot for the method is overridden and any duplicates for the overridden method are also replaced. The overridden method cannot be the actual method that is declared. If the method is on the same type, the slot is replaced and any duplicates for the replaced methods are overridden.  
   
 > [!NOTE]
->  For more information about method impls, see `MethodImpl` in the ECMA Partition II Metadata documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+>  For more information about method impls, see `MethodImpl` in the ECMA Partition II Metadata documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
 > [!IMPORTANT]
 >  After the <xref:System.Reflection.Emit.TypeBuilder.DefineMethodOverride%2A> method is called, some features of `methodInfoBody` cannot be changed. For example, you cannot apply an attribute to a generic type parameter of `methodInfoBody` by using the <xref:System.Reflection.Emit.GenericTypeParameterBuilder.SetGenericParameterAttributes%2A> method. If you must use the <xref:System.Reflection.Emit.TypeBuilder.DefineMethodOverride%2A> method, do so after all characteristics of `methodInfoBody` have been defined.  
@@ -2295,7 +2295,7 @@
  Some DLL import attributes (see the description of <xref:System.Runtime.InteropServices.DllImportAttribute>) cannot be specified as arguments to this method. For example, the DLL import attribute <xref:System.Reflection.MethodImplAttributes.PreserveSig?displayProperty=nameWithType> must be added after the `PInvoke` method is created, if the method returns a value. The example shows how to do this.  
   
 > [!NOTE]
->  For more information on custom modifiers, see the ECMA Partition II Metadata documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+>  For more information on custom modifiers, see the ECMA Partition II Metadata documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
    
   
@@ -2526,7 +2526,7 @@
  This overload is provided for designers of managed compilers.  
   
 > [!NOTE]
->  For more information on custom modifiers, see the ECMA Partition II Metadata documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+>  For more information on custom modifiers, see the ECMA Partition II Metadata documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
  ]]></format>
         </remarks>
@@ -2598,7 +2598,7 @@
  This overload is provided for designers of managed compilers.  
   
 > [!NOTE]
->  For more information on custom modifiers, see the ECMA Partition II Metadata documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+>  For more information on custom modifiers, see the ECMA Partition II Metadata documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
  This method overload is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -4871,8 +4871,8 @@
         <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
         <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
         <related type="Article" href="~/docs/framework/security/security-changes.md">Security Changes in the .NET Framework Version 4.0</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/5fd8f46d-3961-46a7-84af-2eb1f48e75cf">Security-Transparent Code, Level 1</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0">Security-Transparent Code, Level 2</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5fd8f46d-3961-46a7-84af-2eb1f48e75cf">Security-Transparent Code, Level 1</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0">Security-Transparent Code, Level 2</related>
       </Docs>
     </Member>
     <Member MemberName="IsSecuritySafeCritical">
@@ -4930,8 +4930,8 @@
         <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
         <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
         <related type="Article" href="~/docs/framework/security/security-changes.md">Security Changes in the .NET Framework Version 4.0</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/5fd8f46d-3961-46a7-84af-2eb1f48e75cf">Security-Transparent Code, Level 1</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0">Security-Transparent Code, Level 2</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5fd8f46d-3961-46a7-84af-2eb1f48e75cf">Security-Transparent Code, Level 1</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0">Security-Transparent Code, Level 2</related>
       </Docs>
     </Member>
     <Member MemberName="IsSecurityTransparent">
@@ -4989,8 +4989,8 @@
         <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
         <related type="Article" href="~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md">Security Considerations for Reflection</related>
         <related type="Article" href="~/docs/framework/security/security-changes.md">Security Changes in the .NET Framework Version 4.0</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/5fd8f46d-3961-46a7-84af-2eb1f48e75cf">Security-Transparent Code, Level 1</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0">Security-Transparent Code, Level 2</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5fd8f46d-3961-46a7-84af-2eb1f48e75cf">Security-Transparent Code, Level 1</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0">Security-Transparent Code, Level 2</related>
       </Docs>
     </Member>
     <Member MemberName="IsSerializable">
@@ -5691,7 +5691,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information on how to format `binaryAttribute`, see the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+ For more information on how to format `binaryAttribute`, see the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  

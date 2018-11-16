@@ -25,7 +25,7 @@
  If you want to customize the health-event processing, you can derive from the <xref:System.Web.Management.BufferedWebEventProvider> class to create your own custom buffered provider.  
   
 > [!NOTE]
->  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `healthMonitoring` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of creating a custom provider, see [How to: Implement the Health Monitoring Custom Provider Example](http://msdn.microsoft.com/library/bbb1c959-e6e4-42b2-be62-49b7ca5ab72c).  
+>  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `healthMonitoring` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of creating a custom provider, see [How to: Implement the Health Monitoring Custom Provider Example](https://msdn.microsoft.com/library/bbb1c959-e6e4-42b2-be62-49b7ca5ab72c).  
   
    
   
@@ -82,7 +82,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.Management.WebEventBufferFlushInfo" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2">Installing and Configuring ASP.NET Providers</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2">Installing and Configuring ASP.NET Providers</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

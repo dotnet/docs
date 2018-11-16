@@ -30,7 +30,7 @@
  The <xref:System.Web.Security.WindowsAuthenticationModule> exposes an <xref:System.Web.Security.WindowsAuthenticationModule.Authenticate> event that enables you to provide a custom <xref:System.Security.Principal.IPrincipal> object for the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext>. The <xref:System.Web.Security.WindowsAuthenticationModule.Authenticate> event is accessed by specifying a subroutine named **WindowsAuthentication_OnAuthenticate** in the Global.asax file for your ASP.NET application.  
   
 > [!NOTE]
->  In IIS 7.0, using the <xref:System.Web.Security.WindowsAuthenticationModule> class with the <xref:System.Web.Security.FormsAuthenticationModule> class is not supported. For more information about compatibility issues in Integrated mode, see [Moving an ASP.NET Application from IIS 6.0 to IIS 7.0](http://msdn.microsoft.com/library/76f9cc78-f978-4837-b1c8-51d642ec4847).  
+>  In IIS 7.0, using the <xref:System.Web.Security.WindowsAuthenticationModule> class with the <xref:System.Web.Security.FormsAuthenticationModule> class is not supported. For more information about compatibility issues in Integrated mode, see [Moving an ASP.NET Application from IIS 6.0 to IIS 7.0](https://msdn.microsoft.com/library/76f9cc78-f978-4837-b1c8-51d642ec4847).  
   
    
   
@@ -42,7 +42,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/0346bc00-a4c6-491b-a103-ad2100f71606">Windows Authentication Provider</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/0346bc00-a4c6-491b-a103-ad2100f71606">Windows Authentication Provider</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,7 +76,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/0346bc00-a4c6-491b-a103-ad2100f71606">Windows Authentication Provider</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0346bc00-a4c6-491b-a103-ad2100f71606">Windows Authentication Provider</related>
       </Docs>
     </Member>
     <Member MemberName="Authenticate">
@@ -111,7 +111,7 @@
  The **WindowsAuthentication_OnAuthenticate** event is raised only when the authentication <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> is set to <xref:System.Web.Configuration.AuthenticationMode.Windows> and the <xref:System.Web.Security.WindowsAuthenticationModule> is an active HTTP module for the application.  
   
 > [!NOTE]
->  In IIS 7.0 running in Integrated Mode, the <xref:System.Web.Security.WindowsAuthenticationModule.Authenticate> event of the <xref:System.Web.Security.WindowsAuthenticationModule> is not raised when both the ASP.NET <xref:System.Web.Security.WindowsAuthenticationModule> and the IIS `AnonymousAuthenticationModule` modules are enabled. In this scenario, to receive authentication notification, subscribe to the <xref:System.Web.HttpApplication.AuthenticateRequest> event of the <xref:System.Web.HttpApplication> instance. For more information about compatibility issues in Integrated modes, see [Moving an ASP.NET Application from IIS 6.0 to IIS 7.0](http://msdn.microsoft.com/library/76f9cc78-f978-4837-b1c8-51d642ec4847).  
+>  In IIS 7.0 running in Integrated Mode, the <xref:System.Web.Security.WindowsAuthenticationModule.Authenticate> event of the <xref:System.Web.Security.WindowsAuthenticationModule> is not raised when both the ASP.NET <xref:System.Web.Security.WindowsAuthenticationModule> and the IIS `AnonymousAuthenticationModule` modules are enabled. In this scenario, to receive authentication notification, subscribe to the <xref:System.Web.HttpApplication.AuthenticateRequest> event of the <xref:System.Web.HttpApplication> instance. For more information about compatibility issues in Integrated modes, see [Moving an ASP.NET Application from IIS 6.0 to IIS 7.0](https://msdn.microsoft.com/library/76f9cc78-f978-4837-b1c8-51d642ec4847).  
   
    
   
@@ -123,7 +123,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/0346bc00-a4c6-491b-a103-ad2100f71606">Windows Authentication Provider</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0346bc00-a4c6-491b-a103-ad2100f71606">Windows Authentication Provider</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -157,7 +157,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/0346bc00-a4c6-491b-a103-ad2100f71606">Windows Authentication Provider</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0346bc00-a4c6-491b-a103-ad2100f71606">Windows Authentication Provider</related>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -196,7 +196,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/0346bc00-a4c6-491b-a103-ad2100f71606">Windows Authentication Provider</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0346bc00-a4c6-491b-a103-ad2100f71606">Windows Authentication Provider</related>
       </Docs>
     </Member>
   </Members>

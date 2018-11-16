@@ -154,7 +154,7 @@
   
  If you add a reference to one of the configuration files, the SOAP extension runs for all XML Web services within the scope of that configuration file. When specifying, a SOAP extension by referencing a configuration file, ASP.NET invokes the <xref:System.Web.Services.Protocols.SoapExtension.GetInitializer%2A> overload that passes in a <xref:System.Type>. When specifying an extension by applying a custom attribute, ASP.NET invokes the <xref:System.Web.Services.Protocols.SoapExtension.GetInitializer%2A> that passes in a <xref:System.Web.Services.Protocols.LogicalMethodInfo> and a <xref:System.Web.Services.Protocols.SoapExtensionAttribute>.  
   
- For details on adding SOAP extensions to a configuration file, see [&#91;\<topic://cpconconfigurationoptionsforaspnetwebservices>&#93;](http://msdn.microsoft.com/library/1f0d71bc-8faa-4730-b500-2a6c7b5d4f6b).  
+ For details on adding SOAP extensions to a configuration file, see [&#91;\<topic://cpconconfigurationoptionsforaspnetwebservices>&#93;](https://msdn.microsoft.com/library/1f0d71bc-8faa-4730-b500-2a6c7b5d4f6b).  
   
    
   
@@ -265,7 +265,7 @@
 -  
   
 > [!NOTE]
->  You can also add a SOAP extension without deriving from <xref:System.Web.Services.Protocols.SoapExtensionAttribute> by using the [\<soapExtensionTypes> Element](http://msdn.microsoft.com/library/7a373a98-6d82-4f8d-a6fc-2996da3fd54c) in a configuration file. For details, see [\<soapExtensionTypes> Element](http://msdn.microsoft.com/library/7a373a98-6d82-4f8d-a6fc-2996da3fd54c) and [SOAP Message Modification Using SOAP Extensions](http://msdn.microsoft.com/library/97d81ace-95e7-4acc-ae39-9692a0021e95).  
+>  You can also add a SOAP extension without deriving from <xref:System.Web.Services.Protocols.SoapExtensionAttribute> by using the [\<soapExtensionTypes> Element](https://msdn.microsoft.com/library/7a373a98-6d82-4f8d-a6fc-2996da3fd54c) in a configuration file. For details, see [\<soapExtensionTypes> Element](https://msdn.microsoft.com/library/7a373a98-6d82-4f8d-a6fc-2996da3fd54c) and [SOAP Message Modification Using SOAP Extensions](https://msdn.microsoft.com/library/97d81ace-95e7-4acc-ae39-9692a0021e95).  
   
 -  
   

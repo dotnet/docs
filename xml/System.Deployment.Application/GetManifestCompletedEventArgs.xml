@@ -101,7 +101,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this variable to grab any information you need from the application manifest, such as a list of dependencies, trust information, and so on. For more information on the structure of this document, see [ClickOnce Application Manifest](http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243).  
+ You can use this variable to grab any information you need from the application manifest, such as a list of dependencies, trust information, and so on. For more information on the structure of this document, see [ClickOnce Application Manifest](https://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243).  
   
    
   
@@ -244,7 +244,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of a Web page users can visit to obtain product support for the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application.</summary>
-        <value>A <see cref="T:System.Uri" /> containing the value found in the <c>supportUrl</c> attribute of the deployment manifest's <c>&lt;description&gt;</c> tag. For more information, see [ClickOnce Deployment Manifest](http://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b).</value>
+        <value>A <see cref="T:System.Uri" /> containing the value found in the <c>supportUrl</c> attribute of the deployment manifest's <c>&lt;description&gt;</c> tag. For more information, see [ClickOnce Deployment Manifest](https://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -32,7 +32,7 @@
   
 -   If a matching encoding is not found in the <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> list, the cache is searched for a non-encoded response, also referred to as the identity response. If the identity response is found, it is sent. Otherwise a new non-encoded response is generated and stored in the cache.  
   
- For more information about the <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> property, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125). See section 14, "Header Field Definitions", for complete details.  
+ For more information about the <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> property, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](https://go.microsoft.com/fwlink/?linkid=37125). See section 14, "Header Field Definitions", for complete details.  
   
  You can set the <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> property by using the  directive or by adding a profile to the  element in the Web.config file.  
   

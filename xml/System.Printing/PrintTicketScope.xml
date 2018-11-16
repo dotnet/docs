@@ -26,7 +26,7 @@
 ## Remarks  
  Use this enumeration primarily as a parameter in the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method of a <xref:System.Printing.PrintQueue>.  
   
- The values in this enumeration parallel the **PrintTicket** keyword scoping prefix in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397), where in the **PrintTicket** every keyword must start with either the "Job" or "Document" or "Page" scoping prefix.  
+ The values in this enumeration parallel the **PrintTicket** keyword scoping prefix in the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397), where in the **PrintTicket** every keyword must start with either the "Job" or "Document" or "Page" scoping prefix.  
   
  ]]></format>
     </remarks>

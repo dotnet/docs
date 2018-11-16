@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue> class provides support for the media type and quality in a Content-Type header as defined in [RFC 2616](http://go.microsoft.com/fwlink/?LinkID=241642) by the IETF.  
+ The <xref:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue> class provides support for the media type and quality in a Content-Type header as defined in [RFC 2616](https://go.microsoft.com/fwlink/?LinkID=241642) by the IETF.  
   
  Quality factors allow the user agent to indicate the relative degree of preference for the media type in a Content-Type header. Quality uses a scale from 0 to 1. The default value is q=1.  
   

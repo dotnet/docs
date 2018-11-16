@@ -38,7 +38,7 @@
  The following code example demonstrates how to programmatically create a <xref:System.Web.UI.WebControls.Table> control that has a <xref:System.Web.UI.WebControls.TableHeaderRow> and a <xref:System.Web.UI.WebControls.TableFooterRow>.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[TableHeaderRowClass2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableHeaderRowClass2/CS/tableheaderrowclass2cs.aspx#1)]
  [!code-aspx-vb[TableHeaderRowClass2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableHeaderRowClass2/VB/tableheaderrowclass2vb.aspx#1)]  
@@ -47,7 +47,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.TableFooterRow" />
     <altmember cref="T:System.Web.UI.WebControls.Table" />
-    <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,7 +71,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TableHeaderRow" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
   </Members>

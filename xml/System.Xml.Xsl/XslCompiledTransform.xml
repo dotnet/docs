@@ -82,8 +82,8 @@
     <altmember cref="T:System.Xml.Xsl.XsltArgumentList" />
     <altmember cref="T:System.Xml.Xsl.XsltMessageEncounteredEventArgs" />
     <altmember cref="N:System.Xml" />
-    <related type="Article" href="http://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03">XSLT Transformations</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03">XSLT Transformations</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -94,7 +94,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.XslCompiledTransform" /> class.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -128,7 +128,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.XslCompiledTransform" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -192,7 +192,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="CompileToType">
@@ -255,7 +255,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although the overall performance of the <xref:System.Xml.Xsl.XslCompiledTransform> class is better than the <xref:System.Xml.Xsl.XslTransform> class, the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method of the <xref:System.Xml.Xsl.XslCompiledTransform> class might perform more slowly than the <xref:System.Xml.Xsl.XslTransform.Load%2A> method of the <xref:System.Xml.Xsl.XslTransform> class the first time it is called on a transformation. This is because the XSLT file must be compiled before it is loaded. For more information, see the following blog post: [XslCompiledTransform Slower than XslTransform?](http://go.microsoft.com/fwlink/?LinkId=130590)  
+ Although the overall performance of the <xref:System.Xml.Xsl.XslCompiledTransform> class is better than the <xref:System.Xml.Xsl.XslTransform> class, the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method of the <xref:System.Xml.Xsl.XslCompiledTransform> class might perform more slowly than the <xref:System.Xml.Xsl.XslTransform.Load%2A> method of the <xref:System.Xml.Xsl.XslTransform> class the first time it is called on a transformation. This is because the XSLT file must be compiled before it is loaded. For more information, see the following blog post: [XslCompiledTransform Slower than XslTransform?](https://go.microsoft.com/fwlink/?LinkId=130590)  
   
 > [!NOTE]
 >  There are differences between XSLT compiled in Debug mode and XSLT compiled in Release mode. In some situations, style sheets compiled in Debug mode will not throw errors during <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A>, but will later fail during <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A>. The same style sheet compiled in Release mode will fail during <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A>. An example of such behavior is when a variable that is not of a node-set type is assigned to an expression where a node-set is required.  
@@ -336,7 +336,7 @@
         <exception cref="T:System.UriFormatException">
           <paramref name="stylesheetUri" /> is not a valid URI.</exception>
         <exception cref="T:System.Xml.XmlException">There was a parsing error loading the style sheet.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -398,9 +398,9 @@ xslt.Load(typeof(bookOrders));
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/672a5ac8-8305-4d28-ba10-11089c2c0924">XSLT Assembly Tool (xsltc.exe)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/76ee440b-d134-4f8f-8262-b917ad6dcbf6">How to: Perform an XSLT Transformation Using an Assembly</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/672a5ac8-8305-4d28-ba10-11089c2c0924">XSLT Assembly Tool (xsltc.exe)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/76ee440b-d134-4f8f-8262-b917ad6dcbf6">How to: Perform an XSLT Transformation Using an Assembly</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -465,7 +465,7 @@ xslt.Load(typeof(bookOrders));
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="stylesheet" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.Xsl.XsltException">The style sheet contains an error.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -528,7 +528,7 @@ xslt.Load(typeof(bookOrders));
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="stylesheet" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.Xsl.XsltException">The style sheet contains an error.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -676,7 +676,7 @@ xslt.Load(typeof(bookOrders));
         <exception cref="T:System.UriFormatException">
           <paramref name="stylesheetUri" /> is not a valid URI.</exception>
         <exception cref="T:System.Xml.XmlException">There was a parsing error loading the style sheet.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -735,7 +735,7 @@ xslt.Load(typeof(bookOrders));
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="stylesheet" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.Xsl.XsltException">The style sheet contains an error.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -792,7 +792,7 @@ xslt.Load(typeof(bookOrders));
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="stylesheet" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.Xsl.XsltException">The style sheet contains an error.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="OutputSettings">
@@ -855,7 +855,7 @@ xslt.Load(typeof(bookOrders));
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="TemporaryFiles">
@@ -902,7 +902,7 @@ xslt.Load(typeof(bookOrders));
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Transform">
@@ -923,7 +923,7 @@ xslt.Load(typeof(bookOrders));
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Transform">
@@ -1000,7 +1000,7 @@ xslt.Load(typeof(bookOrders));
         <exception cref="T:System.UriFormatException">
           <paramref name="inputUri" /> or <paramref name="resultsFile" /> is not a valid URI.</exception>
         <exception cref="T:System.Xml.XmlException">There was a parsing error loading the input document.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1070,7 +1070,7 @@ xslt.Load(typeof(bookOrders));
         <exception cref="T:System.UriFormatException">
           <paramref name="inputUri" /> is not a valid URI.</exception>
         <exception cref="T:System.Xml.XmlException">There was a parsing error loading the input document.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1127,7 +1127,7 @@ xslt.Load(typeof(bookOrders));
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> or <paramref name="results" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.Xsl.XsltException">There was an error executing the XSLT transform.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1194,7 +1194,7 @@ xslt.Load(typeof(bookOrders));
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> or <paramref name="results" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.Xsl.XsltException">There was an error executing the XSLT transform.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1254,7 +1254,7 @@ xslt.Load(typeof(bookOrders));
         <exception cref="T:System.UriFormatException">
           <paramref name="inputUri" /> is not a valid URI.</exception>
         <exception cref="T:System.Xml.XmlException">There was a parsing error loading the input document.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1322,7 +1322,7 @@ xslt.Load(typeof(bookOrders));
         <exception cref="T:System.UriFormatException">
           <paramref name="inputUri" /> is not a valid URI.</exception>
         <exception cref="T:System.Xml.XmlException">There was a parsing error loading the input document.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1402,7 +1402,7 @@ xslt.Load(typeof(bookOrders));
         <exception cref="T:System.UriFormatException">
           <paramref name="inputUri" /> is not a valid URI.</exception>
         <exception cref="T:System.Xml.XmlException">There was a parsing error loading the input document.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1451,7 +1451,7 @@ xslt.Load(typeof(bookOrders));
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> or <paramref name="results" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.Xsl.XsltException">There was an error executing the XSLT transform.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1500,7 +1500,7 @@ xslt.Load(typeof(bookOrders));
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> or <paramref name="results" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.Xsl.XsltException">There was an error executing the XSLT transform.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1551,7 +1551,7 @@ xslt.Load(typeof(bookOrders));
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> or <paramref name="results" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.Xsl.XsltException">There was an error executing the XSLT transform.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1618,7 +1618,7 @@ xslt.Load(typeof(bookOrders));
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> or <paramref name="results" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.Xsl.XsltException">There was an error executing the XSLT transform.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1677,7 +1677,7 @@ xslt.Load(typeof(bookOrders));
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> or <paramref name="results" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.Xsl.XsltException">There was an error executing the XSLT transform.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1738,7 +1738,7 @@ xslt.Load(typeof(bookOrders));
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> or <paramref name="results" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.Xsl.XsltException">There was an error executing the XSLT transform.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -1794,7 +1794,7 @@ xslt.Load(typeof(bookOrders));
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> or <paramref name="results" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.Xsl.XsltException">There was an error executing the XSLT transform.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Transform">

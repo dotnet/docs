@@ -36,7 +36,7 @@
   
  Create the new event source during the installation of your application. This allows time for the operating system to refresh its list of registered event sources and their configurations. If the operating system has not refreshed its list of event sources, and you attempt to write an event with the new source, the write operation will fail. You can configure a new source using an <xref:System.Diagnostics.EventLogInstaller>, or using the <xref:System.Diagnostics.EventLog.CreateEventSource%2A> method. You must have administrative rights on the computer to create a new event source.  
   
- For details about defining event messages and building event log resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com).  
+ For details about defining event messages and building event log resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](https://msdn.microsoft.com).  
   
    
   
@@ -561,7 +561,7 @@ SVC_UPDATE.EXE
   
  Event categories are optional. If your application does not use categories, do not set the <xref:System.Diagnostics.EventInstance.CategoryId%2A> for the event log entry.  
   
- For details about defining event messages and building event resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com/). For details about defining event categories in resource files, see the "Event Categories" topic in the Platform SDK  
+ For details about defining event messages and building event resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](https://msdn.microsoft.com/). For details about defining event categories in resource files, see the "Event Categories" topic in the Platform SDK  
   
    
   
@@ -892,7 +892,7 @@ SVC_UPDATE.EXE
 ## Remarks  
  The <xref:System.Diagnostics.EventInstance.InstanceId%2A> property uniquely identifies an event entry for a configured event source. For events defined in message resource files, the <xref:System.Diagnostics.EventInstance.InstanceId%2A> corresponds to the resource identifier compiled from the message definition fields in the message text file. Your application can write localized event log entries by setting the <xref:System.Diagnostics.EventInstance.InstanceId%2A> to a resource identifier. The Event Viewer uses the <xref:System.Diagnostics.EventInstance.InstanceId%2A> resource identifier to find and display the corresponding string from the localized resource file based on current language settings. You must register the source with the corresponding resource file before you write events using resource identifiers.  
   
- For details about defining event messages and building event log resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com/). For details about event log identifiers, see the "Event Identifiers" topic in the Platform SDK.  
+ For details about defining event messages and building event log resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](https://msdn.microsoft.com/). For details about event log identifiers, see the "Event Identifiers" topic in the Platform SDK.  
   
    
   

@@ -27,11 +27,11 @@
 ## Remarks  
  ASP.NET supports the option of managing session state out-of-process using a Windows service called the ASP.NET state service. The <xref:System.Web.SessionState.StateRuntime> class is used by unmanaged code in this service to manage session data. This class supports the .NET Framework infrastructure implementation of the ASP.NET state service and is not intended be used directly from your code.  
   
- The ASP.NET state service is not the default method of ASP.NET session-state management; ASP.NET supports an in-process management of session state by default. It also supports a second out-of-process option that manages session state in a Microsoft SQL Server database and enables custom session-state management solutions. For more information about session-state storage options, see [Session-State Modes](http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4).  
+ The ASP.NET state service is not the default method of ASP.NET session-state management; ASP.NET supports an in-process management of session state by default. It also supports a second out-of-process option that manages session state in a Microsoft SQL Server database and enables custom session-state management solutions. For more information about session-state storage options, see [Session-State Modes](https://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4).  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,11 +59,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member supports the .NET Framework infrastructure implementation of the ASP.NET state service and is not intended be used directly from your code. For more information about session-state storage options, see [Session-State Modes](http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4).  
+ This member supports the .NET Framework infrastructure implementation of the ASP.NET state service and is not intended be used directly from your code. For more information about session-state storage options, see [Session-State Modes](https://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ProcessRequest">
@@ -73,7 +73,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Used by the ASP.NET state server to process session data.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ProcessRequest">
@@ -129,11 +129,11 @@
 ## Remarks  
  ASP.NET supports the option of managing session state out-of-process using a Windows service called the ASP.NET state service. The <xref:System.Web.SessionState.StateRuntime.ProcessRequest%2A> method is used by unmanaged code in this service to manage the session data.  
   
- This member supports the .NET Framework infrastructure implementation of the ASP.NET state service and is not intended be used directly from your code. For more information about session-state storage options, see [Session-State Modes](http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4).  
+ This member supports the .NET Framework infrastructure implementation of the ASP.NET state service and is not intended be used directly from your code. For more information about session-state storage options, see [Session-State Modes](https://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ProcessRequest">
@@ -185,11 +185,11 @@
 ## Remarks  
  ASP.NET supports the option of managing session state out-of-process using a Windows service called the ASP.NET state service. The <xref:System.Web.SessionState.StateRuntime.ProcessRequest%2A> method is used by unmanaged code in this service to manage the session data.  
   
- This member supports the .NET Framework infrastructure implementation of the ASP.NET state service and is not intended be used directly from your code. For more information about session-state storage options, see [Session-State Modes](http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4).  
+ This member supports the .NET Framework infrastructure implementation of the ASP.NET state service and is not intended be used directly from your code. For more information about session-state storage options, see [Session-State Modes](https://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StopProcessing">
@@ -219,11 +219,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET supports the option of managing session state out-of-process using a Windows service called the ASP.NET state service. The <xref:System.Web.SessionState.StateRuntime.StopProcessing%2A> method is used by unmanaged code in this service to stop processing the session data. This member is provided to support the .NET Framework infrastructure implementation of the ASP.NET state service and is not intended be used directly from your code. For more information about session state storage options, see [Session-State Modes](http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4).  
+ ASP.NET supports the option of managing session state out-of-process using a Windows service called the ASP.NET state service. The <xref:System.Web.SessionState.StateRuntime.StopProcessing%2A> method is used by unmanaged code in this service to stop processing the session data. This member is provided to support the .NET Framework infrastructure implementation of the ASP.NET state service and is not intended be used directly from your code. For more information about session state storage options, see [Session-State Modes](https://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
   </Members>

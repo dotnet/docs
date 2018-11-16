@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An instance of <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> is created when the <xref:System.Speech.Recognition.SpeechRecognitionEngine> or the <xref:System.Speech.Recognition.SpeechRecognizer> object raises its `SpeechRecognized` event after completing a `RecognizeAsync` operation. For more information about speech recognition events, see [Using Speech Recognition Events](http://msdn.microsoft.com/library/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+ An instance of <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> is created when the <xref:System.Speech.Recognition.SpeechRecognitionEngine> or the <xref:System.Speech.Recognition.SpeechRecognizer> object raises its `SpeechRecognized` event after completing a `RecognizeAsync` operation. For more information about speech recognition events, see [Using Speech Recognition Events](https://msdn.microsoft.com/library/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
   
    
   
@@ -174,7 +174,7 @@ namespace SampleRecognition
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property references the position at the beginning of the recognized phrase in the input device's generated audio stream. By contrast, the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A> property references the recognizer's position within its audio input. These positions can be different. For more information, see [Using Speech Recognition Events](http://msdn.microsoft.com/library/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+ This property references the position at the beginning of the recognized phrase in the input device's generated audio stream. By contrast, the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A> property references the recognizer's position within its audio input. These positions can be different. For more information, see [Using Speech Recognition Events](https://msdn.microsoft.com/library/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
   
    
   

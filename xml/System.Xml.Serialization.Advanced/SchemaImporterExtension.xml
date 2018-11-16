@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Schema importation occurs whenever a Web service proxy is produced through a tool such as the Add Web Reference dialog box found in Visual Studio, or by using the [Web Services Description Language Tool (Wsdl.exe)](http://msdn.microsoft.com/library/b9210348-8bc2-4367-8c91-d1a04b403e88). Schema importation also occurs when using the [XML Schema Definition Tool (Xsd.exe)](~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md) to generate code from a specific XSD document.  
+ Schema importation occurs whenever a Web service proxy is produced through a tool such as the Add Web Reference dialog box found in Visual Studio, or by using the [Web Services Description Language Tool (Wsdl.exe)](https://msdn.microsoft.com/library/b9210348-8bc2-4367-8c91-d1a04b403e88). Schema importation also occurs when using the [XML Schema Definition Tool (Xsd.exe)](~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md) to generate code from a specific XSD document.  
   
  The <xref:System.Xml.Serialization.Advanced.SchemaImporterExtension> class allows you to modify the code generated when using any of these tools. For example, you may have an existing class that processes book orders on a system and you have an existing XSD document that supplies your orders. Using the <xref:System.Xml.Serialization.Advanced.SchemaImporterExtension> class, you can enable one of the tools to generate code that uses your class.  
   

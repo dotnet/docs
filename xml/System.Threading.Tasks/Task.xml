@@ -2353,7 +2353,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Threading.Tasks.Task> class implements the <xref:System.IDisposable> interface because internally it uses resources that also implement <xref:System.IDisposable>. However, particularly if your app targets the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] or later, there is no need to call <xref:System.Threading.Tasks.Task.Dispose%2A> unless performance or scalability testing indicates that, based on your usage patterns, your app's performance would be improved by disposing of tasks. For more information, see [Do I need to dispose of Tasks?](http://blogs.msdn.com/b/pfxteam/archive/2012/03/25/10287435.aspx) in the Parallel Programming with .NET blog.  
+ The <xref:System.Threading.Tasks.Task> class implements the <xref:System.IDisposable> interface because internally it uses resources that also implement <xref:System.IDisposable>. However, particularly if your app targets the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] or later, there is no need to call <xref:System.Threading.Tasks.Task.Dispose%2A> unless performance or scalability testing indicates that, based on your usage patterns, your app's performance would be improved by disposing of tasks. For more information, see [Do I need to dispose of Tasks?](https://blogs.msdn.com/b/pfxteam/archive/2012/03/25/10287435.aspx) in the Parallel Programming with .NET blog.  
   
  ]]></format>
         </remarks>
@@ -2398,7 +2398,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Threading.Tasks.Task> class implements the <xref:System.IDisposable> interface because internally it uses resources that also implement <xref:System.IDisposable>. However, particularly if your app targets the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] or later, there is no need to call <xref:System.Threading.Tasks.Task.Dispose%2A> unless performance or scalability testing indicates that, based on your usage patterns, your app's performance would be improved by disposing of tasks. For more information, see [Do I need to dispose of Tasks?](http://blogs.msdn.com/b/pfxteam/archive/2012/03/25/10287435.aspx) in the Parallel Programming with .NET blog.  
+ The <xref:System.Threading.Tasks.Task> class implements the <xref:System.IDisposable> interface because internally it uses resources that also implement <xref:System.IDisposable>. However, particularly if your app targets the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] or later, there is no need to call <xref:System.Threading.Tasks.Task.Dispose%2A> unless performance or scalability testing indicates that, based on your usage patterns, your app's performance would be improved by disposing of tasks. For more information, see [Do I need to dispose of Tasks?](https://blogs.msdn.com/b/pfxteam/archive/2012/03/25/10287435.aspx) in the Parallel Programming with .NET blog.  
   
  ]]></format>
         </remarks>
@@ -3993,7 +3993,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Threading.Tasks.Task.Wait%2A> is a synchronization method that causes the calling thread to wait until the current task has completed. If the current task has not started execution, the Wait method attempts to remove the task from the scheduler and execute it inline on the current thread. If it is unable to do that, or if the current task has already started execution, it blocks the calling thread until the task completes. For more information, see [Task.Wait and "Inlining"](http://blogs.msdn.com/b/pfxteam/archive/2009/10/15/9907713.aspx) in the Parallel Programming with .NET blog.   
+ <xref:System.Threading.Tasks.Task.Wait%2A> is a synchronization method that causes the calling thread to wait until the current task has completed. If the current task has not started execution, the Wait method attempts to remove the task from the scheduler and execute it inline on the current thread. If it is unable to do that, or if the current task has already started execution, it blocks the calling thread until the task completes. For more information, see [Task.Wait and "Inlining"](https://blogs.msdn.com/b/pfxteam/archive/2009/10/15/9907713.aspx) in the Parallel Programming with .NET blog.   
   
 ## Examples  
  The following example starts a task that generates one million random integers between 0 and 100 and computes their mean. The example uses the <xref:System.Threading.Tasks.Task.Wait%2A> method to ensure that the task completes before the application terminates. Otherwise, because this is a console application, the example would terminate before the task can compute and display the mean.  
@@ -4009,7 +4009,7 @@ Task t Status: RanToCompletion, Result: 42
  -or-  
   
  An exception was thrown during the execution of the task. The <see cref="P:System.AggregateException.InnerExceptions" /> collection contains information about the exception or exceptions.</exception>
-        <related type="ExternalDocumentation" href="http://blogs.msdn.com/b/pfxteam/archive/2009/10/15/9907713.aspx">Task.Wait and “Inlining”</related>
+        <related type="ExternalDocumentation" href="https://blogs.msdn.com/b/pfxteam/archive/2009/10/15/9907713.aspx">Task.Wait and “Inlining”</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -5446,7 +5446,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use `await Task.Yield();` in an asynchronous method to force the method to complete asynchronously. If there is a current synchronization context (<xref:System.Threading.SynchronizationContext> object), this will post the remainder of the method’s execution back to that context. However, the context will decide how to prioritize this work relative to other work that may be pending. The synchronization context that is present on a UI thread in most UI environments will often prioritize work posted to the context higher than input and rendering work. For this reason, do not rely on `await Task.Yield();` to keep a UI responsive.  For more information, see the entry [Useful Abstractions Enabled with ContinueWith](http://blogs.msdn.com/b/pfxteam/archive/2008/07/23/8768673.aspx) in the Parallel Programming with .NET blog.  
+ You can use `await Task.Yield();` in an asynchronous method to force the method to complete asynchronously. If there is a current synchronization context (<xref:System.Threading.SynchronizationContext> object), this will post the remainder of the method’s execution back to that context. However, the context will decide how to prioritize this work relative to other work that may be pending. The synchronization context that is present on a UI thread in most UI environments will often prioritize work posted to the context higher than input and rendering work. For this reason, do not rely on `await Task.Yield();` to keep a UI responsive.  For more information, see the entry [Useful Abstractions Enabled with ContinueWith](https://blogs.msdn.com/b/pfxteam/archive/2008/07/23/8768673.aspx) in the Parallel Programming with .NET blog.  
   
  ]]></format>
         </remarks>

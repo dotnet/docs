@@ -134,7 +134,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.ConnectionStringsExpressionEditor.GetExpressionEditorSheet%2A> method returns an editor sheet implementation for connection string expressions. The editor sheet for connection string expressions allows users to select a connection name and type, based on the current connection strings that are defined in the [connectionStrings Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/b6ffbb2e-a4d1-410e-8f7e-9755e92c65de) section of the Web configuration file. Once users have selected the connection expression properties, the editor sheet implementation combines the connection name and type into a connection string expression, which is returned to the visual designer.  
+ The <xref:System.Web.UI.Design.ConnectionStringsExpressionEditor.GetExpressionEditorSheet%2A> method returns an editor sheet implementation for connection string expressions. The editor sheet for connection string expressions allows users to select a connection name and type, based on the current connection strings that are defined in the [connectionStrings Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/b6ffbb2e-a4d1-410e-8f7e-9755e92c65de) section of the Web configuration file. Once users have selected the connection expression properties, the editor sheet implementation combines the connection name and type into a connection string expression, which is returned to the visual designer.  
   
  ]]></format>
         </remarks>

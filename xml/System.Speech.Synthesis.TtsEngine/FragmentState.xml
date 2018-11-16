@@ -106,7 +106,7 @@
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=58363">International Phonetic Alphabet</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=58363">International Phonetic Alphabet</related>
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -215,7 +215,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Determines if the current instance of <see cref="T:System.Speech.Synthesis.TtsEngine.FragmentState" /> describes the same <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state as another <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> instance, or an [Object](http://msdn.microsoft.com/library/vstudio/system.object\(v=vs.110\).aspx) which can be cast to <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" />.</summary>
+        <summary>Determines if the current instance of <see cref="T:System.Speech.Synthesis.TtsEngine.FragmentState" /> describes the same <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state as another <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> instance, or an [Object](https://msdn.microsoft.com/library/vstudio/system.object\(v=vs.110\).aspx) which can be cast to <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" />.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="Equals">
@@ -245,7 +245,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The method return false if the [Object](http://msdn.microsoft.com/library/vstudio/system.object\(v=vs.110\).aspx) provided by the `obj` argument cannot be cast to <xref:System.Speech.Synthesis.TtsEngine.TextFragment>.  
+ The method return false if the [Object](https://msdn.microsoft.com/library/vstudio/system.object\(v=vs.110\).aspx) provided by the `obj` argument cannot be cast to <xref:System.Speech.Synthesis.TtsEngine.TextFragment>.  
   
  ]]></format>
         </remarks>
@@ -432,7 +432,7 @@
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=58363">International Phonetic Alphabet</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=58363">International Phonetic Alphabet</related>
       </Docs>
     </Member>
     <Member MemberName="Prosody">

@@ -79,7 +79,7 @@
 ## Introduction  
  Language-Integrated Query (LINQ) is a query syntax that defines a set of query operators that enable traversal, filter, and projection operations to be expressed in a declarative way in any .NET-based programming language. The data object can be an in-memory data collection or an object that represents data from a database. You can retrieve or modify the data without having to write SQL commands for each operation.  
   
- The <xref:System.Web.UI.WebControls.LinqDataSource> control enables you to use LINQ in an ASP.NET Web page by setting properties in markup text. The <xref:System.Web.UI.WebControls.LinqDataSource> control uses LINQ to SQL to automatically generate the data commands. For more information about LINQ to SQL, see [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655).  
+ The <xref:System.Web.UI.WebControls.LinqDataSource> control enables you to use LINQ in an ASP.NET Web page by setting properties in markup text. The <xref:System.Web.UI.WebControls.LinqDataSource> control uses LINQ to SQL to automatically generate the data commands. For more information about LINQ to SQL, see [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655).  
   
  When you are retrieving data from an in-memory data collection, you set the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property to the class that contains the data collection. You set the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property to the property or field that returns the data collection. For example, you might have a class named `Person` that contains a property named `FavoriteCities` that returns an array of string values. In that case, you set the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property to `Person` and set the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property to `FavoriteCities`.  
   
@@ -146,7 +146,7 @@
   
 <a name="working_with_stored_procedures"></a>   
 ## Working with Stored Procedures  
- You use the <xref:System.Web.UI.WebControls.LinqDataSource> control to retrieve data from a stored procedure by creating an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Selecting> event. In the event handler, you call the method in the data context class that represents the stored procedure and set the result to the <xref:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.Result%2A> property of the <xref:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs> object. If you want to enable automatic update, insert, and delete operations for the data, the type that is returned from the method must match the type that is specified in the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property. For more information about creating data context methods, see [How to: Create DataContext methods mapped to stored procedures and functions (O/R Designer)](http://msdn.microsoft.com/library/e7ca32f1-50b3-48af-ad92-ceafd749296a).  
+ You use the <xref:System.Web.UI.WebControls.LinqDataSource> control to retrieve data from a stored procedure by creating an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Selecting> event. In the event handler, you call the method in the data context class that represents the stored procedure and set the result to the <xref:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.Result%2A> property of the <xref:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs> object. If you want to enable automatic update, insert, and delete operations for the data, the type that is returned from the method must match the type that is specified in the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property. For more information about creating data context methods, see [How to: Create DataContext methods mapped to stored procedures and functions (O/R Designer)](https://msdn.microsoft.com/library/e7ca32f1-50b3-48af-ad92-ceafd749296a).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -229,7 +229,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -625,7 +625,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
       </Docs>
     </Member>
     <Member MemberName="CreateQueryableView">
@@ -887,7 +887,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
       </Docs>
     </Member>
     <Member MemberName="EnableInsert">
@@ -939,7 +939,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
       </Docs>
     </Member>
     <Member MemberName="EnableObjectTracking">
@@ -1144,7 +1144,7 @@
   
 -   `All(` *condition* `)`  
   
- For more information, see [NIB: LinqDataSource Web Server Control Overview](http://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136) and [How to: Group and Aggregate Data Using the LinqDataSource Control](http://msdn.microsoft.com/library/b922cf69-251f-4158-b405-ea960993a1af).  
+ For more information, see [NIB: LinqDataSource Web Server Control Overview](https://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136) and [How to: Group and Aggregate Data Using the LinqDataSource Control](https://msdn.microsoft.com/library/b922cf69-251f-4158-b405-ea960993a1af).  
   
    
   
@@ -1853,7 +1853,7 @@ End Sub
   
 -   `All(` *condition* `)`  
   
- For more information, see [NIB: LinqDataSource Web Server Control Overview](http://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136) and [How to: Group and Aggregate Data Using the LinqDataSource Control](http://msdn.microsoft.com/library/b922cf69-251f-4158-b405-ea960993a1af).  
+ For more information, see [NIB: LinqDataSource Web Server Control Overview](https://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136) and [How to: Group and Aggregate Data Using the LinqDataSource Control](https://msdn.microsoft.com/library/b922cf69-251f-4158-b405-ea960993a1af).  
   
  When you group data, you can include `Key` and `It`, which are dynamically created properties, in the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property. The `Key` property refers to the values in the property or properties that were used to group the data. For example, if you group by a property named `Category`, the `Key` property will contain each unique value in the `Category` property. The `It` property refers to a collection of individual records in a grouping of data. You can iterate over the `It` property to retrieve the individual records that have been consolidated in the grouping operation. For example, if you group by a property named `Category`, the `It` property contains all the individual records that share a common value in the `Category` property.  
   
@@ -2082,15 +2082,15 @@ protected void LinqDataSource_Selecting(object sender,
 ## Remarks  
  By default, when update and delete operations have been enabled, the <xref:System.Web.UI.WebControls.LinqDataSource> control stores the original values for all the records in view state. The <xref:System.Web.UI.WebControls.LinqDataSource> control stores values for all primary keys and all properties not marked with `UpdateCheck.Never` in the `Column` attribute. You set the `UpdateCheck` property of the `Column` attribute in the [!INCLUDE[vs_ordesigner_short](~/includes/vs-ordesigner-short-md.md)].  
   
- Before LINQ to SQL updates or deletes data, it checks the values in view state against the current values in the data source. If the values do not match, the data source record has changed. In that case, LINQ to SQL throws an exception and does not continue with the update or delete operation. For more information about LINQ to SQL, see [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655).  
+ Before LINQ to SQL updates or deletes data, it checks the values in view state against the current values in the data source. If the values do not match, the data source record has changed. In that case, LINQ to SQL throws an exception and does not continue with the update or delete operation. For more information about LINQ to SQL, see [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655).  
   
  Storing the original values in view state can cause the page size to become unnecessarily large and can expose sensitive data to a malicious user. You can disable storing values in view state by setting the <xref:System.Web.UI.WebControls.LinqDataSource.StoreOriginalValuesInViewState%2A> property to `false`. If you do this, you must provide your own way to make sure that the data has not changed. If you set the <xref:System.Web.UI.WebControls.LinqDataSource.StoreOriginalValuesInViewState%2A> property to `false`, the original values are not persisted in view state for the data-bound control. In that case, LINQ to SQL cannot verify the integrity of the data. LINQ to SQL will throw an exception that indicates a data conflict even if the data in the data source has not actually changed.  
   
- If the underlying data source contains a timestamp field that is automatically updated during an update, you can store only that value in view state. In that case, the timestamp property in the entity class is set to `IsVersion=true` and all the properties are set to `UpdateCheck.Never`. Because a timestamp field is automatically updated by the database every time that data in that record changes, LINQ to SQL determines from that value if data has changed. This helps reduce the size of view state, and no sensitive data is exposed. LINQ to SQL will check for data consistency by comparing the timestamp value in view state with the timestamp value in the database. For more information, see [Walkthrough: Using a Timestamp with the LinqDataSource Control to Check Data Integrity](http://msdn.microsoft.com/library/e7700162-4f05-4130-81f7-3be1361027fa).  
+ If the underlying data source contains a timestamp field that is automatically updated during an update, you can store only that value in view state. In that case, the timestamp property in the entity class is set to `IsVersion=true` and all the properties are set to `UpdateCheck.Never`. Because a timestamp field is automatically updated by the database every time that data in that record changes, LINQ to SQL determines from that value if data has changed. This helps reduce the size of view state, and no sensitive data is exposed. LINQ to SQL will check for data consistency by comparing the timestamp value in view state with the timestamp value in the database. For more information, see [Walkthrough: Using a Timestamp with the LinqDataSource Control to Check Data Integrity](https://msdn.microsoft.com/library/e7700162-4f05-4130-81f7-3be1361027fa).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.DynamicData.IDynamicDataSource.ContextType">
@@ -2570,13 +2570,13 @@ LinqDataSource1.Where = "Category = \"Sports\"";
 <asp:LinqDataSource ... Where='Category.CompareTo("Sports") >= 0' ... >  
 ```  
   
- You can also use other methods of the <xref:System.String> class, such as <xref:System.String.StartsWith%2A>, <xref:System.String.EndsWith%2A>, and <xref:System.String.Contains%2A>. For more information about how to compare strings, see [Comparing Strings](~/docs/standard/base-types/comparing.md). For more information about Where clause syntax, see [C# Operators](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) and [where clause](~/docs/csharp/language-reference/keywords/where-clause.md).  
+ You can also use other methods of the <xref:System.String> class, such as <xref:System.String.StartsWith%2A>, <xref:System.String.EndsWith%2A>, and <xref:System.String.Contains%2A>. For more information about how to compare strings, see [Comparing Strings](~/docs/standard/base-types/comparing.md). For more information about Where clause syntax, see [C# Operators](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) and [where clause](~/docs/csharp/language-reference/keywords/where-clause.md).  
   
  In addition to filtering based on static values that you define when you create the Web page, you can filter based on dynamic values that are evaluated at run time. In that case, you include a named parameter in the <xref:System.Web.UI.WebControls.LinqDataSource.Where%2A> property that acts as a placeholder for the value. You then add a parameter that has the matching name to the <xref:System.Web.UI.WebControls.LinqDataSource.WhereParameters%2A> collection.  
   
  Alternatively, you can set the <xref:System.Web.UI.WebControls.LinqDataSource.AutoGenerateWhereClause%2A> property to `true` and define the parameters in the <xref:System.Web.UI.WebControls.LinqDataSource.WhereParameters%2A> collection. When the <xref:System.Web.UI.WebControls.LinqDataSource.AutoGenerateWhereClause%2A> property is `true`, you do not have to include the named parameters in the <xref:System.Web.UI.WebControls.LinqDataSource.Where%2A> property. Instead, the <xref:System.Web.UI.WebControls.LinqDataSource> control automatically generates the Where clause from the parameters in the <xref:System.Web.UI.WebControls.LinqDataSource.WhereParameters%2A> property.  
   
- For more information about how to filter data, see [Walkthrough: Selecting and Filtering a Subset of Data with the LinqDataSource and GridView Controls](http://msdn.microsoft.com/library/c1cca3e8-86e4-4e69-a29f-1c05b91f2205).  
+ For more information about how to filter data, see [Walkthrough: Selecting and Filtering a Subset of Data with the LinqDataSource and GridView Controls](https://msdn.microsoft.com/library/c1cca3e8-86e4-4e69-a29f-1c05b91f2205).  
   
    
   

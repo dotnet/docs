@@ -110,7 +110,7 @@
 ## Remarks  
  The common language runtime manages the reference count of a COM object for you, making it unnecessary to use this method directly. In rare cases, such as testing a custom marshaler, you might find it necessary to manipulate an object's lifetime manually. After calling <xref:System.Runtime.InteropServices.Marshal.AddRef%2A>, you must decrement the reference count by using a method such as <xref:System.Runtime.InteropServices.Marshal.Release%2A?displayProperty=nameWithType>. Do not rely on the return value of <xref:System.Runtime.InteropServices.Marshal.AddRef%2A>, as it can sometimes be unstable.  
   
- You can call <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%2A?displayProperty=nameWithType>, <xref:System.Runtime.InteropServices.Marshal.GetIUnknownForObject%2A?displayProperty=nameWithType>, or <xref:System.Runtime.InteropServices.Marshal.GetIDispatchForObject%2A?displayProperty=nameWithType> to obtain an <xref:System.IntPtr> value that represents an [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) interface pointer. You can also use these methods and the <xref:System.Runtime.InteropServices.Marshal.AddRef%2A> method on managed objects to obtain the COM interfaces represented by the managed object's COM callable wrapper. If you are not familiar with the details of this wrapper type, see [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md).  
+ You can call <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%2A?displayProperty=nameWithType>, <xref:System.Runtime.InteropServices.Marshal.GetIUnknownForObject%2A?displayProperty=nameWithType>, or <xref:System.Runtime.InteropServices.Marshal.GetIDispatchForObject%2A?displayProperty=nameWithType> to obtain an <xref:System.IntPtr> value that represents an [IUnknown](https://go.microsoft.com/fwlink/?LinkId=148003) interface pointer. You can also use these methods and the <xref:System.Runtime.InteropServices.Marshal.AddRef%2A> method on managed objects to obtain the COM interfaces represented by the managed object's COM callable wrapper. If you are not familiar with the details of this wrapper type, see [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md).  
   
  ]]></format>
         </remarks>
@@ -120,7 +120,7 @@
         <altmember cref="M:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject(System.Object,System.Type)" />
         <altmember cref="M:System.Runtime.InteropServices.Marshal.GetIUnknownForObject(System.Object)" />
         <altmember cref="M:System.Runtime.InteropServices.Marshal.GetIDispatchForObject(System.Object)" />
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=148625">IUnknown::AddRef</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=148625">IUnknown::AddRef</related>
       </Docs>
     </Member>
     <Member MemberName="AllocCoTaskMem">
@@ -171,7 +171,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem%2A> is one of two memory allocation API methods in the <xref:System.Runtime.InteropServices.Marshal> class. (<xref:System.Runtime.InteropServices.Marshal.AllocHGlobal%2A?displayProperty=nameWithType> is the other.) The initial memory content returned is undefined, and the allocated memory can be larger than the requested number of bytes. This method exposes the COM [CoTaskMemAlloc](http://go.microsoft.com/fwlink/?LinkId=148626) function, which is referred to as the COM task memory allocator.  
+ <xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem%2A> is one of two memory allocation API methods in the <xref:System.Runtime.InteropServices.Marshal> class. (<xref:System.Runtime.InteropServices.Marshal.AllocHGlobal%2A?displayProperty=nameWithType> is the other.) The initial memory content returned is undefined, and the allocated memory can be larger than the requested number of bytes. This method exposes the COM [CoTaskMemAlloc](https://go.microsoft.com/fwlink/?LinkId=148626) function, which is referred to as the COM task memory allocator.  
   
  ]]></format>
         </remarks>
@@ -246,7 +246,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Runtime.InteropServices.Marshal.AllocHGlobal%2A> is one of two memory allocation methods in the <xref:System.Runtime.InteropServices.Marshal> class. (<xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem%2A?displayProperty=nameWithType> is the other.) This method exposes the Win32 [LocalAlloc](http://go.microsoft.com/fwlink/?LinkId=148628) function from Kernel32.dll.  
+ <xref:System.Runtime.InteropServices.Marshal.AllocHGlobal%2A> is one of two memory allocation methods in the <xref:System.Runtime.InteropServices.Marshal> class. (<xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem%2A?displayProperty=nameWithType> is the other.) This method exposes the Win32 [LocalAlloc](https://go.microsoft.com/fwlink/?LinkId=148628) function from Kernel32.dll.  
   
  When <xref:System.Runtime.InteropServices.Marshal.AllocHGlobal%2A> calls `LocalAlloc`, it passes a `LMEM_FIXED` flag, which causes the allocated memory to be locked in place. Also, the allocated memory is not zero-filled.  
   
@@ -318,7 +318,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Runtime.InteropServices.Marshal.AllocHGlobal%2A> is one of two memory allocation methods in the <xref:System.Runtime.InteropServices.Marshal> class. (<xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem%2A?displayProperty=nameWithType> is the other.) This method exposes the Win32 [LocalAlloc](http://go.microsoft.com/fwlink/?LinkID=148628) function from Kernel32.dll.  
+ <xref:System.Runtime.InteropServices.Marshal.AllocHGlobal%2A> is one of two memory allocation methods in the <xref:System.Runtime.InteropServices.Marshal> class. (<xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem%2A?displayProperty=nameWithType> is the other.) This method exposes the Win32 [LocalAlloc](https://go.microsoft.com/fwlink/?LinkID=148628) function from Kernel32.dll.  
   
  When <xref:System.Runtime.InteropServices.Marshal.AllocHGlobal%2A> calls `LocalAlloc`, it passes a `LMEM_FIXED` flag, which causes the allocated memory to be locked in place. Also, the allocated memory is not zero-filled.  
   
@@ -1750,7 +1750,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.InteropServices.Marshal.CreateAggregatedObject%2A> method aggregates the inner managed pointer of a managed object with the specified outer pointer, and then returns an inner [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) pointer of the managed object.  
+ The <xref:System.Runtime.InteropServices.Marshal.CreateAggregatedObject%2A> method aggregates the inner managed pointer of a managed object with the specified outer pointer, and then returns an inner [IUnknown](https://go.microsoft.com/fwlink/?LinkId=148003) pointer of the managed object.  
   
  ]]></format>
         </remarks>
@@ -1802,7 +1802,7 @@
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the managed object to aggregate.</typeparam>
-        <param name="pOuter">The outer [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) pointer.</param>
+        <param name="pOuter">The outer [IUnknown](https://go.microsoft.com/fwlink/?LinkId=148003) pointer.</param>
         <param name="o">The managed object to aggregate.</param>
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
   
@@ -1812,7 +1812,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.InteropServices.Marshal.CreateAggregatedObject%2A> method aggregates the inner managed pointer of a managed object of a specified type with the specified outer pointer, and returns an inner [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) pointer of the managed object.  
+ The <xref:System.Runtime.InteropServices.Marshal.CreateAggregatedObject%2A> method aggregates the inner managed pointer of a managed object of a specified type with the specified outer pointer, and returns an inner [IUnknown](https://go.microsoft.com/fwlink/?LinkId=148003) pointer of the managed object.  
   
  ]]></format>
         </remarks>
@@ -1881,10 +1881,10 @@
   
  Both the `t` and `o` parameters must be classes whose signatures are attributed with <xref:System.Runtime.InteropServices.ComImportAttribute?displayProperty=nameWithType>. The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool applies this attribute for you when it imports a type library. If you create the RCW manually in source code, you should apply this attribute to the managed signature that represents the original coclass to signify its COM origins.  
   
- Tlbimp.exe imports a COM [coclass](http://msdn.microsoft.com/library/333d0904-ffa2-4d25-878d-7422bcd40582) as a managed class and an interface. The coclass interface has the same name as the original coclass, and the managed class has the original coclass name appended with "Class". For example, a coclass called `MyCoclass` becomes a coclass interface called `MyCoclass` and a managed class called `MyCoclassClass`. Since `t` must be a class, not an interface, be sure to specify the managed class (`MyCoclassClass`) and not the coclass interface.  
+ Tlbimp.exe imports a COM [coclass](https://msdn.microsoft.com/library/333d0904-ffa2-4d25-878d-7422bcd40582) as a managed class and an interface. The coclass interface has the same name as the original coclass, and the managed class has the original coclass name appended with "Class". For example, a coclass called `MyCoclass` becomes a coclass interface called `MyCoclass` and a managed class called `MyCoclassClass`. Since `t` must be a class, not an interface, be sure to specify the managed class (`MyCoclassClass`) and not the coclass interface.  
   
 > [!NOTE]
->  You lose the identity of the input COM object because a new RCW instance wraps the [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) pointer exposed by the original RCW.  
+>  You lose the identity of the input COM object because a new RCW instance wraps the [IUnknown](https://go.microsoft.com/fwlink/?LinkId=148003) pointer exposed by the original RCW.  
   
  ]]></format>
         </remarks>
@@ -1958,10 +1958,10 @@
   
  Both the `T` generic type parameter and the `o` parameter must be classes whose signatures are attributed with the <xref:System.Runtime.InteropServices.ComImportAttribute?displayProperty=nameWithType> attribute. The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool applies this attribute for you when it imports a type library. If you create the RCW manually in source code, you should apply this attribute to the managed signature that represents the original coclass to signify its COM origins.  
   
- Tlbimp.exe imports a COM [coclass](http://msdn.microsoft.com/library/333d0904-ffa2-4d25-878d-7422bcd40582) as a managed class and an interface. The coclass interface has the same name as the original coclass, and the managed class has the original coclass name appended with "Class". For example, a coclass called `MyCoclass` becomes a coclass interface called `MyCoclass` and a managed class called `MyCoclassClass`. Because`T` must be a class, not an interface, be sure to specify the managed class (`MyCoclassClass`) and not the `coclass` interface.  
+ Tlbimp.exe imports a COM [coclass](https://msdn.microsoft.com/library/333d0904-ffa2-4d25-878d-7422bcd40582) as a managed class and an interface. The coclass interface has the same name as the original coclass, and the managed class has the original coclass name appended with "Class". For example, a coclass called `MyCoclass` becomes a coclass interface called `MyCoclass` and a managed class called `MyCoclassClass`. Because`T` must be a class, not an interface, be sure to specify the managed class (`MyCoclassClass`) and not the `coclass` interface.  
   
 > [!NOTE]
->  You lose the identity of the input COM object, because a new RCW instance wraps the [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) pointer exposed by the original RCW.  
+>  You lose the identity of the input COM object, because a new RCW instance wraps the [IUnknown](https://go.microsoft.com/fwlink/?LinkId=148003) pointer exposed by the original RCW.  
   
  ]]></format>
         </remarks>
@@ -2036,7 +2036,7 @@
 ## Remarks  
  You can use this method to free reference-type fields, such as strings, of an unmanaged structure. Unlike its fields, a structure can be a value type or a reference type. Value-type structures that contain value-type fields (all blittable) have no references whose memory must be freed. The <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A?displayProperty=nameWithType> method uses this method to prevent memory leaks when reusing memory occupied by a structure.  
   
- <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%2A> calls the COM [SysFreeString](http://go.microsoft.com/fwlink/?LinkId=148633) function, which, in turn, frees an allocated string.  
+ <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%2A> calls the COM [SysFreeString](https://go.microsoft.com/fwlink/?LinkId=148633) function, which, in turn, frees an allocated string.  
   
  In addition to <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%2A>, the <xref:System.Runtime.InteropServices.Marshal> class provides two other memory-deallocation methods: <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> and <xref:System.Runtime.InteropServices.Marshal.FreeHGlobal%2A>.  
   
@@ -2047,7 +2047,7 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeCoTaskMem(System.IntPtr)" />
         <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeHGlobal(System.IntPtr)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/~/docs/framework/interop/blittable-and-non-blittable-types.md">Blittable and Non-Blittable types</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/~/docs/framework/interop/blittable-and-non-blittable-types.md">Blittable and Non-Blittable types</related>
       </Docs>
     </Member>
     <Member MemberName="DestroyStructure&lt;T&gt;">
@@ -2102,7 +2102,7 @@
 ## Remarks  
  You can use this method to free reference type fields, such as strings, of an unmanaged structure. Unlike its fields, a structure can be a value type or a reference type. Value type structures that contain value type fields (all blittable) have no references whose memory must be freed. The <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A?displayProperty=nameWithType> method uses this method to prevent memory leaks when reusing memory occupied by a structure.  
   
- <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%2A> calls the COM [SysFreeString](http://go.microsoft.com/fwlink/?LinkId=148633) function, which, in turn, frees an allocated string.  
+ <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%2A> calls the COM [SysFreeString](https://go.microsoft.com/fwlink/?LinkId=148633) function, which, in turn, frees an allocated string.  
   
  ]]></format>
         </remarks>
@@ -2217,12 +2217,12 @@
       </Parameters>
       <Docs>
         <param name="ptr">The address of the BSTR to be freed.</param>
-        <summary>Frees a <see langword="BSTR" /> using the COM [SysFreeString](http://go.microsoft.com/fwlink/?LinkID=148633) function.</summary>
+        <summary>Frees a <see langword="BSTR" /> using the COM [SysFreeString](https://go.microsoft.com/fwlink/?LinkID=148633) function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Like <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshal.FreeHGlobal%2A?displayProperty=nameWithType>, you can use this method to deallocate memory. <xref:System.Runtime.InteropServices.Marshal.FreeBSTR%2A> calls the COM [SysFreeString](http://go.microsoft.com/fwlink/?LinkID=148633) function, which frees memory allocated by any of the following unmanaged methods: `SysAllocString`, `SysAllocStringByteLen`, `SysAllocStringLen`, `SysReAllocString`, `SysReAllocStringLen`. You can call unmanaged methods such as these with platform invoke. For details, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
+ Like <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshal.FreeHGlobal%2A?displayProperty=nameWithType>, you can use this method to deallocate memory. <xref:System.Runtime.InteropServices.Marshal.FreeBSTR%2A> calls the COM [SysFreeString](https://go.microsoft.com/fwlink/?LinkID=148633) function, which frees memory allocated by any of the following unmanaged methods: `SysAllocString`, `SysAllocStringByteLen`, `SysAllocStringLen`, `SysReAllocString`, `SysReAllocStringLen`. You can call unmanaged methods such as these with platform invoke. For details, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
   
  ]]></format>
         </remarks>
@@ -2280,7 +2280,7 @@
 ## Remarks  
  You can use <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> to free any memory allocated by <xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem%2A>, <xref:System.Runtime.InteropServices.Marshal.ReAllocCoTaskMem%2A>, or any equivalent unmanaged method. If the `ptr` parameter is `null`, the method does nothing.  
   
- <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> exposes the COM [CoTaskMemFree](http://go.microsoft.com/fwlink/?LinkId=148638) function, which frees all bytes so that you can no longer use the memory that the `ptr` parameter points to.  
+ <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> exposes the COM [CoTaskMemFree](https://go.microsoft.com/fwlink/?LinkId=148638) function, which frees all bytes so that you can no longer use the memory that the `ptr` parameter points to.  
   
  In addition to <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A>, the <xref:System.Runtime.InteropServices.Marshal> class provides two other memory-deallocation methods: <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%2A> and <xref:System.Runtime.InteropServices.Marshal.FreeHGlobal%2A>.  
   
@@ -2345,7 +2345,7 @@
 ## Remarks  
  You can use <xref:System.Runtime.InteropServices.Marshal.FreeHGlobal%2A> to free any memory from the global heap allocated by <xref:System.Runtime.InteropServices.Marshal.AllocHGlobal%2A>, <xref:System.Runtime.InteropServices.Marshal.ReAllocHGlobal%2A>, or any equivalent unmanaged API method. If the `hglobal` parameter is <xref:System.IntPtr.Zero?displayProperty=nameWithType> the method does nothing.  
   
- <xref:System.Runtime.InteropServices.Marshal.FreeHGlobal%2A> exposes the [LocalFree](http://go.microsoft.com/fwlink/?LinkId=148640) function from Kernel32.DLL, which frees all bytes so that you can no longer use the memory pointed to by `hglobal`.  
+ <xref:System.Runtime.InteropServices.Marshal.FreeHGlobal%2A> exposes the [LocalFree](https://go.microsoft.com/fwlink/?LinkId=148640) function from Kernel32.DLL, which frees all bytes so that you can no longer use the memory pointed to by `hglobal`.  
   
  In addition to <xref:System.Runtime.InteropServices.Marshal.FreeHGlobal%2A>, the <xref:System.Runtime.InteropServices.Marshal> class provides two other memory-deallocation API methods: <xref:System.Runtime.InteropServices.Marshal.DestroyStructure%2A> and <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A>.  
   
@@ -2598,7 +2598,7 @@
       <Docs>
         <param name="o">The object that provides the interface.</param>
         <param name="T">The type of interface that is requested.</param>
-        <summary>Returns a pointer to an <see href="http://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface that represents the specified interface on the specified object. Custom query interface access is enabled by default.</summary>
+        <summary>Returns a pointer to an <see href="https://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface that represents the specified interface on the specified object. Custom query interface access is enabled by default.</summary>
         <returns>The interface pointer that represents the specified interface for the object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2610,7 +2610,7 @@
   
  The <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%29> method overload allows query interface customization by default. To specify whether to apply query interface customization, use the <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%2CSystem.Runtime.InteropServices.CustomQueryInterfaceMode%29> method overload.  
   
- For additional information, see the [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md), [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md), and [Introducing the Class Interface](http://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024) topics.  
+ For additional information, see the [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md), [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md), and [Introducing the Class Interface](https://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024) topics.  
   
  ]]></format>
         </remarks>
@@ -2687,7 +2687,7 @@
         <param name="o">The object that provides the interface.</param>
         <param name="T">The type of interface that is requested.</param>
         <param name="mode">One of the enumeration values that indicates whether to apply an <see langword="IUnknown::QueryInterface" /> customization that is supplied by an <see cref="T:System.Runtime.InteropServices.ICustomQueryInterface" />.</param>
-        <summary>Returns a pointer to an <see href="http://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface that represents the specified interface on the specified object. Custom query interface access is controlled by the specified customization mode.</summary>
+        <summary>Returns a pointer to an <see href="https://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface that represents the specified interface on the specified object. Custom query interface access is controlled by the specified customization mode.</summary>
         <returns>The interface pointer that represents the interface for the object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2762,7 +2762,7 @@
         <param name="o">The object that provides the interface.</param>
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
   
- Returns a pointer to an [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) interface that represents the specified interface on an object of the specified type. Custom query interface access is enabled by default.</summary>
+ Returns a pointer to an [IUnknown](https://go.microsoft.com/fwlink/?LinkId=148003) interface that represents the specified interface on an object of the specified type. Custom query interface access is enabled by default.</summary>
         <returns>The interface pointer that represents the <paramref name="TInterface" /> interface.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2774,7 +2774,7 @@
   
  The <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%60%602%28%60%600%29> method overload allows query interface customization by default. To specify whether to apply query interface customization, use the <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%2CSystem.Runtime.InteropServices.CustomQueryInterfaceMode%29> method overload.  
   
- For additional information, see the [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md), [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md), and [Introducing the Class Interface](http://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024) topics.  
+ For additional information, see the [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md), [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md), and [Introducing the Class Interface](https://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024) topics.  
   
  ]]></format>
         </remarks>
@@ -2963,9 +2963,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The zero-based slot number returned by this method accounts for three [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) and possibly four [IDispatch](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) methods, making the value of the first available slot either 3 or 7. <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A> provides the opposite functionality of <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType>.  
+ The zero-based slot number returned by this method accounts for three [IUnknown](https://go.microsoft.com/fwlink/?LinkId=148003) and possibly four [IDispatch](https://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) methods, making the value of the first available slot either 3 or 7. <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A> provides the opposite functionality of <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType>.  
   
- You can use this method to retrieve slot numbers for members of interfaces that are not visible from COM and for members of private interfaces. The slot numbers returned correspond to the v-table numbers that would be reserved if the type was exposed to COM. COM-invisible members actually occupy a slot in an exposed v-table, even though the COM client cannot use the slot. You cannot use <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A> on a class interface by passing <xref:System.Reflection.MemberInfo> from a class. For additional information, see [Introducing the Class Interface](http://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
+ You can use this method to retrieve slot numbers for members of interfaces that are not visible from COM and for members of private interfaces. The slot numbers returned correspond to the v-table numbers that would be reserved if the type was exposed to COM. COM-invisible members actually occupy a slot in an exposed v-table, even though the COM client cannot use the slot. You cannot use <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A> on a class interface by passing <xref:System.Reflection.MemberInfo> from a class. For additional information, see [Introducing the Class Interface](https://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
   
  ]]></format>
         </remarks>
@@ -3172,7 +3172,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns the zero-based, v-table number for an interface or a class. When used on a class, the slot number returned refers to the class interface for the class. If the class interface is auto-dual, this method always returns -1 to indicate that the dispatch-only interface does not expose a v-table to managed clients. You can use <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A> and <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType> to pass slots within a specified range. For additional information, see [Introducing the Class Interface](http://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
+ This method returns the zero-based, v-table number for an interface or a class. When used on a class, the slot number returned refers to the class interface for the class. If the class interface is auto-dual, this method always returns -1 to indicate that the dispatch-only interface does not expose a v-table to managed clients. You can use <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A> and <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType> to pass slots within a specified range. For additional information, see [Introducing the Class Interface](https://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
   
  ]]></format>
         </remarks>
@@ -3302,7 +3302,7 @@
 ## Remarks  
  Use the <xref:System.Runtime.InteropServices.Marshal.GetExceptionForHR%2A> method to get an <xref:System.Exception> based on an HRESULT without having to call the <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> method and catch the exception.  
   
- The current [IErrorInfo](http://msdn.microsoft.com/library/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface is used to construct the exception.  
+ The current [IErrorInfo](https://msdn.microsoft.com/library/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface is used to construct the exception.  
   
  For the mapping from each HRESULT to its comparable exception class in the .NET Framework, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
   
@@ -3356,7 +3356,7 @@
       <Docs>
         <param name="errorCode">The HRESULT to be converted.</param>
         <param name="errorInfo">A pointer to the <see langword="IErrorInfo" /> interface that provides more information about the error. You can specify <c>IntPtr(0)</c> to use the current <see langword="IErrorInfo" /> interface, or <c>IntPtr(-1)</c> to ignore the current <see langword="IErrorInfo" /> interface and construct the exception just from the error code.</param>
-        <summary>Converts the specified HRESULT error code to a corresponding <see cref="T:System.Exception" /> object, with additional error information passed in an [IErrorInfo](http://msdn.microsoft.com/library/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface for the exception object.</summary>
+        <summary>Converts the specified HRESULT error code to a corresponding <see cref="T:System.Exception" /> object, with additional error information passed in an [IErrorInfo](https://msdn.microsoft.com/library/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface for the exception object.</summary>
         <returns>An object that represents the converted HRESULT and information obtained from <paramref name="errorInfo" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3475,7 +3475,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The delegate `d` is converted to a function pointer that can be passed to unmanaged code using the [__stdcall](http://msdn.microsoft.com/library/e212594b-1827-4d07-9527-7d412b300df8) calling convention.  
+ The delegate `d` is converted to a function pointer that can be passed to unmanaged code using the [__stdcall](https://msdn.microsoft.com/library/e212594b-1827-4d07-9527-7d412b300df8) calling convention.  
   
  You must manually keep the delegate from being collected by the garbage collector from managed code. The garbage collector does not track references to unmanaged code.  
   
@@ -3537,7 +3537,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The delegate `d` is converted to a function pointer that can be passed to unmanaged code by using the [__stdcall](http://msdn.microsoft.com/library/e212594b-1827-4d07-9527-7d412b300df8) calling convention.  
+ The delegate `d` is converted to a function pointer that can be passed to unmanaged code by using the [__stdcall](https://msdn.microsoft.com/library/e212594b-1827-4d07-9527-7d412b300df8) calling convention.  
   
  You must manually keep the delegate from being collected by the garbage collector from managed code. The garbage collector does not track references to unmanaged code.  
   
@@ -3756,7 +3756,7 @@
       </Parameters>
       <Docs>
         <param name="o">The object whose <see langword="IDispatch" /> interface is requested.</param>
-        <summary>Returns an <see href="http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5">IDispatch</see> interface from a managed object.</summary>
+        <summary>Returns an <see href="https://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5">IDispatch</see> interface from a managed object.</summary>
         <returns>The <see langword="IDispatch" /> pointer for the <paramref name="o" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3808,7 +3808,7 @@
       </Parameters>
       <Docs>
         <param name="o">The object whose <see langword="IDispatch" /> interface is requested.</param>
-        <summary>Returns an <see href="http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5">IDispatch</see> interface pointer from a managed object, if the caller is in the same context as that object.</summary>
+        <summary>Returns an <see href="https://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5">IDispatch</see> interface pointer from a managed object, if the caller is in the same context as that object.</summary>
         <returns>The <see langword="IDispatch" /> interface pointer for the specified object, or <see langword="null" /> if the caller is not in the same context as the specified object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3933,7 +3933,7 @@
       </Parameters>
       <Docs>
         <param name="o">The object whose <see langword="IUnknown" /> interface is requested.</param>
-        <summary>Returns an <see href="http://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface from a managed object.</summary>
+        <summary>Returns an <see href="https://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface from a managed object.</summary>
         <returns>The <see langword="IUnknown" /> pointer for the <paramref name="o" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3946,7 +3946,7 @@
    
   
 ## Examples  
- The following example demonstrates how to retrieve an [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) interface for a managed object using the <xref:System.Runtime.InteropServices.Marshal.GetIUnknownForObject%2A> method.  
+ The following example demonstrates how to retrieve an [IUnknown](https://go.microsoft.com/fwlink/?LinkId=148003) interface for a managed object using the <xref:System.Runtime.InteropServices.Marshal.GetIUnknownForObject%2A> method.  
   
  [!code-csharp[Runtime.InteropServices.Marshal.GetIUnknownForObject-release#1](~/samples/snippets/csharp/VS_Snippets_CLR/Runtime.InteropServices.Marshal.GetIUnknownForObject-release/cs/example.cs#1)]
  [!code-vb[Runtime.InteropServices.Marshal.GetIUnknownForObject-release#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Runtime.InteropServices.Marshal.GetIUnknownForObject-release/vb/example.vb#1)]  
@@ -3991,7 +3991,7 @@
       </Parameters>
       <Docs>
         <param name="o">The object whose <see langword="IUnknown" /> interface is requested.</param>
-        <summary>Returns an <see href="http://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface from a managed object, if the caller is in the same context as that object.</summary>
+        <summary>Returns an <see href="https://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface from a managed object, if the caller is in the same context as that object.</summary>
         <returns>The <see langword="IUnknown" /> pointer for the specified object, or <see langword="null" /> if the caller is not in the same context as the specified object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4063,7 +4063,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> exposes the Win32 [GetLastError](http://go.microsoft.com/fwlink/?LinkId=148657) function from Kernel32.DLL. This method exists because it is not safe to make a direct platform invoke call to `GetLastError` to obtain this information. If you want to access this error code, you must call <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> instead of writing your own platform invoke definition for `GetLastError` and calling it. The common language runtime can make internal calls to APIs that overwrite the `GetLastError` maintained by the operating system.  
+ <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> exposes the Win32 [GetLastError](https://go.microsoft.com/fwlink/?LinkId=148657) function from Kernel32.DLL. This method exists because it is not safe to make a direct platform invoke call to `GetLastError` to obtain this information. If you want to access this error code, you must call <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> instead of writing your own platform invoke definition for `GetLastError` and calling it. The common language runtime can make internal calls to APIs that overwrite the `GetLastError` maintained by the operating system.  
   
  You can use this method to obtain error codes only if you apply the <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=nameWithType> to the method signature and set the <xref:System.Runtime.InteropServices.DllImportAttribute.SetLastError> field to`true`. The process for this varies depending upon the source language used: C# and C++ are `false` by default, but the `Declare` statement in Visual Basic is `true`.  
   
@@ -4184,7 +4184,7 @@
 ## Remarks  
  The return value may be a <xref:System.Reflection.FieldInfo>, <xref:System.Reflection.MethodInfo>, or <xref:System.Reflection.PropertyInfo> object. The return value depends on the type of managed member that exists in the given COM slot (hence the generalized return type <xref:System.Reflection.MemberInfo> from which all three derive).  
   
- The zero-based slot number that is returned by this method accounts for three [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) and possibly four [IDispatch](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) methods, making the value of the first available slot either 3 or 7. <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A> provides the opposite functionality of <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A?displayProperty=nameWithType>. You can use <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A> to pass slots within a specified range.  
+ The zero-based slot number that is returned by this method accounts for three [IUnknown](https://go.microsoft.com/fwlink/?LinkId=148003) and possibly four [IDispatch](https://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) methods, making the value of the first available slot either 3 or 7. <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A> provides the opposite functionality of <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A?displayProperty=nameWithType>. You can use <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A> to pass slots within a specified range.  
   
  The `memberType` parameter is important only on return. It contains the type of the COM member (a regular method or a property accessor) that corresponds to the returned <xref:System.Reflection.MemberInfo> object.  
   
@@ -4369,7 +4369,7 @@
       </Parameters>
       <Docs>
         <param name="pUnk">A pointer to the <see langword="IUnknown" /> interface.</param>
-        <summary>Returns an instance of a type that represents a COM object by a pointer to its <see href="http://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface.</summary>
+        <summary>Returns an instance of a type that represents a COM object by a pointer to its <see href="https://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface.</summary>
         <returns>An object that represents the specified unmanaged COM object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4381,7 +4381,7 @@
   
  For an object to be wrapped with a specific managed class type (and not a generic wrapper type), you must adhere to the following requirements:  
   
--   Implement the [IProvideClassInfo](http://go.microsoft.com/fwlink/?LinkID=148012) interface for the COM object.  
+-   Implement the [IProvideClassInfo](https://go.microsoft.com/fwlink/?LinkID=148012) interface for the COM object.  
   
 -   Register the containing assembly with the [Regasm.exe (Assembly Registration Tool)](~/docs/framework/tools/regasm-exe-assembly-registration-tool.md).  
   
@@ -4585,7 +4585,7 @@
       <Docs>
         <param name="aSrcNativeVariant">A pointer to the first element of an array of COM VARIANTs.</param>
         <param name="cVars">The count of COM VARIANTs in <c>aSrcNativeVariant</c>.</param>
-        <summary>Converts an array of COM <see href="http://go.microsoft.com/fwlink/?LinkId=148670">VARIANTs</see> to an array of objects.</summary>
+        <summary>Converts an array of COM <see href="https://go.microsoft.com/fwlink/?LinkId=148670">VARIANTs</see> to an array of objects.</summary>
         <returns>An object array that corresponds to <paramref name="aSrcNativeVariant" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4715,12 +4715,12 @@
       <Docs>
         <param name="t">A type that represents an interface.</param>
         <summary>Gets the first slot in the virtual function table (v-table or VTBL) that contains user-defined methods.</summary>
-        <returns>The first VTBL slot that contains user-defined methods. The first slot is 3 if the interface is based on <see href="https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown">IUnknown</see>, and 7 if the interface is based on [IDispatch](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5).</returns>
+        <returns>The first VTBL slot that contains user-defined methods. The first slot is 3 if the interface is based on <see href="https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown">IUnknown</see>, and 7 if the interface is based on [IDispatch](https://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns the zero-based v-table number for an interface or a class. When used on a class, the slot number that is returned refers to the class interface for the class. If the class interface is auto-dispatch, this method always returns -1 to indicate that the dispatch-only interface does not expose a v-table to managed clients. You can use <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A> and <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType> to pass slots within a specified range. For additional information, see [Introducing the Class Interface](http://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
+ This method returns the zero-based v-table number for an interface or a class. When used on a class, the slot number that is returned refers to the class interface for the class. If the class interface is auto-dispatch, this method always returns -1 to indicate that the dispatch-only interface does not expose a v-table to managed clients. You can use <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A> and <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType> to pass slots within a specified range. For additional information, see [Introducing the Class Interface](https://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
   
  ]]></format>
         </remarks>
@@ -4830,9 +4830,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `t` parameter must be either a COM-imported type or a subtype of a COM-imported type. In addition, `t` must be a type whose metadata was imported by the [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool. This type must be a class and not an associated coclass interface, which carries the name of the COM class. For example, if Tlbimp.exe imports `Myclass` as a class called `MyclassClass` and as a coclass interface called `Myclass`, you must use `MyclassClass` (not `Myclass`) with this method. For additional information about imported classes and coclass interfaces, see [Imported Type Conversion](http://msdn.microsoft.com/library/cb1ee67d-8ef0-4e40-b2a5-13714b9f33c3).  
+ The `t` parameter must be either a COM-imported type or a subtype of a COM-imported type. In addition, `t` must be a type whose metadata was imported by the [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool. This type must be a class and not an associated coclass interface, which carries the name of the COM class. For example, if Tlbimp.exe imports `Myclass` as a class called `MyclassClass` and as a coclass interface called `Myclass`, you must use `MyclassClass` (not `Myclass`) with this method. For additional information about imported classes and coclass interfaces, see [Imported Type Conversion](https://msdn.microsoft.com/library/cb1ee67d-8ef0-4e40-b2a5-13714b9f33c3).  
   
- If an object has already been obtained for the `pUnk` parameter, `t` is ignored and the existing object is returned. `pUnk` represents an [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) interface pointer; however, because all COM interfaces derive directly or indirectly from `IUnknown`, you can pass any COM interface to this method. The object returned by <xref:System.Runtime.InteropServices.Marshal.GetTypedObjectForIUnknown%2A> is a [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md) (RCW), which the common language runtime manages as it does any other managed object.  
+ If an object has already been obtained for the `pUnk` parameter, `t` is ignored and the existing object is returned. `pUnk` represents an [IUnknown](https://go.microsoft.com/fwlink/?LinkId=148003) interface pointer; however, because all COM interfaces derive directly or indirectly from `IUnknown`, you can pass any COM interface to this method. The object returned by <xref:System.Runtime.InteropServices.Marshal.GetTypedObjectForIUnknown%2A> is a [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md) (RCW), which the common language runtime manages as it does any other managed object.  
   
  ]]></format>
         </remarks>
@@ -4880,7 +4880,7 @@
       </Parameters>
       <Docs>
         <param name="piTypeInfo">The <see langword="ITypeInfo" /> interface to marshal.</param>
-        <summary>Converts an unmanaged [ITypeInfo](http://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object into a managed <see cref="T:System.Type" /> object.</summary>
+        <summary>Converts an unmanaged [ITypeInfo](https://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object into a managed <see cref="T:System.Type" /> object.</summary>
         <returns>A managed type that represents the unmanaged <see langword="ITypeInfo" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4952,7 +4952,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
+        <summary>Retrieves the name of the type represented by an [ITypeInfo](https://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetTypeInfoName">
@@ -4996,7 +4996,7 @@
       </Parameters>
       <Docs>
         <param name="typeInfo">An object that represents an <see langword="ITypeInfo" /> pointer.</param>
-        <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
+        <summary>Retrieves the name of the type represented by an [ITypeInfo](https://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
         <returns>The name of the type that the <paramref name="typeInfo" /> parameter points to.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5051,7 +5051,7 @@
       </Parameters>
       <Docs>
         <param name="pTI">An object that represents an <see langword="ITypeInfo" /> pointer.</param>
-        <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
+        <summary>Retrieves the name of the type represented by an [ITypeInfo](https://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
         <returns>The name of the type that the <paramref name="pTI" /> parameter points to.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5116,7 +5116,7 @@
 ## Remarks  
  <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuid%2A> extracts the LIBID directly from an existing type library. This action differs from that of the <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuidForAssembly%2A?displayProperty=nameWithType> method, which calculates what the LIBID should be based on the current assembly.  
   
- For more information about library identifiers, see [Exported Assembly Conversion](http://msdn.microsoft.com/library/3fffd8db-240f-4fde-a558-a5bcc01e1a86).  
+ For more information about library identifiers, see [Exported Assembly Conversion](https://msdn.microsoft.com/library/3fffd8db-240f-4fde-a558-a5bcc01e1a86).  
   
  ]]></format>
         </remarks>
@@ -5173,7 +5173,7 @@
 ## Remarks  
  <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuid%2A> extracts the LIBID directly from an existing type library. This action differs from that of the <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuidForAssembly%2A?displayProperty=nameWithType> method, which calculates what the LIBID should be based on the current assembly.  
   
- For more information about library identifiers, see [Exported Assembly Conversion](http://msdn.microsoft.com/library/3fffd8db-240f-4fde-a558-a5bcc01e1a86).  
+ For more information about library identifiers, see [Exported Assembly Conversion](https://msdn.microsoft.com/library/3fffd8db-240f-4fde-a558-a5bcc01e1a86).  
   
  ]]></format>
         </remarks>
@@ -5224,7 +5224,7 @@
 ## Remarks  
  When assemblies are exported to type libraries, the type library is assigned a LIBID. You can set the LIBID explicitly by applying the <xref:System.Runtime.InteropServices.GuidAttribute?displayProperty=nameWithType> at the assembly level, or it can be generated automatically. The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool calculates a LIBID value based on the identity of the assembly. <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuid%2A> returns the LIBID that is associated with the <xref:System.Runtime.InteropServices.GuidAttribute>, if the attribute is applied. Otherwise, <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuidForAssembly%2A> returns the calculated value. Alternatively, you can use the <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuid%2A> method to extract the actual LIBID from an existing type library.  
   
- See the [Exported Assembly Conversion](http://msdn.microsoft.com/library/3fffd8db-240f-4fde-a558-a5bcc01e1a86) topic for more information about library identifiers.  
+ See the [Exported Assembly Conversion](https://msdn.microsoft.com/library/3fffd8db-240f-4fde-a558-a5bcc01e1a86) topic for more information about library identifiers.  
   
  ]]></format>
         </remarks>
@@ -5543,7 +5543,7 @@
       </Parameters>
       <Docs>
         <param name="unknown">A managed pointer to an <see langword="IUnknown" /> interface.</param>
-        <summary>Creates a unique [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md) (RCW) object for a given <see href="http://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface.</summary>
+        <summary>Creates a unique [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md) (RCW) object for a given <see href="https://go.microsoft.com/fwlink/?LinkId=148003">IUnknown</see> interface.</summary>
         <returns>A unique RCW for the specified <see langword="IUnknown" /> interface.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5830,7 +5830,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Runtime.InteropServices.Marshal.OffsetOf%2A> provides the offset in terms of the unmanaged structure layout, which does not necessarily correspond to the offset of the managed structure layout. Marshaling the structure can transform the layout and alter the offset. The `t` parameter can be a value type or a formatted reference type (with either a sequential or explicit layout). You can obtain the size of the entire layout by using the <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=nameWithType> method. For additional information, see [Default Marshaling for Value Types](http://msdn.microsoft.com/library/4d9a876c-e05a-40ba-bd85-bd22877f984a).  
+ <xref:System.Runtime.InteropServices.Marshal.OffsetOf%2A> provides the offset in terms of the unmanaged structure layout, which does not necessarily correspond to the offset of the managed structure layout. Marshaling the structure can transform the layout and alter the offset. The `t` parameter can be a value type or a formatted reference type (with either a sequential or explicit layout). You can obtain the size of the entire layout by using the <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=nameWithType> method. For additional information, see [Default Marshaling for Value Types](https://msdn.microsoft.com/library/4d9a876c-e05a-40ba-bd85-bd22877f984a).  
   
 > [!NOTE]
 >  Beginning with the .NET Framework version 2.0, <xref:System.Runtime.InteropServices.Marshal.OffsetOf%2A> may expose private fields.  
@@ -5888,7 +5888,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Runtime.InteropServices.Marshal.OffsetOf%60%601%28System.String%29> provides the offset in terms of the unmanaged structure layout, which does not necessarily correspond to the offset of the managed structure layout. Marshaling the structure can transform the layout and alter the offset. The `T` generic type parameter can be a value type or a formatted reference type (with either a sequential or explicit layout). You can obtain the size of the entire layout by using the <xref:System.Runtime.InteropServices.Marshal.SizeOf%60%601%28%60%600%29> method. For additional information, see [Default Marshaling for Value Types](http://msdn.microsoft.com/library/4d9a876c-e05a-40ba-bd85-bd22877f984a).  
+ <xref:System.Runtime.InteropServices.Marshal.OffsetOf%60%601%28System.String%29> provides the offset in terms of the unmanaged structure layout, which does not necessarily correspond to the offset of the managed structure layout. Marshaling the structure can transform the layout and alter the offset. The `T` generic type parameter can be a value type or a formatted reference type (with either a sequential or explicit layout). You can obtain the size of the entire layout by using the <xref:System.Runtime.InteropServices.Marshal.SizeOf%60%601%28%60%600%29> method. For additional information, see [Default Marshaling for Value Types](https://msdn.microsoft.com/library/4d9a876c-e05a-40ba-bd85-bd22877f984a).  
   
 > [!NOTE]
 >  Beginning with the .NET Framework version 2.0, <xref:System.Runtime.InteropServices.Marshal.OffsetOf%2A> may expose private fields.  
@@ -6907,7 +6907,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> method exposes the [IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkID=144867) method of a COM object, which attempts to obtain a specific interface pointer. Using `QueryInterface` on a COM object is the same as performing a cast operation in managed code. Calling an object with this method causes the reference count to increment on the interface pointer before the pointer is returned. Always use <xref:System.Runtime.InteropServices.Marshal.Release%2A?displayProperty=nameWithType> to decrement the reference count once you have finished with the pointer. To obtain an <xref:System.IntPtr> value that represents a [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) interface pointer, you can call <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%2A?displayProperty=nameWithType>, <xref:System.Runtime.InteropServices.Marshal.GetIUnknownForObject%2A?displayProperty=nameWithType>, or <xref:System.Runtime.InteropServices.Marshal.GetIDispatchForObject%2A?displayProperty=nameWithType>.  
+ The <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> method exposes the [IUnknown::QueryInterface](https://go.microsoft.com/fwlink/?LinkID=144867) method of a COM object, which attempts to obtain a specific interface pointer. Using `QueryInterface` on a COM object is the same as performing a cast operation in managed code. Calling an object with this method causes the reference count to increment on the interface pointer before the pointer is returned. Always use <xref:System.Runtime.InteropServices.Marshal.Release%2A?displayProperty=nameWithType> to decrement the reference count once you have finished with the pointer. To obtain an <xref:System.IntPtr> value that represents a [IUnknown](https://go.microsoft.com/fwlink/?LinkId=148003) interface pointer, you can call <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%2A?displayProperty=nameWithType>, <xref:System.Runtime.InteropServices.Marshal.GetIUnknownForObject%2A?displayProperty=nameWithType>, or <xref:System.Runtime.InteropServices.Marshal.GetIDispatchForObject%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -8185,7 +8185,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Runtime.InteropServices.Marshal.ReAllocCoTaskMem%2A> is one of two memory reallocation methods in the <xref:System.Runtime.InteropServices.Marshal> class. (<xref:System.Runtime.InteropServices.Marshal.ReAllocHGlobal%2A> is the other.) The beginning of the reallocated memory content is the same as the original content; however, the entire memory block can be in a different location. This method exposes the COM [CoTaskMemRealloc](http://go.microsoft.com/fwlink/?LinkId=148778) function, which is referred to as the COM task memory allocator.  
+ <xref:System.Runtime.InteropServices.Marshal.ReAllocCoTaskMem%2A> is one of two memory reallocation methods in the <xref:System.Runtime.InteropServices.Marshal> class. (<xref:System.Runtime.InteropServices.Marshal.ReAllocHGlobal%2A> is the other.) The beginning of the reallocated memory content is the same as the original content; however, the entire memory block can be in a different location. This method exposes the COM [CoTaskMemRealloc](https://go.microsoft.com/fwlink/?LinkId=148778) function, which is referred to as the COM task memory allocator.  
   
  ]]></format>
         </remarks>
@@ -8247,7 +8247,7 @@
 ## Remarks  
  <xref:System.Runtime.InteropServices.Marshal.ReAllocHGlobal%2A> is one of two memory reallocation API methods in the <xref:System.Runtime.InteropServices.Marshal> class. (<xref:System.Runtime.InteropServices.Marshal.ReAllocCoTaskMem%2A?displayProperty=nameWithType> is the other.)  
   
- This method exposes the Win32 [GlobalReAlloc](http://go.microsoft.com/fwlink/?LinkId=148780) function from Kernel32.dll. The returned pointer can differ from the original. If it is different, the contents of the original memory block have been copied to the new block, and the original memory block has been freed.  
+ This method exposes the Win32 [GlobalReAlloc](https://go.microsoft.com/fwlink/?LinkId=148780) function from Kernel32.dll. The returned pointer can differ from the original. If it is different, the contents of the original memory block have been copied to the new block, and the original memory block has been freed.  
   
  ]]></format>
         </remarks>
@@ -8255,7 +8255,7 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="M:System.Runtime.InteropServices.Marshal.ReAllocCoTaskMem(System.IntPtr,System.Int32)" />
         <altmember cref="M:System.Runtime.InteropServices.Marshal.FreeHGlobal(System.IntPtr)" />
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=148781">GlobalAlloc Function</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=148781">GlobalAlloc Function</related>
       </Docs>
     </Member>
     <Member MemberName="Release">
@@ -8311,7 +8311,7 @@
 ## Remarks  
  The common language runtime manages the reference count of a COM object for you, making it unnecessary to use this method directly. Use this value only for testing purposes. In rare cases, such as testing a custom marshaler, you might find it necessary to manipulate an object's lifetime manually. Only programs that call <xref:System.Runtime.InteropServices.Marshal.AddRef%2A?displayProperty=nameWithType> should call <xref:System.Runtime.InteropServices.Marshal.Release%2A>. Calling <xref:System.Runtime.InteropServices.Marshal.Release%2A> after the reference count has reached zero causes undefined behavior.  
   
- You can call <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%2A?displayProperty=nameWithType>, <xref:System.Runtime.InteropServices.Marshal.GetIUnknownForObject%2A?displayProperty=nameWithType>, or <xref:System.Runtime.InteropServices.Marshal.GetIDispatchForObject%2A?displayProperty=nameWithType> to obtain an <xref:System.IntPtr> value that represents a [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) interface pointer to release. You can also use these methods and the <xref:System.Runtime.InteropServices.Marshal.Release%2A> method on managed objects to release the COM interfaces represented by the managed object's [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md).  
+ You can call <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%2A?displayProperty=nameWithType>, <xref:System.Runtime.InteropServices.Marshal.GetIUnknownForObject%2A?displayProperty=nameWithType>, or <xref:System.Runtime.InteropServices.Marshal.GetIDispatchForObject%2A?displayProperty=nameWithType> to obtain an <xref:System.IntPtr> value that represents a [IUnknown](https://go.microsoft.com/fwlink/?LinkId=148003) interface pointer to release. You can also use these methods and the <xref:System.Runtime.InteropServices.Marshal.Release%2A> method on managed objects to release the COM interfaces represented by the managed object's [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md).  
   
    
   
@@ -8391,7 +8391,7 @@
   
  A more serious error may occur if a call to the RCW is executing when the RCW is released. In this case, there is a good chance that the thread making the call will cause an access violation. However, process memory may become corrupted, and the process may continue to run until it fails for reasons that are very difficult to debug.  
   
- This risk is compounded when the COM component that is being used is a singleton, for the following reason: The CLR activates COM components by calling the COM [CoCreateInstance](http://go.microsoft.com/fwlink/?LinkID=142894) function, which returns the same interface pointer every time it is called for singleton COM components. Thus, separate and independent pieces of managed code in an application domain can be using the same RCW for a singleton COM component, and if either one calls the <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> method on the COM component, the other will be broken.  
+ This risk is compounded when the COM component that is being used is a singleton, for the following reason: The CLR activates COM components by calling the COM [CoCreateInstance](https://go.microsoft.com/fwlink/?LinkID=142894) function, which returns the same interface pointer every time it is called for singleton COM components. Thus, separate and independent pieces of managed code in an application domain can be using the same RCW for a singleton COM component, and if either one calls the <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> method on the COM component, the other will be broken.  
   
  Therefore, use the <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> only if it is absolutely required. If you want to call this method to ensure that a COM component is released at a determined time, consider using the <xref:System.Runtime.InteropServices.Marshal.FinalReleaseComObject%2A> method instead. <xref:System.Runtime.InteropServices.Marshal.FinalReleaseComObject%2A> will release the underlying COM component regardless of how many times it has re-entered the CLR. The internal reference count of the RCW is incremented by one every time the COM component re-enters the CLR. Therefore, you could call the <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> method in a loop until the value returned is zero. This achieves the same result as the <xref:System.Runtime.InteropServices.Marshal.FinalReleaseComObject%2A> method.  
   

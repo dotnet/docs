@@ -48,7 +48,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -91,7 +91,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="allowedMethods" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="AllowedMethods">
@@ -122,7 +122,7 @@
         <summary>Gets the collection of allowed HTTP verbs for the route.</summary>
         <value>A collection of allowed HTTP verbs for the route.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -163,7 +163,7 @@
         <returns>When ASP.NET routing is processing a request, <see langword="true" /> if the request was made by using an allowed HTTP verb; otherwise, <see langword="false" />. When ASP.NET routing is constructing a URL, <see langword="true" /> if the supplied values contain an HTTP verb that matches one of the allowed HTTP verbs; otherwise, <see langword="false" />. The default is <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">One or more of the following parameters is <see langword="null" />: <paramref name="httpContext" />, <paramref name="route" />, <paramref name="parameterName" />, or <paramref name="values" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.Routing.IRouteConstraint.Match">
@@ -216,7 +216,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or more of the following parameters is <see langword="null" />: <paramref name="httpContext" />, <paramref name="route" />, <paramref name="parameterName" />, or <paramref name="values" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
   </Members>

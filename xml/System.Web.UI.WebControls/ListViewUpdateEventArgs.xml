@@ -32,7 +32,7 @@
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewUpdateEventArgs.NewValues%2A> property to make sure that the user has supplied all values before the data source is updated.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemUpdating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdating/CS/ListViewItemUpdatingCS.aspx#1)]
  [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemUpdating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdating/VB/ListViewItemUpdatingVB.aspx#1)]  
@@ -41,7 +41,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.ListView" />
     <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdating" />
-    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,7 +86,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ListViewUpdateEventArgs.ItemIndex" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
@@ -125,7 +125,7 @@
         <altmember cref="P:System.Web.UI.WebControls.ListView.Items" />
         <altmember cref="T:System.Web.UI.WebControls.ListViewDataItem" />
         <altmember cref="T:System.Web.UI.WebControls.ListViewItem" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -166,7 +166,7 @@
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewUpdateEventArgs.Keys%2A> property to access the value of the key field for the record being updated.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.WebControls.ListViewUpdateEventArgs.Keys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewUpdateEventArgs.Keys/CS/ListViewUpdateEventArgsKeysCS.aspx#1)]
  [!code-aspx-vb[System.Web.UI.WebControls.ListViewUpdateEventArgs.Keys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewUpdateEventArgs.Keys/VB/ListViewUpdateEventArgsKeysVB.aspx#1)]  
@@ -179,7 +179,7 @@
         <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
         <altmember cref="P:System.Collections.DictionaryEntry.Key" />
         <altmember cref="P:System.Collections.DictionaryEntry.Value" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="NewValues">
@@ -229,7 +229,7 @@
         <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
         <altmember cref="P:System.Collections.DictionaryEntry.Key" />
         <altmember cref="P:System.Collections.DictionaryEntry.Value" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="OldValues">
@@ -272,7 +272,7 @@
         <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
         <altmember cref="P:System.Collections.DictionaryEntry.Key" />
         <altmember cref="P:System.Collections.DictionaryEntry.Value" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
   </Members>

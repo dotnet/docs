@@ -104,7 +104,7 @@
     <threadsafe>Public static (<see langword="Shared" /> in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
   
  A <see cref="T:System.Collections.Generic.Stack`1" /> can support multiple readers concurrently, as long as the collection is not modified.  Even so, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.</threadsafe>
-    <related type="Article" href="http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7">Iterators (C# and Visual Basic)</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7">Iterators (C# and Visual Basic)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

@@ -65,11 +65,11 @@
  It is important to remember that any programmatic addition or modification of table rows or cells will not persist across posts to the server. This is because table rows and cells are controls of their own, and not properties of the <xref:System.Web.UI.WebControls.Table> control. To persist any changes to the table, rows and cells must be reconstructed after each postback. In fact, if substantial modifications are expected, it is recommended that a <xref:System.Web.UI.WebControls.DataList>, <xref:System.Web.UI.WebControls.DataGrid>, or <xref:System.Web.UI.WebControls.GridView> control be used instead of the <xref:System.Web.UI.WebControls.Table> control. As a result, the <xref:System.Web.UI.WebControls.Table> class is primarily used by control developers.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
 <a name="accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -532,7 +532,7 @@
  The following code example demonstrates how to create a table at design time. The table contains two rows of two cells each.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic Table Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Table Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic Table Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Table Example/VB/sourcevb.aspx#1)]  
@@ -552,8 +552,8 @@
     <altmember cref="T:System.Web.UI.WebControls.TableRowCollection" />
     <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
     <altmember cref="T:System.Web.UI.WebControls.DataList" />
-    <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -580,7 +580,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -624,7 +624,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="BackImageUrl">
@@ -678,7 +678,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -717,12 +717,12 @@
   
  Additional accessibility support for the <xref:System.Web.UI.WebControls.Table> control is provided by the <xref:System.Web.UI.WebControls.Table.CaptionAlign%2A> property. Use the <xref:System.Web.UI.WebControls.Table.CaptionAlign%2A> property to specify the alignment of the HTML caption element in a <xref:System.Web.UI.WebControls.Table> control.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Table.CaptionAlign" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CaptionAlign">
@@ -772,7 +772,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.TableCaptionAlign" /> enumeration values.</exception>
         <altmember cref="P:System.Web.UI.WebControls.Table.Caption" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -816,7 +816,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Table.CellSpacing" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -859,7 +859,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Table.CellPadding" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -905,7 +905,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.TableRow" />
         <altmember cref="T:System.Web.UI.ControlCollection" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -947,7 +947,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GridLines">
@@ -997,7 +997,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.Table.GridLines%2A> property to specify the grid line style.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic Table.GridLines Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Table.GridLines Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic Table.GridLines Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Table.GridLines Example/VB/sourcevb.aspx#1)]  
@@ -1005,8 +1005,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.GridLines" />
-        <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Server Controls and Browser Capabilities</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Server Controls and Browser Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -1061,7 +1061,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -1097,7 +1097,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RenderBeginTag">
@@ -1137,7 +1137,7 @@
         <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
         <altmember cref="M:System.Web.UI.WebControls.Table.RenderContents(System.Web.UI.HtmlTextWriter)" />
         <altmember cref="P:System.Web.UI.WebControls.WebControl.TagKey" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -1184,7 +1184,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The table sections are not in order.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Rows">
@@ -1230,7 +1230,7 @@
  The following example demonstrates how use the <xref:System.Web.UI.WebControls.Table.Rows%2A> collection to construct a table programmatically. Creating a table dynamically consists of three steps. First, create <xref:System.Web.UI.WebControls.TableCell> objects to represent the cells in a row. Content for the cells is added by either setting the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property or by adding controls to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of the <xref:System.Web.UI.WebControls.TableCell>. Next, create a <xref:System.Web.UI.WebControls.TableRow> to represent a row in the table. Add the <xref:System.Web.UI.WebControls.TableCell> objects created earlier to the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> collection of the <xref:System.Web.UI.WebControls.TableRow>. Finally, add the <xref:System.Web.UI.WebControls.TableRow> to the <xref:System.Web.UI.WebControls.Table.Rows%2A> collection of the <xref:System.Web.UI.WebControls.Table> control. Repeat this process for each row in the table.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an. aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an. aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic Table Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Table Example/CS/source2cs.aspx#2)]
  [!code-aspx-vb[Classic Table Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Table Example/VB/source2vb.aspx#2)]  
@@ -1239,7 +1239,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.TableRow" />
         <altmember cref="T:System.Web.UI.WebControls.TableRowCollection" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -1272,7 +1272,7 @@
         <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
         <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
         <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -1317,7 +1317,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for raising the event for a <see cref="T:System.Web.UI.WebControls.Table" /> object, override the <see cref="M:System.Web.UI.WebControls.Table.RaisePostBackEvent(System.String)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.Table.RaisePostBackEvent(System.String)" /> method to raise the event when posted data has changed for the control.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a">Table, TableRow, and TableCell Web Server Control Overview</related>
       </Docs>
     </Member>
   </Members>

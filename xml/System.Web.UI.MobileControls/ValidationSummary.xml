@@ -57,7 +57,7 @@
  The following code example demonstrates how to create an instance of a <xref:System.Web.UI.MobileControls.ValidationSummary> class, and add it to a form in an ASP.NET mobile Web application during a page load. The user-defined `Page_Load` event handler determines if there is an error, and then either launches the form containing the <xref:System.Web.UI.MobileControls.ValidationSummary>, or the congratulatory thank you form.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[MobileValidationSummarySample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileValidationSummarySample/cs/Default.aspx#1)]
  [!code-aspx-vb[MobileValidationSummarySample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileValidationSummarySample/vb/Default.aspx#1)]  

@@ -74,7 +74,7 @@
   
  For more information about <xref:System.Windows.Interop.HwndSource> and other interoperation classes, see [WPF and Win32 Interoperation](~/docs/framework/wpf/advanced/wpf-and-win32-interoperation.md).  
   
- Notice how the constructors for <xref:System.Windows.Interop.HwndSource> take parameters that resemble the parameters for [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] functions such as [CreateWindowEx](http://go.microsoft.com/fwlink/?LinkID=98462).  
+ Notice how the constructors for <xref:System.Windows.Interop.HwndSource> take parameters that resemble the parameters for [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] functions such as [CreateWindowEx](https://go.microsoft.com/fwlink/?LinkID=98462).  
   
  Scale transformations should not be applied to the <xref:System.Windows.Interop.HwndSource.RootVisual%2A> of an <xref:System.Windows.Interop.HwndSource>. See Remarks for <xref:System.Windows.Interop.HwndSource.RootVisual%2A>.  
   
@@ -1228,8 +1228,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
-        <related type="Article" href="http://msdn.microsoft.com/library/0ffbde0d-701d-45a3-a6fa-dd71f4d9772e">WPF and Win32 Interoperation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/ee5258b7-6567-415a-9b1c-c0cbe46e79ef">Input Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0ffbde0d-701d-45a3-a6fa-dd71f4d9772e">WPF and Win32 Interoperation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ee5258b7-6567-415a-9b1c-c0cbe46e79ef">Input Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.OnMnemonic">

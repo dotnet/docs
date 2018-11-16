@@ -34,7 +34,7 @@
     <altmember cref="T:System.ComponentModel.TypeDescriptor" />
     <altmember cref="T:System.ComponentModel.TypeConverter" />
     <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada">Generalized Type Conversion</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada">Generalized Type Conversion</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,7 +68,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada">Generalized Type Conversion</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada">Generalized Type Conversion</related>
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -108,7 +108,7 @@
         <altmember cref="M:System.Web.UI.WebControls.StringArrayConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
         <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada">Generalized Type Conversion</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada">Generalized Type Conversion</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -152,7 +152,7 @@
         <altmember cref="M:System.Web.UI.WebControls.StringArrayConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
         <altmember cref="M:System.Web.UI.WebControls.StringArrayConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada">Generalized Type Conversion</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada">Generalized Type Conversion</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -198,7 +198,7 @@
           <paramref name="destinationType" /> is not of type <see cref="T:System.String" />.</exception>
         <altmember cref="M:System.Web.UI.WebControls.StringArrayConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada">Generalized Type Conversion</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada">Generalized Type Conversion</related>
       </Docs>
     </Member>
   </Members>

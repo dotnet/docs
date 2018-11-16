@@ -71,11 +71,11 @@
  If both the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> and <xref:System.Web.UI.WebControls.HyperLink.ImageUrl%2A> properties are set, the <xref:System.Web.UI.WebControls.HyperLink.ImageUrl%2A> property takes precedence. If the image is unavailable, the text in the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> property is displayed. In browsers that support ToolTip functionality, the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> property also becomes the ToolTip.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](https://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
 <a name="accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -135,7 +135,7 @@
     </remarks>
     <altmember cref="P:System.Web.UI.WebControls.HyperLink.Text" />
     <altmember cref="P:System.Web.UI.WebControls.HyperLink.ImageUrl" />
-    <related type="Article" href="http://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -170,7 +170,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -212,7 +212,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -260,7 +260,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Control.HasControls" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ImageHeight">
@@ -349,7 +349,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.HyperLink.Text" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ImageWidth">
@@ -461,7 +461,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -501,7 +501,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -593,9 +593,9 @@
  If this property is not set, the browser or window with focus refreshes when the <xref:System.Web.UI.WebControls.HyperLink> control is clicked.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.HyperLink.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.HyperLink.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.HyperLink> must be XHTML 1.1 compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
+>  The <xref:System.Web.UI.WebControls.HyperLink.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.HyperLink.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.HyperLink> must be XHTML 1.1 compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
 >   
->  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.HyperLink.Target%2A> property to target another window. For more information, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+>  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.HyperLink.Target%2A> property to target another window. For more information, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
    
   
@@ -608,7 +608,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.HyperLink.NavigateUrl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -654,9 +654,9 @@
  If both the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> and <xref:System.Web.UI.WebControls.HyperLink.ImageUrl%2A> properties are set, the <xref:System.Web.UI.WebControls.HyperLink.ImageUrl%2A> property takes precedence. If the image is unavailable, the text in the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> property is displayed. In browsers that support ToolTip functionality, the <xref:System.Web.UI.WebControls.HyperLink.Text%2A> property also becomes the ToolTip.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](https://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -669,7 +669,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.HyperLink.ImageUrl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d8dd0190-aaf8-4cd3-9df9-9da2c31a4d11">HyperLink Web Server Control Overview</related>
       </Docs>
     </Member>
   </Members>

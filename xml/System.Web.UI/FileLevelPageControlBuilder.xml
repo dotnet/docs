@@ -119,7 +119,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.FileLevelPageControlBuilder.AppendSubBuilder%2A> method overrides the <xref:System.Web.UI.ControlBuilder.AppendSubBuilder%2A?displayProperty=nameWithType> method to provide custom logic when master pages and content pages are being used. In a content page, anything that is not inside the <xref:System.Web.UI.WebControls.Content> control (except script blocks for server code) raises an <xref:System.Web.HttpParseException> exception. Adding a <xref:System.Web.UI.ControlBuilder> object for a child control that is a <xref:System.Web.UI.WebControls.Content> control raises an <xref:System.Web.HttpException> exception. For more information about master and content pages, see [ASP.NET Master Pages](http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b).  
+ The <xref:System.Web.UI.FileLevelPageControlBuilder.AppendSubBuilder%2A> method overrides the <xref:System.Web.UI.ControlBuilder.AppendSubBuilder%2A?displayProperty=nameWithType> method to provide custom logic when master pages and content pages are being used. In a content page, anything that is not inside the <xref:System.Web.UI.WebControls.Content> control (except script blocks for server code) raises an <xref:System.Web.HttpParseException> exception. Adding a <xref:System.Web.UI.ControlBuilder> object for a child control that is a <xref:System.Web.UI.WebControls.Content> control raises an <xref:System.Web.HttpException> exception. For more information about master and content pages, see [ASP.NET Master Pages](https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b).  
   
  ]]></format>
         </remarks>
@@ -127,7 +127,7 @@
         <exception cref="T:System.Web.HttpParseException">The content page contained a literal other than a <see cref="T:System.Web.UI.WebControls.Content" /> control.</exception>
         <altmember cref="T:System.Web.UI.WebControls.Content" />
         <altmember cref="P:System.Web.UI.MasterPage.Master" />
-        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
   </Members>

@@ -217,7 +217,7 @@ private void _emulateAndVerify_Click(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <altmember cref="T:System.Speech.Recognition.DisplayAttributes" />
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=58363">International Phonetic Alphabet</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=58363">International Phonetic Alphabet</related>
       </Docs>
     </Member>
     <Member MemberName="Confidence">
@@ -500,7 +500,7 @@ internal static string stringFromWordArray(
 ## Remarks  
  The contents of <xref:System.Speech.Recognition.RecognizedWordUnit.Pronunciation%2A> indicate which pronunciation the speech recognition engine used to match speech input to one of its loaded <xref:System.Speech.Recognition.Grammar> objects. Pronunciations may be defined in the speech recognition engine's internal lexicon, in a lexicon document that is linked from a recognition grammar in a loaded <xref:System.Speech.Recognition.Grammar> object, or inline in a recognition grammar in a loaded <xref:System.Speech.Recognition.Grammar> object. A speech recognition engine may also create pronunciations for uncommon words whose pronunciations are not defined in a lexicon or grammar to which the speech recognition engine currently has access.  
   
- Many Windows-based Unicode fonts, such as Courier New, support the display of IPA strings. For more information, see [International Phonetic Alphabet](http://go.microsoft.com/fwlink/?LinkId=58363).  
+ Many Windows-based Unicode fonts, such as Courier New, support the display of IPA strings. For more information, see [International Phonetic Alphabet](https://go.microsoft.com/fwlink/?LinkId=58363).  
   
    
   
@@ -572,7 +572,7 @@ internal static string stringFromWordArray(
  ]]></format>
         </remarks>
         <altmember cref="T:System.Speech.Recognition.DisplayAttributes" />
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=58363">International Phonetic Alphabet</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=58363">International Phonetic Alphabet</related>
       </Docs>
     </Member>
     <Member MemberName="Text">

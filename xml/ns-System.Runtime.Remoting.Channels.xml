@@ -9,7 +9,7 @@
   
  Channels send each object along a chain of channel sink objects prior to sending or after receiving a message. This sink chain contains sinks required for basic channel functionality, such as transport or stack builder sinks, but you can customize the channel sink chain to perform special tasks with a message or a stream. Each sink in each chain receives the object, performs a specific operation, and passes it on to the next sink in the chain. There is no rule that the exact object received by a message sink must be passed on to the next sink, though this will often be the case.  
   
- For more information, see [Channels](http://msdn.microsoft.com/library/6e9b60e0-9bc0-47b4-a8ef-3b78585f9a18) and [Sinks and Sink Chains](http://msdn.microsoft.com/library/516aaab7-5b3d-4c72-83dd-d435c01af8f6).  
+ For more information, see [Channels](https://msdn.microsoft.com/library/6e9b60e0-9bc0-47b4-a8ef-3b78585f9a18) and [Sinks and Sink Chains](https://msdn.microsoft.com/library/516aaab7-5b3d-4c72-83dd-d435c01af8f6).  
   
  ]]></format>
     </remarks>

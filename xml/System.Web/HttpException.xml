@@ -34,7 +34,7 @@
  The following code example demonstrates how to use the <xref:System.Web.HttpException> class to raise customized exceptions. The `Button_Click` method determines which button was clicked, and then calls either the `CheckNumber` or `CheckBoolean` method. If the user-entered value in the text box does not correspond to the expected type, an <xref:System.Web.HttpException> exception is created and thrown with a customized message based on the error type.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[HttpException#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException/cs/httpexceptioncs.aspx#1)]
  [!code-aspx-vb[HttpException#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException/vb/httpexceptionvb.aspx#1)]  
@@ -42,7 +42,7 @@
  ]]></format>
     </remarks>
     <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -89,7 +89,7 @@
  The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. The `CheckNumber` method accepts a user-entered value through a text box and checks whether it is an integer. If the value is not an integer, an exception is thrown, and then a new <xref:System.Web.HttpException> object is created and thrown. That exception is caught in the `Button_Click` event handler and the error message is displayed on the browser.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[HttpException_Constructor1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor1/CS/httpexception_constructor1.cs.aspx#1)]
  [!code-aspx-vb[HttpException_Constructor1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor1/VB/httpexception_constructor1.vb.aspx#1)]  
@@ -97,7 +97,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Exception.InnerException" />
-        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -132,7 +132,7 @@
  The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. An <xref:System.Web.HttpException> is thrown if a user-entered value is 0.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[Classic HttpException.HttpException1 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpException.HttpException1 Example/CS/source.cs#1)]
  [!code-vb[Classic HttpException.HttpException1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpException.HttpException1 Example/VB/source.vb#1)]  
@@ -140,7 +140,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Exception.InnerException" />
-        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -249,7 +249,7 @@
  The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. The `CheckNumber` method accepts a user-entered value through a text box and checks whether it is an integer. If the value is not an integer, an exception is thrown, and then in the catch block, a new <xref:System.Web.HttpException> object is created and thrown. That exception is caught in the `Button_Click` event handler and the error message is displayed on the browser.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[HttpException_Constructor2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor2/CS/httpexception_constructor2.cs.aspx#1)]
  [!code-aspx-vb[HttpException_Constructor2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor2/VB/httpexception_constructor2.vb.aspx#1)]  
@@ -257,7 +257,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Exception.InnerException" />
-        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -289,7 +289,7 @@
  The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. An <xref:System.Web.HttpException> exception is thrown if a user-entered value is 0.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[Classic HttpException.HttpException2 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpException.HttpException2 Example/CS/source.cs#1)]
  [!code-vb[Classic HttpException.HttpException2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpException.HttpException2 Example/VB/source.vb#1)]  
@@ -297,7 +297,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Exception.InnerException" />
-        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -343,7 +343,7 @@
  The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. The `CheckNumber` method accepts a user-entered value and checks whether it is an integer. If the value is not an integer, an exception is thrown, and then a new <xref:System.Web.HttpException> object containing the HTTP response status code, the exception's message, and any inner exception is created. That exception is caught in the `Button_Click` event handler and the error message, error code, and inner exception are displayed.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[HttpException_Constructor3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor3/CS/httpexception_constructor3.cs.aspx#1)]
  [!code-aspx-vb[HttpException_Constructor3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor3/VB/httpexception_constructor3.vb.aspx#1)]  
@@ -351,7 +351,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Exception.InnerException" />
-        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -385,7 +385,7 @@
  The following code example demonstrates the <xref:System.Web.HttpException.%23ctor%2A> constructor of the <xref:System.Web.HttpException> class. The user name and email information are entered by the user in the provided text boxes. If any of the text boxes are left blank, an <xref:System.Web.HttpException> object is created and thrown. The error code of the <xref:System.Web.HttpException> is obtained by the <xref:System.Web.HttpException.GetHttpCode%2A> method and displayed on the Web page.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[HttpException_Constructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpException_Constructor/CS/httpexception_constructor5.cs.aspx#1)]
  [!code-aspx-vb[HttpException_Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpException_Constructor/VB/httpexception_constructor5.vb.aspx#1)]  
@@ -393,7 +393,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Exception.InnerException" />
-        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateFromLastError">
@@ -479,7 +479,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If there is a non-zero HTTP code, it is returned. Otherwise, the <xref:System.Exception.InnerException%2A> code is returned. If neither an <xref:System.Exception.InnerException%2A> code nor a non-zero HTTP code is available, the HTTP response status code 500 is returned. For more information on HTTP response status codes, see the Status Code Definitions of the Hypertext Transfer Protocol - HTTP/1.1 on the World [Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125).  
+ If there is a non-zero HTTP code, it is returned. Otherwise, the <xref:System.Exception.InnerException%2A> code is returned. If neither an <xref:System.Exception.InnerException%2A> code nor a non-zero HTTP code is available, the HTTP response status code 500 is returned. For more information on HTTP response status codes, see the Status Code Definitions of the Hypertext Transfer Protocol - HTTP/1.1 on the World [Wide Web Consortium (W3C) Web site](https://go.microsoft.com/fwlink/?linkid=37125).  
   
  ]]></format>
         </remarks>

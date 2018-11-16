@@ -22,7 +22,7 @@
  The additional context information refers to the parameters passed to the `ReceiveImportContextInformation` method. The parameters include the content of any extension files and a reference to an object that implements the <xref:System.IServiceProvider> interface. Any extension files passed to the method are specific to the importer and are used to store any additional information they need. That is, Visual Studio does not control the content of these files and does not use them directly.  
   
 > [!NOTE]
->  Importers refer to a WCF extensibility mechanism. This mechanism enables you to customize the way proxy code is generated from metadata (WSDL/XSD) documents that describe the service. For more information, see [Importing Custom Metadata for a WCF Extension](http://go.microsoft.com/fwlink/?LinkId=92310) on MSDN.  
+>  Importers refer to a WCF extensibility mechanism. This mechanism enables you to customize the way proxy code is generated from metadata (WSDL/XSD) documents that describe the service. For more information, see [Importing Custom Metadata for a WCF Extension](https://go.microsoft.com/fwlink/?LinkId=92310) on MSDN.  
   
  ]]></format>
     </remarks>

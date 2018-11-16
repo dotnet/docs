@@ -313,7 +313,7 @@
   
  <xref:System.ServiceModel.EndpointAddress> is a version-neutral class and the <xref:System.ServiceModel.EndpointAddress.AnonymousUri%2A> property returns a value is a neutral representation. When you write this out or convert this to one version or the other, then it turns into the right value for that version.  
   
- Due to the range of network technologies currently in widespread use (for example, NAT, DHCP, and firewalls), many deployments cannot assign a meaningful global URI to a given endpoint. To allow these *anonymous* endpoints to initiate message exchange patterns and receive replies, the Web Services Addressing specification defines a [URI](http://go.microsoft.com/fwlink/?LinkId=96169) for use by endpoints that cannot have a stable, resolvable URI.  
+ Due to the range of network technologies currently in widespread use (for example, NAT, DHCP, and firewalls), many deployments cannot assign a meaningful global URI to a given endpoint. To allow these *anonymous* endpoints to initiate message exchange patterns and receive replies, the Web Services Addressing specification defines a [URI](https://go.microsoft.com/fwlink/?LinkId=96169) for use by endpoints that cannot have a stable, resolvable URI.  
   
  Requests that use this address must provide some mechanism for delivering replies or faults (for example, returning the reply on the same transport connection). This mechanism can be a request/reply transport protocol (for example, HTTP GET or POST). This URI can be used as the destination for reply messages and should not be used as the destination in other circumstances.  
   
@@ -649,7 +649,7 @@
 ## Remarks  
  Use this method to check for the <xref:System.ServiceModel.EndpointAddress.AnonymousUri%2A> when manually copying the URI from an <xref:System.ServiceModel.EndpointAddress> to the URI of either a <xref:System.ServiceModel.EndpointAddress10> or a <xref:System.ServiceModel.EndpointAddressAugust2004>. This must be done because both <xref:System.ServiceModel.EndpointAddress10> and <xref:System.ServiceModel.EndpointAddressAugust2004> have special anonymous values. Users must use these values if the URI being copied is anonymous.  
   
- Due to the range of network technologies currently in widespread use (for example, NAT, DHCP, and firewalls), many deployments cannot assign a meaningful global URI to a given endpoint. To allow these *anonymous* endpoints to initiate message exchange patterns and receive replies, the Web Services Addressing specification defines a [URI](http://go.microsoft.com/fwlink/?LinkId=96169) for use by endpoints that cannot have a stable, resolvable URI.  
+ Due to the range of network technologies currently in widespread use (for example, NAT, DHCP, and firewalls), many deployments cannot assign a meaningful global URI to a given endpoint. To allow these *anonymous* endpoints to initiate message exchange patterns and receive replies, the Web Services Addressing specification defines a [URI](https://go.microsoft.com/fwlink/?LinkId=96169) for use by endpoints that cannot have a stable, resolvable URI.  
   
  Requests that use this address must provide some mechanism for delivering replies or faults (for example, returning the reply on the same transport connection). This mechanism can be a request/reply transport protocol (for example, HTTP GET or POST). This URI can be used as the destination for reply messages and should not be used as the destination in other circumstances.  
   

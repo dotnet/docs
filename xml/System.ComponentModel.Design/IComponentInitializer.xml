@@ -31,14 +31,14 @@
   
  This design provides two customization points: the toolbox item itself can be replaced or changed to perform custom actions, or the designer for a component can be changed to provide a custom action. A designer that implements <xref:System.ComponentModel.Design.IComponentInitializer> should not depend on either of its methods—<xref:System.ComponentModel.Design.IComponentInitializer.InitializeNewComponent%2A> or <xref:System.ComponentModel.Design.IComponentInitializer.InitializeExistingComponent%2A>—being called, because toolbox items are not obligated to call these methods.  
   
- For an overview of creating design components, see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+ For an overview of creating design components, see [Extending Design-Time Support](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.ComponentModel.Design.IDesigner" />
     <altmember cref="T:System.Drawing.Design.ToolboxItem" />
     <altmember cref="T:System.Collections.IDictionary" />
-    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
   </Docs>
   <Members>
     <Member MemberName="InitializeExistingComponent">

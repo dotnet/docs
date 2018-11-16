@@ -150,7 +150,7 @@
 ## Remarks  
  The valid range for this property is 0 to 1000. The default is zero. For a newly created application, the setting is derived from the algorithm currently used for determining the default number of listener threads: 16 times the number of CPUs in the server.  
   
- For more information, see `QcListenerMaxThreads` in [Applications (COM+)](http://msdn.microsoft.com/library/default.asp?url=/library/cossdk/html/c0c46592-5282-412d-8f54-67637be8218a.asp).  
+ For more information, see `QcListenerMaxThreads` in [Applications (COM+)](https://msdn.microsoft.com/library/default.asp?url=/library/cossdk/html/c0c46592-5282-412d-8f54-67637be8218a.asp).  
   
    
   

@@ -30,7 +30,7 @@
  The <xref:System.Configuration.RsaProtectedConfigurationProvider> object uses the cryptography functions provided by <xref:System.Security.Cryptography.RSA> class to encrypt and decrypt configuration sections.  
   
 > [!NOTE]
->  Before ASP.NET can decrypt encrypted information in your configuration file, the identity of your ASP.NET application must have read access to the encryption key used to encrypt and decrypt the configuration data. For more information, see [Walkthrough: Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/e1652f90-eac5-4f51-bff1-cf1acc2e1180).  
+>  Before ASP.NET can decrypt encrypted information in your configuration file, the identity of your ASP.NET application must have read access to the encryption key used to encrypt and decrypt the configuration data. For more information, see [Walkthrough: Encrypting Configuration Information Using Protected Configuration](https://msdn.microsoft.com/library/e1652f90-eac5-4f51-bff1-cf1acc2e1180).  
   
    
   
@@ -75,9 +75,9 @@
     <altmember cref="T:System.Configuration.DpapiProtectedConfigurationProvider" />
     <altmember cref="T:System.Security.Cryptography.RSA" />
     <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/e1652f90-eac5-4f51-bff1-cf1acc2e1180">Walkthrough: Encrypting Configuration Information using Protected Configuration</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/eaeb9720-c341-4184-8fd3-9573bcc1b237">Walkthrough: Creating and Exporting an RSA Key Container</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/3a62a79c-b70f-4a9d-8f33-817fb9d1623e">Specifying a Protected Configuration Provider</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/e1652f90-eac5-4f51-bff1-cf1acc2e1180">Walkthrough: Encrypting Configuration Information using Protected Configuration</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/eaeb9720-c341-4184-8fd3-9573bcc1b237">Walkthrough: Creating and Exporting an RSA Key Container</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/3a62a79c-b70f-4a9d-8f33-817fb9d1623e">Specifying a Protected Configuration Provider</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -142,7 +142,7 @@
           <see langword="true" /> to indicate that the key is exportable; otherwise, <see langword="false" />.</param>
         <summary>Adds a key to the RSA key container.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/eaeb9720-c341-4184-8fd3-9573bcc1b237">Walkthrough: Creating and Exporting an RSA Key Container</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eaeb9720-c341-4184-8fd3-9573bcc1b237">Walkthrough: Creating and Exporting an RSA Key Container</related>
       </Docs>
     </Member>
     <Member MemberName="CspProviderName">
@@ -235,7 +235,7 @@
       <Docs>
         <summary>Removes a key from the RSA key container.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/eaeb9720-c341-4184-8fd3-9573bcc1b237">Walkthrough: Creating and Exporting an RSA Key Container</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eaeb9720-c341-4184-8fd3-9573bcc1b237">Walkthrough: Creating and Exporting an RSA Key Container</related>
       </Docs>
     </Member>
     <Member MemberName="Encrypt">
@@ -325,7 +325,7 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/eaeb9720-c341-4184-8fd3-9573bcc1b237">Walkthrough: Creating and Exporting an RSA Key Container</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eaeb9720-c341-4184-8fd3-9573bcc1b237">Walkthrough: Creating and Exporting an RSA Key Container</related>
       </Docs>
     </Member>
     <Member MemberName="ImportKey">
@@ -383,7 +383,7 @@
         <exception cref="T:System.IO.FileNotFoundException">The file specified in <paramref name="path" /> was not found.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/eaeb9720-c341-4184-8fd3-9573bcc1b237">Walkthrough: Creating and Exporting an RSA Key Container</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eaeb9720-c341-4184-8fd3-9573bcc1b237">Walkthrough: Creating and Exporting an RSA Key Container</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -445,7 +445,7 @@
         <summary>Gets the name of the key container.</summary>
         <value>The name of the key container.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/eaeb9720-c341-4184-8fd3-9573bcc1b237">Walkthrough: Creating and Exporting an RSA Key Container</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eaeb9720-c341-4184-8fd3-9573bcc1b237">Walkthrough: Creating and Exporting an RSA Key Container</related>
       </Docs>
     </Member>
     <Member MemberName="RsaPublicKey">

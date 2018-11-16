@@ -44,7 +44,7 @@
  This example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls included support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]
  [!code-aspx-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  
@@ -60,9 +60,9 @@
     <altmember cref="P:System.Web.UI.WebControls.Style.BorderColor" />
     <altmember cref="P:System.Web.UI.WebControls.Style.Height" />
     <altmember cref="P:System.Web.UI.WebControls.Style.Width" />
-    <related type="Article" href="http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Web Server Controls and Browser Capabilities</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Web Server Controls and Browser Capabilities</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -102,7 +102,7 @@
  This example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls included support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]
  [!code-aspx-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  
@@ -293,7 +293,7 @@
  This example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls included support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]
  [!code-aspx-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  
@@ -363,7 +363,7 @@
  This example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls included support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]
  [!code-aspx-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  
@@ -443,7 +443,7 @@
  This example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls included support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]
  [!code-aspx-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  
@@ -507,7 +507,7 @@
  This example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls included support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]
  [!code-aspx-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  
@@ -703,7 +703,7 @@
  This example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls included support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]
  [!code-aspx-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  
@@ -764,7 +764,7 @@
  This example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties of multiple controls at once. Each time one of the <xref:System.Web.UI.WebControls.Style> property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Note that not all the controls included support all the properties demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]
  [!code-aspx-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  

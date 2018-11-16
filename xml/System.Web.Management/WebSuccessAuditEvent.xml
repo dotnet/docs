@@ -39,7 +39,7 @@
  When a <xref:System.Web.Management.WebSuccessAuditEvent> is raised, ASP.NET health monitoring increments the related Audit Success Events Raised performance counter and then checks the `healthMonitoring` configuration to determine whether any providers subscribe to the event. If providers subscribe to the event, ASP.NET dispatches the event to them for processing.  
   
 > [!NOTE]
->  To view the Audit Success Event Raised performance counter in System Monitor (PerfMon), in the **Add Counters** window select **ASP.NET** from the **Performance object** drop-down list, select the **Audit Success Event Raised** performance counter, and click the **Add** button. For more information, see [Monitoring ASP.NET Application Performance](http://msdn.microsoft.com/library/c96da1d1-6077-48d3-88e2-d9127ed91cf5).  
+>  To view the Audit Success Event Raised performance counter in System Monitor (PerfMon), in the **Add Counters** window select **ASP.NET** from the **Performance object** drop-down list, select the **Audit Success Event Raised** performance counter, and click the **Add** button. For more information, see [Monitoring ASP.NET Application Performance](https://msdn.microsoft.com/library/c96da1d1-6077-48d3-88e2-d9127ed91cf5).  
   
  Because success audits represent an expected condition, you may not want to subscribe to them. You can subscribe to them in order to provide access auditing for the site.  
   
@@ -88,7 +88,7 @@
     <altmember cref="T:System.Web.Management.WebAuditEvent" />
     <altmember cref="T:System.Web.Management.WebFailureAuditEvent" />
     <altmember cref="T:System.Web.Management.WebEventCodes" />
-    <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -225,7 +225,7 @@
 ## Remarks  
  The Audit Success Events Raised performance counter tracks the number of successful audit events raised since the application started. This method also calls the parent <xref:System.Web.Management.WebBaseEvent.IncrementPerfCounters%2A> method, which increments the Events Raised counter. This counter tracks the total number of events raised.  
   
- To view these performance counters in System Monitor (PerfMon), in the **Add Counters** window select **ASP.NET** from the **Performance object** drop-down list, select the performance counter you want to view, and click the **Add** button. For more information, see [Monitoring ASP.NET Application Performance](http://msdn.microsoft.com/library/c96da1d1-6077-48d3-88e2-d9127ed91cf5).  
+ To view these performance counters in System Monitor (PerfMon), in the **Add Counters** window select **ASP.NET** from the **Performance object** drop-down list, select the performance counter you want to view, and click the **Add** button. For more information, see [Monitoring ASP.NET Application Performance](https://msdn.microsoft.com/library/c96da1d1-6077-48d3-88e2-d9127ed91cf5).  
   
  ]]></format>
         </remarks>

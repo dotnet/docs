@@ -38,7 +38,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An application identity consists of the publisher's public key, the application name, the target processor architecture, the application culture, and the application version. The application identity properties values correspond to information contained in the application manifest. For more information about the application manifest, see [ClickOnce Application Manifest](http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243).  
+ An application identity consists of the publisher's public key, the application name, the target processor architecture, the application culture, and the application version. The application identity properties values correspond to information contained in the application manifest. For more information about the application manifest, see [ClickOnce Application Manifest](https://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243).  
   
  <xref:System.ApplicationId> is used by the <xref:System.Security.Policy.ApplicationSecurityInfo> class to identify a manifest-based application.  
   

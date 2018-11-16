@@ -24,7 +24,7 @@
 > [!NOTE]
 >  You must have unmanaged code permission to create an instance of the <xref:System.Diagnostics.XmlWriterTraceListener> class.  
   
- The <xref:System.Diagnostics.XmlWriterTraceListener> class converts tracing and debugging information into an XML-encoded text stream. The description of the XML output is shown in the tables that follow. You can use the [Service Trace Viewer Tool (SvcTraceViewer.exe)](http://go.microsoft.com/fwlink/p/?LinkId=240129) to display the XML output.  
+ The <xref:System.Diagnostics.XmlWriterTraceListener> class converts tracing and debugging information into an XML-encoded text stream. The description of the XML output is shown in the tables that follow. You can use the [Service Trace Viewer Tool (SvcTraceViewer.exe)](https://go.microsoft.com/fwlink/p/?LinkId=240129) to display the XML output.  
   
  You can enable or disable an <xref:System.Diagnostics.XmlWriterTraceListener> through the application configuration file and then use the configured <xref:System.Diagnostics.XmlWriterTraceListener> in your application. Alternately, you can create an <xref:System.Diagnostics.XmlWriterTraceListener> in your code.  
   

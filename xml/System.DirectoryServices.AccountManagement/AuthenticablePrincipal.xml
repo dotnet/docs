@@ -41,7 +41,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+ Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](https://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
   
  ]]></format>
         </remarks>
@@ -73,7 +73,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+ Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](https://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
   
  ]]></format>
         </remarks>
@@ -111,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+ Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](https://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
   
  ]]></format>
         </remarks>
@@ -214,13 +214,13 @@
         <ReturnType>System.DirectoryServices.AccountManagement.AdvancedFilters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns an <see cref="T:System.DirectoryServices.AccountManagement.AdvancedFilters" /> object for use with [Query By Example](http://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) to set read-only properties before passing the object to the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />.</summary>
+        <summary>Returns an <see cref="T:System.DirectoryServices.AccountManagement.AdvancedFilters" /> object for use with [Query By Example](https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) to set read-only properties before passing the object to the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />.</summary>
         <value>An object to use to set read-only properties before passing it to the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the [Query By Example](http://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) documentation for examples.  
+ See the [Query By Example](https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) documentation for examples.  
   
  ]]></format>
         </remarks>

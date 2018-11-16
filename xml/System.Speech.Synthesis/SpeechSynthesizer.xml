@@ -30,7 +30,7 @@
   
 -   To configure the output for the <xref:System.Speech.Synthesis.SpeechSynthesizer> object, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A> methods.  
   
--   To generate speech, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method. The <xref:System.Speech.Synthesis.SpeechSynthesizer> can produce speech from text, a <xref:System.Speech.Synthesis.Prompt> or <xref:System.Speech.Synthesis.PromptBuilder> object, or from [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763).  
+-   To generate speech, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method. The <xref:System.Speech.Synthesis.SpeechSynthesizer> can produce speech from text, a <xref:System.Speech.Synthesis.Prompt> or <xref:System.Speech.Synthesis.PromptBuilder> object, or from [Speech Synthesis Markup Language (SSML) Version 1.0](https://go.microsoft.com/fwlink/?LinkId=201763).  
   
 -   To pause and resume speech synthesis, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Pause%2A> and <xref:System.Speech.Synthesis.SpeechSynthesizer.Resume%2A> methods.  
   
@@ -153,7 +153,7 @@ namespace SampleSynthesis
   
  You can add multiple lexicons to a <xref:System.Speech.Synthesis.SpeechSynthesizer> object.Two values are currently supported for the `mediaType` parameter:  
   
--   The value `application/pls+xml` indicates that the lexicon conforms to the [Pronunciation Lexicon Specification (PLS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201766). This is the preferred format to use.  
+-   The value `application/pls+xml` indicates that the lexicon conforms to the [Pronunciation Lexicon Specification (PLS) Version 1.0](https://go.microsoft.com/fwlink/?LinkId=201766). This is the preferred format to use.  
   
 -   The value `application/vdn.ms-sapi-lex` indicates that the lexicon format is Uncompressed Lexicon, which is a Microsoft-proprietary format. This is a legacy format and we recommend that you use the PLS format described above.  
   
@@ -2178,7 +2178,7 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The contents of the `textToSpeak` parameter must include a `speak` element and must conform to the [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763). For more information, see [Speech Synthesis Markup Language Reference](http://msdn.microsoft.com/library/0c51279e-84d2-4f73-a924-8832039abf94).  
+ The contents of the `textToSpeak` parameter must include a `speak` element and must conform to the [Speech Synthesis Markup Language (SSML) Version 1.0](https://go.microsoft.com/fwlink/?LinkId=201763). For more information, see [Speech Synthesis Markup Language Reference](https://msdn.microsoft.com/library/0c51279e-84d2-4f73-a924-8832039abf94).  
   
  To asynchronously speak a string that contains SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method. You can use <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> to initiate the synchronous speaking of a string that does not contain SSML markup.  
   
@@ -2271,7 +2271,7 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The contents of the `textToSpeak` parameter must include a `speak` element and must conform to the [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763). For more information, see [Speech Synthesis Markup Language Reference](http://msdn.microsoft.com/library/0c51279e-84d2-4f73-a924-8832039abf94).  
+ The contents of the `textToSpeak` parameter must include a `speak` element and must conform to the [Speech Synthesis Markup Language (SSML) Version 1.0](https://go.microsoft.com/fwlink/?LinkId=201763). For more information, see [Speech Synthesis Markup Language Reference](https://msdn.microsoft.com/library/0c51279e-84d2-4f73-a924-8832039abf94).  
   
  To synchronously speak a string that contains SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> method. You can use <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> to initiate the asynchronous speaking of a string that does not contain SSML markup.  
   

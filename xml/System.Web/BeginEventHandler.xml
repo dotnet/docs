@@ -42,7 +42,7 @@
  The following code example uses the <xref:System.Web.BeginEventHandler> delegate to register a handler an asynchronous page.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/CS/pageaddonprerendercompleteasynccs.aspx#1)]
  [!code-aspx-vb[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/VB/pageaddonprerendercompleteasyncvb.aspx#1)]  

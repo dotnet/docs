@@ -18,14 +18,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Implements the <c>GenerateApplicationManifest</c> task. Use the <c>GenerateApplicationManifest</c> element in the project file to create and execute this task. For usage and parameter information, see [GenerateApplicationManifest Task](http://msdn.microsoft.com/library/a494102b-0cb2-4755-8e2a-d2c0f39fac1d).</summary>
+    <summary>Implements the <c>GenerateApplicationManifest</c> task. Use the <c>GenerateApplicationManifest</c> element in the project file to create and execute this task. For usage and parameter information, see [GenerateApplicationManifest Task](https://msdn.microsoft.com/library/a494102b-0cb2-4755-8e2a-d2c0f39fac1d).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  `EntryPoint` is an optional <xref:Microsoft.Build.Framework.ITaskItem>`[]` parameter that indicates the entry point for the generated manifest assembly. For a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment manifest, this input specifies the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application manifest.  
   
- In [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], the [GenerateApplicationManifest Task](http://msdn.microsoft.com/library/a494102b-0cb2-4755-8e2a-d2c0f39fac1d) requires an `EntryPoint` when an application manifest is generated. (Assembly or native manifests do not require an `EntryPoint`.) This requirement is enforced by the build error "MSB3185: EntryPoint not specified for manifest."  
+ In [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], the [GenerateApplicationManifest Task](https://msdn.microsoft.com/library/a494102b-0cb2-4755-8e2a-d2c0f39fac1d) requires an `EntryPoint` when an application manifest is generated. (Assembly or native manifests do not require an `EntryPoint`.) This requirement is enforced by the build error "MSB3185: EntryPoint not specified for manifest."  
   
  In [!INCLUDE[vs_orcas_long](~/includes/vs-orcas-long-md.md)], [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] does not issue this error when the `EntryPoint` task parameter is not specified. Instead, the \<customHostSpecified> tag is inserted as a child of the \<entryPoint> tag, for example, as follows.  
   
@@ -255,7 +255,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- File types can be custom. The following is an example of a [\<fileAssociation> Element (ClickOnce Application)](http://msdn.microsoft.com/library/8f951b4f-54f9-412e-a9e5-af4e379fcf08):  
+ File types can be custom. The following is an example of a [\<fileAssociation> Element (ClickOnce Application)](https://msdn.microsoft.com/library/8f951b4f-54f9-412e-a9e5-af4e379fcf08):  
   
 ```xml  
 <FileAssociation Include=".nyt">  
@@ -361,7 +361,7 @@
   
  When you deploy a WPF Web Browser Application, you must set the <xref:Microsoft.Build.Tasks.GenerateApplicationManifest.HostInBrowser%2A> property to `true`. This causes the `<hostInBrowser>` tag to be added to the generated application manifest, enabling ClickOnce to deploy projects for browser-hosted applications, which contain .xbap files.  
   
- You also have to make the application available online only by setting <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> to `false`. If this condition is not met, you will receive [MSBuild Error MSB3116](http://msdn.microsoft.com/library/bf04c587-d0e2-4d68-bbff-da9a985ea70e).  
+ You also have to make the application available online only by setting <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> to `false`. If this condition is not met, you will receive [MSBuild Error MSB3116](https://msdn.microsoft.com/library/bf04c587-d0e2-4d68-bbff-da9a985ea70e).  
   
  ]]></format>
         </remarks>

@@ -52,11 +52,11 @@
  The <xref:System.Web.UI.WebControls.ListBox> control also supports data binding. To bind the control to a data source, first create a data source, such as one of the <xref:System.Web.UI.DataSourceControl> objects, that contains the items to display in the control. Next, use the <xref:System.Web.UI.Control.DataBind%2A> method to bind the data source to the <xref:System.Web.UI.WebControls.ListBox> control. Use the <xref:System.Web.UI.WebControls.ListControl.DataTextField%2A> and <xref:System.Web.UI.WebControls.ListControl.DataValueField%2A> properties to specify which field in the data source to bind to the `Text` and `Value` properties, respectively, of each list item in the control. The <xref:System.Web.UI.WebControls.ListBox> control will now display the information from the data source.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
 <a name="accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -147,9 +147,9 @@
     <altmember cref="T:System.Web.UI.WebControls.ListControl" />
     <altmember cref="T:System.Web.UI.WebControls.ListItem" />
     <altmember cref="T:System.Web.UI.WebControls.ListItemCollection" />
-    <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -181,7 +181,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -221,7 +221,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -259,7 +259,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -297,7 +297,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="BorderWidth">
@@ -335,7 +335,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSelectedIndices">
@@ -366,7 +366,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -410,7 +410,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -449,7 +449,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.ListBox.OnPreRender(System.EventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ListBox.OnPreRender(System.EventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -486,7 +486,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -563,7 +563,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified number of rows is less than one or greater than 2000.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SelectionMode">
@@ -611,7 +611,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified selection mode is not one of the <see cref="T:System.Web.UI.WebControls.ListSelectionMode" /> values.</exception>
         <altmember cref="T:System.Web.UI.WebControls.ListSelectionMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -662,7 +662,7 @@
           <para>To define a custom implementation for processing posted data for a <see cref="T:System.Web.UI.WebControls.ListBox" /> object, override the <see cref="M:System.Web.UI.WebControls.ListBox.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.ListBox.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> method to process the posted data for the control.</para>
         </block>
         <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -706,7 +706,7 @@
           <para>To define a custom implementation for raising the event for a <see cref="T:System.Web.UI.WebControls.ListBox" /> object, override the <see cref="M:System.Web.UI.WebControls.ListBox.RaisePostDataChangedEvent" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.ListBox.RaisePostDataChangedEvent" /> method to raise the event when posted data has changed for the control.</para>
         </block>
         <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ToolTip">

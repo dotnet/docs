@@ -113,11 +113,11 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.MulticastDelegate" />
-    <related type="Article" href="http://msdn.microsoft.com/library/41972034-92ed-450a-9664-ab93fcc6f1fb">Calling Synchronous Methods Asynchronously</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/41972034-92ed-450a-9664-ab93fcc6f1fb">Calling Synchronous Methods Asynchronously</related>
     <related type="Article" href="~/docs/csharp/programming-guide/delegates/index.md">Delegates (C# Programming Guide)</related>
     <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/delegates/index.md">Delegates (Visual Basic)</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/1cdf3420-89c1-47c0-b796-aa984020e0f8">How to: Define and Use Delegates (C++/CLI)</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/1cdf3420-89c1-47c0-b796-aa984020e0f8">How to: Define and Use Delegates (C++/CLI)</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -243,7 +243,7 @@
   
  <paramref name="method" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="target" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+          <paramref name="target" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](https://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -632,7 +632,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](https://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -644,7 +644,7 @@
   
  -or-  
   
- <paramref name="method" /> is not a <see langword="RuntimeMethodInfo" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).</exception>
+ <paramref name="method" /> is not a <see langword="RuntimeMethodInfo" />. See [Runtime Types in Reflection](https://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).</exception>
         <exception cref="T:System.MissingMethodException">The <see langword="Invoke" /> method of <paramref name="type" /> is not found.</exception>
         <exception cref="T:System.MethodAccessException">The caller does not have the permissions necessary to access <paramref name="method" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
@@ -835,7 +835,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](https://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -843,7 +843,7 @@
   
  -or-  
   
- <paramref name="method" /> is not a <see langword="RuntimeMethodInfo" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).</exception>
+ <paramref name="method" /> is not a <see langword="RuntimeMethodInfo" />. See [Runtime Types in Reflection](https://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).</exception>
         <exception cref="T:System.MissingMethodException">The <see langword="Invoke" /> method of <paramref name="type" /> is not found.</exception>
         <exception cref="T:System.MethodAccessException">The caller does not have the permissions necessary to access <paramref name="method" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
@@ -920,7 +920,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](https://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -1065,7 +1065,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](https://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -1073,7 +1073,7 @@
   
  -or-  
   
- <paramref name="method" /> is not a <see langword="RuntimeMethodInfo" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).</exception>
+ <paramref name="method" /> is not a <see langword="RuntimeMethodInfo" />. See [Runtime Types in Reflection](https://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).</exception>
         <exception cref="T:System.MissingMethodException">The <see langword="Invoke" /> method of <paramref name="type" /> is not found.</exception>
         <exception cref="T:System.MethodAccessException">The caller does not have the permissions necessary to access <paramref name="method" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
@@ -1150,7 +1150,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](https://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -1365,7 +1365,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](https://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -1373,7 +1373,7 @@
   
  -or-  
   
- <paramref name="method" /> is not a <see langword="RuntimeMethodInfo" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).</exception>
+ <paramref name="method" /> is not a <see langword="RuntimeMethodInfo" />. See [Runtime Types in Reflection](https://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).</exception>
         <exception cref="T:System.MissingMethodException">The <see langword="Invoke" /> method of <paramref name="type" /> is not found.</exception>
         <exception cref="T:System.MethodAccessException">The caller does not have the permissions necessary to access <paramref name="method" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
@@ -1452,7 +1452,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](https://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -1538,7 +1538,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](https://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -1638,7 +1638,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](https://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -1730,7 +1730,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](https://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   

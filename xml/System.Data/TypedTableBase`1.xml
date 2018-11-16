@@ -37,8 +37,8 @@
     <typeparam name="T">The type of objects in the source sequence represented by the table, typically <see cref="T:System.Data.DataRow" />.</typeparam>
     <summary>This type is used as a base class for typed-<see cref="T:System.Data.DataTable" /> object generation by Visual Studio and the XSD.exe .NET Framework tool, and is not intended to be used directly from your code.</summary>
     <remarks>To be added.</remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/ad712fa1-2baf-462a-b163-574cce6d376a">Querying Typed DataSets</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/54333cbf-bb43-4314-a7d4-6dc1dd1c44b3">Generating Strongly Typed DataSets</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ad712fa1-2baf-462a-b163-574cce6d376a">Querying Typed DataSets</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/54333cbf-bb43-4314-a7d4-6dc1dd1c44b3">Generating Strongly Typed DataSets</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

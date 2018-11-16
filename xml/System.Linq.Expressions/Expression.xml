@@ -3935,7 +3935,7 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Linq.Expressions.Expression.Type" /> property of <paramref name="left" /> does not represent a reference type or a nullable value type.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="left" />.Type and <paramref name="right" />.Type are not convertible to each other.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/088b1f0d-c1af-4fe1-b4b8-196fd5ea9132">?? Operator (C# Reference)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/088b1f0d-c1af-4fe1-b4b8-196fd5ea9132">?? Operator (C# Reference)</related>
       </Docs>
     </Member>
     <Member MemberName="Coalesce">

@@ -23,7 +23,7 @@
  You can use the methods of this class to programmatically enable and disable a SQL Server database and its tables for <xref:System.Web.Caching.SqlCacheDependency> object change notifications. In addition, this class obtains information about which tables in a database are enabled for change notifications using the <xref:System.Web.Caching.SqlCacheDependencyAdmin.GetTablesEnabledForNotifications%2A> method. However, you can also use the Aspnet_regsql command-line tool to manage change notifications for a SQL Server database and its tables.  
   
 > [!NOTE]
->  To call any of the methods in this class, the account you use to access the SQL Server database must have permissions to create tables and stored procedures. To enable notifications on a specific table, you must have permissions to create a SQL Server trigger on that table. For more information on how to set permissions on a database, see the SQL Server documentation. For more information about the account used by the ASP.NET process, see [ASP.NET Impersonation](http://msdn.microsoft.com/library/a0cb3024-562f-4184-9d3c-095504787d3d).  
+>  To call any of the methods in this class, the account you use to access the SQL Server database must have permissions to create tables and stored procedures. To enable notifications on a specific table, you must have permissions to create a SQL Server trigger on that table. For more information on how to set permissions on a database, see the SQL Server documentation. For more information about the account used by the ASP.NET process, see [ASP.NET Impersonation](https://msdn.microsoft.com/library/a0cb3024-562f-4184-9d3c-095504787d3d).  
   
    
   
@@ -33,7 +33,7 @@
  The first sample is the .aspx file that defines the user interface.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Caching.SqlCacheDependencyAdmin#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Caching.SqlCacheDependencyAdmin/CS/cacheDependencyAdmincs.aspx#10)]
  [!code-aspx-vb[System.Web.Caching.SqlCacheDependencyAdmin#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Caching.SqlCacheDependencyAdmin/VB/cacheDependencyAdminvb.aspx#10)]

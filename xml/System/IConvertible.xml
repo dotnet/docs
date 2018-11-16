@@ -44,7 +44,7 @@
   
  The common language runtime typically exposes the <xref:System.IConvertible> interface through the <xref:System.Convert> class. The common language runtime also uses the <xref:System.IConvertible> interface internally, in explicit interface implementations, to simplify the code used to support conversions in the <xref:System.Convert> class and basic common language runtime types.  
   
- In addition to the <xref:System.IConvertible> interface, the .NET Framework provides classes called type converters for converting user-defined data types to other data types. For more information, see the [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada) topic.  
+ In addition to the <xref:System.IConvertible> interface, the .NET Framework provides classes called type converters for converting user-defined data types to other data types. For more information, see the [Generalized Type Conversion](https://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada) topic.  
   
    
   

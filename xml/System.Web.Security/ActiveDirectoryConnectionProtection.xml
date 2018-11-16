@@ -19,7 +19,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.ActiveDirectoryConnectionProtection> enumeration is used in an application's configuration file to set the protocol used to secure communications between an <xref:System.Web.Security.ActiveDirectoryMembershipProvider> object and an Active Directory or Active Directory Application Mode server. The enumeration indicates the type of connection security the provider established based on the `connectionProtection` attribute of the [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element. The `connectionProtection` attribute can be set only to either "None" or "Secure".  
+ The <xref:System.Web.Security.ActiveDirectoryConnectionProtection> enumeration is used in an application's configuration file to set the protocol used to secure communications between an <xref:System.Web.Security.ActiveDirectoryMembershipProvider> object and an Active Directory or Active Directory Application Mode server. The enumeration indicates the type of connection security the provider established based on the `connectionProtection` attribute of the [membership Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element. The `connectionProtection` attribute can be set only to either "None" or "Secure".  
   
  ]]></format>
     </remarks>

@@ -41,7 +41,7 @@
    
   
 ## Examples  
- The following example shows how to place an operation onto a <xref:System.Windows.Threading.Dispatcher>.  For the full source code of this example, see [Single-Threaded Application with Long-Running Calculation Sample](http://go.microsoft.com/fwlink/?LinkID=160038).  
+ The following example shows how to place an operation onto a <xref:System.Windows.Threading.Dispatcher>.  For the full source code of this example, see [Single-Threaded Application with Long-Running Calculation Sample](https://go.microsoft.com/fwlink/?LinkID=160038).  
   
  First, a delegate is created that accepts no arguments.  
   
@@ -55,7 +55,7 @@
   
  ]]></format>
     </remarks>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160038">Single-Threaded Application with Long-Running Calculation Sample</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160038">Single-Threaded Application with Long-Running Calculation Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="BeginInvoke">
@@ -219,7 +219,7 @@
    
   
 ## Examples  
- The following example shows how to place an operation onto a <xref:System.Windows.Threading.Dispatcher>.  For the full source code of this example, see [Single-Threaded Application with Long-Running Calculation Sample](http://go.microsoft.com/fwlink/?LinkID=160038).  
+ The following example shows how to place an operation onto a <xref:System.Windows.Threading.Dispatcher>.  For the full source code of this example, see [Single-Threaded Application with Long-Running Calculation Sample](https://go.microsoft.com/fwlink/?LinkID=160038).  
   
  First, a delegate is created that accepts no arguments.  
   
@@ -237,7 +237,7 @@
           <paramref name="method" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="priority" /> is not a valid <see cref="T:System.Windows.Threading.DispatcherPriority" />.</exception>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160038">Single-Threaded Application with Long-Running Calculation Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160038">Single-Threaded Application with Long-Running Calculation Sample</related>
       </Docs>
     </Member>
     <Member MemberName="BeginInvoke">
@@ -390,7 +390,7 @@
           <paramref name="method" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="priority" /> is not a valid <see cref="T:System.Windows.Threading.DispatcherPriority" />.</exception>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160038">Single-Threaded Application with Long-Running Calculation Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160038">Single-Threaded Application with Long-Running Calculation Sample</related>
       </Docs>
     </Member>
     <Member MemberName="BeginInvoke">
@@ -471,7 +471,7 @@
           <paramref name="method" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <see cref="T:System.Windows.Threading.DispatcherPriority" /> is not a valid priority.</exception>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160038">Single-Threaded Application with Long-Running Calculation Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160038">Single-Threaded Application with Long-Running Calculation Sample</related>
       </Docs>
     </Member>
     <Member MemberName="BeginInvokeShutdown">

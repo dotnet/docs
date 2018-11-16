@@ -37,7 +37,7 @@
  The following example is an ASP.NET Web Form, which calls an XML Web service named `Math`. Within the `EnterBtn_Click` function, the Web Form sets proxy information and client credentials on the proxy class prior to calling the remote XML Web service method.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[Classic WebClientProtocol Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebClientProtocol Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic WebClientProtocol Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebClientProtocol Example/VB/sourcevb.aspx#1)]  
@@ -47,7 +47,7 @@
     <threadsafe>The properties on this class are copied into a new instance of a <see cref="T:System.Net.WebRequest" /> object for each XML Web service method call. While you can call XML Web service methods on the same <see cref="T:System.Web.Services.Protocols.WebClientProtocol" /> instance from different threads at the same time, there is no synchronization done to ensure that a consistent snapshot of the properties will get transferred to the <see cref="T:System.Net.WebRequest" /> object. Therefore if you need to modify the properties and make concurrent method calls from different threads you should use a different instance of the XML Web service proxy or provide your own synchronization.</threadsafe>
     <altmember cref="T:System.Web.Services.Protocols.SoapHttpClientProtocol" />
     <altmember cref="T:System.Net.HttpWebRequest" />
-    <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -220,7 +220,7 @@
         </remarks>
         <altmember cref="T:System.Net.ICredentials" />
         <altmember cref="T:System.Net.NetworkCredential" />
-        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetFromCache">
@@ -457,7 +457,7 @@
  The following example is an ASP.NET Web Form, which calls an XML Web service named `Math`. Within the `EnterBtn_Click` function, the Web Form explicitly sets RequestEncoding to UTF-8.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[Classic WebClientProtocol.RequestEncoding Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebClientProtocol.RequestEncoding Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic WebClientProtocol.RequestEncoding Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebClientProtocol.RequestEncoding Example/VB/sourcevb.aspx#1)]  

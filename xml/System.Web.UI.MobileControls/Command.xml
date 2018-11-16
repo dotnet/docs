@@ -77,7 +77,7 @@
  The following code example demonstrates how to attach command events. Clicking either of the <xref:System.Web.UI.MobileControls.Command> buttons raises the <xref:System.Web.UI.MobileControls.Command.OnItemCommand%2A> event. The user-defined function uses the `CommandEventArgs` argument to see which <xref:System.Web.UI.MobileControls.Command> button was clicked.  
   
 > [!NOTE]
->  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MobileCommandExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileCommandExample/CS/default.aspx#1)]
  [!code-aspx-vb[MobileCommandExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileCommandExample/VB/default.aspx#1)]  
@@ -181,7 +181,7 @@
  The following code example demonstrates how to attach command events. Clicking either of the <xref:System.Web.UI.MobileControls.Command> buttons raises the <xref:System.Web.UI.MobileControls.Command.OnItemCommand%2A> event. The user-defined function uses the `CommandEventArgs` argument to see which <xref:System.Web.UI.MobileControls.Command> button was clicked.  
   
 > [!NOTE]
->  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MobileCommandExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileCommandExample/CS/default.aspx#1)]
  [!code-aspx-vb[MobileCommandExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileCommandExample/VB/default.aspx#1)]  
@@ -226,7 +226,7 @@
  The following code example demonstrates how to the use the <xref:System.Web.UI.MobileControls.Command.CommandArgument%2A> property to display a value.  
   
 > [!NOTE]
->  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MobileItemCommandSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileItemCommandSample/cs/default.aspx#1)]
  [!code-aspx-vb[MobileItemCommandSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileItemCommandSample/vb/default.aspx#1)]  
@@ -317,7 +317,7 @@
  The following example demonstrates how to the use the <xref:System.Web.UI.MobileControls.Command.Format%2A> property to render the command as a link or a button.  
   
 > [!NOTE]
->  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MobileItemCommandSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileItemCommandSample/cs/default.aspx#1)]
  [!code-aspx-vb[MobileItemCommandSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileItemCommandSample/vb/default.aspx#1)]  

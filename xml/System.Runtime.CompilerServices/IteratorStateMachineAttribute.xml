@@ -45,7 +45,7 @@
   
  When a method (*MethodName*) in Visual Basic has the `Iterator` modifier, the compiler emits IL that includes a state machine structure. That structure contains the code in the method. That IL also contains a stub method (*MethodName*) that calls into the state machine. The compiler adds the `IteratorStateMachine` attribute to the stub method so that tools can identify the corresponding state machine. Details of the emitted IL might change in future releases of the compilers.  
   
- An iterator method performs a custom iteration over a collection by using the `Yield` (Visual Basic) statement to return each element one at a time. For more information, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
+ An iterator method performs a custom iteration over a collection by using the `Yield` (Visual Basic) statement to return each element one at a time. For more information, see [Iterators](https://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
   
 > [!NOTE]
 >  You can't use `IteratorStateMachineAttribute` to test whether a method is an iterator method in C#.  

@@ -37,19 +37,19 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.ApplicationServices.RoleService> object enables you to read a user's roles through a Windows Communication Foundation (WCF) service. To use the role service, you must enable the role service on a Web server and then connect a WCF-compatible client application to the Web service. For information about how to configure the role service, see [How to: Enable the WCF Role Service](http://msdn.microsoft.com/library/d021aa39-4cbf-4450-a3c1-d5573ca7ce8c).  
+ The <xref:System.Web.ApplicationServices.RoleService> object enables you to read a user's roles through a Windows Communication Foundation (WCF) service. To use the role service, you must enable the role service on a Web server and then connect a WCF-compatible client application to the Web service. For information about how to configure the role service, see [How to: Enable the WCF Role Service](https://msdn.microsoft.com/library/d021aa39-4cbf-4450-a3c1-d5573ca7ce8c).  
   
- The user must be authenticated to read the user's roles. The role service works with any kind of ASP.NET authentication. For information about how to log users in through a WCF service, see [Windows Communication Foundation Authentication Service Overview](http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b).  
+ The user must be authenticated to read the user's roles. The role service works with any kind of ASP.NET authentication. For information about how to log users in through a WCF service, see [Windows Communication Foundation Authentication Service Overview](https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b).  
   
  The <xref:System.Web.ApplicationServices.RoleService> class exposes two methods that should be accessed only through a WCF service: the <xref:System.Web.ApplicationServices.RoleService.GetRolesForCurrentUser%2A> method and the <xref:System.Web.ApplicationServices.RoleService.IsCurrentUserInRole%2A> method. The <xref:System.Web.ApplicationServices.RoleService.GetRolesForCurrentUser%2A> method returns all the roles for the logged-in user. The <xref:System.Web.ApplicationServices.RoleService.IsCurrentUserInRole%2A> method determines whether the user is in a specified role.  
   
  The <xref:System.Web.ApplicationServices.RoleService> object raises the <xref:System.Web.ApplicationServices.RoleService.SelectingProvider> event. You create an event handler for the <xref:System.Web.ApplicationServices.RoleService.SelectingProvider> event to select which role provider to use at run time.  
   
- For an example of how to use the WCF role service from a console application, see [Walkthrough: Using ASP.NET Application Services](http://msdn.microsoft.com/library/f3f394f0-20d6-4361-aa8f-4b21bf4933eb).  
+ For an example of how to use the WCF role service from a console application, see [Walkthrough: Using ASP.NET Application Services](https://msdn.microsoft.com/library/f3f394f0-20d6-4361-aa8f-4b21bf4933eb).  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/16d05285-2a63-4d46-a8c4-7c6672697912">Windows Communication Foundation Role Service Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/16d05285-2a63-4d46-a8c4-7c6672697912">Windows Communication Foundation Role Service Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -108,7 +108,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">Role management is not enabled.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/16d05285-2a63-4d46-a8c4-7c6672697912">Windows Communication Foundation Role Service Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/16d05285-2a63-4d46-a8c4-7c6672697912">Windows Communication Foundation Role Service Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsCurrentUserInRole">
@@ -154,7 +154,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="role" /> is <see langword="null" /> or the user is not logged in.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">Role management is not enabled.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/16d05285-2a63-4d46-a8c4-7c6672697912">Windows Communication Foundation Role Service Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/16d05285-2a63-4d46-a8c4-7c6672697912">Windows Communication Foundation Role Service Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SelectingProvider">

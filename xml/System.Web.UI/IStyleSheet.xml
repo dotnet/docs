@@ -24,7 +24,7 @@
  The <xref:System.Web.UI.HtmlControls.HtmlHead> class implements this interface for use by ASP.NET through the <xref:System.Web.UI.Page.Header%2A> property.  
   
 > [!NOTE]
->  Adding or modifying styles or style rules programmatically during asynchronous postbacks is not supported. When you add AJAX capabilities to an ASP.NET Web page, asynchronous postbacks update regions of the page without updating the whole page. For more information, see [Microsoft Ajax Overview](http://msdn.microsoft.com/library/be84d9b3-b7cd-47d7-8494-be4abfaad9cb).  
+>  Adding or modifying styles or style rules programmatically during asynchronous postbacks is not supported. When you add AJAX capabilities to an ASP.NET Web page, asynchronous postbacks update regions of the page without updating the whole page. For more information, see [Microsoft Ajax Overview](https://msdn.microsoft.com/library/be84d9b3-b7cd-47d7-8494-be4abfaad9cb).  
   
    
   
@@ -86,7 +86,7 @@
  If `urlResolver` is set to `null`, the URL of the current <xref:System.Web.UI.Page> instance is used.  
   
 > [!NOTE]
->  Adding or modifying styles or style rules programmatically during asynchronous postbacks is not supported. When you add AJAX capabilities to an ASP.NET Web page, asynchronous postbacks update regions of the page without updating the whole page. For more information, see [Microsoft Ajax Overview](http://msdn.microsoft.com/library/be84d9b3-b7cd-47d7-8494-be4abfaad9cb).  
+>  Adding or modifying styles or style rules programmatically during asynchronous postbacks is not supported. When you add AJAX capabilities to an ASP.NET Web page, asynchronous postbacks update regions of the page without updating the whole page. For more information, see [Microsoft Ajax Overview](https://msdn.microsoft.com/library/be84d9b3-b7cd-47d7-8494-be4abfaad9cb).  
   
    
   
@@ -134,7 +134,7 @@
  If a <xref:System.Web.UI.WebControls.Style> object is already registered, it is not added multiple times.  
   
 > [!NOTE]
->  Adding or modifying styles programmatically during asynchronous postbacks is not supported. When you add AJAX capabilities to an ASP.NET Web page, asynchronous postbacks update regions of the page without updating the whole page. For more information, see [Microsoft Ajax Overview](http://msdn.microsoft.com/library/be84d9b3-b7cd-47d7-8494-be4abfaad9cb).  
+>  Adding or modifying styles programmatically during asynchronous postbacks is not supported. When you add AJAX capabilities to an ASP.NET Web page, asynchronous postbacks update regions of the page without updating the whole page. For more information, see [Microsoft Ajax Overview](https://msdn.microsoft.com/library/be84d9b3-b7cd-47d7-8494-be4abfaad9cb).  
   
    
   

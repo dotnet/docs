@@ -27,7 +27,7 @@
 ## Remarks  
  The <xref:System.Globalization.CultureInfo> class holds culture-specific information, such as the associated language, sublanguage, country/region, calendar, and cultural conventions. This class also provides culture-specific instances of the <xref:System.Globalization.DateTimeFormatInfo>, <xref:System.Globalization.NumberFormatInfo>, <xref:System.Globalization.CompareInfo>, and <xref:System.Globalization.TextInfo> classes, which are required for culture-specific operations such as casing, formatting and parsing dates and numbers, and comparing strings.  
   
- By default, the .NET Framework supports <xref:System.Globalization.CultureInfo> objects that represent a predefined set of cultures. For a list of these cultures, see the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. The <xref:System.Globalization.CultureAndRegionInfoBuilder> class enables you to create a custom culture that is completely new or that overrides a predefined culture.  When a custom culture is installed and registered on a particular computer, it becomes indistinguishable from predefined <xref:System.Globalization.CultureInfo> objects, and can be instantiated and used just like those objects.  
+ By default, the .NET Framework supports <xref:System.Globalization.CultureInfo> objects that represent a predefined set of cultures. For a list of these cultures, see the [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. The <xref:System.Globalization.CultureAndRegionInfoBuilder> class enables you to create a custom culture that is completely new or that overrides a predefined culture.  When a custom culture is installed and registered on a particular computer, it becomes indistinguishable from predefined <xref:System.Globalization.CultureInfo> objects, and can be instantiated and used just like those objects.  
   
 > [!IMPORTANT]
 >  Note that the <xref:System.Globalization.CultureAndRegionInfoBuilder> class is found in an assembly named sysglobl.dll. Successfully compiling code that uses this type requires that you add a reference to sysglobl.dll.  
@@ -353,7 +353,7 @@
 </identity>  
 ```  
   
- For more information about the LDML standard, see  [Unicode Technical Standard #35, "Locale Data Markup Language (LDML)"](http://go.microsoft.com/fwlink/p/?LinkId=252840) on the Unicode Consortium website.  
+ For more information about the LDML standard, see  [Unicode Technical Standard #35, "Locale Data Markup Language (LDML)"](https://go.microsoft.com/fwlink/p/?LinkId=252840) on the Unicode Consortium website.  
   
    
   
@@ -688,7 +688,7 @@
   
  Note that two or more cultures can have the same IETF language tag.  
   
- For more information, see RFC 4646, "Tags for the Identification of Languages," at [Request For Comments](http://go.microsoft.com/fwlink/?linkid=45286).  
+ For more information, see RFC 4646, "Tags for the Identification of Languages," at [Request For Comments](https://go.microsoft.com/fwlink/?linkid=45286).  
   
  ]]></format>
         </remarks>
@@ -1105,7 +1105,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Globalization.CultureAndRegionInfoBuilder.Register%2A> method stores a custom culture as a file on the local computer, in the Globalization subdirectory of the directory returned by the Win32 [GetWindowsDirectory](http://go.microsoft.com/fwlink/?LinkId=191561) function. This process is called registering the custom culture. After the custom culture is registered, a new custom culture can be created by specifying the culture name in a <xref:System.Globalization.CultureInfo.%23ctor%2A> constructor or when calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=nameWithType> method.  
+ The <xref:System.Globalization.CultureAndRegionInfoBuilder.Register%2A> method stores a custom culture as a file on the local computer, in the Globalization subdirectory of the directory returned by the Win32 [GetWindowsDirectory](https://go.microsoft.com/fwlink/?LinkId=191561) function. This process is called registering the custom culture. After the custom culture is registered, a new custom culture can be created by specifying the culture name in a <xref:System.Globalization.CultureInfo.%23ctor%2A> constructor or when calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=nameWithType> method.  
   
  The custom culture can be removed by calling the <xref:System.Globalization.CultureAndRegionInfoBuilder.Unregister%2A> method.  
   
@@ -1161,7 +1161,7 @@
 ## Remarks  
  The <xref:System.Globalization.CultureAndRegionInfoBuilder.Save%2A> method writes the current <xref:System.Globalization.CultureAndRegionInfoBuilder> object to the file specified by the `filename` parameter in an XML format called Locale Data Markup Language (LDML) version 1.1. The <xref:System.Globalization.CultureAndRegionInfoBuilder.CreateFromLdml%2A> method performs the reverse operation of the <xref:System.Globalization.CultureAndRegionInfoBuilder.Save%2A> method.  
   
- For information about the format of an LDML file, see the <xref:System.Globalization.CultureAndRegionInfoBuilder.CreateFromLdml%2A> method. For information about the LDML standard, see [Unicode Technical Standard #35, "Locale Data Markup Language (LDML)"](http://go.microsoft.com/fwlink/p/?LinkId=252840) on the Unicode Consortium website.  
+ For information about the format of an LDML file, see the <xref:System.Globalization.CultureAndRegionInfoBuilder.CreateFromLdml%2A> method. For information about the LDML standard, see [Unicode Technical Standard #35, "Locale Data Markup Language (LDML)"](https://go.microsoft.com/fwlink/p/?LinkId=252840) on the Unicode Consortium website.  
   
    
   
@@ -1453,7 +1453,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Globalization.CultureAndRegionInfoBuilder.Unregister%2A> method does the reverse of the <xref:System.Globalization.CultureAndRegionInfoBuilder.Register%2A> method. The <xref:System.Globalization.CultureAndRegionInfoBuilder.Register%2A> method stores a custom culture as a file on the local computer, in the Globalization subdirectory of the directory returned by the Win32 API [GetWindowsDirectory](http://go.microsoft.com/fwlink/?LinkId=191561) function. The <xref:System.Globalization.CultureAndRegionInfoBuilder.Unregister%2A> method deletes the persisted custom culture file from the computer. After the file is deleted, existing instances of the custom culture in computer memory continue to work, but new instances of the custom culture cannot be created.  
+ The <xref:System.Globalization.CultureAndRegionInfoBuilder.Unregister%2A> method does the reverse of the <xref:System.Globalization.CultureAndRegionInfoBuilder.Register%2A> method. The <xref:System.Globalization.CultureAndRegionInfoBuilder.Register%2A> method stores a custom culture as a file on the local computer, in the Globalization subdirectory of the directory returned by the Win32 API [GetWindowsDirectory](https://go.microsoft.com/fwlink/?LinkId=191561) function. The <xref:System.Globalization.CultureAndRegionInfoBuilder.Unregister%2A> method deletes the persisted custom culture file from the computer. After the file is deleted, existing instances of the custom culture in computer memory continue to work, but new instances of the custom culture cannot be created.  
   
    
   

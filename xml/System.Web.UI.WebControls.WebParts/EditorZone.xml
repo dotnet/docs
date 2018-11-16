@@ -31,7 +31,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Within the Web Parts control set, a zone is a composite control that covers a defined region on a Web page and contains server controls. The primary functions of a zone are to lay out the controls it contains, and to provide a common user interface (UI) for those controls. For general information about zones and how they are used in Web Parts applications, see the reference documentation for the base <xref:System.Web.UI.WebControls.WebParts.WebZone> class, and [Web Parts Control Set Overview](http://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668).  
+ Within the Web Parts control set, a zone is a composite control that covers a defined region on a Web page and contains server controls. The primary functions of a zone are to lay out the controls it contains, and to provide a common user interface (UI) for those controls. For general information about zones and how they are used in Web Parts applications, see the reference documentation for the base <xref:System.Web.UI.WebControls.WebParts.WebZone> class, and [Web Parts Control Set Overview](https://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668).  
   
  The <xref:System.Web.UI.WebControls.WebParts.EditorZone> control is one of the fundamental controls in the Web Parts control set. A key feature of Web Parts is the ability of end users to modify (or personalize) Web pages according to their preferences, and save their personalized settings for future browser sessions. One aspect of modifying Web Parts pages includes editing; users can edit the appearance, layout, behavior, and other properties of the visible <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. Several controls in the Web Parts control set provide the editing features, including the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control.  
   
@@ -43,7 +43,7 @@
 >  The buttons in the <xref:System.Web.UI.WebControls.WebParts.EditorZone> UI require client-side scripting in order to work correctly. If scripting is disabled in the browser, the user will not be able to perform actions through the <xref:System.Web.UI.WebControls.WebParts.EditorZone> UI.  
   
 ## Accessibility  
- The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
    
   
@@ -58,7 +58,7 @@
   
 -   An explanation of how the example works.  
   
- The first part of this code example is the user control that enables users to change display modes on a Web page. For more details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. For more details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_EditorZone_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorZone_Overview/CS/displaymodecs.ascx#4)]
  [!code-aspx-vb[WebParts_EditorZone_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorZone_Overview/VB/displaymodevb.ascx#4)]  
@@ -76,9 +76,9 @@
       <para>If you want to create a custom <see cref="T:System.Web.UI.WebControls.WebParts.EditorZone" /> zone to gain greater control over the rendering of the editing UI, you can inherit directly from the <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> class, as long as you do not need to provide zone template support for page developers to add <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls to your zone declaratively. In such a case, you would add all <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls to a zone programmatically. If you want to provide zone template support, you should inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.EditorZone" /> class.</para>
     </block>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.EditorPart" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Web Parts Control Set Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Web Parts Control Set Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,7 +102,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorZone" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateEditorParts">
@@ -135,7 +135,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> control does not have an ID.</exception>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.IWebEditable.CreateEditorParts" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ZoneTemplate">
@@ -205,7 +205,7 @@
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZone.ZoneTemplate" />
         <altmember cref="T:System.Web.UI.ITemplate" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.InvalidateEditorParts" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

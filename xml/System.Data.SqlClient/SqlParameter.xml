@@ -76,8 +76,8 @@
     </remarks>
     <altmember cref="T:System.Data.SqlClient.SqlParameterCollection" />
     <altmember cref="T:System.Data.SqlClient.SqlCommand" />
-    <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters</related>
     <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
     <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
@@ -131,8 +131,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -187,8 +187,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="dbType" /> parameter is an invalid back-end data type.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -250,8 +250,8 @@ Parameter = new SqlParameter("@pname", (object)0);
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -308,8 +308,8 @@ Parameter = new SqlParameter("@pname", (object)0);
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="dbType" /> parameter is an invalid back-end data type.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -368,8 +368,8 @@ Parameter = new SqlParameter("@pname", (object)0);
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="dbType" /> parameter is an invalid back-end data type.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -443,8 +443,8 @@ Parameter = new SqlParameter("@pname", (object)0);
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="dbType" /> parameter is an invalid back-end data type.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -507,9 +507,9 @@ Parameter = new SqlParameter("@pname", (object)0);
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -619,9 +619,9 @@ Parameter = new SqlParameter("@pname", (object)0);
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -794,9 +794,9 @@ Parameter = new SqlParameter("@pname", (object)0);
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -851,9 +851,9 @@ static void CreateSqlParameterLocaleId(){
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -924,8 +924,8 @@ static void CreateSqlParameterLocaleId(){
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -988,8 +988,8 @@ static void CreateSqlParameterLocaleId(){
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -1060,8 +1060,8 @@ static void CreateSqlParameterLocaleId(){
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -1104,9 +1104,9 @@ static void CreateSqlParameterLocaleId(){
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -1149,9 +1149,9 @@ static void CreateSqlParameterLocaleId(){
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -1225,9 +1225,9 @@ static void CreateSqlParameterLocaleId(){
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -1306,9 +1306,9 @@ static void CreateSqlParameterLocaleId(){
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -1373,8 +1373,8 @@ static void CreateSqlParameterLocaleId(){
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -1433,8 +1433,8 @@ FieldName = @OriginalFieldName
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -1492,9 +1492,9 @@ FieldName = @OriginalFieldName
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -1559,9 +1559,9 @@ FieldName = @OriginalFieldName
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -1627,9 +1627,9 @@ FieldName = @OriginalFieldName
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -1707,9 +1707,9 @@ FieldName = @OriginalFieldName
         <summary>Gets a string that contains the <see cref="P:System.Data.SqlClient.SqlParameter.ParameterName" />.</summary>
         <returns>A string that contains the <see cref="P:System.Data.SqlClient.SqlParameter.ParameterName" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -1756,10 +1756,10 @@ FieldName = @OriginalFieldName
         <summary>Gets or sets the type name for a table-valued parameter.</summary>
         <value>The type name of the specified table-valued parameter.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/370c16d5-db7b-43e3-945b-ccaab35b739b">Table-Valued Parameters (Katmai)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/370c16d5-db7b-43e3-945b-ccaab35b739b">Table-Valued Parameters (Katmai)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -1803,11 +1803,11 @@ FieldName = @OriginalFieldName
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a sample demonstrating <xref:System.Data.SqlClient.SqlParameter.UdtTypeName%2A>, see [Retrieving UDT Data](http://msdn.microsoft.com/library/ms131080.aspx).  
+ For a sample demonstrating <xref:System.Data.SqlClient.SqlParameter.UdtTypeName%2A>, see [Retrieving UDT Data](https://msdn.microsoft.com/library/ms131080.aspx).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -1891,9 +1891,9 @@ FieldName = @OriginalFieldName
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">SQL Server Data Types and ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -1977,8 +1977,8 @@ FieldName = @OriginalFieldName
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -2021,8 +2021,8 @@ FieldName = @OriginalFieldName
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>

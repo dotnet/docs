@@ -69,7 +69,7 @@
    
   
 ## Examples  
- The following code examples demonstrate declarative use of several properties of the <xref:System.Web.UI.WebControls.WebParts.Part> class, by using two instances of a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control referenced in an ASP.NET Web page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The following code examples demonstrate declarative use of several properties of the <xref:System.Web.UI.WebControls.WebParts.Part> class, by using two instances of a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control referenced in an ASP.NET Web page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  The first part of the example contains the code for the custom control, named `TextDisplayWebPart`. Because the control derives from <xref:System.Web.UI.WebControls.WebParts.WebPart>, it also inherits the common properties that the <xref:System.Web.UI.WebControls.WebParts.Part> class provides, and illustrates the use of those properties in this code example.  
   
@@ -86,9 +86,9 @@
     <block subset="none" type="overrides">
       <para>Normally, you should not inherit directly from the <see cref="T:System.Web.UI.WebControls.WebParts.Part" /> class to develop custom Web Parts controls. To provide full Web Parts functionality, the Web Parts control set requires the classes derived from the <see cref="T:System.Web.UI.WebControls.WebParts.Part" /> class, namely <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" />, <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" />, and <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" />, so you should derive from them to develop custom controls. However, it is still important to understand the behavior of the base <see cref="T:System.Web.UI.WebControls.WebParts.Part" /> class, because it provides a common set of properties used by all other part classes.</para>
     </block>
-    <related type="Article" href="http://msdn.microsoft.com/library/13525a0a-22b8-4861-b24c-99df859e2cb5">Introduction to Web Parts</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Overview: The Web Parts Control Set</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/13525a0a-22b8-4861-b24c-99df859e2cb5">Introduction to Web Parts</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Overview: The Web Parts Control Set</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName="ChromeState">
@@ -137,7 +137,7 @@
         <block subset="none" type="overrides">
           <para>Derived classes such as <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> can override <see cref="P:System.Web.UI.WebControls.WebParts.Part.ChromeState" /> to enable user personalization of the control's border state.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ChromeType">
@@ -186,7 +186,7 @@
         <block subset="none" type="overrides">
           <para>Derived classes such as <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> can override <see cref="P:System.Web.UI.WebControls.WebParts.Part.ChromeType" /> to enable user personalization of the kind of border that frames a control.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -219,7 +219,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Control.Controls" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -278,7 +278,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.WebParts.Part.Description%2A> property is typically a string that is used in catalogs that provide lists of part controls, and as a ToolTip in the part control's title bar. The content of the <xref:System.Web.UI.WebControls.WebParts.Part.Description%2A> appears in a ToolTip when you position your mouse pointer over the title text in a part control's title bar. The ToolTip text is created from the value of the <xref:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle%2A> property, followed by a hyphen, followed by the <xref:System.Web.UI.WebControls.WebParts.Part.Description%2A> property value.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -297,7 +297,7 @@
         </block>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls">
@@ -323,7 +323,7 @@
         <summary>Allows the developer of a designer for a composite part control to recreate the control's child controls on the design surface.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -360,7 +360,7 @@
   
  If you do not supply a title for a control, the Web Parts control set automatically calculates a default string to use as a title. For more information, see <xref:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle%2A>. Also, it is possible to provide a standard subtitle that is appended to the title string. For details, see <xref:System.Web.UI.WebControls.WebParts.WebPart.Subtitle%2A>.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -377,7 +377,7 @@
         </block>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Subtitle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

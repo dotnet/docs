@@ -25,11 +25,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This module provides authorization services against file-system access-control lists (ACLs). When the `mode` attribute of the [authentication Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/27bc0ba9-f23a-45f3-ae42-dbe7916e3ee2) configuration element is set to `Windows` so that the <xref:System.Web.Security.WindowsAuthenticationModule> is being used for the application, the <xref:System.Web.Security.FileAuthorizationModule> module ensures that the requesting user is allowed read or write access to the resource, depending on the request verb, before executing the request. For more information, see the <xref:System.Web.Security.FileAuthorizationModule.CheckFileAccessForUser%2A> method.  
+ This module provides authorization services against file-system access-control lists (ACLs). When the `mode` attribute of the [authentication Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/27bc0ba9-f23a-45f3-ae42-dbe7916e3ee2) configuration element is set to `Windows` so that the <xref:System.Web.Security.WindowsAuthenticationModule> is being used for the application, the <xref:System.Web.Security.FileAuthorizationModule> module ensures that the requesting user is allowed read or write access to the resource, depending on the request verb, before executing the request. For more information, see the <xref:System.Web.Security.FileAuthorizationModule.CheckFileAccessForUser%2A> method.  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/ba7c17d4-f709-4501-8441-2340e2d6db05">ASP.NET Authorization</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ba7c17d4-f709-4501-8441-2340e2d6db05">ASP.NET Authorization</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,7 +63,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ba7c17d4-f709-4501-8441-2340e2d6db05">ASP.NET Authorization</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ba7c17d4-f709-4501-8441-2340e2d6db05">ASP.NET Authorization</related>
       </Docs>
     </Member>
     <Member MemberName="CheckFileAccessForUser">
@@ -152,7 +152,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ba7c17d4-f709-4501-8441-2340e2d6db05">ASP.NET Authorization</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ba7c17d4-f709-4501-8441-2340e2d6db05">ASP.NET Authorization</related>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -191,7 +191,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ba7c17d4-f709-4501-8441-2340e2d6db05">ASP.NET Authorization</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ba7c17d4-f709-4501-8441-2340e2d6db05">ASP.NET Authorization</related>
       </Docs>
     </Member>
   </Members>

@@ -109,9 +109,9 @@
 |<xref:System.Web.UI.WebControls.FormView.InsertItemTemplate%2A>|Defines the content for the data row when the <xref:System.Web.UI.WebControls.FormView> control is in insert mode. This template usually contains input controls and command buttons with which the user can add a new record.|  
 |<xref:System.Web.UI.WebControls.FormView.PagerTemplate%2A>|Defines the content for the pager row displayed when the paging feature is enabled (when the <xref:System.Web.UI.WebControls.FormView.AllowPaging%2A> property is set to `true`). This template usually contains controls with which the user can navigate to another record. **Note:**  The <xref:System.Web.UI.WebControls.FormView> control has a built-in pager row user interface (UI). You need to create a pager template only if you want to create your own custom pager row.|  
   
- To display the value of a field in an item template, use a data binding expression. For more information on data binding expressions, see [Data-Binding Expression Syntax](http://msdn.microsoft.com/library/676beb1d-ddfa-4153-bba8-3c86dcb7ceca).  
+ To display the value of a field in an item template, use a data binding expression. For more information on data binding expressions, see [Data-Binding Expression Syntax](https://msdn.microsoft.com/library/676beb1d-ddfa-4153-bba8-3c86dcb7ceca).  
   
- Input controls in the edit item template and insert item template can be bound to the fields of a data source by using a two-way binding expression. This allows the <xref:System.Web.UI.WebControls.FormView> control to automatically extract the values of the input control for an update or insert operation. Two-way binding expressions also allow input controls in an edit item template to automatically display the original field values. For more information on two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
+ Input controls in the edit item template and insert item template can be bound to the fields of a data source by using a two-way binding expression. This allows the <xref:System.Web.UI.WebControls.FormView> control to automatically extract the values of the input control for an update or insert operation. Two-way binding expressions also allow input controls in an edit item template to automatically display the original field values. For more information on two-way binding expressions, see [Binding to Databases](https://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
   
 <a name="binding_to_data"></a>   
 ## Binding to Data  
@@ -121,7 +121,7 @@
   
 -   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.FormView> control to the data source and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method. When using this method, the <xref:System.Web.UI.WebControls.FormView> control does not provide built-in inserting, updating, deleting, and paging functionality. You need to provide this functionality by using the appropriate event.  
   
- For more information on data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
+ For more information on data binding, see [ASP.NET Data Access Content Map](https://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
 > [!NOTE]
 >  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. Whenever possible, it is strongly recommended that values are HTML-encoded before they are displayed in this control. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Introduction to the Validation Controls](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/2e4hd649(v=vs.85)).  
@@ -186,7 +186,7 @@
   
 <a name="accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="applying_styles"></a>   
 ## Applying CSS Styles  
@@ -334,7 +334,7 @@
  The following example demonstrates how to use a <xref:System.Web.UI.WebControls.FormView> control to edit existing records.  
   
 > [!IMPORTANT]
->  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[FormView#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormView/CS/formvieweditcs.aspx#1)]
  [!code-aspx-vb[FormView#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormView/VB/formvieweditvb.aspx#1)]  
@@ -342,7 +342,7 @@
  The following example demonstrates how to use a <xref:System.Web.UI.WebControls.FormView> control to insert new records.  
   
 > [!IMPORTANT]
->  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[FormViewInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItemTemplate/CS/formviewinsertitemtemplatecs.aspx#1)]
  [!code-aspx-vb[FormViewInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItemTemplate/VB/formviewinsertitemtemplatevb.aspx#1)]  
@@ -664,7 +664,7 @@
   
  Additional accessibility support for the <xref:System.Web.UI.WebControls.FormView> control is provided by the <xref:System.Web.UI.WebControls.FormView.CaptionAlign%2A> property. Use the <xref:System.Web.UI.WebControls.FormView.CaptionAlign%2A> property to specify the alignment of the HTML caption element in a <xref:System.Web.UI.WebControls.FormView> control.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -1651,7 +1651,7 @@
   
  Use the <xref:System.Web.UI.WebControls.FormView.EditItemTemplate%2A> property to define your own user interface (UI) for the data row when the <xref:System.Web.UI.WebControls.FormView> control is in edit mode. The edit item template usually contains the input controls for the user to update the values of an existing record, as well as command buttons to update the record and to cancel the update operation.  
   
- To specify the custom template, first place `<EditItemTemplate>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.FormView> control. You can then list the contents of the template between the opening and closing `<EditItemTemplate>` tags. By using a two-way binding expression, you can associate a field with an input control. This allows the <xref:System.Web.UI.WebControls.FormView> control to automatically display the original field value in the associated input control in edit mode. When a record is updated, the <xref:System.Web.UI.WebControls.FormView> control automatically extracts the updated field value from the associated input control. For more information on two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742). To create command buttons that perform the built-in cancel and update operations, add a command button control to the template with its `CommandName` property set to one of the values listed in the following table.  
+ To specify the custom template, first place `<EditItemTemplate>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.FormView> control. You can then list the contents of the template between the opening and closing `<EditItemTemplate>` tags. By using a two-way binding expression, you can associate a field with an input control. This allows the <xref:System.Web.UI.WebControls.FormView> control to automatically display the original field value in the associated input control in edit mode. When a record is updated, the <xref:System.Web.UI.WebControls.FormView> control automatically extracts the updated field value from the associated input control. For more information on two-way binding expressions, see [Binding to Databases](https://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742). To create command buttons that perform the built-in cancel and update operations, add a command button control to the template with its `CommandName` property set to one of the values listed in the following table.  
   
 |Command button type|CommandName value|  
 |-------------------------|-----------------------|  
@@ -1921,7 +1921,7 @@
 > [!NOTE]
 >  If both the <xref:System.Web.UI.WebControls.FormView.EmptyDataText%2A> and <xref:System.Web.UI.WebControls.FormView.EmptyDataTemplate%2A> properties are set, the <xref:System.Web.UI.WebControls.FormView.EmptyDataTemplate%2A> property takes precedence.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -2285,7 +2285,7 @@
 > [!NOTE]
 >  If both the <xref:System.Web.UI.WebControls.FormView.FooterText%2A> and <xref:System.Web.UI.WebControls.FormView.FooterTemplate%2A> properties are set, the <xref:System.Web.UI.WebControls.FormView.FooterTemplate%2A> property takes precedence.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -2587,7 +2587,7 @@
 > [!NOTE]
 >  If both the <xref:System.Web.UI.WebControls.FormView.HeaderText%2A> and <xref:System.Web.UI.WebControls.FormView.HeaderTemplate%2A> properties are set, the <xref:System.Web.UI.WebControls.FormView.HeaderTemplate%2A> property takes precedence.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -2865,7 +2865,7 @@
   
  Use the <xref:System.Web.UI.WebControls.FormView.InsertItemTemplate%2A> property to define your own user interface (UI) for the data row when the <xref:System.Web.UI.WebControls.FormView> control is in insert mode. The insert item template usually contains the input controls for the user to enter the values for the new record, as well as command buttons to insert the record and to cancel the insert operation.  
   
- To specify the custom template, first place `<InsertItemTemplate>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.FormView> control. You can then list the contents of the template between the opening and closing `<InsertItemTemplate>` tags. By using a two-way binding expression, you can associate a field with an input control. When a record is inserted, the <xref:System.Web.UI.WebControls.FormView> control automatically extracts the field value from the associated input control. For more information on two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742). To create command buttons that perform the built-in cancel and insert operations, add a command button control to the template with its `CommandName` property set to one of the values listed in the following table.  
+ To specify the custom template, first place `<InsertItemTemplate>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.FormView> control. You can then list the contents of the template between the opening and closing `<InsertItemTemplate>` tags. By using a two-way binding expression, you can associate a field with an input control. When a record is inserted, the <xref:System.Web.UI.WebControls.FormView> control automatically extracts the field value from the associated input control. For more information on two-way binding expressions, see [Binding to Databases](https://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742). To create command buttons that perform the built-in cancel and insert operations, add a command button control to the template with its `CommandName` property set to one of the values listed in the following table.  
   
 |Command button type|CommandName value|  
 |-------------------------|-----------------------|  
@@ -3410,7 +3410,7 @@
   
  Use the <xref:System.Web.UI.WebControls.FormView.ItemTemplate%2A> property to define your own user interface (UI) for the data row when the <xref:System.Web.UI.WebControls.FormView> control is in read-only mode. The item template usually contains controls to display the field values of a record, as well as command buttons to edit, insert, and delete a record.  
   
- To specify the custom template, first place `<ItemTemplate>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.FormView> control. You can then list the contents of the template between the opening and closing `<ItemTemplate>` tags. To display the field values of the data source bound to the control, use a data-binding expression. For more information on data-binding expressions, see [Data-Binding Expression Syntax](http://msdn.microsoft.com/library/676beb1d-ddfa-4153-bba8-3c86dcb7ceca). To create command buttons that perform the built-in delete, edit, and new record operations, add a command button control to the template with its `CommandName` property set to one of the values listed in the following table.  
+ To specify the custom template, first place `<ItemTemplate>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.FormView> control. You can then list the contents of the template between the opening and closing `<ItemTemplate>` tags. To display the field values of the data source bound to the control, use a data-binding expression. For more information on data-binding expressions, see [Data-Binding Expression Syntax](https://msdn.microsoft.com/library/676beb1d-ddfa-4153-bba8-3c86dcb7ceca). To create command buttons that perform the built-in delete, edit, and new record operations, add a command button control to the template with its `CommandName` property set to one of the values listed in the following table.  
   
 |Command button type|CommandName value|  
 |-------------------------|-----------------------|  
@@ -4532,7 +4532,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.PageIndexChanging> event to cancel a paging operation.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[FormViewPageEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageEventArgs/CS/formviewmodeeventargscs.aspx#1)]
  [!code-aspx-vb[FormViewPageEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  

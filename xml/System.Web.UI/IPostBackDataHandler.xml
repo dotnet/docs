@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You must implement the <xref:System.Web.UI.IPostBackDataHandler> interface when creating a server control that needs to examine form data that is posted back to the server by the client. The contract that this interface defines allows a server control to determine whether its state should be altered as a result of the postback, and to raise the appropriate events. For more information, see [Server Event Handling in ASP.NET Web Forms Pages](http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9).  
+ You must implement the <xref:System.Web.UI.IPostBackDataHandler> interface when creating a server control that needs to examine form data that is posted back to the server by the client. The contract that this interface defines allows a server control to determine whether its state should be altered as a result of the postback, and to raise the appropriate events. For more information, see [Server Event Handling in ASP.NET Web Forms Pages](https://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9).  
   
    
   
@@ -30,7 +30,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
   </Docs>
   <Members>
     <Member MemberName="LoadPostData">
@@ -76,7 +76,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -115,7 +115,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
       </Docs>
     </Member>
   </Members>

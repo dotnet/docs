@@ -38,7 +38,7 @@
   
  If a user control contains an  directive or has a <xref:System.Web.UI.PartialCachingAttribute> applied, the ASP.NET parser generates an instance of the <xref:System.Web.UI.PartialCachingControl> class to wrap the user control.  
   
- For more information about ASP.NET caching, see [Caching](http://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce). For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
+ For more information about ASP.NET caching, see [Caching](https://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce). For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
    
   
@@ -69,8 +69,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.UserControl" />
-    <related type="Article" href="http://msdn.microsoft.com/library/5e601b3d-bb16-4dbe-9e35-7e92a34565ca">Web Forms User Controls</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/cdd8e523-7305-4685-a456-c5be1de1367e">Caching Portions of an ASP.NET Page</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/5e601b3d-bb16-4dbe-9e35-7e92a34565ca">Web Forms User Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/cdd8e523-7305-4685-a456-c5be1de1367e">Caching Portions of an ASP.NET Page</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

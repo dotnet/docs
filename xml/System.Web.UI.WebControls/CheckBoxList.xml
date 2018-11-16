@@ -65,11 +65,11 @@
  To determine the selected items in the <xref:System.Web.UI.WebControls.CheckBoxList> control, iterate through the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection and test the <xref:System.Web.UI.WebControls.ListItem.Selected%2A> property of each item in the collection.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
 <a name="Accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="DeclarativeSyntax"></a>   
 ## Declarative Syntax  
@@ -144,12 +144,12 @@
    
   
 ## Examples  
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=191890).  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](https://go.microsoft.com/fwlink/?LinkId=191890).  
   
  The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.CheckBoxList> control on a Web page.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[CheckBoxList#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxList/CS/checkboxlistcs.aspx#1)]
  [!code-aspx-vb[CheckBoxList#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxList/VB/checkboxlistvb.aspx#1)]  
@@ -158,10 +158,10 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.ListControl" />
     <altmember cref="T:System.Web.UI.WebControls.CheckBox" />
-    <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461">Introduction to Validating User Input in ASP.NET Web Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461">Introduction to Validating User Input in ASP.NET Web Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -192,14 +192,14 @@
  The following code example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.CheckBoxList> control.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[CheckBoxListCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListCtor/CS/checkboxlistctorcs.aspx#1)]
  [!code-aspx-vb[CheckBoxListCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListCtor/VB/checkboxlistctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -244,7 +244,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CheckBoxList.CellPadding%2A> property to specify that the cell padding for the <xref:System.Web.UI.WebControls.CheckBoxList> control is 5 pixels.  
   
 > [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  
@@ -255,7 +255,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.CellSpacing" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -298,7 +298,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CheckBoxList.CellSpacing%2A> property to specify that the cell spacing for the <xref:System.Web.UI.WebControls.CheckBoxList> control is 5 pixels.  
   
 > [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  
@@ -309,7 +309,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.CellPadding" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -351,7 +351,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="FindControl">
@@ -390,7 +390,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="GetItemStyle">
@@ -432,7 +432,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="HasFooter">
@@ -466,7 +466,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="HasHeader">
@@ -500,7 +500,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="HasSeparators">
@@ -534,7 +534,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -580,7 +580,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
         <altmember cref="M:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged(System.EventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -653,7 +653,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CheckBoxList.OnPreRender(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.CheckBoxList.OnPreRender(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -692,7 +692,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
         <altmember cref="M:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged(System.EventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -738,7 +738,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RenderItem">
@@ -783,7 +783,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RenderWhenDataEmpty">
@@ -856,7 +856,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CheckBoxList.RepeatColumns%2A> property to specify that two columns are displayed in the <xref:System.Web.UI.WebControls.CheckBoxList> control.  
   
 > [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  
@@ -869,7 +869,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The number of columns is set to a negative value.</exception>
         <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatDirection" />
         <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatLayout" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RepeatDirection">
@@ -931,7 +931,7 @@
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.CheckBoxList.RepeatDirection%2A> property to specify that the display direction is vertical.  
   
 > [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  
@@ -944,7 +944,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The specified display direction of the list is not one of the <see cref="T:System.Web.UI.WebControls.RepeatDirection" /> values.</exception>
         <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatColumns" />
         <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatLayout" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RepeatedItemCount">
@@ -979,7 +979,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RepeatLayout">
@@ -1027,7 +1027,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CheckBoxList.RepeatLayout%2A> property to change the HTML that the <xref:System.Web.UI.WebControls.CheckBoxList> control renders.  
   
 > [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[CheckBoxListRepeatLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListRepeatLayout/CS/checkboxlistrepeatlayoutcs.aspx#1)]
  [!code-aspx-vb[CheckBoxListRepeatLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListRepeatLayout/VB/checkboxlistrepeatlayoutvb.aspx#1)]  
@@ -1037,8 +1037,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The specified layout is not one of the <see cref="T:System.Web.UI.WebControls.RepeatLayout" /> values.</exception>
         <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatColumns" />
         <altmember cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatDirection" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13">Accessibility in Visual Studio 2010 and ASP.NET 4</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13">Accessibility in Visual Studio 2010 and ASP.NET 4</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -1089,7 +1089,7 @@
           <para>To define a custom implementation for processing posted data for a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="M:System.Web.UI.WebControls.CheckBoxList.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.CheckBoxList.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> method to process the posted data for the control.</para>
         </block>
         <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -1133,7 +1133,7 @@
           <para>To define a custom implementation for raising the event for a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="M:System.Web.UI.WebControls.CheckBoxList.RaisePostDataChangedEvent" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.CheckBoxList.RaisePostDataChangedEvent" /> method to raise the event when posted data has changed for the control.</para>
         </block>
         <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.GetItemStyle">
@@ -1193,7 +1193,7 @@
           <para>To define a custom implementation for retrieving the style of an item in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="M:System.Web.UI.WebControls.CheckBoxList.GetItemStyle(System.Web.UI.WebControls.ListItemType,System.Int32)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.CheckBoxList.GetItemStyle(System.Web.UI.WebControls.ListItemType,System.Int32)" /> method to retrieve the style of an item.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.HasFooter">
@@ -1238,7 +1238,7 @@
           <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.CheckBoxList.System#Web#UI#WebControls#IRepeatInfoUser#HasFooter" /> member in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasFooter" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasFooter" /> property.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.HasHeader">
@@ -1283,7 +1283,7 @@
           <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.CheckBoxList.System#Web#UI#WebControls#IRepeatInfoUser#HasHeader" /> member in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasHeader" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasHeader" /> property.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators">
@@ -1328,7 +1328,7 @@
           <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.CheckBoxList.System#Web#UI#WebControls#IRepeatInfoUser#HasSeparators" /> member in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasSeparators" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.CheckBoxList.HasSeparators" /> property.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.RenderItem">
@@ -1390,7 +1390,7 @@
           <para>To define a custom implementation for rendering items in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="M:System.Web.UI.WebControls.CheckBoxList.RenderItem(System.Web.UI.WebControls.ListItemType,System.Int32,System.Web.UI.WebControls.RepeatInfo,System.Web.UI.HtmlTextWriter)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.CheckBoxList.RenderItem(System.Web.UI.WebControls.ListItemType,System.Int32,System.Web.UI.WebControls.RepeatInfo,System.Web.UI.HtmlTextWriter)" /> method to render an item in the control.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount">
@@ -1434,7 +1434,7 @@
           <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.CheckBoxList.System#Web#UI#WebControls#IRepeatInfoUser#RepeatedItemCount" /> member in a <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> object, override the <see cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatedItemCount" /> member. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.CheckBoxList.RepeatedItemCount" /> property.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.IRepeatInfoUser" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="TextAlign">
@@ -1477,7 +1477,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CheckBoxList.TextAlign%2A> property to specify that the text associated with the check boxes appears on the right side of the <xref:System.Web.UI.WebControls.CheckBoxList> control.  
   
 > [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  
@@ -1489,7 +1489,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified label text alignment is not one of the <see cref="T:System.Web.UI.WebControls.TextAlign" /> values.</exception>
         <altmember cref="T:System.Web.UI.WebControls.TextAlign" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
   </Members>

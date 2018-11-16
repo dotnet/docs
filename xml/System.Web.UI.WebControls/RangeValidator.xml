@@ -55,12 +55,12 @@
 >  The <xref:System.Web.UI.WebControls.RangeValidator> control throws an exception if the value specified by the <xref:System.Web.UI.WebControls.RangeValidator.MaximumValue%2A> or <xref:System.Web.UI.WebControls.RangeValidator.MinimumValue%2A> property cannot be converted to the specified <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]
->  When you use the <xref:System.Web.UI.WebControls.RangeValidator> control inside an <xref:System.Web.UI.UpdatePanel> control, make sure that the validator control and the control it is associated with are in the same panel. For more information about using the <xref:System.Web.UI.UpdatePanel> control for partial-page updates, see [Partial-Page Rendering Overview](http://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
+>  When you use the <xref:System.Web.UI.WebControls.RangeValidator> control inside an <xref:System.Web.UI.UpdatePanel> control, make sure that the validator control and the control it is associated with are in the same panel. For more information about using the <xref:System.Web.UI.UpdatePanel> control for partial-page updates, see [Partial-Page Rendering Overview](https://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
   
  For additional information on validation controls, see <xref:System.Web.UI.WebControls.BaseValidator>.  
   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
    
   
@@ -68,7 +68,7 @@
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.RangeValidator> control on the Web page to determine whether the value entered into an input control is within the comparison range.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[RangeValidator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/RangeValidator/CS/rangevalidatorcs.aspx#1)]
  [!code-aspx-vb[RangeValidator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/RangeValidator/VB/rangevalidatorvb.aspx#1)]  
@@ -137,7 +137,7 @@
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.RangeValidator.AddAttributesToRender%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.RangeValidator> text always displays as bold.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CustomRangeValidatorAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRangeValidatorAddAttributesToRender/CS/custom_rangevalidator_addattributestorendercs.aspx#1)]
  [!code-aspx-vb[CustomRangeValidatorAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRangeValidatorAddAttributesToRender/VB/custom_rangevalidator_addattributestorendervb.aspx#1)]  
@@ -250,7 +250,7 @@
 > [!NOTE]
 >  If you specify `ValidationDataType.Date` for the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=nameWithType> property without programmatically setting the culture for the application, you should use a culture-neutral format, such as YYYY/MM/DD, for the <xref:System.Web.UI.WebControls.RangeValidator.MaximumValue%2A> and <xref:System.Web.UI.WebControls.RangeValidator.MinimumValue%2A> properties. Otherwise, the date may not be interpreted correctly.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -258,7 +258,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.RangeValidator.MaximumValue%2A> property to specify the maximum value of the validation range.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[RangeValidator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/RangeValidator/CS/rangevalidatorcs.aspx#1)]
  [!code-aspx-vb[RangeValidator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/RangeValidator/VB/rangevalidatorvb.aspx#1)]  
@@ -311,7 +311,7 @@
 > [!NOTE]
 >  If you specify `ValidationDataType.Date` for the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A?displayProperty=nameWithType> property without programmatically setting the culture for the application, you should use a culture-neutral format, such as YYYY/MM/DD, for the <xref:System.Web.UI.WebControls.RangeValidator.MaximumValue%2A> and <xref:System.Web.UI.WebControls.RangeValidator.MinimumValue%2A> properties. Otherwise, the date may not be interpreted correctly.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -319,7 +319,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.RangeValidator.MinimumValue%2A> property to specify the minimum value of the validation range.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[RangeValidator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/RangeValidator/CS/rangevalidatorcs.aspx#1)]
  [!code-aspx-vb[RangeValidator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/RangeValidator/VB/rangevalidatorvb.aspx#1)]  

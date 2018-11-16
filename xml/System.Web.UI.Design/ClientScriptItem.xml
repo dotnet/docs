@@ -28,7 +28,7 @@
   
  Use the <xref:System.Web.UI.Design.ClientScriptItem> class to manage scripts that are to be executed at design-time.  
   
- To manage client script elements at run time, use the <xref:System.Web.UI.ClientScriptManager> class. For more information about using client scripts at run time, see [Client Script in ASP.NET Web Pages](http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa).  
+ To manage client script elements at run time, use the <xref:System.Web.UI.ClientScriptManager> class. For more information about using client scripts at run time, see [Client Script in ASP.NET Web Pages](https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa).  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.ClientScriptItem> class represents `script` elements at design time that are ultimately parsed and run in the client browser. Because the `script` elements that are generated for the <xref:System.Web.UI.Design.ClientScriptItem> objects are not run on the server, the elements do not contain the `runat="server"` attribute.  
@@ -38,7 +38,7 @@
     <altmember cref="T:System.Web.UI.Design.ClientScriptItemCollection" />
     <altmember cref="M:System.Web.UI.Design.WebFormsRootDesigner.AddClientScriptToDocument(System.Web.UI.Design.ClientScriptItem)" />
     <altmember cref="M:System.Web.UI.Design.WebFormsRootDesigner.GetClientScriptsInDocument" />
-    <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -104,7 +104,7 @@
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Source" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Type" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Id" />
-        <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -135,7 +135,7 @@
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Language" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Source" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Type" />
-        <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Language">
@@ -176,7 +176,7 @@
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Source" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Type" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Id" />
-        <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -219,7 +219,7 @@
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Language" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Type" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Id" />
-        <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -262,7 +262,7 @@
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Source" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Type" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Id" />
-        <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -294,7 +294,7 @@
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Language" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Source" />
         <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Id" />
-        <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
       </Docs>
     </Member>
   </Members>

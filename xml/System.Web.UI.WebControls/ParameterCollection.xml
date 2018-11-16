@@ -41,7 +41,7 @@
  Depending on the implementation and the semantics of a particular data source control, the order in which the parameters are stored in the <xref:System.Web.UI.WebControls.ParameterCollection> collection might be important. For example, when using the <xref:System.Web.UI.WebControls.SqlDataSource> control as an ODBC data source, the order of the <xref:System.Web.UI.WebControls.Parameter> objects in the <xref:System.Web.UI.WebControls.ParameterCollection> collection must be the same as the order of the parameters in the parameterized SQL queries you use. However, when using the <xref:System.Web.UI.WebControls.SqlDataSource> control with Microsoft SQL Server, the order of the <xref:System.Web.UI.WebControls.Parameter> objects are not important.  
   
 > [!IMPORTANT]
->  When you use data source controls, values are inserted into command parameters without validation, which is a potential security threat. Use an event in the data source control to validate parameter values before the command is executed. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  When you use data source controls, values are inserted into command parameters without validation, which is a potential security threat. Use an event in the data source control to validate parameter values before the command is executed. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  The following table lists the different parameter classes and how they are used.  
   
@@ -61,7 +61,7 @@
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.AccessDataSource> control and a <xref:System.Web.UI.WebControls.FormParameter> to display information from a Microsoft Access database in a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.FormParameter> object is added to the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection using the <xref:System.Web.UI.WebControls.ParameterCollection.Add%2A> method.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.WebControls.FormParameter_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_2/CS/fp2cs.aspx#1)]
  [!code-aspx-vb[System.Web.UI.WebControls.FormParameter_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_2/VB/fp2vb.aspx#1)]  
@@ -140,7 +140,7 @@
  The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.AccessDataSource> control and a <xref:System.Web.UI.WebControls.FormParameter> object to display information from a Microsoft Access database in a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.FormParameter> object is added to the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection using the <xref:System.Web.UI.WebControls.ParameterCollection.Add%28System.Web.UI.WebControls.Parameter%29> method.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.WebControls.FormParameter_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_2/CS/fp2cs.aspx#1)]
  [!code-aspx-vb[System.Web.UI.WebControls.FormParameter_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.FormParameter_2/VB/fp2vb.aspx#1)]  
@@ -189,7 +189,7 @@
  The following code example demonstrates how the <xref:System.Web.UI.WebControls.ParameterCollection.Add%28System.String%2CSystem.String%29> method can be used to add new <xref:System.Web.UI.WebControls.Parameter> objects to a <xref:System.Web.UI.WebControls.ParameterCollection> collection by supplying the `name` and `value` parameters. In this example, a <xref:System.Web.UI.WebControls.Parameter> object is added to an Update command of an Access data source control that is bound to the value of a <xref:System.Web.UI.WebControls.TextBox> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.WebControls.ParameterCollection_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ParameterCollection_2/CS/paramcoll2cs.aspx#2)]
  [!code-aspx-vb[System.Web.UI.WebControls.ParameterCollection_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ParameterCollection_2/VB/paramcoll2vb.aspx#2)]  

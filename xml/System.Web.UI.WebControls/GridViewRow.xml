@@ -78,7 +78,7 @@
  The following example demonstrates how to use a <xref:System.Web.UI.WebControls.GridViewRow> object to retrieve a <xref:System.Web.UI.WebControls.TextBox> control declared in a <xref:System.Web.UI.WebControls.TemplateField> field column's edit item template. The value of the text box is then passed to a <xref:System.Web.UI.WebControls.SqlDataSource> control for updating in the data source.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[GridViewRowFindControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowFindControl/CS/gridviewrowfindcontrolcs.aspx#1)]
  [!code-aspx-vb[GridViewRowFindControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowFindControl/VB/gridviewrowfindcontrolvb.aspx#1)]  
@@ -99,7 +99,7 @@
     <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowIndex" />
     <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowState" />
     <altmember cref="P:System.Web.UI.WebControls.GridViewRow.RowType" />
-    <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

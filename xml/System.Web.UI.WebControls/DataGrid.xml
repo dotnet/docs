@@ -61,7 +61,7 @@
  Use the <xref:System.Web.UI.WebControls.DataGrid> control to display the fields of a data source as columns in a table. Each row in the <xref:System.Web.UI.WebControls.DataGrid> control represents a record in the data source. The <xref:System.Web.UI.WebControls.DataGrid> control supports selection, editing, deleting, paging, and sorting.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](https://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
  Different column types determine the behavior of the columns in the control. The following table lists the different column types that can be used.  
   
@@ -112,7 +112,7 @@
   
 <a name="Accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="DeclarativeSyntax"></a>   
 ## Declarative Syntax  

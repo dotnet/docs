@@ -20,13 +20,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Printing.PrintCapabilities> object is an easy-to-work-with representation of a certain type of XML document called a *PrintCapabilities document*. The latter is a snapshot of all of a printer's capabilities and their current settings. For example, if the printer supports color printing, then the document would have a `<PageOutputColor … >` element that sets out how color output will be handled. The element is, in turn, represented by the <xref:System.Printing.PrintCapabilities.OutputColorCapability%2A> property of the <xref:System.Printing.PrintCapabilities> object. If the printer does not support color, then there is no `<PageOutputColor … >` element in the document and the value of the <xref:System.Printing.PrintCapabilities.OutputColorCapability%2A> property is `null`. The PrintCapabilities document must conform to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).  
+ A <xref:System.Printing.PrintCapabilities> object is an easy-to-work-with representation of a certain type of XML document called a *PrintCapabilities document*. The latter is a snapshot of all of a printer's capabilities and their current settings. For example, if the printer supports color printing, then the document would have a `<PageOutputColor … >` element that sets out how color output will be handled. The element is, in turn, represented by the <xref:System.Printing.PrintCapabilities.OutputColorCapability%2A> property of the <xref:System.Printing.PrintCapabilities> object. If the printer does not support color, then there is no `<PageOutputColor … >` element in the document and the value of the <xref:System.Printing.PrintCapabilities.OutputColorCapability%2A> property is `null`. The PrintCapabilities document must conform to the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397).  
   
  The <xref:System.Printing.PrintCapabilities> class enables your application to obtain a printer's capabilities without having to engage in any direct reading of XML <xref:System.IO.Stream> objects.  
   
- All of the most popular features of file and photo printers, for both home and business, are encapsulated by the <xref:System.Printing.PrintCapabilities> class. But the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) defines many more, less common, features and it can be extended to handle features of specialty printing devices. So, although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket> or <xref:System.Printing.PrintCapabilities> classes.  
+ All of the most popular features of file and photo printers, for both home and business, are encapsulated by the <xref:System.Printing.PrintCapabilities> class. But the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) defines many more, less common, features and it can be extended to handle features of specialty printing devices. So, although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket> or <xref:System.Printing.PrintCapabilities> classes.  
   
- **Note** When the <xref:System.Printing.PrintCapabilities> object is created with the constructor that takes a PrintCapabilities document (as a <xref:System.IO.Stream>) parameter, that entire document is stored in a non-public field in the object, including the XML elements within it that express less common features that are not represented by any of the public properties of the <xref:System.Printing.PrintCapabilities> class. In fact, if the driver that produced the PrintCapabilities document is using a private extension of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397), that privately defined markup is also stored as part of the non-public PrintCapabilities document.  
+ **Note** When the <xref:System.Printing.PrintCapabilities> object is created with the constructor that takes a PrintCapabilities document (as a <xref:System.IO.Stream>) parameter, that entire document is stored in a non-public field in the object, including the XML elements within it that express less common features that are not represented by any of the public properties of the <xref:System.Printing.PrintCapabilities> class. In fact, if the driver that produced the PrintCapabilities document is using a private extension of the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397), that privately defined markup is also stored as part of the non-public PrintCapabilities document.  
   
 > [!CAUTION]
 >  Classes within the <xref:System.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
@@ -64,12 +64,12 @@
       </Parameters>
       <Docs>
         <param name="xmlStream">An XML <see cref="T:System.IO.Stream" /> that describes printer capabilities and conforms to the Print Schema.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintCapabilities" /> class by using an XML stream (that contains a PrintCapabilities document) that specifies printer capabilities and complies with the XML [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintCapabilities" /> class by using an XML stream (that contains a PrintCapabilities document) that specifies printer capabilities and complies with the XML [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The entire PrintCapabilities document is stored in a non-public field in the object, including the XML elements within it that express less common features that are not represented by any of the public properties of the <xref:System.Printing.PrintCapabilities> class. In fact, if the driver that produced the PrintCapabilities document is using a private extension of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397), that privately defined markup is also stored as part of the non-public PrintCapabilities document.  
+ The entire PrintCapabilities document is stored in a non-public field in the object, including the XML elements within it that express less common features that are not represented by any of the public properties of the <xref:System.Printing.PrintCapabilities> class. In fact, if the driver that produced the PrintCapabilities document is using a private extension of the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397), that privately defined markup is also stored as part of the non-public PrintCapabilities document.  
   
  The private parts of the document, if any, are not validated by the constructor, but all **Print Schema**-defined parts are validated, including the parts that are not represented by any of the public properties of the <xref:System.Printing.PrintCapabilities> class. Accordingly, the <xref:System.FormatException> could be thrown even if all of the XML markup that corresponds to the public properties is valid.  
   
@@ -110,7 +110,7 @@
   
  If the printer does not support collation, the collection is empty.  
   
- This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `DocumentCollate` keyword, not the `JobCollateAllDocuments` keyword.  
+ This property corresponds to the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `DocumentCollate` keyword, not the `JobCollateAllDocuments` keyword.  
   
    
   
@@ -150,7 +150,7 @@
 ## Remarks  
  If the printer does not support device font substitution, the collection is empty. If it does support font substitution, the driver should include both the <xref:System.Printing.DeviceFontSubstitution.On> and <xref:System.Printing.DeviceFontSubstitution.Off> values in the collection.  
   
- This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageDeviceFontSubstitution` keyword.  
+ This property corresponds to the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `PageDeviceFontSubstitution` keyword.  
   
  ]]></format>
         </remarks>
@@ -181,7 +181,7 @@
 ## Remarks  
  If the printer does not support duplexing, the collection is empty.  
   
- This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `JobDuplexAllDocumentsContiguously` keyword, not the `DocumentDuplex` keyword.  
+ This property corresponds to the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `JobDuplexAllDocumentsContiguously` keyword, not the `DocumentDuplex` keyword.  
   
    
   
@@ -219,7 +219,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property represents the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s feature `JobInputBin`, if that feature is supported by the device; otherwise, it represents `DocumentInputBin`, if that feature is supported; otherwise, it represents `PageInputBin`.  
+ This property represents the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s feature `JobInputBin`, if that feature is supported by the device; otherwise, it represents `DocumentInputBin`, if that feature is supported; otherwise, it represents `PageInputBin`.  
   
  If the printer does not support any of these features, the collection is empty.  
   
@@ -250,7 +250,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `JobCopiesAllDocuments` keyword, not the `DocumentCopiesAllPages` keyword, or the `PageCopies` keyword. If the printer can print unlimited copies, the property value is 9999.  
+ This property corresponds to the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `JobCopiesAllDocuments` keyword, not the `DocumentCopiesAllPages` keyword, or the `PageCopies` keyword. If the printer can print unlimited copies, the property value is 9999.  
   
  ]]></format>
         </remarks>
@@ -281,7 +281,7 @@
 ## Remarks  
  Most printers must leave an unprinted area along the edges of a page to prevent toner from getting on the parts of the printer that move the sheets.  
   
- This property corresponds to the **ImageableSizeHeight** property of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageImageableSize` keyword.  
+ This property corresponds to the **ImageableSizeHeight** property of the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `PageImageableSize` keyword.  
   
  ]]></format>
         </remarks>
@@ -312,7 +312,7 @@
 ## Remarks  
  Most printers must leave an unprinted area along the edges of a page to prevent toner from getting on the parts of the printer that move the sheets.  
   
- This property corresponds to the `ImageableSizeWidth` property of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageImageableSize` keyword.  
+ This property corresponds to the `ImageableSizeWidth` property of the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `PageImageableSize` keyword.  
   
  ]]></format>
         </remarks>
@@ -343,7 +343,7 @@
 ## Remarks  
  If the printer does not support output color options, the collection is empty.  
   
- This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageOutputColor` keyword.  
+ This property corresponds to the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `PageOutputColor` keyword.  
   
  ]]></format>
         </remarks>
@@ -376,7 +376,7 @@
   
  If the printer does not support output quality selection, the collection is empty.  
   
- This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageOutputQuality` keyword.  
+ This property corresponds to the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `PageOutputQuality` keyword.  
   
  ]]></format>
         </remarks>
@@ -409,7 +409,7 @@
   
  If the printer does not support borderless printing, the collection is empty.  
   
- This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageBorderless` keyword.  
+ This property corresponds to the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `PageBorderless` keyword.  
   
  ]]></format>
         </remarks>
@@ -471,7 +471,7 @@
   
  If the printer does not support media size selection, the collection is empty.  
   
- This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageMediaSize` keyword.  
+ This property corresponds to the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `PageMediaSize` keyword.  
   
    
   
@@ -518,7 +518,7 @@ foreach (PageMediaSize mediaSize in pc.PageMediaSizeCapability)
 ## Remarks  
  If the printer does not support media type selection, the collection is empty.  
   
- This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageMediaType` keyword.  
+ This property corresponds to the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `PageMediaType` keyword.  
   
  ]]></format>
         </remarks>
@@ -549,7 +549,7 @@ foreach (PageMediaSize mediaSize in pc.PageMediaSizeCapability)
 ## Remarks  
  If the printer does not support page order selection, the collection is empty.  
   
- This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `JobPageOrder` keyword.  
+ This property corresponds to the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `JobPageOrder` keyword.  
   
  ]]></format>
         </remarks>
@@ -580,7 +580,7 @@ foreach (PageMediaSize mediaSize in pc.PageMediaSizeCapability)
 ## Remarks  
  If the printer does not support page orientation selection, the collection is empty.  
   
- This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageOrientation` keyword.  
+ This property corresponds to the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `PageOrientation` keyword.  
   
  ]]></format>
         </remarks>
@@ -615,7 +615,7 @@ foreach (PageMediaSize mediaSize in pc.PageMediaSizeCapability)
   
  If the printer does not support page resolution choices, the collection is empty.  
   
- This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageResolution` keyword.  
+ This property corresponds to the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `PageResolution` keyword.  
   
    
   
@@ -660,7 +660,7 @@ foreach (PageResolution pageRes in pc.PageResolutionCapability)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This <xref:System.Printing.PrintCapabilities.PageScalingFactorRange%2A> property generally represents the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageScaling` keyword. But there are some complexities as follows.  
+ This <xref:System.Printing.PrintCapabilities.PageScalingFactorRange%2A> property generally represents the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `PageScaling` keyword. But there are some complexities as follows.  
   
 -   If the PrintCapabilities document does not have a `PageScaling` element, or it has one, but neither its **CustomSquare** nor **Custom** options are defined; then the <xref:System.Printing.PrintCapabilities.PageScalingFactorRange%2A> property is null.  
   
@@ -713,7 +713,7 @@ foreach (PageResolution pageRes in pc.PageResolutionCapability)
   
  If the printer does not support multiple pages per sheet, the collection is empty.  
   
- This property corresponds to the `PagesPerSheet ScoredProperty` of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `JobNUpAllDocumentsContiguously` keyword, not the `DocumentNUp` keyword.  
+ This property corresponds to the `PagesPerSheet ScoredProperty` of the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `JobNUpAllDocumentsContiguously` keyword, not the `DocumentNUp` keyword.  
   
  ]]></format>
         </remarks>
@@ -746,7 +746,7 @@ foreach (PageResolution pageRes in pc.PageResolutionCapability)
   
  If the printer does not support multiple pages per sheet, the collection is empty.  
   
- This property corresponds to the `PresentationDirection` subfeature of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `JobNUpAllDocumentsContiguously` keyword, not the `DocumentNUp` keyword.  
+ This property corresponds to the `PresentationDirection` subfeature of the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `JobNUpAllDocumentsContiguously` keyword, not the `DocumentNUp` keyword.  
   
  ]]></format>
         </remarks>
@@ -777,7 +777,7 @@ foreach (PageResolution pageRes in pc.PageResolutionCapability)
 ## Remarks  
  If the printer does not support options for photographic quality, the collection is empty.  
   
- This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PagePhotoPrintingIntent`.  
+ This property corresponds to the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `PagePhotoPrintingIntent`.  
   
  ]]></format>
         </remarks>
@@ -808,7 +808,7 @@ foreach (PageResolution pageRes in pc.PageResolutionCapability)
 ## Remarks  
  If the printer does not support stapling, the collection is empty.  
   
- This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `JobStapleAllDocuments` keyword, not the `DocumentStaple` keyword.  
+ This property corresponds to the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `JobStapleAllDocuments` keyword, not the `DocumentStaple` keyword.  
   
    
   
@@ -848,7 +848,7 @@ foreach (PageResolution pageRes in pc.PageResolutionCapability)
 ## Remarks  
  If the printer does not support any method of special handling for TrueType fonts, the collection is empty.  
   
- This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageTrueTypeFontMode` keyword.  
+ This property corresponds to the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)'s `PageTrueTypeFontMode` keyword.  
   
  ]]></format>
         </remarks>

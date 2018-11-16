@@ -66,7 +66,7 @@
   
 -   Providing information to the ASP.NET page framework about which controls to keep together when paginating. By default, the contents of a panel are kept together on a page. You can modify this behavior by setting the <xref:System.Web.UI.MobileControls.Panel.Paginate%2A> property for the panel.  
   
- You can include literal text together with its accompanying markup tags in the text contents of the <xref:System.Web.UI.MobileControls.Panel>. For more information, see [Literal Text Inside Form Markup](http://msdn.microsoft.com/library/https://msdn.microsoft.com/library/05e061ed-9916-4ece-bfc8-7bf131fe232e).  
+ You can include literal text together with its accompanying markup tags in the text contents of the <xref:System.Web.UI.MobileControls.Panel>. For more information, see [Literal Text Inside Form Markup](https://msdn.microsoft.com/library/https://msdn.microsoft.com/library/05e061ed-9916-4ece-bfc8-7bf131fe232e).  
   
    
   
@@ -212,7 +212,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.Panel.Content%2A> property to find a control when the page loads.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MobilePanelSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobilePanelSample/cs/Default.aspx#1)]  
   
@@ -331,7 +331,7 @@
  The following code example, when viewed on a device that paginates the pages, shows how a panel containing more controls than will fit on one page is paginated to allow users access to all items on the panel.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MobilePanelSample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/MobilePanelSample/cs/Default2.aspx#3)]
  [!code-aspx-vb[MobilePanelSample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobilePanelSample/vb/Default2.aspx#3)]  

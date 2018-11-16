@@ -21,7 +21,7 @@
   <Docs>
     <summary>Exposes the items in the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection of a <see cref="T:System.Windows.Controls.Primitives.Selector" /> to UI Automation.</summary>
     <remarks>To be added.</remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,7 +50,7 @@
         <param name="selectorAutomationPeer">The <see cref="T:System.Windows.Automation.Peers.SelectorAutomationPeer" /> that is associated with the <see cref="T:System.Windows.Controls.Primitives.Selector" /> that holds the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection.</param>
         <summary>Provides initialization for base class values when they are called by the constructor of a derived class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPattern">
@@ -76,7 +76,7 @@
         <summary>Gets the control pattern that is associated with the specified <see cref="T:System.Windows.Automation.Peers.PatternInterface" />.</summary>
         <returns>If <paramref name="patternInterface" /> is <see cref="F:System.Windows.Automation.Peers.PatternInterface.Selection" />, this method returns the current instance of this <see cref="T:System.Windows.Automation.Peers.SelectorItemAutomationPeer" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
         <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
       </Docs>
     </Member>

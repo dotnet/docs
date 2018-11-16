@@ -38,7 +38,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Replace the existing <see href="/visualstudio/msbuild/property-element-msbuild">Property</see> element if it exists. Otherwise, create the <c>Property</c> after the last [Import](http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) element in the project.</summary>
+        <summary>Replace the existing <see href="/visualstudio/msbuild/property-element-msbuild">Property</see> element if it exists. Otherwise, create the <c>Property</c> after the last [Import](https://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) element in the project.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseExistingOrCreateAfterLastPropertyGroup">

@@ -47,7 +47,7 @@
   
 -   <xref:System.Web.HttpResponse.WriteSubstitution%2A>  
   
- Partial-page updates are enabled when you use <xref:System.Web.UI.UpdatePanel> controls to update selected regions of a page instead of updating the whole page with a post back. For more information, see [UpdatePanel Control Overview](http://msdn.microsoft.com/library/29a2265d-9674-4c19-b70e-e5560ee9689a) and [Partial-Page Rendering Overview](http://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
+ Partial-page updates are enabled when you use <xref:System.Web.UI.UpdatePanel> controls to update selected regions of a page instead of updating the whole page with a post back. For more information, see [UpdatePanel Control Overview](https://msdn.microsoft.com/library/29a2265d-9674-4c19-b70e-e5560ee9689a) and [Partial-Page Rendering Overview](https://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
   
    
   
@@ -389,7 +389,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you use the <xref:System.Web.HttpResponse.AddFileDependency%2A> method to add a file dependency, you must also specify output caching programmatically or declaratively. For example, to specify output caching declaratively, use the  directive. For more information, see [How to: Cache Page Output with File Dependencies](http://msdn.microsoft.com/library/95ad1c54-329e-45af-9343-a03a1d2ce9db).  
+ When you use the <xref:System.Web.HttpResponse.AddFileDependency%2A> method to add a file dependency, you must also specify output caching programmatically or declaratively. For example, to specify output caching declaratively, use the  directive. For more information, see [How to: Cache Page Output with File Dependencies](https://msdn.microsoft.com/library/95ad1c54-329e-45af-9343-a03a1d2ce9db).  
   
    
   
@@ -560,7 +560,7 @@
 ## Remarks  
  If you use the <xref:System.Web.HttpResponse.AppendHeader%2A> method to send cache-specific headers and at the same time use the cache object model (<xref:System.Web.HttpResponse.Cache%2A>) to set cache policy, HTTP response headers that pertain to caching (`Cache-Control`, `Expires`, `Last-Modified`, `Pragma`, and `Vary`) might be deleted when the cache object model is used. This behavior enables ASP.NET to maintain the most restrictive settings. For example, consider a page that includes user controls. If those controls have conflicting cache policies, the most restrictive cache policy will be used. If one user control sets the header "`Cache-Control: Public`" and another user control sets the more restrictive header "`Cache-Control: Private`" via calls to <xref:System.Web.HttpCachePolicy.SetCacheability%2A>, then the "`Cache-Control: Private`" header will be sent with the response.  
   
- For a list of standard HTTP/1.1 headers, see section 14, "Header Field Definitions," in the [Hypertext Transfer Protocol -- HTTP/1.1](http://go.microsoft.com/fwlink/?LinkID=73147) specification on the World Wide Web Consortium (W3C) Web site.  
+ For a list of standard HTTP/1.1 headers, see section 14, "Header Field Definitions," in the [Hypertext Transfer Protocol -- HTTP/1.1](https://go.microsoft.com/fwlink/?LinkID=73147) specification on the World Wide Web Consortium (W3C) Web site.  
   
    
   
@@ -626,7 +626,7 @@
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=36829">Windows Server 2003 Product Help</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=36829">Windows Server 2003 Product Help</related>
       </Docs>
     </Member>
     <Member MemberName="ApplyAppPathModifier">
@@ -1145,7 +1145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default `ContentEncoding` can be specified in an ASP.NET configuration file in the [globalization Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) section. If <xref:System.Web.HttpResponse.ContentEncoding%2A> is specified by the client, the default configuration settings are overridden.  
+ Default `ContentEncoding` can be specified in an ASP.NET configuration file in the [globalization Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) section. If <xref:System.Web.HttpResponse.ContentEncoding%2A> is specified by the client, the default configuration settings are overridden.  
   
    
   
@@ -1600,7 +1600,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The operation requires the integrated pipeline mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework version 3.0.</exception>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=86952">Upgrading ASP.NET Applications to IIS 7.0: Differences between IIS 7.0 Integrated Mode and Classic mode</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=86952">Upgrading ASP.NET Applications to IIS 7.0: Differences between IIS 7.0 Integrated Mode and Classic mode</related>
       </Docs>
     </Member>
     <Member MemberName="HeadersWritten">
@@ -1826,7 +1826,7 @@
 ## Remarks  
  Platform for Internet Content Selection (PICS) is a World Wide Web Consortium (W3C) standard for content labeling. PICS is essentially a language for creating a ratings system.  
   
- Any value can be a PICS label; ASP.NET does not validate the label. The maximum length of the string is 255 characters. For more information about PICS standards and syntax, see the [World Wide Web Consortium](http://go.microsoft.com/fwlink/?LinkID=37125) Web site.  
+ Any value can be a PICS label; ASP.NET does not validate the label. The maximum length of the string is 255 characters. For more information about PICS standards and syntax, see the [World Wide Web Consortium](https://go.microsoft.com/fwlink/?LinkID=37125) Web site.  
   
    
   
@@ -1963,7 +1963,7 @@
 > [!NOTE]
 >  For mobile pages only, if your application relies on cookieless sessions, or might receive requests from mobile devices that require cookieless sessions, using a tilde (~) in a path can result in creating a new session and potentially losing session data. To set a property on a mobile control with a path such as "~/path", resolve the path using <xref:System.Web.UI.MobileControls.MobileControl.ResolveUrl%2A> "~/path" before assigning it to the property.  
   
- ASP.NET performs the redirection by returning a 302 HTTP status code. An alternative way to transfer control to another page is the <xref:System.Web.HttpServerUtility.Transfer%2A> method. The <xref:System.Web.HttpServerUtility.Transfer%2A> method is typically more efficient because it does not cause a round trip to the client. For more information, see [How to: Redirect Users to Another Page](http://msdn.microsoft.com/library/daef3f43-e018-43aa-b43c-46b27bac599e).  
+ ASP.NET performs the redirection by returning a 302 HTTP status code. An alternative way to transfer control to another page is the <xref:System.Web.HttpServerUtility.Transfer%2A> method. The <xref:System.Web.HttpServerUtility.Transfer%2A> method is typically more efficient because it does not cause a round trip to the client. For more information, see [How to: Redirect Users to Another Page](https://msdn.microsoft.com/library/daef3f43-e018-43aa-b43c-46b27bac599e).  
   
    
   
@@ -2019,7 +2019,7 @@
 > [!NOTE]
 >  For mobile pages, if your application relies on cookieless sessions, or might receive requests from mobile devices that require cookieless sessions, using a tilde (~) in a path can create a new session and potentially lose session data. To set a property on a mobile control with a path such as "~/path", resolve the path using <xref:System.Web.UI.MobileControls.MobileControl.ResolveUrl%2A> "~/path" before assigning it to the property.  
   
- ASP.NET performs the redirection by returning a 302 HTTP status code. An alternative way to transfer control to another page is the <xref:System.Web.HttpServerUtility.Transfer%2A> method. The <xref:System.Web.HttpServerUtility.Transfer%2A> method is typically more efficient because it does not cause a round trip to the client. For more information, see [How to: Redirect Users to Another Page](http://msdn.microsoft.com/library/daef3f43-e018-43aa-b43c-46b27bac599e).  
+ ASP.NET performs the redirection by returning a 302 HTTP status code. An alternative way to transfer control to another page is the <xref:System.Web.HttpServerUtility.Transfer%2A> method. The <xref:System.Web.HttpServerUtility.Transfer%2A> method is typically more efficient because it does not cause a round trip to the client. For more information, see [How to: Redirect Users to Another Page](https://msdn.microsoft.com/library/daef3f43-e018-43aa-b43c-46b27bac599e).  
   
    
   
@@ -2235,7 +2235,7 @@ Response.RedirectToRoute(
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -2291,7 +2291,7 @@ Response.RedirectToRoute("Products");
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -2349,7 +2349,7 @@ Response.RedirectToRoute(
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -2404,7 +2404,7 @@ Response.RedirectToRoute("Product",
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -2464,7 +2464,7 @@ Response.RedirectToRoute("Product",
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="RedirectToRoutePermanent">
@@ -2526,7 +2526,7 @@ Response.RedirectToRoutePermanent(
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -2582,7 +2582,7 @@ Response.RedirectToRoutePermanent("Products");
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -2640,7 +2640,7 @@ Response.RedirectToRoutePermanent(
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -2695,7 +2695,7 @@ Response.RedirectToRoutePermanent("Product",
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -2755,7 +2755,7 @@ Response.RedirectToRoutePermanent("Product",
         </remarks>
         <exception cref="T:System.InvalidOperationException">No route corresponds to the specified route parameters.</exception>
         <exception cref="T:System.Web.HttpException">Redirection was attempted after the HTTP headers had been sent.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="RemoveOutputCacheItem">
@@ -2941,7 +2941,7 @@ Response.RedirectToRoutePermanent("Product",
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the HTTP status code of the output returned to the client.</summary>
-        <value>An Integer representing the status of the HTTP output returned to the client. The default value is 200 (OK). For a listing of valid status codes, see [Http Status Codes](http://go.microsoft.com/fwlink/?LinkId=73157).</value>
+        <value>An Integer representing the status of the HTTP output returned to the client. The default value is 200 (OK). For a listing of valid status codes, see [Http Status Codes](https://go.microsoft.com/fwlink/?LinkId=73157).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2977,7 +2977,7 @@ Response.RedirectToRoutePermanent("Product",
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the HTTP status string of the output returned to the client.</summary>
-        <value>A string that describes the status of the HTTP output returned to the client. The default value is "OK". For a listing of valid status codes, see [Http Status Codes](http://go.microsoft.com/fwlink/?LinkId=73157).</value>
+        <value>A string that describes the status of the HTTP output returned to the client. The default value is "OK". For a listing of valid status codes, see [Http Status Codes](https://go.microsoft.com/fwlink/?LinkId=73157).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3022,7 +3022,7 @@ Response.RedirectToRoutePermanent("Product",
    
   
 ## Examples  
- The following example sets the <xref:System.Web.HttpResponse.SubStatusCode%2A> property in an event handler for the <xref:System.Web.HttpApplication> instance of the <xref:System.Web.HttpApplication.PostAuthenticateRequest> event. Put the code file in the App_Code folder of your Web application and configure the Web.config file to register the module. For more information, see [Walkthrough: Creating and Registering a Custom HTTP Module](http://msdn.microsoft.com/library/7787d5be-40a4-4072-9075-c2b767428453).  
+ The following example sets the <xref:System.Web.HttpResponse.SubStatusCode%2A> property in an event handler for the <xref:System.Web.HttpApplication> instance of the <xref:System.Web.HttpApplication.PostAuthenticateRequest> event. Put the code file in the App_Code folder of your Web application and configure the Web.config file to register the module. For more information, see [Walkthrough: Creating and Registering a Custom HTTP Module](https://msdn.microsoft.com/library/7787d5be-40a4-4072-9075-c2b767428453).  
   
  [!code-csharp[System.Web.HttpResponse.SubStatusCode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.SubStatusCode/CS/App_Code/TestModule.cs#1)]
  [!code-vb[System.Web.HttpResponse.SubStatusCode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.SubStatusCode/VB/App_Code/TestModule.vb#1)]  
@@ -3127,7 +3127,7 @@ Response.RedirectToRoutePermanent("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, ASP.NET sends a `Cache-Control: private` response header unless an explicit cache policy has been specified for this response. This property allows suppressing this default response header on a per-request basis. The header can still be suppressed for the entire application by setting <xref:System.Web.Configuration.HttpRuntimeSection.SendCacheControlHeader%2A> in [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) or [outputCache Element for caching (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/47cd2b47-316f-4dfd-bbf8-539be3066fee).  
+ By default, ASP.NET sends a `Cache-Control: private` response header unless an explicit cache policy has been specified for this response. This property allows suppressing this default response header on a per-request basis. The header can still be suppressed for the entire application by setting <xref:System.Web.Configuration.HttpRuntimeSection.SendCacheControlHeader%2A> in [httpRuntime Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) or [outputCache Element for caching (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/47cd2b47-316f-4dfd-bbf8-539be3066fee).  
   
  Use caution when suppressing the default `Cache-Control: private` header, as proxies and other intermediaries may treat responses without this header as cacheable by default. This treatment can lead to the inadvertent caching of sensitive information. See [RFC 2616, Sec. 13.4](http://tools.ietf.org/html/rfc2616) for more information.  
   
@@ -3389,7 +3389,7 @@ Response.RedirectToRoutePermanent("Product",
   
  When you encode or filter data, you must specify a character set for your Web pages so that your filter can identify and remove any byte sequences that do not belong to that set (such as nonalphanumeric sequences) and could potentially have malicious script embedded in them.  
   
- For more information about cross-site scripting attacks, see article Q252985, "How to Prevent Cross-Site Scripting Security Issues" on the [Microsoft Knowledge Base](http://go.microsoft.com/fwlink/?LinkID=37115) Web site.  
+ For more information about cross-site scripting attacks, see article Q252985, "How to Prevent Cross-Site Scripting Security Issues" on the [Microsoft Knowledge Base](https://go.microsoft.com/fwlink/?LinkID=37115) Web site.  
   
    
   
@@ -3479,7 +3479,7 @@ Response.RedirectToRoutePermanent("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this method is used with large files, calling the method might throw an exception. The size of the file that can be used with this method depends on the hardware configuration of the Web server. For more information, see article 812406, "PRB: Response.WriteFile Cannot Download a Large File" on the [Microsoft Knowledge Base](http://go.microsoft.com/fwlink/?linkid=149903) Web site.  
+ When this method is used with large files, calling the method might throw an exception. The size of the file that can be used with this method depends on the hardware configuration of the Web server. For more information, see article 812406, "PRB: Response.WriteFile Cannot Download a Large File" on the [Microsoft Knowledge Base](https://go.microsoft.com/fwlink/?linkid=149903) Web site.  
   
    
   
@@ -3523,7 +3523,7 @@ Response.RedirectToRoutePermanent("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this method is used with large files, calling the method might throw an exception. The size of the file that can be used with this method depends on the hardware configuration of the Web server. For more information, see article 812406, "PRB: Response.WriteFile Cannot Download a Large File" on the [Microsoft Knowledge Base](http://go.microsoft.com/fwlink/?linkid=149903) Web site.  
+ When this method is used with large files, calling the method might throw an exception. The size of the file that can be used with this method depends on the hardware configuration of the Web server. For more information, see article 812406, "PRB: Response.WriteFile Cannot Download a Large File" on the [Microsoft Knowledge Base](https://go.microsoft.com/fwlink/?linkid=149903) Web site.  
   
    
   
@@ -3569,7 +3569,7 @@ Response.RedirectToRoutePermanent("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this method is used with large files, calling the method might throw an exception. The size of the file that can be used with this method depends on the hardware configuration of the Web server. For more information, see article 812406, "PRB: Response.WriteFile Cannot Download a Large File" on the [Microsoft Knowledge Base](http://go.microsoft.com/fwlink/?linkid=149903) Web site.  
+ When this method is used with large files, calling the method might throw an exception. The size of the file that can be used with this method depends on the hardware configuration of the Web server. For more information, see article 812406, "PRB: Response.WriteFile Cannot Download a Large File" on the [Microsoft Knowledge Base](https://go.microsoft.com/fwlink/?linkid=149903) Web site.  
   
    
   
@@ -3622,7 +3622,7 @@ Response.RedirectToRoutePermanent("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this method is used with large files, calling the method might throw an exception. The size of the file that can be used with this method depends on the hardware configuration of the Web server. For more information, see article 812406, "PRB: Response.WriteFile Cannot Download a Large File" on the [Microsoft Knowledge Base](http://go.microsoft.com/fwlink/?linkid=149903) Web site.  
+ When this method is used with large files, calling the method might throw an exception. The size of the file that can be used with this method depends on the hardware configuration of the Web server. For more information, see article 812406, "PRB: Response.WriteFile Cannot Download a Large File" on the [Microsoft Knowledge Base](https://go.microsoft.com/fwlink/?linkid=149903) Web site.  
   
    
   
@@ -3678,16 +3678,16 @@ Response.RedirectToRoutePermanent("Product",
  On the first request to the page, the <xref:System.Web.HttpResponse.WriteSubstitution%2A> calls the <xref:System.Web.HttpResponseSubstitutionCallback> delegate to produce the output. Then, it adds a substitution buffer to the response, which retains the delegate to call on future requests. Finally, it degrades client-side cacheability from public to server-only, ensuring future requests to the page re-invoke the delegate by not caching on the client.  
   
 > [!NOTE]
->  Post-cache substitution is not supported for a cached user control where output caching is applied at the user control level. This is also known as fragment caching. For more information, see [Caching Portions of an ASP.NET Page](http://msdn.microsoft.com/library/cdd8e523-7305-4685-a456-c5be1de1367e).  
+>  Post-cache substitution is not supported for a cached user control where output caching is applied at the user control level. This is also known as fragment caching. For more information, see [Caching Portions of an ASP.NET Page](https://msdn.microsoft.com/library/cdd8e523-7305-4685-a456-c5be1de1367e).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The target of the <paramref name="callback" /> parameter is of type <see cref="T:System.Web.UI.Control" />.</exception>
         <altmember cref="T:System.Web.HttpResponseSubstitutionCallback" />
         <altmember cref="T:System.Web.UI.WebControls.Substitution" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d5fbd79f-972d-4557-9a39-f90684b3dcd3">Setting the Cacheability of a Page</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cdd8e523-7305-4685-a456-c5be1de1367e">Caching Portions of an ASP.NET Page</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/09c9bd9a-0d68-4a5c-aa6f-1b461c208795">Dynamically Updating Portions of a Cached Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d5fbd79f-972d-4557-9a39-f90684b3dcd3">Setting the Cacheability of a Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/cdd8e523-7305-4685-a456-c5be1de1367e">Caching Portions of an ASP.NET Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/09c9bd9a-0d68-4a5c-aa6f-1b461c208795">Dynamically Updating Portions of a Cached Page</related>
       </Docs>
     </Member>
   </Members>

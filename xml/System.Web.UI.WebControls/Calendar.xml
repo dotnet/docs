@@ -97,11 +97,11 @@
  Although binding to a data source is not supported for the <xref:System.Web.UI.WebControls.Calendar> control, you can modify the content and formatting of the individual date cells. Before the <xref:System.Web.UI.WebControls.Calendar> control is displayed on the Web page, it creates and assembles the components that make up the control. The <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised when each date cell in the <xref:System.Web.UI.WebControls.Calendar> control is created. You can control the contents and formatting of a date cell as it is created by providing code in the event handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event. For more information on customizing the contents of a date cell, see <xref:System.Web.UI.WebControls.Calendar.OnDayRender%2A>.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.Calendar> control renders ECMAScript (JScript, JavaScript) to the client browser. The client browser must have ECMAScript enabled for this control to function properly. For more information on client script, see [Client Script in ASP.NET Web Pages](http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa).  
+>  The <xref:System.Web.UI.WebControls.Calendar> control renders ECMAScript (JScript, JavaScript) to the client browser. The client browser must have ECMAScript enabled for this control to function properly. For more information on client script, see [Client Script in ASP.NET Web Pages](https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa).  
   
 <a name="Accessibility"></a>   
 ## Accessibility  
- The markup rendered by default for this control might not conform to accessibility standards. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ The markup rendered by default for this control might not conform to accessibility standards. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="DeclarativeSyntax"></a>   
 ## Declarative Syntax  
@@ -208,8 +208,8 @@
     <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowGridLines" />
     <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowNextPrevMonth" />
     <altmember cref="P:System.Web.UI.WebControls.Calendar.ShowTitle" />
-    <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/3a461fdb-6fcc-49f0-b998-92d759890a94">Calendar Web Server Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/3a461fdb-6fcc-49f0-b998-92d759890a94">Calendar Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -279,7 +279,7 @@
 ## Remarks  
  A table caption is used to describe the nature of the table in one to three sentences. Use the <xref:System.Web.UI.WebControls.Calendar.CaptionAlign%2A> property to align the caption with the calendar.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -897,7 +897,7 @@
   
  This property applies only if the <xref:System.Web.UI.WebControls.Calendar.ShowNextPrevMonth%2A> property is set to `true`.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -1347,7 +1347,7 @@
   
  This property applies only if the <xref:System.Web.UI.WebControls.Calendar.ShowNextPrevMonth%2A> property is set to `true`.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -1798,7 +1798,7 @@
   
  This property applies only if the <xref:System.Web.UI.WebControls.Calendar.SelectionMode%2A> property is set to `CalendarSelectionMode.DayWeekMonth`.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -1913,7 +1913,7 @@
   
  This property applies only if the <xref:System.Web.UI.WebControls.Calendar.SelectionMode%2A> property is set to `CalendarSelectionMode.DayWeek` or `CalendarSelectionMode.DayWeekMonth`.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   

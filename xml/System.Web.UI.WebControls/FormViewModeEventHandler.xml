@@ -38,7 +38,7 @@
  The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.FormViewModeEventHandler> delegate to the <xref:System.Web.UI.WebControls.FormView.ModeChanging> event of a <xref:System.Web.UI.WebControls.FormView> control.  
   
 > [!IMPORTANT]
->  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[FormViewModeEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeEventHandler/CS/formviewmodeeventhandlercs.aspx#1)]
  [!code-aspx-vb[FormViewModeEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeEventHandler/VB/formviewmodeeventhandlervb.aspx#1)]  
@@ -46,7 +46,7 @@
  The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.FormViewModeEventHandler> delegate to the <xref:System.Web.UI.WebControls.FormView.ModeChanging> event of a <xref:System.Web.UI.WebControls.FormView> control.  
   
 > [!IMPORTANT]
->  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[FormViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeEventArgs/CS/formviewmodeeventargscs.aspx#1)]
  [!code-aspx-vb[FormViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  

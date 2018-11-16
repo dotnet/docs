@@ -259,7 +259,7 @@
   
 -   If X.IsSubsetOf(Y) and Y.IsSubsetOf(Z) both return `true`, X.IsSubsetOf(Z) returns `true`.  
   
- If X represents an empty [IPermission](http://go.microsoft.com/fwlink?LinkID=98303) object with a permission state of None and Y represents an IPermission object that is a `null` reference (`Nothing` in Visual Basic), X.IsSubsetOf(Y) returns `true`. If Z is also an empty permission, the compound set operation X.Union(Z).IsSubsetOf(Y) also returns `true` because the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Union%2A> of two empty permissions is an empty permission.  
+ If X represents an empty [IPermission](https://go.microsoft.com/fwlink?LinkID=98303) object with a permission state of None and Y represents an IPermission object that is a `null` reference (`Nothing` in Visual Basic), X.IsSubsetOf(Y) returns `true`. If Z is also an empty permission, the compound set operation X.Union(Z).IsSubsetOf(Y) also returns `true` because the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Union%2A> of two empty permissions is an empty permission.  
   
  ]]></format>
         </remarks>

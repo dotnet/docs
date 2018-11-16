@@ -97,16 +97,16 @@
   
 </para></block>  
   
- For more information about type converters for general (non-XAML) purposes, see [How to: Implement a Type Converter](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)) or [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada).</para>
+ For more information about type converters for general (non-XAML) purposes, see [How to: Implement a Type Converter](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)) or [Generalized Type Conversion](https://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada).</para>
     </block>
     <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
     <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
     <altmember cref="T:System.ComponentModel.TypeConverter.SimplePropertyDescriptor" />
     <altmember cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" />
-    <related type="Article" href="http://msdn.microsoft.com/library/51a65860-efcb-4fe0-95a0-1c679cde66b7">Type Converters for XAML Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/5dfb299a-b6e2-41b8-8694-e6ac987547f1">XAML-Related CLR Attributes For Custom Types and Libraries</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/c2667cbd-2f46-4a7f-9dfc-53696e35e8e4">Defining Custom Types for Use with .NET Framework XAML Services</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/0e11f386-808c-4eae-9ba6-029ad7ba2211">NET XAML Services Conceptual Documentation</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/51a65860-efcb-4fe0-95a0-1c679cde66b7">Type Converters for XAML Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/5dfb299a-b6e2-41b8-8694-e6ac987547f1">XAML-Related CLR Attributes For Custom Types and Libraries</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c2667cbd-2f46-4a7f-9dfc-53696e35e8e4">Defining Custom Types for Use with .NET Framework XAML Services</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/0e11f386-808c-4eae-9ba6-029ad7ba2211">NET XAML Services Conceptual Documentation</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -481,7 +481,7 @@
  For implementation patterns for type converters that are used to support XAML and custom types, see [Type Converters for XAML Overview](~/docs/framework/xaml-services/type-converters-for-xaml-overview.md).</para>
         </block>
         <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
-        <related type="Article" href="http://msdn.microsoft.com/library/51a65860-efcb-4fe0-95a0-1c679cde66b7">Type Converters for XAML Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/51a65860-efcb-4fe0-95a0-1c679cde66b7">Type Converters for XAML Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ConvertFromInvariantString">
@@ -894,7 +894,7 @@
  For implementation patterns for type converters that are used to support XAML and custom types, see [Type Converters for XAML Overview](~/docs/framework/xaml-services/type-converters-for-xaml-overview.md).</para>
         </block>
         <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
-        <related type="Article" href="http://msdn.microsoft.com/library/51a65860-efcb-4fe0-95a0-1c679cde66b7">Type Converters for XAML Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/51a65860-efcb-4fe0-95a0-1c679cde66b7">Type Converters for XAML Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ConvertToInvariantString">

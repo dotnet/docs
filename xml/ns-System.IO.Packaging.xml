@@ -35,18 +35,18 @@
   
  Packages also support Digital Rights Management (DRM), which allows content elements in a <xref:System.IO.Packaging.Package> to be encrypted with specific access rights granted to authorized users.  
   
- Based on the <xref:System.IO.Packaging.Package> architecture, an <xref:System.Windows.Xps.Packaging.XpsDocument> is a package type designed for storing documents based on the open [XML Paper Specification (XPS)](http://go.microsoft.com/fwlink/?LinkID=65761).  
+ Based on the <xref:System.IO.Packaging.Package> architecture, an <xref:System.Windows.Xps.Packaging.XpsDocument> is a package type designed for storing documents based on the open [XML Paper Specification (XPS)](https://go.microsoft.com/fwlink/?LinkID=65761).  
   
  Windows Presentation Foundation uses packages to store content, resources, and relationships for pages and documents using a standard ZIP file by default. As with any ZIP file, your application can use the <xref:System.IO.Packaging> classes to store and optionally protect any type or number of data files in a single efficient-to-access container.  
   
- For more information, see the Open Packaging Conventions (OPC) specification, available for download at the XPS section of [Windows Hardware Developer Central](http://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information, see the Open Packaging Conventions (OPC) specification, available for download at the XPS section of [Windows Hardware Developer Central](https://go.microsoft.com/fwlink/?LinkID=71255).  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Xps.Packaging.XpsDocument" />
     <altmember cref="N:System.Windows.Xps.Packaging" />
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions (OPC) Specification</related>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=100532">The Addressing Model of the Open Packaging Conventions</related>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions (OPC) Specification</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=100532">The Addressing Model of the Open Packaging Conventions</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
   </Docs>
 </Namespace>

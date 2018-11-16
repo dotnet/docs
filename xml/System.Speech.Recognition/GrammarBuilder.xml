@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Speech recognition grammars are commonly authored in the XML format defined by the [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761). If you are familiar with SRGS but want to generate the grammars programmatically, you can use the <xref:System.Speech.Recognition.SrgsGrammar> namespace, whose members correspond closely to the elements and attributes defined by SRGS. If you are unfamiliar with SRGS, or you want a lightweight, programmatic approach to authoring grammars with which you can efficiently accomplish many common scenarios; you can use the <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> classes.  
+ Speech recognition grammars are commonly authored in the XML format defined by the [Speech Recognition Grammar Specification (SRGS) Version 1.0](https://go.microsoft.com/fwlink/?LinkId=201761). If you are familiar with SRGS but want to generate the grammars programmatically, you can use the <xref:System.Speech.Recognition.SrgsGrammar> namespace, whose members correspond closely to the elements and attributes defined by SRGS. If you are unfamiliar with SRGS, or you want a lightweight, programmatic approach to authoring grammars with which you can efficiently accomplish many common scenarios; you can use the <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> classes.  
   
  Use <xref:System.Speech.Recognition.GrammarBuilder> objects to build a hierarchical tree composed of <xref:System.Speech.Recognition.Choices> objects that contain alternate phrases, interspersed with preamble and post-amble phrases at each node, and seeded with semantic values that convey  meaning back to the application.  
   
@@ -48,7 +48,7 @@
   
  To help with debugging, the <xref:System.Speech.Recognition.GrammarBuilder.DebugShowPhrases%2A> property returns the current status of the <xref:System.Speech.Recognition.GrammarBuilder> as a string.  
   
- For more information about building and using speech recognition grammars, see [Speech Recognition](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361633(v=office.14)) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ For more information about building and using speech recognition grammars, see [Speech Recognition](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361633(v=office.14)) and [Creating GrammarBuilder Grammars](https://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
   
    
   
@@ -110,7 +110,7 @@ private Grammar CreateColorGrammar()
 > [!IMPORTANT]
 >  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element.
   
- For more information about building and using speech recognition grammars, see [Speech Recognition](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361633(v=office.14)) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ For more information about building and using speech recognition grammars, see [Speech Recognition](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361633(v=office.14)) and [Creating GrammarBuilder Grammars](https://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
   
  ]]></format>
         </remarks>
@@ -211,7 +211,7 @@ private Grammar CreateColorGrammar()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about building a speech recognition grammar that contains alternatives, see [Using Choices to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/library/5b18db18-a5f6-46a3-aa77-6d3141544efd).  
+ For more information about building a speech recognition grammar that contains alternatives, see [Using Choices to Create a GrammarBuilder Grammar](https://msdn.microsoft.com/library/5b18db18-a5f6-46a3-aa77-6d3141544efd).  
   
    
   
@@ -460,7 +460,7 @@ private Grammar CreateColorGrammar()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The phrase represents an exact spoken phrase that the speech recognition grammar can recognize. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/library/0d87b445-a342-4369-9b3f-91d07fd7e114).  
+ The phrase represents an exact spoken phrase that the speech recognition grammar can recognize. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](https://msdn.microsoft.com/library/0d87b445-a342-4369-9b3f-91d07fd7e114).  
   
    
   
@@ -531,7 +531,7 @@ private Grammar CreateColorGrammar()
 ## Remarks  
  The `phrase` parameter represents the phrase that the speech recognition grammar can recognize. The `subsetMatchingMode` parameter specifies a subset of the phrase that can be spoken to achieve successful recognition of the entire phrase. You can use this to create a grammar with a list of entries that have long names, without requiring users to speak an entire name to match an item.  
   
- For more information about the matching modes, see <xref:System.Speech.Recognition.SubsetMatchingMode>. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/library/0d87b445-a342-4369-9b3f-91d07fd7e114).  
+ For more information about the matching modes, see <xref:System.Speech.Recognition.SubsetMatchingMode>. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](https://msdn.microsoft.com/library/0d87b445-a342-4369-9b3f-91d07fd7e114).  
   
    
   
@@ -698,7 +698,7 @@ private static Grammar CreatePizzaGrammar()
 ## Remarks  
  If the value of `minRepeat` is 0, then the new <xref:System.Speech.Recognition.GrammarBuilder> represents an optional element.  
   
- The value of `minRepeat` must be greater than or equal to 0 and less than or equal to the value of `maxRepeat`. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/library/0d87b445-a342-4369-9b3f-91d07fd7e114).  
+ The value of `minRepeat` must be greater than or equal to 0 and less than or equal to the value of `maxRepeat`. For more information about building a speech recognition grammar that contains strings, see [Using Strings to Create a GrammarBuilder Grammar](https://msdn.microsoft.com/library/0d87b445-a342-4369-9b3f-91d07fd7e114).  
   
    
   
@@ -752,12 +752,12 @@ private static Grammar CreatePizzaGrammar()
 ## Remarks  
  The static <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods provide another mechanism by which you can combine various types to create diversity and flexibility in grammars built with <xref:System.Speech.Recognition.GrammarBuilder>. These methods correspond to the static <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> methods, which are also defined on the <xref:System.Speech.Recognition.GrammarBuilder> class. The order of the parameters determines the order of the elements in the new <xref:System.Speech.Recognition.GrammarBuilder>.  
   
- A <xref:System.Speech.Recognition.GrammarBuilder> can also be obtained from <xref:System.Speech.Recognition.Choices>, <xref:System.Speech.Recognition.SemanticResultKey>, <xref:System.Speech.Recognition.SemanticResultValue>, and [String](http://go.microsoft.com/fwlink/?LinkId=159733) objects. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
+ A <xref:System.Speech.Recognition.GrammarBuilder> can also be obtained from <xref:System.Speech.Recognition.Choices>, <xref:System.Speech.Recognition.SemanticResultKey>, <xref:System.Speech.Recognition.SemanticResultValue>, and [String](https://go.microsoft.com/fwlink/?LinkId=159733) objects. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
   
 > [!IMPORTANT]
 >  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. 
   
- For more information about building and using speech recognition grammars, see [Speech Recognition](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361633(v=office.14)) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ For more information about building and using speech recognition grammars, see [Speech Recognition](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361633(v=office.14)) and [Creating GrammarBuilder Grammars](https://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
   
  ]]></format>
         </remarks>
@@ -863,7 +863,7 @@ private static Grammar CreatePizzaGrammar()
    
   
 ## Examples  
- The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects. The explicit cast operators in the calls to the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods are optional.  
+ The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](https://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects. The explicit cast operators in the calls to the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods are optional.  
   
 ```csharp  
   
@@ -946,7 +946,7 @@ private Grammar CreateColorGrammar()
    
   
 ## Examples  
- The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects. The explicit cast operators in the calls to the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods are optional.  
+ The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](https://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects. The explicit cast operators in the calls to the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods are optional.  
   
 ```csharp  
   
@@ -1026,7 +1026,7 @@ private Grammar CreateColorGrammar()
    
   
 ## Examples  
- The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects. The explicit cast operators in the calls to the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods are optional.  
+ The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](https://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects. The explicit cast operators in the calls to the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods are optional.  
   
 ```csharp  
   
@@ -1106,7 +1106,7 @@ private Grammar CreateColorGrammar()
    
   
 ## Examples  
- The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects. The explicit cast operators in the calls to the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods are optional.  
+ The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](https://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects. The explicit cast operators in the calls to the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods are optional.  
   
 ```csharp  
   
@@ -1158,7 +1158,7 @@ private Grammar CreateColorGrammar()
 > [!IMPORTANT]
 >  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. 
   
- For more information about building and using speech recognition grammars, see [Speech Recognition](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361633(v=office.14)) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ For more information about building and using speech recognition grammars, see [Speech Recognition](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361633(v=office.14)) and [Creating GrammarBuilder Grammars](https://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
   
  ]]></format>
         </remarks>
@@ -1634,7 +1634,7 @@ namespace SampleRecognition
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The subset element is added to the end of the current sequence of elements. For more information about building a speech recognition grammar using strings, see [Using Strings to Create a GrammarBuilder Grammar](http://msdn.microsoft.com/library/0d87b445-a342-4369-9b3f-91d07fd7e114).  
+ The subset element is added to the end of the current sequence of elements. For more information about building a speech recognition grammar using strings, see [Using Strings to Create a GrammarBuilder Grammar](https://msdn.microsoft.com/library/0d87b445-a342-4369-9b3f-91d07fd7e114).  
   
  For detailed information on the use of subset matching modes, see <xref:System.Speech.Recognition.SubsetMatchingMode?displayProperty=nameWithType>.  
   
@@ -1966,7 +1966,7 @@ grammarWithDictation.Name = "Grammar with Dictation";
   
  These methods can read a speech recognition grammar from the following formats.  
   
--   XML-format files that conform to the W3C [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761)  
+-   XML-format files that conform to the W3C [Speech Recognition Grammar Specification (SRGS) Version 1.0](https://go.microsoft.com/fwlink/?LinkId=201761)  
   
 -   Binary files that conform to the Microsoft Speech Recognition Grammar Binary Format (.cfg file extension)  
   
@@ -2428,7 +2428,7 @@ private static Grammar CreatePizzaGrammar()
 > [!IMPORTANT]
 >  Caution is recommended when combining <xref:System.Speech.Recognition.Choices> or <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances with other grammar elements. The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. 
   
- For more information about building and using speech recognition grammars, see [Speech Recognition](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361633(v=office.14)) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ For more information about building and using speech recognition grammars, see [Speech Recognition](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361633(v=office.14)) and [Creating GrammarBuilder Grammars](https://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
   
  ]]></format>
         </remarks>
@@ -2539,7 +2539,7 @@ private static Grammar CreatePizzaGrammar()
  The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.Speech.Recognition.GrammarBuilder%2CSystem.Speech.Recognition.Choices%29?displayProperty=nameWithType>  
   
 ## Examples  
- The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects.  
+ The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](https://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects.  
   
 ```csharp  
   
@@ -2728,7 +2728,7 @@ private Grammar CreateColorGrammar()
  The equivalent method for this operator is <xref:System.Speech.Recognition.GrammarBuilder.Add%28System.String%2CSystem.Speech.Recognition.GrammarBuilder%29?displayProperty=nameWithType>  
   
 ## Examples  
- The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](http://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects.  
+ The following example creates a speech recognition grammar that can recognize the two phrases, "Make background *color*" and "Set background to *color*", where *color* is selected from a set of colors. Various types are used to build the final grammar, such as [String](https://go.microsoft.com/fwlink/?LinkId=159733), <xref:System.Speech.Recognition.Choices>, and <xref:System.Speech.Recognition.GrammarBuilder> objects.  
   
 ```csharp  
   

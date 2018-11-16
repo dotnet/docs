@@ -32,7 +32,7 @@
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewCancelEventArgs> object to display a message when the user cancels the insert or update operation in a <xref:System.Web.UI.WebControls.ListView> control. The <xref:System.Web.UI.WebControls.ListViewCancelEventArgs> object is passed to the event-handling method for the <xref:System.Web.UI.WebControls.ListView.ItemCanceling> event.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemCanceling#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemCanceling/CS/ListViewItemCancelingCS.aspx#1)]
  [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemCanceling#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemCanceling/VB/ListViewItemCancelingVB.aspx#1)]  
@@ -41,7 +41,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.ListView" />
     <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCanceling" />
-    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -87,7 +87,7 @@
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCanceling" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewCancelEventArgs.CancelMode" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewCancelEventArgs.ItemIndex" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelMode">
@@ -132,7 +132,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCanceling" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
@@ -180,7 +180,7 @@
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="P:System.Web.UI.WebControls.ListView.Items" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemCanceling" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
   </Members>

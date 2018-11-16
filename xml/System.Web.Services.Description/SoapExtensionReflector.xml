@@ -27,7 +27,7 @@
   
  Use a class derived from the <xref:System.Web.Services.Description.SoapExtensionReflector> class in conjunction with a class derived from the abstract <xref:System.Web.Services.Protocols.SoapExtension> class to extend run-time processing of SOAP messages on the client or service.  
   
- You can specify <xref:System.Web.Services.Description.SoapExtensionReflector> in a configuration file via the [\<soapExtensionReflectorTypes> Element](http://msdn.microsoft.com/library/6950609a-c9a3-4f6f-a5fc-a05d6d204d5c) element and its child **add** element. You can also apply the configuration to an ASP.NET Web application that publishes a Web service.  
+ You can specify <xref:System.Web.Services.Description.SoapExtensionReflector> in a configuration file via the [\<soapExtensionReflectorTypes> Element](https://msdn.microsoft.com/library/6950609a-c9a3-4f6f-a5fc-a05d6d204d5c) element and its child **add** element. You can also apply the configuration to an ASP.NET Web application that publishes a Web service.  
   
  ]]></format>
     </remarks>

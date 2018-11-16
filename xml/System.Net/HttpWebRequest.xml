@@ -111,8 +111,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Net.WebPermission">to access the requested URI or any URI that the request is redirected to. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
-    <related type="Article" href="http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f">DefaultProxy Element (Network Settings)</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/8bf0b428-5a21-4299-8d6e-bf8251fd978a">Changes to NTLM authentication for HTTPWebRequest in Version 3.5 SP1</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f">DefaultProxy Element (Network Settings)</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/8bf0b428-5a21-4299-8d6e-bf8251fd978a">Changes to NTLM authentication for HTTPWebRequest in Version 3.5 SP1</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -298,7 +298,7 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
  The <xref:System.Net.HttpWebRequest.Abort%2A> method will synchronously execute the callback specified to the <xref:System.Net.HttpWebRequest.BeginGetRequestStream%2A> or <xref:System.Net.HttpWebRequest.BeginGetResponse%2A> methods if the <xref:System.Net.HttpWebRequest.Abort%2A> method is called while either of these operations are outstanding. This can lead to potential deadlock issues.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing](http://msdn.microsoft.com/library/e993b7c3-087f-45d8-9c02-9dded936d804).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing](https://msdn.microsoft.com/library/e993b7c3-087f-45d8-9c02-9dded936d804).  
   
    
   
@@ -1384,7 +1384,7 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
         <exception cref="T:System.Net.WebException">
           <see cref="M:System.Net.HttpWebRequest.Abort" /> was previously called.</exception>
         <exception cref="T:System.ObjectDisposedException">In a .NET Compact Framework application, a request stream with zero content length was not obtained and closed correctly. For more information about handling zero content length requests, see [Network Programming in the .NET Compact Framework](https://msdn.microsoft.com/subscriptions/downloads/1afx2b0f\(v=vs.80\).aspx).</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f">DefaultProxy Element (Network Settings)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f">DefaultProxy Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="BeginGetResponse">
@@ -1445,7 +1445,7 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
 >  Your application cannot mix synchronous and asynchronous methods for a particular request. If you call the <xref:System.Net.HttpWebRequest.BeginGetRequestStream%2A> method, you must use the <xref:System.Net.HttpWebRequest.BeginGetResponse%2A> method to retrieve the response.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [&#91;\<topic://conUsingNetworkTracing>&#93;](http://msdn.microsoft.com/library/e993b7c3-087f-45d8-9c02-9dded936d804).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [&#91;\<topic://conUsingNetworkTracing>&#93;](https://msdn.microsoft.com/library/e993b7c3-087f-45d8-9c02-9dded936d804).  
   
    
   
@@ -1486,7 +1486,7 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
  The <see cref="P:System.Net.HttpWebRequest.ContentLength" /> is greater than zero, but the application does not write all of the promised data.</exception>
         <exception cref="T:System.Net.WebException">
           <see cref="M:System.Net.HttpWebRequest.Abort" /> was previously called.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f">DefaultProxy Element (Network Settings)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f">DefaultProxy Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="ClientCertificates">
@@ -2541,7 +2541,7 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
         <exception cref="T:System.ArgumentException">
           <see langword="Expect" /> is set to a string that contains "100-continue" as a substring.</exception>
         <altmember cref="P:System.Net.Configuration.HttpWebRequestElement.MaximumUnauthorizedUploadLength" />
-        <related type="Article" href="http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f">DefaultProxy Element (Network Settings)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f">DefaultProxy Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -2722,7 +2722,7 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
   
  An error occurred while processing the request.</exception>
         <exception cref="T:System.ObjectDisposedException">In a .NET Compact Framework application, a request stream with zero content length was not obtained and closed correctly. For more information about handling zero content length requests, see [Network Programming in the .NET Compact Framework](https://msdn.microsoft.com/subscriptions/downloads/1afx2b0f\(v=vs.80\).aspx).</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f">DefaultProxy Element (Network Settings)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f">DefaultProxy Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="GetRequestStream">
@@ -2919,7 +2919,7 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
   
  An error occurred while processing the request.</exception>
         <altmember cref="P:System.Net.HttpWebRequest.Timeout" />
-        <related type="Article" href="http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f">DefaultProxy Element (Network Settings)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f">DefaultProxy Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="HaveResponse">
@@ -3769,10 +3769,10 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
         <exception cref="T:System.InvalidOperationException">The request has been started by calling <see cref="M:System.Net.HttpWebRequest.GetRequestStream" />, <see cref="M:System.Net.HttpWebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />, <see cref="M:System.Net.HttpWebRequest.GetResponse" />, or <see cref="M:System.Net.HttpWebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have permission for the requested operation.</exception>
         <permission cref="T:System.Net.WebPermission">To get or set the <see cref="P:System.Net.HttpWebRequest.Proxy" /> property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
-        <related type="Article" href="http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f">DefaultProxy Element (Network Settings)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/bb707c72-eed2-4a82-8800-c9e68df2fd4f">Configuring Internet Applications</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/353c0a8b-4cee-44f6-8e65-60e286743df9">Proxy Configuration</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/fcd9c3bd-93de-4c92-8ff3-837327ad18de">Automatic Proxy Detection</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f">DefaultProxy Element (Network Settings)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/bb707c72-eed2-4a82-8800-c9e68df2fd4f">Configuring Internet Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/353c0a8b-4cee-44f6-8e65-60e286743df9">Proxy Configuration</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcd9c3bd-93de-4c92-8ff3-837327ad18de">Automatic Proxy Detection</related>
       </Docs>
     </Member>
     <Member MemberName="ReadWriteTimeout">
@@ -4376,7 +4376,7 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
   
 -   Run your application in a protected environment to help avoid possible connection exploits.  
   
- If you control the back-end server, as an alternative you might consider turning off authentication persistence. This increases performance to a lesser degree, but it is safer. For more details, search for AuthPersistence in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+ If you control the back-end server, as an alternative you might consider turning off authentication persistence. This increases performance to a lesser degree, but it is safer. For more details, search for AuthPersistence in the MSDN library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
   
 > [!NOTE]
 >  If both <xref:System.Net.WebRequest.PreAuthenticate%2A> and <xref:System.Net.HttpWebRequest.UnsafeAuthenticatedConnectionSharing%2A> are set to `true`, each request is sent using a connection from the unsafe pool, but with an Authorization header.  

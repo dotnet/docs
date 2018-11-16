@@ -28,7 +28,7 @@
 ## Examples  
  The following example shows how to search the Name column in the Products table of the AdventureWorks database for products whose that start with the string that is specified in the `SearchTextBox` control. The result that is returned from the <xref:System.Web.UI.WebControls.LinqDataSource> control is displayed in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- This code example is part of a larger example that is provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/library/b305ae31-1a1b-4d07-a678-51457c17614f).  
+ This code example is part of a larger example that is provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](https://msdn.microsoft.com/library/b305ae31-1a1b-4d07-a678-51457c17614f).  
   
   
   
@@ -36,7 +36,7 @@
     </remarks>
     <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.Expressions.SearchExpression.DataFields" /> property is <see langword="null" /> (<see langword="Nothing" /> in Visual Basic)</exception>
     <altmember cref="T:System.Web.UI.WebControls.QueryExtender" />
-    <related type="Article" href="http://msdn.microsoft.com/library/b93e32b9-af41-4539-a009-6cbbe809c702">QueryExtender Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/b93e32b9-af41-4539-a009-6cbbe809c702">QueryExtender Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -117,7 +117,7 @@
    
   
 ## Examples  
- The following example shows how to search the Name and the ProductNumber data fields in the Products table of the AdventureWorks database for products that have names that start with a specified string. This code example is part of a larger example provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/library/b305ae31-1a1b-4d07-a678-51457c17614f).  
+ The following example shows how to search the Name and the ProductNumber data fields in the Products table of the AdventureWorks database for products that have names that start with a specified string. This code example is part of a larger example provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](https://msdn.microsoft.com/library/b305ae31-1a1b-4d07-a678-51457c17614f).  
   
 ```  
 <asp:SearchExpression SearchType="StartsWith"   

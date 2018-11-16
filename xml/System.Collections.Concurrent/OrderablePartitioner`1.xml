@@ -50,8 +50,8 @@
  ]]></format>
     </remarks>
     <threadsafe>All public members of <see cref="T:System.Collections.Concurrent.OrderablePartitioner`1" /> are thread-safe and may be called from multiple threads concurrently.</threadsafe>
-    <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,10 +95,10 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="GetDynamicPartitions">
@@ -146,10 +146,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Dynamic partitioning is not supported by the base class. It must be implemented in derived classes.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="GetOrderableDynamicPartitions">
@@ -197,10 +197,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Dynamic partitioning is not supported by this partitioner.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="GetOrderablePartitions">
@@ -248,10 +248,10 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="GetPartitions">
@@ -297,10 +297,10 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="KeysNormalized">
@@ -383,10 +383,10 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="KeysOrderedInEachPartition">
@@ -426,10 +426,10 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
   </Members>

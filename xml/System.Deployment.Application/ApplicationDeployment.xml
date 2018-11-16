@@ -24,7 +24,7 @@
   
  You can test whether your deployment has an available update by using either the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> or the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync%2A> method; the latter method raises the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateCompleted> event on successful completion. <xref:System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate%2A> returns important information about the update, such as its version number and whether it is a required update for current users. If an update is available, you can install it by using <xref:System.Deployment.Application.ApplicationDeployment.Update%2A> or <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A>; the latter method raises the <xref:System.Deployment.Application.ApplicationDeployment.UpdateCompleted> event after installation of the update is complete. For large updates, you can receive progress notifications through the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateProgressChanged> and <xref:System.Deployment.Application.ApplicationDeployment.UpdateProgressChanged> events, and use the information in <xref:System.ComponentModel.ProgressChangedEventArgs> to notify the user of the download status.  
   
- You can also use <xref:System.Deployment.Application.ApplicationDeployment> to download large files and assemblies on demand. These files must be marked as "optional" within the deployment's application manifest so that they are not downloaded during installation. You can download the files at any point during the application's duration by using the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> or the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> method. You can download assemblies before they are loaded into memory by supplying an event handler for the <xref:System.AppDomain.AssemblyResolve> event on the <xref:System.AppDomain> class. For more information, see [Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API Using the Designer](http://msdn.microsoft.com/library/59a0dd5f-1cab-4f2f-b780-0ab7399905d5).  
+ You can also use <xref:System.Deployment.Application.ApplicationDeployment> to download large files and assemblies on demand. These files must be marked as "optional" within the deployment's application manifest so that they are not downloaded during installation. You can download the files at any point during the application's duration by using the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> or the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> method. You can download assemblies before they are loaded into memory by supplying an event handler for the <xref:System.AppDomain.AssemblyResolve> event on the <xref:System.AppDomain> class. For more information, see [Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API Using the Designer](https://msdn.microsoft.com/library/59a0dd5f-1cab-4f2f-b780-0ab7399905d5).  
   
 > [!NOTE]
 >  If you update a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application while the application is running, the user will not see the updates until you call the <xref:System.Windows.Forms.Application.Restart%2A> method of the <xref:System.Windows.Forms.Application>, which will close the current running instance of the application and immediately restart it.  
@@ -47,7 +47,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/59a0dd5f-1cab-4f2f-b780-0ab7399905d5">Walkthrough: Downloading Assemblies On Demand with the ClickOnce Deployment API Using the Designer</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/59a0dd5f-1cab-4f2f-b780-0ab7399905d5">Walkthrough: Downloading Assemblies On Demand with the ClickOnce Deployment API Using the Designer</related>
   </Docs>
   <Members>
     <Member MemberName="ActivationUri">
@@ -327,7 +327,7 @@
 ## Remarks  
  Use this method to cancel an update check initiated with the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync%2A> method.  
   
- This method will not cancel any background update that may already be in progress, such as an update started as part of a subscription. For more information about subscriptions, see [Choosing a ClickOnce Update Strategy](http://msdn.microsoft.com/library/d8b6e7bb-4ea0-47f3-91cd-48580bdceccc).  
+ This method will not cancel any background update that may already be in progress, such as an update started as part of a subscription. For more information about subscriptions, see [Choosing a ClickOnce Update Strategy](https://msdn.microsoft.com/library/d8b6e7bb-4ea0-47f3-91cd-48580bdceccc).  
   
  ]]></format>
         </remarks>
@@ -539,9 +539,9 @@
 ## Remarks  
  In a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application, the files marked "optional" in the application manifest are not downloaded during initialization or update. You can use the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> method to download all of the files belonging to a named group on demand, so that they do not consume network resources and disk space until you are sure the user requires them. For example, certain users may need to use a data analysis package included in your application on a daily basis, while other users may never invoke it.  
   
- To use an assembly you have downloaded with <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A>, you attach an event listener to the <xref:System.AppDomain.AssemblyResolve> event on the <xref:System.AppDomain.CurrentDomain%2A>. For an example, see =[Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API Using the Designer](http://msdn.microsoft.com/library/59a0dd5f-1cab-4f2f-b780-0ab7399905d5).  
+ To use an assembly you have downloaded with <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A>, you attach an event listener to the <xref:System.AppDomain.AssemblyResolve> event on the <xref:System.AppDomain.CurrentDomain%2A>. For an example, see =[Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API Using the Designer](https://msdn.microsoft.com/library/59a0dd5f-1cab-4f2f-b780-0ab7399905d5).  
   
- All files are downloaded to the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application cache and are therefore isolated to the current version of the application. Let's say that after an application downloads a file group, the user installs a new version of the application, but later reverts to the previous version of the application. In this case, the previous version will still have the copies of the files it originally downloaded. For more information about accessing data files, see [Accessing Local and Remote Data in ClickOnce Applications](http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).  
+ All files are downloaded to the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application cache and are therefore isolated to the current version of the application. Let's say that after an application downloads a file group, the user installs a new version of the application, but later reverts to the previous version of the application. In this case, the previous version will still have the copies of the files it originally downloaded. For more information about accessing data files, see [Accessing Local and Remote Data in ClickOnce Applications](https://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).  
   
  <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> works in partially trusted applications, that is, in any [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application running with restricted permission. However, if you attempt to load assemblies dynamically, your application will require full trust.  
   
@@ -562,11 +562,11 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="groupName" /> parameter is null or zero-length.</exception>
         <altmember cref="Overload:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fdaa553f-a27e-44eb-a4e2-08c122105a87">Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243">ClickOnce Application Manifest</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d">Accessing Local and Remote Data in ClickOnce Applications</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc">How to: Include a Data File in a ClickOnce Application</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e379921e-9ef1-4326-bbf3-53ba67925526">Architecture of the ClickOnce Cache</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fdaa553f-a27e-44eb-a4e2-08c122105a87">Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243">ClickOnce Application Manifest</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d">Accessing Local and Remote Data in ClickOnce Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc">How to: Include a Data File in a ClickOnce Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e379921e-9ef1-4326-bbf3-53ba67925526">Architecture of the ClickOnce Cache</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="DownloadFileGroupAsync">
@@ -606,11 +606,11 @@
 ## Remarks  
  In a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application, the files marked "optional" in the application manifest are not downloaded during initialization or update. You can use the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> method to download all of the files belonging to a named group on demand, so that they do not consume network resources and disk space until you are sure the user requires them. This approach works not only for static files, but also for assemblies that an application may or may not require. For example, certain users may need to use a data analysis package included in your application on a daily basis, while other users may never invoke it.  
   
- To download assemblies on demand, attach an event listener to the <xref:System.AppDomain.AssemblyResolve> event on the <xref:System.AppDomain.CurrentDomain%2A>. For an example, see [Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API](http://msdn.microsoft.com/library/d20e2789-8621-4806-b5b7-841122da1456).  
+ To download assemblies on demand, attach an event listener to the <xref:System.AppDomain.AssemblyResolve> event on the <xref:System.AppDomain.CurrentDomain%2A>. For an example, see [Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API](https://msdn.microsoft.com/library/d20e2789-8621-4806-b5b7-841122da1456).  
   
  All assemblies are downloaded to the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application cache.  
   
- All static files are downloaded to the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application's data directory and are therefore isolated to the current version of the application. Let's say that after an application downloads a file group, the user installs a new version of the application, but later reverts to the previous version of the application. In this case, the previous version will still have the copies of the files it originally downloaded. For more information about accessing static files, see [Accessing Local and Remote Data in ClickOnce Applications](http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).  
+ All static files are downloaded to the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application's data directory and are therefore isolated to the current version of the application. Let's say that after an application downloads a file group, the user installs a new version of the application, but later reverts to the previous version of the application. In this case, the previous version will still have the copies of the files it originally downloaded. For more information about accessing static files, see [Accessing Local and Remote Data in ClickOnce Applications](https://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).  
   
  You can download multiple file groups simultaneously using <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A>. You can distinguish among them by using the <xref:System.Deployment.Application.DeploymentProgressChangedEventArgs.Group%2A> property of the <xref:System.Deployment.Application.DeploymentProgressChangedEventArgs> class, which is passed to the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupProgressChanged> event. If you need to pass more complex state, you can use <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> to pass in a `state` object.  
   
@@ -627,11 +627,11 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="groupName" /> parameter is null or zero-length.</exception>
         <exception cref="T:System.InvalidOperationException">You cannot initiate more than one download of <paramref name="groupName" /> at a time.</exception>
         <altmember cref="M:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup(System.String)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fdaa553f-a27e-44eb-a4e2-08c122105a87">Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243">ClickOnce Application Manifest</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d">Accessing Local and Remote Data in ClickOnce Applications</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc">How to: Include a Data File in a ClickOnce Application</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e379921e-9ef1-4326-bbf3-53ba67925526">Architecture of the ClickOnce Cache</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fdaa553f-a27e-44eb-a4e2-08c122105a87">Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243">ClickOnce Application Manifest</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d">Accessing Local and Remote Data in ClickOnce Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc">How to: Include a Data File in a ClickOnce Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e379921e-9ef1-4326-bbf3-53ba67925526">Architecture of the ClickOnce Cache</related>
       </Docs>
     </Member>
     <Member MemberName="DownloadFileGroupAsync">
@@ -668,7 +668,7 @@
   
  <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> to pass in a `state` object.  
   
- All static files are downloaded to the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application's data directory and are therefore isolated to the current version of the application. For more information about accessing static files, see [Accessing Local and Remote Data in ClickOnce Applications](http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d). . Let's say that after an application downloads a file group, the user installs a new version of the application, but later  user reverts to the previous version of the application. In this case, the previous version will still have the copies of the files it originally downloaded.  
+ All static files are downloaded to the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application's data directory and are therefore isolated to the current version of the application. For more information about accessing static files, see [Accessing Local and Remote Data in ClickOnce Applications](https://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d). . Let's say that after an application downloads a file group, the user installs a new version of the application, but later  user reverts to the previous version of the application. In this case, the previous version will still have the copies of the files it originally downloaded.  
   
  <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> works in partially trusted applications, that is, in any [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application running with restricted permission. However, if you are attempting to load assemblies dynamically, your application will require full trust.  
   
@@ -681,11 +681,11 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="groupName" /> parameter is null or zero-length.</exception>
         <exception cref="T:System.InvalidOperationException">You cannot initiate more than one download of <paramref name="groupName" /> at a time.</exception>
         <altmember cref="M:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup(System.String)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fdaa553f-a27e-44eb-a4e2-08c122105a87">Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243">ClickOnce Application Manifest</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d">Accessing Local and Remote Data in ClickOnce Applications</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc">How to: Include a Data File in a ClickOnce Application</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e379921e-9ef1-4326-bbf3-53ba67925526">Architecture of the ClickOnce Cache</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fdaa553f-a27e-44eb-a4e2-08c122105a87">Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243">ClickOnce Application Manifest</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d">Accessing Local and Remote Data in ClickOnce Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc">How to: Include a Data File in a ClickOnce Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e379921e-9ef1-4326-bbf3-53ba67925526">Architecture of the ClickOnce Cache</related>
       </Docs>
     </Member>
     <Member MemberName="DownloadFileGroupAsyncCancel">
@@ -963,7 +963,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
-        <related type="Article" href="http://msdn.microsoft.com/library/d8b6e7bb-4ea0-47f3-91cd-48580bdceccc">Choosing a ClickOnce Update Strategy</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d8b6e7bb-4ea0-47f3-91cd-48580bdceccc">Choosing a ClickOnce Update Strategy</related>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -1015,7 +1015,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Deployment.Application.TrustNotGrantedException">The local computer did not grant the application the permission level it requested to execute.</exception>
-        <exception cref="T:System.Deployment.Application.InvalidDeploymentException">Your [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment is corrupted. For tips on how to diagnose and correct the problem, see [Troubleshooting ClickOnce Deployments](http://msdn.microsoft.com/library/58e90012-f68b-4852-8ae9-58e361cbcc32).</exception>
+        <exception cref="T:System.Deployment.Application.InvalidDeploymentException">Your [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment is corrupted. For tips on how to diagnose and correct the problem, see [Troubleshooting ClickOnce Deployments](https://msdn.microsoft.com/library/58e90012-f68b-4852-8ae9-58e361cbcc32).</exception>
         <exception cref="T:System.Deployment.Application.DeploymentDownloadException">The new deployment could not be downloaded from its location on the network.</exception>
         <exception cref="T:System.InvalidOperationException">The application is currently being updated.</exception>
         <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
@@ -1023,8 +1023,8 @@
         <altmember cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync" />
         <altmember cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdate" />
         <altmember cref="M:System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d8b6e7bb-4ea0-47f3-91cd-48580bdceccc">Choosing a ClickOnce Update Strategy</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/a05b5f2f-d1f2-471a-8096-8b11f7554265">ClickOnce Deployment and Security</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d8b6e7bb-4ea0-47f3-91cd-48580bdceccc">Choosing a ClickOnce Update Strategy</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a05b5f2f-d1f2-471a-8096-8b11f7554265">ClickOnce Deployment and Security</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
@@ -1076,12 +1076,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Deployment.Application.TrustNotGrantedException">The local computer did not grant this application the permission level it requested to execute.</exception>
-        <exception cref="T:System.Deployment.Application.InvalidDeploymentException">Your [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment is corrupted. For tips on how to diagnose and correct the problem, see [Troubleshooting ClickOnce Deployments](http://msdn.microsoft.com/library/58e90012-f68b-4852-8ae9-58e361cbcc32).</exception>
+        <exception cref="T:System.Deployment.Application.InvalidDeploymentException">Your [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment is corrupted. For tips on how to diagnose and correct the problem, see [Troubleshooting ClickOnce Deployments](https://msdn.microsoft.com/library/58e90012-f68b-4852-8ae9-58e361cbcc32).</exception>
         <exception cref="T:System.Deployment.Application.DeploymentDownloadException">The new deployment could not be downloaded from its location on the network.</exception>
         <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
         <altmember cref="E:System.Deployment.Application.ApplicationDeployment.UpdateCompleted" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d8b6e7bb-4ea0-47f3-91cd-48580bdceccc">Choosing a ClickOnce Update Strategy</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/a05b5f2f-d1f2-471a-8096-8b11f7554265">ClickOnce Deployment and Security</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d8b6e7bb-4ea0-47f3-91cd-48580bdceccc">Choosing a ClickOnce Update Strategy</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a05b5f2f-d1f2-471a-8096-8b11f7554265">ClickOnce Deployment and Security</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateAsyncCancel">
@@ -1112,7 +1112,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
-        <related type="Article" href="http://msdn.microsoft.com/library/d8b6e7bb-4ea0-47f3-91cd-48580bdceccc">Choosing a ClickOnce Update Strategy</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d8b6e7bb-4ea0-47f3-91cd-48580bdceccc">Choosing a ClickOnce Update Strategy</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateCompleted">
@@ -1251,7 +1251,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
-        <related type="Article" href="http://msdn.microsoft.com/library/7faacd35-2638-492d-80f6-6b57e5f820de">How to: Specify an Alternate Location for Deployment Updates</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7faacd35-2638-492d-80f6-6b57e5f820de">How to: Specify an Alternate Location for Deployment Updates</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateProgressChanged">

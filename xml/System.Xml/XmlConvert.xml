@@ -470,7 +470,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about allowed characters, see the [XML 1.0 spec (fourth edition)](http://go.microsoft.com/fwlink/?LinkId=147985) recommendation.  
+ For details about allowed characters, see the [XML 1.0 spec (fourth edition)](https://go.microsoft.com/fwlink/?LinkId=147985) recommendation.  
   
  ]]></format>
         </remarks>
@@ -513,7 +513,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about allowed characters, see the [XML 1.0 spec (fourth edition)](http://go.microsoft.com/fwlink/?LinkID=147985) recommendation.  
+ For details about allowed characters, see the [XML 1.0 spec (fourth edition)](https://go.microsoft.com/fwlink/?LinkID=147985) recommendation.  
   
  ]]></format>
         </remarks>
@@ -556,7 +556,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about allowed characters, see the [XML 1.0 spec (fourth edition)](http://go.microsoft.com/fwlink/?LinkId=147985) recommendation.  
+ For details about allowed characters, see the [XML 1.0 spec (fourth edition)](https://go.microsoft.com/fwlink/?LinkId=147985) recommendation.  
   
  ]]></format>
         </remarks>
@@ -1046,7 +1046,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
         <exception cref="T:System.ArgumentNullException">
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The argument passed to this method is outside the range of allowable values. For information about allowable values, see <see cref="T:System.DateTimeOffset" />.</exception>
-        <exception cref="T:System.FormatException">The argument passed to this method does not conform to a subset of the W3C Recommendations for the XML dateTime type. For more information see [http://www.w3.org/TR/xmlschema-2/#dateTime](http://go.microsoft.com/fwlink/?LinkId=97914).</exception>
+        <exception cref="T:System.FormatException">The argument passed to this method does not conform to a subset of the W3C Recommendations for the XML dateTime type. For more information see [http://www.w3.org/TR/xmlschema-2/#dateTime](https://go.microsoft.com/fwlink/?LinkId=97914).</exception>
       </Docs>
     </Member>
     <Member MemberName="ToDateTimeOffset">
@@ -2931,7 +2931,7 @@ catch(Exception e) {
 ## Remarks  
  No other values than the passed in argument should be returned. The characters valid for public id do not vary between XML editions, so no `XmlVersion` overload is required.  
   
- See [XML 1.0 spec (fourth edition)](http://go.microsoft.com/fwlink/?LinkID=147985) production [13] `PublidChar` for details on the allowed characters  
+ See [XML 1.0 spec (fourth edition)](https://go.microsoft.com/fwlink/?LinkID=147985) production [13] `PublidChar` for details on the allowed characters  
   
  If the parameter is null, an `ArgumentNullException` will be thrown. If any of the characters are not valid public id characters, an `XmlException` is thrown with information about the first invalid character encountered.  
   
@@ -2987,7 +2987,7 @@ catch(Exception e) {
 }  
 ```  
   
- For more information on tokens, see [http://www.w3.org/TR/2001/REC-xmlschema-2-20010502/#token](http://go.microsoft.com/fwlink/?LinkId=103183).  
+ For more information on tokens, see [http://www.w3.org/TR/2001/REC-xmlschema-2-20010502/#token](https://go.microsoft.com/fwlink/?LinkId=103183).  
   
  ]]></format>
         </remarks>
@@ -3036,7 +3036,7 @@ catch(Exception e) {
 ## Remarks  
  No other values than the passed in argument should be returned. The characters that are valid for whitespace do not vary between XML editions, so no xml version overload is required.  
   
- See [XML 1.0 spec (fourth edition)](http://go.microsoft.com/fwlink/?LinkID=147985) production [3] S for details on the allowed characters.  
+ See [XML 1.0 spec (fourth edition)](https://go.microsoft.com/fwlink/?LinkID=147985) production [3] S for details on the allowed characters.  
   
  If the parameter is null, an `ArgumentNullException` will be thrown.  
   
@@ -3094,7 +3094,7 @@ catch(Exception e) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- No other values than the passed in argument should be returned. See [XML 1.0 spec (fourth edition)](http://go.microsoft.com/fwlink/?LinkID=147985) production [2] `Char` for details on the allowed characters.  
+ No other values than the passed in argument should be returned. See [XML 1.0 spec (fourth edition)](https://go.microsoft.com/fwlink/?LinkID=147985) production [2] `Char` for details on the allowed characters.  
   
  If the parameter is null, an `ArgumentNullException` will be thrown. If any of the characters are not valid xml characters, an `XmlException` is thrown with information on the first invalid character encountered.  
   

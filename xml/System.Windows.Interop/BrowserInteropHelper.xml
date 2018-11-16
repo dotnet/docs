@@ -79,7 +79,7 @@
 ## Remarks  
  With the returned <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> object, you can access the properties, methods, and events of the HTML window object, call a script function directly, or access a global variable. The syntax to access these items uses the familiar dot notation.  
   
- For more information about the window object, see [window object](http://go.microsoft.com/fwlink/?LinkId=160274) in the Dynamic HTML (DHTML) documentation.  
+ For more information about the window object, see [window object](https://go.microsoft.com/fwlink/?LinkId=160274) in the Dynamic HTML (DHTML) documentation.  
   
  The <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> property returns `null` if the frame is navigated to from a cross-domain location.  
   

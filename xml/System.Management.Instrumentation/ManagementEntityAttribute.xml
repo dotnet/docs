@@ -197,7 +197,7 @@ public class MortgageCalcWMIProvider
 ## Remarks  
  A singleton WMI class is one for which there can only ever be a single instance. Although you could code the logic to ensure that only a single instance of a WMI class is ever created, this parameter attribute is provided to make the task easy and consistent.  
   
- When working with singleton WMI classes, client applications must use special syntax. For more information, see the Describing an Instance Object Path topic in the MSDN online library at [http://www.msdn.com](http://www.msdn.com/).  
+ When working with singleton WMI classes, client applications must use special syntax. For more information, see the Describing an Instance Object Path topic in the MSDN online library at [http://www.msdn.com](https://www.msdn.com/).  
   
    
   
@@ -209,7 +209,7 @@ public class MortgageCalcWMIProvider
 public class SingletonSample  
 ```  
   
- For a complete, working example of a provider that implements a singleton class, see [How to: Create a Basic Decoupled Provider](http://msdn.microsoft.com/library/1dabd442-c1ff-40a1-bb0e-d7b3566c2300).  
+ For a complete, working example of a provider that implements a singleton class, see [How to: Create a Basic Decoupled Provider](https://msdn.microsoft.com/library/1dabd442-c1ff-40a1-bb0e-d7b3566c2300).  
   
  ]]></format>
         </remarks>

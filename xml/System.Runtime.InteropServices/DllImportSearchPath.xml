@@ -111,7 +111,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>When searching for assembly dependencies, include the directory that contains the assembly itself, and search that directory first. This value is used by the .NET Framework, before the paths are passed to the Win32 <see href="http://go.microsoft.com/fwlink/?LinkId=236091">LoadLibraryEx</see> function.</summary>
+        <summary>When searching for assembly dependencies, include the directory that contains the assembly itself, and search that directory first. This value is used by the .NET Framework, before the paths are passed to the Win32 <see href="https://go.microsoft.com/fwlink/?LinkId=236091">LoadLibraryEx</see> function.</summary>
       </Docs>
     </Member>
     <Member MemberName="LegacyBehavior">
@@ -146,7 +146,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Search the application directory, and then call the Win32 [LoadLibraryEx](http://go.microsoft.com/fwlink/?LinkId=236091) function with the <c>LOAD_WITH_ALTERED_SEARCH_PATH</c> flag. This value is ignored if any other value is specified. Operating systems that do not support the <see cref="T:System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute" /> attribute use this value, and ignore other values.</summary>
+        <summary>Search the application directory, and then call the Win32 [LoadLibraryEx](https://go.microsoft.com/fwlink/?LinkId=236091) function with the <c>LOAD_WITH_ALTERED_SEARCH_PATH</c> flag. This value is ignored if any other value is specified. Operating systems that do not support the <see cref="T:System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute" /> attribute use this value, and ignore other values.</summary>
       </Docs>
     </Member>
     <Member MemberName="SafeDirectories">

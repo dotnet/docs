@@ -28,7 +28,7 @@
     </remarks>
     <altmember cref="T:System.Data.OleDb.OleDbDataAdapter" />
     <altmember cref="T:System.Data.OleDb.OleDbConnection" />
-    <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Begin">
@@ -38,7 +38,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initiates a nested database transaction.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Begin">
@@ -71,7 +71,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Nested transactions are not supported.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </Member>
     <Member MemberName="Begin">
@@ -107,7 +107,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Nested transactions are not supported.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </Member>
     <Member MemberName="Commit">
@@ -147,7 +147,7 @@
  -or-  
   
  The connection is broken.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -178,7 +178,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </Member>
     <Member MemberName="DbConnection">
@@ -277,7 +277,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </Member>
     <Member MemberName="Rollback">
@@ -322,7 +322,7 @@
  -or-  
   
  The connection is broken.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Performing Transactions</related>
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">

@@ -23,7 +23,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.SystemInformation> class provides `static` properties that can be used to get information about the current system environment. The class provides access to information such as Windows display element sizes, operating system settings, network availability, and the capabilities of hardware installed on the system. This class cannot be instantiated.  
   
- For more information about system-wide parameters, see "SystemParametersInfo" in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com).  
+ For more information about system-wide parameters, see "SystemParametersInfo" in the Platform SDK documentation at [http://msdn.microsoft.com](https://msdn.microsoft.com).  
   
    
   
@@ -3370,7 +3370,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.SystemInformation.MouseWheelScrollLines%2A> property indicates how many lines to scroll, by default, in a multi-line control that has a scroll bar. The corresponding Platform SDK system-wide parameters are SPI_GETWHEELSCROLLLINES and SPI_SETWHEELSCROLLLINES. For more information about system-wide parameters, see "SystemParametersInfo" in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com/).  
+ The <xref:System.Windows.Forms.SystemInformation.MouseWheelScrollLines%2A> property indicates how many lines to scroll, by default, in a multi-line control that has a scroll bar. The corresponding Platform SDK system-wide parameters are SPI_GETWHEELSCROLLLINES and SPI_SETWHEELSCROLLLINES. For more information about system-wide parameters, see "SystemParametersInfo" in the Platform SDK documentation at [http://msdn.microsoft.com](https://msdn.microsoft.com/).  
   
 > [!NOTE]
 >  Be sure to handle the special case that occurs if the "One screen at a time" mouse option is selected. In this case, the <xref:System.Windows.Forms.SystemInformation.MouseWheelScrollLines%2A> property has a value of -1.  

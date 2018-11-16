@@ -28,8 +28,8 @@
     <summary>Traps errors and formats messages for the appropriate device. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
-    <related type="Article" href="http://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539">Best Practices for Handling Exceptions</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539">Best Practices for Handling Exceptions</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,8 +49,8 @@
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Web.Mobile.ErrorHandlerModule" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539">Best Practices for Handling Exceptions</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539">Best Practices for Handling Exceptions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.IHttpModule.Dispose">
@@ -73,8 +73,8 @@
       <Docs>
         <summary>Disposes of the resources (other than memory) used by the module. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539">Best Practices for Handling Exceptions</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539">Best Practices for Handling Exceptions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.IHttpModule.Init">
@@ -100,8 +100,8 @@
         <param name="application">An <see cref="T:System.Web.HttpApplication" /> that provides access to the methods, properties, and events common to all application objects within an ASP.NET application.</param>
         <summary>Initializes the module and prepares it to handle requests. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539">Best Practices for Handling Exceptions</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539">Best Practices for Handling Exceptions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
       </Docs>
     </Member>
   </Members>

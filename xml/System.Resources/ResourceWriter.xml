@@ -71,8 +71,8 @@
     </remarks>
     <altmember cref="T:System.Resources.IResourceWriter" />
     <altmember cref="T:System.IDisposable" />
-    <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Desktop Apps</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Desktop Apps</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -255,7 +255,7 @@
           <paramref name="name" /> (or a name that varies only by capitalization) has already been added to this <see cref="T:System.Resources.ResourceWriter" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Resources.ResourceWriter" /> has been closed and its hash table is unavailable.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
       </Docs>
     </Member>
     <Member MemberName="AddResource">
@@ -318,7 +318,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> or <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Resources.ResourceWriter" /> has been closed.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
       </Docs>
     </Member>
     <Member MemberName="AddResource">
@@ -384,7 +384,7 @@
           <paramref name="name" /> (or a name that varies only by capitalization) has already been added to this <see cref="T:System.Resources.ResourceWriter" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Resources.ResourceWriter" /> has been closed and its hash table is unavailable.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
       </Docs>
     </Member>
     <Member MemberName="AddResource">
@@ -450,7 +450,7 @@
           <paramref name="name" /> (or a name that varies only by capitalization) has already been added to this ResourceWriter.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Resources.ResourceWriter" /> has been closed and its hash table is unavailable.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
       </Docs>
     </Member>
     <Member MemberName="AddResource">
@@ -516,7 +516,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> or <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Resources.ResourceWriter" /> has been closed.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d">Creating Resource Files for Desktop Apps</related>
       </Docs>
     </Member>
     <Member MemberName="AddResourceData">

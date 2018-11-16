@@ -24,7 +24,7 @@
 ## Remarks  
  <xref:System.Web.Services.Protocols.LogicalMethodInfo> is used primarily by a SOAP extension to interrogate the details of the XML Web service method with which the SOAP extension is configured to run. Depending on how the SOAP extension is configured, it can find out details about the XML Web service method in the <xref:System.Web.Services.Protocols.SoapExtension.GetInitializer%2A> method of <xref:System.Web.Services.Protocols.SoapExtension> that takes a <xref:System.Web.Services.Protocols.LogicalMethodInfo>. The <xref:System.Web.Services.Protocols.LogicalMethodInfo> provides details such as the XML Web service method's parameters by accessing the <xref:System.Web.Services.Protocols.LogicalMethodInfo.Parameters%2A> property and any custom attributes applied to the XML Web service method using the <xref:System.Web.Services.Protocols.LogicalMethodInfo.GetCustomAttributes%2A> property.  
   
- For more details on SOAP extensions see the <xref:System.Web.Services.Protocols.SoapExtension> class or [&#91;\<topic://cpconAlteringSOAPMessageUsingSOAPExtensions>&#93;](http://msdn.microsoft.com/library/97d81ace-95e7-4acc-ae39-9692a0021e95).  
+ For more details on SOAP extensions see the <xref:System.Web.Services.Protocols.SoapExtension> class or [&#91;\<topic://cpconAlteringSOAPMessageUsingSOAPExtensions>&#93;](https://msdn.microsoft.com/library/97d81ace-95e7-4acc-ae39-9692a0021e95).  
   
  ]]></format>
     </remarks>

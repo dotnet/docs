@@ -25,14 +25,14 @@
  The <xref:System.Web.Management.MailWebEventProvider> class is a base class for building providers that monitor Web events and send email for selected events. This class supports the .NET Framework infrastructure and is not intended to be inherited from or used directly from your code.  
   
 > [!NOTE]
->  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `<healthMonitoring>` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of creating a custom provider, see [How to: Implement the Health Monitoring Custom Provider Example](http://msdn.microsoft.com/library/bbb1c959-e6e4-42b2-be62-49b7ca5ab72c).  
+>  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `<healthMonitoring>` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of creating a custom provider, see [How to: Implement the Health Monitoring Custom Provider Example](https://msdn.microsoft.com/library/bbb1c959-e6e4-42b2-be62-49b7ca5ab72c).  
   
  ]]></format>
     </remarks>
     <forInternalUseOnly />
     <altmember cref="T:System.Web.Management.WebEventProvider" />
     <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2">Installing and Configuring ASP.NET Providers</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2">Installing and Configuring ASP.NET Providers</related>
   </Docs>
   <Members>
     <Member MemberName="Initialize">

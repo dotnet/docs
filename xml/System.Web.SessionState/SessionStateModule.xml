@@ -28,13 +28,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.SessionState.SessionStateModule> is ASP.NET's default session-state handler. It writes session data to and retrieves it from the session-state store and raises the **Session_OnStart** and **Session_OnEnd** events. For details about how to use ASP.NET session state to store and retrieve values for a user session, see [ASP.NET Session State Overview](http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
+ <xref:System.Web.SessionState.SessionStateModule> is ASP.NET's default session-state handler. It writes session data to and retrieves it from the session-state store and raises the **Session_OnStart** and **Session_OnEnd** events. For details about how to use ASP.NET session state to store and retrieve values for a user session, see [ASP.NET Session State Overview](https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
   
  You can replace the <xref:System.Web.SessionState.SessionStateModule> with a custom implementation of the <xref:System.Web.IHttpModule> interface that manages session state. For an example of a custom session-state module, see the <xref:System.Web.SessionState.SessionStateUtility> class overview.  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,7 +63,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -99,7 +99,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -136,7 +136,7 @@
   
  Though the <xref:System.Web.SessionState.SessionStateModule.End> event is public, you can only handle it by adding an event handler in the Global.asax file. This restriction is implemented because <xref:System.Web.HttpApplication> instances are reused for performance. When a session expires, only the **Session_OnEnd** event specified in the Global.asax file is executed, to prevent code from calling  an <xref:System.Web.SessionState.SessionStateModule.End> event handler associated with an <xref:System.Web.HttpApplication> instance that is currently in use.  
   
- For more information about the Global.asax file, see [Global.asax Syntax](http://msdn.microsoft.com/library/9ade9d4d-4d52-4e88-af52-53a9ffa26582).  
+ For more information about the Global.asax file, see [Global.asax Syntax](https://msdn.microsoft.com/library/9ade9d4d-4d52-4e88-af52-53a9ffa26582).  
   
    
   
@@ -171,7 +171,7 @@ public void Session_OnEnd()
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -210,13 +210,13 @@ public void Session_OnEnd()
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Web.HttpException">The <see langword="mode" /> attribute in the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) configuration element is set to <see cref="F:System.Web.SessionState.SessionStateMode.StateServer" /> or <see cref="F:System.Web.SessionState.SessionStateMode.SQLServer" />, and the ASP.NET application has less than <see cref="F:System.Web.AspNetHostingPermissionLevel.Medium" /> trust.</exception>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">The <see langword="mode" /> attribute in the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) configuration element is set to <see cref="F:System.Web.SessionState.SessionStateMode.Custom" /> and the <see langword="customProvider" /> attribute is empty or does not exist.  
+        <exception cref="T:System.Web.HttpException">The <see langword="mode" /> attribute in the [sessionState Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) configuration element is set to <see cref="F:System.Web.SessionState.SessionStateMode.StateServer" /> or <see cref="F:System.Web.SessionState.SessionStateMode.SQLServer" />, and the ASP.NET application has less than <see cref="F:System.Web.AspNetHostingPermissionLevel.Medium" /> trust.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The <see langword="mode" /> attribute in the [sessionState Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) configuration element is set to <see cref="F:System.Web.SessionState.SessionStateMode.Custom" /> and the <see langword="customProvider" /> attribute is empty or does not exist.  
   
  -or-  
   
- The <see langword="mode" /> attribute in the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) configuration element is set to <see cref="F:System.Web.SessionState.SessionStateMode.Custom" /> and the provider identified by name in the <see langword="customProvider" /> attribute has not been added to the [providers Element for sessionState (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/219d6778-9fb8-48ac-810d-bec68cf7d6aa) sub-element.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+ The <see langword="mode" /> attribute in the [sessionState Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) configuration element is set to <see cref="F:System.Web.SessionState.SessionStateMode.Custom" /> and the provider identified by name in the <see langword="customProvider" /> attribute has not been added to the [providers Element for sessionState (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/219d6778-9fb8-48ac-810d-bec68cf7d6aa) sub-element.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ReleaseSessionState">
@@ -303,7 +303,7 @@ public void Session_OnEnd()
   
  You can specify a handler for the <xref:System.Web.SessionState.SessionStateModule.Start> event by adding a public subroutine named **Session_OnStart** to the Global.asax file.  
   
- For more information about the Global.asax file, see [Global.asax Syntax](http://msdn.microsoft.com/library/9ade9d4d-4d52-4e88-af52-53a9ffa26582).  
+ For more information about the Global.asax file, see [Global.asax Syntax](https://msdn.microsoft.com/library/9ade9d4d-4d52-4e88-af52-53a9ffa26582).  
   
    
   
@@ -338,7 +338,7 @@ public void Session_OnEnd()
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
   </Members>

@@ -59,7 +59,7 @@ Visual class hierarchy
   
  In [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the maximum depth of a <xref:System.Windows.Media.Visual> is 2047, which enables much deeper visual trees. In most applications, there is not enough stack space to traverse so many levels, and the result is a <xref:System.StackOverflowException> during layout. For the default stack size, this exception is usually thrown when the tree depth is approximately 800, which corresponds to about 190 nested <xref:System.Windows.Controls.TreeViewItem> objects.  
   
- If this exception is thrown by your application and you need to have a deeper visual tree, you can increase the application's stack size. You can increase the size of the stack by using the /STACK option at compile time or by using the EDITBIN utility. Increasing the stack size may affect your application's performance. For more information, see [Stack Allocations](http://go.microsoft.com/fwlink/?LinkId=165510) and [EDITBIN Options](http://go.microsoft.com/fwlink/?LinkId=165511).  
+ If this exception is thrown by your application and you need to have a deeper visual tree, you can increase the application's stack size. You can increase the size of the stack by using the /STACK option at compile time or by using the EDITBIN utility. Increasing the stack size may affect your application's performance. For more information, see [Stack Allocations](https://go.microsoft.com/fwlink/?LinkId=165510) and [EDITBIN Options](https://go.microsoft.com/fwlink/?LinkId=165511).  
   
  ]]></format>
     </remarks>

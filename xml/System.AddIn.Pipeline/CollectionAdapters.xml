@@ -22,11 +22,11 @@
 ## Remarks  
  This class provides methods that enable an <xref:System.Collections.Generic.IList%601> collection to be converted to a <xref:System.AddIn.Contract.IListContract%601> collection. The <xref:System.AddIn.Contract.IListContract%601> collection is passed across the isolation boundary and converted back to an <xref:System.Collections.Generic.IList%601> collection that the add-in or the host application can use.  
   
- Objects in collections must be remotable. For more information about the object types that you can pass, see [Contracts, Views, and Adapters](http://msdn.microsoft.com/library/a6460173-9507-4b87-8c07-d4ee245d715c).  
+ Objects in collections must be remotable. For more information about the object types that you can pass, see [Contracts, Views, and Adapters](https://msdn.microsoft.com/library/a6460173-9507-4b87-8c07-d4ee245d715c).  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/8dd45b02-7218-40f9-857d-40d7b98b850b">Add-Ins and Extensibility</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/8dd45b02-7218-40f9-857d-40d7b98b850b">Add-Ins and Extensibility</related>
   </Docs>
   <Members>
     <Member MemberName="ToIList&lt;T&gt;">
@@ -67,7 +67,7 @@
    
   
 ## Examples  
- The following example implements a host-side adapter pipeline segment as described [Walkthrough: Passing Collections Between Hosts and Add-Ins](http://msdn.microsoft.com/library/b532c604-548e-4fab-b11c-377257dd0ee5). The example adapts the custom `ProcessBooks` method by taking the <xref:System.AddIn.Contract.IListContract%601> collection passed from the add-in and converting it to an <xref:System.Collections.Generic.IList%601> collection, which the host application can then use.  
+ The following example implements a host-side adapter pipeline segment as described [Walkthrough: Passing Collections Between Hosts and Add-Ins](https://msdn.microsoft.com/library/b532c604-548e-4fab-b11c-377257dd0ee5). The example adapts the custom `ProcessBooks` method by taking the <xref:System.AddIn.Contract.IListContract%601> collection passed from the add-in and converting it to an <xref:System.Collections.Generic.IList%601> collection, which the host application can then use.  
   
  [!code-csharp[AddInCollectionPipelineAddInSideAdapter#3](~/samples/snippets/csharp/VS_Snippets_CLR/AddInCollectionPipelineAddInSideAdapter/cs/LibraryManagerViewToContractAddInAdapter.cs#3)]
  [!code-vb[AddInCollectionPipelineAddInSideAdapter#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/AddInCollectionPipelineAddInSideAdapter/vb/LibraryManagerViewToContractAddInAdapter.vb#3)]  

@@ -161,7 +161,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.MobileControls.MobilePage.ActiveForm%2A> property of a <xref:System.Web.UI.MobileControls.Form> control. If the current mobile device allows for access keys for controls, the button will display the access key that submits the form.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MobileMobilePageSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileMobilePageSample/cs/Default.aspx#1)]
  [!code-aspx-vb[MobileMobilePageSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileMobilePageSample/vb/Default.aspx#1)]  
@@ -337,7 +337,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.MobileControls.MobilePage.AllowCustomAttributes%2A> property to enable the custom `AccessKey` attribute on the <xref:System.Web.UI.MobileControls.Command>.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if you copy it directly into a code-behind file. You must copy this code sample into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if you copy it directly into a code-behind file. You must copy this code sample into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MobileMobilePageSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileMobilePageSample/cs/Default.aspx#1)]
  [!code-aspx-vb[MobileMobilePageSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileMobilePageSample/vb/Default.aspx#1)]  
@@ -419,7 +419,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The type of writer created is determined by the adapter associated with the current mobile device. For more information about how to map adapters to devices, see [Adapter Mappings](http://msdn.microsoft.com/library/8437a6a5-855c-4637-8654-75a87b293847).  
+ The type of writer created is determined by the adapter associated with the current mobile device. For more information about how to map adapters to devices, see [Adapter Mappings](https://msdn.microsoft.com/library/8437a6a5-855c-4637-8654-75a87b293847).  
   
  ]]></format>
         </remarks>

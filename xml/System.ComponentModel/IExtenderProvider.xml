@@ -33,12 +33,12 @@
   
  Any component that provides extender properties must implement <xref:System.ComponentModel.IExtenderProvider>. A visual designer can then call <xref:System.ComponentModel.IExtenderProvider.CanExtend%2A> to determine which objects in a container should receive the extender properties.  
   
- For more information about extender providers, see [How to: Implement an Extender Provider](http://msdn.microsoft.com/library/d824f40e-b20b-464c-ac22-97974d5ab4fe).  
+ For more information about extender providers, see [How to: Implement an Extender Provider](https://msdn.microsoft.com/library/d824f40e-b20b-464c-ac22-97974d5ab4fe).  
   
    
   
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.ComponentModel.IExtenderProvider> interface. This example is part of a larger example discussed in [How to: Implement a HelpLabel Extender Provider](http://msdn.microsoft.com/library/21e34929-ff78-4f3f-aee8-a16a4ef5ac9d).  
+ The following code example demonstrates how to implement the <xref:System.ComponentModel.IExtenderProvider> interface. This example is part of a larger example discussed in [How to: Implement a HelpLabel Extender Provider](https://msdn.microsoft.com/library/21e34929-ff78-4f3f-aee8-a16a4ef5ac9d).  
   
  [!code-csharp[System.Windows.Forms.HelpLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HelpLabel/CS/HelpLabel.cs#1)]
  [!code-vb[System.Windows.Forms.HelpLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HelpLabel/VB/HelpLabel.vb#1)]  
@@ -87,12 +87,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information on extender properties, see [How to: Implement an Extender Provider](http://msdn.microsoft.com/library/d824f40e-b20b-464c-ac22-97974d5ab4fe).  
+ For more information on extender properties, see [How to: Implement an Extender Provider](https://msdn.microsoft.com/library/d824f40e-b20b-464c-ac22-97974d5ab4fe).  
   
    
   
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.ComponentModel.IExtenderProvider.CanExtend%2A> property. This example is part of a larger example discussed in [How to: Implement a HelpLabel Extender Provider](http://msdn.microsoft.com/library/21e34929-ff78-4f3f-aee8-a16a4ef5ac9d).  
+ The following code example demonstrates how to implement the <xref:System.ComponentModel.IExtenderProvider.CanExtend%2A> property. This example is part of a larger example discussed in [How to: Implement a HelpLabel Extender Provider](https://msdn.microsoft.com/library/21e34929-ff78-4f3f-aee8-a16a4ef5ac9d).  
   
  [!code-csharp[System.Windows.Forms.HelpLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HelpLabel/CS/HelpLabel.cs#1)]
  [!code-vb[System.Windows.Forms.HelpLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HelpLabel/VB/HelpLabel.vb#1)]  

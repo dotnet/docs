@@ -31,7 +31,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using the Web Parts control set, you can enable two server controls to form a connection and share data, with one control acting as the provider, and the other acting as the consumer of the data. The two controls can be <xref:System.Web.UI.WebControls.WebParts.WebPart> controls or any other type of server control, provided that they are designed to handle connections, and that they are residing in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone. To learn more about Web Parts connections, see the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> and <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint> class overviews, as well as [Web Parts Connections Overview](http://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b).  
+ Using the Web Parts control set, you can enable two server controls to form a connection and share data, with one control acting as the provider, and the other acting as the consumer of the data. The two controls can be <xref:System.Web.UI.WebControls.WebParts.WebPart> controls or any other type of server control, provided that they are designed to handle connections, and that they are residing in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone. To learn more about Web Parts connections, see the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> and <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint> class overviews, as well as [Web Parts Connections Overview](https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b).  
   
  Provided that the requisite controls and conditions exist to form a Web Parts connection, it is still necessary to actually connect the controls. There are three ways to form a connection between server controls: declaring a connection in a Web page, creating a connection in code, or adding a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control to the page so that users can connect the controls on demand. The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control generates a UI that enables users to connect or disconnect any server controls on a page that meet the conditions necessary to form a connection. It is an optional control that is not necessary to form connections, but is useful in the case where you want to give users control over which server controls are connected or disconnected.  
   
@@ -71,14 +71,14 @@
   
 -   An explanation of how the example works in a browser.  
   
- The first part of this code example is the user control that enables users to switch display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to switch display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_ConnectionZone_Overview#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/displaymodemenucs.ascx#6)]
  [!code-aspx-vb[WebParts_ConnectionZone_Overview#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/DisplayModeMenuVB.ascx#6)]  
   
  The second part of the example is the source file with the interface and custom controls. Notice that the `ZipCodeWebPart` control implements the `IZipCode` interface, adding a `ConnectionProvider` attribute so that the control can act as a provider for a connection. The `WeatherWebPart` control has a method marked with a `ConnectionConsumer` attribute, where it consumes the `IZipCode` interface, so it can act as a consumer in a connection.  
   
- For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_ConnectionZone_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_ConnectionZone_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/ZipCodeComponent.vb#2)]  
@@ -99,8 +99,8 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionPoint" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Web Parts Connections Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Web Parts Connections Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -146,7 +146,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CancelVerb">
@@ -374,7 +374,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ConfigureVerb">
@@ -1111,7 +1111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
@@ -1749,7 +1749,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>

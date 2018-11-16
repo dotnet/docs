@@ -23,7 +23,7 @@
  With <xref:System.Deployment.Application.UpdateCheckInfo>, you can decide whether to upgrade your ClickOnce application based on information about the newest version. <xref:System.Deployment.Application.UpdateCheckInfo.UpdateAvailable%2A> will return a Boolean value indicating whether there is a new update at all. The <xref:System.Deployment.Application.UpdateCheckInfo.AvailableVersion%2A> property provides the version number of the new version, while <xref:System.Deployment.Application.UpdateCheckInfo.MinimumRequiredVersion%2A> provides the earliest version that the user should have installed. <xref:System.Deployment.Application.UpdateCheckInfo.IsUpdateRequired%2A> expresses whether the latest available update is required of the user. Finally, <xref:System.Deployment.Application.UpdateCheckInfo.UpdateSizeBytes%2A> expresses the total size of the update.  
   
 > [!NOTE]
->  Visual Studio adds the `<deploymentProvider>` element to the manifest only if the application is set to check for updates, so you either have to check **The application should check for updates** or specify an update URL in **Update location** in the [Application Updates Dialog Box](http://msdn.microsoft.com/library/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f).  
+>  Visual Studio adds the `<deploymentProvider>` element to the manifest only if the application is set to check for updates, so you either have to check **The application should check for updates** or specify an update URL in **Update location** in the [Application Updates Dialog Box](https://msdn.microsoft.com/library/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f).  
   
    
   

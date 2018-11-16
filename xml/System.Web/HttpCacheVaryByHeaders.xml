@@ -23,13 +23,13 @@
 ## Remarks  
  The <xref:System.Web.HttpCachePolicy.VaryByHeaders%2A> property identifies which request header parameters ASP.NET uses to uniquely identify a variation of the response when there are multiple cached responses for a resource. This is useful when a response depends on a set of client inputs, such as headers or parameters.  
   
- The <xref:System.Web.HttpCacheVaryByHeaders> is not directly related to HTTP cache-control headers, but helps ensure that a client or proxy varies by the specified headers. For more information about `VaryByHeaders`, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125). See section 14, "Header Field Definitions", for complete details.  
+ The <xref:System.Web.HttpCacheVaryByHeaders> is not directly related to HTTP cache-control headers, but helps ensure that a client or proxy varies by the specified headers. For more information about `VaryByHeaders`, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](https://go.microsoft.com/fwlink/?linkid=37125). See section 14, "Header Field Definitions", for complete details.  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.HttpCacheVaryByParams" />
-    <related type="Article" href="http://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/5032122d-221f-4fed-a5a7-90011f5f88fd">How to: Cache Versions of a Page, Based on HTTP Headers</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/5032122d-221f-4fed-a5a7-90011f5f88fd">How to: Cache Versions of a Page, Based on HTTP Headers</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,7 +81,7 @@
 ## Remarks  
  The `Vary` header indicates the request-header fields that the server varies the response by the `Accept` field and specifies that the server selects the response based on the media types acceptable to the client.  
   
- For more information on HTTP headers, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125). See section 14, "Header Field Definitions", for complete details.  
+ For more information on HTTP headers, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](https://go.microsoft.com/fwlink/?linkid=37125). See section 14, "Header Field Definitions", for complete details.  
   
    
   
@@ -148,7 +148,7 @@
 ## Remarks  
  The `Vary` header indicates the request-header fields that the server varies the response by.  
   
- For more information, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125). See section 14, "Header Field Definitions", for complete details.  
+ For more information, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](https://go.microsoft.com/fwlink/?linkid=37125). See section 14, "Header Field Definitions", for complete details.  
   
  The <xref:System.Web.HttpCacheVaryByHeaders.VaryByUnspecifiedParameters%2A> method is called internally if the specified `header` has the value * (an asterisk).  
   
@@ -156,8 +156,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="header" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/5032122d-221f-4fed-a5a7-90011f5f88fd">How to: Cache Versions of a Page, Based on HTTP Headers</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5032122d-221f-4fed-a5a7-90011f5f88fd">How to: Cache Versions of a Page, Based on HTTP Headers</related>
       </Docs>
     </Member>
     <Member MemberName="SetHeaders">
@@ -216,7 +216,7 @@
 ## Remarks  
  The `Vary` header indicates the request-header fields that the server uses to determine which of multiple cached responses is sent in response to a client request. The `User-Agent` field specifies that the server selects the response based on the client's user-agent type.  
   
- For more information, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125). See section 14, "Header Field Definitions", for complete details.  
+ For more information, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](https://go.microsoft.com/fwlink/?linkid=37125). See section 14, "Header Field Definitions", for complete details.  
   
    
   
@@ -262,7 +262,7 @@
 ## Remarks  
  The `Vary` header indicates the request-header fields that the server uses to determine which of multiple cached responses is sent in response to a client request. The `Accept-CharSet` field specifies that the server selects the response based on the client's character set.  
   
- For more information, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125). See section 14, "Header Field Definitions", for complete details.  
+ For more information, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](https://go.microsoft.com/fwlink/?linkid=37125). See section 14, "Header Field Definitions", for complete details.  
   
    
   
@@ -308,7 +308,7 @@
 ## Remarks  
  The `Vary` header indicates the request-header fields that the server uses to determine which of multiple cached responses is sent in response to a client request. The `Accept-Language` field specifies that the server selects the response based on languages acceptable to the client.  
   
- For more information, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125). See section 14, "Header Field Definitions", for complete details.  
+ For more information, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](https://go.microsoft.com/fwlink/?linkid=37125). See section 14, "Header Field Definitions", for complete details.  
   
    
   
@@ -348,7 +348,7 @@
 ## Remarks  
  The `Vary` header indicates the request-header fields that the server uses to determine which of multiple cached responses is sent in response to a client request. The * value specifies that the server selects the response based on parameters not specified in request headers (for example, the network address of the client).  
   
- For more information, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125). See section 14, "Header Field Definitions", for complete details.  
+ For more information, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](https://go.microsoft.com/fwlink/?linkid=37125). See section 14, "Header Field Definitions", for complete details.  
   
  ]]></format>
         </remarks>

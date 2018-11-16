@@ -45,7 +45,7 @@
     <block subset="none" type="overrides">
       <para>Derived classes of <see cref="T:System.Resources.ResXResourceSet" /> that use their own resource reader and writer should override the <see cref="M:System.Resources.ResXResourceSet.GetDefaultReader" /> and <see cref="M:System.Resources.ResXResourceSet.GetDefaultWriter" /> methods to provide the appropriate functionality for interpreting the <see cref="T:System.Resources.ResXResourceSet" /> instance.</para>
     </block>
-    <related type="Article" href="http://msdn.microsoft.com/library/168f941a-2b84-43f8-933f-cf4a8548d824">Working with .resx Files Programmatically</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/168f941a-2b84-43f8-933f-cf4a8548d824">Working with .resx Files Programmatically</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

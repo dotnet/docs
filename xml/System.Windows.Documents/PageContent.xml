@@ -38,7 +38,7 @@
   
  The <xref:System.Windows.Documents.PageContent.Source%2A> dependency property specifies the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the corresponding <xref:System.Windows.Documents.FixedPage>.  
   
- For more information about the <xref:System.Windows.Documents.PageContent> element, see Chapter 3 of the XPS *Open XML Paper Specification* available for download at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
+ For more information about the <xref:System.Windows.Documents.PageContent> element, see Chapter 3 of the XPS *Open XML Paper Specification* available for download at [XPS: Specification and License Downloads](https://www.microsoft.com/whdc/xps/downloads.mspx).  
   
    
   
@@ -127,7 +127,7 @@
   
 1.  The <xref:System.Windows.Documents.FixedPage> is set by the <xref:System.Windows.Documents.PageContent.Source%2A> property (when specified by the <xref:System.Windows.Documents.PageContent.Source%2A> property, the <xref:System.Windows.Documents.FixedPage> is not cached).  Use <xref:System.Windows.Documents.PageContent.GetPageRoot%2A> or <xref:System.Windows.Documents.PageContent.GetPageRootAsync%2A> to return the <xref:System.Windows.Documents.FixedPage> when set by the <xref:System.Windows.Documents.PageContent.Source%2A> property.  
   
- For more information about the <xref:System.Windows.Documents.PageContent> element, see Chapter 3 of the XPS *XML Paper Specification* available for download at [http://www.microsoft.com/whdc/xps/xpsspec.mspx](http://www.microsoft.com/whdc/xps/xpsspec.mspx).  
+ For more information about the <xref:System.Windows.Documents.PageContent> element, see Chapter 3 of the XPS *XML Paper Specification* available for download at [http://www.microsoft.com/whdc/xps/xpsspec.mspx](https://www.microsoft.com/whdc/xps/xpsspec.mspx).  
   
 <a name="xamlTextUsage_Child"></a>   
 ## XAML Text Usage  
@@ -212,7 +212,7 @@
   
 3.  When the <xref:System.Windows.Documents.PageContent.GetPageRootCompleted> event occurs and the delegate is called, the <xref:System.Windows.Documents.FixedPage> content has completed loading.  The loaded <xref:System.Windows.Documents.FixedPage> element is returned through the <xref:System.Windows.Documents.GetPageRootCompletedEventArgs>.<xref:System.Windows.Documents.GetPageRootCompletedEventArgs.Result%2A> property.  
   
- For more information about the `<PageContent>` element, see chapter 3 of the XPS specification which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
+ For more information about the `<PageContent>` element, see chapter 3 of the XPS specification which you can obtain at [XPS: Specification and License Downloads](https://www.microsoft.com/whdc/xps/downloads.mspx).  
   
  ]]></format>
         </remarks>
@@ -314,7 +314,7 @@
 ## Remarks  
  <xref:System.Windows.Documents.PageContent.LinkTargets%2A> will never return `null`, but the collection may contain zero elements.  
   
- For more information about the `<PageContent>` element, see chapter 3 of the XPS specification which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
+ For more information about the `<PageContent>` element, see chapter 3 of the XPS specification which you can obtain at [XPS: Specification and License Downloads](https://www.microsoft.com/whdc/xps/downloads.mspx).  
   
  ]]></format>
         </remarks>
@@ -401,7 +401,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the `<PageContent>` element and its `Source` attribute, see chapter 3 of the XPS specification which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
+ For more information about the `<PageContent>` element and its `Source` attribute, see chapter 3 of the XPS specification which you can obtain at [XPS: Specification and License Downloads](https://www.microsoft.com/whdc/xps/downloads.mspx).  
   
 <a name="dependencyPropertyInfo_Source"></a>   
 ## Dependency Property Information  

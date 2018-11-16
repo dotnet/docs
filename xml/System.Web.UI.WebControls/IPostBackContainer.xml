@@ -19,7 +19,7 @@
 ## Remarks  
  Classes that implement the <xref:System.Web.UI.WebControls.IPostBackContainer> interface enable buttons to get a <xref:System.Web.UI.PostBackOptions> object that is used to create the correct postback event reference.  
   
- For more information about postback processing, see [ASP.NET Web Forms Server Control Event Model](http://msdn.microsoft.com/library/6304bff7-1b0e-4641-8acb-6d3b0badc4a3).  
+ For more information about postback processing, see [ASP.NET Web Forms Server Control Event Model](https://msdn.microsoft.com/library/6304bff7-1b0e-4641-8acb-6d3b0badc4a3).  
   
  Controls that implement the <xref:System.Web.UI.WebControls.IPostBackContainer> interface should also implement the <xref:System.Web.UI.IPostBackEventHandler> interface to handle events raised by contained buttons.  
   

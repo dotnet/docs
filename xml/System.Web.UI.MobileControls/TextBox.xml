@@ -72,7 +72,7 @@
  The <xref:System.Web.UI.MobileControls.TextBox> allows only single-line text input. This control also implements the <xref:System.Web.UI.IPostBackDataHandler> interface; it can accept input and generate postbacks. With devices using WML, however, entered data might not post back to the server. When the user enters values in a text box, the values are stored in the <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property, which is inherited from the <xref:System.Web.UI.MobileControls.TextControl> base class.  
   
 > [!NOTE]
->  A <xref:System.Web.UI.MobileControls.TextBox> accepts user input, which is a potential security threat. By default, ASP.NET Mobile Web Forms pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  A <xref:System.Web.UI.MobileControls.TextBox> accepts user input, which is a potential security threat. By default, ASP.NET Mobile Web Forms pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  ]]></format>
     </remarks>

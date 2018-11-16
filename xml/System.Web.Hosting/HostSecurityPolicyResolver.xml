@@ -48,8 +48,8 @@
     <exception cref="T:System.Configuration.ConfigurationErrorsException">The <see cref="P:System.Web.Configuration.TrustSection.HostSecurityPolicyResolverType" /> attribute has an invalid value or cannot be found.</exception>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for the inheriting type. This class cannot be inherited by partially trusted code.</permission>
     <altmember cref="T:System.Security.HostSecurityManager" />
-    <related type="Article" href="http://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127">Code Access Security</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/7a0c04df-a1f1-47dc-9561-d6a2a8a90474">ASP.NET Application Security in Hosted Environments</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127">Code Access Security</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/7a0c04df-a1f1-47dc-9561-d6a2a8a90474">ASP.NET Application Security in Hosted Environments</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

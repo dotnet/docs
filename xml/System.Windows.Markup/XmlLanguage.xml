@@ -29,7 +29,7 @@
   
  This class is useful for dealing with values represented using `xml:lang` in XML.  
   
- Language tags can be specified in two-character form or in a hyphenated language-locale form. See [RFC 3066](http://go.microsoft.com/fwlink/?LinkId=132454).  
+ Language tags can be specified in two-character form or in a hyphenated language-locale form. See [RFC 3066](https://go.microsoft.com/fwlink/?LinkId=132454).  
   
  Note that the XML specification allows the empty string for `xml:lang`, although that is not permitted by RFC 3066; therefore, the <xref:System.Windows.Markup.XmlLanguage> type permits "" (empty attribute string). A default-constructed <xref:System.Windows.Markup.XmlLanguage> behaves as if constructed with "" (empty string).  
   
@@ -144,7 +144,7 @@
 ## Remarks  
  This method is effectively the constructor.  
   
- The language string may be empty, or else must conform to [RFC 3066](http://go.microsoft.com/fwlink/?LinkId=132454) rules:  
+ The language string may be empty, or else must conform to [RFC 3066](https://go.microsoft.com/fwlink/?LinkId=132454) rules:  
   
 -   The first subtag must consist of only [!INCLUDE[TLA#tla_ascii](~/includes/tlasharptla-ascii-md.md)] letters.  
   

@@ -23,7 +23,7 @@
 ## Remarks  
  The <xref:System.Web.UI.Html32TextWriter> class is an alternative to the <xref:System.Web.UI.HtmlTextWriter> class. It converts HTML 4.0 style attributes into the equivalent HTML 3.2 tags and attributes. It standardizes the propagation of attributes, such as colors and fonts, using HTML tables. ASP.NET automatically uses this class for HTML 3.2 and earlier browsers by checking the <xref:System.Web.Configuration.HttpCapabilitiesBase.TagWriter%2A> property of the <xref:System.Web.HttpBrowserCapabilities> class. Unless you create a custom page or control adapter that targets devices that use HTML 3.2 markup, you do not need to create an instance of the <xref:System.Web.UI.Html32TextWriter> class explicitly.  
   
- For more information about customizing page and control rendering, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ For more information about customizing page and control rendering, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
    
   
@@ -36,7 +36,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.HtmlTextWriter" />
-    <related type="Article" href="http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08">Walkthrough: Developing and Using a Custom Server Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08">Walkthrough: Developing and Using a Custom Server Control</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

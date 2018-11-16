@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Configuration.ProfileSection> class provides a way to programmatically access and modify the content of the configuration file `profile` section. The `profile` section of the configuration file specifies a schema for user profiles. At run time, the ASP.NET compilation system uses the information specified in the `profile` section to generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>. The `ProfileCommon` class definition is based on the properties defined in the `profile` section of the configuration file. The class allows you to access and modify the values for individual profiles. An instance of this class is created for each user profile, and you can access the individual profile values in your code through the <xref:System.Web.HttpContext.Profile%2A?displayProperty=nameWithType> property. For more information about the profile features added to [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)], see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
+ The <xref:System.Web.Configuration.ProfileSection> class provides a way to programmatically access and modify the content of the configuration file `profile` section. The `profile` section of the configuration file specifies a schema for user profiles. At run time, the ASP.NET compilation system uses the information specified in the `profile` section to generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>. The `ProfileCommon` class definition is based on the properties defined in the `profile` section of the configuration file. The class allows you to access and modify the values for individual profiles. An instance of this class is created for each user profile, and you can access the individual profile values in your code through the <xref:System.Web.HttpContext.Profile%2A?displayProperty=nameWithType> property. For more information about the profile features added to [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)], see [ASP.NET Profile Properties Overview](https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
   
    
   
@@ -285,7 +285,7 @@ local Microsoft SQL Server database" />
 > [!NOTE]
 >  If you provide a type reference in the <xref:System.Web.Configuration.ProfileSection.Inherits%2A> property, you can define properties in your custom types that are not defined with a `property` element.  
   
- For more information about the profile features added to [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)], see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
+ For more information about the profile features added to [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)], see [ASP.NET Profile Properties Overview](https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
   
    
   
@@ -299,7 +299,7 @@ local Microsoft SQL Server database" />
         </remarks>
         <altmember cref="T:System.Web.Profile.ProfileModule" />
         <altmember cref="P:System.Type.AssemblyQualifiedName" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8f8c2c90-f15d-400e-87e7-a757e4f04d0e">Assembly Names</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8f8c2c90-f15d-400e-87e7-a757e4f04d0e">Assembly Names</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">

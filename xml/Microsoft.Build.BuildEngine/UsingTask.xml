@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a single <see href="http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43">UsingTask</see> element in an MSBuild project.</summary>
+    <summary>Represents a single <see href="https://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43">UsingTask</see> element in an MSBuild project.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <c>AssemblyFile</c> attribute value of the [UsingTask](http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) element.</summary>
+        <summary>Gets the <c>AssemblyFile</c> attribute value of the [UsingTask](https://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) element.</summary>
         <value>The <c>AssemblyFile</c> attribute value of the <c>UsingTask</c> element.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,7 +61,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <c>AssemblyName</c> attribute value of the [UsingTask](http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) element.</summary>
+        <summary>Gets the <c>AssemblyName</c> attribute value of the [UsingTask](https://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) element.</summary>
         <value>The <c>AssemblyName</c> attribute value of the <c>UsingTask</c> element.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,7 +84,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <c>Condition</c> attribute value of the [UsingTask](http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) element.</summary>
+        <summary>Gets the <c>Condition</c> attribute value of the [UsingTask](https://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) element.</summary>
         <value>The <c>Condition</c> attribute value of the <c>UsingTask</c> element.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -112,7 +112,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the [UsingTask](http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) element was imported into the project.</summary>
+        <summary>Gets a value indicating whether the [UsingTask](https://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) element was imported into the project.</summary>
         <value>
           <see langword="true" /> if the <c>UsingTask</c> element was imported into the project; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -136,7 +136,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <c>TaskName</c> attribute value of the [UsingTask](http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) element.</summary>
+        <summary>Gets the <c>TaskName</c> attribute value of the [UsingTask](https://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) element.</summary>
         <value>The <c>TaskName</c> attribute value of the <c>UsingTask</c> element.</value>
         <remarks>To be added.</remarks>
       </Docs>

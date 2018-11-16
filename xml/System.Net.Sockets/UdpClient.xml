@@ -573,7 +573,7 @@
  If the remote host shuts down or closes the connection, the <xref:System.Net.Sockets.UdpClient.Available%2A> property throws a <xref:System.Net.Sockets.SocketException>.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library)/ for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library)/ for a detailed description of the error.  
   
    
   

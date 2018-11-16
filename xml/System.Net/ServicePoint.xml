@@ -45,7 +45,7 @@
  When the <xref:System.Net.ServicePoint.ConnectionLeaseTimeout> property is set to a value other than -1, and after the specified time elapses, an active <xref:System.Net.ServicePoint> connection is closed after it services the next request. This is useful for applications that do not require active connections that are opened indefinitely, as they are by default.  
   
 > [!NOTE]
->  In high load conditions, some applications may run out of free threads in the ThreadPool, which may lead to poor system performance (such as high and variable transaction times). See [http://msdn.microsoft.com/library/default.asp?url=/library/dnpag/html/scalenetchapt17.asp](http://msdn.microsoft.com/library/default.asp?url=/library/dnpag/html/scalenetchapt17.asp) for a number of configuration changes you can make to fix this issue.  
+>  In high load conditions, some applications may run out of free threads in the ThreadPool, which may lead to poor system performance (such as high and variable transaction times). See [http://msdn.microsoft.com/library/default.asp?url=/library/dnpag/html/scalenetchapt17.asp](https://msdn.microsoft.com/library/default.asp?url=/library/dnpag/html/scalenetchapt17.asp) for a number of configuration changes you can make to fix this issue.  
   
    
   

@@ -40,7 +40,7 @@
 ## Remarks  
  Sites bind a <xref:System.ComponentModel.Component> to a <xref:System.ComponentModel.Container> and enable communication between them, as well as provide a way for the container to manage its components.  
   
- Sites can also serve as a repository for container-specific, per-component information, such as the component name. For more information about components, see [Programming with Components](http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3).  
+ Sites can also serve as a repository for container-specific, per-component information, such as the component name. For more information about components, see [Programming with Components](https://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3).  
   
    
   
@@ -59,7 +59,7 @@
     <altmember cref="T:System.ComponentModel.IComponent" />
     <altmember cref="T:System.ComponentModel.Container" />
     <altmember cref="T:System.ComponentModel.IContainer" />
-    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
   </Docs>
   <Members>
     <Member MemberName="Component">

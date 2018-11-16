@@ -9,7 +9,7 @@
   
  To access types in the <xref:System> namespace from C# code without having to provide fully qualified type names, include the `using System;` statement at the beginning of your source code file.  
   
- To access types in the <xref:System> namespace from C++/CLI code without having to provide fully qualified type names, include the `using namespace System;` statement at the beginning of your source code file. In addition, you must compile with the [/clr](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c) switch.  
+ To access types in the <xref:System> namespace from C++/CLI code without having to provide fully qualified type names, include the `using namespace System;` statement at the beginning of your source code file. In addition, you must compile with the [/clr](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c) switch.  
   
  ]]></format>
     </remarks>

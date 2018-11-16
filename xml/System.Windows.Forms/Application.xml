@@ -209,7 +209,7 @@
   
  <xref:System.Windows.Forms.Application.ProductVersion%2A> first looks to see if the assembly containing the main executable has the `AssemblyInformationalVersion` attribute on it. If this attribute exists, it is used for both <xref:System.Windows.Forms.Application.ProductVersion%2A> and <xref:System.Windows.Forms.Application.CommonAppDataPath%2A>. If this attribute does not exist, both properties use the version of the executable file instead.  
   
- The path will be different depending on whether the Windows Forms application is deployed using [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)]. [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] applications are stored in a per-user application cache in the C:\Documents and Settings\\*username* directory. For more information, see [Accessing Local and Remote Data in ClickOnce Applications](http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).  
+ The path will be different depending on whether the Windows Forms application is deployed using [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)]. [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] applications are stored in a per-user application cache in the C:\Documents and Settings\\*username* directory. For more information, see [Accessing Local and Remote Data in ClickOnce Applications](https://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).  
   
  ]]></format>
         </remarks>
@@ -532,7 +532,7 @@
         <summary>Gets the path for the executable file that started the application, including the executable name.</summary>
         <value>The path and executable name for the executable file that started the application.  
   
- This path will be different depending on whether the Windows Forms application is deployed using [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)]. [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] applications are stored in a per-user application cache in the C:\Documents and Settings\\*username* directory. For more information, see [Accessing Local and Remote Data in ClickOnce Applications](http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).</value>
+ This path will be different depending on whether the Windows Forms application is deployed using [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)]. [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] applications are stored in a per-user application cache in the C:\Documents and Settings\\*username* directory. For more information, see [Accessing Local and Remote Data in ClickOnce Applications](https://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for getting the path. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
       </Docs>
@@ -829,7 +829,7 @@
   
  *Base Path*\\<xref:System.Windows.Forms.Application.CompanyName%2A>\\<xref:System.Windows.Forms.Application.ProductName%2A>\\<xref:System.Windows.Forms.Application.ProductVersion%2A>   
   
- A typical base path is C:\Documents and Settings\\*username*\Local Settings\Application Data. This path will be different, however, if the Windows Forms application is deployed by using [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)]. [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] creates its own application data directory that is isolated from all other applications. For more information, see [Accessing Local and Remote Data in ClickOnce Applications](http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).  
+ A typical base path is C:\Documents and Settings\\*username*\Local Settings\Application Data. This path will be different, however, if the Windows Forms application is deployed by using [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)]. [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] creates its own application data directory that is isolated from all other applications. For more information, see [Accessing Local and Remote Data in ClickOnce Applications](https://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).  
   
    
   
@@ -1712,7 +1712,7 @@ static class Program
         <summary>Gets the path for the executable file that started the application, not including the executable name.</summary>
         <value>The path for the executable file that started the application.  
   
- This path will be different depending on whether the Windows Forms application is deployed using [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)]. [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] applications are stored in a per-user application cache in the C:\Documents and Settings\\*username* directory. For more information, see [Accessing Local and Remote Data in ClickOnce Applications](http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).</value>
+ This path will be different depending on whether the Windows Forms application is deployed using [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)]. [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] applications are stored in a per-user application cache in the C:\Documents and Settings\\*username* directory. For more information, see [Accessing Local and Remote Data in ClickOnce Applications](https://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1880,7 +1880,7 @@ static class Program
   
  Data stored in this path is part of user profile that is enabled for roaming. A roaming user works on more than one computer in a network. The user profile for a roaming user is kept on a server on the network and is loaded onto a system when the user logs on. For a user profile to be considered for roaming, the operating system must support roaming profiles and it must be enabled.  
   
- A typical base path is C:\Documents and Settings\\*username*\Application Data. This path will be different, however, if the Windows Forms application is deployed by using [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)]. [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] creates its own application data directory that is isolated from all other applications. For more information, see [Accessing Local and Remote Data in ClickOnce Applications](http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).  
+ A typical base path is C:\Documents and Settings\\*username*\Application Data. This path will be different, however, if the Windows Forms application is deployed by using [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)]. [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] creates its own application data directory that is isolated from all other applications. For more information, see [Accessing Local and Remote Data in ClickOnce Applications](https://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).  
   
    
   

@@ -34,7 +34,7 @@
    
   
 ## Examples  
- A Visual Studio project with source code is available to accompany this topic: [Scaffolding Dynamic Data](http://go.microsoft.com/fwlink/?LinkId=168914).  
+ A Visual Studio project with source code is available to accompany this topic: [Scaffolding Dynamic Data](https://go.microsoft.com/fwlink/?LinkId=168914).  
   
  The following example shows a custom List.aspx page template for the Products table. It uses the <xref:System.Web.DynamicData.DynamicRouteExpression.ColumnName%2A> property to specify the ProductCategory foreign key for filtering the Products rows.  
   
@@ -42,9 +42,9 @@
   
  The example requires the following:  
   
--   A Dynamic Data Web site. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](http://msdn.microsoft.com/library/1564aef2-9103-436a-9806-c8ad7abd616a).  
+-   A Dynamic Data Web site. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](https://msdn.microsoft.com/library/1564aef2-9103-436a-9806-c8ad7abd616a).  
   
--   The AdventureWorksLT sample database. For more information, see [How to: Connect to the AdventureWorksLT Database using an .MDF File](http://msdn.microsoft.com/library/d34ffbac-607d-40f1-b088-0a3304ea032b).  
+-   The AdventureWorksLT sample database. For more information, see [How to: Connect to the AdventureWorksLT Database using an .MDF File](https://msdn.microsoft.com/library/d34ffbac-607d-40f1-b088-0a3304ea032b).  
   
  [!code-aspx-csharp[System.Web.DynamicData.DynamicRouteExpression#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.dynamicrouteexpression/cs/list.aspx#1)]
  [!code-aspx-vb[System.Web.DynamicData.DynamicRouteExpression#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.dynamicrouteexpression/vb/list.aspx#1)]  

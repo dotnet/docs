@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Profile.ProfileGroupBase> class is used by ASP.NET to create grouped properties in the <xref:System.Web.HttpContext.Profile%2A> property for the current <xref:System.Web.HttpContext>. When properties are specified as a group of properties using the [group Element for properties for profile (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/b4e3672f-9653-4034-a178-fb358b02730e), ASP.NET creates a new class with strongly typed accessors for each property in the group. The new class inherits the <xref:System.Web.Profile.ProfileGroupBase> base class. The strongly typed accessors of the new class call the <xref:System.Web.Profile.ProfileGroupBase.GetPropertyValue%2A> and <xref:System.Web.Profile.ProfileGroupBase.SetPropertyValue%2A> methods of the <xref:System.Web.Profile.ProfileGroupBase> base class to retrieve and set profile property values, respectively.  
+ The <xref:System.Web.Profile.ProfileGroupBase> class is used by ASP.NET to create grouped properties in the <xref:System.Web.HttpContext.Profile%2A> property for the current <xref:System.Web.HttpContext>. When properties are specified as a group of properties using the [group Element for properties for profile (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/b4e3672f-9653-4034-a178-fb358b02730e), ASP.NET creates a new class with strongly typed accessors for each property in the group. The new class inherits the <xref:System.Web.Profile.ProfileGroupBase> base class. The strongly typed accessors of the new class call the <xref:System.Web.Profile.ProfileGroupBase.GetPropertyValue%2A> and <xref:System.Web.Profile.ProfileGroupBase.SetPropertyValue%2A> methods of the <xref:System.Web.Profile.ProfileGroupBase> base class to retrieve and set profile property values, respectively.  
   
  The <xref:System.Web.Profile.ProfileGroupBase> passes calls to get and set property values to the class that inherits the <xref:System.Web.Profile.ProfileBase> class that is supplied to the <xref:System.Web.Profile.ProfileGroupBase.Init%2A> method of the <xref:System.Web.Profile.ProfileGroupBase> class. See the <xref:System.Web.Profile.ProfileBase> class for more information on behaviors, exceptions, and so on.  
   
@@ -91,15 +91,15 @@
  The following code example shows an ASP.NET page that reads and sets the grouped properties specified for the user profile.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.HttpProfileGroupBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileGroupBase/CS/defaultcs.aspx#1)]
  [!code-aspx-vb[System.Web.Profile.HttpProfileGroupBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.HttpProfileGroupBase/VB/defaultvb.aspx#1)]  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -121,7 +121,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET uses the <xref:System.Web.Profile.ProfileGroupBase> class to create grouped properties in the <xref:System.Web.HttpContext.Profile%2A> property for the current <xref:System.Web.HttpContext>. When properties are specified as a group of properties using the [group Element for properties for profile (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/b4e3672f-9653-4034-a178-fb358b02730e) element, ASP.NET creates a new class with strongly typed accessors for each property in the group. The new class inherits the <xref:System.Web.Profile.ProfileGroupBase> base class.  
+ ASP.NET uses the <xref:System.Web.Profile.ProfileGroupBase> class to create grouped properties in the <xref:System.Web.HttpContext.Profile%2A> property for the current <xref:System.Web.HttpContext>. When properties are specified as a group of properties using the [group Element for properties for profile (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/b4e3672f-9653-4034-a178-fb358b02730e) element, ASP.NET creates a new class with strongly typed accessors for each property in the group. The new class inherits the <xref:System.Web.Profile.ProfileGroupBase> base class.  
   
  This class is not intended to be created from your code.  
   
@@ -189,15 +189,15 @@
  The following ASP.NET page reads and sets the grouped properties specified for the user profile.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.HttpProfileGroupBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileGroupBase/CS/defaultcs.aspx#1)]
  [!code-aspx-vb[System.Web.Profile.HttpProfileGroupBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.HttpProfileGroupBase/VB/defaultvb.aspx#1)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPropertyValue">
@@ -227,7 +227,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET uses the <xref:System.Web.Profile.ProfileBase> class to create the class for the user profile. When an application that has the user profile enabled is started, ASP.NET creates a new class of type `ProfileCommon`, which inherits from the <xref:System.Web.Profile.ProfileBase> class. Strongly typed accessors are added to the `ProfileCommon` class for each group and property defined in the [profile Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/ccb9bf3a-a044-464d-b89b-5cb5a3d389dd) configuration section. The strongly typed accessors of the `ProfileCommon` class call the <xref:System.Web.Profile.ProfileGroupBase.GetPropertyValue%2A> method to retrieve untyped values from the <xref:System.Web.Profile.ProfileProvider> that the generated accessor then casts as the specified type and returns as the grouped property value.  
+ ASP.NET uses the <xref:System.Web.Profile.ProfileBase> class to create the class for the user profile. When an application that has the user profile enabled is started, ASP.NET creates a new class of type `ProfileCommon`, which inherits from the <xref:System.Web.Profile.ProfileBase> class. Strongly typed accessors are added to the `ProfileCommon` class for each group and property defined in the [profile Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/ccb9bf3a-a044-464d-b89b-5cb5a3d389dd) configuration section. The strongly typed accessors of the `ProfileCommon` class call the <xref:System.Web.Profile.ProfileGroupBase.GetPropertyValue%2A> method to retrieve untyped values from the <xref:System.Web.Profile.ProfileProvider> that the generated accessor then casts as the specified type and returns as the grouped property value.  
   
  You can use the <xref:System.Web.Profile.ProfileGroupBase.GetPropertyValue%2A> method to retrieve grouped property values of the user profile for your application by name. Returned values are typed as `object` and must be cast as the specific object type when retrieved. For strongly typed access to profile property values, you can access the grouped property by name as a member of a group of the <xref:System.Web.HttpContext.Profile%2A> property, for example, `Profile.Address.City`.  
   
@@ -237,15 +237,15 @@
  The following code example shows an ASP.NET page that reads and sets the grouped properties specified for the user profile. For an example of a Web.config file that specifies grouped properties for the user profile, see the example provided for the <xref:System.Web.Profile.ProfileGroupBase> class.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.HttpProfileGroupBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileGroupBase/CS/defaultcs.aspx#1)]
  [!code-aspx-vb[System.Web.Profile.HttpProfileGroupBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.HttpProfileGroupBase/VB/defaultvb.aspx#1)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -280,7 +280,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -318,15 +318,15 @@
  The following code example shows an ASP.NET page that reads and sets the grouped properties specified for the user profile. For an example of a Web.config file that specifies a group of properties in the profile, see the example provided for the <xref:System.Web.Profile.ProfileGroupBase> class.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.HttpProfileGroupBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileGroupBase/CS/defaultcs.aspx#1)]
  [!code-aspx-vb[System.Web.Profile.HttpProfileGroupBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.HttpProfileGroupBase/VB/defaultvb.aspx#1)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SetPropertyValue">
@@ -357,7 +357,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET uses the <xref:System.Web.Profile.ProfileBase> class to create the class used for the user profile. When an application that has the user profile enabled is started, ASP.NET creates a new class of type `ProfileCommon`, which inherits from the <xref:System.Web.Profile.ProfileBase> class. Strongly typed accessors are added to the `ProfileCommon` class for each group and property defined in the [profile Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/ccb9bf3a-a044-464d-b89b-5cb5a3d389dd) configuration section. The strongly typed accessors of the `ProfileCommon` class call the <xref:System.Web.Profile.ProfileGroupBase.SetPropertyValue%2A> method to pass grouped property values to the <xref:System.Web.Profile.ProfileProvider> to be stored at the data source.  
+ ASP.NET uses the <xref:System.Web.Profile.ProfileBase> class to create the class used for the user profile. When an application that has the user profile enabled is started, ASP.NET creates a new class of type `ProfileCommon`, which inherits from the <xref:System.Web.Profile.ProfileBase> class. Strongly typed accessors are added to the `ProfileCommon` class for each group and property defined in the [profile Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/ccb9bf3a-a044-464d-b89b-5cb5a3d389dd) configuration section. The strongly typed accessors of the `ProfileCommon` class call the <xref:System.Web.Profile.ProfileGroupBase.SetPropertyValue%2A> method to pass grouped property values to the <xref:System.Web.Profile.ProfileProvider> to be stored at the data source.  
   
  You can use the <xref:System.Web.Profile.ProfileGroupBase.SetPropertyValue%2A> method to assign values to grouped properties of the user profile for your application by name. Values are typed as `object,` and type checking will be done at run time, not compile time. For strongly typed access to profile property values, you can access the grouped property by name as a member of a group of the <xref:System.Web.HttpContext.Profile%2A> property, for example, `Profile.Address.City`.  
   
@@ -367,15 +367,15 @@
  The following ASP.NET page reads and sets the grouped properties specified for the user profile. For an example of a Web.config file that specifies grouped properties for the user profile, see the example provided for the <xref:System.Web.Profile.ProfileGroupBase> class.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.HttpProfileGroupBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileGroupBase/CS/defaultcs.aspx#1)]
  [!code-aspx-vb[System.Web.Profile.HttpProfileGroupBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.HttpProfileGroupBase/VB/defaultvb.aspx#1)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
       </Docs>
     </Member>
   </Members>

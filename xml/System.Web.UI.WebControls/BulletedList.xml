@@ -76,11 +76,11 @@
   
  When the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property is set to <xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton>, the <xref:System.Web.UI.WebControls.BulletedList> control displays list items as links that post back to the server when clicked. To programmatically control the actions that are performed when a link button is clicked, provide an event handler for the <xref:System.Web.UI.WebControls.BulletedList.Click> event. Note that the <xref:System.Web.UI.WebControls.BulletedList.SelectedIndex%2A> and <xref:System.Web.UI.WebControls.BulletedList.SelectedItem%2A> properties are inherited from the <xref:System.Web.UI.WebControls.ListControl> class and are not applicable to the <xref:System.Web.UI.WebControls.BulletedList> control. Use the event data of the <xref:System.Web.UI.WebControls.BulletedListEventArgs> class to determine the index of the link button in a <xref:System.Web.UI.WebControls.BulletedList> that was clicked.  
   
- The <xref:System.Web.UI.WebControls.BulletedList> control also supports data binding. To bind the <xref:System.Web.UI.WebControls.BulletedList> to a data source, you can use any of the provided data-binding mechanisms. For more information, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
+ The <xref:System.Web.UI.WebControls.BulletedList> control also supports data binding. To bind the <xref:System.Web.UI.WebControls.BulletedList> to a data source, you can use any of the provided data-binding mechanisms. For more information, see [Binding to Databases](https://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
   
 <a name="Accessibility"></a>   
 ## Accessibility  
- The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="DeclarativeSyntax"></a>   
 ## Declarative Syntax  
@@ -175,7 +175,7 @@
     <altmember cref="E:System.Web.UI.WebControls.BulletedList.Click" />
     <altmember cref="T:System.Web.UI.WebControls.ListItem" />
     <altmember cref="T:System.Web.UI.DataSourceControl" />
-    <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -209,7 +209,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -246,7 +246,7 @@
           <para>The <see cref="M:System.Web.UI.WebControls.BulletedList.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" /> method overrides the <see cref="M:System.Web.UI.WebControls.ListControl.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" /> method.</para>
         </block>
         <altmember cref="T:System.Web.UI.HtmlTextWriter" />
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="AutoPostBack">
@@ -299,7 +299,7 @@
         <exception cref="T:System.NotSupportedException">An attempt was made to assign a value to the <see cref="P:System.Web.UI.WebControls.BulletedList.AutoPostBack" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.ListControl" />
         <altmember cref="P:System.Web.UI.WebControls.ListControl.AutoPostBack" />
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="BulletImageUrl">
@@ -379,7 +379,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.BulletedList.BulletStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="BulletStyle">
@@ -445,7 +445,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.BulletStyle" /> values.</exception>
         <altmember cref="T:System.Web.UI.WebControls.BulletStyle" />
         <altmember cref="P:System.Web.UI.WebControls.BulletedList.BulletImageUrl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -485,7 +485,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -517,7 +517,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.EmptyControlCollection" />
         <altmember cref="T:System.Web.UI.Control" />
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayMode">
@@ -576,7 +576,7 @@
         <altmember cref="T:System.Web.UI.WebControls.BulletedListDisplayMode" />
         <altmember cref="P:System.Web.UI.WebControls.ListItem.Value" />
         <altmember cref="E:System.Web.UI.WebControls.BulletedList.Click" />
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FirstBulletNumber">
@@ -617,7 +617,7 @@
  The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.BulletedList> control and set the <xref:System.Web.UI.WebControls.BulletedList.FirstBulletNumber%2A> property to specify the value that starts the numbering of list items in the <xref:System.Web.UI.WebControls.BulletedList> control. The value that starts the numbering of the list items changes based on the value that the user enters in the text box.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[BulletedListFirstBulletNumber#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BulletedListFirstBulletNumber/CS/firstbulletnumbercs.aspx#1)]
  [!code-aspx-vb[BulletedListFirstBulletNumber#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BulletedListFirstBulletNumber/VB/firstbulletnumbervb.aspx#1)]  
@@ -625,7 +625,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.BulletStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -674,7 +674,7 @@
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.BulletedList.Click" />
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -715,7 +715,7 @@
         <altmember cref="E:System.Web.UI.WebControls.BulletedList.Click" />
         <altmember cref="M:System.Web.UI.Page.Validate(System.String)" />
         <altmember cref="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -752,7 +752,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RenderBulletText">
@@ -791,7 +791,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.BulletedList.Render(System.Web.UI.HtmlTextWriter)" />
         <altmember cref="M:System.Web.UI.WebControls.BulletedList.RenderContents(System.Web.UI.HtmlTextWriter)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -826,7 +826,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.HtmlTextWriter" />
         <altmember cref="M:System.Web.UI.WebControls.BulletedList.Render(System.Web.UI.HtmlTextWriter)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RenderWhenDataEmpty">
@@ -905,7 +905,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to assign a value to the <see cref="P:System.Web.UI.WebControls.BulletedList.SelectedIndex" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.BulletedListEventArgs" />
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SelectedItem">
@@ -950,7 +950,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ListControl.SelectedItem" />
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SelectedValue">
@@ -998,7 +998,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to assign a value to the <see cref="P:System.Web.UI.WebControls.BulletedList.SelectedValue" />.</exception>
         <altmember cref="P:System.Web.UI.WebControls.ListControl.SelectedValue" />
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -1074,7 +1074,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -1126,9 +1126,9 @@
  If the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property is not set, the browser or window with focus refreshes when the hyperlink is clicked.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.BulletedList> must be XHTML 1.1 compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
+>  The <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.BulletedList> must be XHTML 1.1 compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
 >   
->  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property to target another window. For more information, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13).  
+>  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property to target another window. For more information, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13).  
   
  The value of this property is stored in view state.  
   
@@ -1143,7 +1143,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ListItem.Value" />
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1187,7 +1187,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to assign a value to the <see cref="P:System.Web.UI.WebControls.BulletedList.Text" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
   </Members>

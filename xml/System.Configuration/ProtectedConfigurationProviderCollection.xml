@@ -33,13 +33,13 @@
   
  You might have a requirement to encrypt sensitive information using an algorithm other than the RSA or DPAPI providers. In this case, you can build your own custom protected-configuration provider. The <xref:System.Configuration.ProtectedConfigurationProvider> class is an abstract base class that you must inherit from to create your own protected-configuration provider.  
   
- For more information about protected configuration, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
+ For more information about protected configuration, see [Encrypting Configuration Information Using Protected Configuration](https://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Configuration.ProtectedConfiguration" />
     <altmember cref="T:System.Configuration.ProtectedConfigurationProvider" />
-    <related type="Article" href="http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1">Encrypting Configuration Information Using Protected Configuration</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1">Encrypting Configuration Information Using Protected Configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

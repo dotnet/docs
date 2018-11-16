@@ -39,7 +39,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/491d1705-eb29-43c2-a44c-c0cf996f74eb">How To: Set a Max Clock Skew</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/491d1705-eb29-43c2-a44c-c0cf996f74eb">How To: Set a Max Clock Skew</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -351,7 +351,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is <see langword="set" /> to a value less than 0.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/491d1705-eb29-43c2-a44c-c0cf996f74eb">How To: Set a Max Clock Skew</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/491d1705-eb29-43c2-a44c-c0cf996f74eb">How To: Set a Max Clock Skew</related>
       </Docs>
     </Member>
     <Member MemberName="MaxCookieCachingTime">
@@ -600,9 +600,9 @@
   
 -   All client credential types for <xref:System.ServiceModel.WSDualHttpBinding> and <xref:System.ServiceModel.NetTcpBinding>.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is enabled.  
+-   If [\<reliableSession> element](https://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is enabled.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A?displayProperty=nameWithType> = `true`.  
+-   If [\<reliableSession> element](https://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A?displayProperty=nameWithType> = `true`.  
   
  Session settings such as this one are not applicable under any of the following conditions:  
   
@@ -610,7 +610,7 @@
   
 -   For <xref:System.ServiceModel.NetNamedPipeBinding>.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A> = `true` or with none of the <xref:System.ServiceModel.Description.ClientCredentials> properties set to `true`.  
+-   If [\<reliableSession> element](https://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A> = `true` or with none of the <xref:System.ServiceModel.Description.ClientCredentials> properties set to `true`.  
   
    
   
@@ -662,9 +662,9 @@
   
 -   All client credential types for <xref:System.ServiceModel.WSDualHttpBinding> and <xref:System.ServiceModel.NetTcpBinding>.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is enabled.  
+-   If [\<reliableSession> element](https://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is enabled.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or  <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A?displayProperty=nameWithType> = `true`.  
+-   If [\<reliableSession> element](https://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or  <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A?displayProperty=nameWithType> = `true`.  
   
  Session settings such as this one are not applicable under any of the following conditions:  
   
@@ -672,7 +672,7 @@
   
 -   For <xref:System.ServiceModel.NetNamedPipeBinding>.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A> = `true` or with none of the <xref:System.ServiceModel.Description.ClientCredentials> properties set to `true`.  
+-   If [\<reliableSession> element](https://msdn.microsoft.com/library/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A> = `true` or with none of the <xref:System.ServiceModel.Description.ClientCredentials> properties set to `true`.  
   
    
   

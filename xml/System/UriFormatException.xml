@@ -47,7 +47,7 @@
  The text of the <xref:System.Exception.Message%2A> property indicates the reason that the exception was thrown.  
   
 > [!NOTE]
->  This exception is not included in the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), but it is thrown by some members that are. To catch the exception in that case, write a `catch` statement for <xref:System.FormatException> instead.  
+>  This exception is not included in the [.NET for Windows Store apps](https://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), but it is thrown by some members that are. To catch the exception in that case, write a `catch` statement for <xref:System.FormatException> instead.  
   
  ]]></format>
     </remarks>

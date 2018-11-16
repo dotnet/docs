@@ -117,7 +117,7 @@
   
  Event categories are optional; if your application does not use categories, do not set the <xref:System.Diagnostics.EventLogInstaller.CategoryCount%2A> and <xref:System.Diagnostics.EventLogInstaller.CategoryResourceFile%2A> properties.  
   
- For details about defining event messages and building event resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com/).  
+ For details about defining event messages and building event resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](https://msdn.microsoft.com/).  
   
    
   
@@ -292,7 +292,7 @@ SVC_UPDATE.EXE
   
  Event categories are optional; if your application does not use categories, do not set the <xref:System.Diagnostics.EventLogInstaller.CategoryCount%2A> and <xref:System.Diagnostics.EventLogInstaller.CategoryResourceFile%2A> properties.  
   
- For details about defining event messages and building event resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com/).  
+ For details about defining event messages and building event resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](https://msdn.microsoft.com/).  
   
    
   
@@ -646,7 +646,7 @@ SVC_UPDATE.EXE
   
  If the <xref:System.Diagnostics.EventLog.MachineName%2A> property is not the local computer identifier ("."), the .NET Framework assumes that the resource file is on a remote computer. If the <xref:System.Diagnostics.EventLogInstaller.MessageResourceFile%2A> property value contains a drive letter, the resource file is assumed to be on the \\\\<machinename\>\\<drive\>$ share (for example, \\\server\c$). If the value contains the string %systemroot%, the resource file is assumed to be on the \\\\<machinename\>\admin$ share (for example, \\\server\admin$).  
   
- For details about defining event messages and building event resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com/).  
+ For details about defining event messages and building event resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](https://msdn.microsoft.com/).  
   
    
   
@@ -846,7 +846,7 @@ TRIGGER.EXE
   
  If your application writes event message strings directly to the event log, or if your <xref:System.Diagnostics.EventLogInstaller.MessageResourceFile%2A> does not contain messages with parameter insertion placeholders, do not set the <xref:System.Diagnostics.EventLogInstaller.ParameterResourceFile%2A> property.  
   
- For details about defining event messages and building event resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com/).  
+ For details about defining event messages and building event resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](https://msdn.microsoft.com/).  
   
    
   

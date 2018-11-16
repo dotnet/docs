@@ -19,7 +19,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [!INCLUDE[adonet_ef](~/includes/adonet-ef-md.md)] only maintains a single instance of an object with a specific entity key in the cache. The <xref:System.Data.EntityKey> objects are immutable objects that that represent object's identity. Entity keys are used to perform identity resolution in the object context. For more information, see [Working with Entity Keys](http://msdn.microsoft.com/library/fe3f4206-d277-43a1-a72f-4e86fdf12b9f). If an entity with the same identity is already being tracked, the data coming from the data source and the data already in the state manager are merged according to the <xref:System.Data.Objects.MergeOption> of the query.  
+ The [!INCLUDE[adonet_ef](~/includes/adonet-ef-md.md)] only maintains a single instance of an object with a specific entity key in the cache. The <xref:System.Data.EntityKey> objects are immutable objects that that represent object's identity. Entity keys are used to perform identity resolution in the object context. For more information, see [Working with Entity Keys](https://msdn.microsoft.com/library/fe3f4206-d277-43a1-a72f-4e86fdf12b9f). If an entity with the same identity is already being tracked, the data coming from the data source and the data already in the state manager are merged according to the <xref:System.Data.Objects.MergeOption> of the query.  
   
  ]]></format>
     </remarks>
@@ -121,7 +121,7 @@
   
  Only modified properties are persisted to the data source when you call <xref:System.Data.Objects.ObjectContext.SaveChanges%2A>.  
   
- To preserve the 3.5 SP1 behavior, set <xref:System.Data.Objects.ObjectContextOptions.UseLegacyPreserveChangesBehavior%2A> to `true`. The PreserveChanges option can be used to resolve optimistic concurrency exceptions while preserving changes in the local context. For more information, see [Saving Changes and Managing Concurrency](http://msdn.microsoft.com/library/b8378601-4f26-4a05-a24a-f50aeb68610e).  
+ To preserve the 3.5 SP1 behavior, set <xref:System.Data.Objects.ObjectContextOptions.UseLegacyPreserveChangesBehavior%2A> to `true`. The PreserveChanges option can be used to resolve optimistic concurrency exceptions while preserving changes in the local context. For more information, see [Saving Changes and Managing Concurrency](https://msdn.microsoft.com/library/b8378601-4f26-4a05-a24a-f50aeb68610e).  
   
  ]]></format>
         </remarks>

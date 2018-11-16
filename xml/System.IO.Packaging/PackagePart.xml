@@ -36,7 +36,7 @@
   
  ]]></format>
     </remarks>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -52,7 +52,7 @@
 ## Remarks  
  [Pack URIs in WPF](~/docs/framework/wpf/app-development/pack-uris-in-wpf.md)  
   
- [Open Packaging Conventions Specification](http://go.microsoft.com/fwlink/?LinkID=71255)  
+ [Open Packaging Conventions Specification](https://go.microsoft.com/fwlink/?LinkID=71255)  
   
  ]]></format>
         </remarks>
@@ -93,7 +93,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `partUri` must be valid <xref:System.IO.Packaging.PackagePart> [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] formed in accordance with the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification and the [Open Packaging Conventions](http://go.microsoft.com/fwlink/?LinkID=71255) specification.  
+ `partUri` must be valid <xref:System.IO.Packaging.PackagePart> [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] formed in accordance with the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification and the [Open Packaging Conventions](https://go.microsoft.com/fwlink/?LinkID=71255) specification.  
   
  Use this constructor when the <xref:System.IO.Packaging.PackagePart.ContentType%2A> of the part is not immediately known and will be set later when <xref:System.IO.Packaging.Package.CreatePart%2A> is called.  
   
@@ -105,7 +105,7 @@
           <paramref name="package" /> or <paramref name="partUri" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
         <altmember cref="Overload:System.IO.Packaging.PackagePart.GetStream" />
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -145,7 +145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `partUri` must be valid <xref:System.IO.Packaging.PackagePart> [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] formed in accordance with the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification and the [Open Packaging Conventions](http://go.microsoft.com/fwlink/?LinkID=71255) specification.  
+ `partUri` must be valid <xref:System.IO.Packaging.PackagePart> [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] formed in accordance with the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification and the [Open Packaging Conventions](https://go.microsoft.com/fwlink/?LinkID=71255) specification.  
   
  By default, the <xref:System.IO.Packaging.PackagePart.CompressionOption%2A> property of the part is initialized to <xref:System.IO.Packaging.CompressionOption.NotCompressed>.  
   
@@ -170,7 +170,7 @@
           <paramref name="partUri" /> is not a valid <see cref="T:System.IO.Packaging.PackagePart" /> [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</exception>
         <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
         <altmember cref="Overload:System.IO.Packaging.PackagePart.GetStream" />
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -207,7 +207,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `partUri` must be valid <xref:System.IO.Packaging.PackagePart> [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] formed in accordance with the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification and the [Open Packaging Conventions](http://go.microsoft.com/fwlink/?LinkID=71255) specification.  
+ `partUri` must be valid <xref:System.IO.Packaging.PackagePart> [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] formed in accordance with the [RFC 3986](http://tools.ietf.org/html/rfc3986) *Uniform Resource Identifier (URI) Generic Syntax* specification and the [Open Packaging Conventions](https://go.microsoft.com/fwlink/?LinkID=71255) specification.  
   
  `contentType` must be a [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] type formed in accordance with the [RFC 2616](https://www.w3.org/Protocols/rfc2616/rfc2616.html) *Hypertext Transfer Protocol - HTTP*, Section 3.7.  The following table shows an example of the content [!INCLUDE[TLA2#tla_mime](~/includes/tla2sharptla-mime-md.md)] types used in [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] documents.  
   
@@ -231,7 +231,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="compressionOption" /> value is not valid.</exception>
         <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
         <altmember cref="Overload:System.IO.Packaging.PackagePart.GetStream" />
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="CompressionOption">
@@ -335,7 +335,7 @@
   
  The string returned by the derived class <see cref="M:System.IO.Packaging.PackagePart.GetContentTypeCore" /> method is empty.</exception>
         <altmember cref="Overload:System.IO.Packaging.PackagePart.GetStream" />
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateRelationship">
@@ -361,13 +361,13 @@
   
  The target of a relationship cannot be another relationship.  
   
- For more information about package relationships see section 1.3 of the *Open Packaging Conventions (OPC)* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information about package relationships see section 1.3 of the *Open Packaging Conventions (OPC)* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
   
- For more information about XPS documents see the *Open XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=67000](http://go.microsoft.com/fwlink/?LinkID=67000).  
+ For more information about XPS documents see the *Open XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=67000](https://go.microsoft.com/fwlink/?LinkID=67000).  
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CreateRelationship">
@@ -431,7 +431,7 @@
   
 |XPS Document Part-Level Relationship|Relationship Type URI|  
 |-------------------------------------------|---------------------------|  
-|Digital Signature Definitions|[http://schemas.microsoft.com/xps/2005/06/signature-definitions](http://schemas.microsoft.com/xps/2005/06/signature-definitions)|  
+|Digital Signature Definitions|[http://schemas.microsoft.com/xps/2005/06/signature-definitions](https://schemas.microsoft.com/xps/2005/06/signature-definitions)|  
 |DiscardControl|http://schemas.microsoft.com/xps/2005/06/discard-control|  
 |DocumentStructure|http://schemas.microsoft.com/xps/2005/06/documentstructure|  
 |PrintTicket|http://schemas.microsoft.com/xps/2005/06/printticket|  
@@ -440,9 +440,9 @@
 |StartPart|http://schemas.microsoft.com/xps/2005/06/fixedrepresentation|  
 |StoryFragments|http://schemas.microsoft.com/xps/2005/06/storyfragments|  
   
- For more information about package relationships see section 1.3 of the *Open Packaging Conventions (OPC)* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information about package relationships see section 1.3 of the *Open Packaging Conventions (OPC)* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
   
- For more information about XPS documents see the *Open XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=67000](http://go.microsoft.com/fwlink/?LinkID=67000).  
+ For more information about XPS documents see the *Open XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=67000](https://go.microsoft.com/fwlink/?LinkID=67000).  
   
  ]]></format>
         </remarks>
@@ -465,7 +465,7 @@
         <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationship(System.String)" />
         <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationships" />
         <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationshipsByType(System.String)" />
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="CreateRelationship">
@@ -537,9 +537,9 @@
 |StartPart|http://schemas.microsoft.com/xps/2005/06/fixedrepresentation|  
 |StoryFragments|http://schemas.microsoft.com/xps/2005/06/storyfragments|  
   
- For more information about package relationships see section 1.3 of the *Open Packaging Conventions (OPC)* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information about package relationships see section 1.3 of the *Open Packaging Conventions (OPC)* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
   
- For more information about XPS documents see the *Open XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=67000](http://go.microsoft.com/fwlink/?LinkID=67000).  
+ For more information about XPS documents see the *Open XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=67000](https://go.microsoft.com/fwlink/?LinkID=67000).  
   
  ]]></format>
         </remarks>
@@ -568,7 +568,7 @@
         <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationship(System.String)" />
         <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationships" />
         <altmember cref="M:System.IO.Packaging.PackagePart.GetRelationshipsByType(System.String)" />
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteRelationship">
@@ -829,7 +829,7 @@
   
  The <see cref="P:System.IO.Packaging.PackagePart.Package" /> is not open (<see cref="M:System.IO.Packaging.Package.Dispose(System.Boolean)" /> or <see cref="M:System.IO.Packaging.Package.Close" /> has been called).</exception>
         <exception cref="T:System.IO.IOException">The package is write-only (relationship information cannot be read).</exception>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetStream">

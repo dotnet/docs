@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, go to RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, on the [World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/?linkid=37125) Web site. In particular, for complete details, see Section 14.9 "Cache-Control" and Section 13, "Caching in HTTP."  
+ For more information, go to RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, on the [World Wide Web Consortium (W3C)](https://go.microsoft.com/fwlink/?linkid=37125) Web site. In particular, for complete details, see Section 14.9 "Cache-Control" and Section 13, "Caching in HTTP."  
   
 > [!NOTE]
 >  `NoCache` does not send the common HTTP 1.0 request directive `Pragma: no-cache`.  

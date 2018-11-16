@@ -42,7 +42,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
   </Docs>
   <Members>
     <Member MemberName="AddAnnotation">
@@ -83,7 +83,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Note that annotations are not part of the infoset; they are not persisted, or displayed by <xref:System.Xml.Linq.XNode.ToString%2A>. Also, if you import an XML Namespace into your VB project and call AddAnnotation with the SaveOptions.OmitDuplicateNamespaces enumeration value, then only one element will contain the XML Namespace attribute instead of every element. For more information, see [Removing duplicate namespaces in XML Literals](http://blogs.msdn.com/b/vbteam/archive/2010/06/09/removing-duplicate-namespaces-in-xml-literals-shyam-namboodiripad.aspx).  
+ Note that annotations are not part of the infoset; they are not persisted, or displayed by <xref:System.Xml.Linq.XNode.ToString%2A>. Also, if you import an XML Namespace into your VB project and call AddAnnotation with the SaveOptions.OmitDuplicateNamespaces enumeration value, then only one element will contain the XML Namespace attribute instead of every element. For more information, see [Removing duplicate namespaces in XML Literals](https://blogs.msdn.com/b/vbteam/archive/2010/06/09/removing-duplicate-namespaces-in-xml-literals-shyam-namboodiripad.aspx).  
   
    
   
@@ -150,7 +150,7 @@ T1
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Annotation">
@@ -253,7 +253,7 @@ T1
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Annotation&lt;T&gt;">
@@ -361,7 +361,7 @@ T1
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Annotations">
@@ -494,7 +494,7 @@ def
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Annotations&lt;T&gt;">
@@ -636,7 +636,7 @@ def
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="BaseUri">
@@ -689,7 +689,7 @@ def
 ## Examples  
  The following example loads the base URI and line information as it loads the file. It then prints the base URI and the line information.  
   
- This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](http://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348).  
+ This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](https://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348).  
   
 ```csharp  
 XElement po = XElement.Load("PurchaseOrder.xml",  
@@ -771,7 +771,7 @@ PurchaseOrder       2    2
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Changed">
@@ -996,7 +996,7 @@ Total:308
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Changing">
@@ -1108,7 +1108,7 @@ Changed event raised
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -1180,7 +1180,7 @@ Console.WriteLine(documentOfChild.FirstNode)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="NodeType">
@@ -1288,7 +1288,7 @@ Text
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1368,7 +1368,7 @@ Root
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAnnotations">
@@ -1478,7 +1478,7 @@ Count after removing: 2
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAnnotations&lt;T&gt;">
@@ -1592,7 +1592,7 @@ Count after removing: 2
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.IXmlLineInfo.HasLineInfo">
@@ -1870,7 +1870,7 @@ Root                1    2
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.IXmlLineInfo.LinePosition">
@@ -2008,7 +2008,7 @@ Root                1    2
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
   </Members>

@@ -43,7 +43,7 @@
  The following code example is the `Math` XML Web service, from which the preceding proxy class was generated.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
   
   
@@ -187,7 +187,7 @@
  The following code example is a Web Service client using the preceding proxy class. Within the `EnterBtn_Click` event of the Web Form, the XML Web service client calls the <xref:System.Web.Services.Protocols.SoapHttpClientProtocol.Discover%2A> method attempting to dynamically bind to the URL supplied by the user.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[SoapHttpClientProtocol.Discover Example#2](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHttpClientProtocol.Discover Example/CS/sourcecs.aspx#2)]
  [!code-vb[SoapHttpClientProtocol.Discover Example#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHttpClientProtocol.Discover Example/VB/sourcevb.aspx#2)]  

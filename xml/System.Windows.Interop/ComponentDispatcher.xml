@@ -24,7 +24,7 @@
   
  The methods are static but they are backed by per-thread data structures.  The static methods allow singleton access but the <xref:System.Windows.Interop.ComponentDispatcher> is sorting out the appropriate per-thread operations.  
   
- The owner of the message pump is defined by the code that calls the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] function  [GetMessage](http://msdn.microsoft.com/library/ms644936.aspx). The owner calls <xref:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage%2A> for every keyboard message. This method raises the <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage> event with the messages contained in the event data. If that event is not handled, the owner raises the <xref:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage> event with the messages contained in the event argument.  
+ The owner of the message pump is defined by the code that calls the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] function  [GetMessage](https://msdn.microsoft.com/library/ms644936.aspx). The owner calls <xref:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage%2A> for every keyboard message. This method raises the <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage> event with the messages contained in the event data. If that event is not handled, the owner raises the <xref:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage> event with the messages contained in the event argument.  
   
 > [!NOTE]
 >  Only keyboard messages are supported.  
@@ -282,7 +282,7 @@
         <param name="msg">The message and its associated data.</param>
         <summary>Indicates that a new message is available for possible handling.</summary>
         <returns>
-          <see langword="true" />, if one of the modules listening to the message loop processed the message. The owner of the message loop should ignore the message. <see langword="false" />, if the message was not processed. In this case, the owner of the message pump should call the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] function [TranslateMessage](http://msdn.microsoft.com/library/ms644955.aspx) followed by [DispatchMessage](http://msdn.microsoft.com/library/ms644934.aspx).</returns>
+          <see langword="true" />, if one of the modules listening to the message loop processed the message. The owner of the message loop should ignore the message. <see langword="false" />, if the message was not processed. In this case, the owner of the message pump should call the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] function [TranslateMessage](https://msdn.microsoft.com/library/ms644955.aspx) followed by [DispatchMessage](https://msdn.microsoft.com/library/ms644934.aspx).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

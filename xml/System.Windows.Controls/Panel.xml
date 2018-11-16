@@ -34,7 +34,7 @@
 ## Remarks  
  A <xref:System.Windows.Controls.Panel> contains a collection of <xref:System.Windows.UIElement> objects, which are in the <xref:System.Windows.Controls.Panel.Children%2A> property. Adding a <xref:System.Windows.UIElement> child to a <xref:System.Windows.Controls.Panel> implicitly adds it to the <xref:System.Windows.Controls.UIElementCollection> for the <xref:System.Windows.Controls.Panel> element.  
   
- [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] provides a comprehensive suite of derived <xref:System.Windows.Controls.Panel> implementations, enabling many complex layouts. If you want to implement new layout containers, use the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> and <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> methods. For a demonstration of how to use these methods, see [Create a Custom Content-Wrapping Panel Sample](http://go.microsoft.com/fwlink/?LinkID=159979).  
+ [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] provides a comprehensive suite of derived <xref:System.Windows.Controls.Panel> implementations, enabling many complex layouts. If you want to implement new layout containers, use the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> and <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> methods. For a demonstration of how to use these methods, see [Create a Custom Content-Wrapping Panel Sample](https://go.microsoft.com/fwlink/?LinkID=159979).  
   
  <xref:System.Windows.Controls.Panel> elements do not receive mouse or stylus events if a <xref:System.Windows.Controls.Panel.Background%2A> is not defined. If you need to handle mouse or stylus events but do not want a background for your <xref:System.Windows.Controls.Panel>, use <xref:System.Windows.Media.Brushes.Transparent%2A>.  
   
@@ -51,8 +51,8 @@
   
  ]]></format>
     </remarks>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159979">Create a Custom Content-Wrapping Panel Sample</related>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160053">WPF Controls Gallery Sample</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=159979">Create a Custom Content-Wrapping Panel Sample</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160053">WPF Controls Gallery Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -371,7 +371,7 @@
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159979">Create a Custom Content-Wrapping Panel Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=159979">Create a Custom Content-Wrapping Panel Sample</related>
       </Docs>
     </Member>
     <Member MemberName="IsItemsHost">

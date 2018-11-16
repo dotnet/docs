@@ -37,7 +37,7 @@
   
 ```  
   
- The Application Lifetime Events performance counter contains the sum total of all ASP.NET lifetime events. To view this performance counter in System Monitor (PerfMon), in the **Add Counters** window select **ASP.NET** from the **Performance object** drop-down list. Select the **Application Lifetime Events** performance counter, and click the **Add** button. For more information, see "Using the System Monitor (PerfMon) with ASP.NET Applications" on [MSDN](http://go.microsoft.com/fwlink/?linkid=37118). If you allow events to be logged by the standard <xref:System.Web.Management.EventLogWebEventProvider>, you can view them in Event Viewer by selecting the **Application** log. For more information, see [Event Viewer](http://go.microsoft.com/fwlink/?linkid=24845&clcid=0x409) in the Windows Server 2003 documentation on TechNet.  
+ The Application Lifetime Events performance counter contains the sum total of all ASP.NET lifetime events. To view this performance counter in System Monitor (PerfMon), in the **Add Counters** window select **ASP.NET** from the **Performance object** drop-down list. Select the **Application Lifetime Events** performance counter, and click the **Add** button. For more information, see "Using the System Monitor (PerfMon) with ASP.NET Applications" on [MSDN](https://go.microsoft.com/fwlink/?linkid=37118). If you allow events to be logged by the standard <xref:System.Web.Management.EventLogWebEventProvider>, you can view them in Event Viewer by selecting the **Application** log. For more information, see [Event Viewer](https://go.microsoft.com/fwlink/?linkid=24845&clcid=0x409) in the Windows Server 2003 documentation on TechNet.  
   
 > [!CAUTION]
 >  Because the <xref:System.Web.Management.WebApplicationLifetimeEvent> object is a high-volume event, logging it is resource-intensive and might slow down your system. It can also cause other events to be overwritten in the case of the <xref:System.Web.Management.EventLogWebEventProvider> class due to the high volume of events and the way the event logging works.  
@@ -90,7 +90,7 @@
     <block subset="none" type="overrides">
       <para>When formatting your custom event information for display, override the <see cref="M:System.Web.Management.WebBaseEvent.FormatCustomEventDetails(System.Web.Management.WebEventFormatter)" /> method rather than the <see cref="Overload:System.Web.Management.WebBaseEvent.ToString" /> method. This will avoid overwriting or tampering with sensitive system information.</para>
     </block>
-    <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -100,7 +100,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebApplicationLifetimeEvent" /> class.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -150,7 +150,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -202,7 +202,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IncrementPerfCounters">
@@ -225,7 +225,7 @@
       <Docs>
         <summary>Used internally to increment performance counters.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
       </Docs>
     </Member>
   </Members>

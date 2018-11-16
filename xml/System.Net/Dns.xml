@@ -179,7 +179,7 @@
           <paramref name="hostName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error was encountered executing the DNS query.</exception>
         <permission cref="T:System.Net.DnsPermission">for accessing DNS information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
-        <related type="Article" href="http://msdn.microsoft.com/library/c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0">Asynchronous Programming Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0">Asynchronous Programming Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="BeginGetHostEntry">
@@ -407,7 +407,7 @@
           <paramref name="hostName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">The caller does not have permission to access DNS information.</exception>
         <permission cref="T:System.Net.DnsPermission">for accessing DNS information. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
-        <related type="Article" href="http://msdn.microsoft.com/library/c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0">Asynchronous Programming Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0">Asynchronous Programming Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EndGetHostAddresses">
@@ -517,7 +517,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="asyncResult" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0">Asynchronous Programming Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0">Asynchronous Programming Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EndGetHostEntry">
@@ -640,7 +640,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="asyncResult" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0">Asynchronous Programming Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0">Asynchronous Programming Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetHostAddresses">

@@ -208,7 +208,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -1170,7 +1170,7 @@ async Task TestWriter(Stream stream)
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="LookupPrefix">
@@ -1437,7 +1437,7 @@ This member may behave differently when it is used in a Portable Class Library p
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteAttributeString">
@@ -1732,7 +1732,7 @@ This member may behave differently when it is used in a Portable Class Library p
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteBase64">
@@ -1852,7 +1852,7 @@ This member may behave differently when it is used in a Portable Class Library p
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteBinHex">
@@ -1970,7 +1970,7 @@ This member may behave differently when it is used in a Portable Class Library p
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteCData">
@@ -2075,7 +2075,7 @@ This member may behave differently when it is used in a Portable Class Library p
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteCharEntity">
@@ -2177,7 +2177,7 @@ This member may behave differently when it is used in a Portable Class Library p
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteChars">
@@ -2297,7 +2297,7 @@ This member may behave differently when it is used in a Portable Class Library p
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteComment">
@@ -2404,7 +2404,7 @@ This member may behave differently when it is used in a Portable Class Library p
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteDocType">
@@ -2524,7 +2524,7 @@ This member may behave differently when it is used in a Portable Class Library p
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteElementString">
@@ -2795,7 +2795,7 @@ This member may behave differently when it is used in a Portable Class Library p
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteEndAttribute">
@@ -2890,7 +2890,7 @@ This member may behave differently when it is used in a Portable Class Library p
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteEndDocument">
@@ -2991,7 +2991,7 @@ This member may behave differently when it is used in a Portable Class Library p
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteEndElement">
@@ -3092,7 +3092,7 @@ This member may behave differently when it is used in a Portable Class Library p
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteEntityRef">
@@ -3196,7 +3196,7 @@ This member may behave differently when it is used in a Portable Class Library p
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteFullEndElement">
@@ -3294,7 +3294,7 @@ This member may behave differently when it is used in a Portable Class Library p
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteName">
@@ -3392,7 +3392,7 @@ This member may behave differently when it is used in a Portable Class Library p
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteNmToken">
@@ -3488,7 +3488,7 @@ This member may behave differently when it is used in a Portable Class Library p
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteNode">
@@ -3714,7 +3714,7 @@ while (!reader.EOF){
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="WriteNodeAsync">
@@ -3764,7 +3764,7 @@ while (!reader.EOF){
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteNodeAsync">
@@ -3816,7 +3816,7 @@ while (!reader.EOF){
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteProcessingInstruction">
@@ -3940,7 +3940,7 @@ writer.Close();
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteQualifiedName">
@@ -4068,7 +4068,7 @@ writer.Close();
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteRaw">
@@ -4232,7 +4232,7 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="WriteRawAsync">
@@ -4279,7 +4279,7 @@ writer.Close();
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteRawAsync">
@@ -4330,7 +4330,7 @@ writer.Close();
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteStartAttribute">
@@ -4572,7 +4572,7 @@ writer.Close();
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteStartDocument">
@@ -4716,7 +4716,7 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="WriteStartDocumentAsync">
@@ -4760,7 +4760,7 @@ writer.Close();
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteStartDocumentAsync">
@@ -4807,7 +4807,7 @@ writer.Close();
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteStartElement">
@@ -5070,7 +5070,7 @@ writer.WriteEndElement();
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteState">
@@ -5229,7 +5229,7 @@ test&lt;item&gt;test
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteSurrogateCharEntity">
@@ -5336,7 +5336,7 @@ test&lt;item&gt;test
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteValue">
@@ -6033,7 +6033,7 @@ test&lt;item&gt;test
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="XmlLang">

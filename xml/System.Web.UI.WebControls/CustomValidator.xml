@@ -57,7 +57,7 @@ function ValidationFunctionName(source, arguments)
  Use the <xref:System.Web.UI.WebControls.CustomValidator.ClientValidationFunction%2A> property to specify the name of the client-side validation script function associated with the <xref:System.Web.UI.WebControls.CustomValidator> control. Because the script function is executed on the client, the function must be in a language that the target browser supports, such as VBScript or JScript.  
   
 > [!NOTE]
->  When you use the <xref:System.Web.UI.WebControls.CustomValidator> control inside an <xref:System.Web.UI.UpdatePanel> control, make sure that the validator control and the control it is associated with are in the same panel. For more information about using the <xref:System.Web.UI.UpdatePanel> control for partial-page updates, see [Partial-Page Rendering Overview](http://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
+>  When you use the <xref:System.Web.UI.WebControls.CustomValidator> control inside an <xref:System.Web.UI.UpdatePanel> control, make sure that the validator control and the control it is associated with are in the same panel. For more information about using the <xref:System.Web.UI.UpdatePanel> control for partial-page updates, see [Partial-Page Rendering Overview](https://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
   
  Like server-side validation, the string from the input control to validate is accessed by using the <xref:System.Web.UI.WebControls.ServerValidateEventArgs.Value%2A> property of the `arguments` parameter. Return the result of the validation by setting the <xref:System.Web.UI.WebControls.ServerValidateEventArgs.IsValid%2A> property of the `arguments` parameter.  
   
@@ -87,7 +87,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
  For more information on validation controls, see <xref:System.Web.UI.WebControls.BaseValidator>.  
   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
    
   
@@ -95,7 +95,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
  The following code example demonstrates how to create a server-side <xref:System.Web.UI.WebControls.CustomValidator> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CustomValidatorServerValidate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorServerValidate/CS/customvalidatorservervalidatecs.aspx#1)]
  [!code-aspx-vb[CustomValidatorServerValidate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorServerValidate/VB/customvalidatorservervalidatevb.aspx#1)]  
@@ -179,7 +179,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.CustomValidator.AddAttributesToRender%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.CustomValidator> error message always appears in bold.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CustomCustomValidatorAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCustomValidatorAddAttributesToRender/CS/custom_customvalidator_addattributestorendercs.aspx#1)]
  [!code-aspx-vb[CustomCustomValidatorAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCustomValidatorAddAttributesToRender/VB/custom_customvalidator_addattributestorendervb.aspx#1)]  
@@ -231,7 +231,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
   
  Because the client validation function runs on the target browser, the function must be written using a scripting language supported by the browser, such as JScript or VBScript.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -239,7 +239,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CustomValidator.ClientValidationFunction%2A> property to specify the name of the function that performs client-side validation. The validation function checks for even numbers. For a description of the function parameters, see the Remarks section of <xref:System.Web.UI.WebControls.CustomValidator>.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CustomValidatorClient#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorClient/CS/customvalidatorclientcs.aspx#1)]
  [!code-aspx-vb[CustomValidatorClient#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorClient/VB/customvalidatorclientvb.aspx#1)]  
@@ -315,7 +315,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.CustomValidator.EvaluateIsValid%2A> method in a custom server control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CustomCustomValidatorEvaluateIsValid#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCustomValidatorEvaluateIsValid/CS/custom_customvalidator_evaluateisvalidcs.aspx#1)]
  [!code-aspx-vb[CustomCustomValidatorEvaluateIsValid#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCustomValidatorEvaluateIsValid/VB/custom_customvalidator_evaluateisvalidvb.aspx#1)]  
@@ -367,7 +367,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
  The following code example demonstrates how to specify and code a handler for a server-side <xref:System.Web.UI.WebControls.CustomValidator> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CustomValidatorServerValidate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorServerValidate/CS/customvalidatorservervalidatecs.aspx#1)]
  [!code-aspx-vb[CustomValidatorServerValidate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorServerValidate/VB/customvalidatorservervalidatevb.aspx#1)]  
@@ -413,7 +413,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
  The following code example demonstrates how to specify and code a handler for a server-side <xref:System.Web.UI.WebControls.CustomValidator> control. It creates a custom validation routine, validates the value of a <xref:System.Web.UI.WebControls.TextBox> control for an even number, and then displays the result of the validation.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CustomValidatorServerValidate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorServerValidate/CS/customvalidatorservervalidatecs.aspx#1)]
  [!code-aspx-vb[CustomValidatorServerValidate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorServerValidate/VB/customvalidatorservervalidatevb.aspx#1)]  
@@ -460,7 +460,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
   
  The <xref:System.Web.UI.WebControls.CustomValidator.ValidateEmptyText%2A> property is new for the .NET Framework version 2.0.  If <xref:System.Web.UI.WebControls.CustomValidator.ValidateEmptyText%2A> is set to `true`, the validator evaluates the control's value (using the criteria specified to the <xref:System.Web.UI.WebControls.CustomValidator> control) and returns the validation results. This property allows developers to evaluate the results of a <xref:System.Web.UI.WebControls.CustomValidator> control regardless of the value of the targeted control.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>

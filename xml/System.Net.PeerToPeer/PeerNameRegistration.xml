@@ -487,7 +487,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the [TCP/IP](http://go.microsoft.com/fwlink?LinkID=98458) port number used by the peer being registered into the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</summary>
+        <summary>Gets or sets the [TCP/IP](https://go.microsoft.com/fwlink?LinkID=98458) port number used by the peer being registered into the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</summary>
         <value>An integer value indicating the TCP port number of the <see cref="T:System.Net.IPEndPoint" />. Unless explicitly specified, the default value for this property is zero (0).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

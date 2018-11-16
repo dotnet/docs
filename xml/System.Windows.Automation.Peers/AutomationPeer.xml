@@ -24,7 +24,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,8 +43,8 @@
       <Docs>
         <summary>Provides initialization for base class values when they are called by the constructor of a derived class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="EventsSource">
@@ -75,7 +75,7 @@
         <summary>Gets or sets an <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> that is reported to the automation client as a source for all the events that come from this <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />.</summary>
         <value>The <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> that is the source of events.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAcceleratorKey">
@@ -99,8 +99,8 @@
         <summary>Gets the accelerator key combinations for the element that is associated with the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] peer.</summary>
         <returns>The accelerator key.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetAcceleratorKeyCore">
@@ -131,7 +131,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAccessKey">
@@ -155,7 +155,7 @@
         <summary>Gets the access key for the element that is associated with the automation peer.</summary>
         <returns>The string that contains the access key.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAccessKeyCore">
@@ -186,7 +186,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlType">
@@ -210,8 +210,8 @@
         <summary>Gets the control type for the element that is associated with the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] peer.</summary>
         <returns>The control type.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">
@@ -235,7 +235,7 @@
         <summary>When overridden in a derived class, is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
         <returns>The control type.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationId">
@@ -267,7 +267,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Automation.AutomationIdentifier" />
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationIdCore">
@@ -321,7 +321,7 @@
         <summary>Gets the <see cref="T:System.Windows.Rect" /> object that represents the screen coordinates of the element that is associated with the automation peer.</summary>
         <returns>The bounding rectangle.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetBoundingRectangleCore">
@@ -345,7 +345,7 @@
         <summary>When overridden in a derived class, is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetBoundingRectangle" />.</summary>
         <returns>The bounding rectangle.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetChildren">
@@ -369,7 +369,7 @@
         <summary>Gets the collection of <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" /> elements that are represented in the UI Automation tree as immediate child elements of the automation peer.</summary>
         <returns>The collection of child elements.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetChildrenCore">
@@ -393,7 +393,7 @@
         <summary>When overridden in a derived class, is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.</summary>
         <returns>The collection of child elements.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetClassName">
@@ -417,7 +417,7 @@
         <summary>Gets a name that is used with <see cref="T:System.Windows.Automation.Peers.AutomationControlType" />, to differentiate the control that is represented by this <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />.</summary>
         <returns>The class name.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">
@@ -441,7 +441,7 @@
         <summary>When overridden in a derived class, is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
         <returns>The class name.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetClickablePoint">
@@ -472,7 +472,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetClickablePointCore">
@@ -496,7 +496,7 @@
         <summary>When overridden in a derived class, is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClickablePoint" />.</summary>
         <returns>A point within the clickable area of the element.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetHelpText">
@@ -527,7 +527,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetHelpTextCore">
@@ -551,7 +551,7 @@
         <summary>When overridden in a derived class, is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetHelpText" />.</summary>
         <returns>The help text.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetHostRawElementProviderCore">
@@ -600,8 +600,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetItemStatus">
@@ -632,7 +632,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetItemStatusCore">
@@ -656,7 +656,7 @@
         <summary>When overridden in a derived class, is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetItemStatus" />.</summary>
         <returns>The status.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetItemType">
@@ -687,7 +687,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetItemTypeCore">
@@ -711,7 +711,7 @@
         <summary>When overridden in a derived class, is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetItemType" />.</summary>
         <returns>The kind of item.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetLabeledBy">
@@ -748,8 +748,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetLabeledByCore">
@@ -773,8 +773,8 @@
         <summary>When overridden in a derived class, is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLabeledBy" />.</summary>
         <returns>The <see cref="T:System.Windows.Automation.Peers.LabelAutomationPeer" /> for the element that is targeted by the <see cref="T:System.Windows.Controls.Label" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetLiveSetting">
@@ -849,8 +849,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <summary>Gets a human-readable localized string that represents the <see cref="T:System.Windows.Automation.Peers.AutomationControlType" /> value for the control that is associated with this automation peer.</summary>
         <returns>The type of the control.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetLocalizedControlTypeCore">
@@ -874,8 +874,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <summary>When overridden in a derived class, is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLocalizedControlType" />.</summary>
         <returns>The type of the control.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetName">
@@ -906,8 +906,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetNameCore">
@@ -940,8 +940,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetOrientation">
@@ -965,8 +965,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <summary>Gets a value that indicates the explicit control orientation, if any.</summary>
         <returns>The orientation of the control.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetOrientationCore">
@@ -990,8 +990,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <summary>When overridden in a derived class, is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetOrientation" />.</summary>
         <returns>The orientation of the control.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetParent">
@@ -1015,8 +1015,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <summary>Gets the <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> that is the parent of this <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />.</summary>
         <returns>The parent automation peer.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetPattern">
@@ -1042,8 +1042,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <summary>When overridden in a derived class, gets the control pattern that is associated with the specified <see cref="T:System.Windows.Automation.Peers.PatternInterface" />.</summary>
         <returns>The object that implements the pattern interface; <see langword="null" /> if this peer does not support this interface.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetPeerFromPoint">
@@ -1116,8 +1116,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>
           <see langword="true" /> if the element has keyboard focus; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="HasKeyboardFocusCore">
@@ -1142,8 +1142,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>
           <see langword="true" /> if the element has keyboard focus; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="InvalidatePeer">
@@ -1175,8 +1175,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsContentElement">
@@ -1208,8 +1208,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsContentElementCore">
@@ -1234,8 +1234,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>
           <see langword="true" /> if the element is a content element; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsControlElement">
@@ -1260,8 +1260,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>
           <see langword="true" /> if the element is a control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsControlElementCore">
@@ -1286,8 +1286,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>
           <see langword="true" /> if the element is a control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -1312,8 +1312,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>
           <see langword="true" /> if the element supports interaction; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsEnabledCore">
@@ -1338,8 +1338,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>
           <see langword="true" /> if the automation peer can receive and send events; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsHwndHost">
@@ -1372,7 +1372,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsKeyboardFocusable">
@@ -1397,8 +1397,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>
           <see langword="true" /> if the element can accept keyboard focus; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsKeyboardFocusableCore">
@@ -1423,8 +1423,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>
           <see langword="true" /> if the element can accept keyboard focus; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsOffscreen">
@@ -1456,8 +1456,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsOffscreenCore">
@@ -1482,8 +1482,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>
           <see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsPassword">
@@ -1508,8 +1508,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>
           <see langword="true" /> if the element contains sensitive content such as a password; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsPasswordCore">
@@ -1534,8 +1534,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>
           <see langword="true" /> if the element contains sensitive content; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsRequiredForForm">
@@ -1561,8 +1561,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
           <see langword="true" /> if the element must be completed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Automation.AutomationProperties.IsRequiredForForm" />
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsRequiredForFormCore">
@@ -1587,8 +1587,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>
           <see langword="true" /> if the element is must be completed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="ListenerExists">
@@ -1625,7 +1625,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PeerFromProvider">
@@ -1652,8 +1652,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <summary>Gets an <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> for the specified <see cref="T:System.Windows.Automation.Provider.IRawElementProviderSimple" /> proxy.</summary>
         <returns>An <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> for the specified <see cref="T:System.Windows.Automation.Provider.IRawElementProviderSimple" /> proxy.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderFromPeer">
@@ -1680,8 +1680,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <summary>Gets the <see cref="T:System.Windows.Automation.Provider.IRawElementProviderSimple" /> for the specified <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />.</summary>
         <returns>The proxy.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="RaiseAsyncContentLoadedEvent">
@@ -1707,7 +1707,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <param name="args">The event data.</param>
         <summary>Called by the <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> to raise the <see cref="F:System.Windows.Automation.AutomationElement.AsyncContentLoadedEvent" /> event.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RaiseAutomationEvent">
@@ -1733,7 +1733,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <param name="eventId">The event identifier.</param>
         <summary>Raises an automation event.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePropertyChangedEvent">
@@ -1763,8 +1763,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <param name="newValue">The new value of the property.</param>
         <summary>Raises an event to notify the automation client of a changed property value.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="ResetChildrenCache">
@@ -1799,9 +1799,9 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
         <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="SetFocus">
@@ -1824,8 +1824,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
       <Docs>
         <summary>Sets the keyboard focus on the element that is associated with this automation peer.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="SetFocusCore">
@@ -1848,8 +1848,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
       <Docs>
         <summary>When overridden in a derived class, is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.SetFocus" />.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
   </Members>

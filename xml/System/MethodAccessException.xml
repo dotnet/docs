@@ -43,7 +43,7 @@
 ## Remarks  
   
 > [!NOTE]
->  This exception is not included in the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), but it is thrown by some members that are. To catch the exception in that case, write a `catch` statement for <xref:System.MemberAccessException> instead.  
+>  This exception is not included in the [.NET for Windows Store apps](https://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), but it is thrown by some members that are. To catch the exception in that case, write a `catch` statement for <xref:System.MemberAccessException> instead.  
   
  This exception is thrown in situations such as the following:  
   

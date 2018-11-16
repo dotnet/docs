@@ -34,7 +34,7 @@
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewUpdatedEventArgs> object to determine whether an exception occurred during an update operation.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemUpdated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdated/CS/ListViewItemUpdatedCS.aspx#1)]
  [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemUpdated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdated/VB/ListViewItemUpdatedVB.aspx#1)]  
@@ -47,7 +47,7 @@
     <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.Exception" />
     <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.ExceptionHandled" />
     <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.KeepInEditMode" />
-    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,7 +96,7 @@
         <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.Exception" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.ExceptionHandled" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.KeepInEditMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -144,7 +144,7 @@
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.Exception" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.ExceptionHandled" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -193,7 +193,7 @@
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.AffectedRows" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.ExceptionHandled" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -243,7 +243,7 @@
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.AffectedRows" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewUpdatedEventArgs.Exception" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="KeepInEditMode">
@@ -291,7 +291,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="NewValues">
@@ -330,7 +330,7 @@
         <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
         <altmember cref="T:System.Collections.DictionaryEntry" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdated" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="OldValues">
@@ -369,7 +369,7 @@
         <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
         <altmember cref="T:System.Collections.DictionaryEntry" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemUpdated" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
   </Members>

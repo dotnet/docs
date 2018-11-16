@@ -21,7 +21,7 @@
   <Docs>
     <summary>Exposes <see cref="T:System.Windows.Controls.TabItem" /> types to UI Automation.</summary>
     <remarks>To be added.</remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,7 +50,7 @@
         <param name="tabControlAutomationPeer">The <see cref="T:System.Windows.Automation.Peers.TabControlAutomationPeer" /> that is the parent of this <see cref="T:System.Windows.Automation.Peers.TabItemAutomationPeer" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.TabItemAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">
@@ -74,7 +74,7 @@
         <summary>Gets the control type for the <see cref="T:System.Windows.Controls.TabItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TabItemAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
         <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.TabItem" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetChildrenCore">
@@ -98,7 +98,7 @@
         <summary>Gets the collection of child elements of the <see cref="T:System.Windows.Controls.TabItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TabItemAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.</summary>
         <returns>The collection of child elements.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">
@@ -122,7 +122,7 @@
         <summary>Gets the name of the <see cref="T:System.Windows.Controls.TabItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TabItemAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
         <returns>A string that contains "TabItem".</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetNameCore">
@@ -153,7 +153,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection">

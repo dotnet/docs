@@ -87,7 +87,7 @@
  You can also limit the number of levels displayed in a dynamic menu by setting the <xref:System.Web.UI.WebControls.Menu.MaximumDynamicDisplayLevels%2A> property. Menu levels higher than the specified value are discarded.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.Menu> control is not designed to be used inside an <xref:System.Web.UI.UpdatePanel> control. You can add the <xref:System.Web.UI.WebControls.Menu> control only to a page outside an <xref:System.Web.UI.UpdatePanel> control. <xref:System.Web.UI.UpdatePanel> controls are used to update selected regions of a page instead of updating the whole page with a postback. For more information, see [UpdatePanel Control Overview](http://msdn.microsoft.com/library/29a2265d-9674-4c19-b70e-e5560ee9689a) and [Partial-Page Rendering Overview](http://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
+>  The <xref:System.Web.UI.WebControls.Menu> control is not designed to be used inside an <xref:System.Web.UI.UpdatePanel> control. You can add the <xref:System.Web.UI.WebControls.Menu> control only to a page outside an <xref:System.Web.UI.UpdatePanel> control. <xref:System.Web.UI.UpdatePanel> controls are used to update selected regions of a page instead of updating the whole page with a postback. For more information, see [UpdatePanel Control Overview](https://msdn.microsoft.com/library/29a2265d-9674-4c19-b70e-e5560ee9689a) and [Partial-Page Rendering Overview](https://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
   
 <a name="menu_items"></a>   
 ## Menu Items  
@@ -112,13 +112,13 @@
   
  When binding to a data source where each data item contains multiple properties (such as an XML element with several attributes), a menu item displays the value returned by the `ToString` method of the data item by default. In the case of an XML element, the menu item displays the element name, which shows the underlying structure of the menu tree but is not very useful otherwise. You can bind a menu item to a specific data item property by using the <xref:System.Web.UI.WebControls.Menu.DataBindings%2A> collection to specify menu item bindings. The <xref:System.Web.UI.WebControls.Menu.DataBindings%2A> collection contains <xref:System.Web.UI.WebControls.MenuItemBinding> objects that define the relationship between a data item and the menu item it is binding to. You can specify the criteria for binding and the data item property to display in the node. For more information on menu item bindings, see <xref:System.Web.UI.WebControls.MenuItemBinding>.  
   
- You cannot create empty nodes in a <xref:System.Web.UI.WebControls.Menu> control by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> or <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties to the empty string (""). Setting these properties to the empty string has the same effect as not setting the properties. In that case, the <xref:System.Web.UI.WebControls.Menu> control creates a default binding using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property. For more information, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
+ You cannot create empty nodes in a <xref:System.Web.UI.WebControls.Menu> control by setting the <xref:System.Web.UI.WebControls.MenuItemBinding.Text%2A> or <xref:System.Web.UI.WebControls.MenuItemBinding.TextField%2A> properties to the empty string (""). Setting these properties to the empty string has the same effect as not setting the properties. In that case, the <xref:System.Web.UI.WebControls.Menu> control creates a default binding using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property. For more information, see [Binding to Databases](https://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
   
 <a name="customizing_the_user_interface"></a>   
 ## Customizing the User Interface  
  There are many ways to customize the appearance of the <xref:System.Web.UI.WebControls.Menu> control. First, you can specify whether the <xref:System.Web.UI.WebControls.Menu> control is rendered horizontally or vertically by setting the <xref:System.Web.UI.WebControls.Menu.Orientation%2A> property. You can also specify a different style (such as font size and color) for each of the menu item types.  
   
- If you use cascading style sheets (CSS) to customize the appearance of the control, use either inline styles or a separate CSS file, but not both. Using both inline styles and a separate CSS file could cause unexpected results. For more information on using style sheets with controls, see [Web Server Controls and CSS Styles](http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42).  
+ If you use cascading style sheets (CSS) to customize the appearance of the control, use either inline styles or a separate CSS file, but not both. Using both inline styles and a separate CSS file could cause unexpected results. For more information on using style sheets with controls, see [Web Server Controls and CSS Styles](https://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42).  
   
  The following table lists the available menu item styles.  
   
@@ -179,7 +179,7 @@
   
 <a name="accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -505,7 +505,7 @@
    
   
 ## Examples  
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=192868).  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](https://go.microsoft.com/fwlink/?LinkId=192868).  
   
  The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.Menu> control with static menu items using declarative syntax.  
   
@@ -865,7 +865,7 @@
   
  You can also specify that a dynamic menu should never automatically disappear by setting this property to -1. In this case, the dynamic menu item will disappear only when the user clicks outside the menu.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -3098,7 +3098,7 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  When a dynamic menu item contains additional items at the bottom of the menu, an image is displayed to indicate that the user can scroll down to view additional menu items. Use the <xref:System.Web.UI.WebControls.Menu.ScrollDownText%2A> property to specify the alternate text for this image. The text that you specify provides assistive technology devices with a description of the image that can be used to make the control more accessible.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -3216,7 +3216,7 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
   
  When a dynamic menu item contains additional items at the top of the menu, an image is displayed to indicate that the user can scroll up to view additional menu items. Use the <xref:System.Web.UI.WebControls.Menu.ScrollUpText%2A> property to specify the alternate text for this image. The text that you specify provides assistive technology devices with a description of the image that can be used to make the control more accessible.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -3518,7 +3518,7 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.Menu.SkipLinkText%2A> property to specify the alternate text for a hidden image read by screen readers to provide the ability to skip the list of links. The text that you specify provides assistive technology devices with a description of the hidden skip link image that can be used to make the control more accessible.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  The <xref:System.Web.UI.WebControls.Menu> control provides the <xref:System.Web.UI.WebControls.Menu.SkipLinkText%2A> property as a way for the entire control to be skipped by screen readers. If the <xref:System.Web.UI.WebControls.Menu.SkipLinkText%2A> property is set, an invisible image with alternate text is rendered, giving the user the option to jump to the end of the control. Screen readers read the alternate text aloud, and the image occupies only one pixel space. For pixel-precise control over the rendering of the page, set the <xref:System.Web.UI.WebControls.Menu.SkipLinkText%2A> property to an empty string ("") and provide your own mechanism to skip the menu. The <xref:System.Web.UI.WebControls.Menu.SkipLinkText%2A> property is set to the empty string by default.  
   
@@ -4478,7 +4478,7 @@ menuInstance.RenderingCompatibility = new Version(3, 5);
  This property applies to all menu items in a <xref:System.Web.UI.WebControls.Menu> control. You can selectively override this property by setting the <xref:System.Web.UI.WebControls.MenuItem.Target%2A> property of each <xref:System.Web.UI.WebControls.MenuItem> object directly.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.MenuItem.Target%2A> property renders as a target attribute. The target attribute on anchor elements is not allowed in the XHTML 1.1 strict document type definition. If rendered output must conform to XHTML or accessibility standards, do not set the <xref:System.Web.UI.WebControls.MenuItem.Target%2A> property. For more information, see [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97) and [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13).  
+>  The <xref:System.Web.UI.WebControls.MenuItem.Target%2A> property renders as a target attribute. The target attribute on anchor elements is not allowed in the XHTML 1.1 strict document type definition. If rendered output must conform to XHTML or accessibility standards, do not set the <xref:System.Web.UI.WebControls.MenuItem.Target%2A> property. For more information, see [XHTML Standards in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97) and [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13).  
   
    
   

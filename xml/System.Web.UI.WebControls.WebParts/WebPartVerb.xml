@@ -79,7 +79,7 @@
   
 -   An explanation of how the example works.  
   
- The first part of the code example contains source code that creates a simple <xref:System.Web.UI.WebControls.WebParts.WebPart> control that displays some text. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses the dynamic compilation approach. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The first part of the code example contains source code that creates a simple <xref:System.Web.UI.WebControls.WebParts.WebPart> control that displays some text. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses the dynamic compilation approach. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartVerb2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartVerb2/CS/SimpleControl.cs#2)]
  [!code-vb[WebParts_WebPartVerb2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartVerb2/VB/SimpleControl.vb#2)]  
@@ -101,7 +101,7 @@
     <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Verbs" />
     <altmember cref="P:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbCollection" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -266,7 +266,7 @@
   
  The purpose of this property is to give developers a way of indicating that some custom state associated with a verb is currently active. For example, suppose a developer creates a custom verb that enlarges the text size (for accessibility purposes) of the body text on all <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in a zone. If a user clicks the verb, this property value could be set to `true`, which would cause a selected check box to appear next to the **Increase Text Size** verb in the verbs menu, indicating to users that the state associated with the verb (enlarged text) is active.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
@@ -394,7 +394,7 @@
 ## Remarks  
  Use this property to get or set a value indicating whether the verb is enabled. It is useful to be able to enable or disable verbs at given points in the page and control life cycle. For example, if a developer wants to prevent users from being able to close the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in a zone for any reason, the developer can set the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.Enabled%2A> property value on the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseVerb%2A> verb to `false`, and then users will be prevented from closing any controls within that zone. By default, disabled verbs are rendered in verbs menus with a visual cue such as a lighter text color.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -956,7 +956,7 @@
   
  A verb whose <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.Visible%2A> property is set to `false` is hidden from users, but is still rendered on a page, can still be accessed programmatically, and still fully participates in page and control life cycle events.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>

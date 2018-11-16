@@ -22,7 +22,7 @@
 ## Remarks  
  The sole purpose of a <xref:System.Windows.Forms.Design.Behavior.Glyph> is to paint and hit test. A <xref:System.Windows.Forms.Design.Behavior.Glyph> does not have a window handle (HWND), as it is rendered on the adorner window control of the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>. Each <xref:System.Windows.Forms.Design.Behavior.Glyph> can have a <xref:System.Windows.Forms.Design.Behavior.Behavior> associated with it. A successfully hit-tested <xref:System.Windows.Forms.Design.Behavior.Glyph> has the opportunity to push a new or different <xref:System.Windows.Forms.Design.Behavior.Behavior> onto the behavior stack of the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>.  
   
- For more information, see [Behavior Service Overview](http://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f).  
+ For more information, see [Behavior Service Overview](https://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f).  
   
    
   
@@ -38,8 +38,8 @@
     <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
     <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
     <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
-    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f">Behavior Service Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f">Behavior Service Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,7 +80,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Behavior">
@@ -111,7 +111,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -153,7 +153,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetHitTest">
@@ -200,7 +200,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.Windows.Forms.Cursor" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -246,7 +246,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.Windows.Forms.Cursor" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="SetBehavior">
@@ -278,7 +278,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.Windows.Forms.Cursor" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

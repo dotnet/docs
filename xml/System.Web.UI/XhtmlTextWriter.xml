@@ -22,13 +22,13 @@
 ## Remarks  
  XHTML is an XML-compliant markup language, based on HTML 4.1, which allows you to create Web sites that are suitable for multiple device types. It merges the ease of use provided by HTML with the strict element guidelines provided by XML to produce a markup language with a wide range of format and style options, and with reduced markup tag ambiguity. The <xref:System.Web.UI.XhtmlTextWriter> class provides formatting capabilities that ASP.NET server controls use when rendering XHTML content to clients. You can use the <xref:System.Web.UI.XhtmlTextWriter.SetDocType%2A> method to specify which type of XHTML the text writer renders. Supported document types are defined in the <xref:System.Web.UI.XhtmlMobileDocType> enumeration.  
   
- The <xref:System.Web.UI.XhtmlTextWriter> class renders two sets of attributes for elements. One set is a collection of common attributes, as referenced in the <xref:System.Web.UI.XhtmlTextWriter.CommonAttributes%2A> property. The second set is a collection of element-specific attributes, as referenced in the <xref:System.Web.UI.XhtmlTextWriter.ElementSpecificAttributes%2A> property. For more information on the elements and styles that are rendered, see the XHTML modularization specification at the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125).  
+ The <xref:System.Web.UI.XhtmlTextWriter> class renders two sets of attributes for elements. One set is a collection of common attributes, as referenced in the <xref:System.Web.UI.XhtmlTextWriter.CommonAttributes%2A> property. The second set is a collection of element-specific attributes, as referenced in the <xref:System.Web.UI.XhtmlTextWriter.ElementSpecificAttributes%2A> property. For more information on the elements and styles that are rendered, see the XHTML modularization specification at the [World Wide Web Consortium (W3C) Web site](https://go.microsoft.com/fwlink/?linkid=37125).  
   
  You can use the members of the <xref:System.Web.UI.XhtmlTextWriter> class and any derived classes to create custom text writers to use in custom XHTML page adapters or class adapters. You can also create derived classes that override the standard behavior of the <xref:System.Web.UI.XhtmlTextWriter> class.  
   
- By default, when you are working with browsers that support HTML 4.0, ASP.NET pages and controls render markup that is compatible with the XHTML 1.1 standard. For more information, see [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
+ By default, when you are working with browsers that support HTML 4.0, ASP.NET pages and controls render markup that is compatible with the XHTML 1.1 standard. For more information, see [XHTML Standards in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
   
- The <xref:System.Web.UI.HtmlTextWriter> outputs XHTML unless you configure ASP.NET specifically to not render XHTML markup. For more information, see [NIB: How to: Configure XHTML Rendering in ASP.NET Web Sites](http://msdn.microsoft.com/library/42483a54-f1ae-44e1-88e6-4370f8690149).  
+ The <xref:System.Web.UI.HtmlTextWriter> outputs XHTML unless you configure ASP.NET specifically to not render XHTML markup. For more information, see [NIB: How to: Configure XHTML Rendering in ASP.NET Web Sites](https://msdn.microsoft.com/library/42483a54-f1ae-44e1-88e6-4370f8690149).  
   
    
   
@@ -68,7 +68,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.ChtmlTextWriter" />
-    <related type="Article" href="http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -224,7 +224,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.XhtmlTextWriter.CommonAttributes%2A> collection contains attributes that are allowed in XHTML elements and that are not suppressed in the <xref:System.Web.UI.XhtmlTextWriter.SuppressCommonAttributes%2A> property. For more information on common attributes, see the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125).  
+ The <xref:System.Web.UI.XhtmlTextWriter.CommonAttributes%2A> collection contains attributes that are allowed in XHTML elements and that are not suppressed in the <xref:System.Web.UI.XhtmlTextWriter.SuppressCommonAttributes%2A> property. For more information on common attributes, see the [World Wide Web Consortium (W3C) Web site](https://go.microsoft.com/fwlink/?linkid=37125).  
   
  When a new instance of the <xref:System.Web.UI.XhtmlTextWriter> class is created, the common attributes that are initialized are:  
   
@@ -305,7 +305,7 @@
 |`<title>`|`xml:lang`|  
 |`<tr>`|`align`, `valign`|  
   
- For more information on the elements and styles that are rendered, see the XHTML modularization specification at the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125).  
+ For more information on the elements and styles that are rendered, see the XHTML modularization specification at the [World Wide Web Consortium (W3C) Web site](https://go.microsoft.com/fwlink/?linkid=37125).  
   
  ]]></format>
         </remarks>

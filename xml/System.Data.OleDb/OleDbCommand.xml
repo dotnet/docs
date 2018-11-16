@@ -78,7 +78,7 @@
     </remarks>
     <altmember cref="T:System.Data.OleDb.OleDbDataAdapter" />
     <altmember cref="T:System.Data.OleDb.OleDbConnection" />
-    <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -88,7 +88,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbCommand" /> class.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -130,7 +130,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -176,7 +176,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -226,7 +226,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -278,7 +278,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -320,7 +320,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -344,7 +344,7 @@
         <summary>Creates a new <see cref="T:System.Data.OleDb.OleDbCommand" /> object that is a copy of the current instance.</summary>
         <returns>A new <see cref="T:System.Data.OleDb.OleDbCommand" /> object that is a copy of this instance.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="CommandText">
@@ -424,7 +424,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="CommandTimeout">
@@ -466,7 +466,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="CommandType">
@@ -523,7 +523,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value was not a valid <see cref="P:System.Data.OleDb.OleDbCommand.CommandType" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -585,7 +585,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Data.OleDb.OleDbCommand.Connection" /> property was changed while a transaction was in progress.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDbParameter">
@@ -640,7 +640,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="DbConnection">
@@ -747,7 +747,7 @@
         <summary>Gets or sets a value that indicates whether the command object should be visible in a customized Windows Forms Designer control.</summary>
         <value>A value that indicates whether the command object should be visible in a control. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -855,7 +855,7 @@
  -or-  
   
  Cannot execute a command within a transaction context that differs from the context in which the connection was originally enlisted.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ExecuteReader">
@@ -865,7 +865,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Sends the <see cref="P:System.Data.OleDb.OleDbCommand.CommandText" /> to the <see cref="P:System.Data.OleDb.OleDbCommand.Connection" /> and builds an <see cref="T:System.Data.OleDb.OleDbDataReader" />.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ExecuteReader">
@@ -908,7 +908,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Cannot execute a command within a transaction context that differs from the context in which the connection was originally enlisted.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="ExecuteReader">
@@ -958,7 +958,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Cannot execute a command within a transaction context that differs from the context in which the connection was originally enlisted.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="ExecuteScalar">
@@ -1009,7 +1009,7 @@ Int32 count = (int32) ExecuteScalar();
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Cannot execute a command within a transaction context that differs from the context in which the connection was originally enlisted.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -1068,7 +1068,7 @@ Int32 count = (int32) ExecuteScalar();
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="Prepare">
@@ -1121,7 +1121,7 @@ Int32 count = (int32) ExecuteScalar();
  -or-  
   
  The <see cref="P:System.Data.OleDb.OleDbCommand.Connection" /> is not open.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="ResetCommandTimeout">
@@ -1152,7 +1152,7 @@ Int32 count = (int32) ExecuteScalar();
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbCommand.CreateParameter">
@@ -1342,7 +1342,7 @@ Int32 count = (int32) ExecuteScalar();
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="UpdatedRowSource">
@@ -1387,7 +1387,7 @@ Int32 count = (int32) ExecuteScalar();
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value entered was not one of the <see cref="T:System.Data.UpdateRowSource" /> values.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
       </Docs>
     </Member>
   </Members>

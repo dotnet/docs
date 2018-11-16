@@ -65,7 +65,7 @@
 ## Customizing the Slider Control  
  To apply the same property settings to multiple <xref:System.Windows.Controls.Slider> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.Slider>, see [Slider Styles and Templates](~/docs/framework/wpf/controls/slider-styles-and-templates.md).  
   
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](https://go.microsoft.com/fwlink/?LinkID=158252).  
   
 > [!NOTE]
 >  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.Slider> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
@@ -565,7 +565,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the amount of time in milliseconds between increase or decrease commands when a user clicks the <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> of a <see cref="T:System.Windows.Controls.Slider" />.</summary>
-        <value>A time in milliseconds between commands that change the <see cref="P:System.Windows.Controls.Primitives.RangeBase.Value" /> of a <see cref="T:System.Windows.Controls.Slider" />. The default is the system key repeat rate. For more information, see [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp) (SPI_GETKEYBOARDSPEED).</value>
+        <value>A time in milliseconds between commands that change the <see cref="P:System.Windows.Controls.Primitives.RangeBase.Value" /> of a <see cref="T:System.Windows.Controls.Slider" />. The default is the system key repeat rate. For more information, see [SystemParametersInfo](https://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp) (SPI_GETKEYBOARDSPEED).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

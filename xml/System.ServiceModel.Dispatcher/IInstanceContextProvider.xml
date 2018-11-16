@@ -19,7 +19,7 @@
 ## Remarks  
  Implement the <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider> interface to provide the appropriate <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType> object to the system. Typically, this interface is implemented to support shared sessions, enable service instance pooling, control lifetimes of service instances, or to group contexts among clients.  
   
- For example, to implement sharing, insert a custom <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider> to decide which session or call from a client is associated with which <xref:System.ServiceModel.InstanceContext> object. For an example that demonstrates the sharing of instance contexts, see [InstanceContextSharing](http://msdn.microsoft.com/library/4a6a46d7-b7d7-4bb5-a0dd-03ffa3cbc230).  
+ For example, to implement sharing, insert a custom <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider> to decide which session or call from a client is associated with which <xref:System.ServiceModel.InstanceContext> object. For an example that demonstrates the sharing of instance contexts, see [InstanceContextSharing](https://msdn.microsoft.com/library/4a6a46d7-b7d7-4bb5-a0dd-03ffa3cbc230).  
   
 > [!NOTE]
 >  When an <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider> is inserted into Windows Communication Foundation (WCF), the normal property that controls the creation of <xref:System.ServiceModel.InstanceContext> objects (the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property) is no longer checked and has no effect.  
@@ -130,7 +130,7 @@
 ## Remarks  
  <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider.IsIdle%2A> is called when WCF is about to close and recycle an idle <xref:System.ServiceModel.InstanceContext> object so that you can inform the runtime whether to continue doing so.  
   
- For an example that demonstrates the sharing of instance contexts, see [InstanceContextSharing](http://msdn.microsoft.com/library/4a6a46d7-b7d7-4bb5-a0dd-03ffa3cbc230).  
+ For an example that demonstrates the sharing of instance contexts, see [InstanceContextSharing](https://msdn.microsoft.com/library/4a6a46d7-b7d7-4bb5-a0dd-03ffa3cbc230).  
   
  ]]></format>
         </remarks>

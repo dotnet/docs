@@ -42,7 +42,7 @@
 ## Remarks  
  Any handler provided to the constructor or event handlers registered with the <xref:System.Progress%601.ProgressChanged> event are invoked through a <xref:System.Threading.SynchronizationContext> instance captured when the instance is constructed. If there is no current <xref:System.Threading.SynchronizationContext> at the time of construction, the callbacks will be invoked on the <xref:System.Threading.ThreadPool>.  
   
- For more information and a code example, see the article [Async in 4.5: Enabling Progress and Cancellation in Async APIs](http://go.microsoft.com/fwlink/p/?LinkId=267243) in the .NET Framework blog.  
+ For more information and a code example, see the article [Async in 4.5: Enabling Progress and Cancellation in Async APIs](https://go.microsoft.com/fwlink/p/?LinkId=267243) in the .NET Framework blog.  
   
  ]]></format>
     </remarks>

@@ -38,10 +38,10 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This attribute can be used at the assembly level. Typically the attribute constructors take two types.  The two types are a visualizer and a visualizer object source, specified as types or as fully qualified assembly type names. The second option is provided so that the visualizer assembly does not need to be referenced by the assembly containing the <xref:System.Diagnostics.DebuggerVisualizerAttribute>. This allows a component creator to ship the visualizer in a DLL to be called only at debug time. The <xref:System.Diagnostics.DebuggerVisualizerAttribute.Description%2A> property specifies the visualizer description that appears in the drop-down box. The target parameters specify the type that is the target of the visualizer. For more information about visualizers, see [Create Custom Visualizers](http://msdn.microsoft.com/library/c24c006f-f2ac-429f-89db-677fc0c6e1ea).  
+ This attribute can be used at the assembly level. Typically the attribute constructors take two types.  The two types are a visualizer and a visualizer object source, specified as types or as fully qualified assembly type names. The second option is provided so that the visualizer assembly does not need to be referenced by the assembly containing the <xref:System.Diagnostics.DebuggerVisualizerAttribute>. This allows a component creator to ship the visualizer in a DLL to be called only at debug time. The <xref:System.Diagnostics.DebuggerVisualizerAttribute.Description%2A> property specifies the visualizer description that appears in the drop-down box. The target parameters specify the type that is the target of the visualizer. For more information about visualizers, see [Create Custom Visualizers](https://msdn.microsoft.com/library/c24c006f-f2ac-429f-89db-677fc0c6e1ea).  
   
 > [!NOTE]
->  Visualizer and visualizer object source implementation is dependent upon the hosting debugger.  For information on creating a visualizer for [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], see [How to: Write a Visualizer](http://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e).  
+>  Visualizer and visualizer object source implementation is dependent upon the hosting debugger.  For information on creating a visualizer for [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], see [How to: Write a Visualizer](https://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e).  
   
  ]]></format>
     </remarks>
@@ -90,7 +90,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.DebuggerVisualizerAttribute> can be applied to assemblies, classes, and structures. For information on the use of this attribute, see [How to: Write a Visualizer](http://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e).  
+ The <xref:System.Diagnostics.DebuggerVisualizerAttribute> can be applied to assemblies, classes, and structures. For information on the use of this attribute, see [How to: Write a Visualizer](https://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e).  
   
  ]]></format>
         </remarks>
@@ -129,7 +129,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.DebuggerVisualizerAttribute> can be applied to assemblies, classes, and structures. For information on the use of this attribute, see [How to: Write a Visualizer](http://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e).  
+ The <xref:System.Diagnostics.DebuggerVisualizerAttribute> can be applied to assemblies, classes, and structures. For information on the use of this attribute, see [How to: Write a Visualizer](https://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e).  
   
  ]]></format>
         </remarks>
@@ -172,7 +172,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.DebuggerVisualizerAttribute> can be applied to assemblies, classes, and structures. For information on the use of this attribute, see [How to: Write a Visualizer](http://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e).  
+ The <xref:System.Diagnostics.DebuggerVisualizerAttribute> can be applied to assemblies, classes, and structures. For information on the use of this attribute, see [How to: Write a Visualizer](https://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e).  
   
  ]]></format>
         </remarks>
@@ -213,7 +213,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.DebuggerVisualizerAttribute> can be applied to assemblies, classes, and structures. For information on the use of this attribute, see [How to: Write a Visualizer](http://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e).  
+ The <xref:System.Diagnostics.DebuggerVisualizerAttribute> can be applied to assemblies, classes, and structures. For information on the use of this attribute, see [How to: Write a Visualizer](https://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e).  
   
  ]]></format>
         </remarks>
@@ -256,7 +256,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.DebuggerVisualizerAttribute> can be applied to assemblies, classes, and structures. For information on the use of this attribute, see [How to: Write a Visualizer](http://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e).  
+ The <xref:System.Diagnostics.DebuggerVisualizerAttribute> can be applied to assemblies, classes, and structures. For information on the use of this attribute, see [How to: Write a Visualizer](https://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e).  
   
  ]]></format>
         </remarks>
@@ -299,7 +299,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.DebuggerVisualizerAttribute> can be applied to assemblies, classes, and structures. For information on the use of this attribute, see [How to: Write a Visualizer](http://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e).  
+ The <xref:System.Diagnostics.DebuggerVisualizerAttribute> can be applied to assemblies, classes, and structures. For information on the use of this attribute, see [How to: Write a Visualizer](https://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e).  
   
  ]]></format>
         </remarks>
@@ -487,7 +487,7 @@
 ## Remarks  
  If the visualizer was specified by its type, then the value returned is the <xref:System.Type.AssemblyQualifiedName%2A> property for the visualizer type.  
   
- For information on creating a visualizer, see [How to: Write a Visualizer](http://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e).  
+ For information on creating a visualizer, see [How to: Write a Visualizer](https://msdn.microsoft.com/library/625a0d4f-abcc-43f2-9f8c-31c131a4378e).  
   
  ]]></format>
         </remarks>

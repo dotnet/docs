@@ -67,7 +67,7 @@
   
 <a name="accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -172,7 +172,7 @@
     <altmember cref="T:System.Web.UI.WebControls.CircleHotSpot" />
     <altmember cref="T:System.Web.UI.WebControls.RectangleHotSpot" />
     <altmember cref="T:System.Web.UI.WebControls.PolygonHotSpot" />
-    <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -211,7 +211,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -246,7 +246,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.HtmlTextWriter" />
         <altmember cref="M:System.Web.UI.WebControls.WebControl.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -295,7 +295,7 @@
         <altmember cref="M:System.Web.UI.WebControls.ImageMap.OnClick(System.Web.UI.WebControls.ImageMapEventArgs)" />
         <altmember cref="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" />
         <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -426,7 +426,7 @@
         <altmember cref="P:System.Web.UI.WebControls.HotSpot.PostBackValue" />
         <altmember cref="P:System.Web.UI.WebControls.HotSpot.NavigateUrl" />
         <altmember cref="E:System.Web.UI.WebControls.ImageMap.Click" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HotSpots">
@@ -480,7 +480,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.HotSpotCollection" />
         <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -516,7 +516,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="savedState" /> is not a valid <see cref="P:System.Web.UI.Control.ViewState" />.</exception>
         <altmember cref="M:System.Web.UI.WebControls.ImageMap.SaveViewState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -558,7 +558,7 @@
         </block>
         <altmember cref="E:System.Web.UI.WebControls.ImageMap.Click" />
         <altmember cref="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -598,7 +598,7 @@
           <para>To handle a click event in a derived class, override the <see cref="M:System.Web.UI.WebControls.ImageMap.OnClick(System.Web.UI.WebControls.ImageMapEventArgs)" /> method.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -632,7 +632,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.HtmlTextWriter" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -669,7 +669,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.Control.ViewState" />
         <altmember cref="T:System.Web.UI.StateBag" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -714,7 +714,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for raising the event for a <see cref="T:System.Web.UI.WebControls.ImageMap" /> object, override the <see cref="M:System.Web.UI.WebControls.ImageMap.RaisePostBackEvent(System.String)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.ImageMap.RaisePostBackEvent(System.String)" /> method to raise the event when posted data has changed for the control.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -769,14 +769,14 @@
  If the <xref:System.Web.UI.WebControls.ImageMap.Target%2A> property is not set, the browser or window with focus refreshes when the <xref:System.Web.UI.WebControls.ImageMap> control is clicked.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.ImageMap.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.ImageMap.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.ImageMap> must be XHTML 1.1-compliant. For more information, see [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
+>  The <xref:System.Web.UI.WebControls.ImageMap.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.ImageMap.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.ImageMap> must be XHTML 1.1-compliant. For more information, see [XHTML Standards in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
 >   
->  When creating accessible Web pages, it is strongly recommended that you avoid using the <xref:System.Web.UI.WebControls.ImageMap.Target%2A> property to target another window. For more information, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+>  When creating accessible Web pages, it is strongly recommended that you avoid using the <xref:System.Web.UI.WebControls.ImageMap.Target%2A> property to target another window. For more information, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Image.ImageUrl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -808,7 +808,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.StateBag" />
         <altmember cref="P:System.Web.UI.Control.ViewState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control Overview</related>
         <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
       </Docs>
     </Member>

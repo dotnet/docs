@@ -38,7 +38,7 @@
     <altmember cref="P:System.Web.UI.WebControls.RadioButtonList.RepeatLayout" />
     <altmember cref="T:System.Web.UI.WebControls.RepeatInfo" />
     <altmember cref="P:System.Web.UI.WebControls.RepeatInfo.RepeatLayout" />
-    <related type="Article" href="http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13">Accessibility in Visual Studio 2010 and ASP.NET 4</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13">Accessibility in Visual Studio 2010 and ASP.NET 4</related>
   </Docs>
   <Members>
     <Member MemberName="Flow">
@@ -165,7 +165,7 @@
  The following example shows markup that is rendered for a <xref:System.Web.UI.WebControls.CheckBoxList> control whose <xref:System.Web.UI.WebControls.CheckBoxList.RepeatLayout%2A> property is set to Table.  
   
 > [!NOTE]
->  This option causes the control to render HTML that might not conform to accessibility standards. For more information, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13).  
+>  This option causes the control to render HTML that might not conform to accessibility standards. For more information, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13).  
   
 ```  
 <table id="ctl00_MainContent_CheckBoxList2">  

@@ -46,7 +46,7 @@
     <altmember cref="T:System.Windows.Forms.StatusStrip" />
     <altmember cref="T:System.Windows.Forms.ToolStripProfessionalRenderer" />
     <altmember cref="T:System.Windows.Forms.ToolStripSystemRenderer" />
-    <related type="Article" href="http://msdn.microsoft.com/library/c66fd3f7-2377-4553-8f1b-006527f08f32">How to: Implement a Custom ToolStripRenderer</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c66fd3f7-2377-4553-8f1b-006527f08f32">How to: Implement a Custom ToolStripRenderer</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -811,7 +811,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c66fd3f7-2377-4553-8f1b-006527f08f32">How to: Implement a Custom ToolStripRenderer</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c66fd3f7-2377-4553-8f1b-006527f08f32">How to: Implement a Custom ToolStripRenderer</related>
       </Docs>
     </Member>
     <Member MemberName="InitializePanel">
@@ -958,7 +958,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/c66fd3f7-2377-4553-8f1b-006527f08f32">How to: Implement a Custom ToolStripRenderer</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c66fd3f7-2377-4553-8f1b-006527f08f32">How to: Implement a Custom ToolStripRenderer</related>
       </Docs>
     </Member>
     <Member MemberName="OnRenderDropDownButtonBackground">
@@ -1485,7 +1485,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBackground(System.Windows.Forms.ToolStripRenderEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBackground(System.Windows.Forms.ToolStripRenderEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/c66fd3f7-2377-4553-8f1b-006527f08f32">How to: Implement a Custom ToolStripRenderer</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c66fd3f7-2377-4553-8f1b-006527f08f32">How to: Implement a Custom ToolStripRenderer</related>
       </Docs>
     </Member>
     <Member MemberName="OnRenderToolStripBorder">
@@ -1531,7 +1531,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBorder(System.Windows.Forms.ToolStripRenderEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBorder(System.Windows.Forms.ToolStripRenderEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/c66fd3f7-2377-4553-8f1b-006527f08f32">How to: Implement a Custom ToolStripRenderer</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c66fd3f7-2377-4553-8f1b-006527f08f32">How to: Implement a Custom ToolStripRenderer</related>
       </Docs>
     </Member>
     <Member MemberName="OnRenderToolStripContentPanelBackground">

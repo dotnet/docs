@@ -50,7 +50,7 @@
 ## Remarks  
  The <xref:System.Web.UI.MobileControls.BaseValidator> class inherits from the <xref:System.Web.UI.MobileControls.TextControl> base class, and thus has a <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property. In the event of an invalid entry, the validator displays the value of the <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property. If the property is not set, the validator displays the value of the <xref:System.Web.UI.MobileControls.BaseValidator.ErrorMessage%2A> property instead; this is the text that is shown in the <xref:System.Web.UI.MobileControls.ValidationSummary> control. This behavior is consistent with Web Forms validators.  
   
- Of the ASP.NET mobile controls, those that support validation are the <xref:System.Web.UI.MobileControls.TextBox> control (its <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property) and the <xref:System.Web.UI.MobileControls.SelectionList> control (its <xref:System.Web.UI.MobileControls.SelectionList.SelectedIndex%2A> property). Other controls can participate in validation by including a <xref:System.Web.UI.ValidationPropertyAttribute> attribute. For more information, see the [How to: Validate Against a Specific Value for ASP.NET Server Controls](http://msdn.microsoft.com/library/3db6f7e6-ad52-42cf-a429-c2aaa7d64ed7) documentation.  
+ Of the ASP.NET mobile controls, those that support validation are the <xref:System.Web.UI.MobileControls.TextBox> control (its <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property) and the <xref:System.Web.UI.MobileControls.SelectionList> control (its <xref:System.Web.UI.MobileControls.SelectionList.SelectedIndex%2A> property). Other controls can participate in validation by including a <xref:System.Web.UI.ValidationPropertyAttribute> attribute. For more information, see the [How to: Validate Against a Specific Value for ASP.NET Server Controls](https://msdn.microsoft.com/library/3db6f7e6-ad52-42cf-a429-c2aaa7d64ed7) documentation.  
   
  ]]></format>
     </remarks>
@@ -63,7 +63,7 @@
     <altmember cref="T:System.Web.UI.MobileControls.RequiredFieldValidator" />
     <altmember cref="T:System.Web.UI.MobileControls.ValidationSummary" />
     <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/0zt0w6xe(v=vs.85)">Validation Controls</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/3db6f7e6-ad52-42cf-a429-c2aaa7d64ed7">Validating Against a Specific Value for ASP.NET Server Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/3db6f7e6-ad52-42cf-a429-c2aaa7d64ed7">Validating Against a Specific Value for ASP.NET Server Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

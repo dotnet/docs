@@ -28,9 +28,9 @@
   
  Parts that are specified as excluded from the digital signature can be modified without invalidating the signature.  For example, if a document is to be signed by more than one person, the SignatureOrigin part needs to be excluded from the signature when the document is first signed.  (Exclusions are specified in the `restrictions` parameter of the call to <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A>.)  If the SignatureOrigin part is not excluded, any additional signatures invalidate the signature of the first signer.  
   
- For more information about digital signatures, see the MSDN article *Digital Signing Framework of the Open Packaging Conventions* available at [http://go.microsoft.com/fwlink/?LinkId=74494](http://go.microsoft.com/fwlink/?LinkId=74494).  
+ For more information about digital signatures, see the MSDN article *Digital Signing Framework of the Open Packaging Conventions* available at [http://go.microsoft.com/fwlink/?LinkId=74494](https://go.microsoft.com/fwlink/?LinkId=74494).  
   
- For more information on the Core Properties and Signature Origin parts, see Chapter 3 of the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information on the Core Properties and Signature Origin parts, see Chapter 3 of the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
   
    
   
@@ -44,9 +44,9 @@
     </remarks>
     <altmember cref="Overload:System.Windows.Xps.Packaging.XpsDocument.SignDigitally" />
     <altmember cref="T:System.IO.Packaging.PackageDigitalSignature" />
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions (OPC) Specification</related>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=65761">XML Paper Specification (XPS)</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions (OPC) Specification</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=65761">XML Paper Specification (XPS)</related>
   </Docs>
   <Members>
     <Member MemberName="Annotations">

@@ -1108,13 +1108,13 @@ csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs
   
  In the code-behind page model, `baseType` is the <xref:System.CodeDom.CodeTypeDeclaration> type that represents the partial code-behind class, which is typically derived from the <xref:System.Web.UI.Page> class. The `derivedType` parameter is the class that derives from the partial class that contains the markup.  
   
- For more information about ASP.NET Web page models, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
+ For more information about ASP.NET Web page models, see [ASP.NET Web Forms Page Syntax Overview](https://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
   
  For more information about how to use the CodeDOM to represent and generate source code, see [Dynamic Source Code Generation and Compilation](~/docs/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb">Dynamic Source Code Generation and Compilation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb">Dynamic Source Code Generation and Compilation</related>
       </Docs>
     </Member>
     <Member MemberName="ServiceProvider">

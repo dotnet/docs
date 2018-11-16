@@ -39,7 +39,7 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Data.Common.DbConnection" />, you must override the following members: <see cref="M:System.Data.Common.DbConnection.Close" />, <see cref="M:System.Data.Common.DbConnection.BeginDbTransaction(System.Data.IsolationLevel)" />, <see cref="M:System.Data.Common.DbConnection.ChangeDatabase(System.String)" />, <see cref="M:System.Data.Common.DbConnection.CreateDbCommand" />, <see cref="M:System.Data.Common.DbConnection.Open" />, and <see cref="E:System.Data.Common.DbConnection.StateChange" />. You must also provide the following properties: <see cref="P:System.Data.Common.DbConnection.ConnectionString" />, <see cref="P:System.Data.Common.DbConnection.Database" />, <see cref="P:System.Data.Common.DbConnection.DataSource" />, <see cref="P:System.Data.Common.DbConnection.ServerVersion" />, and <see cref="P:System.Data.Common.DbConnection.State" />.</para>
     </block>
-    <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
     <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
@@ -70,7 +70,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbConnection" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -133,7 +133,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
@@ -176,7 +176,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -214,7 +214,7 @@
         <summary>Starts a database transaction with the specified isolation level.</summary>
         <returns>An object representing the new transaction.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -315,7 +315,7 @@
         </remarks>
         <exception cref="T:System.Data.Common.DbException">The connection-level error that occurred while opening the connection.</exception>
         <altmember cref="M:System.Data.Common.DbConnection.Open" />
-        <related type="Article" href="http://msdn.microsoft.com/library/955c057f-aea8-4ba8-aa6d-e3dfa18ba8d5">Connection Pooling (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/955c057f-aea8-4ba8-aa6d-e3dfa18ba8d5">Connection Pooling (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -377,7 +377,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Connection Strings (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Connection Strings (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -450,7 +450,7 @@
         <summary>Creates and returns a <see cref="T:System.Data.Common.DbCommand" /> object associated with the current connection.</summary>
         <returns>A <see cref="T:System.Data.Common.DbCommand" /> object.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -493,7 +493,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -579,7 +579,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Connection Strings (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Connection Strings (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -715,7 +715,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>

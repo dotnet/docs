@@ -54,10 +54,10 @@
   
  To create a custom zone, you can override any of the virtual <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> members to fully customize the rendering, or you can override only a specific member. Optionally, you can also create a custom display mode for your zone by inheriting from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> class, but this is not required. In the constructor of your zone, you should add the various display modes in which you want your zone to be displayed to a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayModeCollection" /> object, so that your zone is visible when the page is in those display modes.</para>
     </block>
-    <related type="Article" href="http://msdn.microsoft.com/library/13525a0a-22b8-4861-b24c-99df859e2cb5">Introduction to Web Parts</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Overview: The Web Parts Control Set</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0">Walkthrough: Changing Display Modes on a Web Parts Page</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/13525a0a-22b8-4861-b24c-99df859e2cb5">Introduction to Web Parts</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Overview: The Web Parts Control Set</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0">Walkthrough: Changing Display Modes on a Web Parts Page</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -67,7 +67,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Associates one or more <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> objects with a particular type of <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> zone, enabling that zone to be displayed when a page is in the appropriate page display mode.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -101,7 +101,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="associatedDisplayModes" /> parameter is equal to <see langword="null" /> or 0.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -132,7 +132,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="associatedDisplayMode" /> parameter is equal to <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AssociatedDisplayModes">
@@ -190,7 +190,7 @@
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.SupportedDisplayModes" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.AssociatedWithToolZone" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -213,7 +213,7 @@
       <Docs>
         <summary>Provides a base method declaration that derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> controls can override to handle the details of closing a specialized zone.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -246,7 +246,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.AssociatedDisplayModes" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="EditUIStyle">
@@ -299,7 +299,7 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle%2A> property with an inherited <xref:System.Web.UI.WebControls.WebParts.ToolZone> control. Specifically, it demonstrates how to change the <xref:System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle%2A> property for UI elements in an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control.  
   
- The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_ToolZone_EditUIStyle#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_EditUIStyle/CS/displaymodemenucs.ascx#5)]
  [!code-aspx-vb[WebParts_ToolZone_EditUIStyle#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_EditUIStyle/VB/displaymodemenuvb.ascx#5)]  
@@ -311,7 +311,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="HeaderCloseVerb">
@@ -361,7 +361,7 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb%2A> property with an inherited <xref:System.Web.UI.WebControls.WebParts.ToolZone> control. The example shows how to enable and disable the close verb in the header of an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control.  
   
- The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_ToolZone_HeaderCloseVerb#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_HeaderCloseVerb/CS/displaymodemenucs.ascx#5)]
  [!code-aspx-vb[WebParts_ToolZone_HeaderCloseVerb#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_HeaderCloseVerb/VB/displaymodemenuvb.ascx#5)]  
@@ -377,7 +377,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.HeaderVerbStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="HeaderVerbStyle">
@@ -427,7 +427,7 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderVerbStyle%2A> property with an inherited <xref:System.Web.UI.WebControls.WebParts.ToolZone> control. The example shows how to change the width of the border around an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control by using this property.  
   
- The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_ToolZone_HeaderVerbStyle#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_HeaderVerbStyle/CS/displaymodemenucs.ascx#5)]
  [!code-aspx-vb[WebParts_ToolZone_HeaderVerbStyle#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_HeaderVerbStyle/VB/displaymodemenuvb.ascx#5)]  
@@ -442,7 +442,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="InstructionText">
@@ -475,14 +475,14 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText%2A> property is used to hold a set of instructions that are provided for end users when a particular <xref:System.Web.UI.WebControls.WebParts.ToolZone> control is displayed.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
 ## Examples  
  The following code example shows how to use the <xref:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText%2A> property with an inherited <xref:System.Web.UI.WebControls.WebParts.ToolZone> control. The example shows how to change the value of the instruction text that appears in an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control by using this property.  
   
- The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_ToolZone_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_Overview/CS/displaymodemenucs.ascx#5)]
  [!code-aspx-vb[WebParts_ToolZone_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_Overview/VB/displaymodemenuvb.ascx#5)]  
@@ -490,7 +490,7 @@
  The second part of the code example shows a partial class that contains the code to update the property programmatically in the `Button1_Click` method.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[WebParts_ToolZone_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_Overview/CS/Toolzone_overview.cs#2)]
  [!code-vb[WebParts_ToolZone_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_Overview/VB/Toolzone_overview.vb#2)]  
@@ -498,7 +498,7 @@
  The third part of the code example shows a Web page that contains two inherited <xref:System.Web.UI.WebControls.WebParts.ToolZone> controls: a <xref:System.Web.UI.WebControls.WebParts.CatalogZone> control and an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control. Each <xref:System.Web.UI.WebControls.WebParts.ToolZone> control sets some properties in the declarative markup of the page.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[WebParts_ToolZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_Overview/CS/Toolzone_overview_cs.aspx#1)]
  [!code-aspx-vb[WebParts_ToolZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_Overview/VB/Toolzone_overview_vb.aspx#1)]  
@@ -511,7 +511,7 @@
           <para>Tool zones in the Web Parts control set that derive from the <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> class (see the zones listed in the <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> class overview) override the <see cref="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText" /> property to provide default instructions for end users.</para>
         </block>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionTextStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="InstructionTextStyle">
@@ -552,7 +552,7 @@
         <value>A <see cref="T:System.Web.UI.WebControls.Style" /> that contains style attributes for the instruction text within a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="LabelStyle">
@@ -592,7 +592,7 @@
         <summary>Gets the style attributes for the contents of the labels that appear alongside the editing controls within a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control. The derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> controls, such as <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZone" /> and <see cref="T:System.Web.UI.WebControls.WebParts.EditorZone" />, apply the styles to the labels.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.Style" /> that contains style attributes for the labels within a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -619,7 +619,7 @@
         <summary>Loads view state.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The length of <paramref name="savedState" />, when converted to an object array, does not equal 7.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnDisplayModeChanged">
@@ -647,7 +647,7 @@
         <param name="e">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs" /> that contains the event data.</param>
         <summary>Provides a base method declaration that derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> controls can override to handle the details of changing page display modes for a specialized zone.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -673,7 +673,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Creates specialized event handlers used by the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control on a Web page.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnSelectedWebPartChanged">
@@ -701,7 +701,7 @@
         <param name="e">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartEventArgs" /> that contains the event data.</param>
         <summary>Provides a base method declaration that derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> controls can override to handle the event of changing which Web Parts control is selected within a specialized zone.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -737,7 +737,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RenderFooter">
@@ -763,7 +763,7 @@
         <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that renders verbs in a zone's footer area.</param>
         <summary>Overrides the base method to render verbs in the footer of a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RenderHeader">
@@ -796,7 +796,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RenderVerb">
@@ -833,7 +833,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerbs(System.Web.UI.HtmlTextWriter)" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RenderVerbs">
@@ -860,7 +860,7 @@
         <summary>Provides a base method declaration that derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> controls can override to customize the rendering of the verbs within a specialized zone.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerb(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.WebParts.WebPartVerb)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -998,7 +998,7 @@
         <exception cref="T:System.InvalidOperationException">The caller attempts to set the property at run time.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.Display" />
         <altmember cref="P:System.Web.UI.Control.Visible" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

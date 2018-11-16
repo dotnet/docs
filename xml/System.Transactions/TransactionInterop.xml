@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class provides methods for transaction propagation. For more information on how this process works, see [Transaction Propagation](http://msdn.microsoft.com/library/default.asp?url=/library/cossdk/html/b09541e6-4baf-4e37-b879-62884fbb0969.asp).  
+ This class provides methods for transaction propagation. For more information on how this process works, see [Transaction Propagation](https://msdn.microsoft.com/library/default.asp?url=/library/cossdk/html/b09541e6-4baf-4e37-b879-62884fbb0969.asp).  
   
  Using the methods provided by this class, you can engage in two types of transaction propagations, Export/Import (push model) and Transmitter/Receiver (pull model).  
   
@@ -195,7 +195,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `transactionNative` is compatible with the unmanaged form of [ITransaction](http://msdn.microsoft.com/library/default.asp?url=/library/cossdk/html/d40264be-f9b2-4044-aac6-84b43e5be666.asp) used by MSDTC and with the Managed form of <xref:System.EnterpriseServices.ITransaction> used by <xref:System.EnterpriseServices>.  
+ The `transactionNative` is compatible with the unmanaged form of [ITransaction](https://msdn.microsoft.com/library/default.asp?url=/library/cossdk/html/d40264be-f9b2-4044-aac6-84b43e5be666.asp) used by MSDTC and with the Managed form of <xref:System.EnterpriseServices.ITransaction> used by <xref:System.EnterpriseServices>.  
   
  ]]></format>
         </remarks>

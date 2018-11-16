@@ -34,7 +34,7 @@
 </configuration>  
 ```  
   
- For more information about the user profile, see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
+ For more information about the user profile, see [ASP.NET Profile Properties Overview](https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
   
  A profile provider is used to store and retrieve properties in the user profile. The .NET Framework includes a <xref:System.Web.Profile.SqlProfileProvider> class that stores user profile properties in a SQL Server database. A <xref:System.Web.Profile.SqlProfileProvider> instance named `AspNetSqlProvider` is specified in the machine configuration as the default profile provider. The `AspNetSqlProvider` instance connects to the SQL Server database on the local Web server. You can specify a <xref:System.Web.Profile.SqlProfileProvider> that connects to another SQL Server as the default profile provider by using the  configuration element and the `defaultProvider` attribute of the  configuration element, as shown in the following example.  
   
@@ -64,14 +64,14 @@
  The following code example shows an ASP.NET page that uses the <xref:System.Web.Profile.ProfileManager> class to manage inactive profiles.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.ProfileManager#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/DeleteInactiveProfilescs.aspx#4)]
  [!code-aspx-vb[System.Web.Profile.ProfileManager#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/DeleteInactiveProfilesvb.aspx#4)]  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
   </Docs>
   <Members>
     <Member MemberName="AddDynamicProfileProperty">
@@ -155,7 +155,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AutomaticSaveEnabled">
@@ -207,7 +207,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt was made to get the <see cref="P:System.Web.Profile.ProfileManager.AutomaticSaveEnabled" /> property value without at least <see cref="F:System.Web.AspNetHostingPermissionLevel.Medium" /> permission.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteInactiveProfiles">
@@ -249,14 +249,14 @@
  The following code example shows an ASP.NET page that manages inactive profiles. A button is provided to delete all profiles that have been unused for the specified number of days and are therefore considered inactive.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.ProfileManager#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/DeleteInactiveProfilescs.aspx#4)]
  [!code-aspx-vb[System.Web.Profile.ProfileManager#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/DeleteInactiveProfilesvb.aspx#4)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteProfile">
@@ -297,7 +297,7 @@
  The following code example shows an ASP.NET page that manages inactive profiles. The <xref:System.Web.Profile.ProfileManager.DeleteProfile%2A> method is called when a single profile is selected to be deleted. Whether a profile is considered inactive is based on the date specified for the `userInactiveSinceDate` parameter value passed to the <xref:System.Web.Profile.ProfileManager.GetAllInactiveProfiles%2A> method.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.ProfileManager#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/DeleteProfilecs.aspx#10)]
  [!code-aspx-vb[System.Web.Profile.ProfileManager#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/DeleteProfilevb.aspx#10)]  
@@ -308,7 +308,7 @@
           <paramref name="username" /> is an empty string ("") or contains a comma.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="DeleteProfiles">
@@ -318,7 +318,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Deletes profile properties and information from the data source for a supplied list of profiles.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="DeleteProfiles">
@@ -360,7 +360,7 @@
  The following code example shows an ASP.NET page that manages inactive profiles. A <xref:System.Web.UI.WebControls.GridView> control displays the inactive profiles returned. Each row of the <xref:System.Web.UI.WebControls.GridView> control includes a button that deletes the profile for that row from the data source with a call to the <xref:System.Web.Profile.ProfileManager.DeleteProfiles%2A> method.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.ProfileManager#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/DeleteInactiveProfilescs.aspx#4)]
  [!code-aspx-vb[System.Web.Profile.ProfileManager#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/DeleteInactiveProfilesvb.aspx#4)]  
@@ -382,7 +382,7 @@
  \- or -  
   
  One of the items in <paramref name="usernames" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteProfiles">
@@ -424,7 +424,7 @@
  The following code example allows a user to search for profiles using the <xref:System.Web.Profile.ProfileManager.FindProfilesByUserName%2A> and <xref:System.Web.Profile.ProfileManager.FindInactiveProfilesByUserName%2A> methods. The user can then delete the returned profiles with a call to the <xref:System.Web.Profile.ProfileManager.DeleteProfiles%2A> method.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.ProfileManager#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/FindProfilesByUserNamecs.aspx#5)]
  [!code-aspx-vb[System.Web.Profile.ProfileManager#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/FindProfilesByUserNamevb.aspx#5)]  
@@ -443,7 +443,7 @@
  \- or -  
   
  One of the <see cref="T:System.Web.Profile.ProfileInfo" /> objects in <paramref name="profiles" /> has a <see cref="P:System.Web.Profile.ProfileInfo.UserName" /> that is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -490,7 +490,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindInactiveProfilesByUserName">
@@ -500,7 +500,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Retrieves profile information for profiles in which the last activity date occurred on or before a specified date and time and the user name for the profile matches a specified name.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FindInactiveProfilesByUserName">
@@ -549,7 +549,7 @@
  The following code example allows a user to supply a `usernameToMatch` value and a <xref:System.Web.Profile.ProfileAuthenticationOption> enumeration value and retrieves profile information for any matching profiles. The sample allows the user to specify whether to return only inactive profiles. If the user specifies only inactive profiles, the <xref:System.Web.Profile.ProfileManager.FindInactiveProfilesByUserName%2A> method is called; otherwise, the <xref:System.Web.Profile.ProfileManager.FindProfilesByUserName%2A> method is called.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.ProfileManager#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/FindProfilesByUserName2cs.aspx#8)]
  [!code-aspx-vb[System.Web.Profile.ProfileManager#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/FindProfilesByUserName2vb.aspx#8)]  
@@ -560,7 +560,7 @@
           <paramref name="usernameToMatch" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="usernameToMatch" /> is an empty string ("").</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindInactiveProfilesByUserName">
@@ -614,7 +614,7 @@
  The following code example allows a user to supply a `usernameToMatch` value and a <xref:System.Web.Profile.ProfileAuthenticationOption> value and retrieves profile information for any matching profiles. The example allows the user to specify whether to return inactive profiles exclusively. If the user specifies only inactive profiles, the <xref:System.Web.Profile.ProfileManager.FindInactiveProfilesByUserName%2A> method is called; otherwise, the <xref:System.Web.Profile.ProfileManager.FindProfilesByUserName%2A> method is called.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.ProfileManager#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/FindProfilesByUserNamecs.aspx#5)]
  [!code-aspx-vb[System.Web.Profile.ProfileManager#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/FindProfilesByUserNamevb.aspx#5)]  
@@ -637,7 +637,7 @@
  \- or -  
   
  <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindProfilesByUserName">
@@ -647,7 +647,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Retrieves profile information for profiles in which the user name matches a specified name.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FindProfilesByUserName">
@@ -693,7 +693,7 @@
  The following code example allows a user to supply a `usernameToMatch` value and a <xref:System.Web.Profile.ProfileAuthenticationOption> enumeration value and retrieves profile information for any matching profiles. The example allows the user to specify whether to return inactive profiles exclusively. If the user specifies only inactive profiles, the <xref:System.Web.Profile.ProfileManager.FindInactiveProfilesByUserName%2A> method is called; otherwise, the <xref:System.Web.Profile.ProfileManager.FindProfilesByUserName%2A> method is called.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.ProfileManager#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/FindProfilesByUserName2cs.aspx#8)]
  [!code-aspx-vb[System.Web.Profile.ProfileManager#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/FindProfilesByUserName2vb.aspx#8)]  
@@ -704,7 +704,7 @@
           <paramref name="usernameToMatch" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="usernameToMatch" /> is an empty string ("").</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindProfilesByUserName">
@@ -756,7 +756,7 @@
  The following code example allows a user to supply a `usernameToMatch` value and a <xref:System.Web.Profile.ProfileAuthenticationOption> and retrieves profile information for any matching profiles. The example allows the user to specify whether to return inactive profiles exclusively. If the user specifies only inactive profiles, the <xref:System.Web.Profile.ProfileManager.FindInactiveProfilesByUserName%2A> method is called; otherwise, the <xref:System.Web.Profile.ProfileManager.FindProfilesByUserName%2A> method is called.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.ProfileManager#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/FindProfilesByUserNamecs.aspx#5)]
  [!code-aspx-vb[System.Web.Profile.ProfileManager#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/FindProfilesByUserNamevb.aspx#5)]  
@@ -779,7 +779,7 @@
  \- or -  
   
  <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAllInactiveProfiles">
@@ -789,7 +789,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Retrieves user profile data for profiles in which the last activity date occurred on or before a specified date and time.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetAllInactiveProfiles">
@@ -833,14 +833,14 @@
  The following code example shows an ASP.NET page that manages inactive profiles. A button is provided to delete all inactive profiles. Whether a profile is considered inactive is based on the date specified for the `userInactiveSinceDate` parameter.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.ProfileManager#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/DeleteInactiveProfiles2cs.aspx#7)]
  [!code-aspx-vb[System.Web.Profile.ProfileManager#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/DeleteInactiveProfiles2vb.aspx#7)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllInactiveProfiles">
@@ -890,14 +890,14 @@
  The following code example shows an ASP.NET Web page that manages inactive profiles. A button is provided to delete all inactive profiles. Whether a profile is considered inactive is based on the date specified for the `userInactiveSinceDate` parameter.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.ProfileManager#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/DeleteInactiveProfilescs.aspx#4)]
  [!code-aspx-vb[System.Web.Profile.ProfileManager#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/DeleteInactiveProfilesvb.aspx#4)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAllProfiles">
@@ -907,7 +907,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Retrieves user profile data for profiles in the data source.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetAllProfiles">
@@ -953,7 +953,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllProfiles">
@@ -1005,7 +1005,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetNumberOfInactiveProfiles">
@@ -1045,14 +1045,14 @@
  The following code example allows a user to view and delete information for active and inactive profiles based on search criteria. A count of inactive profiles is displayed using the results of the <xref:System.Web.Profile.ProfileManager.GetNumberOfInactiveProfiles%2A> method.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.ProfileManager#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/FindProfilesByUserNamecs.aspx#5)]
  [!code-aspx-vb[System.Web.Profile.ProfileManager#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/FindProfilesByUserNamevb.aspx#5)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetNumberOfProfiles">
@@ -1094,7 +1094,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -1133,7 +1133,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt was made to get the <see cref="P:System.Web.Profile.ProfileManager.Provider" /> property value without at least <see cref="F:System.Web.AspNetHostingPermissionLevel.Medium" /> permission.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Providers">
@@ -1196,7 +1196,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt was made to get the <see cref="P:System.Web.Profile.ProfileManager.Providers" /> property value without at least <see cref="F:System.Web.AspNetHostingPermissionLevel.Medium" /> permission.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
   </Members>

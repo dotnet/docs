@@ -195,8 +195,8 @@
     <altmember cref="T:System.Configuration.RegexStringValidator" />
     <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
     <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language Elements</related>
-    <related type="ExternalDocumentation" href="http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular expressions quick reference.docx">Regular Expressions - Quick Reference (download in Word format)</related>
-    <related type="ExternalDocumentation" href="http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular expressions quick reference.pdf">Regular Expressions - Quick Reference (download in PDF format)</related>
+    <related type="ExternalDocumentation" href="https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular expressions quick reference.docx">Regular Expressions - Quick Reference (download in Word format)</related>
+    <related type="ExternalDocumentation" href="https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular expressions quick reference.pdf">Regular Expressions - Quick Reference (download in PDF format)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -532,7 +532,7 @@
   
 -   When the regular expression pattern contains no language elements that are known to cause excessive backtracking when processing a near match.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/34df1152-0b22-4a1c-a76c-3c28c47b70d8">Backtracking</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/34df1152-0b22-4a1c-a76c-3c28c47b70d8">Backtracking</related>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language Elements</related>
       </Docs>
     </Member>
@@ -1196,7 +1196,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
           <paramref name="str" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Text.RegularExpressions.Regex.Unescape(System.String)" />
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language - Quick Reference</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f49cc9cc-db7d-4058-8b8a-422bc08b29b0">Character Escapes in Regular Expressions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f49cc9cc-db7d-4058-8b8a-422bc08b29b0">Character Escapes in Regular Expressions</related>
       </Docs>
     </Member>
     <Member MemberName="factory">
@@ -1327,7 +1327,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
  ]]></format>
         </remarks>
         <altmember cref="T:System.Text.RegularExpressions.GroupCollection" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0fc18634-f590-4062-8d5c-f0b71abe405b">Grouping Constructs in Regular Expressions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0fc18634-f590-4062-8d5c-f0b71abe405b">Grouping Constructs in Regular Expressions</related>
       </Docs>
     </Member>
     <Member MemberName="GetGroupNumbers">
@@ -1395,7 +1395,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
  ]]></format>
         </remarks>
         <altmember cref="T:System.Text.RegularExpressions.GroupCollection" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0fc18634-f590-4062-8d5c-f0b71abe405b">Grouping Constructs in Regular Expressions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0fc18634-f590-4062-8d5c-f0b71abe405b">Grouping Constructs in Regular Expressions</related>
       </Docs>
     </Member>
     <Member MemberName="GroupNameFromNumber">
@@ -1471,7 +1471,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
         </remarks>
         <altmember cref="T:System.Text.RegularExpressions.GroupCollection" />
         <altmember cref="M:System.Text.RegularExpressions.Regex.GetGroupNumbers" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0fc18634-f590-4062-8d5c-f0b71abe405b">Grouping Constructs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0fc18634-f590-4062-8d5c-f0b71abe405b">Grouping Constructs</related>
       </Docs>
     </Member>
     <Member MemberName="GroupNumberFromName">
@@ -1526,7 +1526,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
           <paramref name="name" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Text.RegularExpressions.GroupCollection" />
         <altmember cref="M:System.Text.RegularExpressions.Regex.GetGroupNames" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0fc18634-f590-4062-8d5c-f0b71abe405b">Grouping Constructs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0fc18634-f590-4062-8d5c-f0b71abe405b">Grouping Constructs</related>
       </Docs>
     </Member>
     <Member MemberName="InfiniteMatchTimeout">
@@ -3214,7 +3214,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
             <see cref="T:System.Text.RegularExpressions.Regex" /> is the base class of regular expressions created by the <see cref="Overload:System.Text.RegularExpressions.Regex.CompileToAssembly" /> method. These compiled regular expressions use the base class implementation of the <see cref="P:System.Text.RegularExpressions.Regex.Options" /> property. If called from a derived class, the <see cref="P:System.Text.RegularExpressions.Regex.Options" /> property returns the options that were passed to the <paramref name="options" /> parameter of the <see cref="T:System.Text.RegularExpressions.RegexCompilationInfo" /> class constructor that was used to define the regular expression.</para>
         </block>
         <altmember cref="T:System.Text.RegularExpressions.RegexOptions" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c82dc689-7e82-4767-a18d-cd24ce5f05e9">Regular Expression Options</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c82dc689-7e82-4767-a18d-cd24ce5f05e9">Regular Expression Options</related>
       </Docs>
     </Member>
     <Member MemberName="pattern">
@@ -3263,7 +3263,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
       <Docs>
         <summary>In a specified input string, replaces strings that match a regular expression pattern with a specified replacement string.</summary>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language - Quick Reference</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Replace">
@@ -3353,7 +3353,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
           <paramref name="input" /> or <paramref name="replacement" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language - Quick Reference</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -3437,7 +3437,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
           <paramref name="input" /> or <paramref name="evaluator" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
         <altmember cref="T:System.Text.RegularExpressions.MatchEvaluator" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language - Quick Reference</related>
       </Docs>
     </Member>
@@ -3512,7 +3512,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
           <paramref name="input" /> or <paramref name="replacement" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language - Quick Reference</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -3613,7 +3613,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
         <block subset="none" type="usage">
           <para>This method times out after an interval that is equal to the default time-out value of the application domain in which it is called. If a time-out value has not been defined for the application domain, the value <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, which prevents the method from timing out, is used. The recommended static method for replacing a pattern match is <see cref="M:System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)" />, which lets you set the time-out interval.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language Elements</related>
       </Docs>
     </Member>
@@ -3704,7 +3704,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
           <para>This method times out after an interval that is equal to the default time-out value of the application domain in which it is called. If a time-out value has not been defined for the application domain, the value <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, which prevents the method from timing out, is used. The recommended static method for evaluating and replacing a pattern match is <see cref="M:System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)" />, which lets you set the time-out interval.</para>
         </block>
         <altmember cref="T:System.Text.RegularExpressions.MatchEvaluator" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language Elements</related>
       </Docs>
     </Member>
@@ -3801,7 +3801,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
           <paramref name="input" /> or <paramref name="evaluator" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
         <altmember cref="T:System.Text.RegularExpressions.MatchEvaluator" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language - Quick Reference</related>
       </Docs>
     </Member>
@@ -3889,7 +3889,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startat" /> is less than zero or greater than the length of <paramref name="input" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language - Quick Reference</related>
       </Docs>
     </Member>
@@ -3991,7 +3991,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
           <para>This method times out after an interval that is equal to the default time-out value of the application domain in which it is called. If a time-out value has not been defined for the application domain, the value <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, which prevents the method from timing out, is used. The recommended static method for replacing a pattern match is <see cref="M:System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)" />, which lets you set the time-out interval.</para>
         </block>
         <altmember cref="T:System.Text.RegularExpressions.RegexOptions" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language Elements</related>
       </Docs>
     </Member>
@@ -4086,7 +4086,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
         <altmember cref="T:System.Text.RegularExpressions.MatchEvaluator" />
         <altmember cref="T:System.Text.RegularExpressions.RegexOptions" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language Elements</related>
       </Docs>
     </Member>
@@ -4169,7 +4169,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
           <paramref name="startat" /> is less than zero or greater than the length of <paramref name="input" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
         <altmember cref="T:System.Text.RegularExpressions.MatchEvaluator" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language - Quick Reference</related>
       </Docs>
     </Member>
@@ -4281,10 +4281,10 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
 -   When the regular expression pattern contains no language elements that are known to cause excessive backtracking when processing a near match.</para>
         </block>
         <altmember cref="T:System.Text.RegularExpressions.RegexOptions" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language Elements</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/34df1152-0b22-4a1c-a76c-3c28c47b70d8">Backtracking</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/618e5afb-3a97-440d-831a-70e4c526a51c">Best Practices for Regular Expressions in the .NET Framework</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/34df1152-0b22-4a1c-a76c-3c28c47b70d8">Backtracking</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/618e5afb-3a97-440d-831a-70e4c526a51c">Best Practices for Regular Expressions in the .NET Framework</related>
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -4390,10 +4390,10 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
 -   When the regular expression pattern contains no language elements that are known to cause excessive backtracking when processing a near match.</para>
         </block>
         <altmember cref="T:System.Text.RegularExpressions.RegexOptions" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e">Substitutions</related>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language Elements</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/34df1152-0b22-4a1c-a76c-3c28c47b70d8">Backtracking</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/618e5afb-3a97-440d-831a-70e4c526a51c">Best Practices for Regular Expressions in the .NET Framework</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/34df1152-0b22-4a1c-a76c-3c28c47b70d8">Backtracking</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/618e5afb-3a97-440d-831a-70e4c526a51c">Best Practices for Regular Expressions in the .NET Framework</related>
       </Docs>
     </Member>
     <Member MemberName="RightToLeft">

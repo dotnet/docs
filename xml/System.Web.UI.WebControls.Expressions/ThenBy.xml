@@ -24,7 +24,7 @@
    
   
 ## Examples  
- The following example shows how to sort data by the ListPrice field in descending order and then on the ProductID field in ascending order using the <xref:System.Web.UI.WebControls.Expressions.ThenBy> type. This code example is part of a larger example provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/library/b305ae31-1a1b-4d07-a678-51457c17614f).  
+ The following example shows how to sort data by the ListPrice field in descending order and then on the ProductID field in ascending order using the <xref:System.Web.UI.WebControls.Expressions.ThenBy> type. This code example is part of a larger example provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](https://msdn.microsoft.com/library/b305ae31-1a1b-4d07-a678-51457c17614f).  
   
 ```  
 <asp:OrderByExpression DataField="ListPrice"   
@@ -35,7 +35,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/b93e32b9-af41-4539-a009-6cbbe809c702">QueryExtender Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/b93e32b9-af41-4539-a009-6cbbe809c702">QueryExtender Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,7 +95,7 @@
    
   
 ## Examples  
- The following example shows how to sort data by the ListPrice field in descending order and then on the Product ID field in ascending order. This code example is part of a larger example provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/library/b305ae31-1a1b-4d07-a678-51457c17614f).  
+ The following example shows how to sort data by the ListPrice field in descending order and then on the Product ID field in ascending order. This code example is part of a larger example provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](https://msdn.microsoft.com/library/b305ae31-1a1b-4d07-a678-51457c17614f).  
   
 ```  
 <asp:OrderByExpression DataField="ListPrice"   
@@ -143,7 +143,7 @@
    
   
 ## Examples  
- The following example shows how to sort data by the ListPrice field in descending order and on the ProductID field in ascending order by using the <xref:System.Web.UI.WebControls.Expressions.ThenBy.Direction%2A> property. This code example is part of a larger example provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/library/b305ae31-1a1b-4d07-a678-51457c17614f).  
+ The following example shows how to sort data by the ListPrice field in descending order and on the ProductID field in ascending order by using the <xref:System.Web.UI.WebControls.Expressions.ThenBy.Direction%2A> property. This code example is part of a larger example provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](https://msdn.microsoft.com/library/b305ae31-1a1b-4d07-a678-51457c17614f).  
   
 ```  
 <asp:OrderByExpression DataField="ListPrice"   

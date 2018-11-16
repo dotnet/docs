@@ -47,7 +47,7 @@
  The <xref:System.Web.UI.WebControls.Localize> control inherits from the <xref:System.Web.UI.WebControls.Literal> control and is identical to it in every way. The <xref:System.Web.UI.WebControls.Localize> control is used at design time to distinguish static text that can be localized from other static text. Although the <xref:System.Web.UI.WebControls.Label> control allows you to apply a style to the displayed text, the <xref:System.Web.UI.WebControls.Localize> control does not. You can programmatically manage the text displayed in the control by setting the <xref:System.Web.UI.WebControls.Literal.Text%2A?displayProperty=nameWithType> property, inherited from the <xref:System.Web.UI.WebControls.Literal> control.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Securing Standard Controls](https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -77,7 +77,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Localize> control to display static text.  
   
 > [!NOTE]
->  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Localize#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Localize/CS/localizecs.aspx#1)]
  [!code-aspx-vb[Localize#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Localize/VB/localizevb.aspx#1)]  
@@ -86,7 +86,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.Literal" />
     <altmember cref="T:System.Web.UI.WebControls.Label" />
-    <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -118,8 +118,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.Literal" />
-        <related type="Article" href="http://msdn.microsoft.com/library/9f856045-c514-4efb-8c6c-30c0c29cc780">Literal Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9f856045-c514-4efb-8c6c-30c0c29cc780">Literal Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
       </Docs>
     </Member>
   </Members>

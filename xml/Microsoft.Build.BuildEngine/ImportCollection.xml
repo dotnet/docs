@@ -23,7 +23,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a collection of all <see href="http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9">Import</see> elements in a project.</summary>
+    <summary>Represents a collection of all <see href="https://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9">Import</see> elements in a project.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
       <Docs>
         <param name="projectFile">A required string representing the name of the project file for the &lt;Import&gt; statement to be added. For example, "myproject.csproj."</param>
         <param name="condition">An optional string indicating whether the element is processed. If <paramref name="condition" /> is <see langword="true" />, then the specified &lt;Import&gt; tag is added, if <see langword="false" />, it is not.</param>
-        <summary>Allows hosts to programmatically add a new [&lt;Import&gt;](http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) tag to a project file being manipulated by the host.</summary>
+        <summary>Allows hosts to programmatically add a new [&lt;Import&gt;](https://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) tag to a project file being manipulated by the host.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,7 +236,7 @@
       </Parameters>
       <Docs>
         <param name="importToRemove">A string representing the name of the &lt;Import&gt; tag to remove from the project file.</param>
-        <summary>Allows hosts to programmatically remove [&lt;Import&gt;](http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) tags that are part of a project file being manipulated by the host.</summary>
+        <summary>Allows hosts to programmatically remove [&lt;Import&gt;](https://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) tags that are part of a project file being manipulated by the host.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

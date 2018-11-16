@@ -45,7 +45,7 @@
 ## Remarks  
  A member of the <xref:System.Globalization.UnicodeCategory> enumeration is returned by the <xref:System.Char.GetUnicodeCategory%2A?displayProperty=nameWithType> and <xref:System.Globalization.CharUnicodeInfo.GetUnicodeCategory%2A?displayProperty=nameWithType> methods. The <xref:System.Globalization.UnicodeCategory> enumeration is also used to support <xref:System.Char> methods, such as <xref:System.Char.IsUpper%28System.Char%29>. Such methods determine whether a specified character is a member of a particular Unicode general category. A Unicode general category defines the broad classification of a character, that is, designation as a type of letter, decimal digit, separator, mathematical symbol, punctuation, and so on.  
   
- This enumeration is based on The Unicode Standard, version 5.0. For more information, see the "UCD File Format" and "General Category Values" subtopics at the [Unicode Character Database](http://go.microsoft.com/fwlink/?LinkId=57650).  
+ This enumeration is based on The Unicode Standard, version 5.0. For more information, see the "UCD File Format" and "General Category Values" subtopics at the [Unicode Character Database](https://go.microsoft.com/fwlink/?LinkId=57650).  
   
  The Unicode Standard defines the following:  
   

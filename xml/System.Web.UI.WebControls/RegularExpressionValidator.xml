@@ -39,12 +39,12 @@
  The regular-expression validation implementation is slightly different on the client than on the server. On the client, JScript regular-expression syntax is used. On the server, <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> syntax is used. Since JScript regular expression syntax is a subset of <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> syntax, it is recommended that JScript regular-expression syntax be used in order to yield the same results on both the client and the server.  
   
 > [!NOTE]
->  When you use the <xref:System.Web.UI.WebControls.RegularExpressionValidator> control inside an <xref:System.Web.UI.UpdatePanel> control, make sure that the validator control and the control it is associated with are in the same panel. For more information about using the <xref:System.Web.UI.UpdatePanel> control for partial-page updates, see [Partial-Page Rendering Overview](http://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
+>  When you use the <xref:System.Web.UI.WebControls.RegularExpressionValidator> control inside an <xref:System.Web.UI.UpdatePanel> control, make sure that the validator control and the control it is associated with are in the same panel. For more information about using the <xref:System.Web.UI.UpdatePanel> control for partial-page updates, see [Partial-Page Rendering Overview](https://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
   
  For additional information about validation controls, see <xref:System.Web.UI.WebControls.BaseValidator>. For more information on regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md).  
   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
    
   
@@ -52,7 +52,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.RegularExpressionValidator> control to validate a five-digit postal code.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[Classic RegularExpressionValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic RegularExpressionValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/VB/sourcevb.aspx#1)]  
@@ -127,7 +127,7 @@
  The following code example demonstrates how to use the use the `CustomRegularExpressionValidatorAddAttributesToRender` control, defined in the preceding example, on a Web Forms page.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CustomRegularExpressionValidatorAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRegularExpressionValidatorAddAttributesToRender/CS/custom_regularexpressionvalidator_addattributestorendercs.aspx#1)]
  [!code-aspx-vb[CustomRegularExpressionValidatorAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRegularExpressionValidatorAddAttributesToRender/VB/custom_regularexpressionvalidator_addattributestorendervb.aspx#1)]  
@@ -168,7 +168,7 @@
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.RegularExpressionValidator.EvaluateIsValid%2A> method in a custom server control so that it always checks the value against the expression for a match in a <xref:System.Web.UI.WebControls.RegularExpressionValidator>.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[CustomRegularExpressionValidatorEvaluateIsValid#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRegularExpressionValidatorEvaluateIsValid/CS/custom_regularexpressionvalidator_evaluateisvalid.cs#2)]
  [!code-vb[CustomRegularExpressionValidatorEvaluateIsValid#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRegularExpressionValidatorEvaluateIsValid/VB/custom_regularexpressionvalidator_evaluateisvalid.vb#2)]  
@@ -259,7 +259,7 @@
 > [!NOTE]
 >  If you experience problems with pattern matching constructs, try wrapping the expression with "^(" and ")$". For example, "a&#124;ab" becomes "^(a&#124;ab)$".  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -267,7 +267,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.RegularExpressionValidator.ValidationExpression%2A> property to validate a field with five numeric digits. When the <xref:System.Web.UI.WebControls.Button> control is clicked, the resulting <xref:System.Web.UI.WebControls.Button.OnClick%2A> event handler checks the <xref:System.Web.UI.Page.IsValid%2A> property of the <xref:System.Web.UI.Page> to determine whether the text in the <xref:System.Web.UI.WebControls.TextBox> satisfies the regular expression.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[Classic RegularExpressionValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic RegularExpressionValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RegularExpressionValidator Example/VB/sourcevb.aspx#1)]  

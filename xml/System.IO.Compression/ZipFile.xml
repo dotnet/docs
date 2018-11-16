@@ -32,7 +32,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  To use the <xref:System.IO.Compression.ZipFile> class, you must add a reference to the `System.IO.Compression.FileSystem` assembly in your project; otherwise, you'll get the following error message when trying to compile : **The name 'ZipFile' does not exist in the current context**. For more information on how to add a reference to your project in Visual Studio, see [How to: Add or Remove References By Using the Reference Manager](http://msdn.microsoft.com/library/1aabb520-99b0-46c6-9368-21b4d84793eb).  
+>  To use the <xref:System.IO.Compression.ZipFile> class, you must add a reference to the `System.IO.Compression.FileSystem` assembly in your project; otherwise, you'll get the following error message when trying to compile : **The name 'ZipFile' does not exist in the current context**. For more information on how to add a reference to your project in Visual Studio, see [How to: Add or Remove References By Using the Reference Manager](https://msdn.microsoft.com/library/1aabb520-99b0-46c6-9368-21b4d84793eb).  
   
  The methods for manipulating zip archives and their files are spread across three classes: <xref:System.IO.Compression.ZipFile>, <xref:System.IO.Compression.ZipArchive> and <xref:System.IO.Compression.ZipArchiveEntry>.  
   
@@ -69,7 +69,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/1aabb520-99b0-46c6-9368-21b4d84793eb">How to: Add or Remove References By Using the Reference Manager</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/1aabb520-99b0-46c6-9368-21b4d84793eb">How to: Add or Remove References By Using the Reference Manager</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="CreateFromDirectory">

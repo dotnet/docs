@@ -357,7 +357,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -2047,7 +2047,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="HasAttributes">
@@ -2368,7 +2368,7 @@ public class Sample
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses the [W3C XML 1.0 Recommendation](http://go.microsoft.com/fwlink/?LinkId=49863) to determine whether the name is valid.  
+ This method uses the [W3C XML 1.0 Recommendation](https://go.microsoft.com/fwlink/?LinkId=49863) to determine whether the name is valid.  
   
  ]]></format>
         </remarks>
@@ -2417,7 +2417,7 @@ public class Sample
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses the [W3C XML 1.0 Recommendation](http://go.microsoft.com/fwlink/?LinkId=49863) to determine whether the name token is valid.  
+ This method uses the [W3C XML 1.0 Recommendation](https://go.microsoft.com/fwlink/?LinkId=49863) to determine whether the name token is valid.  
   
  ]]></format>
         </remarks>
@@ -3211,7 +3211,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="MoveToElement">
@@ -3798,7 +3798,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ReadAttributeValue">
@@ -3931,7 +3931,7 @@ public class Sample
 |`EndElement`|An empty string.|The reader remains in the current position.|  
 |`Element`<br /><br /> `XmlDeclaration`<br /><br /> `None`<br /><br /> `Document`<br /><br /> `DocumentType`<br /><br /> `Notation`<br /><br /> `Entity`<br /><br /> `DocumentFragment`|An <xref:System.InvalidOperationException> is thrown.|Undefined, although typically the reader remains in the current position.|  
   
- For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For the asynchronous version of this method, see <xref:System.Xml.XmlReader.ReadContentAsAsync%2A>.  
   
@@ -4007,7 +4007,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsBase64">
@@ -4054,7 +4054,7 @@ public class Sample
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method streams the content, decodes the `Base64` content, and returns the decoded binary bytes (for example, an inline `Base64` encoded GIF image) into the buffer. This method can be called successively to read large streams of embedded text. For more information, see RFC 1521, "MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies". You can obtain RFCs from the [Request for Comments Web site](http://go.microsoft.com/fwlink/?LinkId=37119).  
+ This method streams the content, decodes the `Base64` content, and returns the decoded binary bytes (for example, an inline `Base64` encoded GIF image) into the buffer. This method can be called successively to read large streams of embedded text. For more information, see RFC 1521, "MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies". You can obtain RFCs from the [Request for Comments Web site](https://go.microsoft.com/fwlink/?LinkId=37119).  
   
 > [!NOTE]
 >  You should not access any of the reader properties between calls to the <xref:System.Xml.XmlReader.ReadContentAsBase64%2A> method until the method returns the value `0`.  
@@ -4127,7 +4127,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsBinHex">
@@ -4247,7 +4247,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsBoolean">
@@ -4289,7 +4289,7 @@ public class Sample
 ## Remarks  
  This method concatenates text, white space, significant white space, and CDATA sections, and skips any comments or processing instructions. Entity references are automatically resolved.  
   
- If the content is typed `xsd:boolean`, the reader returns an unboxed <xref:System.Boolean> object. If the content is not typed `xsd:boolean`, the reader attempts to convert it to a <xref:System.Boolean> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ If the content is typed `xsd:boolean`, the reader returns an unboxed <xref:System.Boolean> object. If the content is not typed `xsd:boolean`, the reader attempts to convert it to a <xref:System.Boolean> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  The following table describes how this method treats each node type.  
   
@@ -4301,7 +4301,7 @@ public class Sample
 |`EndElement`|An empty string.|The reader remains in the current position.|  
 |`Element`<br /><br /> `XmlDeclaration`<br /><br /> `None`<br /><br /> `Document`<br /><br /> `DocumentType`<br /><br /> `Notation`<br /><br /> `Entity`<br /><br /> `DocumentFragment`|An <xref:System.InvalidOperationException> is thrown.|Undefined, although typically the reader remains in the current position.|  
   
- For more information, see the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
    
   
@@ -4358,7 +4358,7 @@ public class Sample
 ## Remarks  
  This method concatenates text, white space, significant white space, and CDATA sections, and skips any comments or processing instructions. Entity references are automatically resolved.  
   
- If the content is typed `xsd:dateTime`, the reader returns an unboxed <xref:System.DateTime> object. If the content is not typed `xsd:dateTime`, the reader attempts to convert it to a <xref:System.DateTime> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ If the content is typed `xsd:dateTime`, the reader returns an unboxed <xref:System.DateTime> object. If the content is not typed `xsd:dateTime`, the reader attempts to convert it to a <xref:System.DateTime> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
 > [!NOTE]
 >  You cannot rely on the <xref:System.DateTime.Year%2A?displayProperty=nameWithType> value when the content is typed as `xsd:gMonthDay`. <xref:System.Xml.XmlReader> always sets the <xref:System.DateTime.Year%2A?displayProperty=nameWithType> value to 1904 in this case.  
@@ -4373,7 +4373,7 @@ public class Sample
 |`EndElement`|An empty string.|The reader remains in the current position.|  
 |`Element`<br /><br /> `XmlDeclaration`<br /><br /> `None`<br /><br /> `Document`<br /><br /> `DocumentType`<br /><br /> `Notation`<br /><br /> `Entity`<br /><br /> `DocumentFragment`|An <xref:System.InvalidOperationException> is thrown.|Undefined, although typically the reader remains in the current position.|  
   
- For more information, see the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  ]]></format>
         </remarks>
@@ -4457,7 +4457,7 @@ public class Sample
 ## Remarks  
  This method concatenates text, white space, significant white space, and CDATA sections, and skips any comments or processing instructions. Entity references are automatically resolved.  
   
- If the content is typed `xsd:decimal`, the reader returns an unboxed <xref:System.Decimal> object. If the content is not typed `xsd:decimal`, the reader attempts to convert it to a <xref:System.Decimal> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ If the content is typed `xsd:decimal`, the reader returns an unboxed <xref:System.Decimal> object. If the content is not typed `xsd:decimal`, the reader attempts to convert it to a <xref:System.Decimal> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  The following table describes how this method treats each node type.  
   
@@ -4469,7 +4469,7 @@ public class Sample
 |`EndElement`|An empty string.|The reader remains in the current position.|  
 |`Element`<br /><br /> `XmlDeclaration`<br /><br /> `None`<br /><br /> `Document`<br /><br /> `DocumentType`<br /><br /> `Notation`<br /><br /> `Entity`<br /><br /> `DocumentFragment`|An <xref:System.InvalidOperationException> is thrown.|Undefined, although typically the reader remains in the current position.|  
   
- For more information, see the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  ]]></format>
         </remarks>
@@ -4517,7 +4517,7 @@ public class Sample
 ## Remarks  
  This method concatenates text, white space, significant white space, and CDATA sections, and skips any comments or processing instructions. Entity references are automatically resolved.  
   
- If the content is typed `xsd:double`, the reader returns a double-precision floating-point number. If the content is not typed `xsd:double`, the reader attempts to convert it to a double-precision floating-point number according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ If the content is typed `xsd:double`, the reader returns a double-precision floating-point number. If the content is not typed `xsd:double`, the reader attempts to convert it to a double-precision floating-point number according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  The following table describes how this method treats each node type.  
   
@@ -4529,7 +4529,7 @@ public class Sample
 |`EndElement`|An empty string.|The reader remains in the current position.|  
 |`Element`<br /><br /> `XmlDeclaration`<br /><br /> `None`<br /><br /> `Document`<br /><br /> `DocumentType`<br /><br /> `Notation`<br /><br /> `Entity`<br /><br /> `DocumentFragment`|An <xref:System.InvalidOperationException> is thrown.|Undefined, although typically the reader remains in the current position.|  
   
- For more information, see the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  ]]></format>
         </remarks>
@@ -4577,7 +4577,7 @@ public class Sample
 ## Remarks  
  This method concatenates text, white space, significant white space, and CDATA sections, and skips any comments or processing instructions. Entity references are automatically resolved.  
   
- If the content is typed `xsd:float`, the reader returns an unboxed a single-precision floating point number. If the content is not typed `xsd:float`, the reader attempts to convert it to a single-precision floating point number according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ If the content is typed `xsd:float`, the reader returns an unboxed a single-precision floating point number. If the content is not typed `xsd:float`, the reader attempts to convert it to a single-precision floating point number according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  The following table describes how this method treats each node type.  
   
@@ -4589,7 +4589,7 @@ public class Sample
 |`EndElement`|An empty string.|The reader remains in the current position.|  
 |`Element`<br /><br /> `XmlDeclaration`<br /><br /> `None`<br /><br /> `Document`<br /><br /> `DocumentType`<br /><br /> `Notation`<br /><br /> `Entity`<br /><br /> `DocumentFragment`|An <xref:System.InvalidOperationException> is thrown.|Undefined, although typically the reader remains in the current position.|  
   
- For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  ]]></format>
         </remarks>
@@ -4637,7 +4637,7 @@ public class Sample
 ## Remarks  
  This method concatenates text, white space, significant white space, and CDATA sections, and skips any comments or processing instructions. Entity references are automatically resolved.  
   
- If the content is typed `xsd:integer`, the reader returns an unboxed 32-bit signed integer. If the content is not typed `xsd:integer`, the reader attempts to convert it to a 32-bit signed integer according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ If the content is typed `xsd:integer`, the reader returns an unboxed 32-bit signed integer. If the content is not typed `xsd:integer`, the reader attempts to convert it to a 32-bit signed integer according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  The following table describes how this method treats each node type.  
   
@@ -4649,7 +4649,7 @@ public class Sample
 |`EndElement`|An empty string.|The reader remains in the current position.|  
 |`Element`<br /><br /> `XmlDeclaration`<br /><br /> `None`<br /><br /> `Document`<br /><br /> `DocumentType`<br /><br /> `Notation`<br /><br /> `Entity`<br /><br /> `DocumentFragment`|An <xref:System.InvalidOperationException> is thrown.|Undefined, although typically the reader remains in the current position.|  
   
- For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  ]]></format>
         </remarks>
@@ -4697,7 +4697,7 @@ public class Sample
 ## Remarks  
  This method concatenates text, white space, significant white space, and CDATA sections, and skips any comments or processing instructions. Entity references are automatically resolved.  
   
- If the content is typed `xsd:long`, the reader returns an unboxed 64-bit signed integer. If the content is not typed `xsd:long`, the reader attempts to convert it to a 64-bit signed integer according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ If the content is typed `xsd:long`, the reader returns an unboxed 64-bit signed integer. If the content is not typed `xsd:long`, the reader attempts to convert it to a 64-bit signed integer according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  The following table describes this method treats each node type.  
   
@@ -4774,7 +4774,7 @@ public class Sample
 |`EndElement`|The value of the element if the reader is a schema validating reader (<xref:System.Xml.XmlReaderSettings.ValidationType%2A> is set to <xref:System.Xml.ValidationType.Schema>); otherwise an empty string.|The reader remains in the current position.|  
 |`Element`<br /><br /> `XmlDeclaration`<br /><br /> `None`<br /><br /> `Document`<br /><br /> `DocumentType`<br /><br /> `Notation`<br /><br /> `Entity`<br /><br /> `DocumentFragment`|An <xref:System.InvalidOperationException> is thrown.|Undefined, although typically the reader remains in the current position.|  
   
- For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For the asynchronous version of this method, see <xref:System.Xml.XmlReader.ReadContentAsObjectAsync%2A>.  
   
@@ -4831,7 +4831,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsString">
@@ -4885,7 +4885,7 @@ public class Sample
 |`EndElement`|An empty string.|The reader remains in the current position.|  
 |`Element`<br /><br /> `XmlDeclaration`<br /><br /> `None`<br /><br /> `Document`<br /><br /> `DocumentType`<br /><br /> `Notation`<br /><br /> `Entity`<br /><br /> `DocumentFragment`|An <xref:System.InvalidOperationException> is thrown.|Undefined, although typically the reader remains in the current position.|  
   
- For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For the asynchronous version of this method, see <xref:System.Xml.XmlReader.ReadContentAsStringAsync%2A>.  
   
@@ -4937,7 +4937,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadElementContentAs">
@@ -4999,7 +4999,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For the asynchronous version of this method, see <xref:System.Xml.XmlReader.ReadElementContentAsAsync%2A>.  
   
@@ -5077,7 +5077,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  ]]></format>
         </remarks>
@@ -5143,7 +5143,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsBase64">
@@ -5190,7 +5190,7 @@ public class Sample
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method reads the element content, decodes it using `Base64` encoding, and returns the decoded binary bytes (for example, an inline `Base64`-encoded GIF image) into the buffer. For more information, see RFC 1521, "MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies". You can obtain RFCs from the [Request for Comments Web site](http://go.microsoft.com/fwlink/?LinkId=37119).  
+ This method reads the element content, decodes it using `Base64` encoding, and returns the decoded binary bytes (for example, an inline `Base64`-encoded GIF image) into the buffer. For more information, see RFC 1521, "MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies". You can obtain RFCs from the [Request for Comments Web site](https://go.microsoft.com/fwlink/?LinkId=37119).  
   
  <xref:System.Xml.XmlReader.ReadElementContentAsBase64%2A> can only read simple-content elements. The element can contain text, white space, significant white space, CDATA sections, comments and processing instructions. It can also contain entity references, which are automatically expanded. The element cannot have child elements.  
   
@@ -5269,7 +5269,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsBinHex">
@@ -5395,7 +5395,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadElementContentAsBoolean">
@@ -5450,7 +5450,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- If the element content is typed `xsd:boolean`, the reader returns an unboxed <xref:System.Boolean> object. If the content is not typed `xsd:boolean`, the reader attempts to convert it to a <xref:System.Boolean> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ If the element content is typed `xsd:boolean`, the reader returns an unboxed <xref:System.Boolean> object. If the content is not typed `xsd:boolean`, the reader attempts to convert it to a <xref:System.Boolean> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
   
@@ -5509,7 +5509,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- If the content is typed `xsd:boolean`, the reader returns an unboxed <xref:System.Boolean> object. If the content is not typed `xsd:boolean`, the reader attempts to convert it to a <xref:System.Boolean> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ If the content is typed `xsd:boolean`, the reader returns an unboxed <xref:System.Boolean> object. If the content is not typed `xsd:boolean`, the reader attempts to convert it to a <xref:System.Boolean> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
   
@@ -5572,7 +5572,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- If the content is typed `xsd:dateTime`, the reader returns an unboxed <xref:System.DateTime> object. If the content is not typed `xsd:dateTime`, the reader attempts to convert it to a <xref:System.DateTime> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ If the content is typed `xsd:dateTime`, the reader returns an unboxed <xref:System.DateTime> object. If the content is not typed `xsd:dateTime`, the reader attempts to convert it to a <xref:System.DateTime> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
 > [!NOTE]
 >  You cannot rely on the <xref:System.DateTime.Year%2A?displayProperty=nameWithType> value when the content is typed as `xsd:gMonthDay`. <xref:System.Xml.XmlReader> always sets the <xref:System.DateTime.Year%2A?displayProperty=nameWithType> value to 1904 in this case.  
@@ -5643,7 +5643,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- If the content is typed `xsd:dateTime`, the reader returns an unboxed <xref:System.DateTime> object. If the content is not typed `xsd:dateTime`, the reader attempts to convert it to a <xref:System.DateTime> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ If the content is typed `xsd:dateTime`, the reader returns an unboxed <xref:System.DateTime> object. If the content is not typed `xsd:dateTime`, the reader attempts to convert it to a <xref:System.DateTime> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
 > [!NOTE]
 >  You cannot rely on the <xref:System.DateTime.Year%2A?displayProperty=nameWithType> value when the content is typed as `xsd:gMonthDay`. <xref:System.Xml.XmlReader> always sets the <xref:System.DateTime.Year%2A?displayProperty=nameWithType> value to 1904 in this case.  
@@ -5714,7 +5714,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- The reader attempts to convert the element content to an <xref:System.Decimal> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ The reader attempts to convert the element content to an <xref:System.Decimal> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
   
@@ -5773,7 +5773,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- The reader attempts to convert the element content to an <xref:System.Decimal> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ The reader attempts to convert the element content to an <xref:System.Decimal> object according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
   
@@ -5841,7 +5841,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- If the content is typed `xsd:double`, the reader returns a double-precision floating-point number. If the content is not typed `xsd:double`, the reader attempts to convert it to a double-precision floating-point number according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ If the content is typed `xsd:double`, the reader returns a double-precision floating-point number. If the content is not typed `xsd:double`, the reader attempts to convert it to a double-precision floating-point number according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
   
@@ -5912,7 +5912,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- If the content is typed `xsd:double`, the reader returns a double-precision floating-point number. If the content is not typed `xsd:double`, the reader attempts to convert it to a double-precision floating-point number according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ If the content is typed `xsd:double`, the reader returns a double-precision floating-point number. If the content is not typed `xsd:double`, the reader attempts to convert it to a double-precision floating-point number according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
   
@@ -5980,7 +5980,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- The reader attempts to convert the element content to a single-precision floating point number according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ The reader attempts to convert the element content to a single-precision floating point number according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
   
@@ -6039,7 +6039,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- The reader attempts to convert the element content to a single-precision floating point number according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ The reader attempts to convert the element content to a single-precision floating point number according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
   
@@ -6107,7 +6107,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- If the content is typed `xsd:integer`, the reader returns an unboxed 32-bit signed integer. If the content is not typed `xsd:integer`, the reader attempts to convert it to a 32-bit signed integer according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ If the content is typed `xsd:integer`, the reader returns an unboxed 32-bit signed integer. If the content is not typed `xsd:integer`, the reader attempts to convert it to a 32-bit signed integer according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
   
@@ -6166,7 +6166,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- If the content is typed `xsd:integer`, the reader returns an unboxed 32-bit signed integer. If the content is not typed `xsd:integer`, the reader attempts to convert it to a 32-bit signed integer according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ If the content is typed `xsd:integer`, the reader returns an unboxed 32-bit signed integer. If the content is not typed `xsd:integer`, the reader attempts to convert it to a 32-bit signed integer according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
   
@@ -6234,7 +6234,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- If the content is typed `xsd:long`, the reader returns an unboxed 64-bit signed integer. If the content is not typed `xsd:long`, the reader attempts to convert it to a 64-bit signed integer according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ If the content is typed `xsd:long`, the reader returns an unboxed 64-bit signed integer. If the content is not typed `xsd:long`, the reader attempts to convert it to a 64-bit signed integer according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
   
@@ -6305,7 +6305,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- If the content is typed `xsd:long`, the reader returns an unboxed 64-bit signed integer. If the content is not typed `xsd:long`, the reader attempts to convert it to a 64-bit signed integer according to the rules defined by the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ If the content is typed `xsd:long`, the reader returns an unboxed 64-bit signed integer. If the content is not typed `xsd:long`, the reader attempts to convert it to a 64-bit signed integer according to the rules defined by the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
   
@@ -6373,7 +6373,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For the asynchronous version of this method, see <xref:System.Xml.XmlReader.ReadElementContentAsObjectAsync%2A>.  
   
@@ -6450,7 +6450,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  ]]></format>
         </remarks>
@@ -6510,7 +6510,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadElementContentAsString">
@@ -6565,7 +6565,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
  For the asynchronous version of this method, see <xref:System.Xml.XmlReader.ReadElementContentAsStringAsync%2A>.  
   
@@ -6636,7 +6636,7 @@ public class Sample
 ## Remarks  
  This method reads the start tag, the contents of the element, and moves the reader past the end element tag. It expands entities and ignores processing instructions and comments. The element can only contain simple content. That is, it cannot have child elements.  
   
- For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](http://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
+ For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page and the [W3C XML Schema Part 2: Datatypes](https://go.microsoft.com/fwlink/?LinkId=4871) recommendation.  
   
    
   
@@ -6708,7 +6708,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadElementString">
@@ -7073,7 +7073,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ReadOuterXml">
@@ -7195,7 +7195,7 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadStartElement">
@@ -8074,7 +8074,7 @@ reader.ReadToFollowing("item", "urn:1");
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ResolveEntity">
@@ -8349,7 +8349,7 @@ reader.ReadToFollowing("item", "urn:1");
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">

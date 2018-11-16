@@ -22,15 +22,15 @@
 ## Remarks  
  This class is used to store the default provider in the single-provider scenario. In multiple-provider scenarios, you can use this collection to choose a specific personalization provider at run time.  
   
- Personalization providers in the collection are indexed according to the name of each provider as set in the Web.config or the Machine.config configuration file using the [providers Element for personalization for webParts (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/51363b49-eafa-4b9c-b9d0-80086b385195) attribute.  
+ Personalization providers in the collection are indexed according to the name of each provider as set in the Web.config or the Machine.config configuration file using the [providers Element for personalization for webParts (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/51363b49-eafa-4b9c-b9d0-80086b385195) attribute.  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

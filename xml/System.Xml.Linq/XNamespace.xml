@@ -73,9 +73,9 @@ End Module
   
  Assigning a string to an <xref:System.Xml.Linq.XNamespace> uses the implicit conversion from <xref:System.String>.  
   
- See [How to: Create a Document with Namespaces (C#) (LINQ to XML)](http://msdn.microsoft.com/library/af4a595e-ffb2-4187-a61b-d5ed71642c4c) for more information and examples.  
+ See [How to: Create a Document with Namespaces (C#) (LINQ to XML)](https://msdn.microsoft.com/library/af4a595e-ffb2-4187-a61b-d5ed71642c4c) for more information and examples.  
   
- See [Namespaces in Visual Basic (LINQ to XML)](http://msdn.microsoft.com/library/10b7ba7b-518c-4f14-899f-892575d14dcc) for more information on using namespaces in Visual Basic.  
+ See [Namespaces in Visual Basic (LINQ to XML)](https://msdn.microsoft.com/library/10b7ba7b-518c-4f14-899f-892575d14dcc) for more information on using namespaces in Visual Basic.  
   
 ## Controlling Namespace Prefixes  
  If you create an attribute that declares a namespace, the prefix specified in the attribute will be persisted in the serialized XML. To create an attribute that declares a namespace with a prefix, you create an attribute where the namespace of the name of the attribute is <xref:System.Xml.Linq.XNamespace.Xmlns%2A>, and the name of the attribute is the namespace prefix. The value of the attribute is the URI of the namespace. The following example shows this idiom:  
@@ -116,7 +116,7 @@ End Module
 <aw:Root xmlns:aw="http://www.adventure-works.com">Content</aw:Root>  
 ```  
   
- For more information, see [How to: Control Namespace Prefixes (C#) (LINQ to XML)](http://msdn.microsoft.com/library/a40d4479-f1b9-4d8b-8623-445648caed28).  
+ For more information, see [How to: Control Namespace Prefixes (C#) (LINQ to XML)](https://msdn.microsoft.com/library/a40d4479-f1b9-4d8b-8623-445648caed28).  
   
 ## Creating a Default Namespace  
  When constructing an attribute that will be a namespace, if the attribute name has the special value of "xmlns", then when the XML tree is serialized, the namespace will be declared as the default namespace. The special attribute with the name of "xmlns" itself is not in any namespace. The value of the attribute is the namespace URI.  
@@ -197,7 +197,7 @@ Console.WriteLine(e)
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -269,7 +269,7 @@ True
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -351,7 +351,7 @@ http://www.adventure-works.com
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -394,7 +394,7 @@ http://www.adventure-works.com
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="GetName">
@@ -469,7 +469,7 @@ End Module
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="NamespaceName">
@@ -542,7 +542,7 @@ http://www.adventure-works.com
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -655,7 +655,7 @@ ChildInNoNamespace element is in no namespace
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -747,7 +747,7 @@ End Module
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -820,7 +820,7 @@ True
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -891,7 +891,7 @@ http://www.adventure-works.com
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -964,7 +964,7 @@ False
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1029,7 +1029,7 @@ http://www.adventure-works.com
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Xml">
@@ -1100,7 +1100,7 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Xmlns">
@@ -1187,7 +1187,7 @@ End Module
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
   </Members>

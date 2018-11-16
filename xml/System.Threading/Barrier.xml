@@ -56,8 +56,8 @@
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Threading.Barrier" /> are thread-safe and may be used concurrently from multiple threads, with the exception of Dispose, which must only be used when all other operations on the <see cref="T:System.Threading.Barrier" /> have completed.</threadsafe>
-    <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -69,8 +69,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.Barrier" /> class.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -111,8 +111,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="participantCount" /> is less than 0 or greater than 32,767.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -157,8 +157,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="participantCount" /> is less than 0 or greater than 32,767.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <Member MemberName="AddParticipant">
@@ -206,8 +206,8 @@
  -or-  
   
  The method was invoked from within a post-phase action.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <Member MemberName="AddParticipants">
@@ -260,8 +260,8 @@
   
  Adding <paramref name="participantCount" /> participants would cause the barrier's participant count to exceed 32,767.</exception>
         <exception cref="T:System.InvalidOperationException">The method was invoked from within a post-phase action.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentPhaseNumber">
@@ -300,8 +300,8 @@
         <summary>Gets the number of the barrier's current phase.</summary>
         <value>Returns the number of the barrier's current phase.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -313,8 +313,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Releases resources used by the current instance of the <see cref="T:System.Threading.Barrier" /> class.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Dispose">
@@ -364,8 +364,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The method was invoked from within a post-phase action.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -409,8 +409,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <Member MemberName="ParticipantCount">
@@ -444,8 +444,8 @@
         <summary>Gets the total number of participants in the barrier.</summary>
         <value>Returns the total number of participants in the barrier.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <Member MemberName="ParticipantsRemaining">
@@ -486,8 +486,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveParticipant">
@@ -532,8 +532,8 @@
  -or-  
   
  The method was invoked from within a post-phase action.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveParticipants">
@@ -588,8 +588,8 @@
  -or-  
   
  current participant count is less than the specified participantCount</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SignalAndWait">
@@ -601,8 +601,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Signals that a participant has reached the barrier and waits for all other participants to reach the barrier as well.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="SignalAndWait">
@@ -639,8 +639,8 @@
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The method was invoked from within a post-phase action, the barrier currently has 0 participants, or the barrier is signaled by more threads than are registered as participants.</exception>
         <exception cref="T:System.Threading.BarrierPostPhaseException">If an exception is thrown from the post phase action of a Barrier after all participating threads have called SignalAndWait, the exception will be wrapped in a BarrierPostPhaseException and be thrown on all participating threads.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <Member MemberName="SignalAndWait">
@@ -683,8 +683,8 @@
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
         <exception cref="T:System.InvalidOperationException">The method was invoked from within a post-phase action, the barrier currently has 0 participants, or the barrier is signaled by more threads than are registered as participants.</exception>
         <exception cref="T:System.Threading.BarrierPostPhaseException">If an exception is thrown from the post phase action of a Barrier after all participating threads have called SignalAndWait, the exception will be wrapped in a BarrierPostPhaseException and be thrown on all participating threads.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <Member MemberName="SignalAndWait">
@@ -724,8 +724,8 @@
           <paramref name="cancellationToken" /> has been canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The method was invoked from within a post-phase action, the barrier currently has 0 participants, or the barrier is signaled by more threads than are registered as participants.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <Member MemberName="SignalAndWait">
@@ -767,8 +767,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out, or it is greater than 32,767.</exception>
         <exception cref="T:System.InvalidOperationException">The method was invoked from within a post-phase action, the barrier currently has 0 participants, or the barrier is signaled by more threads than are registered as participants.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <Member MemberName="SignalAndWait">
@@ -820,8 +820,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
         <exception cref="T:System.InvalidOperationException">The method was invoked from within a post-phase action, the barrier currently has 0 participants, or the barrier is signaled by more threads than are registered as participants.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <Member MemberName="SignalAndWait">
@@ -866,8 +866,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out.</exception>
         <exception cref="T:System.InvalidOperationException">The method was invoked from within a post-phase action, the barrier currently has 0 participants, or the barrier is signaled by more threads than are registered as participants.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
   </Members>

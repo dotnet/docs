@@ -50,7 +50,7 @@
 >  To improve accessibility, the <xref:System.Web.UI.WebControls.WebParts.AppearanceEditorPart> control is rendered within a `<fieldset>` element. The `<fieldset>` element groups the related set of controls used for editing in the <xref:System.Web.UI.WebControls.WebParts.AppearanceEditorPart> control, and it facilitates tabbed navigation among those controls for both visual (such as ordinary Web browsers) and speech-oriented user agents (such as screen-reading software).  
   
 ## Accessibility  
- The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
    
   
@@ -65,14 +65,14 @@
   
 -   An explanation of how the example works when you load the page in a browser.  
   
- The source code for the user control comes from another topic. For this code example to work, you need to obtain the .ascx file for the user control from the [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0) topic, and place the file in the same folder as the .aspx page in this code example.  
+ The source code for the user control comes from another topic. For this code example to work, you need to obtain the .ascx file for the user control from the [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0) topic, and place the file in the same folder as the .aspx page in this code example.  
   
  The second part of the code example is the Web page. It contains a declarative reference to an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, with a child `<zonetemplate>` element that contains declarative references to an <xref:System.Web.UI.WebControls.WebParts.AppearanceEditorPart> control. Also, the page references the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, using a `Register` directive for the assembly, and the `<aspSample:TextDisplayWebPart>` element for the control.  
   
  [!code-aspx-csharp[WebParts_AppearanceEditorPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_AppearanceEditorPart_Overview/CS/appearanceeditorpartcs.aspx#1)]
  [!code-aspx-vb[WebParts_AppearanceEditorPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_AppearanceEditorPart_Overview/VB/appearanceeditorpartvb.aspx#1)]  
   
- The third part of the code example is a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> class named `TextDisplayWebPart`, which is referenced in the Web page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The third part of the code example is a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> class named `TextDisplayWebPart`, which is referenced in the Web page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_AppearanceEditorPart_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_AppearanceEditorPart_Overview/CS/textdisplaywebpart.cs#3)]
  [!code-vb[WebParts_AppearanceEditorPart_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_AppearanceEditorPart_Overview/VB/textdisplaywebpart.vb#3)]  
@@ -84,7 +84,7 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.BehaviorEditorPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.LayoutEditorPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -108,7 +108,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.AppearanceEditorPart" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ApplyChanges">
@@ -161,7 +161,7 @@
  <see cref="P:System.Web.UI.WebControls.WebParts.Part.Title" /><see cref="P:System.Web.UI.WebControls.WebParts.Part.ChromeType" /><see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Direction" /><see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Height" /><see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Width" /><see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Hidden" /></exception>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorPart.ApplyChanges" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.SyncChanges" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -223,7 +223,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
@@ -314,7 +314,7 @@
   
  If you create a custom control, you can follow the same approach, and call the <see cref="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.SyncChanges" /> method from the inherited <see cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" /> method to ensure that any intervening changes are synchronized, but it is not necessary to do this.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -357,7 +357,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

@@ -139,7 +139,7 @@
   
 -   An explanation of how the example works in a browser.  
   
- The user control has a drop-down list control that shows the possible display modes on a page, given the Web Parts controls that are present on the page. In the Web page for this code example, this user control is declared just below the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> element in the page's markup, and there is a `Register` directive near the top of the Web page to register the control. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The user control has a drop-down list control that shows the possible display modes on a page, given the Web Parts controls that are present on the page. In the Web page for this code example, this user control is declared just below the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> element in the page's markup, and there is a `Register` directive near the top of the Web page to register the control. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_WebPartManager_SimpleConnection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_SimpleConnection/CS/displaymodemenucs.ascx#6)]
  [!code-aspx-vb[WebParts_WebPartManager_SimpleConnection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_SimpleConnection/VB/DisplayModeMenuVB.ascx#6)]  
@@ -151,7 +151,7 @@
   
  The third part of the example is the source code for the controls. Note that there is an interface named `IZipCode`, and this interface is implemented in the `ZipCodeWebPart` class. This class has a special callback method named `ProvideIZipCode` that serves as a provider. The other type, named `WeatherWebPart`, is also implemented with a special method named `GetIZipCode`, which enables the control to act as a consumer of the other control.  
   
- For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example assumes that you have compiled the source into an assembly, and the `Register` directive in the Web page references the assembly name. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example assumes that you have compiled the source into an assembly, and the `Register` directive in the Web page references the assembly name. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartManager_SimpleConnection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_SimpleConnection/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartManager_SimpleConnection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_SimpleConnection/VB/ZipCodeComponent.vb#2)]  
@@ -164,7 +164,7 @@
       <para>The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control is designed to be extended. Because it is so central to Web Parts applications, when you want to extend some specific type or control in the Web Parts control set, in many cases you must also extend the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class, because it is likely to have some property or method that is required to make your custom type work in the context of a Web Parts application. The Web Parts reference documentation (see <see cref="N:System.Web.UI.WebControls.WebParts" />), when discussing how to extend a Web Parts type, frequently mentions what needs to be done to extend the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class as well, or shows how to extend it in a code example.</para>
     </block>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManagerInternals" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -280,7 +280,7 @@
  <paramref name="webPart" /> is already in <paramref name="zone" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="zoneIndex" /> is less than zero.</exception>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateWebPart(System.Web.UI.Control)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AuthorizeWebPart">
@@ -323,7 +323,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnAuthorizeWebPart(System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs)" />
         <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AvailableTransformers">
@@ -364,7 +364,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Web Parts Connections Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Web Parts Connections Overview</related>
       </Docs>
     </Member>
     <Member MemberName="BeginWebPartConnecting">
@@ -458,7 +458,7 @@
   
  <paramref name="webPart" /> is equal to the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPart" /> control.</exception>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.EndWebPartEditing" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="BrowseDisplayMode">
@@ -501,8 +501,8 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4">Web Parts Page Display Modes</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4">Web Parts Page Display Modes</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CanConnectWebParts">
@@ -543,7 +543,7 @@
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CanConnectWebParts">
@@ -602,14 +602,14 @@
   
 -   An explanation of how the example works in a browser.  
   
- The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  The declarative markup for the Web page contains `Register` directives for both the user control and the custom controls. There is an `<asp:webpartmanager>` element, an `<asp:webpartzone>` element to contain the custom controls, and an `<asp:connectionszone>` element. Notice that in the `Page_Load` method, the code checks whether the connection can be made and, if so, defines a provider, a consumer, and their respective connection points, and then adds a new connection to the set of static connections referenced by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.StaticConnections%2A> property.  
   
  [!code-aspx-csharp[WebParts_WebPartManager_StaticConnections#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_StaticConnections/CS/wpmgrStaticConnectionCS.aspx#1)]
  [!code-aspx-vb[WebParts_WebPartManager_StaticConnections#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_StaticConnections/VB/wpmgrStaticConnectionVB.aspx#1)]  
   
- The third part of the example is the source code for the controls. It contains an interface and two custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, one acting as a provider, and the other as a consumer. Because they have compatible connection points (both of them recognize the `IZipCode` interface), a transformer is not needed to make the connection. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The third part of the example is the source code for the controls. It contains an interface and two custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, one acting as a provider, and the other as a consumer. Because they have compatible connection points (both of them recognize the `IZipCode` interface), a transformer is not needed to make the connection. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartManager_StaticConnections#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_StaticConnections/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartManager_StaticConnections#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_StaticConnections/VB/ZipCodeComponent.vb#2)]  
@@ -618,7 +618,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CanConnectWebParts">
@@ -710,8 +710,8 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4">Web Parts Page Display Modes</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4">Web Parts Page Display Modes</related>
       </Docs>
     </Member>
     <Member MemberName="CheckRenderClientScript">
@@ -736,7 +736,7 @@
         <returns>A Boolean value that indicates whether to render client script.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.EnableClientScript" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CloseProviderWarning">
@@ -794,7 +794,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CloseWebPart">
@@ -852,9 +852,9 @@
   
 -   An explanation of how the example works in a browser.  
   
- The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- The second part of the code example is the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This example uses the dynamic compilation approach; thus there is no `Assembly` attribute in the `Register` directive for this control at the top of the Web page. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part of the code example is the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This example uses the dynamic compilation approach; thus there is no `Assembly` attribute in the `Register` directive for this control at the top of the Web page. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartManager_CloseWebPart#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_CloseWebPart/CS/textdisplaywebpart.cs#3)]
  [!code-vb[WebParts_WebPartManager_CloseWebPart#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_CloseWebPart/VB/textdisplaywebpart.vb#3)]  
@@ -879,7 +879,7 @@
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowClose" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsClosed" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectDisplayMode">
@@ -923,7 +923,7 @@
   
 -   An explanation of how to run the example.  
   
- The first part of the code example is a source file that contains an interface and two custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that are designed so they can be connected. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses the dynamic compilation approach. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The first part of the code example is a source file that contains an interface and two custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that are designed so they can be connected. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses the dynamic compilation approach. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartManager_ConnectDisplayMode#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_ConnectDisplayMode/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartManager_ConnectDisplayMode#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_ConnectDisplayMode/VB/ZipCodeComponent.vb#2)]  
@@ -941,8 +941,8 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4">Web Parts Page Display Modes</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4">Web Parts Page Display Modes</related>
       </Docs>
     </Member>
     <Member MemberName="Connections">
@@ -1008,7 +1008,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectionsActivated">
@@ -1044,7 +1044,7 @@
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnConnectionsActivated(System.EventArgs)" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivating" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectionsActivating">
@@ -1080,7 +1080,7 @@
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnConnectionsActivating(System.EventArgs)" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivated" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ConnectWebParts">
@@ -1176,7 +1176,7 @@
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetConsumerConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.Connections" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectWebParts">
@@ -1222,7 +1222,7 @@
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.Connections" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -1263,7 +1263,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.WebParts" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CopyWebPart">
@@ -1310,7 +1310,7 @@
           <para>The method is declared as <see langword="virtual" /> so that developers could inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class, override the method, and provide for additional scenarios in which it could create copies of controls. For example, the method could optionally receive as input a control that has been serialized into an XML file. The method could deserialize the XML (if present), and then call the base method to handle the existing cases and to return a new instance of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</para>
         </block>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.AddWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.WebPartZoneBase,System.Int32)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateAvailableTransformers">
@@ -1338,7 +1338,7 @@
           <para>This method can be overridden to add additional transformers that can be used by the application. For example, the method could be written to retrieve a list of available transformers from a Web service.</para>
         </block>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.AvailableTransformers" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -1428,7 +1428,7 @@
   
 -   An explanation of how the example works in a browser.  
   
- The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  The second part of the example is the Web page. It contains two <xref:System.Web.UI.WebControls.WebParts.WebPartZone> controls, both user controls, and the custom <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. Notice the `Register` directives at the top of the page to reference the user controls and namespace for the compiled controls.  
   
@@ -1442,7 +1442,7 @@
   
  The fourth part of the example is the source file for the two custom classes. Notice that the custom <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overrides the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDisplayModes%2A> method, and that it first calls the base method to add all the default display modes, and then adds the custom display mode. The custom display mode class, `InLineEditDisplayMode`, simply inherits from <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayMode>, sets the name of the display mode in the constructor, and overrides a number of the base properties to establish the characteristics of the custom display.  
   
- For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[Webparts_WebPartManager_CreateDisplayModes#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_CreateDisplayModes/CS/CustomDisplayMode.cs#3)]
  [!code-vb[Webparts_WebPartManager_CreateDisplayModes#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_CreateDisplayModes/VB/CustomDisplayMode.vb#3)]  
@@ -1451,8 +1451,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0">Walkthrough: Changing Display Modes on a Web Parts Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0">Walkthrough: Changing Display Modes on a Web Parts Page</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDynamicConnectionID">
@@ -1488,7 +1488,7 @@
         </block>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DynamicConnections" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDynamicWebPartID(System.Type)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDynamicWebPartID">
@@ -1526,7 +1526,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPartType" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateErrorWebPart">
@@ -1578,7 +1578,7 @@
  You can also customize the behavior of the <see cref="T:System.Web.UI.WebControls.WebParts.ErrorWebPart" /> control itself, by inheriting from it. For example, you might want to override its <see cref="P:System.Web.UI.WebControls.WebParts.Part.Title" /> or <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowMinimize" /> property.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ErrorWebPart" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreatePersonalization">
@@ -1609,8 +1609,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateWebPart">
@@ -1664,7 +1664,7 @@
           <para>This method can be overridden to use a derived <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> class instead of the base class provided with the Web Parts control set.</para>
         </block>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.AddWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.WebPartZoneBase,System.Int32)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteWarning">
@@ -1714,9 +1714,9 @@
   
 -   An explanation of how the example works in a browser.  
   
- The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- The second part of the code example is the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This example uses the dynamic compilation approach; thus there is no `Assembly` attribute in the `Register` directive for this control at the top of the Web page. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part of the code example is the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This example uses the dynamic compilation approach; thus there is no `Assembly` attribute in the `Register` directive for this control at the top of the Web page. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartManager_DeleteWarning#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_DeleteWarning/CS/textdisplaywebpart.cs#3)]
  [!code-vb[WebParts_WebPartManager_DeleteWarning#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_DeleteWarning/VB/textdisplaywebpart.vb#3)]  
@@ -1731,7 +1731,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteWebPart">
@@ -1783,7 +1783,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsClosed" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsStatic" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DesignDisplayMode">
@@ -1826,8 +1826,8 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4">Web Parts Page Display Modes</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4">Web Parts Page Display Modes</related>
       </Docs>
     </Member>
     <Member MemberName="DisconnectWebPart">
@@ -1876,9 +1876,9 @@
   
 -   An explanation of how the example works in a browser.  
   
- The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- The second part is the file containing the source code for the two custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that will be connected, and a custom <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This example uses dynamic compilation, so the `Register` directive that references these components in the Web page is declared accordingly at the top of the Web page. For a walkthrough that demonstrates compiling options, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part is the file containing the source code for the two custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that will be connected, and a custom <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This example uses dynamic compilation, so the `Register` directive that references these components in the Web page is declared accordingly at the top of the Web page. For a walkthrough that demonstrates compiling options, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  In the source code, notice the inherited control `MyWebPartManager` that overrides the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebPart%2A> method. This method checks each connection in a page to see whether the control being closed participates in the connection and, if so, calls the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebParts%2A> method to end the connection. This is identical to the base implementation of the method in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. The overridden method then customizes the base implementation by writing a message to the page.  
   
@@ -1895,7 +1895,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebParts(System.Web.UI.WebControls.WebParts.WebPartConnection)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DisconnectWebParts">
@@ -1945,9 +1945,9 @@
   
 -   An explanation of how the example works in a browser.  
   
- The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- The second part is a file containing the source code for the two custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that will be connected. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This example uses dynamic compilation, so the `Register` directive that references these components in the Web page is declared accordingly at the top of the Web page. For a walkthrough that demonstrates compiling options, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part is a file containing the source code for the two custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that will be connected. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This example uses dynamic compilation, so the `Register` directive that references these components in the Web page is declared accordingly at the top of the Web page. For a walkthrough that demonstrates compiling options, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartManager_DisconnectWebParts#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_DisconnectWebParts/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartManager_DisconnectWebParts#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_DisconnectWebParts/VB/ZipCodeComponent.vb#2)]  
@@ -1983,7 +1983,7 @@
           <para>You can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebParts(System.Web.UI.WebControls.WebParts.WebPartConnection)" /> method if you want to change the default implementation for disconnecting <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls. If you do override the method, and you simply want to add some implementation to the existing method, you can call the base method prior to executing your own code.</para>
         </block>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayMode">
@@ -2023,11 +2023,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A page that contains Web Parts controls is always in one of several possible display modes. For details about display modes, see [Web Parts Page Display Modes](http://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4).  
+ A page that contains Web Parts controls is always in one of several possible display modes. For details about display modes, see [Web Parts Page Display Modes](https://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4).  
   
  The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class creates the display modes for a Web page. Using the base <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayMode> class, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control creates several standard display mode objects that can be used on pages that contain Web Parts controls. These standard display modes are described in the <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayMode> class overview.  
   
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control also manages the display modes for pages that use Web Parts controls. Using the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayMode%2A> property, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control keeps a reference to the current display mode on a page. You can also use the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayMode%2A> property to switch a page into different display modes. For an example of changing display modes on a page that uses Web Parts controls, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control also manages the display modes for pages that use Web Parts controls. Using the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayMode%2A> property, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control keeps a reference to the current display mode on a page. You can also use the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayMode%2A> property to switch a page into different display modes. For an example of changing display modes on a page that uses Web Parts controls, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  As part of managing the display mode, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control also provides events and event handlers relating to display modes, such as the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnDisplayModeChanged%2A> method and the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnDisplayModeChanging%2A> method. These methods provide a mechanism for customizing a page's behavior, and even for adding a custom display mode.  
   
@@ -2037,7 +2037,7 @@
  The following code example demonstrates programmatic use of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayMode%2A> property. After loading the page in a browser, you can use the buttons near the bottom of the page to switch display modes. The page is in browse mode by default when it loads. If you switch to design mode, you can drag the server controls from one zone to another, or arrange two controls within one zone. If you switch to edit mode, you can click the verbs menu in the header of either of the server controls, select **Edit**, and edit the control using the provided editing user interface (UI).  
   
 > [!NOTE]
->  Switching among display modes in a Web Parts application is very common, and you might want to provide a consistent, reusable way to do this on all your pages that contain Web Parts controls. For an example of a user control that changes display modes and that can be reused on many pages, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+>  Switching among display modes in a Web Parts application is very common, and you might want to provide a consistent, reusable way to do this on all your pages that contain Web Parts controls. For an example of a user control that changes display modes and that can be reused on many pages, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_WebPartManager_DisplayMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_DisplayMode/CS/wpmgrDisplayModecs.aspx#1)]
  [!code-aspx-vb[WebParts_WebPartManager_DisplayMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_DisplayMode/VB/wpmgrDisplayModevb.aspx#1)]  
@@ -2052,9 +2052,9 @@
  The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> object being assigned to the property is disabled.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDisplayModes" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4">Web Parts Page Display Modes</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0">Walkthrough: Changing Display Modes on a Web Parts Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4">Web Parts Page Display Modes</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0">Walkthrough: Changing Display Modes on a Web Parts Page</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayModeChanged">
@@ -2082,12 +2082,12 @@
  Display modes are an integral part of Web Parts applications. When users switch to a different display mode on a Web page, the page will often take on a very different appearance, depending on the purpose of the new display mode. After a display mode has changed, you might want to make certain changes in the user interface (UI), such as hiding or showing certain controls, changing the appearance of selected UI elements, and so on.  
   
 > [!NOTE]
->  For more information on display modes, see [Web Parts Page Display Modes](http://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4). For more information on consuming events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
+>  For more information on display modes, see [Web Parts Page Display Modes](https://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4). For more information on consuming events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnDisplayModeChanged(System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayModeChanging">
@@ -2115,12 +2115,12 @@
  Display modes are an integral part of Web Parts applications. When users switch to a different display mode on a Web page, the page will often take on a very different appearance, depending on the purpose of the new display mode. After a user initiates the process of changing to a new display mode by clicking a verb, you might want to make certain changes in the user interface (UI) by using the <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventArgs.NewDisplayMode%2A> property to determine what the new display mode will be, and then changing various UI elements accordingly. A useful way to do this is to override the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnDisplayModeChanging%2A> method to customize the UI.  
   
 > [!NOTE]
->  For more information on display modes, see [Web Parts Page Display Modes](http://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4). For more information on consuming events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
+>  For more information on display modes, see [Web Parts Page Display Modes](https://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4). For more information on consuming events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnDisplayModeChanging(System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayModes">
@@ -2178,9 +2178,9 @@
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayMode" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDisplayModes" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.SupportedDisplayModes" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4">Web Parts Page Display Modes</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0">Walkthrough: Changing Display Modes on a Web Parts Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4">Web Parts Page Display Modes</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0">Walkthrough: Changing Display Modes on a Web Parts Page</related>
       </Docs>
     </Member>
     <Member MemberName="DynamicConnections">
@@ -2216,7 +2216,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDynamicConnectionID" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="EditDisplayMode">
@@ -2261,8 +2261,8 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4">Web Parts Page Display Modes</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4">Web Parts Page Display Modes</related>
       </Docs>
     </Member>
     <Member MemberName="EnableClientScript">
@@ -2307,7 +2307,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -2354,7 +2354,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set the property value.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="EndWebPartConnecting">
@@ -2391,7 +2391,7 @@
           <para>Developers who need to extend the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control might want to override this method in a derived class. One approach would be to call the base method and then add some additional custom handling, or you might want to completely customize the entire process of completing a connection between controls.</para>
         </block>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.BeginWebPartConnecting(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="EndWebPartEditing">
@@ -2428,7 +2428,7 @@
           <para>Developers who need to extend the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control might want to override this method in a derived class. One approach would be to call the base method and then add some additional custom handling, or you might want to completely customize the entire process of completing the editing of a control. For example, in the override method, you could call the base method first, and then add some code that determines what editing changes were made, and displays the list of changes back to the end user as a confirmation.</para>
         </block>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.BeginWebPartEditing(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ExportSensitiveDataWarning">
@@ -2457,7 +2457,7 @@
  When a user attempts to export sensitive state data from a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, if any of the data being exported comes from a member that was marked as sensitive in the source code, a warning message is displayed to the user in a message box, telling them that sensitive data is being exported and providing an opportunity to cancel the export. Developers can mark a specific member's data as sensitive by setting the `isSensitive` parameter of the `[Personalizable]` attribute to `true` on the member. For more information about this attribute and parameter, see the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> class.  
   
 > [!IMPORTANT]
->  When you use the export feature of Web Parts, sensitive data could potentially be exported to unauthorized users. For details on how to protect against this threat, see [Securing Web Parts Pages](http://msdn.microsoft.com/library/8ada6210-ed00-4157-b3e9-a7e87e77caa2).  
+>  When you use the export feature of Web Parts, sensitive data could potentially be exported to unauthorized users. For details on how to protect against this threat, see [Securing Web Parts Pages](https://msdn.microsoft.com/library/8ada6210-ed00-4157-b3e9-a7e87e77caa2).  
   
  The default message is displayed whenever users attempt to export. However, by assigning a value to the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ExportSensitiveDataWarning%2A> property, you can provide a custom warning message.  
   
@@ -2485,7 +2485,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.ExportMode" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.ExportWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Xml.XmlWriter)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ExportWebPart">
@@ -2522,7 +2522,7 @@
  To enable `webPart` to be exported, a developer sets its <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property value to either <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode.All> (which includes all personalizable and sensitive properties), or to <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode.NonSensitiveData>, which exports everything except for sensitive properties.  
   
 > [!IMPORTANT]
->  Allowing users to export data from controls, and to import data into other controls, entails some security risks. Developers should use the approach discussed above to protect sensitive data, and if they want to avoid the risk of exposing data altogether, they should not enable export on `webPart` at all. For details on Web Parts security issues, see [Securing Web Parts Pages](http://msdn.microsoft.com/library/8ada6210-ed00-4157-b3e9-a7e87e77caa2).  
+>  Allowing users to export data from controls, and to import data into other controls, entails some security risks. Developers should use the approach discussed above to protect sensitive data, and if they want to avoid the risk of exposing data altogether, they should not enable export on `webPart` at all. For details on Web Parts security issues, see [Securing Web Parts Pages](https://msdn.microsoft.com/library/8ada6210-ed00-4157-b3e9-a7e87e77caa2).  
   
  ]]></format>
         </remarks>
@@ -2540,7 +2540,7 @@
  The <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.ExportMode" /> property of <paramref name="webPart" /> is set to a value of <see cref="F:System.Web.UI.WebControls.WebParts.WebPartExportMode.None" />, which means that export is disabled for <paramref name="webPart" />.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.ExportMode" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.ImportWebPart(System.Xml.XmlReader,System.String@)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8ada6210-ed00-4157-b3e9-a7e87e77caa2">Securing Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8ada6210-ed00-4157-b3e9-a7e87e77caa2">Securing Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -2626,7 +2626,7 @@
   
 -   An explanation of how the example works in a browser.  
   
- The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see the topic [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see the topic [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  The declarative markup for the Web page contains `Register` directives for both the user control and the custom controls. There is an `<asp:webpartmanager>` element, an `<asp:webpartzone>` element to contain the custom controls, and an `<asp:connectionszone>` element. Notice that in the `Page_Load` method, the code checks to see whether a connection already exists and, if not, defines a provider, a consumer, and their respective connection points, and then adds a new connection to the set of static connections referenced by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.StaticConnections%2A> property. Note that the <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection> object that is retrieved by using the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.GetConsumerConnectionPoints%2A> method is then passed to the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.CanConnectWebParts%2A> method to determine whether a connection between the two controls can be created.  
   
@@ -2643,7 +2643,7 @@
           <paramref name="webPart" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetCurrentWebPartManager">
@@ -2702,7 +2702,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="page" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetDisplayTitle">
@@ -2774,12 +2774,12 @@
  The value returned by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.GetExportUrl%2A> method is a relative virtual path to the server location of the page that contains the control, plus the appended query string value that forms the export request submitted to the server. The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.GetExportUrl%2A> method encodes the string before allowing the request to be submitted, to protect against malicious script attacks.  
   
 > [!NOTE]
->  For more information about securing Web Parts applications, see [Securing Web Parts Pages](http://msdn.microsoft.com/library/8ada6210-ed00-4157-b3e9-a7e87e77caa2).  
+>  For more information about securing Web Parts applications, see [Securing Web Parts Pages](https://msdn.microsoft.com/library/8ada6210-ed00-4157-b3e9-a7e87e77caa2).  
   
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.ExportWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Xml.XmlWriter)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetGenericWebPart">
@@ -2825,7 +2825,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="control" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetProviderConnectionPoints">
@@ -2873,7 +2873,7 @@
   
 -   An explanation of how the example works in a browser.  
   
- The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  The declarative markup for the Web page contains `Register` directives for both the user control and the custom controls. There is an `<asp:webpartmanager>` element, an `<asp:webpartzone>` element to contain the custom controls, and an `<asp:connectionszone>` element. Notice that in the `Page_Load` method, the code checks to see whether a connection already exists and, if not, defines a provider, a consumer, and their respective connection points, and then adds a new connection to the set of static connections referenced by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.StaticConnections%2A> property. Note that the <xref:System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection> object that is retrieved by using the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints%2A> method is then passed to the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.CanConnectWebParts%2A> method to determine whether a connection between the two controls can be created.  
   
@@ -2890,7 +2890,7 @@
           <paramref name="webPart" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetConsumerConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ImportWebPart">
@@ -2929,7 +2929,7 @@
  After a user finds a description file and begins the import, the description file is read by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ImportWebPart%2A> method. If there are no errors and if the assembly and control are found, the server control is added to the catalog within the <xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart> control, and the various property and state data specified in the description file are applied to the control. The user can then select the control and add it to the page.  
   
 > [!IMPORTANT]
->  Like the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ExportWebPart%2A> method, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ImportWebPart%2A> method has some potential for security risks. Because it involves importing data into a Web site, a malicious user could try to insert bad data or even script code into the description file that is imported. Then the bad data could appear on a page, or in a database, or the inserted script could run. For an overview of the potential risks associated with importing description files, and ways of avoiding those risks, see [Securing Web Parts Pages](http://msdn.microsoft.com/library/8ada6210-ed00-4157-b3e9-a7e87e77caa2).  
+>  Like the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ExportWebPart%2A> method, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ImportWebPart%2A> method has some potential for security risks. Because it involves importing data into a Web site, a malicious user could try to insert bad data or even script code into the description file that is imported. Then the bad data could appear on a page, or in a database, or the inserted script could run. For an overview of the potential risks associated with importing description files, and ways of avoiding those risks, see [Securing Web Parts Pages](https://msdn.microsoft.com/library/8ada6210-ed00-4157-b3e9-a7e87e77caa2).  
   
  ]]></format>
         </remarks>
@@ -2947,7 +2947,7 @@
  <paramref name="reader" /> reached the end of the file without finding the XML element that contains the exported data.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ImportCatalogPart" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.ExportWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Xml.XmlWriter)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8ada6210-ed00-4157-b3e9-a7e87e77caa2">Securing Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8ada6210-ed00-4157-b3e9-a7e87e77caa2">Securing Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Internals">
@@ -2990,7 +2990,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="IsAuthorized">
@@ -3081,7 +3081,7 @@
   
  This code example uses a custom <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control that overrides the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%28System.Type%2CSystem.String%2CSystem.String%2CSystem.Boolean%29> overload method to provide custom handling of the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property. This control checks for a property value of `admin` and, if the value is present, authorizes the control. If a control has a different value, it is not authorized; controls without the property value are authorized as well, as they are presumed not to be part of the filtering scenario.  
   
- For this code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses the dynamic compile method. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ For this code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses the dynamic compile method. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartManager_IsAuthorized#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_IsAuthorized/CS/MyManagerAuthorize.cs#2)]
  [!code-vb[WebParts_WebPartManager_IsAuthorized#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_IsAuthorized/VB/MyManagerAuthorize.vb#2)]  
@@ -3111,7 +3111,7 @@
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnAuthorizeWebPart(System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IsAuthorized">
@@ -3175,7 +3175,7 @@ else
     return false;  
 ```  
   
- For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses the dynamic compile method. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses the dynamic compile method. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartManager_IsAuthorized#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_IsAuthorized/CS/MyManagerAuthorize.cs#2)]
  [!code-vb[WebParts_WebPartManager_IsAuthorized#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_IsAuthorized/VB/MyManagerAuthorize.vb#2)]  
@@ -3200,7 +3200,7 @@ else
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnAuthorizeWebPart(System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IsCustomPersonalizationStateDirty">
@@ -3243,7 +3243,7 @@ else
         <altmember cref="P:System.Web.UI.WebControls.WebParts.PersonalizationState.IsDirty" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.PersonalizationState.SetDirty" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.System#Web#UI#WebControls#WebParts#IPersonalizable#IsDirty" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -3320,7 +3320,7 @@ else
           <para>Developers can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.LoadCustomPersonalizationState(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" /> method in a derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class.</para>
         </block>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.System#Web#UI#WebControls#WebParts#IPersonalizable#Load(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MediumPermissionSet">
@@ -3435,7 +3435,7 @@ else
   
 -   An explanation of how to run the code example.  
   
- The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For more information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  The second part of the example is a Web page that contains two zones, each of which contains two server controls. When a user clicks the **Move WebPart** button on the page, the code in the `Button1_Click` method moves a control from the first zone to a new position in the second zone. Notice that the code first must call the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.GetGenericWebPart%2A> method to retrieve the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> object that wraps the `list1` control. This is required because the first parameter of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.MoveWebPart%2A> method requires a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, whereas `list1` is an ASP.NET server control.  
   
@@ -3462,7 +3462,7 @@ else
           <paramref name="zoneIndex" /> is less than zero.</exception>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartMoving(System.Web.UI.WebControls.WebParts.WebPartMovingEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartMoved(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnAuthorizeWebPart">
@@ -3560,7 +3560,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart" />
         <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnConnectionsActivated">
@@ -3599,7 +3599,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
           <para>Developers can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnConnectionsActivated(System.EventArgs)" /> method in a derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivated" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnConnectionsActivating">
@@ -3638,7 +3638,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
           <para>Developers can override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnConnectionsActivating(System.EventArgs)" /> method in a derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivating" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnDisplayModeChanged">
@@ -3676,7 +3676,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  When you override the method, you should normally call the base method as the last step of the overridden method, so that your custom code runs first, and the event is raised last, indicating that the mode change is complete.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnDisplayModeChanging">
@@ -3714,7 +3714,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  When you override this method, you should normally call the base method as the first step of the overridden method, so that the event is raised to indicate a display mode is starting to change. Then, your custom code can make changes in the user interface (UI) before the new display mode is actually displayed.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -3749,7 +3749,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
         <exception cref="T:System.InvalidOperationException">There is another <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control on the page</exception>
         <altmember cref="E:System.Web.UI.Control.Init" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -3783,7 +3783,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.Control.PreRender" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnSelectedWebPartChanged">
@@ -3822,7 +3822,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
           <para>There are several options related to the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanged" /> event, to allow developers to customize the rendering that occurs after the selected control has changed. In declarative code, within the <see langword="&lt;asp:webpartmanager&gt;" /> element you could set the <see langword="OnSelectedWebPartChanged" /> attribute, and assign to it the name of a custom method. In the custom method, you could modify the rendering of the selected controls when the event occurs. Another option is to inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class and override the method. A third option is to customize the rendering at the zone level; for example, you can inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> class, and override its <see cref="M:System.Web.UI.WebControls.WebParts.EditorZoneBase.OnSelectedWebPartChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartEventArgs)" /> method, to customize the rendering of controls selected and cleared during the editing process.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanged" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnSelectedWebPartChanging">
@@ -3863,7 +3863,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanged" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnUnload">
@@ -3924,7 +3924,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdded" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnWebPartAdding">
@@ -3965,7 +3965,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdding" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdded" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.AddWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.WebPartZoneBase,System.Int32)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnWebPartClosed">
@@ -4004,7 +4004,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosed" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CloseWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnWebPartClosing">
@@ -4045,7 +4045,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosing" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosed" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CloseWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnWebPartDeleted">
@@ -4081,7 +4081,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartDeleted" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnWebPartDeleting">
@@ -4124,7 +4124,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartDeleting" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartDeleted" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnWebPartMoved">
@@ -4162,7 +4162,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoved" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnWebPartMoving">
@@ -4203,7 +4203,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoved" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.MoveWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.WebPartZoneBase,System.Int32)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnWebPartsConnected">
@@ -4241,7 +4241,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnWebPartsConnecting">
@@ -4282,7 +4282,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected" />
         <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnWebPartsDisconnected">
@@ -4320,7 +4320,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnWebPartsDisconnecting">
@@ -4361,7 +4361,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebParts(System.Web.UI.WebControls.WebParts.WebPartConnection)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Personalization">
@@ -4409,7 +4409,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  Note that the data referenced by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.Personalization%2A> property is only the page-level personalization data that is tracked by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. Control-specific personalization data, such as the values of personalizable properties on <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, is not part of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.Personalization%2A> property.  
   
 > [!NOTE]
->  For more information on Web Parts personalization, see [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+>  For more information on Web Parts personalization, see [Web Parts Personalization Overview](https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
   
    
   
@@ -4441,8 +4441,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RegisterClientScript">
@@ -4559,7 +4559,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
           <para>Developers can override this method in a derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class to customize the process of saving personalization data.</para>
         </block>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.System#Web#UI#WebControls#WebParts#IPersonalizable#Save(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SelectedWebPart">
@@ -4612,7 +4612,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnSelectedWebPartChanging(System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs)" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanged" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanging" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SelectedWebPartChanged">
@@ -4645,7 +4645,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnSelectedWebPartChanged(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SelectedWebPartChanging">
@@ -4679,7 +4679,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnSelectedWebPartChanging(System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SetPersonalizationDirty">
@@ -4715,7 +4715,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
           <para>The method can be called by a derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class. This would be useful if you want to customize the personalization components of the Web Parts control set, and thus need to control the process of setting flags for personalization data.</para>
         </block>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.System#Web#UI#WebControls#WebParts#IPersonalizable#IsDirty" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SetSelectedWebPart">
@@ -4754,7 +4754,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnSelectedWebPartChanged(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnSelectedWebPartChanging(System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs)" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPart" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SkinID">
@@ -4803,7 +4803,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set the property value.</exception>
         <altmember cref="P:System.Web.UI.Control.SkinID" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="StaticConnections">
@@ -4877,7 +4877,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SupportedDisplayModes">
@@ -4939,8 +4939,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4">Web Parts Page Display Modes</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/cc106284-82dc-4770-98cb-673dbc4ed4c4">Web Parts Page Display Modes</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.WebParts.IPersonalizable.IsDirty">
@@ -5010,11 +5010,11 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
 -   An explanation of how the code example works.  
   
- The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is the user control for changing display modes. You can obtain the source code for the user control from the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overview. For information about display modes and how the user control works, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  The second part of the example is the source file with the custom controls and the interface. Notice that the `IZipCode` interface exposes one method, and that this method as implemented in the custom `ZipCodeWebPart` control serves as a callback method to enable `ZipCodeWebPart` to act as a provider in a connection scenario. The other control, `WeatherWebPart`, acts as the consumer control in a connection; it can consume the particular interface provided by `ZipCodeWebPart`. In a real application, `WeatherWebPart` could consume a personalized ZIP Code value from the provider, and then provide graphical weather information to users.  
   
- For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation; therefore, notice that the `Register` directive for this component at the top of the Web page contains only `TagPrefix` and `Namespace` attributes, without an `Assembly` attribute. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation; therefore, notice that the `Register` directive for this component at the top of the Web page contains only `TagPrefix` and `Namespace` attributes, without an `Assembly` attribute. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartManager_IsDirty#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_IsDirty/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartManager_IsDirty#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_IsDirty/VB/ZipCodeComponent.vb#2)]  
@@ -5041,7 +5041,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="T:System.Web.UI.WebControls.WebParts.IPersonalizable" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.PersonalizationState" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.IsCustomPersonalizationStateDirty" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.WebParts.IPersonalizable.Load">
@@ -5088,7 +5088,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
           <para>One scenario in which developers would use this method is if they are developing a custom personalization framework to use in place of the one provided by the Web Parts control set. In such cases, developers could inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class and override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreatePersonalization" /> method to return a custom implementation of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> object. The custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> object would call the implementation of the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.System#Web#UI#WebControls#WebParts#IPersonalizable#Load(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" /> method at the proper time to load custom personalization data.</para>
         </block>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.LoadCustomPersonalizationState(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.WebParts.IPersonalizable.Save">
@@ -5136,7 +5136,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </block>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.SaveCustomPersonalizationState(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.System#Web#UI#WebControls#WebParts#IPersonalizable#IsDirty" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -5250,7 +5250,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartAdded(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdding" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartAdding">
@@ -5284,7 +5284,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartAdding(System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.AddWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.WebPartZoneBase,System.Int32)" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdded" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartClosed">
@@ -5319,7 +5319,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartClosed(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CloseWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartClosing">
@@ -5355,7 +5355,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartClosing(System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs)" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosed" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CloseWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartDeleted">
@@ -5385,7 +5385,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartDeleted(System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartDeleting">
@@ -5419,7 +5419,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartDeleting(System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs)" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartDeleted" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartMoved">
@@ -5484,7 +5484,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartMoving(System.Web.UI.WebControls.WebParts.WebPartMovingEventArgs)" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoved" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.MoveWebPart(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.WebPartZoneBase,System.Int32)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebParts">
@@ -5579,7 +5579,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsConnected(System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartsConnecting">
@@ -5613,7 +5613,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsConnecting(System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs)" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected" />
         <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartsDisconnected">
@@ -5645,7 +5645,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsDisconnected(System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartsDisconnecting">
@@ -5685,7 +5685,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsDisconnecting(System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs)" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebParts(System.Web.UI.WebControls.WebParts.WebPartConnection)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Zones">

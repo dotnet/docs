@@ -43,7 +43,7 @@
   
  A <xref:System.Windows.Controls.GridSplitter> may be obscured by other objects that are contained in the <xref:System.Windows.Controls.Panel.Children%2A> collection of the <xref:System.Windows.Controls.Grid>. For information about how to prevent this situation, see [How to: Make Sure That a GridSplitter Is Visible](~/docs/framework/wpf/controls/how-to-make-sure-that-a-gridsplitter-is-visible.md).  
   
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](https://go.microsoft.com/fwlink/?LinkID=158252).  
   
    
   

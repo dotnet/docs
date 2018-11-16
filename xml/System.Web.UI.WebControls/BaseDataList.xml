@@ -168,7 +168,7 @@
   
  To specify the alignment of the HTML caption element in the control, use the <xref:System.Web.UI.WebControls.BaseDataList.CaptionAlign%2A> property.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  ]]></format>
         </remarks>
@@ -536,7 +536,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.BaseDataList.DataKeyField%2A> property to specify the key field in the data source indicated by the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property. The specified field is used to populate the <xref:System.Web.UI.WebControls.BaseDataList.DataKeys%2A> collection. This allows you to store the key field with a data listing control without displaying it in the control. The key field is commonly used in a handler for an event, such as `ItemCommand` or `DeleteCommand`, as part of an update query string to revise a specific record in the data source. The key field helps the update query string identify the appropriate record to modify.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -591,7 +591,7 @@
   
  The key field is commonly used in a handler for an event, such as `ItemCommand` or `DeleteCommand`, as part of an update query string to revise a specific record in the data source. The key field helps the update query string identify the appropriate record to modify.  
   
- For more information on accessing data with ASP.NET, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
+ For more information on accessing data with ASP.NET, see [ASP.NET Data Access Content Map](https://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
    
   
@@ -673,7 +673,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> property to specify a member from a multimember data source to bind to the list control. For example, if you have a data source with more than one table specified in the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property, use the <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> property to specify which table to bind to a data listing control.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -740,7 +740,7 @@
   
  If values are specified for both the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property and the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property, ASP.NET is not able to resolve the data source and an <xref:System.Web.HttpException?displayProperty=nameWithType> exception is thrown.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -803,7 +803,7 @@
   
  If values are specified for both the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property and the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property, ASP.NET is not able to resolve the data source and an <xref:System.Web.HttpException?displayProperty=nameWithType> exception is thrown.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
@@ -925,7 +925,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.GridLines" />
-        <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Server Controls and Browser Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Server Controls and Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">

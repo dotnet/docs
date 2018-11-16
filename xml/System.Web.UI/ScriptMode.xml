@@ -30,7 +30,7 @@
  An error is thrown if the requested version of the script does not exist. For instance, an error is thrown if a reference is made to a standalone script file that is named CustomScript.js and the <xref:System.Web.UI.ScriptManager.ScriptMode%2A?displayProperty=nameWithType> property is set to <xref:System.Web.UI.ScriptMode.Debug?displayProperty=nameWithType>, but CustomScript.debug.js does not exist on the site. References to scripts in an assembly return the release version if the debug version does not exist.  
   
 > [!NOTE]
->  When the `retail` attribute of the [deployment](http://msdn.microsoft.com/library/dbcc2c62-3159-4a62-9f1e-8cfe3b8b09dc) element of the Machine.config file is set to `true`, the release versions of client scripts are used throughout the Web site. The <xref:System.Web.UI.ScriptMode> values in the <xref:System.Web.UI.ScriptManager.ScriptMode%2A?displayProperty=nameWithType> and [ScriptReference.ScriptMode](<xref:System.Web.UI.ScriptReferenceBase.ScriptMode%2A>) properties are ignored.  
+>  When the `retail` attribute of the [deployment](https://msdn.microsoft.com/library/dbcc2c62-3159-4a62-9f1e-8cfe3b8b09dc) element of the Machine.config file is set to `true`, the release versions of client scripts are used throughout the Web site. The <xref:System.Web.UI.ScriptMode> values in the <xref:System.Web.UI.ScriptManager.ScriptMode%2A?displayProperty=nameWithType> and [ScriptReference.ScriptMode](<xref:System.Web.UI.ScriptReferenceBase.ScriptMode%2A>) properties are ignored.  
   
    
   
@@ -62,7 +62,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>In the <see cref="T:System.Web.UI.ScriptManager" /> control, the version of client scripts to use is determined at run time based on the application-level [&lt;compilation&gt;](http://msdn.microsoft.com/library/7c319582-074a-4d2a-a787-03b9d4541c12) element of the Web.config file, unless it is overridden in an instance of the <see cref="T:System.Web.UI.ScriptReference" /> control. In the <see cref="T:System.Web.UI.ScriptReference" /> control, when applied to a standalone script file, <see cref="F:System.Web.UI.ScriptMode.Auto" /> is equivalent to <see cref="F:System.Web.UI.ScriptMode.Release" />. When applied to a script reference in an assembly, <see cref="F:System.Web.UI.ScriptMode.Auto" /> is equivalent to <see cref="F:System.Web.UI.ScriptMode.Inherit" />.</summary>
+        <summary>In the <see cref="T:System.Web.UI.ScriptManager" /> control, the version of client scripts to use is determined at run time based on the application-level [&lt;compilation&gt;](https://msdn.microsoft.com/library/7c319582-074a-4d2a-a787-03b9d4541c12) element of the Web.config file, unless it is overridden in an instance of the <see cref="T:System.Web.UI.ScriptReference" /> control. In the <see cref="T:System.Web.UI.ScriptReference" /> control, when applied to a standalone script file, <see cref="F:System.Web.UI.ScriptMode.Auto" /> is equivalent to <see cref="F:System.Web.UI.ScriptMode.Release" />. When applied to a script reference in an assembly, <see cref="F:System.Web.UI.ScriptMode.Auto" /> is equivalent to <see cref="F:System.Web.UI.ScriptMode.Inherit" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Debug">

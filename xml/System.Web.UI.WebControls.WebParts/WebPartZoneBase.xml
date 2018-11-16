@@ -58,7 +58,7 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class. The code shows how a derived class, <xref:System.Web.UI.WebControls.WebParts.WebPartZone>, is used declaratively in a Web Parts page to contain <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. The code example has four sections: the first three sections describe the code files, and the fourth explains how to run the code.  
   
- The first part of the code example is a user control that enables users to switch the page into different display modes. For more information on Web Parts display modes and a description of the code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is a user control that enables users to switch the page into different display modes. For more information on Web Parts display modes and a description of the code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#10](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/displaymodemenucs.ascx#10)]
  [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/displaymodemenuvb.ascx#10)]  
@@ -79,7 +79,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.ToolZone" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -103,7 +103,7 @@
       <Docs>
         <summary>Initializes the class for use by an inherited class instance. This constructor can only be called by an inherited class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AllowLayoutChange">
@@ -152,7 +152,7 @@
   
  Although the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.AllowLayoutChange%2A> property affects end users' ability to change the layout of a zone through the UI, it does not affect the ability to change the layout programmatically. For example, if <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.AllowLayoutChange%2A> is set to `false`, users cannot close controls in the zone, but a developer could still call the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseWebPart%2A> method to close controls programmatically.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -167,7 +167,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowZoneChange" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -214,7 +214,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -262,7 +262,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.BorderStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="BorderWidth">
@@ -309,7 +309,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CloseVerb">
@@ -382,7 +382,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DeleteVerb" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CloseWebPart">
@@ -425,7 +425,7 @@
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowClose" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Hidden" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseVerb" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectVerb">
@@ -465,7 +465,7 @@
         <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> object that enables end users to create connections between <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> that creates a connection between two <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectWebPart">
@@ -499,7 +499,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -530,7 +530,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Control.CreateChildControls" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -555,7 +555,7 @@
         <returns>A <see cref="T:System.Web.UI.ControlCollection" /> that contains references to the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls in a zone.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.ControlCollection" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -589,7 +589,7 @@
         <block subset="none" type="overrides">
           <para>If you override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateControlStyle" /> method to set some specific properties on the created style, do not use the <see cref="M:System.Web.UI.WebControls.Style.#ctor(System.Web.UI.StateBag)" /> version of the constructor, which requires you to pass the control's <see cref="T:System.Web.UI.StateBag" /> object in as a parameter, resulting in the created <see cref="T:System.Web.UI.WebControls.Style" /> object sharing the <see cref="T:System.Web.UI.StateBag" /> with the zone control. This causes rendering problems. Instead, use the <see cref="M:System.Web.UI.WebControls.Style.#ctor" /> version of the constructor, so the <see cref="T:System.Web.UI.WebControls.Style" /> object is independent of the control.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateVerbs">
@@ -623,7 +623,7 @@
 ## Examples  
  The following code example demonstrates a way to create a handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateVerbs> event by overriding the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs%2A> method to add a custom verb to a derived <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone.  
   
- The code example contains two source files. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The code example contains two source files. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  The first part of the code example is the source code for a simple control derived from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class.  
   
@@ -643,7 +643,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbsEventHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateWebPartChrome">
@@ -680,7 +680,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartChrome" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteVerb">
@@ -747,7 +747,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteWebPart">
@@ -783,7 +783,7 @@
           <paramref name="webPart" /> is <see langword="null" />.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DeleteVerb" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayTitle">
@@ -835,7 +835,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HeaderText" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DragDropEnabled">
@@ -867,7 +867,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.AllowLayoutChange" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DragHighlightColor">
@@ -917,7 +917,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="EditVerb">
@@ -974,7 +974,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="EditWebPart">
@@ -1010,7 +1010,7 @@
           <paramref name="webPart" /> is <see langword="null" />.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EditVerb" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.BeginWebPartEditing(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="EmptyZoneText">
@@ -1045,7 +1045,7 @@
 ## Examples  
  The following code example demonstrates the declarative use of the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EmptyZoneText%2A> property on a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control. For the full code example, including the code-behind source file and the .aspx page that contains the zone in this code, see the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class overview.  
   
- Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EmptyZoneText%2A> property has a value assigned to it in the declarative markup. This value will appear in `WebPartZone2`, after you load the page into a browser, switch the page into design display mode, and drag the control that displays the date from `WebPartZone2` into `WebPartZone1`. For more information on changing display modes in a Web Parts page, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EmptyZoneText%2A> property has a value assigned to it in the declarative markup. This value will appear in `WebPartZone2`, after you load the page into a browser, switch the page into design display mode, and drag the control that displays the date from `WebPartZone2` into `WebPartZone1`. For more information on changing display modes in a Web Parts page, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]
  [!code-aspx-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  
@@ -1053,7 +1053,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.EmptyZoneText" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ExportVerb">
@@ -1125,7 +1125,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.ExportMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetEffectiveChromeType">
@@ -1189,7 +1189,7 @@
         </block>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebParts" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZone.GetInitialWebParts" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="HasFooter">
@@ -1221,7 +1221,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HasFooter" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="HasHeader">
@@ -1255,7 +1255,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.HasHeader" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="HelpVerb">
@@ -1307,7 +1307,7 @@
   
  For the code example to work, in addition to the following code, you need a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control. You can either use your own control, or use the code for the custom `TextDisplayWebPart` control found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
   
- This code example includes a user control to enable you to change display modes on a Web page. For more information about display modes and the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ This code example includes a user control to enable you to change display modes on a Web page. For more information about display modes and the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_WebPartZoneBase_Verbs#10](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/displaymodemenucs.ascx#10)]
  [!code-aspx-vb[WebParts_WebPartZoneBase_Verbs#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/displaymodemenuvb.ascx#10)]  
@@ -1353,8 +1353,8 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0">Walkthrough: Changing Display Modes on a Web Parts Page</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0">Walkthrough: Changing Display Modes on a Web Parts Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="LayoutOrientation">
@@ -1387,7 +1387,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation%2A> property concerns how Web Parts controls are laid out in a zone. With the default <xref:System.Web.UI.WebControls.Orientation.Vertical> orientation, the controls are rendered in a top-to-bottom arrangement, according to the <xref:System.Web.UI.WebControls.WebParts.WebPart.ZoneIndex%2A> value of each control. With a <xref:System.Web.UI.WebControls.Orientation.Horizontal> orientation, the controls are arranged side by side, subject to the width of the zone.  
   
- Internet Explorer can affect the height of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, and the height of the zone that contains it. Internet Explorer renders web pages either in compatibility mode (backward compatible with previous browser versions), or in standards mode (determined by the presence of a `DOCTYPE` declaration in the page). For information about these modes, see the DHTML [compatMode](http://go.microsoft.com/fwlink/?LinkId=57175) property. When Internet Explorer renders a page in standards mode, in some scenarios it does not resize cells in tables, even when a cell's HTML markup is `<td height="100%">`. As a result, <xref:System.Web.UI.WebControls.WebParts.WebPart> controls and their containing zone are rendered so that the controls do not stretch to the full height of the zone.  
+ Internet Explorer can affect the height of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, and the height of the zone that contains it. Internet Explorer renders web pages either in compatibility mode (backward compatible with previous browser versions), or in standards mode (determined by the presence of a `DOCTYPE` declaration in the page). For information about these modes, see the DHTML [compatMode](https://go.microsoft.com/fwlink/?LinkId=57175) property. When Internet Explorer renders a page in standards mode, in some scenarios it does not resize cells in tables, even when a cell's HTML markup is `<td height="100%">`. As a result, <xref:System.Web.UI.WebControls.WebParts.WebPart> controls and their containing zone are rendered so that the controls do not stretch to the full height of the zone.  
   
  This type of rendering occurs in two cases.  
   
@@ -1417,7 +1417,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not one of the enumerated <see cref="T:System.Web.UI.WebControls.Orientation" /> values.</exception>
         <altmember cref="T:System.Web.UI.WebControls.Orientation" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Height" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1454,7 +1454,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The size of the <paramref name="savedState" /> object does not equal the size of the current view-state object.</exception>
         <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MenuCheckImageStyle">
@@ -1509,7 +1509,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartVerb.Checked" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuCheckImageUrl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MenuCheckImageUrl">
@@ -1547,7 +1547,7 @@
         <value>A string that represents the URL to an image used as a check mark. The default value is an empty string ("").</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuCheckImageUrl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MenuLabelHoverStyle">
@@ -1605,7 +1605,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MenuLabelStyle">
@@ -1663,7 +1663,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelText" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MenuLabelText">
@@ -1699,7 +1699,7 @@
 ## Remarks  
  If the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelText%2A> property is assigned a value, the label appears alongside an image that represents the verbs drop-down menu in the title bar of each <xref:System.Web.UI.WebControls.WebParts.WebPart> control in a zone. If no value is assigned to the property, only the image appears on the menu.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -1714,7 +1714,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MenuPopupImageUrl">
@@ -1769,7 +1769,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MenuPopupStyle">
@@ -1822,7 +1822,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MenuVerbHoverStyle">
@@ -1894,7 +1894,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelHoverStyle" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuVerbStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MenuVerbStyle">
@@ -1954,7 +1954,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.VerbStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MinimizeVerb">
@@ -2021,7 +2021,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RestoreVerb" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MinimizeWebPart">
@@ -2060,7 +2060,7 @@
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MinimizeVerb" />
         <altmember cref="F:System.Web.UI.WebControls.WebParts.PartChromeState.Minimized" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowMinimize" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnCreateVerbs">
@@ -2096,7 +2096,7 @@
 ## Examples  
  The following code example demonstrates a way to create a handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateVerbs> event by overriding the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs%2A> method to add a custom verb to a derived <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone.  
   
- The code example contains two source files. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The code example contains two source files. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  The first part of the code example is the source code for a simple control derived from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class.  
   
@@ -2116,7 +2116,7 @@
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateVerbs" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -2150,7 +2150,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -2180,7 +2180,7 @@
         <summary>Updates the status of the current collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls in a zone, based on the changes that have occurred since the most recent postback event.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -2214,7 +2214,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebControl.Render(System.Web.UI.HtmlTextWriter)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RenderBody">
@@ -2250,7 +2250,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.RenderBody(System.Web.UI.HtmlTextWriter)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RenderDropCue">
@@ -2283,7 +2283,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RenderHeader">
@@ -2318,7 +2318,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.RenderHeader(System.Web.UI.HtmlTextWriter)" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderHeader(System.Web.UI.HtmlTextWriter)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RestoreVerb">
@@ -2385,7 +2385,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MinimizeVerb" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RestoreWebPart">
@@ -2424,7 +2424,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RestoreVerb" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -2457,7 +2457,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.SaveViewState" />
         <altmember cref="M:System.Web.UI.Control.SaveViewState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SelectedPartChromeStyle">
@@ -2514,7 +2514,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ShowTitleIcons">
@@ -2551,7 +2551,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.TitleIconImageUrl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -2591,7 +2591,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="TitleBarVerbButtonType">
@@ -2629,7 +2629,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value for the property is not one of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values.</exception>
         <altmember cref="T:System.Web.UI.WebControls.ButtonType" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="TitleBarVerbStyle">
@@ -2680,7 +2680,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.Style" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -2712,7 +2712,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebZone.TrackViewState" />
         <altmember cref="P:System.Web.UI.Control.ViewState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="VerbButtonType">
@@ -2758,12 +2758,12 @@
   
  You must assign a value to the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.ImageUrl%2A> property for each specific verb to cause an image to appear for that verb in its zone. If you do not provide the URL to an image, the verb's <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.VerbButtonType%2A> property defaults to <xref:System.Web.UI.WebControls.ButtonType.Link>.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ButtonType" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartChrome">
@@ -2798,7 +2798,7 @@
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartChrome" /> that determines rendering for controls in the zone.</value>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateWebPartChrome" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebParts">
@@ -2850,7 +2850,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.WebParts" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartVerbRenderMode">
@@ -2888,7 +2888,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value for the property is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode" /> values.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.TitleBarVerbButtonType" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

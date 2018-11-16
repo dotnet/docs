@@ -48,7 +48,7 @@
  The following example shows how you can add regular expression properties, such as the <xref:System.Web.UI.MobileControls.RegularExpressionValidator.ValidationExpression%2A> and <xref:System.Web.UI.MobileControls.TextControl.Text%2A> properties, programmatically during a page load.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[MobileRegExprValidatorSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileRegExprValidatorSample/cs/Default.aspx#1)]
  [!code-aspx-vb[MobileRegExprValidatorSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileRegExprValidatorSample/vb/Default.aspx#1)]  

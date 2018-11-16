@@ -51,7 +51,7 @@
   
  For a complete description of strong names, see the <xref:System.Security.Policy.StrongName> reference page. For more information about strong-named assemblies, see [Strong-Named Assemblies](~/docs/framework/app-domains/strong-named-assemblies.md).  
   
- The <xref:System.Security.Permissions.StrongNameIdentityPermission> class is used to define strong-name requirements for accessing the public members of a type. The <xref:System.Security.Permissions.StrongNameIdentityPermissionAttribute> attribute can be used to define strong-name requirements at the assembly level. In the .NET Framework version 2.0 and later, you can also use the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to specify that all nonpublic types in that assembly are visible to another assembly. For more information, see [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055).  
+ The <xref:System.Security.Permissions.StrongNameIdentityPermission> class is used to define strong-name requirements for accessing the public members of a type. The <xref:System.Security.Permissions.StrongNameIdentityPermissionAttribute> attribute can be used to define strong-name requirements at the assembly level. In the .NET Framework version 2.0 and later, you can also use the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to specify that all nonpublic types in that assembly are visible to another assembly. For more information, see [Friend Assemblies](https://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055).  
   
  ]]></format>
     </remarks>
@@ -59,8 +59,8 @@
     <altmember cref="T:System.Security.Permissions.StrongNamePublicKeyBlob" />
     <altmember cref="T:System.Security.Policy.StrongName" />
     <altmember cref="T:System.Security.Policy.StrongNameMembershipCondition" />
-    <related type="Article" href="http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b">Strong-Named Assemblies</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd">Friend Assemblies</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b">Strong-Named Assemblies</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd">Friend Assemblies</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

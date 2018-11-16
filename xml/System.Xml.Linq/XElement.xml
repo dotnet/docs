@@ -64,11 +64,11 @@
   
 -   <xref:System.Xml.Linq.XText>  
   
- For details about the valid content of an <xref:System.Xml.Linq.XElement>, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content of an <xref:System.Xml.Linq.XElement>, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
  <xref:System.Xml.Linq.XElement> derives from <xref:System.Xml.Linq.XContainer>, which derives from <xref:System.Xml.Linq.XNode>.  
   
- Some <xref:System.Xml.Linq.XElement> methods can be used from XAML. For more information, see [LINQ to XML Dynamic Properties](http://msdn.microsoft.com/library/0455f47c-4a68-4f2e-a3f8-dd1d85b99012).  
+ Some <xref:System.Xml.Linq.XElement> methods can be used from XAML. For more information, see [LINQ to XML Dynamic Properties](https://msdn.microsoft.com/library/0455f47c-4a68-4f2e-a3f8-dd1d85b99012).  
   
    
   
@@ -124,7 +124,7 @@ Console.WriteLine(xmlTree2)
 </Root>  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
@@ -184,8 +184,8 @@ End Module
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/0455f47c-4a68-4f2e-a3f8-dd1d85b99012">LINQ to XML Dynamic Properties</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/0455f47c-4a68-4f2e-a3f8-dd1d85b99012">LINQ to XML Dynamic Properties</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -200,11 +200,11 @@ End Module
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
  There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
   
- When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
    
   
@@ -262,7 +262,7 @@ Console.WriteLine(xmlTree2)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -352,7 +352,7 @@ xmlTree = treeClone: False
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -392,7 +392,7 @@ xmlTree = treeClone: False
 ## Remarks  
  This constructor creates an element with no content and no attributes.  
   
- There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>. When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>. When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
    
   
@@ -415,7 +415,7 @@ Console.WriteLine(el)
 <Root />  
 ```  
   
- The following example creates an element in a namespace with no content. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ The following example creates an element in a namespace with no content. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```  
 
@@ -443,7 +443,7 @@ End Module
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -540,7 +540,7 @@ Console.WriteLine(xse)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -584,9 +584,9 @@ Console.WriteLine(xse)
   
  There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
   
- When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
- For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
    
   
@@ -850,7 +850,7 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -905,9 +905,9 @@ Console.WriteLine(root)
   
  There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
   
- When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
- For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
    
   
@@ -1168,7 +1168,7 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AncestorsAndSelf">
@@ -1190,7 +1190,7 @@ Console.WriteLine(root)
  ]]></format>
         </remarks>
         <altmember cref="M:System.Xml.Linq.XNode.Ancestors" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AncestorsAndSelf">
@@ -1282,7 +1282,7 @@ Root
  ]]></format>
         </remarks>
         <altmember cref="M:System.Xml.Linq.XNode.Ancestors" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="AncestorsAndSelf">
@@ -1369,7 +1369,7 @@ Child
  ]]></format>
         </remarks>
         <altmember cref="M:System.Xml.Linq.XNode.Ancestors" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Attribute">
@@ -1441,7 +1441,7 @@ Console.WriteLine(att)
 Att="attribute content"  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
@@ -1474,7 +1474,7 @@ aw:Att="attribute content"
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Attributes">
@@ -1493,7 +1493,7 @@ aw:Att="attribute content"
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Attributes">
@@ -1577,7 +1577,7 @@ Att1="content1"
 Att2="content2"  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
@@ -1622,7 +1622,7 @@ xmlns:aw="http://www.adventure-works.com"
  ]]></format>
         </remarks>
         <altmember cref="M:System.Xml.Linq.XContainer.Elements" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -1699,7 +1699,7 @@ Next
 Att1="content1"  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
@@ -1737,7 +1737,7 @@ aw:Att1="content1"
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="DescendantNodesAndSelf">
@@ -1836,7 +1836,7 @@ element content
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="DescendantsAndSelf">
@@ -1855,7 +1855,7 @@ element content
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="DescendantsAndSelf">
@@ -1943,7 +1943,7 @@ GrandChild
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="DescendantsAndSelf">
@@ -2028,7 +2028,7 @@ Child
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="EmptySequence">
@@ -2070,7 +2070,7 @@ Child
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="FirstAttribute">
@@ -2137,7 +2137,7 @@ Att1="1"
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="GetDefaultNamespace">
@@ -2214,7 +2214,7 @@ Default namespace: http://www.adventure-works.com
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="GetNamespaceOfPrefix">
@@ -2291,7 +2291,7 @@ Namespace: http://www.adventure-works.com
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="GetPrefixOfNamespace">
@@ -2368,7 +2368,7 @@ Prefix: aw
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="HasAttributes">
@@ -2435,7 +2435,7 @@ False
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="HasElements">
@@ -2505,7 +2505,7 @@ False
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -2605,7 +2605,7 @@ True
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="LastAttribute">
@@ -2677,7 +2677,7 @@ Att3="3"
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Load">
@@ -2700,7 +2700,7 @@ Att3="3"
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XElement.Parse" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Load">
@@ -2835,7 +2835,7 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2922,7 +2922,7 @@ Root
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XElement.Parse" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -3028,7 +3028,7 @@ End Using
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -3128,7 +3128,7 @@ End Using
   
  If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](https://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
  Use <xref:System.Xml.Linq.XElement.Parse%2A> to create an <xref:System.Xml.Linq.XElement> from a string that contains XML.  
   
@@ -3267,7 +3267,7 @@ Root                1    2
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -3317,7 +3317,7 @@ Root                1    2
   
  If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](https://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
  Use <xref:System.Xml.Linq.XElement.Parse%2A> to create an <xref:System.Xml.Linq.XElement> from a string that contains XML.  
   
@@ -3390,7 +3390,7 @@ Count of white space nodes (preserving whitespace): 3
   
  The following example loads the base URI and line information as it loads the file. It then prints the base URI and the line information.  
   
- This example uses the following resource file: [Sample XML File: Typical Purchase Order (LINQ to XML)](http://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348).  
+ This example uses the following resource file: [Sample XML File: Typical Purchase Order (LINQ to XML)](https://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348).  
   
 ```csharp  
 XElement po = XElement.Load("PurchaseOrder.xml",  
@@ -3472,7 +3472,7 @@ PurchaseOrder       2    2
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -3614,7 +3614,7 @@ Root                1    2
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="LoadAsync">
@@ -3813,7 +3813,7 @@ Root
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="NodeType">
@@ -3878,7 +3878,7 @@ Element
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3964,7 +3964,7 @@ Console.WriteLine("(bool)BoolValue2={0}", bool2)
         </remarks>
         <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Boolean" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4070,7 +4070,7 @@ orderDate=10/6/2006
         </remarks>
         <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.DateTime" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4156,7 +4156,7 @@ dt=10/6/2006 12:30:00 PM -07:00
         </remarks>
         <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.DateTimeOffset" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4228,7 +4228,7 @@ value=79228162514264337593543950335
         </remarks>
         <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Decimal" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4298,7 +4298,7 @@ value=1.79769313486231E+308
         </remarks>
         <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Double" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4369,7 +4369,7 @@ value=3c1cc55b-baff-4b7a-9d17-077af3aa5730
         </remarks>
         <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Guid" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4440,7 +4440,7 @@ value=2147483647
         </remarks>
         <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Int32" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4511,7 +4511,7 @@ value=9223372036854775807
         </remarks>
         <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Int64" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4596,7 +4596,7 @@ Nullable Boolean: value2=False
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The element is not <see langword="null" /> and does not contain a valid <see cref="T:System.Boolean" /> value.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4678,7 +4678,7 @@ Nullable DateTime: value=10/6/2006 12:30:00 PM
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The element is not <see langword="null" /> and does not contain a valid <see cref="T:System.DateTime" /> value.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4763,7 +4763,7 @@ dt=10/6/2006 12:30:00 PM -07:00
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The element is not <see langword="null" /> and does not contain a valid <see cref="T:System.DateTimeOffset" /> value.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4838,7 +4838,7 @@ Nullable decimal: value=79228162514264337593543950335
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The element is not <see langword="null" /> and does not contain a valid <see cref="T:System.Decimal" /> value.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4914,7 +4914,7 @@ Nullable double: value=1.79769313486231E+308
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The element is not <see langword="null" /> and does not contain a valid <see cref="T:System.Double" /> value.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -4989,7 +4989,7 @@ Nullable Guid: value=3c1cc55b-baff-4b7a-9d17-077af3aa5730
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The element is not <see langword="null" /> and does not contain a valid <see cref="T:System.Guid" /> value.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -5065,7 +5065,7 @@ Nullable integer: value=2147483647
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The element is not <see langword="null" /> and does not contain a valid <see cref="T:System.Int32" /> value.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -5140,7 +5140,7 @@ Nullable ulong: value=9223372036854775807
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The element is not <see langword="null" /> and does not contain a valid <see cref="T:System.Int64" /> value.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -5215,7 +5215,7 @@ Nullable Single: value=3.402823E+38
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The element is not <see langword="null" /> and does not contain a valid <see cref="T:System.Single" /> value.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -5295,7 +5295,7 @@ Nullable TimeSpan: value=01:05:30
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The element is not <see langword="null" /> and does not contain a valid <see cref="T:System.TimeSpan" /> value.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -5370,7 +5370,7 @@ Nullable uint: value=4294967295
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The element is not <see langword="null" /> and does not contain a valid <see cref="T:System.UInt32" /> value.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -5446,7 +5446,7 @@ Nullable ulong: value=9223372036854775807
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The element is not <see langword="null" /> and does not contain a valid <see cref="T:System.UInt64" /> value.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -5517,7 +5517,7 @@ value=3.402823E+38
         </remarks>
         <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.Single" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -5587,7 +5587,7 @@ Console.WriteLine("(string)root={0}", root.Value)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -5663,7 +5663,7 @@ value=01:05:30
         </remarks>
         <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.TimeSpan" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -5734,7 +5734,7 @@ value=4294967295
         </remarks>
         <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.UInt32" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -5805,7 +5805,7 @@ value=18446744073709551615
         </remarks>
         <exception cref="T:System.FormatException">The element does not contain a valid <see cref="T:System.UInt64" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Parse">
@@ -5817,7 +5817,7 @@ value=18446744073709551615
       </AssemblyInfo>
       <Docs>
         <summary>Load an <see cref="T:System.Xml.Linq.XElement" /> from a string that contains XML, optionally preserving white space and retaining line information.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Parse">
@@ -5864,7 +5864,7 @@ value=18446744073709551615
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method does not preserve white space. If you want to preserve white space in the XML tree, use the overload of the <xref:System.Xml.Linq.XElement.Parse%2A> method that takes <xref:System.Xml.Linq.LoadOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ This method does not preserve white space. If you want to preserve white space in the XML tree, use the overload of the <xref:System.Xml.Linq.XElement.Parse%2A> method that takes <xref:System.Xml.Linq.LoadOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](https://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
  LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
@@ -5893,7 +5893,7 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -5943,7 +5943,7 @@ Console.WriteLine(xmlTree)
   
  If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](https://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
  Setting <xref:System.Xml.Linq.LoadOptions.SetBaseUri> will have no effect when parsing from a <xref:System.String>.  
   
@@ -6074,7 +6074,7 @@ Root                1    2
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAll">
@@ -6154,7 +6154,7 @@ Console.WriteLine(root)
         </remarks>
         <altmember cref="M:System.Xml.Linq.XElement.RemoveAttributes" />
         <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAttributes">
@@ -6238,7 +6238,7 @@ Console.WriteLine(root)
         </remarks>
         <altmember cref="M:System.Xml.Linq.XElement.RemoveAttributes" />
         <altmember cref="M:System.Xml.Linq.XElement.RemoveAll" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReplaceAll">
@@ -6255,7 +6255,7 @@ Console.WriteLine(root)
 ## Remarks  
  This method uses snapshot semantics—that is, it creates a separate copy of the new content before replacing the contents of the current element with the new content. This means that you can query the contents of the current element and use the results of the query as the specified new content.  
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -6327,7 +6327,7 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ReplaceAll">
@@ -6372,7 +6372,7 @@ Console.WriteLine(xmlTree)
   
  This method uses snapshot semantics—that is, it creates a separate copy of the new content before replacing the contents of the current element with the new content. This means that you can query the contents of the current element and use the results of the query as the specified new content.  
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -6517,7 +6517,7 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="ReplaceAll">
@@ -6573,7 +6573,7 @@ Console.WriteLine(root)
   
  This method uses snapshot semantics—that is, it creates a separate copy of the new content before replacing the contents of the current element with the new content. This means that you can query the contents of the current element and use the results of the query as the specified new content.  
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -6640,7 +6640,7 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReplaceAttributes">
@@ -6657,7 +6657,7 @@ Console.WriteLine(root)
 ## Remarks  
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
    
   
@@ -6690,7 +6690,7 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ReplaceAttributes">
@@ -6733,7 +6733,7 @@ Console.WriteLine(root)
 ## Remarks  
  This method first removes existing attributes. It then adds the specified `content`.  
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -6768,7 +6768,7 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="ReplaceAttributes">
@@ -6822,7 +6822,7 @@ Console.WriteLine(root)
 ## Remarks  
  This method first removes existing attributes. It then adds the specified `content`.  
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -6862,7 +6862,7 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Save">
@@ -6874,7 +6874,7 @@ Console.WriteLine(root)
       </AssemblyInfo>
       <Docs>
         <summary>Serialize this element's underlying XML tree. The output can be saved to a file, an <see cref="T:System.Xml.XmlTextWriter" />, a <see cref="T:System.IO.TextWriter" />, or an <see cref="T:System.Xml.XmlWriter" />. Optionally, formatting (indenting) can be disabled.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Save">
@@ -6962,7 +6962,7 @@ Console.WriteLine(root)
 ## Remarks  
  The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that white space will not be preserved.  
   
- If you want to control white space, use the overload of <xref:System.Xml.Linq.XElement.Save%2A> that allows you to specify <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ If you want to control white space, use the overload of <xref:System.Xml.Linq.XElement.Save%2A> that allows you to specify <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](https://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
    
   
@@ -6996,7 +6996,7 @@ End Using
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -7037,7 +7037,7 @@ End Using
 ## Remarks  
  The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space nodes in the XML tree will not be preserved.  
   
- If you want to control white space, use the overload of <xref:System.Xml.Linq.XElement.Save%2A> that allows you to specify <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ If you want to control white space, use the overload of <xref:System.Xml.Linq.XElement.Save%2A> that allows you to specify <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](https://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
    
   
@@ -7074,7 +7074,7 @@ Console.WriteLine(Str)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -7151,7 +7151,7 @@ Console.WriteLine(sb.ToString())
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -7245,7 +7245,7 @@ Console.WriteLine(sb.ToString())
   
  If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](https://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
    
   
@@ -7299,7 +7299,7 @@ End Using
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -7344,7 +7344,7 @@ End Using
   
  If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](https://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
    
   
@@ -7394,7 +7394,7 @@ Console.WriteLine(str)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="SaveAsync">
@@ -7546,7 +7546,7 @@ Console.WriteLine(str)
   
  The value is assigned to the attribute with the specified name. If no attribute with the specified name exists, a new attribute is added. If the value is `null`, the attribute with the specified name, if any, is deleted.  
   
- For more information, see [Maintaining Name/Value Pairs](http://msdn.microsoft.com/library/fe9798bf-b5e2-4a3c-a86c-7f8638912691).  
+ For more information, see [Maintaining Name/Value Pairs](https://msdn.microsoft.com/library/fe9798bf-b5e2-4a3c-a86c-7f8638912691).  
   
    
   
@@ -7605,8 +7605,8 @@ Console.WriteLine(root)
         <altmember cref="M:System.Xml.Linq.XAttribute.SetValue(System.Object)" />
         <altmember cref="M:System.Xml.Linq.XElement.SetElementValue(System.Xml.Linq.XName,System.Object)" />
         <altmember cref="M:System.Xml.Linq.XElement.SetValue(System.Object)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/fe9798bf-b5e2-4a3c-a86c-7f8638912691">Maintaining Name/Value Pairs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fe9798bf-b5e2-4a3c-a86c-7f8638912691">Maintaining Name/Value Pairs</related>
       </Docs>
     </Member>
     <Member MemberName="SetElementValue">
@@ -7657,7 +7657,7 @@ Console.WriteLine(root)
   
  This method does not add child nodes or attributes to the specified child element. This method throws an exception if any object that derives from <xref:System.Xml.Linq.XObject> is passed as `value`.  
   
- For more information, see [Maintaining Name/Value Pairs](http://msdn.microsoft.com/library/fe9798bf-b5e2-4a3c-a86c-7f8638912691).  
+ For more information, see [Maintaining Name/Value Pairs](https://msdn.microsoft.com/library/fe9798bf-b5e2-4a3c-a86c-7f8638912691).  
   
    
   
@@ -7727,8 +7727,8 @@ Console.WriteLine(root)
         <altmember cref="M:System.Xml.Linq.XAttribute.SetValue(System.Object)" />
         <altmember cref="M:System.Xml.Linq.XElement.SetElementValue(System.Xml.Linq.XName,System.Object)" />
         <altmember cref="M:System.Xml.Linq.XElement.SetValue(System.Object)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/fe9798bf-b5e2-4a3c-a86c-7f8638912691">Maintaining Name/Value Pairs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fe9798bf-b5e2-4a3c-a86c-7f8638912691">Maintaining Name/Value Pairs</related>
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -7809,7 +7809,7 @@ Console.WriteLine(root)
         <altmember cref="M:System.Xml.Linq.XAttribute.SetValue(System.Object)" />
         <altmember cref="M:System.Xml.Linq.XElement.SetAttributeValue(System.Xml.Linq.XName,System.Object)" />
         <altmember cref="M:System.Xml.Linq.XElement.SetValue(System.Object)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.Serialization.IXmlSerializable.GetSchema">
@@ -7851,7 +7851,7 @@ Console.WriteLine(root)
 ## Remarks  
  This method is part of implementation of the <xref:System.Xml.Serialization.IXmlSerializable> interface.  
   
- This method is used internally for serializing object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](http://msdn.microsoft.com/library/443d7904-a6f0-450a-b1a4-5d7ed869d1d5).  
+ This method is used internally for serializing object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](https://msdn.microsoft.com/library/443d7904-a6f0-450a-b1a4-5d7ed869d1d5).  
   
  ]]></format>
         </remarks>
@@ -7898,7 +7898,7 @@ Console.WriteLine(root)
 ## Remarks  
  This method is part of implementation of the <xref:System.Xml.Serialization.IXmlSerializable> interface.  
   
- This method is used internally for serializing object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](http://msdn.microsoft.com/library/443d7904-a6f0-450a-b1a4-5d7ed869d1d5).  
+ This method is used internally for serializing object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](https://msdn.microsoft.com/library/443d7904-a6f0-450a-b1a4-5d7ed869d1d5).  
   
  ]]></format>
         </remarks>
@@ -7943,7 +7943,7 @@ Console.WriteLine(root)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used internally for marshaling object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](http://msdn.microsoft.com/library/443d7904-a6f0-450a-b1a4-5d7ed869d1d5).  
+ This method is used internally for marshaling object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](https://msdn.microsoft.com/library/443d7904-a6f0-450a-b1a4-5d7ed869d1d5).  
   
  ]]></format>
         </remarks>
@@ -8013,7 +8013,7 @@ This is mixed content
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -8120,7 +8120,7 @@ Console.WriteLine(sb.ToString())
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="WriteToAsync">

@@ -108,7 +108,7 @@
   
 -   Customizable appearance through themes and styles.  
   
--   To learn about the other data-bound controls that are available in ASP.NET, see [Data-Bound Web Server Controls](http://msdn.microsoft.com/library/f9cf026e-d8b8-49f8-a3c4-64de2edbbb96).  
+-   To learn about the other data-bound controls that are available in ASP.NET, see [Data-Bound Web Server Controls](https://msdn.microsoft.com/library/f9cf026e-d8b8-49f8-a3c4-64de2edbbb96).  
   
 > [!NOTE]
 >  If you are familiar with the <xref:System.Web.UI.WebControls.DataGrid> control from the .NET Framework version 1.0, the <xref:System.Web.UI.WebControls.GridView> control is the successor to the <xref:System.Web.UI.WebControls.DataGrid> control.  
@@ -144,7 +144,7 @@
   
 -   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.GridView> control to the data source and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method. When using this method, the <xref:System.Web.UI.WebControls.GridView> control does not provide built-in sort, update, delete, and paging functionality. You need to provide this functionality by using the appropriate event.  
   
- For more information about data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
+ For more information about data binding, see [ASP.NET Data Access Content Map](https://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
 > [!NOTE]
 >  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. Whenever possible, it is strongly recommended that values are HTML-encoded before they are displayed in this control (the <xref:System.Web.UI.WebControls.BoundField> class HTML-encodes values by default). ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Introduction to the Validation Controls](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/2e4hd649(v=vs.85)).  
@@ -218,7 +218,7 @@
   
 <a name="accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -555,7 +555,7 @@
    
   
 ## Examples  
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=191882).  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](https://go.microsoft.com/fwlink/?LinkId=191882).  
   
  The following example demonstrates how use the <xref:System.Web.UI.WebControls.GridView> control to display the values from the Customers table of the AdventureWorksLT sample database in Microsoft SQL Server. The values are retrieved using a <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
@@ -811,7 +811,7 @@
         <altmember cref="P:System.Web.UI.WebControls.GridView.SortExpression" />
         <altmember cref="E:System.Web.UI.WebControls.GridView.Sorted" />
         <altmember cref="E:System.Web.UI.WebControls.GridView.Sorting" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3cb265d3-9799-4091-bade-64ae7dbcad3c">Sorting Data in a GridView Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3cb265d3-9799-4091-bade-64ae7dbcad3c">Sorting Data in a GridView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="AlternatingRowStyle">
@@ -1295,7 +1295,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.GridView.Caption%2A> property to specify the text to render in an HTML caption element in a <xref:System.Web.UI.WebControls.GridView> control. The text that you specify provides assistive technology devices with a description of the table that can be used to make the control more accessible. You can also specify the position at which to render the HTML caption element by using the <xref:System.Web.UI.WebControls.GridView.CaptionAlign%2A> property.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -1505,10 +1505,10 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Control.ClientIDMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7">ASP.NET Control Identification</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/fb58ed73-d8f7-401c-9560-d99dd9ca7db8">How to: Access Controls from JavaScript by ID</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/776f3747-7fa7-4851-ae27-f728ede1a564">Walkthrough: Making Data-Bound Controls Easier to Access from JavaScript</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0eaf202-61b6-4cd8-9604-6b7638fdf0ae">Walkthrough: Making Controls Located in Web User Controls Easier to Access From JavaScript</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7">ASP.NET Control Identification</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fb58ed73-d8f7-401c-9560-d99dd9ca7db8">How to: Access Controls from JavaScript by ID</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/776f3747-7fa7-4851-ae27-f728ede1a564">Walkthrough: Making Data-Bound Controls Easier to Access from JavaScript</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0eaf202-61b6-4cd8-9604-6b7638fdf0ae">Walkthrough: Making Controls Located in Web User Controls Easier to Access From JavaScript</related>
       </Docs>
     </Member>
     <Member MemberName="ClientIDRowSuffixDataKeys">
@@ -1623,7 +1623,7 @@
         <altmember cref="T:System.Web.UI.WebControls.ImageField" />
         <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
         <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateColumns" />
-        <related type="Article" href="http://msdn.microsoft.com/library/9df1c8e2-d507-4cf1-a15b-c39dfede2ca7">How to: Set GridView Web Server Control Column Width Dynamically</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9df1c8e2-d507-4cf1-a15b-c39dfede2ca7">How to: Set GridView Web Server Control Column Width Dynamically</related>
       </Docs>
     </Member>
     <Member MemberName="ColumnsGenerator">
@@ -2057,9 +2057,9 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.DataKeyNames%2A> property to specify the key field of the data source. In the example, the `DataKeyNames` attribute of the `GridView` element in markup specifies two key fields by using a comma to separate the names. To run this example, create a Web site that has the following:  
   
--   A connection to the AdventureWorksLT sample database and a connection string that is named `AdventureWorksLTConnectionString`. For information about how to set up the AdventureWorksLT sample database, see [How to: Set Up an AdventureWorksLT Sample Database for ASP.NET Development](http://msdn.microsoft.com/library/2baad633-9d63-49cc-a6b2-917cafd35356).  
+-   A connection to the AdventureWorksLT sample database and a connection string that is named `AdventureWorksLTConnectionString`. For information about how to set up the AdventureWorksLT sample database, see [How to: Set Up an AdventureWorksLT Sample Database for ASP.NET Development](https://msdn.microsoft.com/library/2baad633-9d63-49cc-a6b2-917cafd35356).  
   
--   A LINQ-to-SQL data context class that is named `AdventureWorksLTDataClassesDataContext`. The data context must have a class for the SalesOrderDetails table. For information about how to create LINQ-to-SQL classes, see [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655).  
+-   A LINQ-to-SQL data context class that is named `AdventureWorksLTDataClassesDataContext`. The data context must have a class for the SalesOrderDetails table. For information about how to create LINQ-to-SQL classes, see [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655).  
   
  [!code-aspx-csharp[GridViewEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewEdit/CS/editorders.aspx#1)]
  [!code-aspx-vb[GridViewEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewEdit/VB/editorders.aspx#1)]  
@@ -2462,7 +2462,7 @@
   
  To specify a custom template for the empty data row, first place `<EmptyDataTemplate>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.GridView> control. You can then list the contents of the template between the opening and closing `<EmptyDataTemplate>` tags. To control the style of the empty data row, use the <xref:System.Web.UI.WebControls.GridView.EmptyDataRowStyle%2A> property. Alternatively, you can use the built-in UI for the empty data row by setting the <xref:System.Web.UI.WebControls.GridView.EmptyDataText%2A> property instead of this property.  
   
- For information about how to programmatically access controls that you declare in an empty data template, see [How to: Access Server Controls by ID](http://msdn.microsoft.com/library/59964ef8-72ef-4159-9f1a-5b230ff46fb3).  
+ For information about how to programmatically access controls that you declare in an empty data template, see [How to: Access Server Controls by ID](https://msdn.microsoft.com/library/59964ef8-72ef-4159-9f1a-5b230ff46fb3).  
   
 > [!NOTE]
 >  If both the <xref:System.Web.UI.WebControls.GridView.EmptyDataText%2A> and <xref:System.Web.UI.WebControls.GridView.EmptyDataTemplate%2A> properties are set, the <xref:System.Web.UI.WebControls.GridView.EmptyDataTemplate%2A> property takes precedence.  
@@ -2519,7 +2519,7 @@
 > [!NOTE]
 >  If both the <xref:System.Web.UI.WebControls.GridView.EmptyDataText%2A> and <xref:System.Web.UI.WebControls.GridView.EmptyDataTemplate%2A> properties are set, the <xref:System.Web.UI.WebControls.GridView.EmptyDataTemplate%2A> property takes precedence.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -3381,7 +3381,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnBubbleEvent(System.Object,System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnBubbleEvent(System.Object,System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/f145b3fc-5ae0-4509-a2aa-1ff6934706bd">Walkthrough: Handling Events</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f145b3fc-5ae0-4509-a2aa-1ff6934706bd">Walkthrough: Handling Events</related>
       </Docs>
     </Member>
     <Member MemberName="OnDataPropertyChanged">
@@ -3743,7 +3743,7 @@
    
   
 ## Examples  
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=191882).  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](https://go.microsoft.com/fwlink/?LinkId=191882).  
   
  The following example demonstrates how provide an event-handling method for the <xref:System.Web.UI.WebControls.GridView.RowCommand> event. When the Add button is clicked for a given row of the <xref:System.Web.UI.WebControls.GridView> control, the name of the selected customer is added to a <xref:System.Web.UI.WebControls.ListBox> control.  
   
@@ -3842,7 +3842,7 @@
   
  The <xref:System.Web.UI.WebControls.GridView.OnRowDataBound%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=191882).  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](https://go.microsoft.com/fwlink/?LinkId=191882).  
   
  ]]></format>
         </remarks>
@@ -4230,7 +4230,7 @@
         <altmember cref="E:System.Web.UI.WebControls.GridView.Sorted" />
         <altmember cref="E:System.Web.UI.WebControls.GridView.Sorting" />
         <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorting(System.Web.UI.WebControls.GridViewSortEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3cb265d3-9799-4091-bade-64ae7dbcad3c">Sorting Data in a GridView Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3cb265d3-9799-4091-bade-64ae7dbcad3c">Sorting Data in a GridView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnSorting">
@@ -4277,7 +4277,7 @@
         <altmember cref="E:System.Web.UI.WebControls.GridView.Sorting" />
         <altmember cref="E:System.Web.UI.WebControls.GridView.Sorted" />
         <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorted(System.EventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3cb265d3-9799-4091-bade-64ae7dbcad3c">Sorting Data in a GridView Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3cb265d3-9799-4091-bade-64ae7dbcad3c">Sorting Data in a GridView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="PageCount">
@@ -5048,7 +5048,7 @@
    
   
 ## Examples  
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=191882).  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](https://go.microsoft.com/fwlink/?LinkId=191882).  
   
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.RowCommand> event to add the name of a customer from a <xref:System.Web.UI.WebControls.GridView> control to a <xref:System.Web.UI.WebControls.ListBox> control when a row's Add button is clicked.  
   
@@ -5141,7 +5141,7 @@
    
   
 ## Examples  
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=191882).  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](https://go.microsoft.com/fwlink/?LinkId=191882).  
   
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.RowDataBound> event to modify the value of a field in the data source before it is displayed in a <xref:System.Web.UI.WebControls.GridView> control.  
   
@@ -5242,7 +5242,7 @@
   
  Rows are deleted from the CustomerAddress table instead of the Customer table in order to keep the example simple. The <xref:System.Web.UI.WebControls.GridView> control shows the result of joining three tables: Customer, Address, and CustomerAddress. When a CustomerAddress row is deleted, the corresponding <xref:System.Web.UI.WebControls.GridView> row disappears. Referential integrity constraints would make the code for an example that actually deletes rows from the Customer table more complex.  
   
- For information about how to set up the AdventureWorksLT database, see [How to: Set Up an AdventureWorksLT Sample Database for ASP.NET Development](http://msdn.microsoft.com/library/2baad633-9d63-49cc-a6b2-917cafd35356).  
+ For information about how to set up the AdventureWorksLT database, see [How to: Set Up an AdventureWorksLT Sample Database for ASP.NET Development](https://msdn.microsoft.com/library/2baad633-9d63-49cc-a6b2-917cafd35356).  
   
  [!code-aspx-csharp[GridViewRowDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDeleting/CS/gridviewrowdeleting.aspx#1)]
  [!code-aspx-vb[GridViewRowDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDeleting/VB/gridviewrowdeleting.aspx#1)]  
@@ -6450,7 +6450,7 @@
         <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorted(System.EventArgs)" />
         <altmember cref="E:System.Web.UI.WebControls.GridView.Sorting" />
         <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorting(System.Web.UI.WebControls.GridViewSortEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3cb265d3-9799-4091-bade-64ae7dbcad3c">Sorting Data in a GridView Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3cb265d3-9799-4091-bade-64ae7dbcad3c">Sorting Data in a GridView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SortedAscendingCellStyle">
@@ -6722,7 +6722,7 @@
         <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorting(System.Web.UI.WebControls.GridViewSortEventArgs)" />
         <altmember cref="E:System.Web.UI.WebControls.GridView.Sorted" />
         <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorted(System.EventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3cb265d3-9799-4091-bade-64ae7dbcad3c">Sorting Data in a GridView Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3cb265d3-9799-4091-bade-64ae7dbcad3c">Sorting Data in a GridView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.ICallbackEventHandler.GetCallbackResult">
@@ -7609,7 +7609,7 @@
  Use the <xref:System.Web.UI.WebControls.GridView.UpdateRow%2A> method to programmatically update the record at the specified index in the data source. This method is commonly used when you need to update a record from outside of the <xref:System.Web.UI.WebControls.GridView> control, such as from a different control on the page.  
   
 > [!NOTE]
->  This method can be called only for the row that is currently in edit mode, or for a row that contains a two-way data-bound input control. For more information about two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
+>  This method can be called only for the row that is currently in edit mode, or for a row that contains a two-way data-bound input control. For more information about two-way binding expressions, see [Binding to Databases](https://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
   
  To specify whether page validation is performed before the update operation, use the `causesValidation` parameter. Calling this method also raises the <xref:System.Web.UI.WebControls.GridView.RowUpdated> and <xref:System.Web.UI.WebControls.GridView.RowUpdating> events.  
   

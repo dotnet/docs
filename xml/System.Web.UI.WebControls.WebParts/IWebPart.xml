@@ -38,7 +38,7 @@
  The second part of the code example shows the Web page that hosts the user control. The page has a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, within which the user control is referenced. Notice that several of the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface's property values are set declaratively in the markup for the user control, which enables it to both behave and appear similar to a <xref:System.Web.UI.WebControls.WebParts.WebPart> control at design time and run time. If you load the page in a browser, you can use the UI on the page to demonstrate the ability to programmatically change the values of the implemented <xref:System.Web.UI.WebControls.WebParts.IWebPart> properties at run time. When you change some of the property values, the changes are not evident on the page, but are visible in the page source (the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleIconImageUrl%2A> property), or are stored in the application's state data (the <xref:System.Web.UI.WebControls.WebParts.IWebPart.CatalogIconImageUrl%2A> property).  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]
  [!code-aspx-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  
@@ -52,7 +52,7 @@
     </block>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName="CatalogIconImageUrl">
@@ -93,7 +93,7 @@
  The second part of the code example demonstrates the method in the user control that programmatically sets the value of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.CatalogIconImageUrl%2A> property when a user selects the appropriate property name from the radio buttons on the page, sets a new value in the text box, and then clicks the **Update** button.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[WebParts_IWebPart_Overview#9](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#9)]
  [!code-vb[WebParts_IWebPart_Overview#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#9)]  
@@ -108,7 +108,7 @@
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.CatalogIconImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.CatalogIconImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartDescription.CatalogIconImageUrl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -149,7 +149,7 @@
  The second part of the code example demonstrates the method in the user control that programmatically sets the value of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Description%2A> property when a user selects the appropriate property name from the radio buttons on the page, sets a new value in the text box, and then clicks the **Update** button.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[WebParts_IWebPart_Overview#9](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#9)]
  [!code-vb[WebParts_IWebPart_Overview#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#9)]  
@@ -164,7 +164,7 @@
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Description" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Description" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Description" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Subtitle">
@@ -213,7 +213,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Subtitle" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Subtitle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -256,7 +256,7 @@
  The second part of the code example demonstrates the method in the user control that programmatically sets the value of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Title%2A> property when a user selects the appropriate property name from the radio buttons on the page, sets a new value in the text box, and then clicks the **Update** button.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[WebParts_IWebPart_Overview#9](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#9)]
  [!code-vb[WebParts_IWebPart_Overview#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#9)]  
@@ -271,7 +271,7 @@
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Title" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Title" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="TitleIconImageUrl">
@@ -314,7 +314,7 @@
  The second part of the code example demonstrates the method in the user control that programmatically sets the value of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleIconImageUrl%2A> property when a user selects the appropriate property name from the radio buttons on the page, sets a new value in the text box, and then clicks the **Update** button.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[WebParts_IWebPart_Overview#9](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#9)]
  [!code-vb[WebParts_IWebPart_Overview#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#9)]  
@@ -328,7 +328,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.TitleIconImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.TitleIconImageUrl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="TitleUrl">
@@ -372,7 +372,7 @@
  The second part of the code example demonstrates the method in the user control that programmatically sets the value of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleUrl%2A> property when a user selects the appropriate property name from the radio buttons on the page, sets a new value in the text box, and then clicks the **Update** button.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[WebParts_IWebPart_Overview#9](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#9)]
  [!code-vb[WebParts_IWebPart_Overview#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#9)]  
@@ -386,7 +386,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.TitleUrl" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.TitleUrl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

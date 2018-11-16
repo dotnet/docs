@@ -420,7 +420,7 @@
   
  If the application wrote the event entry using one of the <xref:System.Diagnostics.EventLog.WriteEntry%2A> methods, the <xref:System.Diagnostics.EventLogEntry.InstanceId%2A> property matches the optional `eventId` parameter. If the application wrote the event using <xref:System.Diagnostics.EventLog.WriteEvent%2A>, the <xref:System.Diagnostics.EventLogEntry.InstanceId%2A> property matches the resource identifier specified in the <xref:System.Diagnostics.EventInstance.InstanceId%2A> of the `instance` parameter. If the application wrote the event using the Win32 API `ReportEvent`, the <xref:System.Diagnostics.EventLogEntry.InstanceId%2A> property matches the resource identifier specified in the `dwEventID` parameter.  
   
- For details about defining event messages and building event log resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com/). For details about event log identifiers, see the "Event Identifiers" topic in the Platform SDK.  
+ For details about defining event messages and building event log resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](https://msdn.microsoft.com/). For details about event log identifiers, see the "Event Identifiers" topic in the Platform SDK.  
   
    
   

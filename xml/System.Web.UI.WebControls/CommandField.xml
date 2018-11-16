@@ -280,7 +280,7 @@
 > [!NOTE]
 >  As an alternative to displaying text for a Cancel button, you can display an image by first setting the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property to `ButtonType.Image` and then setting the <xref:System.Web.UI.WebControls.CommandField.CancelImageUrl%2A> property.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -348,7 +348,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandField.CausesValidation%2A> property to prevent validation from occurring when a button in a <xref:System.Web.UI.WebControls.CommandField> field is clicked.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CommandFieldCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CommandFieldCausesValidation/CS/commandfieldcausesvalidationcs.aspx#1)]
  [!code-aspx-vb[CommandFieldCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CommandFieldCausesValidation/VB/commandfieldcausesvalidationvb.aspx#1)]  
@@ -527,7 +527,7 @@
 > [!NOTE]
 >  As an alternative to displaying text for a Delete button, you can display an image by first setting the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property to `ButtonType.Image` and then setting the <xref:System.Web.UI.WebControls.CommandField.DeleteImageUrl%2A> property.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -659,7 +659,7 @@
 > [!NOTE]
 >  As an alternative to displaying text for an Edit button, you can display an image by first setting the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property to `ButtonType.Image` and then setting the <xref:System.Web.UI.WebControls.CommandField.EditImageUrl%2A> property.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -834,7 +834,7 @@
 > [!NOTE]
 >  As an alternative to displaying text for the Insert button, you can display an image by first setting the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property to `ButtonType.Image` and then setting the <xref:System.Web.UI.WebControls.CommandField.InsertImageUrl%2A> property.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -967,7 +967,7 @@
 > [!NOTE]
 >  As an alternative to displaying text for the New button, you can display an image by first setting the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property to `ButtonType.Image` and then setting the <xref:System.Web.UI.WebControls.CommandField.NewImageUrl%2A> property.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -1099,7 +1099,7 @@
 > [!NOTE]
 >  As an alternative to displaying text for a Select button, you can display an image by first setting the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property to `ButtonType.Image` and then setting the <xref:System.Web.UI.WebControls.CommandField.SelectImageUrl%2A> property.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -1506,7 +1506,7 @@
 > [!NOTE]
 >  As an alternative to displaying text for an Update button, you can display an image by first setting the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property to `ButtonType.Image` and then setting the <xref:System.Web.UI.WebControls.CommandField.UpdateImageUrl%2A> property.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   

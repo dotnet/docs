@@ -92,7 +92,7 @@
   
  This property is not case-sensitive, and should only contain the short name of the machine.  It does not accept fully qualified domain names, localhost or IP addresses. If this property contains an invalid remote machine name, an "unable to read configuration information" exception is thrown.  
   
- You should have the proper security permission to use a remote MSDTC. For more information on how to configure DTC security settings, please see the [Configuring MSDTC security properties](http://msdn.microsoft.com/library/cossdk/html/2627a956-60b3-4d26-bc04-e0676ec97786.asp?frame=true) topic.  
+ You should have the proper security permission to use a remote MSDTC. For more information on how to configure DTC security settings, please see the [Configuring MSDTC security properties](https://msdn.microsoft.com/library/cossdk/html/2627a956-60b3-4d26-bc04-e0676ec97786.asp?frame=true) topic.  
   
  ]]></format>
         </remarks>

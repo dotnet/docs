@@ -33,7 +33,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/f91aa91c-29f4-4089-95ca-5d48b774b00e">How to: Implement a Custom Layout Engine</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f91aa91c-29f4-4089-95ca-5d48b774b00e">How to: Implement a Custom Layout Engine</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -104,7 +104,7 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="M:System.Windows.Forms.Layout.LayoutEngine.InitLayout(System.Object,System.Windows.Forms.BoundsSpecified)" /> method to provide your custom initialization behavior.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/f91aa91c-29f4-4089-95ca-5d48b774b00e">How to: Implement a Custom Layout Engine</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f91aa91c-29f4-4089-95ca-5d48b774b00e">How to: Implement a Custom Layout Engine</related>
       </Docs>
     </Member>
     <Member MemberName="Layout">
@@ -159,7 +159,7 @@
  Return <see langword="true" /> if your layout engine logic determines that layout should be performed again by the parent of the container. This might occur, for example, when the layout engine resizes child controls and determines that the container must be increased in size to accommodate the new layout.</para>
         </block>
         <altmember cref="T:System.Windows.Forms.LayoutEventArgs" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f91aa91c-29f4-4089-95ca-5d48b774b00e">How to: Implement a Custom Layout Engine</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f91aa91c-29f4-4089-95ca-5d48b774b00e">How to: Implement a Custom Layout Engine</related>
       </Docs>
     </Member>
   </Members>

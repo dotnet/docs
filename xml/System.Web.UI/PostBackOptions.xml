@@ -189,7 +189,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.PostBackOptions.ActionUrl%2A> property of the <xref:System.Web.UI.PostBackOptions> class specifies the URL for the `action` attribute of a Web Forms page. The <xref:System.Web.UI.PostBackOptions.ActionUrl%2A> property can be used to specify which Web Forms page to post data back to, causing a cross-page post. For more information on cross-page posting, see [Cross-Page Posting in ASP.NET Web Forms](http://msdn.microsoft.com/library/fedf234e-b7c4-4644-a9e8-c1c0870b043b).  
+ The <xref:System.Web.UI.PostBackOptions.ActionUrl%2A> property of the <xref:System.Web.UI.PostBackOptions> class specifies the URL for the `action` attribute of a Web Forms page. The <xref:System.Web.UI.PostBackOptions.ActionUrl%2A> property can be used to specify which Web Forms page to post data back to, causing a cross-page post. For more information on cross-page posting, see [Cross-Page Posting in ASP.NET Web Forms](https://msdn.microsoft.com/library/fedf234e-b7c4-4644-a9e8-c1c0870b043b).  
   
    
   
@@ -201,7 +201,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/fedf234e-b7c4-4644-a9e8-c1c0870b043b">Cross-Page Posting in an ASP.NET Web Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fedf234e-b7c4-4644-a9e8-c1c0870b043b">Cross-Page Posting in an ASP.NET Web Page</related>
       </Docs>
     </Member>
     <Member MemberName="Argument">
@@ -382,7 +382,7 @@ javascript:setTimeout('__doPostBack('__Page','')', 0)
  The following code example demonstrates using the <xref:System.Web.UI.PostBackOptions.ValidationGroup%2A> and <xref:System.Web.UI.PostBackOptions.PerformValidation%2A> properties to ensure that two <xref:System.Web.UI.WebControls.TextBox> controls have information entered in them before the postback event is generated. The `NameTextBox` and `AgeTextBox` controls are part of the `PersonalInfoGroup` validation group, but the `StateTextBox` control is not. Therefore, the user does not have to enter any data in the `StateTextBox` control before the postback event is generated.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.PostBackOptions.Validation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PostBackOptions.Validation/CS/postbackoptions.validationcs.aspx#1)]
  [!code-aspx-vb[System.Web.UI.PostBackOptions.Validation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PostBackOptions.Validation/VB/postbackoptions.validationvb.aspx#1)]  
@@ -554,7 +554,7 @@ javascript:setTimeout('__doPostBack('__Page','')', 0)
  The following code example demonstrates using the <xref:System.Web.UI.PostBackOptions.ValidationGroup%2A> and <xref:System.Web.UI.PostBackOptions.PerformValidation%2A> properties to ensure that two <xref:System.Web.UI.WebControls.TextBox> controls have information entered in them before the postback event is generated. The `NameTextBox` and `AgeTextBox` controls are part of the `PersonalInfoGroup` validation group, but the `StateTextBox` control is not. Therefore, the user does not have to enter any data in the `StateTextBox` control before the postback event is generated.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.PostBackOptions.Validation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PostBackOptions.Validation/CS/postbackoptions.validationcs.aspx#1)]
  [!code-aspx-vb[System.Web.UI.PostBackOptions.Validation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PostBackOptions.Validation/VB/postbackoptions.validationvb.aspx#1)]  

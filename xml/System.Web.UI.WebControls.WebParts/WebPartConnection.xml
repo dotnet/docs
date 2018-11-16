@@ -30,7 +30,7 @@
 ## Remarks  
  In the Web Parts control set, a connection is a link or association between two <xref:System.Web.UI.WebControls.WebParts.WebPart> (or other server or user) controls that enables them to share data. This ability to share data allows connected controls to be used in ways that exceed the functionality offered by the isolated controls. For example, if one control provides postal code data, and another control can read that data and provide local weather information based on the postal code, then the connected capability of the two controls provides more value to users. To extend this example, other controls could be created that also display information based on a postal code, such as a control with links to local news, and all these controls that can work with postal code data could share data with the single control that provides a postal code. End users of Web Parts applications can create and manage connections between all such compatible controls directly from a Web browser, using the standard connections user interface (UI) provided by the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control, or using a custom UI provided by a developer.  
   
- This <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> class overview is a general statement of the basic details for creating a connection. For more on specific components and requirements involved in creating connections, see [Web Parts Connections Overview](http://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b), or see the reference classes and code examples mentioned in the following discussion. There are several fundamental aspects of a Web Parts connection:  
+ This <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> class overview is a general statement of the basic details for creating a connection. For more on specific components and requirements involved in creating connections, see [Web Parts Connections Overview](https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b), or see the reference classes and code examples mentioned in the following discussion. There are several fundamental aspects of a Web Parts connection:  
   
 -   Two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. Every Web Parts connection consists of two controls. It is possible for a control to participate in more than one connection simultaneously, but every single connection consists of exactly two controls. The controls can derive directly from the <xref:System.Web.UI.WebControls.WebParts.WebPart> base class, or they can be other server controls, including ASP.NET controls, custom server controls, and user controls. Controls that do not derive from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, if placed in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone, are automatically wrapped with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> object at run time, which enables them to inherit from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class and function as run-time <xref:System.Web.UI.WebControls.WebParts.WebPart> controls.  
   
@@ -65,14 +65,14 @@
   
 -   An explanation of how to run the example page.  
   
- The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_WebPartConnection_Overview#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_Overview/CS/displaymodemenucs.ascx#6)]
  [!code-aspx-vb[WebParts_WebPartConnection_Overview#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_Overview/VB/DisplayModeMenuVB.ascx#6)]  
   
  The second part of the code example is the source code for the interface and controls. The source file contains a simple interface named `IZipCode`. There is also a <xref:System.Web.UI.WebControls.WebParts.WebPart> class named `ZipCodeWebPart` that implements the interface and acts as the provider control. Its `ProvideIZipCode` method is the callback method that implements the interface's only member. The method simply returns an instance of the interface. Note that the method is marked with a `ConnectionProvider` attribute in its metadata. This is the mechanism for identifying the method as the callback method for the provider's connection point. The other <xref:System.Web.UI.WebControls.WebParts.WebPart> class is named `WeatherWebPart`, and it acts as the consumer for the connection. This class has a method named `GetZipCode` that gets an instance of the `IZipCode` interface from the provider control. Note that this method is marked as the consumer's connection point method with a `ConnectionConsumer` attribute in its metadata.  
   
- For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartConnection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_Overview/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartConnection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_Overview/VB/ZipCodeComponent.vb#2)]  
@@ -103,8 +103,8 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" />
     <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ProviderConnectionPoint,System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint)" />
-    <related type="Article" href="http://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Web Parts Connections Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b">Web Parts Connections Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -138,7 +138,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ProviderConnectionPoint,System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Consumer">
@@ -192,12 +192,12 @@
   
 -   An explanation of how to run the example page.  
   
- The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_WebPartConnection_Consumer#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_Consumer/CS/displaymodemenucs.ascx#6)]
  [!code-aspx-vb[WebParts_WebPartConnection_Consumer#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_Consumer/VB/DisplayModeMenuVB.ascx#6)]  
   
- The second part of the code example is the source code for the two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that serve as the consumer and the provider for the connection, and an interface used for the connection points. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part of the code example is the source code for the two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that serve as the consumer and the provider for the connection, and an interface used for the connection points. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartConnection_Consumer#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_Consumer/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartConnection_Consumer#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_Consumer/VB/ZipCodeComponent.vb#2)]  
@@ -214,7 +214,7 @@
         <exception cref="T:System.InvalidOperationException">The length of the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerID" /> property is zero.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Provider" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ConsumerConnectionPoint">
@@ -270,12 +270,12 @@
   
 -   An explanation of how to run the example page.  
   
- The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_WebPartConnection_ConsumerConnectionPoint#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPoint/CS/displaymodemenucs.ascx#6)]
  [!code-aspx-vb[WebParts_WebPartConnection_ConsumerConnectionPoint#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPoint/VB/DisplayModeMenuVB.ascx#6)]  
   
- The second part of the code example is the source code for the two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that serve as the consumer and the provider for the connection, and an interface used for the connection points. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part of the code example is the source code for the two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that serve as the consumer and the provider for the connection, and an interface used for the connection points. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartConnection_ConsumerConnectionPoint#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPoint/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartConnection_ConsumerConnectionPoint#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPoint/VB/ZipCodeComponent.vb#2)]  
@@ -291,7 +291,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ConsumerConnectionPointID">
@@ -347,12 +347,12 @@
   
 -   An explanation of how to run the example page.  
   
- The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_WebPartConnection_ConsumerConnectionPointID#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPointID/CS/displaymodemenucs.ascx#6)]
  [!code-aspx-vb[WebParts_WebPartConnection_ConsumerConnectionPointID#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPointID/VB/DisplayModeMenuVB.ascx#6)]  
   
- The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartConnection_ConsumerConnectionPointID#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPointID/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartConnection_ConsumerConnectionPointID#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPointID/VB/ZipCodeComponent.vb#2)]  
@@ -368,7 +368,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionPoint.ID" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ConsumerID">
@@ -419,12 +419,12 @@
   
 -   An explanation of how to run the example page.  
   
- The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_WebPartConnection_ConsumerID#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerID/CS/displaymodemenucs.ascx#6)]
  [!code-aspx-vb[WebParts_WebPartConnection_ConsumerID#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerID/VB/DisplayModeMenuVB.ascx#6)]  
   
- The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartConnection_ConsumerID#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerID/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartConnection_ConsumerID#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerID/VB/ZipCodeComponent.vb#2)]  
@@ -439,7 +439,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Consumer" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -494,12 +494,12 @@
   
 -   An explanation of how to run the example page.  
   
- The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_WebPartConnection_ID#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ID/CS/displaymodemenucs.ascx#6)]
  [!code-aspx-vb[WebParts_WebPartConnection_ID#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ID/VB/DisplayModeMenuVB.ascx#6)]  
   
- The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartConnection_ID#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ID/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartConnection_ID#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ID/VB/ZipCodeComponent.vb#2)]  
@@ -513,7 +513,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IsActive">
@@ -573,7 +573,7 @@
   
 -   An explanation of how to run the example page.  
   
- The first part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The first part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartConnection_IsActive#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_IsActive/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartConnection_IsActive#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_IsActive/VB/ZipCodeComponent.vb#2)]  
@@ -591,7 +591,7 @@
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.ActivateConnections" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivated" />
         <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivating" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IsShared">
@@ -653,12 +653,12 @@
   
 -   An explanation of how to run the example page.  
   
- The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_WebPartConnection_IsShared#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_IsShared/CS/displaymodemenucs.ascx#6)]
  [!code-aspx-vb[WebParts_WebPartConnection_IsShared#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_IsShared/VB/DisplayModeMenuVB.ascx#6)]  
   
- The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartConnection_IsShared#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_IsShared/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartConnection_IsShared#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_IsShared/VB/ZipCodeComponent.vb#2)]  
@@ -691,7 +691,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsShared" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IsStatic">
@@ -752,7 +752,7 @@
   
 -   An explanation of how to run the example page.  
   
- The first part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The first part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartConnection_IsStatic#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_IsStatic/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartConnection_IsStatic#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_IsStatic/VB/ZipCodeComponent.vb#2)]  
@@ -767,7 +767,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.StaticConnections" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -821,7 +821,7 @@
   
 -   An explanation of how to run the example page.  
   
- The first part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The first part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartConnection_Provider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_Provider/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartConnection_Provider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_Provider/VB/ZipCodeComponent.vb#2)]  
@@ -838,7 +838,7 @@
         <exception cref="T:System.InvalidOperationException">The length of the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderID" /> property value is zero.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Consumer" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderID" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderConnectionPoint">
@@ -894,12 +894,12 @@
   
 -   An explanation of how to run the example page.  
   
- The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_WebPartConnection_ProviderConnectionPoint#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPoint/CS/displaymodemenucs.ascx#6)]
  [!code-aspx-vb[WebParts_WebPartConnection_ProviderConnectionPoint#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPoint/VB/DisplayModeMenuVB.ascx#6)]  
   
- The second part of the code example is the source code for the two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that serve as the consumer and the provider for the connection, and an interface used for the connection points. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part of the code example is the source code for the two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that serve as the consumer and the provider for the connection, and an interface used for the connection points. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartConnection_ProviderConnectionPoint#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPoint/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartConnection_ProviderConnectionPoint#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPoint/VB/ZipCodeComponent.vb#2)]  
@@ -916,7 +916,7 @@
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderConnectionPointID">
@@ -972,12 +972,12 @@
   
 -   An explanation of how to run the example page.  
   
- The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_WebPartConnection_ProviderConnectionPointID#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPointID/CS/displaymodemenucs.ascx#6)]
  [!code-aspx-vb[WebParts_WebPartConnection_ProviderConnectionPointID#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPointID/VB/DisplayModeMenuVB.ascx#6)]  
   
- The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartConnection_ProviderConnectionPointID#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPointID/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartConnection_ProviderConnectionPointID#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPointID/VB/ZipCodeComponent.vb#2)]  
@@ -993,7 +993,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.ConnectionPoint.ID" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderID">
@@ -1044,12 +1044,12 @@
   
 -   An explanation of how to run the example page.  
   
- The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_WebPartConnection_ProviderID#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderID/CS/displaymodemenucs.ascx#6)]
  [!code-aspx-vb[WebParts_WebPartConnection_ProviderID#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderID/VB/DisplayModeMenuVB.ascx#6)]  
   
- The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartConnection_ProviderID#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderID/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartConnection_ProviderID#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderID/VB/ZipCodeComponent.vb#2)]  
@@ -1064,7 +1064,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Provider" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1106,7 +1106,7 @@
   
 -   An explanation of how to run the example page.  
   
- The first part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The first part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartConnection_ToString#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ToString/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_WebPartConnection_ToString#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ToString/VB/ZipCodeComponent.vb#2)]  
@@ -1164,7 +1164,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Transformers">
@@ -1212,7 +1212,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Transformer" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

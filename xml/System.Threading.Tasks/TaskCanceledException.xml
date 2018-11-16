@@ -216,7 +216,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](http://go.microsoft.com/fwlink/p/?LinkID=248602).  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](https://go.microsoft.com/fwlink/p/?LinkID=248602).  
   
  ]]></format>
         </remarks>
@@ -224,7 +224,7 @@
         <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
         <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
         <related type="Article" href="~/docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md">How to: Cancel a Task and Its Children</related>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/p/?LinkID=248602">XML and SOAP Serialization</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/p/?LinkID=248602">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

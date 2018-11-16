@@ -45,7 +45,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Win32 error codes are translated from their numeric representations into a system message when they are displayed. Use <xref:System.ComponentModel.Win32Exception.NativeErrorCode%2A> to access the numeric representation of the error code associated with this exception. For more information about the error codes, see "Win32 Error Codes" in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com/).  
+ Win32 error codes are translated from their numeric representations into a system message when they are displayed. Use <xref:System.ComponentModel.Win32Exception.NativeErrorCode%2A> to access the numeric representation of the error code associated with this exception. For more information about the error codes, see "Win32 Error Codes" in the Platform SDK documentation at [http://msdn.microsoft.com](https://msdn.microsoft.com/).  
   
    
   

@@ -87,7 +87,7 @@
   
  A culture identifier is a standard international numeric abbreviation and has the components necessary to uniquely identify one of the installed cultures. Your application can use predefined culture identifiers or define custom identifiers.  
   
- Certain predefined culture names and identifiers are used by this and other classes in the <xref:System.Globalization?displayProperty=nameWithType> namespace. Detailed culture information appears in the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center.  
+ Certain predefined culture names and identifiers are used by this and other classes in the <xref:System.Globalization?displayProperty=nameWithType> namespace. Detailed culture information appears in the [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center.  
   
  Remember that the culture names and identifiers represent only a subset of cultures that can be found on a particular computer. Windows versions or service packs can change the available cultures. Applications add custom cultures using the <xref:System.Globalization.CultureAndRegionInfoBuilder> class. Users add their own custom cultures using the Microsoft Locale Builder tool. Microsoft Locale Builder is written in managed code using the `CultureAndRegionInfoBuilder` class.  
   
@@ -383,7 +383,7 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Predefined culture identifiers are listed in the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center.  
+ Predefined culture identifiers are listed in the [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center.  
   
  In most cases, the `culture` parameter is mapped to the corresponding National Language Support (NLS) locale identifier. The value of the `culture` parameter becomes the value of the <xref:System.Globalization.CultureInfo.LCID%2A> property of the new <xref:System.Globalization.CultureInfo>.  
   
@@ -466,7 +466,7 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of predefined culture names, see the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. In addition, starting with Windows 10, `name` can be any valid BCP-47 language tag.  
+ For a list of predefined culture names, see the [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. In addition, starting with Windows 10, `name` can be any valid BCP-47 language tag.  
   
  If `name` is <xref:System.String.Empty?displayProperty=nameWithType>, the constructor creates an instance of the invariant culture; this is equivalent to retrieving the value of the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property.  
   
@@ -547,7 +547,7 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Predefined culture identifiers are listed in the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center.  
+ Predefined culture identifiers are listed in the [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center.  
   
  In most cases, the `culture` parameter is mapped to the corresponding National Language Support (NLS) locale identifier. The value of the `culture` parameter becomes the value of the <xref:System.Globalization.CultureInfo.LCID%2A> property of the new <xref:System.Globalization.CultureInfo>.  
   
@@ -555,7 +555,7 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
   
  The user might choose to override some of the values associated with the current culture of Windows through the regional and language options portion of Control Panel. For example, the user might choose to display the date in a different format or to use a currency other than the default for the culture.  
   
- Applications should typically not disallow user overrides. Note that disallowing overrides does not itself guarantee data stability; see the blog entry [Culture data shouldn't be considered stable (except for Invariant)](http://go.microsoft.com/fwlink/?LinkId=156850).  
+ Applications should typically not disallow user overrides. Note that disallowing overrides does not itself guarantee data stability; see the blog entry [Culture data shouldn't be considered stable (except for Invariant)](https://go.microsoft.com/fwlink/?LinkId=156850).  
   
  If the <xref:System.Globalization.CultureInfo.UseUserOverride%2A> property is set to `true` and the specified culture identifier matches the identifier of the current Windows culture, this constructor creates a <xref:System.Globalization.CultureInfo> that uses those overrides, including user settings for the properties of the <xref:System.Globalization.DateTimeFormatInfo> instance returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A> property, and the properties of the <xref:System.Globalization.NumberFormatInfo> instance returned by the <xref:System.Globalization.CultureInfo.NumberFormat%2A> property. If the user settings are incompatible with the culture associated with the <xref:System.Globalization.CultureInfo>, for example, if the selected calendar is not one of the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A>, the results of the methods and the values of the properties are undefined.  
   
@@ -630,13 +630,13 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of predefined culture names, see the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. In addition, starting with Windows 10, `name` can be any valid BCP-47 language tag.  
+ For a list of predefined culture names, see the [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. In addition, starting with Windows 10, `name` can be any valid BCP-47 language tag.  
   
  If `name` is <xref:System.String.Empty?displayProperty=nameWithType>, the constructor creates an instance of the invariant culture; this is equivalent to retrieving the value of the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property.  
   
  The user might choose to override some of the values associated with the current Windows culture through the regional and language options portion of Control Panel. For example, the user might choose to display the date in a different format or to use a currency other than the default for the culture.  
   
- Applications should typically not disallow user overrides. Note that disallowing overrides does not itself guarantee data stability; see the blog entry [Culture data shouldn't be considered stable (except for Invariant)](http://go.microsoft.com/fwlink/?LinkId=156850).  
+ Applications should typically not disallow user overrides. Note that disallowing overrides does not itself guarantee data stability; see the blog entry [Culture data shouldn't be considered stable (except for Invariant)](https://go.microsoft.com/fwlink/?LinkId=156850).  
   
  If the <xref:System.Globalization.CultureInfo.UseUserOverride%2A> property is set to `true` and the culture identifier associated with the specified culture name matches the culture identifier of the current Windows culture, this constructor creates a <xref:System.Globalization.CultureInfo> that uses those overrides, including user settings for the properties of the <xref:System.Globalization.DateTimeFormatInfo> instance returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A> property, and the properties of the <xref:System.Globalization.NumberFormatInfo> instance returned by the <xref:System.Globalization.CultureInfo.NumberFormat%2A> property. If the user settings are incompatible with the culture associated with the <xref:System.Globalization.CultureInfo>, for example, if the selected calendar is not one of the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A>, the results of the methods and the values of the properties are undefined.  
   
@@ -959,7 +959,7 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
  The <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A> method wraps a call to the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29> constructor.  
   
 > [!NOTE]
->  For a list of predefined culture names, see the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. In addition, starting with Windows 10, `name` can be any valid BCP-47 language tag.  
+>  For a list of predefined culture names, see the [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. In addition, starting with Windows 10, `name` can be any valid BCP-47 language tag.  
   
  Cultures are grouped into three sets: the invariant culture, the neutral cultures, and the specific cultures. For more information, see the description of the <xref:System.Globalization.CultureInfo> class.  
   
@@ -2060,7 +2060,7 @@ csc /resource:GreetingStrings.resources Example1.cs
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of predefined culture names, see the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. In addition, starting with Windows 10, `name` can be any valid BCP-47 language tag.  
+ For a list of predefined culture names, see the [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. In addition, starting with Windows 10, `name` can be any valid BCP-47 language tag.  
   
  The <xref:System.Globalization.CultureInfo.GetCultureInfo%2A> method retrieves a cached, read-only <xref:System.Globalization.CultureInfo> object. It offers better performance than a corresponding call to the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29?displayProperty=nameWithType> constructor.  
   
@@ -2122,7 +2122,7 @@ csc /resource:GreetingStrings.resources Example1.cs
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of predefined culture names, see the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. In addition, starting with Windows 10, `name` can be any valid BCP-47 language tag.  
+ For a list of predefined culture names, see the [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. In addition, starting with Windows 10, `name` can be any valid BCP-47 language tag.  
   
  The <xref:System.Globalization.CultureInfo.GetCultureInfo%2A> method obtains a cached, read-only <xref:System.Globalization.CultureInfo> object. It offers better performance than a corresponding call to a <xref:System.Globalization.CultureInfo.%23ctor%2A> constructor. The method is used to create a culture similar to that specified by the `name` parameter, but with different sorting and casing rules.  
   
@@ -2191,7 +2191,7 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  Your applications should use the retrieved culture to control language-specific tasks, such as managing a spelling or grammar checker. Applications should not use the retrieved culture to control culture-specific tasks, such as sorting text or formatting times and dates.  
   
- For more information, see RFC 4646, "Tags for Identifying Languages," and the most recent draft standard, Draft-phillips-langtags-05.txt, at [http://go.microsoft.com/fwlink/?LinkId=100231](http://go.microsoft.com/fwlink/?LinkId=100231).  
+ For more information, see RFC 4646, "Tags for Identifying Languages," and the most recent draft standard, Draft-phillips-langtags-05.txt, at [http://go.microsoft.com/fwlink/?LinkId=100231](https://go.microsoft.com/fwlink/?LinkId=100231).  
   
  ]]></format>
         </remarks>
@@ -2457,7 +2457,7 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  An IETF language tag consists of a mandatory language identifier, an optional script identifier, and an optional region identifier.  
   
- For more information, see [RFC 5646, "Tags for Identifying Languages](http://go.microsoft.com/fwlink/?LinkId=230876). For a list of subtags, see [The IANA Language Subtag Registry](http://go.microsoft.com/fwlink/?LinkId=230877).  
+ For more information, see [RFC 5646, "Tags for Identifying Languages](https://go.microsoft.com/fwlink/?LinkId=230876). For a list of subtags, see [The IANA Language Subtag Registry](https://go.microsoft.com/fwlink/?LinkId=230877).  
   
  ]]></format>
         </remarks>
@@ -2848,7 +2848,7 @@ csc /resource:GreetingStrings.resources Example1.cs
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of predefined culture names and identifiers that the <xref:System.Globalization.CultureInfo.Name%2A> property can return, see the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. In addition, starting with Windows 10, `name` can be any valid BCP-47 language tag. Note that culture names are subject to change, and that they also can reflect the names of custom cultures.  
+ For a list of predefined culture names and identifiers that the <xref:System.Globalization.CultureInfo.Name%2A> property can return, see the [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. In addition, starting with Windows 10, `name` can be any valid BCP-47 language tag. Note that culture names are subject to change, and that they also can reflect the names of custom cultures.  
   
  The <xref:System.Globalization.CultureInfo.Name%2A?displayProperty=nameWithType> property follows the naming standards provided in the <xref:System.Globalization.CultureInfo> class topic. It returns the short form of the culture name that excludes any indication of an alternate sort order. For example, if you instantiate a <xref:System.Globalization.CultureInfo> object by using the string "de-DE_phoneb" to reflect an alternate sort order, the <xref:System.Globalization.CultureInfo.Name%2A> property returns "de-DE".  
   
@@ -3435,7 +3435,7 @@ csc /resource:GreetingStrings.resources Example1.cs
 ## Remarks  
  This method overrides <xref:System.Object.ToString%2A?displayProperty=nameWithType>. It returns a normalized version of the culture name that is passed to the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29> or <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29> constructor or to the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A> or <xref:System.Globalization.CultureInfo.GetCultureInfo%28System.String%29> method. It normalizes the result string by converting characters in *languagecode2* to lowercase and converting characters in *country/regioncode2* to uppercase if necessary.  
   
- Predefined culture names are listed in the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) page at the Go Global Developer Center.  
+ Predefined culture names are listed in the [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) page at the Go Global Developer Center.  
   
  ]]></format>
         </remarks>

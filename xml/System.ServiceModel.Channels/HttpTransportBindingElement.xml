@@ -1054,7 +1054,7 @@ httpBinding.ProxyAuthenticationScheme = AuthenticationSchemes.Digest;
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Servers use realms to partition protected resources; each partition can have its own authentication scheme or authorization database. Realms are used only for basic and digest authentication. After a client successfully authenticates, the authentication is valid for all resources in a given realm. For a detailed description of realms, see [RFC 2617](http://go.microsoft.com/fwlink/?LinkID=95943).  
+ Servers use realms to partition protected resources; each partition can have its own authentication scheme or authorization database. Realms are used only for basic and digest authentication. After a client successfully authenticates, the authentication is valid for all resources in a given realm. For a detailed description of realms, see [RFC 2617](https://go.microsoft.com/fwlink/?LinkID=95943).  
   
  ]]></format>
         </remarks>

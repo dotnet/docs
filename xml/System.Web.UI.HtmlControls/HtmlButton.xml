@@ -41,12 +41,12 @@
  To perform a set of custom instructions when the <xref:System.Web.UI.HtmlControls.HtmlButton> control is clicked, provide a custom event handler for the <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.HtmlControls.HtmlButton> control renders ECMAScript to the client browser. The client browser must have ECMAScript enabled for this control to function properly. For more information on client script, see [Client Script in ASP.NET Web Pages](http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa).  
+>  The <xref:System.Web.UI.HtmlControls.HtmlButton> control renders ECMAScript to the client browser. The client browser must have ECMAScript enabled for this control to function properly. For more information on client script, see [Client Script in ASP.NET Web Pages](https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlButton>, see the <xref:System.Web.UI.HtmlControls.HtmlButton.%23ctor%2A> constructor.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](https://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
    
   
@@ -60,7 +60,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" />
     <altmember cref="E:System.Web.UI.HtmlControls.HtmlButton.ServerClick" />
-    <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

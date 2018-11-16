@@ -151,7 +151,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The eTag associated with the entity is used to represent original values for use with optimistic concurrency checks according to eTag rules in HTTP [RFC 2616](http://go.microsoft.com/fwlink/?LinkID=114956).  
+ The eTag associated with the entity is used to represent original values for use with optimistic concurrency checks according to eTag rules in HTTP [RFC 2616](https://go.microsoft.com/fwlink/?LinkID=114956).  
   
  The value may be empty or null. Null represents the case in which no eTag is currently associated with the entity.  
   
@@ -365,7 +365,7 @@
 ## Remarks  
  The <xref:System.Data.Services.Client.EntityDescriptor.StreamETag%2A> property returns an eTag value that indicates the state of the Media Resource targeted for update since the last call to <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> when the entity is a media link entry.  
   
- The eTag associated with the media resource is used to represent original values for use with optimistic concurrency checks according to eTag rules in HTTP [RFC 2616](http://go.microsoft.com/fwlink/?LinkID=114956).  
+ The eTag associated with the media resource is used to represent original values for use with optimistic concurrency checks according to eTag rules in HTTP [RFC 2616](https://go.microsoft.com/fwlink/?LinkID=114956).  
   
  The value may be empty or null. Null represents the case in which no eTag is currently associated with the Media Resource.  
   

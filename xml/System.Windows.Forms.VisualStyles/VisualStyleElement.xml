@@ -32,7 +32,7 @@
   
  To draw a visual style element, create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>, set it to the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> you wish to draw, and then call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawBackground%2A> method. To determine whether the current visual style provides a definition for a particular element, call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsElementDefined%2A> method with the element as the argument.  
   
- <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> wrap the functionality of the visual styles API from the Windows Shell portion of the Windows Platform SDK. For more information on visual styles, see "Using Windows XP Visual Styles" in the Platform SDK portion of the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library/).  
+ <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> wrap the functionality of the visual styles API from the Windows Shell portion of the Windows Platform SDK. For more information on visual styles, see "Using Windows XP Visual Styles" in the Platform SDK portion of the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library/).  
   
    
   
@@ -79,7 +79,7 @@
 ## Remarks  
  A class name refers to a group of related visual style elements that are typically drawn together. A class name can correspond to a control, such as "SCROLLBAR" and "TRACKBAR", but a class name can also refer to a group of elements that do not correspond to a particular control, such as "EXPLORERBAR" and "STARTPANEL".  
   
- For more information on visual style classes, parts, and states, see "Parts and States" in the Windows Shell documentation at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+ For more information on visual style classes, parts, and states, see "Parts and States" in the Windows Shell documentation at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
   
  ]]></format>
         </remarks>
@@ -147,7 +147,7 @@
 ## Remarks  
  A part is a discrete member of a class of visual style elements. For example, visual style elements that represent a check box, radio button, and push button are all considered parts of the "BUTTON" class.  
   
- Part values are integers that range from 1 to the number of parts defined for a particular class. For more information on visual style classes, parts, and states, see "Parts and States" in the Windows Shell documentation at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+ Part values are integers that range from 1 to the number of parts defined for a particular class. For more information on visual style classes, parts, and states, see "Parts and States" in the Windows Shell documentation at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
   
  ]]></format>
         </remarks>
@@ -185,7 +185,7 @@
 ## Remarks  
  A visual style part can have one or more visual states. For example, a visual style element that represents a radio button can be in the disabled, checked, or unchecked state.  
   
- State values are integers that range from 1 to the number of states defined for a particular part. For more information on visual style classes, parts, and states, see "Parts and States" in the Windows Shell documentation located at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+ State values are integers that range from 1 to the number of states defined for a particular part. For more information on visual style classes, parts, and states, see "Parts and States" in the Windows Shell documentation located at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
   
  ]]></format>
         </remarks>

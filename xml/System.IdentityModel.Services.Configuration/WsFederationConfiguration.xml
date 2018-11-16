@@ -25,7 +25,7 @@
     </remarks>
     <altmember cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" />
     <altmember cref="P:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration" />
-    <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -66,7 +66,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.IdentityModel.Services.Configuration.WSFederationElement" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -125,7 +125,7 @@
         <value>A URI that specifies the authentication type. The default is an empty string.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.AuthenticationType" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="CustomAttributes">
@@ -147,7 +147,7 @@
         <summary>Gets a dictionary that contains any extra attributes specified in the <see langword="&lt;wsFederation&gt;" /> element in the configuration file.</summary>
         <value>The dictionary that contains the extra attributes.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultFreshness">
@@ -293,7 +293,7 @@
         <value>The desired maximum age of authentication requests, in minutes. The default is <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultFreshness" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Freshness" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="HomeRealm">
@@ -316,7 +316,7 @@
         <value>The address of the home realm identity provider. The default is an empty string.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.HomeRealm" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="Issuer">
@@ -340,7 +340,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Issuer" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="PassiveRedirectEnabled">
@@ -364,7 +364,7 @@
           <see langword="true" /> to enable redirects; otherwise, <see langword="false" />. The default is <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultPassiveRedirectEnabled" />, redirects are enabled.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.PassiveRedirectEnabled" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="PersistentCookiesOnPassiveRedirects">
@@ -388,7 +388,7 @@
           <see langword="true" /> to issue a persistent session cookie; otherwise, <see langword="false" />. The default is <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultPersistentCookiesOnPassiveRedirects" />, cookies are not enabled.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.PersistentCookiesOnPassiveRedirects" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="Policy">
@@ -411,7 +411,7 @@
         <value>A URL that identifies the policy to use. The default is an empty string.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Policy" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="Realm">
@@ -435,7 +435,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Realm" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="Reply">
@@ -458,7 +458,7 @@
         <value>A URL that identifies the address at which the relying party (RP) application would like to receive replies from the Security Token Service (STS). The default is an empty string.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Reply" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="Request">
@@ -481,7 +481,7 @@
         <value>The token issuance request expressed as a <see langword="&lt;wst:RequestSecurityToken&gt;" /> element. The default is an empty string.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Request" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="RequestPtr">
@@ -504,7 +504,7 @@
         <value>A URL that specifies the location of the token issuance request expressed as a <see langword="&lt;wst:RequestSecurityToken&gt;" /> element</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.RequestPtr" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="RequireHttps">
@@ -528,7 +528,7 @@
           <see langword="true" /> if communication with the STS must be secured using HTTPS; otherwise, <see langword="false" />. The default is <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultRequireHttps" />, HTTPS is required.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.RequireHttps" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="Resource">
@@ -558,7 +558,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Resource" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="SignInQueryString">
@@ -581,7 +581,7 @@
         <value>A URL fragment that contains the additional message parameters in the following format: <c>"?param1=value1&amp;param2=value2&amp;paramN=valueN"</c>. The default is an empty string.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.SignInQueryString" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="SignOutQueryString">
@@ -604,7 +604,7 @@
         <value>A URL fragment that contains the additional message parameters in the following format: <c>"?param1=value1&amp;param2=value2&amp;paramN=valueN"</c>. The default is an empty string.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOutQueryString" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="SignOutReply">
@@ -627,7 +627,7 @@
         <value>The URL to which the client should be redirected by the security token service (STS) during passive sign-out through the WS-Federation protocol. The default is an empty string.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOutReply" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="XmlDictionaryReaderQuotas">

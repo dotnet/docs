@@ -35,7 +35,7 @@
 > [!CAUTION]
 >  The order of the roles in the <xref:System.Web.UI.WebControls.RoleGroupCollection> collection is important because matching is done sequentially based on the first role found.  
   
- You must configure role management to use the <xref:System.Web.UI.WebControls.RoleGroupCollection> class to manage a list of role groups. For more information, see [Understanding Role Management](http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6).  
+ You must configure role management to use the <xref:System.Web.UI.WebControls.RoleGroupCollection> class to manage a list of role groups. For more information, see [Understanding Role Management](https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6).  
   
  ]]></format>
     </remarks>
@@ -197,7 +197,7 @@
   
  If the specified user account is not part of any of the role groups in the collection, `null` is returned.  
   
- You must configure role management to use the <xref:System.Web.UI.WebControls.RoleGroupCollection.GetMatchingRoleGroup%2A> method. For more information, see [Understanding Role Management](http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6).  
+ You must configure role management to use the <xref:System.Web.UI.WebControls.RoleGroupCollection.GetMatchingRoleGroup%2A> method. For more information, see [Understanding Role Management](https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6).  
   
  ]]></format>
         </remarks>

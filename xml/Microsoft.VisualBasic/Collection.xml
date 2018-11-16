@@ -50,7 +50,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Whenever possible, you should use the generic collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace or the <xref:System.Collections.Concurrent> namespace instead of a Visual Basic `Collection`. For more information, see [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b).  
+>  Whenever possible, you should use the generic collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace or the <xref:System.Collections.Concurrent> namespace instead of a Visual Basic `Collection`. For more information, see [Collections](https://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b).  
   
  The Visual Basic `Collection` object provides a convenient way to refer to a related group of items as a single object. The items, or *elements*, in a collection need only be related by the fact that they exist in the collection. Elements of a collection do not have to share the same data type.  
   

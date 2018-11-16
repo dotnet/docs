@@ -3954,7 +3954,7 @@ When a time interval component in the string to be parsed contains more than sev
 |"*fffffff*"|Fractional seconds in the time interval. This element is omitted if the time interval does not include fractional seconds. If present, fractional seconds are always expressed using seven decimal digits.|  
   
 > [!NOTE]
->  For more information about comparing the string representation of <xref:System.TimeSpan> and Oracle data types, see Knowledge Base article [324577: System.TimeSpan Does Not Match Oracle 9i INTERVAL DAY TO SECOND Data Type](http://go.microsoft.com/fwlink/?LinkId=161146).  
+>  For more information about comparing the string representation of <xref:System.TimeSpan> and Oracle data types, see Knowledge Base article [324577: System.TimeSpan Does Not Match Oracle 9i INTERVAL DAY TO SECOND Data Type](https://go.microsoft.com/fwlink/?LinkId=161146).  
   
    
   

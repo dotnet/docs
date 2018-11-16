@@ -124,14 +124,14 @@
 >  For an input control to be validated, the <xref:System.Web.UI.ValidationPropertyAttribute?displayProperty=nameWithType> attribute must be applied to the control.  
   
 > [!NOTE]
->  When you use validator controls that derive from <xref:System.Web.UI.WebControls.BaseValidator> inside an <xref:System.Web.UI.UpdatePanel> control, make sure that the validator control and the control it is associated with are in the same panel. For more information about using the <xref:System.Web.UI.UpdatePanel> control for partial-page updates, see [Partial-Page Rendering Overview](http://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
+>  When you use validator controls that derive from <xref:System.Web.UI.WebControls.BaseValidator> inside an <xref:System.Web.UI.UpdatePanel> control, make sure that the validator control and the control it is associated with are in the same panel. For more information about using the <xref:System.Web.UI.UpdatePanel> control for partial-page updates, see [Partial-Page Rendering Overview](https://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
   
  When validation fails, you can set the focus on the associated input control by setting the <xref:System.Web.UI.WebControls.BaseValidator.SetFocusOnError%2A> property to `true`.  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.BaseValidator>, see the <xref:System.Web.UI.WebControls.BaseValidator.%23ctor%2A> constructor.  
   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
    
   
@@ -139,7 +139,7 @@
  The following code example demonstrates how to use multiple validation controls to verify that the user enters a valid value in a <xref:System.Web.UI.WebControls.TextBox> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  
@@ -444,7 +444,7 @@
   
  All validation controls, except the <xref:System.Web.UI.WebControls.RequiredFieldValidator> control, will pass validation if the input control specified by the <xref:System.Web.UI.WebControls.BaseValidator.ControlToValidate%2A> property contains no text. If you are using a <xref:System.Web.UI.WebControls.CustomValidator> control, the client-side and server-side validation functions are not called either.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -550,7 +550,7 @@
 > [!NOTE]
 >  The display behavior depends on whether client-side validation is performed. If client-side validation is not active (because the browser does not support it or because it has been disabled by using the <xref:System.Web.UI.Page.ClientTarget%2A?displayProperty=nameWithType> page directive or <xref:System.Web.UI.WebControls.BaseValidator.EnableClientScript%2A> property), `ValidatorDisplay.Static` and `ValidatorDisplay.Dynamic` behave the same way: the error message takes up space only if it is displayed. The ability to dynamically allocate space for the message when it is not being displayed (`ValidatorDisplay.Dynamic`) only works with client-side validation.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -558,7 +558,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseValidator.Display%2A> property to specify that space for the validation message is added to the Web page dynamically when validation fails.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  
@@ -608,7 +608,7 @@
   
  By default, this value is set to `true`, which enables client-side validation if the browser supports it. You can disable client-side validation on a control-by-control basis. This is useful if dynamic updating on the client creates problems with the layout of the page, or if you want to execute some server code before validation takes place.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -616,7 +616,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseValidator.EnableClientScript%2A> property to disable client-side validation so that the random numbers can be generated on the server.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  
@@ -666,7 +666,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseValidator.Enabled%2A> property to enable or disable the validation controls on the Web page using server-side code.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[Classic BaseValidator.Enabled Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator.Enabled Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic BaseValidator.Enabled Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator.Enabled Example/VB/sourcevb.aspx#1)]  
@@ -722,7 +722,7 @@
 > [!NOTE]
 >  If you set the <xref:System.Web.UI.WebControls.BaseValidator.ErrorMessage%2A> property without setting the <xref:System.Web.UI.WebControls.BaseValidator.Text%2A> property, the value of the <xref:System.Web.UI.WebControls.BaseValidator.ErrorMessage%2A> property is also displayed in the validation control.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -730,7 +730,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseValidator.ErrorMessage%2A> property to specify different messages for the <xref:System.Web.UI.WebControls.ValidationSummary> control and the <xref:System.Web.UI.WebControls.RequiredFieldValidator> and <xref:System.Web.UI.WebControls.CompareValidator> controls.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  
@@ -819,7 +819,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseValidator.ForeColor%2A> property to display the validation message in blue.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[Classic BaseValidator.ForeColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator.ForeColor Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic BaseValidator.ForeColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator.ForeColor Example/VB/sourcevb.aspx#1)]  
@@ -1036,7 +1036,7 @@
   
  The <xref:System.Web.UI.Page.IsValid%2A?displayProperty=nameWithType> property for the page is set to `true` only if the <xref:System.Web.UI.WebControls.BaseValidator.IsValid%2A> property for each validation control on the page is also set to `true`.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -1044,7 +1044,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseValidator.IsValid%2A> property to determine whether the associated input control passes validation.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[BaseValidatorIsValid#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseValidatorIsValid/CS/basevalidatorisvalidcs.aspx#1)]
  [!code-aspx-vb[BaseValidatorIsValid#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseValidatorIsValid/VB/basevalidatorisvalidvb.aspx#1)]  
@@ -1090,7 +1090,7 @@
   
 -   The <xref:System.Web.UI.WebControls.WebControl.ForeColor%2A> property is not already set.  
   
--   The <xref:System.Web.UI.Control.RenderingCompatibility%2A> property indicates an ASP.NET version earlier than `4.0`. By default, validator controls in ASP.NET 4 and later versions do not display errors in red. For information about how to control the visual appearance of validator controls, see [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+-   The <xref:System.Web.UI.Control.RenderingCompatibility%2A> property indicates an ASP.NET version earlier than `4.0`. By default, validator controls in ASP.NET 4 and later versions do not display errors in red. For information about how to control the visual appearance of validator controls, see [Validating User Input in ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  This method also registers the validation control on the page.  
   
@@ -1410,7 +1410,7 @@
   
  If multiple validation controls fail and this property is set to `true`, the control specified in the <xref:System.Web.UI.WebControls.BaseValidator.ControlToValidate%2A> property for the first validation control receives focus.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
@@ -1564,7 +1564,7 @@
   
  These controls each have a `ValidationGroup` property that, when set, validates only the validation controls within the specified group when the control triggers a post back to the server. Use the <xref:System.Web.UI.WebControls.BaseValidator.ValidationGroup%2A> property to assign a validation control to a validation group. The <xref:System.Web.UI.Page> class also exposes a <xref:System.Web.UI.Page.GetValidators%2A> method and a <xref:System.Web.UI.Page.Validate%2A> method that accept a <xref:System.Web.UI.WebControls.BaseValidator.ValidationGroup%2A> input parameter.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -1572,7 +1572,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseValidator.ValidationGroup%2A> property to assign a validation control to a group.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[BaseValidatorValidationGroup#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseValidatorValidationGroup/CS/BaseValidatorValidationGroupcs.aspx#1)]
  [!code-aspx-vb[BaseValidatorValidationGroup#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseValidatorValidationGroup/VB/BaseValidatorValidationGroupvb.aspx#1)]  

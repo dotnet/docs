@@ -28,7 +28,7 @@
 ## Remarks  
  The <xref:System.Web.UI.MobileControls.DeviceSpecificControlBuilder> class is internally created and used by the page parser when parsing a [\<DeviceSpecific>](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)) element.  
   
- The <xref:System.Web.UI.MobileControls.DeviceSpecificControlBuilder> class implements the following persistence behaviors: It ignores white space directly inside the control, and it allows only a [\<Choice>](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element as child.  
+ The <xref:System.Web.UI.MobileControls.DeviceSpecificControlBuilder> class implements the following persistence behaviors: It ignores white space directly inside the control, and it allows only a [\<Choice>](https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element as child.  
   
  ]]></format>
     </remarks>

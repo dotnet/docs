@@ -668,9 +668,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property enables Teredo for the underlying TCP socket. For more information, see [Teredo Overview](http://go.microsoft.com/fwlink/?LinkId=96649).  
+ This property enables Teredo for the underlying TCP socket. For more information, see [Teredo Overview](https://go.microsoft.com/fwlink/?LinkId=96649).  
   
- This property is applicable only on [!INCLUDE[wxpsp2](~/includes/wxpsp2-md.md)] and [!INCLUDE[ws2003](~/includes/ws2003-md.md)]. [!INCLUDE[wv](~/includes/wv-md.md)] has a machine-wide configuration option for Teredo, so when running [!INCLUDE[wv](~/includes/wv-md.md)], this property is ignored. Teredo requires that the client and service machines both have the Microsoft IPv6 stack installed and correctly configured for Teredo usage. For more information about configuring Teredo, see [Teredo Overview](http://go.microsoft.com/fwlink/?LinkId=96649). For more information about Microsoft IPv6 stack installation, see [Windows Server 2003 Technology Centers](http://go.microsoft.com/fwlink/?LinkId=96650).  
+ This property is applicable only on [!INCLUDE[wxpsp2](~/includes/wxpsp2-md.md)] and [!INCLUDE[ws2003](~/includes/ws2003-md.md)]. [!INCLUDE[wv](~/includes/wv-md.md)] has a machine-wide configuration option for Teredo, so when running [!INCLUDE[wv](~/includes/wv-md.md)], this property is ignored. Teredo requires that the client and service machines both have the Microsoft IPv6 stack installed and correctly configured for Teredo usage. For more information about configuring Teredo, see [Teredo Overview](https://go.microsoft.com/fwlink/?LinkId=96649). For more information about Microsoft IPv6 stack installation, see [Windows Server 2003 Technology Centers](https://go.microsoft.com/fwlink/?LinkId=96650).  
   
    
   

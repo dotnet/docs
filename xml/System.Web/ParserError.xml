@@ -27,7 +27,7 @@
 ## Remarks  
  A <xref:System.Web.ParserError> object represents an error that is created when an <xref:System.Web.HttpParseException> exception is thrown. A parser error object can contain error message text, a virtual path to the file where the error occurred, and the subsequent line number of the error in that file. If more than one parser error occurs or you want to store multiple parser errors in a centralized location, use the <xref:System.Web.ParserErrorCollection> object.  
   
- A parser error is of the type <xref:System.Web.HttpException>. For more information on exceptions and how to handle them, go to [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118).  
+ A parser error is of the type <xref:System.Web.HttpException>. For more information on exceptions and how to handle them, go to [MSDN Library](https://go.microsoft.com/fwlink/?linkid=37118).  
   
    
   

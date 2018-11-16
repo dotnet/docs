@@ -23,7 +23,7 @@
 ## Remarks  
  The <xref:System.Web.HttpCachePolicy.VaryByParams%2A> property identifies which HTTP `Get` or `Post` parameters ASP.NET uses to uniquely identify a variation of the response when there are multiple cached responses for a resource. This is useful when a response depends on a set of client inputs, such as headers or parameters.  
   
- The <xref:System.Web.HttpCacheVaryByParams> is not directly related to HTTP cache-control headers, but helps ensure that a client or proxy varies by the specified parameters. For more information about `VaryByParams`, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web](http://go.microsoft.com/fwlink/?linkid=37125) site. See section 14, "Header Field Definitions", for complete details.  
+ The <xref:System.Web.HttpCacheVaryByParams> is not directly related to HTTP cache-control headers, but helps ensure that a client or proxy varies by the specified parameters. For more information about `VaryByParams`, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web](https://go.microsoft.com/fwlink/?linkid=37125) site. See section 14, "Header Field Definitions", for complete details.  
   
    
   
@@ -39,7 +39,7 @@
     <altmember cref="T:System.Web.UI.BasePartialCachingControl" />
     <altmember cref="T:System.Web.UI.StaticPartialCachingControl" />
     <altmember cref="T:System.Web.HttpCacheVaryByHeaders" />
-    <related type="Article" href="http://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,7 +106,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting the <xref:System.Web.HttpCacheVaryByParams.IgnoreParams%2A> property to `true` is equivalent to setting the [@ OutputCache](http://msdn.microsoft.com/library/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive `VaryByParams` attribute to "none" for the resource.  
+ Setting the <xref:System.Web.HttpCacheVaryByParams.IgnoreParams%2A> property to `true` is equivalent to setting the [@ OutputCache](https://msdn.microsoft.com/library/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive `VaryByParams` attribute to "none" for the resource.  
   
  ]]></format>
         </remarks>
@@ -157,8 +157,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="header" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/a504b287-c8d2-4838-9817-3ffee416fec4">How to: Cache Versions of a Page, Based on Parameters</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a504b287-c8d2-4838-9817-3ffee416fec4">How to: Cache Versions of a Page, Based on Parameters</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
       </Docs>
     </Member>
     <Member MemberName="SetParams">

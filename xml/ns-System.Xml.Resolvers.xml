@@ -11,7 +11,7 @@
   
  The <xref:System.Xml.Resolvers.XmlKnownDtds> enumeration defines which well-known DTDs the <xref:System.Xml.Resolvers.XmlPreloadedResolver> recognizes. The <xref:System.Xml.Resolvers.XmlKnownDtds> enumeration contains the `Xhtml10`, `Rss091`, `All`, and `None` values.  
   
- `XmlKnownDtd.Xhtml10` specifies that the `T:System.Xml.Resolvers.XmlPreloadedResolver` will recognize DTDs and entities that are defined in XHTML 1.0. For more information about XHTML, see the [XHTML 1.0 specification](http://go.microsoft.com/fwlink/?LinkID=109812).  
+ `XmlKnownDtd.Xhtml10` specifies that the `T:System.Xml.Resolvers.XmlPreloadedResolver` will recognize DTDs and entities that are defined in XHTML 1.0. For more information about XHTML, see the [XHTML 1.0 specification](https://go.microsoft.com/fwlink/?LinkID=109812).  
   
  `XmlKnownDtd.Rss091` specifies that the `T:System.Xml.Resolvers.XmlPreloadedResolver` will recognize DTDs and entities that are defined in RSS 0.91.  
   

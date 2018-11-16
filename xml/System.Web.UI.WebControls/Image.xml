@@ -49,7 +49,7 @@
   
 <a name="accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -97,7 +97,7 @@
  The following example demonstrates how to create an <xref:System.Web.UI.WebControls.Image> control on a Web page.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic Image Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Image Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic Image Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Image Example/VB/sourcevb.aspx#1)]  
@@ -107,8 +107,8 @@
     <altmember cref="P:System.Web.UI.WebControls.Image.ImageUrl" />
     <altmember cref="P:System.Web.UI.WebControls.Image.AlternateText" />
     <altmember cref="P:System.Web.UI.WebControls.Image.ImageAlign" />
-    <related type="Article" href="http://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9">Image Web Server Control Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9">Image Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -139,7 +139,7 @@
  The following example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Image> class.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic Image.Image Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Image.Image Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic Image.Image Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Image.Image Example/VB/sourcevb.aspx#1)]  
@@ -223,7 +223,7 @@
 ## Remarks  
  Use this property to specify the text to display if the image specified in the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property is not available. In browsers that support the ToolTips feature, this text also displays as a ToolTip.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   

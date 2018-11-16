@@ -28,7 +28,7 @@
   
 <a name="related"></a>   
 ## Related namespaces  
- The .NET Framework also provides other namespaces for XML-related operations. For a list, descriptions, and links, see the [System.Xml Namespaces](http://msdn.microsoft.com/library/gg145036.aspx) webpage.  
+ The .NET Framework also provides other namespaces for XML-related operations. For a list, descriptions, and links, see the [System.Xml Namespaces](https://msdn.microsoft.com/library/gg145036.aspx) webpage.  
   
 <a name="async"></a>   
 ## Processing XML asynchronously  
@@ -52,7 +52,7 @@
   
  **Consistency in element declarations:**  
   
- In some cases, when substitution groups are used, the <xref:System.Xml> implementation does not satisfy the "Schema Component Constraint: Element Declarations Consistent," which is described in the [Constraints on Model Group Schema Components](http://go.microsoft.com/fwlink/?LinkId=137029) section of the W3C spec.  
+ In some cases, when substitution groups are used, the <xref:System.Xml> implementation does not satisfy the "Schema Component Constraint: Element Declarations Consistent," which is described in the [Constraints on Model Group Schema Components](https://go.microsoft.com/fwlink/?LinkId=137029) section of the W3C spec.  
   
  For example, the following schema includes elements that have the same name but different types in the same content model, and substitution groups are used. This should cause an error, but <xref:System.Xml> compiles and validates the schema without errors.  
   
@@ -84,7 +84,7 @@
   
  **Unique particle attribution:**  
   
- Under the following conditions, the <xref:System.Xml> implementation does not satisfy the "Schema Component Constraint: Unique Particle Attribution," which is described in the [Constraints on Model Group Schema Components](http://go.microsoft.com/fwlink/?LinkId=137029) section of the W3C spec.  
+ Under the following conditions, the <xref:System.Xml> implementation does not satisfy the "Schema Component Constraint: Unique Particle Attribution," which is described in the [Constraints on Model Group Schema Components](https://go.microsoft.com/fwlink/?LinkId=137029) section of the W3C spec.  
   
 -   One of the elements in the group references another element.  
   
@@ -243,6 +243,6 @@
     <altmember cref="N:System.Xml.Xsl" />
     <altmember cref="N:System.Xml.Schema" />
     <altmember cref="N:System.Xml.Linq" />
-    <related type="Article" href="http://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
   </Docs>
 </Namespace>

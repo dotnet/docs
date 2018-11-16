@@ -54,7 +54,7 @@
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewItem> class to access the properties of the item that is being created in the <xref:System.Web.UI.WebControls.ListView> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.WebControls.ListViewItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItem/CS/ListViewItemCS.aspx#1)]
  [!code-aspx-vb[System.Web.UI.WebControls.ListViewItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItem/VB/ListViewItemVB.aspx#1)]  
@@ -66,7 +66,7 @@
     <altmember cref="T:System.Web.UI.WebControls.ListViewDataItem" />
     <altmember cref="P:System.Web.UI.Control.Controls" />
     <altmember cref="M:System.Web.UI.Control.FindControl(System.String)" />
-    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -109,7 +109,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="P:System.Web.UI.WebControls.ListView.Items" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -232,7 +232,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -263,7 +263,7 @@
           <see langword="true" /> if the event has been canceled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
   </Members>

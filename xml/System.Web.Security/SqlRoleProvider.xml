@@ -86,7 +86,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -117,7 +117,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="AddUsersToRoles">
@@ -205,7 +205,7 @@
  -or-  
   
  An unknown error occurred while communicating with the database.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="ApplicationName">
@@ -272,7 +272,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt was made to set the <see cref="P:System.Web.Security.SqlRoleProvider.ApplicationName" /> property by a caller that does not have <see cref="F:System.Web.AspNetHostingPermissionLevel.High" /> ASP.NET hosting permission.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">An attempt was made to set the <see cref="P:System.Web.Security.SqlRoleProvider.ApplicationName" /> to a string that is longer than 256 characters.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="CreateRole">
@@ -311,7 +311,7 @@
  The following code example creates a new role in the database. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.SqlRoleProvider>.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]
  [!code-aspx-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  
@@ -332,7 +332,7 @@
  -or-  
   
  An unknown error occurred while communicating with the database.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteRole">
@@ -393,7 +393,7 @@
  -or-  
   
  An unknown error occurred while communicating with the database.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="FindUsersInRole">
@@ -433,7 +433,7 @@
  The following code example uses the <xref:System.Web.Security.Roles.FindUsersInRole%2A> method to display role membership based on user input. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Security.Roles#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/FindUsersInRolecs.aspx#11)]
  [!code-aspx-vb[System.Web.Security.Roles#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/FindUsersInRolevb.aspx#11)]  
@@ -466,7 +466,7 @@
  -or-  
   
  An unknown error occurred while communicating with the database.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllRoles">
@@ -501,7 +501,7 @@
  The following code example uses the <xref:System.Web.Security.Roles.GetAllRoles%2A> method to get the list of roles for an application and bind the results to a <xref:System.Web.UI.WebControls.GridView?displayProperty=nameWithType> control. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.SqlRoleProvider>.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]
  [!code-aspx-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  
@@ -509,7 +509,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">An unknown error occurred while communicating with the database.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="GetRolesForUser">
@@ -560,7 +560,7 @@
   
  <paramref name="username" /> is longer than 256 characters.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">An unknown error occurred while communicating with the database.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="GetUsersInRole">
@@ -616,7 +616,7 @@
  -or-  
   
  An unknown error occurred while communicating with the database.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -663,7 +663,7 @@
  -or-  
   
  The application configuration file for this <see cref="T:System.Web.Security.SqlRoleProvider" /> instance contains an unrecognized attribute.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="IsUserInRole">
@@ -729,7 +729,7 @@
   
  <paramref name="username" /> is longer than 256 characters.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">An unknown error occurred while communicating with the database.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveUsersFromRoles">
@@ -815,7 +815,7 @@
  -or-  
   
  An unknown error occurred while communicating with the database.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="RoleExists">
@@ -854,7 +854,7 @@
  The following code example uses the <xref:System.Web.Security.Roles.RoleExists%2A> method to determine whether a role name already exists before creating the role. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.SqlRoleProvider>.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]
  [!code-aspx-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  
@@ -870,7 +870,7 @@
   
  <paramref name="roleName" /> is longer than 256 characters.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">An unknown error occurred while communicating with the database.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
   </Members>

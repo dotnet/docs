@@ -54,7 +54,7 @@
   
  If you want to disable all ToolTip text so that it cannot be displayed in your application, you can use the <xref:System.Windows.Forms.ToolTip.Active%2A> property. Usually the ToolTip is drawn by the operating system, but to customize the appearance of the <xref:System.Windows.Forms.ToolTip>, you can set the <xref:System.Windows.Forms.ToolTip.OwnerDraw%2A> property to `true` and handle the <xref:System.Windows.Forms.ToolTip.Draw> event.  
   
- The <xref:System.Windows.Forms.ToolTip.ToolTipTitle%2A> class implements the <xref:System.ComponentModel.IExtenderProvider?displayProperty=nameWithType> interface, which has a single method, <xref:System.Windows.Forms.ToolTip.CanExtend%2A>. ToolTips extend controls on the same form at design time, adding a `ToolTip` property. For more information about extender providers, see [Extender Providers](http://msdn.microsoft.com/library/4ce043d8-cd48-49dd-abef-185a2079e96a).  
+ The <xref:System.Windows.Forms.ToolTip.ToolTipTitle%2A> class implements the <xref:System.ComponentModel.IExtenderProvider?displayProperty=nameWithType> interface, which has a single method, <xref:System.Windows.Forms.ToolTip.CanExtend%2A>. ToolTips extend controls on the same form at design time, adding a `ToolTip` property. For more information about extender providers, see [Extender Providers](https://msdn.microsoft.com/library/4ce043d8-cd48-49dd-abef-185a2079e96a).  
   
    
   
@@ -69,8 +69,8 @@
     </remarks>
     <altmember cref="T:System.Windows.Forms.ToolTipIcon" />
     <altmember cref="T:System.Windows.Forms.HelpProvider" />
-    <related type="Article" href="http://msdn.microsoft.com/library/4ce043d8-cd48-49dd-abef-185a2079e96a">Extender Providers</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/82e71dc3-0159-4f91-9f22-499224f004a0">ToolTip Component (Windows Forms)</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/4ce043d8-cd48-49dd-abef-185a2079e96a">Extender Providers</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/82e71dc3-0159-4f91-9f22-499224f004a0">ToolTip Component (Windows Forms)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

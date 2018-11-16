@@ -60,7 +60,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A form represents the outermost grouping of controls within an ASP.NET mobile Web page. An individual mobile Web page can contain multiple forms at the outermost level. Forms cannot be nested; use <xref:System.Web.UI.MobileControls.Panel> controls if you want to nest containers. For more information, see [Introduction to the Form Control](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)). To display a specific form, either set the <xref:System.Web.UI.MobileControls.MobilePage.ActiveForm%2A> property on the current page to the desired form, or set the <xref:System.Web.UI.MobileControls.Link.NavigateUrl%2A> property in a <xref:System.Web.UI.MobileControls.Link> control to the desired form. You can include literal text along with its accompanying markup tags in the text contents of the <xref:System.Web.UI.MobileControls.Form> control. When using templates, it is important to remember that the <xref:System.Web.UI.MobileControls.Form> control creates instances of templates in the <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method for the form. The <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method for the form is called before `Page_Load` and `Page_Init`. Also, the page constructor executes too early to set templates in the <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method because the form is not yet created. To correct this, hook the form's own <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method, and create an instance of the template there. For more information, see [Implementing Templated Rendering](http://msdn.microsoft.com/library/b86d9d1d-ab18-4cad-a825-092826bb3922).  
+ A form represents the outermost grouping of controls within an ASP.NET mobile Web page. An individual mobile Web page can contain multiple forms at the outermost level. Forms cannot be nested; use <xref:System.Web.UI.MobileControls.Panel> controls if you want to nest containers. For more information, see [Introduction to the Form Control](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dxzx3ss0(v=vs.85)). To display a specific form, either set the <xref:System.Web.UI.MobileControls.MobilePage.ActiveForm%2A> property on the current page to the desired form, or set the <xref:System.Web.UI.MobileControls.Link.NavigateUrl%2A> property in a <xref:System.Web.UI.MobileControls.Link> control to the desired form. You can include literal text along with its accompanying markup tags in the text contents of the <xref:System.Web.UI.MobileControls.Form> control. When using templates, it is important to remember that the <xref:System.Web.UI.MobileControls.Form> control creates instances of templates in the <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method for the form. The <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method for the form is called before `Page_Load` and `Page_Init`. Also, the page constructor executes too early to set templates in the <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method because the form is not yet created. To correct this, hook the form's own <xref:System.Web.UI.MobileControls.Form.OnInit%2A> method, and create an instance of the template there. For more information, see [Implementing Templated Rendering](https://msdn.microsoft.com/library/b86d9d1d-ab18-4cad-a825-092826bb3922).  
   
    
   
@@ -68,7 +68,7 @@
  The following code example shows how to create a page with two forms along with links between the two forms. One form has a check box list. When items are selected and the **Submit** button is clicked, the form presents a list of the selected items and their values. Notice that the <xref:System.Web.UI.MobileControls.Form.Activate> event methods prepare the respective forms for display  
   
 > [!NOTE]
->  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
+>  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](https://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
   
  [!code-aspx-csharp[MobileFormSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormSample/cs/Default.aspx#1)]
  [!code-aspx-vb[MobileFormSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default.aspx#1)]  
@@ -186,7 +186,7 @@
  The following code example shows how to set the `OnActivate` attribute in the <xref:System.Web.UI.MobileControls.Form> element to point to a method that executes when the <xref:System.Web.UI.MobileControls.Form.Activate> event occurs. The `Form2_Activate` method prepares the second form for display. This example is part of a larger example for the <xref:System.Web.UI.MobileControls.Form> overview.  
   
 > [!NOTE]
->  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
+>  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](https://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
   
  [!code-csharp[MobileFormSample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormSample/cs/Default.aspx#3)]
  [!code-vb[MobileFormSample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default.aspx#3)]  
@@ -304,7 +304,7 @@
  The example creates a page with two forms. One form has a very long string that on some devices must be paginated to give the user access to the entire text. In order to see the pagination in action, you must view the example on a device that handles pagination. In [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], you can use one of the device emulators available with the **Device Emulator Manager** on the **Tools** menu.  
   
 > [!NOTE]
->  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
+>  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](https://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
   
  [!code-aspx-csharp[MobileFormSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormSample/cs/Default2.aspx#4)]
  [!code-aspx-vb[MobileFormSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default2.aspx#4)]  
@@ -832,7 +832,7 @@
         </remarks>
         <exception cref="T:System.Exception">The form is contained by another form.</exception>
         <altmember cref="T:System.Web.UI.Page" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="OnPaginated">

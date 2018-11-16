@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you select the All value, the system uses the configured data-validation algorithm, based on the [machineKey Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) tag. This is the default, and recommended, value.  
+ If you select the All value, the system uses the configured data-validation algorithm, based on the [machineKey Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) tag. This is the default, and recommended, value.  
   
  If you select None, cookies might be subject to plaintext attacks.  
   

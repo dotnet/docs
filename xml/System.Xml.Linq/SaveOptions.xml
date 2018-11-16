@@ -38,7 +38,7 @@
 ## Remarks  
  If you disable formatting when serializing, all insignificant white space in the XML tree is serialized as is. If you do not disable formatting, then all insignificant white space in the XML tree is discarded, and the XML is formatted (indented) as it is serialized.  
   
- This type allows you to control how LINQ to XML handles white space when serializing. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ This type allows you to control how LINQ to XML handles white space when serializing. For more information, see [Preserving White Space while Loading or Parsing XML](https://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
    
   
@@ -90,8 +90,8 @@ Console.WriteLine(str)
  ]]></format>
     </remarks>
     <altmember cref="T:System.Xml.Linq.LoadOptions" />
-    <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/18680d1c-6e7c-4645-8d53-27b5a96f2d3f">Programming with Nodes</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/18680d1c-6e7c-4645-8d53-27b5a96f2d3f">Programming with Nodes</related>
   </Docs>
   <Members>
     <Member MemberName="DisableFormatting">

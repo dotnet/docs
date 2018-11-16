@@ -281,7 +281,7 @@ Stack Trace:
     </remarks>
     <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
     <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources in Desktop Apps</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1">Assertions in Managed Code</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1">Assertions in Managed Code</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -884,7 +884,7 @@ Stack Trace:
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- HRESULT is a 32-bit value, divided into three different fields: a severity code, a facility code, and an error code. The severity code indicates whether the return value represents information, warning, or error. The facility code identifies the area of the system responsible for the error. The error code is a unique number that is assigned to represent the exception. Each exception is mapped to a distinct HRESULT. When managed code throws an exception, the runtime passes the HRESULT to the COM client. When unmanaged code returns an error, the HRESULT is converted to an exception, which is then thrown by the runtime. For information about HRESULT values and their corresponding .NET Framework exceptions, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md). See [Common HRESULT Values](http://msdn.microsoft.com/library/windows/desktop/aa378137.aspx) in the Windows documentation for a list of the values you are most likely to encounter.  
+ HRESULT is a 32-bit value, divided into three different fields: a severity code, a facility code, and an error code. The severity code indicates whether the return value represents information, warning, or error. The facility code identifies the area of the system responsible for the error. The error code is a unique number that is assigned to represent the exception. Each exception is mapped to a distinct HRESULT. When managed code throws an exception, the runtime passes the HRESULT to the COM client. When unmanaged code returns an error, the HRESULT is converted to an exception, which is then thrown by the runtime. For information about HRESULT values and their corresponding .NET Framework exceptions, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md). See [Common HRESULT Values](https://msdn.microsoft.com/library/windows/desktop/aa378137.aspx) in the Windows documentation for a list of the values you are most likely to encounter.  
   
  Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Exception.HResult%2A> property's setter is protected, whereas its getter is public.  In previous versions of the .NET Framework, both getter and setter are protected.  
   
@@ -899,8 +899,8 @@ Stack Trace:
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/610b364b-2761-429d-9c4a-afbc3e66f1b9">How to: Map HRESULTs and Exceptions</related>
-        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/windows/desktop/aa378137.aspx">Common HRESULT Values</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/610b364b-2761-429d-9c4a-afbc3e66f1b9">How to: Map HRESULTs and Exceptions</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/aa378137.aspx">Common HRESULT Values</related>
       </Docs>
     </Member>
     <Member MemberName="InnerException">

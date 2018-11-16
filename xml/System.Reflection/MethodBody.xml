@@ -40,7 +40,7 @@
  You can use the token-resolution methods of the module class, such as <xref:System.Reflection.Module.ResolveType%2A>, <xref:System.Reflection.Module.ResolveMethod%2A>, and <xref:System.Reflection.Module.ResolveType%2A>, to resolve the tokens in the method body to <xref:System.Type> objects, <xref:System.Reflection.MethodInfo> objects, and <xref:System.Reflection.FieldInfo> objects that provide detailed information about the types, methods, and fields accessed by the MSIL in the method body.  
   
 > [!NOTE]
->  Parsing method bodies requires a thorough understanding of metadata and MSIL instruction formats. Information can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+>  Parsing method bodies requires a thorough understanding of metadata and MSIL instruction formats. Information can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
  To obtain a <xref:System.Reflection.MethodBody> object for a given method, first obtain a <xref:System.Reflection.MethodInfo> object for the method, then call the <xref:System.Reflection.MethodInfo> object's <xref:System.Reflection.MethodBase.GetMethodBody%2A> method.  
   
@@ -132,7 +132,7 @@
  The list includes all clauses from all try blocks in the method body. Each <xref:System.Reflection.ExceptionHandlingClause> object contains information that identifies the try block with which it is associated.  
   
 > [!NOTE]
->  Working with exception-handling clauses requires a thorough understanding of metadata and MSIL instruction formats. Information can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+>  Working with exception-handling clauses requires a thorough understanding of metadata and MSIL instruction formats. Information can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
    
   
@@ -200,7 +200,7 @@
  You can use the token-resolution methods of the module class, such as <xref:System.Reflection.Module.ResolveType%2A>, <xref:System.Reflection.Module.ResolveMethod%2A>, and <xref:System.Reflection.Module.ResolveMember%2A>, to resolve the tokens in the method body to <xref:System.Type> objects, <xref:System.Reflection.MethodInfo> objects, and <xref:System.Reflection.FieldInfo> objects that provide detailed information about the types, methods, and fields accessed by the MSIL in the method body.  
   
 > [!NOTE]
->  Parsing method bodies requires a thorough understanding of metadata and MSIL instruction formats. Information can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+>  Parsing method bodies requires a thorough understanding of metadata and MSIL instruction formats. Information can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
  ]]></format>
         </remarks>
@@ -300,7 +300,7 @@
  Use the <xref:System.Reflection.MethodBody.LocalVariables%2A> property to obtain information about the method's local variables.  
   
 > [!NOTE]
->  Information about local variable signatures can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+>  Information about local variable signatures can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
  ]]></format>
         </remarks>
@@ -399,7 +399,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+ For more information, see the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
    
   

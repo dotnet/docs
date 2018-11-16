@@ -52,7 +52,7 @@ Four buttons with different types of content
   
  A <xref:System.Windows.Controls.ContentControl> has a limited default style. If you want to enhance the appearance of the control, you can create a new <xref:System.Windows.DataTemplate>. For more information, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md). Another typical scenario is to use the <xref:System.Windows.Controls.ContentControl> to show more information about an item selected in an <xref:System.Windows.Controls.ItemsControl> control. For more information, see [How to: Bind to a Collection and Display Information Based on Selection](~/docs/framework/wpf/data/how-to-bind-to-a-collection-and-display-information-based-on-selection.md).  
   
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](https://go.microsoft.com/fwlink/?LinkID=158252).  
   
    
   

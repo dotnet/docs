@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, resources separate code from content within an application. Creating and consuming these resources makes it easier to develop localizable applications. In the .NET Framework, resources are usually consumed by using the <xref:System.Resources.ResourceManager> class, which contains methods that provide access to culture-specific resources at run time. For more information about creating and consuming resources, see [Resources in Desktop Apps](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890).  
+ Typically, resources separate code from content within an application. Creating and consuming these resources makes it easier to develop localizable applications. In the .NET Framework, resources are usually consumed by using the <xref:System.Resources.ResourceManager> class, which contains methods that provide access to culture-specific resources at run time. For more information about creating and consuming resources, see [Resources in Desktop Apps](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890).  
   
  Strongly typed resource support is a compile-time feature that encapsulates access to resources by creating classes that contain a set of static, read-only (`get`) properties. This provides an alternative way to consume resources instead of calling the <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=nameWithType> and <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType> methods.  
   

@@ -181,7 +181,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls> method is a helper method that is used by classes that derive from the <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class to create the control hierarchy for a composite data-bound control. When extending the <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class, you must override the <xref:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls> method to create your own control hierarchy. For more information on creating a composite control, see [Developing Custom ASP.NET Server Controls](http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef).  
+ The <xref:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls> method is a helper method that is used by classes that derive from the <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class to create the control hierarchy for a composite data-bound control. When extending the <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class, you must override the <xref:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls> method to create your own control hierarchy. For more information on creating a composite control, see [Developing Custom ASP.NET Server Controls](https://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef).  
   
    
   
@@ -195,7 +195,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.Control.CreateChildControls" />
         <altmember cref="T:System.Collections.IEnumerable" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef">Developing Custom ASP.NET Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef">Developing Custom ASP.NET Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteMethod">

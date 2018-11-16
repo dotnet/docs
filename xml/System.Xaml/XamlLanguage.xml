@@ -68,7 +68,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.2](http://go.microsoft.com/fwlink/?LinkId=114525) for a list of intrinsic XAML language information items. Note that not all items that are listed as subsections of 5.2 are implemented as a <xref:System.Xaml.XamlType>. For example, `x:Code` is not a type.  
+ See [&#91;MS-XAML&#93; Section 5.2](https://go.microsoft.com/fwlink/?LinkId=114525) for a list of intrinsic XAML language information items. Note that not all items that are listed as subsections of 5.2 are implemented as a <xref:System.Xaml.XamlType>. For example, `x:Code` is not a type.  
   
  ]]></format>
         </remarks>
@@ -126,7 +126,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.2.18](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ See [&#91;MS-XAML&#93; Section 5.2.18](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -182,7 +182,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.3.15](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ See [&#91;MS-XAML&#93; Section 5.3.15](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -210,7 +210,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.2.17](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ See [&#91;MS-XAML&#93; Section 5.2.17](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -238,7 +238,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.2.10](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ See [&#91;MS-XAML&#93; Section 5.2.10](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -266,7 +266,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.2.7](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ See [&#91;MS-XAML&#93; Section 5.2.7](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -294,7 +294,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.3.7](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ See [&#91;MS-XAML&#93; Section 5.3.7](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -350,7 +350,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.3.9](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ See [&#91;MS-XAML&#93; Section 5.3.9](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -378,7 +378,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.2.22](http://go.microsoft.com/fwlink/?LinkId=114525), where `Code` is indicated as a type; however, `Code` is provided as a <xref:System.Xaml.XamlDirective> by this API.  
+ See [&#91;MS-XAML&#93; Section 5.2.22](https://go.microsoft.com/fwlink/?LinkId=114525), where `Code` is indicated as a type; however, `Code` is provided as a <xref:System.Xaml.XamlDirective> by this API.  
   
  ]]></format>
         </remarks>
@@ -427,7 +427,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.2.14](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ See [&#91;MS-XAML&#93; Section 5.2.14](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -455,7 +455,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.2.9](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ See [&#91;MS-XAML&#93; Section 5.2.9](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -511,7 +511,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.3.10](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ See [&#91;MS-XAML&#93; Section 5.3.10](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -541,7 +541,7 @@
 ## Remarks  
  This directive represents the XAML node or XAML information set representation of initialization text, where a string within an object element supplies the type construction information for the surrounding object element.  
   
- If you are looking at raw node interpretations or visualizations, `Initialization` is sometimes seen in string form as `_Initialization` (note the leading underscore) and is within the XAML language XAML namespace (as notated by a preceding `Namespace` node). In [MS-XAML], this concept is described under the heading `x:InitializationText`. See [&#91;MS-XAML&#93; Section 5.3.3](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ If you are looking at raw node interpretations or visualizations, `Initialization` is sometimes seen in string form as `_Initialization` (note the leading underscore) and is within the XAML language XAML namespace (as notated by a preceding `Namespace` node). In [MS-XAML], this concept is described under the heading `x:InitializationText`. See [&#91;MS-XAML&#93; Section 5.3.3](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -569,7 +569,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.2.11](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ See [&#91;MS-XAML&#93; Section 5.2.11](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -597,7 +597,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.2.12](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ See [&#91;MS-XAML&#93; Section 5.2.12](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -625,7 +625,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.2.13](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ See [&#91;MS-XAML&#93; Section 5.2.13](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -653,7 +653,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An `Items` directive is a node representation wrapper around multiple object values within a surrounding object. See [&#91;MS-XAML&#93; Section 5.3.1](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ An `Items` directive is a node representation wrapper around multiple object values within a surrounding object. See [&#91;MS-XAML&#93; Section 5.3.1](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  If you examine raw XAML node stream interpretations or visualizations, `Items` is sometimes seen in string form as `_Items` (note the leading underscore) and is within the XAML language XAML namespace (as notated by a preceding `Namespace` node).  
   
@@ -683,7 +683,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A `Key` directive is used for objects in a dictionary. See [&#91;MS-XAML&#93; Section 5.3.5](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ A `Key` directive is used for objects in a dictionary. See [&#91;MS-XAML&#93; Section 5.3.5](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -711,7 +711,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.3.13](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ See [&#91;MS-XAML&#93; Section 5.3.13](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -795,7 +795,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A `Name` directive is used for identifiers of objects in markup. See [&#91;MS-XAML&#93; Section 5.3.4](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ A `Name` directive is used for identifiers of objects in markup. See [&#91;MS-XAML&#93; Section 5.3.4](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  Although this concept of `Name` is not completely consistent with the use that is specified in [MS-XAML], you can typically use the `Name` directive or the `Name` attribute to provide a conceptual connection between XAML objects in markup and the run-time representations that are created by XAML processing of the markup. This use depends on how specific frameworks implement their programming models to integrate XAML into their general object models. For more information, see [x:Name Directive](~/docs/framework/xaml-services/x-name-directive.md).  
   
@@ -825,7 +825,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This XAML type provides null values for object values in markup. The XAML type is (or must be) assignable to `MarkupExtension`. See [&#91;MS-XAML&#93; Section 5.2.4](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ This XAML type provides null values for object values in markup. The XAML type is (or must be) assignable to `MarkupExtension`. See [&#91;MS-XAML&#93; Section 5.2.4](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -853,7 +853,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- XAML specifies `x:Object` as a special language concept. See [&#91;MS-XAML&#93; Section 5.2.5](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ XAML specifies `x:Object` as a special language concept. See [&#91;MS-XAML&#93; Section 5.2.5](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -881,7 +881,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `PositionalParameters` is a directive that wraps the multiple objects that can be specified as a set of object nodes for input of a markup extension. See [&#91;MS-XAML&#93; Section 6.6.7](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ `PositionalParameters` is a directive that wraps the multiple objects that can be specified as a set of object nodes for input of a markup extension. See [&#91;MS-XAML&#93; Section 6.6.7](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  If you are looking at raw node interpretations or visualizations, `PositionalParameters` is sometimes seen in string form as `_PositionalParameters` (note the leading underscore) and is within the XAML language XAML namespace (as notated by a preceding `Namespace` node).  
   
@@ -995,7 +995,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.2.8](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ See [&#91;MS-XAML&#93; Section 5.2.8](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -1023,7 +1023,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.3.14](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ See [&#91;MS-XAML&#93; Section 5.3.14](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -1051,7 +1051,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This XAML type provides values for markup where the backing member is a static member. The XAML type is (or must be) assignable to `MarkupExtension`. See [&#91;MS-XAML&#93; Section 5.2.2](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ This XAML type provides values for markup where the backing member is a static member. The XAML type is (or must be) assignable to `MarkupExtension`. See [&#91;MS-XAML&#93; Section 5.2.2](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -1079,7 +1079,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.2.6](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ See [&#91;MS-XAML&#93; Section 5.2.6](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -1107,7 +1107,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.3.8](http://go.microsoft.com/fwlink/?LinkId=114525)  
+ See [&#91;MS-XAML&#93; Section 5.3.8](https://go.microsoft.com/fwlink/?LinkId=114525)  
   
  ]]></format>
         </remarks>
@@ -1163,7 +1163,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.2.16](http://go.microsoft.com/fwlink/?LinkId=114525). `TimeSpan` is not a true intrinsic, but was specified in the XAML specification because it is a commonly used type. The XAML specification authors considered it useful to standardize the XAML representation in derived vocabularies. See also [Built-in Types for Common XAML Language Primitives](~/docs/framework/xaml-services/built-in-types-for-common-xaml-language-primitives.md).  
+ See [&#91;MS-XAML&#93; Section 5.2.16](https://go.microsoft.com/fwlink/?LinkId=114525). `TimeSpan` is not a true intrinsic, but was specified in the XAML specification because it is a commonly used type. The XAML specification authors considered it useful to standardize the XAML representation in derived vocabularies. See also [Built-in Types for Common XAML Language Primitives](~/docs/framework/xaml-services/built-in-types-for-common-xaml-language-primitives.md).  
   
  ]]></format>
         </remarks>
@@ -1191,7 +1191,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This XAML type provides <xref:System.Xaml.XamlType> values that use bindings from, and lookups to, a backing type system. The XAML type is (or must be) assignable to `MarkupExtension`. See [&#91;MS-XAML&#93; Section 5.2.3](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ This XAML type provides <xref:System.Xaml.XamlType> values that use bindings from, and lookups to, a backing type system. The XAML type is (or must be) assignable to `MarkupExtension`. See [&#91;MS-XAML&#93; Section 5.2.3](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -1219,7 +1219,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A `TypeArguments` directive specifies the type constraints of a generic when a generic is specified as a XAML object. See [&#91;MS-XAML&#93; Section 5.3.11](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ A `TypeArguments` directive specifies the type constraints of a generic when a generic is specified as a XAML object. See [&#91;MS-XAML&#93; Section 5.3.11](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -1247,7 +1247,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A `Uid` directive specifies a unique identifier for a XAML markup element. Strictly speaking, such a unique identifier could be applied to several purposes within a XAML-implementing framework. `Uid` differs from `Name` in that `Name` has a specific role in the [MS-XAML] definition for declaring the identifiers that exist in an object graph output from a XAML source, whereas `Uid` has no specific role. In the existing XAML-implementing frameworks that use .NET Framework XAML Services, `Uid` is typically used for localization purposes. See [&#91;MS-XAML&#93; Section 5.3.6](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ A `Uid` directive specifies a unique identifier for a XAML markup element. Strictly speaking, such a unique identifier could be applied to several purposes within a XAML-implementing framework. `Uid` differs from `Name` in that `Name` has a specific role in the [MS-XAML] definition for declaring the identifiers that exist in an object graph output from a XAML source, whereas `Uid` has no specific role. In the existing XAML-implementing frameworks that use .NET Framework XAML Services, `Uid` is typically used for localization purposes. See [&#91;MS-XAML&#93; Section 5.3.6](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
  ]]></format>
         </remarks>
@@ -1305,7 +1305,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.2.15](http://go.microsoft.com/fwlink/?LinkId=114525). `Uri` is not a true intrinsic but was specified in the XAML specification because it is a frequently used type. The XAML specification authors considered it useful to standardize the XAML representation in derived vocabularies. See also [Built-in Types for Common XAML Language Primitives](~/docs/framework/xaml-services/built-in-types-for-common-xaml-language-primitives.md).  
+ See [&#91;MS-XAML&#93; Section 5.2.15](https://go.microsoft.com/fwlink/?LinkId=114525). `Uri` is not a true intrinsic but was specified in the XAML specification because it is a frequently used type. The XAML specification authors considered it useful to standardize the XAML representation in derived vocabularies. See also [Built-in Types for Common XAML Language Primitives](~/docs/framework/xaml-services/built-in-types-for-common-xaml-language-primitives.md).  
   
  ]]></format>
         </remarks>
@@ -1327,7 +1327,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string value for the string that identifies the XAML (2006) language namespace. That namespace corresponds to the XAML (2006) "x" prefixed namespace as defined in [[MS-XAML] Section 5.1.1](http://go.microsoft.com/fwlink/?LinkId=114525).</summary>
+        <summary>Gets a string value for the string that identifies the XAML (2006) language namespace. That namespace corresponds to the XAML (2006) "x" prefixed namespace as defined in [[MS-XAML] Section 5.1.1](https://go.microsoft.com/fwlink/?LinkId=114525).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1381,7 +1381,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a <see cref="T:System.Xaml.XamlType" /> for the XAML type that backs an <see langword="XData" /> block in XAML.</summary>
-        <value>The <see cref="T:System.Xaml.XamlType" /> for the XAML type that backs an <see langword="XData" /> block. See [[MS-XAML] Section 5.2.23](http://go.microsoft.com/fwlink/?LinkId=114525).</value>
+        <value>The <see cref="T:System.Xaml.XamlType" /> for the XAML type that backs an <see langword="XData" /> block. See [[MS-XAML] Section 5.2.23](https://go.microsoft.com/fwlink/?LinkId=114525).</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Markup.XData" />
       </Docs>
@@ -1402,7 +1402,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string value for the string that identifies the XML (1998) language namespace. That namespace corresponds to the XML "xml" prefixed namespace as referenced in [[MS-XAML] Section 5.1.2](http://go.microsoft.com/fwlink/?LinkId=114525).</summary>
+        <summary>Gets a string value for the string that identifies the XML (1998) language namespace. That namespace corresponds to the XML "xml" prefixed namespace as referenced in [[MS-XAML] Section 5.1.2](https://go.microsoft.com/fwlink/?LinkId=114525).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

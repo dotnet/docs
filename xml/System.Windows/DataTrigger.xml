@@ -57,7 +57,7 @@
     </remarks>
     <altmember cref="T:System.Windows.Trigger" />
     <altmember cref="T:System.Windows.MultiDataTrigger" />
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -149,7 +149,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Windows.DataTrigger.Value" />
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
       </Docs>
     </Member>
     <Member MemberName="ReceiveMarkupExtension">
@@ -248,13 +248,13 @@
   
  The first <xref:System.Windows.DataTrigger> is specified such that if the data object has a *SpecialFeatures* value of *Color*, then the item is displayed with a `DodgerBlue` background with Navy titles. If the data object has a *SpecialFeatures* value of *Highlight*, then the second <xref:System.Windows.DataTrigger> will be active, causing the item to be displayed with an Orange border with a star.  
   
- For the complete sample, see [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703).  
+ For the complete sample, see [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703).  
   
  [!code-xaml[DataBindingLab#AuctionItemsDataTriggers](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/DataBindingLabApp.xaml#auctionitemsdatatriggers)]  
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddChild">
@@ -383,7 +383,7 @@
   
  [!code-xaml[DataTrigger#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTrigger/CSharp/Window1.xaml#1)]  
   
- The following example shows two <xref:System.Windows.DataTrigger>s that are defined in a <xref:System.Windows.DataTemplate>. The <xref:System.Windows.DataTemplate> is applied to *AuctionItem* data objects (not shown in this example), which have the property *SpecialFeatures*. See [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703) for the complete example.  
+ The following example shows two <xref:System.Windows.DataTrigger>s that are defined in a <xref:System.Windows.DataTemplate>. The <xref:System.Windows.DataTemplate> is applied to *AuctionItem* data objects (not shown in this example), which have the property *SpecialFeatures*. See [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703) for the complete example.  
   
  The first <xref:System.Windows.DataTrigger> is specified such that if the data object has a *SpecialFeatures* value of *Color*, then the item is displayed with a DodgerBlue background with Navy titles. If the data object has a *SpecialFeatures* value of *Highlight*, then the second <xref:System.Windows.DataTrigger> will be active, causing the item to be displayed with an Orange border with a star.  
   
@@ -394,7 +394,7 @@
         <exception cref="T:System.ArgumentException">Expressions are not supported. Bindings are not supported.</exception>
         <altmember cref="P:System.Windows.DataTrigger.Binding" />
         <altmember cref="P:System.Windows.DataTrigger.Setters" />
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
       </Docs>
     </Member>
   </Members>

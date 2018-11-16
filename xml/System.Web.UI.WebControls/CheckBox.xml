@@ -73,7 +73,7 @@
  If you plan to use multiple <xref:System.Web.UI.WebControls.CheckBox> controls, the <xref:System.Web.UI.WebControls.CheckBoxList> control is an alternative control that provides convenient data binding capabilities. However, individual <xref:System.Web.UI.WebControls.CheckBox> controls provide greater control over layout.  
   
 > [!IMPORTANT]
->  A <xref:System.Web.UI.WebControls.CheckBox> control accepts user input, which is a potential security threat. By default, ASP.NET mobile Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  A <xref:System.Web.UI.WebControls.CheckBox> control accepts user input, which is a potential security threat. By default, ASP.NET mobile Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
 <a name="DeclarativeSyntax"></a>   
 ## Declarative Syntax  
@@ -130,7 +130,7 @@
  The following example demonstrates how to use a <xref:System.Web.UI.WebControls.CheckBox> control to indicate whether tax is included in the calculation for a sales total.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[CheckBoxCheckedChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxCheckedChanged/CS/checkboxcheckedchangedcs.aspx#1)]
  [!code-aspx-vb[CheckBoxCheckedChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxCheckedChanged/VB/checkboxcheckedchangedvb.aspx#1)]  
@@ -139,7 +139,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
     <altmember cref="T:System.Web.UI.WebControls.WebControl" />
-    <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -169,7 +169,7 @@
 ## Examples  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[CheckBoxCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxCtor/CS/checkboxctorcs.aspx#1)]
  [!code-aspx-vb[CheckBoxCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxCtor/VB/checkboxctorvb.aspx#1)]  
@@ -208,7 +208,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="AutoPostBack">
@@ -249,7 +249,7 @@
 > [!NOTE]
 >  Setting this property to `true` causes a round trip to the server every time the control is clicked.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -257,14 +257,14 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.CheckBox.AutoPostBack%2A> property to automatically post the state of the <xref:System.Web.UI.WebControls.CheckBox> control to the server when the control is clicked.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[CheckBoxCheckedChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxCheckedChanged/CS/checkboxcheckedchangedcs.aspx#1)]
  [!code-aspx-vb[CheckBoxCheckedChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxCheckedChanged/VB/checkboxcheckedchangedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -305,13 +305,13 @@
   
  When the value of the <xref:System.Web.UI.WebControls.CheckBox.CausesValidation%2A> property is set to `true`, you can also use the <xref:System.Web.UI.WebControls.CheckBox.ValidationGroup%2A> property to specify the name of the validation group for which the <xref:System.Web.UI.WebControls.CheckBox> control causes validation.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.Web.UI.Page.Validate" />
         <altmember cref="P:System.Web.UI.WebControls.CheckBox.ValidationGroup" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -361,7 +361,7 @@
 ## Remarks  
  Use this property to determine whether the <xref:System.Web.UI.WebControls.CheckBox> control is checked. This property can also be used to programmatically set the state of the <xref:System.Web.UI.WebControls.CheckBox> control.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -369,14 +369,14 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.CheckBox.Checked%2A> property to determine the state of the <xref:System.Web.UI.WebControls.CheckBox> control.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[CheckBoxCheckedChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxCheckedChanged/CS/checkboxcheckedchangedcs.aspx#1)]
  [!code-aspx-vb[CheckBoxCheckedChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxCheckedChanged/VB/checkboxcheckedchangedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="CheckedChanged">
@@ -418,7 +418,7 @@
  The following example demonstrates how to specify and code the handler for the <xref:System.Web.UI.WebControls.CheckBox.CheckedChanged> event of a <xref:System.Web.UI.WebControls.CheckBox> control.  
   
 > [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[CheckBoxCheckedChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxCheckedChanged/CS/checkboxcheckedchangedcs.aspx#1)]
  [!code-aspx-vb[CheckBoxCheckedChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxCheckedChanged/VB/checkboxcheckedchangedvb.aspx#1)]  
@@ -429,8 +429,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.CheckBox.OnCheckedChanged(System.EventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/73bf8638-c4ec-4069-b0bb-a1dc79b92e32">How to: Consume Events in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/73bf8638-c4ec-4069-b0bb-a1dc79b92e32">How to: Consume Events in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName="InputAttributes">
@@ -471,7 +471,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="LabelAttributes">
@@ -512,7 +512,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -554,7 +554,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -590,7 +590,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.CheckBox.SaveViewState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="OnCheckedChanged">
@@ -635,7 +635,7 @@
  The following example demonstrates how to specify and code the handler for the <xref:System.Web.UI.WebControls.CheckBox.CheckedChanged> event of a <xref:System.Web.UI.WebControls.CheckBox> control.  
   
 > [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[CheckBoxCheckedChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxCheckedChanged/CS/checkboxcheckedchangedcs.aspx#1)]
  [!code-aspx-vb[CheckBoxCheckedChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxCheckedChanged/VB/checkboxcheckedchangedvb.aspx#1)]  
@@ -650,7 +650,7 @@
         </block>
         <altmember cref="E:System.Web.UI.WebControls.CheckBox.CheckedChanged" />
         <altmember cref="T:System.EventArgs" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -688,7 +688,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -723,7 +723,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -761,7 +761,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -790,14 +790,14 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.CheckBox.SaveViewState%2A> method is used primarily by control developers.  
   
- View state is the accumulation of the values of a server control's properties. These values are automatically placed in the <xref:System.Web.UI.Control.ViewState%2A> property for the server control, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save-state stage of the server control's life cycle. For more information, see [ASP.NET Page Life Cycle Overview](http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991).  
+ View state is the accumulation of the values of a server control's properties. These values are automatically placed in the <xref:System.Web.UI.Control.ViewState%2A> property for the server control, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save-state stage of the server control's life cycle. For more information, see [ASP.NET Page Life Cycle Overview](https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991).  
   
- When view state is saved, this string object is returned to the client as a variable that is stored in a hidden HTML input element. When you author custom server controls, you can improve efficiency by overriding the <xref:System.Web.UI.WebControls.CheckBox.SaveViewState%2A> and modifying the <xref:System.Web.UI.Control.ViewState%2A> property for your server control. For more information, see [Developing Custom ASP.NET Server Controls](http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef) and [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
+ When view state is saved, this string object is returned to the client as a variable that is stored in a hidden HTML input element. When you author custom server controls, you can improve efficiency by overriding the <xref:System.Web.UI.WebControls.CheckBox.SaveViewState%2A> and modifying the <xref:System.Web.UI.Control.ViewState%2A> property for your server control. For more information, see [Developing Custom ASP.NET Server Controls](https://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef) and [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.CheckBox.LoadViewState(System.Object)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -842,7 +842,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -880,7 +880,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -923,7 +923,7 @@
 > [!CAUTION]
 >  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -931,14 +931,14 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.CheckBox.Text%2A> property to specify the text label associated with the <xref:System.Web.UI.WebControls.CheckBox> control.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[CheckBoxCheckedChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxCheckedChanged/CS/checkboxcheckedchangedcs.aspx#1)]
  [!code-aspx-vb[CheckBoxCheckedChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxCheckedChanged/VB/checkboxcheckedchangedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="TextAlign">
@@ -981,7 +981,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.CheckBox.TextAlign%2A> property to display the text label to the right of the check box.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[CheckBoxCheckedChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxCheckedChanged/CS/checkboxcheckedchangedcs.aspx#1)]
  [!code-aspx-vb[CheckBoxCheckedChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxCheckedChanged/VB/checkboxcheckedchangedvb.aspx#1)]  
@@ -990,7 +990,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.TextAlign" /> values.</exception>
         <altmember cref="T:System.Web.UI.WebControls.TextAlign" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -1020,7 +1020,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -1058,14 +1058,14 @@
   
  The <xref:System.Web.UI.WebControls.CheckBox.ValidationGroup%2A> property has an effect only when the value of the <xref:System.Web.UI.WebControls.CheckBox.CausesValidation%2A> property is set to `true`. When you specify a value for the <xref:System.Web.UI.WebControls.CheckBox.ValidationGroup%2A> property, only the validation controls that are part of the specified group are validated when the <xref:System.Web.UI.WebControls.CheckBox> control posts back to the server. If you do not specify a value for the <xref:System.Web.UI.WebControls.CheckBox.ValidationGroup%2A> and the <xref:System.Web.UI.WebControls.CheckBox.CausesValidation%2A> property is set to `true`, all validation controls on the page that are not assigned to a validation group are validated when the control posts back to the server.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.Web.UI.Page.Validate" />
         <altmember cref="P:System.Web.UI.WebControls.CheckBox.CausesValidation" />
         <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls</related>
       </Docs>
     </Member>
   </Members>

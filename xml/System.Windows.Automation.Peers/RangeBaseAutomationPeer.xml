@@ -21,7 +21,7 @@
   <Docs>
     <summary>Exposes <see cref="T:System.Windows.Controls.Primitives.RangeBase" /> types to UI Automation.</summary>
     <remarks>To be added.</remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,7 +49,7 @@
         <param name="owner">The <see cref="T:System.Windows.Controls.Primitives.RangeBase" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RangeBaseAutomationPeer" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.RangeBaseAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPattern">
@@ -75,7 +75,7 @@
         <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.Primitives.RangeBase" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RangeBaseAutomationPeer" />.</summary>
         <returns>If <paramref name="patternInterface" /> is <see cref="F:System.Windows.Automation.Peers.PatternInterface.RangeValue" />, this method returns a <see langword="this" /> pointer; otherwise, this method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IRangeValueProvider.IsReadOnly">

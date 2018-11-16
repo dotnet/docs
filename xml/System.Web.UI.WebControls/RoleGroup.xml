@@ -24,7 +24,7 @@
   
  To dynamically assign a template to the role group, set the <xref:System.Web.UI.WebControls.RoleGroup.ContentTemplate%2A> property to a reference to an object that implements the <xref:System.Web.UI.ITemplate> interface.  
   
- You must configure role management to use the <xref:System.Web.UI.WebControls.RoleGroup> class. For more information, see [Understanding Role Management](http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6).  
+ You must configure role management to use the <xref:System.Web.UI.WebControls.RoleGroup> class. For more information, see [Understanding Role Management](https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6).  
   
    
   
@@ -100,7 +100,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.RoleGroup.ContainsUser%2A> method returns `true` if the specified user is a member of any of the roles associated with this role group. Roles are searched in the order they are listed in the <xref:System.Web.UI.WebControls.RoleGroup.Roles%2A> property, and searching stops after the first match is found.  
   
- This method uses the <xref:System.Web.Security.Roles.IsUserInRole%2A> method to determine whether a user is a member of a role. You must configure role management to use the <xref:System.Web.UI.WebControls.RoleGroup.ContainsUser%2A> method. For more information, see [Understanding Role Management](http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6).  
+ This method uses the <xref:System.Web.Security.Roles.IsUserInRole%2A> method to determine whether a user is a member of a role. You must configure role management to use the <xref:System.Web.UI.WebControls.RoleGroup.ContainsUser%2A> method. For more information, see [Understanding Role Management](https://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6).  
   
  ]]></format>
         </remarks>

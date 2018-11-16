@@ -78,11 +78,11 @@
  You can also use the <xref:System.Web.UI.WebControls.Literal> and <xref:System.Web.UI.WebControls.PlaceHolder> controls to display text on the Web Forms page. However, unlike the <xref:System.Web.UI.WebControls.Label> control, these controls do not render any additional tags.  
   
 > [!IMPORTANT]
->  This control can be used to display user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This control can be used to display user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
 <a name="accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -134,10 +134,10 @@
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.Label> control on a Web page.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the ASP.NET Web page code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the ASP.NET Web page code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[Classic Label Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Label Example 2/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic Label Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Label Example 2/VB/sourcevb.aspx#1)]  
@@ -145,10 +145,10 @@
  ]]></format>
     </remarks>
     <altmember cref="P:System.Web.UI.WebControls.Label.Text" />
-    <related type="Article" href="http://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac">Label Web Server Control Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461">Introduction to Validating User Input in ASP.NET Web Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac">Label Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461">Introduction to Validating User Input in ASP.NET Web Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -184,7 +184,7 @@
  The following example shows how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Label> control.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic Label.Label Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Label.Label Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic Label.Label Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Label.Label Example/VB/sourcevb.aspx#1)]  
@@ -316,7 +316,7 @@
   
  When the <xref:System.Web.UI.WebControls.Label.AssociatedControlID%2A> property is set, the <xref:System.Web.UI.WebControls.Label> control renders as an HTML `label` element, with the `for` attribute set to the <xref:System.Web.UI.Control.ID%2A> property of the associated control. You can set other attributes of the `label` element using the <xref:System.Web.UI.WebControls.Label> properties. For example, you can use the <xref:System.Web.UI.WebControls.Label.Text%2A> and <xref:System.Web.UI.WebControls.WebControl.AccessKey%2A> properties to provide the caption and hot key for an associated control.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
@@ -508,9 +508,9 @@
 >  Setting the <xref:System.Web.UI.WebControls.Label.Text%2A> property will clear any other controls contained in the <xref:System.Web.UI.WebControls.Label> control.  
   
 > [!IMPORTANT]
->  This control can be used to display user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This control can be used to display user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  This property is the default property that a <xref:System.Web.UI.WebControls.ControlParameter> object binds to at run time. For more information, see <xref:System.Web.UI.ControlValuePropertyAttribute>, <xref:System.Web.UI.WebControls.ControlParameter>, and [Using Parameters with Data Source Controls for Filtering](https://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f(v=vs.100)).  
   
@@ -520,7 +520,7 @@
  The following example demonstrates how to create a new instance of the <xref:System.Web.UI.WebControls.Label> control and set its <xref:System.Web.UI.WebControls.Label.Text%2A> property.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic Label.Text Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Label.Text Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic Label.Text Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Label.Text Example/VB/sourcevb.aspx#1)]  

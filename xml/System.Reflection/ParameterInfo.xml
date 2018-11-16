@@ -598,7 +598,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.ParameterInfo.GetOptionalCustomModifiers%2A> and <xref:System.Reflection.ParameterInfo.GetRequiredCustomModifiers%2A> methods are provided for designers of managed compilers. For more information on custom modifiers, see <xref:System.Runtime.CompilerServices.IsBoxed> and related classes in the <xref:System.Runtime.CompilerServices> namespace, and the metadata specification in the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+ The <xref:System.Reflection.ParameterInfo.GetOptionalCustomModifiers%2A> and <xref:System.Reflection.ParameterInfo.GetRequiredCustomModifiers%2A> methods are provided for designers of managed compilers. For more information on custom modifiers, see <xref:System.Runtime.CompilerServices.IsBoxed> and related classes in the <xref:System.Runtime.CompilerServices> namespace, and the metadata specification in the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
  ]]></format>
         </remarks>
@@ -697,7 +697,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.ParameterInfo.GetOptionalCustomModifiers%2A> and <xref:System.Reflection.ParameterInfo.GetRequiredCustomModifiers%2A> methods are provided for designers of managed compilers. For more information on custom modifiers, see <xref:System.Runtime.CompilerServices.IsBoxed> and related classes in the <xref:System.Runtime.CompilerServices> namespace, and the metadata specification in the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+ The <xref:System.Reflection.ParameterInfo.GetOptionalCustomModifiers%2A> and <xref:System.Reflection.ParameterInfo.GetRequiredCustomModifiers%2A> methods are provided for designers of managed compilers. For more information on custom modifiers, see <xref:System.Runtime.CompilerServices.IsBoxed> and related classes in the <xref:System.Runtime.CompilerServices> namespace, and the metadata specification in the ECMA Partition II documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
  ]]></format>
         </remarks>
@@ -1239,7 +1239,7 @@
 ## Remarks  
  To get the module, use the <xref:System.Reflection.MemberInfo.Module%2A> property of the member that defines this parameter.  
   
- The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, please see [Unmanaged Reflection API](http://msdn.microsoft.com/library/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
+ The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, please see [Unmanaged Reflection API](https://msdn.microsoft.com/library/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
   
  ]]></format>
         </remarks>

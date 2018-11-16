@@ -635,7 +635,7 @@
 >  You can call the <xref:System.Net.Sockets.Socket.RemoteEndPoint%2A> property of the returned <xref:System.Net.Sockets.Socket> to identify the remote host's network address and port number.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](http://msdn.microsoft.com/library/) for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](https://msdn.microsoft.com/library/) for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -701,7 +701,7 @@
  For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](http://msdn.microsoft.com/library/) for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](https://msdn.microsoft.com/library/) for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -803,7 +803,7 @@
 >  You can call the <xref:System.Net.Sockets.Socket.RemoteEndPoint%2A> property of the returned <xref:System.Net.Sockets.Socket> to identify the remote host's network address and port number.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](http://msdn.microsoft.com/library/) for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](https://msdn.microsoft.com/library/) for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -871,7 +871,7 @@
 >  You can call the <xref:System.Net.Sockets.Socket.RemoteEndPoint%2A> property of the underlying socket (<xref:System.Net.Sockets.TcpClient.Client%2A>) to identify the remote host's network address and port number.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](http://msdn.microsoft.com/library/) for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](https://msdn.microsoft.com/library/) for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -1262,7 +1262,7 @@
  Use the <xref:System.Net.Sockets.TcpListener.Stop%2A> method to close the <xref:System.Net.Sockets.TcpListener> and stop listening. You are responsible for closing your accepted connections separately.  
   
 > [!NOTE]
->  Use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](http://msdn.microsoft.com/library/) for a detailed description of the error.  
+>  Use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](https://msdn.microsoft.com/library/) for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  

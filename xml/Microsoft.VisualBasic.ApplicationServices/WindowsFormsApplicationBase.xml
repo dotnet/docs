@@ -202,7 +202,7 @@
  Typically, you use this method in a loop to process messages.  
   
 > [!NOTE]
->  The `My.Application.DoEvents` method does not process events in exactly the same way as the form does. Use multithreading to make the form directly handle the events. For more information, see [Multithreaded Applications](http://msdn.microsoft.com/library/a06a1a56-dd16-44e8-bc01-2c2255511bc6).  
+>  The `My.Application.DoEvents` method does not process events in exactly the same way as the form does. Use multithreading to make the form directly handle the events. For more information, see [Multithreaded Applications](https://msdn.microsoft.com/library/a06a1a56-dd16-44e8-bc01-2c2255511bc6).  
   
 > [!CAUTION]
 >  If a method that handles a user interface (UI) event calls the `My.Application.DoEvents` method, the method might be re-entered before it finishes. This can happen because the `My.Application.DoEvents` method processes Windows messages, and Windows messages can raise events.  
@@ -1072,7 +1072,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `SaveMySettingsOnExit` property allows the user to change how the application saves settings, at run time. You can explicitly save setting changes by using the <xref:System.Configuration.ApplicationSettingsBase.Save%2A> method of the `My.Settings` object. For more information about changing and saving settings, see [Application Properties](http://msdn.microsoft.com/library/0ad4926f-636e-41f8-a5b1-faf9d9b0a254).  
+ The `SaveMySettingsOnExit` property allows the user to change how the application saves settings, at run time. You can explicitly save setting changes by using the <xref:System.Configuration.ApplicationSettingsBase.Save%2A> method of the `My.Settings` object. For more information about changing and saving settings, see [Application Properties](https://msdn.microsoft.com/library/0ad4926f-636e-41f8-a5b1-faf9d9b0a254).  
   
  The changes to this property are not persisted when the application closes. To change the `SaveMySettingsOnExit` property permanently, you must change the setting in the **Project Designer**:  
   

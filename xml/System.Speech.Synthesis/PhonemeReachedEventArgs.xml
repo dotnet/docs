@@ -25,7 +25,7 @@
    
   
 ## Examples  
- The following example is part of a Windows Forms application that writes the information returned by the <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> event to a text box. The phonemes are characters from the [International Phonetic Alphabet (IPA)](http://go.microsoft.com/fwlink/?LinkID=207686).  
+ The following example is part of a Windows Forms application that writes the information returned by the <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> event to a text box. The phonemes are characters from the [International Phonetic Alphabet (IPA)](https://go.microsoft.com/fwlink/?LinkID=207686).  
   
 > [!NOTE]
 >  The first and last characters returned by <xref:System.Speech.Synthesis.PhonemeReachedEventArgs> are opening and closing characters that enclose but do not represent phonemes that constitute a word or phrase. This example returns five characters, but only the middle three characters are phonemes that represent the word "theme": one for the "th" sound, one for the "e" sound, and one for the "m" sound .  

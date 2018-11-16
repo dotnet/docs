@@ -48,7 +48,7 @@
   
  Use this attribute to prevent the Win32 `LoadLibraryEx` function from searching the current working directory. This helps protect your application from attacks in which malicious software places a DLL in the current working directory, so that when a platform invoke calls the Win32 `LoadLibraryEx` function, the function's default search order finds the malicious DLL instead of the system DLL it was intended to find.  
   
- The common language runtime handles the call to the [LoadLibraryEx](http://go.microsoft.com/fwlink/?LinkId=236091) function according to the following algorithm:  
+ The common language runtime handles the call to the [LoadLibraryEx](https://go.microsoft.com/fwlink/?LinkId=236091) function according to the following algorithm:  
   
 1.  If the attribute is applied to an individual platform invoke, use the values specified by that instance of the attribute.  
   
@@ -59,7 +59,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.InteropServices.DllImportSearchPath" />
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=236091">LoadLibraryEx</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=236091">LoadLibraryEx</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

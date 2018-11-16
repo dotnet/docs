@@ -89,7 +89,7 @@
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.TextBox>, see the <xref:System.Web.UI.WebControls.TextBox.%23ctor%2A> constructor.  
   
 > [!CAUTION]
->  This control can be used to accept user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+>  This control can be used to accept user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -154,12 +154,12 @@
    
   
 ## Examples  
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=192423).  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](https://go.microsoft.com/fwlink/?LinkId=192423).  
   
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox> control to get user input. When the user clicks the **Add** button, the sum of the values entered in the text boxes is displayed.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
 ```csharp  
 <%@ Page Language="C#" AutoEventWireup="True" %>  
@@ -271,8 +271,8 @@
     <altmember cref="P:System.Web.UI.WebControls.TextBox.Wrap" />
     <altmember cref="P:System.Web.UI.WebControls.TextBox.ReadOnly" />
     <altmember cref="P:System.Web.UI.WebControls.TextBox.MaxLength" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f">TextBox Web Server Control Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f">TextBox Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -309,7 +309,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox.%23ctor%2A> constructor to dynamically add a <xref:System.Web.UI.WebControls.TextBox> control to the page.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[TextBox Constructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBox Constructor/CS/textboxctorcs.aspx#1)]
  [!code-aspx-vb[TextBox Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBox Constructor/VB/textboxctorvb.aspx#1)]  
@@ -354,7 +354,7 @@
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TextBox.AddAttributesToRender%2A> method in a custom server control, so that the <xref:System.Web.UI.WebControls.TextBox> control text always appears bold.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CustomTextBoxAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/CS/custom_textbox_addattributestorendercs.aspx#1)]
  [!code-aspx-vb[CustomTextBoxAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/VB/custom_textbox_addattributestorendervb.aspx#1)]  
@@ -396,7 +396,7 @@
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TextBox.AddParsedSubObject%2A> method in a custom server control so that it always sets the <xref:System.Web.UI.WebControls.TextBox.Text%2A> property to the parsed object's `Text` property if the parsed object is a <xref:System.Web.UI.WebControls.Literal> control, and throws an exception otherwise.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CustomTextBoxAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/CS/custom_textbox_addparsedsubobjectcs.aspx#1)]
  [!code-aspx-vb[CustomTextBoxAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/VB/custom_textbox_addparsedsubobjectvb.aspx#1)]  
@@ -451,9 +451,9 @@
   
  Refer to your browser documentation for details on configuring and enabling the AutoComplete feature. For example, to enable the AutoComplete feature in Internet Explorer version 5 or later, select **Internet Options** from the **Tools** menu, and then select the **Content** tab. Click the **AutoComplete** button to view and modify the various browser options for the AutoComplete feature.  
   
- For more information about the AutoComplete feature in Internet Explorer, see [Using AutoComplete in HTML Forms](http://go.microsoft.com/fwlink/?LinkId=163828) in the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118).  
+ For more information about the AutoComplete feature in Internet Explorer, see [Using AutoComplete in HTML Forms](https://go.microsoft.com/fwlink/?LinkId=163828) in the [MSDN Library](https://go.microsoft.com/fwlink/?linkid=37118).  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -461,7 +461,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.AutoCompleteType> enumeration to specify the AutoComplete category for a <xref:System.Web.UI.WebControls.TextBox> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[AutoCompleteType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AutoCompleteType/CS/AutoCompleteTypecs.aspx#1)]
  [!code-aspx-vb[AutoCompleteType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AutoCompleteType/VB/AutoCompleteTypevb.aspx#1)]  
@@ -510,7 +510,7 @@
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.TextBox> control's parent container contains a button marked as the default button (for example, if the container's <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> or <xref:System.Web.UI.WebControls.Panel.DefaultButton%2A> property is set), the default button's `Click` event is not raised in response to the automatic postback.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -518,7 +518,7 @@
  The following example shows how to use the <xref:System.Web.UI.WebControls.TextBox.AutoPostBack%2A> property to automatically display the sum of the values entered in the text boxes when the <xref:System.Web.UI.WebControls.TextBox> control loses focus.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[TextBoxAutoPostBack#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxAutoPostBack/CS/textboxautopostbackcs.aspx#1)]
  [!code-aspx-vb[TextBoxAutoPostBack#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxAutoPostBack/VB/textboxautopostbackvb.aspx#1)]  
@@ -567,7 +567,7 @@
   
  When the value of the <xref:System.Web.UI.WebControls.TextBox.CausesValidation%2A> property is set to `true`, you can also use the <xref:System.Web.UI.WebControls.TextBox.ValidationGroup%2A> property to specify the name of the validation group for which the <xref:System.Web.UI.WebControls.TextBox> control causes validation.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
@@ -610,7 +610,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox.Columns%2A> property to specify a width of 2 characters for the <xref:System.Web.UI.WebControls.TextBox> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[TextBox#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBox/CS/textboxcs.aspx#1)]
  [!code-aspx-vb[TextBox#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBox/VB/textboxvb.aspx#1)]  
@@ -703,17 +703,17 @@
 > [!NOTE]
 >  This property is applicable only when the <xref:System.Web.UI.WebControls.TextBox.TextMode%2A> property is set to `TextBoxMode.SingleLine` or `TextBoxMode.Password`.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
 ## Examples  
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=192423).  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](https://go.microsoft.com/fwlink/?LinkId=192423).  
   
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox> control to get user input. When the user clicks the **Add** button, the sum of the values entered in the text boxes is displayed.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
 ```csharp  
 <%@ Page Language="C#" AutoEventWireup="True" %>  
@@ -852,7 +852,7 @@
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TextBox.OnPreRender%2A> method so that it always displays a one-point border in a custom <xref:System.Web.UI.WebControls.TextBox> server control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CustomTextBoxOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnPreRender/CS/custom_textbox_onprerendercs.aspx#1)]
  [!code-aspx-vb[CustomTextBoxOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnPreRender/VB/custom_textbox_onprerendervb.aspx#1)]  
@@ -906,7 +906,7 @@
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TextBox.OnTextChanged%2A> method so that it always marks a custom <xref:System.Web.UI.WebControls.TextBox> server control as having been modified.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CustomTextBoxOnTextChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/CS/custom_textbox_ontextchangedcs.aspx#1)]
  [!code-aspx-vb[CustomTextBoxOnTextChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/VB/custom_textbox_ontextchangedvb.aspx#1)]  
@@ -1001,7 +1001,7 @@
 > [!IMPORTANT]
 >  The <xref:System.Web.UI.WebControls.TextBox.Text%2A> value of a <xref:System.Web.UI.WebControls.TextBox> control with the <xref:System.Web.UI.WebControls.TextBox.ReadOnly%2A> property set to `true` is sent to the server when a postback occurs, but the server does no processing for a read-only text box. This prevents a malicious user from changing a <xref:System.Web.UI.WebControls.TextBox.Text%2A> value that is read-only. The value of the <xref:System.Web.UI.WebControls.TextBox.Text%2A> property is preserved in the view state between postbacks unless modified by server-side code.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -1009,7 +1009,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox.ReadOnly%2A> property to prevent any changes to the text displayed in the <xref:System.Web.UI.WebControls.TextBox> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]
  [!code-aspx-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  
@@ -1056,7 +1056,7 @@
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TextBox.Render%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.TextBox> control is always displayed with an image.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CustomTextBoxRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxRender/CS/custom_textbox_rendercs.aspx#1)]
  [!code-aspx-vb[CustomTextBoxRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxRender/VB/custom_textbox_rendervb.aspx#1)]  
@@ -1111,7 +1111,7 @@
 > [!NOTE]
 >  This property is applicable only when the <xref:System.Web.UI.WebControls.TextBox.TextMode%2A> property is set to `TextBoxMode.MultiLine`.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -1119,7 +1119,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox.Rows%2A> property to specify a height of 5 rows for a multiline <xref:System.Web.UI.WebControls.TextBox> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]
  [!code-aspx-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  
@@ -1157,7 +1157,7 @@
 ## Remarks  
  This method is used primarily by control developers.  
   
- View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control's life cycle. For more information, see [ASP.NET Application Life Cycle Overview for IIS 5.0 and 6.0](http://msdn.microsoft.com/library/de0d8a1c-b1bc-48e1-b246-26e32289a82f).  
+ View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control's life cycle. For more information, see [ASP.NET Application Life Cycle Overview for IIS 5.0 and 6.0](https://msdn.microsoft.com/library/de0d8a1c-b1bc-48e1-b246-26e32289a82f).  
   
  When view state is saved, this string object is returned to the client as a variable that is stored in a hidden HTML input element. When you author custom server controls, you can improve efficiency by overriding this method and modifying your server control's `ViewState` property. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
@@ -1279,7 +1279,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox.TagKey%2A> property to create a custom text box.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CustomTextBoxTagKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxTagKey/CS/custom_textbox_tagkeycs.aspx#1)]
  [!code-aspx-vb[CustomTextBoxTagKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxTagKey/VB/custom_textbox_tagkeyvb.aspx#1)]  
@@ -1346,7 +1346,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.TextBox.Text%2A> property to specify or determine the text displayed in the <xref:System.Web.UI.WebControls.TextBox> control. To limit the number of characters accepted by the control, set the <xref:System.Web.UI.WebControls.TextBox.MaxLength%2A> property. If you want to prevent the text from being modified, set the <xref:System.Web.UI.WebControls.TextBox.ReadOnly%2A> property.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  When the text box is rendered, the contents of this property are HTML-encoded. For example, if you set this property to "\<b>Test\</b>", the browser will display "\<b>Test\</b>", not "Test" in bold.  
   
@@ -1356,7 +1356,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox> control to get user input. When the user clicks the **Add** button, the sum of the values entered in the text boxes is displayed.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
 ```csharp  
 <%@ Page Language="C#" AutoEventWireup="True" %>  
@@ -1501,7 +1501,7 @@
    
   
 ## Examples  
- The following example shows how you can use this event to respond to changes in the <xref:System.Web.UI.WebControls.TextBox> control. The code displays the contents of the <xref:System.Web.UI.WebControls.TextBox.Text%2A> property of a TextBox control (called TextBox1) in a label (called Label1)  when the `Text` property is changed. User input in a Web Forms page can include potentially malicious client script. By default, the Web Forms page validates that user input does not include script or HTML elements. For more information, see [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b).  
+ The following example shows how you can use this event to respond to changes in the <xref:System.Web.UI.WebControls.TextBox> control. The code displays the contents of the <xref:System.Web.UI.WebControls.TextBox.Text%2A> property of a TextBox control (called TextBox1) in a label (called Label1)  when the `Text` property is changed. User input in a Web Forms page can include potentially malicious client script. By default, the Web Forms page validates that user input does not include script or HTML elements. For more information, see [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b).  
   
 ```vb  
   
@@ -1563,7 +1563,7 @@ protected void TextBox1_TextChanged(object sender, EventArgs e)
   
  If the <xref:System.Web.UI.WebControls.TextBox> control is in password mode, all characters entered in the control are masked.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -1571,7 +1571,7 @@ protected void TextBox1_TextChanged(object sender, EventArgs e)
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox.TextMode%2A> property to specify a multiline text box.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]
  [!code-aspx-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  
@@ -1619,7 +1619,7 @@ protected void TextBox1_TextChanged(object sender, EventArgs e)
   
  This property has an effect only when the <xref:System.Web.UI.WebControls.TextBox.CausesValidation%2A> property is set to `true`. When you specify a value for the <xref:System.Web.UI.WebControls.TextBox.ValidationGroup%2A> property, only the validation controls that are part of the specified group are validated when the <xref:System.Web.UI.WebControls.TextBox> control posts back to the server. If you do not specify a value for this property and the <xref:System.Web.UI.WebControls.TextBox.CausesValidation%2A> property is set to `true`, all validation controls on the page that are not assigned to a validation group are validated when the control posts back to the server.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
@@ -1669,7 +1669,7 @@ protected void TextBox1_TextChanged(object sender, EventArgs e)
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox.Wrap%2A> property to wrap text entered in the <xref:System.Web.UI.WebControls.TextBox> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]
  [!code-aspx-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  

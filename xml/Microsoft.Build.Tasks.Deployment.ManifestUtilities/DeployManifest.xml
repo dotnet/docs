@@ -317,7 +317,7 @@
  If this property is set to `true`, the application will be installed on the user's **Start** menu, and it can be removed by using **Add or Remove Programs** in Control Panel. The default is `true`. If this property is set to `false`, the application is intended for online use from a Web page and is available online only.  
   
 > [!NOTE]
->  For WPF Web Browser Applications, you must set the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser%2A> property to `true`, and you must also set <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> to `false`. If this condition is not met, you will receive [MSBuild Error MSB3116](http://msdn.microsoft.com/library/bf04c587-d0e2-4d68-bbff-da9a985ea70e).  
+>  For WPF Web Browser Applications, you must set the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser%2A> property to `true`, and you must also set <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> to `false`. If this condition is not met, you will receive [MSBuild Error MSB3116](https://msdn.microsoft.com/library/bf04c587-d0e2-4d68-bbff-da9a985ea70e).  
   
  ]]></format>
         </remarks>

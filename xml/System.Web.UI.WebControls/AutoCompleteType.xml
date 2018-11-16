@@ -30,7 +30,7 @@
   
  Refer to your browser documentation for details on configuring and enabling the AutoComplete feature. For example, to enable the AutoComplete feature in Internet Explorer version 5 or later, from the **Tools** menu, choose **Internet Options**. Then choose the **Content** tab. Choose the **AutoComplete** button to view and modify options for the AutoComplete feature.  
   
- For more information on the AutoComplete feature in Internet Explorer, search for [Using AutoComplete in HTML Forms](http://msdn.microsoft.com/library/default.asp?url=/workshop/author/forms/autocomplete_ovr.asp) in the MSDN Library at http://msdn.microsoft.com/library.  
+ For more information on the AutoComplete feature in Internet Explorer, search for [Using AutoComplete in HTML Forms](https://msdn.microsoft.com/library/default.asp?url=/workshop/author/forms/autocomplete_ovr.asp) in the MSDN Library at http://msdn.microsoft.com/library.  
   
    
   
@@ -38,7 +38,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.AutoCompleteType> enumeration to specify the AutoComplete category for a <xref:System.Web.UI.WebControls.TextBox> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[AutoCompleteType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AutoCompleteType/CS/AutoCompleteTypecs.aspx#1)]
  [!code-aspx-vb[AutoCompleteType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AutoCompleteType/VB/AutoCompleteTypevb.aspx#1)]  
@@ -47,8 +47,8 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.TextBox" />
     <altmember cref="P:System.Web.UI.WebControls.TextBox.AutoCompleteType" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f">TextBox Web Server Control Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f">TextBox Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
   </Docs>
   <Members>
     <Member MemberName="BusinessCity">

@@ -255,7 +255,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlMeta> control renders a <xref:System.Web.UI.HtmlTextWriter.SelfClosingTagEnd> HTML bracket (/>) on the `<meta>` element if the client's browser is XHTML compliant. For more information on configuring ASP.NET for non-XHTML rendering, see [NIB: How to: Configure XHTML Rendering in ASP.NET Web Sites](http://msdn.microsoft.com/library/42483a54-f1ae-44e1-88e6-4370f8690149).  
+ The <xref:System.Web.UI.HtmlControls.HtmlMeta> control renders a <xref:System.Web.UI.HtmlTextWriter.SelfClosingTagEnd> HTML bracket (/>) on the `<meta>` element if the client's browser is XHTML compliant. For more information on configuring ASP.NET for non-XHTML rendering, see [NIB: How to: Configure XHTML Rendering in ASP.NET Web Sites](https://msdn.microsoft.com/library/42483a54-f1ae-44e1-88e6-4370f8690149).  
   
  ]]></format>
         </remarks>
@@ -263,7 +263,7 @@
           <para>When extending the <see cref="T:System.Web.UI.HtmlControls.HtmlMeta" /> control, override the <see cref="M:System.Web.UI.HtmlControls.HtmlMeta.Render(System.Web.UI.HtmlTextWriter)" /> method to provide custom rendering.</para>
         </block>
         <altmember cref="F:System.Web.UI.HtmlTextWriter.SelfClosingTagEnd" />
-        <related type="Article" href="http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97">ASP.NET and XHTML Compliance</related>
       </Docs>
     </Member>
     <Member MemberName="Scheme">

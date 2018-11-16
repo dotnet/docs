@@ -50,7 +50,7 @@
   
  In C#, to enable dynamic behavior for instances of classes derived from the `DynamicObject` class, you must use the `dynamic` keyword. For more information, see [Using Type dynamic](~/docs/csharp/programming-guide/types/using-type-dynamic.md).  
   
- In Visual Basic, dynamic operations are supported by late binding. For more information, see [Early and Late Binding](http://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724).  
+ In Visual Basic, dynamic operations are supported by late binding. For more information, see [Early and Late Binding](https://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724).  
   
  The following code example demonstrates how to create an instance of a class that is derived from the `DynamicObject` class.  
   
@@ -86,7 +86,7 @@ Dim sampleObject As Object = New SampleDynamicObject()
  [!code-csharp[System.Dynamic.DynamicObject#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.dynamic.dynamicobject/cs/program.cs#1)]
  [!code-vb[System.Dynamic.DynamicObject#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.dynamic.dynamicobject/vb/module1.vb#1)]  
   
- For more examples, see [Creating Wrappers with DynamicObject](http://go.microsoft.com/fwlink/?LinkId=169008) on the C# Frequently Asked Questions blog.  
+ For more examples, see [Creating Wrappers with DynamicObject](https://go.microsoft.com/fwlink/?LinkId=169008) on the C# Frequently Asked Questions blog.  
   
  ]]></format>
     </remarks>
@@ -133,7 +133,7 @@ Dim sampleObject As Object = New SampleDynamicObject()
   
  In C#, to enable dynamic behavior for instances of the classes derived from the <xref:System.Dynamic.DynamicObject> class, you must use the `dynamic` keyword. For more information, see [Using Type dynamic](~/docs/csharp/programming-guide/types/using-type-dynamic.md).  
   
- In Visual Basic, dynamic operations are supported by late binding. For more information, see [Early and Late Binding](http://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724).  
+ In Visual Basic, dynamic operations are supported by late binding. For more information, see [Early and Late Binding](https://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724).  
   
    
   

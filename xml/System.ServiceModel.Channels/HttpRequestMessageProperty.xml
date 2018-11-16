@@ -190,7 +190,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, WCF uses the POST verb for HTTP messages. The GET verb is used by WCF to display help information when accessing a ServiceHost's base address. This is useful for checking whether a WCF service is active when using a Web browser. Other methods defined by the [HTTP RFC](http://go.microsoft.com/fwlink/?LinkId=96616) are PUT, DELETE, HEAD, OPTIONS, TRACE, and CONNECT. These methods have special behaviors when interoperating with other services.  
+ By default, WCF uses the POST verb for HTTP messages. The GET verb is used by WCF to display help information when accessing a ServiceHost's base address. This is useful for checking whether a WCF service is active when using a Web browser. Other methods defined by the [HTTP RFC](https://go.microsoft.com/fwlink/?LinkId=96616) are PUT, DELETE, HEAD, OPTIONS, TRACE, and CONNECT. These methods have special behaviors when interoperating with other services.  
   
    
   

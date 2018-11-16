@@ -22,7 +22,7 @@
 ## Remarks  
  The <xref:System.Web.Configuration.ProfilePropertySettings> class provides a way to programmatically create, access, and modify the definition of an individual property added to the `properties` subsection of the `profile` section of a configuration file.  
   
- The `profile` section of the configuration file specifies a schema for user profiles. At run time, the ASP.NET compilation system uses the information specified in the `profile` section to generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>. The `ProfileCommon` class definition is based on the properties defined in the `properties` subsection of the `profile` section of the configuration file. An instance of this class is created for each user profile, and you can access the individual profile values in your code through the <xref:System.Web.HttpContext.Profile%2A?displayProperty=nameWithType> property. For more information about profile properties, see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d). For more information about the profile features added to [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)], see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
+ The `profile` section of the configuration file specifies a schema for user profiles. At run time, the ASP.NET compilation system uses the information specified in the `profile` section to generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>. The `ProfileCommon` class definition is based on the properties defined in the `properties` subsection of the `profile` section of the configuration file. An instance of this class is created for each user profile, and you can access the individual profile values in your code through the <xref:System.Web.HttpContext.Profile%2A?displayProperty=nameWithType> property. For more information about profile properties, see [ASP.NET Profile Properties Overview](https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d). For more information about the profile features added to [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)], see [ASP.NET Profile Properties Overview](https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
   
    
   
@@ -132,7 +132,7 @@
   
  The `ProfileCommon` class definition is based on the properties defined in the `properties` subsection of the `profile` section of the configuration file. The parameter values that you specify when you create an instance of the <xref:System.Web.Configuration.ProfilePropertySettings> class will be used to define an associated property in the `ProfileCommon` class.  
   
- For more information about profile properties, see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
+ For more information about profile properties, see [ASP.NET Profile Properties Overview](https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
   
  ]]></format>
         </remarks>
@@ -454,7 +454,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about profile properties, see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
+ For more information about profile properties, see [ASP.NET Profile Properties Overview](https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
   
    
   

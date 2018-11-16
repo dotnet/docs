@@ -110,7 +110,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor enables a program to use the methods and properties of the <xref:System.DirectoryServices.DirectoryEntry> class on a native Active Directory Domain Services object that implements the IADs interface through a native API. For more information about the IADs interface, see the topic [IADs](http://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp) in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+ This constructor enables a program to use the methods and properties of the <xref:System.DirectoryServices.DirectoryEntry> class on a native Active Directory Domain Services object that implements the IADs interface through a native API. For more information about the IADs interface, see the topic [IADs](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
   
  ]]></format>
         </remarks>
@@ -837,7 +837,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the return value of the native method implements the IADs interface, a corresponding <xref:System.DirectoryServices.DirectoryEntry> is returned. For more information about the IADs interface, see the topic [IADs](http://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp) in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp).  
+ If the return value of the native method implements the IADs interface, a corresponding <xref:System.DirectoryServices.DirectoryEntry> is returned. For more information about the IADs interface, see the topic [IADs](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp).  
   
  ]]></format>
         </remarks>
@@ -1247,7 +1247,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to cast the native Active Directory Domain Services object, which implements the IADs interface, when you want to use a COM interface. For more information about the IADs interface, see the topic [IADs](http://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp) in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp).  
+ Use this property to cast the native Active Directory Domain Services object, which implements the IADs interface, when you want to use a COM interface. For more information about the IADs interface, see the topic [IADs](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp).  
   
  This object is for advanced scenarios that cannot be accomplished with the <xref:System.DirectoryServices?displayProperty=nameWithType> classes alone. To use it, you need to import one of the COM interfaces from the IADs family, then cast this property to that interface.  
   
@@ -1595,7 +1595,7 @@ String str = ent.Properties["defaultNamingContext"][0];
 DirectoryEntry domain = new DirectoryEntry("LDAP://" + str);  
 ```  
   
- For more information, see the documentation for your provider and the topic [Using Active Directory Service Interfaces](http://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/using_adsi.asp) in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+ For more information, see the documentation for your provider and the topic [Using Active Directory Service Interfaces](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/using_adsi.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
   
  ]]></format>
         </remarks>

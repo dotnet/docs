@@ -31,7 +31,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Http.Headers.ProductInfoHeaderValue> class provides support for the product and comment tokens values used in  a User-Agent header as defined in [RFC 2616](http://go.microsoft.com/fwlink/?LinkID=241642) by the IETF.  
+ The <xref:System.Net.Http.Headers.ProductInfoHeaderValue> class provides support for the product and comment tokens values used in  a User-Agent header as defined in [RFC 2616](https://go.microsoft.com/fwlink/?LinkID=241642) by the IETF.  
   
  The User-Agent field contains information about the user agent originating the request. The field can contain multiple product tokens and comments identifying the user agent and any sub-products.  
   

@@ -67,7 +67,7 @@
 ## [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] Apps  
  In [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps whose resources are loaded and retrieved by using the <xref:System.Resources.ResourceManager> class, the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute defines the neutral culture whose resources are used in the event of a failed probe. It does not specify the location of the resources. By default, <xref:System.Resources.ResourceManager> uses the app's package resource index (PRI) file to locate the resources of the default culture. The neutral culture that is defined by the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute is added to the end of the UI language list to simulate this effect.  
   
- If you load and retrieve resources by using the [!INCLUDE[wrt](~/includes/wrt-md.md)][Windows.ApplicationModel.Resources.ResourceLoader](http://go.microsoft.com/fwlink/p/?LinkId=238182) class or the types in the [Windows.ApplicationModel.Resources.Core](http://go.microsoft.com/fwlink/p/?LinkId=238194) namespace, the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute is ignored.  
+ If you load and retrieve resources by using the [!INCLUDE[wrt](~/includes/wrt-md.md)][Windows.ApplicationModel.Resources.ResourceLoader](https://go.microsoft.com/fwlink/p/?LinkId=238182) class or the types in the [Windows.ApplicationModel.Resources.Core](https://go.microsoft.com/fwlink/p/?LinkId=238194) namespace, the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute is ignored.  
   
    
   
@@ -194,7 +194,7 @@ csc Example.cs /resource:ExampleResources.resources
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a detailed list of culture names, see [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center.  
+ For a detailed list of culture names, see [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center.  
   
  ]]></format>
         </remarks>
@@ -239,7 +239,7 @@ csc Example.cs /resource:ExampleResources.resources
 ## Remarks  
  Use the <xref:System.Resources.NeutralResourcesLanguageAttribute> constructor with the <xref:System.Resources.UltimateResourceFallbackLocation> enumeration to specify whether the <xref:System.Resources.ResourceManager> class is to retrieve neutral fallback resources from the main app assembly (the default), or from a satellite assembly specified by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> and the <xref:System.Resources.ResourceManager.FallbackLocation%2A> properties.  
   
- For a detailed list of culture names, see [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center.  
+ For a detailed list of culture names, see [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center.  
   
  ]]></format>
         </remarks>
@@ -287,7 +287,7 @@ csc Example.cs /resource:ExampleResources.resources
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a detailed list of culture names, see [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center.  
+ For a detailed list of culture names, see [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center.  
   
  ]]></format>
         </remarks>

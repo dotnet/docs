@@ -43,7 +43,7 @@
  For more information about <xref:System.Media.SoundPlayer>, see [SoundPlayer Class Overview](~/docs/framework/winforms/controls/soundplayer-class-overview.md).  
   
 > [!NOTE]
->  The <xref:System.Media.SoundPlayer> class cannot play other file types, such as .wma or .mp3. If you want to play other file types, you can use the Windows Media Player control. For more information, see [Using the Windows Media Player Control in a .NET Framework Solution](http://go.microsoft.com/fwlink/?LinkId=131267) and [Windows Media Player Object Model Reference for Visual Basic .NET and C#](http://go.microsoft.com/fwlink/?LinkId=131269) in the Windows Media Player SDK.  
+>  The <xref:System.Media.SoundPlayer> class cannot play other file types, such as .wma or .mp3. If you want to play other file types, you can use the Windows Media Player control. For more information, see [Using the Windows Media Player Control in a .NET Framework Solution](https://go.microsoft.com/fwlink/?LinkId=131267) and [Windows Media Player Object Model Reference for Visual Basic .NET and C#](https://go.microsoft.com/fwlink/?LinkId=131269) in the Windows Media Player SDK.  
   
    
   
@@ -57,7 +57,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Media.SystemSounds" />
-    <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -92,7 +92,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -126,7 +126,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -157,7 +157,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.UriFormatException">The URL value specified by <paramref name="soundLocation" /> cannot be resolved.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -182,7 +182,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Media.SoundPlayer" /> class.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.UriFormatException">The <see cref="P:System.Media.SoundPlayer.SoundLocation" /> specified in <paramref name="serializationInfo" /> cannot be resolved.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="IsLoadCompleted">
@@ -211,7 +211,7 @@
         <value>
           <see langword="true" /> if a .wav file is loaded; <see langword="false" /> if a .wav file has not yet been loaded.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -260,7 +260,7 @@
         <permission cref="T:System.Net.WebPermission">for access to HTTP Internet resources. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
         <altmember cref="M:System.Media.SoundPlayer.LoadAsync" />
         <altmember cref="E:System.Media.SoundPlayer.LoadCompleted" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="LoadAsync">
@@ -309,8 +309,8 @@
         <exception cref="T:System.IO.FileNotFoundException">The file specified by <see cref="P:System.Media.SoundPlayer.SoundLocation" /> cannot be found.</exception>
         <altmember cref="M:System.Media.SoundPlayer.Load" />
         <altmember cref="E:System.Media.SoundPlayer.LoadCompleted" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/3b6a9296-1d5e-4d52-a4ba-94366d6fe302">How to: Load a Sound Asynchronously within a Windows Form</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3b6a9296-1d5e-4d52-a4ba-94366d6fe302">How to: Load a Sound Asynchronously within a Windows Form</related>
       </Docs>
     </Member>
     <Member MemberName="LoadCompleted">
@@ -351,7 +351,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.AsyncCompletedEventHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="LoadTimeout">
@@ -386,7 +386,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="OnLoadCompleted">
@@ -427,7 +427,7 @@
           <para>When overriding <see cref="M:System.Media.SoundPlayer.OnLoadCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Media.SoundPlayer.OnLoadCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Media.SoundPlayer.LoadCompleted" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="OnSoundLocationChanged">
@@ -468,7 +468,7 @@
           <para>When overriding <see cref="M:System.Media.SoundPlayer.OnSoundLocationChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Media.SoundPlayer.OnSoundLocationChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="P:System.Media.SoundPlayer.SoundLocation" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="OnStreamChanged">
@@ -509,7 +509,7 @@
           <para>When overriding <see cref="M:System.Media.SoundPlayer.OnStreamChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Media.SoundPlayer.OnStreamChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="P:System.Media.SoundPlayer.Stream" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -562,7 +562,7 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for access to native code. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
         <altmember cref="M:System.Media.SoundPlayer.PlayLooping" />
         <altmember cref="M:System.Media.SoundPlayer.PlaySync" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="PlayLooping">
@@ -617,7 +617,7 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for access to native code. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
         <altmember cref="M:System.Media.SoundPlayer.Play" />
         <altmember cref="M:System.Media.SoundPlayer.PlaySync" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="PlaySync">
@@ -670,7 +670,7 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for access to native code. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
         <altmember cref="M:System.Media.SoundPlayer.Play" />
         <altmember cref="M:System.Media.SoundPlayer.PlayLooping" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="SoundLocation">
@@ -710,7 +710,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for finding files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="SoundLocationChanged">
@@ -750,7 +750,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -785,7 +785,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for access to native code. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="Stream">
@@ -816,7 +816,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.IO.Stream" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="StreamChanged">
@@ -847,7 +847,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">

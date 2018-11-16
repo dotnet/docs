@@ -31,7 +31,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the Web Parts feature, a zone is a defined region on a Web page that contains Web Parts controls. The primary functions of a zone are to lay out the controls it contains, and to provide a common user interface (UI) for those controls. For general information about zones and how they are used in Web Parts applications, see the reference documentation for the base <xref:System.Web.UI.WebControls.WebParts.WebZone> and <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> classes, and the topic entitled [Web Parts Control Set Overview](http://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668).  
+ In the Web Parts feature, a zone is a defined region on a Web page that contains Web Parts controls. The primary functions of a zone are to lay out the controls it contains, and to provide a common user interface (UI) for those controls. For general information about zones and how they are used in Web Parts applications, see the reference documentation for the base <xref:System.Web.UI.WebControls.WebParts.WebZone> and <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> classes, and the topic entitled [Web Parts Control Set Overview](https://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668).  
   
  The special function of the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control is to contain <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, which form the main UI of Web Parts applications. A <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control can be declared in persistence format on a Web page, enabling developers to use it as a template and to add other server controls within the `<asp:webpartzone>` element. Any type of server control, if added to a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> zone, can function as a <xref:System.Web.UI.WebControls.WebParts.WebPart> control at run time. This is true regardless of whether the added control is a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, a user control, a custom control, or an ASP.NET control. For more information, see the topic for the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> class.  
   
@@ -43,12 +43,12 @@
  The <xref:System.Web.UI.WebControls.WebParts.WebPartZone> class derives most of its behavior from the base <xref:System.Web.UI.WebControls.WebParts.WebZone> and <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> classes; it adds only one unique member, the <xref:System.Web.UI.WebControls.WebParts.WebPartZone.ZoneTemplate%2A> property. This property references an <xref:System.Web.UI.ITemplate> object, which is a template that allows page developers to define the controls in a zone statically by using a `<zonetemplate>` element in the declarative markup of an .aspx page.  
   
 ## Accessibility  
- The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control in a Web Parts page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control in a Web Parts page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  The first part of the example shows a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> class, and that sets two of the base zone properties in the constructor.  
   
@@ -71,9 +71,9 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebZone" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Web Parts Control Set Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/13525a0a-22b8-4861-b24c-99df859e2cb5">Introduction to ASP.NET Web Parts</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Web Parts Control Set Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/13525a0a-22b8-4861-b24c-99df859e2cb5">Introduction to ASP.NET Web Parts</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -112,7 +112,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetInitialWebParts">
@@ -151,7 +151,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZone.ZoneTemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -177,7 +177,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Overrides the base method to indicate that the zone has successfully been registered with the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ZoneTemplate">
@@ -238,8 +238,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">Registration of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls in the zone is already complete.</exception>
         <altmember cref="T:System.Web.UI.ITemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

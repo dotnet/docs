@@ -24,7 +24,7 @@
  The <xref:System.Web.ProcessModelInfo> class is not meant to be instantiated in your own code. Use the static <xref:System.Web.ProcessModelInfo.GetCurrentProcessInfo%2A> and <xref:System.Web.ProcessModelInfo.GetHistory%2A> methods to populate <xref:System.Web.ProcessInfo> objects, and then use the properties of the <xref:System.Web.ProcessInfo> objects to obtain information about the processes.  
   
 > [!NOTE]
->  The <xref:System.Web.ProcessModelInfo.GetCurrentProcessInfo%2A> and <xref:System.Web.ProcessModelInfo.GetHistory%2A> methods can be used only with Microsoft Internet Information Services (IIS) version 5.0 on Microsoft Windows 2000 and Windows XP or with IIS 6.0 on Windows Server 2003 and using IIS 5.0 isolation mode. For more information, see [NIB: How to: Configure ASP.NET Applications for an ASP.NET Version](http://msdn.microsoft.com/library/3e2037d2-61aa-44f3-b84e-d4dab3572ad3).  
+>  The <xref:System.Web.ProcessModelInfo.GetCurrentProcessInfo%2A> and <xref:System.Web.ProcessModelInfo.GetHistory%2A> methods can be used only with Microsoft Internet Information Services (IIS) version 5.0 on Microsoft Windows 2000 and Windows XP or with IIS 6.0 on Windows Server 2003 and using IIS 5.0 isolation mode. For more information, see [NIB: How to: Configure ASP.NET Applications for an ASP.NET Version](https://msdn.microsoft.com/library/3e2037d2-61aa-44f3-b84e-d4dab3572ad3).  
   
    
   

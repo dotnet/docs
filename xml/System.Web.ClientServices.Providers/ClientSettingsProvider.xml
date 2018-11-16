@@ -53,9 +53,9 @@
     <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This class cannot be used by partially trusted or transparent code.</permission>
     <altmember cref="P:System.Configuration.ApplicationSettingsBase.Providers" />
     <altmember cref="E:System.Configuration.ApplicationSettingsBase.SettingsLoaded" />
-    <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc">Application Settings Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/1e7aa347-af75-41e5-89ca-f53cab704f72">How to: Create Application Settings</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc">Application Settings Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/1e7aa347-af75-41e5-89ca-f53cab704f72">How to: Create Application Settings</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,7 +86,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="ApplicationName">
@@ -124,7 +124,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetPreviousVersion">
@@ -166,7 +166,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the Web settings service at the <see cref="P:System.Web.ClientServices.Providers.ClientSettingsProvider.ServiceUri" /> location is unavailable.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetPropertyMetadata">
@@ -226,7 +226,7 @@
         <summary>Returns the collection of settings property values for the specified application instance and settings property group.</summary>
         <returns>A <see cref="T:System.Configuration.SettingsPropertyValueCollection" /> containing the values for the specified settings property group.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -287,7 +287,7 @@
   
  <paramref name="config" /> contains an unrecognized value.</exception>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Web.ClientServices.Providers.ClientRoleProvider" /> has already been initialized.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -328,7 +328,7 @@
         <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the Web settings service at the <see cref="P:System.Web.ClientServices.Providers.ClientSettingsProvider.ServiceUri" /> location is unavailable.</exception>
         <altmember cref="M:System.Configuration.ApplicationSettingsBase.Reset" />
         <altmember cref="M:System.Configuration.ApplicationSettingsBase.Reload" />
-        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="ServiceUri">
@@ -376,7 +376,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="SetPropertyValues">
@@ -409,7 +409,7 @@
         <param name="propertyValueCollection">A <see cref="T:System.Configuration.SettingsPropertyValueCollection" /> representing the group of property settings to set.</param>
         <summary>Sets the values of the specified group of property settings.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="SettingsSaved">
@@ -452,7 +452,7 @@
         <altmember cref="E:System.Configuration.ApplicationSettingsBase.SettingsLoaded" />
         <altmember cref="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Logout" />
         <altmember cref="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout" />
-        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="Upgrade">
@@ -492,7 +492,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
   </Members>

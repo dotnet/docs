@@ -68,7 +68,7 @@
     <altmember cref="T:System.Web.HttpContext" />
     <altmember cref="T:System.Web.SessionState.HttpSessionState" />
     <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
     <related type="Article" href="https://msdn.microsoft.com/library/b0131d20-3dde-42ba-acf9-5743df187b24">Controlling Session State</related>
   </Docs>
   <Members>
@@ -222,8 +222,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.HttpCookieMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad">Basic Security Practices for Web Applications</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad">Basic Security Practices for Web Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
         <related type="Article" href="https://msdn.microsoft.com/library/b0131d20-3dde-42ba-acf9-5743df187b24">Controlling Session State</related>
       </Docs>
     </Member>
@@ -336,7 +336,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.SessionState.SessionStateMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ElementProperty">
@@ -436,7 +436,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Web.Configuration.SessionStateSection.PartitionResolverType%2A> property is specified, the <xref:System.Web.Configuration.SessionStateSection.SqlConnectionString%2A> property and <xref:System.Web.Configuration.SessionStateSection.StateConnectionString%2A> property are ignored.  The <xref:System.Web.Configuration.SessionStateSection.PartitionResolverType%2A> can be locked via the <xref:System.Configuration.ConfigurationElement.LockAttributes%2A> property like other properties within the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) element. The connection string returned by the <xref:System.Web.Configuration.SessionStateSection.PartitionResolverType%2A> will be used on every request to connect to the appropriate server location for the remainder of the request.  If the connection string is invalid, ASP.NET will throw the same exception that is thrown when the configured connection string to the server is invalid.  
+ If the <xref:System.Web.Configuration.SessionStateSection.PartitionResolverType%2A> property is specified, the <xref:System.Web.Configuration.SessionStateSection.SqlConnectionString%2A> property and <xref:System.Web.Configuration.SessionStateSection.StateConnectionString%2A> property are ignored.  The <xref:System.Web.Configuration.SessionStateSection.PartitionResolverType%2A> can be locked via the <xref:System.Configuration.ConfigurationElement.LockAttributes%2A> property like other properties within the [sessionState Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) element. The connection string returned by the <xref:System.Web.Configuration.SessionStateSection.PartitionResolverType%2A> will be used on every request to connect to the appropriate server location for the remainder of the request.  If the connection string is invalid, ASP.NET will throw the same exception that is thrown when the configured connection string to the server is invalid.  
   
  This property is used to partition session-state data across multiple backend nodes when in SQL or state-server mode.  
   

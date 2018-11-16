@@ -618,7 +618,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Management.ManagementBaseObject.Properties%2A> property to display the value of the **Description** qualifier for each of the properties in the **Win32_Process** class.  For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+ The following example uses the <xref:System.Management.ManagementBaseObject.Properties%2A> property to display the value of the **Description** qualifier for each of the properties in the **Win32_Process** class.  For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
   
  [!code-csharp[wminet_ManagementBaseObject_Properties#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Properties/cs/ManagementBaseObject_Properties.cs#1)]
  [!code-vb[wminet_ManagementBaseObject_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Properties/vb/ManagementBaseObject_Properties.vb#1)]  

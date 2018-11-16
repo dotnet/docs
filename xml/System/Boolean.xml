@@ -97,7 +97,7 @@
  [!code-csharp[System.Boolean.Structure#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.boolean.structure/cs/format3.cs#5)]
  [!code-vb[System.Boolean.Structure#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.boolean.structure/vb/format3.vb#5)]  
   
- Optionally, you can use [resource files](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890) to define culture-specific Boolean strings.  
+ Optionally, you can use [resource files](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890) to define culture-specific Boolean strings.  
   
 <a name="Converting"></a>   
 ## Converting to and from Boolean values  
@@ -719,7 +719,7 @@
           <paramref name="value" /> is not equivalent to <see cref="F:System.Boolean.TrueString" /> or <see cref="F:System.Boolean.FalseString" />.</exception>
         <altmember cref="F:System.Boolean.TrueString" />
         <altmember cref="F:System.Boolean.FalseString" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d139bc00-3c4e-4d78-ac9a-5c951b258d28">Parsing Other Strings</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d139bc00-3c4e-4d78-ac9a-5c951b258d28">Parsing Other Strings</related>
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -1857,7 +1857,7 @@
         <altmember cref="M:System.Boolean.Parse(System.String)" />
         <altmember cref="F:System.Boolean.TrueString" />
         <altmember cref="F:System.Boolean.FalseString" />
-        <related type="Article" href="http://msdn.microsoft.com/library/d139bc00-3c4e-4d78-ac9a-5c951b258d28">Parsing Other Strings in the .NET Framework</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d139bc00-3c4e-4d78-ac9a-5c951b258d28">Parsing Other Strings in the .NET Framework</related>
       </Docs>
     </Member>
   </Members>

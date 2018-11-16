@@ -20,9 +20,9 @@
     <altmember cref="F:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent" />
     <altmember cref="T:System.Windows.Automation.AutomationFocusChangedEventHandler" />
     <altmember cref="M:System.Windows.Automation.Automation.RemoveAutomationFocusChangedEventHandler(System.Windows.Automation.AutomationFocusChangedEventHandler)" />
-    <related type="Article" href="http://msdn.microsoft.com/library/b688effa-b3e8-4b05-944d-05ed89a245aa">Subscribe to UI Automation Events</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/b909e388-3f24-4997-b6d4-bd9c35c2dc27">UI Automation Events for Clients</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/69eebd8b-39ed-40e7-93cc-4457c4caf746">UI Automation Events Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/b688effa-b3e8-4b05-944d-05ed89a245aa">Subscribe to UI Automation Events</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/b909e388-3f24-4997-b6d4-bd9c35c2dc27">UI Automation Events for Clients</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/69eebd8b-39ed-40e7-93cc-4457c4caf746">UI Automation Events Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,7 +113,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the [!INCLUDE[TLA#tla_id](~/includes/tlasharptla-id-md.md)] of the [!INCLUDE[TLA#tla_aa](~/includes/tlasharptla-aa-md.md)] object that generated the event.</summary>
-        <value>The ID of the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] element that is receiving focus. For possible values, see [Object Identifiers](http://msdn.microsoft.com/library/default.asp?url=/library/msaa/msaaccrf_5q05.asp) in the Microsoft Active Accessibility documentation.</value>
+        <value>The ID of the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] element that is receiving focus. For possible values, see [Object Identifiers](https://msdn.microsoft.com/library/default.asp?url=/library/msaa/msaaccrf_5q05.asp) in the Microsoft Active Accessibility documentation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

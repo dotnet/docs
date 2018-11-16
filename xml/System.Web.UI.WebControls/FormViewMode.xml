@@ -32,7 +32,7 @@
  The following example demonstrates how to keep the <xref:System.Web.UI.WebControls.FormView> control in edit mode after an update operation by setting the <xref:System.Web.UI.WebControls.FormView.DefaultMode%2A> property to `FormViewMode.Edit`.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[FormViewDefaultMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDefaultMode/CS/formviewdefaultmodecs.aspx#1)]
  [!code-aspx-vb[FormViewDefaultMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDefaultMode/VB/formviewdefaultmodevb.aspx#1)]  

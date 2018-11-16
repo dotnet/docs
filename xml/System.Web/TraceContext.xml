@@ -23,16 +23,16 @@
 ## Remarks  
  You can use this class to append messages to specific trace categories. For example, if you are creating an instance of the <xref:System.Web.UI.WebControls.Calendar> class for your application, you might include the trace message "Starting To Render" in a rendering procedure, and "Raising OnChange Event" in an event handler procedure.  
   
- You can also use the <xref:System.Web.TraceContext> class to obtain a set of trace records at the end of request execution for custom processing. For more information, see [ASP.NET Tracing Overview](http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416).  
+ You can also use the <xref:System.Web.TraceContext> class to obtain a set of trace records at the end of request execution for custom processing. For more information, see [ASP.NET Tracing Overview](https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416).  
   
- To enable tracing, set the `Trace` attribute in the [@ Page](http://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive or the <xref:System.Web.TraceContext.IsEnabled%2A> property to `true`. When tracing is enabled, in addition to showing user-provided trace content, the <xref:System.Web.UI.Page> class automatically includes performance data, control-tree structure information, and state management content for every request.  
+ To enable tracing, set the `Trace` attribute in the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive or the <xref:System.Web.TraceContext.IsEnabled%2A> property to `true`. When tracing is enabled, in addition to showing user-provided trace content, the <xref:System.Web.UI.Page> class automatically includes performance data, control-tree structure information, and state management content for every request.  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.TraceContextEventArgs" />
     <altmember cref="T:System.Web.TraceContextEventHandler" />
     <altmember cref="T:System.Web.TraceContextRecord" />
-    <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,7 +57,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.TraceContext" /> class.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.HttpContext" />
-        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -102,8 +102,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/7931c942-63c1-47c3-a045-9d9de3cacdbf">&lt;trace&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7931c942-63c1-47c3-a045-9d9de3cacdbf">&lt;trace&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="TraceFinished">
@@ -143,7 +143,7 @@
         <altmember cref="T:System.Web.TraceContextEventHandler" />
         <altmember cref="T:System.Web.TraceContextEventArgs" />
         <altmember cref="T:System.Web.TraceContextRecord" />
-        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TraceMode">
@@ -184,7 +184,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.TraceMode" /> enumeration values.</exception>
         <altmember cref="T:System.Web.UI.Page" />
-        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Warn">
@@ -227,7 +227,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Warn">
@@ -263,7 +263,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Warn">
@@ -310,7 +310,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
-        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Write">
@@ -353,7 +353,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -397,7 +397,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -444,7 +444,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
-        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
   </Members>

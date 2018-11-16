@@ -26,7 +26,7 @@
   
  An XML Web service client starts XML Web services discovery by supplying a URL to either the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Discover%2A> or <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoverAny%2A> methods. Typically, this URL refers to a discovery document, which in turn refers to documents that describe one or more XML Web services, which are added to the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.References%2A> property. At that point, only that document is downloaded and verified to point to valid information about XML Web services. However, the references contained in that document are not verified at this stage. Instead they are added to the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.References%2A> property. To verify that the references are valid, invoke the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.ResolveAll%2A> or <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.ResolveOneLevel%2A> methods, which add valid referenced documents to the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Documents%2A> property. Last, if a client wants to save the discovery results to disk, invoke the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll%2A> method.  
   
- If programmatic access to XML Web services discovery is not needed, the [!INCLUDE[winsdklong](~/includes/winsdklong-md.md)] ships the Web Services Discovery tool (Disco.exe) for discovering XML Web services within a command prompt. For more details, see [Web Services Discovery Tool (Disco.exe)](http://msdn.microsoft.com/library/acd88078-c581-42bc-94ca-6633e2851979).  
+ If programmatic access to XML Web services discovery is not needed, the [!INCLUDE[winsdklong](~/includes/winsdklong-md.md)] ships the Web Services Discovery tool (Disco.exe) for discovering XML Web services within a command prompt. For more details, see [Web Services Discovery Tool (Disco.exe)](https://msdn.microsoft.com/library/acd88078-c581-42bc-94ca-6633e2851979).  
   
    
   
@@ -34,7 +34,7 @@
  The following code example is a Web Form demonstrating how to use the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol> class together with the other classes in the <xref:System.Web.Services.Discovery> namespace to programmatically invoke XML Web services discovery. The code example demonstrates using the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Discover%2A>, <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoverAny%2A>, <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Discover%2A>, <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.ResolveAll%2A>, <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.ResolveOneLevel%2A>, <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.ReadAll%2A> and <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll%2A> methods.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[DiscoveryClientProtocol#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientProtocol/CS/discocs.aspx#1)]
  [!code-aspx-vb[DiscoveryClientProtocol#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientProtocol/VB/discovb.aspx#1)]  
@@ -231,7 +231,7 @@
  The following code example is a Web Form that populates a <xref:System.Web.UI.WebControls.DataGrid> with the details about the documents in the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Documents%2A> property discovered during XML Web services discovery. The `PopulateGrid` method fills the <xref:System.Web.UI.WebControls.DataGrid> with the results from a <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoverAny%2A> invocation followed by a call to <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.ResolveAll%2A>.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[DiscoveryClientProtocol.Documents#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientProtocol.Documents/CS/discocs.aspx#1)]
  [!code-aspx-vb[DiscoveryClientProtocol.Documents#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientProtocol.Documents/VB/discovb.aspx#1)]  
@@ -481,7 +481,7 @@
  The following code example is a Web Form that populates a <xref:System.Web.UI.WebControls.DataGrid> with the details about the references in the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.References%2A> property discovered during an XML Web services discovery. The `PopulateGrid` method fills the <xref:System.Web.UI.WebControls.DataGrid> with the references found in an invocation to <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoverAny%2A>.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[DiscoveryClientProtocol.References#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientProtocol.References/CS/discocs.aspx#1)]
  [!code-aspx-vb[DiscoveryClientProtocol.References#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientProtocol.References/VB/discovb.aspx#1)]  

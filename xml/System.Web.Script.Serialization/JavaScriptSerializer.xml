@@ -519,7 +519,7 @@ It requires a class named `Person`, which is shown in the following example.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Web.Script.Serialization.JavaScriptSerializer.MaxJsonLength%2A> property applies only when you explicitly create an instance of the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class. Use the `jsonSerialization` element of the configuration file to set the maximum length for the internal serializer instance that is used by the asynchronous communication layer. For more information about the configuration elements for serialization, see [How to: Configure ASP.NET Services in Microsoft Ajax](http://msdn.microsoft.com/library/ea4fb56e-bc1d-405a-9877-00cf5e552a30).  
+ The value of the <xref:System.Web.Script.Serialization.JavaScriptSerializer.MaxJsonLength%2A> property applies only when you explicitly create an instance of the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class. Use the `jsonSerialization` element of the configuration file to set the maximum length for the internal serializer instance that is used by the asynchronous communication layer. For more information about the configuration elements for serialization, see [How to: Configure ASP.NET Services in Microsoft Ajax](https://msdn.microsoft.com/library/ea4fb56e-bc1d-405a-9877-00cf5e552a30).  
   
  ]]></format>
         </remarks>
@@ -561,7 +561,7 @@ It requires a class named `Person`, which is shown in the following example.
   
 -   When the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class is walking an object graph during serialization.  
   
- The value of <xref:System.Web.Script.Serialization.JavaScriptSerializer.RecursionLimit%2A> applies only when you explicitly create an instance of the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class. Use the `jsonSerialization` element of the configuration file to set the number of object levels to process for the internal serializer instance that is used by the asynchronous communication layer. For more information about the configuration elements for serialization, see [How to: Configure ASP.NET Services in Microsoft Ajax](http://msdn.microsoft.com/library/ea4fb56e-bc1d-405a-9877-00cf5e552a30).  
+ The value of <xref:System.Web.Script.Serialization.JavaScriptSerializer.RecursionLimit%2A> applies only when you explicitly create an instance of the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class. Use the `jsonSerialization` element of the configuration file to set the number of object levels to process for the internal serializer instance that is used by the asynchronous communication layer. For more information about the configuration elements for serialization, see [How to: Configure ASP.NET Services in Microsoft Ajax](https://msdn.microsoft.com/library/ea4fb56e-bc1d-405a-9877-00cf5e552a30).  
   
  ]]></format>
         </remarks>

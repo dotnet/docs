@@ -42,7 +42,7 @@
   
  The <xref:System.Web.UI.WebControls.Content> control is associated with a <xref:System.Web.UI.WebControls.ContentPlaceHolder> using its <xref:System.Web.UI.WebControls.Content.ContentPlaceHolderID%2A> property. Set the <xref:System.Web.UI.WebControls.Content.ContentPlaceHolderID%2A> property to the value of the <xref:System.Web.UI.Control.ID%2A> property of a <xref:System.Web.UI.WebControls.ContentPlaceHolder> control in a master page. When the URL of the content page is called, all text, markup, and server controls that are contained within the <xref:System.Web.UI.WebControls.Content> control are rendered to the <xref:System.Web.UI.WebControls.ContentPlaceHolder> on the master page, and the address bar of the browser will show the name of the content page.  
   
- For more information about master pages and content pages, see [ASP.NET Master Pages](http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b).  
+ For more information about master pages and content pages, see [ASP.NET Master Pages](https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b).  
   
 <a name="DeclarativeSyntax"></a>   
 ## Declarative Syntax  
@@ -86,7 +86,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
-    <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -117,7 +117,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ContentPlaceHolderID">
@@ -156,7 +156,7 @@
 ## Remarks  
  All content that is encapsulated by the <xref:System.Web.UI.WebControls.Content> control renders within the referenced <xref:System.Web.UI.WebControls.ContentPlaceHolder> control in a master page. A <xref:System.Web.UI.WebControls.Content> control is not added to the control hierarchy at runtime.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -185,7 +185,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set the property at run time.</exception>
         <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
-        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataBinding">
@@ -227,7 +227,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
         <altmember cref="E:System.Web.UI.Control.DataBinding" />
-        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Disposed">
@@ -269,7 +269,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
         <altmember cref="E:System.Web.UI.Control.Disposed" />
-        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -311,7 +311,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
         <altmember cref="E:System.Web.UI.Control.Init" />
-        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -353,7 +353,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
         <altmember cref="E:System.Web.UI.Control.Load" />
-        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PreRender">
@@ -395,7 +395,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
         <altmember cref="E:System.Web.UI.Control.PreRender" />
-        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Unload">
@@ -437,7 +437,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
         <altmember cref="E:System.Web.UI.Control.Unload" />
-        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
   </Members>

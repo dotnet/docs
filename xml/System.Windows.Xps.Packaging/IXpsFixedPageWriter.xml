@@ -33,7 +33,7 @@
     <altmember cref="T:System.Windows.Xps.Packaging.IXpsFixedPageReader" />
     <altmember cref="T:System.Windows.Xps.Packaging.IXpsFixedDocumentWriter" />
     <altmember cref="T:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter" />
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=65761">XML Paper Specification (XPS)</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=65761">XML Paper Specification (XPS)</related>
   </Docs>
   <Members>
     <Member MemberName="AddColorContext">
@@ -173,7 +173,7 @@
   
  Set the `obfuscate` parameter to `true` when you are legally obligated to obfuscate a licensed proprietary font.  While obfuscation does not encrypt the font, it inhibits unzipping proprietary fonts and installing them separately for other uses.  
   
- For more information about font obfuscation, see Section 2.1.7.3 "Embedded Font Obfuscation" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+ For more information about font obfuscation, see Section 2.1.7.3 "Embedded Font Obfuscation" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](https://go.microsoft.com/fwlink/?LinkID=65761).  
   
    
   
@@ -226,7 +226,7 @@
   
  Set the `obfuscate` parameter to `true` when you are legally obligated to obfuscate a licensed proprietary font.  While obfuscation does not encrypt the font, it inhibits unzipping proprietary fonts and installing them separately for other uses.  
   
- For more information about font obfuscation and the use of restricted fonts see the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+ For more information about font obfuscation and the use of restricted fonts see the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](https://go.microsoft.com/fwlink/?LinkID=65761).  
   
    
   
@@ -546,7 +546,7 @@
 ## Remarks  
  The list of <xref:System.Windows.Documents.LinkTarget> hyperlink points is available after the page has been written and the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.Commit%2A> method has been called.  
   
- For information about <xref:System.Windows.Documents.LinkTarget> elements see Section 3.2.3 "\<LinkTarget> Element" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+ For information about <xref:System.Windows.Documents.LinkTarget> elements see Section 3.2.3 "\<LinkTarget> Element" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](https://go.microsoft.com/fwlink/?LinkID=65761).  
   
  ]]></format>
         </remarks>

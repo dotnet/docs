@@ -536,7 +536,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
     <altmember cref="T:System.Text.StringBuilder" />
     <altmember cref="T:System.Globalization.CultureInfo" />
     <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7">Best Practices for Using Strings in the .NET Framework</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7">Best Practices for Using Strings in the .NET Framework</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -1436,7 +1436,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7">Best Practices for Using Strings in the .NET Framework</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7">Best Practices for Using Strings in the .NET Framework</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Compare">
@@ -6016,7 +6016,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
           <para>The value returned by <see cref="M:System.String.GetHashCode" /> is platform-dependent. It differs on the 32-bit and 64-bit versions of the .NET Framework. It also can differ between versions of the .NET Framework and .NET Core.</para>
         </block>
         <altmember cref="M:System.Object.GetHashCode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08125d6-56cc-4b23-b482-813ff85dc630">&lt;UseRandomizedStringHashAlgorithm&gt; Element</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08125d6-56cc-4b23-b482-813ff85dc630">&lt;UseRandomizedStringHashAlgorithm&gt; Element</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">

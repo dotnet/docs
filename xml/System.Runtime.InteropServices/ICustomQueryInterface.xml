@@ -37,14 +37,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enables developers to provide a custom, managed implementation of the <see href="http://go.microsoft.com/fwlink/?LinkID=144867">IUnknown::QueryInterface(REFIID riid, void **ppvObject)</see> method.</summary>
+    <summary>Enables developers to provide a custom, managed implementation of the <see href="https://go.microsoft.com/fwlink/?LinkID=144867">IUnknown::QueryInterface(REFIID riid, void **ppvObject)</see> method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This class permits advanced users to provide a customized managed implementation of the `QueryInterface` method.  
   
- Managed and native applications can use the customized implementation to return a specific interface for a specified interface ID, except for IID_IUnknown. That is, when `QueryInterface` is called, it will ignore custom implementations if its `riid` parameter is set to IID_IUnknown. However, you may still return [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) as the `ppvObject`.  
+ Managed and native applications can use the customized implementation to return a specific interface for a specified interface ID, except for IID_IUnknown. That is, when `QueryInterface` is called, it will ignore custom implementations if its `riid` parameter is set to IID_IUnknown. However, you may still return [IUnknown](https://go.microsoft.com/fwlink/?LinkId=148003) as the `ppvObject`.  
   
  Developers can provide custom implementations for all interfaces (except for `IUnknown`) if they define and implement a valid corresponding interface.  
   

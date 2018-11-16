@@ -26,7 +26,7 @@
 ## Remarks  
  If you implement ASP.NET routing in a Web site, you can use the <xref:System.Web.UI.WebControls.RouteParameter> object to bind the value of a segment of the requested URL to a database query or command. You can declare <xref:System.Web.UI.WebControls.RouteParameter> objects in markup for data source controls or the <xref:System.Web.UI.WebControls.QueryExtender> control.  
   
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=168640).  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](https://go.microsoft.com/fwlink/?LinkId=168640).  
   
    
   
@@ -43,7 +43,7 @@
   
   
   
- The following example shows a page that is named ProductLinks.aspx, which contains hyperlinks that link to the Product.aspx page by using route URLs. These hyperlinks use `RouteUrl` expressions to create route URLs. The first link does not include a `culture` route parameter. Therefore, the default value of "en" that is defined in the <xref:System.Web.UI.WebControls.RouteParameter> object for `@culture` query parameter will be used in the query. The second link provides a `culture` value of "fr", which causes the description to be displayed in French. For more information about how to use `RouteUrl` expressions, see [How to: Construct URLs from Routes](http://msdn.microsoft.com/library/1ffd4085-71f6-4822-be8f-f682ca638650).  
+ The following example shows a page that is named ProductLinks.aspx, which contains hyperlinks that link to the Product.aspx page by using route URLs. These hyperlinks use `RouteUrl` expressions to create route URLs. The first link does not include a `culture` route parameter. Therefore, the default value of "en" that is defined in the <xref:System.Web.UI.WebControls.RouteParameter> object for `@culture` query parameter will be used in the query. The second link provides a `culture` value of "fr", which causes the description to be displayed in French. For more information about how to use `RouteUrl` expressions, see [How to: Construct URLs from Routes](https://msdn.microsoft.com/library/1ffd4085-71f6-4822-be8f-f682ca638650).  
   
   
   
@@ -59,14 +59,14 @@
 |---------------|----------|-----------------|  
 |`994`|`LL Bottom Bracket`|`Acier chromé.`|  
   
- To run this example, add the two .aspx pages and the code in the Global.asax file to an ASP.NET Web site or Web application that defines a connection string named `AdventureWorksLTConnectionString` for the AdventureWorksLT database. For information about how to set up a connection to the AdventureWorksLT database, see [How to: Set Up an AdventureWorksLT Sample Database for ASP.NET Development](http://msdn.microsoft.com/library/2baad633-9d63-49cc-a6b2-917cafd35356).  
+ To run this example, add the two .aspx pages and the code in the Global.asax file to an ASP.NET Web site or Web application that defines a connection string named `AdventureWorksLTConnectionString` for the AdventureWorksLT database. For information about how to set up a connection to the AdventureWorksLT database, see [How to: Set Up an AdventureWorksLT Sample Database for ASP.NET Development](https://msdn.microsoft.com/library/2baad633-9d63-49cc-a6b2-917cafd35356).  
   
- For more information about ASP.NET routing, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ For more information about ASP.NET routing, see [ASP.NET Routing](https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.QueryExtender" />
-    <related type="Article" href="http://msdn.microsoft.com/library/b93e32b9-af41-4539-a009-6cbbe809c702">QueryExtender Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/b93e32b9-af41-4539-a009-6cbbe809c702">QueryExtender Web Server Control Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -76,8 +76,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RouteParameter" /> class.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -117,8 +117,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -147,8 +147,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -172,8 +172,8 @@
         <param name="routeKey">The name of the route segment that contains the value for the parameter.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RouteParameter" /> class by using the specified name for the parameter and the specified key for route data.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -198,8 +198,8 @@
         <param name="routeKey">The name of the route segment that contains the value for the parameter.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RouteParameter" /> class by using the specified name and database type for the parameter, and by using the specified key for the route data.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -225,8 +225,8 @@
         <param name="routeKey">The name of the route segment that contains the value for the parameter.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RouteParameter" /> class by using the specified name and type for the parameter, and by using the specified key for the route data.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -249,8 +249,8 @@
         <summary>Returns a duplicate of the current <see cref="T:System.Web.UI.WebControls.RouteParameter" /> instance.</summary>
         <returns>An object that is a duplicate of the current one.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
@@ -277,8 +277,8 @@
         <summary>Evaluates the request URL and returns the value of the parameter.</summary>
         <returns>The current value of the parameter.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName="RouteKey">
@@ -312,8 +312,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
       </Docs>
     </Member>
   </Members>

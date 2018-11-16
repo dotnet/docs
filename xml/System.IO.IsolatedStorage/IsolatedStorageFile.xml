@@ -47,7 +47,7 @@
  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
 > [!IMPORTANT]
->  Isolated storage is not available for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. Instead, use the application data classes in the `Windows.Storage` namespaces included in the [!INCLUDE[wrt](~/includes/wrt-md.md)] API to store local data and files. For more information, see [Application data](http://go.microsoft.com/fwlink/?LinkId=229175) in the Windows Dev Center.  
+>  Isolated storage is not available for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. Instead, use the application data classes in the `Windows.Storage` namespaces included in the [!INCLUDE[wrt](~/includes/wrt-md.md)] API to store local data and files. For more information, see [Application data](https://go.microsoft.com/fwlink/?LinkId=229175) in the Windows Dev Center.  
   
    
   
@@ -2887,7 +2887,7 @@
         </remarks>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store cannot be deleted.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
-        <related type="Article" href="http://msdn.microsoft.com/library/3947e333-5af6-4601-b2f1-24d4d6129cf3">How to: Delete Stores in Isolated Storage</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3947e333-5af6-4601-b2f1-24d4d6129cf3">How to: Delete Stores in Isolated Storage</related>
         <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>
@@ -2944,7 +2944,7 @@
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store cannot be removed.</exception>
         <permission cref="T:System.Security.Permissions.IsolatedStorageFilePermission">for using isolated storage. Associated enumeration: <see cref="F:System.Security.Permissions.IsolatedStorageContainment.AdministerIsolatedStorageByUser" /></permission>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
-        <related type="Article" href="http://msdn.microsoft.com/library/3947e333-5af6-4601-b2f1-24d4d6129cf3">How to: Delete Stores in Isolated Storage</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3947e333-5af6-4601-b2f1-24d4d6129cf3">How to: Delete Stores in Isolated Storage</related>
         <related type="Article" href="~/docs/standard/io/isolated-storage.md">Isolated Storage</related>
       </Docs>
     </Member>

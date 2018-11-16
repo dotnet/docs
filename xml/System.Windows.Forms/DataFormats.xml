@@ -477,7 +477,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to indicate the CF_HTML clipboard data type. For more information about this format, see [HTML Clipboard Format](http://go.microsoft.com/fwlink/?LinkId=198813).  
+ This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to indicate the CF_HTML clipboard data type. For more information about this format, see [HTML Clipboard Format](https://go.microsoft.com/fwlink/?LinkId=198813).  
   
  When adding to an <xref:System.Windows.Forms.IDataObject> or to an implementation of <xref:System.Windows.Forms.DataObject>, use this field as the format for the <xref:System.Windows.Forms.IDataObject.SetData%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType> methods.  
   

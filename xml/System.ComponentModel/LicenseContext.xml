@@ -42,7 +42,7 @@
     <block subset="none" type="overrides">
       <para>If you want to implement design-time license support, you must inherit from this class, and override the following members: <see cref="P:System.ComponentModel.LicenseContext.UsageMode" />, <see cref="M:System.ComponentModel.LicenseContext.GetSavedLicenseKey(System.Type,System.Reflection.Assembly)" />, <see cref="M:System.ComponentModel.LicenseContext.GetService(System.Type)" />, and <see cref="M:System.ComponentModel.LicenseContext.SetSavedLicenseKey(System.Type,System.String)" />. If you want to implement saved license keys, override the <see cref="M:System.ComponentModel.LicenseContext.GetSavedLicenseKey(System.Type,System.Reflection.Assembly)" /> and <see cref="M:System.ComponentModel.LicenseContext.SetSavedLicenseKey(System.Type,System.String)" /> methods.  
   
- For more information about licensing, see [How to: License Components and Controls](http://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57).</para>
+ For more information about licensing, see [How to: License Components and Controls](https://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57).</para>
     </block>
     <altmember cref="T:System.ComponentModel.License" />
     <altmember cref="T:System.ComponentModel.LicenseException" />

@@ -48,7 +48,7 @@
 ## Introduction  
  The <xref:System.Web.UI.WebControls.SiteMapPath> control is a site navigation control that reflects data provided by the <xref:System.Web.SiteMap> object. It provides a space-saving way to easily navigate a site and serves as a point of reference for where the currently displayed page is within a site. This type of control is commonly called a breadcrumb, or eyebrow, because it displays a hierarchical path of hyperlinked page names that provides an escape up the hierarchy of pages from the current location. <xref:System.Web.UI.WebControls.SiteMapDataSource>. The <xref:System.Web.UI.WebControls.SiteMapPath> is useful for sites that have deep hierarchical page structures, but where a <xref:System.Web.UI.WebControls.TreeView> or <xref:System.Web.UI.WebControls.Menu> might require too much space on a page.  
   
- The <xref:System.Web.UI.WebControls.SiteMapPath> control works directly with your Web site's site map data. If you use it on a page that is not represented in your site map, it will not be displayed. For more information about site maps, see [ASP.NET Site Navigation](http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d).  
+ The <xref:System.Web.UI.WebControls.SiteMapPath> control works directly with your Web site's site map data. If you use it on a page that is not represented in your site map, it will not be displayed. For more information about site maps, see [ASP.NET Site Navigation](https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d).  
   
 <a name="nodes"></a>   
 ## Nodes  
@@ -91,7 +91,7 @@
   
 <a name="accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -193,8 +193,8 @@
     <altmember cref="T:System.Web.UI.WebControls.TreeView" />
     <altmember cref="T:System.Web.UI.WebControls.Menu" />
     <altmember cref="T:System.Web.UI.WebControls.SiteMapDataSource" />
-    <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/1686b4cd-435a-42dc-b22d-713d7763f97d">Securing ASP.NET Site Navigation</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -233,7 +233,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -264,7 +264,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.CreateControlHierarchy" />
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlHierarchy">
@@ -305,7 +305,7 @@
         <exception cref="T:System.Web.HttpException">No <see cref="P:System.Web.UI.WebControls.SiteMapPath.SiteMapProvider" /> is available to the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control.</exception>
         <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.CreateChildControls" />
         <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.InitializeItem(System.Web.UI.WebControls.SiteMapNodeItem)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentNodeStyle">
@@ -373,7 +373,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.CurrentNodeTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.NodeStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentNodeTemplate">
@@ -437,7 +437,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle" />
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.NodeTemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -467,7 +467,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="InitializeItem">
@@ -519,7 +519,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.CreateControlHierarchy" />
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="ItemCreated">
@@ -548,7 +548,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="ItemDataBound">
@@ -577,7 +577,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -614,7 +614,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.TrackViewState" />
         <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.SaveViewState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="NodeStyle">
@@ -683,7 +683,7 @@
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.CurrentNodeStyle" />
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle" />
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.NodeTemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="NodeTemplate">
@@ -741,14 +741,14 @@
  The following code example demonstrates how a <xref:System.Web.UI.WebControls.SiteMapPath.NodeTemplate%2A>, when one is specified, overrides styles defined for all nodes, including special styles for the root node and current node.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.WebControls.NavigationPath_decl_6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_6/CS/webform1navpathcs.aspx#1)]
  [!code-aspx-vb[System.Web.UI.WebControls.NavigationPath_decl_6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_6/VB/webform1navpathvb.aspx#1)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnDataBinding">
@@ -774,7 +774,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
         <summary>Overrides the <see cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" /> method of the <see cref="T:System.Web.UI.WebControls.CompositeControl" /> class and raises the <see cref="E:System.Web.UI.Control.DataBinding" /> event.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnItemCreated">
@@ -823,7 +823,7 @@
           <para>When overriding <see cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemCreated(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemCreated(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemDataBound(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnItemDataBound">
@@ -864,7 +864,7 @@
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemDataBound(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemDataBound(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
         <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.OnItemCreated(System.Web.UI.WebControls.SiteMapNodeItemEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="ParentLevelsDisplayed">
@@ -902,12 +902,12 @@
   
  The value of this property is stored in view state.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value for <see cref="P:System.Web.UI.WebControls.SiteMapPath.ParentLevelsDisplayed" /> is less than -1.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="PathDirection">
@@ -957,7 +957,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value for <see cref="P:System.Web.UI.WebControls.SiteMapPath.PathDirection" /> is not one of the base <see cref="T:System.Web.UI.WebControls.PathDirection" /> enumerations.</exception>
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.PathSeparator" />
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.PathSeparatorTemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="PathSeparator">
@@ -995,7 +995,7 @@
   
  The value of this property is stored in view state.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -1009,7 +1009,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.PathSeparatorStyle" />
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.PathSeparatorTemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="PathSeparatorStyle">
@@ -1058,7 +1058,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="PathSeparatorTemplate">
@@ -1123,7 +1123,7 @@
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.PathSeparator" />
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.PathSeparatorStyle" />
         <altmember cref="T:System.Web.UI.ITemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -1172,7 +1172,7 @@
  \- or -  
   
  There is no default provider configured for the site.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -1233,7 +1233,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.SkipLinkText" />
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RenderCurrentNodeAsLink">
@@ -1279,7 +1279,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RootNodeStyle">
@@ -1341,7 +1341,7 @@
  The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle%2A> attributes on a <xref:System.Web.UI.WebControls.SiteMapPath> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.WebControls.NavigationPath_decl_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_1/CS/customerservicecs.aspx#1)]
  [!code-aspx-vb[System.Web.UI.WebControls.NavigationPath_decl_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NavigationPath_decl_1/VB/customerservicevb.aspx#1)]  
@@ -1350,7 +1350,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.RootNodeTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.NodeStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RootNodeTemplate">
@@ -1414,7 +1414,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.RootNodeStyle" />
         <altmember cref="P:System.Web.UI.WebControls.SiteMapPath.NodeTemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1449,7 +1449,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.LoadViewState(System.Object)" />
         <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.TrackViewState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="ShowToolTips">
@@ -1488,7 +1488,7 @@
   
  The value of this property is stored in view state.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -1500,7 +1500,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SiteMapProvider">
@@ -1540,11 +1540,11 @@
   
  The value of this property is stored in view state.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SkipLinkText">
@@ -1581,11 +1581,11 @@
   
  The value of this property is stored in view state.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -1610,7 +1610,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.LoadViewState(System.Object)" />
         <altmember cref="M:System.Web.UI.WebControls.SiteMapPath.SaveViewState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/de8fa2ed-b3c1-4855-bb61-f6287060c4b9">SiteMapPath Web Server Control</related>
       </Docs>
     </Member>
   </Members>

@@ -22,8 +22,8 @@
   <Docs>
     <summary>Represents the <see langword="Control" /> section within the <see langword="MobileControls" /> section of a configuration file. This class cannot be inherited. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>To be added.</remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/a202175f-a85a-44fd-bc35-c8b5c82f31c3">ASP.NET Configuration Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/cce0dd24-5e96-41b8-96bb-6a8af7bcdb14">ASP.NET Configuration API</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/a202175f-a85a-44fd-bc35-c8b5c82f31c3">ASP.NET Configuration Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/cce0dd24-5e96-41b8-96bb-6a8af7bcdb14">ASP.NET Configuration API</related>
     <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">Introduction to Mobile Application Development in ASP.NET</related>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <param name="adapter">The <see cref="T:System.Type" /> of adapter the control should use.</param>
         <summary>Creates an instance of the ControlElement class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/cce0dd24-5e96-41b8-96bb-6a8af7bcdb14">ASP.NET Configuration API</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/cce0dd24-5e96-41b8-96bb-6a8af7bcdb14">ASP.NET Configuration API</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">Introduction to Mobile Application Development in ASP.NET</related>
       </Docs>
     </Member>
@@ -84,7 +84,7 @@
         <summary>The type of adapter the control should use. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A type derived from <see cref="T:System.Web.UI.MobileControls.IControlAdapter" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/cce0dd24-5e96-41b8-96bb-6a8af7bcdb14">ASP.NET Configuration API</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/cce0dd24-5e96-41b8-96bb-6a8af7bcdb14">ASP.NET Configuration API</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">Introduction to Mobile Application Development in ASP.NET</related>
       </Docs>
     </Member>
@@ -110,7 +110,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/cce0dd24-5e96-41b8-96bb-6a8af7bcdb14">ASP.NET Configuration API</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/cce0dd24-5e96-41b8-96bb-6a8af7bcdb14">ASP.NET Configuration API</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">Introduction to Mobile Application Development in ASP.NET</related>
       </Docs>
     </Member>

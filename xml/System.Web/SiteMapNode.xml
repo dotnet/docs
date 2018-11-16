@@ -56,8 +56,8 @@
     <altmember cref="T:System.Web.SiteMap" />
     <altmember cref="T:System.Web.SiteMapProvider" />
     <altmember cref="T:System.Web.XmlSiteMapProvider" />
-    <related type="Article" href="http://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/23de8a05-cac3-4693-b508-39f1d4b7053d">ASP.NET Site Navigation Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -332,7 +332,7 @@
   
  If no `title` or `description` is provided, calls to the <xref:System.Web.SiteMapNode.Title%2A> or <xref:System.Web.SiteMapNode.Description%2A> properties return an <xref:System.String.Empty?displayProperty=nameWithType> field.  
   
- To programmatically specify resources for localization, either set the value of `implicitResourceKey` to a unique name that will be used to identify localized resources for the node or set `explicitResourceKeys` to a <xref:System.Collections.Specialized.NameValueCollection> collection of `name/value` pairs where `name` is the node property or custom attribute to localize and `value` contains localization values for the node property or custom attribute. The localized values can then be set in the appropriate .resx files. For more information about how to localize the <xref:System.Web.SiteMapNode.Title%2A>, <xref:System.Web.SiteMapNode.Description%2A>, and any custom properties of a <xref:System.Web.SiteMapNode> object, see [How to: Localize Site-Map Data](http://msdn.microsoft.com/library/be63b4a0-fb82-44b4-bdbb-df1d2548cedc). For the syntax requirements of the `explicitResourceKeys` collection, see <xref:System.Collections.Specialized.NameValueCollection>.  
+ To programmatically specify resources for localization, either set the value of `implicitResourceKey` to a unique name that will be used to identify localized resources for the node or set `explicitResourceKeys` to a <xref:System.Collections.Specialized.NameValueCollection> collection of `name/value` pairs where `name` is the node property or custom attribute to localize and `value` contains localization values for the node property or custom attribute. The localized values can then be set in the appropriate .resx files. For more information about how to localize the <xref:System.Web.SiteMapNode.Title%2A>, <xref:System.Web.SiteMapNode.Description%2A>, and any custom properties of a <xref:System.Web.SiteMapNode> object, see [How to: Localize Site-Map Data](https://msdn.microsoft.com/library/be63b4a0-fb82-44b4-bdbb-df1d2548cedc). For the syntax requirements of the `explicitResourceKeys` collection, see <xref:System.Collections.Specialized.NameValueCollection>.  
   
  ]]></format>
         </remarks>
@@ -1213,7 +1213,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If security trimming is enabled, a site map provider builds a node tree of nodes that the current user is able to view, based in part on whether the current user's assigned role is included in the <xref:System.Web.SiteMapNode.Roles%2A> collection. URL authorization and file authorization are also used to determine whether a user has the rights to access a <xref:System.Web.SiteMapNode> object. For more information on authorization, see [ASP.NET Authorization](http://msdn.microsoft.com/library/ba7c17d4-f709-4501-8441-2340e2d6db05).  
+ If security trimming is enabled, a site map provider builds a node tree of nodes that the current user is able to view, based in part on whether the current user's assigned role is included in the <xref:System.Web.SiteMapNode.Roles%2A> collection. URL authorization and file authorization are also used to determine whether a user has the rights to access a <xref:System.Web.SiteMapNode> object. For more information on authorization, see [ASP.NET Authorization](https://msdn.microsoft.com/library/ba7c17d4-f709-4501-8441-2340e2d6db05).  
   
  You can use the <xref:System.Web.SiteMapNode.%23ctor%2A> constructor to supply a list of roles to the <xref:System.Web.SiteMapNode> object when it is first created.  
   
@@ -1223,7 +1223,7 @@
         <altmember cref="P:System.Web.SiteMapProvider.SecurityTrimmingEnabled" />
         <altmember cref="T:System.Web.Security.UrlAuthorizationModule" />
         <altmember cref="T:System.Web.Security.FileAuthorizationModule" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ba7c17d4-f709-4501-8441-2340e2d6db05">ASP.NET Authorization</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ba7c17d4-f709-4501-8441-2340e2d6db05">ASP.NET Authorization</related>
       </Docs>
     </Member>
     <Member MemberName="RootNode">

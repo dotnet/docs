@@ -123,7 +123,7 @@
     <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
     <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
     <altmember cref="P:System.Web.UI.WebControls.Xml.TransformArgumentList" />
-    <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -148,7 +148,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Xml" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -191,7 +191,7 @@
         <exception cref="T:System.Web.HttpException">
           <paramref name="obj" /> is not of type <see cref="T:System.Web.UI.LiteralControl" />.</exception>
         <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ClientID">
@@ -223,7 +223,7 @@
         <value>The base server control identifier.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Control.ClientID" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -254,7 +254,7 @@
         <summary>Overrides the <see cref="P:System.Web.UI.Control.Controls" /> property and returns the base <see cref="T:System.Web.UI.ControlCollection" /> collection.</summary>
         <value>The base <see cref="T:System.Web.UI.ControlCollection" /> collection.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -285,7 +285,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -345,7 +345,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
         <altmember cref="P:System.Web.UI.WebControls.Xml.Transform" />
         <altmember cref="P:System.Web.UI.WebControls.Xml.TransformSource" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DocumentContent">
@@ -394,7 +394,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
         <altmember cref="P:System.Web.UI.WebControls.Xml.Transform" />
         <altmember cref="P:System.Web.UI.WebControls.Xml.TransformSource" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DocumentSource">
@@ -457,7 +457,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
         <altmember cref="P:System.Web.UI.WebControls.Xml.Transform" />
         <altmember cref="P:System.Web.UI.WebControls.Xml.TransformSource" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -502,7 +502,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt is made to set the value of this property.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindControl">
@@ -537,7 +537,7 @@
         <summary>Searches the page naming container for the specified server control.</summary>
         <returns>The specified control; otherwise, <see langword="null" /> if the specified control does not exist.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -576,7 +576,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt is made to invoke this method.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignModeState">
@@ -607,7 +607,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HasControls">
@@ -640,7 +640,7 @@
         <returns>
           <see langword="true" /> if the control contains other controls; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -680,7 +680,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SkinID">
@@ -728,7 +728,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt is made to set the value of this property.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -789,7 +789,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Xml.Document" />
         <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
         <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TransformArgumentList">
@@ -841,7 +841,7 @@
         </remarks>
         <altmember cref="T:System.Xml.Xsl.XsltArgumentList" />
         <related type="Article" href="~/docs/standard/data/xml/xsltargumentlist-for-style-sheet-parameters-and-extension-objects.md">XsltArgumentList For Style Sheet Parameters and Extension Objects</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TransformSource">
@@ -901,7 +901,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Xml.Document" />
         <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentContent" />
         <altmember cref="P:System.Web.UI.WebControls.Xml.DocumentSource" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="XPathNavigator">
@@ -947,7 +947,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f5d24478-31f4-42f4-be18-efb95bc6807f">XML Web Server Control Overview</related>
       </Docs>
     </Member>
   </Members>

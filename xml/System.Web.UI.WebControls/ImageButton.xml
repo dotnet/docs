@@ -65,7 +65,7 @@
   
  You can use the <xref:System.Web.UI.WebControls.ImageButton.OnCommand%2A> event handler to make the <xref:System.Web.UI.WebControls.ImageButton> control behave like a Command button. A command name can be associated with the control by using the <xref:System.Web.UI.WebControls.ImageButton.CommandName%2A> property. This allows multiple <xref:System.Web.UI.WebControls.ImageButton> controls to be placed on the same Web page. The value of the <xref:System.Web.UI.WebControls.ImageButton.CommandName%2A> property can then be programmatically identified in the <xref:System.Web.UI.WebControls.ImageButton.OnCommand%2A> event handler to determine the appropriate action to perform when each <xref:System.Web.UI.WebControls.ImageButton> control is clicked. The <xref:System.Web.UI.WebControls.ImageButton.CommandArgument%2A> property can also be used to pass additional information about the command, such as specifying ascending order.  
   
- Using the <xref:System.Web.UI.WebControls.ImageButton> control is similar to using the ASP.NET <xref:System.Web.UI.WebControls.Button> control. For more information, see [Button Web Server Controls Content Map](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf). and the class overview for the <xref:System.Web.UI.WebControls.Button> control.  
+ Using the <xref:System.Web.UI.WebControls.ImageButton> control is similar to using the ASP.NET <xref:System.Web.UI.WebControls.Button> control. For more information, see [Button Web Server Controls Content Map](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf). and the class overview for the <xref:System.Web.UI.WebControls.Button> control.  
   
 <a name="DeterminingWhereTheUserClicked"></a>   
 ## Determining Where the User Clicked  
@@ -77,7 +77,7 @@
   
 <a name="accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="DeclarativeSyntax"></a>   
 ## Declarative Syntax  
@@ -129,12 +129,12 @@
    
   
 ## Examples  
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=192874).  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](https://go.microsoft.com/fwlink/?LinkId=192874).  
   
  The following code example demonstrates how to create an <xref:System.Web.UI.WebControls.ImageButton> control that displays the coordinates at which an image is clicked.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic ImageButton.Click Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.Click Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic ImageButton.Click Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.Click Example/VB/sourcevb.aspx#1)]  
@@ -143,7 +143,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.Button" />
     <altmember cref="T:System.Web.UI.WebControls.Image" />
-    <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -183,7 +183,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -221,7 +221,7 @@
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.ImageButton.AddAttributesToRender%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.ImageButton> text always appears with a thin border.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. The first part of this code sample must be copied into an empty text file that has an .aspx extension. The second part must be saved as a code file (either .cs for C# or .vb for Visual Basic). For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. The first part of this code sample must be copied into an empty text file that has an .aspx extension. The second part must be saved as a code file (either .cs for C# or .vb for Visual Basic). For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[CustomImageButtonAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonAddAttributesToRender/CS/custom_imagebutton_addattributestorendercs.aspx#1)]
  [!code-aspx-vb[CustomImageButtonAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonAddAttributesToRender/VB/custom_imagebutton_addattributestorendervb.aspx#1)]  
@@ -230,7 +230,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -280,7 +280,7 @@
   
  When the value of the <xref:System.Web.UI.WebControls.ImageButton.CausesValidation%2A> property is set to `true`, you can also use the <xref:System.Web.UI.WebControls.ImageButton.ValidationGroup%2A> property to specify the name of the validation group for which the <xref:System.Web.UI.WebControls.ImageButton> control causes validation.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -288,7 +288,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageButton.CausesValidation%2A> property to prevent page validation from occurring. Notice how the <xref:System.Web.UI.WebControls.BaseValidator.Validate%2A> method activates each validation control independently.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[ImageButtonCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButtonCausesValidation/CS/imagebuttoncausesvalidationcs.aspx#1)]
  [!code-aspx-vb[ImageButtonCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButtonCausesValidation/VB/imagebuttoncausesvalidationvb.aspx#1)]  
@@ -297,7 +297,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.Page.Validate" />
         <altmember cref="P:System.Web.UI.WebControls.ImageButton.ValidationGroup" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -336,7 +336,7 @@
  The following example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.ImageButton.Click> event to display the coordinates at which the user clicks the image.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic ImageButton.Click Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.Click Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic ImageButton.Click Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.Click Example/VB/sourcevb.aspx#1)]  
@@ -345,8 +345,8 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.ImageButton.OnClick(System.Web.UI.ImageClickEventArgs)" />
         <altmember cref="T:System.Web.UI.ImageClickEventHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/73bf8638-c4ec-4069-b0bb-a1dc79b92e32">How to: Consume Events in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/73bf8638-c4ec-4069-b0bb-a1dc79b92e32">How to: Consume Events in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -391,7 +391,7 @@
  The following example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.ImageButton.Command> event to determine which <xref:System.Web.UI.WebControls.ImageButton> control is clicked.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/VB/sourcevb.aspx#1)]  
@@ -400,8 +400,8 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.ImageButton.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" />
         <altmember cref="T:System.Web.UI.WebControls.CommandEventHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Content Map</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/73bf8638-c4ec-4069-b0bb-a1dc79b92e32">How to: Consume Events in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Content Map</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/73bf8638-c4ec-4069-b0bb-a1dc79b92e32">How to: Consume Events in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName="CommandArgument">
@@ -444,7 +444,7 @@
 ## Remarks  
  Sometimes, multiple <xref:System.Web.UI.WebControls.ImageButton> controls are related and share the same value for the <xref:System.Web.UI.WebControls.ImageButton.CommandName%2A> property, such as `Sort`. Use this property to supplement the <xref:System.Web.UI.WebControls.ImageButton.CommandName%2A> property with additional information about the command to perform, such as `Ascending`. The values of the <xref:System.Web.UI.WebControls.ImageButton.CommandName%2A> and <xref:System.Web.UI.WebControls.ImageButton.CommandArgument%2A> properties are typically used in the <xref:System.Web.UI.WebControls.ImageButton.OnCommand%2A> event handler to determine the action to perform when the <xref:System.Web.UI.WebControls.ImageButton> control is clicked.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -452,7 +452,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageButton.CommandArgument%2A> property to associate a command argument with an <xref:System.Web.UI.WebControls.ImageButton> control.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/VB/sourcevb.aspx#1)]  
@@ -463,7 +463,7 @@
         <altmember cref="M:System.Web.UI.WebControls.ImageButton.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" />
         <altmember cref="T:System.Web.UI.WebControls.Button" />
         <altmember cref="T:System.Web.UI.WebControls.Image" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CommandName">
@@ -505,7 +505,7 @@
   
  Supplemental information about the command, such as specifying ascending sort order, can be included by using the <xref:System.Web.UI.WebControls.Button.CommandArgument%2A> property.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -513,7 +513,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageButton.CommandName%2A> property to associate a command name with an <xref:System.Web.UI.WebControls.ImageButton> control.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic ImageButton.CommandName Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.CommandName Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic ImageButton.CommandName Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.CommandName Example/VB/sourcevb.aspx#1)]  
@@ -522,7 +522,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Button.CommandArgument" />
         <altmember cref="M:System.Web.UI.WebControls.ImageButton.OnClick(System.Web.UI.ImageClickEventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -574,14 +574,14 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageButton.Enabled%2A> property. The page contains two <xref:System.Web.UI.WebControls.ImageButton> controls. The <xref:System.Web.UI.WebControls.ImageButton.Enabled%2A> property is set to `true` for the `EnabledImageButton` image button, causing it to post back to the server when clicked. The <xref:System.Web.UI.WebControls.ImageButton.Enabled%2A> property is set to `false` for the `NotEnabledImageButton` image button, causing it to render on the page, but not post back to the server when clicked.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[ImageButton.Enabled#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButton.Enabled/CS/imagebutton.enabledcs.aspx#1)]
  [!code-aspx-vb[ImageButton.Enabled#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButton.Enabled/VB/imagebutton.enabledvb.aspx#1)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GenerateEmptyAlternateText">
@@ -632,14 +632,14 @@
   
  The XHTML document type definition requires the `alt` attribute on image controls. However, accessibility best practices recommend that image controls that do not convey information relevant to the context of the Web page should not specify an `alt` attribute. You can meet both XHTML and accessibility requirements by setting the <xref:System.Web.UI.WebControls.Image.AlternateText%2A> property to `true`.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set this property.</exception>
         <altmember cref="P:System.Web.UI.WebControls.Image.AlternateText" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0">ASP.NET Controls and Accessibility</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0">ASP.NET Controls and Accessibility</related>
       </Docs>
     </Member>
     <Member MemberName="GetPostBackOptions">
@@ -676,8 +676,8 @@
           <para>You can override the <see cref="M:System.Web.UI.WebControls.ImageButton.GetPostBackOptions" /> method in your derived class to modify the postback options for the button control, or to call client-side script when the button is clicked. Be sure to call the base class's <see cref="M:System.Web.UI.WebControls.ImageButton.GetPostBackOptions" /> method so that the standard postback options are set.</para>
         </block>
         <altmember cref="T:System.Web.UI.PostBackOptions" />
-        <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -719,7 +719,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Collections.Specialized.NameValueCollection" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -761,7 +761,7 @@
  The following example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.ImageButton.Click> event to display the coordinates where the user clicks the image.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic ImageButton.Click Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.Click Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic ImageButton.Click Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.Click Example/VB/sourcevb.aspx#1)]  
@@ -773,8 +773,8 @@
         </block>
         <altmember cref="E:System.Web.UI.WebControls.ImageButton.Click" />
         <altmember cref="T:System.Web.UI.ImageClickEventArgs" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/73bf8638-c4ec-4069-b0bb-a1dc79b92e32">How to: Consume Events in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/73bf8638-c4ec-4069-b0bb-a1dc79b92e32">How to: Consume Events in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName="OnClientClick">
@@ -810,12 +810,12 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.ImageButton.OnClientClick%2A> property to specify additional client-side script that executes when an <xref:System.Web.UI.WebControls.ImageButton> control's <xref:System.Web.UI.WebControls.ImageButton.Click> event is raised. The script that you specify for this property is rendered in the <xref:System.Web.UI.WebControls.ImageButton> control's `OnClick` attribute in addition to the control's predefined client-side script.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.WebControls.ImageButton.Click" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnCommand">
@@ -860,7 +860,7 @@
  The following example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.ImageButton.Command> event to determine which <xref:System.Web.UI.WebControls.ImageButton> control is clicked.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/VB/sourcevb.aspx#1)]  
@@ -872,8 +872,8 @@
         </block>
         <altmember cref="E:System.Web.UI.WebControls.ImageButton.Command" />
         <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/73bf8638-c4ec-4069-b0bb-a1dc79b92e32">How to: Consume Events in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/73bf8638-c4ec-4069-b0bb-a1dc79b92e32">How to: Consume Events in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -911,7 +911,7 @@
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.ImageButton.OnPreRender%2A> method so that it always displays a thin border in a custom <xref:System.Web.UI.WebControls.ImageButton> server control.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. The first part of the code sample must be copied into an empty text file that has an .aspx extension. The second part must be in a .cs file (for C#) or a .vb file (for Visual Basic). For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. The first part of the code sample must be copied into an empty text file that has an .aspx extension. The second part must be in a .cs file (for C#) or a .vb file (for Visual Basic). For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[CustomImageButtonOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonOnPreRender/CS/custom_imagebutton_onprerendercs.aspx#1)]
  [!code-aspx-vb[CustomImageButtonOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonOnPreRender/VB/custom_imagebutton_onprerendervb.aspx#1)]  
@@ -920,8 +920,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/73bf8638-c4ec-4069-b0bb-a1dc79b92e32">How to: Consume Events in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/73bf8638-c4ec-4069-b0bb-a1dc79b92e32">How to: Consume Events in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName="PostBackUrl">
@@ -982,9 +982,9 @@ Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Lo
 End Sub  
 ```  
   
- For more information on cross-page posting techniques, see [Cross-Page Posting in ASP.NET Web Forms](http://msdn.microsoft.com/library/fedf234e-b7c4-4644-a9e8-c1c0870b043b).  
+ For more information on cross-page posting techniques, see [Cross-Page Posting in ASP.NET Web Forms](https://msdn.microsoft.com/library/fedf234e-b7c4-4644-a9e8-c1c0870b043b).  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -997,7 +997,7 @@ End Sub
  The following code example demonstrates how to use the <xref:System.Web.UI.Page.PreviousPage%2A?displayProperty=nameWithType> property to access a value that was posted from another page using the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property. This page gets the string that was posted from the previous page and displays it to the user. If you attempt to run this code example directly, you will get an error because the value of the `Text` field will be `null`. Instead, use this code to create a target page and place the file in the same directory as the code for the previous example. The name of the file must correspond to the value specified for the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property in the previous example. When you run the code for the previous example, this page will execute automatically when the cross-page post occurs.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[ImageButton.PostBackUrlPage2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButton.PostBackUrlPage2/CS/imagebutton.postbackurlpage2cs.aspx#1)]
  [!code-aspx-vb[ImageButton.PostBackUrlPage2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButton.PostBackUrlPage2/VB/imagebutton.postbackurlpage2vb.aspx#1)]  
@@ -1005,8 +1005,8 @@ End Sub
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Page.PreviousPage" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/fedf234e-b7c4-4644-a9e8-c1c0870b043b">Cross-Page Posting in an ASP.NET Web Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fedf234e-b7c4-4644-a9e8-c1c0870b043b">Cross-Page Posting in an ASP.NET Web Page</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -1046,7 +1046,7 @@ End Sub
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ImageButton.CommandName" />
         <altmember cref="E:System.Web.UI.WebControls.ImageButton.Click" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -1081,7 +1081,7 @@ End Sub
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -1114,7 +1114,7 @@ End Sub
         <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
         <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
         <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -1160,7 +1160,7 @@ End Sub
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -1199,7 +1199,7 @@ End Sub
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -1240,7 +1240,7 @@ End Sub
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IButtonControl.Click">
@@ -1311,7 +1311,7 @@ End Sub
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -1359,7 +1359,7 @@ End Sub
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.ImageButton.TagKey%2A> method in a custom <xref:System.Web.UI.WebControls.ImageButton> control so that it always returns an Input tag.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. The first part of the code sample must be copied into an empty text file that has an .aspx extension. The second part must be in a .cs file (for C#) or a .vb file (for Visual Basic). For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. The first part of the code sample must be copied into an empty text file that has an .aspx extension. The second part must be in a .cs file (for C#) or a .vb file (for Visual Basic). For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[CustomImageButtonTagKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonTagKey/CS/custom_imagebutton_tagkeycs.aspx#1)]
  [!code-aspx-vb[CustomImageButtonTagKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonTagKey/VB/custom_imagebutton_tagkeyvb.aspx#1)]  
@@ -1369,7 +1369,7 @@ End Sub
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1403,7 +1403,7 @@ End Sub
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Image.AlternateText" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -1442,7 +1442,7 @@ End Sub
 ## Remarks  
  Validation groups allow you to assign validation controls on a page to a specific category. Each validation group can be validated independently of other validation groups on the page. Use the <xref:System.Web.UI.WebControls.ImageButton.ValidationGroup%2A> property to specify the name of the validation group for which the <xref:System.Web.UI.WebControls.ImageButton> control causes validation when it posts back to the server. This property has an effect only when the value of the <xref:System.Web.UI.WebControls.ImageButton.CausesValidation%2A> property is set to `true`. When you specify a value for the <xref:System.Web.UI.WebControls.ImageButton.ValidationGroup%2A> property, only the validation controls that are part of the specified group are validated when the <xref:System.Web.UI.WebControls.ImageButton> control posts back to the server. If you do not specify a value for this property and the <xref:System.Web.UI.WebControls.ImageButton.CausesValidation%2A> property is set to `true`, all validation controls on the page that are not assigned to a validation group are validated when the control posts back to the server.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -1456,7 +1456,7 @@ End Sub
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ImageButton.CausesValidation" />
         <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
-        <related type="Article" href="http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf">Button Web Server Controls Overview</related>
       </Docs>
     </Member>
   </Members>

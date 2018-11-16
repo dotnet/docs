@@ -832,7 +832,7 @@
           <see langword="true" /> if the authentication of the trust is selective; <see langword="false" /> if the authentication is domain-wide.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">There is no trust relationship with the <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> that is specified by the <paramref name="targetForestName" /> parameter.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">The call to LsaQueryTrustedDomainInfoByName failed. For more information, see the topic [LsaQueryTrustedDomainInfoByName](http://msdn.microsoft.com/library/default.asp?url=/library/en-us/secmgmt/security/lsaquerytrusteddomaininfobyname.asp) in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">The call to LsaQueryTrustedDomainInfoByName failed. For more information, see the topic [LsaQueryTrustedDomainInfoByName](https://msdn.microsoft.com/library/default.asp?url=/library/en-us/secmgmt/security/lsaquerytrusteddomaininfobyname.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="targetDomainName" /> is an empty string.</exception>
@@ -1022,7 +1022,7 @@
 ## Remarks  
  The <xref:System.DirectoryServices.ActiveDirectory.DomainMode> value can be raised but not lowered. This means that raising the functionality level of the domain is not reversible and the decision to do this should be made carefully.  
   
- For more information about domain operational modes, see [Domain and forest functionality](http://www.microsoft.com/resources/documentation/WindowsServ/2003/standard/proddocs/en-us/sag_levels.asp).  
+ For more information about domain operational modes, see [Domain and forest functionality](https://www.microsoft.com/resources/documentation/WindowsServ/2003/standard/proddocs/en-us/sag_levels.asp).  
   
  The following table defines the valid values for `domainMode` based on the current operating mode of the domain.  
   

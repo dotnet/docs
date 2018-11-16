@@ -38,7 +38,7 @@
 ## Remarks  
  Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. Decoding is the process of transforming a sequence of encoded bytes into a set of Unicode characters.  
   
- The [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123) assigns a code point (a number) to each character in every supported script. A Unicode Transformation Format (UTF) is a way to encode that code point. The [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123) uses the following UTFs:  
+ The [Unicode Standard](https://go.microsoft.com/fwlink/?linkid=37123) assigns a code point (a number) to each character in every supported script. A Unicode Transformation Format (UTF) is a way to encode that code point. The [Unicode Standard](https://go.microsoft.com/fwlink/?linkid=37123) uses the following UTFs:  
   
 -   UTF-8, which represents each code point as a sequence of one to four bytes.  
   
@@ -1616,7 +1616,7 @@
   
  There are some disadvantages to using a BOM. For example, knowing how to limit the database fields that use a BOM can be difficult. Concatenation of files can be a problem also, for example, when files are merged in such a way that an unnecessary character can end up in the middle of data. In spite of the few disadvantages, however, the use of a BOM is highly recommended.  
   
- For more information on byte order and the byte order mark, see The Unicode Standard at the [Unicode home page](http://go.microsoft.com/fwlink/?LinkId=37123).  
+ For more information on byte order and the byte order mark, see The Unicode Standard at the [Unicode home page](https://go.microsoft.com/fwlink/?LinkId=37123).  
   
 > [!CAUTION]
 >  To ensure that the encoded bytes are decoded properly, you should prefix encoded bytes with a preamble. Note that the <xref:System.Text.UTF32Encoding.GetBytes%2A> method does not prepend a BOM to a sequence of encoded bytes; supplying a BOM at the beginning of an appropriate byte stream is the developer's responsibility.  

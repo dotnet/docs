@@ -31,7 +31,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
   </Docs>
   <Members>
     <Member MemberName="DataServiceBehavior">
@@ -59,7 +59,7 @@
         <summary>Gets a <see cref="T:System.Data.Services.DataServiceBehavior" /> object that defines additional behaviors of the data service.</summary>
         <value>A <see cref="T:System.Data.Services.DataServiceBehavior" /> object.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="EnableTypeAccess">
@@ -102,7 +102,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="EnableTypeConversion">
@@ -130,7 +130,7 @@
         <summary>Gets or sets whether the data service runtime should convert the type that is contained in the payload to the actual property type that is specified in the request.</summary>
         <value>A Boolean value that indicates whether to perform the conversion.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="MaxBatchCount">
@@ -161,7 +161,7 @@
         <summary>Gets or sets the maximum number of change sets and query operations that are allowed in a single batch.</summary>
         <value>A value that is the maximum number of change sets.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="MaxChangesetCount">
@@ -222,7 +222,7 @@
         <summary>Gets or sets the maximum number of related entities that can be included in a single request by using the <see langword="$expand" /> operator.</summary>
         <value>The maximum number of related entities.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="MaxExpandDepth">
@@ -253,7 +253,7 @@
         <summary>Get or sets the maximum number of related entities that can be included in an <see langword="$expand" /> path in a single request.</summary>
         <value>The maximum depth of an <see langword="$expand" /> path.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="MaxObjectCountOnInsert">
@@ -284,7 +284,7 @@
         <summary>Get or sets the maximum number of objects to insert that can be contained in a single POST request.</summary>
         <value>The maximum number of objects.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="MaxResultsPerCollection">
@@ -322,7 +322,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="RegisterKnownType">
@@ -357,7 +357,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="SetEntitySetAccessRule">
@@ -403,7 +403,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="SetEntitySetPageSize">
@@ -438,7 +438,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="SetServiceOperationAccessRule">
@@ -476,7 +476,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="UseVerboseErrors">
@@ -516,7 +516,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
   </Members>

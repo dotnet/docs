@@ -228,7 +228,7 @@
 ## Remarks  
  The <xref:System.IdentityModel.Selectors.X509SecurityTokenAuthenticator.MapCertificateToWindowsAccount%2A> property can only be set in a constructor.  
   
- If transport-level SSL or HTTPS security is being used and mapping is already provided by the underlying security channel or by Internet Information Services (IIS), then that mapping is applied with no chain-validation. Otherwise, prior to doing the mapping, the certificate is validated using a certificate chain, and the certificate must chain to an NT_AUTHORITY identity. The chain structure used corresponds to the CERT_CHAIN_POLICY_NT_AUTH as defined in the `CertVerifyCertificateChainPolicy` function (see the [CertVerifyCertificateChainPolicy](http://go.microsoft.com/fwlink/?LinkId=83570) function in the Cryptography SDK). This behavior only occurs when mapping a certificate to a Windows account.  
+ If transport-level SSL or HTTPS security is being used and mapping is already provided by the underlying security channel or by Internet Information Services (IIS), then that mapping is applied with no chain-validation. Otherwise, prior to doing the mapping, the certificate is validated using a certificate chain, and the certificate must chain to an NT_AUTHORITY identity. The chain structure used corresponds to the CERT_CHAIN_POLICY_NT_AUTH as defined in the `CertVerifyCertificateChainPolicy` function (see the [CertVerifyCertificateChainPolicy](https://go.microsoft.com/fwlink/?LinkId=83570) function in the Cryptography SDK). This behavior only occurs when mapping a certificate to a Windows account.  
   
  ]]></format>
         </remarks>

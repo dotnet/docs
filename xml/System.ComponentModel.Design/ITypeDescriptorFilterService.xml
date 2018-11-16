@@ -47,7 +47,7 @@
   
  To use the example, add the code to a Windows Forms project and load the components from the class library into the Toolbox.  
   
- Also see [Walkthrough: Automatically Populating the Toolbox with Custom Components](http://msdn.microsoft.com/library/fw694kde\(v=vs.110\).aspx).  
+ Also see [Walkthrough: Automatically Populating the Toolbox with Custom Components](https://msdn.microsoft.com/library/fw694kde\(v=vs.110\).aspx).  
   
  Add some buttons to your form. Add a `ButtonDesignerFilterComponent` to your form, and it will appear in the component tray. The `ButtonDesignerFilterComponent` will add a `ButtonDesignerFilterService`, which implements <xref:System.ComponentModel.Design.ITypeDescriptorFilterService>, as a design mode service provider. Existing or new <xref:System.Windows.Forms.Button> objects on the form will begin color cycling after the `ButtonDesignerFilterService` replaces the designer for each existing and new button with a `ColorCycleButtonDesigner`. The buttons will color cycle when you move the mouse pointer over them, and alternately continue cycling or reset the background and foreground colors on `MouseLeave` events. New <xref:System.Windows.Forms.Button> objects will be given the `ColorCycleButtonDesigner` through the <xref:System.ComponentModel.Design.ITypeDescriptorFilterService.FilterAttributes%2A> method of the `ButtonDesignerFilterService` that has been loaded, until the `ButtonDesignerFilterComponent` is disposed and replaces the original <xref:System.ComponentModel.Design.ITypeDescriptorFilterService>. The `ColorCycleButton` class in this example is a <xref:System.Windows.Forms.Button> associated with a `ColorCycleButtonDesigner`.  
   

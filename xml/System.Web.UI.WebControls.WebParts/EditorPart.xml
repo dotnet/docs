@@ -65,7 +65,7 @@
   
 -   An explanation of how the example works when you load the page in a browser.  
   
- The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_EditorPart_Overview#14](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPart_Overview/CS/displaymodecs.ascx#14)]
  [!code-aspx-vb[WebParts_EditorPart_Overview#14](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPart_Overview/VB/displaymodevb.ascx#14)]  
@@ -92,8 +92,8 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.EditorZone" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
-    <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -117,7 +117,7 @@
       <Docs>
         <summary>Initializes the class for use by an inherited class instance. This constructor can be called only by an inherited class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ApplyChanges">
@@ -171,7 +171,7 @@
         </block>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorPart.SyncChanges" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -216,8 +216,8 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorZoneBase.Display" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ProxyWebPart" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayTitle">
@@ -261,7 +261,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignModeState">
@@ -327,7 +327,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> that contains the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> control is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SetDesignModeState">
@@ -353,7 +353,7 @@
         <param name="data">An <see cref="T:System.Collections.IDictionary" /> that contains state data for displaying the zone.</param>
         <summary>Applies the characteristics of the design-mode state to the current <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> zone that contains an <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> control.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SyncChanges">
@@ -408,7 +408,7 @@
         </block>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorPart.ApplyChanges" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartManager">
@@ -443,7 +443,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartToEdit">
@@ -483,7 +483,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorZoneBase.WebPartToEdit" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Zone">
@@ -518,7 +518,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

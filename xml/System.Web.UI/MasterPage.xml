@@ -44,7 +44,7 @@
   
  Each content page that is related to the master page must reference the master page in a `MasterPageFile` attribute of its  directive. Content pages can contain only a `@ Page` directive and one or more <xref:System.Web.UI.WebControls.Content> controls. All of your page text, markup, and server controls must be placed within <xref:System.Web.UI.WebControls.Content> controls. You identify the <xref:System.Web.UI.WebControls.ContentPlaceHolder> control of a master page that a <xref:System.Web.UI.WebControls.Content> control is associated with by setting the <xref:System.Web.UI.WebControls.Content.ContentPlaceHolderID%2A> property of the <xref:System.Web.UI.WebControls.Content> control.  
   
- At run time, the dynamic content from each <xref:System.Web.UI.WebControls.Content> control in the requested page is merged with the master page in the exact location of the related <xref:System.Web.UI.WebControls.ContentPlaceHolder> control. Any other markup and controls in the master page are unaffected. Event handlers can be defined in both the master class and on the content page. For more information, see [Events in ASP.NET Master and Content Pages](http://msdn.microsoft.com/library/b3ab2d01-9e37-4788-82d0-c6065e3ff5bd).  
+ At run time, the dynamic content from each <xref:System.Web.UI.WebControls.Content> control in the requested page is merged with the master page in the exact location of the related <xref:System.Web.UI.WebControls.ContentPlaceHolder> control. Any other markup and controls in the master page are unaffected. Event handlers can be defined in both the master class and on the content page. For more information, see [Events in ASP.NET Master and Content Pages](https://msdn.microsoft.com/library/b3ab2d01-9e37-4788-82d0-c6065e3ff5bd).  
   
  The <xref:System.Web.UI.MasterPage> class is associated with files that have a .master extension. These files are compiled at run time as <xref:System.Web.UI.MasterPage> objects and are cached in server memory.  
   
@@ -96,7 +96,7 @@
 > [!NOTE]
 >  When you create a master page by creating your own class first, you must include all namespaces that are required for the classes that are used by the page.  
   
- For more information about master pages, see [ASP.NET Master Pages](http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b).  
+ For more information about master pages, see [ASP.NET Master Pages](https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b).  
   
    
   
@@ -261,8 +261,8 @@
     <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
     <altmember cref="T:System.Web.UI.WebControls.Content" />
     <altmember cref="T:System.Web.UI.UserControl" />
-    <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/ec29afad-b7f5-4c58-a4db-b538dbfcea1b">Nested Master Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ec29afad-b7f5-4c58-a4db-b538dbfcea1b">Nested Master Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -572,7 +572,7 @@ This is the content of a Content control.
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ec29afad-b7f5-4c58-a4db-b538dbfcea1b">Nested Master Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ec29afad-b7f5-4c58-a4db-b538dbfcea1b">Nested Master Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MasterPageFile">
@@ -696,7 +696,7 @@ This is the content of a Content control.
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.MasterPage.MasterPageFile" /> property can only be set in or before the <see cref="E:System.Web.UI.Page.PreInit" /> event.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/ec29afad-b7f5-4c58-a4db-b538dbfcea1b">Nested Master Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ec29afad-b7f5-4c58-a4db-b538dbfcea1b">Nested Master Pages</related>
       </Docs>
     </Member>
   </Members>

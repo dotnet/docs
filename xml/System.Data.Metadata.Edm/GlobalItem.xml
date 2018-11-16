@@ -20,14 +20,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Metadata Type Hierarchy Overview](http://msdn.microsoft.com/library/d2b18fe0-60a5-4a5c-940d-21d07e5165d4).  
+ For more information, see [Metadata Type Hierarchy Overview](https://msdn.microsoft.com/library/d2b18fe0-60a5-4a5c-940d-21d07e5165d4).  
   
    
   
 ## Examples  
  The following code sample demonstrates how to get a metadata workspace from the connection and then use that metadata workspace to browse the metadata type hierarchy. Note that the metadata workspace is a runtime service component that provides support for retrieving metadata.  
   
- The code sample uses a <xref:System.Data.Metadata.Edm.DataSpace.CSpace> to specify the model. The <xref:System.Data.Metadata.Edm.DataSpace.CSpace> represents the default name for the conceptual model. The code sample uses the connection string that is provided in the application config file. For an example of the application config file, see [Adventure Works Object Model in Applications (EDM)](http://msdn.microsoft.com/library/84c01270-90ba-467b-ad24-df10c1ca8f45).  
+ The code sample uses a <xref:System.Data.Metadata.Edm.DataSpace.CSpace> to specify the model. The <xref:System.Data.Metadata.Edm.DataSpace.CSpace> represents the default name for the conceptual model. The code sample uses the connection string that is provided in the application config file. For an example of the application config file, see [Adventure Works Object Model in Applications (EDM)](https://msdn.microsoft.com/library/84c01270-90ba-467b-ad24-df10c1ca8f45).  
   
 ```csharp  
 using System;  

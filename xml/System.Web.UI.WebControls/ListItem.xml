@@ -86,7 +86,7 @@
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.ListItem>, see the <xref:System.Web.UI.WebControls.ListItem.%23ctor%2A> constructor.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
    
   
@@ -94,7 +94,7 @@
  The following example illustrates the use of <xref:System.Web.UI.WebControls.ListItem> controls within a <xref:System.Web.UI.WebControls.ListBox> control.  
   
 > [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic ListItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListItem Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic ListItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListItem Example/VB/sourcevb.aspx#1)]  
@@ -111,13 +111,13 @@
     <altmember cref="T:System.Web.UI.WebControls.ListBox" />
     <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
     <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
-    <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461">Introduction to Validating User Input in ASP.NET Web Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8">Securing Standard Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461">Introduction to Validating User Input in ASP.NET Web Pages</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -169,7 +169,7 @@
 ## Examples  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[ListItem.ListItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[ListItem.ListItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem Example/VB/sourcevb.aspx#1)]  
@@ -181,10 +181,10 @@
         <altmember cref="T:System.Web.UI.WebControls.ListBox" />
         <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
         <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -231,7 +231,7 @@
 ## Examples  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[ListItem.ListItem2 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem2 Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[ListItem.ListItem2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem2 Example/VB/sourcevb.aspx#1)]  
@@ -243,10 +243,10 @@
         <altmember cref="T:System.Web.UI.WebControls.ListBox" />
         <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
         <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -295,7 +295,7 @@
 ## Examples  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[ListItem.ListItem3 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem3 Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[ListItem.ListItem3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem3 Example/VB/sourcevb.aspx#1)]  
@@ -307,10 +307,10 @@
         <altmember cref="T:System.Web.UI.WebControls.ListBox" />
         <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
         <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -359,7 +359,7 @@
  The following example demonstrates adding items to and removing items from <xref:System.Web.UI.WebControls.ListBox> controls. When an item is selected in the `ListBox1` control, a new <xref:System.Web.UI.WebControls.ListItem> control with the same value can be created and added to the `ListBox2` control, if the `ListBox2` control does not already contain an item with that text. In this example the constructor is called with `enabled` set to `true`. If it was called with `enabled` set to `false`, the new <xref:System.Web.UI.WebControls.ListItem> control would not appear in the <xref:System.Web.UI.WebControls.ListBox> control.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[ListItem.ListItem4 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem4 Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[ListItem.ListItem4 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem4 Example/VB/sourcevb.aspx#1)]  
@@ -371,10 +371,10 @@
         <altmember cref="T:System.Web.UI.WebControls.ListBox" />
         <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
         <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -422,11 +422,11 @@
         <altmember cref="T:System.Web.UI.WebControls.ListBox" />
         <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
         <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -472,7 +472,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ListItem.Enabled%2A> property to programmatically disable list items in a <xref:System.Web.UI.WebControls.RadioButtonList> control. The first question asks the user to select the radio button that corresponds to the user's occupation. If the user indicates that he or she is not a developer, the list items in the second radio button list are disabled. The second question asks the user to select a primary programming language. This question is not relevant to a user that is not a developer.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[ListItem.Enabled#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.Enabled/CS/listitem.enabledcs.aspx#1)]
  [!code-aspx-vb[ListItem.Enabled#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.Enabled/VB/listitem.enabledvb.aspx#1)]  
@@ -484,11 +484,11 @@
         <altmember cref="T:System.Web.UI.WebControls.ListControl" />
         <altmember cref="T:System.Web.UI.WebControls.ListBox" />
         <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -557,11 +557,11 @@
         <altmember cref="T:System.Web.UI.WebControls.ListBox" />
         <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
         <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -635,7 +635,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ListItem.Selected%2A> property when iterating through the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection of a <xref:System.Web.UI.WebControls.CheckBoxList> control to determine which check boxes are selected.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[Classic ListControl.Items Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListControl.Items Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[Classic ListControl.Items Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListControl.Items Example/VB/sourcevb.aspx#1)]  
@@ -648,11 +648,11 @@
         <altmember cref="T:System.Web.UI.WebControls.RadioButtonList" />
         <altmember cref="T:System.Web.UI.WebControls.ListBox" />
         <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.GetAttribute">
@@ -695,11 +695,11 @@
         <altmember cref="T:System.Web.UI.WebControls.ListBox" />
         <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
         <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.SetAttribute">
@@ -743,11 +743,11 @@
         <altmember cref="T:System.Web.UI.WebControls.ListBox" />
         <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
         <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IParserAccessor.AddParsedSubObject">
@@ -795,11 +795,11 @@
         <altmember cref="T:System.Web.UI.WebControls.ListBox" />
         <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
         <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -871,11 +871,11 @@
         <altmember cref="T:System.Web.UI.WebControls.ListBox" />
         <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
         <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -919,11 +919,11 @@
         <altmember cref="T:System.Web.UI.WebControls.ListBox" />
         <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
         <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -966,11 +966,11 @@
         <altmember cref="T:System.Web.UI.WebControls.ListBox" />
         <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
         <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1013,14 +1013,14 @@
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.ListItem.Text%2A> property contains `null`, the `get` accessor returns the value of the <xref:System.Web.UI.WebControls.ListItem.Value%2A> property. If the <xref:System.Web.UI.WebControls.ListItem.Value%2A> property, in turn, contains `null`, <xref:System.String.Empty?displayProperty=nameWithType> is returned.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
 ## Examples  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[ListItem.ListItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[ListItem.ListItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem Example/VB/sourcevb.aspx#1)]  
@@ -1033,11 +1033,11 @@
         <altmember cref="T:System.Web.UI.WebControls.ListBox" />
         <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
         <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1107,14 +1107,14 @@
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.ListItem.Value%2A> property contains `null`, the `get` accessor returns the value of the <xref:System.Web.UI.WebControls.ListItem.Text%2A> property. If the <xref:System.Web.UI.WebControls.ListItem.Text%2A> property, in turn, contains `null`, <xref:System.String.Empty?displayProperty=nameWithType> is returned.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
 ## Examples  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[ListItem.ListItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListItem.ListItem Example/CS/sourcecs.aspx#1)]
  [!code-aspx-vb[ListItem.ListItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListItem.ListItem Example/VB/sourcevb.aspx#1)]  
@@ -1127,11 +1127,11 @@
         <altmember cref="T:System.Web.UI.WebControls.ListBox" />
         <altmember cref="T:System.Web.UI.WebControls.DropDownList" />
         <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97">ListBox Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf">CheckBox and CheckBoxList Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608">DropDownList Web Server Control Overview</related>
       </Docs>
     </Member>
   </Members>

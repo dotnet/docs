@@ -249,7 +249,7 @@
       </Parameters>
       <Docs>
         <param name="serviceProvider">The service provider.</param>
-        <summary>Initializes the <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext" /> using a service provider that can return service instances by type when [GetService](http://msdn.microsoft.com/library/system.web.mvc.idependencyresolver.getservice\(VS.98\).aspx) is called.</summary>
+        <summary>Initializes the <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext" /> using a service provider that can return service instances by type when [GetService](https://msdn.microsoft.com/library/system.web.mvc.idependencyresolver.getservice\(VS.98\).aspx) is called.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you want to implement a resource manager, you should not implement the <xref:System.Transactions.ITransactionPromoter> interface directly. Instead, you should implement <xref:System.Transactions.ISinglePhaseNotification> inteface which inherits the single <xref:System.Transactions.ITransactionPromoter.Promote%2A> method of this interface. For more information on implementing a resource manager, see [Implementing A Resource Manager](http://msdn.microsoft.com/library/81509719-d579-4530-831e-42e1acdef63e).  
+ When you want to implement a resource manager, you should not implement the <xref:System.Transactions.ITransactionPromoter> interface directly. Instead, you should implement <xref:System.Transactions.ISinglePhaseNotification> inteface which inherits the single <xref:System.Transactions.ITransactionPromoter.Promote%2A> method of this interface. For more information on implementing a resource manager, see [Implementing A Resource Manager](https://msdn.microsoft.com/library/81509719-d579-4530-831e-42e1acdef63e).  
   
  ]]></format>
     </remarks>

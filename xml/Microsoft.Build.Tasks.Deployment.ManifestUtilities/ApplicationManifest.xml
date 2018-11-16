@@ -249,7 +249,7 @@
   
  When you deploy a WPF Web Browser Application, you must set the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser%2A> property to `True`. This causes the `<hostInBrowser>` tag to be added to the generated application manifest. This tag enables ClickOnce to deploy projects for browser-hosted applications, which contain .xbap files.  
   
- You will also have to make the application available only online by setting <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> to `False`. If you do not do this, you will receive [MSBuild Error MSB3116](http://msdn.microsoft.com/library/bf04c587-d0e2-4d68-bbff-da9a985ea70e).  
+ You will also have to make the application available only online by setting <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> to `False`. If you do not do this, you will receive [MSBuild Error MSB3116](https://msdn.microsoft.com/library/bf04c587-d0e2-4d68-bbff-da9a985ea70e).  
   
  ]]></format>
         </remarks>

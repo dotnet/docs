@@ -56,14 +56,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike literal text in a mobile form, you can set content of a <xref:System.Web.UI.MobileControls.TextView> from code. Unlike a mobile <xref:System.Web.UI.MobileControls.Label> control, you can include markup within the value of the <xref:System.Web.UI.MobileControls.TextView.Text%2A> property. Also, the <xref:System.Web.UI.MobileControls.TextView> control is careful not to break up inserted elements such as links during pagination. For more information, see [Literal Text Inside Form Markup](http://msdn.microsoft.com/library/https://msdn.microsoft.com/library/05e061ed-9916-4ece-bfc8-7bf131fe232e).  
+ Unlike literal text in a mobile form, you can set content of a <xref:System.Web.UI.MobileControls.TextView> from code. Unlike a mobile <xref:System.Web.UI.MobileControls.Label> control, you can include markup within the value of the <xref:System.Web.UI.MobileControls.TextView.Text%2A> property. Also, the <xref:System.Web.UI.MobileControls.TextView> control is careful not to break up inserted elements such as links during pagination. For more information, see [Literal Text Inside Form Markup](https://msdn.microsoft.com/library/https://msdn.microsoft.com/library/05e061ed-9916-4ece-bfc8-7bf131fe232e).  
   
  If the <xref:System.Web.UI.MobileControls.TextView> control is within a <xref:System.Web.UI.MobileControls.Panel>, set the <xref:System.Web.UI.MobileControls.Panel.Paginate%2A?displayProperty=nameWithType> property to `true` to allow text to flow across multiple pages on mobile devices. If the <xref:System.Web.UI.MobileControls.TextView> control is not in a <xref:System.Web.UI.MobileControls.Panel>, put the name of the <xref:System.Web.UI.MobileControls.TextView> control into the <xref:System.Web.UI.MobileControls.Form.ControlToPaginate%2A?displayProperty=nameWithType> property.  
   
  Most other properties and methods of the mobile <xref:System.Web.UI.MobileControls.TextView> control are of more use to developers of new device adapters for rendering the contents on specific devices.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
    
   
@@ -71,7 +71,7 @@
  The following code example creates numbers and identifies each prime number in a sentence, and adds those sentences to the <xref:System.Web.UI.MobileControls.TextView> control. The example also uses custom pagination to provide only a page full of text at a time.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MobileTextViewSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileTextViewSample/cs/Default.aspx#1)]
  [!code-aspx-vb[MobileTextViewSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileTextViewSample/vb/Default.aspx#1)]  
@@ -510,7 +510,7 @@
  The following code example demonstrates how to create custom pagination and call the <xref:System.Web.UI.MobileControls.TextView.LoadItems> method to load a specified number of items per page.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MobileTextViewSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileTextViewSample/cs/Default.aspx#1)]
  [!code-aspx-vb[MobileTextViewSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileTextViewSample/vb/Default.aspx#1)]  

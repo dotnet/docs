@@ -51,7 +51,7 @@
   
  The security information declared by a security attribute is stored in the metadata of the attribute target and is accessed by the system at run time. Security attributes are used only for declarative security. For imperative security, use the corresponding permission class.  
   
- The <xref:System.Security.Permissions.StrongNameIdentityPermissionAttribute> attribute can be used to define strong-name requirements for access to public members at the assembly level. In the .NET Framework version 2.0 and later, you can also use the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to specify that all nonpublic types in that assembly are visible to another assembly. For more information, see [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055) or [NOT IN BUILD: Friend Assemblies (Visual Basic)](http://msdn.microsoft.com/library/80e7a33a-ca91-450b-a00e-c5a7986e228c).  
+ The <xref:System.Security.Permissions.StrongNameIdentityPermissionAttribute> attribute can be used to define strong-name requirements for access to public members at the assembly level. In the .NET Framework version 2.0 and later, you can also use the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to specify that all nonpublic types in that assembly are visible to another assembly. For more information, see [Friend Assemblies](https://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055) or [NOT IN BUILD: Friend Assemblies (Visual Basic)](https://msdn.microsoft.com/library/80e7a33a-ca91-450b-a00e-c5a7986e228c).  
   
  ]]></format>
     </remarks>
@@ -60,7 +60,7 @@
     <altmember cref="T:System.Security.Policy.StrongName" />
     <altmember cref="T:System.Security.Policy.StrongNameMembershipCondition" />
     <related type="Article" href="~/docs/standard/attributes/index.md">Extending Metadata Using Attributes</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd">Friend Assemblies</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd">Friend Assemblies</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

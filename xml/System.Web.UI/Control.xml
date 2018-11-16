@@ -99,7 +99,7 @@
   
  The <xref:System.Web.UI.Control> class can directly or indirectly be used as part of the user interface for your Web application, and as such should be scrutinized to make sure best practices for writing secure code and securing applications are followed.  
   
- For general information on these topics, see [Overview of Web Application Security Threats](http://msdn.microsoft.com/library/88d61678-f84e-4622-ae80-53128821855a), [NIB: Security Policy Best Practices](http://msdn.microsoft.com/library/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05), and [Key Security Concepts](~/docs/standard/security/key-security-concepts.md). For more specific information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Display Safe Error Messages](http://msdn.microsoft.com/library/6f70ac33-6e11-4e98-ab7d-bae9c0e7eefa), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Introduction to the Validation Controls](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/2e4hd649(v=vs.85)).  
+ For general information on these topics, see [Overview of Web Application Security Threats](https://msdn.microsoft.com/library/88d61678-f84e-4622-ae80-53128821855a), [NIB: Security Policy Best Practices](https://msdn.microsoft.com/library/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05), and [Key Security Concepts](~/docs/standard/security/key-security-concepts.md). For more specific information, see [Securing Standard Controls](https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Display Safe Error Messages](https://msdn.microsoft.com/library/6f70ac33-6e11-4e98-ab7d-bae9c0e7eefa), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Introduction to the Validation Controls](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/2e4hd649(v=vs.85)).  
   
    
   
@@ -107,7 +107,7 @@
  The following example demonstrates a custom server control that derives from the <xref:System.Web.UI.Control> class. The `InnerContent` class overrides the <xref:System.Web.UI.Control.Render%2A?displayProperty=nameWithType> method, checks to see if the class has any child controls on the page and determines whether the first child of the control is a literal control. If both of these conditions are met, the overridden method writes the HTML string \<H2>Your Message:, the contents of the literal control, and a closing \</H2> tag to the Web Forms page.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[Classic Control Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Control Example/CS/source.cs#1)]
  [!code-vb[Classic Control Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Control Example/VB/source.vb#1)]  
@@ -118,7 +118,7 @@
     <altmember cref="T:System.Web.UI.TemplateControl" />
     <altmember cref="T:System.Web.UI.LiteralControl" />
     <altmember cref="T:System.Web.UI.WebControls.WebControl" />
-    <related type="Article" href="http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef">Developing Custom ASP.NET Server Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef">Developing Custom ASP.NET Server Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -260,7 +260,7 @@
  The following example is a custom server control that uses the <xref:System.Web.UI.Control.AddParsedSubObject%2A> method to determine if elements declared between the opening and closing tags of this control are <xref:System.Web.UI.WebControls.TextBox> Web server controls. If they are, they are added to an <xref:System.Collections.ArrayList> object, `items`. When the overridden <xref:System.Web.UI.Control.CreateChildControls%2A> method is called, it iterates through the <xref:System.Collections.ArrayList> and adds each object in it to the <xref:System.Web.UI.ControlCollection> of the custom server control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[Control_AddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Control_AddParsedSubObject/CS/control_addparsedsubobject.cs#1)]
  [!code-vb[Control_AddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Control_AddParsedSubObject/VB/control_addparsedsubobject.vb#1)]  
@@ -303,7 +303,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Control.ApplyStyleSheetSkin%2A> method sets style properties on the control based on skin properties defined in a theme directory. The skin applied is either the default skin for the control or the skin specified in the <xref:System.Web.UI.Control.SkinID%2A> property. The <xref:System.Web.UI.Control.ApplyStyleSheetSkin%2A> method is called by ASP.NET for declarative controls placed on a page. You must call the <xref:System.Web.UI.Control.ApplyStyleSheetSkin%2A> method on any controls created programmatically at run time for style sheet skins to apply to the control. Theme skins are applied automatically. For more information on the difference between themes and cascading style sheets, see [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ The <xref:System.Web.UI.Control.ApplyStyleSheetSkin%2A> method sets style properties on the control based on skin properties defined in a theme directory. The skin applied is either the default skin for the control or the skin specified in the <xref:System.Web.UI.Control.SkinID%2A> property. The <xref:System.Web.UI.Control.ApplyStyleSheetSkin%2A> method is called by ASP.NET for declarative controls placed on a page. You must call the <xref:System.Web.UI.Control.ApplyStyleSheetSkin%2A> method on any controls created programmatically at run time for style sheet skins to apply to the control. Theme skins are applied automatically. For more information on the difference between themes and cascading style sheets, see [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
@@ -477,7 +477,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property gathers the information necessary about a page's UI hierarchy and passes it to the page's [&lt;trace&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/trace-element.md) property. When you enable tracing, either for a page or for your application, this information is displayed in the `Control Tree` section of the trace output. Trace output for a page is appended to the end of the page; while trace output for an application can be viewed from the trace viewer (trace.axd file) which is stored in the application's root directory. For more information about tracing, see [ASP.NET Tracing Overview](http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416).  
+ This property gathers the information necessary about a page's UI hierarchy and passes it to the page's [&lt;trace&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/trace-element.md) property. When you enable tracing, either for a page or for your application, this information is displayed in the `Control Tree` section of the trace output. Trace output for a page is appended to the end of the page; while trace output for an application can be viewed from the trace viewer (trace.axd file) which is stored in the application's root directory. For more information about tracing, see [ASP.NET Tracing Overview](https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416).  
   
  ]]></format>
         </remarks>
@@ -648,7 +648,7 @@
   
  When recreating child controls of a <xref:System.Web.UI.Control>, use the <xref:System.Web.UI.Control.ClearChildViewState%2A> method to clear child view state so that it does not get applied to the new controls inadvertently.  
   
- For more information about using this method, see [How to: Create Templated ASP.NET User Controls](http://msdn.microsoft.com/library/07664410-02dd-4494-af53-a9259741d4f2).  
+ For more information about using this method, see [How to: Create Templated ASP.NET User Controls](https://msdn.microsoft.com/library/07664410-02dd-4494-af53-a9259741d4f2).  
   
  ]]></format>
         </remarks>
@@ -656,7 +656,7 @@
         <altmember cref="M:System.Web.UI.Control.DataBind" />
         <altmember cref="M:System.Web.UI.Control.ClearChildControlState" />
         <altmember cref="M:System.Web.UI.Control.ClearChildState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/07664410-02dd-4494-af53-a9259741d4f2">How to: Create Templated User Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/07664410-02dd-4494-af53-a9259741d4f2">How to: Create Templated User Controls</related>
       </Docs>
     </Member>
     <Member MemberName="ClearEffectiveClientIDMode">
@@ -732,7 +732,7 @@ span#ProductIDLabel { background-color: white; }
   
  The default value of <xref:System.Web.UI.Control.ClientIDMode%2A> for a page is <xref:System.Web.UI.ClientIDMode.Predictable>. The default value of <xref:System.Web.UI.Control.ClientIDMode%2A> for a control is <xref:System.Web.UI.ClientIDMode.Inherit>. Because the default for controls is <xref:System.Web.UI.ClientIDMode.Inherit>, the default generation mode is <xref:System.Web.UI.ClientIDMode.Predictable>. (However, if you use Visual Studio to convert a Web project to ASP.NET 4 from an earlier version, Visual Studio automatically sets the site default to <xref:System.Web.UI.ClientIDMode.AutoID> in the Web.config file.)  
   
- For more information, see [ASP.NET Web Server Control Identification](http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7).  
+ For more information, see [ASP.NET Web Server Control Identification](https://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7).  
   
    
   
@@ -756,11 +756,11 @@ span#ProductIDLabel { background-color: white; }
         <altmember cref="P:System.Web.UI.Control.NamingContainer" />
         <altmember cref="P:System.Web.UI.Control.ID" />
         <altmember cref="T:System.Web.UI.INamingContainer" />
-        <related type="Article" href="http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7">ASP.NET Control Identification</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/fb58ed73-d8f7-401c-9560-d99dd9ca7db8">How to: Access Controls from JavaScript by ID</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/776f3747-7fa7-4851-ae27-f728ede1a564">Walkthrough: Making Data-Bound Controls Easier to Access from JavaScript</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0eaf202-61b6-4cd8-9604-6b7638fdf0ae">Walkthrough: Making Controls Located in Web User Controls Easier to Access From JavaScript</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7">ASP.NET Control Identification</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fb58ed73-d8f7-401c-9560-d99dd9ca7db8">How to: Access Controls from JavaScript by ID</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/776f3747-7fa7-4851-ae27-f728ede1a564">Walkthrough: Making Data-Bound Controls Easier to Access from JavaScript</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0eaf202-61b6-4cd8-9604-6b7638fdf0ae">Walkthrough: Making Controls Located in Web User Controls Easier to Access From JavaScript</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa">Client Script in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ClientIDMode">
@@ -807,7 +807,7 @@ span#ProductIDLabel { background-color: white; }
   
  The default value of <xref:System.Web.UI.Control.ClientIDMode%2A> for a page is <xref:System.Web.UI.ClientIDMode.Predictable>. The default value of <xref:System.Web.UI.Control.ClientIDMode%2A> for a control is <xref:System.Web.UI.ClientIDMode.Inherit>. Because the default for controls is <xref:System.Web.UI.ClientIDMode.Inherit>, the default generation mode is <xref:System.Web.UI.ClientIDMode.Predictable>. (However, if you use Visual Studio to convert a Web project to ASP.NET 4 from an earlier version, Visual Studio automatically sets the site default to <xref:System.Web.UI.ClientIDMode.AutoID> in the Web.config file.)  
   
- For more information, see [ASP.NET Web Server Control Identification](http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7).  
+ For more information, see [ASP.NET Web Server Control Identification](https://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7).  
   
    
   
@@ -824,10 +824,10 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7">ASP.NET Control Identification</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/fb58ed73-d8f7-401c-9560-d99dd9ca7db8">How to: Access Controls from JavaScript by ID</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/776f3747-7fa7-4851-ae27-f728ede1a564">Walkthrough: Making Data-Bound Controls Easier to Access from JavaScript</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0eaf202-61b6-4cd8-9604-6b7638fdf0ae">Walkthrough: Making Controls Located in Web User Controls Easier to Access From JavaScript</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7">ASP.NET Control Identification</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fb58ed73-d8f7-401c-9560-d99dd9ca7db8">How to: Access Controls from JavaScript by ID</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/776f3747-7fa7-4851-ae27-f728ede1a564">Walkthrough: Making Data-Bound Controls Easier to Access from JavaScript</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0eaf202-61b6-4cd8-9604-6b7638fdf0ae">Walkthrough: Making Controls Located in Web User Controls Easier to Access From JavaScript</related>
       </Docs>
     </Member>
     <Member MemberName="ClientIDSeparator">
@@ -1006,7 +1006,7 @@ span#ProductIDLabel { background-color: white; }
 ## Remarks  
  When you develop a composite or templated server control, you must override this method. Controls that override the <xref:System.Web.UI.Control.CreateChildControls%2A> method should implement the <xref:System.Web.UI.INamingContainer> interface to avoid naming conflicts.  
   
- For more information, see [Web Server Controls Templates](http://msdn.microsoft.com/library/f769d290-fd04-4084-85fc-4ea30dd2e8ae) and [Developing Custom ASP.NET Server Controls](http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef).  
+ For more information, see [Web Server Controls Templates](https://msdn.microsoft.com/library/f769d290-fd04-4084-85fc-4ea30dd2e8ae) and [Developing Custom ASP.NET Server Controls](https://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef).  
   
    
   
@@ -1014,7 +1014,7 @@ span#ProductIDLabel { background-color: white; }
  The following example demonstrates an overridden version of the <xref:System.Web.UI.Control.CreateChildControls%2A> method. In this implementation, the composite control displays a <xref:System.Web.UI.WebControls.TextBox> control enclosed in two literal controls that render HTML.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[SystemWebUIControl CreateChildControls and EnsureChildControls#2](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUIControl CreateChildControls and EnsureChildControls/CS/compositecontrolsample1.cs#2)]
  [!code-vb[SystemWebUIControl CreateChildControls and EnsureChildControls#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUIControl CreateChildControls and EnsureChildControls/VB/compositecontrolsample1.vb#2)]  
@@ -1025,8 +1025,8 @@ span#ProductIDLabel { background-color: white; }
         <altmember cref="T:System.Web.UI.ControlCollection" />
         <altmember cref="P:System.Web.UI.Control.ChildControlsCreated" />
         <altmember cref="T:System.Web.UI.INamingContainer" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef">Developing Custom ASP.NET Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f769d290-fd04-4084-85fc-4ea30dd2e8ae">ASP.NET Web Server Controls Templates</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef">Developing Custom ASP.NET Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f769d290-fd04-4084-85fc-4ea30dd2e8ae">ASP.NET Web Server Controls Templates</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -1114,7 +1114,7 @@ span#ProductIDLabel { background-color: white; }
 ## Remarks  
  Use this method to bind data from a source to a server control. This method is commonly used after retrieving a dataset through a database query. Most controls perform data binding automatically, which means that you typically do not need to call this method explicitly.  
   
- This method is commonly overridden when you create a custom templated data-bound control. For more information, see [How to: Create Templated ASP.NET User Controls](http://msdn.microsoft.com/library/07664410-02dd-4494-af53-a9259741d4f2) and [Developing Custom Data-Bound Web Server Controls](http://msdn.microsoft.com/library/88fe02a3-957f-4ff7-84f5-2d7ab78db4c1). When called on a server control, this method resolves all data-binding expressions in the server control and in any of its child controls.  
+ This method is commonly overridden when you create a custom templated data-bound control. For more information, see [How to: Create Templated ASP.NET User Controls](https://msdn.microsoft.com/library/07664410-02dd-4494-af53-a9259741d4f2) and [Developing Custom Data-Bound Web Server Controls](https://msdn.microsoft.com/library/88fe02a3-957f-4ff7-84f5-2d7ab78db4c1). When called on a server control, this method resolves all data-binding expressions in the server control and in any of its child controls.  
   
    
   
@@ -1129,8 +1129,8 @@ span#ProductIDLabel { background-color: white; }
         <altmember cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" />
         <altmember cref="E:System.Web.UI.Control.DataBinding" />
         <altmember cref="M:System.Web.UI.Control.DataBindChildren" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef">Developing Custom ASP.NET Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef">Developing Custom ASP.NET Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -1171,7 +1171,7 @@ span#ProductIDLabel { background-color: white; }
         </remarks>
         <altmember cref="E:System.Web.UI.Control.DataBinding" />
         <altmember cref="M:System.Web.UI.Control.DataBindChildren" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataBindChildren">
@@ -1204,7 +1204,7 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef">Developing Custom ASP.NET Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef">Developing Custom ASP.NET Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="DataBinding">
@@ -1241,7 +1241,7 @@ span#ProductIDLabel { background-color: white; }
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Control.OnDataBinding(System.EventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="DataItemContainer">
@@ -1342,7 +1342,7 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -1384,7 +1384,7 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="Disposed">
@@ -1415,7 +1415,7 @@ span#ProductIDLabel { background-color: white; }
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Control.Dispose" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -1467,7 +1467,7 @@ span#ProductIDLabel { background-color: white; }
   
  The control has already been added to the <see langword="Controls" /> collection.</exception>
         <altmember cref="P:System.Web.UI.Control.SkinID" />
-        <related type="Article" href="http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableViewState">
@@ -1516,9 +1516,9 @@ span#ProductIDLabel { background-color: white; }
   
  For more information, see the <xref:System.Web.UI.Control.ViewStateMode%2A> property.  
   
- A server control's view state is the accumulation of all its property values. In order to preserve these values across HTTP requests, ASP.NET uses an instance of the <xref:System.Web.UI.StateBag> class to store the property values. The values are then passed as a variable to a hidden field when subsequent requests are processed. For more information about view state, see [ASP.NET View State Overview](http://msdn.microsoft.com/library/19d2a6ed-9a77-4c7c-a7f5-74dd4b6c3818).  
+ A server control's view state is the accumulation of all its property values. In order to preserve these values across HTTP requests, ASP.NET uses an instance of the <xref:System.Web.UI.StateBag> class to store the property values. The values are then passed as a variable to a hidden field when subsequent requests are processed. For more information about view state, see [ASP.NET View State Overview](https://msdn.microsoft.com/library/19d2a6ed-9a77-4c7c-a7f5-74dd4b6c3818).  
   
- There are times when it is appropriate to disable view state, particularly to improve application performance. For example, if you are loading a database request into a server control, set this property to `false`. If you do not, processor time will be wasted loading view state into the server control that will only be overridden by the database query. If <xref:System.Web.UI.Control.EnableViewState%2A> is `false`, you can use the control state to persist property information that is specific to a control and cannot be turned off like the view state property. For more information on the difference between control state and view state, see [Control State vs. View State Example](http://msdn.microsoft.com/library/9e98c7de-a888-48df-b14e-02ec8bef7681).  
+ There are times when it is appropriate to disable view state, particularly to improve application performance. For example, if you are loading a database request into a server control, set this property to `false`. If you do not, processor time will be wasted loading view state into the server control that will only be overridden by the database query. If <xref:System.Web.UI.Control.EnableViewState%2A> is `false`, you can use the control state to persist property information that is specific to a control and cannot be turned off like the view state property. For more information on the difference between control state and view state, see [Control State vs. View State Example](https://msdn.microsoft.com/library/9e98c7de-a888-48df-b14e-02ec8bef7681).  
   
  For information about how to enable or disable view state declaratively for an ASP.NET page, see [\@ Page](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ydy4x04a(v=vs.100)).
   
@@ -1537,9 +1537,9 @@ span#ProductIDLabel { background-color: white; }
         <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
         <altmember cref="M:System.Web.UI.Control.SaveViewState" />
         <altmember cref="P:System.Web.UI.Control.IsViewStateEnabled" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
         <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/9e98c7de-a888-48df-b14e-02ec8bef7681">Control State vs. View State Example</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9e98c7de-a888-48df-b14e-02ec8bef7681">Control State vs. View State Example</related>
       </Docs>
     </Member>
     <Member MemberName="EndRenderTracing">
@@ -1611,7 +1611,7 @@ span#ProductIDLabel { background-color: white; }
  The following example uses the <xref:System.Web.UI.Control.EnsureChildControls%2A> method to ensure that the current server control has child controls. It then gets or sets a <xref:System.Web.UI.WebControls.TextBox.Text%2A> property for a child <xref:System.Web.UI.WebControls.TextBox> Web control in the current server control's <xref:System.Web.UI.ControlCollection> object.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[SystemWebUIControl CreateChildControls and EnsureChildControls#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUIControl CreateChildControls and EnsureChildControls/CS/compositecontrolsample1.cs#1)]
  [!code-vb[SystemWebUIControl CreateChildControls and EnsureChildControls#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUIControl CreateChildControls and EnsureChildControls/VB/compositecontrolsample1.vb#1)]  
@@ -1739,7 +1739,7 @@ span#ProductIDLabel { background-color: white; }
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use <xref:System.Web.UI.Control.FindControl%2A> to access a control from a function in a code-behind page, to access a control that is inside another container, or in other circumstances where the target control is not directly accessible to the caller. This method will find a control only if the control is directly contained by the specified container; that is, the method does not search throughout a hierarchy of controls within controls. For information about how to find a control when you do not know its immediate container, see [How to: Access Server Controls by ID](http://msdn.microsoft.com/library/59964ef8-72ef-4159-9f1a-5b230ff46fb3).  
+ Use <xref:System.Web.UI.Control.FindControl%2A> to access a control from a function in a code-behind page, to access a control that is inside another container, or in other circumstances where the target control is not directly accessible to the caller. This method will find a control only if the control is directly contained by the specified container; that is, the method does not search throughout a hierarchy of controls within controls. For information about how to find a control when you do not know its immediate container, see [How to: Access Server Controls by ID](https://msdn.microsoft.com/library/59964ef8-72ef-4159-9f1a-5b230ff46fb3).  
   
    
   
@@ -1747,14 +1747,14 @@ span#ProductIDLabel { background-color: white; }
  The following example defines a `Button1_Click` event handler. When invoked, this handler uses the <xref:System.Web.UI.Control.FindControl%2A> method to locate a control with an <xref:System.Web.UI.Control.ID%2A> property of `TextBox2` on the containing page. If the control is found, its parent is determined using the <xref:System.Web.UI.Control.Parent%2A> property and the parent control's <xref:System.Web.UI.Control.ID%2A> is written to the page. If `TextBox2` is not found, "Control Not Found" is written to the page.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[System.Web.UI.Page.Parent_FindControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.Parent_FindControl/CS/control_parent.cs.aspx#1)]
  [!code-vb[System.Web.UI.Page.Parent_FindControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.Parent_FindControl/VB/control_parent.vb.aspx#1)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/59964ef8-72ef-4159-9f1a-5b230ff46fb3">How to: Access Server Controls by ID</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/59964ef8-72ef-4159-9f1a-5b230ff46fb3">How to: Access Server Controls by ID</related>
       </Docs>
     </Member>
     <Member MemberName="FindControl">
@@ -1871,7 +1871,7 @@ span#ProductIDLabel { background-color: white; }
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetRouteUrl">
@@ -1919,7 +1919,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl(
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetRouteUrl">
@@ -1972,7 +1972,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl(
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetRouteUrl">
@@ -2022,7 +2022,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetRouteUrl">
@@ -2072,7 +2072,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetUniqueIDRelativeTo">
@@ -2335,7 +2335,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Server controls should perform any initialization steps that are required to create and set up an instance. You cannot use view-state information within this event; it is not populated yet. You should not access another server control during this event, regardless of whether it is a child or parent to this control. Other server controls are not certain to be created and ready for access. For more information on server control events, see [ASP.NET Web Forms Server Control Event Model](http://msdn.microsoft.com/library/6304bff7-1b0e-4641-8acb-6d3b0badc4a3).  
+ Server controls should perform any initialization steps that are required to create and set up an instance. You cannot use view-state information within this event; it is not populated yet. You should not access another server control during this event, regardless of whether it is a child or parent to this control. Other server controls are not certain to be created and ready for access. For more information on server control events, see [ASP.NET Web Forms Server Control Event Model](https://msdn.microsoft.com/library/6304bff7-1b0e-4641-8acb-6d3b0badc4a3).  
   
    
   
@@ -2347,7 +2347,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="IsChildControlStateCleared">
@@ -2440,7 +2440,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a sample custom server control that uses this property, see [Templated Server Control Example](http://msdn.microsoft.com/library/986f63b8-6b50-42b9-a62d-a2f13cafa88b)  
+ For a sample custom server control that uses this property, see [Templated Server Control Example](https://msdn.microsoft.com/library/986f63b8-6b50-42b9-a62d-a2f13cafa88b)  
   
    
   
@@ -2530,7 +2530,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -2576,7 +2576,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         <altmember cref="M:System.Web.UI.Control.SaveControlState" />
         <altmember cref="P:System.Web.UI.Control.ViewState" />
         <altmember cref="M:System.Web.UI.Control.SaveViewState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -2620,7 +2620,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         </remarks>
         <altmember cref="P:System.Web.UI.Control.ViewState" />
         <altmember cref="M:System.Web.UI.Control.SaveViewState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewStateByID">
@@ -2750,7 +2750,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  Creating a unique namespace for server controls is particularly important when you bind Web server controls to data, such as the <xref:System.Web.UI.WebControls.Repeater> and <xref:System.Web.UI.WebControls.DataList> server controls. When multiple entries in the data source create multiple instances of a server control that is a child of the repeating control, the naming container ensures that each instance of these child controls have <xref:System.Web.UI.Control.UniqueID%2A> property values that do not conflict. The default naming container for a page is the instance of the <xref:System.Web.UI.Page> class that is generated when that page is requested.  
   
- The <xref:System.Web.UI.Control.ClientID%2A> property contains the value that is rendered as the element's `id` attribute in the HTML markup. Depending on the value that you assign to the <xref:System.Web.UI.Control.ClientIDMode%2A> property, the value that is generated for the <xref:System.Web.UI.Control.ClientID%2A> property might include the ID of the <xref:System.Web.UI.Control.NamingContainer%2A> object. When you set <xref:System.Web.UI.Control.ClientIDMode%2A> to <xref:System.Web.UI.ClientIDMode.Static>, the <xref:System.Web.UI.Control.ClientID%2A> value does not include the ID of the <xref:System.Web.UI.Control.NamingContainer%2A> object. When you set <xref:System.Web.UI.Control.ClientIDMode%2A> to either <xref:System.Web.UI.ClientIDMode.AutoID> or <xref:System.Web.UI.ClientIDMode.Predictable>, the <xref:System.Web.UI.Control.ClientID%2A> value will include the ID from the <xref:System.Web.UI.Control.NamingContainer%2A> object. For more information, see [ASP.NET Web Server Control Identification](http://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7).  
+ The <xref:System.Web.UI.Control.ClientID%2A> property contains the value that is rendered as the element's `id` attribute in the HTML markup. Depending on the value that you assign to the <xref:System.Web.UI.Control.ClientIDMode%2A> property, the value that is generated for the <xref:System.Web.UI.Control.ClientID%2A> property might include the ID of the <xref:System.Web.UI.Control.NamingContainer%2A> object. When you set <xref:System.Web.UI.Control.ClientIDMode%2A> to <xref:System.Web.UI.ClientIDMode.Static>, the <xref:System.Web.UI.Control.ClientID%2A> value does not include the ID of the <xref:System.Web.UI.Control.NamingContainer%2A> object. When you set <xref:System.Web.UI.Control.ClientIDMode%2A> to either <xref:System.Web.UI.ClientIDMode.AutoID> or <xref:System.Web.UI.ClientIDMode.Predictable>, the <xref:System.Web.UI.Control.ClientID%2A> value will include the ID from the <xref:System.Web.UI.Control.NamingContainer%2A> object. For more information, see [ASP.NET Web Server Control Identification](https://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7).  
   
    
   
@@ -2856,7 +2856,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         </remarks>
         <altmember cref="E:System.Web.UI.Control.DataBinding" />
         <altmember cref="M:System.Web.UI.Control.DataBind" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">ASP.NET Page Life Cycle Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -2897,7 +2897,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.Page" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
@@ -2939,7 +2939,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         </remarks>
         <altmember cref="T:System.Web.UI.Page" />
         <altmember cref="P:System.Web.UI.Page.IsPostBack" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -2980,7 +2980,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.Page" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="OnUnload">
@@ -3021,7 +3021,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.Control.Unload" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="OpenFile">
@@ -3197,7 +3197,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="RaiseBubbleEvent">
@@ -3326,7 +3326,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.HtmlTextWriter" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="RenderChildren">
@@ -3652,7 +3652,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  This method uses the <xref:System.Web.UI.Control.TemplateSourceDirectory%2A> property to resolve to the absolute URL. The returned URL is for client use.  
   
- For more information on resource paths in a Web site, see [ASP.NET Web Project Paths](http://msdn.microsoft.com/library/2447f50c-b849-483c-8093-85ed53e7a5bd).  
+ For more information on resource paths in a Web site, see [ASP.NET Web Project Paths](https://msdn.microsoft.com/library/2447f50c-b849-483c-8093-85ed53e7a5bd).  
   
 > [!NOTE]
 >  For mobile Web pages only, if your application relies on cookieless sessions or might receive requests from mobile browsers that require cookieless sessions, using a tilde ("~") in a path can result in inadvertently creating a new session and potentially losing session data. To set a property with a path such as "~/*path"*, resolve the path by calling the <xref:System.Web.UI.MobileControls.MobileControl.ResolveUrl%2A> with an argument such as "~/*path"* before assigning it to the property.  
@@ -3669,7 +3669,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         </remarks>
         <exception cref="T:System.ArgumentNullException">Occurs if the <paramref name="relativeUrl" /> parameter contains <see langword="null" />.</exception>
         <altmember cref="P:System.Web.UI.Control.TemplateSourceDirectory" />
-        <related type="Article" href="http://msdn.microsoft.com/library/2447f50c-b849-483c-8093-85ed53e7a5bd">ASP.NET Web Site Paths</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2447f50c-b849-483c-8093-85ed53e7a5bd">ASP.NET Web Site Paths</related>
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
@@ -3749,9 +3749,9 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control life cycle. For more information, see [ASP.NET Page Life Cycle Overview](http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991).  
+ View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control life cycle. For more information, see [ASP.NET Page Life Cycle Overview](https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991).  
   
- When view state is saved, this string object is returned to the client as a variable that is stored in an HTML `HIDDEN` element. When you author a custom server control with a custom view state, the view state can be managed explicitly with the <xref:System.Web.UI.Control.SaveViewState%2A> and <xref:System.Web.UI.Control.LoadViewState%2A> methods. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)). For information on implementing a custom session-state provider, see [Implementing a Session-State Store Provider](http://msdn.microsoft.com/library/baadfec5-c881-468a-9681-7d8796b05a66).  
+ When view state is saved, this string object is returned to the client as a variable that is stored in an HTML `HIDDEN` element. When you author a custom server control with a custom view state, the view state can be managed explicitly with the <xref:System.Web.UI.Control.SaveViewState%2A> and <xref:System.Web.UI.Control.LoadViewState%2A> methods. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)). For information on implementing a custom session-state provider, see [Implementing a Session-State Store Provider](https://msdn.microsoft.com/library/baadfec5-c881-468a-9681-7d8796b05a66).  
   
    
   
@@ -3767,7 +3767,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         <altmember cref="P:System.Web.UI.Control.ViewState" />
         <altmember cref="T:System.Web.UI.StateBag" />
         <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/baadfec5-c881-468a-9681-7d8796b05a66">Implementing a Session-State Store Provider</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/baadfec5-c881-468a-9681-7d8796b05a66">Implementing a Session-State Store Provider</related>
       </Docs>
     </Member>
     <Member MemberName="SetDesignModeState">
@@ -4023,7 +4023,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  The control was already added to the <see langword="Controls" /> collection.</exception>
         <altmember cref="P:System.Web.UI.Control.EnableTheming" />
-        <related type="Article" href="http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IControlBuilderAccessor.ControlBuilder">
@@ -4621,7 +4621,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="ValidateRequestMode">
@@ -4694,7 +4694,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
 ## Remarks  
  A server control's view state is the accumulation of all its property values. In order to preserve these values across HTTP requests, ASP.NET server controls use this property, which is an instance of the <xref:System.Web.UI.StateBag> class, to store the property values. The values are then passed as a variable to an HTML hidden input element when subsequent requests are processed. For more information about saving server control view state, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
- View state is enabled for all server controls by default, but there are circumstances in which you will want to disable it. For more information, see [ASP.NET Performance Overview](http://msdn.microsoft.com/library/f882bf1b-a009-4312-ac06-74370ffabc0b).  
+ View state is enabled for all server controls by default, but there are circumstances in which you will want to disable it. For more information, see [ASP.NET Performance Overview](https://msdn.microsoft.com/library/f882bf1b-a009-4312-ac06-74370ffabc0b).  
   
  For information about dictionaries and how to use them, see [Collections and Data Structures](~/docs/standard/collections/index.md).  
   
@@ -4812,7 +4812,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         <altmember cref="P:System.Web.UI.Control.IsViewStateEnabled" />
         <altmember cref="P:System.Web.UI.Control.ViewState" />
         <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/19d2a6ed-9a77-4c7c-a7f5-74dd4b6c3818">ASP.NET View State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/19d2a6ed-9a77-4c7c-a7f5-74dd4b6c3818">ASP.NET View State Overview</related>
         <related type="Article" href="https://msdn.microsoft.com/en-us/library/C90FA3D7-788A-47D2-A80F-138122A1D8EE">Controlling View State</related>
       </Docs>
     </Member>

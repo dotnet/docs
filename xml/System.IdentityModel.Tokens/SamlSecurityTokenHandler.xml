@@ -28,7 +28,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.IdentityModel.Tokens.SamlSecurityToken" />
-    <related type="Article" href="http://msdn.microsoft.com/library/09202d12-88d3-49cc-953b-703bcc1690eb">&lt;samlSecurityTokenRequirement&gt;</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/09202d12-88d3-49cc-953b-703bcc1690eb">&lt;samlSecurityTokenRequirement&gt;</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -84,7 +84,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="samlSecurityTokenRequirement" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/09202d12-88d3-49cc-953b-703bcc1690eb">&lt;samlSecurityTokenRequirement&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/09202d12-88d3-49cc-953b-703bcc1690eb">&lt;samlSecurityTokenRequirement&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="AddDelegateToAttributes">
@@ -1849,7 +1849,7 @@
         <value>A <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenRequirement" /> that specifies the requirements.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set the value to <see langword="null" /> occurs.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/09202d12-88d3-49cc-953b-703bcc1690eb">&lt;samlSecurityTokenRequirement&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/09202d12-88d3-49cc-953b-703bcc1690eb">&lt;samlSecurityTokenRequirement&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="SetDelegateFromAttribute">

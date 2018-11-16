@@ -39,9 +39,9 @@
   
 -   An explanation of how the code example works when you load it in a browser.  
   
- The first part of the code example is the user control. The source code for the user control comes from another topic. For this code example to work, you need to obtain the .ascx file for the user control from the [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0) topic, and place the file in the same folder as the .aspx page in this code example.  
+ The first part of the code example is the user control. The source code for the user control comes from another topic. For this code example to work, you need to obtain the .ascx file for the user control from the [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0) topic, and place the file in the same folder as the .aspx page in this code example.  
   
- The second part of the code example is the `TextDisplayWebPart` control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08). Note that the control has a property named `ContentText`; this property holds the value that the user enters in the text box.  
+ The second part of the code example is the `TextDisplayWebPart` control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08). Note that the control has a property named `ContentText`; this property holds the value that the user enters in the text box.  
   
  [!code-csharp[WebParts_CatalogPartCollection_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/CS/textdisplaywebpart.cs#3)]
  [!code-vb[WebParts_CatalogPartCollection_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/VB/textdisplaywebpart.vb#3)]  
@@ -56,7 +56,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -74,7 +74,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -107,7 +107,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -153,7 +153,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -178,7 +178,7 @@
         <param name="catalogParts">An <see cref="T:System.Collections.ICollection" /> of additional <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" /> class by passing in an <see cref="T:System.Collections.ICollection" /> collection of the existing <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls in a zone, and an additional collection of controls.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -224,7 +224,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -260,7 +260,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -289,7 +289,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -335,7 +335,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -390,7 +390,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -436,7 +436,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

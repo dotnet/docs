@@ -39,7 +39,7 @@
 ## Remarks  
  The <xref:System.Web.ApplicationServices.AuthenticationService> object enables you to authenticate users through a Windows Communication Foundation (WCF) service. You use the WCF authentication service when you must authenticate users through ASP.NET membership from an application that is outside the Web application that stores the user credentials. The application must be able to send and consume message in the SOAP format. Through the <xref:System.Web.ApplicationServices.AuthenticationService> class, you can log users in, log users out, validate credentials, check authentication status, customize authentication, and set the authentication cookie.  
   
- The <xref:System.Web.ApplicationServices.AuthenticationService> class contains four methods that you should access only through a WCF service: the <xref:System.Web.ApplicationServices.AuthenticationService.IsLoggedIn%2A>, <xref:System.Web.ApplicationServices.AuthenticationService.Login%2A>, <xref:System.Web.ApplicationServices.AuthenticationService.Logout%2A>, and <xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> methods. To call these methods, you enable the authentication service on a Web server and then connect a WCF-compatible client application to the Web service. For information about how to configure the authentication service, see [How to: Enable the WCF Authentication Service](http://msdn.microsoft.com/library/f7913259-762e-4a73-a771-ac9e42903f44).  
+ The <xref:System.Web.ApplicationServices.AuthenticationService> class contains four methods that you should access only through a WCF service: the <xref:System.Web.ApplicationServices.AuthenticationService.IsLoggedIn%2A>, <xref:System.Web.ApplicationServices.AuthenticationService.Login%2A>, <xref:System.Web.ApplicationServices.AuthenticationService.Logout%2A>, and <xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> methods. To call these methods, you enable the authentication service on a Web server and then connect a WCF-compatible client application to the Web service. For information about how to configure the authentication service, see [How to: Enable the WCF Authentication Service](https://msdn.microsoft.com/library/f7913259-762e-4a73-a771-ac9e42903f44).  
   
  To log users on, you pass the user credentials to the <xref:System.Web.ApplicationServices.AuthenticationService.Login%2A> method. If the credentials are valid, the <xref:System.Web.ApplicationServices.AuthenticationService> class creates an authentication cookie. If the authentication cookie has not expired, you know that the user's credentials have been authenticated and you do not have to validate the credentials again. (Cookie-less authentication is not available through the <xref:System.Web.ApplicationServices.AuthenticationService> class.)  
   
@@ -47,11 +47,11 @@
   
  The <xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> method checks user credentials for authentication, but it does not return an authentication ticket. Use <xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> when a user has previously logged in and you must check that the credentials are still valid at the start of a new application session.  
   
- For an example of using the WCF authentication service from a console application, see [Walkthrough: Using ASP.NET Application Services](http://msdn.microsoft.com/library/f3f394f0-20d6-4361-aa8f-4b21bf4933eb).  
+ For an example of using the WCF authentication service from a console application, see [Walkthrough: Using ASP.NET Application Services](https://msdn.microsoft.com/library/f3f394f0-20d6-4361-aa8f-4b21bf4933eb).  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -111,7 +111,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.ApplicationServices.AuthenticatingEventArgs" />
-        <related type="Article" href="http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreatingCookie">
@@ -154,7 +154,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.ApplicationServices.CreatingCookieEventArgs" />
-        <related type="Article" href="http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsLoggedIn">
@@ -194,7 +194,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Login">
@@ -250,7 +250,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="userName" /> or <paramref name="password" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Logout">
@@ -291,7 +291,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.Security.FormsAuthentication.SignOut" />
-        <related type="Article" href="http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ValidateUser">
@@ -344,7 +344,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="userName" /> or <paramref name="password" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b">Windows Communication Foundation Authentication Service Overview</related>
       </Docs>
     </Member>
   </Members>

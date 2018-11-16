@@ -25,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a single <see href="http://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca">Target</see> element in an MSBuild project.</summary>
+    <summary>Represents a single <see href="https://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca">Target</see> element in an MSBuild project.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,7 +51,7 @@
       </Parameters>
       <Docs>
         <param name="taskName">The <see cref="T:Microsoft.Build.BuildEngine.BuildTask" /> object that represents the <see langword="Task" /> element to add to the <see langword="Target" /> element.</param>
-        <summary>Adds the specified <see href="http://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299">Task</see> element to the [Target](http://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element.</summary>
+        <summary>Adds the specified <see href="https://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299">Task</see> element to the [Target](https://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element.</summary>
         <returns>A <see cref="T:Microsoft.Build.BuildEngine.BuildTask" /> object represents a child <c>Task</c> element of the <c>Target</c> element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -74,7 +74,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <c>Condition</c> attribute value of the [Target](http://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element.</summary>
+        <summary>Gets the <c>Condition</c> attribute value of the [Target](https://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element.</summary>
         <value>The <c>Condition</c> attribute value of the <c>Target</c> element.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,7 +97,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <c>DependsOnTargets</c> attribute value of the [Target](http://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element, which is a semicolon-separated list.</summary>
+        <summary>Gets the <c>DependsOnTargets</c> attribute value of the [Target](https://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element, which is a semicolon-separated list.</summary>
         <value>The <c>DependsOnTargets</c> attribute value of the <c>Target</c> element.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -190,7 +190,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the [Target](http://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element was imported into the project.</summary>
+        <summary>Gets a value indicating whether the [Target](https://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element was imported into the project.</summary>
         <value>
           <see langword="true" /> if the <c>Target</c> element was imported into the project; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -219,7 +219,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <c>Name</c> attribute value of the [Target](http://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element.</summary>
+        <summary>Gets the <c>Name</c> attribute value of the [Target](https://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element.</summary>
         <value>The <c>Name</c> attribute value of the <c>Target</c> element.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -275,7 +275,7 @@
       </Parameters>
       <Docs>
         <param name="taskElement">The <see cref="T:Microsoft.Build.BuildEngine.BuildTask" /> object that represents the <see langword="Task" /> element to remove from the <see langword="Target" /> element.</param>
-        <summary>Removes the specified <see href="http://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299">Task</see> element from the [Target](http://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element.</summary>
+        <summary>Removes the specified <see href="https://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299">Task</see> element from the [Target](https://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

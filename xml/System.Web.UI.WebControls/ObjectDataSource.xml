@@ -82,11 +82,11 @@
   
 <a name="retrieving_data"></a>   
 ## Retrieving Data  
- To retrieve data from a business object, set the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property to the name of the method that retrieves data. If the method does not return an <xref:System.Collections.IEnumerable> or <xref:System.Data.DataSet> object, the object is wrapped by the runtime in an <xref:System.Collections.IEnumerable> collection. If the method signature has parameters, you can add <xref:System.Web.UI.WebControls.Parameter> objects to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectParameters%2A> collection, and then bind them to the values that you want to pass to the method that is specified by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property. In order for the <xref:System.Web.UI.WebControls.ObjectDataSource> control to use the parameters, the parameters must match the names and types of the parameters in the method signature. For more information, see [Using Parameters with the ObjectDataSource Control](http://msdn.microsoft.com/library/45fb67ee-9be7-49b7-9421-e242203dafa4).  
+ To retrieve data from a business object, set the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property to the name of the method that retrieves data. If the method does not return an <xref:System.Collections.IEnumerable> or <xref:System.Data.DataSet> object, the object is wrapped by the runtime in an <xref:System.Collections.IEnumerable> collection. If the method signature has parameters, you can add <xref:System.Web.UI.WebControls.Parameter> objects to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectParameters%2A> collection, and then bind them to the values that you want to pass to the method that is specified by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property. In order for the <xref:System.Web.UI.WebControls.ObjectDataSource> control to use the parameters, the parameters must match the names and types of the parameters in the method signature. For more information, see [Using Parameters with the ObjectDataSource Control](https://msdn.microsoft.com/library/45fb67ee-9be7-49b7-9421-e242203dafa4).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSource> control retrieves data whenever the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method is called. This method provides programmatic access to the method that is specified by <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property. The method that is specified by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property is called automatically by controls that are bound to the <xref:System.Web.UI.WebControls.ObjectDataSource> when their `DataBind` method is called. If you set the `DataSourceID` property of a data-bound control, the control automatically binds to data from the data source, as needed. Setting the `DataSourceID` property is the recommended method for binding an <xref:System.Web.UI.WebControls.ObjectDataSource> control to a data-bound control. Alternatively, you can set the `DataSource` property, but then you must explicitly call the `DataBind` method of the data-bound control. You can call the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method programmatically at any time to retrieve data.  
   
- For more information about binding data-bound controls to data source controls, see [Binding to Data Using a Data Source Control](http://msdn.microsoft.com/library/e41adfff-8fb8-449e-9cd1-9bd49788c5f7).  
+ For more information about binding data-bound controls to data source controls, see [Binding to Data Using a Data Source Control](https://msdn.microsoft.com/library/e41adfff-8fb8-449e-9cd1-9bd49788c5f7).  
   
 <a name="performing_data_operations"></a>   
 ## Performing Data Operations  
@@ -124,10 +124,10 @@
   
 <a name="using_linq_to_sql"></a>   
 ## Using LINQ to SQL  
- You can use the <xref:System.Web.UI.WebControls.ObjectDataSource> control with a LINQ to SQL class. To do so, you set the <xref:System.Web.UI.WebControls.ObjectDataSource.TypeName%2A> property to the name of the data-context class. You also set the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.InsertMethod%2A>, and <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod%2A> methods to the methods in the data-context class that perform the corresponding operations. You must create an event handler for the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing> event in order to cancel disposing of the data-context class. This step is necessary because LINQ to SQL supports deferred execution, whereas the <xref:System.Web.UI.WebControls.ObjectDataSource> control tries to dispose the data context after the Select operation. For more information about how to create LINQ to SQL classes, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081). For an example of how to cancel the disposing of a data context class, see the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing> event.  
+ You can use the <xref:System.Web.UI.WebControls.ObjectDataSource> control with a LINQ to SQL class. To do so, you set the <xref:System.Web.UI.WebControls.ObjectDataSource.TypeName%2A> property to the name of the data-context class. You also set the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.InsertMethod%2A>, and <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod%2A> methods to the methods in the data-context class that perform the corresponding operations. You must create an event handler for the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing> event in order to cancel disposing of the data-context class. This step is necessary because LINQ to SQL supports deferred execution, whereas the <xref:System.Web.UI.WebControls.ObjectDataSource> control tries to dispose the data context after the Select operation. For more information about how to create LINQ to SQL classes, see [How to: Create LINQ to SQL Classes in a Web Project](https://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081). For an example of how to cancel the disposing of a data context class, see the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing> event.  
   
 ## Using the Entity Framework  
- You can also use the <xref:System.Web.UI.WebControls.ObjectDataSource> control with the Entity Framework. For more information, see [Using the Entity Framework and the ObjectDataSource Control](http://go.microsoft.com/fwlink/?LinkId=209117).  
+ You can also use the <xref:System.Web.UI.WebControls.ObjectDataSource> control with the Entity Framework. For more information, see [Using the Entity Framework and the ObjectDataSource Control](https://go.microsoft.com/fwlink/?LinkId=209117).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -595,7 +595,7 @@
   
  An additional `NorthwindDataException` class is provided as a convenience.  
   
- This set of example classes works with the Northwind Traders database, which is available with Microsoft SQL Server and Microsoft Access. For a complete working example, you must compile and use these classes with the .aspx page example that is provided. For information about how to install the Northwind Traders database, see [How to: Install Sample Databases](http://msdn.microsoft.com/library/ed1291f6-604c-4972-ae22-0345c6dea12e).  
+ This set of example classes works with the Northwind Traders database, which is available with Microsoft SQL Server and Microsoft Access. For a complete working example, you must compile and use these classes with the .aspx page example that is provided. For information about how to install the Northwind Traders database, see [How to: Install Sample Databases](https://msdn.microsoft.com/library/ed1291f6-604c-4972-ae22-0345c6dea12e).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/CS/northwindemployee1.cs#2)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_1/VB/northwindemployee1.vb#2)]  
@@ -605,11 +605,11 @@
     <altmember cref="T:System.Web.UI.IDataSource" />
     <altmember cref="T:System.Web.UI.DataSourceControl" />
     <altmember cref="T:System.Web.UI.WebControls.ObjectDataSourceView" />
-    <related type="Article" href="http://msdn.microsoft.com/library/a806fa2c-fe6a-405f-869c-74e804a642ea">Walkthrough: Data Binding to a Custom Business Object</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=214011">Using the Entity Framework and the ObjectDataSource Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/a806fa2c-fe6a-405f-869c-74e804a642ea">Walkthrough: Data Binding to a Custom Business Object</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=214011">Using the Entity Framework and the ObjectDataSource Control</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -619,9 +619,9 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> class.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -645,9 +645,9 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -682,9 +682,9 @@
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.TypeName" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectMethod" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectParameters" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="CacheDuration">
@@ -745,9 +745,9 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.CacheExpirationPolicy" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.EnableCaching" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="CacheExpirationPolicy">
@@ -803,9 +803,9 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.CacheDuration" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.EnableCaching" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="CacheKeyDependency">
@@ -865,7 +865,7 @@
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default2.aspx.cs#4)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default2.aspx.vb#4)]  
   
- The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and the Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and the Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](https://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/App_Code/EmployeeLogic.cs#5)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/App_Code/EmployeeLogic.vb#5)]  
@@ -873,9 +873,9 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="ConflictDetection">
@@ -915,9 +915,9 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.ConflictOptions" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertNullToDBNull">
@@ -955,9 +955,9 @@
         </remarks>
         <altmember cref="F:System.DBNull.Value" />
         <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="DataObjectTypeName">
@@ -1015,10 +1015,10 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/45fb67ee-9be7-49b7-9421-e242203dafa4">Using Parameters with the ObjectDataSource Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/45fb67ee-9be7-49b7-9421-e242203dafa4">Using Parameters with the ObjectDataSource Control</related>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -1058,9 +1058,9 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="Deleted">
@@ -1114,10 +1114,10 @@
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleted(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Delete" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=214011">Using the Entity Framework and the ObjectDataSource Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=214011">Using the Entity Framework and the ObjectDataSource Control</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteMethod">
@@ -1194,10 +1194,10 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Delete" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=214011">Using the Entity Framework and the ObjectDataSource Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=214011">Using the Entity Framework and the ObjectDataSource Control</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteParameters">
@@ -1240,7 +1240,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The names and types of the parameters that are contained in the <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters%2A> collection must match the names and types of the parameters in the <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod%2A> method signature. The parameter names are affected by the <xref:System.Web.UI.WebControls.ObjectDataSource.OldValuesParameterFormatString%2A> property and are case-sensitive. The parameters in the collection depend on the data that is in the data-bound control, the parameters that are specified declaratively, and the parameters that are added programmatically. For more information, see "Parameter Merging" in <xref:System.Web.UI.WebControls.ObjectDataSource.Delete%2A> and [Using Parameters with the ObjectDataSource Control](http://msdn.microsoft.com/library/45fb67ee-9be7-49b7-9421-e242203dafa4).  
+ The names and types of the parameters that are contained in the <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters%2A> collection must match the names and types of the parameters in the <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod%2A> method signature. The parameter names are affected by the <xref:System.Web.UI.WebControls.ObjectDataSource.OldValuesParameterFormatString%2A> property and are case-sensitive. The parameters in the collection depend on the data that is in the data-bound control, the parameters that are specified declaratively, and the parameters that are added programmatically. For more information, see "Parameter Merging" in <xref:System.Web.UI.WebControls.ObjectDataSource.Delete%2A> and [Using Parameters with the ObjectDataSource Control](https://msdn.microsoft.com/library/45fb67ee-9be7-49b7-9421-e242203dafa4).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters%2A> property retrieves the <xref:System.Web.UI.WebControls.ObjectDataSourceView.DeleteParameters%2A> property that is contained by the <xref:System.Web.UI.WebControls.ObjectDataSourceView> object that is associated with the <xref:System.Web.UI.WebControls.ObjectDataSource> control.  
   
@@ -1269,9 +1269,9 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Delete" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="Deleting">
@@ -1325,9 +1325,9 @@
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleting(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Delete" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="EnableCaching">
@@ -1380,7 +1380,7 @@
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default2.aspx.cs#4)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default2.aspx.vb#4)]  
   
- The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and the Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and the Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](https://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/App_Code/EmployeeLogic.cs#5)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/App_Code/EmployeeLogic.vb#5)]  
@@ -1390,9 +1390,9 @@
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.ObjectDataSource.EnableCaching" /> property is set to <see langword="true" /> when the method specified by the <see cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectMethod" /> property returns a <see cref="T:System.Data.Common.DbDataReader" />.</exception>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.CacheDuration" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.CacheExpirationPolicy" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="EnablePaging">
@@ -1445,7 +1445,7 @@
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/Default3.aspx.cs#2)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/Default3.aspx.vb#2)]  
   
- The third example shows the data access class that retrieves data from the Customers table. It includes a method named `GetSubsetOfEmployees`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The example also includes a method named `GetEmployeeCount`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The class uses LINQ to query the Customers table. The example requires a LINQ to SQL class that represents the Northwind database and Customers table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that retrieves data from the Customers table. It includes a method named `GetSubsetOfEmployees`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The example also includes a method named `GetEmployeeCount`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The class uses LINQ to query the Customers table. The example requires a LINQ to SQL class that represents the Northwind database and Customers table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](https://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/App_Code/CustomerLogic.cs#3)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/App_Code/CustomerLogic.vb#3)]  
@@ -1455,9 +1455,9 @@
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.StartRowIndexParameterName" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.MaximumRowsParameterName" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanPage" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="FilterExpression">
@@ -1511,7 +1511,7 @@
  The <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property specifies an expression that is used to filter the data that is retrieved by the method that is specified by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property. It uses parameter placeholders that are evaluated to the parameters that are contained in the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterParameters%2A> collection. In this example, the parameter placeholder is bounded by single quotation marks because the type of the parameter is a string type that might contain spaces. If the type of the parameter is a numeric or date type, bounding quotation marks are not required.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/objds9cs.aspx#1)]
  [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/objds9vb.aspx#1)]  
@@ -1532,9 +1532,9 @@
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.ObjectDataSource.FilterExpression" /> property was set and the <see cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" /> method does not return a <see cref="T:System.Data.DataSet" /> or <see cref="T:System.Data.DataTable" />.</exception>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.FilterParameters" />
         <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Filtering" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="Filtering">
@@ -1572,9 +1572,9 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.FilterExpression" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.FilterParameters" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="FilterParameters">
@@ -1658,9 +1658,9 @@
         <exception cref="T:System.NotSupportedException">You set the <see cref="P:System.Web.UI.WebControls.ObjectDataSource.FilterExpression" /> property and the <see cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" /> method does not return a <see cref="T:System.Data.DataSet" /> or <see cref="T:System.Data.DataTable" />.</exception>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.FilterExpression" />
         <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Filtering" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -1699,9 +1699,9 @@
         <exception cref="T:System.ArgumentException">The specified <paramref name="viewName" /> is <see langword="null" /> or something other than <see langword="DefaultView" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.ObjectDataSourceView" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.GetViewNames" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="GetViewNames">
@@ -1735,9 +1735,9 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.GetView(System.String)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -1777,10 +1777,10 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.InsertMethod" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.InsertParameters" />
-        <related type="Article" href="http://msdn.microsoft.com/library/a806fa2c-fe6a-405f-869c-74e804a642ea">Walkthrough: Data Binding to a Custom Business Object</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a806fa2c-fe6a-405f-869c-74e804a642ea">Walkthrough: Data Binding to a Custom Business Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="Inserted">
@@ -1815,9 +1815,9 @@
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnInserted(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Insert" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.InsertParameters" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="Inserting">
@@ -1877,9 +1877,9 @@
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnInserting(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Insert" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.InsertParameters" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="InsertMethod">
@@ -1965,10 +1965,10 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.InsertParameters" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Insert" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=214011">Using the Entity Framework and the ObjectDataSource Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=214011">Using the Entity Framework and the ObjectDataSource Control</related>
       </Docs>
     </Member>
     <Member MemberName="InsertParameters">
@@ -2011,7 +2011,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The names and types of the parameters that are contained in the <xref:System.Web.UI.WebControls.ObjectDataSource.InsertParameters%2A> collection must match the names and types of the parameters that are in the <xref:System.Web.UI.WebControls.ObjectDataSource.InsertMethod%2A> property signature. The parameter names are case sensitive. When working with data-bound controls that supply parameters, such as the <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView> controls, the <xref:System.Web.UI.WebControls.ObjectDataSource> control automatically merges any parameters that are explicitly specified in the collection with the parameters that are provided by the data-bound control. This is important because data-bound controls always supply their parameters as <xref:System.String> types, and if the method signature includes numeric or date types, you must explicitly include a parameter in the <xref:System.Web.UI.WebControls.ObjectDataSource.InsertParameters%2A> collection with the correct type. Otherwise, the <xref:System.Web.UI.WebControls.ObjectDataSource> control attempts to cast the parameters according to the type that is defined by the parameters in the collection. For more information, see [Using Parameters with the ObjectDataSource Control](http://msdn.microsoft.com/library/45fb67ee-9be7-49b7-9421-e242203dafa4).  
+ The names and types of the parameters that are contained in the <xref:System.Web.UI.WebControls.ObjectDataSource.InsertParameters%2A> collection must match the names and types of the parameters that are in the <xref:System.Web.UI.WebControls.ObjectDataSource.InsertMethod%2A> property signature. The parameter names are case sensitive. When working with data-bound controls that supply parameters, such as the <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView> controls, the <xref:System.Web.UI.WebControls.ObjectDataSource> control automatically merges any parameters that are explicitly specified in the collection with the parameters that are provided by the data-bound control. This is important because data-bound controls always supply their parameters as <xref:System.String> types, and if the method signature includes numeric or date types, you must explicitly include a parameter in the <xref:System.Web.UI.WebControls.ObjectDataSource.InsertParameters%2A> collection with the correct type. Otherwise, the <xref:System.Web.UI.WebControls.ObjectDataSource> control attempts to cast the parameters according to the type that is defined by the parameters in the collection. For more information, see [Using Parameters with the ObjectDataSource Control](https://msdn.microsoft.com/library/45fb67ee-9be7-49b7-9421-e242203dafa4).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSource.InsertParameters%2A> property retrieves the <xref:System.Web.UI.WebControls.ObjectDataSourceView.InsertParameters%2A> property that is contained by the <xref:System.Web.UI.WebControls.ObjectDataSourceView> that is associated with the <xref:System.Web.UI.WebControls.ObjectDataSource> control.  
   
@@ -2045,9 +2045,9 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.InsertMethod" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Insert" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -2085,9 +2085,9 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.WebControls.ObjectDataSource.LoadViewState(System.Object)" /> method is used primarily by control developers when extending the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> control.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="MaximumRowsParameterName">
@@ -2137,7 +2137,7 @@
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/Default3.aspx.cs#2)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/Default3.aspx.vb#2)]  
   
- The third example shows the data access class that retrieves data from the Customers table. It includes a method named `GetSubsetOfEmployees`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The example also includes a method named `GetEmployeeCount`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The class uses LINQ to query the Customers table. The example requires a LINQ to SQL class that represents the Northwind database and Customers table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that retrieves data from the Customers table. It includes a method named `GetSubsetOfEmployees`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The example also includes a method named `GetEmployeeCount`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The class uses LINQ to query the Customers table. The example requires a LINQ to SQL class that represents the Northwind database and Customers table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](https://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/App_Code/CustomerLogic.cs#3)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/App_Code/CustomerLogic.vb#3)]  
@@ -2148,9 +2148,9 @@
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.EnablePaging" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanPage" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="ObjectCreated">
@@ -2185,9 +2185,9 @@
         </remarks>
         <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating" />
         <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="ObjectCreating">
@@ -2242,9 +2242,9 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectCreating(System.Web.UI.WebControls.ObjectDataSourceEventArgs)" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.TypeName" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="ObjectDisposing">
@@ -2312,9 +2312,9 @@ public void ExampleObjectDisposing(object sender,
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.ObjectCreated" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="OldValuesParameterFormatString">
@@ -2358,9 +2358,9 @@ public void ExampleObjectDisposing(object sender,
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.ConflictDetection" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -2400,9 +2400,9 @@ public void ExampleObjectDisposing(object sender,
         </block>
         <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
         <altmember cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="ParsingCulture">
@@ -2455,9 +2455,9 @@ public void ExampleObjectDisposing(object sender,
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.IStateManager.SaveViewState" />
         <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2518,9 +2518,9 @@ public void ExampleObjectDisposing(object sender,
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectMethod" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectParameters" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="SelectCountMethod">
@@ -2570,7 +2570,7 @@ public void ExampleObjectDisposing(object sender,
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/Default3.aspx.cs#2)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/Default3.aspx.vb#2)]  
   
- The third example shows the data access class that retrieves data from the Customers table. It includes a method named `GetSubsetOfEmployees`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The example also includes a method named `GetEmployeeCount`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The class uses LINQ to query the Customers table. The example requires a LINQ to SQL class that represents the Northwind database and Customers table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that retrieves data from the Customers table. It includes a method named `GetSubsetOfEmployees`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The example also includes a method named `GetEmployeeCount`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The class uses LINQ to query the Customers table. The example requires a LINQ to SQL class that represents the Northwind database and Customers table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](https://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/App_Code/CustomerLogic.cs#3)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/App_Code/CustomerLogic.vb#3)]  
@@ -2581,9 +2581,9 @@ public void ExampleObjectDisposing(object sender,
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectMethod" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.EnablePaging" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanRetrieveTotalRowCount" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -2627,7 +2627,7 @@ public void ExampleObjectDisposing(object sender,
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default.aspx.cs#2)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default.aspx.vb#2)]  
   
- The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query and update the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query and update the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](https://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/App_Code/EmployeeLogic.cs#5)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/App_Code/EmployeeLogic.vb#5)]  
@@ -2638,9 +2638,9 @@ public void ExampleObjectDisposing(object sender,
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnSelected(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectParameters" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="Selecting">
@@ -2677,9 +2677,9 @@ public void ExampleObjectDisposing(object sender,
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnSelecting(System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectParameters" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="SelectMethod">
@@ -2756,10 +2756,10 @@ public void ExampleObjectDisposing(object sender,
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectParameters" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=214011">Using the Entity Framework and the ObjectDataSource Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=214011">Using the Entity Framework and the ObjectDataSource Control</related>
       </Docs>
     </Member>
     <Member MemberName="SelectParameters">
@@ -2808,7 +2808,7 @@ public void ExampleObjectDisposing(object sender,
   
  Before the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method is run, the names and types of the parameters that are contained in the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectParameters%2A> collection must match the signature of the method that is specified by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property. For example, if a select method named `GetEmployeesByStateAndAge` takes a `string` and an integer as parameters, the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectParameters%2A> collection must contain two parameters. The first parameter must resolve to a string and the second parameter must resolve to an integer. Both parameters can be specified in markup in the `SelectParameters` element. Alternatively, they can be can be added in the <xref:System.Web.UI.WebControls.ObjectDataSource.Selecting> event handler, or one parameter can be added in markup and the other one can be added programmatically.  
   
- For more information, see [Using Parameters with the ObjectDataSource Control](http://msdn.microsoft.com/library/45fb67ee-9be7-49b7-9421-e242203dafa4) and the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod> property.  
+ For more information, see [Using Parameters with the ObjectDataSource Control](https://msdn.microsoft.com/library/45fb67ee-9be7-49b7-9421-e242203dafa4) and the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod> property.  
   
 > [!IMPORTANT]
 >  In the code for the <xref:System.Web.UI.WebControls.ObjectDataSource.Selecting> event handler or in the method that is specified by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property, make sure that you validate any parameter value that is received from the client.  
@@ -2835,9 +2835,9 @@ public void ExampleObjectDisposing(object sender,
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.SelectMethod" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="SortParameterName">
@@ -2893,9 +2893,9 @@ public void ExampleObjectDisposing(object sender,
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanSort" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="SqlCacheDependency">
@@ -2952,9 +2952,9 @@ public void ExampleObjectDisposing(object sender,
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Caching.SqlCacheDependency" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="StartRowIndexParameterName">
@@ -3004,7 +3004,7 @@ public void ExampleObjectDisposing(object sender,
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/Default3.aspx.cs#2)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/Default3.aspx.vb#2)]  
   
- The third example shows the data access class that retrieves data from the Customers table. It includes a method named `GetSubsetOfEmployees`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The example also includes a method named `GetEmployeeCount`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The class uses LINQ to query the Customers table. The example requires a LINQ to SQL class that represents the Northwind database and Customers table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that retrieves data from the Customers table. It includes a method named `GetSubsetOfEmployees`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The example also includes a method named `GetEmployeeCount`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The class uses LINQ to query the Customers table. The example requires a LINQ to SQL class that represents the Northwind database and Customers table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](https://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/App_Code/CustomerLogic.cs#3)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/App_Code/CustomerLogic.vb#3)]  
@@ -3015,9 +3015,9 @@ public void ExampleObjectDisposing(object sender,
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.EnablePaging" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSourceView.CanPage" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Select" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -3049,9 +3049,9 @@ public void ExampleObjectDisposing(object sender,
         </remarks>
         <altmember cref="M:System.Web.UI.IStateManager.TrackViewState" />
         <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -3101,9 +3101,9 @@ public void ExampleObjectDisposing(object sender,
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -3152,7 +3152,7 @@ public void ExampleObjectDisposing(object sender,
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.DropDownList> control, <xref:System.Web.UI.WebControls.TextBox> controls, and several <xref:System.Web.UI.WebControls.ObjectDataSource> controls to update data. The <xref:System.Web.UI.WebControls.DropDownList> displays the name of a Northwind employee, while the <xref:System.Web.UI.WebControls.TextBox> controls are used to enter and update address information. Because the <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters%2A> collection contains a <xref:System.Web.UI.WebControls.ControlParameter> object that is bound to the selected value of the <xref:System.Web.UI.WebControls.DropDownList>, the button that raises the <xref:System.Web.UI.WebControls.ObjectDataSource.Update%2A> operation is enabled only after an employee is selected.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/CS/objds12cs.aspx#1)]
  [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/VB/objds12vb.aspx#1)]  
@@ -3166,10 +3166,10 @@ public void ExampleObjectDisposing(object sender,
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=214011">Using the Entity Framework and the ObjectDataSource Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=214011">Using the Entity Framework and the ObjectDataSource Control</related>
       </Docs>
     </Member>
     <Member MemberName="Updated">
@@ -3204,10 +3204,10 @@ public void ExampleObjectDisposing(object sender,
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdated(System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Update" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=214011">Using the Entity Framework and the ObjectDataSource Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=214011">Using the Entity Framework and the ObjectDataSource Control</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateMethod">
@@ -3281,7 +3281,7 @@ public void ExampleObjectDisposing(object sender,
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default.aspx.cs#2)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default.aspx.vb#2)]  
   
- The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query and update the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query and update the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](https://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/App_Code/EmployeeLogic.cs#5)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/App_Code/EmployeeLogic.vb#5)]  
@@ -3290,10 +3290,10 @@ public void ExampleObjectDisposing(object sender,
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Update" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=214011">Using the Entity Framework and the ObjectDataSource Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=214011">Using the Entity Framework and the ObjectDataSource Control</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateParameters">
@@ -3336,7 +3336,7 @@ public void ExampleObjectDisposing(object sender,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The names and types of the parameters that are contained in the <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters%2A> collection must match the names and types of the parameters in the <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod%2A> method signature. The parameter names are affected by the <xref:System.Web.UI.WebControls.ObjectDataSource.OldValuesParameterFormatString%2A> property and are case-sensitive. The parameters in the collection depend on the data in the data-bound control, the parameters that are specified declaratively, and the parameters that are added programmatically. For more information, see the "Parameter Merging" section in <xref:System.Web.UI.WebControls.ObjectDataSource.Update%2A> and [Using Parameters with the ObjectDataSource Control](http://msdn.microsoft.com/library/45fb67ee-9be7-49b7-9421-e242203dafa4).  
+ The names and types of the parameters that are contained in the <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters%2A> collection must match the names and types of the parameters in the <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod%2A> method signature. The parameter names are affected by the <xref:System.Web.UI.WebControls.ObjectDataSource.OldValuesParameterFormatString%2A> property and are case-sensitive. The parameters in the collection depend on the data in the data-bound control, the parameters that are specified declaratively, and the parameters that are added programmatically. For more information, see the "Parameter Merging" section in <xref:System.Web.UI.WebControls.ObjectDataSource.Update%2A> and [Using Parameters with the ObjectDataSource Control](https://msdn.microsoft.com/library/45fb67ee-9be7-49b7-9421-e242203dafa4).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters%2A> property retrieves the <xref:System.Web.UI.WebControls.ObjectDataSourceView.UpdateParameters%2A> property that is contained by the <xref:System.Web.UI.WebControls.ObjectDataSourceView> object that is associated with the <xref:System.Web.UI.WebControls.ObjectDataSource> control.  
   
@@ -3353,7 +3353,7 @@ public void ExampleObjectDisposing(object sender,
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.DropDownList> control, <xref:System.Web.UI.WebControls.TextBox> controls, and several <xref:System.Web.UI.WebControls.ObjectDataSource> controls to update data. The <xref:System.Web.UI.WebControls.DropDownList> displays the name of a Northwind employee, while the <xref:System.Web.UI.WebControls.TextBox> controls are used to enter and update address information. Because the <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters%2A> collection contains a <xref:System.Web.UI.WebControls.ControlParameter> that is bound to the selected value of the <xref:System.Web.UI.WebControls.DropDownList>, the button that raises the <xref:System.Web.UI.WebControls.ObjectDataSource.Update%2A> operation is enabled only after an employee is selected.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/CS/objds12cs.aspx#1)]
  [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_12#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_12/VB/objds12vb.aspx#1)]  
@@ -3367,9 +3367,9 @@ public void ExampleObjectDisposing(object sender,
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Update" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
     <Member MemberName="Updating">
@@ -3413,7 +3413,7 @@ public void ExampleObjectDisposing(object sender,
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default.aspx.cs#2)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default.aspx.vb#2)]  
   
- The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query and update the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query and update the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](https://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/App_Code/EmployeeLogic.cs#5)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/App_Code/EmployeeLogic.vb#5)]  
@@ -3424,9 +3424,9 @@ public void ExampleObjectDisposing(object sender,
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdating(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSource.Update" />
         <altmember cref="P:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f1685b00-09f3-46a4-ad74-2bea21d12863">Data Source Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f10d54b-d7ba-47f4-832b-f83b8861d1d2">ObjectDataSource Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0165387c-847f-4731-a198-a0759004152f">Creating an ObjectDataSource Control Source Object</related>
       </Docs>
     </Member>
   </Members>

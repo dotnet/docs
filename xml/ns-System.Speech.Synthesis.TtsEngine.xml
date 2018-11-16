@@ -7,7 +7,7 @@
 ## Remarks  
  The members of the <xref:System.Speech.Synthesis.TtsEngine> namespace make available Windows Desktop Speech Technology support for Speech Synthesis Markup Language (SSML) based markup language and the construction of synthetic speech engines.  
   
- The SSML markup language is the industry standard to provide a rich, XML-based language for assisting the synthetic speech engines. It is endorsed by Microsoft and our competitors. For more information on SSML, see [Speech Synthesis Markup Language Specification](http://go.microsoft.com/fwlink/?LinkId=15144).  
+ The SSML markup language is the industry standard to provide a rich, XML-based language for assisting the synthetic speech engines. It is endorsed by Microsoft and our competitors. For more information on SSML, see [Speech Synthesis Markup Language Specification](https://go.microsoft.com/fwlink/?LinkId=15144).  
   
  Creating of a new of synthetic speech engine using <xref:System.Speech.Synthesis.TtsEngine> requires the implementation and registration of an object derived from the abstract base class <xref:System.Speech.Synthesis.TtsEngine.TtsEngineSsml>.  
   
@@ -28,6 +28,6 @@
  ]]></format>
     </remarks>
     <altmember cref="N:System.Speech.Synthesis" />
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=15144">Speech Synthesis Markup Language Specification</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=15144">Speech Synthesis Markup Language Specification</related>
   </Docs>
 </Namespace>

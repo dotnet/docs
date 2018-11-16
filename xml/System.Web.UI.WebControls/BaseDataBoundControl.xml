@@ -35,7 +35,7 @@
   
  You can use the data-bound controls that are provided with ASP.NET, including <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, and <xref:System.Web.UI.WebControls.TreeView>, to perform most Web development tasks that involve displaying data. In scenarios in which these controls do not provide the functionality you need, you can inherit from the base <xref:System.Web.UI.WebControls.DataBoundControl> and <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> classes to implement your own custom data source control.  
   
- While any class that supports the `DataSource` and `DataSourceID` properties and the `DataBind` method is a data-bound control, most ASP.NET data-bound controls extend the abstract <xref:System.Web.UI.WebControls.BaseDataBoundControl> and <xref:System.Web.UI.WebControls.DataBoundControl> classes. Notable exceptions include <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.Repeater>, and the <xref:System.Web.UI.WebControls.DropDownList> controls. For more information about data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
+ While any class that supports the `DataSource` and `DataSourceID` properties and the `DataBind` method is a data-bound control, most ASP.NET data-bound controls extend the abstract <xref:System.Web.UI.WebControls.BaseDataBoundControl> and <xref:System.Web.UI.WebControls.DataBoundControl> classes. Notable exceptions include <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.Repeater>, and the <xref:System.Web.UI.WebControls.DropDownList> controls. For more information about data binding, see [ASP.NET Data Access Content Map](https://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
  ]]></format>
     </remarks>
@@ -218,7 +218,7 @@
 ## Remarks  
  When you set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property, the <xref:System.Web.UI.WebControls.BaseDataBoundControl.ValidateDataSource%2A> method is called. In addition, if the data-bound control has already been initialized, the <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataPropertyChanged%2A> method is called to set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding%2A> property to `true`.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -266,7 +266,7 @@
 ## Remarks  
  If the data-bound control has already been initialized (the <xref:System.Web.UI.WebControls.BaseDataBoundControl.ConfirmInitState%2A> method is called or <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnPagePreLoad%2A> event is handled) when you set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property, the <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataPropertyChanged%2A> method is called, which sets the <xref:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding%2A> property to `true`.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   

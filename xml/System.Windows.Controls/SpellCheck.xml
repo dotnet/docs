@@ -52,7 +52,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Custom dictionaries use lexicon files, which are text files that have a .lex extension. Each line of a lexicon file contains a single word that is accepted as a legitimate spelling. The first line of the file can specify a locale identifier (LCID) that the dictionary applies to. If the locale is not specified, the dictionary applies to all languages. For more information, see [Locale IDs](http://go.microsoft.com/fwlink/?LinkId=165561). The following example shows the first few lines of a lexicon file for the English language.  
+ Custom dictionaries use lexicon files, which are text files that have a .lex extension. Each line of a lexicon file contains a single word that is accepted as a legitimate spelling. The first line of the file can specify a locale identifier (LCID) that the dictionary applies to. If the locale is not specified, the dictionary applies to all languages. For more information, see [Locale IDs](https://go.microsoft.com/fwlink/?LinkId=165561). The following example shows the first few lines of a lexicon file for the English language.  
   
 ```  
 #LID 1033  
@@ -137,7 +137,7 @@ ListBox
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Custom dictionaries use lexicon files, which are simple text files that have a .lex extension. Each line of a lexicon file contains a single word that is accepted as a legitimate spelling. The first line of the file can specify a locale identifier (LCID) that the dictionary applies to. If the locale is not specified, the dictionary applies to all languages. For more information, see [Locale IDs](http://go.microsoft.com/fwlink/?LinkId=165561). The following example shows the first few lines of a lexicon file for the English language.  
+ Custom dictionaries use lexicon files, which are simple text files that have a .lex extension. Each line of a lexicon file contains a single word that is accepted as a legitimate spelling. The first line of the file can specify a locale identifier (LCID) that the dictionary applies to. If the locale is not specified, the dictionary applies to all languages. For more information, see [Locale IDs](https://go.microsoft.com/fwlink/?LinkId=165561). The following example shows the first few lines of a lexicon file for the English language.  
   
 ```  
 #LID 1033  

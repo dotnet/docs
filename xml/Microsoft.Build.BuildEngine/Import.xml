@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a single <see href="http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9">Import</see> element in an MSBuild project.</summary>
+    <summary>Represents a single <see href="https://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9">Import</see> element in an MSBuild project.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <c>Condition</c> attribute value of the [Import](http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) element.</summary>
+        <summary>Gets the <c>Condition</c> attribute value of the [Import](https://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) element.</summary>
         <value>The <c>Condition</c> attribute value of the <c>Import</c> element.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -66,7 +66,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the fully qualified path of the file specified in the <c>Name</c> attribute of the [Import](http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) element.</summary>
+        <summary>Gets the fully qualified path of the file specified in the <c>Name</c> attribute of the [Import](https://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) element.</summary>
         <value>The fullly qualified path of the file specified in the <c>Name</c> attribute of the <c>Import</c> element.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,7 +94,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the [Import](http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) element was imported into the project.</summary>
+        <summary>Gets a value indicating whether the [Import](https://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) element was imported into the project.</summary>
         <value>
           <see langword="true" /> if the <c>Import</c> element was imported into the project; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -118,7 +118,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <c>Project</c> attribute value of the [Import](http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) element.</summary>
+        <summary>Gets or sets the <c>Project</c> attribute value of the [Import](https://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) element.</summary>
         <value>The <c>Project</c> attribute value of the <c>Import</c> element.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -51,7 +51,7 @@
   
 -   An explanation of how the example works.  
   
- The source code for the first part of the code example, the user control that lets you change display modes, comes from another topic. For this code example to work, you need to obtain the .ascx file for the user control from the [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0) topic, and place the file in the same folder as the .aspx page in this code example.  
+ The source code for the first part of the code example, the user control that lets you change display modes, comes from another topic. For this code example to work, you need to obtain the .ascx file for the user control from the [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0) topic, and place the file in the same folder as the .aspx page in this code example.  
   
  The second part of the example is the Web page. It contains two <xref:System.Web.UI.WebControls.WebParts.WebPartZone> controls, both user controls, and the custom <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. Notice the `Register` directives at the top of the page to reference the user controls and namespace for the compiled controls.  
   
@@ -61,14 +61,14 @@
  The third part of the example is the user control for entering and displaying text. Notice that it uses a <xref:System.Web.UI.WebControls.MultiView> control to create multiple views of the user interface (UI). One view is displayed with the button, the other without. Notice that the in the overridden `OnPreRender` method, the code checks to see whether the page is currently in the custom display mode, and if so, it displays the first view of the user control, which includes the button. If the page is not in the custom display mode (for example, if the page is in browse or design mode), the button is hidden.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[Webparts_WebPartManager_CreateDisplayModes#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_CreateDisplayModes/CS/TextDisplaycs.ascx#2)]
  [!code-aspx-vb[Webparts_WebPartManager_CreateDisplayModes#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_CreateDisplayModes/VB/TextDisplayvb.ascx#2)]  
   
  The fourth part of the example is the source file for the two custom classes. Notice that the custom <xref:System.Web.UI.WebControls.WebParts.WebPartManager> class overrides the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDisplayModes%2A> method, calls the base method to add all the default display modes, and then adds the custom display mode. The custom display mode class, `InLineEditDisplayMode`, simply inherits from <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayMode>, sets the name of the display mode in the constructor, and overrides a number of the base properties to establish the characteristics of the custom display.  
   
- For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[Webparts_WebPartManager_CreateDisplayModes#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_CreateDisplayModes/CS/CustomDisplayMode.cs#3)]
  [!code-vb[Webparts_WebPartManager_CreateDisplayModes#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_CreateDisplayModes/VB/CustomDisplayMode.vb#3)]  
@@ -81,7 +81,7 @@
     <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.SupportedDisplayModes" />
     <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
     <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDisplayModes" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -129,7 +129,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDisplayModes" />
         <altmember cref="M:System.Collections.IList.Add(System.Object)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -164,7 +164,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -200,7 +200,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Array.CopyTo(System.Array,System.Int32)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -235,7 +235,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -271,7 +271,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -309,7 +309,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -353,7 +353,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Collections.IList.Item(System.Int32)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -388,7 +388,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.ComponentModel.ComponentCollection.Item(System.String)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnClear">

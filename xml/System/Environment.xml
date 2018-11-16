@@ -255,7 +255,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For the `exitCode` parameter, use a non-zero number to indicate an error. In your application, you can define your own error codes in an enumeration, and return the appropriate error code based on the scenario. For example, return a value of 1 to indicate that the required file is not present, and a value of 2 to indicate that the file is in the wrong format. For a list of exit codes used by the Windows operating system, see [System Error Codes](http://msdn.microsoft.com/library/ms681381.aspx) in the Windows documentation.  
+ For the `exitCode` parameter, use a non-zero number to indicate an error. In your application, you can define your own error codes in an enumeration, and return the appropriate error code based on the scenario. For example, return a value of 1 to indicate that the required file is not present, and a value of 2 to indicate that the file is in the wrong format. For a list of exit codes used by the Windows operating system, see [System Error Codes](https://msdn.microsoft.com/library/ms681381.aspx) in the Windows documentation.  
   
  Calling the <xref:System.Environment.Exit%2A> method differs from using your programming language's `return` statement in the following ways:  
   
@@ -322,7 +322,7 @@
 > [!WARNING]
 >  The <xref:System.Environment.ExitCode%2A> property is a signed 32-bit integer. To prevent the property from returning a negative exit code, you should not use values greater than or equal to 0x80000000.  
   
- Use a non-zero number to indicate an error. In your application, you can define your own error codes in an enumeration, and return the appropriate error code based on the scenario. For example, return a value of 1 to indicate that the required file is not present and a value of 2 to indicate that the file is in the wrong format. For a list of exit codes used by the Windows operating system, see [System Error Codes](http://msdn.microsoft.com/library/ms681381\(v=vs.85\)) in the Windows documentation.  
+ Use a non-zero number to indicate an error. In your application, you can define your own error codes in an enumeration, and return the appropriate error code based on the scenario. For example, return a value of 1 to indicate that the required file is not present and a value of 2 to indicate that the file is in the wrong format. For a list of exit codes used by the Windows operating system, see [System Error Codes](https://msdn.microsoft.com/library/ms681381\(v=vs.85\)) in the Windows documentation.  
   
    
   
@@ -504,7 +504,7 @@ goto :EOF
   
  Use the <xref:System.Environment.FailFast%2A> method instead of the <xref:System.Environment.Exit%2A> method to terminate your application if the state of your application is damaged beyond repair, and executing your application's `try`/`finally` blocks and finalizers will corrupt program resources.  
   
- Information is reported to Microsoft by using Windows Error Reporting. For more information, see [Windows Error Reporting: Getting Started](http://msdn.microsoft.com/library/windows/hardware/dn641144.aspx).  
+ Information is reported to Microsoft by using Windows Error Reporting. For more information, see [Windows Error Reporting: Getting Started](https://msdn.microsoft.com/library/windows/hardware/dn641144.aspx).  
   
    
   
@@ -567,7 +567,7 @@ goto :EOF
   
  The <xref:System.Environment.FailFast%2A> method writes the `message` string to the Windows Application event log, creates a dump of your application, and then terminates the current process.  
   
- Information is reported to Microsoft by using Windows Error Reporting. For more information, see [Windows Error Reporting: Getting Started](http://msdn.microsoft.com/library/windows/hardware/dn641144.aspx). Error reporting to Microsoft includes `message` and `exception` information, which provides details used to classify the error. Although `exception` is not handled because the process is terminated, the contextual information that raised the exception is still obtained.  
+ Information is reported to Microsoft by using Windows Error Reporting. For more information, see [Windows Error Reporting: Getting Started](https://msdn.microsoft.com/library/windows/hardware/dn641144.aspx). Error reporting to Microsoft includes `message` and `exception` information, which provides details used to classify the error. Although `exception` is not handled because the process is terminated, the contextual information that raised the exception is still obtained.  
   
  If `exception` is `null`, or if `exception` is not thrown, this method operates the same as the <xref:System.Environment.FailFast%28System.String%29> method overload.  
   
@@ -1072,7 +1072,7 @@ Per-machine and per-user environment variables are not supported. A `target` val
   
  The `folder` parameter designates the special folder to retrieve and must be one of the values in the <xref:System.Environment.SpecialFolder> enumeration; any other value throws an exception.  
   
- For more information about special folders, see the [CSIDL](http://go.microsoft.com/fwlink/?LinkId=116664) values topic.  
+ For more information about special folders, see the [CSIDL](https://go.microsoft.com/fwlink/?LinkId=116664) values topic.  
   
    
   
@@ -1140,7 +1140,7 @@ Per-machine and per-user environment variables are not supported. A `target` val
   
  The `folder` parameter designates the special folder to retrieve and must be one of the values in the <xref:System.Environment.SpecialFolder> enumeration; any other value throws an exception.  
   
- For more information about special folders, see the [CSIDL](http://go.microsoft.com/fwlink/?LinkId=116664) values topic.  
+ For more information about special folders, see the [CSIDL](https://go.microsoft.com/fwlink/?LinkId=116664) values topic.  
   
  ]]></format>
         </remarks>
@@ -1539,7 +1539,7 @@ The `Environment.OSVersion` property does not provide a reliable way to identify
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about processor groups and logical processors, see [Processor Groups](http://msdn.microsoft.com/library/windows/desktop/dd405503.aspx).  
+ For more information about processor groups and logical processors, see [Processor Groups](https://msdn.microsoft.com/library/windows/desktop/dd405503.aspx).  
   
    
   
@@ -2181,7 +2181,7 @@ If `target` is <xref:System.EnvironmentVariableTarget.User?displayProperty=nameW
 ## Remarks  
  You can use the <xref:System.Environment.UserName%2A> property to identify the user on the current thread, to the system and application for security or access purposes. It can also be used to customize a particular application for each user.  
  
- On Windows the <xref:System.Environment.UserName%2A> property wraps a call to the Windows [GetUserName](http://msdn.microsoft.com/library/windows/desktop/ms724432.aspx) function. The domain account credentials for a user are formatted as the user's domain name, the '\\' character, and user name. Use the <xref:System.Environment.UserDomainName%2A> property to obtain the user's domain name and the <xref:System.Environment.UserName%2A> property to obtain the user name.  
+ On Windows the <xref:System.Environment.UserName%2A> property wraps a call to the Windows [GetUserName](https://msdn.microsoft.com/library/windows/desktop/ms724432.aspx) function. The domain account credentials for a user are formatted as the user's domain name, the '\\' character, and user name. Use the <xref:System.Environment.UserDomainName%2A> property to obtain the user's domain name and the <xref:System.Environment.UserName%2A> property to obtain the user name.  
  
  On Unix platforms the <xref:System.Environment.UserName%2A> property wraps a call to the `getpwuid_r` function.
  

@@ -60,12 +60,12 @@
   
  The <xref:System.Web.UI.Page> object serves as the naming container for all server controls in a page, except those that implement the <xref:System.Web.UI.INamingContainer> interface or are child controls of controls that implement this interface.  
   
- The <xref:System.Web.UI.Page> class is a control that acts as the user interface for your Web application, and as such should be scrutinized to make sure best practices for writing secure code and securing applications are followed. For general information on these topics, see [Overview of Web Application Security Threats](http://msdn.microsoft.com/library/88d61678-f84e-4622-ae80-53128821855a), [NIB: Security Policy Best Practices](http://msdn.microsoft.com/library/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05), and [Key Security Concepts](~/docs/standard/security/key-security-concepts.md). For more specific information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Display Safe Error Messages](http://msdn.microsoft.com/library/6f70ac33-6e11-4e98-ab7d-bae9c0e7eefa), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Introduction to the Validation Controls](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/2e4hd649(v=vs.85)).  
+ The <xref:System.Web.UI.Page> class is a control that acts as the user interface for your Web application, and as such should be scrutinized to make sure best practices for writing secure code and securing applications are followed. For general information on these topics, see [Overview of Web Application Security Threats](https://msdn.microsoft.com/library/88d61678-f84e-4622-ae80-53128821855a), [NIB: Security Policy Best Practices](https://msdn.microsoft.com/library/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05), and [Key Security Concepts](~/docs/standard/security/key-security-concepts.md). For more specific information, see [Securing Standard Controls](https://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Display Safe Error Messages](https://msdn.microsoft.com/library/6f70ac33-6e11-4e98-ab7d-bae9c0e7eefa), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](https://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Introduction to the Validation Controls](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/2e4hd649(v=vs.85)).  
   
    
   
 ## Examples  
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=192425).  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](https://go.microsoft.com/fwlink/?LinkId=192425).  
   
  The following code example demonstrates how the <xref:System.Web.UI.Page> class is used in the code-behind page model. Note that the code-behind source file declares a partial class that inherits from a base page class. The base page class can be <xref:System.Web.UI.Page>, or it can be another class that derives from <xref:System.Web.UI.Page>. Furthermore, note that the partial class allows the code-behind file to use controls defined on the page without the need to define them as field members.  
   
@@ -75,7 +75,7 @@
  The following code example shows the .aspx file that corresponds to the preceding code-behind source file.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.Page_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page_Overview/cs/pageexample.aspx#1)]
  [!code-aspx-vb[System.Web.UI.Page_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page_Overview/vb/pageexample.aspx#1)]  
@@ -90,8 +90,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.Control" />
-    <related type="Article" href="http://msdn.microsoft.com/library/01e87387-33f4-45b5-91ec-6c540afe7ee0">ASP.NET Page Class Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417">ASP.NET Web Page Code Model</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/01e87387-33f4-45b5-91ec-6c540afe7ee0">ASP.NET Page Class Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417">ASP.NET Web Page Code Model</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -156,7 +156,7 @@
         <exception cref="T:System.Web.HttpException">A content template with the same name already exists.</exception>
         <altmember cref="T:System.Web.UI.MasterPage" />
         <altmember cref="T:System.Web.UI.WebControls.Content" />
-        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AddOnPreRenderCompleteAsync">
@@ -168,7 +168,7 @@
         <summary>Registers beginning and ending event handler delegates for an asynchronous page.</summary>
         <altmember cref="T:System.Web.UI.MasterPage" />
         <altmember cref="T:System.Web.UI.WebControls.Content" />
-        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddOnPreRenderCompleteAsync">
@@ -220,7 +220,7 @@
  The following code example uses an asynchronous request to display the HTML source code of the local Web server's default page in a <xref:System.Web.UI.WebControls.TextBox> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/CS/pageaddonprerendercompleteasynccs.aspx#1)]
  [!code-aspx-vb[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/VB/pageaddonprerendercompleteasyncvb.aspx#1)]  
@@ -235,7 +235,7 @@
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Web.UI.PageAsyncTask.BeginHandler" /> or <see cref="P:System.Web.UI.PageAsyncTask.EndHandler" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.MasterPage" />
         <altmember cref="T:System.Web.UI.WebControls.Content" />
-        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">ASP.NET Master Pages Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddOnPreRenderCompleteAsync">
@@ -284,7 +284,7 @@
  The following code example uses an asynchronous request to display the HTML source code of the local Web server's default page in a <xref:System.Web.UI.WebControls.TextBox> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/CS/pageaddonprerendercompleteasynccs.aspx#1)]
  [!code-aspx-vb[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/VB/pageaddonprerendercompleteasyncvb.aspx#1)]  
@@ -815,7 +815,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An application's <xref:System.Web.Caching.Cache> object allows you to store and retrieve arbitrary data on subsequent requests. The cache is not specifically associated with a page or user session. It is used primarily to enhance application performance. For more information, see [Caching Application Data](https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)). For more information on the difference between application caching and page output caching, see [ASP.NET Caching Overview](http://msdn.microsoft.com/library/5ec28012-4972-4dc3-b3e8-9d20401fe11d).  
+ An application's <xref:System.Web.Caching.Cache> object allows you to store and retrieve arbitrary data on subsequent requests. The cache is not specifically associated with a page or user session. It is used primarily to enhance application performance. For more information, see [Caching Application Data](https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)). For more information on the difference between application caching and page output caching, see [ASP.NET Caching Overview](https://msdn.microsoft.com/library/5ec28012-4972-4dc3-b3e8-9d20401fe11d).  
   
    
   
@@ -830,7 +830,7 @@
         <exception cref="T:System.Web.HttpException">An instance of <see cref="T:System.Web.Caching.Cache" /> is not created.</exception>
         <altmember cref="T:System.Web.Caching.Cache" />
         <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/5ec28012-4972-4dc3-b3e8-9d20401fe11d">Introduction to Caching in ASP.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5ec28012-4972-4dc3-b3e8-9d20401fe11d">Introduction to Caching in ASP.NET</related>
       </Docs>
     </Member>
     <Member MemberName="ClientQueryString">
@@ -953,7 +953,7 @@
   
  You can set the alias programmatically using this property, or you can set it declaratively using the `ClientTarget` attribute of the  directive.  
   
- You can define additional aliases in the `clientTarget` section of the application-level Web.config file. For more information, see [clientTarget Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/17a0fa6e-a065-49cc-b900-ef73eda6a922).  
+ You can define additional aliases in the `clientTarget` section of the application-level Web.config file. For more information, see [clientTarget Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/17a0fa6e-a065-49cc-b900-ef73eda6a922).  
   
    
   
@@ -975,8 +975,8 @@
         <altmember cref="T:System.Web.HttpBrowserCapabilities" />
         <altmember cref="P:System.Web.HttpRequest.Browser" />
         <altmember cref="P:System.Web.HttpRequest.UserAgent" />
-        <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Server Controls and Browser Capabilities</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/01505090-9114-41a7-93ca-068e2283ed3d">ASP.NET Configuration Files</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Server Controls and Browser Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/01505090-9114-41a7-93ca-068e2283ed3d">ASP.NET Configuration Files</related>
       </Docs>
     </Member>
     <Member MemberName="CodePage">
@@ -1297,7 +1297,7 @@
         <summary>Performs any initialization of the instance of the <see cref="T:System.Web.UI.Page" /> class that is required by RAD designers. This method is used only at design time.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.UserControl.DesignerInitialize" />
-        <related type="Article" href="http://msdn.microsoft.com/library/4881917b-628f-4689-b872-472e4f8a4e3a">Design-Time Architecture</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4881917b-628f-4689-b872-472e4f8a4e3a">Design-Time Architecture</related>
       </Docs>
     </Member>
     <Member MemberName="DeterminePostBackMode">
@@ -1436,7 +1436,7 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.Page.EnableEventValidation" /> property was set after the page was initialized.</exception>
         <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterForEventValidation(System.String)" />
         <altmember cref="T:System.Web.UI.SupportsEventValidationAttribute" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fa2aa14d-a461-492e-9a79-c990904613ef">Validation ASP.NET Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fa2aa14d-a461-492e-9a79-c990904613ef">Validation ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="EnableViewState">
@@ -1479,7 +1479,7 @@
  The following code example sets the <xref:System.Web.UI.Page.EnableViewState%2A> property to `false` when the page is loaded. This disables view state for the <xref:System.Web.UI.Page> object, meaning that neither view-state information for the page nor any controls contained by the page are saved.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[Page_EnableViewState_ReSubmit_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Page_EnableViewState_ReSubmit_1/CS/page_enableviewstate.cs#1)]
  [!code-vb[Page_EnableViewState_ReSubmit_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Page_EnableViewState_ReSubmit_1/VB/page_enableviewstate.vb#1)]  
@@ -1487,7 +1487,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Page.EnableViewStateMac" />
-        <related type="Article" href="http://msdn.microsoft.com/library/19d2a6ed-9a77-4c7c-a7f5-74dd4b6c3818">ASP.NET View State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/19d2a6ed-9a77-4c7c-a7f5-74dd4b6c3818">ASP.NET View State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableViewStateMac">
@@ -1596,7 +1596,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/428ce264-b57e-4f18-94e4-635800bdc091">Error Handling in ASP.NET Pages and Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/428ce264-b57e-4f18-94e4-635800bdc091">Error Handling in ASP.NET Pages and Applications</related>
       </Docs>
     </Member>
     <Member MemberName="ExecuteRegisteredAsyncTasks">
@@ -2199,7 +2199,7 @@
  The <xref:System.Web.UI.Page.Header%2A> property gets a reference to an <xref:System.Web.UI.HtmlControls.HtmlHead> object that you can use to set document header information for the page. The <xref:System.Web.UI.HtmlControls.HtmlHead> allows you to add information such as style sheets, style rules, a title, and metadata to the `head` element.  
   
 > [!NOTE]
->  Adding styles programmatically using the methods of the <xref:System.Web.UI.IStyleSheet> interface during asynchronous postbacks is not supported. When you add AJAX capabilities to a Web page, asynchronous postbacks update regions of the page without updating the whole page. For more information, see [Microsoft Ajax Overview](http://msdn.microsoft.com/library/be84d9b3-b7cd-47d7-8494-be4abfaad9cb).  
+>  Adding styles programmatically using the methods of the <xref:System.Web.UI.IStyleSheet> interface during asynchronous postbacks is not supported. When you add AJAX capabilities to a Web page, asynchronous postbacks update regions of the page without updating the whole page. For more information, see [Microsoft Ajax Overview](https://msdn.microsoft.com/library/be84d9b3-b7cd-47d7-8494-be4abfaad9cb).  
   
    
   
@@ -2329,7 +2329,7 @@
         <altmember cref="E:System.Web.UI.Page.LoadComplete" />
         <altmember cref="E:System.Web.UI.Page.PreRenderComplete" />
         <altmember cref="E:System.Web.UI.Page.SaveStateComplete" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="InitializeCulture">
@@ -2615,11 +2615,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Implementing Client Callbacks Without Postbacks](http://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185).  
+ For more information, see [Implementing Client Callbacks Without Postbacks](https://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/1d42ebea-8792-4279-acf8-5d497f3a41ea">How to: Implement Callbacks in ASP.NET Web Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1d42ebea-8792-4279-acf8-5d497f3a41ea">How to: Implement Callbacks in ASP.NET Web Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IsClientScriptBlockRegistered">
@@ -2759,7 +2759,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For an explanation of the difference between postbacks and callbacks, see [Implementing Client Callbacks Without Postbacks](http://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185).  
+ For an explanation of the difference between postbacks and callbacks, see [Implementing Client Callbacks Without Postbacks](https://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185).  
   
    
   
@@ -2947,7 +2947,7 @@
         <altmember cref="P:System.Web.UI.Page.Validators" />
         <altmember cref="T:System.Web.UI.ValidatorCollection" />
         <altmember cref="M:System.Web.UI.Page.Validate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fa2aa14d-a461-492e-9a79-c990904613ef">Validation ASP.NET Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fa2aa14d-a461-492e-9a79-c990904613ef">Validation ASP.NET Controls</related>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -3075,7 +3075,7 @@
         <altmember cref="E:System.Web.UI.Page.InitComplete" />
         <altmember cref="E:System.Web.UI.Page.PreRenderComplete" />
         <altmember cref="E:System.Web.UI.Page.SaveStateComplete" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="LoadPageStateFromPersistenceMedium">
@@ -3165,7 +3165,7 @@
   
  When the <xref:System.Web.UI.Page.MaintainScrollPositionOnPostBack%2A> property is set to `true`, the user is instead returned to the last position on the page.  
   
- You set the <xref:System.Web.UI.Page.MaintainScrollPositionOnPostBack%2A> property in the [@ Page](http://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive.  
+ You set the <xref:System.Web.UI.Page.MaintainScrollPositionOnPostBack%2A> property in the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive.  
   
  ]]></format>
         </remarks>
@@ -3257,7 +3257,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Page.MasterPageFile" />
-        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">Understanding Master Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">Understanding Master Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MasterPageFile">
@@ -3301,7 +3301,7 @@
   
  The page does not have a <see cref="T:System.Web.UI.WebControls.Content" /> control as the top level control.</exception>
         <altmember cref="P:System.Web.UI.Page.Master" />
-        <related type="Article" href="http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">Understanding Master Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b">Understanding Master Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MaxPageStateFieldLength">
@@ -3949,13 +3949,13 @@
   
  The event enables you to set values that are used later in the page life cycle. You can dynamically set a master page or a theme for the requested page, and create dynamic controls.  
   
- For more information about how the <xref:System.Web.UI.Page.PreInit> event fits into the ASP.NET life cycle, see [ASP.NET Page Life Cycle Overview](http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991).  
+ For more information about how the <xref:System.Web.UI.Page.PreInit> event fits into the ASP.NET life cycle, see [ASP.NET Page Life Cycle Overview](https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991).  
   
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Page.OnPreInit(System.EventArgs)" />
         <altmember cref="E:System.Web.UI.Page.PreLoad" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="PreLoad">
@@ -3995,7 +3995,7 @@
         <altmember cref="M:System.Web.UI.Page.OnPreLoad(System.EventArgs)" />
         <altmember cref="E:System.Web.UI.Page.PreInit" />
         <altmember cref="E:System.Web.UI.Page.PreRenderComplete" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="PreRenderComplete">
@@ -4039,7 +4039,7 @@
         <altmember cref="M:System.Web.UI.Page.OnPreRenderComplete(System.EventArgs)" />
         <altmember cref="E:System.Web.UI.Page.PreLoad" />
         <altmember cref="E:System.Web.UI.Page.PreInit" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousPage">
@@ -4198,8 +4198,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6304bff7-1b0e-4641-8acb-6d3b0badc4a3">ASP.NET Server Control Event Model</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6304bff7-1b0e-4641-8acb-6d3b0badc4a3">ASP.NET Server Control Event Model</related>
       </Docs>
     </Member>
     <Member MemberName="RegisterArrayDeclaration">
@@ -4418,7 +4418,7 @@
  The following code example uses the <xref:System.Web.UI.Page.RegisterHiddenField%2A> method to help create ECMAScript code that is passed to the requesting browser. The name of the hidden field is set to `myHiddenField` and its value is set to "Welcome to Microsoft!" The <xref:System.Web.UI.Page.RegisterStartupScript%2A> method calls the `myHiddenField` value when the user clicks a button on the page.  
   
 > [!IMPORTANT]
->  This example has a hidden field, which is a potential security threat. By default, you should validate the value of a hidden field as you would the value of a text box. ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a hidden field, which is a potential security threat. By default, you should validate the value of a hidden field as you would the value of a text box. ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[Page_RegisterHiddenField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Page_RegisterHiddenField/CS/page_registerhiddenfield.cs.aspx#1)]
  [!code-vb[Page_RegisterHiddenField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Page_RegisterHiddenField/VB/page_registerhiddenfield.vb.aspx#1)]  
@@ -4476,7 +4476,7 @@
  The following code example demonstrates using the <xref:System.Web.UI.Page.RegisterOnSubmitStatement%2A> to access a script that responds when a client-side Submit button is clicked. When this event occurs, the registered ECMAScript code is executed on the client.  
   
 > [!IMPORTANT]
->  This example has a hidden field, which is a potential security threat. By default, you should validate the value of a hidden field as you would the value of a text box. ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a hidden field, which is a potential security threat. By default, you should validate the value of a hidden field as you would the value of a text box. ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[Page_RegisterHiddenField#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Page_RegisterHiddenField/CS/page_registerhiddenfield.cs.aspx#2)]
  [!code-vb[Page_RegisterHiddenField#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Page_RegisterHiddenField/VB/page_registerhiddenfield.vb.aspx#2)]  
@@ -4570,7 +4570,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The control to be registered must implement the <xref:System.Web.UI.IPostBackDataHandler> interface or an <xref:System.Web.HttpException> is raised. When implemented by a control, the <xref:System.Web.UI.IPostBackDataHandler> interface enables handling of post back data and raising of any post back data changed events. For more information on the server control event model, see [ASP.NET Web Forms Server Control Event Model](http://msdn.microsoft.com/library/6304bff7-1b0e-4641-8acb-6d3b0badc4a3).  
+ The control to be registered must implement the <xref:System.Web.UI.IPostBackDataHandler> interface or an <xref:System.Web.HttpException> is raised. When implemented by a control, the <xref:System.Web.UI.IPostBackDataHandler> interface enables handling of post back data and raising of any post back data changed events. For more information on the server control event model, see [ASP.NET Web Forms Server Control Event Model](https://msdn.microsoft.com/library/6304bff7-1b0e-4641-8acb-6d3b0badc4a3).  
   
  Register controls with the page at or before the `Page_PreRender` event of the page life cycle.  
   
@@ -4580,7 +4580,7 @@
  The following code example uses the <xref:System.Web.UI.Page.RegisterRequiresPostBack%2A> method to require a text box control, `myTextBox`, to be posted back before any code associated with the text box can execute. <xref:System.Web.UI.WebControls.TextBox> controls implement the <xref:System.Web.UI.IPostBackDataHandler> interface.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[Page_RegisterRequiresPostBack#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Page_RegisterRequiresPostBack/CS/page_registerrequirespostback.cs.aspx#1)]
  [!code-vb[Page_RegisterRequiresPostBack#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Page_RegisterRequiresPostBack/VB/page_registerrequirespostback.vb.aspx#1)]  
@@ -4590,8 +4590,8 @@
         <exception cref="T:System.Web.HttpException">The control to register does not implement the <see cref="T:System.Web.UI.IPostBackDataHandler" /> interface.</exception>
         <altmember cref="P:System.Web.UI.Page.IsPostBack" />
         <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6304bff7-1b0e-4641-8acb-6d3b0badc4a3">ASP.NET Server Control Event Model</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6304bff7-1b0e-4641-8acb-6d3b0badc4a3">ASP.NET Server Control Event Model</related>
       </Docs>
     </Member>
     <Member MemberName="RegisterRequiresRaiseEvent">
@@ -5064,13 +5064,13 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
   
  If the route is defined by using the URL pattern `{locale}/{year}` for the domain `contoso.com`, and if the requested URL is `contoso.com/US/2010`, `year` will contain the value "2010" when this code runs.  
   
- For more information about ASP.NET routing, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ For more information about ASP.NET routing, see [ASP.NET Routing](https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.Routing.RequestContext.RouteData" />
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/dc88e6ba-470c-4b20-b644-35874cfd781d">How to: Access URL Parameters in a Routed Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/dc88e6ba-470c-4b20-b644-35874cfd781d">How to: Access URL Parameters in a Routed Page</related>
       </Docs>
     </Member>
     <Member MemberName="SavePageStateToPersistenceMedium">
@@ -5171,8 +5171,8 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <altmember cref="M:System.Web.UI.Page.OnSaveStateComplete(System.EventArgs)" />
         <altmember cref="E:System.Web.UI.Page.InitComplete" />
         <altmember cref="E:System.Web.UI.Page.LoadComplete" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991">Introduction to the ASP.NET Page Life Cycle</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Server">
@@ -5260,7 +5260,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property provides information about the current request's session. A `Session` object is maintained for each user that requests a page or document from an ASP.NET application. Variables stored in the `Session` object are not discarded when the user moves from page to page in the application; instead, these variables persist as long as the user is accessing pages in your application. For more information about session state, see [ASP.NET Session State Overview](http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
+ This property provides information about the current request's session. A `Session` object is maintained for each user that requests a page or document from an ASP.NET application. Variables stored in the `Session` object are not discarded when the user moves from page to page in the application; instead, these variables persist as long as the user is accessing pages in your application. For more information about session state, see [ASP.NET Session State Overview](https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
   
    
   
@@ -5322,7 +5322,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
  The following code example sets the focus to the second text box on a Web page.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[PageSetFocus#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PageSetFocus/CS/setfocusbyidcs.aspx#1)]
  [!code-aspx-vb[PageSetFocus#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageSetFocus/VB/setfocusbyidvb.aspx#1)]  
@@ -5375,7 +5375,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
  The following code example sets the focus to the second text box on a Web page.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[PageSetFocus#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PageSetFocus/CS/setfocusbycontrolcs.aspx#2)]
  [!code-aspx-vb[PageSetFocus#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageSetFocus/VB/setfocusbycontrolvb.aspx#2)]  
@@ -5529,13 +5529,13 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
 ## Remarks  
  This property does not refer directly to a cascading style sheet (CSS). The property contains the name of an ASP.NET theme, which can  include CSS files within it.  
   
- The <xref:System.Web.UI.Page.StyleSheetTheme%2A> property specifies the name of a theme that is applied to a page early in the page life cycle, whereas the <xref:System.Web.UI.Page.Theme%2A> property specifies the name of a theme that is applied to a page later in the page life cycle. This means that settings on the page take precedence over settings in the style sheet theme. For more information, see [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ The <xref:System.Web.UI.Page.StyleSheetTheme%2A> property specifies the name of a theme that is applied to a page early in the page life cycle, whereas the <xref:System.Web.UI.Page.Theme%2A> property specifies the name of a theme that is applied to a page later in the page life cycle. This means that settings on the page take precedence over settings in the style sheet theme. For more information, see [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  You typically set a value for this property in the page directive or by overriding the property. For information, see the following topics:  
   
 -   [How to: Apply ASP.NET Themes](https://msdn.microsoft.com/library/f9d72364-4d77-4b73-84be-7630dc63e0fe(v=vs.100))  
   
--   [How to: Apply ASP.NET Themes Programmatically](http://msdn.microsoft.com/library/02eed7c3-01e8-4e20-8358-df47dbd4f148))  
+-   [How to: Apply ASP.NET Themes Programmatically](https://msdn.microsoft.com/library/02eed7c3-01e8-4e20-8358-df47dbd4f148))  
   
  ]]></format>
         </remarks>
@@ -5543,7 +5543,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Web.UI.Page.StyleSheetTheme" /> is set to an invalid theme name. This exception is thrown when the <see cref="M:System.Web.UI.Page.FrameworkInitialize" /> method is called, not by the property setter.</exception>
         <altmember cref="P:System.Web.UI.Page.Theme" />
-        <related type="Article" href="http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes and Skins Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes and Skins Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Theme">
@@ -5583,7 +5583,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Page.Theme%2A> property sets the name of the theme used for the page. If you want the settings on the page to take precedence over the settings in the theme, use the <xref:System.Web.UI.Page.StyleSheetTheme%2A> property. For more information, see [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ The <xref:System.Web.UI.Page.Theme%2A> property sets the name of the theme used for the page. If you want the settings on the page to take precedence over the settings in the theme, use the <xref:System.Web.UI.Page.StyleSheetTheme%2A> property. For more information, see [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  The <xref:System.Web.UI.Page.Theme%2A> property must be set prior to the <xref:System.Web.UI.Page.PreInit> event; setting the <xref:System.Web.UI.Page.Theme%2A> property after the <xref:System.Web.UI.Page.PreInit> event will cause an <xref:System.InvalidOperationException> exception.  
   
@@ -5603,7 +5603,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Web.UI.Page.Theme" /> is set to an invalid theme name.</exception>
         <altmember cref="P:System.Web.UI.Page.StyleSheetTheme" />
-        <related type="Article" href="http://msdn.microsoft.com/library/02eed7c3-01e8-4e20-8358-df47dbd4f148">Applying ASP.NET Themes Programmatically</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/02eed7c3-01e8-4e20-8358-df47dbd4f148">Applying ASP.NET Themes Programmatically</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -5691,7 +5691,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
 ## Remarks  
  Tracing tracks and presents the execution details about a Web request. For trace data to be visible in a rendered page, you must enable tracing at the page or application level.  
   
- Tracing on a page is disabled by default. To enable tracing for a page, use the  directive `<% @ Page trace="true" %>`. To enable tracing for an entire application, you must enable it in the application's configuration file, Web.config, which resides in the root directory of the application. For more information, see [ASP.NET Tracing Overview](http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416).  
+ Tracing on a page is disabled by default. To enable tracing for a page, use the  directive `<% @ Page trace="true" %>`. To enable tracing for an entire application, you must enable it in the application's configuration file, Web.config, which resides in the root directory of the application. For more information, see [ASP.NET Tracing Overview](https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416).  
   
    
   
@@ -5704,7 +5704,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.TraceContext" />
-        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TraceEnabled">
@@ -5756,7 +5756,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <altmember cref="P:System.Web.UI.Page.Trace" />
         <altmember cref="P:System.Web.UI.Page.TraceModeValue" />
         <altmember cref="T:System.Web.TraceContext" />
-        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TraceModeValue">
@@ -5807,7 +5807,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <altmember cref="P:System.Web.UI.Page.Trace" />
         <altmember cref="P:System.Web.UI.Page.TraceEnabled" />
         <altmember cref="T:System.Web.TraceContext" />
-        <related type="Article" href="http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416">ASP.NET Tracing Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TransactionMode">
@@ -6109,7 +6109,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Web.UI.Control" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Web.UI.Page.RegisterRequiresControlState(System.Web.UI.Control)" />
         <altmember cref="M:System.Web.UI.Page.RequiresControlState(System.Web.UI.Control)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/9e98c7de-a888-48df-b14e-02ec8bef7681">Control State vs. View State Sample</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9e98c7de-a888-48df-b14e-02ec8bef7681">Control State vs. View State Sample</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="UpdateModel&lt;TModel&gt;">
@@ -6315,7 +6315,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
  The following code example calls the <xref:System.Web.UI.Page.Validate%2A> method on a page in a scenario with several different validation groups defined.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.Page.Validate2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.Validate2/cs/pagevalidatecs.aspx#1)]
  [!code-aspx-vb[System.Web.UI.Page.Validate2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.Validate2/vb/pagevalidatevb.aspx#1)]  
@@ -6368,7 +6368,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
  The following code example calls the <xref:System.Web.UI.Page.Validate%2A> method on a page in a scenario with several different validation groups defined.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.Page.Validate2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page.Validate2/cs/pagevalidatecs.aspx#1)]
  [!code-aspx-vb[System.Web.UI.Page.Validate2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page.Validate2/vb/pagevalidatevb.aspx#1)]  
@@ -6459,7 +6459,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
   
  Calling the <xref:System.Web.UI.Page.Validate%2A?displayProperty=nameWithType> method causes validation logic to be executed for each validation server control in the current validation group. If any of these controls do not pass, the <xref:System.Web.UI.Page.IsValid%2A?displayProperty=nameWithType> property returns `false`.  
   
- For more information on validation controls, see [ASP.NET Validation Controls](http://msdn.microsoft.com/library/fa2aa14d-a461-492e-9a79-c990904613ef).  
+ For more information on validation controls, see [ASP.NET Validation Controls](https://msdn.microsoft.com/library/fa2aa14d-a461-492e-9a79-c990904613ef).  
   
  ]]></format>
         </remarks>
@@ -6633,7 +6633,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting the <xref:System.Web.UI.Page.ViewStateUserKey%2A> property can help you prevent attacks on your application from malicious users. It does this by allowing you to assign an identifier to the view-state variable for individual users so that they cannot use the variable to generate an attack. For more information about Web attacks and about what you can do to help prevent them, see [Take Advantage of ASP.NET Built-in Features to Fend Off Web Attacks](http://go.microsoft.com/fwlink/?LinkId=163557).  
+ Setting the <xref:System.Web.UI.Page.ViewStateUserKey%2A> property can help you prevent attacks on your application from malicious users. It does this by allowing you to assign an identifier to the view-state variable for individual users so that they cannot use the variable to generate an attack. For more information about Web attacks and about what you can do to help prevent them, see [Take Advantage of ASP.NET Built-in Features to Fend Off Web Attacks](https://go.microsoft.com/fwlink/?LinkId=163557).  
   
  You can set this property to any string value, such as the user's authenticated name or the <xref:System.Web.SessionState.HttpSessionState.SessionID%2A> value.  
   
@@ -6643,7 +6643,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.UI.Page.ViewStateUserKey" /> property was accessed too late during page processing.</exception>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=163557">Take Advantage of ASP.NET Built-in Features to Fend Off Web Attacks</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=163557">Take Advantage of ASP.NET Built-in Features to Fend Off Web Attacks</related>
       </Docs>
     </Member>
     <Member MemberName="Visible">

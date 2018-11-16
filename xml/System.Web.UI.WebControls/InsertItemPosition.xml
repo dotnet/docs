@@ -22,7 +22,7 @@
  The following example shows a <xref:System.Web.UI.WebControls.ListView> control that is configured to display the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template as the last item in the control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#2)]
  [!code-aspx-vb[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#2)]  
@@ -32,7 +32,7 @@
     <altmember cref="T:System.Web.UI.WebControls.ListView" />
     <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" />
     <altmember cref="P:System.Web.UI.WebControls.ListView.InsertItemPosition" />
-    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
   </Docs>
   <Members>
     <Member MemberName="FirstItem">

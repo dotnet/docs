@@ -37,7 +37,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The X.509 structure originated in the International Organization for Standardization (ISO) working groups. This structure can be used to represent various types of information including identity, entitlement, and holder attributes (permissions, age, sex, location, affiliation, and so forth). Although the ISO specifications are most informative on the structure itself, the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> class is designed to model the usage scenarios defined in specifications issued by the Internet Engineering Task Force (IETF) Public Key Infrastructure, X.509 (PKIX) working group. The most informative of these specifications is RFC 3280, "[Certificate and Certificate Revocation List (CRL) Profile](http://go.microsoft.com/fwlink/?LinkId=45286)."  
+ The X.509 structure originated in the International Organization for Standardization (ISO) working groups. This structure can be used to represent various types of information including identity, entitlement, and holder attributes (permissions, age, sex, location, affiliation, and so forth). Although the ISO specifications are most informative on the structure itself, the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> class is designed to model the usage scenarios defined in specifications issued by the Internet Engineering Task Force (IETF) Public Key Infrastructure, X.509 (PKIX) working group. The most informative of these specifications is RFC 3280, "[Certificate and Certificate Revocation List (CRL) Profile](https://go.microsoft.com/fwlink/?LinkId=45286)."  
   
 > [!IMPORTANT]
 >  Starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)], this type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
@@ -943,7 +943,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The extensions defined in the X.509 v3 certificate format allow additional data to be included in the certificate. A number of extensions are defined by ISO in the X.509 v3 definition as well as by PKIX in RFC 3280, "[Certificate and Certificate Revocation List (CRL) Profile](http://go.microsoft.com/fwlink/?LinkId=45286)." Common extensions include information regarding key usage (<xref:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension>), key identifiers (<xref:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension>), certificate policies, revocation information (CRL Distribution Point extension), and other uses.  
+ The extensions defined in the X.509 v3 certificate format allow additional data to be included in the certificate. A number of extensions are defined by ISO in the X.509 v3 definition as well as by PKIX in RFC 3280, "[Certificate and Certificate Revocation List (CRL) Profile](https://go.microsoft.com/fwlink/?LinkId=45286)." Common extensions include information regarding key usage (<xref:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension>), key identifiers (<xref:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension>), certificate policies, revocation information (CRL Distribution Point extension), and other uses.  
   
    
   
@@ -2292,7 +2292,7 @@
 ## Remarks  
  This method builds a simple chain for the certificate and applies the base policy to that chain. If you need more information about a failure, validate the certificate directly using the <xref:System.Security.Cryptography.X509Certificates.X509Chain> object.  
   
- Note that the default chaining engine can be overridden using the <xref:System.Security.Cryptography.CryptoConfig> class. On Microsoft Windows Server 2003, the default engine conforms to the specification described in RFC3280, "[Certificate and Certificate Revocation List (CRL) Profile](http://go.microsoft.com/fwlink/?LinkId=45286)."  
+ Note that the default chaining engine can be overridden using the <xref:System.Security.Cryptography.CryptoConfig> class. On Microsoft Windows Server 2003, the default engine conforms to the specification described in RFC3280, "[Certificate and Certificate Revocation List (CRL) Profile](https://go.microsoft.com/fwlink/?LinkId=45286)."  
   
    
   

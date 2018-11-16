@@ -70,7 +70,7 @@
  The following code example demonstrates how to add several phone numbers to a <xref:System.Web.UI.MobileControls.Panel> on your page. One <xref:System.Web.UI.MobileControls.PhoneCall> control has an <xref:System.Web.UI.MobileControls.PhoneCall.AlternateUrl%2A> and the phone number appears as a link on devices that cannot make a phone call.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](https://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
   
  [!code-aspx-csharp[MobilePhoneCallSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobilePhoneCallSample/cs/Default.aspx#1)]  
   

@@ -28,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This object is similar to the `tag` element defined by the World Wide Web Consortium (W3C) [Speech Recognition Grammar Specification (SRGS) Version 1.0.](http://go.microsoft.com/fwlink/?LinkId=201761). However, the <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Value%2A> property of this object cannot be script. The contents of <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Value%2A> can be of the type <xref:System.Boolean>, <xref:System.Double>, <xref:System.Int32>, or <xref:System.String>. String values must be enclosed in double quotes.  
+ This object is similar to the `tag` element defined by the World Wide Web Consortium (W3C) [Speech Recognition Grammar Specification (SRGS) Version 1.0.](https://go.microsoft.com/fwlink/?LinkId=201761). However, the <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Value%2A> property of this object cannot be script. The contents of <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Value%2A> can be of the type <xref:System.Boolean>, <xref:System.Double>, <xref:System.Int32>, or <xref:System.String>. String values must be enclosed in double quotes.  
   
  To add semantics as script, use <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag>.  
   

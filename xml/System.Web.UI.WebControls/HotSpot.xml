@@ -44,7 +44,7 @@
     <altmember cref="T:System.Web.UI.WebControls.RectangleHotSpot" />
     <altmember cref="T:System.Web.UI.WebControls.PolygonHotSpot" />
     <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
-    <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,7 +75,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="AccessKey">
@@ -116,13 +116,13 @@
 > [!NOTE]
 >  This property is supported only in Internet Explorer 4.0 and later.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified access key is neither <see langword="null" />, an empty string (""), nor a single character string.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Web Server Controls and Browser Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Web Server Controls and Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName="AlternateText">
@@ -168,13 +168,13 @@
   
  When the <xref:System.Web.UI.WebControls.ImageMap> control renders to a browser that supports the ToolTips feature, the value of the <xref:System.Web.UI.WebControls.HotSpot.AlternateText%2A> property is displayed as a ToolTip for the <xref:System.Web.UI.WebControls.HotSpot>.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
         <altmember cref="P:System.Web.UI.WebControls.Image.ImageUrl" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetCoordinates">
@@ -208,7 +208,7 @@
         <block subset="none" type="overrides">
           <para>When you inherit from <see cref="T:System.Web.UI.WebControls.HotSpot" />, you must override the <see cref="M:System.Web.UI.WebControls.HotSpot.GetCoordinates" /> method.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="HotSpotMode">
@@ -289,7 +289,7 @@
         <altmember cref="T:System.Web.UI.WebControls.HotSpotMode" />
         <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
         <altmember cref="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -329,7 +329,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.HotSpot.TrackViewState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
         <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
       </Docs>
     </Member>
@@ -371,7 +371,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.HotSpot.SaveViewState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
         <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
       </Docs>
     </Member>
@@ -407,7 +407,7 @@
         <block subset="none" type="overrides">
           <para>When you inherit from <see cref="T:System.Web.UI.WebControls.HotSpot" />, you must override the <see cref="P:System.Web.UI.WebControls.HotSpot.MarkupName" /> property.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="NavigateUrl">
@@ -458,7 +458,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="PostBackValue">
@@ -502,7 +502,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -534,7 +534,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.HotSpot.SaveViewState%2A> member is used primarily by control developers when deriving a custom implementation from the <xref:System.Web.UI.WebControls.HotSpot> class.  
   
- View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control's life cycle. For more information, see [ASP.NET Application Life Cycle Overview for IIS 5.0 and 6.0](http://msdn.microsoft.com/library/de0d8a1c-b1bc-48e1-b246-26e32289a82f).  
+ View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control's life cycle. For more information, see [ASP.NET Application Life Cycle Overview for IIS 5.0 and 6.0](https://msdn.microsoft.com/library/de0d8a1c-b1bc-48e1-b246-26e32289a82f).  
   
  When view state is saved, this string object is returned to the client as a variable that is stored in a hidden HTML input element. When you author custom server controls, you can improve efficiency by overriding this method and modifying your server control's `ViewState` property. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
@@ -543,7 +543,7 @@
         <altmember cref="M:System.Web.UI.WebControls.HotSpot.LoadViewState(System.Object)" />
         <altmember cref="P:System.Web.UI.WebControls.HotSpot.ViewState" />
         <altmember cref="T:System.Web.UI.StateBag" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
         <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
       </Docs>
     </Member>
@@ -590,7 +590,7 @@
         </block>
         <altmember cref="T:System.Web.UI.IStateManager" />
         <altmember cref="P:System.Web.UI.WebControls.HotSpot.IsTrackingViewState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -637,7 +637,7 @@
         </block>
         <altmember cref="T:System.Web.UI.IStateManager" />
         <altmember cref="M:System.Web.UI.WebControls.HotSpot.SaveViewState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -681,7 +681,7 @@
           <para>To define a custom implementation for tracking view state for a <see cref="T:System.Web.UI.WebControls.HotSpot" /> object, override the <see cref="M:System.Web.UI.WebControls.HotSpot.SaveViewState" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.HotSpot.SaveViewState" /> method to save view-state changes for the object.</para>
         </block>
         <altmember cref="T:System.Web.UI.IStateManager" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -726,7 +726,7 @@
         <altmember cref="T:System.Web.UI.IStateManager" />
         <altmember cref="T:System.Web.UI.StateBag" />
         <altmember cref="P:System.Web.UI.Control.ViewState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="TabIndex">
@@ -773,8 +773,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified tab index is not between -32768 and 32767.</exception>
         <altmember cref="P:System.Web.UI.WebControls.HotSpot.ViewState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Web Server Controls and Browser Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Web Server Controls and Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -814,10 +814,10 @@
  Use the <xref:System.Web.UI.WebControls.HotSpot.Target%2A> property to specify the frame or window that displays the Web page linked to when a <xref:System.Web.UI.WebControls.HotSpot> object that navigates to a URL is clicked. This property has an effect only when the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property is set to `HotSpotMode.Navigate`, to navigate to a URL. If this property is not set, the browser or window with focus refreshes when the <xref:System.Web.UI.WebControls.HotSpot> object is clicked.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.HotSpot.Target%2A> property renders as a `target` attribute. The `target` attribute on ANCHOR elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.HotSpot.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.HotSpot> must be XHTML 1.1 compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
+>  The <xref:System.Web.UI.WebControls.HotSpot.Target%2A> property renders as a `target` attribute. The `target` attribute on ANCHOR elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.HotSpot.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.HotSpot> must be XHTML 1.1 compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
   
 > [!CAUTION]
->  We strongly recommend that, when creating accessible Web pages, you avoid using the <xref:System.Web.UI.WebControls.HotSpot.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/library/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
+>  We strongly recommend that, when creating accessible Web pages, you avoid using the <xref:System.Web.UI.WebControls.HotSpot.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](https://msdn.microsoft.com/library/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
   
  The <xref:System.Web.UI.WebControls.HotSpot.Target%2A> value must begin with a letter in the range of A to Z (case-insensitive), except for the following special values, which begin with an underscore.  
   
@@ -835,8 +835,8 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Web Server Controls and Browser Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Web Server Controls and Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -904,7 +904,7 @@
         <altmember cref="P:System.Web.UI.WebControls.HotSpot.IsTrackingViewState" />
         <altmember cref="T:System.Web.UI.StateBag" />
         <altmember cref="P:System.Web.UI.Control.ViewState" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="ViewState">
@@ -945,14 +945,14 @@
   
  A server control's view state is the accumulation of all its property values. In order to preserve these values across HTTP requests, ASP.NET server controls use the <xref:System.Web.UI.WebControls.HotSpot.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class, to store the property values. The values are then passed as a variable to a hidden HTML element when subsequent requests are processed. For more information about saving server control view state, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
- View state is enabled for all server controls by default, but there are circumstances in which you will want to disable it. For more information, see [ASP.NET Performance Overview](http://msdn.microsoft.com/library/f882bf1b-a009-4312-ac06-74370ffabc0b).  
+ View state is enabled for all server controls by default, but there are circumstances in which you will want to disable it. For more information, see [ASP.NET Performance Overview](https://msdn.microsoft.com/library/f882bf1b-a009-4312-ac06-74370ffabc0b).  
   
  For information about dictionaries and how to use them, see [Collections and Data Structures](~/docs/standard/collections/index.md).  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.StateBag" />
-        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
   </Members>

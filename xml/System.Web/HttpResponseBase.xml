@@ -2112,7 +2112,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the <see langword="Status" /> value that is returned to the client.</summary>
-        <value>The status of the HTTP output. For information about valid status codes, see [HTTP Status Codes](http://go.microsoft.com/fwlink/?LinkId=73157) on the MSDN Web site.</value>
+        <value>The status of the HTTP output. For information about valid status codes, see [HTTP Status Codes](https://go.microsoft.com/fwlink/?LinkId=73157) on the MSDN Web site.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
@@ -2138,7 +2138,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the HTTP status code of the output that is returned to the client.</summary>
-        <value>The status code of the HTTP output that is returned to the client. For information about valid status codes, see [HTTP Status Codes](http://go.microsoft.com/fwlink/?LinkId=73157) on the MSDN Web site.</value>
+        <value>The status code of the HTTP output that is returned to the client. For information about valid status codes, see [HTTP Status Codes](https://go.microsoft.com/fwlink/?LinkId=73157) on the MSDN Web site.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
@@ -2164,7 +2164,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the HTTP status message of the output that is returned to the client.</summary>
-        <value>The status message of the HTTP output that is returned to the client. For information about valid status codes, see [HTTP Status Codes](http://go.microsoft.com/fwlink/?LinkId=73157) on the MSDN Web site.</value>
+        <value>The status message of the HTTP output that is returned to the client. For information about valid status codes, see [HTTP Status Codes](https://go.microsoft.com/fwlink/?LinkId=73157) on the MSDN Web site.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
@@ -2274,7 +2274,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, ASP.NET sends a `Cache-Control: private` response header unless an explicit cache policy has been specified for this response. This property allows suppressing this default response header on a per-request basis. The header can still be suppressed for the entire application by setting <xref:System.Web.Configuration.HttpRuntimeSection.SendCacheControlHeader%2A> in [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) or [outputCache Element for caching (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/47cd2b47-316f-4dfd-bbf8-539be3066fee).  
+ By default, ASP.NET sends a `Cache-Control: private` response header unless an explicit cache policy has been specified for this response. This property allows suppressing this default response header on a per-request basis. The header can still be suppressed for the entire application by setting <xref:System.Web.Configuration.HttpRuntimeSection.SendCacheControlHeader%2A> in [httpRuntime Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) or [outputCache Element for caching (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/47cd2b47-316f-4dfd-bbf8-539be3066fee).  
   
  Use caution when suppressing the default `Cache-Control: private` header, as proxies and other intermediaries may treat responses without this header as cacheable by default. This treatment can lead to the inadvertent caching of sensitive information. See [RFC 2616, Sec. 13.4](http://tools.ietf.org/html/rfc2616) for more information.  
   

@@ -44,7 +44,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -91,7 +91,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -122,7 +122,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.Route" /> class, by using the specified URL pattern, default parameter values, and handler class.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.Routing.Route.Defaults" />
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -156,7 +156,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.Routing.Route.Constraints" />
         <altmember cref="P:System.Web.Routing.Route.Defaults" />
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -193,7 +193,7 @@
         <altmember cref="P:System.Web.Routing.Route.Constraints" />
         <altmember cref="P:System.Web.Routing.Route.DataTokens" />
         <altmember cref="P:System.Web.Routing.Route.Defaults" />
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="Constraints">
@@ -253,7 +253,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="DataTokens">
@@ -302,7 +302,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="Defaults">
@@ -358,7 +358,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetRouteData">
@@ -388,7 +388,7 @@
         <summary>Returns information about the requested route.</summary>
         <returns>An object that contains the values from the route definition.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualPath">
@@ -419,7 +419,7 @@
         <summary>Returns information about the URL that is associated with the route.</summary>
         <returns>An object that contains information about the URL that is associated with the route.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="ProcessConstraint">
@@ -459,7 +459,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="constraint" /> is not a string that contains a regular expression.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RouteHandler">
@@ -493,7 +493,7 @@
         <summary>Gets or sets the object that processes requests for the route.</summary>
         <value>The object that processes the request.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -544,7 +544,7 @@
   
 -   The catch-all parameter is not last.</exception>
         <exception cref="T:System.Exception">URL segments are not separated by a delimiter or a literal constant.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
   </Members>

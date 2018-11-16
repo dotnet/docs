@@ -699,14 +699,14 @@
       </Parameters>
       <Docs>
         <param name="eventSourceType">The type of the event source.</param>
-        <param name="assemblyPathToIncludeInManifest">The path to the assembly file (.dll) to include in the [provider](http://msdn.microsoft.com/library/windows/desktop/aa384022\(v=vs.85\).aspx) element of the manifest.</param>
+        <param name="assemblyPathToIncludeInManifest">The path to the assembly file (.dll) to include in the [provider](https://msdn.microsoft.com/library/windows/desktop/aa384022\(v=vs.85\).aspx) element of the manifest.</param>
         <summary>Returns a string of the XML manifest that is associated with the current event source.</summary>
         <returns>The XML data string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The information about the XML schema for the event manifest, see [Event Manifest Schema](http://go.microsoft.com/fwlink/?LinkId=228077) in the MSDN Library.  
+ The information about the XML schema for the event manifest, see [Event Manifest Schema](https://go.microsoft.com/fwlink/?LinkId=228077) in the MSDN Library.  
   
  ]]></format>
         </remarks>
@@ -746,7 +746,7 @@
       </Parameters>
       <Docs>
         <param name="eventSourceType">The type of the event source.</param>
-        <param name="assemblyPathToIncludeInManifest">The path to the assembly file (.dll) file to include in the [provider](http://msdn.microsoft.com/library/windows/desktop/aa384022\(v=vs.85\).aspx) element of the manifest.</param>
+        <param name="assemblyPathToIncludeInManifest">The path to the assembly file (.dll) file to include in the [provider](https://msdn.microsoft.com/library/windows/desktop/aa384022\(v=vs.85\).aspx) element of the manifest.</param>
         <param name="flags">A bitwise combination of the enumeration values that specify how the manifest is generated.</param>
         <summary>Returns a string of the XML manifest that is associated with the current event source.</summary>
         <returns>The XML data string or <see langword="null" />.</returns>

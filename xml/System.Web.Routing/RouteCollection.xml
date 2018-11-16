@@ -43,11 +43,11 @@
   
  You use the <xref:System.Web.Routing.RouteCollection.GetReadLock%2A> method and the <xref:System.Web.Routing.RouteCollection.GetWriteLock%2A> method to make sure that you interact with the collection without conflicts from other processes.  
   
- For more information about how to add a route to a route collection, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ For more information about how to add a route to a route collection, see [ASP.NET Routing](https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -57,7 +57,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteCollection" /> class.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -79,7 +79,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteCollection" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -104,7 +104,7 @@
         <param name="virtualPathProvider">A provider for retrieving resources from a virtual file system.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteCollection" /> class by using the specified virtual path provider.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -138,7 +138,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Routing.RouteCollection.Add%2A> method enables you to define a name for a route when you add it to the route collection. By defining a name for the route, you can specify a particular route to use when you use routing to construct a URL. Specifying a particular route is important when more than one route matches the values that you pass to the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> method. If you do not specify a named route, ASP.NET routing will use the first route in the collection that matches the values. For more information, see [How to: Construct URLs from Routes](http://msdn.microsoft.com/library/1ffd4085-71f6-4822-be8f-f682ca638650).  
+ The <xref:System.Web.Routing.RouteCollection.Add%2A> method enables you to define a name for a route when you add it to the route collection. By defining a name for the route, you can specify a particular route to use when you use routing to construct a URL. Specifying a particular route is important when more than one route matches the values that you pass to the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> method. If you do not specify a named route, ASP.NET routing will use the first route in the collection that matches the values. For more information, see [How to: Construct URLs from Routes](https://msdn.microsoft.com/library/1ffd4085-71f6-4822-be8f-f682ca638650).  
   
  A name can be used only one time in the <xref:System.Web.Routing.RouteCollection> object.  
   
@@ -160,7 +160,7 @@
           <paramref name="item" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is already used in the collection.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="AppendTrailingSlash">
@@ -218,7 +218,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetReadLock">
@@ -269,7 +269,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetRouteData">
@@ -302,7 +302,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.HttpContextBase.Request" /> property of the object in the <paramref name="context" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetVirtualPath">
@@ -312,7 +312,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Returns information about the URL path that is associated with the route.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetVirtualPath">
@@ -343,7 +343,7 @@
         <summary>Returns information about the URL path that is associated with the route, given the specified context and parameter values.</summary>
         <returns>An object that contains information about the URL path that is associated with the route.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualPath">
@@ -377,7 +377,7 @@
         <returns>An object that contains information about the URL path that is associated with the route.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">No route could be found that has the name specified in the <paramref name="name" /> parameter.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetWriteLock">
@@ -420,7 +420,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Ignore">
@@ -440,7 +440,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Ignore">
@@ -490,7 +490,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="Ignore">
@@ -545,7 +545,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="url" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
@@ -589,7 +589,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
           <paramref name="item" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="item" /> is already in the collection.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -626,7 +626,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="LowercaseUrls">
@@ -677,14 +677,14 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
    
   
 ## Examples  
- The following example shows how to define routes for a Web Forms application by using this method. The example shows a method named `RegisterRoutes` that is called from `Application_Start` in the Global.asax file. The method uses each overload of <xref:System.Web.Routing.RouteCollection.MapPageRoute%2A> to add a route to the application. For more information about how to define routes for Web Forms applications, see [How to: Define Routes for Web Forms Applications](http://msdn.microsoft.com/library/200fe812-d0a6-4531-b9b4-cfc4ee83a678).  
+ The following example shows how to define routes for a Web Forms application by using this method. The example shows a method named `RegisterRoutes` that is called from `Application_Start` in the Global.asax file. The method uses each overload of <xref:System.Web.Routing.RouteCollection.MapPageRoute%2A> to add a route to the application. For more information about how to define routes for Web Forms applications, see [How to: Define Routes for Web Forms Applications](https://msdn.microsoft.com/library/200fe812-d0a6-4531-b9b4-cfc4ee83a678).  
   
  [!code-csharp[System.Web.Routing.RouteCollection.MapPageRoute#122](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/cs/global.asax#122)]
  [!code-vb[System.Web.Routing.RouteCollection.MapPageRoute#122](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/vb/global.asax#122)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="MapPageRoute">
@@ -737,7 +737,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="MapPageRoute">
@@ -792,7 +792,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="MapPageRoute">
@@ -849,7 +849,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="MapPageRoute">
@@ -908,7 +908,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="MapPageRoute">
@@ -965,7 +965,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="routeUrl" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveItem">
@@ -1001,7 +1001,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RouteExistingFiles">
@@ -1039,11 +1039,11 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this value can be changed dynamically, any change made after a service has been activated will be ignored when using ASP.NET routing integration. For more information, see [ASP.NET Routing Integration](http://go.microsoft.com/fwlink/?LinkId=195235).  
+ Although this value can be changed dynamically, any change made after a service has been activated will be ignored when using ASP.NET routing integration. For more information, see [ASP.NET Routing Integration](https://go.microsoft.com/fwlink/?LinkId=195235).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -1087,7 +1087,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
           <paramref name="item" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="item" /> is already in the collection.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
   </Members>

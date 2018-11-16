@@ -34,7 +34,7 @@
   
  Because all Windows applications share the system Clipboard, the contents may change when you switch to another application.  
   
- A class must be serializable for it to be put on the Clipboard. See [Serialization](http://msdn.microsoft.com/library/f7570c09-7db5-44f2-983a-e8859caeb0d5) for more information.  
+ A class must be serializable for it to be put on the Clipboard. See [Serialization](https://msdn.microsoft.com/library/f7570c09-7db5-44f2-983a-e8859caeb0d5) for more information.  
   
  When accessing the Clipboard remotely, a <xref:System.Threading.ThreadStateException> is thrown unless the accessing thread operates in STA (single-threaded apartment) mode. To resolve this issue, set the `ThreadApartmentState` to `STA`. For more information, see <xref:System.STAThreadAttribute>.  
   

@@ -44,8 +44,8 @@
     <altmember cref="T:System.Web.Configuration.OutputCacheProfileCollection" />
     <altmember cref="T:System.Web.Caching.CacheDependency" />
     <related type="Article" href="https://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d(v=vs.100)">Caching Application Data</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/51149563-a347-4b2b-bdc2-57a317e12487">How to: Set a Page's Cacheability Declaratively</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/659d419e-9418-46cc-90ce-646a785b24e2">How to: Set a Page's Cacheability Programmatically</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/51149563-a347-4b2b-bdc2-57a317e12487">How to: Set a Page's Cacheability Declaratively</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/659d419e-9418-46cc-90ce-646a785b24e2">How to: Set a Page's Cacheability Programmatically</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -439,7 +439,7 @@
 ## Remarks  
  The <xref:System.Web.Configuration.OutputCacheProfile.VaryByControl%2A> is a semicolon-delimited set of IDs of controls to be cached.  
   
- For more information, see [Caching Multiple Versions of User Control Output](http://msdn.microsoft.com/library/7f7d839a-c060-4d2a-9c4e-7fd1080ec0ad).  
+ For more information, see [Caching Multiple Versions of User Control Output](https://msdn.microsoft.com/library/7f7d839a-c060-4d2a-9c4e-7fd1080ec0ad).  
   
 > [!NOTE]
 >  The <xref:System.Web.Configuration.OutputCacheProfile.VaryByControl%2A> settings are the same ones used by the `VaryByControls` attribute of the  directive.  
@@ -454,8 +454,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7f7d839a-c060-4d2a-9c4e-7fd1080ec0ad">Caching Multiple Versions of User Control Output</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1bcaf2d0-0803-49be-a831-c0714a60e81c">How to: Cache Multiple Versions of a User Control, Based on Parameters</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7f7d839a-c060-4d2a-9c4e-7fd1080ec0ad">Caching Multiple Versions of User Control Output</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1bcaf2d0-0803-49be-a831-c0714a60e81c">How to: Cache Multiple Versions of a User Control, Based on Parameters</related>
       </Docs>
     </Member>
     <Member MemberName="VaryByCustom">
@@ -502,9 +502,9 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.HttpApplication.GetVaryByCustomString(System.Web.HttpContext,System.String)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7f7d839a-c060-4d2a-9c4e-7fd1080ec0ad">Caching Multiple Versions of User Control Output</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7f7d839a-c060-4d2a-9c4e-7fd1080ec0ad">Caching Multiple Versions of User Control Output</related>
         <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b6c73735-a3cd-4d19-ba4d-0431881b0db0">How to: Cache Versions of a Page, Based on Custom Strings</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b6c73735-a3cd-4d19-ba4d-0431881b0db0">How to: Cache Versions of a Page, Based on Custom Strings</related>
       </Docs>
     </Member>
     <Member MemberName="VaryByHeader">
@@ -535,7 +535,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Configuration.OutputCacheProfile.VaryByHeader%2A> is a semicolon-delimited set of headers used to vary the cached output. These are HTTP headers associated with the request. For more information, see [Caching Multiple Versions of a Page](http://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e).  
+ The <xref:System.Web.Configuration.OutputCacheProfile.VaryByHeader%2A> is a semicolon-delimited set of headers used to vary the cached output. These are HTTP headers associated with the request. For more information, see [Caching Multiple Versions of a Page](https://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e).  
   
 > [!NOTE]
 >  The <xref:System.Web.Configuration.OutputCacheProfile.VaryByHeader%2A> settings are the same ones used by the `VaryByHeader` attribute of the . Varying by all headers by setting the value of "*" is not recommended. It can result in cache overflow or a denial of service attack on the Web server.  
@@ -551,7 +551,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
       </Docs>
     </Member>
     <Member MemberName="VaryByParam">
@@ -582,7 +582,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Configuration.OutputCacheProfile.VaryByParam%2A> is a semicolon-delimited set of parameters used to vary the cached output. It allows varying the cached output by GET query string or form POST parameters. For instance, you can vary the user-control output to the cache by specifying the user-control name along with either a query string or a form POST parameter. For more information, see [Caching Multiple Versions of User Control Output](http://msdn.microsoft.com/library/7f7d839a-c060-4d2a-9c4e-7fd1080ec0ad).  
+ The <xref:System.Web.Configuration.OutputCacheProfile.VaryByParam%2A> is a semicolon-delimited set of parameters used to vary the cached output. It allows varying the cached output by GET query string or form POST parameters. For instance, you can vary the user-control output to the cache by specifying the user-control name along with either a query string or a form POST parameter. For more information, see [Caching Multiple Versions of User Control Output](https://msdn.microsoft.com/library/7f7d839a-c060-4d2a-9c4e-7fd1080ec0ad).  
   
  The <xref:System.Web.Configuration.OutputCacheProfile.VaryByParam%2A> setting must be defined in either the profile or the  directive of the page using the profile.  
   
@@ -602,8 +602,8 @@
         <altmember cref="T:System.Web.HttpCacheVaryByParams" />
         <altmember cref="P:System.Web.HttpCachePolicy.VaryByParams" />
         <related type="Article" href="https://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b(v=vs.100)">Caching ASP.NET Pages</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1bcaf2d0-0803-49be-a831-c0714a60e81c">How to: Cache Multiple Versions of a User Control, Based on Parameters</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c60284a9-9899-4fdc-a97c-020766b7572e">Caching Multiple Versions of a Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1bcaf2d0-0803-49be-a831-c0714a60e81c">How to: Cache Multiple Versions of a User Control, Based on Parameters</related>
       </Docs>
     </Member>
   </Members>

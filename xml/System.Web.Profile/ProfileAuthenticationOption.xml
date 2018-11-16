@@ -27,14 +27,14 @@
  The following code example allows a user to view and delete active and inactive profiles information based on search criteria including a <xref:System.Web.Profile.ProfileAuthenticationOption> parameter.  
   
 > [!IMPORTANT]
->  This example includes a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example includes a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.Profile.ProfileManager#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/FindProfilesByUserNamecs.aspx#5)]
  [!code-aspx-vb[System.Web.Profile.ProfileManager#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/FindProfilesByUserNamevb.aspx#5)]  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
   </Docs>
   <Members>
     <Member MemberName="All">

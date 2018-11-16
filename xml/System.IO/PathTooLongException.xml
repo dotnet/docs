@@ -43,10 +43,10 @@
 ## Remarks  
  If your code does not have <xref:System.Security.Permissions.FileIOPermissionAttribute.PathDiscovery%2A?displayProperty=nameWithType> permission, the error message for this exception may contain only file or directory names instead of full paths.  
   
- In apps that run under versions of the .NET Framework prior to the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], full paths must not exceed 260 characters to maintain compatibility with Windows operating systems. Any path in excess of 260 characters automatically throws a <xref:System.IO.PathTooLongException>. For more information about this restriction, see the entry [Long Paths in .NET](http://go.microsoft.com/fwlink/?LinkID=163666) in the BCL Team blog.  
+ In apps that run under versions of the .NET Framework prior to the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], full paths must not exceed 260 characters to maintain compatibility with Windows operating systems. Any path in excess of 260 characters automatically throws a <xref:System.IO.PathTooLongException>. For more information about this restriction, see the entry [Long Paths in .NET](https://go.microsoft.com/fwlink/?LinkID=163666) in the BCL Team blog.  
   
 > [!NOTE]
->  This exception is not included in [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), but it is thrown by some members that are. To catch the exception in that case, write a `catch` statement that handles an <xref:System.IO.IOException> instead.  
+>  This exception is not included in [.NET for Windows Store apps](https://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), but it is thrown by some members that are. To catch the exception in that case, write a `catch` statement that handles an <xref:System.IO.IOException> instead.  
   
  Starting with apps running under the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], the .NET Framework supports long paths in excess of 260 (or `MAX_PATH`) characters.  The conditions under which a <xref:System.IO.PathTooLongException> exception are thrown depend on the version of the .NET Framework that an app targets:  
   

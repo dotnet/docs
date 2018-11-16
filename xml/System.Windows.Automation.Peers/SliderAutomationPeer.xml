@@ -17,7 +17,7 @@
   <Docs>
     <summary>Exposes <see cref="T:System.Windows.Controls.Slider" /> types to UI Automation.</summary>
     <remarks>To be added.</remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,7 +45,7 @@
         <param name="owner">The <see cref="T:System.Windows.Controls.Slider" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.SliderAutomationPeer" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.SliderAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">
@@ -69,7 +69,7 @@
         <summary>Gets the control type for the <see cref="T:System.Windows.Controls.Slider" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.SliderAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
         <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Slider" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">
@@ -93,7 +93,7 @@
         <summary>Gets the name of the <see cref="T:System.Windows.Controls.Slider" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.SliderAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
         <returns>A string that contains "Slider".</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetClickablePointCore">
@@ -117,7 +117,7 @@
         <summary>Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClickablePoint" />.</summary>
         <returns>A <see cref="T:System.Windows.Point" /> containing <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NaN" />; the only clickable points in a <see cref="T:System.Windows.Controls.TabControl" /> are the child <see cref="T:System.Windows.Controls.TabItem" /> elements.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
   </Members>

@@ -50,15 +50,15 @@
   
  The <xref:System.Xml.Linq.XAttribute> class derives from <xref:System.Xml.Linq.XObject>. You can add annotations to attributes, and observe events for them.  
   
- Some <xref:System.Xml.Linq.XAttribute> methods can be used from XAML. For more information, see [LINQ to XML Dynamic Properties](http://msdn.microsoft.com/library/0455f47c-4a68-4f2e-a3f8-dd1d85b99012).  
+ Some <xref:System.Xml.Linq.XAttribute> methods can be used from XAML. For more information, see [LINQ to XML Dynamic Properties](https://msdn.microsoft.com/library/0455f47c-4a68-4f2e-a3f8-dd1d85b99012).  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Xml.Linq.XElement" />
     <altmember cref="T:System.Xml.Linq.XDocument" />
-    <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/ab0fed32-994c-4593-b307-54aa72c6bdc3">XAttribute Class Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/0455f47c-4a68-4f2e-a3f8-dd1d85b99012">LINQ to XML Dynamic Properties</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab0fed32-994c-4593-b307-54aa72c6bdc3">XAttribute Class Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/0455f47c-4a68-4f2e-a3f8-dd1d85b99012">LINQ to XML Dynamic Properties</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -73,8 +73,8 @@
         <altmember cref="P:System.Xml.Linq.XAttribute.Name" />
         <altmember cref="P:System.Xml.Linq.XAttribute.Value" />
         <altmember cref="P:System.Xml.Linq.XAttribute.NodeType" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab0fed32-994c-4593-b307-54aa72c6bdc3">XAttribute Class Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab0fed32-994c-4593-b307-54aa72c6bdc3">XAttribute Class Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -153,8 +153,8 @@ Creating a deep copy created a new attribute from the original.
         <altmember cref="P:System.Xml.Linq.XAttribute.Name" />
         <altmember cref="P:System.Xml.Linq.XAttribute.Value" />
         <altmember cref="P:System.Xml.Linq.XAttribute.NodeType" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab0fed32-994c-4593-b307-54aa72c6bdc3">XAttribute Class Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab0fed32-994c-4593-b307-54aa72c6bdc3">XAttribute Class Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -211,7 +211,7 @@ XElement root = new XElement(aw + "Root",
 );  
 ```  
   
- For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
  These same approaches will work for Visual Basic, however XML literals provide a better approach for creating XML trees.  
   
@@ -279,8 +279,8 @@ Console.WriteLine(root)
         <altmember cref="P:System.Xml.Linq.XAttribute.Name" />
         <altmember cref="P:System.Xml.Linq.XAttribute.Value" />
         <altmember cref="P:System.Xml.Linq.XAttribute.NodeType" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab0fed32-994c-4593-b307-54aa72c6bdc3">XAttribute Class Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab0fed32-994c-4593-b307-54aa72c6bdc3">XAttribute Class Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EmptySequence">
@@ -324,7 +324,7 @@ Console.WriteLine(root)
         </remarks>
         <altmember cref="P:System.Xml.Linq.XElement.EmptySequence" />
         <altmember cref="Overload:System.Xml.Linq.XAttribute.#ctor" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="IsNamespaceDeclaration">
@@ -408,7 +408,7 @@ Next
  ]]></format>
         </remarks>
         <altmember cref="T:System.Xml.Linq.XNamespace" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -518,7 +518,7 @@ Att2=new content
         <altmember cref="T:System.Xml.Linq.XName" />
         <altmember cref="P:System.Xml.Linq.XAttribute.Value" />
         <altmember cref="M:System.Xml.Linq.XAttribute.ToString" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="NextAttribute">
@@ -602,7 +602,7 @@ Att4="4"
  ]]></format>
         </remarks>
         <altmember cref="P:System.Xml.Linq.XAttribute.PreviousAttribute" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="NodeType">
@@ -673,7 +673,7 @@ Attribute
         </remarks>
         <altmember cref="T:System.Xml.XmlNodeType" />
         <altmember cref="T:System.Xml.Linq.XNode" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -750,7 +750,7 @@ Console.WriteLine("(bool)BoolValue={0}", bv)
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.Boolean" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="attribute" /> parameter is <see langword="null" />.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Boolean}" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -864,7 +864,7 @@ OrderDate=10/6/2006
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.DateTime" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="attribute" /> parameter is <see langword="null" />.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.DateTime}" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -950,7 +950,7 @@ dt=10/6/2006 12:30:00 PM -07:00
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.DateTimeOffset" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="attribute" /> parameter is <see langword="null" />.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.DateTimeOffset}" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1022,7 +1022,7 @@ value=79228162514264337593543950335
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.Decimal" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="attribute" /> parameter is <see langword="null" />.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Decimal}" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1094,7 +1094,7 @@ value=1.79769313486231E+308
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.Double" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="attribute" /> parameter is <see langword="null" />.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Double}" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1166,7 +1166,7 @@ value=3c1cc55b-baff-4b7a-9d17-077af3aa5730
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.Guid" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="attribute" /> parameter is <see langword="null" />.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Guid}" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1238,7 +1238,7 @@ value=2147483647
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.Int32" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="attribute" /> parameter is <see langword="null" />.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Int32}" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1310,7 +1310,7 @@ value=9223372036854775807
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.Int64" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="attribute" /> parameter is <see langword="null" />.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Int64}" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1392,7 +1392,7 @@ Nullable boolean: BoolValue2=False
         </remarks>
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.Boolean" /> value.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Boolean" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1472,7 +1472,7 @@ Nullable DateTime: value=10/6/2006 12:30:00 PM
         </remarks>
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.DateTime" /> value.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.DateTime" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1619,7 +1619,7 @@ Nullable decimal: value=79228162514264337593543950335
         </remarks>
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.Decimal" /> value.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Decimal" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1690,7 +1690,7 @@ Nullable double: value=1.79769313486231E+308
         </remarks>
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.Double" /> value.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Double" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1761,7 +1761,7 @@ Nullable Guid: value=3c1cc55b-baff-4b7a-9d17-077af3aa5730
         </remarks>
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.Guid" /> value.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Guid" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1831,7 +1831,7 @@ Nullable int: value=2147483647
  ]]></format>
         </remarks>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Int32" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1902,7 +1902,7 @@ Nullable long: value=9223372036854775807
         </remarks>
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.Int64" /> value.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Int64" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1973,7 +1973,7 @@ Nullable Single: value=3.402823E+38
         </remarks>
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.Single" /> value.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Single" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2051,7 +2051,7 @@ Nullable TimeSpan: value=01:05:30
         </remarks>
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.TimeSpan" /> value.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.TimeSpan" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2122,7 +2122,7 @@ Nullable uint: value=4294967295
         </remarks>
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.UInt32" /> value.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.UInt32" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2193,7 +2193,7 @@ Nullable ulong: value=9223372036854775807
         </remarks>
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.UInt64" /> value.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.UInt64" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2265,7 +2265,7 @@ value=3.402823E+38
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.Single" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="attribute" /> parameter is <see langword="null" />.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Single}" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2337,7 +2337,7 @@ Console.WriteLine("(string)att={0}", str)
  ]]></format>
         </remarks>
         <altmember cref="M:System.Xml.Linq.XAttribute.ToString" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2416,7 +2416,7 @@ value=01:05:30
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.TimeSpan" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="attribute" /> parameter is <see langword="null" />.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.TimeSpan}" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2488,7 +2488,7 @@ value=4294967295
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.UInt32" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="attribute" /> parameter is <see langword="null" />.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.UInt32}" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2560,7 +2560,7 @@ value=1844674407370955161
         <exception cref="T:System.FormatException">The attribute does not contain a valid <see cref="T:System.UInt64" /> value.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="attribute" /> parameter is <see langword="null" />.</exception>
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.UInt64}" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousAttribute">
@@ -2645,7 +2645,7 @@ Att1="1"
  ]]></format>
         </remarks>
         <altmember cref="P:System.Xml.Linq.XAttribute.NextAttribute" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -2685,7 +2685,7 @@ Att1="1"
 ## Remarks  
  You can use this method to modify an XML tree. This method will cause events to occur.  
   
- There are many scenarios in which you might want to remove a set of attributes. In [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] programming, you should not manipulate or modify a set of nodes while you are querying for nodes in that set. In practical terms, this means that you should not iterate over a set of attributes and remove them. Instead, you should materialize them into a <xref:System.Collections.Generic.List%601> using the <xref:System.Linq.Enumerable.ToList%2A> extension method. Then you can iterate over the list, removing the attributes. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](http://msdn.microsoft.com/library/d9a5c404-2b0e-46cd-a358-0e78773b3094).  
+ There are many scenarios in which you might want to remove a set of attributes. In [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] programming, you should not manipulate or modify a set of nodes while you are querying for nodes in that set. In practical terms, this means that you should not iterate over a set of attributes and remove them. Instead, you should materialize them into a <xref:System.Collections.Generic.List%601> using the <xref:System.Linq.Enumerable.ToList%2A> extension method. Then you can iterate over the list, removing the attributes. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](https://msdn.microsoft.com/library/d9a5c404-2b0e-46cd-a358-0e78773b3094).  
   
  Alternatively, if you want to remove a set of attributes, it is recommended that you use the <xref:System.Xml.Linq.Extensions.Remove%2A?displayProperty=nameWithType> method. This method copies the attributes to a list, then iterates over the list, removing the attributes.  
   
@@ -2721,7 +2721,7 @@ Console.WriteLine(root)
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent element is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -2805,7 +2805,7 @@ Console.WriteLine(root)
         <altmember cref="M:System.Xml.Linq.XElement.SetAttributeValue(System.Xml.Linq.XName,System.Object)" />
         <altmember cref="M:System.Xml.Linq.XElement.SetElementValue(System.Xml.Linq.XName,System.Object)" />
         <altmember cref="P:System.Xml.Linq.XAttribute.Value" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2881,7 +2881,7 @@ Att2="content2"
         <altmember cref="P:System.Xml.Linq.XAttribute.Name" />
         <altmember cref="P:System.Xml.Linq.XAttribute.Value" />
         <altmember cref="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.String" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -3106,7 +3106,7 @@ v4:attribute does not exist
         <altmember cref="M:System.Xml.Linq.XAttribute.SetValue(System.Object)" />
         <altmember cref="P:System.Xml.Linq.XAttribute.Name" />
         <altmember cref="M:System.Xml.Linq.XAttribute.ToString" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
   </Members>

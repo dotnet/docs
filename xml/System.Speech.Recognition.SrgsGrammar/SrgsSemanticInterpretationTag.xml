@@ -28,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default semantic format for System.Speech conforms to the W3C [Semantic Interpretation for Speech Recognition (SISR) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201765), where the format for `tag` elements that contain script is `semantics/1.0`. You must specify the script for <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag> objects using this format. In the syntax of `semantics/1.0`:  
+ The default semantic format for System.Speech conforms to the W3C [Semantic Interpretation for Speech Recognition (SISR) Version 1.0](https://go.microsoft.com/fwlink/?LinkId=201765), where the format for `tag` elements that contain script is `semantics/1.0`. You must specify the script for <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag> objects using this format. In the syntax of `semantics/1.0`:  
   
 -   The Rule Variable of the containing rule element is identified by "out".  
   
@@ -45,7 +45,7 @@
   
  In the code example, "out" refers to the Rule Variable of the containing <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule>. The expression "out.LeavingFrom" refers to the property named `LeavingFrom` of the Rule Variable on the rule named `bookFlight`.  
   
- The expression "rules.flightCities" refers to the Rule Variable on the rule whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Id%2A> is `flightCities`, and which is the target of a rule reference. In the example, the expression "out.LeavingFrom=rules.flightCities;" assigns the value from the rule whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Id%2A> is `flightCities` to the property named `LeavingFrom` of the Rule Variable on the rule named `bookFlight`. See [Semantic Results Content](http://msdn.microsoft.com/library/622291af-615c-4a15-9014-2933aa3f89fe), [Grammar Rule Name Referencing](http://msdn.microsoft.com/library/0777e975-8665-4cc3-957b-752743cb1bb9), and [Grammar Rule Reference Referencing](http://msdn.microsoft.com/library/dec3a809-9aa2-4139-893f-3a549ca1e03e) for more information.  
+ The expression "rules.flightCities" refers to the Rule Variable on the rule whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Id%2A> is `flightCities`, and which is the target of a rule reference. In the example, the expression "out.LeavingFrom=rules.flightCities;" assigns the value from the rule whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Id%2A> is `flightCities` to the property named `LeavingFrom` of the Rule Variable on the rule named `bookFlight`. See [Semantic Results Content](https://msdn.microsoft.com/library/622291af-615c-4a15-9014-2933aa3f89fe), [Grammar Rule Name Referencing](https://msdn.microsoft.com/library/0777e975-8665-4cc3-957b-752743cb1bb9), and [Grammar Rule Reference Referencing](https://msdn.microsoft.com/library/dec3a809-9aa2-4139-893f-3a549ca1e03e) for more information.  
   
 ```  
 using System;  

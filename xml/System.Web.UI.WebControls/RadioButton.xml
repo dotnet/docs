@@ -52,11 +52,11 @@
  The <xref:System.Web.UI.WebControls.RadioButton> server control permits you to intersperse the radio buttons in a group with other content in the page. The buttons are grouped logically if they all share the same <xref:System.Web.UI.WebControls.RadioButton.GroupName%2A> property.  
   
 > [!NOTE]
->  You can use the <xref:System.Web.UI.WebControls.RadioButton> control to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  You can use the <xref:System.Web.UI.WebControls.RadioButton> control to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](https://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
 <a name="accessibility"></a>   
 ## Accessibility  
- The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -119,7 +119,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.CheckBox" />
-    <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -154,7 +154,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="GroupName">
@@ -195,7 +195,7 @@
   
  The value of this property is stored in view state.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -207,7 +207,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -248,7 +248,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -282,7 +282,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -315,7 +315,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -355,7 +355,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -390,7 +390,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747">RadioButton and RadioButtonList Web Server Controls</related>
       </Docs>
     </Member>
   </Members>

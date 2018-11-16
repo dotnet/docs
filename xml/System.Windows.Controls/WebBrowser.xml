@@ -37,7 +37,7 @@
 -   When <xref:System.Windows.Controls.WebBrowser> is hosted by a partial-trust [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] application (an [!INCLUDE[TLA2#tla_xbap](~/includes/tla2sharptla-xbap-md.md)], for example), <xref:System.Windows.Controls.WebBrowser> can only host documents that are **Site Of Origin** application data files. For more information, see [WPF Application Resource, Content, and Data Files](~/docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md).  
   
 > [!CAUTION]
->  The <xref:System.Windows.Controls.WebBrowser> control internally instantiates the native WebBrowser ActiveX control. WPF enables security features by applying feature controls to the WebBrowser ActiveX control. The feature controls that are applied differ for XBAPs and stand-alone applications. Some applications should apply additional feature controls to prevent malicious content from running. For more information, see the "WebBrowser Control and Feature Controls" section in [Security (WPF)](~/docs/framework/wpf/security-wpf.md) and [WebBrowser Control Overviews and Tutorials](http://go.microsoft.com/fwlink/?LinkId=179388).  
+>  The <xref:System.Windows.Controls.WebBrowser> control internally instantiates the native WebBrowser ActiveX control. WPF enables security features by applying feature controls to the WebBrowser ActiveX control. The feature controls that are applied differ for XBAPs and stand-alone applications. Some applications should apply additional feature controls to prevent malicious content from running. For more information, see the "WebBrowser Control and Feature Controls" section in [Security (WPF)](~/docs/framework/wpf/security-wpf.md) and [WebBrowser Control Overviews and Tutorials](https://go.microsoft.com/fwlink/?LinkId=179388).  
   
    
   
@@ -117,7 +117,7 @@ internal interface IServiceProvider
   
  ]]></format>
     </remarks>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160056">XBAP Hosting Silverlight Sample</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160056">XBAP Hosting Silverlight Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

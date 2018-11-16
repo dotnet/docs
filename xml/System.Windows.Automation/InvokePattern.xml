@@ -29,7 +29,7 @@
     <altmember cref="T:System.Windows.Automation.Provider.IInvokeProvider" />
     <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
     <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md">UI Automation Control Patterns for Clients</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/5ee2de3f-256c-43ec-b64c-62ace91f9983">Invoke a Control Using UI Automation</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/5ee2de3f-256c-43ec-b64c-62ace91f9983">Invoke a Control Using UI Automation</related>
     <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771636(v=vs.90)">InvokePattern and ExpandCollapsePattern Menu Item Sample</related>
   </Docs>
   <Members>
@@ -70,7 +70,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The element does not support the <see cref="T:System.Windows.Automation.InvokePattern" /> control pattern or is hidden or blocked.</exception>
         <exception cref="T:System.Windows.Automation.ElementNotEnabledException">The element is not enabled. Can be raised when a UI Automation provider has implemented its own handling of the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsEnabled" /> property.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/5ee2de3f-256c-43ec-b64c-62ace91f9983">Invoke a Control Using UI Automation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5ee2de3f-256c-43ec-b64c-62ace91f9983">Invoke a Control Using UI Automation</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771636(v=vs.90)">InvokePattern and ExpandCollapsePattern Menu Item Sample</related>
       </Docs>
     </Member>
@@ -110,7 +110,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/5ee2de3f-256c-43ec-b64c-62ace91f9983">Invoke a Control Using UI Automation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5ee2de3f-256c-43ec-b64c-62ace91f9983">Invoke a Control Using UI Automation</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771636(v=vs.90)">InvokePattern and ExpandCollapsePattern Menu Item Sample</related>
       </Docs>
     </Member>
@@ -150,7 +150,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/5ee2de3f-256c-43ec-b64c-62ace91f9983">Invoke a Control Using UI Automation</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5ee2de3f-256c-43ec-b64c-62ace91f9983">Invoke a Control Using UI Automation</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771636(v=vs.90)">InvokePattern and ExpandCollapsePattern Menu Item Sample</related>
       </Docs>
     </Member>

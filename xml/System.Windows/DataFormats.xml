@@ -352,7 +352,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="format" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for accessing low-level unmanaged code that supports the registration of clipboard formats.  Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
-        <related type="Article" href="http://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127">Introduction to Code Access Security</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127">Introduction to Code Access Security</related>
       </Docs>
     </Member>
     <Member MemberName="Html">

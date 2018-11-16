@@ -1797,9 +1797,9 @@
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.HttpApplication.EndRequest" />
-        <related type="Article" href="http://msdn.microsoft.com/library/93d42673-5ef2-4fa0-aa6e-71e8a5ebf836">How to: Implement and Raise Custom ASP.NET Health Monitoring Events</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/7787d5be-40a4-4072-9075-c2b767428453">Walkthrough: Creating and Registering a Custom HTTP Module</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/bbb1c959-e6e4-42b2-be62-49b7ca5ab72c">How to: Implement the Health Monitoring Custom Provider Example</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/93d42673-5ef2-4fa0-aa6e-71e8a5ebf836">How to: Implement and Raise Custom ASP.NET Health Monitoring Events</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7787d5be-40a4-4072-9075-c2b767428453">Walkthrough: Creating and Registering a Custom HTTP Module</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/bbb1c959-e6e4-42b2-be62-49b7ca5ab72c">How to: Implement the Health Monitoring Custom Provider Example</related>
       </Docs>
     </Member>
     <Member MemberName="CompleteRequest">
@@ -1958,9 +1958,9 @@
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.HttpApplication.BeginRequest" />
-        <related type="Article" href="http://msdn.microsoft.com/library/93d42673-5ef2-4fa0-aa6e-71e8a5ebf836">How to: Implement and Raise Custom ASP.NET Health Monitoring Events</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/7787d5be-40a4-4072-9075-c2b767428453">Walkthrough: Creating and Registering a Custom HTTP Module</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/bbb1c959-e6e4-42b2-be62-49b7ca5ab72c">How to: Implement the Health Monitoring Custom Provider Example</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/93d42673-5ef2-4fa0-aa6e-71e8a5ebf836">How to: Implement and Raise Custom ASP.NET Health Monitoring Events</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7787d5be-40a4-4072-9075-c2b767428453">Walkthrough: Creating and Registering a Custom HTTP Module</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/bbb1c959-e6e4-42b2-be62-49b7ca5ab72c">How to: Implement the Health Monitoring Custom Provider Example</related>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -1995,7 +1995,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6f70ac33-6e11-4e98-ab7d-bae9c0e7eefa">How to: Display Safe Error Messages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6f70ac33-6e11-4e98-ab7d-bae9c0e7eefa">How to: Display Safe Error Messages</related>
       </Docs>
     </Member>
     <Member MemberName="Events">
@@ -2058,7 +2058,7 @@
     providerName="DiskCache" %>  
 ```  
   
- To specify a different output cache provider for an HTTP request, you override this method in the Global.asax file to programmatically specify which provider to use for a specific request. For more information, see [ASP.NET Caching Overview](http://msdn.microsoft.com/library/5ec28012-4972-4dc3-b3e8-9d20401fe11d).  
+ To specify a different output cache provider for an HTTP request, you override this method in the Global.asax file to programmatically specify which provider to use for a specific request. For more information, see [ASP.NET Caching Overview](https://msdn.microsoft.com/library/5ec28012-4972-4dc3-b3e8-9d20401fe11d).  
   
    
   
@@ -2122,11 +2122,11 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can override <xref:System.Web.HttpApplication.GetVaryByCustomString%2A> to add a new method for calculating custom vary-by values that are based on the current request. The implementation has to call the base class for custom values that it does not recognize. For more information, see [How to: Cache Versions of a Page Using Custom Strings](http://msdn.microsoft.com/library/b6c73735-a3cd-4d19-ba4d-0431881b0db0).  
+ You can override <xref:System.Web.HttpApplication.GetVaryByCustomString%2A> to add a new method for calculating custom vary-by values that are based on the current request. The implementation has to call the base class for custom values that it does not recognize. For more information, see [How to: Cache Versions of a Page Using Custom Strings](https://msdn.microsoft.com/library/b6c73735-a3cd-4d19-ba4d-0431881b0db0).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b6c73735-a3cd-4d19-ba4d-0431881b0db0">How to: Cache Versions of a Page Using Custom Strings</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b6c73735-a3cd-4d19-ba4d-0431881b0db0">How to: Cache Versions of a Page Using Custom Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -2222,7 +2222,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.HttpApplication.MapRequestHandler> event is used by the ASP.NET infrastructure to determine the request handler for the current request. For more information, see [How to: Register HTTP Handlers](http://msdn.microsoft.com/library/d5633f9a-03fb-4ccc-a799-dc67d656fa60).  
+ The <xref:System.Web.HttpApplication.MapRequestHandler> event is used by the ASP.NET infrastructure to determine the request handler for the current request. For more information, see [How to: Register HTTP Handlers](https://msdn.microsoft.com/library/d5633f9a-03fb-4ccc-a799-dc67d656fa60).  
   
  For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   

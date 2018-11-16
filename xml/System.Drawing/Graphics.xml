@@ -64,9 +64,9 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/162861f9-f050-445e-8abb-b2c43a918b8b">How to: Create Graphics Objects for Drawing</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/eb0f6d6f-9e52-4167-9592-ff4b82fb5869">Getting Started with Graphics Programming</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/6207cad1-7a34-4bd6-bfc1-db823ca7a73e">Managing the State of a Graphics Object</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/162861f9-f050-445e-8abb-b2c43a918b8b">How to: Create Graphics Objects for Drawing</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/eb0f6d6f-9e52-4167-9592-ff4b82fb5869">Getting Started with Graphics Programming</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6207cad1-7a34-4bd6-bfc1-db823ca7a73e">Managing the State of a Graphics Object</related>
   </Docs>
   <Members>
     <Member MemberName="AddMetafileComment">
@@ -626,8 +626,8 @@
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">The operation failed.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for access to all windows. Related enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
-        <related type="Article" href="http://msdn.microsoft.com/library/c8dff5f8-f56a-4c07-ae31-64643b31f8fc">How to: Print a Windows Form</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/33b76910-13a3-4521-be98-5c097341ae3b">How to: Copy Pixels For Reducing Flicker in Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c8dff5f8-f56a-4c07-ae31-64643b31f8fc">How to: Print a Windows Form</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/33b76910-13a3-4521-be98-5c097341ae3b">How to: Copy Pixels For Reducing Flicker in Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="CopyFromScreen">
@@ -681,8 +681,8 @@
           <paramref name="copyPixelOperation" /> is not a member of <see cref="T:System.Drawing.CopyPixelOperation" />.</exception>
         <exception cref="T:System.ComponentModel.Win32Exception">The operation failed.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for access to all windows. Related enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
-        <related type="Article" href="http://msdn.microsoft.com/library/c8dff5f8-f56a-4c07-ae31-64643b31f8fc">How to: Print a Windows Form</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/33b76910-13a3-4521-be98-5c097341ae3b">How to: Copy Pixels For Reducing Flicker in Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c8dff5f8-f56a-4c07-ae31-64643b31f8fc">How to: Print a Windows Form</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/33b76910-13a3-4521-be98-5c097341ae3b">How to: Copy Pixels For Reducing Flicker in Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="CopyFromScreen">
@@ -742,8 +742,8 @@
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">The operation failed.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for access to all windows. Related enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
-        <related type="Article" href="http://msdn.microsoft.com/library/c8dff5f8-f56a-4c07-ae31-64643b31f8fc">How to: Print a Windows Form</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/33b76910-13a3-4521-be98-5c097341ae3b">How to: Copy Pixels For Reducing Flicker in Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c8dff5f8-f56a-4c07-ae31-64643b31f8fc">How to: Print a Windows Form</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/33b76910-13a3-4521-be98-5c097341ae3b">How to: Copy Pixels For Reducing Flicker in Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="CopyFromScreen">
@@ -801,8 +801,8 @@
           <paramref name="copyPixelOperation" /> is not a member of <see cref="T:System.Drawing.CopyPixelOperation" />.</exception>
         <exception cref="T:System.ComponentModel.Win32Exception">The operation failed.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for access to all windows. Related enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
-        <related type="Article" href="http://msdn.microsoft.com/library/c8dff5f8-f56a-4c07-ae31-64643b31f8fc">How to: Print a Windows Form</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/33b76910-13a3-4521-be98-5c097341ae3b">How to: Copy Pixels For Reducing Flicker in Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c8dff5f8-f56a-4c07-ae31-64643b31f8fc">How to: Print a Windows Form</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/33b76910-13a3-4521-be98-5c097341ae3b">How to: Copy Pixels For Reducing Flicker in Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -891,7 +891,7 @@
 ## Remarks  
  For more information about creating high-resolution applications, see  
   
- [High DPI](http://go.microsoft.com/fwlink/?LinkId=159804).  
+ [High DPI](https://go.microsoft.com/fwlink/?LinkId=159804).  
   
    
   
@@ -904,7 +904,7 @@
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=159804">High DPI</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=159804">High DPI</related>
       </Docs>
     </Member>
     <Member MemberName="DpiY">
@@ -937,7 +937,7 @@
 ## Remarks  
  For more information about creating high-resolution applications, see  
   
- [High DPI](http://go.microsoft.com/fwlink/?LinkId=159804).  
+ [High DPI](https://go.microsoft.com/fwlink/?LinkId=159804).  
   
    
   
@@ -950,7 +950,7 @@
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=159804">High DPI</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=159804">High DPI</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="DrawArc">
@@ -2886,7 +2886,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -2947,7 +2947,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -3007,7 +3007,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -3068,7 +3068,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -3128,7 +3128,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -3188,7 +3188,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -3249,7 +3249,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -3310,7 +3310,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -3385,7 +3385,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -3455,7 +3455,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -3524,7 +3524,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -3593,7 +3593,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -3677,7 +3677,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -3761,7 +3761,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -3833,7 +3833,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -3898,7 +3898,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -3970,7 +3970,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -4035,7 +4035,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -4128,7 +4128,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -4221,7 +4221,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -4309,7 +4309,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -4399,7 +4399,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -4478,7 +4478,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -4557,7 +4557,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -4645,7 +4645,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -4733,7 +4733,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -4825,7 +4825,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -4917,7 +4917,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -5011,7 +5011,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -5105,7 +5105,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="image" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="DrawImageUnscaled">
@@ -7111,7 +7111,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -7161,7 +7161,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -7212,7 +7212,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -7264,7 +7264,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -7315,7 +7315,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -7366,7 +7366,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -7424,7 +7424,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -7538,7 +7538,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -7592,7 +7592,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -7650,7 +7650,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -7708,7 +7708,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -7764,7 +7764,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -7878,7 +7878,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -7994,7 +7994,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -8110,7 +8110,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -8169,7 +8169,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -8227,7 +8227,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -8285,7 +8285,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -8343,7 +8343,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -8401,7 +8401,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -8464,7 +8464,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -8530,7 +8530,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -8595,7 +8595,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -8661,7 +8661,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -8726,7 +8726,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -8791,7 +8791,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -8917,7 +8917,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -9047,7 +9047,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -9112,7 +9112,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <Member MemberName="EnumerateMetafile">
@@ -9177,7 +9177,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ExcludeClip">
@@ -11436,9 +11436,9 @@
           <paramref name="image" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Exception">
           <paramref name="image" /> has an indexed pixel format or its format is undefined.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/737bae30-e599-4e1d-bf30-bab8280b32be">How to: Create a Bitmap at Run Time</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/a626d701-bd99-4fd8-b92f-7b8f794e042b">Working with Images, Bitmaps, Icons, and Metafiles</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/162861f9-f050-445e-8abb-b2c43a918b8b">How to: Create Graphics Objects for Drawing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/737bae30-e599-4e1d-bf30-bab8280b32be">How to: Create a Bitmap at Run Time</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/a626d701-bd99-4fd8-b92f-7b8f794e042b">Working with Images, Bitmaps, Icons, and Metafiles</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/162861f9-f050-445e-8abb-b2c43a918b8b">How to: Create Graphics Objects for Drawing</related>
       </Docs>
     </Member>
     <Member MemberName="GetContextInfo">
@@ -13050,7 +13050,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/0659fe00-9e0c-41c4-9118-016f2404c905">Matrix Representation of Transformations</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0659fe00-9e0c-41c4-9118-016f2404c905">Matrix Representation of Transformations</related>
       </Docs>
     </Member>
     <Member MemberName="MultiplyTransform">
@@ -13108,7 +13108,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/0659fe00-9e0c-41c4-9118-016f2404c905">Matrix Representation of Transformations</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0659fe00-9e0c-41c4-9118-016f2404c905">Matrix Representation of Transformations</related>
       </Docs>
     </Member>
     <Member MemberName="PageScale">
@@ -13149,7 +13149,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c61ff50a-eb1d-4e6c-83cd-f7e9764cfa9f">Types of Coordinate Systems</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c61ff50a-eb1d-4e6c-83cd-f7e9764cfa9f">Types of Coordinate Systems</related>
       </Docs>
     </Member>
     <Member MemberName="PageUnit">
@@ -13197,7 +13197,7 @@
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <see cref="P:System.Drawing.Graphics.PageUnit" /> is set to <see cref="F:System.Drawing.GraphicsUnit.World" />, which is not a physical unit.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/c61ff50a-eb1d-4e6c-83cd-f7e9764cfa9f">Types of Coordinate Systems</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c61ff50a-eb1d-4e6c-83cd-f7e9764cfa9f">Types of Coordinate Systems</related>
       </Docs>
     </Member>
     <Member MemberName="PixelOffsetMode">
@@ -14570,7 +14570,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/c61ff50a-eb1d-4e6c-83cd-f7e9764cfa9f">Types of Coordinate Systems</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c61ff50a-eb1d-4e6c-83cd-f7e9764cfa9f">Types of Coordinate Systems</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="TransformPoints">
@@ -14879,8 +14879,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/9fef7451-bddf-4c68-9350-400d1f1f25a3">Coordinate Systems and Transformations</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f8e18d3-d2f5-460e-a8e3-2da891c301de">Using Transformations in Managed GDI+</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9fef7451-bddf-4c68-9350-400d1f1f25a3">Coordinate Systems and Transformations</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f8e18d3-d2f5-460e-a8e3-2da891c301de">Using Transformations in Managed GDI+</related>
       </Docs>
     </Member>
     <Member MemberName="TranslateTransform">
@@ -14937,8 +14937,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/9fef7451-bddf-4c68-9350-400d1f1f25a3">Coordinate Systems and Transformations</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/1f8e18d3-d2f5-460e-a8e3-2da891c301de">Using Transformations in Managed GDI+</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9fef7451-bddf-4c68-9350-400d1f1f25a3">Coordinate Systems and Transformations</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/1f8e18d3-d2f5-460e-a8e3-2da891c301de">Using Transformations in Managed GDI+</related>
       </Docs>
     </Member>
     <Member MemberName="VisibleClipBounds">

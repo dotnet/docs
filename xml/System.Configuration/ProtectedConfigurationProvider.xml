@@ -33,7 +33,7 @@
   
  Whether you use a standard or a custom provider, you must ensure that it is configured with the `add` element in the `providers` section of the `configProtectedData`  configuration section. (See next example.)  
   
- For details, see [Implementing a Protected Configuration Provider](http://msdn.microsoft.com/library/afc329e4-ef37-4915-b419-b37c745d2865).  
+ For details, see [Implementing a Protected Configuration Provider](https://msdn.microsoft.com/library/afc329e4-ef37-4915-b419-b37c745d2865).  
   
 > [!NOTE]
 >  When ASP.NET encounters encrypted configuration data, it performs decryption transparently using the configured provider. No action is required on your side other than making sure that you configure the required provider.  
@@ -43,7 +43,7 @@
 ## Examples  
  The following example shows how to implement a custom <xref:System.Configuration.ProtectedConfigurationProvider>.  
   
- To be able to configure this provider, as shown in the next configuration excerpt, you must install it in the Global Assembly Cache (GAC). Refer to [Implementing a Protected Configuration Provider](http://msdn.microsoft.com/library/afc329e4-ef37-4915-b419-b37c745d2865) for more information.  
+ To be able to configure this provider, as shown in the next configuration excerpt, you must install it in the Global Assembly Cache (GAC). Refer to [Implementing a Protected Configuration Provider](https://msdn.microsoft.com/library/afc329e4-ef37-4915-b419-b37c745d2865) for more information.  
   
  [!code-csharp[System.Configuration.ProtectedConfigurationProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProtectedConfigurationProvider/CS/ProtectedConfigurationProviderLib.cs#1)]
  [!code-vb[System.Configuration.ProtectedConfigurationProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProtectedConfigurationProvider/VB/ProtectedConfigurationProviderLib.vb#1)]  
@@ -85,7 +85,7 @@ providerName="System.Data.SqlClient" />
     <altmember cref="T:System.Configuration.ProtectedConfigurationSection" />
     <altmember cref="T:System.Configuration.DpapiProtectedConfigurationProvider" />
     <altmember cref="T:System.Configuration.RsaProtectedConfigurationProvider" />
-    <related type="Article" href="http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1">Encrypting Configuration Information Using Protected Configuration</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1">Encrypting Configuration Information Using Protected Configuration</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -207,7 +207,7 @@ providerName="System.Data.SqlClient" />
         <block subset="none" type="overrides">
           <para>Override this method to perform custom encryption.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/eb5dee1e-f6ac-4b16-bc2c-32c1e8cd9341">Encrypting and Decrypting Configuration Sections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eb5dee1e-f6ac-4b16-bc2c-32c1e8cd9341">Encrypting and Decrypting Configuration Sections</related>
       </Docs>
     </Member>
   </Members>

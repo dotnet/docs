@@ -22,7 +22,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Implements the <c>RegisterAssembly</c> task. Use the <c>RegisterAssembly</c> element in your project file to create and execute this task. For usage and parameter information, see [RegisterAssembly Task](http://msdn.microsoft.com/library/ba5f19ac-6764-4d28-9b79-a86de58f8987).</summary>
+    <summary>Implements the <c>RegisterAssembly</c> task. Use the <c>RegisterAssembly</c> element in your project file to create and execute this task. For usage and parameter information, see [RegisterAssembly Task](https://msdn.microsoft.com/library/ba5f19ac-6764-4d28-9b79-a86de58f8987).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -127,7 +127,7 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets information about the state between the <c>RegisterAssembly</c> task and the [UnregisterAssembly](http://msdn.microsoft.com/library/04f549dd-3591-4dda-9c3a-cf6ede9df2c3) task. This prevents the <c>UnregisterAssembly</c> task from attempting to unregister an assembly that failed to register in the <c>RegisterAssembly</c> task.</summary>
+        <summary>Gets or sets information about the state between the <c>RegisterAssembly</c> task and the [UnregisterAssembly](https://msdn.microsoft.com/library/04f549dd-3591-4dda-9c3a-cf6ede9df2c3) task. This prevents the <c>UnregisterAssembly</c> task from attempting to unregister an assembly that failed to register in the <c>RegisterAssembly</c> task.</summary>
         <value>The state information necessary for the <c>UnregisterAssembly</c> task to do proper clean-up.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

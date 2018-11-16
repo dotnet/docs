@@ -28,13 +28,13 @@
   
  When metadata is loaded, the <xref:System.Data.EntityClient.EntityConnection> verifies that the conceptual model, the storage model, and the mapping file are all present.  
   
- For code examples, see [Working with EntityClient](http://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
+ For code examples, see [Working with EntityClient](https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/8c5db787-78e6-4a34-8dc1-188bca0aca5e">EntityClient Provider for Entity Framework</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/8c5db787-78e6-4a34-8dc1-188bca0aca5e">EntityClient Provider for Entity Framework</related>
     <related type="Article" href="https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5">Working with EntityClient</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/78d516bc-c99f-4865-8ff1-d856bc1a01c0">Connection String</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/78d516bc-c99f-4865-8ff1-d856bc1a01c0">Connection String</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -56,7 +56,7 @@
   
  When metadata is loaded, the <xref:System.Data.EntityClient.EntityConnection> verifies that the conceptual model, the storage model, and the mapping file are all present.  
   
- For code examples, see [Working with EntityClient](http://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
+ For code examples, see [Working with EntityClient](https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
   
  ]]></format>
         </remarks>
@@ -89,7 +89,7 @@
   
  When metadata is loaded, the <xref:System.Data.EntityClient.EntityConnection> verifies that the conceptual model, the storage model, and the mapping file are all present.  
   
- For code examples, see [Working with EntityClient](http://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
+ For code examples, see [Working with EntityClient](https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
   
  ]]></format>
         </remarks>
@@ -128,7 +128,7 @@
   
  When metadata is loaded, the <xref:System.Data.EntityClient.EntityConnection> verifies that the conceptual model, the storage model, and the mapping file are all present.  
   
- For code examples, see [Working with EntityClient](http://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
+ For code examples, see [Working with EntityClient](https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
   
  ]]></format>
         </remarks>
@@ -437,8 +437,8 @@ Provider Connection String= 'Data Source=localhost;
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Data.EntityClient.EntityConnection.ConnectionString" /> property after the <see cref="T:System.Data.EntityClient.EntityConnection" />’s <see cref="T:System.Data.Metadata.Edm.MetadataWorkspace" /> was initialized. The <see cref="T:System.Data.Metadata.Edm.MetadataWorkspace" /> is initialized either when the <see cref="T:System.Data.EntityClient.EntityConnection" /> instance is constructed through the overload that takes a <see cref="T:System.Data.Metadata.Edm.MetadataWorkspace" /> as a parameter, or when the <see cref="T:System.Data.EntityClient.EntityConnection" /> instance has been opened.</exception>
         <exception cref="T:System.ArgumentException">An invalid connection string keyword has been provided or a required connection string keyword has not been provided.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Connection Strings</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/78d516bc-c99f-4865-8ff1-d856bc1a01c0">Connection Strings (Entity Framework)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Connection Strings</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/78d516bc-c99f-4865-8ff1-d856bc1a01c0">Connection Strings (Entity Framework)</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectionTimeout">

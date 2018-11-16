@@ -41,7 +41,7 @@
   
  This interface represents the result of a sorting query that calls the method(s) <xref:System.Linq.Queryable.OrderBy%2A>, <xref:System.Linq.Queryable.OrderByDescending%2A>, <xref:System.Linq.Queryable.ThenBy%2A> or <xref:System.Linq.Queryable.ThenByDescending%2A>. When <xref:System.Linq.IQueryProvider.CreateQuery%2A> is called and passed an expression tree that represents a sorting query, the resulting <xref:System.Linq.IQueryable> object must be of a type that implements <xref:System.Linq.IOrderedQueryable>.  
   
- For more information about how to create your own LINQ provider, see [LINQ: Building an IQueryable Provider](http://go.microsoft.com/fwlink/?LinkID=112370) on MSDN Blogs.  
+ For more information about how to create your own LINQ provider, see [LINQ: Building an IQueryable Provider](https://go.microsoft.com/fwlink/?LinkID=112370) on MSDN Blogs.  
   
  ]]></format>
     </remarks>

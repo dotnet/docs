@@ -59,7 +59,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="AddAfterSelf">
@@ -74,7 +74,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -151,7 +151,7 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddAfterSelf">
@@ -192,7 +192,7 @@ Console.WriteLine(xmlTree)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
  <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -247,7 +247,7 @@ Console.WriteLine(xmlTree)
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="AddAfterSelf">
@@ -299,7 +299,7 @@ Console.WriteLine(xmlTree)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -376,7 +376,7 @@ Console.WriteLine(xmlTree)
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AddBeforeSelf">
@@ -391,7 +391,7 @@ Console.WriteLine(xmlTree)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -470,7 +470,7 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddBeforeSelf">
@@ -511,7 +511,7 @@ Console.WriteLine(xmlTree)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -568,7 +568,7 @@ Console.WriteLine(xmlTree)
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="AddBeforeSelf">
@@ -620,7 +620,7 @@ Console.WriteLine(xmlTree)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -700,7 +700,7 @@ Console.WriteLine(xmlTree)
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Ancestors">
@@ -723,7 +723,7 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Ancestors">
@@ -812,7 +812,7 @@ Root
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Ancestors">
@@ -898,7 +898,7 @@ Child
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="CompareDocumentOrder">
@@ -1008,7 +1008,7 @@ el1 is before el2
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The two nodes do not share a common ancestor.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateReader">
@@ -1197,7 +1197,7 @@ Console.WriteLine(newTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="CreateReader">
@@ -1341,7 +1341,7 @@ True
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="DocumentOrderComparer">
@@ -1440,7 +1440,7 @@ Next
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ElementsAfterSelf">
@@ -1459,7 +1459,7 @@ Next
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ElementsAfterSelf">
@@ -1554,7 +1554,7 @@ Child5
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="ElementsAfterSelf">
@@ -1647,7 +1647,7 @@ Child4
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ElementsBeforeSelf">
@@ -1666,7 +1666,7 @@ Child4
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ElementsBeforeSelf">
@@ -1762,7 +1762,7 @@ Child2
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="ElementsBeforeSelf">
@@ -1855,7 +1855,7 @@ Child2
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="EqualityComparer">
@@ -1940,7 +1940,7 @@ Child 3 Information
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="IsAfter">
@@ -2035,7 +2035,7 @@ Child5 is after Child3
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="IsBefore">
@@ -2130,7 +2130,7 @@ Child5 is not before Child3
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="NextNode">
@@ -2246,7 +2246,7 @@ NodeType: Element   Child3
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="NodesAfterSelf">
@@ -2352,7 +2352,7 @@ Node type: Element
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="NodesBeforeSelf">
@@ -2457,7 +2457,7 @@ Node type: Element
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousNode">
@@ -2574,7 +2574,7 @@ NodeType: Element   Child1
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="ReadFrom">
@@ -2620,11 +2620,11 @@ NodeType: Element   Child1
   
  The reader that you pass to this method might throw exceptions. <xref:System.Xml.Linq.XNode.ReadFrom%2A> does not catch all exceptions thrown by the reader; the unhandled exceptions bubble up to the code that called <xref:System.Xml.Linq.XNode.ReadFrom%2A>. In particular, your code should be prepared to handle <xref:System.Xml.XmlException>.  
   
- For an example of how to stream a more complex document, see [How to: Stream XML Fragments with Access to Header Information](http://msdn.microsoft.com/library/01311522-9d03-4977-8641-2932c6f56092).  
+ For an example of how to stream a more complex document, see [How to: Stream XML Fragments with Access to Header Information](https://msdn.microsoft.com/library/01311522-9d03-4977-8641-2932c6f56092).  
   
  Certain standard query operators, such as <xref:System.Linq.Enumerable.OrderBy%2A>, iterate their source, collect all of the data, sort it, and then finally yield the first item in the sequence. If you use a query operator that materializes its source before yielding the first item, you will not retain a small memory footprint.  
   
- For an example of using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to transform extremely large XML documents while maintaining a small memory footprint, see [How to: Perform Streaming Transform of Large XML Documents](http://msdn.microsoft.com/library/0759e428-6e59-4d80-a506-365d3a6a2b73).  
+ For an example of using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to transform extremely large XML documents while maintaining a small memory footprint, see [How to: Perform Streaming Transform of Large XML Documents](https://msdn.microsoft.com/library/0759e428-6e59-4d80-a506-365d3a6a2b73).  
   
 ## Examples
 
@@ -2648,7 +2648,7 @@ ccc
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Xml.XmlReader" /> is not positioned on a recognized node type.</exception>
         <exception cref="T:System.Xml.XmlException">The underlying <see cref="T:System.Xml.XmlReader" /> throws an exception.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="ReadFromAsync">
@@ -2719,7 +2719,7 @@ ccc
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] programming, you should not manipulate or modify a set of nodes while you are querying for nodes in that set. In practical terms, this means that you should not iterate over a set of nodes and remove them. Instead, you should materialize them into a <xref:System.Collections.Generic.List%601> by using the <xref:System.Linq.Enumerable.ToList%2A> extension method. Then, you can iterate over the list to remove the nodes. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](http://msdn.microsoft.com/library/d9a5c404-2b0e-46cd-a358-0e78773b3094).  
+ In [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] programming, you should not manipulate or modify a set of nodes while you are querying for nodes in that set. In practical terms, this means that you should not iterate over a set of nodes and remove them. Instead, you should materialize them into a <xref:System.Collections.Generic.List%601> by using the <xref:System.Linq.Enumerable.ToList%2A> extension method. Then, you can iterate over the list to remove the nodes. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](https://msdn.microsoft.com/library/d9a5c404-2b0e-46cd-a358-0e78773b3094).  
   
  Alternatively, if you want to remove a set of nodes, it is recommended that you use the <xref:System.Xml.Linq.Extensions.Remove%2A?displayProperty=nameWithType> method. This method copies the nodes to a list, and then iterates over the list to remove the nodes.  
   
@@ -2774,7 +2774,7 @@ Console.WriteLine(xmlTree)
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReplaceWith">
@@ -2789,7 +2789,7 @@ Console.WriteLine(xmlTree)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -2844,7 +2844,7 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ReplaceWith">
@@ -2889,7 +2889,7 @@ Console.WriteLine(xmlTree)
   
  The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.ReplaceWith%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
   
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -2942,7 +2942,7 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="ReplaceWith">
@@ -2998,7 +2998,7 @@ Console.WriteLine(xmlTree)
   
  The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.ReplaceWith%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
   
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -3074,7 +3074,7 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ToString">
@@ -3086,7 +3086,7 @@ Console.WriteLine(xmlTree)
       </AssemblyInfo>
       <Docs>
         <summary>Returns the XML for this node, optionally disabling formatting.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ToString">
@@ -3153,7 +3153,7 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3230,7 +3230,7 @@ Console.WriteLine(root.ToString(SaveOptions.None))
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -3271,7 +3271,7 @@ Console.WriteLine(root.ToString(SaveOptions.None))
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this method to write code that does a streaming transform of a very large document. For more information, see [How to: Perform Streaming Transform of Large XML Documents](http://msdn.microsoft.com/library/0759e428-6e59-4d80-a506-365d3a6a2b73).  
+ You can use this method to write code that does a streaming transform of a very large document. For more information, see [How to: Perform Streaming Transform of Large XML Documents](https://msdn.microsoft.com/library/0759e428-6e59-4d80-a506-365d3a6a2b73).  
   
    
   
@@ -3336,7 +3336,7 @@ Console.WriteLine(sb.ToString())
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="WriteToAsync">

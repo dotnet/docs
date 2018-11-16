@@ -38,7 +38,7 @@
   
  The <xref:System.Linq.IQueryable> interface inherits the <xref:System.Collections.IEnumerable> interface so that if it represents a query, the results of that query can be enumerated. Enumeration causes the expression tree associated with an <xref:System.Linq.IQueryable> object to be executed. The definition of "executing an expression tree" is specific to a query provider. For example, it may involve translating the expression tree to an appropriate query language for the underlying data source. Queries that do not return enumerable results are executed when the <xref:System.Linq.IQueryProvider.Execute%2A> method is called.  
   
- For more information about how to create your own LINQ provider, see [LINQ: Building an IQueryable Provider](http://go.microsoft.com/fwlink/?LinkID=112370) on MSDN Blogs.  
+ For more information about how to create your own LINQ provider, see [LINQ: Building an IQueryable Provider](https://go.microsoft.com/fwlink/?LinkID=112370) on MSDN Blogs.  
   
  ]]></format>
     </remarks>

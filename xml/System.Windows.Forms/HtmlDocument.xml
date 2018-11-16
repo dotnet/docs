@@ -204,7 +204,7 @@
 ## Remarks  
  You should not attach an event to the document or one of its objects until the document has completed loading. The earliest you should call this method is in the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event of the <xref:System.Windows.Forms.WebBrowser> control.  
   
- This method allows you to attach handlers to unmanaged DOM events not exposed by <xref:System.Windows.Forms.HtmlDocument>. For more information about available unmanaged DOM events, see [Accessing Unexposed Members on the Managed HTML Document Object Model](~/docs/framework/winforms/controls/accessing-unexposed-members-on-the-managed-html-document-object-model.md) and the IHTMLDocument interfaces: [IHTMLDocument](http://go.microsoft.com/fwlink/?LinkId=104882), [IHTMLDocument2](http://go.microsoft.com/fwlink/?LinkId=104884), [IHTMLDocument3](http://go.microsoft.com/fwlink/?LinkId=104886), [IHTMLDocument4](http://go.microsoft.com/fwlink/?LinkId=104887), [IHTMLDocument5](http://go.microsoft.com/fwlink/?LinkId=104888).  
+ This method allows you to attach handlers to unmanaged DOM events not exposed by <xref:System.Windows.Forms.HtmlDocument>. For more information about available unmanaged DOM events, see [Accessing Unexposed Members on the Managed HTML Document Object Model](~/docs/framework/winforms/controls/accessing-unexposed-members-on-the-managed-html-document-object-model.md) and the IHTMLDocument interfaces: [IHTMLDocument](https://go.microsoft.com/fwlink/?LinkId=104882), [IHTMLDocument2](https://go.microsoft.com/fwlink/?LinkId=104884), [IHTMLDocument3](https://go.microsoft.com/fwlink/?LinkId=104886), [IHTMLDocument4](https://go.microsoft.com/fwlink/?LinkId=104887), [IHTMLDocument5](https://go.microsoft.com/fwlink/?LinkId=104888).  
   
  ]]></format>
         </remarks>
@@ -594,7 +594,7 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">For <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /> permission. Associated enumeration: <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /></permission>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574(v=vs.85)">IHTMLDocument2 Interface</related>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=128638">MSHTML Reference</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=128638">MSHTML Reference</related>
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -678,7 +678,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Forms.HtmlDocument.ExecCommand%2A> exposes a large array of commands for which there are no methods exposed on <xref:System.Windows.Forms.HtmlDocument>. Using <xref:System.Windows.Forms.HtmlDocument.ExecCommand%2A> you can insert new HTML elements, select and format text, and clear any cached authentication credentials. For a full list of commands, see [Command Identifiers](http://go.microsoft.com/fwlink/?LinkId=198814).  
+ <xref:System.Windows.Forms.HtmlDocument.ExecCommand%2A> exposes a large array of commands for which there are no methods exposed on <xref:System.Windows.Forms.HtmlDocument>. Using <xref:System.Windows.Forms.HtmlDocument.ExecCommand%2A> you can insert new HTML elements, select and format text, and clear any cached authentication credentials. For a full list of commands, see [Command Identifiers](https://go.microsoft.com/fwlink/?LinkId=198814).  
   
 > [!NOTE]
 >  Certain commands, such as copy, have return values. In the current implementation of <xref:System.Windows.Forms.HtmlDocument.ExecCommand%2A>, you cannot obtain a return value from your call. To retrieve return values, use the corresponding unmanaged method on a <xref:System.Windows.Forms.HtmlDocument.DomDocument%2A> reference instead.  
@@ -686,7 +686,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/ms536419.aspx">execCommand Method</related>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=198814">Command Identifiers</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=198814">Command Identifiers</related>
       </Docs>
     </Member>
     <Member MemberName="Focus">

@@ -88,7 +88,7 @@
       </Parameters>
       <Docs>
         <param name="name">The XML qualified name.</param>
-        <summary>Evaluates the argument to a string that is an XML qualified name. This method implements the <c>element-available</c> function specified by [W3C XSL Transformations (XSLT)](http://go.microsoft.com/fwlink/?LinkID=49919).</summary>
+        <summary>Evaluates the argument to a string that is an XML qualified name. This method implements the <c>element-available</c> function specified by [W3C XSL Transformations (XSLT)](https://go.microsoft.com/fwlink/?LinkID=49919).</summary>
         <returns>
           <see langword="true" /> if the <see href="https://www.w3.org/TR/xml-names11/">expanded name</see> is the name of an instruction. If the <see langword="expanded name" /> has a namespace URI equal to the XSLT namespace URI, then it refers to an element defined by XSLT. Otherwise, the expanded-name refers to an extension element. If the <see langword="expanded name" /> has a null namespace URI, the element-available function will return <see langword="false" />.</returns>
         <remarks>
@@ -212,7 +212,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Xsl.Runtime.XsltLibrary.FormatNumberDynamic%2A> method formats `value` by using the `formatPicture` and decimal-format [expanded name](http://go.microsoft.com/fwlink/?LinkID=148269). The `errorMessageName` is used only for error reporting and must contain the qualified name of the decimal-format object.  
+ The <xref:System.Xml.Xsl.Runtime.XsltLibrary.FormatNumberDynamic%2A> method formats `value` by using the `formatPicture` and decimal-format [expanded name](https://go.microsoft.com/fwlink/?LinkID=148269). The `errorMessageName` is used only for error reporting and must contain the qualified name of the decimal-format object.  
   
  ]]></format>
         </remarks>

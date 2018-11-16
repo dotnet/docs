@@ -1523,9 +1523,9 @@
 >  Check your browser documentation to determine if the `_search` value is supported. For example, Microsoft Internet Explorer 5.0 and later support the `_search` target value.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.MenuItem.Target%2A> property is rendered as a `target` attribute. The `target` attribute on anchor elements is not allowed in the XHTML 1.1 strict document type definition. Do not set the <xref:System.Web.UI.WebControls.MenuItem.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.HyperLink> must be XHTML 1.1-compliant. For more information, see [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
+>  The <xref:System.Web.UI.WebControls.MenuItem.Target%2A> property is rendered as a `target` attribute. The `target` attribute on anchor elements is not allowed in the XHTML 1.1 strict document type definition. Do not set the <xref:System.Web.UI.WebControls.MenuItem.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.HyperLink> must be XHTML 1.1-compliant. For more information, see [XHTML Standards in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
 >   
->  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.MenuItem.Target%2A> property to target another window. For more information, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13).  
+>  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.MenuItem.Target%2A> property to target another window. For more information, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13).  
   
    
   
@@ -1584,7 +1584,7 @@
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.MenuItem.Text%2A> property contains `null`, the `get` accessor returns the value of the <xref:System.Web.UI.WebControls.MenuItem.Value%2A> property. If the <xref:System.Web.UI.WebControls.MenuItem.Value%2A> property, in turn, contains `null`, <xref:System.String.Empty> is returned.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -1639,7 +1639,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.MenuItem.ToolTip%2A> property to specify the ToolTip text for the menu item. The ToolTip text is displayed when the mouse pointer is positioned over the menu item.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -1703,7 +1703,7 @@
 > [!NOTE]
 >  Menu items at the same menu level must each have a unique value for the <xref:System.Web.UI.WebControls.MenuItem.Value%2A> property; the <xref:System.Web.UI.WebControls.Menu> control cannot distinguish between different menu items at the same level that have the same value.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   

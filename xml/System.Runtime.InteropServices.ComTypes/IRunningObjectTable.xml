@@ -43,9 +43,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can retrieve an interface to the running object table by calling the COM [GetRunningObjectTable](http://go.microsoft.com/fwlink/?LinkId=163472) function.  
+ You can retrieve an interface to the running object table by calling the COM [GetRunningObjectTable](https://go.microsoft.com/fwlink/?LinkId=163472) function.  
   
- For more information, see the documentation for the COM [IRunningObjectTable](http://go.microsoft.com/fwlink/?LinkId=163473) interface in the MSDN library.  
+ For more information, see the documentation for the COM [IRunningObjectTable](https://go.microsoft.com/fwlink/?LinkId=163473) interface in the MSDN library.  
   
  The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
   
@@ -94,7 +94,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see the documentation for the [IRunningObjectTable::EnumRunning](http://go.microsoft.com/fwlink/?LinkId=163475) method in the MSDN library.  
+ For more information, see the documentation for the [IRunningObjectTable::EnumRunning](https://go.microsoft.com/fwlink/?LinkId=163475) method in the MSDN library.  
   
  ]]></format>
         </remarks>
@@ -144,7 +144,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see the documentation for the [IRunningObjectTable::GetObject](http://go.microsoft.com/fwlink/?LinkId=163476) method in the MSDN library.  
+ For more information, see the documentation for the [IRunningObjectTable::GetObject](https://go.microsoft.com/fwlink/?LinkId=163476) method in the MSDN library.  
   
  ]]></format>
         </remarks>
@@ -194,7 +194,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see the documentation for the [IRunningObjectTable::GetTimeOfLastChange](http://go.microsoft.com/fwlink/?LinkId=163477) method in the MSDN library.  
+ For more information, see the documentation for the [IRunningObjectTable::GetTimeOfLastChange](https://go.microsoft.com/fwlink/?LinkId=163477) method in the MSDN library.  
   
  ]]></format>
         </remarks>
@@ -242,7 +242,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see the documentation for the [IRunningObjectTable::IsRunning](http://go.microsoft.com/fwlink/?LinkId=163478) method in the MSDN library.  
+ For more information, see the documentation for the [IRunningObjectTable::IsRunning](https://go.microsoft.com/fwlink/?LinkId=163478) method in the MSDN library.  
   
  ]]></format>
         </remarks>
@@ -291,7 +291,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see the documentation for the [IRunningObjectTable::NoteChangeTime](http://go.microsoft.com/fwlink/?LinkId=163479) method in the MSDN library.  
+ For more information, see the documentation for the [IRunningObjectTable::NoteChangeTime](https://go.microsoft.com/fwlink/?LinkId=163479) method in the MSDN library.  
   
  ]]></format>
         </remarks>
@@ -343,7 +343,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ROT references to `punkObject` (weak and strong) determine object lifetime. For more information, see the documentation for the COM [IRunningObjectTable::Register](http://go.microsoft.com/fwlink/?LinkId=163474) method in the MSDN library.  
+ ROT references to `punkObject` (weak and strong) determine object lifetime. For more information, see the documentation for the COM [IRunningObjectTable::Register](https://go.microsoft.com/fwlink/?LinkId=163474) method in the MSDN library.  
   
  ]]></format>
         </remarks>
@@ -390,7 +390,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see the documentation for the [IRunningObjectTable::Revoke](http://go.microsoft.com/fwlink/?LinkId=163480) method in the MSDN library.  
+ For more information, see the documentation for the [IRunningObjectTable::Revoke](https://go.microsoft.com/fwlink/?LinkId=163480) method in the MSDN library.  
   
  ]]></format>
         </remarks>

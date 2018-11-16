@@ -153,7 +153,7 @@
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.MultiView> control to create a basic survey. Each <xref:System.Web.UI.WebControls.View> control is a separate survey question. When the user clicks the **Previous** button on any page, the <xref:System.Web.UI.WebControls.MultiView.ActiveViewIndex%2A> property is decremented to navigate to the previous <xref:System.Web.UI.WebControls.View> control. When the user clicks the **Next** button on any page, the <xref:System.Web.UI.WebControls.MultiView.ActiveViewIndex%2A> property is incremented to navigate to the next <xref:System.Web.UI.WebControls.View> control.  
   
 > [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MultiView.ActiveViewIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.ActiveViewIndex Example/cs/multiviewactiveviewindexcs.aspx#1)]
  [!code-aspx-vb[MultiView.ActiveViewIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.ActiveViewIndex Example/VB/multiviewactiveviewindexvb.aspx#1)]  
@@ -169,7 +169,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.View" />
-    <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -195,7 +195,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ActiveViewChanged">
@@ -230,7 +230,7 @@
  The following example demonstrates how to specify and code an event handler for the <xref:System.Web.UI.WebControls.MultiView.ActiveViewChanged> event of a <xref:System.Web.UI.WebControls.MultiView> control. When the active view changes, a message is displayed in a <xref:System.Web.UI.WebControls.Label> control on the page.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/cs/multiviewactiveviewchangedeventcs.aspx#1)]
  [!code-aspx-vb[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/VB/multiviewactiveviewchangedeventvb.aspx#1)]  
@@ -238,7 +238,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.MultiView.OnActiveViewChanged(System.EventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ActiveViewIndex">
@@ -283,7 +283,7 @@
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.MultiView> control to create a basic survey. Each <xref:System.Web.UI.WebControls.View> control is a separate survey question. When the user clicks the **Previous** button on any page, the <xref:System.Web.UI.WebControls.MultiView.ActiveViewIndex%2A> property is decremented to navigate to the previous <xref:System.Web.UI.WebControls.View> control. When the user clicks the **Next** button on any page, the <xref:System.Web.UI.WebControls.MultiView.ActiveViewIndex%2A> property is incremented to navigate to the next <xref:System.Web.UI.WebControls.View> control.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MultiView.ActiveViewIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.ActiveViewIndex Example/cs/multiviewactiveviewindexcs.aspx#1)]
  [!code-aspx-vb[MultiView.ActiveViewIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.ActiveViewIndex Example/VB/multiviewactiveviewindexvb.aspx#1)]  
@@ -294,7 +294,7 @@
         <altmember cref="T:System.Web.UI.WebControls.View" />
         <altmember cref="M:System.Web.UI.WebControls.MultiView.SetActiveView(System.Web.UI.WebControls.View)" />
         <altmember cref="M:System.Web.UI.WebControls.MultiView.GetActiveView" />
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -330,7 +330,7 @@
         <exception cref="T:System.Web.HttpException">The specified <see cref="T:System.Object" /> is not a <see cref="T:System.Web.UI.WebControls.View" /> control.</exception>
         <altmember cref="T:System.Web.UI.WebControls.View" />
         <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -363,7 +363,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.View" />
         <altmember cref="T:System.Web.UI.WebControls.ViewCollection" />
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -401,7 +401,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetActiveView">
@@ -438,7 +438,7 @@
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.MultiView> control that contains three <xref:System.Web.UI.WebControls.View> controls. When the <xref:System.Web.UI.WebControls.MultiView.ActiveViewChanged> event is raised, the <xref:System.Web.UI.WebControls.MultiView.GetActiveView%2A> method is used to return the current active view and display it in a <xref:System.Web.UI.WebControls.Label> control on the page.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/cs/multiviewactiveviewchangedeventcs.aspx#1)]
  [!code-aspx-vb[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/VB/multiviewactiveviewchangedeventvb.aspx#1)]  
@@ -449,7 +449,7 @@
         <altmember cref="T:System.Web.UI.WebControls.View" />
         <altmember cref="M:System.Web.UI.WebControls.MultiView.SetActiveView(System.Web.UI.WebControls.View)" />
         <altmember cref="P:System.Web.UI.WebControls.MultiView.ActiveViewIndex" />
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -475,7 +475,7 @@
         <param name="state">An <see cref="T:System.Object" /> that represents the state of the <see cref="T:System.Web.UI.WebControls.MultiView" /> control.</param>
         <summary>Loads the current state of the <see cref="T:System.Web.UI.WebControls.MultiView" /> control.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="NextViewCommandName">
@@ -518,7 +518,7 @@
         <altmember cref="F:System.Web.UI.WebControls.MultiView.PreviousViewCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIDCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIndexCommandName" />
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnActiveViewChanged">
@@ -559,7 +559,7 @@
  The following example demonstrates how to specify and code an event handler for the <xref:System.Web.UI.WebControls.MultiView.ActiveViewChanged> event of a <xref:System.Web.UI.WebControls.MultiView> control. When the active view changes, a message is displayed in a <xref:System.Web.UI.WebControls.Label> control on the page.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/cs/multiviewactiveviewchangedeventcs.aspx#1)]
  [!code-aspx-vb[MultiView.ActiveViewChanged Event Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.ActiveViewChanged Event Example/VB/multiviewactiveviewchangedeventvb.aspx#1)]  
@@ -570,7 +570,7 @@
           <para>When overriding <see cref="M:System.Web.UI.WebControls.MultiView.OnActiveViewChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.MultiView.OnActiveViewChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.MultiView.ActiveViewChanged" />
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -609,7 +609,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.UI.WebControls.MultiView" /> control cannot find the <see cref="T:System.Web.UI.WebControls.View" /> specified in the <see cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" /> property of <paramref name="e" />.</exception>
         <exception cref="T:System.FormatException">The <see cref="P:System.Web.UI.WebControls.CommandEventArgs.CommandArgument" /> property of <paramref name="e" /> cannot be parsed as an integer.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -642,7 +642,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousViewCommandName">
@@ -677,7 +677,7 @@
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.MultiView> control to create a basic survey. Each <xref:System.Web.UI.WebControls.View> control is a separate survey question. The <xref:System.Web.UI.WebControls.MultiView.PreviousViewCommandName> and <xref:System.Web.UI.WebControls.MultiView.NextViewCommandName> fields are used to provide automatic navigation between the previous and next <xref:System.Web.UI.WebControls.View> controls in the survey.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MultiView.NextViewCommandName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.NextViewCommandName/CS/multiview.nextviewcommandnamecs.aspx#1)]
  [!code-aspx-vb[MultiView.NextViewCommandName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.NextViewCommandName/VB/multiview.nextviewcommandnamevb.aspx#1)]  
@@ -688,7 +688,7 @@
         <altmember cref="F:System.Web.UI.WebControls.MultiView.NextViewCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIDCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIndexCommandName" />
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemovedControl">
@@ -721,7 +721,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -758,7 +758,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
@@ -782,7 +782,7 @@
         <summary>Saves the current state of the <see cref="T:System.Web.UI.WebControls.MultiView" /> control.</summary>
         <returns>An <see cref="T:System.Object" /> that represents the state of the <see cref="T:System.Web.UI.WebControls.MultiView" /> control. If there is no state associated with the <see cref="T:System.Web.UI.WebControls.MultiView" /> control, this method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SetActiveView">
@@ -822,7 +822,7 @@
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.MultiView> control that contains three <xref:System.Web.UI.WebControls.View> controls. The first time the page is loaded, the `DefaultView` is set as the active view using the <xref:System.Web.UI.WebControls.MultiView.SetActiveView%2A> method. Each <xref:System.Web.UI.WebControls.View> control contains link buttons to allow the user to navigate to different views.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-vb[MultiView Class Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView Class Example/VB/multiviewclass1vb.aspx#1)]  
   
@@ -832,7 +832,7 @@
         <altmember cref="P:System.Web.UI.WebControls.MultiView.ActiveViewIndex" />
         <altmember cref="M:System.Web.UI.WebControls.MultiView.GetActiveView" />
         <altmember cref="T:System.Web.UI.WebControls.View" />
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SwitchViewByIDCommandName">
@@ -867,7 +867,7 @@
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.MultiView> control to create a basic survey. Each <xref:System.Web.UI.WebControls.View> control is a separate survey question. The <xref:System.Web.UI.WebControls.MultiView.PreviousViewCommandName> and <xref:System.Web.UI.WebControls.MultiView.NextViewCommandName> fields are used to provide automatic navigation between the previous and next <xref:System.Web.UI.WebControls.View> controls in the survey. If the user clicks the **Retake Survey** button in the last <xref:System.Web.UI.WebControls.View> of the survey, the <xref:System.Web.UI.WebControls.MultiView.SwitchViewByIDCommandName> field is used along with a command argument of "Page1" to redirect the user back to the first <xref:System.Web.UI.WebControls.View> of the survey.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MultiView.NextViewCommandName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.NextViewCommandName/CS/multiview.nextviewcommandnamecs.aspx#1)]
  [!code-aspx-vb[MultiView.NextViewCommandName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.NextViewCommandName/VB/multiview.nextviewcommandnamevb.aspx#1)]  
@@ -878,7 +878,7 @@
         <altmember cref="F:System.Web.UI.WebControls.MultiView.PreviousViewCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.MultiView.NextViewCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIndexCommandName" />
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SwitchViewByIndexCommandName">
@@ -913,7 +913,7 @@
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.MultiView> control to create a basic survey. Each <xref:System.Web.UI.WebControls.View> control is a separate survey question. The <xref:System.Web.UI.WebControls.MultiView.PreviousViewCommandName> and <xref:System.Web.UI.WebControls.MultiView.NextViewCommandName> fields are used to provide automatic navigation between the previous and next <xref:System.Web.UI.WebControls.View> controls in the survey. If the user clicks the **Retake Survey** button in the last <xref:System.Web.UI.WebControls.View> of the survey, the <xref:System.Web.UI.WebControls.MultiView.SwitchViewByIndexCommandName> field is used along with a command argument of 0 to redirect the user back to the first <xref:System.Web.UI.WebControls.View> of the survey.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-csharp[MultiView.SwitchViewByIndexCommandName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MultiView.SwitchViewByIndexCommandName/CS/multiview.switchviewbyindexcommandnamecs.aspx#1)]
  [!code-aspx-vb[MultiView.SwitchViewByIndexCommandName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.SwitchViewByIndexCommandName/VB/multiview.switchviewbyindexcommandnamevb.aspx#1)]  
@@ -924,7 +924,7 @@
         <altmember cref="F:System.Web.UI.WebControls.MultiView.SwitchViewByIDCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.MultiView.PreviousViewCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.MultiView.NextViewCommandName" />
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Views">
@@ -966,14 +966,14 @@
  The following example demonstrates how to programmatically add <xref:System.Web.UI.WebControls.View> controls to a <xref:System.Web.UI.WebControls.MultiView> control. After each <xref:System.Web.UI.WebControls.View> control is created, the `MultiView.Views.Add()` syntax is used to add the <xref:System.Web.UI.WebControls.View> control to the <xref:System.Web.UI.WebControls.ViewCollection> collection of the <xref:System.Web.UI.WebControls.MultiView> control.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-aspx-vb[MultiView.Views Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.Views Example/VB/multiviewviewsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ViewCollection" />
-        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
   </Members>

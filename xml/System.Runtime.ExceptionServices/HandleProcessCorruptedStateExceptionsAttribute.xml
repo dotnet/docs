@@ -40,7 +40,7 @@
   
  You can also add the [\<legacyCorruptedStateExceptionsPolicy>](~/docs/framework/configure-apps/file-schema/runtime/legacycorruptedstateexceptionspolicy-element.md) element to your application's configuration file. This will ensure that corrupted state exceptions are delivered to your exception handlers without the <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> or <xref:System.Security.SecurityCriticalAttribute> attribute. This configuration element has no effect on applications that were compiled in versions previous to the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] but are running in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] or later; corrupted state exceptions will continue to be delivered for those applications. The <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attribute is ignored when it is encountered in partially trusted or transparent code, because a trusted host should not allow an untrusted add-in to catch and ignore these serious exceptions.  
   
- For more information about corrupted process state exceptions, see the entry [Handling Corrupted State Exceptions](http://go.microsoft.com/fwlink/?LinkID=179681) in the CLR Inside Out blog.  
+ For more information about corrupted process state exceptions, see the entry [Handling Corrupted State Exceptions](https://go.microsoft.com/fwlink/?LinkID=179681) in the CLR Inside Out blog.  
   
  ]]></format>
     </remarks>

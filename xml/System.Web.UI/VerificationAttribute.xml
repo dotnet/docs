@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An instance of the <xref:System.Web.UI.VerificationAttribute> class defines a Web content accessibility rule that can be verified. For more information on Web Content Accessibility Guidelines, see the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125).  
+ An instance of the <xref:System.Web.UI.VerificationAttribute> class defines a Web content accessibility rule that can be verified. For more information on Web Content Accessibility Guidelines, see the [World Wide Web Consortium (W3C) Web site](https://go.microsoft.com/fwlink/?linkid=37125).  
   
  The minimal amount of information required to define an instance of a <xref:System.Web.UI.VerificationAttribute> includes:  
   
@@ -58,7 +58,7 @@
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.Web.UI.VerificationAttribute> class. In the verification metadata definition, the guidelines used are "WCAG," the Web Content Accessibility Guideline, and "ADA," Americans with Disabilities Act Guidelines. For more information, see the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125).  
+ The following code example demonstrates using the <xref:System.Web.UI.VerificationAttribute> class. In the verification metadata definition, the guidelines used are "WCAG," the Web Content Accessibility Guideline, and "ADA," Americans with Disabilities Act Guidelines. For more information, see the [World Wide Web Consortium (W3C) Web site](https://go.microsoft.com/fwlink/?linkid=37125).  
   
  The checkpoints used are "1.1" and "1194.22(a)" for WCAG and ADA, respectively, checkpoints for ensuring that a text equivalent exists for non-text elements. The <xref:System.Web.UI.VerificationAttribute> is applied to the `ImageText` property that represents the text equivalent of another property called `ImageProperty`. If the `ImageText` property is not set, the accessibility verification will return the message "The image is missing a text equivalent."  
   
@@ -261,7 +261,7 @@
 ## Remarks  
  The <xref:System.Web.UI.VerificationAttribute.Checkpoint%2A> property is set when the <xref:System.Web.UI.VerificationAttribute> instance is created and is required.  
   
- For the Web Content Accessibility Guidelines defined on the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125) the <xref:System.Web.UI.VerificationAttribute.Checkpoint%2A> property is specified as a guideline number followed by a period (.) followed by a checkpoint number.  
+ For the Web Content Accessibility Guidelines defined on the [World Wide Web Consortium (W3C) Web site](https://go.microsoft.com/fwlink/?linkid=37125) the <xref:System.Web.UI.VerificationAttribute.Checkpoint%2A> property is specified as a guideline number followed by a period (.) followed by a checkpoint number.  
   
  ]]></format>
         </remarks>

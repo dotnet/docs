@@ -41,10 +41,10 @@
 > [!IMPORTANT]
 >  In the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Globalization.IdnMapping> class supports different versions of the IDNA standard, depending on the operating system in use:  
 >   
->  -   When run on [!INCLUDE[win8](~/includes/win8-md.md)], it supports the 2008 version of the IDNA standard outlined by [RFC 5891: Internationalized Domain Names in Applications (IDNA): Protocol](http://go.microsoft.com/fwlink/?LinkId=231875).  
-> -   When run on earlier versions of the Windows operating system, it supports the 2003 version of the standard outlined by [RFC 3490: Internationalizing Domain Names in Applications (IDNA)](http://go.microsoft.com/fwlink/?LinkId=158110).  
+>  -   When run on [!INCLUDE[win8](~/includes/win8-md.md)], it supports the 2008 version of the IDNA standard outlined by [RFC 5891: Internationalized Domain Names in Applications (IDNA): Protocol](https://go.microsoft.com/fwlink/?LinkId=231875).  
+> -   When run on earlier versions of the Windows operating system, it supports the 2003 version of the standard outlined by [RFC 3490: Internationalizing Domain Names in Applications (IDNA)](https://go.microsoft.com/fwlink/?LinkId=158110).  
 >   
->  See [Unicode Technical Standard #46: IDNA Compatibility Processing](http://go.microsoft.com/fwlink/?LinkId=232459) for the differences in the way these standards handle particular sets of characters.  
+>  See [Unicode Technical Standard #46: IDNA Compatibility Processing](https://go.microsoft.com/fwlink/?LinkId=232459) for the differences in the way these standards handle particular sets of characters.  
   
  The <xref:System.Globalization.IdnMapping.GetAscii%2A?displayProperty=nameWithType> method normalizes a domain name, converts the normalized name to a representation that consists of displayable Unicode characters in the US-ASCII code point range (U+0020 to U+007E), and prepends an ASCII-compatible encoding (ACE) prefix ("xn--") to each label. The <xref:System.Globalization.IdnMapping.GetUnicode%2A?displayProperty=nameWithType> method restores the domain name labels converted by the <xref:System.Globalization.IdnMapping.GetAscii%2A> method.  
   
@@ -141,7 +141,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A registered domain name cannot contain unassigned code points. Consequently, the default value of the <xref:System.Globalization.IdnMapping.AllowUnassigned%2A> property is `false`. The IDNA specification permits unassigned code points only in queries for matching strings (that is, in domain name lookup). For more information about the use of unassigned code points in domain names, see [RFC 3454, "Preparation of Internationalized Strings (stringprep)"](http://go.microsoft.com/fwlink/?LinkId=231873) and [RFC 5891, "Internationalized Domain Names in Applications (IDNA): Protocol"](http://go.microsoft.com/fwlink/?LinkId=231875).  
+ A registered domain name cannot contain unassigned code points. Consequently, the default value of the <xref:System.Globalization.IdnMapping.AllowUnassigned%2A> property is `false`. The IDNA specification permits unassigned code points only in queries for matching strings (that is, in domain name lookup). For more information about the use of unassigned code points in domain names, see [RFC 3454, "Preparation of Internationalized Strings (stringprep)"](https://go.microsoft.com/fwlink/?LinkId=231873) and [RFC 5891, "Internationalized Domain Names in Applications (IDNA): Protocol"](https://go.microsoft.com/fwlink/?LinkId=231875).  
   
 > [!IMPORTANT]
 >  If the <xref:System.Globalization.IdnMapping.AllowUnassigned%2A> property is `false`, the behavior associated with the property depends on the underlying operating system. On [!INCLUDE[win8](~/includes/win8-md.md)], the <xref:System.Globalization.IdnMapping> class conforms to IDNA 2008, which is based on the Unicode 6.0 standard. On previous versions of Windows, the <xref:System.Globalization.IdnMapping> class is based on IDNA 2003, which is based on Unicode 3.*x*. Some code points that were unassigned in IDNA 2003 have been assigned characters and are supported in IDNA 2008. For example, U+0221 was introduced in Unicode 4.0. On [!INCLUDE[win8](~/includes/win8-md.md)], it is encoded as "xn—6la". On previous versions of Windows, it throws an <xref:System.ArgumentException> exception.  
@@ -251,7 +251,7 @@
   
 -   Non-standard characters in the US-ASCII character range, such as the SPACE (U+0020), EXCLAMATION MARK (U+0021), and LOW LINE (U+005F) characters, if the value of the <xref:System.Globalization.IdnMapping.UseStd3AsciiRules%2A> property is `true`.  
   
--   Characters that are prohibited by a specific version of the IDNA standard. For more information about prohibited characters, see [RFC 3454: Preparation of Internationalized Strings ("stringprep")](http://go.microsoft.com/fwlink/?LinkId=231873) for IDNA 2003, and [RFC 5982: The Unicode Code Points and Internationalized Domain Names for Applications](http://go.microsoft.com/fwlink/?LinkId=231877) for IDNA 2008.  
+-   Characters that are prohibited by a specific version of the IDNA standard. For more information about prohibited characters, see [RFC 3454: Preparation of Internationalized Strings ("stringprep")](https://go.microsoft.com/fwlink/?LinkId=231873) for IDNA 2003, and [RFC 5982: The Unicode Code Points and Internationalized Domain Names for Applications](https://go.microsoft.com/fwlink/?LinkId=231877) for IDNA 2008.  
   
  The <xref:System.Globalization.IdnMapping.GetAscii%2A> method converts all label separators to FULL STOP (period, U+002E).  
   
@@ -274,11 +274,11 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <see cref="T:System.Globalization.IdnMapping" /> class supports different versions of the IDNA standard, depending on the operating system in use:  
   
--   When run on [!INCLUDE[win8](~/includes/win8-md.md)], it supports the 2008 version of the IDNA standard outlined by [RFC 5891: Internationalized Domain Names in Applications (IDNA): Protocol](http://go.microsoft.com/fwlink/?LinkId=231875).  
+-   When run on [!INCLUDE[win8](~/includes/win8-md.md)], it supports the 2008 version of the IDNA standard outlined by [RFC 5891: Internationalized Domain Names in Applications (IDNA): Protocol](https://go.microsoft.com/fwlink/?LinkId=231875).  
   
--   When run on earlier versions of the Windows operating system, it supports the 2003 version of the standard outlined by [RFC 3490: Internationalizing Domain Names in Applications (IDNA)](http://go.microsoft.com/fwlink/?LinkId=158110).  
+-   When run on earlier versions of the Windows operating system, it supports the 2003 version of the standard outlined by [RFC 3490: Internationalizing Domain Names in Applications (IDNA)](https://go.microsoft.com/fwlink/?LinkId=158110).  
   
- See [Unicode Technical Standard #46: IDNA Compatibility Processing](http://go.microsoft.com/fwlink/?LinkId=232459) for the differences in the way these standards handle particular sets of characters.</para>
+ See [Unicode Technical Standard #46: IDNA Compatibility Processing](https://go.microsoft.com/fwlink/?LinkId=232459) for the differences in the way these standards handle particular sets of characters.</para>
         </block>
       </Docs>
     </Member>
@@ -335,7 +335,7 @@
   
 -   Non-standard characters in the US-ASCII character range, such as the SPACE (U+0020), EXCLAMATION MARK (U+0021), and LOW LINE (U+005F) characters, depending on the value of the <xref:System.Globalization.IdnMapping.UseStd3AsciiRules%2A> property.  
   
--   Characters that are prohibited by a specific version of the IDNA standard. For more information about prohibited characters, see [RFC 3454: Preparation of Internationalized Strings ("stringprep")](http://go.microsoft.com/fwlink/?LinkId=231873) for IDNA 2003, and [RFC 5982: The Unicode Code Points and Internationalized Domain Names for Applications](http://go.microsoft.com/fwlink/?LinkId=231877) for IDNA 2008.  
+-   Characters that are prohibited by a specific version of the IDNA standard. For more information about prohibited characters, see [RFC 3454: Preparation of Internationalized Strings ("stringprep")](https://go.microsoft.com/fwlink/?LinkId=231873) for IDNA 2003, and [RFC 5982: The Unicode Code Points and Internationalized Domain Names for Applications](https://go.microsoft.com/fwlink/?LinkId=231877) for IDNA 2008.  
   
  The <xref:System.Globalization.IdnMapping.GetAscii%2A> method converts all label separators to FULL STOP (period, U+002E).  
   
@@ -364,11 +364,11 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <see cref="T:System.Globalization.IdnMapping" /> class supports different versions of the IDNA standard, depending on the operating system in use:  
   
--   When run on [!INCLUDE[win8](~/includes/win8-md.md)], it supports the 2008 version of the IDNA standard outlined by [RFC 5891: Internationalized Domain Names in Applications (IDNA): Protocol](http://go.microsoft.com/fwlink/?LinkId=231875).  
+-   When run on [!INCLUDE[win8](~/includes/win8-md.md)], it supports the 2008 version of the IDNA standard outlined by [RFC 5891: Internationalized Domain Names in Applications (IDNA): Protocol](https://go.microsoft.com/fwlink/?LinkId=231875).  
   
--   When run on earlier versions of the Windows operating system, it supports the 2003 version of the standard outlined by [RFC 3490: Internationalizing Domain Names in Applications (IDNA)](http://go.microsoft.com/fwlink/?LinkId=158110).  
+-   When run on earlier versions of the Windows operating system, it supports the 2003 version of the standard outlined by [RFC 3490: Internationalizing Domain Names in Applications (IDNA)](https://go.microsoft.com/fwlink/?LinkId=158110).  
   
- See [Unicode Technical Standard #46: IDNA Compatibility Processing](http://go.microsoft.com/fwlink/?LinkId=232459) for the differences in the way these standards handle particular sets of characters.</para>
+ See [Unicode Technical Standard #46: IDNA Compatibility Processing](https://go.microsoft.com/fwlink/?LinkId=232459) for the differences in the way these standards handle particular sets of characters.</para>
         </block>
       </Docs>
     </Member>
@@ -427,7 +427,7 @@
   
 -   Non-standard characters in the US-ASCII character range, such as the SPACE (U+0020), EXCLAMATION MARK (U+0021), and LOW LINE (U+005F) characters, depending on the value of the <xref:System.Globalization.IdnMapping.UseStd3AsciiRules%2A> property.  
   
--   Characters that are prohibited by a specific version of the IDNA standard. For more information about prohibited characters, see [RFC 3454: Preparation of Internationalized Strings ("stringprep")](http://go.microsoft.com/fwlink/?LinkId=231873) for IDNA 2003, and [RFC 5982: The Unicode Code Points and Internationalized Domain Names for Applications](http://go.microsoft.com/fwlink/?LinkId=231877) for IDNA 2008.  
+-   Characters that are prohibited by a specific version of the IDNA standard. For more information about prohibited characters, see [RFC 3454: Preparation of Internationalized Strings ("stringprep")](https://go.microsoft.com/fwlink/?LinkId=231873) for IDNA 2003, and [RFC 5982: The Unicode Code Points and Internationalized Domain Names for Applications](https://go.microsoft.com/fwlink/?LinkId=231877) for IDNA 2008.  
   
  The <xref:System.Globalization.IdnMapping.GetAscii%2A> method converts all label separators to FULL STOP (period, U+002E). If the substring contains no characters outside the US-ASCII character range, and no characters within the US-ASCII character range are prohibited, the method returns the substring unchanged.  
   
@@ -458,11 +458,11 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <see cref="T:System.Globalization.IdnMapping" /> class supports different versions of the IDNA standard, depending on the operating system in use:  
   
--   When run on [!INCLUDE[win8](~/includes/win8-md.md)], it supports the 2008 version of the IDNA standard outlined by [RFC 5891: Internationalized Domain Names in Applications (IDNA): Protocol](http://go.microsoft.com/fwlink/?LinkId=231875).  
+-   When run on [!INCLUDE[win8](~/includes/win8-md.md)], it supports the 2008 version of the IDNA standard outlined by [RFC 5891: Internationalized Domain Names in Applications (IDNA): Protocol](https://go.microsoft.com/fwlink/?LinkId=231875).  
   
--   When run on earlier versions of the Windows operating system, it supports the 2003 version of the standard outlined by [RFC 3490: Internationalizing Domain Names in Applications (IDNA)](http://go.microsoft.com/fwlink/?LinkId=158110).  
+-   When run on earlier versions of the Windows operating system, it supports the 2003 version of the standard outlined by [RFC 3490: Internationalizing Domain Names in Applications (IDNA)](https://go.microsoft.com/fwlink/?LinkId=158110).  
   
- See [Unicode Technical Standard #46: IDNA Compatibility Processing](http://go.microsoft.com/fwlink/?LinkId=232459) for the differences in the way these standards handle particular sets of characters.</para>
+ See [Unicode Technical Standard #46: IDNA Compatibility Processing](https://go.microsoft.com/fwlink/?LinkId=232459) for the differences in the way these standards handle particular sets of characters.</para>
         </block>
       </Docs>
     </Member>

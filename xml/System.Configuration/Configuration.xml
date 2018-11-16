@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Configuration settings are stored in a hierarchy of configuration files. The <xref:System.Configuration.Configuration> class instance represents the merged view of the configuration settings from all of the configuration files that apply to a specific physical entity, such as a computer, or to a logical entity, such as an application or a Web site. The logical entity can exist on the local computer or on a remote server. For information about configuration files, see [Configuring Apps](~/docs/framework/configure-apps/index.md) and [ASP.NET Configuration Files](http://msdn.microsoft.com/library/01505090-9114-41a7-93ca-068e2283ed3d).  
+ Configuration settings are stored in a hierarchy of configuration files. The <xref:System.Configuration.Configuration> class instance represents the merged view of the configuration settings from all of the configuration files that apply to a specific physical entity, such as a computer, or to a logical entity, such as an application or a Web site. The logical entity can exist on the local computer or on a remote server. For information about configuration files, see [Configuring Apps](~/docs/framework/configure-apps/index.md) and [ASP.NET Configuration Files](https://msdn.microsoft.com/library/01505090-9114-41a7-93ca-068e2283ed3d).  
   
  When no configuration file exists for a specified entity, the <xref:System.Configuration.Configuration> object represents the default configuration settings as defined by the Machine.config file.  
   
@@ -46,7 +46,7 @@
  The names of the methods that create configuration files begin with "Save".  
   
 > [!NOTE]
->  To enable access to configuration settings on a remote computer, use the Aspnet_regiis command-line tool. For more information about this tool, see [ASP.NET IIS Registration Tool (Aspnet_regiis.exe)](http://msdn.microsoft.com/library/6491c41e-e2b0-481f-9863-db3614d5f96b). For information about creating and accessing custom configuration settings other than the intrinsic sections included in the .NET Framework, refer to <xref:System.Configuration.ConfigurationSection>.  
+>  To enable access to configuration settings on a remote computer, use the Aspnet_regiis command-line tool. For more information about this tool, see [ASP.NET IIS Registration Tool (Aspnet_regiis.exe)](https://msdn.microsoft.com/library/6491c41e-e2b0-481f-9863-db3614d5f96b). For information about creating and accessing custom configuration settings other than the intrinsic sections included in the .NET Framework, refer to <xref:System.Configuration.ConfigurationSection>.  
   
    
   
@@ -85,9 +85,9 @@
     <altmember cref="T:System.Configuration.ConfigurationSection" />
     <altmember cref="T:System.Configuration.ConfigurationManager" />
     <altmember cref="T:System.Web.Configuration.WebConfigurationManager" />
-    <related type="Article" href="http://msdn.microsoft.com/library/1298034b-5f7d-464d-abd1-ad9e6b3eeb7e">Configuring ASP.NET Applications</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/1298034b-5f7d-464d-abd1-ad9e6b3eeb7e">Configuring ASP.NET Applications</related>
     <related type="Article" href="~/docs/framework/configure-apps/index.md">Configuration Files</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/01505090-9114-41a7-93ca-068e2283ed3d">ASP.NET Configuration Files</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/01505090-9114-41a7-93ca-068e2283ed3d">ASP.NET Configuration Files</related>
   </Docs>
   <Members>
     <Member MemberName="AppSettings">
@@ -163,7 +163,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectionStrings">
@@ -1000,7 +1000,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
       </Docs>
     </Member>
     <Member MemberName="TypeStringTransformer">
@@ -1034,7 +1034,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
       </Docs>
     </Member>
   </Members>

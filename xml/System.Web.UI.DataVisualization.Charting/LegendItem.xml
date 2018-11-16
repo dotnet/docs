@@ -868,7 +868,7 @@
   
  Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. Its default value is `true`.  
   
- **Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag>. It is possible to create an image map when using binary streaming, but another technique must be used. For more information, see [Chart Image Rendering](http://msdn.microsoft.com/library/82ff568d-838c-408b-bd85-62e424ae0505).  
+ **Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag>. It is possible to create an image map when using binary streaming, but another technique must be used. For more information, see [Chart Image Rendering](https://msdn.microsoft.com/library/82ff568d-838c-408b-bd85-62e424ae0505).  
   
  Special keywords may be used when setting this property; each keyword will be replaced with some type of data from the applicable chart element. Refer to the following table for a listing of all available keywords:  
   
@@ -883,7 +883,7 @@
 |#TOTAL|Total of all Y-values in the series.|  
 |#LEGENDTEXT|Legend text.|  
   
- To create image maps that have user-defined coordinates, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart> object. For more information, see [Chart Image Rendering](http://msdn.microsoft.com/library/82ff568d-838c-408b-bd85-62e424ae0505).  
+ To create image maps that have user-defined coordinates, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart> object. For more information, see [Chart Image Rendering](https://msdn.microsoft.com/library/82ff568d-838c-408b-bd85-62e424ae0505).  
   
 > [!NOTE]
 >  This property is applicable to the entire <xref:System.Web.UI.DataVisualization.Charting.LegendItem>.  
@@ -1668,9 +1668,9 @@
   
  Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. The default value is `true`.  
   
- **Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag>. It is possible to create an image map when using binary streaming, but another technique must be used. For more information, see [Chart Image Rendering](http://msdn.microsoft.com/library/82ff568d-838c-408b-bd85-62e424ae0505).  
+ **Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag>. It is possible to create an image map when using binary streaming, but another technique must be used. For more information, see [Chart Image Rendering](https://msdn.microsoft.com/library/82ff568d-838c-408b-bd85-62e424ae0505).  
   
- This property allows you to set special keywords to display different types of chart-related data. For more information, see [Keywords](http://msdn.microsoft.com/library/8a19d422-4eee-45ff-a5c3-feff7b76fa8c).  
+ This property allows you to set special keywords to display different types of chart-related data. For more information, see [Keywords](https://msdn.microsoft.com/library/8a19d422-4eee-45ff-a5c3-feff7b76fa8c).  
   
  To create image maps that have user-defined coordinates, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart> object.  
   
@@ -1741,7 +1741,7 @@
   
  The <xref:System.Web.UI.DataVisualization.Charting.LegendItem.Url%2A> property allows you to set special keywords to display different types of chart-related data. For more information, see Keywords (Chart Controls).  
   
- To create image maps that have user-defined coordinates, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart> object. For more information, see [Chart Image Rendering](http://msdn.microsoft.com/library/82ff568d-838c-408b-bd85-62e424ae0505).  
+ To create image maps that have user-defined coordinates, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart> object. For more information, see [Chart Image Rendering](https://msdn.microsoft.com/library/82ff568d-838c-408b-bd85-62e424ae0505).  
   
 > [!NOTE]
 >  This property is applicable to the entire <xref:System.Web.UI.DataVisualization.Charting.LegendItem>.  

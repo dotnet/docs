@@ -11542,7 +11542,7 @@ GetType(Array).IsAssignableFrom(type)
 > [!NOTE]
 >  You cannot use the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method to determine whether the <xref:System.Runtime.InteropServices.StructLayoutAttribute> has been applied to a type.  
   
- For more information, see section 9.1.2 of the specification for the Common Language Infrastructure (CLI) documentation, "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+ For more information, see section 9.1.2 of the specification for the Common Language Infrastructure (CLI) documentation, "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
  If the current <xref:System.Type> represents a constructed generic type, this property applies to the generic type definition from which the type was constructed. For example, if the current <xref:System.Type> represents `MyGenericType<int>` (`MyGenericType(Of Integer)` in Visual Basic), the value of this property is determined by `MyGenericType<T>`.  
   

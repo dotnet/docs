@@ -90,7 +90,7 @@ aspnet_regsql.exe -A p
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -121,7 +121,7 @@ aspnet_regsql.exe -A p
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ApplicationName">
@@ -179,7 +179,7 @@ aspnet_regsql.exe -A p
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt was made to set the <see cref="P:System.Web.Profile.SqlProfileProvider.ApplicationName" /> property by a caller that does not have <see cref="F:System.Web.AspNetHostingPermissionLevel.High" /> ASP.NET hosting permission.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">An attempt was made to set the <see cref="P:System.Web.Profile.SqlProfileProvider.ApplicationName" /> property to a string that is longer than 256 characters.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteInactiveProfiles">
@@ -225,7 +225,7 @@ aspnet_regsql.exe -A p
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="DeleteProfiles">
@@ -235,7 +235,7 @@ aspnet_regsql.exe -A p
       </AssemblyInfo>
       <Docs>
         <summary>Deletes profile properties and information from the data source.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="DeleteProfiles">
@@ -296,7 +296,7 @@ aspnet_regsql.exe -A p
  \- or -  
   
  One of the items in <paramref name="usernames" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteProfiles">
@@ -354,7 +354,7 @@ aspnet_regsql.exe -A p
  \- or -  
   
  One of the <see cref="T:System.Web.Profile.ProfileInfo" /> objects in <paramref name="profiles" /> has a <see cref="P:System.Web.Profile.ProfileInfo.UserName" /> that is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindInactiveProfilesByUserName">
@@ -426,7 +426,7 @@ aspnet_regsql.exe -A p
  \- or -  
   
  <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindProfilesByUserName">
@@ -496,7 +496,7 @@ aspnet_regsql.exe -A p
  \- or -  
   
  <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllInactiveProfiles">
@@ -558,7 +558,7 @@ aspnet_regsql.exe -A p
  \- or -  
   
  <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllProfiles">
@@ -618,7 +618,7 @@ aspnet_regsql.exe -A p
  \- or -  
   
  <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetNumberOfInactiveProfiles">
@@ -662,7 +662,7 @@ aspnet_regsql.exe -A p
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPropertyValues">
@@ -706,7 +706,7 @@ aspnet_regsql.exe -A p
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -757,7 +757,7 @@ aspnet_regsql.exe -A p
         <exception cref="T:System.ArgumentNullException">
           <paramref name="config" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Web.HttpException">The current trust level is less than <see cref="F:System.Web.AspNetHostingPermissionLevel.Low" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SetPropertyValues">
@@ -800,7 +800,7 @@ aspnet_regsql.exe -A p
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
   </Members>

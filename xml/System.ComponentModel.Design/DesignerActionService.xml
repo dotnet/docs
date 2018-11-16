@@ -63,7 +63,7 @@
     <altmember cref="T:System.ComponentModel.Design.ComponentDesigner" />
     <altmember cref="T:System.ComponentModel.Design.DesignerActionItem" />
     <altmember cref="T:System.ComponentModel.Design.DesignerActionUIService" />
-    <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -99,7 +99,7 @@
         <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
         <altmember cref="T:System.ComponentModel.Design.IComponentChangeService" />
         <altmember cref="M:System.ComponentModel.Component.GetService(System.Type)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Add">
@@ -154,7 +154,7 @@
         <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.ActionLists" />
         <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Remove" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionService.Contains(System.ComponentModel.IComponent)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -199,7 +199,7 @@
         <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.ActionLists" />
         <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Remove" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionService.Contains(System.ComponentModel.IComponent)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -235,7 +235,7 @@
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Remove" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -276,7 +276,7 @@
           <paramref name="comp" /> is <see langword="null" />.</exception>
         <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Add" />
         <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Remove" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="DesignerActionListsChanged">
@@ -319,7 +319,7 @@
         <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Add" />
         <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Remove" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionService.Clear" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -377,7 +377,7 @@
         </remarks>
         <altmember cref="Overload:System.ComponentModel.Design.IServiceContainer.RemoveService" />
         <altmember cref="T:System.ComponentModel.Design.IComponentChangeService" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -427,7 +427,7 @@
         </block>
         <altmember cref="Overload:System.ComponentModel.Design.IServiceContainer.RemoveService" />
         <altmember cref="T:System.ComponentModel.Design.IComponentChangeService" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetComponentActions">
@@ -483,7 +483,7 @@
         <altmember cref="M:System.ComponentModel.Design.DesignerActionService.GetComponentServiceActions(System.ComponentModel.IComponent,System.ComponentModel.Design.DesignerActionListCollection)" />
         <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Add" />
         <altmember cref="T:System.ComponentModel.Design.DesignerCommandSet" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="GetComponentActions">
@@ -534,7 +534,7 @@
         <altmember cref="T:System.ComponentModel.Design.DesignerActionListCollection" />
         <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
         <altmember cref="T:System.ComponentModel.Design.ComponentActionsType" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="GetComponentDesignerActions">
@@ -576,7 +576,7 @@
         <altmember cref="M:System.ComponentModel.Design.DesignerActionService.GetComponentServiceActions(System.ComponentModel.IComponent,System.ComponentModel.Design.DesignerActionListCollection)" />
         <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.ActionLists" />
         <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.Verbs" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="GetComponentServiceActions">
@@ -614,7 +614,7 @@
         <exception cref="T:System.ArgumentNullException">One or both of the parameters are <see langword="null" />.</exception>
         <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.GetComponentActions" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionService.GetComponentDesignerActions(System.ComponentModel.IComponent,System.ComponentModel.Design.DesignerActionListCollection)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Remove">
@@ -663,7 +663,7 @@
         <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Add" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionUIService.HideUI(System.ComponentModel.IComponent)" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionService.Clear" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -701,7 +701,7 @@
         <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Add" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionUIService.HideUI(System.ComponentModel.IComponent)" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionService.Clear" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -740,7 +740,7 @@
         <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Add" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionUIService.HideUI(System.ComponentModel.IComponent)" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionService.Clear" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
   </Members>

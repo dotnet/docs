@@ -43,7 +43,7 @@
   
 -   An explanation of how the example works.  
   
- The first part of the code example is the user control. The source code for the user control comes from another topic. For this code example to work, you need to obtain the .ascx file for the user control from the [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0) topic, and place the file in the same folder as the .aspx page in this code example.  
+ The first part of the code example is the user control. The source code for the user control comes from another topic. For this code example to work, you need to obtain the .ascx file for the user control from the [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0) topic, and place the file in the same folder as the .aspx page in this code example.  
   
  The second part of the example is the Web page. Note that there is a `Register` directive near the top of the file to register the compiled component and a tag prefix. Also note that the page references the custom zone using the element `<aspSample:MyZone>` and includes several standard ASP.NET server controls within the zone. The server controls do not implement any actual functionality; they are used here only to illustrate how the <xref:System.Web.UI.WebControls.WebParts.WebPartChrome> class features apply to rendering zones. Note that these server controls, though they are not actual <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, are each automatically wrapped (by ASP.NET) with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> object at run time, so they will have the same functionality as <xref:System.Web.UI.WebControls.WebParts.WebPart> controls.  
   
@@ -52,7 +52,7 @@
   
  The third part of the code example is the source for the custom <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone and a <xref:System.Web.UI.WebControls.WebParts.WebPartChrome> class. In the constructor for the custom zone class, the code checks the `MyZone.RenderVerbsInMenu` property. If the value is `true`, verbs are rendered in a menu for each of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in the zone. This is the normal, default behavior in the Web Parts controls set. If the `MyZone.RenderVerbsInMenu` property value is `false`, which is the default in this custom zone, the verbs are rendered individually as links in the title bar of each control. Notice that in the Web page code where the `<aspSample:MyZone>` element is declared, there is a `RenderVerbsInMenu` attribute set to `true`, so that the verbs will appear in menus on the controls. To experiment with this feature, you can set the declarative `RenderVerbsInMenu` attribute to `false`, and note how the verbs are rendered as links.  
   
- The custom <xref:System.Web.UI.WebControls.WebParts.WebPartChrome> class overrides the rendering on several methods, and the custom zone creates an instance of the `MyWebPartChrome` class in its <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateWebPartChrome%2A> method. This applies the custom rendering to the page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The custom <xref:System.Web.UI.WebControls.WebParts.WebPartChrome> class overrides the rendering on several methods, and the custom zone creates an instance of the `MyWebPartChrome` class in its <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateWebPartChrome%2A> method. This applies the custom rendering to the page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-csharp[WebParts_WebPartChrome_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartChrome_Overview/CS/MyChrome.cs#2)]
  [!code-vb[WebParts_WebPartChrome_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartChrome_Overview/VB/MyChrome.vb#2)]  
@@ -66,8 +66,8 @@
     </block>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Overview:  The Web Parts Control Set</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Overview:  The Web Parts Control Set</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -111,7 +111,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="zone" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateWebPartChromeStyle">
@@ -169,7 +169,7 @@
         </block>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebZone.PartChromeType" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.SelectedPartChromeStyle" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="DragDropEnabled">
@@ -199,7 +199,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="FilterWebPartVerbs">
@@ -243,7 +243,7 @@
           <para>If you create a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartChrome" /> class, you can optionally override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartChrome.FilterWebPartVerbs(System.Web.UI.WebControls.WebParts.WebPartVerbCollection,System.Web.UI.WebControls.WebParts.WebPart)" /> method to filter out specific verbs from being rendered. The most common way to do this is to create a private method that checks the verbs in the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Verbs" /> collection of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control and determines whether each verb should be rendered, based on criteria that you choose. Note that the base method provides a lot of default filtering criteria that would be difficult to reproduce if you completely override the method; if you only have a few special cases, you might want to call the base method first, and then pass the resulting collection through your own additional method to apply your custom filtering criteria.</para>
         </block>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartChrome.GetWebPartVerbs(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetWebPartChromeClientID">
@@ -281,7 +281,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartChrome.GetWebPartTitleClientID(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetWebPartTitleClientID">
@@ -319,7 +319,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartChrome.GetWebPartChromeClientID(System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="GetWebPartVerbs">
@@ -368,7 +368,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="PerformPreRender">
@@ -391,7 +391,7 @@
       <Docs>
         <summary>Performs tasks that must be done prior to rendering <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RenderPartContents">
@@ -440,7 +440,7 @@
         <block subset="none" type="overrides">
           <para>You can optionally override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartChrome.RenderPartContents(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.WebParts.WebPart)" /> method. If so, you can simply perform whatever rendering customizations you want for <paramref name="webPart" />, and then call its <see cref="M:System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter)" /> method. If you also want to rely on the default rendering in the event of connection errors, call the base method first, and then customize the <paramref name="writer" /> that is returned from the base method.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RenderWebPart">
@@ -476,7 +476,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The control that <paramref name="webPart" /> refers to is <see langword="null" />.</exception>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartChrome.RenderPartContents(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.WebParts.WebPart)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartManager">
@@ -524,7 +524,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Zone">
@@ -572,7 +572,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

@@ -33,12 +33,12 @@
 |Boolean value|The item is displayed using a binary UI, such as a check mark.|  
 |None of the above.|The item is displayed as a non-editable text string using the data type's <xref:System.Object.ToString%2A> method.|  
   
- All fundamental types, such as <xref:System.Boolean?displayProperty=nameWithType>, and common [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] data types, such as <xref:System.String?displayProperty=nameWithType>, supply standard type converters and editors. For more information about type converters, see [How to: Implement a Type Converter](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)) or [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada). For more information about type editors, see [How to: Implement a UI Type Editor](http://msdn.microsoft.com/library/ed961fb9-ee02-4666-b511-05f3204bb75c).  
+ All fundamental types, such as <xref:System.Boolean?displayProperty=nameWithType>, and common [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] data types, such as <xref:System.String?displayProperty=nameWithType>, supply standard type converters and editors. For more information about type converters, see [How to: Implement a Type Converter](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)) or [Generalized Type Conversion](https://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada). For more information about type editors, see [How to: Implement a UI Type Editor](https://msdn.microsoft.com/library/ed961fb9-ee02-4666-b511-05f3204bb75c).  
   
    
   
 ## Examples  
- The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects. For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
+ The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects. For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](https://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
   
  [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#7)]
  [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#7)]  
@@ -48,7 +48,7 @@
     <altmember cref="P:System.ComponentModel.Design.DesignerActionPropertyItem.MemberName" />
     <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
     <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
-    <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -97,7 +97,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -142,7 +142,7 @@
         </remarks>
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -186,7 +186,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects. For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
+ The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects. For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](https://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
   
  [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#7)]
  [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#7)]  
@@ -195,7 +195,7 @@
         </remarks>
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
         <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="MemberName">
@@ -234,7 +234,7 @@
         </remarks>
         <altmember cref="M:System.ComponentModel.Design.DesignerActionPropertyItem.#ctor(System.String,System.String,System.String,System.String)" />
         <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="RelatedComponent">
@@ -276,7 +276,7 @@
         </remarks>
         <altmember cref="T:System.ComponentModel.Design.DesignerActionItem" />
         <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.AllowAssociate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
   </Members>

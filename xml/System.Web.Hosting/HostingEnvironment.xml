@@ -80,7 +80,7 @@
         <summary>This property supports the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <value>An object that contains information about the application host.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f75a72de-e2f2-4a7a-9574-3f278684ea90">The .NET Framework 3.5 Architecture</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f75a72de-e2f2-4a7a-9574-3f278684ea90">The .NET Framework 3.5 Architecture</related>
       </Docs>
     </Member>
     <Member MemberName="ApplicationID">
@@ -619,7 +619,7 @@
       <Docs>
         <summary>This method supports the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f75a72de-e2f2-4a7a-9574-3f278684ea90">The .NET Framework 3.5 Architecture</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f75a72de-e2f2-4a7a-9574-3f278684ea90">The .NET Framework 3.5 Architecture</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="QueueBackgroundWorkItem">
@@ -834,7 +834,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Hosting.HostingEnvironment.SetCultures%2A> method sets the current thread to the culture specified in the [globalization Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) element in the application's configuration file.  
+ The <xref:System.Web.Hosting.HostingEnvironment.SetCultures%2A> method sets the current thread to the culture specified in the [globalization Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) element in the application's configuration file.  
   
  ]]></format>
         </remarks>
@@ -940,7 +940,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When an application pool and its associated worker processes are being shut down by IIS, for example when an application pool has reached a scheduled recycle interval, IIS notifies the ASP.NET runtime that the application is shutting down and the worker process for the application pool stops listening for new requests. Applications that use long-running requests, for example [SignalR](http://go.microsoft.com/fwlink/?LinkID=285432) applications, can listen for the <xref:System.Web.Hosting.HostingEnvironment.StopListening> event and gracefully shut down their long-running operations when IIS has initiated the shutdown of an application pool and its associated worker processes.  
+ When an application pool and its associated worker processes are being shut down by IIS, for example when an application pool has reached a scheduled recycle interval, IIS notifies the ASP.NET runtime that the application is shutting down and the worker process for the application pool stops listening for new requests. Applications that use long-running requests, for example [SignalR](https://go.microsoft.com/fwlink/?LinkID=285432) applications, can listen for the <xref:System.Web.Hosting.HostingEnvironment.StopListening> event and gracefully shut down their long-running operations when IIS has initiated the shutdown of an application pool and its associated worker processes.  
   
 > [!WARNING]
 >  There are several design considerations that a developer must consider when implementing the <xref:System.Web.Hosting.HostingEnvironment.StopListening> event:  

@@ -37,7 +37,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Xml.Linq.XElement" />
-    <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -49,7 +49,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XComment" /> class.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -114,7 +114,7 @@ Console.WriteLine(root)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -157,7 +157,7 @@ Console.WriteLine(root)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="other" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="NodeType">
@@ -223,7 +223,7 @@ Comment
  ]]></format>
         </remarks>
         <altmember cref="T:System.Xml.XmlNodeType" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -295,7 +295,7 @@ This is a comment
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Xml.Linq.XComment.WriteTo(System.Xml.XmlWriter)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -341,8 +341,8 @@ This is a comment
  ]]></format>
         </remarks>
         <altmember cref="P:System.Xml.Linq.XComment.Value" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/f01bdf96-c5a9-4859-b220-125ee531e71f">Serializing XML Trees</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f01bdf96-c5a9-4859-b220-125ee531e71f">Serializing XML Trees</related>
       </Docs>
     </Member>
     <Member MemberName="WriteToAsync">

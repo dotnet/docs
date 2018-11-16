@@ -1778,7 +1778,7 @@
 ## Remarks  
   
 > [!NOTE]
->  For more information on the metadata header, see "Partition II: Metadata Definition and Semantics" in the Common Language Infrastructure (CLI) documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+>  For more information on the metadata header, see "Partition II: Metadata Definition and Semantics" in the Common Language Infrastructure (CLI) documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
   
  ]]></format>
         </remarks>
@@ -1820,10 +1820,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, see [Unmanaged Reflection API](http://msdn.microsoft.com/library/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
+ The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, see [Unmanaged Reflection API](https://msdn.microsoft.com/library/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
   
 > [!NOTE]
->  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
   
  ]]></format>
         </remarks>
@@ -1904,7 +1904,7 @@
  In unmanaged metadata, the GUID returned by the <xref:System.Reflection.Module.ModuleVersionId%2A> property is referred to as the `mvid`, and is stored in the GUID heap.  
   
 > [!NOTE]
->  More information about metadata can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+>  More information about metadata can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
   
  ]]></format>
         </remarks>
@@ -2104,7 +2104,7 @@
  To resolve a metadata token that identifies a field whose parent `TypeSpec` has a signature containing element type `ELEMENT_TYPE_VAR` or `ELEMENT_TYPE_MVAR`, use the <xref:System.Reflection.Module.ResolveField%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, which allows you to supply the necessary context. That is, when you are resolving a metadata token for a field that depends on the generic type parameters of the generic type and/or the generic method in which the token is embedded, you must use the overload that allows you to supply those type parameters.  
   
 > [!NOTE]
->  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
   
  For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
   
@@ -2167,7 +2167,7 @@
  Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=nameWithType> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
   
 > [!NOTE]
->  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
   
  For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
   
@@ -2236,7 +2236,7 @@
  To resolve a metadata token for a `MethodSpec` or `TypeSpec` whose signature contains element type `ELEMENT_TYPE_VAR` or `ELEMENT_TYPE_MVAR`, use the <xref:System.Reflection.Module.ResolveMember%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, which allows you to supply the necessary context. That is, when you are resolving a metadata token for a member that depends on the generic type parameters of the generic type and/or the generic method in which the token is embedded, you must use the overload that allows you to supply those type parameters.  
   
 > [!NOTE]
->  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
   
  For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
   
@@ -2303,7 +2303,7 @@
  Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=nameWithType> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
   
 > [!NOTE]
->  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
   
  For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
   
@@ -2376,7 +2376,7 @@
  To resolve a metadata token for a `MethodSpec` whose signature contains element type `ELEMENT_TYPE_VAR` or `ELEMENT_TYPE_MVAR`, use the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, which allows you to supply the necessary context. That is, when you are resolving a metadata token for a method that depends on the generic type parameters of the generic type and/or the generic method in which the token is embedded, you must use the overload that allows you to supply those type parameters.  
   
 > [!NOTE]
->  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
   
    
   
@@ -2465,7 +2465,7 @@
  Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=nameWithType> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericMethodArguments`. It is always safe to provide these arguments, even when they are not needed.  
   
 > [!NOTE]
->  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
   
    
   
@@ -2549,7 +2549,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Information about metadata tokens and signatures can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+>  Information about metadata tokens and signatures can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
   
  ]]></format>
         </remarks>
@@ -2601,7 +2601,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
   
  ]]></format>
         </remarks>
@@ -2664,7 +2664,7 @@
  To resolve a metadata token for a `TypeSpec` whose signature contains `ELEMENT_TYPE_VAR` or `ELEMENT_TYPE_MVAR`, use the <xref:System.Reflection.Module.ResolveType%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload, which allows you to supply the necessary context. That is, when you are resolving a metadata token for a type that depends on the generic type parameters of the generic type and/or the generic method in which the token is embedded, you must use the overload that allows you to supply those type parameters.  
   
 > [!NOTE]
->  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
   
  ]]></format>
         </remarks>
@@ -2725,7 +2725,7 @@
  Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=nameWithType> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
   
 > [!NOTE]
->  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
+>  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](https://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](https://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
   
  For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method.  
   

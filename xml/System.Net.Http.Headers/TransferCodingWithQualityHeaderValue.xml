@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue> class provides support for the Accept-Encoding header as defined in [RFC 2616](http://go.microsoft.com/fwlink/?LinkID=241642) by the IETF.  
+ The <xref:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue> class provides support for the Accept-Encoding header as defined in [RFC 2616](https://go.microsoft.com/fwlink/?LinkID=241642) by the IETF.  
   
  Quality factors allow a user agent to indicate the relative degree of preference for an Accept-Encoding header value, using the qvalue scale from 0 to 1. The default value is q=1.  
   

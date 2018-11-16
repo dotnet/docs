@@ -51,17 +51,17 @@
   
 -   [!INCLUDE[vs_dev10_long](~/includes/vs-dev10-long-md.md)] or [!INCLUDE[vwd_exp_dev10_long](~/includes/vwd-exp-dev10-long-md.md)].  
   
--   A Dynamic Data Web site. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](http://msdn.microsoft.com/library/1564aef2-9103-436a-9806-c8ad7abd616a).  
+-   A Dynamic Data Web site. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](https://msdn.microsoft.com/library/1564aef2-9103-436a-9806-c8ad7abd616a).  
   
- See a run-time code example of this feature: [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel).  
+ See a run-time code example of this feature: [Run](https://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel).  
   
  ]]></format>
     </remarks>
     <exception cref="T:System.InvalidOperationException">Can be thrown by any method if there has been a data context registration error.</exception>
-    <related type="Article" href="http://msdn.microsoft.com/library/ee5dd2fb-5bb8-4bd7-a13d-d0a2659c3870">ASP.NET Dynamic Data Model Customization</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/45e477c0-5c6b-41f9-b2d0-2808fb4f6537">Object Relational Designer (O/R Designer)</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/200fe812-d0a6-4531-b9b4-cfc4ee83a678">How to: Define a Route</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ee5dd2fb-5bb8-4bd7-a13d-d0a2659c3870">ASP.NET Dynamic Data Model Customization</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/45e477c0-5c6b-41f9-b2d0-2808fb4f6537">Object Relational Designer (O/R Designer)</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/200fe812-d0a6-4531-b9b4-cfc4ee83a678">How to: Define a Route</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -366,7 +366,7 @@
 ## Remarks  
  The route is determined by the combination of the table name and action.  
   
- [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel&spage=PathModel.aspx) an online example of this feature.  
+ [Run](https://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel&spage=PathModel.aspx) an online example of this feature.  
   
    
   
@@ -436,7 +436,7 @@
 ## Remarks  
  The <xref:System.Web.DynamicData.MetaTable> object that is returned by the overloaded methods contains the metadata information that is associated with the specified table.  
   
- [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel&spage=GetTable.aspx) an online example of this feature.  
+ [Run](https://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel&spage=GetTable.aspx) an online example of this feature.  
   
    
   
@@ -866,7 +866,7 @@
 ## Remarks  
  The collection contains all the tables in the data model, which includes the tables that are not visible (are not part of Dynamic Data scaffolding).  
   
- [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel&spage=TablesMenu.aspx) an online example of this feature.  
+ [Run](https://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel&spage=TablesMenu.aspx) an online example of this feature.  
   
    
   

@@ -138,7 +138,7 @@ Display the modified XML...
           <para>When overriding <see langword="AppendChild" /> in a derived class, in order for events to be raised correctly, you must call the <see langword="AppendChild" /> method of the base class.</para>
         </block>
         <altmember cref="M:System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/891e54f5-54f6-4bb4-b624-9d1b6a1f1216">Inserting Nodes into an XML Document</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/891e54f5-54f6-4bb4-b624-9d1b6a1f1216">Inserting Nodes into an XML Document</related>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -1065,7 +1065,7 @@ d.</elem>
           <para>When overriding <see langword="InsertAfter" /> in a derived class, in order for events to be raised correctly, you must call the <see langword="InsertAfter" /> method of the base class.</para>
         </block>
         <altmember cref="M:System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/891e54f5-54f6-4bb4-b624-9d1b6a1f1216">Inserting Nodes into an XML Document</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/891e54f5-54f6-4bb4-b624-9d1b6a1f1216">Inserting Nodes into an XML Document</related>
       </Docs>
     </Member>
     <Member MemberName="InsertBefore">
@@ -1139,7 +1139,7 @@ d.</elem>
           <para>When overriding <see langword="InsertBefore" /> in a derived class, in order for events to be raised correctly, you must call the <see langword="InsertBefore" /> method of the base class.</para>
         </block>
         <altmember cref="M:System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/891e54f5-54f6-4bb4-b624-9d1b6a1f1216">Inserting Nodes into an XML Document</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/891e54f5-54f6-4bb4-b624-9d1b6a1f1216">Inserting Nodes into an XML Document</related>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -2088,7 +2088,7 @@ d.</elem>
           <para>When overriding <see langword="PrependChild" /> in a derived class, in order for events to be raised correctly, you must call the <see langword="PrependChild" /> method of the base class.</para>
         </block>
         <altmember cref="M:System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/891e54f5-54f6-4bb4-b624-9d1b6a1f1216">Inserting Nodes into an XML Document</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/891e54f5-54f6-4bb4-b624-9d1b6a1f1216">Inserting Nodes into an XML Document</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousSibling">
@@ -2441,7 +2441,7 @@ d.</elem>
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
         <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
       </Docs>
     </MemberGroup>
@@ -2529,9 +2529,9 @@ nodeList = root.SelectNodes("//book[contains(title,""'Emma'"")]")
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix. See [XPath Examples](http://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</exception>
+        <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix. See [XPath Examples](https://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</exception>
         <altmember cref="M:System.Xml.XmlNode.SelectSingleNode(System.String)" />
-        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
         <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
       </Docs>
     </Member>
@@ -2570,7 +2570,7 @@ nodeList = root.SelectNodes("//book[contains(title,""'Emma'"")]")
         <Parameter Name="nsmgr" Type="System.Xml.XmlNamespaceManager" />
       </Parameters>
       <Docs>
-        <param name="xpath">The XPath expression. See [XPath Examples](http://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</param>
+        <param name="xpath">The XPath expression. See [XPath Examples](https://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</param>
         <param name="nsmgr">An <see cref="T:System.Xml.XmlNamespaceManager" /> to use for resolving namespaces for prefixes in the XPath expression.</param>
         <summary>Selects a list of nodes matching the XPath expression. Any prefixes found in the XPath expression are resolved using the supplied <see cref="T:System.Xml.XmlNamespaceManager" />.</summary>
         <returns>An <see cref="T:System.Xml.XmlNodeList" /> containing a collection of nodes matching the XPath query.</returns>
@@ -2642,7 +2642,7 @@ nodeList = root.SelectNodes("//ab:book[contains(ab:title,""'Emma'"")]", nsmgr)
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix which is not defined in the <see langword="XmlNamespaceManager" />.</exception>
-        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
         <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
       </Docs>
     </Member>
@@ -2678,7 +2678,7 @@ nodeList = root.SelectNodes("//ab:book[contains(ab:title,""'Emma'"")]", nsmgr)
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
         <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
       </Docs>
     </MemberGroup>
@@ -2716,7 +2716,7 @@ nodeList = root.SelectNodes("//ab:book[contains(ab:title,""'Emma'"")]", nsmgr)
         <Parameter Name="xpath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xpath">The XPath expression. See [XPath Examples](http://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</param>
+        <param name="xpath">The XPath expression. See [XPath Examples](https://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</param>
         <summary>Selects the first <see langword="XmlNode" /> that matches the XPath expression.</summary>
         <returns>The first <see langword="XmlNode" /> that matches the XPath query or <see langword="null" /> if no matching node is found.</returns>
         <remarks>
@@ -2766,7 +2766,7 @@ book = root.SelectSingleNode("descendant::book[title=""'Emma'""]")
         </remarks>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix.</exception>
         <altmember cref="M:System.Xml.XmlNode.SelectNodes(System.String)" />
-        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
         <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
       </Docs>
     </Member>
@@ -2805,7 +2805,7 @@ book = root.SelectSingleNode("descendant::book[title=""'Emma'""]")
         <Parameter Name="nsmgr" Type="System.Xml.XmlNamespaceManager" />
       </Parameters>
       <Docs>
-        <param name="xpath">The XPath expression. See [XPath Examples](http://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</param>
+        <param name="xpath">The XPath expression. See [XPath Examples](https://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</param>
         <param name="nsmgr">An <see cref="T:System.Xml.XmlNamespaceManager" /> to use for resolving namespaces for prefixes in the XPath expression.</param>
         <summary>Selects the first <see langword="XmlNode" /> that matches the XPath expression. Any prefixes found in the XPath expression are resolved using the supplied <see cref="T:System.Xml.XmlNamespaceManager" />.</summary>
         <returns>The first <see langword="XmlNode" /> that matches the XPath query or <see langword="null" /> if no matching node is found.</returns>
@@ -2875,7 +2875,7 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix which is not defined in the <see langword="XmlNamespaceManager" />.</exception>
-        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
         <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
       </Docs>
     </Member>

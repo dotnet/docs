@@ -172,7 +172,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property contains a Windows error code returned by the Secure Channel (Schannel) Security Support Provider Interface (SSPI), which is used to validate the certificate. For more information about SSPI support for Schannel, see "Creating a Secure Connection Using Schannel" in the Security documentation at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+ This property contains a Windows error code returned by the Secure Channel (Schannel) Security Support Provider Interface (SSPI), which is used to validate the certificate. For more information about SSPI support for Schannel, see "Creating a Secure Connection Using Schannel" in the Security documentation at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
   
    
   
@@ -1360,7 +1360,7 @@
 ## Remarks  
  The <xref:System.Net.TransportContext> property can be used to retrieve the channel binding token (CBT) for an <xref:System.Net.HttpListenerRequest> which was sent using HTTPS.  
   
- An application could use the <xref:System.Net.TransportContext> property to perform custom authentication using calls to the native Win32 [AcceptSecurityContext](http://go.microsoft.com/fwlink/?LinkId=147021) function.  
+ An application could use the <xref:System.Net.TransportContext> property to perform custom authentication using calls to the native Win32 [AcceptSecurityContext](https://go.microsoft.com/fwlink/?LinkId=147021) function.  
   
  If an application attempts to retrieve the channel binding token (CBT) from this <xref:System.Net.HttpListenerRequest.TransportContext%2A> property using the <xref:System.Net.TransportContext.GetChannelBinding%2A> method and the <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind> is not <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Endpoint>, then the <xref:System.Net.HttpListenerRequest> will throw <xref:System.NotSupportedException>. The <xref:System.Net.HttpListenerRequest> overrides the <xref:System.Net.TransportContext.GetChannelBinding%2A> method with an internal implementation.  
   
@@ -1493,7 +1493,7 @@
         <altmember cref="T:System.Net.HttpListenerContext" />
         <altmember cref="T:System.Net.HttpListenerResponse" />
         <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/62f121fd-3f2e-4033-bb39-48ae996bfbd9">&lt;httpListener&gt; Element (Network Settings)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/62f121fd-3f2e-4033-bb39-48ae996bfbd9">&lt;httpListener&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="UrlReferrer">

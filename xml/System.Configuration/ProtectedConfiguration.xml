@@ -27,7 +27,7 @@
 ## Remarks  
  The <xref:System.Configuration.ProtectedConfiguration> class allows you to obtain information about the providers available to protect sensitive configuration data. You typically use the standard providers, but you can also create custom providers by deriving from the <xref:System.Configuration.ProtectedConfigurationProvider> class.  
   
- For more information about protected configuration, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
+ For more information about protected configuration, see [Encrypting Configuration Information Using Protected Configuration](https://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
   
    
   
@@ -41,8 +41,8 @@
     </remarks>
     <altmember cref="T:System.Configuration.ProtectedConfigurationProvider" />
     <altmember cref="T:System.Configuration.ProtectedConfigurationSection" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ac7a6e16-c2af-4f16-a92a-80480c502e71">Overview of Protected Configuration</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1">Encrypting Configuration Information Using Protected Configuration</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ac7a6e16-c2af-4f16-a92a-80480c502e71">Overview of Protected Configuration</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1">Encrypting Configuration Information Using Protected Configuration</related>
   </Docs>
   <Members>
     <Member MemberName="DataProtectionProviderName">

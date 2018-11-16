@@ -36,7 +36,7 @@
   
 -   Apply the <xref:System.Runtime.InteropServices.WindowsRuntime.WriteOnlyArrayAttribute> attribute if you intend the contents of the array to be used for output only (that is, the method sets the contents of the array but does not read them).  
   
- Applying both attributes to a parameter causes an error. For more information, including the standard pattern for making changes to an array, see [Passing arrays to a Windows Runtime component](http://go.microsoft.com/fwlink/?LinkId=251026) in the Windows Dev Center.  
+ Applying both attributes to a parameter causes an error. For more information, including the standard pattern for making changes to an array, see [Passing arrays to a Windows Runtime component](https://go.microsoft.com/fwlink/?LinkId=251026) in the Windows Dev Center.  
   
 > [!IMPORTANT]
 >  Parameters that have the <xref:System.Runtime.InteropServices.WindowsRuntime.ReadOnlyArrayAttribute> attribute behave differently depending on whether the caller is written in native code or managed code. If the caller is native code (JavaScript or Visual C++ component extensions), the array is copied when the call crosses the application binary interface (ABI) boundary. Elements are converted if necessary. Therefore, any accidental changes the method makes to an input-only array are not visible to the caller.  
@@ -48,9 +48,9 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.InteropServices.WindowsRuntime.WriteOnlyArrayAttribute" />
-    <related type="Article" href="http://msdn.microsoft.com/library/d2ce0683-343d-403e-bb8d-209186f7a19d">Winmdexp.exe (Windows Runtime Metadata Export Tool)</related>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/p/?LinkId=238313">Creating Windows Runtime Components in C# and Visual Basic</related>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=251026">Passing arrays to a Windows Runtime component</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/d2ce0683-343d-403e-bb8d-209186f7a19d">Winmdexp.exe (Windows Runtime Metadata Export Tool)</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/p/?LinkId=238313">Creating Windows Runtime Components in C# and Visual Basic</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=251026">Passing arrays to a Windows Runtime component</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

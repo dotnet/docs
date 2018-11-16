@@ -41,7 +41,7 @@
   
  It is not legal to define an <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> that is empty or that contains only white space.  
   
- This class represents the `rule` element that is defined in the World Wide Web Consortium (W3C) [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761). For information about the SRGS `rule` element and details about its support by System.Speech, see [rule Element](http://msdn.microsoft.com/library/da67b4aa-0545-426a-a02f-1417b968021e).  
+ This class represents the `rule` element that is defined in the World Wide Web Consortium (W3C) [Speech Recognition Grammar Specification (SRGS) Version 1.0](https://go.microsoft.com/fwlink/?LinkId=201761). For information about the SRGS `rule` element and details about its support by System.Speech, see [rule Element](https://msdn.microsoft.com/library/da67b4aa-0545-426a-a02f-1417b968021e).  
   
  ]]></format>
     </remarks>
@@ -647,7 +647,7 @@ document.Root = winnerRule;
  ]]></format>
         </remarks>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361680(v%3doffice.14)">Create Grammars Using SrgsGrammar</related>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?linkid=15143&amp;clcid=0x409">Speech Recognition Grammar Specification Version 1.0</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?linkid=15143&amp;clcid=0x409">Speech Recognition Grammar Specification Version 1.0</related>
       </Docs>
     </Member>
     <Member MemberName="Script">

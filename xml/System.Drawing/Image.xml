@@ -77,8 +77,8 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/a626d701-bd99-4fd8-b92f-7b8f794e042b">Working with Images, Bitmaps, Icons, and Metafiles</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71">Images, Bitmaps, and Metafiles</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/a626d701-bd99-4fd8-b92f-7b8f794e042b">Working with Images, Bitmaps, Icons, and Metafiles</related>
   </Docs>
   <Members>
     <Member MemberName="Clone">
@@ -425,7 +425,7 @@
         <exception cref="T:System.IO.FileNotFoundException">The specified file does not exist.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="filename" /> is a <see cref="T:System.Uri" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6be085a2-2c13-47c8-b80a-c18b32777d8d">Types of Bitmaps</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6be085a2-2c13-47c8-b80a-c18b32777d8d">Types of Bitmaps</related>
       </Docs>
     </Member>
     <Member MemberName="FromFile">
@@ -504,7 +504,7 @@
         <exception cref="T:System.IO.FileNotFoundException">The specified file does not exist.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="filename" /> is a <see cref="T:System.Uri" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/6be085a2-2c13-47c8-b80a-c18b32777d8d">Types of Bitmaps</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6be085a2-2c13-47c8-b80a-c18b32777d8d">Types of Bitmaps</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FromHbitmap">
@@ -1366,7 +1366,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/72ec0b31-0be7-444a-9575-1dbcb864e0be">How To: Read Image Metadata</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/72ec0b31-0be7-444a-9575-1dbcb864e0be">How To: Read Image Metadata</related>
       </Docs>
     </Member>
     <Member MemberName="PropertyItems">
@@ -1417,7 +1417,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/72ec0b31-0be7-444a-9575-1dbcb864e0be">How To: Read Image Metadata</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/72ec0b31-0be7-444a-9575-1dbcb864e0be">How To: Read Image Metadata</related>
       </Docs>
     </Member>
     <Member MemberName="RawFormat">
@@ -1795,7 +1795,7 @@
  -or-  
   
  The image was saved to the same file it was created from.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/4b9a74e3-9504-43c1-9f28-ace651d0772e">How to: Set JPEG Compression Level</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4b9a74e3-9504-43c1-9f28-ace651d0772e">How to: Set JPEG Compression Level</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SaveAdd">

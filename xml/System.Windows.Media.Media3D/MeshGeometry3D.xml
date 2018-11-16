@@ -31,7 +31,7 @@
   
  ]]></format>
     </remarks>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,7 +58,7 @@
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -81,7 +81,7 @@
         <summary>Gets the bounding <see cref="T:System.Windows.Media.Media3D.Rect3D" /> for this <see cref="T:System.Windows.Media.Media3D.MeshGeometry3D" />.</summary>
         <value>Bounding <see cref="T:System.Windows.Media.Media3D.Rect3D" /> for the <see cref="T:System.Windows.Media.Media3D.MeshGeometry3D" />.</value>
         <remarks>To be added.</remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -218,7 +218,7 @@
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
       </Docs>
     </Member>
     <Member MemberName="NormalsProperty">
@@ -310,7 +310,7 @@
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
       </Docs>
     </Member>
     <Member MemberName="PositionsProperty">
@@ -377,7 +377,7 @@
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
       </Docs>
     </Member>
     <Member MemberName="TextureCoordinatesProperty">
@@ -426,7 +426,7 @@
 ## Remarks  
  For a triangle in a given 3-D mesh, the order in which the triangle's vertex positions are specified determines whether the triangle face is a front or back face.  
   
- The [Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d) 3-D implementation uses a counter-clockwise winding order; that is, the points that determine a front-facing mesh triangle's positions should be specified in counterclockwise order, as viewed from the front of the mesh.  
+ The [Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d) 3-D implementation uses a counter-clockwise winding order; that is, the points that determine a front-facing mesh triangle's positions should be specified in counterclockwise order, as viewed from the front of the mesh.  
   
  Setting the <xref:System.Windows.Media.Media3D.MeshGeometry3D.TriangleIndices%2A> property is optional. If the indices are not specified, triangles are drawn in a non-indexed fashion. Every set of three positions becomes a triangle.  
   
@@ -445,7 +445,7 @@
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=159964">3-D Solids Sample</related>
       </Docs>
     </Member>
     <Member MemberName="TriangleIndicesProperty">

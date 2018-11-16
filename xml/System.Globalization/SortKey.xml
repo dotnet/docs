@@ -72,7 +72,7 @@
   
  <xref:System.Globalization.SortKey> objects can be serialized, but only so that they can cross <xref:System.AppDomain> objects. If an application serializes a <xref:System.Globalization.SortKey> object, the application must regenerate all the sort keys when there is a new version of the .NET Framework.  
   
- For more information about sort keys, see Unicode Technical Standard #10, "Unicode Collation Algorithm" on the [Unicode Consortium website](http://go.microsoft.com/fwlink/?linkid=37123).  
+ For more information about sort keys, see Unicode Technical Standard #10, "Unicode Collation Algorithm" on the [Unicode Consortium website](https://go.microsoft.com/fwlink/?linkid=37123).  
   
    
   

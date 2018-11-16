@@ -34,7 +34,7 @@
   
 -   When a PS 3.0 shader is assigned, the number of samplers increases to 8. Assign the PS 3.0 shader before other shaders to enable registering 8 samplers.  
   
--   The full shader constant register limit of 224 for floats is used. For more information, see [ps_3_0](http://go.microsoft.com/fwlink/?LinkId=166292).  
+-   The full shader constant register limit of 224 for floats is used. For more information, see [ps_3_0](https://go.microsoft.com/fwlink/?LinkId=166292).  
   
 -   The following data types are supported in PS 3.0 shaders only. An exception is thrown if these are used in lower shader versions.  
   
@@ -46,7 +46,7 @@
   
 -   If a computer has more than one video card, the behavior is defined by the least capable video card. For example, if the computer has two video cards, one of which supports PS 3.0 and one of which does not, the behavior is the same as if the computer does not support PS 3.0.  
   
--   If a computer supports rendering PS 3.0 in hardware, but an invalid PS 3.0 shader is assigned, the <xref:System.Windows.Media.Effects.PixelShader.InvalidPixelShaderEncountered> event is raised. An example of an invalid PS 3.0 shader is one compiled with the `ps_3_sw` flag. The <xref:System.Windows.Media.Effects.ShaderEffect> class accepts only PS 3.0 shaders that are compiled with the `ps_3_0` flag passed to fxc.exe. For more information, see [Effect-Compiler Tool](http://go.microsoft.com/fwlink/?LinkId=166293).  
+-   If a computer supports rendering PS 3.0 in hardware, but an invalid PS 3.0 shader is assigned, the <xref:System.Windows.Media.Effects.PixelShader.InvalidPixelShaderEncountered> event is raised. An example of an invalid PS 3.0 shader is one compiled with the `ps_3_sw` flag. The <xref:System.Windows.Media.Effects.ShaderEffect> class accepts only PS 3.0 shaders that are compiled with the `ps_3_0` flag passed to fxc.exe. For more information, see [Effect-Compiler Tool](https://go.microsoft.com/fwlink/?LinkId=166293).  
   
 > [!NOTE]
 >  PS 2.0 shaders run when rendering in software. However, even if PS 3.0 is supported by the system's hardware, PS 3.0 shaders do not run during software rendering.  

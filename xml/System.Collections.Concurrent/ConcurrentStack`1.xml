@@ -91,7 +91,7 @@
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" /> are thread-safe and may be used concurrently from multiple threads.</threadsafe>
-    <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -120,7 +120,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -154,7 +154,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" /> class that contains elements copied from the specified collection</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="collection" /> argument is null.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -187,7 +187,7 @@
       <Docs>
         <summary>Removes all objects from the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" />.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -234,7 +234,7 @@
           <paramref name="index" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="index" /> is equal to or greater than the length of the <paramref name="array" /> -or- The number of elements in the source <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -320,7 +320,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -362,7 +362,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Push">
@@ -398,7 +398,7 @@
         <param name="item">The object to push onto the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" />. The value can be a null reference (Nothing in Visual Basic) for reference types.</param>
         <summary>Inserts an object at the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" />.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="PushRange">
@@ -410,7 +410,7 @@
       </AssemblyInfo>
       <Docs>
         <remarks />
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="PushRange">
@@ -457,7 +457,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="items" /> is a null reference (Nothing in Visual Basic).</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="PushRange">
@@ -512,7 +512,7 @@
           <paramref name="startIndex" /> or <paramref name="count" /> is negative. Or <paramref name="startIndex" /> is greater than or equal to the length of <paramref name="items" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="startIndex" /> + <paramref name="count" /> is greater than the length of <paramref name="items" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;.TryAdd">
@@ -558,7 +558,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;.TryTake">
@@ -604,7 +604,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -649,7 +649,7 @@
           <paramref name="index" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="array" /> is multidimensional. -or- <paramref name="array" /> does not have zero-based indexing. -or- <paramref name="index" /> is equal to or greater than the length of the <paramref name="array" /> -or- The number of elements in the source <see cref="T:System.Collections.ICollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />. -or- The type of the source <see cref="T:System.Collections.ICollection" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -721,7 +721,7 @@
         <value>Returns null (Nothing in Visual Basic).</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">The SyncRoot property is not supported</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -800,7 +800,7 @@
         <summary>Copies the items stored in the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" /> to a new array.</summary>
         <returns>A new array containing a snapshot of elements copied from the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="TryPeek">
@@ -837,7 +837,7 @@
         <summary>Attempts to return an object from the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" /> without removing it.</summary>
         <returns>true if and object was returned successfully; otherwise, false.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="TryPop">
@@ -892,7 +892,7 @@
       </AssemblyInfo>
       <Docs>
         <remarks />
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="TryPopRange">
@@ -940,7 +940,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="items" /> is a null argument (Nothing in Visual Basic).</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
     <Member MemberName="TryPopRange">
@@ -994,7 +994,7 @@
           <paramref name="startIndex" /> or <paramref name="count" /> is negative. Or <paramref name="startIndex" /> is greater than or equal to the length of <paramref name="items" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="startIndex" /> + <paramref name="count" /> is greater than the length of <paramref name="items" />.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>
   </Members>

@@ -53,7 +53,7 @@
   
 <a name="Accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="DeclarativeSyntax"></a>   
 ## Declarative Syntax  
@@ -122,7 +122,7 @@
    
   
 ## Examples  
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=191893).  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](https://go.microsoft.com/fwlink/?LinkId=191893).  
   
  The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.DropDownList> control that contains four items.  
   
@@ -253,7 +253,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to get or set the <xref:System.Web.UI.WebControls.DropDownList.BorderColor%2A> property in a custom <xref:System.Web.UI.WebControls.DropDownList> control. For information about using custom server controls, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The following code example demonstrates how to get or set the <xref:System.Web.UI.WebControls.DropDownList.BorderColor%2A> property in a custom <xref:System.Web.UI.WebControls.DropDownList> control. For information about using custom server controls, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-aspx-csharp[CustomDropDownListBorderColor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDropDownListBorderColor/CS/custom_dropdownlist_bordercolorcs.aspx#1)]
  [!code-aspx-vb[CustomDropDownListBorderColor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDropDownListBorderColor/VB/custom_dropdownlist_bordercolorvb.aspx#1)]  
@@ -363,7 +363,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.DropDownList.CreateControlCollection%2A> method in a custom server control so that it always returns a new instance of the <xref:System.Web.UI.EmptyControlCollection> class for the <xref:System.Web.UI.WebControls.DropDownList> control. For information about using custom server controls, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.DropDownList.CreateControlCollection%2A> method in a custom server control so that it always returns a new instance of the <xref:System.Web.UI.EmptyControlCollection> class for the <xref:System.Web.UI.WebControls.DropDownList> control. For information about using custom server controls, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  [!code-aspx-csharp[CustomDropDownListCreateControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDropDownListCreateControlCollection/CS/custom_dropdownlist_createcontrolcollectioncs.aspx#1)]
  [!code-aspx-vb[CustomDropDownListCreateControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDropDownListCreateControlCollection/VB/custom_dropdownlist_createcontrolcollectionvb.aspx#1)]  

@@ -691,7 +691,7 @@
   
 -   Call the <xref:System.Windows.DragEventArgs.GetPosition%2A> method of the <xref:System.Windows.DragEventArgs> that is passed to the drag events (<xref:System.Windows.ContentElement.DragEnter>, <xref:System.Windows.ContentElement.DragOver>, <xref:System.Windows.ContentElement.DragLeave>).  
   
--   Call [GetCursorPos](http://msdn.microsoft.com/library/default.asp?url=/library/winui/winui/windowsuserinterface/resources/cursors/cursorreference/cursorfunctions/getcursorpos.asp), using P/Invoke.  
+-   Call [GetCursorPos](https://msdn.microsoft.com/library/default.asp?url=/library/winui/winui/windowsuserinterface/resources/cursors/cursorreference/cursorfunctions/getcursorpos.asp), using P/Invoke.  
   
    
   

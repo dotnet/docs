@@ -226,7 +226,7 @@
   
  You can use this method to create a file that contains the following:  
   
--   The results of a [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9) query on the lines of a file, as obtained by using the <xref:System.IO.File.ReadLines%2A> method.  
+-   The results of a [LINQ to Objects](https://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9) query on the lines of a file, as obtained by using the <xref:System.IO.File.ReadLines%2A> method.  
   
 -   The contents of a collection that implements an <xref:System.Collections.Generic.IEnumerable%601> of strings.  
   
@@ -3607,7 +3607,7 @@
   
  You can use the <xref:System.IO.File.ReadLines%2A> method to do the following:  
   
--   Perform [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9) queries on a file to obtain a filtered set of its lines.  
+-   Perform [LINQ to Objects](https://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9) queries on a file to obtain a filtered set of its lines.  
   
 -   Write the returned collection of lines to a file with the <xref:System.IO.File.WriteAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%29?displayProperty=nameWithType> method, or append them to an existing file with the <xref:System.IO.File.AppendAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%29?displayProperty=nameWithType> method.  
   
@@ -3706,7 +3706,7 @@
   
  You can use the <xref:System.IO.File.ReadLines%2A> method to do the following:  
   
--   Perform [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9) queries on a file to obtain a filtered set of its lines.  
+-   Perform [LINQ to Objects](https://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9) queries on a file to obtain a filtered set of its lines.  
   
 -   Write the returned collection of lines to a file with the <xref:System.IO.File.WriteAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.Text.Encoding%29?displayProperty=nameWithType> method, or append them to an existing file with the <xref:System.IO.File.AppendAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.Text.Encoding%29?displayProperty=nameWithType> method.  
   
@@ -4901,7 +4901,7 @@
   
  You can use this method to create a file that contains the following:  
   
--   The results of a [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9) query on the lines of a file, as obtained by using the <xref:System.IO.File.ReadLines%2A> method.  
+-   The results of a [LINQ to Objects](https://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9) query on the lines of a file, as obtained by using the <xref:System.IO.File.ReadLines%2A> method.  
   
 -   The contents of a collection that implements an <xref:System.Collections.Generic.IEnumerable%601> of strings.  
   

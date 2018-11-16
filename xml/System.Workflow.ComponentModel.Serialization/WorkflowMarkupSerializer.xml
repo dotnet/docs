@@ -33,7 +33,7 @@
   
  <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer> is the base class for all markup serializers included in the <xref:System.Workflow.ComponentModel.Serialization> namespace.  
   
- For more information, see [Serialization](http://msdn.microsoft.com/library/4d1111c0-9447-4231-a997-96a2b74b3453).  
+ For more information, see [Serialization](https://msdn.microsoft.com/library/4d1111c0-9447-4231-a997-96a2b74b3453).  
   
  <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer> does not support serialization of nested types.  
   
@@ -91,7 +91,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how to create a new instance of the <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer> class.  This code example is part of the OutlookWorkflowWizard SDK Sample from the Loader.cs file. For more information, see [Outlook Workflow Wizard](http://msdn.microsoft.com/library/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
+ The following code example demonstrates how to create a new instance of the <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer> class.  This code example is part of the OutlookWorkflowWizard SDK Sample from the Loader.cs file. For more information, see [Outlook Workflow Wizard](https://msdn.microsoft.com/library/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
   
  [!code-csharp[WF_Samples#97](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#97)]
  [!code-vb[WF_Samples#97](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#97)]  
@@ -227,7 +227,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about this dependency property, see [Using Workflow Markup](http://msdn.microsoft.com/library/e2693a12-640b-4ccb-8fb0-db3075e94aa4).  
+ For more information about this dependency property, see [Using Workflow Markup](https://msdn.microsoft.com/library/e2693a12-640b-4ccb-8fb0-db3075e94aa4).  
   
  [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
   
@@ -307,7 +307,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about workflow markup, see [Using Workflow Markup](http://msdn.microsoft.com/library/e2693a12-640b-4ccb-8fb0-db3075e94aa4).  
+ For more information about workflow markup, see [Using Workflow Markup](https://msdn.microsoft.com/library/e2693a12-640b-4ccb-8fb0-db3075e94aa4).  
   
  ]]></format>
         </remarks>
@@ -342,7 +342,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information on workflow markup, see [Using Workflow Markup](http://msdn.microsoft.com/library/e2693a12-640b-4ccb-8fb0-db3075e94aa4).  
+ For more information on workflow markup, see [Using Workflow Markup](https://msdn.microsoft.com/library/e2693a12-640b-4ccb-8fb0-db3075e94aa4).  
   
  ]]></format>
         </remarks>
@@ -750,7 +750,7 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
 ## Remarks  
  You must serialize either a new instance of a workflow type or the root activity in a programmatically-created workflow to create workflow markup that can be used in <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> to create a <xref:System.Workflow.Runtime.WorkflowInstance>.  
   
- For more information about workflow markup, see [Using Workflow Markup](http://msdn.microsoft.com/library/e2693a12-640b-4ccb-8fb0-db3075e94aa4).  
+ For more information about workflow markup, see [Using Workflow Markup](https://msdn.microsoft.com/library/e2693a12-640b-4ccb-8fb0-db3075e94aa4).  
   
  ]]></format>
         </remarks>
@@ -790,7 +790,7 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
 ## Remarks  
  You must serialize either a new instance of a workflow type or the root activity in a programmatically-created workflow to create workflow markup that can be used in <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> to create a <xref:System.Workflow.Runtime.WorkflowInstance>.  
   
- For more information on workflow markup, see [Using Workflow Markup](http://msdn.microsoft.com/library/e2693a12-640b-4ccb-8fb0-db3075e94aa4).  
+ For more information on workflow markup, see [Using Workflow Markup](https://msdn.microsoft.com/library/e2693a12-640b-4ccb-8fb0-db3075e94aa4).  
   
  ]]></format>
         </remarks>
@@ -897,7 +897,7 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This value corresponds to `x:Class` attribute in XAML. For more information, see [Using Workflow Markup](http://msdn.microsoft.com/library/e2693a12-640b-4ccb-8fb0-db3075e94aa4).  
+ This value corresponds to `x:Class` attribute in XAML. For more information, see [Using Workflow Markup](https://msdn.microsoft.com/library/e2693a12-640b-4ccb-8fb0-db3075e94aa4).  
   
  This property is used only at design time. After compilation, it becomes the name of the compiled type.  
   

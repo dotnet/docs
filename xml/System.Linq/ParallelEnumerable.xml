@@ -10035,7 +10035,7 @@
         <exception cref="T:System.InvalidOperationException">
           <paramref name="WithCancellation" /> is used multiple times in the query.</exception>
         <related type="Article" href="~/docs/standard/parallel-programming/parallel-linq-plinq.md">Parallel LINQ (PLINQ)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/80b14640-edfa-4153-be1b-3e003d3e9c1a">How to: Cancel a PLINQ Query</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/80b14640-edfa-4153-be1b-3e003d3e9c1a">How to: Cancel a PLINQ Query</related>
         <related type="Article" href="~/docs/standard/threading/cancellation-in-managed-threads.md">Cancellation</related>
       </Docs>
     </Member>
@@ -10186,8 +10186,8 @@
         <exception cref="T:System.InvalidOperationException">
           <paramref name="WithMergeOptions" /> is used multiple times in the query.</exception>
         <related type="Article" href="~/docs/standard/parallel-programming/parallel-linq-plinq.md">Parallel LINQ (PLINQ)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/e8f7be3b-88de-4f33-ab14-dc008e76c1ba">Merge Options in PLINQ</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/0f33b527-e91a-4550-a39a-e63e396fd831">How to: Specify Merge Options in PLINQ</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e8f7be3b-88de-4f33-ab14-dc008e76c1ba">Merge Options in PLINQ</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0f33b527-e91a-4550-a39a-e63e396fd831">How to: Specify Merge Options in PLINQ</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Zip&lt;TFirst,TSecond,TResult&gt;">

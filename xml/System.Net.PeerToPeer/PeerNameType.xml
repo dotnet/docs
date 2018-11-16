@@ -23,7 +23,7 @@
   
  The format of a peer name is: *Authority.Classifier*. The value of <xref:System.Net.PeerToPeer.PeerName.Authority%2A> depends on whether the name is a secured peer name or an unsecured peer name. The <xref:System.Net.PeerToPeer.PeerName.Classifier%2A> part of the name can be set to any string that contains 15 or fewer Unicode characters, including the `null` terminator. Once the <xref:System.Net.PeerToPeer.PeerName.Authority%2A>, <xref:System.Net.PeerToPeer.PeerName.Classifier%2A> and security level of a peer have been established, a peer can also be referred to with a relative name or a host name.  
   
- Only the owner, or peer host, can register a secure peer name with the [PNRP Namespace Provider API](http://go.microsoft.com/fwlink?LinkID=92731). Any node can claim ownership to any unsecured <xref:System.Net.PeerToPeer.PeerName>.  
+ Only the owner, or peer host, can register a secure peer name with the [PNRP Namespace Provider API](https://go.microsoft.com/fwlink?LinkID=92731). Any node can claim ownership to any unsecured <xref:System.Net.PeerToPeer.PeerName>.  
   
  **Note** Using a secured <xref:System.Net.PeerToPeer.PeerName> does not ensure the overall security of a networking application. Security of the application is implementation-dependent.  
   

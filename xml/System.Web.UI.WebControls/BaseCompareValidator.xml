@@ -31,12 +31,12 @@
  The <xref:System.Web.UI.WebControls.BaseCompareValidator> class also contains several static properties and methods that are useful when performing comparison validations. You can determine whether a string can be converted to a specific data type by using the <xref:System.Web.UI.WebControls.BaseCompareValidator.CanConvert%2A> method. The maximum year that can be represented by a two-digit year is contained in the <xref:System.Web.UI.WebControls.BaseCompareValidator.CutoffYear%2A> property. The <xref:System.Web.UI.WebControls.BaseCompareValidator.GetFullYear%2A> method allows you to convert a two-digit year to a four-digit year.  
   
 > [!NOTE]
->  When you use validator controls that derive from the <xref:System.Web.UI.WebControls.BaseCompareValidator> control inside an <xref:System.Web.UI.UpdatePanel> control, make sure that the validator control and the control it is associated with are in the same panel. For more information about using the <xref:System.Web.UI.UpdatePanel> control for partial-page updates, see [Partial-Page Rendering Overview](http://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
+>  When you use validator controls that derive from the <xref:System.Web.UI.WebControls.BaseCompareValidator> control inside an <xref:System.Web.UI.UpdatePanel> control, make sure that the validator control and the control it is associated with are in the same panel. For more information about using the <xref:System.Web.UI.UpdatePanel> control for partial-page updates, see [Partial-Page Rendering Overview](https://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
   
  For more information about validation controls, see <xref:System.Web.UI.WebControls.BaseValidator>.  
   
 ## Accessibility  
- The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
  ]]></format>
     </remarks>
@@ -484,7 +484,7 @@
 ## Remarks  
  When the <xref:System.Web.UI.WebControls.BaseCompareValidator.CultureInvariantValues%2A> property is set to `true`, properties of the control that are not strongly typed are converted to a culture-neutral format before being compared. When this property is set to `false`, values are converted to the format of the current culture. The <xref:System.Web.UI.WebControls.BaseCompareValidator.CultureInvariantValues%2A> property does not affect values that are entered by users of the control on a Web page.  
   
- This property cannot be set by themes or by style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or by style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
@@ -492,7 +492,7 @@
         <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
         <altmember cref="T:System.Globalization.NumberFormatInfo" />
         <altmember cref="P:System.Globalization.NumberFormatInfo.CurrentInfo" />
-        <related type="Article" href="http://msdn.microsoft.com/library/e6e2bb94-a95d-44e2-b68c-cfdd1db77784">Culture-Insensitive String Operations</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/e6e2bb94-a95d-44e2-b68c-cfdd1db77784">Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="CutoffYear">
@@ -698,7 +698,7 @@
 |`Date`|Specifies a date data type.|  
 |`Currency`|Specifies a monetary data type.|  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   

@@ -55,14 +55,14 @@
   
 -   If you are working directly at the clock level, create and apply a new set of clocks and use them to replace the previous set of generated clocks.  
   
- For an example of a data bound animation, see the [Key Spline Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160011) .  
+ For an example of a data bound animation, see the [Key Spline Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160011) .  
   
 ## Using a Timeline as a Timer  
  A timeline's clock will only progress when there's an event hander associated with it or (in the case of an <xref:System.Windows.Media.Animation.AnimationClock> object) it is associated with a property. For this reason (and others), it's not recommended that you use a <xref:System.Windows.Media.Animation.Timeline> as a timer.  
   
  ]]></format>
     </remarks>
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=159970">Animation Timing Behavior Sample</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=159970">Animation Timing Behavior Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

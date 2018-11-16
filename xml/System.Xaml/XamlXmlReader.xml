@@ -31,7 +31,7 @@
     </remarks>
     <altmember cref="T:System.Xaml.XamlXmlReaderSettings" />
     <altmember cref="T:System.Xaml.XamlObjectWriter" />
-    <related type="Article" href="http://msdn.microsoft.com/library/7c11abec-1075-474c-9d9b-778e5dab21c3">Understanding XAML Node Streams</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/7c11abec-1075-474c-9d9b-778e5dab21c3">Understanding XAML Node Streams</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -648,7 +648,7 @@
         <summary>Gets the current member at the reader position, if the current reader position is on a <see cref="F:System.Xaml.XamlNodeType.StartMember" />.</summary>
         <value>The current member; or <see langword="null" />, if the current reader position is not on a member.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7c11abec-1075-474c-9d9b-778e5dab21c3">Understanding XAML Node Streams</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7c11abec-1075-474c-9d9b-778e5dab21c3">Understanding XAML Node Streams</related>
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -733,7 +733,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Xaml.XamlXmlReader.NodeType" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7c11abec-1075-474c-9d9b-778e5dab21c3">Understanding XAML Node Stream Structures and Concepts</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7c11abec-1075-474c-9d9b-778e5dab21c3">Understanding XAML Node Stream Structures and Concepts</related>
       </Docs>
     </Member>
     <Member MemberName="SchemaContext">
@@ -790,7 +790,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7c11abec-1075-474c-9d9b-778e5dab21c3">Understanding XAML Node Streams</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7c11abec-1075-474c-9d9b-778e5dab21c3">Understanding XAML Node Streams</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -812,7 +812,7 @@
         <summary>Gets the value of the current node.</summary>
         <value>The value of the current node; or <see langword="null" />, if the position is not on a <see cref="F:System.Xaml.XamlNodeType.Value" /> node type.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7c11abec-1075-474c-9d9b-778e5dab21c3">Understanding XAML Node Streams</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7c11abec-1075-474c-9d9b-778e5dab21c3">Understanding XAML Node Streams</related>
       </Docs>
     </Member>
   </Members>

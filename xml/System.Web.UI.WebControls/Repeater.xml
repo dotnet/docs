@@ -67,7 +67,7 @@
  The <xref:System.Web.UI.WebControls.Repeater> control has no built-in selection capabilities or editing support. You can use the <xref:System.Web.UI.WebControls.Repeater.ItemCommand> event to process control events that are raised from the templates to the control.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](https://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
 <a name="data_binding"></a>   
 ## Data Binding  
@@ -133,7 +133,7 @@
    
   
 ## Examples  
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=192873).  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](https://go.microsoft.com/fwlink/?LinkId=192873).  
   
  The following code example demonstrates how to use two simple <xref:System.Web.UI.WebControls.Repeater> controls on a page. The <xref:System.Web.UI.WebControls.Repeater.DataSource%2A> property is used to specify the data source for the <xref:System.Web.UI.WebControls.Repeater> control. The first <xref:System.Web.UI.WebControls.Repeater> displays its items in a table; the second <xref:System.Web.UI.WebControls.Repeater> displays its items in a comma-separated list.  
   
@@ -149,7 +149,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
     <altmember cref="T:System.Web.UI.WebControls.DataList" />
-    <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -174,7 +174,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Repeater" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AlternatingItemTemplate">
@@ -224,7 +224,7 @@
  Use this property to provide a different appearance for alternating items in the <xref:System.Web.UI.WebControls.Repeater> control from what is specified in the <xref:System.Web.UI.WebControls.Repeater.ItemTemplate%2A>.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](https://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
    
   
@@ -240,7 +240,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Repeater.HeaderTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Repeater.FooterTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Repeater.SeparatorTemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CallingDataMethods">
@@ -302,7 +302,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.ControlCollection" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -327,7 +327,7 @@
         <summary>Called by the ASP.NET page framework to notify server controls that use composition-based implementation to create any child controls they contain in preparation for posting back or rendering.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Control.CreateChildControls" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlHierarchy">
@@ -354,7 +354,7 @@
         <param name="useDataSource">Indicates whether to use the specified data source.</param>
         <summary>Creates a control hierarchy, with or without the specified data source.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDataSourceSelectArguments">
@@ -385,7 +385,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateItem">
@@ -428,7 +428,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreatingModelDataSource">
@@ -503,7 +503,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Repeater.DataSource" />
         <altmember cref="P:System.Web.UI.WebControls.Repeater.DataSourceID" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataMember">
@@ -550,7 +550,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Repeater.DataSource" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -616,7 +616,7 @@
         <exception cref="T:System.Web.HttpException">The data source cannot be resolved because a value is specified for both the <see cref="P:System.Web.UI.WebControls.Repeater.DataSource" /> property and the <see cref="P:System.Web.UI.WebControls.Repeater.DataSourceID" /> property.</exception>
         <altmember cref="P:System.Web.UI.WebControls.Repeater.DataMember" />
         <altmember cref="P:System.Web.UI.WebControls.Repeater.DataSourceID" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataSourceID">
@@ -676,7 +676,7 @@
   
 -   The data source specified by the <see cref="P:System.Web.UI.WebControls.Repeater.DataSourceID" /> property does not implement <see cref="T:System.Web.UI.IDataSource" />.</exception>
         <altmember cref="P:System.Web.UI.WebControls.Repeater.DataSource" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -713,8 +713,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.Repeater.EnsureDataBound" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3">ASP.NET Themes Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnsureDataBound">
@@ -746,7 +746,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Repeater.DataSourceID" />
         <altmember cref="M:System.Web.UI.WebControls.Repeater.DataBind" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FooterTemplate">
@@ -796,7 +796,7 @@
  Use this property to create a template that controls how the footer section of a <xref:System.Web.UI.WebControls.Repeater> control is displayed.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](https://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
    
   
@@ -812,7 +812,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Repeater.ItemTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Repeater.AlternatingItemTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Repeater.SeparatorTemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -843,7 +843,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplate">
@@ -893,7 +893,7 @@
  Use this property to create a template that controls how the header section of a <xref:System.Web.UI.WebControls.Repeater> control is displayed.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](https://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
    
   
@@ -909,7 +909,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Repeater.ItemTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Repeater.AlternatingItemTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Repeater.SeparatorTemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Initialized">
@@ -945,7 +945,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="InitializeItem">
@@ -972,7 +972,7 @@
         <param name="item">The control to be initialized from an inline template.</param>
         <summary>Populates iteratively the specified <see cref="T:System.Web.UI.WebControls.RepeaterItem" /> with a sub-hierarchy of child controls.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsBoundUsingDataSourceID">
@@ -1003,7 +1003,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsDataBindingAutomatic">
@@ -1077,7 +1077,7 @@
         <altmember cref="M:System.Web.UI.WebControls.Repeater.OnItemCommand(System.Web.UI.WebControls.RepeaterCommandEventArgs)" />
         <altmember cref="T:System.Web.UI.WebControls.RepeaterCommandEventArgs" />
         <altmember cref="T:System.Web.UI.WebControls.RepeaterCommandEventHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ItemCreated">
@@ -1120,7 +1120,7 @@
         <altmember cref="M:System.Web.UI.WebControls.Repeater.OnItemCreated(System.Web.UI.WebControls.RepeaterItemEventArgs)" />
         <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventArgs" />
         <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ItemDataBound">
@@ -1163,7 +1163,7 @@
         <altmember cref="M:System.Web.UI.WebControls.Repeater.OnItemDataBound(System.Web.UI.WebControls.RepeaterItemEventArgs)" />
         <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventArgs" />
         <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -1214,7 +1214,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.RepeaterItemCollection" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ItemTemplate">
@@ -1264,7 +1264,7 @@
  Use this property to create a template that controls how items in the <xref:System.Web.UI.WebControls.Repeater> control are displayed.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](https://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
    
   
@@ -1280,7 +1280,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Repeater.HeaderTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Repeater.FooterTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Repeater.SeparatorTemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ItemType">
@@ -1386,7 +1386,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnCreatingModelDataSource">
@@ -1450,7 +1450,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnDataPropertyChanged">
@@ -1483,7 +1483,7 @@
         <exception cref="T:System.Web.HttpException">
           <see cref="M:System.Web.UI.WebControls.Repeater.OnDataPropertyChanged" /> is called during the data-binding phase of the control.</exception>
         <altmember cref="P:System.Web.UI.WebControls.Repeater.Initialized" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnDataSourceViewChanged">
@@ -1524,7 +1524,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Repeater.RequiresDataBinding" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -1550,7 +1550,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.Control.Init" /> event.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnItemCommand">
@@ -1598,7 +1598,7 @@
         <altmember cref="E:System.Web.UI.WebControls.Repeater.ItemCommand" />
         <altmember cref="T:System.Web.UI.WebControls.RepeaterCommandEventArgs" />
         <altmember cref="T:System.Web.UI.WebControls.RepeaterCommandEventHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnItemCreated">
@@ -1646,7 +1646,7 @@
         <altmember cref="E:System.Web.UI.WebControls.Repeater.ItemCreated" />
         <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventArgs" />
         <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnItemDataBound">
@@ -1694,7 +1694,7 @@
         <altmember cref="E:System.Web.UI.WebControls.Repeater.ItemDataBound" />
         <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventArgs" />
         <altmember cref="T:System.Web.UI.WebControls.RepeaterItemEventHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
@@ -1728,7 +1728,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Control.OnLoad(System.EventArgs)" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -1762,7 +1762,7 @@
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.Control.PreRender" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RequiresDataBinding">
@@ -1808,7 +1808,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Repeater.DataSource" />
         <altmember cref="P:System.Web.UI.WebControls.Repeater.DataSourceID" />
         <altmember cref="P:System.Web.UI.WebControls.Repeater.DataMember" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1860,7 +1860,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SelectMethod">
@@ -1946,7 +1946,7 @@
  Use the <xref:System.Web.UI.WebControls.Repeater.SeparatorTemplate%2A> property to create a template that controls how the separator between items is displayed.  
   
 > [!CAUTION]
->  You can use the <xref:System.Web.UI.WebControls.Repeater.SeparatorTemplate%2A> property to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  You can use the <xref:System.Web.UI.WebControls.Repeater.SeparatorTemplate%2A> property to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](https://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
    
   
@@ -1962,7 +1962,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Repeater.FooterTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Repeater.ItemTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Repeater.AlternatingItemTemplate" />
-        <related type="Article" href="http://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/55c4b177-05ff-4327-be38-a8a97b16d41e">Repeater Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">

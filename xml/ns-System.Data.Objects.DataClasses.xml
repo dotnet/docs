@@ -5,7 +5,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Entity Data Model tools use the conceptual model file to generate data classes that derive from classes in this namespace. For more information, see [Object Services Overview (Entity Framework)](http://msdn.microsoft.com/library/43014cf9-c9cb-4538-bfbb-197820b60038). Custom data classes can inherit from classes in this namespace. The <xref:System.Data.Objects.DataClasses> namespace also includes interfaces that are used to implement custom data classes without inheriting from Entity Framework classes. For more information, see [Customizing Objects](http://msdn.microsoft.com/library/af6f07ce-2261-4c65-87cf-d018ad082921).  
+ Entity Data Model tools use the conceptual model file to generate data classes that derive from classes in this namespace. For more information, see [Object Services Overview (Entity Framework)](https://msdn.microsoft.com/library/43014cf9-c9cb-4538-bfbb-197820b60038). Custom data classes can inherit from classes in this namespace. The <xref:System.Data.Objects.DataClasses> namespace also includes interfaces that are used to implement custom data classes without inheriting from Entity Framework classes. For more information, see [Customizing Objects](https://msdn.microsoft.com/library/af6f07ce-2261-4c65-87cf-d018ad082921).  
   
  ]]></format>
     </remarks>

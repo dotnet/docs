@@ -42,7 +42,7 @@
     </remarks>
     <altmember cref="T:System.Web.IHttpModule" />
     <altmember cref="T:System.Web.IHttpHandler" />
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=196730">A Matter of Context</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=196730">A Matter of Context</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -545,7 +545,7 @@ End Sub
         </remarks>
         <altmember cref="P:System.Web.HttpContext.Handler" />
         <altmember cref="P:System.Web.HttpContext.PreviousHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b">HTTP Handlers and HTTP Modules Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b">HTTP Handlers and HTTP Modules Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentNotification">
@@ -738,8 +738,8 @@ End Sub
       </AssemblyInfo>
       <Docs>
         <summary>Gets an application-level resource.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/345e86a7-3851-4cdc-8309-a77bdb0d0a97">ASP.NET Web Site Layout</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/345e86a7-3851-4cdc-8309-a77bdb0d0a97">ASP.NET Web Site Layout</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetGlobalResourceObject">
@@ -789,8 +789,8 @@ End Sub
   
  The main assembly does not contain the resources for the neutral culture, and these resources are required because the appropriate satellite assembly is missing.</exception>
         <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/345e86a7-3851-4cdc-8309-a77bdb0d0a97">ASP.NET Web Site Layout</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/345e86a7-3851-4cdc-8309-a77bdb0d0a97">ASP.NET Web Site Layout</related>
         <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
       </Docs>
     </Member>
@@ -838,7 +838,7 @@ End Sub
   
  The main assembly does not contain the resources for the neutral culture, and these resources are required because the appropriate satellite assembly is missing.</exception>
         <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
         <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
       </Docs>
     </Member>
@@ -850,8 +850,8 @@ End Sub
       <Docs>
         <summary>Gets a page-level resource.</summary>
         <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/345e86a7-3851-4cdc-8309-a77bdb0d0a97">ASP.NET Web Site Layout</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/345e86a7-3851-4cdc-8309-a77bdb0d0a97">ASP.NET Web Site Layout</related>
         <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
       </Docs>
     </MemberGroup>
@@ -897,10 +897,10 @@ End Sub
         <exception cref="T:System.ArgumentException">The specified <paramref name="virtualPath" /> parameter is not in the current application's root directory.</exception>
         <exception cref="T:System.InvalidOperationException">The resource class for the page was not found.</exception>
         <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/345e86a7-3851-4cdc-8309-a77bdb0d0a97">ASP.NET Web Site Layout</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/345e86a7-3851-4cdc-8309-a77bdb0d0a97">ASP.NET Web Site Layout</related>
         <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/7a06d512-6fc3-40ca-9cb6-7f41d1a9fa28">How to: Retrieve Resource Values Programmatically</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7a06d512-6fc3-40ca-9cb6-7f41d1a9fa28">How to: Retrieve Resource Values Programmatically</related>
       </Docs>
     </Member>
     <Member MemberName="GetLocalResourceObject">
@@ -942,10 +942,10 @@ End Sub
         <exception cref="T:System.ArgumentException">The specified <paramref name="virtualPath" /> parameter is not in the current application's root directory.</exception>
         <exception cref="T:System.InvalidOperationException">The resource class for the page was not found.</exception>
         <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
-        <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/345e86a7-3851-4cdc-8309-a77bdb0d0a97">ASP.NET Web Site Layout</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/345e86a7-3851-4cdc-8309-a77bdb0d0a97">ASP.NET Web Site Layout</related>
         <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/7a06d512-6fc3-40ca-9cb6-7f41d1a9fa28">How to: Retrieve Resource Values Programmatically</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7a06d512-6fc3-40ca-9cb6-7f41d1a9fa28">How to: Retrieve Resource Values Programmatically</related>
       </Docs>
     </Member>
     <Member MemberName="GetSection">
@@ -1004,7 +1004,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.HttpContext.Handler%2A> property contains a reference to the handler that processes the HTTP request. The handler can be specified by using the  element, or by using a custom handler defined in user code. For more information about handlers, see [HTTP Handlers and HTTP Modules Overview](http://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b).  
+ The <xref:System.Web.HttpContext.Handler%2A> property contains a reference to the handler that processes the HTTP request. The handler can be specified by using the  element, or by using a custom handler defined in user code. For more information about handlers, see [HTTP Handlers and HTTP Modules Overview](https://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b).  
   
  The reference to the <xref:System.Web.HttpContext.Handler%2A> property will remain the same even after the current page has been changed by a server-side method, such as the <xref:System.Web.HttpServerUtility.Execute%2A> method or the <xref:System.Web.HttpServerUtility.Transfer%2A> method.  
   
@@ -1012,7 +1012,7 @@ End Sub
         </remarks>
         <altmember cref="P:System.Web.HttpContext.CurrentHandler" />
         <altmember cref="P:System.Web.HttpContext.PreviousHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b">HTTP Handlers and HTTP Modules Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b">HTTP Handlers and HTTP Modules Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsCustomErrorEnabled">
@@ -1235,7 +1235,7 @@ End Sub
         </remarks>
         <altmember cref="P:System.Web.HttpContext.Handler" />
         <altmember cref="P:System.Web.HttpContext.CurrentHandler" />
-        <related type="Article" href="http://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b">HTTP Handlers and HTTP Modules Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b">HTTP Handlers and HTTP Modules Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Profile">
@@ -1421,7 +1421,7 @@ End Sub
   
  URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
   
- If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
   
    
   
@@ -1438,8 +1438,8 @@ End Sub
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Web.HttpException">The <paramref name="path" /> parameter is not in the current application's root directory.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName="RewritePath">
@@ -1475,7 +1475,7 @@ End Sub
   
  URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
   
- If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
   
    
   
@@ -1486,8 +1486,8 @@ End Sub
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Web.HttpException">The <paramref name="path" /> parameter is not in the current application's root directory.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName="RewritePath">
@@ -1527,7 +1527,7 @@ End Sub
   
  URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
   
- If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
   
    
   
@@ -1538,8 +1538,8 @@ End Sub
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is not in the current application's root directory.</exception>
         <exception cref="T:System.Web.HttpException">The <paramref name="filePath" /> parameter is not in the current application's root directory.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName="RewritePath">
@@ -1581,7 +1581,7 @@ End Sub
   
  URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
   
- If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
   
    
   
@@ -1592,8 +1592,8 @@ End Sub
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is not in the current application's root directory.</exception>
         <exception cref="T:System.Web.HttpException">The <paramref name="filePath" /> parameter is not in the current application's root directory.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
       </Docs>
     </Member>
     <Member MemberName="Server">
@@ -1652,9 +1652,9 @@ End Sub
 ## Remarks  
  The <xref:System.Web.HttpContext.Session%2A> property provides programmatic access to the properties and methods of the <xref:System.Web.SessionState.HttpSessionState> class.  
   
- In order to use session state you have to enable it. For information about how to enable session state, see **Configuring Session State** in [ASP.NET Session State Overview](http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
+ In order to use session state you have to enable it. For information about how to enable session state, see **Configuring Session State** in [ASP.NET Session State Overview](https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
   
- For information about how to save values in session state, see [How to: Save Values in Session State](http://msdn.microsoft.com/library/a6cb2e3a-df49-4b12-9d9a-eed45541c165). For information about how to read values from session state, see [How to: Read Values from Session State](http://msdn.microsoft.com/library/2ef449bc-5c17-4785-b7cf-378c601af8f5).  
+ For information about how to save values in session state, see [How to: Save Values in Session State](https://msdn.microsoft.com/library/a6cb2e3a-df49-4b12-9d9a-eed45541c165). For information about how to read values from session state, see [How to: Read Values from Session State](https://msdn.microsoft.com/library/2ef449bc-5c17-4785-b7cf-378c601af8f5).  
   
    
   

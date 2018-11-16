@@ -39,7 +39,7 @@
   
 -   A class that contains the source code for a custom <xref:System.Web.UI.WebControls.WebParts.CatalogPartChrome> class and <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zone.  
   
- The first part of the code example is the user control. The source code for the user control comes from another topic. For this code example to work, you need to obtain the .ascx file for the user control from the [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0) topic, and place the file in the same folder as the .aspx page in this code example.  
+ The first part of the code example is the user control. The source code for the user control comes from another topic. For this code example to work, you need to obtain the .ascx file for the user control from the [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0) topic, and place the file in the same folder as the .aspx page in this code example.  
   
  The second part of the example is the Web page. Note that there is a `Register` directive near the top of the file to register the compiled component and a tag prefix. Also note that the page references the custom catalog zone using the element `<aspSample:MyCatalogZone>`.  
   
@@ -60,7 +60,7 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartChrome" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.EditorPartChrome" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

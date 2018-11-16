@@ -17,7 +17,7 @@
     <summary>Extends the <see cref="T:System.IdentityModel.Selectors.SecurityTokenRequirement" /> class by adding new properties that are useful for issued tokens.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.IdentityModel.Tokens.SamlSecurityTokenHandler" />
-    <related type="Article" href="http://msdn.microsoft.com/library/09202d12-88d3-49cc-953b-703bcc1690eb">&lt;samlSecurityTokenRequirement&gt;</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/09202d12-88d3-49cc-953b-703bcc1690eb">&lt;samlSecurityTokenRequirement&gt;</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -65,7 +65,7 @@
         <param name="element">The XML element from which the instance is to be loaded.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenRequirement" /> class from the specified XML.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/09202d12-88d3-49cc-953b-703bcc1690eb">&lt;samlSecurityTokenRequirement&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/09202d12-88d3-49cc-953b-703bcc1690eb">&lt;samlSecurityTokenRequirement&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="CertificateValidator">
@@ -130,7 +130,7 @@
         <summary>Gets or sets the claim type that will be used to generate the FederatedIdentity.Name property.</summary>
         <value>The claim type. The default is the value of the <see cref="F:System.Security.Claims.ClaimsIdentity.DefaultNameClaimType" /> field.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/17514d95-f0f5-4789-8e28-346640dc227c">&lt;nameClaimType&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/17514d95-f0f5-4789-8e28-346640dc227c">&lt;nameClaimType&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="RoleClaimType">
@@ -152,7 +152,7 @@
         <summary>Gets or sets the claim type that is used to generate the FederatedIdentity.Roles property.</summary>
         <value>The role claim type. The default is the value of the <see cref="F:System.Security.Claims.ClaimTypes.Role" /> field.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/69a49deb-6369-41ba-806b-ae8d21fac64b">&lt;roleClaimType&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/69a49deb-6369-41ba-806b-ae8d21fac64b">&lt;roleClaimType&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="ShouldEnforceAudienceRestriction">

@@ -261,7 +261,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
  For executables that are deployed and run from a website (HREF .exe files), the <xref:System.Resources.ResourceManager> object may probe for satellite assemblies over the web, which can hurt your app's performance. To eliminate the performance problem, you can limit this probing to the satellite assemblies that you have deployed with your app. To do this, you create a `<satelliteassemblies>` node in your app's configuration file to specify that you have deployed a specific set of cultures for your app, and that the <xref:System.Resources.ResourceManager> object should not try to probe for any culture that is not listed in that node.  
   
 > [!NOTE]
->  The preferred alternative to creating a `<satelliteassemblies>` node is to use the [ClickOnce Deployment Manifest](http://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b) feature.  
+>  The preferred alternative to creating a `<satelliteassemblies>` node is to use the [ClickOnce Deployment Manifest](https://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b) feature.  
   
  In your app's configuration file, create a section similar to the following:  
   
@@ -298,7 +298,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
 ## [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] Apps  
   
 > [!IMPORTANT]
->  Although the <xref:System.Resources.ResourceManager> class is supported in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, we do not recommend its use. Use this class only when you develop [!INCLUDE[net_portable](~/includes/net-portable-md.md)] projects that can be used with [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. To retrieve resources from [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, use the [Windows.ApplicationModel.Resources.ResourceLoader](http://go.microsoft.com/fwlink/p/?LinkId=238182) class instead.  
+>  Although the <xref:System.Resources.ResourceManager> class is supported in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, we do not recommend its use. Use this class only when you develop [!INCLUDE[net_portable](~/includes/net-portable-md.md)] projects that can be used with [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. To retrieve resources from [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, use the [Windows.ApplicationModel.Resources.ResourceLoader](https://go.microsoft.com/fwlink/p/?LinkId=238182) class instead.  
   
  For [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, the <xref:System.Resources.ResourceManager> class retrieves resources from package resource index (PRI) files. A single PRI file (the application package PRI file) contains the resources for both the default culture and any localized cultures. You use the MakePRI utility to create a PRI file from one or more resource files that are in XML resource (.resw) format. For resources that are included in a Visual Studio project, Visual Studio handles the process of creating and packaging the PRI file automatically. You can then use the .NET Framework <xref:System.Resources.ResourceManager> class to access the app's or library's resources.  
   
@@ -376,7 +376,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
     <altmember cref="T:System.Globalization.CultureInfo" />
     <altmember cref="P:System.Globalization.CultureInfo.CurrentUICulture" />
     <altmember cref="T:System.Resources.SatelliteContractVersionAttribute" />
-    <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -486,7 +486,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
 ## [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] Apps  
   
 > [!IMPORTANT]
->  Although the <xref:System.Resources.ResourceManager> class is supported in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, we do not recommend its use. Use this class only when you develop [!INCLUDE[net_portable](~/includes/net-portable-md.md)] projects that can be used with [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. To retrieve resources from [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, use the [Windows.ApplicationModel.Resources.ResourceLoader](http://go.microsoft.com/fwlink/p/?LinkId=238182) class instead.  
+>  Although the <xref:System.Resources.ResourceManager> class is supported in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, we do not recommend its use. Use this class only when you develop [!INCLUDE[net_portable](~/includes/net-portable-md.md)] projects that can be used with [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. To retrieve resources from [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, use the [Windows.ApplicationModel.Resources.ResourceLoader](https://go.microsoft.com/fwlink/p/?LinkId=238182) class instead.  
   
  In [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, <xref:System.Resources.ResourceManager> uses the `resourceSource` parameter to infer the assembly, base name, and the namespace where the resource items can be located within the app's package resource index (PRI) file. For example, given a type named MyCompany.MyProduct.MyType that is defined in `MyAssembly`, the resource manager looks for a resource set identifier named MyAssembly and looks for a scope MyCompany.MyProduct.MyType within that resource set. The resource manager searches for resource items under the default context (current culture, current high contrast setting, and so on) within this scope.  
   
@@ -593,7 +593,7 @@ al /out:ru-RU\Greet.resources.dll /culture:ru-RU /embed: GreetingResources.ru-RU
 ## [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] Apps  
   
 > [!IMPORTANT]
->  Although the <xref:System.Resources.ResourceManager> class is supported in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, we do not recommend its use. Use this class only when you develop [!INCLUDE[net_portable](~/includes/net-portable-md.md)] projects that can be used with [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. To retrieve resources from [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, use the [Windows.ApplicationModel.Resources.ResourceLoader](http://go.microsoft.com/fwlink/p/?LinkId=238182) class instead.  
+>  Although the <xref:System.Resources.ResourceManager> class is supported in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, we do not recommend its use. Use this class only when you develop [!INCLUDE[net_portable](~/includes/net-portable-md.md)] projects that can be used with [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. To retrieve resources from [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, use the [Windows.ApplicationModel.Resources.ResourceLoader](https://go.microsoft.com/fwlink/p/?LinkId=238182) class instead.  
   
  In [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, the resource manager uses the simple name of the `assembly` parameter to look up a matching resource set in the app's package resource index (PRI) file. The `baseName` parameter is used to look up a resource item within the resource set. For example, the root name for PortableLibrary1.Resource1.de-DE.resources is PortableLibrary1.Resource1.  
   
@@ -1594,7 +1594,7 @@ csc GetStream.cs /resource:AppResources.resources
 ## [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] Apps  
   
 > [!IMPORTANT]
->  Although the <xref:System.Resources.ResourceManager> class is supported in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, we do not recommend its use. Use this class only when you develop [!INCLUDE[net_portable](~/includes/net-portable-md.md)] projects that can be used with [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. To retrieve resources from [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, use the [Windows.ApplicationModel.Resources.ResourceLoader](http://go.microsoft.com/fwlink/p/?LinkId=238182) class instead.  
+>  Although the <xref:System.Resources.ResourceManager> class is supported in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, we do not recommend its use. Use this class only when you develop [!INCLUDE[net_portable](~/includes/net-portable-md.md)] projects that can be used with [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. To retrieve resources from [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, use the [Windows.ApplicationModel.Resources.ResourceLoader](https://go.microsoft.com/fwlink/p/?LinkId=238182) class instead.  
   
  In [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, the <xref:System.Resources.ResourceManager.GetString%28System.String%29> method returns the value of the `name` string resource, localized for the caller's current UI culture settings. The list of cultures is derived from the operating system's preferred UI language list. If the resource manager cannot match `name`, the method returns `null`.  
   
@@ -1639,7 +1639,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
         <threadsafe>The <see cref="M:System.Resources.ResourceManager.GetString(System.String)" /> method is thread safe.</threadsafe>
         <altmember cref="T:System.Globalization.CultureInfo" />
         <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/eca16922-1c46-4f68-aefe-e7a12283641f">Retrieving Resources in Satellite Assemblies</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/eca16922-1c46-4f68-aefe-e7a12283641f">Retrieving Resources in Satellite Assemblies</related>
       </Docs>
     </Member>
     <Member MemberName="GetString">
@@ -1702,7 +1702,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
 ## [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] Apps  
   
 > [!IMPORTANT]
->  Although the <xref:System.Resources.ResourceManager> class is supported in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, we do not recommend its use. Use this class only when you develop [!INCLUDE[net_portable](~/includes/net-portable-md.md)] projects that can be used with [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. To retrieve resources from [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, use the [Windows.ApplicationModel.Resources.ResourceLoader](http://go.microsoft.com/fwlink/p/?LinkId=238182) class instead.  
+>  Although the <xref:System.Resources.ResourceManager> class is supported in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, we do not recommend its use. Use this class only when you develop [!INCLUDE[net_portable](~/includes/net-portable-md.md)] projects that can be used with [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. To retrieve resources from [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, use the [Windows.ApplicationModel.Resources.ResourceLoader](https://go.microsoft.com/fwlink/p/?LinkId=238182) class instead.  
   
  In [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, the <xref:System.Resources.ResourceManager.GetString%28System.String%2CSystem.Globalization.CultureInfo%29> method returns the value of the `name` string resource, localized for the culture specified by the `culture` parameter. If the resource is not localized for the `culture` culture, the lookup uses the entire [!INCLUDE[win8](~/includes/win8-md.md)] language fallback list, and stops after looking in the default culture. If the resource manager cannot match `name`, the method returns `null`.  
   

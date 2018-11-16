@@ -40,7 +40,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Xps.Packaging.XpsImage" />
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=65761">XML Paper Specification (XPS)</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=65761">XML Paper Specification (XPS)</related>
   </Docs>
   <Members>
     <Member MemberName="IsObfuscated">
@@ -72,7 +72,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about font obfuscation, see Section 2.1.7.3 "Embedded Font Obfuscation" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+ For more information about font obfuscation, see Section 2.1.7.3 "Embedded Font Obfuscation" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](https://go.microsoft.com/fwlink/?LinkID=65761).  
   
  ]]></format>
         </remarks>
@@ -111,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the use of restricted fonts, see the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+ For more information about the use of restricted fonts, see the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](https://go.microsoft.com/fwlink/?LinkID=65761).  
   
  ]]></format>
         </remarks>
@@ -148,7 +148,7 @@
   
  While this method does not provide encryption, the <xref:System.Windows.Xps.Packaging.XpsFont.ObfuscateFontData%2A> method can be used to inhibit users from unzipping proprietary [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] fonts and installing them separately for other uses.  
   
- For more information about font obfuscation, see Section 2.1.7.3 "Embedded Font Obfuscation" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+ For more information about font obfuscation, see Section 2.1.7.3 "Embedded Font Obfuscation" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](https://go.microsoft.com/fwlink/?LinkID=65761).  
   
  ]]></format>
         </remarks>

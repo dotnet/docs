@@ -19,20 +19,20 @@
 ## Remarks  
  ASP.NET version 2.0 provides the ability to retrieve embedded resources from an assembly for controls, such as the <xref:System.Web.UI.Page> control. At run time, the URL to the embedded resource can be retrieved using the <xref:System.Web.UI.ClientScriptManager.GetWebResourceUrl%2A> method of the <xref:System.Web.UI.ClientScriptManager> class. To provide a design-time means for generating a resource URL from an assembly, designer hosts can offer a service that implements the <xref:System.Web.UI.IResourceUrlGenerator> interface. For more information:  
   
--   On using resources in localization, see [ASP.NET Web Page Resources Overview](http://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd).  
+-   On using resources in localization, see [ASP.NET Web Page Resources Overview](https://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd).  
   
--   On using embedded resources, see [NIB:How to: Use Resources to Set Property Values in Web Server Controls](http://msdn.microsoft.com/library/d8e0e5c0-1958-422b-b4f5-ebe63f6c45cb) and [How to: Retrieve Resource Values Programmatically](http://msdn.microsoft.com/library/7a06d512-6fc3-40ca-9cb6-7f41d1a9fa28).  
+-   On using embedded resources, see [NIB:How to: Use Resources to Set Property Values in Web Server Controls](https://msdn.microsoft.com/library/d8e0e5c0-1958-422b-b4f5-ebe63f6c45cb) and [How to: Retrieve Resource Values Programmatically](https://msdn.microsoft.com/library/7a06d512-6fc3-40ca-9cb6-7f41d1a9fa28).  
   
--   On control designers, see [ASP.NET Control Designers Overview](http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810).  
+-   On control designers, see [ASP.NET Control Designers Overview](https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810).  
   
  The <xref:System.Web.UI.IResourceUrlGenerator> interface has one method, the <xref:System.Web.UI.IResourceUrlGenerator.GetResourceUrl%2A> method, that returns a URL reference to a resource given the resource type and name.  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.ClientScriptManager" />
-    <related type="Article" href="http://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd">ASP.NET Web Page Resources Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd">ASP.NET Web Page Resources Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
   </Docs>
   <Members>
     <Member MemberName="GetResourceUrl">

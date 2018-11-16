@@ -55,7 +55,7 @@
 >  To improve accessibility, the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control is rendered within a `<fieldset>` element. The `<fieldset>` element groups the related set of controls used for editing in the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control, and it facilitates tabbed navigation among those controls for both visual user agents (such as ordinary Web browsers) and speech-oriented user agents (such as screen-reading software).  
   
 ## Accessibility  
- The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
    
   
@@ -70,7 +70,7 @@
   
 -   An explanation of how the example works when you load the page in a browser.  
   
- The source code for the user control comes from another topic. For this code example to work, you need to obtain the .ascx file for the user control from the [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0) topic, and place the file in the same folder as the .aspx page in this code example.  
+ The source code for the user control comes from another topic. For this code example to work, you need to obtain the .ascx file for the user control from the [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0) topic, and place the file in the same folder as the .aspx page in this code example.  
   
  The second part of the code example is the Web page. It contains a declarative reference to an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, with a child `<zonetemplate>` element that contains a declarative reference to a <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control. The page references the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, using a `Register` directive for the assembly, and the `<aspSample:UserInfoWebPart>` element for the control.  
   
@@ -79,10 +79,10 @@
   
  The third part of the code example is a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> class named `UserInfoWebPart`, which is referenced in the Web page. Notice that the various properties that contain information about a user are all marked with the `WebBrowsable` attribute. This enables the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control to provide the UI for editing those properties. The properties are also marked with a `WebDisplayName` attribute, to specify the text of the label that appears next to each control in the editing UI.  
   
- For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-csharp[WebParts_PropertyGridEditorPart_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_PropertyGridEditorPart_Overview/CS/userinfowebpart.cs#5)]
  [!code-vb[WebParts_PropertyGridEditorPart_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_PropertyGridEditorPart_Overview/VB/userinfowebpart.vb#5)]  
@@ -94,7 +94,7 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.BehaviorEditorPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.LayoutEditorPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.AppearanceEditorPart" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -125,7 +125,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ApplyChanges">
@@ -167,7 +167,7 @@
         <exception cref="T:System.Exception">An error occurred when trying to set the value for a property on the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" />.</exception>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorPart.ApplyChanges" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart.SyncChanges" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -231,12 +231,12 @@
 ## Remarks  
  Though it is public, this property is used for default rendering of this control and is not intended to be called from developer code.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Panel.DefaultButton" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -269,7 +269,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorPart.Display" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -351,7 +351,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -401,7 +401,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

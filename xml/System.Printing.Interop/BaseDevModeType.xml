@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the type of default [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) structure to use as the base [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) for conversions of managed <see cref="T:System.Printing.PrintTicket" /> objects to unmanaged [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) structures.</summary>
+    <summary>Specifies the type of default [DEVMODE](https://msdn.microsoft.com/library/windows/desktop/dd183565) structure to use as the base [DEVMODE](https://msdn.microsoft.com/library/windows/desktop/dd183565) for conversions of managed <see cref="T:System.Printing.PrintTicket" /> objects to unmanaged [DEVMODE](https://msdn.microsoft.com/library/windows/desktop/dd183565) structures.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -48,7 +48,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The printer's default [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) structure.</summary>
+        <summary>The printer's default [DEVMODE](https://msdn.microsoft.com/library/windows/desktop/dd183565) structure.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserDefault">
@@ -69,7 +69,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The user's default [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) structure.</summary>
+        <summary>The user's default [DEVMODE](https://msdn.microsoft.com/library/windows/desktop/dd183565) structure.</summary>
       </Docs>
     </Member>
   </Members>

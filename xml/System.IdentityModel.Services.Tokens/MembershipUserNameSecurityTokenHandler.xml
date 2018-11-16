@@ -16,7 +16,7 @@
   <Docs>
     <summary>A <see cref="T:System.IdentityModel.Tokens.UserNameSecurityTokenHandler" /> that validates a <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" /> by using a configured <see cref="T:System.Web.Security.MembershipProvider" />.</summary>
     <remarks>To be added.</remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/6ec3bac1-b014-49ae-843c-c54518cb709a">&lt;userNameSecurityTokenHandlerRequirement&gt;</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6ec3bac1-b014-49ae-843c-c54518cb709a">&lt;userNameSecurityTokenHandlerRequirement&gt;</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -132,7 +132,7 @@
         <summary>Gets the <see cref="T:System.Web.Security.MembershipProvider" /> that is configured for the current instance.</summary>
         <value>The configured membership provider.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/6ec3bac1-b014-49ae-843c-c54518cb709a">&lt;userNameSecurityTokenHandlerRequirement&gt;</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6ec3bac1-b014-49ae-843c-c54518cb709a">&lt;userNameSecurityTokenHandlerRequirement&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="ValidateToken">

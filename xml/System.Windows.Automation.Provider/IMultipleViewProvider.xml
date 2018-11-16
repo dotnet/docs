@@ -37,10 +37,10 @@
     </remarks>
     <altmember cref="T:System.Windows.Automation.MultipleViewPattern" />
     <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/3584c0a1-9cd0-4968-8b63-b06390890ef6">Client-side UI Automation Provider Implementation</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/0d635c35-ffa8-4dc8-bbc9-12fcd5445776">Support Control Patterns in a UI Automation Provider</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/5bf1b248-ffee-48c8-9613-0b134bbe9f6a">Implementing the UI Automation MultipleView Control Pattern</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/3584c0a1-9cd0-4968-8b63-b06390890ef6">Client-side UI Automation Provider Implementation</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/0d635c35-ffa8-4dc8-bbc9-12fcd5445776">Support Control Patterns in a UI Automation Provider</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/5bf1b248-ffee-48c8-9613-0b134bbe9f6a">Implementing the UI Automation MultipleView Control Pattern</related>
   </Docs>
   <Members>
     <Member MemberName="CurrentView">
@@ -70,7 +70,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/5bf1b248-ffee-48c8-9613-0b134bbe9f6a">Implementing the UI Automation MultipleView Control Pattern</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5bf1b248-ffee-48c8-9613-0b134bbe9f6a">Implementing the UI Automation MultipleView Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="GetSupportedViews">
@@ -103,7 +103,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/5bf1b248-ffee-48c8-9613-0b134bbe9f6a">Implementing the UI Automation MultipleView Control Pattern</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5bf1b248-ffee-48c8-9613-0b134bbe9f6a">Implementing the UI Automation MultipleView Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="GetViewName">
@@ -143,7 +143,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="viewId" /> is not a member of the supported views collection.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/5bf1b248-ffee-48c8-9613-0b134bbe9f6a">Implementing the UI Automation MultipleView Control Pattern</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5bf1b248-ffee-48c8-9613-0b134bbe9f6a">Implementing the UI Automation MultipleView Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="SetCurrentView">
@@ -180,7 +180,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="viewId" /> is not a member of the supported views collection.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/5bf1b248-ffee-48c8-9613-0b134bbe9f6a">Implementing the UI Automation MultipleView Control Pattern</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5bf1b248-ffee-48c8-9613-0b134bbe9f6a">Implementing the UI Automation MultipleView Control Pattern</related>
       </Docs>
     </Member>
   </Members>

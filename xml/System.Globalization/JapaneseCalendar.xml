@@ -400,7 +400,7 @@
  This class handles dates from September 8 in the year Meiji 1 (January 1, 1868 of the Gregorian calendar). Although the Japanese calendar was switched from a lunar calendar to a solar calendar in the year Meiji 6 (1873 of the Gregorian calendar), this implementation is based on the solar calendar only.  
   
 > [!NOTE]
->  Should additional eras be added in the future, applications may encounter more than the expected four eras for the Japanese calendar. Applications should be tested to ensure that they continue to work in such an event; see [Era Handling for the Japanese Calendar](http://go.microsoft.com/fwlink/p/?LinkId=239618).  
+>  Should additional eras be added in the future, applications may encounter more than the expected four eras for the Japanese calendar. Applications should be tested to ensure that they continue to work in such an event; see [Era Handling for the Japanese Calendar](https://go.microsoft.com/fwlink/p/?LinkId=239618).  
   
    
   

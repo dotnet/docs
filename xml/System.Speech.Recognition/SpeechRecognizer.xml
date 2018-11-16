@@ -356,7 +356,7 @@ namespace SharedRecognizer
   
  To get the audio level at the time of the event, use the <xref:System.Speech.Recognition.AudioLevelUpdatedEventArgs.AudioLevel%2A> property of the associated <xref:System.Speech.Recognition.AudioLevelUpdatedEventArgs>. To get the current audio level of the input to the recognizer, use the recognizer's <xref:System.Speech.Recognition.SpeechRecognizer.AudioLevel%2A> property.  
   
- When you create a delegate for an `AudioLevelUpdated` event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ When you create a delegate for an `AudioLevelUpdated` event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](https://go.microsoft.com/fwlink/?LinkId=162418).  
   
    
   
@@ -526,7 +526,7 @@ namespace SampleRecognition
 ## Remarks  
  To get which problem occurred, use the <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioSignalProblem%2A> property of the associated <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs>.  
   
- When you create a delegate for an `AudioSignalProblemOccurred` event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ When you create a delegate for an `AudioSignalProblemOccurred` event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](https://go.microsoft.com/fwlink/?LinkId=162418).  
   
    
   
@@ -618,7 +618,7 @@ void recognizer_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccu
 ## Remarks  
  To get the audio state at the time of the event, use the <xref:System.Speech.Recognition.AudioStateChangedEventArgs.AudioState%2A> property of the associated <xref:System.Speech.Recognition.AudioStateChangedEventArgs>. To get the current audio state of the input to the recognizer, use the recognizer's <xref:System.Speech.Recognition.SpeechRecognizer.AudioState%2A> property. For more information about audio state, see the <xref:System.Speech.Recognition.AudioState> enumeration.  
   
- When you create a delegate for an `AudioStateChanged` event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ When you create a delegate for an `AudioStateChanged` event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](https://go.microsoft.com/fwlink/?LinkId=162418).  
   
    
   
@@ -1243,7 +1243,7 @@ namespace SharedRecognizer
   
  The asynchronous recognition operation can raise the <xref:System.Speech.Recognition.SpeechRecognizer.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized> events. The <xref:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeCompleted> event is the last such event that the recognizer raises for a given operation.  
   
- When you create a delegate for an `EmulateRecognizeCompleted` event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ When you create a delegate for an `EmulateRecognizeCompleted` event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](https://go.microsoft.com/fwlink/?LinkId=162418).  
   
    
   
@@ -1670,7 +1670,7 @@ namespace SharedRecognizer
 ## Remarks  
  The recognizer's <xref:System.Speech.Recognition.SpeechRecognizer.LoadGrammarAsync%2A> method initiates an asynchronous operation. The recognizer raises the `LoadGrammarCompleted` event when it completes the operation. To get the <xref:System.Speech.Recognition.Grammar> object that the recognizer loaded, use the <xref:System.Speech.Recognition.LoadGrammarCompletedEventArgs.Grammar%2A> property of the associated <xref:System.Speech.Recognition.LoadGrammarCompletedEventArgs>. To get the current <xref:System.Speech.Recognition.Grammar> objects the recognizer has loaded, use the recognizer's <xref:System.Speech.Recognition.SpeechRecognizer.Grammars%2A> property.  
   
- When you create a delegate for a `LoadGrammarCompleted` event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ When you create a delegate for a `LoadGrammarCompleted` event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](https://go.microsoft.com/fwlink/?LinkId=162418).  
   
    
   
@@ -1974,7 +1974,7 @@ namespace SharedRecognizer
 ## Remarks  
  Applications must use <xref:System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate%2A> to pause a running instance of <xref:System.Speech.Recognition.SpeechRecognizer> before modifying its <xref:System.Speech.Recognition.Grammar> objects. For example, while the <xref:System.Speech.Recognition.SpeechRecognizer> is paused, you can load, unload, enable, and disable <xref:System.Speech.Recognition.Grammar> objects. The <xref:System.Speech.Recognition.SpeechRecognizer> raises this event when it is ready to accept modifications.  
   
- When you create a delegate for a <xref:System.Speech.Recognition.SpeechRecognizer.RecognizerUpdateReached> event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ When you create a delegate for a <xref:System.Speech.Recognition.SpeechRecognizer.RecognizerUpdateReached> event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](https://go.microsoft.com/fwlink/?LinkId=162418).  
   
    
   
@@ -2360,7 +2360,7 @@ namespace SampleRecognition
 ## Remarks  
  The shared recognizer can raise this event in response to input. The <xref:System.Speech.Recognition.SpeechDetectedEventArgs.AudioPosition%2A> property of the associated <xref:System.Speech.Recognition.SpeechDetectedEventArgs> object indicates location in the input stream where the recognizer detected speech. For more information see the <xref:System.Speech.Recognition.SpeechRecognizer.AudioPosition%2A> and <xref:System.Speech.Recognition.SpeechRecognizer.RecognizerAudioPosition%2A> properties and the <xref:System.Speech.Recognition.SpeechRecognizer.EmulateRecognize%2A> and <xref:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeAsync%2A> methods.  
   
- When you create a delegate for a <xref:System.Speech.Recognition.SpeechRecognizer.SpeechDetected> event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ When you create a delegate for a <xref:System.Speech.Recognition.SpeechRecognizer.SpeechDetected> event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](https://go.microsoft.com/fwlink/?LinkId=162418).  
   
    
   
@@ -2464,7 +2464,7 @@ namespace SampleRecognition
 ## Remarks  
  The shared recognizer can raise this event when the input is ambiguous. For example, for a speech recognition grammar that supports recognition of either "new game please" or "new game", "new game please" is an unambiguous input, and "new game" is an ambiguous input.  
   
- When you create a delegate for a <xref:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized> event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ When you create a delegate for a <xref:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized> event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](https://go.microsoft.com/fwlink/?LinkId=162418).  
   
    
   
@@ -2576,7 +2576,7 @@ namespace SampleRecognition
   
  Confidence thresholds for the shared recognizer, managed by <xref:System.Speech.Recognition.SpeechRecognizer>, are associated with a user profile and stored in the Windows registry. Applications should not write changes to the registry for the properties of the shared recognizer.  
   
- When you create a delegate for a <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected> event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ When you create a delegate for a <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected> event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](https://go.microsoft.com/fwlink/?LinkId=162418).  
   
    
   
@@ -2691,7 +2691,7 @@ namespace SampleRecognition
   
  When the recognizer receives input that matches a grammar, the <xref:System.Speech.Recognition.Grammar> object can raise the <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event. The <xref:System.Speech.Recognition.Grammar> object's <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event is raised prior to the speech recognizer's <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized> event.  
   
- When you create a delegate for a <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized> event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ When you create a delegate for a <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized> event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](https://go.microsoft.com/fwlink/?LinkId=162418).  
   
    
   
@@ -2843,7 +2843,7 @@ namespace SampleRecognition
   
  To get the state of the shared recognizer at the time of the event, use the <xref:System.Speech.Recognition.StateChangedEventArgs.RecognizerState%2A> property of the associated <xref:System.Speech.Recognition.StateChangedEventArgs>. To get the current state of the shared recognizer, use the recognizer's <xref:System.Speech.Recognition.SpeechRecognizer.State%2A> property.  
   
- When you create a delegate for a <xref:System.Speech.Recognition.SpeechRecognizer.StateChanged> event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ When you create a delegate for a <xref:System.Speech.Recognition.SpeechRecognizer.StateChanged> event, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](https://go.microsoft.com/fwlink/?LinkId=162418).  
   
    
   

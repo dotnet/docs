@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.EventSchemaTraceListener> class provides tracing of end-to-end schema-compliant events. You can use end-to-end tracing for a system that has heterogeneous components that cross thread, <xref:System.AppDomain>, process, and computer boundaries. A standardized event schema (see [Event Representation for Event Consumers](http://go.microsoft.com/fwlink/?LinkId=78955)) has been defined to enable tracing across these boundaries. The schema enables the addition of custom, schema-compliant elements. You can use the [Service Trace Viewer Tool (SvcTraceViewer.exe)](http://go.microsoft.com/fwlink/p/?LinkId=240129) to display the event data.  
+ The <xref:System.Diagnostics.EventSchemaTraceListener> class provides tracing of end-to-end schema-compliant events. You can use end-to-end tracing for a system that has heterogeneous components that cross thread, <xref:System.AppDomain>, process, and computer boundaries. A standardized event schema (see [Event Representation for Event Consumers](https://go.microsoft.com/fwlink/?LinkId=78955)) has been defined to enable tracing across these boundaries. The schema enables the addition of custom, schema-compliant elements. You can use the [Service Trace Viewer Tool (SvcTraceViewer.exe)](https://go.microsoft.com/fwlink/p/?LinkId=240129) to display the event data.  
   
  <xref:System.Diagnostics.EventSchemaTraceListener> is tuned for logging performance with implicit support for lock-free tracing.  
   

@@ -52,7 +52,7 @@
  On the Web Forms page that this code generates, you can click **Create email and display only** to create an email message and display the properties of the <xref:System.Net.Mail.MailMessage> object in the Web page. Click **Create email and send** to both display the email message in the Web page and send the message to the recipients using Internet email.  
   
 > [!IMPORTANT]
->  This control has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This control has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[MailDefinitionClassSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MailDefinitionClassSample/CS/maildefinitionsamplecs.aspx#1)]
  [!code-aspx-vb[MailDefinitionClassSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MailDefinitionClassSample/VB/maildefinitionsamplevb.aspx#1)]  

@@ -28,7 +28,7 @@
  The HTML `head` element is a container that can contain additional information about the page. The <xref:System.Web.UI.HtmlControls.HtmlHead> control is useful for specifying page formatting information that can be accessed at run time.  
   
 > [!NOTE]
->  Adding styles or style rules programmatically during asynchronous postbacks is not supported. When you add AJAX capabilities to an ASP.NET Web page, asynchronous postbacks update regions of the page without updating the whole page. For more information, see [Microsoft Ajax Overview](http://msdn.microsoft.com/library/be84d9b3-b7cd-47d7-8494-be4abfaad9cb).  
+>  Adding styles or style rules programmatically during asynchronous postbacks is not supported. When you add AJAX capabilities to an ASP.NET Web page, asynchronous postbacks update regions of the page without updating the whole page. For more information, see [Microsoft Ajax Overview](https://msdn.microsoft.com/library/be84d9b3-b7cd-47d7-8494-be4abfaad9cb).  
   
    
   
@@ -308,7 +308,7 @@
  The <xref:System.Web.UI.HtmlControls.HtmlHead.StyleSheet%2A> property returns an <xref:System.Web.UI.IStyleSheet> that represents the embedded style rules in the <xref:System.Web.UI.HtmlControls.HtmlHead> control.  
   
 > [!NOTE]
->  Adding styles or style rules programmatically during asynchronous postbacks is not supported. When you add AJAX capabilities to an ASP.NET Web page, asynchronous postbacks update regions of the page without updating the whole page. For more information, see [Microsoft Ajax Overview](http://msdn.microsoft.com/library/be84d9b3-b7cd-47d7-8494-be4abfaad9cb).  
+>  Adding styles or style rules programmatically during asynchronous postbacks is not supported. When you add AJAX capabilities to an ASP.NET Web page, asynchronous postbacks update regions of the page without updating the whole page. For more information, see [Microsoft Ajax Overview](https://msdn.microsoft.com/library/be84d9b3-b7cd-47d7-8494-be4abfaad9cb).  
   
    
   

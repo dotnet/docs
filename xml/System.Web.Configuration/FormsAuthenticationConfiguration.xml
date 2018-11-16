@@ -57,8 +57,8 @@
  ]]></format>
     </remarks>
     <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/99e2f9e8-5b97-4a4d-a4ed-5f93276053b7">Forms Authentication Across Applications</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/99e2f9e8-5b97-4a4d-a4ed-5f93276053b7">Forms Authentication Across Applications</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -136,7 +136,7 @@
         </remarks>
         <altmember cref="P:System.Web.Configuration.FormsAuthenticationConfiguration.Protection" />
         <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
       </Docs>
     </Member>
     <Member MemberName="CookieSameSite">
@@ -361,7 +361,7 @@
  The <xref:System.Web.Configuration.FormsAuthenticationConfiguration.EnableCrossAppRedirects%2A> property is checked by the <xref:System.Web.Configuration.FormsAuthenticationConfiguration.EnableCrossAppRedirects%2A> method when the redirection is to a URL that is not in the current application. If <xref:System.Web.Configuration.FormsAuthenticationConfiguration.EnableCrossAppRedirects%2A> is true, then the redirect is performed; otherwise the browser is redirected to the page defined in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property.  
   
 > [!NOTE]
->  When performing redirects across applications, you must ensure that several of the attributes in the `form` configuration section are duplicated across the authenticated applications. For more information and an example, see [Forms Authentication Across Applications](http://msdn.microsoft.com/library/99e2f9e8-5b97-4a4d-a4ed-5f93276053b7).  
+>  When performing redirects across applications, you must ensure that several of the attributes in the `form` configuration section are duplicated across the authenticated applications. For more information and an example, see [Forms Authentication Across Applications](https://msdn.microsoft.com/library/99e2f9e8-5b97-4a4d-a4ed-5f93276053b7).  
   
    
   
@@ -373,7 +373,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/99e2f9e8-5b97-4a4d-a4ed-5f93276053b7">Forms Authentication Across Applications</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/99e2f9e8-5b97-4a4d-a4ed-5f93276053b7">Forms Authentication Across Applications</related>
       </Docs>
     </Member>
     <Member MemberName="LoginUrl">
@@ -420,7 +420,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -699,7 +699,7 @@
 ## Examples  
  <xref:System.Web.Configuration.TicketCompatibilityMode>  
   
- [forms Element for authentication (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/8163b8b5-ea6c-46c8-b5a9-c4c3de31c0b3)  
+ [forms Element for authentication (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/8163b8b5-ea6c-46c8-b5a9-c4c3de31c0b3)  
   
  ]]></format>
         </remarks>

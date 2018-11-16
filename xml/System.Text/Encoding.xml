@@ -237,7 +237,7 @@
   
  The <xref:System.Text.Encoding.GetPreamble%2A> method retrieves an array of bytes that includes the byte order mark (BOM). If this byte array is prefixed to an encoded stream, it helps the decoder to identify the encoding format used.  
   
- For more information on byte order and the byte order mark, see The Unicode Standard at the [Unicode home page](http://go.microsoft.com/fwlink/?LinkId=37123).  
+ For more information on byte order and the byte order mark, see The Unicode Standard at the [Unicode home page](https://go.microsoft.com/fwlink/?LinkId=37123).  
   
  Note that the encoding classes allow errors to:  
   
@@ -3225,7 +3225,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
 
 - If one or more encoding providers have been registered, it returns the encoding of the last registered provider that has chosen to return a encoding when the <xref:System.Text.Encoding.GetEncoding%2A> method is passed a `codepage` argument of 0.     
 
-- On the .NET Framework, if no encoding provider has been registered, if the <xref:System.Text.CodePagesEncodingProvider> is the registered encoding provider, or if no registered encoding provider handles a `codepage` value of 0, it returns the operating system's active code page. To determine the active code page on Windows systems, call the Windows [GetACP](http://msdn.microsoft.com/library/windows/desktop/dd318070.aspx) function from the .NET Framework on the Windows desktop.
+- On the .NET Framework, if no encoding provider has been registered, if the <xref:System.Text.CodePagesEncodingProvider> is the registered encoding provider, or if no registered encoding provider handles a `codepage` value of 0, it returns the operating system's active code page. To determine the active code page on Windows systems, call the Windows [GetACP](https://msdn.microsoft.com/library/windows/desktop/dd318070.aspx) function from the .NET Framework on the Windows desktop.
 
 - On .NET Core, if no encoding provider has been registered or if no registered encoding provider handles a `codepage` value of 0, it returns the <xref:System.Text.UTF8Encoding>.
   
@@ -3414,7 +3414,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
 > [!NOTE]
 >  The ANSI code pages can be different on different computers and can change on a single computer, leading to data corruption. For this reason, if the active code page is an ANSI code page, encoding and decoding data using the default code page returned by `Encoding.GetEncoding(0)` is not recommended. For the most consistent results, you should use Unicode, such as UTF-8 (code page 65001) or UTF-16, instead of a specific code page. 
   
- To get the encoding associated with the active code page, you can either supply a value of 0 for the `codepage` argument or, if your code is running on the .NET Framework on the Windows desktop, retrieve the value of the <xref:System.Text.Encoding.Default%2A?displayProperty=nameWithType> property. To determine the current active code page, call the Windows [GetACP](http://msdn.microsoft.com/library/windows/desktop/dd318070.aspx) function from the .NET Framework on the Windows desktop.  
+ To get the encoding associated with the active code page, you can either supply a value of 0 for the `codepage` argument or, if your code is running on the .NET Framework on the Windows desktop, retrieve the value of the <xref:System.Text.Encoding.Default%2A?displayProperty=nameWithType> property. To determine the current active code page, call the Windows [GetACP](https://msdn.microsoft.com/library/windows/desktop/dd318070.aspx) function from the .NET Framework on the Windows desktop.  
   
  <xref:System.Text.Encoding.GetEncoding%2A> returns a cached instance with default settings. You should use the constructors of derived classes to get an instance with different settings. For example, the <xref:System.Text.UTF32Encoding> class provides a constructor that lets you enable error detection.  
   
@@ -3676,7 +3676,7 @@ In the .NET Framework, the <xref:System.Text.Encoding.GetEncoding%2A> method rel
   
  To calculate the exact array size required by <xref:System.Text.Encoding.GetBytes%2A> to store the resulting bytes, you should use the <xref:System.Text.Encoding.GetByteCount%2A> method. To calculate the maximum array size, use the <xref:System.Text.Encoding.GetMaxByteCount%2A> method. The <xref:System.Text.Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.Encoding.GetMaxByteCount%2A> method generally executes faster.  
   
- <xref:System.Text.Encoding.GetMaxByteCount%2A> retrieves a worst-case number, including the worst case for the currently selected <xref:System.Text.EncoderFallback>. If a fallback is chosen with a potentially large string, <xref:System.Text.Encoding.GetMaxByteCount%2A> retrieves large values, particularly in cases where the worst case for the encoding involves switching modes for every character. For example, this can happen for ISO-2022-JP. For more information, see the blog entry "[What's with Encoding.GetMaxByteCount() and Encoding.GetMaxCharCount()?](http://go.microsoft.com/fwlink/?LinkId=153702)" (http://blogs.msdn.com/shawnste/archive/2005/03/02/383903.aspx).  
+ <xref:System.Text.Encoding.GetMaxByteCount%2A> retrieves a worst-case number, including the worst case for the currently selected <xref:System.Text.EncoderFallback>. If a fallback is chosen with a potentially large string, <xref:System.Text.Encoding.GetMaxByteCount%2A> retrieves large values, particularly in cases where the worst case for the encoding involves switching modes for every character. For example, this can happen for ISO-2022-JP. For more information, see the blog entry "[What's with Encoding.GetMaxByteCount() and Encoding.GetMaxCharCount()?](https://go.microsoft.com/fwlink/?LinkId=153702)" (http://blogs.msdn.com/shawnste/archive/2005/03/02/383903.aspx).  
   
  In most cases, this method retrieves reasonable values for small strings. For large strings, you might have to choose between using very large buffers and catching errors in the rare case when a more reasonable buffer is too small. You might also want to consider a different approach using <xref:System.Text.Encoding.GetByteCount%2A> or <xref:System.Text.Encoder.Convert%2A?displayProperty=nameWithType>.  
   
@@ -3862,7 +3862,7 @@ In the .NET Framework, the <xref:System.Text.Encoding.GetEncoding%2A> method rel
   
  There are some disadvantages to using a BOM. For example, knowing how to limit the database fields that use a BOM can be difficult. Concatenation of files can be a problem also, for example, when files are merged in such a way that an unnecessary character can end up in the middle of data. In spite of the few disadvantages, however, the use of a BOM is highly recommended.  
   
- For more information on byte order and the byte order mark, see The Unicode Standard at the [Unicode home page](http://go.microsoft.com/fwlink/?LinkId=37123).  
+ For more information on byte order and the byte order mark, see The Unicode Standard at the [Unicode home page](https://go.microsoft.com/fwlink/?LinkId=37123).  
   
 > [!CAUTION]
 >  To ensure that the encoded bytes are decoded properly, you should prefix encoded bytes with a preamble. However, most encodings do not provide a preamble. To ensure that the encoded bytes are decoded properly, you should use a Unicode encoding, that is, <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding>, with a preamble.  

@@ -507,7 +507,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the value for the link identifier when the schema property is linked.</summary>
-        <value>An <see cref="T:System.Int32" /> value that represents the linkID value when the schema property is linked. For more information, see the topic [Link-ID](http://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_linkid.asp) in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).</value>
+        <value>An <see cref="T:System.Int32" /> value that represents the linkID value when the schema property is linked. For more information, see the topic [Link-ID](https://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_linkid.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" />
         <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Save" />
@@ -531,8 +531,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ldapDisplayName of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> object. For more information, see the topic [LDAP-Display-Name](http://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_ldapdisplayname.asp) in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).</summary>
-        <value>A <see cref="T:System.String" /> value that contains the ldapDisplayName of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> object. For more information, see the topic [LDAP-Display-Name](http://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_ldapdisplayname.asp) in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).</value>
+        <summary>Gets the ldapDisplayName of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> object. For more information, see the topic [LDAP-Display-Name](https://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_ldapdisplayname.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).</summary>
+        <value>A <see cref="T:System.String" /> value that contains the ldapDisplayName of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> object. For more information, see the topic [LDAP-Display-Name](https://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_ldapdisplayname.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
@@ -668,8 +668,8 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the schemaIDGuid for the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> object. For more information, see the topic [Schema-ID-GUID](http://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_schemaidguid.asp) in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).</summary>
-        <value>A <see cref="T:System.Guid" /> that represents the schemaIDGuid for the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> object. For more information, see the topic [Schema-ID-GUID](http://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_schemaidguid.asp) in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).</value>
+        <summary>Gets or sets the schemaIDGuid for the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> object. For more information, see the topic [Schema-ID-GUID](https://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_schemaidguid.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).</summary>
+        <value>A <see cref="T:System.Guid" /> that represents the schemaIDGuid for the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> object. For more information, see the topic [Schema-ID-GUID](https://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_schemaidguid.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

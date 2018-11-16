@@ -53,7 +53,7 @@
     <altmember cref="T:System.Windows.Data.Binding" />
     <altmember cref="T:System.Windows.Controls.DataTemplateSelector" />
     <altmember cref="T:System.Windows.HierarchicalDataTemplate" />
-    <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=163703">Data Binding Demo</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=163703">Data Binding Demo</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -212,7 +212,7 @@
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
       </Docs>
     </Member>
     <Member MemberName="Triggers">
@@ -280,13 +280,13 @@
   
  [!code-xaml[DataBindingLab#AuctionItemDataTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/DataBindingLabApp.xaml#auctionitemdatatemplate)]  
   
- For the complete sample, see [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703).  
+ For the complete sample, see [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703).  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.DataTrigger" />
         <altmember cref="T:System.Windows.MultiDataTrigger" />
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160009">Introduction to Data Templating Sample</related>
       </Docs>
     </Member>
     <Member MemberName="ValidateTemplatedParent">

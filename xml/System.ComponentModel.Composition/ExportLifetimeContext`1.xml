@@ -90,7 +90,7 @@
   
  Call `Dispose` when you are finished using the <xref:System.ComponentModel.Composition.ExportLifetimeContext%601>. The `Dispose` method leaves the <xref:System.ComponentModel.Composition.ExportLifetimeContext%601> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.ComponentModel.Composition.ExportLifetimeContext%601> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Composition.ExportLifetimeContext%601> was occupying.  
   
- For more information, see [Cleaning Up Unmanaged Resources](http://go.microsoft.com/fwlink/?LinkId=187455) and [Implementing a Dispose Method](http://go.microsoft.com/fwlink/?LinkId=187456).  
+ For more information, see [Cleaning Up Unmanaged Resources](https://go.microsoft.com/fwlink/?LinkId=187455) and [Implementing a Dispose Method](https://go.microsoft.com/fwlink/?LinkId=187456).  
   
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.ComponentModel.Composition.ExportLifetimeContext%601>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.ComponentModel.Composition.ExportLifetimeContext%601> object's `Finalize` method.  

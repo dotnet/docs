@@ -47,7 +47,7 @@
   
 -   The AdventureWorksLT sample database. For information about how to download and install the SQL Server sample database, see [Microsoft SQL Server Product Samples: Database](https://github.com/Microsoft/sql-server-samples/releases/). Make sure that you install the correct version of the sample database for the version of SQL Server that you are running (SQL Server 2005 or SQL Server 2008).  
   
--   A Dynamic Data Web site. This enables you to create a data context for the database and the class that contains the data field to customize and the methods to override. In addition, it creates the environment in which to use the page described before. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](http://msdn.microsoft.com/library/1564aef2-9103-436a-9806-c8ad7abd616a).  
+-   A Dynamic Data Web site. This enables you to create a data context for the database and the class that contains the data field to customize and the methods to override. In addition, it creates the environment in which to use the page described before. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](https://msdn.microsoft.com/library/1564aef2-9103-436a-9806-c8ad7abd616a).  
   
  For the complete code example that the field template uses to customize the display of the EmailAddress data fields, see the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute.  
   

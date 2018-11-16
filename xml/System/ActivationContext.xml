@@ -82,7 +82,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the activation context is <xref:System.ActivationContext.ContextForm.Loose>, meaning that the application is not installed in the ClickOnce store, the deployment manifest is read from the temporary download folder. If the activation context is <xref:System.ActivationContext.ContextForm.StoreBounded>, meaning that the application is installed in the ClickOnce store, the deployment manifest is read from the ClickOnce store. For more information about deployment manifests, see [ClickOnce Deployment Manifest](http://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b).  
+ If the activation context is <xref:System.ActivationContext.ContextForm.Loose>, meaning that the application is not installed in the ClickOnce store, the deployment manifest is read from the temporary download folder. If the activation context is <xref:System.ActivationContext.ContextForm.StoreBounded>, meaning that the application is installed in the ClickOnce store, the deployment manifest is read from the ClickOnce store. For more information about deployment manifests, see [ClickOnce Deployment Manifest](https://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b).  
   
  ]]></format>
         </remarks>
@@ -214,7 +214,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the activation context is <xref:System.ActivationContext.ContextForm.Loose>, meaning that the application is not installed in the ClickOnce store, the deployment manifest is read from the temporary download folder. If the activation context is <xref:System.ActivationContext.ContextForm.StoreBounded>, meaning that the application is installed in the ClickOnce store, the deployment manifest is read from the ClickOnce store. For more information about deployment manifests, see [ClickOnce Deployment Manifest](http://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b).  
+ If the activation context is <xref:System.ActivationContext.ContextForm.Loose>, meaning that the application is not installed in the ClickOnce store, the deployment manifest is read from the temporary download folder. If the activation context is <xref:System.ActivationContext.ContextForm.StoreBounded>, meaning that the application is installed in the ClickOnce store, the deployment manifest is read from the ClickOnce store. For more information about deployment manifests, see [ClickOnce Deployment Manifest](https://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b).  
   
  ]]></format>
         </remarks>

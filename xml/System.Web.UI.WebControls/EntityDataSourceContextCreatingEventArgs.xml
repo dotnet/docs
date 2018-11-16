@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs> object has a <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs.Context%2A> property that can be assigned to a long-running <xref:System.Data.Objects.ObjectContext> in the handler for the <xref:System.Web.UI.WebControls.EntityDataSourceView.ContextCreating> event. For more information, see [Object Context Life-Cycle Management (EntityDataSource)](http://msdn.microsoft.com/library/67bc2486-112c-47c3-b23f-0297f7ac2160).  
+ The <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs> object has a <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs.Context%2A> property that can be assigned to a long-running <xref:System.Data.Objects.ObjectContext> in the handler for the <xref:System.Web.UI.WebControls.EntityDataSourceView.ContextCreating> event. For more information, see [Object Context Life-Cycle Management (EntityDataSource)](https://msdn.microsoft.com/library/67bc2486-112c-47c3-b23f-0297f7ac2160).  
   
    
   
@@ -77,7 +77,7 @@ public partial class _Default : System.Web.UI.Page
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs.Context%2A> property can be assigned to a long-running <xref:System.Data.Objects.ObjectContext> in the handler for the <xref:System.Web.UI.WebControls.EntityDataSourceView.ContextCreating> event. For more information, see [Object Context Life-Cycle Management (EntityDataSource)](http://msdn.microsoft.com/library/67bc2486-112c-47c3-b23f-0297f7ac2160).  
+ The <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs.Context%2A> property can be assigned to a long-running <xref:System.Data.Objects.ObjectContext> in the handler for the <xref:System.Web.UI.WebControls.EntityDataSourceView.ContextCreating> event. For more information, see [Object Context Life-Cycle Management (EntityDataSource)](https://msdn.microsoft.com/library/67bc2486-112c-47c3-b23f-0297f7ac2160).  
   
    
   

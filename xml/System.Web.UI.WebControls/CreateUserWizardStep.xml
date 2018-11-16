@@ -62,13 +62,13 @@
  `</configuration>`  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[CreateUserWizardCreatedUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCreatedUser/CS/createuserwizardcreatedusercs.aspx#1)]
  [!code-aspx-vb[CreateUserWizardCreatedUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCreatedUser/VB/createuserwizardcreateduservb.aspx#1)]  
   
 > [!IMPORTANT]
->  This control has a text box that accepts user input, which is a potential security threat. User input in a Web page can potentially contain malicious client script. By default, ASP.NET Web pages validate user input to ensure that the input does not contain HTML elements or script. As long as this validation is enabled, you do not need to explicitly check for script or HTML elements in user input. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This control has a text box that accepts user input, which is a potential security threat. User input in a Web page can potentially contain malicious client script. By default, ASP.NET Web pages validate user input to ensure that the input does not contain HTML elements or script. As long as this validation is enabled, you do not need to explicitly check for script or HTML elements in user input. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  The second code example lists the complete <xref:System.Web.UI.WebControls.CreateUserWizardStep> control.  
   
@@ -76,12 +76,12 @@
  [!code-aspx-vb[CreateUserWizardStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardStep/VB/createuserwizardstepvb.aspx#1)]  
   
 > [!IMPORTANT]
->  This control has a text box that accepts user input, which is a potential security threat. User input in a Web page can potentially contain malicious client script. By default, ASP.NET Web pages validate user input to ensure that the input does not contain HTML elements or script. As long as this validation is enabled, you do not need to explicitly check for script or HTML elements in user input. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This control has a text box that accepts user input, which is a potential security threat. User input in a Web page can potentially contain malicious client script. By default, ASP.NET Web pages validate user input to ensure that the input does not contain HTML elements or script. As long as this validation is enabled, you do not need to explicitly check for script or HTML elements in user input. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/7983d61e-d317-4181-8ab9-cab549adf9dc">How to: Customize the ASP.NET CreateUserWizard Control</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/7983d61e-d317-4181-8ab9-cab549adf9dc">How to: Customize the ASP.NET CreateUserWizard Control</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -105,8 +105,8 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.WebControls.CreateUserWizardStep" /> control.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7983d61e-d317-4181-8ab9-cab549adf9dc">How to: Customize the ASP.NET CreateUserWizard Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7983d61e-d317-4181-8ab9-cab549adf9dc">How to: Customize the ASP.NET CreateUserWizard Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="AllowReturn">
@@ -152,8 +152,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the property.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7983d61e-d317-4181-8ab9-cab549adf9dc">How to: Customize the ASP.NET CreateUserWizard Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7983d61e-d317-4181-8ab9-cab549adf9dc">How to: Customize the ASP.NET CreateUserWizard Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepType">
@@ -203,15 +203,15 @@
 > [!CAUTION]
 >  If you attempt to change the <xref:System.Web.UI.WebControls.CreateUserWizardStep.StepType%2A> property to any value other than the <xref:System.Web.UI.WebControls.WizardStepType.Auto> value of the <xref:System.Web.UI.WebControls.WizardStepType> enumeration, an <xref:System.InvalidOperationException> will be thrown.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Web.UI.WebControls.CreateUserWizardStep.StepType" /> property to a value other than the <see langword="WizardStepType.Auto" /> enumeration value.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WizardStepType" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
-        <related type="Article" href="http://msdn.microsoft.com/library/7983d61e-d317-4181-8ab9-cab549adf9dc">How to: Customize the ASP.NET CreateUserWizard Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7983d61e-d317-4181-8ab9-cab549adf9dc">How to: Customize the ASP.NET CreateUserWizard Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -242,12 +242,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7983d61e-d317-4181-8ab9-cab549adf9dc">How to: Customize the ASP.NET CreateUserWizard Control</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7983d61e-d317-4181-8ab9-cab549adf9dc">How to: Customize the ASP.NET CreateUserWizard Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
   </Members>

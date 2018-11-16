@@ -88,7 +88,7 @@
 -   Customizable appearance through themes, user-defined images, and styles.  
   
     > [!NOTE]
-    >  The <xref:System.Web.UI.WebControls.TreeView> control is designed to be used inside an <xref:System.Web.UI.UpdatePanel> control only when <xref:System.Web.UI.WebControls.TreeView.EnableClientScript%2A> is set to `true`. <xref:System.Web.UI.UpdatePanel> controls are used to update selected regions of a page instead of updating the whole page with a postback. For more information, see [UpdatePanel Control Overview](http://msdn.microsoft.com/library/29a2265d-9674-4c19-b70e-e5560ee9689a) and [Partial-Page Rendering Overview](http://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
+    >  The <xref:System.Web.UI.WebControls.TreeView> control is designed to be used inside an <xref:System.Web.UI.UpdatePanel> control only when <xref:System.Web.UI.WebControls.TreeView.EnableClientScript%2A> is set to `true`. <xref:System.Web.UI.UpdatePanel> controls are used to update selected regions of a page instead of updating the whole page with a postback. For more information, see [UpdatePanel Control Overview](https://msdn.microsoft.com/library/29a2265d-9674-4c19-b70e-e5560ee9689a) and [Partial-Page Rendering Overview](https://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
   
 <a name="nodes"></a>   
 ## Nodes  
@@ -140,7 +140,7 @@
 ## Customizing the User Interface  
  There are many ways to customize the appearance of the <xref:System.Web.UI.WebControls.TreeView> control. First, you can specify a different style (such as font size and color) for each of the node types.  
   
- If you use cascading style sheets (CSS) to customize the appearance of the control, use either inline styles or a separate CSS file, but not both. Using both inline styles and a separate CSS file could cause unexpected results. For more information on using style sheets with controls, see [Web Server Controls and CSS Styles](http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42).  
+ If you use cascading style sheets (CSS) to customize the appearance of the control, use either inline styles or a separate CSS file, but not both. Using both inline styles and a separate CSS file could cause unexpected results. For more information on using style sheets with controls, see [Web Server Controls and CSS Styles](https://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42).  
   
  The following table lists the available node styles.  
   
@@ -192,11 +192,11 @@
   
 <a name="scrolling"></a>   
 ## Scrolling  
- The <xref:System.Web.UI.WebControls.TreeView> control does not have built-in scrolling. To add scrolling, place the <xref:System.Web.UI.WebControls.TreeView> control in a <xref:System.Web.UI.WebControls.Panel> control and add scrollbars to the <xref:System.Web.UI.WebControls.Panel> control. For more information, see [Panel Web Server Control Overview](http://msdn.microsoft.com/library/127b61ed-87f2-46f4-92a3-785166e7245b).  
+ The <xref:System.Web.UI.WebControls.TreeView> control does not have built-in scrolling. To add scrolling, place the <xref:System.Web.UI.WebControls.TreeView> control in a <xref:System.Web.UI.WebControls.Panel> control and add scrollbars to the <xref:System.Web.UI.WebControls.Panel> control. For more information, see [Panel Web Server Control Overview](https://msdn.microsoft.com/library/127b61ed-87f2-46f4-92a3-785166e7245b).  
   
 <a name="accessibility"></a>   
 ## Accessibility  
- The markup rendered by default for this control might not conform to accessibility standards. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ The markup rendered by default for this control might not conform to accessibility standards. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -561,7 +561,7 @@
     <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed" />
     <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodePopulate" />
     <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeDataBound" />
-    <related type="Article" href="http://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -853,7 +853,7 @@
   
  The value of this property is stored in view state.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -1166,7 +1166,7 @@
   
  The value of this property is stored in view state.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
@@ -1311,7 +1311,7 @@
   
  The value of this property is stored in view state.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -1432,7 +1432,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.FindNode%2A> method to retrieve a node from the <xref:System.Web.UI.WebControls.TreeView> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[TreeViewFindNode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewFindNode/CS/treeviewfindnodecs.aspx#1)]
  [!code-aspx-vb[TreeViewFindNode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewFindNode/VB/treeviewfindnodevb.aspx#1)]  
@@ -3692,7 +3692,7 @@
   
  The value of this property is stored in view state.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
  ]]></format>
         </remarks>
@@ -3981,9 +3981,9 @@
  Use the <xref:System.Web.UI.WebControls.TreeView.Target%2A> property to specify the window or frame in which to display the Web content that is linked to a node when that node is clicked.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.TreeView.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.TreeView.Target%2A> property, if the rendered output for the <xref:System.Web.UI.WebControls.TreeView> must be XHTML 1.1 compliant. For more information, see [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
+>  The <xref:System.Web.UI.WebControls.TreeView.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.TreeView.Target%2A> property, if the rendered output for the <xref:System.Web.UI.WebControls.TreeView> must be XHTML 1.1 compliant. For more information, see [XHTML Standards in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
 >   
->  When creating accessible Web pages, you should avoid using the <xref:System.Web.UI.WebControls.TreeView.Target%2A> property to target another window. For more information, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+>  When creating accessible Web pages, you should avoid using the <xref:System.Web.UI.WebControls.TreeView.Target%2A> property to target another window. For more information, see [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
  The value of this property is stored in view state.  
   

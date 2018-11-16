@@ -243,7 +243,7 @@ foreach(SearchResult res in src.FindAll() )
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The returned search results must be enumerated before the cookie can be retrieved. For more information, see the code example [Taking a Snapshot for a Later DirSync Search](http://msdn.microsoft.com/msdnmag/issues/05/12/DirectoryServices/default.aspx?loc=&fig=true).  
+ The returned search results must be enumerated before the cookie can be retrieved. For more information, see the code example [Taking a Snapshot for a Later DirSync Search](https://msdn.microsoft.com/msdnmag/issues/05/12/DirectoryServices/default.aspx?loc=&fig=true).  
   
  ]]></format>
         </remarks>

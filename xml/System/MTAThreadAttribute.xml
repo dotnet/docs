@@ -46,7 +46,7 @@
  Apply this attribute to the entry point method (the `Main()` method in C# and Visual Basic). It has no effect on other methods. To set the apartment state of threads you start in your code, use the <xref:System.Threading.Thread.SetApartmentState%2A?displayProperty=nameWithType> or <xref:System.Threading.Thread.TrySetApartmentState%2A?displayProperty=nameWithType> method before starting the thread.  
   
 > [!NOTE]
->  For an overview of COM threading models, see [Understanding and Using COM Threading Models](http://msdn.microsoft.com/library/ms809971.aspx).  
+>  For an overview of COM threading models, see [Understanding and Using COM Threading Models](https://msdn.microsoft.com/library/ms809971.aspx).  
   
  COM threading models only apply to applications that use COM interop. The COM threading model can be set to single-threaded apartment or multithreaded apartment. The application thread is only initialized for COM interop if the thread actually makes a call to a COM component. If COM interop is not used, then the thread is not initialized, and the <xref:System.MTAThreadAttribute> attribute, if it is present, has no effect.  
   
@@ -58,7 +58,7 @@
 |C++|Multithreaded apartment|  
 |Visual Basic|Single-threaded apartment|  
   
- To change these defaults, you use the <xref:System.MTAThreadAttribute> attribute to set the threading model for the application, or call the <xref:System.Threading.Thread.SetApartmentState%2A?displayProperty=nameWithType> or <xref:System.Threading.Thread.TrySetApartmentState%2A?displayProperty=nameWithType> method before starting the thread to set the threading model for a particular thread. In C++, you can also use the [/CLRTHREADATTRIBUTE (Set CLR Thread Attribute)](http://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8) linker option to specify the apartment model.  
+ To change these defaults, you use the <xref:System.MTAThreadAttribute> attribute to set the threading model for the application, or call the <xref:System.Threading.Thread.SetApartmentState%2A?displayProperty=nameWithType> or <xref:System.Threading.Thread.TrySetApartmentState%2A?displayProperty=nameWithType> method before starting the thread to set the threading model for a particular thread. In C++, you can also use the [/CLRTHREADATTRIBUTE (Set CLR Thread Attribute)](https://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8) linker option to specify the apartment model.  
   
  Some of the cases in which you want to use the <xref:System.MTAThreadAttribute> attribute to explicitly set the threading model to multithreaded apartment include the following:  
   

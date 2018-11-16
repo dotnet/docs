@@ -43,7 +43,7 @@
 ## Remarks  
  Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. Decoding is the process of transforming a sequence of encoded bytes into a set of Unicode characters.  
   
- The [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123) assigns a code point (a number) to each character in every supported script. A Unicode Transformation Format (UTF) is a way to encode that code point. The [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123) uses the following UTFs:  
+ The [Unicode Standard](https://go.microsoft.com/fwlink/?linkid=37123) assigns a code point (a number) to each character in every supported script. A Unicode Transformation Format (UTF) is a way to encode that code point. The [Unicode Standard](https://go.microsoft.com/fwlink/?linkid=37123) uses the following UTFs:  
   
 -   UTF-8, which represents each code point as a sequence of one to four bytes.  
   

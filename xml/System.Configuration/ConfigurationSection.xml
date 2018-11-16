@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You use the <xref:System.Configuration.ConfigurationSection> class to implement a custom section type. Extend the <xref:System.Configuration.ConfigurationSection> class to provide custom handling and programmatic access to custom configuration sections. For information about how use custom configuration sections, see [How to: Create Custom Configuration Sections Using ConfigurationSection](http://msdn.microsoft.com/library/febaca98-c727-4017-95ed-82e2fb6cf234).  
+ You use the <xref:System.Configuration.ConfigurationSection> class to implement a custom section type. Extend the <xref:System.Configuration.ConfigurationSection> class to provide custom handling and programmatic access to custom configuration sections. For information about how use custom configuration sections, see [How to: Create Custom Configuration Sections Using ConfigurationSection](https://msdn.microsoft.com/library/febaca98-c727-4017-95ed-82e2fb6cf234).  
   
  A section registers its handling type with an entry in the `configSections` element. For an example, see the configuration file excerpt shown in the Example section.  
   
@@ -91,7 +91,7 @@
     <altmember cref="T:System.Configuration.Configuration" />
     <altmember cref="T:System.Configuration.SectionInformation" />
     <altmember cref="T:System.Configuration.ConfigurationElement" />
-    <related type="Article" href="http://msdn.microsoft.com/library/5696e8b2-d489-4220-aef2-f2e0ca9099b4">ASP.NET Configuration API Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/5696e8b2-d489-4220-aef2-f2e0ca9099b4">ASP.NET Configuration API Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -401,7 +401,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializePropertyInTargetVersion">
@@ -448,7 +448,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeSectionInTargetVersion">
@@ -489,7 +489,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
       </Docs>
     </Member>
   </Members>

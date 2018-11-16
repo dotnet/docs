@@ -39,12 +39,12 @@
   
 -   An explanation of how the code example works when you load it in a browser.  
   
- The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
  [!code-aspx-csharp[WebParts_EditorPartCollection_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/CS/displaymodecs.ascx#4)]
  [!code-aspx-vb[WebParts_EditorPartCollection_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/VB/displaymodevb.ascx#4)]  
   
- The second part of the code example is the `TextDisplayWebPart` control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part of the code example is the `TextDisplayWebPart` control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
  Note that the control has a property named `ContentText`; this property holds the value that the user enters in the text box. This custom property can be edited when the control is in edit mode, along with the standard <xref:System.Web.UI.WebControls.WebParts.WebPart> control properties.  
   
@@ -61,7 +61,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.EditorPart" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -71,7 +71,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> class.</summary>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -104,7 +104,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -154,7 +154,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorZoneBase.EditorParts" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -179,7 +179,7 @@
         <param name="editorParts">An <see cref="T:System.Collections.ICollection" /> of <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls not in a zone, but created programmatically.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> class by passing in an <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> collection of <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls, and an <see cref="T:System.Collections.ICollection" /> collection of additional <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -224,7 +224,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -271,7 +271,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -300,7 +300,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -345,7 +345,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -372,7 +372,7 @@
         <summary>Returns a specific member of the collection according to a unique identifier.</summary>
         <value>An <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> at the specified index in the collection.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

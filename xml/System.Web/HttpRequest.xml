@@ -109,12 +109,12 @@ Public Class RestrictedPage
 End Class  
 ```  
   
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkID=191455).  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](https://go.microsoft.com/fwlink/?LinkID=191455).  
   
  This example uses the <xref:System.IO.StreamWriter> class to write the values of several <xref:System.Web.HttpRequest> class properties to a file. For properties that are of type string, the values are HTML encoded as they are written to the file. Properties that represent a collection are looped through, and each key/value pair that they contain is written to the file.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[System.Web.HttpRequest_Sample1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#1)]
  [!code-aspx-vb[System.Web.HttpRequest_Sample1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#1)]  
@@ -444,7 +444,7 @@ End Class
         <altmember cref="P:System.Web.UI.Page.ClientTarget" />
         <altmember cref="T:System.Web.HttpBrowserCapabilities" />
         <altmember cref="P:System.Web.HttpRequest.UserAgent" />
-        <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Server Controls and Browser Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Server Controls and Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName="ClientCertificate">
@@ -504,7 +504,7 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default content encoding can be specified in the [globalization Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) of a configuration file. If content encoding is also specified by the client, the default configuration settings are overridden.  
+ Default content encoding can be specified in the [globalization Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) of a configuration file. If content encoding is also specified by the client, the default configuration settings are overridden.  
   
    
   
@@ -1025,7 +1025,7 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a listing of all possible headers, see [Request Header Fields](http://go.microsoft.com/fwlink/?LinkId=73147) on the W3C Web site.  
+ For a listing of all possible headers, see [Request Header Fields](https://go.microsoft.com/fwlink/?LinkId=73147) on the W3C Web site.  
   
    
   
@@ -1909,12 +1909,12 @@ Dim fullname2 As String = Request("fullname")
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property provides access to the <xref:System.Web.Routing.RouteData> object for the current request. For more information about ASP.NET routing, see.[ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ This property provides access to the <xref:System.Web.Routing.RouteData> object for the current request. For more information about ASP.NET routing, see.[ASP.NET Routing](https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/dc88e6ba-470c-4b20-b644-35874cfd781d">How to: Access URL Parameters in a Routed Page</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2decba4-2400-491c-8907-89a7b9e0874c">Walkthrough: Using ASP.NET Routing in a Web Forms Application</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/dc88e6ba-470c-4b20-b644-35874cfd781d">How to: Access URL Parameters in a Routed Page</related>
       </Docs>
     </Member>
     <Member MemberName="RequestType">
@@ -2023,7 +2023,7 @@ Dim fullname2 As String = Request("fullname")
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of server variables supported by IIS, see [IIS Server Variables](http://go.microsoft.com/fwlink/?LinkId=52471).  
+ For a list of server variables supported by IIS, see [IIS Server Variables](https://go.microsoft.com/fwlink/?LinkId=52471).  
   
    
   
@@ -2267,7 +2267,7 @@ Dim fullname2 As String = Request("fullname")
         <altmember cref="P:System.Web.UI.Page.ClientTarget" />
         <altmember cref="T:System.Web.HttpBrowserCapabilities" />
         <altmember cref="P:System.Web.HttpRequest.Browser" />
-        <related type="Article" href="http://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Server Controls and Browser Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/143d14d6-9d12-4d4b-ae60-f00e0eb6938f">ASP.NET Server Controls and Browser Capabilities</related>
       </Docs>
     </Member>
     <Member MemberName="UserHostAddress">

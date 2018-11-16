@@ -22,7 +22,7 @@
 ## Remarks  
  This class can be extended to develop any type of user interface behavior, including selection, drag, and resize behaviors.  
   
- For more information, see [Behavior Service Overview](http://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f).  
+ For more information, see [Behavior Service Overview](https://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f).  
   
 > [!NOTE]
 >  Your <xref:System.Windows.Forms.Design.Behavior.Behavior> type must be associated with a <xref:System.Windows.Forms.Design.Behavior.Glyph> type. Glyph-independent behaviors are not supported.  
@@ -41,8 +41,8 @@
     <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
     <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
     <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
-    <related type="Article" href="http://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f">Behavior Service Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f">Behavior Service Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -89,8 +89,8 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f">Behavior Service Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f">Behavior Service Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -193,7 +193,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="FindCommand">
@@ -229,7 +229,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="OnDragDrop">
@@ -263,7 +263,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="OnDragEnter">
@@ -297,7 +297,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="OnDragLeave">
@@ -331,7 +331,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="OnDragOver">
@@ -365,7 +365,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="OnGiveFeedback">
@@ -399,7 +399,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="OnLoseCapture">
@@ -445,7 +445,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="OnMouseDoubleClick">
@@ -485,7 +485,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to handle a double-click message. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b).  
+ The following code example demonstrates how to handle a double-click message. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b).  
   
  [!code-csharp[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/CS/DesignerDemoControl.cs#10)]
  [!code-vb[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/VB/DesignerDemoControl.vb#10)]  
@@ -495,7 +495,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">
@@ -537,7 +537,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="OnMouseEnter">
@@ -577,7 +577,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="OnMouseHover">
@@ -617,7 +617,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -657,7 +657,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="OnMouseMove">
@@ -699,7 +699,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -739,7 +739,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="OnQueryContinueDrag">
@@ -773,7 +773,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
-        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

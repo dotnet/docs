@@ -76,7 +76,7 @@
   
  To promote consistency among .NET Framework data providers, you should name the inheriting class in the form *Prv*DataAdapter, where *Prv* is the uniform prefix given to all classes in a specific .NET Framework data provider namespace. For example, "Sql" is the prefix of the <see cref="T:System.Data.SqlClient.SqlDataAdapter" /> class in the **System.Data.SqlClient** namespace.</para>
     </block>
-    <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
     <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
@@ -136,7 +136,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -178,7 +178,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -229,7 +229,7 @@
   
  If a class that inherits from <see cref="T:System.Data.Common.DbDataAdapter" /> supports batches, that class overrides this method to allow users to add a command to a batch.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -276,7 +276,7 @@
   
  If a class that inherits from <see cref="T:System.Data.Common.DbDataAdapter" /> supports batches, that class overrides this method to allow users to remove all commands from a batch.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -369,7 +369,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Data.Common.DbDataAdapter.CreateRowUpdatingEvent(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" /> in a derived class, be sure to call the base class's <see cref="M:System.Data.Common.DbDataAdapter.CreateRowUpdatingEvent(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" /> method.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -412,7 +412,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -473,7 +473,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Manipulating Data (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -512,7 +512,7 @@
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Data.Common.DbDataAdapter" /> and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -560,7 +560,7 @@
  If a class that inherits from <see cref="T:System.Data.Common.DbDataAdapter" /> supports batches, that class overrides this method to allow users to execute a batch. An implementation of this method combines the commands in the adapter into a batch, then executes the batch and returns the return value of the batch.</para>
         </block>
         <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Manipulating Data (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -642,7 +642,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -722,7 +722,7 @@ DataSet dataset = new DataSet();
         <block subset="none" type="overrides">
           <para>This overload of the <see cref="M:System.Data.IDataAdapter.Fill(System.Data.DataSet)" /> method is protected and is designed for use by a .NET Framework data provider.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -822,7 +822,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Data.Common.DbDataAdapter.Fill(System.Data.DataSet)" /> in a derived class, be sure to call the base class's <see cref="M:System.Data.Common.DbDataAdapter.Fill(System.Data.DataSet)" /> method.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -919,7 +919,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <block subset="none" type="overrides">
           <para>This overload of the <see cref="M:System.Data.IDataAdapter.Fill(System.Data.DataSet)" /> method is protected and is designed for use by a .NET Framework data provider.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -987,7 +987,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -1113,7 +1113,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Data.Common.DbDataAdapter.Fill(System.Data.DataSet)" /> in a derived class, be sure to call the base class's <see cref="M:System.Data.Common.DbDataAdapter.Fill(System.Data.DataSet)" /> method.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -1256,7 +1256,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Data.Common.DbDataAdapter.Fill(System.Data.DataSet)" /> in a derived class, be sure to call the base class's <see cref="M:System.Data.Common.DbDataAdapter.Fill(System.Data.DataSet)" /> method.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -1349,7 +1349,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <block subset="none" type="overrides">
           <para>This overload of the <see cref="M:System.Data.IDataAdapter.Fill(System.Data.DataSet)" /> method is protected and is designed for use by a .NET Framework data provider.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -1383,7 +1383,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <summary>Gets or sets the behavior of the command used to fill the data adapter.</summary>
         <value>The <see cref="T:System.Data.CommandBehavior" /> of the command used to fill the data adapter.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -1495,7 +1495,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
   
  Note that primary keys and unique constraints are added to the <xref:System.Data.ConstraintCollection> according to the preceding rules, but other constraint types are not added.  
   
- If a unique clustered index is defined on a column or columns in a SQL Server table and the primary key constraint is defined on a separate set of columns, then the names of the columns in the clustered index will be returned. To return the name or names of the primary key columns, use a query hint with the SELECT statement that specifies the name of the primary key index. For more information about specifying query hints, see [Query Hint (Transact-SQL)](http://msdn.microsoft.com/library/ms181714.aspx).  
+ If a unique clustered index is defined on a column or columns in a SQL Server table and the primary key constraint is defined on a separate set of columns, then the names of the columns in the clustered index will be returned. To return the name or names of the primary key columns, use a query hint with the SELECT statement that specifies the name of the primary key index. For more information about specifying query hints, see [Query Hint (Transact-SQL)](https://msdn.microsoft.com/library/ms181714.aspx).  
   
  Primary key information is used during <xref:System.Data.Common.DbDataAdapter.Fill%2A> to find and replace any rows whose key columns match. If this is not the desired behavior, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> without requesting schema information.  
   
@@ -1518,7 +1518,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -1587,7 +1587,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
   
  Note that primary keys and unique constraints are added to the <xref:System.Data.ConstraintCollection> according to the preceding rules, but other constraint types are not added. This process may require several round-trips to the server.  
   
- If a unique clustered index is defined on a column or columns in a SQL Server table and the primary key constraint is defined on a separate set of columns, then the names of the columns in the clustered index will be returned. To return the name or names of the primary key columns, use a query hint with the SELECT statement that specifies the name of the primary key index. For more information about specifying query hints, see [Query Hint (Transact-SQL)](http://msdn.microsoft.com/library/ms181714.aspx).  
+ If a unique clustered index is defined on a column or columns in a SQL Server table and the primary key constraint is defined on a separate set of columns, then the names of the columns in the clustered index will be returned. To return the name or names of the primary key columns, use a query hint with the SELECT statement that specifies the name of the primary key index. For more information about specifying query hints, see [Query Hint (Transact-SQL)](https://msdn.microsoft.com/library/ms181714.aspx).  
   
  If the <xref:System.Data.Common.DbDataAdapter> encounters duplicate columns while populating a <xref:System.Data.DataTable>, it generates names for the subsequent columns, using the pattern "*columnname*1", "*columnname*2", "*columnname*3", and so on. If the incoming data contains unnamed columns, they are placed in the <xref:System.Data.DataSet> according to the pattern "Column1", "Column2", and so on. When multiple result sets are added to the <xref:System.Data.DataSet> each result set is placed in a separate table. Additional result sets are named by appending integral values to the specified table name (for example, "Table", "Table1", "Table2", and so on.). Applications using column and table names should ensure that conflicts with these naming patterns does not occur.  
   
@@ -1608,7 +1608,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -1677,7 +1677,7 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
   
  Note that primary keys and unique constraints are added to the <xref:System.Data.ConstraintCollection> according to the preceding rules, but other constraint types are not added.  
   
- If a unique clustered index is defined on a column or columns in a SQL Server table and the primary key constraint is defined on a separate set of columns, then the names of the columns in the clustered index will be returned. To return the name or names of the primary key columns, use a query hint with the SELECT statement that specifies the name of the primary key index. For more information about specifying query hints, see [Query Hint (Transact-SQL)](http://msdn.microsoft.com/library/ms181714.aspx).  
+ If a unique clustered index is defined on a column or columns in a SQL Server table and the primary key constraint is defined on a separate set of columns, then the names of the columns in the clustered index will be returned. To return the name or names of the primary key columns, use a query hint with the SELECT statement that specifies the name of the primary key index. For more information about specifying query hints, see [Query Hint (Transact-SQL)](https://msdn.microsoft.com/library/ms181714.aspx).  
   
  Primary key information is used during <xref:System.Data.Common.DbDataAdapter.Fill%2A> to find and replace any rows whose key columns match. If this is not the desired behavior, use <xref:System.Data.Common.DbDataAdapter.Fill%2A> without requesting schema information.  
   
@@ -1719,7 +1719,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A source table from which to get the schema could not be found.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -1790,7 +1790,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
   
  Note that primary keys and unique constraints are added to the <xref:System.Data.ConstraintCollection> according to the preceding rules, but other constraint types are not added.  
   
- If a unique clustered index is defined on a column or columns in a SQL Server table and the primary key constraint is defined on a separate set of columns, then the names of the columns in the clustered index will be returned. To return the name or names of the primary key columns, use a query hint with the SELECT statement that specifies the name of the primary key index. For more information about specifying query hints, see [Query Hint (Transact-SQL)](http://msdn.microsoft.com/library/ms181714.aspx).  
+ If a unique clustered index is defined on a column or columns in a SQL Server table and the primary key constraint is defined on a separate set of columns, then the names of the columns in the clustered index will be returned. To return the name or names of the primary key columns, use a query hint with the SELECT statement that specifies the name of the primary key index. For more information about specifying query hints, see [Query Hint (Transact-SQL)](https://msdn.microsoft.com/library/ms181714.aspx).  
   
  If the <xref:System.Data.IDataAdapter> encounters duplicate columns while populating a <xref:System.Data.DataTable>, it generates names for the subsequent columns, using the pattern "*columnname*1", "*columnname*2", "*columnname*3", and so on. If the incoming data contains unnamed columns, they are placed in the <xref:System.Data.DataSet> according to the pattern "Column1", "Column2", and so on. When multiple result sets are added to the <xref:System.Data.DataSet> each result set is placed in a separate table. Additional result sets are named by appending integral values to the specified table name (for example, "Table", "Table1", "Table2", and so on.). Applications using column and table names should ensure that conflicts with these naming patterns does not occur.  
   
@@ -1806,7 +1806,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <block subset="none" type="overrides">
           <para>This implementation of the <see cref="M:System.Data.IDataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)" /> method is protected and is designed for use by a .NET Framework data provider.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -1879,7 +1879,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
   
  Note that primary keys and unique constraints are added to the <xref:System.Data.ConstraintCollection> according to the preceding rules, but other constraint types are not added.  
   
- If a unique clustered index is defined on a column or columns in a SQL Server table and the primary key constraint is defined on a separate set of columns, then the names of the columns in the clustered index will be returned. To return the name or names of the primary key columns, use a query hint with the SELECT statement that specifies the name of the primary key index. For more information about specifying query hints, see [Query Hint (Transact-SQL)](http://msdn.microsoft.com/library/ms181714.aspx).  
+ If a unique clustered index is defined on a column or columns in a SQL Server table and the primary key constraint is defined on a separate set of columns, then the names of the columns in the clustered index will be returned. To return the name or names of the primary key columns, use a query hint with the SELECT statement that specifies the name of the primary key index. For more information about specifying query hints, see [Query Hint (Transact-SQL)](https://msdn.microsoft.com/library/ms181714.aspx).  
   
  If the <xref:System.Data.IDataAdapter> encounters duplicate columns while populating a <xref:System.Data.DataTable>, it generates names for the subsequent columns, using the pattern "*columnname*1", "*columnname*2", "*columnname*3", and so on. If the incoming data contains unnamed columns, they are placed in the <xref:System.Data.DataSet> according to the pattern "Column1", "Column2", and so on. When multiple result sets are added to the <xref:System.Data.DataSet> each result set is placed in a separate table. Additional result sets are named by appending integral values to the specified table name (for example, "Table", "Table1", "Table2", and so on.). Applications using column and table names should ensure that conflicts with these naming patterns does not occur.  
   
@@ -1913,7 +1913,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <block subset="none" type="overrides">
           <para>This implementation of the <see cref="M:System.Data.IDataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)" /> method is protected and is designed for use by a .NET Framework data provider.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -1966,7 +1966,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
   
  If a class that inherits from <see cref="T:System.Data.Common.DbDataAdapter" /> supports batches, that class overrides this method to allow users to execute a batch. An implementation uses the <paramref name="commandIdentifier" /> provided to locate the requested command, then uses the <paramref name="parameterIndex" /> provided to locate the requested parameter. For example, a <paramref name="commandIdentifier" /> of 0 and a <paramref name="parameterIndex" /> of 0 returns the first parameter from the first command in the batch.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -2107,7 +2107,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
   
  If a class that inherits from <see cref="T:System.Data.Common.DbDataAdapter" /> supports batches, that class overrides this method. This method gives the class the opportunity to initialize any resources necessary to support batching. For example, a class may allocate a data structure to hold the set of commands in the batch.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -2168,7 +2168,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
  ]]></format>
         </remarks>
         <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Manipulating Data (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -2246,7 +2246,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Data.Common.DbDataAdapter.OnRowUpdated(System.Data.Common.RowUpdatedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Data.Common.DbDataAdapter.OnRowUpdated(System.Data.Common.RowUpdatedEventArgs)" /> method.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -2294,7 +2294,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Data.Common.DbDataAdapter.OnRowUpdating(System.Data.Common.RowUpdatingEventArgs)" /> in a derived class, be sure to call the bases class's <see cref="M:System.Data.Common.DbDataAdapter.OnRowUpdating(System.Data.Common.RowUpdatingEventArgs)" /> method.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -2350,7 +2350,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
  ]]></format>
         </remarks>
         <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Manipulating Data (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -2628,7 +2628,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
   
  If a class that inherits from <see cref="T:System.Data.Common.DbDataAdapter" /> supports batches, that class overrides this method. This method gives the class the opportunity to dispose of any resources allocated to support batching. For example, the class may deallocate the data structure that holds the commands in the batch.</para>
         </block>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -2747,7 +2747,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
  No <see cref="T:System.Data.DataSet" /> exists to use as a source.</exception>
         <exception cref="T:System.Data.DBConcurrencyException">An attempt to execute an INSERT, UPDATE, or DELETE statement resulted in zero records affected.</exception>
         <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Manipulating Data (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -2847,7 +2847,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <exception cref="T:System.InvalidOperationException">The source table is invalid.</exception>
         <exception cref="T:System.Data.DBConcurrencyException">An attempt to execute an INSERT, UPDATE, or DELETE statement resulted in zero records affected.</exception>
         <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Manipulating Data (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -2954,7 +2954,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
  No <see cref="T:System.Data.DataSet" /> exists to use as a source.</exception>
         <exception cref="T:System.Data.DBConcurrencyException">An attempt to execute an INSERT, UPDATE, or DELETE statement resulted in zero records affected.</exception>
         <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Manipulating Data (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -3056,7 +3056,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
  No <see cref="T:System.Data.DataSet" /> exists to use as a source.</exception>
         <exception cref="T:System.Data.DBConcurrencyException">An attempt to execute an INSERT, UPDATE, or DELETE statement resulted in zero records affected.</exception>
         <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Manipulating Data (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -3175,7 +3175,7 @@ DataSet dataset = new DataSet();
         <exception cref="T:System.InvalidOperationException">The source table is invalid.</exception>
         <exception cref="T:System.Data.DBConcurrencyException">An attempt to execute an INSERT, UPDATE, or DELETE statement resulted in zero records affected.</exception>
         <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Manipulating Data (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -3246,7 +3246,7 @@ DataSet dataset = new DataSet();
  ]]></format>
         </remarks>
         <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Manipulating Data (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -3307,7 +3307,7 @@ DataSet dataset = new DataSet();
  ]]></format>
         </remarks>
         <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Manipulating Data (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>

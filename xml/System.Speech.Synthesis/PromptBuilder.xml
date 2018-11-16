@@ -765,7 +765,7 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The SSML file must be an XML-format file that conforms to the [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763) specification.  
+ The SSML file must be an XML-format file that conforms to the [Speech Synthesis Markup Language (SSML) Version 1.0](https://go.microsoft.com/fwlink/?LinkId=201763) specification.  
   
  You can also append SSML markup as a string using <xref:System.Speech.Synthesis.PromptBuilder.AppendSsmlMarkup%2A>.  
   
@@ -1522,9 +1522,9 @@ namespace SampleSynthesis
   
  Pronunciations specified inline in prompts apply only to the individual occurrence of a word and override pronunciations of the speech engine or any of its currently active lexicons. Typically, you will use inline pronunciations for custom pronunciations of existing words or for pronunciation of uncommon words, such as proper names, which the speech synthesis engine may not pronounce as well as expected.  
   
- Inline pronunciations must be specified using phones from the International Phonetic Alphabet (IPA). A phone is a letter or character that represents a discreet sound of speech. Speech engines that comply with the [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763) specification will pronounce phones from the IPA. To specify inline pronunciations using other phonetic alphabets, see <xref:System.Speech.Synthesis.PromptBuilder.AppendSsmlMarkup%2A>.  
+ Inline pronunciations must be specified using phones from the International Phonetic Alphabet (IPA). A phone is a letter or character that represents a discreet sound of speech. Speech engines that comply with the [Speech Synthesis Markup Language (SSML) Version 1.0](https://go.microsoft.com/fwlink/?LinkId=201763) specification will pronounce phones from the IPA. To specify inline pronunciations using other phonetic alphabets, see <xref:System.Speech.Synthesis.PromptBuilder.AppendSsmlMarkup%2A>.  
   
- The IPA publishes a [chart](http://go.microsoft.com/fwlink/?LinkId=58362) that lists its phones and maps them to Unicode numbers.  
+ The IPA publishes a [chart](https://go.microsoft.com/fwlink/?LinkId=58362) that lists its phones and maps them to Unicode numbers.  
   
  Some phones in the IPA alphabet have the same representations as letters in the Latin alphabet. In those cases, it is possible to type the Latin character and have the proper representation for a phone. Because the Latin characters as commonly used in text may represent several phones of the IPA phone set, simply typing the Latin character might not result in the precise IPA phone desired. Other phones of the IPA alphabet need to be represented in code as character references consisting of an ampersand (&), the number sign (#), and a Unicode number for the desired phone in hexadecimal or decimal, all followed by a semicolon (;). For example, a schwa (&\#x0259;) would be represented by `&#x0259;`.  
   
@@ -1556,7 +1556,7 @@ public void ProperName()
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkId=58363">International Phonetic Association</related>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=58363">International Phonetic Association</related>
       </Docs>
     </Member>
     <Member MemberName="ClearContent">
@@ -1623,7 +1623,7 @@ public void ProperName()
   
 -   zh-TW. Chinese (Taiwan)  
   
- Two-letter language codes such as "en" are also permitted.  See [Language Identifier Constants and Strings](http://msdn.microsoft.com/library/dd318693\(VS.85\).aspx) for a comprehensive list of language codes.  
+ Two-letter language codes such as "en" are also permitted.  See [Language Identifier Constants and Strings](https://msdn.microsoft.com/library/dd318693\(VS.85\).aspx) for a comprehensive list of language codes.  
   
  ]]></format>
         </remarks>

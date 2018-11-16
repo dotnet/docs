@@ -4129,7 +4129,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
 ## Remarks  
  The <xref:System.Messaging.MessageQueue.MulticastAddress%2A> property is used to associate a non-transactional queue with a multicast address that can be used when sending messages. You cannot associate a transactional queue with a multicast address. When the sending application sends messages to a multicast address, Message Queuing sends a copy of the message to every queue associated with that address.  
   
- IP multicast addresses must be in the class D range from 224.0.0.0 to 239.255.255.255, which corresponds to setting the first four high-order bits equal to 1110. However, only certain ranges of addresses in this range are unreserved and available for sending multicast messages. For the latest list of reserved multicast addresses, see the [Internet Assigned Number Authority (IANA) Internet Multicast Addresses](http://go.microsoft.com/fwlink/?linkid=3859) Web page. There are no restrictions on the port number.  
+ IP multicast addresses must be in the class D range from 224.0.0.0 to 239.255.255.255, which corresponds to setting the first four high-order bits equal to 1110. However, only certain ranges of addresses in this range are unreserved and available for sending multicast messages. For the latest list of reserved multicast addresses, see the [Internet Assigned Number Authority (IANA) Internet Multicast Addresses](https://go.microsoft.com/fwlink/?linkid=3859) Web page. There are no restrictions on the port number.  
   
  If several source computers are sending multicast messages and you want a specific queue to receive messages from only one source computer, each source computer must send messages to a different combination of IP address and port number.  
   

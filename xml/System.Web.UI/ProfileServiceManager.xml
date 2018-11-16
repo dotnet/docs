@@ -51,7 +51,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.Configuration.ScriptingProfileServiceSection" />
-    <related type="Article" href="http://msdn.microsoft.com/library/91239ae6-d01c-4f4e-a433-eb9040dbed61">Using Profile Information with ASP.NET AJAX</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/91239ae6-d01c-4f4e-a433-eb9040dbed61">Using Profile Information with ASP.NET AJAX</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -114,7 +114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Web.UI.ProfileServiceManager.LoadProperties%2A> contains at least one string that corresponds to the name of a profile property, then the built-in profile service in the Web application retrieves the current user's profile data for each of the specified profile properties. The profile property values are serialized and then made available to client script through the [properties Field](http://msdn.microsoft.com/library/ebce3c40-7017-482b-94df-91f7448fda05) collection.  
+ If <xref:System.Web.UI.ProfileServiceManager.LoadProperties%2A> contains at least one string that corresponds to the name of a profile property, then the built-in profile service in the Web application retrieves the current user's profile data for each of the specified profile properties. The profile property values are serialized and then made available to client script through the [properties Field](https://msdn.microsoft.com/library/ebce3c40-7017-482b-94df-91f7448fda05) collection.  
   
 > [!NOTE]
 >  To set this property declaratively, use a comma-separated list of property names. For grouped property values, use the syntax *GroupName*.*PropertyName*.  

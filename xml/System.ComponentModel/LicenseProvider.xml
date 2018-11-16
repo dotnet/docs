@@ -42,7 +42,7 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.ComponentModel.LicenseProvider" />, you must override the <see cref="M:System.ComponentModel.LicenseProvider.GetLicense(System.ComponentModel.LicenseContext,System.Type,System.Object,System.Boolean)" /> method.  
   
- See <see cref="T:System.ComponentModel.LicFileLicenseProvider" /> for an implementation of this class. For more information on licensing, see [How to: License Components and Controls](http://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57).</para>
+ See <see cref="T:System.ComponentModel.LicFileLicenseProvider" /> for an implementation of this class. For more information on licensing, see [How to: License Components and Controls](https://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57).</para>
     </block>
     <altmember cref="T:System.ComponentModel.License" />
     <altmember cref="T:System.ComponentModel.LicenseContext" />

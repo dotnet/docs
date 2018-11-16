@@ -48,7 +48,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Reflection.TypeInfo> class is included in the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)] subset for use in creating Windows Store apps. <xref:System.Reflection.TypeInfo> is available in the full .NET Framework as well. For more information about reflection for Windows Store apps, see [System.Reflection namespaces](http://msdn.microsoft.com/library/windows/apps/hh441595\(v=vs.110\).aspx) in the Windows Dev Center and [Reflection in the .NET Framework for Windows Store Apps](~/docs/framework/reflection-and-codedom/reflection-for-windows-store-apps.md) in the MSDN Library.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Reflection.TypeInfo> class is included in the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)] subset for use in creating Windows Store apps. <xref:System.Reflection.TypeInfo> is available in the full .NET Framework as well. For more information about reflection for Windows Store apps, see [System.Reflection namespaces](https://msdn.microsoft.com/library/windows/apps/hh441595\(v=vs.110\).aspx) in the Windows Dev Center and [Reflection in the .NET Framework for Windows Store Apps](~/docs/framework/reflection-and-codedom/reflection-for-windows-store-apps.md) in the MSDN Library.  
   
  <xref:System.Reflection.TypeInfo> contains many of the members available in the <xref:System.Type> class, and many of the reflection properties in the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)] return collections of <xref:System.Reflection.TypeInfo> objects. To get a <xref:System.Reflection.TypeInfo> object from a <xref:System.Type> object, use the <xref:System.Reflection.IntrospectionExtensions.GetTypeInfo%28System.Type%29?displayProperty=nameWithType> extension method.  
   
@@ -61,7 +61,7 @@
    
   
 ## Examples  
- This example uses the reflection types and members in the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)] subset to retrieve the methods and properties of the <xref:System.Globalization.Calendar> type, including inherited methods and properties. To run this code, paste it into the code file for a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] XAML app that contains a [Windows.UI.Xaml.Controls.Textblock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) control named `textblock1`.  
+ This example uses the reflection types and members in the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)] subset to retrieve the methods and properties of the <xref:System.Globalization.Calendar> type, including inherited methods and properties. To run this code, paste it into the code file for a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] XAML app that contains a [Windows.UI.Xaml.Controls.Textblock](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) control named `textblock1`.  
   
  [!code-csharp[System.ReflectionWinStoreApp#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflectionwinstoreapp/cs/mainpage.xaml.cs#1)]
  [!code-vb[System.ReflectionWinStoreApp#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflectionwinstoreapp/vb/mainpage.xaml.vb#1)]  
@@ -487,7 +487,7 @@
    
   
 ## Examples  
- This example uses the reflection types and members in the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)] subset to retrieve the methods and properties of the <xref:System.Globalization.Calendar> type, including inherited methods and properties. To run this code, paste it into the code file for a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] XAML app that contains a [Windows.UI.Xaml.Controls.Textblock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) control named `textblock1`.  
+ This example uses the reflection types and members in the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)] subset to retrieve the methods and properties of the <xref:System.Globalization.Calendar> type, including inherited methods and properties. To run this code, paste it into the code file for a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] XAML app that contains a [Windows.UI.Xaml.Controls.Textblock](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) control named `textblock1`.  
   
  [!code-csharp[System.ReflectionWinStoreApp#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflectionwinstoreapp/cs/mainpage.xaml.cs#1)]
  [!code-vb[System.ReflectionWinStoreApp#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflectionwinstoreapp/vb/mainpage.xaml.vb#1)]  
@@ -586,7 +586,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- This example uses the reflection types and members in the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)] subset to retrieve the methods and properties of the <xref:System.Globalization.Calendar> type, including inherited methods and properties. To run this code, paste it into the code file for a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] XAML app that contains a [Windows.UI.Xaml.Controls.Textblock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) control named `textblock1`.  
+ This example uses the reflection types and members in the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)] subset to retrieve the methods and properties of the <xref:System.Globalization.Calendar> type, including inherited methods and properties. To run this code, paste it into the code file for a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] XAML app that contains a [Windows.UI.Xaml.Controls.Textblock](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) control named `textblock1`.  
   
  [!code-csharp[System.ReflectionWinStoreApp#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflectionwinstoreapp/cs/mainpage.xaml.cs#1)]
  [!code-vb[System.ReflectionWinStoreApp#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflectionwinstoreapp/vb/mainpage.xaml.vb#1)]  

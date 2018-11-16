@@ -31,7 +31,7 @@
  The following code example demonstrates a simple implementation of the <xref:System.Web.UI.WebControls.WebParts.IWebActionable> interface. The first part of the code example shows how the interface is implemented in a user control. The user control implements the <xref:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs%2A> property by creating two custom verbs and defining a method that is called when a user clicks either of the verbs. For simplicity, the same method is used for both verbs. The method updates the value of a property named `VerbCounterClicks`. The code for the `Page_Load` method accesses the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Verbs%2A> property of the control to display the total count of custom verbs in the collection. This count does not include the standard Web Parts verbs.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  [!code-aspx-csharp[WebParts_IWebActionable_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebActionable_Overview/CS/usercontrolverbcs.ascx#2)]
  [!code-aspx-vb[WebParts_IWebActionable_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebActionable_Overview/VB/usercontrolverbvb.ascx#2)]  
@@ -45,7 +45,7 @@
     </remarks>
     <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Verbs" />
     <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Verbs" />
-    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName="Verbs">
@@ -91,7 +91,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Verbs" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Verbs" />
-        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

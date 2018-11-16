@@ -41,11 +41,11 @@
 ### Ordering of Serialization Code  
  The GenerateOrder member instructs the code generator to create the serialization code in a specific order as determined by the `Order` property of the following attributes:  
   
--   [XmlAnyElementAttribute](http://msdn.microsoft.com/library/system.xml.serialization.xmlanyelementattribute\(v=vs.110\).aspx)  
+-   [XmlAnyElementAttribute](https://msdn.microsoft.com/library/system.xml.serialization.xmlanyelementattribute\(v=vs.110\).aspx)  
   
--   [XmlArrayAttribute](http://msdn.microsoft.com/library/system.xml.serialization.xmlarrayattribute\(v=vs.110\).aspx)  
+-   [XmlArrayAttribute](https://msdn.microsoft.com/library/system.xml.serialization.xmlarrayattribute\(v=vs.110\).aspx)  
   
--   [XmlElementAttribute](http://msdn.microsoft.com/library/system.xml.serialization.xmlelementattribute\(v=vs.110\).aspx)  
+-   [XmlElementAttribute](https://msdn.microsoft.com/library/system.xml.serialization.xmlelementattribute\(v=vs.110\).aspx)  
   
 > [!NOTE]
 >  Once the `Order` property has been set on one public property or field in a type, it must be applied to all public properties and fields for that type and all inherited types.  

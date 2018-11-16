@@ -27,9 +27,9 @@
   
  Files are uploaded in MIME multipart/form-data format. By default, all requests, including form fields and uploaded files, larger than 256 KB are buffered to disk, rather than held in server memory.  
   
- You can specify the maximum allowable request size by accessing the <xref:System.Web.Configuration.HttpRuntimeSection.MaxRequestLength%2A> property or by setting the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) element within the Machine.config or Web.config file. The default is 4 MB.  
+ You can specify the maximum allowable request size by accessing the <xref:System.Web.Configuration.HttpRuntimeSection.MaxRequestLength%2A> property or by setting the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) element within the Machine.config or Web.config file. The default is 4 MB.  
   
- The amount of data that is buffered in server memory for a request, which includes file uploads, can be specified by accessing the <xref:System.Web.Configuration.HttpRuntimeSection.RequestLengthDiskThreshold%2A> property or by setting the `requestLengthDiskThreshold` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) element within the Machine.config or Web.config file.  
+ The amount of data that is buffered in server memory for a request, which includes file uploads, can be specified by accessing the <xref:System.Web.Configuration.HttpRuntimeSection.RequestLengthDiskThreshold%2A> property or by setting the `requestLengthDiskThreshold` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) element within the Machine.config or Web.config file.  
   
  By adjusting the <xref:System.Web.Configuration.HttpRuntimeSection.MaxRequestLength%2A> and <xref:System.Web.Configuration.HttpRuntimeSection.RequestLengthDiskThreshold%2A> properties, you can fine tune the performance of your server. Additionally, you should consider setting the <xref:System.Web.Configuration.HttpRuntimeSection.MaxRequestLength%2A> to prevent denial of service attacks caused by users posting large files to the server.  
   
@@ -209,7 +209,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The maximum size allowed for a request, which includes uploaded files, is 4 MB, by default. Maximum request size can be specified in the Machine.config or Web.config file in the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) element. The maximum request size for a specific page can be specified using the [location Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/922ef7d5-da38-4661-b1c6-5b9e5ceda1d5) element in a Web.config file.  
+ The maximum size allowed for a request, which includes uploaded files, is 4 MB, by default. Maximum request size can be specified in the Machine.config or Web.config file in the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) element. The maximum request size for a specific page can be specified using the [location Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/922ef7d5-da38-4661-b1c6-5b9e5ceda1d5) element in a Web.config file.  
   
    
   

@@ -99,7 +99,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
   
  ]]></format>
     </remarks>
-    <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
     <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
     <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
@@ -167,7 +167,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -228,7 +228,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -410,8 +410,8 @@ using (SqlConnection connection = new SqlConnection(connectionString))
         </remarks>
         <exception cref="T:System.Data.SqlClient.SqlException">Parallel transactions are not allowed when using Multiple Active Result Sets (MARS).</exception>
         <exception cref="T:System.InvalidOperationException">Parallel transactions are not supported.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions and Concurrency</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions and Concurrency</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -479,8 +479,8 @@ using (SqlConnection connection = new SqlConnection(connectionString))
         </remarks>
         <exception cref="T:System.Data.SqlClient.SqlException">Parallel transactions are not allowed when using Multiple Active Result Sets (MARS).</exception>
         <exception cref="T:System.InvalidOperationException">Parallel transactions are not supported.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -549,8 +549,8 @@ using (SqlConnection connection = new SqlConnection(connectionString))
         </remarks>
         <exception cref="T:System.Data.SqlClient.SqlException">Parallel transactions are not allowed when using Multiple Active Result Sets (MARS).</exception>
         <exception cref="T:System.InvalidOperationException">Parallel transactions are not supported.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -622,8 +622,8 @@ using (SqlConnection connection = new SqlConnection(connectionString))
         </remarks>
         <exception cref="T:System.Data.SqlClient.SqlException">Parallel transactions are not allowed when using Multiple Active Result Sets (MARS).</exception>
         <exception cref="T:System.InvalidOperationException">Parallel transactions are not supported.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -684,7 +684,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
         <exception cref="T:System.ArgumentException">The database name is not valid.</exception>
         <exception cref="T:System.InvalidOperationException">The connection is not open.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">Cannot change the database.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -781,8 +781,8 @@ End Module
   
  The <paramref name="newPassword" /> exceeds 128 characters.</exception>
         <exception cref="T:System.ArgumentNullException">Either the <paramref name="connectionString" /> or the <paramref name="newPassword" /> parameter is null.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Connection Strings (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Connection Strings (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Using the .NET Framework Data Provider for SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -874,7 +874,7 @@ End Module
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -919,7 +919,7 @@ End Module
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -963,7 +963,7 @@ End Module
 ## Remarks  
  <xref:System.Data.SqlClient.SqlConnection.ClientConnectionId%2A> works regardless of which version of the server you connect to, but extended events logs and entry on connectivity ring buffer errors will not be present in [!INCLUDE[sskatmai_r2](~/includes/sskatmai-r2-md.md)] and earlier.  
   
- You can locate the connection ID in the extended events log to see if the failure was on the server if the extended event for logging connection ID is enabled. You can also locate the connection ID in the connection ring buffer ([Connectivity troubleshooting in SQL Server 2008 with the Connectivity Ring Buffer](http://go.microsoft.com/fwlink/?LinkId=207752)) for certain connection errors. If the connection ID is not in the connection ring buffer, you can assume a network error.  
+ You can locate the connection ID in the extended events log to see if the failure was on the server if the extended event for logging connection ID is enabled. You can also locate the connection ID in the connection ring buffer ([Connectivity troubleshooting in SQL Server 2008 with the Connectivity Ring Buffer](https://go.microsoft.com/fwlink/?LinkId=207752)) for certain connection errors. If the connection ID is not in the connection ring buffer, you can assume a network error.  
   
  ]]></format>
         </remarks>
@@ -1034,8 +1034,8 @@ End Module
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.SqlClient.SqlException">The connection-level error that occurred while opening the connection.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -1248,12 +1248,12 @@ End Module
 |Column Encryption Setting|N/A|Enables or disables [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sql-server-2017) functionality for the connection.|  
 |Connect Timeout<br /><br /> -or-<br /><br /> Connection Timeout<br /><br /> -or-<br /><br /> Timeout|15|The length of time (in seconds) to wait for a connection to the server before terminating the attempt and generating an error.<br /><br /> Valid values are greater than or equal to 0 and less than or equal to 2147483647.<br /><br /> When opening a connection to a Azure SQL Database, set the connection timeout to 30 seconds.|  
 |Connection Lifetime<br /><br /> -or-<br /><br /> Load Balance Timeout|0|When a connection is returned to the pool, its creation time is compared with the current time, and the connection is destroyed if that time span (in seconds) exceeds the value specified by `Connection Lifetime`. This is useful in clustered configurations to force load balancing between a running server and a server just brought online.<br /><br /> A value of zero (0) causes pooled connections to have the maximum connection timeout.|  
-|ConnectRetryCount|1|Controls the number of reconnection attempts after the client identifies an idle connection failure. Valid values are 0 to 255. The default is 1. 0 means do not attempt to reconnect (disable connection resiliency).<br /><br /> For additional information about idle connection resiliency, see [Technical Article – Idle Connection Resiliency](http://go.microsoft.com/fwlink/?LinkId=393996).|  
-|ConnectRetryInterval|10|Specifies the time between each connection retry attempt (ConnectRetryCount). Valid values are 1 to 60 seconds (default=10), applied after the first reconnection attempt. When a broken connection is detected, the client immediately attempts to reconnect; this is the first reconnection attempt and only occurs if ConnectRetryCount is greater than 0. If the first reconnection attempt fails and ConnectRetryCount is greater than 1, the client waits ConnectRetryInterval to try the second and subsequent reconnection attempts.<br /><br /> For additional information about idle connection resiliency, see [Technical Article – Idle Connection Resiliency](http://go.microsoft.com/fwlink/?LinkId=393996).|  
+|ConnectRetryCount|1|Controls the number of reconnection attempts after the client identifies an idle connection failure. Valid values are 0 to 255. The default is 1. 0 means do not attempt to reconnect (disable connection resiliency).<br /><br /> For additional information about idle connection resiliency, see [Technical Article – Idle Connection Resiliency](https://go.microsoft.com/fwlink/?LinkId=393996).|  
+|ConnectRetryInterval|10|Specifies the time between each connection retry attempt (ConnectRetryCount). Valid values are 1 to 60 seconds (default=10), applied after the first reconnection attempt. When a broken connection is detected, the client immediately attempts to reconnect; this is the first reconnection attempt and only occurs if ConnectRetryCount is greater than 0. If the first reconnection attempt fails and ConnectRetryCount is greater than 1, the client waits ConnectRetryInterval to try the second and subsequent reconnection attempts.<br /><br /> For additional information about idle connection resiliency, see [Technical Article – Idle Connection Resiliency](https://go.microsoft.com/fwlink/?LinkId=393996).|  
 |Context Connection|'false'|`true` if an in-process connection to SQL Server should be made.|  
 |Current Language<br /><br /> -or-<br /><br /> Language|N/A|Sets the language used for database server warning or error messages.<br /><br /> The language name can be 128 characters or less.|  
 |Data Source<br /><br /> -or-<br /><br /> Server<br /><br /> -or-<br /><br /> Address<br /><br /> -or-<br /><br /> Addr<br /><br /> -or-<br /><br /> Network Address|N/A|The name or network address of the instance of SQL Server to which to connect. The port number can be specified after the server name:<br /><br /> `server=tcp:servername, portnumber`<br /><br /> When specifying a local instance, always use (local). To force a protocol, add one of the following prefixes:<br /><br /> `np:(local),  tcp:(local), lpc:(local)`<br /><br /> Beginning in [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can also connect to a LocalDB database as follows:<br /><br /> `server=(localdb)\\myInstance`<br /><br /> For more information about LocalDB, see [SqlClient Support for LocalDB](~/docs/framework/data/adonet/sql/sqlclient-support-for-localdb.md).<br /><br /> **Data Source** must use the TCP format or the Named Pipes format.<br /><br /> TCP format is as follows:<br /><br /> -   tcp:\<host name>\\<instance name\><br />-   tcp:\<host name>,\<TCP/IP port number><br /><br /> The TCP format must start with the prefix "tcp:" and is followed by the database instance, as specified by a host name and an instance name. This format is not applicable when connecting to Azure SQL Database. TCP is automatically selected for connections to Azure SQL Database when no protocol is specified.<br /><br /> The host name MUST be specified in one of the following ways:<br /><br /> -   NetBIOSName<br />-   IPv4Address<br />-   IPv6Address<br /><br /> The instance name is used to resolve to a particular TCP/IP port number on which a database instance is hosted. Alternatively, specifying a TCP/IP port number directly is also allowed. If both instance name and port number are not present, the default database instance is used.<br /><br /> The Named Pipes format is as follows:<br /><br /> -   np:\\\\<host name\>\pipe\\<pipe name\><br /><br /> The Named Pipes format MUST start with the prefix "np:" and is followed by a named pipe name.<br /><br /> The host name MUST be specified in one of the following ways:<br /><br /> -   NetBIOSName<br />-   IPv4Address<br />-   IPv6Address<br /><br /> The pipe name is used to identify the database instance to which the .NET Framework application will be connected.<br /><br /> If the value of the **Network** key is specified, the prefixes "tcp:" and "np:" should not be specified. **Note:**  You can force the use of TCP instead of shared memory, either by prefixing **tcp:** to the server name in the connection string, or by using **localhost**.|  
-|Encrypt|'false'|When `true`, SQL Server uses SSL encryption for all data sent between the client and server if the server has a certificate installed. Recognized values are `true`, `false`, `yes`, and `no`. For more information, see [Connection String Syntax](~/docs/framework/data/adonet/connection-string-syntax.md).<br /><br /> Beginning in [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when `TrustServerCertificate` is false and `Encrypt` is true, the server name (or IP address) in a SQL Server SSL certificate must exactly match the server name (or IP address) specified in the connection string. Otherwise, the connection attempt will fail. For information about support for certificates whose subject starts with a wildcard character (*), see [Accepted wildcards used by server certificates for server authentication](http://support.microsoft.com/kb/258858).|  
+|Encrypt|'false'|When `true`, SQL Server uses SSL encryption for all data sent between the client and server if the server has a certificate installed. Recognized values are `true`, `false`, `yes`, and `no`. For more information, see [Connection String Syntax](~/docs/framework/data/adonet/connection-string-syntax.md).<br /><br /> Beginning in [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when `TrustServerCertificate` is false and `Encrypt` is true, the server name (or IP address) in a SQL Server SSL certificate must exactly match the server name (or IP address) specified in the connection string. Otherwise, the connection attempt will fail. For information about support for certificates whose subject starts with a wildcard character (*), see [Accepted wildcards used by server certificates for server authentication](https://support.microsoft.com/kb/258858).|  
 |Enlist|'true'|`true` indicates that the SQL Server connection pooler automatically enlists the connection in the creation thread's current transaction context.|  
 |Failover Partner|N/A|The name of the failover partner server where database mirroring is configured.<br /><br /> If the value of this key is "", then **Initial Catalog** must be present, and its value must not be "".<br /><br /> The server name can be 128 characters or less.<br /><br /> If you specify a failover partner but the failover partner server is not configured for database mirroring and the primary server (specified with the Server keyword) is not available, then the connection will fail.<br /><br /> If you specify a failover partner and the primary server is not configured for database mirroring, the connection to the primary server (specified with the Server keyword) will succeed if the primary server is available.|  
 |Initial Catalog<br /><br /> -or-<br /><br /> Database|N/A|The name of the database.<br /><br /> The database name can be 128 characters or less.|  
@@ -1315,9 +1315,9 @@ End Module
         <related type="Article" href="~/docs/framework/data/adonet/sql-server-connection-pooling.md">SQL Server Connection Pooling (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/connecting-to-a-data-source.md">Connecting to a Data Source in ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Managed Providers and DataSet Developer Center</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Connection Strings in ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Connection Strings in ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -1383,9 +1383,9 @@ End Module
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value set is less than 0.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Connection Strings in ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Connection Strings in ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -1608,8 +1608,8 @@ End Module
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Commands and Parameters</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -1676,7 +1676,7 @@ End Module
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -1781,7 +1781,7 @@ End Module
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -1817,7 +1817,7 @@ End Module
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b">Transactions (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -1865,8 +1865,8 @@ End Module
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/5a29de74-acfc-4134-8616-829dd7ce0710">Connection Events</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5a29de74-acfc-4134-8616-829dd7ce0710">Connection Events</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -2293,7 +2293,7 @@ class Program {
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/5a29de74-acfc-4134-8616-829dd7ce0710">Working with Connection Events</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5a29de74-acfc-4134-8616-829dd7ce0710">Working with Connection Events</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -2365,9 +2365,9 @@ class Program {
   
  The <see langword="&lt;system.data.localdb&gt;" /> tag in the app.config file has invalid or unknown elements.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">There are two entries with the same name in the <see langword="&lt;localdbinstances&gt;" /> section.</exception>
-        <related type="Article" href="http://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Connection Strings in ADO.NET</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
-        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Connection Strings in ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -2485,7 +2485,7 @@ class Program {
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source in ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -2554,7 +2554,7 @@ class Program {
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/429c9d09-92ac-46ec-829a-fbff0a9575a2">Provider Statistics for SQL Server (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/429c9d09-92ac-46ec-829a-fbff0a9575a2">Provider Statistics for SQL Server (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -2597,7 +2597,7 @@ class Program {
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/429c9d09-92ac-46ec-829a-fbff0a9575a2">Provider Statistics for SQL Server (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/429c9d09-92ac-46ec-829a-fbff0a9575a2">Provider Statistics for SQL Server (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -2727,7 +2727,7 @@ class Program {
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to a Data Source (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
@@ -2802,7 +2802,7 @@ class Program {
   
  ]]></format>
         </remarks>
-        <related type="Article" href="http://msdn.microsoft.com/library/429c9d09-92ac-46ec-829a-fbff0a9575a2">Provider Statistics for SQL Server (ADO.NET)</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/429c9d09-92ac-46ec-829a-fbff0a9575a2">Provider Statistics for SQL Server (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>

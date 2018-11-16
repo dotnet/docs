@@ -18,7 +18,7 @@ Starting with .NET Core 2.1, .NET includes a number of interrelated types that r
 
 - <xref:System.ReadOnlySpan%601?displayProperty=nameWithtype>, an immutable version of the <xref:System.Span%601> structure.
 
-- <xref:System.Memory%601?displayProperty=nameWithType>, a contiguous region of memory that is allocated on the managed heap rather than the stack. A <xref:System.Memtory%601> instance can be backed by an array of type `T` or a <xref:System.String>. Because it can be stored on the managed heap, <xref:System.Memory%601> has none of the limitations of <xref:System.Span%601>.
+- <xref:System.Memory%601?displayProperty=nameWithType>, a contiguous region of memory that is allocated on the managed heap rather than the stack. A <xref:System.Memory%601> instance can be backed by an array of type `T` or a <xref:System.String>. Because it can be stored on the managed heap, <xref:System.Memory%601> has none of the limitations of <xref:System.Span%601>.
 
 - <xref:System.ReadOnlyMemory%601?displayProperty=nameWithtype>, an immutable version of the <xref:System.Memory%601> structure.
 

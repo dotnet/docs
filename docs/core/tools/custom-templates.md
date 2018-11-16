@@ -123,7 +123,7 @@ dotnet new -u <NUGET_PACKAGE_ID>
 
 ### To uninstall a template from a local nupkg file
 
-When you wish to uninstall the template, don't attempt to use the path to the *nupkg* file. *Attempting to uninstall a template using `dotnet new -u <PATH_TO_NUPKG_FILE>` fails.* Reference the package by its `id`:
+To uninstall the template, don't attempt to use the path to the *nupkg* file. Attempting to uninstall a template using `dotnet new -u <PATH_TO_NUPKG_FILE>` fails. Reference the package by its `id`:
 
 ```console
 dotnet new -u <NUGET_PACKAGE_ID>
@@ -131,7 +131,7 @@ dotnet new -u <NUGET_PACKAGE_ID>
 
 ### To uninstall a template from a file system directory
 
-The `FILE_SYSTEM_DIRECTORY` is the project folder containing the project and the *.template.config* folder:
+The `FILE_SYSTEM_DIRECTORY` is the project folder containing the project and the *.template.config* folder. The path provided needs to be the absolute path. Attempting to uninstall a template using a relative path fails. For more information, see the [dotnet new](dotnet-new.md) article.
 
 ```console
 dotnet new -u <FILE_SYSTEM_DIRECTORY>
@@ -147,8 +147,8 @@ dotnet new <TEMPLATE>
 
 ## See also
 
-* [Create a custom template for dotnet new (tutorial)](../tutorials/create-custom-template.md)  
-* [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)  
-* [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)  
-* [How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/)  
-* [*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template)  
+* [Create a custom template for dotnet new (tutorial)](../tutorials/create-custom-template.md)
+* [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)
+* [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)
+* [How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/)
+* [*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template)

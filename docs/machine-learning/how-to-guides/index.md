@@ -8,13 +8,13 @@ ms.date: 11/16/2018
 In the How to section of the ML.NET Guide, you can find quick answers
 to common questions. In some cases, articles may be listed in multiple sections to make them easy to find.
 
-## ML.NET
-
 * [Apply feature engineering for model training on categorical data](train-model-categorical-ml-net.md)
 
 * [Apply feature engineering for model training on textual data with ML.NET](train-model-textual-ml-net.md)
 
 * [Calculate metrics to evaluate model quality](verify-model-quality-ml-net.md)
+
+* [Create a game match up list app with Infer.NET and probabilistic programming](matchup-app-infer-net.md)
 
 * [Inspect intermediate data values during ML.NET pipeline processing](inspect-intermediate-data-ml-net.md)
 
@@ -24,7 +24,7 @@ to common questions. In some cases, articles may be listed in multiple sections 
 
 * [Load data from a text file for machine learning processing](load-data-from-text-file-ml-net.md)
 
-* [Operationalize a trained machine learning model in apps](onsuming-model-ml-net.md)
+* [Operationalize a trained machine learning model in apps](consuming-model-ml-net.md)
 
 * [Train a machine learning model with data that's not in a text file](load-non-file-training-data-ml-net.md)
 
@@ -36,8 +36,4 @@ to common questions. In some cases, articles may be listed in multiple sections 
 
 * [Use the PredictionFunction to make one prediction at a time](single-predict-model-ml-net.md)
 
-## Infer.NET
 
-Learn about probabilistic programming using Infer.NET.
-
-- [Create a game match up list app with Infer.NET and probabilistic programming](matchup-app-infer-net.md)

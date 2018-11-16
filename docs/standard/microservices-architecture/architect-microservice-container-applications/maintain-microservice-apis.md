@@ -7,7 +7,7 @@ ms.date: 09/20/2018
 ---
 # Creating, evolving, and versioning microservice APIs and contracts
 
-A microservice API is a contract between the service and its clients. You will be able to evolve a microservice independently only if you do not break its API contract, which is why the contract is so important. If you change the contract, it will impact your client applications or your API Gateway.
+A microservice API is a contract between the service and its clients. You'll be able to evolve a microservice independently only if you do not break its API contract, which is why the contract is so important. If you change the contract, it will impact your client applications or your API Gateway.
 
 The nature of the API definition depends on which protocol you're using. For instance, if you're using messaging (like [AMQP](https://www.amqp.org/)), the API consists of the message types. If you're using HTTP and RESTful services, the API consists of the URLs and the request and response JSON formats.
 
@@ -21,13 +21,13 @@ Finally, if you're using a REST architecture, [Hypermedia](https://www.infoq.com
 
 ## Additional resources
 
-- **Scott Hanselman. ASP.NET Core RESTful Web API versioning made easy** <br/>
+- **Scott Hanselman. ASP.NET Core RESTful Web API versioning made easy** \
   [*https://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx*](https://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx)
 
-- **Versioning a RESTful web API** <br/>
+- **Versioning a RESTful web API** \
   [*https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api*](https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)
 
-- **Roy Fielding. Versioning, Hypermedia, and REST** <br/>
+- **Roy Fielding. Versioning, Hypermedia, and REST** \
   [*https://www.infoq.com/articles/roy-fielding-on-versioning*](https://www.infoq.com/articles/roy-fielding-on-versioning)
 
 >[!div class="step-by-step"]

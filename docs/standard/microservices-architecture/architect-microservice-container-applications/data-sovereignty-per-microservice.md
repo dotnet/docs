@@ -13,7 +13,7 @@ This means that the conceptual model of the domain will differ between subsystem
 
 This principle is similar in [Domain-driven design (DDD)](https://en.wikipedia.org/wiki/Domain-driven_design), where each [Bounded Context](https://martinfowler.com/bliki/BoundedContext.html) or autonomous subsystem or service must own its domain model (data plus logic and behavior). Each DDD Bounded Context correlates to one business microservice (one or several services). This point about the Bounded Context pattern is expanded in the next section.
 
-On the other hand, the traditional (monolithic data) approach used in many applications is to have a single centralized database or just a few databases. This is often a normalized SQL database that is used for the whole application and all its internal subsystems, as shown in Figure 4-7.
+On the other hand, the traditional (monolithic data) approach used in many applications is to have a single centralized database or just a few databases. This is often a normalized SQL database that's used for the whole application and all its internal subsystems, as shown in Figure 4-7.
 
 ![In the traditional approach, there's a single database shared across all services, typically in a tiered architecture. In the microservices approach, each microservice owns its model/data](./media/image7.png)
 
@@ -33,7 +33,7 @@ A partitioned, polyglot-persistent architecture for data storage has many benefi
 
 The concept of microservice derives from the [Bounded Context (BC) pattern](http://martinfowler.com/bliki/BoundedContext.html) in [domain-driven design (DDD)](https://en.wikipedia.org/wiki/Domain-driven_design). DDD deals with large models by dividing them into multiple BCs and being explicit about their boundaries. Each BC must have its own model and database; likewise, each microservice owns its related data. In addition, each BC usually has its own [ubiquitous language](http://martinfowler.com/bliki/UbiquitousLanguage.html) to help communication between software developers and domain experts.
 
-Those terms (mainly domain entities) in the ubiquitous language can have different names in different Bounded Contexts, even when different domain entities share the same identity (that is, the unique ID that is used to read the entity from storage). For instance, in a user-profile Bounded Context, the User domain entity might share identity with the Buyer domain entity in the ordering Bounded Context.
+Those terms (mainly domain entities) in the ubiquitous language can have different names in different Bounded Contexts, even when different domain entities share the same identity (that is, the unique ID that's used to read the entity from storage). For instance, in a user-profile Bounded Context, the User domain entity might share identity with the Buyer domain entity in the ordering Bounded Context.
 
 A microservice is therefore like a Bounded Context, but it also specifies that it's a distributed service. It's built as a separate process for each Bounded Context, and it must use the distributed protocols noted earlier, like HTTP/HTTPS, WebSockets, or [AMQP](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol). The Bounded Context pattern, however, doesn't specify whether the Bounded Context is a distributed service or if it's simply a logical boundary (such as a generic subsystem) within a monolithic-deployment application.
 
@@ -43,16 +43,16 @@ DDD benefits from microservices by getting real boundaries in the form of distri
 
 ### Additional resources
 
-- **Chris Richardson. Pattern: Database per service** <br/>
+- **Chris Richardson. Pattern: Database per service** \
   [*https://microservices.io/patterns/data/database-per-service.html*](https://microservices.io/patterns/data/database-per-service.html)
 
-- **Martin Fowler. BoundedContext** <br/>
+- **Martin Fowler. BoundedContext** \
   [*https://martinfowler.com/bliki/BoundedContext.html*](https://martinfowler.com/bliki/BoundedContext.html)
 
-- **Martin Fowler. PolyglotPersistence** <br/>
+- **Martin Fowler. PolyglotPersistence** \
   [*https://martinfowler.com/bliki/PolyglotPersistence.html*](https://martinfowler.com/bliki/PolyglotPersistence.html)
 
-- **Alberto Brandolini. Strategic Domain Driven Design with Context Mapping** <br/>
+- **Alberto Brandolini. Strategic Domain Driven Design with Context Mapping** \
   [*https://www.infoq.com/articles/ddd-contextmapping*](https://www.infoq.com/articles/ddd-contextmapping)
 
 >[!div class="step-by-step"]

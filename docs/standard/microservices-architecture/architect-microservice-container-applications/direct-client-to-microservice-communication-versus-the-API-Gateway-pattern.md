@@ -41,7 +41,7 @@ Protocols used on the server side (like AMQP or binary protocols) are usually no
 
 - *How can you shape a facade especially made for mobile apps?*
 
-The API of multiple microservices might not be well designed for the needs of different client applications. For instance, the needs of a mobile app might be different than the needs of a web app. For mobile apps, you might need to optimize even further so that data responses can be more efficient. You might do this by aggregating data from multiple microservices and returning a single set of data, and sometimes eliminating any data in the response that is not needed by the mobile app. And, of course, you might compress that data. Again, a facade or API in between the mobile app and the microservices can be convenient for this scenario.
+The API of multiple microservices might not be well designed for the needs of different client applications. For instance, the needs of a mobile app might be different than the needs of a web app. For mobile apps, you might need to optimize even further so that data responses can be more efficient. You might do this by aggregating data from multiple microservices and returning a single set of data, and sometimes eliminating any data in the response that isn't needed by the mobile app. And, of course, you might compress that data. Again, a facade or API in between the mobile app and the microservices can be convenient for this scenario.
 
 ## Why consider API Gateways instead of direct client-to-microservice communication
 
@@ -71,7 +71,7 @@ Figure 4-13 shows how a custom API Gateway can fit into a simplified microservic
 
 In this example, the API Gateway would be implemented as a custom ASP.NET Core WebHost service running as a container.
 
-It's important to highlight that in that diagram, you would be using a single custom API Gateway service facing multiple and different client apps. That fact can be an important risk because your API Gateway service will be growing and evolving based on many different requirements from the client apps. Eventually, it will be bloated because of those different needs and effectively it could be pretty similar to a monolithic application or monolithic service. That is why it's very much recommended to split the API Gateway in multiple services or multiple smaller API Gateways, one per client app form-factor type, for instance.
+It's important to highlight that in that diagram, you would be using a single custom API Gateway service facing multiple and different client apps. That fact can be an important risk because your API Gateway service will be growing and evolving based on many different requirements from the client apps. Eventually, it will be bloated because of those different needs and effectively it could be pretty similar to a monolithic application or monolithic service. That's why it's very much recommended to split the API Gateway in multiple services or multiple smaller API Gateways, one per client app form-factor type, for instance.
 
 You need to be careful when implementing the API Gateway pattern. Usually it isn't a good idea to have a single API Gateway aggregating all the internal microservices of your application. If it does, it acts as a monolithic aggregator or orchestrator and violates microservice autonomy by coupling all the microservices.
 
@@ -156,7 +156,7 @@ After the initial architecture and patterns explanation sections, the next secti
 
 - Using a microservices API Gateway creates an additional possible single point of failure.
 
-- An API Gateway can introduce increased response time due to the additional network call. However, this extra call usually has less impact than having a client interface that is too chatty directly calling the internal microservices.
+- An API Gateway can introduce increased response time due to the additional network call. However, this extra call usually has less impact than having a client interface that's too chatty directly calling the internal microservices.
 
 - If not scaled out properly, the API Gateway can become a bottleneck.
 
@@ -166,25 +166,25 @@ After the initial architecture and patterns explanation sections, the next secti
 
 ## Additional resources
 
-- **Charles Richardson. Pattern: API Gateway / Backend for Front-End** <br/>
+- **Charles Richardson. Pattern: API Gateway / Backend for Front-End** \
   [*https://microservices.io/patterns/apigateway.html*](https://microservices.io/patterns/apigateway.html)
 
-- **API Gateway pattern** <br/>
+- **API Gateway pattern** \
   [*https://docs.microsoft.com/azure/architecture/microservices/gateway*](https://docs.microsoft.com/azure/architecture/microservices/gateway)
 
-- **Aggregation and composition pattern** <br/>
+- **Aggregation and composition pattern** \
   [*https://microservices.io/patterns/data/api-composition.html*](https://microservices.io/patterns/data/api-composition.html)
 
-- **Azure API Management** <br/>
+- **Azure API Management** \
   [*https://azure.microsoft.com/services/api-management/*](https://azure.microsoft.com/services/api-management/)
 
-- **Udi Dahan. Service Oriented Composition** <br/>
+- **Udi Dahan. Service Oriented Composition** \
   [*http://udidahan.com/2014/07/30/service-oriented-composition-with-video/*](http://udidahan.com/2014/07/30/service-oriented-composition-with-video/)
 
-- **Clemens Vasters. Messaging and Microservices at GOTO 2016 (video)** <br/>
+- **Clemens Vasters. Messaging and Microservices at GOTO 2016 (video)** \
   [*https://www.youtube.com/watch?v=rXi5CLjIQ9k*](https://www.youtube.com/watch?v=rXi5CLjIQ9k)
 
-- **API Gateway in a Nutshell** (ASP.net Core API Gateway Tutorial Series) <br/>
+- **API Gateway in a Nutshell** (ASP.net Core API Gateway Tutorial Series) \
   [*https://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html*](https://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html)
 
 >[!div class="step-by-step"]

@@ -71,12 +71,12 @@ Available in C# 6.0 and later, [*interpolated strings*](../../language-reference
 
 Use string interpolation to improve the readability and maintainability of C# code. String interpolation achieves the same results as the `String.Format` method, but improves ease of use and inline clarity.
 
-[!code-csharp[csProgGuideStringsCompare](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_13.cs)]
+[!code-csharp[csProgGuideFormatStrings](~/samples/snippets/csharp/programming-guide/strings/Strings_1.cs#StringInterpolation)]
 
 ### Composite Formatting
 The <xref:System.String.Format%2A?displayProperty=nameWithType> utilizes placeholders in braces to create a format string. This example results in similar output to the string interpolation example seen above.
   
-[!code-csharp[csProgGuideStringsCompare](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_13.cs)]
+[!code-csharp[csProgGuideFormatStrings](~/samples/snippets/csharp/programming-guide/strings/Strings_1.cs#StringFormat)]
 
 For more information on formatting C# code see [Formatting Types in .NET](../../../standard/base-types/formatting-types.md).
   

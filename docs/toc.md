@@ -1193,6 +1193,8 @@
 ### [Train model using cross-validation](machine-learning/how-to-guides/train-cross-validation-ml-net.md)
 ### [Train regression model](machine-learning/how-to-guides/train-regression-model-ml-net.md)
 ### [Use metrics to evaluate model quality](machine-learning/how-to-guides/verify-model-quality-ml-net.md)
+## Reference
+### [API Reference](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet)
 ## [Resources](machine-learning/resources/index.md)
 ### [Machine learning glossary](machine-learning/resources/glossary.md)
 ### [Machine learning tasks](machine-learning/resources/tasks.md)

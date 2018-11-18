@@ -69,7 +69,7 @@ A string is an object of type <xref:System.String> whose value is text. Internal
 ### String Interpolation
 Available in C# 6.0 and later, [*interpolated strings*](../../language-reference/tokens/interpolated.md) are identified by the `$` special character and include interpolated expressions in braces. If you are new to string interpolation, see the [String interpolation - C# interactive tutorial](../../tutorials/intro-to-csharp/interpolated-strings.yml) for a quick overview.
 
-Use string interpolation to improve the readability and maintainability of C# code. String interpolation achieves the same results as the `String.Format` method, but improves ease of use and inline clarity.
+Use string interpolation to improve the readability and maintainability of your code. String interpolation achieves the same results as the `String.Format` method, but improves ease of use and inline clarity.
 
 [!code-csharp[csProgGuideFormatStrings](~/samples/snippets/csharp/programming-guide/strings/Strings_1.cs#StringInterpolation)]
 
@@ -78,7 +78,7 @@ The <xref:System.String.Format%2A?displayProperty=nameWithType> utilizes placeho
   
 [!code-csharp[csProgGuideFormatStrings](~/samples/snippets/csharp/programming-guide/strings/Strings_1.cs#StringFormat)]
 
-For more information on formatting C# code see [Formatting Types in .NET](../../../standard/base-types/formatting-types.md).
+For more information on formatting .NET types see [Formatting Types in .NET](../../../standard/base-types/formatting-types.md).
   
 ## Substrings  
  A substring is any sequence of characters that is contained in a string. Use the <xref:System.String.Substring%2A> method to create a new string from a part of the original string. You can search for one or more occurrences of a substring by using the <xref:System.String.IndexOf%2A> method. Use the <xref:System.String.Replace%2A> method to replace all occurrences of a specified substring with a new string. Like the <xref:System.String.Substring%2A> method, <xref:System.String.Replace%2A> actually returns a new string and does not modify the original string. For more information, see [How to: search strings](../../how-to/search-strings.md) and [How to: Modify String Contents](../../how-to/modify-string-contents.md).  

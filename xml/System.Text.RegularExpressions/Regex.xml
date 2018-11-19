@@ -5137,8 +5137,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
         <summary>Converts any escaped characters in the input string.</summary>
         <returns>A string of characters with any escaped characters converted to their unescaped form.</returns>
         <remarks>
-          <format type="text/markdown">
-    <![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:System.Text.RegularExpressions.Regex.Unescape%2A> method performs one of the following two transformations:  

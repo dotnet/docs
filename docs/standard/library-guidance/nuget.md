@@ -94,7 +94,10 @@ Symbol files (`*.pdb`) are produced by the .NET compiler alongside assemblies. S
 
 NuGet.org hosts its own [symbols server repository](/nuget/create-packages/symbol-packages-snupkg#nugetorg-symbol-server). Developers can use the symbols published to the NuGet.org symbol server by adding `https://symbols.nuget.org/download/symbols` to their [symbol sources in Visual Studio](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).
 
-An alternative to creating a symbol package is embedding symbol files in the main NuGet package. The main NuGet package will be larger but the embedded symbol files means developers don't need to configure the NuGet.org symbol server. If you are building your NuGet package using an SDK-style project you can embed symbol files by setting the `AllowedOutputExtensionsInPackageBuildOutputFolder` property:
+> [!IMPORTANT]
+> The NuGet.org symbol server only supports the new [portable symbol files](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) (`*.pdb`) created by SDK-style projects.
+
+An alternative to creating a symbol package is embedding symbol files in the main NuGet package. The main NuGet package will be larger but the embedded symbol files means developers don't need to configure the NuGet.org symbol server. If you're building your NuGet package using an SDK-style project then you can embed symbol files by setting the `AllowedOutputExtensionsInPackageBuildOutputFolder` property:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

@@ -72,8 +72,6 @@ The following tutorials enable you to build C# programs using [.NET Core](../../
 
 * [Working with LINQ](working-with-linq.md): demonstrates many of the features of LINQ and the language elements that support it.
 
-* [Microservices hosted in Docker](microservices.md): demonstrates building an ASP.NET Core microservice and hosting it in Docker.
-
 * [String Interpolation](string-interpolation.md): demonstrates how to use string interpolation to create formatted strings in C#.
 
 * [Using Attributes](attributes.md): demonstrates how to create and use attributes in C#.

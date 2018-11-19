@@ -50,7 +50,7 @@ A NuGet package supports many [metadata properties](/nuget/reference/nuspec). Th
 | `PackageTags`                      | `tags`                     | A space-delimited list of tags and keywords that describe the package. Tags are used when searching for packages.             |
 | `PackageIconUrl`                   | `iconUrl`                  | A URL for an image to use as the icon for the package. URL should be HTTPS and the image should be 64x64 and have a transparent background.             |
 | `PackageProjectUrl`                | `projectUrl`               | A URL for the project homepage or source repository.             |
-| `PackageLicenseExpression`         | `license`                  | The project license's [SPDX identifier](https://spdx.org/licenses/). Only OSI and FSF approved licenses can use an expression. Other licenses should use `PackageLicenseFile`. Read more about [license metadata](/nuget/reference/nuspec#license). |
+| `PackageLicenseExpression`         | `license`                  | The project license's [SPDX identifier](https://spdx.org/licenses/). Only OSI and FSF approved licenses can use an identifier. Other licenses should use `PackageLicenseFile`. Read more about [`license` metadata](/nuget/reference/nuspec#license). |
 
 > [!IMPORTANT]
 > A project without a license defaults to [exclusive copyright](https://choosealicense.com/no-permission/), making it legally impossible for other people to use.

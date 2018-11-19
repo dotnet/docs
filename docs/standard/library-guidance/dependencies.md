@@ -86,9 +86,11 @@ Shared source packages have some limitations. They can only be referenced by `Pa
 
 > Shared source types are compiled into the referencing assembly and can't be exchanged across assembly boundaries. For example, a shared-source `IRepository` type in one project is a separate type from the same shared-source `IRepository` in another project. Types in shared source packages should have an `internal` visibility.
 
-**❌ DO NOT** publish shared source packages to nuget.org.
+**❌ DO NOT** publish shared source packages to NuGet.org.
 
 > Shared source packages contain source code and can only be used by projects with the same language type. For example, a C# shared source package cannot be used by an F# application.
+>
+> Publish shared source packages to a [local feed or MyGet](./publish-nuget-package.md) to consume them internally within your project.
 
 >[!div class="step-by-step"]
 [Previous](./nuget.md)

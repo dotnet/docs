@@ -10,7 +10,7 @@ This sample shows how to ping a remote host.
   
 ## Example  
   
-```  
+```csharp
 using System;  
 using System.Text;  
 using System.Net;  

@@ -4,7 +4,6 @@ description: Getting started with the .NET family of technologies.
 author: mairaw
 ms.author: mairaw
 ms.date: 09/07/2018
-ms.topic: article
 ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET

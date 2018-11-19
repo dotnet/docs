@@ -2,7 +2,6 @@
 title: Machine learning glossary
 description: A glossary of machine learning terms.
 ms.date: 05/31/2018
-ms.topic: conceptual
 ---
 # Machine learning glossary
 

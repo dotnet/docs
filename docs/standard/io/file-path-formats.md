@@ -203,7 +203,7 @@ Directory.Create("TeStDiReCtOrY");
 ```
 creates a directory named TeStDiReCtOrY. If you rename a directory or file to change its case, the directory or file name reflects the case of the string used when you rename it. For example, the following code renames a file named test.txt to Test.txt:
 
-[!code-csharp[case-and-renaming](~/samples/snippets/standard/io/file-names/cs/renaming.cs)]
-[!code-vb[case-and-renaming](~/samples/snippets/standard/io/file-names/vb/renaming.vb)]
+[!code-csharp[case-and-renaming](~/samples/snippets/standard/io/file-names/cs/rename.cs)]
+[!code-vb[case-and-renaming](~/samples/snippets/standard/io/file-names/vb/rename.vb)]
 
 However, directory and file name comparisons are case-insensitive. If you search for a file named "test.txt", .NET file system APIs ignore case in the comparison. Test.txt, TEST.TXT, test.TXT, and any other combination of upper- and lowercase letters will match "test.txt".

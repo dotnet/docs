@@ -506,6 +506,18 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       </AssemblyInfo>
       <Docs>
         <summary>Raises a <see cref="T:System.Threading.ThreadAbortException" /> in the thread on which it is invoked, to begin the process of terminating the thread. Calling this method usually terminates the thread.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+> The `Thread.Abort` method should be used with caution. Particularly when you call it to abort a thread other than the current thread, you do not know what code has executed or failed to execute when the <xref:System.Threading.ThreadAbortException> is thrown, nor can you be certain of the state of your application or any application and user state that it is responsible for preserving. For example, calling `Thread.Abort` may prevent static constructors from executing or prevent the release of unmanaged resources. 
+>
+> Note that the `Thread.Abort` method is not supported on .NET Core.
+
+       ]]></format>
+        </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName="Abort">

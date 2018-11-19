@@ -165,7 +165,9 @@ Users can install and run multiple versions of the .NET Framework on their compu
     ```PowerShell
     # PowerShell 5
     Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\' | Get-ItemPropertyValue -Name Release | Foreach-Object { $_ -ge 394802 } 
+    ```
 
+    ```PowerShell
     # PowerShell 4
     (Get-ItemProperty "HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full").Release -gt 394802
     ```

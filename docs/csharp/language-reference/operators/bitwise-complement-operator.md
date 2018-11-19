@@ -12,7 +12,7 @@ ms.assetid: 11bc078a-50e2-4d7e-9896-67ef669dc602
 ---
 # ~ Operator (C# Reference)
 
-The bitwise complement operator `~` is a unary operator that produces a bitwise complement of its operand, that is, reverses each bit in the operand's binary representation. All integer types support the `~` operator.
+The bitwise complement operator `~` is a unary operator that produces a bitwise complement of its operand by reversing each bit. All integer types support the `~` operator.
 
 > [!NOTE]
 > The `~` symbol is also used to declare finalizers. For more information, see [Finalizers](../../programming-guide/classes-and-structs/destructors.md).

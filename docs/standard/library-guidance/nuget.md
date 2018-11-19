@@ -112,7 +112,7 @@ An alternative to creating a symbol package is embedding symbol files in the mai
 
 > Embedding symbol files in the main NuGet package gives developers a better debugging experience by default. They don't need to find and configure the NuGet symbol server in their IDE to get symbol files.
 >
-> The downside to embedded symbol files is they increase the package size by about 30% for .NET libraries compiled using SDK-style projects. If package size is a concern then you should publish symbols in a symbol package instead.
+> The downside to embedded symbol files is they increase the package size by about 30% for .NET libraries compiled using SDK-style projects. If package size is a concern, you should publish symbols in a symbol package instead.
 
 >[!div class="step-by-step"]
 [Previous](./strong-naming.md)

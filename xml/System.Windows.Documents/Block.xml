@@ -839,7 +839,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is \<*object* <xref:System.Windows.Documents.Block.LineStackingStrategy%2A?displayProperty=nameWithType>="*value*".../>, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Documents.Block> derived class, and *value* is a string value of the <xref:System.Windows.LineStackingStrategy> enumeration. In code, the attached property usage is supported by the <xref:System.Windows.Documents.Block.GetLineStackingStrategy%2A> and <xref:System.Windows.Documents.Block.SetLineStackingStrategy%2A> methods. The attached property usage is not common.  
+ This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<object Block.LineStackingStrategy="value".../>`, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Documents.Block> derived class, and *value* is a string value of the <xref:System.Windows.LineStackingStrategy> enumeration. In code, the attached property usage is supported by the <xref:System.Windows.Documents.Block.GetLineStackingStrategy%2A> and <xref:System.Windows.Documents.Block.SetLineStackingStrategy%2A> methods. The attached property usage is not common.  
   
 <a name="dependencyPropertyInfo_LineStackingStrategy"></a>   
 ## Dependency Property Information  

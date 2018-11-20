@@ -477,7 +477,8 @@
       <Parameters />
       <Docs>
         <summary>Raises the LiveRegionChanged UI automation event.</summary>
-        <returns><see langword="true" /> if the operation succeeds; otherwise, <see langword="false" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if the operation succeeds; otherwise, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -1562,8 +1562,8 @@
         <Parameter Name="visualRemoved" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="visualAdded">The <see cref="T:System.Windows.Media.Visual"/> that was added to the collection.</param>
-        <param name="visualRemoved">The <see cref="T:System.Windows.Media.Visual"/> that was removed from the collection.</param>
+        <param name="visualAdded">The <see cref="T:System.Windows.Media.Visual" /> that was added to the collection.</param>
+        <param name="visualRemoved">The <see cref="T:System.Windows.Media.Visual" /> that was removed from the collection.</param>
         <summary>Called when the <see cref="T:System.Windows.Media.VisualCollection" /> of this <see cref="T:System.Windows.Window" /> object is modified.</summary>
         <remarks>To be added.</remarks>
       </Docs>

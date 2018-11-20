@@ -1477,7 +1477,8 @@
         <param name="notificationProcessing">An indicator of how to process notifications.</param>
         <param name="notificationText">The text of the notification.</param>
         <summary>Raises the UI automation notification event.</summary>
-        <returns><see langword="true" /> if the operation succeeds; <see langword="false" /> if the underlying Windows infrastucture is not available or the operation failed. Call <see cref="M:System.Runtime.InteropServices.Marshal.GetLastWin32Error" /> for details. </returns>
+        <returns>
+          <see langword="true" /> if the operation succeeds; <see langword="false" /> if the underlying Windows infrastucture is not available or the operation failed. Call <see cref="M:System.Runtime.InteropServices.Marshal.GetLastWin32Error" /> for details. </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1507,7 +1508,8 @@ This event is available starting with Windows 10, version 1709.
       <Parameters />
       <Docs>
         <summary>Raises the LiveRegionChanged UI automation event.</summary>
-        <returns><see langword="true" /> if the operation succeeds; <see langword="False" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if the operation succeeds; <see langword="False" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

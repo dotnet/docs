@@ -153,7 +153,8 @@
       <Parameters />
       <Docs>
         <summary>Supplies the method called by the <see cref="M:System.Windows.Automation.Peers.AutomationPeer.HasKeyboardFocus" /> method to indicate whether the element associated with this automation peer currently has keyboard focus.</summary>
-        <returns><see langword="true" /> if the element has keyboard focus; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the element has keyboard focus; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,7 +176,8 @@
       <Parameters />
       <Docs>
         <summary>Supplies the method called by the <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsKeyboardFocusable" /> method to indicate whether the element can accept keyboard focus.</summary>
-        <returns><see langword="true" /> if the element can accept keyboard focus; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the element can accept keyboard focus; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

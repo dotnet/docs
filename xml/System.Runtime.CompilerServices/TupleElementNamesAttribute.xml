@@ -28,10 +28,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netstandard-2.0">
+    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netstandard-2.0;netcore-2.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Event | System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.Property | System.AttributeTargets.ReturnValue | System.AttributeTargets.Struct)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-4.8">
+    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-4.8;netcore-2.2">
       <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netcore-1.0">

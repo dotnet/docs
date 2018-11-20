@@ -333,13 +333,13 @@
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public override void Write (string name, object value);" FrameworkAlternate="netcore-1.0;netcore-1.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string name, object value) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)" FrameworkAlternate="netcore-2.1;netcore-2.0;netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)" FrameworkAlternate="netcore-2.1;netcore-2.0;netcore-1.0;netcore-1.1;netcore-2.2" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (name As String, value As Object)" FrameworkAlternate="netcore-1.0;netcore-1.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ name, System::Object ^ value);" FrameworkAlternate="netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="C#" Value="public override void Write (string name, object parameters);" FrameworkAlternate="netcore-2.0;netcore-2.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string name, object parameters) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (name As String, parameters As Object)" FrameworkAlternate="netcore-2.0;netcore-2.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ name, System::Object ^ parameters);" FrameworkAlternate="netcore-2.0;netcore-2.1" />
+      <MemberSignature Language="C#" Value="public override void Write (string name, object parameters);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string name, object parameters) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (name As String, parameters As Object)" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ name, System::Object ^ parameters);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
       <MemberSignature Language="F#" Value="override this.Write : string * obj -&gt; unit" Usage="diagnosticListener.Write (name, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -355,7 +355,7 @@
       <Parameters>
         <Parameter Name="name" Type="System.String" Index="0" />
         <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1" />
-        <Parameter Name="parameters" Type="System.Object" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1" />
+        <Parameter Name="parameters" Type="System.Object" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>

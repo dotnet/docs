@@ -7130,11 +7130,11 @@ int[,,] TDArray = new int[1,1,1];
       </Parameters>
       <Docs>
         <param name="keys">The one-dimensional <see cref="T:System.Array" /> that contains the keys to sort.</param>
-        <param name="items">The one-dimensional <see cref="T:System.Array" /> that contains the items that correspond to each of the keys in the <paramref name="keys" /> <see cref="T:System.Array" />.  
+        <param name="items">The one-dimensional <see cref="T:System.Array" /> that contains the items that correspond to each of the keys in the <paramref name="keys" /><see cref="T:System.Array" />.  
   
  -or-  
   
- <see langword="null" /> to sort only the <paramref name="keys" /> <see cref="T:System.Array" />.</param>
+ <see langword="null" /> to sort only the <paramref name="keys" /><see cref="T:System.Array" />.</param>
         <summary>Sorts a pair of one-dimensional <see cref="T:System.Array" /> objects (one contains the keys and the other contains the corresponding items) based on the keys in the first <see cref="T:System.Array" /> using the <see cref="T:System.IComparable" /> implementation of each key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -7173,14 +7173,14 @@ int[,,] TDArray = new int[1,1,1];
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="keys" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.RankException">The <paramref name="keys" /> <see cref="T:System.Array" /> is multidimensional.  
+        <exception cref="T:System.RankException">The <paramref name="keys" /><see cref="T:System.Array" /> is multidimensional.  
   
  -or-  
   
- The <paramref name="items" /> <see cref="T:System.Array" /> is multidimensional.</exception>
+ The <paramref name="items" /><see cref="T:System.Array" /> is multidimensional.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="items" /> is not <see langword="null" />, and the length of <paramref name="keys" /> is greater than the length of <paramref name="items" />.</exception>
-        <exception cref="T:System.InvalidOperationException">One or more elements in the <paramref name="keys" /> <see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable" /> interface.</exception>
+        <exception cref="T:System.InvalidOperationException">One or more elements in the <paramref name="keys" /><see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable" /> interface.</exception>
         <altmember cref="T:System.IComparable" />
         <altmember cref="Overload:System.Array.BinarySearch" />
         <altmember cref="T:System.Collections.IDictionary" />
@@ -7333,11 +7333,11 @@ int[,,] TDArray = new int[1,1,1];
       </Parameters>
       <Docs>
         <param name="keys">The one-dimensional <see cref="T:System.Array" /> that contains the keys to sort.</param>
-        <param name="items">The one-dimensional <see cref="T:System.Array" /> that contains the items that correspond to each of the keys in the <paramref name="keys" /> <see cref="T:System.Array" />.  
+        <param name="items">The one-dimensional <see cref="T:System.Array" /> that contains the items that correspond to each of the keys in the <paramref name="keys" /><see cref="T:System.Array" />.  
   
  -or-  
   
- <see langword="null" /> to sort only the <paramref name="keys" /> <see cref="T:System.Array" />.</param>
+ <see langword="null" /> to sort only the <paramref name="keys" /><see cref="T:System.Array" />.</param>
         <param name="comparer">The <see cref="T:System.Collections.IComparer" /> implementation to use when comparing elements.  
   
  -or-  
@@ -7392,11 +7392,11 @@ int[,,] TDArray = new int[1,1,1];
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="keys" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.RankException">The <paramref name="keys" /> <see cref="T:System.Array" /> is multidimensional.  
+        <exception cref="T:System.RankException">The <paramref name="keys" /><see cref="T:System.Array" /> is multidimensional.  
   
  -or-  
   
- The <paramref name="items" /> <see cref="T:System.Array" /> is multidimensional.</exception>
+ The <paramref name="items" /><see cref="T:System.Array" /> is multidimensional.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="items" /> is not <see langword="null" />, and the length of <paramref name="keys" /> is greater than the length of <paramref name="items" />.  
   
@@ -7404,7 +7404,7 @@ int[,,] TDArray = new int[1,1,1];
   
  The implementation of <paramref name="comparer" /> caused an error during the sort. For example, <paramref name="comparer" /> might not return 0 when comparing an item with itself.</exception>
         <exception cref="T:System.InvalidOperationException">
-          <paramref name="comparer" /> is <see langword="null" />, and one or more elements in the <paramref name="keys" /> <see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable" /> interface.</exception>
+          <paramref name="comparer" /> is <see langword="null" />, and one or more elements in the <paramref name="keys" /><see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable" /> interface.</exception>
         <block subset="none" type="usage">
           <para>The .NET Framework 4 and earlier versions used only the Quicksort algorithm. Quicksort identifies invalid comparers in some situations in which the sorting operation throws an <see cref="T:System.IndexOutOfRangeException" /> exception, and throws an <see cref="T:System.ArgumentException" /> exception to the caller. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], it is possible that sorting operations that previouslythrew <see cref="T:System.ArgumentException" /> will not throw an exception, becausethe insertion sort and heapsort algorithms do not detect an invalid comparer. For the most part, this applies to arrays with fewer than 16 elements.</para>
         </block>
@@ -7550,11 +7550,11 @@ int[,,] TDArray = new int[1,1,1];
       </Parameters>
       <Docs>
         <param name="keys">The one-dimensional <see cref="T:System.Array" /> that contains the keys to sort.</param>
-        <param name="items">The one-dimensional <see cref="T:System.Array" /> that contains the items that correspond to each of the keys in the <paramref name="keys" /> <see cref="T:System.Array" />.  
+        <param name="items">The one-dimensional <see cref="T:System.Array" /> that contains the items that correspond to each of the keys in the <paramref name="keys" /><see cref="T:System.Array" />.  
   
  -or-  
   
- <see langword="null" /> to sort only the <paramref name="keys" /> <see cref="T:System.Array" />.</param>
+ <see langword="null" /> to sort only the <paramref name="keys" /><see cref="T:System.Array" />.</param>
         <param name="index">The starting index of the range to sort.</param>
         <param name="length">The number of elements in the range to sort.</param>
         <summary>Sorts a range of elements in a pair of one-dimensional <see cref="T:System.Array" /> objects (one contains the keys and the other contains the corresponding items) based on the keys in the first <see cref="T:System.Array" /> using the <see cref="T:System.IComparable" /> implementation of each key.</summary>
@@ -7595,11 +7595,11 @@ int[,,] TDArray = new int[1,1,1];
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="keys" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.RankException">The <paramref name="keys" /> <see cref="T:System.Array" /> is multidimensional.  
+        <exception cref="T:System.RankException">The <paramref name="keys" /><see cref="T:System.Array" /> is multidimensional.  
   
  -or-  
   
- The <paramref name="items" /> <see cref="T:System.Array" /> is multidimensional.</exception>
+ The <paramref name="items" /><see cref="T:System.Array" /> is multidimensional.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than the lower bound of <paramref name="keys" />.  
   
@@ -7611,12 +7611,12 @@ int[,,] TDArray = new int[1,1,1];
   
  -or-  
   
- <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="keys" /> <see cref="T:System.Array" />.  
+ <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="keys" /><see cref="T:System.Array" />.  
   
  -or-  
   
- <paramref name="items" /> is not <see langword="null" />, and <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="items" /> <see cref="T:System.Array" />.</exception>
-        <exception cref="T:System.InvalidOperationException">One or more elements in the <paramref name="keys" /> <see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable" /> interface.</exception>
+ <paramref name="items" /> is not <see langword="null" />, and <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="items" /><see cref="T:System.Array" />.</exception>
+        <exception cref="T:System.InvalidOperationException">One or more elements in the <paramref name="keys" /><see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable" /> interface.</exception>
         <altmember cref="T:System.IComparable" />
         <altmember cref="Overload:System.Array.BinarySearch" />
         <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-arrays.md">Performing Culture-Insensitive String Operations in Arrays</related>
@@ -7788,11 +7788,11 @@ int[,,] TDArray = new int[1,1,1];
       </Parameters>
       <Docs>
         <param name="keys">The one-dimensional <see cref="T:System.Array" /> that contains the keys to sort.</param>
-        <param name="items">The one-dimensional <see cref="T:System.Array" /> that contains the items that correspond to each of the keys in the <paramref name="keys" /> <see cref="T:System.Array" />.  
+        <param name="items">The one-dimensional <see cref="T:System.Array" /> that contains the items that correspond to each of the keys in the <paramref name="keys" /><see cref="T:System.Array" />.  
   
  -or-  
   
- <see langword="null" /> to sort only the <paramref name="keys" /> <see cref="T:System.Array" />.</param>
+ <see langword="null" /> to sort only the <paramref name="keys" /><see cref="T:System.Array" />.</param>
         <param name="index">The starting index of the range to sort.</param>
         <param name="length">The number of elements in the range to sort.</param>
         <param name="comparer">The <see cref="T:System.Collections.IComparer" /> implementation to use when comparing elements.  
@@ -7849,11 +7849,11 @@ int[,,] TDArray = new int[1,1,1];
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="keys" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.RankException">The <paramref name="keys" /> <see cref="T:System.Array" /> is multidimensional.  
+        <exception cref="T:System.RankException">The <paramref name="keys" /><see cref="T:System.Array" /> is multidimensional.  
   
  -or-  
   
- The <paramref name="items" /> <see cref="T:System.Array" /> is multidimensional.</exception>
+ The <paramref name="items" /><see cref="T:System.Array" /> is multidimensional.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than the lower bound of <paramref name="keys" />.  
   
@@ -7869,17 +7869,17 @@ int[,,] TDArray = new int[1,1,1];
   
  -or-  
   
- <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="keys" /> <see cref="T:System.Array" />.  
+ <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="keys" /><see cref="T:System.Array" />.  
   
  -or-  
   
- <paramref name="items" /> is not <see langword="null" />, and <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="items" /> <see cref="T:System.Array" />.  
+ <paramref name="items" /> is not <see langword="null" />, and <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="items" /><see cref="T:System.Array" />.  
   
  -or-  
   
  The implementation of <paramref name="comparer" /> caused an error during the sort. For example, <paramref name="comparer" /> might not return 0 when comparing an item with itself.</exception>
         <exception cref="T:System.InvalidOperationException">
-          <paramref name="comparer" /> is <see langword="null" />, and one or more elements in the <paramref name="keys" /> <see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable" /> interface.</exception>
+          <paramref name="comparer" /> is <see langword="null" />, and one or more elements in the <paramref name="keys" /><see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable" /> interface.</exception>
         <block subset="none" type="usage">
           <para>The .NET Framework 4 and earlier versions used only the Quicksort algorithm. Quicksort identifies invalid comparers in some situations in which the sorting operation throws an <see cref="T:System.IndexOutOfRangeException" /> exception, and throws an <see cref="T:System.ArgumentException" /> exception to the caller. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], it is possible that sorting operations that previously threw <see cref="T:System.ArgumentException" /> will not throw an exception, because the insertion sort and heapsort algorithms do not detect an invalid comparer. For the most part, this applies to arrays with fewer than 16 elements.</para>
         </block>
@@ -8496,7 +8496,7 @@ int[,,] TDArray = new int[1,1,1];
  -or-  
   
  <paramref name="items" /> is not <see langword="null" />, and the length of <paramref name="keys" /> is greater than the length of <paramref name="items" />.</exception>
-        <exception cref="T:System.InvalidOperationException">One or more elements in the <paramref name="keys" /> <see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable`1" /> generic interface.</exception>
+        <exception cref="T:System.InvalidOperationException">One or more elements in the <paramref name="keys" /><see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable`1" /> generic interface.</exception>
         <altmember cref="T:System.IComparable`1" />
         <altmember cref="Overload:System.Array.BinarySearch" />
         <altmember cref="T:System.Collections.Generic.IDictionary`2" />
@@ -8615,7 +8615,7 @@ int[,,] TDArray = new int[1,1,1];
   
  The implementation of <paramref name="comparer" /> caused an error during the sort. For example, <paramref name="comparer" /> might not return 0 when comparing an item with itself.</exception>
         <exception cref="T:System.InvalidOperationException">
-          <paramref name="comparer" /> is <see langword="null" />, and one or more elements in the <paramref name="keys" /> <see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable`1" /> generic interface.</exception>
+          <paramref name="comparer" /> is <see langword="null" />, and one or more elements in the <paramref name="keys" /><see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable`1" /> generic interface.</exception>
         <block subset="none" type="usage">
           <para>The .NET Framework 4 and earlier versions used only the Quicksort algorithm. Quicksort identifies invalid comparers in some situations in which the sorting operation throws an <see cref="T:System.IndexOutOfRangeException" /> exception, and throws an <see cref="T:System.ArgumentException" /> exception to the caller. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], it is possible that sorting operations that previously threw <see cref="T:System.ArgumentException" /> will not throw an exception, because the insertion sort and heapsort algorithms do not detect an invalid comparer. For the most part, this applies to arrays with fewer than 16 elements.</para>
         </block>
@@ -8743,12 +8743,12 @@ int[,,] TDArray = new int[1,1,1];
   
  -or-  
   
- <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="keys" /> <see cref="T:System.Array" />.  
+ <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="keys" /><see cref="T:System.Array" />.  
   
  -or-  
   
- <paramref name="items" /> is not <see langword="null" />, and <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="items" /> <see cref="T:System.Array" />.</exception>
-        <exception cref="T:System.InvalidOperationException">One or more elements in the <paramref name="keys" /> <see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable`1" /> generic interface.</exception>
+ <paramref name="items" /> is not <see langword="null" />, and <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="items" /><see cref="T:System.Array" />.</exception>
+        <exception cref="T:System.InvalidOperationException">One or more elements in the <paramref name="keys" /><see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable`1" /> generic interface.</exception>
         <altmember cref="T:System.IComparable`1" />
         <altmember cref="Overload:System.Array.BinarySearch" />
         <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-arrays.md">Performing Culture-Insensitive String Operations in Arrays</related>
@@ -8877,17 +8877,17 @@ int[,,] TDArray = new int[1,1,1];
   
  -or-  
   
- <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="keys" /> <see cref="T:System.Array" />.  
+ <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="keys" /><see cref="T:System.Array" />.  
   
  -or-  
   
- <paramref name="items" /> is not <see langword="null" />, and <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="items" /> <see cref="T:System.Array" />.  
+ <paramref name="items" /> is not <see langword="null" />, and <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="items" /><see cref="T:System.Array" />.  
   
  -or-  
   
  The implementation of <paramref name="comparer" /> caused an error during the sort. For example, <paramref name="comparer" /> might not return 0 when comparing an item with itself.</exception>
         <exception cref="T:System.InvalidOperationException">
-          <paramref name="comparer" /> is <see langword="null" />, and one or more elements in the <paramref name="keys" /> <see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable`1" /> generic interface.</exception>
+          <paramref name="comparer" /> is <see langword="null" />, and one or more elements in the <paramref name="keys" /><see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable`1" /> generic interface.</exception>
         <block subset="none" type="usage">
           <para>The .NET Framework 4 and earlier versions used only the Quicksort algorithm. Quicksort identifies invalid comparers in some situations in which the sorting operation throws an <see cref="T:System.IndexOutOfRangeException" /> exception, and throws an <see cref="T:System.ArgumentException" /> exception to the caller. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], it is possible that sorting operations that previously threw <see cref="T:System.ArgumentException" /> will not throw an exception, because the insertion sort and heapsort algorithms do not detect an invalid comparer. For the most part, this applies to arrays with fewer than 16 elements.</para>
         </block>

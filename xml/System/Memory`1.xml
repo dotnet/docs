@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.1">
+    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -41,7 +41,7 @@ Like <xref:System.Span%601>, `Memory<T>` represents a contiguous region of memor
 In addition to `Memory<T>`, you can use <xref:System.ReadOnlyMemory%601?displayProperty=nameWithType> to represent immutable or read-only memory.
 
     ]]></format>
-     </remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,7 +65,7 @@ In addition to `Memory<T>`, you can use <xref:System.ReadOnlyMemory%601?displayP
       <Docs>
         <param name="array">The array from which to create the <see cref="T:System.Memory`1" /> object.</param>
         <summary>Creates a new <see cref="T:System.Memory`1" /> object over the entirety of a specified array.</summary>
-       <remarks>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 If `array` is `null`, this constructor returns a <xref:System.Memory%601> object with a `default<T>` value.
@@ -77,8 +77,7 @@ If `array` is `null`, this constructor returns a <xref:System.Memory%601> object
         
 -or-
 
-The array is <see href="~/docs/csharp/programming-guide/concepts/covariance-contravariance/index.md" >covariant.</see>
-          </exception>
+The array is <see href="~/docs/csharp/programming-guide/concepts/covariance-contravariance/index.md">covariant.</see></exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -106,7 +105,7 @@ The array is <see href="~/docs/csharp/programming-guide/concepts/covariance-cont
         <param name="start">The index of the first element to include in the new <see cref="T:System.Memory`1" />.</param>
         <param name="length">The number of elements to include in the new <see cref="T:System.Memory`1" />.</param>
         <summary>Creates a new <see cref="T:System.Memory`1" /> object that includes a specified number of elements of an array beginning at a specified index. </summary>
-       <remarks>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 If `array` is `null`, this constructor returns a  <xref:System.Memory%601> object with a `default<T>` value.
@@ -153,7 +152,7 @@ This method copies all of the contents of the current <xref:System.Memory%601> i
 
          ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">The length of <paramref name="destination" /> is less than the length of the current instance.</exception>        
+        <exception cref="T:System.ArgumentException">The length of <paramref name="destination" /> is less than the length of the current instance.</exception>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -204,7 +203,8 @@ This method copies all of the contents of the current <xref:System.Memory%601> i
       <Docs>
         <param name="other">The object to compare with the current instance.</param>
         <summary>Determines whether the specified <see cref="T:System.Memory`1" /> object is equal to the current object.</summary>
-        <returns><see langword="true" /> if the current instance and <paramref name="other" /> are equal; otherwise, <see langword="false" />. </returns>
+        <returns>
+          <see langword="true" /> if the current instance and <paramref name="other" /> are equal; otherwise, <see langword="false" />. </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
 
@@ -236,7 +236,7 @@ The `Equals(Memory<T>)` method performs a test for reference equality; it does n
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.1">
+        <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -249,7 +249,8 @@ The `Equals(Memory<T>)` method performs a test for reference equality; it does n
       <Docs>
         <param name="obj">The object to compare with the current instance.</param>
         <summary>Determines whether the specified object is equal to the current object.</summary>
-        <returns><see langword="true" /> if the current instance and <paramref name="obj" /> are equal; otherwise, <see langword="false" />. </returns>
+        <returns>
+          <see langword="true" /> if the current instance and <paramref name="obj" /> are equal; otherwise, <see langword="false" />. </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
 
@@ -275,7 +276,7 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.1">
+        <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -309,7 +310,8 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
       </ReturnValue>
       <Docs>
         <summary>Indicates whether the current instance is empty.</summary>
-        <value><see langword="true" /> if the current instance is empty; otherwise, <see langword="false" />. </value>
+        <value>
+          <see langword="true" /> if the current instance is empty; otherwise, <see langword="false" />. </value>
         <remarks>A <see cref="T:System.Memory`1" /> object is empty if its length is 0.</remarks>
       </Docs>
     </Member>
@@ -456,7 +458,7 @@ The garbage collector will not move the memory until the returned <xref:System.B
 
          ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">An instance with non-primitive (non-blittable) members cannot be pinned.</exception>        
+        <exception cref="T:System.ArgumentException">An instance with non-primitive (non-blittable) members cannot be pinned.</exception>
       </Docs>
     </Member>
     <Member MemberName="Slice">
@@ -485,7 +487,8 @@ The garbage collector will not move the memory until the returned <xref:System.B
         <summary>Forms a slice out of the current memory that begins at a specified index.</summary>
         <returns>An object that contains all elements of the current instance from <paramref name="start" /> to the end of the instance. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeExceptionException"><paramref name="start" /> is less than zero or greater than or equal to <see cref="P:System.Memory`1.Length" />. </exception>
+        <exception cref="T:System.ArgumentOutOfRangeExceptionException">
+          <paramref name="start" /> is less than zero or greater than or equal to <see cref="P:System.Memory`1.Length" />. </exception>
       </Docs>
     </Member>
     <Member MemberName="Slice">
@@ -516,12 +519,12 @@ The garbage collector will not move the memory until the returned <xref:System.B
         <summary>Forms a slice out of the current memory starting at a specified index for a specified length.</summary>
         <returns>An object that contains <paramref name="length" /> elements from the current instance starting at <paramref name="start" />. </returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeExceptionException"><paramref name="start" /> is less than zero or greater than or equal to <see cref="P:System.Memory`1.Length" />.
+        <exception cref="T:System.ArgumentOutOfRangeExceptionException">
+          <paramref name="start" /> is less than zero or greater than or equal to <see cref="P:System.Memory`1.Length" />.
 
 -or-
 
-<paramref name="length" /> is greater than <see cref="P:System.Memory`1.Length" /> - <paramref name="start" />        
-        </exception>
+<paramref name="length" /> is greater than <see cref="P:System.Memory`1.Length" /> - <paramref name="start" /></exception>
       </Docs>
     </Member>
     <Member MemberName="Span">
@@ -609,7 +612,7 @@ Each call to the `ToArray` method returns a new array.
 For a `Memory<Char>`, the `ToString` method returns a <xref:System.String> that contains the characters pointed to by the <xref:System.Memory%601>. Otherwise, it returns a <xref:System.String> with the name of the type and the number of elements that the <xref:System.Memory%601> contains.
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryCopyTo">
@@ -636,7 +639,8 @@ For a `Memory<Char>`, the `ToString` method returns a <xref:System.String> that 
       <Docs>
         <param name="destination">To be added.</param>
         <summary>Copies the contents of the memory into a destination <see cref="T:System.Memory`1" /> instance.</summary>
-        <returns><see langword="true" /> if the copy operation succeeds; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the copy operation succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
 

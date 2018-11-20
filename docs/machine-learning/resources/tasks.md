@@ -1,18 +1,15 @@
 ---
 title: Machine learning tasks
 description: Explore the different machine learning tasks supported in ML.NET.
-ms.date: 06/04/2018
-author: aditidugar
+ms.date: 11/20/2018
+author: jralexander
 ---
 # Machine learning tasks
 
-When building a machine learning model, you first need to define what you are hoping to achieve with your data. After, you can pick the right machine learning task for your situation. The following list describes the different machine learning tasks that you can choose from and some common use cases. 
+When building a machine learning model, you first need to define what you are hoping to achieve with your data. After, you can pick the right machine learning task for your situation. The following list describes the different machine learning tasks that you can choose from and some common use cases.
 
 > [!NOTE]
 > ML.NET is currently in Preview. Not all machine learning tasks are currently supported. To submit a request for a certain task, open an issue in the [dotnet/machinelearning repository](https://github.com/dotnet/machinelearning/issues).
-
-> [!NOTE]
-> Currently, ML.NET does not support machine learning tasks with images. Support will be added in future releases. 
 
 ## Binary classification
 
@@ -24,6 +21,24 @@ A [supervised machine learning](glossary.md#supervised-machine-learning) task th
 
 For more information, see the [Binary classification](https://en.wikipedia.org/wiki/Binary_classification) article on Wikipedia.
 
+### Binary Classification Learners
+
+The following learners are available for binary classification tasks:
+
+* [AveragedPerceptronTrainer](xref:Microsoft.ML.Trainers.Online.AveragedPerceptronTrainer)
+* [BinaryClassificationGamTrainer](xref:Microsoft.ML.Trainers.FastTree.BinaryClassificationGamTrainer)
+* [FastForestClassification](xref:Microsoft.ML.Trainers.FastTree.FastForestClassification)
+* [FastTreeBinaryClassificationTrainer](xref
+:Microsoft.ML.Trainers.FastTree.FastTreeBinaryClassificationTrainer)
+* [FieldAwareFactorizationMachineTrainer](xref:Microsoft.ML.Runtime.FactorizationMachine.FieldAwareFactorizationMachineTrainer)
+* [LightGbmBinaryTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmBinaryTrainer)
+* [LinearClassificationTrainer](xref:Microsoft.ML.Trainers.LinearClassificationTrainer)
+* [LinearSvm](xref:Microsoft.ML.Trainers.Online.LinearSvm)
+* [PriorTrainer](xref:Microsoft.ML.Runtime.Learners.PriorTrainer)
+* [RandomTrainer](xref:Microsoft.ML.Runtime.Learners.RandomTrainer)
+* [StochasticGradientDescentClassificationTrainer](xref:Microsoft.ML.Trainers.StochasticGradientDescentClassificationTrainer)
+* [SymSgdClassificationTrainer](xref:Microsoft.ML.Trainers.SymSgd.SymSgdClassificationTrainer)
+
 ## Multiclass classification
 
 A [supervised machine learning](glossary.md#supervised-machine-learning) task that is used to predict the class (category) of an instance of data. The input of a classification algorithm is a set of labeled examples. Each label is an integer between 0 and k-1, where k is the number of classes. The output of a classification algorithm is a classifier, which you can use to predict the class of new unlabeled instances. Examples of multi-class classification scenarios include:
@@ -33,6 +48,18 @@ A [supervised machine learning](glossary.md#supervised-machine-learning) task th
 * Categorizing hotel reviews as "location", "price", "cleanliness", etc.
 
 For more information, see the [Multiclass classification](https://en.wikipedia.org/wiki/Multiclass_classification) article on Wikipedia.
+
+### Multiclass Classification Learners
+
+The following learners are available for multiclass classification tasks:
+
+* [LightGbmMulticlassTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmMulticlassTrainer)
+* [MetaMulticlassTrainer<TTransformer,TModel>](xref:Microsoft.ML.Runtime.Learners.MetaMulticlassTrainer%602)
+* [MultiClassClassificationTrainers](xref:Microsoft.ML.Trainers.MultiClassClassificationTrainers)
+* [MultiClassNaiveBayesTrainer](xref:Microsoft.ML.Trainers.MultiClassNaiveBayesTrainer)
+* [Ova](xref:Microsoft.ML.Runtime.Learners.Ova)
+* [Pkpd](xref:Microsoft.ML.Runtime.Learners.Pkpd)
+* [SdcaMultiClassTrainer](xref:Microsoft.ML.Trainers.SdcaMultiClassTrainer)
 
 ## Regression
 
@@ -45,6 +72,22 @@ A [supervised machine learning](glossary.md#supervised-machine-learning) task th
 > [!NOTE]
 > Currently, ML.NET is still building support for regression tasks that involve time series.
 
+### Regression Learners
+
+The following learners are available for regression tasks:
+
+* [FastTreeRegressionTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer)
+* [FastTreeTweedieTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeTweedieTrainer)
+* [LightGbmRegressorTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmRegressorTrainer)
+* [LogisticRegression](xref:Microsoft.ML.Runtime.Learners.LogisticRegression)
+* [OlsLinearRegressionTrainer](xref:Microsoft.ML.Trainers.HalLearners.OlsLinearRegressionTrainer)
+* [OnlineGradientDescentTrainer](xref:Microsoft.ML.Trainers.Online.OnlineGradientDescentTrainer)
+* [PoissonRegression](xref:Microsoft.ML.Trainers.PoissonRegression)
+* [RegressionGamTrainer](xref:Microsoft.ML.Trainers.FastTree.RegressionGamTrainer)
+* [SdcaRegressionTrainer](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer)
+* [FastTree.SingleTrainer](xref:Microsoft.ML.Trainers.FastTree.SingleTrainer)
+* [LightGBM.SingleTrainer](xref:Microsoft.ML.Runtime.LightGBM.SingleTrainer)
+
 ## Clustering
 
 An [unsupervised machine learning](glossary.md#unsupervised-machine-learning) task that is used to group instances of data into clusters that contain similar characteristics. Clustering can also be used to identify relationships in a dataset that you might not logically derive by browsing or simple observation. The inputs and outputs of a clustering algorithm depends on the methodology chosen. You can take a distribution, centroid, connectivity, or density-based approach. ML.NET currently supports a centroid-based approach using K-Means clustering. Examples of clustering scenarios include:
@@ -53,9 +96,51 @@ An [unsupervised machine learning](glossary.md#unsupervised-machine-learning) ta
 * Identifying customer segments and demographics to help build targeted advertising campaigns.
 * Categorizing inventory based on manufacturing metrics.
 
-## Anomaly detection (*coming soon*)
+### Clustering Learners
 
-## Ranking (*coming soon*)
+The following learners are available for clustering tasks:
 
-## Recommendation (*coming soon*)
+* [KMeansPlusPlusTrainer](xref:Microsoft.ML.Trainers.KMeans.KMeansPlusPlusTrainer)
 
+## Anomaly detection
+
+This task creates an anomaly detection model by using Principal Component Analysis (PCA). PCA-Based Anomaly Detection helps you build a model in scenarios where it is easy to obtain training data from one class, such as valid transactions, but difficult to obtain sufficient samples of the targeted anomalies.
+
+Principal Component Analysis, which is frequently abbreviated to PCA, is an established technique in machine learning. PCA is frequently used in exploratory data analysis because it reveals the inner structure of the data and explains the variance in the data. PCA works by analyzing data that contains multiple variables. It looks for correlations among the variables and determines the combination of values that best captures differences in outcomes. These combined feature values are used to create a more compact feature space called the principal components.
+
+Anomaly detection encompasses many important tasks in machine learning:
+
+* Identifying transactions that are potentially fraudulent.
+* Learning patterns that indicate that a network intrusion has occurred.
+* Finding abnormal clusters of patients.
+* Checking values entered into a system.
+
+Because anomalies are rare events by definition, it can be difficult to collect a representative sample of data to use for modeling. The algorithms included in this category have been especially designed to address the core challenges of building and training models by using imbalanced data sets.
+
+### Anomaly detection learners
+
+The following learners are available for anomaly detection tasks:
+
+* [RandomizedPcaTrainer](xref:Microsoft.ML.Trainers.PCA.RandomizedPcaTrainer)
+
+## Ranking
+
+A ​​​​​​​​​ranking task constructs a ranker from a set of labeled examples. This example set consists of instance groups that can be scored with a given criteria ("perfect", "good", "fair", "bad") for each instance.  The ranker is trained to rank new instance groups with unknown scores for each instance.
+
+### Ranking learners
+
+The following learners are available for ranking tasks:
+
+* [LightGbmRankingTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmRankingTrainer)
+* [FastTreeRankingTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeRankingTrainer)
+
+## Recommendation
+
+A recommendation task enables producing a list of recommended products or services. ML.NET uses Matrix factorization (MF), a common approach to recommendations when you have historical product rating data in your catalog. For example, you have historical movie rating data for your users and want to recommend  other movies they are likely to watch next.
+
+### Recommendation learners
+
+The following learners are available for recommendation tasks:
+
+* [MatrixFactorizationTrainer](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer)
+* [MatrixFactorizationPredictionTransformer](xref:Microsoft.ML.Trainers.Recommender.MatrixFactorizationPredictionTransformer)

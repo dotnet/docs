@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "defaults": [ ":watch: Not Triaged" ],
+    "product": {
+      "(?i).*": "Source - Docs.ms"
+    },
+    "contentsource": {
+      "(?i).*dotnet-api-docs\/blob\/master\/xml\/system\\.net.*": ":card_file_box: Technology - NCL",
+      "(?i).*dotnet-api-docs\/blob\/master\/xml\/system\\.windows\\.forms.*": ":card_file_box: Technology - WinForms",
+      "(?i).*dotnet-api-docs\/blob\/master\/xml\/system\\.security.*": ":card_file_box: Technology - Security"
+    }
+  }
+}

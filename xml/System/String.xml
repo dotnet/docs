@@ -7566,14 +7566,14 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
       </Parameters>
       <Docs>
         <param name="value">The string to test.</param>
-        <summary>Indicates whether the specified string is <see langword="null" /> or an <see cref="F:System.String.Empty" /> string.</summary>
+        <summary>Indicates whether the specified string is <see langword="null" /> or an empty string ("").</summary>
         <returns>
           <see langword="true" /> if the <paramref name="value" /> parameter is <see langword="null" /> or an empty string (""); otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.String.IsNullOrEmpty%2A> is a convenience method that enables you to simultaneously test whether a <xref:System.String> is `null` or its value is <xref:System.String.Empty>. It is equivalent to the following code:  
+ <xref:System.String.IsNullOrEmpty%2A> is a convenience method that enables you to simultaneously test whether a <xref:System.String> is `null` or its value is <xref:System.String.Empty?displayProperty=nameWithType>. It is equivalent to the following code:  
   
  [!code-cpp[System.String.IsNullOrEmpty#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.isnullorempty/cpp/isnullorempty1.cpp#1)]
  [!code-csharp[System.String.IsNullOrEmpty#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.isnullorempty/cs/isnullorempty1.cs#1)]

@@ -140,7 +140,7 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">An object to add to the collection. <c>entity</c> must implement <see cref="T:System.Data.Objects.DataClasses.IEntityWithRelationships" />.</param>
+        <param name="entity">An object to add to the collection. <paramref name="entity" /> must implement <see cref="T:System.Data.Objects.DataClasses.IEntityWithRelationships" />.</param>
         <summary>Adds an object to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

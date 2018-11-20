@@ -202,7 +202,7 @@
         <param name="compileUnit">The <see cref="T:System.CodeDom.CodeCompileUnit" /> to contain the generated code.</param>
         <param name="mainNamespace">The <see cref="T:System.CodeDom.CodeNamespace" /> that contains the generated dataset.</param>
         <param name="codeProvider">The language-specific <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> to use to generate the dataset.</param>
-        <param name="specifiedFactory">The <see cref="T:System.Data.Common.DbProviderFactory" /> to use to override the provider contained in the <c>inputFileContent</c>.</param>
+        <param name="specifiedFactory">The <see cref="T:System.Data.Common.DbProviderFactory" /> to use to override the provider contained in the <paramref name="inputFileContent" />.</param>
         <summary>Generates a strongly typed <see cref="T:System.Data.DataSet" /> based on the provided input file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

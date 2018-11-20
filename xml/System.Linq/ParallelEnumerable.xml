@@ -77,7 +77,7 @@
         <Parameter Name="func" Type="System.Func&lt;TSource,TSource,TSource&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence to aggregate over.</param>
         <param name="func">An accumulator function to be invoked on each element.</param>
         <summary>Applies in parallel an accumulator function over a sequence.</summary>
@@ -132,7 +132,7 @@
         <Parameter Name="func" Type="System.Func&lt;TAccumulate,TSource,TAccumulate&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <typeparam name="TAccumulate">The type of the accumulator value.</typeparam>
         <param name="source">A sequence to aggregate over.</param>
         <param name="seed">The initial accumulator value.</param>
@@ -186,7 +186,7 @@
         <Parameter Name="resultSelector" Type="System.Func&lt;TAccumulate,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <typeparam name="TAccumulate">The type of the accumulator value.</typeparam>
         <typeparam name="TResult">The type of the resulting value.</typeparam>
         <param name="source">A sequence to aggregate over.</param>
@@ -243,7 +243,7 @@
         <Parameter Name="resultSelector" Type="System.Func&lt;TAccumulate,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <typeparam name="TAccumulate">The type of the accumulator value.</typeparam>
         <typeparam name="TResult">The type of the resulting value.</typeparam>
         <param name="source">A sequence to aggregate over.</param>
@@ -308,7 +308,7 @@
         <Parameter Name="resultSelector" Type="System.Func&lt;TAccumulate,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <typeparam name="TAccumulate">The type of the accumulator value.</typeparam>
         <typeparam name="TResult">The type of the resulting value.</typeparam>
         <param name="source">A sequence to aggregate over.</param>
@@ -368,7 +368,7 @@
         <Parameter Name="predicate" Type="System.Func&lt;TSource,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence whose elements to apply the predicate to.</param>
         <param name="predicate">A function to test each element for a condition.</param>
         <summary>Determines in parallel whether all elements of a sequence satisfy a condition.</summary>
@@ -423,7 +423,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to check for emptiness.</param>
         <summary>Determines whether a parallel sequence contains any elements.</summary>
         <returns>true if the source sequence contains any elements; otherwise, false.</returns>
@@ -475,7 +475,7 @@
         <Parameter Name="predicate" Type="System.Func&lt;TSource,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence to whose elements the predicate will be applied.</param>
         <param name="predicate">A function to test each element for a condition.</param>
         <summary>Determines in parallel whether any element of a sequence satisfies a condition.</summary>
@@ -525,7 +525,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to cast as <see cref="T:System.Collections.Generic.IEnumerable`1" />.</param>
         <summary>Converts a <see cref="T:System.Linq.ParallelQuery`1" /> into an <see cref="T:System.Collections.Generic.IEnumerable`1" /> to force sequential evaluation of the query.</summary>
         <returns>The input sequence typed as <see cref="T:System.Collections.Generic.IEnumerable`1" />.</returns>
@@ -617,7 +617,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">The input sequence.</param>
         <summary>Enables treatment of a data source as if it were ordered, overriding the default of unordered. AsOrdered may only be invoked on generic sequences returned by AsParallel, ParallelEnumerable.Range, and ParallelEnumerable.Repeat.</summary>
         <returns>The source sequence which will maintain the original ordering in the subsequent query operators.</returns>
@@ -733,7 +733,7 @@
         <Parameter Name="source" Type="System.Collections.Concurrent.Partitioner&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A partitioner over the input sequence.</param>
         <summary>Enables parallelization of a query, as sourced by a custom partitioner that is responsible for splitting the input sequence into partitions.</summary>
         <returns>The <paramref name="source" /> as a ParallelQuery to bind to ParallelEnumerable extension methods.</returns>
@@ -782,7 +782,7 @@
         <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> to convert to a <see cref="T:System.Linq.ParallelQuery`1" />.</param>
         <summary>Enables parallelization of a query.</summary>
         <returns>The source as a <see cref="T:System.Linq.ParallelQuery`1" /> to bind to ParallelEnumerable extension methods.</returns>
@@ -824,7 +824,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A <see cref="T:System.Linq.ParallelQuery`1" /> to convert to an <see cref="T:System.Collections.Generic.IEnumerable`1" />.</param>
         <summary>Converts a <see cref="T:System.Linq.ParallelQuery`1" /> into an <see cref="T:System.Collections.Generic.IEnumerable`1" /> to force sequential evaluation of the query.</summary>
         <returns>The source as an <see cref="T:System.Collections.Generic.IEnumerable`1" /> to bind to sequential extension methods.</returns>
@@ -873,7 +873,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">The input sequence.</param>
         <summary>Allows an intermediate query to be treated as if no ordering is implied among the elements.</summary>
         <returns>The source sequence with arbitrary order.</returns>
@@ -1353,7 +1353,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values that are used to calculate an average.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the average of a sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -1402,7 +1402,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Double&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values that are used to calculate an average.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the average of a sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -1451,7 +1451,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values that are used to calculate an average.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the average of a sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -1500,7 +1500,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values that are used to calculate an average.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the average of a sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -1549,7 +1549,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Decimal&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values that are used to calculate an average.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the average of a sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -1598,7 +1598,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Double&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values that are used to calculate an average.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the average of a sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -1647,7 +1647,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Int32&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values that are used to calculate an average.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the average of a sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -1696,7 +1696,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Int64&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values that are used to calculate an average.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the average of a sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -1745,7 +1745,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Single&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values that are used to calculate an average.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the average of a sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -1794,7 +1794,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Single&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values that are used to calculate an average.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the average of a sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -1842,7 +1842,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">The type to convert the elements of <c>source</c> to.</typeparam>
+        <typeparam name="TResult">The type to convert the elements of <paramref name="source" /> to.</typeparam>
         <param name="source">The sequence that contains the elements to be converted.</param>
         <summary>Converts the elements of a ParallelQuery to the specified type.</summary>
         <returns>A sequence that contains each element of the source sequence converted to the specified type.</returns>
@@ -2010,7 +2010,7 @@
         <Parameter Name="value" Type="TSource" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence in which to locate a value.</param>
         <param name="value">The value to locate in the sequence.</param>
         <summary>Determines in parallel whether a sequence contains a specified element by using the default equality comparer.</summary>
@@ -2057,7 +2057,7 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TSource&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence in which to locate a value.</param>
         <param name="value">The value to locate in the sequence.</param>
         <param name="comparer">An equality comparer to compare values.</param>
@@ -2113,7 +2113,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence that contains elements to be counted.</param>
         <summary>Returns the number of elements in a parallel sequence.</summary>
         <returns>The number of elements in the input sequence.</returns>
@@ -2158,7 +2158,7 @@
         <Parameter Name="predicate" Type="System.Func&lt;TSource,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence that contains elements to be counted.</param>
         <param name="predicate">A function to test each element for a condition.</param>
         <summary>Returns a number that represents how many elements in the specified parallel sequence satisfy a condition.</summary>
@@ -2213,7 +2213,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return a default value for if it is empty.</param>
         <summary>Returns the elements of the specified parallel sequence or the type parameter's default value in a singleton collection if the sequence is empty.</summary>
         <returns>A sequence that contains default(TSource) if <paramref name="source" /> is empty; otherwise, <paramref name="source" />.</returns>
@@ -2258,7 +2258,7 @@
         <Parameter Name="defaultValue" Type="TSource" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return the specified value for if it is empty.</param>
         <param name="defaultValue">The value to return if the sequence is empty.</param>
         <summary>Returns the elements of the specified parallel sequence or the specified value in a singleton collection if the sequence is empty.</summary>
@@ -2318,7 +2318,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to remove duplicate elements from.</param>
         <summary>Returns distinct elements from a parallel sequence by using the default equality comparer to compare values.</summary>
         <returns>A sequence that contains distinct elements from the source sequence.</returns>
@@ -2363,7 +2363,7 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TSource&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to remove duplicate elements from.</param>
         <param name="comparer">An <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to compare values.</param>
         <summary>Returns distinct elements from a parallel sequence by using a specified <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to compare values.</summary>
@@ -2408,7 +2408,7 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence to return an element from.</param>
         <param name="index">The zero-based index of the element to retrieve.</param>
         <summary>Returns the element at a specified index in a parallel sequence.</summary>
@@ -2456,7 +2456,7 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence to return an element from.</param>
         <param name="index">The zero-based index of the element to retrieve.</param>
         <summary>Returns the element at a specified index in a parallel sequence or a default value if the index is out of range.</summary>
@@ -2610,7 +2610,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of the input sequences.</typeparam>
-        <param name="first">A sequence whose elements that are not also in <c>second</c> will be returned.</param>
+        <param name="first">A sequence whose elements that are not also in <paramref name="second" /> will be returned.</param>
         <param name="second">A sequence whose elements that also occur in the first sequence will cause those elements to be removed from the returned sequence.</param>
         <summary>Produces the set difference of two parallel sequences by using the default equality comparer to compare values.</summary>
         <returns>A sequence that contains the set difference of the elements of two sequences.</returns>
@@ -2714,7 +2714,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of the input sequences.</typeparam>
-        <param name="first">A sequence whose elements that are not also in <c>second</c> will be returned.</param>
+        <param name="first">A sequence whose elements that are not also in <paramref name="second" /> will be returned.</param>
         <param name="second">A sequence whose elements that also occur in the first sequence will cause those elements to be removed from the returned sequence.</param>
         <param name="comparer">
           <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to compare values.</param>
@@ -2770,7 +2770,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return the first element of.</param>
         <summary>Returns the first element of a parallel sequence.</summary>
         <returns>The first element in the specified sequence.</returns>
@@ -2824,7 +2824,7 @@
         <Parameter Name="predicate" Type="System.Func&lt;TSource,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return an element from.</param>
         <param name="predicate">A function to test each element for a condition.</param>
         <summary>Returns the first element in a parallel sequence that satisfies a specified condition.</summary>
@@ -2887,7 +2887,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return the first element of.</param>
         <summary>Returns the first element of a parallel sequence, or a default value if the sequence contains no elements.</summary>
         <returns>default(TSource) if <paramref name="source" /> is empty; otherwise, the first element in <paramref name="source" />.</returns>
@@ -2939,7 +2939,7 @@
         <Parameter Name="predicate" Type="System.Func&lt;TSource,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return an element from.</param>
         <param name="predicate">A function to test each element for a condition.</param>
         <summary>Returns the first element of the parallel sequence that satisfies a condition or a default value if no such element is found.</summary>
@@ -2992,8 +2992,8 @@
         <Parameter Name="action" Type="System.Action&lt;TSource&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <param name="source">The <see cref="T:System.Linq.ParallelQuery`1" /> whose elements will be processed by <c>action</c>.</param>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <param name="source">The <see cref="T:System.Linq.ParallelQuery`1" /> whose elements will be processed by <paramref name="action" />.</param>
         <param name="action">An Action to invoke on each element.</param>
         <summary>Invokes in parallel the specified action for each element in the <paramref name="source" />.</summary>
         <remarks>
@@ -3060,8 +3060,8 @@
         <Parameter Name="keySelector" Type="System.Func&lt;TSource,TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">An OrderedParallelQuery{TSource}that contains elements to sort.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <summary>Groups in parallel the elements of a sequence according to a specified key selector function.</summary>
@@ -3109,8 +3109,8 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>&gt;.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />&gt;.</typeparam>
         <param name="source">An <see cref="T:System.Linq.OrderedParallelQuery`1" /> that contains elements to sort.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <param name="comparer">An <see cref="T:System.Collections.Generic.IComparer`1" /> to compare keys.</param>
@@ -3165,8 +3165,8 @@
         <Parameter Name="elementSelector" Type="System.Func&lt;TSource,TElement&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <typeparam name="TElement">The type of the elements in the <see cref="T:System.Linq.IGrouping`2" />.</typeparam>
         <param name="source">An <see cref="T:System.Linq.OrderedParallelQuery`1" /> that contains elements to sort.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
@@ -3218,8 +3218,8 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <typeparam name="TElement">The type of the elements in the IGrouping</typeparam>
         <param name="source">An OrderedParallelQuery{TSource}that contains elements to sort.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
@@ -3271,9 +3271,9 @@
         <Parameter Name="resultSelector" Type="System.Func&lt;TKey,System.Collections.Generic.IEnumerable&lt;TSource&gt;,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
-        <typeparam name="TResult">The type of the result value returned by <c>resultSelector</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
+        <typeparam name="TResult">The type of the result value returned by <paramref name="resultSelector" />.</typeparam>
         <param name="source">A sequence whose elements to group.</param>
         <param name="keySelector">A function to extract the key for each element.</param>
         <param name="resultSelector">A function to create a result value from each group.</param>
@@ -3324,9 +3324,9 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
-        <typeparam name="TResult">The type of the result value returned by <c>resultSelector</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
+        <typeparam name="TResult">The type of the result value returned by <paramref name="resultSelector" />.</typeparam>
         <param name="source">A sequence whose elements to group.</param>
         <param name="keySelector">A function to extract the key for each element.</param>
         <param name="resultSelector">A function to create a result value from each group.</param>
@@ -3379,10 +3379,10 @@
         <Parameter Name="resultSelector" Type="System.Func&lt;TKey,System.Collections.Generic.IEnumerable&lt;TElement&gt;,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <typeparam name="TElement">The type of the elements in each IGrouping{TKey, TElement}.</typeparam>
-        <typeparam name="TResult">The type of the result value returned by <c>resultSelector</c>.</typeparam>
+        <typeparam name="TResult">The type of the result value returned by <paramref name="resultSelector" />.</typeparam>
         <param name="source">A sequence whose elements to group.</param>
         <param name="keySelector">A function to extract the key for each element.</param>
         <param name="elementSelector">A function to map each source element to an element in an IGrouping&lt;TKey, TElement&gt;.</param>
@@ -3436,10 +3436,10 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <typeparam name="TElement">The type of the elements in each IGrouping{TKey, TElement}.</typeparam>
-        <typeparam name="TResult">The type of the result value returned by <c>resultSelector</c>.</typeparam>
+        <typeparam name="TResult">The type of the result value returned by <paramref name="resultSelector" />.</typeparam>
         <param name="source">A sequence whose elements to group.</param>
         <param name="keySelector">A function to extract the key for each element.</param>
         <param name="elementSelector">A function to map each source element to an element in an IGrouping{Key, TElement}.</param>
@@ -3831,7 +3831,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of the input sequences.</typeparam>
-        <param name="first">A sequence whose distinct elements that also appear in <c>second</c> will be returned.</param>
+        <param name="first">A sequence whose distinct elements that also appear in <paramref name="second" /> will be returned.</param>
         <param name="second">A sequence whose distinct elements that also appear in the first sequence will be returned.</param>
         <summary>Produces the set intersection of two parallel sequences by using the default equality comparer to compare values.</summary>
         <returns>A sequence that contains the elements that form the set intersection of two sequences.</returns>
@@ -3935,7 +3935,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of the input sequences.</typeparam>
-        <param name="first">A sequence whose distinct elements that also appear in <c>second</c> will be returned.</param>
+        <param name="first">A sequence whose distinct elements that also appear in <paramref name="second" /> will be returned.</param>
         <param name="second">A sequence whose distinct elements that also appear in the first sequence will be returned.</param>
         <param name="comparer">An <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to compare values.</param>
         <summary>Produces the set intersection of two parallel sequences by using the specified IEqualityComparer{T} to compare values.</summary>
@@ -4262,7 +4262,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return the last element from.</param>
         <summary>Returns the last element of a parallel sequence.</summary>
         <returns>The value at the last position in the source sequence.</returns>
@@ -4316,7 +4316,7 @@
         <Parameter Name="predicate" Type="System.Func&lt;TSource,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return an element from.</param>
         <param name="predicate">A function to test each element for a condition.</param>
         <summary>Returns the last element of a parallel sequence that satisfies a specified condition.</summary>
@@ -4379,7 +4379,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return an element from.</param>
         <summary>Returns the last element of a parallel sequence, or a default value if the sequence contains no elements.</summary>
         <returns>default() if the source sequence is empty; otherwise, the last element in the sequence.</returns>
@@ -4431,7 +4431,7 @@
         <Parameter Name="predicate" Type="System.Func&lt;TSource,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return an element from.</param>
         <param name="predicate">A function to test each element for a condition.</param>
         <summary>Returns the last element of a parallel sequence that satisfies a condition, or a default value if no such element is found.</summary>
@@ -4493,7 +4493,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence that contains elements to be counted.</param>
         <summary>Returns an Int64 that represents the total number of elements in a parallel sequence.</summary>
         <returns>The number of elements in the input sequence.</returns>
@@ -4539,7 +4539,7 @@
         <Parameter Name="predicate" Type="System.Func&lt;TSource,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence that contains elements to be counted.</param>
         <param name="predicate">A function to test each element for a condition.</param>
         <summary>Returns an Int64 that represents how many elements in a parallel sequence satisfy a condition.</summary>
@@ -5062,7 +5062,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the maximum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the maximum value.</summary>
@@ -5110,7 +5110,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Double&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the maximum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the maximum value.</summary>
@@ -5158,7 +5158,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the maximum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the maximum value.</summary>
@@ -5206,7 +5206,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the maximum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the maximum value.</summary>
@@ -5254,7 +5254,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Decimal&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the maximum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the maximum value.</summary>
@@ -5302,7 +5302,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Double&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the maximum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the maximum value.</summary>
@@ -5350,7 +5350,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Int32&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the maximum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the maximum value.</summary>
@@ -5398,7 +5398,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Int64&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the maximum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the maximum value.</summary>
@@ -5446,7 +5446,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Single&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the maximum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the maximum value.</summary>
@@ -5494,7 +5494,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Single&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the maximum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the maximum value.</summary>
@@ -5543,8 +5543,8 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TResult">The type of the value returned by <c>selector</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TResult">The type of the value returned by <paramref name="selector" />.</typeparam>
         <param name="source">A sequence of values to determine the maximum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the maximum value.</summary>
@@ -6021,7 +6021,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the minimum value of.</param>
         <summary>Returns the minimum value in a parallel sequence of values.</summary>
         <returns>The minimum value in the sequence.</returns>
@@ -6068,7 +6068,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the minimum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the minimum value.</summary>
@@ -6116,7 +6116,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Double&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the minimum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the minimum value.</summary>
@@ -6164,7 +6164,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the minimum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the minimum value.</summary>
@@ -6212,7 +6212,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the minimum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the minimum value.</summary>
@@ -6260,7 +6260,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Decimal&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the minimum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the minimum value.</summary>
@@ -6308,7 +6308,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Double&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the minimum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the minimum value.</summary>
@@ -6356,7 +6356,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Int32&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the minimum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the minimum value.</summary>
@@ -6404,7 +6404,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Int64&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the minimum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the minimum value.</summary>
@@ -6452,7 +6452,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Single&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the minimum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the minimum value.</summary>
@@ -6500,7 +6500,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Single&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to determine the minimum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the minimum value.</summary>
@@ -6549,8 +6549,8 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TResult">The type of the value returned by <c>selector</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TResult">The type of the value returned by <paramref name="selector" />.</typeparam>
         <param name="source">A sequence of values to determine the minimum value of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Invokes in parallel a transform function on each element of a sequence and returns the minimum value.</summary>
@@ -6653,8 +6653,8 @@
         <Parameter Name="keySelector" Type="System.Func&lt;TSource,TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">A sequence of values to order.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <summary>Sorts in parallel the elements of a sequence in ascending order according to a key.</summary>
@@ -6709,8 +6709,8 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">A sequence of values to order.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <param name="comparer">An IComparer{TKey} to compare keys.</param>
@@ -6775,8 +6775,8 @@
         <Parameter Name="keySelector" Type="System.Func&lt;TSource,TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">A sequence of values to order.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <summary>Sorts in parallel the elements of a sequence in descending order according to a key.</summary>
@@ -6831,8 +6831,8 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">A sequence of values to order.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <param name="comparer">An IComparer{TKey} to compare keys.</param>
@@ -6969,7 +6969,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to reverse.</param>
         <summary>Inverts the order of the elements in a parallel sequence.</summary>
         <returns>A sequence whose elements correspond to those of the input sequence in reverse order.</returns>
@@ -7025,7 +7025,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Int32,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <typeparam name="TResult">The type of elements resturned by selector.</typeparam>
         <param name="source">A sequence of values to invoke a transform function on.</param>
         <param name="selector">A transform function to apply to each element.</param>
@@ -7074,7 +7074,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <typeparam name="TResult">The type of elements resturned by selector.</typeparam>
         <param name="source">A sequence of values to invoke a transform function on.</param>
         <param name="selector">A transform function to apply to each element.</param>
@@ -7132,7 +7132,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Collections.Generic.IEnumerable&lt;TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <typeparam name="TResult">The type of the elements of the sequence returned by selector.</typeparam>
         <param name="source">A sequence of values to project.</param>
         <param name="selector">A transform function to apply to each element.</param>
@@ -7180,7 +7180,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Int32,System.Collections.Generic.IEnumerable&lt;TResult&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <typeparam name="TResult">The type of the elements of the sequence returned by selector.</typeparam>
         <param name="source">A sequence of values to project.</param>
         <param name="selector">A transform function to apply to each element.</param>
@@ -7231,8 +7231,8 @@
         <Parameter Name="resultSelector" Type="System.Func&lt;TSource,TCollection,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the intermediate elements collected by <c>collectionSelector</c>.</typeparam>
-        <typeparam name="TCollection">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the intermediate elements collected by <paramref name="collectionSelector" />.</typeparam>
+        <typeparam name="TCollection">The type of elements of <paramref name="source" />.</typeparam>
         <typeparam name="TResult">The type of elements in the result sequence.</typeparam>
         <param name="source">A sequence of values to project.</param>
         <param name="collectionSelector">A transform function to apply to each source element; the second parameter of the function represents the index of the source element.</param>
@@ -7284,8 +7284,8 @@
         <Parameter Name="resultSelector" Type="System.Func&lt;TSource,TCollection,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the intermediate elements collected by <c>collectionSelector</c>.</typeparam>
-        <typeparam name="TCollection">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the intermediate elements collected by <paramref name="collectionSelector" />.</typeparam>
+        <typeparam name="TCollection">The type of elements of <paramref name="source" />.</typeparam>
         <typeparam name="TResult">The type of elements to return.</typeparam>
         <param name="source">A sequence of values to project.</param>
         <param name="collectionSelector">A transform function to apply to each source element; the second parameter of the function represents the index of the source element.</param>
@@ -7504,7 +7504,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of the input sequences.</typeparam>
-        <param name="first">A sequence to compare to <c>second</c>.</param>
+        <param name="first">A sequence to compare to <paramref name="second" />.</param>
         <param name="second">A sequence to compare to the first input sequence.</param>
         <param name="comparer">An <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to use to compare elements.</param>
         <summary>Determines whether two parallel sequences are equal by comparing their elements by using a specified IEqualityComparer{T}.</summary>
@@ -7559,7 +7559,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return the single element of.</param>
         <summary>Returns the only element of a parallel sequence, and throws an exception if there is not exactly one element in the sequence.</summary>
         <returns>The single element of the input sequence.</returns>
@@ -7605,7 +7605,7 @@
         <Parameter Name="predicate" Type="System.Func&lt;TSource,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return the single element of.</param>
         <param name="predicate">A function to test an element for a condition.</param>
         <summary>Returns the only element of a parallel sequence that satisfies a specified condition, and throws an exception if more than one such element exists.</summary>
@@ -7661,7 +7661,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return the single element of.</param>
         <summary>Returns the only element of a parallel sequence, or a default value if the sequence is empty; this method throws an exception if there is more than one element in the sequence.</summary>
         <returns>The single element of the input sequence, or default() if the sequence contains no elements.</returns>
@@ -7708,7 +7708,7 @@
         <Parameter Name="predicate" Type="System.Func&lt;TSource,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return the single element of.</param>
         <param name="predicate">A function to test an element for a condition.</param>
         <summary>Returns the only element of a parallel sequence that satisfies a specified condition or a default value if no such element exists; this method throws an exception if more than one element satisfies the condition.</summary>
@@ -7756,7 +7756,7 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return elements from.</param>
         <param name="count">The number of elements to skip before returning the remaining elements.</param>
         <summary>Bypasses a specified number of elements in a parallel sequence and then returns the remaining elements.</summary>
@@ -7820,7 +7820,7 @@
         <Parameter Name="predicate" Type="System.Func&lt;TSource,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return elements from.</param>
         <param name="predicate">A function to test each element for a condition.</param>
         <summary>Bypasses elements in a parallel sequence as long as a specified condition is true and then returns the remaining elements.</summary>
@@ -7866,7 +7866,7 @@
         <Parameter Name="predicate" Type="System.Func&lt;TSource,System.Int32,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return elements from.</param>
         <param name="predicate">A function to test each source element for a condition; the second parameter of the function represents the index of the source element.</param>
         <summary>Bypasses elements in a parallel sequence as long as a specified condition is true and then returns the remaining elements. The element's index is used in the logic of the predicate function.</summary>
@@ -8323,7 +8323,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to calculate the sum of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the sum of the sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -8369,7 +8369,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Double&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to calculate the sum of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the sum of the sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -8461,7 +8461,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to calculate the sum of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the sum of the sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -8507,7 +8507,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Decimal&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to calculate the sum of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the sum of the sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -8553,7 +8553,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Double&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to calculate the sum of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the sum of the sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -8599,7 +8599,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Int32&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to calculate the sum of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the sum of the sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -8645,7 +8645,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Int64&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to calculate the sum of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the sum of the sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -8691,7 +8691,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Nullable&lt;System.Single&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to calculate the sum of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the sum of the sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -8737,7 +8737,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TSource,System.Single&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence of values to calculate the sum of.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Computes in parallel the sum of the sequence of values that are obtained by invoking a transform function on each element of the input sequence.</summary>
@@ -8783,7 +8783,7 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return elements from.</param>
         <param name="count">The number of elements to return.</param>
         <summary>Returns a specified number of contiguous elements from the start of a parallel sequence.</summary>
@@ -8839,7 +8839,7 @@
         <Parameter Name="predicate" Type="System.Func&lt;TSource,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return elements from.</param>
         <param name="predicate">A function to test each element for a condition.</param>
         <summary>Returns elements from a parallel sequence as long as a specified condition is true.</summary>
@@ -8885,7 +8885,7 @@
         <Parameter Name="predicate" Type="System.Func&lt;TSource,System.Int32,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">The sequence to return elements from.</param>
         <param name="predicate">A function to test each source element for a condition; the second parameter of the function represents the index of the source element.</param>
         <summary>Returns elements from a parallel sequence as long as a specified condition is true. The element's index is used in the logic of the predicate function.</summary>
@@ -8943,8 +8943,8 @@
         <Parameter Name="keySelector" Type="System.Func&lt;TSource,TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">An OrderedParallelQuery{TSource} that contains elements to sort.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <summary>Performs in parallel a subsequent ordering of the elements in a sequence in ascending order according to a key.</summary>
@@ -8999,8 +8999,8 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">An OrderedParallelQuery{TSource} that contains elements to sort.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <param name="comparer">An IComparer{TKey} to compare keys.</param>
@@ -9065,8 +9065,8 @@
         <Parameter Name="keySelector" Type="System.Func&lt;TSource,TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">An OrderedParallelQuery{TSource} that contains elements to sort.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <summary>Performs in parallel a subsequent ordering of the elements in a sequence in descending order, according to a key.</summary>
@@ -9121,8 +9121,8 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">An OrderedParallelQuery{TSource} that contains elements to sort.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <param name="comparer">An IComparer{TKey} to compare keys.</param>
@@ -9175,7 +9175,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence to create an array from.</param>
         <summary>Creates an array from a <see cref="T:System.Linq.ParallelQuery`1" />.</summary>
         <returns>An array that contains the elements from the input sequence.</returns>
@@ -9231,8 +9231,8 @@
         <Parameter Name="keySelector" Type="System.Func&lt;TSource,TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">A sequence to create a <see cref="T:System.Collections.Generic.Dictionary`2" /> from.</param>
         <param name="keySelector">A function to extract a key from each element.</param>
         <summary>Creates a <see cref="T:System.Collections.Generic.Dictionary`2" /> from a <see cref="T:System.Linq.ParallelQuery`1" /> according to a specified key selector function.</summary>
@@ -9281,8 +9281,8 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">A sequence to create a <see cref="T:System.Collections.Generic.Dictionary`2" /> from.</param>
         <param name="keySelector">A function to extract a key from each element.</param>
         <param name="comparer">An <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to compare keys.</param>
@@ -9333,9 +9333,9 @@
         <Parameter Name="elementSelector" Type="System.Func&lt;TSource,TElement&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
-        <typeparam name="TElement">The type of the value returned by <c>elementSelector</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
+        <typeparam name="TElement">The type of the value returned by <paramref name="elementSelector" />.</typeparam>
         <param name="source">A sequence to create a <see cref="T:System.Collections.Generic.Dictionary`2" /> from.</param>
         <param name="keySelector">A function to extract a key from each element.</param>
         <param name="elementSelector">A transform function to produce a result element value from each element.</param>
@@ -9387,9 +9387,9 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
-        <typeparam name="TElement">The type of the value returned by <c>elementSelector</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
+        <typeparam name="TElement">The type of the value returned by <paramref name="elementSelector" />.</typeparam>
         <param name="source">A sequence to create a <see cref="T:System.Collections.Generic.Dictionary`2" /> from.</param>
         <param name="keySelector">A function to extract a key from each element.</param>
         <param name="elementSelector">A transform function to produce a result element value from each element.</param>
@@ -9437,7 +9437,7 @@
         <Parameter Name="source" Type="System.Linq.ParallelQuery&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">A sequence to create a <see cref="T:System.Collections.Generic.List`1" /> from.</param>
         <summary>Creates a <see cref="T:System.Collections.Generic.List`1" /> from an <see cref="T:System.Linq.ParallelQuery`1" />.</summary>
         <returns>A <see cref="T:System.Collections.Generic.List`1" /> that contains elements from the input sequence.</returns>
@@ -9493,8 +9493,8 @@
         <Parameter Name="keySelector" Type="System.Func&lt;TSource,TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">The sequence to create a <see cref="T:System.Linq.ILookup`2" /> from.</param>
         <param name="keySelector">A function to extract a key from each element.</param>
         <summary>Creates an <see cref="T:System.Linq.ILookup`2" /> from a <see cref="T:System.Linq.ParallelQuery`1" /> according to a specified key selector function.</summary>
@@ -9542,8 +9542,8 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">The sequence to create a <see cref="T:System.Linq.ILookup`2" /> from.</param>
         <param name="keySelector">A function to extract a key from each element.</param>
         <param name="comparer">An <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to compare keys.</param>
@@ -9593,9 +9593,9 @@
         <Parameter Name="elementSelector" Type="System.Func&lt;TSource,TElement&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
-        <typeparam name="TElement">The type of the value returned by <c>elementSelector</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
+        <typeparam name="TElement">The type of the value returned by <paramref name="elementSelector" />.</typeparam>
         <param name="source">The sequence to create a <see cref="T:System.Linq.ILookup`2" /> from.</param>
         <param name="keySelector">A function to extract a key from each element.</param>
         <param name="elementSelector">A transform function to produce a result element value from each element.</param>
@@ -9646,9 +9646,9 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
-        <typeparam name="TElement">The type of the value returned by <c>elementSelector</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
+        <typeparam name="TElement">The type of the value returned by <paramref name="elementSelector" />.</typeparam>
         <param name="source">The sequence to create a <see cref="T:System.Linq.ILookup`2" /> from.</param>
         <param name="keySelector">A function to extract a key from each element.</param>
         <param name="elementSelector">A transform function to produce a result element value from each element.</param>
@@ -10023,7 +10023,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A ParallelQuery on which to set the option.</param>
         <param name="cancellationToken">A cancellation token.</param>
         <summary>Sets the <see cref="T:System.Threading.CancellationToken" /> to associate with the query.</summary>
@@ -10072,7 +10072,7 @@
         <Parameter Name="degreeOfParallelism" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A ParallelQuery on which to set the limit on the degrees of parallelism.</param>
         <param name="degreeOfParallelism">The degree of parallelism for the query. The default value is Math.Min(<see cref="P:System.Environment.ProcessorCount" />, <see langword="MAX_SUPPORTED_DOP" />) where <see langword="MAX_SUPPORTED_DOP" /> is 512.</param>
         <summary>Sets the degree of parallelism to use in a query. Degree of parallelism is the maximum number of concurrently executing tasks that will be used to process the query.</summary>
@@ -10119,7 +10119,7 @@
         <Parameter Name="executionMode" Type="System.Linq.ParallelExecutionMode" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A ParallelQuery on which to set the option.</param>
         <param name="executionMode">The mode in which to execute the query.</param>
         <summary>Sets the execution mode of the query.</summary>
@@ -10173,7 +10173,7 @@
         <Parameter Name="mergeOptions" Type="System.Linq.ParallelMergeOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements of <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of elements of <paramref name="source" />.</typeparam>
         <param name="source">A ParallelQuery on which to set the option.</param>
         <param name="mergeOptions">The merge options to set for this query.</param>
         <summary>Sets the merge options for this query, which specify how the query will buffer output.</summary>

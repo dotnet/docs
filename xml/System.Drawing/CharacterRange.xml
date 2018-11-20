@@ -63,7 +63,7 @@
         <Parameter Name="Length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="First">The position of the first character in the range. For example, if <c>First</c> is set to 0, the first position of the range is position 0 in the string.</param>
+        <param name="First">The position of the first character in the range. For example, if <paramref name="First" /> is set to 0, the first position of the range is position 0 in the string.</param>
         <param name="Length">The number of positions in the range.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.CharacterRange" /> structure, specifying a range of character positions within a string.</summary>
         <remarks>

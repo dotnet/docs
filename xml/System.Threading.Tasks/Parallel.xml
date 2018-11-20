@@ -908,7 +908,7 @@
         <Parameter Name="body" Type="System.Action&lt;TSource,System.Threading.Tasks.ParallelLoopState,System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements in <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements in <paramref name="source" />.</typeparam>
         <param name="source">The orderable partitioner that contains the original data source.</param>
         <param name="body">The delegate that is invoked once per iteration.</param>
         <summary>Executes a <see langword="foreach" /> (<see langword="For Each" /> in Visual Basic) operation on a <see cref="T:System.Collections.Concurrent.OrderablePartitioner`1" /> in which iterations may run in parallel and the state of the loop can be monitored and manipulated.</summary>
@@ -971,7 +971,7 @@
         <Parameter Name="body" Type="System.Action&lt;TSource,System.Threading.Tasks.ParallelLoopState&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements in <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements in <paramref name="source" />.</typeparam>
         <param name="source">The partitioner that contains the original data source.</param>
         <param name="body">The delegate that is invoked once per iteration.</param>
         <summary>Executes a <see langword="foreach" /> (<see langword="For Each" /> in Visual Basic) operation on a <see cref="T:System.Collections.Concurrent.Partitioner" /> in which iterations may run in parallel, and the state of the loop can be monitored and manipulated.</summary>
@@ -1034,7 +1034,7 @@
         <Parameter Name="body" Type="System.Action&lt;TSource&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements in <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements in <paramref name="source" />.</typeparam>
         <param name="source">The partitioner that contains the original data source.</param>
         <param name="body">The delegate that is invoked once per iteration.</param>
         <summary>Executes a <see langword="foreach" /> (<see langword="For Each" /> in Visual Basic) operation on a <see cref="T:System.Collections.Concurrent.Partitioner" /> in which iterations may run in parallel.</summary>
@@ -1278,7 +1278,7 @@
         <Parameter Name="body" Type="System.Action&lt;TSource,System.Threading.Tasks.ParallelLoopState,System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements in <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements in <paramref name="source" />.</typeparam>
         <param name="source">The orderable partitioner that contains the original data source.</param>
         <param name="parallelOptions">An object that configures the behavior of this operation.</param>
         <param name="body">The delegate that is invoked once per iteration.</param>
@@ -1348,7 +1348,7 @@
         <Parameter Name="body" Type="System.Action&lt;TSource,System.Threading.Tasks.ParallelLoopState&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements in <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements in <paramref name="source" />.</typeparam>
         <param name="source">The partitioner that contains the original data source.</param>
         <param name="parallelOptions">An object that configures the behavior of this operation.</param>
         <param name="body">The delegate that is invoked once per iteration.</param>
@@ -1414,7 +1414,7 @@
         <Parameter Name="body" Type="System.Action&lt;TSource&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements in <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements in <paramref name="source" />.</typeparam>
         <param name="source">The partitioner that contains the original data source.</param>
         <param name="parallelOptions">An object that configures the behavior of this operation.</param>
         <param name="body">The delegate that is invoked once per iteration.</param>
@@ -1669,7 +1669,7 @@
         <Parameter Name="localFinally" Type="System.Action&lt;TLocal&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements in <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements in <paramref name="source" />.</typeparam>
         <typeparam name="TLocal">The type of the thread-local data.</typeparam>
         <param name="source">The orderable partitioner that contains the original data source.</param>
         <param name="localInit">The function delegate that returns the initial state of the local data for each task.</param>
@@ -1743,7 +1743,7 @@
         <Parameter Name="localFinally" Type="System.Action&lt;TLocal&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements in <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements in <paramref name="source" />.</typeparam>
         <typeparam name="TLocal">The type of the thread-local data.</typeparam>
         <param name="source">The partitioner that contains the original data source.</param>
         <param name="localInit">The function delegate that returns the initial state of the local data for each task.</param>
@@ -1971,7 +1971,7 @@
         <Parameter Name="localFinally" Type="System.Action&lt;TLocal&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements in <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements in <paramref name="source" />.</typeparam>
         <typeparam name="TLocal">The type of the thread-local data.</typeparam>
         <param name="source">The orderable partitioner that contains the original data source.</param>
         <param name="parallelOptions">An object that configures the behavior of this operation.</param>
@@ -2048,7 +2048,7 @@
         <Parameter Name="localFinally" Type="System.Action&lt;TLocal&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements in <c>source</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements in <paramref name="source" />.</typeparam>
         <typeparam name="TLocal">The type of the thread-local data.</typeparam>
         <param name="source">The partitioner that contains the original data source.</param>
         <param name="parallelOptions">An object that configures the behavior of this operation.</param>

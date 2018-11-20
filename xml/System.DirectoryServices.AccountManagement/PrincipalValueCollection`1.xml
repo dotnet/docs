@@ -162,7 +162,7 @@
       </Parameters>
       <Docs>
         <param name="array">An <see cref="T:System.Array" /> of objects.</param>
-        <param name="index">An integer representing the position in <c>array</c> to which the first object in the collection should be copied.</param>
+        <param name="index">An integer representing the position in <paramref name="array" /> to which the first object in the collection should be copied.</param>
         <summary>Copys the contents of the collection to the specified array, starting at the specified position in the array.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
@@ -294,7 +294,7 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">The index at which <c>value</c> will be inserted into the collection.</param>
+        <param name="index">The index at which <paramref name="value" /> will be inserted into the collection.</param>
         <param name="value">An object.</param>
         <summary>Inserts the specified object into the collection at the specified index.</summary>
         <remarks>To be added.</remarks>
@@ -536,7 +536,7 @@
       </Parameters>
       <Docs>
         <param name="array">An <see cref="T:System.Array" /> of objects.</param>
-        <param name="index">An integer representing the position in <c>array</c> to which the first object in the collection should be copied.</param>
+        <param name="index">An integer representing the position in <paramref name="array" /> to which the first object in the collection should be copied.</param>
         <summary>Copies the contents of the collection to the specified array, starting at the specified index.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
@@ -843,7 +843,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The position into which <c>value</c> should be inserted.</param>
+        <param name="index">The position into which <paramref name="value" /> should be inserted.</param>
         <param name="value">An object</param>
         <summary>Inserts the specified object at the specified position into the collection.</summary>
         <remarks>To be added.</remarks>

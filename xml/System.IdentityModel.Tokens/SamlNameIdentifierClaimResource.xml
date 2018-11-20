@@ -56,8 +56,8 @@
       </Parameters>
       <Docs>
         <param name="name">The subject name. Sets the <see cref="P:System.IdentityModel.Tokens.SamlSubject.Name" /> property.</param>
-        <param name="nameQualifier">The domain in which the <c>name</c> parameter resides. Sets the <see cref="P:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.NameQualifier" /> property.</param>
-        <param name="format">A URI reference that represents the format that the <c>name</c> parameter is in. Sets the <see cref="P:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.Format" /> property.</param>
+        <param name="nameQualifier">The domain in which the <paramref name="name" /> parameter resides. Sets the <see cref="P:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.NameQualifier" /> property.</param>
+        <param name="format">A URI reference that represents the format that the <paramref name="name" /> parameter is in. Sets the <see cref="P:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.Format" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource" /> class using the specified name, the domain in which the name resides, and the format the name is in.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

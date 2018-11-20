@@ -98,7 +98,7 @@
       <Docs>
         <param name="name">The name by which the evaluator will be identified.</param>
         <param name="filterClass">The class type that contains the evaluator delegate.</param>
-        <param name="method">The method in <c>filterClass</c> that is the evaluator delegate.</param>
+        <param name="method">The method in <paramref name="filterClass" /> that is the evaluator delegate.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Mobile.DeviceFilterElement" /> class as an evaluator filter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

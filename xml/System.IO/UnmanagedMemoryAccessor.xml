@@ -631,7 +631,7 @@
         <typeparam name="T">The type of structure.</typeparam>
         <param name="position">The number of bytes in the accessor at which to begin reading.</param>
         <param name="array">The array to contain the structures read from the accessor.</param>
-        <param name="offset">The index in <c>array</c> in which to place the first copied structure.</param>
+        <param name="offset">The index in <paramref name="array" /> in which to place the first copied structure.</param>
         <param name="count">The number of structures of type <c>T</c> to read from the accessor.</param>
         <summary>Reads structures of type <paramref name="T" /> from the accessor into an array of type <paramref name="T" />.</summary>
         <returns>The number of structures read into <paramref name="array" />. This value can be less than <paramref name="count" /> if there are fewer structures available, or zero if the end of the accessor is reached.</returns>
@@ -2090,8 +2090,8 @@
         <typeparam name="T">The type of structure.</typeparam>
         <param name="position">The number of bytes into the accessor at which to begin writing.</param>
         <param name="array">The array to write into the accessor.</param>
-        <param name="offset">The index in <c>array</c> to start writing from.</param>
-        <param name="count">The number of structures in <c>array</c> to write.</param>
+        <param name="offset">The index in <paramref name="array" /> to start writing from.</param>
+        <param name="count">The number of structures in <paramref name="array" /> to write.</param>
         <summary>Writes structures from an array of type <paramref name="T" /> into the accessor.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">There are not enough bytes in the accessor after <paramref name="position" /> to write the number of structures specified by <paramref name="count" />.</exception>

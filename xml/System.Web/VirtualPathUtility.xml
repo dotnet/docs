@@ -523,7 +523,7 @@
       </Parameters>
       <Docs>
         <param name="virtualPath">The virtual path to convert to an application-relative path.</param>
-        <param name="applicationPath">The application path to use to convert <c>virtualPath</c> to a relative path.</param>
+        <param name="applicationPath">The application path to use to convert <paramref name="virtualPath" /> to a relative path.</param>
         <summary>Converts a virtual path to an application absolute path using the specified application path.</summary>
         <returns>The absolute virtual path representation of <paramref name="virtualPath" />.</returns>
         <remarks>
@@ -628,7 +628,7 @@
       </Parameters>
       <Docs>
         <param name="virtualPath">The virtual path to convert to an application-relative path.</param>
-        <param name="applicationPath">The application path to use to convert <c>virtualPath</c> to a relative path.</param>
+        <param name="applicationPath">The application path to use to convert <paramref name="virtualPath" /> to a relative path.</param>
         <summary>Converts a virtual path to an application-relative path using a specified application path.</summary>
         <returns>The application-relative path representation of <paramref name="virtualPath" />.</returns>
         <remarks>

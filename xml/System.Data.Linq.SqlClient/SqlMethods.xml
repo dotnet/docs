@@ -1463,7 +1463,7 @@
       </Parameters>
       <Docs>
         <param name="matchExpression">The string to be searched for a match.</param>
-        <param name="pattern">The pattern, which may include wildcard characters, to match in <c>matchExpression</c>.</param>
+        <param name="pattern">The pattern, which may include wildcard characters, to match in <paramref name="matchExpression" />.</param>
         <summary>Determines whether a specific character string matches a specified pattern. This method is currently only supported in LINQ to SQL queries.</summary>
         <returns>
           <see langword="true" /> if <paramref name="matchExpression" /> matches the pattern; otherwise, <see langword="false" />.</returns>
@@ -1500,7 +1500,7 @@
       </Parameters>
       <Docs>
         <param name="matchExpression">The string to be searched for a match.</param>
-        <param name="pattern">The pattern, which may include wildcard characters, to match in <c>matchExpression</c>.</param>
+        <param name="pattern">The pattern, which may include wildcard characters, to match in <paramref name="matchExpression" />.</param>
         <param name="escapeCharacter">The character to put in front of a wildcard character to indicate that it should be interpreted as a regular character and not as a wildcard character.</param>
         <summary>Determines whether a specific character string matches a specified pattern. This method is currently only supported in LINQ to SQL queries.</summary>
         <returns>

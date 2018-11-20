@@ -82,7 +82,7 @@
       </Parameters>
       <Docs>
         <param name="localId">The value of the <see langword="wsu:Id" /> attribute for an XML element within the current SOAP message. Sets the value of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" /> property.</param>
-        <param name="ownerType">A <see cref="T:System.Type" /> that is the type of security token that is referred to by the <c>localId</c> parameter. Sets the value of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" /> property.</param>
+        <param name="ownerType">A <see cref="T:System.Type" /> that is the type of security token that is referred to by the <paramref name="localId" /> parameter. Sets the value of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" /> class using the specified identifier an owner security token type.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -114,7 +114,7 @@
         <param name="localId">The value of the <see langword="wsu:Id" /> attribute for an XML element within the current SOAP message. Sets the value of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" /> property.</param>
         <param name="derivationNonce">An array of <see cref="T:System.Byte" /> that contains the nonce that was used to create a derived key. Sets the value that is returned by the <see cref="M:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.GetDerivationNonce" /> method.</param>
         <param name="derivationLength">The size of the derived key. Sets the value of the <see cref="P:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.DerivationLength" /> property.</param>
-        <param name="ownerType">A <see cref="T:System.Type" /> that is the type of security token that is referred to by the <c>localId</c> parameter. Sets the value of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" /> property.</param>
+        <param name="ownerType">A <see cref="T:System.Type" /> that is the type of security token that is referred to by the <paramref name="localId" /> parameter. Sets the value of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" /> class using the specified identifier, nonce, derived key length an owner security token type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -229,7 +229,7 @@
       </Parameters>
       <Docs>
         <param name="localId">The value of the <see langword="wsu:Id" /> attribute for an XML element within the current SOAP message.</param>
-        <param name="ownerType">A <see cref="T:System.Type" /> that is the type of security token that is referred to by the <c>localId</c> parameter.</param>
+        <param name="ownerType">A <see cref="T:System.Type" /> that is the type of security token that is referred to by the <paramref name="localId" /> parameter.</param>
         <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified reference and type.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="localId" /> and <paramref name="ownerType" /> parameters match the values of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" /> and <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" /> properties; otherwise, <see langword="false" />.</returns>

@@ -601,7 +601,7 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="index">The index at which to insert <c>value</c>, the specified <see cref="T:System.Double" />.</param>
+        <param name="index">The index at which to insert <paramref name="value" />, the specified <see cref="T:System.Double" />.</param>
         <param name="value">The item to insert.</param>
         <summary>Inserts a <see cref="T:System.Double" /> into this <see cref="T:System.Windows.Media.DoubleCollection" /> at the specified index.</summary>
         <remarks>

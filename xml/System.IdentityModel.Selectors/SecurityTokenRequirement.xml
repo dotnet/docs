@@ -520,11 +520,11 @@
         <Parameter Name="value" Type="TValue" RefType="out" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <typeparam name="TValue">The type of property to return in the <c>result</c> parameter.</typeparam>
+        <typeparam name="TValue">The type of property to return in the <paramref name="result" /> parameter.</typeparam>
         <param name="propertyName">The name of the property to get.</param>
         <param name="property">The name of the property to get.</param>
-        <param name="result">The value of the property specified in the <c>propertyName</c> property.</param>
-        <param name="value">The value of the property specified in the <c>property</c> property.</param>
+        <param name="result">The value of the property specified in the <paramref name="propertyName" /> property.</param>
+        <param name="value">The value of the property specified in the <paramref name="property" /> property.</param>
         <summary>Gets the specified property for the current <see cref="T:System.IdentityModel.Selectors.SecurityTokenRequirement" /> instance.</summary>
         <returns>
           <see langword="true" /> if the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties" /> property contains a property value for the property specified in the <paramref name="propertyName" /> property; otherwise, <see langword="false" />.</returns>

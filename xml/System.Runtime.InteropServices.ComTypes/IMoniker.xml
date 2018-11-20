@@ -92,7 +92,7 @@
         <param name="pbc">A reference to the <see langword="IBindCtx" /> interface on the bind context object used in this binding operation.</param>
         <param name="pmkToLeft">A reference to the moniker to the left of the current moniker, if the moniker is part of a composite moniker.</param>
         <param name="riidResult">The interface identifier (IID) of the interface that the client intends to use to communicate with the object that the moniker identifies.</param>
-        <param name="ppvResult">When this method returns, contains a reference to the interface requested by <c>riidResult</c>. This parameter is passed uninitialized.</param>
+        <param name="ppvResult">When this method returns, contains a reference to the interface requested by <paramref name="riidResult" />. This parameter is passed uninitialized.</param>
         <summary>Uses the moniker to bind to the object that it identifies.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -145,7 +145,7 @@
         <param name="pbc">A reference to the <see langword="IBindCtx" /> interface on the bind context object used during this binding operation.</param>
         <param name="pmkToLeft">A reference to the moniker to the left of the current moniker, if the moniker is part of a composite moniker.</param>
         <param name="riid">The interface identifier (IID) of the storage interface requested.</param>
-        <param name="ppvObj">When this method returns, contains a reference to the interface requested by <c>riid</c>. This parameter is passed uninitialized.</param>
+        <param name="ppvObj">When this method returns, contains a reference to the interface requested by <paramref name="riid" />. This parameter is passed uninitialized.</param>
         <summary>Retrieves an interface pointer to the storage that contains the object identified by the moniker.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -194,7 +194,7 @@
       </Parameters>
       <Docs>
         <param name="pmkOther">A reference to the <see langword="IMoniker" /> interface on another moniker to compare with the current moniker for a common prefix.</param>
-        <param name="ppmkPrefix">When this method returns, contains the moniker that is the common prefix of the current moniker and <c>pmkOther</c>. This parameter is passed uninitialized.</param>
+        <param name="ppmkPrefix">When this method returns, contains the moniker that is the common prefix of the current moniker and <paramref name="pmkOther" />. This parameter is passed uninitialized.</param>
         <summary>Creates a new moniker based on the common prefix that this moniker shares with another moniker.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -245,7 +245,7 @@
       <Docs>
         <param name="pmkRight">A reference to the <see langword="IMoniker" /> interface on a moniker to append to the end of the current moniker.</param>
         <param name="fOnlyIfNotGeneric">
-          <see langword="true" /> to indicate that the caller requires a nongeneric composition. The operation proceeds only if <c>pmkRight</c> is a moniker class that the current moniker can combine with in some way other than forming a generic composite. <see langword="false" /> to indicate that the method can create a generic composite if necessary.</param>
+          <see langword="true" /> to indicate that the caller requires a nongeneric composition. The operation proceeds only if <paramref name="pmkRight" /> is a moniker class that the current moniker can combine with in some way other than forming a generic composite. <see langword="false" /> to indicate that the method can create a generic composite if necessary.</param>
         <param name="ppmkComposite">When this method returns, contains a reference to the resulting composite moniker. This parameter is passed uninitialized.</param>
         <summary>Combines the current moniker with another moniker, creating a new composite moniker.</summary>
         <remarks>
@@ -880,8 +880,8 @@
         <param name="pbc">A reference to the bind context to use in this binding operation.</param>
         <param name="pmkToLeft">A reference to the moniker that has been built from the display name up to this point.</param>
         <param name="pszDisplayName">A reference to the string containing the remaining display name to parse.</param>
-        <param name="pchEaten">When this method returns, contains the number of characters that were consumed in parsing <c>pszDisplayName</c>. This parameter is passed uninitialized.</param>
-        <param name="ppmkOut">When this method returns, contains a reference to the moniker that was built from <c>pszDisplayName</c>. This parameter is passed uninitialized.</param>
+        <param name="pchEaten">When this method returns, contains the number of characters that were consumed in parsing <paramref name="pszDisplayName" />. This parameter is passed uninitialized.</param>
+        <param name="ppmkOut">When this method returns, contains a reference to the moniker that was built from <paramref name="pszDisplayName" />. This parameter is passed uninitialized.</param>
         <summary>Reads as many characters of the specified display name as the <see cref="M:System.Runtime.InteropServices.ComTypes.IMoniker.ParseDisplayName(System.Runtime.InteropServices.ComTypes.IBindCtx,System.Runtime.InteropServices.ComTypes.IMoniker,System.String,System.Int32@,System.Runtime.InteropServices.ComTypes.IMoniker@)" /> understands and builds a moniker corresponding to the portion read.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

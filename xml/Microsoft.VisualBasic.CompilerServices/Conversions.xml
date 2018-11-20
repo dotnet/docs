@@ -678,7 +678,7 @@
         <Parameter Name="Value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type to convert <c>Value</c> to.</typeparam>
+        <typeparam name="T">The type to convert <paramref name="Value" /> to.</typeparam>
         <param name="Value">The object to convert.</param>
         <summary>Converts an object to a generic type <paramref name="T" />.</summary>
         <returns>A structure or object of generic type <paramref name="T" />.</returns>

@@ -1349,7 +1349,7 @@
       <Docs>
         <param name="targetHost">The name of the server that shares this <see cref="T:System.Net.Security.SslStream" />.</param>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the authentication is complete.</param>
-        <param name="asyncState">A user-defined object that contains information about the operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object that contains information about the operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Called by clients to begin an asynchronous operation to authenticate the server and optionally the client.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object that indicates the status of the asynchronous operation.</returns>
         <remarks>
@@ -1419,7 +1419,7 @@
         <param name="clientCertificates">The <see cref="T:System.Security.Cryptography.X509Certificates.X509CertificateCollection" /> containing client certificates.</param>
         <param name="checkCertificateRevocation">A <see cref="T:System.Boolean" /> value that specifies whether the certificate revocation list is checked during authentication.</param>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the authentication is complete.</param>
-        <param name="asyncState">A user-defined object that contains information about the operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object that contains information about the operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Called by clients to begin an asynchronous operation to authenticate the server and optionally the client using the specified certificates and the system default security protocol.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object that indicates the status of the asynchronous operation.</returns>
         <remarks>
@@ -1500,7 +1500,7 @@
         <param name="enabledSslProtocols">The <see cref="T:System.Security.Authentication.SslProtocols" /> value that represents the protocol used for authentication.</param>
         <param name="checkCertificateRevocation">A <see cref="T:System.Boolean" /> value that specifies whether the certificate revocation list is checked during authentication.</param>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the authentication is complete.</param>
-        <param name="asyncState">A user-defined object that contains information about the operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object that contains information about the operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Called by clients to begin an asynchronous operation to authenticate the server and optionally the client using the specified certificates and security protocol.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object that indicates the status of the asynchronous operation.</returns>
         <remarks>
@@ -1600,7 +1600,7 @@
       <Docs>
         <param name="serverCertificate">The X509Certificate used to authenticate the server.</param>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the authentication is complete.</param>
-        <param name="asyncState">A user-defined object that contains information about the operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object that contains information about the operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Called by servers to begin an asynchronous operation to authenticate the client and optionally the server in a client-server connection.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
@@ -1669,7 +1669,7 @@
         <param name="clientCertificateRequired">A <see cref="T:System.Boolean" /> value that specifies whether the client is asked for a certificate for authentication. Note that this is only a request -- if no certificate is provided, the server still accepts the connection request.</param>
         <param name="checkCertificateRevocation">A <see cref="T:System.Boolean" /> value that specifies whether the certificate revocation list is checked during authentication.</param>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the authentication is complete.</param>
-        <param name="asyncState">A user-defined object that contains information about the operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object that contains information about the operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Called by servers to begin an asynchronous operation to authenticate the server and optionally the client using the specified certificates and requirements, and the system default security protocol.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object that indicates the status of the asynchronous operation.</returns>
         <remarks>
@@ -1746,7 +1746,7 @@
         <param name="enabledSslProtocols">The <see cref="T:System.Security.Authentication.SslProtocols" /> value that represents the protocol used for authentication.</param>
         <param name="checkCertificateRevocation">A <see cref="T:System.Boolean" /> value that specifies whether the certificate revocation list is checked during authentication.</param>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the authentication is complete.</param>
-        <param name="asyncState">A user-defined object that contains information about the operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object that contains information about the operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Called by servers to begin an asynchronous operation to authenticate the server and optionally the client using the specified certificates, requirements and security protocol.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object that indicates the status of the asynchronous operation.</returns>
         <remarks>
@@ -1820,10 +1820,10 @@
       </Parameters>
       <Docs>
         <param name="buffer">A <see cref="T:System.Byte" /> array that receives the bytes read from the stream.</param>
-        <param name="offset">The zero-based location in <c>buffer</c> at which to begin storing the data read from this stream.</param>
+        <param name="offset">The zero-based location in <paramref name="buffer" /> at which to begin storing the data read from this stream.</param>
         <param name="count">The maximum number of bytes to read from the stream.</param>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the read operation is complete.</param>
-        <param name="asyncState">A user-defined object that contains information about the read operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object that contains information about the read operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Begins an asynchronous read operation that reads data from the stream and stores it in the specified array.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object that indicates the status of the asynchronous operation.</returns>
         <remarks>
@@ -1917,10 +1917,10 @@
       </Parameters>
       <Docs>
         <param name="buffer">A <see cref="T:System.Byte" /> array that supplies the bytes to be written to the stream.</param>
-        <param name="offset">The zero-based location in <c>buffer</c> at which to begin reading bytes to be written to the stream.</param>
-        <param name="count">An <see cref="T:System.Int32" /> value that specifies the number of bytes to read from <c>buffer</c>.</param>
+        <param name="offset">The zero-based location in <paramref name="buffer" /> at which to begin reading bytes to be written to the stream.</param>
+        <param name="count">An <see cref="T:System.Int32" /> value that specifies the number of bytes to read from <paramref name="buffer" />.</param>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the write operation is complete.</param>
-        <param name="asyncState">A user-defined object that contains information about the write operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object that contains information about the write operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Begins an asynchronous write operation that writes <see cref="T:System.Byte" />s from the specified buffer to the stream.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
@@ -3388,7 +3388,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">A <see cref="T:System.Byte" /> array that receives the bytes read from this stream.</param>
-        <param name="offset">A <see cref="T:System.Int32" /> that contains the zero-based location in <c>buffer</c> at which to begin storing the data read from this stream.</param>
+        <param name="offset">A <see cref="T:System.Int32" /> that contains the zero-based location in <paramref name="buffer" /> at which to begin storing the data read from this stream.</param>
         <param name="count">A <see cref="T:System.Int32" /> that contains the maximum number of bytes to read from this stream.</param>
         <summary>Reads data from this stream and stores it in the specified array.</summary>
         <returns>A <see cref="T:System.Int32" /> value that specifies the number of bytes read. When there is no more data to be read, returns 0.</returns>
@@ -3853,8 +3853,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">A <see cref="T:System.Byte" /> array that supplies the bytes written to the stream.</param>
-        <param name="offset">A <see cref="T:System.Int32" /> that contains the zero-based location in <c>buffer</c> at which to begin reading bytes to be written to the stream.</param>
-        <param name="count">A <see cref="T:System.Int32" /> that contains the number of bytes to read from <c>buffer</c>.</param>
+        <param name="offset">A <see cref="T:System.Int32" /> that contains the zero-based location in <paramref name="buffer" /> at which to begin reading bytes to be written to the stream.</param>
+        <param name="count">A <see cref="T:System.Int32" /> that contains the number of bytes to read from <paramref name="buffer" />.</param>
         <summary>Write the specified number of <see cref="T:System.Byte" />s to the underlying stream using the specified buffer and offset.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -197,7 +197,7 @@ End Class
         <Parameter Name="lockTaken" Type="System.Boolean" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="lockTaken">True if the lock is acquired; otherwise, false. <c>lockTaken</c> must be initialized to false prior to calling this method.</param>
+        <param name="lockTaken">True if the lock is acquired; otherwise, false. <paramref name="lockTaken" /> must be initialized to false prior to calling this method.</param>
         <summary>Acquires the lock in a reliable manner, such that even if an exception occurs within the method call, <paramref name="lockTaken" /> can be examined reliably to determine whether the lock was acquired.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -508,7 +508,7 @@ End Class
         <Parameter Name="lockTaken" Type="System.Boolean" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="lockTaken">True if the lock is acquired; otherwise, false. <c>lockTaken</c> must be initialized to false prior to calling this method.</param>
+        <param name="lockTaken">True if the lock is acquired; otherwise, false. <paramref name="lockTaken" /> must be initialized to false prior to calling this method.</param>
         <summary>Attempts to acquire the lock in a reliable manner, such that even if an exception occurs within the method call, <paramref name="lockTaken" /> can be examined reliably to determine whether the lock was acquired.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -558,7 +558,7 @@ End Class
       </Parameters>
       <Docs>
         <param name="millisecondsTimeout">The number of milliseconds to wait, or <see cref="F:System.Threading.Timeout.Infinite" /> (-1) to wait indefinitely.</param>
-        <param name="lockTaken">True if the lock is acquired; otherwise, false. <c>lockTaken</c> must be initialized to false prior to calling this method.</param>
+        <param name="lockTaken">True if the lock is acquired; otherwise, false. <paramref name="lockTaken" /> must be initialized to false prior to calling this method.</param>
         <summary>Attempts to acquire the lock in a reliable manner, such that even if an exception occurs within the method call, <paramref name="lockTaken" /> can be examined reliably to determine whether the lock was acquired.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -610,7 +610,7 @@ End Class
       </Parameters>
       <Docs>
         <param name="timeout">A <see cref="T:System.TimeSpan" /> that represents the number of milliseconds to wait, or a <see cref="T:System.TimeSpan" /> that represents -1 milliseconds to wait indefinitely.</param>
-        <param name="lockTaken">True if the lock is acquired; otherwise, false. <c>lockTaken</c> must be initialized to false prior to calling this method.</param>
+        <param name="lockTaken">True if the lock is acquired; otherwise, false. <paramref name="lockTaken" /> must be initialized to false prior to calling this method.</param>
         <summary>Attempts to acquire the lock in a reliable manner, such that even if an exception occurs within the method call, <paramref name="lockTaken" /> can be examined reliably to determine whether the lock was acquired.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

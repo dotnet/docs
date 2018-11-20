@@ -1327,7 +1327,7 @@
       <Docs>
         <param name="str">The text to locate in the control.</param>
         <param name="start">The location within the control's text at which to begin searching.</param>
-        <param name="end">The location within the control's text at which to end searching. This value must be equal to negative one (-1) or greater than or equal to the <c>start</c> parameter.</param>
+        <param name="end">The location within the control's text at which to end searching. This value must be equal to negative one (-1) or greater than or equal to the <paramref name="start" /> parameter.</param>
         <param name="options">A bitwise combination of the <see cref="T:System.Windows.Forms.RichTextBoxFinds" /> values.</param>
         <summary>Searches the text in a <see cref="T:System.Windows.Forms.RichTextBox" /> control for a string within a range of text within the control and with specific options applied to the search.</summary>
         <returns>The location within the control where the search text was found.</returns>

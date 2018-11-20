@@ -225,7 +225,7 @@
         <Parameter Name="binding" Type="System.Web.Services.Description.Binding" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the <c>binding</c> parameter.</param>
+        <param name="index">The zero-based index at which to insert the <paramref name="binding" /> parameter.</param>
         <param name="binding">The <see cref="T:System.Web.Services.Description.Binding" /> to be added to the collection.</param>
         <summary>Adds the specified <see cref="T:System.Web.Services.Description.Binding" /> to the <see cref="T:System.Web.Services.Description.BindingCollection" /> at the specified zero-based index.</summary>
         <remarks>

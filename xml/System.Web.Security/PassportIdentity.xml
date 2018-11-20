@@ -223,7 +223,7 @@
       <Docs>
         <param name="strReturnUrl">Sets the URL of the location that the Login server should redirect to after logon is complete. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iTimeWindow">Specifies the interval during which members must have last logged on. Pass -1 to indicate that Passport should use the default value.</param>
-        <param name="fForceLogin">Determines how the <c>iTimeWindow</c> parameter will be used. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="fForceLogin">Determines how the <paramref name="iTimeWindow" /> parameter will be used. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="strCoBrandedArgs">Specifies variables to be appended to the URL of the Cobranding Template script page that was specified at initial participant registration. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iLangID">Specifies the language in which the required domain authority page should be displayed. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="strNameSpace">Specifies the domain in which the Passport should be created. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
@@ -271,7 +271,7 @@
       <Docs>
         <param name="strReturnUrl">Sets the URL of the location that the Login server should redirect to after logon is complete. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iTimeWindow">Specifies the interval during which members must have last logged on. Pass -1 to indicate that Passport should use the default value.</param>
-        <param name="iForceLogin">Determines how the <c>iTimeWindow</c> parameter will be used. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="iForceLogin">Determines how the <paramref name="iTimeWindow" /> parameter will be used. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="strCoBrandedArgs">Specifies variables to be appended to the URL of the Cobranding Template script page that was specified at initial participant registration. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iLangID">Specifies the language in which the required domain authority page should be displayed. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="strNameSpace">Specifies the domain in which the Passport should be created. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
@@ -409,7 +409,7 @@
       <Docs>
         <param name="strReturnUrl">Sets the URL of the location that the Login server should redirect to after logon is complete. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iTimeWindow">Specifies the interval during which members must have last logged on. Pass -1 to indicate that Passport should use the default value.</param>
-        <param name="fForceLogin">Determines how the <c>iTimeWindow</c> parameter will be used. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="fForceLogin">Determines how the <paramref name="iTimeWindow" /> parameter will be used. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="strCoBrandedArgs">Specifies variables to be appended to the URL of the Cobranding Template script page that was specified at initial participant registration. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iLangID">Specifies the language in which the required domain authority page should be displayed. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="strNameSpace">Specifies the domain in which the Passport should be created. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
@@ -457,7 +457,7 @@
       <Docs>
         <param name="strReturnUrl">Sets the URL of the location that the Login server should redirect to after logon is complete. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iTimeWindow">Specifies the interval during which members must have last logged on. Pass -1 to indicate that Passport should use the default value.</param>
-        <param name="iForceLogin">Determines how the <c>iTimeWindow</c> parameter will be used. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="iForceLogin">Determines how the <paramref name="iTimeWindow" /> parameter will be used. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="strCoBrandedArgs">Specifies variables to be appended to the URL of the Cobranding Template script page that was specified at initial participant registration. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iLangID">Specifies the language in which the required domain authority page should be displayed. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="strNameSpace">Specifies the domain in which the Passport should be created. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
@@ -968,7 +968,7 @@
       </Parameters>
       <Docs>
         <param name="iTimeWindow">Specifies the interval during which members must have last logged on to the calling domain. Pass -1 to indicate that Passport should use the default value.</param>
-        <param name="bForceLogin">Determines how the <c>iTimeWindow</c> parameter is used.</param>
+        <param name="bForceLogin">Determines how the <paramref name="iTimeWindow" /> parameter is used.</param>
         <param name="bCheckSecure">Enables checking for an encrypted logon. SSL sign-in is not available as an option in the current version Login servers, so the value passed in is ignored at the server.</param>
         <summary>Indicates whether the user is authenticated by a central site responsible for Passport authentication. This class is deprecated.</summary>
         <returns>
@@ -1007,12 +1007,12 @@
       </Parameters>
       <Docs>
         <param name="iTimeWindow">Specifies the interval during which members must have last logged on to the calling domain. A value of -1 indicates that Passport should use the default value, 0 represents <see langword="false" />, and 1 represents <see langword="true" />.</param>
-        <param name="iForceLogin">Determines how the <c>iTimeWindow</c> parameter is used. A value of -1 indicates that Passport should use the default value, 0 represents <see langword="false" />, and 1 represents <see langword="true" />.</param>
+        <param name="iForceLogin">Determines how the <paramref name="iTimeWindow" /> parameter is used. A value of -1 indicates that Passport should use the default value, 0 represents <see langword="false" />, and 1 represents <see langword="true" />.</param>
         <param name="iCheckSecure">Enables checking for an encrypted logon. A value of -1 indicates that Passport should use the default value, 0 represents <see langword="false" />, and 1 represents <see langword="true" />.  
   
  A value of 10 or 100 for Passport version 2.1 Login servers specify <c>SecureLevel</c> 10 or 100 for the Passport Manager <c>IsAuthenticated</c> method. See the Passport version 2.1 SDK documentation for more information.  
   
- SSL sign-in is not available as an option for Passport version 1.4 Login servers. The value of <c>iCheckSecure</c> is ignored at the server.</param>
+ SSL sign-in is not available as an option for Passport version 1.4 Login servers. The value of <paramref name="iCheckSecure" /> is ignored at the server.</param>
         <summary>Indicates whether the user is authenticated by a Passport authority. This class is deprecated.</summary>
         <returns>
           <see langword="true" /> if the user is authenticated by a central site responsible for Passport authentication; otherwise, <see langword="false" />.</returns>
@@ -1663,7 +1663,7 @@
         <param name="szRetURL">The URL to which the Login server should redirect users after sign in is complete. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iTimeWindow">The time value, in seconds. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="fForceLogin">
-          <see langword="true" /> to have the Login server compare the <c>iTimeWindow</c> parameter against the time since the user last signed in; <see langword="false" /> to have the Login server compare <c>iTimeWindow</c> against the last time the Ticket was refreshed. Pass -1 to indicate that Passport should use the default value.</param>
+          <see langword="true" /> to have the Login server compare the <paramref name="iTimeWindow" /> parameter against the time since the user last signed in; <see langword="false" /> to have the Login server compare <paramref name="iTimeWindow" /> against the last time the Ticket was refreshed. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="szCOBrandArgs">A string specifying variables to be appended as query string variables to the URL of the participant's Cobranding Template script page. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iLangID">A locale identifier (LCID) specifying the language in which the Login page should be displayed. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="strNameSpace">A domain name space to which you want to direct users without Passports to register. The specified name space must appear as a "domain name" entry in the Partner.xml Component Configuration Document (CCD). The typical default name space is "passport.com". Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
@@ -1721,7 +1721,7 @@
       <Docs>
         <param name="szRetURL">The URL to which the Login server should redirect users after sign in is complete. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iTimeWindow">The time value, in seconds. Pass -1 to indicate that Passport should use the default value.</param>
-        <param name="fForceLogin">Indicates whether the Login server should compare the <c>iTimeWindow</c> parameter against the time since the user last signed in or against the last time the Ticket was refreshed. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="fForceLogin">Indicates whether the Login server should compare the <paramref name="iTimeWindow" /> parameter against the time since the user last signed in or against the last time the Ticket was refreshed. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="szCOBrandArgs">A string specifying variables to be appended as query string variables to the URL of the participant's Cobranding Template script page. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iLangID">A locale identifier (LCID) specifying the language in which the Login page should be displayed. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="strNameSpace">A domain name space to which you want to direct users without Passports to register. The specified name space must appear as a "domain name" entry in the Partner.xml Component Configuration Document (CCD). The typical default name space is "passport.com". Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
@@ -1869,7 +1869,7 @@
       <Docs>
         <param name="strReturnUrl">Sets the URL of the location to which the Login server should redirect members after they log on. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iTimeWindow">Specifies the interval during which members must have last logged on. Pass -1 to indicate that Passport should use the default value.</param>
-        <param name="fForceLogin">Determines how the <c>iTimeWindow</c> parameter gets used. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="fForceLogin">Determines how the <paramref name="iTimeWindow" /> parameter gets used. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="strCoBrandedArgs">Specifies variables to be appended as query string variables to the URL of the participant's Cobranding Template script page. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iLangID">Specifies the language to be used for the logon page that is displayed to the member. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="fSecure">Declares whether this method is being called from an HTTPS (SSL) page. Pass -1 to indicate that Passport should use the default value.</param>
@@ -1919,7 +1919,7 @@
       <Docs>
         <param name="strReturnUrl">Sets the URL of the location to which the Login server should redirect members after they log on. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iTimeWindow">Specifies the interval during which members must have last logged on. Pass -1 to indicate that Passport should use the default value.</param>
-        <param name="iForceLogin">Determines how the <c>iTimeWindow</c> parameter gets used. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="iForceLogin">Determines how the <paramref name="iTimeWindow" /> parameter gets used. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="strCoBrandedArgs">Specifies variables to be appended as query string variables to the URL of the participant's Cobranding Template script page. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iLangID">Specifies the language to be used for the logon page that is displayed to the member. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="iSecure">Declares whether this method is being called from an HTTPS (SSL) page. Pass -1 to indicate that Passport should use the default value.</param>
@@ -2067,7 +2067,7 @@
       <Docs>
         <param name="strReturnUrl">Sets the URL of the location to which the Login server should redirect members after they log on. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iTimeWindow">Specifies the interval during which members must have last logged on. Pass -1 to indicate that Passport should use the default value.</param>
-        <param name="fForceLogin">Determines how the <c>iTimeWindow</c> parameter gets used. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="fForceLogin">Determines how the <paramref name="iTimeWindow" /> parameter gets used. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="strCoBrandedArgs">Specifies variables to be appended as query string variables to the URL of the participant's Cobranding Template script page. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iLangID">Specifies the language to be used for the logon page that is displayed to the member. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="fSecure">Declares whether this method is being called from an HTTPS (SSL) page. Pass -1 to indicate that Passport should use the default value.</param>
@@ -2117,7 +2117,7 @@
       <Docs>
         <param name="strReturnUrl">Sets the URL of the location to which the Login server should redirect members after they log on. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iTimeWindow">Specifies the interval during which members must have last logged on. Pass -1 to indicate that Passport should use the default value.</param>
-        <param name="iForceLogin">Determines how the <c>iTimeWindow</c> parameter gets used. Pass -1 to indicate that Passport should use the default value.</param>
+        <param name="iForceLogin">Determines how the <paramref name="iTimeWindow" /> parameter gets used. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="strCoBrandedArgs">Specifies variables to be appended as query string variables to the URL of the participant's Cobranding Template script page. Pass <see langword="null" /> to indicate that Passport should use the default value.</param>
         <param name="iLangID">Specifies the language to be used for the logon page that is displayed to the member. Pass -1 to indicate that Passport should use the default value.</param>
         <param name="iSecure">Declares whether this method is being called from an HTTPS (SSL) page. Pass -1 to indicate that Passport should use the default value.</param>

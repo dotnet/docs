@@ -189,7 +189,7 @@
       <Docs>
         <param name="data">The data to process.</param>
         <param name="offset">The offset into the byte array from which to begin using data.</param>
-        <param name="count">The number of bytes to use from <c>data</c>.</param>
+        <param name="count">The number of bytes to use from <paramref name="data" />.</param>
         <summary>Appends the specified number of bytes from the specified data, starting at the specified offset, to the data already processed in the hash or Hash-based Message Authentication Code (HMAC).</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

@@ -155,28 +155,28 @@
       </Parameters>
       <Docs>
         <param name="type">
-          <c>type</c>
+          <paramref name="type" />
         </param>
         <param name="context">
-          <c>context</c>
+          <paramref name="context" />
         </param>
         <param name="schemas">
-          <c>schemas</c>
+          <paramref name="schemas" />
         </param>
         <param name="importer">
-          <c>importer</c>
+          <paramref name="importer" />
         </param>
         <param name="compileUnit">
-          <c>compileUnit</c>
+          <paramref name="compileUnit" />
         </param>
         <param name="mainNamespace">
-          <c>mainNamespace</c>
+          <paramref name="mainNamespace" />
         </param>
         <param name="options">
-          <c>options</c>
+          <paramref name="options" />
         </param>
         <param name="codeProvider">
-          <c>codeProvider</c>
+          <paramref name="codeProvider" />
         </param>
         <summary>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</summary>
         <returns>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</returns>
@@ -212,31 +212,31 @@
       </Parameters>
       <Docs>
         <param name="name">
-          <c>name</c>
+          <paramref name="name" />
         </param>
         <param name="xmlNamespace">
-          <c>xmlNamespace</c>
+          <paramref name="xmlNamespace" />
         </param>
         <param name="context">
-          <c>context</c>
+          <paramref name="context" />
         </param>
         <param name="schemas">
-          <c>schemas</c>
+          <paramref name="schemas" />
         </param>
         <param name="importer">
-          <c>importer</c>
+          <paramref name="importer" />
         </param>
         <param name="compileUnit">
-          <c>compileUnit</c>
+          <paramref name="compileUnit" />
         </param>
         <param name="mainNamespace">
-          <c>mainNamespace</c>
+          <paramref name="mainNamespace" />
         </param>
         <param name="options">
-          <c>options</c>
+          <paramref name="options" />
         </param>
         <param name="codeProvider">
-          <c>codeProvider</c>
+          <paramref name="codeProvider" />
         </param>
         <summary>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</summary>
         <returns>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</returns>

@@ -153,7 +153,7 @@
       </Parameters>
       <Docs>
         <param name="displayName">The display name assigned to the newly created contact.</param>
-        <param name="nickname">The <c>nickname</c> to assign to the newly created contact.</param>
+        <param name="nickname">The <paramref name="nickname" /> to assign to the newly created contact.</param>
         <param name="emailAddress">
           <see cref="T:System.Net.Mail.MailAddress" /> object that specifies the email address to assign to the newly created contact.</param>
         <summary>Generates a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> with the associated descriptive parameters from the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object and associates it with the <see cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />.</summary>

@@ -326,7 +326,7 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">A 32-bit signed integer that represents the index value of the child <see cref="T:System.Windows.Media.Visual" />. The value of <c>index</c> must be between 0 and <see cref="P:System.Windows.Media.ContainerVisual.VisualChildrenCount" /> - 1.</param>
+        <param name="index">A 32-bit signed integer that represents the index value of the child <see cref="T:System.Windows.Media.Visual" />. The value of <paramref name="index" /> must be between 0 and <see cref="P:System.Windows.Media.ContainerVisual.VisualChildrenCount" /> - 1.</param>
         <summary>Returns a specified child <see cref="T:System.Windows.Media.Visual" /> for the parent <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
         <returns>The child <see cref="T:System.Windows.Media.Visual" />.</returns>
         <remarks>

@@ -3887,7 +3887,7 @@ public class Sample
       <Docs>
         <param name="returnType">The type of the value to be returned.  
   
- **Note** With the release of the .NET Framework 3.5, the value of the <c>returnType</c> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
+ **Note** With the release of the .NET Framework 3.5, the value of the <paramref name="returnType" /> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
         <param name="namespaceResolver">An <see cref="T:System.Xml.IXmlNamespaceResolver" /> object that is used to resolve any namespace prefixes related to type conversion. For example, this can be used when converting an <see cref="T:System.Xml.XmlQualifiedName" /> object to an <c>xs:string</c>.  
   
  This value can be <see langword="null" />.</param>
@@ -4989,7 +4989,7 @@ public class Sample
       <Docs>
         <param name="returnType">The type of the value to be returned.  
   
- **Note** With the release of the .NET Framework 3.5, the value of the <c>returnType</c> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
+ **Note** With the release of the .NET Framework 3.5, the value of the <paramref name="returnType" /> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
         <param name="namespaceResolver">An <see cref="T:System.Xml.IXmlNamespaceResolver" /> object that is used to resolve any namespace prefixes related to type conversion.</param>
         <summary>Reads the element content as the requested type.</summary>
         <returns>The element content converted to the requested typed object.</returns>
@@ -5065,7 +5065,7 @@ public class Sample
       <Docs>
         <param name="returnType">The type of the value to be returned.  
   
- **Note** With the release of the .NET Framework 3.5, the value of the <c>returnType</c> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
+ **Note** With the release of the .NET Framework 3.5, the value of the <paramref name="returnType" /> parameter can now be the <see cref="T:System.DateTimeOffset" /> type.</param>
         <param name="namespaceResolver">An <see cref="T:System.Xml.IXmlNamespaceResolver" /> object that is used to resolve any namespace prefixes related to type conversion.</param>
         <param name="localName">The local name of the element.</param>
         <param name="namespaceURI">The namespace URI of the element.</param>

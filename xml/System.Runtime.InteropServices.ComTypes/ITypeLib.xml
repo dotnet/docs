@@ -91,12 +91,12 @@
       </Parameters>
       <Docs>
         <param name="szNameBuf">The name to search for. This is an in/out parameter.</param>
-        <param name="lHashVal">A hash value to speed up the search, computed by the <see langword="LHashValOfNameSys" /> function. If <c>lHashVal</c> is 0, a value is computed.</param>
-        <param name="ppTInfo">When this method returns, contains an array of pointers to the type descriptions that contain the name specified in <c>szNameBuf</c>. This parameter is passed uninitialized.</param>
-        <param name="rgMemId">An array of the <see langword="MEMBERID" /> 's of the found items; <c>rgMemId</c> [i] is the <see langword="MEMBERID" /> that indexes into the type description specified by <c>ppTInfo</c> [i]. Cannot be <see langword="null" />.</param>
-        <param name="pcFound">On entry, indicates how many instances to look for. For example, <c>pcFound</c> = 1 can be called to find the first occurrence. The search stops when one instance is found.  
+        <param name="lHashVal">A hash value to speed up the search, computed by the <see langword="LHashValOfNameSys" /> function. If <paramref name="lHashVal" /> is 0, a value is computed.</param>
+        <param name="ppTInfo">When this method returns, contains an array of pointers to the type descriptions that contain the name specified in <paramref name="szNameBuf" />. This parameter is passed uninitialized.</param>
+        <param name="rgMemId">An array of the <see langword="MEMBERID" /> 's of the found items; <paramref name="rgMemId" /> [i] is the <see langword="MEMBERID" /> that indexes into the type description specified by <paramref name="ppTInfo" /> [i]. Cannot be <see langword="null" />.</param>
+        <param name="pcFound">On entry, indicates how many instances to look for. For example, <paramref name="pcFound" /> = 1 can be called to find the first occurrence. The search stops when one instance is found.  
   
- On exit, indicates the number of instances that were found. If the <see langword="in" /> and <see langword="out" /> values of <c>pcFound</c> are identical, there might be more type descriptions that contain the name.</param>
+ On exit, indicates the number of instances that were found. If the <see langword="in" /> and <see langword="out" /> values of <paramref name="pcFound" /> are identical, there might be more type descriptions that contain the name.</param>
         <summary>Finds occurrences of a type description in a type library.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -300,7 +300,7 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the <see langword="ITypeInfo" /> interface to return.</param>
-        <param name="ppTI">When this method returns, contains an <see langword="ITypeInfo" /> describing the type referenced by <c>index</c>. This parameter is passed uninitialized.</param>
+        <param name="ppTI">When this method returns, contains an <see langword="ITypeInfo" /> describing the type referenced by <paramref name="index" />. This parameter is passed uninitialized.</param>
         <summary>Retrieves the specified type description in the library.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -492,7 +492,7 @@
       </Parameters>
       <Docs>
         <param name="szNameBuf">The string to test. This is an in/out parameter.</param>
-        <param name="lHashVal">The hash value of <c>szNameBuf</c>.</param>
+        <param name="lHashVal">The hash value of <paramref name="szNameBuf" />.</param>
         <summary>Indicates whether a passed-in string contains the name of a type or member described in the library.</summary>
         <returns>
           <see langword="true" /> if <paramref name="szNameBuf" /> was found in the type library; otherwise, <see langword="false" />.</returns>

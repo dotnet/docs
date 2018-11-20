@@ -89,7 +89,7 @@
       </Parameters>
       <Docs>
         <param name="name">A string that contains the name of the entity.</param>
-        <param name="throwOnError">A value that indicates whether to throw an exception if <c>name</c> is not resolvable.</param>
+        <param name="throwOnError">A value that indicates whether to throw an exception if <paramref name="name" /> is not resolvable.</param>
         <summary>Gets the <see cref="T:System.Type" /> of the named entity.</summary>
         <returns>The <see cref="T:System.Type" /> of the named entity.</returns>
         <remarks>To be added.</remarks>

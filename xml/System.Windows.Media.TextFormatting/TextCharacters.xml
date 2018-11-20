@@ -47,7 +47,7 @@
       </Parameters>
       <Docs>
         <param name="characterString">The <see cref="T:System.String" /> containing the text characters.</param>
-        <param name="textRunProperties">The <see cref="T:System.Windows.Media.TextFormatting.TextRunProperties" /> value to use for the characters in <c>characterString</c>.</param>
+        <param name="textRunProperties">The <see cref="T:System.Windows.Media.TextFormatting.TextRunProperties" /> value to use for the characters in <paramref name="characterString" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextCharacters" /> class using a specified character string.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -79,8 +79,8 @@
       </Parameters>
       <Docs>
         <param name="unsafeCharacterString">Pointer to character string.</param>
-        <param name="length">The length of the characters to use in <c>unsafeCharacterString</c>.</param>
-        <param name="textRunProperties">The <see cref="T:System.Windows.Media.TextFormatting.TextRunProperties" /> value to use for the characters in <c>unsafeCharacterString</c>.</param>
+        <param name="length">The length of the characters to use in <paramref name="unsafeCharacterString" />.</param>
+        <param name="textRunProperties">The <see cref="T:System.Windows.Media.TextFormatting.TextRunProperties" /> value to use for the characters in <paramref name="unsafeCharacterString" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextCharacters" /> class using a specified unsafe character string.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -105,9 +105,9 @@
       </Parameters>
       <Docs>
         <param name="characterArray">The <see cref="T:System.Char" /> array.</param>
-        <param name="offsetToFirstChar">The offset to the first character to use in <c>characterArray</c>.</param>
-        <param name="length">The length of the characters to use in <c>characterArray</c>.</param>
-        <param name="textRunProperties">The <see cref="T:System.Windows.Media.TextFormatting.TextRunProperties" /> value to use for the characters in <c>characterArray</c>.</param>
+        <param name="offsetToFirstChar">The offset to the first character to use in <paramref name="characterArray" />.</param>
+        <param name="length">The length of the characters to use in <paramref name="characterArray" />.</param>
+        <param name="textRunProperties">The <see cref="T:System.Windows.Media.TextFormatting.TextRunProperties" /> value to use for the characters in <paramref name="characterArray" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextCharacters" /> class using a specified character array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -132,9 +132,9 @@
       </Parameters>
       <Docs>
         <param name="characterString">The <see cref="T:System.String" /> containing the text characters.</param>
-        <param name="offsetToFirstChar">The offset to the first character to use in <c>characterString</c>.</param>
-        <param name="length">The length of the characters to use in <c>characterString</c>.</param>
-        <param name="textRunProperties">The <see cref="T:System.Windows.Media.TextFormatting.TextRunProperties" /> value to use for the characters in <c>characterString</c>.</param>
+        <param name="offsetToFirstChar">The offset to the first character to use in <paramref name="characterString" />.</param>
+        <param name="length">The length of the characters to use in <paramref name="characterString" />.</param>
+        <param name="textRunProperties">The <see cref="T:System.Windows.Media.TextFormatting.TextRunProperties" /> value to use for the characters in <paramref name="characterString" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextCharacters" /> class using a specified character substring.</summary>
         <remarks>To be added.</remarks>
       </Docs>

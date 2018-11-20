@@ -193,7 +193,7 @@
         <Parameter Name="editorPart" Type="System.Web.UI.WebControls.WebParts.EditorPart" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the <c>editorPart</c> content.</param>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the <paramref name="editorPart" /> content.</param>
         <param name="editorPart">The control currently being rendered.</param>
         <summary>Renders a complete <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> control with all its sections.</summary>
         <remarks>
@@ -227,7 +227,7 @@
         <Parameter Name="editorPart" Type="System.Web.UI.WebControls.WebParts.EditorPart" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the <c>editorPart</c> content.</param>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the <paramref name="editorPart" /> content.</param>
         <param name="editorPart">The control currently being rendered.</param>
         <summary>Renders the main content area of an <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> control, excluding the header and footer.</summary>
         <remarks>

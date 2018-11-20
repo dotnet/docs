@@ -509,7 +509,7 @@
       <Docs>
         <param name="otp">The object whose CCW holds a reference counted handle. The handle is strong if the reference count on the CCW is greater than zero; otherwise, it is weak.</param>
         <param name="fIsWeak">
-          <see langword="true" /> to change the strength of the handle on the <c>otp</c> parameter to weak, regardless of its reference count; <see langword="false" /> to reset the handle strength on <c>otp</c> to be reference counted.</param>
+          <see langword="true" /> to change the strength of the handle on the <paramref name="otp" /> parameter to weak, regardless of its reference count; <see langword="false" /> to reset the handle strength on <paramref name="otp" /> to be reference counted.</param>
         <summary>Changes the strength of an object's [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md) (CCW) handle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2028,7 +2028,7 @@
       </Parameters>
       <Docs>
         <param name="ptr">A pointer to an unmanaged block of memory.</param>
-        <param name="structuretype">Type of a formatted class. This provides the layout information necessary to delete the buffer in the <c>ptr</c> parameter.</param>
+        <param name="structuretype">Type of a formatted class. This provides the layout information necessary to delete the buffer in the <paramref name="ptr" /> parameter.</param>
         <summary>Frees all substructures that the specified unmanaged memory block points to.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2091,7 +2091,7 @@
         <Parameter Name="ptr" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the formatted structure. This provides the layout information necessary to delete the buffer in the <c>ptr</c> parameter.</typeparam>
+        <typeparam name="T">The type of the formatted structure. This provides the layout information necessary to delete the buffer in the <paramref name="ptr" /> parameter.</typeparam>
         <param name="ptr">A pointer to an unmanaged block of memory.</param>
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
   
@@ -2757,7 +2757,7 @@
         <Parameter Name="o" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of <c>o</c>.</typeparam>
+        <typeparam name="T">The type of <paramref name="o" />.</typeparam>
         <typeparam name="TInterface">The type of interface to return.</typeparam>
         <param name="o">The object that provides the interface.</param>
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
@@ -2896,7 +2896,7 @@
       </Parameters>
       <Docs>
         <param name="obj">The COM object that contains the data that you want.</param>
-        <param name="key">The key in the internal hash table of <c>obj</c> to retrieve the data from.</param>
+        <param name="key">The key in the internal hash table of <paramref name="obj" /> to retrieve the data from.</param>
         <summary>Retrieves data that is referenced by the specified key from the specified COM object.</summary>
         <returns>The data represented by the <paramref name="key" /> parameter in the internal hash table of the <paramref name="obj" /> parameter.</returns>
         <remarks>
@@ -4124,7 +4124,7 @@
       <Docs>
         <param name="pfnMethodToWrap">A pointer to the method to marshal.</param>
         <param name="pbSignature">A pointer to the method signature.</param>
-        <param name="cbSignature">The number of bytes in <c>pbSignature</c>.</param>
+        <param name="cbSignature">The number of bytes in <paramref name="pbSignature" />.</param>
         <summary>Gets a pointer to a runtime-generated function that marshals a call from managed to unmanaged code.</summary>
         <returns>A pointer to the function that will marshal a call from the <paramref name="pfnMethodToWrap" /> parameter to unmanaged code.</returns>
         <remarks>
@@ -4248,7 +4248,7 @@
       </Parameters>
       <Docs>
         <param name="obj">The object for which to get a COM VARIANT.</param>
-        <param name="pDstNativeVariant">A pointer to receive the VARIANT that corresponds to the <c>obj</c> parameter.</param>
+        <param name="pDstNativeVariant">A pointer to receive the VARIANT that corresponds to the <paramref name="obj" /> parameter.</param>
         <summary>Converts an object to a COM VARIANT.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4312,7 +4312,7 @@
       <Docs>
         <typeparam name="T">The type of the object to convert.</typeparam>
         <param name="obj">The object for which to get a COM VARIANT.</param>
-        <param name="pDstNativeVariant">A pointer to receive the VARIANT that corresponds to the <c>obj</c> parameter.</param>
+        <param name="pDstNativeVariant">A pointer to receive the VARIANT that corresponds to the <paramref name="obj" /> parameter.</param>
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
   
  Converts an object of a specified type to a COM VARIANT.</summary>
@@ -4584,7 +4584,7 @@
       </Parameters>
       <Docs>
         <param name="aSrcNativeVariant">A pointer to the first element of an array of COM VARIANTs.</param>
-        <param name="cVars">The count of COM VARIANTs in <c>aSrcNativeVariant</c>.</param>
+        <param name="cVars">The count of COM VARIANTs in <paramref name="aSrcNativeVariant" />.</param>
         <summary>Converts an array of COM <see href="https://go.microsoft.com/fwlink/?LinkId=148670">VARIANTs</see> to an array of objects.</summary>
         <returns>An object array that corresponds to <paramref name="aSrcNativeVariant" />.</returns>
         <remarks>
@@ -4652,7 +4652,7 @@
       <Docs>
         <typeparam name="T">The type of the array to return.</typeparam>
         <param name="aSrcNativeVariant">A pointer to the first element of an array of COM VARIANTs.</param>
-        <param name="cVars">The count of COM VARIANTs in <c>aSrcNativeVariant</c>.</param>
+        <param name="cVars">The count of COM VARIANTs in <paramref name="aSrcNativeVariant" />.</param>
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
   
  Converts an array of COM VARIANTs to an array of a specified type.</summary>
@@ -5599,7 +5599,7 @@
       <Docs>
         <param name="pfnMethodToWrap">A pointer to the method to marshal.</param>
         <param name="pbSignature">A pointer to the method signature.</param>
-        <param name="cbSignature">The number of bytes in <c>pbSignature</c>.</param>
+        <param name="cbSignature">The number of bytes in <paramref name="pbSignature" />.</param>
         <summary>Gets a pointer to a runtime-generated function that marshals a call from unmanaged to managed code.</summary>
         <returns>A pointer to a function that will marshal a call from <paramref name="pfnMethodToWrap" /> to managed code.</returns>
         <remarks>
@@ -5823,7 +5823,7 @@
       </Parameters>
       <Docs>
         <param name="t">A value type or formatted reference type that specifies the managed class. You must apply the <see cref="T:System.Runtime.InteropServices.StructLayoutAttribute" /> to the class.</param>
-        <param name="fieldName">The field within the <c>t</c> parameter.</param>
+        <param name="fieldName">The field within the <paramref name="t" /> parameter.</param>
         <summary>Returns the field offset of the unmanaged form of the managed class.</summary>
         <returns>The offset, in bytes, for the <paramref name="fieldName" /> parameter within the specified class that is declared by platform invoke.</returns>
         <remarks>
@@ -5879,7 +5879,7 @@
       </Parameters>
       <Docs>
         <typeparam name="T">A managed value type or formatted reference type. You must apply the <see cref="T:System.Runtime.InteropServices.StructLayoutAttribute" /> attribute to the class.</typeparam>
-        <param name="fieldName">The name of the field in the <c>T</c> type.</param>
+        <param name="fieldName">The name of the field in the <paramref name="T" /> type.</param>
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
   
  Returns the field offset of the unmanaged form of a specified managed class.</summary>
@@ -6837,7 +6837,7 @@
         <Parameter Name="structure" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of <c>structure</c>. This must be a formatted class.</typeparam>
+        <typeparam name="T">The type of <paramref name="structure" />. This must be a formatted class.</typeparam>
         <param name="ptr">A pointer to an unmanaged block of memory.</param>
         <param name="structure">The object to which the data is to be copied.</param>
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
@@ -7057,7 +7057,7 @@
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory from which to read.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before reading.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before reading.</param>
         <summary>Reads a single byte at a given offset (or index) from unmanaged memory.</summary>
         <returns>The byte read from unmanaged memory at the given offset.</returns>
         <remarks>
@@ -7139,7 +7139,7 @@
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory of the source object.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before reading.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before reading.</param>
         <summary>Reads a single byte at a given offset (or index) from unmanaged memory.</summary>
         <returns>The byte read from unmanaged memory at the given offset.</returns>
         <remarks>
@@ -7296,7 +7296,7 @@
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory from which to read.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before reading.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before reading.</param>
         <summary>Reads a 16-bit signed integer at a given offset from unmanaged memory.</summary>
         <returns>The 16-bit signed integer read from unmanaged memory at the given offset.</returns>
         <remarks>
@@ -7379,7 +7379,7 @@
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory of the source object.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before reading.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before reading.</param>
         <summary>Reads a 16-bit signed integer at a given offset from unmanaged memory.</summary>
         <returns>The 16-bit signed integer read from unmanaged memory at the given offset.</returns>
         <remarks>
@@ -7542,7 +7542,7 @@
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory from which to read.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before reading.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before reading.</param>
         <summary>Reads a 32-bit signed integer at a given offset from unmanaged memory.</summary>
         <returns>The 32-bit signed integer read from unmanaged memory.</returns>
         <remarks>
@@ -7628,7 +7628,7 @@
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory of the source object.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before reading.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before reading.</param>
         <summary>Reads a 32-bit signed integer at a given offset from unmanaged memory.</summary>
         <returns>The 32-bit signed integer read from unmanaged memory at the given offset.</returns>
         <remarks>
@@ -7791,7 +7791,7 @@
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory from which to read.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before reading.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before reading.</param>
         <summary>Reads a 64-bit signed integer at a given offset from unmanaged memory.</summary>
         <returns>The 64-bit signed integer read from unmanaged memory at the given offset.</returns>
         <remarks>
@@ -7877,7 +7877,7 @@
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory of the source object.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before reading.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before reading.</param>
         <summary>Reads a 64-bit signed integer at a given offset from unmanaged memory.</summary>
         <returns>The 64-bit signed integer read from unmanaged memory at the given offset.</returns>
         <remarks>
@@ -8036,7 +8036,7 @@
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory from which to read.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before reading.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before reading.</param>
         <summary>Reads a processor native sized integer at a given offset from unmanaged memory.</summary>
         <returns>The integer read from unmanaged memory at the given offset.</returns>
         <remarks>
@@ -8115,7 +8115,7 @@
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory of the source object.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before reading.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before reading.</param>
         <summary>Reads a processor native sized integer from unmanaged memory.</summary>
         <returns>The integer read from unmanaged memory at the given offset.</returns>
         <remarks>
@@ -9083,7 +9083,7 @@
         <Parameter Name="structure" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the <c>structure</c> parameter.</typeparam>
+        <typeparam name="T">The type of the <paramref name="structure" /> parameter.</typeparam>
         <param name="structure">The object whose size is to be returned.</param>
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
   
@@ -9622,7 +9622,7 @@
         <param name="structure">A managed object that holds the data to be marshaled. This object must be a structure or an instance of a formatted class.</param>
         <param name="ptr">A pointer to an unmanaged block of memory, which must be allocated before this method is called.</param>
         <param name="fDeleteOld">
-          <see langword="true" /> to call the <see cref="M:System.Runtime.InteropServices.Marshal.DestroyStructure(System.IntPtr,System.Type)" /> method on the <c>ptr</c> parameter before this method copies the data. The block must contain valid data. Note that passing <see langword="false" /> when the memory block already contains data can lead to a memory leak.</param>
+          <see langword="true" /> to call the <see cref="M:System.Runtime.InteropServices.Marshal.DestroyStructure(System.IntPtr,System.Type)" /> method on the <paramref name="ptr" /> parameter before this method copies the data. The block must contain valid data. Note that passing <see langword="false" /> when the memory block already contains data can lead to a memory leak.</param>
         <summary>Marshals data from a managed object to an unmanaged block of memory.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -9718,7 +9718,7 @@
         <param name="structure">A managed object that holds the data to be marshaled. The object must be a structure or an instance of a formatted class.</param>
         <param name="ptr">A pointer to an unmanaged block of memory, which must be allocated before this method is called.</param>
         <param name="fDeleteOld">
-          <see langword="true" /> to call the <see cref="M:System.Runtime.InteropServices.Marshal.DestroyStructure``1(System.IntPtr)" /> method on the <c>ptr</c> parameter before this method copies the data. The block must contain valid data. Note that passing <see langword="false" /> when the memory block already contains data can lead to a memory leak.</param>
+          <see langword="true" /> to call the <see cref="M:System.Runtime.InteropServices.Marshal.DestroyStructure``1(System.IntPtr)" /> method on the <paramref name="ptr" /> parameter before this method copies the data. The block must contain valid data. Note that passing <see langword="false" /> when the memory block already contains data can lead to a memory leak.</param>
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
   
  Marshals data from a managed object of a specified type to an unmanaged block of memory.</summary>
@@ -10052,7 +10052,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       </Parameters>
       <Docs>
         <param name="arr">The array that contains the desired element.</param>
-        <param name="index">The index in the <c>arr</c> parameter of the desired element.</param>
+        <param name="index">The index in the <paramref name="arr" /> parameter of the desired element.</param>
         <summary>Gets the address of the element at the specified index inside the specified array.</summary>
         <returns>The address of <paramref name="index" /> inside <paramref name="arr" />.</returns>
         <remarks>
@@ -10111,7 +10111,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       <Docs>
         <typeparam name="T">The type of the array.</typeparam>
         <param name="arr">The array that contains the desired element.</param>
-        <param name="index">The index of the desired element in the <c>arr</c> array.</param>
+        <param name="index">The index of the desired element in the <paramref name="arr" /> array.</param>
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
   
  Gets the address of the element at the specified index in an array of a specified type.</summary>
@@ -10261,7 +10261,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory to write to.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before writing.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before writing.</param>
         <param name="val">The value to write.</param>
         <summary>Writes a single byte value to unmanaged memory at a specified offset.</summary>
         <remarks>
@@ -10338,7 +10338,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory of the target object.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before writing.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before writing.</param>
         <param name="val">The value to write.</param>
         <summary>Writes a single byte value to unmanaged memory at a specified offset.</summary>
         <remarks>
@@ -10568,7 +10568,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       </Parameters>
       <Docs>
         <param name="ptr">The base address in the native heap to write to.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before writing.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before writing.</param>
         <param name="val">The value to write.</param>
         <summary>Writes a 16-bit signed integer value to unmanaged memory at a specified offset.</summary>
         <remarks>
@@ -10639,7 +10639,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory to write to.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before writing.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before writing.</param>
         <param name="val">The value to write.</param>
         <summary>Writes a 16-bit signed integer value into unmanaged memory at a specified offset.</summary>
         <remarks>
@@ -10716,7 +10716,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory of the target object.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before writing.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before writing.</param>
         <param name="val">The value to write.</param>
         <summary>Writes a 16-bit signed integer value to unmanaged memory at a specified offset.</summary>
         <remarks>
@@ -10789,7 +10789,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory of the target object.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before writing.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before writing.</param>
         <param name="val">The value to write.</param>
         <summary>Writes a 16-bit signed integer value to unmanaged memory at a specified offset.</summary>
         <remarks>
@@ -10944,7 +10944,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory to write to.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before writing.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before writing.</param>
         <param name="val">The value to write.</param>
         <summary>Writes a 32-bit signed integer value into unmanaged memory at a specified offset.</summary>
         <remarks>
@@ -11024,7 +11024,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory of the target object.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before writing.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before writing.</param>
         <param name="val">The value to write.</param>
         <summary>Writes a 32-bit signed integer value to unmanaged memory at a specified offset.</summary>
         <remarks>
@@ -11179,7 +11179,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory to write.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before writing.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before writing.</param>
         <param name="val">The value to write.</param>
         <summary>Writes a 64-bit signed integer value to unmanaged memory at a specified offset.</summary>
         <remarks>
@@ -11259,7 +11259,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory of the target object.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before writing.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before writing.</param>
         <param name="val">The value to write.</param>
         <summary>Writes a 64-bit signed integer value to unmanaged memory at a specified offset.</summary>
         <remarks>
@@ -11414,7 +11414,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory to write to.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before writing.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before writing.</param>
         <param name="val">The value to write.</param>
         <summary>Writes a processor native-sized integer value to unmanaged memory at a specified offset.</summary>
         <remarks>
@@ -11493,7 +11493,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
       </Parameters>
       <Docs>
         <param name="ptr">The base address in unmanaged memory of the target object.</param>
-        <param name="ofs">An additional byte offset, which is added to the <c>ptr</c> parameter before writing.</param>
+        <param name="ofs">An additional byte offset, which is added to the <paramref name="ptr" /> parameter before writing.</param>
         <param name="val">The value to write.</param>
         <summary>Writes a processor native sized integer value to unmanaged memory.</summary>
         <remarks>

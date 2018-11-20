@@ -270,8 +270,8 @@
         <Parameter Name="rgbSignature" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="rgbHash">The data signed with <c>rgbSignature</c>.</param>
-        <param name="rgbSignature">The signature to be verified for <c>rgbHash</c>.</param>
+        <param name="rgbHash">The data signed with <paramref name="rgbSignature" />.</param>
+        <param name="rgbSignature">The signature to be verified for <paramref name="rgbHash" />.</param>
         <summary>Verifies the <see cref="T:System.Security.Cryptography.RSA" /> PKCS#1 signature for the specified data.</summary>
         <returns>
           <see langword="true" /> if <paramref name="rgbSignature" /> matches the signature computed using the specified hash algorithm and key on <paramref name="rgbHash" />; otherwise, <see langword="false" />.</returns>

@@ -91,8 +91,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer from which to read.</param>
-        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
-        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="offset">The starting position from which to read in <paramref name="buffer" />.</param>
+        <param name="count">The number of bytes that can be read from <paramref name="buffer" />.</param>
         <param name="encodings">The possible character encodings of the input.</param>
         <param name="contentType">The Content-Type of the message. Can be <see langword="null" /> if the MIME type is present in the document being read.</param>
         <param name="quotas">The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> to apply to the reader.</param>

@@ -199,7 +199,7 @@
       </Parameters>
       <Docs>
         <param name="array">A one-dimensional array that receives a copy of the collection.</param>
-        <param name="offset">The zero-based index in <c>array</c> at which the copy begins.</param>
+        <param name="offset">The zero-based index in <paramref name="array" /> at which the copy begins.</param>
         <summary>Copies the collection to the specified array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

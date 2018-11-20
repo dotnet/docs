@@ -103,7 +103,7 @@
         <param name="source">The source for events being listened to.</param>
         <param name="data">The data to check. This object is expected to be a <see cref="T:System.Windows.WeakEventManager.ListenerList" /> implementation.</param>
         <param name="purgeAll">
-          <see langword="true" /> to stop listening to <c>source</c>, and completely remove all entries from <c>data</c>.</param>
+          <see langword="true" /> to stop listening to <paramref name="source" />, and completely remove all entries from <paramref name="data" />.</param>
         <summary>Removes inactive listener entries from the data list for the provided source.</summary>
         <returns>
           <see langword="true" /> if some entries were actually removed; otherwise, <see langword="false" />.</returns>

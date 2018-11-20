@@ -216,7 +216,7 @@
         <Parameter Name="bindingOperation" Type="System.Web.Services.Description.OperationBinding" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the <c>bindingOperation</c> parameter.</param>
+        <param name="index">The zero-based index at which to insert the <paramref name="bindingOperation" /> parameter.</param>
         <param name="bindingOperation">The <see cref="T:System.Web.Services.Description.OperationBinding" /> to add to the collection.</param>
         <summary>Adds the specified <see cref="T:System.Web.Services.Description.OperationBinding" /> instance to the <see cref="T:System.Web.Services.Description.OperationBindingCollection" /> at the specified zero-based index.</summary>
         <remarks>

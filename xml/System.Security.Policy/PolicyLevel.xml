@@ -259,7 +259,7 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the <see cref="T:System.Security.NamedPermissionSet" /> to replace.</param>
-        <param name="pSet">The <see cref="T:System.Security.PermissionSet" /> that replaces the <see cref="T:System.Security.NamedPermissionSet" /> specified by the <c>name</c> parameter.</param>
+        <param name="pSet">The <see cref="T:System.Security.PermissionSet" /> that replaces the <see cref="T:System.Security.NamedPermissionSet" /> specified by the <paramref name="name" /> parameter.</param>
         <summary>Replaces a <see cref="T:System.Security.NamedPermissionSet" /> in the current policy level with the specified <see cref="T:System.Security.PermissionSet" />.</summary>
         <returns>A copy of the <see cref="T:System.Security.NamedPermissionSet" /> that was replaced.</returns>
         <remarks>To be added.</remarks>

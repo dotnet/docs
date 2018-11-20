@@ -213,7 +213,7 @@ The following code example demonstrates sending an email message by using the <x
       </Parameters>
       <Docs>
         <param name="address">A <see cref="T:System.String" /> that contains an email address.</param>
-        <param name="displayName">A <see cref="T:System.String" /> that contains the display name associated with <c>address</c>. This parameter can be <see langword="null" />.</param>
+        <param name="displayName">A <see cref="T:System.String" /> that contains the display name associated with <paramref name="address" />. This parameter can be <see langword="null" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.MailAddress" /> class using the specified address and display name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -282,8 +282,8 @@ The following code example demonstrates sending an email message by using the <x
       </Parameters>
       <Docs>
         <param name="address">A <see cref="T:System.String" /> that contains an email address.</param>
-        <param name="displayName">A <see cref="T:System.String" /> that contains the display name associated with <c>address</c>.</param>
-        <param name="displayNameEncoding">The <see cref="T:System.Text.Encoding" /> that defines the character set used for <c>displayName</c>.</param>
+        <param name="displayName">A <see cref="T:System.String" /> that contains the display name associated with <paramref name="address" />.</param>
+        <param name="displayNameEncoding">The <see cref="T:System.Text.Encoding" /> that defines the character set used for <paramref name="displayName" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.MailAddress" /> class using the specified address, display name, and encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

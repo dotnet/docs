@@ -440,7 +440,7 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The string used to initialize the value of the instance. If <c>value</c> is <see langword="null" />, the new <see cref="T:System.Text.StringBuilder" /> will contain the empty string (that is, it contains <see cref="F:System.String.Empty" />).</param>
+        <param name="value">The string used to initialize the value of the instance. If <paramref name="value" /> is <see langword="null" />, the new <see cref="T:System.Text.StringBuilder" /> will contain the empty string (that is, it contains <see cref="F:System.String.Empty" />).</param>
         <summary>Initializes a new instance of the <see cref="T:System.Text.StringBuilder" /> class using the specified string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -570,7 +570,7 @@
         <Parameter Name="capacity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">The string used to initialize the value of the instance. If <c>value</c> is <see langword="null" />, the new <see cref="T:System.Text.StringBuilder" /> will contain the empty string (that is, it contains <see cref="F:System.String.Empty" />).</param>
+        <param name="value">The string used to initialize the value of the instance. If <paramref name="value" /> is <see langword="null" />, the new <see cref="T:System.Text.StringBuilder" /> will contain the empty string (that is, it contains <see cref="F:System.String.Empty" />).</param>
         <param name="capacity">The suggested starting size of the <see cref="T:System.Text.StringBuilder" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Text.StringBuilder" /> class using the specified string and capacity.</summary>
         <remarks>
@@ -637,8 +637,8 @@
         <Parameter Name="capacity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">The string that contains the substring used to initialize the value of this instance. If <c>value</c> is <see langword="null" />, the new <see cref="T:System.Text.StringBuilder" /> will contain the empty string (that is, it contains <see cref="F:System.String.Empty" />).</param>
-        <param name="startIndex">The position within <c>value</c> where the substring begins.</param>
+        <param name="value">The string that contains the substring used to initialize the value of this instance. If <paramref name="value" /> is <see langword="null" />, the new <see cref="T:System.Text.StringBuilder" /> will contain the empty string (that is, it contains <see cref="F:System.String.Empty" />).</param>
+        <param name="startIndex">The position within <paramref name="value" /> where the substring begins.</param>
         <param name="length">The number of characters in the substring.</param>
         <param name="capacity">The suggested starting size of the <see cref="T:System.Text.StringBuilder" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Text.StringBuilder" /> class from the specified substring and capacity.</summary>
@@ -1787,7 +1787,7 @@
       </Parameters>
       <Docs>
         <param name="value">The character to append.</param>
-        <param name="repeatCount">The number of times to append <c>value</c>.</param>
+        <param name="repeatCount">The number of times to append <paramref name="value" />.</param>
         <summary>Appends a specified number of copies of the string representation of a Unicode character to this instance.</summary>
         <returns>A reference to this instance after the append operation has completed.</returns>
         <remarks>
@@ -1928,7 +1928,7 @@
       </Parameters>
       <Docs>
         <param name="value">A character array.</param>
-        <param name="startIndex">The starting position in <c>value</c>.</param>
+        <param name="startIndex">The starting position in <paramref name="value" />.</param>
         <param name="charCount">The number of characters to append.</param>
         <summary>Appends the string representation of a specified subarray of Unicode characters to this instance.</summary>
         <returns>A reference to this instance after the append operation has completed.</returns>
@@ -2012,8 +2012,8 @@
       </Parameters>
       <Docs>
         <param name="value">The string that contains the substring to append.</param>
-        <param name="startIndex">The starting position of the substring within <c>value</c>.</param>
-        <param name="count">The number of characters in <c>value</c> to append.</param>
+        <param name="startIndex">The starting position of the substring within <paramref name="value" />.</param>
+        <param name="count">The number of characters in <paramref name="value" /> to append.</param>
         <summary>Appends a copy of a specified substring to this instance.</summary>
         <returns>A reference to this instance after the append operation has completed.</returns>
         <remarks>
@@ -3619,7 +3619,7 @@
       <Docs>
         <param name="sourceIndex">The starting position in this instance where characters will be copied from. The index is zero-based.</param>
         <param name="destination">The array where characters will be copied.</param>
-        <param name="destinationIndex">The starting position in <c>destination</c> where characters will be copied. The index is zero-based.</param>
+        <param name="destinationIndex">The starting position in <paramref name="destination" /> where characters will be copied. The index is zero-based.</param>
         <param name="count">The number of characters to be copied.</param>
         <summary>Copies the characters from a specified segment of this instance to a specified segment of a destination <see cref="T:System.Char" /> array.</summary>
         <remarks>
@@ -4985,7 +4985,7 @@
       <Docs>
         <param name="index">The position in this instance where insertion begins.</param>
         <param name="value">The string to insert.</param>
-        <param name="count">The number of times to insert <c>value</c>.</param>
+        <param name="count">The number of times to insert <paramref name="value" />.</param>
         <summary>Inserts one or more copies of a specified string into this instance at the specified character position.</summary>
         <returns>A reference to this instance after insertion has completed.</returns>
         <remarks>
@@ -5062,7 +5062,7 @@
       <Docs>
         <param name="index">The position in this instance where insertion begins.</param>
         <param name="value">A character array.</param>
-        <param name="startIndex">The starting index within <c>value</c>.</param>
+        <param name="startIndex">The starting index within <paramref name="value" />.</param>
         <param name="charCount">The number of characters to insert.</param>
         <summary>Inserts the string representation of a specified subarray of Unicode characters into this instance at the specified character position.</summary>
         <returns>A reference to this instance after the insert operation has completed.</returns>
@@ -5334,7 +5334,7 @@ In .NET Core and in the .NET Framework 4.0 and later versions, when you instanti
       </Parameters>
       <Docs>
         <param name="oldChar">The character to replace.</param>
-        <param name="newChar">The character that replaces <c>oldChar</c>.</param>
+        <param name="newChar">The character that replaces <paramref name="oldChar" />.</param>
         <summary>Replaces all occurrences of a specified character in this instance with another specified character.</summary>
         <returns>A reference to this instance with <paramref name="oldChar" /> replaced by <paramref name="newChar" />.</returns>
         <remarks>
@@ -5398,7 +5398,7 @@ In .NET Core and in the .NET Framework 4.0 and later versions, when you instanti
       </Parameters>
       <Docs>
         <param name="oldValue">The string to replace.</param>
-        <param name="newValue">The string that replaces <c>oldValue</c>, or <see langword="null" />.</param>
+        <param name="newValue">The string that replaces <paramref name="oldValue" />, or <see langword="null" />.</param>
         <summary>Replaces all occurrences of a specified string in this instance with another specified string.</summary>
         <returns>A reference to this instance with all instances of <paramref name="oldValue" /> replaced by <paramref name="newValue" />.</returns>
         <remarks>
@@ -5469,7 +5469,7 @@ In .NET Core and in the .NET Framework 4.0 and later versions, when you instanti
       </Parameters>
       <Docs>
         <param name="oldChar">The character to replace.</param>
-        <param name="newChar">The character that replaces <c>oldChar</c>.</param>
+        <param name="newChar">The character that replaces <paramref name="oldChar" />.</param>
         <param name="startIndex">The position in this instance where the substring begins.</param>
         <param name="count">The length of the substring.</param>
         <summary>Replaces, within a substring of this instance, all occurrences of a specified character with another specified character.</summary>
@@ -5543,7 +5543,7 @@ In .NET Core and in the .NET Framework 4.0 and later versions, when you instanti
       </Parameters>
       <Docs>
         <param name="oldValue">The string to replace.</param>
-        <param name="newValue">The string that replaces <c>oldValue</c>, or <see langword="null" />.</param>
+        <param name="newValue">The string that replaces <paramref name="oldValue" />, or <see langword="null" />.</param>
         <param name="startIndex">The position in this instance where the substring begins.</param>
         <param name="count">The length of the substring.</param>
         <summary>Replaces, within a substring of this instance, all occurrences of a specified string with another specified string.</summary>

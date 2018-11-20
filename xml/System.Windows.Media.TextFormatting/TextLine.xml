@@ -64,7 +64,7 @@
       </Parameters>
       <Docs>
         <param name="pixelsPerDip">
-          <c>pixelsPerDip</c> should be set to the TextSource's PixelsPerDip value.</param>
+          <paramref name="pixelsPerDip" /> should be set to the TextSource's PixelsPerDip value.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

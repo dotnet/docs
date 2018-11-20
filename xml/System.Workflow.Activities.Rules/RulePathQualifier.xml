@@ -47,7 +47,7 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the current entity in the path.</param>
-        <param name="next">The next entity, or the field or property, for the path. Null if <c>name</c> is the name of the property or field at the root of the path.</param>
+        <param name="next">The next entity, or the field or property, for the path. Null if <paramref name="name" /> is the name of the property or field at the root of the path.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RulePathQualifier" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

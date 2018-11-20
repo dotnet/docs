@@ -214,7 +214,7 @@
       </Parameters>
       <Docs>
         <param name="array">A one-dimensional array to which the collection contents will be copied.  This array must use zero-based indexing.</param>
-        <param name="index">A zero-based index in <c>array</c> specifying the position at which to begin inserting the copied collection objects.</param>
+        <param name="index">A zero-based index in <paramref name="array" /> specifying the position at which to begin inserting the copied collection objects.</param>
         <summary>Copies the contents of the collection and inserts them into a specified array starting at a specified index position in the array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">Raised when *array* includes items that are not compatible with the type <see cref="T:System.Windows.Documents.TableRow" />, or if *arrayIndex* specifies a position that falls outside of the bounds of *array*.</exception>
@@ -244,7 +244,7 @@
       </Parameters>
       <Docs>
         <param name="array">A one-dimensional <see cref="T:System.Windows.Documents.TableRow" /> array to which the collection contents will be copied.  This array must use zero-based indexing.</param>
-        <param name="index">A zero-based index in <c>array</c> specifying the position at which to begin inserting the copied collection objects.</param>
+        <param name="index">A zero-based index in <paramref name="array" /> specifying the position at which to begin inserting the copied collection objects.</param>
         <summary>Copies the contents of the collection and inserts them into a specified <see cref="T:System.Windows.Documents.TableRow" /> array of starting at a specified index position in the array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">Raised when *array* includes items that are not compatible with the type <see cref="T:System.Windows.Documents.TableRow" />, or if *arrayIndex* specifies a position that falls outside of the bounds of *array*.</exception>
@@ -340,7 +340,7 @@
         <Parameter Name="item" Type="System.Windows.Documents.TableRow" />
       </Parameters>
       <Docs>
-        <param name="index">A zero-based index that specifies the position in the collection at which to insert <c>item</c>.</param>
+        <param name="index">A zero-based index that specifies the position in the collection at which to insert <paramref name="item" />.</param>
         <param name="item">An item to insert into the collection.</param>
         <summary>Inserts a specified item in the collection at a specified index position.</summary>
         <remarks>
@@ -546,7 +546,7 @@
       </Parameters>
       <Docs>
         <param name="index">A zero-based index indicating the beginning of a range of items to remove.</param>
-        <param name="count">The number of items to remove, beginning form the position specified by <c>index</c>.</param>
+        <param name="count">The number of items to remove, beginning form the position specified by <paramref name="index" />.</param>
         <summary>Removes a range of items, specified by beginning index and count, from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

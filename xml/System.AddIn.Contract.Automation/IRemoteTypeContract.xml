@@ -449,7 +449,7 @@
         <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the member.</param>
         <param name="target">The <see cref="T:System.AddIn.Contract.Automation.IRemoteObjectContract" /> on which to invoke the specified member.</param>
         <param name="remoteArgs">An <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" /> that contains the arguments to pass to the member to invoke.</param>
-        <param name="remoteArgModifiers">An array of Boolean values that indicate whether each of the <c>remoteArgs</c> values is passed by reference.</param>
+        <param name="remoteArgModifiers">An array of Boolean values that indicate whether each of the <paramref name="remoteArgs" /> values is passed by reference.</param>
         <param name="localeId">A locale ID to use for locale-specific conversions that might be performed by the member being invoked.</param>
         <summary>Invokes the specified member of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
         <returns>A <see cref="T:System.AddIn.Contract.RemoteArgument" /> that represents the return value of the invoked member.</returns>

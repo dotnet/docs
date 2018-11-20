@@ -53,7 +53,7 @@
       </Parameters>
       <Docs>
         <param name="dateValue">A valid date.</param>
-        <param name="addValue">The number of days to add to <c>dateValue</c>.</param>
+        <param name="addValue">The number of days to add to <paramref name="dateValue" />.</param>
         <summary>Invokes the canonical <see langword="AddDays" /> function. For information about the canonical <see langword="AddDays" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="dateValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -94,7 +94,7 @@
       </Parameters>
       <Docs>
         <param name="dateValue">A valid date time offset.</param>
-        <param name="addValue">The number of days to add to <c>dateValue</c>.</param>
+        <param name="addValue">The number of days to add to <paramref name="dateValue" />.</param>
         <summary>Invokes the canonical <see langword="AddDays" /> function. For information about the canonical <see langword="AddDays" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="dateValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -154,7 +154,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid date.</param>
-        <param name="addValue">The number of hours to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of hours to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddHours" /> function. For information about the canonical <see langword="AddHours" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -195,7 +195,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid date time offset.</param>
-        <param name="addValue">The number of hours to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of hours to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddHours" /> function. For information about the canonical <see langword="AddHours" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -236,7 +236,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid time span.</param>
-        <param name="addValue">The number of hours to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of hours to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddHours" /> function. For information about the canonical <see langword="AddHours" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -296,7 +296,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid date.</param>
-        <param name="addValue">The number of microseconds to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of microseconds to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddMicroseconds" /> function. For information about the canonical <see langword="AddMicroseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -337,7 +337,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid date time offset.</param>
-        <param name="addValue">The number of microseconds to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of microseconds to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddMicroseconds" /> function. For information about the canonical <see langword="AddMicroseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -378,7 +378,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid time span.</param>
-        <param name="addValue">The number of microseconds to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of microseconds to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddMicroseconds" /> function. For information about the canonical <see langword="AddMicroseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -438,7 +438,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid date.</param>
-        <param name="addValue">The number of milliseconds to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of milliseconds to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddMilliseconds" /> function. For information about the canonical <see langword="AddMilliseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -479,7 +479,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid date time offset.</param>
-        <param name="addValue">The number of milliseconds to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of milliseconds to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddMilliseconds" /> function. For information about the canonical <see langword="AddMilliseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -520,7 +520,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid time span.</param>
-        <param name="addValue">The number of milliseconds to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of milliseconds to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddMilliseconds" /> function. For information about the canonical <see langword="AddMilliseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -580,7 +580,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid date.</param>
-        <param name="addValue">The number of minutes to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of minutes to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddMinutes" /> function. For information about the canonical <see langword="AddMinutes" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -621,7 +621,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid date time offset.</param>
-        <param name="addValue">The number of minutes to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of minutes to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddMinutes" /> function. For information about the canonical <see langword="AddMinutes" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -662,7 +662,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid time span.</param>
-        <param name="addValue">The number of minutes to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of minutes to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddMinutes" /> function. For information about the canonical <see langword="AddMinutes" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -722,7 +722,7 @@
       </Parameters>
       <Docs>
         <param name="dateValue">A valid date.</param>
-        <param name="addValue">The number of months to add to <c>dateValue</c>.</param>
+        <param name="addValue">The number of months to add to <paramref name="dateValue" />.</param>
         <summary>Invokes the canonical <see langword="AddMonths" /> function. For information about the canonical <see langword="AddMonths" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="dateValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -763,7 +763,7 @@
       </Parameters>
       <Docs>
         <param name="dateValue">A valid date time offset.</param>
-        <param name="addValue">The number of months to add to <c>dateValue</c>.</param>
+        <param name="addValue">The number of months to add to <paramref name="dateValue" />.</param>
         <summary>Invokes the canonical <see langword="AddMonths" /> function. For information about the canonical <see langword="AddMonths" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="dateValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -823,7 +823,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid date.</param>
-        <param name="addValue">The number of nanoseconds to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of nanoseconds to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddNanoseconds" /> function. For information about the canonical <see langword="AddNanoseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -864,7 +864,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid date time offset.</param>
-        <param name="addValue">The number of nanoseconds to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of nanoseconds to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddNanoseconds" /> function. For information about the canonical <see langword="AddNanoseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -905,7 +905,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid time span.</param>
-        <param name="addValue">The number of nanoseconds to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of nanoseconds to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddNanoseconds" /> function. For information about the canonical <see langword="AddNanoseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -965,7 +965,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid date.</param>
-        <param name="addValue">The number of seconds to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of seconds to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddSeconds" /> function. For information about the canonical <see langword="AddSeconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -1006,7 +1006,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid date time offset.</param>
-        <param name="addValue">The number of seconds to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of seconds to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddSeconds" /> function. For information about the canonical <see langword="AddSeconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -1047,7 +1047,7 @@
       </Parameters>
       <Docs>
         <param name="timeValue">A valid time span.</param>
-        <param name="addValue">The number of seconds to add to <c>timeValue</c>.</param>
+        <param name="addValue">The number of seconds to add to <paramref name="timeValue" />.</param>
         <summary>Invokes the canonical <see langword="AddSeconds" /> function. For information about the canonical <see langword="AddSeconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -1107,7 +1107,7 @@
       </Parameters>
       <Docs>
         <param name="dateValue">A valid date.</param>
-        <param name="addValue">The number of years to add to <c>dateValue</c>.</param>
+        <param name="addValue">The number of years to add to <paramref name="dateValue" />.</param>
         <summary>Invokes the canonical <see langword="AddYears" /> function. For information about the canonical <see langword="AddYears" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="dateValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
@@ -1148,7 +1148,7 @@
       </Parameters>
       <Docs>
         <param name="dateValue">A valid date time offset.</param>
-        <param name="addValue">The number of years to add to <c>dateValue</c>.</param>
+        <param name="addValue">The number of years to add to <paramref name="dateValue" />.</param>
         <summary>Invokes the canonical <see langword="AddYears" /> function. For information about the canonical <see langword="AddYears" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="dateValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>

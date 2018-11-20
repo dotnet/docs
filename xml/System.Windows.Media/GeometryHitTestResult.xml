@@ -49,7 +49,7 @@
       </Parameters>
       <Docs>
         <param name="visualHit">The visual object that is hit during a hit test.</param>
-        <param name="intersectionDetail">Describes the intersection between a <see cref="T:System.Windows.Media.Geometry" /> and <c>visualHit</c>.</param>
+        <param name="intersectionDetail">Describes the intersection between a <see cref="T:System.Windows.Media.Geometry" /> and <paramref name="visualHit" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GeometryHitTestResult" /> class by using a specified visual object and <see cref="T:System.Windows.Media.IntersectionDetail" /> value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

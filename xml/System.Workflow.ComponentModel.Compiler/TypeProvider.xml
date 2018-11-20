@@ -403,7 +403,7 @@
       </Parameters>
       <Docs>
         <param name="name">The type name.</param>
-        <param name="throwOnError">A value that indicates whether to throw an exception if <c>name</c> is not resolvable.</param>
+        <param name="throwOnError">A value that indicates whether to throw an exception if <paramref name="name" /> is not resolvable.</param>
         <summary>Gets the type from the set of assemblies added to the <see langword="TypeProvider" /> using <see cref="M:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssembly(System.Reflection.Assembly)" />, <see cref="M:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssemblyReference(System.String)" />, or <see cref="M:System.Workflow.ComponentModel.Compiler.TypeProvider.AddCodeCompileUnit(System.CodeDom.CodeCompileUnit)" />.</summary>
         <returns>The requested <see cref="T:System.Type" />.</returns>
         <remarks>

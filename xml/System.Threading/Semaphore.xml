@@ -275,7 +275,7 @@
         <param name="initialCount">The initial number of requests for the semaphore that can be satisfied concurrently.</param>
         <param name="maximumCount">The maximum number of requests for the semaphore that can be satisfied concurrently.</param>
         <param name="name">The name of a named system semaphore object.</param>
-        <param name="createdNew">When this method returns, contains <see langword="true" /> if a local semaphore was created (that is, if <c>name</c> is <see langword="null" /> or an empty string) or if the specified named system semaphore was created; <see langword="false" /> if the specified named system semaphore already existed. This parameter is passed uninitialized.</param>
+        <param name="createdNew">When this method returns, contains <see langword="true" /> if a local semaphore was created (that is, if <paramref name="name" /> is <see langword="null" /> or an empty string) or if the specified named system semaphore was created; <see langword="false" /> if the specified named system semaphore already existed. This parameter is passed uninitialized.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.Semaphore" /> class, specifying the initial number of entries and the maximum number of concurrent entries, optionally specifying the name of a system semaphore object, and specifying a variable that receives a value indicating whether a new system semaphore was created.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -354,7 +354,7 @@
         <param name="initialCount">The initial number of requests for the semaphore that can be satisfied concurrently.</param>
         <param name="maximumCount">The maximum number of requests for the semaphore that can be satisfied concurrently.</param>
         <param name="name">The name of a named system semaphore object.</param>
-        <param name="createdNew">When this method returns, contains <see langword="true" /> if a local semaphore was created (that is, if <c>name</c> is <see langword="null" /> or an empty string) or if the specified named system semaphore was created; <see langword="false" /> if the specified named system semaphore already existed. This parameter is passed uninitialized.</param>
+        <param name="createdNew">When this method returns, contains <see langword="true" /> if a local semaphore was created (that is, if <paramref name="name" /> is <see langword="null" /> or an empty string) or if the specified named system semaphore was created; <see langword="false" /> if the specified named system semaphore already existed. This parameter is passed uninitialized.</param>
         <param name="semaphoreSecurity">A <see cref="T:System.Security.AccessControl.SemaphoreSecurity" /> object that represents the access control security to be applied to the named system semaphore.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.Semaphore" /> class, specifying the initial number of entries and the maximum number of concurrent entries, optionally specifying the name of a system semaphore object, specifying a variable that receives a value indicating whether a new system semaphore was created, and specifying security access control for the system semaphore.</summary>
         <remarks>

@@ -207,7 +207,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer to read the data into.</param>
-        <param name="offset">The byte offset in <c>buffer</c> at which to begin writing data read from the stream.</param>
+        <param name="offset">The byte offset in <paramref name="buffer" /> at which to begin writing data read from the stream.</param>
         <param name="count">The maximum number of bytes to read.</param>
         <param name="callback">An optional asynchronous callback, to be called when the read is complete.</param>
         <param name="state">A user-provided object that distinguishes this particular asynchronous read request from other requests</param>
@@ -250,7 +250,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer to write data from.</param>
-        <param name="offset">The byte offset in <c>buffer</c> from which to begin writing.</param>
+        <param name="offset">The byte offset in <paramref name="buffer" /> from which to begin writing.</param>
         <param name="count">The maximum number of bytes to write.</param>
         <param name="callback">An optional asynchronous callback, to be called when the write is complete.</param>
         <param name="state">A user-provided object that distinguishes this particular asynchronous write request from other requests.</param>
@@ -682,7 +682,7 @@
         <Parameter Name="origin" Type="System.IO.SeekOrigin" />
       </Parameters>
       <Docs>
-        <param name="offset">A byte offset relative to the <c>origin</c> parameter</param>
+        <param name="offset">A byte offset relative to the <paramref name="origin" /> parameter</param>
         <param name="origin">A value of type <see cref="T:System.IO.SeekOrigin" /> indicating the reference point used to obtain the new position</param>
         <summary>Sets the position within the current stream.</summary>
         <returns>The new position within the current stream.</returns>
@@ -769,8 +769,8 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">An array of bytes. This method copies <c>count</c> bytes from <c>buffer</c> to the current stream.</param>
-        <param name="offset">The zero-based byte offset in <c>buffer</c> at which to begin copying bytes to the current stream.</param>
+        <param name="buffer">An array of bytes. This method copies <paramref name="count" /> bytes from <paramref name="buffer" /> to the current stream.</param>
+        <param name="offset">The zero-based byte offset in <paramref name="buffer" /> at which to begin copying bytes to the current stream.</param>
         <param name="count">The number of bytes to be written to the current stream.</param>
         <summary>Writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written.</summary>
         <remarks>

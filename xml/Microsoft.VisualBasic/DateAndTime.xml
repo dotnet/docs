@@ -78,8 +78,8 @@ thisDate = Today
       </Parameters>
       <Docs>
         <param name="Interval">Required. <see langword="DateInterval" /> enumeration value or <see langword="String" /> expression representing the time interval you want to add.</param>
-        <param name="Number">Required. <see langword="Double" />. Floating-point expression representing the number of intervals you want to add. <c>Number</c> can be positive (to get date/time values in the future) or negative (to get date/time values in the past). It can contain a fractional part when <c>Interval</c> specifies hours, minutes, or seconds. For other values of <c>Interval</c>, any fractional part of <c>Number</c> is ignored.</param>
-        <param name="DateValue">Required. <see langword="Date" />. An expression representing the date and time to which the interval is to be added. <c>DateValue</c> itself is not changed in the calling program.</param>
+        <param name="Number">Required. <see langword="Double" />. Floating-point expression representing the number of intervals you want to add. <paramref name="Number" /> can be positive (to get date/time values in the future) or negative (to get date/time values in the past). It can contain a fractional part when <paramref name="Interval" /> specifies hours, minutes, or seconds. For other values of <paramref name="Interval" />, any fractional part of <paramref name="Number" /> is ignored.</param>
+        <param name="DateValue">Required. <see langword="Date" />. An expression representing the date and time to which the interval is to be added. <paramref name="DateValue" /> itself is not changed in the calling program.</param>
         <summary>Returns a <see langword="Date" /> value containing a date and time value to which a specified time interval has been added.</summary>
         <returns>Returns a <see langword="Date" /> value containing a date and time value to which a specified time interval has been added.</returns>
         <remarks>
@@ -171,8 +171,8 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
       </Parameters>
       <Docs>
         <param name="Interval">Required. <see langword="DateInterval" /> enumeration value or <see langword="String" /> expression representing the time interval you want to add.</param>
-        <param name="Number">Required. <see langword="Double" />. Floating-point expression representing the number of intervals you want to add. <c>Number</c> can be positive (to get date/time values in the future) or negative (to get date/time values in the past). It can contain a fractional part when <c>Interval</c> specifies hours, minutes, or seconds. For other values of <c>Interval</c>, any fractional part of <c>Number</c> is ignored.</param>
-        <param name="DateValue">Required. <see langword="Date" />. An expression representing the date and time to which the interval is to be added. <c>DateValue</c> itself is not changed in the calling program.</param>
+        <param name="Number">Required. <see langword="Double" />. Floating-point expression representing the number of intervals you want to add. <paramref name="Number" /> can be positive (to get date/time values in the future) or negative (to get date/time values in the past). It can contain a fractional part when <paramref name="Interval" /> specifies hours, minutes, or seconds. For other values of <paramref name="Interval" />, any fractional part of <paramref name="Number" /> is ignored.</param>
+        <param name="DateValue">Required. <see langword="Date" />. An expression representing the date and time to which the interval is to be added. <paramref name="DateValue" /> itself is not changed in the calling program.</param>
         <summary>Returns a <see langword="Date" /> value containing a date and time value to which a specified time interval has been added.</summary>
         <returns>Returns a <see langword="Date" /> value containing a date and time value to which a specified time interval has been added.</returns>
         <remarks>
@@ -273,7 +273,7 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
         <Parameter Name="WeekOfYear" Type="Microsoft.VisualBasic.FirstWeekOfYear" />
       </Parameters>
       <Docs>
-        <param name="Interval">Required. <see langword="DateInterval" /> enumeration value or <see langword="String" /> expression representing the time interval you want to use as the unit of difference between <c>Date1</c> and <c>Date2</c>.</param>
+        <param name="Interval">Required. <see langword="DateInterval" /> enumeration value or <see langword="String" /> expression representing the time interval you want to use as the unit of difference between <paramref name="Date1" /> and <paramref name="Date2" />.</param>
         <param name="Date1">Required. <see langword="Date" />. The first date/time value you want to use in the calculation.</param>
         <param name="Date2">Required. <see langword="Date" />. The second date/time value you want to use in the calculation.</param>
         <param name="DayOfWeek">Optional. A value chosen from the <see langword="FirstDayOfWeek" /> enumeration that specifies the first day of the week. If not specified, <see langword="FirstDayOfWeek.Sunday" /> is used.</param>
@@ -398,7 +398,7 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
         <Parameter Name="WeekOfYear" Type="Microsoft.VisualBasic.FirstWeekOfYear" />
       </Parameters>
       <Docs>
-        <param name="Interval">Required. <see langword="DateInterval" /> enumeration value or <see langword="String" /> expression representing the time interval you want to use as the unit of difference between <c>Date1</c> and <c>Date2</c>.</param>
+        <param name="Interval">Required. <see langword="DateInterval" /> enumeration value or <see langword="String" /> expression representing the time interval you want to use as the unit of difference between <paramref name="Date1" /> and <paramref name="Date2" />.</param>
         <param name="Date1">Required. <see langword="Date" />. The first date/time value you want to use in the calculation.</param>
         <param name="Date2">Required. <see langword="Date" />. The second date/time value you want to use in the calculation.</param>
         <param name="DayOfWeek">Optional. A value chosen from the <see langword="FirstDayOfWeek" /> enumeration that specifies the first day of the week. If not specified, <see langword="FirstDayOfWeek.Sunday" /> is used.</param>
@@ -745,25 +745,25 @@ Dim LastMidnight As Date = CurrDatTim.Date   ' At midnight.
         <Parameter Name="Day" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Year">Required. <see langword="Integer" /> expression from 1 through 9999. However, values below this range are also accepted. If <c>Year</c> is 0 through 99, it is interpreted as being between 1930 and 2029, as explained in the "Remarks" section below. If <c>Year</c> is less than 1, it is subtracted from the current year.</param>
-        <param name="Month">Required. <see langword="Integer" /> expression from 1 through 12. However, values outside this range are also accepted. The value of <c>Month</c> is offset by 1 and applied to January of the calculated year. In other words, (<c>Month</c> - 1) is added to January. The year is recalculated if necessary. The following results illustrate this effect:  
+        <param name="Year">Required. <see langword="Integer" /> expression from 1 through 9999. However, values below this range are also accepted. If <paramref name="Year" /> is 0 through 99, it is interpreted as being between 1930 and 2029, as explained in the "Remarks" section below. If <paramref name="Year" /> is less than 1, it is subtracted from the current year.</param>
+        <param name="Month">Required. <see langword="Integer" /> expression from 1 through 12. However, values outside this range are also accepted. The value of <paramref name="Month" /> is offset by 1 and applied to January of the calculated year. In other words, (<paramref name="Month" /> - 1) is added to January. The year is recalculated if necessary. The following results illustrate this effect:  
   
- If <c>Month</c> is 1, the result is January of the calculated year.  
+ If <paramref name="Month" /> is 1, the result is January of the calculated year.  
   
- If <c>Month</c> is 0, the result is December of the previous year.  
+ If <paramref name="Month" /> is 0, the result is December of the previous year.  
   
- If <c>Month</c> is -1, the result is November of the previous year.  
+ If <paramref name="Month" /> is -1, the result is November of the previous year.  
   
- If <c>Month</c> is 13, the result is January of the following year.</param>
-        <param name="Day">Required. <see langword="Integer" /> expression from 1 through 31. However, values outside this range are also accepted. The value of <c>Day</c> is offset by 1 and applied to the first day of the calculated month. In other words, (<c>Day</c> - 1) is added to the first of the month. The month and year are recalculated if necessary. The following results illustrate this effect:  
+ If <paramref name="Month" /> is 13, the result is January of the following year.</param>
+        <param name="Day">Required. <see langword="Integer" /> expression from 1 through 31. However, values outside this range are also accepted. The value of <paramref name="Day" /> is offset by 1 and applied to the first day of the calculated month. In other words, (<paramref name="Day" /> - 1) is added to the first of the month. The month and year are recalculated if necessary. The following results illustrate this effect:  
   
- If <c>Day</c> is 1, the result is the first day of the calculated month.  
+ If <paramref name="Day" /> is 1, the result is the first day of the calculated month.  
   
- If <c>Day</c> is 0, the result is the last day of the previous month.  
+ If <paramref name="Day" /> is 0, the result is the last day of the previous month.  
   
- If <c>Day</c> is -1, the result is the penultimate day of the previous month.  
+ If <paramref name="Day" /> is -1, the result is the penultimate day of the previous month.  
   
- If <c>Day</c> is past the end of the current month, the result is the appropriate day of the following month. For example, if <c>Month</c> is 4 and <c>Day</c> is 31, the result is May 1.</param>
+ If <paramref name="Day" /> is past the end of the current month, the result is the appropriate day of the following month. For example, if <paramref name="Month" /> is 4 and <paramref name="Day" /> is 31, the result is May 1.</param>
         <summary>Returns a <see langword="Date" /> value representing a specified year, month, and day, with the time information set to midnight (00:00:00).</summary>
         <returns>Returns a <see langword="Date" /> value representing a specified year, month, and day, with the time information set to midnight (00:00:00).</returns>
         <remarks>
@@ -1158,7 +1158,7 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
         <Parameter Name="Abbreviate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Month">Required. <see langword="Integer" />. The numeric designation of the month, from 1 through 13; 1 indicates January and 12 indicates December. You can use the value 13 with a 13-month calendar. If your system is using a 12-month calendar and <c>Month</c> is 13, <see langword="MonthName" /> returns an empty string.</param>
+        <param name="Month">Required. <see langword="Integer" />. The numeric designation of the month, from 1 through 13; 1 indicates January and 12 indicates December. You can use the value 13 with a 13-month calendar. If your system is using a 12-month calendar and <paramref name="Month" /> is 13, <see langword="MonthName" /> returns an empty string.</param>
         <param name="Abbreviate">Optional. <see langword="Boolean" /> value that indicates if the month name is to be abbreviated. If omitted, the default is <see langword="False" />, which means the month name is not abbreviated.</param>
         <summary>Returns a <see langword="String" /> value containing the name of the specified month.</summary>
         <returns>Returns a <see langword="String" /> value containing the name of the specified month.</returns>
@@ -1403,8 +1403,8 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       </Parameters>
       <Docs>
         <param name="Hour">Required. <see langword="Integer" /> expression from 0 through 23. However, values outside this range are also accepted.</param>
-        <param name="Minute">Required. <see langword="Integer" /> expression from 0 through 59. However, values outside this range are also accepted. The value of <c>Minute</c> is added to the calculated hour, so a negative value specifies minutes before that hour.</param>
-        <param name="Second">Required. <see langword="Integer" /> expression from 0 through 59. However, values outside this range are also accepted. The value of <c>Second</c> is added to the calculated minute, so a negative value specifies seconds before that minute.</param>
+        <param name="Minute">Required. <see langword="Integer" /> expression from 0 through 59. However, values outside this range are also accepted. The value of <paramref name="Minute" /> is added to the calculated hour, so a negative value specifies minutes before that hour.</param>
+        <param name="Second">Required. <see langword="Integer" /> expression from 0 through 59. However, values outside this range are also accepted. The value of <paramref name="Second" /> is added to the calculated minute, so a negative value specifies seconds before that minute.</param>
         <summary>Returns a <see langword="Date" /> value representing a specified hour, minute, and second, with the date information set relative to January 1 of the year 1.</summary>
         <returns>Returns a <see langword="Date" /> value representing a specified hour, minute, and second, with the date information set relative to January 1 of the year 1.</returns>
         <remarks>
@@ -1700,7 +1700,7 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
         <Parameter Name="FirstDayOfWeekValue" Type="Microsoft.VisualBasic.FirstDayOfWeek" />
       </Parameters>
       <Docs>
-        <param name="Weekday">Required. <see langword="Integer" />. The numeric designation for the weekday, from 1 through 7; 1 indicates the first day of the week and 7 indicates the last day of the week. The identities of the first and last days depend on the setting of <c>FirstDayOfWeekValue</c>.</param>
+        <param name="Weekday">Required. <see langword="Integer" />. The numeric designation for the weekday, from 1 through 7; 1 indicates the first day of the week and 7 indicates the last day of the week. The identities of the first and last days depend on the setting of <paramref name="FirstDayOfWeekValue" />.</param>
         <param name="Abbreviate">Optional. <see langword="Boolean" /> value that indicates if the weekday name is to be abbreviated. If omitted, the default is <see langword="False" />, which means the weekday name is not abbreviated.</param>
         <param name="FirstDayOfWeekValue">Optional. A value chosen from the <see langword="FirstDayOfWeek" /> enumeration that specifies the first day of the week. If not specified, <see langword="FirstDayOfWeek.System" /> is used.</param>
         <summary>Returns a <see langword="String" /> value containing the name of the specified weekday.</summary>

@@ -285,7 +285,7 @@
       </Parameters>
       <Docs>
         <param name="destination">The array to receive a copy of the vector values.</param>
-        <param name="startIndex">The starting index in <c>destination</c> at which to begin the copy operation.</param>
+        <param name="startIndex">The starting index in <paramref name="destination" /> at which to begin the copy operation.</param>
         <summary>Copies the vector instance to a specified destination array starting at a specified index position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

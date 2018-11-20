@@ -161,7 +161,7 @@
       </Parameters>
       <Docs>
         <param name="href">The URL for a service description. Initializes the <see cref="P:System.Web.Services.Discovery.ContractReference.Ref" /> property value.</param>
-        <param name="docRef">The URL for a XML Web service implementing the service description at <c>href</c>. Initializes the <see cref="P:System.Web.Services.Discovery.ContractReference.DocRef" /> property value.</param>
+        <param name="docRef">The URL for a XML Web service implementing the service description at <paramref name="href" />. Initializes the <see cref="P:System.Web.Services.Discovery.ContractReference.DocRef" /> property value.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.ContractReference" /> class using the supplied references to a service description and a XML Web service implementing the service description.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -471,7 +471,7 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="contentType">The MIME content type of <c>stream</c>.</param>
+        <param name="contentType">The MIME content type of <paramref name="stream" />.</param>
         <param name="stream">The <see cref="T:System.IO.Stream" /> containing the referenced document.</param>
         <summary>Resolves whether the referenced document is valid.</summary>
         <remarks>
@@ -559,7 +559,7 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="document">The <see cref="T:System.Web.Services.Description.ServiceDescription" /> to write into <c>stream</c>.</param>
+        <param name="document">The <see cref="T:System.Web.Services.Description.ServiceDescription" /> to write into <paramref name="stream" />.</param>
         <param name="stream">The <see cref="T:System.IO.Stream" /> into which the serialized <see cref="T:System.Web.Services.Description.ServiceDescription" /> is written.</param>
         <summary>Writes the passed-in service description into the passed-in <see cref="T:System.IO.Stream" />.</summary>
         <remarks>

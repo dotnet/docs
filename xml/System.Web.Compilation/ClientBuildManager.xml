@@ -572,9 +572,9 @@
       </Parameters>
       <Docs>
         <param name="virtualPath">The virtual path to the file.</param>
-        <param name="virtualFileString">The contents of the file represented by the <c>virtualPath</c> parameter.</param>
+        <param name="virtualFileString">The contents of the file represented by the <paramref name="virtualPath" /> parameter.</param>
         <param name="codeDomProviderType">When this method returns, contains the codeDOM provider type used for code generation and compilation.</param>
-        <param name="compilerParameters">When this method returns, contains the properties that define how the file represented by the <c>virtualPath</c> parameter will be compiled.</param>
+        <param name="compilerParameters">When this method returns, contains the properties that define how the file represented by the <paramref name="virtualPath" /> parameter will be compiled.</param>
         <param name="linePragmasTable">When this method returns, contains a dictionary of line pragmas.</param>
         <summary>Returns the contents, codeDOM tree, compiler type, and compiler parameters for a file represented by a virtual path.</summary>
         <returns>A <see cref="T:System.CodeDom.CodeCompileUnit" /> for the given file.</returns>

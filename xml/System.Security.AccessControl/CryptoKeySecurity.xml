@@ -129,7 +129,7 @@
         <param name="accessMask">The access mask of this rule. The access mask is a 32-bit collection of anonymous bits, the meaning of which is defined by the individual integrators.</param>
         <param name="isInherited">true if this rule is inherited from a parent container.</param>
         <param name="inheritanceFlags">Specifies the inheritance properties of the access rule.</param>
-        <param name="propagationFlags">Specifies whether inherited access rules are automatically propagated. The propagation flags are ignored if <c>inheritanceFlags</c> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
+        <param name="propagationFlags">Specifies whether inherited access rules are automatically propagated. The propagation flags are ignored if <paramref name="inheritanceFlags" /> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
         <param name="type">Specifies the valid access control type.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.AccessRule" /> class with the specified values.</summary>
         <returns>The <see cref="T:System.Security.AccessControl.AccessRule" /> object that this method creates.</returns>
@@ -255,7 +255,7 @@
         <param name="isInherited">
           <see langword="true" /> if this rule is inherited from a parent container.</param>
         <param name="inheritanceFlags">Specifies the inheritance properties of the audit rule.</param>
-        <param name="propagationFlags">Specifies whether inherited audit rules are automatically propagated. The propagation flags are ignored if <c>inheritanceFlags</c> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
+        <param name="propagationFlags">Specifies whether inherited audit rules are automatically propagated. The propagation flags are ignored if <paramref name="inheritanceFlags" /> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
         <param name="flags">Specifies the conditions for which the rule is audited.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.AuditRule" /> class with the specified values.</summary>
         <returns>The <see cref="T:System.Security.AccessControl.AuditRule" /> object that this method creates.</returns>

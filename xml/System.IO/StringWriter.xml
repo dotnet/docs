@@ -1177,7 +1177,7 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The string to write. If <c>value</c> is <see langword="null" />, nothing is written to the text stream.</param>
+        <param name="value">The string to write. If <paramref name="value" /> is <see langword="null" />, nothing is written to the text stream.</param>
         <summary>Writes a string to the current string asynchronously.</summary>
         <returns>A task that represents the asynchronous write operation.</returns>
         <remarks>

@@ -559,7 +559,7 @@
   
  Thread safe.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <c>message</c> is null.</exception>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="message" /> is null.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="LogError">
@@ -1372,7 +1372,7 @@
   
  Thread safe.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Thrown when <c>message</c> is null.</exception>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="message" /> is null.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="LogMessageFromResources">

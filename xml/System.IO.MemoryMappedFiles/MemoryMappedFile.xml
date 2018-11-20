@@ -584,7 +584,7 @@
         <Parameter Name="leaveOpen" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="fileStream">The <c>fileStream</c> to the file to map.</param>
+        <param name="fileStream">The <paramref name="fileStream" /> to the file to map.</param>
         <param name="mapName">A name to assign to the memory-mapped file, or <see langword="null" /> for a <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFile" /> that you do not intend to share across processes.</param>
         <param name="capacity">The maximum size, in bytes, to allocate to the memory-mapped file. Specify 0 to set the capacity to the size of the file on disk.</param>
         <param name="access">One of the enumeration values that specifies the type of access allowed to the memory-mapped file.  
@@ -595,7 +595,7 @@
  This parameter can be <see langword="null" />.</param>
         <param name="inheritability">One of the enumeration values that specifies whether a handle to the memory-mapped file can be inherited by a child process. The default is <see cref="F:System.IO.HandleInheritability.None" />.</param>
         <param name="leaveOpen">
-          <see langword="true" /> to not dispose <c>fileStream</c> after the <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFile" /> is closed; <see langword="false" /> to dispose <c>fileStream</c>.</param>
+          <see langword="true" /> to not dispose <paramref name="fileStream" /> after the <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFile" /> is closed; <see langword="false" /> to dispose <paramref name="fileStream" />.</param>
         <summary>Creates a memory-mapped file that has the specified name, capacity, access type, security permissions, inheritability, and disposal requirement from a file on disk.</summary>
         <returns>A memory-mapped file that has the specified characteristics.</returns>
         <remarks>
@@ -1336,7 +1336,7 @@ Process C says: True
       </Parameters>
       <Docs>
         <param name="offset">The byte at which to start the view.</param>
-        <param name="size">The size of the view. Specify 0 (zero) to create a view that starts at <c>offset</c> and ends approximately at the end of the memory-mapped file.</param>
+        <param name="size">The size of the view. Specify 0 (zero) to create a view that starts at <paramref name="offset" /> and ends approximately at the end of the memory-mapped file.</param>
         <summary>Creates a <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedViewAccessor" /> that maps to a view of the memory-mapped file, and that has the specified offset and size.</summary>
         <returns>A randomly accessible block of memory.</returns>
         <remarks>
@@ -1406,7 +1406,7 @@ Process C says: True
       </Parameters>
       <Docs>
         <param name="offset">The byte at which to start the view.</param>
-        <param name="size">The size of the view. Specify 0 (zero) to create a view that starts at <c>offset</c> and ends approximately at the end of the memory-mapped file.</param>
+        <param name="size">The size of the view. Specify 0 (zero) to create a view that starts at <paramref name="offset" /> and ends approximately at the end of the memory-mapped file.</param>
         <param name="access">One of the enumeration values that specifies the type of access allowed to the memory-mapped file. The default is <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite" />.</param>
         <summary>Creates a <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedViewAccessor" /> that maps to a view of the memory-mapped file, and that has the specified offset, size, and access restrictions.</summary>
         <returns>A randomly accessible block of memory.</returns>
@@ -1530,7 +1530,7 @@ Process C says: True
       </Parameters>
       <Docs>
         <param name="offset">The byte at which to start the view.</param>
-        <param name="size">The size of the view. Specify 0 (zero) to create a view that starts at <c>offset</c> and ends approximately at the end of the memory-mapped file.</param>
+        <param name="size">The size of the view. Specify 0 (zero) to create a view that starts at <paramref name="offset" /> and ends approximately at the end of the memory-mapped file.</param>
         <summary>Creates a stream that maps to a view of the memory-mapped file, and that has the specified offset and size.</summary>
         <returns>A stream of memory that has the specified offset and size.</returns>
         <remarks>
@@ -1593,7 +1593,7 @@ Process C says: True
       </Parameters>
       <Docs>
         <param name="offset">The byte at which to start the view.</param>
-        <param name="size">The size of the view. Specify 0 (zero) to create a view that starts at <c>offset</c> and ends approximately at the end of the memory-mapped file.</param>
+        <param name="size">The size of the view. Specify 0 (zero) to create a view that starts at <paramref name="offset" /> and ends approximately at the end of the memory-mapped file.</param>
         <param name="access">One of the enumeration values that specifies the type of access allowed to the memory-mapped file. The default is <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite" />.</param>
         <summary>Creates a stream that maps to a view of the memory-mapped file, and that has the specified offset, size, and access type.</summary>
         <returns>A stream of memory that has the specified characteristics.</returns>

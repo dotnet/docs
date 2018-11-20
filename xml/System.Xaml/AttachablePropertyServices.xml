@@ -181,7 +181,7 @@
       <Docs>
         <param name="instance">A specific attachable property store that implements <see cref="T:System.Xaml.IAttachedPropertyStore" />; or any non-null object to use a static default attachable property store.</param>
         <param name="name">The identifier of the attachable property entry for which to get a value.</param>
-        <param name="value">Out parameter. When this method returns, contains the destination object for the value if <c>name</c> exists in the store and has a value.</param>
+        <param name="value">Out parameter. When this method returns, contains the destination object for the value if <paramref name="name" /> exists in the store and has a value.</param>
         <summary>Attempts to get a value for the specified attachable property in the specified store. Does not throw an exception if the specific attachable property does not exist in the store.</summary>
         <returns>
           <see langword="true" /> if an attachable property entry for <paramref name="name" /> was found in the store and a value was posted to <paramref name="value" />; otherwise, <see langword="false" />.</returns>
@@ -215,7 +215,7 @@
         <typeparam name="T">The expected type of the output.</typeparam>
         <param name="instance">A specific attachable property store that implements <see cref="T:System.Xaml.IAttachedPropertyStore" />; or any non-null object to access a static default attachable property store.</param>
         <param name="name">The identifier of the attachable property entry for which to get a value.</param>
-        <param name="value">Out parameter. When this method returns, contains the destination object for the value if <c>name</c> exists in the store and has a value.</param>
+        <param name="value">Out parameter. When this method returns, contains the destination object for the value if <paramref name="name" /> exists in the store and has a value.</param>
         <summary>Attempts to get a value for the specified attachable property in the specified store, returning a generic output form. Does not throw an exception if the specific attachable property does not exist in the store.</summary>
         <returns>
           <see langword="true" /> if an attachable property entry for <paramref name="name" /> was found in the store and a value was posted to <paramref name="value" />; otherwise, <see langword="false" />.</returns>

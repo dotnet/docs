@@ -278,7 +278,7 @@ Dim sampleObject As Object = New SampleDynamicObject()
       </Parameters>
       <Docs>
         <param name="binder">Provides information about the binary operation. The <c>binder.Operation</c> property returns an <see cref="T:System.Linq.Expressions.ExpressionType" /> object. For example, for the <c>sum = first + second</c> statement, where <c>first</c> and <c>second</c> are derived from the <see langword="DynamicObject" /> class, <c>binder.Operation</c> returns <c>ExpressionType.Add</c>.</param>
-        <param name="arg">The right operand for the binary operation. For example, for the <c>sum = first + second</c> statement, where <c>first</c> and <c>second</c> are derived from the <see langword="DynamicObject" /> class, <c>arg</c> is equal to <c>second</c>.</param>
+        <param name="arg">The right operand for the binary operation. For example, for the <c>sum = first + second</c> statement, where <c>first</c> and <c>second</c> are derived from the <see langword="DynamicObject" /> class, <paramref name="arg" /> is equal to <c>second</c>.</param>
         <param name="result">The result of the binary operation.</param>
         <summary>Provides implementation for binary operations. Classes derived from the <see cref="T:System.Dynamic.DynamicObject" /> class can override this method to specify dynamic behavior for operations such as addition and multiplication.</summary>
         <returns>
@@ -677,7 +677,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       </Parameters>
       <Docs>
         <param name="binder">Provides information about the object that called the dynamic operation. The <c>binder.Name</c> property provides the name of the member on which the dynamic operation is performed. For example, for the <c>Console.WriteLine(sampleObject.SampleProperty)</c> statement, where <c>sampleObject</c> is an instance of the class derived from the <see cref="T:System.Dynamic.DynamicObject" /> class, <c>binder.Name</c> returns "SampleProperty". The <c>binder.IgnoreCase</c> property specifies whether the member name is case-sensitive.</param>
-        <param name="result">The result of the get operation. For example, if the method is called for a property, you can assign the property value to <c>result</c>.</param>
+        <param name="result">The result of the get operation. For example, if the method is called for a property, you can assign the property value to <paramref name="result" />.</param>
         <summary>Provides the implementation for operations that get member values. Classes derived from the <see cref="T:System.Dynamic.DynamicObject" /> class can override this method to specify dynamic behavior for operations such as getting a value for a property.</summary>
         <returns>
           <see langword="true" /> if the operation is successful; otherwise, <see langword="false" />. If this method returns <see langword="false" />, the run-time binder of the language determines the behavior. (In most cases, a run-time exception is thrown.)</returns>
@@ -873,7 +873,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       <Docs>
         <param name="binder">Provides information about the operation.</param>
         <param name="indexes">The indexes that are used in the operation. For example, for the <c>sampleObject[3] = 10</c> operation in C# (<c>sampleObject(3) = 10</c> in Visual Basic), where <c>sampleObject</c> is derived from the <see cref="T:System.Dynamic.DynamicObject" /> class, <c>indexes[0]</c> is equal to 3.</param>
-        <param name="value">The value to set to the object that has the specified index. For example, for the <c>sampleObject[3] = 10</c> operation in C# (<c>sampleObject(3) = 10</c> in Visual Basic), where <c>sampleObject</c> is derived from the <see cref="T:System.Dynamic.DynamicObject" /> class, <c>value</c> is equal to 10.</param>
+        <param name="value">The value to set to the object that has the specified index. For example, for the <c>sampleObject[3] = 10</c> operation in C# (<c>sampleObject(3) = 10</c> in Visual Basic), where <c>sampleObject</c> is derived from the <see cref="T:System.Dynamic.DynamicObject" /> class, <paramref name="value" /> is equal to 10.</param>
         <summary>Provides the implementation for operations that set a value by index. Classes derived from the <see cref="T:System.Dynamic.DynamicObject" /> class can override this method to specify dynamic behavior for operations that access objects by a specified index.</summary>
         <returns>
           <see langword="true" /> if the operation is successful; otherwise, <see langword="false" />. If this method returns <see langword="false" />, the run-time binder of the language determines the behavior. (In most cases, a language-specific run-time exception is thrown.</returns>
@@ -934,7 +934,7 @@ Dim testExplicit2 = CTypeDynamic(sampleObject, GetType(String))
       </Parameters>
       <Docs>
         <param name="binder">Provides information about the object that called the dynamic operation. The <c>binder.Name</c> property provides the name of the member to which the value is being assigned. For example, for the statement <c>sampleObject.SampleProperty = "Test"</c>, where <c>sampleObject</c> is an instance of the class derived from the <see cref="T:System.Dynamic.DynamicObject" /> class, <c>binder.Name</c> returns "SampleProperty". The <c>binder.IgnoreCase</c> property specifies whether the member name is case-sensitive.</param>
-        <param name="value">The value to set to the member. For example, for <c>sampleObject.SampleProperty = "Test"</c>, where <c>sampleObject</c> is an instance of the class derived from the <see cref="T:System.Dynamic.DynamicObject" /> class, the <c>value</c> is "Test".</param>
+        <param name="value">The value to set to the member. For example, for <c>sampleObject.SampleProperty = "Test"</c>, where <c>sampleObject</c> is an instance of the class derived from the <see cref="T:System.Dynamic.DynamicObject" /> class, the <paramref name="value" /> is "Test".</param>
         <summary>Provides the implementation for operations that set member values. Classes derived from the <see cref="T:System.Dynamic.DynamicObject" /> class can override this method to specify dynamic behavior for operations such as setting a value for a property.</summary>
         <returns>
           <see langword="true" /> if the operation is successful; otherwise, <see langword="false" />. If this method returns <see langword="false" />, the run-time binder of the language determines the behavior. (In most cases, a language-specific run-time exception is thrown.)</returns>

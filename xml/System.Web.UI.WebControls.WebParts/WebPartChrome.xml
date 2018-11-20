@@ -222,7 +222,7 @@
         <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
       </Parameters>
       <Docs>
-        <param name="verbs">The collection of all verbs associated with the control referenced in the <c>webPart</c> parameter.</param>
+        <param name="verbs">The collection of all verbs associated with the control referenced in the <paramref name="webPart" /> parameter.</param>
         <param name="webPart">The control currently being rendered.</param>
         <summary>Excludes specific verbs from being rendered, based on criteria provided by a developer.</summary>
         <returns>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbCollection" /> containing all verbs associated with the <paramref name="webPart" />.</returns>
@@ -414,7 +414,7 @@
         <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the <c>webPart</c> content.</param>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the <paramref name="webPart" /> content.</param>
         <param name="webPart">The control currently being rendered.</param>
         <summary>Renders the main content area of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control, excluding the header and footer.</summary>
         <remarks>
@@ -463,7 +463,7 @@
         <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the <c>webPart</c> content.</param>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the <paramref name="webPart" /> content.</param>
         <param name="webPart">The control currently being rendered.</param>
         <summary>Renders a complete <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control with all its sections.</summary>
         <remarks>

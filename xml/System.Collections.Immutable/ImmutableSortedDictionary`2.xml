@@ -899,7 +899,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the elements copied from the dictionary. The array must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the elements of the dictionary to an array, starting at a particular array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1646,7 +1646,7 @@
       </Parameters>
       <Docs>
         <param name="key">The key whose value will be retrieved.</param>
-        <param name="value">When this method returns, contains the value associated with the specified key, if the key is found; otherwise, contains the default value for the type of the <c>value</c> parameter.</param>
+        <param name="value">When this method returns, contains the value associated with the specified key, if the key is found; otherwise, contains the default value for the type of the <paramref name="value" /> parameter.</param>
         <summary>Gets the value associated with the specified key.</summary>
         <returns>
           <see langword="true" /> if the dictionary contains an element with the specified key; otherwise, <see langword="false" />.</returns>

@@ -52,7 +52,7 @@
         <Parameter Name="countOfPersonalizations" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="path">The page that the information applies to. <c>path</c> is an application-relative (using tilde syntax) virtual path.</param>
+        <param name="path">The page that the information applies to. <paramref name="path" /> is an application-relative (using tilde syntax) virtual path.</param>
         <param name="lastUpdatedDate">A <see cref="T:System.DateTime" /> indicating when the shared information for the page was last updated.</param>
         <param name="size">The size, in bytes, of the shared state information for the page.</param>
         <param name="sizeOfPersonalizations">The total size, in bytes, of all per-user personalization information that exists for the page.</param>

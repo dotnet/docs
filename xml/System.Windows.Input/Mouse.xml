@@ -651,7 +651,7 @@
         <Parameter Name="points" Type="System.Windows.Point[]" />
       </Parameters>
       <Docs>
-        <param name="relativeTo">The elements <c>points</c> are in relation to.</param>
+        <param name="relativeTo">The elements <paramref name="points" /> are in relation to.</param>
         <param name="points">An array of objects.</param>
         <summary>Retrieves up to 64 previous coordinates of the mouse pointer since the last mouse move event.</summary>
         <returns>The number of points returned.</returns>

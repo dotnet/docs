@@ -165,7 +165,7 @@
         <param name="context">The conversion context.</param>
         <param name="culture">The culture information that applies to the conversion.</param>
         <param name="value">The <see cref="T:System.Windows.Media.Transform" /> to convert.</param>
-        <param name="destinationType">The destination type that the <c>value</c> object is converted to.</param>
+        <param name="destinationType">The destination type that the <paramref name="value" /> object is converted to.</param>
         <summary>Converts the specified <see cref="T:System.Windows.Media.Transform" /> to the specified type by using the specified context and culture information.</summary>
         <returns>An object that represents the converted <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>

@@ -108,7 +108,7 @@
         <Parameter Name="compileUnit" Type="System.CodeDom.CodeCompileUnit" />
       </Parameters>
       <Docs>
-        <param name="buildProvider">The build provider generating <c>compileUnit</c>.</param>
+        <param name="buildProvider">The build provider generating <paramref name="compileUnit" />.</param>
         <param name="compileUnit">The code compile unit to include in the assembly compilation.</param>
         <summary>Adds source code for the assembly in the form of a CodeDOM graph.</summary>
         <remarks>

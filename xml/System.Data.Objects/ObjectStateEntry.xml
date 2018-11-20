@@ -74,7 +74,7 @@
         <Parameter Name="currentEntity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="currentEntity">The detached object that has updated values to apply to the object. <c>currentEntity</c> can also be the object’s entity key.</param>
+        <param name="currentEntity">The detached object that has updated values to apply to the object. <paramref name="currentEntity" /> can also be the object’s entity key.</param>
         <summary>Sets the current values of the entry to match the property values of a supplied object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,7 +98,7 @@
         <Parameter Name="originalEntity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="originalEntity">The detached object that has original values to apply to the object. <c>originalEntity</c> can also be the object’s entity key.</param>
+        <param name="originalEntity">The detached object that has original values to apply to the object. <paramref name="originalEntity" /> can also be the object’s entity key.</param>
         <summary>Sets the original values of the entry to match the property values of a supplied object.</summary>
         <remarks>To be added.</remarks>
       </Docs>

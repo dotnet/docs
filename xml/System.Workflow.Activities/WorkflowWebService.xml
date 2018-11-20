@@ -81,7 +81,7 @@
         <param name="interfaceType">The type of the interface.</param>
         <param name="methodName">The name of the method.</param>
         <param name="isActivation">Indicates whether the Web service activates the workflow.</param>
-        <param name="parameters">The parameters of the method specified by <c>methodName</c>.</param>
+        <param name="parameters">The parameters of the method specified by <paramref name="methodName" />.</param>
         <summary>Invokes the associated workflow and retrieves the response.</summary>
         <returns>The object returned by the Web service.</returns>
         <remarks>To be added.</remarks>

@@ -112,7 +112,7 @@
         <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the objects in <c>source</c>, constrained to <see cref="T:System.Xml.Linq.XNode" />.</typeparam>
+        <typeparam name="T">The type of the objects in <paramref name="source" />, constrained to <see cref="T:System.Xml.Linq.XNode" />.</typeparam>
         <param name="source">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XNode" /> that contains the source collection.</param>
         <summary>Returns a collection of elements that contains the ancestors of every node in the source collection.</summary>
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> that contains the ancestors of every node in the source collection.</returns>
@@ -366,7 +366,7 @@ Ancestors
         <Parameter Name="name" Type="System.Xml.Linq.XName" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the objects in <c>source</c>, constrained to <see cref="T:System.Xml.Linq.XNode" />.</typeparam>
+        <typeparam name="T">The type of the objects in <paramref name="source" />, constrained to <see cref="T:System.Xml.Linq.XNode" />.</typeparam>
         <param name="source">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XNode" /> that contains the source collection.</param>
         <param name="name">The <see cref="T:System.Xml.Linq.XName" /> to match.</param>
         <summary>Returns a filtered collection of elements that contains the ancestors of every node in the source collection. Only elements that have a matching <see cref="T:System.Xml.Linq.XName" /> are included in the collection.</summary>
@@ -1448,7 +1448,7 @@ Att1="content5"
         <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the objects in <c>source</c>, constrained to <see cref="T:System.Xml.Linq.XContainer" />.</typeparam>
+        <typeparam name="T">The type of the objects in <paramref name="source" />, constrained to <see cref="T:System.Xml.Linq.XContainer" />.</typeparam>
         <param name="source">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XContainer" /> that contains the source collection.</param>
         <summary>Returns a collection of the descendant nodes of every document and element in the source collection.</summary>
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XNode" /> of the descendant nodes of every document and element in the source collection.</returns>
@@ -1760,7 +1760,7 @@ Text: ddd
         <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the objects in <c>source</c>, constrained to <see cref="T:System.Xml.Linq.XContainer" />.</typeparam>
+        <typeparam name="T">The type of the objects in <paramref name="source" />, constrained to <see cref="T:System.Xml.Linq.XContainer" />.</typeparam>
         <param name="source">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XContainer" /> that contains the source collection.</param>
         <summary>Returns a collection of elements that contains the descendant elements of every element and document in the source collection.</summary>
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> that contains the descendant elements of every element and document in the source collection.</returns>
@@ -1957,7 +1957,7 @@ End Module
         <Parameter Name="name" Type="System.Xml.Linq.XName" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the objects in <c>source</c>, constrained to <see cref="T:System.Xml.Linq.XContainer" />.</typeparam>
+        <typeparam name="T">The type of the objects in <paramref name="source" />, constrained to <see cref="T:System.Xml.Linq.XContainer" />.</typeparam>
         <param name="source">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XContainer" /> that contains the source collection.</param>
         <param name="name">The <see cref="T:System.Xml.Linq.XName" /> to match.</param>
         <summary>Returns a filtered collection of elements that contains the descendant elements of every element and document in the source collection. Only elements that have a matching <see cref="T:System.Xml.Linq.XName" /> are included in the collection.</summary>
@@ -2313,7 +2313,7 @@ This is some text where all of the text nodes must be concatenated. This is a se
         <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the objects in <c>source</c>, constrained to <see cref="T:System.Xml.Linq.XContainer" />.</typeparam>
+        <typeparam name="T">The type of the objects in <paramref name="source" />, constrained to <see cref="T:System.Xml.Linq.XContainer" />.</typeparam>
         <param name="source">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> that contains the source collection.</param>
         <summary>Returns a collection of the child elements of every element and document in the source collection.</summary>
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> of the child elements of every element or document in the source collection.</returns>
@@ -2515,7 +2515,7 @@ End Module
         <Parameter Name="name" Type="System.Xml.Linq.XName" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the objects in <c>source</c>, constrained to <see cref="T:System.Xml.Linq.XContainer" />.</typeparam>
+        <typeparam name="T">The type of the objects in <paramref name="source" />, constrained to <see cref="T:System.Xml.Linq.XContainer" />.</typeparam>
         <param name="source">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> that contains the source collection.</param>
         <param name="name">The <see cref="T:System.Xml.Linq.XName" /> to match.</param>
         <summary>Returns a filtered collection of the child elements of every element and document in the source collection. Only elements that have a matching <see cref="T:System.Xml.Linq.XName" /> are included in the collection.</summary>
@@ -2709,7 +2709,7 @@ End Module
         <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the objects in <c>source</c>, constrained to <see cref="T:System.Xml.Linq.XNode" />.</typeparam>
+        <typeparam name="T">The type of the objects in <paramref name="source" />, constrained to <see cref="T:System.Xml.Linq.XNode" />.</typeparam>
         <param name="source">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XNode" /> that contains the source collection.</param>
         <summary>Returns a collection of nodes that contains all nodes in the source collection, sorted in document order.</summary>
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XNode" /> that contains all nodes in the source collection, sorted in document order.</returns>
@@ -2847,7 +2847,7 @@ Next
         <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the objects in <c>source</c>, constrained to <see cref="T:System.Xml.Linq.XContainer" />.</typeparam>
+        <typeparam name="T">The type of the objects in <paramref name="source" />, constrained to <see cref="T:System.Xml.Linq.XContainer" />.</typeparam>
         <param name="source">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XNode" /> that contains the source collection.</param>
         <summary>Returns a collection of the child nodes of every document and element in the source collection.</summary>
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XNode" /> of the child nodes of every document and element in the source collection.</returns>
@@ -3053,7 +3053,7 @@ Console.WriteLine(root)
         <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the objects in <c>source</c>, constrained to <see cref="T:System.Xml.Linq.XNode" />.</typeparam>
+        <typeparam name="T">The type of the objects in <paramref name="source" />, constrained to <see cref="T:System.Xml.Linq.XNode" />.</typeparam>
         <param name="source">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XNode" /> that contains the source collection.</param>
         <summary>Removes every node in the source collection from its parent node.</summary>
         <remarks>

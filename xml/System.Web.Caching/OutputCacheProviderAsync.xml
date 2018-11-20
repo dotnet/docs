@@ -135,9 +135,9 @@
         <Parameter Name="utcExpiry" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="key">A unique identifier for <c>entry</c></param>
+        <param name="key">A unique identifier for <paramref name="entry" /></param>
         <param name="entry">The content to add to the output cache.</param>
-        <param name="utcExpiry">The time and date on which the cached <c>entry</c> expires.</param>
+        <param name="utcExpiry">The time and date on which the cached <paramref name="entry" /> expires.</param>
         <summary>Asynchronously Inserts the specified entry into the output cache, overwriting the entry if it is already cached.</summary>
         <returns>The status of the operation.</returns>
         <remarks>To be added.</remarks>

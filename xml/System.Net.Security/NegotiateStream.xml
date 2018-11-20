@@ -171,7 +171,7 @@
       <Docs>
         <param name="innerStream">A <see cref="T:System.IO.Stream" /> object used by the <see cref="T:System.Net.Security.NegotiateStream" /> for sending and receiving data.</param>
         <param name="leaveInnerStreamOpen">
-          <see langword="true" /> to indicate that closing this <see cref="T:System.Net.Security.NegotiateStream" /> has no effect on <c>innerstream</c>; <see langword="false" /> to indicate that closing this <see cref="T:System.Net.Security.NegotiateStream" /> also closes <c>innerStream</c>.</param>
+          <see langword="true" /> to indicate that closing this <see cref="T:System.Net.Security.NegotiateStream" /> has no effect on <c>innerstream</c>; <see langword="false" /> to indicate that closing this <see cref="T:System.Net.Security.NegotiateStream" /> also closes <paramref name="innerStream" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Security.NegotiateStream" /> class using the specified <see cref="T:System.IO.Stream" /> and stream closure behavior.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1481,7 +1481,7 @@
       </Parameters>
       <Docs>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the authentication is complete.</param>
-        <param name="asyncState">A user-defined object containing information about the operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object containing information about the operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Called by clients to begin an asynchronous operation to authenticate the client, and optionally the server, in a client-server connection. This method does not block.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
@@ -1560,7 +1560,7 @@
         <param name="credential">The <see cref="T:System.Net.NetworkCredential" /> that is used to establish the identity of the client.</param>
         <param name="targetName">The Service Principal Name (SPN) that uniquely identifies the server to authenticate.</param>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the authentication is complete.</param>
-        <param name="asyncState">A user-defined object containing information about the write operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object containing information about the write operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Called by clients to begin an asynchronous operation to authenticate the client, and optionally the server, in a client-server connection. The authentication process uses the specified credentials. This method does not block.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
@@ -1637,7 +1637,7 @@
         <param name="binding">The <see cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" /> that is used for extended protection.</param>
         <param name="targetName">The Service Principal Name (SPN) that uniquely identifies the server to authenticate.</param>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the authentication is complete.</param>
-        <param name="asyncState">A user-defined object containing information about the write operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object containing information about the write operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Called by clients to begin an asynchronous operation to authenticate the client, and optionally the server, in a client-server connection. The authentication process uses the specified credentials and channel binding. This method does not block.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
@@ -1717,7 +1717,7 @@
         <param name="requiredProtectionLevel">One of the <see cref="T:System.Net.Security.ProtectionLevel" /> values, indicating the security services for the stream.</param>
         <param name="allowedImpersonationLevel">One of the <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> values, indicating how the server can use the client's credentials to access resources.</param>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the authentication is complete.</param>
-        <param name="asyncState">A user-defined object containing information about the write operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object containing information about the write operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Called by clients to begin an asynchronous operation to authenticate the client, and optionally the server, in a client-server connection. The authentication process uses the specified credentials and authentication options. This method does not block.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
@@ -1797,7 +1797,7 @@
         <param name="requiredProtectionLevel">One of the <see cref="T:System.Net.Security.ProtectionLevel" /> values, indicating the security services for the stream.</param>
         <param name="allowedImpersonationLevel">One of the <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> values, indicating how the server can use the client's credentials to access resources.</param>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the authentication is complete.</param>
-        <param name="asyncState">A user-defined object containing information about the write operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object containing information about the write operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Called by clients to begin an asynchronous operation to authenticate the client, and optionally the server, in a client-server connection. The authentication process uses the specified credentials, authentication options, and channel binding. This method does not block.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
@@ -1886,7 +1886,7 @@
       </Parameters>
       <Docs>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the authentication is complete.</param>
-        <param name="asyncState">A user-defined object containing information about the operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object containing information about the operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Called by servers to begin an asynchronous operation to authenticate the client, and optionally the server, in a client-server connection. This method does not block.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
@@ -1948,7 +1948,7 @@
       <Docs>
         <param name="policy">The <see cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" /> that is used for extended protection.</param>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the authentication is complete.</param>
-        <param name="asyncState">A user-defined object containing information about the write operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object containing information about the write operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Called by servers to begin an asynchronous operation to authenticate the client, and optionally the server, in a client-server connection. The authentication process uses the specified extended protection policy. This method does not block.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
@@ -2022,7 +2022,7 @@
         <param name="requiredProtectionLevel">One of the <see cref="T:System.Net.Security.ProtectionLevel" /> values, indicating the security services for the stream.</param>
         <param name="requiredImpersonationLevel">One of the <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> values, indicating how the server can use the client's credentials to access resources.</param>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the authentication is complete.</param>
-        <param name="asyncState">A user-defined object containing information about the operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object containing information about the operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Called by servers to begin an asynchronous operation to authenticate the client, and optionally the server, in a client-server connection. The authentication process uses the specified server credentials and authentication options. This method does not block.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
@@ -2099,7 +2099,7 @@
         <param name="requiredProtectionLevel">One of the <see cref="T:System.Net.Security.ProtectionLevel" /> values, indicating the security services for the stream.</param>
         <param name="requiredImpersonationLevel">One of the <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> values, indicating how the server can use the client's credentials to access resources.</param>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the authentication is complete.</param>
-        <param name="asyncState">A user-defined object containing information about the write operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object containing information about the write operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Called by servers to begin an asynchronous operation to authenticate the client, and optionally the server, in a client-server connection. The authentication process uses the specified server credentials, authentication options, and extended protection policy. This method does not block.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
@@ -2176,10 +2176,10 @@
       </Parameters>
       <Docs>
         <param name="buffer">A <see cref="T:System.Byte" /> array that receives the bytes read from the stream.</param>
-        <param name="offset">The zero-based location in <c>buffer</c> at which to begin storing the data read from this stream.</param>
+        <param name="offset">The zero-based location in <paramref name="buffer" /> at which to begin storing the data read from this stream.</param>
         <param name="count">The maximum number of bytes to read from the stream.</param>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the read operation is complete.</param>
-        <param name="asyncState">A user-defined object containing information about the read operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object containing information about the read operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Begins an asynchronous read operation that reads data from the stream and stores it in the specified array.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
@@ -2267,10 +2267,10 @@
       </Parameters>
       <Docs>
         <param name="buffer">A <see cref="T:System.Byte" /> array that supplies the bytes to be written to the stream.</param>
-        <param name="offset">The zero-based location in <c>buffer</c> at which to begin reading bytes to be written to the stream.</param>
-        <param name="count">An <see cref="T:System.Int32" /> value that specifies the number of bytes to read from <c>buffer</c>.</param>
+        <param name="offset">The zero-based location in <paramref name="buffer" /> at which to begin reading bytes to be written to the stream.</param>
+        <param name="count">An <see cref="T:System.Int32" /> value that specifies the number of bytes to read from <paramref name="buffer" />.</param>
         <param name="asyncCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the write operation is complete.</param>
-        <param name="asyncState">A user-defined object containing information about the write operation. This object is passed to the <c>asyncCallback</c> delegate when the operation completes.</param>
+        <param name="asyncState">A user-defined object containing information about the write operation. This object is passed to the <paramref name="asyncCallback" /> delegate when the operation completes.</param>
         <summary>Begins an asynchronous write operation that writes <see cref="T:System.Byte" />s from the specified buffer to the stream.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object indicating the status of the asynchronous operation.</returns>
         <remarks>
@@ -3374,7 +3374,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">A <see cref="T:System.Byte" /> array that receives the bytes read from the stream.</param>
-        <param name="offset">A <see cref="T:System.Int32" /> containing the zero-based location in <c>buffer</c> at which to begin storing the data read from this stream.</param>
+        <param name="offset">A <see cref="T:System.Int32" /> containing the zero-based location in <paramref name="buffer" /> at which to begin storing the data read from this stream.</param>
         <param name="count">A <see cref="T:System.Int32" /> containing the maximum number of bytes to read from the stream.</param>
         <summary>Reads data from this stream and stores it in the specified array.</summary>
         <returns>A <see cref="T:System.Int32" /> value that specifies the number of bytes read from the underlying stream. When there is no more data to be read, returns 0.</returns>
@@ -3639,8 +3639,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">A <see cref="T:System.Byte" /> array that supplies the bytes written to the stream.</param>
-        <param name="offset">An <see cref="T:System.Int32" /> containing the zero-based location in <c>buffer</c> at which to begin reading bytes to be written to the stream.</param>
-        <param name="count">A <see cref="T:System.Int32" /> containing the number of bytes to read from <c>buffer</c>.</param>
+        <param name="offset">An <see cref="T:System.Int32" /> containing the zero-based location in <paramref name="buffer" /> at which to begin reading bytes to be written to the stream.</param>
+        <param name="count">A <see cref="T:System.Int32" /> containing the number of bytes to read from <paramref name="buffer" />.</param>
         <summary>Write the specified number of <see cref="T:System.Byte" />s to the underlying stream using the specified buffer and offset.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

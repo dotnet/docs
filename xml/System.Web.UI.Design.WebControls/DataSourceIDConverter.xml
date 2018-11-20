@@ -135,7 +135,7 @@
       </Parameters>
       <Docs>
         <param name="context">An object implementing the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides information about a context to a type converter so that the type converter can perform a conversion.</param>
-        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> object that specifies the culture of the <c>value</c> parameter.</param>
+        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> object that specifies the culture of the <paramref name="value" /> parameter.</param>
         <param name="value">The object to convert.</param>
         <summary>Converts the specified object to the native type of the converter.</summary>
         <returns>The <paramref name="value" /> parameter is returned as a string.</returns>

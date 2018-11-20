@@ -203,7 +203,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the elements copied from <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection. The array object must use zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying starts.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying starts.</param>
         <summary>Copies the complete <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection to a one-dimensional <see cref="T:System.Array" /> object, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>

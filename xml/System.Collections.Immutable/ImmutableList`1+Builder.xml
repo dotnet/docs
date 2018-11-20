@@ -414,7 +414,7 @@
       <Docs>
         <param name="index">The zero-based index in the source immutable list at which copying begins.</param>
         <param name="array">The one-dimensional array that is the destination of the elements copied from the immutable list. The array must have zero-based indexing.</param>
-        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <param name="count">The number of elements to copy.</param>
         <summary>Copies the entire immutable list to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
@@ -977,7 +977,7 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>item</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
         <param name="item">The object to insert into the immutable list.</param>
         <summary>Inserts an item to the immutable list at the specified index.</summary>
         <remarks>To be added.</remarks>
@@ -1506,7 +1506,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the elements copied from the list. The array must have zero-based indexing.</param>
-        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the elements of the list to an array, starting at a particular array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1791,7 +1791,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
         <param name="value">The object to insert into the list.</param>
         <summary>Inserts an item to the list at the specified index.</summary>
         <remarks>

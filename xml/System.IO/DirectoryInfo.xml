@@ -3036,7 +3036,7 @@
         <Parameter Name="directorySecurity" Type="System.Security.AccessControl.DirectorySecurity" />
       </Parameters>
       <Docs>
-        <param name="directorySecurity">An object that describes an ACL entry to apply to the directory described by the <c>path</c> parameter.</param>
+        <param name="directorySecurity">An object that describes an ACL entry to apply to the directory described by the <paramref name="path" /> parameter.</param>
         <summary>Applies access control list (ACL) entries described by a <see cref="T:System.Security.AccessControl.DirectorySecurity" /> object to the directory described by the current <see cref="T:System.IO.DirectoryInfo" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

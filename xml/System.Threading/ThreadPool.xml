@@ -652,11 +652,11 @@
       </Parameters>
       <Docs>
         <param name="waitObject">The <see cref="T:System.Threading.WaitHandle" /> to register. Use a <see cref="T:System.Threading.WaitHandle" /> other than <see cref="T:System.Threading.Mutex" />.</param>
-        <param name="callBack">The <see cref="T:System.Threading.WaitOrTimerCallback" /> delegate to call when the <c>waitObject</c> parameter is signaled.</param>
+        <param name="callBack">The <see cref="T:System.Threading.WaitOrTimerCallback" /> delegate to call when the <paramref name="waitObject" /> parameter is signaled.</param>
         <param name="state">The object that is passed to the delegate.</param>
-        <param name="millisecondsTimeOutInterval">The time-out in milliseconds. If the <c>millisecondsTimeOutInterval</c> parameter is 0 (zero), the function tests the object's state and returns immediately. If <c>millisecondsTimeOutInterval</c> is -1, the function's time-out interval never elapses.</param>
+        <param name="millisecondsTimeOutInterval">The time-out in milliseconds. If the <paramref name="millisecondsTimeOutInterval" /> parameter is 0 (zero), the function tests the object's state and returns immediately. If <paramref name="millisecondsTimeOutInterval" /> is -1, the function's time-out interval never elapses.</param>
         <param name="executeOnlyOnce">
-          <see langword="true" /> to indicate that the thread will no longer wait on the <c>waitObject</c> parameter after the delegate has been called; <see langword="false" /> to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.</param>
+          <see langword="true" /> to indicate that the thread will no longer wait on the <paramref name="waitObject" /> parameter after the delegate has been called; <see langword="false" /> to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.</param>
         <summary>Registers a delegate to wait for a <see cref="T:System.Threading.WaitHandle" />, specifying a 32-bit signed integer for the time-out in milliseconds.</summary>
         <returns>The <see cref="T:System.Threading.RegisteredWaitHandle" /> that encapsulates the native handle.</returns>
         <remarks>
@@ -733,11 +733,11 @@
       </Parameters>
       <Docs>
         <param name="waitObject">The <see cref="T:System.Threading.WaitHandle" /> to register. Use a <see cref="T:System.Threading.WaitHandle" /> other than <see cref="T:System.Threading.Mutex" />.</param>
-        <param name="callBack">The <see cref="T:System.Threading.WaitOrTimerCallback" /> delegate to call when the <c>waitObject</c> parameter is signaled.</param>
+        <param name="callBack">The <see cref="T:System.Threading.WaitOrTimerCallback" /> delegate to call when the <paramref name="waitObject" /> parameter is signaled.</param>
         <param name="state">The object passed to the delegate.</param>
-        <param name="millisecondsTimeOutInterval">The time-out in milliseconds. If the <c>millisecondsTimeOutInterval</c> parameter is 0 (zero), the function tests the object's state and returns immediately. If <c>millisecondsTimeOutInterval</c> is -1, the function's time-out interval never elapses.</param>
+        <param name="millisecondsTimeOutInterval">The time-out in milliseconds. If the <paramref name="millisecondsTimeOutInterval" /> parameter is 0 (zero), the function tests the object's state and returns immediately. If <paramref name="millisecondsTimeOutInterval" /> is -1, the function's time-out interval never elapses.</param>
         <param name="executeOnlyOnce">
-          <see langword="true" /> to indicate that the thread will no longer wait on the <c>waitObject</c> parameter after the delegate has been called; <see langword="false" /> to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.</param>
+          <see langword="true" /> to indicate that the thread will no longer wait on the <paramref name="waitObject" /> parameter after the delegate has been called; <see langword="false" /> to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.</param>
         <summary>Registers a delegate to wait for a <see cref="T:System.Threading.WaitHandle" />, specifying a 64-bit signed integer for the time-out in milliseconds.</summary>
         <returns>The <see cref="T:System.Threading.RegisteredWaitHandle" /> that encapsulates the native handle.</returns>
         <remarks>
@@ -814,11 +814,11 @@
       </Parameters>
       <Docs>
         <param name="waitObject">The <see cref="T:System.Threading.WaitHandle" /> to register. Use a <see cref="T:System.Threading.WaitHandle" /> other than <see cref="T:System.Threading.Mutex" />.</param>
-        <param name="callBack">The <see cref="T:System.Threading.WaitOrTimerCallback" /> delegate to call when the <c>waitObject</c> parameter is signaled.</param>
+        <param name="callBack">The <see cref="T:System.Threading.WaitOrTimerCallback" /> delegate to call when the <paramref name="waitObject" /> parameter is signaled.</param>
         <param name="state">The object passed to the delegate.</param>
-        <param name="timeout">The time-out represented by a <see cref="T:System.TimeSpan" />. If <c>timeout</c> is 0 (zero), the function tests the object's state and returns immediately. If <c>timeout</c> is -1, the function's time-out interval never elapses.</param>
+        <param name="timeout">The time-out represented by a <see cref="T:System.TimeSpan" />. If <paramref name="timeout" /> is 0 (zero), the function tests the object's state and returns immediately. If <paramref name="timeout" /> is -1, the function's time-out interval never elapses.</param>
         <param name="executeOnlyOnce">
-          <see langword="true" /> to indicate that the thread will no longer wait on the <c>waitObject</c> parameter after the delegate has been called; <see langword="false" /> to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.</param>
+          <see langword="true" /> to indicate that the thread will no longer wait on the <paramref name="waitObject" /> parameter after the delegate has been called; <see langword="false" /> to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.</param>
         <summary>Registers a delegate to wait for a <see cref="T:System.Threading.WaitHandle" />, specifying a <see cref="T:System.TimeSpan" /> value for the time-out.</summary>
         <returns>The <see cref="T:System.Threading.RegisteredWaitHandle" /> that encapsulates the native handle.</returns>
         <remarks>
@@ -899,11 +899,11 @@
       </Parameters>
       <Docs>
         <param name="waitObject">The <see cref="T:System.Threading.WaitHandle" /> to register. Use a <see cref="T:System.Threading.WaitHandle" /> other than <see cref="T:System.Threading.Mutex" />.</param>
-        <param name="callBack">The <see cref="T:System.Threading.WaitOrTimerCallback" /> delegate to call when the <c>waitObject</c> parameter is signaled.</param>
+        <param name="callBack">The <see cref="T:System.Threading.WaitOrTimerCallback" /> delegate to call when the <paramref name="waitObject" /> parameter is signaled.</param>
         <param name="state">The object passed to the delegate.</param>
-        <param name="millisecondsTimeOutInterval">The time-out in milliseconds. If the <c>millisecondsTimeOutInterval</c> parameter is 0 (zero), the function tests the object's state and returns immediately. If <c>millisecondsTimeOutInterval</c> is -1, the function's time-out interval never elapses.</param>
+        <param name="millisecondsTimeOutInterval">The time-out in milliseconds. If the <paramref name="millisecondsTimeOutInterval" /> parameter is 0 (zero), the function tests the object's state and returns immediately. If <paramref name="millisecondsTimeOutInterval" /> is -1, the function's time-out interval never elapses.</param>
         <param name="executeOnlyOnce">
-          <see langword="true" /> to indicate that the thread will no longer wait on the <c>waitObject</c> parameter after the delegate has been called; <see langword="false" /> to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.</param>
+          <see langword="true" /> to indicate that the thread will no longer wait on the <paramref name="waitObject" /> parameter after the delegate has been called; <see langword="false" /> to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.</param>
         <summary>Registers a delegate to wait for a <see cref="T:System.Threading.WaitHandle" />, specifying a 32-bit unsigned integer for the time-out in milliseconds.</summary>
         <returns>The <see cref="T:System.Threading.RegisteredWaitHandle" /> that can be used to cancel the registered wait operation.</returns>
         <remarks>
@@ -1255,11 +1255,11 @@
       </Parameters>
       <Docs>
         <param name="waitObject">The <see cref="T:System.Threading.WaitHandle" /> to register. Use a <see cref="T:System.Threading.WaitHandle" /> other than <see cref="T:System.Threading.Mutex" />.</param>
-        <param name="callBack">The delegate to call when the <c>waitObject</c> parameter is signaled.</param>
+        <param name="callBack">The delegate to call when the <paramref name="waitObject" /> parameter is signaled.</param>
         <param name="state">The object that is passed to the delegate.</param>
-        <param name="millisecondsTimeOutInterval">The time-out in milliseconds. If the <c>millisecondsTimeOutInterval</c> parameter is 0 (zero), the function tests the object's state and returns immediately. If <c>millisecondsTimeOutInterval</c> is -1, the function's time-out interval never elapses.</param>
+        <param name="millisecondsTimeOutInterval">The time-out in milliseconds. If the <paramref name="millisecondsTimeOutInterval" /> parameter is 0 (zero), the function tests the object's state and returns immediately. If <paramref name="millisecondsTimeOutInterval" /> is -1, the function's time-out interval never elapses.</param>
         <param name="executeOnlyOnce">
-          <see langword="true" /> to indicate that the thread will no longer wait on the <c>waitObject</c> parameter after the delegate has been called; <see langword="false" /> to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.</param>
+          <see langword="true" /> to indicate that the thread will no longer wait on the <paramref name="waitObject" /> parameter after the delegate has been called; <see langword="false" /> to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.</param>
         <summary>Registers a delegate to wait for a <see cref="T:System.Threading.WaitHandle" />, using a 32-bit signed integer for the time-out in milliseconds. This method does not propagate the calling stack to the worker thread.</summary>
         <returns>The <see cref="T:System.Threading.RegisteredWaitHandle" /> object that can be used to cancel the registered wait operation.</returns>
         <remarks>
@@ -1324,11 +1324,11 @@
       </Parameters>
       <Docs>
         <param name="waitObject">The <see cref="T:System.Threading.WaitHandle" /> to register. Use a <see cref="T:System.Threading.WaitHandle" /> other than <see cref="T:System.Threading.Mutex" />.</param>
-        <param name="callBack">The delegate to call when the <c>waitObject</c> parameter is signaled.</param>
+        <param name="callBack">The delegate to call when the <paramref name="waitObject" /> parameter is signaled.</param>
         <param name="state">The object that is passed to the delegate.</param>
-        <param name="millisecondsTimeOutInterval">The time-out in milliseconds. If the <c>millisecondsTimeOutInterval</c> parameter is 0 (zero), the function tests the object's state and returns immediately. If <c>millisecondsTimeOutInterval</c> is -1, the function's time-out interval never elapses.</param>
+        <param name="millisecondsTimeOutInterval">The time-out in milliseconds. If the <paramref name="millisecondsTimeOutInterval" /> parameter is 0 (zero), the function tests the object's state and returns immediately. If <paramref name="millisecondsTimeOutInterval" /> is -1, the function's time-out interval never elapses.</param>
         <param name="executeOnlyOnce">
-          <see langword="true" /> to indicate that the thread will no longer wait on the <c>waitObject</c> parameter after the delegate has been called; <see langword="false" /> to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.</param>
+          <see langword="true" /> to indicate that the thread will no longer wait on the <paramref name="waitObject" /> parameter after the delegate has been called; <see langword="false" /> to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.</param>
         <summary>Registers a delegate to wait for a <see cref="T:System.Threading.WaitHandle" />, specifying a 64-bit signed integer for the time-out in milliseconds. This method does not propagate the calling stack to the worker thread.</summary>
         <returns>The <see cref="T:System.Threading.RegisteredWaitHandle" /> object that can be used to cancel the registered wait operation.</returns>
         <remarks>
@@ -1393,11 +1393,11 @@
       </Parameters>
       <Docs>
         <param name="waitObject">The <see cref="T:System.Threading.WaitHandle" /> to register. Use a <see cref="T:System.Threading.WaitHandle" /> other than <see cref="T:System.Threading.Mutex" />.</param>
-        <param name="callBack">The delegate to call when the <c>waitObject</c> parameter is signaled.</param>
+        <param name="callBack">The delegate to call when the <paramref name="waitObject" /> parameter is signaled.</param>
         <param name="state">The object that is passed to the delegate.</param>
-        <param name="timeout">The time-out represented by a <see cref="T:System.TimeSpan" />. If <c>timeout</c> is 0 (zero), the function tests the object's state and returns immediately. If <c>timeout</c> is -1, the function's time-out interval never elapses.</param>
+        <param name="timeout">The time-out represented by a <see cref="T:System.TimeSpan" />. If <paramref name="timeout" /> is 0 (zero), the function tests the object's state and returns immediately. If <paramref name="timeout" /> is -1, the function's time-out interval never elapses.</param>
         <param name="executeOnlyOnce">
-          <see langword="true" /> to indicate that the thread will no longer wait on the <c>waitObject</c> parameter after the delegate has been called; <see langword="false" /> to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.</param>
+          <see langword="true" /> to indicate that the thread will no longer wait on the <paramref name="waitObject" /> parameter after the delegate has been called; <see langword="false" /> to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.</param>
         <summary>Registers a delegate to wait for a <see cref="T:System.Threading.WaitHandle" />, specifying a <see cref="T:System.TimeSpan" /> value for the time-out. This method does not propagate the calling stack to the worker thread.</summary>
         <returns>The <see cref="T:System.Threading.RegisteredWaitHandle" /> object that can be used to cancel the registered wait operation.</returns>
         <remarks>
@@ -1466,11 +1466,11 @@
       </Parameters>
       <Docs>
         <param name="waitObject">The <see cref="T:System.Threading.WaitHandle" /> to register. Use a <see cref="T:System.Threading.WaitHandle" /> other than <see cref="T:System.Threading.Mutex" />.</param>
-        <param name="callBack">The delegate to call when the <c>waitObject</c> parameter is signaled.</param>
+        <param name="callBack">The delegate to call when the <paramref name="waitObject" /> parameter is signaled.</param>
         <param name="state">The object that is passed to the delegate.</param>
-        <param name="millisecondsTimeOutInterval">The time-out in milliseconds. If the <c>millisecondsTimeOutInterval</c> parameter is 0 (zero), the function tests the object's state and returns immediately. If <c>millisecondsTimeOutInterval</c> is -1, the function's time-out interval never elapses.</param>
+        <param name="millisecondsTimeOutInterval">The time-out in milliseconds. If the <paramref name="millisecondsTimeOutInterval" /> parameter is 0 (zero), the function tests the object's state and returns immediately. If <paramref name="millisecondsTimeOutInterval" /> is -1, the function's time-out interval never elapses.</param>
         <param name="executeOnlyOnce">
-          <see langword="true" /> to indicate that the thread will no longer wait on the <c>waitObject</c> parameter after the delegate has been called; <see langword="false" /> to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.</param>
+          <see langword="true" /> to indicate that the thread will no longer wait on the <paramref name="waitObject" /> parameter after the delegate has been called; <see langword="false" /> to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.</param>
         <summary>Registers a delegate to wait for a <see cref="T:System.Threading.WaitHandle" />, specifying a 32-bit unsigned integer for the time-out in milliseconds. This method does not propagate the calling stack to the worker thread.</summary>
         <returns>The <see cref="T:System.Threading.RegisteredWaitHandle" /> object that can be used to cancel the registered wait operation.</returns>
         <remarks>

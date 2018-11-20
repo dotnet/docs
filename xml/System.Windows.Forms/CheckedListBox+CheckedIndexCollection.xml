@@ -134,7 +134,7 @@
       </Parameters>
       <Docs>
         <param name="dest">The destination array.</param>
-        <param name="index">The zero-based relative index in <c>dest</c> at which copying begins.</param>
+        <param name="index">The zero-based relative index in <paramref name="dest" /> at which copying begins.</param>
         <summary>Copies the entire collection into an existing array at a specified location within the array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

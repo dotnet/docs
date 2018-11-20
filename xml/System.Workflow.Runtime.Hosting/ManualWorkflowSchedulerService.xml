@@ -102,7 +102,7 @@
         <Parameter Name="parameters" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="parameters">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that contains parameters for <c>useActiveTimers</c>. If <see langword="true" />, the scheduler service automatically resumes workflows after delay activities expire (by using an in-memory timer). If <see langword="false" />, the host must manually resume the workflow after the delay activities expire.</param>
+        <param name="parameters">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that contains parameters for <paramref name="useActiveTimers" />. If <see langword="true" />, the scheduler service automatically resumes workflows after delay activities expire (by using an in-memory timer). If <see langword="false" />, the host must manually resume the workflow after the delay activities expire.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>

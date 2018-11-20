@@ -270,8 +270,8 @@
       </Parameters>
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object for the principal to be added to the collection.</param>
-        <param name="identityType">An <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> object that specifies the format of <c>identityValue</c></param>
-        <param name="identityValue">A string that identifies the principal, in the format specified by <c>identityType</c></param>
+        <param name="identityType">An <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> object that specifies the format of <paramref name="identityValue" /></param>
+        <param name="identityValue">A string that identifies the principal, in the format specified by <paramref name="identityType" /></param>
         <summary>Searches for a <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object that matches the parameters, and adds it to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -530,8 +530,8 @@
       </Parameters>
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object of the principal.</param>
-        <param name="identityType">An <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> object that specifies the format of <c>identityValue</c></param>
-        <param name="identityValue">A string that identifies the principal, in the format specified by <c>identityType</c></param>
+        <param name="identityType">An <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> object that specifies the format of <paramref name="identityValue" /></param>
+        <param name="identityValue">A string that identifies the principal, in the format specified by <paramref name="identityType" /></param>
         <summary>Returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object matching the <paramref name="identityType" />/<paramref name="identityValue" /> pair is in the collection. </summary>
         <returns>Returns <see langword="true" /> if an object matching the <paramref name="identityType" />/<paramref name="identityValue" /> pair is in the collection; <see langword="false" /> otherwise.</returns>
         <remarks>
@@ -574,7 +574,7 @@
       </Parameters>
       <Docs>
         <param name="array">The <see cref="T:System.Array" /> that should be populated with <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> objects.</param>
-        <param name="index">The position in <c>array</c> into which the first principal object in the collection should be copied.</param>
+        <param name="index">The position in <paramref name="array" /> into which the first principal object in the collection should be copied.</param>
         <summary>Copies the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> objects from this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" /> into the specified array, starting at the specified position index in array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -956,7 +956,7 @@
       </Parameters>
       <Docs>
         <param name="context">A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object.</param>
-        <param name="identityType">An <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> that identifies the format of <c>identityValue</c>.</param>
+        <param name="identityType">An <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> that identifies the format of <paramref name="identityValue" />.</param>
         <param name="identityValue">A string.</param>
         <summary>Finds the <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object specified by the given <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> and <paramref name="identityType" />/<paramref name="identityValue" /> pair from the collection, and returns <see langword="true" /> if the identified <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />, and <see langword="false" /> otherwise (in which case the method performs no operation).</summary>
         <returns>Returns <see langword="true" /> if the identified <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />; <see langword="false" /> otherwise.</returns>
@@ -1036,7 +1036,7 @@
       </Parameters>
       <Docs>
         <param name="array">The T:System.Array that should be populated with <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> objects.</param>
-        <param name="index">The position in <c>array</c> to which the first <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object should be copied to.</param>
+        <param name="index">The position in <paramref name="array" /> to which the first <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object should be copied to.</param>
         <summary>Copies the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> objects from this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" /> into the specified array, starting at the specified position index in array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

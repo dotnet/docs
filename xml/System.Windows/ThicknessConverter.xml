@@ -127,7 +127,7 @@
       <Docs>
         <param name="typeDescriptorContext">The context information for a type.</param>
         <param name="cultureInfo">The <see cref="T:System.Globalization.CultureInfo" /> of the type being converted.</param>
-        <param name="source">The <c>source</c><see cref="T:System.Object" /> being converted.</param>
+        <param name="source">The <paramref name="source" /><see cref="T:System.Object" /> being converted.</param>
         <summary>Attempts to create an instance of <see cref="T:System.Windows.Thickness" /> from a specified object.</summary>
         <returns>An instance of <see cref="T:System.Windows.Thickness" /> created from the converted <paramref name="source" />.</returns>
         <remarks>To be added.</remarks>

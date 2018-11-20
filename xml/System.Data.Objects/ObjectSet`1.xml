@@ -106,7 +106,7 @@
         <Parameter Name="currentEntity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="currentEntity">The detached object that has property updates to apply to the original object. The entity key of <c>currentEntity</c> must match the <see cref="P:System.Data.Objects.ObjectStateEntry.EntityKey" /> property of an entry in the <see cref="T:System.Data.Objects.ObjectContext" />.</param>
+        <param name="currentEntity">The detached object that has property updates to apply to the original object. The entity key of <paramref name="currentEntity" /> must match the <see cref="P:System.Data.Objects.ObjectStateEntry.EntityKey" /> property of an entry in the <see cref="T:System.Data.Objects.ObjectContext" />.</param>
         <summary>Copies the scalar values from the supplied object into the object in the <see cref="T:System.Data.Objects.ObjectContext" /> that has the same key.</summary>
         <returns>The updated object.</returns>
         <remarks>
@@ -140,7 +140,7 @@
         <Parameter Name="originalEntity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="originalEntity">The detached object that has property updates to apply to the original object. The entity key of <c>originalEntity</c> must match the <see cref="P:System.Data.Objects.ObjectStateEntry.EntityKey" /> property of an entry in the <see cref="T:System.Data.Objects.ObjectContext" />.</param>
+        <param name="originalEntity">The detached object that has property updates to apply to the original object. The entity key of <paramref name="originalEntity" /> must match the <see cref="P:System.Data.Objects.ObjectStateEntry.EntityKey" /> property of an entry in the <see cref="T:System.Data.Objects.ObjectContext" />.</param>
         <summary>Sets the <see cref="P:System.Data.Objects.ObjectStateEntry.OriginalValues" /> property of an <see cref="T:System.Data.Objects.ObjectStateEntry" /> to match the property values of a supplied object.</summary>
         <returns>The updated object.</returns>
         <remarks>
@@ -300,7 +300,7 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">Object to be detached. Only the <c>entity</c> is removed; if there are any related objects that are being tracked by the same <see cref="T:System.Data.Objects.ObjectStateManager" />, those will not be detached automatically.</param>
+        <param name="entity">Object to be detached. Only the <paramref name="entity" /> is removed; if there are any related objects that are being tracked by the same <see cref="T:System.Data.Objects.ObjectStateManager" />, those will not be detached automatically.</param>
         <summary>Removes the object from the object context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -158,7 +158,7 @@
       </Parameters>
       <Docs>
         <param name="operationDescription">The operation being examined.</param>
-        <param name="dispatchOperation">The run-time object that exposes customization properties for the operation described by <c>operationDescription</c>.</param>
+        <param name="dispatchOperation">The run-time object that exposes customization properties for the operation described by <paramref name="operationDescription" />.</param>
         <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)" /> method. Used by the WCF infrastructure and is not intended to be used by developers.</summary>
         <remarks>To be added.</remarks>
       </Docs>

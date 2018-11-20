@@ -600,7 +600,7 @@
         <param name="connectionTimeout">Timeout interval, in milliseconds. Default is 100 seconds.</param>
         <param name="overwrite">
           <see langword="True" /> to overwrite existing files; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
-        <param name="onUserCancel">Specifies behavior when the user clicks **Cancel** or **No** on the dialog box shown as a result of <c>showUI</c> set to <see langword="True" />. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
+        <param name="onUserCancel">Specifies behavior when the user clicks **Cancel** or **No** on the dialog box shown as a result of <paramref name="showUI" /> set to <see langword="True" />. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
         <summary>Downloads the specified remote file and saves it in the specified location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

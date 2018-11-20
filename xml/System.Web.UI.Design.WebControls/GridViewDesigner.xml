@@ -559,7 +559,7 @@
       </Parameters>
       <Docs>
         <param name="region">The <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> to update.</param>
-        <param name="content">A <see cref="T:System.String" /> to write to <c>region</c>.</param>
+        <param name="content">A <see cref="T:System.String" /> to write to <paramref name="region" />.</param>
         <summary>Specifies content for an editable region of the design-time view for the associated control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

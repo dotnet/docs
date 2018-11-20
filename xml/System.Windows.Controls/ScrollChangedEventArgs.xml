@@ -235,7 +235,7 @@
       </Parameters>
       <Docs>
         <param name="genericHandler">The event handler to invoke, in this case the <see cref="T:System.Windows.Controls.ScrollChangedEventHandler" /> delegate.</param>
-        <param name="genericTarget">The target upon which the <c>genericHandler</c> is invoked.</param>
+        <param name="genericTarget">The target upon which the <paramref name="genericHandler" /> is invoked.</param>
         <summary>Performs proper type casting before invoking the type-safe <see cref="T:System.Windows.Controls.ScrollChangedEventHandler" /> delegate</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

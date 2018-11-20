@@ -132,7 +132,7 @@
       </Parameters>
       <Docs>
         <param name="selector">The <see cref="T:System.Runtime.Serialization.ISurrogateSelector" /> to use with the new instance of <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter" />. Can be <see langword="null" />.</param>
-        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that holds the source and destination of the serialization. If the <c>context</c> parameter is <see langword="null" />, then the <see cref="P:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Context" /> defaults to <see cref="F:System.Runtime.Serialization.StreamingContextStates.CrossMachine" />.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that holds the source and destination of the serialization. If the <paramref name="context" /> parameter is <see langword="null" />, then the <see cref="P:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.Context" /> defaults to <see cref="F:System.Runtime.Serialization.StreamingContextStates.CrossMachine" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Formatters.Soap.SoapFormatter" /> class with the specified <see cref="T:System.Runtime.Serialization.ISurrogateSelector" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

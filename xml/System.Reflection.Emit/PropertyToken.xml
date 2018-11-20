@@ -166,8 +166,8 @@
         <Parameter Name="b" Type="System.Reflection.Emit.PropertyToken" />
       </Parameters>
       <Docs>
-        <param name="a">The <see cref="T:System.Reflection.Emit.PropertyToken" /> to compare to <c>b</c>.</param>
-        <param name="b">The <see cref="T:System.Reflection.Emit.PropertyToken" /> to compare to <c>a</c>.</param>
+        <param name="a">The <see cref="T:System.Reflection.Emit.PropertyToken" /> to compare to <paramref name="b" />.</param>
+        <param name="b">The <see cref="T:System.Reflection.Emit.PropertyToken" /> to compare to <paramref name="a" />.</param>
         <summary>Indicates whether two <see cref="T:System.Reflection.Emit.PropertyToken" /> structures are equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="a" /> is equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
@@ -198,8 +198,8 @@
         <Parameter Name="b" Type="System.Reflection.Emit.PropertyToken" />
       </Parameters>
       <Docs>
-        <param name="a">The <see cref="T:System.Reflection.Emit.PropertyToken" /> to compare to <c>b</c>.</param>
-        <param name="b">The <see cref="T:System.Reflection.Emit.PropertyToken" /> to compare to <c>a</c>.</param>
+        <param name="a">The <see cref="T:System.Reflection.Emit.PropertyToken" /> to compare to <paramref name="b" />.</param>
+        <param name="b">The <see cref="T:System.Reflection.Emit.PropertyToken" /> to compare to <paramref name="a" />.</param>
         <summary>Indicates whether two <see cref="T:System.Reflection.Emit.PropertyToken" /> structures are not equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="a" /> is not equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>

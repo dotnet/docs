@@ -235,8 +235,8 @@
       </Parameters>
       <Docs>
         <param name="target">The instance of the <see cref="T:System.Object" /> on which to invoke the method on.</param>
-        <param name="values">An argument list for the invoked method. This is an array of objects with the same number, order, and type as the parameters of the method. If the method does not require any parameters, <c>values</c> should be <see langword="null" />.</param>
-        <param name="callback">The delegate to call when the asynchronous invoke is complete. If <c>callback</c> is <see langword="null" />, the delegate is not called.</param>
+        <param name="values">An argument list for the invoked method. This is an array of objects with the same number, order, and type as the parameters of the method. If the method does not require any parameters, <paramref name="values" /> should be <see langword="null" />.</param>
+        <param name="callback">The delegate to call when the asynchronous invoke is complete. If <paramref name="callback" /> is <see langword="null" />, the delegate is not called.</param>
         <param name="asyncState">State information that is passed on to the delegate.</param>
         <summary>Begins an asynchronous invocation of the method represented by this <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> which is passed to <see cref="M:System.Web.Services.Protocols.LogicalMethodInfo.EndInvoke(System.Object,System.IAsyncResult)" /> to obtain the return values from the remote method call.</returns>
@@ -682,7 +682,7 @@
       </Parameters>
       <Docs>
         <param name="target">The instance of the <see cref="T:System.Object" /> to invoke the method.</param>
-        <param name="values">An argument list for the invoked method. This is an array of objects with the same number, order, and type as the parameters of the method. If the method does not require any parameters, the <c>values</c> parameter should be <see langword="null" />.</param>
+        <param name="values">An argument list for the invoked method. This is an array of objects with the same number, order, and type as the parameters of the method. If the method does not require any parameters, the <paramref name="values" /> parameter should be <see langword="null" />.</param>
         <summary>Invokes the method represented by the current <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />.</summary>
         <returns>An array of type <see cref="T:System.Object" /> representing the return value and out parameters of the invoked method.</returns>
         <remarks>

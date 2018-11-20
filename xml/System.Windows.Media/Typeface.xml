@@ -130,7 +130,7 @@
         <param name="style">The style of the typeface.</param>
         <param name="weight">The relative weight of the typeface.</param>
         <param name="stretch">The degree to which the typeface is stretched.</param>
-        <param name="fallbackFontFamily">The font family that is used when a character is encountered that the primary font family (specified by the <c>fontFamily</c> parameter) cannot display.</param>
+        <param name="fallbackFontFamily">The font family that is used when a character is encountered that the primary font family (specified by the <paramref name="fontFamily" /> parameter) cannot display.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Typeface" /> class for the specified font family name, <see cref="P:System.Windows.Media.Typeface.Style" />, <see cref="P:System.Windows.Media.Typeface.Weight" />, and <see cref="P:System.Windows.Media.Typeface.Stretch" /> values. In addition, a fallback font family is specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

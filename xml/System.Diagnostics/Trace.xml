@@ -1164,7 +1164,7 @@ End of list of errors
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="format">A format string that contains zero or more format items, which correspond to objects in the <c>args</c> array.</param>
+        <param name="format">A format string that contains zero or more format items, which correspond to objects in the <paramref name="args" /> array.</param>
         <param name="args">An <see langword="object" /> array containing zero or more objects to format.</param>
         <summary>Writes an error message to the trace listeners in the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection using the specified array of objects and formatting information.</summary>
         <remarks>
@@ -1292,7 +1292,7 @@ End of list of errors
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="format">A format string that contains zero or more format items, which correspond to objects in the <c>args</c> array.</param>
+        <param name="format">A format string that contains zero or more format items, which correspond to objects in the <paramref name="args" /> array.</param>
         <param name="args">An <see langword="object" /> array containing zero or more objects to format.</param>
         <summary>Writes an informational message to the trace listeners in the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection using the specified array of objects and formatting information.</summary>
         <remarks>
@@ -1420,7 +1420,7 @@ End of list of errors
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="format">A format string that contains zero or more format items, which correspond to objects in the <c>args</c> array.</param>
+        <param name="format">A format string that contains zero or more format items, which correspond to objects in the <paramref name="args" /> array.</param>
         <param name="args">An <see langword="object" /> array containing zero or more objects to format.</param>
         <summary>Writes a warning message to the trace listeners in the <see cref="P:System.Diagnostics.Trace.Listeners" /> collection using the specified array of objects and formatting information.</summary>
         <remarks>

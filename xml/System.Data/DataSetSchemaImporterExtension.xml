@@ -74,28 +74,28 @@
       </Parameters>
       <Docs>
         <param name="type">
-          <c>type</c>
+          <paramref name="type" />
         </param>
         <param name="context">
-          <c>context</c>
+          <paramref name="context" />
         </param>
         <param name="schemas">
-          <c>schemas</c>
+          <paramref name="schemas" />
         </param>
         <param name="importer">
-          <c>importer</c>
+          <paramref name="importer" />
         </param>
         <param name="compileUnit">
-          <c>compileUnit</c>
+          <paramref name="compileUnit" />
         </param>
         <param name="mainNamespace">
-          <c>mainNamespace</c>
+          <paramref name="mainNamespace" />
         </param>
         <param name="options">
-          <c>options</c>
+          <paramref name="options" />
         </param>
         <param name="codeProvider">
-          <c>codeProvider</c>
+          <paramref name="codeProvider" />
         </param>
         <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <returns>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</returns>
@@ -131,31 +131,31 @@
       </Parameters>
       <Docs>
         <param name="name">
-          <c>name</c>
+          <paramref name="name" />
         </param>
         <param name="schemaNamespace">
-          <c>schemaNamespace</c>
+          <paramref name="schemaNamespace" />
         </param>
         <param name="context">
-          <c>context</c>
+          <paramref name="context" />
         </param>
         <param name="schemas">
-          <c>schemas</c>
+          <paramref name="schemas" />
         </param>
         <param name="importer">
-          <c>importer</c>
+          <paramref name="importer" />
         </param>
         <param name="compileUnit">
-          <c>compileUnit</c>
+          <paramref name="compileUnit" />
         </param>
         <param name="mainNamespace">
-          <c>mainNamespace</c>
+          <paramref name="mainNamespace" />
         </param>
         <param name="options">
-          <c>options</c>
+          <paramref name="options" />
         </param>
         <param name="codeProvider">
-          <c>codeProvider</c>
+          <paramref name="codeProvider" />
         </param>
         <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <returns>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</returns>

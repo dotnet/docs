@@ -66,8 +66,8 @@
       </Parameters>
       <Docs>
         <param name="sourceUri">The [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the <see cref="T:System.IO.Packaging.PackagePart" /> or the <see cref="T:System.IO.Packaging.Package" /> (<c>SourceUri</c>="/") that owns the relationship.</param>
-        <param name="selectorType">The type of the <c>selectionCriteria</c>, either by relationship <see cref="F:System.IO.Packaging.PackageRelationshipSelectorType.Id" /> or relationship <see cref="F:System.IO.Packaging.PackageRelationshipSelectorType.Type" />.</param>
-        <param name="selectionCriteria">The qualification string that is used to select the relationships based on the <c>selectorType</c>.</param>
+        <param name="selectorType">The type of the <paramref name="selectionCriteria" />, either by relationship <see cref="F:System.IO.Packaging.PackageRelationshipSelectorType.Id" /> or relationship <see cref="F:System.IO.Packaging.PackageRelationshipSelectorType.Type" />.</param>
+        <param name="selectionCriteria">The qualification string that is used to select the relationships based on the <paramref name="selectorType" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IO.Packaging.PackageRelationshipSelector" /> class.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

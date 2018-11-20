@@ -456,7 +456,7 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>item</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
         <param name="item">The object to insert.</param>
         <summary>Inserts an item into the collection at the specified index.</summary>
         <remarks>

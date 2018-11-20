@@ -118,8 +118,8 @@
       </Parameters>
       <Docs>
         <param name="expression">An expression string to evaluate. The expression does not include the expression prefix.</param>
-        <param name="parseTimeData">An object containing additional parsing information for evaluating <c>expression</c>. This typically is provided by the expression builder.</param>
-        <param name="propertyType">The type of the control property to which <c>expression</c> is bound.</param>
+        <param name="parseTimeData">An object containing additional parsing information for evaluating <paramref name="expression" />. This typically is provided by the expression builder.</param>
+        <param name="propertyType">The type of the control property to which <paramref name="expression" /> is bound.</param>
         <param name="serviceProvider">A service provider implementation supplied by the designer host, used to obtain additional design-time services.</param>
         <summary>Evaluates an expression string and provides the design-time value for a control property.</summary>
         <returns>The object referenced by the evaluated expression string, if the expression evaluation succeeded; otherwise, <see langword="null" />.</returns>

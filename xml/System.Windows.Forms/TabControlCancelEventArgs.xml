@@ -74,7 +74,7 @@
       </Parameters>
       <Docs>
         <param name="tabPage">The <see cref="T:System.Windows.Forms.TabPage" /> the event is occurring for.</param>
-        <param name="tabPageIndex">The zero-based index of <c>tabPage</c> in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</param>
+        <param name="tabPageIndex">The zero-based index of <paramref name="tabPage" /> in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</param>
         <param name="cancel">
           <see langword="true" /> to cancel the tab change by default; otherwise, <see langword="false" />.</param>
         <param name="action">One of the <see cref="T:System.Windows.Forms.TabControlAction" /> values.</param>

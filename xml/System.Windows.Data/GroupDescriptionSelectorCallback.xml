@@ -22,7 +22,7 @@
   </ReturnValue>
   <Docs>
     <param name="group">The parent group.</param>
-    <param name="level">The level of <c>group</c>.</param>
+    <param name="level">The level of <paramref name="group" />.</param>
     <summary>Represents a method that is used to provide custom logic to select the <see cref="T:System.ComponentModel.GroupDescription" /> based on the parent group and its level.</summary>
     <returns>The <see cref="T:System.ComponentModel.GroupDescription" /> chosen based on the parent group and its level.</returns>
     <remarks>To be added.</remarks>

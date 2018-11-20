@@ -108,8 +108,8 @@
         <Parameter Name="gesture" Type="System.Windows.Input.KeyGesture" />
       </Parameters>
       <Docs>
-        <param name="command">The command to associate with <c>gesture</c>.</param>
-        <param name="gesture">The key combination to associate with <c>command</c>.</param>
+        <param name="command">The command to associate with <paramref name="gesture" />.</param>
+        <param name="gesture">The key combination to associate with <paramref name="command" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.KeyBinding" /> class using the specified <see cref="T:System.Windows.Input.ICommand" /> and <see cref="T:System.Windows.Input.KeyGesture" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -143,8 +143,8 @@
       </Parameters>
       <Docs>
         <param name="command">The command to invoke.</param>
-        <param name="key">The key to be associated with <c>command</c>.</param>
-        <param name="modifiers">The modifiers to be associated with <c>command</c>.</param>
+        <param name="key">The key to be associated with <paramref name="command" />.</param>
+        <param name="modifiers">The modifiers to be associated with <paramref name="command" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.KeyBinding" /> class using the specified <see cref="T:System.Windows.Input.ICommand" /> and the specified <see cref="T:System.Windows.Input.Key" /> and <see cref="T:System.Windows.Input.ModifierKeys" /> which will be converted into a <see cref="T:System.Windows.Input.KeyGesture" />.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Input.KeyBinding" />

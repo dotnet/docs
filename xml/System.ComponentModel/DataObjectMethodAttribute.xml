@@ -146,7 +146,7 @@
       <Docs>
         <param name="methodType">One of the <see cref="T:System.ComponentModel.DataObjectMethodType" /> values that describes the data operation the method performs.</param>
         <param name="isDefault">
-          <see langword="true" /> to indicate the method that the attribute is applied to is the default method of the data object for the specified <c>methodType</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to indicate the method that the attribute is applied to is the default method of the data object for the specified <paramref name="methodType" />; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataObjectMethodAttribute" /> class, identifies the type of data operation the method performs, and identifies whether the method is the default data method that the data object exposes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -113,8 +113,8 @@
         <Parameter Name="target" Type="System.Windows.Window" />
       </Parameters>
       <Docs>
-        <param name="source">The owner of <c>target</c>.</param>
-        <param name="target">The window that is to be owned by <c>source</c>.</param>
+        <param name="source">The owner of <paramref name="target" />.</param>
+        <param name="target">The window that is to be owned by <paramref name="source" />.</param>
         <summary>Assigns the window to be the owner of the specified window.</summary>
         <returns>
           <see langword="true" /> if the operation is successful; otherwise, <see langword="false" />.</returns>

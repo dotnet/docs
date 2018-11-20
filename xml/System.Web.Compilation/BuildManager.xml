@@ -445,7 +445,7 @@
       <Docs>
         <param name="virtualPath">The virtual path.</param>
         <param name="throwIfNotFound">
-          <see langword="true" /> to throw an error if the virtual path does not exist; otherwise, <see langword="false" />. If the virtual path does not exist and <c>throwIfNotFound</c> is <see langword="false" />, this method returns <see langword="null" />.</param>
+          <see langword="true" /> to throw an error if the virtual path does not exist; otherwise, <see langword="false" />. If the virtual path does not exist and <paramref name="throwIfNotFound" /> is <see langword="false" />, this method returns <see langword="null" />.</param>
         <summary>Gets an object factory for the specified virtual path.</summary>
         <returns>The object factory.</returns>
         <remarks>
@@ -601,7 +601,7 @@
         <param name="throwOnError">
           <see langword="true" /> to throw an exception if a <see cref="T:System.Type" /> cannot be generated for the type name; otherwise, <see langword="false" />.</param>
         <param name="ignoreCase">
-          <see langword="true" /> if <c>typeName</c> is case-sensitive; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="typeName" /> is case-sensitive; otherwise, <see langword="false" />.</param>
         <summary>Finds a type in the top-level assemblies, or in assemblies that are defined in configuration, by using a case-insensitive search and optionally throwing an exception on failure.</summary>
         <returns>A <see cref="T:System.Type" /> object that represents the requested <paramref name="typeName" /> parameter.</returns>
         <remarks>

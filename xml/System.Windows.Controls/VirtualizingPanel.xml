@@ -1072,7 +1072,7 @@
       </Parameters>
       <Docs>
         <param name="element">The element on which to set the <see cref="P:System.Windows.Controls.VirtualizingPanel.VirtualizationMode" /> property.</param>
-        <param name="value">One of the enumeration values that specifies whether <c>element</c> uses container recycling.</param>
+        <param name="value">One of the enumeration values that specifies whether <paramref name="element" /> uses container recycling.</param>
         <summary>Sets the <see cref="P:System.Windows.Controls.VirtualizingPanel.VirtualizationMode" /> attached property on the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>

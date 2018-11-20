@@ -566,7 +566,7 @@
         <Parameter Name="schema" Type="System.Xml.Schema.XmlSchema" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>schema</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="schema" /> should be inserted.</param>
         <param name="schema">The <see cref="T:System.Xml.Schema.XmlSchema" /> object to be inserted.</param>
         <summary>Inserts a schema into the <see cref="T:System.Xml.Serialization.XmlSchemas" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
@@ -819,8 +819,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert <c>value</c>.</param>
-        <param name="value">The new value of the element at <c>index</c>.</param>
+        <param name="index">The zero-based index at which to insert <paramref name="value" />.</param>
+        <param name="value">The new value of the element at <paramref name="index" />.</param>
         <summary>Performs additional custom processes before inserting a new element into the <see cref="T:System.Xml.Serialization.XmlSchemas" /> instance.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
@@ -858,8 +858,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> can be found.</param>
-        <param name="value">The value of the element to remove at <c>index</c>.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> can be found.</param>
+        <param name="value">The value of the element to remove at <paramref name="index" />.</param>
         <summary>Performs additional custom processes when removing an element from the <see cref="T:System.Xml.Serialization.XmlSchemas" /> instance.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
@@ -898,9 +898,9 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>oldValue</c> can be found.</param>
-        <param name="oldValue">The value to replace with <c>newValue</c>.</param>
-        <param name="newValue">The new value of the element at <c>index</c>.</param>
+        <param name="index">The zero-based index at which <paramref name="oldValue" /> can be found.</param>
+        <param name="oldValue">The value to replace with <paramref name="newValue" />.</param>
+        <param name="newValue">The new value of the element at <paramref name="index" />.</param>
         <summary>Performs additional custom processes before setting a value in the <see cref="T:System.Xml.Serialization.XmlSchemas" /> instance.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

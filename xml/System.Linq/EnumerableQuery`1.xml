@@ -385,7 +385,7 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <typeparam name="S">The type of the data in the collection that <c>expression</c> represents.</typeparam>
+        <typeparam name="S">The type of the data in the collection that <paramref name="expression" /> represents.</typeparam>
         <param name="expression">An expression tree to execute.</param>
         <summary>Constructs a new <see cref="T:System.Linq.EnumerableQuery`1" /> object and associates it with a specified expression tree that represents an <see cref="T:System.Linq.IQueryable`1" /> collection of data.</summary>
         <returns>An EnumerableQuery object that is associated with <paramref name="expression" />.</returns>
@@ -463,7 +463,7 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <typeparam name="S">The type of the data in the collection that <c>expression</c> represents.</typeparam>
+        <typeparam name="S">The type of the data in the collection that <paramref name="expression" /> represents.</typeparam>
         <param name="expression">An expression tree to execute.</param>
         <summary>Executes an expression after rewriting it to call <see cref="T:System.Linq.Enumerable" /> methods instead of <see cref="T:System.Linq.Queryable" /> methods on any enumerable data sources that cannot be queried by <see cref="T:System.Linq.Queryable" /> methods.</summary>
         <returns>The value that results from executing <paramref name="expression" />.</returns>

@@ -428,7 +428,7 @@
       </Parameters>
       <Docs>
         <param name="startIndex">[out] The integer reference supplied to this parameter receives the index of the point that starts a subpath.</param>
-        <param name="endIndex">[out] The integer reference supplied to this parameter receives the index of the point that ends the subpath to which <c>startIndex</c> points.</param>
+        <param name="endIndex">[out] The integer reference supplied to this parameter receives the index of the point that ends the subpath to which <paramref name="startIndex" /> points.</param>
         <summary>Increments the <see cref="T:System.Drawing.Drawing2D.GraphicsPathIterator" /> to the next marker in the path and returns the start and stop indexes by way of the [out] parameters.</summary>
         <returns>The number of points between this marker and the next.</returns>
         <remarks>

@@ -257,7 +257,7 @@
         <param name="source">A name that identifies the output. This is typically the name of the application that generated the trace event.</param>
         <param name="severity">A <see cref="T:System.Diagnostics.TraceEventType" /> value that specifies the type of event that caused the trace.</param>
         <param name="id">A numeric identifier for the event.</param>
-        <param name="format">A format string that contains zero or more format items that correspond to objects in the <c>args</c> array.</param>
+        <param name="format">A format string that contains zero or more format items that correspond to objects in the <paramref name="args" /> array.</param>
         <param name="args">An object array that contains zero or more objects to format.</param>
         <summary>Writes trace information, a formatted array of objects, and event information to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
         <remarks>
@@ -343,7 +343,7 @@
       </Parameters>
       <Docs>
         <param name="message">The message to write.</param>
-        <param name="category">Ignored. The <see cref="T:System.Web.IisTraceListener" /> implementation of the <see cref="T:System.Diagnostics.TraceListener" /> class disregards the <c>category</c> parameter.</param>
+        <param name="category">Ignored. The <see cref="T:System.Web.IisTraceListener" /> implementation of the <see cref="T:System.Diagnostics.TraceListener" /> class disregards the <paramref name="category" /> parameter.</param>
         <summary>Writes the specified message and the specified category name to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -420,7 +420,7 @@
       </Parameters>
       <Docs>
         <param name="message">The message to write.</param>
-        <param name="category">Ignored. The <see cref="T:System.Web.IisTraceListener" /> implementation of the <see cref="T:System.Diagnostics.TraceListener" /> class disregards the <c>category</c> parameter.</param>
+        <param name="category">Ignored. The <see cref="T:System.Web.IisTraceListener" /> implementation of the <see cref="T:System.Diagnostics.TraceListener" /> class disregards the <paramref name="category" /> parameter.</param>
         <summary>Writes the specified message and category name to the output of the <see cref="T:System.Web.IisTraceListener" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

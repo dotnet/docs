@@ -448,7 +448,7 @@
       </Parameters>
       <Docs>
         <param name="documentPaginator">The document paginator that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>documentPaginator</c> content.</param>
+        <param name="printTicket">The default print preferences for the <paramref name="documentPaginator" /> content.</param>
         <summary>When overridden in a derived class, synchronously writes paginated content together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -498,7 +498,7 @@
       </Parameters>
       <Docs>
         <param name="fixedDocument">The document to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedDocument</c> content.</param>
+        <param name="printTicket">The default print preferences for the <paramref name="fixedDocument" /> content.</param>
         <summary>When overridden in a derived class, synchronously writes a given <see cref="T:System.Windows.Documents.FixedDocument" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -548,7 +548,7 @@
       </Parameters>
       <Docs>
         <param name="fixedDocumentSequence">The document sequence that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedDocumentSequence</c> content.</param>
+        <param name="printTicket">The default print preferences for the <paramref name="fixedDocumentSequence" /> content.</param>
         <summary>When overridden in a derived class, synchronously writes a given <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -598,7 +598,7 @@
       </Parameters>
       <Docs>
         <param name="fixedPage">The page to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedPage</c> content.</param>
+        <param name="printTicket">The default print preferences for the <paramref name="fixedPage" /> content.</param>
         <summary>When overridden in a derived class, synchronously writes a given <see cref="T:System.Windows.Documents.FixedPage" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -648,7 +648,7 @@
       </Parameters>
       <Docs>
         <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> element to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>visual</c> element.</param>
+        <param name="printTicket">The default print preferences for the <paramref name="visual" /> element.</param>
         <summary>When overridden in a derived class, synchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -935,7 +935,7 @@
       </Parameters>
       <Docs>
         <param name="documentPaginator">The document paginator that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>documentPaginator</c> content.</param>
+        <param name="printTicket">The default print preferences for the <paramref name="documentPaginator" /> content.</param>
         <summary>When overridden in a derived class, asynchronously writes the content of a given <see cref="T:System.Windows.Documents.DocumentPaginator" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1022,7 +1022,7 @@
       </Parameters>
       <Docs>
         <param name="fixedDocument">The document to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedDocument</c> content.</param>
+        <param name="printTicket">The default print preferences for the <paramref name="fixedDocument" /> content.</param>
         <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedDocument" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1109,7 +1109,7 @@
       </Parameters>
       <Docs>
         <param name="fixedDocumentSequence">The document sequence that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedDocumentSequence</c> content.</param>
+        <param name="printTicket">The default print preferences for the <paramref name="fixedDocumentSequence" /> content.</param>
         <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1196,7 +1196,7 @@
       </Parameters>
       <Docs>
         <param name="fixedPage">The page to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedPage</c> content.</param>
+        <param name="printTicket">The default print preferences for the <paramref name="fixedPage" /> content.</param>
         <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedPage" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1283,7 +1283,7 @@
       </Parameters>
       <Docs>
         <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> element to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>visual</c> element.</param>
+        <param name="printTicket">The default print preferences for the <paramref name="visual" /> element.</param>
         <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1329,7 +1329,7 @@
       </Parameters>
       <Docs>
         <param name="documentPaginator">The document paginator that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>documentPaginator</c> content.</param>
+        <param name="printTicket">The default print preferences for the <paramref name="documentPaginator" /> content.</param>
         <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
         <summary>When overridden in a derived class, asynchronously writes paginated content together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
@@ -1380,7 +1380,7 @@
       </Parameters>
       <Docs>
         <param name="fixedDocument">The document to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedDocument</c> content.</param>
+        <param name="printTicket">The default print preferences for the <paramref name="fixedDocument" /> content.</param>
         <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
         <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedDocument" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
@@ -1431,7 +1431,7 @@
       </Parameters>
       <Docs>
         <param name="fixedDocumentSequence">The document sequence that defines the content to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedDocumentSequence</c> content.</param>
+        <param name="printTicket">The default print preferences for the <paramref name="fixedDocumentSequence" /> content.</param>
         <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
         <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
@@ -1482,7 +1482,7 @@
       </Parameters>
       <Docs>
         <param name="fixedPage">The page to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>fixedPage</c> content.</param>
+        <param name="printTicket">The default print preferences for the <paramref name="fixedPage" /> content.</param>
         <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
         <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Documents.FixedPage" /> together with an associated <see cref="T:System.Printing.PrintTicket" /> to the serialization <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
@@ -1533,7 +1533,7 @@
       </Parameters>
       <Docs>
         <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> element to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>visual</c> element.</param>
+        <param name="printTicket">The default print preferences for the <paramref name="visual" /> element.</param>
         <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
         <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element together with an associated <see cref="T:System.Printing.PrintTicket" /> and identifier to the serialization <see cref="T:System.IO.Stream" />.</summary>
         <remarks>

@@ -53,8 +53,8 @@
         <param name="filePath">The fully qualified physical path of a directory or file to monitor for changes.</param>
         <param name="onChangedCallback">A reference to a method that implements the <see cref="T:System.Runtime.Caching.OnChangedCallback" /> delegate. When the monitored file or directory changes, the host environment's implementation of the <see cref="T:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem" /> interface raises an event by calling the <see cref="T:System.Runtime.Caching.OnChangedCallback" /> class.</param>
         <param name="state">The state that is supplied by the host environment. Cache implementations and custom change monitors should treat the state value as opaque. However, the state must be stored so that it can be sent to the host environment when the cache implementation calls the <see cref="M:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem.StopMonitoring(System.String,System.Object)" /> method.</param>
-        <param name="lastWriteTime">When this method returns, contains the last date and time that a write operation occurred on <c>filePath</c>. This parameter is passed uninitialized. This parameter is returned from the host environment.</param>
-        <param name="fileSize">When this method returns, contains the total size of the monitored <c>filePath</c>. This parameter is passed uninitialized. This parameter is returned from the host environment.</param>
+        <param name="lastWriteTime">When this method returns, contains the last date and time that a write operation occurred on <paramref name="filePath" />. This parameter is passed uninitialized. This parameter is returned from the host environment.</param>
+        <param name="fileSize">When this method returns, contains the total size of the monitored <paramref name="filePath" />. This parameter is passed uninitialized. This parameter is returned from the host environment.</param>
         <summary>Registers a file path to monitor with the host environment.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

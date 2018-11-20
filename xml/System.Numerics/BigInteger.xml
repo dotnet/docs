@@ -2197,9 +2197,9 @@ value Mod 2 = 0
         <Parameter Name="modulus" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">The number to raise to the <c>exponent</c> power.</param>
-        <param name="exponent">The exponent to raise <c>value</c> by.</param>
-        <param name="modulus">The number by which to divide <c>value</c> raised to the <c>exponent</c> power.</param>
+        <param name="value">The number to raise to the <paramref name="exponent" /> power.</param>
+        <param name="exponent">The exponent to raise <paramref name="value" /> by.</param>
+        <param name="modulus">The number by which to divide <paramref name="value" /> raised to the <paramref name="exponent" /> power.</param>
         <summary>Performs modulus division on a number raised to the power of another number.</summary>
         <returns>The remainder after dividing <paramref name="value" /><sup>exponent</sup> by <paramref name="modulus" />.</returns>
         <remarks>
@@ -5273,7 +5273,7 @@ value Mod 2 = 0
       </Parameters>
       <Docs>
         <param name="value">The value whose bits are to be shifted.</param>
-        <param name="shift">The number of bits to shift <c>value</c> to the left.</param>
+        <param name="shift">The number of bits to shift <paramref name="value" /> to the left.</param>
         <summary>Shifts a <see cref="T:System.Numerics.BigInteger" /> value a specified number of bits to the left.</summary>
         <returns>A value that has been shifted to the left by the specified number of bits.</returns>
         <remarks>
@@ -6073,7 +6073,7 @@ value Mod 2 = 0
       </Parameters>
       <Docs>
         <param name="value">The value whose bits are to be shifted.</param>
-        <param name="shift">The number of bits to shift <c>value</c> to the right.</param>
+        <param name="shift">The number of bits to shift <paramref name="value" /> to the right.</param>
         <summary>Shifts a <see cref="T:System.Numerics.BigInteger" /> value a specified number of bits to the right.</summary>
         <returns>A value that has been shifted to the right by the specified number of bits.</returns>
         <remarks>
@@ -6358,7 +6358,7 @@ value Mod 2 = 0
       </Parameters>
       <Docs>
         <param name="value">A string that contains a number to convert.</param>
-        <param name="style">A bitwise combination of the enumeration values that specify the permitted format of <c>value</c>.</param>
+        <param name="style">A bitwise combination of the enumeration values that specify the permitted format of <paramref name="value" />.</param>
         <summary>Converts the string representation of a number in a specified style to its <see cref="T:System.Numerics.BigInteger" /> equivalent.</summary>
         <returns>A value that is equivalent to the number specified in the <paramref name="value" /> parameter.</returns>
         <remarks>
@@ -6480,7 +6480,7 @@ value Mod 2 = 0
       </Parameters>
       <Docs>
         <param name="value">A string that contains a number to convert.</param>
-        <param name="provider">An object that provides culture-specific formatting information about <c>value</c>.</param>
+        <param name="provider">An object that provides culture-specific formatting information about <paramref name="value" />.</param>
         <summary>Converts the string representation of a number in a specified culture-specific format to its <see cref="T:System.Numerics.BigInteger" /> equivalent.</summary>
         <returns>A value that is equivalent to the number specified in the <paramref name="value" /> parameter.</returns>
         <remarks>
@@ -6611,8 +6611,8 @@ value Mod 2 = 0
       </Parameters>
       <Docs>
         <param name="value">A string that contains a number to convert.</param>
-        <param name="style">A bitwise combination of the enumeration values that specify the permitted format of <c>value</c>.</param>
-        <param name="provider">An object that provides culture-specific formatting information about <c>value</c>.</param>
+        <param name="style">A bitwise combination of the enumeration values that specify the permitted format of <paramref name="value" />.</param>
+        <param name="provider">An object that provides culture-specific formatting information about <paramref name="value" />.</param>
         <summary>Converts the string representation of a number in a specified style and culture-specific format to its <see cref="T:System.Numerics.BigInteger" /> equivalent.</summary>
         <returns>A value that is equivalent to the number specified in the <paramref name="value" /> parameter.</returns>
         <remarks>
@@ -6746,8 +6746,8 @@ value Mod 2 = 0
         <Parameter Name="exponent" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">The number to raise to the <c>exponent</c> power.</param>
-        <param name="exponent">The exponent to raise <c>value</c> by.</param>
+        <param name="value">The number to raise to the <paramref name="exponent" /> power.</param>
+        <param name="exponent">The exponent to raise <paramref name="value" /> by.</param>
         <summary>Raises a <see cref="T:System.Numerics.BigInteger" /> value to the power of a specified value.</summary>
         <returns>The result of raising <paramref name="value" /> to the <paramref name="exponent" /> power.</returns>
         <remarks>
@@ -7478,7 +7478,7 @@ value Mod 2 = 0
       </Parameters>
       <Docs>
         <param name="value">The string representation of a number.</param>
-        <param name="result">When this method returns, contains the <see cref="T:System.Numerics.BigInteger" /> equivalent to the number that is contained in <c>value</c>, or zero (0) if the conversion fails. The conversion fails if the <c>value</c> parameter is <see langword="null" /> or is not of the correct format. This parameter is passed uninitialized.</param>
+        <param name="result">When this method returns, contains the <see cref="T:System.Numerics.BigInteger" /> equivalent to the number that is contained in <paramref name="value" />, or zero (0) if the conversion fails. The conversion fails if the <paramref name="value" /> parameter is <see langword="null" /> or is not of the correct format. This parameter is passed uninitialized.</param>
         <summary>Tries to convert the string representation of a number to its <see cref="T:System.Numerics.BigInteger" /> equivalent, and returns a value that indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if <paramref name="value" /> was converted successfully; otherwise, <see langword="false" />.</returns>
@@ -7594,10 +7594,10 @@ value Mod 2 = 0
         <Parameter Name="result" Type="System.Numerics.BigInteger" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">The string representation of a number. The string is interpreted using the style specified by <c>style</c>.</param>
-        <param name="style">A bitwise combination of enumeration values that indicates the style elements that can be present in <c>value</c>. A typical value to specify is <see cref="F:System.Globalization.NumberStyles.Integer" />.</param>
-        <param name="provider">An object that supplies culture-specific formatting information about <c>value</c>.</param>
-        <param name="result">When this method returns, contains the <see cref="T:System.Numerics.BigInteger" /> equivalent to the number that is contained in <c>value</c>, or <see cref="P:System.Numerics.BigInteger.Zero" /> if the conversion failed. The conversion fails if the <c>value</c> parameter is <see langword="null" /> or is not in a format that is compliant with <c>style</c>. This parameter is passed uninitialized.</param>
+        <param name="value">The string representation of a number. The string is interpreted using the style specified by <paramref name="style" />.</param>
+        <param name="style">A bitwise combination of enumeration values that indicates the style elements that can be present in <paramref name="value" />. A typical value to specify is <see cref="F:System.Globalization.NumberStyles.Integer" />.</param>
+        <param name="provider">An object that supplies culture-specific formatting information about <paramref name="value" />.</param>
+        <param name="result">When this method returns, contains the <see cref="T:System.Numerics.BigInteger" /> equivalent to the number that is contained in <paramref name="value" />, or <see cref="P:System.Numerics.BigInteger.Zero" /> if the conversion failed. The conversion fails if the <paramref name="value" /> parameter is <see langword="null" /> or is not in a format that is compliant with <paramref name="style" />. This parameter is passed uninitialized.</param>
         <summary>Tries to convert the string representation of a number in a specified style and culture-specific format to its <see cref="T:System.Numerics.BigInteger" /> equivalent, and returns a value that indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="value" /> parameter was converted successfully; otherwise, <see langword="false" />.</returns>

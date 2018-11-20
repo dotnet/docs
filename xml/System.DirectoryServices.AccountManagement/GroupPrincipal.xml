@@ -200,7 +200,7 @@
       </Parameters>
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
-        <param name="identityType">A <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value that specifies the format of the <c>identityValue</c> parameter.</param>
+        <param name="identityType">A <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value that specifies the format of the <paramref name="identityValue" /> parameter.</param>
         <param name="identityValue">The identity of the group principal. This parameter can be any format that is contained in the <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration.</param>
         <summary>Returns a group principal object that matches the specified identity type, and value. This version of the <see cref="Overload:System.DirectoryServices.AccountManagement.GroupPrincipal.FindByIdentity" /> method determines the format of the identity value.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> that matches the specified identity value and type, or null if no matches are found.</returns>

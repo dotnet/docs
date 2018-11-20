@@ -235,7 +235,7 @@
       </Parameters>
       <Docs>
         <param name="xmlNamespace">The specified XML namespace prefix.</param>
-        <param name="localName">The "local" name of the XAML element to obtain the mapped <see cref="T:System.Type" /> for. Local in this context means as mapped versus the provided <c>xmlNamespace</c>.</param>
+        <param name="localName">The "local" name of the XAML element to obtain the mapped <see cref="T:System.Type" /> for. Local in this context means as mapped versus the provided <paramref name="xmlNamespace" />.</param>
         <summary>Gets the CLR <see cref="T:System.Type" /> that a given XAML element is mapped to, using the specified XML namespace prefix and element name.</summary>
         <returns>The <see cref="T:System.Type" /> for the object, or <see langword="null" /> if no mapping could be resolved.</returns>
         <remarks>

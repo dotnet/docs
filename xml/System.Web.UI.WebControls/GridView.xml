@@ -1823,7 +1823,7 @@
       <Docs>
         <param name="dataSource">A <see cref="T:System.Web.UI.WebControls.PagedDataSource" /> that represents the data source.</param>
         <param name="useDataSource">
-          <see langword="true" /> to use the data source specified by the <c>dataSource</c> parameter; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to use the data source specified by the <paramref name="dataSource" /> parameter; otherwise, <see langword="false" />.</param>
         <summary>Creates the set of column fields used to build the control hierarchy.</summary>
         <returns>A <see cref="T:System.Collections.ICollection" /> that contains the fields used to build the control hierarchy.</returns>
         <remarks>

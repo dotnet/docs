@@ -128,7 +128,7 @@
       </Parameters>
       <Docs>
         <param name="sizeType">A <see cref="P:System.Windows.Forms.TableLayoutStyle.SizeType" /> indicating how the column should be should be sized relative to its containing table.</param>
-        <param name="width">The preferred width, in pixels or percentage, depending on the <c>sizeType</c> parameter.</param>
+        <param name="width">The preferred width, in pixels or percentage, depending on the <paramref name="sizeType" /> parameter.</param>
         <summary>Initializes and instance of the <see cref="T:System.Windows.Forms.ColumnStyle" /> class using the supplied <see cref="T:System.Windows.Forms.SizeType" /> and width values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

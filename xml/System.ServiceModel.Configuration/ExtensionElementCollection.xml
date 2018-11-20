@@ -117,7 +117,7 @@
         <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
       </Parameters>
       <Docs>
-        <param name="index">The index location at which to add <c>element</c>.</param>
+        <param name="index">The index location at which to add <paramref name="element" />.</param>
         <param name="element">The <see cref="T:System.Configuration.ConfigurationElement" /> to add.</param>
         <summary>Adds a configuration element to the <see cref="T:System.ServiceModel.Configuration.ExtensionElementCollection" />, at the specified location.</summary>
         <remarks>

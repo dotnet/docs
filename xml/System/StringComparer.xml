@@ -156,8 +156,8 @@ The following example demonstrates the properties and the <xref:System.StringCom
         <Parameter Name="y" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="x">An object to compare to <c>y</c>.</param>
-        <param name="y">An object to compare to <c>x</c>.</param>
+        <param name="x">An object to compare to <paramref name="y" />.</param>
+        <param name="y">An object to compare to <paramref name="x" />.</param>
         <summary>When overridden in a derived class, compares two objects and returns an indication of their relative sort order.</summary>
         <returns>A signed integer that indicates the relative values of <paramref name="x" /> and <paramref name="y" />, as shown in the following table.  
   
@@ -238,8 +238,8 @@ The following example demonstrates the properties and the <xref:System.StringCom
         <Parameter Name="y" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="x">A string to compare to <c>y</c>.</param>
-        <param name="y">A string to compare to <c>x</c>.</param>
+        <param name="x">A string to compare to <paramref name="y" />.</param>
+        <param name="y">A string to compare to <paramref name="x" />.</param>
         <summary>When overridden in a derived class, compares two strings and returns an indication of their relative sort order.</summary>
         <returns>A signed integer that indicates the relative values of <paramref name="x" /> and <paramref name="y" />, as shown in the following table.  
   
@@ -529,8 +529,8 @@ The following example demonstrates the properties and the <xref:System.StringCom
         <Parameter Name="y" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="x">An object to compare to <c>y</c>.</param>
-        <param name="y">An object to compare to <c>x</c>.</param>
+        <param name="x">An object to compare to <paramref name="y" />.</param>
+        <param name="y">An object to compare to <paramref name="x" />.</param>
         <summary>When overridden in a derived class, indicates whether two objects are equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="x" /> and <paramref name="y" /> refer to the same object, or <paramref name="x" /> and <paramref name="y" /> are both the same type of object and those objects are equal, or both <paramref name="x" /> and <paramref name="y" /> are <see langword="null" />; otherwise, <see langword="false" />.</returns>
@@ -581,8 +581,8 @@ The following example demonstrates the properties and the <xref:System.StringCom
         <Parameter Name="y" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="x">A string to compare to <c>y</c>.</param>
-        <param name="y">A string to compare to <c>x</c>.</param>
+        <param name="x">A string to compare to <paramref name="y" />.</param>
+        <param name="y">A string to compare to <paramref name="x" />.</param>
         <summary>When overridden in a derived class, indicates whether two strings are equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="x" /> and <paramref name="y" /> refer to the same object, or <paramref name="x" /> and <paramref name="y" /> are equal, or <paramref name="x" /> and <paramref name="y" /> are <see langword="null" />; otherwise, <see langword="false" />.</returns>

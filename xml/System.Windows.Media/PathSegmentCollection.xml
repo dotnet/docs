@@ -400,7 +400,7 @@
       </Parameters>
       <Docs>
         <param name="array">The array into which the collection's items are to be copied.</param>
-        <param name="index">The index of <c>array</c> at which to start copying the contents of the <see cref="T:System.Windows.Media.PathSegmentCollection" />.</param>
+        <param name="index">The index of <paramref name="array" /> at which to start copying the contents of the <see cref="T:System.Windows.Media.PathSegmentCollection" />.</param>
         <summary>Copies the entire <see cref="T:System.Windows.Media.PathSegmentCollection" /> to a one-dimensional <see cref="T:System.Windows.Media.PathSegment" /> array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -636,7 +636,7 @@
         <Parameter Name="value" Type="System.Windows.Media.PathSegment" />
       </Parameters>
       <Docs>
-        <param name="index">The index at which to insert <c>value</c>, the specified <see cref="T:System.Windows.Media.PathSegment" />.</param>
+        <param name="index">The index at which to insert <paramref name="value" />, the specified <see cref="T:System.Windows.Media.PathSegment" />.</param>
         <param name="value">The item to insert.</param>
         <summary>Inserts a <see cref="T:System.Windows.Media.PathSegment" /> into this <see cref="T:System.Windows.Media.PathSegmentCollection" /> at the specified index.</summary>
         <remarks>

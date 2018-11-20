@@ -1139,8 +1139,8 @@
       </Parameters>
       <Docs>
         <param name="Obj">The object to convert into a <see cref="T:System.Runtime.Remoting.ObjRef" />.</param>
-        <param name="ObjURI">The URI the object specified in the <c>Obj</c> parameter is marshaled with. Can be <see langword="null" />.</param>
-        <param name="RequestedType">The <see cref="T:System.Type" /><c>Obj</c> is marshaled as. Can be <see langword="null" />.</param>
+        <param name="ObjURI">The URI the object specified in the <paramref name="Obj" /> parameter is marshaled with. Can be <see langword="null" />.</param>
+        <param name="RequestedType">The <see cref="T:System.Type" /><paramref name="Obj" /> is marshaled as. Can be <see langword="null" />.</param>
         <summary>Takes a <see cref="T:System.MarshalByRefObject" /> and converts it into an instance of the <see cref="T:System.Runtime.Remoting.ObjRef" /> class with the specified URI, and the provided <see cref="T:System.Type" />.</summary>
         <returns>An instance of the <see cref="T:System.Runtime.Remoting.ObjRef" /> class that represents the object specified in the <paramref name="Obj" /> parameter.</returns>
         <remarks>

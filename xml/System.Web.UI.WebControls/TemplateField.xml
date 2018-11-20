@@ -401,7 +401,7 @@
         <param name="cell">A <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" /> that contains the text or controls of the <see cref="T:System.Web.UI.WebControls.TemplateField" />.</param>
         <param name="rowState">One of the <see cref="T:System.Web.UI.WebControls.DataControlRowState" /> values.</param>
         <param name="includeReadOnly">
-          <see langword="true" /> to indicate that the values of read-only fields are included in the <c>dictionary</c> collection; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to indicate that the values of read-only fields are included in the <paramref name="dictionary" /> collection; otherwise, <see langword="false" />.</param>
         <summary>Extracts the value of the data control fields as specified by one or more two-way binding statements (<see langword="DataBind" />) from the current table cell and adds the values to the specified <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

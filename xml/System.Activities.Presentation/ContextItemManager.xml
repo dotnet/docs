@@ -287,7 +287,7 @@
       </Parameters>
       <Docs>
         <param name="existing">The existing delegate.</param>
-        <param name="toRemove">The delegate to be removed from <c>existing</c>.</param>
+        <param name="toRemove">The delegate to be removed from <paramref name="existing" />.</param>
         <summary>Represents a helper method that performs delegate removals and that unwraps delegates that are proxies to generic callbacks.</summary>
         <returns>Returns <see cref="T:System.Delegate" />, which contains the new delegate that should be assigned to <paramref name="existing" />.</returns>
         <remarks>
@@ -352,7 +352,7 @@
       </Parameters>
       <Docs>
         <param name="contextItemType">The type of item you want to subscribe to.</param>
-        <param name="callback">The <see cref="T:System.Activities.Presentation.SubscribeContextCallback" /> that is invoked when <c>contextItemType</c> changes.</param>
+        <param name="callback">The <see cref="T:System.Activities.Presentation.SubscribeContextCallback" /> that is invoked when <paramref name="contextItemType" /> changes.</param>
         <summary>When overridden in a derived class, adds an event callback that is invoked when a context item of the specified item type changes.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -386,7 +386,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TContextItemType">The type of item you want to subscribe to.</typeparam>
-        <param name="callback">A <see cref="T:System.Activities.Presentation.SubscribeContextCallback`1" /> that is invoked when <c>contextItemType</c> changes.</param>
+        <param name="callback">A <see cref="T:System.Activities.Presentation.SubscribeContextCallback`1" /> that is invoked when <paramref name="contextItemType" /> changes.</param>
         <summary>Adds an event callback that is invoked when a context item of the specified item type changes.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

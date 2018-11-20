@@ -591,7 +591,7 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> is to be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> is to be inserted.</param>
         <param name="value">The object to insert into the collection.</param>
         <summary>Throws a <see cref="T:System.NotSupportedException" /> if called.</summary>
         <remarks>To be added.</remarks>
@@ -965,7 +965,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> is to be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> is to be inserted.</param>
         <param name="value">The object to insert into the collection.</param>
         <summary>Items cannot be inserted into a read-only collection.</summary>
         <remarks>

@@ -938,7 +938,7 @@ The <xref:System.ValueTuple%608> type is not serializable in .NET Core 1.x or in
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The value of the specified <see langword="ValueTuple" /> element. <c>index</c> can range from 0 for <see langword="Item1" /> to one less than the number of elements in the <see langword="ValueTuple" />.</param>
+        <param name="index">The value of the specified <see langword="ValueTuple" /> element. <paramref name="index" /> can range from 0 for <see langword="Item1" /> to one less than the number of elements in the <see langword="ValueTuple" />.</param>
         <summary>Gets the value of the specified <see langword="ValueTuple" /> element.</summary>
         <value>The value of the <see langword="ValueTuple" /> element at the specified position.</value>
         <remarks>

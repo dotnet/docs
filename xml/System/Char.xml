@@ -512,7 +512,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A string that contains a character or surrogate pair.</param>
-        <param name="index">The index position of the character or surrogate pair in <c>s</c>.</param>
+        <param name="index">The index position of the character or surrogate pair in <paramref name="s" />.</param>
         <summary>Converts the value of a UTF-16 encoded character or surrogate pair at a specified position in a string into a Unicode code point.</summary>
         <returns>The 21-bit Unicode code point represented by the character or surrogate pair at the position in the <paramref name="s" /> parameter specified by the <paramref name="index" /> parameter.</returns>
         <remarks>
@@ -822,7 +822,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A <see cref="T:System.String" />.</param>
-        <param name="index">The character position in <c>s</c>.</param>
+        <param name="index">The character position in <paramref name="s" />.</param>
         <summary>Converts the numeric Unicode character at the specified position in a specified string to a double-precision floating point number.</summary>
         <returns>The numeric value of the character at position <paramref name="index" /> in <paramref name="s" /> if that character represents a number; otherwise, -1.</returns>
         <remarks>
@@ -1007,7 +1007,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A <see cref="T:System.String" />.</param>
-        <param name="index">The character position in <c>s</c>.</param>
+        <param name="index">The character position in <paramref name="s" />.</param>
         <summary>Categorizes the character at the specified position in a specified string into a group identified by one of the <see cref="T:System.Globalization.UnicodeCategory" /> values.</summary>
         <returns>A <see cref="T:System.Globalization.UnicodeCategory" /> enumerated constant that identifies the group that contains the character at position <paramref name="index" /> in <paramref name="s" />.</returns>
         <remarks>
@@ -1158,7 +1158,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A string.</param>
-        <param name="index">The position of the character to evaluate in <c>s</c>.</param>
+        <param name="index">The position of the character to evaluate in <paramref name="s" />.</param>
         <summary>Indicates whether the character at the specified position in a specified string is categorized as a control character.</summary>
         <returns>
           <see langword="true" /> if the character at position <paramref name="index" /> in <paramref name="s" /> is a control character; otherwise, <see langword="false" />.</returns>
@@ -1311,7 +1311,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A string.</param>
-        <param name="index">The position of the character to evaluate in <c>s</c>.</param>
+        <param name="index">The position of the character to evaluate in <paramref name="s" />.</param>
         <summary>Indicates whether the character at the specified position in a specified string is categorized as a decimal digit.</summary>
         <returns>
           <see langword="true" /> if the character at position <paramref name="index" /> in <paramref name="s" /> is a decimal digit; otherwise, <see langword="false" />.</returns>
@@ -1450,7 +1450,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A string.</param>
-        <param name="index">The position of the character to evaluate in <c>s</c>.</param>
+        <param name="index">The position of the character to evaluate in <paramref name="s" />.</param>
         <summary>Indicates whether the <see cref="T:System.Char" /> object at the specified position in a string is a high surrogate.</summary>
         <returns>
           <see langword="true" /> if the numeric value of the specified character in the <paramref name="s" /> parameter ranges from U+D800 through U+DBFF; otherwise, <see langword="false" />.</returns>
@@ -1620,7 +1620,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A string.</param>
-        <param name="index">The position of the character to evaluate in <c>s</c>.</param>
+        <param name="index">The position of the character to evaluate in <paramref name="s" />.</param>
         <summary>Indicates whether the character at the specified position in a specified string is categorized as a Unicode letter.</summary>
         <returns>
           <see langword="true" /> if the character at position <paramref name="index" /> in <paramref name="s" /> is a letter; otherwise, <see langword="false" />.</returns>
@@ -1786,7 +1786,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A string.</param>
-        <param name="index">The position of the character to evaluate in <c>s</c>.</param>
+        <param name="index">The position of the character to evaluate in <paramref name="s" />.</param>
         <summary>Indicates whether the character at the specified position in a specified string is categorized as a letter or a decimal digit.</summary>
         <returns>
           <see langword="true" /> if the character at position <paramref name="index" /> in <paramref name="s" /> is a letter or a decimal digit; otherwise, <see langword="false" />.</returns>
@@ -1931,7 +1931,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A string.</param>
-        <param name="index">The position of the character to evaluate in <c>s</c>.</param>
+        <param name="index">The position of the character to evaluate in <paramref name="s" />.</param>
         <summary>Indicates whether the character at the specified position in a specified string is categorized as a lowercase letter.</summary>
         <returns>
           <see langword="true" /> if the character at position <paramref name="index" /> in <paramref name="s" /> is a lowercase letter; otherwise, <see langword="false" />.</returns>
@@ -2069,7 +2069,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A string.</param>
-        <param name="index">The position of the character to evaluate in <c>s</c>.</param>
+        <param name="index">The position of the character to evaluate in <paramref name="s" />.</param>
         <summary>Indicates whether the <see cref="T:System.Char" /> object at the specified position in a string is a low surrogate.</summary>
         <returns>
           <see langword="true" /> if the numeric value of the specified character in the <paramref name="s" /> parameter ranges from U+DC00 through U+DFFF; otherwise, <see langword="false" />.</returns>
@@ -2223,7 +2223,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A string.</param>
-        <param name="index">The position of the character to evaluate in <c>s</c>.</param>
+        <param name="index">The position of the character to evaluate in <paramref name="s" />.</param>
         <summary>Indicates whether the character at the specified position in a specified string is categorized as a number.</summary>
         <returns>
           <see langword="true" /> if the character at position <paramref name="index" /> in <paramref name="s" /> is a number; otherwise, <see langword="false" />.</returns>
@@ -2440,7 +2440,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A string.</param>
-        <param name="index">The position of the character to evaluate in <c>s</c>.</param>
+        <param name="index">The position of the character to evaluate in <paramref name="s" />.</param>
         <summary>Indicates whether the character at the specified position in a specified string is categorized as a punctuation mark.</summary>
         <returns>
           <see langword="true" /> if the character at position <paramref name="index" /> in <paramref name="s" /> is a punctuation mark; otherwise, <see langword="false" />.</returns>
@@ -2637,7 +2637,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A string.</param>
-        <param name="index">The position of the character to evaluate in <c>s</c>.</param>
+        <param name="index">The position of the character to evaluate in <paramref name="s" />.</param>
         <summary>Indicates whether the character at the specified position in a specified string is categorized as a separator character.</summary>
         <returns>
           <see langword="true" /> if the character at position <paramref name="index" /> in <paramref name="s" /> is a separator character; otherwise, <see langword="false" />.</returns>
@@ -2788,7 +2788,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A string.</param>
-        <param name="index">The position of the character to evaluate in <c>s</c>.</param>
+        <param name="index">The position of the character to evaluate in <paramref name="s" />.</param>
         <summary>Indicates whether the character at the specified position in a specified string has a surrogate code unit.</summary>
         <returns>
           <see langword="true" /> if the character at position <paramref name="index" /> in <paramref name="s" /> is a either a high surrogate or a low surrogate; otherwise, <see langword="false" />.</returns>
@@ -2930,7 +2930,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A string.</param>
-        <param name="index">The starting position of the pair of characters to evaluate within <c>s</c>.</param>
+        <param name="index">The starting position of the pair of characters to evaluate within <paramref name="s" />.</param>
         <summary>Indicates whether two adjacent <see cref="T:System.Char" /> objects at a specified position in a string form a surrogate pair.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="s" /> parameter includes adjacent characters at positions <paramref name="index" /> and <paramref name="index" /> + 1, and the numeric value of the character at position <paramref name="index" /> ranges from U+D800 through U+DBFF, and the numeric value of the character at position <paramref name="index" />+1 ranges from U+DC00 through U+DFFF; otherwise, <see langword="false" />.</returns>
@@ -3116,7 +3116,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A string.</param>
-        <param name="index">The position of the character to evaluate in <c>s</c>.</param>
+        <param name="index">The position of the character to evaluate in <paramref name="s" />.</param>
         <summary>Indicates whether the character at the specified position in a specified string is categorized as a symbol character.</summary>
         <returns>
           <see langword="true" /> if the character at position <paramref name="index" /> in <paramref name="s" /> is a symbol character; otherwise, <see langword="false" />.</returns>
@@ -3271,7 +3271,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A string.</param>
-        <param name="index">The position of the character to evaluate in <c>s</c>.</param>
+        <param name="index">The position of the character to evaluate in <paramref name="s" />.</param>
         <summary>Indicates whether the character at the specified position in a specified string is categorized as an uppercase letter.</summary>
         <returns>
           <see langword="true" /> if the character at position <paramref name="index" /> in <paramref name="s" /> is an uppercase letter; otherwise, <see langword="false" />.</returns>
@@ -3436,7 +3436,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A string.</param>
-        <param name="index">The position of the character to evaluate in <c>s</c>.</param>
+        <param name="index">The position of the character to evaluate in <paramref name="s" />.</param>
         <summary>Indicates whether the character at the specified position in a specified string is categorized as white space.</summary>
         <returns>
           <see langword="true" /> if the character at position <paramref name="index" /> in <paramref name="s" /> is white space; otherwise, <see langword="false" />.</returns>
@@ -4315,7 +4315,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">An <see cref="T:System.IFormatProvider" /> object. (Specify <see langword="null" /> because the <c>provider</c> parameter is ignored.)</param>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> object. (Specify <see langword="null" /> because the <paramref name="provider" /> parameter is ignored.)</param>
         <summary>For a description of this member, see <see cref="M:System.IConvertible.ToUInt16(System.IFormatProvider)" />.</summary>
         <returns>The converted value of the current <see cref="T:System.Char" /> object.</returns>
         <remarks>
@@ -4368,7 +4368,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">An <see cref="T:System.IFormatProvider" /> object. (Specify <see langword="null" /> because the <c>provider</c> parameter is ignored.)</param>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> object. (Specify <see langword="null" /> because the <paramref name="provider" /> parameter is ignored.)</param>
         <summary>For a description of this member, see <see cref="M:System.IConvertible.ToUInt32(System.IFormatProvider)" />.</summary>
         <returns>The converted value of the current <see cref="T:System.Char" /> object.</returns>
         <remarks>
@@ -4421,7 +4421,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">An <see cref="T:System.IFormatProvider" /> object. (Specify <see langword="null" /> because the <c>provider</c> parameter is ignored.)</param>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> object. (Specify <see langword="null" /> because the <paramref name="provider" /> parameter is ignored.)</param>
         <summary>For a description of this member, see <see cref="M:System.IConvertible.ToUInt64(System.IFormatProvider)" />.</summary>
         <returns>The converted value of the current <see cref="T:System.Char" /> object.</returns>
         <remarks>
@@ -5047,7 +5047,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
       </Parameters>
       <Docs>
         <param name="s">A string that contains a single character, or <see langword="null" />.</param>
-        <param name="result">When this method returns, contains a Unicode character equivalent to the sole character in <c>s</c>, if the conversion succeeded, or an undefined value if the conversion failed. The conversion fails if the <c>s</c> parameter is <see langword="null" /> or the length of <c>s</c> is not 1. This parameter is passed uninitialized.</param>
+        <param name="result">When this method returns, contains a Unicode character equivalent to the sole character in <paramref name="s" />, if the conversion succeeded, or an undefined value if the conversion failed. The conversion fails if the <paramref name="s" /> parameter is <see langword="null" /> or the length of <paramref name="s" /> is not 1. This parameter is passed uninitialized.</param>
         <summary>Converts the value of the specified string to its equivalent Unicode character. A return code indicates whether the conversion succeeded or failed.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="s" /> parameter was converted successfully; otherwise, <see langword="false" />.</returns>

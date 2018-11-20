@@ -282,8 +282,8 @@
         <Parameter Name="idValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="inputElement">An <see cref="T:System.Xml.XmlElement" /> object with an ID attribute to compare with <c>idValue</c>.</param>
-        <param name="idValue">The value to compare with the ID attribute of <c>inputElement</c>.</param>
+        <param name="inputElement">An <see cref="T:System.Xml.XmlElement" /> object with an ID attribute to compare with <paramref name="idValue" />.</param>
+        <param name="idValue">The value to compare with the ID attribute of <paramref name="inputElement" />.</param>
         <summary>Determines whether the ID attribute of an <see cref="T:System.Xml.XmlElement" /> object matches a specified value.</summary>
         <returns>
           <see langword="true" /> if the ID attribute of the <paramref name="inputElement" /> parameter matches the <paramref name="idValue" /> parameter; otherwise, <see langword="false" />.</returns>

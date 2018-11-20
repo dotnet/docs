@@ -72,9 +72,9 @@
       <Docs>
         <param name="o">The object to call a method on.</param>
         <param name="objType">The type of the object.</param>
-        <param name="name">The method name of <c>o</c> to call.</param>
+        <param name="name">The method name of <paramref name="o" /> to call.</param>
         <param name="args">An array of parameter values to pass to the method.</param>
-        <param name="paramnames">An array that contains the names of the parameters to which the values in the <c>args</c> array are passed.</param>
+        <param name="paramnames">An array that contains the names of the parameters to which the values in the <paramref name="args" /> array are passed.</param>
         <param name="CopyBack">An array of <see langword="Boolean" /> values, where <see langword="True" /> indicates that the associated parameter is passed <see langword="ByRef" />.</param>
         <summary>Performs a late-bound call to an object method.</summary>
         <remarks>
@@ -121,9 +121,9 @@
       <Docs>
         <param name="o">The object to return the value from.</param>
         <param name="objType">The type of the object.</param>
-        <param name="name">The member name of <c>o</c> to retrieve a value from.</param>
-        <param name="args">An array of one or more index values that specify the location in <c>o</c> if <c>o</c> is a one-dimensional or multi-dimensional array, or argument values to pass to the object <c>o</c>.</param>
-        <param name="paramnames">An array that contains the names of the parameters to which the values in the <c>args</c> array are passed.</param>
+        <param name="name">The member name of <paramref name="o" /> to retrieve a value from.</param>
+        <param name="args">An array of one or more index values that specify the location in <paramref name="o" /> if <paramref name="o" /> is a one-dimensional or multi-dimensional array, or argument values to pass to the object <paramref name="o" />.</param>
+        <param name="paramnames">An array that contains the names of the parameters to which the values in the <paramref name="args" /> array are passed.</param>
         <param name="CopyBack">An array of <see langword="Boolean" /> values, where <see langword="True" /> indicates that the associated parameter is passed <see langword="ByRef" />.</param>
         <summary>Returns a late-bound value from an object.</summary>
         <returns>If <paramref name="o" /> is an array, the value from <paramref name="o" /> at the location specified by <paramref name="args" />. If <paramref name="o" /> is an object, the return value of <paramref name="o" /> invoked by using the named parameters in <paramref name="paramnames" /> and their associated values in <paramref name="args" />.</returns>
@@ -167,8 +167,8 @@
       </Parameters>
       <Docs>
         <param name="o">The object to return the value from.</param>
-        <param name="args">An array of one or more index values that specify the location in <c>o</c> if <c>o</c> is a one-dimensional or multi-dimensional array, or argument values to pass to the object <c>o</c>.</param>
-        <param name="paramnames">An array that contains the names of the parameters to which the values in the <c>args</c> array are passed.</param>
+        <param name="args">An array of one or more index values that specify the location in <paramref name="o" /> if <paramref name="o" /> is a one-dimensional or multi-dimensional array, or argument values to pass to the object <paramref name="o" />.</param>
+        <param name="paramnames">An array that contains the names of the parameters to which the values in the <paramref name="args" /> array are passed.</param>
         <summary>Returns a late-bound value from an object, using the specified index or parameters.</summary>
         <returns>If <paramref name="o" /> is an array, the value from <paramref name="o" /> at the location specified by <paramref name="args" />. If <paramref name="o" /> is an object, the return value of <paramref name="o" /> invoked by using the named parameters in <paramref name="paramnames" /> and their associated values in <paramref name="args" />.</returns>
         <remarks>
@@ -211,8 +211,8 @@
       </Parameters>
       <Docs>
         <param name="o">The object to set the value for.</param>
-        <param name="args">An array of one or more index values that specify the location in <c>o</c> if <c>o</c> is a one-dimensional or multi-dimensional array, or argument values to pass to the object <c>o</c>.</param>
-        <param name="paramnames">An array that contains the names of the parameters to which the values in the <c>args</c> array are passed.</param>
+        <param name="args">An array of one or more index values that specify the location in <paramref name="o" /> if <paramref name="o" /> is a one-dimensional or multi-dimensional array, or argument values to pass to the object <paramref name="o" />.</param>
+        <param name="paramnames">An array that contains the names of the parameters to which the values in the <paramref name="args" /> array are passed.</param>
         <summary>Sets a late-bound value of an object, using the specified parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -256,12 +256,12 @@
       </Parameters>
       <Docs>
         <param name="o">The object to set the value for.</param>
-        <param name="args">An array of one or more parameter values to pass to the object <c>o</c>.</param>
-        <param name="paramnames">An array that contains the names of the parameters to which the values in the <c>args</c> array are passed.</param>
+        <param name="args">An array of one or more parameter values to pass to the object <paramref name="o" />.</param>
+        <param name="paramnames">An array that contains the names of the parameters to which the values in the <paramref name="args" /> array are passed.</param>
         <param name="OptimisticSet">
           <see langword="True" /> to suppress the exception thrown when the set member is not found.</param>
         <param name="RValueBase">
-          <see langword="True" /> to identify <c>o</c> as the result of a late-bound expression.</param>
+          <see langword="True" /> to identify <paramref name="o" /> as the result of a late-bound expression.</param>
         <summary>Sets a late-bound value of an object, using the specified parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -307,8 +307,8 @@
         <param name="o">The object to set the member value for.</param>
         <param name="objType">The type of the object.</param>
         <param name="name">The member name to set.</param>
-        <param name="args">An array of one or parameter values to pass to the member of <c>o</c>.</param>
-        <param name="paramnames">An array that contains the names of the parameters to which the values in the <c>args</c> array are passed.</param>
+        <param name="args">An array of one or parameter values to pass to the member of <paramref name="o" />.</param>
+        <param name="paramnames">An array that contains the names of the parameters to which the values in the <paramref name="args" /> array are passed.</param>
         <summary>Sets a late-bound value of a member of an object, using the specified parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -356,12 +356,12 @@
         <param name="o">The object to set the member value for.</param>
         <param name="objType">The type of the object.</param>
         <param name="name">The member name to set.</param>
-        <param name="args">An array of one or more parameter values to pass to the member of <c>o</c>.</param>
-        <param name="paramnames">An array that contains the names of the parameters to which the values in the <c>args</c> array are passed.</param>
+        <param name="args">An array of one or more parameter values to pass to the member of <paramref name="o" />.</param>
+        <param name="paramnames">An array that contains the names of the parameters to which the values in the <paramref name="args" /> array are passed.</param>
         <param name="OptimisticSet">
           <see langword="True" /> to suppress the exception thrown when the set member is not found.</param>
         <param name="RValueBase">
-          <see langword="True" /> to identify <c>o</c> as the result of a late-bound expression.</param>
+          <see langword="True" /> to identify <paramref name="o" /> as the result of a late-bound expression.</param>
         <summary>Sets a late-bound value of a member of an object, using the specified parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

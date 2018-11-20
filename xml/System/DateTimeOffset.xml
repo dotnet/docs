@@ -357,7 +357,7 @@
       <Docs>
         <param name="year">The year (1 through 9999).</param>
         <param name="month">The month (1 through 12).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <param name="hour">The hours (0 through 23).</param>
         <param name="minute">The minutes (0 through 59).</param>
         <param name="second">The seconds (0 through 59).</param>
@@ -454,7 +454,7 @@
       <Docs>
         <param name="year">The year (1 through 9999).</param>
         <param name="month">The month (1 through 12).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <param name="hour">The hours (0 through 23).</param>
         <param name="minute">The minutes (0 through 59).</param>
         <param name="second">The seconds (0 through 59).</param>
@@ -552,12 +552,12 @@
       <Docs>
         <param name="year">The year.</param>
         <param name="month">The month (1 through 12).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <param name="hour">The hours (0 through 23).</param>
         <param name="minute">The minutes (0 through 59).</param>
         <param name="second">The seconds (0 through 59).</param>
         <param name="millisecond">The milliseconds (0 through 999).</param>
-        <param name="calendar">The calendar that is used to interpret <c>year</c>, <c>month</c>, and <c>day</c>.</param>
+        <param name="calendar">The calendar that is used to interpret <paramref name="year" />, <paramref name="month" />, and <paramref name="day" />.</param>
         <param name="offset">The time's offset from Coordinated Universal Time (UTC).</param>
         <summary>Initializes a new instance of the <see cref="T:System.DateTimeOffset" /> structure using the specified year, month, day, hour, minute, second, millisecond, and offset of a specified calendar.</summary>
         <remarks>
@@ -3361,7 +3361,7 @@
       </Parameters>
       <Docs>
         <param name="input">A string that contains a date and time to convert.</param>
-        <param name="formatProvider">An object that provides culture-specific format information about <c>input</c>.</param>
+        <param name="formatProvider">An object that provides culture-specific format information about <paramref name="input" />.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent using the specified culture-specific format information.</summary>
         <returns>An object that is equivalent to the date and time that is contained in <paramref name="input" />, as specified by <paramref name="formatProvider" />.</returns>
         <remarks>
@@ -3487,8 +3487,8 @@
       </Parameters>
       <Docs>
         <param name="input">A string that contains a date and time to convert.</param>
-        <param name="formatProvider">An object that provides culture-specific format information about <c>input</c>.</param>
-        <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <c>input</c>. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
+        <param name="formatProvider">An object that provides culture-specific format information about <paramref name="input" />.</param>
+        <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="input" />. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent using the specified culture-specific format information and formatting style.</summary>
         <returns>An object that is equivalent to the date and time that is contained in <paramref name="input" /> as specified by <paramref name="formatProvider" /> and <paramref name="styles" />.</returns>
         <remarks>
@@ -3618,8 +3618,8 @@
       </Parameters>
       <Docs>
         <param name="input">A string that contains a date and time to convert.</param>
-        <param name="format">A format specifier that defines the expected format of <c>input</c>.</param>
-        <param name="formatProvider">An object that supplies culture-specific formatting information about <c>input</c>.</param>
+        <param name="format">A format specifier that defines the expected format of <paramref name="input" />.</param>
+        <param name="formatProvider">An object that supplies culture-specific formatting information about <paramref name="input" />.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent using the specified format and culture-specific format information. The format of the string representation must match the specified format exactly.</summary>
         <returns>An object that is equivalent to the date and time that is contained in <paramref name="input" /> as specified by <paramref name="format" /> and <paramref name="formatProvider" />.</returns>
         <remarks>
@@ -3878,9 +3878,9 @@ The hour component and the AM/PM designator in <paramref name="input" /> do not 
       </Parameters>
       <Docs>
         <param name="input">A string that contains a date and time to convert.</param>
-        <param name="format">A format specifier that defines the expected format of <c>input</c>.</param>
-        <param name="formatProvider">An object that supplies culture-specific formatting information about <c>input</c>.</param>
-        <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <c>input</c>.</param>
+        <param name="format">A format specifier that defines the expected format of <paramref name="input" />.</param>
+        <param name="formatProvider">An object that supplies culture-specific formatting information about <paramref name="input" />.</param>
+        <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="input" />.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent using the specified format, culture-specific format information, and style. The format of the string representation must match the specified format exactly.</summary>
         <returns>An object that is equivalent to the date and time that is contained in the <paramref name="input" /> parameter, as specified by the <paramref name="format" />, <paramref name="formatProvider" />, and <paramref name="styles" /> parameters.</returns>
         <remarks>
@@ -4012,9 +4012,9 @@ Strings that do not specify a UTC offset are assumed to have the offset of the l
       </Parameters>
       <Docs>
         <param name="input">A string that contains a date and time to convert.</param>
-        <param name="formats">An array of format specifiers that define the expected formats of <c>input</c>.</param>
-        <param name="formatProvider">An object that supplies culture-specific formatting information about <c>input</c>.</param>
-        <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <c>input</c>.</param>
+        <param name="formats">An array of format specifiers that define the expected formats of <paramref name="input" />.</param>
+        <param name="formatProvider">An object that supplies culture-specific formatting information about <paramref name="input" />.</param>
+        <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="input" />.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent using the specified formats, culture-specific format information, and style. The format of the string representation must match one of the specified formats exactly.</summary>
         <returns>An object that is equivalent to the date and time that is contained in the <paramref name="input" /> parameter, as specified by the <paramref name="formats" />, <paramref name="formatProvider" />, and <paramref name="styles" /> parameters.</returns>
         <remarks>
@@ -5344,7 +5344,7 @@ Me.ToUtcDateTime().ToFileTime()
       </Parameters>
       <Docs>
         <param name="input">A string that contains a date and time to convert.</param>
-        <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <c>input</c>, if the conversion succeeded, or <see cref="F:System.DateTimeOffset.MinValue" />, if the conversion failed. The conversion fails if the <c>input</c> parameter is <see langword="null" /> or does not contain a valid string representation of a date and time. This parameter is passed uninitialized.</param>
+        <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <paramref name="input" />, if the conversion succeeded, or <see cref="F:System.DateTimeOffset.MinValue" />, if the conversion failed. The conversion fails if the <paramref name="input" /> parameter is <see langword="null" /> or does not contain a valid string representation of a date and time. This parameter is passed uninitialized.</param>
         <summary>Tries to converts a specified string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent, and returns a value that indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="input" /> parameter is successfully converted; otherwise, <see langword="false" />.</returns>
@@ -5458,9 +5458,9 @@ Me.ToUtcDateTime().ToFileTime()
       </Parameters>
       <Docs>
         <param name="input">A string that contains a date and time to convert.</param>
-        <param name="formatProvider">An object that provides culture-specific formatting information about <c>input</c>.</param>
-        <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <c>input</c>.</param>
-        <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> value equivalent to the date and time of <c>input</c>, if the conversion succeeded, or <see cref="F:System.DateTimeOffset.MinValue" />, if the conversion failed. The conversion fails if the <c>input</c> parameter is <see langword="null" /> or does not contain a valid string representation of a date and time. This parameter is passed uninitialized.</param>
+        <param name="formatProvider">An object that provides culture-specific formatting information about <paramref name="input" />.</param>
+        <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="input" />.</param>
+        <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> value equivalent to the date and time of <paramref name="input" />, if the conversion succeeded, or <see cref="F:System.DateTimeOffset.MinValue" />, if the conversion failed. The conversion fails if the <paramref name="input" /> parameter is <see langword="null" /> or does not contain a valid string representation of a date and time. This parameter is passed uninitialized.</param>
         <summary>Tries to convert a specified string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent, and returns a value that indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="input" /> parameter is successfully converted; otherwise, <see langword="false" />.</returns>
@@ -5743,10 +5743,10 @@ This method parses the string representation of a date that matches any one of t
       </Parameters>
       <Docs>
         <param name="input">A string that contains a date and time to convert.</param>
-        <param name="format">A format specifier that defines the required format of <c>input</c>.</param>
-        <param name="formatProvider">An object that supplies culture-specific formatting information about <c>input</c>.</param>
+        <param name="format">A format specifier that defines the required format of <paramref name="input" />.</param>
+        <param name="formatProvider">An object that supplies culture-specific formatting information about <paramref name="input" />.</param>
         <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of input. A typical value to specify is <see langword="None" />.</param>
-        <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <c>input</c>, if the conversion succeeded, or <see cref="F:System.DateTimeOffset.MinValue" />, if the conversion failed. The conversion fails if the <c>input</c> parameter is <see langword="null" />, or does not contain a valid string representation of a date and time in the expected format defined by <c>format</c> and <c>provider</c>. This parameter is passed uninitialized.</param>
+        <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <paramref name="input" />, if the conversion succeeded, or <see cref="F:System.DateTimeOffset.MinValue" />, if the conversion failed. The conversion fails if the <paramref name="input" /> parameter is <see langword="null" />, or does not contain a valid string representation of a date and time in the expected format defined by <paramref name="format" /> and <c>provider</c>. This parameter is passed uninitialized.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent using the specified format, culture-specific format information, and style. The format of the string representation must match the specified format exactly.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="input" /> parameter is successfully converted; otherwise, <see langword="false" />.</returns>
@@ -5857,10 +5857,10 @@ Strings that do not specify a UTC offset are assumed to have the offset of the l
       </Parameters>
       <Docs>
         <param name="input">A string that contains a date and time to convert.</param>
-        <param name="formats">An array that defines the expected formats of <c>input</c>.</param>
-        <param name="formatProvider">An object that supplies culture-specific formatting information about <c>input</c>.</param>
+        <param name="formats">An array that defines the expected formats of <paramref name="input" />.</param>
+        <param name="formatProvider">An object that supplies culture-specific formatting information about <paramref name="input" />.</param>
         <param name="styles">A bitwise combination of enumeration values that indicates the permitted format of input. A typical value to specify is <see langword="None" />.</param>
-        <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <c>input</c>, if the conversion succeeded, or <see cref="F:System.DateTimeOffset.MinValue" />, if the conversion failed. The conversion fails if the <c>input</c> does not contain a valid string representation of a date and time, or does not contain the date and time in the expected format defined by <c>format</c>, or if <c>formats</c> is <see langword="null" />. This parameter is passed uninitialized.</param>
+        <param name="result">When the method returns, contains the <see cref="T:System.DateTimeOffset" /> equivalent to the date and time of <paramref name="input" />, if the conversion succeeded, or <see cref="F:System.DateTimeOffset.MinValue" />, if the conversion failed. The conversion fails if the <paramref name="input" /> does not contain a valid string representation of a date and time, or does not contain the date and time in the expected format defined by <paramref name="format" />, or if <paramref name="formats" /> is <see langword="null" />. This parameter is passed uninitialized.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent using the specified array of formats, culture-specific format information, and style. The format of the string representation must match one of the specified formats exactly.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="input" /> parameter is successfully converted; otherwise, <see langword="false" />.</returns>

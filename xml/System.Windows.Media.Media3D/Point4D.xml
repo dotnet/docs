@@ -587,7 +587,7 @@
       </Parameters>
       <Docs>
         <param name="point1">The <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure to be subtracted from.</param>
-        <param name="point2">The <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure to subtract from <c>point1</c>.</param>
+        <param name="point2">The <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure to subtract from <paramref name="point1" />.</param>
         <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure and returns the result as a <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure.</summary>
         <returns>Returns the difference between <paramref name="point1" /> and <paramref name="point2" />.</returns>
         <remarks>
@@ -662,7 +662,7 @@
       </Parameters>
       <Docs>
         <param name="point1">The <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure to be subtracted from.</param>
-        <param name="point2">The <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure to subtract from <c>point1</c>.</param>
+        <param name="point2">The <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure to subtract from <paramref name="point1" />.</param>
         <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure.</summary>
         <returns>Returns the difference between <paramref name="point1" /> and <paramref name="point2" />.</returns>
         <remarks>

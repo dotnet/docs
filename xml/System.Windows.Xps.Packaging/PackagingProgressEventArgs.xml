@@ -43,7 +43,7 @@
       </Parameters>
       <Docs>
         <param name="action">The action that the packaging process is currently performing.</param>
-        <param name="numberCompleted">The number of simultaneous times that the specified <c>action</c> occurred.</param>
+        <param name="numberCompleted">The number of simultaneous times that the specified <paramref name="action" /> occurred.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.PackagingProgressEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

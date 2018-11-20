@@ -758,7 +758,7 @@
       <Docs>
         <param name="typeName">A <see cref="T:System.Xml.XmlQualifiedName" /> that specifies an XML element.</param>
         <param name="baseType">A <see cref="T:System.Type" /> object that specifies a base type.</param>
-        <param name="baseTypeCanBeIndirect">A <see cref="T:System.Boolean" /> value that specifies whether the generated type can indirectly inherit the <c>baseType</c>.</param>
+        <param name="baseTypeCanBeIndirect">A <see cref="T:System.Boolean" /> value that specifies whether the generated type can indirectly inherit the <paramref name="baseType" />.</param>
         <summary>Generates internal type mapping information for an element defined in an XML schema document.</summary>
         <returns>A <see cref="T:System.Xml.Serialization.XmlTypeMapping" /> object that describes a type mapping.</returns>
         <remarks>To be added.</remarks>

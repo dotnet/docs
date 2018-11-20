@@ -166,7 +166,7 @@
         <param name="context">An T:System.ComponentModel.ITypeDescriptorContext that provides a format context that represents the control being designed.</param>
         <param name="culture">A T:System.Globalization.CultureInfo. If <see langword="null" />, the current culture is assumed.</param>
         <param name="value">The <see cref="P:System.Web.UI.Control.SkinID" /> object to convert.</param>
-        <param name="destinationType">The T:System.Type to convert <c>value</c> to (must be a <see cref="T:System.String" />).</param>
+        <param name="destinationType">The T:System.Type to convert <paramref name="value" /> to (must be a <see cref="T:System.String" />).</param>
         <summary>Converts the given <see cref="P:System.Web.UI.Control.SkinID" /> object to a string using the specified context and culture information.</summary>
         <returns>An object that represents the converted value.</returns>
         <remarks>To be added.</remarks>
@@ -194,7 +194,7 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">An T:System.ComponentModel.ITypeDescriptorContext that provides a format context that represents the control being designed. <c>context</c> or properties of <c>context</c> can be <see langword="null" />.</param>
+        <param name="context">An T:System.ComponentModel.ITypeDescriptorContext that provides a format context that represents the control being designed. <paramref name="context" /> or properties of <paramref name="context" /> can be <see langword="null" />.</param>
         <summary>Returns a set of <see cref="P:System.Web.UI.Control.SkinID" /> objects that can be applied to the control that is represented by the given format context.</summary>
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> that holds a set of <see cref="P:System.Web.UI.Control.SkinID" /> objects; otherwise, <see langword="null" />, if the control does not support skins.</returns>
         <remarks>To be added.</remarks>

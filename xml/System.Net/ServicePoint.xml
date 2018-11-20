@@ -849,7 +849,7 @@
         <Parameter Name="keepAliveInterval" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="enabled">If set to true, then the TCP keep-alive option on a TCP connection will be enabled using the specified <c>keepAliveTime</c> and <c>keepAliveInterval</c> values.  
+        <param name="enabled">If set to true, then the TCP keep-alive option on a TCP connection will be enabled using the specified <paramref name="keepAliveTime" /> and <paramref name="keepAliveInterval" /> values.  
   
  If set to false, then the TCP keep-alive option is disabled and the remaining parameters are ignored.  
   

@@ -50,7 +50,7 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="enumType">A <see cref="T:System.Type" /> that represents the enumeration type to create from the <c>value</c> parameter.</param>
+        <param name="enumType">A <see cref="T:System.Type" /> that represents the enumeration type to create from the <paramref name="value" /> parameter.</param>
         <param name="value">The <see cref="T:System.String" /> that represents a value in the enumerator.</param>
         <summary>Converts the string representation to a value of the specified enumeration type.</summary>
         <returns>An enumeration of type <paramref name="enumType" />.</returns>
@@ -103,7 +103,7 @@
         <Parameter Name="enumValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="enumType">A <see cref="T:System.Type" /> that represents the enumeration type of <c>enumValue</c>.</param>
+        <param name="enumType">A <see cref="T:System.Type" /> that represents the enumeration type of <paramref name="enumValue" />.</param>
         <param name="enumValue">The value to convert.</param>
         <summary>Converts the value of the specified enumeration type to its equivalent string representation.</summary>
         <returns>The string representation of <paramref name="enumValue" />.</returns>
@@ -155,7 +155,7 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="objType">The <see cref="T:System.Type" /> to create from <c>value</c>.</param>
+        <param name="objType">The <see cref="T:System.Type" /> to create from <paramref name="value" />.</param>
         <param name="propertyInfo">The properties to use during conversion.</param>
         <param name="value">The <see cref="T:System.String" /> to convert into an object.</param>
         <summary>Converts the string value to the specified object type.</summary>

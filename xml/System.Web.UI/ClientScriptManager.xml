@@ -594,7 +594,7 @@
       </Parameters>
       <Docs>
         <param name="control">The server <see cref="T:System.Web.UI.Control" /> that processes the postback on the server.</param>
-        <param name="argument">A string of optional arguments to pass to <c>control</c>.</param>
+        <param name="argument">A string of optional arguments to pass to <paramref name="control" />.</param>
         <param name="registerForEventValidation">
           <see langword="true" /> to register the event reference for validation; otherwise, <see langword="false" />.</param>
         <summary>Returns a string to use in a client event to cause postback to the server. The reference string is defined by the specified control that handles the postback and a string argument of additional event information. Optionally, registers the event reference for validation.</summary>

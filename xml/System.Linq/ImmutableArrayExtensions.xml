@@ -864,8 +864,8 @@
         <Parameter Name="resultSelector" Type="System.Func&lt;TSource,TCollection,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of the elements of <c>immutableArray</c>.</typeparam>
-        <typeparam name="TCollection">The type of the intermediate elements collected by <c>collectionSelector</c>.</typeparam>
+        <typeparam name="TSource">The type of the elements of <paramref name="immutableArray" />.</typeparam>
+        <typeparam name="TCollection">The type of the intermediate elements collected by <paramref name="collectionSelector" />.</typeparam>
         <typeparam name="TResult">The type of the elements of the resulting sequence.</typeparam>
         <param name="immutableArray">The immutable array.</param>
         <param name="collectionSelector">A transform function to apply to each element of the input sequence.</param>

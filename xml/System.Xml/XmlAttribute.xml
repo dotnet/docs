@@ -414,7 +414,7 @@
       </Parameters>
       <Docs>
         <param name="newChild">The <see cref="T:System.Xml.XmlNode" /> to insert.</param>
-        <param name="refChild">The <see cref="T:System.Xml.XmlNode" /> that is the reference node. The <c>newChild</c> is placed after the <c>refChild</c>.</param>
+        <param name="refChild">The <see cref="T:System.Xml.XmlNode" /> that is the reference node. The <paramref name="newChild" /> is placed after the <paramref name="refChild" />.</param>
         <summary>Inserts the specified node immediately after the specified reference node.</summary>
         <returns>The <see cref="T:System.Xml.XmlNode" /> inserted.</returns>
         <remarks>
@@ -480,7 +480,7 @@
       </Parameters>
       <Docs>
         <param name="newChild">The <see cref="T:System.Xml.XmlNode" /> to insert.</param>
-        <param name="refChild">The <see cref="T:System.Xml.XmlNode" /> that is the reference node. The <c>newChild</c> is placed before this node.</param>
+        <param name="refChild">The <see cref="T:System.Xml.XmlNode" /> that is the reference node. The <paramref name="newChild" /> is placed before this node.</param>
         <summary>Inserts the specified node immediately before the specified reference node.</summary>
         <returns>The <see cref="T:System.Xml.XmlNode" /> inserted.</returns>
         <remarks>

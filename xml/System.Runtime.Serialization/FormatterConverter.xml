@@ -113,7 +113,7 @@
       </Parameters>
       <Docs>
         <param name="value">The object to convert.</param>
-        <param name="type">The <see cref="T:System.Type" /> into which <c>value</c> is converted.</param>
+        <param name="type">The <see cref="T:System.Type" /> into which <paramref name="value" /> is converted.</param>
         <summary>Converts a value to the given <see cref="T:System.Type" />.</summary>
         <returns>The converted <paramref name="value" /> or <see langword="null" /> if the <paramref name="type" /> parameter is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
@@ -155,7 +155,7 @@
       </Parameters>
       <Docs>
         <param name="value">The object to convert.</param>
-        <param name="typeCode">The <see cref="T:System.TypeCode" /> into which <c>value</c> is converted.</param>
+        <param name="typeCode">The <see cref="T:System.TypeCode" /> into which <paramref name="value" /> is converted.</param>
         <summary>Converts a value to the given <see cref="T:System.TypeCode" />.</summary>
         <returns>The converted <paramref name="value" />, or <see langword="null" /> if the <paramref name="type" /> parameter is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>

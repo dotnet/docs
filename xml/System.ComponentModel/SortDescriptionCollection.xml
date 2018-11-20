@@ -145,7 +145,7 @@
         <Parameter Name="item" Type="System.ComponentModel.SortDescription" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index where the <c>item</c> is inserted.</param>
+        <param name="index">The zero-based index where the <paramref name="item" /> is inserted.</param>
         <param name="item">The object to insert.</param>
         <summary>Inserts an item into the collection at the specified index.</summary>
         <remarks>

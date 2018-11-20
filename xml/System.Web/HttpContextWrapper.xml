@@ -1165,7 +1165,7 @@
         <param name="pathInfo">Additional path information for a resource.</param>
         <param name="queryString">The request query string.</param>
         <param name="setClientFilePath">
-          <see langword="true" /> to set the file path used for client resources to the value of the <c>filePath</c> parameter; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to set the file path used for client resources to the value of the <paramref name="filePath" /> parameter; otherwise, <see langword="false" />.</param>
         <summary>Rewrites the URL by using the specified path, path information, query string information, and a value that specifies whether the client file path is set to the rewrite path.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

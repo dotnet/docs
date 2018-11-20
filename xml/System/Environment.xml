@@ -1604,7 +1604,7 @@ The `Environment.OSVersion` property does not provide a reliable way to identify
       </Parameters>
       <Docs>
         <param name="variable">The name of an environment variable.</param>
-        <param name="value">A value to assign to <c>variable</c>.</param>
+        <param name="value">A value to assign to <paramref name="variable" />.</param>
         <summary>Creates, modifies, or deletes an environment variable stored in the current process.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1703,7 +1703,7 @@ The `Environment.OSVersion` property does not provide a reliable way to identify
       </Parameters>
       <Docs>
         <param name="variable">The name of an environment variable.</param>
-        <param name="value">A value to assign to <c>variable</c>.</param>
+        <param name="value">A value to assign to <paramref name="variable" />.</param>
         <param name="target">One of the enumeration values that specifies the location of the environment variable.</param>
         <summary>Creates, modifies, or deletes an environment variable stored in the current process or in the Windows operating system registry key reserved for the current user or local machine.</summary>
         <remarks>

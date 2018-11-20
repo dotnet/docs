@@ -108,7 +108,7 @@
       <Docs>
         <param name="sourcePath">The name of the property of the entity type, as string, that is mapped to the specified property in the feed.</param>
         <param name="targetPath">The name of the target, as string, in the resulting feed to which the property is mapped.</param>
-        <param name="targetNamespacePrefix">This parameter, together with <c>targetNamespaceUri</c>, specifies the namespace in which the <c>targetPath</c> element exists.</param>
+        <param name="targetNamespacePrefix">This parameter, together with <paramref name="targetNamespaceUri" />, specifies the namespace in which the <paramref name="targetPath" /> element exists.</param>
         <param name="targetNamespaceUri">Specifies the namespace URI of the element, as string, specified by the <c>targetName</c> property.</param>
         <param name="keepInContent">Boolean value that is <see langword="true" /> when the property being mapped should appear both in its mapped-to location and in the content section of the feed.</param>
         <summary>Creates an instance of the <see cref="T:System.Data.Services.Common.EntityPropertyMappingAttribute" /> to map a property to a custom feed element.</summary>

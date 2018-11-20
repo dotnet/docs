@@ -113,7 +113,7 @@
         <Parameter Name="choice" Type="System.Web.UI.MobileControls.DeviceSpecificChoice" />
       </Parameters>
       <Docs>
-        <param name="index">The location in the collection at which to add <c>choice</c>.</param>
+        <param name="index">The location in the collection at which to add <paramref name="choice" />.</param>
         <param name="choice">The <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> to add to the collection.</param>
         <summary>Adds a choice at the location in the collection specified by the <paramref name="index" /> parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>

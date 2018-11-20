@@ -78,7 +78,7 @@
         <Parameter Name="args" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="method">A <see cref="T:System.Delegate" /> to a method that takes parameters of the same number and type that are contained in <c>args</c>.</param>
+        <param name="method">A <see cref="T:System.Delegate" /> to a method that takes parameters of the same number and type that are contained in <paramref name="args" />.</param>
         <param name="args">An array of type <see cref="T:System.Object" /> to pass as arguments to the given method. This can be <see langword="null" /> if no arguments are needed.</param>
         <summary>Asynchronously executes the delegate on the thread that created this object.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> interface that represents the asynchronous operation started by calling this method.</returns>

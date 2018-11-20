@@ -120,7 +120,7 @@
         <Parameter Name="item" Type="C" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert <c>item</c>.</param>
+        <param name="index">The zero-based index at which to insert <paramref name="item" />.</param>
         <param name="item">The <see cref="T:System.AddIn.Contract.IContract" /> to insert in the <see cref="T:System.AddIn.Contract.Collections.IListContract`1" />.</param>
         <summary>Inserts an element in the <see cref="T:System.AddIn.Contract.Collections.IListContract`1" /> at the specified index.</summary>
         <remarks>

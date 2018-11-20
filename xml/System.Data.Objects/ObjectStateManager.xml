@@ -630,7 +630,7 @@
       </Parameters>
       <Docs>
         <param name="entity">The object for which to return the <see cref="T:System.Data.Objects.DataClasses.RelationshipManager" />.</param>
-        <param name="relationshipManager">When this method returns, contains the <see cref="T:System.Data.Objects.DataClasses.RelationshipManager" /> for the <c>entity</c>.</param>
+        <param name="relationshipManager">When this method returns, contains the <see cref="T:System.Data.Objects.DataClasses.RelationshipManager" /> for the <paramref name="entity" />.</param>
         <summary>Returns the <see cref="T:System.Data.Objects.DataClasses.RelationshipManager" /> that is used by the specified object.</summary>
         <returns>
           <see langword="true" /> if a <see cref="T:System.Data.Objects.DataClasses.RelationshipManager" /> instance was returned for the supplied <paramref name="entity" />; otherwise <see langword="false" />.</returns>

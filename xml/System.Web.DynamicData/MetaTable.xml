@@ -1812,7 +1812,7 @@ End Sub
       </Parameters>
       <Docs>
         <param name="columnName">The name of the column to find.</param>
-        <param name="column">When this method returns, contains the <see langword="MetaColumn" /> object for <c>columnName</c>. This parameter is passed uninitialized.</param>
+        <param name="column">When this method returns, contains the <see langword="MetaColumn" /> object for <paramref name="columnName" />. This parameter is passed uninitialized.</param>
         <summary>Returns a value that indicates whether a specified column can be found.</summary>
         <returns>
           <see langword="true" /> if the specified column can be found; otherwise, <see langword="false" />.</returns>

@@ -225,7 +225,7 @@
         <param name="context">An object that provides contextual information.</param>
         <param name="culture">The language and culture that are used during the conversion.</param>
         <param name="value">The object that you want to convert.</param>
-        <param name="destinationType">The type that you want <c>value</c> converted to.</param>
+        <param name="destinationType">The type that you want <paramref name="value" /> converted to.</param>
         <summary>Converts a <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> to an object of the specified type.</summary>
         <returns>The new <see cref="T:System.Object" /> of the designated type. As implemented in this class, the object must be a <see cref="T:System.Uri" />. The object expresses the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the serialized image.</returns>
         <remarks>

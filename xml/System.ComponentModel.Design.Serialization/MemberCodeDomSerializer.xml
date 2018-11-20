@@ -80,7 +80,7 @@
         <param name="manager">The serialization manager to use for serialization.</param>
         <param name="value">The object to which the member is bound.</param>
         <param name="descriptor">The descriptor of the member to serialize.</param>
-        <param name="statements">The <see cref="T:System.CodeDom.CodeStatementCollection" /> into which <c>descriptor</c> is serialized.</param>
+        <param name="statements">The <see cref="T:System.CodeDom.CodeStatementCollection" /> into which <paramref name="descriptor" /> is serialized.</param>
         <summary>Serializes the given member descriptor on the given value to a statement collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

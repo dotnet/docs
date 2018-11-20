@@ -415,7 +415,7 @@
       </Parameters>
       <Docs>
         <param name="destination">The array to copy to.</param>
-        <param name="destinationIndex">The index in <c>array</c> where copying begins.</param>
+        <param name="destinationIndex">The index in <paramref name="array" /> where copying begins.</param>
         <summary>Copies the contents of this array to the specified array starting at the specified destination index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -447,7 +447,7 @@
       <Docs>
         <param name="sourceIndex">The index of this array where copying begins.</param>
         <param name="destination">The array to copy to.</param>
-        <param name="destinationIndex">The index in <c>array</c> where copying begins.</param>
+        <param name="destinationIndex">The index in <paramref name="array" /> where copying begins.</param>
         <param name="length">The number of elements to copy from this array.</param>
         <summary>Copies the specified items in this array to the specified array at the specified starting index.</summary>
         <remarks>To be added.</remarks>

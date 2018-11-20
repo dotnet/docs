@@ -91,7 +91,7 @@
       </Parameters>
       <Docs>
         <param name="text">The portion of the phrase to be matched.</param>
-        <param name="matchingMode">The mode in which <c>text</c> should be matched with the spoken phrase.</param>
+        <param name="matchingMode">The mode in which <paramref name="text" /> should be matched with the spoken phrase.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsSubset" /> class, specifying the portion to be matched and the mode in which the text should be matched.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

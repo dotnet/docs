@@ -703,7 +703,7 @@
         <param name="source">A name used to identify the output, typically the name of the application that generated the trace event.</param>
         <param name="eventType">One of the <see cref="T:System.Diagnostics.TraceEventType" /> values specifying the type of event that has caused the trace.</param>
         <param name="id">A numeric identifier for the event.</param>
-        <param name="format">A format string that contains zero or more format items that correspond to objects in the <c>args</c> array.</param>
+        <param name="format">A format string that contains zero or more format items that correspond to objects in the <paramref name="args" /> array.</param>
         <param name="args">An array containing zero or more objects to format.</param>
         <summary>Writes trace information, a formatted array of objects, and event information to the output file or stream.</summary>
         <remarks>

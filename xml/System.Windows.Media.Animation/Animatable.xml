@@ -85,7 +85,7 @@
       </Parameters>
       <Docs>
         <param name="dp">The property to animate.</param>
-        <param name="clock">The clock with which to animate the specified property. If <c>clock</c> is <see langword="null" />, all animations will be removed from the specified property (but not stopped).</param>
+        <param name="clock">The clock with which to animate the specified property. If <paramref name="clock" /> is <see langword="null" />, all animations will be removed from the specified property (but not stopped).</param>
         <summary>Applies an <see cref="T:System.Windows.Media.Animation.AnimationClock" /> to the specified <see cref="T:System.Windows.DependencyProperty" />. If the property is already animated, the <see cref="F:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace" /> handoff behavior is used.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -122,7 +122,7 @@
       </Parameters>
       <Docs>
         <param name="dp">The property to animate.</param>
-        <param name="clock">The clock with which to animate the specified property. If <c>handoffBehavior</c> is <see cref="F:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace" /> and <c>clock</c> is <see langword="null" />, all animations will be removed from the specified property (but not stopped). If <c>handoffBehavior</c> is <see cref="F:System.Windows.Media.Animation.HandoffBehavior.Compose" /> and clock is <see langword="null" />, this method has no effect.</param>
+        <param name="clock">The clock with which to animate the specified property. If <paramref name="handoffBehavior" /> is <see cref="F:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace" /> and <paramref name="clock" /> is <see langword="null" />, all animations will be removed from the specified property (but not stopped). If <paramref name="handoffBehavior" /> is <see cref="F:System.Windows.Media.Animation.HandoffBehavior.Compose" /> and clock is <see langword="null" />, this method has no effect.</param>
         <param name="handoffBehavior">A value that specifies how the new animation should interact with any current animations already affecting the property value.</param>
         <summary>Applies an <see cref="T:System.Windows.Media.Animation.AnimationClock" /> to the specified <see cref="T:System.Windows.DependencyProperty" />. If the property is already animated, the specified <see cref="T:System.Windows.Media.Animation.HandoffBehavior" /> is used.</summary>
         <remarks>
@@ -196,7 +196,7 @@
   
  If the animation's <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" /> is <see langword="null" />, any current animations will be removed and the current value of the property will be held.  
   
- If <c>animation</c> is <see langword="null" />, all animations will be removed from the property and the property value will revert back to its base value.</param>
+ If <paramref name="animation" /> is <see langword="null" />, all animations will be removed from the property and the property value will revert back to its base value.</param>
         <summary>Applies an animation to the specified <see cref="T:System.Windows.DependencyProperty" />. The animation is started when the next frame is rendered. If the specified property is already animated, the <see cref="F:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace" /> handoff behavior is used.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -235,11 +235,11 @@
         <param name="dp">The property to animate.</param>
         <param name="animation">The animation used to animate the specified property.  
   
- If <c>handoffBehavior</c> is <see cref="F:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace" /> and the animation's <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" /> is <see langword="null" />, any current animations will be removed and the current value of the property will be held.  
+ If <paramref name="handoffBehavior" /> is <see cref="F:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace" /> and the animation's <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" /> is <see langword="null" />, any current animations will be removed and the current value of the property will be held.  
   
- If <c>handoffBehavior</c> is <see cref="F:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace" /> and <c>animation</c> is a <see langword="null" /> reference, all animations will be removed from the property and the property value will revert back to its base value.  
+ If <paramref name="handoffBehavior" /> is <see cref="F:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace" /> and <paramref name="animation" /> is a <see langword="null" /> reference, all animations will be removed from the property and the property value will revert back to its base value.  
   
- If <c>handoffBehavior</c> is <see cref="F:System.Windows.Media.Animation.HandoffBehavior.Compose" />, this method will have no effect if the animation or its <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" /> is <see langword="null" />.</param>
+ If <paramref name="handoffBehavior" /> is <see cref="F:System.Windows.Media.Animation.HandoffBehavior.Compose" />, this method will have no effect if the animation or its <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" /> is <see langword="null" />.</param>
         <param name="handoffBehavior">A value that specifies how the new animation should interact with any current animations already affecting the property value.</param>
         <summary>Applies an animation to the specified <see cref="T:System.Windows.DependencyProperty" />. The animation is started when the next frame is rendered. If the specified property is already animated, the specified <see cref="T:System.Windows.Media.Animation.HandoffBehavior" /> is used.</summary>
         <remarks>

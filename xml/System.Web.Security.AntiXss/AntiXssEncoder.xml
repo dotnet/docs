@@ -496,7 +496,7 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
       </Parameters>
       <Docs>
         <param name="input">The string to encode.</param>
-        <param name="codePage">The code page to use to encode the <c>input</c> string.</param>
+        <param name="codePage">The code page to use to encode the <paramref name="input" /> string.</param>
         <summary>Encodes the specified string for use in form submissions whose MIME type is "application/x-www-form-urlencoded" by using the specified code page.</summary>
         <returns>The encoded string.</returns>
         <remarks>
@@ -739,7 +739,7 @@ MarkAsSafe(
       </Parameters>
       <Docs>
         <param name="input">The string to encode.</param>
-        <param name="codePage">The code page to use to encode the <c>input</c> string.</param>
+        <param name="codePage">The code page to use to encode the <paramref name="input" /> string.</param>
         <summary>Encodes the specified string for use in a URL by using the specified code page.</summary>
         <returns>The encoded string.</returns>
         <remarks>

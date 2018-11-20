@@ -258,7 +258,7 @@
       </Parameters>
       <Docs>
         <param name="dateTime">The date and time to convert.</param>
-        <param name="destinationTimeZone">The time zone to convert <c>dateTime</c> to.</param>
+        <param name="destinationTimeZone">The time zone to convert <paramref name="dateTime" /> to.</param>
         <summary>Converts a time to the time in a particular time zone.</summary>
         <returns>The date and time in the destination time zone.</returns>
         <remarks>
@@ -342,7 +342,7 @@
       </Parameters>
       <Docs>
         <param name="dateTimeOffset">The date and time to convert.</param>
-        <param name="destinationTimeZone">The time zone to convert <c>dateTime</c> to.</param>
+        <param name="destinationTimeZone">The time zone to convert <paramref name="dateTime" /> to.</param>
         <summary>Converts a time to the time in a particular time zone.</summary>
         <returns>The date and time in the destination time zone.</returns>
         <remarks>
@@ -408,8 +408,8 @@
       </Parameters>
       <Docs>
         <param name="dateTime">The date and time to convert.</param>
-        <param name="sourceTimeZone">The time zone of <c>dateTime</c>.</param>
-        <param name="destinationTimeZone">The time zone to convert <c>dateTime</c> to.</param>
+        <param name="sourceTimeZone">The time zone of <paramref name="dateTime" />.</param>
+        <param name="destinationTimeZone">The time zone to convert <paramref name="dateTime" /> to.</param>
         <summary>Converts a time from one time zone to another.</summary>
         <returns>The date and time in the destination time zone that corresponds to the <paramref name="dateTime" /> parameter in the source time zone.</returns>
         <remarks>
@@ -752,7 +752,7 @@
       </Parameters>
       <Docs>
         <param name="dateTime">The Coordinated Universal Time (UTC).</param>
-        <param name="destinationTimeZone">The time zone to convert <c>dateTime</c> to.</param>
+        <param name="destinationTimeZone">The time zone to convert <paramref name="dateTime" /> to.</param>
         <summary>Converts a Coordinated Universal Time (UTC) to the time in a specified time zone.</summary>
         <returns>The date and time in the destination time zone. Its <see cref="P:System.DateTime.Kind" /> property is <see cref="F:System.DateTimeKind.Utc" /> if <paramref name="destinationTimeZone" /> is <see cref="P:System.TimeZoneInfo.Utc" />; otherwise, its <see cref="P:System.DateTime.Kind" /> property is <see cref="F:System.DateTimeKind.Unspecified" />.</returns>
         <remarks>
@@ -902,7 +902,7 @@
       </Parameters>
       <Docs>
         <param name="dateTime">The date and time to convert.</param>
-        <param name="sourceTimeZone">The time zone of <c>dateTime</c>.</param>
+        <param name="sourceTimeZone">The time zone of <paramref name="dateTime" />.</param>
         <summary>Converts the time in a specified time zone to Coordinated Universal Time (UTC).</summary>
         <returns>The Coordinated Universal Time (UTC) that corresponds to the <paramref name="dateTime" /> parameter. The <see cref="T:System.DateTime" /> object's <see cref="P:System.DateTime.Kind" /> property is always set to <see cref="F:System.DateTimeKind.Utc" />.</returns>
         <remarks>
@@ -1200,7 +1200,7 @@
         <param name="daylightDisplayName">The daylight saving time name of the new time zone.</param>
         <param name="adjustmentRules">An array of <see cref="T:System.TimeZoneInfo.AdjustmentRule" /> objects that augment the base UTC offset for a particular period.</param>
         <param name="disableDaylightSavingTime">
-          <see langword="true" /> to discard any daylight saving time-related information present in <c>adjustmentRules</c> with the new object; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to discard any daylight saving time-related information present in <paramref name="adjustmentRules" /> with the new object; otherwise, <see langword="false" />.</param>
         <summary>Creates a custom time zone with a specified identifier, an offset from Coordinated Universal Time (UTC), a display name, a standard time name, a daylight saving time name, daylight saving time rules, and a value that indicates whether the returned object reflects daylight saving time information.</summary>
         <returns>The new time zone. If the <paramref name="disableDaylightSavingTime" /> parameter is <see langword="true" />, the returned object has no daylight saving time data.</returns>
         <remarks>

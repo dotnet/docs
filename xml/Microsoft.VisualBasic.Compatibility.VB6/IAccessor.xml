@@ -63,7 +63,7 @@
       </Parameters>
       <Docs>
         <param name="hAccessor">The handle of the accessor for which to increment the reference count.</param>
-        <param name="cRefCount">A pointer to memory in which to return the reference count of the accessor handle. If <c>cRefCount</c> is a null pointer, no reference count is returned.</param>
+        <param name="cRefCount">A pointer to memory in which to return the reference count of the accessor handle. If <paramref name="cRefCount" /> is a null pointer, no reference count is returned.</param>
         <summary>Adds a reference count to an existing accessor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

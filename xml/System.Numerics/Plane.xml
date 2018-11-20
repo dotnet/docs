@@ -734,7 +734,7 @@
       </Parameters>
       <Docs>
         <param name="plane">The normalized plane to transform.</param>
-        <param name="matrix">The transformation matrix to apply to <c>plane</c>.</param>
+        <param name="matrix">The transformation matrix to apply to <paramref name="plane" />.</param>
         <summary>Transforms a normalized plane by a 4x4 matrix.</summary>
         <returns>The transformed plane.</returns>
         <remarks>

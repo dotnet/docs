@@ -72,7 +72,7 @@
       </Parameters>
       <Docs>
         <param name="controlType">The <see cref="T:System.Type" /> of <see cref="T:System.Web.UI.Control" /> to which the skin is applied, used to enforce type consistency among named skins.</param>
-        <param name="themeDelegate">The <see cref="T:System.Web.UI.ControlSkinDelegate" /> that applies the style elements defined in a control skin file to the type identified by the <c>controlType</c> parameter.</param>
+        <param name="themeDelegate">The <see cref="T:System.Web.UI.ControlSkinDelegate" /> that applies the style elements defined in a control skin file to the type identified by the <paramref name="controlType" /> parameter.</param>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.ControlSkin" /> class using the passed <see cref="T:System.Web.UI.Control" /> type and delegate.</summary>
         <remarks>To be added.</remarks>
       </Docs>

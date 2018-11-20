@@ -208,8 +208,8 @@ Sub TimerCallback(state As Object)
       <Docs>
         <param name="callback">A <see cref="T:System.Threading.TimerCallback" /> delegate representing a method to be executed.</param>
         <param name="state">An object containing information to be used by the callback method, or <see langword="null" />.</param>
-        <param name="dueTime">The amount of time to delay before <c>callback</c> is invoked, in milliseconds. Specify <see cref="F:System.Threading.Timeout.Infinite" /> to prevent the timer from starting. Specify zero (0) to start the timer immediately.</param>
-        <param name="period">The time interval between invocations of <c>callback</c>, in milliseconds. Specify <see cref="F:System.Threading.Timeout.Infinite" /> to disable periodic signaling.</param>
+        <param name="dueTime">The amount of time to delay before <paramref name="callback" /> is invoked, in milliseconds. Specify <see cref="F:System.Threading.Timeout.Infinite" /> to prevent the timer from starting. Specify zero (0) to start the timer immediately.</param>
+        <param name="period">The time interval between invocations of <paramref name="callback" />, in milliseconds. Specify <see cref="F:System.Threading.Timeout.Infinite" /> to disable periodic signaling.</param>
         <summary>Initializes a new instance of the <see langword="Timer" /> class, using a 32-bit signed integer to specify the time interval.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -277,8 +277,8 @@ Sub TimerCallback(state As Object)
       <Docs>
         <param name="callback">A <see cref="T:System.Threading.TimerCallback" /> delegate representing a method to be executed.</param>
         <param name="state">An object containing information to be used by the callback method, or <see langword="null" />.</param>
-        <param name="dueTime">The amount of time to delay before <c>callback</c> is invoked, in milliseconds. Specify <see cref="F:System.Threading.Timeout.Infinite" /> to prevent the timer from starting. Specify zero (0) to start the timer immediately.</param>
-        <param name="period">The time interval between invocations of <c>callback</c>, in milliseconds. Specify <see cref="F:System.Threading.Timeout.Infinite" /> to disable periodic signaling.</param>
+        <param name="dueTime">The amount of time to delay before <paramref name="callback" /> is invoked, in milliseconds. Specify <see cref="F:System.Threading.Timeout.Infinite" /> to prevent the timer from starting. Specify zero (0) to start the timer immediately.</param>
+        <param name="period">The time interval between invocations of <paramref name="callback" />, in milliseconds. Specify <see cref="F:System.Threading.Timeout.Infinite" /> to disable periodic signaling.</param>
         <summary>Initializes a new instance of the <see langword="Timer" /> class, using 64-bit signed integers to measure time intervals.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -338,8 +338,8 @@ Sub TimerCallback(state As Object)
       <Docs>
         <param name="callback">A delegate representing a method to be executed.</param>
         <param name="state">An object containing information to be used by the callback method, or <see langword="null" />.</param>
-        <param name="dueTime">The amount of time to delay before the <c>callback</c> parameter invokes its methods. Specify negative one (-1) milliseconds to prevent the timer from starting. Specify zero (0) to start the timer immediately.</param>
-        <param name="period">The time interval between invocations of the methods referenced by <c>callback</c>. Specify negative one (-1) milliseconds to disable periodic signaling.</param>
+        <param name="dueTime">The amount of time to delay before the <paramref name="callback" /> parameter invokes its methods. Specify negative one (-1) milliseconds to prevent the timer from starting. Specify zero (0) to start the timer immediately.</param>
+        <param name="period">The time interval between invocations of the methods referenced by <paramref name="callback" />. Specify negative one (-1) milliseconds to disable periodic signaling.</param>
         <summary>Initializes a new instance of the <see langword="Timer" /> class, using <see cref="T:System.TimeSpan" /> values to measure time intervals.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -410,8 +410,8 @@ Sub TimerCallback(state As Object)
       <Docs>
         <param name="callback">A delegate representing a method to be executed.</param>
         <param name="state">An object containing information to be used by the callback method, or <see langword="null" />.</param>
-        <param name="dueTime">The amount of time to delay before <c>callback</c> is invoked, in milliseconds. Specify <see cref="F:System.Threading.Timeout.Infinite" /> to prevent the timer from starting. Specify zero (0) to start the timer immediately.</param>
-        <param name="period">The time interval between invocations of <c>callback</c>, in milliseconds. Specify <see cref="F:System.Threading.Timeout.Infinite" /> to disable periodic signaling.</param>
+        <param name="dueTime">The amount of time to delay before <paramref name="callback" /> is invoked, in milliseconds. Specify <see cref="F:System.Threading.Timeout.Infinite" /> to prevent the timer from starting. Specify zero (0) to start the timer immediately.</param>
+        <param name="period">The time interval between invocations of <paramref name="callback" />, in milliseconds. Specify <see cref="F:System.Threading.Timeout.Infinite" /> to disable periodic signaling.</param>
         <summary>Initializes a new instance of the <see langword="Timer" /> class, using 32-bit unsigned integers to measure time intervals.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

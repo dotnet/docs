@@ -127,7 +127,7 @@
       </Parameters>
       <Docs>
         <param name="message">A string that contains message that describes the error.</param>
-        <param name="innerException">The exception that is the cause of the <see cref="T:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException" />.  If <c>innerException</c> is not a null reference (<see langword="Nothing" /> in Visual Basic), the current exception is raised in a catch block that handles the inner exception.</param>
+        <param name="innerException">The exception that is the cause of the <see cref="T:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException" />.  If <paramref name="innerException" /> is not a null reference (<see langword="Nothing" /> in Visual Basic), the current exception is raised in a catch block that handles the inner exception.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException" /> class by using an error message and an exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -179,7 +179,7 @@
       </Parameters>
       <Docs>
         <param name="message">A string that contains message that describes the error.</param>
-        <param name="innerException">The exception that is the cause of the <see cref="T:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException" />. If <c>innerException</c> is not a null reference (<see langword="Nothing" /> in Visual Basic), the current exception is raised in a catch block that handles the inner exception.</param>
+        <param name="innerException">The exception that is the cause of the <see cref="T:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException" />. If <paramref name="innerException" /> is not a null reference (<see langword="Nothing" /> in Visual Basic), the current exception is raised in a catch block that handles the inner exception.</param>
         <param name="lineNumber">The line number in the object or XOML file that caused the exception to be thrown.</param>
         <param name="columnNumber">The column position in the object or XOML file that caused the exception to be thrown.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException" /> class by using an error message, an exception, and the line and column numbers that caused the exception to be thrown.</summary>

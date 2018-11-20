@@ -212,7 +212,7 @@
       </Parameters>
       <Docs>
         <param name="bindingArray">A zero-based array of <see cref="T:System.Web.UI.WebControls.TreeNodeBinding" /> objects that receives the copied items from the <see cref="T:System.Web.UI.WebControls.TreeNodeBindingCollection" />.</param>
-        <param name="index">The position in <c>bindingArray</c> at which to start receiving the copied content.</param>
+        <param name="index">The position in <paramref name="bindingArray" /> at which to start receiving the copied content.</param>
         <summary>Copies all the items from the <see cref="T:System.Web.UI.WebControls.TreeNodeBindingCollection" /> object to a compatible one-dimensional array of <see cref="T:System.Web.UI.WebControls.TreeNodeBinding" /> objects, starting at the specified index in the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

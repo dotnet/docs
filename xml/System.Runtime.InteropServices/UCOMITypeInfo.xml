@@ -181,8 +181,8 @@
       </Parameters>
       <Docs>
         <param name="memid">ID of the member function whose DLL entry description is to be returned.</param>
-        <param name="invKind">Specifies the kind of member identified by <c>memid</c>.</param>
-        <param name="pBstrDllName">If not <see langword="null" />, the function sets <c>pBstrDllName</c> to a <see langword="BSTR" /> that contains the name of the DLL.</param>
+        <param name="invKind">Specifies the kind of member identified by <paramref name="memid" />.</param>
+        <param name="pBstrDllName">If not <see langword="null" />, the function sets <paramref name="pBstrDllName" /> to a <see langword="BSTR" /> that contains the name of the DLL.</param>
         <param name="pBstrName">If not <see langword="null" />, the function sets <c>lpbstrName</c> to a <see langword="BSTR" /> that contains the name of the entry point.</param>
         <param name="pwOrdinal">If not <see langword="null" />, and the function is defined by an ordinal, then <c>lpwOrdinal</c> is set to point to the ordinal.</param>
         <summary>Retrieves a description or specification of an entry point for a function in a DLL.</summary>
@@ -413,8 +413,8 @@
       <Docs>
         <param name="memid">The ID of the member whose name (or names) is to be returned.</param>
         <param name="rgBstrNames">On succesful return, contains the name (or names) associated with the member.</param>
-        <param name="cMaxNames">Length of the <c>rgBstrNames</c> array.</param>
-        <param name="pcNames">On succesful return, the number of names in the <c>rgBstrNames</c> array.</param>
+        <param name="cMaxNames">Length of the <paramref name="rgBstrNames" /> array.</param>
+        <param name="pcNames">On succesful return, the number of names in the <paramref name="rgBstrNames" /> array.</param>
         <summary>Retrieves the variable with the specified member ID (or the name of the property or method and its parameters) that correspond to the specified function ID.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -638,9 +638,9 @@
         <param name="memid">Identifies the interface member.</param>
         <param name="wFlags">Flags describing the context of the invoke call.</param>
         <param name="pDispParams">Reference to a structure that contains an array of arguments, an array of DISPIDs for named arguments, and counts of the number of elements in each array.</param>
-        <param name="pVarResult">Reference to the location at which the result is to be stored. If <c>wFlags</c> specifies <see langword="DISPATCH_PROPERTYPUT" /> or <see langword="DISPATCH_PROPERTYPUTREF" />, <c>pVarResult</c> is ignored. Set to <see langword="null" /> if no result is desired.</param>
+        <param name="pVarResult">Reference to the location at which the result is to be stored. If <paramref name="wFlags" /> specifies <see langword="DISPATCH_PROPERTYPUT" /> or <see langword="DISPATCH_PROPERTYPUTREF" />, <paramref name="pVarResult" /> is ignored. Set to <see langword="null" /> if no result is desired.</param>
         <param name="pExcepInfo">Points to an exception information structure, which is filled in only if <see langword="DISP_E_EXCEPTION" /> is returned.</param>
-        <param name="puArgErr">If <see langword="Invoke" /> returns <see langword="DISP_E_TYPEMISMATCH" />, <c>puArgErr</c> indicates the index within <c>rgvarg</c> of the argument with incorrect type. If more than one argument returns an error, <c>puArgErr</c> indicates only the first argument with an error.</param>
+        <param name="puArgErr">If <see langword="Invoke" /> returns <see langword="DISP_E_TYPEMISMATCH" />, <paramref name="puArgErr" /> indicates the index within <c>rgvarg</c> of the argument with incorrect type. If more than one argument returns an error, <paramref name="puArgErr" /> indicates only the first argument with an error.</param>
         <summary>Invokes a method, or accesses a property of an object, that implements the interface described by the type description.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

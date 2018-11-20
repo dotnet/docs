@@ -225,7 +225,7 @@
       </Parameters>
       <Docs>
         <param name="array">The destination array. The array must be one-dimensional and have zero-based indexing.</param>
-        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying starts.</param>
+        <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying starts.</param>
         <summary>Copies the elements of the model binder dictionary to an array, starting at a specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -496,7 +496,7 @@
       </Parameters>
       <Docs>
         <param name="key">The key of the value to get.</param>
-        <param name="value">When this method returns, the value that is associated with the specified key, if the key is found; otherwise, the default value for the type of the <c>value</c> parameter. This parameter is passed uninitialized.</param>
+        <param name="value">When this method returns, the value that is associated with the specified key, if the key is found; otherwise, the default value for the type of the <paramref name="value" /> parameter. This parameter is passed uninitialized.</param>
         <summary>Gets the value that is associated with the specified key.</summary>
         <returns>
           <see langword="true" /> if the dictionary contains an element that has the specified key; otherwise, <see langword="false" />.</returns>

@@ -763,7 +763,7 @@
       </Parameters>
       <Docs>
         <param name="key">The key of the value to get.</param>
-        <param name="value">When this method returns, contains the value that is associated with the specified key, if the key is found; otherwise, contains the appropriate default value for the type of the <c>value</c> parameter that you provided as an <see langword="out" /> parameter. This parameter is passed uninitialized.</param>
+        <param name="value">When this method returns, contains the value that is associated with the specified key, if the key is found; otherwise, contains the appropriate default value for the type of the <paramref name="value" /> parameter that you provided as an <see langword="out" /> parameter. This parameter is passed uninitialized.</param>
         <summary>Gets a value that indicates whether a value is associated with the specified key.</summary>
         <returns>
           <see langword="true" /> if the dictionary contains an element that has the specified key; otherwise, <see langword="false" />.</returns>

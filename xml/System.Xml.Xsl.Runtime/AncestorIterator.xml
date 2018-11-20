@@ -61,7 +61,7 @@
         <param name="context">The node from which you start traversing ancestors.</param>
         <param name="filter">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlNavigatorFilter" /> class, which enables you to filter nodes based on the name. For more information, see <see cref="T:System.Xml.Xsl.Runtime.XmlNavigatorFilter" />.</param>
         <param name="orSelf">
-          <see langword="true" /> if you want the <c>context</c> node to be returned as a part of the iteration and not filtered out.</param>
+          <see langword="true" /> if you want the <paramref name="context" /> node to be returned as a part of the iteration and not filtered out.</param>
         <summary>Initializes the <see cref="T:System.Xml.Xsl.Runtime.AncestorIterator" />.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

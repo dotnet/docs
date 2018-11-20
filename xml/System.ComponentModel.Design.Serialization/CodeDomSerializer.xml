@@ -270,8 +270,8 @@
       </Parameters>
       <Docs>
         <param name="statement">The <see cref="T:System.CodeDom.CodeStatement" /> for which to determine the group.</param>
-        <param name="expression">A <see cref="T:System.CodeDom.CodeExpression" /> that <c>statement</c> has been reduced to.</param>
-        <param name="targetType">The <see cref="T:System.Type" /> of <c>statement</c>.</param>
+        <param name="expression">A <see cref="T:System.CodeDom.CodeExpression" /> that <paramref name="statement" /> has been reduced to.</param>
+        <param name="targetType">The <see cref="T:System.Type" /> of <paramref name="statement" />.</param>
         <summary>Determines which statement group the given statement should belong to.</summary>
         <returns>The name of the component with which <paramref name="statement" /> should be grouped.</returns>
         <remarks>To be added.</remarks>
@@ -391,7 +391,7 @@
       </Parameters>
       <Docs>
         <param name="manager">The serialization manager to use for serialization.</param>
-        <param name="owningObject">The object to which is <c>member</c> attached.</param>
+        <param name="owningObject">The object to which is <paramref name="member" /> attached.</param>
         <param name="member">The member to serialize.</param>
         <summary>Serializes the given member on the given object.</summary>
         <returns>A <see cref="T:System.CodeDom.CodeStatementCollection" /> representing the serialized state of <paramref name="member" />.</returns>
@@ -425,7 +425,7 @@
       </Parameters>
       <Docs>
         <param name="manager">The serialization manager to use for serialization.</param>
-        <param name="owningObject">The object to which is <c>member</c> attached.</param>
+        <param name="owningObject">The object to which is <paramref name="member" /> attached.</param>
         <param name="member">The member to serialize.</param>
         <summary>Serializes the given member, accounting for default values.</summary>
         <returns>A CodeDom object representing <paramref name="member" />.</returns>

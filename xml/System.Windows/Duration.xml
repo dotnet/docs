@@ -115,7 +115,7 @@
         <Parameter Name="duration" Type="System.Windows.Duration" />
       </Parameters>
       <Docs>
-        <param name="duration">An instance of <see cref="T:System.Windows.Duration" /> that represents the value of the current instance plus <c>duration</c>.</param>
+        <param name="duration">An instance of <see cref="T:System.Windows.Duration" /> that represents the value of the current instance plus <paramref name="duration" />.</param>
         <summary>Adds the value of the specified instance of <see cref="T:System.Windows.Duration" /> to the value of the current instance.</summary>
         <returns>If both instances of <see cref="T:System.Windows.Duration" /> have values, an instance of <see cref="T:System.Windows.Duration" /> that represents the combined values. Otherwise this method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>

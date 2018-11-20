@@ -559,7 +559,7 @@
       <Docs>
         <param name="path">A relative or absolute path for the file that the current <see langword="FileStream" /> object will encapsulate.</param>
         <param name="mode">A constant that determines how to open or create the file.</param>
-        <param name="access">A constant that determines how the file can be accessed by the <see langword="FileStream" /> object. This also determines the values returned by the <see cref="P:System.IO.FileStream.CanRead" /> and <see cref="P:System.IO.FileStream.CanWrite" /> properties of the <see langword="FileStream" /> object. <see cref="P:System.IO.FileStream.CanSeek" /> is <see langword="true" /> if <c>path</c> specifies a disk file.</param>
+        <param name="access">A constant that determines how the file can be accessed by the <see langword="FileStream" /> object. This also determines the values returned by the <see cref="P:System.IO.FileStream.CanRead" /> and <see cref="P:System.IO.FileStream.CanWrite" /> properties of the <see langword="FileStream" /> object. <see cref="P:System.IO.FileStream.CanSeek" /> is <see langword="true" /> if <paramref name="path" /> specifies a disk file.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class with the specified path, creation mode, and read/write permission.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -820,7 +820,7 @@
       <Docs>
         <param name="path">A relative or absolute path for the file that the current <see langword="FileStream" /> object will encapsulate.</param>
         <param name="mode">A constant that determines how to open or create the file.</param>
-        <param name="access">A constant that determines how the file can be accessed by the <see langword="FileStream" /> object. This also determines the values returned by the <see cref="P:System.IO.FileStream.CanRead" /> and <see cref="P:System.IO.FileStream.CanWrite" /> properties of the <see langword="FileStream" /> object. <see cref="P:System.IO.FileStream.CanSeek" /> is <see langword="true" /> if <c>path</c> specifies a disk file.</param>
+        <param name="access">A constant that determines how the file can be accessed by the <see langword="FileStream" /> object. This also determines the values returned by the <see cref="P:System.IO.FileStream.CanRead" /> and <see cref="P:System.IO.FileStream.CanWrite" /> properties of the <see langword="FileStream" /> object. <see cref="P:System.IO.FileStream.CanSeek" /> is <see langword="true" /> if <paramref name="path" /> specifies a disk file.</param>
         <param name="share">A constant that determines how the file will be shared by processes.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class with the specified path, creation mode, read/write permission, and sharing permission.</summary>
         <remarks>
@@ -1016,7 +1016,7 @@
       <Docs>
         <param name="path">A relative or absolute path for the file that the current <see langword="FileStream" /> object will encapsulate.</param>
         <param name="mode">A constant that determines how to open or create the file.</param>
-        <param name="access">A constant that determines how the file can be accessed by the <see langword="FileStream" /> object. This also determines the values returned by the <see cref="P:System.IO.FileStream.CanRead" /> and <see cref="P:System.IO.FileStream.CanWrite" /> properties of the <see langword="FileStream" /> object. <see cref="P:System.IO.FileStream.CanSeek" /> is <see langword="true" /> if <c>path</c> specifies a disk file.</param>
+        <param name="access">A constant that determines how the file can be accessed by the <see langword="FileStream" /> object. This also determines the values returned by the <see cref="P:System.IO.FileStream.CanRead" /> and <see cref="P:System.IO.FileStream.CanWrite" /> properties of the <see langword="FileStream" /> object. <see cref="P:System.IO.FileStream.CanSeek" /> is <see langword="true" /> if <paramref name="path" /> specifies a disk file.</param>
         <param name="share">A constant that determines how the file will be shared by processes.</param>
         <param name="bufferSize">A positive <see cref="T:System.Int32" /> value greater than 0 indicating the buffer size. The default buffer size is 4096.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class with the specified path, creation mode, read/write and sharing permission, and buffer size.</summary>
@@ -1120,10 +1120,10 @@
       <Docs>
         <param name="path">A relative or absolute path for the file that the current <see langword="FileStream" /> object will encapsulate.</param>
         <param name="mode">A constant that determines how to open or create the file.</param>
-        <param name="access">A constant that determines how the file can be accessed by the <see langword="FileStream" /> object. This also determines the values returned by the <see cref="P:System.IO.FileStream.CanRead" /> and <see cref="P:System.IO.FileStream.CanWrite" /> properties of the <see langword="FileStream" /> object. <see cref="P:System.IO.FileStream.CanSeek" /> is <see langword="true" /> if <c>path</c> specifies a disk file.</param>
+        <param name="access">A constant that determines how the file can be accessed by the <see langword="FileStream" /> object. This also determines the values returned by the <see cref="P:System.IO.FileStream.CanRead" /> and <see cref="P:System.IO.FileStream.CanWrite" /> properties of the <see langword="FileStream" /> object. <see cref="P:System.IO.FileStream.CanSeek" /> is <see langword="true" /> if <paramref name="path" /> specifies a disk file.</param>
         <param name="share">A constant that determines how the file will be shared by processes.</param>
         <param name="bufferSize">A positive <see cref="T:System.Int32" /> value greater than 0 indicating the buffer size. The default buffer size is 4096..</param>
-        <param name="useAsync">Specifies whether to use asynchronous I/O or synchronous I/O. However, note that the underlying operating system might not support asynchronous I/O, so when specifying <see langword="true" />, the handle might be opened synchronously depending on the platform. When opened asynchronously, the <see cref="M:System.IO.FileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /> and <see cref="M:System.IO.FileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /> methods perform better on large reads or writes, but they might be much slower for small reads or writes. If the application is designed to take advantage of asynchronous I/O, set the <c>useAsync</c> parameter to <see langword="true" />. Using asynchronous I/O correctly can speed up applications by as much as a factor of 10, but using it without redesigning the application for asynchronous I/O can decrease performance by as much as a factor of 10.</param>
+        <param name="useAsync">Specifies whether to use asynchronous I/O or synchronous I/O. However, note that the underlying operating system might not support asynchronous I/O, so when specifying <see langword="true" />, the handle might be opened synchronously depending on the platform. When opened asynchronously, the <see cref="M:System.IO.FileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /> and <see cref="M:System.IO.FileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /> methods perform better on large reads or writes, but they might be much slower for small reads or writes. If the application is designed to take advantage of asynchronous I/O, set the <paramref name="useAsync" /> parameter to <see langword="true" />. Using asynchronous I/O correctly can speed up applications by as much as a factor of 10, but using it without redesigning the application for asynchronous I/O can decrease performance by as much as a factor of 10.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class with the specified path, creation mode, read/write and sharing permission, buffer size, and synchronous or asynchronous state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1234,7 +1234,7 @@
       <Docs>
         <param name="path">A relative or absolute path for the file that the current <see langword="FileStream" /> object will encapsulate.</param>
         <param name="mode">A constant that determines how to open or create the file.</param>
-        <param name="access">A constant that determines how the file can be accessed by the <see langword="FileStream" /> object. This also determines the values returned by the <see cref="P:System.IO.FileStream.CanRead" /> and <see cref="P:System.IO.FileStream.CanWrite" /> properties of the <see langword="FileStream" /> object. <see cref="P:System.IO.FileStream.CanSeek" /> is <see langword="true" /> if <c>path</c> specifies a disk file.</param>
+        <param name="access">A constant that determines how the file can be accessed by the <see langword="FileStream" /> object. This also determines the values returned by the <see cref="P:System.IO.FileStream.CanRead" /> and <see cref="P:System.IO.FileStream.CanWrite" /> properties of the <see langword="FileStream" /> object. <see cref="P:System.IO.FileStream.CanSeek" /> is <see langword="true" /> if <paramref name="path" /> specifies a disk file.</param>
         <param name="share">A constant that determines how the file will be shared by processes.</param>
         <param name="bufferSize">A positive <see cref="T:System.Int32" /> value greater than 0 indicating the buffer size. The default buffer size is 4096.</param>
         <param name="options">A value that specifies additional file options.</param>
@@ -2799,8 +2799,8 @@ If the absolute path is not known, this property returns a string similar to "[U
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">When this method returns, contains the specified byte array with the values between <c>offset</c> and (<c>offset</c> + <c>count</c> - 1<c>)</c> replaced by the bytes read from the current source.</param>
-        <param name="offset">The byte offset in <c>array</c> at which the read bytes will be placed.</param>
+        <param name="array">When this method returns, contains the specified byte array with the values between <paramref name="offset" /> and (<paramref name="offset" /> + <paramref name="count" /> - 1<c>)</c> replaced by the bytes read from the current source.</param>
+        <param name="offset">The byte offset in <paramref name="array" /> at which the read bytes will be placed.</param>
         <param name="count">The maximum number of bytes to read.</param>
         <summary>Reads a block of bytes from the stream and writes the data in a given buffer.</summary>
         <returns>The total number of bytes read into the buffer. This might be less than the number of bytes requested if that number of bytes are not currently available, or zero if the end of the stream is reached.</returns>
@@ -2888,7 +2888,7 @@ If the absolute path is not known, this property returns a string similar to "[U
       </Parameters>
       <Docs>
         <param name="buffer">The buffer to write the data into.</param>
-        <param name="offset">The byte offset in <c>buffer</c> at which to begin writing data from the stream.</param>
+        <param name="offset">The byte offset in <paramref name="buffer" /> at which to begin writing data from the stream.</param>
         <param name="count">The maximum number of bytes to read.</param>
         <param name="cancellationToken">The token to monitor for cancellation requests.</param>
         <summary>Asynchronously reads a sequence of bytes from the current stream, advances the position within the stream by the number of bytes read, and monitors cancellation requests.</summary>
@@ -3094,8 +3094,8 @@ If the absolute path is not known, this property returns a string similar to "[U
         <Parameter Name="origin" Type="System.IO.SeekOrigin" />
       </Parameters>
       <Docs>
-        <param name="offset">The point relative to <c>origin</c> from which to begin seeking.</param>
-        <param name="origin">Specifies the beginning, the end, or the current position as a reference point for <c>offset</c>, using a value of type <see cref="T:System.IO.SeekOrigin" />.</param>
+        <param name="offset">The point relative to <paramref name="origin" /> from which to begin seeking.</param>
+        <param name="origin">Specifies the beginning, the end, or the current position as a reference point for <paramref name="offset" />, using a value of type <see cref="T:System.IO.SeekOrigin" />.</param>
         <summary>Sets the current position of this stream to the given value.</summary>
         <returns>The new position in the stream.</returns>
         <remarks>
@@ -3370,7 +3370,7 @@ If the absolute path is not known, this property returns a string similar to "[U
       </Parameters>
       <Docs>
         <param name="array">The buffer containing data to write to the stream.</param>
-        <param name="offset">The zero-based byte offset in <c>array</c> from which to begin copying bytes to the stream.</param>
+        <param name="offset">The zero-based byte offset in <paramref name="array" /> from which to begin copying bytes to the stream.</param>
         <param name="count">The maximum number of bytes to write.</param>
         <summary>Writes a block of bytes to the file stream.</summary>
         <remarks>
@@ -3461,7 +3461,7 @@ If the absolute path is not known, this property returns a string similar to "[U
       </Parameters>
       <Docs>
         <param name="buffer">The buffer to write data from.</param>
-        <param name="offset">The zero-based byte offset in <c>buffer</c> from which to begin copying bytes to the stream.</param>
+        <param name="offset">The zero-based byte offset in <paramref name="buffer" /> from which to begin copying bytes to the stream.</param>
         <param name="count">The maximum number of bytes to write.</param>
         <param name="cancellationToken">The token to monitor for cancellation requests.</param>
         <summary>Asynchronously writes a sequence of bytes to the current stream, advances the current position within this stream by the number of bytes written, and monitors cancellation requests.</summary>

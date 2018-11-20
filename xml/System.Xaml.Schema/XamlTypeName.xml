@@ -129,7 +129,7 @@
         <Parameter Name="typeArguments" Type="System.Collections.Generic.IEnumerable&lt;System.Xaml.Schema.XamlTypeName&gt;" />
       </Parameters>
       <Docs>
-        <param name="xamlNamespace">The XAML namespace that contains <c>name</c>.</param>
+        <param name="xamlNamespace">The XAML namespace that contains <paramref name="name" />.</param>
         <param name="name">The name of the type to create a <see cref="T:System.Xaml.Schema.XamlTypeName" /> for.</param>
         <param name="typeArguments">An array of type arguments, each of which must be a <see cref="T:System.Xaml.Schema.XamlTypeName" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.Schema.XamlTypeName" /> class, based on name and namespace strings as well as an array of type arguments.</summary>

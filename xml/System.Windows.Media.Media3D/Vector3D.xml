@@ -296,7 +296,7 @@
       </Parameters>
       <Docs>
         <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to be divided.</param>
-        <param name="scalar">The scalar to divide <c>vector</c> by.</param>
+        <param name="scalar">The scalar to divide <paramref name="vector" /> by.</param>
         <summary>Divides the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure by the specified scalar and returns the result as a <see cref="T:System.Windows.Media.Media3D.Vector3D" />.</summary>
         <returns>The result of dividing <paramref name="vector" /> by <paramref name="scalar" />.</returns>
         <remarks>
@@ -904,7 +904,7 @@
       </Parameters>
       <Docs>
         <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to be divided.</param>
-        <param name="scalar">The scalar to divide <c>vector</c> by.</param>
+        <param name="scalar">The scalar to divide <paramref name="vector" /> by.</param>
         <summary>Divides the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure by the specified scalar and returns the result as a <see cref="T:System.Windows.Media.Media3D.Vector3D" />.</summary>
         <returns>The result of dividing <paramref name="vector" /> by <paramref name="scalar" />.</returns>
         <remarks>
@@ -1239,7 +1239,7 @@
       </Parameters>
       <Docs>
         <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to be subtracted from.</param>
-        <param name="point">The <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure to subtract from <c>vector</c>.</param>
+        <param name="point">The <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure to subtract from <paramref name="vector" />.</param>
         <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
         <returns>The result of subtracting <paramref name="point" /> from <paramref name="vector" />.</returns>
         <remarks>
@@ -1278,7 +1278,7 @@
       </Parameters>
       <Docs>
         <param name="vector1">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to be subtracted from.</param>
-        <param name="vector2">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to subtract from <c>vector1</c>.</param>
+        <param name="vector2">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to subtract from <paramref name="vector1" />.</param>
         <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
         <returns>The result of subtracting <paramref name="vector2" /> from <paramref name="vector1" />.</returns>
         <remarks>
@@ -1404,7 +1404,7 @@
       </Parameters>
       <Docs>
         <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to be subtracted from.</param>
-        <param name="point">The <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure to subtract from <c>vector</c>.</param>
+        <param name="point">The <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure to subtract from <paramref name="vector" />.</param>
         <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
         <returns>The result of subtracting <paramref name="point" /> from <paramref name="vector" />.</returns>
         <remarks>
@@ -1441,7 +1441,7 @@
       </Parameters>
       <Docs>
         <param name="vector1">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to be subtracted from.</param>
-        <param name="vector2">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to subtract from <c>vector1</c>.</param>
+        <param name="vector2">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to subtract from <paramref name="vector1" />.</param>
         <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
         <returns>The result of subtracting <paramref name="vector2" /> from <paramref name="vector1" />.</returns>
         <remarks>

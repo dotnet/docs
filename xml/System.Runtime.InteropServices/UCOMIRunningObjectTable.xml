@@ -243,9 +243,9 @@
         <Parameter Name="pdwRegister" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="grfFlags">Specifies whether the Running Object Table's (ROT) reference to <c>punkObject</c> is weak or strong, and controls access to the object through its entry in the ROT.</param>
+        <param name="grfFlags">Specifies whether the Running Object Table's (ROT) reference to <paramref name="punkObject" /> is weak or strong, and controls access to the object through its entry in the ROT.</param>
         <param name="punkObject">Reference to the object being registered as running.</param>
-        <param name="pmkObjectName">Reference to the moniker that identifies <c>punkObject</c>.</param>
+        <param name="pmkObjectName">Reference to the moniker that identifies <paramref name="punkObject" />.</param>
         <param name="pdwRegister">Reference to a 32-bit value that can be used to identify this ROT entry in subsequent calls to <see cref="M:System.Runtime.InteropServices.UCOMIRunningObjectTable.Revoke(System.Int32)" /> or <see cref="M:System.Runtime.InteropServices.UCOMIRunningObjectTable.NoteChangeTime(System.Int32,System.Runtime.InteropServices.FILETIME@)" />.</param>
         <summary>Registers that the supplied object has entered the running state.</summary>
         <remarks>

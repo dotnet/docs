@@ -245,7 +245,7 @@
       </Parameters>
       <Docs>
         <param name="inputGestures">An array into which the collection is copied.</param>
-        <param name="index">The index position in the <c>inputGestures</c> at which copying begins.</param>
+        <param name="index">The index position in the <paramref name="inputGestures" /> at which copying begins.</param>
         <summary>Copies all of the items in the <see cref="T:System.Windows.Input.InputGestureCollection" /> to the specified one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -353,7 +353,7 @@
         <Parameter Name="inputGesture" Type="System.Windows.Input.InputGesture" />
       </Parameters>
       <Docs>
-        <param name="index">Index at which to insert <c>inputGesture</c>.</param>
+        <param name="index">Index at which to insert <paramref name="inputGesture" />.</param>
         <param name="inputGesture">The gesture to insert.</param>
         <summary>Inserts the specified <see cref="T:System.Windows.Input.InputGesture" /> into this <see cref="T:System.Windows.Input.InputGestureCollection" /> at the specified index.</summary>
         <remarks>To be added.</remarks>

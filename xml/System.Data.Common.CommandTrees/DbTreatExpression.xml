@@ -69,7 +69,7 @@
         <Parameter Name="visitor" Type="System.Data.Common.CommandTrees.DbExpressionVisitor&lt;TResultType&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TResultType">The type of the result produced by <c>visitor</c>.</typeparam>
+        <typeparam name="TResultType">The type of the result produced by <paramref name="visitor" />.</typeparam>
         <param name="visitor">An instance of a typed <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor" /> that produces a result value of a specific type.</param>
         <summary>Implements the visitor pattern for expressions that produce a result value of a specific type.</summary>
         <returns>A result value of a specific type produced by <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor" />.</returns>

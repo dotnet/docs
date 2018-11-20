@@ -232,7 +232,7 @@ ExpensiveData _data = null;
         <typeparam name="T">The type of the reference to be initialized.</typeparam>
         <param name="target">A reference or value of type <c>T</c> to initialize if it hasn't already been initialized.</param>
         <param name="initialized">A reference to a Boolean value that determines whether the target has already been initialized.</param>
-        <param name="syncLock">A reference to an object used as the mutually exclusive lock for initializing <c>target</c>. If <c>syncLock</c> is <see langword="null" />, a new object will be instantiated.</param>
+        <param name="syncLock">A reference to an object used as the mutually exclusive lock for initializing <paramref name="target" />. If <paramref name="syncLock" /> is <see langword="null" />, a new object will be instantiated.</param>
         <summary>Initializes a target reference or value type with its default constructor if it hasn't already been initialized.</summary>
         <returns>The initialized value of type <paramref name="T" />.</returns>
         <remarks>
@@ -332,7 +332,7 @@ ExpensiveData _data = null;
         <typeparam name="T">The type of the reference to be initialized.</typeparam>
         <param name="target">A reference or value of type <c>T</c> to initialize if it hasn't already been initialized.</param>
         <param name="initialized">A reference to a Boolean value that determines whether the target has already been initialized.</param>
-        <param name="syncLock">A reference to an object used as the mutually exclusive lock for initializing <c>target</c>. If <c>syncLock</c> is <see langword="null" />, a new object will be instantiated.</param>
+        <param name="syncLock">A reference to an object used as the mutually exclusive lock for initializing <paramref name="target" />. If <paramref name="syncLock" /> is <see langword="null" />, a new object will be instantiated.</param>
         <param name="valueFactory">The function that is called to initialize the reference or value.</param>
         <summary>Initializes a target reference or value type by using a specified function if it hasn't already been initialized.</summary>
         <returns>The initialized value of type <paramref name="T" />.</returns>

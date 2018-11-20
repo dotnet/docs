@@ -126,7 +126,7 @@
       </Parameters>
       <Docs>
         <param name="action">The action that the subject of the <see cref="T:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement" /> security token seeks to perform on the specified resource.</param>
-        <param name="ns">The XML namespace in which the <c>action</c> parameter is defined.</param>
+        <param name="ns">The XML namespace in which the <paramref name="action" /> parameter is defined.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAction" /> class using the specified action.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

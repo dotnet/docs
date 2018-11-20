@@ -883,7 +883,7 @@
       </Parameters>
       <Docs>
         <param name="targetString">The string being compared.</param>
-        <param name="substring">The substring that the <c>targetString</c> might start with.</param>
+        <param name="substring">The substring that the <paramref name="targetString" /> might start with.</param>
         <summary>Checks whether the target string starts with the substring.</summary>
         <returns>Returns <see langword="true" /> if the target string starts with the given substring, otherwise returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

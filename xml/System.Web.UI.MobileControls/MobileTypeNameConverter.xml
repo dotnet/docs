@@ -116,7 +116,7 @@
         <param name="ctx">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
         <param name="ci">A <see cref="T:System.Globalization.CultureInfo" />. If <see langword="null" /> is passed, the current culture is assumed.</param>
         <param name="value">The <see cref="T:System.Object" /> to convert.</param>
-        <param name="targetType">The <see cref="T:System.Type" /> to convert the <c>value</c> parameter to.</param>
+        <param name="targetType">The <see cref="T:System.Type" /> to convert the <paramref name="value" /> parameter to.</param>
         <summary>Converts the given value object to the specified type, using the specified context and culture information. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>

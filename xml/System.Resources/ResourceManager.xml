@@ -824,7 +824,7 @@ csc Example.cs /resource:ExampleResources.resources
       </Parameters>
       <Docs>
         <param name="baseName">The root name of the resources. For example, the root name for the resource file named "MyResource.en-US.resources" is "MyResource".</param>
-        <param name="resourceDir">The name of the directory to search for the resources. <c>resourceDir</c> can be an absolute path or a relative path from the application directory.</param>
+        <param name="resourceDir">The name of the directory to search for the resources. <paramref name="resourceDir" /> can be an absolute path or a relative path from the application directory.</param>
         <param name="usingResourceSet">The type of the custom <see cref="T:System.Resources.ResourceSet" /> to use. If <see langword="null" />, the default runtime <see cref="T:System.Resources.ResourceSet" /> object is used.</param>
         <summary>Returns a <see cref="T:System.Resources.ResourceManager" /> object that searches a specific directory instead of an assembly manifest for resources.</summary>
         <returns>A new instance of a resource manager that searches the specified directory instead of an assembly manifest for resources.</returns>
@@ -1510,7 +1510,7 @@ csc GetStream.cs /resource:AppResources.resources
       </Parameters>
       <Docs>
         <param name="name">The name of a resource.</param>
-        <param name="culture">An  object that specifies the culture to use for the resource lookup. If <c>culture</c> is <see langword="null" />, the culture for the current thread is used.</param>
+        <param name="culture">An  object that specifies the culture to use for the resource lookup. If <paramref name="culture" /> is <see langword="null" />, the culture for the current thread is used.</param>
         <summary>Returns an unmanaged memory stream object from the specified resource, using the specified culture.</summary>
         <returns>An unmanaged memory stream object that represents a resource.</returns>
         <remarks>

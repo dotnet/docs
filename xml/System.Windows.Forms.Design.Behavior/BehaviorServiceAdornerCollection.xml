@@ -232,7 +232,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the values copied from <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection" />.</param>
-        <param name="index">The index in <c>array</c> where copying begins.</param>
+        <param name="index">The index in <paramref name="array" /> where copying begins.</param>
         <summary>Copies the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection" /> values to a one-dimensional <see cref="T:System.Array" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -307,7 +307,7 @@
         <Parameter Name="value" Type="System.Windows.Forms.Design.Behavior.Adorner" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index where <c>value</c> should be inserted.</param>
+        <param name="index">The zero-based index where <paramref name="value" /> should be inserted.</param>
         <param name="value">The <see cref="T:System.Windows.Forms.Design.Behavior.Adorner" /> to insert.</param>
         <summary>Inserts an <see cref="T:System.Windows.Forms.Design.Behavior.Adorner" /> into the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection" /> at the specified index.</summary>
         <remarks>To be added.</remarks>

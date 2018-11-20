@@ -80,7 +80,7 @@
         <Parameter Name="builderName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="builderName">A configuration builder name or a comma-separated list of names. If <c>builderName</c> is a comma-separated list of <see cref="T:System.Configuration.ConfigurationBuilder" /> names, a special aggregate <see cref="T:System.Configuration.ConfigurationBuilder" /> object that references and applies all named configuration builders is returned.</param>
+        <param name="builderName">A configuration builder name or a comma-separated list of names. If <paramref name="builderName" /> is a comma-separated list of <see cref="T:System.Configuration.ConfigurationBuilder" /> names, a special aggregate <see cref="T:System.Configuration.ConfigurationBuilder" /> object that references and applies all named configuration builders is returned.</param>
         <summary>Returns a <see cref="T:System.Configuration.ConfigurationBuilder" /> object that has the provided configuration builder name.</summary>
         <returns>A <see cref="T:System.Configuration.ConfigurationBuilder" /> object that has the provided configuration <paramref name="builderName" />.</returns>
         <remarks>To be added.</remarks>

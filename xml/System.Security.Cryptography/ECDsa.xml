@@ -511,7 +511,7 @@
       </Parameters>
       <Docs>
         <param name="data">The data to be hashed.</param>
-        <param name="offset">The index of the first byte in <c>data</c> to be hashed.</param>
+        <param name="offset">The index of the first byte in <paramref name="data" /> to be hashed.</param>
         <param name="count">The number of bytes to hash.</param>
         <param name="hashAlgorithm">The algorithm to use to hash the data.</param>
         <summary>When overridden in a derived class, computes the hash value of the specified portion of a byte array by using the specified hashing algorithm.</summary>

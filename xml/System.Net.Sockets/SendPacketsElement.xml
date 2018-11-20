@@ -181,8 +181,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">A byte array of data to send using the <see cref="M:System.Net.Sockets.Socket.SendPacketsAsync(System.Net.Sockets.SocketAsyncEventArgs)" /> method.</param>
-        <param name="offset">The offset, in bytes, from the beginning of the <c>buffer</c> to the location in the <c>buffer</c> to start sending the data specified in the <c>buffer</c> parameter.</param>
-        <param name="count">The number of bytes to send starting from the <c>offset</c> parameter. If <c>count</c> is zero, no bytes are sent.</param>
+        <param name="offset">The offset, in bytes, from the beginning of the <paramref name="buffer" /> to the location in the <paramref name="buffer" /> to start sending the data specified in the <paramref name="buffer" /> parameter.</param>
+        <param name="count">The number of bytes to send starting from the <paramref name="offset" /> parameter. If <paramref name="count" /> is zero, no bytes are sent.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.SendPacketsElement" /> class using the specified buffer, buffer offset, and count.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -238,8 +238,8 @@
       </Parameters>
       <Docs>
         <param name="filepath">The filename of the file to be transmitted using the <see cref="M:System.Net.Sockets.Socket.SendPacketsAsync(System.Net.Sockets.SocketAsyncEventArgs)" /> method.</param>
-        <param name="offset">The offset, in bytes, from the beginning of the file to the location in the file to start sending the file specified in the <c>filepath</c> parameter.</param>
-        <param name="count">The number of bytes to send starting from the <c>offset</c> parameter. If <c>count</c> is zero, the entire file is sent.</param>
+        <param name="offset">The offset, in bytes, from the beginning of the file to the location in the file to start sending the file specified in the <paramref name="filepath" /> parameter.</param>
+        <param name="count">The number of bytes to send starting from the <paramref name="offset" /> parameter. If <paramref name="count" /> is zero, the entire file is sent.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.SendPacketsElement" /> class using the specified filename path, offset, and count.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -298,8 +298,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">A byte array of data to send using the <see cref="M:System.Net.Sockets.Socket.SendPacketsAsync(System.Net.Sockets.SocketAsyncEventArgs)" /> method.</param>
-        <param name="offset">The offset, in bytes, from the beginning of the <c>buffer</c> to the location in the <c>buffer</c> to start sending the data specified in the <c>buffer</c> parameter.</param>
-        <param name="count">The number bytes to send starting from the <c>offset</c> parameter. If <c>count</c> is zero, no bytes are sent.</param>
+        <param name="offset">The offset, in bytes, from the beginning of the <paramref name="buffer" /> to the location in the <paramref name="buffer" /> to start sending the data specified in the <paramref name="buffer" /> parameter.</param>
+        <param name="count">The number bytes to send starting from the <paramref name="offset" /> parameter. If <paramref name="count" /> is zero, no bytes are sent.</param>
         <param name="endOfPacket">A Boolean value that specifies that this element should not be combined with the next element in a single send request from the sockets layer to the transport. This flag is used for granular control of the content of each message on a datagram or message-oriented socket.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.SendPacketsElement" /> class using the specified buffer, buffer offset, and count with an option to combine this element with the next element in a single send request from the sockets layer to the transport.</summary>
         <remarks>
@@ -357,8 +357,8 @@
       </Parameters>
       <Docs>
         <param name="filepath">The filename of the file to be transmitted using the <see cref="M:System.Net.Sockets.Socket.SendPacketsAsync(System.Net.Sockets.SocketAsyncEventArgs)" /> method.</param>
-        <param name="offset">The offset, in bytes, from the beginning of the file to the location in the file to start sending the file specified in the <c>filepath</c> parameter.</param>
-        <param name="count">The number of bytes to send starting from the <c>offset</c> parameter. If <c>count</c> is zero, the entire file is sent.</param>
+        <param name="offset">The offset, in bytes, from the beginning of the file to the location in the file to start sending the file specified in the <paramref name="filepath" /> parameter.</param>
+        <param name="count">The number of bytes to send starting from the <paramref name="offset" /> parameter. If <paramref name="count" /> is zero, the entire file is sent.</param>
         <param name="endOfPacket">A Boolean value that specifies that this element should not be combined with the next element in a single send request from the sockets layer to the transport. This flag is used for granular control of the content of each message on a datagram or message-oriented socket.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.SendPacketsElement" /> class using the specified filename path, buffer offset, and count with an option to combine this element with the next element in a single send request from the sockets layer to the transport.</summary>
         <remarks>

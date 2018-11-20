@@ -290,7 +290,7 @@
       </Parameters>
       <Docs>
         <param name="array">The destination array to which the contents will be copied.</param>
-        <param name="index">The index of the element in <c>array</c> at which to start copying.</param>
+        <param name="index">The index of the element in <paramref name="array" /> at which to start copying.</param>
         <summary>Copies the entire collection of cells into an array at a specified location within the array.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
@@ -344,7 +344,7 @@
         <Parameter Name="dataGridViewCell" Type="System.Windows.Forms.DataGridViewCell" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to place <c>dataGridViewCell</c>.</param>
+        <param name="index">The zero-based index at which to place <paramref name="dataGridViewCell" />.</param>
         <param name="dataGridViewCell">The <see cref="T:System.Windows.Forms.DataGridViewCell" /> to insert.</param>
         <summary>Inserts a cell into the collection at the specified index.</summary>
         <remarks>

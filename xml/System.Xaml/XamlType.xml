@@ -155,7 +155,7 @@
       </Parameters>
       <Docs>
         <param name="unknownTypeNamespace">The XAML namespace for the type, as a string.</param>
-        <param name="unknownTypeName">The name of the type in the provided <c>unknownTypeNamespace</c> XAML namespace.</param>
+        <param name="unknownTypeName">The name of the type in the provided <paramref name="unknownTypeNamespace" /> XAML namespace.</param>
         <param name="typeArguments">The type arguments for a <see cref="T:System.Xaml.XamlType" /> that represents a generic type. Can be (and often is) <see langword="null" />, which indicates that the represented type is not a generic type.</param>
         <param name="schemaContext">XAML schema context for XAML readers or XAML writers.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlType" /> class based on the XAML namespace and a string name for the type. This constructor is exclusively for analysis and XAML-node recording of type usages that are known to not have backing in the supporting type system and XAML schema context.</summary>

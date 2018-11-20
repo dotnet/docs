@@ -48,7 +48,7 @@
         <Parameter Name="dependencyProperty" Type="System.Windows.DependencyProperty" />
       </Parameters>
       <Docs>
-        <param name="dependencyObject">The element that contains the <c>dependencyProperty</c> to report information for.</param>
+        <param name="dependencyObject">The element that contains the <paramref name="dependencyProperty" /> to report information for.</param>
         <param name="dependencyProperty">The identifier for the dependency property to report information for.</param>
         <summary>Returns a structure that reports various metadata and property system characteristics of a specified dependency property on a particular <see cref="T:System.Windows.DependencyObject" />.</summary>
         <returns>A <see cref="T:System.Windows.ValueSource" /> structure that reports the specific information.</returns>

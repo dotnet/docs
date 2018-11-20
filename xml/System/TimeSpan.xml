@@ -2988,7 +2988,7 @@ When a time interval component in the string to be parsed contains more than sev
       </Parameters>
       <Docs>
         <param name="input">A string that specifies the time interval to convert.</param>
-        <param name="format">A standard or custom format string that defines the required format of <c>input</c>.</param>
+        <param name="format">A standard or custom format string that defines the required format of <paramref name="input" />.</param>
         <param name="formatProvider">An object that provides culture-specific formatting information.</param>
         <summary>Converts the string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent by using the specified format and culture-specific format information. The format of the string representation must match the specified format exactly.</summary>
         <returns>A time interval that corresponds to <paramref name="input" />, as specified by <paramref name="format" /> and <paramref name="formatProvider" />.</returns>
@@ -3073,7 +3073,7 @@ When a time interval component in the string to be parsed contains more than sev
       </Parameters>
       <Docs>
         <param name="input">A string that specifies the time interval to convert.</param>
-        <param name="formats">A array of standard or custom format strings that defines the required format of <c>input</c>.</param>
+        <param name="formats">A array of standard or custom format strings that defines the required format of <paramref name="input" />.</param>
         <param name="formatProvider">An object that provides culture-specific formatting information.</param>
         <summary>Converts the string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent by using the specified array of format strings and culture-specific format information. The format of the string representation must match one of the specified formats exactly.</summary>
         <returns>A time interval that corresponds to <paramref name="input" />, as specified by <paramref name="formats" /> and <paramref name="formatProvider" />.</returns>
@@ -3234,9 +3234,9 @@ When a time interval component in the string to be parsed contains more than sev
       </Parameters>
       <Docs>
         <param name="input">A string that specifies the time interval to convert.</param>
-        <param name="format">A standard or custom format string that defines the required format of <c>input</c>.</param>
+        <param name="format">A standard or custom format string that defines the required format of <paramref name="input" />.</param>
         <param name="formatProvider">An object that provides culture-specific formatting information.</param>
-        <param name="styles">A bitwise combination of enumeration values that defines the style elements that may be present in <c>input</c>.</param>
+        <param name="styles">A bitwise combination of enumeration values that defines the style elements that may be present in <paramref name="input" />.</param>
         <summary>Converts the string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent by using the specified format, culture-specific format information, and styles. The format of the string representation must match the specified format exactly.</summary>
         <returns>A time interval that corresponds to <paramref name="input" />, as specified by <paramref name="format" />, <paramref name="formatProvider" />, and <paramref name="styles" />.</returns>
         <remarks>
@@ -3325,7 +3325,7 @@ When a time interval component in the string to be parsed contains more than sev
       </Parameters>
       <Docs>
         <param name="input">A string that specifies the time interval to convert.</param>
-        <param name="formats">A array of standard or custom format strings that define the required format of <c>input</c>.</param>
+        <param name="formats">A array of standard or custom format strings that define the required format of <paramref name="input" />.</param>
         <param name="formatProvider">An object that provides culture-specific formatting information.</param>
         <param name="styles">A bitwise combination of enumeration values that defines the style elements that may be present in input.</param>
         <summary>Converts the string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent by using the specified formats, culture-specific format information, and styles. The format of the string representation must match one of the specified formats exactly.</summary>
@@ -4542,7 +4542,7 @@ When a time interval component in the string to be parsed contains more than sev
       </Parameters>
       <Docs>
         <param name="s">A string that specifies the time interval to convert.</param>
-        <param name="result">When this method returns, contains an object that represents the time interval specified by <c>s</c>, or <see cref="F:System.TimeSpan.Zero" /> if the conversion failed. This parameter is passed uninitialized.</param>
+        <param name="result">When this method returns, contains an object that represents the time interval specified by <paramref name="s" />, or <see cref="F:System.TimeSpan.Zero" /> if the conversion failed. This parameter is passed uninitialized.</param>
         <summary>Converts the string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent and returns a value that indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if <paramref name="s" /> was converted successfully; otherwise, <see langword="false" />. This operation returns <see langword="false" /> if the <paramref name="s" /> parameter is <see langword="null" /> or <see cref="F:System.String.Empty" />, has an invalid format, represents a time interval that is less than <see cref="F:System.TimeSpan.MinValue" /> or greater than <see cref="F:System.TimeSpan.MaxValue" />, or has at least one days, hours, minutes, or seconds component outside its valid range.</returns>
@@ -4663,7 +4663,7 @@ In some cases, when a time interval component in the string to be parsed contain
       <Docs>
         <param name="input">A string that specifies the time interval to convert.</param>
         <param name="formatProvider">An object that supplies culture-specific formatting information.</param>
-        <param name="result">When this method returns, contains an object that represents the time interval specified by <c>input</c>, or <see cref="F:System.TimeSpan.Zero" /> if the conversion failed. This parameter is passed uninitialized.</param>
+        <param name="result">When this method returns, contains an object that represents the time interval specified by <paramref name="input" />, or <see cref="F:System.TimeSpan.Zero" /> if the conversion failed. This parameter is passed uninitialized.</param>
         <summary>Converts the string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent by using the specified culture-specific formatting information, and returns a value that indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if <paramref name="input" /> was converted successfully; otherwise, <see langword="false" />. This operation returns <see langword="false" /> if the <paramref name="input" /> parameter is <see langword="null" /> or <see cref="F:System.String.Empty" />, has an invalid format, represents a time interval that is less than <see cref="F:System.TimeSpan.MinValue" /> or greater than <see cref="F:System.TimeSpan.MaxValue" />, or has at least one days, hours, minutes, or seconds component outside its valid range.</returns>
@@ -4848,9 +4848,9 @@ In some cases, when a time interval component in the string to be parsed contain
       </Parameters>
       <Docs>
         <param name="input">A string that specifies the time interval to convert.</param>
-        <param name="format">A standard or custom format string that defines the required format of <c>input</c>.</param>
+        <param name="format">A standard or custom format string that defines the required format of <paramref name="input" />.</param>
         <param name="formatProvider">An object that supplies culture-specific formatting information.</param>
-        <param name="result">When this method returns, contains an object that represents the time interval specified by <c>input</c>, or <see cref="F:System.TimeSpan.Zero" /> if the conversion failed. This parameter is passed uninitialized.</param>
+        <param name="result">When this method returns, contains an object that represents the time interval specified by <paramref name="input" />, or <see cref="F:System.TimeSpan.Zero" /> if the conversion failed. This parameter is passed uninitialized.</param>
         <summary>Converts the string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent by using the specified format and culture-specific format information, and returns a value that indicates whether the conversion succeeded. The format of the string representation must match the specified format exactly.</summary>
         <returns>
           <see langword="true" /> if <paramref name="input" /> was converted successfully; otherwise, <see langword="false" />.</returns>
@@ -4926,9 +4926,9 @@ In some cases, when a time interval component in the string to be parsed contain
       </Parameters>
       <Docs>
         <param name="input">A string that specifies the time interval to convert.</param>
-        <param name="formats">A array of standard or custom format strings that define the acceptable formats of <c>input</c>.</param>
+        <param name="formats">A array of standard or custom format strings that define the acceptable formats of <paramref name="input" />.</param>
         <param name="formatProvider">An object that provides culture-specific formatting information.</param>
-        <param name="result">When this method returns, contains an object that represents the time interval specified by <c>input</c>, or <see cref="F:System.TimeSpan.Zero" /> if the conversion failed. This parameter is passed uninitialized.</param>
+        <param name="result">When this method returns, contains an object that represents the time interval specified by <paramref name="input" />, or <see cref="F:System.TimeSpan.Zero" /> if the conversion failed. This parameter is passed uninitialized.</param>
         <summary>Converts the specified string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent by using the specified formats and culture-specific format information, and returns a value that indicates whether the conversion succeeded. The format of the string representation must match one of the specified formats exactly.</summary>
         <returns>
           <see langword="true" /> if <paramref name="input" /> was converted successfully; otherwise, <see langword="false" />.</returns>
@@ -5085,10 +5085,10 @@ In some cases, when a time interval component in the string to be parsed contain
       </Parameters>
       <Docs>
         <param name="input">A string that specifies the time interval to convert.</param>
-        <param name="format">A standard or custom format string that defines the required format of <c>input</c>.</param>
+        <param name="format">A standard or custom format string that defines the required format of <paramref name="input" />.</param>
         <param name="formatProvider">An object that provides culture-specific formatting information.</param>
-        <param name="styles">One or more enumeration values that indicate the style of <c>input</c>.</param>
-        <param name="result">When this method returns, contains an object that represents the time interval specified by <c>input</c>, or <see cref="F:System.TimeSpan.Zero" /> if the conversion failed. This parameter is passed uninitialized.</param>
+        <param name="styles">One or more enumeration values that indicate the style of <paramref name="input" />.</param>
+        <param name="result">When this method returns, contains an object that represents the time interval specified by <paramref name="input" />, or <see cref="F:System.TimeSpan.Zero" /> if the conversion failed. This parameter is passed uninitialized.</param>
         <summary>Converts the string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent by using the specified format, culture-specific format information, and styles, and returns a value that indicates whether the conversion succeeded. The format of the string representation must match the specified format exactly.</summary>
         <returns>
           <see langword="true" /> if <paramref name="input" /> was converted successfully; otherwise, <see langword="false" />.</returns>
@@ -5164,10 +5164,10 @@ In some cases, when a time interval component in the string to be parsed contain
       </Parameters>
       <Docs>
         <param name="input">A string that specifies the time interval to convert.</param>
-        <param name="formats">A array of standard or custom format strings that define the acceptable formats of <c>input</c>.</param>
+        <param name="formats">A array of standard or custom format strings that define the acceptable formats of <paramref name="input" />.</param>
         <param name="formatProvider">An object that supplies culture-specific formatting information.</param>
-        <param name="styles">One or more enumeration values that indicate the style of <c>input</c>.</param>
-        <param name="result">When this method returns, contains an object that represents the time interval specified by <c>input</c>, or <see cref="F:System.TimeSpan.Zero" /> if the conversion failed. This parameter is passed uninitialized.</param>
+        <param name="styles">One or more enumeration values that indicate the style of <paramref name="input" />.</param>
+        <param name="result">When this method returns, contains an object that represents the time interval specified by <paramref name="input" />, or <see cref="F:System.TimeSpan.Zero" /> if the conversion failed. This parameter is passed uninitialized.</param>
         <summary>Converts the specified string representation of a time interval to its <see cref="T:System.TimeSpan" /> equivalent by using the specified formats, culture-specific format information, and styles, and returns a value that indicates whether the conversion succeeded. The format of the string representation must match one of the specified formats exactly.</summary>
         <returns>
           <see langword="true" /> if <paramref name="input" /> was converted successfully; otherwise, <see langword="false" />.</returns>

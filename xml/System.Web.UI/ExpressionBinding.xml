@@ -45,8 +45,8 @@
         <Parameter Name="expression" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">A string indicating the name of the property of the object to which the <c>expression</c> parameter is applied.</param>
-        <param name="propertyType">A <see cref="T:System.Type" /> indicating the type of the property of the object to which the <c>expression</c> parameter is applied.</param>
+        <param name="propertyName">A string indicating the name of the property of the object to which the <paramref name="expression" /> parameter is applied.</param>
+        <param name="propertyType">A <see cref="T:System.Type" /> indicating the type of the property of the object to which the <paramref name="expression" /> parameter is applied.</param>
         <param name="expressionPrefix">A string representing the expression's prefix value.</param>
         <param name="expression">A string representing the value of the expression in its declarative syntax.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ExpressionBinding" /> class.</summary>

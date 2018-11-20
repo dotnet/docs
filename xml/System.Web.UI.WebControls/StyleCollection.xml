@@ -141,7 +141,7 @@
       </Parameters>
       <Docs>
         <param name="styleArray">The <see cref="T:System.Array" /> that is the destination of the copied styles. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>styleArray</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="styleArray" /> at which copying begins.</param>
         <summary>Copies the elements of the <see cref="T:System.Web.UI.WebControls.StyleCollection" /> to a one-dimensional <see cref="T:System.Web.UI.WebControls.Style" /> array, starting at the specified index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -174,7 +174,7 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index, from the ordered list of types returned by <see cref="M:System.Web.UI.WebControls.StyleCollection.GetKnownTypes" />, of the type of the <see cref="T:System.Web.UI.IStateManager" /> object to create. Because the <see cref="M:System.Web.UI.WebControls.StyleCollection.GetKnownTypes" /> method of <see cref="T:System.Web.UI.WebControls.StyleCollection" /> returns a list with only one type, the input <c>index</c> is ignored.</param>
+        <param name="index">The index, from the ordered list of types returned by <see cref="M:System.Web.UI.WebControls.StyleCollection.GetKnownTypes" />, of the type of the <see cref="T:System.Web.UI.IStateManager" /> object to create. Because the <see cref="M:System.Web.UI.WebControls.StyleCollection.GetKnownTypes" /> method of <see cref="T:System.Web.UI.WebControls.StyleCollection" /> returns a list with only one type, the input <paramref name="index" /> is ignored.</param>
         <summary>Creates an instance of the <see cref="T:System.Web.UI.WebControls.Style" /> class, based on the single element collection returned by the <see cref="M:System.Web.UI.WebControls.StyleCollection.GetKnownTypes" /> method.</summary>
         <returns>An instance of the <see cref="T:System.Web.UI.WebControls.Style" /> class.</returns>
         <remarks>To be added.</remarks>

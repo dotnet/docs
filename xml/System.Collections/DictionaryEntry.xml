@@ -106,7 +106,7 @@ The <xref:System.Collections.IDictionaryEnumerator.Entry%2A?displayProperty=name
       </Parameters>
       <Docs>
         <param name="key">The object defined in each key/value pair.</param>
-        <param name="value">The definition associated with <c>key</c>.</param>
+        <param name="value">The definition associated with <paramref name="key" />.</param>
         <summary>Initializes an instance of the <see cref="T:System.Collections.DictionaryEntry" /> type with the specified key and value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -397,7 +397,7 @@
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> to create.</param>
-        <param name="arguments">An <see cref="T:System.Collections.ICollection" /> that contains the arguments for <c>type</c>.</param>
+        <param name="arguments">An <see cref="T:System.Collections.ICollection" /> that contains the arguments for <paramref name="type" />.</param>
         <param name="name">The name of the object. This name can be used to access the object later using <see cref="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#GetInstance(System.String)" />. If a null reference (<see langword="Nothing" /> in Visual Basic) is passed, the object is still created but cannot be accessed by name.</param>
         <param name="addToContainer">
           <see langword="true" /> to add the object to the design container; otherwise, <see langword="false" />.</param>

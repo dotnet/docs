@@ -947,7 +947,7 @@ SVC_UPDATE.EXE
       </Parameters>
       <Docs>
         <param name="source">The source by which the application is registered on the specified computer.</param>
-        <param name="logName">The name of the log the source's entries are written to. Possible values include Application, System, or a custom event log. If you do not specify a value, <c>logName</c> defaults to Application.</param>
+        <param name="logName">The name of the log the source's entries are written to. Possible values include Application, System, or a custom event log. If you do not specify a value, <paramref name="logName" /> defaults to Application.</param>
         <param name="machineName">The name of the computer to register this event source with, or "." for the local computer.</param>
         <summary>Establishes the specified source name as a valid event source for writing entries to a log on the specified computer. This method can also be used to create a new custom log on the specified computer.</summary>
         <remarks>
@@ -2398,7 +2398,7 @@ SVC_UPDATE.EXE
       </Parameters>
       <Docs>
         <param name="action">The overflow behavior for writing new entries to the event log.</param>
-        <param name="retentionDays">The minimum number of days each event log entry is retained. This parameter is used only if <c>action</c> is set to <see cref="F:System.Diagnostics.OverflowAction.OverwriteOlder" />.</param>
+        <param name="retentionDays">The minimum number of days each event log entry is retained. This parameter is used only if <paramref name="action" /> is set to <see cref="F:System.Diagnostics.OverflowAction.OverwriteOlder" />.</param>
         <summary>Changes the configured behavior for writing new entries when the event log reaches its maximum file size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -114,7 +114,7 @@
       </Parameters>
       <Docs>
         <param name="wsdlDocuments">The <see cref="T:System.Web.Services.Description.ServiceDescriptionCollection" /> that describes the services.</param>
-        <param name="xmlSchemas">The <see cref="T:System.Xml.Schema.XmlSchemaSet" /> that contains the schema for the <c>wsdlDocuments</c>.</param>
+        <param name="xmlSchemas">The <see cref="T:System.Xml.Schema.XmlSchemaSet" /> that contains the schema for the <paramref name="wsdlDocuments" />.</param>
         <param name="policy">The <see cref="T:System.Collections.Generic.ICollection`1" /> of type <see cref="T:System.Xml.XmlElement" /> that contains the policy elements.</param>
         <summary>Called prior to importing the metadata documents associated with the encoding.</summary>
         <remarks>

@@ -140,7 +140,7 @@
       </Parameters>
       <Docs>
         <param name="binaryForm">The byte array that represents the SID.</param>
-        <param name="offset">The byte offset to use as the starting index in <c>binaryForm</c>.</param>
+        <param name="offset">The byte offset to use as the starting index in <paramref name="binaryForm" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.SecurityIdentifier" /> class by using a specified binary representation of a security identifier (SID).</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -431,7 +431,7 @@
       </Parameters>
       <Docs>
         <param name="binaryForm">The byte array to receive the copied SID.</param>
-        <param name="offset">The byte offset to use as the starting index in <c>binaryForm</c>.</param>
+        <param name="offset">The byte offset to use as the starting index in <paramref name="binaryForm" />.</param>
         <summary>Copies the binary representation of the specified security identifier (SID) represented by the <see cref="T:System.Security.Principal.SecurityIdentifier" /> class to a byte array.</summary>
         <remarks>To be added.</remarks>
       </Docs>

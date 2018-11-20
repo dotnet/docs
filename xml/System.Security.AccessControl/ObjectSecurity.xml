@@ -184,7 +184,7 @@
         <param name="accessMask">The access mask of this rule. The access mask is a 32-bit collection of anonymous bits, the meaning of which is defined by the individual integrators.</param>
         <param name="isInherited">true if this rule is inherited from a parent container.</param>
         <param name="inheritanceFlags">Specifies the inheritance properties of the access rule.</param>
-        <param name="propagationFlags">Specifies whether inherited access rules are automatically propagated. The propagation flags are ignored if <c>inheritanceFlags</c> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
+        <param name="propagationFlags">Specifies whether inherited access rules are automatically propagated. The propagation flags are ignored if <paramref name="inheritanceFlags" /> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
         <param name="type">Specifies the valid access control type.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.AccessRule" /> class with the specified values.</summary>
         <returns>The <see cref="T:System.Security.AccessControl.AccessRule" /> object that this method creates.</returns>
@@ -406,7 +406,7 @@
         <param name="isInherited">
           <see langword="true" /> if this rule is inherited from a parent container.</param>
         <param name="inheritanceFlags">Specifies the inheritance properties of the audit rule.</param>
-        <param name="propagationFlags">Specifies whether inherited audit rules are automatically propagated. The propagation flags are ignored if <c>inheritanceFlags</c> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
+        <param name="propagationFlags">Specifies whether inherited audit rules are automatically propagated. The propagation flags are ignored if <paramref name="inheritanceFlags" /> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
         <param name="flags">Specifies the conditions for which the rule is audited.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.AuditRule" /> class with the specified values.</summary>
         <returns>The <see cref="T:System.Security.AccessControl.AuditRule" /> object that this method creates.</returns>
@@ -1244,7 +1244,7 @@
         <param name="isProtected">
           <see langword="true" /> to protect the access rules associated with this <see cref="T:System.Security.AccessControl.ObjectSecurity" /> object from inheritance; <see langword="false" /> to allow inheritance.</param>
         <param name="preserveInheritance">
-          <see langword="true" /> to preserve inherited access rules; <see langword="false" /> to remove inherited access rules. This parameter is ignored if <c>isProtected</c> is <see langword="false" />.</param>
+          <see langword="true" /> to preserve inherited access rules; <see langword="false" /> to remove inherited access rules. This parameter is ignored if <paramref name="isProtected" /> is <see langword="false" />.</param>
         <summary>Sets or removes protection of the access rules associated with this <see cref="T:System.Security.AccessControl.ObjectSecurity" /> object. Protected access rules cannot be modified by parent objects through inheritance.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">This method attempts to remove inherited rules from a non-canonical Discretionary Access Control List (DACL).</exception>
@@ -1281,7 +1281,7 @@
         <param name="isProtected">
           <see langword="true" /> to protect the audit rules associated with this <see cref="T:System.Security.AccessControl.ObjectSecurity" /> object from inheritance; <see langword="false" /> to allow inheritance.</param>
         <param name="preserveInheritance">
-          <see langword="true" /> to preserve inherited audit rules; <see langword="false" /> to remove inherited audit rules. This parameter is ignored if <c>isProtected</c> is <see langword="false" />.</param>
+          <see langword="true" /> to preserve inherited audit rules; <see langword="false" /> to remove inherited audit rules. This parameter is ignored if <paramref name="isProtected" /> is <see langword="false" />.</param>
         <summary>Sets or removes protection of the audit rules associated with this <see cref="T:System.Security.AccessControl.ObjectSecurity" /> object. Protected audit rules cannot be modified by parent objects through inheritance.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">This method attempts to remove inherited rules from a non-canonical System Access Control List (SACL).</exception>

@@ -234,7 +234,7 @@
         <param name="geometry2">The second geometry to combine.</param>
         <param name="mode">One of the enumeration values that specifies how the geometries are combined.</param>
         <param name="transform">A transformation to apply to the combined geometry, or <see langword="null" />.</param>
-        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometries. Smaller values produce more accurate results but cause slower execution. If <c>tolerance</c> is less than .000001, .000001 is used instead.</param>
+        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometries. Smaller values produce more accurate results but cause slower execution. If <paramref name="tolerance" /> is less than .000001, .000001 is used instead.</param>
         <param name="type">One of the <see cref="T:System.Windows.Media.ToleranceType" /> values that specifies whether the tolerance factor is an absolute value or relative to the area of the geometry.</param>
         <summary>Combines the two geometries using the specified <see cref="T:System.Windows.Media.GeometryCombineMode" /> and tolerance factor, and applies the specified transform to the resulting geometry.</summary>
         <returns>The combined geometry.</returns>
@@ -385,7 +385,7 @@
       </Parameters>
       <Docs>
         <param name="geometry">The geometry to test for containment.</param>
-        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometries. Smaller values produce more accurate results but cause slower execution. If <c>tolerance</c> is less than .000001, .000001 is used instead.</param>
+        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometries. Smaller values produce more accurate results but cause slower execution. If <paramref name="tolerance" /> is less than .000001, .000001 is used instead.</param>
         <param name="type">One of the <see cref="T:System.Windows.Media.ToleranceType" /> values that specifies whether the tolerance factor is an absolute value or relative to the area of the geometry.</param>
         <summary>Indicates whether the current geometry contains the specified <see cref="T:System.Windows.Media.Geometry" />, given the specified margin of error.</summary>
         <returns>
@@ -428,7 +428,7 @@
       </Parameters>
       <Docs>
         <param name="hitPoint">The point to test for containment.</param>
-        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution. If <c>tolerance</c> is less than .000001, .000001 is used instead.</param>
+        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution. If <paramref name="tolerance" /> is less than .000001, .000001 is used instead.</param>
         <param name="type">One of the <see cref="T:System.Windows.Media.ToleranceType" /> values that specifies whether the tolerance factor is an absolute value or relative to the area of the geometry.</param>
         <summary>Indicates whether the geometry contains the specified <see cref="T:System.Windows.Point" />, given the specified margin of error.</summary>
         <returns>
@@ -508,7 +508,7 @@
       </Parameters>
       <Docs>
         <param name="geometry">The geometry to test for containment.</param>
-        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometries. Smaller values produce more accurate results but cause slower execution. If <c>tolerance</c> is less than .000001, .000001 is used instead.</param>
+        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometries. Smaller values produce more accurate results but cause slower execution. If <paramref name="tolerance" /> is less than .000001, .000001 is used instead.</param>
         <param name="type">One of the <see cref="T:System.Windows.Media.ToleranceType" /> values that specifies whether the tolerance factor is an absolute value or relative to the area of the geometry.</param>
         <summary>Returns a value that describes the intersection between the current geometry and the specified geometry, given the specified margin of error.</summary>
         <returns>One of the enumeration values.</returns>
@@ -587,7 +587,7 @@
         <Parameter Name="type" Type="System.Windows.Media.ToleranceType" />
       </Parameters>
       <Docs>
-        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution. If <c>tolerance</c> is less than .000001, .000001 is used instead.</param>
+        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution. If <paramref name="tolerance" /> is less than .000001, .000001 is used instead.</param>
         <param name="type">One of the <see cref="T:System.Windows.Media.ToleranceType" /> values that specifies whether the tolerance factor is an absolute value or relative to the area of the geometry.</param>
         <summary>Gets the area, within the specified tolerance, of the filled region of the <see cref="T:System.Windows.Media.Geometry" /> object.</summary>
         <returns>The area of the filled region of the geometry.</returns>
@@ -668,7 +668,7 @@
         <Parameter Name="type" Type="System.Windows.Media.ToleranceType" />
       </Parameters>
       <Docs>
-        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution. If <c>tolerance</c> is less than .000001, .000001 is used instead.</param>
+        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution. If <paramref name="tolerance" /> is less than .000001, .000001 is used instead.</param>
         <param name="type">One of the <see cref="T:System.Windows.Media.ToleranceType" /> values that specifies whether the tolerance factor is an absolute value or relative to the area of the geometry.</param>
         <summary>Gets a <see cref="T:System.Windows.Media.PathGeometry" />, within the specified tolerance, that is a polygonal approximation of the <see cref="T:System.Windows.Media.Geometry" /> object.</summary>
         <returns>The polygonal approximation of the <see cref="T:System.Windows.Media.Geometry" />.</returns>
@@ -749,7 +749,7 @@
         <Parameter Name="type" Type="System.Windows.Media.ToleranceType" />
       </Parameters>
       <Docs>
-        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution. If <c>tolerance</c> is less than .000001, .000001 is used instead.</param>
+        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution. If <paramref name="tolerance" /> is less than .000001, .000001 is used instead.</param>
         <param name="type">One of the <see cref="T:System.Windows.Media.ToleranceType" /> values that specifies whether the tolerance factor is an absolute value or relative to the area of the geometry.</param>
         <summary>Gets a <see cref="T:System.Windows.Media.PathGeometry" />, within the specified tolerance, that is a simplified outline of the filled region of the <see cref="T:System.Windows.Media.Geometry" />.</summary>
         <returns>A simplified outline of the filled region of the <see cref="T:System.Windows.Media.Geometry" />.</returns>
@@ -828,7 +828,7 @@
       </Parameters>
       <Docs>
         <param name="pen">An object that describes the area of the geometry's stroke.</param>
-        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution. If <c>tolerance</c> is less than .000001, .000001 is used instead.</param>
+        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution. If <paramref name="tolerance" /> is less than .000001, .000001 is used instead.</param>
         <param name="type">One of the <see cref="T:System.Windows.Media.ToleranceType" /> values that specifies whether the tolerance factor is an absolute value or relative to the area of the geometry.</param>
         <summary>Returns an axis-aligned rectangle that is exactly large enough to contain the geometry after it has been outlined with the specified <see cref="T:System.Windows.Media.Pen" />, given the specified tolerance factor.</summary>
         <returns>An axis aligned rectangle that is exactly large enough to contain the outlined geometry.</returns>
@@ -910,7 +910,7 @@
       </Parameters>
       <Docs>
         <param name="pen">The object used to define the area of the geometry's stroke.</param>
-        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution. If <c>tolerance</c> is less than .000001, .000001 is used instead.</param>
+        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution. If <paramref name="tolerance" /> is less than .000001, .000001 is used instead.</param>
         <param name="type">One of the <see cref="T:System.Windows.Media.ToleranceType" /> values that specifies whether the tolerance factor is an absolute value or relative to the area of the geometry.</param>
         <summary>Gets a <see cref="T:System.Windows.Media.PathGeometry" /> that is the shape defined by the stroke on the <see cref="T:System.Windows.Media.Geometry" /> produced by the specified <see cref="T:System.Windows.Media.Pen" />, given the specified tolerance factor.</summary>
         <returns>The geometry, widened by <paramref name="pen" />.</returns>
@@ -1129,7 +1129,7 @@
       <Docs>
         <param name="pen">An object that defines the stroke of a geometry.</param>
         <param name="hitPoint">The point to test for containment.</param>
-        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution. If <c>tolerance</c> is less than .000001, .000001 is used instead.</param>
+        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution. If <paramref name="tolerance" /> is less than .000001, .000001 is used instead.</param>
         <param name="type">One of the <see cref="T:System.Windows.Media.ToleranceType" /> values that specifies whether the tolerance factor is an absolute value or relative to the area of the geometry.</param>
         <summary>Determines whether the specified <see cref="T:System.Windows.Point" /> is contained in the stroke produced by applying the specified <see cref="T:System.Windows.Media.Pen" /> to the geometry, given the specified margin of error.</summary>
         <returns>
@@ -1213,7 +1213,7 @@
       <Docs>
         <param name="pen">An object that determines the area of the current geometry's stroke.</param>
         <param name="geometry">The geometry to test for containment.</param>
-        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometries. Smaller values produce more accurate results but cause slower execution. If <c>tolerance</c> is less than .000001, .000001 is used instead.</param>
+        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometries. Smaller values produce more accurate results but cause slower execution. If <paramref name="tolerance" /> is less than .000001, .000001 is used instead.</param>
         <param name="type">One of the <see cref="T:System.Windows.Media.ToleranceType" /> values that specifies whether the tolerance factor is an absolute value or relative to the area of the geometry.</param>
         <summary>Gets a value that describes the intersection between the specified <see cref="T:System.Windows.Media.Geometry" /> and the stroke created by applying the specified <see cref="T:System.Windows.Media.Pen" /> to the current geometry, given the specified margin of error.</summary>
         <returns>One of the enumeration values.</returns>

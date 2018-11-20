@@ -1105,7 +1105,7 @@ d.</elem>
       </Parameters>
       <Docs>
         <param name="newChild">The <see langword="XmlNode" /> to insert.</param>
-        <param name="refChild">The <see langword="XmlNode" /> that is the reference node. The <c>newChild</c> is placed before this node.</param>
+        <param name="refChild">The <see langword="XmlNode" /> that is the reference node. The <paramref name="newChild" /> is placed before this node.</param>
         <summary>Inserts the specified node immediately before the specified reference node.</summary>
         <returns>The node being inserted.</returns>
         <remarks>

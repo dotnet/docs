@@ -285,7 +285,7 @@
       </Parameters>
       <Docs>
         <param name="family">The <see cref="T:System.Drawing.FontFamily" /> of the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size of the new font in the units specified by the <c>unit</c> parameter.</param>
+        <param name="emSize">The em-size of the new font in the units specified by the <paramref name="unit" /> parameter.</param>
         <param name="unit">The <see cref="T:System.Drawing.GraphicsUnit" /> of the new font.</param>
         <summary>Initializes a new <see cref="T:System.Drawing.Font" /> using a specified size and unit. Sets the style to <see cref="F:System.Drawing.FontStyle.Regular" />.</summary>
         <remarks>
@@ -367,7 +367,7 @@
       </Parameters>
       <Docs>
         <param name="familyName">A string representation of the <see cref="T:System.Drawing.FontFamily" /> for the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size of the new font in the units specified by the <c>unit</c> parameter.</param>
+        <param name="emSize">The em-size of the new font in the units specified by the <paramref name="unit" /> parameter.</param>
         <param name="unit">The <see cref="T:System.Drawing.GraphicsUnit" /> of the new font.</param>
         <summary>Initializes a new <see cref="T:System.Drawing.Font" /> using a specified size and unit. The style is set to <see cref="F:System.Drawing.FontStyle.Regular" />.</summary>
         <remarks>
@@ -408,7 +408,7 @@
       </Parameters>
       <Docs>
         <param name="family">The <see cref="T:System.Drawing.FontFamily" /> of the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size of the new font in the units specified by the <c>unit</c> parameter.</param>
+        <param name="emSize">The em-size of the new font in the units specified by the <paramref name="unit" /> parameter.</param>
         <param name="style">The <see cref="T:System.Drawing.FontStyle" /> of the new font.</param>
         <param name="unit">The <see cref="T:System.Drawing.GraphicsUnit" /> of the new font.</param>
         <summary>Initializes a new <see cref="T:System.Drawing.Font" /> using a specified size, style, and unit.</summary>
@@ -445,7 +445,7 @@
       </Parameters>
       <Docs>
         <param name="familyName">A string representation of the <see cref="T:System.Drawing.FontFamily" /> for the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size of the new font in the units specified by the <c>unit</c> parameter.</param>
+        <param name="emSize">The em-size of the new font in the units specified by the <paramref name="unit" /> parameter.</param>
         <param name="style">The <see cref="T:System.Drawing.FontStyle" /> of the new font.</param>
         <param name="unit">The <see cref="T:System.Drawing.GraphicsUnit" /> of the new font.</param>
         <summary>Initializes a new <see cref="T:System.Drawing.Font" /> using a specified size, style, and unit.</summary>
@@ -497,7 +497,7 @@
       </Parameters>
       <Docs>
         <param name="family">The <see cref="T:System.Drawing.FontFamily" /> of the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size of the new font in the units specified by the <c>unit</c> parameter.</param>
+        <param name="emSize">The em-size of the new font in the units specified by the <paramref name="unit" /> parameter.</param>
         <param name="style">The <see cref="T:System.Drawing.FontStyle" /> of the new font.</param>
         <param name="unit">The <see cref="T:System.Drawing.GraphicsUnit" /> of the new font.</param>
         <param name="gdiCharSet">A <see cref="T:System.Byte" /> that specifies a  
@@ -545,7 +545,7 @@
       </Parameters>
       <Docs>
         <param name="familyName">A string representation of the <see cref="T:System.Drawing.FontFamily" /> for the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size of the new font in the units specified by the <c>unit</c> parameter.</param>
+        <param name="emSize">The em-size of the new font in the units specified by the <paramref name="unit" /> parameter.</param>
         <param name="style">The <see cref="T:System.Drawing.FontStyle" /> of the new font.</param>
         <param name="unit">The <see cref="T:System.Drawing.GraphicsUnit" /> of the new font.</param>
         <param name="gdiCharSet">A <see cref="T:System.Byte" /> that specifies a [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] character set to use for this font.</param>
@@ -591,7 +591,7 @@
       </Parameters>
       <Docs>
         <param name="family">The <see cref="T:System.Drawing.FontFamily" /> of the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size of the new font in the units specified by the <c>unit</c> parameter.</param>
+        <param name="emSize">The em-size of the new font in the units specified by the <paramref name="unit" /> parameter.</param>
         <param name="style">The <see cref="T:System.Drawing.FontStyle" /> of the new font.</param>
         <param name="unit">The <see cref="T:System.Drawing.GraphicsUnit" /> of the new font.</param>
         <param name="gdiCharSet">A <see cref="T:System.Byte" /> that specifies a  
@@ -641,7 +641,7 @@
       </Parameters>
       <Docs>
         <param name="familyName">A string representation of the <see cref="T:System.Drawing.FontFamily" /> for the new <see cref="T:System.Drawing.Font" />.</param>
-        <param name="emSize">The em-size of the new font in the units specified by the <c>unit</c> parameter.</param>
+        <param name="emSize">The em-size of the new font in the units specified by the <paramref name="unit" /> parameter.</param>
         <param name="style">The <see cref="T:System.Drawing.FontStyle" /> of the new font.</param>
         <param name="unit">The <see cref="T:System.Drawing.GraphicsUnit" /> of the new font.</param>
         <param name="gdiCharSet">A <see cref="T:System.Byte" /> that specifies a [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] character set to use for this font.</param>
@@ -1069,7 +1069,7 @@
       </Parameters>
       <Docs>
         <param name="lf">An <see cref="T:System.Object" /> that represents the [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] <see langword="LOGFONT" /> structure from which to create the <see cref="T:System.Drawing.Font" />.</param>
-        <param name="hdc">A handle to a device context that contains additional information about the <c>lf</c> structure.</param>
+        <param name="hdc">A handle to a device context that contains additional information about the <paramref name="lf" /> structure.</param>
         <summary>Creates a <see cref="T:System.Drawing.Font" /> from the specified GDI logical font (<c>LOGFONT</c>) structure.</summary>
         <returns>The <see cref="T:System.Drawing.Font" /> that this method creates.</returns>
         <remarks>

@@ -286,7 +286,7 @@
       </Parameters>
       <Docs>
         <param name="array">The <see cref="T:System.Array" /> that receives the session values.</param>
-        <param name="index">The zero-based index in <c>array</c> from which copying starts.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> from which copying starts.</param>
         <summary>Copies the collection of session-state values to a one-dimensional array, starting at the specified index in the array.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>

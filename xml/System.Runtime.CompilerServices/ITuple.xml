@@ -53,7 +53,7 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the specified <see langword="Tuple" /> element. <c>index</c> can range from 0 for <see langword="Item1" /> of the <see langword="Tuple" /> to one less than the number of elements in the <see langword="Tuple" />.</param>
+        <param name="index">The index of the specified <see langword="Tuple" /> element. <paramref name="index" /> can range from 0 for <see langword="Item1" /> of the <see langword="Tuple" /> to one less than the number of elements in the <see langword="Tuple" />.</param>
         <summary>Returns the value of the specified <see langword="Tuple" /> element.</summary>
         <value>The value of the specified <see langword="Tuple" /> element.</value>
         <remarks>To be added.</remarks>

@@ -144,7 +144,7 @@
       </Parameters>
       <Docs>
         <param name="response">A representation of the HTTP response sent by a Web service, containing the output message for an operation.</param>
-        <param name="responseStream">An output stream whose content is the body of the HTTP response represented by the <c>response</c> parameter.</param>
+        <param name="responseStream">An output stream whose content is the body of the HTTP response represented by the <paramref name="response" /> parameter.</param>
         <summary>Returns the input HTTP response stream.</summary>
         <returns>The input HTTP response stream.</returns>
         <remarks>

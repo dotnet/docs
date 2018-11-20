@@ -1013,7 +1013,7 @@ thisInstance And flag = flag
       </Parameters>
       <Docs>
         <param name="enumType">An enumeration type.</param>
-        <param name="value">The value or name of a constant in <c>enumType</c>.</param>
+        <param name="value">The value or name of a constant in <paramref name="enumType" />.</param>
         <summary>Returns a Boolean telling whether a given integral value, or its name as a string, exists in a specified enumeration.</summary>
         <returns>
           <see langword="true" /> if a constant in <paramref name="enumType" /> has a value equal to <paramref name="value" />; otherwise, <see langword="false" />.</returns>
@@ -3185,9 +3185,9 @@ thisInstance And flag = flag
         <Parameter Name="result" Type="TEnum" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="TEnum">The enumeration type to which to convert <c>value</c>.</typeparam>
+        <typeparam name="TEnum">The enumeration type to which to convert <paramref name="value" />.</typeparam>
         <param name="value">The case-sensitive string representation of the enumeration name or underlying value to convert.</param>
-        <param name="result">When this method returns, <c>result</c> contains an object of type <c>TEnum</c> whose value is represented by <c>value</c> if the parse operation succeeds. If the parse operation fails, <c>result</c> contains the default value of the underlying type of <c>TEnum</c>. Note that this value need not be a member of the <c>TEnum</c> enumeration. This parameter is passed uninitialized.</param>
+        <param name="result">When this method returns, <paramref name="result" /> contains an object of type <c>TEnum</c> whose value is represented by <paramref name="value" /> if the parse operation succeeds. If the parse operation fails, <paramref name="result" /> contains the default value of the underlying type of <c>TEnum</c>. Note that this value need not be a member of the <c>TEnum</c> enumeration. This parameter is passed uninitialized.</param>
         <summary>Converts the string representation of the name or numeric value of one or more enumerated constants to an equivalent enumerated object. The return value indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="value" /> parameter was converted successfully; otherwise, <see langword="false" />.</returns>
@@ -3265,11 +3265,11 @@ thisInstance And flag = flag
         <Parameter Name="result" Type="TEnum" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="TEnum">The enumeration type to which to convert <c>value</c>.</typeparam>
+        <typeparam name="TEnum">The enumeration type to which to convert <paramref name="value" />.</typeparam>
         <param name="value">The string representation of the enumeration name or underlying value to convert.</param>
         <param name="ignoreCase">
           <see langword="true" /> to ignore case; <see langword="false" /> to consider case.</param>
-        <param name="result">When this method returns, <c>result</c> contains an object of type <c>TEnum</c> whose value is represented by <c>value</c> if the parse operation succeeds. If the parse operation fails, <c>result</c> contains the default value of the underlying type of <c>TEnum</c>. Note that this value need not be a member of the <c>TEnum</c> enumeration. This parameter is passed uninitialized.</param>
+        <param name="result">When this method returns, <paramref name="result" /> contains an object of type <c>TEnum</c> whose value is represented by <paramref name="value" /> if the parse operation succeeds. If the parse operation fails, <paramref name="result" /> contains the default value of the underlying type of <c>TEnum</c>. Note that this value need not be a member of the <c>TEnum</c> enumeration. This parameter is passed uninitialized.</param>
         <summary>Converts the string representation of the name or numeric value of one or more enumerated constants to an equivalent enumerated object. A parameter specifies whether the operation is case-sensitive. The return value indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="value" /> parameter was converted successfully; otherwise, <see langword="false" />.</returns>

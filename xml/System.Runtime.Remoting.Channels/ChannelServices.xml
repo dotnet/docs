@@ -153,7 +153,7 @@
       <Docs>
         <param name="sinkStack">The stack of server channel sinks that the message already traversed.</param>
         <param name="msg">The message to dispatch.</param>
-        <param name="replyMsg">When this method returns, contains a <see cref="T:System.Runtime.Remoting.Messaging.IMessage" /> that holds the reply from the server to the message that is contained in the <c>msg</c> parameter. This parameter is passed uninitialized.</param>
+        <param name="replyMsg">When this method returns, contains a <see cref="T:System.Runtime.Remoting.Messaging.IMessage" /> that holds the reply from the server to the message that is contained in the <paramref name="msg" /> parameter. This parameter is passed uninitialized.</param>
         <summary>Dispatches incoming remote calls.</summary>
         <returns>A <see cref="T:System.Runtime.Remoting.Channels.ServerProcessing" /> that gives the status of the server message processing.</returns>
         <remarks>

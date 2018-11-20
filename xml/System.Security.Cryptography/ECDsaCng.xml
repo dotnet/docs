@@ -866,7 +866,7 @@
       <Docs>
         <param name="data">The message data to be signed.</param>
         <param name="offset">The location in the string at which to start signing.</param>
-        <param name="count">The length of the string, in characters, following <c>offset</c> that will be signed.</param>
+        <param name="count">The length of the string, in characters, following <paramref name="offset" /> that will be signed.</param>
         <summary>Generates a digital signature for the specified length of data, beginning at the specified offset.</summary>
         <returns>A digital signature for the specified length of data.</returns>
         <remarks>
@@ -1165,7 +1165,7 @@
       <Docs>
         <param name="data">The data that was signed.</param>
         <param name="offset">The location in the data at which the signed data begins.</param>
-        <param name="count">The length of the data, in characters, following <c>offset</c> that will be signed.</param>
+        <param name="count">The length of the data, in characters, following <paramref name="offset" /> that will be signed.</param>
         <param name="signature">The signature to be verified.</param>
         <summary>Verifies a signature for the specified length of data, beginning at the specified offset.</summary>
         <returns>

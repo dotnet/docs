@@ -429,7 +429,7 @@
       </Parameters>
       <Docs>
         <param name="count">The number of start-of-line markers to skip when determining the line for which to return the starting position. Negative values specify preceding lines, 0 specifies the current line, and positive values specify following lines.</param>
-        <param name="actualCount">When this method returns, contains the actual number of start-of-line markers that were skipped when determining the line for which to return the starting position.  This value may be less than <c>count</c> if the beginning or end of content is encountered before the specified number of lines are skipped. This parameter is passed uninitialized.</param>
+        <param name="actualCount">When this method returns, contains the actual number of start-of-line markers that were skipped when determining the line for which to return the starting position.  This value may be less than <paramref name="count" /> if the beginning or end of content is encountered before the specified number of lines are skipped. This parameter is passed uninitialized.</param>
         <summary>Returns a <see cref="T:System.Windows.Documents.TextPointer" /> to the beginning of a line that is specified relative to the current <see cref="T:System.Windows.Documents.TextPointer" />, and reports how many lines were skipped.</summary>
         <returns>A <see cref="T:System.Windows.Documents.TextPointer" /> pointing to the beginning of the specified line (with the <see cref="P:System.Windows.Documents.TextPointer.LogicalDirection" /> set to <see cref="F:System.Windows.Documents.LogicalDirection.Forward" />), or to the beginning of the line closest to the specified line if the specified line is out of range.</returns>
         <remarks>
@@ -811,7 +811,7 @@
       <Docs>
         <param name="direction">One of the <see cref="T:System.Windows.Documents.LogicalDirection" /> values that specifies the logical direction in which to find and copy any adjacent text.</param>
         <param name="textBuffer">A buffer into which any text is copied.</param>
-        <param name="startIndex">An index into <c>textBuffer</c> at which to begin writing copied text.</param>
+        <param name="startIndex">An index into <paramref name="textBuffer" /> at which to begin writing copied text.</param>
         <param name="count">The maximum number of characters to copy.</param>
         <summary>Copies the specified maximum number of characters from any adjacent text in the specified direction into a caller-supplied character array.</summary>
         <returns>The number of characters actually copied into <paramref name="textBuffer" />.</returns>

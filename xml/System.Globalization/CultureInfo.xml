@@ -460,7 +460,7 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">A predefined <see cref="T:System.Globalization.CultureInfo" /> name, <see cref="P:System.Globalization.CultureInfo.Name" /> of an existing <see cref="T:System.Globalization.CultureInfo" />, or Windows-only culture name. <c>name</c> is not case-sensitive.</param>
+        <param name="name">A predefined <see cref="T:System.Globalization.CultureInfo" /> name, <see cref="P:System.Globalization.CultureInfo.Name" /> of an existing <see cref="T:System.Globalization.CultureInfo" />, or Windows-only culture name. <paramref name="name" /> is not case-sensitive.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Globalization.CultureInfo" /> class based on the culture specified by name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -623,7 +623,7 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
         <Parameter Name="useUserOverride" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">A predefined <see cref="T:System.Globalization.CultureInfo" /> name, <see cref="P:System.Globalization.CultureInfo.Name" /> of an existing <see cref="T:System.Globalization.CultureInfo" />, or Windows-only culture name. <c>name</c> is not case-sensitive.</param>
+        <param name="name">A predefined <see cref="T:System.Globalization.CultureInfo" /> name, <see cref="P:System.Globalization.CultureInfo.Name" /> of an existing <see cref="T:System.Globalization.CultureInfo" />, or Windows-only culture name. <paramref name="name" /> is not case-sensitive.</param>
         <param name="useUserOverride">A Boolean that denotes whether to use the user-selected culture settings (<see langword="true" />) or the default culture settings (<see langword="false" />).</param>
         <summary>Initializes a new instance of the <see cref="T:System.Globalization.CultureInfo" /> class based on the culture specified by name and on the Boolean that specifies whether to use the user-selected culture settings from the system.</summary>
         <remarks>
@@ -939,7 +939,7 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">A predefined <see cref="T:System.Globalization.CultureInfo" /> name or the name of an existing <see cref="T:System.Globalization.CultureInfo" /> object. <c>name</c> is not case-sensitive.</param>
+        <param name="name">A predefined <see cref="T:System.Globalization.CultureInfo" /> name or the name of an existing <see cref="T:System.Globalization.CultureInfo" /> object. <paramref name="name" /> is not case-sensitive.</param>
         <summary>Creates a <see cref="T:System.Globalization.CultureInfo" /> that represents the specific culture that is associated with the specified name.</summary>
         <returns>A <see cref="T:System.Globalization.CultureInfo" /> object that represents:  
   
@@ -2053,7 +2053,7 @@ csc /resource:GreetingStrings.resources Example1.cs
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of a culture. <c>name</c> is not case-sensitive.</param>
+        <param name="name">The name of a culture. <paramref name="name" /> is not case-sensitive.</param>
         <summary>Retrieves a cached, read-only instance of a culture using the specified culture name.</summary>
         <returns>A read-only <see cref="T:System.Globalization.CultureInfo" /> object.</returns>
         <remarks>
@@ -2114,8 +2114,8 @@ csc /resource:GreetingStrings.resources Example1.cs
         <Parameter Name="altName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of a culture. <c>name</c> is not case-sensitive.</param>
-        <param name="altName">The name of a culture that supplies the <see cref="T:System.Globalization.TextInfo" /> and <see cref="T:System.Globalization.CompareInfo" /> objects used to initialize <c>name</c>. <c>altName</c> is not case-sensitive.</param>
+        <param name="name">The name of a culture. <paramref name="name" /> is not case-sensitive.</param>
+        <param name="altName">The name of a culture that supplies the <see cref="T:System.Globalization.TextInfo" /> and <see cref="T:System.Globalization.CompareInfo" /> objects used to initialize <paramref name="name" />. <paramref name="altName" /> is not case-sensitive.</param>
         <summary>Retrieves a cached, read-only instance of a culture. Parameters specify a culture that is initialized with the <see cref="T:System.Globalization.TextInfo" /> and <see cref="T:System.Globalization.CompareInfo" /> objects specified by another culture.</summary>
         <returns>A read-only <see cref="T:System.Globalization.CultureInfo" /> object.</returns>
         <remarks>

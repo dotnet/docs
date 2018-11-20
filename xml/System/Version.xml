@@ -1654,7 +1654,7 @@ major.minor[.build[.revision]]
         <Parameter Name="fieldCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="fieldCount">The number of components to return. The <c>fieldCount</c> ranges from 0 to 4.</param>
+        <param name="fieldCount">The number of components to return. The <paramref name="fieldCount" /> ranges from 0 to 4.</param>
         <summary>Converts the value of the current <see cref="T:System.Version" /> object to its equivalent <see cref="T:System.String" /> representation. A specified count indicates the number of components to return.</summary>
         <returns>The <see cref="T:System.String" /> representation of the values of the major, minor, build, and revision components of the current <see cref="T:System.Version" /> object, each separated by a period character ('.'). The <paramref name="fieldCount" /> parameter determines how many components are returned.  
   
@@ -1830,7 +1830,7 @@ major.minor[.build[.revision]]
       </Parameters>
       <Docs>
         <param name="input">A string that contains a version number to convert.</param>
-        <param name="result">When this method returns, contains the <see cref="T:System.Version" /> equivalent of the number that is contained in <c>input</c>, if the conversion succeeded. If <c>input</c> is <see langword="null" />, <see cref="F:System.String.Empty" />, or if the conversion fails, <c>result</c> is <see langword="null" /> when the method returns.</param>
+        <param name="result">When this method returns, contains the <see cref="T:System.Version" /> equivalent of the number that is contained in <paramref name="input" />, if the conversion succeeded. If <paramref name="input" /> is <see langword="null" />, <see cref="F:System.String.Empty" />, or if the conversion fails, <paramref name="result" /> is <see langword="null" /> when the method returns.</param>
         <summary>Tries to convert the string representation of a version number to an equivalent <see cref="T:System.Version" /> object, and returns a value that indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="input" /> parameter was converted successfully; otherwise, <see langword="false" />.</returns>

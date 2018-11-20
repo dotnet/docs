@@ -82,8 +82,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="nameFormat">A URI reference that represents the format that the <c>name</c> parameter is in. Sets the <see cref="P:System.IdentityModel.Tokens.SamlSubject.NameFormat" /> property.</param>
-        <param name="nameQualifier">The domain in which the <c>name</c> parameter resides. Sets the <see cref="P:System.IdentityModel.Tokens.SamlSubject.NameQualifier" /> property.</param>
+        <param name="nameFormat">A URI reference that represents the format that the <paramref name="name" /> parameter is in. Sets the <see cref="P:System.IdentityModel.Tokens.SamlSubject.NameFormat" /> property.</param>
+        <param name="nameQualifier">The domain in which the <paramref name="name" /> parameter resides. Sets the <see cref="P:System.IdentityModel.Tokens.SamlSubject.NameQualifier" /> property.</param>
         <param name="name">The subject name. Sets the <see cref="P:System.IdentityModel.Tokens.SamlSubject.Name" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSubject" /> class using the specified name, the domain in which the name resides, and the format the name is in.</summary>
         <remarks>
@@ -124,8 +124,8 @@
         <Parameter Name="securityKeyIdentifier" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" />
       </Parameters>
       <Docs>
-        <param name="nameFormat">A URI reference that represents the format that the <c>name</c> parameter is in. Sets the <see cref="P:System.IdentityModel.Tokens.SamlSubject.NameFormat" /> property.</param>
-        <param name="nameQualifier">The domain in which the <c>name</c> parameter resides. Sets the <see cref="P:System.IdentityModel.Tokens.SamlSubject.NameQualifier" /> property.</param>
+        <param name="nameFormat">A URI reference that represents the format that the <paramref name="name" /> parameter is in. Sets the <see cref="P:System.IdentityModel.Tokens.SamlSubject.NameFormat" /> property.</param>
+        <param name="nameQualifier">The domain in which the <paramref name="name" /> parameter resides. Sets the <see cref="P:System.IdentityModel.Tokens.SamlSubject.NameQualifier" /> property.</param>
         <param name="name">The subject name. Sets the <see cref="P:System.IdentityModel.Tokens.SamlSubject.Name" /> property.</param>
         <param name="confirmations">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of type <see cref="T:System.String" /> that contains URI references that identify the protocols to authenticate the subject. Sets the <see cref="P:System.IdentityModel.Tokens.SamlSubject.ConfirmationMethods" /> property.</param>
         <param name="confirmationData">Additional authentication information that can be used by authentication protocols. Sets the <see cref="P:System.IdentityModel.Tokens.SamlSubject.SubjectConfirmationData" /> property.</param>

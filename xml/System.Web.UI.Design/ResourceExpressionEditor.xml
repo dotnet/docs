@@ -119,7 +119,7 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="expression">A resource expression to evaluate. <c>expression</c> does not include the <see langword="Resources" /> expression prefix.</param>
+        <param name="expression">A resource expression to evaluate. <paramref name="expression" /> does not include the <see langword="Resources" /> expression prefix.</param>
         <param name="parseTimeData">An object supplying additional parse data, in the form of a <see cref="T:System.Web.Compilation.ResourceExpressionFields" /> value.</param>
         <param name="propertyType">The type of the control property.</param>
         <param name="serviceProvider">A service provider implementation supplied by the designer host, used to obtain additional design-time services.</param>

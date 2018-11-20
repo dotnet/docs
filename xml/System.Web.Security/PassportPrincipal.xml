@@ -55,7 +55,7 @@
       </Parameters>
       <Docs>
         <param name="identity">An implementation of the <see cref="T:System.Security.Principal.IIdentity" /> interface that represents the user.</param>
-        <param name="roles">An array of role names to which the user represented by the <c>identity</c> parameter belongs.</param>
+        <param name="roles">An array of role names to which the user represented by the <paramref name="identity" /> parameter belongs.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Security.PassportPrincipal" /> class from a <see cref="T:System.Web.Security.PassportIdentity" /> instance and an array of role names to which the user represented by that <see cref="T:System.Web.Security.PassportIdentity" /> belongs. This class is deprecated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

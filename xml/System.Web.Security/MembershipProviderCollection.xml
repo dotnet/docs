@@ -145,7 +145,7 @@
       </Parameters>
       <Docs>
         <param name="array">A one-dimensional array that is the destination of the elements copied from the <see cref="T:System.Web.Security.MembershipProviderCollection" />. The array must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the membership provider collection to a one-dimensional array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

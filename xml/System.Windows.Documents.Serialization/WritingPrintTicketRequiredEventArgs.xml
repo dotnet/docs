@@ -56,7 +56,7 @@
       </Parameters>
       <Docs>
         <param name="printTicketLevel">An enumeration value that specifies scope of the <see cref="P:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket" /> as a page, document, or sequence of documents.</param>
-        <param name="sequence">Based on the scope of defined by <c>printTicketLevel</c>, the number of pages or the number of documents associated with the <see cref="P:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket" />.</param>
+        <param name="sequence">Based on the scope of defined by <paramref name="printTicketLevel" />, the number of pages or the number of documents associated with the <see cref="P:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>

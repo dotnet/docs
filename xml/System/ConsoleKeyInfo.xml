@@ -90,8 +90,8 @@
         <Parameter Name="control" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="keyChar">The Unicode character that corresponds to the <c>key</c> parameter.</param>
-        <param name="key">The console key that corresponds to the <c>keyChar</c> parameter.</param>
+        <param name="keyChar">The Unicode character that corresponds to the <paramref name="key" /> parameter.</param>
+        <param name="key">The console key that corresponds to the <paramref name="keyChar" /> parameter.</param>
         <param name="shift">
           <see langword="true" /> to indicate that a SHIFT key was pressed; otherwise, <see langword="false" />.</param>
         <param name="alt">

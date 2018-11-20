@@ -57,7 +57,7 @@
       </Parameters>
       <Docs>
         <param name="item">The element that is associated with this automation peer.</param>
-        <param name="dataGridColumn">The <see cref="T:System.Windows.Controls.DataGrid" /> column that <c>item</c> is in.</param>
+        <param name="dataGridColumn">The <see cref="T:System.Windows.Controls.DataGrid" /> column that <paramref name="item" /> is in.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>

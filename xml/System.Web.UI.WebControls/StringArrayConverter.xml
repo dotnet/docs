@@ -181,7 +181,7 @@
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object that provides a format context that can be used to extract additional information about the environment from which this converter is invoked. This parameter or properties of this parameter can be <see langword="null" />.</param>
         <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> object. If <see langword="null" />, the current culture is used.</param>
         <param name="value">The <see cref="T:System.Object" /> to convert.</param>
-        <param name="destinationType">The <see cref="T:System.Type" /> to convert <c>value</c> to.</param>
+        <param name="destinationType">The <see cref="T:System.Type" /> to convert <paramref name="value" /> to.</param>
         <summary>Converts an array of strings into a string of values separated by commas.</summary>
         <returns>An <see cref="T:System.Object" /> instance that represents the converted <paramref name="value" />.</returns>
         <remarks>

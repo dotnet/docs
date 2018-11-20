@@ -337,7 +337,7 @@ Two EllipseGeometry objects
         <Parameter Name="type" Type="System.Windows.Media.ToleranceType" />
       </Parameters>
       <Docs>
-        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution. If <c>tolerance</c> is less than .000001, .000001 is used instead.</param>
+        <param name="tolerance">The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution. If <paramref name="tolerance" /> is less than .000001, .000001 is used instead.</param>
         <param name="type">One of the enumeration values, <see cref="F:System.Windows.Media.ToleranceType.Absolute" /> or <see cref="F:System.Windows.Media.ToleranceType.Relative" />, that specifies whether the tolerance factor is an absolute value or relative to the area of this geometry.</param>
         <summary>Gets the area of this <see cref="T:System.Windows.Media.EllipseGeometry" />.</summary>
         <returns>The area of the filled region of this ellipse.</returns>

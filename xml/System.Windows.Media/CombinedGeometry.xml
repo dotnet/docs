@@ -119,7 +119,7 @@
         <Parameter Name="geometry2" Type="System.Windows.Media.Geometry" />
       </Parameters>
       <Docs>
-        <param name="geometryCombineMode">The method by which <c>geometry1</c> and <c>geometry2</c> are combined.</param>
+        <param name="geometryCombineMode">The method by which <paramref name="geometry1" /> and <paramref name="geometry2" /> are combined.</param>
         <param name="geometry1">The first <see cref="T:System.Windows.Media.Geometry" /> to combine.</param>
         <param name="geometry2">The second <see cref="T:System.Windows.Media.Geometry" /> to combine.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.CombinedGeometry" /> class with the specified <see cref="T:System.Windows.Media.Geometry" /> objects and <see cref="P:System.Windows.Media.CombinedGeometry.GeometryCombineMode" />.</summary>
@@ -145,7 +145,7 @@
         <Parameter Name="transform" Type="System.Windows.Media.Transform" />
       </Parameters>
       <Docs>
-        <param name="geometryCombineMode">The method by which <c>geometry1</c> and <c>geometry2</c> are combined.</param>
+        <param name="geometryCombineMode">The method by which <paramref name="geometry1" /> and <paramref name="geometry2" /> are combined.</param>
         <param name="geometry1">The first <see cref="T:System.Windows.Media.Geometry" /> to combine.</param>
         <param name="geometry2">The second <see cref="T:System.Windows.Media.Geometry" /> to combine.</param>
         <param name="transform">The <see cref="P:System.Windows.Media.Geometry.Transform" /> applied to the <see cref="T:System.Windows.Media.CombinedGeometry" />.</param>

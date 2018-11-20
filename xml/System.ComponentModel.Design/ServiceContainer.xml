@@ -265,7 +265,7 @@
       </Parameters>
       <Docs>
         <param name="serviceType">The type of service to add.</param>
-        <param name="serviceInstance">An instance of the service to add. This object must implement or inherit from the type indicated by the <c>serviceType</c> parameter.</param>
+        <param name="serviceInstance">An instance of the service to add. This object must implement or inherit from the type indicated by the <paramref name="serviceType" /> parameter.</param>
         <summary>Adds the specified service to the service container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -370,7 +370,7 @@
       </Parameters>
       <Docs>
         <param name="serviceType">The type of service to add.</param>
-        <param name="serviceInstance">An instance of the service type to add. This object must implement or inherit from the type indicated by the <c>serviceType</c> parameter.</param>
+        <param name="serviceInstance">An instance of the service type to add. This object must implement or inherit from the type indicated by the <paramref name="serviceType" /> parameter.</param>
         <param name="promote">
           <see langword="true" /> if this service should be added to any parent service containers; otherwise, <see langword="false" />.</param>
         <summary>Adds the specified service to the service container.</summary>

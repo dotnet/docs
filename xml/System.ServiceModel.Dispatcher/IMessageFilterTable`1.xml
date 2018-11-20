@@ -125,9 +125,9 @@
       <Docs>
         <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to test.</param>
         <param name="filter">
-          <see langword="out" /> parameter that stores the filter that is satisfied by the <c>message</c>. If no filter was found, the parameter is set to its default value.</param>
+          <see langword="out" /> parameter that stores the filter that is satisfied by the <paramref name="message" />. If no filter was found, the parameter is set to its default value.</param>
         <param name="result">
-          <see langword="out" /> parameter that stores the filter that is satisfied by the <c>message</c>. If no filter was found, the parameter is set to its default value.</param>
+          <see langword="out" /> parameter that stores the filter that is satisfied by the <paramref name="message" />. If no filter was found, the parameter is set to its default value.</param>
         <summary>Returns a value that indicates whether the match criterion of exactly one filter in the table is satisfied by the specified message, and returns that filter in an <see langword="out" /> parameter.</summary>
         <returns>
           <see langword="true" /> if the match criterion of at least one filter in the table is satisfied by <paramref name="message" />; <see langword="false" /> if no filter is satisfied.</returns>
@@ -177,9 +177,9 @@
         <param name="messageBuffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> to test.</param>
         <param name="buffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> to test.</param>
         <param name="filter">
-          <see langword="out" /> parameter that stores the filter that is satisfied by the <c>message</c>. If no filter was found, the parameter is set to its default value.</param>
+          <see langword="out" /> parameter that stores the filter that is satisfied by the <paramref name="message" />. If no filter was found, the parameter is set to its default value.</param>
         <param name="result">
-          <see langword="out" /> parameter that stores the filter that is satisfied by the <c>message</c>. If no filter was found, the parameter is set to its default value.</param>
+          <see langword="out" /> parameter that stores the filter that is satisfied by the <paramref name="message" />. If no filter was found, the parameter is set to its default value.</param>
         <summary>Returns a value that indicates whether the match criterion of exactly one filter in the table is satisfied by the specified message or buffered message, and returns that filter in an <see langword="out" /> parameter.</summary>
         <returns>
           <see langword="true" /> if the match criterion of at least one filter in the table is satisfied by <paramref name="messageBuffer" />; <see langword="false" /> if no filter is satisfied.</returns>
@@ -343,9 +343,9 @@
       <Docs>
         <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to test.</param>
         <param name="value">
-          <see langword="out" /> parameter that stores the <c>FilterData</c> that matches the <c>message</c>.</param>
+          <see langword="out" /> parameter that stores the <c>FilterData</c> that matches the <paramref name="message" />.</param>
         <param name="data">
-          <see langword="out" /> parameter that stores the <c>FilterData</c> that matches the <c>message</c>.</param>
+          <see langword="out" /> parameter that stores the <c>FilterData</c> that matches the <paramref name="message" />.</param>
         <summary>Returns a value that indicates whether the match criterion of exactly one filter in the table is satisfied by the specified message, and adds the matching filter data to a collection.</summary>
         <returns>
           <see langword="true" /> if the match criterion of exactly one filter in the table is satisfied by the message; <see langword="false" /> if no filter is satisfied.</returns>
@@ -397,9 +397,9 @@
         <param name="messageBuffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> to test.</param>
         <param name="buffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> to test.</param>
         <param name="value">
-          <see langword="out" /> parameter that stores the <c>FilterData</c> that matches the <c>messageBuffer</c>.</param>
+          <see langword="out" /> parameter that stores the <c>FilterData</c> that matches the <paramref name="messageBuffer" />.</param>
         <param name="data">
-          <see langword="out" /> parameter that stores the <c>FilterData</c> that matches the <c>buffer</c>.</param>
+          <see langword="out" /> parameter that stores the <c>FilterData</c> that matches the <paramref name="buffer" />.</param>
         <summary>Returns a value that indicates whether the match criterion of exactly one filter in the table is satisfied by the specified buffered message, and adds the matching filter data to a collection.</summary>
         <returns>
           <see langword="true" /> if the match criterion of exactly one filter in the table is satisfied by the message; <see langword="false" /> if no filter is satisfied.</returns>

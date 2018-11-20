@@ -153,7 +153,7 @@
       <Docs>
         <param name="context">The ITypeDescriptorContext for this call.</param>
         <param name="culture">The CultureInfo which is respected when converting.</param>
-        <param name="value">The object to convert to an instance of <c>destinationType</c>.</param>
+        <param name="value">The object to convert to an instance of <paramref name="destinationType" />.</param>
         <param name="destinationType">The type to which the Rect3D instance will be converted.</param>
         <summary>Attempts to convert an instance of <see cref="T:System.Windows.Media.Media3D.Rect3D" /> to the given type.</summary>
         <returns>Object that was constructed.</returns>

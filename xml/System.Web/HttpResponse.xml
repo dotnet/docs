@@ -431,7 +431,7 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the HTTP header to add <c>value</c> to.</param>
+        <param name="name">The name of the HTTP header to add <paramref name="value" /> to.</param>
         <param name="value">The string to add to the header.</param>
         <summary>Adds an HTTP header to the output stream. <see cref="M:System.Web.HttpResponse.AddHeader(System.String,System.String)" /> is provided for compatibility with earlier versions of ASP.</summary>
         <remarks>
@@ -3428,7 +3428,7 @@ Response.RedirectToRoutePermanent("Product",
       <Docs>
         <param name="buffer">The character array to write.</param>
         <param name="index">The position in the character array where writing starts.</param>
-        <param name="count">The number of characters to write, beginning at <c>index</c>.</param>
+        <param name="count">The number of characters to write, beginning at <paramref name="index" />.</param>
         <summary>Writes an array of characters to an HTTP response output stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

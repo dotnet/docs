@@ -133,8 +133,8 @@ private void pwdGrammar()
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="semanticResultKey">The tag to be used as a semantic key to access the <see cref="T:System.Speech.Recognition.SemanticValue" /> instance associated with the <see cref="T:System.Speech.Recognition.GrammarBuilder" /> objects specified by the <c>builders</c> argument.</param>
-        <param name="builders">An array of grammar components that will be associated with a <see cref="T:System.Speech.Recognition.SemanticValue" /> object accessible with the tag defined in <c>semanticResultKey</c>.</param>
+        <param name="semanticResultKey">The tag to be used as a semantic key to access the <see cref="T:System.Speech.Recognition.SemanticValue" /> instance associated with the <see cref="T:System.Speech.Recognition.GrammarBuilder" /> objects specified by the <paramref name="builders" /> argument.</param>
+        <param name="builders">An array of grammar components that will be associated with a <see cref="T:System.Speech.Recognition.SemanticValue" /> object accessible with the tag defined in <paramref name="semanticResultKey" />.</param>
         <summary>Assigns a semantic key to one or more <see cref="T:System.Speech.Recognition.GrammarBuilder" /> objects used to create a speech recognition grammar.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -247,8 +247,8 @@ private void pwdGrammar()
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="semanticResultKey">The tag to be used access the <see cref="T:System.Speech.Recognition.SemanticValue" /> instance associated with the <see cref="T:System.String" /> objects specified by the <c>phrases</c> argument.</param>
-        <param name="phrases">One or more <see cref="T:System.String" /> objects, whose concatenated text will be associated with a <see cref="T:System.Speech.Recognition.SemanticValue" /> object accessible with the tag defined in <c>semanticResultKey</c>.</param>
+        <param name="semanticResultKey">The tag to be used access the <see cref="T:System.Speech.Recognition.SemanticValue" /> instance associated with the <see cref="T:System.String" /> objects specified by the <paramref name="phrases" /> argument.</param>
+        <param name="phrases">One or more <see cref="T:System.String" /> objects, whose concatenated text will be associated with a <see cref="T:System.Speech.Recognition.SemanticValue" /> object accessible with the tag defined in <paramref name="semanticResultKey" />.</param>
         <summary>Assigns a semantic key to one or more <see cref="T:System.String" /> instances used to create a speech recognition grammar.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

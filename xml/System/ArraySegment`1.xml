@@ -1138,7 +1138,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the elements copied from the array segment. The array must have zero-based indexing.</param>
-        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the elements of the array segment to an array, starting at the specified array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1389,7 +1389,7 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>item</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
         <param name="item">The object to insert into the array segment.</param>
         <summary>Inserts an item into the array segment at the specified index.</summary>
         <remarks>

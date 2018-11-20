@@ -94,7 +94,7 @@
       </Parameters>
       <Docs>
         <param name="expirationTime">A <see cref="T:System.DateTime" /> object.</param>
-        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>expirationTime</c> should be used in the comparison.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <paramref name="expirationTime" /> should be used in the comparison.</param>
         <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountExpirationDate" /> attribute to the specified time and comparison type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -159,7 +159,7 @@ foreach (UserPrincipal u in results)
       </Parameters>
       <Docs>
         <param name="lockoutTime">A <see cref="T:System.DateTime" /> object.</param>
-        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>lockoutTime</c> should be used in the comparison.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <paramref name="lockoutTime" /> should be used in the comparison.</param>
         <summary>Sets the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountLockoutTime" /> query filter to the specified time and comparison type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -232,8 +232,8 @@ foreach (UserPrincipal u in results)
       <Docs>
         <param name="attribute">The name of the attribute</param>
         <param name="value">An object.</param>
-        <param name="objectType">The object type of <c>value</c>.</param>
-        <param name="mt">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>value</c> should be compared to the attribute's value.</param>
+        <param name="objectType">The object type of <paramref name="value" />.</param>
+        <param name="mt">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <paramref name="value" /> should be compared to the attribute's value.</param>
         <summary>Creates a query filter for a property in an extended class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -283,7 +283,7 @@ public class InetOrgPersonSearchFilter : AdvancedFilters
       </Parameters>
       <Docs>
         <param name="badLogonCount">An integer.</param>
-        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>badLogonCount</c> should be compared to the attribute's value.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <paramref name="badLogonCount" /> should be compared to the attribute's value.</param>
         <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.BadLogonCount" /> attribute to the specified value and comparison type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -341,7 +341,7 @@ foreach (UserPrincipal u in results)
       </Parameters>
       <Docs>
         <param name="lastAttempt">A <see cref="T:System.DateTime" /> object.</param>
-        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>lastAttempt</c> should be used in the comparison.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <paramref name="lastAttempt" /> should be used in the comparison.</param>
         <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.LastBadPasswordAttempt" /> attribute to the specified <see cref="T:System.DateTime" /> and the specified comparison value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -406,7 +406,7 @@ foreach (UserPrincipal u in results)
       </Parameters>
       <Docs>
         <param name="logonTime">A <see cref="T:System.DateTime" /> object.</param>
-        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>logonTime</c> should be used in the comparison.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <paramref name="logonTime" /> should be used in the comparison.</param>
         <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.LastLogon" /> attribute to the specified <see cref="T:System.DateTime" /> and the specified comparison value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -469,7 +469,7 @@ foreach (UserPrincipal u in results)
       </Parameters>
       <Docs>
         <param name="passwordSetTime">A <see cref="T:System.DateTime" /> object.</param>
-        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>passwordSetTime</c> should be used in the comparison.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <paramref name="passwordSetTime" /> should be used in the comparison.</param>
         <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.LastPasswordSet" /> attribute to the specified <see cref="T:System.DateTime" /> and the specified comparison value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

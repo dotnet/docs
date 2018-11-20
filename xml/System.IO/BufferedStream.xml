@@ -231,7 +231,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer to read the data into.</param>
-        <param name="offset">The byte offset in <c>buffer</c> at which to begin writing data read from the stream.</param>
+        <param name="offset">The byte offset in <paramref name="buffer" /> at which to begin writing data read from the stream.</param>
         <param name="count">The maximum number of bytes to read.</param>
         <param name="callback">An optional asynchronous callback, to be called when the read is complete.</param>
         <param name="state">A user-provided object that distinguishes this particular asynchronous read request from other requests.</param>
@@ -298,7 +298,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer containing data to write to the current stream.</param>
-        <param name="offset">The zero-based byte offset in <c>buffer</c> at which to begin copying bytes to the current stream.</param>
+        <param name="offset">The zero-based byte offset in <paramref name="buffer" /> at which to begin copying bytes to the current stream.</param>
         <param name="count">The maximum number of bytes to write.</param>
         <param name="callback">The method to be called when the asynchronous write operation is completed.</param>
         <param name="state">A user-provided object that distinguishes this particular asynchronous write request from other requests.</param>
@@ -1023,7 +1023,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer to write the data into.</param>
-        <param name="offset">The byte offset in <c>buffer</c> at which to begin writing data from the stream.</param>
+        <param name="offset">The byte offset in <paramref name="buffer" /> at which to begin writing data from the stream.</param>
         <param name="count">The maximum number of bytes to read.</param>
         <param name="cancellationToken">The token to monitor for cancellation requests.</param>
         <summary>Asynchronously reads a sequence of bytes from the current stream, advances the position within the stream by the number of bytes read, and monitors cancellation requests.</summary>
@@ -1134,7 +1134,7 @@
         <Parameter Name="origin" Type="System.IO.SeekOrigin" />
       </Parameters>
       <Docs>
-        <param name="offset">A byte offset relative to <c>origin</c>.</param>
+        <param name="offset">A byte offset relative to <paramref name="origin" />.</param>
         <param name="origin">A value of type <see cref="T:System.IO.SeekOrigin" /> indicating the reference point from which to obtain the new position.</param>
         <summary>Sets the position within the current buffered stream.</summary>
         <returns>The new position within the current buffered stream.</returns>
@@ -1292,7 +1292,7 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The byte array from which to copy <c>count</c> bytes to the current buffered stream.</param>
+        <param name="array">The byte array from which to copy <paramref name="count" /> bytes to the current buffered stream.</param>
         <param name="offset">The offset in the buffer at which to begin copying bytes to the current buffered stream.</param>
         <param name="count">The number of bytes to be written to the current buffered stream.</param>
         <summary>Copies bytes to the buffered stream and advances the current position within the buffered stream by the number of bytes written.</summary>
@@ -1359,7 +1359,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer to write data from.</param>
-        <param name="offset">The zero-based byte offset in <c>buffer</c> from which to begin copying bytes to the stream.</param>
+        <param name="offset">The zero-based byte offset in <paramref name="buffer" /> from which to begin copying bytes to the stream.</param>
         <param name="count">The maximum number of bytes to write.</param>
         <param name="cancellationToken">The token to monitor for cancellation requests.</param>
         <summary>Asynchronously writes a sequence of bytes to the current stream, advances the current position within this stream by the number of bytes written, and monitors cancellation requests.</summary>

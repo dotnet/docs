@@ -93,7 +93,7 @@
         <Parameter Name="descending" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">The type of the key produced by <c>keySelector</c>.</typeparam>
+        <typeparam name="TKey">The type of the key produced by <paramref name="keySelector" />.</typeparam>
         <param name="keySelector">The <see cref="T:System.Func`2" /> used to extract the key for each element.</param>
         <param name="comparer">The <see cref="T:System.Collections.Generic.IComparer`1" /> used to compare keys for placement in the returned sequence.</param>
         <param name="descending">

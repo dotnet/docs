@@ -1134,7 +1134,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> is to be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> is to be inserted.</param>
         <param name="value">The object to insert into the collection.</param>
         <summary>Inserts an object into the collection at a specified index.</summary>
         <remarks>

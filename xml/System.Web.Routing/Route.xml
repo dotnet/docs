@@ -449,7 +449,7 @@
       </Parameters>
       <Docs>
         <param name="httpContext">An object that encapsulates information about the HTTP request.</param>
-        <param name="constraint">The regular expression or object to use to test <c>parameterName</c>.</param>
+        <param name="constraint">The regular expression or object to use to test <paramref name="parameterName" />.</param>
         <param name="parameterName">The name of the parameter to test.</param>
         <param name="values">The values to test.</param>
         <param name="routeDirection">A value that specifies whether URL routing is processing an incoming request or constructing a URL.</param>

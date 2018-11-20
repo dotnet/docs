@@ -4325,7 +4325,7 @@
       </Parameters>
       <Docs>
         <param name="s">The string representation of the number to convert.</param>
-        <param name="style">A bitwise combination of <see cref="T:System.Globalization.NumberStyles" /> values that indicates the style elements that can be present in <c>s</c>. A typical value to specify is <see cref="F:System.Globalization.NumberStyles.Number" />.</param>
+        <param name="style">A bitwise combination of <see cref="T:System.Globalization.NumberStyles" /> values that indicates the style elements that can be present in <paramref name="s" />. A typical value to specify is <see cref="F:System.Globalization.NumberStyles.Number" />.</param>
         <summary>Converts the string representation of a number in a specified style to its <see cref="T:System.Decimal" /> equivalent.</summary>
         <returns>The <see cref="T:System.Decimal" /> number equivalent to the number contained in <paramref name="s" /> as specified by <paramref name="style" />.</returns>
         <remarks>
@@ -4447,7 +4447,7 @@
       </Parameters>
       <Docs>
         <param name="s">The string representation of the number to convert.</param>
-        <param name="provider">An <see cref="T:System.IFormatProvider" /> that supplies culture-specific parsing information about <c>s</c>.</param>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> that supplies culture-specific parsing information about <paramref name="s" />.</param>
         <summary>Converts the string representation of a number to its <see cref="T:System.Decimal" /> equivalent using the specified culture-specific format information.</summary>
         <returns>The <see cref="T:System.Decimal" /> number equivalent to the number contained in <paramref name="s" /> as specified by <paramref name="provider" />.</returns>
         <remarks>
@@ -4572,8 +4572,8 @@
       </Parameters>
       <Docs>
         <param name="s">The string representation of the number to convert.</param>
-        <param name="style">A bitwise combination of <see cref="T:System.Globalization.NumberStyles" /> values that indicates the style elements that can be present in <c>s</c>. A typical value to specify is <see cref="F:System.Globalization.NumberStyles.Number" />.</param>
-        <param name="provider">An <see cref="T:System.IFormatProvider" /> object that supplies culture-specific information about the format of <c>s</c>.</param>
+        <param name="style">A bitwise combination of <see cref="T:System.Globalization.NumberStyles" /> values that indicates the style elements that can be present in <paramref name="s" />. A typical value to specify is <see cref="F:System.Globalization.NumberStyles.Number" />.</param>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> object that supplies culture-specific information about the format of <paramref name="s" />.</param>
         <summary>Converts the string representation of a number to its <see cref="T:System.Decimal" /> equivalent using the specified style and culture-specific format.</summary>
         <returns>The <see cref="T:System.Decimal" /> number equivalent to the number contained in <paramref name="s" /> as specified by <paramref name="style" /> and <paramref name="provider" />.</returns>
         <remarks>
@@ -4878,7 +4878,7 @@
       </Parameters>
       <Docs>
         <param name="d">A decimal number to round.</param>
-        <param name="mode">A value that specifies how to round <c>d</c> if it is midway between two other numbers.</param>
+        <param name="mode">A value that specifies how to round <paramref name="d" /> if it is midway between two other numbers.</param>
         <summary>Rounds a decimal value to the nearest integer. A parameter specifies how to round the value if it is midway between two other numbers.</summary>
         <returns>The integer that is nearest to the <paramref name="d" /> parameter. If <paramref name="d" /> is halfway between two numbers, one of which is even and the other odd, the <paramref name="mode" /> parameter determines which of the two numbers is returned.</returns>
         <remarks>
@@ -4952,7 +4952,7 @@
       <Docs>
         <param name="d">A decimal number to round.</param>
         <param name="decimals">The number of significant decimal places (precision) in the return value.</param>
-        <param name="mode">A value that specifies how to round <c>d</c> if it is midway between two other numbers.</param>
+        <param name="mode">A value that specifies how to round <paramref name="d" /> if it is midway between two other numbers.</param>
         <summary>Rounds a decimal value to a specified precision. A parameter specifies how to round the value if it is midway between two other numbers.</summary>
         <returns>The number that is nearest to the <paramref name="d" /> parameter with a precision equal to the <paramref name="decimals" /> parameter. If <paramref name="d" /> is halfway between two numbers, one of which is even and the other odd, the <paramref name="mode" /> parameter determines which of the two numbers is returned. If the precision of <paramref name="d" /> is less than <paramref name="decimals" />, <paramref name="d" /> is returned unchanged.</returns>
         <remarks>
@@ -7294,8 +7294,8 @@
       </Parameters>
       <Docs>
         <param name="s">The string representation of the number to convert.</param>
-        <param name="style">A bitwise combination of enumeration values that indicates the permitted format of <c>s</c>. A typical value to specify is <see cref="F:System.Globalization.NumberStyles.Number" />.</param>
-        <param name="provider">An object that supplies culture-specific parsing information about <c>s</c>.</param>
+        <param name="style">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="s" />. A typical value to specify is <see cref="F:System.Globalization.NumberStyles.Number" />.</param>
+        <param name="provider">An object that supplies culture-specific parsing information about <paramref name="s" />.</param>
         <param name="result">When this method returns, contains the <see cref="T:System.Decimal" /> number that is equivalent to the numeric value contained in <paramref name="s" />, if the conversion succeeded, or zero if the conversion failed. The conversion fails if the <paramref name="s" /> parameter is <see langword="null" /> or <see cref="F:System.String.Empty" />, is not a number in a format compliant with <paramref name="style" />, or represents a number less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />. This parameter is passed uininitialized; any value originally supplied in <paramref name="result" /> is overwritten. </param>
         <summary>Converts the string representation of a number to its <see cref="T:System.Decimal" /> equivalent using the specified style and culture-specific format. A return value indicates whether the conversion succeeded or failed.</summary>
         <returns>

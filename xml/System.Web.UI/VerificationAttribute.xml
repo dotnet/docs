@@ -219,7 +219,7 @@
         <param name="conditionalProperty">The left side of a conditional expression used to verify the accessibility rule.</param>
         <param name="conditionalOperator">One of the <see cref="T:System.Web.UI.VerificationConditionalOperator" /> values.</param>
         <param name="conditionalValue">The right hand side of a conditional expression used to verify the accessibility rule.</param>
-        <param name="guidelineUrl">A reference URL for <c>guideline</c>.</param>
+        <param name="guidelineUrl">A reference URL for <paramref name="guideline" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.VerificationAttribute" /> class with accessibility guideline, checkpoint, reporting level, checkpoint priority, error message, <see cref="T:System.Web.UI.VerificationRule" />.value, related conditional property, a related conditional property value, and a reference guideline URL.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

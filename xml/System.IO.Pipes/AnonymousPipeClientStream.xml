@@ -161,7 +161,7 @@
       <Docs>
         <param name="direction">One of the enumeration values that determines the direction of the pipe.  
   
- Anonymous pipes can only be in one direction, so <c>direction</c> cannot be set to <see cref="F:System.IO.Pipes.PipeDirection.InOut" />.</param>
+ Anonymous pipes can only be in one direction, so <paramref name="direction" /> cannot be set to <see cref="F:System.IO.Pipes.PipeDirection.InOut" />.</param>
         <param name="safePipeHandle">A safe handle for the pipe that this <see cref="T:System.IO.Pipes.AnonymousPipeClientStream" /> object will encapsulate.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.AnonymousPipeClientStream" /> class from the specified handle.</summary>
         <remarks>
@@ -230,7 +230,7 @@
       <Docs>
         <param name="direction">One of the enumeration values that determines the direction of the pipe.  
   
- Anonymous pipes can only be in one direction, so <c>direction</c> cannot be set to <see cref="F:System.IO.Pipes.PipeDirection.InOut" />.</param>
+ Anonymous pipes can only be in one direction, so <paramref name="direction" /> cannot be set to <see cref="F:System.IO.Pipes.PipeDirection.InOut" />.</param>
         <param name="pipeHandleAsString">A string that represents the pipe handle.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.AnonymousPipeClientStream" /> class with the specified pipe direction and a string representation of the pipe handle.</summary>
         <remarks>

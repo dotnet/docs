@@ -458,7 +458,7 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element to replace.</param>
-        <param name="item">The new value for <see cref="T:System.ServiceModel.Channels.BindingElement" /> item at the specified <c>index</c>.</param>
+        <param name="item">The new value for <see cref="T:System.ServiceModel.Channels.BindingElement" /> item at the specified <paramref name="index" />.</param>
         <summary>Replaces a binding element at the specified index in the collection of binding elements.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

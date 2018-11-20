@@ -86,7 +86,7 @@
       </Parameters>
       <Docs>
         <param name="array">The <see cref="T:System.Array" /> into which to copy the elements.</param>
-        <param name="index">The starting index of the <c>array</c>.</param>
+        <param name="index">The starting index of the <paramref name="array" />.</param>
         <summary>Copies the elements of the <see cref="T:System.Data.OleDb.OleDbErrorCollection" /> into an <see cref="T:System.Array" />, starting at the specified index within the <see cref="T:System.Array" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -470,7 +470,7 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="document">The <see cref="T:System.Xml.Schema.XmlSchema" /> to write into <c>stream</c>.</param>
+        <param name="document">The <see cref="T:System.Xml.Schema.XmlSchema" /> to write into <paramref name="stream" />.</param>
         <param name="stream">The <see cref="T:System.IO.Stream" /> into which the serialized XSD schema is written.</param>
         <summary>Writes the passed XSD schema into the passed <see cref="T:System.IO.Stream" />.</summary>
         <remarks>

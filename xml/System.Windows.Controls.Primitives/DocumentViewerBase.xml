@@ -875,8 +875,8 @@
       </Parameters>
       <Docs>
         <param name="element">The element from which the <see cref="E:System.Windows.FrameworkElement.RequestBringIntoView" /> event originated.</param>
-        <param name="rect">A rectangular region, in the coordinate space of <c>element</c>, which should be made visible.</param>
-        <param name="pageNumber">The page number for the page that contains <c>element</c>.</param>
+        <param name="rect">A rectangular region, in the coordinate space of <paramref name="element" />, which should be made visible.</param>
+        <param name="pageNumber">The page number for the page that contains <paramref name="element" />.</param>
         <summary>Invoked whenever the <see cref="E:System.Windows.FrameworkElement.RequestBringIntoView" /> event reaches an element derived from this class in its route.  Implement this method to add class handling for this event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

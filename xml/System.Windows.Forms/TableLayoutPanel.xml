@@ -1335,7 +1335,7 @@
       </Parameters>
       <Docs>
         <param name="control">The control to move to another column.</param>
-        <param name="column">The column to which <c>control</c> will be moved.</param>
+        <param name="column">The column to which <paramref name="control" /> will be moved.</param>
         <summary>Sets the column position of the specified child control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1432,7 +1432,7 @@
       </Parameters>
       <Docs>
         <param name="control">The control to move to another row.</param>
-        <param name="row">The row to which <c>control</c> will be moved.</param>
+        <param name="row">The row to which <paramref name="control" /> will be moved.</param>
         <summary>Sets the row position of the specified child control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

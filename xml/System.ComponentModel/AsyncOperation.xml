@@ -170,7 +170,7 @@
       </Parameters>
       <Docs>
         <param name="d">A <see cref="T:System.Threading.SendOrPostCallback" /> object that wraps the delegate to be called when the operation ends.</param>
-        <param name="arg">An argument for the delegate contained in the <c>d</c> parameter.</param>
+        <param name="arg">An argument for the delegate contained in the <paramref name="d" /> parameter.</param>
         <summary>Invokes a delegate on the thread or context appropriate for the application model.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -246,7 +246,7 @@
       </Parameters>
       <Docs>
         <param name="d">A <see cref="T:System.Threading.SendOrPostCallback" /> object that wraps the delegate to be called when the operation ends.</param>
-        <param name="arg">An argument for the delegate contained in the <c>d</c> parameter.</param>
+        <param name="arg">An argument for the delegate contained in the <paramref name="d" /> parameter.</param>
         <summary>Ends the lifetime of an asynchronous operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

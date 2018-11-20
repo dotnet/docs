@@ -124,8 +124,8 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="expression">An application setting expression string to evaluate. <c>expression</c> does not include the <see langword="AppSettings" /> expression prefix.</param>
-        <param name="parseTimeData">An object containing additional parsing information for evaluating <c>expression</c>.</param>
+        <param name="expression">An application setting expression string to evaluate. <paramref name="expression" /> does not include the <see langword="AppSettings" /> expression prefix.</param>
+        <param name="parseTimeData">An object containing additional parsing information for evaluating <paramref name="expression" />.</param>
         <param name="propertyType">The control property type.</param>
         <param name="serviceProvider">A service provider implementation supplied by the designer host, used to obtain additional design-time services.</param>
         <summary>Evaluates an application setting expression string and provides the design-time value for a control property.</summary>
@@ -171,7 +171,7 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="expression">The expression string set for a control property, used to initialize the expression editor sheet. <c>expression</c> does not include the <see langword="AppSettings" /> expression prefix.</param>
+        <param name="expression">The expression string set for a control property, used to initialize the expression editor sheet. <paramref name="expression" /> does not include the <see langword="AppSettings" /> expression prefix.</param>
         <param name="serviceProvider">A service provider implementation supplied by the designer host, used to obtain additional design-time services.</param>
         <summary>Returns an expression editor sheet for an application setting expression.</summary>
         <returns>An <see cref="T:System.Web.UI.Design.ExpressionEditorSheet" /> implementation that defines the application setting expression properties.</returns>

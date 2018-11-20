@@ -318,7 +318,7 @@
       </Parameters>
       <Docs>
         <param name="sink">A server channel sink.</param>
-        <param name="state">The state associated with <c>sink</c>.</param>
+        <param name="state">The state associated with <paramref name="sink" />.</param>
         <summary>Stores a message sink and its associated state for later asynchronous processing.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -368,7 +368,7 @@
       </Parameters>
       <Docs>
         <param name="sink">A server channel sink.</param>
-        <param name="state">The state associated with <c>sink</c>.</param>
+        <param name="state">The state associated with <paramref name="sink" />.</param>
         <summary>Stores a message sink and its associated state, and then dispatches a message asynchronously, using the sink just stored and any other stored sinks.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -406,7 +406,7 @@
       </Parameters>
       <Docs>
         <param name="point">The point to translate.</param>
-        <param name="vector">The amount by which to translate <c>point</c>.</param>
+        <param name="vector">The amount by which to translate <paramref name="point" />.</param>
         <summary>Translates the specified <see cref="T:System.Windows.Point" /> by the specified <see cref="T:System.Windows.Vector" /> and returns the result.</summary>
         <returns>The result of translating the specified point by the specified vector.</returns>
         <remarks>
@@ -664,8 +664,8 @@
         <Parameter Name="point2" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="point1">The point from which <c>point2</c> is subtracted.</param>
-        <param name="point2">The point to subtract from <c>point1</c>.</param>
+        <param name="point1">The point from which <paramref name="point2" /> is subtracted.</param>
+        <param name="point2">The point to subtract from <paramref name="point1" />.</param>
         <summary>Subtracts the specified <see cref="T:System.Windows.Point" /> from another specified <see cref="T:System.Windows.Point" /> and returns the difference as a <see cref="T:System.Windows.Vector" />.</summary>
         <returns>The difference between <paramref name="point1" /> and <paramref name="point2" />.</returns>
         <remarks>
@@ -702,8 +702,8 @@
         <Parameter Name="vector" Type="System.Windows.Vector" />
       </Parameters>
       <Docs>
-        <param name="point">The point from which <c>vector</c> is subtracted.</param>
-        <param name="vector">The vector to subtract from <c>point1</c></param>
+        <param name="point">The point from which <paramref name="vector" /> is subtracted.</param>
+        <param name="vector">The vector to subtract from <paramref name="point1" /></param>
         <summary>Subtracts the specified <see cref="T:System.Windows.Vector" /> from the specified <see cref="T:System.Windows.Point" /> and returns the resulting <see cref="T:System.Windows.Point" />.</summary>
         <returns>The difference between <paramref name="point" /> and <paramref name="vector" />.</returns>
         <remarks>
@@ -794,8 +794,8 @@
         <Parameter Name="point2" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="point1">The point from which <c>point2</c> is subtracted.</param>
-        <param name="point2">The point to subtract from <c>point1</c>.</param>
+        <param name="point1">The point from which <paramref name="point2" /> is subtracted.</param>
+        <param name="point2">The point to subtract from <paramref name="point1" />.</param>
         <summary>Subtracts the specified <see cref="T:System.Windows.Point" /> from another specified <see cref="T:System.Windows.Point" /> and returns the difference as a <see cref="T:System.Windows.Vector" />.</summary>
         <returns>The difference between <paramref name="point1" /> and <paramref name="point2" />.</returns>
         <remarks>
@@ -832,8 +832,8 @@
         <Parameter Name="vector" Type="System.Windows.Vector" />
       </Parameters>
       <Docs>
-        <param name="point">The point from which <c>vector</c> is subtracted.</param>
-        <param name="vector">The <c>vector</c> to subtract from <c>point</c>.</param>
+        <param name="point">The point from which <paramref name="vector" /> is subtracted.</param>
+        <param name="vector">The <paramref name="vector" /> to subtract from <paramref name="point" />.</param>
         <summary>Subtracts the specified <see cref="T:System.Windows.Vector" /> from the specified <see cref="T:System.Windows.Point" /> and returns the resulting <see cref="T:System.Windows.Point" />.</summary>
         <returns>The difference between <paramref name="point" /> and <paramref name="vector" />.</returns>
         <remarks>

@@ -275,7 +275,7 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="contentType">The MIME type of <c>stream</c>.</param>
+        <param name="contentType">The MIME type of <paramref name="stream" />.</param>
         <param name="stream">The <see cref="T:System.IO.Stream" /> containing the referenced document.</param>
         <summary>Resolves whether the referenced document is valid.</summary>
         <remarks>
@@ -349,7 +349,7 @@
       </Parameters>
       <Docs>
         <param name="document">The document to write into a <see cref="T:System.IO.Stream" />.</param>
-        <param name="stream">The <see cref="T:System.IO.Stream" /> into which the <c>document</c> is written.</param>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> into which the <paramref name="document" /> is written.</param>
         <summary>When overridden in a derived class, writes the document to a <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

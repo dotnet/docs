@@ -505,7 +505,7 @@
       </Parameters>
       <Docs>
         <param name="array">The array into which a collection of <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo" /> objects will be copied.</param>
-        <param name="index">The point in <c>array</c> at which to start copying the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo" /> objects.</param>
+        <param name="index">The point in <paramref name="array" /> at which to start copying the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo" /> objects.</param>
         <summary>Implements the base <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

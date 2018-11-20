@@ -613,7 +613,7 @@
       </Parameters>
       <Docs>
         <param name="point">The point to transform.</param>
-        <param name="matrix">The matrix that is used to transform <c>point</c>.</param>
+        <param name="matrix">The matrix that is used to transform <paramref name="point" />.</param>
         <summary>Transforms the specified <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure by the specified <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
         <returns>The result of transforming <paramref name="point" /> by using <paramref name="matrix" />.</returns>
         <remarks>
@@ -661,7 +661,7 @@
       </Parameters>
       <Docs>
         <param name="point1">The <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure on which to perform subtraction.</param>
-        <param name="point2">The <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure to subtract from <c>point1</c>.</param>
+        <param name="point2">The <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure to subtract from <paramref name="point1" />.</param>
         <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure and returns the result as a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
         <returns>A <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure that represents the difference between <paramref name="point1" /> and <paramref name="point2" />.</returns>
         <remarks>
@@ -784,7 +784,7 @@
       </Parameters>
       <Docs>
         <param name="point1">The <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure to be subtracted from.</param>
-        <param name="point2">The <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure to subtract from <c>point1</c>.</param>
+        <param name="point2">The <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure to subtract from <paramref name="point1" />.</param>
         <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure and returns the result as a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
         <returns>A <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure that represents the difference between <paramref name="point1" /> and <paramref name="point2" />.</returns>
         <remarks>
@@ -822,8 +822,8 @@
         <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
       </Parameters>
       <Docs>
-        <param name="point">The <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure from which to subtract <c>vector</c>.</param>
-        <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to subtract from <c>point</c>.</param>
+        <param name="point">The <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure from which to subtract <paramref name="vector" />.</param>
+        <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to subtract from <paramref name="point" />.</param>
         <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure and returns the result as a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
         <returns>The difference between <paramref name="point" /> and <paramref name="vector" />.</returns>
         <remarks>

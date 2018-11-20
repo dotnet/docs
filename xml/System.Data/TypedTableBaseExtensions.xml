@@ -137,8 +137,8 @@
         <Parameter Name="keySelector" Type="System.Func&lt;TRow,TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TRow">The type of the row elements in <paramref name="source" />, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">A <see cref="T:System.Data.TypedTableBase`1" /> that contains the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <summary>Sorts the rows of a <see cref="T:System.Data.TypedTableBase`1" /> in ascending order according to the specified key.</summary>
@@ -176,8 +176,8 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TRow">The type of the row elements in <paramref name="source" />, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">A <see cref="T:System.Data.TypedTableBase`1" /> that contains the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <param name="comparer">An <see cref="T:System.Collections.Generic.IComparer`1" /> to compare keys.</param>
@@ -224,8 +224,8 @@
         <Parameter Name="keySelector" Type="System.Func&lt;TRow,TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TRow">The type of the row elements in <paramref name="source" />, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">A <see cref="T:System.Data.TypedTableBase`1" /> that contains the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <summary>Sorts the rows of a <see cref="T:System.Data.TypedTableBase`1" /> in descending order according to the specified key.</summary>
@@ -263,8 +263,8 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TRow">The type of the row elements in <paramref name="source" />, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">A <see cref="T:System.Data.TypedTableBase`1" /> that contains the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <param name="comparer">An <see cref="T:System.Collections.Generic.IComparer`1" /> to compare keys.</param>
@@ -302,7 +302,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TRow,S&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TRow">The type of the row elements in <paramref name="source" />, <see cref="T:System.Data.DataRow" />.</typeparam>
         <typeparam name="S">To be added.</typeparam>
         <param name="source">A <see cref="T:System.Data.TypedTableBase`1" /> that contains the <see cref="T:System.Data.DataRow" /> elements to invoke a transformation function upon.</param>
         <param name="selector">A transformation function to apply to each element.</param>
@@ -346,7 +346,7 @@
         <Parameter Name="predicate" Type="System.Func&lt;TRow,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TRow">The type of the row elements in <paramref name="source" />, <see cref="T:System.Data.DataRow" />.</typeparam>
         <param name="source">A <see cref="T:System.Data.TypedTableBase`1" /> that contains the <see cref="T:System.Data.DataRow" /> elements to filter.</param>
         <param name="predicate">A function to test each element for a condition.</param>
         <summary>Filters a sequence of rows based on the specified predicate.</summary>

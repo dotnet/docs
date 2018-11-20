@@ -191,7 +191,7 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="index">The position in an array at which to retain the <c>s</c> parameter value.</param>
+        <param name="index">The position in an array at which to retain the <paramref name="s" /> parameter value.</param>
         <param name="s">A <see cref="T:System.String" /> containing the value for the data-bound expression.</param>
         <summary>Assigns a string value to an array containing data-bound values.</summary>
         <remarks>To be added.</remarks>
@@ -219,7 +219,7 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="index">The position in an array at which to retain the <c>s</c> parameter value.</param>
+        <param name="index">The position in an array at which to retain the <paramref name="s" /> parameter value.</param>
         <param name="s">A <see cref="T:System.String" /> containing the value for the data-bound expression.</param>
         <summary>Assigns a string value to an array containing static values.</summary>
         <remarks>To be added.</remarks>

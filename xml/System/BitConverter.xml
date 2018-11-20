@@ -1017,7 +1017,7 @@
       </Parameters>
       <Docs>
         <param name="value">A byte array.</param>
-        <param name="startIndex">The index of the byte within <c>value</c>.</param>
+        <param name="startIndex">The index of the byte within <paramref name="value" />.</param>
         <summary>Returns a Boolean value converted from the byte at a specified position in a byte array.</summary>
         <returns>
           <see langword="true" /> if the byte at <paramref name="startIndex" /> in <paramref name="value" /> is nonzero; otherwise, <see langword="false" />.</returns>
@@ -1112,7 +1112,7 @@
       </Parameters>
       <Docs>
         <param name="value">An array.</param>
-        <param name="startIndex">The starting position within <c>value</c>.</param>
+        <param name="startIndex">The starting position within <paramref name="value" />.</param>
         <summary>Returns a Unicode character converted from two bytes at a specified position in a byte array.</summary>
         <returns>A character formed by two bytes beginning at <paramref name="startIndex" />.</returns>
         <remarks>
@@ -1213,7 +1213,7 @@
       </Parameters>
       <Docs>
         <param name="value">An array of bytes.</param>
-        <param name="startIndex">The starting position within <c>value</c>.</param>
+        <param name="startIndex">The starting position within <paramref name="value" />.</param>
         <summary>Returns a double-precision floating point number converted from eight bytes at a specified position in a byte array.</summary>
         <returns>A double precision floating point number formed by eight bytes beginning at <paramref name="startIndex" />.</returns>
         <remarks>
@@ -1314,7 +1314,7 @@
       </Parameters>
       <Docs>
         <param name="value">An array of bytes.</param>
-        <param name="startIndex">The starting position within <c>value</c>.</param>
+        <param name="startIndex">The starting position within <paramref name="value" />.</param>
         <summary>Returns a 16-bit signed integer converted from two bytes at a specified position in a byte array.</summary>
         <returns>A 16-bit signed integer formed by two bytes beginning at <paramref name="startIndex" />.</returns>
         <remarks>
@@ -1415,7 +1415,7 @@
       </Parameters>
       <Docs>
         <param name="value">An array of bytes.</param>
-        <param name="startIndex">The starting position within <c>value</c>.</param>
+        <param name="startIndex">The starting position within <paramref name="value" />.</param>
         <summary>Returns a 32-bit signed integer converted from four bytes at a specified position in a byte array.</summary>
         <returns>A 32-bit signed integer formed by four bytes beginning at <paramref name="startIndex" />.</returns>
         <remarks>
@@ -1515,7 +1515,7 @@
       </Parameters>
       <Docs>
         <param name="value">An array of bytes.</param>
-        <param name="startIndex">The starting position within <c>value</c>.</param>
+        <param name="startIndex">The starting position within <paramref name="value" />.</param>
         <summary>Returns a 64-bit signed integer converted from eight bytes at a specified position in a byte array.</summary>
         <returns>A 64-bit signed integer formed by eight bytes beginning at <paramref name="startIndex" />.</returns>
         <remarks>
@@ -1616,7 +1616,7 @@
       </Parameters>
       <Docs>
         <param name="value">An array of bytes.</param>
-        <param name="startIndex">The starting position within <c>value</c>.</param>
+        <param name="startIndex">The starting position within <paramref name="value" />.</param>
         <summary>Returns a single-precision floating point number converted from four bytes at a specified position in a byte array.</summary>
         <returns>A single-precision floating point number formed by four bytes beginning at <paramref name="startIndex" />.</returns>
         <remarks>
@@ -1751,7 +1751,7 @@
       </Parameters>
       <Docs>
         <param name="value">An array of bytes.</param>
-        <param name="startIndex">The starting position within <c>value</c>.</param>
+        <param name="startIndex">The starting position within <paramref name="value" />.</param>
         <summary>Converts the numeric value of each element of a specified subarray of bytes to its equivalent hexadecimal string representation.</summary>
         <returns>A string of hexadecimal pairs separated by hyphens, where each pair represents the corresponding element in a subarray of <paramref name="value" />; for example, "7F-2C-4A-00".</returns>
         <remarks>
@@ -1814,8 +1814,8 @@
       </Parameters>
       <Docs>
         <param name="value">An array of bytes.</param>
-        <param name="startIndex">The starting position within <c>value</c>.</param>
-        <param name="length">The number of array elements in <c>value</c> to convert.</param>
+        <param name="startIndex">The starting position within <paramref name="value" />.</param>
+        <param name="length">The number of array elements in <paramref name="value" /> to convert.</param>
         <summary>Converts the numeric value of each element of a specified subarray of bytes to its equivalent hexadecimal string representation.</summary>
         <returns>A string of hexadecimal pairs separated by hyphens, where each pair represents the corresponding element in a subarray of <paramref name="value" />; for example, "7F-2C-4A-00".</returns>
         <remarks>
@@ -1925,7 +1925,7 @@
       </Parameters>
       <Docs>
         <param name="value">The array of bytes.</param>
-        <param name="startIndex">The starting position within <c>value</c>.</param>
+        <param name="startIndex">The starting position within <paramref name="value" />.</param>
         <summary>Returns a 16-bit unsigned integer converted from two bytes at a specified position in a byte array.</summary>
         <returns>A 16-bit unsigned integer formed by two bytes beginning at <paramref name="startIndex" />.</returns>
         <remarks>
@@ -2031,7 +2031,7 @@
       </Parameters>
       <Docs>
         <param name="value">An array of bytes.</param>
-        <param name="startIndex">The starting position within <c>value</c>.</param>
+        <param name="startIndex">The starting position within <paramref name="value" />.</param>
         <summary>Returns a 32-bit unsigned integer converted from four bytes at a specified position in a byte array.</summary>
         <returns>A 32-bit unsigned integer formed by four bytes beginning at <paramref name="startIndex" />.</returns>
         <remarks>
@@ -2137,7 +2137,7 @@
       </Parameters>
       <Docs>
         <param name="value">An array of bytes.</param>
-        <param name="startIndex">The starting position within <c>value</c>.</param>
+        <param name="startIndex">The starting position within <paramref name="value" />.</param>
         <summary>Returns a 64-bit unsigned integer converted from eight bytes at a specified position in a byte array.</summary>
         <returns>A 64-bit unsigned integer formed by the eight bytes beginning at <paramref name="startIndex" />.</returns>
         <remarks>

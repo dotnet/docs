@@ -621,7 +621,7 @@
       </Parameters>
       <Docs>
         <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
-        <param name="state">A user-defined object that contains information about the receive operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
+        <param name="state">A user-defined object that contains information about the receive operation. This object is passed to the <paramref name="requestCallback" /> delegate when the operation is complete.</param>
         <summary>Receives a datagram from a remote host asynchronously.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object that references the asynchronous receive.</returns>
         <remarks>
@@ -697,7 +697,7 @@
         <param name="datagram">A <see cref="T:System.Byte" /> array that contains the data to be sent.</param>
         <param name="bytes">The number of bytes to send.</param>
         <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
-        <param name="state">A user-defined object that contains information about the send operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
+        <param name="state">A user-defined object that contains information about the send operation. This object is passed to the <paramref name="requestCallback" /> delegate when the operation is complete.</param>
         <summary>Sends a datagram to a remote host asynchronously. The destination was specified previously by a call to <see cref="Overload:System.Net.Sockets.UdpClient.Connect" />.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object that references the asynchronous send.</returns>
         <remarks>
@@ -763,7 +763,7 @@
         <param name="bytes">The number of bytes to send.</param>
         <param name="endPoint">The <see cref="T:System.Net.EndPoint" /> that represents the destination for the data.</param>
         <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
-        <param name="state">A user-defined object that contains information about the send operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
+        <param name="state">A user-defined object that contains information about the send operation. This object is passed to the <paramref name="requestCallback" /> delegate when the operation is complete.</param>
         <summary>Sends a datagram to a destination asynchronously. The destination is specified by a <see cref="T:System.Net.EndPoint" />.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object that references the asynchronous send.</returns>
         <remarks>
@@ -831,7 +831,7 @@
         <param name="hostname">The destination host.</param>
         <param name="port">The destination port number.</param>
         <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
-        <param name="state">A user-defined object that contains information about the send operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
+        <param name="state">A user-defined object that contains information about the send operation. This object is passed to the <paramref name="requestCallback" /> delegate when the operation is complete.</param>
         <summary>Sends a datagram to a destination asynchronously. The destination is specified by the host name and port number.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object that references the asynchronous send.</returns>
         <remarks>

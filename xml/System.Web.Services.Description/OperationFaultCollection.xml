@@ -236,7 +236,7 @@
         <Parameter Name="operationFaultMessage" Type="System.Web.Services.Description.OperationFault" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the <c>operationFaultMessage</c> parameter.</param>
+        <param name="index">The zero-based index at which to insert the <paramref name="operationFaultMessage" /> parameter.</param>
         <param name="operationFaultMessage">The <see cref="T:System.Web.Services.Description.OperationFault" /> to add to the collection.</param>
         <summary>Adds the specified <see cref="T:System.Web.Services.Description.OperationFault" /> to the <see cref="T:System.Web.Services.Description.OperationFaultCollection" /> at the specified zero-based index.</summary>
         <remarks>

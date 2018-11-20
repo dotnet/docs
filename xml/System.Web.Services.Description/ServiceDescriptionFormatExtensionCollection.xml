@@ -426,7 +426,7 @@
         <Parameter Name="extension" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the <c>extension</c> parameter.</param>
+        <param name="index">The zero-based index at which to insert the <paramref name="extension" /> parameter.</param>
         <param name="extension">The <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtension" /> to add to the collection.</param>
         <summary>Adds the specified <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtension" /> to the <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> at the specified zero-based index.</summary>
         <remarks>

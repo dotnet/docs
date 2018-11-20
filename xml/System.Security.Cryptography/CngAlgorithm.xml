@@ -587,7 +587,7 @@
       </Parameters>
       <Docs>
         <param name="left">An object that specifies an algorithm name.</param>
-        <param name="right">A second object, to be compared to the object that is identified by the <c>left</c> parameter.</param>
+        <param name="right">A second object, to be compared to the object that is identified by the <paramref name="left" /> parameter.</param>
         <summary>Determines whether two <see cref="T:System.Security.Cryptography.CngAlgorithm" /> objects specify the same algorithm name.</summary>
         <returns>
           <see langword="true" /> if the two objects specify the same algorithm name; otherwise, <see langword="false" />.</returns>
@@ -627,7 +627,7 @@
       </Parameters>
       <Docs>
         <param name="left">An object that specifies an algorithm name.</param>
-        <param name="right">A second object, to be compared to the object that is identified by the <c>left</c> parameter.</param>
+        <param name="right">A second object, to be compared to the object that is identified by the <paramref name="left" /> parameter.</param>
         <summary>Determines whether two <see cref="T:System.Security.Cryptography.CngAlgorithm" /> objects do not specify the same algorithm.</summary>
         <returns>
           <see langword="true" /> if the two objects do not specify the same algorithm name; otherwise, <see langword="false" />.</returns>

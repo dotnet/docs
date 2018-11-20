@@ -316,7 +316,7 @@
         <Parameter Name="format" Type="System.Web.UI.Design.DesignerAutoFormat" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index within the collection at which to insert <c>format</c>.</param>
+        <param name="index">The zero-based index within the collection at which to insert <paramref name="format" />.</param>
         <param name="format">The <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> to insert into the collection.</param>
         <summary>Inserts a <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> object into the collection at the specified index.</summary>
         <remarks>
@@ -828,7 +828,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The index at which to insert <c>value</c>.</param>
+        <param name="index">The index at which to insert <paramref name="value" />.</param>
         <param name="value">A <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> to insert.</param>
         <summary>Inserts an item into the collection at the specified index when the <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> object is cast to an <see cref="T:System.Collections.IList" /> interface.</summary>
         <remarks>

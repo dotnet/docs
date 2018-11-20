@@ -118,7 +118,7 @@
       <Docs>
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="type">The <see cref="T:System.Type" /> of the instance to return.</param>
-        <param name="parameters">The parameters to pass to the constructor for <c>type</c>.</param>
+        <param name="parameters">The parameters to pass to the constructor for <paramref name="type" />.</param>
         <param name="name">The name of the deserialized object.</param>
         <param name="addToContainer">
           <see langword="true" /> to add this object to the design container; otherwise, <see langword="false" />. The object must implement <see cref="T:System.ComponentModel.IComponent" /> for this to have any effect.</param>
@@ -555,7 +555,7 @@
       </Parameters>
       <Docs>
         <param name="provider">The type description provider service.</param>
-        <param name="instance">An object from which the type description provider service can be derived, if <c>provider</c> is <see langword="null" />.</param>
+        <param name="instance">An object from which the type description provider service can be derived, if <paramref name="provider" /> is <see langword="null" />.</param>
         <summary>Gets a <see cref="T:System.ComponentModel.TypeDescriptionProvider" /> that is aware of the target version of the .NET Framework, for use in type filtering.</summary>
         <returns>A .NET Framework-aware type description provider.</returns>
         <remarks>To be added.</remarks>
@@ -723,7 +723,7 @@
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="value">The object to serialize.</param>
         <param name="isComplete">
-          <see langword="true" /> if <c>value</c> was fully serialized; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> was fully serialized; otherwise, <see langword="false" />.</param>
         <summary>Returns an expression representing the creation of the given object.</summary>
         <returns>An expression representing the creation of <paramref name="value" />.</returns>
         <remarks>
@@ -767,7 +767,7 @@
       <Docs>
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="statements">The <see cref="T:System.CodeDom.CodeStatementCollection" /> into which the event will be serialized.</param>
-        <param name="value">The object to which <c>descriptor</c> is bound.</param>
+        <param name="value">The object to which <paramref name="descriptor" /> is bound.</param>
         <param name="descriptor">An <see cref="T:System.ComponentModel.EventDescriptor" /> specifying the event to serialize.</param>
         <summary>Serializes the given event into the given statement collection.</summary>
         <remarks>
@@ -1011,7 +1011,7 @@
       </Parameters>
       <Docs>
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
-        <param name="resourceName">The name of the resource bundle into which <c>value</c> will be serialized.</param>
+        <param name="resourceName">The name of the resource bundle into which <paramref name="value" /> will be serialized.</param>
         <param name="value">The object to serialize.</param>
         <summary>Serializes the given object into a resource bundle using the given resource name.</summary>
         <remarks>
@@ -1057,7 +1057,7 @@
       </Parameters>
       <Docs>
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
-        <param name="resourceName">The name of the resource bundle into which <c>value</c> will be serialized.</param>
+        <param name="resourceName">The name of the resource bundle into which <paramref name="value" /> will be serialized.</param>
         <param name="value">The object to serialize.</param>
         <summary>Serializes the given object into a resource bundle using the given resource name.</summary>
         <remarks>
@@ -1280,7 +1280,7 @@
       <Docs>
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="value">The object to serialize.</param>
-        <param name="expression">The <see cref="T:System.CodeDom.CodeExpression" /> with which to associate <c>value</c>.</param>
+        <param name="expression">The <see cref="T:System.CodeDom.CodeExpression" /> with which to associate <paramref name="value" />.</param>
         <summary>Associates an object with an expression.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1322,7 +1322,7 @@
       <Docs>
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="value">The object to serialize.</param>
-        <param name="expression">The <see cref="T:System.CodeDom.CodeExpression" /> with which to associate <c>value</c>.</param>
+        <param name="expression">The <see cref="T:System.CodeDom.CodeExpression" /> with which to associate <paramref name="value" />.</param>
         <param name="isPreset">
           <see langword="true" /> to specify a preset expression; otherwise, <see langword="false" />.</param>
         <summary>Associates an object with an expression, optionally specifying a preset expression.</summary>

@@ -2184,7 +2184,7 @@
         <Parameter Name="buffer" Type="System.Char[]" />
       </Parameters>
       <Docs>
-        <param name="buffer">The character array to write to the text stream. If <c>buffer</c> is <see langword="null" />, nothing is written.</param>
+        <param name="buffer">The character array to write to the text stream. If <paramref name="buffer" /> is <see langword="null" />, nothing is written.</param>
         <summary>Writes a character array to the text string or stream asynchronously.</summary>
         <returns>A task that represents the asynchronous write operation.</returns>
         <remarks>To be added.</remarks>
@@ -2234,7 +2234,7 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The string to write. If <c>value</c> is <see langword="null" />, nothing is written to the text stream.</param>
+        <param name="value">The string to write. If <paramref name="value" /> is <see langword="null" />, nothing is written to the text stream.</param>
         <summary>Writes a string to the text string or stream asynchronously.</summary>
         <returns>A task that represents the asynchronous write operation.</returns>
         <remarks>
@@ -2878,7 +2878,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">The object to write. If <c>value</c> is <see langword="null" />, only the line terminator is written.</param>
+        <param name="value">The object to write. If <paramref name="value" /> is <see langword="null" />, only the line terminator is written.</param>
         <summary>Writes the text representation of an object by calling the <see langword="ToString" /> method on that object, followed by a line terminator to the text string or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3036,7 +3036,7 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The string to write. If <c>value</c> is <see langword="null" />, only the line terminator is written.</param>
+        <param name="value">The string to write. If <paramref name="value" /> is <see langword="null" />, only the line terminator is written.</param>
         <summary>Writes a string followed by a line terminator to the text string or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3439,7 +3439,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">The character array from which data is read.</param>
-        <param name="index">The character position in <c>buffer</c> at which to start reading data.</param>
+        <param name="index">The character position in <paramref name="buffer" /> at which to start reading data.</param>
         <param name="count">The maximum number of characters to write.</param>
         <summary>Writes a subarray of characters followed by a line terminator to the text string or stream.</summary>
         <remarks>

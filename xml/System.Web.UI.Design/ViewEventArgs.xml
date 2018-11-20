@@ -79,7 +79,7 @@
       <Docs>
         <param name="eventType">The type of action that raised the event; used to initialize the <see cref="P:System.Web.UI.Design.ViewEventArgs.EventType" />.</param>
         <param name="region">The designer region that the action applies to; used to initialize the <see cref="P:System.Web.UI.Design.ViewEventArgs.Region" />.</param>
-        <param name="eventArgs">The event arguments associated with <c>eventType</c>; used to initialize the <see cref="P:System.Web.UI.Design.ViewEventArgs.EventArgs" />.</param>
+        <param name="eventArgs">The event arguments associated with <paramref name="eventType" />; used to initialize the <see cref="P:System.Web.UI.Design.ViewEventArgs.EventArgs" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.ViewEventArgs" /> class for the type of view event on the design surface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

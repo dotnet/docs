@@ -2369,7 +2369,7 @@ namespace SampleSynthesis
       <Docs>
         <param name="gender">The gender of the voice to use.</param>
         <param name="age">The age of the voice to use.</param>
-        <param name="voiceAlternate">An integer that specifies a preferred voice when more than one voice matches the <c>gender</c> and <c>age</c> parameters.</param>
+        <param name="voiceAlternate">An integer that specifies a preferred voice when more than one voice matches the <paramref name="gender" /> and <paramref name="age" /> parameters.</param>
         <summary>Instructs the synthesizer to change the voice in the <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object and specifies its gender, age, and a preferred voice that matches the specified gender and age.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

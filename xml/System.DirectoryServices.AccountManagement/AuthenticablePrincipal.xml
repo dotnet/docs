@@ -472,7 +472,7 @@
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the incorrect password try. This parameter is used with the type parameter to determine the range of time in which the returned objects have an incorrect logon try recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a collection of authentication principal objects that have an incorrect password try recorded in the specified date and time range.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects, or an empty collection if no results are found.</returns>
         <remarks>
@@ -516,7 +516,7 @@
         <typeparam name="T">To be added.</typeparam>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of objects that have a bad password attempt within the specified date and time range. This is the template function for extended classes that wish to implement this functionality.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
         <remarks>
@@ -560,7 +560,7 @@
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the account expiration. This parameter is used with the type parameter to determine the range of time in which the returned objects have an account expiration recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a collection of authentication principal objects that have an account expiration time recorded in the specified date and time range.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects.</returns>
         <remarks>
@@ -603,7 +603,7 @@
         <typeparam name="T">To be added.</typeparam>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of objects that have an expiration time within the specified date and time range. This is the template function for extended classes that wish to implement this functionality.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
         <remarks>
@@ -647,7 +647,7 @@
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the account lockout. This parameter is used with the type parameter to determine the range of time in which the returned objects have an account lockout recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a collection of authentication principal objects that have an account lockout time recorded in the specified date and time range.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects.</returns>
         <remarks>
@@ -690,7 +690,7 @@
         <typeparam name="T">To be added.</typeparam>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of objects that have a lockout time within the specified date and time range. This is the template function for extended classes that wish to implement this functionality.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
         <remarks>
@@ -734,7 +734,7 @@
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the logon record. This parameter is used with the type parameter to determine the range of time in which the returned objects have an account logon recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a collection of authentication principal objects that have an account logon recorded in the specified date and time range.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects.</returns>
         <remarks>
@@ -806,7 +806,7 @@ ctx.Dispose();
         <typeparam name="T">To be added.</typeparam>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of objects that have a logon time within the specified date and time range. This is the template function for extended classes that wish to implement this functionality.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
         <remarks>
@@ -850,7 +850,7 @@ ctx.Dispose();
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a collection of authentication principal objects that have an account password set recorded in the specified date and time range.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects.</returns>
         <remarks>
@@ -893,7 +893,7 @@ ctx.Dispose();
         <typeparam name="T">To be added.</typeparam>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of objects that have a password set time within the specified date and time range.  This is the template function for extended classes that wish to implement this functionality.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
         <remarks>

@@ -328,7 +328,7 @@
       </Parameters>
       <Docs>
         <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when a client request is available.</param>
-        <param name="state">A user-defined object that contains information about the operation. This object is passed to the <c>callback</c> delegate when the operation completes.</param>
+        <param name="state">A user-defined object that contains information about the operation. This object is passed to the <paramref name="callback" /> delegate when the operation completes.</param>
         <summary>Begins asynchronously retrieving an incoming request.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object that indicates the status of the asynchronous operation.</returns>
         <remarks>

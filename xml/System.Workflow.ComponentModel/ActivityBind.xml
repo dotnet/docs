@@ -216,7 +216,7 @@ Returns the run-time value.
       </Parameters>
       <Docs>
         <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns this bind.</param>
-        <param name="targetType">The <see cref="T:System.Type" /> of the object if a <see cref="T:System.Delegate" />; otherwise a null reference (<see langword="Nothing" /> in Visual Basic). <c>activity</c> is null.</param>
+        <param name="targetType">The <see cref="T:System.Type" /> of the object if a <see cref="T:System.Delegate" />; otherwise a null reference (<see langword="Nothing" /> in Visual Basic). <paramref name="activity" /> is null.</param>
         <summary>Gets the <see cref="T:System.Object" /> representing the run-time value of this <see cref="T:System.Workflow.ComponentModel.ActivityBind" />.</summary>
         <returns>The <see cref="T:System.Object" /> representing the run-time value of this <see cref="T:System.Workflow.ComponentModel.ActivityBind" />.</returns>
         <remarks>To be added.</remarks>

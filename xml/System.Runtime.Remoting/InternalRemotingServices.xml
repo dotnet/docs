@@ -172,7 +172,7 @@
       <Docs>
         <param name="condition">
           <see langword="true" /> to prevent a message from being displayed; otherwise, <see langword="false" />.</param>
-        <param name="message">The message to display if <c>condition</c> is <see langword="false" />.</param>
+        <param name="message">The message to display if <paramref name="condition" /> is <see langword="false" />.</param>
         <summary>Instructs an internal debugger to check for a condition and display a message if the condition is <see langword="false" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

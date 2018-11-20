@@ -158,7 +158,7 @@
       </Parameters>
       <Docs>
         <param name="propertyName">The name of the property to map.</param>
-        <param name="translator">The <see cref="T:System.Windows.Forms.Integration.PropertyTranslator" /> delegate which is called when <c>propertyName</c> changes.</param>
+        <param name="translator">The <see cref="T:System.Windows.Forms.Integration.PropertyTranslator" /> delegate which is called when <paramref name="propertyName" /> changes.</param>
         <summary>Adds a <see cref="T:System.Windows.Forms.Integration.PropertyTranslator" /> delegate for the given property to the <see cref="T:System.Windows.Forms.Integration.PropertyMap" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

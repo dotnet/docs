@@ -702,7 +702,7 @@
       </Parameters>
       <Docs>
         <param name="emailToMatch">The email address to search for.</param>
-        <param name="pageIndex">The index of the page of results to return. <c>pageIndex</c> is zero-based.</param>
+        <param name="pageIndex">The index of the page of results to return. <paramref name="pageIndex" /> is zero-based.</param>
         <param name="pageSize">The size of the page of results to return.</param>
         <param name="totalRecords">The total number of matched users.</param>
         <summary>Gets a collection of membership users, in a page of data, where the email address contains the specified email address to match.</summary>
@@ -830,7 +830,7 @@
       </Parameters>
       <Docs>
         <param name="usernameToMatch">The user name to search for.</param>
-        <param name="pageIndex">The index of the page of results to return. <c>pageIndex</c> is zero-based.</param>
+        <param name="pageIndex">The index of the page of results to return. <paramref name="pageIndex" /> is zero-based.</param>
         <param name="pageSize">The size of the page of results to return.</param>
         <param name="totalRecords">The total number of matched users.</param>
         <summary>Gets a collection of membership users, in a page of data, where the user name contains the specified user name to match.</summary>
@@ -1003,7 +1003,7 @@
       </Parameters>
       <Docs>
         <param name="pageIndex">The index of the page of results to return. Use 0 to indicate the first page.</param>
-        <param name="pageSize">The size of the page of results to return. <c>pageIndex</c> is zero-based.</param>
+        <param name="pageSize">The size of the page of results to return. <paramref name="pageIndex" /> is zero-based.</param>
         <param name="totalRecords">The total number of users.</param>
         <summary>Gets a collection of all the users in the database in pages of data.</summary>
         <returns>A <see cref="T:System.Web.Security.MembershipUserCollection" /> of <see cref="T:System.Web.Security.MembershipUser" /> objects representing all the users in the database for the configured <see langword="applicationName" />.</returns>

@@ -164,7 +164,7 @@
         <Parameter Name="method" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="target">The class instance on which the delegate invokes <c>method</c>.</param>
+        <param name="target">The class instance on which the delegate invokes <paramref name="method" />.</param>
         <param name="method">The name of the instance method that the delegate represents.</param>
         <summary>Initializes a delegate that invokes the specified instance method on the specified class instance.</summary>
         <remarks>
@@ -223,7 +223,7 @@
         <Parameter Name="method" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="target">The <see cref="T:System.Type" /> representing the class that defines <c>method</c>.</param>
+        <param name="target">The <see cref="T:System.Type" /> representing the class that defines <paramref name="method" />.</param>
         <param name="method">The name of the static method that the delegate represents.</param>
         <summary>Initializes a delegate that invokes the specified static method from the specified class.</summary>
         <remarks>
@@ -686,7 +686,7 @@
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> of delegate to create.</param>
-        <param name="firstArgument">The object to which the delegate is bound, or <see langword="null" /> to treat <c>method</c> as <see langword="static" /> (<see langword="Shared" /> in Visual Basic).</param>
+        <param name="firstArgument">The object to which the delegate is bound, or <see langword="null" /> to treat <paramref name="method" /> as <see langword="static" /> (<see langword="Shared" /> in Visual Basic).</param>
         <param name="method">The <see cref="T:System.Reflection.MethodInfo" /> describing the static or instance method the delegate is to represent.</param>
         <summary>Creates a delegate of the specified type that represents the specified static or instance method, with the specified first argument.</summary>
         <returns>A delegate of the specified type that represents the specified static or instance method.</returns>
@@ -886,7 +886,7 @@
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> of delegate to create.</param>
-        <param name="target">The class instance on which <c>method</c> is invoked.</param>
+        <param name="target">The class instance on which <paramref name="method" /> is invoked.</param>
         <param name="method">The name of the instance method that the delegate is to represent.</param>
         <summary>Creates a delegate of the specified type that represents the specified instance method to invoke on the specified class instance.</summary>
         <returns>A delegate of the specified type that represents the specified instance method to invoke on the specified class instance.</returns>
@@ -977,7 +977,7 @@
         <param name="type">The <see cref="T:System.Type" /> of delegate to create.</param>
         <param name="method">The <see cref="T:System.Reflection.MethodInfo" /> describing the static or instance method the delegate is to represent.</param>
         <param name="throwOnBindFailure">
-          <see langword="true" /> to throw an exception if <c>method</c> cannot be bound; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to throw an exception if <paramref name="method" /> cannot be bound; otherwise, <see langword="false" />.</param>
         <summary>Creates a delegate of the specified type to represent the specified static method, with the specified behavior on failure to bind.</summary>
         <returns>A delegate of the specified type to represent the specified static method.</returns>
         <remarks>
@@ -1116,7 +1116,7 @@
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> of delegate to create.</param>
-        <param name="target">The <see cref="T:System.Type" /> representing the class that implements <c>method</c>.</param>
+        <param name="target">The <see cref="T:System.Type" /> representing the class that implements <paramref name="method" />.</param>
         <param name="method">The name of the static method that the delegate is to represent.</param>
         <summary>Creates a delegate of the specified type that represents the specified static method of the specified class.</summary>
         <returns>A delegate of the specified type that represents the specified static method of the specified class.</returns>
@@ -1217,7 +1217,7 @@
         <param name="firstArgument">An <see cref="T:System.Object" /> that is the first argument of the method the delegate represents. For instance methods, it must be compatible with the instance type.</param>
         <param name="method">The <see cref="T:System.Reflection.MethodInfo" /> describing the static or instance method the delegate is to represent.</param>
         <param name="throwOnBindFailure">
-          <see langword="true" /> to throw an exception if <c>method</c> cannot be bound; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to throw an exception if <paramref name="method" /> cannot be bound; otherwise, <see langword="false" />.</param>
         <summary>Creates a delegate of the specified type that represents the specified static or instance method, with the specified first argument and the specified behavior on failure to bind.</summary>
         <returns>A delegate of the specified type that represents the specified static or instance method, or <see langword="null" /> if <paramref name="throwOnBindFailure" /> is <see langword="false" /> and the delegate cannot be bound to <paramref name="method" />.</returns>
         <remarks>
@@ -1417,7 +1417,7 @@
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> of delegate to create.</param>
-        <param name="target">The class instance on which <c>method</c> is invoked.</param>
+        <param name="target">The class instance on which <paramref name="method" /> is invoked.</param>
         <param name="method">The name of the instance method that the delegate is to represent.</param>
         <param name="ignoreCase">A Boolean indicating whether to ignore the case when comparing the name of the method.</param>
         <summary>Creates a delegate of the specified type that represents the specified instance method to invoke on the specified class instance with the specified case-sensitivity.</summary>
@@ -1503,7 +1503,7 @@
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> of delegate to create.</param>
-        <param name="target">The <see cref="T:System.Type" /> representing the class that implements <c>method</c>.</param>
+        <param name="target">The <see cref="T:System.Type" /> representing the class that implements <paramref name="method" />.</param>
         <param name="method">The name of the static method that the delegate is to represent.</param>
         <param name="ignoreCase">A Boolean indicating whether to ignore the case when comparing the name of the method.</param>
         <summary>Creates a delegate of the specified type that represents the specified static method of the specified class, with the specified case-sensitivity.</summary>
@@ -1603,11 +1603,11 @@
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> of delegate to create.</param>
-        <param name="target">The class instance on which <c>method</c> is invoked.</param>
+        <param name="target">The class instance on which <paramref name="method" /> is invoked.</param>
         <param name="method">The name of the instance method that the delegate is to represent.</param>
         <param name="ignoreCase">A Boolean indicating whether to ignore the case when comparing the name of the method.</param>
         <param name="throwOnBindFailure">
-          <see langword="true" /> to throw an exception if <c>method</c> cannot be bound; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to throw an exception if <paramref name="method" /> cannot be bound; otherwise, <see langword="false" />.</param>
         <summary>Creates a delegate of the specified type that represents the specified instance method to invoke on the specified class instance, with the specified case-sensitivity and the specified behavior on failure to bind.</summary>
         <returns>A delegate of the specified type that represents the specified instance method to invoke on the specified class instance.</returns>
         <remarks>
@@ -1695,11 +1695,11 @@
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> of delegate to create.</param>
-        <param name="target">The <see cref="T:System.Type" /> representing the class that implements <c>method</c>.</param>
+        <param name="target">The <see cref="T:System.Type" /> representing the class that implements <paramref name="method" />.</param>
         <param name="method">The name of the static method that the delegate is to represent.</param>
         <param name="ignoreCase">A Boolean indicating whether to ignore the case when comparing the name of the method.</param>
         <param name="throwOnBindFailure">
-          <see langword="true" /> to throw an exception if <c>method</c> cannot be bound; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to throw an exception if <paramref name="method" /> cannot be bound; otherwise, <see langword="false" />.</param>
         <summary>Creates a delegate of the specified type that represents the specified static method of the specified class, with the specified case-sensitivity and the specified behavior on failure to bind.</summary>
         <returns>A delegate of the specified type that represents the specified static method of the specified class.</returns>
         <remarks>
@@ -2398,8 +2398,8 @@
         <Parameter Name="value" Type="System.Delegate" />
       </Parameters>
       <Docs>
-        <param name="source">The delegate from which to remove the invocation list of <c>value</c>.</param>
-        <param name="value">The delegate that supplies the invocation list to remove from the invocation list of <c>source</c>.</param>
+        <param name="source">The delegate from which to remove the invocation list of <paramref name="value" />.</param>
+        <param name="value">The delegate that supplies the invocation list to remove from the invocation list of <paramref name="source" />.</param>
         <summary>Removes the last occurrence of the invocation list of a delegate from the invocation list of another delegate.</summary>
         <returns>A new delegate with an invocation list formed by taking the invocation list of <paramref name="source" /> and removing the last occurrence of the invocation list of <paramref name="value" />, if the invocation list of <paramref name="value" /> is found within the invocation list of <paramref name="source" />. Returns <paramref name="source" /> if <paramref name="value" /> is <see langword="null" /> or if the invocation list of <paramref name="value" /> is not found within the invocation list of <paramref name="source" />. Returns a null reference if the invocation list of <paramref name="value" /> is equal to the invocation list of <paramref name="source" /> or if <paramref name="source" /> is a null reference.</returns>
         <remarks>
@@ -2454,8 +2454,8 @@
         <Parameter Name="value" Type="System.Delegate" />
       </Parameters>
       <Docs>
-        <param name="source">The delegate from which to remove the invocation list of <c>value</c>.</param>
-        <param name="value">The delegate that supplies the invocation list to remove from the invocation list of <c>source</c>.</param>
+        <param name="source">The delegate from which to remove the invocation list of <paramref name="value" />.</param>
+        <param name="value">The delegate that supplies the invocation list to remove from the invocation list of <paramref name="source" />.</param>
         <summary>Removes all occurrences of the invocation list of a delegate from the invocation list of another delegate.</summary>
         <returns>A new delegate with an invocation list formed by taking the invocation list of <paramref name="source" /> and removing all occurrences of the invocation list of <paramref name="value" />, if the invocation list of <paramref name="value" /> is found within the invocation list of <paramref name="source" />. Returns <paramref name="source" /> if <paramref name="value" /> is <see langword="null" /> or if the invocation list of <paramref name="value" /> is not found within the invocation list of <paramref name="source" />. Returns a null reference if the invocation list of <paramref name="value" /> is equal to the invocation list of <paramref name="source" />, if <paramref name="source" /> contains only a series of invocation lists that are equal to the invocation list of <paramref name="value" />, or if <paramref name="source" /> is a null reference.</returns>
         <remarks>

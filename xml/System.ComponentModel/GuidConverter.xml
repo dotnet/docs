@@ -279,7 +279,7 @@
       </Parameters>
       <Docs>
         <param name="context">A formatter context.</param>
-        <param name="culture">The culture into which <c>value</c> will be converted.</param>
+        <param name="culture">The culture into which <paramref name="value" /> will be converted.</param>
         <param name="value">The object to convert.</param>
         <param name="destinationType">The type to convert the object to.</param>
         <summary>Converts the given object to another type.</summary>

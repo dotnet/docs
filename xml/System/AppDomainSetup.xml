@@ -1158,7 +1158,7 @@
       <Docs>
         <param name="functionName">The name of the string comparison function to override.</param>
         <param name="functionVersion">The function version. For [!INCLUDE[net_v45](~/includes/net-v45-md.md)], its value must be 1 or greater.</param>
-        <param name="functionPointer">A pointer to the function that overrides <c>functionName</c>.</param>
+        <param name="functionPointer">A pointer to the function that overrides <paramref name="functionName" />.</param>
         <summary>Provides the common language runtime with an alternate implementation of a string comparison function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

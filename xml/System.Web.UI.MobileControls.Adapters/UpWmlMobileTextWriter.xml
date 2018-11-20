@@ -304,7 +304,7 @@
       <Docs>
         <param name="targetUrl">The URL target.</param>
         <param name="encodeUrl">Set to <see langword="true" /> if the URL is encoded.</param>
-        <param name="softkeyLabel">The softkey text to use for the link if the <c>mapToSoftkey</c> parameter is set to <see langword="true" />.</param>
+        <param name="softkeyLabel">The softkey text to use for the link if the <paramref name="mapToSoftkey" /> parameter is set to <see langword="true" />.</param>
         <param name="implicitSoftkeyLabel">Set to <see langword="true" /> if the softkey label comes from the adapter itself (the default label, or something else that is adapter-specified, such as "Call" for a <see cref="T:System.Web.UI.MobileControls.PhoneCall" /> control), rather than being a softkey label explicitly specified by the application author.</param>
         <param name="mapToSoftkey">Set to <see langword="true" /> if mapping to a softkey on the device.</param>
         <summary>Begins rendering a hyperlink element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
@@ -348,7 +348,7 @@
         <Parameter Name="mapToSoftkey" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="softkeyLabel">The softkey text to use for the link if the <c>mapToSoftkey</c> parameter is set to <see langword="true" />.</param>
+        <param name="softkeyLabel">The softkey text to use for the link if the <paramref name="mapToSoftkey" /> parameter is set to <see langword="true" />.</param>
         <param name="implicitSoftkeyLabel">Set to <see langword="true" /> if the softkey label comes from the adapter itself (the default label, or something else that is adapter-specified, such as "Call" for a <see cref="T:System.Web.UI.MobileControls.PhoneCall" /> control), rather than being a softkey label explicitly specified by the application author.</param>
         <param name="mapToSoftkey">Set to <see langword="true" /> if mapping to a softkey on the device.</param>
         <summary>Begins the rendering of a postback. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>

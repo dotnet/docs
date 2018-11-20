@@ -100,7 +100,7 @@
         <param name="methodName">The name of the XML Web service method.</param>
         <param name="requestUrl">The URL to use when creating the <see cref="T:System.Net.WebRequest" />.</param>
         <param name="parameters">An array of objects containing the parameters to pass to the XML Web service method. The order of the values in the array corresponds to the order of the parameters in the calling method of the derived class.</param>
-        <param name="callback">The delegate to call when the asynchronous method call is complete. If <c>callback</c> is <see langword="null" />, the delegate is not called.</param>
+        <param name="callback">The delegate to call when the asynchronous method call is complete. If <paramref name="callback" /> is <see langword="null" />, the delegate is not called.</param>
         <param name="asyncState">The additional information supplied by a client.</param>
         <summary>Starts an asynchronous invocation of a method of an XML Web service.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> that can be passed to the <see cref="M:System.Web.Services.Protocols.HttpSimpleClientProtocol.EndInvoke(System.IAsyncResult)" /> method to obtain the return values from the XML Web service method.</returns>
@@ -310,7 +310,7 @@
         <param name="requestUrl">The request URL of the invoked web service.</param>
         <param name="parameters">The parameters to pass to the method.</param>
         <param name="callback">The delegate called when the method invocation has completed.</param>
-        <param name="userState">An object containing associated state information that is passed to the <c>callback</c> delegate when the method has completed.</param>
+        <param name="userState">An object containing associated state information that is passed to the <paramref name="callback" /> delegate when the method has completed.</param>
         <summary>Invokes the specified method asynchronously while maintaining an associated state.</summary>
         <remarks>To be added.</remarks>
       </Docs>

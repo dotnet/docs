@@ -694,7 +694,7 @@
         <Parameter Name="origin" Type="System.IO.SeekOrigin" />
       </Parameters>
       <Docs>
-        <param name="offset">A byte offset relative to <c>origin</c>.</param>
+        <param name="offset">A byte offset relative to <paramref name="origin" />.</param>
         <param name="origin">A field of <see cref="T:System.IO.SeekOrigin" /> indicating the reference point from which the new position is to be obtained.</param>
         <summary>Sets the position within the current stream.</summary>
         <returns>The position with the current stream.</returns>
@@ -1944,8 +1944,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">A byte array containing the data to write.</param>
-        <param name="index">The index of the first byte to read from <c>buffer</c> and to write to the stream.</param>
-        <param name="count">The number of bytes to read from <c>buffer</c> and to write to the stream.</param>
+        <param name="index">The index of the first byte to read from <paramref name="buffer" /> and to write to the stream.</param>
+        <param name="count">The number of bytes to read from <paramref name="buffer" /> and to write to the stream.</param>
         <summary>Writes a region of a byte array to the current stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2015,8 +2015,8 @@
       </Parameters>
       <Docs>
         <param name="chars">A character array containing the data to write.</param>
-        <param name="index">The index of the first character to read from <c>chars</c> and to write to the stream.</param>
-        <param name="count">The number of characters to read from <c>chars</c> and to write to the stream.</param>
+        <param name="index">The index of the first character to read from <paramref name="chars" /> and to write to the stream.</param>
+        <param name="count">The number of characters to read from <paramref name="chars" /> and to write to the stream.</param>
         <summary>Writes a section of a character array to the current stream, and advances the current position of the stream in accordance with the <see langword="Encoding" /> used and perhaps the specific characters being written to the stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

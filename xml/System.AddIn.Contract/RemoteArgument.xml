@@ -620,7 +620,7 @@
       <Docs>
         <param name="value">An <see cref="T:System.AddIn.Contract.IContract" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.AddIn.Contract.IContract" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -698,7 +698,7 @@
       <Docs>
         <param name="array">An <see cref="T:System.Array" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>array</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="array" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Array" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -733,7 +733,7 @@
       <Docs>
         <param name="value">A <see cref="T:System.Boolean" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Boolean" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -765,7 +765,7 @@
       <Docs>
         <param name="value">A <see cref="T:System.Byte" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Byte" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -797,7 +797,7 @@
       <Docs>
         <param name="value">A <see cref="T:System.Char" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Char" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -829,7 +829,7 @@
       <Docs>
         <param name="value">A <see cref="T:System.DateTime" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.DateTime" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -861,7 +861,7 @@
       <Docs>
         <param name="value">A <see cref="T:System.DBNull" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.DBNull" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -893,7 +893,7 @@
       <Docs>
         <param name="value">A <see cref="T:System.Decimal" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Decimal" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -925,7 +925,7 @@
       <Docs>
         <param name="value">A <see cref="T:System.Double" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Double" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -957,7 +957,7 @@
       <Docs>
         <param name="value">An <see cref="T:System.Int16" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Int16" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -989,7 +989,7 @@
       <Docs>
         <param name="value">An <see cref="T:System.Int32" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Int32" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1021,7 +1021,7 @@
       <Docs>
         <param name="value">An <see cref="T:System.Int64" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.Int64" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1058,7 +1058,7 @@
       <Docs>
         <param name="value">An <see cref="T:System.SByte" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents an <see cref="T:System.SByte" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1090,7 +1090,7 @@
       <Docs>
         <param name="value">A <see cref="T:System.Single" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.Single" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1122,7 +1122,7 @@
       <Docs>
         <param name="value">A <see cref="T:System.String" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.String" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1159,7 +1159,7 @@
       <Docs>
         <param name="value">A <see cref="T:System.UInt16" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.UInt16" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1196,7 +1196,7 @@
       <Docs>
         <param name="value">A <see cref="T:System.UInt32" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.UInt32" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1233,7 +1233,7 @@
       <Docs>
         <param name="value">A <see cref="T:System.UInt64" /> argument that can be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> if <c>value</c> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="value" /> is an argument that is passed by reference; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Contract.RemoteArgument" /> class that represents a <see cref="T:System.UInt64" /> argument that can be passed by reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1532,7 +1532,7 @@
       <Docs>
         <param name="value">The argument that will be passed across process or application domain boundaries.</param>
         <param name="isByRef">
-          <see langword="true" /> to pass the <c>value</c> argument by reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to pass the <paramref name="value" /> argument by reference; otherwise, <see langword="false" />.</param>
         <summary>Creates a <see cref="T:System.AddIn.Contract.RemoteArgument" /> for an argument that can be passed by reference.</summary>
         <returns>A <see cref="T:System.AddIn.Contract.RemoteArgument" /> that represents the specified argument.</returns>
         <remarks>
@@ -1585,7 +1585,7 @@
         <param name="value">The argument that will be passed across process or application domain boundaries.</param>
         <param name="isByRef">
           <see langword="true" /> to pass the argument by reference; otherwise, <see langword="false" />.</param>
-        <param name="typeCodeToUse">A <see cref="T:System.TypeCode" /> that indicates the type code of <c>value</c>, if <c>value</c> is not an <see cref="T:System.Array" />. Otherwise, a <see cref="T:System.TypeCode" /> that indicates the type code of the elements in <c>value</c>.</param>
+        <param name="typeCodeToUse">A <see cref="T:System.TypeCode" /> that indicates the type code of <paramref name="value" />, if <paramref name="value" /> is not an <see cref="T:System.Array" />. Otherwise, a <see cref="T:System.TypeCode" /> that indicates the type code of the elements in <paramref name="value" />.</param>
         <summary>Creates a <see cref="T:System.AddIn.Contract.RemoteArgument" /> for an argument that has the specified type code and that can be passed by reference.</summary>
         <returns>A <see cref="T:System.AddIn.Contract.RemoteArgument" /> that represents the specified argument.</returns>
         <remarks>

@@ -149,7 +149,7 @@ NODEID URL            NAME       PARENTNODEID
       </Parameters>
       <Docs>
         <param name="node">The <see cref="T:System.Web.SiteMapNode" /> to add to the site map provider.</param>
-        <param name="parentNode">The <see cref="T:System.Web.SiteMapNode" /> under which to add <c>node</c>.</param>
+        <param name="parentNode">The <see cref="T:System.Web.SiteMapNode" /> under which to add <paramref name="node" />.</param>
         <summary>Adds a <see cref="T:System.Web.SiteMapNode" /> to the collections that are maintained by the site map provider and establishes a parent/child relationship between the <see cref="T:System.Web.SiteMapNode" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

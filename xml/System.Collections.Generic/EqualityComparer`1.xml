@@ -214,7 +214,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>Implementations are required to ensure that if the <see cref="M:System.Collections.Generic.EqualityComparer`1.Equals(`0,`0)" /> method returns <see langword="true" /> for two objects <c>x</c> and <c>y</c>, then the value returned by the <see cref="M:System.Collections.Generic.EqualityComparer`1.GetHashCode(`0)" /> method for <c>x</c> must equal the value returned for <c>y</c>.</para>
+          <para>Implementations are required to ensure that if the <see cref="M:System.Collections.Generic.EqualityComparer`1.Equals(`0,`0)" /> method returns <see langword="true" /> for two objects <paramref name="x" /> and <paramref name="y" />, then the value returned by the <see cref="M:System.Collections.Generic.EqualityComparer`1.GetHashCode(`0)" /> method for <paramref name="x" /> must equal the value returned for <paramref name="y" />.</para>
         </block>
       </Docs>
     </Member>
@@ -259,7 +259,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The type of <paramref name="obj" /> is a reference type and <paramref name="obj" /> is <see langword="null" />.</exception>
         <block subset="none" type="overrides">
-          <para>Implementations are required to ensure that if the <see cref="M:System.Collections.Generic.EqualityComparer`1.Equals(`0,`0)" /> method returns <see langword="true" /> for two objects <c>x</c> and <c>y</c>, then the value returned by the <see cref="M:System.Collections.Generic.EqualityComparer`1.GetHashCode(`0)" /> method for <c>x</c> must equal the value returned for <c>y</c>.</para>
+          <para>Implementations are required to ensure that if the <see cref="M:System.Collections.Generic.EqualityComparer`1.Equals(`0,`0)" /> method returns <see langword="true" /> for two objects <paramref name="x" /> and <paramref name="y" />, then the value returned by the <see cref="M:System.Collections.Generic.EqualityComparer`1.GetHashCode(`0)" /> method for <paramref name="x" /> must equal the value returned for <paramref name="y" />.</para>
         </block>
       </Docs>
     </Member>

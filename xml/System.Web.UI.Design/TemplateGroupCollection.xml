@@ -280,7 +280,7 @@
       </Parameters>
       <Docs>
         <param name="array">The <see cref="T:System.Array" /> that is the destination of the copied groups. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the groups in the collection to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -404,7 +404,7 @@
         <Parameter Name="group" Type="System.Web.UI.Design.TemplateGroup" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index within the collection at which to insert <c>group</c>.</param>
+        <param name="index">The zero-based index within the collection at which to insert <paramref name="group" />.</param>
         <param name="group">The <see cref="T:System.Web.UI.Design.TemplateGroup" /> to insert into the collection.</param>
         <summary>Inserts a <see cref="T:System.Web.UI.Design.TemplateGroup" /> object into the collection at the specified index.</summary>
         <remarks>
@@ -588,7 +588,7 @@
       </Parameters>
       <Docs>
         <param name="array">The <see cref="T:System.Array" /> that is the destination of the copied groups. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -930,7 +930,7 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index within the collection at which to insert <c>o</c>.</param>
+        <param name="index">The zero-based index within the collection at which to insert <paramref name="o" />.</param>
         <param name="o">The object to insert into the collection.</param>
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>

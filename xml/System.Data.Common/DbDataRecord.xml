@@ -249,7 +249,7 @@
         <param name="i">The zero-based column ordinal.</param>
         <param name="dataIndex">The index within the field from which to start the read operation.</param>
         <param name="buffer">The buffer into which to read the stream of bytes.</param>
-        <param name="bufferIndex">The index for <c>buffer</c> to start the read operation.</param>
+        <param name="bufferIndex">The index for <paramref name="buffer" /> to start the read operation.</param>
         <param name="length">The number of bytes to read.</param>
         <summary>Returns the value of the specified column as a byte array.</summary>
         <returns>The value of the specified column.</returns>

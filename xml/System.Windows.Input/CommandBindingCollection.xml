@@ -265,7 +265,7 @@
       </Parameters>
       <Docs>
         <param name="commandBindings">The array into which the collection is copied.</param>
-        <param name="index">The index position in <c>commandBindings</c> at which copying starts.</param>
+        <param name="index">The index position in <paramref name="commandBindings" /> at which copying starts.</param>
         <summary>Copies all of the items in the <see cref="T:System.Windows.Input.CommandBindingCollection" /> to the specified one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -373,7 +373,7 @@
         <Parameter Name="commandBinding" Type="System.Windows.Input.CommandBinding" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert <c>commandBinding</c></param>
+        <param name="index">The zero-based index at which to insert <paramref name="commandBinding" /></param>
         <param name="commandBinding">The binding to insert.</param>
         <summary>Inserts the specified <see cref="T:System.Windows.Input.CommandBinding" /> into this <see cref="T:System.Windows.Input.CommandBindingCollection" /> at the specified index.</summary>
         <remarks>To be added.</remarks>

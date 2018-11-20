@@ -432,7 +432,7 @@
       </Parameters>
       <Docs>
         <param name="child">The child control for which design mode will be enabled.</param>
-        <param name="name">The name of <c>child</c> as exposed to the end user.</param>
+        <param name="name">The name of <paramref name="child" /> as exposed to the end user.</param>
         <summary>Enables design time functionality for a child control.</summary>
         <returns>
           <see langword="true" /> if the child control could be enabled for design time; <see langword="false" /> if the hosting infrastructure does not support it.</returns>

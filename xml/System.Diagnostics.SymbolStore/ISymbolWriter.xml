@@ -284,7 +284,7 @@
         <param name="name">The field name.</param>
         <param name="attributes">A bitwise combination of the field attributes.</param>
         <param name="signature">The field signature.</param>
-        <param name="addrKind">The address types for <c>addr1</c> and <c>addr2</c>.</param>
+        <param name="addrKind">The address types for <paramref name="addr1" /> and <paramref name="addr2" />.</param>
         <param name="addr1">The first address for the field specification.</param>
         <param name="addr2">The second address for the field specification.</param>
         <param name="addr3">The third address for the field specification.</param>
@@ -339,7 +339,7 @@
         <param name="name">The global variable name.</param>
         <param name="attributes">A bitwise combination of the global variable attributes.</param>
         <param name="signature">The global variable signature.</param>
-        <param name="addrKind">The address types for <c>addr1</c>, <c>addr2</c>, and <c>addr3</c>.</param>
+        <param name="addrKind">The address types for <paramref name="addr1" />, <paramref name="addr2" />, and <paramref name="addr3" />.</param>
         <param name="addr1">The first address for the global variable specification.</param>
         <param name="addr2">The second address for the global variable specification.</param>
         <param name="addr3">The third address for the global variable specification.</param>
@@ -389,7 +389,7 @@
         <param name="name">The local variable name.</param>
         <param name="attributes">A bitwise combination of the local variable attributes.</param>
         <param name="signature">The local variable signature.</param>
-        <param name="addrKind">The address types for <c>addr1</c>, <c>addr2</c>, and <c>addr3</c>.</param>
+        <param name="addrKind">The address types for <paramref name="addr1" />, <paramref name="addr2" />, and <paramref name="addr3" />.</param>
         <param name="addr1">The first address for the local variable specification.</param>
         <param name="addr2">The second address for the local variable specification.</param>
         <param name="addr3">The third address for the local variable specification.</param>
@@ -448,7 +448,7 @@
         <param name="name">The parameter name.</param>
         <param name="attributes">A bitwise combination of the parameter attributes.</param>
         <param name="sequence">The parameter signature.</param>
-        <param name="addrKind">The address types for <c>addr1</c>, <c>addr2</c>, and <c>addr3</c>.</param>
+        <param name="addrKind">The address types for <paramref name="addr1" />, <paramref name="addr2" />, and <paramref name="addr3" />.</param>
         <param name="addr1">The first address for the parameter specification.</param>
         <param name="addr2">The second address for the parameter specification.</param>
         <param name="addr3">The third address for the parameter specification.</param>

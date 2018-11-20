@@ -83,7 +83,7 @@
       <Docs>
         <param name="hostNameOrAddress">The host name or IP address to resolve.</param>
         <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
-        <param name="state">A user-defined object that contains information about the operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
+        <param name="state">A user-defined object that contains information about the operation. This object is passed to the <paramref name="requestCallback" /> delegate when the operation is complete.</param>
         <summary>Asynchronously returns the Internet Protocol (IP) addresses for the specified host.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> instance that references the asynchronous request.</returns>
         <remarks>
@@ -157,7 +157,7 @@
       <Docs>
         <param name="hostName">The DNS name of the host.</param>
         <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
-        <param name="stateObject">A user-defined object that contains information about the operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
+        <param name="stateObject">A user-defined object that contains information about the operation. This object is passed to the <paramref name="requestCallback" /> delegate when the operation is complete.</param>
         <summary>Begins an asynchronous request for <see cref="T:System.Net.IPHostEntry" /> information about the specified DNS host name.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> instance that references the asynchronous request.</returns>
         <remarks>
@@ -226,7 +226,7 @@
       <Docs>
         <param name="address">The IP address to resolve.</param>
         <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
-        <param name="stateObject">A user-defined object that contains information about the operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
+        <param name="stateObject">A user-defined object that contains information about the operation. This object is passed to the <paramref name="requestCallback" /> delegate when the operation is complete.</param>
         <summary>Asynchronously resolves an IP address to an <see cref="T:System.Net.IPHostEntry" /> instance.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> instance that references the asynchronous request.</returns>
         <remarks>
@@ -296,7 +296,7 @@
       <Docs>
         <param name="hostNameOrAddress">The host name or IP address to resolve.</param>
         <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
-        <param name="stateObject">A user-defined object that contains information about the operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
+        <param name="stateObject">A user-defined object that contains information about the operation. This object is passed to the <paramref name="requestCallback" /> delegate when the operation is complete.</param>
         <summary>Asynchronously resolves a host name or IP address to an <see cref="T:System.Net.IPHostEntry" /> instance.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> instance that references the asynchronous request.</returns>
         <remarks>
@@ -376,7 +376,7 @@
       <Docs>
         <param name="hostName">The DNS name of the host.</param>
         <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
-        <param name="stateObject">A user-defined object that contains information about the operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
+        <param name="stateObject">A user-defined object that contains information about the operation. This object is passed to the <paramref name="requestCallback" /> delegate when the operation is complete.</param>
         <summary>Begins an asynchronous request to resolve a DNS host name or IP address to an <see cref="T:System.Net.IPAddress" /> instance.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> instance that references the asynchronous request.</returns>
         <remarks>

@@ -1090,7 +1090,7 @@
         <Parameter Name="channel" Type="System.Diagnostics.Tracing.EventChannel" />
       </Parameters>
       <Docs>
-        <param name="level">The event level to check. An event source will be considered enabled when its level is greater than or equal to <c>level</c>.</param>
+        <param name="level">The event level to check. An event source will be considered enabled when its level is greater than or equal to <paramref name="level" />.</param>
         <param name="keywords">The event keywords to check.</param>
         <param name="channel">The event channel to check.</param>
         <summary>Determines whether the current event source is enabled for events with the specified level, keywords and channel.</summary>
@@ -3168,7 +3168,7 @@ class AnotherEventSource : EventSource {
         <param name="eventId">An identifier that uniquely identifies this event within the <see cref="T:System.Diagnostics.Tracing.EventSource" />.</param>
         <param name="relatedActivityId">A pointer to the GUID of the related activity ID.</param>
         <param name="childActivityID">To be added.</param>
-        <param name="eventDataCount">The number of items in the <c>data</c> field.</param>
+        <param name="eventDataCount">The number of items in the <paramref name="data" /> field.</param>
         <param name="data">A pointer to the first item in the event data field.</param>
         <summary>Writes an event that indicates that the current activity is related to another activity.</summary>
         <remarks>

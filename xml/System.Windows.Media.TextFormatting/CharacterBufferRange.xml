@@ -92,7 +92,7 @@
       <Docs>
         <param name="characterArray">The character array.</param>
         <param name="offsetToFirstChar">The character buffer offset to the first character.</param>
-        <param name="characterLength">The number of characters in <c>characterArray</c> to use.</param>
+        <param name="characterLength">The number of characters in <paramref name="characterArray" /> to use.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferRange" /> structure from a character array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,7 +118,7 @@
       <Docs>
         <param name="characterString">The character string.</param>
         <param name="offsetToFirstChar">The character buffer offset to the first character.</param>
-        <param name="characterLength">The number of characters in <c>characterString</c> to use.</param>
+        <param name="characterLength">The number of characters in <paramref name="characterString" /> to use.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferRange" /> structure from a character string.</summary>
         <remarks>To be added.</remarks>
       </Docs>

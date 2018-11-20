@@ -48,7 +48,7 @@
       </Parameters>
       <Docs>
         <param name="throwException">
-          <see langword="true" /> to raise the <see cref="T:System.Exception" /> specified by <c>exception</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to raise the <see cref="T:System.Exception" /> specified by <paramref name="exception" />; otherwise, <see langword="false" />.</param>
         <param name="exception">The <see cref="T:System.Exception" /> to raise.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Integration.IntegrationExceptionEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>

@@ -236,7 +236,7 @@
       </Parameters>
       <Docs>
         <param name="host">A <see cref="T:System.String" /> that contains the name or IP address of the host used for SMTP transactions.</param>
-        <param name="port">An <see cref="T:System.Int32" /> greater than zero that contains the port to be used on <c>host</c>.</param>
+        <param name="port">An <see cref="T:System.Int32" /> greater than zero that contains the port to be used on <paramref name="host" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpClient" /> class that sends email by using the specified SMTP server and port.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

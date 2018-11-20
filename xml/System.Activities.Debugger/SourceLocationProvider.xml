@@ -46,7 +46,7 @@
       </Parameters>
       <Docs>
         <param name="rootActivity1">A workflow element that represents an activity that is not mapped to a source location.</param>
-        <param name="rootActivity2">A workflow element that shadows <c>rootActivity1</c> but has specific source locations to which its members are mapped.</param>
+        <param name="rootActivity2">A workflow element that shadows <paramref name="rootActivity1" /> but has specific source locations to which its members are mapped.</param>
         <param name="mapping">A dictionary object that contains a root activity and its descendants, each mapped to a source location.</param>
         <param name="path">The path of the source file to use.</param>
         <summary>Creates to a dictionary type collection of mappings of the root activity and its descendants to their corresponding source locations.</summary>

@@ -120,9 +120,9 @@
       <Docs>
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the check box.</param>
         <param name="glyphLocation">The <see cref="T:System.Drawing.Point" /> to draw the check box glyph at.</param>
-        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <c>checkBoxText</c> in.</param>
+        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <paramref name="checkBoxText" /> in.</param>
         <param name="checkBoxText">The <see cref="T:System.String" /> to draw with the check box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>checkBoxText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="checkBoxText" />.</param>
         <param name="focused">
           <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.CheckBoxState" /> values that specifies the visual state of the check box.</param>
@@ -165,9 +165,9 @@
       <Docs>
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the check box.</param>
         <param name="glyphLocation">The <see cref="T:System.Drawing.Point" /> to draw the check box glyph at.</param>
-        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <c>checkBoxText</c> in.</param>
+        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <paramref name="checkBoxText" /> in.</param>
         <param name="checkBoxText">The <see cref="T:System.String" /> to draw with the check box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>checkBoxText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="checkBoxText" />.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
         <param name="focused">
           <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
@@ -226,11 +226,11 @@
       <Docs>
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the check box.</param>
         <param name="glyphLocation">The <see cref="T:System.Drawing.Point" /> to draw the check box glyph at.</param>
-        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <c>checkBoxText</c> in.</param>
+        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <paramref name="checkBoxText" /> in.</param>
         <param name="checkBoxText">The <see cref="T:System.String" /> to draw with the check box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>checkBoxText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="checkBoxText" />.</param>
         <param name="image">The <see cref="T:System.Drawing.Image" /> to draw with the check box.</param>
-        <param name="imageBounds">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of <c>image</c>.</param>
+        <param name="imageBounds">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of <paramref name="image" />.</param>
         <param name="focused">
           <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.CheckBoxState" /> values that specifies the visual state of the check box.</param>
@@ -275,12 +275,12 @@
       <Docs>
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the check box.</param>
         <param name="glyphLocation">The <see cref="T:System.Drawing.Point" /> to draw the check box glyph at.</param>
-        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <c>checkBoxText</c> in.</param>
+        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <paramref name="checkBoxText" /> in.</param>
         <param name="checkBoxText">The <see cref="T:System.String" /> to draw with the check box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>checkBoxText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="checkBoxText" />.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
         <param name="image">The <see cref="T:System.Drawing.Image" /> to draw with the check box.</param>
-        <param name="imageBounds">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of <c>image</c>.</param>
+        <param name="imageBounds">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of <paramref name="image" />.</param>
         <param name="focused">
           <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.CheckBoxState" /> values that specifies the visual state of the check box.</param>
@@ -317,7 +317,7 @@
         <Parameter Name="childControl" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the background of the parent of <c>childControl</c>.</param>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the background of the parent of <paramref name="childControl" />.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> in which to draw the parent control's background. This rectangle should be inside the child control’s bounds.</param>
         <param name="childControl">The control whose parent's background will be drawn.</param>
         <summary>Draws the background of a control's parent in the specified area.</summary>

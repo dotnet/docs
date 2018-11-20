@@ -241,7 +241,7 @@
       </Parameters>
       <Docs>
         <param name="source">The source object that the handler delegate subscribes to.</param>
-        <param name="handler">The delegate that handles the event that is raised by <c>source</c>.</param>
+        <param name="handler">The delegate that handles the event that is raised by <paramref name="source" />.</param>
         <summary>Adds the specified delegate as an event handler of the specified source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -307,7 +307,7 @@
       </Parameters>
       <Docs>
         <param name="source">The source to remove the handler from.</param>
-        <param name="handler">The delegate to remove from <c>source</c>.</param>
+        <param name="handler">The delegate to remove from <paramref name="source" />.</param>
         <summary>Removes the previously added handler from the specified source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -377,7 +377,7 @@
         <param name="source">The source for events being listened to.</param>
         <param name="data">The data to check. This object is expected to be a <see cref="T:System.Windows.WeakEventManager.ListenerList" /> implementation.</param>
         <param name="purgeAll">
-          <see langword="true" /> to stop listening to <c>source</c>, and completely remove all entries from <c>data</c>.</param>
+          <see langword="true" /> to stop listening to <paramref name="source" />, and completely remove all entries from <paramref name="data" />.</param>
         <summary>Removes inactive listener entries from the data list for the provided source. Returns <see langword="true" /> if some entries were actually removed from the list.</summary>
         <returns>
           <see langword="true" /> if some entries were actually removed; otherwise, <see langword="false" />.</returns>

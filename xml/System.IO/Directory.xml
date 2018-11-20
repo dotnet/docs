@@ -460,7 +460,7 @@ Directory::CreateDirectory("Public\\Html");
       <Docs>
         <param name="path">The name of the directory to remove.</param>
         <param name="recursive">
-          <see langword="true" /> to remove directories, subdirectories, and files in <c>path</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to remove directories, subdirectories, and files in <paramref name="path" />; otherwise, <see langword="false" />.</param>
         <summary>Deletes the specified directory and, if indicated, any subdirectories and files in the directory.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -631,7 +631,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of directories in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of directories in <paramref name="path" />.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <summary>Returns an enumerable collection of directory names that match a search pattern in a specified path.</summary>
         <returns>An enumerable collection of the full names (including paths) for the directories in the directory specified by <paramref name="path" /> and that match the specified search pattern.</returns>
         <remarks>
@@ -752,7 +752,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of directories in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of directories in <paramref name="path" />.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or should include all subdirectories.  
   
  The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
@@ -925,7 +925,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of files in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of files in <paramref name="path" />.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <summary>Returns an enumerable collection of file names that match a search pattern in a specified path.</summary>
         <returns>An enumerable collection of the full names (including paths) for the files in the directory specified by <paramref name="path" /> and that match the specified search pattern.</returns>
         <remarks>
@@ -1059,7 +1059,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of files in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of files in <paramref name="path" />.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or should include all subdirectories.  
   
  The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
@@ -1232,7 +1232,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of file-system entries in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of file-system entries in <paramref name="path" />.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <summary>Returns an enumerable collection of file names and directory names that  match a search pattern in a specified path.</summary>
         <returns>An enumerable collection of file-system entries in the directory specified by <paramref name="path" /> and that match the specified search pattern.</returns>
         <remarks>
@@ -1353,7 +1353,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against file-system entries in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against file-system entries in <paramref name="path" />.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values  that specifies whether the search operation should include only the current directory or should include all subdirectories.  
   
  The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
@@ -1973,7 +1973,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of subdirectories in <c>path</c>. This parameter can contain a combination of valid literal and wildcard characters, but it doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of subdirectories in <paramref name="path" />. This parameter can contain a combination of valid literal and wildcard characters, but it doesn't support regular expressions.</param>
         <summary>Returns the names of subdirectories (including their paths) that match the specified search pattern in the specified directory.</summary>
         <returns>An array of the full names (including paths) of the subdirectories that match the search pattern in the specified directory, or an empty array if no directories are found.</returns>
         <remarks>
@@ -2097,7 +2097,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of subdirectories in <c>path</c>. This parameter can contain a combination of valid literal and wildcard characters, but it doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of subdirectories in <paramref name="path" />. This parameter can contain a combination of valid literal and wildcard characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include all subdirectories or only the current directory.</param>
         <summary>Returns the names of the subdirectories (including their paths) that match the specified search pattern in the specified directory, and optionally searches subdirectories.</summary>
         <returns>An array of the full names (including paths) of the subdirectories that match the specified criteria, or an empty array if no directories are found.</returns>
@@ -2356,7 +2356,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of files in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of files in <paramref name="path" />.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <summary>Returns the names of files (including their paths) that match the specified search pattern in the specified directory.</summary>
         <returns>An array of the full names (including paths) for the files in the specified directory that match the specified search pattern, or an empty array if no files are found.</returns>
         <remarks>
@@ -2496,7 +2496,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of files in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of files in <paramref name="path" />.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include all subdirectories or only the current directory.</param>
         <summary>Returns the names of files (including their paths) that match the specified search pattern in the specified directory, using a value to determine whether to search subdirectories.</summary>
         <returns>An array of the full names (including paths) for the files in the specified directory that match the specified search pattern and option, or an empty array if no files are found.</returns>
@@ -2688,7 +2688,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of file and directories in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of file and directories in <paramref name="path" />.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <summary>Returns an array of file names and directory names that that match a search pattern in a specified path.</summary>
         <returns>An array of file names and directory names that match the specified search criteria, or an empty array if no files or directories are found.</returns>
         <remarks>
@@ -2820,7 +2820,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
-        <param name="searchPattern">The search string to match against the names of files and directories in <c>path</c>.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
+        <param name="searchPattern">The search string to match against the names of files and directories in <paramref name="path" />.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or should include all subdirectories.  
   
  The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
@@ -3382,7 +3382,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="sourceDirName">The path of the file or directory to move.</param>
-        <param name="destDirName">The path to the new location for <c>sourceDirName</c>. If <c>sourceDirName</c> is a file, then <c>destDirName</c> must also be a file name.</param>
+        <param name="destDirName">The path to the new location for <paramref name="sourceDirName" />. If <paramref name="sourceDirName" /> is a file, then <paramref name="destDirName" /> must also be a file name.</param>
         <summary>Moves a file or a directory and its contents to a new location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3465,7 +3465,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">A directory to add or remove access control list (ACL) entries from.</param>
-        <param name="directorySecurity">A <see cref="T:System.Security.AccessControl.DirectorySecurity" /> object that describes an ACL entry to apply to the directory described by the <c>path</c> parameter.</param>
+        <param name="directorySecurity">A <see cref="T:System.Security.AccessControl.DirectorySecurity" /> object that describes an ACL entry to apply to the directory described by the <paramref name="path" /> parameter.</param>
         <summary>Applies access control list (ACL) entries described by a <see cref="T:System.Security.AccessControl.DirectorySecurity" /> object to the specified directory.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3777,7 +3777,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The file or directory for which to set the access date and time information.</param>
-        <param name="lastAccessTime">An object that contains the value to set for the access date and time of <c>path</c>. This value is expressed in local time.</param>
+        <param name="lastAccessTime">An object that contains the value to set for the access date and time of <paramref name="path" />. This value is expressed in local time.</param>
         <summary>Sets the date and time the specified file or directory was last accessed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3856,7 +3856,7 @@ Directory::CreateDirectory("Public\\Html");
       </Parameters>
       <Docs>
         <param name="path">The file or directory for which to set the access date and time information.</param>
-        <param name="lastAccessTimeUtc">An object that  contains the value to set for the access date and time of <c>path</c>. This value is expressed in UTC time.</param>
+        <param name="lastAccessTimeUtc">An object that  contains the value to set for the access date and time of <paramref name="path" />. This value is expressed in UTC time.</param>
         <summary>Sets the date and time, in Coordinated Universal Time (UTC) format, that the specified file or directory was last accessed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

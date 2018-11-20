@@ -205,7 +205,7 @@
         <Parameter Name="algorithmName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithmName">The HMAC implementation to use. The following table shows the valid values for the <c>algorithmName</c> parameter and the algorithms they map to.  
+        <param name="algorithmName">The HMAC implementation to use. The following table shows the valid values for the <paramref name="algorithmName" /> parameter and the algorithms they map to.  
   
  <list type="table"><listheader><term> Parameter value  
   

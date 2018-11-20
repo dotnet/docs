@@ -145,7 +145,7 @@
         <param name="identity">The identity to which the access rule applies.</param>
         <param name="rights">The rights of the access rule.</param>
         <param name="inheritanceFlags">The inheritance properties of the access rule.</param>
-        <param name="propagationFlags">Whether inherited access rules are automatically propagated. The propagation flags are ignored if <c>inheritanceFlags</c> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
+        <param name="propagationFlags">Whether inherited access rules are automatically propagated. The propagation flags are ignored if <paramref name="inheritanceFlags" /> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
         <param name="type">The valid access control type.</param>
         <summary>Initializes a new instance of the AccessRule’1 class by using the specified values.</summary>
         <remarks>To be added.</remarks>
@@ -180,7 +180,7 @@
         <param name="identity">The identity to which the access rule applies.</param>
         <param name="rights">The rights of the access rule.</param>
         <param name="inheritanceFlags">The inheritance properties of the access rule.</param>
-        <param name="propagationFlags">Whether inherited access rules are automatically propagated. The propagation flags are ignored if <c>inheritanceFlags</c> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
+        <param name="propagationFlags">Whether inherited access rules are automatically propagated. The propagation flags are ignored if <paramref name="inheritanceFlags" /> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
         <param name="type">The valid access control type.</param>
         <summary>Initializes a new instance of the AccessRule’1 class by using the specified values.</summary>
         <remarks>To be added.</remarks>

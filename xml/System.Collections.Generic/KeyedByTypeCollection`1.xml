@@ -239,7 +239,7 @@
         <Parameter Name="kind" Type="TItem" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>item</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
         <param name="item">The object to insert into the collection.</param>
         <param name="kind">The object to insert into the collection.</param>
         <summary>Inserts an element into the collection at a specific location.</summary>
@@ -353,7 +353,7 @@
         <Parameter Name="kind" Type="TItem" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index of the <c>item</c> to be replaced.</param>
+        <param name="index">The zero-based index of the <paramref name="item" /> to be replaced.</param>
         <param name="item">The object to add to the collection.</param>
         <param name="kind">The object to add to the collection.</param>
         <summary>Replaces the item at the specified index with a new object.</summary>

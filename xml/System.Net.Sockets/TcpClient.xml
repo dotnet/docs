@@ -464,7 +464,7 @@
         <param name="address">The <see cref="T:System.Net.IPAddress" /> of the remote host.</param>
         <param name="port">The port number of the remote host.</param>
         <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
-        <param name="state">A user-defined object that contains information about the connect operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
+        <param name="state">A user-defined object that contains information about the connect operation. This object is passed to the <paramref name="requestCallback" /> delegate when the operation is complete.</param>
         <summary>Begins an asynchronous request for a remote host connection. The remote host is specified by an <see cref="T:System.Net.IPAddress" /> and a port number (<see cref="T:System.Int32" />).</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object that references the asynchronous connection.</returns>
         <remarks>
@@ -530,7 +530,7 @@
         <param name="addresses">At least one <see cref="T:System.Net.IPAddress" /> that designates the remote hosts.</param>
         <param name="port">The port number of the remote hosts.</param>
         <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
-        <param name="state">A user-defined object that contains information about the connect operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
+        <param name="state">A user-defined object that contains information about the connect operation. This object is passed to the <paramref name="requestCallback" /> delegate when the operation is complete.</param>
         <summary>Begins an asynchronous request for a remote host connection. The remote host is specified by an <see cref="T:System.Net.IPAddress" /> array and a port number (<see cref="T:System.Int32" />).</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object that references the asynchronous connection.</returns>
         <remarks>
@@ -598,7 +598,7 @@
         <param name="host">The name of the remote host.</param>
         <param name="port">The port number of the remote host.</param>
         <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
-        <param name="state">A user-defined object that contains information about the connect operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
+        <param name="state">A user-defined object that contains information about the connect operation. This object is passed to the <paramref name="requestCallback" /> delegate when the operation is complete.</param>
         <summary>Begins an asynchronous request for a remote host connection. The remote host is specified by a host name (<see cref="T:System.String" />) and a port number (<see cref="T:System.Int32" />).</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object that references the asynchronous connection.</returns>
         <remarks>

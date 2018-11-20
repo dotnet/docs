@@ -356,7 +356,7 @@
       </Parameters>
       <Docs>
         <param name="property">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to search on.</param>
-        <param name="key">The value of the <c>property</c> parameter to search for.</param>
+        <param name="key">The value of the <paramref name="property" /> parameter to search for.</param>
         <summary>Returns the index of the row that has the given <see cref="T:System.ComponentModel.PropertyDescriptor" />.</summary>
         <returns>The index of the row that has the given <see cref="T:System.ComponentModel.PropertyDescriptor" />.</returns>
         <remarks>

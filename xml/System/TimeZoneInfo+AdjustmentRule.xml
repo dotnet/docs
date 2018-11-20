@@ -167,8 +167,8 @@ W. Central Africa Standard Time has no adjustment rules
         <Parameter Name="daylightTransitionEnd" Type="System.TimeZoneInfo+TransitionTime" />
       </Parameters>
       <Docs>
-        <param name="dateStart">The effective date of the adjustment rule. If the value of the <c>dateStart</c> parameter is <see langword="DateTime.MinValue.Date" />, this is the first adjustment rule in effect for a time zone.</param>
-        <param name="dateEnd">The last date that the adjustment rule is in force. If the value of the <c>dateEnd</c> parameter is <see langword="DateTime.MaxValue.Date" />, the adjustment rule has no end date.</param>
+        <param name="dateStart">The effective date of the adjustment rule. If the value of the <paramref name="dateStart" /> parameter is <see langword="DateTime.MinValue.Date" />, this is the first adjustment rule in effect for a time zone.</param>
+        <param name="dateEnd">The last date that the adjustment rule is in force. If the value of the <paramref name="dateEnd" /> parameter is <see langword="DateTime.MaxValue.Date" />, the adjustment rule has no end date.</param>
         <param name="daylightDelta">The time change that results from the adjustment. This value is added to the time zone's <see cref="P:System.TimeZoneInfo.BaseUtcOffset" /> property to obtain the correct daylight offset from Coordinated Universal Time (UTC). This value can range from -14 to 14.</param>
         <param name="daylightTransitionStart">An object that defines the start of daylight saving time.</param>
         <param name="daylightTransitionEnd">An object that defines the end of daylight saving time.</param>

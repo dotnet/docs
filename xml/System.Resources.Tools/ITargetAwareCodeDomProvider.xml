@@ -37,7 +37,7 @@
       </Parameters>
       <Docs>
         <param name="type">The type whose properties are to be queried.</param>
-        <param name="propertyName">The name of the property to find in <c>type</c>.</param>
+        <param name="propertyName">The name of the property to find in <paramref name="type" />.</param>
         <param name="isWritable">A flag that indicates whether the property must include a get accessor.</param>
         <summary>Indicates whether the specified type on the project target framework has a specified named property.</summary>
         <returns>

@@ -181,7 +181,7 @@
       <Docs>
         <param name="key">A <see cref="T:System.String" /> that contains the namespace alias of a qualified name.</param>
         <param name="name">A <see cref="T:System.String" /> that contains the local part of a qualified name.</param>
-        <param name="namespaceValue">A <see cref="T:System.String" /> that contains the namespace that is referenced by <c>key</c>.</param>
+        <param name="namespaceValue">A <see cref="T:System.String" /> that contains the namespace that is referenced by <paramref name="key" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapQName" /> class with the namespace alias, the local part of a qualified name, and the namespace that is referenced by the alias.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

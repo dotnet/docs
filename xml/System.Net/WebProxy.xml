@@ -363,7 +363,7 @@
       </Parameters>
       <Docs>
         <param name="Host">The name of the proxy host.</param>
-        <param name="Port">The port number on <c>Host</c> to use.</param>
+        <param name="Port">The port number on <paramref name="Host" /> to use.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.WebProxy" /> class with the specified host and port number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -2013,7 +2013,7 @@ nav.Evaluate(expr);
         <Parameter Name="namespaceURI" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">The local name of the attribute. <c>localName</c> is case-sensitive.</param>
+        <param name="localName">The local name of the attribute. <paramref name="localName" /> is case-sensitive.</param>
         <param name="namespaceURI">The namespace URI of the attribute.</param>
         <summary>Gets the value of the attribute with the specified local name and namespace URI.</summary>
         <returns>A <see cref="T:System.String" /> that contains the value of the specified attribute; <see cref="F:System.String.Empty" /> if a matching attribute is not found, or if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is not positioned on an element node.</returns>

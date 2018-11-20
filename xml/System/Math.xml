@@ -530,7 +530,7 @@
         <Parameter Name="d" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="d">A number representing a cosine, where <c>d</c> must be greater than or equal to -1, but less than or equal to 1.</param>
+        <param name="d">A number representing a cosine, where <paramref name="d" /> must be greater than or equal to -1, but less than or equal to 1.</param>
         <summary>Returns the angle whose cosine is the specified number.</summary>
         <returns>An angle, θ, measured in radians, such that 0 ≤θ≤π  
   
@@ -626,7 +626,7 @@
         <Parameter Name="d" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="d">A number representing a sine, where <c>d</c> must be greater than or equal to -1, but less than or equal to 1.</param>
+        <param name="d">A number representing a sine, where <paramref name="d" /> must be greater than or equal to -1, but less than or equal to 1.</param>
         <summary>Returns the angle whose sine is the specified number.</summary>
         <returns>An angle, θ, measured in radians, such that -π/2 ≤θ≤π/2  
   
@@ -4404,7 +4404,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       </Parameters>
       <Docs>
         <param name="d">A decimal number to be rounded.</param>
-        <param name="mode">Specification for how to round <c>d</c> if it is midway between two other numbers.</param>
+        <param name="mode">Specification for how to round <paramref name="d" /> if it is midway between two other numbers.</param>
         <summary>Rounds a decimal value to the nearest integer. A parameter specifies how to round the value if it is midway between two numbers.</summary>
         <returns>The integer nearest <paramref name="d" />. If <paramref name="d" /> is halfway between two numbers, one of which is even and the other odd, then <paramref name="mode" /> determines which of the two is returned.</returns>
         <remarks>
@@ -4522,7 +4522,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       </Parameters>
       <Docs>
         <param name="value">A double-precision floating-point number to be rounded.</param>
-        <param name="mode">Specification for how to round <c>value</c> if it is midway between two other numbers.</param>
+        <param name="mode">Specification for how to round <paramref name="value" /> if it is midway between two other numbers.</param>
         <summary>Rounds a double-precision floating-point value to the nearest integer. A parameter specifies how to round the value if it is midway between two numbers.</summary>
         <returns>The integer nearest <paramref name="value" />. If <paramref name="value" /> is halfway between two integers, one of which is even and the other odd, then <paramref name="mode" /> determines which of the two is returned.</returns>
         <remarks>
@@ -4590,7 +4590,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <Docs>
         <param name="d">A decimal number to be rounded.</param>
         <param name="decimals">The number of decimal places in the return value.</param>
-        <param name="mode">Specification for how to round <c>d</c> if it is midway between two other numbers.</param>
+        <param name="mode">Specification for how to round <paramref name="d" /> if it is midway between two other numbers.</param>
         <summary>Rounds a decimal value to a specified number of fractional digits. A parameter specifies how to round the value if it is midway between two numbers.</summary>
         <returns>The number nearest to <paramref name="d" /> that contains a number of fractional digits equal to <paramref name="decimals" />. If <paramref name="d" /> has fewer fractional digits than <paramref name="decimals" />, <paramref name="d" /> is returned unchanged.</returns>
         <remarks>
@@ -4650,7 +4650,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       <Docs>
         <param name="value">A double-precision floating-point number to be rounded.</param>
         <param name="digits">The number of fractional digits in the return value.</param>
-        <param name="mode">Specification for how to round <c>value</c> if it is midway between two other numbers.</param>
+        <param name="mode">Specification for how to round <paramref name="value" /> if it is midway between two other numbers.</param>
         <summary>Rounds a double-precision floating-point value to a specified number of fractional digits. A parameter specifies how to round the value if it is midway between two numbers.</summary>
         <returns>The number nearest to <paramref name="value" /> that has a number of fractional digits equal to <paramref name="digits" />. If <paramref name="value" /> has fewer fractional digits than <paramref name="digits" />, <paramref name="value" /> is returned unchanged.</returns>
         <remarks>

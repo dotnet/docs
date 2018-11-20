@@ -238,7 +238,7 @@
         <Parameter Name="bindingOperationFault" Type="System.Web.Services.Description.FaultBinding" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the <c>bindingOperationFault</c> parameter.</param>
+        <param name="index">The zero-based index at which to insert the <paramref name="bindingOperationFault" /> parameter.</param>
         <param name="bindingOperationFault">The <see cref="T:System.Web.Services.Description.FaultBinding" /> to add to the collection.</param>
         <summary>Adds the specified <see cref="T:System.Web.Services.Description.FaultBinding" /> to the <see langword="FaultBindingCollection" /> at the specified zero-based index.</summary>
         <remarks>

@@ -100,7 +100,7 @@
         <Parameter Name="command" Type="System.Web.UI.MobileControls.ObjectListCommand" />
       </Parameters>
       <Docs>
-        <param name="index">The location in the collection at which to add <c>command</c>.</param>
+        <param name="index">The location in the collection at which to add <paramref name="command" />.</param>
         <param name="command">The <see cref="T:System.Web.UI.MobileControls.ObjectListCommand" /> to add to the collection.</param>
         <summary>Adds a command at the location in the collection specified by the index parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>

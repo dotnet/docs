@@ -520,7 +520,7 @@
       </Parameters>
       <Docs>
         <param name="a">The alpha channel for the new color,a value between 0 and 1.</param>
-        <param name="values">A collection of values that specify the color channels for the new color. These values map to the <c>profileUri</c>.</param>
+        <param name="values">A collection of values that specify the color channels for the new color. These values map to the <paramref name="profileUri" />.</param>
         <param name="profileUri">The [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile for the new color.</param>
         <summary>Creates a new <see cref="T:System.Windows.Media.Color" /> structure by using the specified alpha channel, color channel values, and color profile.</summary>
         <returns>A <see cref="T:System.Windows.Media.Color" /> structure with the specified values.</returns>
@@ -665,7 +665,7 @@
         <Parameter Name="profileUri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="values">A collection of values that specify the color channels for the new color. These values map to the <c>profileUri</c>.</param>
+        <param name="values">A collection of values that specify the color channels for the new color. These values map to the <paramref name="profileUri" />.</param>
         <param name="profileUri">The [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile for the new color.</param>
         <summary>Creates a new <see cref="T:System.Windows.Media.Color" /> structure by using the specified color channel values and color profile.</summary>
         <returns>A <see cref="T:System.Windows.Media.Color" /> structure with the specified values and an alpha channel value of 1.</returns>
@@ -964,7 +964,7 @@
       </Parameters>
       <Docs>
         <param name="color1">The <see cref="T:System.Windows.Media.Color" /> structure to be subtracted from.</param>
-        <param name="color2">The <see cref="T:System.Windows.Media.Color" /> structure to subtract from <c>color1</c>.</param>
+        <param name="color2">The <see cref="T:System.Windows.Media.Color" /> structure to subtract from <paramref name="color1" />.</param>
         <summary>Subtracts a <see cref="T:System.Windows.Media.Color" /> structure from a <see cref="T:System.Windows.Media.Color" /> structure.</summary>
         <returns>A new <see cref="T:System.Windows.Media.Color" /> structure whose color values are the results of the subtraction operation.</returns>
         <remarks>
@@ -1151,7 +1151,7 @@
       </Parameters>
       <Docs>
         <param name="color1">The <see cref="T:System.Windows.Media.Color" /> structure to be subtracted from.</param>
-        <param name="color2">The <see cref="T:System.Windows.Media.Color" /> structure to subtract from <c>color1</c>.</param>
+        <param name="color2">The <see cref="T:System.Windows.Media.Color" /> structure to subtract from <paramref name="color1" />.</param>
         <summary>Subtracts a <see cref="T:System.Windows.Media.Color" /> structure from a <see cref="T:System.Windows.Media.Color" /> structure.</summary>
         <returns>A new <see cref="T:System.Windows.Media.Color" /> structure whose color values are the results of the subtraction operation.</returns>
         <remarks>

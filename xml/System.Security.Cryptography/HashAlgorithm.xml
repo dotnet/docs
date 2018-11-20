@@ -473,7 +473,7 @@ The following example calculates the <xref:System.Security.Cryptography.SHA256> 
         <Parameter Name="hashName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="hashName">The hash algorithm implementation to use. The following table shows the valid values for the <c>hashName</c> parameter and the algorithms they map to.  
+        <param name="hashName">The hash algorithm implementation to use. The following table shows the valid values for the <paramref name="hashName" /> parameter and the algorithms they map to.  
   
  <list type="table"><listheader><term> Parameter value  
   

@@ -117,7 +117,7 @@
       </Parameters>
       <Docs>
         <param name="node">The <see cref="T:System.Web.SiteMapNode" /> to add to the provider.</param>
-        <param name="parentNode">The <see cref="T:System.Web.SiteMapNode" /> under which to add <c>node</c>.</param>
+        <param name="parentNode">The <see cref="T:System.Web.SiteMapNode" /> under which to add <paramref name="node" />.</param>
         <summary>Adds a <see cref="T:System.Web.SiteMapNode" /> object to the collections that are maintained by the current provider.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -649,7 +649,7 @@
       </Parameters>
       <Docs>
         <param name="name">The <see cref="T:System.Web.XmlSiteMapProvider" /> to initialize.</param>
-        <param name="attributes">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that can contain additional attributes to help initialize <c>name</c>. These attributes are read from the <see cref="T:System.Web.XmlSiteMapProvider" /> configuration in the Web.config file.</param>
+        <param name="attributes">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that can contain additional attributes to help initialize <paramref name="name" />. These attributes are read from the <see cref="T:System.Web.XmlSiteMapProvider" /> configuration in the Web.config file.</param>
         <summary>Initializes the <see cref="T:System.Web.XmlSiteMapProvider" /> object. The <see cref="M:System.Web.XmlSiteMapProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" /> method does not actually build a site map, it only prepares the state of the <see cref="T:System.Web.XmlSiteMapProvider" /> to do so.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -111,8 +111,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer from which to read.</param>
-        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
-        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="offset">The starting position from which to read in <paramref name="buffer" />.</param>
+        <param name="count">The number of bytes that can be read from <paramref name="buffer" />.</param>
         <param name="encoding">The character encoding of the stream.</param>
         <param name="quotas">The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> to apply.</param>
         <param name="onClose">The delegate to be called when the reader is closed.</param>

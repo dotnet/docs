@@ -227,7 +227,7 @@
       </Parameters>
       <Docs>
         <param name="definition">One of the objects from the <see cref="P:System.ComponentModel.Composition.Primitives.ComposablePart.ImportDefinitions" /> property that specifies the import to be set.</param>
-        <param name="exports">A collection of <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> objects of which to set the import described by <c>definition</c>.</param>
+        <param name="exports">A collection of <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> objects of which to set the import described by <paramref name="definition" />.</param>
         <summary>Sets the import described by the specified <see cref="T:System.ComponentModel.Composition.Primitives.ImportDefinition" /> object to be satisfied by the specified exports.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> object has been disposed of.</exception>

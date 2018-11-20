@@ -137,7 +137,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from the <see cref="T:System.Web.UI.StateManagedCollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the elements of the <see cref="T:System.Web.UI.StateManagedCollection" /> collection to an array, starting at a particular array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -382,7 +382,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> should be inserted by the <see cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Insert(System.Int32,System.Object)" /> method.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> should be inserted by the <see cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Insert(System.Int32,System.Object)" /> method.</param>
         <param name="value">The object to insert into the <see cref="T:System.Web.UI.StateManagedCollection" />.</param>
         <summary>When overridden in a derived class, performs additional work before the <see cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Insert(System.Int32,System.Object)" /> or <see cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Add(System.Object)" /> method adds an item to the collection.</summary>
         <remarks>
@@ -419,7 +419,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> is inserted by the <see cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Insert(System.Int32,System.Object)" /> method.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> is inserted by the <see cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Insert(System.Int32,System.Object)" /> method.</param>
         <param name="value">The object inserted into the <see cref="T:System.Web.UI.StateManagedCollection" />.</param>
         <summary>When overridden in a derived class, performs additional work after the <see cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Insert(System.Int32,System.Object)" /> or <see cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#Add(System.Object)" /> method adds an item to the collection.</summary>
         <remarks>
@@ -909,7 +909,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
         <param name="value">The object to insert into the <see cref="T:System.Web.UI.StateManagedCollection" />.</param>
         <summary>Inserts an item into the <see cref="T:System.Web.UI.StateManagedCollection" /> collection at the specified index.</summary>
         <remarks>

@@ -249,7 +249,7 @@
       </Parameters>
       <Docs>
         <param name="inPoint">The point to transform.</param>
-        <param name="result">The result of transforming <c>inPoint</c>.</param>
+        <param name="result">The result of transforming <paramref name="inPoint" />.</param>
         <summary>Attempts to transform the specified point and returns a value that indicates whether the transformation was successful.</summary>
         <returns>
           <see langword="true" /> if <paramref name="inPoint" /> was transformed; otherwise, <see langword="false" />.</returns>

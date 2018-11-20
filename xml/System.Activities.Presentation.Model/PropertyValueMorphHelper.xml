@@ -21,7 +21,7 @@
   </ReturnValue>
   <Docs>
     <param name="originalValue">The model item property value to convert to the new type.</param>
-    <param name="newModelProperty">The model item property whose type the <c>originalValue</c> needs to be converted to.</param>
+    <param name="newModelProperty">The model item property whose type the <paramref name="originalValue" /> needs to be converted to.</param>
     <summary>Represents a delegate that is used to reference the method that handles type conversions for <see cref="T:System.Activities.Presentation.Model.ModelItem" /> property values.</summary>
     <returns>The converted property value.</returns>
     <remarks>To be added.</remarks>

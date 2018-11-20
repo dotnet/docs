@@ -236,7 +236,7 @@
         <Parameter Name="mimePart" Type="System.Web.Services.Description.MimePart" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the <c>mimePart</c> parameter.</param>
+        <param name="index">The zero-based index at which to insert the <paramref name="mimePart" /> parameter.</param>
         <param name="mimePart">The <see cref="T:System.Web.Services.Description.MimePart" /> to add to the collection.</param>
         <summary>Adds the specified <see cref="T:System.Web.Services.Description.MimePart" /> to the <see cref="T:System.Web.Services.Description.MimePartCollection" /> at the specified index.</summary>
         <remarks>

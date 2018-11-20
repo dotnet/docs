@@ -51,10 +51,10 @@
         <Parameter Name="regionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="source">The <see cref="T:System.Runtime.Caching.ObjectCache" /> instance from which the cache entry referenced by <c>key</c> will be removed.</param>
+        <param name="source">The <see cref="T:System.Runtime.Caching.ObjectCache" /> instance from which the cache entry referenced by <paramref name="key" /> will be removed.</param>
         <param name="reason">One of the enumeration values that indicate why the cache entry will be removed.</param>
         <param name="key">The key of the cache entry that will be removed.</param>
-        <param name="regionName">The name of the region in the cache to  remove the cache entry from. This parameter is optional. If cache regions are not defined, <c>regionName</c> must be <see langword="null" />.</param>
+        <param name="regionName">The name of the region in the cache to  remove the cache entry from. This parameter is optional. If cache regions are not defined, <paramref name="regionName" /> must be <see langword="null" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Caching.CacheEntryUpdateArguments" /> class.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

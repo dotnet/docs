@@ -571,8 +571,8 @@
         <Parameter Name="b" Type="System.Runtime.InteropServices.GCHandle" />
       </Parameters>
       <Docs>
-        <param name="a">A <see cref="T:System.Runtime.InteropServices.GCHandle" /> object to compare with the <c>b</c> parameter.</param>
-        <param name="b">A <see cref="T:System.Runtime.InteropServices.GCHandle" /> object to compare with the <c>a</c> parameter.</param>
+        <param name="a">A <see cref="T:System.Runtime.InteropServices.GCHandle" /> object to compare with the <paramref name="b" /> parameter.</param>
+        <param name="b">A <see cref="T:System.Runtime.InteropServices.GCHandle" /> object to compare with the <paramref name="a" /> parameter.</param>
         <summary>Returns a value indicating whether two <see cref="T:System.Runtime.InteropServices.GCHandle" /> objects are equal.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="a" /> and <paramref name="b" /> parameters are equal; otherwise, <see langword="false" />.</returns>
@@ -747,8 +747,8 @@
         <Parameter Name="b" Type="System.Runtime.InteropServices.GCHandle" />
       </Parameters>
       <Docs>
-        <param name="a">A <see cref="T:System.Runtime.InteropServices.GCHandle" /> object to compare with the <c>b</c> parameter.</param>
-        <param name="b">A <see cref="T:System.Runtime.InteropServices.GCHandle" /> object to compare with the <c>a</c> parameter.</param>
+        <param name="a">A <see cref="T:System.Runtime.InteropServices.GCHandle" /> object to compare with the <paramref name="b" /> parameter.</param>
+        <param name="b">A <see cref="T:System.Runtime.InteropServices.GCHandle" /> object to compare with the <paramref name="a" /> parameter.</param>
         <summary>Returns a value indicating whether two <see cref="T:System.Runtime.InteropServices.GCHandle" /> objects are not equal.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="a" /> and <paramref name="b" /> parameters are not equal; otherwise, <see langword="false" />.</returns>

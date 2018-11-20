@@ -161,7 +161,7 @@
       </Parameters>
       <Docs>
         <param name="selectedObjects">An enumeration of objects that should be selected.</param>
-        <param name="match">The criteria for including objects. Only those objects in <c>selectedObjects</c> that match the predicate will be added to the selection.</param>
+        <param name="match">The criteria for including objects. Only those objects in <paramref name="selectedObjects" /> that match the predicate will be added to the selection.</param>
         <summary>Creates a <see cref="T:System.Activities.Presentation.View.Selection" /> object with the specified objects selected.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -192,7 +192,7 @@
       </Parameters>
       <Docs>
         <param name="selectedObjects">An enumeration of objects that should be selected.</param>
-        <param name="match">The criteria for including objects. Only those objects in <c>selectedObjects</c> that match the predicate will be added to the selection.</param>
+        <param name="match">The criteria for including objects. Only those objects in <paramref name="selectedObjects" /> that match the predicate will be added to the selection.</param>
         <summary>Creates a <see cref="T:System.Activities.Presentation.View.Selection" /> object with the specified objects selected.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

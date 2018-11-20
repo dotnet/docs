@@ -697,7 +697,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       </Parameters>
       <Docs>
         <param name="type">The type of the object that this <see cref="T:System.Xml.Serialization.XmlSerializer" /> can serialize.</param>
-        <param name="overrides">An <see cref="T:System.Xml.Serialization.XmlAttributeOverrides" /> that extends or overrides the behavior of the class specified in the <c>type</c> parameter.</param>
+        <param name="overrides">An <see cref="T:System.Xml.Serialization.XmlAttributeOverrides" /> that extends or overrides the behavior of the class specified in the <paramref name="type" /> parameter.</param>
         <param name="extraTypes">A <see cref="T:System.Type" /> array of additional object types to serialize.</param>
         <param name="root">An <see cref="T:System.Xml.Serialization.XmlRootAttribute" /> that defines the XML root element properties.</param>
         <param name="defaultNamespace">The default namespace of all XML elements in the XML document.</param>
@@ -774,7 +774,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       </Parameters>
       <Docs>
         <param name="type">The type of the object that this <see cref="T:System.Xml.Serialization.XmlSerializer" /> can serialize.</param>
-        <param name="overrides">An <see cref="T:System.Xml.Serialization.XmlAttributeOverrides" /> that extends or overrides the behavior of the class specified in the <c>type</c> parameter.</param>
+        <param name="overrides">An <see cref="T:System.Xml.Serialization.XmlAttributeOverrides" /> that extends or overrides the behavior of the class specified in the <paramref name="type" /> parameter.</param>
         <param name="extraTypes">A <see cref="T:System.Type" /> array of additional object types to serialize.</param>
         <param name="root">An <see cref="T:System.Xml.Serialization.XmlRootAttribute" /> that defines the XML root element properties.</param>
         <param name="defaultNamespace">The default namespace of all XML elements in the XML document.</param>
@@ -821,7 +821,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
       </Parameters>
       <Docs>
         <param name="type">The type of the object that this <see cref="T:System.Xml.Serialization.XmlSerializer" /> can serialize.</param>
-        <param name="overrides">An <see cref="T:System.Xml.Serialization.XmlAttributeOverrides" /> that extends or overrides the behavior of the class specified in the <c>type</c> parameter.</param>
+        <param name="overrides">An <see cref="T:System.Xml.Serialization.XmlAttributeOverrides" /> that extends or overrides the behavior of the class specified in the <paramref name="type" /> parameter.</param>
         <param name="extraTypes">A <see cref="T:System.Type" /> array of additional object types to serialize.</param>
         <param name="root">An <see cref="T:System.Xml.Serialization.XmlRootAttribute" /> that defines the XML root element properties.</param>
         <param name="defaultNamespace">The default namespace of all XML elements in the XML document.</param>

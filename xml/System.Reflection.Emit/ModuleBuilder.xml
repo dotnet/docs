@@ -261,7 +261,7 @@
         <Parameter Name="underlyingType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="name">The full path of the enumeration type. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The full path of the enumeration type. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="visibility">The type attributes for the enumeration. The attributes are any bits defined by <see cref="F:System.Reflection.TypeAttributes.VisibilityMask" />.</param>
         <param name="underlyingType">The underlying type for the enumeration. This must be a built-in integer type.</param>
         <summary>Defines an enumeration type that is a value type with a single non-static field called <paramref name="value__" /> of the specified type.</summary>
@@ -348,8 +348,8 @@
         <Parameter Name="parameterTypes" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the method. <c>name</c> cannot contain embedded nulls.</param>
-        <param name="attributes">The attributes of the method. <c>attributes</c> must include <see cref="F:System.Reflection.MethodAttributes.Static" />.</param>
+        <param name="name">The name of the method. <paramref name="name" /> cannot contain embedded nulls.</param>
+        <param name="attributes">The attributes of the method. <paramref name="attributes" /> must include <see cref="F:System.Reflection.MethodAttributes.Static" />.</param>
         <param name="returnType">The return type of the method.</param>
         <param name="parameterTypes">The types of the method's parameters.</param>
         <summary>Defines a global method with the specified name, attributes, return type, and parameter types.</summary>
@@ -421,8 +421,8 @@
         <Parameter Name="parameterTypes" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the method. <c>name</c> cannot contain embedded nulls.</param>
-        <param name="attributes">The attributes of the method. <c>attributes</c> must include <see cref="F:System.Reflection.MethodAttributes.Static" />.</param>
+        <param name="name">The name of the method. <paramref name="name" /> cannot contain embedded nulls.</param>
+        <param name="attributes">The attributes of the method. <paramref name="attributes" /> must include <see cref="F:System.Reflection.MethodAttributes.Static" />.</param>
         <param name="callingConvention">The calling convention for the method.</param>
         <param name="returnType">The return type of the method.</param>
         <param name="parameterTypes">The types of the method's parameters.</param>
@@ -494,8 +494,8 @@
         <Parameter Name="optionalParameterTypeCustomModifiers" Type="System.Type[][]" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the method. <c>name</c> cannot contain embedded null characters.</param>
-        <param name="attributes">The attributes of the method. <c>attributes</c> must include <see cref="F:System.Reflection.MethodAttributes.Static" />.</param>
+        <param name="name">The name of the method. <paramref name="name" /> cannot contain embedded null characters.</param>
+        <param name="attributes">The attributes of the method. <paramref name="attributes" /> must include <see cref="F:System.Reflection.MethodAttributes.Static" />.</param>
         <param name="callingConvention">The calling convention for the method.</param>
         <param name="returnType">The return type of the method.</param>
         <param name="requiredReturnTypeCustomModifiers">An array of types representing the required custom modifiers for the return type, such as <see cref="T:System.Runtime.CompilerServices.IsConst" /> or <see cref="T:System.Runtime.CompilerServices.IsBoxed" />. If the return type has no required custom modifiers, specify <see langword="null" />.</param>
@@ -563,7 +563,7 @@
         <Parameter Name="attributes" Type="System.Reflection.FieldAttributes" />
       </Parameters>
       <Docs>
-        <param name="name">The name used to refer to the data. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name used to refer to the data. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="data">The binary large object (BLOB) of data.</param>
         <param name="attributes">The attributes for the field. The default is <see langword="Static" />.</param>
         <summary>Defines an initialized data field in the .sdata section of the portable executable (PE) file.</summary>
@@ -726,7 +726,7 @@
         <Parameter Name="nativeCharSet" Type="System.Runtime.InteropServices.CharSet" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see langword="PInvoke" /> method. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name of the <see langword="PInvoke" /> method. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="dllName">The name of the DLL in which the <see langword="PInvoke" /> method is defined.</param>
         <param name="attributes">The attributes of the method.</param>
         <param name="callingConvention">The method's calling convention.</param>
@@ -810,7 +810,7 @@
         <Parameter Name="nativeCharSet" Type="System.Runtime.InteropServices.CharSet" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see langword="PInvoke" /> method. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name of the <see langword="PInvoke" /> method. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="dllName">The name of the DLL in which the <see langword="PInvoke" /> method is defined.</param>
         <param name="entryName">The name of the entry point in the DLL.</param>
         <param name="attributes">The attributes of the method.</param>
@@ -888,7 +888,7 @@
         <Parameter Name="description" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the resource. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name of the resource. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="description">The description of the resource.</param>
         <summary>Defines the named managed embedded resource to be stored in this module.</summary>
         <returns>A resource writer for the defined resource.</returns>
@@ -952,7 +952,7 @@
         <Parameter Name="attribute" Type="System.Reflection.ResourceAttributes" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the resource. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name of the resource. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="description">The description of the resource.</param>
         <param name="attribute">The resource attributes.</param>
         <summary>Defines the named managed embedded resource with the given attributes that is to be stored in this module.</summary>
@@ -1033,7 +1033,7 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The full path of the type, including the namespace. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The full path of the type, including the namespace. <paramref name="name" /> cannot contain embedded nulls.</param>
         <summary>Constructs a <see langword="TypeBuilder" /> for a private type with the specified name in this module.</summary>
         <returns>A private type with the specified name.</returns>
         <remarks>
@@ -1099,7 +1099,7 @@
         <Parameter Name="attr" Type="System.Reflection.TypeAttributes" />
       </Parameters>
       <Docs>
-        <param name="name">The full path of the type. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The full path of the type. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attr">The attributes of the defined type.</param>
         <summary>Constructs a <see langword="TypeBuilder" /> given the type name and the type attributes.</summary>
         <returns>A <see langword="TypeBuilder" /> created with all of the requested attributes.</returns>
@@ -1167,7 +1167,7 @@
         <Parameter Name="parent" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="name">The full path of the type. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The full path of the type. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attr">The attribute to be associated with the type.</param>
         <param name="parent">The type that the defined type extends.</param>
         <summary>Constructs a <see langword="TypeBuilder" /> given type name, its attributes, and the type that the defined type extends.</summary>
@@ -1237,7 +1237,7 @@
         <Parameter Name="typesize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The full path of the type. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The full path of the type. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attr">The attributes of the defined type.</param>
         <param name="parent">The type that the defined type extends.</param>
         <param name="typesize">The total size of the type.</param>
@@ -1308,7 +1308,7 @@
         <Parameter Name="packsize" Type="System.Reflection.Emit.PackingSize" />
       </Parameters>
       <Docs>
-        <param name="name">The full path of the type. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The full path of the type. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attr">The attributes of the defined type.</param>
         <param name="parent">The type that the defined type extends.</param>
         <param name="packsize">The packing size of the type.</param>
@@ -1382,7 +1382,7 @@
         <Parameter Name="interfaces" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="name">The full path of the type. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The full path of the type. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attr">The attributes to be associated with the type.</param>
         <param name="parent">The type that the defined type extends.</param>
         <param name="interfaces">The list of interfaces that the type implements.</param>
@@ -1453,7 +1453,7 @@
         <Parameter Name="typesize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The full path of the type. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The full path of the type. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attr">The attributes of the defined type.</param>
         <param name="parent">The type that the defined type extends.</param>
         <param name="packingSize">The packing size of the type.</param>
@@ -1524,7 +1524,7 @@
         <Parameter Name="attributes" Type="System.Reflection.FieldAttributes" />
       </Parameters>
       <Docs>
-        <param name="name">The name used to refer to the data. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name used to refer to the data. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="size">The size of the data field.</param>
         <param name="attributes">The attributes for the field.</param>
         <summary>Defines an uninitialized data field in the .sdata section of the portable executable (PE) file.</summary>

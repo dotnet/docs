@@ -223,7 +223,7 @@
         <Parameter Name="tableName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="tableName">The name to give the table. If <c>tableName</c> is <see langword="null" /> or an empty string, a default name is given when added to the <see cref="T:System.Data.DataTableCollection" />.</param>
+        <param name="tableName">The name to give the table. If <paramref name="tableName" /> is <see langword="null" /> or an empty string, a default name is given when added to the <see cref="T:System.Data.DataTableCollection" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.DataTable" /> class with the specified table name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -310,7 +310,7 @@
         <Parameter Name="tableNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="tableName">The name to give the table. If <c>tableName</c> is <see langword="null" /> or an empty string, a default name is given when added to the <see cref="T:System.Data.DataTableCollection" />.</param>
+        <param name="tableName">The name to give the table. If <paramref name="tableName" /> is <see langword="null" /> or an empty string, a default name is given when added to the <see cref="T:System.Data.DataTableCollection" />.</param>
         <param name="tableNamespace">The namespace for the XML representation of the data stored in the <see langword="DataTable" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.DataTable" /> class using the specified table name and namespace.</summary>
         <remarks>To be added.</remarks>

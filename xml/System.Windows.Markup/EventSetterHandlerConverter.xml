@@ -175,7 +175,7 @@
         <param name="typeDescriptorContext">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
         <param name="cultureInfo">The <see cref="T:System.Globalization.CultureInfo" /> to use as the current culture.</param>
         <param name="value">The value to convert.</param>
-        <param name="destinationType">The type to convert the <c>value</c> parameter to.</param>
+        <param name="destinationType">The type to convert the <paramref name="value" /> parameter to.</param>
         <summary>Converts the specified value object to the specified type. Always throws an exception.</summary>
         <returns>Always throws an exception.</returns>
         <remarks>To be added.</remarks>

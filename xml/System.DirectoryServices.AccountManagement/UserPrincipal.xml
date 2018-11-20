@@ -275,7 +275,7 @@ ctx.Dispose();
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the incorrect password try. This parameter is used with the type parameter to determine the range of time in which the returned objects have an incorrect logon try recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a collection of <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> objects for users that have an incorrect password attempt recorded in the specified date and time range.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> objects, or an empty collection if no results are found.</returns>
         <remarks>
@@ -314,7 +314,7 @@ ctx.Dispose();
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the incorrect password try. This parameter is used with the type parameter to determine the range of time in which the returned objects have an incorrect logon try recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a collection of <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> objects for users that have an account expiration time in the specified date and time range.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> objects, or an empty collection if no results are found.</returns>
         <remarks>
@@ -393,7 +393,7 @@ ctx.Dispose();
       </Parameters>
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
-        <param name="identityType">A <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value that specifies the format of the <c>identityValue</c> parameter.</param>
+        <param name="identityType">A <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value that specifies the format of the <paramref name="identityValue" /> parameter.</param>
         <param name="identityValue">The identity of the user principal. This parameter can be any format that is contained in the <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration.</param>
         <summary>Returns a user principal object that matches the specified identity type, and value. This version of the <see cref="Overload:System.DirectoryServices.AccountManagement.UserPrincipal.FindByIdentity" /> method determines the format of the identity value.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object that matches the specified identity value and type, or null if no matches are found.</returns>
@@ -457,7 +457,7 @@ ctx.Dispose();
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the incorrect password try. This parameter is used with the type parameter to determine the range of time in which the returned objects have an incorrect logon try recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a collection of <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> objects for users that have an account lockout time in the specified date and time range.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> objects, or an empty collection if no results are found.</returns>
         <remarks>
@@ -496,7 +496,7 @@ ctx.Dispose();
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the incorrect password try. This parameter is used with the type parameter to determine the range of time in which the returned objects have an incorrect logon try recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a collection of <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> objects for users that have account logon recorded in the specified date and time range.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> objects, or an empty collection if no results are found.</returns>
         <remarks>
@@ -535,7 +535,7 @@ ctx.Dispose();
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the incorrect password try. This parameter is used with the type parameter to determine the range of time in which the returned objects have an incorrect logon try recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a collection of <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> objects for users that have set their password within the specified date and time range.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> objects, or an empty collection if no results are found.</returns>
         <remarks>

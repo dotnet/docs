@@ -144,7 +144,7 @@
       </Parameters>
       <Docs>
         <param name="propertyDataId">The unique identifier for the property.</param>
-        <param name="propertyData">The value of the custom property. <c>propertyData</c> must be of type <see cref="T:System.Char" />, <see cref="T:System.Byte" />, <see cref="T:System.Int16" />, <see cref="T:System.UInt16" />, <see cref="T:System.Int32" />, <see cref="T:System.UInt32" />, <see cref="T:System.Int64" />, <see cref="T:System.UInt64" />, <see cref="T:System.Single" />, <see cref="T:System.Double" />, <see cref="T:System.DateTime" />, <see cref="T:System.Boolean" />, <see cref="T:System.String" />, <see cref="T:System.Decimal" /> or an array of these data types, except <see cref="T:System.String" />, which is not allowed.</param>
+        <param name="propertyData">The value of the custom property. <paramref name="propertyData" /> must be of type <see cref="T:System.Char" />, <see cref="T:System.Byte" />, <see cref="T:System.Int16" />, <see cref="T:System.UInt16" />, <see cref="T:System.Int32" />, <see cref="T:System.UInt32" />, <see cref="T:System.Int64" />, <see cref="T:System.UInt64" />, <see cref="T:System.Single" />, <see cref="T:System.Double" />, <see cref="T:System.DateTime" />, <see cref="T:System.Boolean" />, <see cref="T:System.String" />, <see cref="T:System.Decimal" /> or an array of these data types, except <see cref="T:System.String" />, which is not allowed.</param>
         <summary>Adds a custom property to the <see cref="T:System.Windows.Ink.Stroke" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1036,7 +1036,7 @@
       </Parameters>
       <Docs>
         <param name="lassoPoints">An array of type <see cref="T:System.Windows.Point" /> that represents the bounds of the area to hit test.</param>
-        <param name="percentageWithinLasso">The percentage of the length of the <see cref="T:System.Windows.Ink.Stroke" />, that must be in <c>lassoPoints</c> for the <see cref="T:System.Windows.Ink.Stroke" /> to be considered hit.</param>
+        <param name="percentageWithinLasso">The percentage of the length of the <see cref="T:System.Windows.Ink.Stroke" />, that must be in <paramref name="lassoPoints" /> for the <see cref="T:System.Windows.Ink.Stroke" /> to be considered hit.</param>
         <summary>Returns a value that indicates whether the current <see cref="T:System.Windows.Ink.Stroke" /> is within the specified bounds.</summary>
         <returns>
           <see langword="true" /> if the current stroke is within the specified bounds; otherwise <see langword="false" />.</returns>
@@ -1078,8 +1078,8 @@
         <Parameter Name="stylusShape" Type="System.Windows.Ink.StylusShape" />
       </Parameters>
       <Docs>
-        <param name="path">The path that <c>stylusShape</c> follows for hit testing</param>
-        <param name="stylusShape">The shape of <c>path</c> with which to hit test.</param>
+        <param name="path">The path that <paramref name="stylusShape" /> follows for hit testing</param>
+        <param name="stylusShape">The shape of <paramref name="path" /> with which to hit test.</param>
         <summary>Returns whether the specified path intersects the <see cref="T:System.Windows.Ink.Stroke" /> using the specified <see cref="T:System.Windows.Ink.StylusShape" />.</summary>
         <returns>
           <see langword="true" /> if <paramref name="stylusShape" /> intersects the current stroke; otherwise, <see langword="false" />.</returns>
@@ -1161,7 +1161,7 @@
       </Parameters>
       <Docs>
         <param name="bounds">A <see cref="T:System.Windows.Rect" /> that represents the bounds of the area to hit test.</param>
-        <param name="percentageWithinBounds">The percentage of the length of the <see cref="T:System.Windows.Ink.Stroke" />, that must be in <c>percentageWithinBounds</c> for the <see cref="T:System.Windows.Ink.Stroke" /> to be considered hit..</param>
+        <param name="percentageWithinBounds">The percentage of the length of the <see cref="T:System.Windows.Ink.Stroke" />, that must be in <paramref name="percentageWithinBounds" /> for the <see cref="T:System.Windows.Ink.Stroke" /> to be considered hit..</param>
         <summary>Returns a value that indicates whether the <see cref="T:System.Windows.Ink.Stroke" /> is within the bounds of the specified rectangle.</summary>
         <returns>
           <see langword="true" /> if the current stroke is within the bounds of <paramref name="bounds" />; otherwise, <see langword="false" />.</returns>

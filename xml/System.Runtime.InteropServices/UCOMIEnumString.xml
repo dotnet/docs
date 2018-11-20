@@ -100,9 +100,9 @@
         <Parameter Name="pceltFetched" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="celt">The number of strings to return in <c>rgelt</c>.</param>
+        <param name="celt">The number of strings to return in <paramref name="rgelt" />.</param>
         <param name="rgelt">On successful return, a reference to the enumerated strings.</param>
-        <param name="pceltFetched">On successful return, a reference to the actual number of strings enumerated in <c>rgelt</c>.</param>
+        <param name="pceltFetched">On successful return, a reference to the actual number of strings enumerated in <paramref name="rgelt" />.</param>
         <summary>Retrieves a specified number of items in the enumeration sequence.</summary>
         <returns>
           <see langword="S_OK" /> if the <paramref name="pceltFetched" /> parameter equals the <paramref name="celt" /> parameter; otherwise, <see langword="S_FALSE" />.</returns>

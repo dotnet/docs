@@ -95,7 +95,7 @@
       <Docs>
         <param name="source">The <see cref="P:System.Windows.Media.Imaging.FormatConvertedBitmap.Source" /> of the new <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" /> instance.</param>
         <param name="destinationFormat">The <see cref="P:System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationFormat" /> of the new <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" /> instance.</param>
-        <param name="destinationPalette">The <see cref="P:System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationPalette" /> of the new <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" /> instance if <c>destinationFormat</c> is an indexed format.</param>
+        <param name="destinationPalette">The <see cref="P:System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationPalette" /> of the new <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" /> instance if <paramref name="destinationFormat" /> is an indexed format.</param>
         <param name="alphaThreshold">The <see cref="P:System.Windows.Media.Imaging.FormatConvertedBitmap.AlphaThreshold" /> of the new <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" /> instance.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.FormatConvertedBitmap" /> class that has the specified <see cref="P:System.Windows.Media.Imaging.FormatConvertedBitmap.Source" />, <see cref="P:System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationFormat" />, <see cref="P:System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationPalette" />, and <see cref="P:System.Windows.Media.Imaging.FormatConvertedBitmap.AlphaThreshold" />.</summary>
         <remarks>

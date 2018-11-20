@@ -91,7 +91,7 @@
         <Parameter Name="dbPositionFlags" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="hChapter">A pointer to memory in which to return the chapter associated with the current row. If the rowset is not chaptered, <c>hChapter</c> is set to <see langword="DB_NULL_HCHAPTER" />. If <c>hChapter</c> is a null pointer on input, no chapter value is returned.</param>
+        <param name="hChapter">A pointer to memory in which to return the chapter associated with the current row. If the rowset is not chaptered, <paramref name="hChapter" /> is set to <see langword="DB_NULL_HCHAPTER" />. If <paramref name="hChapter" /> is a null pointer on input, no chapter value is returned.</param>
         <param name="hRow">A pointer to memory in which to return the <see langword="hRow" /> of the current row position; or <see langword="DB_NULL_HROW" /> if there is no current row position.</param>
         <param name="dbPositionFlags">A pointer to memory in which to return additional information about the row position.</param>
         <summary>Retrieves the current row position.</summary>
@@ -127,7 +127,7 @@
         <Parameter Name="rowset" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="iid">The requested IID for the rowset returned in <c>rowset</c>.</param>
+        <param name="iid">The requested IID for the rowset returned in <paramref name="rowset" />.</param>
         <param name="rowset">A pointer to memory in which to return the interface pointer of the underlying rowset.</param>
         <summary>Returns the current underlying <see langword="Rowset" />.</summary>
         <remarks>

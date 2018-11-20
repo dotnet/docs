@@ -1025,7 +1025,7 @@ The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">There is no acceptable value for <c>index</c>.</param>
+        <param name="index">There is no acceptable value for <paramref name="index" />.</param>
         <summary>Returns an <see cref="T:System.IndexOutOfRangeException" />. There are no elements in a <see langword="ValueTuple" />.</summary>
         <value>An <see cref="T:System.IndexOutOfRangeException" />.</value>
         <remarks>To be added.</remarks>

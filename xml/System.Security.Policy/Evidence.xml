@@ -337,7 +337,7 @@
         <Parameter Name="evidence" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the object in <c>evidence</c>.</typeparam>
+        <typeparam name="T">The type of the object in <paramref name="evidence" />.</typeparam>
         <param name="evidence">The assembly evidence to add.</param>
         <summary>Adds an evidence object of the specified type to the assembly-supplied evidence list.</summary>
         <remarks>
@@ -458,7 +458,7 @@
         <Parameter Name="evidence" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the object in <c>evidence</c>.</typeparam>
+        <typeparam name="T">The type of the object in <paramref name="evidence" />.</typeparam>
         <param name="evidence">The host evidence to add.</param>
         <summary>Adds host evidence of the specified type to the host evidence collection.</summary>
         <remarks>

@@ -130,7 +130,7 @@
       </Parameters>
       <Docs>
         <param name="args">The arguments used to replace this node.</param>
-        <summary>Rewrites this node replacing the dynamic expression’s arguments with the provided values.  The number of <c>args</c> needs to match the number of the current expression.  You should not use this type.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.  This helper method allows re-writing of nodes to be independent of the specific implementation class deriving from DynamicExpression that is being used at the call site.</summary>
+        <summary>Rewrites this node replacing the dynamic expression’s arguments with the provided values.  The number of <paramref name="args" /> needs to match the number of the current expression.  You should not use this type.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.  This helper method allows re-writing of nodes to be independent of the specific implementation class deriving from DynamicExpression that is being used at the call site.</summary>
         <returns>The rewritten node, but if no changes were made, then returns the same node.</returns>
         <remarks>To be added.</remarks>
       </Docs>

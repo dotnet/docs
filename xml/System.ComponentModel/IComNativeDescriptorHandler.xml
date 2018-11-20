@@ -304,7 +304,7 @@
       </Parameters>
       <Docs>
         <param name="component">The component to get the editor for.</param>
-        <param name="baseEditorType">The base type of the editor for <c>component</c>.</param>
+        <param name="baseEditorType">The base type of the editor for <paramref name="component" />.</param>
         <summary>Gets the editor for the specified component.</summary>
         <returns>The editor for <paramref name="component" />.</returns>
         <remarks>

@@ -164,7 +164,7 @@ public static Dictionary<Uri, Stream> _aLexicons = new Dictionary<Uri, Stream>()
       </Parameters>
       <Docs>
         <param name="speakOutputFormat">Valid member of the <see cref="T:System.Speech.Synthesis.TtsEngine.SpeakOutputFormat" /> enumeration indicating the type of requested audio output format.</param>
-        <param name="targetWaveFormat">A pointer to a <see langword="struct" /> containing detail setting for the audio format type requested by the <c>speakOutputFormat</c> argument.</param>
+        <param name="targetWaveFormat">A pointer to a <see langword="struct" /> containing detail setting for the audio format type requested by the <paramref name="speakOutputFormat" /> argument.</param>
         <summary>Returns the best matching audio output supported by a given synthesize engine response to a request to the synthesizer engine for the support of a particular output format.</summary>
         <returns>Returns a valid <see langword="IntPtr" /> instance referring to a <see langword="struct" /> containing detailed information about the output format.</returns>
         <remarks>

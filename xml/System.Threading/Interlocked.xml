@@ -123,8 +123,8 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="location1">A variable containing the first value to be added. The sum of the two values is stored in <c>location1</c>.</param>
-        <param name="value">The value to be added to the integer at <c>location1</c>.</param>
+        <param name="location1">A variable containing the first value to be added. The sum of the two values is stored in <paramref name="location1" />.</param>
+        <param name="value">The value to be added to the integer at <paramref name="location1" />.</param>
         <summary>Adds two 32-bit integers and replaces the first integer with the sum, as an atomic operation.</summary>
         <returns>The new value stored at <paramref name="location1" />.</returns>
         <remarks>
@@ -181,8 +181,8 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="location1">A variable containing the first value to be added. The sum of the two values is stored in <c>location1</c>.</param>
-        <param name="value">The value to be added to the integer at <c>location1</c>.</param>
+        <param name="location1">A variable containing the first value to be added. The sum of the two values is stored in <paramref name="location1" />.</param>
+        <param name="value">The value to be added to the integer at <paramref name="location1" />.</param>
         <summary>Adds two 64-bit integers and replaces the first integer with the sum, as an atomic operation.</summary>
         <returns>The new value stored at <paramref name="location1" />.</returns>
         <remarks>
@@ -251,9 +251,9 @@
         <Parameter Name="comparand" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="location1">The destination, whose value is compared with <c>comparand</c> and possibly replaced.</param>
+        <param name="location1">The destination, whose value is compared with <paramref name="comparand" /> and possibly replaced.</param>
         <param name="value">The value that replaces the destination value if the comparison results in equality.</param>
-        <param name="comparand">The value that is compared to the value at <c>location1</c>.</param>
+        <param name="comparand">The value that is compared to the value at <paramref name="location1" />.</param>
         <summary>Compares two double-precision floating point numbers for equality and, if they are equal, replaces the first value.</summary>
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>
@@ -322,9 +322,9 @@
         <Parameter Name="comparand" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="location1">The destination, whose value is compared with <c>comparand</c> and possibly replaced.</param>
+        <param name="location1">The destination, whose value is compared with <paramref name="comparand" /> and possibly replaced.</param>
         <param name="value">The value that replaces the destination value if the comparison results in equality.</param>
-        <param name="comparand">The value that is compared to the value at <c>location1</c>.</param>
+        <param name="comparand">The value that is compared to the value at <paramref name="location1" />.</param>
         <summary>Compares two 32-bit signed integers for equality and, if they are equal, replaces the first value.</summary>
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>
@@ -391,9 +391,9 @@
         <Parameter Name="comparand" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="location1">The destination, whose value is compared with <c>comparand</c> and possibly replaced.</param>
+        <param name="location1">The destination, whose value is compared with <paramref name="comparand" /> and possibly replaced.</param>
         <param name="value">The value that replaces the destination value if the comparison results in equality.</param>
-        <param name="comparand">The value that is compared to the value at <c>location1</c>.</param>
+        <param name="comparand">The value that is compared to the value at <paramref name="location1" />.</param>
         <summary>Compares two 64-bit signed integers for equality and, if they are equal, replaces the first value.</summary>
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>
@@ -451,9 +451,9 @@
         <Parameter Name="comparand" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="location1">The destination <see cref="T:System.IntPtr" />, whose value is compared with the value of <c>comparand</c> and possibly replaced by <c>value</c>.</param>
+        <param name="location1">The destination <see cref="T:System.IntPtr" />, whose value is compared with the value of <paramref name="comparand" /> and possibly replaced by <paramref name="value" />.</param>
         <param name="value">The <see cref="T:System.IntPtr" /> that replaces the destination value if the comparison results in equality.</param>
-        <param name="comparand">The <see cref="T:System.IntPtr" /> that is compared to the value at <c>location1</c>.</param>
+        <param name="comparand">The <see cref="T:System.IntPtr" /> that is compared to the value at <paramref name="location1" />.</param>
         <summary>Compares two platform-specific handles or pointers for equality and, if they are equal, replaces the first one.</summary>
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>
@@ -515,9 +515,9 @@
         <Parameter Name="comparand" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="location1">The destination object that is compared by reference with <c>comparand</c> and possibly replaced.</param>
+        <param name="location1">The destination object that is compared by reference with <paramref name="comparand" /> and possibly replaced.</param>
         <param name="value">The object that replaces the destination object if the reference comparison results in equality.</param>
-        <param name="comparand">The object that is compared by reference to the object at <c>location1</c>.</param>
+        <param name="comparand">The object that is compared by reference to the object at <paramref name="location1" />.</param>
         <summary>Compares two objects for reference equality and, if they are equal, replaces the first object.</summary>
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>
@@ -580,9 +580,9 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <Parameter Name="comparand" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="location1">The destination, whose value is compared with <c>comparand</c> and possibly replaced.</param>
+        <param name="location1">The destination, whose value is compared with <paramref name="comparand" /> and possibly replaced.</param>
         <param name="value">The value that replaces the destination value if the comparison results in equality.</param>
-        <param name="comparand">The value that is compared to the value at <c>location1</c>.</param>
+        <param name="comparand">The value that is compared to the value at <paramref name="location1" />.</param>
         <summary>Compares two single-precision floating point numbers for equality and, if they are equal, replaces the first value.</summary>
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>
@@ -660,10 +660,10 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <Parameter Name="comparand" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type to be used for <c>location1</c>, <c>value</c>, and <c>comparand</c>. This type must be a reference type.</typeparam>
-        <param name="location1">The destination, whose value is compared by reference with <c>comparand</c> and possibly replaced. This is a reference parameter (<see langword="ref" /> in C#, <see langword="ByRef" /> in Visual Basic).</param>
+        <typeparam name="T">The type to be used for <paramref name="location1" />, <paramref name="value" />, and <paramref name="comparand" />. This type must be a reference type.</typeparam>
+        <param name="location1">The destination, whose value is compared by reference with <paramref name="comparand" /> and possibly replaced. This is a reference parameter (<see langword="ref" /> in C#, <see langword="ByRef" /> in Visual Basic).</param>
         <param name="value">The value that replaces the destination value if the comparison by reference results in equality.</param>
-        <param name="comparand">The value that is compared by reference to the value at <c>location1</c>.</param>
+        <param name="comparand">The value that is compared by reference to the value at <paramref name="location1" />.</param>
         <summary>Compares two instances of the specified reference type <paramref name="T" /> for reference equality and, if they are equal, replaces the first one.</summary>
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>
@@ -870,7 +870,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       </Parameters>
       <Docs>
         <param name="location1">The variable to set to the specified value.</param>
-        <param name="value">The value to which the <c>location1</c> parameter is set.</param>
+        <param name="value">The value to which the <paramref name="location1" /> parameter is set.</param>
         <summary>Sets a double-precision floating point number to a specified value and returns the original value, as an atomic operation.</summary>
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>To be added.</remarks>
@@ -922,7 +922,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       </Parameters>
       <Docs>
         <param name="location1">The variable to set to the specified value.</param>
-        <param name="value">The value to which the <c>location1</c> parameter is set.</param>
+        <param name="value">The value to which the <paramref name="location1" /> parameter is set.</param>
         <summary>Sets a 32-bit signed integer to a specified value and returns the original value, as an atomic operation.</summary>
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>
@@ -981,7 +981,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       </Parameters>
       <Docs>
         <param name="location1">The variable to set to the specified value.</param>
-        <param name="value">The value to which the <c>location1</c> parameter is set.</param>
+        <param name="value">The value to which the <paramref name="location1" /> parameter is set.</param>
         <summary>Sets a 64-bit signed integer to a specified value and returns the original value, as an atomic operation.</summary>
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>To be added.</remarks>
@@ -1032,7 +1032,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       </Parameters>
       <Docs>
         <param name="location1">The variable to set to the specified value.</param>
-        <param name="value">The value to which the <c>location1</c> parameter is set.</param>
+        <param name="value">The value to which the <paramref name="location1" /> parameter is set.</param>
         <summary>Sets a platform-specific handle or pointer to a specified value and returns the original value, as an atomic operation.</summary>
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>To be added.</remarks>
@@ -1084,7 +1084,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       </Parameters>
       <Docs>
         <param name="location1">The variable to set to the specified value.</param>
-        <param name="value">The value to which the <c>location1</c> parameter is set.</param>
+        <param name="value">The value to which the <paramref name="location1" /> parameter is set.</param>
         <summary>Sets an object to a specified value and returns a reference to the original object, as an atomic operation.</summary>
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>
@@ -1142,7 +1142,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       </Parameters>
       <Docs>
         <param name="location1">The variable to set to the specified value.</param>
-        <param name="value">The value to which the <c>location1</c> parameter is set.</param>
+        <param name="value">The value to which the <paramref name="location1" /> parameter is set.</param>
         <summary>Sets a single-precision floating point number to a specified value and returns the original value, as an atomic operation.</summary>
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>To be added.</remarks>
@@ -1202,9 +1202,9 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type to be used for <c>location1</c> and <c>value</c>. This type must be a reference type.</typeparam>
+        <typeparam name="T">The type to be used for <paramref name="location1" /> and <paramref name="value" />. This type must be a reference type.</typeparam>
         <param name="location1">The variable to set to the specified value. This is a reference parameter (<see langword="ref" /> in C#, <see langword="ByRef" /> in Visual Basic).</param>
-        <param name="value">The value to which the <c>location1</c> parameter is set.</param>
+        <param name="value">The value to which the <paramref name="location1" /> parameter is set.</param>
         <summary>Sets a variable of the specified type <paramref name="T" /> to a specified value and returns the original value, as an atomic operation.</summary>
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>

@@ -105,7 +105,7 @@
       </Parameters>
       <Docs>
         <param name="callback">A callback method to invoke when the operation completes.</param>
-        <param name="state">Optional state information to pass to the <c>callback</c> method for this operation.</param>
+        <param name="state">Optional state information to pass to the <paramref name="callback" /> method for this operation.</param>
         <summary>Binds the socket and begins a join operation to the multicast group to allow datagrams to be received from any group participant.</summary>
         <returns>Returns <see cref="T:System.IAsyncResult" />.  
   
@@ -159,10 +159,10 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer to store the received data.</param>
-        <param name="offset">The offset, in bytes, from the beginning of the <c>buffer</c> where the data should be stored.</param>
-        <param name="count">The maximum number of bytes to receive and store in the <c>buffer</c>.</param>
+        <param name="offset">The offset, in bytes, from the beginning of the <paramref name="buffer" /> where the data should be stored.</param>
+        <param name="count">The maximum number of bytes to receive and store in the <paramref name="buffer" />.</param>
         <param name="callback">The callback method to invoke when the operation completes.</param>
-        <param name="state">Optional state information to pass to the <c>callback</c> method for this operation.</param>
+        <param name="state">Optional state information to pass to the <paramref name="callback" /> method for this operation.</param>
         <summary>Begins the operation of receiving a packet from the joined multicast group and invokes the specified callback when a packet has arrived on the group from any sender.</summary>
         <returns>Returns <see cref="T:System.IAsyncResult" />.  
   
@@ -233,11 +233,11 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer that contains the data to send.</param>
-        <param name="offset">The offset, in bytes, from the beginning of the <c>buffer</c> to read the data to be sent.</param>
-        <param name="count">The number of bytes to send from the <c>buffer</c>.</param>
+        <param name="offset">The offset, in bytes, from the beginning of the <paramref name="buffer" /> to read the data to be sent.</param>
+        <param name="count">The number of bytes to send from the <paramref name="buffer" />.</param>
         <param name="remoteEndPoint">The remote endpoint to which the packet is to be sent.</param>
         <param name="callback">The callback method to invoke when the operation completes.</param>
-        <param name="state">Optional state information to pass to the <c>callback</c> method for this operation.</param>
+        <param name="state">Optional state information to pass to the <paramref name="callback" /> method for this operation.</param>
         <summary>Begins the operation of sending a unicast packet to the specified destination.</summary>
         <returns>Returns <see cref="T:System.IAsyncResult" />.  
   
@@ -313,10 +313,10 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer that contains the data to send.</param>
-        <param name="offset">The offset, in bytes, from the beginning of the <c>buffer</c> to read the data to be sent.</param>
-        <param name="count">The number of bytes to send from the <c>buffer</c>.</param>
+        <param name="offset">The offset, in bytes, from the beginning of the <paramref name="buffer" /> to read the data to be sent.</param>
+        <param name="count">The number of bytes to send from the <paramref name="buffer" />.</param>
         <param name="callback">The callback method to invoke when the operation completes.</param>
-        <param name="state">Optional state information to pass to the <c>callback</c> method for this operation.</param>
+        <param name="state">Optional state information to pass to the <paramref name="callback" /> method for this operation.</param>
         <summary>Begins the operation of sending a packet to a joined multicast group and invokes the specified callback when a packet has been sent to the group.</summary>
         <returns>Returns <see cref="T:System.IAsyncResult" />.  
   

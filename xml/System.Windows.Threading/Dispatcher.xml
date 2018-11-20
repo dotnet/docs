@@ -125,7 +125,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="method">The delegate to a method that takes parameters specified in <c>args</c>, which is pushed onto the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue.</param>
+        <param name="method">The delegate to a method that takes parameters specified in <paramref name="args" />, which is pushed onto the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue.</param>
         <param name="args">An array of objects to pass as arguments to the given method. Can be <see langword="null" />.</param>
         <summary>Executes the specified delegate asynchronously with the specified arguments on the thread that the <see cref="T:System.Windows.Threading.Dispatcher" /> was created on.</summary>
         <returns>An object, which is returned immediately after <see cref="Overload:System.Windows.Threading.Dispatcher.BeginInvoke" /> is called, that can be used to interact with the delegate as it is pending execution in the event queue.</returns>
@@ -273,7 +273,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="method">The delegate to a method that takes parameters specified in <c>args</c>, which is pushed onto the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue.</param>
+        <param name="method">The delegate to a method that takes parameters specified in <paramref name="args" />, which is pushed onto the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue.</param>
         <param name="priority">The priority, relative to the other pending operations in the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue, the specified method is invoked.</param>
         <param name="args">An array of objects to pass as arguments to the given method. Can be <see langword="null" />.</param>
         <summary>Executes the specified delegate asynchronously with the specified arguments, at the specified priority, on the thread that the <see cref="T:System.Windows.Threading.Dispatcher" /> was created on.</summary>
@@ -942,7 +942,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="method">A delegate to a method that takes parameters specified in <c>args</c>, which is pushed onto the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue.</param>
+        <param name="method">A delegate to a method that takes parameters specified in <paramref name="args" />, which is pushed onto the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue.</param>
         <param name="args">An array of objects to pass as arguments to the given method. Can be <see langword="null" />.</param>
         <summary>Executes the specified delegate with the specified arguments synchronously on the thread the <see cref="T:System.Windows.Threading.Dispatcher" /> is associated with.</summary>
         <returns>The return value from the delegate being invoked or <see langword="null" /> if the delegate has no return value.</returns>
@@ -1080,7 +1080,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="method">A delegate to a method that takes parameters specified in <c>args</c>, which is pushed onto the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue.</param>
+        <param name="method">A delegate to a method that takes parameters specified in <paramref name="args" />, which is pushed onto the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue.</param>
         <param name="timeout">The maximum amount of time to wait for the operation to complete.</param>
         <param name="args">An array of objects to pass as arguments to the given method. Can be <see langword="null" />.</param>
         <summary>Executes the specified delegate within the designated time span at the specified priority with the specified arguments synchronously on the thread the <see cref="T:System.Windows.Threading.Dispatcher" /> is associated with.</summary>
@@ -1125,7 +1125,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="method">A delegate to a method that takes parameters specified in <c>args</c>, which is pushed onto the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue.</param>
+        <param name="method">A delegate to a method that takes parameters specified in <paramref name="args" />, which is pushed onto the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue.</param>
         <param name="priority">The priority, relative to the other pending operations in the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue, the specified method is invoked.</param>
         <param name="args">An array of objects to pass as arguments to the given method. Can be <see langword="null" />.</param>
         <summary>Executes the specified delegate at the specified priority with the specified arguments synchronously on the thread the <see cref="T:System.Windows.Threading.Dispatcher" /> is associated with.</summary>
@@ -1321,7 +1321,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="method">A delegate to a method that takes parameters specified in <c>args</c>, which is pushed onto the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue.</param>
+        <param name="method">A delegate to a method that takes parameters specified in <paramref name="args" />, which is pushed onto the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue.</param>
         <param name="timeout">The maximum amount of time to wait for the operation to complete.</param>
         <param name="priority">The priority, relative to the other pending operations in the <see cref="T:System.Windows.Threading.Dispatcher" /> event queue, the specified method is invoked.</param>
         <param name="args">An array of objects to pass as arguments to the given method. Can be <see langword="null" />.</param>

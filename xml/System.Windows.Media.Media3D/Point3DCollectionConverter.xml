@@ -157,7 +157,7 @@
       <Docs>
         <param name="context">The type descriptor context for this call.</param>
         <param name="culture">The culture information that is respected when converting.</param>
-        <param name="value">The object to convert to an instance of <c>destinationType</c>.</param>
+        <param name="value">The object to convert to an instance of <paramref name="destinationType" />.</param>
         <param name="destinationType">Type to which this method will convert the <see cref="T:System.Windows.Media.Media3D.Point3DCollection" /> instance.</param>
         <summary>Attempts to convert an instance of <see cref="T:System.Windows.Media.Media3D.Point3DCollection" /> to the specified type</summary>
         <returns>The object that was constructed.</returns>

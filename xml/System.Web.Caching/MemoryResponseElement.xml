@@ -48,7 +48,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of bytes that contains a part of an output-cache response.</param>
-        <param name="length">The size of the array in <c>buffer</c>.</param>
+        <param name="length">The size of the array in <paramref name="buffer" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.MemoryResponseElement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

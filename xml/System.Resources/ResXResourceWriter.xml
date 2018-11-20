@@ -265,7 +265,7 @@
       </Parameters>
       <Docs>
         <param name="aliasName">The name of the alias.</param>
-        <param name="assemblyName">The name of the assembly represented by <c>aliasName</c>.</param>
+        <param name="assemblyName">The name of the assembly represented by <paramref name="aliasName" />.</param>
         <summary>Adds the specified alias to a list of aliases.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

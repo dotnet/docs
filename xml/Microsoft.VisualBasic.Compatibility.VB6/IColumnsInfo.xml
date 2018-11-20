@@ -100,7 +100,7 @@
       <Docs>
         <param name="cColumnIDs">The number of column IDs to map.</param>
         <param name="columnIDs">An array of IDs of the columns for which to determine the column ordinals.</param>
-        <param name="rgColumns">An array of <c>cColumnIDs</c> ordinals of the columns identified by the elements of <c>columnIDs</c>.</param>
+        <param name="rgColumns">An array of <paramref name="cColumnIDs" /> ordinals of the columns identified by the elements of <paramref name="columnIDs" />.</param>
         <summary>Returns an array of ordinals of the columns in a rowset that are identified by the specified column IDs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

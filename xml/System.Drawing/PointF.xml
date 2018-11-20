@@ -127,7 +127,7 @@
       </Parameters>
       <Docs>
         <param name="pt">The <see cref="T:System.Drawing.PointF" /> to translate.</param>
-        <param name="sz">The <see cref="T:System.Drawing.Size" /> that specifies the numbers to add to the coordinates of <c>pt</c>.</param>
+        <param name="sz">The <see cref="T:System.Drawing.Size" /> that specifies the numbers to add to the coordinates of <paramref name="pt" />.</param>
         <summary>Translates a given <see cref="T:System.Drawing.PointF" /> by the specified <see cref="T:System.Drawing.Size" />.</summary>
         <returns>The translated <see cref="T:System.Drawing.PointF" />.</returns>
         <remarks>
@@ -173,7 +173,7 @@
       </Parameters>
       <Docs>
         <param name="pt">The <see cref="T:System.Drawing.PointF" /> to translate.</param>
-        <param name="sz">The <see cref="T:System.Drawing.SizeF" /> that specifies the numbers to add to the coordinates of <c>pt</c>.</param>
+        <param name="sz">The <see cref="T:System.Drawing.SizeF" /> that specifies the numbers to add to the coordinates of <paramref name="pt" />.</param>
         <summary>Translates a given <see cref="T:System.Drawing.PointF" /> by a specified <see cref="T:System.Drawing.SizeF" />.</summary>
         <returns>The translated <see cref="T:System.Drawing.PointF" />.</returns>
         <remarks>
@@ -420,7 +420,7 @@
       </Parameters>
       <Docs>
         <param name="pt">The <see cref="T:System.Drawing.PointF" /> to translate.</param>
-        <param name="sz">A <see cref="T:System.Drawing.Size" /> that specifies the pair of numbers to add to the coordinates of <c>pt</c>.</param>
+        <param name="sz">A <see cref="T:System.Drawing.Size" /> that specifies the pair of numbers to add to the coordinates of <paramref name="pt" />.</param>
         <summary>Translates a <see cref="T:System.Drawing.PointF" /> by a given <see cref="T:System.Drawing.Size" />.</summary>
         <returns>Returns the translated <see cref="T:System.Drawing.PointF" />.</returns>
         <remarks>
@@ -644,7 +644,7 @@
       </Parameters>
       <Docs>
         <param name="pt">The <see cref="T:System.Drawing.PointF" /> to translate.</param>
-        <param name="sz">The <see cref="T:System.Drawing.Size" /> that specifies the numbers to subtract from the coordinates of <c>pt</c>.</param>
+        <param name="sz">The <see cref="T:System.Drawing.Size" /> that specifies the numbers to subtract from the coordinates of <paramref name="pt" />.</param>
         <summary>Translates a <see cref="T:System.Drawing.PointF" /> by the negative of a given <see cref="T:System.Drawing.Size" />.</summary>
         <returns>The translated <see cref="T:System.Drawing.PointF" />.</returns>
         <remarks>To be added.</remarks>
@@ -687,7 +687,7 @@
       </Parameters>
       <Docs>
         <param name="pt">The <see cref="T:System.Drawing.PointF" /> to translate.</param>
-        <param name="sz">The <see cref="T:System.Drawing.SizeF" /> that specifies the numbers to subtract from the coordinates of <c>pt</c>.</param>
+        <param name="sz">The <see cref="T:System.Drawing.SizeF" /> that specifies the numbers to subtract from the coordinates of <paramref name="pt" />.</param>
         <summary>Translates a <see cref="T:System.Drawing.PointF" /> by the negative of a specified <see cref="T:System.Drawing.SizeF" />.</summary>
         <returns>The translated <see cref="T:System.Drawing.PointF" />.</returns>
         <remarks>
@@ -750,7 +750,7 @@
       </Parameters>
       <Docs>
         <param name="pt">The <see cref="T:System.Drawing.PointF" /> to translate.</param>
-        <param name="sz">The <see cref="T:System.Drawing.Size" /> that specifies the numbers to subtract from the coordinates of <c>pt</c>.</param>
+        <param name="sz">The <see cref="T:System.Drawing.Size" /> that specifies the numbers to subtract from the coordinates of <paramref name="pt" />.</param>
         <summary>Translates a <see cref="T:System.Drawing.PointF" /> by the negative of a specified size.</summary>
         <returns>The translated <see cref="T:System.Drawing.PointF" />.</returns>
         <remarks>
@@ -796,7 +796,7 @@
       </Parameters>
       <Docs>
         <param name="pt">The <see cref="T:System.Drawing.PointF" /> to translate.</param>
-        <param name="sz">The <see cref="T:System.Drawing.SizeF" /> that specifies the numbers to subtract from the coordinates of <c>pt</c>.</param>
+        <param name="sz">The <see cref="T:System.Drawing.SizeF" /> that specifies the numbers to subtract from the coordinates of <paramref name="pt" />.</param>
         <summary>Translates a <see cref="T:System.Drawing.PointF" /> by the negative of a specified size.</summary>
         <returns>The translated <see cref="T:System.Drawing.PointF" />.</returns>
         <remarks>

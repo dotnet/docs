@@ -141,7 +141,7 @@
         <Parameter Name="item" Type="System.ServiceModel.Description.OperationDescription" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>item</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
         <param name="item">The <see cref="T:System.ServiceModel.Description.OperationDescription" /> to insert.</param>
         <summary>Inserts an element into the operation description collection at the specified index.</summary>
         <remarks>
@@ -184,7 +184,7 @@
         <Parameter Name="item" Type="System.ServiceModel.Description.OperationDescription" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>item</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
         <param name="item">The <see cref="T:System.ServiceModel.Description.OperationDescription" /> to set.</param>
         <summary>Replaces the operation description element in the collection at the specified index.</summary>
         <remarks>

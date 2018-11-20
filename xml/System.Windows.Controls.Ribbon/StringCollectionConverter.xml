@@ -145,7 +145,7 @@
         <param name="context">An object that provides a format context.</param>
         <param name="culture">The object to use as the current culture.</param>
         <param name="value">The <see cref="T:System.Collections.Specialized.StringCollection" /> to convert.</param>
-        <param name="destinationType">The type to convert the <c>value</c> to.</param>
+        <param name="destinationType">The type to convert the <paramref name="value" /> to.</param>
         <summary>Converts an object of type <see cref="T:System.Collections.Specialized.StringCollection" /> to a <see cref="T:System.String" /> or <see cref="T:System.ComponentModel.Design.Serialization.InstanceDescriptor" />.</summary>
         <returns>The converted value.</returns>
         <remarks>To be added.</remarks>

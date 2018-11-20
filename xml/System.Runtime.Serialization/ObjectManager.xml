@@ -393,9 +393,9 @@
         <Parameter Name="objectRequired" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="objectToBeFixed">The ID of the object that needs the reference to <c>objectRequired</c>.</param>
-        <param name="memberName">The member name of <c>objectToBeFixed</c> where the fixup will be performed.</param>
-        <param name="objectRequired">The ID of the object required by <c>objectToBeFixed</c>.</param>
+        <param name="objectToBeFixed">The ID of the object that needs the reference to <paramref name="objectRequired" />.</param>
+        <param name="memberName">The member name of <paramref name="objectToBeFixed" /> where the fixup will be performed.</param>
+        <param name="objectRequired">The ID of the object required by <paramref name="objectToBeFixed" />.</param>
         <summary>Records a fixup for an object member, to be executed later.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -443,9 +443,9 @@
         <Parameter Name="objectRequired" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="objectToBeFixed">The ID of the object that needs the reference to the <c>objectRequired</c> object.</param>
-        <param name="member">The member of <c>objectToBeFixed</c> where the fixup will be performed.</param>
-        <param name="objectRequired">The ID of the object required by <c>objectToBeFixed</c>.</param>
+        <param name="objectToBeFixed">The ID of the object that needs the reference to the <paramref name="objectRequired" /> object.</param>
+        <param name="member">The member of <paramref name="objectToBeFixed" /> where the fixup will be performed.</param>
+        <param name="objectRequired">The ID of the object required by <paramref name="objectToBeFixed" />.</param>
         <summary>Records a fixup for a member of an object, to be executed later.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -562,7 +562,7 @@
       <Docs>
         <param name="obj">The object to register.</param>
         <param name="objectID">The ID of the object to register.</param>
-        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> used if <c>obj</c> implements <see cref="T:System.Runtime.Serialization.ISerializable" /> or has a <see cref="T:System.Runtime.Serialization.ISerializationSurrogate" />. <c>info</c> will be completed with any required fixup information and then passed to the required object when that object is completed.</param>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> used if <paramref name="obj" /> implements <see cref="T:System.Runtime.Serialization.ISerializable" /> or has a <see cref="T:System.Runtime.Serialization.ISerializationSurrogate" />. <paramref name="info" /> will be completed with any required fixup information and then passed to the required object when that object is completed.</param>
         <summary>Registers an object as it is deserialized, associating it with <paramref name="objectID" />, and recording the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> used with it.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -619,9 +619,9 @@
       <Docs>
         <param name="obj">The object to register.</param>
         <param name="objectID">The ID of the object to register.</param>
-        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> used if <c>obj</c> implements <see cref="T:System.Runtime.Serialization.ISerializable" /> or has a <see cref="T:System.Runtime.Serialization.ISerializationSurrogate" />. <c>info</c> will be completed with any required fixup information and then passed to the required object when that object is completed.</param>
-        <param name="idOfContainingObj">The ID of the object that contains <c>obj</c>. This parameter is required only if <c>obj</c> is a value type.</param>
-        <param name="member">The field in the containing object where <c>obj</c> exists. This parameter has meaning only if <c>obj</c> is a value type.</param>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> used if <paramref name="obj" /> implements <see cref="T:System.Runtime.Serialization.ISerializable" /> or has a <see cref="T:System.Runtime.Serialization.ISerializationSurrogate" />. <paramref name="info" /> will be completed with any required fixup information and then passed to the required object when that object is completed.</param>
+        <param name="idOfContainingObj">The ID of the object that contains <paramref name="obj" />. This parameter is required only if <paramref name="obj" /> is a value type.</param>
+        <param name="member">The field in the containing object where <paramref name="obj" /> exists. This parameter has meaning only if <paramref name="obj" /> is a value type.</param>
         <summary>Registers a member of an object as it is deserialized, associating it with <paramref name="objectID" />, and recording the <see cref="T:System.Runtime.Serialization.SerializationInfo" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -681,10 +681,10 @@
       <Docs>
         <param name="obj">The object to register.</param>
         <param name="objectID">The ID of the object to register.</param>
-        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> used if <c>obj</c> implements <see cref="T:System.Runtime.Serialization.ISerializable" /> or has a <see cref="T:System.Runtime.Serialization.ISerializationSurrogate" />. <c>info</c> will be completed with any required fixup information and then passed to the required object when that object is completed.</param>
-        <param name="idOfContainingObj">The ID of the object that contains <c>obj</c>. This parameter is required only if <c>obj</c> is a value type.</param>
-        <param name="member">The field in the containing object where <c>obj</c> exists. This parameter has meaning only if <c>obj</c> is a value type.</param>
-        <param name="arrayIndex">If <c>obj</c> is a <see cref="T:System.ValueType" /> and a member of an array, <c>arrayIndex</c> contains the index within that array where <c>obj</c> exists. <c>arrayIndex</c> is ignored if <c>obj</c> is not both a <see cref="T:System.ValueType" /> and a member of an array.</param>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> used if <paramref name="obj" /> implements <see cref="T:System.Runtime.Serialization.ISerializable" /> or has a <see cref="T:System.Runtime.Serialization.ISerializationSurrogate" />. <paramref name="info" /> will be completed with any required fixup information and then passed to the required object when that object is completed.</param>
+        <param name="idOfContainingObj">The ID of the object that contains <paramref name="obj" />. This parameter is required only if <paramref name="obj" /> is a value type.</param>
+        <param name="member">The field in the containing object where <paramref name="obj" /> exists. This parameter has meaning only if <paramref name="obj" /> is a value type.</param>
+        <param name="arrayIndex">If <paramref name="obj" /> is a <see cref="T:System.ValueType" /> and a member of an array, <paramref name="arrayIndex" /> contains the index within that array where <paramref name="obj" /> exists. <paramref name="arrayIndex" /> is ignored if <paramref name="obj" /> is not both a <see cref="T:System.ValueType" /> and a member of an array.</param>
         <summary>Registers a member of an array contained in an object while it is deserialized, associating it with <paramref name="objectID" />, and recording the <see cref="T:System.Runtime.Serialization.SerializationInfo" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

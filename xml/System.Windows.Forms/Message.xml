@@ -67,8 +67,8 @@
       <Docs>
         <param name="hWnd">The window handle that the message is for.</param>
         <param name="msg">The message ID.</param>
-        <param name="wparam">The message <c>wparam</c> field.</param>
-        <param name="lparam">The message <c>lparam</c> field.</param>
+        <param name="wparam">The message <paramref name="wparam" /> field.</param>
+        <param name="lparam">The message <paramref name="lparam" /> field.</param>
         <summary>Creates a new <see cref="T:System.Windows.Forms.Message" />.</summary>
         <returns>A <see cref="T:System.Windows.Forms.Message" /> that represents the message that was created.</returns>
         <remarks>
@@ -306,8 +306,8 @@
         <Parameter Name="b" Type="System.Windows.Forms.Message" />
       </Parameters>
       <Docs>
-        <param name="a">A <see cref="T:System.Windows.Forms.Message" /> to compare to <c>b</c>.</param>
-        <param name="b">A <see cref="T:System.Windows.Forms.Message" /> to compare to <c>a</c>.</param>
+        <param name="a">A <see cref="T:System.Windows.Forms.Message" /> to compare to <paramref name="b" />.</param>
+        <param name="b">A <see cref="T:System.Windows.Forms.Message" /> to compare to <paramref name="a" />.</param>
         <summary>Determines whether two instances of <see cref="T:System.Windows.Forms.Message" /> are equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> represent the same <see cref="T:System.Windows.Forms.Message" />; otherwise, <see langword="false" />.</returns>
@@ -337,8 +337,8 @@
         <Parameter Name="b" Type="System.Windows.Forms.Message" />
       </Parameters>
       <Docs>
-        <param name="a">A <see cref="T:System.Windows.Forms.Message" /> to compare to <c>b</c>.</param>
-        <param name="b">A <see cref="T:System.Windows.Forms.Message" /> to compare to <c>a</c>.</param>
+        <param name="a">A <see cref="T:System.Windows.Forms.Message" /> to compare to <paramref name="b" />.</param>
+        <param name="b">A <see cref="T:System.Windows.Forms.Message" /> to compare to <paramref name="a" />.</param>
         <summary>Determines whether two instances of <see cref="T:System.Windows.Forms.Message" /> are not equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> do not represent the same <see cref="T:System.Windows.Forms.Message" />; otherwise, <see langword="false" />.</returns>

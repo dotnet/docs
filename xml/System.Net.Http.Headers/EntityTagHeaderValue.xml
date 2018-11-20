@@ -104,7 +104,7 @@
       </Parameters>
       <Docs>
         <param name="tag">A string that contains an  <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" />.</param>
-        <param name="isWeak">A value that indicates if this entity-tag header is a weak validator. If the entity-tag header is weak validator, then <c>isWeak</c> should be set to <see langword="true" />. If the entity-tag header is a strong validator, then <c>isWeak</c> should be set to <see langword="false" />.</param>
+        <param name="isWeak">A value that indicates if this entity-tag header is a weak validator. If the entity-tag header is weak validator, then <paramref name="isWeak" /> should be set to <see langword="true" />. If the entity-tag header is a strong validator, then <paramref name="isWeak" /> should be set to <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>

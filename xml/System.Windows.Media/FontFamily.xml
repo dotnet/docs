@@ -243,7 +243,7 @@ Example of typefaces that are members of the "Times New Roman" font family
         <Parameter Name="familyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="baseUri">Specifies the base [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] that is used to resolve <c>familyName</c>.</param>
+        <param name="baseUri">Specifies the base [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] that is used to resolve <paramref name="familyName" />.</param>
         <param name="familyName">The family name or names that comprise the new <see cref="T:System.Windows.Media.FontFamily" />. Multiple family names should be separated by commas.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.FontFamily" /> class from the specified font family name and an optional base [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] value.</summary>
         <remarks>

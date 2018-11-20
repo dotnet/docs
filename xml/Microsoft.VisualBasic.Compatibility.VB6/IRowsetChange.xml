@@ -65,7 +65,7 @@
         <param name="hChapterReserved">The chapter handle.</param>
         <param name="cRows">The number of rows to be deleted.</param>
         <param name="rghRows">An array of handles of the rows to be deleted.</param>
-        <param name="rgRowStatus">An array with <c>cRows</c> elements in which to return values indicating the status of each row specified in <c>rghRows</c>.</param>
+        <param name="rgRowStatus">An array with <paramref name="cRows" /> elements in which to return values indicating the status of each row specified in <paramref name="rghRows" />.</param>
         <summary>Deletes rows.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -827,7 +827,7 @@ This method does not create a cookie.
       </Parameters>
       <Docs>
         <param name="password">The password to hash.</param>
-        <param name="passwordFormat">The hash algorithm to use. <c>passwordFormat</c> is a <see langword="String" /> that represents one of the <see cref="T:System.Web.Configuration.FormsAuthPasswordFormat" /> enumeration values.</param>
+        <param name="passwordFormat">The hash algorithm to use. <paramref name="passwordFormat" /> is a <see langword="String" /> that represents one of the <see cref="T:System.Web.Configuration.FormsAuthPasswordFormat" /> enumeration values.</param>
         <summary>Produces a hash password suitable for storing in a configuration file based on the specified password and hash algorithm.</summary>
         <returns>The hashed password.</returns>
         <remarks>

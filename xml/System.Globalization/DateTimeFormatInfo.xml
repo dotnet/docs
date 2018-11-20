@@ -2649,7 +2649,7 @@
       </Parameters>
       <Docs>
         <param name="patterns">An array of custom format strings.</param>
-        <param name="format">The standard format string associated with the custom format strings specified in the <c>patterns</c> parameter.</param>
+        <param name="format">The standard format string associated with the custom format strings specified in the <paramref name="patterns" /> parameter.</param>
         <summary>Sets the custom date and time format strings that correspond to a specified standard format string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

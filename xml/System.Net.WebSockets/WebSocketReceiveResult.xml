@@ -110,7 +110,7 @@
         <param name="messageType">The type of message that was received.</param>
         <param name="endOfMessage">Indicates whether this is the final message.</param>
         <param name="closeStatus">Indicates the <see cref="T:System.Net.WebSockets.WebSocketCloseStatus" /> of the connection.</param>
-        <param name="closeStatusDescription">The description of <c>closeStatus</c>.</param>
+        <param name="closeStatusDescription">The description of <paramref name="closeStatus" />.</param>
         <summary>Creates an instance of the <see cref="T:System.Net.WebSockets.WebSocketReceiveResult" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>

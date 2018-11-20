@@ -270,7 +270,7 @@
         <Parameter Name="operationMessage" Type="System.Web.Services.Description.OperationMessage" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the <c>operationMessage</c> parameter.</param>
+        <param name="index">The zero-based index at which to insert the <paramref name="operationMessage" /> parameter.</param>
         <param name="operationMessage">The <see cref="T:System.Web.Services.Description.OperationMessage" /> to add to the collection.</param>
         <summary>Adds the specified <see cref="T:System.Web.Services.Description.OperationMessage" /> to the <see cref="T:System.Web.Services.Description.OperationMessageCollection" /> at the specified zero-based index.</summary>
         <remarks>

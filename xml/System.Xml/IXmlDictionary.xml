@@ -84,7 +84,7 @@
       </Parameters>
       <Docs>
         <param name="key">Key to look up.</param>
-        <param name="result">If <c>key</c> is defined, the <see cref="T:System.Xml.XmlDictionaryString" /> that is mapped to the key; otherwise <see langword="null" />.</param>
+        <param name="result">If <paramref name="key" /> is defined, the <see cref="T:System.Xml.XmlDictionaryString" /> that is mapped to the key; otherwise <see langword="null" />.</param>
         <summary>Attempts to look up an entry in the dictionary.</summary>
         <returns>
           <see langword="true" /> if key is in the dictionary, otherwise <see langword="false" />.</returns>

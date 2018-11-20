@@ -214,7 +214,7 @@
       </Parameters>
       <Docs>
         <param name="array">A one-dimensional array to which the collection contents will be copied. This array must use zero-based indexing.</param>
-        <param name="index">A zero-based index in <c>array</c> specifying the position at which to begin inserting the copied collection objects.</param>
+        <param name="index">A zero-based index in <paramref name="array" /> specifying the position at which to begin inserting the copied collection objects.</param>
         <summary>Copies the contents of the collection and inserts them into a specified array starting at a specified index position in the array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">Raised when <paramref name="array" /> includes items that are not compatible with the type <see cref="T:System.Windows.Documents.TableCell" />, or if <paramref name="index" /> specifies a position that falls outside the bounds of <paramref name="array" />.</exception>
@@ -244,7 +244,7 @@
       </Parameters>
       <Docs>
         <param name="array">A one-dimensional <see cref="T:System.Windows.Documents.TableCell" /> array to which the collection contents will be copied. This array must use zero-based indexing.</param>
-        <param name="index">A zero-based index in <c>array</c> that specifies the position at which to begin inserting the copied collection objects.</param>
+        <param name="index">A zero-based index in <paramref name="array" /> that specifies the position at which to begin inserting the copied collection objects.</param>
         <summary>Copies the contents of the collection and inserts them into a specified <see cref="T:System.Windows.Documents.TableCell" /> array of starting at a specified index position in the array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">Raised when <paramref name="array" /> includes items that are not compatible with the type <see cref="T:System.Windows.Documents.TableCell" />, or if <paramref name="index" /> specifies a position that falls outside of the bounds of <paramref name="array" />.</exception>
@@ -340,7 +340,7 @@
         <Parameter Name="item" Type="System.Windows.Documents.TableCell" />
       </Parameters>
       <Docs>
-        <param name="index">A zero-based index that specifies the position in the collection at which to insert <c>item</c>.</param>
+        <param name="index">A zero-based index that specifies the position in the collection at which to insert <paramref name="item" />.</param>
         <param name="item">An item to insert into the collection.</param>
         <summary>Inserts a specified item in the collection at a specified index position.</summary>
         <remarks>
@@ -547,7 +547,7 @@
       </Parameters>
       <Docs>
         <param name="index">A zero-based index that indicates the beginning of a range of items to remove.</param>
-        <param name="count">The number of items to remove, beginning from the position specified by <c>index</c>.</param>
+        <param name="count">The number of items to remove, beginning from the position specified by <paramref name="index" />.</param>
         <summary>Removes a range of items, specified by beginning index and count, from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

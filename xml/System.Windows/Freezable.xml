@@ -501,7 +501,7 @@
         <Parameter Name="isChecking" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="freezable">The object to check or make unmodifiable. If <c>isChecking</c> is <see langword="true" />, the object is checked to determine whether it can be made unmodifiable. If <c>isChecking</c> is <see langword="false" />, the object is made unmodifiable, if possible.</param>
+        <param name="freezable">The object to check or make unmodifiable. If <paramref name="isChecking" /> is <see langword="true" />, the object is checked to determine whether it can be made unmodifiable. If <paramref name="isChecking" /> is <see langword="false" />, the object is made unmodifiable, if possible.</param>
         <param name="isChecking">
           <see langword="true" /> to return an indication of whether the object can be frozen (without actually freezing it); <see langword="false" /> to actually freeze the object.</param>
         <summary>If the <paramref name="isChecking" /> parameter is <see langword="true" />, this method indicates whether the specified <see cref="T:System.Windows.Freezable" /> can be made unmodifiable. If the <paramref name="isChecking" /> parameter is <see langword="false" />, this method attempts to make the specified <see cref="T:System.Windows.Freezable" /> unmodifiable and indicates whether the operation succeeded.</summary>

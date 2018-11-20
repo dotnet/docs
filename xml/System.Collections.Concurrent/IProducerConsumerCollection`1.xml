@@ -91,7 +91,7 @@
         <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from the <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />.  
   
  The array must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the elements of the <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" /> to an <see cref="T:System.Array" />, starting at a specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -225,7 +225,7 @@
         <Parameter Name="item" Type="T" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="item">When this method returns, if the object was removed and returned successfully, <c>item</c> contains the removed object. If no object was available to be removed, the value is unspecified.</param>
+        <param name="item">When this method returns, if the object was removed and returned successfully, <paramref name="item" /> contains the removed object. If no object was available to be removed, the value is unspecified.</param>
         <summary>Attempts to remove and return an object from the <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />.</summary>
         <returns>true if an object was removed and returned successfully; otherwise, false.</returns>
         <remarks>To be added.</remarks>

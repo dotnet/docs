@@ -619,8 +619,8 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to write to the <c>stream</c>.</param>
-        <param name="stream">The <see cref="T:System.IO.Stream" /> object to which the <c>message</c> is written.</param>
+        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to write to the <paramref name="stream" />.</param>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> object to which the <paramref name="message" /> is written.</param>
         <summary>When overridden in a derived class, writes a message to a specified stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

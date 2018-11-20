@@ -314,8 +314,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer from which to read.</param>
-        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
-        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="offset">The starting position from which to read in <paramref name="buffer" />.</param>
+        <param name="count">The number of bytes that can be read from <paramref name="buffer" />.</param>
         <param name="quotas">The quotas that apply to this operation.</param>
         <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that can read .NET Binary XML Format.</summary>
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
@@ -422,8 +422,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer from which to read.</param>
-        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
-        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="offset">The starting position from which to read in <paramref name="buffer" />.</param>
+        <param name="count">The number of bytes that can be read from <paramref name="buffer" />.</param>
         <param name="dictionary">
           <see cref="T:System.Xml.XmlDictionary" /> to use.</param>
         <param name="quotas">The quotas that apply to this operation.</param>
@@ -535,8 +535,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer from which to read.</param>
-        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
-        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="offset">The starting position from which to read in <paramref name="buffer" />.</param>
+        <param name="count">The number of bytes that can be read from <paramref name="buffer" />.</param>
         <param name="dictionary">The <see cref="T:System.Xml.XmlDictionary" /> to use.</param>
         <param name="quotas">The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> to apply.</param>
         <param name="session">The <see cref="T:System.Xml.XmlBinaryReaderSession" /> to use.</param>
@@ -593,8 +593,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer from which to read.</param>
-        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
-        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="offset">The starting position from which to read in <paramref name="buffer" />.</param>
+        <param name="count">The number of bytes that can be read from <paramref name="buffer" />.</param>
         <param name="dictionary">The <see cref="T:System.Xml.XmlDictionary" /> to use.</param>
         <param name="quotas">The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> to apply.</param>
         <param name="session">The <see cref="T:System.Xml.XmlBinaryReaderSession" /> to use.</param>
@@ -850,8 +850,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer from which to read.</param>
-        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
-        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="offset">The starting position from which to read in <paramref name="buffer" />.</param>
+        <param name="count">The number of bytes that can be read from <paramref name="buffer" />.</param>
         <param name="encoding">The possible character encoding of the input.</param>
         <param name="quotas">The quotas to apply to this reader.</param>
         <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that reads XML in the MTOM format.</summary>
@@ -903,8 +903,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer from which to read.</param>
-        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
-        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="offset">The starting position from which to read in <paramref name="buffer" />.</param>
+        <param name="count">The number of bytes that can be read from <paramref name="buffer" />.</param>
         <param name="encodings">The possible character encodings of the input.</param>
         <param name="quotas">The quotas to apply to this reader.</param>
         <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that reads XML in the MTOM format.</summary>
@@ -955,8 +955,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer from which to read.</param>
-        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
-        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="offset">The starting position from which to read in <paramref name="buffer" />.</param>
+        <param name="count">The number of bytes that can be read from <paramref name="buffer" />.</param>
         <param name="encodings">The possible character encodings of the input.</param>
         <param name="contentType">The Content-Type MIME type of the message.</param>
         <param name="quotas">The quotas to apply to this reader.</param>
@@ -1062,8 +1062,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer from which to read.</param>
-        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
-        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="offset">The starting position from which to read in <paramref name="buffer" />.</param>
+        <param name="count">The number of bytes that can be read from <paramref name="buffer" />.</param>
         <param name="encodings">The possible character encodings of the input.</param>
         <param name="contentType">The Content-Type MIME type of the message.</param>
         <param name="quotas">The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> to apply to the reader.</param>
@@ -1226,8 +1226,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer from which to read.</param>
-        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
-        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="offset">The starting position from which to read in <paramref name="buffer" />.</param>
+        <param name="count">The number of bytes that can be read from <paramref name="buffer" />.</param>
         <param name="quotas">The quotas applied to the reader.</param>
         <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</summary>
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
@@ -1325,8 +1325,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer from which to read.</param>
-        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
-        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="offset">The starting position from which to read in <paramref name="buffer" />.</param>
+        <param name="count">The number of bytes that can be read from <paramref name="buffer" />.</param>
         <param name="encoding">The <see cref="T:System.Text.Encoding" /> object that specifies the encoding properties to apply.</param>
         <param name="quotas">The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> to apply.</param>
         <param name="onClose">The delegate to be called when the reader is closed.</param>
@@ -1446,7 +1446,7 @@
       </Parameters>
       <Docs>
         <param name="localName">The local name.</param>
-        <param name="namespaceUri">The namespace for the local <c>localName</c>.</param>
+        <param name="namespaceUri">The namespace for the local <paramref name="localName" />.</param>
         <summary>Gets non-atomized names.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3610,7 +3610,7 @@
       </Parameters>
       <Docs>
         <param name="strings">The array of strings to match content against.</param>
-        <param name="index">The index of the entry in <c>strings</c> that matches the content.</param>
+        <param name="index">The index of the entry in <paramref name="strings" /> that matches the content.</param>
         <summary>Converts a node's content to a string.</summary>
         <returns>The node content in a string representation.</returns>
         <remarks>To be added.</remarks>
@@ -3650,7 +3650,7 @@
       </Parameters>
       <Docs>
         <param name="strings">The array of <see cref="T:System.Xml.XmlDictionaryString" /> objects to match content against.</param>
-        <param name="index">The index of the entry in <c>strings</c> that matches the content.</param>
+        <param name="index">The index of the entry in <paramref name="strings" /> that matches the content.</param>
         <summary>Converts a node's content to a string.</summary>
         <returns>The node content in a string representation.</returns>
         <remarks>To be added.</remarks>
@@ -5423,8 +5423,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer from which to read.</param>
-        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
-        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="offset">The starting position from which to read in <paramref name="buffer" />.</param>
+        <param name="count">The number of bytes that can be read from <paramref name="buffer" />.</param>
         <summary>Not implemented.</summary>
         <returns>Not implemented.</returns>
         <remarks>To be added.</remarks>

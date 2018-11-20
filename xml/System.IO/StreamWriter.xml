@@ -195,7 +195,7 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The complete file path to write to. <c>path</c> can be a file name.</param>
+        <param name="path">The complete file path to write to. <paramref name="path" /> can be a file name.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IO.StreamWriter" /> class for the specified file by using the default encoding and buffer size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1333,7 +1333,7 @@
         <Parameter Name="buffer" Type="System.Char[]" />
       </Parameters>
       <Docs>
-        <param name="buffer">A character array containing the data to write. If <c>buffer</c> is <see langword="null" />, nothing is written.</param>
+        <param name="buffer">A character array containing the data to write. If <paramref name="buffer" /> is <see langword="null" />, nothing is written.</param>
         <summary>Writes a character array to the stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1434,7 +1434,7 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The string to write to the stream. If <c>value</c> is null, nothing is written.</param>
+        <param name="value">The string to write to the stream. If <paramref name="value" /> is null, nothing is written.</param>
         <summary>Writes a string to the stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1653,7 +1653,7 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">The string to write to the stream. If <c>value</c> is <see langword="null" />, nothing is written.</param>
+        <param name="value">The string to write to the stream. If <paramref name="value" /> is <see langword="null" />, nothing is written.</param>
         <summary>Writes a string to the stream asynchronously.</summary>
         <returns>A task that represents the asynchronous write operation.</returns>
         <remarks>

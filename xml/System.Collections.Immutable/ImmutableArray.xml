@@ -360,8 +360,8 @@
       <Docs>
         <typeparam name="T">The type of elements stored in the array.</typeparam>
         <param name="items">The source array of objects.</param>
-        <param name="start">The index of the first element to copy from <c>items</c>.</param>
-        <param name="length">The number of elements from <c>items</c> to include in this immutable array.</param>
+        <param name="start">The index of the first element to copy from <paramref name="items" />.</param>
+        <param name="length">The number of elements from <paramref name="items" /> to include in this immutable array.</param>
         <summary>  
   
  Creates an immutable array with the specified objects from another immutable array.</summary>
@@ -436,8 +436,8 @@
       <Docs>
         <typeparam name="T">The type of elements stored in the array.</typeparam>
         <param name="items">The source array of objects.</param>
-        <param name="start">The index of the first element to copy from <c>items</c>.</param>
-        <param name="length">The number of elements from <c>items</c> to include in this immutable array.</param>
+        <param name="start">The index of the first element to copy from <paramref name="items" />.</param>
+        <param name="length">The number of elements from <paramref name="items" /> to include in this immutable array.</param>
         <summary>  
   
  Creates an immutable array with specified objects from another array.</summary>
@@ -797,7 +797,7 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements contained in <c>items</c>.</typeparam>
+        <typeparam name="TSource">The type of elements contained in <paramref name="items" />.</typeparam>
         <param name="items">The collection of objects to copy to the immutable array.</param>
         <summary>  
   

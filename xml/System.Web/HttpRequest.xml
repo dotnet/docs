@@ -1212,8 +1212,8 @@ End Class
       </Parameters>
       <Docs>
         <param name="buffer">An array that contains the request entity data.</param>
-        <param name="offset">The zero-based position in <c>buffer</c> at which to begin storing the request entity data.</param>
-        <param name="count">The number of bytes to read into the <c>buffer</c> array.</param>
+        <param name="offset">The zero-based position in <paramref name="buffer" /> at which to begin storing the request entity data.</param>
+        <param name="count">The number of bytes to read into the <paramref name="buffer" /> array.</param>
         <summary>Provides IIS with a copy of the HTTP request entity body and with information about the request entity object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1515,7 +1515,7 @@ End Class
         <param name="virtualPath">The virtual path (absolute or relative) for the current request.</param>
         <param name="baseVirtualDir">The virtual base directory path used for relative resolution.</param>
         <param name="allowCrossAppMapping">
-          <see langword="true" /> to indicate that <c>virtualPath</c> may belong to another application; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to indicate that <paramref name="virtualPath" /> may belong to another application; otherwise, <see langword="false" />.</param>
         <summary>Maps the specified virtual path to a physical path.</summary>
         <returns>The physical path on the server.</returns>
         <remarks>

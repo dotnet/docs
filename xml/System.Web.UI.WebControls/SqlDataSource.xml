@@ -1710,7 +1710,7 @@ This section contains four code examples:
         <Parameter Name="viewName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="viewName">The name of the view to retrieve. Because the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> supports only one view, <c>viewName</c> is ignored.</param>
+        <param name="viewName">The name of the view to retrieve. Because the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> supports only one view, <paramref name="viewName" /> is ignored.</param>
         <summary>Gets the named data source view that is associated with the data source control.</summary>
         <returns>The <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> named "Table" that is associated with the <see cref="T:System.Web.UI.WebControls.SqlDataSource" />.</returns>
         <remarks>

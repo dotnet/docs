@@ -130,7 +130,7 @@
         <Parameter Name="claims" Type="System.Collections.Generic.IList&lt;System.IdentityModel.Claims.Claim&gt;" />
       </Parameters>
       <Docs>
-        <param name="issuer">A <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object that specifies the issuer of the <see cref="T:System.IdentityModel.Claims.ClaimSet" /> specified in the <c>claims</c> parameter.</param>
+        <param name="issuer">A <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object that specifies the issuer of the <see cref="T:System.IdentityModel.Claims.ClaimSet" /> specified in the <paramref name="claims" /> parameter.</param>
         <param name="claims">An <see cref="T:System.Collections.Generic.IList`1" /> of type <see cref="T:System.IdentityModel.Claims.Claim" /> that contains the claims to add to this claim set.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.DefaultClaimSet" /> class, using the specified claims.</summary>
         <remarks>
@@ -173,7 +173,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="issuer">A <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object that specifies the issuer of the <see cref="T:System.IdentityModel.Claims.ClaimSet" /> specified in the <c>claims</c> parameter.</param>
+        <param name="issuer">A <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object that specifies the issuer of the <see cref="T:System.IdentityModel.Claims.ClaimSet" /> specified in the <paramref name="claims" /> parameter.</param>
         <param name="claims">An array of <see cref="T:System.IdentityModel.Claims.Claim" /> that represents the claims to be added to this claim set.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.DefaultClaimSet" /> class, using the specified claims.</summary>
         <remarks>
@@ -340,7 +340,7 @@
         <Parameter Name="claims" Type="System.Collections.Generic.IList&lt;System.IdentityModel.Claims.Claim&gt;" />
       </Parameters>
       <Docs>
-        <param name="issuer">The <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object that issued the <see cref="T:System.IdentityModel.Claims.ClaimSet" /> specified in the <c>claims</c> parameter.</param>
+        <param name="issuer">The <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object that issued the <see cref="T:System.IdentityModel.Claims.ClaimSet" /> specified in the <paramref name="claims" /> parameter.</param>
         <param name="claims">The set of <see cref="T:System.IdentityModel.Claims.Claim" /> objects to be included in this claim set.</param>
         <summary>Initializes an instance of the <see cref="T:System.IdentityModel.Claims.DefaultClaimSet" /> class, using the specified claims.</summary>
         <remarks>

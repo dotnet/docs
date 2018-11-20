@@ -69,7 +69,7 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="userState">The original <c>userState</c> passed to <see cref="Overload:System.Windows.Documents.DocumentPaginator.GetPageAsync" />, <see cref="Overload:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync" />, or <see cref="Overload:System.Windows.Documents.DocumentPaginator.ComputePageCountAsync" /> that identifies the asynchronous task to cancel.</param>
+        <param name="userState">The original <paramref name="userState" /> passed to <see cref="Overload:System.Windows.Documents.DocumentPaginator.GetPageAsync" />, <see cref="Overload:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync" />, or <see cref="Overload:System.Windows.Documents.DocumentPaginator.ComputePageCountAsync" /> that identifies the asynchronous task to cancel.</param>
         <summary>Cancels a previous <see cref="Overload:System.Windows.Documents.DocumentPaginator.GetPageAsync" /> or <see cref="Overload:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync" /> operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

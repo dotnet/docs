@@ -415,7 +415,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the items copied from the <see cref="T:System.Windows.Media.PointCollection" />. The array must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the items of the <see cref="T:System.Windows.Media.PointCollection" /> to an array, starting at the specified array index.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -608,7 +608,7 @@
         <Parameter Name="value" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
         <param name="value">The <see cref="T:System.Windows.Point" /> to insert into the <see cref="T:System.Windows.Media.PointCollection" />.</param>
         <summary>Inserts a <see cref="T:System.Windows.Point" /> into the <see cref="T:System.Windows.Media.PointCollection" /> at the specified index.</summary>
         <remarks>

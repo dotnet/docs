@@ -652,8 +652,8 @@
         <Parameter Name="dy" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="dx">The number to raise to the <c>dy</c> power.</param>
-        <param name="dy">The power to raise <c>dx</c> to.</param>
+        <param name="dx">The number to raise to the <paramref name="dy" /> power.</param>
+        <param name="dy">The power to raise <paramref name="dx" /> to.</param>
         <summary>Calculates the specified number raised to the specified power.</summary>
         <returns>The number <paramref name="dx" /> raised to the <paramref name="dy" /> power.</returns>
         <remarks>To be added.</remarks>

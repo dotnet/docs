@@ -314,7 +314,7 @@
         <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to the drawn text.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the text.</param>
         <param name="foreColor">The <see cref="T:System.Drawing.Color" /> to apply to the drawn text.</param>
-        <param name="backColor">The <see cref="T:System.Drawing.Color" /> to apply to the area represented by <c>bounds</c>.</param>
+        <param name="backColor">The <see cref="T:System.Drawing.Color" /> to apply to the area represented by <paramref name="bounds" />.</param>
         <summary>Draws the specified text within the specified bounds using the specified device context, font, color, and back color.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -489,7 +489,7 @@
         <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to the drawn text.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the text.</param>
         <param name="foreColor">The <see cref="T:System.Drawing.Color" /> to apply to the text.</param>
-        <param name="backColor">The <see cref="T:System.Drawing.Color" /> to apply to the area represented by <c>bounds</c>.</param>
+        <param name="backColor">The <see cref="T:System.Drawing.Color" /> to apply to the area represented by <paramref name="bounds" />.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
         <summary>Draws the specified text within the specified bounds using the specified device context, font, color, back color, and formatting instructions.</summary>
         <remarks>

@@ -1611,7 +1611,7 @@
       </Parameters>
       <Docs>
         <param name="source">Source object in the link</param>
-        <param name="sourceProperty">The name of the navigation property on the <c>source</c> object that returns the related object.</param>
+        <param name="sourceProperty">The name of the navigation property on the <paramref name="source" /> object that returns the related object.</param>
         <param name="target">The related entity.</param>
         <summary>Gets the <see cref="T:System.Data.Services.Client.LinkDescriptor" /> for a specific link that defines the relationship between two entities.</summary>
         <returns>The <see cref="T:System.Data.Services.Client.LinkDescriptor" /> instance for the specified relationship, or <see langword="null" /> if a <see cref="T:System.Data.Services.Client.LinkDescriptor" /> does not exist for the relationship.</returns>
@@ -2476,7 +2476,7 @@
       <Docs>
         <param name="source">The source object for the new link.</param>
         <param name="sourceProperty">The property on the source object that identifies the target object of the new link.</param>
-        <param name="target">The child object involved in the new link that is to be initialized by calling this method. The target object must be a subtype of the type identified by the <c>sourceProperty</c> parameter. If <c>target</c> is set to null, the call represents a delete link operation.</param>
+        <param name="target">The child object involved in the new link that is to be initialized by calling this method. The target object must be a subtype of the type identified by the <paramref name="sourceProperty" /> parameter. If <paramref name="target" /> is set to null, the call represents a delete link operation.</param>
         <summary>Notifies the <see cref="T:System.Data.Services.Client.DataServiceContext" /> that a new link exists between the objects specified and that the link is represented by the property specified by the <paramref name="sourceProperty" /> parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2734,7 +2734,7 @@
         <Parameter Name="identity" Type="System.Uri" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="entity">The entity identified by the <c>identity</c>.</param>
+        <param name="entity">The entity identified by the <paramref name="identity" />.</param>
         <param name="identity">The URI of the entity.</param>
         <summary>Retrieves the canonical URI associated with the specified entity, if available.</summary>
         <returns>Returns true if the canonical URI is returned in the out parameter. If the specified entity is not tracked by the <see cref="T:System.Data.Services.Client.DataServiceContext" /> or is in the added state, no URI is available and false is returned.</returns>

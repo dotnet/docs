@@ -46,7 +46,7 @@
       <Docs>
         <param name="endpointConfigurationName">The name property in an endpoint configuration element.</param>
         <param name="configuration">The settings that define the information in the endpoint element.</param>
-        <param name="remoteAddress">The IP address of a destination endpoint in a client or server session. This parameter may be set to <see langword="null" /> to indicate the endpoint address should be taken from the configuration element specified in the <c>configuration</c> parameter.</param>
+        <param name="remoteAddress">The IP address of a destination endpoint in a client or server session. This parameter may be set to <see langword="null" /> to indicate the endpoint address should be taken from the configuration element specified in the <paramref name="configuration" /> parameter.</param>
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.ConfigurationChannelFactory`1" /> class with the specified endpoint configuration name, <see cref="T:System.Configuration.Configuration" /> object, and the <see cref="T:System.ServiceModel.EndpointAddress" /> object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

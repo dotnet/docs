@@ -6383,7 +6383,7 @@
         <Parameter Name="field" Type="System.Reflection.FieldInfo" />
       </Parameters>
       <Docs>
-        <param name="expression">An <see cref="T:System.Linq.Expressions.Expression" /> to set the <see cref="P:System.Linq.Expressions.MemberExpression.Expression" /> property equal to. For <see langword="static" /> (<see langword="Shared" /> in Visual Basic), <c>expression</c> must be <see langword="null" />.</param>
+        <param name="expression">An <see cref="T:System.Linq.Expressions.Expression" /> to set the <see cref="P:System.Linq.Expressions.MemberExpression.Expression" /> property equal to. For <see langword="static" /> (<see langword="Shared" /> in Visual Basic), <paramref name="expression" /> must be <see langword="null" />.</param>
         <param name="field">The <see cref="T:System.Reflection.FieldInfo" /> to set the <see cref="P:System.Linq.Expressions.MemberExpression.Member" /> property equal to.</param>
         <summary>Creates a <see cref="T:System.Linq.Expressions.MemberExpression" /> that represents accessing a field.</summary>
         <returns>A <see cref="T:System.Linq.Expressions.MemberExpression" /> that has the <see cref="P:System.Linq.Expressions.Expression.NodeType" /> property equal to <see cref="F:System.Linq.Expressions.ExpressionType.MemberAccess" /> and the <see cref="P:System.Linq.Expressions.MemberExpression.Expression" /> and <see cref="P:System.Linq.Expressions.MemberExpression.Member" /> properties set to the specified values.</returns>
@@ -6438,7 +6438,7 @@
         <Parameter Name="fieldName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="expression">An <see cref="T:System.Linq.Expressions.Expression" /> whose <see cref="P:System.Linq.Expressions.Expression.Type" /> contains a field named <c>fieldName</c>. This can be null for static fields.</param>
+        <param name="expression">An <see cref="T:System.Linq.Expressions.Expression" /> whose <see cref="P:System.Linq.Expressions.Expression.Type" /> contains a field named <paramref name="fieldName" />. This can be null for static fields.</param>
         <param name="fieldName">The name of a field to be accessed.</param>
         <summary>Creates a <see cref="T:System.Linq.Expressions.MemberExpression" /> that represents accessing a field given the name of the field.</summary>
         <returns>A <see cref="T:System.Linq.Expressions.MemberExpression" /> that has the <see cref="P:System.Linq.Expressions.Expression.NodeType" /> property equal to <see cref="F:System.Linq.Expressions.ExpressionType.MemberAccess" />, the <see cref="P:System.Linq.Expressions.MemberExpression.Expression" /> property set to <paramref name="expression" />, and the <see cref="P:System.Linq.Expressions.MemberExpression.Member" /> property set to the <see cref="T:System.Reflection.FieldInfo" /> that represents the field denoted by <paramref name="fieldName" />.</returns>
@@ -10848,7 +10848,7 @@
         <param name="liftToNull">
           <see langword="true" /> to set <see cref="P:System.Linq.Expressions.BinaryExpression.IsLiftedToNull" /> to <see langword="true" />; <see langword="false" /> to set <see cref="P:System.Linq.Expressions.BinaryExpression.IsLiftedToNull" /> to <see langword="false" />.</param>
         <param name="method">A <see cref="T:System.Reflection.MethodInfo" /> that specifies the implementing method.</param>
-        <param name="conversion">A <see cref="T:System.Linq.Expressions.LambdaExpression" /> that represents a type conversion function. This parameter is used only if <c>binaryType</c> is <see cref="F:System.Linq.Expressions.ExpressionType.Coalesce" /> or compound assignment..</param>
+        <param name="conversion">A <see cref="T:System.Linq.Expressions.LambdaExpression" /> that represents a type conversion function. This parameter is used only if <paramref name="binaryType" /> is <see cref="F:System.Linq.Expressions.ExpressionType.Coalesce" /> or compound assignment..</param>
         <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" />, given the left operand, right operand, implementing method and type conversion function, by calling the appropriate factory method.</summary>
         <returns>The <see cref="T:System.Linq.Expressions.BinaryExpression" /> that results from calling the appropriate factory method.</returns>
         <remarks>
@@ -15892,7 +15892,7 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="expression">An <see cref="T:System.Linq.Expressions.Expression" /> whose <see cref="P:System.Linq.Expressions.Expression.Type" /> contains a property named <c>propertyName</c>. This can be <see langword="null" /> for static properties.</param>
+        <param name="expression">An <see cref="T:System.Linq.Expressions.Expression" /> whose <see cref="P:System.Linq.Expressions.Expression.Type" /> contains a property named <paramref name="propertyName" />. This can be <see langword="null" /> for static properties.</param>
         <param name="propertyName">The name of a property to be accessed.</param>
         <summary>Creates a <see cref="T:System.Linq.Expressions.MemberExpression" /> that represents accessing a property.</summary>
         <returns>A <see cref="T:System.Linq.Expressions.MemberExpression" /> that has the <see cref="P:System.Linq.Expressions.Expression.NodeType" /> property equal to <see cref="F:System.Linq.Expressions.ExpressionType.MemberAccess" />, the <see cref="P:System.Linq.Expressions.MemberExpression.Expression" /> property set to <paramref name="expression" />, and the <see cref="P:System.Linq.Expressions.MemberExpression.Member" /> property set to the <see cref="T:System.Reflection.PropertyInfo" /> that represents the property denoted by <paramref name="propertyName" />.</returns>
@@ -16131,7 +16131,7 @@
         <Parameter Name="propertyOrFieldName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="expression">An <see cref="T:System.Linq.Expressions.Expression" /> whose <see cref="P:System.Linq.Expressions.Expression.Type" /> contains a property or field named <c>propertyOrFieldName</c>. This can be null for static members.</param>
+        <param name="expression">An <see cref="T:System.Linq.Expressions.Expression" /> whose <see cref="P:System.Linq.Expressions.Expression.Type" /> contains a property or field named <paramref name="propertyOrFieldName" />. This can be null for static members.</param>
         <param name="propertyOrFieldName">The name of a property or field to be accessed.</param>
         <summary>Creates a <see cref="T:System.Linq.Expressions.MemberExpression" /> that represents accessing a property or field.</summary>
         <returns>A <see cref="T:System.Linq.Expressions.MemberExpression" /> that has the <see cref="P:System.Linq.Expressions.Expression.NodeType" /> property equal to <see cref="F:System.Linq.Expressions.ExpressionType.MemberAccess" />, the <see cref="P:System.Linq.Expressions.MemberExpression.Expression" /> property set to <paramref name="expression" />, and the <see cref="P:System.Linq.Expressions.MemberExpression.Member" /> property set to the <see cref="T:System.Reflection.PropertyInfo" /> or <see cref="T:System.Reflection.FieldInfo" /> that represents the property or field denoted by <paramref name="propertyOrFieldName" />.</returns>
@@ -17879,7 +17879,7 @@
       </Parameters>
       <Docs>
         <param name="switchValue">The value to be tested against each case.</param>
-        <param name="defaultBody">The result of the switch if <c>switchValue</c> does not match any of the cases.</param>
+        <param name="defaultBody">The result of the switch if <paramref name="switchValue" /> does not match any of the cases.</param>
         <param name="cases">The set of cases for this switch expression.</param>
         <summary>Creates a <see cref="T:System.Linq.Expressions.SwitchExpression" /> that represents a <see langword="switch" /> statement that has a default case.</summary>
         <returns>The created <see cref="T:System.Linq.Expressions.SwitchExpression" />.</returns>
@@ -17946,7 +17946,7 @@
       </Parameters>
       <Docs>
         <param name="switchValue">The value to be tested against each case.</param>
-        <param name="defaultBody">The result of the switch if <c>switchValue</c> does not match any of the cases.</param>
+        <param name="defaultBody">The result of the switch if <paramref name="switchValue" /> does not match any of the cases.</param>
         <param name="comparison">The equality comparison method to use.</param>
         <param name="cases">The set of cases for this switch expression.</param>
         <summary>Creates a <see cref="T:System.Linq.Expressions.SwitchExpression" /> that represents a <see langword="switch" /> statement that has a default case.</summary>
@@ -17996,7 +17996,7 @@
       </Parameters>
       <Docs>
         <param name="switchValue">The value to be tested against each case.</param>
-        <param name="defaultBody">The result of the switch if <c>switchValue</c> does not match any of the cases.</param>
+        <param name="defaultBody">The result of the switch if <paramref name="switchValue" /> does not match any of the cases.</param>
         <param name="comparison">The equality comparison method to use.</param>
         <param name="cases">The set of cases for this switch expression.</param>
         <summary>Creates a <see cref="T:System.Linq.Expressions.SwitchExpression" /> that represents a <see langword="switch" /> statement that has a default case.</summary>
@@ -18041,7 +18041,7 @@
       <Docs>
         <param name="type">The result type of the switch.</param>
         <param name="switchValue">The value to be tested against each case.</param>
-        <param name="defaultBody">The result of the switch if <c>switchValue</c> does not match any of the cases.</param>
+        <param name="defaultBody">The result of the switch if <paramref name="switchValue" /> does not match any of the cases.</param>
         <param name="comparison">The equality comparison method to use.</param>
         <param name="cases">The set of cases for this switch expression.</param>
         <summary>Creates a <see cref="T:System.Linq.Expressions.SwitchExpression" /> that represents a <see langword="switch" /> statement that has a default case.</summary>
@@ -18092,7 +18092,7 @@
       <Docs>
         <param name="type">The result type of the switch.</param>
         <param name="switchValue">The value to be tested against each case.</param>
-        <param name="defaultBody">The result of the switch if <c>switchValue</c> does not match any of the cases.</param>
+        <param name="defaultBody">The result of the switch if <paramref name="switchValue" /> does not match any of the cases.</param>
         <param name="comparison">The equality comparison method to use.</param>
         <param name="cases">The set of cases for this switch expression.</param>
         <summary>Creates a <see cref="T:System.Linq.Expressions.SwitchExpression" /> that represents a <see langword="switch" /> statement that has a default case..</summary>
@@ -18774,7 +18774,7 @@
       </Parameters>
       <Docs>
         <param name="typeArgs">An array of Type objects that specify the type arguments for the System.Action delegate type.</param>
-        <param name="actionType">When this method returns, contains the generic System.Action delegate type that has specific type arguments. Contains null if there is no generic System.Action delegate that matches the <c>typeArgs</c>.This parameter is passed uninitialized.</param>
+        <param name="actionType">When this method returns, contains the generic System.Action delegate type that has specific type arguments. Contains null if there is no generic System.Action delegate that matches the <paramref name="typeArgs" />.This parameter is passed uninitialized.</param>
         <summary>Creates a <see cref="P:System.Linq.Expressions.Expression.Type" /> object that represents a generic System.Action delegate type that has specific type arguments.</summary>
         <returns>true if generic System.Action delegate type was created for specific <paramref name="typeArgs" />; false otherwise.</returns>
         <remarks>To be added.</remarks>
@@ -18814,7 +18814,7 @@
       </Parameters>
       <Docs>
         <param name="typeArgs">An array of Type objects that specify the type arguments for the System.Func delegate type.</param>
-        <param name="funcType">When this method returns, contains the generic System.Func delegate type that has specific type arguments. Contains null if there is no generic System.Func delegate that matches the <c>typeArgs</c>.This parameter is passed uninitialized.</param>
+        <param name="funcType">When this method returns, contains the generic System.Func delegate type that has specific type arguments. Contains null if there is no generic System.Func delegate that matches the <paramref name="typeArgs" />.This parameter is passed uninitialized.</param>
         <summary>Creates a <see cref="P:System.Linq.Expressions.Expression.Type" /> object that represents a generic System.Func delegate type that has specific type arguments. The last type argument specifies the return type of the created delegate.</summary>
         <returns>true if generic System.Func delegate type was created for specific <paramref name="typeArgs" />; false otherwise.</returns>
         <remarks>To be added.</remarks>

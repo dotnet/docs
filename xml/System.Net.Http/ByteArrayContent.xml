@@ -95,8 +95,8 @@
       </Parameters>
       <Docs>
         <param name="content">The content used to initialize the <see cref="T:System.Net.Http.ByteArrayContent" />.</param>
-        <param name="offset">The offset, in bytes, in the <c>content</c> parameter used to initialize the <see cref="T:System.Net.Http.ByteArrayContent" />.</param>
-        <param name="count">The number of bytes in the <c>content</c> starting from the <c>offset</c> parameter used to initialize the <see cref="T:System.Net.Http.ByteArrayContent" />.</param>
+        <param name="offset">The offset, in bytes, in the <paramref name="content" /> parameter used to initialize the <see cref="T:System.Net.Http.ByteArrayContent" />.</param>
+        <param name="count">The number of bytes in the <paramref name="content" /> starting from the <paramref name="offset" /> parameter used to initialize the <see cref="T:System.Net.Http.ByteArrayContent" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Http.ByteArrayContent" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

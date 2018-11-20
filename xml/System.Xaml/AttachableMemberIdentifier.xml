@@ -46,8 +46,8 @@
         <Parameter Name="memberName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="declaringType">The <c>declaringType</c> component of the identifier, which should match the name of the declaring <see cref="P:System.Xaml.XamlMember.Type" />.</param>
-        <param name="memberName">The <c>memberName</c> component of the identifier, which should match the <see cref="P:System.Xaml.XamlMember.Name" />.</param>
+        <param name="declaringType">The <paramref name="declaringType" /> component of the identifier, which should match the name of the declaring <see cref="P:System.Xaml.XamlMember.Type" />.</param>
+        <param name="memberName">The <paramref name="memberName" /> component of the identifier, which should match the <see cref="P:System.Xaml.XamlMember.Name" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.AttachableMemberIdentifier" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>

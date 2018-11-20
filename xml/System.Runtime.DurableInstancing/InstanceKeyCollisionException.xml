@@ -155,7 +155,7 @@
       </Parameters>
       <Docs>
         <param name="commandName">The XName (the combination of namespace and name) of the command.</param>
-        <param name="instanceId">The ID of the instance against which the command was executed. The command failed because the instance key is already associated with another instance whose ID is represented by the <c>conflictingInstanceId</c> parameter.</param>
+        <param name="instanceId">The ID of the instance against which the command was executed. The command failed because the instance key is already associated with another instance whose ID is represented by the <paramref name="conflictingInstanceId" /> parameter.</param>
         <param name="instanceKey">The instance key information.</param>
         <param name="conflictingInstanceId">The ID of the instance that is currently associated with the instance key.</param>
         <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceKeyCollisionException" /> class with the name of the command, ID of the instance against which the command was executed, instance key information, and the instance ID that is currently associated with the instance key passed as parameters.</summary>
@@ -182,7 +182,7 @@
       </Parameters>
       <Docs>
         <param name="commandName">The XName (the combination of namespace and name) of the command.</param>
-        <param name="instanceId">The ID of the instance against which the command was executed. The command failed because the instance key is already associated with another instance whose ID is represented by the <c>conflictingInstanceId</c> parameter.</param>
+        <param name="instanceId">The ID of the instance against which the command was executed. The command failed because the instance key is already associated with another instance whose ID is represented by the <paramref name="conflictingInstanceId" /> parameter.</param>
         <param name="instanceKey">The instance key information.</param>
         <param name="conflictingInstanceId">The ID of the instance that is currently associated with the instance key.</param>
         <param name="innerException">The exception that caused the current exception.</param>

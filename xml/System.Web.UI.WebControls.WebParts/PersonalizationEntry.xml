@@ -63,7 +63,7 @@
         <Parameter Name="scope" Type="System.Web.UI.WebControls.WebParts.PersonalizationScope" />
       </Parameters>
       <Docs>
-        <param name="value">An object of personalization data associated with the personalization scope in the <c>scope</c> parameter.</param>
+        <param name="value">An object of personalization data associated with the personalization scope in the <paramref name="scope" /> parameter.</param>
         <param name="scope">The <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> that applies to the custom personalization information.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationEntry" /> class using the specified value and scope.</summary>
         <remarks>
@@ -99,7 +99,7 @@
         <Parameter Name="isSensitive" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">An object of personalization data associated with the personalization scope in the <c>scope</c> parameter.</param>
+        <param name="value">An object of personalization data associated with the personalization scope in the <paramref name="scope" /> parameter.</param>
         <param name="scope">The <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> that applies to the custom personalization information.</param>
         <param name="isSensitive">A Boolean value indicating if the custom state information is sensitive and should not be exported.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationEntry" /> class using the provided parameters.</summary>

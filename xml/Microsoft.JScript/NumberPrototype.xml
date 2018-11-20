@@ -224,7 +224,7 @@
       </Parameters>
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
-        <param name="radix">A number between 2 and 36 that represents the base of the number system that <c>thisob</c> is expressed in. The default is 10.</param>
+        <param name="radix">A number between 2 and 36 that represents the base of the number system that <paramref name="thisob" /> is expressed in. The default is 10.</param>
         <summary>Creates a string representation of the specified object.</summary>
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>

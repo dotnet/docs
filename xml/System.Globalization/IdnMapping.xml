@@ -318,7 +318,7 @@
       </Parameters>
       <Docs>
         <param name="unicode">The string to convert, which consists of one or more domain name labels delimited with label separators.</param>
-        <param name="index">A zero-based offset into <c>unicode</c> that specifies the start of the substring to convert. The conversion operation continues to the end of the <c>unicode</c> string.</param>
+        <param name="index">A zero-based offset into <paramref name="unicode" /> that specifies the start of the substring to convert. The conversion operation continues to the end of the <paramref name="unicode" /> string.</param>
         <summary>Encodes a substring of domain name labels that include Unicode characters outside the US-ASCII character range. The substring is converted to a string of displayable Unicode characters in the US-ASCII character range and is formatted according to the IDNA standard.</summary>
         <returns>The equivalent of the substring specified by the <paramref name="unicode" /> and <paramref name="index" /> parameters, consisting of displayable Unicode characters in the US-ASCII character range (U+0020 to U+007E) and formatted according to the IDNA standard.</returns>
         <remarks>
@@ -409,8 +409,8 @@
       </Parameters>
       <Docs>
         <param name="unicode">The string to convert, which consists of one or more domain name labels delimited with label separators.</param>
-        <param name="index">A zero-based offset into <c>unicode</c> that specifies the start of the substring.</param>
-        <param name="count">The number of characters to convert in the substring that starts at the position specified by  <c>index</c> in the <c>unicode</c> string.</param>
+        <param name="index">A zero-based offset into <paramref name="unicode" /> that specifies the start of the substring.</param>
+        <param name="count">The number of characters to convert in the substring that starts at the position specified by  <paramref name="index" /> in the <paramref name="unicode" /> string.</param>
         <summary>Encodes the specified number of characters in a  substring of domain name labels that include Unicode characters outside the US-ASCII character range. The substring is converted to a string of displayable Unicode characters in the US-ASCII character range and is formatted according to the IDNA standard.</summary>
         <returns>The equivalent of the substring specified by the <paramref name="unicode" />, <paramref name="index" />, and <paramref name="count" /> parameters, consisting of displayable Unicode characters in the US-ASCII character range (U+0020 to U+007E) and formatted according to the IDNA standard.</returns>
         <remarks>
@@ -622,7 +622,7 @@
       </Parameters>
       <Docs>
         <param name="ascii">The string to decode, which consists of one or more labels in the US-ASCII character range (U+0020 to U+007E) encoded according to the IDNA standard.</param>
-        <param name="index">A zero-based offset into <c>ascii</c> that specifies the start of the substring to decode. The decoding operation continues to the end of the <c>ascii</c> string.</param>
+        <param name="index">A zero-based offset into <paramref name="ascii" /> that specifies the start of the substring to decode. The decoding operation continues to the end of the <paramref name="ascii" /> string.</param>
         <summary>Decodes a substring of one or more domain name labels, encoded according to the IDNA standard, to a string of Unicode characters.</summary>
         <returns>The Unicode equivalent of the IDNA substring specified by the <paramref name="ascii" /> and <paramref name="index" /> parameters.</returns>
         <remarks>
@@ -682,8 +682,8 @@
       </Parameters>
       <Docs>
         <param name="ascii">The string to decode, which consists of one or more labels in the US-ASCII character range (U+0020 to U+007E) encoded according to the IDNA standard.</param>
-        <param name="index">A zero-based offset into <c>ascii</c> that specifies the start of the substring.</param>
-        <param name="count">The number of characters to convert in the substring that starts at the position specified by <c>index</c> in the <c>ascii</c> string.</param>
+        <param name="index">A zero-based offset into <paramref name="ascii" /> that specifies the start of the substring.</param>
+        <param name="count">The number of characters to convert in the substring that starts at the position specified by <paramref name="index" /> in the <paramref name="ascii" /> string.</param>
         <summary>Decodes a substring of a specified length that contains one or more domain name labels, encoded according to the IDNA standard, to a string of Unicode characters.</summary>
         <returns>The Unicode equivalent of the IDNA substring specified by the <paramref name="ascii" />, <paramref name="index" />, and <paramref name="count" /> parameters.</returns>
         <remarks>

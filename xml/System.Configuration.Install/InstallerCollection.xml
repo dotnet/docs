@@ -427,8 +427,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert <c>value</c>.</param>
-        <param name="value">The new value of the installer at <c>index</c>.</param>
+        <param name="index">The zero-based index at which to insert <paramref name="value" />.</param>
+        <param name="value">The new value of the installer at <paramref name="index" />.</param>
         <summary>Performs additional custom processes before a new installer is inserted into the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -455,8 +455,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> can be found.</param>
-        <param name="value">The installer to be removed from <c>index</c>.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> can be found.</param>
+        <param name="value">The installer to be removed from <paramref name="index" />.</param>
         <summary>Performs additional custom processes before an installer is removed from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -484,9 +484,9 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to replace <c>oldValue</c>.</param>
+        <param name="index">The zero-based index at which to replace <paramref name="oldValue" />.</param>
         <param name="oldValue">The value to replace with <c>newValue.</c></param>
-        <param name="newValue">The new value of the installer at <c>index</c>.</param>
+        <param name="newValue">The new value of the installer at <paramref name="index" />.</param>
         <summary>Performs additional custom processes before an existing installer is set to a new value.</summary>
         <remarks>To be added.</remarks>
       </Docs>

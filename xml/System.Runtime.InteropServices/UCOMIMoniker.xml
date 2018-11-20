@@ -70,7 +70,7 @@
         <param name="pbc">A reference to the <see langword="IBindCtx" /> interface on the bind context object used in this binding operation.</param>
         <param name="pmkToLeft">A reference to the moniker to the left of this moniker, if the moniker is part of a composite moniker.</param>
         <param name="riidResult">The interface identifier (IID) of the interface the client intends to use to communicate with the object that the moniker identifies.</param>
-        <param name="ppvResult">On successful return, reference to the interface requested by <c>riidResult</c>.</param>
+        <param name="ppvResult">On successful return, reference to the interface requested by <paramref name="riidResult" />.</param>
         <summary>Uses the moniker to bind to the object it identifies.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -110,7 +110,7 @@
         <param name="pbc">A reference to the <see langword="IBindCtx" /> interface on the bind context object used during this binding operation.</param>
         <param name="pmkToLeft">A reference to the moniker to the left of this moniker, if the moniker is part of a composite moniker.</param>
         <param name="riid">The interface identifier (IID) of the storage interface requested.</param>
-        <param name="ppvObj">On successful return, a reference to the interface requested by <c>riid</c>.</param>
+        <param name="ppvObj">On successful return, a reference to the interface requested by <paramref name="riid" />.</param>
         <summary>Retrieves an interface pointer to the storage that contains the object identified by the moniker.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -146,7 +146,7 @@
       </Parameters>
       <Docs>
         <param name="pmkOther">A reference to the <see langword="IMoniker" /> interface on another moniker to compare with this for a common prefix.</param>
-        <param name="ppmkPrefix">On successful return, contains the moniker that is the common prefix of this moniker and <c>pmkOther</c>.</param>
+        <param name="ppmkPrefix">On successful return, contains the moniker that is the common prefix of this moniker and <paramref name="pmkOther" />.</param>
         <summary>Creates a new moniker based on the common prefix that this moniker shares with another moniker.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -183,7 +183,7 @@
       </Parameters>
       <Docs>
         <param name="pmkRight">A reference to the <see langword="IMoniker" /> interface on the moniker to compose onto the end of this moniker.</param>
-        <param name="fOnlyIfNotGeneric">If <see langword="true" />, the caller requires a nongeneric composition, so the operation proceeds only if <c>pmkRight</c> is a moniker class that this moniker can compose with in some way other than forming a generic composite. If <see langword="false" />, the method can create a generic composite if necessary.</param>
+        <param name="fOnlyIfNotGeneric">If <see langword="true" />, the caller requires a nongeneric composition, so the operation proceeds only if <paramref name="pmkRight" /> is a moniker class that this moniker can compose with in some way other than forming a generic composite. If <see langword="false" />, the method can create a generic composite if necessary.</param>
         <param name="ppmkComposite">On successful return, a reference to the resulting composite moniker.</param>
         <summary>Combines the current moniker with another moniker, creating a new composite moniker.</summary>
         <remarks>
@@ -645,8 +645,8 @@
         <param name="pbc">A reference to the bind context to be used in this binding operation.</param>
         <param name="pmkToLeft">A reference to the moniker that has been built out of the display name up to this point.</param>
         <param name="pszDisplayName">A reference to the string containing the remaining display name to parse.</param>
-        <param name="pchEaten">On successful return, contains the number of characters in <c>pszDisplayName</c> that were consumed in this step.</param>
-        <param name="ppmkOut">Reference to the moniker that was built from <c>pszDisplayName</c>.</param>
+        <param name="pchEaten">On successful return, contains the number of characters in <paramref name="pszDisplayName" /> that were consumed in this step.</param>
+        <param name="ppmkOut">Reference to the moniker that was built from <paramref name="pszDisplayName" />.</param>
         <summary>Reads as many characters of the specified display name as it understands and builds a moniker corresponding to the portion read.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

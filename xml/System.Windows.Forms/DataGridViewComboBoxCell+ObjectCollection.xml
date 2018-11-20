@@ -406,7 +406,7 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to place <c>item</c> within an unsorted <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />.</param>
+        <param name="index">The zero-based index at which to place <paramref name="item" /> within an unsorted <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />.</param>
         <param name="item">An object representing the item to insert.</param>
         <summary>Inserts an item into the collection at the specified index.</summary>
         <remarks>

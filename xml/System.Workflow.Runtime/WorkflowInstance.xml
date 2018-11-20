@@ -155,7 +155,7 @@
       <Docs>
         <param name="queueName">The name of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</param>
         <param name="item">The object to enqueue.</param>
-        <param name="pendingWork">An <see cref="T:System.Workflow.Runtime.IPendingWork" /> that allows the sender to be notified when <c>item</c> is delivered.</param>
+        <param name="pendingWork">An <see cref="T:System.Workflow.Runtime.IPendingWork" /> that allows the sender to be notified when <paramref name="item" /> is delivered.</param>
         <param name="workItem">An object to be passed to the <see cref="T:System.Workflow.Runtime.IPendingWork" /> methods.</param>
         <summary>Posts a message to the specified workflow queue synchronously.</summary>
         <remarks>
@@ -220,7 +220,7 @@
       <Docs>
         <param name="queueName">The name of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</param>
         <param name="item">The object to enqueue.</param>
-        <param name="pendingWork">An <see cref="T:System.Workflow.Runtime.IPendingWork" /> that allows the sender to be notified when <c>item</c> is delivered.</param>
+        <param name="pendingWork">An <see cref="T:System.Workflow.Runtime.IPendingWork" /> that allows the sender to be notified when <paramref name="item" /> is delivered.</param>
         <param name="workItem">An object to be passed to the <see cref="T:System.Workflow.Runtime.IPendingWork" /> methods.</param>
         <summary>Posts a message to the specified workflow queue when the workflow is idle. <see cref="M:System.Workflow.Runtime.WorkflowInstance.EnqueueItemOnIdle(System.IComparable,System.Object,System.Workflow.Runtime.IPendingWork,System.Object)" /> waits until the workflow reaches an idle point and enqueues after verifying that the workflow scheduler is idle (that is, no active operation is being executed).</summary>
         <remarks>

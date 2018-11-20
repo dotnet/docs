@@ -89,7 +89,7 @@ delegate(object sender, SpeechRecognizedEventArgs eventArgs)
       </Parameters>
       <Docs>
         <param name="result">A valid <see cref="T:System.Speech.Recognition.RecognitionResult" /> instance.</param>
-        <param name="feedback">A <see cref="T:System.String" /> containing a comment about the recognition operation that produced the <see cref="T:System.Speech.Recognition.RecognitionResult" /><c>result</c>.</param>
+        <param name="feedback">A <see cref="T:System.String" /> containing a comment about the recognition operation that produced the <see cref="T:System.Speech.Recognition.RecognitionResult" /><paramref name="result" />.</param>
         <param name="isSuccessfulAction">A <see langword="bool" /> indicating whether the application deemed the recognition operation a success.</param>
         <summary>Sends status and descriptive text to the Speech platform user interface about the status of a recognition operation.</summary>
         <returns>

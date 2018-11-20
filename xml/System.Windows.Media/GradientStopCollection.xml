@@ -399,7 +399,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the items copied from the <see cref="T:System.Windows.Media.GradientStopCollection" />. The array must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the entire <see cref="T:System.Windows.Media.GradientStopCollection" /> to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

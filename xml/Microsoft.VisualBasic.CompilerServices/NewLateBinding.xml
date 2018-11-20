@@ -241,7 +241,7 @@
         <Parameter Name="ReportErrors" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Instance">An instance of the call object exposing the property or method. If <c>Instance</c> is of type <see cref="T:System.Dynamic.IDynamicMetaObjectProvider" />, then bind using the Dynamic Language Runtime; otherwise perform standard late-binding.</param>
+        <param name="Instance">An instance of the call object exposing the property or method. If <paramref name="Instance" /> is of type <see cref="T:System.Dynamic.IDynamicMetaObjectProvider" />, then bind using the Dynamic Language Runtime; otherwise perform standard late-binding.</param>
         <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
         <param name="ArgumentNames">An array of argument names.</param>
         <param name="ReportErrors">A <see langword="Boolean" /> value used to specify whether to throw exceptions when an error is encountered. Set to <see langword="True" /> to throw exceptions. Set to <see langword="False" /> to return <see langword="Nothing" /> when an error is encountered.</param>

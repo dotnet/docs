@@ -137,7 +137,7 @@
       </Parameters>
       <Docs>
         <param name="reference">The parent visual, referenced as a <see cref="T:System.Windows.DependencyObject" />.</param>
-        <param name="childIndex">The index that represents the child visual that is contained by <c>reference</c>.</param>
+        <param name="childIndex">The index that represents the child visual that is contained by <paramref name="reference" />.</param>
         <summary>Returns the child visual object from the specified collection index within a specified parent.</summary>
         <returns>The index value of the child visual object.</returns>
         <remarks>

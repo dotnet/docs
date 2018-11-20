@@ -97,7 +97,7 @@
       <Docs>
         <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> object being written to.</param>
         <param name="index">The index of the item for which you need the height or width.</param>
-        <param name="itemHeight">The height of the item to measure relative to the <c>graphics</c> object.</param>
+        <param name="itemHeight">The height of the item to measure relative to the <paramref name="graphics" /> object.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MeasureItemEventArgs" /> class providing a parameter for the item height.</summary>
         <remarks>To be added.</remarks>
       </Docs>

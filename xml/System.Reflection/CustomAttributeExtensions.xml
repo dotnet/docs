@@ -295,7 +295,7 @@
         <param name="element">The member to inspect.</param>
         <param name="attributeType">The type of attribute to search for.</param>
         <param name="inherit">
-          <see langword="true" /> to inspect the ancestors of <c>element</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to inspect the ancestors of <paramref name="element" />; otherwise, <see langword="false" />.</param>
         <summary>Retrieves a custom attribute of a specified type that is applied to a specified member, and optionally inspects the ancestors of that member.</summary>
         <returns>A custom attribute that matches <paramref name="attributeType" />, or <see langword="null" /> if no such attribute is found.</returns>
         <remarks>
@@ -354,7 +354,7 @@
         <param name="element">The parameter to inspect.</param>
         <param name="attributeType">The type of attribute to search for.</param>
         <param name="inherit">
-          <see langword="true" /> to inspect the ancestors of <c>element</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to inspect the ancestors of <paramref name="element" />; otherwise, <see langword="false" />.</param>
         <summary>Retrieves a custom attribute of a specified type that is applied to a specified parameter, and optionally inspects the ancestors of that parameter.</summary>
         <returns>A custom attribute matching <paramref name="attributeType" />, or <see langword="null" /> if no such attribute is found.</returns>
         <remarks>
@@ -651,7 +651,7 @@
         <typeparam name="T">The type of attribute to search for.</typeparam>
         <param name="element">The member to inspect.</param>
         <param name="inherit">
-          <see langword="true" /> to inspect the ancestors of <c>element</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to inspect the ancestors of <paramref name="element" />; otherwise, <see langword="false" />.</param>
         <summary>Retrieves a custom attribute of a specified type that is applied to a specified member, and optionally inspects the ancestors of that member.</summary>
         <returns>A custom attribute that matches <paramref name="T" />, or <see langword="null" /> if no such attribute is found.</returns>
         <remarks>
@@ -714,7 +714,7 @@
         <typeparam name="T">The type of attribute to search for.</typeparam>
         <param name="element">The parameter to inspect.</param>
         <param name="inherit">
-          <see langword="true" /> to inspect the ancestors of <c>element</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to inspect the ancestors of <paramref name="element" />; otherwise, <see langword="false" />.</param>
         <summary>Retrieves a custom attribute of a specified type that is applied to a specified parameter, and optionally inspects the ancestors of that parameter.</summary>
         <returns>A custom attribute that matches <paramref name="T" />, or <see langword="null" /> if no such attribute is found.</returns>
         <remarks>
@@ -993,7 +993,7 @@
       <Docs>
         <param name="element">The member to inspect.</param>
         <param name="inherit">
-          <see langword="true" /> to inspect the ancestors of <c>element</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to inspect the ancestors of <paramref name="element" />; otherwise, <see langword="false" />.</param>
         <summary>Retrieves a collection of custom attributes that are applied to a specified member, and optionally inspects the ancestors of that member.</summary>
         <returns>A collection of the custom attributes that are applied to <paramref name="element" /> that match the specified criteria, or an empty collection if no such attributes exist.</returns>
         <remarks>To be added.</remarks>
@@ -1133,7 +1133,7 @@
       <Docs>
         <param name="element">The parameter to inspect.</param>
         <param name="inherit">
-          <see langword="true" /> to inspect the ancestors of <c>element</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to inspect the ancestors of <paramref name="element" />; otherwise, <see langword="false" />.</param>
         <summary>Retrieves a collection of custom attributes that are applied to a specified parameter, and optionally inspects the ancestors of that parameter.</summary>
         <returns>A collection of the custom attributes that are applied to <paramref name="element" />, or an empty collection if no such attributes exist.</returns>
         <remarks>To be added.</remarks>
@@ -1230,7 +1230,7 @@
         <param name="element">The member to inspect.</param>
         <param name="attributeType">The type of attribute to search for.</param>
         <param name="inherit">
-          <see langword="true" /> to inspect the ancestors of <c>element</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to inspect the ancestors of <paramref name="element" />; otherwise, <see langword="false" />.</param>
         <summary>Retrieves a collection of custom attributes of a specified type that are applied to a specified member, and optionally inspects the ancestors of that member.</summary>
         <returns>A collection of the custom attributes that are applied to <paramref name="element" /> and that match <paramref name="attributeType" />, or an empty collection if no such attributes exist.</returns>
         <remarks>To be added.</remarks>
@@ -1281,7 +1281,7 @@
         <param name="element">The parameter to inspect.</param>
         <param name="attributeType">The type of attribute to search for.</param>
         <param name="inherit">
-          <see langword="true" /> to inspect the ancestors of <c>element</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to inspect the ancestors of <paramref name="element" />; otherwise, <see langword="false" />.</param>
         <summary>Retrieves a collection of custom attributes of a specified type that are applied to a specified parameter, and optionally inspects the ancestors of that parameter.</summary>
         <returns>A collection of the custom attributes that are applied to <paramref name="element" /> and that match <paramref name="attributeType" />, or an empty collection if no such attributes exist.</returns>
         <remarks>To be added.</remarks>
@@ -1540,7 +1540,7 @@
         <typeparam name="T">The type of attribute to search for.</typeparam>
         <param name="element">The member to inspect.</param>
         <param name="inherit">
-          <see langword="true" /> to inspect the ancestors of <c>element</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to inspect the ancestors of <paramref name="element" />; otherwise, <see langword="false" />.</param>
         <summary>Retrieves a collection of custom attributes of a specified type that are applied to a specified member, and optionally inspects the ancestors of that member.</summary>
         <returns>A collection of the custom attributes that are applied to <paramref name="element" /> and that match <paramref name="T" />, or an empty collection if no such attributes exist.</returns>
         <remarks>To be added.</remarks>
@@ -1595,7 +1595,7 @@
         <typeparam name="T">The type of attribute to search for.</typeparam>
         <param name="element">The parameter to inspect.</param>
         <param name="inherit">
-          <see langword="true" /> to inspect the ancestors of <c>element</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to inspect the ancestors of <paramref name="element" />; otherwise, <see langword="false" />.</param>
         <summary>Retrieves a collection of custom attributes of a specified type that are applied to a specified parameter, and optionally inspects the ancestors of that parameter.</summary>
         <returns>A collection of the custom attributes that are applied to <paramref name="element" /> and that match <paramref name="T" />, or an empty collection if no such attributes exist.</returns>
         <remarks>To be added.</remarks>
@@ -1839,7 +1839,7 @@
         <param name="element">The member to inspect.</param>
         <param name="attributeType">The type of the attribute to search for.</param>
         <param name="inherit">
-          <see langword="true" /> to inspect the ancestors of <c>element</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to inspect the ancestors of <paramref name="element" />; otherwise, <see langword="false" />.</param>
         <summary>Indicates whether custom attributes of a specified type are applied to a specified member, and, optionally, applied to its ancestors.</summary>
         <returns>
           <see langword="true" /> if an attribute of the specified type is applied to <paramref name="element" />; otherwise, <see langword="false" />.</returns>
@@ -1890,7 +1890,7 @@
         <param name="element">The parameter to inspect.</param>
         <param name="attributeType">The type of attribute to search for.</param>
         <param name="inherit">
-          <see langword="true" /> to inspect the ancestors of <c>element</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to inspect the ancestors of <paramref name="element" />; otherwise, <see langword="false" />.</param>
         <summary>Indicates whether custom attributes of a specified type are applied to a specified parameter, and, optionally, applied to its ancestors.</summary>
         <returns>
           <see langword="true" /> if an attribute of the specified type is applied to <paramref name="element" />; otherwise, <see langword="false" />.</returns>

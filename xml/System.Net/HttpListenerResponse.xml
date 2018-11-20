@@ -120,7 +120,7 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the HTTP header to set.</param>
-        <param name="value">The value for the <c>name</c> header.</param>
+        <param name="value">The value for the <paramref name="name" /> header.</param>
         <summary>Adds the specified header and value to the HTTP headers for this response.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -239,8 +239,8 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the HTTP header to append <c>value</c> to.</param>
-        <param name="value">The value to append to the <c>name</c> header.</param>
+        <param name="name">The name of the HTTP header to append <paramref name="value" /> to.</param>
+        <param name="value">The value to append to the <paramref name="name" /> header.</param>
         <summary>Appends a value to the specified HTTP header to be sent with this response.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

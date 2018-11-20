@@ -616,8 +616,8 @@ private static string BreakAtCaps(string item)
       </Parameters>
       <Docs>
         <param name="builder">The repeated element.</param>
-        <param name="minRepeat">The minimum number of times that input matching the element defined by <c>builder</c> must occur to constitute a match.</param>
-        <param name="maxRepeat">The maximum number of times that input matching the element defined by <c>builder</c> can occur to constitute a match.</param>
+        <param name="minRepeat">The minimum number of times that input matching the element defined by <paramref name="builder" /> must occur to constitute a match.</param>
+        <param name="maxRepeat">The maximum number of times that input matching the element defined by <paramref name="builder" /> can occur to constitute a match.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.GrammarBuilder" /> class from a repeated element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1695,8 +1695,8 @@ private Grammar[] CreateSubsetMatchTest()
       </Parameters>
       <Docs>
         <param name="builder">The repeated grammar element to append.</param>
-        <param name="minRepeat">The minimum number of times that input matching the element defined by <c>builder</c> must occur to constitute a match.</param>
-        <param name="maxRepeat">The maximum number of times that input matching the element defined by <c>builder</c> can occur to constitute a match.</param>
+        <param name="minRepeat">The minimum number of times that input matching the element defined by <paramref name="builder" /> must occur to constitute a match.</param>
+        <param name="maxRepeat">The maximum number of times that input matching the element defined by <paramref name="builder" /> can occur to constitute a match.</param>
         <summary>Appends a repeated grammar element to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1779,8 +1779,8 @@ public static Grammar CreatePhonePhrase()
       </Parameters>
       <Docs>
         <param name="phrase">The repeated sequence of words to append.</param>
-        <param name="minRepeat">The minimum number of times that input matching <c>phrase</c> must occur to constitute a match.</param>
-        <param name="maxRepeat">The maximum number of times that input matching <c>phrase</c> can occur to constitute a match.</param>
+        <param name="minRepeat">The minimum number of times that input matching <paramref name="phrase" /> must occur to constitute a match.</param>
+        <param name="maxRepeat">The maximum number of times that input matching <paramref name="phrase" /> can occur to constitute a match.</param>
         <summary>Appends a repeated phrase to the current sequence of grammar elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -384,7 +384,7 @@
         <param name="detectEncoding">
           <see langword="Boolean" />. Indicates whether to look for byte order marks at the beginning of the file. Default is <see langword="True" />.</param>
         <param name="leaveOpen">
-          <see langword="Boolean" />. Indicates whether to leave <c>stream</c> open when the <see langword="TextFieldParser" /> object is closed. Default is <see langword="False" />.</param>
+          <see langword="Boolean" />. Indicates whether to leave <paramref name="stream" /> open when the <see langword="TextFieldParser" /> object is closed. Default is <see langword="False" />.</param>
         <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

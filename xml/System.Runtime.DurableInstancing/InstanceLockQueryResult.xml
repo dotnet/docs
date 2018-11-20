@@ -83,7 +83,7 @@
       </Parameters>
       <Docs>
         <param name="instanceId">The ID of the instance.</param>
-        <param name="instanceOwnerId">The ID of the instance owner who owns the lock on the instance represented by the <c>instanceId</c> parameter.</param>
+        <param name="instanceOwnerId">The ID of the instance owner who owns the lock on the instance represented by the <paramref name="instanceId" /> parameter.</param>
         <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceLockQueryResult" /> class and sets the <see cref="P:System.Runtime.DurableInstancing.InstanceLockQueryResult.InstanceOwnerIds" /> property using a dictionary that contains the single query result represented by the instance ID and the instance owner ID.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -100,7 +100,7 @@
       </Parameters>
       <Docs>
         <param name="riid">A reference to the outgoing interface IID whose connection point is being requested.</param>
-        <param name="ppCP">On successful return, contains the connection point that manages the outgoing interface <c>riid</c>.</param>
+        <param name="ppCP">On successful return, contains the connection point that manages the outgoing interface <paramref name="riid" />.</param>
         <summary>Asks the connectable object if it has a connection point for a particular IID, and if so, returns the <see langword="IConnectionPoint" /> interface pointer to that connection point.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

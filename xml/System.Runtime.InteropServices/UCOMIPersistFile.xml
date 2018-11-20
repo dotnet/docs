@@ -167,7 +167,7 @@
       </Parameters>
       <Docs>
         <param name="pszFileName">A zero-terminated string containing the absolute path of the file to open.</param>
-        <param name="dwMode">A combination of values from the <see langword="STGM" /> enumeration to indicate the access mode in which to open <c>pszFileName</c>.</param>
+        <param name="dwMode">A combination of values from the <see langword="STGM" /> enumeration to indicate the access mode in which to open <paramref name="pszFileName" />.</param>
         <summary>Opens the specified file and initializes an object from the file contents.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -205,7 +205,7 @@
       </Parameters>
       <Docs>
         <param name="pszFileName">A zero-terminated string containing the absolute path of the file to which the object is saved.</param>
-        <param name="fRemember">Indicates whether <c>pszFileName</c> is to be used as the current working file.</param>
+        <param name="fRemember">Indicates whether <paramref name="pszFileName" /> is to be used as the current working file.</param>
         <summary>Saves a copy of the object into the specified file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

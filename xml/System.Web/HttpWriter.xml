@@ -241,7 +241,7 @@
       <Docs>
         <param name="buffer">The memory buffer containing the characters to send to the HTTP output stream</param>
         <param name="index">The buffer position of the first character to send.</param>
-        <param name="count">The number of characters to send beginning at the position specified by <c>index</c>.</param>
+        <param name="count">The number of characters to send beginning at the position specified by <paramref name="index" />.</param>
         <summary>Sends a stream of characters with the specified starting position and number of characters to the HTTP output stream.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -286,7 +286,7 @@
       <Docs>
         <param name="buffer">The memory buffer containing the bytes to send to the HTTP output stream.</param>
         <param name="index">The buffer position of the first byte to send.</param>
-        <param name="count">The number of bytes to send, beginning at the byte position specified by <c>index</c>.</param>
+        <param name="count">The number of bytes to send, beginning at the byte position specified by <paramref name="index" />.</param>
         <summary>Sends a stream of bytes with the specified starting position and number of bytes to the HTTP output stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -339,7 +339,7 @@
       <Docs>
         <param name="s">The string to send to the HTTP output stream.</param>
         <param name="index">The character position of the first byte to send.</param>
-        <param name="count">The number of characters to send, beginning at the character position specified by <c>index</c>.</param>
+        <param name="count">The number of characters to send, beginning at the character position specified by <paramref name="index" />.</param>
         <summary>Sends a string with the specified starting position and number of characters to the HTTP output stream.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is less than zero.  

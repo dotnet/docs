@@ -118,7 +118,7 @@
       </Parameters>
       <Docs>
         <param name="callback">The delegate to invoke when the operation completes.</param>
-        <param name="state">User defined object used to transfer state between the start of the operation and the callback defined by <c>callback</c>.</param>
+        <param name="state">User defined object used to transfer state between the start of the operation and the callback defined by <paramref name="callback" />.</param>
         <summary>Starts an asynchronous network operation that executes the query represented by this object instance.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> that represents the status of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>

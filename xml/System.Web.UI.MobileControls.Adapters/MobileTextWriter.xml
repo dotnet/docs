@@ -399,7 +399,7 @@
       </Parameters>
       <Docs>
         <param name="style">The specified style to use for formatting characters.</param>
-        <param name="breakAfter">If <c>breakAfter</c> is <see langword="true" />, a break is added after the closing style element. The first form of the method assumes <c>breakAfter</c> to be <see langword="true" />.</param>
+        <param name="breakAfter">If <paramref name="breakAfter" /> is <see langword="true" />, a break is added after the closing style element. The first form of the method assumes <paramref name="breakAfter" /> to be <see langword="true" />.</param>
         <summary>Ends a block that has been using the character formatting from a specified style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
@@ -473,7 +473,7 @@
       </Parameters>
       <Docs>
         <param name="style">The style reference.</param>
-        <param name="breakAfter">If <c>breakAfter</c> is true, a break is added after the closing style element. The first form of the method assumes <c>breakAfter</c> to be <see langword="true" />.</param>
+        <param name="breakAfter">If <paramref name="breakAfter" /> is true, a break is added after the closing style element. The first form of the method assumes <paramref name="breakAfter" /> to be <see langword="true" />.</param>
         <summary>Ends a block by using the formatting from a given style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

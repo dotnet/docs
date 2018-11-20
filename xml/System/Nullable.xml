@@ -107,7 +107,7 @@
         <Parameter Name="n2" Type="System.Nullable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The underlying value type of the <c>n1</c> and <c>n2</c> parameters.</typeparam>
+        <typeparam name="T">The underlying value type of the <paramref name="n1" /> and <paramref name="n2" /> parameters.</typeparam>
         <param name="n1">A <see cref="T:System.Nullable`1" /> object.</param>
         <param name="n2">A <see cref="T:System.Nullable`1" /> object.</param>
         <summary>Compares the relative values of two <see cref="T:System.Nullable`1" /> objects.</summary>
@@ -197,7 +197,7 @@
         <Parameter Name="n2" Type="System.Nullable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The underlying value type of the <c>n1</c> and <c>n2</c> parameters.</typeparam>
+        <typeparam name="T">The underlying value type of the <paramref name="n1" /> and <paramref name="n2" /> parameters.</typeparam>
         <param name="n1">A <see cref="T:System.Nullable`1" /> object.</param>
         <param name="n2">A <see cref="T:System.Nullable`1" /> object.</param>
         <summary>Indicates whether two specified <see cref="T:System.Nullable`1" /> objects are equal.</summary>

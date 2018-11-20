@@ -888,8 +888,8 @@
         <Parameter Name="right" Type="System.Reflection.MemberInfo" />
       </Parameters>
       <Docs>
-        <param name="left">The <see cref="T:System.Reflection.MemberInfo" /> to compare to <c>right</c>.</param>
-        <param name="right">The <see cref="T:System.Reflection.MemberInfo" /> to compare to <c>left</c>.</param>
+        <param name="left">The <see cref="T:System.Reflection.MemberInfo" /> to compare to <paramref name="right" />.</param>
+        <param name="right">The <see cref="T:System.Reflection.MemberInfo" /> to compare to <paramref name="left" />.</param>
         <summary>Indicates whether two <see cref="T:System.Reflection.MemberInfo" /> objects are equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="left" /> is equal to <paramref name="right" />; otherwise <see langword="false" />.</returns>
@@ -934,8 +934,8 @@
         <Parameter Name="right" Type="System.Reflection.MemberInfo" />
       </Parameters>
       <Docs>
-        <param name="left">The <see cref="T:System.Reflection.MemberInfo" /> to compare to <c>right</c>.</param>
-        <param name="right">The <see cref="T:System.Reflection.MemberInfo" /> to compare to <c>left</c>.</param>
+        <param name="left">The <see cref="T:System.Reflection.MemberInfo" /> to compare to <paramref name="right" />.</param>
+        <param name="right">The <see cref="T:System.Reflection.MemberInfo" /> to compare to <paramref name="left" />.</param>
         <summary>Indicates whether two <see cref="T:System.Reflection.MemberInfo" /> objects are not equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="left" /> is not equal to <paramref name="right" />; otherwise <see langword="false" />.</returns>

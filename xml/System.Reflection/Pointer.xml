@@ -82,7 +82,7 @@
       </Parameters>
       <Docs>
         <param name="ptr">The supplied unmanaged memory pointer.</param>
-        <param name="type">The type associated with the <c>ptr</c> parameter.</param>
+        <param name="type">The type associated with the <paramref name="ptr" /> parameter.</param>
         <summary>Boxes the supplied unmanaged memory pointer and the type associated with that pointer into a managed <see cref="T:System.Reflection.Pointer" /> wrapper object. The value and the type are saved so they can be accessed from the native code during an invocation.</summary>
         <returns>A pointer object.</returns>
         <remarks>To be added.</remarks>

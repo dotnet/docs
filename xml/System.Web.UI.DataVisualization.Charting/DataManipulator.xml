@@ -257,7 +257,7 @@
       </Parameters>
       <Docs>
         <param name="dateRange">A <see cref="T:System.Web.UI.DataVisualization.Charting.DateRangeType" /> enumeration value that represents a date/time interval, such as days of the week, days of the month, and so forth. Determines the range over which the given elements will be filtered.</param>
-        <param name="rangeElements">Specifies the elements within the date/time range designated by the <c>dateRange</c> parameter that will be filtered. Can be a single value, for example, "7"; comma-separated values, for example, "5,6"; a range of values, such as "9-11"; or any variation thereof, such as "5,6,9-11".</param>
+        <param name="rangeElements">Specifies the elements within the date/time range designated by the <paramref name="dateRange" /> parameter that will be filtered. Can be a single value, for example, "7"; comma-separated values, for example, "5,6"; a range of values, such as "9-11"; or any variation thereof, such as "5,6,9-11".</param>
         <param name="inputSeriesNames">A comma-separated list of names of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> to be filtered.</param>
         <summary>Filters the data points of one or more series, either by removing the specified points or by marking them as empty for the given date/time ranges. The filtered <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> objects are used to store the modified data.</summary>
         <remarks>To be added.</remarks>
@@ -285,7 +285,7 @@
       </Parameters>
       <Docs>
         <param name="dateRange">A <see cref="T:System.Web.UI.DataVisualization.Charting.DateRangeType" /> enumeration value that represents a date/time interval, such as days of the week, days of the month, and so forth. Determines the range over which the given elements will be filtered.</param>
-        <param name="rangeElements">Specifies the elements within the date/time range designated by the <c>dateRange</c> parameter that will be filtered. Can be a single value, for example, "7"; comma-separated values, for example, "5,6"; a range of values, such as "9-11"; or any variation thereof, such as "5,6,9-11".</param>
+        <param name="rangeElements">Specifies the elements within the date/time range designated by the <paramref name="dateRange" /> parameter that will be filtered. Can be a single value, for example, "7"; comma-separated values, for example, "5,6"; a range of values, such as "9-11"; or any variation thereof, such as "5,6,9-11".</param>
         <param name="inputSeries">The <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> object to be filtered.</param>
         <summary>Filters the data points in a series, either by removing the specified points or by marking them as empty for the specified date/time ranges. The <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> object that is filtered is used to store the modified data.</summary>
         <remarks>To be added.</remarks>
@@ -428,7 +428,7 @@
       </Parameters>
       <Docs>
         <param name="dateRange">A <see cref="T:System.Web.UI.DataVisualization.Charting.DateRangeType" /> enumeration value that represents a date/time interval, such as days of the week, days of the month, and so forth. Determines the range over which the given elements will be filtered.</param>
-        <param name="rangeElements">Specifies the elements within the date/time range designated by the <c>dateRange</c> parameter that will be filtered. Can be a single value, for example, "7"; comma-separated values, for example, "5,6"; a range of values, such as "9-11"; or any variation thereof, such as "5,6,9-11".</param>
+        <param name="rangeElements">Specifies the elements within the date/time range designated by the <paramref name="dateRange" /> parameter that will be filtered. Can be a single value, for example, "7"; comma-separated values, for example, "5,6"; a range of values, such as "9-11"; or any variation thereof, such as "5,6,9-11".</param>
         <param name="inputSeriesNames">A comma-separated list of names of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> to be filtered.</param>
         <param name="outputSeriesNames">A comma-separated list of names of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> that store the filtered data. Make sure that the number of output series matches the number of input series, otherwise an exception will be thrown.</param>
         <summary>Filters the data points for one or more series, by either removing the specified points or by marking them as empty for the given date/time ranges.</summary>
@@ -458,7 +458,7 @@
       </Parameters>
       <Docs>
         <param name="dateRange">A <see cref="T:System.Web.UI.DataVisualization.Charting.DateRangeType" /> enumeration value that represents a date/time interval, such as days of the week, days of the month, and so forth. Determines the range over which the given elements will be filtered.</param>
-        <param name="rangeElements">Specifies the elements within the date/time range designated by the <c>dateRange</c> parameter that will be filtered. Can be a single value, for example, "7"; comma-separated values, for example, "5,6"; a range of values, such as "9-11"; or any variation thereof, such as "5,6,9-11".</param>
+        <param name="rangeElements">Specifies the elements within the date/time range designated by the <paramref name="dateRange" /> parameter that will be filtered. Can be a single value, for example, "7"; comma-separated values, for example, "5,6"; a range of values, such as "9-11"; or any variation thereof, such as "5,6,9-11".</param>
         <param name="inputSeries">The <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> object to be filtered.</param>
         <param name="outputSeries">A <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> object that stores the filtered data. If the series does not exist, an exception will be thrown.</param>
         <summary>Filters the data points in a series, either by removing the specified points or by marking them as empty for the given date/time ranges.</summary>
@@ -862,7 +862,7 @@
       <Docs>
         <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
         <param name="interval">The size of the interval checked for missing data points.</param>
-        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalType">The unit of measurement for the <paramref name="interval" /> parameter.</param>
         <param name="inputSeriesName">A comma-separated list of names of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> to be grouped.</param>
         <summary>Groups data using one or more formulas, for one or more series. Series are cleared of their original data and used to store the new data points.</summary>
         <remarks>To be added.</remarks>
@@ -891,7 +891,7 @@
       <Docs>
         <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
         <param name="interval">The size of the interval checked for missing data points.</param>
-        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalType">The unit of measurement for the <paramref name="interval" /> parameter.</param>
         <param name="inputSeries">The <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> object to be grouped.</param>
         <summary>Groups data using one or more formulas. The series that is grouped is cleared of its original data, and used to store the new data points.</summary>
         <remarks>To be added.</remarks>
@@ -921,7 +921,7 @@
       <Docs>
         <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
         <param name="interval">The size of the interval checked for missing data points.</param>
-        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalType">The unit of measurement for the <paramref name="interval" /> parameter.</param>
         <param name="inputSeriesName">A comma-separated list of names of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> to be grouped.</param>
         <param name="outputSeriesName">A comma-separated list of names of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> that will store the grouped data points. If a series does not exist, it will be created; if it does exist, it will first be cleared of all data before storing grouped data points. The number of output series must equal the number of input series, or an exception will be thrown.</param>
         <summary>Groups data for one or more series, using one or more formulas. Output series are used to store the grouped data points.</summary>
@@ -952,7 +952,7 @@
       <Docs>
         <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
         <param name="interval">The size of the interval checked for missing data points.</param>
-        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalType">The unit of measurement for the <paramref name="interval" /> parameter.</param>
         <param name="inputSeries">The <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> object to be grouped.</param>
         <param name="outputSeries">The <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> that will store the new data points created by the grouping operation. If it does not exist, an exception will be thrown.</param>
         <summary>Groups data using one or more formulas. An output series is used to store the grouped data points.</summary>
@@ -984,7 +984,7 @@
       <Docs>
         <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
         <param name="interval">The size of the interval checked for missing data points.</param>
-        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalType">The unit of measurement for the <paramref name="interval" /> parameter.</param>
         <param name="intervalOffset">The interval offset size.</param>
         <param name="intervalOffsetType">The unit of measurement for the interval offset.</param>
         <param name="inputSeriesName">A comma-separated list of names of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> to be grouped.</param>
@@ -1017,7 +1017,7 @@
       <Docs>
         <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
         <param name="interval">The size of the interval checked for missing data points.</param>
-        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalType">The unit of measurement for the <paramref name="interval" /> parameter.</param>
         <param name="intervalOffset">The interval offset size.</param>
         <param name="intervalOffsetType">The unit of measurement for the interval offset.</param>
         <param name="inputSeries">The <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> object to be grouped.</param>
@@ -1051,7 +1051,7 @@
       <Docs>
         <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
         <param name="interval">The size of the interval checked for missing data points.</param>
-        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalType">The unit of measurement for the <paramref name="interval" /> parameter.</param>
         <param name="intervalOffset">The interval offset size.</param>
         <param name="intervalOffsetType">The unit of measurement for the interval offset.</param>
         <param name="inputSeriesName">A comma-separated list of names of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> to be grouped.</param>
@@ -1086,7 +1086,7 @@
       <Docs>
         <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
         <param name="interval">The size of the interval checked for missing data points.</param>
-        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalType">The unit of measurement for the <paramref name="interval" /> parameter.</param>
         <param name="intervalOffset">The interval offset size.</param>
         <param name="intervalOffsetType">The unit of measurement for the interval offset.</param>
         <param name="inputSeries">The <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> object to be grouped.</param>
@@ -1247,7 +1247,7 @@
       </Parameters>
       <Docs>
         <param name="interval">The size of the interval checked for missing data points.</param>
-        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalType">The unit of measurement for the <paramref name="interval" /> parameter.</param>
         <param name="seriesName">A comma-separated list of names of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> to be checked.</param>
         <summary>Replaces the missing data points in one or more series with empty points. Each series is checked for a given interval that is determined by the <paramref name="interval" /> and <paramref name="intervalType" /> arguments.</summary>
         <remarks>To be added.</remarks>
@@ -1279,7 +1279,7 @@
       </Parameters>
       <Docs>
         <param name="interval">The size of the interval checked for missing data points.</param>
-        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalType">The unit of measurement for the <paramref name="interval" /> parameter.</param>
         <param name="series">The <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> object that is checked.</param>
         <summary>Replaces the missing data points in a series with empty points. The series is checked for a given interval that is determined by the <paramref name="interval" /> and <paramref name="intervalType" /> arguments.</summary>
         <remarks>To be added.</remarks>
@@ -1313,7 +1313,7 @@
       </Parameters>
       <Docs>
         <param name="interval">The size of the interval checked for missing data points.</param>
-        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalType">The unit of measurement for the <paramref name="interval" /> parameter.</param>
         <param name="intervalOffset">The interval offset size.</param>
         <param name="intervalOffsetType">The unit of measurement for the interval offset.</param>
         <param name="seriesName">A comma-separated list of names of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> to be checked.</param>
@@ -1349,7 +1349,7 @@
       </Parameters>
       <Docs>
         <param name="interval">The size of the interval checked for missing data points.</param>
-        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalType">The unit of measurement for the <paramref name="interval" /> parameter.</param>
         <param name="intervalOffset">The interval offset size.</param>
         <param name="intervalOffsetType">The unit of measurement for the interval offset.</param>
         <param name="series">The <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> object in which to insert the empty points.</param>
@@ -1382,7 +1382,7 @@
       </Parameters>
       <Docs>
         <param name="interval">The size of the interval checked for missing data points.</param>
-        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalType">The unit of measurement for the <paramref name="interval" /> parameter.</param>
         <param name="intervalOffset">The interval offset size.</param>
         <param name="intervalOffsetType">The unit of measurement for the interval offset.</param>
         <param name="fromXValue">The starting point for the series range to be checked. Uses the X-values of the data points.</param>
@@ -1417,7 +1417,7 @@
       </Parameters>
       <Docs>
         <param name="interval">The size of the interval checked for missing data points.</param>
-        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalType">The unit of measurement for the <paramref name="interval" /> parameter.</param>
         <param name="intervalOffset">The interval offset size.</param>
         <param name="intervalOffsetType">The unit of measurement for the interval offset.</param>
         <param name="fromXValue">The starting point for the series range to be checked. Uses the X-values of the data points.</param>

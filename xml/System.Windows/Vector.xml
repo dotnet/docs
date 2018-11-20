@@ -327,7 +327,7 @@
       </Parameters>
       <Docs>
         <param name="vector">The vector structure to divide.</param>
-        <param name="scalar">The amount by which <c>vector</c> is divided.</param>
+        <param name="scalar">The amount by which <paramref name="vector" /> is divided.</param>
         <summary>Divides the specified vector by the specified scalar and returns the result as a <see cref="T:System.Windows.Vector" />.</summary>
         <returns>The result of dividing <paramref name="vector" /> by <paramref name="scalar" />.</returns>
         <remarks>
@@ -698,7 +698,7 @@
       </Parameters>
       <Docs>
         <param name="vector">The vector structure to transform.</param>
-        <param name="matrix">The transformation to apply to <c>vector</c>.</param>
+        <param name="matrix">The transformation to apply to <paramref name="vector" />.</param>
         <summary>Transforms the coordinate space of the specified vector using the specified <see cref="T:System.Windows.Media.Matrix" />.</summary>
         <returns>The result of transforming <paramref name="vector" /> by <paramref name="matrix" />.</returns>
         <remarks>
@@ -851,7 +851,7 @@
         <Parameter Name="point" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="vector">The vector used to translate <c>point</c>.</param>
+        <param name="vector">The vector used to translate <paramref name="point" />.</param>
         <param name="point">The point to translate.</param>
         <summary>Translates a point by the specified vector and returns the resulting point.</summary>
         <returns>The result of translating <paramref name="point" /> by <paramref name="vector" />.</returns>
@@ -929,7 +929,7 @@
       </Parameters>
       <Docs>
         <param name="vector">The vector to divide.</param>
-        <param name="scalar">The scalar by which <c>vector</c> will be divided.</param>
+        <param name="scalar">The scalar by which <paramref name="vector" /> will be divided.</param>
         <summary>Divides the specified vector by the specified scalar and returns the resulting vector.</summary>
         <returns>The result of dividing <paramref name="vector" /> by <paramref name="scalar" />.</returns>
         <remarks>
@@ -1220,7 +1220,7 @@
       </Parameters>
       <Docs>
         <param name="vector">The vector to transform.</param>
-        <param name="matrix">The transformation to apply to <c>vector</c>.</param>
+        <param name="matrix">The transformation to apply to <paramref name="vector" />.</param>
         <summary>Transforms the coordinate space of the specified vector using the specified <see cref="T:System.Windows.Media.Matrix" />.</summary>
         <returns>The result of transforming <paramref name="vector" /> by <paramref name="matrix" />.</returns>
         <remarks>
@@ -1299,8 +1299,8 @@
         <Parameter Name="vector2" Type="System.Windows.Vector" />
       </Parameters>
       <Docs>
-        <param name="vector1">The vector from which <c>vector2</c> is subtracted.</param>
-        <param name="vector2">The vector to subtract from <c>vector1</c>.</param>
+        <param name="vector1">The vector from which <paramref name="vector2" /> is subtracted.</param>
+        <param name="vector2">The vector to subtract from <paramref name="vector1" />.</param>
         <summary>Subtracts one specified vector from another.</summary>
         <returns>The difference between <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
         <remarks>
@@ -1411,8 +1411,8 @@
         <Parameter Name="vector2" Type="System.Windows.Vector" />
       </Parameters>
       <Docs>
-        <param name="vector1">The vector from which <c>vector2</c> is subtracted.</param>
-        <param name="vector2">The vector to subtract from <c>vector1</c>.</param>
+        <param name="vector1">The vector from which <paramref name="vector2" /> is subtracted.</param>
+        <param name="vector2">The vector to subtract from <paramref name="vector1" />.</param>
         <summary>Subtracts the specified vector from another specified vector.</summary>
         <returns>The difference between <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
         <remarks>

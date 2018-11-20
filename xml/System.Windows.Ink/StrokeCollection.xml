@@ -238,7 +238,7 @@
       </Parameters>
       <Docs>
         <param name="propertyDataId">The <see cref="T:System.Guid" /> to associate with the custom property.</param>
-        <param name="propertyData">The value of the custom property. <c>propertyData</c> must be of type <see cref="T:System.Char" />, <see cref="T:System.Byte" />, <see cref="T:System.Int16" />, <see cref="T:System.UInt16" />, <see cref="T:System.Int32" />, <see cref="T:System.UInt32" />, <see cref="T:System.Int64" />, <see cref="T:System.UInt64" />, <see cref="T:System.Single" />, <see cref="T:System.Double" />, <see cref="T:System.DateTime" />, <see cref="T:System.Boolean" />, <see cref="T:System.String" />, <see cref="T:System.Decimal" /> or an array of these data types, except <see cref="T:System.String" />, which is not allowed.</param>
+        <param name="propertyData">The value of the custom property. <paramref name="propertyData" /> must be of type <see cref="T:System.Char" />, <see cref="T:System.Byte" />, <see cref="T:System.Int16" />, <see cref="T:System.UInt16" />, <see cref="T:System.Int32" />, <see cref="T:System.UInt32" />, <see cref="T:System.Int64" />, <see cref="T:System.UInt64" />, <see cref="T:System.Single" />, <see cref="T:System.Double" />, <see cref="T:System.DateTime" />, <see cref="T:System.Boolean" />, <see cref="T:System.String" />, <see cref="T:System.Decimal" /> or an array of these data types, except <see cref="T:System.String" />, which is not allowed.</param>
         <summary>Adds a custom property to the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -892,7 +892,7 @@
       </Parameters>
       <Docs>
         <param name="lassoPoints">An array of type <see cref="T:System.Windows.Point" /> that represents the bounds of the area to be hit tested.</param>
-        <param name="percentageWithinLasso">The acceptable length of the <see cref="T:System.Windows.Ink.Stroke" />, as a percentage, for <c>lassoPoints</c> to contain.</param>
+        <param name="percentageWithinLasso">The acceptable length of the <see cref="T:System.Windows.Ink.Stroke" />, as a percentage, for <paramref name="lassoPoints" /> to contain.</param>
         <summary>Returns a collection of strokes that have at least the specified percentage of length within the specified area.</summary>
         <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that has strokes with at least the specified percentage within the <see cref="T:System.Windows.Point" /> array.</returns>
         <remarks>
@@ -939,7 +939,7 @@
       </Parameters>
       <Docs>
         <param name="path">An array to type <see cref="T:System.Windows.Point" /> that represents the path to be hit tested.</param>
-        <param name="stylusShape">The <see cref="T:System.Windows.Ink.StylusShape" /> that specifies the shape of <c>eraserPath</c>.</param>
+        <param name="stylusShape">The <see cref="T:System.Windows.Ink.StylusShape" /> that specifies the shape of <paramref name="eraserPath" />.</param>
         <summary>Returns a collection of strokes that intersect with the specified path.</summary>
         <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> of strokes that intersect with <paramref name="path" />.</returns>
         <remarks>

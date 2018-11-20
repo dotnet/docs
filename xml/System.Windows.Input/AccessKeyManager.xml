@@ -130,7 +130,7 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="scope">The presentation source to query for <c>key</c>.</param>
+        <param name="scope">The presentation source to query for <paramref name="key" />.</param>
         <param name="key">The key to query.</param>
         <summary>Indicates whether the specified key is registered as an access keys in the specified scope.</summary>
         <returns>
@@ -167,7 +167,7 @@
       <Docs>
         <param name="scope">The scope for the access key.</param>
         <param name="key">The access key.</param>
-        <param name="isMultiple">Indicates if <c>key</c> has multiple matches.</param>
+        <param name="isMultiple">Indicates if <paramref name="key" /> has multiple matches.</param>
         <summary>Processes the specified access keys as if a <see cref="E:System.Windows.UIElement.KeyDown" /> event for the key was passed to the <see cref="T:System.Windows.Input.AccessKeyManager" />.</summary>
         <returns>
           <see langword="true" /> if there are more keys that match; otherwise, <see langword="false" />.</returns>
@@ -196,7 +196,7 @@
       </Parameters>
       <Docs>
         <param name="key">The access key.</param>
-        <param name="element">The element to associate <c>key</c> with.</param>
+        <param name="element">The element to associate <paramref name="key" /> with.</param>
         <summary>Associates the specified access keys with the specified element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -259,7 +259,7 @@
       </Parameters>
       <Docs>
         <param name="key">The access key.</param>
-        <param name="element">The element from which to disassociate <c>key</c>.</param>
+        <param name="element">The element from which to disassociate <paramref name="key" />.</param>
         <summary>Disassociates the specified access keys from the specified element.</summary>
         <remarks>To be added.</remarks>
       </Docs>

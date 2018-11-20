@@ -281,7 +281,7 @@
       </Parameters>
       <Docs>
         <param name="inPoint">The 3-D point to transform.</param>
-        <param name="result">The result of transforming <c>inPoint</c>.</param>
+        <param name="result">The result of transforming <paramref name="inPoint" />.</param>
         <summary>Transforms the specified 3-D point and returns the result.</summary>
         <returns>
           <see langword="true" /> if <paramref name="inPoint" /> was transformed; otherwise, <see langword="false" />.</returns>

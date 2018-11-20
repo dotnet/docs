@@ -586,7 +586,7 @@
       </Parameters>
       <Docs>
         <param name="xamlNamespace">The <see langword="xmlns" /> string for the XAML namespace to be checked for a compatible result.</param>
-        <param name="compatibleNamespace">When this method returns, the <see langword="xmlns" /> string for a compatible XAML namespace request. This might be identical to <c>xamlNamespace</c> if the method returns <see langword="false" />.</param>
+        <param name="compatibleNamespace">When this method returns, the <see langword="xmlns" /> string for a compatible XAML namespace request. This might be identical to <paramref name="xamlNamespace" /> if the method returns <see langword="false" />.</param>
         <summary>Returns the success or failure of a request for a compatible XAML namespace. A successful request reports that XAML namespace as an out parameter.</summary>
         <returns>
           <see langword="true" /> if <paramref name="compatibleNamespace" /> contains a usable result; otherwise, <see langword="false" />.</returns>

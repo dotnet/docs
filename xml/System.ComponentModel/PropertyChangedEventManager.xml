@@ -50,7 +50,7 @@
       <Docs>
         <param name="source">The source object that the raises the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event.</param>
         <param name="handler">The delegate that handles the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event.</param>
-        <param name="propertyName">The name of the property that exists on <c>source</c> upon which to listen for changes. Set to <see cref="F:System.String.Empty" /> to indicate "any property".</param>
+        <param name="propertyName">The name of the property that exists on <paramref name="source" /> upon which to listen for changes. Set to <see cref="F:System.String.Empty" /> to indicate "any property".</param>
         <summary>Adds the specified event handler, which is called when specified source raises the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event for the specified property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -89,7 +89,7 @@
       <Docs>
         <param name="source">The object with the event.</param>
         <param name="listener">The object to add as a listener.</param>
-        <param name="propertyName">The name of the property that exists on <c>source</c> upon which to listen for changes. Set to <see cref="F:System.String.Empty" /> to indicate "any property".</param>
+        <param name="propertyName">The name of the property that exists on <paramref name="source" /> upon which to listen for changes. Set to <see cref="F:System.String.Empty" /> to indicate "any property".</param>
         <summary>Adds the specified listener to the list of listeners on the specified source.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.IWeakEventListener" />
@@ -171,7 +171,7 @@
       <Docs>
         <param name="source">The source object that the raises the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event.</param>
         <param name="handler">The delegate that handles the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event.</param>
-        <param name="propertyName">The name of the property that exists on <c>source</c> upon which to stop listening for changes. Set to <see cref="F:System.String.Empty" /> to indicate "any property".</param>
+        <param name="propertyName">The name of the property that exists on <paramref name="source" /> upon which to stop listening for changes. Set to <see cref="F:System.String.Empty" /> to indicate "any property".</param>
         <summary>Removes the specified event handler from the specified source.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -203,7 +203,7 @@
       <Docs>
         <param name="source">The object to remove the listener from.</param>
         <param name="listener">The listener to remove.</param>
-        <param name="propertyName">The name of the property that exists on <c>source</c> upon which to stop listening for changes. Set to <see cref="F:System.String.Empty" /> to indicate "any property".</param>
+        <param name="propertyName">The name of the property that exists on <paramref name="source" /> upon which to stop listening for changes. Set to <see cref="F:System.String.Empty" /> to indicate "any property".</param>
         <summary>Removes the specified listener from the list of listeners on the provided source.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.IWeakEventListener" />

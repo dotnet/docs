@@ -336,7 +336,7 @@
       </Parameters>
       <Docs>
         <param name="parameterArray">Parameter array from which the value at a specified index is to be copied from.</param>
-        <param name="index">The <see langword="integer" /> index of the <c>parameterArray</c> item that is to be copied.</param>
+        <param name="index">The <see langword="integer" /> index of the <paramref name="parameterArray" /> item that is to be copied.</param>
         <summary>Copies a specified index of a parameter array to the parameter collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>

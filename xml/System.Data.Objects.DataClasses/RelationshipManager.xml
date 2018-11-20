@@ -185,8 +185,8 @@
         <Parameter Name="targetRoleName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="relationshipName">Name of the relationship in which <c>targetRoleName</c> is defined. The relationship name is not namespace qualified.</param>
-        <param name="targetRoleName">Target role to use to retrieve the other end of <c>relationshipName</c>.</param>
+        <param name="relationshipName">Name of the relationship in which <paramref name="targetRoleName" /> is defined. The relationship name is not namespace qualified.</param>
+        <param name="targetRoleName">Target role to use to retrieve the other end of <paramref name="relationshipName" />.</param>
         <summary>Returns either an <see cref="T:System.Data.Objects.DataClasses.EntityCollection`1" /> or <see cref="T:System.Data.Objects.DataClasses.EntityReference`1" /> of the correct type for the specified target role in a relationship.</summary>
         <returns>
           <see cref="T:System.Data.Objects.DataClasses.IRelatedEnd" /> representing the <see cref="T:System.Data.Objects.DataClasses.EntityCollection`1" /> or <see cref="T:System.Data.Objects.DataClasses.EntityReference`1" /> that was retrieved.</returns>

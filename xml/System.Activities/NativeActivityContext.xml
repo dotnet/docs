@@ -3137,7 +3137,7 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the <c>variable</c> and <c>value</c>.</typeparam>
+        <typeparam name="T">The type of the <paramref name="variable" /> and <paramref name="value" />.</typeparam>
         <param name="variable">A variable object with a specified type that can be assigned a value object.</param>
         <param name="value">An object with a specified type that can be assigned to a variable object.</param>
         <summary>Assigns the specified generic value object to the specified generic variable object.</summary>

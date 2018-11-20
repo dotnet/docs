@@ -99,9 +99,9 @@
         <param name="name">The name of the <see cref="T:System.Web.Configuration.BufferModeSettings" /> object being created.</param>
         <param name="maxBufferSize">The maximum number of events buffered at one time. The value must be greater than zero.</param>
         <param name="maxFlushSize">The maximum number of events per buffer flush. Must be greater than zero.</param>
-        <param name="urgentFlushThreshold">The number of events buffered before a buffer flush is triggered. The value must be greater than zero and less than or equal to <c>maxBufferSize</c>.</param>
+        <param name="urgentFlushThreshold">The number of events buffered before a buffer flush is triggered. The value must be greater than zero and less than or equal to <paramref name="maxBufferSize" />.</param>
         <param name="regularFlushInterval">The standard amount of time between buffer flushes. The value can be made infinite by setting it to <see cref="F:System.Int32.MaxValue" /> ticks.</param>
-        <param name="urgentFlushInterval">The minimum length of time that can pass between buffer flushes. The value must be less than or equal to <c>regularFlushInterval</c>.</param>
+        <param name="urgentFlushInterval">The minimum length of time that can pass between buffer flushes. The value must be less than or equal to <paramref name="regularFlushInterval" />.</param>
         <param name="maxBufferThreads">The maximum number of buffer-flushing threads that can be active at one time.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.BufferModeSettings" /> class using specified settings.</summary>
         <remarks>

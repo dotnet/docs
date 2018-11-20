@@ -53,7 +53,7 @@
       <Docs>
         <param name="pboidReason">An optional <see cref="T:System.EnterpriseServices.BOID" /> that indicates why the transaction is being aborted. This parameter can be <see langword="null" />, indicating that no reason for the abort is provided.</param>
         <param name="fRetaining">Must be <see langword="false" />.</param>
-        <param name="fAsync">When <c>fAsync</c> is <see langword="true" />, an asynchronous abort is performed and the caller must use <see langword="ITransactionOutcomeEvents" /> to learn the outcome of the transaction.</param>
+        <param name="fAsync">When <paramref name="fAsync" /> is <see langword="true" />, an asynchronous abort is performed and the caller must use <see langword="ITransactionOutcomeEvents" /> to learn the outcome of the transaction.</param>
         <summary>Aborts the transaction.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -540,7 +540,7 @@ testVbName = VbTypeName(sysBadName)
       </Parameters>
       <Docs>
         <param name="Array">Required. Array of any data type. The array in which you want to find the lowest possible subscript of a dimension.</param>
-        <param name="Rank">Optional. <see langword="Integer" />. The dimension for which the lowest possible subscript is to be returned. Use 1 for the first dimension, 2 for the second, and so on. If <c>Rank</c> is omitted, 1 is assumed.</param>
+        <param name="Rank">Optional. <see langword="Integer" />. The dimension for which the lowest possible subscript is to be returned. Use 1 for the first dimension, 2 for the second, and so on. If <paramref name="Rank" /> is omitted, 1 is assumed.</param>
         <summary>Returns the lowest available subscript for the indicated dimension of an array.</summary>
         <returns>
           <see langword="Integer" />. The lowest value the subscript for the specified dimension can contain. <see langword="LBound" /> always returns 0 as long as <paramref name="Array" /> has been initialized, even if it has no elements, for example if it is a zero-length string. If <paramref name="Array" /> is <see langword="Nothing" />, <see langword="LBound" /> throws an <see cref="T:System.ArgumentNullException" />.</returns>
@@ -844,7 +844,7 @@ Dim a(100, 5, 4) As Byte
       </Parameters>
       <Docs>
         <param name="Array">Required. Array of any data type. The array in which you want to find the highest possible subscript of a dimension.</param>
-        <param name="Rank">Optional. <see langword="Integer" />. The dimension for which the highest possible subscript is to be returned. Use 1 for the first dimension, 2 for the second, and so on. If <c>Rank</c> is omitted, 1 is assumed.</param>
+        <param name="Rank">Optional. <see langword="Integer" />. The dimension for which the highest possible subscript is to be returned. Use 1 for the first dimension, 2 for the second, and so on. If <paramref name="Rank" /> is omitted, 1 is assumed.</param>
         <summary>Returns the highest available subscript for the indicated dimension of an array.</summary>
         <returns>
           <see langword="Integer" />. The highest value the subscript for the specified dimension can contain. If <paramref name="Array" /> has only one element, <see langword="UBound" /> returns 0. If <paramref name="Array" /> has no elements, for example if it is a zero-length string, <see langword="UBound" /> returns -1.</returns>

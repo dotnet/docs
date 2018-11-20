@@ -666,7 +666,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <Docs>
         <param name="xmlFragment">The stream containing the XML fragment to parse.</param>
         <param name="fragType">The <see cref="T:System.Xml.XmlNodeType" /> of the XML fragment. This also determines what the fragment can contain. (See table below.)</param>
-        <param name="context">The <see cref="T:System.Xml.XmlParserContext" /> in which the <c>xmlFragment</c> is to be parsed. This includes the <see cref="T:System.Xml.XmlNameTable" /> to use, encoding, namespace scope, the current <c>xml:lang</c>, and the <c>xml:space</c> scope.</param>
+        <param name="context">The <see cref="T:System.Xml.XmlParserContext" /> in which the <paramref name="xmlFragment" /> is to be parsed. This includes the <see cref="T:System.Xml.XmlNameTable" /> to use, encoding, namespace scope, the current <c>xml:lang</c>, and the <c>xml:space</c> scope.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlTextReader" /> class with the specified stream, <see cref="T:System.Xml.XmlNodeType" />, and <see cref="T:System.Xml.XmlParserContext" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -733,7 +733,7 @@ XmlTextReader reader = new XmlTextReader(s);
         <Parameter Name="nt" Type="System.Xml.XmlNameTable" />
       </Parameters>
       <Docs>
-        <param name="url">The URL to use for resolving external resources. The <see cref="P:System.Xml.XmlTextReader.BaseURI" /> is set to this value. If <c>url</c> is <see langword="null" />, <see langword="BaseURI" /> is set to <see langword="String.Empty" />.</param>
+        <param name="url">The URL to use for resolving external resources. The <see cref="P:System.Xml.XmlTextReader.BaseURI" /> is set to this value. If <paramref name="url" /> is <see langword="null" />, <see langword="BaseURI" /> is set to <see langword="String.Empty" />.</param>
         <param name="input">The stream containing the XML data to read.</param>
         <param name="nt">The <see langword="XmlNameTable" /> to use.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlTextReader" /> class with the specified URL, stream and <see cref="T:System.Xml.XmlNameTable" />.</summary>
@@ -781,7 +781,7 @@ XmlTextReader reader = new XmlTextReader(s);
         <Parameter Name="nt" Type="System.Xml.XmlNameTable" />
       </Parameters>
       <Docs>
-        <param name="url">The URL to use for resolving external resources. The <see cref="P:System.Xml.XmlTextReader.BaseURI" /> is set to this value. If <c>url</c> is <see langword="null" />, <see langword="BaseURI" /> is set to <see langword="String.Empty" />.</param>
+        <param name="url">The URL to use for resolving external resources. The <see cref="P:System.Xml.XmlTextReader.BaseURI" /> is set to this value. If <paramref name="url" /> is <see langword="null" />, <see langword="BaseURI" /> is set to <see langword="String.Empty" />.</param>
         <param name="input">The <see langword="TextReader" /> containing the XML data to read.</param>
         <param name="nt">The <see langword="XmlNameTable" /> to use.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlTextReader" /> class with the specified URL, <see cref="T:System.IO.TextReader" /> and <see cref="T:System.Xml.XmlNameTable" />.</summary>
@@ -833,7 +833,7 @@ XmlTextReader reader = new XmlTextReader(s);
       <Docs>
         <param name="xmlFragment">The string containing the XML fragment to parse.</param>
         <param name="fragType">The <see cref="T:System.Xml.XmlNodeType" /> of the XML fragment. This also determines what the fragment string can contain. (See table below.)</param>
-        <param name="context">The <see cref="T:System.Xml.XmlParserContext" /> in which the <c>xmlFragment</c> is to be parsed. This includes the <see cref="T:System.Xml.XmlNameTable" /> to use, encoding, namespace scope, the current <c>xml:lang</c>, and the <c>xml:space</c> scope.</param>
+        <param name="context">The <see cref="T:System.Xml.XmlParserContext" /> in which the <paramref name="xmlFragment" /> is to be parsed. This includes the <see cref="T:System.Xml.XmlNameTable" /> to use, encoding, namespace scope, the current <c>xml:lang</c>, and the <c>xml:space</c> scope.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlTextReader" /> class with the specified string, <see cref="T:System.Xml.XmlNodeType" />, and <see cref="T:System.Xml.XmlParserContext" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3476,8 +3476,8 @@ abc<tag/>
       </Parameters>
       <Docs>
         <param name="buffer">The array of characters that serves as the buffer to which the text contents are written.</param>
-        <param name="index">The position within <c>buffer</c> where the method can begin writing text contents.</param>
-        <param name="count">The number of characters to write into <c>buffer</c>.</param>
+        <param name="index">The position within <paramref name="buffer" /> where the method can begin writing text contents.</param>
+        <param name="count">The number of characters to write into <paramref name="buffer" />.</param>
         <summary>Reads the text contents of an element into a character buffer. This method is designed to read large streams of embedded text by calling it successively.</summary>
         <returns>The number of characters read. This can be <see langword="0" /> if the reader is not positioned on an element or if there is no more text content to return in the current context.</returns>
         <remarks>

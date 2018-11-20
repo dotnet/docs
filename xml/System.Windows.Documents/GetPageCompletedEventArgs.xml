@@ -46,12 +46,12 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="page">The <see cref="T:System.Windows.Documents.DocumentPage" /> for the requested <c>pageNumber</c>.</param>
-        <param name="pageNumber">The <c>pageNumber</c> parameter passed to <see cref="M:System.Windows.Documents.DocumentPaginator.GetPageAsync(System.Int32,System.Object)" />.</param>
+        <param name="page">The <see cref="T:System.Windows.Documents.DocumentPage" /> for the requested <paramref name="pageNumber" />.</param>
+        <param name="pageNumber">The <paramref name="pageNumber" /> parameter passed to <see cref="M:System.Windows.Documents.DocumentPaginator.GetPageAsync(System.Int32,System.Object)" />.</param>
         <param name="error">The exception that occurred during the asynchronous operation; or NULL if there were no errors.</param>
         <param name="cancelled">
           <see langword="true" /> if the asynchronous operation was canceled; otherwise, <see langword="false" />.</param>
-        <param name="userState">The unique <c>userState</c> parameter passed to <see cref="M:System.Windows.Documents.DocumentPaginator.GetPageAsync(System.Int32,System.Object)" />.</param>
+        <param name="userState">The unique <paramref name="userState" /> parameter passed to <see cref="M:System.Windows.Documents.DocumentPaginator.GetPageAsync(System.Int32,System.Object)" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.GetPageCompletedEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

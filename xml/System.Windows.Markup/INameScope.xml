@@ -104,7 +104,7 @@
       </Parameters>
       <Docs>
         <param name="name">The name to register.</param>
-        <param name="scopedElement">The specific element that the provided <c>name</c> refers to.</param>
+        <param name="scopedElement">The specific element that the provided <paramref name="name" /> refers to.</param>
         <summary>Registers the provided name into the current XAML namescope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

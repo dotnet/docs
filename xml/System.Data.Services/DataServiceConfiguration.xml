@@ -428,7 +428,7 @@
       </Parameters>
       <Docs>
         <param name="name">Name of entity set resource for which to set the page size.</param>
-        <param name="size">Page size for the entity set resource that is specified in <c>name</c>.</param>
+        <param name="size">Page size for the entity set resource that is specified in <paramref name="name" />.</param>
         <summary>Sets the maximum page size for an entity set resource.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

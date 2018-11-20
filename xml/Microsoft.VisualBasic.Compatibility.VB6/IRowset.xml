@@ -64,8 +64,8 @@
       <Docs>
         <param name="cRows">The number of rows for which to increment the reference count.</param>
         <param name="hRows">An array of row handles for which to increment the reference count. The reference count of row handles is incremented by one for each time they appear in the array.</param>
-        <param name="refCounts">An array with <c>cRows</c> elements in which to return the new reference count for each row handle. The consumer allocates memory for this array. If <c>refCounts</c> is a null pointer, no reference counts are returned.</param>
-        <param name="rowStatus">An array with <c>cRows</c> elements in which to return values indicating the status of each row specified in <c>hRows</c>.</param>
+        <param name="refCounts">An array with <paramref name="cRows" /> elements in which to return the new reference count for each row handle. The consumer allocates memory for this array. If <paramref name="refCounts" /> is a null pointer, no reference counts are returned.</param>
+        <param name="rowStatus">An array with <paramref name="cRows" /> elements in which to return values indicating the status of each row specified in <paramref name="hRows" />.</param>
         <summary>Adds a reference count to an existing row handle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -182,9 +182,9 @@
       <Docs>
         <param name="cRows">The number of rows to release.</param>
         <param name="hRows">An array of handles of the rows to be released. The row handles do not need to form a logical cluster; they may have been obtained at separate times and need not be for contiguous underlying rows. Row handles are decremented by one reference count for each time they appear in the array.</param>
-        <param name="rowOptions">An array of <c>cRows</c> elements containing bitmasks indicating additional options to be specified when a row is released.</param>
-        <param name="rowRefCounts">An array with <c>cRows</c> elements in which to return the new reference count of each row.</param>
-        <param name="rgRowStatus">An array with <c>cRows</c> elements in which to return values indicating the status of each row specified in <c>hRows</c>.</param>
+        <param name="rowOptions">An array of <paramref name="cRows" /> elements containing bitmasks indicating additional options to be specified when a row is released.</param>
+        <param name="rowRefCounts">An array with <paramref name="cRows" /> elements in which to return the new reference count of each row.</param>
+        <param name="rgRowStatus">An array with <paramref name="cRows" /> elements in which to return values indicating the status of each row specified in <paramref name="hRows" />.</param>
         <summary>Releases rows.</summary>
         <returns>An <see langword="Integer" /> representing the result.</returns>
         <remarks>

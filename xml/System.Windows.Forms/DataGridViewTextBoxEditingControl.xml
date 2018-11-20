@@ -341,7 +341,7 @@
       <Docs>
         <param name="keyData">A <see cref="T:System.Windows.Forms.Keys" /> that represents the key that was pressed.</param>
         <param name="dataGridViewWantsInputKey">
-          <see langword="true" /> when the <see cref="T:System.Windows.Forms.DataGridView" /> wants to process the <c>keyData</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> when the <see cref="T:System.Windows.Forms.DataGridView" /> wants to process the <paramref name="keyData" />; otherwise, <see langword="false" />.</param>
         <summary>Determines whether the specified key is a regular input key that the editing control should process or a special key that the <see cref="T:System.Windows.Forms.DataGridView" /> should process.</summary>
         <returns>
           <see langword="true" /> if the specified key is a regular input key that should be handled by the editing control; otherwise, <see langword="false" />.</returns>

@@ -88,7 +88,7 @@
         <Parameter Name="s2" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s1">The string in which to locate <c>s2</c>.</param>
+        <param name="s1">The string in which to locate <paramref name="s2" />.</param>
         <param name="s2">The string to locate in s1.</param>
         <summary>Implements <see langword="contains" /> XPath function according to the [W3C specification](https://go.microsoft.com/fwlink/?LinkID=4873).</summary>
         <returns>
@@ -492,8 +492,8 @@
         <Parameter Name="s2" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s1">A string, the beginning of which is compared to <c>s2</c>.</param>
-        <param name="s2">The string to compare to the beginning of <c>s1</c>.</param>
+        <param name="s1">A string, the beginning of which is compared to <paramref name="s2" />.</param>
+        <param name="s2">The string to compare to the beginning of <paramref name="s1" />.</param>
         <summary>Implements <see langword="starts-with" /> XPath function according to the [W3C specification](https://go.microsoft.com/fwlink/?LinkID=4873).</summary>
         <returns>
           <see langword="true" /> if the first argument string starts with the second argument string; otherwise, <see langword="false" />.</returns>
@@ -604,7 +604,7 @@
       </Parameters>
       <Docs>
         <param name="s1">The string in which to locate s2.</param>
-        <param name="s2">The string to locate in <c>s1</c>.</param>
+        <param name="s2">The string to locate in <paramref name="s1" />.</param>
         <summary>Implements <see langword="substring-after" /> XPath function according to the [W3C specification](https://go.microsoft.com/fwlink/?LinkID=4873).</summary>
         <returns>The characters in s1 that occur after s2, or the empty string if s1 does not contain s2.</returns>
         <remarks>
@@ -644,7 +644,7 @@
       </Parameters>
       <Docs>
         <param name="s1">The string in which to locate s2.</param>
-        <param name="s2">The string to locate in <c>s1</c>.</param>
+        <param name="s2">The string to locate in <paramref name="s1" />.</param>
         <summary>Implements <see langword="substring-before" /> XPath function according to the [W3C specification](https://go.microsoft.com/fwlink/?LinkID=4873).</summary>
         <returns>The characters in s1 that occur before s2, or the empty string if s1 does not contain s2.</returns>
         <remarks>
@@ -716,8 +716,8 @@
       </Parameters>
       <Docs>
         <param name="arg">The original string.</param>
-        <param name="mapString">The substring in <c>arg</c> that should be replaced with <c>transString</c>.</param>
-        <param name="transString">The string to replace <c>mapString</c> with.</param>
+        <param name="mapString">The substring in <paramref name="arg" /> that should be replaced with <paramref name="transString" />.</param>
+        <param name="transString">The string to replace <paramref name="mapString" /> with.</param>
         <summary>Implements <see langword="translate" /> XPath function according to the [W3C specification](https://go.microsoft.com/fwlink/?LinkID=4873).</summary>
         <returns>The translated value as <see cref="T:System.String" />.</returns>
         <remarks>

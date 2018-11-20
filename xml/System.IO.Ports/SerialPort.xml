@@ -1871,8 +1871,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The byte array to write the input to.</param>
-        <param name="offset">The offset in <c>buffer</c> at which to write the bytes.</param>
-        <param name="count">The maximum number of bytes to read. Fewer bytes are read if <c>count</c> is greater than the number of bytes in the input buffer.</param>
+        <param name="offset">The offset in <paramref name="buffer" /> at which to write the bytes.</param>
+        <param name="count">The maximum number of bytes to read. Fewer bytes are read if <paramref name="count" /> is greater than the number of bytes in the input buffer.</param>
         <summary>Reads a number of bytes from the <see cref="T:System.IO.Ports.SerialPort" /> input buffer and writes those bytes into a byte array at the specified offset.</summary>
         <returns>The number of bytes read.</returns>
         <remarks>
@@ -1923,8 +1923,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The character array to write the input to.</param>
-        <param name="offset">The offset in <c>buffer</c> at which to write the characters.</param>
-        <param name="count">The maximum number of characters to read. Fewer characters are read if <c>count</c> is greater than the number of characters in the input buffer.</param>
+        <param name="offset">The offset in <paramref name="buffer" /> at which to write the characters.</param>
+        <param name="count">The maximum number of characters to read. Fewer characters are read if <paramref name="count" /> is greater than the number of characters in the input buffer.</param>
         <summary>Reads a number of characters from the <see cref="T:System.IO.Ports.SerialPort" /> input buffer and writes them into an array of characters at a given offset.</summary>
         <returns>The number of characters read.</returns>
         <remarks>
@@ -2589,7 +2589,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">The byte array that contains the data to write to the port.</param>
-        <param name="offset">The zero-based byte offset in the <c>buffer</c> parameter at which to begin copying bytes to the port.</param>
+        <param name="offset">The zero-based byte offset in the <paramref name="buffer" /> parameter at which to begin copying bytes to the port.</param>
         <param name="count">The number of bytes to write.</param>
         <summary>Writes a specified number of bytes to the serial port using data from a buffer.</summary>
         <remarks>
@@ -2640,7 +2640,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">The character array that contains the data to write to the port.</param>
-        <param name="offset">The zero-based byte offset in the <c>buffer</c> parameter at which to begin copying bytes to the port.</param>
+        <param name="offset">The zero-based byte offset in the <paramref name="buffer" /> parameter at which to begin copying bytes to the port.</param>
         <param name="count">The number of characters to write.</param>
         <summary>Writes a specified number of characters to the serial port using data from a buffer.</summary>
         <remarks>

@@ -4828,15 +4828,15 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <Docs>
         <param name="action">One of the <see cref="T:System.Messaging.MessageLookupAction" /> values, specifying how the message is read in the queue. Specify one of the following:  
   
- <see langword="MessageLookupAction.Current" />: Peeks at the message specified by <c>lookupId</c>.  
+ <see langword="MessageLookupAction.Current" />: Peeks at the message specified by <paramref name="lookupId" />.  
   
- <see langword="MessageLookupAction.Next" />: Peeks at the message following the message specified by <c>lookupId</c>.  
+ <see langword="MessageLookupAction.Next" />: Peeks at the message following the message specified by <paramref name="lookupId" />.  
   
- <see langword="MessageLookupAction.Previous" />: Peeks at the message preceding the message specified by <c>lookupId</c>.  
+ <see langword="MessageLookupAction.Previous" />: Peeks at the message preceding the message specified by <paramref name="lookupId" />.  
   
- <see langword="MessageLookupAction.First" />: Peeks at the first message in the queue. The <c>lookupId</c> parameter must be set to 0.  
+ <see langword="MessageLookupAction.First" />: Peeks at the first message in the queue. The <paramref name="lookupId" /> parameter must be set to 0.  
   
- <see langword="MessageLookupAction.Last" />: Peeks at the last message in the queue. The <c>lookupId</c> parameter must be set to 0.</param>
+ <see langword="MessageLookupAction.Last" />: Peeks at the last message in the queue. The <paramref name="lookupId" /> parameter must be set to 0.</param>
         <param name="lookupId">The <see cref="P:System.Messaging.Message.LookupId" /> of the message to peek at, or 0. 0 is used when accessing the first or last message in the queue.</param>
         <summary>Introduced in MSMQ 3.0. Peeks at a specific message from the queue. The message can be specified by a lookup identifier or by its position at the front or end of the queue.</summary>
         <returns>The <see cref="T:System.Messaging.Message" /> specified by the <paramref name="action" /> and <paramref name="lookupId" /> parameters passed in.</returns>
@@ -6715,15 +6715,15 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <Docs>
         <param name="action">One of the <see cref="T:System.Messaging.MessageLookupAction" /> values, specifying how the message is read in the queue. Specify one of the following:  
   
- <see langword="MessageLookupAction.Current" />: Receives the message specified by <c>lookupId</c> and removes it from the queue.  
+ <see langword="MessageLookupAction.Current" />: Receives the message specified by <paramref name="lookupId" /> and removes it from the queue.  
   
- <see langword="MessageLookupAction.Next" />: Receives the message following the message specified by <c>lookupId</c> and removes it from the queue.  
+ <see langword="MessageLookupAction.Next" />: Receives the message following the message specified by <paramref name="lookupId" /> and removes it from the queue.  
   
- <see langword="MessageLookupAction.Previous" />: Receives the message preceding the message specified by <c>lookupId</c> and removes it from the queue.  
+ <see langword="MessageLookupAction.Previous" />: Receives the message preceding the message specified by <paramref name="lookupId" /> and removes it from the queue.  
   
- <see langword="MessageLookupAction.First" />: Receives the first message in the queue and removes it from the queue. The <c>lookupId</c> parameter must be set to 0.  
+ <see langword="MessageLookupAction.First" />: Receives the first message in the queue and removes it from the queue. The <paramref name="lookupId" /> parameter must be set to 0.  
   
- <see langword="MessageLookupAction.Last" />: Receives the last message in the queue and removes it from the queue. The <c>lookupId</c> parameter must be set to 0.</param>
+ <see langword="MessageLookupAction.Last" />: Receives the last message in the queue and removes it from the queue. The <paramref name="lookupId" /> parameter must be set to 0.</param>
         <param name="lookupId">The <see cref="P:System.Messaging.Message.LookupId" /> of the message to receive, or 0. 0 is used when accessing the first or last message in the queue.</param>
         <param name="transaction">The <see cref="T:System.Messaging.MessageQueueTransaction" /> object.</param>
         <summary>Introduced in MSMQ 3.0. Receives a specific message from a transactional queue. The message can be specified by a lookup identifier or by its position at the front or end of the queue.</summary>
@@ -6787,15 +6787,15 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       <Docs>
         <param name="action">One of the <see cref="T:System.Messaging.MessageLookupAction" /> values, specifying how the message is read in the queue. Specify one of the following:  
   
- <see langword="MessageLookupAction.Current" />: Receives the message specified by <c>lookupId</c> and removes it from the queue.  
+ <see langword="MessageLookupAction.Current" />: Receives the message specified by <paramref name="lookupId" /> and removes it from the queue.  
   
- <see langword="MessageLookupAction.Next" />: Receives the message following the message specified by <c>lookupId</c> and removes it from the queue.  
+ <see langword="MessageLookupAction.Next" />: Receives the message following the message specified by <paramref name="lookupId" /> and removes it from the queue.  
   
- <see langword="MessageLookupAction.Previous" />: Receives the message preceding the message specified by <c>lookupId</c> and removes it from the queue.  
+ <see langword="MessageLookupAction.Previous" />: Receives the message preceding the message specified by <paramref name="lookupId" /> and removes it from the queue.  
   
- <see langword="MessageLookupAction.First" />: Receives the first message in the queue and removes it from the queue. The <c>lookupId</c> parameter must be set to 0.  
+ <see langword="MessageLookupAction.First" />: Receives the first message in the queue and removes it from the queue. The <paramref name="lookupId" /> parameter must be set to 0.  
   
- <see langword="MessageLookupAction.Last" />: Receives the last message in the queue and removes it from the queue. The <c>lookupId</c> parameter must be set to 0.</param>
+ <see langword="MessageLookupAction.Last" />: Receives the last message in the queue and removes it from the queue. The <paramref name="lookupId" /> parameter must be set to 0.</param>
         <param name="lookupId">The <see cref="P:System.Messaging.Message.LookupId" /> of the message to receive, or 0. 0 is used when accessing the first or last message in the queue.</param>
         <param name="transactionType">One of the <see cref="T:System.Messaging.MessageQueueTransactionType" /> values, describing the type of transaction context to associate with the message.</param>
         <summary>Introduced in MSMQ 3.0. Receives a specific message from the queue, using the specified transaction context. The message can be specified by a lookup identifier or by its position at the front or end of the queue.</summary>
@@ -7711,7 +7711,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       </Parameters>
       <Docs>
         <param name="user">The individual, group, or computer that gets additional rights to the queue.</param>
-        <param name="rights">A <see cref="T:System.Messaging.MessageQueueAccessRights" /> that indicates the set of rights to the queue that Message Queuing assigns to the <c>user</c> passed in.</param>
+        <param name="rights">A <see cref="T:System.Messaging.MessageQueueAccessRights" /> that indicates the set of rights to the queue that Message Queuing assigns to the <paramref name="user" /> passed in.</param>
         <summary>Gives a computer, group, or user the specified access rights.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -7807,8 +7807,8 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
       </Parameters>
       <Docs>
         <param name="user">The individual, group, or computer that gets additional rights to the queue.</param>
-        <param name="rights">A <see cref="T:System.Messaging.MessageQueueAccessRights" /> that indicates the set of rights to the queue that Message Queuing assigns to the <c>user</c> passed in.</param>
-        <param name="entryType">A <see cref="T:System.Messaging.AccessControlEntryType" /> that specifies whether to grant, deny, or revoke the permissions specified by the <c>rights</c> parameter.</param>
+        <param name="rights">A <see cref="T:System.Messaging.MessageQueueAccessRights" /> that indicates the set of rights to the queue that Message Queuing assigns to the <paramref name="user" /> passed in.</param>
+        <param name="entryType">A <see cref="T:System.Messaging.AccessControlEntryType" /> that specifies whether to grant, deny, or revoke the permissions specified by the <paramref name="rights" /> parameter.</param>
         <summary>Gives a computer, group, or user the specified access rights, with the specified access control type (allow, deny, revoke, or set).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

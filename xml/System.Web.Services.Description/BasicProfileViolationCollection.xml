@@ -93,7 +93,7 @@
       </Parameters>
       <Docs>
         <param name="array">An array of type <see cref="T:System.Web.Services.Description.BasicProfileViolation" /> to which to copy the contents of the collection.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the elements from the collection to an array, starting at a specified index of the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -145,7 +145,7 @@
         <Parameter Name="violation" Type="System.Web.Services.Description.BasicProfileViolation" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index in the collection at which to insert the <c>violation</c>.</param>
+        <param name="index">The zero-based index in the collection at which to insert the <paramref name="violation" />.</param>
         <param name="violation">The <see cref="T:System.Web.Services.Description.BasicProfileViolation" /> to insert.</param>
         <summary>Inserts a <see cref="T:System.Web.Services.Description.BasicProfileViolation" /> to the collection at the specified location.</summary>
         <remarks>To be added.</remarks>

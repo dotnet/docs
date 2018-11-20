@@ -107,8 +107,8 @@
         <Parameter Name="keySelector" Type="System.Func&lt;TRow,TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TRow">The type of the row elements in <paramref name="source" />, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">An <see cref="T:System.Data.EnumerableRowCollection" /> containing the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <summary>Sorts the rows of a <see cref="T:System.Data.EnumerableRowCollection" /> in ascending order according to the specified key. This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
@@ -152,8 +152,8 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TRow">The type of the row elements in <paramref name="source" />, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">An <see cref="T:System.Data.EnumerableRowCollection" /> containing the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <param name="comparer">An <see cref="T:System.Collections.Generic.IComparer`1" /> to compare keys.</param>
@@ -206,8 +206,8 @@
         <Parameter Name="keySelector" Type="System.Func&lt;TRow,TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TRow">The type of the row elements in <paramref name="source" />, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">An <see cref="T:System.Data.EnumerableRowCollection" /> containing the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <summary>Sorts the rows of a <see cref="T:System.Data.EnumerableRowCollection" /> in descending order according to the specified key. This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
@@ -251,8 +251,8 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TRow">The type of the row elements in <paramref name="source" />, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">An <see cref="T:System.Data.EnumerableRowCollection" /> containing the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <param name="comparer">An <see cref="T:System.Collections.Generic.IComparer`1" /> to compare keys.</param>
@@ -296,7 +296,7 @@
         <Parameter Name="selector" Type="System.Func&lt;TRow,S&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TRow">The type of the row elements in <paramref name="source" />, typically <see cref="T:System.Data.DataRow" />.</typeparam>
         <typeparam name="S">The type that <c>TRow</c> will be transformed into.</typeparam>
         <param name="source">An <see cref="T:System.Data.EnumerableRowCollection`1" /> containing the <see cref="T:System.Data.DataRow" /> elements to invoke a transform function upon.</param>
         <param name="selector">A transform function to apply to each element.</param>
@@ -348,8 +348,8 @@
         <Parameter Name="keySelector" Type="System.Func&lt;TRow,TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TRow">The type of the row elements in <paramref name="source" />, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">An <see cref="T:System.Data.EnumerableRowCollection" /> containing the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <summary>Performs a secondary ordering of the rows of a <see cref="T:System.Data.EnumerableRowCollection" /> in ascending order according to the specified key. This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
@@ -395,8 +395,8 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TRow">The type of the row elements in <paramref name="source" />, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">An <see cref="T:System.Data.EnumerableRowCollection" /> containing the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <param name="comparer">An <see cref="T:System.Collections.Generic.IComparer`1" /> to compare keys.</param>
@@ -451,8 +451,8 @@
         <Parameter Name="keySelector" Type="System.Func&lt;TRow,TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TRow">The type of the row elements in <paramref name="source" />, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">An <see cref="T:System.Data.EnumerableRowCollection" /> containing the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <summary>Performs a secondary ordering of the rows of a <see cref="T:System.Data.EnumerableRowCollection" /> in descending order according to the specified key. This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
@@ -498,8 +498,8 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-        <typeparam name="TKey">The type of the key returned by <c>keySelector</c>.</typeparam>
+        <typeparam name="TRow">The type of the row elements in <paramref name="source" />, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TKey">The type of the key returned by <paramref name="keySelector" />.</typeparam>
         <param name="source">An <see cref="T:System.Data.EnumerableRowCollection" /> containing the <see cref="T:System.Data.DataRow" /> elements to be ordered.</param>
         <param name="keySelector">A function to extract a key from an element.</param>
         <param name="comparer">An <see cref="T:System.Collections.Generic.IComparer`1" /> to compare keys.</param>
@@ -544,7 +544,7 @@
         <Parameter Name="predicate" Type="System.Func&lt;TRow,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TRow">The type of the row elements in <c>source</c>, typically <see cref="T:System.Data.DataRow" />.</typeparam>
+        <typeparam name="TRow">The type of the row elements in <paramref name="source" />, typically <see cref="T:System.Data.DataRow" />.</typeparam>
         <param name="source">An <see cref="T:System.Data.EnumerableRowCollection" /> containing the <see cref="T:System.Data.DataRow" /> elements to filter.</param>
         <param name="predicate">A function to test each element for a condition.</param>
         <summary>Filters a sequence of rows based on the specified predicate. This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>

@@ -393,7 +393,7 @@
         <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="postDataKey">The key identifier for the control, used to index the <c>postCollection</c>.</param>
+        <param name="postDataKey">The key identifier for the control, used to index the <paramref name="postCollection" />.</param>
         <param name="postCollection">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that contains value information indexed by control identifiers.</param>
         <summary>Loads the posted content of the list control, if it is different from the last posting.</summary>
         <returns>

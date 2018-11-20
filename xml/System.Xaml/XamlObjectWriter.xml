@@ -277,7 +277,7 @@
       <Docs>
         <param name="eventSender">The object to report as the source to the handler.</param>
         <param name="member">The name of the property to set, which is passed to the handler as part of <see cref="T:System.Windows.Markup.XamlSetValueEventArgs" />.</param>
-        <param name="value">The value to provide for the property that is named by <c>property</c>. The value is passed to the handler as part of <see cref="T:System.Windows.Markup.XamlSetValueEventArgs" />.</param>
+        <param name="value">The value to provide for the property that is named by <paramref name="property" />. The value is passed to the handler as part of <see cref="T:System.Windows.Markup.XamlSetValueEventArgs" />.</param>
         <summary>Invokes any <see cref="P:System.Xaml.XamlObjectWriterSettings.XamlSetValueHandler" /> referenced method that is associated with <see cref="T:System.Xaml.XamlObjectWriterSettings" /> for this writer, as long as <paramref name="handled" /> in <see cref="T:System.Windows.Markup.XamlSetValueEventArgs" /> event data is not <see langword="true" />.</summary>
         <returns>A Boolean value that is set by any associated handler; otherwise, <see langword="false" />.</returns>
         <remarks>

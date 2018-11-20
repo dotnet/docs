@@ -565,7 +565,7 @@
         <param name="cell">The cell that contains the text or controls of the <see cref="T:System.Web.DynamicData.DynamicField" /> object.</param>
         <param name="rowState">One of the enumeration values that specifies the row state.</param>
         <param name="includeReadOnly">
-          <see langword="true" /> to include the values of read-only fields in <c>dictionary</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to include the values of read-only fields in <paramref name="dictionary" />; otherwise, <see langword="false" />.</param>
         <summary>Extracts the value of the data field from the current table cell and adds the value to the specified dictionary.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -701,9 +701,9 @@
       </Parameters>
       <Docs>
         <param name="cell">The object that contains the text or controls of the <see cref="T:System.Web.DynamicData.DynamicField" /> object.</param>
-        <param name="cellType">One of the enumeration values that specifies the function of the <c>cell</c> object.</param>
+        <param name="cellType">One of the enumeration values that specifies the function of the <paramref name="cell" /> object.</param>
         <param name="rowState">One of the enumeration values that specifies the row state.</param>
-        <param name="rowIndex">The index of the row that the <c>cell</c> object is contained in.</param>
+        <param name="rowIndex">The index of the row that the <paramref name="cell" /> object is contained in.</param>
         <summary>Adds text or controls to the specified cell.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.WebControls.DataControlField.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)" />

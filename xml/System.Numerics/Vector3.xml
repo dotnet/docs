@@ -889,7 +889,7 @@
       <Docs>
         <param name="value1">The first vector.</param>
         <param name="value2">The second vector.</param>
-        <param name="amount">A value between 0 and 1 that indicates the weight of <c>value2</c>.</param>
+        <param name="amount">A value between 0 and 1 that indicates the weight of <paramref name="value2" />.</param>
         <summary>Performs a linear interpolation between two vectors based on the given weighting.</summary>
         <returns>The interpolated vector.</returns>
         <remarks>To be added.</remarks>

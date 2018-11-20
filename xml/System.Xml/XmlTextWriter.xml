@@ -1231,8 +1231,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
       </Parameters>
       <Docs>
         <param name="name">The name of the DOCTYPE. This must be non-empty.</param>
-        <param name="pubid">If non-null it also writes PUBLIC "pubid" "sysid" where <c>pubid</c> and <c>sysid</c> are replaced with the value of the given arguments.</param>
-        <param name="sysid">If <c>pubid</c> is null and <c>sysid</c> is non-null it writes SYSTEM "sysid" where <c>sysid</c> is replaced with the value of this argument.</param>
+        <param name="pubid">If non-null it also writes PUBLIC "pubid" "sysid" where <paramref name="pubid" /> and <paramref name="sysid" /> are replaced with the value of the given arguments.</param>
+        <param name="sysid">If <paramref name="pubid" /> is null and <paramref name="sysid" /> is non-null it writes SYSTEM "sysid" where <paramref name="sysid" /> is replaced with the value of this argument.</param>
         <param name="subset">If non-null it writes [subset] where subset is replaced with the value of this argument.</param>
         <summary>Writes the DOCTYPE declaration with the specified name and optional attributes.</summary>
         <remarks>

@@ -102,7 +102,7 @@
       </Parameters>
       <Docs>
         <param name="bytesUnknown">An input byte sequence. This parameter is ignored unless an exception is thrown.</param>
-        <param name="index">The index position of the byte in <c>bytesUnknown</c>. This parameter is ignored in this operation.</param>
+        <param name="index">The index position of the byte in <paramref name="bytesUnknown" />. This parameter is ignored in this operation.</param>
         <summary>Prepares the replacement fallback buffer to use the current replacement string.</summary>
         <returns>
           <see langword="true" /> if the replacement string is not empty; <see langword="false" /> if the replacement string is empty.</returns>

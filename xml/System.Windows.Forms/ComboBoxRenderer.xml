@@ -180,7 +180,7 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the text box.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the text box.</param>
         <param name="comboBoxText">The <see cref="T:System.String" /> to draw in the text box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>comboBoxText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="comboBoxText" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ComboBoxState" /> values that specifies the visual state of the text box.</param>
         <summary>Draws a text box in the specified state and bounds, with the specified text.</summary>
         <remarks>
@@ -234,8 +234,8 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the text box.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the text box.</param>
         <param name="comboBoxText">The <see cref="T:System.String" /> to draw in the text box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>comboBoxText</c>.</param>
-        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds in which to draw <c>comboBoxText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="comboBoxText" />.</param>
+        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds in which to draw <paramref name="comboBoxText" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ComboBoxState" /> values that specifies the visual state of the text box.</param>
         <summary>Draws a text box in the specified state and bounds, with the specified text and text bounds.</summary>
         <remarks>
@@ -293,7 +293,7 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the text box.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the text box.</param>
         <param name="comboBoxText">The <see cref="T:System.String" /> to draw in the text box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>comboBoxText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="comboBoxText" />.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ComboBoxState" /> values that specifies the visual state of the text box.</param>
         <summary>Draws a text box in the specified state and bounds, with the specified text and text formatting.</summary>
@@ -344,8 +344,8 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the text box.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the text box.</param>
         <param name="comboBoxText">The <see cref="T:System.String" /> to draw in the text box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>comboBoxText</c>.</param>
-        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds in which to draw <c>comboBoxText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="comboBoxText" />.</param>
+        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds in which to draw <paramref name="comboBoxText" />.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ComboBoxState" /> values that specifies the visual state of the text box.</param>
         <summary>Draws a text box in the specified state and bounds, with the specified text, text formatting, and text bounds.</summary>

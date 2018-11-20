@@ -118,7 +118,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.Windows.Forms.Control" /> array that is the destination of the elements copied from the current collection. The array must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the contents of the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewControlCollection" /> into a <see cref="T:System.Windows.Forms.Control" /> array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -157,7 +157,7 @@
         <Parameter Name="value" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert <c>value</c>.</param>
+        <param name="index">The zero-based index at which to insert <paramref name="value" />.</param>
         <param name="value">The <see cref="T:System.Windows.Forms.Control" /> to insert into the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewControlCollection" />.</param>
         <summary>Inserts the specified <see cref="T:System.Windows.Forms.Control" /> into the <see cref="T:System.Windows.Forms.DataGridView.DataGridViewControlCollection" /> at the specified index.</summary>
         <remarks>To be added.</remarks>

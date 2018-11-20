@@ -147,7 +147,7 @@
       </Parameters>
       <Docs>
         <param name="response">A <see cref="T:System.Net.WebResponse" /> object  containing the output message for an operation.</param>
-        <param name="responseStream">A <see cref="T:System.IO.Stream" /> whose content is the body of the HTTP response represented by the <c>response</c> parameter.</param>
+        <param name="responseStream">A <see cref="T:System.IO.Stream" /> whose content is the body of the HTTP response represented by the <paramref name="response" /> parameter.</param>
         <summary>Returns <see langword="null" /> instead of deserializing the HTTP response stream into a Web method return value.</summary>
         <returns>
           <see langword="null" />.</returns>

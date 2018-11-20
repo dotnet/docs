@@ -127,7 +127,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array into which the elements from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnectionCollection" /> are copied. The array must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the elements of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnectionCollection" /> collection to an array, starting at a particular array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -136,7 +136,7 @@
       </Parameters>
       <Docs>
         <param name="array">An <see cref="T:System.ComponentModel.IComponent" /> array to copy the objects in the collection to.</param>
-        <param name="index">The index of the <c>array</c> at which copying to should begin.</param>
+        <param name="index">The index of the <paramref name="array" /> at which copying to should begin.</param>
         <summary>Copies the entire collection to an array, starting writing at the specified array index.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -158,7 +158,7 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the <see cref="T:System.Activities.LocationReference" /> to retrieve.</param>
-        <param name="result">When this method returns <see langword="true" />, <c>result</c> contains the <see cref="T:System.Activities.LocationReference" /> with the specified name; otherwise, <see langword="null" />. This parameter is passed uninitialized.</param>
+        <param name="result">When this method returns <see langword="true" />, <paramref name="result" /> contains the <see cref="T:System.Activities.LocationReference" /> with the specified name; otherwise, <see langword="null" />. This parameter is passed uninitialized.</param>
         <summary>When overridden in a derived class, attempts to get the specified <see cref="T:System.Activities.LocationReference" />.</summary>
         <returns>
           <see langword="true" /> if a <see cref="T:System.Activities.LocationReference" /> with the specified name is present; otherwise, <see langword="false" />.</returns>

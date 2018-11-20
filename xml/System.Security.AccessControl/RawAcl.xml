@@ -100,7 +100,7 @@
       </Parameters>
       <Docs>
         <param name="binaryForm">An array of byte values that represent an Access Control List (ACL).</param>
-        <param name="offset">The offset in the <c>binaryForm</c> parameter at which to begin unmarshaling data.</param>
+        <param name="offset">The offset in the <paramref name="binaryForm" /> parameter at which to begin unmarshaling data.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.RawAcl" /> class from the specified binary form.</summary>
         <remarks>To be added.</remarks>
       </Docs>

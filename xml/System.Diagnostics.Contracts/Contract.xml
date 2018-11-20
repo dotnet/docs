@@ -676,8 +676,8 @@
         <Parameter Name="predicate" Type="System.Predicate&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="fromInclusive">The first integer to pass to <c>predicate</c>.</param>
-        <param name="toExclusive">One more than the last integer to pass to <c>predicate</c>.</param>
+        <param name="fromInclusive">The first integer to pass to <paramref name="predicate" />.</param>
+        <param name="toExclusive">One more than the last integer to pass to <paramref name="predicate" />.</param>
         <param name="predicate">The function to evaluate for any value of the integer in the specified range.</param>
         <summary>Determines whether a specified test is true for any integer within a range of integers.</summary>
         <returns>
@@ -734,9 +734,9 @@
         <Parameter Name="predicate" Type="System.Predicate&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type that is contained in <c>collection</c>.</typeparam>
-        <param name="collection">The collection from which elements of type <c>T</c> will be drawn to pass to <c>predicate</c>.</param>
-        <param name="predicate">The function to evaluate for an element in <c>collection</c>.</param>
+        <typeparam name="T">The type that is contained in <paramref name="collection" />.</typeparam>
+        <param name="collection">The collection from which elements of type <c>T</c> will be drawn to pass to <paramref name="predicate" />.</param>
+        <param name="predicate">The function to evaluate for an element in <paramref name="collection" />.</param>
         <summary>Determines whether an element within a collection of elements exists within a function.</summary>
         <returns>
           <see langword="true" /> if and only if <paramref name="predicate" /> returns <see langword="true" /> for any element of type <paramref name="T" /> in <paramref name="collection" />.</returns>
@@ -782,8 +782,8 @@
         <Parameter Name="predicate" Type="System.Predicate&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="fromInclusive">The first integer to pass to <c>predicate</c>.</param>
-        <param name="toExclusive">One more than the last integer to pass to <c>predicate</c>.</param>
+        <param name="fromInclusive">The first integer to pass to <paramref name="predicate" />.</param>
+        <param name="toExclusive">One more than the last integer to pass to <paramref name="predicate" />.</param>
         <param name="predicate">The function to evaluate for the existence of the integers in the specified range.</param>
         <summary>Determines whether a particular condition is valid for all integers in a specified range.</summary>
         <returns>
@@ -849,9 +849,9 @@
         <Parameter Name="predicate" Type="System.Predicate&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type that is contained in <c>collection</c>.</typeparam>
-        <param name="collection">The collection from which elements of type <c>T</c> will be drawn to pass to <c>predicate</c>.</param>
-        <param name="predicate">The function to evaluate for the existence of all the elements in <c>collection</c>.</param>
+        <typeparam name="T">The type that is contained in <paramref name="collection" />.</typeparam>
+        <param name="collection">The collection from which elements of type <c>T</c> will be drawn to pass to <paramref name="predicate" />.</param>
+        <param name="predicate">The function to evaluate for the existence of all the elements in <paramref name="collection" />.</param>
         <summary>Determines whether all the elements in a collection exist within a function.</summary>
         <returns>
           <see langword="true" /> if and only if <paramref name="predicate" /> returns <see langword="true" /> for all elements of type <paramref name="T" /> in <paramref name="collection" />.</returns>

@@ -363,7 +363,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that is the location in memory to store data read from the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
-        <param name="offset">The location in <c>buffer</c> to begin storing the data.</param>
+        <param name="offset">The location in <paramref name="buffer" /> to begin storing the data.</param>
         <param name="size">The number of bytes to read from the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
         <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that is executed when <see cref="M:System.Net.Sockets.NetworkStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /> completes.</param>
         <param name="state">An object that contains any additional user-defined data.</param>
@@ -460,7 +460,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that contains the data to write to the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
-        <param name="offset">The location in <c>buffer</c> to begin sending the data.</param>
+        <param name="offset">The location in <paramref name="buffer" /> to begin sending the data.</param>
         <param name="size">The number of bytes to write to the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
         <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that is executed when <see cref="M:System.Net.Sockets.NetworkStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /> completes.</param>
         <param name="state">An object that contains any additional user-defined data.</param>
@@ -1269,7 +1269,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that is the location in memory to store data read from the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
-        <param name="offset">The location in <c>buffer</c> to begin storing the data to.</param>
+        <param name="offset">The location in <paramref name="buffer" /> to begin storing the data to.</param>
         <param name="size">The number of bytes to read from the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
         <summary>Reads data from the <see cref="T:System.Net.Sockets.NetworkStream" />.</summary>
         <returns>The number of bytes read from the <see cref="T:System.Net.Sockets.NetworkStream" />, or 0 if the socket is closed.</returns>
@@ -1678,7 +1678,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that contains the data to write to the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
-        <param name="offset">The location in <c>buffer</c> from which to start writing data.</param>
+        <param name="offset">The location in <paramref name="buffer" /> from which to start writing data.</param>
         <param name="size">The number of bytes to write to the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
         <summary>Writes data to the <see cref="T:System.Net.Sockets.NetworkStream" />.</summary>
         <remarks>

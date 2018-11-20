@@ -697,7 +697,7 @@
       </Parameters>
       <Docs>
         <param name="style">The style reference.</param>
-        <param name="breakAfter">If <c>breakAfter</c> is true, a break is added after the closing style element. The first form of the method assumes <c>breakAfter</c> to be <see langword="true" />.</param>
+        <param name="breakAfter">If <paramref name="breakAfter" /> is true, a break is added after the closing style element. The first form of the method assumes <paramref name="breakAfter" /> to be <see langword="true" />.</param>
         <summary>Ends a block by using the formatting from a given style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.ExitLayout(System.Web.UI.MobileControls.Style,System.Boolean)" />

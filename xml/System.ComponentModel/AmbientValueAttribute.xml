@@ -430,7 +430,7 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">The <see cref="T:System.Type" /> of the <c>value</c> parameter.</param>
+        <param name="type">The <see cref="T:System.Type" /> of the <paramref name="value" /> parameter.</param>
         <param name="value">The value for this attribute.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.AmbientValueAttribute" /> class, given the value and its type.</summary>
         <remarks>

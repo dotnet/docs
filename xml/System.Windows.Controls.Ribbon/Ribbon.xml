@@ -1465,7 +1465,7 @@ xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonContro
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">The element used to display the <c>item</c>.</param>
+        <param name="element">The element used to display the <paramref name="item" />.</param>
         <param name="item">The item to display from the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection.</param>
         <summary>Prepares the specified element to display the specified item.</summary>
         <remarks>To be added.</remarks>

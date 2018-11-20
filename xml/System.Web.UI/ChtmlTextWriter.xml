@@ -171,7 +171,7 @@
       </Parameters>
       <Docs>
         <param name="elementName">The cHTML element to add the attribute to.</param>
-        <param name="attributeName">The attribute to add to <c>elementName</c>.</param>
+        <param name="attributeName">The attribute to add to <paramref name="elementName" />.</param>
         <summary>Adds an attribute to a cHTML element of the <see cref="T:System.Web.UI.ChtmlTextWriter" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -252,8 +252,8 @@
       </Parameters>
       <Docs>
         <param name="name">The cHTML attribute to render.</param>
-        <param name="value">The value assigned to <c>name</c>.</param>
-        <param name="key">The <see cref="T:System.Web.UI.HtmlTextWriterAttribute" /> associated with <c>name</c>.</param>
+        <param name="value">The value assigned to <paramref name="name" />.</param>
+        <param name="key">The <see cref="T:System.Web.UI.HtmlTextWriterAttribute" /> associated with <paramref name="name" />.</param>
         <summary>Determines whether the specified cHTML attribute and its value are rendered to the requesting page. You can override the <see cref="M:System.Web.UI.ChtmlTextWriter.OnAttributeRender(System.String,System.String,System.Web.UI.HtmlTextWriterAttribute)" /> method in classes that derive from the <see cref="T:System.Web.UI.ChtmlTextWriter" /> class to filter out attributes that you do not want to render on devices that support cHTML.</summary>
         <returns>
           <see langword="true" /> to write the attribute and its value to the <see cref="T:System.Web.UI.ChtmlTextWriter" /> output stream; otherwise, <see langword="false" />.</returns>
@@ -301,8 +301,8 @@
       </Parameters>
       <Docs>
         <param name="name">A string containing the name of the style attribute to render.</param>
-        <param name="value">A string containing the value that is assigned to <c>name</c>.</param>
-        <param name="key">The <see cref="T:System.Web.UI.HtmlTextWriterStyle" /> associated with <c>name</c>.</param>
+        <param name="value">A string containing the value that is assigned to <paramref name="name" />.</param>
+        <param name="key">The <see cref="T:System.Web.UI.HtmlTextWriterStyle" /> associated with <paramref name="name" />.</param>
         <summary>Determines whether the specified cHTML markup style attribute and its value can be rendered to the current markup element.</summary>
         <returns>
           <see langword="true" /> if the style can be rendered; otherwise, <see langword="false" />.</returns>
@@ -340,7 +340,7 @@
       </Parameters>
       <Docs>
         <param name="name">A string containing the name of the cHTML element to render.</param>
-        <param name="key">The <see cref="T:System.Web.UI.HtmlTextWriterTag" /> associated with <c>name</c>.</param>
+        <param name="key">The <see cref="T:System.Web.UI.HtmlTextWriterTag" /> associated with <paramref name="name" />.</param>
         <summary>Determines whether the specified cHTML markup element is rendered to the requesting page.</summary>
         <returns>
           <see langword="true" /> if the specified cHTML markup element can be rendered; otherwise, <see langword="false" />.</returns>
@@ -419,7 +419,7 @@
       </Parameters>
       <Docs>
         <param name="elementName">The cHTML element to remove an attribute from.</param>
-        <param name="attributeName">The attribute to remove from <c>elementName</c>.</param>
+        <param name="attributeName">The attribute to remove from <paramref name="elementName" />.</param>
         <summary>Removes an attribute of a cHTML element of the <see cref="T:System.Web.UI.ChtmlTextWriter" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

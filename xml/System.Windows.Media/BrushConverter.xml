@@ -165,7 +165,7 @@
         <param name="context">The conversion context.</param>
         <param name="culture">The current culture information.</param>
         <param name="value">The <see cref="T:System.Windows.Media.Brush" /> to convert.</param>
-        <param name="destinationType">The destination type that the <c>value</c> object is converted to.</param>
+        <param name="destinationType">The destination type that the <paramref name="value" /> object is converted to.</param>
         <summary>Converts a <see cref="T:System.Windows.Media.Brush" /> object to a specified type, using the specified context and culture information.</summary>
         <returns>An object that represents the converted <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>

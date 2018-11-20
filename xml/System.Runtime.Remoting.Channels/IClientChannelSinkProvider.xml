@@ -74,7 +74,7 @@
       </Parameters>
       <Docs>
         <param name="channel">Channel for which the current sink chain is being constructed.</param>
-        <param name="url">The URL of the object to connect to. This parameter can be <see langword="null" /> if the connection is based entirely on the information contained in the <c>remoteChannelData</c> parameter.</param>
+        <param name="url">The URL of the object to connect to. This parameter can be <see langword="null" /> if the connection is based entirely on the information contained in the <paramref name="remoteChannelData" /> parameter.</param>
         <param name="remoteChannelData">A channel data object that describes a channel on the remote server.</param>
         <summary>Creates a sink chain.</summary>
         <returns>The first sink of the newly formed channel sink chain, or <see langword="null" />, which indicates that this provider will not or cannot provide a connection for this endpoint.</returns>

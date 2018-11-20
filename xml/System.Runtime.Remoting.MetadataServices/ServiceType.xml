@@ -77,7 +77,7 @@
       </Parameters>
       <Docs>
         <param name="type">The object <see cref="T:System.Type" /> that is passed to the WSDL generator.</param>
-        <param name="url">The well-known endpoint that can process messages that are sent to a method on the object type that is specified in the <c>type</c> parameter.</param>
+        <param name="url">The well-known endpoint that can process messages that are sent to a method on the object type that is specified in the <paramref name="type" /> parameter.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.MetadataServices.ServiceType" /> class with the URL and <see cref="T:System.Type" /> of an object that is passed to the Web Services Description Language (WSDL) generator.</summary>
         <remarks>To be added.</remarks>
       </Docs>

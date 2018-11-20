@@ -143,7 +143,7 @@
       </Parameters>
       <Docs>
         <param name="fileName">The path to the remote configuration file to be accessed.</param>
-        <param name="getReadTimeOnly">A Boolean value that specifies whether only the <c>readTime</c> is returned.</param>
+        <param name="getReadTimeOnly">A Boolean value that specifies whether only the <paramref name="readTime" /> is returned.</param>
         <param name="readTime">The time when the file was last accessed.</param>
         <summary>Used internally to support remote access to configuration data.</summary>
         <returns>An <see langword="array" /> of 8-bit unsigned integers (bytes) that contains the configuration data.</returns>

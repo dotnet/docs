@@ -180,7 +180,7 @@
       </Parameters>
       <Docs>
         <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
-        <param name="state">A user-defined object that contains information about the operation. This object is passed to the <c>callback</c> delegate when the operation completes.</param>
+        <param name="state">A user-defined object that contains information about the operation. This object is passed to the <paramref name="callback" /> delegate when the operation completes.</param>
         <summary>Begins asynchronously opening a request's content stream for writing.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> instance that indicates the status of the operation.</returns>
         <remarks>
@@ -252,7 +252,7 @@
       </Parameters>
       <Docs>
         <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
-        <param name="state">A user-defined object that contains information about the operation. This object is passed to the <c>callback</c> delegate when the operation completes.</param>
+        <param name="state">A user-defined object that contains information about the operation. This object is passed to the <paramref name="callback" /> delegate when the operation completes.</param>
         <summary>Begins sending a request and receiving a response from an FTP server asynchronously.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> instance that indicates the status of the operation.</returns>
         <remarks>

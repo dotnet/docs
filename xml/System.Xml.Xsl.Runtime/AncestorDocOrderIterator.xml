@@ -61,7 +61,7 @@
         <param name="context">The node from which you start traversing ancestors.</param>
         <param name="filter">Enables you to filter nodes based on the name.</param>
         <param name="orSelf">
-          <see langword="true" /> if you want the <c>context</c> node to be returned as a part of the iteration, instead of being filtered out.</param>
+          <see langword="true" /> if you want the <paramref name="context" /> node to be returned as a part of the iteration, instead of being filtered out.</param>
         <summary>Initializes the <see cref="T:System.Xml.Xsl.Runtime.AncestorDocOrderIterator" />.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

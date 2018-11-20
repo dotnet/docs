@@ -709,7 +709,7 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the specified <see langword="Tuple" /> element. <c>index</c> can range from 0 to 2.</param>
+        <param name="index">The index of the specified <see langword="Tuple" /> element. <paramref name="index" /> can range from 0 to 2.</param>
         <summary>Gets the value of the specified <see langword="Tuple" /> element.</summary>
         <value>The value of the <see langword="Tuple" /> element at the specified position.</value>
         <remarks>

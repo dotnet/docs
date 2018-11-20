@@ -241,7 +241,7 @@
       <Docs>
         <param name="string1">The first string to compare.</param>
         <param name="string2">The second string to compare.</param>
-        <param name="options">A value that defines how <c>string1</c> and <c>string2</c> should be compared. <c>options</c> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />, and <see cref="F:System.Globalization.CompareOptions.StringSort" />.</param>
+        <param name="options">A value that defines how <paramref name="string1" /> and <paramref name="string2" /> should be compared. <paramref name="options" /> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />, and <see cref="F:System.Globalization.CompareOptions.StringSort" />.</param>
         <summary>Compares two strings using the specified <see cref="T:System.Globalization.CompareOptions" /> value.</summary>
         <returns>A 32-bit signed integer indicating the lexical relationship between the two comparands.  
   
@@ -336,9 +336,9 @@
       </Parameters>
       <Docs>
         <param name="string1">The first string to compare.</param>
-        <param name="offset1">The zero-based index of the character in <c>string1</c> at which to start comparing.</param>
+        <param name="offset1">The zero-based index of the character in <paramref name="string1" /> at which to start comparing.</param>
         <param name="string2">The second string to compare.</param>
-        <param name="offset2">The zero-based index of the character in <c>string2</c> at which to start comparing.</param>
+        <param name="offset2">The zero-based index of the character in <paramref name="string2" /> at which to start comparing.</param>
         <summary>Compares the end section of a string with the end section of another string.</summary>
         <returns>A 32-bit signed integer indicating the lexical relationship between the two comparands.  
   
@@ -441,10 +441,10 @@
       </Parameters>
       <Docs>
         <param name="string1">The first string to compare.</param>
-        <param name="offset1">The zero-based index of the character in <c>string1</c> at which to start comparing.</param>
+        <param name="offset1">The zero-based index of the character in <paramref name="string1" /> at which to start comparing.</param>
         <param name="string2">The second string to compare.</param>
-        <param name="offset2">The zero-based index of the character in <c>string2</c> at which to start comparing.</param>
-        <param name="options">A value that defines how <c>string1</c> and <c>string2</c> should be compared. <c>options</c> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />, and <see cref="F:System.Globalization.CompareOptions.StringSort" />.</param>
+        <param name="offset2">The zero-based index of the character in <paramref name="string2" /> at which to start comparing.</param>
+        <param name="options">A value that defines how <paramref name="string1" /> and <paramref name="string2" /> should be compared. <paramref name="options" /> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />, and <see cref="F:System.Globalization.CompareOptions.StringSort" />.</param>
         <summary>Compares the end section of a string with the end section of another string using the specified <see cref="T:System.Globalization.CompareOptions" /> value.</summary>
         <returns>A 32-bit signed integer indicating the lexical relationship between the two comparands.  
   
@@ -545,11 +545,11 @@
       </Parameters>
       <Docs>
         <param name="string1">The first string to compare.</param>
-        <param name="offset1">The zero-based index of the character in <c>string1</c> at which to start comparing.</param>
-        <param name="length1">The number of consecutive characters in <c>string1</c> to compare.</param>
+        <param name="offset1">The zero-based index of the character in <paramref name="string1" /> at which to start comparing.</param>
+        <param name="length1">The number of consecutive characters in <paramref name="string1" /> to compare.</param>
         <param name="string2">The second string to compare.</param>
-        <param name="offset2">The zero-based index of the character in <c>string2</c> at which to start comparing.</param>
-        <param name="length2">The number of consecutive characters in <c>string2</c> to compare.</param>
+        <param name="offset2">The zero-based index of the character in <paramref name="string2" /> at which to start comparing.</param>
+        <param name="length2">The number of consecutive characters in <paramref name="string2" /> to compare.</param>
         <summary>Compares a section of one string with a section of another string.</summary>
         <returns>A 32-bit signed integer indicating the lexical relationship between the two comparands.  
   
@@ -667,12 +667,12 @@
       </Parameters>
       <Docs>
         <param name="string1">The first string to compare.</param>
-        <param name="offset1">The zero-based index of the character in <c>string1</c> at which to start comparing.</param>
-        <param name="length1">The number of consecutive characters in <c>string1</c> to compare.</param>
+        <param name="offset1">The zero-based index of the character in <paramref name="string1" /> at which to start comparing.</param>
+        <param name="length1">The number of consecutive characters in <paramref name="string1" /> to compare.</param>
         <param name="string2">The second string to compare.</param>
-        <param name="offset2">The zero-based index of the character in <c>string2</c> at which to start comparing.</param>
-        <param name="length2">The number of consecutive characters in <c>string2</c> to compare.</param>
-        <param name="options">A value that defines how <c>string1</c> and <c>string2</c> should be compared. <c>options</c> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />, and <see cref="F:System.Globalization.CompareOptions.StringSort" />.</param>
+        <param name="offset2">The zero-based index of the character in <paramref name="string2" /> at which to start comparing.</param>
+        <param name="length2">The number of consecutive characters in <paramref name="string2" /> to compare.</param>
+        <param name="options">A value that defines how <paramref name="string1" /> and <paramref name="string2" /> should be compared. <paramref name="options" /> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />, and <see cref="F:System.Globalization.CompareOptions.StringSort" />.</param>
         <summary>Compares a section of one string with a section of another string using the specified <see cref="T:System.Globalization.CompareOptions" /> value.</summary>
         <returns>A 32-bit signed integer indicating the lexical relationship between the two comparands.  
   
@@ -1329,7 +1329,7 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The character to locate within <c>source</c>.</param>
+        <param name="value">The character to locate within <paramref name="source" />.</param>
         <summary>Searches for the specified character and returns the zero-based index of the first occurrence within the entire source string.</summary>
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within <paramref name="source" />; otherwise, -1. Returns 0 (zero) if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
@@ -1404,7 +1404,7 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The string to locate within <c>source</c>.</param>
+        <param name="value">The string to locate within <paramref name="source" />.</param>
         <summary>Searches for the specified substring and returns the zero-based index of the first occurrence within the entire source string.</summary>
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within <paramref name="source" />; otherwise, -1. Returns 0 (zero) if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
@@ -1483,8 +1483,8 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The character to locate within <c>source</c>.</param>
-        <param name="options">A value that defines how the strings should be compared. <c>options</c> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
+        <param name="value">The character to locate within <paramref name="source" />.</param>
+        <param name="options">A value that defines how the strings should be compared. <paramref name="options" /> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
         <summary>Searches for the specified character and returns the zero-based index of the first occurrence within the entire source string using the specified <see cref="T:System.Globalization.CompareOptions" /> value.</summary>
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within <paramref name="source" />, using the specified comparison options; otherwise, -1. Returns 0 (zero) if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
@@ -1562,7 +1562,7 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The character to locate within <c>source</c>.</param>
+        <param name="value">The character to locate within <paramref name="source" />.</param>
         <param name="startIndex">The zero-based starting index of the search.</param>
         <summary>Searches for the specified character and returns the zero-based index of the first occurrence within the section of the source string that extends from the specified index to the end of the string.</summary>
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that extends from <paramref name="startIndex" /> to the end of <paramref name="source" />; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
@@ -1640,8 +1640,8 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The string to locate within <c>source</c>.</param>
-        <param name="options">A value that defines how <c>source</c> and <c>value</c> should be compared. <c>options</c> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
+        <param name="value">The string to locate within <paramref name="source" />.</param>
+        <param name="options">A value that defines how <paramref name="source" /> and <paramref name="value" /> should be compared. <paramref name="options" /> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
         <summary>Searches for the specified substring and returns the zero-based index of the first occurrence within the entire source string using the specified <see cref="T:System.Globalization.CompareOptions" /> value.</summary>
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within <paramref name="source" />, using the specified comparison options; otherwise, -1. Returns 0 (zero) if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
@@ -1723,7 +1723,7 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The string to locate within <c>source</c>.</param>
+        <param name="value">The string to locate within <paramref name="source" />.</param>
         <param name="startIndex">The zero-based starting index of the search.</param>
         <summary>Searches for the specified substring and returns the zero-based index of the first occurrence within the section of the source string that extends from the specified index to the end of the string.</summary>
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that extends from <paramref name="startIndex" /> to the end of <paramref name="source" />; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
@@ -1808,9 +1808,9 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The character to locate within <c>source</c>.</param>
+        <param name="value">The character to locate within <paramref name="source" />.</param>
         <param name="startIndex">The zero-based starting index of the search.</param>
-        <param name="options">A value that defines how <c>source</c> and <c>value</c> should be compared. <c>options</c> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
+        <param name="options">A value that defines how <paramref name="source" /> and <paramref name="value" /> should be compared. <paramref name="options" /> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
         <summary>Searches for the specified character and returns the zero-based index of the first occurrence within the section of the source string that extends from the specified index to the end of the string using the specified <see cref="T:System.Globalization.CompareOptions" /> value.</summary>
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that extends from <paramref name="startIndex" /> to the end of <paramref name="source" />, using the specified comparison options; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
@@ -1893,7 +1893,7 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The character to locate within <c>source</c>.</param>
+        <param name="value">The character to locate within <paramref name="source" />.</param>
         <param name="startIndex">The zero-based starting index of the search.</param>
         <param name="count">The number of elements in the section to search.</param>
         <summary>Searches for the specified character and returns the zero-based index of the first occurrence within the section of the source string that starts at the specified index and contains the specified number of elements.</summary>
@@ -1981,9 +1981,9 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The string to locate within <c>source</c>.</param>
+        <param name="value">The string to locate within <paramref name="source" />.</param>
         <param name="startIndex">The zero-based starting index of the search.</param>
-        <param name="options">A value that defines how <c>source</c> and <c>value</c> should be compared. <c>options</c> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
+        <param name="options">A value that defines how <paramref name="source" /> and <paramref name="value" /> should be compared. <paramref name="options" /> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
         <summary>Searches for the specified substring and returns the zero-based index of the first occurrence within the section of the source string that extends from the specified index to the end of the string using the specified <see cref="T:System.Globalization.CompareOptions" /> value.</summary>
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that extends from <paramref name="startIndex" /> to the end of <paramref name="source" />, using the specified comparison options; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
@@ -2072,7 +2072,7 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The string to locate within <c>source</c>.</param>
+        <param name="value">The string to locate within <paramref name="source" />.</param>
         <param name="startIndex">The zero-based starting index of the search.</param>
         <param name="count">The number of elements in the section to search.</param>
         <summary>Searches for the specified substring and returns the zero-based index of the first occurrence within the section of the source string that starts at the specified index and contains the specified number of elements.</summary>
@@ -2172,10 +2172,10 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The character to locate within <c>source</c>.</param>
+        <param name="value">The character to locate within <paramref name="source" />.</param>
         <param name="startIndex">The zero-based starting index of the search.</param>
         <param name="count">The number of elements in the section to search.</param>
-        <param name="options">A value that defines how <c>source</c> and <c>value</c> should be compared. <c>options</c> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
+        <param name="options">A value that defines how <paramref name="source" /> and <paramref name="value" /> should be compared. <paramref name="options" /> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
         <summary>Searches for the specified character and returns the zero-based index of the first occurrence within the section of the source string that starts at the specified index and contains the specified number of elements using the specified <see cref="T:System.Globalization.CompareOptions" /> value.</summary>
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that starts at <paramref name="startIndex" /> and contains the number of elements specified by <paramref name="count" />, using the specified comparison options; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
@@ -2272,10 +2272,10 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The string to locate within <c>source</c>.</param>
+        <param name="value">The string to locate within <paramref name="source" />.</param>
         <param name="startIndex">The zero-based starting index of the search.</param>
         <param name="count">The number of elements in the section to search.</param>
-        <param name="options">A value that defines how <c>source</c> and <c>value</c> should be compared. <c>options</c> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
+        <param name="options">A value that defines how <paramref name="source" /> and <paramref name="value" /> should be compared. <paramref name="options" /> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
         <summary>Searches for the specified substring and returns the zero-based index of the first occurrence within the section of the source string that starts at the specified index and contains the specified number of elements using the specified <see cref="T:System.Globalization.CompareOptions" /> value.</summary>
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that starts at <paramref name="startIndex" /> and contains the number of elements specified by <paramref name="count" />, using the specified comparison options; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
@@ -2380,7 +2380,7 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search in.</param>
-        <param name="prefix">The string to compare with the beginning of <c>source</c>.</param>
+        <param name="prefix">The string to compare with the beginning of <paramref name="source" />.</param>
         <summary>Determines whether the specified source string starts with the specified prefix.</summary>
         <returns>
           <see langword="true" /> if the length of <paramref name="prefix" /> is less than or equal to the length of <paramref name="source" /> and <paramref name="source" /> starts with <paramref name="prefix" />; otherwise, <see langword="false" />.</returns>
@@ -2457,8 +2457,8 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search in.</param>
-        <param name="prefix">The string to compare with the beginning of <c>source</c>.</param>
-        <param name="options">A value that defines how <c>source</c> and <c>prefix</c> should be compared. <c>options</c> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
+        <param name="prefix">The string to compare with the beginning of <paramref name="source" />.</param>
+        <param name="options">A value that defines how <paramref name="source" /> and <paramref name="prefix" /> should be compared. <paramref name="options" /> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
         <summary>Determines whether the specified source string starts with the specified prefix using the specified <see cref="T:System.Globalization.CompareOptions" /> value.</summary>
         <returns>
           <see langword="true" /> if the length of <paramref name="prefix" /> is less than or equal to the length of <paramref name="source" /> and <paramref name="source" /> starts with <paramref name="prefix" />; otherwise, <see langword="false" />.</returns>
@@ -2663,7 +2663,7 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search in.</param>
-        <param name="suffix">The string to compare with the end of <c>source</c>.</param>
+        <param name="suffix">The string to compare with the end of <paramref name="source" />.</param>
         <summary>Determines whether the specified source string ends with the specified suffix.</summary>
         <returns>
           <see langword="true" /> if the length of <paramref name="suffix" /> is less than or equal to the length of <paramref name="source" /> and <paramref name="source" /> ends with <paramref name="suffix" />; otherwise, <see langword="false" />.</returns>
@@ -2740,8 +2740,8 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search in.</param>
-        <param name="suffix">The string to compare with the end of <c>source</c>.</param>
-        <param name="options">A value that defines how <c>source</c> and <c>suffix</c> should be compared. <c>options</c> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" /> used by itself, or the bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
+        <param name="suffix">The string to compare with the end of <paramref name="source" />.</param>
+        <param name="options">A value that defines how <paramref name="source" /> and <paramref name="suffix" /> should be compared. <paramref name="options" /> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" /> used by itself, or the bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
         <summary>Determines whether the specified source string ends with the specified suffix using the specified <see cref="T:System.Globalization.CompareOptions" /> value.</summary>
         <returns>
           <see langword="true" /> if the length of <paramref name="suffix" /> is less than or equal to the length of <paramref name="source" /> and <paramref name="source" /> ends with <paramref name="suffix" />; otherwise, <see langword="false" />.</returns>
@@ -2827,7 +2827,7 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The character to locate within <c>source</c>.</param>
+        <param name="value">The character to locate within <paramref name="source" />.</param>
         <summary>Searches for the specified character and returns the zero-based index of the last occurrence within the entire source string.</summary>
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within <paramref name="source" />; otherwise, -1.</returns>
         <remarks>
@@ -2906,7 +2906,7 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The string to locate within <c>source</c>.</param>
+        <param name="value">The string to locate within <paramref name="source" />.</param>
         <summary>Searches for the specified substring and returns the zero-based index of the last occurrence within the entire source string.</summary>
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within <paramref name="source" />; otherwise, -1.</returns>
         <remarks>
@@ -2985,8 +2985,8 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The character to locate within <c>source</c>.</param>
-        <param name="options">A value that defines how <c>source</c> and <c>value</c> should be compared. <c>options</c> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
+        <param name="value">The character to locate within <paramref name="source" />.</param>
+        <param name="options">A value that defines how <paramref name="source" /> and <paramref name="value" /> should be compared. <paramref name="options" /> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
         <summary>Searches for the specified character and returns the zero-based index of the last occurrence within the entire source string using the specified <see cref="T:System.Globalization.CompareOptions" /> value.</summary>
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within <paramref name="source" />, using the specified comparison options; otherwise, -1.</returns>
         <remarks>
@@ -3064,7 +3064,7 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The character to locate within <c>source</c>.</param>
+        <param name="value">The character to locate within <paramref name="source" />.</param>
         <param name="startIndex">The zero-based starting index of the backward search.</param>
         <summary>Searches for the specified character and returns the zero-based index of the last occurrence within the section of the source string that extends from the beginning of the string to the specified index.</summary>
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that extends from the beginning of <paramref name="source" /> to <paramref name="startIndex" />; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
@@ -3147,8 +3147,8 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The string to locate within <c>source</c>.</param>
-        <param name="options">A value that defines how <c>source</c> and <c>value</c> should be compared. <c>options</c> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
+        <param name="value">The string to locate within <paramref name="source" />.</param>
+        <param name="options">A value that defines how <paramref name="source" /> and <paramref name="value" /> should be compared. <paramref name="options" /> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
         <summary>Searches for the specified substring and returns the zero-based index of the last occurrence within the entire source string using the specified <see cref="T:System.Globalization.CompareOptions" /> value.</summary>
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within <paramref name="source" />, using the specified comparison options; otherwise, -1.</returns>
         <remarks>
@@ -3230,7 +3230,7 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The string to locate within <c>source</c>.</param>
+        <param name="value">The string to locate within <paramref name="source" />.</param>
         <param name="startIndex">The zero-based starting index of the backward search.</param>
         <summary>Searches for the specified substring and returns the zero-based index of the last occurrence within the section of the source string that extends from the beginning of the string to the specified index.</summary>
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that extends from the beginning of <paramref name="source" /> to <paramref name="startIndex" />; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
@@ -3313,9 +3313,9 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The character to locate within <c>source</c>.</param>
+        <param name="value">The character to locate within <paramref name="source" />.</param>
         <param name="startIndex">The zero-based starting index of the backward search.</param>
-        <param name="options">A value that defines how <c>source</c> and <c>value</c> should be compared. <c>options</c> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
+        <param name="options">A value that defines how <paramref name="source" /> and <paramref name="value" /> should be compared. <paramref name="options" /> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
         <summary>Searches for the specified character and returns the zero-based index of the last occurrence within the section of the source string that extends from the beginning of the string to the specified index using the specified <see cref="T:System.Globalization.CompareOptions" /> value.</summary>
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that extends from the beginning of <paramref name="source" /> to <paramref name="startIndex" />, using the specified comparison options; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
@@ -3398,7 +3398,7 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The character to locate within <c>source</c>.</param>
+        <param name="value">The character to locate within <paramref name="source" />.</param>
         <param name="startIndex">The zero-based starting index of the backward search.</param>
         <param name="count">The number of elements in the section to search.</param>
         <summary>Searches for the specified character and returns the zero-based index of the last occurrence within the section of the source string that contains the specified number of elements and ends at the specified index.</summary>
@@ -3486,9 +3486,9 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The string to locate within <c>source</c>.</param>
+        <param name="value">The string to locate within <paramref name="source" />.</param>
         <param name="startIndex">The zero-based starting index of the backward search.</param>
-        <param name="options">A value that defines how <c>source</c> and <c>value</c> should be compared. <c>options</c> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
+        <param name="options">A value that defines how <paramref name="source" /> and <paramref name="value" /> should be compared. <paramref name="options" /> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
         <summary>Searches for the specified substring and returns the zero-based index of the last occurrence within the section of the source string that extends from the beginning of the string to the specified index using the specified <see cref="T:System.Globalization.CompareOptions" /> value.</summary>
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that extends from the beginning of <paramref name="source" /> to <paramref name="startIndex" />, using the specified comparison options; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
@@ -3577,7 +3577,7 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The string to locate within <c>source</c>.</param>
+        <param name="value">The string to locate within <paramref name="source" />.</param>
         <param name="startIndex">The zero-based starting index of the backward search.</param>
         <param name="count">The number of elements in the section to search.</param>
         <summary>Searches for the specified substring and returns the zero-based index of the last occurrence within the section of the source string that contains the specified number of elements and ends at the specified index.</summary>
@@ -3677,10 +3677,10 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The character to locate within <c>source</c>.</param>
+        <param name="value">The character to locate within <paramref name="source" />.</param>
         <param name="startIndex">The zero-based starting index of the backward search.</param>
         <param name="count">The number of elements in the section to search.</param>
-        <param name="options">A value that defines how <c>source</c> and <c>value</c> should be compared. <c>options</c> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
+        <param name="options">A value that defines how <paramref name="source" /> and <paramref name="value" /> should be compared. <paramref name="options" /> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
         <summary>Searches for the specified character and returns the zero-based index of the last occurrence within the section of the source string that contains the specified number of elements and ends at the specified index using the specified <see cref="T:System.Globalization.CompareOptions" /> value.</summary>
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that contains the number of elements specified by <paramref name="count" /> and that ends at <paramref name="startIndex" />, using the specified comparison options; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
@@ -3777,10 +3777,10 @@
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
-        <param name="value">The string to locate within <c>source</c>.</param>
+        <param name="value">The string to locate within <paramref name="source" />.</param>
         <param name="startIndex">The zero-based starting index of the backward search.</param>
         <param name="count">The number of elements in the section to search.</param>
-        <param name="options">A value that defines how <c>source</c> and <c>value</c> should be compared. <c>options</c> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
+        <param name="options">A value that defines how <paramref name="source" /> and <paramref name="value" /> should be compared. <paramref name="options" /> is either the enumeration value <see cref="F:System.Globalization.CompareOptions.Ordinal" />, or a bitwise combination of one or more of the following values: <see cref="F:System.Globalization.CompareOptions.IgnoreCase" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreWidth" />, and <see cref="F:System.Globalization.CompareOptions.IgnoreKanaType" />.</param>
         <summary>Searches for the specified substring and returns the zero-based index of the last occurrence within the section of the source string that contains the specified number of elements and ends at the specified index using the specified <see cref="T:System.Globalization.CompareOptions" /> value.</summary>
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that contains the number of elements specified by <paramref name="count" /> and that ends at <paramref name="startIndex" />, using the specified comparison options; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>

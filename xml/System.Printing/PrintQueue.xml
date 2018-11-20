@@ -2818,7 +2818,7 @@
       <Docs>
         <param name="basePrintTicket">The first print ticket.</param>
         <param name="deltaPrintTicket">The second print ticket. This can be <see langword="null" />.</param>
-        <param name="scope">A value indicating whether the scope of <c>deltaPrintTicket</c>, and the scope of the print ticket returned in the <see cref="T:System.Printing.ValidationResult" />, is a page, a document, or the whole job.</param>
+        <param name="scope">A value indicating whether the scope of <paramref name="deltaPrintTicket" />, and the scope of the print ticket returned in the <see cref="T:System.Printing.ValidationResult" />, is a page, a document, or the whole job.</param>
         <summary>Merges two <see cref="T:System.Printing.PrintTicket" />s and guarantees that the resulting <see cref="T:System.Printing.PrintTicket" /> is valid, does not ask for any printing functionality that the printer does not support, and is limited to the specified scope.</summary>
         <returns>A <see cref="T:System.Printing.ValidationResult" /> that includes the merged <see cref="T:System.Printing.PrintTicket" /> and an indication of whether any of its settings had to be changed to guarantee viability.</returns>
         <remarks>

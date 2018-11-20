@@ -137,7 +137,7 @@
         <Parameter Name="attributeValues" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="attributeNamespace">The XML namespace in which the <c>attributeName</c> parameter is defined.</param>
+        <param name="attributeNamespace">The XML namespace in which the <paramref name="attributeName" /> parameter is defined.</param>
         <param name="attributeName">The name of the SAML attribute.</param>
         <param name="attributeValues">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> that contains the values of the SAML attribute.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> class using the specified attribute name, XML namespace, and attribute values.</summary>

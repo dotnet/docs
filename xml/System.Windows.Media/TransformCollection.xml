@@ -390,7 +390,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the items copied from the <see cref="T:System.Windows.Media.TransformCollection" />. The array must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the items of the <see cref="T:System.Windows.Media.TransformCollection" /> to an array, starting at the specified array index.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -609,7 +609,7 @@
         <Parameter Name="value" Type="System.Windows.Media.Transform" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
         <param name="value">The <see cref="T:System.Windows.Media.Transform" /> to insert into the <see cref="T:System.Windows.Media.TransformCollection" />.</param>
         <summary>Inserts a <see cref="T:System.Windows.Media.Transform" /> into the <see cref="T:System.Windows.Media.TransformCollection" /> at the specified index.</summary>
         <remarks>

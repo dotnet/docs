@@ -190,7 +190,7 @@
       </Parameters>
       <Docs>
         <param name="array">An array of <see cref="T:System.Windows.Controls.ColumnDefinition" /> objects.</param>
-        <param name="index">Identifies the index position within <c>array</c> to which the <see cref="T:System.Windows.Controls.ColumnDefinition" /> objects are copied.</param>
+        <param name="index">Identifies the index position within <paramref name="array" /> to which the <see cref="T:System.Windows.Controls.ColumnDefinition" /> objects are copied.</param>
         <summary>Copies an array of <see cref="T:System.Windows.Controls.ColumnDefinition" /> objects to a given index position within a <see cref="T:System.Windows.Controls.ColumnDefinitionCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

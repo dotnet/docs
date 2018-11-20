@@ -51,7 +51,7 @@
       </Parameters>
       <Docs>
         <param name="code">The source code to parse.</param>
-        <param name="error">An object that contains information about errors that occur when <c>code</c> is being parsed.</param>
+        <param name="error">An object that contains information about errors that occur when <paramref name="code" /> is being parsed.</param>
         <summary>When implemented in a class, parses the specified source code.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

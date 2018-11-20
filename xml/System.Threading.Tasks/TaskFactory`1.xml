@@ -459,7 +459,7 @@
       </Parameters>
       <Docs>
         <param name="tasks">The array of tasks from which to continue.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
         <summary>Creates a continuation task that will be started upon the completion of a set of provided tasks.</summary>
         <returns>The new continuation task.</returns>
         <remarks>
@@ -519,7 +519,7 @@
       </Parameters>
       <Docs>
         <param name="tasks">The array of tasks from which to continue.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new continuation task.</param>
         <summary>Creates a continuation task that will be started upon the completion of a set of provided tasks.</summary>
         <returns>The new continuation task.</returns>
@@ -584,7 +584,7 @@
       </Parameters>
       <Docs>
         <param name="tasks">The array of tasks from which to continue.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
         <param name="continuationOptions">One of the enumeration values that controls the behavior of the created continuation task. The NotOn* or OnlyOn* values are not valid.</param>
         <summary>Creates a continuation task that will be started upon the completion of a set of provided Tasks.</summary>
         <returns>The new continuation task.</returns>
@@ -647,7 +647,7 @@
       </Parameters>
       <Docs>
         <param name="tasks">The array of tasks from which to continue.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new continuation task.</param>
         <param name="continuationOptions">One of the enumeration values that controls the behavior of the created continuation task. The NotOn* or OnlyOn* values are not valid.</param>
         <param name="scheduler">The scheduler that is used to schedule the created continuation task.</param>
@@ -721,9 +721,9 @@
         <Parameter Name="continuationFunction" Type="System.Func&lt;System.Threading.Tasks.Task&lt;TAntecedentResult&gt;[],TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
         <param name="tasks">The array of tasks from which to continue.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
         <summary>Creates a continuation task that will be started upon the completion of a set of provided tasks.</summary>
         <returns>The new continuation task.</returns>
         <remarks>
@@ -784,9 +784,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
         <param name="tasks">The array of tasks from which to continue.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new continuation task.</param>
         <summary>Creates a continuation task that will be started upon the completion of a set of provided tasks.</summary>
         <returns>The new continuation task.</returns>
@@ -853,9 +853,9 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
         <param name="tasks">The array of tasks from which to continue.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
         <param name="continuationOptions">One of the enumeration values that controls the behavior of the created continuation task. The NotOn* or OnlyOn* values are not valid.</param>
         <summary>Creates a continuation task that will be started upon the completion of a set of provided tasks.</summary>
         <returns>The new continuation task.</returns>
@@ -920,9 +920,9 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
         <param name="tasks">The array of tasks from which to continue.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new continuation task.</param>
         <param name="continuationOptions">One of the enumeration values that controls the behavior of the created continuation task. The NotOn* or OnlyOn* values are not valid.</param>
         <param name="scheduler">The scheduler that is used to schedule the created continuation task.</param>
@@ -1006,7 +1006,7 @@
       </Parameters>
       <Docs>
         <param name="tasks">The array of tasks from which to continue when one task completes.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <paramref name="tasks" /> array completes.</param>
         <summary>Creates a continuation task that will be started upon the completion of any task in the provided set.</summary>
         <returns>The new continuation task.</returns>
         <remarks>
@@ -1065,7 +1065,7 @@
       </Parameters>
       <Docs>
         <param name="tasks">The array of tasks from which to continue when one task completes.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <paramref name="tasks" /> array completes.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new continuation task.</param>
         <summary>Creates a continuation task that will be started upon the completion of any task in the provided set.</summary>
         <returns>The new continuation task.</returns>
@@ -1134,7 +1134,7 @@
       </Parameters>
       <Docs>
         <param name="tasks">The array of tasks from which to continue when one task completes.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <paramref name="tasks" /> array completes.</param>
         <param name="continuationOptions">One of the enumeration values that controls the behavior of the created continuation task. The <see langword="NotOn*" /> or <see langword="OnlyOn*" /> values are not valid.</param>
         <summary>Creates a continuation task that will be started upon the completion of any task in the provided set.</summary>
         <returns>The new continuation task.</returns>
@@ -1201,7 +1201,7 @@
       </Parameters>
       <Docs>
         <param name="tasks">The array of tasks from which to continue when one task completes.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <paramref name="tasks" /> array completes.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new continuation task.</param>
         <param name="continuationOptions">One of the enumeration values that controls the behavior of the created continuation task. The <see langword="NotOn*" /> or <see langword="OnlyOn*" /> values are not valid.</param>
         <param name="scheduler">The task scheduler that is used to schedule the created continuation task.</param>
@@ -1279,9 +1279,9 @@
         <Parameter Name="continuationFunction" Type="System.Func&lt;System.Threading.Tasks.Task&lt;TAntecedentResult&gt;,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
         <param name="tasks">The array of tasks from which to continue when one task completes.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <paramref name="tasks" /> array completes.</param>
         <summary>Creates a continuation task that will be started upon the completion of any task in the provided set.</summary>
         <returns>The new continuation <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
         <remarks>
@@ -1346,9 +1346,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
         <param name="tasks">The array of tasks from which to continue when one task completes.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <paramref name="tasks" /> array completes.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new continuation task.</param>
         <summary>Creates a continuation task that will be started upon the completion of any task in the provided set.</summary>
         <returns>The new continuation task.</returns>
@@ -1419,9 +1419,9 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
         <param name="tasks">The array of tasks from which to continue when one task completes.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <paramref name="tasks" /> array completes.</param>
         <param name="continuationOptions">One of the enumeration values that controls the behavior of the created continuation task. The <see langword="NotOn*" /> or <see langword="OnlyOn*" /> values are not valid.</param>
         <summary>Creates a continuation task that will be started upon the completion of any task in the provided set.</summary>
         <returns>The new continuation <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
@@ -1490,9 +1490,9 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
         <param name="tasks">The array of tasks from which to continue when one task completes.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <paramref name="tasks" /> array completes.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new continuation task.</param>
         <param name="continuationOptions">One of the enumeration values that controls the behavior of the created continuation task. The <see langword="NotOn*" /> or <see langword="OnlyOn*" /> values are not valid.</param>
         <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> that is used to schedule the created continuation <see cref="T:System.Threading.Tasks.Task`1" />.</param>
@@ -1623,8 +1623,8 @@
         <Parameter Name="endMethod" Type="System.Func&lt;System.IAsyncResult,TResult&gt;" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> whose completion should trigger the processing of the <c>endMethod</c>.</param>
-        <param name="endMethod">The function delegate that processes the completed <c>asyncResult</c>.</param>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> whose completion should trigger the processing of the <paramref name="endMethod" />.</param>
+        <param name="endMethod">The function delegate that processes the completed <paramref name="asyncResult" />.</param>
         <summary>Creates a task that executes an end method function when a specified <see cref="T:System.IAsyncResult" /> completes.</summary>
         <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
@@ -1675,7 +1675,7 @@
       <Docs>
         <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
         <param name="endMethod">The delegate that ends the asynchronous operation.</param>
-        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="state">An object containing data to be used by the <paramref name="beginMethod" /> delegate.</param>
         <summary>Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
         <returns>The created task that represents the asynchronous operation.</returns>
         <remarks>
@@ -1731,8 +1731,8 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> whose completion should trigger the processing of the <c>endMethod</c>.</param>
-        <param name="endMethod">The function delegate that processes the completed <c>asyncResult</c>.</param>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> whose completion should trigger the processing of the <paramref name="endMethod" />.</param>
+        <param name="endMethod">The function delegate that processes the completed <paramref name="asyncResult" />.</param>
         <param name="creationOptions">One of the enumeration values that controls the behavior of the created task.</param>
         <summary>Creates a task that executes an end method function when a specified <see cref="T:System.IAsyncResult" /> completes.</summary>
         <returns>A task that represents the asynchronous operation.</returns>
@@ -1786,7 +1786,7 @@
       <Docs>
         <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
         <param name="endMethod">The delegate that ends the asynchronous operation.</param>
-        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="state">An object containing data to be used by the <paramref name="beginMethod" /> delegate.</param>
         <param name="creationOptions">One of the enumeration values that controls the behavior of the created task.</param>
         <summary>Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
         <returns>The created <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous operation.</returns>
@@ -1845,8 +1845,8 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> whose completion should trigger the processing of the <c>endMethod</c>.</param>
-        <param name="endMethod">The function delegate that processes the completed <c>asyncResult</c>.</param>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> whose completion should trigger the processing of the <paramref name="endMethod" />.</param>
+        <param name="endMethod">The function delegate that processes the completed <paramref name="asyncResult" />.</param>
         <param name="creationOptions">One of the enumeration values that controls the behavior of the created task.</param>
         <param name="scheduler">The task scheduler that is used to schedule the task that executes the end method.</param>
         <summary>Creates a task that executes an end method function when a specified <see cref="T:System.IAsyncResult" /> completes.</summary>
@@ -1906,11 +1906,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg1">The type of the first argument passed to the <paramref name="beginMethod" /> delegate.</typeparam>
         <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
         <param name="endMethod">The delegate that ends the asynchronous operation.</param>
-        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="arg1">The first argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="state">An object containing data to be used by the <paramref name="beginMethod" /> delegate.</param>
         <summary>Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
         <returns>The created task that represents the asynchronous operation.</returns>
         <remarks>
@@ -1971,11 +1971,11 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg1">The type of the first argument passed to the <paramref name="beginMethod" /> delegate.</typeparam>
         <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
         <param name="endMethod">The delegate that ends the asynchronous operation.</param>
-        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="arg1">The first argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="state">An object containing data to be used by the <paramref name="beginMethod" /> delegate.</param>
         <param name="creationOptions">One of the enumeration values that controls the behavior of the created task.</param>
         <summary>Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
         <returns>The created task that represents the asynchronous operation.</returns>
@@ -2039,13 +2039,13 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">The type of the second argument passed to <c>beginMethod</c> delegate.</typeparam>
-        <typeparam name="TArg2">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg1">The type of the second argument passed to <paramref name="beginMethod" /> delegate.</typeparam>
+        <typeparam name="TArg2">The type of the first argument passed to the <paramref name="beginMethod" /> delegate.</typeparam>
         <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
         <param name="endMethod">The delegate that ends the asynchronous operation.</param>
-        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="arg2">The second argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="arg1">The first argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="arg2">The second argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="state">An object containing data to be used by the <paramref name="beginMethod" /> delegate.</param>
         <summary>Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
         <returns>The created task that represents the asynchronous operation.</returns>
         <remarks>
@@ -2108,13 +2108,13 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">The type of the second argument passed to <c>beginMethod</c> delegate.</typeparam>
-        <typeparam name="TArg2">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg1">The type of the second argument passed to <paramref name="beginMethod" /> delegate.</typeparam>
+        <typeparam name="TArg2">The type of the first argument passed to the <paramref name="beginMethod" /> delegate.</typeparam>
         <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
         <param name="endMethod">The delegate that ends the asynchronous operation.</param>
-        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="arg2">The second argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="arg1">The first argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="arg2">The second argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="state">An object containing data to be used by the <paramref name="beginMethod" /> delegate.</param>
         <param name="creationOptions">An object that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task`1" />.</param>
         <summary>Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
         <returns>The created task that represents the asynchronous operation.</returns>
@@ -2180,15 +2180,15 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">The type of the second argument passed to <c>beginMethod</c> delegate.</typeparam>
-        <typeparam name="TArg2">The type of the third argument passed to <c>beginMethod</c> delegate.</typeparam>
-        <typeparam name="TArg3">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg1">The type of the second argument passed to <paramref name="beginMethod" /> delegate.</typeparam>
+        <typeparam name="TArg2">The type of the third argument passed to <paramref name="beginMethod" /> delegate.</typeparam>
+        <typeparam name="TArg3">The type of the first argument passed to the <paramref name="beginMethod" /> delegate.</typeparam>
         <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
         <param name="endMethod">The delegate that ends the asynchronous operation.</param>
-        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="arg2">The second argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="arg3">The third argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="arg1">The first argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="arg2">The second argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="arg3">The third argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="state">An object containing data to be used by the <paramref name="beginMethod" /> delegate.</param>
         <summary>Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
         <returns>The created task that represents the asynchronous operation.</returns>
         <remarks>
@@ -2253,15 +2253,15 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">The type of the second argument passed to <c>beginMethod</c> delegate.</typeparam>
-        <typeparam name="TArg2">The type of the third argument passed to <c>beginMethod</c> delegate.</typeparam>
-        <typeparam name="TArg3">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg1">The type of the second argument passed to <paramref name="beginMethod" /> delegate.</typeparam>
+        <typeparam name="TArg2">The type of the third argument passed to <paramref name="beginMethod" /> delegate.</typeparam>
+        <typeparam name="TArg3">The type of the first argument passed to the <paramref name="beginMethod" /> delegate.</typeparam>
         <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
         <param name="endMethod">The delegate that ends the asynchronous operation.</param>
-        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="arg2">The second argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="arg3">The third argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="arg1">The first argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="arg2">The second argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="arg3">The third argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="state">An object containing data to be used by the <paramref name="beginMethod" /> delegate.</param>
         <param name="creationOptions">An object that controls the behavior of the created task.</param>
         <summary>Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
         <returns>The created task that represents the asynchronous operation.</returns>
@@ -2430,7 +2430,7 @@
       </Parameters>
       <Docs>
         <param name="function">A function delegate that returns the future result to be available through the task.</param>
-        <param name="state">An object that contains data to be used by the <c>function</c> delegate.</param>
+        <param name="state">An object that contains data to be used by the <paramref name="function" /> delegate.</param>
         <summary>Creates and starts a task.</summary>
         <returns>The started task.</returns>
         <remarks>
@@ -2593,7 +2593,7 @@
       </Parameters>
       <Docs>
         <param name="function">A function delegate that returns the future result to be available through the task.</param>
-        <param name="state">An object that contains data to be used by the <c>function</c> delegate.</param>
+        <param name="state">An object that contains data to be used by the <paramref name="function" /> delegate.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new task.</param>
         <summary>Creates and starts a task.</summary>
         <returns>The started task.</returns>
@@ -2650,7 +2650,7 @@
       </Parameters>
       <Docs>
         <param name="function">A function delegate that returns the future result to be available through the task.</param>
-        <param name="state">An object that contains data to be used by the <c>function</c> delegate.</param>
+        <param name="state">An object that contains data to be used by the <paramref name="function" /> delegate.</param>
         <param name="creationOptions">One of the enumeration values that controls the behavior of the created task.</param>
         <summary>Creates and starts a task.</summary>
         <returns>The started task.</returns>
@@ -2771,7 +2771,7 @@
       </Parameters>
       <Docs>
         <param name="function">A function delegate that returns the future result to be available through the task.</param>
-        <param name="state">An object that contains data to be used by the <c>function</c> delegate.</param>
+        <param name="state">An object that contains data to be used by the <paramref name="function" /> delegate.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new task.</param>
         <param name="creationOptions">One of the enumeration values that controls the behavior of the created task.</param>
         <param name="scheduler">The task scheduler that is used to schedule the created task.</param>

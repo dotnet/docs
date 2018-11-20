@@ -627,7 +627,7 @@
         <Parameter Name="value" Type="System.Windows.Media.Drawing" />
       </Parameters>
       <Docs>
-        <param name="index">The index position at which to insert <c>value</c>, the specified <see cref="T:System.Windows.Media.Drawing" />.</param>
+        <param name="index">The index position at which to insert <paramref name="value" />, the specified <see cref="T:System.Windows.Media.Drawing" />.</param>
         <param name="value">The item to insert.</param>
         <summary>Inserts a <see cref="T:System.Windows.Media.Drawing" /> into this <see cref="T:System.Windows.Media.DrawingCollection" /> at the specified index position.</summary>
         <remarks>

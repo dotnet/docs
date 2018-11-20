@@ -150,7 +150,7 @@
       </Parameters>
       <Docs>
         <param name="response">A <see cref="T:System.Net.WebResponse" /> object  containing the output message for an operation.</param>
-        <param name="responseStream">A <see cref="T:System.IO.Stream" /> whose content is the body of the HTTP response represented by the <c>response</c> parameter.</param>
+        <param name="responseStream">A <see cref="T:System.IO.Stream" /> whose content is the body of the HTTP response represented by the <paramref name="response" /> parameter.</param>
         <summary>Parses text contained in the HTTP response.</summary>
         <returns>An object containing the deserialized Web method return value.</returns>
         <remarks>

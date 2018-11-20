@@ -204,7 +204,7 @@
         <Parameter Name="flds" Type="System.Reflection.FieldInfo[]" />
       </Parameters>
       <Docs>
-        <param name="target">An object that contains the field described by the first element of <c>flds</c>.</param>
+        <param name="target">An object that contains the field described by the first element of <paramref name="flds" />.</param>
         <param name="flds">A list of field descriptions where each element describes a field that contains the field described by the succeeding element. Each described field must be a value type. The field descriptions must be <see langword="RuntimeFieldInfo" /> objects supplied by the type system.</param>
         <summary>Makes a <see langword="TypedReference" /> for a field identified by a specified object and list of field descriptions.</summary>
         <returns>A <see cref="T:System.TypedReference" /> for the field described by the last element of <paramref name="flds" />.</returns>

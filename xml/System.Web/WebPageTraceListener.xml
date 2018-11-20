@@ -148,7 +148,7 @@
         <param name="source">A category name used to organize the output.</param>
         <param name="severity">One of the <see cref="T:System.Diagnostics.TraceEventType" /> values.</param>
         <param name="id">A numeric identifier for the event.</param>
-        <param name="format">A format string that contains zero or more format items, which correspond to objects in <c>args</c>.</param>
+        <param name="format">A format string that contains zero or more format items, which correspond to objects in <paramref name="args" />.</param>
         <param name="args">An array of zero or more objects to format.</param>
         <summary>Writes a localized event message to a Web page or to the ASP.NET trace viewer using the specified system and event data.</summary>
         <remarks>

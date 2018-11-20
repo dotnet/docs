@@ -324,7 +324,7 @@
         <Parameter Name="terminationException" Type="System.Exception" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="terminationException">When this method returns, <c>terminationException</c> contains the exception that caused the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> to terminate, or <see langword="null" /> if the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> did not terminate. This parameter is passed uninitialized.</param>
+        <param name="terminationException">When this method returns, <paramref name="terminationException" /> contains the exception that caused the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> to terminate, or <see langword="null" /> if the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> did not terminate. This parameter is passed uninitialized.</param>
         <summary>Returns the final <see cref="T:System.Activities.ActivityInstanceState" /> of the <see cref="T:System.Activities.Hosting.WorkflowInstance" />, including termination exception.</summary>
         <returns>One of the enumeration members that describes the state of an activity instance.</returns>
         <remarks>To be added.</remarks>
@@ -350,8 +350,8 @@
         <Parameter Name="terminationException" Type="System.Exception" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="outputs">When this method returns, <c>outputs</c> contains a dictionary of <see cref="F:System.Activities.ArgumentDirection.Out" /> arguments of the workflow, keyed by argument name. This parameter is passed uninitialized.</param>
-        <param name="terminationException">When this method returns, <c>terminationException</c> contains the exception that caused the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> to terminate, or <see langword="null" /> if the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> did not terminate. This parameter is passed uninitialized.</param>
+        <param name="outputs">When this method returns, <paramref name="outputs" /> contains a dictionary of <see cref="F:System.Activities.ArgumentDirection.Out" /> arguments of the workflow, keyed by argument name. This parameter is passed uninitialized.</param>
+        <param name="terminationException">When this method returns, <paramref name="terminationException" /> contains the exception that caused the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> to terminate, or <see langword="null" /> if the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> did not terminate. This parameter is passed uninitialized.</param>
         <summary>Returns the final <see cref="T:System.Activities.ActivityInstanceState" /> of the <see cref="T:System.Activities.Hosting.WorkflowInstance" />, including workflow outputs and termination exception.</summary>
         <returns>One of the enumeration members that describes the state of an activity instance.</returns>
         <remarks>To be added.</remarks>

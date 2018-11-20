@@ -56,10 +56,10 @@
       </Parameters>
       <Docs>
         <param name="interfaceType">The interface that was first implemented in the specified version of the target type.</param>
-        <param name="majorVersion">The major component of the version of the target type that first implemented <c>interfaceType</c>.</param>
-        <param name="minorVersion">The minor component of the version of the target type that first implemented <c>interfaceType</c>.</param>
-        <param name="buildVersion">The build component of the version of the target type that first implemented <c>interfaceType</c>.</param>
-        <param name="revisionVersion">The revision component of the version of the target type that first implemented <c>interfaceType</c>.</param>
+        <param name="majorVersion">The major component of the version of the target type that first implemented <paramref name="interfaceType" />.</param>
+        <param name="minorVersion">The minor component of the version of the target type that first implemented <paramref name="interfaceType" />.</param>
+        <param name="buildVersion">The build component of the version of the target type that first implemented <paramref name="interfaceType" />.</param>
+        <param name="revisionVersion">The revision component of the version of the target type that first implemented <paramref name="interfaceType" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute" /> class, specifying the interface that the target type implements and the version in which that interface was first implemented.</summary>
         <remarks>To be added.</remarks>
       </Docs>

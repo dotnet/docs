@@ -1755,7 +1755,7 @@
         <Parameter Name="selector" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,TSelector&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSelector">The type of the <c>selector</c>.</typeparam>
+        <typeparam name="TSelector">The type of the <paramref name="selector" />.</typeparam>
         <param name="outer">A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the outer set argument.</param>
         <param name="inner">A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the inner set argument.</param>
         <param name="outerKey">A method that specifies how the outer key value should be derived from an element of the outer set.</param>
@@ -1817,7 +1817,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       </Parameters>
       <Docs>
         <param name="body">An expression that defines the logic of the Lambda function.</param>
-        <param name="variables">A <see cref="T:System.Data.Common.CommandTrees.DbVariableReferenceExpression" /> collection that represents the formal parameters to the Lambda function. These variables are valid for use in the <c>body</c> expression.</param>
+        <param name="variables">A <see cref="T:System.Data.Common.CommandTrees.DbVariableReferenceExpression" /> collection that represents the formal parameters to the Lambda function. These variables are valid for use in the <paramref name="body" /> expression.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbLambda" /> with the specified inline Lambda function implementation and formal parameters.</summary>
         <returns>A new DbLambda that describes an inline Lambda function with the specified body and formal parameters.</returns>
         <remarks>To be added.</remarks>
@@ -1854,7 +1854,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
       </Parameters>
       <Docs>
         <param name="body">An expression that defines the logic of the Lambda function.</param>
-        <param name="variables">A <see cref="T:System.Data.Common.CommandTrees.DbVariableReferenceExpression" /> collection that represents the formal parameters to the Lambda function. These variables are valid for use in the <c>body</c> expression.</param>
+        <param name="variables">A <see cref="T:System.Data.Common.CommandTrees.DbVariableReferenceExpression" /> collection that represents the formal parameters to the Lambda function. These variables are valid for use in the <paramref name="body" /> expression.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbLambda" /> with the specified inline Lambda function implementation and formal parameters.</summary>
         <returns>A new DbLambda that describes an inline Lambda function with the specified body and formal parameters.</returns>
         <remarks>To be added.</remarks>
@@ -3280,7 +3280,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
         <Parameter Name="projection" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,TProjection&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TProjection">The method result type of <c>projection</c>.</typeparam>
+        <typeparam name="TProjection">The method result type of <paramref name="projection" />.</typeparam>
         <param name="source">An expression that specifies the input set.</param>
         <param name="projection">A method that specifies how to derive the projected expression given a member of the input set. This method must produce an instance of a type that is compatible with Select and can be resolved into a <see cref="T:System.Data.Common.CommandTrees.DbExpression" />. Compatibility requirements for <c>TProjection</c> are described in remarks.</param>
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbProjectExpression" /> that selects the specified expression over the given input set.</summary>
@@ -3361,7 +3361,7 @@ source.Select(x => new { Name = x.Property("Name") })
         <Parameter Name="selector" Type="System.Func&lt;System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,TSelector&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSelector">The method result type of <c>selector</c>.</typeparam>
+        <typeparam name="TSelector">The method result type of <paramref name="selector" />.</typeparam>
         <param name="source">A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the input set.</param>
         <param name="apply">A method that represents the logic to evaluate once for each member of the input set.</param>
         <param name="selector">A method that specifies how an element of the result set should be derived given an element of the input and apply sets. This method must produce an instance of a type that is compatible with SelectMany and can be resolved into a <see cref="T:System.Data.Common.CommandTrees.DbExpression" />. Compatibility requirements for <c>TSelector</c> are described in remarks.</param>

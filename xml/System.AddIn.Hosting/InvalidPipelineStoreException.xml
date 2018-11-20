@@ -147,7 +147,7 @@
       </Parameters>
       <Docs>
         <param name="message">A description of the error.</param>
-        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not a null reference, the current exception is raised in a catch block that handles the inner exception.</param>
+        <param name="innerException">The exception that is the cause of the current exception. If the <paramref name="innerException" /> parameter is not a null reference, the current exception is raised in a catch block that handles the inner exception.</param>
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Hosting.InvalidPipelineStoreException" /> class with the specified message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

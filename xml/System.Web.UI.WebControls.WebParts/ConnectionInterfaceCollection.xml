@@ -99,8 +99,8 @@
         <Parameter Name="connectionInterfaces" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="existingConnectionInterfaces">A <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection" /> to combine with the <c>connectionInterfaces</c> object.</param>
-        <param name="connectionInterfaces">A collection to combine with the <c>existingConnectionInterfaces</c> object.</param>
+        <param name="existingConnectionInterfaces">A <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection" /> to combine with the <paramref name="connectionInterfaces" /> object.</param>
+        <param name="connectionInterfaces">A collection to combine with the <paramref name="existingConnectionInterfaces" /> object.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection" /> class by combining the two specified collections.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">An object in <paramref name="connectionInterfaces" /> cannot be added to a <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection" /> collection.</exception>
@@ -155,7 +155,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.ReadOnlyCollectionBase" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the entire <see cref="T:System.Collections.ReadOnlyCollectionBase" /> object to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
       </Docs>

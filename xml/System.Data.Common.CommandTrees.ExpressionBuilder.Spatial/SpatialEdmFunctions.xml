@@ -225,7 +225,7 @@
       </Parameters>
       <Docs>
         <param name="spatialValue1">An expression that specifies the first spatial value.</param>
-        <param name="spatialValue2">An expression that specifies the spatial value from which the distance from <c>spatialValue1</c> should be measured.</param>
+        <param name="spatialValue2">An expression that specifies the spatial value from which the distance from <paramref name="spatialValue1" /> should be measured.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Distance' function with the specified arguments, which must each have an Edm.Geography or Edm.Geometry result type.  The result type of <paramref name="spatialValue1" /> must match the result type of <paramref name="spatialValue2" />. The result type of the expression is Edm.Double.</summary>
         <returns>A new DbFunctionExpression that returns the distance between the closest points in <paramref name="spatialValue1" /> and <paramref name="spatialValue1" />.</returns>
         <remarks>To be added.</remarks>
@@ -2250,7 +2250,7 @@
       </Parameters>
       <Docs>
         <param name="geometryValue1">An expression that specifies the first geometry value.</param>
-        <param name="geometryValue2">An expression that specifies the geometry value that should be compared with <c>geometryValue1</c>.</param>
+        <param name="geometryValue2">An expression that specifies the geometry value that should be compared with <paramref name="geometryValue1" />.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'SpatialContains' function with the specified arguments, which must each have an Edm.Geometry result type. The result type of the expression is Edm.Boolean.</summary>
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="geometryValue1" /> spatially contains <paramref name="geometryValue2" />.</returns>
         <remarks>To be added.</remarks>
@@ -2316,7 +2316,7 @@
       </Parameters>
       <Docs>
         <param name="geometryValue1">An expression that specifies the first geometry value.</param>
-        <param name="geometryValue2">An expression that specifies the geometry value that should be compared with <c>geometryValue1</c>.</param>
+        <param name="geometryValue2">An expression that specifies the geometry value that should be compared with <paramref name="geometryValue1" />.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'SpatialCrosses' function with the specified arguments, which must each have an Edm.Geometry result type. The result type of the expression is Edm.Boolean.</summary>
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="geometryValue1" /> crosses <paramref name="geometryValue2" /> intersect.</returns>
         <remarks>To be added.</remarks>
@@ -2351,7 +2351,7 @@
       </Parameters>
       <Docs>
         <param name="spatialValue1">An expression that specifies the first spatial value.</param>
-        <param name="spatialValue2">An expression that specifies the spatial value for which the difference with <c>spatialValue1</c> should be computed.</param>
+        <param name="spatialValue2">An expression that specifies the spatial value for which the difference with <paramref name="spatialValue1" /> should be computed.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'SpatialDifference' function with the specified arguments, which must each have an Edm.Geography or Edm.Geometry result type. The result type of <paramref name="spatialValue1" /> must match the result type of <paramref name="spatialValue2" />. The result type of the expression is the same as the type of <paramref name="spatialValue1" /> and <paramref name="spatialValue2" />.</summary>
         <returns>A new DbFunctionExpression that returns the geometry value representing the difference of <paramref name="spatialValue2" /> with <paramref name="spatialValue1" />.</returns>
         <remarks>To be added.</remarks>
@@ -2417,7 +2417,7 @@
       </Parameters>
       <Docs>
         <param name="spatialValue1">An expression that specifies the first spatial value.</param>
-        <param name="spatialValue2">An expression that specifies the spatial value that should be compared with <c>spatialValue1</c> for disjointness.</param>
+        <param name="spatialValue2">An expression that specifies the spatial value that should be compared with <paramref name="spatialValue1" /> for disjointness.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'SpatialDisjoint' function with the specified arguments, which must each have an Edm.Geography or Edm.Geometry result type. The result type of <paramref name="spatialValue1" /> must match the result type of <paramref name="spatialValue2" />. The result type of the expression is Edm.Boolean.</summary>
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="spatialValue1" /> and <paramref name="spatialValue2" /> are spatially disjoint.</returns>
         <remarks>To be added.</remarks>
@@ -2548,7 +2548,7 @@
       </Parameters>
       <Docs>
         <param name="spatialValue1">An expression that specifies the first spatial value.</param>
-        <param name="spatialValue2">An expression that specifies the spatial value that should be compared with <c>spatialValue1</c> for equality.</param>
+        <param name="spatialValue2">An expression that specifies the spatial value that should be compared with <paramref name="spatialValue1" /> for equality.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'SpatialEquals' function with the specified arguments, which must each have an Edm.Geography or Edm.Geometry result type. The result type of <paramref name="spatialValue1" /> must match the result type of <paramref name="spatialValue2" />. The result type of the expression is Edm.Boolean.</summary>
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="spatialValue1" /> and <paramref name="spatialValue2" /> are equal.</returns>
         <remarks>To be added.</remarks>
@@ -2583,7 +2583,7 @@
       </Parameters>
       <Docs>
         <param name="spatialValue1">An expression that specifies the first spatial value.</param>
-        <param name="spatialValue2">An expression that specifies the spatial value for which the intersection with <c>spatialValue1</c> should be computed.</param>
+        <param name="spatialValue2">An expression that specifies the spatial value for which the intersection with <paramref name="spatialValue1" /> should be computed.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'SpatialIntersection' function with the specified arguments, which must each have an Edm.Geography or Edm.Geometry result type. The result type of <paramref name="spatialValue1" /> must match the result type of <paramref name="spatialValue2" />. The result type of the expression is the same as the type of <paramref name="spatialValue1" /> and <paramref name="spatialValue2" />.</summary>
         <returns>A new DbFunctionExpression that returns the spatial value representing the intersection of <paramref name="spatialValue1" /> and <paramref name="spatialValue2" />.</returns>
         <remarks>To be added.</remarks>
@@ -2618,7 +2618,7 @@
       </Parameters>
       <Docs>
         <param name="spatialValue1">An expression that specifies the first spatial value.</param>
-        <param name="spatialValue2">An expression that specifies the spatial value that should be compared with <c>spatialValue1</c> for intersection.</param>
+        <param name="spatialValue2">An expression that specifies the spatial value that should be compared with <paramref name="spatialValue1" /> for intersection.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'SpatialIntersects' function with the specified arguments, which must each have an Edm.Geography or Edm.Geometry result type. The result type of <paramref name="spatialValue1" /> must match the result type of <paramref name="spatialValue2" />. The result type of the expression is Edm.Boolean.</summary>
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="spatialValue1" /> and <paramref name="spatialValue2" /> intersect.</returns>
         <remarks>To be added.</remarks>
@@ -2684,7 +2684,7 @@
       </Parameters>
       <Docs>
         <param name="geometryValue1">An expression that specifies the first geometry value.</param>
-        <param name="geometryValue2">An expression that specifies the geometry value that should be compared with <c>geometryValue1</c>.</param>
+        <param name="geometryValue2">An expression that specifies the geometry value that should be compared with <paramref name="geometryValue1" />.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'SpatialOverlaps' function with the specified arguments, which must each have an Edm.Geometry result type. The result type of the expression is Edm.Boolean.</summary>
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="geometryValue1" /> spatially overlaps <paramref name="geometryValue2" />.</returns>
         <remarks>To be added.</remarks>
@@ -2720,8 +2720,8 @@
       </Parameters>
       <Docs>
         <param name="geometryValue1">An expression that specifies the first geometry value.</param>
-        <param name="geometryValue2">An expression that specifies the geometry value that should be compared with <c>geometryValue1</c>.</param>
-        <param name="intersectionPatternMatrix">An expression that specifies the text representation of the Dimensionally Extended Nine-Intersection Model (DE-9IM) intersection pattern used to compare <c>geometryValue1</c> and <c>geometryValue2</c>.</param>
+        <param name="geometryValue2">An expression that specifies the geometry value that should be compared with <paramref name="geometryValue1" />.</param>
+        <param name="intersectionPatternMatrix">An expression that specifies the text representation of the Dimensionally Extended Nine-Intersection Model (DE-9IM) intersection pattern used to compare <paramref name="geometryValue1" /> and <paramref name="geometryValue2" />.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'SpatialRelate' function with the specified arguments, which must have Edm.Geometry and string result types. The result type of the expression is Edm.Boolean.</summary>
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="geometryValue1" /> is spatially related to <paramref name="geometryValue2" /> according to the spatial relationship designated by <paramref name="intersectionPatternMatrix" />.</returns>
         <remarks>To be added.</remarks>
@@ -2758,7 +2758,7 @@
       </Parameters>
       <Docs>
         <param name="spatialValue1">An expression that specifies the first spatial value.</param>
-        <param name="spatialValue2">An expression that specifies the spatial value for which the symmetric difference with <c>spatialValue1</c> should be computed.</param>
+        <param name="spatialValue2">An expression that specifies the spatial value for which the symmetric difference with <paramref name="spatialValue1" /> should be computed.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'SpatialSymmetricDifference' function with the specified arguments, which must each have an Edm.Geography or Edm.Geometry result type. The result type of <paramref name="spatialValue1" /> must match the result type of <paramref name="spatialValue2" />. The result type of the expression is the same as the type of <paramref name="spatialValue1" /> and <paramref name="spatialValue2" />.</summary>
         <returns>A new DbFunctionExpression that returns the geometry value representing the symmetric difference of <paramref name="spatialValue2" /> with <paramref name="spatialValue1" />.</returns>
         <remarks>To be added.</remarks>
@@ -2793,7 +2793,7 @@
       </Parameters>
       <Docs>
         <param name="geometryValue1">An expression that specifies the first geometry value.</param>
-        <param name="geometryValue2">An expression that specifies the geometry value that should be compared with <c>geometryValue1</c>.</param>
+        <param name="geometryValue2">An expression that specifies the geometry value that should be compared with <paramref name="geometryValue1" />.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'SpatialTouches' function with the specified arguments, which must each have an Edm.Geometry result type. The result type of the expression is Edm.Boolean.</summary>
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="geometryValue1" /> touches <paramref name="geometryValue2" />.</returns>
         <remarks>To be added.</remarks>
@@ -2859,7 +2859,7 @@
       </Parameters>
       <Docs>
         <param name="spatialValue1">An expression that specifies the first spatial value.</param>
-        <param name="spatialValue2">An expression that specifies the spatial value for which the union with <c>spatialValue1</c> should be computed.</param>
+        <param name="spatialValue2">An expression that specifies the spatial value for which the union with <paramref name="spatialValue1" /> should be computed.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'SpatialUnion' function with the specified arguments, which must each have an Edm.Geography or Edm.Geometry result type. The result type of <paramref name="spatialValue1" /> must match the result type of <paramref name="spatialValue2" />. The result type of the expression is the same as the type of <paramref name="spatialValue1" /> and <paramref name="spatialValue2" />.</summary>
         <returns>A new DbFunctionExpression that returns the spatial value representing the union of <paramref name="spatialValue1" /> and <paramref name="spatialValue2" />.</returns>
         <remarks>To be added.</remarks>
@@ -2894,7 +2894,7 @@
       </Parameters>
       <Docs>
         <param name="geometryValue1">An expression that specifies the first geometry value.</param>
-        <param name="geometryValue2">An expression that specifies the geometry value that should be compared with <c>geometryValue1</c>.</param>
+        <param name="geometryValue2">An expression that specifies the geometry value that should be compared with <paramref name="geometryValue1" />.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'SpatialWithin' function with the specified arguments, which must each have an Edm.Geometry result type. The result type of the expression is Edm.Boolean.</summary>
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="geometryValue1" /> is spatially within <paramref name="geometryValue2" />.</returns>
         <remarks>To be added.</remarks>

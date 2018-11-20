@@ -454,7 +454,7 @@
       <Docs>
         <param name="sp">The specified security token parameters.</param>
         <param name="initializeNestedBindings">
-          <see langword="true" /> to indicate that all the nested bindings are updated with the values specified by <c>sp</c>; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to indicate that all the nested bindings are updated with the values specified by <paramref name="sp" />; otherwise, <see langword="false" />.</param>
         <summary>Applies the specified security token settings to this instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>

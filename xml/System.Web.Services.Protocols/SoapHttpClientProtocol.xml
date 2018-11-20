@@ -103,7 +103,7 @@
       <Docs>
         <param name="methodName">The name of the XML Web service method in the derived class that is invoking the <see cref="M:System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String,System.Object[],System.AsyncCallback,System.Object)" /> method.</param>
         <param name="parameters">An array of objects containing the parameters to pass to the XML Web service. The order of the values in the array correspond to the order of the parameters in the calling method of the derived class.</param>
-        <param name="callback">The delegate to call when the asynchronous invoke is complete. If <c>callback</c> is <see langword="null" />, the delegate is not called.</param>
+        <param name="callback">The delegate to call when the asynchronous invoke is complete. If <paramref name="callback" /> is <see langword="null" />, the delegate is not called.</param>
         <param name="asyncState">Extra information supplied by the caller.</param>
         <summary>Starts an asynchronous invocation of an XML Web service method using SOAP.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> that is passed to the <see cref="M:System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(System.IAsyncResult)" /> method to obtain the return values from the remote method call.</returns>
@@ -489,7 +489,7 @@
         <param name="methodName">The name of the method to invoke.</param>
         <param name="parameters">The parameters to pass to the method.</param>
         <param name="callback">The delegate called when the method invocation has completed.</param>
-        <param name="userState">An object used to pass state information into the <c>callback</c> delegate.</param>
+        <param name="userState">An object used to pass state information into the <paramref name="callback" /> delegate.</param>
         <summary>Invokes the specified method asynchronously.</summary>
         <remarks>To be added.</remarks>
       </Docs>

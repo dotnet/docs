@@ -570,8 +570,8 @@
       <Docs>
         <param name="a">A <see cref="T:System.Diagnostics.CounterSample" /> structure.</param>
         <param name="obj1">A <see cref="T:System.Diagnostics.CounterSample" /> structure.</param>
-        <param name="b">Another <see cref="T:System.Diagnostics.CounterSample" /> structure to be compared to the structure specified by the <c>a</c> parameter.</param>
-        <param name="obj2">Another <see cref="T:System.Diagnostics.CounterSample" /> structure to be compared to the structure specified by the <c>obj1</c> parameter.</param>
+        <param name="b">Another <see cref="T:System.Diagnostics.CounterSample" /> structure to be compared to the structure specified by the <paramref name="a" /> parameter.</param>
+        <param name="obj2">Another <see cref="T:System.Diagnostics.CounterSample" /> structure to be compared to the structure specified by the <paramref name="obj1" /> parameter.</param>
         <summary>Returns a value that indicates whether two <see cref="T:System.Diagnostics.CounterSample" /> structures are equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> are equal; otherwise, <see langword="false" />.</returns>
@@ -618,8 +618,8 @@
       <Docs>
         <param name="a">A <see cref="T:System.Diagnostics.CounterSample" /> structure.</param>
         <param name="obj1">A <see cref="T:System.Diagnostics.CounterSample" /> structure.</param>
-        <param name="b">Another <see cref="T:System.Diagnostics.CounterSample" /> structure to be compared to the structure specified by the <c>a</c> parameter.</param>
-        <param name="obj2">Another <see cref="T:System.Diagnostics.CounterSample" /> structure to be compared to the structure specified by the <c>obj1</c> parameter.</param>
+        <param name="b">Another <see cref="T:System.Diagnostics.CounterSample" /> structure to be compared to the structure specified by the <paramref name="a" /> parameter.</param>
+        <param name="obj2">Another <see cref="T:System.Diagnostics.CounterSample" /> structure to be compared to the structure specified by the <paramref name="obj1" /> parameter.</param>
         <summary>Returns a value that indicates whether two <see cref="T:System.Diagnostics.CounterSample" /> structures are not equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> are not equal; otherwise, <see langword="false" /></returns>

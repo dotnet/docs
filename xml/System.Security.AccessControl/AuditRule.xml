@@ -59,7 +59,7 @@
         <param name="isInherited">
           <see langword="true" /> to inherit this rule from a parent container.</param>
         <param name="inheritanceFlags">The inheritance properties of the audit rule.</param>
-        <param name="propagationFlags">Whether inherited audit rules are automatically propagated. The propagation flags are ignored if <c>inheritanceFlags</c> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
+        <param name="propagationFlags">Whether inherited audit rules are automatically propagated. The propagation flags are ignored if <paramref name="inheritanceFlags" /> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
         <param name="auditFlags">The conditions for which the rule is audited.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.AuditRule" /> class by using the specified values.</summary>
         <remarks>To be added.</remarks>

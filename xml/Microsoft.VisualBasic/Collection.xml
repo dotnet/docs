@@ -159,8 +159,8 @@ Dim coll As New Microsoft.VisualBasic.Collection()
       <Docs>
         <param name="Item">Required. An object of any type that specifies the element to add to the collection.</param>
         <param name="Key">Optional. A unique <see langword="String" /> expression that specifies a key string that can be used instead of a positional index to access this new element in the collection.</param>
-        <param name="Before">Optional. An expression that specifies a relative position in the collection. The element to be added is placed in the collection before the element identified by the <c>Before</c> argument. If <c>Before</c> is a numeric expression, it must be a number from 1 through the value of the collection's <see cref="P:Microsoft.VisualBasic.Collection.Count" /> property. If <c>Before</c> is a <see langword="String" /> expression, it must correspond to the key string specified when the element being referred to was added to the collection. You cannot specify both <c>Before</c> and <c>After</c>.</param>
-        <param name="After">Optional. An expression that specifies a relative position in the collection. The element to be added is placed in the collection after the element identified by the <c>After</c> argument. If <c>After</c> is a numeric expression, it must be a number from 1 through the value of the collection's <see langword="Count" /> property. If <c>After</c> is a <see langword="String" /> expression, it must correspond to the key string specified when the element referred to was added to the collection. You cannot specify both <c>Before</c> and <c>After</c>.</param>
+        <param name="Before">Optional. An expression that specifies a relative position in the collection. The element to be added is placed in the collection before the element identified by the <paramref name="Before" /> argument. If <paramref name="Before" /> is a numeric expression, it must be a number from 1 through the value of the collection's <see cref="P:Microsoft.VisualBasic.Collection.Count" /> property. If <paramref name="Before" /> is a <see langword="String" /> expression, it must correspond to the key string specified when the element being referred to was added to the collection. You cannot specify both <paramref name="Before" /> and <paramref name="After" />.</param>
+        <param name="After">Optional. An expression that specifies a relative position in the collection. The element to be added is placed in the collection after the element identified by the <paramref name="After" /> argument. If <paramref name="After" /> is a numeric expression, it must be a number from 1 through the value of the collection's <see langword="Count" /> property. If <paramref name="After" /> is a <see langword="String" /> expression, it must correspond to the key string specified when the element referred to was added to the collection. You cannot specify both <paramref name="Before" /> and <paramref name="After" />.</param>
         <summary>Adds an element to a <see langword="Collection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -383,7 +383,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">(A) A numeric expression that specifies the position of an element of the collection. <c>Index</c> must be a number from 1 through the value of the collection's <see cref="P:Microsoft.VisualBasic.Collection.Count" /> property. Or (B) An <see langword="Object" /> expression that specifies the position or key string of an element of the collection.</param>
+        <param name="Index">(A) A numeric expression that specifies the position of an element of the collection. <paramref name="Index" /> must be a number from 1 through the value of the collection's <see cref="P:Microsoft.VisualBasic.Collection.Count" /> property. Or (B) An <see langword="Object" /> expression that specifies the position or key string of an element of the collection.</param>
         <summary>Returns a specific element of a <see langword="Collection" /> object either by position or by key. Read-only.</summary>
         <value>Returns a specific element of a <see langword="Collection" /> object either by position or by key. Read-only.</value>
         <remarks>
@@ -442,7 +442,7 @@ MsgBox(CStr(customers(1)))
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">(A) A numeric expression that specifies the position of an element of the collection. <c>Index</c> must be a number from 1 through the value of the collection's <see cref="P:Microsoft.VisualBasic.Collection.Count" /> property. Or (B) An <see langword="Object" /> expression that specifies the position or key string of an element of the collection.</param>
+        <param name="Index">(A) A numeric expression that specifies the position of an element of the collection. <paramref name="Index" /> must be a number from 1 through the value of the collection's <see cref="P:Microsoft.VisualBasic.Collection.Count" /> property. Or (B) An <see langword="Object" /> expression that specifies the position or key string of an element of the collection.</param>
         <summary>Returns a specific element of a <see langword="Collection" /> object either by position or by key. Read-only.</summary>
         <value>Returns a specific element of a <see langword="Collection" /> object either by position or by key. Read-only.</value>
         <remarks>
@@ -492,7 +492,7 @@ MsgBox(CStr(customers(1)))
         <Parameter Name="Key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Key">A unique <see langword="String" /> expression that specifies a key string that can be used, instead of a positional index, to access an element of the collection. <c>Key</c> must correspond to the <c>Key</c> argument specified when the element was added to the collection.</param>
+        <param name="Key">A unique <see langword="String" /> expression that specifies a key string that can be used, instead of a positional index, to access an element of the collection. <paramref name="Key" /> must correspond to the <paramref name="Key" /> argument specified when the element was added to the collection.</param>
         <summary>Returns a specific element of a <see langword="Collection" /> object either by position or by key. Read-only.</summary>
         <value>Returns a specific element of a <see langword="Collection" /> object either by position or by key. Read-only.</value>
         <remarks>
@@ -552,7 +552,7 @@ MsgBox(CStr(customers(1)))
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">A numeric expression that specifies the position of an element of the collection. <c>Index</c> must be a number from 1 through the value of the collection's <see cref="P:Microsoft.VisualBasic.Collection.Count" /> property.</param>
+        <param name="Index">A numeric expression that specifies the position of an element of the collection. <paramref name="Index" /> must be a number from 1 through the value of the collection's <see cref="P:Microsoft.VisualBasic.Collection.Count" /> property.</param>
         <summary>Removes an element from a <see langword="Collection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -601,7 +601,7 @@ MsgBox(CStr(customers(1)))
         <Parameter Name="Key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Key">A unique <see langword="String" /> expression that specifies a key string that can be used, instead of a positional index, to access an element of the collection. <c>Key</c> must correspond to the <c>Key</c> argument specified when the element was added to the collection.</param>
+        <param name="Key">A unique <see langword="String" /> expression that specifies a key string that can be used, instead of a positional index, to access an element of the collection. <paramref name="Key" /> must correspond to the <paramref name="Key" /> argument specified when the element was added to the collection.</param>
         <summary>Removes an element from a <see langword="Collection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -650,7 +650,7 @@ MsgBox(CStr(customers(1)))
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:Microsoft.VisualBasic.Collection" /> object. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the elements of the <see cref="T:Microsoft.VisualBasic.Collection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index. Implements the <see cref="T:System.Collections.ICollection" /> interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -980,7 +980,7 @@ MsgBox(CStr(customers(1)))
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
         <param name="value">The <see cref="T:System.Object" /> to insert into the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</param>
         <summary>Inserts an item to the <see cref="T:Microsoft.VisualBasic.Collection" /> object at the specified index. Implements the <see cref="T:System.Collections.IList" /> interface.</summary>
         <remarks>

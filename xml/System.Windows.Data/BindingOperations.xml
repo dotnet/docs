@@ -50,7 +50,7 @@
         <param name="collection">The collection to access.</param>
         <param name="accessMethod">The action to perform on the collection.</param>
         <param name="writeAccess">
-          <see langword="true" /> if <c>accessMethod</c> will write to the collection; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="accessMethod" /> will write to the collection; otherwise, <see langword="false" />.</param>
         <summary>Provides access to a collection by using the synchronization mechanism that the application specified when it called EnableCollectionSynchronization.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -447,7 +447,7 @@ The net effect is that you can change the collection on any thread, and those c
         <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
       </Parameters>
       <Docs>
-        <param name="target">The object where <c>dp</c> is.</param>
+        <param name="target">The object where <paramref name="dp" /> is.</param>
         <param name="dp">The binding target property from which to retrieve the binding.</param>
         <summary>Retrieves the <see cref="T:System.Windows.Data.Binding" /> object that is set on the specified property.</summary>
         <returns>The <see cref="T:System.Windows.Data.Binding" /> object set on the given property or <see langword="null" /> if no <see cref="T:System.Windows.Data.Binding" /> object has been set.</returns>
@@ -480,7 +480,7 @@ The net effect is that you can change the collection on any thread, and those c
         <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
       </Parameters>
       <Docs>
-        <param name="target">The object where <c>dp</c> is.</param>
+        <param name="target">The object where <paramref name="dp" /> is.</param>
         <param name="dp">The binding target property from which to retrieve the <see cref="T:System.Windows.Data.BindingBase" /> object.</param>
         <summary>Retrieves the <see cref="T:System.Windows.Data.BindingBase" /> object that is set on the specified property.</summary>
         <returns>The <see cref="T:System.Windows.Data.BindingBase" /> object that is set on the given property or <see langword="null" /> if no binding object has been set.</returns>
@@ -517,7 +517,7 @@ The net effect is that you can change the collection on any thread, and those c
         <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
       </Parameters>
       <Docs>
-        <param name="target">The binding target object where <c>dp</c> is.</param>
+        <param name="target">The binding target object where <paramref name="dp" /> is.</param>
         <param name="dp">The binding target property from which to retrieve the <see cref="T:System.Windows.Data.BindingExpression" /> object.</param>
         <summary>Returns the <see cref="T:System.Windows.Data.BindingExpression" /> object associated with the specified binding target property on the specified object.</summary>
         <returns>The <see cref="T:System.Windows.Data.BindingExpression" /> object associated with the given property or <see langword="null" /> if none exists. If a <see cref="T:System.Windows.Data.PriorityBindingExpression" /> object is set on the property, the <see cref="P:System.Windows.Data.PriorityBindingExpression.ActiveBindingExpression" /> is returned.</returns>
@@ -566,7 +566,7 @@ The net effect is that you can change the collection on any thread, and those c
         <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
       </Parameters>
       <Docs>
-        <param name="target">The object where <c>dp</c> is.</param>
+        <param name="target">The object where <paramref name="dp" /> is.</param>
         <param name="dp">The binding target property from which to retrieve the <see cref="T:System.Windows.Data.BindingExpressionBase" /> object.</param>
         <summary>Retrieves the <see cref="T:System.Windows.Data.BindingExpressionBase" /> object that is set on the specified property.</summary>
         <returns>The <see cref="T:System.Windows.Data.BindingExpressionBase" /> object that is set on the given property or <see langword="null" /> if no binding object has been set.</returns>
@@ -603,7 +603,7 @@ The net effect is that you can change the collection on any thread, and those c
         <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
       </Parameters>
       <Docs>
-        <param name="target">The object where <c>dp</c> is.</param>
+        <param name="target">The object where <paramref name="dp" /> is.</param>
         <param name="dp">The binding target property from which to retrieve the binding.</param>
         <summary>Retrieves the <see cref="T:System.Windows.Data.MultiBinding" /> object that is set on the specified property.</summary>
         <returns>The <see cref="T:System.Windows.Data.MultiBinding" /> object set on the given property or <see langword="null" /> if no <see cref="T:System.Windows.Data.MultiBinding" /> object has been set.</returns>
@@ -634,7 +634,7 @@ The net effect is that you can change the collection on any thread, and those c
         <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
       </Parameters>
       <Docs>
-        <param name="target">The binding target object where <c>dp</c> is.</param>
+        <param name="target">The binding target object where <paramref name="dp" /> is.</param>
         <param name="dp">The binding target property from which to retrieve the <see cref="T:System.Windows.Data.MultiBindingExpression" /> object.</param>
         <summary>Returns the <see cref="T:System.Windows.Data.MultiBindingExpression" /> object associated with the specified binding target property on the specified object.</summary>
         <returns>The <see cref="T:System.Windows.Data.MultiBindingExpression" /> object associated with the given property or <see langword="null" /> if none exists.</returns>
@@ -673,7 +673,7 @@ The net effect is that you can change the collection on any thread, and those c
         <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
       </Parameters>
       <Docs>
-        <param name="target">The object where <c>dp</c> is.</param>
+        <param name="target">The object where <paramref name="dp" /> is.</param>
         <param name="dp">The binding target property from which to retrieve the binding.</param>
         <summary>Retrieves the <see cref="T:System.Windows.Data.PriorityBinding" /> object that is set on the specified property.</summary>
         <returns>The <see cref="T:System.Windows.Data.PriorityBinding" /> object set on the given property or <see langword="null" /> if no <see cref="T:System.Windows.Data.PriorityBinding" /> object has been set.</returns>
@@ -704,7 +704,7 @@ The net effect is that you can change the collection on any thread, and those c
         <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
       </Parameters>
       <Docs>
-        <param name="target">The binding target object where <c>dp</c> is.</param>
+        <param name="target">The binding target object where <paramref name="dp" /> is.</param>
         <param name="dp">The binding target property from which to retrieve the <see cref="T:System.Windows.Data.PriorityBindingExpression" /> object.</param>
         <summary>Returns the <see cref="T:System.Windows.Data.PriorityBindingExpression" /> object associated with the specified binding target property on the specified object.</summary>
         <returns>The <see cref="T:System.Windows.Data.PriorityBindingExpression" /> object associated with the given property or <see langword="null" /> if none exists.</returns>
@@ -800,7 +800,7 @@ The net effect is that you can change the collection on any thread, and those c
         <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
       </Parameters>
       <Docs>
-        <param name="target">The object where <c>dp</c> is.</param>
+        <param name="target">The object where <paramref name="dp" /> is.</param>
         <param name="dp">The dependency property to check.</param>
         <summary>Returns a value that indicates whether the specified property is currently data-bound.</summary>
         <returns>

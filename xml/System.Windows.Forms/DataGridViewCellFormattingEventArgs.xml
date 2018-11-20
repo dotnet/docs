@@ -96,7 +96,7 @@
         <param name="columnIndex">The column index of the cell that caused the event.</param>
         <param name="rowIndex">The row index of the cell that caused the event.</param>
         <param name="value">The cell's contents.</param>
-        <param name="desiredType">The type to convert <c>value</c> to.</param>
+        <param name="desiredType">The type to convert <paramref name="value" /> to.</param>
         <param name="cellStyle">The style of the cell that caused the event.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellFormattingEventArgs" /> class.</summary>
         <remarks>

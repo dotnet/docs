@@ -221,7 +221,7 @@
       </Parameters>
       <Docs>
         <param name="peerName">The <see cref="T:System.Net.PeerToPeer.PeerName" /> to resolve.</param>
-        <param name="maxRecords">The maximum number of <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> objects to obtain from all <see cref="T:System.Net.PeerToPeer.Cloud" /> objects for the supplied <c>peerName</c>.</param>
+        <param name="maxRecords">The maximum number of <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> objects to obtain from all <see cref="T:System.Net.PeerToPeer.Cloud" /> objects for the supplied <paramref name="peerName" />.</param>
         <summary>Resolves the specified peer name in all clouds known to the calling peer, returning no more than the specified number of <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> objects.</summary>
         <returns>A <see cref="T:System.Net.PeerToPeer.PeerNameRecordCollection" /> whose size is less than or equal to <paramref name="maxRecords" /> entries. This collection contains peer name records associated with the <see cref="T:System.Net.PeerToPeer.PeerName" /> that was resolved.</returns>
         <remarks>
@@ -313,8 +313,8 @@
       </Parameters>
       <Docs>
         <param name="peerName">The <see cref="T:System.Net.PeerToPeer.PeerName" /> to resolve.</param>
-        <param name="cloud">The <see cref="T:System.Net.PeerToPeer.Cloud" /> in which to resolve the <c>peerName</c>.</param>
-        <param name="maxRecords">The maximum number of peer name record objects to obtain from the specified cloud for the specified <c>peerName</c>.</param>
+        <param name="cloud">The <see cref="T:System.Net.PeerToPeer.Cloud" /> in which to resolve the <paramref name="peerName" />.</param>
+        <param name="maxRecords">The maximum number of peer name record objects to obtain from the specified cloud for the specified <paramref name="peerName" />.</param>
         <summary>Resolves the specified <see cref="P:System.Net.PeerToPeer.PeerNameRecord.PeerName" /> in the specified <see cref="T:System.Net.PeerToPeer.Cloud" />, returning no more than the specified number of <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> objects.</summary>
         <returns>A <see cref="T:System.Net.PeerToPeer.PeerNameRecordCollection" /> whose size is less than or equal to <paramref name="maxRecords" /> entries. This collection contains peer name records associated with the <see cref="T:System.Net.PeerToPeer.PeerName" /> that was resolved.</returns>
         <remarks>
@@ -473,7 +473,7 @@
       </Parameters>
       <Docs>
         <param name="peerName">The <see cref="T:System.Net.PeerToPeer.PeerName" /> to resolve.</param>
-        <param name="cloud">The <see cref="T:System.Net.PeerToPeer.Cloud" /> in which to resolve the <c>peerName</c>.</param>
+        <param name="cloud">The <see cref="T:System.Net.PeerToPeer.Cloud" /> in which to resolve the <paramref name="peerName" />.</param>
         <param name="userState">A user-defined <see cref="T:System.Object" /> that contains information about the peer name resolution operation.</param>
         <summary>Begins an asynchronous peer name resolution operation for the specified <see cref="T:System.Net.PeerToPeer.PeerName" /> in the specified <see cref="T:System.Net.PeerToPeer.Cloud" />.</summary>
         <remarks>
@@ -524,9 +524,9 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="peerName">The <c>peerName</c> to resolve.</param>
-        <param name="cloud">The <c>cloud</c> in which to resolve <c>peerName</c>.</param>
-        <param name="maxRecords">The maximum number of records to obtain from <c>cloud</c> for <c>peerName</c>.</param>
+        <param name="peerName">The <paramref name="peerName" /> to resolve.</param>
+        <param name="cloud">The <paramref name="cloud" /> in which to resolve <paramref name="peerName" />.</param>
+        <param name="maxRecords">The maximum number of records to obtain from <paramref name="cloud" /> for <paramref name="peerName" />.</param>
         <param name="userState">A user-defined object that contains information about the peer name resolution operation.</param>
         <summary>Begins an asynchronous peer name resolution operation for the specified <see cref="T:System.Net.PeerToPeer.PeerName" /> in the specified <see cref="T:System.Net.PeerToPeer.Cloud" />.  The resolution operation will resolve no more than <paramref name="maxRecords" /> entries for the specified peer name.</summary>
         <remarks>

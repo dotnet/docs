@@ -110,7 +110,7 @@
         <Parameter Name="resultSelector" Type="System.Func&lt;TKey,System.Collections.Generic.IEnumerable&lt;TElement&gt;,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">The type of the result values produced by <c>resultSelector</c>.</typeparam>
+        <typeparam name="TResult">The type of the result values produced by <paramref name="resultSelector" />.</typeparam>
         <param name="resultSelector">A function to project a result value from each key and its associated values.</param>
         <summary>Applies a transform function to each key and its associated values and returns the results.</summary>
         <returns>A collection that contains one value for each key/value collection pair in the <see cref="T:System.Linq.Lookup`2" />.</returns>

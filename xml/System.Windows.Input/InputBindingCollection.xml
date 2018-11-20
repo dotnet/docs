@@ -284,7 +284,7 @@
       </Parameters>
       <Docs>
         <param name="inputBindings">The array into which the collection is copied.</param>
-        <param name="index">The index position in <c>inputBindings</c> at which copying starts.</param>
+        <param name="index">The index position in <paramref name="inputBindings" /> at which copying starts.</param>
         <summary>Copies all of the items in the <see cref="T:System.Windows.Input.InputBindingCollection" /> to the specified one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -394,7 +394,7 @@
         <Parameter Name="inputBinding" Type="System.Windows.Input.InputBinding" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert <c>inputBinding</c>.</param>
+        <param name="index">The zero-based index at which to insert <paramref name="inputBinding" />.</param>
         <param name="inputBinding">The binding to insert.</param>
         <summary>Inserts the specified <see cref="T:System.Windows.Input.InputBinding" /> into this <see cref="T:System.Windows.Input.InputBindingCollection" /> at the specified index.</summary>
         <remarks>To be added.</remarks>

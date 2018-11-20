@@ -152,7 +152,7 @@
       </Parameters>
       <Docs>
         <param name="assembly">The assembly to be registered.</param>
-        <param name="flags">An <see cref="T:System.Runtime.InteropServices.AssemblyRegistrationFlags" /> value indicating any special settings needed when registering <c>assembly</c>.</param>
+        <param name="flags">An <see cref="T:System.Runtime.InteropServices.AssemblyRegistrationFlags" /> value indicating any special settings needed when registering <paramref name="assembly" />.</param>
         <summary>Registers the classes in a managed assembly to enable creation from COM.</summary>
         <returns>
           <see langword="true" /> if <paramref name="assembly" /> contains types that were successfully registered; otherwise <see langword="false" /> if the assembly contains no eligible types.</returns>

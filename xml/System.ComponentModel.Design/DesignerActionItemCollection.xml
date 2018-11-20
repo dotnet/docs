@@ -147,7 +147,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.ComponentModel.Design.DesignerActionItem" /> array that is the destination of the elements copied from the current collection. The array must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the elements of the current collection into the supplied array, starting at the specified array index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -199,7 +199,7 @@
         <Parameter Name="value" Type="System.ComponentModel.Design.DesignerActionItem" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
         <param name="value">The <see cref="T:System.ComponentModel.Design.DesignerActionItem" /> to insert.</param>
         <summary>Inserts an element into the <see cref="T:System.ComponentModel.Design.DesignerActionItemCollection" /> at the specified index.</summary>
         <remarks>To be added.</remarks>

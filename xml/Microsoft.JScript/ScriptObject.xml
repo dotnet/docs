@@ -780,7 +780,7 @@
       </Parameters>
       <Docs>
         <param name="member">The member to wrap.</param>
-        <param name="obj">The object that <c>member</c> is defined on.</param>
+        <param name="obj">The object that <paramref name="member" /> is defined on.</param>
         <summary>Creates a wrapped object that contains the specified member together with the specified object.</summary>
         <returns>A one-element array that has a wrapped object that contains the member information and <paramref name="obj" />.</returns>
         <remarks>
@@ -820,7 +820,7 @@
       </Parameters>
       <Docs>
         <param name="members">The members to wrap.</param>
-        <param name="obj">The object that <c>members</c> are defined on.</param>
+        <param name="obj">The object that <paramref name="members" /> are defined on.</param>
         <summary>Creates an array of wrapped objects that contain the specified members together with the specified object.</summary>
         <returns>An array of wrapped objects, each of which contains member information and a copy of <paramref name="obj" />.</returns>
         <remarks>
@@ -861,7 +861,7 @@
       </Parameters>
       <Docs>
         <param name="members">The members to wrap.</param>
-        <param name="obj">The object that <c>members</c> are defined on.</param>
+        <param name="obj">The object that <paramref name="members" /> are defined on.</param>
         <param name="cache">Temporary data storage for the wrapped objects.</param>
         <summary>Creates an array of wrapped objects that contain the specified members together with the specified object, caching the results in the specified data storage.</summary>
         <returns>An array of wrapped objects, each of which contains member information and a copy of <paramref name="obj" />.</returns>

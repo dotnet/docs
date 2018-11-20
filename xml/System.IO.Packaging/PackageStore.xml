@@ -69,7 +69,7 @@
         <Parameter Name="package" Type="System.IO.Packaging.Package" />
       </Parameters>
       <Docs>
-        <param name="uri">The key [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the <c>package</c> to compare in a <see cref="T:System.IO.Packaging.PackWebRequest" />.</param>
+        <param name="uri">The key [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the <paramref name="package" /> to compare in a <see cref="T:System.IO.Packaging.PackWebRequest" />.</param>
         <param name="package">The package to add to the store.</param>
         <summary>Adds a <see cref="T:System.IO.Packaging.Package" /> to the store.</summary>
         <remarks>

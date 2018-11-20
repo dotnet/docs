@@ -111,7 +111,7 @@
         <Parameter Name="method" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="target">The object on which <c>method</c> is defined.</param>
+        <param name="target">The object on which <paramref name="method" /> is defined.</param>
         <param name="method">The name of the method for which a delegate is created.</param>
         <summary>Initializes a new instance of the <see cref="T:System.MulticastDelegate" /> class.</summary>
         <remarks>
@@ -155,7 +155,7 @@
         <Parameter Name="method" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="target">The type of object on which <c>method</c> is defined.</param>
+        <param name="target">The type of object on which <paramref name="method" /> is defined.</param>
         <param name="method">The name of the static method for which a delegate is created.</param>
         <summary>Initializes a new instance of the <see cref="T:System.MulticastDelegate" /> class.</summary>
         <remarks>

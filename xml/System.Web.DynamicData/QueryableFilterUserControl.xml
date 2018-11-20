@@ -78,7 +78,7 @@
       <Docs>
         <param name="source">The source <see cref="T:System.Linq.IQueryable" /> object.</param>
         <param name="propertyName">The name of the property.</param>
-        <param name="value">The value for the <c>propertyName</c> parameter.</param>
+        <param name="value">The value for the <paramref name="propertyName" /> parameter.</param>
         <summary>Gets the transformed <see cref="T:System.Linq.IQueryable" /> object from the source <see cref="T:System.Linq.IQueryable" /> object.</summary>
         <returns>The transformed <see cref="T:System.Linq.IQueryable" /> object from the source <see cref="T:System.Linq.IQueryable" /> object.</returns>
         <remarks>To be added.</remarks>

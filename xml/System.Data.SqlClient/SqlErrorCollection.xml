@@ -111,7 +111,7 @@
       </Parameters>
       <Docs>
         <param name="array">The <see cref="T:System.Array" /> to copy elements into.</param>
-        <param name="index">The index from which to start copying into the <c>array</c> parameter.</param>
+        <param name="index">The index from which to start copying into the <paramref name="array" /> parameter.</param>
         <summary>Copies the elements of the <see cref="T:System.Data.SqlClient.SqlErrorCollection" /> collection into an <see cref="T:System.Array" />, starting at the specified index.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The sum of <paramref name="index" /> and the number of elements in the <see cref="T:System.Data.SqlClient.SqlErrorCollection" /> collection is greater than the <see cref="P:System.Array.Length" /> of the <see cref="T:System.Array" />.</exception>
@@ -153,7 +153,7 @@
       </Parameters>
       <Docs>
         <param name="array">The <see cref="T:System.Data.SqlClient.SqlErrorCollection" /> to copy the elements into.</param>
-        <param name="index">The index from which to start copying into the <c>array</c> parameter.</param>
+        <param name="index">The index from which to start copying into the <paramref name="array" /> parameter.</param>
         <summary>Copies the elements of the <see cref="T:System.Data.SqlClient.SqlErrorCollection" /> collection into a <see cref="T:System.Data.SqlClient.SqlErrorCollection" />, starting at the specified index.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The sum of <paramref name="index" /> and the number of elements in the <see cref="T:System.Data.SqlClient.SqlErrorCollection" /> collection is greater than the length of the <see cref="T:System.Data.SqlClient.SqlErrorCollection" />.</exception>

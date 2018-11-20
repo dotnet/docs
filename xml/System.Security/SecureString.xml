@@ -277,7 +277,7 @@
       </Parameters>
       <Docs>
         <param name="value">A pointer to an array of <see cref="T:System.Char" /> objects.</param>
-        <param name="length">The number of elements of <c>value</c> to include in the new instance.</param>
+        <param name="length">The number of elements of <paramref name="value" /> to include in the new instance.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.SecureString" /> class from a subarray of <see cref="T:System.Char" /> objects.  
   
  This constructor is not CLS-compliant. The CLS-compliant alternative is <see cref="M:System.Security.SecureString.#ctor" />.</summary>
@@ -590,7 +590,7 @@
         <Parameter Name="c" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="index">The index position where parameter <c>c</c> is inserted.</param>
+        <param name="index">The index position where parameter <paramref name="c" /> is inserted.</param>
         <param name="c">The character to insert.</param>
         <summary>Inserts a character in this secure string at the specified index position.</summary>
         <remarks>

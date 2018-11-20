@@ -157,7 +157,7 @@
         <param name="context">A type that provides the format context.</param>
         <param name="culture">The information about a specific culture, such as calendars, and number formats.</param>
         <param name="value">The object to convert.</param>
-        <param name="destinationType">The type to convert the <c>value</c> argument to.</param>
+        <param name="destinationType">The type to convert the <paramref name="value" /> argument to.</param>
         <summary>Converts the provided context object into the XAML-serializable type of this converter, using the specified context and culture information.</summary>
         <returns>The converted context.</returns>
         <remarks>To be added.</remarks>

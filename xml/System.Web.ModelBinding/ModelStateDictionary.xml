@@ -323,7 +323,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the elements copied from the dictionary. The array must have zero-based indexing.</param>
-        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying starts.</param>
+        <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying starts.</param>
         <summary>Copies the elements of the dictionary to an array, starting at a specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>

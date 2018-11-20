@@ -46,7 +46,7 @@
       <Docs>
         <param name="width">A <see cref="T:System.Double" /> that represents the <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObject" /> width.</param>
         <param name="height">A <see cref="T:System.Double" /> that represents the <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObject" /> height.</param>
-        <param name="baseline">A <see cref="T:System.Double" /> that represents the <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObject" /> baseline relative to <c>height</c>.</param>
+        <param name="baseline">A <see cref="T:System.Double" /> that represents the <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObject" /> baseline relative to <paramref name="height" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics" /> class using specified width, height, and baseline values.</summary>
         <remarks>To be added.</remarks>
       </Docs>

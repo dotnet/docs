@@ -100,7 +100,7 @@
       <Docs>
         <param name="serializationStream">The <see cref="T:System.IO.Stream" /> onto which the specified graph is serialized.</param>
         <param name="graph">The root of the object graph to be serialized.</param>
-        <param name="headers">The array of <see cref="T:System.Runtime.Remoting.Messaging.Header" /> objects to transmit with the graph specified by the <c>graph</c> parameter. Can be <see langword="null" />.</param>
+        <param name="headers">The array of <see cref="T:System.Runtime.Remoting.Messaging.Header" /> objects to transmit with the graph specified by the <paramref name="graph" /> parameter. Can be <see langword="null" />.</param>
         <summary>Starts the serialization process of a remote procedure call (RPC).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

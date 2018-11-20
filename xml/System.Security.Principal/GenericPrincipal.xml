@@ -87,7 +87,7 @@
       </Parameters>
       <Docs>
         <param name="identity">A basic implementation of <see cref="T:System.Security.Principal.IIdentity" /> that represents any user.</param>
-        <param name="roles">An array of role names to which the user represented by the <c>identity</c> parameter belongs.</param>
+        <param name="roles">An array of role names to which the user represented by the <paramref name="identity" /> parameter belongs.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.GenericPrincipal" /> class from a user identity and an array of role names to which the user represented by that identity belongs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -1569,7 +1569,7 @@ End Sub
         <param name="pathInfo">Additional path information to use for the URL redirect. For more information, see <see cref="P:System.Web.HttpRequest.PathInfo" />.</param>
         <param name="queryString">The request query string to use for the URL redirect.</param>
         <param name="setClientFilePath">
-          <see langword="true" /> to set the file path used for client resources to the value of the <c>filePath</c> parameter; otherwise <see langword="false" />.</param>
+          <see langword="true" /> to set the file path used for client resources to the value of the <paramref name="filePath" /> parameter; otherwise <see langword="false" />.</param>
         <summary>Rewrites the URL using the given virtual path, path information, query string information, and a Boolean value that specifies whether the client file path is set to the rewrite path.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

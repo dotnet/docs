@@ -487,8 +487,8 @@
         <param name="tool">The <see cref="T:System.Drawing.Design.ToolboxItem" /> to create a component from.</param>
         <param name="x">The horizontal position, in design-time view coordinates, of the location of the left edge of the tool, if a size is specified; the horizontal position of the center of the tool, if no size is specified.</param>
         <param name="y">The vertical position, in design-time view coordinates, of the location of the top edge of the tool, if a size is specified; the vertical position of the center of the tool, if no size is specified.</param>
-        <param name="width">The width of the tool. This parameter is ignored if the <c>hasSize</c> parameter is set to <see langword="false" />.</param>
-        <param name="height">The height of the tool. This parameter is ignored if the <c>hasSize</c> parameter is set to <see langword="false" />.</param>
+        <param name="width">The width of the tool. This parameter is ignored if the <paramref name="hasSize" /> parameter is set to <see langword="false" />.</param>
+        <param name="height">The height of the tool. This parameter is ignored if the <paramref name="hasSize" /> parameter is set to <see langword="false" />.</param>
         <param name="hasLocation">
           <see langword="true" /> if a location for the component is specified; <see langword="false" /> if the component is to be positioned in the center of the currently selected control.</param>
         <param name="hasSize">

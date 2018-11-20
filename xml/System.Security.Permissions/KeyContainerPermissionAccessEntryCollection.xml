@@ -205,7 +205,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" /> array that is the destination of the elements copied from the current collection.</param>
-        <param name="index">The index in <c>array</c> at which copying begins.</param>
+        <param name="index">The index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the elements of the collection to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -541,7 +541,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the elements copied from the current collection.</param>
-        <param name="index">The index in <c>array</c> at which copying begins.</param>
+        <param name="index">The index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the elements of the collection to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

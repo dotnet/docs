@@ -139,7 +139,7 @@
       </Parameters>
       <Docs>
         <param name="container">The object reference against which the expression is evaluated. This must be a valid object identifier in the page's specified language.</param>
-        <param name="expression">The navigation path from the <c>container</c> object to the public property value to be placed in the bound control property. This must be a string of property or field names separated by periods, such as <c>Tables[0].DefaultView.[0].Price</c> in C# or <c>Tables(0).DefaultView.(0).Price</c> in Visual Basic.</param>
+        <param name="expression">The navigation path from the <paramref name="container" /> object to the public property value to be placed in the bound control property. This must be a string of property or field names separated by periods, such as <c>Tables[0].DefaultView.[0].Price</c> in C# or <c>Tables(0).DefaultView.(0).Price</c> in Visual Basic.</param>
         <summary>Evaluates data-binding expressions at run time.</summary>
         <returns>An <see cref="T:System.Object" /> instance that results from the evaluation of the data-binding expression.</returns>
         <remarks>
@@ -216,7 +216,7 @@
       </Parameters>
       <Docs>
         <param name="container">The object reference against which the expression is evaluated. This must be a valid object identifier in the page's specified language.</param>
-        <param name="expression">The navigation path from the <c>container</c> object to the public property value to be placed in the bound control property. This must be a string of property or field names separated by periods, such as <c>Tables[0].DefaultView.[0].Price</c> in C# or <c>Tables(0).DefaultView.(0).Price</c> in Visual Basic.</param>
+        <param name="expression">The navigation path from the <paramref name="container" /> object to the public property value to be placed in the bound control property. This must be a string of property or field names separated by periods, such as <c>Tables[0].DefaultView.[0].Price</c> in C# or <c>Tables(0).DefaultView.(0).Price</c> in Visual Basic.</param>
         <param name="format">A .NET Framework format string (like those used by <see cref="M:System.String.Format(System.String,System.Object)" />) that converts the <see cref="T:System.Object" /> instance returned by the data-binding expression to a <see cref="T:System.String" /> object.</param>
         <summary>Evaluates data-binding expressions at run time and formats the result as a string.</summary>
         <returns>A <see cref="T:System.String" /> object that results from evaluating the data-binding expression and converting it to a string type.</returns>
@@ -381,8 +381,8 @@
         <Parameter Name="expr" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="container">The object reference against which <c>expr</c> is evaluated. This must be a valid object identifier in the specified language for the page.</param>
-        <param name="expr">The navigation path from the <c>container</c> object to the public property value to place in the bound control property. This must be a string of property or field names separated by periods, such as <c>Tables[0].DefaultView.[0].Price</c> in C# or <c>Tables(0).DefaultView.(0).Price</c> in Visual Basic.</param>
+        <param name="container">The object reference against which <paramref name="expr" /> is evaluated. This must be a valid object identifier in the specified language for the page.</param>
+        <param name="expr">The navigation path from the <paramref name="container" /> object to the public property value to place in the bound control property. This must be a string of property or field names separated by periods, such as <c>Tables[0].DefaultView.[0].Price</c> in C# or <c>Tables(0).DefaultView.(0).Price</c> in Visual Basic.</param>
         <summary>Retrieves the value of a property of the specified container and navigation path.</summary>
         <returns>An object that results from the evaluation of the data-binding expression.</returns>
         <remarks>

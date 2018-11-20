@@ -958,7 +958,7 @@
       </Parameters>
       <Docs>
         <param name="receiver">The <see cref="T:System.ComponentModel.IComponent" /> that receives the location extender property.</param>
-        <param name="location">A <see cref="T:System.Drawing.Point" /> representing the location of <c>receiver</c>.</param>
+        <param name="location">A <see cref="T:System.Drawing.Point" /> representing the location of <paramref name="receiver" />.</param>
         <summary>Sets the value of the <see langword="Location" /> extender property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

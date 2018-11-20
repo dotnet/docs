@@ -1089,7 +1089,7 @@
         <Parameter Name="header" Type="System.ServiceModel.Channels.MessageHeader" />
       </Parameters>
       <Docs>
-        <param name="headerIndex">The zero-based index at which <c>header</c> should be inserted.</param>
+        <param name="headerIndex">The zero-based index at which <paramref name="header" /> should be inserted.</param>
         <param name="header">A message header to insert.</param>
         <summary>Inserts a message header into the collection at the specified index.</summary>
         <remarks>To be added.</remarks>

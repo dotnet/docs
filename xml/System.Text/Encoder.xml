@@ -230,14 +230,14 @@
       </Parameters>
       <Docs>
         <param name="chars">The address of a string of UTF-16 encoded characters to convert.</param>
-        <param name="charCount">The number of characters in <c>chars</c> to convert.</param>
+        <param name="charCount">The number of characters in <paramref name="chars" /> to convert.</param>
         <param name="bytes">The address of a buffer to store the converted bytes.</param>
-        <param name="byteCount">The maximum number of bytes in <c>bytes</c> to use in the conversion.</param>
+        <param name="byteCount">The maximum number of bytes in <paramref name="bytes" /> to use in the conversion.</param>
         <param name="flush">
           <see langword="true" /> to indicate no further data is to be converted; otherwise, <see langword="false" />.</param>
-        <param name="charsUsed">When this method returns, contains the number of characters from <c>chars</c> that were used in the conversion. This parameter is passed uninitialized.</param>
+        <param name="charsUsed">When this method returns, contains the number of characters from <paramref name="chars" /> that were used in the conversion. This parameter is passed uninitialized.</param>
         <param name="bytesUsed">When this method returns, contains the number of bytes that were used in the conversion. This parameter is passed uninitialized.</param>
-        <param name="completed">When this method returns, contains <see langword="true" /> if all the characters specified by <c>charCount</c> were converted; otherwise, <see langword="false" />. This parameter is passed uninitialized.</param>
+        <param name="completed">When this method returns, contains <see langword="true" /> if all the characters specified by <paramref name="charCount" /> were converted; otherwise, <see langword="false" />. This parameter is passed uninitialized.</param>
         <summary>Converts a buffer of Unicode characters to an encoded byte sequence and stores the result in another buffer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -317,16 +317,16 @@
       </Parameters>
       <Docs>
         <param name="chars">An array of characters to convert.</param>
-        <param name="charIndex">The first element of <c>chars</c> to convert.</param>
-        <param name="charCount">The number of elements of <c>chars</c> to convert.</param>
+        <param name="charIndex">The first element of <paramref name="chars" /> to convert.</param>
+        <param name="charCount">The number of elements of <paramref name="chars" /> to convert.</param>
         <param name="bytes">An array where the converted bytes are stored.</param>
-        <param name="byteIndex">The first element of <c>bytes</c> in which data is stored.</param>
-        <param name="byteCount">The maximum number of elements of <c>bytes</c> to use in the conversion.</param>
+        <param name="byteIndex">The first element of <paramref name="bytes" /> in which data is stored.</param>
+        <param name="byteCount">The maximum number of elements of <paramref name="bytes" /> to use in the conversion.</param>
         <param name="flush">
           <see langword="true" /> to indicate no further data is to be converted; otherwise, <see langword="false" />.</param>
-        <param name="charsUsed">When this method returns, contains the number of characters from <c>chars</c> that were used in the conversion. This parameter is passed uninitialized.</param>
+        <param name="charsUsed">When this method returns, contains the number of characters from <paramref name="chars" /> that were used in the conversion. This parameter is passed uninitialized.</param>
         <param name="bytesUsed">When this method returns, contains the number of bytes that were produced by the conversion. This parameter is passed uninitialized.</param>
-        <param name="completed">When this method returns, contains <see langword="true" /> if all the characters specified by <c>charCount</c> were converted; otherwise, <see langword="false" />. This parameter is passed uninitialized.</param>
+        <param name="completed">When this method returns, contains <see langword="true" /> if all the characters specified by <paramref name="charCount" /> were converted; otherwise, <see langword="false" />. This parameter is passed uninitialized.</param>
         <summary>Converts an array of Unicode characters to an encoded byte sequence and stores the result in an array of bytes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

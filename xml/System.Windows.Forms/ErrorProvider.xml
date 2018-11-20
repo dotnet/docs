@@ -199,7 +199,7 @@
       </Parameters>
       <Docs>
         <param name="newDataSource">A data set based on the <see cref="T:System.Collections.IList" /> interface to be monitored for errors. Typically, this is a <see cref="T:System.Data.DataSet" /> to be monitored for errors.</param>
-        <param name="newDataMember">A collection within the <c>newDataSource</c> to monitor for errors. Typically, this will be a <see cref="T:System.Data.DataTable" />.</param>
+        <param name="newDataMember">A collection within the <paramref name="newDataSource" /> to monitor for errors. Typically, this will be a <see cref="T:System.Data.DataTable" />.</param>
         <summary>Provides a method to set both the <see cref="P:System.Windows.Forms.ErrorProvider.DataSource" /> and <see cref="P:System.Windows.Forms.ErrorProvider.DataMember" /> at run time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -969,8 +969,8 @@
         <Parameter Name="padding" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="control">The <c>control</c> to set the padding for.</param>
-        <param name="padding">The number of pixels to add between the icon and the <c>control</c>.</param>
+        <param name="control">The <paramref name="control" /> to set the padding for.</param>
+        <param name="padding">The number of pixels to add between the icon and the <paramref name="control" />.</param>
         <summary>Sets the amount of extra space to leave between the specified control and the error icon.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

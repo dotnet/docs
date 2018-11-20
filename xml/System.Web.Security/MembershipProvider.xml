@@ -586,7 +586,7 @@
       </Parameters>
       <Docs>
         <param name="emailToMatch">The email address to search for.</param>
-        <param name="pageIndex">The index of the page of results to return. <c>pageIndex</c> is zero-based.</param>
+        <param name="pageIndex">The index of the page of results to return. <paramref name="pageIndex" /> is zero-based.</param>
         <param name="pageSize">The size of the page of results to return.</param>
         <param name="totalRecords">The total number of matched users.</param>
         <summary>Gets a collection of membership users where the email address contains the specified email address to match.</summary>
@@ -637,7 +637,7 @@
       </Parameters>
       <Docs>
         <param name="usernameToMatch">The user name to search for.</param>
-        <param name="pageIndex">The index of the page of results to return. <c>pageIndex</c> is zero-based.</param>
+        <param name="pageIndex">The index of the page of results to return. <paramref name="pageIndex" /> is zero-based.</param>
         <param name="pageSize">The size of the page of results to return.</param>
         <param name="totalRecords">The total number of matched users.</param>
         <summary>Gets a collection of membership users where the user name contains the specified user name to match.</summary>
@@ -686,7 +686,7 @@
         <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pageIndex">The index of the page of results to return. <c>pageIndex</c> is zero-based.</param>
+        <param name="pageIndex">The index of the page of results to return. <paramref name="pageIndex" /> is zero-based.</param>
         <param name="pageSize">The size of the page of results to return.</param>
         <param name="totalRecords">The total number of matched users.</param>
         <summary>Gets a collection of all the users in the data source in pages of data.</summary>

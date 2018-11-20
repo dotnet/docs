@@ -357,7 +357,7 @@
       <Docs>
         <param name="tableName">The name of the table that the action applies to.</param>
         <param name="action">The action to apply to the table.</param>
-        <param name="row">An object that represents a single row of data in a table. <c>row</c> is used to provide values for query-string parameters.</param>
+        <param name="row">An object that represents a single row of data in a table. <paramref name="row" /> is used to provide values for query-string parameters.</param>
         <summary>Returns the action path that is associated with a specific table.</summary>
         <returns>The URL that is associated with the route.</returns>
         <remarks>

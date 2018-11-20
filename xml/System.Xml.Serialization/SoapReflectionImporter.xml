@@ -394,7 +394,7 @@
         <param name="writeAccessors">
           <see langword="true" /> to indicate an RPC-style Web service binding; <see langword="false" /> to indicate a document-style Web service binding or a SOAP header.</param>
         <param name="validate">
-          <see langword="true" /> to indicate that a generated deserializer should check for the expected qualified name of the wrapper element; otherwise, <see langword="false" />. This parameter's value is relevant only if the <c>hasWrapperElement</c> parameter's value is <see langword="true" />.</param>
+          <see langword="true" /> to indicate that a generated deserializer should check for the expected qualified name of the wrapper element; otherwise, <see langword="false" />. This parameter's value is relevant only if the <paramref name="hasWrapperElement" /> parameter's value is <see langword="true" />.</param>
         <summary>Generates internal type mappings for information that is gathered from a Web service method.</summary>
         <returns>Internal .NET Framework type mappings to the element parts of a WSDL message definition.</returns>
         <remarks>
@@ -461,7 +461,7 @@
         <param name="writeAccessors">
           <see langword="true" /> to indicate an RPC-style Web service binding; <see langword="false" /> to indicate a document-style Web service binding or a SOAP header.</param>
         <param name="validate">
-          <see langword="true" /> to indicate that a generated deserializer should check for the expected qualified name of the wrapper element; otherwise, <see langword="false" />. This parameter's value is relevant only if the <c>hasWrapperElement</c> parameter's value is <see langword="true" />.</param>
+          <see langword="true" /> to indicate that a generated deserializer should check for the expected qualified name of the wrapper element; otherwise, <see langword="false" />. This parameter's value is relevant only if the <paramref name="hasWrapperElement" /> parameter's value is <see langword="true" />.</param>
         <param name="access">One of the <see cref="T:System.Xml.Serialization.XmlMappingAccess" /> values.</param>
         <summary>Generates internal type mappings for information that is gathered from a Web service method.</summary>
         <returns>Internal .NET Framework type mappings to the element parts of a WSDL message definition.</returns>

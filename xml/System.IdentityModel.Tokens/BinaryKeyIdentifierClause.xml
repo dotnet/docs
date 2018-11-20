@@ -57,7 +57,7 @@
         <param name="clauseType">The key identifier clause type. Sets the value of the <see cref="P:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.ClauseType" /> property.</param>
         <param name="identificationData">An array of <see cref="T:System.Byte" /> that contains the binary data that represents the key identifier.</param>
         <param name="cloneBuffer">
-          <see langword="true" /> to clone the array passed into the <c>identificationData</c> parameter; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to clone the array passed into the <paramref name="identificationData" /> parameter; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.BinaryKeyIdentifierClause" /> class using the specified key identifier clause type, binary data and a value that indicates whether the binary data must be cloned.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -90,7 +90,7 @@
         <param name="clauseType">The key identifier clause type. Sets the value of the <see cref="P:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.ClauseType" /> property.</param>
         <param name="identificationData">An array of <see cref="T:System.Byte" /> that contains the binary data that represents the key identifier. Sets the binary data that is returned by the <see cref="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer" /> method.</param>
         <param name="cloneBuffer">
-          <see langword="true" /> to clone the array passed into the <c>identificationData</c> parameter; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to clone the array passed into the <paramref name="identificationData" /> parameter; otherwise, <see langword="false" />.</param>
         <param name="derivationNonce">An array of <see cref="T:System.Byte" /> that contains the nonce that was used to create a derived key. Sets the value that is returned by the <see cref="M:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.GetDerivationNonce" /> method.</param>
         <param name="derivationLength">The size of the derived key. Sets the value of the <see cref="P:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.DerivationLength" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.BinaryKeyIdentifierClause" /> class using the specified key identifier clause type, binary data, a value that indicates whether the binary data must be cloned, a nonce and the key length.</summary>

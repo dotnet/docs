@@ -561,7 +561,7 @@
         <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="postDataKey">The key identifier for the control, used to index the <see cref="T:System.Collections.Specialized.NameValueCollection" /> specified in the <c>postCollection</c> parameter.</param>
+        <param name="postDataKey">The key identifier for the control, used to index the <see cref="T:System.Collections.Specialized.NameValueCollection" /> specified in the <paramref name="postCollection" /> parameter.</param>
         <param name="postCollection">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that contains value information indexed by control identifiers.</param>
         <summary>Processes the posted data for the <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> control.</summary>
         <returns>
@@ -1070,7 +1070,7 @@
         <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="postDataKey">The key identifier for the control, used to index the <c>postCollection</c>.</param>
+        <param name="postDataKey">The key identifier for the control, used to index the <paramref name="postCollection" />.</param>
         <param name="postCollection">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> object that contains value information indexed by control identifiers.</param>
         <summary>Processes posted data for the <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> control.</summary>
         <returns>

@@ -479,7 +479,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
       </Parameters>
       <Docs>
         <param name="charIndex">The zero-based character index indicating a position from which to search for the next spelling error.</param>
-        <param name="direction">One of the <see cref="T:System.Windows.Documents.LogicalDirection" /> values that specifies the direction in which to search for the next spelling error, starting at the specified <c>charIndex</c>.</param>
+        <param name="direction">One of the <see cref="T:System.Windows.Documents.LogicalDirection" /> values that specifies the direction in which to search for the next spelling error, starting at the specified <paramref name="charIndex" />.</param>
         <summary>Returns the beginning character index for the next spelling error in the contents of the text box.</summary>
         <returns>The character index for the beginning of the next spelling error in the contents of the text box, or –1 if no next spelling error exists.</returns>
         <remarks>To be added.</remarks>

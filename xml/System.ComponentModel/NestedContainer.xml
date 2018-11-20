@@ -136,7 +136,7 @@
       </Parameters>
       <Docs>
         <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to create a site for.</param>
-        <param name="name">The name to assign to <c>component</c>, or <see langword="null" /> to skip the name assignment.</param>
+        <param name="name">The name to assign to <paramref name="component" />, or <see langword="null" /> to skip the name assignment.</param>
         <summary>Creates a site for the component within the container.</summary>
         <returns>The newly created <see cref="T:System.ComponentModel.ISite" />.</returns>
         <remarks>

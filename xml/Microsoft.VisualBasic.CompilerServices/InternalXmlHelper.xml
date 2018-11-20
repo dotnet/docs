@@ -119,7 +119,7 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the XML attribute to create.</param>
-        <param name="value">The value to assign to the created XML attribute. If <c>value</c> is <see langword="Nothing" />, this method returns <see langword="Nothing" />.</param>
+        <param name="value">The value to assign to the created XML attribute. If <paramref name="value" /> is <see langword="Nothing" />, this method returns <see langword="Nothing" />.</param>
         <summary>Creates an XML attribute that has the supplied name and value. This method is not intended to be used from your code.</summary>
         <returns>An <see cref="T:System.Xml.Linq.XAttribute" /> object that has the supplied name and value.</returns>
         <remarks>To be added.</remarks>

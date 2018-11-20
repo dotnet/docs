@@ -224,7 +224,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.Array" /> is the destination of the elements copied from the current <see cref="T:System.Web.UI.WebControls.EmbeddedMailObjectsCollection" />. The array must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the collection objects to a one-dimensional <see cref="T:System.Array" /> instance beginning at the specified index in the array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="array" /> is <see langword="null" />.</exception>

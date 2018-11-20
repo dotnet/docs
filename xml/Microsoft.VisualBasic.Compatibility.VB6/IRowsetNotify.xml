@@ -69,7 +69,7 @@
       <Docs>
         <param name="rowset">A pointer to the rowset, because the consumer may be receiving notifications from multiple rowsets and this identifies which one is calling.</param>
         <param name="hRow">The handle of the row in which the column value was changed.</param>
-        <param name="cColumns">The count of columns in <c>rgColumns</c>.</param>
+        <param name="cColumns">The count of columns in <paramref name="rgColumns" />.</param>
         <param name="rgColumns">An array of columns in the row for which the value was changed.</param>
         <param name="dbReason">The reason for the change, as indicated by the value of <see langword="DBREASON" />.</param>
         <param name="eventPhase">The phase of this notification.</param>
@@ -115,7 +115,7 @@
       </Parameters>
       <Docs>
         <param name="rowset">A pointer to the rowset, because the consumer may be receiving notifications from multiple rowsets and this identifies which one is calling.</param>
-        <param name="cRows">The count of row handles in <c>rghRows</c>.</param>
+        <param name="cRows">The count of row handles in <paramref name="rghRows" />.</param>
         <param name="rghRows">An array of handles of rows that are changing.</param>
         <param name="dbReason">The reason for the change, as indicated by the value of <see langword="DBREASON" />.</param>
         <param name="eventPhase">The phase of this notification.</param>

@@ -87,7 +87,7 @@
       </Parameters>
       <Docs>
         <param name="type">The type of object.</param>
-        <param name="eventName">The name of an event on <c>type</c>.</param>
+        <param name="eventName">The name of an event on <paramref name="type" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ComAwareEventInfo" /> class by using the specified type and a name of the event on the type.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -71,7 +71,7 @@
       </Parameters>
       <Docs>
         <param name="activityType">The type of the object that this condition is executed against. Normally it is the workflow, but can be any valid type.</param>
-        <param name="typeProvider">An optional <see cref="T:System.Workflow.ComponentModel.Compiler.ITypeProvider" /> implementation that is used to determine what types are available in the condition. If one is not specified, only types in the assembly specified by <c>activityType</c> and any assemblies it references is available.</param>
+        <param name="typeProvider">An optional <see cref="T:System.Workflow.ComponentModel.Compiler.ITypeProvider" /> implementation that is used to determine what types are available in the condition. If one is not specified, only types in the assembly specified by <paramref name="activityType" /> and any assemblies it references is available.</param>
         <param name="expression">The initial <see cref="T:System.CodeDom.CodeExpression" /> to be displayed.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.Design.RuleConditionDialog" /> class with the specified activity type, the type provider, and the expression.</summary>
         <remarks>To be added.</remarks>

@@ -1252,7 +1252,7 @@
         <param name="obj">The object whose field value will be set.</param>
         <param name="value">The value to assign to the field.</param>
         <param name="invokeAttr">A field of <see cref="T:System.Reflection.Binder" /> that specifies the type of binding that is desired (for example, <see langword="Binder.CreateInstance" /> or <see langword="Binder.ExactBinding" />).</param>
-        <param name="binder">A set of properties that enables the binding, coercion of argument types, and invocation of members through reflection. If <c>binder</c> is <see langword="null" />, then <see langword="Binder.DefaultBinding" /> is used.</param>
+        <param name="binder">A set of properties that enables the binding, coercion of argument types, and invocation of members through reflection. If <paramref name="binder" /> is <see langword="null" />, then <see langword="Binder.DefaultBinding" /> is used.</param>
         <param name="culture">The software preferences of a particular culture.</param>
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.Reflection.PropertyInfo.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" /> method.</summary>
         <remarks>

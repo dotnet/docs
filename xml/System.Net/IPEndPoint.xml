@@ -97,7 +97,7 @@
       </Parameters>
       <Docs>
         <param name="address">The IP address of the Internet host.</param>
-        <param name="port">The port number associated with the <c>address</c>, or 0 to specify any available port. <c>port</c> is in host order.</param>
+        <param name="port">The port number associated with the <paramref name="address" />, or 0 to specify any available port. <paramref name="port" /> is in host order.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.IPEndPoint" /> class with the specified address and port number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -157,7 +157,7 @@
       </Parameters>
       <Docs>
         <param name="address">An <see cref="T:System.Net.IPAddress" />.</param>
-        <param name="port">The port number associated with the <c>address</c>, or 0 to specify any available port. <c>port</c> is in host order.</param>
+        <param name="port">The port number associated with the <paramref name="address" />, or 0 to specify any available port. <paramref name="port" /> is in host order.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.IPEndPoint" /> class with the specified address and port number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -555,7 +555,7 @@
       <Docs>
         <param name="element">The element to make a focus scope.</param>
         <param name="value">
-          <see langword="true" /> if <c>element</c> is a focus scope; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="element" /> is a focus scope; otherwise, <see langword="false" />.</param>
         <summary>Sets the specified <see cref="T:System.Windows.DependencyObject" /> as a focus scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

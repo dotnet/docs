@@ -2469,7 +2469,7 @@
       </Parameters>
       <Docs>
         <param name="sourceDirectoryName">The name of the directory to move.</param>
-        <param name="destinationDirectoryName">The path to the new location for <c>sourceDirectoryName</c>. This cannot be the path to an existing directory.</param>
+        <param name="destinationDirectoryName">The path to the new location for <paramref name="sourceDirectoryName" />. This cannot be the path to an existing directory.</param>
         <summary>Moves a specified directory and its contents to a new location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

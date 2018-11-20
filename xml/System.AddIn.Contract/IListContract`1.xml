@@ -285,7 +285,7 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert <c>item</c>.</param>
+        <param name="index">The zero-based index at which to insert <paramref name="item" />.</param>
         <param name="item">The <see cref="T:System.AddIn.Contract.IContract" /> object to insert in the <see cref="T:System.AddIn.Contract.IListContract`1" /> collection.</param>
         <summary>Inserts an item at the specified index in an <see cref="T:System.AddIn.Contract.IListContract`1" /> collection.</summary>
         <remarks>

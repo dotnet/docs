@@ -791,7 +791,7 @@
         <Parameter Name="bytes" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="srcEncoding">The encoding format of <c>bytes</c>.</param>
+        <param name="srcEncoding">The encoding format of <paramref name="bytes" />.</param>
         <param name="dstEncoding">The target encoding format.</param>
         <param name="bytes">The bytes to convert.</param>
         <summary>Converts an entire byte array from one encoding to another.</summary>
@@ -870,10 +870,10 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="srcEncoding">The encoding of the source array, <c>bytes</c>.</param>
+        <param name="srcEncoding">The encoding of the source array, <paramref name="bytes" />.</param>
         <param name="dstEncoding">The encoding of the output array.</param>
         <param name="bytes">The array of bytes to convert.</param>
-        <param name="index">The index of the first element of <c>bytes</c> to convert.</param>
+        <param name="index">The index of the first element of <paramref name="bytes" /> to convert.</param>
         <param name="count">The number of bytes to convert.</param>
         <summary>Converts a range of bytes in a byte array from one encoding to another.</summary>
         <returns>An array of type <see cref="T:System.Byte" /> containing the result of converting a range of bytes in <paramref name="bytes" /> from <paramref name="srcEncoding" /> to <paramref name="dstEncoding" />.</returns>

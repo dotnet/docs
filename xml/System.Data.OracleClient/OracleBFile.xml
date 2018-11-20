@@ -652,8 +652,8 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">An array of bytes. When this method returns, the buffer contains the specified byte array with the values between <c>offset</c> and (<c>offset</c> + <c>count</c>) replaced by the bytes read from the current source.</param>
-        <param name="offset">The zero-based byte offset in <c>buffer</c> at which to begin storing the data read from the current stream.</param>
+        <param name="buffer">An array of bytes. When this method returns, the buffer contains the specified byte array with the values between <paramref name="offset" /> and (<paramref name="offset" /> + <paramref name="count" />) replaced by the bytes read from the current source.</param>
+        <param name="offset">The zero-based byte offset in <paramref name="buffer" /> at which to begin storing the data read from the current stream.</param>
         <param name="count">The maximum number of bytes to be read from the current stream.</param>
         <summary>Reads a sequence of bytes from the current <see cref="T:System.Data.OracleClient.OracleBFile" /> stream and advances the position within the stream by the number of bytes read.</summary>
         <returns>The total number of bytes read into the buffer. This may be less than the number of bytes requested if that many bytes are not currently available, or zero if the end of the file has been reached.</returns>
@@ -721,7 +721,7 @@ using (dataReader) {
         <Parameter Name="origin" Type="System.IO.SeekOrigin" />
       </Parameters>
       <Docs>
-        <param name="offset">A byte offset relative to origin. If <c>offset</c> is negative, the new position will precede the position specified by <c>origin</c> by the number of bytes specified by <c>offset</c>. If <c>offset</c> is zero, the new position will be the position specified by <c>origin</c>. If <c>offset</c> is positive, the new position will follow the position specified by <c>origin</c> by the number of bytes specified by <c>offset</c>.</param>
+        <param name="offset">A byte offset relative to origin. If <paramref name="offset" /> is negative, the new position will precede the position specified by <paramref name="origin" /> by the number of bytes specified by <paramref name="offset" />. If <paramref name="offset" /> is zero, the new position will be the position specified by <paramref name="origin" />. If <paramref name="offset" /> is positive, the new position will follow the position specified by <paramref name="origin" /> by the number of bytes specified by <paramref name="offset" />.</param>
         <param name="origin">A value of type <see langword="System.IO.SeekOrigin" /> indicating the reference point used to obtain the new position.</param>
         <summary>Sets the position on the current <see cref="T:System.Data.OracleClient.OracleBFile" /> stream.</summary>
         <returns>The new position within the current stream.</returns>

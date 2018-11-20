@@ -104,7 +104,7 @@
       </Parameters>
       <Docs>
         <param name="context">An object that provides references to intrinsic server objects that are used to service HTTP requests.</param>
-        <param name="callback">The method to call when the asynchronous method call is complete. If <c>callback</c> is <see langword="null" />, the delegate is not called.</param>
+        <param name="callback">The method to call when the asynchronous method call is complete. If <paramref name="callback" /> is <see langword="null" />, the delegate is not called.</param>
         <param name="state">Any state data that is needed to process the request.</param>
         <summary>Initiates an asynchronous call to the HTTP handler.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> that contains information about the status of the process.</returns>

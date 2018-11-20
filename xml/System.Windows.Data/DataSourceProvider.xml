@@ -484,7 +484,7 @@
         <param name="newData">The data that is the result of the query.</param>
         <param name="error">The error that occurred while running the query. This value is <see langword="null" /> if there is no error.</param>
         <param name="completionWork">Optional delegate that is used to execute completion work on the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread, for example, to set additional properties.</param>
-        <param name="callbackArguments">Optional arguments to send as a parameter with the <c>completionWork</c> delegate.</param>
+        <param name="callbackArguments">Optional arguments to send as a parameter with the <paramref name="completionWork" /> delegate.</param>
         <summary>Derived classes call this method to indicate that a query has finished.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

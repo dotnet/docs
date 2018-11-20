@@ -227,7 +227,7 @@
         <Parameter Name="portType" Type="System.Web.Services.Description.PortType" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the <c>portType</c> parameter.</param>
+        <param name="index">The zero-based index at which to insert the <paramref name="portType" /> parameter.</param>
         <param name="portType">The <see cref="T:System.Web.Services.Description.PortType" /> to add to the collection.</param>
         <summary>Adds the specified <see cref="T:System.Web.Services.Description.PortType" /> to the <see cref="T:System.Web.Services.Description.PortTypeCollection" /> at the specified zero-based index.</summary>
         <remarks>

@@ -538,7 +538,7 @@
       </Parameters>
       <Docs>
         <param name="array">A <see cref="T:System.Data.Common.DataColumnMapping" /> array to which to copy the <see cref="T:System.Data.Common.DataColumnMappingCollection" /> elements.</param>
-        <param name="index">The zero-based index in the <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in the <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the elements of the <see cref="T:System.Data.Common.DataColumnMappingCollection" /> to the specified <see cref="T:System.Data.Common.DataColumnMapping" /> array.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>

@@ -112,7 +112,7 @@
         <param name="isFilled">
           <see langword="true" /> to use the area contained by this figure for hit-testing, rendering, and clipping; otherwise, <see langword="false" />.</param>
         <param name="isClosed">
-          <see langword="true" /> to close the figure; otherwise, <see langword="false" />. For example, if two connecting lines are drawn, and <c>isClosed</c> is set to <see langword="false" />, the drawing will just be of two lines but if <c>isClosed</c> is set to <see langword="true" />, the two lines will be closed to create a triangle.</param>
+          <see langword="true" /> to close the figure; otherwise, <see langword="false" />. For example, if two connecting lines are drawn, and <paramref name="isClosed" /> is set to <see langword="false" />, the drawing will just be of two lines but if <paramref name="isClosed" /> is set to <see langword="true" />, the two lines will be closed to create a triangle.</param>
         <summary>Specifies the starting point for a new figure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

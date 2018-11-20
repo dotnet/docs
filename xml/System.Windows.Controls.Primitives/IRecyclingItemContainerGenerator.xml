@@ -41,8 +41,8 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="position">The zero-based index of the first element to reuse. <c>position</c> must refer to a previously generated (realized) item.</param>
-        <param name="count">The number of elements to reuse, starting at <c>position</c>.</param>
+        <param name="position">The zero-based index of the first element to reuse. <paramref name="position" /> must refer to a previously generated (realized) item.</param>
+        <param name="count">The number of elements to reuse, starting at <paramref name="position" />.</param>
         <summary>Disassociates item containers from their data items and saves the containers so they can be reused later for other data items.</summary>
         <remarks>To be added.</remarks>
       </Docs>

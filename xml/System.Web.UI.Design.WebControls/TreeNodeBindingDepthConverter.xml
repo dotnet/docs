@@ -108,7 +108,7 @@
         <param name="context">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
         <param name="culture">The <see cref="T:System.Globalization.CultureInfo" /> to use as the current culture.</param>
         <param name="value">The object to convert.</param>
-        <param name="destinationType">The <see cref="T:System.Type" /> to convert the <c>value</c> to.</param>
+        <param name="destinationType">The <see cref="T:System.Type" /> to convert the <paramref name="value" /> to.</param>
         <summary>Converts the object to the specified type using the provided context and culture information.</summary>
         <returns>An object that represents the converted value.</returns>
         <remarks>To be added.</remarks>

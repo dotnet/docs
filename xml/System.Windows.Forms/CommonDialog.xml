@@ -223,8 +223,8 @@
       <Docs>
         <param name="hWnd">The window handle of the message to send.</param>
         <param name="msg">The Win32 message to send.</param>
-        <param name="wparam">The <c>wparam</c> to send with the message.</param>
-        <param name="lparam">The <c>lparam</c> to send with the message.</param>
+        <param name="wparam">The <paramref name="wparam" /> to send with the message.</param>
+        <param name="lparam">The <paramref name="lparam" /> to send with the message.</param>
         <summary>Defines the owner window procedure that is overridden to add specific functionality to a common dialog box.</summary>
         <returns>The result of the message processing, which is dependent on the message sent.</returns>
         <remarks>

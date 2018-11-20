@@ -1471,7 +1471,7 @@
         <Parameter Name="desiredFrameRate" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="timeline">The <see cref="T:System.Windows.Media.Animation.Timeline" /> to which <c>desiredFrameRate</c> is assigned.</param>
+        <param name="timeline">The <see cref="T:System.Windows.Media.Animation.Timeline" /> to which <paramref name="desiredFrameRate" /> is assigned.</param>
         <param name="desiredFrameRate">The maximum number of frames this timeline should generate each second, or <see langword="null" /> if the system should control the number of frames.</param>
         <summary>Sets the desired frame rate of the specified <see cref="T:System.Windows.Media.Animation.Timeline" />.</summary>
         <remarks>

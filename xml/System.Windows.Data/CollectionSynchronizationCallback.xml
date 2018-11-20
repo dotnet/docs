@@ -26,7 +26,7 @@
     <param name="context">An object used to synchronize the collection.</param>
     <param name="accessMethod">A delegate to the method that performs the operation on the collection.</param>
     <param name="writeAccess">
-      <see langword="true" /> if <c>accessMethod</c> writes to the collection; otherwise, <see langword="false" />.</param>
+      <see langword="true" /> if <paramref name="accessMethod" /> writes to the collection; otherwise, <see langword="false" />.</param>
     <summary>Represent the method that synchronizes a collection for cross-thread access.</summary>
     <remarks>To be added.</remarks>
   </Docs>

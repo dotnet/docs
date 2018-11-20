@@ -1541,8 +1541,8 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">When this method returns, contains the specified character array with the values between <c>index</c> and (<c>index + count - 1</c>) replaced by the characters read from the current source.</param>
-        <param name="index">The index of <c>buffer</c> at which to begin writing.</param>
+        <param name="buffer">When this method returns, contains the specified character array with the values between <paramref name="index" /> and (<c>index + count - 1</c>) replaced by the characters read from the current source.</param>
+        <param name="index">The index of <paramref name="buffer" /> at which to begin writing.</param>
         <param name="count">The maximum number of characters to read.</param>
         <summary>Reads a specified maximum of characters from the current stream into a buffer, beginning at the specified index.</summary>
         <returns>The number of characters that have been read, or 0 if at the end of the stream and no data was read. The number will be less than or equal to the <paramref name="count" /> parameter, depending on whether the data is available within the stream.</returns>
@@ -1658,8 +1658,8 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">When this method returns, contains the specified character array with the values between <c>index</c> and (<c>index</c> + <c>count</c> - 1) replaced by the characters read from the current source.</param>
-        <param name="index">The position in <c>buffer</c> at which to begin writing.</param>
+        <param name="buffer">When this method returns, contains the specified character array with the values between <paramref name="index" /> and (<paramref name="index" /> + <paramref name="count" /> - 1) replaced by the characters read from the current source.</param>
+        <param name="index">The position in <paramref name="buffer" /> at which to begin writing.</param>
         <param name="count">The maximum number of characters to read. If the end of the stream is reached before the specified number of characters is written into the buffer, the current method returns.</param>
         <summary>Reads a specified maximum number of characters from the current stream asynchronously and writes the data to a buffer, beginning at the specified index.</summary>
         <returns>A task that represents the asynchronous read operation. The value of the <paramref name="TResult" /> parameter contains the total number of characters read into the buffer. The result value can be less than the number of characters requested if the number of characters currently available is less than the requested number, or it can be 0 (zero) if the end of the stream has been reached.</returns>
@@ -1759,8 +1759,8 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">When this method returns, contains the specified character array with the values between <c>index</c> and (<c>index + count - 1</c>) replaced by the characters read from the current source.</param>
-        <param name="index">The position in <c>buffer</c> at which to begin writing.</param>
+        <param name="buffer">When this method returns, contains the specified character array with the values between <paramref name="index" /> and (<c>index + count - 1</c>) replaced by the characters read from the current source.</param>
+        <param name="index">The position in <paramref name="buffer" /> at which to begin writing.</param>
         <param name="count">The maximum number of characters to read.</param>
         <summary>Reads a specified maximum number of characters from the current stream and writes the data to a buffer, beginning at the specified index.</summary>
         <returns>The number of characters that have been read. The number will be less than or equal to <paramref name="count" />, depending on whether all input characters have been read.</returns>
@@ -1859,8 +1859,8 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">When this method returns, contains the specified character array with the values between <c>index</c> and (<c>index</c> + <c>count</c> - 1) replaced by the characters read from the current source.</param>
-        <param name="index">The position in <c>buffer</c> at which to begin writing.</param>
+        <param name="buffer">When this method returns, contains the specified character array with the values between <paramref name="index" /> and (<paramref name="index" /> + <paramref name="count" /> - 1) replaced by the characters read from the current source.</param>
+        <param name="index">The position in <paramref name="buffer" /> at which to begin writing.</param>
         <param name="count">The maximum number of characters to read. If the end of the stream is reached before the specified number of characters is written into the buffer, the method returns.</param>
         <summary>Reads a specified maximum number of characters from the current stream asynchronously and writes the data to a buffer, beginning at the specified index.</summary>
         <returns>A task that represents the asynchronous read operation. The value of the <paramref name="TResult" /> parameter contains the total number of characters read into the buffer. The result value can be less than the number of characters requested if the number of characters currently available is less than the requested number, or it can be 0 (zero) if the end of the stream has been reached.</returns>

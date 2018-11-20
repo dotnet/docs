@@ -1352,7 +1352,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="method">A delegate to a method that takes parameters of the same number and type that are contained in the <c>args</c> parameter.</param>
+        <param name="method">A delegate to a method that takes parameters of the same number and type that are contained in the <paramref name="args" /> parameter.</param>
         <param name="args">An array of objects to pass as arguments to the given method. This can be <see langword="null" /> if no arguments are needed.</param>
         <summary>Executes the specified delegate asynchronously with the specified arguments, on the thread that the control's underlying handle was created on.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> that represents the result of the <see cref="M:System.Windows.Forms.Control.BeginInvoke(System.Delegate)" /> operation.</returns>
@@ -7347,7 +7347,7 @@ MyControl.Font = New Font(MyControl.Font, _
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="method">A delegate to a method that takes parameters of the same number and type that are contained in the <c>args</c> parameter.</param>
+        <param name="method">A delegate to a method that takes parameters of the same number and type that are contained in the <paramref name="args" /> parameter.</param>
         <param name="args">An array of objects to pass as arguments to the specified method. This parameter can be <see langword="null" /> if the method takes no arguments.</param>
         <summary>Executes the specified delegate, on the thread that owns the control's underlying window handle, with the specified list of arguments.</summary>
         <returns>An <see cref="T:System.Object" /> that contains the return value from the delegate being invoked, or <see langword="null" /> if the delegate has no return value.</returns>

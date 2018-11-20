@@ -209,7 +209,7 @@
       </Parameters>
       <Docs>
         <param name="newNode">The <see cref="T:System.Xml.XmlAttribute" /> to insert.</param>
-        <param name="refNode">The <see cref="T:System.Xml.XmlAttribute" /> that is the reference attribute. <c>newNode</c> is placed after the <c>refNode</c>.</param>
+        <param name="refNode">The <see cref="T:System.Xml.XmlAttribute" /> that is the reference attribute. <paramref name="newNode" /> is placed after the <paramref name="refNode" />.</param>
         <summary>Inserts the specified attribute immediately after the specified reference attribute.</summary>
         <returns>The <see langword="XmlAttribute" /> to insert into the collection.</returns>
         <remarks>
@@ -271,7 +271,7 @@
       </Parameters>
       <Docs>
         <param name="newNode">The <see cref="T:System.Xml.XmlAttribute" /> to insert.</param>
-        <param name="refNode">The <see cref="T:System.Xml.XmlAttribute" /> that is the reference attribute. <c>newNode</c> is placed before the <c>refNode</c>.</param>
+        <param name="refNode">The <see cref="T:System.Xml.XmlAttribute" /> that is the reference attribute. <paramref name="newNode" /> is placed before the <paramref name="refNode" />.</param>
         <summary>Inserts the specified attribute immediately before the specified reference attribute.</summary>
         <returns>The <see langword="XmlAttribute" /> to insert into the collection.</returns>
         <remarks>

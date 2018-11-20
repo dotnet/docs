@@ -185,7 +185,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer to read data into.</param>
-        <param name="offset">The byte offset in <c>buffer</c> at which to begin reading.</param>
+        <param name="offset">The byte offset in <paramref name="buffer" /> at which to begin reading.</param>
         <param name="count">The maximum number of bytes to read.</param>
         <param name="callback">The method to call when the asynchronous read operation is completed.</param>
         <param name="state">A user-provided object that distinguishes this particular asynchronous read request from other requests.</param>
@@ -259,7 +259,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer that contains the data to write to the current stream.</param>
-        <param name="offset">The zero-based byte offset in <c>buffer</c> at which to begin copying bytes to the current stream.</param>
+        <param name="offset">The zero-based byte offset in <paramref name="buffer" /> at which to begin copying bytes to the current stream.</param>
         <param name="count">The maximum number of bytes to write.</param>
         <param name="callback">The method to call when the asynchronous write operation is completed.</param>
         <param name="state">A user-provided object that distinguishes this particular asynchronous write request from other requests.</param>
@@ -1260,8 +1260,8 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">When this method returns, contains the specified byte array with the values between <c>offset</c> and (<c>offset</c> + <c>count</c> - 1) replaced by the bytes read from the current source.</param>
-        <param name="offset">The byte offset in the <c>buffer</c> array at which the bytes that are read will be placed.</param>
+        <param name="buffer">When this method returns, contains the specified byte array with the values between <paramref name="offset" /> and (<paramref name="offset" /> + <paramref name="count" /> - 1) replaced by the bytes read from the current source.</param>
+        <param name="offset">The byte offset in the <paramref name="buffer" /> array at which the bytes that are read will be placed.</param>
         <param name="count">The maximum number of bytes to read.</param>
         <summary>Reads a block of bytes from a stream and writes the data to a specified buffer.</summary>
         <returns>The total number of bytes that are read into <paramref name="buffer" />. This might be less than the number of bytes requested if that number of bytes is not currently available, or 0 if the end of the stream is reached.</returns>
@@ -1516,8 +1516,8 @@
         <Parameter Name="origin" Type="System.IO.SeekOrigin" />
       </Parameters>
       <Docs>
-        <param name="offset">The point, relative to <c>origin</c>, to begin seeking from.</param>
-        <param name="origin">Specifies the beginning, the end, or the current position as a reference point for <c>offset</c>, using a value of type <see cref="T:System.IO.SeekOrigin" />.</param>
+        <param name="offset">The point, relative to <paramref name="origin" />, to begin seeking from.</param>
+        <param name="origin">Specifies the beginning, the end, or the current position as a reference point for <paramref name="offset" />, using a value of type <see cref="T:System.IO.SeekOrigin" />.</param>
         <summary>Sets the current position of the current stream to the specified value.</summary>
         <returns>The new position in the stream.</returns>
         <remarks>
@@ -1761,7 +1761,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer that contains data to write to the pipe.</param>
-        <param name="offset">The zero-based byte offset in <c>buffer</c> at which to begin copying bytes to the current stream.</param>
+        <param name="offset">The zero-based byte offset in <paramref name="buffer" /> at which to begin copying bytes to the current stream.</param>
         <param name="count">The maximum number of bytes to write to the current stream.</param>
         <summary>Writes a block of bytes to the current stream using data from a buffer.</summary>
         <remarks>

@@ -565,7 +565,7 @@
       </Parameters>
       <Docs>
         <param name="year">An integer from 1 through 9378 that represents the year.</param>
-        <param name="month">An integer that represents the month, and ranges from 1 through 12 if <c>year</c> is not 9378, or 1 through 10 if <c>year</c> is 9378.</param>
+        <param name="month">An integer that represents the month, and ranges from 1 through 12 if <paramref name="year" /> is not 9378, or 1 through 10 if <paramref name="year" /> is 9378.</param>
         <param name="era">An integer from 0 through 1 that represents the era.</param>
         <summary>Returns the number of days in the specified month of the specified year and era.</summary>
         <returns>The number of days in the specified month of the specified year and era.</returns>
@@ -950,7 +950,7 @@
       </Parameters>
       <Docs>
         <param name="year">An integer from 1 through 9378 that represents the year.</param>
-        <param name="month">An integer that represents the month and ranges from 1 through 12 if <c>year</c> is not 9378, or 1 through 10 if <c>year</c> is 9378.</param>
+        <param name="month">An integer that represents the month and ranges from 1 through 12 if <paramref name="year" /> is not 9378, or 1 through 10 if <paramref name="year" /> is 9378.</param>
         <param name="day">An integer from 1 through 31 that represents the day.</param>
         <param name="era">An integer from 0 through 1 that represents the era.</param>
         <summary>Determines whether the specified date is a leap day.</summary>
@@ -1016,7 +1016,7 @@
       </Parameters>
       <Docs>
         <param name="year">An integer from 1 through 9378 that represents the year.</param>
-        <param name="month">An integer that represents the month and ranges from 1 through 12 if <c>year</c> is not 9378, or 1 through 10 if <c>year</c> is 9378.</param>
+        <param name="month">An integer that represents the month and ranges from 1 through 12 if <paramref name="year" /> is not 9378, or 1 through 10 if <paramref name="year" /> is 9378.</param>
         <param name="era">An integer from 0 through 1 that represents the era.</param>
         <summary>Determines whether the specified month in the specified year and era is a leap month.</summary>
         <returns>Always returns <see langword="false" /> because the <see cref="T:System.Globalization.PersianCalendar" /> class does not support the notion of a leap month.</returns>

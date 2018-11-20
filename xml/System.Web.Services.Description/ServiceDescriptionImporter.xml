@@ -94,8 +94,8 @@
       </Parameters>
       <Docs>
         <param name="serviceDescription">The <see cref="T:System.Web.Services.Description.ServiceDescription" /> instance to add to the collection</param>
-        <param name="appSettingUrlKey">Sets the initial value of the <see langword="Url" /> property of the proxy class to be generated from the instance represented by the <c>serviceDescription</c> parameter. Specifies that it should be generated from the web.config file's <see langword="&lt;appsetting&gt;" /> section.</param>
-        <param name="appSettingBaseUrl">Sets the initial value of the <see langword="Url" /> property of the proxy class to be generated from the instance represented by the <c>serviceDescription</c> parameter. Specifies that it should be constructed from a combination of the value of this parameter and the URL specified by the <see langword="location" /> attribute in the WSDL document.</param>
+        <param name="appSettingUrlKey">Sets the initial value of the <see langword="Url" /> property of the proxy class to be generated from the instance represented by the <paramref name="serviceDescription" /> parameter. Specifies that it should be generated from the web.config file's <see langword="&lt;appsetting&gt;" /> section.</param>
+        <param name="appSettingBaseUrl">Sets the initial value of the <see langword="Url" /> property of the proxy class to be generated from the instance represented by the <paramref name="serviceDescription" /> parameter. Specifies that it should be constructed from a combination of the value of this parameter and the URL specified by the <see langword="location" /> attribute in the WSDL document.</param>
         <summary>Adds the specified <see cref="T:System.Web.Services.Description.ServiceDescription" /> to the collection of <see cref="P:System.Web.Services.Description.ServiceDescriptionImporter.ServiceDescriptions" /> values to be imported.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

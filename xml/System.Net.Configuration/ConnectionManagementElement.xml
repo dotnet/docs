@@ -82,7 +82,7 @@
       </Parameters>
       <Docs>
         <param name="address">A string that identifies the address of a remote computer.</param>
-        <param name="maxConnection">An integer that identifies the maximum number of connections allowed to <c>address</c> from the local computer.</param>
+        <param name="maxConnection">An integer that identifies the maximum number of connections allowed to <paramref name="address" /> from the local computer.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.ConnectionManagementElement" /> class with the specified address and connection limit information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

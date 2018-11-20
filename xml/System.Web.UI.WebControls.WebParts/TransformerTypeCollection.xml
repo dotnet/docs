@@ -105,7 +105,7 @@
       </Parameters>
       <Docs>
         <param name="existingTransformerTypes">A collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects already contained in a <see cref="T:System.Web.UI.WebControls.WebParts.TransformerTypeCollection" />.</param>
-        <param name="transformerTypes">A collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects to combine with the collection in the <c>existingTransformerTypes</c> parameter.</param>
+        <param name="transformerTypes">A collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects to combine with the collection in the <paramref name="existingTransformerTypes" /> parameter.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.TransformerTypeCollection" /> class by combining an existing <see cref="T:System.Web.UI.WebControls.WebParts.TransformerTypeCollection" /> collection with the specified <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

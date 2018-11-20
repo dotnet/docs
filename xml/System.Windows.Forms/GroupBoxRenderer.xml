@@ -128,7 +128,7 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the group box.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the group box.</param>
         <param name="groupBoxText">The <see cref="T:System.String" /> to draw with the group box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>groupBoxText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="groupBoxText" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.GroupBoxState" /> values that specifies the visual state of the group box.</param>
         <summary>Draws a group box control in the specified state and bounds, with the specified text and font.</summary>
         <remarks>
@@ -182,8 +182,8 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the group box.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the group box.</param>
         <param name="groupBoxText">The <see cref="T:System.String" /> to draw with the group box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>groupBoxText</c>.</param>
-        <param name="textColor">The <see cref="T:System.Drawing.Color" /> to apply to <c>groupBoxText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="groupBoxText" />.</param>
+        <param name="textColor">The <see cref="T:System.Drawing.Color" /> to apply to <paramref name="groupBoxText" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.GroupBoxState" /> values that specifies the visual state of the group box.</param>
         <summary>Draws a group box control in the specified state and bounds, with the specified text, font, and color.</summary>
         <remarks>
@@ -223,7 +223,7 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the group box.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the group box.</param>
         <param name="groupBoxText">The <see cref="T:System.String" /> to draw with the group box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>groupBoxText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="groupBoxText" />.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.GroupBoxState" /> values that specifies the visual state of the group box.</param>
         <summary>Draws a group box control in the specified state and bounds, with the specified text, font, and text formatting.</summary>
@@ -265,8 +265,8 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the group box.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the group box.</param>
         <param name="groupBoxText">The <see cref="T:System.String" /> to draw with the group box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>groupBoxText</c>.</param>
-        <param name="textColor">The <see cref="T:System.Drawing.Color" /> to apply to <c>groupBoxText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="groupBoxText" />.</param>
+        <param name="textColor">The <see cref="T:System.Drawing.Color" /> to apply to <paramref name="groupBoxText" />.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.GroupBoxState" /> values that specifies the visual state of the group box.</param>
         <summary>Draws a group box control in the specified state and bounds, with the specified text, font, color, and text formatting.</summary>
@@ -302,7 +302,7 @@
         <Parameter Name="childControl" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the background of the parent of <c>childControl</c>.</param>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the background of the parent of <paramref name="childControl" />.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> in which to draw the parent control's background. This rectangle should be inside the child control’s bounds.</param>
         <param name="childControl">The control whose parent's background will be drawn.</param>
         <summary>Draws the background of a control's parent in the specified area.</summary>

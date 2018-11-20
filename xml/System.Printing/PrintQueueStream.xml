@@ -666,7 +666,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of bytes from which to copy to the stream.</param>
-        <param name="offset">The zero-based byte offset in the <c>buffer</c> where you want to begin copying bytes to the stream.</param>
+        <param name="offset">The zero-based byte offset in the <paramref name="buffer" /> where you want to begin copying bytes to the stream.</param>
         <param name="count">The number of bytes to write to the stream.</param>
         <summary>Writes a sequence of bytes to the stream and advances the read/write position in the stream by the number of bytes that are written.</summary>
         <remarks>To be added.</remarks>

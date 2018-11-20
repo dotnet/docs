@@ -989,7 +989,7 @@
         <param name="thumbHeight">The height, in pixels, of the requested thumbnail image.</param>
         <param name="callback">A <see cref="T:System.Drawing.Image.GetThumbnailImageAbort" /> delegate.  
   
- **Note** You must create a delegate and pass a reference to the delegate as the <c>callback</c> parameter, but the delegate is not used.</param>
+ **Note** You must create a delegate and pass a reference to the delegate as the <paramref name="callback" /> parameter, but the delegate is not used.</param>
         <param name="callbackData">Must be <see cref="F:System.IntPtr.Zero" />.</param>
         <summary>Returns a thumbnail for this <see cref="T:System.Drawing.Image" />.</summary>
         <returns>An <see cref="T:System.Drawing.Image" /> that represents the thumbnail.</returns>

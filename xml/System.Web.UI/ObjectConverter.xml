@@ -78,7 +78,7 @@
       </Parameters>
       <Docs>
         <param name="value">The object to convert.</param>
-        <param name="toType">The <see cref="T:System.Type" /> to convert <c>value</c> to.</param>
+        <param name="toType">The <see cref="T:System.Type" /> to convert <paramref name="value" /> to.</param>
         <param name="formatString">The format string to apply during conversion.</param>
         <summary>Converts an object from one object type to another object type. This class is obsolete. Use the <see cref="T:System.Convert" /> class and the <see cref="M:System.String.Format(System.String,System.Object)" /> method instead.</summary>
         <returns>The converted object.</returns>

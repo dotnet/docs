@@ -154,7 +154,7 @@
       <Docs>
         <param name="direction">One of the enumeration values that determines the direction of the pipe.  
   
- Anonymous pipes can only be in one direction, so <c>direction</c> cannot be set to <see cref="F:System.IO.Pipes.PipeDirection.InOut" />.</param>
+ Anonymous pipes can only be in one direction, so <paramref name="direction" /> cannot be set to <see cref="F:System.IO.Pipes.PipeDirection.InOut" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.AnonymousPipeServerStream" /> class with the specified pipe direction.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -210,7 +210,7 @@
       <Docs>
         <param name="direction">One of the enumeration values that determines the direction of the pipe.  
   
- Anonymous pipes can only be in one direction, so <c>direction</c> cannot be set to <see cref="F:System.IO.Pipes.PipeDirection.InOut" />.</param>
+ Anonymous pipes can only be in one direction, so <paramref name="direction" /> cannot be set to <see cref="F:System.IO.Pipes.PipeDirection.InOut" />.</param>
         <param name="inheritability">One of the enumeration values that determines whether the underlying handle can be inherited by child processes. Must be set to either <see cref="F:System.IO.HandleInheritability.None" /> or <see cref="F:System.IO.HandleInheritability.Inheritable" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.AnonymousPipeServerStream" /> class with the specified pipe direction and inheritability mode.</summary>
         <remarks>
@@ -279,7 +279,7 @@
       <Docs>
         <param name="direction">One of the enumeration values that determines the direction of the pipe.  
   
- Anonymous pipes can only be in one direction, so <c>direction</c> cannot be set to <see cref="F:System.IO.Pipes.PipeDirection.InOut" />.</param>
+ Anonymous pipes can only be in one direction, so <paramref name="direction" /> cannot be set to <see cref="F:System.IO.Pipes.PipeDirection.InOut" />.</param>
         <param name="serverSafePipeHandle">A safe handle for the pipe that this <see cref="T:System.IO.Pipes.AnonymousPipeServerStream" /> object will encapsulate.</param>
         <param name="clientSafePipeHandle">A safe handle for the <see cref="T:System.IO.Pipes.AnonymousPipeClientStream" /> object.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.AnonymousPipeServerStream" /> class from the specified pipe handles.</summary>
@@ -345,7 +345,7 @@
       <Docs>
         <param name="direction">One of the enumeration values that determines the direction of the pipe.  
   
- Anonymous pipes can only be in one direction, so <c>direction</c> cannot be set to <see cref="F:System.IO.Pipes.PipeDirection.InOut" />.</param>
+ Anonymous pipes can only be in one direction, so <paramref name="direction" /> cannot be set to <see cref="F:System.IO.Pipes.PipeDirection.InOut" />.</param>
         <param name="inheritability">One of the enumeration values that determines whether the underlying handle can be inherited by child processes. Must be set to either <see cref="F:System.IO.HandleInheritability.None" /> or <see cref="F:System.IO.HandleInheritability.Inheritable" />.</param>
         <param name="bufferSize">The size of the buffer. This value must be greater than or equal to 0.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.AnonymousPipeServerStream" /> class with the specified pipe direction, inheritability mode, and buffer size.</summary>
@@ -406,7 +406,7 @@
       <Docs>
         <param name="direction">One of the enumeration values that determines the direction of the pipe.  
   
- Anonymous pipes can only be in one direction, so <c>direction</c> cannot be set to <see cref="F:System.IO.Pipes.PipeDirection.InOut" />.</param>
+ Anonymous pipes can only be in one direction, so <paramref name="direction" /> cannot be set to <see cref="F:System.IO.Pipes.PipeDirection.InOut" />.</param>
         <param name="inheritability">One of the enumeration values that determines whether the underlying handle can be inherited by child processes.</param>
         <param name="bufferSize">The size of the buffer. This value must be greater than or equal to 0.</param>
         <param name="pipeSecurity">An object that determines the access control and audit security for the pipe.</param>

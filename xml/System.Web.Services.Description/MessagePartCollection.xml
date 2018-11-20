@@ -241,7 +241,7 @@
         <Parameter Name="messagePart" Type="System.Web.Services.Description.MessagePart" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the <c>messagePart</c> parameter.</param>
+        <param name="index">The zero-based index at which to insert the <paramref name="messagePart" /> parameter.</param>
         <param name="messagePart">The <see cref="T:System.Web.Services.Description.MessagePart" /> to add to the collection.</param>
         <summary>Adds the specified <see cref="T:System.Web.Services.Description.MessagePart" /> to the <see cref="T:System.Web.Services.Description.MessagePartCollection" /> at the specified zero-based index.</summary>
         <remarks>

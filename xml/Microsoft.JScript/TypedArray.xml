@@ -526,7 +526,7 @@
         <param name="binder">An object that performs type conversion from actual argument type to formal argument type.</param>
         <param name="target">The object on which to invoke the member. This must be the current script object.</param>
         <param name="args">An array of objects that contains the number, order, and type of the parameters of the member to be invoked. This is an empty array if there are no parameters.</param>
-        <param name="modifiers">An array that has the same length as the <c>args</c> parameter. It represents the invoked member's argument attributes in the metadata.</param>
+        <param name="modifiers">An array that has the same length as the <paramref name="args" /> parameter. It represents the invoked member's argument attributes in the metadata.</param>
         <param name="locale">Provides information about a specific culture or locale. Used to format numbers, dates, and strings correctly.</param>
         <param name="namedParameters">An array of parameters.</param>
         <summary>Invokes the specified member of the element type or the <see cref="T:System.Array" /> class type.</summary>

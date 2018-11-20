@@ -55,7 +55,7 @@
       </Parameters>
       <Docs>
         <param name="encodedData">The encrypted data to decrypt and/or validate.</param>
-        <param name="protectionOption">Indicates whether the <c>encodedData</c> parameter should be encrypted and/or hashed.</param>
+        <param name="protectionOption">Indicates whether the <paramref name="encodedData" /> parameter should be encrypted and/or hashed.</param>
         <summary>Decodes and/or validates data that has been encrypted or provided with a hash-based message authentication code (HMAC).</summary>
         <returns>A <see cref="T:System.Byte" /> array that represents the decrypted data.</returns>
         <remarks>
@@ -99,7 +99,7 @@
       </Parameters>
       <Docs>
         <param name="data">The data to encrypt.</param>
-        <param name="protectionOption">Indicates whether the <c>data</c> parameter should be encrypted and/or hashed.</param>
+        <param name="protectionOption">Indicates whether the <paramref name="data" /> parameter should be encrypted and/or hashed.</param>
         <summary>Encrypts data and/or appends a hash-based message authentication code (HMAC).</summary>
         <returns>The encrypted value, the input value with an HMAC appended, or the result of encrypting the input value with an HMAC appended.</returns>
         <remarks>

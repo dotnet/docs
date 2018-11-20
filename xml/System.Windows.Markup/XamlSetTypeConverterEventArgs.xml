@@ -52,8 +52,8 @@
         <param name="member">XAML type system / schema information for the member being set.</param>
         <param name="typeConverter">The specific type converter instance being invoked.</param>
         <param name="value">The value to provide for the member being set.</param>
-        <param name="serviceProvider">Service provider information that can be used by the <c>typeConverter</c> class.</param>
-        <param name="cultureInfo">Culture information that can be used by the <c>typeConverter</c> class when calling <see cref="M:System.ComponentModel.TypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" /> and other methods.</param>
+        <param name="serviceProvider">Service provider information that can be used by the <paramref name="typeConverter" /> class.</param>
+        <param name="cultureInfo">Culture information that can be used by the <paramref name="typeConverter" /> class when calling <see cref="M:System.ComponentModel.TypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" /> and other methods.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlSetTypeConverterEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>

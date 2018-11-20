@@ -1085,7 +1085,7 @@
       </Parameters>
       <Docs>
         <param name="roleName">The name of the role to delete.</param>
-        <param name="throwOnPopulatedRole">If <see langword="true" />, throws an exception if <c>roleName</c> has one or more members.</param>
+        <param name="throwOnPopulatedRole">If <see langword="true" />, throws an exception if <paramref name="roleName" /> has one or more members.</param>
         <summary>Removes a role from the data source.</summary>
         <returns>
           <see langword="true" /> if <paramref name="roleName" /> was deleted from the data source; otherwise; <see langword="false" />.</returns>

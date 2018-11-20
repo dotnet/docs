@@ -582,7 +582,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       </Parameters>
       <Docs>
         <param name="ticks">A date and time expressed in the number of 100-nanosecond intervals that have elapsed since January 1, 0001 at 00:00:00.000 in the Gregorian calendar.</param>
-        <param name="kind">One of the enumeration values that indicates whether <c>ticks</c> specifies a local time, Coordinated Universal Time (UTC), or neither.</param>
+        <param name="kind">One of the enumeration values that indicates whether <paramref name="ticks" /> specifies a local time, Coordinated Universal Time (UTC), or neither.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure to a specified number of ticks and to Coordinated Universal Time (UTC) or local time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -634,7 +634,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <Docs>
         <param name="year">The year (1 through 9999).</param>
         <param name="month">The month (1 through 12).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure to the specified year, month, and day.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -696,10 +696,10 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="calendar" Type="System.Globalization.Calendar" />
       </Parameters>
       <Docs>
-        <param name="year">The year (1 through the number of years in <c>calendar</c>).</param>
-        <param name="month">The month (1 through the number of months in <c>calendar</c>).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
-        <param name="calendar">The calendar that is used to interpret <c>year</c>, <c>month</c>, and <c>day</c>.</param>
+        <param name="year">The year (1 through the number of years in <paramref name="calendar" />).</param>
+        <param name="month">The month (1 through the number of months in <paramref name="calendar" />).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
+        <param name="calendar">The calendar that is used to interpret <paramref name="year" />, <paramref name="month" />, and <paramref name="day" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure to the specified year, month, and day for the specified calendar.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -776,7 +776,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <Docs>
         <param name="year">The year (1 through 9999).</param>
         <param name="month">The month (1 through 12).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <param name="hour">The hours (0 through 23).</param>
         <param name="minute">The minutes (0 through 59).</param>
         <param name="second">The seconds (0 through 59).</param>
@@ -864,11 +864,11 @@ The behavior of the .NET Framework and COM means that if your application round-
       <Docs>
         <param name="year">The year (1 through 9999).</param>
         <param name="month">The month (1 through 12).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <param name="hour">The hours (0 through 23).</param>
         <param name="minute">The minutes (0 through 59).</param>
         <param name="second">The seconds (0 through 59).</param>
-        <param name="kind">One of the enumeration values that indicates whether <c>year</c>, <c>month</c>, <c>day</c>, <c>hour</c>, <c>minute</c> and <c>second</c> specify a local time, Coordinated Universal Time (UTC), or neither.</param>
+        <param name="kind">One of the enumeration values that indicates whether <paramref name="year" />, <paramref name="month" />, <paramref name="day" />, <paramref name="hour" />, <paramref name="minute" /> and <paramref name="second" /> specify a local time, Coordinated Universal Time (UTC), or neither.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure to the specified year, month, day, hour, minute, second, and Coordinated Universal Time (UTC) or local time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -947,13 +947,13 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="calendar" Type="System.Globalization.Calendar" />
       </Parameters>
       <Docs>
-        <param name="year">The year (1 through the number of years in <c>calendar</c>).</param>
-        <param name="month">The month (1 through the number of months in <c>calendar</c>).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="year">The year (1 through the number of years in <paramref name="calendar" />).</param>
+        <param name="month">The month (1 through the number of months in <paramref name="calendar" />).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <param name="hour">The hours (0 through 23).</param>
         <param name="minute">The minutes (0 through 59).</param>
         <param name="second">The seconds (0 through 59).</param>
-        <param name="calendar">The calendar that is used to interpret <c>year</c>, <c>month</c>, and <c>day</c>.</param>
+        <param name="calendar">The calendar that is used to interpret <paramref name="year" />, <paramref name="month" />, and <paramref name="day" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure to the specified year, month, day, hour, minute, and second for the specified calendar.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1043,7 +1043,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <Docs>
         <param name="year">The year (1 through 9999).</param>
         <param name="month">The month (1 through 12).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <param name="hour">The hours (0 through 23).</param>
         <param name="minute">The minutes (0 through 59).</param>
         <param name="second">The seconds (0 through 59).</param>
@@ -1138,12 +1138,12 @@ The behavior of the .NET Framework and COM means that if your application round-
       <Docs>
         <param name="year">The year (1 through 9999).</param>
         <param name="month">The month (1 through 12).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <param name="hour">The hours (0 through 23).</param>
         <param name="minute">The minutes (0 through 59).</param>
         <param name="second">The seconds (0 through 59).</param>
         <param name="millisecond">The milliseconds (0 through 999).</param>
-        <param name="kind">One of the enumeration values that indicates whether <c>year</c>, <c>month</c>, <c>day</c>, <c>hour</c>, <c>minute</c>, <c>second</c>, and <c>millisecond</c> specify a local time, Coordinated Universal Time (UTC), or neither.</param>
+        <param name="kind">One of the enumeration values that indicates whether <paramref name="year" />, <paramref name="month" />, <paramref name="day" />, <paramref name="hour" />, <paramref name="minute" />, <paramref name="second" />, and <paramref name="millisecond" /> specify a local time, Coordinated Universal Time (UTC), or neither.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure to the specified year, month, day, hour, minute, second, millisecond, and Coordinated Universal Time (UTC) or local time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1227,14 +1227,14 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="calendar" Type="System.Globalization.Calendar" />
       </Parameters>
       <Docs>
-        <param name="year">The year (1 through the number of years in <c>calendar</c>).</param>
-        <param name="month">The month (1 through the number of months in <c>calendar</c>).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="year">The year (1 through the number of years in <paramref name="calendar" />).</param>
+        <param name="month">The month (1 through the number of months in <paramref name="calendar" />).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <param name="hour">The hours (0 through 23).</param>
         <param name="minute">The minutes (0 through 59).</param>
         <param name="second">The seconds (0 through 59).</param>
         <param name="millisecond">The milliseconds (0 through 999).</param>
-        <param name="calendar">The calendar that is used to interpret <c>year</c>, <c>month</c>, and <c>day</c>.</param>
+        <param name="calendar">The calendar that is used to interpret <paramref name="year" />, <paramref name="month" />, and <paramref name="day" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure to the specified year, month, day, hour, minute, second, and millisecond for the specified calendar.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1324,15 +1324,15 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="kind" Type="System.DateTimeKind" />
       </Parameters>
       <Docs>
-        <param name="year">The year (1 through the number of years in <c>calendar</c>).</param>
-        <param name="month">The month (1 through the number of months in <c>calendar</c>).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="year">The year (1 through the number of years in <paramref name="calendar" />).</param>
+        <param name="month">The month (1 through the number of months in <paramref name="calendar" />).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <param name="hour">The hours (0 through 23).</param>
         <param name="minute">The minutes (0 through 59).</param>
         <param name="second">The seconds (0 through 59).</param>
         <param name="millisecond">The milliseconds (0 through 999).</param>
-        <param name="calendar">The calendar that is used to interpret <c>year</c>, <c>month</c>, and <c>day</c>.</param>
-        <param name="kind">One of the enumeration values that indicates whether <c>year</c>, <c>month</c>, <c>day</c>, <c>hour</c>, <c>minute</c>, <c>second</c>, and <c>millisecond</c> specify a local time, Coordinated Universal Time (UTC), or neither.</param>
+        <param name="calendar">The calendar that is used to interpret <paramref name="year" />, <paramref name="month" />, and <paramref name="day" />.</param>
+        <param name="kind">One of the enumeration values that indicates whether <paramref name="year" />, <paramref name="month" />, <paramref name="day" />, <paramref name="hour" />, <paramref name="minute" />, <paramref name="second" />, and <paramref name="millisecond" /> specify a local time, Coordinated Universal Time (UTC), or neither.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure to the specified year, month, day, hour, minute, second, millisecond, and Coordinated Universal Time (UTC) or local time for the specified calendar.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1486,7 +1486,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">A number of whole and fractional days. The <c>value</c> parameter can be negative or positive.</param>
+        <param name="value">A number of whole and fractional days. The <paramref name="value" /> parameter can be negative or positive.</param>
         <summary>Returns a new <see cref="T:System.DateTime" /> that adds the specified number of days to the value of this instance.</summary>
         <returns>An object whose value is the sum of the date and time represented by this instance and the number of days represented by <paramref name="value" />.</returns>
         <remarks>
@@ -1551,7 +1551,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">A number of whole and fractional hours. The <c>value</c> parameter can be negative or positive.</param>
+        <param name="value">A number of whole and fractional hours. The <paramref name="value" /> parameter can be negative or positive.</param>
         <summary>Returns a new <see cref="T:System.DateTime" /> that adds the specified number of hours to the value of this instance.</summary>
         <returns>An object whose value is the sum of the date and time represented by this instance and the number of hours represented by <paramref name="value" />.</returns>
         <remarks>
@@ -1616,7 +1616,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">A number of whole and fractional milliseconds. The <c>value</c> parameter can be negative or positive. Note that this value is rounded to the nearest integer.</param>
+        <param name="value">A number of whole and fractional milliseconds. The <paramref name="value" /> parameter can be negative or positive. Note that this value is rounded to the nearest integer.</param>
         <summary>Returns a new <see cref="T:System.DateTime" /> that adds the specified number of milliseconds to the value of this instance.</summary>
         <returns>An object whose value is the sum of the date and time represented by this instance and the number of milliseconds represented by <paramref name="value" />.</returns>
         <remarks>
@@ -1679,7 +1679,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">A number of whole and fractional minutes. The <c>value</c> parameter can be negative or positive.</param>
+        <param name="value">A number of whole and fractional minutes. The <paramref name="value" /> parameter can be negative or positive.</param>
         <summary>Returns a new <see cref="T:System.DateTime" /> that adds the specified number of minutes to the value of this instance.</summary>
         <returns>An object whose value is the sum of the date and time represented by this instance and the number of minutes represented by <paramref name="value" />.</returns>
         <remarks>
@@ -1743,7 +1743,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="months" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="months">A number of months. The <c>months</c> parameter can be negative or positive.</param>
+        <param name="months">A number of months. The <paramref name="months" /> parameter can be negative or positive.</param>
         <summary>Returns a new <see cref="T:System.DateTime" /> that adds the specified number of months to the value of this instance.</summary>
         <returns>An object whose value is the sum of the date and time represented by this instance and <paramref name="months" />.</returns>
         <remarks>
@@ -1808,7 +1808,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">A number of whole and fractional seconds. The <c>value</c> parameter can be negative or positive.</param>
+        <param name="value">A number of whole and fractional seconds. The <paramref name="value" /> parameter can be negative or positive.</param>
         <summary>Returns a new <see cref="T:System.DateTime" /> that adds the specified number of seconds to the value of this instance.</summary>
         <returns>An object whose value is the sum of the date and time represented by this instance and the number of seconds represented by <paramref name="value" />.</returns>
         <remarks>
@@ -1871,7 +1871,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">A number of 100-nanosecond ticks. The <c>value</c> parameter can be positive or negative.</param>
+        <param name="value">A number of 100-nanosecond ticks. The <paramref name="value" /> parameter can be positive or negative.</param>
         <summary>Returns a new <see cref="T:System.DateTime" /> that adds the specified number of ticks to the value of this instance.</summary>
         <returns>An object whose value is the sum of the date and time represented by this instance and the time represented by <paramref name="value" />.</returns>
         <remarks>
@@ -1923,7 +1923,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">A number of years. The <c>value</c> parameter can be negative or positive.</param>
+        <param name="value">A number of years. The <paramref name="value" /> parameter can be negative or positive.</param>
         <summary>Returns a new <see cref="T:System.DateTime" /> that adds the specified number of years to the value of this instance.</summary>
         <returns>An object whose value is the sum of the date and time represented by this instance and the number of years represented by <paramref name="value" />.</returns>
         <remarks>
@@ -5013,7 +5013,7 @@ It handles the <xref:System.FormatException> exception that is thrown when the m
       </Parameters>
       <Docs>
         <param name="s">A string that contains a date and time to convert. See [The string to parse](#StringToParse) for more information.</param>
-        <param name="provider">An object that supplies culture-specific format information about <c>s</c>.  See [Parsing and cultural conventions](#Culture)</param>
+        <param name="provider">An object that supplies culture-specific format information about <paramref name="s" />.  See [Parsing and cultural conventions](#Culture)</param>
         <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using culture-specific format information.</summary>
         <returns>An object that is equivalent to the date and time contained in <paramref name="s" /> as specified by <paramref name="provider" />.</returns>
         <remarks>
@@ -5123,8 +5123,8 @@ The following example parses an array of date strings by using the conventions o
       </Parameters>
       <Docs>
         <param name="s">A string that contains a date and time to convert. See [The string to parse](#StringToParse) for more information.</param>
-        <param name="provider">An object that supplies culture-specific formatting information about <c>s</c>.  See [Parsing and cultural conventions](#Culture)</param>
-        <param name="styles">A bitwise combination of the enumeration values that indicates the style elements that can be present in <c>s</c> for the parse operation to succeed, and that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
+        <param name="provider">An object that supplies culture-specific formatting information about <paramref name="s" />.  See [Parsing and cultural conventions](#Culture)</param>
+        <param name="styles">A bitwise combination of the enumeration values that indicates the style elements that can be present in <paramref name="s" /> for the parse operation to succeed, and that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
         <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using culture-specific format information and a formatting style.</summary>
         <returns>An object that is equivalent to the date and time contained in <paramref name="s" />, as specified by <paramref name="provider" /> and <paramref name="styles" />.</returns>
         <remarks>
@@ -5217,8 +5217,8 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       </Parameters>
       <Docs>
         <param name="s">A string that contains a date and time to convert.</param>
-        <param name="format">A format specifier that defines the required format of <c>s</c>. For more information, see the Remarks section.</param>
-        <param name="provider">An object that supplies culture-specific format information about <c>s</c>.</param>
+        <param name="format">A format specifier that defines the required format of <paramref name="s" />. For more information, see the Remarks section.</param>
+        <param name="provider">An object that supplies culture-specific format information about <paramref name="s" />.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent using the specified format and culture-specific format information. The format of the string representation must match the specified format exactly.</summary>
         <returns>An object that is equivalent to the date and time contained in <paramref name="s" />, as specified by <paramref name="format" /> and <paramref name="provider" />.</returns>
         <remarks>
@@ -5388,9 +5388,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       </Parameters>
       <Docs>
         <param name="s">A string containing a date and time to convert.</param>
-        <param name="format">A format specifier that defines the required format of <c>s</c>. For more information, see the Remarks section.</param>
-        <param name="provider">An object that supplies culture-specific formatting information about <c>s</c>.</param>
-        <param name="style">A bitwise combination of the enumeration values that provides additional information about <c>s</c>, about style elements that may be present in <c>s</c>, or about the conversion from <c>s</c> to a <see cref="T:System.DateTime" /> value. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
+        <param name="format">A format specifier that defines the required format of <paramref name="s" />. For more information, see the Remarks section.</param>
+        <param name="provider">An object that supplies culture-specific formatting information about <paramref name="s" />.</param>
+        <param name="style">A bitwise combination of the enumeration values that provides additional information about <paramref name="s" />, about style elements that may be present in <paramref name="s" />, or about the conversion from <paramref name="s" /> to a <see cref="T:System.DateTime" /> value. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent using the specified format, culture-specific format information, and style. The format of the string representation must match the specified format exactly or an exception is thrown.</summary>
         <returns>An object that is equivalent to the date and time contained in <paramref name="s" />, as specified by <paramref name="format" />, <paramref name="provider" />, and <paramref name="style" />.</returns>
         <remarks>
@@ -5509,9 +5509,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       </Parameters>
       <Docs>
         <param name="s">A string that contains a date and time to convert.</param>
-        <param name="formats">An array of allowable formats of <c>s</c>. For more information, see the Remarks section.</param>
-        <param name="provider">An object that supplies culture-specific format information about <c>s</c>.</param>
-        <param name="style">A bitwise combination of enumeration values that indicates the permitted format of <c>s</c>. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
+        <param name="formats">An array of allowable formats of <paramref name="s" />. For more information, see the Remarks section.</param>
+        <param name="provider">An object that supplies culture-specific format information about <paramref name="s" />.</param>
+        <param name="style">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="s" />. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent using the specified array of formats, culture-specific format information, and style. The format of the string representation must match at least one of the specified formats exactly or an exception is thrown.</summary>
         <returns>An object that is equivalent to the date and time contained in <paramref name="s" />, as specified by <paramref name="formats" />, <paramref name="provider" />, and <paramref name="style" />.</returns>
         <remarks>
@@ -8000,7 +8000,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       </Parameters>
       <Docs>
         <param name="s">A string containing a date and time to convert.</param>
-        <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <c>s</c>, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if the <c>s</c> parameter is <see langword="null" />, is an empty string (""), or does not contain a valid string representation of a date and time. This parameter is passed uninitialized.</param>
+        <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <paramref name="s" />, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if the <paramref name="s" /> parameter is <see langword="null" />, is an empty string (""), or does not contain a valid string representation of a date and time. This parameter is passed uninitialized.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent and returns a value that indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="s" /> parameter was converted successfully; otherwise, <see langword="false" />.</returns>
@@ -8123,9 +8123,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       </Parameters>
       <Docs>
         <param name="s">A string containing a date and time to convert.</param>
-        <param name="provider">An object that supplies culture-specific formatting information about <c>s</c>.</param>
+        <param name="provider">An object that supplies culture-specific formatting information about <paramref name="s" />.</param>
         <param name="styles">A bitwise combination of enumeration values that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
-        <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <c>s</c>, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if the <c>s</c> parameter is <see langword="null" />, is an empty string (""), or does not contain a valid string representation of a date and time. This parameter is passed uninitialized.</param>
+        <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <paramref name="s" />, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if the <paramref name="s" /> parameter is <see langword="null" />, is an empty string (""), or does not contain a valid string representation of a date and time. This parameter is passed uninitialized.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent using the specified culture-specific format information and formatting style, and returns a value that indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="s" /> parameter was converted successfully; otherwise, <see langword="false" />.</returns>
@@ -8336,10 +8336,10 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       </Parameters>
       <Docs>
         <param name="s">A string containing a date and time to convert.</param>
-        <param name="format">The required format of <c>s</c>.</param>
-        <param name="provider">An object that supplies culture-specific formatting information about <c>s</c>.</param>
-        <param name="style">A bitwise combination of one or more enumeration values that indicate the permitted format of <c>s</c>.</param>
-        <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <c>s</c>, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if either the <c>s</c> or <c>format</c> parameter is <see langword="null" />, is an empty string, or does not contain a date and time that correspond to the pattern specified in <c>format</c>. This parameter is passed uninitialized.</param>
+        <param name="format">The required format of <paramref name="s" />.</param>
+        <param name="provider">An object that supplies culture-specific formatting information about <paramref name="s" />.</param>
+        <param name="style">A bitwise combination of one or more enumeration values that indicate the permitted format of <paramref name="s" />.</param>
+        <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <paramref name="s" />, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if either the <paramref name="s" /> or <paramref name="format" /> parameter is <see langword="null" />, is an empty string, or does not contain a date and time that correspond to the pattern specified in <paramref name="format" />. This parameter is passed uninitialized.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent using the specified format, culture-specific format information, and style. The format of the string representation must match the specified format exactly. The method returns a value that indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if <paramref name="s" /> was converted successfully; otherwise, <see langword="false" />.</returns>
@@ -8451,10 +8451,10 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       </Parameters>
       <Docs>
         <param name="s">A string that contains a date and time to convert.</param>
-        <param name="formats">An array of allowable formats of <c>s</c>.</param>
-        <param name="provider">An object that supplies culture-specific format information about <c>s</c>.</param>
-        <param name="style">A bitwise combination of enumeration values that indicates the permitted format of <c>s</c>. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
-        <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <c>s</c>, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if <c>s</c> or <c>formats</c> is <see langword="null" />, <c>s</c> or an element of <c>formats</c> is an empty string, or the format of <c>s</c> is not exactly as specified by at least one of the format patterns in <c>formats</c>. This parameter is passed uninitialized.</param>
+        <param name="formats">An array of allowable formats of <paramref name="s" />.</param>
+        <param name="provider">An object that supplies culture-specific format information about <paramref name="s" />.</param>
+        <param name="style">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="s" />. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
+        <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <paramref name="s" />, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if <paramref name="s" /> or <paramref name="formats" /> is <see langword="null" />, <paramref name="s" /> or an element of <paramref name="formats" /> is an empty string, or the format of <paramref name="s" /> is not exactly as specified by at least one of the format patterns in <paramref name="formats" />. This parameter is passed uninitialized.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent using the specified array of formats, culture-specific format information, and style. The format of the string representation must match at least one of the specified formats exactly. The method returns a value that indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="s" /> parameter was converted successfully; otherwise, <see langword="false" />.</returns>

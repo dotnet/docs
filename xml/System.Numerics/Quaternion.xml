@@ -793,7 +793,7 @@ w = cos(theta/2)
       <Docs>
         <param name="quaternion1">The first quaternion.</param>
         <param name="quaternion2">The second quaternion.</param>
-        <param name="amount">The relative weight of <c>quaternion2</c> in the interpolation.</param>
+        <param name="amount">The relative weight of <paramref name="quaternion2" /> in the interpolation.</param>
         <summary>Performs a linear interpolation between two quaternions based on a value that specifies the weighting of the second quaternion.</summary>
         <returns>The interpolated quaternion.</returns>
         <remarks>To be added.</remarks>

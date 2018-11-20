@@ -442,8 +442,8 @@
         <param name="ignoreCase">
           <see langword="true" /> to ignore the case of the type name; otherwise, <see langword="false" />.</param>
         <param name="bindingAttr">A bitmask that affects the way in which the search is conducted. The value is a combination of bit flags from <see cref="T:System.Reflection.BindingFlags" />.</param>
-        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see langword="MemberInfo" /> objects via reflection. If <c>binder</c> is <see langword="null" />, the default binder is used.</param>
-        <param name="args">An array that contains the arguments to be passed to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to be invoked. If the default constructor is desired, <c>args</c> must be an empty array or <see langword="null" />.</param>
+        <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see langword="MemberInfo" /> objects via reflection. If <paramref name="binder" /> is <see langword="null" />, the default binder is used.</param>
+        <param name="args">An array that contains the arguments to be passed to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to be invoked. If the default constructor is desired, <paramref name="args" /> must be an empty array or <see langword="null" />.</param>
         <param name="culture">An instance of <see langword="CultureInfo" /> used to govern the coercion of types. If this is <see langword="null" />, the <see langword="CultureInfo" /> for the current thread is used. (This is necessary to convert a <see langword="String" /> that represents 1000 to a <see langword="Double" /> value, for example, since 1000 is represented differently by different cultures.)</param>
         <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
         <summary>Locates the specified type from this assembly and creates an instance of it using the system activator, with optional case-sensitive search and having the specified culture, arguments, and binding and activation attributes.</summary>
@@ -5066,8 +5066,8 @@ The ability to execute code in remote assemblies is disabled. See <see href="htt
         <Parameter Name="right" Type="System.Reflection.Assembly" />
       </Parameters>
       <Docs>
-        <param name="left">The assembly to compare to <c>right</c>.</param>
-        <param name="right">The assembly to compare to <c>left</c>.</param>
+        <param name="left">The assembly to compare to <paramref name="right" />.</param>
+        <param name="right">The assembly to compare to <paramref name="left" />.</param>
         <summary>Indicates whether two <see cref="T:System.Reflection.Assembly" /> objects are equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="left" /> is equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
@@ -5107,8 +5107,8 @@ The ability to execute code in remote assemblies is disabled. See <see href="htt
         <Parameter Name="right" Type="System.Reflection.Assembly" />
       </Parameters>
       <Docs>
-        <param name="left">The assembly to compare to <c>right</c>.</param>
-        <param name="right">The assembly to compare to <c>left</c>.</param>
+        <param name="left">The assembly to compare to <paramref name="right" />.</param>
+        <param name="right">The assembly to compare to <paramref name="left" />.</param>
         <summary>Indicates whether two <see cref="T:System.Reflection.Assembly" /> objects are not equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="left" /> is not equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>

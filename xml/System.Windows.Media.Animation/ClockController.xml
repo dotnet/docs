@@ -215,7 +215,7 @@
         <Parameter Name="origin" Type="System.Windows.Media.Animation.TimeSeekOrigin" />
       </Parameters>
       <Docs>
-        <param name="offset">The seek offset, measured in the target clock's time. This offset is relative to the clock's <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.BeginTime" /> or <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.Duration" />, depending on the value of <c>origin</c>.</param>
+        <param name="offset">The seek offset, measured in the target clock's time. This offset is relative to the clock's <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.BeginTime" /> or <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.Duration" />, depending on the value of <paramref name="origin" />.</param>
         <param name="origin">A value that indicates whether the specified offset is relative to the target clock's <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.BeginTime" /> or <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.Duration" />.</param>
         <summary>Seeks the target <see cref="P:System.Windows.Media.Animation.ClockController.Clock" /> by the specified amount when the next tick occurs. If the target clock is stopped, seeking makes it active again.</summary>
         <remarks>
@@ -265,7 +265,7 @@
         <Parameter Name="origin" Type="System.Windows.Media.Animation.TimeSeekOrigin" />
       </Parameters>
       <Docs>
-        <param name="offset">The seek offset, measured in the target clock's time. This offset is relative to the clock's <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.BeginTime" /> or <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.Duration" />, depending on the value of <c>origin</c>.</param>
+        <param name="offset">The seek offset, measured in the target clock's time. This offset is relative to the clock's <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.BeginTime" /> or <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.Duration" />, depending on the value of <paramref name="origin" />.</param>
         <param name="origin">A value that indicates whether the specified offset is relative to the target clock's <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.BeginTime" /> or <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.Duration" />.</param>
         <summary>Seeks the target <see cref="T:System.Windows.Media.Animation.Clock" /> by the specified amount immediately. If the target clock is stopped, seeking makes it active again.</summary>
         <remarks>

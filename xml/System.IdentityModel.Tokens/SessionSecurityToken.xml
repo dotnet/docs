@@ -253,7 +253,7 @@
         <param name="claimsPrincipal">The claims principal that was generated from the bootstrap token.</param>
         <param name="context">An optional, application-specific context string.</param>
         <param name="validFrom">The time instant at which the token becomes valid. <see langword="null" /> to specify <see cref="P:System.DateTime.UtcNow" /></param>
-        <param name="validTo">The time instant after which the token is no longer valid. <see langword="null" /> to specify that the value should be determined by adding the value of the <see cref="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.DefaultTokenLifetime" /> property to the time specified by the <c>validFrom</c> parameter.</param>
+        <param name="validTo">The time instant after which the token is no longer valid. <see langword="null" /> to specify that the value should be determined by adding the value of the <see cref="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.DefaultTokenLifetime" /> property to the time specified by the <paramref name="validFrom" /> parameter.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SessionSecurityToken" /> class from the specified principal and bootstrap token; and with the specified start time and expiration time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -311,7 +311,7 @@
         <param name="context">An optional, application-specific context string.</param>
         <param name="endpointId">The endpoint to which this token is bound. An empty string creates an unscoped token.</param>
         <param name="validFrom">The time instant at which the token becomes valid. <see langword="null" /> to specify <see cref="P:System.DateTime.UtcNow" />.</param>
-        <param name="validTo">The time instant after which the token is no longer valid. <see langword="null" /> to specify that the value should be determined by adding the value of the <see cref="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.DefaultTokenLifetime" /> property to the time specified by the  <c>validFrom</c> parameter.</param>
+        <param name="validTo">The time instant after which the token is no longer valid. <see langword="null" /> to specify that the value should be determined by adding the value of the <see cref="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.DefaultTokenLifetime" /> property to the time specified by the  <paramref name="validFrom" /> parameter.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SessionSecurityToken" /> class from the specified principal and bootstrap token; and with the specified start time and expiration time. The new token is scoped to the specified endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -516,7 +516,7 @@
         <param name="context">An optional, application-specific context string.</param>
         <param name="endpointId">The endpoint to which this token is bound. An empty string creates an unscoped token.</param>
         <param name="validFrom">The time instant at which the token becomes valid. <see langword="null" /> to specify <see cref="P:System.DateTime.UtcNow" /></param>
-        <param name="validTo">The time instant after which the token is no longer valid. <see langword="null" /> to specify that the value should be determined by adding the value of the <see cref="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.DefaultTokenLifetime" /> property to the time specified by the <c>validFrom</c> parameter.</param>
+        <param name="validTo">The time instant after which the token is no longer valid. <see langword="null" /> to specify that the value should be determined by adding the value of the <see cref="P:System.IdentityModel.Tokens.SessionSecurityTokenHandler.DefaultTokenLifetime" /> property to the time specified by the <paramref name="validFrom" /> parameter.</param>
         <param name="key">An optional symmetric session key.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SessionSecurityToken" /> class by using the specified principal, context ID, context, endpoint, start time, expiration time, and key.</summary>
         <remarks>

@@ -572,7 +572,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
         <Parameter Name="item" Type="System.Web.Routing.RouteBase" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>item</c> is inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="item" /> is inserted.</param>
         <param name="item">The route to insert.</param>
         <summary>Inserts the specified route into the <see cref="T:System.Web.Routing.RouteCollection" /> object at the specified index.</summary>
         <remarks>

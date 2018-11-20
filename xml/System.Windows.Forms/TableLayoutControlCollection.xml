@@ -97,8 +97,8 @@
       </Parameters>
       <Docs>
         <param name="control">The control to add.</param>
-        <param name="column">The column in which <c>control</c> will be placed.</param>
-        <param name="row">The row in which <c>control</c> will be placed.</param>
+        <param name="column">The column in which <paramref name="control" /> will be placed.</param>
+        <param name="row">The row in which <paramref name="control" /> will be placed.</param>
         <summary>Adds the specified control to the collection and positions it at the specified cell.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

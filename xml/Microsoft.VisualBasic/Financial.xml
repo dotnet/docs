@@ -186,7 +186,7 @@
       </Parameters>
       <Docs>
         <param name="Rate">Required. <see langword="Double" /> specifying interest rate per period. For example, if you get a car loan at an annual percentage rate (APR) of 10 percent and make monthly payments, the rate per period is 0.1/12, or 0.0083.</param>
-        <param name="Per">Required. <see langword="Double" /> specifying payment period in the range 1 through <c>NPer</c>.</param>
+        <param name="Per">Required. <see langword="Double" /> specifying payment period in the range 1 through <paramref name="NPer" />.</param>
         <param name="NPer">Required. <see langword="Double" /> specifying total number of payment periods in the annuity. For example, if you make monthly payments on a four-year car loan, your loan has a total of 4 x 12 (or 48) payment periods.</param>
         <param name="PV">Required. <see langword="Double" /> specifying present value, or value today, of a series of future payments or receipts. For example, when you borrow money to buy a car, the loan amount is the present value to the lender of the monthly car payments you will make.</param>
         <param name="FV">Optional. <see langword="Double" /> specifying future value or cash balance you want after you've made the final payment. For example, the future value of a loan is $0 because that's its value after the final payment. However, if you want to save $50,000 over 18 years for your child's education, then $50,000 is the future value. If omitted, 0 is assumed.</param>
@@ -240,7 +240,7 @@
       </Parameters>
       <Docs>
         <param name="ValueArray">Required. Array of <see langword="Double" /> specifying cash flow values. The array must contain at least one negative value (a payment) and one positive value (a receipt).</param>
-        <param name="Guess">Optional. Object specifying value you estimate will be returned by <see langword="IRR" />. If omitted, <c>Guess</c> is 0.1 (10 percent).</param>
+        <param name="Guess">Optional. Object specifying value you estimate will be returned by <see langword="IRR" />. If omitted, <paramref name="Guess" /> is 0.1 (10 percent).</param>
         <summary>Returns a <see langword="Double" /> specifying the internal rate of return for a series of periodic cash flows (payments and receipts).</summary>
         <returns>Returns a <see langword="Double" /> specifying the internal rate of return for a series of periodic cash flows (payments and receipts).</returns>
         <remarks>
@@ -523,7 +523,7 @@
       </Parameters>
       <Docs>
         <param name="Rate">Required. <see langword="Double" /> specifies the interest rate per period. For example, if you get a car loan at an annual percentage rate (APR) of 10 percent and make monthly payments, the rate per period is 0.1/12, or 0.0083.</param>
-        <param name="Per">Required. <see langword="Double" /> specifies the payment period in the range 1 through <c>NPer</c>.</param>
+        <param name="Per">Required. <see langword="Double" /> specifies the payment period in the range 1 through <paramref name="NPer" />.</param>
         <param name="NPer">Required. <see langword="Double" /> specifies the total number of payment periods in the annuity. For example, if you make monthly payments on a four-year car loan, your loan has a total of 4 x 12 (or 48) payment periods.</param>
         <param name="PV">Required. <see langword="Double" /> specifies the current value of a series of future payments or receipts. For example, when you borrow money to buy a car, the loan amount is the present value to the lender of the monthly car payments you will make.</param>
         <param name="FV">Optional. <see langword="Double" /> specifying future value or cash balance you want after you have made the final payment. For example, the future value of a loan is $0 because that is its value after the final payment. However, if you want to save $50,000 over 18 years for your child's education, then $50,000 is the future value. If omitted, 0 is assumed.</param>
@@ -638,7 +638,7 @@
         <param name="PV">Required. <see langword="Double" /> specifies the present value, or value today, of a series of future payments or receipts. For example, when you borrow money to buy a car, the loan amount is the present value to the lender of the monthly car payments you will make.</param>
         <param name="FV">Optional. <see langword="Double" /> specifies the future value or cash balance you want after you make the final payment. For example, the future value of a loan is $0 because that is its value after the final payment. However, if you want to save $50,000 over 18 years for your child's education, then $50,000 is the future value. If omitted, 0 is assumed.</param>
         <param name="Due">Optional. Object of type <see cref="T:Microsoft.VisualBasic.DueDate" /> that specifies when payments are due. This argument must be either <c>DueDate.EndOfPeriod</c> if payments are due at the end of the payment period, or <c>DueDate.BegOfPeriod</c> if payments are due at the beginning of the period. If omitted, <c>DueDate.EndOfPeriod</c> is assumed.</param>
-        <param name="Guess">Optional. <see langword="Double" /> specifying value you estimate is returned by <see langword="Rate" />. If omitted, <c>Guess</c> is 0.1 (10 percent).</param>
+        <param name="Guess">Optional. <see langword="Double" /> specifying value you estimate is returned by <see langword="Rate" />. If omitted, <paramref name="Guess" /> is 0.1 (10 percent).</param>
         <summary>Returns a <see langword="Double" /> specifying the interest rate per period for an annuity.</summary>
         <returns>Returns a <see langword="Double" /> specifying the interest rate per period for an annuity.</returns>
         <remarks>

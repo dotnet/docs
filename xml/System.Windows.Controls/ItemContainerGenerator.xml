@@ -539,7 +539,7 @@
       </Parameters>
       <Docs>
         <param name="position">Removes one or more generated (realized) items.</param>
-        <param name="count">The Int32 number of elements to remove, starting at <c>position</c>.</param>
+        <param name="count">The Int32 number of elements to remove, starting at <paramref name="position" />.</param>
         <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -667,8 +667,8 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="position">The index of the first element to reuse. <c>position</c> must refer to a previously generated (realized) item.</param>
-        <param name="count">The number of elements to reuse, starting at <c>position</c>.</param>
+        <param name="position">The index of the first element to reuse. <paramref name="position" /> must refer to a previously generated (realized) item.</param>
+        <param name="count">The number of elements to reuse, starting at <paramref name="position" />.</param>
         <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>

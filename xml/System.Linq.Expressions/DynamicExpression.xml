@@ -1013,7 +1013,7 @@
       </Parameters>
       <Docs>
         <param name="args">The arguments.</param>
-        <summary>Rewrite this node replacing the dynamic expression’s arguments with the provided values.  The number of <c>args</c> needs to match the number of the current expression.  You should not use this type.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.  This helper method allows re-writing of nodes to be independent of the specific implementation class deriving from DynamicExpression that is being used at the call site.</summary>
+        <summary>Rewrite this node replacing the dynamic expression’s arguments with the provided values.  The number of <paramref name="args" /> needs to match the number of the current expression.  You should not use this type.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.  This helper method allows re-writing of nodes to be independent of the specific implementation class deriving from DynamicExpression that is being used at the call site.</summary>
         <returns>Returns <see cref="T:System.Linq.Expressions.Expression" />, the rewritten expression.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1087,7 +1087,7 @@
       </Parameters>
       <Docs>
         <param name="arguments">The <see cref="P:System.Linq.Expressions.DynamicExpression.Arguments" /> property of the result.</param>
-        <summary>Compares the value sent to the parameter, <c>arguments</c>, to the <see langword="Arguments" /> property of the current instance of <see langword="DynamicExpression" />. If the values of the parameter and the property are equal, the current instance is returned. If they are not equal, a new <see langword="DynamicExpression" /> instance is returned that is identical to the current instance except that the <see langword="Arguments" /> property is set to the value of parameter <c>arguments</c>.</summary>
+        <summary>Compares the value sent to the parameter, <paramref name="arguments" />, to the <see langword="Arguments" /> property of the current instance of <see langword="DynamicExpression" />. If the values of the parameter and the property are equal, the current instance is returned. If they are not equal, a new <see langword="DynamicExpression" /> instance is returned that is identical to the current instance except that the <see langword="Arguments" /> property is set to the value of parameter <paramref name="arguments" />.</summary>
         <returns>This expression if no children are changed or an expression with the updated children.</returns>
         <remarks>To be added.</remarks>
       </Docs>

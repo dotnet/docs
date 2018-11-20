@@ -153,7 +153,7 @@
       </Parameters>
       <Docs>
         <param name="labelsStep">A <see langword="Double" /> value that determines how often the custom labels will be drawn.</param>
-        <param name="intervalType">A <see cref="T:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that determines the unit of measure for the <c>labelsStep</c> parameter.</param>
+        <param name="intervalType">A <see cref="T:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that determines the unit of measure for the <paramref name="labelsStep" /> parameter.</param>
         <param name="format">A value that determines the format of the custom label. For more information, see Date and Time Format Strings.</param>
         <summary>Adds multiple <see cref="T:System.DateTime" /><see cref="T:System.Web.UI.DataVisualization.Charting.CustomLabelsCollection" /> objects to the collection. Populates the entire first row of an axis with labels with the specified format.</summary>
         <remarks>
@@ -233,7 +233,7 @@
       </Parameters>
       <Docs>
         <param name="labelsStep">A <see langword="Double" /> value that determines how often the custom labels will be drawn.</param>
-        <param name="intervalType">A <see cref="T:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that determines the unit of measure for the <c>labelsStep</c> parameter.</param>
+        <param name="intervalType">A <see cref="T:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that determines the unit of measure for the <paramref name="labelsStep" /> parameter.</param>
         <param name="format">The label text format.</param>
         <param name="rowIndex">The label row index.</param>
         <param name="markStyle">An enumeration value that specifies the tick mark style used for the label.</param>
@@ -302,7 +302,7 @@
       </Parameters>
       <Docs>
         <param name="labelsStep">A <see langword="Double" /> value that determines how often the custom labels will be drawn.</param>
-        <param name="intervalType">A <see cref="T:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that determines the unit of measure for the <c>labelsStep</c> parameter.</param>
+        <param name="intervalType">A <see cref="T:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that determines the unit of measure for the <paramref name="labelsStep" /> parameter.</param>
         <param name="min">The minimum value of the axis range.</param>
         <param name="max">The maximum value of the axis range.</param>
         <param name="format">The label text format.</param>

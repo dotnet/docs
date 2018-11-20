@@ -2688,7 +2688,7 @@
         <param name="control">The page control that is receiving the data.</param>
         <param name="dataItem">The data that is sent to the control.</param>
         <param name="isJsonSerialized">
-          <see langword="true" /> to indicate that <c>dataItem</c> is serialized as JSON; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to indicate that <paramref name="dataItem" /> is serialized as JSON; otherwise, <see langword="false" />.</param>
         <summary>Sends custom data to a control during partial-page rendering, and indicates whether the data is in JavaScript Object Notation (JSON) format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

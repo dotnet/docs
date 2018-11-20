@@ -359,8 +359,8 @@
         <Parameter Name="state2" Type="System.Speech.Synthesis.TtsEngine.FragmentState" />
       </Parameters>
       <Docs>
-        <param name="state1">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> whose described state is compared against the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> provided by the <c>state2</c> argument.</param>
-        <param name="state2">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> whose described state is compared against the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> provided by the <c>state1</c> argument.</param>
+        <param name="state1">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> whose described state is compared against the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> provided by the <paramref name="state2" /> argument.</param>
+        <param name="state2">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> whose described state is compared against the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> provided by the <paramref name="state1" /> argument.</param>
         <summary>Determines if two instances of <see cref="T:System.Speech.Synthesis.TtsEngine.FragmentState" /> describes the same <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state.</summary>
         <returns>Returns <see langword="true" /> if both instances of <see cref="T:System.Speech.Synthesis.TtsEngine.FragmentState" />, <paramref name="state1" /> and <paramref name="state2" />, describe the same <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state, otherwise <see langword="false" /> is returned.</returns>
         <remarks>
@@ -389,8 +389,8 @@
         <Parameter Name="state2" Type="System.Speech.Synthesis.TtsEngine.FragmentState" />
       </Parameters>
       <Docs>
-        <param name="state1">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> whose described state is compared against the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> provided by the <c>state2</c> argument.</param>
-        <param name="state2">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> whose described state is compared against the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> provided by the <c>state1</c> argument.</param>
+        <param name="state1">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> whose described state is compared against the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> provided by the <paramref name="state2" /> argument.</param>
+        <param name="state2">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> whose described state is compared against the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> provided by the <paramref name="state1" /> argument.</param>
         <summary>Determines if two instances of <see cref="T:System.Speech.Synthesis.TtsEngine.FragmentState" /> describes the different <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state.</summary>
         <returns>Returns <see langword="true" /> if both instances of <see cref="T:System.Speech.Synthesis.TtsEngine.FragmentState" />, <paramref name="state1" /> and <paramref name="state2" />, do not describe the same <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state, otherwise <see langword="false" /> is returned.</returns>
         <remarks>

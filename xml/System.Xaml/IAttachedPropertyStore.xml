@@ -149,7 +149,7 @@
       </Parameters>
       <Docs>
         <param name="attachableMemberIdentifier">The XAML type system identifier for the attachable member entry to get.</param>
-        <param name="value">Out parameter. When this method returns, contains the destination object for the value if <c>attachableMemberIdentifier</c> exists in the store and has a value.</param>
+        <param name="value">Out parameter. When this method returns, contains the destination object for the value if <paramref name="attachableMemberIdentifier" /> exists in the store and has a value.</param>
         <summary>Attempts to get a value for the specified attachable member in the specified store.</summary>
         <returns>
           <see langword="true" /> if an attachable member entry for <paramref name="attachableMemberIdentifier" /> was found in the store and a value was posted to <paramref name="value" />; otherwise, <see langword="false" />.</returns>

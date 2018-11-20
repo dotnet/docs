@@ -59,7 +59,7 @@
       </Parameters>
       <Docs>
         <param name="unsafeCharacterString">Pointer to character string.</param>
-        <param name="characterLength">The length of <c>unsafeCharacterString</c>.</param>
+        <param name="characterLength">The length of <paramref name="unsafeCharacterString" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> structure using a specified unsafe character string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -90,7 +90,7 @@
       </Parameters>
       <Docs>
         <param name="characterArray">The <see cref="T:System.Char" /> array.</param>
-        <param name="offsetToFirstChar">The offset to the first character to use in <c>characterArray</c>.</param>
+        <param name="offsetToFirstChar">The offset to the first character to use in <paramref name="characterArray" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> structure using a specified character array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,7 +114,7 @@
       </Parameters>
       <Docs>
         <param name="characterString">The <see cref="T:System.String" /> containing the text characters.</param>
-        <param name="offsetToFirstChar">The offset to the first character to use in <c>characterString</c>.</param>
+        <param name="offsetToFirstChar">The offset to the first character to use in <paramref name="characterString" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> structure using a specified character string.</summary>
         <remarks>To be added.</remarks>
       </Docs>

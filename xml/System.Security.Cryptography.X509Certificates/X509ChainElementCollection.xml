@@ -370,7 +370,7 @@
       </Parameters>
       <Docs>
         <param name="array">An array to copy the <see cref="T:System.Security.Cryptography.X509Certificates.X509ChainElementCollection" /> object to.</param>
-        <param name="index">The index of <c>array</c> at which to start copying.</param>
+        <param name="index">The index of <paramref name="array" /> at which to start copying.</param>
         <summary>Copies an <see cref="T:System.Security.Cryptography.X509Certificates.X509ChainElementCollection" /> object into an array, starting at the specified index.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified <paramref name="index" /> is less than zero, or greater than or equal to the length of the array.</exception>

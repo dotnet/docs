@@ -47,8 +47,8 @@
         <Parameter Name="cacheItem" Type="System.Runtime.Caching.CacheItem" />
       </Parameters>
       <Docs>
-        <param name="source">The <see cref="T:System.Runtime.Caching.ObjectCache" /> instance from which <c>cacheItem</c> was removed.</param>
-        <param name="reason">One of the enumeration values that indicate why <c>cacheItem</c> was removed.</param>
+        <param name="source">The <see cref="T:System.Runtime.Caching.ObjectCache" /> instance from which <paramref name="cacheItem" /> was removed.</param>
+        <param name="reason">One of the enumeration values that indicate why <paramref name="cacheItem" /> was removed.</param>
         <param name="cacheItem">An instance of the cached entry that was removed.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Caching.CacheEntryRemovedArguments" /> class.</summary>
         <remarks>

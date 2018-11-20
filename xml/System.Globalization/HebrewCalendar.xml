@@ -163,7 +163,7 @@
         <Parameter Name="months" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="time">The <see cref="T:System.DateTime" /> to which to add <c>months</c>.</param>
+        <param name="time">The <see cref="T:System.DateTime" /> to which to add <paramref name="months" />.</param>
         <param name="months">The number of months to add.</param>
         <summary>Returns a <see cref="T:System.DateTime" /> that is the specified number of months away from the specified <see cref="T:System.DateTime" />.</summary>
         <returns>The <see cref="T:System.DateTime" /> that results from adding the specified number of months to the specified <see cref="T:System.DateTime" />.</returns>
@@ -244,7 +244,7 @@
         <Parameter Name="years" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="time">The <see cref="T:System.DateTime" /> to which to add <c>years</c>.</param>
+        <param name="time">The <see cref="T:System.DateTime" /> to which to add <paramref name="years" />.</param>
         <param name="years">The number of years to add.</param>
         <summary>Returns a <see cref="T:System.DateTime" /> that is the specified number of years away from the specified <see cref="T:System.DateTime" />.</summary>
         <returns>The <see cref="T:System.DateTime" /> that results from adding the specified number of years to the specified <see cref="T:System.DateTime" />.</returns>

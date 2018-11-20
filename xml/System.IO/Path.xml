@@ -179,7 +179,7 @@ For more information on file path formats on Windows, see [File path formats on 
       </Parameters>
       <Docs>
         <param name="path">The path information to modify. The path cannot contain any of the characters defined in <see cref="M:System.IO.Path.GetInvalidPathChars" />.</param>
-        <param name="extension">The new extension (with or without a leading period). Specify <see langword="null" /> to remove an existing extension from <c>path</c>.</param>
+        <param name="extension">The new extension (with or without a leading period). Specify <see langword="null" /> to remove an existing extension from <paramref name="path" />.</param>
         <summary>Changes the extension of a path string.</summary>
         <returns>The modified path information.  
   

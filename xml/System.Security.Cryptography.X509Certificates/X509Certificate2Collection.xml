@@ -995,7 +995,7 @@
         <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert <c>certificate</c>.</param>
+        <param name="index">The zero-based index at which to insert <paramref name="certificate" />.</param>
         <param name="certificate">The <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> object to insert.</param>
         <summary>Inserts an object into the <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> object at the specified index.</summary>
         <remarks>

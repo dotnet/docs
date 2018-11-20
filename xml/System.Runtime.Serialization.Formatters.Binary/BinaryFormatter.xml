@@ -449,7 +449,7 @@
       </Parameters>
       <Docs>
         <param name="serializationStream">The stream from which to deserialize the object graph.</param>
-        <param name="handler">The <see cref="T:System.Runtime.Remoting.Messaging.HeaderHandler" /> that handles any headers in the <c>serializationStream</c>. Can be <see langword="null" />.</param>
+        <param name="handler">The <see cref="T:System.Runtime.Remoting.Messaging.HeaderHandler" /> that handles any headers in the <paramref name="serializationStream" />. Can be <see langword="null" />.</param>
         <summary>Deserializes the specified stream into an object graph. The provided <see cref="T:System.Runtime.Remoting.Messaging.HeaderHandler" /> handles any headers in that stream.</summary>
         <returns>The deserialized object or the top object (root) of the object graph.</returns>
         <remarks>
@@ -510,7 +510,7 @@
       </Parameters>
       <Docs>
         <param name="serializationStream">The stream from which to deserialize the object graph.</param>
-        <param name="handler">The <see cref="T:System.Runtime.Remoting.Messaging.HeaderHandler" /> that handles any headers in the <c>serializationStream</c>. Can be <see langword="null" />.</param>
+        <param name="handler">The <see cref="T:System.Runtime.Remoting.Messaging.HeaderHandler" /> that handles any headers in the <paramref name="serializationStream" />. Can be <see langword="null" />.</param>
         <param name="methodCallMessage">The <see cref="T:System.Runtime.Remoting.Messaging.IMethodCallMessage" /> that contains details about where the call came from.</param>
         <summary>Deserializes a response to a remote method call from the provided <see cref="T:System.IO.Stream" />.</summary>
         <returns>The deserialized response to the remote method call.</returns>
@@ -823,7 +823,7 @@
       </Parameters>
       <Docs>
         <param name="serializationStream">The stream from which to deserialize the object graph.</param>
-        <param name="handler">The <see cref="T:System.Runtime.Remoting.Messaging.HeaderHandler" /> that handles any headers in the <c>serializationStream</c>. Can be <see langword="null" />.</param>
+        <param name="handler">The <see cref="T:System.Runtime.Remoting.Messaging.HeaderHandler" /> that handles any headers in the <paramref name="serializationStream" />. Can be <see langword="null" />.</param>
         <summary>Deserializes the specified stream into an object graph. The provided <see cref="T:System.Runtime.Remoting.Messaging.HeaderHandler" /> handles any headers in that stream.</summary>
         <returns>The deserialized object or the top object (root) of the object graph.</returns>
         <remarks>
@@ -885,7 +885,7 @@
       </Parameters>
       <Docs>
         <param name="serializationStream">The stream from which to deserialize the object graph.</param>
-        <param name="handler">The <see cref="T:System.Runtime.Remoting.Messaging.HeaderHandler" /> that handles any headers in the <c>serializationStream</c>. Can be <see langword="null" />.</param>
+        <param name="handler">The <see cref="T:System.Runtime.Remoting.Messaging.HeaderHandler" /> that handles any headers in the <paramref name="serializationStream" />. Can be <see langword="null" />.</param>
         <param name="methodCallMessage">The <see cref="T:System.Runtime.Remoting.Messaging.IMethodCallMessage" /> that contains details about where the call came from.</param>
         <summary>Deserializes a response to a remote method call from the provided <see cref="T:System.IO.Stream" />.</summary>
         <returns>The deserialized response to the remote method call.</returns>

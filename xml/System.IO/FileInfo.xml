@@ -1834,7 +1834,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       </Parameters>
       <Docs>
         <param name="destinationFileName">The name of a file to replace with the current file.</param>
-        <param name="destinationBackupFileName">The name of a file with which to create a backup of the file described by the <c>destFileName</c> parameter.</param>
+        <param name="destinationBackupFileName">The name of a file with which to create a backup of the file described by the <paramref name="destFileName" /> parameter.</param>
         <summary>Replaces the contents of a specified file with the file described by the current <see cref="T:System.IO.FileInfo" /> object, deleting the original file, and creating a backup of the replaced file.</summary>
         <returns>A <see cref="T:System.IO.FileInfo" /> object that encapsulates information about the file described by the <paramref name="destFileName" /> parameter.</returns>
         <remarks>
@@ -1919,7 +1919,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
       </Parameters>
       <Docs>
         <param name="destinationFileName">The name of a file to replace with the current file.</param>
-        <param name="destinationBackupFileName">The name of a file with which to create a backup of the file described by the <c>destFileName</c> parameter.</param>
+        <param name="destinationBackupFileName">The name of a file with which to create a backup of the file described by the <paramref name="destFileName" /> parameter.</param>
         <param name="ignoreMetadataErrors">
           <see langword="true" /> to ignore merge errors (such as attributes and ACLs) from the replaced file to the replacement file; otherwise <see langword="false" />.</param>
         <summary>Replaces the contents of a specified file with the file described by the current <see cref="T:System.IO.FileInfo" /> object, deleting the original file, and creating a backup of the replaced file.  Also specifies whether to ignore merge errors.</summary>

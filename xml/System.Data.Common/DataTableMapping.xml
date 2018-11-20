@@ -422,7 +422,7 @@
       </Parameters>
       <Docs>
         <param name="sourceColumn">The name of the <see cref="T:System.Data.DataColumn" />.</param>
-        <param name="dataType">The data type for <c>sourceColumn</c>.</param>
+        <param name="dataType">The data type for <paramref name="sourceColumn" />.</param>
         <param name="dataTable">The table name from a <see cref="T:System.Data.DataSet" /> to map to.</param>
         <param name="mappingAction">One of the <see cref="T:System.Data.MissingMappingAction" /> values.</param>
         <param name="schemaAction">One of the <see cref="T:System.Data.MissingSchemaAction" /> values.</param>

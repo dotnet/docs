@@ -587,7 +587,7 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The index of the <see langword="Tuple" /> element. <c>index</c> must be 0.</param>
+        <param name="index">The index of the <see langword="Tuple" /> element. <paramref name="index" /> must be 0.</param>
         <summary>Gets the value of the <see langword="Tuple" /> element.</summary>
         <value>The value of the <see langword="Tuple" /> element.</value>
         <remarks>

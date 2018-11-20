@@ -824,7 +824,7 @@
         <Parameter Name="eventtype" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the event. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name of the event. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attributes">The attributes of the event.</param>
         <param name="eventtype">The type of the event.</param>
         <summary>Adds a new event to the type, with the given name, attributes and event type.</summary>
@@ -879,7 +879,7 @@
         <Parameter Name="attributes" Type="System.Reflection.FieldAttributes" />
       </Parameters>
       <Docs>
-        <param name="fieldName">The name of the field. <c>fieldName</c> cannot contain embedded nulls.</param>
+        <param name="fieldName">The name of the field. <paramref name="fieldName" /> cannot contain embedded nulls.</param>
         <param name="type">The type of the field</param>
         <param name="attributes">The attributes of the field.</param>
         <summary>Adds a new field to the type, with the given name, attributes, and field type.</summary>
@@ -934,7 +934,7 @@
         <Parameter Name="attributes" Type="System.Reflection.FieldAttributes" />
       </Parameters>
       <Docs>
-        <param name="fieldName">The name of the field. <c>fieldName</c> cannot contain embedded nulls.</param>
+        <param name="fieldName">The name of the field. <paramref name="fieldName" /> cannot contain embedded nulls.</param>
         <param name="type">The type of the field</param>
         <param name="requiredCustomModifiers">An array of types representing the required custom modifiers for the field, such as <see cref="T:Microsoft.VisualC.IsConstModifier" />.</param>
         <param name="optionalCustomModifiers">An array of types representing the optional custom modifiers for the field, such as <see cref="T:Microsoft.VisualC.IsConstModifier" />.</param>
@@ -1065,7 +1065,7 @@
         <Parameter Name="attributes" Type="System.Reflection.FieldAttributes" />
       </Parameters>
       <Docs>
-        <param name="name">The name used to refer to the data. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name used to refer to the data. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="data">The blob of data.</param>
         <param name="attributes">The attributes for the field.</param>
         <summary>Defines initialized data field in the .sdata section of the portable executable (PE) file.</summary>
@@ -1127,7 +1127,7 @@
         <Parameter Name="attributes" Type="System.Reflection.MethodAttributes" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the method. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name of the method. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attributes">The attributes of the method.</param>
         <summary>Adds a new method to the type, with the specified name and method attributes.</summary>
         <returns>A <see cref="T:System.Reflection.Emit.MethodBuilder" /> representing the newly defined method.</returns>
@@ -1202,7 +1202,7 @@
         <Parameter Name="callingConvention" Type="System.Reflection.CallingConventions" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the method. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name of the method. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attributes">The attributes of the method.</param>
         <param name="callingConvention">The calling convention of the method.</param>
         <summary>Adds a new method to the type, with the specified name, method attributes, and calling convention.</summary>
@@ -1261,7 +1261,7 @@
         <Parameter Name="parameterTypes" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the method. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name of the method. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attributes">The attributes of the method.</param>
         <param name="returnType">The return type of the method.</param>
         <param name="parameterTypes">The types of the parameters of the method.</param>
@@ -1325,7 +1325,7 @@
         <Parameter Name="parameterTypes" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the method. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name of the method. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attributes">The attributes of the method.</param>
         <param name="callingConvention">The calling convention of the method.</param>
         <param name="returnType">The return type of the method.</param>
@@ -1398,7 +1398,7 @@
         <Parameter Name="parameterTypeOptionalCustomModifiers" Type="System.Type[][]" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the method. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name of the method. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attributes">The attributes of the method.</param>
         <param name="callingConvention">The calling convention of the method.</param>
         <param name="returnType">The return type of the method.</param>
@@ -1560,7 +1560,7 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The short name of the type. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The short name of the type. <paramref name="name" /> cannot contain embedded nulls.</param>
         <summary>Defines a nested type, given its name.</summary>
         <returns>The defined nested type.</returns>
         <remarks>
@@ -1620,7 +1620,7 @@
         <Parameter Name="attr" Type="System.Reflection.TypeAttributes" />
       </Parameters>
       <Docs>
-        <param name="name">The short name of the type. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The short name of the type. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attr">The attributes of the type.</param>
         <summary>Defines a nested type, given its name and attributes.</summary>
         <returns>The defined nested type.</returns>
@@ -1698,7 +1698,7 @@
         <Parameter Name="parent" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="name">The short name of the type. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The short name of the type. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attr">The attributes of the type.</param>
         <param name="parent">The type that the nested type extends.</param>
         <summary>Defines a nested type, given its name, attributes, and the type that it extends.</summary>
@@ -1778,7 +1778,7 @@
         <Parameter Name="typeSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The short name of the type. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The short name of the type. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attr">The attributes of the type.</param>
         <param name="parent">The type that the nested type extends.</param>
         <param name="typeSize">The total size of the type.</param>
@@ -1859,7 +1859,7 @@
         <Parameter Name="packSize" Type="System.Reflection.Emit.PackingSize" />
       </Parameters>
       <Docs>
-        <param name="name">The short name of the type. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The short name of the type. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attr">The attributes of the type.</param>
         <param name="parent">The type that the nested type extends.</param>
         <param name="packSize">The packing size of the type.</param>
@@ -1943,7 +1943,7 @@
         <Parameter Name="interfaces" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="name">The short name of the type. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The short name of the type. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attr">The attributes of the type.</param>
         <param name="parent">The type that the nested type extends.</param>
         <param name="interfaces">The interfaces that the nested type implements.</param>
@@ -2027,7 +2027,7 @@
         <Parameter Name="typeSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">The short name of the type. <c>name</c> cannot contain embedded null values.</param>
+        <param name="name">The short name of the type. <paramref name="name" /> cannot contain embedded null values.</param>
         <param name="attr">The attributes of the type.</param>
         <param name="parent">The type that the nested type extends.</param>
         <param name="packSize">The packing size of the type.</param>
@@ -2083,7 +2083,7 @@
         <Parameter Name="nativeCharSet" Type="System.Runtime.InteropServices.CharSet" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see langword="PInvoke" /> method. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name of the <see langword="PInvoke" /> method. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="dllName">The name of the DLL in which the <see langword="PInvoke" /> method is defined.</param>
         <param name="attributes">The attributes of the method.</param>
         <param name="callingConvention">The method's calling convention.</param>
@@ -2176,7 +2176,7 @@
         <Parameter Name="nativeCharSet" Type="System.Runtime.InteropServices.CharSet" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see langword="PInvoke" /> method. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name of the <see langword="PInvoke" /> method. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="dllName">The name of the DLL in which the <see langword="PInvoke" /> method is defined.</param>
         <param name="entryName">The name of the entry point in the DLL.</param>
         <param name="attributes">The attributes of the method.</param>
@@ -2273,7 +2273,7 @@
         <Parameter Name="nativeCharSet" Type="System.Runtime.InteropServices.CharSet" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the <see langword="PInvoke" /> method. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name of the <see langword="PInvoke" /> method. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="dllName">The name of the DLL in which the <see langword="PInvoke" /> method is defined.</param>
         <param name="entryName">The name of the entry point in the DLL.</param>
         <param name="attributes">The attributes of the method.</param>
@@ -2389,7 +2389,7 @@
         <Parameter Name="parameterTypes" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the property. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name of the property. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attributes">The attributes of the property.</param>
         <param name="returnType">The return type of the property.</param>
         <param name="parameterTypes">The types of the parameters of the property.</param>
@@ -2452,7 +2452,7 @@
         <Parameter Name="parameterTypes" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the property. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name of the property. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attributes">The attributes of the property.</param>
         <param name="callingConvention">The calling convention of the property accessors.</param>
         <param name="returnType">The return type of the property.</param>
@@ -2509,7 +2509,7 @@
         <Parameter Name="parameterTypeOptionalCustomModifiers" Type="System.Type[][]" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the property. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name of the property. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attributes">The attributes of the property.</param>
         <param name="returnType">The return type of the property.</param>
         <param name="returnTypeRequiredCustomModifiers">An array of types representing the required custom modifiers, such as <see cref="T:System.Runtime.CompilerServices.IsConst" />, for the return type of the property. If the return type has no required custom modifiers, specify <see langword="null" />.</param>
@@ -2580,7 +2580,7 @@
         <Parameter Name="parameterTypeOptionalCustomModifiers" Type="System.Type[][]" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the property. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name of the property. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="attributes">The attributes of the property.</param>
         <param name="callingConvention">The calling convention of the property accessors.</param>
         <param name="returnType">The return type of the property.</param>
@@ -2705,7 +2705,7 @@
         <Parameter Name="attributes" Type="System.Reflection.FieldAttributes" />
       </Parameters>
       <Docs>
-        <param name="name">The name used to refer to the data. <c>name</c> cannot contain embedded nulls.</param>
+        <param name="name">The name used to refer to the data. <paramref name="name" /> cannot contain embedded nulls.</param>
         <param name="size">The size of the data field.</param>
         <param name="attributes">The attributes for the field.</param>
         <summary>Defines an uninitialized data field in the <see langword=".sdata" /> section of the portable executable (PE) file.</summary>
@@ -2959,7 +2959,7 @@
       </Parameters>
       <Docs>
         <param name="type">The constructed generic type whose constructor is returned.</param>
-        <param name="constructor">A constructor on the generic type definition of <c>type</c>, which specifies which constructor of <c>type</c> to return.</param>
+        <param name="constructor">A constructor on the generic type definition of <paramref name="type" />, which specifies which constructor of <paramref name="type" /> to return.</param>
         <summary>Returns the constructor of the specified constructed generic type that corresponds to the specified constructor of the generic type definition.</summary>
         <returns>A <see cref="T:System.Reflection.ConstructorInfo" /> object that represents the constructor of <paramref name="type" /> corresponding to <paramref name="constructor" />, which specifies a constructor belonging to the generic type definition of <paramref name="type" />.</returns>
         <remarks>
@@ -3433,7 +3433,7 @@
       </Parameters>
       <Docs>
         <param name="type">The constructed generic type whose field is returned.</param>
-        <param name="field">A field on the generic type definition of <c>type</c>, which specifies which field of <c>type</c> to return.</param>
+        <param name="field">A field on the generic type definition of <paramref name="type" />, which specifies which field of <paramref name="type" /> to return.</param>
         <summary>Returns the field of the specified constructed generic type that corresponds to the specified field of the generic type definition.</summary>
         <returns>A <see cref="T:System.Reflection.FieldInfo" /> object that represents the field of <paramref name="type" /> corresponding to <paramref name="field" />, which specifies a field belonging to the generic type definition of <paramref name="type" />.</returns>
         <remarks>
@@ -3865,7 +3865,7 @@
       </Parameters>
       <Docs>
         <param name="type">The constructed generic type whose method is returned.</param>
-        <param name="method">A method on the generic type definition of <c>type</c>, which specifies which method of <c>type</c> to return.</param>
+        <param name="method">A method on the generic type definition of <paramref name="type" />, which specifies which method of <paramref name="type" /> to return.</param>
         <summary>Returns the method of the specified constructed generic type that corresponds to the specified method of the generic type definition.</summary>
         <returns>A <see cref="T:System.Reflection.MethodInfo" /> object that represents the method of <paramref name="type" /> corresponding to <paramref name="method" />, which specifies a method belonging to the generic type definition of <paramref name="type" />.</returns>
         <remarks>
@@ -4276,9 +4276,9 @@
         <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see langword="MemberInfo" /> objects using reflection. If binder is <see langword="null" />, the default binder is used. See <see cref="T:System.Reflection.Binder" />.</param>
         <param name="target">The object on which to invoke the specified member. If the member is static, this parameter is ignored.</param>
         <param name="args">An argument list. This is an array of Objects that contains the number, order, and type of the parameters of the member to be invoked. If there are no parameters this should be null.</param>
-        <param name="modifiers">An array of the same length as <c>args</c> with elements that represent the attributes associated with the arguments of the member to be invoked. A parameter has attributes associated with it in the metadata. They are used by various interoperability services. See the metadata specs for more details.</param>
+        <param name="modifiers">An array of the same length as <paramref name="args" /> with elements that represent the attributes associated with the arguments of the member to be invoked. A parameter has attributes associated with it in the metadata. They are used by various interoperability services. See the metadata specs for more details.</param>
         <param name="culture">An instance of <see langword="CultureInfo" /> used to govern the coercion of types. If this is null, the <see langword="CultureInfo" /> for the current thread is used. (Note that this is necessary to, for example, convert a String that represents 1000 to a Double value, since 1000 is represented differently by different cultures.)</param>
-        <param name="namedParameters">Each parameter in the <c>namedParameters</c> array gets the value in the corresponding element in the <c>args</c> array. If the length of <c>args</c> is greater than the length of <c>namedParameters</c>, the remaining argument values are passed in order.</param>
+        <param name="namedParameters">Each parameter in the <paramref name="namedParameters" /> array gets the value in the corresponding element in the <paramref name="args" /> array. If the length of <paramref name="args" /> is greater than the length of <paramref name="namedParameters" />, the remaining argument values are passed in order.</param>
         <summary>Invokes the specified member. The method that is to be invoked must be accessible and provide the most specific match with the specified argument list, under the constraints of the specified binder and invocation attributes.</summary>
         <returns>Returns the return value of the invoked member.</returns>
         <remarks>

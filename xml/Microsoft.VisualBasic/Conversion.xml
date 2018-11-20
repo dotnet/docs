@@ -322,7 +322,7 @@ End Class
         <Parameter Name="Number" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <c>Number</c> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
+        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <paramref name="Number" /> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
         <summary>Return the integer portion of a number.</summary>
         <returns>Return the integer portion of a number.</returns>
         <remarks>
@@ -385,7 +385,7 @@ End Class
         <Parameter Name="Number" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <c>Number</c> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
+        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <paramref name="Number" /> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
         <summary>Return the integer portion of a number.</summary>
         <returns>Return the integer portion of a number.</returns>
         <remarks>
@@ -448,7 +448,7 @@ End Class
         <Parameter Name="Number" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <c>Number</c> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
+        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <paramref name="Number" /> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
         <summary>Return the integer portion of a number.</summary>
         <returns>Return the integer portion of a number.</returns>
         <remarks>
@@ -511,7 +511,7 @@ End Class
         <Parameter Name="Number" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <c>Number</c> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
+        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <paramref name="Number" /> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
         <summary>Return the integer portion of a number.</summary>
         <returns>Return the integer portion of a number.</returns>
         <remarks>
@@ -574,7 +574,7 @@ End Class
         <Parameter Name="Number" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <c>Number</c> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
+        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <paramref name="Number" /> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
         <summary>Return the integer portion of a number.</summary>
         <returns>Return the integer portion of a number.</returns>
         <remarks>
@@ -637,7 +637,7 @@ End Class
         <Parameter Name="Number" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <c>Number</c> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
+        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <paramref name="Number" /> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
         <summary>Return the integer portion of a number.</summary>
         <returns>Return the integer portion of a number.</returns>
         <remarks>
@@ -700,7 +700,7 @@ End Class
         <Parameter Name="Number" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <c>Number</c> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
+        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <paramref name="Number" /> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
         <summary>Return the integer portion of a number.</summary>
         <returns>Return the integer portion of a number.</returns>
         <remarks>
@@ -1305,7 +1305,7 @@ End Class
         <Parameter Name="Number" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <c>Number</c> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
+        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <paramref name="Number" /> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
         <summary>Return the integer portion of a number.</summary>
         <returns>Return the integer portion of a number.</returns>
         <remarks>
@@ -1368,7 +1368,7 @@ End Class
         <Parameter Name="Number" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <c>Number</c> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
+        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <paramref name="Number" /> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
         <summary>Return the integer portion of a number.</summary>
         <returns>Return the integer portion of a number.</returns>
         <remarks>
@@ -1431,7 +1431,7 @@ End Class
         <Parameter Name="Number" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <c>Number</c> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
+        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <paramref name="Number" /> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
         <summary>Return the integer portion of a number.</summary>
         <returns>Return the integer portion of a number.</returns>
         <remarks>
@@ -1494,7 +1494,7 @@ End Class
         <Parameter Name="Number" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <c>Number</c> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
+        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <paramref name="Number" /> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
         <summary>Return the integer portion of a number.</summary>
         <returns>Return the integer portion of a number.</returns>
         <remarks>
@@ -1557,7 +1557,7 @@ End Class
         <Parameter Name="Number" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <c>Number</c> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
+        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <paramref name="Number" /> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
         <summary>Return the integer portion of a number.</summary>
         <returns>Return the integer portion of a number.</returns>
         <remarks>
@@ -1620,7 +1620,7 @@ End Class
         <Parameter Name="Number" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <c>Number</c> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
+        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <paramref name="Number" /> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
         <summary>Return the integer portion of a number.</summary>
         <returns>Return the integer portion of a number.</returns>
         <remarks>
@@ -1683,7 +1683,7 @@ End Class
         <Parameter Name="Number" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <c>Number</c> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
+        <param name="Number">Required. A number of type <see langword="Double" /> or any valid numeric expression. If <paramref name="Number" /> contains <see langword="Nothing" />, <see langword="Nothing" /> is returned.</param>
         <summary>Return the integer portion of a number.</summary>
         <returns>Return the integer portion of a number.</returns>
         <remarks>
@@ -2344,7 +2344,7 @@ End Class
         <Parameter Name="Expression" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="Expression">Required. Any valid <see langword="String" /> expression, <see langword="Object" /> variable, or <see langword="Char" /> value. If <c>Expression</c> is of type <see langword="Object" />, its value must be convertible to <see langword="String" /> or an <see cref="T:System.ArgumentException" /> error occurs.</param>
+        <param name="Expression">Required. Any valid <see langword="String" /> expression, <see langword="Object" /> variable, or <see langword="Char" /> value. If <paramref name="Expression" /> is of type <see langword="Object" />, its value must be convertible to <see langword="String" /> or an <see cref="T:System.ArgumentException" /> error occurs.</param>
         <summary>Returns the numbers contained in a string as a numeric value of appropriate type.</summary>
         <returns>Returns the numbers contained in a string as a numeric value of appropriate type.</returns>
         <remarks>
@@ -2428,7 +2428,7 @@ Val("&HFFFF") 
         <Parameter Name="Expression" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Expression">Required. Any valid <see langword="String" /> expression, <see langword="Object" /> variable, or <see langword="Char" /> value. If <c>Expression</c> is of type <see langword="Object" />, its value must be convertible to <see langword="String" /> or an <see cref="T:System.ArgumentException" /> error occurs.</param>
+        <param name="Expression">Required. Any valid <see langword="String" /> expression, <see langword="Object" /> variable, or <see langword="Char" /> value. If <paramref name="Expression" /> is of type <see langword="Object" />, its value must be convertible to <see langword="String" /> or an <see cref="T:System.ArgumentException" /> error occurs.</param>
         <summary>Returns the numbers contained in a string as a numeric value of appropriate type.</summary>
         <returns>Returns the numbers contained in a string as a numeric value of appropriate type.</returns>
         <remarks>
@@ -2512,7 +2512,7 @@ Val("&HFFFF") 
         <Parameter Name="InputStr" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="InputStr">Required. Any valid <see langword="String" /> expression, <see langword="Object" /> variable, or <see langword="Char" /> value. If <c>Expression</c> is of type <see langword="Object" />, its value must be convertible to <see langword="String" /> or an <see cref="T:System.ArgumentException" /> error occurs.</param>
+        <param name="InputStr">Required. Any valid <see langword="String" /> expression, <see langword="Object" /> variable, or <see langword="Char" /> value. If <paramref name="Expression" /> is of type <see langword="Object" />, its value must be convertible to <see langword="String" /> or an <see cref="T:System.ArgumentException" /> error occurs.</param>
         <summary>Returns the numbers contained in a string as a numeric value of appropriate type.</summary>
         <returns>Returns the numbers contained in a string as a numeric value of appropriate type.</returns>
         <remarks>

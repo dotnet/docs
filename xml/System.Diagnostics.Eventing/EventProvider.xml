@@ -613,7 +613,7 @@ provider.Close();
       </Parameters>
       <Docs>
         <param name="eventDescriptor">An instance of <see cref="T:System.Diagnostics.Eventing.EventDescriptor" /> that identifies the event to write.</param>
-        <param name="dataCount">Size of the event data to which the <c>data</c> parameter points. The maximum event data size is limited to 64 KB minus the size of the event headers. The event size is less if the session's buffer size is less and the session includes extended data items with the event.</param>
+        <param name="dataCount">Size of the event data to which the <paramref name="data" /> parameter points. The maximum event data size is limited to 64 KB minus the size of the event headers. The event size is less if the session's buffer size is less and the session includes extended data items with the event.</param>
         <param name="data">Pointer to the event data to write.</param>
         <summary>Writes an event. The event data is specified as a block of memory.</summary>
         <returns>Is <see langword="true" /> if the event is written; otherwise, <see langword="false" />. If false, call the <see cref="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" /> method to determine the cause of the failure.</returns>
@@ -836,7 +836,7 @@ if (!provider.WriteMessageEvent("Event string.", 3, 2))
       <Docs>
         <param name="eventDescriptor">An instance of <see cref="T:System.Diagnostics.Eventing.EventDescriptor" /> that identifies the event to write.</param>
         <param name="relatedActivityId">Activity identifier from the previous component. Use this parameter to link your component's events to the previous component's events.</param>
-        <param name="dataCount">Size of the event data to which the <c>data</c> parameter points. The maximum event data size is limited to 64 KB minus the size of the event headers. The event size is less if the session's buffer size is less and the session includes extended data items with the event.</param>
+        <param name="dataCount">Size of the event data to which the <paramref name="data" /> parameter points. The maximum event data size is limited to 64 KB minus the size of the event headers. The event size is less if the session's buffer size is less and the session includes extended data items with the event.</param>
         <param name="data">Pointer to the event data to write.</param>
         <summary>Links events together when tracing events in an end-to-end scenario. The event data is specified as a block of memory.</summary>
         <returns>Is <see langword="true" /> if the event is written; otherwise, <see langword="false" />. If false, call the <see cref="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" /> method to determine the cause of the failure.</returns>

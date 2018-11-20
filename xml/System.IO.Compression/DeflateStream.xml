@@ -406,7 +406,7 @@
       <Docs>
         <param name="array">The byte array to read the data into.</param>
         <param name="buffer">The byte array to read the data into.</param>
-        <param name="offset">The byte offset in <c>array</c> at which to begin reading data from the stream.</param>
+        <param name="offset">The byte offset in <paramref name="array" /> at which to begin reading data from the stream.</param>
         <param name="count">The maximum number of bytes to read.</param>
         <param name="cback">An optional asynchronous callback, to be called when the read operation is complete.</param>
         <param name="asyncCallback">An optional asynchronous callback, to be called when the read operation is complete.</param>
@@ -481,7 +481,7 @@
       <Docs>
         <param name="array">The buffer to write data from.</param>
         <param name="buffer">The buffer to write data from.</param>
-        <param name="offset">The byte offset in <c>buffer</c> to begin writing from.</param>
+        <param name="offset">The byte offset in <paramref name="buffer" /> to begin writing from.</param>
         <param name="count">The maximum number of bytes to write.</param>
         <param name="asyncCallback">An optional asynchronous callback, to be called when the write operation is complete.</param>
         <param name="cback">An optional asynchronous callback, to be called when the write operation is complete.</param>
@@ -936,7 +936,7 @@
       </Parameters>
       <Docs>
         <param name="array">The array to store decompressed bytes.</param>
-        <param name="offset">The byte offset in <c>array</c> at which the read bytes will be placed.</param>
+        <param name="offset">The byte offset in <paramref name="array" /> at which the read bytes will be placed.</param>
         <param name="count">The maximum number of decompressed bytes to read.</param>
         <summary>Reads a number of decompressed bytes into the specified byte array.</summary>
         <returns>The number of bytes that were read into the byte array.</returns>
@@ -1120,7 +1120,7 @@
       </Parameters>
       <Docs>
         <param name="array">The buffer that contains the data to compress.</param>
-        <param name="offset">The byte offset in <c>array</c> from which the bytes will be read.</param>
+        <param name="offset">The byte offset in <paramref name="array" /> from which the bytes will be read.</param>
         <param name="count">The maximum number of bytes to write.</param>
         <summary>Writes compressed bytes to the underlying stream from the specified byte array.</summary>
         <remarks>

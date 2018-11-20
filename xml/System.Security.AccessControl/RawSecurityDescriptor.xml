@@ -96,7 +96,7 @@
       </Parameters>
       <Docs>
         <param name="binaryForm">The array of byte values from which to create the new <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</param>
-        <param name="offset">The offset in the  <c>binaryForm</c> array at which to begin copying.</param>
+        <param name="offset">The offset in the  <paramref name="binaryForm" /> array at which to begin copying.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> class from the specified array of byte values.</summary>
         <remarks>To be added.</remarks>
       </Docs>

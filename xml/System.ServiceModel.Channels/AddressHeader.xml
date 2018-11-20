@@ -166,7 +166,7 @@
       </Parameters>
       <Docs>
         <param name="value">The information item for the address header.</param>
-        <param name="serializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> used to serialize the specified object in the <c>value</c> parameter.</param>
+        <param name="serializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> used to serialize the specified object in the <paramref name="value" /> parameter.</param>
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class using a specified formatter to serialize the information item from a specified object.</summary>
         <returns>The <see cref="T:System.ServiceModel.Channels.AddressHeader" /> that contains the information item specified by the value parameter.</returns>
         <remarks>
@@ -268,7 +268,7 @@
         <param name="name">The name of the address header.</param>
         <param name="ns">The namespace of the address header.</param>
         <param name="value">The information item for the address header.</param>
-        <param name="serializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> used to serialize the specified object in the <c>value</c> parameter.</param>
+        <param name="serializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> used to serialize the specified object in the <paramref name="value" /> parameter.</param>
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class with a specified name and namespace that uses a specified formatter to serialize the information item from a specified object.</summary>
         <returns>The <see cref="T:System.ServiceModel.Channels.AddressHeader" /> with the specified <paramref name="name" /> and <paramref name="ns" /> that contains the information item specified by <paramref name="value" />.</returns>
         <remarks>

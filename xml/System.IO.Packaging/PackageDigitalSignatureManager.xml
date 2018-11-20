@@ -213,7 +213,7 @@
         <Parameter Name="signatures" Type="System.Collections.Generic.IEnumerable&lt;System.Uri&gt;" />
       </Parameters>
       <Docs>
-        <param name="certificate">The X.509 certificate to countersign each of the specified <c>signatures</c>.</param>
+        <param name="certificate">The X.509 certificate to countersign each of the specified <paramref name="signatures" />.</param>
         <param name="signatures">The list of signatures to countersign.</param>
         <summary>Countersigns a list of signatures with a given X.509 certificate.</summary>
         <returns>The digital signature used to countersign each of the <paramref name="signatures" />.</returns>
@@ -593,7 +593,7 @@
       </Parameters>
       <Docs>
         <param name="parts">The list of [!INCLUDE[TLA#tla_uri#plural](~/includes/tlasharptla-urisharpplural-md.md)] for the <see cref="T:System.IO.Packaging.PackagePart" /> elements to sign.</param>
-        <param name="certificate">The X.509 certificate to use to digitally sign each of the specified <c>parts</c>.</param>
+        <param name="certificate">The X.509 certificate to use to digitally sign each of the specified <paramref name="parts" />.</param>
         <summary>Signs a list of package parts with a given X.509 certificate.</summary>
         <returns>The digital signature used to sign the given list of <paramref name="parts" />; or <see langword="null" /> if no certificate could be found or the user clicked "Cancel" in the certificate selection dialog box.</returns>
         <remarks>

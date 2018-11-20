@@ -275,7 +275,7 @@
         <param name="ordinal">The zero-based column ordinal.</param>
         <param name="dataIndex">The index within the field from which to start the read operation.</param>
         <param name="buffer">The buffer into which to read the stream of bytes.</param>
-        <param name="bufferIndex">The index within the <c>buffer</c> where the write operation is to start.</param>
+        <param name="bufferIndex">The index within the <paramref name="buffer" /> where the write operation is to start.</param>
         <param name="length">The maximum length to copy into the buffer.</param>
         <summary>Reads a stream of bytes from the specified column offset into the buffer as an array starting at the given buffer offset.</summary>
         <returns>The actual number of bytes read.</returns>
@@ -366,7 +366,7 @@
         <param name="ordinal">The zero-based column ordinal.</param>
         <param name="dataIndex">The index within the row from which to start the read operation.</param>
         <param name="buffer">The buffer into which to copy data.</param>
-        <param name="bufferIndex">The index within the <c>buffer</c> where the write operation is to start.</param>
+        <param name="bufferIndex">The index within the <paramref name="buffer" /> where the write operation is to start.</param>
         <param name="length">The number of characters to read.</param>
         <summary>Reads a stream of characters from the specified column offset into the buffer as an array starting at the given buffer offset.</summary>
         <returns>The actual number of characters read.</returns>

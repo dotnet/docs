@@ -2983,7 +2983,7 @@ This method provides extensibility to the ASP.NET pipeline to make it easy for d
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.Web.HttpContext" /> that provides references to intrinsic server objects that are used to service HTTP requests.</param>
-        <param name="cb">The <see cref="T:System.AsyncCallback" /> to call when the asynchronous method call is complete. If the <c>cb</c> parameter is <see langword="null" />, the delegate is not called.</param>
+        <param name="cb">The <see cref="T:System.AsyncCallback" /> to call when the asynchronous method call is complete. If the <paramref name="cb" /> parameter is <see langword="null" />, the delegate is not called.</param>
         <param name="extraData">Any extra data that is required to process the request.</param>
         <summary>Initiates an asynchronous call to the HTTP event handler.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> that contains information about the status of the process.</returns>

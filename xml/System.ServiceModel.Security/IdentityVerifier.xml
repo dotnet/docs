@@ -75,7 +75,7 @@
       </Parameters>
       <Docs>
         <param name="identity">The <see cref="T:System.ServiceModel.EndpointIdentity" /> to verify.</param>
-        <param name="authContext">The <see cref="T:System.IdentityModel.Policy.AuthorizationContext" /> to test the <c>identity</c> against.</param>
+        <param name="authContext">The <see cref="T:System.IdentityModel.Policy.AuthorizationContext" /> to test the <paramref name="identity" /> against.</param>
         <summary>Implements a method to verify an identity.</summary>
         <returns>
           <see langword="true" /> if the identity is verified; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>

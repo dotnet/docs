@@ -202,7 +202,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the items that are copied from the collection. The array must use zero-based indexing.</param>
-        <param name="index">The zero-based index in the <c>array</c> where copying starts.</param>
+        <param name="index">The zero-based index in the <paramref name="array" /> where copying starts.</param>
         <summary>Begins at the specified index and copies the collection items to the specified array.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Collections.ICollection" />
@@ -321,7 +321,7 @@
         <Parameter Name="value" Type="System.Windows.TriggerAction" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index where the <c>value</c> must be inserted.</param>
+        <param name="index">The zero-based index where the <paramref name="value" /> must be inserted.</param>
         <param name="value">The <see cref="T:System.Windows.TriggerAction" /> object to insert into the collection.</param>
         <summary>Inserts the specified item into the collection at the specified index.</summary>
         <remarks>To be added.</remarks>
@@ -475,7 +475,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the items that are copied from the collection. The array must use zero-based indexing.</param>
-        <param name="index">The zero-based index in the <c>array</c> where copying starts.</param>
+        <param name="index">The zero-based index in the <paramref name="array" /> where copying starts.</param>
         <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -663,7 +663,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
         <param name="value">The <see cref="T:System.Object" /> to insert into the <see cref="T:System.Collections.IList" />.</param>
         <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>

@@ -2421,7 +2421,7 @@
         <param name="font">The <see cref="T:System.Drawing.Font" /> applied to the text.</param>
         <param name="maxWidth">The maximum width of the text.</param>
         <param name="flags">A bitwise combination of <see cref="T:System.Windows.Forms.TextFormatFlags" /> values to apply to the text.</param>
-        <param name="widthTruncated">Set to <see langword="true" /> if the required width of the text is greater than <c>maxWidth</c>.</param>
+        <param name="widthTruncated">Set to <see langword="true" /> if the required width of the text is greater than <paramref name="maxWidth" />.</param>
         <summary>Gets the height, in pixels, of the specified text, given the specified characteristics. Also indicates whether the required width is greater than the specified maximum width.</summary>
         <returns>The height, in pixels, of the text.</returns>
         <remarks>

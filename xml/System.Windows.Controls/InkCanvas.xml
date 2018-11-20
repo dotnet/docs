@@ -3049,7 +3049,7 @@
       </Parameters>
       <Docs>
         <param name="element">The element on which to set the bottom property.</param>
-        <param name="length">The bottom coordinate of <c>element</c>.</param>
+        <param name="length">The bottom coordinate of <paramref name="element" />.</param>
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.InkCanvas.Bottom" /> attached property for a given dependency object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3124,7 +3124,7 @@
       </Parameters>
       <Docs>
         <param name="element">The element on which to set the left property.</param>
-        <param name="length">The left coordinate of <c>element</c>.</param>
+        <param name="length">The left coordinate of <paramref name="element" />.</param>
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.InkCanvas.Left" /> attached property for a given dependency object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3161,7 +3161,7 @@
       </Parameters>
       <Docs>
         <param name="element">The element on which to set the right property.</param>
-        <param name="length">The right coordinate of <c>element</c>.</param>
+        <param name="length">The right coordinate of <paramref name="element" />.</param>
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.InkCanvas.Right" /> attached property for a given dependency object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3198,7 +3198,7 @@
       </Parameters>
       <Docs>
         <param name="element">The element on which to set the top property.</param>
-        <param name="length">The top coordinate of <c>element</c>.</param>
+        <param name="length">The top coordinate of <paramref name="element" />.</param>
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.InkCanvas.Top" /> attached property for a given dependency object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

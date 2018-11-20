@@ -124,7 +124,7 @@
       </Parameters>
       <Docs>
         <param name="element">The element to set the <see cref="T:System.Windows.Media.TextFormattingMode" /> for.</param>
-        <param name="value">The <see cref="T:System.Windows.Media.TextFormattingMode" /> to set on <c>element</c>.</param>
+        <param name="value">The <see cref="T:System.Windows.Media.TextFormattingMode" /> to set on <paramref name="element" />.</param>
         <summary>Sets the <see cref="T:System.Windows.Media.TextFormattingMode" /> for the specified element.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -154,7 +154,7 @@
       </Parameters>
       <Docs>
         <param name="element">The element to set the <see cref="T:System.Windows.Media.TextHintingMode" /> for.</param>
-        <param name="value">The <see cref="T:System.Windows.Media.TextHintingMode" /> to set on <c>element</c>.</param>
+        <param name="value">The <see cref="T:System.Windows.Media.TextHintingMode" /> to set on <paramref name="element" />.</param>
         <summary>Sets the <see cref="T:System.Windows.Media.TextHintingMode" /> for the specified element.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -184,7 +184,7 @@
       </Parameters>
       <Docs>
         <param name="element">The element to set the <see cref="T:System.Windows.Media.TextRenderingMode" /> for.</param>
-        <param name="value">The <see cref="T:System.Windows.Media.TextRenderingMode" /> to set on <c>element</c>.</param>
+        <param name="value">The <see cref="T:System.Windows.Media.TextRenderingMode" /> to set on <paramref name="element" />.</param>
         <summary>Sets the <see cref="T:System.Windows.Media.TextRenderingMode" /> for the specified element.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

@@ -47,7 +47,7 @@
       </Parameters>
       <Docs>
         <param name="owner">The parent window for the connection dialog.</param>
-        <param name="initialConnection">The connection, if any, to edit. To create a new connection, <c>initialConnection</c> should be <see langword="null" />.</param>
+        <param name="initialConnection">The connection, if any, to edit. To create a new connection, <paramref name="initialConnection" /> should be <see langword="null" />.</param>
         <summary>Creates a new data connection or edits an existing connection using the design tool's new connection user interface.</summary>
         <returns>A new or edited <see cref="T:System.ComponentModel.Design.Data.DesignerDataConnection" /> object, or <see langword="null" /> if the user canceled.</returns>
         <remarks>

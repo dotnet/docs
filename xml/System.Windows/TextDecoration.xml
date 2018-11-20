@@ -113,8 +113,8 @@ Example of an underline styled with a linear gradient brush and dashed pen
         <param name="location">The location of the text decoration.</param>
         <param name="pen">The <see cref="T:System.Windows.Media.Pen" /> used to draw the text decoration. If this value is <see langword="null" />, the text decoration color matches the text color to which it is applied, and the text decoration's thickness is set to the font's recommended thickness.</param>
         <param name="penOffset">The vertical displacement from the text decoration's location. A negative value moves the decoration lower, while a positive value moves the decoration higher.</param>
-        <param name="penOffsetUnit">The units used to interpret the value of <c>penOffset</c>.</param>
-        <param name="penThicknessUnit">The units used to interpret the value of the <see cref="P:System.Windows.Media.Pen.Thickness" /> for the <c>pen</c>.</param>
+        <param name="penOffsetUnit">The units used to interpret the value of <paramref name="penOffset" />.</param>
+        <param name="penThicknessUnit">The units used to interpret the value of the <see cref="P:System.Windows.Media.Pen.Thickness" /> for the <paramref name="pen" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.TextDecoration" /> class with the specified <see cref="P:System.Windows.TextDecoration.Location" />, <see cref="P:System.Windows.TextDecoration.Pen" />, <see cref="P:System.Windows.TextDecoration.PenOffset" />, <see cref="P:System.Windows.TextDecoration.PenOffsetUnit" />, and <see cref="P:System.Windows.TextDecoration.PenThicknessUnit" /> values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

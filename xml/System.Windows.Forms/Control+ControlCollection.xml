@@ -516,7 +516,7 @@
       <Docs>
         <param name="child">The <see cref="T:System.Windows.Forms.Control" /> to search for in the control collection.</param>
         <param name="throwException">
-          <see langword="true" /> to throw an exception if the <see cref="T:System.Windows.Forms.Control" /> specified in the <c>child</c> parameter is not a control in the <see cref="T:System.Windows.Forms.Control.ControlCollection" />; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to throw an exception if the <see cref="T:System.Windows.Forms.Control" /> specified in the <paramref name="child" /> parameter is not a control in the <see cref="T:System.Windows.Forms.Control.ControlCollection" />; otherwise, <see langword="false" />.</param>
         <summary>Retrieves the index of the specified child control within the control collection, and optionally raises an exception if the specified control is not within the control collection.</summary>
         <returns>A zero-based index value that represents the location of the specified child control within the control collection; otherwise -1 if the specified <see cref="T:System.Windows.Forms.Control" /> is not found in the <see cref="T:System.Windows.Forms.Control.ControlCollection" />.</returns>
         <remarks>
@@ -947,7 +947,7 @@
         <Parameter Name="newIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="child">The <c>child</c><see cref="T:System.Windows.Forms.Control" /> to search for.</param>
+        <param name="child">The <paramref name="child" /><see cref="T:System.Windows.Forms.Control" /> to search for.</param>
         <param name="newIndex">The new index value of the control.</param>
         <summary>Sets the index of the specified child control in the collection to the specified index value.</summary>
         <remarks>

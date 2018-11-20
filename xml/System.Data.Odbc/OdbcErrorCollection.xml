@@ -91,7 +91,7 @@
       </Parameters>
       <Docs>
         <param name="array">The array into which to copy the elements.</param>
-        <param name="i">The starting index of <c>array</c>.</param>
+        <param name="i">The starting index of <paramref name="array" />.</param>
         <summary>Copies the elements of the <see cref="T:System.Data.Odbc.OdbcErrorCollection" /> into an array, starting at the specified index within the array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

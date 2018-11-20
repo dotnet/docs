@@ -174,7 +174,7 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the tab.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the tab.</param>
         <param name="tabItemText">The <see cref="T:System.String" /> to draw in the tab.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>tabItemText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="tabItemText" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TabItemState" /> values that specifies the visual state of the tab.</param>
         <summary>Draws a tab in the specified state and bounds, and with the specified text.</summary>
         <remarks>
@@ -223,7 +223,7 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the tab.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the tab.</param>
         <param name="image">The <see cref="T:System.Drawing.Image" /> to draw in the tab.</param>
-        <param name="imageRectangle">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of <c>image</c>.</param>
+        <param name="imageRectangle">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of <paramref name="image" />.</param>
         <param name="focused">
           <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TabItemState" /> values that specifies the visual state of the tab.</param>
@@ -279,7 +279,7 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the tab.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the tab.</param>
         <param name="tabItemText">The <see cref="T:System.String" /> to draw in the tab.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>tabItemText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="tabItemText" />.</param>
         <param name="focused">
           <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TabItemState" /> values that specifies the visual state of the tab.</param>
@@ -340,7 +340,7 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the tab.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the tab.</param>
         <param name="tabItemText">The <see cref="T:System.String" /> to draw in the tab.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>tabItemText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="tabItemText" />.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
         <param name="focused">
           <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
@@ -399,9 +399,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the tab.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the tab.</param>
         <param name="tabItemText">The <see cref="T:System.String" /> to draw in the tab.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>tabItemText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="tabItemText" />.</param>
         <param name="image">The <see cref="T:System.Drawing.Image" /> to draw in the tab.</param>
-        <param name="imageRectangle">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of <c>image</c>.</param>
+        <param name="imageRectangle">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of <paramref name="image" />.</param>
         <param name="focused">
           <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TabItemState" /> values that specifies the visual state of the tab.</param>
@@ -455,10 +455,10 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the tab.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the tab.</param>
         <param name="tabItemText">The <see cref="T:System.String" /> to draw in the tab.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>tabItemText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="tabItemText" />.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
         <param name="image">The <see cref="T:System.Drawing.Image" /> to draw in the tab.</param>
-        <param name="imageRectangle">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of <c>image</c>.</param>
+        <param name="imageRectangle">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of <paramref name="image" />.</param>
         <param name="focused">
           <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TabItemState" /> values that specifies the visual state of the tab.</param>

@@ -91,7 +91,7 @@
       </Parameters>
       <Docs>
         <param name="name">The unique identifier of the device adapter set.</param>
-        <param name="predicateClass">The class to which the method specified by <c>predicateMethod</c> belongs.</param>
+        <param name="predicateClass">The class to which the method specified by <paramref name="predicateMethod" /> belongs.</param>
         <param name="predicateMethod">A method used to detect through the current <see cref="T:System.Web.HttpContext" /> whether the device adapter set is applicable.</param>
         <param name="pageAdapter">Identifies the page adapter class for the device set.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> class with the specified identifier and page adapter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
@@ -123,7 +123,7 @@
       <Docs>
         <param name="name">The unique identifier of the device adapter set.</param>
         <param name="inheritsFrom">The device adapter set that this device adapter set inherits from.</param>
-        <param name="predicateClass">The class to which the method specified by <c>predicateMethod</c> belongs.</param>
+        <param name="predicateClass">The class to which the method specified by <paramref name="predicateMethod" /> belongs.</param>
         <param name="predicateMethod">A method used to detect through the current <see cref="T:System.Web.HttpContext" /> whether the device adapter set is applicable.</param>
         <param name="pageAdapter">Identifies the page adapter class for the device set.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.DeviceElement" /> class with the specified identifier, page adapter, and device adapter set to inherit from. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>

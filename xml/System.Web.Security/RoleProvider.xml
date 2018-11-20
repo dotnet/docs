@@ -251,7 +251,7 @@
       </Parameters>
       <Docs>
         <param name="roleName">The name of the role to delete.</param>
-        <param name="throwOnPopulatedRole">If <see langword="true" />, throw an exception if <c>roleName</c> has one or more members and do not delete <c>roleName</c>.</param>
+        <param name="throwOnPopulatedRole">If <see langword="true" />, throw an exception if <paramref name="roleName" /> has one or more members and do not delete <paramref name="roleName" />.</param>
         <summary>Removes a role from the data source for the configured <see langword="applicationName" />.</summary>
         <returns>
           <see langword="true" /> if the role was successfully deleted; otherwise, <see langword="false" />.</returns>

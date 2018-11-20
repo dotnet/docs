@@ -346,7 +346,7 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index at which the item should be inserted.</param>
-        <param name="item">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> item to insert at the specified <c>index</c>.</param>
+        <param name="item">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> item to insert at the specified <paramref name="index" />.</param>
         <summary>Inserts an item into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -388,7 +388,7 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element to replace.</param>
-        <param name="item">The new value for <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> item at the specified <c>index</c>.</param>
+        <param name="item">The new value for <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> item at the specified <paramref name="index" />.</param>
         <summary>Replaces the element in the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

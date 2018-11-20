@@ -383,7 +383,7 @@
         <Parameter Name="plibNewPosition" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="dlibMove">The displacement to add to <c>dwOrigin</c>.</param>
+        <param name="dlibMove">The displacement to add to <paramref name="dwOrigin" />.</param>
         <param name="dwOrigin">The origin of the seek. The origin can be the beginning of the file, the current seek pointer, or the end of the file.</param>
         <param name="plibNewPosition">On successful return, contains the offset of the seek pointer from the beginning of the stream.</param>
         <summary>Changes the seek pointer to a new location relative to the beginning of the stream, to the end of the stream, or to the current seek pointer.</summary>

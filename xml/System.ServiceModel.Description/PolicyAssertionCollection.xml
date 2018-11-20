@@ -201,8 +201,8 @@
         <Parameter Name="item" Type="System.Xml.XmlElement" />
       </Parameters>
       <Docs>
-        <param name="index">The index at which to insert <c>item</c>.</param>
-        <param name="item">The policy assertion to insert at <c>index</c>. The assertion must not be null.</param>
+        <param name="index">The index at which to insert <paramref name="item" />.</param>
+        <param name="item">The policy assertion to insert at <paramref name="index" />. The assertion must not be null.</param>
         <summary>Inserts a specified policy assertion into the collection at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -295,7 +295,7 @@
       </Parameters>
       <Docs>
         <param name="index">The index that contains the assertion to replace.</param>
-        <param name="item">The policy assertion to replace the assertion already at <c>index</c>. The assertion must not be null.</param>
+        <param name="item">The policy assertion to replace the assertion already at <paramref name="index" />. The assertion must not be null.</param>
         <summary>Replaces the policy assertion at a specified index with a specified policy assertion.</summary>
         <remarks>To be added.</remarks>
       </Docs>

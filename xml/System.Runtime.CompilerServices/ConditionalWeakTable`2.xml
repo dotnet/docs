@@ -169,7 +169,7 @@
         <Parameter Name="value" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="key">The key to add. <c>key</c> represents the object to which the property is attached.</param>
+        <param name="key">The key to add. <paramref name="key" /> represents the object to which the property is attached.</param>
         <param name="value">The key's property value.</param>
         <summary>Adds a key to the table.</summary>
         <remarks>
@@ -347,7 +347,7 @@
         <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="key">The key to search for. <c>key</c> represents the object to which the property is attached.</param>
+        <param name="key">The key to search for. <paramref name="key" /> represents the object to which the property is attached.</param>
         <summary>Atomically searches for a specified key in the table and returns the corresponding value. If the key does not exist in the table, the method invokes the default constructor of the class that represents the table's value to create a value that is bound to the specified key.</summary>
         <returns>The value that corresponds to <paramref name="key" />, if <paramref name="key" /> already exists in the table; otherwise, a new value created by the default constructor of the class defined by the <paramref name="TValue" /> generic type parameter.</returns>
         <remarks>
@@ -424,8 +424,8 @@
         <Parameter Name="createValueCallback" Type="System.Runtime.CompilerServices.ConditionalWeakTable&lt;TKey,TValue&gt;+CreateValueCallback" />
       </Parameters>
       <Docs>
-        <param name="key">The key to search for. <c>key</c> represents the object to which the property is attached.</param>
-        <param name="createValueCallback">A delegate to a method that can create a value for the given <c>key</c>. It has a single parameter of type <c>TKey</c>, and returns a value of type <c>TValue</c>.</param>
+        <param name="key">The key to search for. <paramref name="key" /> represents the object to which the property is attached.</param>
+        <param name="createValueCallback">A delegate to a method that can create a value for the given <paramref name="key" />. It has a single parameter of type <c>TKey</c>, and returns a value of type <c>TValue</c>.</param>
         <summary>Atomically searches for a specified key in the table and returns the corresponding value. If the key does not exist in the table, the method invokes a callback method to create a value that is bound to the specified key.</summary>
         <returns>The value attached to <paramref name="key" />, if <paramref name="key" /> already exists in the table; otherwise, the new value returned by the <paramref name="createValueCallback" /> delegate.</returns>
         <remarks>
@@ -621,7 +621,7 @@
       </Parameters>
       <Docs>
         <param name="key">The key that represents an object with an attached property.</param>
-        <param name="value">When this method returns, contains the attached property value. If <c>key</c> is not found, <c>value</c> contains the default value.</param>
+        <param name="value">When this method returns, contains the attached property value. If <paramref name="key" /> is not found, <paramref name="value" /> contains the default value.</param>
         <summary>Gets the value of the specified key.</summary>
         <returns>
           <see langword="true" /> if <paramref name="key" /> is found; otherwise, <see langword="false" />.</returns>

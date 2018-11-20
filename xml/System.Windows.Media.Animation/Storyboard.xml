@@ -130,7 +130,7 @@
         <Parameter Name="containingObject" Type="System.Windows.FrameworkContentElement" />
       </Parameters>
       <Docs>
-        <param name="containingObject">An object contained within the same name scope as the targets of this storyboard's animations. Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <c>containingObject</c>.</param>
+        <param name="containingObject">An object contained within the same name scope as the targets of this storyboard's animations. Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <paramref name="containingObject" />.</param>
         <summary>Applies the animations associated with this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to their targets and initiates them.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -179,7 +179,7 @@
         <Parameter Name="containingObject" Type="System.Windows.FrameworkElement" />
       </Parameters>
       <Docs>
-        <param name="containingObject">An object contained within the same name scope as the targets of this storyboard's animations. Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <c>containingObject</c>.</param>
+        <param name="containingObject">An object contained within the same name scope as the targets of this storyboard's animations. Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <paramref name="containingObject" />.</param>
         <summary>Applies the animations associated with this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to their targets and initiates them.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -221,7 +221,7 @@
         <Parameter Name="isControllable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="containingObject">An object contained within the same name scope as the targets of this storyboard's animations. Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <c>containingObject</c>.</param>
+        <param name="containingObject">An object contained within the same name scope as the targets of this storyboard's animations. Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <paramref name="containingObject" />.</param>
         <param name="isControllable">
           <see langword="true" /> if the storyboard should be interactively controllable; otherwise, <see langword="false" />.</param>
         <summary>Applies the animations associated with this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to their targets and initiates them.</summary>
@@ -274,7 +274,7 @@
         <Parameter Name="handoffBehavior" Type="System.Windows.Media.Animation.HandoffBehavior" />
       </Parameters>
       <Docs>
-        <param name="containingObject">An object contained within the same name scope as the targets of this storyboard's animations. Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <c>containingObject</c>.</param>
+        <param name="containingObject">An object contained within the same name scope as the targets of this storyboard's animations. Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <paramref name="containingObject" />.</param>
         <param name="handoffBehavior">The behavior the new animation should use to interact with any current animations.</param>
         <summary>Applies the animations associated with this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to their targets and initiates them, using the specified <see cref="T:System.Windows.Media.Animation.HandoffBehavior" />.</summary>
         <remarks>
@@ -331,7 +331,7 @@
         <Parameter Name="isControllable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="containingObject">An object contained within the same name scope as the targets of this storyboard's animations. Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <c>containingObject</c>.</param>
+        <param name="containingObject">An object contained within the same name scope as the targets of this storyboard's animations. Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <paramref name="containingObject" />.</param>
         <param name="isControllable">
           <see langword="true" /> if the storyboard should be interactively controllable; otherwise, <see langword="false" />.</param>
         <summary>Applies the animations associated with this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to their targets and initiates them.</summary>
@@ -376,7 +376,7 @@
         <Parameter Name="frameworkTemplate" Type="System.Windows.FrameworkTemplate" />
       </Parameters>
       <Docs>
-        <param name="containingObject">The object to which the specified <c>frameworkTemplate</c> has been applied. Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <c>containingObject</c>.</param>
+        <param name="containingObject">The object to which the specified <paramref name="frameworkTemplate" /> has been applied. Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <paramref name="containingObject" />.</param>
         <param name="frameworkTemplate">The template to animate.</param>
         <summary>Applies the animations associated with this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to their targets within the specified template and initiates them.</summary>
         <remarks>
@@ -418,7 +418,7 @@
         <Parameter Name="handoffBehavior" Type="System.Windows.Media.Animation.HandoffBehavior" />
       </Parameters>
       <Docs>
-        <param name="containingObject">An object contained within the same name scope as the targets of this storyboard's animations. Animations without a specified <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <c>containingObject</c>.</param>
+        <param name="containingObject">An object contained within the same name scope as the targets of this storyboard's animations. Animations without a specified <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <paramref name="containingObject" />.</param>
         <param name="handoffBehavior">The behavior the new animation should use to interact with any current animations.</param>
         <summary>Applies the animations associated with this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to their targets and initiates them, using the specified <see cref="T:System.Windows.Media.Animation.HandoffBehavior" />.</summary>
         <remarks>
@@ -455,7 +455,7 @@
         <Parameter Name="isControllable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="containingObject">An object contained within the same name scope as the targets of this storyboard's animations. Animations without a specified <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <c>containingObject</c>.</param>
+        <param name="containingObject">An object contained within the same name scope as the targets of this storyboard's animations. Animations without a specified <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <paramref name="containingObject" />.</param>
         <param name="handoffBehavior">The behavior the new animation should use to interact with any current animations.</param>
         <param name="isControllable">Declares whether the animation is controllable (can be paused) once started.</param>
         <summary>Applies the animations associated with this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to their targets and initiates them, using the specified <see cref="T:System.Windows.Media.Animation.HandoffBehavior" />.</summary>
@@ -527,7 +527,7 @@
         <Parameter Name="isControllable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="containingObject">The object to which the specified <c>frameworkTemplate</c> has been applied.  Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <c>containingObject</c>.</param>
+        <param name="containingObject">The object to which the specified <paramref name="frameworkTemplate" /> has been applied.  Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <paramref name="containingObject" />.</param>
         <param name="frameworkTemplate">The template to animate.</param>
         <param name="isControllable">
           <see langword="true" /> if the storyboard should be interactively controllable; otherwise, <see langword="false" />.</param>
@@ -574,7 +574,7 @@
         <Parameter Name="handoffBehavior" Type="System.Windows.Media.Animation.HandoffBehavior" />
       </Parameters>
       <Docs>
-        <param name="containingObject">The object to which the specified <c>frameworkTemplate</c> has been applied. Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <c>containingObject</c>.</param>
+        <param name="containingObject">The object to which the specified <paramref name="frameworkTemplate" /> has been applied. Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <paramref name="containingObject" />.</param>
         <param name="frameworkTemplate">The template to animate.</param>
         <param name="handoffBehavior">The behavior the new animation should use to interact with any current animations.</param>
         <summary>Applies the animations associated with this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to their targets within the specified template and initiates them.</summary>
@@ -624,7 +624,7 @@
         <Parameter Name="isControllable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="containingObject">An object contained within the same name scope as the targets of this storyboard's animations. Animations without a specified <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <c>containingObject</c>.</param>
+        <param name="containingObject">An object contained within the same name scope as the targets of this storyboard's animations. Animations without a specified <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <paramref name="containingObject" />.</param>
         <param name="handoffBehavior">The behavior the new animation should use to interact with any current animations.</param>
         <param name="isControllable">Declares whether the animation is controllable (can be paused) once started.</param>
         <summary>Applies the animations associated with this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to their targets and initiates them.</summary>
@@ -690,7 +690,7 @@
         <Parameter Name="isControllable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="containingObject">The object to which the specified <c>frameworkTemplate</c> has been applied. Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <c>containingObject</c>.</param>
+        <param name="containingObject">The object to which the specified <paramref name="frameworkTemplate" /> has been applied. Animations without a <see cref="P:System.Windows.Media.Animation.Storyboard.TargetName" /> are applied to <paramref name="containingObject" />.</param>
         <param name="frameworkTemplate">The template to animate.</param>
         <param name="handoffBehavior">The behavior the new animation should use to interact with any current animations.</param>
         <param name="isControllable">
@@ -2143,8 +2143,8 @@
         <Parameter Name="origin" Type="System.Windows.Media.Animation.TimeSeekOrigin" />
       </Parameters>
       <Docs>
-        <param name="offset">A positive or negative value that describes the amount by which the timeline should move forward or backward from the specified <c>origin</c>.</param>
-        <param name="origin">The position from which <c>offset</c> is applied.</param>
+        <param name="offset">A positive or negative value that describes the amount by which the timeline should move forward or backward from the specified <paramref name="origin" />.</param>
+        <param name="origin">The position from which <paramref name="offset" /> is applied.</param>
         <summary>Seeks this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to the specified position. The <see cref="T:System.Windows.Media.Animation.Storyboard" /> performs the requested seek when the next clock tick occurs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2186,8 +2186,8 @@
       </Parameters>
       <Docs>
         <param name="containingObject">The object specified when the <see cref="M:System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkContentElement,System.Boolean)" /> method was called. This object contains the <see cref="T:System.Windows.Media.Animation.Clock" /> objects that were created for this storyboard and its children.</param>
-        <param name="offset">A positive or negative value that describes the amount by which the timeline should move forward or backward from the specified <c>origin</c>.</param>
-        <param name="origin">The position from which <c>offset</c> is applied.</param>
+        <param name="offset">A positive or negative value that describes the amount by which the timeline should move forward or backward from the specified <paramref name="origin" />.</param>
+        <param name="origin">The position from which <paramref name="offset" /> is applied.</param>
         <summary>Seeks this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to the specified position. The <see cref="T:System.Windows.Media.Animation.Storyboard" /> performs the requested seek when the next clock tick occurs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2241,8 +2241,8 @@
       </Parameters>
       <Docs>
         <param name="containingObject">The object specified when the <see cref="M:System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkElement,System.Boolean)" /> method was called. This object contains the <see cref="T:System.Windows.Media.Animation.Clock" /> objects that were created for this storyboard and its children.</param>
-        <param name="offset">A positive or negative value that describes the amount by which the timeline should move forward or backward from the specified <c>origin</c>.</param>
-        <param name="origin">The position from which <c>offset</c> is applied.</param>
+        <param name="offset">A positive or negative value that describes the amount by which the timeline should move forward or backward from the specified <paramref name="origin" />.</param>
+        <param name="origin">The position from which <paramref name="offset" /> is applied.</param>
         <summary>Seeks this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to the specified position. The <see cref="T:System.Windows.Media.Animation.Storyboard" /> performs the requested seek when the next clock tick occurs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2350,8 +2350,8 @@
         <Parameter Name="origin" Type="System.Windows.Media.Animation.TimeSeekOrigin" />
       </Parameters>
       <Docs>
-        <param name="offset">A positive or negative value that describes the amount by which the timeline should move forward or backward from the specified <c>origin</c>.</param>
-        <param name="origin">The position from which <c>offset</c> is applied.</param>
+        <param name="offset">A positive or negative value that describes the amount by which the timeline should move forward or backward from the specified <paramref name="origin" />.</param>
+        <param name="origin">The position from which <paramref name="offset" /> is applied.</param>
         <summary>Seeks this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to a new position immediately (synchronously).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2395,8 +2395,8 @@
       </Parameters>
       <Docs>
         <param name="containingObject">The object specified when the <see cref="M:System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkContentElement,System.Boolean)" /> method was called. This object contains the <see cref="T:System.Windows.Media.Animation.Clock" /> objects that were created for this storyboard and its children.</param>
-        <param name="offset">A positive or negative value that describes the amount by which the timeline should move forward or backward from the specified <c>origin</c>.</param>
-        <param name="origin">The position from which <c>offset</c> is applied.</param>
+        <param name="offset">A positive or negative value that describes the amount by which the timeline should move forward or backward from the specified <paramref name="origin" />.</param>
+        <param name="origin">The position from which <paramref name="offset" /> is applied.</param>
         <summary>Seeks this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to a new position immediately (synchronously).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2454,8 +2454,8 @@
       </Parameters>
       <Docs>
         <param name="containingObject">The object specified when the <see cref="M:System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkElement,System.Boolean)" /> method was called. This object contains the <see cref="T:System.Windows.Media.Animation.Clock" /> objects that were created for this storyboard and its children.</param>
-        <param name="offset">A positive or negative value that describes the amount by which the timeline should move forward or backward from the specified <c>origin</c>.</param>
-        <param name="origin">The position from which <c>offset</c> is applied.</param>
+        <param name="offset">A positive or negative value that describes the amount by which the timeline should move forward or backward from the specified <paramref name="origin" />.</param>
+        <param name="origin">The position from which <paramref name="offset" /> is applied.</param>
         <summary>Seeks this <see cref="T:System.Windows.Media.Animation.Storyboard" /> to a new position immediately (synchronously).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

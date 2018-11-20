@@ -4129,7 +4129,7 @@
       </Parameters>
       <Docs>
         <param name="format">A composite format string.</param>
-        <param name="arg0">An object to write using <c>format</c>.</param>
+        <param name="arg0">An object to write using <paramref name="format" />.</param>
         <summary>Writes the text representation of the specified object to the standard output stream using the specified format information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4222,7 +4222,7 @@
       </Parameters>
       <Docs>
         <param name="format">A composite format string.</param>
-        <param name="arg">An array of objects to write using <c>format</c>.</param>
+        <param name="arg">An array of objects to write using <paramref name="format" />.</param>
         <summary>Writes the text representation of the specified array of objects to the standard output stream using the specified format information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4315,7 +4315,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of Unicode characters.</param>
-        <param name="index">The starting position in <c>buffer</c>.</param>
+        <param name="index">The starting position in <paramref name="buffer" />.</param>
         <param name="count">The number of characters to write.</param>
         <summary>Writes the specified subarray of Unicode characters to the standard output stream.</summary>
         <remarks>
@@ -4374,8 +4374,8 @@
       </Parameters>
       <Docs>
         <param name="format">A composite format string.</param>
-        <param name="arg0">The first object to write using <c>format</c>.</param>
-        <param name="arg1">The second object to write using <c>format</c>.</param>
+        <param name="arg0">The first object to write using <paramref name="format" />.</param>
+        <param name="arg1">The second object to write using <paramref name="format" />.</param>
         <summary>Writes the text representation of the specified objects to the standard output stream using the specified format information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4464,9 +4464,9 @@
       </Parameters>
       <Docs>
         <param name="format">A composite format string.</param>
-        <param name="arg0">The first object to write using <c>format</c>.</param>
-        <param name="arg1">The second object to write using <c>format</c>.</param>
-        <param name="arg2">The third object to write using <c>format</c>.</param>
+        <param name="arg0">The first object to write using <paramref name="format" />.</param>
+        <param name="arg1">The second object to write using <paramref name="format" />.</param>
+        <param name="arg2">The third object to write using <paramref name="format" />.</param>
         <summary>Writes the text representation of the specified objects to the standard output stream using the specified format information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4561,10 +4561,10 @@
       </Parameters>
       <Docs>
         <param name="format">A composite format string.</param>
-        <param name="arg0">The first object to write using <c>format</c>.</param>
-        <param name="arg1">The second object to write using <c>format</c>.</param>
-        <param name="arg2">The third object to write using <c>format</c>.</param>
-        <param name="arg3">The fourth object to write using <c>format</c>.</param>
+        <param name="arg0">The first object to write using <paramref name="format" />.</param>
+        <param name="arg1">The second object to write using <paramref name="format" />.</param>
+        <param name="arg2">The third object to write using <paramref name="format" />.</param>
+        <param name="arg3">The fourth object to write using <paramref name="format" />.</param>
         <summary>Writes the text representation of the specified objects and variable-length parameter list to the standard output stream using the specified format information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5433,7 +5433,7 @@
       </Parameters>
       <Docs>
         <param name="format">A composite format string.</param>
-        <param name="arg0">An object to write using <c>format</c>.</param>
+        <param name="arg0">An object to write using <paramref name="format" />.</param>
         <summary>Writes the text representation of the specified object, followed by the current line terminator, to the standard output stream using the specified format information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5526,7 +5526,7 @@
       </Parameters>
       <Docs>
         <param name="format">A composite format string.</param>
-        <param name="arg">An array of objects to write using <c>format</c>.</param>
+        <param name="arg">An array of objects to write using <paramref name="format" />.</param>
         <summary>Writes the text representation of the specified array of objects, followed by the current line terminator, to the standard output stream using the specified format information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5618,7 +5618,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of Unicode characters.</param>
-        <param name="index">The starting position in <c>buffer</c>.</param>
+        <param name="index">The starting position in <paramref name="buffer" />.</param>
         <param name="count">The number of characters to write.</param>
         <summary>Writes the specified subarray of Unicode characters, followed by the current line terminator, to the standard output stream.</summary>
         <remarks>
@@ -5679,8 +5679,8 @@
       </Parameters>
       <Docs>
         <param name="format">A composite format string.</param>
-        <param name="arg0">The first object to write using <c>format</c>.</param>
-        <param name="arg1">The second object to write using <c>format</c>.</param>
+        <param name="arg0">The first object to write using <paramref name="format" />.</param>
+        <param name="arg1">The second object to write using <paramref name="format" />.</param>
         <summary>Writes the text representation of the specified objects, followed by the current line terminator, to the standard output stream using the specified format information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5770,9 +5770,9 @@
       </Parameters>
       <Docs>
         <param name="format">A composite format string.</param>
-        <param name="arg0">The first object to write using <c>format</c>.</param>
-        <param name="arg1">The second object to write using <c>format</c>.</param>
-        <param name="arg2">The third object to write using <c>format</c>.</param>
+        <param name="arg0">The first object to write using <paramref name="format" />.</param>
+        <param name="arg1">The second object to write using <paramref name="format" />.</param>
+        <param name="arg2">The third object to write using <paramref name="format" />.</param>
         <summary>Writes the text representation of the specified objects, followed by the current line terminator, to the standard output stream using the specified format information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5868,10 +5868,10 @@
       </Parameters>
       <Docs>
         <param name="format">A composite format string.</param>
-        <param name="arg0">The first object to write using <c>format</c>.</param>
-        <param name="arg1">The second object to write using <c>format</c>.</param>
-        <param name="arg2">The third object to write using <c>format</c>.</param>
-        <param name="arg3">The fourth object to write using <c>format</c>.</param>
+        <param name="arg0">The first object to write using <paramref name="format" />.</param>
+        <param name="arg1">The second object to write using <paramref name="format" />.</param>
+        <param name="arg2">The third object to write using <paramref name="format" />.</param>
+        <param name="arg3">The fourth object to write using <paramref name="format" />.</param>
         <summary>Writes the text representation of the specified objects and variable-length parameter list, followed by the current line terminator, to the standard output stream using the specified format information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

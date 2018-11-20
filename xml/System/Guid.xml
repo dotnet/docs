@@ -1176,7 +1176,7 @@
       </Parameters>
       <Docs>
         <param name="input">The GUID to convert.</param>
-        <param name="format">One of the following specifiers that indicates the exact format to use when interpreting <c>input</c>: "N", "D", "B", "P", or "X".</param>
+        <param name="format">One of the following specifiers that indicates the exact format to use when interpreting <paramref name="input" />: "N", "D", "B", "P", or "X".</param>
         <summary>Converts the string representation of a GUID to the equivalent <see cref="T:System.Guid" /> structure, provided that the string is in the specified format.</summary>
         <returns>A structure that contains the value that was parsed.</returns>
         <remarks>
@@ -1436,7 +1436,7 @@
         <Parameter Name="format" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="format">A single format specifier that indicates how to format the value of this <see cref="T:System.Guid" />. The <c>format</c> parameter can be "N", "D", "B", "P", or "X". If <c>format</c> is <see langword="null" /> or an empty string (""), "D" is used.</param>
+        <param name="format">A single format specifier that indicates how to format the value of this <see cref="T:System.Guid" />. The <paramref name="format" /> parameter can be "N", "D", "B", "P", or "X". If <paramref name="format" /> is <see langword="null" /> or an empty string (""), "D" is used.</param>
         <summary>Returns a string representation of the value of this <see cref="T:System.Guid" /> instance, according to the provided format specifier.</summary>
         <returns>The value of this <see cref="T:System.Guid" />, represented as a series of lowercase hexadecimal digits in the specified format.</returns>
         <remarks>
@@ -1500,7 +1500,7 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">A single format specifier that indicates how to format the value of this <see cref="T:System.Guid" />. The <c>format</c> parameter can be "N", "D", "B", "P", or "X". If <c>format</c> is <see langword="null" /> or an empty string (""), "D" is used.</param>
+        <param name="format">A single format specifier that indicates how to format the value of this <see cref="T:System.Guid" />. The <paramref name="format" /> parameter can be "N", "D", "B", "P", or "X". If <paramref name="format" /> is <see langword="null" /> or an empty string (""), "D" is used.</param>
         <param name="provider">(Reserved) An object that supplies culture-specific formatting information.</param>
         <summary>Returns a string representation of the value of this instance of the <see cref="T:System.Guid" /> class, according to the provided format specifier and culture-specific format information.</summary>
         <returns>The value of this <see cref="T:System.Guid" />, represented as a series of lowercase hexadecimal digits in the specified format.</returns>
@@ -1631,7 +1631,7 @@
       </Parameters>
       <Docs>
         <param name="input">The GUID to convert.</param>
-        <param name="result">The structure that will contain the parsed value. If the method returns <see langword="true" />, <c>result</c> contains a valid <see cref="T:System.Guid" />. If the method returns <see langword="false" />, <c>result</c> equals <see cref="F:System.Guid.Empty" />.</param>
+        <param name="result">The structure that will contain the parsed value. If the method returns <see langword="true" />, <paramref name="result" /> contains a valid <see cref="T:System.Guid" />. If the method returns <see langword="false" />, <paramref name="result" /> equals <see cref="F:System.Guid.Empty" />.</param>
         <summary>Converts the string representation of a GUID to the equivalent <see cref="T:System.Guid" /> structure.</summary>
         <returns>
           <see langword="true" /> if the parse operation was successful; otherwise, <see langword="false" />.</returns>
@@ -1733,8 +1733,8 @@
       </Parameters>
       <Docs>
         <param name="input">The GUID to convert.</param>
-        <param name="format">One of the following specifiers that indicates the exact format to use when interpreting <c>input</c>: "N", "D", "B", "P", or "X".</param>
-        <param name="result">The structure that will contain the parsed value. If the method returns <see langword="true" />, <c>result</c> contains a valid <see cref="T:System.Guid" />. If the method returns <see langword="false" />, <c>result</c> equals <see cref="F:System.Guid.Empty" />.</param>
+        <param name="format">One of the following specifiers that indicates the exact format to use when interpreting <paramref name="input" />: "N", "D", "B", "P", or "X".</param>
+        <param name="result">The structure that will contain the parsed value. If the method returns <see langword="true" />, <paramref name="result" /> contains a valid <see cref="T:System.Guid" />. If the method returns <see langword="false" />, <paramref name="result" /> equals <see cref="F:System.Guid.Empty" />.</param>
         <summary>Converts the string representation of a GUID to the equivalent <see cref="T:System.Guid" /> structure, provided that the string is in the specified format.</summary>
         <returns>
           <see langword="true" /> if the parse operation was successful; otherwise, <see langword="false" />.</returns>

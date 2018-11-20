@@ -542,7 +542,7 @@ async Task TestWriter(Stream stream)
         <Parameter Name="outputFileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="outputFileName">The file to which you want to write. The <see cref="T:System.Xml.XmlWriter" /> creates a file at the specified path and writes to it in XML 1.0 text syntax. The <c>outputFileName</c> must be a file system path.</param>
+        <param name="outputFileName">The file to which you want to write. The <see cref="T:System.Xml.XmlWriter" /> creates a file at the specified path and writes to it in XML 1.0 text syntax. The <paramref name="outputFileName" /> must be a file system path.</param>
         <summary>Creates a new <see cref="T:System.Xml.XmlWriter" /> instance using the specified filename.</summary>
         <returns>An <see cref="T:System.Xml.XmlWriter" /> object.</returns>
         <remarks>
@@ -868,7 +868,7 @@ async Task TestWriter(Stream stream)
         <Parameter Name="settings" Type="System.Xml.XmlWriterSettings" />
       </Parameters>
       <Docs>
-        <param name="outputFileName">The file to which you want to write. The <see cref="T:System.Xml.XmlWriter" /> creates a file at the specified path and writes to it in XML 1.0 text syntax. The <c>outputFileName</c> must be a file system path.</param>
+        <param name="outputFileName">The file to which you want to write. The <see cref="T:System.Xml.XmlWriter" /> creates a file at the specified path and writes to it in XML 1.0 text syntax. The <paramref name="outputFileName" /> must be a file system path.</param>
         <param name="settings">The <see cref="T:System.Xml.XmlWriterSettings" /> object used to configure the new <see cref="T:System.Xml.XmlWriter" /> instance. If this is <see langword="null" />, a <see cref="T:System.Xml.XmlWriterSettings" /> with default settings is used.  
   
  If the <see cref="T:System.Xml.XmlWriter" /> is being used with the <see cref="M:System.Xml.Xsl.XslCompiledTransform.Transform(System.String,System.Xml.XmlWriter)" /> method, you should use the <see cref="P:System.Xml.Xsl.XslCompiledTransform.OutputSettings" /> property to obtain an <see cref="T:System.Xml.XmlWriterSettings" /> object with the correct settings. This ensures that the created <see cref="T:System.Xml.XmlWriter" /> object has the correct output settings.</param>
@@ -2445,8 +2445,8 @@ This member may behave differently when it is used in a Portable Class Library p
       </Parameters>
       <Docs>
         <param name="name">The name of the DOCTYPE. This must be non-empty.</param>
-        <param name="pubid">If non-null it also writes PUBLIC "pubid" "sysid" where <c>pubid</c> and <c>sysid</c> are replaced with the value of the given arguments.</param>
-        <param name="sysid">If <c>pubid</c> is <see langword="null" /> and <c>sysid</c> is non-null it writes SYSTEM "sysid" where <c>sysid</c> is replaced with the value of this argument.</param>
+        <param name="pubid">If non-null it also writes PUBLIC "pubid" "sysid" where <paramref name="pubid" /> and <paramref name="sysid" /> are replaced with the value of the given arguments.</param>
+        <param name="sysid">If <paramref name="pubid" /> is <see langword="null" /> and <paramref name="sysid" /> is non-null it writes SYSTEM "sysid" where <paramref name="sysid" /> is replaced with the value of this argument.</param>
         <param name="subset">If non-null it writes [subset] where subset is replaced with the value of this argument.</param>
         <summary>When overridden in a derived class, writes the DOCTYPE declaration with the specified name and optional attributes.</summary>
         <remarks>
@@ -2510,8 +2510,8 @@ This member may behave differently when it is used in a Portable Class Library p
       </Parameters>
       <Docs>
         <param name="name">The name of the DOCTYPE. This must be non-empty.</param>
-        <param name="pubid">If non-null it also writes PUBLIC "pubid" "sysid" where <c>pubid</c> and <c>sysid</c> are replaced with the value of the given arguments.</param>
-        <param name="sysid">If <c>pubid</c> is <see langword="null" /> and <c>sysid</c> is non-null it writes SYSTEM "sysid" where <c>sysid</c> is replaced with the value of this argument.</param>
+        <param name="pubid">If non-null it also writes PUBLIC "pubid" "sysid" where <paramref name="pubid" /> and <paramref name="sysid" /> are replaced with the value of the given arguments.</param>
+        <param name="sysid">If <paramref name="pubid" /> is <see langword="null" /> and <paramref name="sysid" /> is non-null it writes SYSTEM "sysid" where <paramref name="sysid" /> is replaced with the value of this argument.</param>
         <param name="subset">If non-null it writes [subset] where subset is replaced with the value of this argument.</param>
         <summary>Asynchronously writes the DOCTYPE declaration with the specified name and optional attributes.</summary>
         <returns>The task that represents the asynchronous <see langword="WriteDocType" /> operation.</returns>

@@ -52,8 +52,8 @@
       </Parameters>
       <Docs>
         <param name="webPart">The <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> (or server or user control) to be added to a Web page or opened on a page.</param>
-        <param name="zone">The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> that <c>webPart</c> is being added to.</param>
-        <param name="zoneIndex">An integer that represents the ordinal position that <c>webPart</c> occupies in <c>zone</c>, relative to other controls in <c>zone</c>.</param>
+        <param name="zone">The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> that <paramref name="webPart" /> is being added to.</param>
+        <param name="zoneIndex">An integer that represents the ordinal position that <paramref name="webPart" /> occupies in <paramref name="zone" />, relative to other controls in <paramref name="zone" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -3791,7 +3791,7 @@
         <Parameter Name="destinationBackupFileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sourceFileName">The name of a file that replaces the file specified by <c>destinationFileName</c>.</param>
+        <param name="sourceFileName">The name of a file that replaces the file specified by <paramref name="destinationFileName" />.</param>
         <param name="destinationFileName">The name of the file being replaced.</param>
         <param name="destinationBackupFileName">The name of the backup file.</param>
         <summary>Replaces the contents of a specified file with the contents of another file, deleting the original file, and creating a backup of the replaced file.</summary>
@@ -3891,7 +3891,7 @@
         <Parameter Name="ignoreMetadataErrors" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="sourceFileName">The name of a file that replaces the file specified by <c>destinationFileName</c>.</param>
+        <param name="sourceFileName">The name of a file that replaces the file specified by <paramref name="destinationFileName" />.</param>
         <param name="destinationFileName">The name of the file being replaced.</param>
         <param name="destinationBackupFileName">The name of the backup file.</param>
         <param name="ignoreMetadataErrors">
@@ -3988,7 +3988,7 @@
       </Parameters>
       <Docs>
         <param name="path">A file to add or remove access control list (ACL) entries from.</param>
-        <param name="fileSecurity">A <see cref="T:System.Security.AccessControl.FileSecurity" /> object that describes an ACL entry to apply to the file described by the <c>path</c> parameter.</param>
+        <param name="fileSecurity">A <see cref="T:System.Security.AccessControl.FileSecurity" /> object that describes an ACL entry to apply to the file described by the <paramref name="path" /> parameter.</param>
         <summary>Applies access control list (ACL) entries described by a <see cref="T:System.Security.AccessControl.FileSecurity" /> object to the specified file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4174,7 +4174,7 @@
       </Parameters>
       <Docs>
         <param name="path">The file for which to set the creation date and time information.</param>
-        <param name="creationTime">A <see cref="T:System.DateTime" /> containing the value to set for the creation date and time of <c>path</c>. This value is expressed in local time.</param>
+        <param name="creationTime">A <see cref="T:System.DateTime" /> containing the value to set for the creation date and time of <paramref name="path" />. This value is expressed in local time.</param>
         <summary>Sets the date and time the file was created.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4246,7 +4246,7 @@
       </Parameters>
       <Docs>
         <param name="path">The file for which to set the creation date and time information.</param>
-        <param name="creationTimeUtc">A <see cref="T:System.DateTime" /> containing the value to set for the creation date and time of <c>path</c>. This value is expressed in UTC time.</param>
+        <param name="creationTimeUtc">A <see cref="T:System.DateTime" /> containing the value to set for the creation date and time of <paramref name="path" />. This value is expressed in UTC time.</param>
         <summary>Sets the date and time, in coordinated universal time (UTC), that the file was created.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4313,7 +4313,7 @@
       </Parameters>
       <Docs>
         <param name="path">The file for which to set the access date and time information.</param>
-        <param name="lastAccessTime">A <see cref="T:System.DateTime" /> containing the value to set for the last access date and time of <c>path</c>. This value is expressed in local time.</param>
+        <param name="lastAccessTime">A <see cref="T:System.DateTime" /> containing the value to set for the last access date and time of <paramref name="path" />. This value is expressed in local time.</param>
         <summary>Sets the date and time the specified file was last accessed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4391,7 +4391,7 @@
       </Parameters>
       <Docs>
         <param name="path">The file for which to set the access date and time information.</param>
-        <param name="lastAccessTimeUtc">A <see cref="T:System.DateTime" /> containing the value to set for the last access date and time of <c>path</c>. This value is expressed in UTC time.</param>
+        <param name="lastAccessTimeUtc">A <see cref="T:System.DateTime" /> containing the value to set for the last access date and time of <paramref name="path" />. This value is expressed in UTC time.</param>
         <summary>Sets the date and time, in coordinated universal time (UTC), that the specified file was last accessed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4455,7 +4455,7 @@
       </Parameters>
       <Docs>
         <param name="path">The file for which to set the date and time information.</param>
-        <param name="lastWriteTime">A <see cref="T:System.DateTime" /> containing the value to set for the last write date and time of <c>path</c>. This value is expressed in local time.</param>
+        <param name="lastWriteTime">A <see cref="T:System.DateTime" /> containing the value to set for the last write date and time of <paramref name="path" />. This value is expressed in local time.</param>
         <summary>Sets the date and time that the specified file was last written to.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4533,7 +4533,7 @@
       </Parameters>
       <Docs>
         <param name="path">The file for which to set the date and time information.</param>
-        <param name="lastWriteTimeUtc">A <see cref="T:System.DateTime" /> containing the value to set for the last write date and time of <c>path</c>. This value is expressed in UTC time.</param>
+        <param name="lastWriteTimeUtc">A <see cref="T:System.DateTime" /> containing the value to set for the last write date and time of <paramref name="path" />. This value is expressed in UTC time.</param>
         <summary>Sets the date and time, in coordinated universal time (UTC), that the specified file was last written to.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

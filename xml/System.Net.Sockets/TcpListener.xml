@@ -618,7 +618,7 @@
       </Parameters>
       <Docs>
         <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
-        <param name="state">A user-defined object containing information about the accept operation. This object is passed to the <c>callback</c> delegate when the operation is complete.</param>
+        <param name="state">A user-defined object containing information about the accept operation. This object is passed to the <paramref name="callback" /> delegate when the operation is complete.</param>
         <summary>Begins an asynchronous operation to accept an incoming connection attempt.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> that references the asynchronous creation of the <see cref="T:System.Net.Sockets.Socket" />.</returns>
         <remarks>
@@ -687,7 +687,7 @@
       </Parameters>
       <Docs>
         <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
-        <param name="state">A user-defined object containing information about the accept operation. This object is passed to the <c>callback</c> delegate when the operation is complete.</param>
+        <param name="state">A user-defined object containing information about the accept operation. This object is passed to the <paramref name="callback" /> delegate when the operation is complete.</param>
         <summary>Begins an asynchronous operation to accept an incoming connection attempt.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> that references the asynchronous creation of the <see cref="T:System.Net.Sockets.TcpClient" />.</returns>
         <remarks>

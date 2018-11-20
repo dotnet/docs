@@ -183,7 +183,7 @@
         <Parameter Name="dataGridViewRow" Type="System.Windows.Forms.DataGridViewRow" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>dataGridViewRow</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="dataGridViewRow" /> should be inserted.</param>
         <param name="dataGridViewRow">The <see cref="T:System.Windows.Forms.DataGridViewRow" /> to insert into the <see cref="T:System.Windows.Forms.DataGridViewSelectedRowCollection" />.</param>
         <summary>Inserts a row into the collection at the specified position.</summary>
         <remarks>
@@ -632,7 +632,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The index at which <c>value</c> should be inserted.</param>
+        <param name="index">The index at which <paramref name="value" /> should be inserted.</param>
         <param name="value">The object to add to the <see cref="T:System.Windows.Forms.DataGridViewSelectedRowCollection" />.</param>
         <summary>Implements the <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" /> method. Always throws <see cref="T:System.NotSupportedException" />.</summary>
         <remarks>

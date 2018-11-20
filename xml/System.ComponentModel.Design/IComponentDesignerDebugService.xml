@@ -40,7 +40,7 @@
       </Parameters>
       <Docs>
         <param name="condition">
-          <see langword="true" /> to prevent <c>message</c> from being displayed; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to prevent <paramref name="message" /> from being displayed; otherwise, <see langword="false" />.</param>
         <param name="message">The message to display.</param>
         <summary>Asserts on a condition inside a design-time environment.</summary>
         <remarks>
@@ -173,7 +173,7 @@
       </Parameters>
       <Docs>
         <param name="message">The message to log.</param>
-        <param name="category">The category of <c>message</c>.</param>
+        <param name="category">The category of <paramref name="message" />.</param>
         <summary>Logs a debug message inside a design-time environment.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

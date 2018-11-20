@@ -53,7 +53,7 @@
         <Parameter Name="workItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="work">An <see cref="T:System.Workflow.Runtime.IPendingWork" /> object associated with the <c>workItem</c>.</param>
+        <param name="work">An <see cref="T:System.Workflow.Runtime.IPendingWork" /> object associated with the <paramref name="workItem" />.</param>
         <param name="workItem">An object on which work is to be performed.</param>
         <summary>Adds a pending work item to a work batch.</summary>
         <remarks>

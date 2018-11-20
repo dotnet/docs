@@ -207,7 +207,7 @@ The C# [foreach](~/docs/csharp/language-reference/keywords/foreach-in.md) statem
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the <see cref="T:System.Collections.DictionaryEntry" /> objects copied from the <see cref="T:System.Collections.DictionaryBase" /> instance. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the <see cref="T:System.Collections.DictionaryBase" /> elements to a one-dimensional <see cref="T:System.Array" /> at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -584,7 +584,7 @@ The C# [foreach](~/docs/csharp/language-reference/keywords/foreach-in.md) statem
       </Parameters>
       <Docs>
         <param name="key">The key of the element to get.</param>
-        <param name="currentValue">The current value of the element associated with <c>key</c>.</param>
+        <param name="currentValue">The current value of the element associated with <paramref name="key" />.</param>
         <summary>Gets the element with the specified key and value in the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
         <returns>An <see cref="T:System.Object" /> containing the element with the specified key and value.</returns>
         <remarks>
@@ -892,8 +892,8 @@ The C# [foreach](~/docs/csharp/language-reference/keywords/foreach-in.md) statem
       </Parameters>
       <Docs>
         <param name="key">The key of the element to locate.</param>
-        <param name="oldValue">The old value of the element associated with <c>key</c>.</param>
-        <param name="newValue">The new value of the element associated with <c>key</c>.</param>
+        <param name="oldValue">The old value of the element associated with <paramref name="key" />.</param>
+        <param name="newValue">The new value of the element associated with <paramref name="key" />.</param>
         <summary>Performs additional custom processes before setting a value in the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -963,8 +963,8 @@ The C# [foreach](~/docs/csharp/language-reference/keywords/foreach-in.md) statem
       </Parameters>
       <Docs>
         <param name="key">The key of the element to locate.</param>
-        <param name="oldValue">The old value of the element associated with <c>key</c>.</param>
-        <param name="newValue">The new value of the element associated with <c>key</c>.</param>
+        <param name="oldValue">The old value of the element associated with <paramref name="key" />.</param>
+        <param name="newValue">The new value of the element associated with <paramref name="key" />.</param>
         <summary>Performs additional custom processes after setting a value in the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

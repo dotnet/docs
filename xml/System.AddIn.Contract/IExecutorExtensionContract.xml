@@ -223,7 +223,7 @@
       <Docs>
         <param name="assemblyName">The name of the add-in assembly.</param>
         <param name="startupClass">The name of the class that is the entry point for the add-in assembly.</param>
-        <param name="initArgs">An <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" /> that contains the arguments that will be passed to the constructor for <c>startupClass</c>.</param>
+        <param name="initArgs">An <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" /> that contains the arguments that will be passed to the constructor for <paramref name="startupClass" />.</param>
         <summary>Called just before an add-in executor instantiates the entry point in an add-in assembly.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

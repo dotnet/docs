@@ -161,7 +161,7 @@
         <param name="conditionProperty">The property of the condition.</param>
         <param name="conditionValue">The value of the condition.</param>
         <param name="sourceName">
-          <c>x:Name</c> of the object with the <c>conditionProperty</c>.</param>
+          <c>x:Name</c> of the object with the <paramref name="conditionProperty" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Condition" /> class with the specified property, value, and the name of the source object.</summary>
         <remarks>To be added.</remarks>
       </Docs>

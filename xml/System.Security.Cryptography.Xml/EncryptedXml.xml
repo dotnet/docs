@@ -285,8 +285,8 @@
         <Parameter Name="keyObject" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="keyName">The name to map to <c>keyObject</c>.</param>
-        <param name="keyObject">The symmetric key to map to <c>keyName</c>.</param>
+        <param name="keyName">The name to map to <paramref name="keyObject" />.</param>
+        <param name="keyObject">The symmetric key to map to <paramref name="keyName" />.</param>
         <summary>Defines a mapping between a key name and a symmetric key or an asymmetric key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -379,8 +379,8 @@
       </Parameters>
       <Docs>
         <param name="encryptedData">The data to decrypt.</param>
-        <param name="symmetricAlgorithm">The symmetric key used to decrypt <c>encryptedData</c>.</param>
-        <param name="symAlg">The symmetric key used to decrypt <c>encryptedData</c>.</param>
+        <param name="symmetricAlgorithm">The symmetric key used to decrypt <paramref name="encryptedData" />.</param>
+        <param name="symAlg">The symmetric key used to decrypt <paramref name="encryptedData" />.</param>
         <summary>Decrypts an <see langword="&lt;EncryptedData&gt;" /> element using the specified symmetric algorithm.</summary>
         <returns>A byte array that contains the raw decrypted plain text.</returns>
         <remarks>
@@ -560,8 +560,8 @@
       </Parameters>
       <Docs>
         <param name="keyData">An array of bytes that represents an encrypted <see langword="&lt;EncryptedKey&gt;" /> element.</param>
-        <param name="symmetricAlgorithm">The symmetric key used to decrypt <c>keyData</c>.</param>
-        <param name="symAlg">The symmetric key used to decrypt <c>keyData</c>.</param>
+        <param name="symmetricAlgorithm">The symmetric key used to decrypt <paramref name="keyData" />.</param>
+        <param name="symAlg">The symmetric key used to decrypt <paramref name="keyData" />.</param>
         <summary>Decrypts an <see langword="&lt;EncryptedKey&gt;" /> element using a symmetric algorithm.</summary>
         <returns>A byte array that contains the plain text key.</returns>
         <remarks>
@@ -611,7 +611,7 @@
       </Parameters>
       <Docs>
         <param name="keyData">An array of bytes that represents an encrypted <see langword="&lt;EncryptedKey&gt;" /> element.</param>
-        <param name="rsa">The asymmetric key used to decrypt <c>keyData</c>.</param>
+        <param name="rsa">The asymmetric key used to decrypt <paramref name="keyData" />.</param>
         <param name="useOAEP">A value that specifies whether to use Optimal Asymmetric Encryption Padding (OAEP).</param>
         <param name="fOAEP">A value that specifies whether to use Optimal Asymmetric Encryption Padding (OAEP).</param>
         <summary>Decrypts an <see langword="&lt;EncryptedKey&gt;" /> element using an asymmetric algorithm.</summary>
@@ -1071,8 +1071,8 @@
       </Parameters>
       <Docs>
         <param name="keyData">The key to encrypt.</param>
-        <param name="symmetricAlgorithm">The symmetric key used to encrypt <c>keyData</c>.</param>
-        <param name="symAlg">The symmetric key used to encrypt <c>keyData</c>.</param>
+        <param name="symmetricAlgorithm">The symmetric key used to encrypt <paramref name="keyData" />.</param>
+        <param name="symAlg">The symmetric key used to encrypt <paramref name="keyData" />.</param>
         <summary>Encrypts a key using a symmetric algorithm that a recipient uses to decrypt an <see langword="&lt;EncryptedData&gt;" /> element.</summary>
         <returns>A byte array that represents the encrypted value of the <paramref name="keyData" /> parameter.</returns>
         <remarks>
@@ -1124,7 +1124,7 @@
       </Parameters>
       <Docs>
         <param name="keyData">The key to encrypt.</param>
-        <param name="rsa">The asymmetric key used to encrypt <c>keyData</c>.</param>
+        <param name="rsa">The asymmetric key used to encrypt <paramref name="keyData" />.</param>
         <param name="useOAEP">A value that specifies whether to use Optimal Asymmetric Encryption Padding (OAEP).</param>
         <param name="fOAEP">A value that specifies whether to use Optimal Asymmetric Encryption Padding (OAEP).</param>
         <summary>Encrypts the key that a recipient uses to decrypt an <see langword="&lt;EncryptedData&gt;" /> element.</summary>
@@ -1185,8 +1185,8 @@
       </Parameters>
       <Docs>
         <param name="encryptedData">The <see cref="T:System.Security.Cryptography.Xml.EncryptedData" /> object that contains the initialization vector (IV) to retrieve.</param>
-        <param name="symmetricAlgorithmUri">The Uniform Resource Identifier (URI) that describes the cryptographic algorithm associated with the <c>encryptedData</c> value.</param>
-        <param name="symAlgUri">The Uniform Resource Identifier (URI) that describes the cryptographic algorithm associated with the <c>encryptedData</c> value.</param>
+        <param name="symmetricAlgorithmUri">The Uniform Resource Identifier (URI) that describes the cryptographic algorithm associated with the <paramref name="encryptedData" /> value.</param>
+        <param name="symAlgUri">The Uniform Resource Identifier (URI) that describes the cryptographic algorithm associated with the <paramref name="encryptedData" /> value.</param>
         <summary>Retrieves the decryption initialization vector (IV) from an <see cref="T:System.Security.Cryptography.Xml.EncryptedData" /> object.</summary>
         <returns>A byte array that contains the decryption initialization vector (IV).</returns>
         <remarks>
@@ -1428,7 +1428,7 @@
       </Parameters>
       <Docs>
         <param name="inputElement">The <see langword="&lt;EncryptedData&gt;" /> element to replace.</param>
-        <param name="decryptedData">The decrypted data to replace <c>inputElement</c> with.</param>
+        <param name="decryptedData">The decrypted data to replace <paramref name="inputElement" /> with.</param>
         <summary>Replaces an <see langword="&lt;EncryptedData&gt;" /> element with a specified decrypted sequence of bytes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1481,7 +1481,7 @@
       </Parameters>
       <Docs>
         <param name="inputElement">The element to replace with an <see langword="&lt;EncryptedData&gt;" /> element.</param>
-        <param name="encryptedData">The <see cref="T:System.Security.Cryptography.Xml.EncryptedData" /> object to replace the <c>inputElement</c> parameter with.</param>
+        <param name="encryptedData">The <see cref="T:System.Security.Cryptography.Xml.EncryptedData" /> object to replace the <paramref name="inputElement" /> parameter with.</param>
         <param name="content">
           <see langword="true" /> to replace only the contents of the element; <see langword="false" /> to replace the entire element.</param>
         <summary>Replaces the specified element with the specified <see cref="T:System.Security.Cryptography.Xml.EncryptedData" /> object.</summary>

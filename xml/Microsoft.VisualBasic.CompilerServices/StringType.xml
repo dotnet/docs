@@ -626,9 +626,9 @@
       </Parameters>
       <Docs>
         <param name="sDest">Required. String variable to modify.</param>
-        <param name="StartPosition">Required. Location in the <c>sDest</c> parameter to begin overwriting from. The index is 1-based.</param>
-        <param name="MaxInsertLength">Required. Maximum number of characters from the <c>sInsert</c> parameter to use, starting from the first character.</param>
-        <param name="sInsert">Required. String value to overwrite the <c>sDest</c> parameter with.</param>
+        <param name="StartPosition">Required. Location in the <paramref name="sDest" /> parameter to begin overwriting from. The index is 1-based.</param>
+        <param name="MaxInsertLength">Required. Maximum number of characters from the <paramref name="sInsert" /> parameter to use, starting from the first character.</param>
+        <param name="sInsert">Required. String value to overwrite the <paramref name="sDest" /> parameter with.</param>
         <summary>Overwrites the <paramref name="sDest" /> parameter with the contents of the <paramref name="sInsert" /> parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -664,8 +664,8 @@
         <Parameter Name="TextCompare" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="sLeft">Required. String to compare with <c>sRight</c>.</param>
-        <param name="sRight">Required. String to compare with <c>sLeft</c>.</param>
+        <param name="sLeft">Required. String to compare with <paramref name="sRight" />.</param>
+        <param name="sRight">Required. String to compare with <paramref name="sLeft" />.</param>
         <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive comparison; otherwise <see langword="False" />.</param>
         <summary>Compares two strings.</summary>
         <returns>

@@ -453,7 +453,7 @@ Uri uri2 = new Uri("file:///C:/test/path/file.txt") // Explicit file path.
       <Docs>
         <param name="uriString">A string that identifies the resource to be represented by the <see cref="T:System.Uri" /> instance. Note that an IPv6 address in string form must be enclosed within brackets. For example, "http://[2607:f8b0:400d:c06::69]".</param>
         <param name="dontEscape">
-          <see langword="true" /> if <c>uriString</c> is completely escaped; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="uriString" /> is completely escaped; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Uri" /> class with the specified URI, with explicit control of character escaping.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -792,7 +792,7 @@ Uri uri2 = new Uri("file:///C:/test/path/file.txt") // Explicit file path.
       </Parameters>
       <Docs>
         <param name="baseUri">An absolute <see cref="T:System.Uri" /> that is the base for the new <see cref="T:System.Uri" /> instance.</param>
-        <param name="relativeUri">A relative <see cref="T:System.Uri" /> instance that is combined with <c>baseUri</c>.</param>
+        <param name="relativeUri">A relative <see cref="T:System.Uri" /> instance that is combined with <paramref name="baseUri" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Uri" /> class based on the combination of a specified base <see cref="T:System.Uri" /> instance and a relative <see cref="T:System.Uri" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -916,7 +916,7 @@ Uri uri2 = new Uri("file:///C:/test/path/file.txt") // Explicit file path.
         <param name="baseUri">The base URI.</param>
         <param name="relativeUri">The relative URI to add to the base URI.</param>
         <param name="dontEscape">
-          <see langword="true" /> if <c>uriString</c> is completely escaped; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if <paramref name="uriString" /> is completely escaped; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Uri" /> class based on the specified base and relative URIs, with explicit control of character escaping.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1402,7 +1402,7 @@ Uri uri2 = new Uri("file:///C:/test/path/file.txt") // Explicit file path.
       <Docs>
         <param name="uri1">The first <see cref="T:System.Uri" />.</param>
         <param name="uri2">The second <see cref="T:System.Uri" />.</param>
-        <param name="partsToCompare">A bitwise combination of the <see cref="T:System.UriComponents" /> values that specifies the parts of <c>uri1</c> and <c>uri2</c> to compare.</param>
+        <param name="partsToCompare">A bitwise combination of the <see cref="T:System.UriComponents" /> values that specifies the parts of <paramref name="uri1" /> and <paramref name="uri2" /> to compare.</param>
         <param name="compareFormat">One of the <see cref="T:System.UriFormat" /> values that specifies the character escaping used when the URI components are compared.</param>
         <param name="comparisonType">One of the <see cref="T:System.StringComparison" /> values.</param>
         <summary>Compares the specified parts of two URIs using the specified comparison rules.</summary>
@@ -2241,7 +2241,7 @@ If you used an escaped string to construct this instance (for example, "http://[
       </Parameters>
       <Docs>
         <param name="pattern">The hexadecimal representation of a character.</param>
-        <param name="index">The location in <c>pattern</c> where the hexadecimal representation of a character begins.</param>
+        <param name="index">The location in <paramref name="pattern" /> where the hexadecimal representation of a character begins.</param>
         <summary>Converts a specified hexadecimal representation of a character to the character.</summary>
         <returns>The character represented by the hexadecimal encoding at position <paramref name="index" />. If the character at <paramref name="index" /> is not hexadecimal encoded, the character at <paramref name="index" /> is returned. The value of <paramref name="index" /> is incremented to point to the character following the one returned.</returns>
         <remarks>
@@ -2804,7 +2804,7 @@ If you used an escaped string to construct this instance (for example, "http://[
       </Parameters>
       <Docs>
         <param name="pattern">The string to check.</param>
-        <param name="index">The location in <c>pattern</c> to check for hexadecimal encoding.</param>
+        <param name="index">The location in <paramref name="pattern" /> to check for hexadecimal encoding.</param>
         <summary>Determines whether a character in a string is hexadecimal encoded.</summary>
         <returns>A <see cref="T:System.Boolean" /> value that is <see langword="true" /> if <paramref name="pattern" /> is hexadecimal encoded at the specified location; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -3073,7 +3073,7 @@ If you used an escaped string to construct this instance (for example, "http://[
       </Parameters>
       <Docs>
         <param name="uriString">The string used to attempt to construct a <see cref="T:System.Uri" />.</param>
-        <param name="uriKind">The type of the <see cref="T:System.Uri" /> in <c>uriString</c>.</param>
+        <param name="uriKind">The type of the <see cref="T:System.Uri" /> in <paramref name="uriString" />.</param>
         <summary>Indicates whether the string is well-formed by attempting to construct a URI with the string and ensures that the string does not require further escaping.</summary>
         <returns>A <see cref="T:System.Boolean" /> value that is <see langword="true" /> if the string was well-formed; else <see langword="false" />.</returns>
         <remarks>
@@ -3335,8 +3335,8 @@ If you used an escaped string to construct this instance (for example, "http://[
         <Parameter Name="uri2" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri1">A <see cref="T:System.Uri" /> instance to compare with <c>uri2</c>.</param>
-        <param name="uri2">A <see cref="T:System.Uri" /> instance to compare with <c>uri1</c>.</param>
+        <param name="uri1">A <see cref="T:System.Uri" /> instance to compare with <paramref name="uri2" />.</param>
+        <param name="uri2">A <see cref="T:System.Uri" /> instance to compare with <paramref name="uri1" />.</param>
         <summary>Determines whether two <see cref="T:System.Uri" /> instances have the same value.</summary>
         <returns>A <see cref="T:System.Boolean" /> value that is <see langword="true" /> if the <see cref="T:System.Uri" /> instances are equivalent; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -3393,8 +3393,8 @@ If you used an escaped string to construct this instance (for example, "http://[
         <Parameter Name="uri2" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri1">A <see cref="T:System.Uri" /> instance to compare with <c>uri2</c>.</param>
-        <param name="uri2">A <see cref="T:System.Uri" /> instance to compare with <c>uri1</c>.</param>
+        <param name="uri1">A <see cref="T:System.Uri" /> instance to compare with <paramref name="uri2" />.</param>
+        <param name="uri2">A <see cref="T:System.Uri" /> instance to compare with <paramref name="uri1" />.</param>
         <summary>Determines whether two <see cref="T:System.Uri" /> instances do not have the same value.</summary>
         <returns>A <see cref="T:System.Boolean" /> value that is <see langword="true" /> if the two <see cref="T:System.Uri" /> instances are not equal; otherwise, <see langword="false" />. If either parameter is <see langword="null" />, this method returns <see langword="true" />.</returns>
         <remarks>
@@ -4089,7 +4089,7 @@ If you used an escaped string to construct this instance (for example, "http://[
       <Docs>
         <param name="baseUri">The base <see cref="T:System.Uri" />.</param>
         <param name="relativeUri">The relative <see cref="T:System.Uri" />, represented as a <see cref="T:System.String" />, to add to the base <see cref="T:System.Uri" />.</param>
-        <param name="result">When this method returns, contains a <see cref="T:System.Uri" /> constructed from <c>baseUri</c> and <c>relativeUri</c>. This parameter is passed uninitialized.</param>
+        <param name="result">When this method returns, contains a <see cref="T:System.Uri" /> constructed from <paramref name="baseUri" /> and <paramref name="relativeUri" />. This parameter is passed uninitialized.</param>
         <summary>Creates a new <see cref="T:System.Uri" /> using the specified base and relative <see cref="T:System.String" /> instances.</summary>
         <returns>A <see cref="T:System.Boolean" /> value that is <see langword="true" /> if the <see cref="T:System.Uri" /> was successfully created; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -4140,7 +4140,7 @@ If you used an escaped string to construct this instance (for example, "http://[
       <Docs>
         <param name="baseUri">The base <see cref="T:System.Uri" />.</param>
         <param name="relativeUri">The relative <see cref="T:System.Uri" /> to add to the base <see cref="T:System.Uri" />.</param>
-        <param name="result">When this method returns, contains a <see cref="T:System.Uri" /> constructed from <c>baseUri</c> and <c>relativeUri</c>. This parameter is passed uninitialized.</param>
+        <param name="result">When this method returns, contains a <see cref="T:System.Uri" /> constructed from <paramref name="baseUri" /> and <paramref name="relativeUri" />. This parameter is passed uninitialized.</param>
         <summary>Creates a new <see cref="T:System.Uri" /> using the specified base and relative <see cref="T:System.Uri" /> instances.</summary>
         <returns>A <see cref="T:System.Boolean" /> value that is <see langword="true" /> if the <see cref="T:System.Uri" /> was successfully created; otherwise, <see langword="false" />.</returns>
         <remarks>

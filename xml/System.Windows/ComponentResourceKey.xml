@@ -97,7 +97,7 @@
       </Parameters>
       <Docs>
         <param name="typeInTargetAssembly">The type that defines the resource key.</param>
-        <param name="resourceId">A unique identifier to differentiate this <see cref="T:System.Windows.ComponentResourceKey" /> from others associated with the <c>typeInTargetAssembly</c> type.</param>
+        <param name="resourceId">A unique identifier to differentiate this <see cref="T:System.Windows.ComponentResourceKey" /> from others associated with the <paramref name="typeInTargetAssembly" /> type.</param>
         <summary>Initializes a new instance of a <see cref="T:System.Windows.ComponentResourceKey" /> , specifying the <see cref="T:System.Type" /> that defines the key, and an object to use as an additional resource identifier.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

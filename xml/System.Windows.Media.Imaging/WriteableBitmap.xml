@@ -687,7 +687,7 @@
       <Docs>
         <param name="sourceRect">The rectangle of the <see cref="T:System.Windows.Media.Imaging.WriteableBitmap" /> to update.</param>
         <param name="pixels">The pixel array used to update the bitmap.</param>
-        <param name="stride">The stride of the update region in <c>pixels</c>.</param>
+        <param name="stride">The stride of the update region in <paramref name="pixels" />.</param>
         <param name="offset">The input buffer offset.</param>
         <summary>Updates the pixels in the specified region of the bitmap.</summary>
         <remarks>
@@ -753,7 +753,7 @@
         <param name="sourceRect">The rectangle of the <see cref="T:System.Windows.Media.Imaging.WriteableBitmap" /> to update.</param>
         <param name="buffer">The input buffer used to update the bitmap.</param>
         <param name="bufferSize">The size of the input buffer.</param>
-        <param name="stride">The stride of the update region in <c>buffer</c>.</param>
+        <param name="stride">The stride of the update region in <paramref name="buffer" />.</param>
         <summary>Updates the pixels in the specified region of the bitmap.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -807,7 +807,7 @@
         <Parameter Name="destinationY" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="sourceRect">The rectangle in <c>sourceBuffer</c> to copy.</param>
+        <param name="sourceRect">The rectangle in <paramref name="sourceBuffer" /> to copy.</param>
         <param name="sourceBuffer">The input buffer used to update the bitmap.</param>
         <param name="sourceBufferStride">The stride of the input buffer, in bytes.</param>
         <param name="destinationX">The destination x-coordinate of the left-most pixel in the back buffer.</param>
@@ -869,7 +869,7 @@
         <Parameter Name="destinationY" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="sourceRect">The rectangle in <c>sourceBuffer</c> to copy.</param>
+        <param name="sourceRect">The rectangle in <paramref name="sourceBuffer" /> to copy.</param>
         <param name="sourceBuffer">The input buffer used to update the bitmap.</param>
         <param name="sourceBufferSize">The size of the input buffer.</param>
         <param name="sourceBufferStride">The stride of the input buffer, in bytes.</param>

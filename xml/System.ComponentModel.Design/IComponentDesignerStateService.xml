@@ -84,7 +84,7 @@
       <Docs>
         <param name="component">The component for which to set the designer state item.</param>
         <param name="key">The name of the designer state item.</param>
-        <param name="value">The designer state item for <c>component</c>.</param>
+        <param name="value">The designer state item for <paramref name="component" />.</param>
         <summary>Sets a state item specified by the key for the given component.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.IComponent" />

@@ -316,7 +316,7 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="Index">Required. <see langword="Double" />. Numeric expression that results in a value between 1 and the number of elements passed in the <c>Choice</c> argument.</param>
+        <param name="Index">Required. <see langword="Double" />. Numeric expression that results in a value between 1 and the number of elements passed in the <paramref name="Choice" /> argument.</param>
         <param name="Choice">Required. <see langword="Object" /> parameter array. You can supply either a single variable or an expression that evaluates to the <see langword="Object" /> data type, to a list of <see langword="Object" /> variables or expressions separated by commas, or to a single-dimensional array of <see langword="Object" /> elements.</param>
         <summary>Selects and returns a value from a list of arguments.</summary>
         <returns>Selects and returns a value from a list of arguments.</returns>
@@ -426,7 +426,7 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
       </Parameters>
       <Docs>
         <param name="ProgId">Required. <see langword="String" />. The program ID of the object to create.</param>
-        <param name="ServerName">Optional. <see langword="String" />. The name of the network server where the object will be created. If <c>ServerName</c> is an empty string (""), the local computer is used.</param>
+        <param name="ServerName">Optional. <see langword="String" />. The name of the network server where the object will be created. If <paramref name="ServerName" /> is an empty string (""), the local computer is used.</param>
         <summary>Creates and returns a reference to a COM object. <see langword="CreateObject" /> cannot be used to create instances of classes in Visual Basic unless those classes are explicitly exposed as COM components.</summary>
         <returns>Creates and returns a reference to a COM object. <see langword="CreateObject" /> cannot be used to create instances of classes in Visual Basic unless those classes are explicitly exposed as COM components.</returns>
         <remarks>
@@ -525,7 +525,7 @@ End Sub
       </Parameters>
       <Docs>
         <param name="AppName">Required. <see langword="String" /> expression containing the name of the application or project to which the section or key setting applies.</param>
-        <param name="Section">Required. <see langword="String" /> expression containing the name of the section from which the key setting is being deleted. If only <c>AppName</c> and <c>Section</c> are provided, the specified section is deleted along with all related key settings.</param>
+        <param name="Section">Required. <see langword="String" /> expression containing the name of the section from which the key setting is being deleted. If only <paramref name="AppName" /> and <paramref name="Section" /> are provided, the specified section is deleted along with all related key settings.</param>
         <param name="Key">Optional. <see langword="String" /> expression containing the name of the key setting being deleted.</param>
         <summary>Deletes a section or key setting from an application's entry in the Windows registry. The <see langword="My" /> feature gives you greater productivity and performance in registry operations than the <see langword="DeleteSetting" /> function. For more information, see <see cref="P:Microsoft.VisualBasic.Devices.ServerComputer.Registry" /> .</summary>
         <remarks>
@@ -749,8 +749,8 @@ End Sub
         <Parameter Name="Class" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="PathName">Optional. <see langword="String" />. The full path and name of the file containing the object to retrieve. If <c>PathName</c> is omitted, <c>Class</c> is required.</param>
-        <param name="Class">Required if <c>PathName</c> is not supplied. <see langword="String" />. A string representing the class of the object. The <c>Class</c> argument has the following syntax and parts:  
+        <param name="PathName">Optional. <see langword="String" />. The full path and name of the file containing the object to retrieve. If <paramref name="PathName" /> is omitted, <paramref name="Class" /> is required.</param>
+        <param name="Class">Required if <paramref name="PathName" /> is not supplied. <see langword="String" />. A string representing the class of the object. The <paramref name="Class" /> argument has the following syntax and parts:  
   
  <c>appname</c><c>.</c><c>objecttype</c>  
   
@@ -874,7 +874,7 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
         <param name="AppName">Required. <see langword="String" /> expression containing the name of the application or project whose key setting is requested.</param>
         <param name="Section">Required. <see langword="String" /> expression containing the name of the section in which the key setting is found.</param>
         <param name="Key">Required. <see langword="String" /> expression containing the name of the key setting to return.</param>
-        <param name="Default">Optional. Expression containing the value to return if no value is set in the <c>Key</c> setting. If omitted, <c>Default</c> is assumed to be a zero-length string ("").</param>
+        <param name="Default">Optional. Expression containing the value to return if no value is set in the <paramref name="Key" /> setting. If omitted, <paramref name="Default" /> is assumed to be a zero-length string ("").</param>
         <summary>Returns a key setting value from an application's entry in the Windows registry. The <see langword="My" /> feature gives you greater productivity and performance in registry operations than <see langword="GetAllSettings" />. For more information, see <see cref="P:Microsoft.VisualBasic.Devices.ServerComputer.Registry" />.</summary>
         <returns>Returns a key setting value from an application's entry in the Windows registry.  
   
@@ -933,8 +933,8 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
       </Parameters>
       <Docs>
         <param name="Expression">Required. <see langword="Boolean" />. The expression you want to evaluate.</param>
-        <param name="TruePart">Required. <see langword="Object" />. Returned if <c>Expression</c> evaluates to <see langword="True" />.</param>
-        <param name="FalsePart">Required. <see langword="Object" />. Returned if <c>Expression</c> evaluates to <see langword="False" />.</param>
+        <param name="TruePart">Required. <see langword="Object" />. Returned if <paramref name="Expression" /> evaluates to <see langword="True" />.</param>
+        <param name="FalsePart">Required. <see langword="Object" />. Returned if <paramref name="Expression" /> evaluates to <see langword="False" />.</param>
         <summary>Returns one of two objects, depending on the evaluation of an expression.</summary>
         <returns>Returns one of two objects, depending on the evaluation of an expression.</returns>
         <remarks>
@@ -986,11 +986,11 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
         <Parameter Name="YPos" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Prompt">Required <see langword="String" /> expression displayed as the message in the dialog box. The maximum length of <c>Prompt</c> is approximately 1024 characters, depending on the width of the characters used. If <c>Prompt</c> consists of more than one line, you can separate the lines using a carriage return character (<see langword="Chr(" />13<see langword=")" />), a line feed character (<see langword="Chr(" />10<see langword=")" />), or a carriage return/line feed combination (<see langword="Chr(" />13<see langword=")" /> &amp; <see langword="Chr(" />10<see langword=")" />) between each line.</param>
-        <param name="Title">Optional. <see langword="String" /> expression displayed in the title bar of the dialog box. If you omit <c>Title</c>, the application name is placed in the title bar.</param>
-        <param name="DefaultResponse">Optional. <see langword="String" /> expression displayed in the text box as the default response if no other input is provided. If you omit <c>DefaultResponse</c>, the displayed text box is empty.</param>
-        <param name="XPos">Optional. Numeric expression that specifies, in twips, the distance of the left edge of the dialog box from the left edge of the screen. If you omit <c>XPos</c>, the dialog box is centered horizontally.</param>
-        <param name="YPos">Optional. Numeric expression that specifies, in twips, the distance of the upper edge of the dialog box from the top of the screen. If you omit <c>YPos</c>, the dialog box is positioned vertically approximately one-third of the way down the screen.</param>
+        <param name="Prompt">Required <see langword="String" /> expression displayed as the message in the dialog box. The maximum length of <paramref name="Prompt" /> is approximately 1024 characters, depending on the width of the characters used. If <paramref name="Prompt" /> consists of more than one line, you can separate the lines using a carriage return character (<see langword="Chr(" />13<see langword=")" />), a line feed character (<see langword="Chr(" />10<see langword=")" />), or a carriage return/line feed combination (<see langword="Chr(" />13<see langword=")" /> &amp; <see langword="Chr(" />10<see langword=")" />) between each line.</param>
+        <param name="Title">Optional. <see langword="String" /> expression displayed in the title bar of the dialog box. If you omit <paramref name="Title" />, the application name is placed in the title bar.</param>
+        <param name="DefaultResponse">Optional. <see langword="String" /> expression displayed in the text box as the default response if no other input is provided. If you omit <paramref name="DefaultResponse" />, the displayed text box is empty.</param>
+        <param name="XPos">Optional. Numeric expression that specifies, in twips, the distance of the left edge of the dialog box from the left edge of the screen. If you omit <paramref name="XPos" />, the dialog box is centered horizontally.</param>
+        <param name="YPos">Optional. Numeric expression that specifies, in twips, the distance of the upper edge of the dialog box from the top of the screen. If you omit <paramref name="YPos" />, the dialog box is positioned vertically approximately one-third of the way down the screen.</param>
         <summary>Displays a prompt in a dialog box, waits for the user to input text or click a button, and then returns a string containing the contents of the text box.</summary>
         <returns>Displays a prompt in a dialog box, waits for the user to input text or click a button, and then returns a string containing the contents of the text box.</returns>
         <remarks>
@@ -1040,9 +1040,9 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
         <Parameter Name="Title" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Prompt">Required. <see langword="String" /> expression displayed as the message in the dialog box. The maximum length of <c>Prompt</c> is approximately 1024 characters, depending on the width of the characters used. If <c>Prompt</c> consists of more than one line, you can separate the lines using a carriage return character (<see langword="Chr(" />13<see langword=")" />), a line feed character (<see langword="Chr(" />10<see langword=")" />), or a carriage return/linefeed character combination (<see langword="Chr(" />13<see langword=")" /> &amp; <see langword="Chr(" />10<see langword=")" />) between each line.</param>
-        <param name="Buttons">Optional. Numeric expression that is the sum of values specifying the number and type of buttons to display, the icon style to use, the identity of the default button, and the modality of the message box. If you omit <c>Buttons</c>, the default value is zero.</param>
-        <param name="Title">Optional. <see langword="String" /> expression displayed in the title bar of the dialog box. If you omit <c>Title</c>, the application name is placed in the title bar.</param>
+        <param name="Prompt">Required. <see langword="String" /> expression displayed as the message in the dialog box. The maximum length of <paramref name="Prompt" /> is approximately 1024 characters, depending on the width of the characters used. If <paramref name="Prompt" /> consists of more than one line, you can separate the lines using a carriage return character (<see langword="Chr(" />13<see langword=")" />), a line feed character (<see langword="Chr(" />10<see langword=")" />), or a carriage return/linefeed character combination (<see langword="Chr(" />13<see langword=")" /> &amp; <see langword="Chr(" />10<see langword=")" />) between each line.</param>
+        <param name="Buttons">Optional. Numeric expression that is the sum of values specifying the number and type of buttons to display, the icon style to use, the identity of the default button, and the modality of the message box. If you omit <paramref name="Buttons" />, the default value is zero.</param>
+        <param name="Title">Optional. <see langword="String" /> expression displayed in the title bar of the dialog box. If you omit <paramref name="Title" />, the application name is placed in the title bar.</param>
         <summary>Displays a message in a dialog box, waits for the user to click a button, and then returns an integer indicating which button the user clicked.</summary>
         <returns>
           <list type="table">
@@ -1193,9 +1193,9 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
       </Parameters>
       <Docs>
         <param name="Number">Required. <see langword="Long" />. Whole number that you want to locate within one of the calculated ranges.</param>
-        <param name="Start">Required. <see langword="Long" />. Whole number that indicates the start of the set of calculated ranges. <c>Start</c> cannot be less than 0.</param>
-        <param name="Stop">Required. <see langword="Long" />. Whole number that indicates the end of the set of calculated ranges. <c>Stop</c> cannot be less than or equal to <c>Start</c>.</param>
-        <param name="Interval">Required. <see langword="Long" />. Whole number that indicates the size of each range calculated between <c>Start</c> and <c>Stop</c>. <c>Interval</c> cannot be less than 1.</param>
+        <param name="Start">Required. <see langword="Long" />. Whole number that indicates the start of the set of calculated ranges. <paramref name="Start" /> cannot be less than 0.</param>
+        <param name="Stop">Required. <see langword="Long" />. Whole number that indicates the end of the set of calculated ranges. <paramref name="Stop" /> cannot be less than or equal to <paramref name="Start" />.</param>
+        <param name="Interval">Required. <see langword="Long" />. Whole number that indicates the size of each range calculated between <paramref name="Start" /> and <paramref name="Stop" />. <paramref name="Interval" /> cannot be less than 1.</param>
         <summary>Returns a string representing the calculated range that contains a number.</summary>
         <returns>Returns a string representing the calculated range that contains a number.</returns>
         <remarks>
@@ -1260,7 +1260,7 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
         <param name="AppName">Required. <see langword="String" /> expression containing the name of the application or project to which the setting applies.</param>
         <param name="Section">Required. <see langword="String" /> expression containing the name of the section in which the key setting is being saved.</param>
         <param name="Key">Required. <see langword="String" /> expression containing the name of the key setting being saved.</param>
-        <param name="Setting">Required. Expression containing the value to which <c>Key</c> is being set.</param>
+        <param name="Setting">Required. Expression containing the value to which <paramref name="Key" /> is being set.</param>
         <summary>Saves or creates an application entry in the Windows registry. The <see langword="My" /> feature gives you greater productivity and performance in registry operations than <see langword="SaveSetting" />. For more information, see <see cref="P:Microsoft.VisualBasic.Devices.ServerComputer.Registry" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1326,13 +1326,13 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
         <Parameter Name="Timeout" Type="System.Int32" Index="3" />
       </Parameters>
       <Docs>
-        <param name="PathName">Required. <see langword="String" />. Name of the program to execute, together with any required arguments and command-line switches. <c>PathName</c> can also include the drive and the directory path or folder.  
+        <param name="PathName">Required. <see langword="String" />. Name of the program to execute, together with any required arguments and command-line switches. <paramref name="PathName" /> can also include the drive and the directory path or folder.  
   
  If you do not know the path to the program, you can use the <see cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.GetFiles" /> to locate it. For example, you can call <c>My.Computer.FileSystem.GetFiles("C:\", True, "testFile.txt")</c>, which returns the full path of every file named <c>testFile.txt</c> anywhere on drive C:\\.</param>
         <param name="Pathname">To be added.</param>
-        <param name="Style">Optional. <see langword="AppWinStyle" />. A value chosen from the <see cref="T:Microsoft.VisualBasic.AppWinStyle" /> specifying the style of the window in which the program is to run. If <c>Style</c> is omitted, <see langword="Shell" /> uses <see langword="AppWinStyle.MinimizedFocus" />, which starts the program minimized and with focus.</param>
-        <param name="Wait">Optional. <see langword="Boolean" />. A value indicating whether the <see langword="Shell" /> function should wait for completion of the program. If <c>Wait</c> is omitted, <see langword="Shell" /> uses <see langword="False" />.</param>
-        <param name="Timeout">Optional. <see langword="Integer" />. The number of milliseconds to wait for completion if <c>Wait</c> is <see langword="True" />. If <c>Timeout</c> is omitted, <see langword="Shell" /> uses -1, which means there is no timeout and <see langword="Shell" /> does not return until the program finishes. Therefore, if you omit <c>Timeout</c> or set it to -1, it is possible that <see langword="Shell" /> might never return control to your program.</param>
+        <param name="Style">Optional. <see langword="AppWinStyle" />. A value chosen from the <see cref="T:Microsoft.VisualBasic.AppWinStyle" /> specifying the style of the window in which the program is to run. If <paramref name="Style" /> is omitted, <see langword="Shell" /> uses <see langword="AppWinStyle.MinimizedFocus" />, which starts the program minimized and with focus.</param>
+        <param name="Wait">Optional. <see langword="Boolean" />. A value indicating whether the <see langword="Shell" /> function should wait for completion of the program. If <paramref name="Wait" /> is omitted, <see langword="Shell" /> uses <see langword="False" />.</param>
+        <param name="Timeout">Optional. <see langword="Integer" />. The number of milliseconds to wait for completion if <paramref name="Wait" /> is <see langword="True" />. If <paramref name="Timeout" /> is omitted, <see langword="Shell" /> uses -1, which means there is no timeout and <see langword="Shell" /> does not return until the program finishes. Therefore, if you omit <paramref name="Timeout" /> or set it to -1, it is possible that <see langword="Shell" /> might never return control to your program.</param>
         <summary>Runs an executable program and returns an integer containing the program's process ID if it is still running.</summary>
         <returns>Runs an executable program and returns an integer containing the program's process ID if it is still running.</returns>
         <remarks>

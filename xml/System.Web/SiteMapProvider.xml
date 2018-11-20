@@ -171,7 +171,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
       </Parameters>
       <Docs>
         <param name="node">The <see cref="T:System.Web.SiteMapNode" /> to add to the node collection maintained by the provider.</param>
-        <param name="parentNode">The <see cref="T:System.Web.SiteMapNode" /> that is the parent of <c>node</c>.</param>
+        <param name="parentNode">The <see cref="T:System.Web.SiteMapNode" /> that is the parent of <paramref name="node" />.</param>
         <summary>Adds a <see cref="T:System.Web.SiteMapNode" /> object to the node collection that is maintained by the site map provider and specifies the parent <see cref="T:System.Web.SiteMapNode" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -650,7 +650,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
         <Parameter Name="relativeDepthFromWalkup" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="node">The <see cref="T:System.Web.SiteMapNode" /> that acts as a reference point for <c>walkupLevels</c> and <c>relativeDepthFromWalkup</c>.</param>
+        <param name="node">The <see cref="T:System.Web.SiteMapNode" /> that acts as a reference point for <paramref name="walkupLevels" /> and <paramref name="relativeDepthFromWalkup" />.</param>
         <param name="walkupLevels">The number of ancestor node levels to traverse when retrieving the requested ancestor node.</param>
         <param name="relativeDepthFromWalkup">The number of descendant node levels to retrieve from the target ancestor node.</param>
         <summary>Provides an optimized lookup method for site map providers when retrieving an ancestor node for the specified <see cref="T:System.Web.SiteMapNode" /> object and fetching its child nodes.</summary>
@@ -768,7 +768,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
         <Parameter Name="upLevel" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="node">The <see cref="T:System.Web.SiteMapNode" /> that acts as a reference point for <c>upLevel</c>.</param>
+        <param name="node">The <see cref="T:System.Web.SiteMapNode" /> that acts as a reference point for <paramref name="upLevel" />.</param>
         <param name="upLevel">The number of ancestor <see cref="T:System.Web.SiteMapNode" /> generations to fetch. 0 indicates no ancestor nodes are retrieved and -1 indicates that all ancestors might be retrieved and cached.</param>
         <summary>Provides a method that site map providers can override to perform an optimized retrieval of one or more levels of parent and ancestor nodes, relative to the specified <see cref="T:System.Web.SiteMapNode" /> object.</summary>
         <remarks>
@@ -812,8 +812,8 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
         <Parameter Name="downLevel" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="node">The <see cref="T:System.Web.SiteMapNode" /> that acts as a reference point for <c>upLevel</c>.</param>
-        <param name="upLevel">The number of ancestor <see cref="T:System.Web.SiteMapNode" /> generations to fetch. 0 indicates no ancestor nodes are retrieved and -1 indicates that all ancestors (and their descendant nodes to the level of <c>node</c>) might be retrieved and cached.</param>
+        <param name="node">The <see cref="T:System.Web.SiteMapNode" /> that acts as a reference point for <paramref name="upLevel" />.</param>
+        <param name="upLevel">The number of ancestor <see cref="T:System.Web.SiteMapNode" /> generations to fetch. 0 indicates no ancestor nodes are retrieved and -1 indicates that all ancestors (and their descendant nodes to the level of <paramref name="node" />) might be retrieved and cached.</param>
         <param name="downLevel">The number of descendant <see cref="T:System.Web.SiteMapNode" /> generations to fetch. 0 indicates no descendant nodes are retrieved and -1 indicates that all descendant nodes might be retrieved and cached.</param>
         <summary>Provides a method that site map providers can override to perform an optimized retrieval of nodes found in the proximity of the specified node.</summary>
         <remarks>

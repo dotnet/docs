@@ -65,8 +65,8 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the association.</param>
-        <param name="thisKey">A comma-separated list of the property names of the key values on the <c>thisKey</c> side of the association.</param>
-        <param name="otherKey">A comma-separated list of the property names of the key values on the <c>otherKey</c> side of the association.</param>
+        <param name="thisKey">A comma-separated list of the property names of the key values on the <paramref name="thisKey" /> side of the association.</param>
+        <param name="otherKey">A comma-separated list of the property names of the key values on the <paramref name="otherKey" /> side of the association.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.AssociationAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

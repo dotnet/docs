@@ -69,7 +69,7 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the correlation parameter that is being aliased.</param>
-        <param name="path">Indicates which argument in the method or event holds the value for the correlation parameter specified by <c>name</c>. This parameter can use dot notation, for example, <see langword="Parameter.Location" />.</param>
+        <param name="path">Indicates which argument in the method or event holds the value for the correlation parameter specified by <paramref name="name" />. This parameter can use dot notation, for example, <see langword="Parameter.Location" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.CorrelationAliasAttribute" /> with the name of the correlation that is being aliased and the path to where the value can be found.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -554,7 +554,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
         <param name="value">The tool added to the collection.</param>
         <summary>Inserts a tool into the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> at the specified index.</summary>
         <remarks>

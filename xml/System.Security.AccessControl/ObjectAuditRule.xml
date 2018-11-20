@@ -61,7 +61,7 @@
         <param name="isInherited">
           <see langword="true" /> if this rule is inherited from a parent container.</param>
         <param name="inheritanceFlags">Specifies the inheritance properties of the access rule.</param>
-        <param name="propagationFlags">Whether inherited access rules are automatically propagated. The propagation flags are ignored if <c>inheritanceFlags</c> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
+        <param name="propagationFlags">Whether inherited access rules are automatically propagated. The propagation flags are ignored if <paramref name="inheritanceFlags" /> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
         <param name="objectType">The type of object to which the rule applies.</param>
         <param name="inheritedObjectType">The type of child object that can inherit the rule.</param>
         <param name="auditFlags">The audit conditions.</param>

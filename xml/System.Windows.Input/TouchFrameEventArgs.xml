@@ -56,7 +56,7 @@
         <Parameter Name="relativeTo" Type="System.Windows.IInputElement" />
       </Parameters>
       <Docs>
-        <param name="relativeTo">The element that defines the coordinate space. To use WPF absolute coordinates, specify <c>relativeTo</c> as <see langword="null" />.</param>
+        <param name="relativeTo">The element that defines the coordinate space. To use WPF absolute coordinates, specify <paramref name="relativeTo" /> as <see langword="null" />.</param>
         <summary>Returns the current touch point of the primary touch device relative to the specified element.</summary>
         <returns>The current position of the primary <see cref="T:System.Windows.Input.TouchDevice" /> relative to the specified element; or <see langword="null" /> if the primary <see cref="T:System.Windows.Input.TouchDevice" /> is not active.</returns>
         <remarks>
@@ -98,7 +98,7 @@
         <Parameter Name="relativeTo" Type="System.Windows.IInputElement" />
       </Parameters>
       <Docs>
-        <param name="relativeTo">The element that defines the coordinate space. To use WPF absolute coordinates, specify <c>relativeTo</c> as <see langword="null" />.</param>
+        <param name="relativeTo">The element that defines the coordinate space. To use WPF absolute coordinates, specify <paramref name="relativeTo" /> as <see langword="null" />.</param>
         <summary>Returns a collection that contains the current touch point for each active touch device relative to the specified element.</summary>
         <returns>A collection that contains the current <see cref="T:System.Windows.Input.TouchPoint" /> for each active <see cref="T:System.Windows.Input.TouchDevice" />.</returns>
         <remarks>

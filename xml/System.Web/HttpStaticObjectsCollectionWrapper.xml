@@ -84,7 +84,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the elements that are copied from the collection. The array must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which to begin copying.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which to begin copying.</param>
         <summary>Copies the elements of the collection to an array, starting at the specified index in the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>

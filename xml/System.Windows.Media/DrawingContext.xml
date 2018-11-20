@@ -575,9 +575,9 @@
         <param name="rectangle">The rectangle to draw.</param>
         <param name="rectangleAnimations">The clock with which to animate the rectangle's size and dimensions, or <see langword="null" /> for no animation. This clock must be created from an <see cref="T:System.Windows.Media.Animation.AnimationTimeline" /> that can animate <see cref="T:System.Windows.Rect" /> objects.</param>
         <param name="radiusX">The radius in the X dimension of the rounded corners.  This value will be clamped to the range of 0 to <see cref="P:System.Windows.Rect.Width" />/2</param>
-        <param name="radiusXAnimations">The clock with which to animate the rectangle's <c>radiusX</c> value, or <see langword="null" /> for no animation. This clock must be created from an <see cref="T:System.Windows.Media.Animation.AnimationTimeline" /> that can animate <see cref="T:System.Double" /> values.</param>
+        <param name="radiusXAnimations">The clock with which to animate the rectangle's <paramref name="radiusX" /> value, or <see langword="null" /> for no animation. This clock must be created from an <see cref="T:System.Windows.Media.Animation.AnimationTimeline" /> that can animate <see cref="T:System.Double" /> values.</param>
         <param name="radiusY">The radius in the Y dimension of the rounded corners.  This value will be clamped to a value between 0 to <see cref="P:System.Windows.Rect.Height" />/2.</param>
-        <param name="radiusYAnimations">The clock with which to animate the rectangle's <c>radiusY</c> value, or <see langword="null" /> for no animation. This clock must be created from an <see cref="T:System.Windows.Media.Animation.AnimationTimeline" /> that can animate <see cref="T:System.Double" /> values.</param>
+        <param name="radiusYAnimations">The clock with which to animate the rectangle's <paramref name="radiusY" /> value, or <see langword="null" /> for no animation. This clock must be created from an <see cref="T:System.Windows.Media.Animation.AnimationTimeline" /> that can animate <see cref="T:System.Double" /> values.</param>
         <summary>Draws a rounded rectangle with the specified <see cref="T:System.Windows.Media.Brush" /> and <see cref="T:System.Windows.Media.Pen" /> and applies the specified animation clocks.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -647,7 +647,7 @@
       </Parameters>
       <Docs>
         <param name="player">The media to draw.</param>
-        <param name="rectangle">The region in which to draw <c>player</c>.</param>
+        <param name="rectangle">The region in which to draw <paramref name="player" />.</param>
         <summary>Draws a video into the specified region.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

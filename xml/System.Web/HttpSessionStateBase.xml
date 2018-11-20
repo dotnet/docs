@@ -257,7 +257,7 @@
       </Parameters>
       <Docs>
         <param name="array">The array to copy session values to.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying starts.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying starts.</param>
         <summary>When overridden in a derived class, copies the collection of session-state values to a one-dimensional array, starting at the specified index in the array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>

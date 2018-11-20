@@ -116,7 +116,7 @@
       </Parameters>
       <Docs>
         <param name="message">The data to send.</param>
-        <param name="declaredMessageType">The data type that appears on the service description. It must be the same type as <c>message</c> or any base type of <c>message</c>.</param>
+        <param name="declaredMessageType">The data type that appears on the service description. It must be the same type as <paramref name="message" /> or any base type of <paramref name="message" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.SendMessageContent" /> class with the specified message and message type.</summary>
         <remarks>To be added.</remarks>
       </Docs>

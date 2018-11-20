@@ -42,7 +42,7 @@
       <Docs>
         <param name="configSection">The <see cref="T:System.Configuration.ConfigurationSection" /> to process.</param>
         <param name="builder">
-          <see cref="T:System.Configuration.ConfigurationBuilder" /> to use to process the <c>configSection</c>.</param>
+          <see cref="T:System.Configuration.ConfigurationBuilder" /> to use to process the <paramref name="configSection" />.</param>
         <summary>Processes a <see cref="T:System.Configuration.ConfigurationSection" /> object using the provided <see cref="T:System.Configuration.ConfigurationBuilder" />.</summary>
         <returns>The processed <see cref="T:System.Configuration.ConfigurationSection" />.</returns>
         <remarks>To be added.</remarks>
@@ -70,7 +70,7 @@
       <Docs>
         <param name="rawXml">The <see cref="T:System.Xml.XmlNode" /> to process.</param>
         <param name="builder">
-          <see cref="T:System.Configuration.ConfigurationBuilder" /> to use to process the <c>rawXml</c>.</param>
+          <see cref="T:System.Configuration.ConfigurationBuilder" /> to use to process the <paramref name="rawXml" />.</param>
         <summary>Processes the markup of a configuration section using the provided <see cref="T:System.Configuration.ConfigurationBuilder" />.</summary>
         <returns>The processed <see cref="T:System.Xml.XmlNode" />.</returns>
         <remarks>To be added.</remarks>

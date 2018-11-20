@@ -348,7 +348,7 @@
       <Docs>
         <param name="filenames">An array of paths (to files or directories) that the cached object is dependent upon. When any of these resources changes, the cached object becomes obsolete and is removed from the cache.</param>
         <param name="cachekeys">An array of cache keys that the new object monitors for changes. When any of these cache keys changes, the cached object associated with this dependency object becomes obsolete and is removed from the cache.</param>
-        <param name="start">The date and time against which to check the last modified date of the objects passed in the <c>filenames</c> and <c>cachekeys</c> arrays.</param>
+        <param name="start">The date and time against which to check the last modified date of the objects passed in the <paramref name="filenames" /> and <paramref name="cachekeys" /> arrays.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.CacheDependency" /> class that monitors an array of paths (to files or directories), an array of cache keys, or both for changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

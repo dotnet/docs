@@ -277,7 +277,7 @@
         <param name="expirationTime">A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid. Sets the value of the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.ValidTo" /> property.</param>
         <param name="windowsIdentity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that represents a Windows user. Sets the value of the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity" /> property.</param>
         <param name="clone">
-          <see langword="true" /> to create a <see cref="T:System.Security.Principal.WindowsIdentity" /> object that is identical to the <c>windowsIdentity</c> parameter and assign that to the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity" /> property; otherwise, assign the value of the <c>windowsIdentity</c> parameter to the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity" /> property.</param>
+          <see langword="true" /> to create a <see cref="T:System.Security.Principal.WindowsIdentity" /> object that is identical to the <paramref name="windowsIdentity" /> parameter and assign that to the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity" /> property; otherwise, assign the value of the <paramref name="windowsIdentity" /> parameter to the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class using the specified unique identifier, Windows user, and the first and last instants in time when the security token is valid.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -324,7 +324,7 @@
         <param name="expirationTime">A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid.</param>
         <param name="windowsIdentity">Represents a Windows user.</param>
         <param name="clone">
-          <see langword="true" /> to create a <see cref="T:System.Security.Principal.WindowsIdentity" /> object that is identical to the <c>windowsIdentity</c> parameter and assign that to the <c>WindowsIdentity</c> property; otherwise, assign the value of the <c>windowsIdentity</c> parameter to the <c>WindowsIdentity</c> property.</param>
+          <see langword="true" /> to create a <see cref="T:System.Security.Principal.WindowsIdentity" /> object that is identical to the <paramref name="windowsIdentity" /> parameter and assign that to the <c>WindowsIdentity</c> property; otherwise, assign the value of the <paramref name="windowsIdentity" /> parameter to the <c>WindowsIdentity</c> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>

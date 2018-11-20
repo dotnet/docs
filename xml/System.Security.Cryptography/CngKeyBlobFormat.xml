@@ -514,7 +514,7 @@
       </Parameters>
       <Docs>
         <param name="left">An object that specifies a key BLOB format.</param>
-        <param name="right">A second object, to be compared to the object identified by the <c>left</c> parameter.</param>
+        <param name="right">A second object, to be compared to the object identified by the <paramref name="left" /> parameter.</param>
         <summary>Determines whether two <see cref="T:System.Security.Cryptography.CngKeyBlobFormat" /> objects specify the same key BLOB format.</summary>
         <returns>
           <see langword="true" /> if the two objects specify the same key BLOB format; otherwise, <see langword="false" />.</returns>
@@ -554,7 +554,7 @@
       </Parameters>
       <Docs>
         <param name="left">An object that specifies a key BLOB format.</param>
-        <param name="right">A second object, to be compared to the object identified by the <c>left</c> parameter.</param>
+        <param name="right">A second object, to be compared to the object identified by the <paramref name="left" /> parameter.</param>
         <summary>Determines whether two <see cref="T:System.Security.Cryptography.CngKeyBlobFormat" /> objects do not specify the same key BLOB format.</summary>
         <returns>
           <see langword="true" /> if the two objects do not specify the same key BLOB format; otherwise, <see langword="false" />.</returns>

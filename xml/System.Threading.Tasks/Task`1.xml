@@ -774,7 +774,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <param name="continuationAction">An action to according the condition specified in <c>continuationOptions</c>. When run, the delegate will be passed the completed task as an argument.</param>
+        <param name="continuationAction">An action to according the condition specified in <paramref name="continuationOptions" />. When run, the delegate will be passed the completed task as an argument.</param>
         <param name="continuationOptions">Options for when the continuation is scheduled and how it behaves. This includes criteria, such as <see cref="F:System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled" />, as well as execution options, such as <see cref="F:System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously" />.</param>
         <summary>Creates a continuation that executes according the condition specified in <paramref name="continuationOptions" />.</summary>
         <returns>A new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
@@ -1050,7 +1050,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <param name="continuationAction">An action to run according the condition specified in <c>continuationOptions</c>. When run, the delegate will be passed the completed task as an argument.</param>
+        <param name="continuationAction">An action to run according the condition specified in <paramref name="continuationOptions" />. When run, the delegate will be passed the completed task as an argument.</param>
         <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new continuation task.</param>
         <param name="continuationOptions">Options for when the continuation is scheduled and how it behaves. This includes criteria, such as <see cref="F:System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled" />, as well as execution options, such as <see cref="F:System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously" />.</param>
         <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> to associate with the continuation task and to use for its execution.</param>
@@ -1357,7 +1357,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       </Parameters>
       <Docs>
         <typeparam name="TNewResult">The type of the result produced by the continuation.</typeparam>
-        <param name="continuationFunction">A function to run according the condition specified in <c>continuationOptions</c>.  
+        <param name="continuationFunction">A function to run according the condition specified in <paramref name="continuationOptions" />.  
   
  When run, the delegate will be passed the completed task as an argument.</param>
         <param name="continuationOptions">Options for when the continuation is scheduled and how it behaves. This includes criteria, such as <see cref="F:System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled" />, as well as execution options, such as <see cref="F:System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously" />.</param>
@@ -1658,7 +1658,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       </Parameters>
       <Docs>
         <typeparam name="TNewResult">The type of the result produced by the continuation.</typeparam>
-        <param name="continuationFunction">A function to run according the condition specified in <c>continuationOptions</c>.  
+        <param name="continuationFunction">A function to run according the condition specified in <paramref name="continuationOptions" />.  
   
  When run, the delegate will be passed as an argument this completed task.</param>
         <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> that will be assigned to the new task.</param>

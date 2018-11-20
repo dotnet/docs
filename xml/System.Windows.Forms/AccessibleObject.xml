@@ -2228,7 +2228,7 @@ This method must be overridden in derived classes that support the UI automation
       </Parameters>
       <Docs>
         <param name="handle">An <see cref="T:System.IntPtr" /> that contains the handle of the object.</param>
-        <param name="objid">An Int that defines the type of object that the <c>handle</c> parameter refers to.</param>
+        <param name="objid">An Int that defines the type of object that the <paramref name="handle" /> parameter refers to.</param>
         <summary>Associates an object with an instance of an <see cref="T:System.Windows.Forms.AccessibleObject" /> based on the handle and the object id of the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

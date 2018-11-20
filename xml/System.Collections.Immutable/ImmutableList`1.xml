@@ -368,7 +368,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the elements copied from the immutable list. The array must have zero-based indexing.</param>
-        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the entire immutable list to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1294,7 +1294,7 @@
       </Parameters>
       <Docs>
         <param name="oldValue">The element to replace.</param>
-        <param name="newValue">The element to replace <c>oldValue</c> with.</param>
+        <param name="newValue">The element to replace <paramref name="oldValue" /> with.</param>
         <summary>Replaces the specified element in the immutable list with a new element.</summary>
         <returns>The new list with the replaced element, even if it is equal to the old element.</returns>
         <remarks>To be added.</remarks>
@@ -1327,7 +1327,7 @@
       </Parameters>
       <Docs>
         <param name="oldValue">The element to replace in the list.</param>
-        <param name="newValue">The element to replace <c>oldValue</c> with.</param>
+        <param name="newValue">The element to replace <paramref name="oldValue" /> with.</param>
         <param name="equalityComparer">The comparer to use to check for equality.</param>
         <summary>Replaces the specified element in the immutable list with a new element.</summary>
         <returns>A new list with the object replaced, or this list if the specified object is not in this list.</returns>
@@ -1727,7 +1727,7 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>item</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
         <param name="item">The object to insert.</param>
         <summary>Inserts an object in the immutable list at the specified index.</summary>
         <remarks>
@@ -1836,7 +1836,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the elements copied from immutable list.</param>
-        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the entire immutable list to a compatible one-dimensional array, starting at the specified array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2120,7 +2120,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
         <param name="value">The object to insert into the list.</param>
         <summary>Inserts an item into the immutable list at the specified index.</summary>
         <remarks>

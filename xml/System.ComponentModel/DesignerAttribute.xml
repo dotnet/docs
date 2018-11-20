@@ -226,7 +226,7 @@
       </Parameters>
       <Docs>
         <param name="designerTypeName">The concatenation of the fully qualified name of the type that provides design-time services for the component this attribute is bound to, and the name of the assembly this type resides in.</param>
-        <param name="designerBaseType">A <see cref="T:System.Type" /> that represents the base class to associate with the <c>designerTypeName</c>.</param>
+        <param name="designerBaseType">A <see cref="T:System.Type" /> that represents the base class to associate with the <paramref name="designerTypeName" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DesignerAttribute" /> class, using the name of the designer class and the base class for the designer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -270,7 +270,7 @@
       </Parameters>
       <Docs>
         <param name="designerType">A <see cref="T:System.Type" /> that represents the class that provides design-time services for the component this attribute is bound to.</param>
-        <param name="designerBaseType">A <see cref="T:System.Type" /> that represents the base class to associate with the <c>designerType</c>.</param>
+        <param name="designerBaseType">A <see cref="T:System.Type" /> that represents the base class to associate with the <paramref name="designerType" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DesignerAttribute" /> class using the types of the designer and designer base class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

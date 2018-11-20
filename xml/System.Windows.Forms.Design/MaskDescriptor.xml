@@ -236,7 +236,7 @@
       </Parameters>
       <Docs>
         <param name="maskDescriptor">The mask descriptor to test for validity.</param>
-        <param name="validationErrorDescription">A string representing a validation error. If no validation error occurred, the <c>validationErrorDescription</c> is <see cref="F:System.String.Empty" />.</param>
+        <param name="validationErrorDescription">A string representing a validation error. If no validation error occurred, the <paramref name="validationErrorDescription" /> is <see cref="F:System.String.Empty" />.</param>
         <summary>Returns a value indicating whether the specified mask descriptor is valid, and provides an error description if it is not valid.</summary>
         <returns>
           <see langword="true" /> if <paramref name="maskDescriptor" /> is valid; otherwise, <see langword="false" />.</returns>

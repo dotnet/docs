@@ -643,7 +643,7 @@
       </Parameters>
       <Docs>
         <param name="context">The current <see cref="T:System.Web.HttpContext" /> of the request.</param>
-        <param name="control">The <see cref="T:System.Web.UI.Control" /> the parameter is bound to. If the parameter is not bound to a control, the <c>control</c> parameter is ignored.</param>
+        <param name="control">The <see cref="T:System.Web.UI.Control" /> the parameter is bound to. If the parameter is not bound to a control, the <paramref name="control" /> parameter is ignored.</param>
         <summary>Updates and returns the value of the <see cref="T:System.Web.UI.WebControls.Parameter" /> object.</summary>
         <returns>An <see langword="object" /> that represents the updated and current value of the parameter.</returns>
         <remarks>

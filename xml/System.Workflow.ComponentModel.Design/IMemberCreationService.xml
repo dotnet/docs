@@ -97,7 +97,7 @@
         <param name="attributes">A <see cref="T:System.CodeDom.MemberAttributes" /> that defines the member attribute identifier for the field.</param>
         <param name="initializationExpression">A <see cref="T:System.CodeDom.CodeSnippetExpression" /> that contains the literal expression of the field.</param>
         <param name="overwriteExisting">
-          <see langword="true" /> to delete any existing fields on <c>className</c> when creating the new field; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to delete any existing fields on <paramref name="className" /> when creating the new field; otherwise, <see langword="false" />.</param>
         <summary>Creates a field on the specified class by using the specified field name, field type, parameter types, attributes and literal initialization expression.</summary>
         <remarks>To be added.</remarks>
       </Docs>

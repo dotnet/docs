@@ -114,7 +114,7 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <param name="culture">The culture to which <c>value</c> will be converted.</param>
+        <param name="culture">The culture to which <paramref name="value" /> will be converted.</param>
         <param name="value">The <see cref="T:System.Object" /> to convert. This parameter must inherit from <see cref="T:System.Collections.ICollection" />.</param>
         <param name="destinationType">The <see cref="T:System.Type" /> to convert the value to.</param>
         <summary>Converts the given value object to the specified destination type.</summary>

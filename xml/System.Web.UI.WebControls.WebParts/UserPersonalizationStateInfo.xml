@@ -52,7 +52,7 @@
         <Parameter Name="lastActivityDate" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="path">The page that the information applies to. <c>path</c> is an application-relative (using tilde syntax) virtual path.</param>
+        <param name="path">The page that the information applies to. <paramref name="path" /> is an application-relative (using tilde syntax) virtual path.</param>
         <param name="lastUpdatedDate">The last date and time that the user information for a page was updated.</param>
         <param name="size">The size, in bytes, of the per-user state information for the page.</param>
         <param name="username">The user to whom the personalization information for the page applies.</param>

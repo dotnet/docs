@@ -660,7 +660,7 @@ For the definition of equality, see the <xref:System.Threading.CancellationToken
       </Parameters>
       <Docs>
         <param name="callback">The delegate to be executed when the <see cref="T:System.Threading.CancellationToken" /> is canceled.</param>
-        <param name="useSynchronizationContext">A value that indicates whether to capture the current <see cref="T:System.Threading.SynchronizationContext" /> and use it when invoking the <c>callback</c>.</param>
+        <param name="useSynchronizationContext">A value that indicates whether to capture the current <see cref="T:System.Threading.SynchronizationContext" /> and use it when invoking the <paramref name="callback" />.</param>
         <summary>Registers a delegate that will be called when this <see cref="T:System.Threading.CancellationToken" /> is canceled.</summary>
         <returns>The <see cref="T:System.Threading.CancellationTokenRegistration" /> instance that can be used to unregister the callback.</returns>
         <remarks>
@@ -719,7 +719,7 @@ For the definition of equality, see the <xref:System.Threading.CancellationToken
       </Parameters>
       <Docs>
         <param name="callback">The delegate to be executed when the <see cref="T:System.Threading.CancellationToken" /> is canceled.</param>
-        <param name="state">The state to pass to the <c>callback</c> when the delegate is invoked. This may be null.</param>
+        <param name="state">The state to pass to the <paramref name="callback" /> when the delegate is invoked. This may be null.</param>
         <summary>Registers a delegate that will be called when this <see cref="T:System.Threading.CancellationToken" /> is canceled.</summary>
         <returns>The <see cref="T:System.Threading.CancellationTokenRegistration" /> instance that can be used to unregister the callback.</returns>
         <remarks>
@@ -779,8 +779,8 @@ For the definition of equality, see the <xref:System.Threading.CancellationToken
       </Parameters>
       <Docs>
         <param name="callback">The delegate to be executed when the <see cref="T:System.Threading.CancellationToken" /> is canceled.</param>
-        <param name="state">The state to pass to the <c>callback</c> when the delegate is invoked. This may be null.</param>
-        <param name="useSynchronizationContext">A Boolean value that indicates whether to capture the current <see cref="T:System.Threading.SynchronizationContext" /> and use it when invoking the <c>callback</c>.</param>
+        <param name="state">The state to pass to the <paramref name="callback" /> when the delegate is invoked. This may be null.</param>
+        <param name="useSynchronizationContext">A Boolean value that indicates whether to capture the current <see cref="T:System.Threading.SynchronizationContext" /> and use it when invoking the <paramref name="callback" />.</param>
         <summary>Registers a delegate that will be called when this <see cref="T:System.Threading.CancellationToken" /> is canceled.</summary>
         <returns>The <see cref="T:System.Threading.CancellationTokenRegistration" /> instance that can be used to unregister the callback.</returns>
         <remarks>

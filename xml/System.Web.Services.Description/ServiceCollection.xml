@@ -225,7 +225,7 @@
         <Parameter Name="service" Type="System.Web.Services.Description.Service" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the <c>service</c> parameter.</param>
+        <param name="index">The zero-based index at which to insert the <paramref name="service" /> parameter.</param>
         <param name="service">The <see cref="T:System.Web.Services.Description.Service" /> to add to the collection.</param>
         <summary>Adds the specified <see cref="T:System.Web.Services.Description.Service" /> instance to the <see cref="T:System.Web.Services.Description.ServiceCollection" /> at the specified zero-based index.</summary>
         <remarks>

@@ -1007,7 +1007,7 @@
         <param name="port">The port number of the remote host.</param>
         <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the connect operation is complete.</param>
         <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the connect operation is complete.</param>
-        <param name="state">A user-defined object that contains information about the connect operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
+        <param name="state">A user-defined object that contains information about the connect operation. This object is passed to the <paramref name="requestCallback" /> delegate when the operation is complete.</param>
         <summary>Begins an asynchronous request for a remote host connection. The host is specified by an <see cref="T:System.Net.IPAddress" /> and a port number.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> that references the asynchronous connection.</returns>
         <remarks>
@@ -1109,7 +1109,7 @@
         <param name="port">The port number of the remote host.</param>
         <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the connect operation is complete.</param>
         <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the connect operation is complete.</param>
-        <param name="state">A user-defined object that contains information about the connect operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
+        <param name="state">A user-defined object that contains information about the connect operation. This object is passed to the <paramref name="requestCallback" /> delegate when the operation is complete.</param>
         <summary>Begins an asynchronous request for a remote host connection. The host is specified by an <see cref="T:System.Net.IPAddress" /> array and a port number.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> that references the asynchronous connections.</returns>
         <remarks>
@@ -1211,7 +1211,7 @@
         <param name="port">The port number of the remote host.</param>
         <param name="requestCallback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the connect operation is complete.</param>
         <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the connect operation is complete.</param>
-        <param name="state">A user-defined object that contains information about the connect operation. This object is passed to the <c>requestCallback</c> delegate when the operation is complete.</param>
+        <param name="state">A user-defined object that contains information about the connect operation. This object is passed to the <paramref name="requestCallback" /> delegate when the operation is complete.</param>
         <summary>Begins an asynchronous request for a remote host connection. The host is specified by a host name and a port number.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> that references the asynchronous connection.</returns>
         <remarks>
@@ -1570,7 +1570,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that is the storage location for the received data.</param>
-        <param name="offset">The zero-based position in the <c>buffer</c> parameter at which to store the received data.</param>
+        <param name="offset">The zero-based position in the <paramref name="buffer" /> parameter at which to store the received data.</param>
         <param name="size">The number of bytes to receive.</param>
         <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
         <param name="socket_flags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
@@ -1697,7 +1697,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that is the storage location for the received data.</param>
-        <param name="offset">The location in <c>buffer</c> to store the received data.</param>
+        <param name="offset">The location in <paramref name="buffer" /> to store the received data.</param>
         <param name="size">The number of bytes to receive.</param>
         <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
@@ -1810,7 +1810,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that is the storage location for the received data.</param>
-        <param name="offset">The zero-based position in the <c>buffer</c> parameter at which to store the data.</param>
+        <param name="offset">The zero-based position in the <paramref name="buffer" /> parameter at which to store the data.</param>
         <param name="size">The number of bytes to receive.</param>
         <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
         <param name="socket_flags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
@@ -1938,7 +1938,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that is the storage location for the received data.</param>
-        <param name="offset">The zero-based position in the <c>buffer</c> parameter at which to store the data.</param>
+        <param name="offset">The zero-based position in the <paramref name="buffer" /> parameter at which to store the data.</param>
         <param name="size">The number of bytes to receive.</param>
         <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
         <param name="remoteEP">An <see cref="T:System.Net.EndPoint" /> that represents the source of the data.</param>
@@ -2230,7 +2230,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that contains the data to send.</param>
-        <param name="offset">The zero-based position in the <c>buffer</c> parameter at which to begin sending data.</param>
+        <param name="offset">The zero-based position in the <paramref name="buffer" /> parameter at which to begin sending data.</param>
         <param name="size">The number of bytes to send.</param>
         <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
         <param name="errorCode">A <see cref="T:System.Net.Sockets.SocketError" /> object that stores the socket error.</param>
@@ -2342,7 +2342,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that contains the data to send.</param>
-        <param name="offset">The zero-based position in the <c>buffer</c> parameter at which to begin sending data.</param>
+        <param name="offset">The zero-based position in the <paramref name="buffer" /> parameter at which to begin sending data.</param>
         <param name="size">The number of bytes to send.</param>
         <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
         <param name="socket_flags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
@@ -2649,7 +2649,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that contains the data to send.</param>
-        <param name="offset">The zero-based position in <c>buffer</c> at which to begin sending data.</param>
+        <param name="offset">The zero-based position in <paramref name="buffer" /> at which to begin sending data.</param>
         <param name="size">The number of bytes to send.</param>
         <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
         <param name="socket_flags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
@@ -3030,7 +3030,7 @@
         <Parameter Name="timeout" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="timeout">Wait up to <c>timeout</c> seconds to send any remaining data, then close the socket.</param>
+        <param name="timeout">Wait up to <paramref name="timeout" /> seconds to send any remaining data, then close the socket.</param>
         <summary>Closes the <see cref="T:System.Net.Sockets.Socket" /> connection and releases all associated resources with a specified timeout to allow queued data to be sent.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -7017,7 +7017,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that is the storage location for received data.</param>
-        <param name="offset">The location in <c>buffer</c> to store the received data.</param>
+        <param name="offset">The location in <paramref name="buffer" /> to store the received data.</param>
         <param name="size">The number of bytes to receive.</param>
         <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
         <summary>Receives the specified number of bytes from a bound <see cref="T:System.Net.Sockets.Socket" /> into the specified offset position of the receive buffer, using the specified <see cref="T:System.Net.Sockets.SocketFlags" />.</summary>
@@ -7127,7 +7127,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that is the storage location for the received data.</param>
-        <param name="offset">The position in the <c>buffer</c> parameter to store the received data.</param>
+        <param name="offset">The position in the <paramref name="buffer" /> parameter to store the received data.</param>
         <param name="size">The number of bytes to receive.</param>
         <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
         <param name="errorCode">A <see cref="T:System.Net.Sockets.SocketError" /> object that stores the socket error.</param>
@@ -7688,7 +7688,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that is the storage location for received data.</param>
-        <param name="offset">The position in the <c>buffer</c> parameter to store the received data.</param>
+        <param name="offset">The position in the <paramref name="buffer" /> parameter to store the received data.</param>
         <param name="size">The number of bytes to receive.</param>
         <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
         <param name="remoteEP">An <see cref="T:System.Net.EndPoint" />, passed by reference, that represents the remote server.</param>
@@ -7896,7 +7896,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that is the storage location for received data.</param>
-        <param name="offset">The position in the <c>buffer</c> parameter to store the received data.</param>
+        <param name="offset">The position in the <paramref name="buffer" /> parameter to store the received data.</param>
         <param name="size">The number of bytes to receive.</param>
         <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
         <param name="remoteEP">An <see cref="T:System.Net.EndPoint" />, passed by reference, that represents the remote server.</param>

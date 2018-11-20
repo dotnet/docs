@@ -257,7 +257,7 @@
       </Parameters>
       <Docs>
         <param name="array">The <see cref="T:System.Array" /> that receives the session values.</param>
-        <param name="index">The index in <c>array</c> where copying starts.</param>
+        <param name="index">The index in <paramref name="array" /> where copying starts.</param>
         <summary>Copies the collection of session-state item values to a one-dimensional array, starting at the specified index in the array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

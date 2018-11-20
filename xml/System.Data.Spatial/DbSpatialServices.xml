@@ -342,7 +342,7 @@
       </Parameters>
       <Docs>
         <param name="geographyValue">The geography value.</param>
-        <param name="distance">A double value specifying how far from <c>geographyValue</c> to buffer.</param>
+        <param name="distance">A double value specifying how far from <paramref name="geographyValue" /> to buffer.</param>
         <summary>Creates a geography value representing all points less than or equal to <paramref name="distance" /> from the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</summary>
         <returns>A new DbGeography value representing all points less than or equal to <paramref name="distance" /> from <paramref name="geographyValue" />.</returns>
         <remarks>To be added.</remarks>
@@ -375,7 +375,7 @@
       </Parameters>
       <Docs>
         <param name="geometryValue">The geometry value.</param>
-        <param name="distance">A double value specifying how far from <c>geometryValue</c> to buffer.</param>
+        <param name="distance">A double value specifying how far from <paramref name="geometryValue" /> to buffer.</param>
         <summary>Creates a geometry value representing all points less than or equal to <paramref name="distance" /> from the given <see cref="T:System.Data.Spatial.DbGeometry" /> value.</summary>
         <returns>A new DbGeometry value representing all points less than or equal to <paramref name="distance" /> from <paramref name="geometryValue" />.</returns>
         <remarks>To be added.</remarks>

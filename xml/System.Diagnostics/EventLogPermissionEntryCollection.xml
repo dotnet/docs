@@ -360,8 +360,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert <c>value</c>.</param>
-        <param name="value">The new value of the permission entry at <c>index</c>.</param>
+        <param name="index">The zero-based index at which to insert <paramref name="value" />.</param>
+        <param name="value">The new value of the permission entry at <paramref name="index" />.</param>
         <summary>Performs additional custom processes before a new permission entry is inserted into the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -393,8 +393,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> can be found.</param>
-        <param name="value">The permission entry to remove from <c>index</c>.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> can be found.</param>
+        <param name="value">The permission entry to remove from <paramref name="index" />.</param>
         <summary>Performs additional custom processes when removing a new permission entry from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -427,9 +427,9 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>oldValue</c> can be found.</param>
-        <param name="oldValue">The value to replace with <c>newValue</c>.</param>
-        <param name="newValue">The new value of the permission entry at <c>index</c>.</param>
+        <param name="index">The zero-based index at which <paramref name="oldValue" /> can be found.</param>
+        <param name="oldValue">The value to replace with <paramref name="newValue" />.</param>
+        <param name="newValue">The new value of the permission entry at <paramref name="index" />.</param>
         <summary>Performs additional custom processes before setting a value in the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>

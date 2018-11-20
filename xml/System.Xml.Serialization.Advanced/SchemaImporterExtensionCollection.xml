@@ -235,7 +235,7 @@
         <Parameter Name="extension" Type="System.Xml.Serialization.Advanced.SchemaImporterExtension" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-base index at which the <c>extension</c> should be inserted.</param>
+        <param name="index">The zero-base index at which the <paramref name="extension" /> should be inserted.</param>
         <param name="extension">The <see cref="T:System.Xml.Serialization.Advanced.SchemaImporterExtension" /> to insert.</param>
         <summary>Inserts the specified <see cref="T:System.Xml.Serialization.Advanced.SchemaImporterExtension" /> into the collection at the specified index.</summary>
         <remarks>To be added.</remarks>

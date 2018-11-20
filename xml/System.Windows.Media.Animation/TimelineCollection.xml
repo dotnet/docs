@@ -565,7 +565,7 @@
         <Parameter Name="value" Type="System.Windows.Media.Animation.Timeline" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index position into which <c>value</c> is inserted.</param>
+        <param name="index">The zero-based index position into which <paramref name="value" /> is inserted.</param>
         <param name="value">The object to insert.</param>
         <summary>Inserts the specified Timeline object into this <see cref="T:System.Windows.Media.Animation.TimelineCollection" /> at the specified index position.</summary>
         <remarks>To be added.</remarks>

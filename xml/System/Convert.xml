@@ -639,8 +639,8 @@
       </Parameters>
       <Docs>
         <param name="inArray">A Unicode character array.</param>
-        <param name="offset">A position within <c>inArray</c>.</param>
-        <param name="length">The number of elements in <c>inArray</c> to convert.</param>
+        <param name="offset">A position within <paramref name="inArray" />.</param>
+        <param name="length">The number of elements in <paramref name="inArray" /> to convert.</param>
         <summary>Converts a subset of a Unicode character array, which encodes binary data as base-64 digits, to an equivalent 8-bit unsigned integer array. Parameters specify the subset in the input array and the number of elements to convert.</summary>
         <returns>An array of 8-bit unsigned integers equivalent to <paramref name="length" /> elements at position <paramref name="offset" /> in <paramref name="inArray" />.</returns>
         <remarks>
@@ -926,10 +926,10 @@
       </Parameters>
       <Docs>
         <param name="inArray">An input array of 8-bit unsigned integers.</param>
-        <param name="offsetIn">A position within <c>inArray</c>.</param>
-        <param name="length">The number of elements of <c>inArray</c> to convert.</param>
+        <param name="offsetIn">A position within <paramref name="inArray" />.</param>
+        <param name="length">The number of elements of <paramref name="inArray" /> to convert.</param>
         <param name="outArray">An output array of Unicode characters.</param>
-        <param name="offsetOut">A position within <c>outArray</c>.</param>
+        <param name="offsetOut">A position within <paramref name="outArray" />.</param>
         <summary>Converts a subset of an 8-bit unsigned integer array to an equivalent subset of a Unicode character array encoded with base-64 digits. Parameters specify the subsets as offsets in the input and output arrays, and the number of elements in the input array to convert.</summary>
         <returns>A 32-bit signed integer containing the number of bytes in <paramref name="outArray" />.</returns>
         <remarks>
@@ -1016,10 +1016,10 @@
       </Parameters>
       <Docs>
         <param name="inArray">An input array of 8-bit unsigned integers.</param>
-        <param name="offsetIn">A position within <c>inArray</c>.</param>
-        <param name="length">The number of elements of <c>inArray</c> to convert.</param>
+        <param name="offsetIn">A position within <paramref name="inArray" />.</param>
+        <param name="length">The number of elements of <paramref name="inArray" /> to convert.</param>
         <param name="outArray">An output array of Unicode characters.</param>
-        <param name="offsetOut">A position within <c>outArray</c>.</param>
+        <param name="offsetOut">A position within <paramref name="outArray" />.</param>
         <param name="options">
           <see cref="F:System.Base64FormattingOptions.InsertLineBreaks" /> to insert a line break every 76 characters, or <see cref="F:System.Base64FormattingOptions.None" /> to not insert line breaks.</param>
         <summary>Converts a subset of an 8-bit unsigned integer array to an equivalent subset of a Unicode character array encoded with base-64 digits. Parameters specify the subsets as offsets in the input and output arrays, the number of elements in the input array to convert, and whether line breaks are inserted in the output array.</summary>
@@ -1298,8 +1298,8 @@
       </Parameters>
       <Docs>
         <param name="inArray">An array of 8-bit unsigned integers.</param>
-        <param name="offset">An offset in <c>inArray</c>.</param>
-        <param name="length">The number of elements of <c>inArray</c> to convert.</param>
+        <param name="offset">An offset in <paramref name="inArray" />.</param>
+        <param name="length">The number of elements of <paramref name="inArray" /> to convert.</param>
         <summary>Converts a subset of an array of 8-bit unsigned integers to its equivalent string representation that is encoded with base-64 digits. Parameters specify the subset as an offset in the input array, and the number of elements in the array to convert.</summary>
         <returns>The string representation in base 64 of <paramref name="length" /> elements of <paramref name="inArray" />, starting at position <paramref name="offset" />.</returns>
         <remarks>
@@ -1372,8 +1372,8 @@
       </Parameters>
       <Docs>
         <param name="inArray">An array of 8-bit unsigned integers.</param>
-        <param name="offset">An offset in <c>inArray</c>.</param>
-        <param name="length">The number of elements of <c>inArray</c> to convert.</param>
+        <param name="offset">An offset in <paramref name="inArray" />.</param>
+        <param name="length">The number of elements of <paramref name="inArray" /> to convert.</param>
         <param name="options">
           <see cref="F:System.Base64FormattingOptions.InsertLineBreaks" /> to insert a line break every 76 characters, or <see cref="F:System.Base64FormattingOptions.None" /> to not insert line breaks.</param>
         <summary>Converts a subset of an array of 8-bit unsigned integers to its equivalent string representation that is encoded with base-64 digits. Parameters specify the subset as an offset in the input array, the number of elements in the array to convert, and whether to insert line breaks in the return value.</summary>
@@ -3454,7 +3454,7 @@
       </Parameters>
       <Docs>
         <param name="value">A string that contains the number to convert.</param>
-        <param name="fromBase">The base of the number in <c>value</c>, which must be 2, 8, 10, or 16.</param>
+        <param name="fromBase">The base of the number in <paramref name="value" />, which must be 2, 8, 10, or 16.</param>
         <summary>Converts the string representation of a number in a specified base to an equivalent 8-bit unsigned integer.</summary>
         <returns>An 8-bit unsigned integer that is equivalent to the number in <paramref name="value" />, or 0 (zero) if <paramref name="value" /> is <see langword="null" />.</returns>
         <remarks>
@@ -8287,7 +8287,7 @@
       </Parameters>
       <Docs>
         <param name="value">A string that contains the number to convert.</param>
-        <param name="fromBase">The base of the number in <c>value</c>, which must be 2, 8, 10, or 16.</param>
+        <param name="fromBase">The base of the number in <paramref name="value" />, which must be 2, 8, 10, or 16.</param>
         <summary>Converts the string representation of a number in a specified base to an equivalent 16-bit signed integer.</summary>
         <returns>A 16-bit signed integer that is equivalent to the number in <paramref name="value" />, or 0 (zero) if <paramref name="value" /> is <see langword="null" />.</returns>
         <remarks>
@@ -9370,7 +9370,7 @@
       </Parameters>
       <Docs>
         <param name="value">A string that contains the number to convert.</param>
-        <param name="fromBase">The base of the number in <c>value</c>, which must be 2, 8, 10, or 16.</param>
+        <param name="fromBase">The base of the number in <paramref name="value" />, which must be 2, 8, 10, or 16.</param>
         <summary>Converts the string representation of a number in a specified base to an equivalent 32-bit signed integer.</summary>
         <returns>A 32-bit signed integer that is equivalent to the number in <paramref name="value" />, or 0 (zero) if <paramref name="value" /> is <see langword="null" />.</returns>
         <remarks>
@@ -10442,7 +10442,7 @@
       </Parameters>
       <Docs>
         <param name="value">A string that contains the number to convert.</param>
-        <param name="fromBase">The base of the number in <c>value</c>, which must be 2, 8, 10, or 16.</param>
+        <param name="fromBase">The base of the number in <paramref name="value" />, which must be 2, 8, 10, or 16.</param>
         <summary>Converts the string representation of a number in a specified base to an equivalent 64-bit signed integer.</summary>
         <returns>A 64-bit signed integer that is equivalent to the number in <paramref name="value" />, or 0 (zero) if <paramref name="value" /> is <see langword="null" />.</returns>
         <remarks>
@@ -11607,7 +11607,7 @@
       </Parameters>
       <Docs>
         <param name="value">A string that contains the number to convert.</param>
-        <param name="fromBase">The base of the number in <c>value</c>, which must be 2, 8, 10, or 16.</param>
+        <param name="fromBase">The base of the number in <paramref name="value" />, which must be 2, 8, 10, or 16.</param>
         <summary>Converts the string representation of a number in a specified base to an equivalent 8-bit signed integer.</summary>
         <returns>An 8-bit signed integer that is equivalent to the number in <paramref name="value" />, or 0 (zero) if <paramref name="value" /> is <see langword="null" />.</returns>
         <remarks>
@@ -15845,7 +15845,7 @@
       </Parameters>
       <Docs>
         <param name="value">A string that contains the number to convert.</param>
-        <param name="fromBase">The base of the number in <c>value</c>, which must be 2, 8, 10, or 16.</param>
+        <param name="fromBase">The base of the number in <paramref name="value" />, which must be 2, 8, 10, or 16.</param>
         <summary>Converts the string representation of a number in a specified base to an equivalent 16-bit unsigned integer.</summary>
         <returns>A 16-bit unsigned integer that is equivalent to the number in <paramref name="value" />, or 0 (zero) if <paramref name="value" /> is <see langword="null" />.</returns>
         <remarks>
@@ -17005,7 +17005,7 @@
       </Parameters>
       <Docs>
         <param name="value">A string that contains the number to convert.</param>
-        <param name="fromBase">The base of the number in <c>value</c>, which must be 2, 8, 10, or 16.</param>
+        <param name="fromBase">The base of the number in <paramref name="value" />, which must be 2, 8, 10, or 16.</param>
         <summary>Converts the string representation of a number in a specified base to an equivalent 32-bit unsigned integer.</summary>
         <returns>A 32-bit unsigned integer that is equivalent to the number in <paramref name="value" />, or 0 (zero) if <paramref name="value" /> is <see langword="null" />.</returns>
         <remarks>
@@ -18166,7 +18166,7 @@
       </Parameters>
       <Docs>
         <param name="value">A string that contains the number to convert.</param>
-        <param name="fromBase">The base of the number in <c>value</c>, which must be 2, 8, 10, or 16.</param>
+        <param name="fromBase">The base of the number in <paramref name="value" />, which must be 2, 8, 10, or 16.</param>
         <summary>Converts the string representation of a number in a specified base to an equivalent 64-bit unsigned integer.</summary>
         <returns>A 64-bit unsigned integer that is equivalent to the number in <paramref name="value" />, or 0 (zero) if <paramref name="value" /> is <see langword="null" />.</returns>
         <remarks>

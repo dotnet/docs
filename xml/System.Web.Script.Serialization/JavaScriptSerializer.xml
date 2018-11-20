@@ -213,7 +213,7 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type to which <c>obj</c> will be converted.</typeparam>
+        <typeparam name="T">The type to which <paramref name="obj" /> will be converted.</typeparam>
         <param name="obj">The object to convert.</param>
         <summary>Converts the given object to the specified type.</summary>
         <returns>The object that has been converted to the target type.</returns>

@@ -349,8 +349,8 @@
         <param name="major">The major version number of the type library.</param>
         <param name="minor">The minor version number of the type library.</param>
         <param name="lcid">The LCID of the type library.</param>
-        <param name="asmName">On successful return, the name of the primary interop assembly associated with <c>g</c>.</param>
-        <param name="asmCodeBase">On successful return, the code base of the primary interop assembly associated with <c>g</c>.</param>
+        <param name="asmName">On successful return, the name of the primary interop assembly associated with <paramref name="g" />.</param>
+        <param name="asmCodeBase">On successful return, the code base of the primary interop assembly associated with <paramref name="g" />.</param>
         <summary>Gets the name and code base of a primary interop assembly for a specified type library.</summary>
         <returns>
           <see langword="true" /> if the primary interop assembly was found in the registry; otherwise <see langword="false" />.</returns>

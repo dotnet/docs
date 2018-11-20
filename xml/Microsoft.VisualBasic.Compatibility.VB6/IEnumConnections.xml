@@ -99,9 +99,9 @@
         <Parameter Name="cFetched" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="cConnections">The number of <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.CONNECTDATA" /> structures to return in <c>cd</c>.</param>
+        <param name="cConnections">The number of <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.CONNECTDATA" /> structures to return in <paramref name="cd" />.</param>
         <param name="cd">When this method returns, contains a reference to the enumerated connections. This parameter is passed uninitialized.</param>
-        <param name="cFetched">When this method returns, contains a reference to the actual number of connections enumerated in <c>cd</c>.</param>
+        <param name="cFetched">When this method returns, contains a reference to the actual number of connections enumerated in <paramref name="cd" />.</param>
         <summary>Retrieves a specified number of items in the enumeration sequence.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

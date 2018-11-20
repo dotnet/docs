@@ -357,7 +357,7 @@
         <param name="targetUrl">The specified target (form or URL).</param>
         <param name="softkeyLabel">Text used for the softkey.</param>
         <param name="implicitSoftkeyLabel">Set to <see langword="true" /> if the softkey label comes from the adapter itself (the default label, or something else that is adapter specified, such as "Call" for a <see cref="T:System.Web.UI.MobileControls.PhoneCall" />, rather than a softkey label explicitly specified by the application author.</param>
-        <param name="mapToSoftkey">Determines whether a softkey label is used for the link. If <see langword="true" />, the <c>softkeyLabel</c> text is used.</param>
+        <param name="mapToSoftkey">Determines whether a softkey label is used for the link. If <see langword="true" />, the <paramref name="softkeyLabel" /> text is used.</param>
         <summary>Renders the opening tag of a link. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

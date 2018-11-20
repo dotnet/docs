@@ -310,7 +310,7 @@
       <Docs>
         <param name="chars">A <see langword="char" /> array that represents a <see cref="T:System.Guid" />.</param>
         <param name="offset">Offset position within the <see langword="char" /> array that represents a <see cref="T:System.Guid" />.</param>
-        <param name="count">Number of array entries to use, starting from <c>offset</c>.</param>
+        <param name="count">Number of array entries to use, starting from <paramref name="offset" />.</param>
         <summary>Creates a new instance of this class starting from an offset within a <see langword="char" /> using a specified number of entries.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

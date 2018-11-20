@@ -2432,7 +2432,7 @@
       <Docs>
         <typeparam name="TComplex">The type of the complex object being verified.</typeparam>
         <param name="complexObject">The complex object that is being validated.</param>
-        <param name="propertyName">The complex property on the parent object that is associated with <c>complexObject</c>.</param>
+        <param name="propertyName">The complex property on the parent object that is associated with <paramref name="complexObject" />.</param>
         <summary>Verifies that a complex object is not <see langword="null" />.</summary>
         <returns>The complex object being validated.</returns>
         <remarks>To be added.</remarks>

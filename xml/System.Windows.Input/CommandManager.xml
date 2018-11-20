@@ -57,7 +57,7 @@
         <Parameter Name="handler" Type="System.Windows.Input.CanExecuteRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The element to attach <c>handler</c> to.</param>
+        <param name="element">The element to attach <paramref name="handler" /> to.</param>
         <param name="handler">The can execute handler.</param>
         <summary>Attaches the specified <see cref="T:System.Windows.Input.CanExecuteRoutedEventHandler" /> to the specified element.</summary>
         <remarks>
@@ -112,7 +112,7 @@
         <Parameter Name="handler" Type="System.Windows.Input.ExecutedRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The element to attach <c>handler</c> to.</param>
+        <param name="element">The element to attach <paramref name="handler" /> to.</param>
         <param name="handler">The executed handler.</param>
         <summary>Attaches the specified <see cref="T:System.Windows.Input.ExecutedRoutedEventHandler" /> to the specified element.</summary>
         <remarks>
@@ -167,7 +167,7 @@
         <Parameter Name="handler" Type="System.Windows.Input.CanExecuteRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The element to attach <c>handler</c> to.</param>
+        <param name="element">The element to attach <paramref name="handler" /> to.</param>
         <param name="handler">The can execute handler.</param>
         <summary>Attaches the specified <see cref="T:System.Windows.Input.CanExecuteRoutedEventHandler" /> to the specified element.</summary>
         <remarks>
@@ -222,7 +222,7 @@
         <Parameter Name="handler" Type="System.Windows.Input.ExecutedRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The element to attach <c>handler</c> to.</param>
+        <param name="element">The element to attach <paramref name="handler" /> to.</param>
         <param name="handler">The can execute handler.</param>
         <summary>Attaches the specified <see cref="T:System.Windows.Input.ExecutedRoutedEventHandler" /> to the specified element.</summary>
         <remarks>
@@ -529,7 +529,7 @@
         <Parameter Name="commandBinding" Type="System.Windows.Input.CommandBinding" />
       </Parameters>
       <Docs>
-        <param name="type">The class with which to register <c>commandBinding</c>.</param>
+        <param name="type">The class with which to register <paramref name="commandBinding" />.</param>
         <param name="commandBinding">The command binding to register.</param>
         <summary>Registers a <see cref="T:System.Windows.Input.CommandBinding" /> with the specified type.</summary>
         <remarks>
@@ -564,7 +564,7 @@
         <Parameter Name="inputBinding" Type="System.Windows.Input.InputBinding" />
       </Parameters>
       <Docs>
-        <param name="type">The type to register <c>inputBinding</c> with.</param>
+        <param name="type">The type to register <paramref name="inputBinding" /> with.</param>
         <param name="inputBinding">The input binding to register.</param>
         <summary>Registers the specified <see cref="T:System.Windows.Input.InputBinding" /> with the specified type.</summary>
         <remarks>
@@ -600,7 +600,7 @@
         <Parameter Name="handler" Type="System.Windows.Input.CanExecuteRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The element to remove <c>handler</c> from.</param>
+        <param name="element">The element to remove <paramref name="handler" /> from.</param>
         <param name="handler">The can execute handler.</param>
         <summary>Detaches the specified <see cref="T:System.Windows.Input.CanExecuteRoutedEventHandler" /> from the specified element.</summary>
         <remarks>
@@ -641,7 +641,7 @@
         <Parameter Name="handler" Type="System.Windows.Input.ExecutedRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The element to remove <c>handler</c> from.</param>
+        <param name="element">The element to remove <paramref name="handler" /> from.</param>
         <param name="handler">The executed handler.</param>
         <summary>Detaches the specified <see cref="T:System.Windows.Input.ExecutedRoutedEventHandler" /> from the specified element.</summary>
         <remarks>
@@ -682,7 +682,7 @@
         <Parameter Name="handler" Type="System.Windows.Input.CanExecuteRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The element to remove <c>handler</c> from.</param>
+        <param name="element">The element to remove <paramref name="handler" /> from.</param>
         <param name="handler">The can execute handler.</param>
         <summary>Detaches the specified <see cref="T:System.Windows.Input.CanExecuteRoutedEventHandler" /> from the specified element.</summary>
         <remarks>
@@ -723,7 +723,7 @@
         <Parameter Name="handler" Type="System.Windows.Input.ExecutedRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">The element to remove <c>handler</c> from.</param>
+        <param name="element">The element to remove <paramref name="handler" /> from.</param>
         <param name="handler">The executed handler.</param>
         <summary>Detaches the specified <see cref="T:System.Windows.Input.ExecutedRoutedEventHandler" /> from the specified element.</summary>
         <remarks>

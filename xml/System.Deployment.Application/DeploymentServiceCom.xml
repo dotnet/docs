@@ -108,7 +108,7 @@
       </Parameters>
       <Docs>
         <param name="deploymentLocation">The location of the deployment manifest on disk.</param>
-        <param name="isShortcut">Whether <c>deploymentLocation</c> is a shortcut, or the actual file.</param>
+        <param name="isShortcut">Whether <paramref name="deploymentLocation" /> is a shortcut, or the actual file.</param>
         <summary>Starts the deployment on the client computer.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

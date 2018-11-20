@@ -103,7 +103,7 @@
       </Parameters>
       <Docs>
         <param name="uri">The URI to parse.</param>
-        <param name="components">The <see cref="T:System.UriComponents" /> to retrieve from <c>uri</c>.</param>
+        <param name="components">The <see cref="T:System.UriComponents" /> to retrieve from <paramref name="uri" />.</param>
         <param name="format">One of the <see cref="T:System.UriFormat" /> values that controls how special characters are escaped.</param>
         <summary>Gets the components from a URI.</summary>
         <returns>A string that contains the components.</returns>

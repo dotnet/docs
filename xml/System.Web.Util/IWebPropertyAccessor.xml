@@ -65,7 +65,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="target">The property for which <c>value</c> is set.</param>
+        <param name="target">The property for which <paramref name="value" /> is set.</param>
         <param name="value">The object containing the value of the property.</param>
         <summary>Sets the specified property with the given value.</summary>
         <remarks>To be added.</remarks>

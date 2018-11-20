@@ -324,7 +324,7 @@
         <Parameter Name="punk" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="pszKey">The name to register <c>punk</c> with.</param>
+        <param name="pszKey">The name to register <paramref name="punk" /> with.</param>
         <param name="punk">The object to register.</param>
         <summary>Registers the specified object pointer under the specified name in the internally maintained table of object pointers.</summary>
         <remarks>

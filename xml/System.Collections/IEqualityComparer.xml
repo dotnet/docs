@@ -111,9 +111,9 @@ The `IEqualityComparer` interface supports only equality comparisons. Customizat
         <exception cref="T:System.ArgumentException">
           <paramref name="x" /> and <paramref name="y" /> are of different types and neither one can handle comparisons with the other.</exception>
         <block subset="none" type="overrides">
-          <para>The <see cref="M:System.Collections.IEqualityComparer.Equals(System.Object,System.Object)" /> method is reflexive, symmetric, and transitive. That is, it returns <see langword="true" /> if used to compare an object with itself; <see langword="true" /> for two objects <c>x</c> and <c>y</c> if it is <see langword="true" /> for <c>y</c> and <c>x</c>; and <see langword="true" /> for two objects <c>x</c> and <c>z</c> if it is <see langword="true" /> for <c>x</c> and <c>y</c> and also <see langword="true" /> for <c>y</c> and <c>z</c>.  
+          <para>The <see cref="M:System.Collections.IEqualityComparer.Equals(System.Object,System.Object)" /> method is reflexive, symmetric, and transitive. That is, it returns <see langword="true" /> if used to compare an object with itself; <see langword="true" /> for two objects <paramref name="x" /> and <paramref name="y" /> if it is <see langword="true" /> for <paramref name="y" /> and <paramref name="x" />; and <see langword="true" /> for two objects <paramref name="x" /> and <c>z</c> if it is <see langword="true" /> for <paramref name="x" /> and <paramref name="y" /> and also <see langword="true" /> for <paramref name="y" /> and <c>z</c>.  
   
- Implementations are required to ensure that if the <see cref="M:System.Collections.IEqualityComparer.Equals(System.Object,System.Object)" /> method returns <see langword="true" /> for two objects <c>x</c> and <c>y</c>, then the value returned by the <see cref="M:System.Collections.IEqualityComparer.GetHashCode(System.Object)" /> method for <c>x</c> must equal the value returned for <c>y</c>.</para>
+ Implementations are required to ensure that if the <see cref="M:System.Collections.IEqualityComparer.Equals(System.Object,System.Object)" /> method returns <see langword="true" /> for two objects <paramref name="x" /> and <paramref name="y" />, then the value returned by the <see cref="M:System.Collections.IEqualityComparer.GetHashCode(System.Object)" /> method for <paramref name="x" /> must equal the value returned for <paramref name="y" />.</para>
         </block>
       </Docs>
     </Member>
@@ -173,7 +173,7 @@ The `IEqualityComparer` interface supports only equality comparisons. Customizat
         </remarks>
         <exception cref="T:System.ArgumentNullException">The type of <paramref name="obj" /> is a reference type and <paramref name="obj" /> is <see langword="null" />.</exception>
         <block subset="none" type="overrides">
-          <para>Implementations are required to ensure that if the <see cref="M:System.Collections.IEqualityComparer.Equals(System.Object,System.Object)" /> method returns <see langword="true" /> for two objects <c>x</c> and <c>y</c>, then the value returned by the <see cref="M:System.Collections.IEqualityComparer.GetHashCode(System.Object)" /> method for <c>x</c> must equal the value returned for <c>y</c>.</para>
+          <para>Implementations are required to ensure that if the <see cref="M:System.Collections.IEqualityComparer.Equals(System.Object,System.Object)" /> method returns <see langword="true" /> for two objects <paramref name="x" /> and <paramref name="y" />, then the value returned by the <see cref="M:System.Collections.IEqualityComparer.GetHashCode(System.Object)" /> method for <paramref name="x" /> must equal the value returned for <paramref name="y" />.</para>
         </block>
         <altmember cref="M:System.Object.GetHashCode" />
         <altmember cref="T:System.Collections.IHashCodeProvider" />

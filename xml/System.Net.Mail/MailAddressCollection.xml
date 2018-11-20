@@ -159,7 +159,7 @@
         <Parameter Name="item" Type="System.Net.Mail.MailAddress" />
       </Parameters>
       <Docs>
-        <param name="index">The location at which to insert the email address that is specified by <c>item</c>.</param>
+        <param name="index">The location at which to insert the email address that is specified by <paramref name="item" />.</param>
         <param name="item">The email address to be inserted into the collection.</param>
         <summary>Inserts an email address into the <see cref="T:System.Net.Mail.MailAddressCollection" />, at the specified location.</summary>
         <remarks>To be added.</remarks>

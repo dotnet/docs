@@ -155,7 +155,7 @@
       </Parameters>
       <Docs>
         <param name="connection">An <see cref="T:System.Data.EntityClient.EntityConnection" /> that contains references to the model and to the data source connection.</param>
-        <param name="defaultContainerName">The name of the default entity container. When the <c>defaultContainerName</c> is set through this method, the property becomes read-only.</param>
+        <param name="defaultContainerName">The name of the default entity container. When the <paramref name="defaultContainerName" /> is set through this method, the property becomes read-only.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Objects.ObjectContext" /> class with a given connection and entity container name.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="connection" /> is <see langword="null" />.</exception>
@@ -182,7 +182,7 @@
       </Parameters>
       <Docs>
         <param name="connectionString">The connection string, which also provides access to the metadata information.</param>
-        <param name="defaultContainerName">The name of the default entity container. When the <c>defaultContainerName</c> is set through this method, the property becomes read-only.</param>
+        <param name="defaultContainerName">The name of the default entity container. When the <paramref name="defaultContainerName" /> is set through this method, the property becomes read-only.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Objects.ObjectContext" /> class with a given connection string and entity container name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -329,7 +329,7 @@
       <Docs>
         <typeparam name="TEntity">The entity type of the object.</typeparam>
         <param name="entitySetName">The name of the entity set to which the object belongs.</param>
-        <param name="currentEntity">The detached object that has property updates to apply to the original object. The entity key of <c>currentEntity</c> must match the <see cref="P:System.Data.Objects.ObjectStateEntry.EntityKey" /> property of an entry in the <see cref="T:System.Data.Objects.ObjectContext" />.</param>
+        <param name="currentEntity">The detached object that has property updates to apply to the original object. The entity key of <paramref name="currentEntity" /> must match the <see cref="P:System.Data.Objects.ObjectStateEntry.EntityKey" /> property of an entry in the <see cref="T:System.Data.Objects.ObjectContext" />.</param>
         <summary>Copies the scalar values from the supplied object into the object in the <see cref="T:System.Data.Objects.ObjectContext" /> that has the same key.</summary>
         <returns>The updated object.</returns>
         <remarks>
@@ -390,7 +390,7 @@
       <Docs>
         <typeparam name="TEntity">The type of the entity object.</typeparam>
         <param name="entitySetName">The name of the entity set to which the object belongs.</param>
-        <param name="originalEntity">The detached object that has original values to apply to the object. The entity key of <c>originalEntity</c> must match the <see cref="P:System.Data.Objects.ObjectStateEntry.EntityKey" /> property of an entry in the <see cref="T:System.Data.Objects.ObjectContext" />.</param>
+        <param name="originalEntity">The detached object that has original values to apply to the object. The entity key of <paramref name="originalEntity" /> must match the <see cref="P:System.Data.Objects.ObjectStateEntry.EntityKey" /> property of an entry in the <see cref="T:System.Data.Objects.ObjectContext" />.</param>
         <summary>Copies the scalar values from the supplied object into set of original values for the object in the <see cref="T:System.Data.Objects.ObjectContext" /> that has the same key.</summary>
         <returns>The updated object.</returns>
         <remarks>
@@ -1246,7 +1246,7 @@
         <Parameter Name="entity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="entity">Object to be detached. Only the <c>entity</c> is removed; if there are any related objects that are being tracked by the same <see cref="T:System.Data.Objects.ObjectStateManager" />, those will not be detached automatically.</param>
+        <param name="entity">Object to be detached. Only the <paramref name="entity" /> is removed; if there are any related objects that are being tracked by the same <see cref="T:System.Data.Objects.ObjectStateManager" />, those will not be detached automatically.</param>
         <summary>Removes the object from the object context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

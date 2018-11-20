@@ -334,9 +334,9 @@
         <Parameter Name="pmkObjectName" Type="System.Runtime.InteropServices.ComTypes.IMoniker" />
       </Parameters>
       <Docs>
-        <param name="grfFlags">Specifies whether the Running Object Table's (ROT) reference to <c>punkObject</c> is weak or strong, and controls access to the object through its entry in the ROT.</param>
+        <param name="grfFlags">Specifies whether the Running Object Table's (ROT) reference to <paramref name="punkObject" /> is weak or strong, and controls access to the object through its entry in the ROT.</param>
         <param name="punkObject">A reference to the object being registered as running.</param>
-        <param name="pmkObjectName">A reference to the moniker that identifies <c>punkObject</c>.</param>
+        <param name="pmkObjectName">A reference to the moniker that identifies <paramref name="punkObject" />.</param>
         <summary>Registers that the supplied object has entered the running state.</summary>
         <returns>A value that can be used to identify this ROT entry in subsequent calls to <see cref="M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.Revoke(System.Int32)" /> or <see cref="M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.NoteChangeTime(System.Int32,System.Runtime.InteropServices.ComTypes.FILETIME@)" />.</returns>
         <remarks>

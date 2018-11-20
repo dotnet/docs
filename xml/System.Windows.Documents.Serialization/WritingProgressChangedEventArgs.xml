@@ -50,7 +50,7 @@
       </Parameters>
       <Docs>
         <param name="writingLevel">An enumeration value that specifies the scope of the progress changed event such as for an entire multiple document sequence, a single document, or a single page.</param>
-        <param name="number">Based on the scope defined by <c>writingLevel</c>, the number of documents or the number of pages that have been written.</param>
+        <param name="number">Based on the scope defined by <paramref name="writingLevel" />, the number of documents or the number of pages that have been written.</param>
         <param name="progressPercentage">The percentage of data that has been written.</param>
         <param name="state">The user-supplied object that identifies the write operation.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs" /> class.</summary>

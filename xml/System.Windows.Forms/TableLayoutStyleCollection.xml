@@ -265,7 +265,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.ICollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="startIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="startIndex">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>For a description of this method, see the <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -503,7 +503,7 @@
         <Parameter Name="style" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>style</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="style" /> should be inserted.</param>
         <param name="style">The <see cref="T:System.Object" /> to insert into the <see cref="T:System.Collections.IList" />.</param>
         <summary>For a description of this method, see the <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" /> method.</summary>
         <remarks>

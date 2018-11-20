@@ -81,7 +81,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the values copied from <see cref="T:System.Windows.Forms.InputLanguageCollection" />.</param>
-        <param name="index">The index in <c>array</c> where copying begins.</param>
+        <param name="index">The index in <paramref name="array" /> where copying begins.</param>
         <summary>Copies the <see cref="T:System.Windows.Forms.InputLanguageCollection" /> values to a one-dimensional <see cref="T:System.Array" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

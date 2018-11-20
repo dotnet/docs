@@ -188,8 +188,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The buffer to write to.</param>
-        <param name="offset">The starting position from which to write in <c>buffer</c>.</param>
-        <param name="count">The number of bytes to be written to the <c>buffer</c>.</param>
+        <param name="offset">The starting position from which to write in <paramref name="buffer" />.</param>
+        <param name="count">The number of bytes to be written to the <paramref name="buffer" />.</param>
         <summary>Writes an XML fragment to the underlying stream of the writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

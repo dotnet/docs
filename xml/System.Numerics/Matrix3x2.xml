@@ -953,7 +953,7 @@
       <Docs>
         <param name="matrix1">The first matrix.</param>
         <param name="matrix2">The second matrix.</param>
-        <param name="amount">The relative weighting of <c>matrix2</c>.</param>
+        <param name="amount">The relative weighting of <paramref name="matrix2" />.</param>
         <summary>Performs a linear interpolation from one matrix to a second matrix based on a value that specifies the weighting of the second matrix.</summary>
         <returns>The interpolated matrix.</returns>
         <remarks>To be added.</remarks>

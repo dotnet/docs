@@ -146,7 +146,7 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The serialization information necessary to reconstruct the <see cref="T:System.ServiceModel.FaultException" /> object from the <c>context</c>.</param>
+        <param name="info">The serialization information necessary to reconstruct the <see cref="T:System.ServiceModel.FaultException" /> object from the <paramref name="context" />.</param>
         <param name="context">The stream from which to reconstruct the <see cref="T:System.ServiceModel.FaultException" /> object.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultException`1" /> class using the specified serialization information and context when deserializing a stream into a <see cref="T:System.ServiceModel.FaultException" /> object.</summary>
         <remarks>To be added.</remarks>

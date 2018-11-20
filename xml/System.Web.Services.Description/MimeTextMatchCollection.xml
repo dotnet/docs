@@ -238,7 +238,7 @@
         <Parameter Name="match" Type="System.Web.Services.Description.MimeTextMatch" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert the <c>match</c> parameter.</param>
+        <param name="index">The zero-based index at which to insert the <paramref name="match" /> parameter.</param>
         <param name="match">The <see cref="T:System.Web.Services.Description.MimeTextMatch" /> to add to the collection.</param>
         <summary>Adds the specified <see cref="T:System.Web.Services.Description.MimeTextMatch" /> to the <see cref="T:System.Web.Services.Description.MimeTextMatchCollection" /> at the specified index.</summary>
         <remarks>

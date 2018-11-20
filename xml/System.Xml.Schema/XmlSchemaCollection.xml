@@ -725,7 +725,7 @@ schemaColl.Add("urn:author", "names.xsd");
       </Parameters>
       <Docs>
         <param name="array">The array to copy the objects to.</param>
-        <param name="index">The index in <c>array</c> where copying will begin.</param>
+        <param name="index">The index in <paramref name="array" /> where copying will begin.</param>
         <summary>Copies all the <see langword="XmlSchema" /> objects from this collection into the given array starting at the given index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -974,7 +974,7 @@ schemaColl.Add("urn:author", "names.xsd");
       </Parameters>
       <Docs>
         <param name="array">The array to copy the objects to.</param>
-        <param name="index">The index in <c>array</c> where copying will begin.</param>
+        <param name="index">The index in <paramref name="array" /> where copying will begin.</param>
         <summary>For a description of this member, see <see cref="M:System.Xml.Schema.XmlSchemaCollection.CopyTo(System.Xml.Schema.XmlSchema[],System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -179,7 +179,7 @@
       </Parameters>
       <Docs>
         <param name="array">The array into which copies of the <see cref="T:System.Security.AccessControl.GenericAce" /> objects contained by the current <see cref="T:System.Security.AccessControl.GenericAcl" /> are placed.</param>
-        <param name="index">The zero-based index of <c>array</c> where the copying begins.</param>
+        <param name="index">The zero-based index of <paramref name="array" /> where the copying begins.</param>
         <summary>Copies each <see cref="T:System.Security.AccessControl.GenericAce" /> of the current <see cref="T:System.Security.AccessControl.GenericAcl" /> into the specified array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -466,7 +466,7 @@
       </Parameters>
       <Docs>
         <param name="array">The array into which copies of the <see cref="T:System.Security.AccessControl.GenericAce" /> objects contained by the current <see cref="T:System.Security.AccessControl.GenericAcl" /> are placed.</param>
-        <param name="index">The zero-based index of <c>array</c> where the copying begins.</param>
+        <param name="index">The zero-based index of <paramref name="array" /> where the copying begins.</param>
         <summary>Copies each <see cref="T:System.Security.AccessControl.GenericAce" /> of the current <see cref="T:System.Security.AccessControl.GenericAcl" /> into the specified array.</summary>
         <remarks>To be added.</remarks>
       </Docs>

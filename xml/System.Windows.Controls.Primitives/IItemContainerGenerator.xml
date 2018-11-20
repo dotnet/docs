@@ -196,7 +196,7 @@
         <Parameter Name="container" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="container">The container to prepare. Normally, <c>container</c> is the result of the previous call to <see cref="Overload:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext" />.</param>
+        <param name="container">The container to prepare. Normally, <paramref name="container" /> is the result of the previous call to <see cref="Overload:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext" />.</param>
         <summary>Prepares the specified element as the container for the corresponding item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -231,8 +231,8 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="position">The <see cref="T:System.Int32" /> index of the element to remove. <c>position</c> must refer to a previously generated (realized) item, which means its offset must be zero.</param>
-        <param name="count">The <see cref="T:System.Int32" /> number of elements to remove, starting at <c>position</c>.</param>
+        <param name="position">The <see cref="T:System.Int32" /> index of the element to remove. <paramref name="position" /> must refer to a previously generated (realized) item, which means its offset must be zero.</param>
+        <param name="count">The <see cref="T:System.Int32" /> number of elements to remove, starting at <paramref name="position" />.</param>
         <summary>Removes one or more generated (realized) items.</summary>
         <remarks>To be added.</remarks>
       </Docs>

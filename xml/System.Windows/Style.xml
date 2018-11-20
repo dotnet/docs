@@ -317,7 +317,7 @@
       </Parameters>
       <Docs>
         <param name="name">The name to register.</param>
-        <param name="scopedElement">The object to map to the specified <c>name</c>.</param>
+        <param name="scopedElement">The object to map to the specified <paramref name="name" />.</param>
         <summary>Registers a new name-object pair in the current namescope.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -351,7 +351,7 @@
       </Parameters>
       <Docs>
         <param name="visual">The visual element to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>visual</c> element.</param>
+        <param name="printTicket">The default print preferences for the <paramref name="visual" /> element.</param>
         <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element together with an associated print ticket to the serialization stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -394,7 +394,7 @@
       </Parameters>
       <Docs>
         <param name="visual">The visual element to write to the serialization <see cref="T:System.IO.Stream" />.</param>
-        <param name="printTicket">The default print preferences for the <c>visual</c> element.</param>
+        <param name="printTicket">The default print preferences for the <paramref name="visual" /> element.</param>
         <param name="userState">A caller-specified object to identify the asynchronous write operation.</param>
         <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element together with an associated print ticket and identifier to the serialization stream.</summary>
         <remarks>

@@ -1057,7 +1057,7 @@
       </Parameters>
       <Docs>
         <param name="focus">A value from 0 through 1 that specifies the center of the gradient (the point where the gradient is composed of only the ending color).</param>
-        <param name="scale">A value from 0 through1 that specifies how fast the colors falloff from the starting color to <c>focus</c> (ending color)</param>
+        <param name="scale">A value from 0 through1 that specifies how fast the colors falloff from the starting color to <paramref name="focus" /> (ending color)</param>
         <summary>Creates a linear gradient with a center color and a linear falloff to a single color on both ends.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1171,7 +1171,7 @@
       </Parameters>
       <Docs>
         <param name="focus">A value from 0 through 1 that specifies the center of the gradient (the point where the gradient is composed of only the ending color).</param>
-        <param name="scale">A value from 0 through 1 that specifies how fast the colors falloff from the <c>focus</c>.</param>
+        <param name="scale">A value from 0 through 1 that specifies how fast the colors falloff from the <paramref name="focus" />.</param>
         <summary>Creates a gradient falloff based on a bell-shaped curve.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

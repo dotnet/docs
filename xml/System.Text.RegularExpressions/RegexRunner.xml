@@ -1353,8 +1353,8 @@
       <Docs>
         <param name="regex">An instance of the regular expression engine.</param>
         <param name="text">The text to scan for a pattern match.</param>
-        <param name="textbeg">The zero-based starting position in <c>text</c> at which the regular expression engine scans for a match.</param>
-        <param name="textend">The zero-based ending position in <c>text</c> at which the regular expression engine scans for a match.</param>
+        <param name="textbeg">The zero-based starting position in <paramref name="text" /> at which the regular expression engine scans for a match.</param>
+        <param name="textend">The zero-based ending position in <paramref name="text" /> at which the regular expression engine scans for a match.</param>
         <param name="textstart">The zero-based starting position to scan for this match.</param>
         <param name="prevlen">The number of characters in the previous match.</param>
         <param name="quick">
@@ -1404,8 +1404,8 @@
       <Docs>
         <param name="regex">An instance of the regular expression engine.</param>
         <param name="text">The text to scan for a pattern match.</param>
-        <param name="textbeg">The zero-based starting position in <c>text</c> at which the regular expression engine scans for a match.</param>
-        <param name="textend">The zero-based ending position in <c>text</c> at which the regular expression engine scans for a match.</param>
+        <param name="textbeg">The zero-based starting position in <paramref name="text" /> at which the regular expression engine scans for a match.</param>
+        <param name="textend">The zero-based ending position in <paramref name="text" /> at which the regular expression engine scans for a match.</param>
         <param name="textstart">The zero-based starting position to scan for this match.</param>
         <param name="prevlen">The number of characters in the previous match.</param>
         <param name="quick">

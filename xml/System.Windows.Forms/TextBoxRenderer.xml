@@ -126,7 +126,7 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the text box.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the text box.</param>
         <param name="textBoxText">The <see cref="T:System.String" /> to draw in the text box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>textBoxText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="textBoxText" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TextBoxState" /> values that specifies the visual state of the text box.</param>
         <summary>Draws a text box control in the specified state and bounds, and with the specified text.</summary>
         <remarks>
@@ -180,8 +180,8 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the text box.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the text box.</param>
         <param name="textBoxText">The <see cref="T:System.String" /> to draw in the text box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>textBoxText</c>.</param>
-        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of <c>textBoxText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="textBoxText" />.</param>
+        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of <paramref name="textBoxText" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TextBoxState" /> values that specifies the visual state of the text box.</param>
         <summary>Draws a text box control in the specified state and bounds, and with the specified text and text bounds.</summary>
         <remarks>
@@ -230,7 +230,7 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the text box.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the text box.</param>
         <param name="textBoxText">The <see cref="T:System.String" /> to draw in the text box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>textBoxText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="textBoxText" />.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TextBoxState" /> values that specifies the visual state of the text box.</param>
         <summary>Draws a text box control in the specified state and bounds, and with the specified text and text formatting.</summary>
@@ -281,8 +281,8 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the text box.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the text box.</param>
         <param name="textBoxText">The <see cref="T:System.String" /> to draw in the text box.</param>
-        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>textBoxText</c>.</param>
-        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of <c>textBoxText</c>.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="textBoxText" />.</param>
+        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of <paramref name="textBoxText" />.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TextBoxState" /> values that specifies the visual state of the text box.</param>
         <summary>Draws a text box control in the specified state and bounds, and with the specified text, text bounds, and text formatting.</summary>

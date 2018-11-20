@@ -1334,7 +1334,7 @@
       </Parameters>
       <Docs>
         <param name="element">The object to make visible.</param>
-        <param name="rect">The rectangular region of the <c>element</c> to make visible.</param>
+        <param name="rect">The rectangular region of the <paramref name="element" /> to make visible.</param>
         <param name="pageNumber">The number of the page to be viewed.</param>
         <summary>Responds to the <see cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnBringIntoView(System.Windows.DependencyObject,System.Windows.Rect,System.Int32)" /> method from the <see cref="T:System.Windows.Controls.Primitives.DocumentViewerBase" /> implementation.</summary>
         <remarks>

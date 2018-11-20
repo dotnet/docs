@@ -388,7 +388,7 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the image.</param>
         <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> in which the image is drawn.</param>
         <param name="imageList">An <see cref="T:System.Windows.Forms.ImageList" /> that contains the <see cref="T:System.Drawing.Image" /> to draw.</param>
-        <param name="imageIndex">The index of the <see cref="T:System.Drawing.Image" /> within <c>imageList</c> to draw.</param>
+        <param name="imageIndex">The index of the <see cref="T:System.Drawing.Image" /> within <paramref name="imageList" /> to draw.</param>
         <summary>Draws the image from the specified <see cref="T:System.Windows.Forms.ImageList" /> within the specified bounds.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -426,7 +426,7 @@
         <Parameter Name="childControl" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> used to draw the background of the parent of <c>childControl</c>. This object typically belongs to the child control.</param>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> used to draw the background of the parent of <paramref name="childControl" />. This object typically belongs to the child control.</param>
         <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> in which to draw the parent control's background. This rectangle should be inside the child control’s bounds.</param>
         <param name="childControl">The control whose parent's background will be drawn.</param>
         <summary>Draws the background of a control's parent in the specified area.</summary>

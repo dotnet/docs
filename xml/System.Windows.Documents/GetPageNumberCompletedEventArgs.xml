@@ -44,12 +44,12 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="contentPosition">The <c>contentPosition</c> parameter passed to <see cref="M:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync(System.Windows.Documents.ContentPosition)" />.</param>
-        <param name="pageNumber">The page number where the <c>contentPosition</c> appears.</param>
+        <param name="contentPosition">The <paramref name="contentPosition" /> parameter passed to <see cref="M:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync(System.Windows.Documents.ContentPosition)" />.</param>
+        <param name="pageNumber">The page number where the <paramref name="contentPosition" /> appears.</param>
         <param name="error">The exception that occurred during the asynchronous operation; or NULL if there were no errors.</param>
         <param name="cancelled">
           <see langword="true" /> if the asynchronous operation was canceled; otherwise, <see langword="false" />.</param>
-        <param name="userState">The unique <c>userState</c> parameter passed to <see cref="M:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync(System.Windows.Documents.ContentPosition)" />.</param>
+        <param name="userState">The unique <paramref name="userState" /> parameter passed to <see cref="M:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync(System.Windows.Documents.ContentPosition)" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.GetPageNumberCompletedEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

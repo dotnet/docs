@@ -220,7 +220,7 @@
         <param name="context">An object that provides contextual information.</param>
         <param name="culture">The language and culture that are used during the conversion.</param>
         <param name="value">The object you want to convert.</param>
-        <param name="destinationType">The type that <c>value</c> is converted to.</param>
+        <param name="destinationType">The type that <paramref name="value" /> is converted to.</param>
         <summary>Converts a <see cref="T:System.Windows.Media.Color" /> to an object of the specified type.</summary>
         <returns>The new <see cref="T:System.Object" /> of the designated type.</returns>
         <remarks>

@@ -367,7 +367,7 @@
         <Parameter Name="userData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="userDataKey">The member of <c>userData</c> to track.</param>
+        <param name="userDataKey">The member of <paramref name="userData" /> to track.</param>
         <param name="userData">The data to track.</param>
         <summary>Invokes the track method for the associated <see cref="P:System.Workflow.ComponentModel.ActivityExecutionContext.Activity" />.</summary>
         <remarks>

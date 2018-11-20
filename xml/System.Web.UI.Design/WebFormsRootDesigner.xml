@@ -127,8 +127,8 @@
       </Parameters>
       <Docs>
         <param name="newControl">The control to add to the Web Forms page.</param>
-        <param name="referenceControl">The control relative to which <c>newControl</c> is added.</param>
-        <param name="location">A <see cref="T:System.Web.UI.Design.ControlLocation" /> value that indicates the location for <c>newControl</c> relative to <c>referenceControl</c>.</param>
+        <param name="referenceControl">The control relative to which <paramref name="newControl" /> is added.</param>
+        <param name="location">A <see cref="T:System.Web.UI.Design.ControlLocation" /> value that indicates the location for <paramref name="newControl" /> relative to <paramref name="referenceControl" />.</param>
         <summary>When overridden in a derived class, adds a Web server control to the Web Forms page.</summary>
         <returns>The ID of the control that was added.</returns>
         <remarks>
@@ -480,8 +480,8 @@
       </Parameters>
       <Docs>
         <param name="control">The control to provide the view and tag for.</param>
-        <param name="view">When the <see cref="M:System.Web.UI.Design.WebFormsRootDesigner.GetControlViewAndTag(System.Web.UI.Control,System.Web.UI.Design.IControlDesignerView@,System.Web.UI.Design.IControlDesignerTag@)" /> method returns, <c>view</c> contains an <see langword="IControlDesignerView" /> object that provides access to the visual representation and content of a control at design time. <c>view</c> is passed uninitialized.</param>
-        <param name="tag">When the <see cref="M:System.Web.UI.Design.WebFormsRootDesigner.GetControlViewAndTag(System.Web.UI.Control,System.Web.UI.Design.IControlDesignerView@,System.Web.UI.Design.IControlDesignerTag@)" /> method returns, <c>tag</c> contains an <see langword="IControlDesignerTag" /> object that provides access to the HTML element for the control's control designer. <c>tag</c> is passed uninitialized.</param>
+        <param name="view">When the <see cref="M:System.Web.UI.Design.WebFormsRootDesigner.GetControlViewAndTag(System.Web.UI.Control,System.Web.UI.Design.IControlDesignerView@,System.Web.UI.Design.IControlDesignerTag@)" /> method returns, <paramref name="view" /> contains an <see langword="IControlDesignerView" /> object that provides access to the visual representation and content of a control at design time. <paramref name="view" /> is passed uninitialized.</param>
+        <param name="tag">When the <see cref="M:System.Web.UI.Design.WebFormsRootDesigner.GetControlViewAndTag(System.Web.UI.Control,System.Web.UI.Design.IControlDesignerView@,System.Web.UI.Design.IControlDesignerTag@)" /> method returns, <paramref name="tag" /> contains an <see langword="IControlDesignerTag" /> object that provides access to the HTML element for the control's control designer. <paramref name="tag" /> is passed uninitialized.</param>
         <summary>When overridden in a derived class, returns both the current design-time view and the HTML markup for the specified control.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>

@@ -261,7 +261,7 @@
       </Parameters>
       <Docs>
         <param name="elements">A one-dimensional array that is the destination of the elements copied from collection. The array must have zero-based</param>
-        <param name="start">The zero-based index in the <c>elements</c> array at which copying begins.</param>
+        <param name="start">The zero-based index in the <paramref name="elements" /> array at which copying begins.</param>
         <summary>Copies the entire collection to a compatible one-dimensional array, starting at the specified index of the target array. This method cannot be inherited.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

@@ -142,8 +142,8 @@
         <Parameter Name="gesture" Type="System.Windows.Input.InputGesture" />
       </Parameters>
       <Docs>
-        <param name="command">The command to associate with <c>gesture</c>.</param>
-        <param name="gesture">The input gesture to associate with <c>command</c>.</param>
+        <param name="command">The command to associate with <paramref name="gesture" />.</param>
+        <param name="gesture">The input gesture to associate with <paramref name="command" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputBinding" /> class with the specified command and input gesture.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

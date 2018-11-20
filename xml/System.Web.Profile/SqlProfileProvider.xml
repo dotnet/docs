@@ -385,7 +385,7 @@ aspnet_regsql.exe -A p
         <param name="authenticationOption">One of the <see cref="T:System.Web.Profile.ProfileAuthenticationOption" /> values, specifying whether anonymous, authenticated, or both types of profiles are returned.</param>
         <param name="usernameToMatch">The user name for which to search.</param>
         <param name="userInactiveSinceDate">A <see cref="T:System.DateTime" /> that identifies which user profiles are considered inactive. If the <see cref="P:System.Web.Profile.ProfileInfo.LastActivityDate" /> of a user profile occurs on or before this date and time, the profile is considered inactive.</param>
-        <param name="pageIndex">The index of the page of results to return. <c>pageIndex</c> is zero-based.</param>
+        <param name="pageIndex">The index of the page of results to return. <paramref name="pageIndex" /> is zero-based.</param>
         <param name="pageSize">The size of the page of results to return.</param>
         <param name="totalRecords">When this method returns, contains an integer that identifies the total number of profiles. This parameter is passed uninitialized.</param>
         <summary>Retrieves profile information for profiles in which the last activity date occurred on or before the specified date and time and the user name for the profile matches the specified name.</summary>
@@ -455,7 +455,7 @@ aspnet_regsql.exe -A p
       <Docs>
         <param name="authenticationOption">One of the <see cref="T:System.Web.Profile.ProfileAuthenticationOption" /> values, specifying whether anonymous, authenticated, or both types of profiles are returned.</param>
         <param name="usernameToMatch">The user name for which to search.</param>
-        <param name="pageIndex">The index of the page of results to return. <c>pageIndex</c> is zero-based.</param>
+        <param name="pageIndex">The index of the page of results to return. <paramref name="pageIndex" /> is zero-based.</param>
         <param name="pageSize">The size of the page of results to return.</param>
         <param name="totalRecords">When this method returns, contains an integer that identifies the total number of profiles. This parameter is passed uninitialized.</param>
         <summary>Retrieves profile information for profiles in which the user name matches the specified name.</summary>
@@ -525,7 +525,7 @@ aspnet_regsql.exe -A p
       <Docs>
         <param name="authenticationOption">One of the <see cref="T:System.Web.Profile.ProfileAuthenticationOption" /> values, specifying whether anonymous, authenticated, or both types of profiles are returned.</param>
         <param name="userInactiveSinceDate">A <see cref="T:System.DateTime" /> that identifies which user profiles are considered inactive. If the <see cref="P:System.Web.Profile.ProfileInfo.LastActivityDate" /> of a user profile occurs on or before this date and time, the profile is considered inactive.</param>
-        <param name="pageIndex">The index of the page of results to return. <c>pageIndex</c> is zero-based.</param>
+        <param name="pageIndex">The index of the page of results to return. <paramref name="pageIndex" /> is zero-based.</param>
         <param name="pageSize">The size of the page of results to return.</param>
         <param name="totalRecords">When this method returns, contains an integer that identifies the total number of profiles. This parameter is passed uninitialized.</param>
         <summary>Retrieves user profile data for profiles in which the last activity date occurred on or before the specified date and time.</summary>
@@ -585,7 +585,7 @@ aspnet_regsql.exe -A p
       </Parameters>
       <Docs>
         <param name="authenticationOption">One of the <see cref="T:System.Web.Profile.ProfileAuthenticationOption" /> values, specifying whether anonymous, authenticated, or both types of profiles are returned.</param>
-        <param name="pageIndex">The index of the page of results to return. <c>pageIndex</c> is zero-based.</param>
+        <param name="pageIndex">The index of the page of results to return. <paramref name="pageIndex" /> is zero-based.</param>
         <param name="pageSize">The size of the page of results to return.</param>
         <param name="totalRecords">When this method returns, contains an integer that identifies the total number of profiles. This parameter is passed uninitialized.</param>
         <summary>Retrieves user profile data for profiles in the data source.</summary>

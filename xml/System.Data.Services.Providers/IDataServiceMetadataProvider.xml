@@ -217,7 +217,7 @@
       </Parameters>
       <Docs>
         <param name="name">Name of the <see cref="T:System.Data.Services.Providers.ResourceSet" /> to resolve.</param>
-        <param name="resourceSet">Returns the resource set or a <see langword="null" /> value if a resource set with the given <c>name</c> is not found.</param>
+        <param name="resourceSet">Returns the resource set or a <see langword="null" /> value if a resource set with the given <paramref name="name" /> is not found.</param>
         <summary>Tries to get a resource set based on the specified name.</summary>
         <returns>
           <see langword="true" /> when resource set with the given <paramref name="name" /> is found; otherwise <see langword="false" />.</returns>
@@ -246,7 +246,7 @@
       </Parameters>
       <Docs>
         <param name="name">Name of the type to resolve.</param>
-        <param name="resourceType">Returns the resource type or a <see langword="null" /> value if a resource type with the given <c>name</c> is not found.</param>
+        <param name="resourceType">Returns the resource type or a <see langword="null" /> value if a resource type with the given <paramref name="name" /> is not found.</param>
         <summary>Tries to get a resource type based on the specified name.</summary>
         <returns>
           <see langword="true" /> when resource type with the given <paramref name="name" /> is found; otherwise <see langword="false" />.</returns>
@@ -275,7 +275,7 @@
       </Parameters>
       <Docs>
         <param name="name">Name of the service operation to resolve.</param>
-        <param name="serviceOperation">Returns the service operation or a <see langword="null" /> value if a service operation with the given <c>name</c> is not found.</param>
+        <param name="serviceOperation">Returns the service operation or a <see langword="null" /> value if a service operation with the given <paramref name="name" /> is not found.</param>
         <summary>Tries to get a service operation based on the specified name.</summary>
         <returns>
           <see langword="true" /> when service operation with the given <paramref name="name" /> is found; otherwise <see langword="false" />.</returns>

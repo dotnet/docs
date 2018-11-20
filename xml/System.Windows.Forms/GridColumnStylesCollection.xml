@@ -1053,7 +1053,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
         <param name="value">The object to insert into the collection.</param>
         <summary>This method is not supported by this control.</summary>
         <remarks>To be added.</remarks>

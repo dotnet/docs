@@ -160,7 +160,7 @@
         <param name="isDS">
           <see langword="true" /> if the new security descriptor is associated with a directory object.</param>
         <param name="binaryForm">The array of byte values from which to create the new <see cref="T:System.Security.AccessControl.CommonSecurityDescriptor" /> object.</param>
-        <param name="offset">The offset in the <c>binaryForm</c> array at which to begin copying.</param>
+        <param name="offset">The offset in the <paramref name="binaryForm" /> array at which to begin copying.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.CommonSecurityDescriptor" /> class from the specified array of byte values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

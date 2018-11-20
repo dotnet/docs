@@ -421,8 +421,8 @@
       </Parameters>
       <Docs>
         <param name="bytes">An array of bytes to encode.</param>
-        <param name="offset">The position in the <c>bytes</c> array at which to begin encoding.</param>
-        <param name="count">The number of items in the <c>bytes</c> array to encode.</param>
+        <param name="offset">The position in the <paramref name="bytes" /> array at which to begin encoding.</param>
+        <param name="count">The number of items in the <paramref name="bytes" /> array to encode.</param>
         <summary>Encodes an array of characters that are not allowed in a URL into a hexadecimal character-entity equivalent.</summary>
         <returns>An array of encoded characters.</returns>
         <remarks>

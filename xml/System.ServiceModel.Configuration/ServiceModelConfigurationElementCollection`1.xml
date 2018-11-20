@@ -183,7 +183,7 @@
       </Parameters>
       <Docs>
         <param name="array">The <see cref="T:System.Array" /> to copy the configuration elements to.</param>
-        <param name="start">The zero-based relative index in <c>array</c> where copying begins.</param>
+        <param name="start">The zero-based relative index in <paramref name="array" /> where copying begins.</param>
         <summary>Copies the configuration elements stored in this collection to an <see cref="T:System.Array" /> object, beginning at the specified index location in the <see cref="T:System.Array" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

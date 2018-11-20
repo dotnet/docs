@@ -268,8 +268,8 @@
         <Parameter Name="prosodyNumber2" Type="System.Speech.Synthesis.TtsEngine.ProsodyNumber" />
       </Parameters>
       <Docs>
-        <param name="prosodyNumber1">The <see cref="T:System.Speech.Synthesis.TtsEngine.ProsodyNumber" /> object to compare to <c>prosodyNumber2</c>.</param>
-        <param name="prosodyNumber2">The  <see cref="T:System.Speech.Synthesis.TtsEngine.ProsodyNumber" /> object to compare to <c>prosodyNumber1</c>.</param>
+        <param name="prosodyNumber1">The <see cref="T:System.Speech.Synthesis.TtsEngine.ProsodyNumber" /> object to compare to <paramref name="prosodyNumber2" />.</param>
+        <param name="prosodyNumber2">The  <see cref="T:System.Speech.Synthesis.TtsEngine.ProsodyNumber" /> object to compare to <paramref name="prosodyNumber1" />.</param>
         <summary>Determines whether two instances of <c>ProsodyNumber</c> are equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="prosodyNumber1" /> is the same as <paramref name="prosodyNumber2" />;  otherwise, <see langword="false" />.</returns>
@@ -299,8 +299,8 @@
         <Parameter Name="prosodyNumber2" Type="System.Speech.Synthesis.TtsEngine.ProsodyNumber" />
       </Parameters>
       <Docs>
-        <param name="prosodyNumber1">The <see cref="T:System.Speech.Synthesis.TtsEngine.ProsodyNumber" /> object to compare to <c>prosodyNumber2</c>.</param>
-        <param name="prosodyNumber2">The <see cref="T:System.Speech.Synthesis.TtsEngine.ProsodyNumber" /> object to compare to <c>prosodyNumber1</c>.</param>
+        <param name="prosodyNumber1">The <see cref="T:System.Speech.Synthesis.TtsEngine.ProsodyNumber" /> object to compare to <paramref name="prosodyNumber2" />.</param>
+        <param name="prosodyNumber2">The <see cref="T:System.Speech.Synthesis.TtsEngine.ProsodyNumber" /> object to compare to <paramref name="prosodyNumber1" />.</param>
         <summary>Determines whether two instances of <c>ProsodyNumber</c> are not equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="prosodyNumber1" /> is different from <paramref name="prosodyNumber2" />; otherwise, <paramref name="false" />.</returns>

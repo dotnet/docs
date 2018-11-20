@@ -338,7 +338,7 @@ schemaSet2.Add(schemaSet1);
         <Parameter Name="schemaUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="targetNamespace">The schema <c>targetNamespace</c> property, or <see langword="null" /> to use the <c>targetNamespace</c> specified in the schema.</param>
+        <param name="targetNamespace">The schema <paramref name="targetNamespace" /> property, or <see langword="null" /> to use the <paramref name="targetNamespace" /> specified in the schema.</param>
         <param name="schemaUri">The URL that specifies the schema to load.</param>
         <summary>Adds the XML Schema definition language (XSD) schema at the URL specified to the <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
         <returns>An <see cref="T:System.Xml.Schema.XmlSchema" /> object if the schema is valid. If the schema is not valid and a <see cref="T:System.Xml.Schema.ValidationEventHandler" /> is specified, then <see langword="null" /> is returned and the appropriate validation event is raised. Otherwise, an <see cref="T:System.Xml.Schema.XmlSchemaException" /> is thrown.</returns>
@@ -477,7 +477,7 @@ schemaSet.Add("http://www.contoso.com/books", "http://www.contoso.com/books.xsd"
         <Parameter Name="schemaDocument" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="targetNamespace">The schema <c>targetNamespace</c> property, or <see langword="null" /> to use the <c>targetNamespace</c> specified in the schema.</param>
+        <param name="targetNamespace">The schema <paramref name="targetNamespace" /> property, or <see langword="null" /> to use the <paramref name="targetNamespace" /> specified in the schema.</param>
         <param name="schemaDocument">The <see cref="T:System.Xml.XmlReader" /> object.</param>
         <summary>Adds the XML Schema definition language (XSD) schema contained in the <see cref="T:System.Xml.XmlReader" /> to the <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
         <returns>An <see cref="T:System.Xml.Schema.XmlSchema" /> object if the schema is valid. If the schema is not valid and a <see cref="T:System.Xml.Schema.ValidationEventHandler" /> is specified, then <see langword="null" /> is returned and the appropriate validation event is raised. Otherwise, an <see cref="T:System.Xml.Schema.XmlSchemaException" /> is thrown.</returns>
@@ -676,7 +676,7 @@ schemaSet.Compile();
         <Parameter Name="targetNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="targetNamespace">The schema <c>targetNamespace</c> property.</param>
+        <param name="targetNamespace">The schema <paramref name="targetNamespace" /> property.</param>
         <summary>Indicates whether an XML Schema definition language (XSD) schema with the specified target namespace URI is in the <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
         <returns>
           <see langword="true" /> if a schema with the specified target namespace URI is in the <see cref="T:System.Xml.Schema.XmlSchemaSet" />; otherwise, <see langword="false" />.</returns>
@@ -1421,7 +1421,7 @@ foreach (XmlSchema schema in schemaSet.Schemas())
         <Parameter Name="targetNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="targetNamespace">The schema <c>targetNamespace</c> property.</param>
+        <param name="targetNamespace">The schema <paramref name="targetNamespace" /> property.</param>
         <summary>Returns a collection of all the XML Schema definition language (XSD) schemas in the <see cref="T:System.Xml.Schema.XmlSchemaSet" /> that belong to the given namespace.</summary>
         <returns>An <see cref="T:System.Collections.ICollection" /> object containing all the schemas that have been added to the <see cref="T:System.Xml.Schema.XmlSchemaSet" /> that belong to the given namespace. If no schemas have been added to the <see cref="T:System.Xml.Schema.XmlSchemaSet" />, an empty <see cref="T:System.Collections.ICollection" /> object is returned.</returns>
         <remarks>

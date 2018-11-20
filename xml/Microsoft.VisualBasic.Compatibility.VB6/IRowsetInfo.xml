@@ -64,9 +64,9 @@
         <Parameter Name="prgPropertySets" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="cPropertyIDSets">The number of <see langword="DBPROPIDSET" /> structures in <c>rgPropertyIDSets</c>.</param>
+        <param name="cPropertyIDSets">The number of <see langword="DBPROPIDSET" /> structures in <paramref name="rgPropertyIDSets" />.</param>
         <param name="rgPropertyIDSets">An array of <see langword="DBPROPIDSET" /> structures.</param>
-        <param name="cPropertySets">A pointer to memory in which to return the number of <see langword="DBPROPSET" /> structures returned in <c>prgPropertySets</c>.</param>
+        <param name="cPropertySets">A pointer to memory in which to return the number of <see langword="DBPROPSET" /> structures returned in <paramref name="prgPropertySets" />.</param>
         <param name="prgPropertySets">A pointer to memory in which to return an array of <see langword="DBPROPSET" /> structures.</param>
         <summary>Returns the current settings of all properties supported by the rowset.</summary>
         <remarks>
@@ -105,7 +105,7 @@
       </Parameters>
       <Docs>
         <param name="iOrdinal">The bookmark or chapter column for which to get the related rowset.</param>
-        <param name="riid">The IID of the interface pointer to return in <c>referencedRowset</c>.</param>
+        <param name="riid">The IID of the interface pointer to return in <paramref name="referencedRowset" />.</param>
         <param name="referencedRowset">A pointer to memory in which to return an <see langword="IUnknown" /> interface pointer on the rowset that interprets values from this column.</param>
         <summary>Returns an interface pointer to the rowset to which a bookmark or chapter applies.</summary>
         <remarks>

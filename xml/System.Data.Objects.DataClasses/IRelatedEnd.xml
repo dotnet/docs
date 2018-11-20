@@ -62,7 +62,7 @@
         <Parameter Name="entity" Type="System.Data.Objects.DataClasses.IEntityWithRelationships" />
       </Parameters>
       <Docs>
-        <param name="entity">An object to add to the collection. <c>entity</c> must implement <see cref="T:System.Data.Objects.DataClasses.IEntityWithRelationships" />.</param>
+        <param name="entity">An object to add to the collection. <paramref name="entity" /> must implement <see cref="T:System.Data.Objects.DataClasses.IEntityWithRelationships" />.</param>
         <summary>Adds an object to the related end.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -146,7 +146,7 @@
         <Parameter Name="entity" Type="System.Data.Objects.DataClasses.IEntityWithRelationships" />
       </Parameters>
       <Docs>
-        <param name="entity">The object being attached. <c>entity</c> must implement <see cref="T:System.Data.Objects.DataClasses.IEntityWithRelationships" />.</param>
+        <param name="entity">The object being attached. <paramref name="entity" /> must implement <see cref="T:System.Data.Objects.DataClasses.IEntityWithRelationships" />.</param>
         <summary>Defines a relationship between two attached objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -455,7 +455,7 @@
         <Parameter Name="entity" Type="System.Data.Objects.DataClasses.IEntityWithRelationships" />
       </Parameters>
       <Docs>
-        <param name="entity">The object to remove from the collection. <c>entity</c> must implement <see cref="T:System.Data.Objects.DataClasses.IEntityWithRelationships" />.</param>
+        <param name="entity">The object to remove from the collection. <paramref name="entity" /> must implement <see cref="T:System.Data.Objects.DataClasses.IEntityWithRelationships" />.</param>
         <summary>Removes an object from the collection of objects at the related end.</summary>
         <returns>
           <see langword="true" /> if <paramref name="entity" /> was successfully removed, <see langword="false" /> if <paramref name="entity" /> was not part of the <see cref="T:System.Data.Objects.DataClasses.IRelatedEnd" />.</returns>

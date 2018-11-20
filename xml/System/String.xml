@@ -998,7 +998,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
       </Parameters>
       <Docs>
         <param name="c">A Unicode character.</param>
-        <param name="count">The number of times <c>c</c> occurs.</param>
+        <param name="count">The number of times <paramref name="c" /> occurs.</param>
         <summary>Initializes a new instance of the <see cref="T:System.String" /> class to the value indicated by a specified Unicode character repeated a specified number of times.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1056,8 +1056,8 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
       </Parameters>
       <Docs>
         <param name="value">A pointer to an array of Unicode characters.</param>
-        <param name="startIndex">The starting position within <c>value</c>.</param>
-        <param name="length">The number of characters within <c>value</c> to use.</param>
+        <param name="startIndex">The starting position within <paramref name="value" />.</param>
+        <param name="length">The number of characters within <paramref name="value" /> to use.</param>
         <summary>Initializes a new instance of the <see cref="T:System.String" /> class to the value indicated by a specified pointer to an array of Unicode characters, a starting character position within that array, and a length.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1116,8 +1116,8 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
       </Parameters>
       <Docs>
         <param name="value">An array of Unicode characters.</param>
-        <param name="startIndex">The starting position within <c>value</c>.</param>
-        <param name="length">The number of characters within <c>value</c> to use.</param>
+        <param name="startIndex">The starting position within <paramref name="value" />.</param>
+        <param name="length">The number of characters within <paramref name="value" /> to use.</param>
         <summary>Initializes a new instance of the <see cref="T:System.String" /> class to the value indicated by an array of Unicode characters, a starting character position within that array, and a length.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1177,8 +1177,8 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
       </Parameters>
       <Docs>
         <param name="value">A pointer to an array of 8-bit signed integers. The integers are interpreted using the current system code page encoding (that is, the encoding specified by <see cref="P:System.Text.Encoding.Default" />).</param>
-        <param name="startIndex">The starting position within <c>value</c>.</param>
-        <param name="length">The number of characters within <c>value</c> to use.</param>
+        <param name="startIndex">The starting position within <paramref name="value" />.</param>
+        <param name="length">The number of characters within <paramref name="value" /> to use.</param>
         <summary>Initializes a new instance of the <see cref="T:System.String" /> class to the value indicated by a specified pointer to an array of 8-bit signed integers, a starting position within that array, and a length.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1251,9 +1251,9 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
       </Parameters>
       <Docs>
         <param name="value">A pointer to an array of 8-bit signed integers.</param>
-        <param name="startIndex">The starting position within <c>value</c>.</param>
-        <param name="length">The number of characters within <c>value</c> to use.</param>
-        <param name="enc">An object that specifies how the array referenced by <c>value</c> is encoded. If <c>enc</c> is <see langword="null" />, ANSI encoding is assumed.</param>
+        <param name="startIndex">The starting position within <paramref name="value" />.</param>
+        <param name="length">The number of characters within <paramref name="value" /> to use.</param>
+        <param name="enc">An object that specifies how the array referenced by <paramref name="value" /> is encoded. If <paramref name="enc" /> is <see langword="null" />, ANSI encoding is assumed.</param>
         <summary>Initializes a new instance of the <see cref="T:System.String" /> class to the value indicated by a specified pointer to an array of 8-bit signed integers, a starting position within that array, a length, and an <see cref="T:System.Text.Encoding" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2041,9 +2041,9 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
       </Parameters>
       <Docs>
         <param name="strA">The first string to use in the comparison.</param>
-        <param name="indexA">The position of the substring within <c>strA</c>.</param>
+        <param name="indexA">The position of the substring within <paramref name="strA" />.</param>
         <param name="strB">The second string to use in the comparison.</param>
-        <param name="indexB">The position of the substring within <c>strB</c>.</param>
+        <param name="indexB">The position of the substring within <paramref name="strB" />.</param>
         <param name="length">The maximum number of characters in the substrings to compare.</param>
         <summary>Compares substrings of two specified <see cref="T:System.String" /> objects and returns an integer that indicates their relative position in the sort order.</summary>
         <returns>A 32-bit signed integer indicating the lexical relationship between the two comparands.  
@@ -2166,9 +2166,9 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
       </Parameters>
       <Docs>
         <param name="strA">The first string to use in the comparison.</param>
-        <param name="indexA">The position of the substring within <c>strA</c>.</param>
+        <param name="indexA">The position of the substring within <paramref name="strA" />.</param>
         <param name="strB">The second string to use in the comparison.</param>
-        <param name="indexB">The position of the substring within <c>strB</c>.</param>
+        <param name="indexB">The position of the substring within <paramref name="strB" />.</param>
         <param name="length">The maximum number of characters in the substrings to compare.</param>
         <param name="ignoreCase">
           <see langword="true" /> to ignore case during the comparison; otherwise, <see langword="false" />.</param>
@@ -2301,9 +2301,9 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
       </Parameters>
       <Docs>
         <param name="strA">The first string to use in the comparison.</param>
-        <param name="indexA">The position of the substring within <c>strA</c>.</param>
+        <param name="indexA">The position of the substring within <paramref name="strA" />.</param>
         <param name="strB">The second string to use in the comparison.</param>
-        <param name="indexB">The position of the substring within <c>strB</c>.</param>
+        <param name="indexB">The position of the substring within <paramref name="strB" />.</param>
         <param name="length">The maximum number of characters in the substrings to compare.</param>
         <param name="comparisonType">One of the enumeration values that specifies the rules to use in the comparison.</param>
         <summary>Compares substrings of two specified <see cref="T:System.String" /> objects using the specified rules, and returns an integer that indicates their relative position in the sort order.</summary>
@@ -2425,9 +2425,9 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
       </Parameters>
       <Docs>
         <param name="strA">The first string to use in the comparison.</param>
-        <param name="indexA">The position of the substring within <c>strA</c>.</param>
+        <param name="indexA">The position of the substring within <paramref name="strA" />.</param>
         <param name="strB">The second string to use in the comparison.</param>
-        <param name="indexB">The position of the substring within <c>strB</c>.</param>
+        <param name="indexB">The position of the substring within <paramref name="strB" />.</param>
         <param name="length">The maximum number of characters in the substrings to compare.</param>
         <param name="ignoreCase">
           <see langword="true" /> to ignore case during the comparison; otherwise, <see langword="false" />.</param>
@@ -2552,9 +2552,9 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
       </Parameters>
       <Docs>
         <param name="strA">The first string to use in the comparison.</param>
-        <param name="indexA">The starting position of the substring within <c>strA</c>.</param>
+        <param name="indexA">The starting position of the substring within <paramref name="strA" />.</param>
         <param name="strB">The second string to use in the comparison.</param>
-        <param name="indexB">The starting position of the substring within <c>strB</c>.</param>
+        <param name="indexB">The starting position of the substring within <paramref name="strB" />.</param>
         <param name="length">The maximum number of characters in the substrings to compare.</param>
         <param name="culture">An object that supplies culture-specific comparison information.</param>
         <param name="options">Options to use when performing the comparison (such as ignoring case or symbols).</param>
@@ -2779,9 +2779,9 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
       </Parameters>
       <Docs>
         <param name="strA">The first string to use in the comparison.</param>
-        <param name="indexA">The starting index of the substring in <c>strA</c>.</param>
+        <param name="indexA">The starting index of the substring in <paramref name="strA" />.</param>
         <param name="strB">The second string to use in the comparison.</param>
-        <param name="indexB">The starting index of the substring in <c>strB</c>.</param>
+        <param name="indexB">The starting index of the substring in <paramref name="strB" />.</param>
         <param name="length">The maximum number of characters in the substrings to compare.</param>
         <summary>Compares substrings of two specified <see cref="T:System.String" /> objects by evaluating the numeric values of the corresponding <see cref="T:System.Char" /> objects in each substring.</summary>
         <returns>A 32-bit signed integer that indicates the lexical relationship between the two comparands.  
@@ -3827,7 +3827,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
         <Parameter Name="values" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the members of <c>values</c>.</typeparam>
+        <typeparam name="T">The type of the members of <paramref name="values" />.</typeparam>
         <param name="values">A collection object that implements the <see cref="T:System.Collections.Generic.IEnumerable`1" /> interface.</param>
         <summary>Concatenates the members of an <see cref="T:System.Collections.Generic.IEnumerable`1" /> implementation.</summary>
         <returns>The concatenated members in <paramref name="values" />.</returns>
@@ -4134,8 +4134,8 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
       <Docs>
         <param name="sourceIndex">The index of the first character in this instance to copy.</param>
         <param name="destination">An array of Unicode characters to which characters in this instance are copied.</param>
-        <param name="destinationIndex">The index in <c>destination</c> at which the copy operation begins.</param>
-        <param name="count">The number of characters in this instance to copy to <c>destination</c>.</param>
+        <param name="destinationIndex">The index in <paramref name="destination" /> at which the copy operation begins.</param>
+        <param name="count">The number of characters in this instance to copy to <paramref name="destination" />.</param>
         <summary>Copies a specified number of characters from a specified position in this instance to a specified position in an array of Unicode characters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4425,7 +4425,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
       </Parameters>
       <Docs>
         <param name="value">The string to compare to the substring at the end of this instance.</param>
-        <param name="comparisonType">One of the enumeration values that determines how this string and <c>value</c> are compared.</param>
+        <param name="comparisonType">One of the enumeration values that determines how this string and <paramref name="value" /> are compared.</param>
         <summary>Determines whether the end of this string instance matches the specified string when compared using the specified comparison option.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="value" /> parameter matches the end of this string; otherwise, <see langword="false" />.</returns>
@@ -4488,7 +4488,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
         <param name="value">The string to compare to the substring at the end of this instance.</param>
         <param name="ignoreCase">
           <see langword="true" /> to ignore case during the comparison; otherwise, <see langword="false" />.</param>
-        <param name="culture">Cultural information that determines how this instance and <c>value</c> are compared. If <c>culture</c> is <see langword="null" />, the current culture is used.</param>
+        <param name="culture">Cultural information that determines how this instance and <paramref name="value" /> are compared. If <paramref name="culture" /> is <see langword="null" />, the current culture is used.</param>
         <summary>Determines whether the end of this string instance matches the specified string when compared using the specified culture.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="value" /> parameter matches the end of this string; otherwise, <see langword="false" />.</returns>
@@ -7799,7 +7799,7 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
         <Parameter Name="values" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="separator">The string to use as a separator.<c>separator</c> is included in the returned string only if <c>values</c> has more than one element.</param>
+        <param name="separator">The string to use as a separator.<paramref name="separator" /> is included in the returned string only if <paramref name="values" /> has more than one element.</param>
         <param name="values">A collection that contains the strings to concatenate.</param>
         <summary>Concatenates the members of a constructed <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection of type <see cref="T:System.String" />, using the specified separator between each member.</summary>
         <returns>A string that consists of the members of <paramref name="values" /> delimited by the <paramref name="separator" /> string. If <paramref name="values" /> has no members, the method returns <see cref="F:System.String.Empty" />.</returns>
@@ -7874,7 +7874,7 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="separator">The string to use as a separator. <c>separator</c> is included in the returned string only if <c>values</c> has more than one element.</param>
+        <param name="separator">The string to use as a separator. <paramref name="separator" /> is included in the returned string only if <paramref name="values" /> has more than one element.</param>
         <param name="values">An array that contains the elements to concatenate.</param>
         <summary>Concatenates the elements of an object array, using the specified separator between each element.</summary>
         <returns>A string that consists of the elements of <paramref name="values" /> delimited by the <paramref name="separator" /> string. If <paramref name="values" /> is an empty array, the method returns <see cref="F:System.String.Empty" />.</returns>
@@ -7949,7 +7949,7 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="separator">The string to use as a separator. <c>separator</c> is included in the returned string only if <c>value</c> has more than one element.</param>
+        <param name="separator">The string to use as a separator. <paramref name="separator" /> is included in the returned string only if <paramref name="value" /> has more than one element.</param>
         <param name="value">An array that contains the elements to concatenate.</param>
         <summary>Concatenates all the elements of a string array, using the specified separator between each element.</summary>
         <returns>A string that consists of the elements in <paramref name="value" /> delimited by the <paramref name="separator" /> string. If <paramref name="value" /> is an empty array, the method returns <see cref="F:System.String.Empty" />.</returns>
@@ -8058,10 +8058,10 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="separator">The string to use as a separator. <c>separator</c> is included in the returned string only if <c>value</c> has more than one element.</param>
+        <param name="separator">The string to use as a separator. <paramref name="separator" /> is included in the returned string only if <paramref name="value" /> has more than one element.</param>
         <param name="value">An array that contains the elements to concatenate.</param>
-        <param name="startIndex">The first element in <c>value</c> to use.</param>
-        <param name="count">The number of elements of <c>value</c> to use.</param>
+        <param name="startIndex">The first element in <paramref name="value" /> to use.</param>
+        <param name="count">The number of elements of <paramref name="value" /> to use.</param>
         <summary>Concatenates the specified elements of a string array, using the specified separator between each element.</summary>
         <returns>A string that consists of the strings in <paramref name="value" /> delimited by the <paramref name="separator" /> string.  
   
@@ -8179,8 +8179,8 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
         <Parameter Name="values" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the members of <c>values</c>.</typeparam>
-        <param name="separator">The string to use as a separator.<c>separator</c> is included in the returned string only if <c>values</c> has more than one element.</param>
+        <typeparam name="T">The type of the members of <paramref name="values" />.</typeparam>
+        <param name="separator">The string to use as a separator.<paramref name="separator" /> is included in the returned string only if <paramref name="values" /> has more than one element.</param>
         <param name="values">A collection that contains the objects to concatenate.</param>
         <summary>Concatenates the members of a collection, using the specified separator between each member.</summary>
         <returns>A string that consists of the members of <paramref name="values" /> delimited by the <paramref name="separator" /> string. If <paramref name="values" /> has no members, the method returns <see cref="F:System.String.Empty" />.</returns>
@@ -8410,7 +8410,7 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
       </Parameters>
       <Docs>
         <param name="value">The Unicode character to seek.</param>
-        <param name="startIndex">The starting position of the search. The search proceeds from <c>startIndex</c> toward the beginning of this instance.</param>
+        <param name="startIndex">The starting position of the search. The search proceeds from <paramref name="startIndex" /> toward the beginning of this instance.</param>
         <summary>Reports the zero-based index position of the last occurrence of a specified Unicode character within this instance. The search starts at a specified character position and proceeds backward toward the beginning of the string.</summary>
         <returns>The zero-based index position of <paramref name="value" /> if that character is found, or -1 if it is not found or if the current instance equals <see cref="F:System.String.Empty" />.</returns>
         <remarks>
@@ -8477,7 +8477,7 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
       </Parameters>
       <Docs>
         <param name="value">The string to seek.</param>
-        <param name="startIndex">The search starting position. The search proceeds from <c>startIndex</c> toward the beginning of this instance.</param>
+        <param name="startIndex">The search starting position. The search proceeds from <paramref name="startIndex" /> toward the beginning of this instance.</param>
         <summary>Reports the zero-based index position of the last occurrence of a specified string within this instance. The search starts at a specified character position and proceeds backward toward the beginning of the string.</summary>
         <returns>The zero-based starting index position of <paramref name="value" /> if that string is found, or -1 if it is not found or if the current instance equals <see cref="F:System.String.Empty" />. If <paramref name="value" /> is <see cref="F:System.String.Empty" />, the return value is the smaller of <paramref name="startIndex" /> and the last index position in this instance.</returns>
         <remarks>
@@ -8646,7 +8646,7 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
       </Parameters>
       <Docs>
         <param name="value">The Unicode character to seek.</param>
-        <param name="startIndex">The starting position of the search. The search proceeds from <c>startIndex</c> toward the beginning of this instance.</param>
+        <param name="startIndex">The starting position of the search. The search proceeds from <paramref name="startIndex" /> toward the beginning of this instance.</param>
         <param name="count">The number of character positions to examine.</param>
         <summary>Reports the zero-based index position of the last occurrence of the specified Unicode character in a substring within this instance. The search starts at a specified character position and proceeds backward toward the beginning of the string for a specified number of character positions.</summary>
         <returns>The zero-based index position of <paramref name="value" /> if that character is found, or -1 if it is not found or if the current instance equals <see cref="F:System.String.Empty" />.</returns>
@@ -8721,7 +8721,7 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
       </Parameters>
       <Docs>
         <param name="value">The string to seek.</param>
-        <param name="startIndex">The search starting position. The search proceeds from <c>startIndex</c> toward the beginning of this instance.</param>
+        <param name="startIndex">The search starting position. The search proceeds from <paramref name="startIndex" /> toward the beginning of this instance.</param>
         <param name="count">The number of character positions to examine.</param>
         <summary>Reports the zero-based index position of the last occurrence of a specified string within this instance. The search starts at a specified character position and proceeds backward toward the beginning of the string for a specified number of character positions.</summary>
         <returns>The zero-based starting index position of <paramref name="value" /> if that string is found, or -1 if it is not found or if the current instance equals <see cref="F:System.String.Empty" />. If <paramref name="value" /> is <see cref="F:System.String.Empty" />, the return value is the smaller of <paramref name="startIndex" /> and the last index position in this instance.</returns>
@@ -8821,7 +8821,7 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
       </Parameters>
       <Docs>
         <param name="value">The string to seek.</param>
-        <param name="startIndex">The search starting position. The search proceeds from <c>startIndex</c> toward the beginning of this instance.</param>
+        <param name="startIndex">The search starting position. The search proceeds from <paramref name="startIndex" /> toward the beginning of this instance.</param>
         <param name="comparisonType">One of the enumeration values that specifies the rules for the search.</param>
         <summary>Reports the zero-based index of the last occurrence of a specified string within the current <see cref="T:System.String" /> object. The search starts at a specified character position and proceeds backward toward the beginning of the string. A parameter specifies the type of comparison to perform when searching for the specified string.</summary>
         <returns>The zero-based starting index position of the <paramref name="value" /> parameter if that string is found, or -1 if it is not found or if the current instance equals <see cref="F:System.String.Empty" />. If <paramref name="value" /> is <see cref="F:System.String.Empty" />, the return value is the smaller of <paramref name="startIndex" /> and the last index position in this instance.</returns>
@@ -8907,7 +8907,7 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
       </Parameters>
       <Docs>
         <param name="value">The string to seek.</param>
-        <param name="startIndex">The search starting position. The search proceeds from <c>startIndex</c> toward the beginning of this instance.</param>
+        <param name="startIndex">The search starting position. The search proceeds from <paramref name="startIndex" /> toward the beginning of this instance.</param>
         <param name="count">The number of character positions to examine.</param>
         <param name="comparisonType">One of the enumeration values that specifies the rules for the search.</param>
         <summary>Reports the zero-based index position of the last occurrence of a specified string within this instance. The search starts at a specified character position and proceeds backward toward the beginning of the string for the specified number of character positions. A parameter specifies the type of comparison to perform when searching for the specified string.</summary>
@@ -9087,7 +9087,7 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
       </Parameters>
       <Docs>
         <param name="anyOf">A Unicode character array containing one or more characters to seek.</param>
-        <param name="startIndex">The search starting position. The search proceeds from <c>startIndex</c> toward the beginning of this instance.</param>
+        <param name="startIndex">The search starting position. The search proceeds from <paramref name="startIndex" /> toward the beginning of this instance.</param>
         <summary>Reports the zero-based index position of the last occurrence in this instance of one or more characters specified in a Unicode array. The search starts at a specified character position and proceeds backward toward the beginning of the string.</summary>
         <returns>The index position of the last occurrence in this instance where any character in <paramref name="anyOf" /> was found; -1 if no character in <paramref name="anyOf" /> was found or if the current instance equals <see cref="F:System.String.Empty" />.</returns>
         <remarks>
@@ -9165,7 +9165,7 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
       </Parameters>
       <Docs>
         <param name="anyOf">A Unicode character array containing one or more characters to seek.</param>
-        <param name="startIndex">The search starting position. The search proceeds from <c>startIndex</c> toward the beginning of this instance.</param>
+        <param name="startIndex">The search starting position. The search proceeds from <paramref name="startIndex" /> toward the beginning of this instance.</param>
         <param name="count">The number of character positions to examine.</param>
         <summary>Reports the zero-based index position of the last occurrence in this instance of one or more characters specified in a Unicode array. The search starts at a specified character position and proceeds backward toward the beginning of the string for a specified number of character positions.</summary>
         <returns>The index position of the last occurrence in this instance where any character in <paramref name="anyOf" /> was found; -1 if no character in <paramref name="anyOf" /> was found or if the current instance equals <see cref="F:System.String.Empty" />.</returns>
@@ -10115,7 +10115,7 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
       </Parameters>
       <Docs>
         <param name="oldChar">The Unicode character to be replaced.</param>
-        <param name="newChar">The Unicode character to replace all occurrences of <c>oldChar</c>.</param>
+        <param name="newChar">The Unicode character to replace all occurrences of <paramref name="oldChar" />.</param>
         <summary>Returns a new string in which all occurrences of a specified Unicode character in this instance are replaced with another specified Unicode character.</summary>
         <returns>A string that is equivalent to this instance except that all instances of <paramref name="oldChar" /> are replaced with <paramref name="newChar" />. If <paramref name="oldChar" /> is not found in the current instance, the method returns the current instance unchanged.</returns>
         <remarks>
@@ -10198,7 +10198,7 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
       </Parameters>
       <Docs>
         <param name="oldValue">The string to be replaced.</param>
-        <param name="newValue">The string to replace all occurrences of <c>oldValue</c>.</param>
+        <param name="newValue">The string to replace all occurrences of <paramref name="oldValue" />.</param>
         <summary>Returns a new string in which all occurrences of a specified string in the current instance are replaced with another specified string.</summary>
         <returns>A string that is equivalent to the current string except that all instances of <paramref name="oldValue" /> are replaced with <paramref name="newValue" />. If <paramref name="oldValue" /> is not found in the current instance, the method returns the current instance unchanged.</returns>
         <remarks>
@@ -11351,7 +11351,7 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
       </Parameters>
       <Docs>
         <param name="value">The string to compare.</param>
-        <param name="comparisonType">One of the enumeration values that determines how this string and <c>value</c> are compared.</param>
+        <param name="comparisonType">One of the enumeration values that determines how this string and <paramref name="value" /> are compared.</param>
         <summary>Determines whether the beginning of this string instance matches the specified string when compared using the specified comparison option.</summary>
         <returns>
           <see langword="true" /> if this instance begins with <paramref name="value" />; otherwise, <see langword="false" />.</returns>
@@ -11420,7 +11420,7 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
         <param name="value">The string to compare.</param>
         <param name="ignoreCase">
           <see langword="true" /> to ignore case during the comparison; otherwise, <see langword="false" />.</param>
-        <param name="culture">Cultural information that determines how this string and <c>value</c> are compared. If <c>culture</c> is <see langword="null" />, the current culture is used.</param>
+        <param name="culture">Cultural information that determines how this string and <paramref name="value" /> are compared. If <paramref name="culture" /> is <see langword="null" />, the current culture is used.</param>
         <summary>Determines whether the beginning of this string instance matches the specified string when compared using the specified culture.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="value" /> parameter matches the beginning of this string; otherwise, <see langword="false" />.</returns>

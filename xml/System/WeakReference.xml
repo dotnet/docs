@@ -241,7 +241,7 @@
       </Parameters>
       <Docs>
         <param name="info">An object that holds all the data needed to serialize or deserialize the current <see cref="T:System.WeakReference" /> object.</param>
-        <param name="context">(Reserved) Describes the source and destination of the serialized stream specified by <c>info</c>.</param>
+        <param name="context">(Reserved) Describes the source and destination of the serialized stream specified by <paramref name="info" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.WeakReference" /> class, using deserialized data from the specified serialization and stream objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

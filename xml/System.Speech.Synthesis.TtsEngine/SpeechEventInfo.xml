@@ -128,13 +128,13 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
       </Parameters>
       <Docs>
         <param name="eventId">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.TtsEventId" /> indicating the sort of Speech platform event the <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" /> object is to handle.</param>
-        <param name="parameterType">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.EventParameterType" /> indicating how the <see langword="System.IntPtr" /> reference of <c>param2</c> is to be interpreted, and, by implication, the use of <c>param1</c>.</param>
+        <param name="parameterType">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.EventParameterType" /> indicating how the <see langword="System.IntPtr" /> reference of <paramref name="param2" /> is to be interpreted, and, by implication, the use of <paramref name="param1" />.</param>
         <param name="param1">An integer value to be passed to the Speech platform when the event requested by the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" /> to be constructed is generated.  
   
- The exact meaning of this integer is implicitly determined by the value of <c>parameterType</c>.</param>
+ The exact meaning of this integer is implicitly determined by the value of <paramref name="parameterType" />.</param>
         <param name="param2">A <see langword="System.IntPtr" /> instance referencing an object. to be passed to the Speech platform when the event requested by the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" /> to be constructed is generated.  
   
- The type which must be referenced is explicitly defined by the value <c>parameterType</c>. The value <see langword="System.IntPtr.Zero" />.</param>
+ The type which must be referenced is explicitly defined by the value <paramref name="parameterType" />. The value <see langword="System.IntPtr.Zero" />.</param>
         <summary>Constucts an appropriate <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -429,8 +429,8 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
         <Parameter Name="event2" Type="System.Speech.Synthesis.TtsEngine.SpeechEventInfo" />
       </Parameters>
       <Docs>
-        <param name="event1">The <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" /> object to compare to <c>event2</c>.</param>
-        <param name="event2">The <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" /> object to compare to <c>event1</c>.</param>
+        <param name="event1">The <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" /> object to compare to <paramref name="event2" />.</param>
+        <param name="event2">The <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" /> object to compare to <paramref name="event1" />.</param>
         <summary>Determines whether two instances of <c>SpeechEventInfo</c> are equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="event1" /> is the same as <paramref name="event2" />; otherwise, <see langword="false" />.</returns>
@@ -460,8 +460,8 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
         <Parameter Name="event2" Type="System.Speech.Synthesis.TtsEngine.SpeechEventInfo" />
       </Parameters>
       <Docs>
-        <param name="event1">The <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" /> object to compare to <c>event2</c>.</param>
-        <param name="event2">The <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" /> object to compare to <c>event1</c>.</param>
+        <param name="event1">The <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" /> object to compare to <paramref name="event2" />.</param>
+        <param name="event2">The <see cref="T:System.Speech.Synthesis.TtsEngine.SpeechEventInfo" /> object to compare to <paramref name="event1" />.</param>
         <summary>Determines whether two instances of <c>SpeechEventInfo</c> are not equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="event1" /> is different from <paramref name="event2" />; otherwise, <see langword="false" />.</returns>

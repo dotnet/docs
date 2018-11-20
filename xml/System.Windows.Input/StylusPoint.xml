@@ -160,7 +160,7 @@
         <param name="y">The y-coordinate of the <see cref="T:System.Windows.Input.StylusPoint" />.</param>
         <param name="pressureFactor">The amount of pressure applied to the <see cref="T:System.Windows.Input.StylusPoint" />.</param>
         <param name="stylusPointDescription">A <see cref="T:System.Windows.Input.StylusPointDescription" /> that specifies the additional properties stored in the <see cref="T:System.Windows.Input.StylusPoint" />.</param>
-        <param name="additionalValues">An array of 32-bit signed integers that contains the values of the properties defined in <c>stylusPointDescription</c>.</param>
+        <param name="additionalValues">An array of 32-bit signed integers that contains the values of the properties defined in <paramref name="stylusPointDescription" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPoint" /> class using specified (x, y) coordinates, a <paramref name="pressureFactor" />, and additional parameters specified in the <see cref="T:System.Windows.Input.StylusPointDescription" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

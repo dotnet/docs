@@ -981,7 +981,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">The object whose underlying system type is to be compared with the underlying system type of the current <see cref="T:System.Type" />. For the comparison to succeed, <c>o</c> must be able to be cast or converted to an object of type   <see cref="T:System.Type" />.</param>
+        <param name="o">The object whose underlying system type is to be compared with the underlying system type of the current <see cref="T:System.Type" />. For the comparison to succeed, <paramref name="o" /> must be able to be cast or converted to an object of type   <see cref="T:System.Type" />.</param>
         <summary>Determines if the underlying system type of the current <see cref="T:System.Type" /> object is the same as the underlying system type of the specified <see cref="T:System.Object" />.</summary>
         <returns>
           <see langword="true" /> if the underlying system type of <paramref name="o" /> is the same as the underlying system type of the current <see cref="T:System.Type" />; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if: .  
@@ -1266,7 +1266,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <Parameter Name="filterCriteria" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="filter">The delegate that compares the interfaces against <c>filterCriteria</c>.</param>
+        <param name="filter">The delegate that compares the interfaces against <paramref name="filterCriteria" />.</param>
         <param name="filterCriteria">The search criteria that determines whether an interface should be included in the returned array.</param>
         <summary>Returns an array of <see cref="T:System.Type" /> objects representing a filtered list of interfaces implemented or inherited by the current <see cref="T:System.Type" />.</summary>
         <returns>An array of <see cref="T:System.Type" /> objects representing a filtered list of the interfaces implemented or inherited by the current <see cref="T:System.Type" />, or an empty array of type <see cref="T:System.Type" /> if no interfaces matching the filter are implemented or inherited by the current <see cref="T:System.Type" />.</returns>
@@ -1350,7 +1350,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  -or-  
   
  Zero, to return <see langword="null" />.</param>
-        <param name="filter">The delegate that does the comparisons, returning <see langword="true" /> if the member currently being inspected matches the <c>filterCriteria</c> and <see langword="false" /> otherwise. You can use the <see langword="FilterAttribute" />, <see langword="FilterName" />, and <see langword="FilterNameIgnoreCase" /> delegates supplied by this class. The first uses the fields of <see langword="FieldAttributes" />, <see langword="MethodAttributes" />, and <see langword="MethodImplAttributes" /> as search criteria, and the other two delegates use <see langword="String" /> objects as the search criteria.</param>
+        <param name="filter">The delegate that does the comparisons, returning <see langword="true" /> if the member currently being inspected matches the <paramref name="filterCriteria" /> and <see langword="false" /> otherwise. You can use the <see langword="FilterAttribute" />, <see langword="FilterName" />, and <see langword="FilterNameIgnoreCase" /> delegates supplied by this class. The first uses the fields of <see langword="FieldAttributes" />, <see langword="MethodAttributes" />, and <see langword="MethodImplAttributes" /> as search criteria, and the other two delegates use <see langword="String" /> objects as the search criteria.</param>
         <param name="filterCriteria">The search criteria that determines whether a member is returned in the array of <see langword="MemberInfo" /> objects.  
   
  The fields of <see langword="FieldAttributes" />, <see langword="MethodAttributes" />, and <see langword="MethodImplAttributes" /> can be used in conjunction with the <see langword="FilterAttribute" /> delegate supplied by this class.</param>
@@ -2053,7 +2053,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  -or-  
   
  An empty array of the type <see cref="T:System.Type" /> (that is, Type[] types = new Type[0]) to get a constructor that takes no parameters.</param>
-        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <c>types</c> array. The default binder does not process this parameter.</param>
+        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <paramref name="types" /> array. The default binder does not process this parameter.</param>
         <summary>Searches for a constructor whose parameters match the specified argument types and modifiers, using the specified binding constraints and the specified calling convention.</summary>
         <returns>An object representing the constructor that matches the specified requirements, if found; otherwise, <see langword="null" />.</returns>
         <remarks>
@@ -2185,7 +2185,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  -or-  
   
  An empty array of the type <see cref="T:System.Type" /> (that is, Type[] types = new Type[0]) to get a constructor that takes no parameters.</param>
-        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <c>types</c> array. The default binder does not process this parameter.</param>
+        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <paramref name="types" /> array. The default binder does not process this parameter.</param>
         <summary>When overridden in a derived class, searches for a constructor whose parameters match the specified argument types and modifiers, using the specified binding constraints and the specified calling convention.</summary>
         <returns>A <see cref="T:System.Reflection.ConstructorInfo" /> object representing the constructor that matches the specified requirements, if found; otherwise, <see langword="null" />.</returns>
         <remarks>
@@ -3885,11 +3885,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
       <Docs>
         <param name="name">The string containing the name of the interface to get. For generic interfaces, this is the mangled name.</param>
         <param name="ignoreCase">
-          <see langword="true" /> to ignore the case of that part of <c>name</c> that specifies the simple interface name (the part that specifies the namespace must be correctly cased).  
+          <see langword="true" /> to ignore the case of that part of <paramref name="name" /> that specifies the simple interface name (the part that specifies the namespace must be correctly cased).  
   
  -or-  
   
- <see langword="false" /> to perform a case-sensitive search for all parts of <c>name</c>.</param>
+ <see langword="false" /> to perform a case-sensitive search for all parts of <paramref name="name" />.</param>
         <summary>When overridden in a derived class, searches for the specified interface, specifying whether to do a case-insensitive search for the interface name.</summary>
         <returns>An object representing the interface with the specified name, implemented or inherited by the current <see cref="T:System.Type" />, if found; otherwise, <see langword="null" />.</returns>
         <remarks>
@@ -4959,7 +4959,7 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
  -or-  
   
  An empty array of <see cref="T:System.Type" /> objects (as provided by the <see cref="F:System.Type.EmptyTypes" /> field) to get a method that takes no parameters.</param>
-        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <c>types</c> array. To be only used when calling through COM interop, and only parameters that are passed by reference are handled. The default binder does not process this parameter.</param>
+        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <paramref name="types" /> array. To be only used when calling through COM interop, and only parameters that are passed by reference are handled. The default binder does not process this parameter.</param>
         <summary>Searches for the specified public method whose parameters match the specified argument types and modifiers.</summary>
         <returns>An object representing the public method that matches the specified requirements, if found; otherwise, <see langword="null" />.</returns>
         <remarks>
@@ -5098,7 +5098,7 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
  -or-  
   
  An empty array of <see cref="T:System.Type" /> objects (as provided by the <see cref="F:System.Type.EmptyTypes" /> field) to get a method that takes no parameters.</param>
-        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <c>types</c> array. To be only used when calling through COM interop, and only parameters that are passed by reference are handled. The default binder does not process this parameter.</param>
+        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <paramref name="types" /> array. To be only used when calling through COM interop, and only parameters that are passed by reference are handled. The default binder does not process this parameter.</param>
         <summary>Searches for the specified method whose parameters match the specified argument types and modifiers, using the specified binding constraints.</summary>
         <returns>An object representing the method that matches the specified requirements, if found; otherwise, <see langword="null" />.</returns>
         <remarks>
@@ -5271,7 +5271,7 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
  -or-  
   
  An empty array of <see cref="T:System.Type" /> objects (as provided by the <see cref="F:System.Type.EmptyTypes" /> field) to get a method that takes no parameters.</param>
-        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <c>types</c> array. To be only used when calling through COM interop, and only parameters that are passed by reference are handled. The default binder does not process this parameter.</param>
+        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <paramref name="types" /> array. To be only used when calling through COM interop, and only parameters that are passed by reference are handled. The default binder does not process this parameter.</param>
         <summary>Searches for the specified method whose parameters match the specified argument types and modifiers, using the specified binding constraints and the specified calling convention.</summary>
         <returns>An object representing the method that matches the specified requirements, if found; otherwise, <see langword="null" />.</returns>
         <remarks>
@@ -5464,8 +5464,8 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
   
  -or-  
   
- <see langword="null" />. If <c>types</c> is <see langword="null" />, arguments are not matched.</param>
-        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <c>types</c> array. The default binder does not process this parameter.</param>
+ <see langword="null" />. If <paramref name="types" /> is <see langword="null" />, arguments are not matched.</param>
+        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <paramref name="types" /> array. The default binder does not process this parameter.</param>
         <summary>When overridden in a derived class, searches for the specified method whose parameters match the specified argument types and modifiers, using the specified binding constraints and the specified calling convention.</summary>
         <returns>An object representing the method that matches the specified requirements, if found; otherwise, <see langword="null" />.</returns>
         <remarks>
@@ -6792,7 +6792,7 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
  -or-  
   
  An empty array of the type <see cref="T:System.Type" /> (that is, Type[] types = new Type[0]) to get a property that is not indexed.</param>
-        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <c>types</c> array. The default binder does not process this parameter.</param>
+        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <paramref name="types" /> array. The default binder does not process this parameter.</param>
         <summary>Searches for the specified public property whose parameters match the specified argument types and modifiers.</summary>
         <returns>An object representing the public property that matches the specified requirements, if found; otherwise, <see langword="null" />.</returns>
         <remarks>
@@ -6909,7 +6909,7 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
  -or-  
   
  An empty array of the type <see cref="T:System.Type" /> (that is, Type[] types = new Type[0]) to get a property that is not indexed.</param>
-        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <c>types</c> array. The default binder does not process this parameter.</param>
+        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <paramref name="types" /> array. The default binder does not process this parameter.</param>
         <summary>Searches for the specified property whose parameters match the specified argument types and modifiers, using the specified binding constraints.</summary>
         <returns>An object representing the property that matches the specified requirements, if found; otherwise, <see langword="null" />.</returns>
         <remarks>
@@ -7048,7 +7048,7 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
  -or-  
   
  An empty array of the type <see cref="T:System.Type" /> (that is, Type[] types = new Type[0]) to get a property that is not indexed.</param>
-        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <c>types</c> array. The default binder does not process this parameter.</param>
+        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <paramref name="types" /> array. The default binder does not process this parameter.</param>
         <summary>When overridden in a derived class, searches for the specified property whose parameters match the specified argument types and modifiers, using the specified binding constraints.</summary>
         <returns>An object representing the property that matches the specified requirements, if found; otherwise, <see langword="null" />.</returns>
         <remarks>
@@ -7635,7 +7635,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         <param name="throwOnError">
           <see langword="true" /> to throw an exception if the type cannot be found; <see langword="false" /> to return <see langword="null" />.Specifying <see langword="false" /> also suppresses some other exception conditions, but not all of them. See the Exceptions section.</param>
         <param name="ignoreCase">
-          <see langword="true" /> to perform a case-insensitive search for <c>typeName</c>, <see langword="false" /> to perform a case-sensitive search for <c>typeName</c>.</param>
+          <see langword="true" /> to perform a case-insensitive search for <paramref name="typeName" />, <see langword="false" /> to perform a case-sensitive search for <paramref name="typeName" />.</param>
         <summary>Gets the <see cref="T:System.Type" /> with the specified name, specifying whether to throw an exception if the type is not found and whether to perform a case-sensitive search.</summary>
         <returns>The type with the specified name. If the type is not found, the <paramref name="throwOnError" /> parameter specifies whether <see langword="null" /> is returned or an exception is thrown. In some cases, an exception is thrown regardless of the value of <paramref name="throwOnError" />. See the Exceptions section.</returns>
         <remarks>
@@ -7834,11 +7834,11 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         <Parameter Name="typeResolver" Type="System.Func&lt;System.Reflection.Assembly,System.String,System.Boolean,System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="typeName">The name of the type to get. If the <c>typeResolver</c> parameter is provided, the type name can be any string that <c>typeResolver</c> is capable of resolving. If the <c>assemblyResolver</c> parameter is provided or if standard type resolution is used, <c>typeName</c> must be an assembly-qualified name (see <see cref="P:System.Type.AssemblyQualifiedName" />), unless the type is in the currently executing assembly or in Mscorlib.dll, in which case it is sufficient to supply the type name qualified by its namespace.</param>
-        <param name="assemblyResolver">A method that locates and returns the assembly that is specified in <c>typeName</c>. The assembly name is passed to <c>assemblyResolver</c> as an <see cref="T:System.Reflection.AssemblyName" /> object. If <c>typeName</c> does not contain the name of an assembly, <c>assemblyResolver</c> is not called. If <c>assemblyResolver</c> is not supplied, standard assembly resolution is performed.  
+        <param name="typeName">The name of the type to get. If the <paramref name="typeResolver" /> parameter is provided, the type name can be any string that <paramref name="typeResolver" /> is capable of resolving. If the <paramref name="assemblyResolver" /> parameter is provided or if standard type resolution is used, <paramref name="typeName" /> must be an assembly-qualified name (see <see cref="P:System.Type.AssemblyQualifiedName" />), unless the type is in the currently executing assembly or in Mscorlib.dll, in which case it is sufficient to supply the type name qualified by its namespace.</param>
+        <param name="assemblyResolver">A method that locates and returns the assembly that is specified in <paramref name="typeName" />. The assembly name is passed to <paramref name="assemblyResolver" /> as an <see cref="T:System.Reflection.AssemblyName" /> object. If <paramref name="typeName" /> does not contain the name of an assembly, <paramref name="assemblyResolver" /> is not called. If <paramref name="assemblyResolver" /> is not supplied, standard assembly resolution is performed.  
   
  Caution   Do not pass methods from unknown or untrusted callers. Doing so could result in elevation of privilege for malicious code. Use only methods that you provide or that you are familiar with.</param>
-        <param name="typeResolver">A method that locates and returns the type that is specified by <c>typeName</c> from the assembly that is returned by <c>assemblyResolver</c> or by standard assembly resolution. If no assembly is provided, the <c>typeResolver</c> method can provide one. The method also takes a parameter that specifies whether to perform a case-insensitive search; <see langword="false" /> is passed to that parameter.  
+        <param name="typeResolver">A method that locates and returns the type that is specified by <paramref name="typeName" /> from the assembly that is returned by <paramref name="assemblyResolver" /> or by standard assembly resolution. If no assembly is provided, the <paramref name="typeResolver" /> method can provide one. The method also takes a parameter that specifies whether to perform a case-insensitive search; <see langword="false" /> is passed to that parameter.  
   
  Caution   Do not pass methods from unknown or untrusted callers.</param>
         <summary>Gets the type with the specified name, optionally providing custom methods to resolve the assembly and the type.</summary>
@@ -7922,11 +7922,11 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         <Parameter Name="throwOnError" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="typeName">The name of the type to get. If the <c>typeResolver</c> parameter is provided, the type name can be any string that <c>typeResolver</c> is capable of resolving. If the <c>assemblyResolver</c> parameter is provided or if standard type resolution is used, <c>typeName</c> must be an assembly-qualified name (see <see cref="P:System.Type.AssemblyQualifiedName" />), unless the type is in the currently executing assembly or in Mscorlib.dll, in which case it is sufficient to supply the type name qualified by its namespace.</param>
-        <param name="assemblyResolver">A method that locates and returns the assembly that is specified in <c>typeName</c>. The assembly name is passed to <c>assemblyResolver</c> as an <see cref="T:System.Reflection.AssemblyName" /> object. If <c>typeName</c> does not contain the name of an assembly, <c>assemblyResolver</c> is not called. If <c>assemblyResolver</c> is not supplied, standard assembly resolution is performed.  
+        <param name="typeName">The name of the type to get. If the <paramref name="typeResolver" /> parameter is provided, the type name can be any string that <paramref name="typeResolver" /> is capable of resolving. If the <paramref name="assemblyResolver" /> parameter is provided or if standard type resolution is used, <paramref name="typeName" /> must be an assembly-qualified name (see <see cref="P:System.Type.AssemblyQualifiedName" />), unless the type is in the currently executing assembly or in Mscorlib.dll, in which case it is sufficient to supply the type name qualified by its namespace.</param>
+        <param name="assemblyResolver">A method that locates and returns the assembly that is specified in <paramref name="typeName" />. The assembly name is passed to <paramref name="assemblyResolver" /> as an <see cref="T:System.Reflection.AssemblyName" /> object. If <paramref name="typeName" /> does not contain the name of an assembly, <paramref name="assemblyResolver" /> is not called. If <paramref name="assemblyResolver" /> is not supplied, standard assembly resolution is performed.  
   
  Caution   Do not pass methods from unknown or untrusted callers. Doing so could result in elevation of privilege for malicious code. Use only methods that you provide or that you are familiar with.</param>
-        <param name="typeResolver">A method that locates and returns the type that is specified by <c>typeName</c> from the assembly that is returned by <c>assemblyResolver</c> or by standard assembly resolution. If no assembly is provided, the method can provide one. The method also takes a parameter that specifies whether to perform a case-insensitive search; <see langword="false" /> is passed to that parameter.  
+        <param name="typeResolver">A method that locates and returns the type that is specified by <paramref name="typeName" /> from the assembly that is returned by <paramref name="assemblyResolver" /> or by standard assembly resolution. If no assembly is provided, the method can provide one. The method also takes a parameter that specifies whether to perform a case-insensitive search; <see langword="false" /> is passed to that parameter.  
   
  Caution   Do not pass methods from unknown or untrusted callers.</param>
         <param name="throwOnError">
@@ -8032,17 +8032,17 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="typeName">The name of the type to get. If the <c>typeResolver</c> parameter is provided, the type name can be any string that <c>typeResolver</c> is capable of resolving. If the <c>assemblyResolver</c> parameter is provided or if standard type resolution is used, <c>typeName</c> must be an assembly-qualified name (see <see cref="P:System.Type.AssemblyQualifiedName" />), unless the type is in the currently executing assembly or in Mscorlib.dll, in which case it is sufficient to supply the type name qualified by its namespace.</param>
-        <param name="assemblyResolver">A method that locates and returns the assembly that is specified in <c>typeName</c>. The assembly name is passed to <c>assemblyResolver</c> as an <see cref="T:System.Reflection.AssemblyName" /> object. If <c>typeName</c> does not contain the name of an assembly, <c>assemblyResolver</c> is not called. If <c>assemblyResolver</c> is not supplied, standard assembly resolution is performed.  
+        <param name="typeName">The name of the type to get. If the <paramref name="typeResolver" /> parameter is provided, the type name can be any string that <paramref name="typeResolver" /> is capable of resolving. If the <paramref name="assemblyResolver" /> parameter is provided or if standard type resolution is used, <paramref name="typeName" /> must be an assembly-qualified name (see <see cref="P:System.Type.AssemblyQualifiedName" />), unless the type is in the currently executing assembly or in Mscorlib.dll, in which case it is sufficient to supply the type name qualified by its namespace.</param>
+        <param name="assemblyResolver">A method that locates and returns the assembly that is specified in <paramref name="typeName" />. The assembly name is passed to <paramref name="assemblyResolver" /> as an <see cref="T:System.Reflection.AssemblyName" /> object. If <paramref name="typeName" /> does not contain the name of an assembly, <paramref name="assemblyResolver" /> is not called. If <paramref name="assemblyResolver" /> is not supplied, standard assembly resolution is performed.  
   
  Caution   Do not pass methods from unknown or untrusted callers. Doing so could result in elevation of privilege for malicious code. Use only methods that you provide or that you are familiar with.</param>
-        <param name="typeResolver">A method that locates and returns the type that is specified by <c>typeName</c> from the assembly that is returned by <c>assemblyResolver</c> or by standard assembly resolution. If no assembly is provided, the method can provide one. The method also takes a parameter that specifies whether to perform a case-insensitive search; the value of <c>ignoreCase</c> is passed to that parameter.  
+        <param name="typeResolver">A method that locates and returns the type that is specified by <paramref name="typeName" /> from the assembly that is returned by <paramref name="assemblyResolver" /> or by standard assembly resolution. If no assembly is provided, the method can provide one. The method also takes a parameter that specifies whether to perform a case-insensitive search; the value of <paramref name="ignoreCase" /> is passed to that parameter.  
   
  Caution   Do not pass methods from unknown or untrusted callers.</param>
         <param name="throwOnError">
           <see langword="true" /> to throw an exception if the type cannot be found; <see langword="false" /> to return <see langword="null" />. Specifying <see langword="false" /> also suppresses some other exception conditions, but not all of them. See the Exceptions section.</param>
         <param name="ignoreCase">
-          <see langword="true" /> to perform a case-insensitive search for <c>typeName</c>, <see langword="false" /> to perform a case-sensitive search for <c>typeName</c>.</param>
+          <see langword="true" /> to perform a case-insensitive search for <paramref name="typeName" />, <see langword="false" /> to perform a case-sensitive search for <paramref name="typeName" />.</param>
         <summary>Gets the type with the specified name, specifying whether to perform a case-sensitive search and whether to throw an exception if the type is not found, and optionally providing custom methods to resolve the assembly and the type.</summary>
         <returns>The type with the specified name. If the type is not found, the <paramref name="throwOnError" /> parameter specifies whether <see langword="null" /> is returned or an exception is thrown. In some cases, an exception is thrown regardless of the value of <paramref name="throwOnError" />. See the Exceptions section.</returns>
         <remarks>
@@ -9765,7 +9765,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  A null reference (Nothing in Visual Basic), to use the <see cref="P:System.Type.DefaultBinder" />. Note that explicitly defining a <see cref="T:System.Reflection.Binder" /> object may be required for successfully invoking method overloads with variable arguments.</param>
         <param name="target">The object on which to invoke the specified member.</param>
         <param name="args">An array containing the arguments to pass to the member to invoke.</param>
-        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <c>args</c> array. A parameter's associated attributes are stored in the member's signature.  
+        <param name="modifiers">An array of <see cref="T:System.Reflection.ParameterModifier" /> objects representing the attributes associated with the corresponding element in the <paramref name="args" /> array. A parameter's associated attributes are stored in the member's signature.  
   
  The default binder processes this parameter only when calling a COM component.</param>
         <param name="culture">The <see cref="T:System.Globalization.CultureInfo" /> object representing the globalization locale to use, which may be necessary for locale-specific conversions, such as converting a numeric String to a Double.  
@@ -9773,7 +9773,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  -or-  
   
  A null reference (<see langword="Nothing" /> in Visual Basic) to use the current thread's <see cref="T:System.Globalization.CultureInfo" />.</param>
-        <param name="namedParameters">An array containing the names of the parameters to which the values in the <c>args</c> array are passed.</param>
+        <param name="namedParameters">An array containing the names of the parameters to which the values in the <paramref name="args" /> array are passed.</param>
         <summary>When overridden in a derived class, invokes the specified member, using the specified binding constraints and matching the specified argument list, modifiers and culture.</summary>
         <returns>An object representing the return value of the invoked member.</returns>
         <remarks>
@@ -14069,7 +14069,7 @@ Types that are defined in the .NET Standard are not marked with <xref:System.Ser
         <param name="throwIfNotFound">
           <see langword="true" /> to throw a <see cref="T:System.TypeLoadException" /> if the type cannot be found; <see langword="false" /> to return <see langword="null" /> if the type cannot be found. Specifying <see langword="false" /> also suppresses some other exception conditions, but not all of them. See the Exceptions section.</param>
         <param name="ignoreCase">
-          <see langword="true" /> to perform a case-insensitive search for <c>typeName</c>; <see langword="false" /> to perform a case-sensitive search for <c>typeName</c>.</param>
+          <see langword="true" /> to perform a case-insensitive search for <paramref name="typeName" />; <see langword="false" /> to perform a case-sensitive search for <paramref name="typeName" />.</param>
         <summary>Gets the <see cref="T:System.Type" /> with the specified name, specifying whether to perform a case-sensitive search and whether to throw an exception if the type is not found. The type is loaded for reflection only, not for execution.</summary>
         <returns>The type with the specified name, if found; otherwise, <see langword="null" />. If the type is not found, the <paramref name="throwIfNotFound" /> parameter specifies whether <see langword="null" /> is returned or an exception is thrown. In some cases, an exception is thrown regardless of the value of <paramref name="throwIfNotFound" />. See the Exceptions section.</returns>
         <remarks>

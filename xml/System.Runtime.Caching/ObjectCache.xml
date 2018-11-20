@@ -366,7 +366,7 @@
       </Parameters>
       <Docs>
         <param name="keys">The unique identifiers for cache entries to monitor.</param>
-        <param name="regionName">Optional. A named region in the cache where the cache keys in the <c>keys</c> parameter exist, if regions are implemented. The default value for the optional parameter is <see langword="null" />.</param>
+        <param name="regionName">Optional. A named region in the cache where the cache keys in the <paramref name="keys" /> parameter exist, if regions are implemented. The default value for the optional parameter is <see langword="null" />.</param>
         <summary>When overridden in a derived class, creates a <see cref="T:System.Runtime.Caching.CacheEntryChangeMonitor" /> object that can trigger events in response to changes to specified cache entries.</summary>
         <returns>A change monitor that monitors cache entries in the cache.</returns>
         <remarks>

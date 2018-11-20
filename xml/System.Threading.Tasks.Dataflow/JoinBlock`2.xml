@@ -464,7 +464,7 @@
         <Parameter Name="item" Type="System.Tuple&lt;T1,T2&gt;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="filter">The predicate value must successfully pass in order for it to be received.  <c>filter</c> may be <see langword="null" />, in which case all items will pass.</param>
+        <param name="filter">The predicate value must successfully pass in order for it to be received.  <paramref name="filter" /> may be <see langword="null" />, in which case all items will pass.</param>
         <param name="item">The item received from the source.</param>
         <summary>Attempts to synchronously receive an available output item from the <see cref="T:System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1" />.</summary>
         <returns>

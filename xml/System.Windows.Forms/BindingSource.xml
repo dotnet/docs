@@ -1404,7 +1404,7 @@
       </Parameters>
       <Docs>
         <param name="prop">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to search for.</param>
-        <param name="key">The value of <c>prop</c> to match.</param>
+        <param name="key">The value of <paramref name="prop" /> to match.</param>
         <summary>Searches for the index of the item that has the given property descriptor.</summary>
         <returns>The zero-based index of the item that has the given value for <see cref="T:System.ComponentModel.PropertyDescriptor" />.</returns>
         <remarks>
@@ -1456,7 +1456,7 @@
       </Parameters>
       <Docs>
         <param name="propertyName">The name of the property to search for.</param>
-        <param name="key">The value of the item with the specified <c>propertyName</c> to find.</param>
+        <param name="key">The value of the item with the specified <paramref name="propertyName" /> to find.</param>
         <summary>Returns the index of the item in the list with the specified property name and value.</summary>
         <returns>The zero-based index of the item with the specified property name and value.</returns>
         <remarks>
@@ -1670,7 +1670,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
         <param name="value">The <see cref="T:System.Object" /> to insert. The value can be <see langword="null" />.</param>
         <summary>Inserts an item into the list at the specified index.</summary>
         <remarks>

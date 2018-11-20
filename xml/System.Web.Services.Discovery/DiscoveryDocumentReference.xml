@@ -104,7 +104,7 @@
         <Parameter Name="href" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="href">Reference to a discovery document. The <see cref="P:System.Web.Services.Discovery.DiscoveryDocumentReference.Ref" /> property is set to the value of <c>href</c>.</param>
+        <param name="href">Reference to a discovery document. The <see cref="P:System.Web.Services.Discovery.DiscoveryDocumentReference.Ref" /> property is set to the value of <paramref name="href" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryDocumentReference" /> class, setting the <see cref="P:System.Web.Services.Discovery.DiscoveryDocumentReference.Ref" /> property to the value of <paramref name="href" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -428,7 +428,7 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="document">The <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> to write into <c>stream</c>.</param>
+        <param name="document">The <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> to write into <paramref name="stream" />.</param>
         <param name="stream">The <see cref="T:System.IO.Stream" /> into which the serialized discovery document is written.</param>
         <summary>Writes the passed <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> into the passed <see cref="T:System.IO.Stream" />.</summary>
         <remarks>

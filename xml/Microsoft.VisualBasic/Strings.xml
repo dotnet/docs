@@ -72,7 +72,7 @@
         <Parameter Name="String" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <c>String</c> is a <see langword="String" /> expression, only the first character of the string is used for input. If <c>String</c> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
+        <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <paramref name="String" /> is a <see langword="String" /> expression, only the first character of the string is used for input. If <paramref name="String" /> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
         <summary>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</summary>
         <returns>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</returns>
         <remarks>
@@ -124,7 +124,7 @@
         <Parameter Name="String" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <c>String</c> is a <see langword="String" /> expression, only the first character of the string is used for input. If <c>String</c> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
+        <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <paramref name="String" /> is a <see langword="String" /> expression, only the first character of the string is used for input. If <paramref name="String" /> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
         <summary>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</summary>
         <returns>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</returns>
         <remarks>
@@ -186,7 +186,7 @@
         <Parameter Name="String" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <c>String</c> is a <see langword="String" /> expression, only the first character of the string is used for input. If <c>String</c> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
+        <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <paramref name="String" /> is a <see langword="String" /> expression, only the first character of the string is used for input. If <paramref name="String" /> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
         <summary>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</summary>
         <returns>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</returns>
         <remarks>
@@ -238,7 +238,7 @@
         <Parameter Name="String" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <c>String</c> is a <see langword="String" /> expression, only the first character of the string is used for input. If <c>String</c> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
+        <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <paramref name="String" /> is a <see langword="String" /> expression, only the first character of the string is used for input. If <paramref name="String" /> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
         <summary>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</summary>
         <returns>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</returns>
         <remarks>
@@ -432,7 +432,7 @@
       <Docs>
         <param name="Source">Required. One-dimensional array of strings to be searched.</param>
         <param name="Match">Required. String to search for.</param>
-        <param name="Include">Optional. <see langword="Boolean" /> value indicating whether to return substrings that include or exclude <c>Match</c>. If <c>Include</c> is <see langword="True" />, the <see langword="Filter" /> function returns the subset of the array that contains <c>Match</c> as a substring. If <c>Include</c> is <see langword="False" />, the <see langword="Filter" /> function returns the subset of the array that does not contain <c>Match</c> as a substring.</param>
+        <param name="Include">Optional. <see langword="Boolean" /> value indicating whether to return substrings that include or exclude <paramref name="Match" />. If <paramref name="Include" /> is <see langword="True" />, the <see langword="Filter" /> function returns the subset of the array that contains <paramref name="Match" /> as a substring. If <paramref name="Include" /> is <see langword="False" />, the <see langword="Filter" /> function returns the subset of the array that does not contain <paramref name="Match" /> as a substring.</param>
         <param name="Compare">Optional. Numeric value indicating the kind of string comparison to use. See "Settings" for values.</param>
         <summary>Returns a zero-based array containing a subset of a <see langword="String" /> array based on specified filter criteria.</summary>
         <returns>Returns a zero-based array containing a subset of a <see langword="String" /> array based on specified filter criteria.</returns>
@@ -499,7 +499,7 @@
       <Docs>
         <param name="Source">Required. One-dimensional array of strings to be searched.</param>
         <param name="Match">Required. String to search for.</param>
-        <param name="Include">Optional. <see langword="Boolean" /> value indicating whether to return substrings that include or exclude <c>Match</c>. If <c>Include</c> is <see langword="True" />, the <see langword="Filter" /> function returns the subset of the array that contains <c>Match</c> as a substring. If <c>Include</c> is <see langword="False" />, the <see langword="Filter" /> function returns the subset of the array that does not contain <c>Match</c> as a substring.</param>
+        <param name="Include">Optional. <see langword="Boolean" /> value indicating whether to return substrings that include or exclude <paramref name="Match" />. If <paramref name="Include" /> is <see langword="True" />, the <see langword="Filter" /> function returns the subset of the array that contains <paramref name="Match" /> as a substring. If <paramref name="Include" /> is <see langword="False" />, the <see langword="Filter" /> function returns the subset of the array that does not contain <paramref name="Match" /> as a substring.</param>
         <param name="Compare">Optional. Numeric value indicating the kind of string comparison to use. See "Settings" for values.</param>
         <summary>Returns a zero-based array containing a subset of a <see langword="String" /> array based on specified filter criteria.</summary>
         <returns>Returns a zero-based array containing a subset of a <see langword="String" /> array based on specified filter criteria.</returns>
@@ -1027,7 +1027,7 @@
       </Parameters>
       <Docs>
         <param name="str">Required. Any valid <see langword="String" /> expression.</param>
-        <param name="Index">Required. <see langword="Integer" /> expression. The (1-based) index of the character in <c>str</c> to be returned.</param>
+        <param name="Index">Required. <see langword="Integer" /> expression. The (1-based) index of the character in <paramref name="str" /> to be returned.</param>
         <summary>Returns a <see langword="Char" /> value representing the character from the specified index in the supplied string.</summary>
         <returns>
           <see langword="Char" /> value representing the character from the specified index in the supplied string.</returns>
@@ -1092,7 +1092,7 @@
       <Docs>
         <param name="String1">Required. <see langword="String" /> expression being searched.</param>
         <param name="String2">Required. <see langword="String" /> expression sought.</param>
-        <param name="Compare">Optional. Specifies the type of string comparison. If <c>Compare</c> is omitted, the <see langword="Option Compare" /> setting determines the type of comparison.</param>
+        <param name="Compare">Optional. Specifies the type of string comparison. If <paramref name="Compare" /> is omitted, the <see langword="Option Compare" /> setting determines the type of comparison.</param>
         <summary>Returns an integer specifying the start position of the first occurrence of one string within another.</summary>
         <returns>
           <list type="table">
@@ -1205,7 +1205,7 @@
         <param name="Start">Optional. Numeric expression that sets the starting position for each search. If omitted, search begins at the first character position. The start index is 1-based.</param>
         <param name="String1">Required. <see langword="String" /> expression being searched.</param>
         <param name="String2">Required. <see langword="String" /> expression sought.</param>
-        <param name="Compare">Optional. Specifies the type of string comparison. If <c>Compare</c> is omitted, the <see langword="Option Compare" /> setting determines the type of comparison.</param>
+        <param name="Compare">Optional. Specifies the type of string comparison. If <paramref name="Compare" /> is omitted, the <see langword="Option Compare" /> setting determines the type of comparison.</param>
         <summary>Returns an integer specifying the start position of the first occurrence of one string within another.</summary>
         <returns>
           <list type="table">
@@ -1322,7 +1322,7 @@
       <Docs>
         <param name="StringCheck">Required. String expression being searched.</param>
         <param name="StringMatch">Required. String expression being searched for.</param>
-        <param name="Start">Optional. Numeric expression setting the one-based starting position for each search, starting from the left side of the string. If <c>Start</c> is omitted then –1 is used, meaning the search begins at the last character position. Search then proceeds from right to left.</param>
+        <param name="Start">Optional. Numeric expression setting the one-based starting position for each search, starting from the left side of the string. If <paramref name="Start" /> is omitted then –1 is used, meaning the search begins at the last character position. Search then proceeds from right to left.</param>
         <param name="Compare">Optional. Numeric value indicating the kind of comparison to use when evaluating substrings. If omitted, a binary comparison is performed. See Settings for values.</param>
         <summary>Returns the position of the first occurrence of one string within another, starting from the right side of the string.</summary>
         <returns>
@@ -1438,7 +1438,7 @@
       </Parameters>
       <Docs>
         <param name="SourceArray">Required. One-dimensional array containing substrings to be joined.</param>
-        <param name="Delimiter">Optional. Any string, used to separate the substrings in the returned string. If omitted, the space character (" ") is used. If <c>Delimiter</c> is a zero-length string ("") or <see langword="Nothing" />, all items in the list are concatenated with no delimiters.</param>
+        <param name="Delimiter">Optional. Any string, used to separate the substrings in the returned string. If omitted, the space character (" ") is used. If <paramref name="Delimiter" /> is a zero-length string ("") or <see langword="Nothing" />, all items in the list are concatenated with no delimiters.</param>
         <summary>Returns a string created by joining a number of substrings contained in an array.</summary>
         <returns>Returns a string created by joining a number of substrings contained in an array.</returns>
         <remarks>
@@ -1485,7 +1485,7 @@
       </Parameters>
       <Docs>
         <param name="SourceArray">Required. One-dimensional array containing substrings to be joined.</param>
-        <param name="Delimiter">Optional. Any string, used to separate the substrings in the returned string. If omitted, the space character (" ") is used. If <c>Delimiter</c> is a zero-length string ("") or <see langword="Nothing" />, all items in the list are concatenated with no delimiters.</param>
+        <param name="Delimiter">Optional. Any string, used to separate the substrings in the returned string. If omitted, the space character (" ") is used. If <paramref name="Delimiter" /> is a zero-length string ("") or <see langword="Nothing" />, all items in the list are concatenated with no delimiters.</param>
         <summary>Returns a string created by joining a number of substrings contained in an array.</summary>
         <returns>Returns a string created by joining a number of substrings contained in an array.</returns>
         <remarks>
@@ -1640,7 +1640,7 @@
       </Parameters>
       <Docs>
         <param name="str">Required. <see langword="String" /> expression from which the leftmost characters are returned.</param>
-        <param name="Length">Required. <see langword="Integer" /> expression. Numeric expression indicating how many characters to return. If 0, a zero-length string ("") is returned. If greater than or equal to the number of characters in <c>str</c>, the entire string is returned.</param>
+        <param name="Length">Required. <see langword="Integer" /> expression. Numeric expression indicating how many characters to return. If 0, a zero-length string ("") is returned. If greater than or equal to the number of characters in <paramref name="str" />, the entire string is returned.</param>
         <summary>Returns a string containing a specified number of characters from the left side of a string.</summary>
         <returns>Returns a string containing a specified number of characters from the left side of a string.</returns>
         <remarks>
@@ -1700,7 +1700,7 @@
         <Parameter Name="Expression" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
@@ -1757,7 +1757,7 @@
         <Parameter Name="Expression" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
@@ -1814,7 +1814,7 @@
         <Parameter Name="Expression" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
@@ -1871,7 +1871,7 @@
         <Parameter Name="Expression" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
@@ -1928,7 +1928,7 @@
         <Parameter Name="Expression" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
@@ -1985,7 +1985,7 @@
         <Parameter Name="Expression" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
@@ -2042,7 +2042,7 @@
         <Parameter Name="Expression" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
@@ -2099,7 +2099,7 @@
         <Parameter Name="Expression" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
@@ -2156,7 +2156,7 @@
         <Parameter Name="Expression" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
@@ -2218,7 +2218,7 @@
         <Parameter Name="Expression" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
@@ -2279,7 +2279,7 @@
         <Parameter Name="Expression" Type="System.SByte" />
       </Parameters>
       <Docs>
-        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
@@ -2337,7 +2337,7 @@
         <Parameter Name="Expression" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
@@ -2394,7 +2394,7 @@
         <Parameter Name="Expression" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
@@ -2455,7 +2455,7 @@
         <Parameter Name="Expression" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
@@ -2517,7 +2517,7 @@
         <Parameter Name="Expression" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
@@ -2579,7 +2579,7 @@
         <Parameter Name="Expression" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
         <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
@@ -2742,7 +2742,7 @@
       </Parameters>
       <Docs>
         <param name="str">Required. <see langword="String" /> expression from which characters are returned.</param>
-        <param name="Start">Required. <see langword="Integer" /> expression. Starting position of the characters to return. If <c>Start</c> is greater than the number of characters in <c>str</c>, the <see langword="Mid" /> function returns a zero-length string (""). <c>Start</c> is one-based.</param>
+        <param name="Start">Required. <see langword="Integer" /> expression. Starting position of the characters to return. If <paramref name="Start" /> is greater than the number of characters in <paramref name="str" />, the <see langword="Mid" /> function returns a zero-length string (""). <paramref name="Start" /> is one-based.</param>
         <summary>Returns a string that contains all the characters starting from a specified position in a string.</summary>
         <returns>A string that consists of all the characters starting from the specified position in the string.</returns>
         <remarks>
@@ -2804,8 +2804,8 @@
       </Parameters>
       <Docs>
         <param name="str">Required. <see langword="String" /> expression from which characters are returned.</param>
-        <param name="Start">Required. <see langword="Integer" /> expression. Starting position of the characters to return. If <c>Start</c> is greater than the number of characters in <c>str</c>, the <see langword="Mid" /> function returns a zero-length string (""). <c>Start</c> is one based.</param>
-        <param name="Length">Optional. <see langword="Integer" /> expression. Number of characters to return. If omitted or if there are fewer than <c>Length</c> characters in the text (including the character at position <c>Start</c>), all characters from the start position to the end of the string are returned.</param>
+        <param name="Start">Required. <see langword="Integer" /> expression. Starting position of the characters to return. If <paramref name="Start" /> is greater than the number of characters in <paramref name="str" />, the <see langword="Mid" /> function returns a zero-length string (""). <paramref name="Start" /> is one based.</param>
+        <param name="Length">Optional. <see langword="Integer" /> expression. Number of characters to return. If omitted or if there are fewer than <paramref name="Length" /> characters in the text (including the character at position <paramref name="Start" />), all characters from the start position to the end of the string are returned.</param>
         <summary>Returns a string that contains a specified number of characters starting from a specified position in a string.</summary>
         <returns>A string that consists of the specified number of characters starting from the specified position in the string.</returns>
         <remarks>
@@ -2877,7 +2877,7 @@
         <param name="Expression">Required. String expression containing substring to replace.</param>
         <param name="Find">Required. Substring being searched for.</param>
         <param name="Replacement">Required. Replacement substring.</param>
-        <param name="Start">Optional. Position within <c>Expression</c> that starts a substring used for replacement. The return value of <see langword="Replace" /> is a string that begins at <c>Start</c>, with appropriate substitutions. If omitted, 1 is assumed.</param>
+        <param name="Start">Optional. Position within <paramref name="Expression" /> that starts a substring used for replacement. The return value of <see langword="Replace" /> is a string that begins at <paramref name="Start" />, with appropriate substitutions. If omitted, 1 is assumed.</param>
         <param name="Count">Optional. Number of substring substitutions to perform. If omitted, the default value is –1, which means "make all possible substitutions."</param>
         <param name="Compare">Optional. Numeric value indicating the kind of comparison to use when evaluating substrings. See Settings for values.</param>
         <summary>Returns a string in which a specified substring has been replaced with another substring a specified number of times.</summary>
@@ -2949,7 +2949,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       </Parameters>
       <Docs>
         <param name="str">Required. <see langword="String" /> expression from which the rightmost characters are returned.</param>
-        <param name="Length">Required. <see langword="Integer" />. Numeric expression indicating how many characters to return. If 0, a zero-length string ("") is returned. If greater than or equal to the number of characters in <c>str</c>, the entire string is returned.</param>
+        <param name="Length">Required. <see langword="Integer" />. Numeric expression indicating how many characters to return. If 0, a zero-length string ("") is returned. If greater than or equal to the number of characters in <paramref name="str" />, the entire string is returned.</param>
         <summary>Returns a string containing a specified number of characters from the right side of a string.</summary>
         <returns>Returns a string containing a specified number of characters from the right side of a string.</returns>
         <remarks>
@@ -3149,8 +3149,8 @@ Dim aString As String = Replace(TestString, "o", "i")
       </Parameters>
       <Docs>
         <param name="Expression">Required. <see langword="String" /> expression containing substrings and delimiters.</param>
-        <param name="Delimiter">Optional. Any single character used to identify substring limits. If <c>Delimiter</c> is omitted, the space character (" ") is assumed to be the delimiter.</param>
-        <param name="Limit">Optional. Maximum number of substrings into which the input string should be split. The default, –1, indicates that the input string should be split at every occurrence of the <c>Delimiter</c> string.</param>
+        <param name="Delimiter">Optional. Any single character used to identify substring limits. If <paramref name="Delimiter" /> is omitted, the space character (" ") is assumed to be the delimiter.</param>
+        <param name="Limit">Optional. Maximum number of substrings into which the input string should be split. The default, –1, indicates that the input string should be split at every occurrence of the <paramref name="Delimiter" /> string.</param>
         <param name="Compare">Optional. Numeric value indicating the comparison to use when evaluating substrings. See "Settings" for values.</param>
         <summary>Returns a zero-based, one-dimensional array containing a specified number of substrings.</summary>
         <returns>
@@ -3231,7 +3231,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <Docs>
         <param name="String1">Required. Any valid <see langword="String" /> expression.</param>
         <param name="String2">Required. Any valid <see langword="String" /> expression.</param>
-        <param name="Compare">Optional. Specifies the type of string comparison. If <c>Compare</c> is omitted, the <see langword="Option Compare" /> setting determines the type of comparison.</param>
+        <param name="Compare">Optional. Specifies the type of string comparison. If <paramref name="Compare" /> is omitted, the <see langword="Option Compare" /> setting determines the type of comparison.</param>
         <summary>Returns -1, 0, or 1, based on the result of a string comparison.</summary>
         <returns>The <see langword="StrComp" /> function has the following return values.  
   
@@ -3541,7 +3541,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <Parameter Name="Expression" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Expression">Required. String expression whose characters are to be reversed. If <c>Expression</c> is a zero-length string (""), a zero-length string is returned.</param>
+        <param name="Expression">Required. String expression whose characters are to be reversed. If <paramref name="Expression" /> is a zero-length string (""), a zero-length string is returned.</param>
         <summary>Returns a string in which the character order of a specified string is reversed.</summary>
         <returns>Returns a string in which the character order of a specified string is reversed.</returns>
         <remarks>

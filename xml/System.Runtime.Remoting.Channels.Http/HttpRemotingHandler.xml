@@ -77,8 +77,8 @@
         <Parameter Name="srvID" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="type">The constructor ignores the <c>type</c> parameter.</param>
-        <param name="srvID">The constructor ignores the <c>srvID</c> parameter.</param>
+        <param name="type">The constructor ignores the <paramref name="type" /> parameter.</param>
+        <param name="srvID">The constructor ignores the <paramref name="srvID" /> parameter.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler" /> class with default values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

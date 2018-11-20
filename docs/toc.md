@@ -249,7 +249,6 @@
 ### [REST Client](csharp/tutorials/console-webapiclient.md)
 ### [Inheritance in C# and .NET](csharp/tutorials/inheritance.md)
 ### [Working with LINQ](csharp/tutorials/working-with-linq.md)
-### [Microservices hosted in Docker](csharp/tutorials/microservices.md)
 ### [String Interpolation](csharp/tutorials/string-interpolation.md)
 ### [Using Attributes](csharp/tutorials/attributes.md)
 ## [Tour of C#](csharp/tour-of-csharp/)

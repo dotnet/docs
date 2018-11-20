@@ -13,7 +13,7 @@ ms.assetid: e5d5a5cc-636b-4bff-b9c8-a8edc6207c22
 
 The C# language specification is the definitive source for C# syntax and usage. This specification contains detailed information about all aspects of the language, including many points that the documentation for C# doesn't cover.
 
-Version 5.0 of the specification has been released in December 2017 as the [Standard ECMA-334 5th Edition](https://www.ecma-international.org/publications/files/ECMA-ST/Ecma-334.pdf) document.
+Version 5.0 of the specification has been released in December 2017 as the [Standard ECMA-334 5th Edition](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf) document.
 
 Version 6.0 of the specification has not been approved as a standard. This site contains the [*draft* C# 6.0 specification](../../../../_csharplang/spec/introduction.md). It's built from the markdown files contained in the [dotnet/csharplang GitHub repository](https://github.com/dotnet/csharplang/blob/master/spec/README.md).
 

@@ -1,4 +1,4 @@
-﻿<Type Name="DateTime" FullName="System.DateTime">
+<Type Name="DateTime" FullName="System.DateTime">
   <TypeSignature Language="C#" Value="public struct DateTime : IComparable, IComparable&lt;DateTime&gt;, IConvertible, IEquatable&lt;DateTime&gt;, IFormattable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DateTime extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;valuetype System.DateTime&gt;, class System.IConvertible, class System.IEquatable`1&lt;valuetype System.DateTime&gt;, class System.IFormattable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.DateTime" />
@@ -450,9 +450,9 @@ You can add or subtract a time interval from a <xref:System.DateTime> object. Ti
 
 Equality comparisons for <xref:System.DateTime> values are exact. That means two values must be expressed as the same number of ticks to be considered equal. That precision is often unecessary or even incorrect for many applications. Often, you want to test if <xref:System.DateTime> objects are **roughly equal**. 
 
-The following example demonstrates how to compare roughly equivalent <xref:System.DateTime> . It accepts a small margin of difference when declaring them equal.  
+The following example demonstrates how to compare roughly equivalent <xref:System.DateTime> values. It accepts a small margin of difference when declaring them equal.  
   
-<a name="comparison-02"></a>
+<a name="comparison-01"></a>
 [!code-csharp[System.DateTime.Comparisons#1](~/samples/snippets/csharp/System.DateTime/DateTimeComparisons.cs#1)]
 [!code-vb[System.DateTime.Comparisons#1](~/samples/snippets/visualbasic/System.DateTime/DateTimeComparisons.vb#1)]  
 

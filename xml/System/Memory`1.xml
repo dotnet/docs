@@ -32,7 +32,7 @@
   
 ## Remarks  
   
-Like <xref:System.Span%601>, `Memory<T>` represents a contiguous region of memory. Unlike <xref:System.Span%601>, however, `Memory<T>` is not a [ref struct](~/docs/csharp/reference-semantics-with-value-types.md?view=netcore-2.1.md#ref-struct-type). This means that `Memory<T>` can be placed on the managed heap, whereas <xref:System.Span%601> cannot. As a result, the `Memory<T>` structure does not have the same restrictions as a <xref:System.Span%601> instance. In particular:
+Like <xref:System.Span%601>, `Memory<T>` represents a contiguous region of memory. Unlike <xref:System.Span%601>, however, `Memory<T>` is not a [ref struct](~/docs/csharp/language-reference/keywords/ref.md#ref-struct-types). This means that `Memory<T>` can be placed on the managed heap, whereas <xref:System.Span%601> cannot. As a result, the `Memory<T>` structure does not have the same restrictions as a <xref:System.Span%601> instance. In particular:
 
 - It can be used as a field in a class.
 

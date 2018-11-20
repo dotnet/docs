@@ -28,8 +28,7 @@ The following learners are available for binary classification tasks:
 * [AveragedPerceptronTrainer](xref:Microsoft.ML.Trainers.Online.AveragedPerceptronTrainer)
 * [BinaryClassificationGamTrainer](xref:Microsoft.ML.Trainers.FastTree.BinaryClassificationGamTrainer)
 * [FastForestClassification](xref:Microsoft.ML.Trainers.FastTree.FastForestClassification)
-* [FastTreeBinaryClassificationTrainer](xref
-:Microsoft.ML.Trainers.FastTree.FastTreeBinaryClassificationTrainer)
+* [FastTreeBinaryClassificationTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryClassificationTrainer)
 * [FieldAwareFactorizationMachineTrainer](xref:Microsoft.ML.Runtime.FactorizationMachine.FieldAwareFactorizationMachineTrainer)
 * [LightGbmBinaryTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmBinaryTrainer)
 * [LinearClassificationTrainer](xref:Microsoft.ML.Trainers.LinearClassificationTrainer)

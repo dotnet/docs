@@ -40,7 +40,7 @@ The following example shows the contents of a *global.json* file:
 ```json
 {
   "sdk": {
-    "version": "2.1.300"
+    "version": "2.1.500"
   }
 }
 ```
@@ -58,7 +58,7 @@ To install additional .NET Core SDK versions on your machine, visit the [.NET Do
 You can create a new the *global.json* file in the current directory by executing the [dotnet new](dotnet-new.md) command, similar to the following example:
 
 ```console
-dotnet new globaljson --sdk-version 2.1.300
+dotnet new globaljson --sdk-version 2.1.500
 ```
 
 ## Matching rules

@@ -27,12 +27,18 @@ The following learners are available for binary classification tasks:
 
 * [AveragedPerceptronTrainer](xref:Microsoft.ML.Trainers.Online.AveragedPerceptronTrainer)
 * [BinaryClassificationGamTrainer](xref:Microsoft.ML.Trainers.FastTree.BinaryClassificationGamTrainer)
+* [EnsembleTrainer](xref:Microsoft.ML.Runtime.Ensemble.EnsembleTrainer)
 * [FastForestClassification](xref:Microsoft.ML.Trainers.FastTree.FastForestClassification)
+* [FastTreeBinaryClassificationFastTreeTrainer](xref:Microsoft.ML.Runtime.FastTreeBinaryClassificationFastTreeTrainer)
 * [FastTreeBinaryClassificationTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryClassificationTrainer)
 * [FieldAwareFactorizationMachineTrainer](xref:Microsoft.ML.Runtime.FactorizationMachine.FieldAwareFactorizationMachineTrainer)
+* [FixedPlattCalibratorCalibratorTrainer](xref:Microsoft.ML.Runtime.FixedPlattCalibratorCalibratorTrainer)
 * [LightGbmBinaryTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmBinaryTrainer)
 * [LinearClassificationTrainer](xref:Microsoft.ML.Trainers.LinearClassificationTrainer)
 * [LinearSvm](xref:Microsoft.ML.Trainers.Online.LinearSvm)
+* [NaiveCalibratorCalibratorTrainer](xref:Microsoft.ML.Runtime.NaiveCalibratorCalibratorTrainer)
+* [PavCalibratorCalibratorTrainer](xref:Microsoft.ML.Runtime.PavCalibratorCalibratorTrainer)
+* [PlattCalibratorCalibratorTrainer](xref:Microsoft.ML.Runtime.PlattCalibratorCalibratorTrainer)
 * [PriorTrainer](xref:Microsoft.ML.Runtime.Learners.PriorTrainer)
 * [RandomTrainer](xref:Microsoft.ML.Runtime.Learners.RandomTrainer)
 * [StochasticGradientDescentClassificationTrainer](xref:Microsoft.ML.Trainers.StochasticGradientDescentClassificationTrainer)
@@ -55,6 +61,7 @@ The following learners are available for multiclass classification tasks:
 * [LightGbmMulticlassTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmMulticlassTrainer)
 * [MetaMulticlassTrainer<TTransformer,TModel>](xref:Microsoft.ML.Runtime.Learners.MetaMulticlassTrainer%602)
 * [MultiClassClassificationTrainers](xref:Microsoft.ML.Trainers.MultiClassClassificationTrainers)
+* [MulticlassDataPartitionEnsembleTrainer](xref:Microsoft.ML.Runtime.Ensemble.MulticlassDataPartitionEnsembleTrainer)
 * [MultiClassNaiveBayesTrainer](xref:Microsoft.ML.Trainers.MultiClassNaiveBayesTrainer)
 * [Ova](xref:Microsoft.ML.Runtime.Learners.Ova)
 * [Pkpd](xref:Microsoft.ML.Runtime.Learners.Pkpd)
@@ -76,12 +83,14 @@ A [supervised machine learning](glossary.md#supervised-machine-learning) task th
 The following learners are available for regression tasks:
 
 * [FastTreeRegressionTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer)
+* [FastTreeRegressionFastTreeTrainer](xref:Microsoft.ML.Runtime.FastTreeRegressionFastTreeTrainer)
 * [FastTreeTweedieTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeTweedieTrainer)
 * [LightGbmRegressorTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmRegressorTrainer)
 * [LogisticRegression](xref:Microsoft.ML.Runtime.Learners.LogisticRegression)
 * [OlsLinearRegressionTrainer](xref:Microsoft.ML.Trainers.HalLearners.OlsLinearRegressionTrainer)
 * [OnlineGradientDescentTrainer](xref:Microsoft.ML.Trainers.Online.OnlineGradientDescentTrainer)
 * [PoissonRegression](xref:Microsoft.ML.Trainers.PoissonRegression)
+* [RegressionEnsembleTrainer](Microsoft.ML.Runtime.Ensemble.RegressionEnsembleTrainer)
 * [RegressionGamTrainer](xref:Microsoft.ML.Trainers.FastTree.RegressionGamTrainer)
 * [SdcaRegressionTrainer](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer)
 * [FastTree.SingleTrainer](xref:Microsoft.ML.Trainers.FastTree.SingleTrainer)
@@ -130,8 +139,10 @@ A ​​​​​​​​​ranking task constructs a ranker from a set of labe
 
 The following learners are available for ranking tasks:
 
-* [LightGbmRankingTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmRankingTrainer)
+* [FastTreeRankingFastTreeTrainer](xref:Microsoft.ML.Runtime.FastTreeRankingFastTreeTrainer)
 * [FastTreeRankingTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeRankingTrainer)
+* [FastTreeTweedieRegressionFastTreeTrainer](xref:Microsoft.ML.Runtime.FastTreeTweedieRegressionFastTreeTrainer)
+* [LightGbmRankingTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmRankingTrainer)
 
 ## Recommendation
 

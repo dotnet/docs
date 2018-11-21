@@ -45,9 +45,7 @@
 >  The <xref:System.Diagnostics.ConditionalAttribute> is applied to this class, specifying the preprocessing symbol "CODE_ANALYSIS" as the conditional symbol that determines whether the attribute call is included or omitted. If the symbol is defined, the attribute call is included; otherwise, the call is omitted.  
 >   
 >  When you right-click a Code Analysis warning in the Visual Studio **Error List** and then click **Suppress Message(s)**, a **SuppressMessage** attribute is added either in your code or to the project's global suppressions file. For more information about the **SuppressMessage** attribute and its use in Visual Studio, see [In Source Suppression Overview](/visualstudio/code-quality/in-source-suppression-overview).  
-  
-   
-  
+
 ## Examples  
  The following code example shows the use of the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribute to suppress performance warning messages.  
   
@@ -94,15 +92,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `category` parameter value is specific to the analysis tool and categorizes the rule identified by the `checkId` parameter. The two parameters concatenated together form a unique identifier for the rule.  
+
+The `category` parameter value is specific to the analysis tool and categorizes the rule identified by the `checkId` parameter. The two parameters concatenated together form a unique identifier for the rule.  
   
 > [!NOTE]
->  The preprocessor symbol "CODE_ANALYSIS" must be defined for this attribute to be effective. The absence of the preprocessor symbol results in the attribute not being applied.  
-  
-   
+> The preprocessor symbol "CODE_ANALYSIS" must be defined for this attribute to be effective. The absence of the preprocessor symbol results in the attribute not being applied.
   
 ## Examples  
- The following code example shows the use of the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribute to suppress warnings for the `Microsoft.Performance` category and the `CA1801` and `CA1804` check identifiers. This code example is part of a larger example provided for the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> class.  
+
+The following code example shows the use of the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribute to suppress warnings for the `Microsoft.Performance` category and the `CA1801` and `CA1804` check identifiers. This code example is part of a larger example provided for the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> class.  
   
  [!code-csharp[System.Diagnostics.CodeAnalysis.SuppressMessageAttribute#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.CodeAnalysis.SuppressMessageAttribute/CS/program.cs#2)]
  [!code-vb[System.Diagnostics.CodeAnalysis.SuppressMessageAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.CodeAnalysis.SuppressMessageAttribute/VB/program.vb#2)]  
@@ -145,9 +143,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Category%2A> property describes the tool or tool analysis category for which a message suppression attribute applies.  
-  
-   
+
+The <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Category%2A> property describes the tool or tool analysis category for which a message suppression attribute applies.
   
 ## Examples  
  The following code example shows the use of the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribute to suppress warnings for the `Microsoft.Performance` category and the `CA1801` and `CA1804` check identifiers. This code example is part of a larger example provided for the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> class.  
@@ -193,9 +190,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Concatenated together, the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Category%2A> and <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.CheckId%2A> properties form a unique check identifier.  
-  
-   
+
+Concatenated together, the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Category%2A> and <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.CheckId%2A> properties form a unique check identifier.
   
 ## Examples  
  The following code example shows the use of the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribute to suppress warnings for the `Microsoft.Performance` category and the `CA1801` and `CA1804` check identifiers. This code example is part of a larger example provided for the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> class.  
@@ -274,9 +270,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.MessageId%2A> property is an optional argument that specifies additional exclusion where the literal metadata target is not sufficiently precise. For example, the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> cannot be applied within a method, and it may be desirable to suppress a violation against a statement in the method that will give a rule violation, but not against all statements in the method.  
-  
-   
+
+The <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.MessageId%2A> property is an optional argument that specifies additional exclusion where the literal metadata target is not sufficiently precise. For example, the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> cannot be applied within a method, and it may be desirable to suppress a violation against a statement in the method that will give a rule violation, but not against all statements in the method.
   
 ## Examples  
  The following code example shows the use of the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribute to suppress warnings for a specific parameter in a method declaration and a specific field in the method. This code example is part of a larger example provided for the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> class.  
@@ -321,8 +316,9 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- The <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope%2A> property is an optional argument that specifies the metadata scope for which the attribute is relevant. Possible values for managed metadata include "member", "resource", "module", "type", "method", or "namespace".  
+## Remarks
+
+The <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope%2A> property is an optional argument that specifies the metadata scope for which the attribute is relevant. Possible values for managed metadata include "member", "resource", "module", "type", "method", or "namespace". For more information about scopes, see [Suppress code analysis warnings](/visualstudio/code-quality/in-source-suppression-overview#suppressmessage-attribute).  
   
  ]]></format>
         </remarks>

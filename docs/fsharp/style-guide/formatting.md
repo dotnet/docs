@@ -635,7 +635,7 @@ type C() =
 
 ### Formatting multiple attributes
 
-When attributes are applied to a construct that is not a parameter, they should be placed such that there is one attribute per line:
+When multiple attributes are applied to a construct that is not a parameter, they should be placed such that there is one attribute per line:
 
 ```fsharp
 [<Struct>]

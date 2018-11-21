@@ -2,8 +2,7 @@
 title: Train a machine learning model with data that's not in a text file - ML.NET 
 description: Discover how to use ML.NET to load non-file training data for machine learning model training as part of the prediction pipeline.
 ms.date: 11/07/2018
-ms.topic: how-to
-ms.custom: mvc
+ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use ML.NET to train a machine learning model with data that's not in a text file as part of the prediction pipeline for later use in my applications.
 ---
 # Train a machine learning model with data that's not in a text file - ML.NET

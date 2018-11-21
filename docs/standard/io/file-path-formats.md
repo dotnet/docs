@@ -2,7 +2,6 @@
 title: "File path formats on Windows systems"
 ms.date: "06/28/2018"
 ms.technology: dotnet-standard
-ms.topic: "article"
 helpviewer_keywords: 
   - "I/O, long paths"
   - "long paths"

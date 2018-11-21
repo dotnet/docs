@@ -262,7 +262,7 @@ Contrast that with reference types in those same situations:
 
 - Storage for reference types are heap allocated for local variables and method arguments. The reference is stored on the stack.
 - Storage for reference types that are members of other objects are separately allocated on the heap. The containing object stores the reference.
-- Storage for value type return values is heap allocated. The reference to that storage is stored on the stack.
+- Storage for reference type return values is heap allocated. The reference to that storage is stored on the stack.
 
 Minimizing allocations comes with tradeoffs. You copy more memory when the size of the `struct` is larger than the size of a reference. A reference is typically 64 bits or 32 bits, and depends on the target machine CPU.
 

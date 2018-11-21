@@ -17,7 +17,7 @@ C# 7.0 adds a number of new features to the C# language:
 * [Pattern Matching](#pattern-matching)
     - You can create branching logic based on arbitrary types and values of the members of those types.
 * [`ref` locals and returns](#ref-locals-and-returns)
-    - Method arguments and local variables can be references to other storage.
+    - Method local variables and return values can be references to other storage.
 * [Local Functions](#local-functions)
     - You can nest functions inside other functions to limit their scope and visibility.
 * [More expression-bodied members](#more-expression-bodied-members)
@@ -405,6 +405,8 @@ efficient by avoiding copying values, or performing dereferencing operations
 multiple times.
 
 Adding `ref` to the return value is a [source compatible change](version-update-considerations.md#source-compatible-changes). Existing code compiles, but the ref return value is copied when assigned. Callers must update the storage for the return value to a `ref` local variable to store the return as a reference.
+
+For more information, see the [ref keyword](../language-reference/keywords/ref.md) article.
 
 ## Local functions
 

@@ -184,3 +184,7 @@ Pack the project for a specific [target framework](../../standard/frameworks.md)
 Pack the project and use a specific runtime (Windows 10) for the restore operation (.NET Core SDK 2.0 and later versions):
 
 `dotnet pack --runtime win10-x64`
+
+Pack the projec using a [.nuspec file](https://docs.microsoft.com/nuget/reference/msbuild-targets#packing-using-a-nuspec)
+
+`dotnet pack  ~/projects/app1/project.csproj /p:NuspecFile=~/projects/app1/project.nuspec /p:NuspecBasePath=~/projects/app1/nuget`

@@ -86,7 +86,7 @@ In order for the caller to modify the object's state, the reference return value
 
 The called method may also declare the return value as `ref readonly` to return the value by reference, and enforce that the calling code cannot modify the returned value. The calling method can avoid copying the returned valued by storing the value in a local [ref readonly](#ref-readonly-locals) variable.
 
-For an example, see [A ref returns and ref locals example](#a-ref-returns-and-ref-locals-example)
+For an example, see [A ref returns and ref locals example](#a-ref-returns-and-ref-locals-example).
 
 ## Ref locals
 
@@ -107,6 +107,8 @@ ref VeryLargeStruct reflocal = ref veryLargeStruct;
 ```
 
 Note that in both examples the `ref` keyword must be used in both places, or the compiler generates error CS8172, "Cannot initialize a by-reference variable with a value."
+
+Beginning with C# 7.3, the iteration variable of the `foreach` statement can be ref local or ref readonly local variable. For more information, see the [foreach statement](foreach-in.md) article.
 
 ## Ref readonly locals
 
@@ -147,6 +149,8 @@ You can combine modifiers to declare a struct as `readonly ref`. A `readonly ref
 ## See also
 
 - [Write safe efficient code](../../write-safe-efficient-code.md)  
+- [Ref returns and ref locals](../../programming-guide/classes-and-structs/ref-returns.md)
+- [Conditional ref expression](../operators/conditional-operator.md#conditional-ref-expression)
 - [Passing Parameters](../../programming-guide/classes-and-structs/passing-parameters.md)  
 - [Method Parameters](method-parameters.md)  
 - [C# Reference](../index.md)  

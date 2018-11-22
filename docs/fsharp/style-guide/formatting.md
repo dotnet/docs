@@ -604,3 +604,45 @@ let makeStreamReader x = new System.IO.StreamReader(path=x)
 // Not OK
 let makeStreamReader x = new System.IO.StreamReader(path = x)
 ```
+
+## Formatting attributes
+
+[Attributes](../language-reference/attributes.md) are placed above a construct:
+
+```fsharp
+[<SomeAttribute>]
+type MyClass() = ...
+
+[<RequireQualifiedAccess>]
+module M =
+    let f x = x
+
+[<Struct>]
+type MyRecord =
+    { Label1: int
+      Label2: string }
+```
+
+### Formatting attributes on parameters
+
+Attributes can also be places on parameters. In this case, place then on the same line as the parameter and before the name:
+
+```fsharp
+// Defines a class that takes an optional value as input defaulting to false.
+type C() =
+    member __.M([<Optional; DefaultParameterValue(false)>] doSomething: bool)
+```
+
+### Formatting multiple attributes
+
+When multiple attributes are applied to a construct that is not a parameter, they should be placed such that there is one attribute per line:
+
+```fsharp
+[<Struct>]
+[<IsByRefLike>]
+type MyRecord =
+    { Label1: int
+      Label2: string }
+```
+
+When applied to a parameter, they must be on the same line and separated by a `;` separator.

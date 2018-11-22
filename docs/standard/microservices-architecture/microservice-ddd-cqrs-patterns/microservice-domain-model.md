@@ -7,7 +7,7 @@ ms.date: 10/08/2018
 ---
 # Design a microservice domain model
 
-*Define one rich domain model for each business microservice or Bounded Context *
+*Define one rich domain model for each business microservice or Bounded Context.*
 
 Your goal is to create a single cohesive domain model for each business microservice or Bounded Context (BC). Keep in mind, however, that a BC or business microservice could sometimes be composed of several physical services that share a single domain model. The domain model must capture the rules, behavior, business language, and constraints of the single Bounded Context or business microservice that it represents.
 
@@ -21,7 +21,7 @@ The same identity (that is, the same `Id` value, although perhaps not the same d
 
 For instance, the buyer entity might have most of a person’s attributes that are defined in the user entity in the profile or identity microservice, including the identity. But the buyer entity in the ordering microservice might have fewer attributes, because only certain buyer data is related to the order process. The context of each microservice or Bounded Context impacts its domain model.
 
-*Domain entities must implement behavior in addition to implementing data attributes*
+*Domain entities must implement behavior in addition to implementing data attributes.*
 
 A domain entity in DDD must implement the domain logic or behavior related to the entity data (the object accessed in memory). For example, as part of an order entity class you must have business logic and operations implemented as methods for tasks such as adding an order item, data validation, and total calculation. The entity’s methods take care of the invariants and rules of the entity instead of having those rules spread across the application layer.
 

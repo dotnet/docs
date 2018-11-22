@@ -646,3 +646,17 @@ type MyRecord =
 ```
 
 When applied to a parameter, they must be on the same line and separated by a `;` separator.
+
+## Formatting literals
+
+[F# literals](../language-reference/literals.md) using the `Literal` attribute should use place the attribute on its own line and camelCase naming:
+
+```fsharp
+[<Literal>]
+let path = __SOURCE_DIRECTORY__ + "/" + __SOURCE_FILE__
+
+[<Literal>]
+let myUrl = "www.mywebsitethatiamworkingwith.com"
+```
+
+Avoid placing the attribute on the same line as the value.

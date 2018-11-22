@@ -405,13 +405,13 @@ Use a `|` for each clause of a match with no indentation. If the expression is s
 ```fsharp
 // OK
 match l with
-| { him = x; her = "Posh" } :: tail -> _
+| { him = x; her = "Posh" } :: tail -> x
 | _ :: tail -> findDavid tail
 | [] -> failwith "Couldn't find David"
 
 // Not OK
 match l with
-    | { him = x; her = "Posh" } :: tail -> _
+    | { him = x; her = "Posh" } :: tail -> x
     | _ :: tail -> findDavid tail
     | [] -> failwith "Couldn't find David"
 ```

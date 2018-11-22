@@ -1,4 +1,4 @@
-﻿<Type Name="CompilerError" FullName="Microsoft.CSharp.CompilerError">
+<Type Name="CompilerError" FullName="Microsoft.CSharp.CompilerError">
   <TypeSignature Language="C#" Value="public class CompilerError" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompilerError extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.CSharp.CompilerError" />
@@ -20,8 +20,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>**NOTE: This API is now obsolete.** The non-obsolete alternative is <see cref="T:Microsoft.CSharp.CSharpCodeProvider" />. Represents an error or diagnostic message reported by the compiler.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/csharp/language-reference/compiler-messages/index.md">C# Compiler Errors and Warnings</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,8 +39,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.CSharp.CompilerError" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The default constructor initializes any fields to their default values.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorLevel">
@@ -59,7 +67,7 @@
         <ReturnType>Microsoft.CSharp.ErrorLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the severity of this diagnostic.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +88,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the diagnostic message text.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +109,15 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the diagnostic number.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For the list of errors and waning numbers returned by the compiler, see [C\# Compiler Errors and Warnings](~/docs/csharp/language-reference/compiler-messages/index.md).
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceColumn">
@@ -122,7 +137,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the column of the source text that caused the diagnostic (1-based), or 0 if there is no column information.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,7 +158,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the file name of the source text that caused the diagnostic, or an empty string ("").</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,7 +179,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the line of the source text that caused the diagnostic (1-based), or 0 if there is no line information.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,9 +201,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a string that represents the current <see cref="T:Microsoft.CSharp.CompilerError" />.</summary>
+        <returns>A string that represents the current <see cref="T:Microsoft.CSharp.CompilerError" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Converts the diagnostic to a string of the following form:
+
+    [filename(line,column):] AAAAA CSXXXX: message
+
+In this example, AAAAA is either: "warning", "error", or "fatal error", and CSXXXX is the diagnostic number in decimal format. This is the same format seen at the command line.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

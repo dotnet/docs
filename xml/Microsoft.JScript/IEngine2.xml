@@ -1,4 +1,4 @@
-﻿<Type Name="IEngine2" FullName="Microsoft.JScript.IEngine2">
+<Type Name="IEngine2" FullName="Microsoft.JScript.IEngine2">
   <TypeSignature Language="C#" Value="public interface IEngine2" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEngine2" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IEngine2" />
@@ -258,10 +258,12 @@
         <Parameter Name="site" Type="Microsoft.Vsa.IVsaSite" />
       </Parameters>
       <Docs>
-        <param name="rootMoniker">To be added.</param>
-        <param name="site">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rootMoniker">The root moniker of the script engine. For more information, see <see cref="P:Microsoft.Vsa.IVsaEngine.RootMoniker" />.</param>
+        <param name="site">The host-implemented <see cref="T:Microsoft.Vsa.IVsaSite" /> object that is used by the script engine to communicate with the host. For more information, see <see cref="P:Microsoft.Vsa.IVsaEngine.Site" />.</param>
+        <summary>When implemented in a class, initializes the <see cref="T:Microsoft.JScript.Vsa.VsaEngine" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Vsa.VsaEngine" />
       </Docs>
     </Member>
     <Member MemberName="Interrupt">

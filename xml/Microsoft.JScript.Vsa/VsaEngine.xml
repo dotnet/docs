@@ -1,4 +1,4 @@
-﻿<Type Name="VsaEngine" FullName="Microsoft.JScript.Vsa.VsaEngine">
+<Type Name="VsaEngine" FullName="Microsoft.JScript.Vsa.VsaEngine">
   <TypeSignature Language="C#" Value="public sealed class VsaEngine : Microsoft.JScript.Vsa.BaseVsaEngine, Microsoft.JScript.IEngine2, Microsoft.JScript.IRedirectOutput" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit VsaEngine extends Microsoft.JScript.Vsa.BaseVsaEngine implements class Microsoft.JScript.IEngine2, class Microsoft.JScript.IRedirectOutput" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.VsaEngine" />
@@ -121,6 +121,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CompileEmpty">
@@ -148,6 +149,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConnectEvents">
@@ -198,6 +200,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateEngineAndGetGlobalScope">
@@ -227,6 +230,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateEngineAndGetGlobalScopeWithType">
@@ -263,6 +267,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace">
@@ -322,6 +327,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DisconnectEvents">
@@ -548,6 +554,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetCustomOption">
@@ -602,6 +609,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetItem">
@@ -627,6 +635,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetItemAtIndex">
@@ -652,6 +661,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetItemCount">
@@ -676,6 +686,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMainScope">
@@ -700,6 +711,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetModule">
@@ -727,6 +739,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetOriginalArrayConstructor">
@@ -751,6 +764,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetOriginalObjectConstructor">
@@ -775,6 +789,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetOriginalRegExpConstructor">
@@ -799,6 +814,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InitVsaEngine">
@@ -856,7 +872,7 @@
       <Docs>
         <param name="rootMoniker">To be added.</param>
         <param name="site">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -911,6 +927,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsValidNamespaceName">
@@ -1009,6 +1026,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PushScriptObject">
@@ -1035,6 +1053,7 @@
         <param name="obj">To be added.</param>
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegisterEventSource">
@@ -1064,6 +1083,7 @@
         <param name="name">To be added.</param>
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -1215,6 +1235,7 @@
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetCustomOption">
@@ -1272,6 +1293,7 @@
         <param name="output">To be added.</param>
         <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ValidateRootMoniker">

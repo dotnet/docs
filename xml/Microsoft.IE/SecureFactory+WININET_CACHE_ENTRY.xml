@@ -1,4 +1,4 @@
-﻿<Type Name="SecureFactory+WININET_CACHE_ENTRY" FullName="Microsoft.IE.SecureFactory+WININET_CACHE_ENTRY">
+<Type Name="SecureFactory+WININET_CACHE_ENTRY" FullName="Microsoft.IE.SecureFactory+WININET_CACHE_ENTRY">
   <TypeSignature Language="C#" Value="public enum SecureFactory.WININET_CACHE_ENTRY" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed SecureFactory/WININET_CACHE_ENTRY extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.IE.SecureFactory.WININET_CACHE_ENTRY" />
@@ -14,8 +14,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains information about an entry in the Internet cache.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="COOKIE_CACHE_ENTRY">

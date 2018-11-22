@@ -1,4 +1,4 @@
-﻿<Type Name="Manager" FullName="Microsoft.IE.Manager">
+<Type Name="Manager" FullName="Microsoft.IE.Manager">
   <TypeSignature Language="C#" Value="public class Manager : Microsoft.IE.IHostEx" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Manager extends System.Object implements class Microsoft.IE.IHostEx" />
   <TypeSignature Language="DocId" Value="T:Microsoft.IE.Manager" />
@@ -24,8 +24,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides methods for enabling managed code to execute as an ActiveX control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The Manager class initializes the properties that enable managed code to execute as an ActiveX control in a sandboxed application domain.
+
+]]></format>
+    </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,8 +50,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.IE.Manager" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AreOnTheSameSite">
@@ -67,11 +76,12 @@
         <Parameter Name="pURL2" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="pURL1">To be added.</param>
-        <param name="pURL2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pURL1">The first URL to compare.</param>
+        <param name="pURL2">The second URL to compare.</param>
+        <summary>Gets a value that indicates whether the site portion of two URLs have the same canonicalized values.</summary>
+        <returns><see langword="true" /> if the two URLs are on the same site; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AreTheSame">
@@ -95,11 +105,12 @@
         <Parameter Name="pURL2" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="pURL1">To be added.</param>
-        <param name="pURL2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pURL1">The first URL to compare.</param>
+        <param name="pURL2">The second URL to compare.</param>
+        <summary>Gets a value that indicates whether two URLs are the same in their canonicalized forms.</summary>
+        <returns><see langword="true" /> if the two URLs are the same; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CanonizeURL">
@@ -123,11 +134,26 @@
         <Parameter Name="flags" Type="Microsoft.IE.Manager+URL_CANONFLAGS" />
       </Parameters>
       <Docs>
-        <param name="pURL">To be added.</param>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pURL">A null-terminated string of maximum length (<see cref="F:Microsoft.IE.Manager.INTERNET_MAX_URL_LENGTH" />) that contains a URL string. If the string does not refer to a file, it must include a valid scheme such as "http://".</param>
+        <param name="flags">The flags that specify how the URL will be converted to canonical form. The following flags can be combined:
+
+- <see cref="T:Microsoft.IE.Manager.URL_CANONFLAGS" />: Treat "/./" and "/../" in a URL string as literal characters, not as shorthand for navigation.
+
+- <see cref="T:Microsoft.IE.Manager.URL_CANONFLAGS" />: Convert any occurrence of "%" to its escape sequence.
+
+- <see cref="T:Microsoft.IE.Manager.URL_CANONFLAGS" />: Replace only spaces with escape sequences. This flag takes precedence over <see cref="T:Microsoft.IE.Manager.URL_CANONFLAGS" />, but does not apply to opaque URLs.
+
+- <see cref="T:Microsoft.IE.Manager.URL_CANONFLAGS" />: Replace unsafe characters with their escape sequences. Unsafe characters are characters that may be altered during transport across the Internet. They include the &lt;, &gt;, ", #, {, }, |, \\, ^, [, ], and ' characters. This flag applies to all URLs, including opaque URLs.
+
+- <see cref="T:Microsoft.IE.Manager.URL_CANONFLAGS" />: Defined to be the same as <see cref="T:Microsoft.IE.Manager.URL_CANONFLAGS" />.
+
+- <see cref="T:Microsoft.IE.Manager.URL_CANONFLAGS" />: Combine URLs with client-defined pluggable protocols, according to the World Wide Web Consortium (W3C) specification. This flag does not apply to standard protocols such as FTP, HTTP, and Gopher. If this flag is set, there is no need to also set <see cref="T:Microsoft.IE.Manager.URL_CANONFLAGS" />.
+
+- <see cref="T:Microsoft.IE.Manager.URL_CANONFLAGS" />: Unescape any escape sequences that the URLs contain, with two exceptions. The escape sequences for "?" and "#" are not unescaped. If one of the URL_ESCAPE flags is also set, the two URLs are first unescaped, and then combined, and then escaped.</param>
+        <summary>Converts a URL string into canonical form.</summary>
+        <returns>The canonicalized URL.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DecodeDomainId">
@@ -150,10 +176,11 @@
         <Parameter Name="hexString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="hexString">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="hexString">A hexadecimal string that represents a domain identity.</param>
+        <summary>Gets a byte array that contains the integer representation of the specified hexadecimal string.</summary>
+        <returns>An array that contains the integer representation of hexString.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetClassFactory">
@@ -185,11 +212,14 @@
         <Parameter Name="className" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">To be added.</param>
-        <param name="className">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assemblyName">The name of the assembly.</param>
+        <param name="className">The name of the class.</param>
+        <summary>Not implemented. 
+        
+This API is not CLS-compliant. </summary>
+        <returns>Always null (Nothing in Visual Basic).</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetCodeBase">
@@ -214,12 +244,13 @@
         <Parameter Name="application" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pURL">To be added.</param>
-        <param name="codeBase">To be added.</param>
-        <param name="application">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pURL">The URL for the code base.</param>
+        <param name="codeBase">When this method returns, contains the path to the code base.</param>
+        <param name="application">When this method returns, contains the application name.</param>
+        <summary>Gets the code base and the application name from the passed-in URL string.</summary>
+        <returns><see langword="true" /> if the code base was found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetConfigurationFile">
@@ -244,12 +275,13 @@
         <Parameter Name="file" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pURL">To be added.</param>
-        <param name="path">To be added.</param>
-        <param name="file">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pURL">The URL for the configuration file.</param>
+        <param name="path">When this method returns, contains the path of the configuration file.</param>
+        <param name="file">When this method returns, contains the name of the configuration file.</param>
+        <summary>Gets the path and file name of the configuration file from the passed-in URL string.</summary>
+        <returns><see langword="true" /> if the configuration file was found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetSecuredClassFactory">
@@ -286,16 +318,40 @@
         <Parameter Name="typeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="flags">To be added.</param>
-        <param name="zone">To be added.</param>
-        <param name="site">To be added.</param>
-        <param name="uniqueIdString">To be added.</param>
-        <param name="fileHashString">To be added.</param>
-        <param name="assemblyName">To be added.</param>
-        <param name="typeName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="flags">One of the following CORIESECURITY values:
+
+- CORIESECURITY_ZONE: 0x01
+
+- CORIESECURITY_SITE: 0x02</param>
+        <param name="zone">One of the following URLZONE values:
+
+- URLZONE_LOCAL_MACHINE: 0x00
+
+- URLZONE_INTRANET: 0x01
+
+- URLZONE_TRUSTED: 0x02
+
+- URLZONE_INTERNET: 0x03
+
+- URLZONE_UNTRUSTED: 0x04</param>
+        <param name="site">The site address.</param>
+        <param name="uniqueIdString">A unique ID for the site.</param>
+        <param name="fileHashString">The hexadecimal encoded hash value of the assembly that is being loaded.</param>
+        <param name="assemblyName">The name of the assembly.</param>
+        <param name="typeName">The name of the type.</param>
+        <summary>Creates a class factory that provides security information about the assembly.
+
+This API is not CLS-compliant. </summary>
+        <returns>An object that represents the secure class factory.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Typically, most of the parameter values can be obtained from the Internet Security Manager.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetSiteName">
@@ -318,10 +374,11 @@
         <Parameter Name="pURL" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="pURL">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pURL">The target URL.</param>
+        <summary>Gets the site name for the specified URL.</summary>
+        <returns>The site name for the specified URL.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="INTERNET_MAX_PATH_LENGTH">
@@ -341,8 +398,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the maximum length of a string that represents an Internet path.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="INTERNET_MAX_SCHEME_LENGTH">
@@ -362,8 +420,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the maximum length of a string that represents an Internet scheme.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="INTERNET_MAX_URL_LENGTH">
@@ -383,8 +442,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the maximum length of a string that represents a URL.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsValidURL">
@@ -407,10 +467,11 @@
         <Parameter Name="pURL" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="pURL">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pURL">The URL to be checked.</param>
+        <summary>Determines whether the specified URL is valid.</summary>
+        <returns><see langword="true" /> if the URL is valid; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MakeFullLink">
@@ -435,12 +496,13 @@
         <Parameter Name="Application" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="link">To be added.</param>
-        <param name="CodeBase">To be added.</param>
-        <param name="Application">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="link">The link portion of the address, which can be relative.</param>
+        <param name="CodeBase">The code base portion of the address.</param>
+        <param name="Application">The application portion of the address.</param>
+        <summary>Returns a full URL for the passed-in link, code base, and application.</summary>
+        <returns>A full link to the specified application.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="ISecureFactory2" FullName="Microsoft.IE.ISecureFactory2">
+<Type Name="ISecureFactory2" FullName="Microsoft.IE.ISecureFactory2">
   <TypeSignature Language="C#" Value="public interface ISecureFactory2 : Microsoft.IE.ISecureFactory" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISecureFactory2 implements class Microsoft.IE.ISecureFactory" />
   <TypeSignature Language="DocId" Value="T:Microsoft.IE.ISecureFactory2" />
@@ -23,8 +23,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods for creating secure class factories.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CreateInstanceWithSecurity">
@@ -54,15 +55,30 @@
         <Parameter Name="lpLicenses" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dwIdentityFlag">To be added.</param>
-        <param name="dwZone">To be added.</param>
-        <param name="lpSite">To be added.</param>
-        <param name="lpId">To be added.</param>
-        <param name="lpLink">To be added.</param>
-        <param name="lpLicenses">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dwIdentityFlag">One of the following CORIESECURITY values:
+
+- CORIESECURITY_ZONE: 0x01
+
+- CORIESECURITY_SITE: 0x02</param>
+        <param name="dwZone">One of the following URLZONE values:
+
+- URLZONE_LOCAL_MACHINE: 0x00
+
+- URLZONE_INTRANET: 0x01
+
+- URLZONE_TRUSTED: 0x02
+
+- URLZONE_INTERNET: 0x03
+
+- URLZONE_UNTRUSTED: 0x04</param>
+        <param name="lpSite">The URL for the site that contains the application for which the secure class factory will be created.</param>
+        <param name="lpId">The unique identity for the site.</param>
+        <param name="lpLink">The link portion of the URL, which can be relative.</param>
+        <param name="lpLicenses">The location of the license files to associate with the domain.</param>
+        <summary>Creates a new instance of a COM type that represents a secure class factory.</summary>
+        <returns>An object that is a wrapper for the new instance. The return value must be unwrapped to access the real object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceWithSecurity2">
@@ -90,16 +106,31 @@
         <Parameter Name="wszDeploymentManifest" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dwFlags">To be added.</param>
-        <param name="dwZone">To be added.</param>
-        <param name="wszSite">To be added.</param>
-        <param name="wszId">To be added.</param>
-        <param name="wszConfig">To be added.</param>
-        <param name="wszLicenses">To be added.</param>
-        <param name="wszDeploymentManifest">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dwFlags">One of the following CORIESECURITY values:
+
+- CORIESECURITY_ZONE: 0x01
+
+- CORIESECURITY_SITE: 0x02</param>
+        <param name="dwZone">One of the following URLZONE values:
+
+- URLZONE_LOCAL_MACHINE: 0x00
+
+- URLZONE_INTRANET: 0x01
+
+- URLZONE_TRUSTED: 0x02
+
+- URLZONE_INTERNET: 0x03
+
+- URLZONE_UNTRUSTED: 0x04</param>
+        <param name="wszSite">The URL for the site that contains the application for which the secure class factory will be created.</param>
+        <param name="wszId">The unique identity for the site.</param>
+        <param name="wszConfig">The link portion of the URL, which can be relative.</param>
+        <param name="wszLicenses">The location of the license files to associate with the domain.</param>
+        <param name="wszDeploymentManifest">The location of the deployment manifest.</param>
+        <summary>Creates a new instance of a COM type that represents a secure class factory by using information from the deployment manifest.</summary>
+        <returns>An object that is a wrapper for the new instance. The return value must be unwrapped to access the real object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

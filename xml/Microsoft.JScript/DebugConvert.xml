@@ -1,4 +1,4 @@
-﻿<Type Name="DebugConvert" FullName="Microsoft.JScript.DebugConvert">
+<Type Name="DebugConvert" FullName="Microsoft.JScript.DebugConvert">
   <TypeSignature Language="C#" Value="public class DebugConvert : Microsoft.JScript.IDebugConvert, Microsoft.JScript.IDebugConvert2" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DebugConvert extends System.Object implements class Microsoft.JScript.IDebugConvert, class Microsoft.JScript.IDebugConvert2" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.DebugConvert" />
@@ -289,11 +289,15 @@
         <Parameter Name="engine" Type="Microsoft.Vsa.IVsaEngine" />
       </Parameters>
       <Docs>
-        <param name="hr">To be added.</param>
-        <param name="engine">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="hr">The HRESULT error code.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Gets an error message that is created from the specified <see cref="P:System.Exception.HResult" /> and the <see cref="T:System.Globalization.CultureInfo" /> of the specified <see cref="T:Microsoft.JScript.Vsa.VsaEngine" />.</summary>
+        <returns>A localized string that contains information about the error.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
+        <altmember cref="T:System.Convert" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/hdz2a0he(v=vs.100)">Type Conversion</related>
       </Docs>
     </Member>
     <Member MemberName="GetManagedCharObject">

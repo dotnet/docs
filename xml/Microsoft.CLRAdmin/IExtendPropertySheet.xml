@@ -1,4 +1,4 @@
-﻿<Type Name="IExtendPropertySheet" FullName="Microsoft.CLRAdmin.IExtendPropertySheet">
+<Type Name="IExtendPropertySheet" FullName="Microsoft.CLRAdmin.IExtendPropertySheet">
   <TypeSignature Language="C#" Value="public interface IExtendPropertySheet" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtendPropertySheet" />
   <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IExtendPropertySheet" />
@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,7 +47,7 @@
         <param name="lpProvider">To be added.</param>
         <param name="handle">To be added.</param>
         <param name="lpIDataObject">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -72,7 +72,7 @@
       </Parameters>
       <Docs>
         <param name="lpDataObject">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

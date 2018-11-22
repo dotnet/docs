@@ -1,4 +1,4 @@
-﻿<Type Name="IHostStubClass" FullName="Microsoft.IE.IHostStubClass">
+<Type Name="IHostStubClass" FullName="Microsoft.IE.IHostStubClass">
   <TypeSignature Language="C#" Value="public class IHostStubClass : Microsoft.IE.IHostStub" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi IHostStubClass extends System.Object implements class Microsoft.IE.IHostEx, class Microsoft.IE.IHostStub" />
   <TypeSignature Language="DocId" Value="T:Microsoft.IE.IHostStubClass" />
@@ -33,8 +33,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods for creating class factories.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,8 +52,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.IE.IHostStubClass" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetClassFactory">
@@ -79,11 +81,12 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="className">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="className">The name of the type.</param>
+        <param name="fileName">The name of the assembly.</param>
+        <summary>Creates a class factory for a type in the specified assembly.</summary>
+        <returns>An object that represents the class factory.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetSecuredClassFactory">
@@ -115,16 +118,31 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dwIdentityFlags">To be added.</param>
-        <param name="dwZone">To be added.</param>
-        <param name="lpSite">To be added.</param>
-        <param name="pbSecurityId">To be added.</param>
-        <param name="lpHash">To be added.</param>
-        <param name="className">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dwIdentityFlags">One of the following CORIESECURITY values:
+
+- CORIESECURITY_ZONE: 0x01
+
+- CORIESECURITY_SITE: 0x02</param>
+        <param name="dwZone">One of the following URLZONE values:
+
+- URLZONE_LOCAL_MACHINE: 0x00
+
+- URLZONE_INTRANET: 0x01
+
+- URLZONE_TRUSTED: 0x02
+
+- URLZONE_INTERNET: 0x03
+
+- URLZONE_UNTRUSTED: 0x04</param>
+        <param name="lpSite">The site address.</param>
+        <param name="pbSecurityId">A unique ID for the site.</param>
+        <param name="lpHash">The hexadecimal encoded hash value of the assembly that is being loaded.</param>
+        <param name="className">The name of the type.</param>
+        <param name="fileName">The name of the assembly.</param>
+        <summary>Creates a secure class factory for a type in the specified assembly.</summary>
+        <returns>An object that represents the secure class factory.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

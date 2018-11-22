@@ -1,4 +1,4 @@
-﻿<Type Name="Manager+URL_PART" FullName="Microsoft.IE.Manager+URL_PART">
+<Type Name="Manager+URL_PART" FullName="Microsoft.IE.Manager+URL_PART">
   <TypeSignature Language="C#" Value="public enum Manager.URL_PART" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed Manager/URL_PART extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.IE.Manager.URL_PART" />
@@ -14,8 +14,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Identifies the parts of a URL.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="HOSTNAME">

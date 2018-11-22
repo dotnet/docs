@@ -1,4 +1,4 @@
-﻿<Type Name="IExtendContextMenu" FullName="Microsoft.CLRAdmin.IExtendContextMenu">
+<Type Name="IExtendContextMenu" FullName="Microsoft.CLRAdmin.IExtendContextMenu">
   <TypeSignature Language="C#" Value="public interface IExtendContextMenu" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtendContextMenu" />
   <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.IExtendContextMenu" />
@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,7 +47,7 @@
         <param name="piDataObject">To be added.</param>
         <param name="piCallback">To be added.</param>
         <param name="pInsertionAllowed">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +73,7 @@
       <Docs>
         <param name="lCommandID">To be added.</param>
         <param name="piDataObject">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

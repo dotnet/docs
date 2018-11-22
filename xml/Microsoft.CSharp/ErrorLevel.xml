@@ -1,4 +1,4 @@
-﻿<Type Name="ErrorLevel" FullName="Microsoft.CSharp.ErrorLevel">
+<Type Name="ErrorLevel" FullName="Microsoft.CSharp.ErrorLevel">
   <TypeSignature Language="C#" Value="public enum ErrorLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ErrorLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.CSharp.ErrorLevel" />
@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>**NOTE: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.CodeDom.Compiler.ICodeCompiler" />. Specifies the severity of a compiler diagnostic.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

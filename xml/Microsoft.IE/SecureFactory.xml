@@ -1,4 +1,4 @@
-﻿<Type Name="SecureFactory" FullName="Microsoft.IE.SecureFactory">
+<Type Name="SecureFactory" FullName="Microsoft.IE.SecureFactory">
   <TypeSignature Language="C#" Value="public class SecureFactory : Microsoft.IE.ISecureFactory2" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecureFactory extends System.Object implements class Microsoft.IE.ISecureFactory, class Microsoft.IE.ISecureFactory2" />
   <TypeSignature Language="DocId" Value="T:Microsoft.IE.SecureFactory" />
@@ -22,8 +22,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods for creating secure class factories.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CORIESECURITY_SITE">
@@ -42,8 +43,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the value 0x02.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CORIESECURITY_ZONE">
@@ -62,8 +64,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the value 0x01.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceWithSecurity">
@@ -94,15 +97,30 @@
         <Parameter Name="licenses" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dwFlag">To be added.</param>
-        <param name="dwZone">To be added.</param>
-        <param name="pURL">To be added.</param>
-        <param name="uniqueIdString">To be added.</param>
-        <param name="link">To be added.</param>
-        <param name="licenses">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dwFlag">One of the following CORIESECURITY values:
+
+- CORIESECURITY_ZONE: 0x01
+
+- CORIESECURITY_SITE: 0x02</param>
+        <param name="dwZone">One of the following URLZONE values:
+
+- URLZONE_LOCAL_MACHINE: 0x00
+
+- URLZONE_INTRANET: 0x01
+
+- URLZONE_TRUSTED: 0x02
+
+- URLZONE_INTERNET: 0x03
+
+- URLZONE_UNTRUSTED: 0x04</param>
+        <param name="pURL">The URL for the site that contains the application for which the secure class factory will be created.</param>
+        <param name="uniqueIdString">The unique identity for the site.</param>
+        <param name="link">The link portion of the URL, which can be relative.</param>
+        <param name="licenses">The location of the license files to associate with the domain.</param>
+        <summary>Creates a new instance of a COM type that represents a secure class factory.</summary>
+        <returns>An object that is a wrapper for the new instance. The return value must be unwrapped to access the real object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceWithSecurity2">
@@ -133,16 +151,31 @@
         <Parameter Name="wszDeploymentManifest" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dwFlags">To be added.</param>
-        <param name="dwZone">To be added.</param>
-        <param name="wszSite">To be added.</param>
-        <param name="wszId">To be added.</param>
-        <param name="wszConfig">To be added.</param>
-        <param name="wszLicenses">To be added.</param>
-        <param name="wszDeploymentManifest">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dwFlags">One of the following CORIESECURITY values:
+
+- CORIESECURITY_ZONE: 0x01
+
+- CORIESECURITY_SITE: 0x02</param>
+        <param name="dwZone">One of the following URLZONE values:
+
+- URLZONE_LOCAL_MACHINE: 0x00
+
+- URLZONE_INTRANET: 0x01
+
+- URLZONE_TRUSTED: 0x02
+
+- URLZONE_INTERNET: 0x03
+
+- URLZONE_UNTRUSTED: 0x04</param>
+        <param name="wszSite">The URL for the site that contains the application for which the secure class factory will be created.</param>
+        <param name="wszId">The unique identity for the site.</param>
+        <param name="wszConfig">The link portion of the URL, which can be relative.</param>
+        <param name="wszLicenses">The location of the license files to associate with the domain.</param>
+        <param name="wszDeploymentManifest">The location of the deployment manifest.</param>
+        <summary>Creates a new instance of a COM type that represents a secure class factory by using information from the deployment manifest.</summary>
+        <returns>An object that is a wrapper for the new instance. The return value must be unwrapped to access the real object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RemoteCreateInstance">
@@ -166,10 +199,11 @@
         <Parameter Name="ppvObject" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="riid">To be added.</param>
-        <param name="ppvObject">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="riid">Not used.</param>
+        <param name="ppvObject">Always null (Nothing in Visual Basic) when this method returns.</param>
+        <summary>Not implemented.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RemoteLockServer">
@@ -192,9 +226,10 @@
         <Parameter Name="fLock" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="fLock">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fLock">Not used.</param>
+        <summary>Not implemented.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

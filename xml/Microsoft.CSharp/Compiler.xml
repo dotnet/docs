@@ -1,4 +1,4 @@
-﻿<Type Name="Compiler" FullName="Microsoft.CSharp.Compiler">
+<Type Name="Compiler" FullName="Microsoft.CSharp.Compiler">
   <TypeSignature Language="C#" Value="public class Compiler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Compiler extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.CSharp.Compiler" />
@@ -20,8 +20,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>**NOTE: This API is now obsolete.** The non-obsolete alternative is <see cref="T:Microsoft.CSharp.CSharpCodeProvider" />.
+
+Managed wrapper for the C# compiler.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks  
+To compile C\# code in-process, call <xref:Microsoft.CSharp.Compiler.Compile(System.String[],System.String[],System.String,System.String[],System.Collections.IDictionary)>.
+
+]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Compile">
@@ -48,14 +57,75 @@
         <Parameter Name="options" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="sourceTexts">To be added.</param>
-        <param name="sourceTextNames">To be added.</param>
-        <param name="target">To be added.</param>
-        <param name="imports">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="sourceTexts">An array of type string, each with C\# code.</param>
+        <param name="sourceTextNames">An array of type string that contains the file names for each sourceTexts.</param>
+        <param name="target">The output file name. This argument is required.</param>
+        <param name="imports">An array of type string, with files to reference.</param>
+        <param name="options">An <see cref="T:System.Collections.IDictionary" /> of compiler options.</param>
+        <summary>Compiles the given C# sources to the specified destination file.</summary>
+        <returns>Returns diagnostic messages as an array of type <see cref="T:Microsoft.CSharp.CompilerError" />. If the array is empty or all elements are warnings, the compilation succeeded.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Each string in the sourceTexts parameter is the equivalent of a single source file. There must be at least one sourceTexts element.
+
+The file names in the sourceTextNames parameter are used for compiler diagnostics and debug information. The array is required, but it can be locally overridden by use of the \#line directive. The array must have the same number of elements as the sourceTexts parameter.
+
+The imports parameter is the same as the /reference compiler option. This parameter can be <see langword="null" />.
+
+For the options parameter, the key is the short form of the compiler option. The value is the value desired for the option. The options parameter can be <see langword="null" />. Some compiler options are not recognized. Recognized options and value:
+
+| Key Name | Usage |
+| --- | --- |
+| addmodule | List of modules to include in this assembly. The module names must be separated by the vertical bar or pipe character. Value must be of type <xref:System.String>. See [-addmodule (C# Compiler Options)](https://msdn.microsoft.com/library/1s46f83c). |
+| baseaddress | Base address for libraries. Value must be of type <xref:System.UInt32>. See [-baseaddress (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/baseaddress-compiler-option.md). |
+| bugreport | Produces bug report file. Value must be of type <xref:System.String>. See [-bugreport (C# Compiler Options)](https://msdn.microsoft.com/library/kaky3xy9). |
+| checked | Set default expression evaluation to checked (or unchecked). Value must be of type <xref:System.Boolean>. See [-checked (C# Compiler Options)](https://msdn.microsoft.com/library/h25wtyxf). |
+| d | List of semicolon separated symbols to define. Value must be of type <xref:System.String>. See [-define (C# Compiler Options)](https://msdn.microsoft.com/library/0feaad6z). |
+| debug | Emit debug information with output. Value must be of type <xref:System.Boolean>. Full or pdb-only cannot be specified. See [-debug (C# Compiler Options)](https://msdn.microsoft.com/library/8cw0bt21). |
+| doc | File name to put XML comments in. Value must be of type <xref:System.String>. See [-doc (C# Compiler Options)](https://msdn.microsoft.com/library/3260k4x7). |
+| filealign | PE section alignment size. Value must be of type <xref:System.UInt32>. See [-filealign (C# Compiler Options)](https://msdn.microsoft.com/library/0s4tzdf2). |
+| incr | Enable incremental rebuild. Value must be of type <xref:System.Boolean>. |
+| lib | Additional paths to search when locating modules and referenced assemblies. Value must be of type <xref:System.String>. See [-lib (C# Compiler Options)](https://msdn.microsoft.com/library/s5bac5fx). |
+| linkres | Link a managed resource to the assembly. Value must be of type <xref:System.String>. See [-linkresource (C# Compiler Options)](https://msdn.microsoft.com/library/xawyf94k). |
+| m | Type to search in for the Main method. Value must be of type <xref:System.String>. See [-main (C# Compiler Options)](https://msdn.microsoft.com/library/x3eht538). |
+| nostdlib | Do not auto-reference mscorlib.dll. Value must be of type <xref:System.Boolean>. See [-nostdlib (C# Compiler Options)](https://msdn.microsoft.com/library/fa13yay7). |
+| nowarn | List of semicolon separated warning numbers to not report. Value must be of type <xref:System.String>. See [-nowarn (C# Compiler Options)](https://msdn.microsoft.com/library/7f28x9z3). |
+| o | Enable compiler optimizations. Value must be of type <xref:System.Boolean>. See [-optimize (C# Compiler Options)](https://msdn.microsoft.com/library/t0hfscdc). |
+| r | Referenced assemblies. Value must be of type String. If more than one assembly is specified, the file name must be separated by the vertical bar or pipe character. See [-reference (C# Compiler Options)](https://msdn.microsoft.com/library/yabyz3h4). |
+| res | Embed a managed resource. Value must be of type <xref:System.String>. See [-resource (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/resource-compiler-option.md). |
+| target | Output file target type, one of the following: "library", "exe", "winexe", or "module". Value must be of type <xref:System.String>. See [-target (C# Compiler Options)](https://msdn.microsoft.com/library/6h25dztx). |
+| unsafe | Allow unsafe constructs. Value must be of type <xref:System.Boolean>. See [-unsafe (C# Compiler Options)](https://msdn.microsoft.com/library/ct597kb0). |
+| w | Warning level (0-4). Value must be of type <xref:System.String>. See [-warn (C# Compiler Options)](https://msdn.microsoft.com/library/13b90fz7). |
+| warnaserror | Report warning diagnostics as errors. Value must be of type <xref:System.Boolean>. See [-warnaserror (C# Compiler Options)](https://msdn.microsoft.com/library/406xhdz3). |
+| win32icon | Win32 icon for auto generated Win32 resource. Value must be of type <xref:System.String>. See [-win32icon (C# Compiler Options)](https://msdn.microsoft.com/library/2aaxe43f). |
+| win32res | Win32 resource file. Value must be of type <xref:System.String>. See [-win32res (C# Compiler Options)](https://msdn.microsoft.com/library/8f2f5x2e). |
+
+]]></format>
+        </remarks>
+        <altmember cref="T:Microsoft.CSharp.Compiler" />
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sourceTexts" /> is <see langword="null" />.
+          
+-or-
+
+<paramref name="sourceTextNames" /> is <see langword="null" />.
+
+-or-
+
+<paramref name="target"/> is <see langword="null" />.
+        </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="sourceTexts" /> is an empty array.
+
+-or-
+
+<paramref name="sourceTextNames" /> is not the same size as <paramref name="sourceTexts" />.
+        </exception>
+        <related type="Article" href="~/docs/csharp/language-reference/preprocessor-directives/preprocessor-line.md">#line (C# Reference)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/compiler-options/reference-compiler-option.md">-reference (C# Compiler Options)</related>
+        <related type="Article" href="~/docs/csharp/language-reference/compiler-options/index.md">C# Compiler Options</related>
       </Docs>
     </Member>
   </Members>

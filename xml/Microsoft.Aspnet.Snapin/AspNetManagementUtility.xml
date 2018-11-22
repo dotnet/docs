@@ -1,4 +1,4 @@
-﻿<Type Name="AspNetManagementUtility" FullName="Microsoft.Aspnet.Snapin.AspNetManagementUtility">
+<Type Name="AspNetManagementUtility" FullName="Microsoft.Aspnet.Snapin.AspNetManagementUtility">
   <TypeSignature Language="C#" Value="public sealed class AspNetManagementUtility : Microsoft.Aspnet.Snapin.IAspNetManagementUtility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AspNetManagementUtility extends System.Object implements class Microsoft.Aspnet.Snapin.IAspNetManagementUtility" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.AspNetManagementUtility" />
@@ -32,8 +32,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides helper methods that are used by the ASP.NET snap-in for the Microsoft Management Console (MMC). This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the AspNetManagementUtility class and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+    </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,8 +57,16 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Aspnet.Snapin.AspNetManagementUtility" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.AspNetManagementUtility> class and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AcquireVersionList">
@@ -76,10 +92,18 @@
         <Parameter Name="versionFirst" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="versionList">To be added.</param>
-        <param name="versionFirst">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="versionList">A comma-separated list containing the version and path to the Aspnet_isapi.dll for each installed ASP.NET version.</param>
+        <param name="versionFirst">A 0 to display the ASP.NET version before the path for each entry; otherwise, display the path before the ASP.NET version for each entry.</param>
+        <summary>Returns a comma-separated list containing the version and path to the Aspnet_isapi.dll for each installed ASP.NET version.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.AspNetManagementUtility> class and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ChangeScriptMap">
@@ -106,11 +130,19 @@
         <Parameter Name="flags" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="keyPath">To be added.</param>
-        <param name="dllInstall">To be added.</param>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="keyPath">The virtual path to which to register the Aspnet_isapi.dll specified by the path passed in <paramref name="dllInstall" />.</param>
+        <param name="dllInstall">The path to the Aspnet_isapi.dll to register with <paramref name="keyPath" />.</param>
+        <param name="flags">The behavior to use when registering Aspnet_isapi.dll.</param>
+        <summary>Registers the version of Aspnet_isapi.dll that is specified by the <paramref name="dllInstall" /> parameter to the Microsoft Internet Information Services (IIS) virtual path that is specified by the <paramref name="keyPath" /> parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.AspNetManagementUtility> class and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DisplayAspNetConfigSettings">
@@ -141,15 +173,23 @@
         <Parameter Name="exception" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="machineName">To be added.</param>
-        <param name="site">To be added.</param>
-        <param name="virtualDirectory">To be added.</param>
-        <param name="siteName">To be added.</param>
-        <param name="location">To be added.</param>
-        <param name="processID">To be added.</param>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="machineName">The computer to retrieve configuration settings from.</param>
+        <param name="site">The ID of the IIS website to retrieve configuration settings from.</param>
+        <param name="virtualDirectory">The IIS virtual directory to retrieve configuration settings from.</param>
+        <param name="siteName">The name of the IIS site to retrieve configuration settings from.</param>
+        <param name="location">The specific resource to which the configuration applies.</param>
+        <param name="processID">The system process ID of the process displaying the configuration settings dialog box.</param>
+        <param name="exception">The exception(s) that occurred.</param>
+        <summary>Retrieves the ASP.NET configuration settings for the specified ASP.NET web application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.AspNetManagementUtility> class and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetActiveWindow">
@@ -169,9 +209,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves the window handle to the active window that is attached to the message queue of the calling thread.</summary>
+        <returns>The handle to the active window attached to the message queue of the calling thread; otherwise, null (Nothing in Visual Basic).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.AspNetManagementUtility> class and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsRemoteConfigured">
@@ -196,9 +244,17 @@
         <Parameter Name="isRemoteConfigured" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="isRemoteConfigured">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="isRemoteConfigured">A 1 if remote access to the ASP.NET configuration container is enabled; otherwise, 0.</param>
+        <summary>Returns a value indicating whether remote access to the ASP.NET configuration container is enabled.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.AspNetManagementUtility> class and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MessageBox">
@@ -223,13 +279,37 @@
         <Parameter Name="type" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="hWnd">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="caption">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="hWnd">A handle to the owner of the message box to create. If hWnd is null (Nothing in Visual Basic), the message box has no owner window.</param>
+        <param name="text">The message for the message box to display.</param>
+        <param name="caption">The message box title.</param>
+        <param name="type">The contents and behavior of the message box.</param>
+        <summary>Creates, displays, and operates a message box in the ASP.NET snap-in for the Microsoft Management Console (MMC).</summary>
+        <returns>IDCANCEL, if the message box has a **Cancel** button and either ESC is pressed or **Cancel** is clicked. If the message has no **Cancel** button, pressing ESC has no effect.  
+If the function fails, 0.  
+If the function succeeds, the return value is one of the following menu-item values:  
+
+
+
+| Return value | Description |
+| --- | --- |
+| IDABORT | **Abort** was clicked. |
+| IDCANCEL | **Cancel** was clicked. |
+| IDCONTINUE | **Continue** was clicked. |
+| IDIGNORE | **Ignore** was clicked. |
+| IDNO | **No** was clicked. |
+| IDOK | **OK** was clicked. |
+| IDRETRY | **Retry** was clicked. |
+| IDTRYAGAIN | **Try Again** was clicked. |
+| IDYES | **Yes** was clicked. |</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.AspNetManagementUtility> class and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PathIsDirectory">
@@ -255,10 +335,18 @@
         <Parameter Name="result" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filename">The path to the directory to check.</param>
+        <param name="result">A 1, if filename is a directory; otherwise, 0.</param>
+        <summary>Returns a value indicating whether the passed filename parameter is a directory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.AspNetManagementUtility> class and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReadFileDates">
@@ -286,12 +374,20 @@
         <Parameter Name="lastAccessDate" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <param name="creationDate">To be added.</param>
-        <param name="modifiedDate">To be added.</param>
-        <param name="lastAccessDate">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filename">The name of the file from which to read the dates.</param>
+        <param name="creationDate">The date and time the file was created.</param>
+        <param name="modifiedDate">The date and time the file was modified.</param>
+        <param name="lastAccessDate">The date and time the file was last accessed.</param>
+        <summary>Returns the creation, modified, and last access dates and times for the specified filename.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.AspNetManagementUtility> class and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegisterAsnetMmcAssembly">
@@ -319,12 +415,20 @@
         <Parameter Name="exception" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="doReg">To be added.</param>
-        <param name="typeName">To be added.</param>
-        <param name="binaryDirectory">To be added.</param>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="doReg">A 1 to register or a 0 to unregister the type.</param>
+        <param name="typeName">The name of the type to register</param>
+        <param name="binaryDirectory">The directory containing the assembly.</param>
+        <param name="exception">A pointer to any exception thrown during registration.</param>
+        <summary>Registers the ASP.NET snap-in with the Microsoft Management Console (MMC).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.AspNetManagementUtility> class and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

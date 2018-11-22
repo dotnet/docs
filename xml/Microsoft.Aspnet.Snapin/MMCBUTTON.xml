@@ -1,4 +1,4 @@
-﻿<Type Name="MMCBUTTON" FullName="Microsoft.Aspnet.Snapin.MMCBUTTON">
+<Type Name="MMCBUTTON" FullName="Microsoft.Aspnet.Snapin.MMCBUTTON">
   <TypeSignature Language="C#" Value="public struct MMCBUTTON" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit MMCBUTTON extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.MMCBUTTON" />
@@ -14,8 +14,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains values that are used to create buttons on a toolbar.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the MMCBUTTON structure and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+    </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members />
 </Type>

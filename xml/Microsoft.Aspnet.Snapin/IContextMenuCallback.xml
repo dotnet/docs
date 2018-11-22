@@ -1,4 +1,4 @@
-﻿<Type Name="IContextMenuCallback" FullName="Microsoft.Aspnet.Snapin.IContextMenuCallback">
+<Type Name="IContextMenuCallback" FullName="Microsoft.Aspnet.Snapin.IContextMenuCallback">
   <TypeSignature Language="C#" Value="public interface IContextMenuCallback" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContextMenuCallback" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.IContextMenuCallback" />
@@ -19,8 +19,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Adds menu items to a shortcut menu.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the IContextMenuCallback interface and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+    </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="AddItem">
@@ -42,10 +50,23 @@
         <Parameter Name="pItem" Type="Microsoft.Aspnet.Snapin.CONTEXTMENUITEM" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="pItem">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pItem">A pointer to a <see cref="T:Microsoft.Aspnet.Snapin.CONTEXTMENUITEM" /> with the item to add.</param>
+        <summary>Adds a single item to a shortcut menu.</summary>
+        <returns>| Return Value | Description |
+| --- | --- |
+| S\_OK | pItem was added successfully. |
+| E\_UNEXPECTED | An unexpected error occurred. |
+| E\_POINTER | pItem is null (Nothing in Visual Basic). |
+| E\_INVALIDARG | One or more of the <see cref="T:Microsoft.Aspnet.Snapin.CONTEXTMENUITEM" /> members contains one or more values that are not valid or the values cause a known error. |</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.IContextMenuCallback> interface and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

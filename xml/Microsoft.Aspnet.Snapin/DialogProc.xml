@@ -1,4 +1,4 @@
-﻿<Type Name="DialogProc" FullName="Microsoft.Aspnet.Snapin.DialogProc">
+<Type Name="DialogProc" FullName="Microsoft.Aspnet.Snapin.DialogProc">
   <TypeSignature Language="C#" Value="public delegate bool DialogProc(IntPtr hwndDlg, int uMsg, IntPtr wParam, IntPtr lParam);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DialogProc extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.DialogProc" />
@@ -22,12 +22,20 @@
     <ReturnType>System.Boolean</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="hwndDlg">To be added.</param>
-    <param name="uMsg">To be added.</param>
-    <param name="wParam">To be added.</param>
-    <param name="lParam">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
-    <remarks>To be added.</remarks>
+    <param name="hwndDlg">A handle to the dialog box.</param>
+    <param name="uMsg">The message.</param>
+    <param name="wParam">Additional message-specific information.</param>
+    <param name="lParam">Additional message-specific information.</param>
+    <summary>Processes messages that are sent to a modal or modeless dialog box.</summary>
+    <returns><see langword="true" /> if the DialogProc successfully processed the message; otherwise, <see langword="false" />.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the DialogProc function and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+    </remarks>
+    <forInternalUseOnly />
   </Docs>
 </Type>

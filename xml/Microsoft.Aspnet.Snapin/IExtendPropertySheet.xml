@@ -1,4 +1,4 @@
-﻿<Type Name="IExtendPropertySheet" FullName="Microsoft.Aspnet.Snapin.IExtendPropertySheet">
+<Type Name="IExtendPropertySheet" FullName="Microsoft.Aspnet.Snapin.IExtendPropertySheet">
   <TypeSignature Language="C#" Value="public interface IExtendPropertySheet" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtendPropertySheet" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.IExtendPropertySheet" />
@@ -19,8 +19,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables a snap-in component to add property pages to the property sheet of an item.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the IExtendPropertySheet interface and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+    </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CreatePropertyPages">
@@ -44,12 +52,25 @@
         <Parameter Name="lpIDataObject" Type="Microsoft.Aspnet.Snapin.IDataObject" />
       </Parameters>
       <Docs>
-        <param name="lpProvider">To be added.</param>
-        <param name="handle">To be added.</param>
-        <param name="lpIDataObject">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="lpProvider">A pointer to the <see cref="T:Microsoft.Aspnet.Snapin.IPropertySheetCallback" />.</param>
+        <param name="handle">The handle to use to route the notification message to the appropriate <see cref="T:Microsoft.CLRAdmin.IComponent" /> or <see cref="T:Microsoft.CLRAdmin.IComponentData" />.</param>
+        <param name="lpIDataObject">A pointer to the <see cref="T:Microsoft.Aspnet.Snapin.IDataObject" /> on the object containing context information about the scope or result item.</param>
+        <summary>Adds pages to a property sheet.</summary>
+        <returns>| Return Value | Description |
+| --- | --- |
+| S\_OK | The CreatePropertyPages successfully added the property sheet pages. |
+| S\_FALSE | The CreatePropertyPages added no property sheet pages. |
+| E\_UNEXPECTED | An unexpected error occurred. |
+| E\_INVALIDARG | One or more parameters are not valid. |</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.IExtendPropertySheet> interface and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="QueryPagesFor">
@@ -71,10 +92,23 @@
         <Parameter Name="lpDataObject" Type="Microsoft.Aspnet.Snapin.IDataObject" />
       </Parameters>
       <Docs>
-        <param name="lpDataObject">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="lpDataObject">A pointer to the <see cref="T:Microsoft.Aspnet.Snapin.IDataObject" /> on the object containing context information about the scope or result item.</param>
+        <summary>Determines whether the object requires pages.</summary>
+        <returns>| Return Value | Description |
+| --- | --- |
+| S\_OK | Properties exist for this data object. |
+| E\_UNEXPECTED | An unexpected error occurred. |
+| E\_INVALID | The parameter is not valid. |
+| Any other error code | No pages are supplied for the data object. |</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.IExtendPropertySheet> interface and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

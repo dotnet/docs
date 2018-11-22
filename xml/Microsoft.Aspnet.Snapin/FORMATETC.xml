@@ -1,4 +1,4 @@
-﻿<Type Name="FORMATETC" FullName="Microsoft.Aspnet.Snapin.FORMATETC">
+<Type Name="FORMATETC" FullName="Microsoft.Aspnet.Snapin.FORMATETC">
   <TypeSignature Language="C#" Value="public struct FORMATETC" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit FORMATETC extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.FORMATETC" />
@@ -14,8 +14,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A generalized Clipboard format containing a target device, the aspect or view of the data, and a storage medium indicator.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The FORMATETC structure is used as a parameter in OLE functions and methods requiring data format information.
+
+For more information about programming with the <xref:System.Runtime.InteropServices.ComTypes.STATDATA.formatetc> structure and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+    </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members />
 </Type>

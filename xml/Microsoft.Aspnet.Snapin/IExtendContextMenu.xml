@@ -1,4 +1,4 @@
-﻿<Type Name="IExtendContextMenu" FullName="Microsoft.Aspnet.Snapin.IExtendContextMenu">
+<Type Name="IExtendContextMenu" FullName="Microsoft.Aspnet.Snapin.IExtendContextMenu">
   <TypeSignature Language="C#" Value="public interface IExtendContextMenu" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtendContextMenu" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.IExtendContextMenu" />
@@ -19,8 +19,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables a snap-in to add items to an existing shortcut menu.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the IExtendContextMenu interface and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+    </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="AddMenuItems">
@@ -44,11 +52,19 @@
         <Parameter Name="pInsertionAllowed" Type="System.Int32" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="piDataObject">To be added.</param>
-        <param name="piCallback">To be added.</param>
-        <param name="pInsertionAllowed">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="piDataObject">A pointer to the <see cref="T:Microsoft.Aspnet.Snapin.IDataObject" /> on the data object of the menu to which the AddMenuItems is adding items to the shortcut menu.</param>
+        <param name="piCallback">A pointer to an <see cref="T:Microsoft.Aspnet.Snapin.IContextMenuCallback" /> that can add items to the shortcut menu.</param>
+        <param name="pInsertionAllowed">The MMC-defined menu-item insertion points that can be used.</param>
+        <summary>Enables a snap-in to add items to an existing shortcut menu.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.IExtendContextMenu> interface and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -71,10 +87,18 @@
         <Parameter Name="piDataObject" Type="Microsoft.Aspnet.Snapin.IDataObject" />
       </Parameters>
       <Docs>
-        <param name="lCommandID">To be added.</param>
-        <param name="piDataObject">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="lCommandID">The command identifier of the menu item.</param>
+        <param name="piDataObject">A pointer to the <see cref="T:Microsoft.Aspnet.Snapin.IDataObject" /> on the object for which the shortcut menu was displayed.</param>
+        <summary>The Microsoft Management Console (MMC) calls the Command method when one of the shortcut menu items that you added is selected.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.IExtendContextMenu> interface and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

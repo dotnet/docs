@@ -1,4 +1,4 @@
-﻿<Type Name="CONTEXTMENUITEM" FullName="Microsoft.Aspnet.Snapin.CONTEXTMENUITEM">
+<Type Name="CONTEXTMENUITEM" FullName="Microsoft.Aspnet.Snapin.CONTEXTMENUITEM">
   <TypeSignature Language="C#" Value="public struct CONTEXTMENUITEM" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CONTEXTMENUITEM extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.CONTEXTMENUITEM" />
@@ -14,8 +14,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a new menu item, submenu, or insertion point for the <see cref="M:Microsoft.Aspnet.Snapin.IContextMenuCallback.AddItem(Microsoft.Aspnet.Snapin.CONTEXTMENUITEM@)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Building the shortcut menu starts at the root. Each new item goes at the end of the submenu or insertion point where you insert the item.
+
+For more information about programming with the CONTEXTMENUITEM structure and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+    </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members />
 </Type>

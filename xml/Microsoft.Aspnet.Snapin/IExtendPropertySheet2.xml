@@ -1,4 +1,4 @@
-﻿<Type Name="IExtendPropertySheet2" FullName="Microsoft.Aspnet.Snapin.IExtendPropertySheet2">
+<Type Name="IExtendPropertySheet2" FullName="Microsoft.Aspnet.Snapin.IExtendPropertySheet2">
   <TypeSignature Language="C#" Value="public interface IExtendPropertySheet2" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtendPropertySheet2" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.IExtendPropertySheet2" />
@@ -19,8 +19,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables a snap-in component to add property pages to the property sheet of an item.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the IExtendPropertySheet2 interface and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+    </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CreatePropertyPages">
@@ -44,12 +52,25 @@
         <Parameter Name="lpIDataObject" Type="Microsoft.Aspnet.Snapin.IDataObject" />
       </Parameters>
       <Docs>
-        <param name="lpProvider">To be added.</param>
-        <param name="handle">To be added.</param>
-        <param name="lpIDataObject">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="lpProvider">A pointer to the <see cref="T:Microsoft.Aspnet.Snapin.IPropertySheetCallback" />.</param>
+        <param name="handle">The handle to use to route the notification message to the appropriate <see cref="T:Microsoft.CLRAdmin.IComponent" /> or <see cref="T:Microsoft.CLRAdmin.IComponentData" />.</param>
+        <param name="lpIDataObject">A pointer to the <see cref="T:Microsoft.Aspnet.Snapin.IDataObject" /> on the object containing context information about the scope or result item.</param>
+        <summary>Adds pages to a property sheet.</summary>
+        <returns>| Return Value | Description |
+| --- | --- |
+| S\_OK | The <see cref="M:Microsoft.Aspnet.Snapin.IExtendPropertySheet.CreatePropertyPages(Microsoft.Aspnet.Snapin.IPropertySheetCallback,System.IntPtr,Microsoft.Aspnet.Snapin.IDataObject)" /> method successfully added the property sheet pages. |
+| S\_FALSE | The <see cref="M:Microsoft.Aspnet.Snapin.IExtendPropertySheet.CreatePropertyPages(Microsoft.Aspnet.Snapin.IPropertySheetCallback,System.IntPtr,Microsoft.Aspnet.Snapin.IDataObject)" /> method added no property sheet pages. |
+| E\_UNEXPECTED | An unexpected error occurred. |
+| E\_INVALIDARG | One or more parameters are not valid. |</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.IExtendPropertySheet2> interface and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetWatermarks">
@@ -75,14 +96,24 @@
         <Parameter Name="bStretch" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="lpIDataObject">To be added.</param>
-        <param name="lphWatermark">To be added.</param>
-        <param name="lphHeader">To be added.</param>
-        <param name="lphPalette">To be added.</param>
-        <param name="bStretch">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="lpIDataObject">The <see cref="T:Microsoft.Aspnet.Snapin.IDataObject" /> on the object containing context information about the scope or result item.</param>
+        <param name="lphWatermark">The handle to a bitmap that serves as the watermark for Wizard 97 pages.</param>
+        <param name="lphHeader">The handle to a bitmap that serves as the header for Wizard 97 pages.</param>
+        <param name="lphPalette">The handle to a palette used for the bitmaps specified by lphWatermark and lphHeader.</param>
+        <param name="bStretch">A GetWatermarks return value: true if the watermark and header bitmaps should be stretched rather than tiled; otherwise, false.</param>
+        <summary>Retrieves the watermark and header bitmaps for wizard sheets that are implemented as Wizard 97–style wizards.</summary>
+        <returns>| Return Value | Description |
+| --- | --- |
+| etch | true if the watermark and header bitmaps should be stretched rather than tiled; otherwise, false. |</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.IExtendPropertySheet2> interface and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="QueryPagesFor">
@@ -104,10 +135,23 @@
         <Parameter Name="lpDataObject" Type="Microsoft.Aspnet.Snapin.IDataObject" />
       </Parameters>
       <Docs>
-        <param name="lpDataObject">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="lpDataObject">A pointer to the <see cref="T:Microsoft.Aspnet.Snapin.IDataObject" /> on the object containing context information about the scope or result item.</param>
+        <summary>Determines whether the object requires pages.</summary>
+        <returns>| Return value | Description |
+| --- | --- |
+| S\_OK | Properties exist for this data object. |
+| E\_UNEXPECTED | An unexpected error occurred. |
+| E\_INVALID | The parameter is not valid. |
+| Any other error code | No pages are supplied for the data object. |</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the <xref:Microsoft.Aspnet.Snapin.IExtendPropertySheet2> interface and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

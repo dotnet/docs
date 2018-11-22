@@ -1,4 +1,4 @@
-﻿<Type Name="VCBuild" FullName="Microsoft.Build.Tasks.VCBuild">
+<Type Name="VCBuild" FullName="Microsoft.Build.Tasks.VCBuild">
   <TypeSignature Language="C#" Value="public class VCBuild : Microsoft.Build.Tasks.ToolTaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VCBuild extends Microsoft.Build.Tasks.ToolTaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.VCBuild" />
@@ -75,9 +75,10 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets additional paths to append to the LIBPATH environment variable before executing vcbuild.exe.</summary>
+        <value>The additional paths to append to the LIBPATH environment variable.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AdditionalLinkLibraryPaths">
@@ -96,9 +97,10 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets additional reference paths to append to the LIB environment variable.</summary>
+        <value>Additional reference paths to append to the LIB environment variable.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AdditionalOptions">
@@ -117,9 +119,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets additional options you want to specify to the VCBuild tool.</summary>
+        <value>Additional options you want to specify to the VCBuild tool.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Clean">
@@ -180,9 +183,10 @@
         <ReturnType>System.Collections.Specialized.StringDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Overrides the LIBPATH environment variable with <see cref="P:Microsoft.Build.Tasks.VCBuild.AdditionalLibPaths" /> and returns the new environment variables.</summary>
+        <value>Name/value pairs containing the new environment variable values.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -266,9 +270,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the platform to build for.</summary>
+        <value>The name of the platform to build for.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Projects">
@@ -334,9 +339,10 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the full path to the solution file when building solutions, which is used to resolve solution-related Visual C++ project macros.</summary>
+        <value>The full path to the solution file when building solutions.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToolName">
@@ -376,9 +382,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether to use environment variables for INCLUDE and LIB paths.</summary>
+        <value>true if the **VCBuild** task will use environment variables for INCLUDE and LIB paths; otherwise, false.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UserEnvironment">
@@ -397,9 +404,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This property is obsolete.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ValidateParameters">

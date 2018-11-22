@@ -1,4 +1,4 @@
-﻿<Type Name="RESULTDATAITEM" FullName="Microsoft.Aspnet.Snapin.RESULTDATAITEM">
+<Type Name="RESULTDATAITEM" FullName="Microsoft.Aspnet.Snapin.RESULTDATAITEM">
   <TypeSignature Language="C#" Value="public struct RESULTDATAITEM" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit RESULTDATAITEM extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.RESULTDATAITEM" />
@@ -14,8 +14,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies or receives the attributes of result items in the results pane of the snap-in.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information about programming with the RESULTDATAITEM structure and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+    </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members />
 </Type>

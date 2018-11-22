@@ -1,4 +1,4 @@
-﻿<Type Name="MMC_LISTPAD_INFO" FullName="Microsoft.Aspnet.Snapin.MMC_LISTPAD_INFO">
+<Type Name="MMC_LISTPAD_INFO" FullName="Microsoft.Aspnet.Snapin.MMC_LISTPAD_INFO">
   <TypeSignature Language="C#" Value="public struct MMC_LISTPAD_INFO" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit MMC_LISTPAD_INFO extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.MMC_LISTPAD_INFO" />
@@ -14,8 +14,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Filled by the <see cref="M:Microsoft.CLRAdmin.IExtendTaskPad.GetListPadInfo(System.String,Microsoft.CLRAdmin.MMC_LISTPAD_INFO@)" /> method to specify the title text, optional button text, and optional button command identification for a list-view task pad.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks  
+
+For more information about programming with the MMC\_LISTPAD\_INFO structure and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+
+]]></format>
+    </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members />
 </Type>

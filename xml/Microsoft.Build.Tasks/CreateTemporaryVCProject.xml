@@ -1,4 +1,4 @@
-﻿<Type Name="CreateTemporaryVCProject" FullName="Microsoft.Build.Tasks.CreateTemporaryVCProject">
+<Type Name="CreateTemporaryVCProject" FullName="Microsoft.Build.Tasks.CreateTemporaryVCProject">
   <TypeSignature Language="C#" Value="public class CreateTemporaryVCProject : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CreateTemporaryVCProject extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.CreateTemporaryVCProject" />
@@ -14,8 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Creates a temporary Visual C++ project with MSBuild references replaced with file references.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +32,10 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.CreateTemporaryVCProject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Build.Tasks.CreateTemporaryVCProject" />
       </Docs>
     </Member>
     <Member MemberName="Configuration">
@@ -56,9 +59,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the configuration of the Visual C++ project file to process.</summary>
+        <value>The configuration of the Visual C++ project file to process.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Build.Tasks.CreateTemporaryVCProject" />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -78,9 +83,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the **CreateTemporaryVCProject** task.</summary>
+        <returns>true if task execution succeeded; otherwise, false.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Build.Tasks.CreateTemporaryVCProject" />
       </Docs>
     </Member>
     <Member MemberName="OutputProjectFile">
@@ -104,9 +111,11 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the temporary project file to create.</summary>
+        <value>The name of the temporary project file to create.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Build.Tasks.CreateTemporaryVCProject" />
       </Docs>
     </Member>
     <Member MemberName="ProjectFile">
@@ -130,9 +139,11 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the Visual C++ project file to process.</summary>
+        <value>The Visual C++ project file to process.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Build.Tasks.CreateTemporaryVCProject" />
       </Docs>
     </Member>
     <Member MemberName="ReferenceAssemblies">
@@ -151,9 +162,11 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets pre-resolved outputs of MSBuild references.</summary>
+        <value>Pre-resolved outputs of MSBuild references.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Build.Tasks.CreateTemporaryVCProject" />
       </Docs>
     </Member>
     <Member MemberName="ReferenceGuids">
@@ -177,9 +190,11 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an array of GUIDs of referenced MSBuild projects.</summary>
+        <value>An array of GUIDs of referenced MSBuild projects.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Build.Tasks.CreateTemporaryVCProject" />
       </Docs>
     </Member>
     <Member MemberName="ReferenceImportLibraries">
@@ -198,9 +213,11 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets pre-resolved import library (.lib) outputs of Visual C++ projects.</summary>
+        <value>Pre-resolved import library (.lib) outputs of Visual C++ projects.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
+        <altmember cref="T:Microsoft.Build.Tasks.CreateTemporaryVCProject" />
       </Docs>
     </Member>
   </Members>

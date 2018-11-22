@@ -1,4 +1,4 @@
-﻿<Type Name="CLSID" FullName="Microsoft.Aspnet.Snapin.CLSID">
+<Type Name="CLSID" FullName="Microsoft.Aspnet.Snapin.CLSID">
   <TypeSignature Language="C#" Value="public struct CLSID" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CLSID extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.CLSID" />
@@ -14,8 +14,24 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Serves as a wrapper for a globally unique identifier (GUID) for a COM class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The CLSID structure wraps the COM class identifier (CLSID) structure, which serves as a unique identifier for a specific COM class.
+
+CLSID is an abbreviation for class identifier, in the same way that GUID is an abbreviation for globally unique identifier. Both abbreviations refer to a 128-bit integer with a low statistical likelihood of being duplicated so that it can be used as a unique identifier across computers and networks. Typically, this identifier is represented either as a 16-member array of bytes or as a specially formatted string of hexadecimal digits (where the characters a-f, or A-F, represent the decimal numbers 10-15). This string representation consists of either 32 contiguous hexadecimal digits or of groups of 8, 4, 4, 4, and 12 hexadecimal digits, separated by hyphens. The hyphenated string representation optionally can be enclosed in parentheses or braces ({}).
+
+For more information:
+
+  - About unique identifiers and their format, see <xref:System.Guid>.
+
+  - Programming with the CLSID structure and the Microsoft Management Console (MMC), see the [MMC Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/mmc/mmc-programmer-s-guide-overview).
+  
+  ]]></format>
+    </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members />
 </Type>

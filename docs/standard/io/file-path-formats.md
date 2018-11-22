@@ -6,6 +6,9 @@ helpviewer_keywords:
   - "I/O, long paths"
   - "long paths"
   - "path formats, Windows"
+dev_langs: 
+  - "csharp"
+  - "vb"
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
@@ -197,6 +200,11 @@ A peculiarity of the Windows file system that non-Windows users and developers f
 ```csharp
 Directory.Create("TeStDiReCtOrY");
 ```
+
+```vb
+Directory.Create("TeStDiReCtOrY")
+```
+
 creates a directory named TeStDiReCtOrY. If you rename a directory or file to change its case, the directory or file name reflects the case of the string used when you rename it. For example, the following code renames a file named test.txt to Test.txt:
 
 ```csharp
@@ -211,7 +219,8 @@ class Example
       fi.MoveTo(@".\Test.txt");
    }
 }
-``` 
+```
+
 ```vb
 Imports System.IO
 

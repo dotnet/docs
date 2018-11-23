@@ -1,5 +1,5 @@
 ---
-title: "Arithmetic Operations on Pointers (C# Programming Guide)"
+title: "Arithmetic operations on pointers (C# Programming Guide)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "pointers [C#], arithmetic operations"

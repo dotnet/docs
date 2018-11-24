@@ -39,11 +39,11 @@ The value types consist of two main categories:
   
  Unlike reference types, a value type cannot contain the `null` value. However, the [nullable types](../../../csharp/programming-guide/nullable-types/index.md) feature does allow for value types to be assigned to `null`.  
   
- Each value type has an implicit default constructor that initializes the default value of that type. For information about default values of value types, see [Default values table](../../../csharp/language-reference/keywords/default-values-table.md).  
+ Each value type has an implicit default constructor that initializes the default value of that type. For information about default values of value types, see [Default values table](default-values-table.md).  
   
 ## Main features of simple types
 
- All of the simple types -- those integral to the C# language -- are aliases of the .NET <xref:System> types. For example, [int](int.md) is an alias of <xref:System.Int32?displayProperty=nameWithType>. For a complete list of aliases, see [Built-in types table](../../../csharp/language-reference/keywords/built-in-types-table.md).  
+ All of the simple types -- those integral to the C# language -- are aliases of the .NET <xref:System> types. For example, [int](int.md) is an alias of <xref:System.Int32?displayProperty=nameWithType>. For a complete list of aliases, see [Built-in types table](built-in-types-table.md).  
   
  Constant expressions, whose operands are all simple type constants, are evaluated at compilation time.  
   

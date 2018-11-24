@@ -25,6 +25,56 @@ When indentation is required, you must use spaces, not tabs. At least one space 
 
 That said, indentation of programs is a subjective matter. Variations are OK, but the first rule you should follow is *consistency of indentation*. Choose a generally accepted style of indentation and use it systematically throughout your codebase.
 
+## Formatting whitespace
+
+F# is whitespace-sensitive. Although most semantics from whitespace are covered by proper indentation, there are some other things to consider.
+
+### Formatting operators in arithmetic expressions
+
+Always use whitespace around binary arithmetic expressions:
+
+```fsharp
+let subtractThenAdd x = x - 1 + 3
+```
+
+Unary `-` operators should never have trailing whitespace:
+
+```fsharp
+// OK
+let negate x = -x
+
+// Bad
+let negateBad x = - x
+```
+
+It is important to always surround binary operators with whitespace and never have trailing whitespace with a unary operator. Failing to do so can lead to code that may accidentally negate a value!
+
+### Surround a custom operator definition with whitespace
+
+Always use whitespace to surround an operator definition:
+
+```fsharp
+// OK
+let ( !> ) x f = f x
+
+// Bad
+let (!>) x f = f x
+```
+
+For any custom operator that could start with `*`, you'll need to add a whitespace to the beginning of the definition to avoid a compiler ambiguity. Because of this, it is recommended that you simply surround the definitions of all operators with a single whitespace character.
+
+### Surround function parameter arrows with whitespace
+
+When defining the signature of a function, use whitespace around the `->` symbol:
+
+```fsharp
+// OK
+type MyFun = int -> int -> string
+
+// Bad
+type MyFunBad = int->int->string
+```
+
 ## Formatting blank lines
 
 * Separate top-level function and class definitions with two blank lines.

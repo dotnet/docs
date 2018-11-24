@@ -134,8 +134,6 @@ End Class
 ```  
   
 ```csharp
-// The CLR does not expose a class interface for this type.
-// COM clients can call the members of this class using the methods from the IExplicit interface.
 [ClassInterface(ClassInterfaceType.None)]
 public class LoanApp : IExplicit
 {
@@ -161,8 +159,6 @@ End Class
 ```  
   
 ```csharp
-// Have the CLR expose a class interface (derived from IDispatch) for this type.
-// COM clients can call the members of this class using the Invoke method from the IDispatch interface.
 [ClassInterface(ClassInterfaceType.AutoDispatch)]
 public class LoanApp
 {

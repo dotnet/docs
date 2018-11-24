@@ -16,13 +16,11 @@ The C# typing system contains the following categories:
 
 - [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
 
- Variables that are value types store data, and those that are reference types store references to the actual data. Reference types are also referred to as objects. Pointer types can be used only in [unsafe](unsafe.md) mode.
+ Variables that are value types store data, and those that are reference types store references to the actual data. Instances of reference types are also referred to as objects. Pointer types can be used only in [unsafe](unsafe.md) mode.
 
  It's possible to convert a value type to a reference type, and back again to a value type, by using [boxing and unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md). With the exception of a boxed value type, you cannot convert a reference type to a value type.
 
  This section also introduces [void](void.md).
-
- Value types are also nullable, which means they can store an additional non-value state. For more information, see [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md).
 
 ## See also
 

@@ -84,8 +84,6 @@ End Class
 // Implicitly extends System.Object.
 public class Mammal
 {
-    public Mammal() {}
-
     public void Eat() {}
     public void Breathe() {}
     public void Sleep() {}
@@ -141,9 +139,7 @@ End Class
 [ClassInterface(ClassInterfaceType.None)]
 public class LoanApp : IExplicit
 {
-    public LoanApp() {}
-
-    Int32 IExplicit.M() { return 0; }
+    int IExplicit.M() { return 0; }
 }
 ```
   
@@ -170,9 +166,7 @@ End Class
 [ClassInterface(ClassInterfaceType.AutoDispatch)]
 public class LoanApp
 {
-    public LoanApp() {}
-
-    public Int32 M() { return 0; }
+    public int M() { return 0; }
 }
 ```
   

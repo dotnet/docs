@@ -1,6 +1,6 @@
 ---
 title: "Value types (C# Reference)"
-ms.date: 07/20/2015
+ms.date: 11/26/2018
 f1_keywords: 
   - "cs.valuetypes"
 helpviewer_keywords: 
@@ -16,19 +16,7 @@ The value types consist of two main categories:
 - [Structs](struct.md)
 
 - [Enumerations](enum.md)
- 
- Structs fall into these categories:
 
-- Numeric types and [char](char.md)
-
-    - [Integral types](integral-types-table.md) (including the [char](char.md) type)
-
-    - [Floating-point types](floating-point-types-table.md)
-
-- [bool](bool.md)
-
-- User-defined structs.
-  
 ## Main features of value types
 
  Variables that are based on value types directly contain values. Assigning one value type variable to another copies the contained value. This differs from the assignment of reference type variables, which copies a reference to the object but not the object itself.  
@@ -41,13 +29,24 @@ The value types consist of two main categories:
   
  Each value type has an implicit default constructor that initializes the default value of that type. For information about default values of value types, see [Default values table](default-values-table.md).  
   
-## Main features of simple types
+## Simple types
 
- All of the simple types -- those integral to the C# language -- are aliases of the .NET <xref:System> types. For example, [int](int.md) is an alias of <xref:System.Int32?displayProperty=nameWithType>. For a complete list of aliases, see [Built-in types table](built-in-types-table.md).  
-  
- Constant expressions, whose operands are all simple type constants, are evaluated at compilation time.  
-  
- Simple types can be initialized by using literals. For example, `'A'` is a literal of the type `char` and `2001` is a literal of the type `int`.  
+The *simple types* are a set of predefined struct types provided by C# and comprise the following types:
+
+- [Integral types](integral-types-table.md): integer numeric types and the [char](char.md) type
+- [Floating-point types](floating-point-types-table.md)
+- [bool](bool.md)
+
+The simple types are identified through keywords, but these keywords are simply aliases for predefined struct types in the <xref:System>
+namespace. For example, [int](int.md) is an alias of <xref:System.Int32?displayProperty=nameWithType>. For a complete list of aliases, see [Built-in types table](built-in-types-table.md).
+
+The simple types differ from other struct types in that they permit certain additional operations:
+
+- Simple types can be initialized by using literals. For example, `'A'` is a literal of the type `char` and `2001` is a literal of the type `int`.
+
+- You can declare constants of the simple types with the [const](const.md) keyword. It's not possible to have constants of other struct types.
+
+- Constant expressions, whose operands are all simple type constants, are evaluated at compile time.
   
 ## Initializing value types
 

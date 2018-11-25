@@ -11,7 +11,7 @@ ms.assetid: 471eb994-2958-49d5-a6be-19b4313f80a3
 ---
 # Value types (C# Reference)
 
-The value types consist of two main categories:
+There are two kinds of value types:
 
 - [Structs](struct.md)
 
@@ -19,15 +19,15 @@ The value types consist of two main categories:
 
 ## Main features of value types
 
- Variables that are based on value types directly contain values. Assigning one value type variable to another copies the contained value. This differs from the assignment of reference type variables, which copies a reference to the object but not the object itself.  
+A variable of a value type contains a value of the type. For example, a variable of the `int` type might contain the value `42`. This differs from a variable of a reference type, which contains a reference to an instance of the type, also known as an object. When you assign a new value to a variable of a value type, that value is copied. When you assign a new value to a variable of a reference type, the reference is copied, not the object itself.
+
+All value types are derived implicitly from the <xref:System.ValueType?displayProperty=nameWithType>.  
   
- All value types are derived implicitly from the <xref:System.ValueType?displayProperty=nameWithType>.  
+Unlike with reference types, you cannot derive a new type from a value type. However, like reference types, structs can implement interfaces.  
   
- Unlike with reference types, you cannot derive a new type from a value type. However, like reference types, structs can implement interfaces.  
+Value type variables cannot be `null` by default. However, variables of the corresponding [nullable types](../../../csharp/programming-guide/nullable-types/index.md) can be `null`.
   
- Unlike reference types, a value type cannot contain the `null` value. However, the [nullable types](../../../csharp/programming-guide/nullable-types/index.md) feature does allow for value types to be assigned to `null`.  
-  
- Each value type has an implicit default constructor that initializes the default value of that type. For information about default values of value types, see [Default values table](default-values-table.md).  
+Each value type has an implicit default constructor that initializes the default value of that type. For information about default values of value types, see [Default values table](default-values-table.md).  
   
 ## Simple types
 

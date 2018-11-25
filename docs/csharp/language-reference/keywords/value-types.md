@@ -46,6 +46,8 @@ The simple types differ from other struct types in that they permit certain addi
 - You can declare constants of the simple types with the [const](const.md) keyword. It's not possible to have constants of other struct types.
 
 - Constant expressions, whose operands are all simple type constants, are evaluated at compile time.
+
+For more information, see the [Simple types](~/_csharplang/spec/types.md#simple-types) section of the [C# language specification](../language-specification/index.md).
   
 ## Initializing value types
 

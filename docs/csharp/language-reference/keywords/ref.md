@@ -151,6 +151,7 @@ You can combine modifiers to declare a struct as `readonly ref`. A `readonly ref
 - [Write safe efficient code](../../write-safe-efficient-code.md)  
 - [Ref returns and ref locals](../../programming-guide/classes-and-structs/ref-returns.md)
 - [Conditional ref expression](../operators/conditional-operator.md#conditional-ref-expression)
+- [ref assignment operator](../operators/assignment-operator.md#ref-assignment-operator)
 - [Passing Parameters](../../programming-guide/classes-and-structs/passing-parameters.md)  
 - [Method Parameters](method-parameters.md)  
 - [C# Reference](../index.md)  

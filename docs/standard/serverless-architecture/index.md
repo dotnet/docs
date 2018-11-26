@@ -6,9 +6,9 @@ ms.author: jeliknes
 ms.date: 6/26/2018
 ---
 
-![](./media/Cover.jpg)
-
 # Serverless apps: Architecture, patterns, and Azure implementation
+
+![](./media/Cover.jpg)
 
 > DOWNLOAD available at: <https://aka.ms/serverless-ebook>
 

@@ -25,19 +25,19 @@ When indentation is required, you must use spaces, not tabs. At least one space 
 
 That said, indentation of programs is a subjective matter. Variations are OK, but the first rule you should follow is *consistency of indentation*. Choose a generally accepted style of indentation and use it systematically throughout your codebase.
 
-## Formatting whitespace
+## Formatting white space
 
-F# is whitespace-sensitive. Although most semantics from whitespace are covered by proper indentation, there are some other things to consider.
+F# is white space sensitive. Although most semantics from white space are covered by proper indentation, there are some other things to consider.
 
 ### Formatting operators in arithmetic expressions
 
-Always use whitespace around binary arithmetic expressions:
+Always use white space around binary arithmetic expressions:
 
 ```fsharp
 let subtractThenAdd x = x - 1 + 3
 ```
 
-Unary `-` operators should never have trailing whitespace:
+Unary `-` operators should always have the value they are negating immediately follow:
 
 ```fsharp
 // OK
@@ -47,11 +47,18 @@ let negate x = -x
 let negateBad x = - x
 ```
 
-It is important to always surround binary operators with whitespace and never have trailing whitespace with a unary operator. Failing to do so can lead to code that may accidentally negate a value!
+Adding a white-space character after the `-` operator can lead to confusion for others.
 
-### Surround a custom operator definition with whitespace
+In summary, it's important to always:
 
-Always use whitespace to surround an operator definition:
+* Surround binary operators with white space
+* Never have trailing white space after a unary operator
+
+The binary arithmetic operator guideline is especially important. Failing to surround a binary `-` operator, when combined with certain formatting choices, could lead to interpreting it as a unary `-`.
+
+### Surround a custom operator definition with white space
+
+Always use white space to surround an operator definition:
 
 ```fsharp
 // OK
@@ -61,11 +68,11 @@ let ( !> ) x f = f x
 let (!>) x f = f x
 ```
 
-For any custom operator that could start with `*`, you'll need to add a whitespace to the beginning of the definition to avoid a compiler ambiguity. Because of this, it is recommended that you simply surround the definitions of all operators with a single whitespace character.
+For any custom operator that starts with `*`, you'll need to add a white space to the beginning of the definition to avoid a compiler ambiguity. Because of this, it's recommended that you simply surround the definitions of all operators with a single white-space character.
 
-### Surround function parameter arrows with whitespace
+### Surround function parameter arrows with white space
 
-When defining the signature of a function, use whitespace around the `->` symbol:
+When defining the signature of a function, use white space around the `->` symbol:
 
 ```fsharp
 // OK

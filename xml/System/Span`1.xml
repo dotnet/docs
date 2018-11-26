@@ -69,13 +69,13 @@ The following example creates a slice of the middle five elements of a 10-elemen
 
 ## Span\<T> and slices
 
-`Span\<T>` includes two overloads of the <xref:System.Span%601.Slice%2A> method that form a slice out of the current span that starts at a specified index. This makes it possible to treat the data in a `Span\<T>` as a set of logical chunks that can be processed as needed by portions of a data processing pipeline with minimal performance impact. For example, since modern server protocols are often text-based, manipulation of strings and substrings is particularly important. In the <xref:System.String> class, the major method for extracting substrings is <xref:System.String.Substring%2A>. For data pipelines that rely on extensive string manipulation, its use offers some performance penalties, since it:
+`Span<T>` includes two overloads of the <xref:System.Span%601.Slice%2A> method that form a slice out of the current span that starts at a specified index. This makes it possible to treat the data in a `Span<T>` as a set of logical chunks that can be processed as needed by portions of a data processing pipeline with minimal performance impact. For example, since modern server protocols are often text-based, manipulation of strings and substrings is particularly important. In the <xref:System.String> class, the major method for extracting substrings is <xref:System.String.Substring%2A>. For data pipelines that rely on extensive string manipulation, its use offers some performance penalties, since it:
 
 1. Creates a new string to hold the substring.
 
 2. Copies a subset of the characters from the original string to the new string.
 
-This allocation and copy operation can be eliminated by using either `Span\<T>` or <xref:System.ReadOnlySpan%601>, as the following example shows:
+This allocation and copy operation can be eliminated by using either `Span<T>` or <xref:System.ReadOnlySpan%601>, as the following example shows:
 
 [!code-csharp[Creating a slice from a substring](~/samples/snippets/csharp/api/system/span/slice2/program.cs)]
 

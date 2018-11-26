@@ -122,7 +122,7 @@ Inspect the symbol corresponding to any declared type, method, property. Select 
 
 The above VB examples can be easily replicated in C#. Type `using C = System.Console;` in place of `Imports C = System.Console` for the alias. The preceding steps in C# yield identical results in the visualizer window.
 
-Semantic inspection operations are only available on nodes. They are not available on tokens or trivia. Not all nodes have interesting semantic information to inspect. When a node doesn't have interesting semantic information, clicking on **View * Symbol (if any)** shows a blank property grid.
+Semantic inspection operations are only available on nodes. They are not available on tokens or trivia. Not all nodes have interesting semantic information to inspect. When a node doesn't have interesting semantic information, clicking on **View \* Symbol (if any)** shows a blank property grid.
 
 You can read more about APIs for performing semantic analysis in the [Work with semantics](work-with-semantics.md) overview document.
 

@@ -16,7 +16,7 @@ ms.author: "ronpet"
 # Polling for the Status of an Asynchronous Operation
 Applications that can do other work while waiting for the results of an asynchronous operation should not block waiting until the operation completes. Use one of the following options to continue executing instructions while waiting for an asynchronous operation to complete:  
   
--   Use the <xref:System.IAsyncResult.IsCompleted%2A> property of the <xref:System.IAsyncResult> returned by the asynchronous operation's **Begin***OperationName* method to determine whether the operation has completed. This approach is known as polling and is demonstrated in this topic.  
+-   Use the <xref:System.IAsyncResult.IsCompleted%2A> property of the <xref:System.IAsyncResult> returned by the asynchronous operation's **Begin**_OperationName_ method to determine whether the operation has completed. This approach is known as polling and is demonstrated in this topic.  
   
 -   Use an <xref:System.AsyncCallback> delegate to process the results of the asynchronous operation in a separate thread. For an example that demonstrates this approach, see [Using an AsyncCallback Delegate to End an Asynchronous Operation](../../../docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md).  
   

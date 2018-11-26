@@ -35,7 +35,7 @@ You can use a variety of patterns to filter on the exception type and other cond
 |:? *exception-type*|Matches the specified .NET exception type.|
 |:? *exception-type* as *identifier*|Matches the specified .NET exception type, but gives the exception a named value.|
 |*exception-name*(*arguments*)|Matches an F# exception type and binds the arguments.|
-|*identifier*|Matches any exception and binds the name to the exception object. Equivalent to **:? System.Exception as***identifier*|
+|*identifier*|Matches any exception and binds the name to the exception object. Equivalent to **:? System.Exception as**_identifier_|
 |*identifier* when *condition*|Matches any exception if the condition is true.|
 
 ## Examples

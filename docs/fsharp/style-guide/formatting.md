@@ -649,7 +649,7 @@ When applied to a parameter, they must be on the same line and separated by a `;
 
 ## Formatting literals
 
-[F# literals](../language-reference/literals.md) using the `Literal` attribute should use place the attribute on its own line and camelCase naming:
+[F# literals](../language-reference/literals.md) using the `Literal` attribute should should place the attribute on its own line and use camelCase naming
 
 ```fsharp
 [<Literal>]

@@ -99,7 +99,7 @@
   
  When the signature of the methods invoked by a delegate includes a return value, the delegate returns the return value of the last element in the invocation list. When the signature includes a parameter that is passed by reference, the final value of the parameter is the result of every method in the invocation list executing sequentially and updating the parameter's value.  
   
- The closest equivalent of a delegate in C or C++ is a function pointer. A delegate can represent a static method or an instance method. When the delegate represents an instance method, the delegate stores not only a reference to the method's entry point, but also a reference to the class instance. Unlike function pointers, delegates are object oriented and type safe.  
+ The closest equivalent of a delegate in C is a function pointer. A delegate can represent a static method or an instance method. When the delegate represents an instance method, the delegate stores not only a reference to the method's entry point, but also a reference to the class instance. Unlike function pointers, delegates are object oriented and type safe.  
   
    
   

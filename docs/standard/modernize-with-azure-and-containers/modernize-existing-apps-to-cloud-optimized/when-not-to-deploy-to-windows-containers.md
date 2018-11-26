@@ -39,5 +39,5 @@ For additional not-supported scenarios and requests from the community, see the 
     [https://docs.microsoft.com/azure/virtual-machines/windows/containers](https://docs.microsoft.com/azure/virtual-machines/windows/containers)
 
 >[!div class="step-by-step"]
-[Previous](deploy-existing-net-apps-as-windows-containers.md)
-[Next](when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure.md)
+>[Previous](deploy-existing-net-apps-as-windows-containers.md)
+>[Next](when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure.md)

@@ -26,4 +26,4 @@ in fixing any errors you find, you may submit a [Pull Request](https://github.co
 - [C# Programming Guide](../../programming-guide/index.md)
 
 >[!div class="step-by-step"]
-[Next](../../../../_csharplang/spec/introduction.md)
+>[Next](../../../../_csharplang/spec/introduction.md)

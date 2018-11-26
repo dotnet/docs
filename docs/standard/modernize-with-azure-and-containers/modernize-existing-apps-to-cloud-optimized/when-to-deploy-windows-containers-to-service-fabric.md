@@ -30,5 +30,5 @@ When comparing Service Fabric to other orchestrators, it's important to highligh
 The ultimate goal of Service Fabric is to reduce the complexities of building applications by using a microservices approach. You eventually want a microservices for certain types of applications to avoid costly redesigns. You can start small, scale when needed, deprecate services, add new services, and evolve your application with customer use. There are many other problems that are yet to be solved to make microservices more approachable for most developers. If you currently are just lifting and shifting an application with Windows Containers, but you are thinking about adding microservices based on containers in the future, that is the Service Fabric sweet spot.
 
 >[!div class="step-by-step"]
-[Previous](when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md)
-[Next](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)
+>[Previous](when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md)
+>[Next](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)

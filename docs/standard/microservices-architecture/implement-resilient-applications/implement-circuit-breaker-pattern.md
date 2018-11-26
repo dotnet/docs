@@ -141,14 +141,11 @@ You can implement different logic for when to open/break the circuit. Or you can
 
 Finally, another possibility for the `CircuitBreakerPolicy` is to use `Isolate` (which forces open and holds open the circuit) and `Reset` (which closes it again). These could be used to build a utility HTTP endpoint that invokes Isolate and Reset directly on the policy.  Such an HTTP endpoint could also be used, suitably secured, in production for temporarily isolating a downstream system, such as when you want to upgrade it. Or it could trip the circuit manually to protect a downstream system you suspect to be faulting.
 
-
 ## Additional resources
-
 
 -   **Circuit Breaker pattern**
     [*https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker*](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker)
 
-
 >[!div class="step-by-step"]
-[Previous](implement-http-call-retries-exponential-backoff-polly.md)
-[Next](monitor-app-health.md)
+>[Previous](implement-http-call-retries-exponential-backoff-polly.md)
+>[Next](monitor-app-health.md)

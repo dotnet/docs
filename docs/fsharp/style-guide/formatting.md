@@ -1,7 +1,7 @@
 ---
 title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
-ms.date: 05/14/2018
+ms.date: 11/26/2018
 ---
 # F# code formatting guidelines
 

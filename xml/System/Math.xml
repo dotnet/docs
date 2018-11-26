@@ -1077,8 +1077,16 @@
 ## Remarks  
  The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward positive infinity. In other words, if `a` is positive, the presence of any fractional component causes `a` to be rounded to the next highest integer. If `a` is negative, the rounding operation causes any fractional component of `a` to be discarded. The operation of this method differs from the <xref:System.Math.Floor%28System.Double%29> method, which supports rounding toward negative infinity.  
   
+Starting with Visual Basic 15.8, the performance of Double-to-integer conversion is optimized if you pass the value returned by the `Ceiling` method to the any of the [integral conversion functions](~/docs/visual-basic/language-reference/functions/conversion-functions.md), or if the Double value returned by `Ceiling` is automatically converted to an integer with [Option Strict](~/docs/visual-basic/language-reference/statements/option-strict-statement.md) set to Off. This optimization allows code to run faster -- up to twice as fast for code that does a large number of conversions to integer types. The following example illustrates such optimized conversions:
    
-  
+```vb
+Dim d1 As Double = 1043.75133
+Dim i1 As Integer = CInt(Math.Ceiling(d1))        ' Result: 1044
+
+Dim d2 As Double = 7968.4136
+Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
+```   
+
 ## Examples  
  The following example illustrates the <xref:System.Math.Ceiling%28System.Double%29?displayProperty=nameWithType> method and contrasts it with the <xref:System.Math.Floor%28System.Double%29> method.  
   
@@ -2010,9 +2018,17 @@
   
 ## Remarks  
  The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward negative infinity. In other words, if `d` is positive, any fractional component is truncated. If `d` is negative, the presence of any fractional component causes it to be rounded to the smaller integer. The operation of this method differs from the <xref:System.Math.Ceiling%2A> method, which supports rounding toward positive infinity.  
-  
+
+Starting with Visual Basic 15.8, the performance of Double-to-integer conversion is optimized if you pass the value returned by the `Floor` method to the any of the [integral conversion functions](~/docs/visual-basic/language-reference/functions/conversion-functions.md), or if the Double value returned by `Floor` is automatically converted to an integer with [Option Strict](~/docs/visual-basic/language-reference/statements/option-strict-statement.md) set to Off. This optimization allows code to run faster -- up to twice as fast for code that does a large number of conversions to integer types. The following example illustrates such optimized conversions:
    
-  
+```vb
+Dim d1 As Double = 1043.75133
+Dim i1 As Integer = CInt(Math.Ceiling(d1))        ' Result: 1043
+
+Dim d2 As Double = 7968.4136
+Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7968
+```
+
 ## Examples  
  The following example illustrates the <xref:System.Math.Floor%28System.Double%29?displayProperty=nameWithType> method and contrasts it with the <xref:System.Math.Ceiling%28System.Double%29> method.  
   
@@ -4293,7 +4309,17 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
   
 > [!NOTE]
 >  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
+
+Starting with Visual Basic 15.8, the performance of Double-to-integer conversion is optimized if you pass the value returned by the `Round` method to the any of the [integral conversion functions](~/docs/visual-basic/language-reference/functions/conversion-functions.md), or if the Double value returned by `Round` is automatically converted to an integer with [Option Strict](~/docs/visual-basic/language-reference/statements/option-strict-statement.md) set to Off. This optimization allows code to run faster -- up to twice as fast for code that does a large number of conversions to integer types. The following example illustrates such optimized conversions:
+   
+```vb
+Dim d1 As Double = 1043.75133
+Dim i1 As Integer = CInt(Math.Ceiling(d1))        ' Result: 1044
+
+Dim d2 As Double = 7968.4136
+Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7968
+```
+
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
@@ -5651,11 +5677,17 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- <xref:System.Math.Truncate%2A> rounds `d` to the nearest integer towards zero.  
+## Remarks
+
+<xref:System.Math.Truncate%2A> rounds `d` to the nearest integer towards zero.  
   
+Starting with Visual Basic 15.8, the performance of Double-to-integer conversion is optimized if you pass the value returned by the `Truncate` method to the any of the [integral conversion functions](~/docs/visual-basic/language-reference/functions/conversion-functions.md), or if the Double value returned by `Truncate` is automatically converted to an integer with [Option Strict](~/docs/visual-basic/language-reference/statements/option-strict-statement.md) set to Off. This optimization allows code to run faster -- up to twice as fast for code that does a large number of conversions to integer types. The following example illustrates such an optimized conversion:
    
-  
+```vb
+Dim d As Double = 164.7194
+Dim i As Integer = CInt(Math.Truncate(d))     ' Result: 164
+```
+
 ## Examples  
  The following example calls the <xref:System.Math.Truncate%28System.Double%29> method to truncate both a positive and a negative <xref:System.Double> value.  
   

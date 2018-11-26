@@ -159,32 +159,6 @@ If `array` is `null`, this constructor returns a `null` `Span<T>`.
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Span (T[] array, int start);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[] array, int32 start) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Span`1.#ctor(`0[],System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(), start As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Span(cli::array &lt;T&gt; ^ array, int start);" />
-      <MemberSignature Language="F#" Value="new Span&lt;'T&gt; : 'T[] * int -&gt; Span&lt;'T&gt;" Usage="new System.Span&lt;'T&gt; (array, start)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="array" Type="T[]" />
-        <Parameter Name="start" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="array">The source array.</param>
-        <param name="start">The index of the first element in the array to include in the <see cref="T:System.Span`1" /> object.</param>
-        <summary>Creates a new <see cref="T:System.Span`1" /> object from a specified array starting at a specifed index position and continuing to the end of the array.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Span (T[] array, int start, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[] array, int32 start, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Span`1.#ctor(`0[],System.Int32,System.Int32)" />
@@ -285,64 +259,6 @@ This method copies all of `source` to `destination` even if `source` and `destin
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="destination" /> is shorter than the source <see cref="System.Span`1" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="DangerousCreate">
-      <MemberSignature Language="C#" Value="public static Span&lt;T&gt; DangerousCreate (object obj, ref T objectData, int length);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Span`1&lt;!T&gt; DangerousCreate(object obj, !T&amp; objectData, int32 length) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Span`1.DangerousCreate(System.Object,`0@,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function DangerousCreate (obj As Object, ByRef objectData As T, length As Integer) As Span(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Span&lt;T&gt; DangerousCreate(System::Object ^ obj, T % objectData, int length);" />
-      <MemberSignature Language="F#" Value="static member DangerousCreate : obj *  * int -&gt; Span&lt;'T&gt;" Usage="System.Span&lt;'T&gt;.DangerousCreate (obj, objectData, length)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.2.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Span&lt;T&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="System.Object" />
-        <Parameter Name="objectData" Type="T" RefType="ref" />
-        <Parameter Name="length" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="obj">To be added.</param>
-        <param name="objectData">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="DangerousGetPinnableReference">
-      <MemberSignature Language="C#" Value="public T DangerousGetPinnableReference ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T DangerousGetPinnableReference() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Span`1.DangerousGetPinnableReference" />
-      <MemberSignature Language="VB.NET" Value="Public Function DangerousGetPinnableReference () As T" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; T % DangerousGetPinnableReference();" />
-      <MemberSignature Language="F#" Value="member this.DangerousGetPinnableReference : unit -&gt; " Usage="span.DangerousGetPinnableReference " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue RefType="Ref">
-        <ReturnType>T</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Empty">

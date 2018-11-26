@@ -1,4 +1,4 @@
-<Type Name="DialogProc" FullName="Microsoft.Aspnet.Snapin.DialogProc">
+﻿<Type Name="DialogProc" FullName="Microsoft.Aspnet.Snapin.DialogProc">
   <TypeSignature Language="C#" Value="public delegate bool DialogProc(IntPtr hwndDlg, int uMsg, IntPtr wParam, IntPtr lParam);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DialogProc extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Aspnet.Snapin.DialogProc" />
@@ -27,7 +27,8 @@
     <param name="wParam">Additional message-specific information.</param>
     <param name="lParam">Additional message-specific information.</param>
     <summary>Processes messages that are sent to a modal or modeless dialog box.</summary>
-    <returns><see langword="true" /> if the DialogProc successfully processed the message; otherwise, <see langword="false" />.</returns>
+    <returns>
+      <see langword="true" /> if the DialogProc successfully processed the message; otherwise, <see langword="false" />.</returns>
     <remarks>
       <format type="text/markdown"><![CDATA[
 

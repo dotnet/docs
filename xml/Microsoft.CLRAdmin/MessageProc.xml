@@ -1,4 +1,4 @@
-<Type Name="MessageProc" FullName="Microsoft.CLRAdmin.MessageProc">
+﻿<Type Name="MessageProc" FullName="Microsoft.CLRAdmin.MessageProc">
   <TypeSignature Language="C#" Value="public delegate IntPtr MessageProc(IntPtr hWnd, uint uMsg, IntPtr wParam, IntPtr lParam);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageProc extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.MessageProc" />

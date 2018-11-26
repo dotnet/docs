@@ -1,4 +1,4 @@
-<Type Name="Compiler" FullName="Microsoft.CSharp.Compiler">
+﻿<Type Name="Compiler" FullName="Microsoft.CSharp.Compiler">
   <TypeSignature Language="C#" Value="public class Compiler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Compiler extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.CSharp.Compiler" />
@@ -114,7 +114,7 @@ For the options parameter, the key is the short form of the compiler option. The
 
 -or-
 
-<paramref name="target"/> is <see langword="null" />.
+<paramref name="target" /> is <see langword="null" />.
         </exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="sourceTexts" /> is an empty array.

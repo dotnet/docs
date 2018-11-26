@@ -1,4 +1,4 @@
-<Type Name="DialogProc" FullName="Microsoft.CLRAdmin.DialogProc">
+﻿<Type Name="DialogProc" FullName="Microsoft.CLRAdmin.DialogProc">
   <TypeSignature Language="C#" Value="public delegate bool DialogProc(IntPtr hwndDlg, uint uMsg, IntPtr wParam, IntPtr lParam);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DialogProc extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.DialogProc" />

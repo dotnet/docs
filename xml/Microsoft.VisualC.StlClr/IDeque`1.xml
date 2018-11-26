@@ -1,4 +1,4 @@
-<Type Name="IDeque&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.IDeque&lt;TValue&gt;">
+﻿<Type Name="IDeque&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.IDeque&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public interface IDeque&lt;TValue&gt; : ICloneable, Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer&lt;TValue&gt;, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IDeque`1&lt;TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer`1&lt;!TValue&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.IDeque`1" />
@@ -723,7 +723,6 @@ For more information, see [deque::erase (STL/CLR)](/cpp/dotnet/deque-stl-clr#era
         <param name="_Count">The number of elements to insert into the container.</param>
         <param name="_Val">The element to be inserted into the container.</param>
         <summary>Adds an element at a specified position in the container.</summary>
-        <returns>An iterator.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
 

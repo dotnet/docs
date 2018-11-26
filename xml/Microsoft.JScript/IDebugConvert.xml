@@ -1,4 +1,4 @@
-<Type Name="IDebugConvert" FullName="Microsoft.JScript.IDebugConvert">
+﻿<Type Name="IDebugConvert" FullName="Microsoft.JScript.IDebugConvert">
   <TypeSignature Language="C#" Value="public interface IDebugConvert" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDebugConvert" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IDebugConvert" />
@@ -203,6 +203,7 @@
       <Docs>
         <param name="hr">The HRESULT error code.</param>
         <param name="engine">A reference to the scripting engine.</param>
+        <summary>To be added.</summary>
         <returns>A localized string that contains information about the error.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

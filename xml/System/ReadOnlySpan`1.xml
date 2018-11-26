@@ -103,36 +103,6 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ReadOnlySpan (T[] array, int start);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[] array, int32 start) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ReadOnlySpan`1.#ctor(`0[],System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(), start As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySpan(cli::array &lt;T&gt; ^ array, int start);" />
-      <MemberSignature Language="F#" Value="new ReadOnlySpan&lt;'T&gt; : 'T[] * int -&gt; ReadOnlySpan&lt;'T&gt;" Usage="new System.ReadOnlySpan&lt;'T&gt; (array, start)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="array" Type="T[]" />
-        <Parameter Name="start" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="array">The array from which to create the <see cref="T:System.ReadOnlySpan`1" />.</param>
-        <param name="start">The starting index from which to begin the read-only span.</param>
-        <summary>Creates a new <see cref="T:System.ReadOnlySpan`1" /> from an array starting at the specified index and continuing until the end of the array.</summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="start" /> is less-than 0 or greater-than the length of the array.</exception>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="array" /> is null.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ReadOnlySpan (T[] array, int start, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[] array, int32 start, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ReadOnlySpan`1.#ctor(`0[],System.Int32,System.Int32)" />
@@ -196,71 +166,6 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="destination" /> is shorter than the source <see cref="System.ReadOnlySpan`1" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="DangerousCreate">
-      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;T&gt; DangerousCreate (object obj, ref T objectData, int length);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;!T&gt; DangerousCreate(object obj, !T&amp; objectData, int32 length) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ReadOnlySpan`1.DangerousCreate(System.Object,`0@,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function DangerousCreate (obj As Object, ByRef objectData As T, length As Integer) As ReadOnlySpan(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static ReadOnlySpan&lt;T&gt; DangerousCreate(System::Object ^ obj, T % objectData, int length);" />
-      <MemberSignature Language="F#" Value="static member DangerousCreate : obj *  * int -&gt; ReadOnlySpan&lt;'T&gt;" Usage="System.ReadOnlySpan&lt;'T&gt;.DangerousCreate (obj, objectData, length)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.2.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="obj" Type="System.Object" />
-        <Parameter Name="objectData" Type="T" RefType="ref" />
-        <Parameter Name="length" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="obj">The managed object that contains the data the span will cover.</param>
-        <param name="objectData">A reference to data within the object.</param>
-        <param name="length">The number of <paramref name="T" /> elements to span.</param>
-        <summary>Creates a new <see cref="T:System.ReadOnlySpan`1" /> over a portion of a regular managed object.</summary>
-        <returns>A <see cref="T:System.ReadOnlySpan`1" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[This method is dangerous because it **does not check** for the following error conditions:
-
-- The `length` parameter is incorrect.
-- The `obj` parameter is null.
-- The objects `obj` points to may contain a raw pointer.]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="DangerousGetPinnableReference">
-      <MemberSignature Language="C#" Value="public T DangerousGetPinnableReference ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T DangerousGetPinnableReference() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ReadOnlySpan`1.DangerousGetPinnableReference" />
-      <MemberSignature Language="VB.NET" Value="Public Function DangerousGetPinnableReference () As T" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; T % DangerousGetPinnableReference();" />
-      <MemberSignature Language="F#" Value="member this.DangerousGetPinnableReference : unit -&gt; " Usage="readOnlySpan.DangerousGetPinnableReference " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>T@</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Returns a reference to the element of the <see cref="T:System.ReadOnlySpan`1" /> at index zero. If the read-only span is empty, returns the reference to the memory location where the first element would have been stored.</summary>
-        <returns>A reference to the first element of the <see cref="T:System.ReadOnlySpan`1" /> at index zero.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[This method returns a [ref struct](~/docs/csharp/reference-semantics-with-value-types.md#ref-struct-type). It can be used for pinning a <xref:System.ReadOnlySpan`1> in memory. It is required to support the use of a <xref:System.ReadOnlySpan`1> within a [fixed](~/docs/csharp/language-reference/keywords/fixed-statement.md) statement.
-
-This reference is used for pinning and must never be dereferenced.]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Empty">

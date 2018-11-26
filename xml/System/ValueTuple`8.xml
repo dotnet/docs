@@ -60,8 +60,11 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute FrameworkAlternate="">
       <AttributeName>Serializable</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName>System.Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

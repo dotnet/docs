@@ -1,4 +1,4 @@
-<Type Name="VsaItems" FullName="Microsoft.JScript.VsaItems">
+﻿<Type Name="VsaItems" FullName="Microsoft.JScript.VsaItems">
   <TypeSignature Language="C#" Value="public sealed class VsaItems : Microsoft.JScript.Vsa.IJSVsaItems, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit VsaItems extends System.Object implements class Microsoft.JScript.Vsa.IJSVsaItems, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.VsaItems" />
@@ -187,7 +187,7 @@
         <summary>Creates a new item and adds it to the collection.</summary>
         <returns>The newly created item.</returns>
         <remarks>To be added.</remarks>
-        <forInternalUseOnly />        
+        <forInternalUseOnly />
         <altmember cref="T:Microsoft.JScript.VsaItem" />
       </Docs>
     </Member>

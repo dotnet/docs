@@ -1,4 +1,4 @@
-<Type Name="PropSheetPageProc" FullName="Microsoft.CLRAdmin.PropSheetPageProc">
+﻿<Type Name="PropSheetPageProc" FullName="Microsoft.CLRAdmin.PropSheetPageProc">
   <TypeSignature Language="C#" Value="public delegate uint PropSheetPageProc(IntPtr hwnd, uint uMsg, IntPtr lParam);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropSheetPageProc extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.CLRAdmin.PropSheetPageProc" />

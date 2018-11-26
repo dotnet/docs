@@ -1,4 +1,4 @@
-<Type Name="Manager" FullName="Microsoft.IE.Manager">
+﻿<Type Name="Manager" FullName="Microsoft.IE.Manager">
   <TypeSignature Language="C#" Value="public class Manager : Microsoft.IE.IHostEx" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Manager extends System.Object implements class Microsoft.IE.IHostEx" />
   <TypeSignature Language="DocId" Value="T:Microsoft.IE.Manager" />
@@ -79,7 +79,8 @@ The Manager class initializes the properties that enable managed code to execute
         <param name="pURL1">The first URL to compare.</param>
         <param name="pURL2">The second URL to compare.</param>
         <summary>Gets a value that indicates whether the site portion of two URLs have the same canonicalized values.</summary>
-        <returns><see langword="true" /> if the two URLs are on the same site; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the two URLs are on the same site; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -108,7 +109,8 @@ The Manager class initializes the properties that enable managed code to execute
         <param name="pURL1">The first URL to compare.</param>
         <param name="pURL2">The second URL to compare.</param>
         <summary>Gets a value that indicates whether two URLs are the same in their canonicalized forms.</summary>
-        <returns><see langword="true" /> if the two URLs are the same; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the two URLs are the same; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -248,7 +250,8 @@ This API is not CLS-compliant. </summary>
         <param name="codeBase">When this method returns, contains the path to the code base.</param>
         <param name="application">When this method returns, contains the application name.</param>
         <summary>Gets the code base and the application name from the passed-in URL string.</summary>
-        <returns><see langword="true" /> if the code base was found; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the code base was found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -279,7 +282,8 @@ This API is not CLS-compliant. </summary>
         <param name="path">When this method returns, contains the path of the configuration file.</param>
         <param name="file">When this method returns, contains the name of the configuration file.</param>
         <summary>Gets the path and file name of the configuration file from the passed-in URL string.</summary>
-        <returns><see langword="true" /> if the configuration file was found; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the configuration file was found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -469,7 +473,8 @@ Typically, most of the parameter values can be obtained from the Internet Securi
       <Docs>
         <param name="pURL">The URL to be checked.</param>
         <summary>Determines whether the specified URL is valid.</summary>
-        <returns><see langword="true" /> if the URL is valid; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the URL is valid; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

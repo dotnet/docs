@@ -326,6 +326,82 @@ public class StatClass {
 
 The `StatClass` class represents a structure that is returned by the `stat` system call on UNIX systems. It represents information about a given file. The class above is the stat struct representation in managed code. Again, the fields in the class have to be in the same order as the native struct (you can find these by perusing man pages on your favorite UNIX implementation) and they have to be of the same underlying type.
 
+#### Customizing Struct Marshalling
+
+Sometimes the default marshalling rules for fields in a structure aren't exactly what you need. We provide a few extension points for you to customize how your struct is marshalled to native code.
+
+##### Customizing Boolean Marshalling
+
+We have many ways to represent boolean values in native code; on Windows alone there are 3 ways to represent boolean values. The runtime doesn't know the native definition of your structure, so the best it can do is make a guess on how to marshal your boolean values. So, we enable you to pick how to marshal your boolean field. See the examples below for how to marshal your .NET `bool` to different native boolean types:
+
+Boolean values default to marshalling a native 4-byte Win32 `BOOL` value, as shown below:
+
+```csharp
+public struct WinBool
+{
+    public bool b;
+}
+```
+
+```cpp
+struct WinBool
+{
+    public BOOL b;
+};
+```
+
+If you want to be explicit, you can use the `UnmanagedType.Bool` value to get the same behavior as above:
+
+```csharp
+public struct WinBool
+{
+    [MarshalAs(UnmanagedType.Bool)]
+    public bool b;
+}
+```
+
+```cpp
+struct WinBool
+{
+    public BOOL b;
+};
+```
+
+Using the `UmanagedType.U1` or `UnmanagedType.I1` values below, you can tell the runtime to marshal the `b` field as a 1-byte `bool` type.
+
+```csharp
+public struct CBool
+{
+    [MarshalAs(UnmanagedType.U1)]
+    public bool b;
+}
+```
+
+```cpp
+struct CBool
+{
+    public bool b;
+};
+```
+
+When on Windows, you can use the `UnmanagedType.VariantBool` value to tell the runtime to marshal your boolean value to a 2-byte `VARIANT_BOOL` value.
+
+```csharp
+public struct VariantBool
+{
+    [MarshalAs(UnmanagedType.VariantBool)]
+    public bool b;
+}
+```
+
+```cpp
+struct VariantBool
+{
+    public VARIANT_BOOL b;
+};
+```
+
+
 ## More resources
 
 *   [PInvoke.net wiki](https://www.pinvoke.net/) an excellent Wiki with information on common Win32 APIs and how to call them.

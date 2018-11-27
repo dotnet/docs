@@ -30,6 +30,6 @@ public abstract class Shape
 
     public override string ToString()
     {
-        return Id + $" Area = {Area:F2}";
+        return $"{Id} Area = {Area:F2}";
     }
 }

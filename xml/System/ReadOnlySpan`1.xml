@@ -1,4 +1,4 @@
-﻿<Type Name="ReadOnlySpan&lt;T&gt;" FullName="System.ReadOnlySpan&lt;T&gt;">
+<Type Name="ReadOnlySpan&lt;T&gt;" FullName="System.ReadOnlySpan&lt;T&gt;">
   <TypeSignature Language="C#" Value="public struct ReadOnlySpan&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ReadOnlySpan`1&lt;T&gt; extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.ReadOnlySpan`1" />
@@ -32,7 +32,7 @@
     <typeparam name="T">The type of items in the <see cref="System.ReadOnlySpan`1" />.</typeparam>
     <summary>Provides a type-safe and memory-safe read-only representation of a contiguous region of arbitrary memory.</summary>
     <remarks>
-      <format type="text/markdown"><![CDATA[`ReadOnlySpan<T>` is a [ref struct](~/docs/csharp/reference-semantics-with-value-types.md#ref-struct-type) that is allocated on the stack and can never escape to the managed heap. Ref struct types have a number of restrictions to ensure that they cannot be promoted to the managed heap, including that they can't be boxed, captured in lambda expressions, assigned to variables of type <xref:System.Object>, assigned to `dynamic` variables, and they cannot implement any interface type.
+      <format type="text/markdown"><![CDATA[`ReadOnlySpan<T>` is a [ref struct](~/docs/csharp/language-reference/keywords/ref.md#ref-struct-types) that is allocated on the stack and can never escape to the managed heap. Ref struct types have a number of restrictions to ensure that they cannot be promoted to the managed heap, including that they can't be boxed, captured in lambda expressions, assigned to variables of type <xref:System.Object>, assigned to `dynamic` variables, and they cannot implement any interface type.
 
 A `ReadOnlySpan<T>` instance is often used to reference the elements of an array or a portion of an array. Unlike an array, however, a `ReadOnlySpan<T>` instance can point to managed memory, native memory, or memory managed on the stack.]]></format>
     </remarks>

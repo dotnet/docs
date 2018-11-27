@@ -217,7 +217,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Specifies that <see cref="T:System.Data.SqlTypes.SqlString" /> comparisons must ignore nonspace combining characters, such as diacritics. The Unicode Standard defines combining characters as characters that are combined with base characters to produce a new character. Non-space combining characters do not use character space by themselves when rendered. For more information about non-space combining characters, see the Unicode Standard at http://www.unicode.org.</summary>
+        <summary>Specifies that <see cref="T:System.Data.SqlTypes.SqlString" /> comparisons must ignore nonspace combining characters, such as diacritics. The Unicode Standard defines combining characters as characters that are combined with base characters to produce a new character. Non-space combining characters do not use character space by themselves when rendered. For more information about non-space combining characters, see the Unicode Standard at https://www.unicode.org.</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreWidth">

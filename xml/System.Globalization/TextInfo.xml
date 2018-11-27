@@ -873,7 +873,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The returned string might differ in length from the input string. For more information on casing, refer to the Unicode Technical Report #21 "Case Mappings," published by the Unicode Consortium (http://www.unicode.org). The current implementation preserves the length of the string. However, this behavior is not guaranteed and could change in future implementations.  
+ The returned string might differ in length from the input string. For more information on casing, refer to the Unicode Technical Report #21 "Case Mappings," published by the [Unicode Consortium](https://www.unicode.org). The current implementation preserves the length of the string. However, this behavior is not guaranteed and could change in future implementations.  
   
  Casing semantics depend on the culture in use. For the invariant culture, the casing semantics are not culture-sensitive. For a specific culture, the casing semantics are sensitive to that culture.  
   
@@ -1151,7 +1151,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The returned string might differ in length from the input string. For more information on casing, refer to the Unicode Technical Report #21 "Case Mappings," published by the Unicode Consortium (http://www.unicode.org). The current implementation preserves the length of the string. However, this behavior is not guaranteed and could change in future implementations.  
+ The returned string might differ in length from the input string. For more information on casing, refer to the Unicode Technical Report #21 "Case Mappings," published by the Unicode Consortium (https://www.unicode.org). The current implementation preserves the length of the string. However, this behavior is not guaranteed and could change in future implementations.  
   
  Casing semantics depend on the culture in use. For the invariant culture, the casing semantics are not culture-sensitive. For a specific culture, the casing semantics are sensitive to that culture.  
   

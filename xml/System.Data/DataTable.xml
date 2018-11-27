@@ -5245,7 +5245,7 @@ public class A {
         <Parameter Name="filterExpression" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filterExpression">The criteria to use to filter the rows. For examples on how to filter rows, see [DataView RowFilter Syntax [C#]](http://www.csharp-examples.net/dataview-rowfilter/).</param>
+        <param name="filterExpression">The criteria to use to filter the rows. For examples on how to filter rows, see [DataView RowFilter Syntax [C#]](https://www.csharp-examples.net/dataview-rowfilter/).</param>
         <summary>Gets an array of all <see cref="T:System.Data.DataRow" /> objects that match the filter criteria.</summary>
         <returns>An array of <see cref="T:System.Data.DataRow" /> objects.</returns>
         <remarks>
@@ -5305,7 +5305,7 @@ public class A {
         <Parameter Name="sort" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filterExpression">The criteria to use to filter the rows. For examples on how to filter rows, see [DataView RowFilter Syntax [C#]](http://www.csharp-examples.net/dataview-rowfilter/).</param>
+        <param name="filterExpression">The criteria to use to filter the rows. For examples on how to filter rows, see [DataView RowFilter Syntax [C#]](https://www.csharp-examples.net/dataview-rowfilter/).</param>
         <param name="sort">A string specifying the column and sort direction.</param>
         <summary>Gets an array of all <see cref="T:System.Data.DataRow" /> objects that match the filter criteria, in the specified sort order.</summary>
         <returns>An array of <see cref="T:System.Data.DataRow" /> objects matching the filter expression.</returns>
@@ -5365,7 +5365,7 @@ public class A {
         <Parameter Name="recordStates" Type="System.Data.DataViewRowState" />
       </Parameters>
       <Docs>
-        <param name="filterExpression">The criteria to use to filter the rows. For examples on how to filter rows, see [DataView RowFilter Syntax [C#]](http://www.csharp-examples.net/dataview-rowfilter/).</param>
+        <param name="filterExpression">The criteria to use to filter the rows. For examples on how to filter rows, see [DataView RowFilter Syntax [C#]](https://www.csharp-examples.net/dataview-rowfilter/).</param>
         <param name="sort">A string specifying the column and sort direction.</param>
         <param name="recordStates">One of the <see cref="T:System.Data.DataViewRowState" /> values.</param>
         <summary>Gets an array of all <see cref="T:System.Data.DataRow" /> objects that match the filter in the order of the sort that match the specified state.</summary>

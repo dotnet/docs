@@ -1,4 +1,4 @@
-﻿<Type Name="ReadOnlySpan&lt;T&gt;+Enumerator" FullName="System.ReadOnlySpan&lt;T&gt;+Enumerator">
+<Type Name="ReadOnlySpan&lt;T&gt;+Enumerator" FullName="System.ReadOnlySpan&lt;T&gt;+Enumerator">
   <TypeSignature Language="C#" Value="public struct ReadOnlySpan&lt;T&gt;.Enumerator" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit ReadOnlySpan`1/Enumerator&lt;T&gt; extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.ReadOnlySpan`1.Enumerator" />
@@ -36,7 +36,7 @@ Though the <xref:System.ReadOnlySpan`1> is allocated on the stack, the underlyin
 
 Unlike some other enumerator structures in .NET, the <xref:System.ReadOnlySpan`1.Enumerator>:
 
-- Does not implement the <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator`1> interface. This is because <xref:System.ReadOnlySpan`1.Enumerator> is a [ref struct](~/docs/csharp/reference-semantics-with-value-types.md#ref-struct-type) and cannot be boxed.
+- Does not implement the <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator`1> interface. This is because <xref:System.ReadOnlySpan`1.Enumerator> is a [ref struct](~/docs/csharp/language-reference/keywords/ref.md#ref-struct-types) and cannot be boxed.
 
 - Does not include a `Reset` method, which can set the enumerator to its initial position before the first element in the span. (The <xref:System.Collections.IEnumerator.Reset?displayProperty=nameWithType> method must be implemented as part of the interface, but most implementors either throw an exception or provide no implementation.)]]></format>
     </remarks>

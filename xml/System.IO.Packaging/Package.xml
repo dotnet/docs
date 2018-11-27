@@ -64,7 +64,7 @@
   
  The .NET Framework uses packages to store content, resources, and relationships for pages and documents using a standard ZIP file by default. As with any ZIP file, your application can use the <xref:System.IO.Packaging> classes to store and optionally protect any type or number of data files in a single efficient-to-access container.  
   
- For more information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information, see the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
    
   
@@ -226,7 +226,7 @@
 ## Remarks  
  <xref:System.IO.Packaging.Package.CreatePart%2A> initializes an empty <xref:System.IO.Stream> for the new part.  The <xref:System.IO.Packaging.PackagePart.GetStream%2A?displayProperty=nameWithType> method can be used to obtain a reference to the stream instance associated with the part.  
   
- For more information about package parts, see section 1.1 of the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information about package parts, see section 1.1 of the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
    
   
@@ -288,7 +288,7 @@
   
  The part <xref:System.IO.Packaging.PackagePart.CompressionOption%2A> is <xref:System.IO.Packaging.CompressionOption.NotCompressed?displayProperty=nameWithType>.  
   
- For additional information about package parts, see section 1.1 in the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information about package parts, see section 1.1 in the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
    
   
@@ -358,7 +358,7 @@
   
  <xref:System.IO.Packaging.Package.CreatePart%2A> creates an empty <xref:System.IO.Stream> for the new part.  The <xref:System.IO.Packaging.PackagePart.GetStream%2A?displayProperty=nameWithType> method can be used to obtain a reference to the stream instance associated with the part.  
   
- For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information, see the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
    
   
@@ -431,7 +431,7 @@
   
  For the default <xref:System.IO.Packaging.ZipPackage> derived class, the <xref:System.IO.Packaging.Package.CreatePartCore%2A> method only supports two `compressionOption` values, <xref:System.IO.Packaging.CompressionOption.NotCompressed> or <xref:System.IO.Packaging.CompressionOption.Normal> compression.  Other <xref:System.IO.Packaging.CompressionOption> values of <xref:System.IO.Packaging.CompressionOption.Maximum>, <xref:System.IO.Packaging.CompressionOption.Fast>, or <xref:System.IO.Packaging.CompressionOption.SuperFast> use <xref:System.IO.Packaging.CompressionOption.Normal> compression.  
   
- For more information about the package model and package parts, see Chapter 1 of the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information about the package model and package parts, see Chapter 1 of the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -460,7 +460,7 @@
   
  In a package-relationship the package is considered the "owner" of the relationship.  When the package is deleted, all the relationships owned by the package are also deleted.  The process of creating or deleting the relationship does not physically alter the target part or resource in any way.  
   
- For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information, see the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
    
   
@@ -527,21 +527,21 @@
   
  The target of a relationship cannot be another relationship.  
   
- If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode.Internal>, `targetUri` must be a relative URI that is formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  The internal relative URI can be either an absolute path that starts with a forward slash ("/") character such as "/page1.xaml" or "/images/picture4.jpg", or a relative path such as "../imagespicture1.jpg" that resolves against the package root ("/") as the base URI.  
+ If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode.Internal>, `targetUri` must be a relative URI that is formed according to the [RFC 3986](https://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  The internal relative URI can be either an absolute path that starts with a forward slash ("/") character such as "/page1.xaml" or "/images/picture4.jpg", or a relative path such as "../imagespicture1.jpg" that resolves against the package root ("/") as the base URI.  
   
- If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode.External>, `targetUri` can be either an absolute or relative URI formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  "http://www.microsoft.com/page2.xml" is an example of an absolute URI that references an external target resource "page2.xml".  "images/picture1.jpg" is an example of a relative URI that also references an external target resource "1.jpg" but which resolves against the URI of the package itself.  
+ If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode.External>, `targetUri` can be either an absolute or relative URI formed according to the [RFC 3986](https://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification. `http://www.microsoft.com/page2.xml` is an example of an absolute URI that references an external target resource "page2.xml".  "images/picture1.jpg" is an example of a relative URI that also references an external target resource "1.jpg" but which resolves against the URI of the package itself.  
   
- `relationshipType` must be a [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] that is formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  The following table shows the package-level `relationshipType` URIs defined by the Open Packaging Conventions (OPC) specification.  
+ `relationshipType` must be a [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] that is formed according to the [RFC 3986](https://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  The following table shows the package-level `relationshipType` URIs defined by the Open Packaging Conventions (OPC) specification.  
   
 |Package-level Relationship|Relationship Type URI|  
 |---------------------------------|---------------------------|  
-|Core Properties|http://schemas.openxmlformats.org/package/2006/relationships/meta data/core-properties|  
-|Digital Signature|http://schemas.openxmlformats.org/package/2006/relationships/digit al-signature/signature|  
-|Digital Signature Certificate|http://schemas.openxmlformats.org/package/2006/relationships/digit al-signature/certificate|  
-|Digital Signature Origin|http://schemas.openxmlformats.org/package/2006/relationships/digit al-signature/origin|  
-|Thumbnail|http://schemas.openxmlformats.org/package/2006/relationships/meta data/thumbnail|  
+|Core Properties|`http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties`|  
+|Digital Signature|`http://schemas.openxmlformats.org/package/2006/relationships/digital-signature/signature`|  
+|Digital Signature Certificate|`http://schemas.openxmlformats.org/package/2006/relationships/digital-signature/certificate`|  
+|Digital Signature Origin|`http://schemas.openxmlformats.org/package/2006/relationships/digital-signature/origin`|  
+|Thumbnail|`http://schemas.openxmlformats.org/package/2006/relationships/metadata/thumbnail`|  
   
- For more information about packaging and package relationships, see section 1.3 of the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information about packaging and package relationships, see section 1.3 of the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
    
   
@@ -620,21 +620,21 @@
   
  If `id` is specified as `null` a unique ID will be automatically generated.  An `id` specified by an empty string is not valid.  
   
- If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode.Internal>, `targetUri` must be a relative URI that is formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  The internal relative URI can be either an absolute path that starts with a forward slash ("/") character such as "/page1.xaml" or "/images/picture4.jpg", or a relative path such as "../imagespicture1.jpg" that resolves against the package root ("/") as the base URI.  
+ If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode.Internal>, `targetUri` must be a relative URI that is formed according to the [RFC 3986](https://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  The internal relative URI can be either an absolute path that starts with a forward slash ("/") character such as "/page1.xaml" or "/images/picture4.jpg", or a relative path such as "../imagespicture1.jpg" that resolves against the package root ("/") as the base URI.  
   
- If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode.External>, `targetUri` can be either an absolute or relative URI formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  "http://www.microsoft.com/page2.xml" is an example of an absolute URI that references an external target resource "page2.xml".  "images/picture1.jpg" is an example of a relative URI that also references an external target resource "1.jpg" but which resolves against the URI of the package itself.  
+ If `targetMode` is specified as <xref:System.IO.Packaging.TargetMode.External>, `targetUri` can be either an absolute or relative URI formed according to the [RFC 3986](https://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification. `http://www.microsoft.com/page2.xml` is an example of an absolute URI that references an external target resource "page2.xml".  "images/picture1.jpg" is an example of a relative URI that also references an external target resource "1.jpg" but which resolves against the URI of the package itself.  
   
- `relationshipType` must be a URI that is formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  The following table shows the package-level `relationshipType` URIs defined by the Open Packaging Conventions (OPC) specification.  
+ `relationshipType` must be a URI that is formed according to the [RFC 3986](https://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  The following table shows the package-level `relationshipType` URIs defined by the Open Packaging Conventions (OPC) specification.  
   
 |Package-level Relationship|Relationship Type URI|  
 |---------------------------------|---------------------------|  
-|Core Properties|http://schemas.openxmlformats.org/package/2006/relationships/meta data/core-properties|  
-|Digital Signature|http://schemas.openxmlformats.org/package/2006/relationships/digit al-signature/signature|  
-|Digital Signature Certificate|http://schemas.openxmlformats.org/package/2006/relationships/digit al-signature/certificate|  
-|Digital Signature Origin|http://schemas.openxmlformats.org/package/2006/relationships/digit al-signature/origin|  
-|Thumbnail|http://schemas.openxmlformats.org/package/2006/relationships/meta data/thumbnail|  
+|Core Properties|`http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties`|  
+|Digital Signature|`http://schemas.openxmlformats.org/package/2006/relationships/digital-signature/signature`|  
+|Digital Signature Certificate|`http://schemas.openxmlformats.org/package/2006/relationships/digital-signature/certificate`|  
+|Digital Signature Origin|`http://schemas.openxmlformats.org/package/2006/relationships/digital-signature/origin`|  
+|Thumbnail|`http://schemas.openxmlformats.org/package/2006/relationships/metadata/thumbnail`|  
   
- For additional information about packaging and package relationships, see section 1.3 of the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information about packaging and package relationships, see section 1.3 of the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
    
   
@@ -694,11 +694,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `partUri` must be a relative URI that consists of an absolute path which starts with a forward slash ("/") character.  The absolute path is relative to the package root and is formed according to the [RFC 3986](http://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  "/page1.xaml" and "/images/picture4.jpg" are examples of valid part URIs.  
+ `partUri` must be a relative URI that consists of an absolute path which starts with a forward slash ("/") character.  The absolute path is relative to the package root and is formed according to the [RFC 3986](https://tools.ietf.org/html/rfc3986) Uniform Resource Identifier (URI) Generic Syntax specification.  "/page1.xaml" and "/images/picture4.jpg" are examples of valid part URIs.  
   
  No exception is raised if a part with the specified `partUri` is not in the package.  (You can use the <xref:System.IO.Packaging.Package.PartExists%2A> method to determine whether a part with a specified `partUri` is in the package.)  
   
- For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information, see the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -752,7 +752,7 @@
 ## Remarks  
  By default, a <xref:System.IO.Packaging.ZipPackage> derived class implementation of the abstract <xref:System.IO.Packaging.Package> class is provided and used.  In the default operation, <xref:System.IO.Packaging.Package.DeletePart%2A> internally calls <xref:System.IO.Packaging.Package.DeletePartCore%2A> of the <xref:System.IO.Packaging.ZipPackage> class to perform the actual delete operation based on the physical format implemented in the derived class.  
   
- For more information about the package model and package parts, see Chapter 1 of the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information about the package model and package parts, see Chapter 1 of the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -808,7 +808,7 @@
   
  <xref:System.IO.Packaging.Package.DeleteRelationship%2A> does not physically change the target part in any way.  
   
- For more information about package relationships, see section 1.3 of the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information about package relationships, see section 1.3 of the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -1029,7 +1029,7 @@
   
  By default, a <xref:System.IO.Packaging.ZipPackage> derived implementation of the abstract <xref:System.IO.Packaging.Package> base class is provided and used.  In the default operation, <xref:System.IO.Packaging.Package.GetPart%2A> internally calls <xref:System.IO.Packaging.Package.GetPartCore%2A> of the <xref:System.IO.Packaging.ZipPackage> class to return a requested part from a ZIP file.  
   
- For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information, see the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
    
   
@@ -1094,7 +1094,7 @@
 ## Remarks  
  By default, a <xref:System.IO.Packaging.ZipPackage> derived implementation of the abstract <xref:System.IO.Packaging.Package> class is provided and used.  In the default operation, <xref:System.IO.Packaging.Package.GetPart%2A> internally calls <xref:System.IO.Packaging.Package.GetPartCore%2A> of the <xref:System.IO.Packaging.ZipPackage> class to retrieve a part from a ZIP file.  
   
- For more information about the package model and package parts, see Chapter 1 of the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information about the package model and package parts, see Chapter 1 of the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -1142,7 +1142,7 @@
   
  By default, a <xref:System.IO.Packaging.ZipPackage> derived implementation of the abstract <xref:System.IO.Packaging.Package> base class is provided and used.  In the default operation, <xref:System.IO.Packaging.Package.GetParts%2A> calls the <xref:System.IO.Packaging.Package.GetPartsCore%2A> method of the <xref:System.IO.Packaging.ZipPackage> class to return the parts from a ZIP file.  
   
- For more information about packages and package parts, see section 1.1 of the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information about packages and package parts, see section 1.1 of the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
    
   
@@ -1196,7 +1196,7 @@
   
  By default, a <xref:System.IO.Packaging.ZipPackage> derived implementation of the abstract <xref:System.IO.Packaging.Package> class is provided and used.  In the default operation, <xref:System.IO.Packaging.Package.GetParts%2A> internally calls <xref:System.IO.Packaging.Package.GetPartCore%2A> of the <xref:System.IO.Packaging.ZipPackage> class to retrieve the parts from a ZIP file.  
   
- For more information about the package model and package parts, see Chapter 1 of the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information about the package model and package parts, see Chapter 1 of the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -1239,9 +1239,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `id` must be a valid XML identifier.  The `id` type is xsd:ID and must follow the naming conventions prescribed in the XML Schema Part 2: Datatypes specification (see [https://www.w3.org/TR/xmlschema-2/#ID](https://www.w3.org/TR/xmlschema-2/#ID)).  
+ `id` must be a valid XML identifier. The `id` type is xsd:ID and must follow the naming conventions prescribed in the [section 3.3.8 of the XML Schema Part 2: Datatypes specification](https://www.w3.org/TR/xmlschema-2/#ID).  
   
- For additional information about packaging and package relationships, see section 1.3 of the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information about packaging and package relationships, see section 1.3 of the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -1303,7 +1303,7 @@
   
  In a package-relationship the package is considered the "owner" of the relationship.  When the package is deleted, all the relationships owned by the package are also deleted.  The process of creating or deleting the relationship does not physically alter the target part or resource in any way.  
   
- For additional information about packaging and package relationships, see section 1.3 of the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information about packaging and package relationships, see section 1.3 of the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -1354,13 +1354,13 @@
   
 |Package-level Relationship|Relationship Type URI|  
 |---------------------------------|---------------------------|  
-|Core Properties|http://schemas.openxmlformats.org/package/2006/relationships/meta data/core-properties|  
-|Digital Signature|http://schemas.openxmlformats.org/package/2006/relationships/digit al-signature/signature|  
-|Digital Signature Certificate|http://schemas.openxmlformats.org/package/2006/relationships/digit al-signature/certificate|  
-|Digital Signature Origin|http://schemas.openxmlformats.org/package/2006/relationships/digit al-signature/origin|  
-|Thumbnail|http://schemas.openxmlformats.org/package/2006/relationships/meta data/thumbnail|  
+|Core Properties|`http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties`|  
+|Digital Signature|`http://schemas.openxmlformats.org/package/2006/relationships/digital-signature/signature`|  
+|Digital Signature Certificate|`http://schemas.openxmlformats.org/package/2006/relationships/digital-signature/certificate`|  
+|Digital Signature Origin|`http://schemas.openxmlformats.org/package/2006/relationships/digital-signature/origin`|  
+|Thumbnail|`http://schemas.openxmlformats.org/package/2006/relationships/metadata/thumbnail`|  
   
- For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information, see the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
    
   
@@ -1397,7 +1397,7 @@
 ## Remarks  
  <xref:System.IO.Packaging.ZipPackage> is the default package type that is used by the <xref:System.IO.Packaging.Package.Open%2A> method.  
   
- For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information, see the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
    
   
@@ -1445,7 +1445,7 @@
 ## Remarks  
  <xref:System.IO.Packaging.ZipPackage> is the default package type that is used by the <xref:System.IO.Packaging.Package.Open%2A> method.  
   
- For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information, see the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -1491,7 +1491,7 @@
   
  This <xref:System.IO.Packaging.Package.Open%2A> method opens the package with default attributes <xref:System.IO.FileMode.OpenOrCreate>, <xref:System.IO.FileAccess.ReadWrite>, and <xref:System.IO.FileShare.None> (to specify different attributes use one of the other Open method overloads).  
   
- For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information, see the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
    
   
@@ -1543,7 +1543,7 @@
 ## Remarks  
  <xref:System.IO.Packaging.ZipPackage> is the default package type that is used by the <xref:System.IO.Packaging.Package.Open%2A> method.  
   
- For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information, see the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -1593,7 +1593,7 @@
   
  This <xref:System.IO.Packaging.Package.Open%2A> method opens the package with default attributes <xref:System.IO.FileAccess.ReadWrite> and <xref:System.IO.FileShare.None> (to specify different attributes use one of the other Open method overloads).  
   
- For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information, see the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
    
   
@@ -1653,7 +1653,7 @@
 ## Remarks  
  <xref:System.IO.Packaging.ZipPackage> is the default package type that is used by the <xref:System.IO.Packaging.Package.Open%2A> method.  
   
- For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information, see the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -1704,7 +1704,7 @@
   
  This <xref:System.IO.Packaging.Package.Open%2A> method opens the package with a default <xref:System.IO.FileShare.None> attribute (to specify a different attribute use the <xref:System.IO.Packaging.Package.Open%2A> method overload).  
   
- For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information, see the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
    
   
@@ -1767,7 +1767,7 @@
 ## Remarks  
  <xref:System.IO.Packaging.ZipPackage> is the default package type that is used by the <xref:System.IO.Packaging.Package.Open%2A> method.  
   
- For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information, see the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
    
   
@@ -1813,7 +1813,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about core package properties, see section 3.1 in the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information about core package properties, see section 3.1 in the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -1856,7 +1856,7 @@
 ## Remarks  
  The `partUri` should begin with a forward-slash character "/" and be absolute from the root of the package.  
   
- For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information, see the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -1906,7 +1906,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information, see the Open Packaging Conventions (OPC) specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For additional information, see the Open Packaging Conventions (OPC) specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>

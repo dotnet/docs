@@ -150,7 +150,7 @@
 ## Remarks  
  The X.509 certificate of the signer is embedded by the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method when called with the `embedCertificate` parameter set to `true`.  
   
- For more information on digital signatures and certificates, see Section 3.3 Digital Signatures in the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information on digital signatures and certificates, see Section 3.3 Digital Signatures in the *Open Packaging Conventions* specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -188,7 +188,7 @@
   
  If a document is to be signed by more than one person, the <xref:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.SignatureOrigin> part needs to be excluded from the signature when the document is first signed.  (Exclusions are specified in the `restrictions` parameter of the call to <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A>.)  If the <xref:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.SignatureOrigin> part is not excluded, any additional signatures invalidate the signature of the first signer.  
   
- For more information on the Core Properties and Signature Origin parts, see Chapter 3 of the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information on the Core Properties and Signature Origin parts, see Chapter 3 of the *Open Packaging Conventions* specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -290,7 +290,7 @@
 ## Remarks  
  The X.509 certificate of the signer is embedded by the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method when called with the `embedCertificate` parameter set to `true`.  
   
- For more information on digital signatures and certificates, see Section 3.3 Digital Signatures in the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information on digital signatures and certificates, see Section 3.3 Digital Signatures in the *Open Packaging Conventions* specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>

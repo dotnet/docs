@@ -3332,7 +3332,7 @@ This member may behave differently when it is used in a Portable Class Library p
       </Parameters>
       <Docs>
         <param name="name">The name to write.</param>
-        <summary>When overridden in a derived class, writes out the specified name, ensuring it is a valid name according to the W3C XML 1.0 recommendation (http://www.w3.org/TR/1998/REC-xml-19980210#NT-Name).</summary>
+        <summary>When overridden in a derived class, writes out the specified name, ensuring it is a valid name according to the W3C XML 1.0 recommendation (https://www.w3.org/TR/1998/REC-xml-19980210#NT-Name).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3381,7 +3381,7 @@ This member may behave differently when it is used in a Portable Class Library p
       </Parameters>
       <Docs>
         <param name="name">The name to write.</param>
-        <summary>Asynchronously writes out the specified name, ensuring it is a valid name according to the W3C XML 1.0 recommendation (http://www.w3.org/TR/1998/REC-xml-19980210#NT-Name).</summary>
+        <summary>Asynchronously writes out the specified name, ensuring it is a valid name according to the W3C XML 1.0 recommendation (https://www.w3.org/TR/1998/REC-xml-19980210#NT-Name).</summary>
         <returns>The task that represents the asynchronous <see langword="WriteName" /> operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3430,7 +3430,7 @@ This member may behave differently when it is used in a Portable Class Library p
       </Parameters>
       <Docs>
         <param name="name">The name to write.</param>
-        <summary>When overridden in a derived class, writes out the specified name, ensuring it is a valid NmToken according to the W3C XML 1.0 recommendation (http://www.w3.org/TR/1998/REC-xml-19980210#NT-Name).</summary>
+        <summary>When overridden in a derived class, writes out the specified name, ensuring it is a valid NmToken according to the W3C XML 1.0 recommendation (https://www.w3.org/TR/1998/REC-xml-19980210#NT-Name).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3477,7 +3477,7 @@ This member may behave differently when it is used in a Portable Class Library p
       </Parameters>
       <Docs>
         <param name="name">The name to write.</param>
-        <summary>Asynchronously writes out the specified name, ensuring it is a valid NmToken according to the W3C XML 1.0 recommendation (http://www.w3.org/TR/1998/REC-xml-19980210#NT-Name).</summary>
+        <summary>Asynchronously writes out the specified name, ensuring it is a valid NmToken according to the W3C XML 1.0 recommendation (https://www.w3.org/TR/1998/REC-xml-19980210#NT-Name).</summary>
         <returns>The task that represents the asynchronous <see langword="WriteNmToken" /> operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5280,7 +5280,7 @@ test&lt;item&gt;test
   
  For both HTML and XML, the document character set (and therefore the notation of numeric character references) is based on UCS [ISO-10646]. A single numeric character reference in a source document may therefore in some cases correspond to two 16-bit units in a string (a high surrogate and a low surrogate). These 16-bit units are referred to as a surrogate pair.  
   
- For more information regarding surrogates or characters, refer to section 3.7 of the Unicode 3.0/Unicode 2.0 standard located at http://www.unicode.org, or section 2.2 of the W3C XML 1.0 Recommendation located at http://www.w3.org/TR/REC-xml#charsets.  
+ For more information regarding surrogates or characters, refer to section 3.7 of the Unicode 3.0/Unicode 2.0 standard located at <https://www.unicode.org>, or [section 2.2 of the W3C XML 1.0 Recommendation](https://www.w3.org/TR/REC-xml#charsets).  
   
  For the asynchronous version of this method, see <xref:System.Xml.XmlWriter.WriteSurrogateCharEntityAsync%2A>.  
   

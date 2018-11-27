@@ -1323,7 +1323,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The Unicode Standard defines combining characters as characters that are combined with base characters to produce a new character. Non-space combining characters do not use character space by themselves when rendered. For more information about non-space combining characters, see the Unicode Standard at http://www.unicode.org.  
+ The Unicode Standard defines combining characters as characters that are combined with base characters to produce a new character. Non-space combining characters do not use character space by themselves when rendered. For more information about non-space combining characters, see the Unicode Standard at <https://www.unicode.org>.  
   
  <xref:System.Data.SqlTypes.SqlString.IgnoreNonSpace> functions as a constant for the <xref:System.Data.SqlTypes.SqlString> class.  
   

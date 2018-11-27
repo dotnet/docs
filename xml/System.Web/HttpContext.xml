@@ -1953,10 +1953,9 @@ firstName = DirectCast(context.Session("FirstName"), String)
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="http://www.asp.net/mvc/tutorials/security/using-oauth-providers-with-mvc">Using OAuth Providers with MVC 4</related>
-        <related type="ExternalDocumentation" href="http://www.asp.net/web-forms/tutorials/aspnet-45/getting-started-with-aspnet-45-web-forms/checkout-and-payment-with-paypal">Getting Started with ASP.NET 4.5 Web Forms - Checkout and Payment with PayPal</related>
-        <related type="ExternalDocumentation" href="http://www.asp.net/web-api/overview/creating-web-apis/using-web-api-with-entity-framework/using-web-api-with-entity-framework,-part-6">Using Web API with Entity Framework - Part 6</related>
-        <related type="ExternalDocumentation" href="http://www.asp.net/mvc/tutorials/older-versions/nerddinner/secure-applications-using-authentication-and-authorization">Nerd Dinner - Secure Applications Using Authentication and Authorization</related>
+        <related type="ExternalDocumentation" href="/aspnet/mvc/overview/older-versions/using-oauth-providers-with-mvc">Using OAuth Providers with MVC 4</related>
+        <related type="ExternalDocumentation" href="/aspnet/web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/checkout-and-payment-with-paypal">Getting Started with ASP.NET 4.5 Web Forms - Checkout and Payment with PayPal</related>
+        <related type="ExternalDocumentation" href="/aspnet/mvc/overview/older-versions-1/nerddinner/secure-applications-using-authentication-and-authorization">NerdDinner - Secure Applications Using Authentication and Authorization</related>
       </Docs>
     </Member>
     <Member MemberName="WebSocketNegotiatedProtocol">

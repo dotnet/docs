@@ -43,7 +43,7 @@
   
  Relationships enable navigation both in a document and between documents.  Relationships also support document object model services, such as linking a <xref:System.Printing.PrintTicket> to specific document elements when printing.  
   
- For more information about <xref:System.IO.Packaging.PackageRelationship> elements see Section 1.3 "Relationships" in the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information about <xref:System.IO.Packaging.PackageRelationship> elements see Section 1.3 "Relationships" in the *Open Packaging Conventions* specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
     </remarks>
@@ -130,7 +130,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about <xref:System.IO.Packaging.Package> elements see the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information about <xref:System.IO.Packaging.Package> elements see the *Open Packaging Conventions* specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -184,7 +184,7 @@
 |Digital Signature Origin|http://schemas.microsoft.com/package/2006/relationships/digital-signature/origin|  
 |Thumbnail|http://schemas.microsoft.com/package/2006/relationships/metadata/thumbnail|  
   
- For more information about package relationship types see Chapter 3 and Appendix I of the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information about package relationship types see Chapter 3 and Appendix I of the *Open Packaging Conventions* specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -269,7 +269,7 @@
   
  When <xref:System.IO.Packaging.PackageRelationship.TargetMode%2A> is <xref:System.IO.Packaging.TargetMode.External>, the <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> can be either a relative reference or a fully qualified URI.  If the <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> is a relative reference, the reference is interpreted as relative to the location of the <xref:System.IO.Packaging.Package> that contains this relationship.  
   
- For more information about <xref:System.IO.Packaging.PackageRelationship.TargetMode%2A> see Section 1.3.3 "Relationship Markup" of the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information about <xref:System.IO.Packaging.PackageRelationship.TargetMode%2A> see Section 1.3.3 "Relationship Markup" of the *Open Packaging Conventions* specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>
@@ -317,7 +317,7 @@
   
  When <xref:System.IO.Packaging.PackageRelationship.TargetMode%2A> is <xref:System.IO.Packaging.TargetMode.External>, the <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> can be either a relative reference or a fully qualified URI.  If the <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> is a relative reference, the reference is interpreted as relative to the location of the <xref:System.IO.Packaging.Package> that contains this relationship.  
   
- For more information about <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> see Section 1.3.3 "Relationship Markup" of the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](https://go.microsoft.com/fwlink/?LinkID=71255).  
+ For more information about <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> see Section 1.3.3 "Relationship Markup" of the *Open Packaging Conventions* specification available for download at <https://go.microsoft.com/fwlink/?LinkID=71255>.  
   
  ]]></format>
         </remarks>

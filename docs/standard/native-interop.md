@@ -350,7 +350,7 @@ struct WinBool
 };
 ```
 
-If you want to be explicit, you can use the `UnmanagedType.Bool` value to get the same behavior as above:
+If you want to be explicit, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.Bool?displayProperty=nameWithType> value to get the same behavior as above:
 
 ```csharp
 public struct WinBool
@@ -384,7 +384,7 @@ struct CBool
 };
 ```
 
-When on Windows, you can use the `UnmanagedType.VariantBool` value to tell the runtime to marshal your boolean value to a 2-byte `VARIANT_BOOL` value.
+When on Windows, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.VariantBool?displayProperty=nameWithType> value to tell the runtime to marshal your boolean value to a 2-byte `VARIANT_BOOL` value.
 
 ```csharp
 public struct VariantBool
@@ -401,6 +401,205 @@ struct VariantBool
 };
 ```
 
+##### Customizing Array Marshalling
+
+We also include a few ways to customize array marshalling.
+
+By default, we marshal arrays as a pointer to a contiguous list of the elements:
+
+```csharp
+public struct DefaultArray
+{
+    public int[] values;
+}
+```
+
+```cpp
+struct DefaultArray
+{
+    int* values;
+};
+```
+
+If you are interfacing with COM APIs you may have to marshal your arrays as `SAFEARRAY*`s. To do so, you can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=nameWithType> and the <xref:System.Runtime.InteropServices.UnmanagedType.SafeArray?displayProperty=nameWithType> value to tell the runtime to marshal your array as a `SAFEARRAY*`.
+
+```csharp
+public struct SafeArrayExample
+{
+    [MarshalAs(UnmanagedType.SafeArray)]
+    public int[] values;
+}
+```
+
+```cpp
+struct SafeArrayExample
+{
+    SAFEARRAY* values;
+};
+```
+
+If you need to customize what type of element is in your `SAFEARRAY`, then you can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArrayUserDefinedSubType?displayProperty=nameWithType> fields to customize the exact element type of the `SAFEARRAY`.
+
+If you need to marshal the array in-place, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.ByValArray?displayProperty=nameWithType> value to tell the marshaler to marshal the array in-place. When using this marshalling, you also must supply a value to the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst?displayProperty=nameWithType> field  for the number of elements in the array so the runtime can correctly allocate space for the structure.
+
+> [!NOTE]
+> .NET does not support marshalling a variable length array field as a C99 Flexible Array Member.
+
+##### Customizing String Marshalling
+.NET also provides a wide variety of customizations for how to marshal string fields.
+
+By default, .NET marshals a string as a pointer to a null-terminated string. The encoding depends on the value of the <xref:System.Runtime.InteropServices.StructLayoutAttribute.CharSet?displayProperty=nameWithType> field in the <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=nameWithType>. If no attribute is specified, the encoding defaults to an ANSI encoding.
+
+```csharp
+[StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
+public struct DefaultString
+{
+    public string str;
+}
+```
+
+```cpp
+struct DefaultString
+{
+    char* str;
+};
+```
+
+```csharp
+[StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+public struct DefaultString
+{
+    public string str;
+}
+```
+
+```cpp
+struct DefaultString
+{
+    char16_t* str; // Could also be wchar_t* on Windows.
+};
+```
+
+If you need to use different encodings for different fields or just prefer to be more explicit in your struct definition, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.LPStr?displayProperty=nameWithType> or <xref:System.Runtime.InteropServices.UnmanagedType.LPWStr?displayProperty=nameWithType> values on a <xref:Ssytem.Runtime.InteropServices.MarshalAsAttribute?displayProperty=nameWithType> attribute.
+
+```csharp
+public struct AnsiString
+{
+    [MarshalAs(UnmanagedType.LPStr)]
+    public string str;
+}
+```
+
+```cpp
+struct AnsiString
+{
+    char* str;
+};
+```
+
+```csharp
+public struct UnicodeString
+{
+    [MarshalAs(UnmanagedType.LPWStr)]
+    public string str;
+}
+```
+
+```cpp
+struct UnicodeString
+{
+    char16_t* str; // Could also be wchar_t* on Windows.
+};
+```
+
+If you want to marshal your strings using the UTF-8 encoding, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.LPUTF8Str?displayProperty=nameWithType> value in your <xref:System.Runtime.InteropServices.MarshalAsAttribute>.
+
+
+```csharp
+public struct UTF8String
+{
+    [MarshalAs(UnmanagedType.LPUTF8Str)]
+    public string str;
+}
+```
+
+```cpp
+struct UTF8String
+{
+    char* str;
+};
+```
+
+> [!NOTE]
+> Using <xref:System.Runtime.InteropServices.UnmanagedType.LPUTF8Str?displayProperty=nameWithType> requires either .NET Framework 4.7+ or .NET Core 1.1+. It is not available in .NET Standard 2.0.
+
+If you are working with COM APIs, you may need to marshal your string as a `BSTR`. Using the <xref:System.Runtime.InteropServices.UnmanagedType.BStr?displayProperty=nameWithType> value, you can marshal your string as a `BSTR`.
+
+```csharp
+public struct BString
+{
+    [MarshalAs(UnmanagedType.BStr)]
+    public string str;
+}
+```
+
+```cpp
+struct BString
+{
+    BSTR str;
+};
+```
+
+If you are working with a WinRT-based API, you may need to marshal your string as an `HSTRING`.  Using the <xref:System.Runtime.InteropServices.UnmanagedType.HString?displayProperty=nameWithType> value, you can marshal your string as a `HSTRING`.
+
+```csharp
+public struct HString
+{
+    [MarshalAs(UnmanagedType.HString)]
+    public string str;
+}
+```
+
+```cpp
+struct BString
+{
+    HSTRING str;
+};
+```
+
+In the case that your API requires you to pass the string in-place in the structure, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.ByValTStr?displayProperty=nameWithType> value. Do note that the encoding for a string marshalled by `ByValTStr` is determined from the `CharSet` attribute. Additionally, it requires that a string length is passed by the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst?displayProperty=nameWithType> field.
+
+```csharp
+[StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
+public struct DefaultString
+{
+    [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 4)]
+    public string str;
+}
+```
+
+```cpp
+struct DefaultString
+{
+    char str[4];
+};
+```
+
+```csharp
+[StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+public struct DefaultString
+{
+    [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 4)]
+    public string str;
+}
+```
+
+```cpp
+struct DefaultString
+{
+    char16_t str[4]; // Could also be wchar_t[4] on Windows.
+};
+```
 
 ## More resources
 

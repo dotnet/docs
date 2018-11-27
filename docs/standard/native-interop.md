@@ -619,6 +619,26 @@ struct DefaultString
 };
 ```
 
+##### Customizing Decimal Marshalling
+
+If you are working on Windows, you might encounter some APIs that use the native [`CY` or `CURRENCY`](https://docs.microsoft.com/windows/desktop/api/wtypes/ns-wtypes-tagcy) structure. By default, the .NET `decimal` type marshals to the native [`DECIMAL`](https://docs.microsoft.com/windows/desktop/api/wtypes/ns-wtypes-tagdec) structure; however, you can use a <xref:System.Runtime.InteropServices.MarshalAsAttribute> with the <xref:System.Runtime.InteropServices.UnmanagedType.Currency?displayProperty=nameWithType> value to instruct the marshaller to convert your `decimal` value to a native `CY` value.
+
+
+```csharp
+public struct Currency
+{
+    [MarshalAs(UnmanagedType.Currency)]
+    public decimal dec;
+}
+```
+
+```cpp
+struct Currency
+{
+    CY dec;
+};
+```
+
 ## More resources
 
 *   [PInvoke.net wiki](https://www.pinvoke.net/) an excellent Wiki with information on common Win32 APIs and how to call them.

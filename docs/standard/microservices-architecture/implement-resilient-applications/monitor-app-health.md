@@ -167,7 +167,7 @@ Health monitoring is especially important when an orchestrator performs an appli
 
 Another aspect of service health is reporting metrics from the service. This is an advanced capability of the health model of some orchestrators, like Service Fabric. Metrics are important when using an orchestrator because they are used to balance resource usage. Metrics also can be an indicator of system health. For example, you might have an application that has many microservices, and each instance reports a requests-per-second (RPS) metric. If one service is using more resources (memory, processor, etc.) than another service, the orchestrator could move service instances around in the cluster to try to maintain even resource utilization.
 
-Note that Azure Service Fabric provides its own [Health Monitoring model](https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction), which is more advanced than simple health checks.
+Note that Azure Service Fabric provides its own [Health Monitoring model](/azure/service-fabric/service-fabric-health-introduction), which is more advanced than simple health checks.
 
 ## Advanced monitoring: visualization, analysis, and alerts
 
@@ -183,7 +183,7 @@ Finally, if you're storing all the event streams, you can use Microsoft Power BI
   [*https://github.com/dotnet-architecture/HealthChecks/*](https://github.com/dotnet-architecture/HealthChecks/)
 
 - **Introduction to Service Fabric health monitoring**\
-  [*https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction*](https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction)
+  [*https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction*](/azure/service-fabric/service-fabric-health-introduction)
 
 - **Azure Application Insights**\
   [*https://azure.microsoft.com/services/application-insights/*](https://azure.microsoft.com/services/application-insights/)

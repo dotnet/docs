@@ -41,7 +41,7 @@
 ## Remarks
 
 > [!IMPORTANT]
-> We don't recommend that you use the `IHashCodeProvider` interface for new development. Its recommended replacement is the <xref:System.Collections.IEqualityComparer?displayProperty=nameWithType> or <xef:System.Collections.Generic.IEqualityComparer%601?displayProperty=nameWithType> interface.
+> We don't recommend that you use the `IHashCodeProvider` interface for new development. Its recommended replacement is the <xref:System.Collections.IEqualityComparer?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=nameWithType> interface.
 
 The <xref:System.Collections.IHashCodeProvider> interface is used in conjunction with the <xref:System.Collections.Hashtable> class. The objects used as keys by a <xref:System.Collections.Hashtable> object must override the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Object.Equals%2A?displayProperty=nameWithType> methods. <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> or the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> is used as the hash code provider. <xref:System.Object.Equals%2A?displayProperty=nameWithType> or the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType> is used as the comparer.  
   

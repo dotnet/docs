@@ -442,6 +442,21 @@ If you need to customize what type of element is in your `SAFEARRAY`, then you c
 
 If you need to marshal the array in-place, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.ByValArray?displayProperty=nameWithType> value to tell the marshaler to marshal the array in-place. When using this marshalling, you also must supply a value to the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst?displayProperty=nameWithType> field  for the number of elements in the array so the runtime can correctly allocate space for the structure.
 
+```csharp
+public struct InPlaceArray
+{
+    [MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)]
+    public int[] values;
+}
+```
+
+```cpp
+struct InPlaceArray
+{
+    int values[4];
+};
+```
+
 > [!NOTE]
 > .NET does not support marshalling a variable length array field as a C99 Flexible Array Member.
 

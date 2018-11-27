@@ -334,7 +334,7 @@ Sometimes the default marshalling rules for fields in a structure aren't exactly
 
 Native code has many different boolean representations; on Windows alone there are 3 ways to represent boolean values. The runtime doesn't know the native definition of your structure, so the best it can do is make a guess on how to marshal your boolean values. So, .NET enable you to pick how to marshal your boolean field. See the examples below for how to marshal your .NET `bool` to different native boolean types:
 
-Boolean values default to marshalling as a native 4-byte Win32 [`BOOL`](https://docs.microsoft.com/en-us/windows/desktop/winprog/windows-data-types#BOOL) value, shown below:
+Boolean values default to marshalling as a native 4-byte Win32 [`BOOL`](https://docs.microsoft.com/windows/desktop/winprog/windows-data-types#BOOL) value, shown below:
 
 ```csharp
 public struct WinBool

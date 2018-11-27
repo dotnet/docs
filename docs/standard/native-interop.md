@@ -328,13 +328,13 @@ The `StatClass` class represents a structure that is returned by the `stat` syst
 
 #### Customizing Struct Marshalling
 
-Sometimes the default marshalling rules for fields in a structure aren't exactly what you need. We provide a few extension points for you to customize how your struct is marshalled to native code.
+Sometimes the default marshalling rules for fields in a structure aren't exactly what you need. The .NET runtimes provide a few extension points for you to customize how your struct is marshalled to native code.
 
 ##### Customizing Boolean Marshalling
 
-We have many ways to represent boolean values in native code; on Windows alone there are 3 ways to represent boolean values. The runtime doesn't know the native definition of your structure, so the best it can do is make a guess on how to marshal your boolean values. So, we enable you to pick how to marshal your boolean field. See the examples below for how to marshal your .NET `bool` to different native boolean types:
+Native code has many different boolean representations; on Windows alone there are 3 ways to represent boolean values. The runtime doesn't know the native definition of your structure, so the best it can do is make a guess on how to marshal your boolean values. So, .NET enable you to pick how to marshal your boolean field. See the examples below for how to marshal your .NET `bool` to different native boolean types:
 
-Boolean values default to marshalling a native 4-byte Win32 `BOOL` value, as shown below:
+Boolean values default to marshalling as a native 4-byte Win32 [`BOOL`](https://docs.microsoft.com/en-us/windows/desktop/winprog/windows-data-types#BOOL) value, shown below:
 
 ```csharp
 public struct WinBool
@@ -367,7 +367,7 @@ struct WinBool
 };
 ```
 
-Using the `UmanagedType.U1` or `UnmanagedType.I1` values below, you can tell the runtime to marshal the `b` field as a 1-byte `bool` type.
+Using the `UmanagedType.U1` or `UnmanagedType.I1` values below, you can tell the runtime to marshal the `b` field as a 1-byte native `bool` type.
 
 ```csharp
 public struct CBool
@@ -401,11 +401,14 @@ struct VariantBool
 };
 ```
 
+> [!NOTE]
+> `VARIANT_BOOL` is different than most bool types in that `VARIANT_TRUE = -1` and `VARIANT_FALSE = 0`. Additionally, all values that are not equal to `VARIANT_TRUE` are considered false.
+
 ##### Customizing Array Marshalling
 
-We also include a few ways to customize array marshalling.
+.NET also includes a few ways to customize array marshalling.
 
-By default, we marshal arrays as a pointer to a contiguous list of the elements:
+By default, .NET marshals arrays as a pointer to a contiguous list of the elements:
 
 ```csharp
 public struct DefaultArray

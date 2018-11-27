@@ -290,7 +290,7 @@ private static void TestSinglePrediction(MLContext mlContext)
 The `TestSinglePrediction` method executes the following tasks:
 
 * Creates a single comment of test data.
-* Predicts sentiment based on test data.
+* Predicts fare amount based on test data.
 * Combines test data and predictions for reporting.
 * Displays the predicted results.
 

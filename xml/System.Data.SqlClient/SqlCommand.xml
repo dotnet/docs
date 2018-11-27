@@ -902,7 +902,7 @@ class Program {
   
  Because this overload does not support a callback procedure, developers must either poll to determine whether the command has completed, using the <xref:System.IAsyncResult.IsCompleted%2A> property of the <xref:System.IAsyncResult> returned by the <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> method; or wait for the completion of one or more commands using the <xref:System.IAsyncResult.AsyncWaitHandle%2A> property of the returned <xref:System.IAsyncResult>.  
   
- If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server will return any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries. For more information, see article Q310378, "PRB: XML Data Is Truncated When You Use SqlDataReader," in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server will return any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries.
   
    
   
@@ -971,7 +971,7 @@ class Program {
   
  Because this overload does not support a callback procedure, developers must either poll to determine whether the command has completed, using the <xref:System.IAsyncResult.IsCompleted%2A> property of the <xref:System.IAsyncResult> returned by the <xref:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery%2A> method; or wait for the completion of one or more commands using the <xref:System.IAsyncResult.AsyncWaitHandle%2A> property of the returned <xref:System.IAsyncResult>.  
   
- If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server returns any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries. For more information, see article Q310378, "PRB: XML Data Is Truncated When You Use SqlDataReader," in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server returns any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries.
   
    
   
@@ -1046,7 +1046,7 @@ class Program {
   
  All errors that occur during the execution of the operation are thrown as exceptions in the callback procedure. You must handle the exception in the callback procedure, not in the main application. See the example in this topic for additional information on handling exceptions in the callback procedure.  
   
- If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server returns any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries. For more information, see article Q310378, "PRB: XML Data Is Truncated When You Use SqlDataReader," in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server returns any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries.
   
    
   
@@ -1127,7 +1127,7 @@ class Program {
   
  All errors that occur during the execution of the operation are thrown as exceptions in the callback procedure. You must handle the exception in the callback procedure, not in the main application. See the example in this topic for additional information on handling exceptions in the callback procedure.  
   
- If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server will return any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries. For more information, see article Q310378, "PRB: XML Data Is Truncated When You Use SqlDataReader," in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server will return any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries.
   
    
   
@@ -1221,7 +1221,7 @@ SqlCommand command = new SqlCommand("SELECT ContactID, FirstName, LastName FROM 
   
  Because this overload does not support a callback procedure, developers need to either poll to determine whether the command has completed, using the <xref:System.IAsyncResult.IsCompleted%2A> property of the <xref:System.IAsyncResult> returned by the <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> method; or wait for the completion of one or more commands using the <xref:System.IAsyncResult.AsyncWaitHandle%2A> property of the returned <xref:System.IAsyncResult>.  
   
- If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server returns any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries. For more information, see article Q310378, "PRB: XML Data Is Truncated When You Use SqlDataReader," in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server returns any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries.
   
    
   
@@ -1305,7 +1305,7 @@ SqlCommand command = new SqlCommand("SELECT ContactID, FirstName, LastName FROM 
   
  All errors that occur during the execution of the operation are thrown as exceptions in the callback procedure. You must handle the exception in the callback procedure, not in the main application. See the example in this topic for additional information on handling exceptions in the callback procedure.  
   
- If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server will return any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries. For more information, see article Q310378, "PRB: XML Data Is Truncated When You Use SqlDataReader," in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server will return any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries.
   
    
   
@@ -2472,7 +2472,7 @@ public class A {
   
  The multiple active result set (MARS) feature allows for multiple actions using the same connection.  
   
- If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server will return any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries. For more information, see article Q310378, "PRB: XML Data Is Truncated When You Use SqlDataReader," in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server will return any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries.
   
    
   
@@ -2548,7 +2548,7 @@ public class A {
   
  The multiple active result set (MARS) feature allows for multiple actions using the same connection.  
   
- If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server will return any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries. For more information, see article Q310378, "PRB: XML Data Is Truncated When You Use SqlDataReader," in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server will return any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries.
   
    
   
@@ -3016,7 +3016,7 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
   
  The multiple active result set (MARS) feature allows for multiple actions using the same connection.  
   
- If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server will return any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries. For more information, see article Q310378, "PRB: XML Data Is Truncated When You Use SqlDataReader," in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ If you use <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> to access XML data, SQL Server will return any XML results greater than 2,033 characters in length in multiple rows of 2,033 characters each. To avoid this behavior, use <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> to read FOR XML queries.
 
 
 ## Examples  

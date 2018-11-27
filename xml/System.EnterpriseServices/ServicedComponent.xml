@@ -36,7 +36,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Under certain conditions, a class that is derived from <xref:System.EnterpriseServices.ServicedComponent> that runs in a COM+ application may stop responding. This problem is caused by an Activity deadlock. Activities can deadlock on multithreaded applications because of an asynchronous cleanup of component references. To work around this problem, call the <xref:System.EnterpriseServices.ServicedComponent.Dispose%2A> method when you complete work with objects derived from <xref:System.EnterpriseServices.ServicedComponent>. For more information, see [http://support.microsoft.com/default.aspx?scid=kb;en-us;327443](https://support.microsoft.com/default.aspx?scid=kb;en-us;327443).  
+ Under certain conditions, a class that is derived from <xref:System.EnterpriseServices.ServicedComponent> that runs in a COM+ application may stop responding. This problem is caused by an Activity deadlock. Activities can deadlock on multithreaded applications because of an asynchronous cleanup of component references. To work around this problem, call the <xref:System.EnterpriseServices.ServicedComponent.Dispose%2A> method when you complete work with objects derived from <xref:System.EnterpriseServices.ServicedComponent>.
   
 > [!NOTE]
 >  Client code must call `Dispose` on serviced components to ensure proper operation.  

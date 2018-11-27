@@ -275,7 +275,7 @@
  The metafile format is a Windows file that stores an image in terms of graphic objects rather than pixels. When resized, a metafile preserves an image better than a bitmap.  
   
 > [!NOTE]
->  Special considerations may be necessary when using the metafile format with the clipboard. Due to a limitation in the current implementation of the <xref:System.Windows.Forms.DataObject> class, the metafile format used by the .NET Framework may not be recognized by applications that use an older metafile format. In this case, you must interoperate with the Win32 Clipboard application programming interfaces (APIs). For more information, see article 323530, "Metafiles on Clipboard Are Not Visible to All Applications," in the Microsoft Knowledge Base at http://support.microsoft.com.  
+>  Special considerations may be necessary when using the metafile format with the clipboard. Due to a limitation in the current implementation of the <xref:System.Windows.Forms.DataObject> class, the metafile format used by the .NET Framework may not be recognized by applications that use an older metafile format. In this case, you must interoperate with the Win32 Clipboard application programming interfaces (APIs).
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   
@@ -568,7 +568,7 @@
  The metafile format is a Windows file that stores an image in terms of graphic objects rather than pixels. When resized, a metafile preserves an image better than a bitmap.  
   
 > [!NOTE]
->  Special considerations may be necessary when using the metafile format with the clipboard. Due to a limitation in the current implementation of the <xref:System.Windows.Forms.DataObject> class, the metafile format used by the .NET Framework may not be recognized by applications that use an older metafile format. In this case, you must interoperate with the Win32 Clipboard application programming interfaces (APIs). For more information, see article 323530, "Metafiles on Clipboard Are Not Visible to All Applications," in the Microsoft Knowledge Base at http://support.microsoft.com.  
+>  Special considerations may be necessary when using the metafile format with the clipboard. Due to a limitation in the current implementation of the <xref:System.Windows.Forms.DataObject> class, the metafile format used by the .NET Framework may not be recognized by applications that use an older metafile format. In this case, you must interoperate with the Win32 Clipboard application programming interfaces (APIs).
   
  This field is used by the <xref:System.Windows.Forms.IDataObject> interface and the <xref:System.Windows.Forms.DataObject> class to specify the data type.  
   

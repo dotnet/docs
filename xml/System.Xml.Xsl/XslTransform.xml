@@ -234,7 +234,7 @@
   
  This method loads the XSLT style sheet, including any style sheets referenced in `xsl:include` and `xsl:import` elements. External resources are resolved using an <xref:System.Xml.XmlUrlResolver> with no user credentials. If the style sheet(s) are located on a network resource which requires authentication, use the overload that takes an <xref:System.Xml.XmlResolver> as one of its arguments and specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
   
- If the style sheet contains embedded scripting, the script is compiled to an assembly. The URI of the style sheet is used to create evidence, which is applied to the assembly. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ If the style sheet contains embedded scripting, the script is compiled to an assembly. The URI of the style sheet is used to create evidence, which is applied to the assembly.
   
 > [!NOTE]
 >  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
@@ -318,7 +318,7 @@
   
  If the style sheet contains entities, you should specify an <xref:System.Xml.XmlReader> that can resolve entities (<xref:System.Xml.XmlReader.CanResolveEntity%2A?displayProperty=nameWithType> returns `true`). In this case, an <xref:System.Xml.XmlValidatingReader> can be used.  
   
- If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XmlReader%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XmlReader%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method.
   
 > [!NOTE]
 >  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
@@ -398,7 +398,7 @@
   
  This method loads the XSLT style sheet, including any style sheets referenced in `xsl:include` and `xsl:import` elements. External resources are resolved using an <xref:System.Xml.XmlUrlResolver> with no user credentials. If the style sheet(s) are located on a network resource which requires authentication, use the overload that takes an <xref:System.Xml.XmlResolver> as one of its arguments and specify an <xref:System.Xml.XmlResolver> with the necessary credentials.  
   
- If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.IXPathNavigable%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.IXPathNavigable%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method.
   
 > [!NOTE]
 >  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
@@ -461,7 +461,7 @@
   
  The style sheet is loaded from the current position of the <xref:System.Xml.XPath.XPathNavigator>. To use just a portion of the loaded document as the style sheet, navigate to the node corresponding to the beginning of the style sheet. After the <xref:System.Xml.Xsl.XslTransform.Load%2A> method returns, the <xref:System.Xml.XPath.XPathNavigator> is positioned at the beginning of the style sheet (on the `xsl:style sheet` node).  
   
- If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.XPathNavigator%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.XPathNavigator%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method.
   
 > [!NOTE]
 >  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
@@ -521,7 +521,7 @@
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
- If the style sheet contains embedded scripting, the script is compiled to an assembly. The URI of the style sheet is used to create evidence, which is applied to the assembly. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ If the style sheet contains embedded scripting, the script is compiled to an assembly. The URI of the style sheet is used to create evidence, which is applied to the assembly.
   
 > [!NOTE]
 >  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
@@ -616,7 +616,7 @@
   
  If the style sheet contains entities, you should specify an <xref:System.Xml.XmlReader> that can resolve entities (<xref:System.Xml.XmlReader.CanResolveEntity%2A?displayProperty=nameWithType> returns `true`). In this case, an <xref:System.Xml.XmlValidatingReader> can be used.  
   
- If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XmlReader%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XmlReader%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method.
   
 > [!NOTE]
 >  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
@@ -682,7 +682,7 @@
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
- If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.IXPathNavigable%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.IXPathNavigable%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> method.
   
 > [!NOTE]
 >  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
@@ -750,7 +750,7 @@
   
  The style sheet is loaded from the current position of the <xref:System.Xml.XPath.XPathNavigator>. To use a portion of the loaded document as the style sheet, navigate to the node corresponding to the beginning of the style sheet. After the <xref:System.Xml.Xsl.XslTransform.Load%2A> method returns, the <xref:System.Xml.XPath.XPathNavigator> is positioned at the beginning of the style sheet (on the `xsl:style sheet` node).  
   
- If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.XPathNavigator%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29>. For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ If the style sheet contains embedded scripting, the script is compiled to an assembly. The assembly has full trust. The recommended practice is to provide evidence using the <xref:System.Xml.Xsl.XslTransform.Load%28System.Xml.XPath.XPathNavigator%2CSystem.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29>.
   
 > [!NOTE]
 >  If the caller does not have `UnmanagedCode` permission, the embedded script is not compiled and a <xref:System.Security.SecurityException> is thrown. See <xref:System.Security.Permissions.SecurityPermission> and <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode?displayProperty=nameWithType> for more information.  
@@ -819,7 +819,7 @@
   
  If the style sheet contains entities, you should specify an <xref:System.Xml.XmlReader> that can resolve entities (<xref:System.Xml.XmlReader.CanResolveEntity%2A?displayProperty=nameWithType> returns `true`). In this case, an <xref:System.Xml.XmlValidatingReader> can be used.  
   
- For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
+
   
  There are different ways to provide evidence. The following table describes what type of evidence to provide for common user scenarios.  
   
@@ -902,7 +902,7 @@
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
- For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
+
   
  There are different ways to provide evidence. The following table describes what type of evidence to provide for common user scenarios.  
   
@@ -979,7 +979,7 @@
   
  The style sheet is loaded from the current position of the <xref:System.Xml.XPath.XPathNavigator>. To use a portion of the loaded document as the style sheet, navigate to the node corresponding to the beginning of the style sheet. After the <xref:System.Xml.Xsl.XslTransform.Load%2A> method returns, the <xref:System.Xml.XPath.XPathNavigator> is positioned at the beginning of the style sheet (on the `xsl:style sheet` node).  
   
- For issues with the <xref:System.Xml.Xsl.XslTransform.Load%2A> method and style sheets with embedded scripts, see article Q316755 in the Microsoft Knowledge Base at http://support.microsoft.com.  
+
   
  There are different ways to provide evidence. The following table describes what type of evidence to provide for common user scenarios.  
   

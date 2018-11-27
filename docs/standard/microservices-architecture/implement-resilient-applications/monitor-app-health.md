@@ -1,6 +1,6 @@
 ---
 title: Health monitoring
-description: Resiliency | Explore one way of implementing health monitoring.
+description: Explore one way of implementing health monitoring.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/16/2018

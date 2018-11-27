@@ -1,6 +1,6 @@
 ---
 title: Implement HTTP call retries with exponential backoff with Polly
-description: Resiliency | Learn how to handle HTTP failures with Polly and HttpClientFactory.
+description: Learn how to handle HTTP failures with Polly and HttpClientFactory.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/16/2018

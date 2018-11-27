@@ -1,6 +1,6 @@
 ---
 title: Implementing the Circuit Breaker pattern
-description: Resiliency | Implement the Circuit Breaker pattern as a complementary system to Http retries.
+description: Learn how to implement the Circuit Breaker pattern as a complementary system to Http retries.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/16/2018

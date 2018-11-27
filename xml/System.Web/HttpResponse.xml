@@ -3279,7 +3279,7 @@ Response.RedirectToRoutePermanent("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.HttpResponse.TrySkipIisCustomErrors%2A> property is used only when your application is hosted in IIS 7.0. When running in Classic mode in IIS 7.0 the <xref:System.Web.HttpResponse.TrySkipIisCustomErrors%2A> property default value is `true`. When running in Integrated mode, the <xref:System.Web.HttpResponse.TrySkipIisCustomErrors%2A> property default value is `false`.  
+ The <xref:System.Web.HttpResponse.TrySkipIisCustomErrors%2A> property is used only when your application is hosted in IIS 7.0 and later. When running in Classic mode, the <xref:System.Web.HttpResponse.TrySkipIisCustomErrors%2A> property default value is `true`. When running in Integrated mode, the <xref:System.Web.HttpResponse.TrySkipIisCustomErrors%2A> property default value is `false`.  
   
  ]]></format>
         </remarks>

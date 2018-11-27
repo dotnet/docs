@@ -62,5 +62,5 @@ Here are some of the most important benefits provided by a solid DevOps workflow
 -   Plug and play well with many of your existing DevOps investments, including investments in open source
 
 >[!div class="step-by-step"]
-[Previous](index.md)
-[Next](../Microsoft-platform-tools-containerized-apps/index.md)
+>[Previous](index.md)
+>[Next](../Microsoft-platform-tools-containerized-apps/index.md)

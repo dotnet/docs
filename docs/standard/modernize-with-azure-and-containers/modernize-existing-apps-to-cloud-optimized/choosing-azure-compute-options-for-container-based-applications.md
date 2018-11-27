@@ -30,7 +30,6 @@ Notice how the underlying OS (Windows vs. Linux) can also be a decision factor a
 
 However, those differences in OS maturity will fade in the future and multiple platforms will have comparable OS maturity and the decision will lay more on preferences based on specific features your application might need or based on each platform's ecosystem reasons.
 
-
 >[!div class="step-by-step"]
-[Previous](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)
-[Next](build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md)
+>[Previous](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)
+>[Next](build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md)

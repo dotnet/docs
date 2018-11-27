@@ -45,7 +45,6 @@ When using Docker, you will not hear developers say, "It works on my machine, wh
 
 Figure 1-3: Comparison of traditional VMs to Docker containers
 
-
 >[!div class="step-by-step"]
-[Previous](index.md)
-[Next](docker-terminology.md)
+>[Previous](index.md)
+>[Next](docker-terminology.md)

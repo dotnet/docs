@@ -33,7 +33,6 @@ To minimize this problem, in the section "*Asynchronous microservice integration
 
 In addition, it is essential that you design your microservices and client applications to handle partial failures—that is, to build resilient microservices and client applications.
 
-
 >[!div class="step-by-step"]
-[Previous](index.md)
-[Next](partial-failure-strategies.md)
+>[Previous](index.md)
+>[Next](partial-failure-strategies.md)

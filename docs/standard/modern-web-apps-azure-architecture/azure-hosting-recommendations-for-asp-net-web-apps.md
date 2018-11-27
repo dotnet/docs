@@ -123,4 +123,4 @@ Figure 11-2 shows an example reference architecture. This diagram describes a re
   <https://docs.microsoft.com/azure/aks/intro-kubernetes>
 
 >[!div class="step-by-step"]
-[Previous](development-process-for-azure.md)
+>[Previous](development-process-for-azure.md)

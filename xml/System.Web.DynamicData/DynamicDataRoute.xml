@@ -58,7 +58,7 @@
 ## Remarks  
  Typically, you specify the URLs that Dynamic Data will create by using substitution parameters. For example, if you pass the string "{table}/{action}", the result would be the URL "~/Products/ListDetails.aspx" when you view the Product table by using the ListDetails action.  
   
- Using substitution parameters is not required. You could pass the string "Table/DynamicData", which would produce "~/Table/DynamicData.aspx". You could pass "MyPageName" to produce "~/MyPageName.aspx". Dynamic Data does not rely on the URL to determine table and action information.  
+ Using substitution parameters is not required. You could pass the string "Table/DynamicData", which would produce "\~/Table/DynamicData.aspx". You could pass "MyPageName" to produce "\~/MyPageName.aspx". Dynamic Data does not rely on the URL to determine table and action information.  
   
  ]]></format>
         </remarks>

@@ -24,7 +24,7 @@
   
  Use the <xref:System.Web.VirtualPathUtility> class when you need to convert application-relative paths to absolute virtual paths, as might be the case in developing a custom Web service handler.  
   
- An absolute virtual path starts with the literal slash mark (/). A relative virtual path is relative to the application root directory, if it is just a tilde (~) or starts with the tilde and a double backslash (~\\\\) or the tilde and a slash mark (~/). Making a virtual path relative makes the path independent of the application.  
+ An absolute virtual path starts with the literal slash mark (/). A relative virtual path is relative to the application root directory, if it is just a tilde (\~) or starts with the tilde and a double backslash (\~\\\\) or the tilde and a slash mark (\~/). Making a virtual path relative makes the path independent of the application.  
   
  The virtual directory for the application can be obtained from the <xref:System.Web.HttpRuntime.AppDomainAppVirtualPath%2A> and <xref:System.Web.HttpRequest.ApplicationPath%2A> properties.  
   
@@ -157,7 +157,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `virtualPath` is not rooted; that is, it does not equal the root operator (the tilde [~]), does not start with a tilde (~), such as a tilde and a slash mark (~/) or a tilde and a double backslash (~//), or does not start with a slash mark (/), an <xref:System.ArgumentException> exception is thrown.  
+ If `virtualPath` is not rooted; that is, it does not equal the root operator (the tilde [\~]), does not start with a tilde (\~), such as a tilde and a slash mark (\~/) or a tilde and a double backslash (\~//), or does not start with a slash mark (/), an <xref:System.ArgumentException> exception is thrown.  
   
  If the virtual path that is passed into the <xref:System.Web.VirtualPathUtility.GetDirectory%2A> method is `"/images/image1.gif"`, the returned directory is `"/images"`.  
   
@@ -396,7 +396,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `fromPath` and `toPath` parameters are not rooted; that is, they do not equal the root operator (the tilde [~]), do not start with a tilde (~), such as a tilde and a slash mark (~/) or a tilde and a double backslash (~//), or do not start with a slash mark (/), an <xref:System.ArgumentException> exception is thrown.  
+ If the `fromPath` and `toPath` parameters are not rooted; that is, they do not equal the root operator (the tilde [\~]), do not start with a tilde (\~), such as a tilde and a slash mark (\~/) or a tilde and a double backslash (\~//), or do not start with a slash mark (/), an <xref:System.ArgumentException> exception is thrown.  
   
  Query string parameters and HTML anchors that are used in the URI are not used in determining the relative path.  
   

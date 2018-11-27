@@ -3655,7 +3655,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  For more information on resource paths in a Web site, see [ASP.NET Web Project Paths](https://msdn.microsoft.com/library/2447f50c-b849-483c-8093-85ed53e7a5bd).  
   
 > [!NOTE]
->  For mobile Web pages only, if your application relies on cookieless sessions or might receive requests from mobile browsers that require cookieless sessions, using a tilde ("~") in a path can result in inadvertently creating a new session and potentially losing session data. To set a property with a path such as "~/*path"*, resolve the path by calling the <xref:System.Web.UI.MobileControls.MobileControl.ResolveUrl%2A> with an argument such as "~/*path"* before assigning it to the property.  
+>  For mobile Web pages only, if your application relies on cookieless sessions or might receive requests from mobile browsers that require cookieless sessions, using a tilde ("\~") in a path can result in inadvertently creating a new session and potentially losing session data. To set a property with a path such as "\~/*path"*, resolve the path by calling the <xref:System.Web.UI.MobileControls.MobileControl.ResolveUrl%2A> with an argument such as "\~/*path"* before assigning it to the property.  
   
    
   

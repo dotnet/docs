@@ -191,7 +191,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the virtual path of the application root and makes it relative by using the tilde (~) notation for the application root (as in "~/page.aspx").</summary>
+        <summary>When overridden in a derived class, gets the virtual path of the application root and makes it relative by using the tilde (\~) notation for the application root (as in "\~/page.aspx").</summary>
         <value>The virtual path of the application root for the current request with the tilde operator (~) added.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>

@@ -340,7 +340,7 @@ End Class
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the virtual path of the application root and makes it relative by using the tilde (~) notation for the application root (as in "~/page.aspx").</summary>
+        <summary>Gets the virtual path of the application root and makes it relative by using the tilde (\~) notation for the application root (as in "\~/page.aspx").</summary>
         <value>The virtual path of the application root for the current request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

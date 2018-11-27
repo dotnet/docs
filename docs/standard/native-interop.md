@@ -639,6 +639,75 @@ struct Currency
 };
 ```
 
+##### Marshalling `System.Object`s
+
+On Windows, you can marshal `object`-typed fields to native code. You can marshal these fields to one of three types, [`VARIANT`](https://docs.microsoft.com/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [`IUnknown*`](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown), or [`IDispatch*`](https://docs.microsoft.com/windows/desktop/api/oaidl/nn-oaidl-idispatch). By default, an `object`-typed field will be marshalled to an `IUnknown*` that wraps the object.
+
+```csharp
+public struct ObjectDefault
+{
+    public object obj;
+}
+```
+
+```cpp
+struct ObjectDefault
+{
+    IUnknown* obj;
+};
+```
+
+If you want to marshal your object field to an `IDispatch*`, add a <xref:System.Runtime.InteropServices.MarshalAsAttribute> with the <xref:System.Runtime.InteropServices.UnmanagedType.IDispatch?displayProperty=nameWithType> value.
+
+```csharp
+public struct ObjectDispatch
+{
+    [MarshalAs(UnmanagedType.IDispatch)]
+    public object obj;
+}
+```
+
+```cpp
+struct ObjectDispatch
+{
+    IDispatch* obj;
+};
+```
+
+If you want to marshal it as a `VARIANT`, add a <xref:System.Runtime.InteropServices.MarshalAsAttribute> with the <xref:System.Runtime.InteropServices.UnmanagedType.Struct?displayProperty=nameWithType> value.
+
+```csharp
+public struct ObjectVariant
+{
+    [MarshalAs(UnmanagedType.Struct)]
+    public object obj;
+}
+```
+
+```cpp
+struct ObjectVariant
+{
+    VARIANT obj;
+};
+```
+
+The table below describes the mapping between the runtime type of the `obj` field and the type of stored value in the `VARIANT`.
+
+| .NET Type | VARIANT Type | | .NET Type | VARIANT Type |
+|------------|--------------|-|----------|--------------|
+|  `byte`  | `VT_UI1` |     | `System.Runtime.InteropServices.BStrWrapper` | `VT_BSTR` |
+| `sbyte`  | `VT_I1`  |     | `object`  | `VT_DISPATCH` |
+| `short`  | `VT_I2`  |     | `System.Runtime.InteropServices.UnknownWrapper` | `VT_UNKNOWN` |
+| `ushort` | `VT_UI2` |     | `System.Runtime.InteropServices.DispatchWrapper` | `VT_DISPATCH` |
+| `int`    | `VT_I4`  |     | `System.Reflection.Missing` | `VT_ERROR` |
+| `uint`   | `VT_UI4` |     | `(object)null` | `VT_EMPTY` |
+| `long`   | `VT_I8`  |     | `bool` | `VT_BOOL` |
+| `ulong`  | `VT_UI8` |     | `System.DateTime` | `VT_DATE` |
+| `float`  | `VT_R4`  |     | `decimal` | `VT_DECIMAL` |
+| `double` | `VT_R8`  |     | `System.Runtime.InteropServices.CurrencyWrapper` | `VT_CURRENCY` |
+| `char`   | `VT_UI2` |     | `System.DBNull` | `VT_NULL` |
+| `string` | `VT_BSTR`|
+
 ## More resources
 
 *   [PInvoke.net wiki](https://www.pinvoke.net/) an excellent Wiki with information on common Win32 APIs and how to call them.

@@ -222,7 +222,7 @@ Add the following code to the `Train` method:
 
 At this point, you have a model of type <xref:Microsoft.ML.Runtime.Data.TransformerChain%601> that can be integrated into any of your existing or new .NET applications. Return the model at the end of the `Train` method.
 
-[!code-csharp[ReturnModel](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#11 "Return the model")]
+[!code-csharp[ReturnModel](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#10 "Return the model")]
 
 ## Evaluate the model
 
@@ -298,7 +298,7 @@ Console.WriteLine("The model is saved to {0}", _modelPath);
 Create the `Predict` method, just after the `Evaluate` method, using the following code:
 
 ```csharp
-public static void Predict(PredictionModel<SentimentData, SentimentPrediction> model)
+private static void Predict(MLContext mlContext, ITransformer model)
 {
 
 }
@@ -326,7 +326,7 @@ Add a comment to test the trained model's prediction in the `Predict` method by 
 
  You can use that to predict the Toxic or Non Toxic sentiment of a single instance of the comment data. To get a prediction, use <xref:Microsoft.ML.Runtime.Data.PredictionFunction%602.Predict(%600)> on the data. Note that the input data is a string and the model includes the featurization. Your pipeline is in sync during training and prediction. You didn’t have to write preprocessing/featurization code specifically for predictions, and the same API takes care of both batch and one-time predictions.
 
-[!code-csharp[Predict](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#18 "Create a prediction of sentiment")]
+[!code-csharp[Predict](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#19 "Create a prediction of sentiment")]
 
 ### Model operationalization: prediction
 

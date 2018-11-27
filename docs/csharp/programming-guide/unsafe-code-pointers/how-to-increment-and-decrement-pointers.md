@@ -1,15 +1,16 @@
 ---
-title: "How to: Increment and Decrement Pointers (C# Programming Guide)"
+title: "How to: increment and decrement pointers (C# Programming Guide)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "pointers [C#], increment and decrement"
   - "pointer expressions [C#], increment and decrement"
 ms.assetid: 1b8b9281-44ee-485a-9045-3db38a4b4b89
 ---
-# How to: Increment and Decrement Pointers (C# Programming Guide)
-Use the increment and the decrement operators, `++` and `--`, to change the pointer location by [sizeof](../../../csharp/language-reference/keywords/sizeof.md) (`pointer-type`) for a pointer of type pointer-type*. The increment and decrement expressions take the following form:  
+# How to: increment and decrement pointers (C# Programming Guide)
+
+Use the increment and the decrement operators, `++` and `--`, to change the pointer location by `sizeof(pointer-type)` for a pointer of the type `pointer-type*`. The increment and decrement expressions take the following form:  
   
-```  
+```csharp
 ++p;  
 p++;  
 --p;  
@@ -18,9 +19,9 @@ p--;
   
  The increment and decrement operators can be applied to pointers of any type except the type `void*`.  
   
- The effect of applying the increment operator to a pointer of the type `pointer-type` is to add [sizeof](../../../csharp/language-reference/keywords/sizeof.md) (`pointer-type`) to the address that is contained in the pointer variable.  
+ The effect of applying the increment operator to a pointer of the type `pointer-type*` is to add `sizeof(pointer-type)` to the address that is contained in the pointer variable.  
   
- The effect of applying the decrement operator to a pointer of the type `pointer-type` is to subtract `sizeof` (`pointer-type`) from the address that is contained in the pointer variable.  
+ The effect of applying the decrement operator to a pointer of the type `pointer-type*` is to subtract `sizeof(pointer-type)` from the address that is contained in the pointer variable.  
   
  No exceptions are generated when the operation overflows the domain of the pointer, and the result depends on the implementation.  
   
@@ -37,7 +38,7 @@ p--;
 **Value:3 @ Address:12860284**
 **Value:4 @ Address:12860288**
 
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
@@ -48,3 +49,4 @@ p--;
 - [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
 - [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
 - [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)
+- [sizeof](../../../csharp/language-reference/keywords/sizeof.md)

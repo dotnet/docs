@@ -1,7 +1,7 @@
 ---
 title: Machine learning tasks
 description: Explore the different machine learning tasks supported in ML.NET.
-ms.date: 11/20/2018
+ms.date: 11/29/2018
 author: jralexander
 ---
 # Machine learning tasks
@@ -18,8 +18,17 @@ A [supervised machine learning](glossary.md#supervised-machine-learning) task th
 * [Understanding sentiment of Twitter comments](../tutorials/sentiment-analysis.md) as either "positive" or "negative".
 * Diagnosing whether a patient has a certain disease or not.
 * Making a decision to mark an email as "spam" or not.
+* Determining if a photo contains a dog or fruit.
 
 For more information, see the [Binary classification](https://en.wikipedia.org/wiki/Binary_classification) article on Wikipedia.
+
+Recommended learners for binary classification:
+
+* AveragedPerceptronTrainer
+* StochasticGradientDescentClassificationTrainer
+* LightGbmBinaryTrainer
+* FastTreeBinaryClassificationTrainer
+* SymSgdClassificationTrainer
 
 ### Binary Classification Learners
 
@@ -29,16 +38,11 @@ The following learners are available for binary classification tasks:
 * [BinaryClassificationGamTrainer](xref:Microsoft.ML.Trainers.FastTree.BinaryClassificationGamTrainer)
 * [EnsembleTrainer](xref:Microsoft.ML.Runtime.Ensemble.EnsembleTrainer)
 * [FastForestClassification](xref:Microsoft.ML.Trainers.FastTree.FastForestClassification)
-* [FastTreeBinaryClassificationFastTreeTrainer](xref:Microsoft.ML.Runtime.FastTreeBinaryClassificationFastTreeTrainer)
 * [FastTreeBinaryClassificationTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryClassificationTrainer)
 * [FieldAwareFactorizationMachineTrainer](xref:Microsoft.ML.Runtime.FactorizationMachine.FieldAwareFactorizationMachineTrainer)
-* [FixedPlattCalibratorCalibratorTrainer](xref:Microsoft.ML.Runtime.FixedPlattCalibratorCalibratorTrainer)
 * [LightGbmBinaryTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmBinaryTrainer)
 * [LinearClassificationTrainer](xref:Microsoft.ML.Trainers.LinearClassificationTrainer)
 * [LinearSvm](xref:Microsoft.ML.Trainers.Online.LinearSvm)
-* [NaiveCalibratorCalibratorTrainer](xref:Microsoft.ML.Runtime.NaiveCalibratorCalibratorTrainer)
-* [PavCalibratorCalibratorTrainer](xref:Microsoft.ML.Runtime.PavCalibratorCalibratorTrainer)
-* [PlattCalibratorCalibratorTrainer](xref:Microsoft.ML.Runtime.PlattCalibratorCalibratorTrainer)
 * [PriorTrainer](xref:Microsoft.ML.Runtime.Learners.PriorTrainer)
 * [RandomTrainer](xref:Microsoft.ML.Runtime.Learners.RandomTrainer)
 * [StochasticGradientDescentClassificationTrainer](xref:Microsoft.ML.Trainers.StochasticGradientDescentClassificationTrainer)
@@ -46,13 +50,23 @@ The following learners are available for binary classification tasks:
 
 ## Multiclass classification
 
-A [supervised machine learning](glossary.md#supervised-machine-learning) task that is used to predict the class (category) of an instance of data. The input of a classification algorithm is a set of labeled examples. Each label is an integer between 0 and k-1, where k is the number of classes. The output of a classification algorithm is a classifier, which you can use to predict the class of new unlabeled instances. Examples of multi-class classification scenarios include:
+A [supervised machine learning](glossary.md#supervised-machine-learning) task that is used to predict the class (category) of an instance of data. The input of a classification algorithm is a set of labeled examples. Each label normally starts as text. It is then run through the TermTransform, which converts it to the Key (numeric) type. The output of a classification algorithm is a classifier, which you can use to predict the class of new unlabeled instances. Examples of multi-class classification scenarios include:
 
 * Determining the breed of a dog as a "Siberian Husky", "Golden Retriever", "Poodle", etc.
 * Understanding movie reviews as "positive", "neutral", or "negative".
 * Categorizing hotel reviews as "location", "price", "cleanliness", etc.
 
 For more information, see the [Multiclass classification](https://en.wikipedia.org/wiki/Multiclass_classification) article on Wikipedia.
+
+Recommended learners for Multi-class:
+
+* OVA-AveragedPerceptronTrainer
+* SdcaMultiClassTrainer
+* LightGbmMulticlassTrainer
+* OVA-FastTreeBinaryClassificationTrainer
+
+>[!NOTE]
+>OVA and PKPD upgrades any [binary classification learner](#binary-classification) to act on multiclass datasets. More information on [Wikipedia] (https://en.wikipedia.org/wiki/Multiclass_classification#One-vs.-rest).
 
 ### Multiclass Classification Learners
 
@@ -78,12 +92,20 @@ A [supervised machine learning](glossary.md#supervised-machine-learning) task th
 > [!NOTE]
 > Currently, ML.NET is still building support for regression tasks that involve time series.
 
+Recommended learners for regression:
+
+* FastTreeTweedieTrainer 
+* LightGbmRegressorTrainer 
+* SdcaRegressionTrainer 
+* FastTreeRegressionTrainer
+
 ### Regression Learners
 
 The following learners are available for regression tasks:
 
 * [FastTreeRegressionTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer)
 * [FastTreeRegressionFastTreeTrainer](xref:Microsoft.ML.Runtime.FastTreeRegressionFastTreeTrainer)
+* [FastTreeTweedieRegressionFastTreeTrainer](xref:Microsoft.ML.Runtime.FastTreeTweedieRegressionFastTreeTrainer)
 * [FastTreeTweedieTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeTweedieTrainer)
 * [LightGbmRegressorTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmRegressorTrainer)
 * [LogisticRegression](xref:Microsoft.ML.Runtime.Learners.LogisticRegression)
@@ -133,7 +155,7 @@ The following learners are available for anomaly detection tasks:
 
 ## Ranking
 
-A ​​​​​​​​​ranking task constructs a ranker from a set of labeled examples. This example set consists of instance groups that can be scored with a given criteria ("perfect", "good", "fair", "bad") for each instance.  The ranker is trained to rank new instance groups with unknown scores for each instance.
+A ​​​​​​​​​ranking task constructs a ranker from a set of labeled examples. This example set consists of instance groups that can be scored with a given criteria. The ranking labels are { 0, 1, 2, 3, 4 } for each instance.  The ranker is trained to rank new instance groups with unknown scores for each instance. ML.NET ranking learners are [machine learned ranking](https://en.wikipedia.org/wiki/Learning_to_rank) based.
 
 ### Ranking learners
 
@@ -141,12 +163,11 @@ The following learners are available for ranking tasks:
 
 * [FastTreeRankingFastTreeTrainer](xref:Microsoft.ML.Runtime.FastTreeRankingFastTreeTrainer)
 * [FastTreeRankingTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeRankingTrainer)
-* [FastTreeTweedieRegressionFastTreeTrainer](xref:Microsoft.ML.Runtime.FastTreeTweedieRegressionFastTreeTrainer)
 * [LightGbmRankingTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmRankingTrainer)
 
 ## Recommendation
 
-A recommendation task enables producing a list of recommended products or services. ML.NET uses Matrix factorization (MF), a common approach to recommendations when you have historical product rating data in your catalog. For example, you have historical movie rating data for your users and want to recommend  other movies they are likely to watch next.
+A recommendation task enables producing a list of recommended products or services. ML.NET uses [Matrix factorization (MF)](https://en.wikipedia.org/wiki/Matrix_factorization_%28recommender_systems%29), a [collaborative filtering](https://en.wikipedia.org/wiki/Collaborative_filtering) algorithm for recommendations when you have historical product rating data in your catalog. For example, you have historical movie rating data for your users and want to recommend  other movies they are likely to watch next.
 
 ### Recommendation learners
 

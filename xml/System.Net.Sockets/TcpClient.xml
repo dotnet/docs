@@ -36,13 +36,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.TcpClient> class provides simple methods for connecting, sending, and receiving stream data over a network in synchronous blocking mode.  
+ The `TcpClient` class provides simple methods for connecting, sending, and receiving stream data over a network in synchronous blocking mode.  
   
- In order for <xref:System.Net.Sockets.TcpClient> to connect and exchange data, a <xref:System.Net.Sockets.TcpListener> or <xref:System.Net.Sockets.Socket> created with the TCP <xref:System.Net.Sockets.ProtocolType> must be listening for incoming connection requests. You can connect to this listener in one of the following two ways:  
+ In order for `TcpClient` to connect and exchange data, a <xref:System.Net.Sockets.TcpListener> or <xref:System.Net.Sockets.Socket> created with the TCP <xref:System.Net.Sockets.ProtocolType> must be listening for incoming connection requests. You can connect to this listener in one of the following two ways:  
   
--   Create a <xref:System.Net.Sockets.TcpClient> and call one of the three available <xref:System.Net.Sockets.TcpClient.Connect%2A> methods.  
+-   Create a `TcpClient` and call one of the three available <xref:System.Net.Sockets.TcpClient.Connect%2A> methods.  
   
--   Create a <xref:System.Net.Sockets.TcpClient> using the host name and port number of the remote host. This constructor will automatically attempt a connection.  
+-   Create a `TcpClient` using the host name and port number of the remote host. This constructor will automatically attempt a connection.  
   
 > [!NOTE]
 >  If you want to send connectionless datagrams in synchronous blocking mode, use the <xref:System.Net.Sockets.UdpClient> class.  
@@ -50,7 +50,7 @@
    
   
 ## Examples  
- The following code example establishes a <xref:System.Net.Sockets.TcpClient> connection.  
+ The following code example establishes a `TcpClient` connection.  
   
  [!code-cpp[System.Net.Sockets.TcpClient#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.TcpClient/CPP/tcpclient.cpp#1)]
  [!code-csharp[System.Net.Sockets.TcpClient#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.TcpClient/CS/tcpclient.cs#1)]
@@ -170,7 +170,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor creates a new <xref:System.Net.Sockets.TcpClient> and binds it to the <xref:System.Net.IPEndPoint> specified by the `localEP` parameter. Before you call this constructor, you must create an <xref:System.Net.IPEndPoint> using the IP address and port number from which you intend to send and receive data. You do not need to specify a local IP address and port number before connecting and communicating. If you create a <xref:System.Net.Sockets.TcpClient> using any other constructor, the underlying service provider will assign the most appropriate local IP address and port number.  
+ This constructor creates a new <xref:System.Net.Sockets.TcpClient> and binds it to the <xref:System.Net.IPEndPoint> specified by the `localEP` parameter. Before you call this constructor, you must create an `IPEndPoint` using the IP address and port number from which you intend to send and receive data. You do not need to specify a local IP address and port number before connecting and communicating. If you create a `TcpClient` using any other constructor, the underlying service provider will assign the most appropriate local IP address and port number.  
   
  You must call the <xref:System.Net.Sockets.TcpClient.Connect%2A> method before sending and receiving data.  
   
@@ -286,7 +286,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor creates a new <xref:System.Net.Sockets.TcpClient> and makes a synchronous connection attempt to the provided host name and port number. The underlying service provider will assign the most appropriate local IP address and port number. <xref:System.Net.Sockets.TcpClient> will block until it either connects or fails. This constructor allows you to initialize, resolve the DNS host name, and connect in one convenient step.  
+ This constructor creates a new <xref:System.Net.Sockets.TcpClient> and makes a synchronous connection attempt to the provided host name and port number. The underlying service provider will assign the most appropriate local IP address and port number. `TcpClient` will block until it either connects or fails. This constructor allows you to initialize, resolve the DNS host name, and connect in one convenient step.  
   
  If IPv6 is enabled and the <xref:System.Net.Sockets.TcpClient.%23ctor%28System.String%2CSystem.Int32%29> method is called to connect to a host that resolves to both IPv6 and IPv4 addresses, the connection to the IPv6 address will be attempted first before the IPv4 address. This may have the effect of delaying the time to establish the connection if the host is not listening on the IPv6 address.  
   
@@ -358,7 +358,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Classes deriving from <xref:System.Net.Sockets.TcpClient> can use this property to determine if a connection attempt has succeeded. It does not monitor the ongoing connection state of <xref:System.Net.Sockets.TcpClient>. If the remote host closes the connection, <xref:System.Net.Sockets.TcpClient.Active%2A> will not be updated. If you are deriving from <xref:System.Net.Sockets.TcpClient> and require closer attention to the connection state, use the <xref:System.Net.Sockets.Socket.Connected%2A> property of the <xref:System.Net.Sockets.Socket> returned by the <xref:System.Net.Sockets.TcpClient.Client%2A> method.  
+ Classes deriving from <xref:System.Net.Sockets.TcpClient> can use this property to determine if a connection attempt has succeeded. It does not monitor the ongoing connection state of `TcpClient`. If the remote host closes the connection, `Active` will not be updated. If you are deriving from `TcpClient` and require closer attention to the connection state, use the <xref:System.Net.Sockets.Socket.Connected%2A> property of the <xref:System.Net.Sockets.Socket> returned by the <xref:System.Net.Sockets.TcpClient.Client%2A> property.  
   
  ]]></format>
         </remarks>
@@ -400,14 +400,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Net.Sockets.TcpClient.Available%2A> is a way to determine whether data is queued for reading. If data is available, call <xref:System.Net.Sockets.NetworkStream.Read%2A> to get the data. The available data is the total amount of data queued in the network buffer for reading. If no data is queued in the network buffer, <xref:System.Net.Sockets.TcpClient.Available%2A> returns 0.  
+The `Available` property is a way to determine whether data is queued for reading. If data is available, call <xref:System.Net.Sockets.NetworkStream.Read%2A> to get the data. The available data is the total amount of data queued in the network buffer for reading. If no data is queued in the network buffer, `Available` returns 0.  
   
- If the remote host shuts down or closes the connection, <xref:System.Net.Sockets.TcpClient.Available%2A> may throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library) for a detailed description of the error.  
+ If the remote host shuts down or closes the connection, `Available` may throw a <xref:System.Net.Sockets.SocketException>. If you receive a `SocketException`, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library) for a detailed description of the error.  
   
    
   
 ## Examples  
- The following code example shows the use of the <xref:System.Net.Sockets.TcpClient.Available%2A> property.  
+ The following code example shows the use of the `Available` property.  
   
  [!code-cpp[System.Net.Sockets.TcpClient1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.TcpClient1/CPP/newtcpclient.cpp#1)]
  [!code-csharp[System.Net.Sockets.TcpClient1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.TcpClient1/CS/newtcpclient.cs#1)]  
@@ -471,7 +471,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The asynchronous <xref:System.Net.Sockets.TcpClient.BeginConnect%2A> operation must be completed by calling the <xref:System.Net.Sockets.TcpClient.EndConnect%2A> method. Typically, the method is invoked by the `asyncCallback` delegate.  
+ The asynchronous `BeginConnect` operation must be completed by calling the <xref:System.Net.Sockets.TcpClient.EndConnect%2A> method. Typically, the method is invoked by the `asyncCallback` delegate.  
   
  This method does not block until the operation completes. To block until the operation completes, use one of the <xref:System.Net.Sockets.TcpClient.Connect%2A> method overloads.  
   
@@ -537,7 +537,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The asynchronous <xref:System.Net.Sockets.TcpClient.BeginConnect%2A> operation must be completed by calling the <xref:System.Net.Sockets.TcpClient.EndConnect%2A> method. Typically, the method is invoked by the `asyncCallback` delegate.  
+ The asynchronous `BeginConnect` operation must be completed by calling the <xref:System.Net.Sockets.TcpClient.EndConnect%2A> method. Typically, the method is invoked by the `asyncCallback` delegate.  
   
  This method does not block until the operation completes. To block until the operation completes, use one of the <xref:System.Net.Sockets.TcpClient.Connect%2A> method overloads.  
   
@@ -605,7 +605,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The asynchronous <xref:System.Net.Sockets.TcpClient.BeginConnect%2A> operation must be completed by calling the <xref:System.Net.Sockets.TcpClient.EndConnect%2A> method. Typically, the method is invoked by the `asyncCallback` delegate.  
+ The asynchronous `BeginConnect` operation must be completed by calling the <xref:System.Net.Sockets.TcpClient.EndConnect%2A> method. Typically, the method is invoked by the `asyncCallback` delegate.  
   
  This method does not block until the operation completes. To block until the operation completes, use one of the <xref:System.Net.Sockets.TcpClient.Connect%2A> method overloads.  
   
@@ -671,12 +671,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Net.Sockets.TcpClient> creates a <xref:System.Net.Sockets.Socket> to send and receive data over a network. Classes deriving from <xref:System.Net.Sockets.TcpClient> can use this property to get or set this <xref:System.Net.Sockets.Socket>. Use the underlying <xref:System.Net.Sockets.Socket> returned from <xref:System.Net.Sockets.TcpClient.Client%2A> if you require access beyond that which <xref:System.Net.Sockets.TcpClient> provides. You can also use <xref:System.Net.Sockets.TcpClient.Client%2A> to set the underlying <xref:System.Net.Sockets.Socket> to an existing <xref:System.Net.Sockets.Socket>. This might be useful if you want to take advantage of the simplicity of <xref:System.Net.Sockets.TcpClient> using a pre-existing <xref:System.Net.Sockets.Socket>.  
+ <xref:System.Net.Sockets.TcpClient> creates a <xref:System.Net.Sockets.Socket> to send and receive data over a network. Classes deriving from `TcpClient` can use this property to get or set this `Socket`. Use the underlying `Socket` returned from `Client` if you require access beyond that which `TcpClient` provides. You can also use `Client` to set the underlying `Socket` to an existing `Socket`. This might be useful if you want to take advantage of the simplicity of `TcpClient` using a pre-existing `Socket`.  
   
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Net.Sockets.TcpClient.Client%2A> property. In this example, the receive buffer size of the underlying <xref:System.Net.Sockets.Socket> is changed.  
+ The following code example demonstrates the use of the `Client` property. In this example, the receive buffer size of the underlying <xref:System.Net.Sockets.Socket> is changed.  
   
  [!code-csharp[TcpClientProtectedMethodsAndPropertiesExample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/TcpClientProtectedMethodsAndPropertiesExample/CS/source.cs#1)]
  [!code-vb[TcpClientProtectedMethodsAndPropertiesExample#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/TcpClientProtectedMethodsAndPropertiesExample/VB/source.vb#1)]  
@@ -720,9 +720,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.TcpClient.Close%2A> method marks the instance as disposed and requests that the associated <xref:System.Net.Sockets.Socket> close the TCP connection. Based on the <xref:System.Net.Sockets.TcpClient.LingerState%2A> property, the TCP connection may stay open for some time after the <xref:System.Net.Sockets.TcpClient.Close%2A> method is called when data remains to be sent. There is no notification provided when the underlying connection has completed closing.  
+ The `Close` method marks the instance as disposed and requests that the associated <xref:System.Net.Sockets.Socket> close the TCP connection. Based on the <xref:System.Net.Sockets.TcpClient.LingerState%2A> property, the TCP connection may stay open for some time after the `Close` method is called when data remains to be sent. There is no notification provided when the underlying connection has completed closing.  
   
- Calling this method will eventually result in the close of the associated <xref:System.Net.Sockets.Socket> and will also close the associated <xref:System.Net.Sockets.NetworkStream> that is used to send and receive data if one was created.  
+ Calling this method will eventually result in the close of the associated `Socket` and will also close the associated <xref:System.Net.Sockets.NetworkStream> that is used to send and receive data if one was created.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -730,7 +730,7 @@
    
   
 ## Examples  
- The following code example demonstrates closing a <xref:System.Net.Sockets.TcpClient> by calling the <xref:System.Net.Sockets.TcpClient.Close%2A> method.  
+ The following code example demonstrates closing a <xref:System.Net.Sockets.TcpClient> by calling the `Close` method.  
   
  [!code-cpp[NCLTCPClientSync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLTcpClientSync/CPP/tcpclient.cpp#1)]
  [!code-csharp[NCLTCPClientSync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLTcpClientSync/CS/tcpclient.cs#1)]  
@@ -786,7 +786,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call this method to establish a synchronous remote host connection to the specified <xref:System.Net.IPEndPoint>. Before you call <xref:System.Net.Sockets.TcpClient.Connect%2A> you must create an instance of the <xref:System.Net.IPEndPoint> class using an IP address and a port number. Use this <xref:System.Net.IPEndPoint> as the `remoteEP` parameter. The <xref:System.Net.Sockets.TcpClient.Connect%2A> method will block until it either connects or fails. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this <xref:System.Net.Sockets.NetworkStream> to send and receive data.  
+ Call this method to establish a synchronous remote host connection to the specified <xref:System.Net.IPEndPoint>. Before you call `Connect`, you must create an instance of the `IPEndPoint` class using an IP address and a port number. Use this `IPEndPoint` as the `remoteEP` parameter. The `Connect` method will block until it either connects or fails. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this `NetworkStream` to send and receive data.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
@@ -851,7 +851,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call this method to establish a synchronous remote host connection to the specified <xref:System.Net.IPAddress> and port number. The <xref:System.Net.Sockets.TcpClient.Connect%2A> method will block until it either connects or fails. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this <xref:System.Net.Sockets.NetworkStream> to send and receive data.  
+ Call this method to establish a synchronous remote host connection to the specified <xref:System.Net.IPAddress> and port number. The <xref:System.Net.Sockets.TcpClient.Connect%2A> method will block until it either connects or fails. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this `NetworkStream` to send and receive data.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
@@ -916,7 +916,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is typically used immediately after a call to the <xref:System.Net.Dns.BeginGetHostAddresses%2A> method, which can return multiple IP addresses for a single host. Call the <xref:System.Net.Sockets.TcpClient.Connect%2A> method to establish a synchronous remote host connection to the host specified by the array of <xref:System.Net.IPAddress> elements and the port number. The <xref:System.Net.Sockets.TcpClient.Connect%2A> method will block until it either connects or fails. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this <xref:System.Net.Sockets.NetworkStream> to send and receive data.  
+ This method is typically used immediately after a call to the <xref:System.Net.Dns.BeginGetHostAddresses%2A> method, which can return multiple IP addresses for a single host. Call the `Connect` method to establish a synchronous remote host connection to the host specified by the array of <xref:System.Net.IPAddress> elements and the port number. The `Connect` method will block until it either connects or fails. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this `NetworkStream` to send and receive data.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library) for a detailed description of the error.  
@@ -982,9 +982,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call this method to establish a synchronous remote host connection to the specified host name and port number. The <xref:System.Net.Sockets.TcpClient.Connect%2A> method will block until it either connects or fails. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this <xref:System.Net.Sockets.NetworkStream> to send and receive data.  
+ Call this method to establish a synchronous remote host connection to the specified host name and port number. The `Connect` method will block until it either connects or fails. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this  `NetworkStream` to send and receive data.  
   
- If IPv6 is enabled and the <xref:System.Net.Sockets.TcpClient.Connect%28System.String%2CSystem.Int32%29> method is called to connect to a host that resolves to both IPv6 and IPv4 addresses, the connection to the IPv6 address will be attempted first before the IPv4 address. This may have the effect of delaying the time to establish the connection if the host is not listening on the IPv6 address.  
+ If IPv6 is enabled and the `Connect(String, Int32)` method is called to connect to a host that resolves to both IPv6 and IPv4 addresses, the connection to the IPv6 address will be attempted first before the IPv4 address. This may have the effect of delaying the time to establish the connection if the host is not listening on the IPv6 address.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
@@ -1065,7 +1065,7 @@
 ## Remarks  
  This operation will not block. The returned Returns <xref:System.Threading.Tasks.Task> object will complete after the TCP connection has been established. This method does not block the calling thread while the connection request is underway.  
   
- Call this method to establish a synchronous remote host connection to the specified <xref:System.Net.IPAddress> and port number as an asynchronous operation. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this <xref:System.Net.Sockets.NetworkStream> to send and receive data.  
+ Call this method to establish a synchronous remote host connection to the specified <xref:System.Net.IPAddress> and port number as an asynchronous operation. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this `NetworkStream` to send and receive data.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
@@ -1126,7 +1126,7 @@
 ## Remarks  
  This operation will not block. The returned Returns <xref:System.Threading.Tasks.Task> object will complete after the TCP connection has been established. This method does not block the calling thread while the connection request is underway.  
   
- This method is typically used immediately after a call to the <xref:System.Net.Dns.BeginGetHostAddresses%2A> method, which can return multiple IP addresses for a single host. Call this method to establish a synchronous remote host connection to the host specified by the array of <xref:System.Net.IPAddress> elements and the port number as an asynchronous operation. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this <xref:System.Net.Sockets.NetworkStream> to send and receive data.  
+ This method is typically used immediately after a call to the <xref:System.Net.Dns.BeginGetHostAddresses%2A> method, which can return multiple IP addresses for a single host. Call this method to establish a synchronous remote host connection to the host specified by the array of <xref:System.Net.IPAddress> elements and the port number as an asynchronous operation. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this `NetworkStream` to send and receive data.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library) for a detailed description of the error.  
@@ -1188,7 +1188,7 @@
 ## Remarks  
  This operation will not block. The returned Returns <xref:System.Threading.Tasks.Task> object will complete after the TCP connection has been established. This method does not block the calling thread while the connection request is underway.  
   
- Call this method to establish a synchronous remote host connection to the specified host name and port number as an asynchronous operation. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this <xref:System.Net.Sockets.NetworkStream> to send and receive data.  
+ Call this method to establish a synchronous remote host connection to the specified host name and port number as an asynchronous operation. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this `NetworkStream` to send and receive data.  
   
  If IPv6 is enabled and the <xref:System.Net.Sockets.TcpClient.ConnectAsync%28System.String%2CSystem.Int32%29> method is called to connect to a host that resolves to both IPv6 and IPv4 addresses, the connection to the IPv6 address will be attempted first before the IPv4 address. This may have the effect of delaying the time to establish the connection if the host is not listening on the IPv6 address.  
   
@@ -1244,9 +1244,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.TcpClient.Connected%2A> property gets the connection state of the <xref:System.Net.Sockets.TcpClient.Client%2A> socket as of the last I/O operation. When it returns `false`, the <xref:System.Net.Sockets.TcpClient.Client%2A> socket was either never connected, or is no longer connected.  
+ The `Connected` property gets the connection state of the <xref:System.Net.Sockets.TcpClient.Client%2A> socket as of the last I/O operation. When it returns `false`, the `Client` socket was either never connected, or is no longer connected.  
   
- Because the <xref:System.Net.Sockets.TcpClient.Connected%2A> property only reflects the state of the connection as of the most recent operation, you should attempt to send or receive a message to determine the current state. After the message send fails, this property no longer returns `true`. Note that this behavior is by design. You cannot reliably test the state of the connection because, in the time between the test and a send/receive, the connection could have been lost. Your code should assume the socket is connected, and gracefully handle failed transmissions.  
+ Because the `Connected` property only reflects the state of the connection as of the most recent operation, you should attempt to send or receive a message to determine the current state. After the message send fails, this property no longer returns `true`. Note that this behavior is by design. You cannot reliably test the state of the connection because, in the time between the test and a send/receive, the connection could have been lost. Your code should assume the socket is connected, and gracefully handle failed transmissions.  
   
    
   
@@ -1333,7 +1333,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes this method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes this method with `disposing` set to `false`.  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes this method with the `disposing` parameter set to `true`. `Finalize` invokes this method with `disposing` set to `false`.  
   
  When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Net.Sockets.TcpClient> references. It does this by invoking the `Dispose()` method of each referenced object.  
   
@@ -1443,14 +1443,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, multiple clients can use a specific port; however, only one of the clients can perform operations on the network traffic sent to the port. You can use the <xref:System.Net.Sockets.TcpClient.ExclusiveAddressUse%2A> property to prevent multiple clients from using a specific port.  
+ By default, multiple clients can use a specific port; however, only one of the clients can perform operations on the network traffic sent to the port. You can use the `ExclusiveAddressUse` property to prevent multiple clients from using a specific port.  
   
- This property must be set before the underlying socket is bound to a client port. If you call <xref:System.Net.Sockets.TcpClient.Connect%2A>, <xref:System.Net.Sockets.TcpClient.BeginConnect%2A>, <xref:System.Net.Sockets.TcpClient.%23ctor%28System.Net.IPEndPoint%29>, or <xref:System.Net.Sockets.TcpClient.%23ctor%28System.String%2CSystem.Int32%29>, the client port is bound as a side effect of the method, and you cannot subsequently set the <xref:System.Net.Sockets.TcpClient.ExclusiveAddressUse%2A> property  
+ This property must be set before the underlying socket is bound to a client port. If you call <xref:System.Net.Sockets.TcpClient.Connect%2A>, <xref:System.Net.Sockets.TcpClient.BeginConnect%2A>, <xref:System.Net.Sockets.TcpClient.%23ctor%28System.Net.IPEndPoint%29>, or <xref:System.Net.Sockets.TcpClient.%23ctor%28System.String%2CSystem.Int32%29>, the client port is bound as a side effect of the method, and you cannot subsequently set the `ExclusiveAddressUse` property.
   
    
   
 ## Examples  
- The following code example creates a <xref:System.Net.Sockets.TcpClient> and gets and sets the value of the <xref:System.Net.Sockets.TcpClient.ExclusiveAddressUse%2A> property.  
+ The following code example creates a <xref:System.Net.Sockets.TcpClient> and gets and sets the value of the `ExclusiveAddressUse` property.  
   
  [!code-cpp[System.Net.Sockets.TcpClient1#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.TcpClient1/CPP/newtcpclient.cpp#3)]
  [!code-csharp[System.Net.Sockets.TcpClient1#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.TcpClient1/CS/newtcpclient.cs#3)]  
@@ -1496,9 +1496,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.Finalize%2A?displayProperty=nameWithType>. Application code should not call this method; an object's <xref:System.Object.Finalize%2A> method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method.  
+ This method overrides <xref:System.Object.Finalize%2A?displayProperty=nameWithType>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method.  
   
- The <xref:System.Net.Sockets.TcpClient> class finalizer closes the TCP connection and releases all managed resources associated with the <xref:System.Net.Sockets.TcpClient>. These resources include the underlying <xref:System.Net.Sockets.Socket> used for connecting with the remote host, and the <xref:System.Net.Sockets.NetworkStream> used to send and receive data. The finalizer does not release any unmanaged resources.  
+ The <xref:System.Net.Sockets.TcpClient> class finalizer closes the TCP connection and releases all managed resources associated with the `TcpClient`. These resources include the underlying <xref:System.Net.Sockets.Socket> used for connecting with the remote host, and the <xref:System.Net.Sockets.NetworkStream> used to send and receive data. The finalizer does not release any unmanaged resources.  
   
  For more information, see [Finalize Methods and Destructors](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/0s71x931(v%3dvs.100)), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).  
   
@@ -1544,12 +1544,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Net.Sockets.TcpClient.GetStream%2A> returns a <xref:System.Net.Sockets.NetworkStream> that you can use to send and receive data. The <xref:System.Net.Sockets.NetworkStream> class inherits from the <xref:System.IO.Stream> class, which provides a rich collection of methods and properties used to facilitate network communications.  
+The `GetStream` method returns a <xref:System.Net.Sockets.NetworkStream> that you can use to send and receive data. The `NetworkStream` class inherits from the <xref:System.IO.Stream> class, which provides a rich collection of methods and properties used to facilitate network communications.  
   
- You must call the <xref:System.Net.Sockets.TcpClient.Connect%2A> method first, or the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method will throw an <xref:System.InvalidOperationException>. After you have obtained the <xref:System.Net.Sockets.NetworkStream>, call the <xref:System.Net.Sockets.NetworkStream.Write%2A> method to send data to the remote host. Call the <xref:System.Net.Sockets.NetworkStream.Read%2A> method to receive data arriving from the remote host. Both of these methods block until the specified operation is performed. You can avoid blocking on a read operation by checking the <xref:System.Net.Sockets.NetworkStream.DataAvailable%2A> property. A `true` value means that data has arrived from the remote host and is available for reading. In this case, <xref:System.Net.Sockets.NetworkStream.Read%2A> is guaranteed to complete immediately. If the remote host has shutdown its connection, <xref:System.Net.Sockets.NetworkStream.Read%2A> will immediately return with zero bytes.  
+ You must call the <xref:System.Net.Sockets.TcpClient.Connect%2A> method first, or the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method will throw an <xref:System.InvalidOperationException>. After you have obtained the `NetworkStream`, call the <xref:System.Net.Sockets.NetworkStream.Write%2A> method to send data to the remote host. Call the <xref:System.Net.Sockets.NetworkStream.Read%2A> method to receive data arriving from the remote host. Both of these methods block until the specified operation is performed. You can avoid blocking on a read operation by checking the <xref:System.Net.Sockets.NetworkStream.DataAvailable%2A> property. A `true` value means that data has arrived from the remote host and is available for reading. In this case, <xref:System.Net.Sockets.NetworkStream.Read%2A> is guaranteed to complete immediately. If the remote host has shutdown its connection, <xref:System.Net.Sockets.NetworkStream.Read%2A> will immediately return with zero bytes.  
   
 > [!NOTE]
->  You must close the <xref:System.Net.Sockets.NetworkStream> when you are through sending and receiving data. Closing <xref:System.Net.Sockets.TcpClient> does not release the <xref:System.Net.Sockets.NetworkStream>.  
+>  You must close the `NetworkStream` when you are through sending and receiving data. Closing <xref:System.Net.Sockets.TcpClient> does not release the `NetworkStream`.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
@@ -1560,7 +1560,7 @@
    
   
 ## Examples  
- The following code example uses <xref:System.Net.Sockets.TcpClient.GetStream%2A> to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. After obtaining the <xref:System.Net.Sockets.NetworkStream>, it sends and receives using its <xref:System.Net.Sockets.NetworkStream.Write%2A> and <xref:System.Net.Sockets.NetworkStream.Read%2A> methods.  
+ The following code example uses `GetStream` to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. After obtaining the <xref:System.Net.Sockets.NetworkStream>, it sends and receives using its <xref:System.Net.Sockets.NetworkStream.Write%2A> and <xref:System.Net.Sockets.NetworkStream.Read%2A> methods.  
   
  [!code-cpp[ClassicTcpClient.PublicMethodsAndPropertiesExample#14](~/samples/snippets/cpp/VS_Snippets_Remoting/ClassicTcpClient.PublicMethodsAndPropertiesExample/CPP/source.cpp#14)]
  [!code-csharp[ClassicTcpClient.PublicMethodsAndPropertiesExample#14](~/samples/snippets/csharp/VS_Snippets_Remoting/ClassicTcpClient.PublicMethodsAndPropertiesExample/CS/source.cs#14)]
@@ -1613,13 +1613,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.TcpClient.LingerState%2A> property changes the way <xref:System.Net.Sockets.Socket.Close%2A> method behaves. This property when set modifies the conditions under which the connection can be reset by Winsock. Connection resets can still occur based on the IP protocol behavior.  
+ The `LingerState` property changes the way <xref:System.Net.Sockets.Socket.Close%2A> method behaves. This property when set modifies the conditions under which the connection can be reset by Winsock. Connection resets can still occur based on the IP protocol behavior.  
   
  This property controls the length of time that the TCP connection will remain open after a call to <xref:System.Net.Sockets.TcpClient.Close%2A> when data remains to be sent. When you call the <xref:System.Net.Sockets.NetworkStream.Write%2A> method, data is placed in the outgoing network buffer. This property can be used to ensure that this data is sent to the remote host before the <xref:System.Net.Sockets.TcpClient.Close%2A> method drops the connection.  
   
- To enable lingering, create a <xref:System.Net.Sockets.LingerOption> instance containing the desired values, and set the <xref:System.Net.Sockets.TcpClient.LingerState%2A> property to this instance.  
+ To enable lingering, create a <xref:System.Net.Sockets.LingerOption> instance containing the desired values, and set the `LingerState` property to this instance.  
   
- The following table describes the behavior of the <xref:System.Net.Sockets.TcpClient.Close%2A> method for the possible values of the <xref:System.Net.Sockets.LingerOption.Enabled%2A> property and the <xref:System.Net.Sockets.LingerOption.LingerTime%2A> property stored in the <xref:System.Net.Sockets.TcpClient.LingerState%2A> property.  
+ The following table describes the behavior of the <xref:System.Net.Sockets.TcpClient.Close%2A> method for the possible values of the <xref:System.Net.Sockets.LingerOption.Enabled%2A> property and the <xref:System.Net.Sockets.LingerOption.LingerTime%2A> property stored in the `LingerState` property.  
   
 |LingerState.Enabled|LingerState.LingerTime|Behavior|  
 |-------------------------|----------------------------|--------------|  
@@ -1627,9 +1627,9 @@
 |`true` (enabled)|A nonzero time-out|Attempts to send pending data until the specified time-out expires, and if the attempt fails, then Winsock resets the connection.|  
 |`true` (enabled)|A zero timeout.|Discards any pending data and Winsock resets the connection.|  
   
- The IP stack computes the default IP protocol time-out period to use based on the round trip time of the connection. In most cases, the time-out computed by the stack is more relevant than one defined by an application. This is the default behavior for a socket when the <xref:System.Net.Sockets.TcpClient.LingerState%2A> property is not set.  
+ The IP stack computes the default IP protocol time-out period to use based on the round trip time of the connection. In most cases, the time-out computed by the stack is more relevant than one defined by an application. This is the default behavior for a socket when the `LingerState` property is not set.  
   
- When the <xref:System.Net.Sockets.LingerOption.LingerTime%2A> property stored in the <xref:System.Net.Sockets.TcpClient.LingerState%2A> property is set greater than the default IP protocol time-out, the default IP protocol time-out will still apply and override.  
+ When the <xref:System.Net.Sockets.LingerOption.LingerTime%2A> property stored in the `LingerState` property is set greater than the default IP protocol time-out, the default IP protocol time-out will still apply and override.  
   
    
   
@@ -1683,12 +1683,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When <xref:System.Net.Sockets.TcpClient.NoDelay%2A> is `false`, a <xref:System.Net.Sockets.TcpClient> does not send a packet over the network until it has collected a significant amount of outgoing data. Because of the amount of overhead in a TCP segment, sending small amounts of data is inefficient. However, situations do exist where you need to send very small amounts of data or expect immediate responses from each packet you send. Your decision should weigh the relative importance of network efficiency versus application requirements.  
+ When `NoDelay` is `false`, a <xref:System.Net.Sockets.TcpClient> does not send a packet over the network until it has collected a significant amount of outgoing data. Because of the amount of overhead in a TCP segment, sending small amounts of data is inefficient. However, situations do exist where you need to send very small amounts of data or expect immediate responses from each packet you send. Your decision should weigh the relative importance of network efficiency versus application requirements.  
   
    
   
 ## Examples  
- The following code example disables the delay. It then checks the value of <xref:System.Net.Sockets.TcpClient.NoDelay%2A> to verify that the property was successfully set.  
+ The following code example disables the delay. It then checks the value of `NoDelay` to verify that the property was successfully set.  
   
  [!code-cpp[ClassicTcpClient.PublicMethodsAndPropertiesExample#13](~/samples/snippets/cpp/VS_Snippets_Remoting/ClassicTcpClient.PublicMethodsAndPropertiesExample/CPP/source.cpp#13)]
  [!code-csharp[ClassicTcpClient.PublicMethodsAndPropertiesExample#13](~/samples/snippets/csharp/VS_Snippets_Remoting/ClassicTcpClient.PublicMethodsAndPropertiesExample/CS/source.cs#13)]
@@ -1738,11 +1738,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.TcpClient.ReceiveBufferSize%2A> property gets or sets the number of bytes that you are expecting to store in the receive buffer for each read operation. This property actually manipulates the network buffer space allocated for receiving incoming data.  
+ The `ReceiveBufferSize` property gets or sets the number of bytes that you are expecting to store in the receive buffer for each read operation. This property actually manipulates the network buffer space allocated for receiving incoming data.  
   
- Your network buffer should be at least as large as your application buffer to ensure that the desired data will be available when you call the <xref:System.Net.Sockets.NetworkStream.Read%2A?displayProperty=nameWithType> method. Use the <xref:System.Net.Sockets.TcpClient.ReceiveBufferSize%2A> property to set this size. If your application will be receiving bulk data, you should pass the <xref:System.Net.Sockets.NetworkStream.Read%2A> method a very large application buffer.  
+ Your network buffer should be at least as large as your application buffer to ensure that the desired data will be available when you call the <xref:System.Net.Sockets.NetworkStream.Read%2A?displayProperty=nameWithType> method. Use the <xref:System.Net.Sockets.TcpClient.ReceiveBufferSize%2A> property to set this size. If your application will be receiving bulk data, you should pass the `Read` method a very large application buffer.  
   
- If the network buffer is smaller than the amount of data you request in the <xref:System.Net.Sockets.NetworkStream.Read%2A> method, you will not be able to retrieve the desired amount of data in one read operation. This incurs the overhead of additional calls to the <xref:System.Net.Sockets.NetworkStream.Read%2A> method.  
+ If the network buffer is smaller than the amount of data you request in the `Read` method, you will not be able to retrieve the desired amount of data in one read operation. This incurs the overhead of additional calls to the `Read` method.  
   
    
   
@@ -1804,7 +1804,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.TcpClient.ReceiveTimeout%2A> property determines the amount of time that the <xref:System.Net.Sockets.NetworkStream.Read%2A> method will block until it is able to receive data. This time is measured in milliseconds. If the time-out expires before <xref:System.Net.Sockets.NetworkStream.Read%2A> successfully completes, <xref:System.Net.Sockets.TcpClient> throws a <xref:System.IO.IOException>. There is no time-out by default.  
+ The `ReceiveTimeout` property determines the amount of time that the <xref:System.Net.Sockets.NetworkStream.Read%2A> method will block until it is able to receive data. This time is measured in milliseconds. If the time-out expires before `Read` successfully completes, <xref:System.Net.Sockets.TcpClient> throws a <xref:System.IO.IOException>. There is no time-out by default.  
   
    
   
@@ -1861,11 +1861,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.TcpClient.SendBufferSize%2A> property gets or sets the number of bytes that you are expecting to send in each call to the <xref:System.Net.Sockets.NetworkStream.Write%2A?displayProperty=nameWithType> method. This property actually manipulates the network buffer space allocated for send operation.  
+ The `SendBufferSize` property gets or sets the number of bytes that you are expecting to send in each call to the <xref:System.Net.Sockets.NetworkStream.Write%2A?displayProperty=nameWithType> method. This property actually manipulates the network buffer space allocated for send operation.  
   
- Your network buffer should be at least as large as your application buffer to ensure that the desired data will be stored and sent in one operation. Use the <xref:System.Net.Sockets.TcpClient.SendBufferSize%2A> property to set this size. If your application will be sending bulk data, you should pass the <xref:System.Net.Sockets.NetworkStream.Write%2A> method a very large application buffer.  
+ Your network buffer should be at least as large as your application buffer to ensure that the desired data will be stored and sent in one operation. Use the <xref:System.Net.Sockets.TcpClient.SendBufferSize%2A> property to set this size. If your application will be sending bulk data, you should pass the `Write` method a very large application buffer.  
   
- If the network buffer is smaller than the amount of data you provide the <xref:System.Net.Sockets.NetworkStream.Write%2A> method, several network send operations will be performed for every call you make to the <xref:System.Net.Sockets.NetworkStream.Write%2A> method. You can achieve greater data throughput by ensuring that your network buffer is at least as large as your application buffer.  
+ If the network buffer is smaller than the amount of data you provide the `Write` method, several network send operations will be performed for every call you make to the `Write` method. You can achieve greater data throughput by ensuring that your network buffer is at least as large as your application buffer.  
   
    
   
@@ -1922,14 +1922,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.TcpClient.SendTimeout%2A> property determines the amount of time that the <xref:System.Net.Sockets.Socket.Send%2A> method will block until it is able to return successfully. This time is measured in milliseconds.  
+ The `SendTimeout` property determines the amount of time that the <xref:System.Net.Sockets.Socket.Send%2A> method will block until it is able to return successfully. This time is measured in milliseconds.  
   
- After you call the <xref:System.Net.Sockets.NetworkStream.Write%2A> method, the underlying <xref:System.Net.Sockets.Socket> returns the number of bytes actually sent to the host. The <xref:System.Net.Sockets.TcpClient.SendTimeout%2A> property determines the amount of time a <xref:System.Net.Sockets.TcpClient> will wait before receiving the number of bytes returned. If the time-out expires before the <xref:System.Net.Sockets.Socket.Send%2A> method successfully completes, <xref:System.Net.Sockets.TcpClient> will throw a <xref:System.Net.Sockets.SocketException>. There is no time-out by default.  
+ After you call the <xref:System.Net.Sockets.NetworkStream.Write%2A> method, the underlying <xref:System.Net.Sockets.Socket> returns the number of bytes actually sent to the host. The `SendTimeout` property determines the amount of time a <xref:System.Net.Sockets.TcpClient> will wait before receiving the number of bytes returned. If the time-out expires before the `Send` method successfully completes, `TcpClient` will throw a <xref:System.Net.Sockets.SocketException>. There is no time-out by default.  
   
    
   
 ## Examples  
- The following code example sets and gets the <xref:System.Net.Sockets.TcpClient.SendTimeout%2A> value.  
+ The following code example sets and gets the `SendTimeout` value.  
   
  [!code-cpp[ClassicTcpClient.PublicMethodsAndPropertiesExample#11](~/samples/snippets/cpp/VS_Snippets_Remoting/ClassicTcpClient.PublicMethodsAndPropertiesExample/CPP/source.cpp#11)]
  [!code-csharp[ClassicTcpClient.PublicMethodsAndPropertiesExample#11](~/samples/snippets/csharp/VS_Snippets_Remoting/ClassicTcpClient.PublicMethodsAndPropertiesExample/CS/source.cs#11)]

@@ -224,10 +224,17 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="si">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="si">The SerializationInfo to populate with the data needed to serialize the target object.</param>
+        <param name="context">The destination for this serialization.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the target object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information, see <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

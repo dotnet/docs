@@ -610,9 +610,9 @@
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="i">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="i">A column ordinal.</param>
+        <summary>Returns an <see cref="T:System.Data.IDataReader" /> for the specified column ordinal.</summary>
+        <returns>The <see cref="T:System.Data.IDataReader" /> instance for the specified column ordinal.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3645,8 +3645,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that can be used to iterate through the item collection.</summary>
+        <returns>The enumerator that can be used to iterate through the item collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3719,7 +3719,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases all resources that are used by the data reader.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

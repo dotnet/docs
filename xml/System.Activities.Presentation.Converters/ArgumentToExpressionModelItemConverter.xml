@@ -1,4 +1,4 @@
-﻿<Type Name="ArgumentToExpressionModelItemConverter" FullName="System.Activities.Presentation.Converters.ArgumentToExpressionModelItemConverter">
+<Type Name="ArgumentToExpressionModelItemConverter" FullName="System.Activities.Presentation.Converters.ArgumentToExpressionModelItemConverter">
   <TypeSignature Language="C#" Value="public class ArgumentToExpressionModelItemConverter : System.Windows.Data.IMultiValueConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArgumentToExpressionModelItemConverter extends System.Object implements class System.Windows.Data.IMultiValueConverter" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Converters.ArgumentToExpressionModelItemConverter" />
@@ -76,12 +76,12 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="values">To be added.</param>
+        <param name="values">An array that contains the argument to convert. Only the array item at index 1 is used.</param>
         <param name="targetType">Not used in this implementation.</param>
         <param name="parameter">Not used in this implementation.</param>
         <param name="culture">Not used in this implementation.</param>
         <summary>Converts the specified argument to an expression model item.</summary>
-        <returns>Returns a <see cref="T:System.Object" /> that contains the expression model item.</returns>
+        <returns>Returns an <see cref="T:System.Object" /> that contains the expression model item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

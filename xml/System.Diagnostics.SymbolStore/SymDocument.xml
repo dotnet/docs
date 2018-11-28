@@ -1,4 +1,4 @@
-﻿<Type Name="SymDocument" FullName="System.Diagnostics.SymbolStore.SymDocument">
+<Type Name="SymDocument" FullName="System.Diagnostics.SymbolStore.SymDocument">
   <TypeSignature Language="C#" Value="public class SymDocument : System.Diagnostics.SymbolStore.SymDocumentBase, IDisposable, System.Diagnostics.SymbolStore.ISymbolDocument" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymDocument extends System.Diagnostics.SymbolStore.SymDocumentBase implements class System.Diagnostics.SymbolStore.ISymbolDocument, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymDocument" />
@@ -57,9 +57,16 @@
         <Parameter Name="pDocument" Type="ISymUnmanagedDocument*" />
       </Parameters>
       <Docs>
-        <param name="pDocument">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pDocument">A pointer to the <see href="~/docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md">ISymUnmanagedDocument</see> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SymbolStore.SymDocument" /> class using the specified pointer to an unmanaged <see href="~/docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md">ISymUnmanagedDocument</see> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Typically, instances of this type are obtained by calling the <xref:System.Diagnostics.SymbolStore.SymReader.GetDocument%2A> method, instead of being created directly from an unmanaged interface using this constructor.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -100,8 +107,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases the resources held by the current instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Use the <xref:System.Diagnostics.SymbolStore.SymDocument.Finalize> method to release resources.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="{dtor}">
@@ -384,9 +399,16 @@ Use the <xref:System.Diagnostics.SymbolStore.SymDocument.Finalize> method to rel
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets a pointer to the unmanaged <see href="~/docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md">ISymUnmanagedDocument</see> interface for this <see cref="T:System.Diagnostics.SymbolStore.SymDocument" /> instance.</summary>
+        <returns>A pointer to the unmanaged <see href="~/docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md">ISymUnmanagedDocument</see> interface for this <see cref="T:System.Diagnostics.SymbolStore.SymDocument" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The unmanaged [ISymUnmanagedDocument](~/docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md) interface is defined in CorSym.idl, which is included with the Windows Software Development Kit (SDK).
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasEmbeddedSource">

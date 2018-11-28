@@ -1,4 +1,4 @@
-﻿<Type Name="SqlConnection" FullName="System.Data.SqlClient.SqlConnection">
+<Type Name="SqlConnection" FullName="System.Data.SqlClient.SqlConnection">
   <TypeSignature Language="C#" Value="public sealed class SqlConnection : System.Data.Common.DbConnection, ICloneable, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlConnection extends System.Data.Common.DbConnection implements class System.Data.IDbConnection, class System.ICloneable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlConnection" />
@@ -2828,9 +2828,16 @@ class Program {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Begins a database transaction.</summary>
+        <returns>An object that represents the new transaction.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Once the transaction has completed, you must explicitly commit or roll back the transaction by using the <xref:System.Data.IDbTransaction.Commit> or <xref:System.Data.IDbTransaction.Rollback> method.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbConnection.BeginTransaction">
@@ -2857,10 +2864,17 @@ class Program {
         <Parameter Name="iso" Type="System.Data.IsolationLevel" />
       </Parameters>
       <Docs>
-        <param name="iso">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="iso">One of the <see cref="T:System.Data.IsolationLevel" /> values.</param>
+        <summary>Begins a database transaction with the specified <see cref="T:System.Data.IsolationLevel" /> value.</summary>
+        <returns>An object that represents the new transaction.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Once the transaction has completed, you must explicitly commit or roll back the transaction by using the <xref:System.Data.IDbTransaction.Commit> or <xref:System.Data.IDbTransaction.Rollback> method.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbConnection.CreateCommand">
@@ -2885,8 +2899,8 @@ class Program {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates and returns a Command object that is associated with the connection.</summary>
+        <returns>A Command object that is associated with the connection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -23,7 +23,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- **Important** <xref:System.Configuration.IConfigurationSectionHandler> is deprecated in .NET Framework 2.0 and above. But, because it is used internally, it has been kept. You can find an example at [How to: Create Custom Configuration Sections Using IConfigurationSectionHandler](https://msdn.microsoft.com/library/07f68a3f-2920-4665-a824-47bda744e662). If you use the previous example, please build it with the .NET Framework version 1.0 or 1.1.  
+
+ > [!IMPORTANT]
+ > <xref:System.Configuration.IConfigurationSectionHandler> is deprecated in .NET Framework 2.0 and above. But, because it is used internally, it has been kept. You can find an example at [How to: Create Custom Configuration Sections Using IConfigurationSectionHandler](https://msdn.microsoft.com/library/07f68a3f-2920-4665-a824-47bda744e662). If you use the previous example, please build it with the .NET Framework version 1.0 or 1.1.  
   
  In .NET Framework version 2.0 and above, you must instead derive from the <xref:System.Configuration.ConfigurationSection> class to implement the related configuration section handler. You can find an example at [How to: Create Custom Configuration Sections Using ConfigurationSection](https://msdn.microsoft.com/library/febaca98-c727-4017-95ed-82e2fb6cf234).  
   

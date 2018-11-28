@@ -1,4 +1,4 @@
-﻿<Type Name="OracleLob" FullName="System.Data.OracleClient.OracleLob">
+<Type Name="OracleLob" FullName="System.Data.OracleClient.OracleLob">
   <TypeSignature Language="C#" Value="public sealed class OracleLob : System.IO.Stream, ICloneable, System.Data.SqlTypes.INullable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OracleLob extends System.IO.Stream implements class System.Data.SqlTypes.INullable, class System.ICloneable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleLob" />
@@ -395,7 +395,7 @@ connection.Close
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Closes the current stream and releases resources that are associated with the stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -612,7 +612,7 @@ connection.Close
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases the resources that are used by this object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

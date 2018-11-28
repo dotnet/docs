@@ -2155,7 +2155,7 @@ class Program {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Returns the list of <xref:System.Data.DataRow> objects that have <xref:System.Data.DataRow.RowError%2A> set. For example, errors can occur when calling <xref:System.Data.Common.DataAdapter.Update%2A> with <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> set to **true**. Do not invoke <xref:System.Data.DataTable.AcceptChanges%2A> on the <xref:System.Data.DataTable> until you resolve all errors and resubmit the <xref:System.Data.DataSet> for updating.  
+ Returns the list of <xref:System.Data.DataRow> objects that have <xref:System.Data.DataRow.RowError%2A> set. For example, errors can occur when calling <xref:System.Data.Common.DataAdapter.Update%2A> with <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> set to `true`. Do not invoke <xref:System.Data.DataTable.AcceptChanges%2A> on the <xref:System.Data.DataTable> until you resolve all errors and resubmit the <xref:System.Data.DataSet> for updating.  
   
    
   
@@ -5552,9 +5552,9 @@ public class A {
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> object.</param>
+        <summary>Populates a serialization information object with the data needed to serialize the <see cref="T:System.Data.DataTable" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,4 @@
-﻿<Type Name="SymMethod" FullName="System.Diagnostics.SymbolStore.SymMethod">
+<Type Name="SymMethod" FullName="System.Diagnostics.SymbolStore.SymMethod">
   <TypeSignature Language="C#" Value="public class SymMethod : System.Diagnostics.SymbolStore.SymMethodBase, IDisposable, System.Diagnostics.SymbolStore.ISymbolMethod" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymMethod extends System.Diagnostics.SymbolStore.SymMethodBase implements class System.Diagnostics.SymbolStore.ISymbolMethod, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymMethod" />
@@ -55,9 +55,16 @@
         <Parameter Name="pMethod" Type="ISymUnmanagedMethod*" />
       </Parameters>
       <Docs>
-        <param name="pMethod">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pMethod">A raw pointer to the unmanaged COM <see href="~/docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md">ISymUnmanagedMethod</see> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SymbolStore.SymMethod" /> class from a raw pointer to an unmanaged interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Typically, instances of this type are obtained by calling the <xref:System.Diagnostics.SymbolStore.SymReader.GetMethod%2A> method instead of being created directly with this constructor.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -98,8 +105,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases the resources held by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymMethod" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Use the <xref:System.Diagnostics.SymbolStore.SymMethod.Finalize> method to release resources.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="{dtor}">

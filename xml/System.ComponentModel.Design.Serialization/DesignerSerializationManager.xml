@@ -1,4 +1,4 @@
-﻿<Type Name="DesignerSerializationManager" FullName="System.ComponentModel.Design.Serialization.DesignerSerializationManager">
+<Type Name="DesignerSerializationManager" FullName="System.ComponentModel.Design.Serialization.DesignerSerializationManager">
   <TypeSignature Language="C#" Value="public class DesignerSerializationManager : IServiceProvider, System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerSerializationManager extends System.Object implements class System.ComponentModel.Design.Serialization.IDesignerSerializationManager, class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.DesignerSerializationManager" />
@@ -1045,8 +1045,20 @@
         <ReturnType>System.ComponentModel.Design.Serialization.ResolveNameEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when <see cref="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#GetName(System.Object)" /> cannot locate the specified name in the serialization manager's name table.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The `ResolveName` event is raised when the <xref:System.ComponentModel.Design.Serialization.DesignerSerializationManager.System%23ComponentModel%23Design%23Serialization%23IDesignerSerializationManager%23GetName%2A> method is called, but it fails to find the specified name in the serialization manager's name table.
+
+This event provides a way for a serializer to demand-create an object so the serializer does not have to order object creation by dependency. This delegate is cleared immediately after serialization or deserialization is complete.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The serialization manager does not have an active serialization session.</exception>
+        <altmember cref="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.OnResolveName(System.ComponentModel.Design.Serialization.ResolveNameEventArgs)" />
+        <altmember cref="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#GetName(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SerializationComplete">
@@ -1066,8 +1078,21 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when serialization is complete.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Typically the serialization process is single-threaded and should be stateless. When these characteristics are not true, the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SerializationComplete> event can be used to help to organize the process. A serializer can track this event to know that the serialization process is complete.
+
+For example, sometimes a serializer needs to write to another file, such as a resource file. In such a case, it would be inefficient to design the serializer to close the file when it is finished because serialization of an object graph generally requires several serializers; therefore, the resource file would be opened and closed many times. Instead, the resource file could be accessed through an object that tracked the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SerializationComplete> event, and that object could close the resource file at the end of serialization.
+
+In a related use, this event can be used to remove a temporary service installed in the serialization manager.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The serialization manager does not have an active serialization session.</exception>
+        <altmember cref="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.GetSerializer(System.Type,System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SetName">

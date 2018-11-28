@@ -32,7 +32,7 @@
 ## Examples  
  When <xref:System.Data.Services.Client.DataServiceContext.ExecuteBatch%2A> returns, the entire HTTP response for the batch request has been read from the network stream, but the responses have not been processed. Identity resolution and object materialization do not occur for a specified entity in the response until it is iterated as shown in the following example.  
   
-```  
+```csharp
 DataServiceContext service = new DataServiceContext(new   
                                                     Uri("http://myserviceroot"));  
   
@@ -169,7 +169,7 @@ catch (DataServiceRequestException e)
       </ReturnValue>
       <Docs>
         <summary>Gets the type of the object used to create the <see cref="T:System.Data.Services.Client.DataServiceRequest`1" /> instance.</summary>
-        <value>A <see cref="System.Type" /> value that indicates the type of data returned.</value>
+        <value>A <see cref="T:System.Type" /> value that indicates the type of data returned.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,7 +192,7 @@ catch (DataServiceRequestException e)
       </ReturnValue>
       <Docs>
         <summary>Gets the URI object that contains the request string.</summary>
-        <value>A <see cref="System.Uri" /> object that contains the request string.</value>
+        <value>A <see cref="T:System.Uri" /> object that contains the request string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

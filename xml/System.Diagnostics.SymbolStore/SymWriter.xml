@@ -1,4 +1,4 @@
-﻿<Type Name="SymWriter" FullName="System.Diagnostics.SymbolStore.SymWriter">
+<Type Name="SymWriter" FullName="System.Diagnostics.SymbolStore.SymWriter">
   <TypeSignature Language="C#" Value="public class SymWriter : System.Diagnostics.SymbolStore.SymWriterBase, IDisposable, System.Diagnostics.SymbolStore.ISymbolWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymWriter extends System.Diagnostics.SymbolStore.SymWriterBase implements class System.Diagnostics.SymbolStore.ISymbolWriter, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymWriter" />
@@ -101,8 +101,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases the resources held by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to release resources.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="{dtor}">
@@ -605,8 +613,8 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the underlying unmanaged symbol writer.</summary>
+        <returns>A raw pointer to the underlying unmanaged symbol writer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

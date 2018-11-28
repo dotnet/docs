@@ -48,9 +48,16 @@
         <Parameter Name="pReader" Type="ISymUnmanagedReader*" />
       </Parameters>
       <Docs>
-        <param name="pReader">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pReader">A pointer to an unmanaged ISymUnmanagedReader object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SymbolStore.SymReader" /> class by using the specified pointer to an unmanaged **ISymUnmanagedReader** object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Typically, instances of this type are obtained by using the <xref:System.Diagnostics.SymbolStore.SymBinder.GetReader%2A> method instead of being created directly with this constructor.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,8 +98,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases the resources held by the current instance. This method is for internal use only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Use the <xref:System.Diagnostics.SymbolStore.SymReader.Finalize> method to release resources.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="{dtor}">

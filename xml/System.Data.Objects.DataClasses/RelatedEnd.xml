@@ -1,4 +1,4 @@
-﻿<Type Name="RelatedEnd" FullName="System.Data.Objects.DataClasses.RelatedEnd">
+<Type Name="RelatedEnd" FullName="System.Data.Objects.DataClasses.RelatedEnd">
   <TypeSignature Language="C#" Value="public abstract class RelatedEnd : System.Data.Objects.DataClasses.IRelatedEnd" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit RelatedEnd extends System.Object implements class System.Data.Objects.DataClasses.IRelatedEnd" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.RelatedEnd" />
@@ -107,11 +107,20 @@
         <Parameter Name="allowCollection" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <typeparam name="TEntity">To be added.</typeparam>
-        <param name="entities">To be added.</param>
-        <param name="allowCollection">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="TEntity">The type of the <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection of entity objects to attach.</typeparam>
+        <param name="entities">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection of entity objects.</param>
+        <param name="allowCollection">Specifies whether the object being attached is part of a collection.</param>
+        <summary>Defines a relationship between two attached objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The `Attach<TEntity>(IEnumerable<TEntity>, Boolean)` method is used to define a relationship between an object and a related object when both objects are already attached to an object context. Set the related object to the <xref:System.Data.Objects.DataClasses.EntityReference%601.Value> property of the <xref:System.Data.Objects.DataClasses.EntityReference%601> or call the <xref:System.Data.Objects.DataClasses.EntityCollection%601.Add%2A> method on the <xref:System.Data.Objects.DataClasses.EntityCollection%601> if the related object is not already attached to the object context. When both objects are detached, you can also define the relationship by setting the related object to the <xref:System.Data.Objects.DataClasses.EntityReference%601.Value> property of the <xref:System.Data.Objects.DataClasses.EntityReference%601> or by calling the <xref:System.Data.Objects.DataClasses.EntityCollection%601.Add%2A> method on the <xref:System.Data.Objects.DataClasses.EntityCollection%601> and then attaching the root object in the object graph. For more information, see [Attaching and Detaching Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896271(v=vs.100)).
+
+The `Attach<TEntity>(IEnumerable<TEntity>, Boolean)` method is called by Object Services during attach operations against a related end.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -317,12 +326,19 @@
         <Parameter Name="setIsLoaded" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <typeparam name="TEntity">To be added.</typeparam>
-        <param name="collection">To be added.</param>
-        <param name="mergeOption">To be added.</param>
-        <param name="setIsLoaded">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="TEntity">The type of the <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection of entity objects to be merged.</typeparam>
+        <param name="collection">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection of entity objects to add to this related end.</param>
+        <param name="mergeOption">The <see cref="T:System.Data.Objects.MergeOption" /> to use when merging objects into an existing <see cref="T:System.Data.Objects.DataClasses.EntityCollection`1" />.</param>
+        <param name="setIsLoaded">Indicates whether the set of related objects is complete and matches the server. Operations such as <see cref="M:System.Data.Objects.DataClasses.EntityCollection`1.Load(System.Data.Objects.MergeOption)" /> set setIsLoaded to <see langword="true" />, but <see cref="Overload:System.Data.Objects.DataClasses.EntityCollection`1.Attach" /> sets it to <see langword="false" />.</param>
+        <summary>Merges related entities into the local <see cref="T:System.Data.Objects.DataClasses.EntityCollection`1" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The `Merge<TEntity>` method is called by Object Services during relationship operations.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDeserialized">
@@ -823,12 +839,30 @@
         <Parameter Name="allowCollection" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <typeparam name="TEntity">To be added.</typeparam>
-        <param name="entity">To be added.</param>
-        <param name="index">To be added.</param>
-        <param name="allowCollection">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="TEntity">The type of the object to validate.</typeparam>
+        <param name="entity">The object being validated.</param>
+        <param name="index">The position of the object being validated in the collection.</param>
+        <param name="allowCollection">Indicates whether the object is a member of a collection.</param>
+        <summary>Determines whether an object can be attached to the local collection or reference.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The `ValidateEntityForAttach<TEntity>` method is called by Object Services during an attach operation.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+ When the object being attached is <see langword="null" />.
+
+ -or-
+
+ The object being attached to the related end does not exist in the same <see cref="T:System.Data.Objects.ObjectContext" /> as the source object.
+
+ -or-
+
+ The object being attached is in the <see cref="F:System.Data.EntityState.Added" /> or <see cref="F:System.Data.EntityState.Deleted" /> state.
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="ValidateLoad&lt;TEntity&gt;">
@@ -853,12 +887,32 @@
         <Parameter Name="relatedEndName" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="TEntity">To be added.</typeparam>
-        <param name="mergeOption">To be added.</param>
-        <param name="relatedEndName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TEntity">The type of the object to validate.</typeparam>
+        <param name="mergeOption">The <see cref="T:System.Data.Objects.MergeOption" /> to use when merging objects into an existing <see cref="T:System.Data.Objects.DataClasses.EntityCollection`1" />.</param>
+        <param name="relatedEndName">The name of the related end.</param>
+        <summary>Ensures that the related object or objects can be successfully loaded into the local collection or reference.</summary>
+        <returns>An <see cref="T:System.Data.Objects.ObjectQuery`1" /> that is used to load the object or objects at the related end.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Object Services obtains the <xref:System.Data.Objects.ObjectQuery%601> by calling the [IRelatedEnd.CreateSourceQuery](xref:System.Data.Objects.DataClasses.RelatedEnd.System%23Data%23Objects%23DataClasses%23IRelatedEnd%23CreateSourceQuery) method.
+
+Object Services calls the `ValidateLoad<TEntity>` method before executing a load operation to ensure that the operation will succeed.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+ When the source object was retrieved by using a <see cref="F:System.Data.Objects.MergeOption.NoTracking" /> query and the <see cref="T:System.Data.Objects.MergeOption" /> is not <see cref="F:System.Data.Objects.MergeOption.NoTracking" /> or the related objects are already loaded.
+
+ -or-
+
+ When the source object is not attached to the <see cref="T:System.Data.Objects.ObjectContext" />.
+
+ -or-
+
+ When the source object is being tracked but is in the <see cref="F:System.Data.EntityState.Added" /> or <see cref="F:System.Data.EntityState.Deleted" /> state or the <see cref="T:System.Data.Objects.MergeOption" /> used for <see cref="Overload:System.Data.Objects.DataClasses.RelatedEnd.Load" /> is <see cref="F:System.Data.Objects.MergeOption.NoTracking" />.
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="ValidateOwnerForAttach">
@@ -878,8 +932,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Ensures that the object to which the related end belongs supports an attach operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Object Services calls the ValidateOwnerForAttach method before executing an attach operation to ensure that the operation will succeed.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">When the source object is not attached to the <see cref="T:System.Data.Objects.ObjectContext" />, was returned from a <see cref="F:System.Data.Objects.MergeOption.NoTracking" /> query, or is not in a <see cref="F:System.Data.EntityState.Modified" /> or <see cref="F:System.Data.EntityState.Unchanged" /> state.</exception>
       </Docs>
     </Member>
   </Members>

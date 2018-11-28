@@ -1,4 +1,4 @@
-﻿<Type Name="SymScope" FullName="System.Diagnostics.SymbolStore.SymScope">
+<Type Name="SymScope" FullName="System.Diagnostics.SymbolStore.SymScope">
   <TypeSignature Language="C#" Value="public class SymScope : System.Diagnostics.SymbolStore.SymScopeBase, IDisposable, System.Diagnostics.SymbolStore.ISymbolScope" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymScope extends System.Diagnostics.SymbolStore.SymScopeBase implements class System.Diagnostics.SymbolStore.ISymbolScope, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymScope" />
@@ -55,9 +55,16 @@
         <Parameter Name="pScope" Type="ISymUnmanagedScope*" />
       </Parameters>
       <Docs>
-        <param name="pScope">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pScope">A pointer to an unmanaged ISymUnmanagedScope object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SymbolStore.SymScope" /> class by using the specified pointer to an unmanaged **ISymUnmanagedScope** object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Typically, you use the <xref:System.Diagnostics.SymbolStore.SymMethod.RootScope> property to obtain instances of this class, instead of creating an instance by using this constructor.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -98,8 +105,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases the resources held by the current instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Use the <xref:System.Diagnostics.SymbolStore.SymScope.Finalize> method to release resources.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="{dtor}">

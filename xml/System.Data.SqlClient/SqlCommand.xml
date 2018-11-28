@@ -2024,7 +2024,7 @@ public class A {
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value indicating whether the command object should be visible in a Windows Form Designer control.</summary>
-        <value>A value indicating whether the command object should be visible in a control. The default is **true**.</value>
+        <value>A value indicating whether the command object should be visible in a control. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
@@ -3254,14 +3254,14 @@ For more information about asynchronous programming in the .NET Framework Data P
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value indicating whether the application should automatically receive query notifications from a common <see cref="T:System.Data.SqlClient.SqlDependency" /> object.</summary>
-        <value>**true** if the application should automatically receive query notifications; otherwise **false**. The default value is **true**.</value>
+        <value><see langword="true" /> if the application should automatically receive query notifications; otherwise <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This feature is used in ASP.NET applications to receive notifications for all commands executed in an ASP page against SQL Server. This enables ASP.NET to cache the page until the queries used to render the page would produce a different result. Automatic enlistment.  
   
- This property applies only to versions of SQL Server that support query notifications. For earlier versions, setting this property to **true** has no effect on the application.  
+ This property applies only to versions of SQL Server that support query notifications. For earlier versions, setting this property to `true` has no effect on the application.  
   
  ]]></format>
         </remarks>
@@ -3500,8 +3500,8 @@ For more information about asynchronous programming in the .NET Framework Data P
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new instance of a <see cref="T:System.Data.SqlClient.SqlParameter" /> object.</summary>
+        <returns>A <see cref="T:System.Data.SqlClient.SqlParameter" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3527,8 +3527,8 @@ For more information about asynchronous programming in the .NET Framework Data P
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Sends the <see cref="P:System.Data.SqlClient.SqlCommand.CommandText" /> to the <see cref="P:System.Data.SqlClient.SqlCommand.Connection" />, and builds a <see cref="T:System.Data.SqlClient.SqlDataReader" />.</summary>
+        <returns>A <see cref="T:System.Data.SqlClient.SqlDataReader" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3556,9 +3556,9 @@ For more information about asynchronous programming in the .NET Framework Data P
         <Parameter Name="behavior" Type="System.Data.CommandBehavior" />
       </Parameters>
       <Docs>
-        <param name="behavior">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="behavior">One of the <see cref="T:System.Data.CommandBehavior" /> values.</param>
+        <summary>Sends the <see cref="P:System.Data.SqlClient.SqlCommand.CommandText" /> to the <see cref="P:System.Data.SqlClient.SqlCommand.Connection" />, and builds a <see cref="T:System.Data.SqlClient.SqlDataReader" /> using one of the <see cref="T:System.Data.CommandBehavior" /> values.</summary>
+        <returns>A <see cref="T:System.Data.SqlClient.SqlDataReader" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1147,9 +1147,16 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of an <see cref="T:System.Data.IDbDataParameter" /> object.</summary>
+        <returns>An IDbDataParameter object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information, see <xref:System.Data.IDbCommand.CreateParameter>.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDbCommand.ExecuteReader">
@@ -1171,8 +1178,8 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the <see cref="P:System.Data.IDbCommand.CommandText" /> against the <see cref="P:System.Data.IDbCommand.Connection" /> and builds an <see cref="P:System.Data.IDataReader" />.</summary>
+        <returns>An <see cref="P:System.Data.IDataReader" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1197,10 +1204,17 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
         <Parameter Name="behavior" Type="System.Data.CommandBehavior" />
       </Parameters>
       <Docs>
-        <param name="behavior">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="behavior">One of the <see cref="P:System.Data.CommandBehavior" /> values.</param>
+        <summary>Executes the <see cref="P:System.Data.IDbCommand.CommandText" /> against the <see cref="P:System.Data.IDbCommand.Connection" />, and builds an <see cref="P:System.Data.IDataReader" /> by using one of the <see cref="P:System.Data.CommandBehavior" /> values.</summary>
+        <returns>An <see cref="P:System.Data.IDataReader" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information, see <xref:System.Data.IDbCommand.ExecuteReader%2A>.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Transaction">

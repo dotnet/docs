@@ -1,4 +1,4 @@
-﻿<Type Name="SymBinder" FullName="System.Diagnostics.SymbolStore.SymBinder">
+<Type Name="SymBinder" FullName="System.Diagnostics.SymbolStore.SymBinder">
   <TypeSignature Language="C#" Value="public class SymBinder : System.Diagnostics.SymbolStore.SymBinderBase, IDisposable, System.Diagnostics.SymbolStore.ISymbolBinder, System.Diagnostics.SymbolStore.ISymbolBinder1" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymBinder extends System.Diagnostics.SymbolStore.SymBinderBase implements class System.Diagnostics.SymbolStore.ISymbolBinder, class System.Diagnostics.SymbolStore.ISymbolBinder1, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymBinder" />
@@ -73,8 +73,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases the resources held by the current instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Use the <xref:System.Diagnostics.SymbolStore.SymBinder.Finalize> method to release resources.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="{dtor}">

@@ -1,4 +1,4 @@
-﻿<Type Name="IHash&lt;TKey,TValue&gt;" FullName="Microsoft.VisualC.StlClr.IHash&lt;TKey,TValue&gt;">
+<Type Name="IHash&lt;TKey,TValue&gt;" FullName="Microsoft.VisualC.StlClr.IHash&lt;TKey,TValue&gt;">
   <TypeSignature Language="C#" Value="public interface IHash&lt;TKey,TValue&gt; : ICloneable, Microsoft.VisualC.StlClr.Generic.IBidirectionalContainer&lt;TValue&gt;, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IHash`2&lt;TKey, TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IBidirectionalContainer`1&lt;!TValue&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.IHash`2" />
@@ -43,7 +43,7 @@
 ## Remarks  
  [!INCLUDE[unnamed_parm](~/includes/unnamed-parm-md.md)]  
   
- For more information, see [hash_map (STL/CLR)](/cpp/dotnet/hash-map-stl-clr), [hash_multimap (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr), [hash_set (STL/CLR)](/cpp/dotnet/hash-set-stl-clr), and [hash_multiset (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr).  
+ For more information, see [hash\_map (STL/CLR)](/cpp/dotnet/hash-map-stl-clr), [hash\_multimap (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr), [hash\_set (STL/CLR)](/cpp/dotnet/hash-set-stl-clr), and [hash\_multiset (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr).  
   
  ]]></format>
     </remarks>
@@ -73,11 +73,10 @@
         <summary>Designates the beginning of the controlled sequence.</summary>
         <returns>An iterator.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
+          <format type="text/markdown"><![CDATA[
+
 ## Remarks  
- For more information, see [hash_map::begin (STL/CLR)](/cpp/dotnet/hash-map-begin-stl-clr), [hash_multimap::begin (STL/CLR)](/cpp/dotnet/hash-multimap-begin-stl-clr), [hash_set::begin (STL/CLR)](/cpp/dotnet/hash-set-begin-stl-clr), and [hash_multiset::begin (STL/CLR)](/cpp/dotnet/hash-multiset-begin-stl-clr).  
-  
+ For more information, see [hash\_map::begin (STL/CLR)](/cpp/dotnet/hash-map-begin-stl-clr), [hash\_multimap::begin (STL/CLR)](/cpp/dotnet/hash-multimap-begin-stl-clr), [hash\_set::begin (STL/CLR)](/cpp/dotnet/hash-set-begin-stl-clr), and [hash\_multiset::begin (STL/CLR)](/cpp/dotnet/hash-multiset-begin-stl-clr).  
  ]]></format>
         </remarks>
       </Docs>
@@ -106,7 +105,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::bucket_count (STL/CLR)](/cpp/dotnet/hash-map-bucket-count-stl-clr), [hash_multimap::bucket_count (STL/CLR)](/cpp/dotnet/hash-multimap-bucket-count-stl-clr), [hash_set::bucket_count (STL/CLR)](/cpp/dotnet/hash-set-bucket-count-stl-clr), and [hash_multiset::bucket_count (STL/CLR)](/cpp/dotnet/hash-multiset-bucket-count-stl-clr).  
+ For more information, see [hash\_map::bucket_count (STL/CLR)](/cpp/dotnet/hash-map-bucket-count-stl-clr), [hash\_multimap::bucket_count (STL/CLR)](/cpp/dotnet/hash-multimap-bucket-count-stl-clr), [hash\_set::bucket_count (STL/CLR)](/cpp/dotnet/hash-set-bucket-count-stl-clr), and [hash\_multiset::bucket_count (STL/CLR)](/cpp/dotnet/hash-multiset-bucket-count-stl-clr).  
   
  ]]></format>
         </remarks>
@@ -135,7 +134,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::clear (STL/CLR)](/cpp/dotnet/hash-map-clear-stl-clr), [hash_multimap::clear (STL/CLR)](/cpp/dotnet/hash-multimap-clear-stl-clr), [hash_set::clear (STL/CLR)](/cpp/dotnet/hash-set-clear-stl-clr), and [hash_multiset::clear (STL/CLR)](/cpp/dotnet/hash-multiset-clear-stl-clr).  
+ For more information, see [hash\_map::clear (STL/CLR)](/cpp/dotnet/hash-map-clear-stl-clr), [hash\_multimap::clear (STL/CLR)](/cpp/dotnet/hash-multimap-clear-stl-clr), [hash\_set::clear (STL/CLR)](/cpp/dotnet/hash-set-clear-stl-clr), and [hash\_multiset::clear (STL/CLR)](/cpp/dotnet/hash-multiset-clear-stl-clr).  
   
  ]]></format>
         </remarks>
@@ -168,7 +167,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::count (STL/CLR)](/cpp/dotnet/hash-map-count-stl-clr), [hash_multimap::count (STL/CLR)](/cpp/dotnet/hash-multimap-count-stl-clr), [hash_set::count (STL/CLR)](/cpp/dotnet/hash-set-count-stl-clr), and [hash_multiset::count (STL/CLR)](/cpp/dotnet/hash-multiset-count-stl-clr).  
+ For more information, see [hash\_map::count (STL/CLR)](/cpp/dotnet/hash-map-count-stl-clr), [hash\_multimap::count (STL/CLR)](/cpp/dotnet/hash-multimap-count-stl-clr), [hash\_set::count (STL/CLR)](/cpp/dotnet/hash-set-count-stl-clr), and [hash\_multiset::count (STL/CLR)](/cpp/dotnet/hash-multiset-count-stl-clr).  
   
  ]]></format>
         </remarks>
@@ -199,7 +198,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::empty (STL/CLR)](/cpp/dotnet/hash-map-empty-stl-clr), [hash_multimap::empty (STL/CLR)](/cpp/dotnet/hash-multimap-empty-stl-clr), [hash_set::empty (STL/CLR)](/cpp/dotnet/hash-set-empty-stl-clr), and [hash_multiset::empty (STL/CLR)](/cpp/dotnet/hash-multiset-empty-stl-clr).  
+ For more information, see [hash\_map::empty (STL/CLR)](/cpp/dotnet/hash-map-empty-stl-clr), [hash\_multimap::empty (STL/CLR)](/cpp/dotnet/hash-multimap-empty-stl-clr), [hash\_set::empty (STL/CLR)](/cpp/dotnet/hash-set-empty-stl-clr), and [hash\_multiset::empty (STL/CLR)](/cpp/dotnet/hash-multiset-empty-stl-clr).  
   
  ]]></format>
         </remarks>
@@ -229,11 +228,10 @@
         <summary>Designates the end of the controlled sequence.</summary>
         <returns>An iterator.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
+          <format type="text/markdown"><![CDATA[
+
 ## Remarks  
- For more information, see [hash_map::end (STL/CLR)](/cpp/dotnet/hash-map-end-stl-clr), [hash_multimap::end (STL/CLR)](/cpp/dotnet/hash-multimap-end-stl-clr), [hash_set::end (STL/CLR)](/cpp/dotnet/hash-set-end-stl-clr), and [hash_multiset::end (STL/CLR)](/cpp/dotnet/hash-multiset-end-stl-clr).  
-  
+ For more information, see [hash\_map::end (STL/CLR)](/cpp/dotnet/hash-map-end-stl-clr), [hash\_multimap::end (STL/CLR)](/cpp/dotnet/hash-multimap-end-stl-clr), [hash\_set::end (STL/CLR)](/cpp/dotnet/hash-set-end-stl-clr), and [hash\_multiset::end (STL/CLR)](/cpp/dotnet/hash-multiset-end-stl-clr).  
  ]]></format>
         </remarks>
       </Docs>
@@ -264,10 +262,10 @@
         <summary>Finds the range that matches a specified key.</summary>
         <returns>A pair of iterators.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
+          <format type="text/markdown"><![CDATA[
+
 ## Remarks  
- For more information, see [hash_map::equal_range (STL/CLR)](https://msdn.microsoft.com/library/9b9a18b8-42fd-4d17-91bd-df85e583cf61), [hash_multimap::equal_range (STL/CLR)](https://msdn.microsoft.com/library/3ea11e31-d4af-4d2e-a80b-eafe12c97d0c), [hash_set::equal_range (STL/CLR)](https://msdn.microsoft.com/library/502af4c5-f71e-44cf-a180-21e9da4b50ff), and [hash_multiset::equal_range (STL/CLR)](https://msdn.microsoft.com/library/a4141d7e-4964-4c78-8989-ae1d1258b50a).  
+ For more information, see [hash\_map::equal_range (STL/CLR)][hash\_map::equal_range (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#equal_range)), [hash\_multimap::equal_range (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#equal_range), [hash\_set::equal_range (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#equal_range), and [hash\_multiset::equal_range (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#equal_range).  
   
  ]]></format>
         </remarks>
@@ -284,7 +282,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::erase (STL/CLR)](https://msdn.microsoft.com/library/1d2a79aa-62f7-461c-8f7c-7b660eb189be), [hash_multimap::erase (STL/CLR)](https://msdn.microsoft.com/library/663c67f6-8070-47db-abdc-58f7ace69736), [hash_set::erase (STL/CLR)](https://msdn.microsoft.com/library/620998a0-00c9-4be6-899b-2d71661375b6), and [hash_multiset::erase (STL/CLR)](https://msdn.microsoft.com/library/bddd329d-aece-4b93-8355-005351c3aa45).  
+ For more information, see [hash\_map::erase (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#erase), [hash\_multimap::erase (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#erase), [hash\_set::erase (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#erase), and [hash\_multiset::erase (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#erase).  
   
  ]]></format>
         </remarks>
@@ -317,7 +315,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::erase (STL/CLR)](https://msdn.microsoft.com/library/1d2a79aa-62f7-461c-8f7c-7b660eb189be), [hash_multimap::erase (STL/CLR)](https://msdn.microsoft.com/library/663c67f6-8070-47db-abdc-58f7ace69736), [hash_set::erase (STL/CLR)](https://msdn.microsoft.com/library/620998a0-00c9-4be6-899b-2d71661375b6), and [hash_multiset::erase (STL/CLR)](https://msdn.microsoft.com/library/bddd329d-aece-4b93-8355-005351c3aa45).  
+ For more information, see [hash\_map::erase (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#erase), [hash\_multimap::erase (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#erase), [hash\_set::erase (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#erase), and [hash\_multiset::erase (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#erase).  
   
  ]]></format>
         </remarks>
@@ -345,10 +343,17 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Where">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_Where">An iterator that points to the element to erase.</param>
+        <summary>Removes from the container the element that is specified by the given iterator.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information, see [hash\_map::erase (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#erase), [hash\_multimap::erase (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#erase), [hash\_set::erase (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#erase), and [hash\_multiset::erase (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#erase).
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="erase">
@@ -374,11 +379,18 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_First_iter">To be added.</param>
-        <param name="_Last_iter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_First_iter">An iterator that points to the beginning of the range to erase.</param>
+        <param name="_Last_iter">An iterator that points to the position that immediately follows the range to erase.</param>
+        <summary>Removes from the container the elements between the specified iterators.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information, see [hash\_map::erase (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#erase), [hash\_multimap::erase (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#erase), [hash\_set::erase (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#erase), and [hash\_multiset::erase (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#erase).
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="find">
@@ -407,10 +419,10 @@
         <summary>Finds an element that matches a specified key.</summary>
         <returns>An iterator.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
+          <format type="text/markdown"><![CDATA[
+
 ## Remarks  
- For more information, see [hash_map::find (STL/CLR)](https://msdn.microsoft.com/library/53ff8d57-2ea4-485e-9419-aed5e3f5affb), [hash_multimap::find (STL/CLR)](https://msdn.microsoft.com/library/ce839c5e-b8c5-434e-9cc0-e4c6ee6a6bb3), [hash_set::find (STL/CLR)](https://msdn.microsoft.com/library/758b7438-ef15-4af0-8001-a1126d5e9a9e), and [hash_multiset::find (STL/CLR)](https://msdn.microsoft.com/library/fbedeb37-242e-4c2a-b1f8-234bcfd9cd25).  
+ For more information, see [hash\_map::find (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#find), [hash\_multimap::find (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#find), [hash\_set::find (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#find), and [hash\_multiset::find (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#find).  
   
  ]]></format>
         </remarks>
@@ -440,7 +452,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::hash_delegate (STL/CLR)](https://msdn.microsoft.com/library/ae451fbe-a10c-457f-9b54-94dd9d93e8c4), [hash_multimap::hash_delegate (STL/CLR)](https://msdn.microsoft.com/library/2a459f6d-9bb1-4b03-a013-0998ba842c25), [hash_set::hash_delegate (STL/CLR)](https://msdn.microsoft.com/library/34e39d2d-f2ef-4755-9201-3cdb4e41ea56), and [hash_multiset::hash_delegate (STL/CLR)](https://msdn.microsoft.com/library/61ccfdfb-6a3c-40aa-902f-49e004a31a75).  
+ For more information, see [hash\_map::hash_delegate (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#hash_delegate), [hash\_multimap::hash_delegate (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#hash_delegate), [hash\_set::hash_delegate (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#hash_delegate), and [hash\_multiset::hash_delegate (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#hash_delegate).  
   
  ]]></format>
         </remarks>
@@ -457,7 +469,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::insert (STL/CLR)](https://msdn.microsoft.com/library/52926ec7-ad4e-4791-a043-46136ee40a69), [hash_multimap::insert (STL/CLR)](https://msdn.microsoft.com/library/51cd98b0-c959-4a44-b914-582c00681bd7), [hash_set::insert (STL/CLR)](https://msdn.microsoft.com/library/0a9bc9aa-012e-4101-9e8c-f1f4b6b76af7), and [hash_multiset::insert (STL/CLR)](https://msdn.microsoft.com/library/e7254f30-a514-4ddc-bf53-38aafbe9e8eb).  
+ For more information, see [hash\_map::insert (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#insert), [hash\_multimap::insert (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#insert), [hash\_set::insert (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#insert), and [hash\_multiset::insert (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#insert).  
   
  ]]></format>
         </remarks>
@@ -489,7 +501,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::insert (STL/CLR)](https://msdn.microsoft.com/library/52926ec7-ad4e-4791-a043-46136ee40a69), [hash_multimap::insert (STL/CLR)](https://msdn.microsoft.com/library/51cd98b0-c959-4a44-b914-582c00681bd7), [hash_set::insert (STL/CLR)](https://msdn.microsoft.com/library/0a9bc9aa-012e-4101-9e8c-f1f4b6b76af7), and [hash_multiset::insert (STL/CLR)](https://msdn.microsoft.com/library/e7254f30-a514-4ddc-bf53-38aafbe9e8eb).  
+ For more information, see [hash\_map::insert (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#insert), [hash\_multimap::insert (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#insert), [hash\_set::insert (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#insert), and [hash\_multiset::insert (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#insert).  
   
  ]]></format>
         </remarks>
@@ -523,7 +535,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::insert (STL/CLR)](https://msdn.microsoft.com/library/52926ec7-ad4e-4791-a043-46136ee40a69), [hash_multimap::insert (STL/CLR)](https://msdn.microsoft.com/library/51cd98b0-c959-4a44-b914-582c00681bd7), [hash_set::insert (STL/CLR)](https://msdn.microsoft.com/library/0a9bc9aa-012e-4101-9e8c-f1f4b6b76af7), and [hash_multiset::insert (STL/CLR)](https://msdn.microsoft.com/library/e7254f30-a514-4ddc-bf53-38aafbe9e8eb).  
+ For more information, see [hash\_map::insert (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#insert), [hash\_multimap::insert (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#insert), [hash\_set::insert (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#insert), and [hash\_multiset::insert (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#insert).  
   
  ]]></format>
         </remarks>
@@ -555,10 +567,10 @@
         <summary>Adds the given value to the container.</summary>
         <returns>A pair of iterators.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
+          <format type="text/markdown"><![CDATA[
+
 ## Remarks  
- For more information, see [hash_map::insert (STL/CLR)](https://msdn.microsoft.com/library/52926ec7-ad4e-4791-a043-46136ee40a69), [hash_multimap::insert (STL/CLR)](https://msdn.microsoft.com/library/51cd98b0-c959-4a44-b914-582c00681bd7), [hash_set::insert (STL/CLR)](https://msdn.microsoft.com/library/0a9bc9aa-012e-4101-9e8c-f1f4b6b76af7), and [hash_multiset::insert (STL/CLR)](https://msdn.microsoft.com/library/e7254f30-a514-4ddc-bf53-38aafbe9e8eb).  
+ For more information, see [hash\_map::insert (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#insert), [hash\_multimap::insert (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#insert), [hash\_set::insert (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#insert), and [hash\_multiset::insert (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#insert).  
   
  ]]></format>
         </remarks>
@@ -587,11 +599,18 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Where">To be added.</param>
-        <param name="_Val">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_Where">An iterator that specifies where in the container to insert the element. This is a hint only and is used to improve performance. The element might not be inserted at this location.</param>
+        <param name="_Val">The key value to insert into the container.</param>
+        <summary>Adds the given element to the container.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information, see [hash\_map::insert (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#insert), [hash\_multimap::insert (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#insert), [hash\_set::insert (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#insert), and [hash\_multiset::insert (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#insert).
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="key_comp">
@@ -618,7 +637,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::key_comp (STL/CLR)](https://msdn.microsoft.com/library/08bd31cc-3a7c-49a3-ac48-089262b3bd44), [hash_multimap::key_comp (STL/CLR)](https://msdn.microsoft.com/library/221d0bfe-19ad-4c34-9b10-77921be32459), [hash_set::key_comp (STL/CLR)](https://msdn.microsoft.com/library/d5dc46c3-c2ee-4591-8f03-d8c9d3df0519), and [hash_multiset::key_comp (STL/CLR)](https://msdn.microsoft.com/library/b9653dd2-20f3-4ef3-875f-265749839ba6).  
+ For more information, see [hash\_map::key_comp (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#key_comp), [hash\_multimap::key_comp (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#key_comp), [hash\_set::key_comp (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#key_comp), and [hash\_multiset::key_comp (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#key_comp).  
   
  ]]></format>
         </remarks>
@@ -648,7 +667,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::load_factor (STL/CLR)](https://msdn.microsoft.com/library/e3a29b1f-ea20-4153-87b0-3935044d4d7a), [hash_multimap::load_factor (STL/CLR)](https://msdn.microsoft.com/library/c4b34387-fe76-405d-bead-a092b4571631), [hash_set::load_factor (STL/CLR)](https://msdn.microsoft.com/library/84fbcdd8-0457-4a20-9f54-0a7c9612f4dd), and [hash_multiset::load_factor (STL/CLR)](https://msdn.microsoft.com/library/67125c97-1018-4d0f-858f-b4c09e7f0b09).  
+ For more information, see [hash\_map::load_factor (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#load_factor), [hash\_multimap::load_factor (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#load_factor), [hash\_set::load_factor (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#load_factor), and [hash\_multiset::load_factor (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#load_factor).  
   
  ]]></format>
         </remarks>
@@ -680,10 +699,10 @@
         <summary>Finds the beginning of the range of elements that match a specified key.</summary>
         <returns>An iterator.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
+          <format type="text/markdown"><![CDATA[
+
 ## Remarks  
- For more information, see [hash_map::lower_bound (STL/CLR)](https://msdn.microsoft.com/library/7c88987a-9c77-4874-8052-192a148abbf1), [hash_multimap::lower_bound (STL/CLR)](https://msdn.microsoft.com/library/c61091ef-8364-4447-bdd2-a402cbc05f05), [hash_set::lower_bound (STL/CLR)](https://msdn.microsoft.com/library/54fe8ee5-1977-4192-9cc6-b51e84b03a16), and [hash_multiset::lower_bound (STL/CLR)](https://msdn.microsoft.com/library/891898fa-c9e8-4132-a71d-36e5141793f1).  
+ For more information, see [hash\_map::lower_bound (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#lower_bound), [hash\_multimap::lower_bound (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#lower_bound), [hash\_set::lower_bound (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#lower_bound), and [hash\_multiset::lower_bound (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#lower_bound).  
   
  ]]></format>
         </remarks>
@@ -700,7 +719,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::max_load_factor (STL/CLR)](https://msdn.microsoft.com/library/7c0773c9-a918-4e61-ae95-e45148f1ff24), [hash_multimap::max_load_factor (STL/CLR)](https://msdn.microsoft.com/library/acea6293-9c6f-4c5e-a9a3-998e755ba1fd), [hash_set::max_load_factor (STL/CLR)](https://msdn.microsoft.com/library/9aef46b1-e7c2-488c-a219-77c1c0de6dc4), and [hash_multiset::max_load_factor (STL/CLR)](https://msdn.microsoft.com/library/ca0a6e8e-b889-47e4-9edd-c5a321fdeb8f).  
+ For more information, see [hash\_map::max_load_factor (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#max_load_factor), [hash\_multimap::max_load_factor (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#max_load_factor), [hash\_set::max_load_factor (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#load_factor), and [hash\_multiset::max_load_factor (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#max_load_factor).  
   
  ]]></format>
         </remarks>
@@ -730,7 +749,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::max_load_factor (STL/CLR)](https://msdn.microsoft.com/library/7c0773c9-a918-4e61-ae95-e45148f1ff24), [hash_multimap::max_load_factor (STL/CLR)](https://msdn.microsoft.com/library/acea6293-9c6f-4c5e-a9a3-998e755ba1fd), [hash_set::max_load_factor (STL/CLR)](https://msdn.microsoft.com/library/9aef46b1-e7c2-488c-a219-77c1c0de6dc4), and [hash_multiset::max_load_factor (STL/CLR)](https://msdn.microsoft.com/library/ca0a6e8e-b889-47e4-9edd-c5a321fdeb8f).  
+ For more information, see [hash\_map::max_load_factor (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#max_load_factor), [hash\_multimap::max_load_factor (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#max_load_factor), [hash\_set::max_load_factor (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#load_factor), and [hash\_multiset::max_load_factor (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#max_load_factor).  
   
  ]]></format>
         </remarks>
@@ -762,7 +781,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::max_load_factor (STL/CLR)](https://msdn.microsoft.com/library/7c0773c9-a918-4e61-ae95-e45148f1ff24), [hash_multimap::max_load_factor (STL/CLR)](https://msdn.microsoft.com/library/acea6293-9c6f-4c5e-a9a3-998e755ba1fd), [hash_set::max_load_factor (STL/CLR)](https://msdn.microsoft.com/library/9aef46b1-e7c2-488c-a219-77c1c0de6dc4), and [hash_multiset::max_load_factor (STL/CLR)](https://msdn.microsoft.com/library/ca0a6e8e-b889-47e4-9edd-c5a321fdeb8f).  
+ For more information, see [hash\_map::max_load_factor (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#max_load_factor), [hash\_multimap::max_load_factor (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#max_load_factor), [hash\_set::max_load_factor (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#load_factor), and [hash\_multiset::max_load_factor (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#max_load_factor).  
   
  ]]></format>
         </remarks>
@@ -792,10 +811,10 @@
         <summary>Designates the beginning of the reversed controlled sequence.</summary>
         <returns>An iterator.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
+          <format type="text/markdown"><![CDATA[
+
 ## Remarks  
- For more information, see [hash_map::rbegin (STL/CLR)](https://msdn.microsoft.com/library/e3b6c4d5-9482-471e-b5fc-70331b082a9b), [hash_multimap::rbegin (STL/CLR)](https://msdn.microsoft.com/library/f5ce0614-3c73-4cec-9fa2-efadf0fd36c7), [hash_set::rbegin (STL/CLR)](https://msdn.microsoft.com/library/1f2ff4ed-8557-40cf-8e61-816563acc43e), and [hash_multiset::rbegin (STL/CLR)](https://msdn.microsoft.com/library/69a06d99-3262-495b-9956-5f155162da33).  
+ For more information, see [hash\_map::rbegin (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#rbegin), [hash\_multimap::rbegin (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#rbegin), [hash\_set::rbegin (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#rbegin), and [hash\_multiset::rbegin (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#rbegin).  
   
  ]]></format>
         </remarks>
@@ -827,7 +846,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::rehash (STL/CLR)](https://msdn.microsoft.com/library/e894157c-4e31-4fbf-8020-b90f236da3e7), [hash_multimap::rehash (STL/CLR)](https://msdn.microsoft.com/library/512830af-46c4-4a31-923d-b282f7898172), [hash_set::rehash (STL/CLR)](https://msdn.microsoft.com/library/f62bae81-4321-44e1-97d0-77174a13e0de), and [hash_multiset::rehash (STL/CLR)](https://msdn.microsoft.com/library/1208cffc-acee-4c75-87b5-ce9ec641c3b6).  
+ For more information, see [hash\_map::rehash (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#rehash), [hash\_multimap::rehash (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#rehash), [hash\_set::rehash (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#rehash), and [hash\_multiset::rehash (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#rehash).  
   
  ]]></format>
         </remarks>
@@ -857,10 +876,10 @@
         <summary>Designates the end of the reversed controlled sequence.</summary>
         <returns>An iterator.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
+          <format type="text/markdown"><![CDATA[
+
 ## Remarks  
- For more information, see [hash_map::rend (STL/CLR)](https://msdn.microsoft.com/library/87fb2a06-c92b-4d86-855d-22f5c04aabdb), [hash_multimap::rend (STL/CLR)](https://msdn.microsoft.com/library/7cbed963-7615-40bf-80f2-37b878a64453), [hash_set::rend (STL/CLR)](https://msdn.microsoft.com/library/12764bf1-ff3e-48db-a6ef-fe120187bc4e), and [hash_multiset::rend (STL/CLR)](https://msdn.microsoft.com/library/6d007ac9-18cc-4b51-8384-a4ff65d23e97).  
+ For more information, see [hash\_map::rend (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#rend), [hash\_multimap::rend (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#rend), [hash\_set::rend (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#rend), and [hash\_multiset::rend (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#rend).  
   
  ]]></format>
         </remarks>
@@ -890,7 +909,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::size (STL/CLR)](https://msdn.microsoft.com/library/5eb91502-1b11-4703-b473-eb609c181b74), [hash_multimap::size (STL/CLR)](https://msdn.microsoft.com/library/6937c980-5952-48bf-b411-81ab03b2f940), [hash_set::size (STL/CLR)](https://msdn.microsoft.com/library/e006590e-8710-4294-b3a3-dcded0668a24), and [hash_multiset::size (STL/CLR)](https://msdn.microsoft.com/library/45f1f35e-35c4-4e39-8485-0786c1de22e3).  
+ For more information, see [hash\_map::size (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#size), [hash\_multimap::size (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#size), [hash\_set::size (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#size), and [hash\_multiset::size (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#size).  
   
  ]]></format>
         </remarks>
@@ -922,7 +941,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::swap (STL/CLR)](https://msdn.microsoft.com/library/bc1349e0-9be2-4767-a87b-4834615cb52a), [hash_multimap::swap (STL/CLR)](https://msdn.microsoft.com/library/4baa60c2-865a-4e17-acd5-01b7c3c5cd44), [hash_set::swap (STL/CLR)](https://msdn.microsoft.com/library/6476e48f-4744-486d-b028-cf0a048acd4d), and [hash_multiset::swap (STL/CLR)](https://msdn.microsoft.com/library/b79372ab-ca51-494a-89cf-4e2da3ee3ff7).  
+ For more information, see [hash\_map::swap (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#swap), [hash\_multimap::swap (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#swap), [hash\_set::swap (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#swap), and [hash\_multiset::swap (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#swap).  
   
  ]]></format>
         </remarks>
@@ -954,10 +973,10 @@
         <summary>Finds the end of the range of elements that match a specified key.</summary>
         <returns>An iterator.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
+          <format type="text/markdown"><![CDATA[
+
 ## Remarks  
- For more information, see [hash_map::upper_bound (STL/CLR)](https://msdn.microsoft.com/library/f83e88b4-e15e-49d5-90e4-cf7360c27c30), [hash_multimap::upper_bound (STL/CLR)](https://msdn.microsoft.com/library/4fa58df6-63ec-411d-bcf9-301d3c88569a), [hash_set::upper_bound (STL/CLR)](https://msdn.microsoft.com/library/dc8815f1-8b45-4f3d-a51f-54050d434d8f), and [hash_multiset::upper_bound (STL/CLR)](https://msdn.microsoft.com/library/d5be0d79-ae60-42bb-8a53-051bc374407d).  
+ For more information, see [hash\_map::upper_bound (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#upper_bound), [hash\_multimap::upper_bound (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#upper_bound), [hash\_set::upper_bound (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#upper_bound), and [hash\_multiset::upper_bound (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#upper_bound).  
   
  ]]></format>
         </remarks>
@@ -987,7 +1006,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [hash_map::value_comp (STL/CLR)](https://msdn.microsoft.com/library/b11a2dee-07e8-450c-8f85-979c0a15ae64), [hash_multimap::value_comp (STL/CLR)](https://msdn.microsoft.com/library/ec6108b8-a529-499b-bc7f-dce41f5b6175), [hash_set::value_comp (STL/CLR)](https://msdn.microsoft.com/library/7ef381ea-438b-48ce-b0cb-96d844ea5df7), and [hash_multiset::value_comp (STL/CLR)](https://msdn.microsoft.com/library/c5b25ded-9b27-43d5-9821-3f6e17338919).  
+ For more information, see [hash\_map::value_comp (STL/CLR)](/cpp/dotnet/hash-map-stl-clr#value_comp), [hash\_multimap::value_comp (STL/CLR)](/cpp/dotnet/hash-multimap-stl-clr#value_comp), [hash\_set::value_comp (STL/CLR)](/cpp/dotnet/hash-set-stl-clr#value_comp), and [hash\_multiset::value_comp (STL/CLR)](/cpp/dotnet/hash-multiset-stl-clr#value_comp).  
   
  ]]></format>
         </remarks>

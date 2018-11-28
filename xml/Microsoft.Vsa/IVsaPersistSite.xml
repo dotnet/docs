@@ -1,4 +1,4 @@
-﻿<Type Name="IVsaPersistSite" FullName="Microsoft.Vsa.IVsaPersistSite">
+<Type Name="IVsaPersistSite" FullName="Microsoft.Vsa.IVsaPersistSite">
   <TypeSignature Language="C#" Value="public interface IVsaPersistSite" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVsaPersistSite" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Vsa.IVsaPersistSite" />
@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Manages project persistence and stores and retrieves code and other items using save and load operations implemented by the host.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,9 +47,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the code item to be loaded. This can be a null reference when loading the Project file.</param>
+        <summary>Gets the source string previously saved using the SaveElement method.</summary>
+        <returns>Returns the contents of the source-code element associated with the name parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +74,9 @@
         <Parameter Name="source" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">A name to associate with the specified source item. This can be a null reference when saving the Project file.</param>
+        <param name="source">The source string for the item.</param>
+        <summary>Saves an arbitrary source string with a given name parameter, which can then be used in a call to the LoadElement method to reload the string.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

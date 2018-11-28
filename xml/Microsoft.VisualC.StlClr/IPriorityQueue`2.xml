@@ -1,4 +1,4 @@
-﻿<Type Name="IPriorityQueue&lt;TValue,TCont&gt;" FullName="Microsoft.VisualC.StlClr.IPriorityQueue&lt;TValue,TCont&gt;">
+<Type Name="IPriorityQueue&lt;TValue,TCont&gt;" FullName="Microsoft.VisualC.StlClr.IPriorityQueue&lt;TValue,TCont&gt;">
   <TypeSignature Language="C#" Value="public interface IPriorityQueue&lt;TValue,TCont&gt; : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IPriorityQueue`2&lt;TValue, TCont&gt; implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.IPriorityQueue`2" />
@@ -107,9 +107,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Accesses the underlying container.</summary>
+        <returns>The underlying container. You can use it to bypass the restrictions that are imposed by the container wrapper.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information, see [priority\_queue::get\_container (STL/CLR)](/cpp/dotnet/priority-queue-stl-clr#get_container).
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="pop">

@@ -1,4 +1,4 @@
-﻿<Type Name="RegistryKey" FullName="Microsoft.Win32.RegistryKey">
+<Type Name="RegistryKey" FullName="Microsoft.Win32.RegistryKey">
   <TypeSignature Language="C#" Value="public sealed class RegistryKey : MarshalByRefObject, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RegistryKey extends System.MarshalByRefObject implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.RegistryKey" />
@@ -2744,8 +2744,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Performs a <see cref="M:Microsoft.Win32.RegistryKey.Close" /> on the current key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This method has the same effect as calling <xref:Microsoft.Win32.RegistryKey.Close%2A>.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToString">

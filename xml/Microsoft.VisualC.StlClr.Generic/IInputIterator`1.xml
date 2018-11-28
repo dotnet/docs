@@ -1,4 +1,4 @@
-﻿<Type Name="IInputIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;">
+<Type Name="IInputIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public interface IInputIterator&lt;TValue&gt; : Microsoft.VisualC.StlClr.Generic.IBaseIterator&lt;TValue&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IInputIterator`1&lt;TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IBaseIterator`1&lt;!TValue&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" />
@@ -78,8 +78,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a constant reference to the element that the iterator is currently pointing to.</summary>
+        <returns>A constant reference to the element that the iterator is currently pointing to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

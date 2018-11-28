@@ -1,4 +1,4 @@
-﻿<Type Name="IVsaItems" FullName="Microsoft.Vsa.IVsaItems">
+<Type Name="IVsaItems" FullName="Microsoft.Vsa.IVsaItems">
   <TypeSignature Language="C#" Value="public interface IVsaItems : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVsaItems implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Vsa.IVsaItems" />
@@ -27,7 +27,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an interface for a collection of <see cref="T:Microsoft.Vsa.IVsaItem" /> objects, which can be addressed either by name or by index.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,8 +48,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of items in the specified collection.</summary>
+        <value>Returns the integer value for the number of items in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,11 +75,11 @@
         <Parameter Name="itemFlag" Type="Microsoft.Vsa.VsaItemFlag" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="itemType">To be added.</param>
-        <param name="itemFlag">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name to associate with the new item. In cases where the item is a reference item type, the name parameter must be exactly the same as the name of the referenced assembly, as set with the <see cref="P:Microsoft.Vsa.IVsaReferenceItem.AssemblyName" /> property. In JScript, however, if you do not specify an AssemblyName, JScript will use the ItemName as the name of the assembly.</param>
+        <param name="itemType">The type of item created, as defined in the <see cref="T:Microsoft.Vsa.VsaItemType" /> enumeration.</param>
+        <param name="itemFlag">The optional flag to specify the initial content of a Code item.</param>
+        <summary>Creates a new instance of one of the <see cref="T:Microsoft.Vsa.IVsaItem" /> types, as defined in the <see cref="T:Microsoft.Vsa.VsaItemType" /> enumeration.</summary>
+        <returns>Returns a reference to the <see cref="T:Microsoft.Vsa.IVsaItem" /> object created.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,9 +103,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">A 0-based index of the retrievable items.</param>
+        <summary>Gets an item from the collection by its index value.</summary>
+        <value>Returns the item at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,9 +129,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="name">The name of the item to retrieve from the collection.</param>
+        <summary>Gets an item from the collection by its name.</summary>
+        <value>Returns the item specified by name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +155,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index value of the item to be removed.</param>
+        <summary>Removes an item from the collection, as specified by its index value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,8 +180,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the item to be removed from the collection.</param>
+        <summary>Removes an item from the collection, as specified by its name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

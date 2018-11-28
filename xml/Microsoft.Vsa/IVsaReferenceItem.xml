@@ -1,4 +1,4 @@
-﻿<Type Name="IVsaReferenceItem" FullName="Microsoft.Vsa.IVsaReferenceItem">
+<Type Name="IVsaReferenceItem" FullName="Microsoft.Vsa.IVsaReferenceItem">
   <TypeSignature Language="C#" Value="public interface IVsaReferenceItem : Microsoft.Vsa.IVsaItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVsaReferenceItem implements class Microsoft.Vsa.IVsaItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Vsa.IVsaReferenceItem" />
@@ -27,7 +27,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes a reference added to the script engine.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,8 +48,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the referenced assembly.</summary>
+        <value>Returns the string literal name of the referenced assembly.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

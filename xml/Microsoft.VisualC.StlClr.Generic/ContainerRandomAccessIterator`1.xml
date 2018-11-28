@@ -1,4 +1,4 @@
-﻿<Type Name="ContainerRandomAccessIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;">
+<Type Name="ContainerRandomAccessIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public class ContainerRandomAccessIterator&lt;TValue&gt; : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerRandomAccessIterator`1&lt;TValue&gt; extends System.Object implements class Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1&lt;!TValue&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1" />
@@ -315,8 +315,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the bias of the iterator. The bias is the offset of the iterator from element zero.</summary>
+        <returns>The bias of the iterator.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -338,8 +338,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a constant reference to the element that the iterator is currently pointing to.</summary>
+        <returns>A constant reference to the element that the iterator is currently pointing to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,8 +361,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the node, or element, that the iterator is pointing to.</summary>
+        <returns>The node that the iterator is pointing to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -384,8 +384,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a reference to the element that the iterator is currently pointing to.</summary>
+        <returns>A reference to the element that the iterator is currently pointing to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -595,11 +595,11 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
-        <param name="_Left">To be added.</param>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="">A reference to the current iterator.</param>
+        <param name="_Left">The number of elements to increment.</param>
+        <param name="_Right">The iterator to increment.</param>
+        <summary>Increments the iterator by the given number of elements. The integer parameter is specified on the left side of the addition operator.</summary>
+        <returns>An iterator.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

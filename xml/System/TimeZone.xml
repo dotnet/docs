@@ -405,7 +405,7 @@
       </Parameters>
       <Docs>
         <param name="time">A date and time.</param>
-        <param name="daylightTimes">To be added.</param>
+        <param name="daylightTimes">A daylight saving time period.</param>
         <summary>Returns a value indicating whether the specified date and time is within the specified daylight saving time period.</summary>
         <returns>
           <see langword="true" /> if <paramref name="time" /> is in <paramref name="daylightTimes" />; otherwise, <see langword="false" />.</returns>

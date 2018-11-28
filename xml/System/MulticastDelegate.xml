@@ -1,4 +1,4 @@
-﻿<Type Name="MulticastDelegate" FullName="System.MulticastDelegate">
+<Type Name="MulticastDelegate" FullName="System.MulticastDelegate">
   <TypeSignature Language="C#" Value="public abstract class MulticastDelegate : Delegate" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi abstract serializable beforefieldinit MulticastDelegate extends System.Delegate" />
   <TypeSignature Language="DocId" Value="T:System.MulticastDelegate" />
@@ -243,10 +243,26 @@
         <Parameter Name="args" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="args">The arguments to pass to the encapsulated method.</param>
+        <summary>Processes the full invocation list.</summary>
+        <returns>An array of type <see cref="T:System.Object" /> that contains the return value of the encapsulated method.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.MemberAccessException">
+          Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.
+
+          -or-
+
+          There is an attempt to invoke a method to which the caller does not have access (that is, a private method).
+        </exception>
+        <exception cref="T:System.ArgumentException">The number, order, or type of parameters is invalid.</exception>
+        <exception cref="T:System.Reflection.TargetException">
+          An encapsulated method is not static, and the target object is null.
+
+          -or-
+
+          There is an attempt to invoke a method on an object or class that does not support the method.
+        </exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">One of the encapsulated methods throws an exception.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">

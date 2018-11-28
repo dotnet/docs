@@ -1,4 +1,4 @@
-﻿<Type Name="IVsaItem" FullName="Microsoft.Vsa.IVsaItem">
+<Type Name="IVsaItem" FullName="Microsoft.Vsa.IVsaItem">
   <TypeSignature Language="C#" Value="public interface IVsaItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVsaItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Vsa.IVsaItem" />
@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an interface for all items added to the .NET script engine, including code items, reference items, and global items. It defines generic properties and methods that apply to all item types recognized by the engine.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,9 +47,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the option to retrieve.</param>
+        <summary>Gets implementation-specific options for a script engine.</summary>
+        <returns>Returns the value of the specified option.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +70,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a value indicating whether the current in-memory representation of the item differs from the persisted representation.</summary>
+        <value>Returns true if the item is dirty, and thus requires saving; returns false if the item is not dirty.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +92,8 @@
         <ReturnType>Microsoft.Vsa.VsaItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the specified object's type, as determined by the <see cref="M:Microsoft.Vsa.IVsaItems.CreateItem(System.String,Microsoft.Vsa.VsaItemType,Microsoft.Vsa.VsaItemFlag)" /> method.</summary>
+        <value>A type as enumerated by the <see cref="T:Microsoft.Vsa.VsaItemType" /> enumeration.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,8 +114,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Sets or gets the name of the item.</summary>
+        <value>Returns the string literal name of the item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,9 +140,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the option to set.</param>
+        <param name="value">A new value for the option.</param>
+        <summary>Sets implementation-specific options for a script engine.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

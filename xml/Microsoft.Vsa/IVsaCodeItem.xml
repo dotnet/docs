@@ -1,4 +1,4 @@
-﻿<Type Name="IVsaCodeItem" FullName="Microsoft.Vsa.IVsaCodeItem">
+<Type Name="IVsaCodeItem" FullName="Microsoft.Vsa.IVsaCodeItem">
   <TypeSignature Language="C#" Value="public interface IVsaCodeItem : Microsoft.Vsa.IVsaItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVsaCodeItem implements class Microsoft.Vsa.IVsaItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Vsa.IVsaCodeItem" />
@@ -27,8 +27,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a code item to be compiled by the script engine.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The specified code item can contain classes, modules, or other source text.
+
+No permissions are required for calling any members of the IVsaCodeItem interface.
+
+The script engine implements this interface in order to add code items.
+
+]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddEventSource">
@@ -52,10 +63,27 @@
         <Parameter Name="eventSourceType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="eventSourceName">To be added.</param>
-        <param name="eventSourceType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="eventSourceName">A programmatic name of the event source.</param>
+        <param name="eventSourceType">The type name of the event source.</param>
+        <summary>Adds an event source to the code item. The code item uses the event source to hook up an event to the named event source by calling the IVsaSite.GetEventSourceInstance method, which is implemented by the host.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The script engine uses information provided by the AddEventSource method to hook up events to the named event source. It obtains event sources by calling the IVsaSite.GetEventSourceInstance method, which is implemented by the host. The AddEventSource method creates a class that handles events raised by a host-provided object.
+
+> [!NOTE]
+> The JScript .NET script engine does not support this method. In cases where the JScript .NET engine must hook up an event, you must do so using a global item. Rather than event sources, the JScript .NET engine uses AppGlobal item types. For more information, see VsaItemType.
+
+
+Within the code item, you can access the event source object by name, and, once accessed, you can write event handlers against the object. The event source type is passed as a string rather than as a Type object to facilitate implementing event sources by unmanaged hosts.
+
+The compiler uses the eventSourceType parameter to bind to methods provided by the type. It is also used later when the script engine calls the IVsaSite.GetEventSourceInstance method to request an instance of the Type object.
+
+For more information about the mechanisms for hooking up events for the script engine, see the IVsaSite.GetEventSourceInstance method.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AppendSourceText">
@@ -78,9 +106,18 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="text">The text to be appended to the code item.</param>
+        <summary>Appends specified text to the end of the code item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Appended source text is not subjected to validation. For this reason, errors, if any, will surface on the next call to the IVsaEngine.Compile method.
+
+The appended source text is provided as a single string. Should the string require any formatting, you must provide this yourself.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CodeDOM">
@@ -100,9 +137,16 @@
         <ReturnType>System.CodeDom.CodeObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the code document object model (CodeDOM) represented in the code item.</summary>
+        <value>Returns the CodeDOM for the code item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The CodeDOM property is typically generated as part of the compilation step of the script engine, so it is not available until after a call to the IVsaEngine.Compile method. Some VSA implementations may be able to provide the CodeDOM dynamically, without the need for an explicit compilation step, but hosts cannot rely on this behavior. Some script engines, for example, the JScript .NET script engine, do not support this behavior.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveEventSource">
@@ -125,9 +169,16 @@
         <Parameter Name="eventSourceName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="eventSourceName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="eventSourceName">The programmatic name of the event source to be removed.</param>
+        <summary>Removes the specified event source from the code item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Removing an event source does not remove the underlying event handler from source text. Rather, events no longer raise notifications to the event handler. Therefore, you will get a compiler error if you delete an event source but leave the underlying function in the source code.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceText">
@@ -147,9 +198,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Sets or gets the text of a specified code item, including auto-generated code, if any.</summary>
+        <value>Returns the source text of the code item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+When you set this property, the text is not subjected to validation. For this reason, errors, if any, will surface on the next call to the IVsaEngine.Compile method.
+
+The SourceText property returns the source text in one large string, including formatting characters such as carriage returns.
+
+To get this property the engine must not be closed. To set this property the engine must not be closed, and the engine must not be running.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

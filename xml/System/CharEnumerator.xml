@@ -1,4 +1,4 @@
-﻿<Type Name="CharEnumerator" FullName="System.CharEnumerator">
+<Type Name="CharEnumerator" FullName="System.CharEnumerator">
   <TypeSignature Language="C#" Value="public sealed class CharEnumerator : ICloneable, System.Collections.Generic.IEnumerator&lt;char&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit CharEnumerator extends System.Object implements class System.Collections.Generic.IEnumerator`1&lt;char&gt;, class System.Collections.IEnumerator, class System.ICloneable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.CharEnumerator" />
@@ -434,8 +434,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.CharEnumerator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Call IDisposable.Dispose when you are finished using the <xref:System.CharEnumerator> class. The method leaves the <xref:System.CharEnumerator> class in an unusable state. After calling it, you must release all references to the <xref:System.CharEnumerator> class so the garbage collector can reclaim the memory that the <xref:System.CharEnumerator> class was occupying.
+
+For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).
+
+> [!NOTE]
+> Always call IDisposable.Dispose before you release your last reference to the <xref:System.CharEnumerator> class. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.CharEnumerator> object's <xref:System.Object.Finalize> method.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

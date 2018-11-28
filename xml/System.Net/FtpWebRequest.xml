@@ -31,7 +31,7 @@
   
 ## Remarks
 
->  [!IMPORTANT]
+> [!IMPORTANT]
 >  We don't recommend that you use the `FtpWebRequest` class for new development. For more information and alternatives to `FtpWebRequest`, see [WebRequest shouldn't be used](https://github.com/dotnet/platform-compat/blob/master/docs/DE0003.md) on GitHub.
 
  To obtain an instance of <xref:System.Net.FtpWebRequest>, use the <xref:System.Net.WebRequest.Create%2A> method. You can also use the <xref:System.Net.WebClient> class to upload and download information from an FTP server. Using either of these approaches, when you specify a network resource that uses the FTP scheme (for example, `"ftp://contoso.com"`) the <xref:System.Net.FtpWebRequest> class provides the ability to programmatically interact with FTP servers.  

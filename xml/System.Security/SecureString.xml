@@ -39,7 +39,7 @@
   
 ## Remarks  
 
->  [!IMPORTANT]
+> [!IMPORTANT]
 >  We don't recommend that you use the `SecureString` class for new development. For more information, see [SecureString shouldn't be used](https://github.com/dotnet/platform-compat/blob/master/docs/DE0001.md) on GitHub.
 
  <xref:System.Security.SecureString> is a string type that provides a measure of security. It tries to avoid storing potentially sensitive strings in process memory as plain text.  (For limitations, however, see the [How secure is SecureString?](#HowSecure) section.) The value of an instance of <xref:System.Security.SecureString> is automatically protected using a mechanism supported by the underlying platform when the instance is initialized or when the value is modified. Your application can render the instance immutable and prevent further modification by invoking the <xref:System.Security.SecureString.MakeReadOnly%2A> method.  

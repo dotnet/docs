@@ -45,7 +45,7 @@
 ## Remarks  
 The <xref:System.Collections.IDictionaryEnumerator.Entry%2A?displayProperty=nameWithType> method returns an instance of this type.  
 
->  [!IMPORTANT]
+> [!IMPORTANT]
 >  We don't recommend that you use the `DictionaryEntry` structure for new development. Instead, we recommend that you use a generic <xref:System.Collections.Generic.KeyValuePair%602> structure along with the <xref:System.Collections.Generic.Dictionary%602> class. For more information, see [Non-generic collections shouldn't be used](https://github.com/dotnet/platform-compat/blob/master/docs/DE0006.md) on GitHub.
 
  The C# [foreach](~/docs/csharp/language-reference/keywords/foreach-in.md) statement and the Visual Basic [For Each](~/docs/visual-basic/language-reference/statements/for-each-next-statement.md) statement require the type of each element in the collection. Since each element of the <xref:System.Collections.IDictionary> is a key/value pair, the element type is not the type of the key or the type of the value. Instead, the element type is <xref:System.Collections.DictionaryEntry>. For example:  

@@ -59,7 +59,7 @@
 
 This class implements a queue as a circular array. Objects stored in a <xref:System.Collections.Queue> are inserted at one end and removed from the other.  
 
->  [!IMPORTANT]
+> [!IMPORTANT]
 >  We don't recommend that you use the `Queue` class for new development. Instead, we recommend that you use the generic <xref:System.Collections.Generic.Queue%601> class. For more information, see [Non-generic collections shouldn't be used](https://github.com/dotnet/platform-compat/blob/master/docs/DE0006.md) on GitHub.
 
  Queues and stacks are useful when you need temporary storage for information; that is, when you might want to discard an element after retrieving its value. Use <xref:System.Collections.Queue> if you need to access the information in the same order that it is stored in the collection. Use <xref:System.Collections.Stack> if you need to access the information in reverse order. Use <xref:System.Collections.Concurrent.ConcurrentQueue%601> or <xref:System.Collections.Concurrent.ConcurrentStack%601> if you need to access the collection from multiple threads concurrently.  

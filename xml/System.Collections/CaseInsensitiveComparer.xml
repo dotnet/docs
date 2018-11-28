@@ -47,7 +47,7 @@
 
 <xref:System.Collections.CaseInsensitiveComparer> implements the <xref:System.Collections.IComparer> interface supporting case-insensitive comparisons on strings, just as <xref:System.Collections.CaseInsensitiveHashCodeProvider> implements the <xref:System.Collections.IHashCodeProvider> interface supporting case-insensitive comparisons on strings.  
 
->  [!IMPORTANT]
+> [!IMPORTANT]
 >  We don't recommend that you use the `CaseInsensitiveComparer` class for new development. Instead, we recommend that you use the <xref:System.StringComparer?displayProperty=nameWithType> object returned by the <xref:System.StringComparer.CurrentCultureIgnoreCase?displayProperty=nameWithType>,  <xref:System.StringComparer.InvariantCultureIgnoreCase?displayProperty=nameWithType>, or <xref:System.StringComparer.OrdinalIgnoreCase?displayProperty=nameWithType> property.
 
 The <xref:System.Collections.Comparer> class is the default implementation of the <xref:System.Collections.IComparer> interface and performs case-sensitive string comparisons.  

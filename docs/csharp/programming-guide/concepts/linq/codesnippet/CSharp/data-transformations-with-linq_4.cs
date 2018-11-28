@@ -8,7 +8,7 @@
             // Query.
             IEnumerable<string> query =
                 from rad in radii
-                select String.Format("Area = {0}", (rad * rad) * 3.14);
+                select $"Area = {rad * rad * Math.PI:F2}";
 
             // Query execution. 
             foreach (string s in query)
@@ -21,6 +21,6 @@
     }
     /* Output:
         Area = 3.14
-        Area = 12.56
-        Area = 28.26
+        Area = 12.57
+        Area = 28.27
     */

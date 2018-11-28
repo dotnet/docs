@@ -48,7 +48,7 @@ namespace DotNetEvents
             if (handler != null)
             {
                 // Format the string to send inside the CustomEventArgs parameter
-                e.Message += String.Format(" at {0}", DateTime.Now.ToString());
+                e.Message += $" at {DateTime.Now}";
 
                 // Use the () operator to raise the event.
                 handler(this, e);

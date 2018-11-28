@@ -19,7 +19,7 @@
             // Override the ToString method:
             public override string ToString()
             {
-                return (String.Format("({0},{1})", x, y));
+                return $"({x},{y})";
             }
         }
 

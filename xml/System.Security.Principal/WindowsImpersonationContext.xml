@@ -1,4 +1,4 @@
-﻿<Type Name="WindowsImpersonationContext" FullName="System.Security.Principal.WindowsImpersonationContext">
+<Type Name="WindowsImpersonationContext" FullName="System.Security.Principal.WindowsImpersonationContext">
   <TypeSignature Language="C#" Value="public class WindowsImpersonationContext : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WindowsImpersonationContext extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.WindowsImpersonationContext" />
@@ -99,7 +99,8 @@
 ## Remarks  
  Call <xref:System.Security.Principal.WindowsImpersonationContext.Dispose%2A> when you are finished using the <xref:System.Security.Principal.WindowsImpersonationContext>. The <xref:System.Security.Principal.WindowsImpersonationContext.Dispose%2A> method leaves the <xref:System.Security.Principal.WindowsImpersonationContext> in an unusable state. After calling <xref:System.Security.Principal.WindowsImpersonationContext.Dispose%2A>, you must release all references to the <xref:System.Security.Principal.WindowsImpersonationContext> so the garbage collector can reclaim the memory that the <xref:System.Security.Principal.WindowsImpersonationContext> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- **Note:** Always call <xref:System.Security.Principal.WindowsImpersonationContext.Dispose%2A> before you release your last reference to the <xref:System.Security.Principal.WindowsImpersonationContext>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Security.Principal.WindowsImpersonationContext> object's **Finalize** method.  
+ > [!NOTE] 
+ > Always call <xref:System.Security.Principal.WindowsImpersonationContext.Dispose%2A> before you release your last reference to the <xref:System.Security.Principal.WindowsImpersonationContext>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Security.Principal.WindowsImpersonationContext> object's `Finalize` method.  
   
  ]]></format>
         </remarks>
@@ -172,8 +173,21 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases the resources held by the current instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+
+
+> [!NOTE]
+> This member is removed in the .NET Framework version 2.0 and subsequent versions.
+
+
+Application code does not call this method; it is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled. For more information, see <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> and <xref:System.Object.Finalize>. This method overrides <xref:System.Object.Finalize>.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Undo">

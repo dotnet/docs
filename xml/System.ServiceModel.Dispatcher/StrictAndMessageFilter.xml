@@ -113,7 +113,7 @@
       <Docs>
         <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to test.</param>
         <summary>Tests whether a message matches both of the <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> objects specified in this filter.</summary>
-        <returns>**true** if the message contained in the buffer matches both message filters; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if the message contained in the buffer matches both message filters; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,7 +138,7 @@
       <Docs>
         <param name="buffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> to test.</param>
         <summary>Tests whether a buffered message matches both of the <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> objects specified in this filter.</summary>
-        <returns>**true** if the message contained in the buffer matches both message filters; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if the message contained in the buffer matches both message filters; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

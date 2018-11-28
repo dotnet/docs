@@ -151,8 +151,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Sets the state of the event to nonsignaled, which causes threads to block.</summary>
+        <returns><see langword="true" /> if the operation succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,9 +179,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Sets the state of the event to signaled, which allows one or more waiting threads to proceed.</summary>
+        <returns><see langword="true" /> if the operation succeeds; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Calling the Set method leaves the wait handle in a signaled state until the <xref:System.Threading.ManualResetEvent.Reset> method is called.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

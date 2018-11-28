@@ -294,9 +294,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets an implementation of the <see cref="T:System.Runtime.Serialization.DataContractResolver" /> that is used to dynamically map types during serialization and deserialization processes.</summary>
-        <value>Type:  <see cref="T:System.Runtime.Serialization.DataContractResolver" />  
-  
- A class that maps an <see langword="xsi:type" /> to a known data contract type.</value>
+        <value>A class that maps an <see langword="xsi:type" /> to a known data contract type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

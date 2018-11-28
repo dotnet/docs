@@ -345,9 +345,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether loading must be complete to display the design-time markup.</summary>
+        <value><see langword="true" /> if the design-time loading must be complete before the design-time markup will be displayed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The `DesignTimeHtmlRequiresLoadComplete` property returns `true` if the <xref:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSource> property is non-empty.
+
+]]></format>
+        </remarks>
+        <altmember cref="P:System.Web.UI.Design.WebControls.BaseDataList" />
+        <altmember cref="P:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -1167,8 +1176,8 @@
         <ReturnType>System.ComponentModel.Design.DesignerVerbCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of verbs available to this designer.</summary>
+        <value>A collection that contains the verbs available to the designer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

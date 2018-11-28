@@ -35,7 +35,7 @@
         <Parameter Name="control" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="control">To be added.</param>
+        <param name="control">The data-bound control that will contain the <see cref="T:System.Web.DynamicData.DynamicField" /> objects.</param>
         <summary>Automatically generates <see cref="T:System.Web.DynamicData.DynamicField" /> objects based on metadata information for the table.</summary>
         <returns>A collection of <see cref="T:System.Web.DynamicData.DynamicField" /> objects.</returns>
         <remarks>To be added.</remarks>

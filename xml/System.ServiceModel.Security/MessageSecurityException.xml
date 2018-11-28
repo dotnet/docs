@@ -1,4 +1,4 @@
-﻿<Type Name="MessageSecurityException" FullName="System.ServiceModel.Security.MessageSecurityException">
+<Type Name="MessageSecurityException" FullName="System.ServiceModel.Security.MessageSecurityException">
   <TypeSignature Language="C#" Value="public class MessageSecurityException : System.ServiceModel.CommunicationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MessageSecurityException extends System.ServiceModel.CommunicationException" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.MessageSecurityException" />
@@ -214,11 +214,20 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
         <param name="ctx">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+GetObjectData sets a <xref:System.Runtime.Serialization.SerializationInfo> with all the exception object data targeted for serialization. During deserialization, the exception is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> transmitted over the stream.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="info" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

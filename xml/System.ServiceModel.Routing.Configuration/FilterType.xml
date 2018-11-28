@@ -101,7 +101,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Use <see cref="T:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter" /> with <see cref="P:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.IncludeHostNameInComparison" /> set to **false** to filter on the address.</summary>
+        <summary>Use <see cref="T:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter" /> with <see cref="P:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.IncludeHostNameInComparison" /> set to <see langword="false" /> to filter on the address.</summary>
       </Docs>
     </Member>
     <Member MemberName="EndpointName">
@@ -161,7 +161,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Use <see cref="T:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter" /> with <see cref="P:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter.IncludeHostNameInComparison" /> set to **false** to filter on the address using longest prefix matching.</summary>
+        <summary>Use <see cref="T:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter" /> with <see cref="P:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter.IncludeHostNameInComparison" /> set to <see langword="false" /> to filter on the address using longest prefix matching.</summary>
       </Docs>
     </Member>
     <Member MemberName="XPath">

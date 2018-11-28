@@ -791,13 +791,14 @@
         <param name="argument">To be added.</param>
         <summary>Raises events for the <see cref="T:System.Web.UI.MobileControls.Command" /> control when it posts back to the server. For a description of this member, see <see cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
+          <format type="text/markdown"><![CDATA[
+
 ## Remarks  
  The <xref:System.Web.UI.MobileControls.Command.RaisePostBackEvent%2A> method is used internally by the <xref:System.Web.UI.MobileControls.Command> control when it is clicked to raise a <xref:System.Web.UI.MobileControls.Command.Click> event.  
-  
- ]]></format>
+
+]]></format>
         </remarks>
+        <forInternalUseOnly />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/02bb4d30(v=vs.85)">Introduction to the Command Control</related>
       </Docs>
     </Member>

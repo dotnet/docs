@@ -316,8 +316,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.Threading.AsyncFlowControl" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This method calls the <xref:System.Threading.AsyncFlowControl.Undo> method to restore the associated <xref:System.Threading.ExecutionContext> to its previous state.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Undo">

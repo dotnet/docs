@@ -160,7 +160,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether messages should be processed.</summary>
-        <value>**true** if messages should be marshaled; otherwise, **false**. The default value is **true**.</value>
+        <value><see langword="true" /> if messages should be marshaled; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

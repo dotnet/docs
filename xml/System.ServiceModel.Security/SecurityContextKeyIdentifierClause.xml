@@ -143,7 +143,7 @@
       <Docs>
         <param name="contextId">The context ID part of the identifier clause.</param>
         <param name="generation">The generation part of the identifier clause.</param>
-        <param name="derivationNonce">To be added.</param>
+        <param name="derivationNonce">The nonce ("number used once") used to derive the token.</param>
         <param name="derivationLength">The length of the key being derived.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SecurityContextKeyIdentifierClause" /> class with the specified values.</summary>
         <remarks>

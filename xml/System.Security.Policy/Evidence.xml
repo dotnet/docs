@@ -1,4 +1,4 @@
-﻿<Type Name="Evidence" FullName="System.Security.Policy.Evidence">
+<Type Name="Evidence" FullName="System.Security.Policy.Evidence">
   <TypeSignature Language="C#" Value="public sealed class Evidence : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit Evidence extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.Evidence" />
@@ -704,10 +704,41 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The <see cref="T:System.Security.Policy.Evidence" /> object to compare with the current <see cref="T:System.Security.Policy.Evidence" />.</param>
+        <summary>Determines whether the specified <see cref="T:System.Security.Policy.Evidence" /> object is equal to the current <see cref="T:System.Security.Policy.Evidence" />.</summary>
+        <returns>true if the specified <see cref="T:System.Security.Policy.Evidence" /> object is equal to the current <see cref="T:System.Security.Policy.Evidence" />; otherwise, false.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information, see <xref:System.Object.Equals%2A>.
+
+## Examples  
+The following code example shows the use of the Equals method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.
+
+```vb
+Console.WriteLine(ControlChars.Lf & "Make a copy of the current evidence.")
+Dim evidenceCopy As New Evidence(myEvidence)
+Console.WriteLine(("Count of new evidence items = " & evidenceCopy.Count.ToString()))
+Console.WriteLine(("Does the copy equal the current evidence? " & myEvidence.Equals(evidenceCopy)))
+```
+
+```csharp
+Console.WriteLine("\nMake a copy of the current evidence.");
+Evidence evidenceCopy = new Evidence(myEvidence);
+Console.WriteLine("Count of new evidence items = " + evidenceCopy.Count);
+Console.WriteLine("Does the copy equal the current evidence? " + myEvidence.Equals(evidenceCopy));
+```
+
+```cpp
+Console::WriteLine( "\nMake a copy of the current evidence." );
+Evidence^ evidenceCopy = gcnew Evidence( myEvidence );
+Console::WriteLine( "Count of new evidence items = {0}", evidenceCopy->Count );
+Console::WriteLine( "Does the copy equal the current evidence? {0}", myEvidence->Equals( evidenceCopy ) );
+```
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAssemblyEnumerator">
@@ -875,9 +906,34 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets a hash code for the <see cref="T:System.Security.Policy.Evidence" /> object that is suitable for use in hashing algorithms and data structures such as a hash table.</summary>
+        <returns>A hash code for the current <see cref="T:System.Security.Policy.Evidence" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The hash code for two instances of the same evidence might be different, Therefore, hash codes should not be used to compare two <xref:System.Security.Policy.Evidence> objects.
+
+## Examples  
+The following code example shows the use of the GetHashCode method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.
+
+```vb
+Console.WriteLine(ControlChars.Lf & "Get the hashcode for the evidence.")
+Console.WriteLine(("HashCode = " & myEvidence.GetHashCode().ToString()))
+```
+
+```csharp
+Console.WriteLine("\nGet the hashcode for the evidence.");
+Console.WriteLine("HashCode = " + myEvidence.GetHashCode().ToString());
+```
+
+```cpp
+Console::WriteLine( "\nGet the hashcode for the evidence." );
+Console::WriteLine( "HashCode = {0}", myEvidence->GetHashCode() );
+```
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHostEnumerator">

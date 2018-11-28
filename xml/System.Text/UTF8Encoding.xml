@@ -623,9 +623,9 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="s">The character string to encode.</param>
+        <summary>Encodes the characters in a specified <see cref="T:System.String" /> object into a sequence of bytes.</summary>
+        <returns>A byte array that contains the encoded characters in the string specified by the s parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -40,7 +40,8 @@
   
  Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. The default value is `true`.  
   
- **Important** To create an image map using the previously described <xref:System.Web.UI.DataVisualization.Charting.MapArea> objects, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag>. It is possible to create an image map when using binary streaming, but another technique must be used.  
+ > [!IMPORTANT] 
+ > To create an image map using the previously described <xref:System.Web.UI.DataVisualization.Charting.MapArea> objects, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag>. It is possible to create an image map when using binary streaming, but another technique must be used.  
   
  For custom <xref:System.Web.UI.DataVisualization.Charting.MapArea> objects, the <xref:System.Web.UI.DataVisualization.Charting.MapArea.Shape%2A> property determines the shape, and the <xref:System.Web.UI.DataVisualization.Charting.MapArea.Coordinates%2A> property determines the location of the map area.  
   
@@ -410,7 +411,8 @@
   
  Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. The default value is `true`.  
   
- **Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag>. It is possible to create an image map when using binary streaming, but another technique must be used.  
+ > [!IMPORTANT] 
+ > To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag>. It is possible to create an image map when using binary streaming, but another technique must be used.  
   
  Special keywords can be used when you set this property. Each keyword will be replaced with some type of data from the applicable chart element. Refer to the following table for a list of all available keywords:  
   
@@ -603,7 +605,8 @@
   
  Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. The default value is `true`.  
   
- **Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag>. It is possible to create an image map when using binary streaming, but another technique must be used.  
+ > [!IMPORTANT] 
+ > To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag>. It is possible to create an image map when using binary streaming, but another technique must be used.  
   
  This property allows you to set special keywords to display different types of chart-related data.  
   
@@ -667,7 +670,8 @@
   
  Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. The default value is `true`.  
   
- **Important** To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag>. It is possible to create an image map when using binary streaming, but another technique must be used.  
+ > [!IMPORTANT] 
+ > To create an image map in this manner, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag>. It is possible to create an image map when using binary streaming, but another technique must be used.  
   
  Attributes of the map area(s), such as TARGET=-Blank, can be specified by using the <xref:System.Web.UI.DataVisualization.Charting.MapArea.MapAreaAttributes%2A> property.  
   

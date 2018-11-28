@@ -5256,7 +5256,7 @@ In .NET Core and in the .NET Framework 4.0 and later versions, when you instanti
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="startIndex">To be added.</param>
+        <param name="startIndex">The zero-based position in this instance where removal begins.</param>
         <param name="length">The number of characters to remove.</param>
         <summary>Removes the specified range of characters from this instance.</summary>
         <returns>A reference to this instance after the excise operation has completed.</returns>

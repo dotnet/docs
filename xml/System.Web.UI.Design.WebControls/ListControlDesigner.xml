@@ -199,8 +199,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the data member for the control.</summary>
+        <value>The <see cref="P:System.Web.UI.WebControls.ListControl.DataMember" /> property of the list control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,8 +220,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the data source property of the control.</summary>
+        <value>The <see cref="P:System.Web.UI.WebControls.ListControl.DataSource" /> property of the list control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -482,10 +482,17 @@
         <Parameter Name="ce" Type="System.ComponentModel.Design.ComponentChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="ce">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="source">The source of the event.</param>
+        <param name="ce">The event data.</param>
+        <summary>Raises the ComponentChanged event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Handles changes made to the component. This includes changes made in the property grid.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="OnDataSourceChanged">

@@ -32,7 +32,8 @@
   
  A client-side image map will only be created at run time if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart> object is `true`. This is the default.  
   
- **Important** To create an image map using the previously described <xref:System.Web.UI.DataVisualization.Charting.MapArea> objects, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag>. It is possible to create an image map when using binary streaming, but a special technique must be used.  
+ > [!IMPORTANT] 
+ > To create an image map using the previously described <xref:System.Web.UI.DataVisualization.Charting.MapArea> objects, the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object must be set to <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag>. It is possible to create an image map when using binary streaming, but a special technique must be used.  
   
  ]]></format>
     </remarks>

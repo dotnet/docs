@@ -1,4 +1,4 @@
-﻿<Type Name="Binding" FullName="System.Web.Services.Description.Binding">
+<Type Name="Binding" FullName="System.Web.Services.Description.Binding">
   <TypeSignature Language="C#" Value="public sealed class Binding : System.Web.Services.Description.NamedItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Binding extends System.Web.Services.Description.NamedItem" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Binding" />
@@ -124,8 +124,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a string value containing the name of the <see cref="T:System.Web.Services.Description.Binding" />.</summary>
+        <value>The name of the <see cref="T:System.Web.Services.Description.Binding" />. Returns an empty string ("") if a name has not been assigned.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

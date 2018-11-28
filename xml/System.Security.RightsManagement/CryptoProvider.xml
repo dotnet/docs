@@ -140,12 +140,12 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the user has rights to decrypt.</summary>
-        <value>**true** if the <see cref="T:System.Security.RightsManagement.UseLicense" /> grants the user rights to decrypt; otherwise, **false**.</value>
+        <value><see langword="true" /> if the <see cref="T:System.Security.RightsManagement.UseLicense" /> grants the user rights to decrypt; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Security.RightsManagement.CryptoProvider.CanDecrypt%2A> returns **true** if the <xref:System.Security.RightsManagement.UseLicense> bound to this <xref:System.Security.RightsManagement.CryptoProvider> grants the user read access rights such as View, Edit, Print, or Owner.  
+ <xref:System.Security.RightsManagement.CryptoProvider.CanDecrypt%2A> returns `true` if the <xref:System.Security.RightsManagement.UseLicense> bound to this <xref:System.Security.RightsManagement.CryptoProvider> grants the user read access rights such as View, Edit, Print, or Owner.  
   
    
   
@@ -179,12 +179,12 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the user has rights to encrypt.</summary>
-        <value>**true** if the <see cref="T:System.Security.RightsManagement.UseLicense" /> grants the user rights to encrypt; otherwise, **false**.</value>
+        <value><see langword="true" /> if the <see cref="T:System.Security.RightsManagement.UseLicense" /> grants the user rights to encrypt; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Security.RightsManagement.CryptoProvider.CanDecrypt%2A> returns **true** if the <xref:System.Security.RightsManagement.UseLicense> bound to this <xref:System.Security.RightsManagement.CryptoProvider> grants the user write access rights such as Edit or Owner.  
+ <xref:System.Security.RightsManagement.CryptoProvider.CanDecrypt%2A> returns `true` if the <xref:System.Security.RightsManagement.UseLicense> bound to this <xref:System.Security.RightsManagement.CryptoProvider> grants the user write access rights such as Edit or Owner.  
   
  ]]></format>
         </remarks>
@@ -210,16 +210,16 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> and <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" /> can accept buffers that are different block sizes in length.</summary>
-        <value>**true** if the buffer passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> can be a different length from the buffer passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" />; otherwise, **false** if the buffers passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> and <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" /> must be the exact same length.  For AES the default is **true**.</value>
+        <value><see langword="true" /> if the buffer passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> can be a different length from the buffer passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" />; otherwise, <see langword="false" /> if the buffers passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> and <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" /> must be the exact same length.  For AES the default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The `clearText` and `cipherText` buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Encrypt%2A> and <xref:System.Security.RightsManagement.CryptoProvider.Decrypt%2A> must be n*<xref:System.Security.RightsManagement.CryptoProvider.BlockSize%2A> bytes in length, where 'n' is an integer greater than or equal to 1.  
   
- If <xref:System.Security.RightsManagement.CryptoProvider.CanMergeBlocks%2A> is **false**, buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Encrypt%2A> must be the same length as the buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Decrypt%2A>.  
+ If <xref:System.Security.RightsManagement.CryptoProvider.CanMergeBlocks%2A> is `false`, buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Encrypt%2A> must be the same length as the buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Decrypt%2A>.  
   
- If <xref:System.Security.RightsManagement.CryptoProvider.CanMergeBlocks%2A> is **true**, buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Encrypt%2A> can be a different length from the buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Decrypt%2A> (all buffer sizes must still always be a multiple of <xref:System.Security.RightsManagement.CryptoProvider.BlockSize%2A> bytes in length).  
+ If <xref:System.Security.RightsManagement.CryptoProvider.CanMergeBlocks%2A> is `true`, buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Encrypt%2A> can be a different length from the buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Decrypt%2A> (all buffer sizes must still always be a multiple of <xref:System.Security.RightsManagement.CryptoProvider.BlockSize%2A> bytes in length).  
   
  ]]></format>
         </remarks>
@@ -301,7 +301,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Security.RightsManagement.CryptoProvider.Dispose%2A> performs <xref:System.Security.RightsManagement.CryptoProvider.Dispose%2A>(**true**).  
+ <xref:System.Security.RightsManagement.CryptoProvider.Dispose%2A> performs <xref:System.Security.RightsManagement.CryptoProvider.Dispose%2A>(`true`).  
   
  Call <xref:System.Security.RightsManagement.CryptoProvider.Dispose%2A> when you are finished using the <xref:System.Security.RightsManagement.CryptoProvider>. The <xref:System.Security.RightsManagement.CryptoProvider.Dispose%2A> method leaves the <xref:System.Security.RightsManagement.CryptoProvider> in an unusable state. After calling <xref:System.Security.RightsManagement.CryptoProvider.Dispose%2A>, you must release all references to the <xref:System.Security.RightsManagement.CryptoProvider> so the garbage collector can reclaim the memory that the <xref:System.Security.RightsManagement.CryptoProvider> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
@@ -424,7 +424,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Security.RightsManagement.CryptoProvider.Finalize%2A> performs <xref:System.Security.RightsManagement.CryptoProvider.Dispose%2A>(**false**).  
+ <xref:System.Security.RightsManagement.CryptoProvider.Finalize%2A> performs <xref:System.Security.RightsManagement.CryptoProvider.Dispose%2A>(`false`).  
   
  This method overrides  <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
   

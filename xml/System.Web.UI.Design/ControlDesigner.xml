@@ -1706,8 +1706,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Called when the control designer is attached to a Behavior object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+
+> [!NOTE]
+> The OnBehaviorAttached method is obsolete. Use the <xref:System.Web.UI.Design.IControlDesignerTag.SetAttribute%2A> and <xref:System.Web.UI.Design.IControlDesignerTag.GetAttribute%2A> methods on the <xref:System.Web.UI.Design.ControlDesigner.Tag> property for equivalent control designer functionality.
+
+]]></format>
+        </remarks>
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="M:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes" />
+        <altmember cref="M:System.Web.UI.Design.HtmlControlDesigner.OnBehaviorAttached" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.Tag" />
+        <altmember cref="M:System.Web.UI.Design.IControlDesignerTag.SetAttribute(System.String,System.String)" />
+        <altmember cref="M:System.Web.UI.Design.IControlDesignerTag.GetAttribute(System.String)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnBindingsCollectionChanged">

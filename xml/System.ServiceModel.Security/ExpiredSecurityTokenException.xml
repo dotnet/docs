@@ -1,4 +1,4 @@
-﻿<Type Name="ExpiredSecurityTokenException" FullName="System.ServiceModel.Security.ExpiredSecurityTokenException">
+<Type Name="ExpiredSecurityTokenException" FullName="System.ServiceModel.Security.ExpiredSecurityTokenException">
   <TypeSignature Language="C#" Value="public class ExpiredSecurityTokenException : System.ServiceModel.Security.MessageSecurityException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ExpiredSecurityTokenException extends System.ServiceModel.Security.MessageSecurityException" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.ExpiredSecurityTokenException" />
@@ -166,9 +166,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> for the exception.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> for the exception.</param>
+        <summary>Sets the SerializationInfo with information about the exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

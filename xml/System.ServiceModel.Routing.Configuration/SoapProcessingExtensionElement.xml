@@ -112,7 +112,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether messages should be marshaled between SOAP message versions.</summary>
-        <value>**true** if messages should be marshaled; otherwise, **false**. The default is **true**.</value>
+        <value><see langword="true" /> if messages should be marshaled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

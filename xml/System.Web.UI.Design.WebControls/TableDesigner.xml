@@ -1,4 +1,4 @@
-﻿<Type Name="TableDesigner" FullName="System.Web.UI.Design.WebControls.TableDesigner">
+<Type Name="TableDesigner" FullName="System.Web.UI.Design.WebControls.TableDesigner">
   <TypeSignature Language="C#" Value="public class TableDesigner : System.Web.UI.Design.ControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableDesigner extends System.Web.UI.Design.ControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.TableDesigner" />
@@ -121,8 +121,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This member overrides <see cref="M:System.Web.UI.Design.ControlDesigner.GetPersistInnerHtml" />.</summary>
+        <returns>The persistable inner HTML markup of the control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -2083,7 +2083,10 @@ if( TreeView1.Nodes[0].Expanded == true ) { //some work here}
   
  </description></item><item><term><see langword="_top" /></term><description> Renders the content in the full window without frames.  
   
- </description></item></list><block subset="none" type="note"><para>  
+ </description></item></list>
+ 
+ <block subset="none" type="note">
+ <para>  
  Check your browser documentation to determine whether the <see langword="_search" /> value is supported. For example, Microsoft Internet Explorer 5.0 and later support the <see langword="_search" /> target value.  
   
 </para></block>  

@@ -656,7 +656,8 @@ tw.WriteDocType(name, pubid, sysid, subset);
         <summary>Gets or sets which character to use for indenting when <see cref="P:System.Xml.XmlTextWriter.Formatting" /> is set to <see langword="Formatting.Indented" />.</summary>
         <value>The character to use for indenting. The default is space.  
   
- <block subset="none" type="note"><para>  
+ <block subset="none" type="note">
+ <para>  
  The <see langword="XmlTextWriter" /> allows you to set this property to any character. To ensure valid XML, you must specify a valid white space character, 0x9, 0x10, 0x13 or 0x20.  
   
 </para></block></value>

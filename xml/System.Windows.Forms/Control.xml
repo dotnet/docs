@@ -18250,7 +18250,8 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <value>
           <see langword="true" /> if the user can give the focus to the control using the TAB key; otherwise, <see langword="false" />. The default is <see langword="true" />.  
   
- <block subset="none" type="note"><para>  
+ <block subset="none" type="note">
+ <para>  
  This property will always return <see langword="true" /> for an instance of the <see cref="T:System.Windows.Forms.Form" /> class.  
   
 </para></block></value>

@@ -189,7 +189,8 @@
         <summary>Gets or sets the path to the XML file that contains advertisement data. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The path to the XML file containing the properties of the advertisements to render in the <see langword="AdRotator" /> control.  
   
- <block subset="none" type="note"><para>  
+ <block subset="none" type="note">
+ <para>  
  For security purposes, XML files should be placed in the App_Data folder, which is configured to not allow users direct access to XML files.  
   
 </para></block></value>

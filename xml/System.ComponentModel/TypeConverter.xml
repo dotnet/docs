@@ -92,7 +92,8 @@
   
 -   To convert types that support standard values, override the <see cref="M:System.ComponentModel.TypeConverter.GetStandardValues" />, <see cref="M:System.ComponentModel.TypeConverter.GetStandardValuesExclusive" />, <see cref="M:System.ComponentModel.TypeConverter.GetStandardValuesSupported" /> and <see cref="M:System.ComponentModel.TypeConverter.IsValid(System.Object)" /> methods.  
   
- <block subset="none" type="note"><para>  
+ <block subset="none" type="note">
+ <para>  
  Your derived type might be marked as <see langword="internal" /> or <see langword="private" />, but an instance of your type can be created with the <see cref="T:System.ComponentModel.TypeDescriptor" /> class. Do not write insecure code by assuming the caller is trusted. Assume instead that callers might create instances of your type in partial trust.  
   
 </para></block>  

@@ -963,7 +963,8 @@ d.</elem>
         <summary>Gets or sets the markup representing only the child nodes of this node.</summary>
         <value>The markup of the child nodes of this node.  
   
- <block subset="none" type="note"><para><see langword="InnerXml" /> does not return default attributes.  
+ <block subset="none" type="note">
+ <para><see langword="InnerXml" /> does not return default attributes.  
   
 </para></block></value>
         <remarks>
@@ -1802,7 +1803,8 @@ d.</elem>
         <summary>Gets the markup containing this node and all its child nodes.</summary>
         <value>The markup containing this node and all its child nodes.  
   
- <block subset="none" type="note"><para><see langword="OuterXml" /> does not return default attributes.  
+ <block subset="none" type="note">
+ <para><see langword="OuterXml" /> does not return default attributes.  
   
 </para></block></value>
         <remarks>

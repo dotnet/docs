@@ -2533,7 +2533,8 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
         <summary>Gets or sets the value of the <see langword="Expect" /> HTTP header.</summary>
         <value>The contents of the <see langword="Expect" /> HTTP header. The default value is <see langword="null" />.  
   
- <block subset="none" type="note"><para>  
+ <block subset="none" type="note">
+ <para>  
  The value for this property is stored in <see cref="T:System.Net.WebHeaderCollection" />. If WebHeaderCollection is set, the property value is lost.  
   
 </para></block></value>
@@ -4470,7 +4471,8 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
         <summary>Gets or sets the value of the <see langword="User-agent" /> HTTP header.</summary>
         <value>The value of the <see langword="User-agent" /> HTTP header. The default value is <see langword="null" />.  
   
- <block subset="none" type="note"><para>  
+ <block subset="none" type="note">
+ <para>  
  The value for this property is stored in <see cref="T:System.Net.WebHeaderCollection" />. If WebHeaderCollection is set, the property value is lost.  
   
 </para></block></value>

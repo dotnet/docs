@@ -158,7 +158,10 @@
   
 -   <see cref="M:System.Web.Hosting.VirtualPathProvider.DirectoryExists(System.String)" />  
   
--   <see cref="M:System.Web.Hosting.VirtualPathProvider.GetDirectory(System.String)" /><block subset="none" type="note"><para>  
+-   <see cref="M:System.Web.Hosting.VirtualPathProvider.GetDirectory(System.String)" />
+
+<block subset="none" type="note">
+<para>  
  If your virtual file system will contain themes for the Web site (by creating a virtual <c>App_Themes</c> directory), your custom <see cref="T:System.Web.Hosting.VirtualPathProvider" /> class must support directories.  
   
 </para></block>  

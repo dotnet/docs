@@ -213,7 +213,8 @@
         <value>
           <see langword="true" /> if the control adjusts its width to closely fit its contents; otherwise, <see langword="false" />.  
   
- <block subset="none" type="note"><para>  
+ <block subset="none" type="note">
+ <para>  
  When added to a form using the designer, the default value is <see langword="true" />. When instantiated from code, the default value is <see langword="false" />.  
   
 </para></block></value>

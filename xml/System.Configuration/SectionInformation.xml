@@ -474,7 +474,8 @@
         <value>
           <see langword="true" /> if the associated <see cref="T:System.Configuration.ConfigurationSection" /> object will be saved even if it has not been modified; otherwise, <see langword="false" />. The default is <see langword="false" />.  
   
- <block subset="none" type="note"><para>  
+ <block subset="none" type="note">
+ <para>  
  If the configuration file is saved (even if there are no modifications), ASP.NET restarts the application.  
   
 </para></block></value>

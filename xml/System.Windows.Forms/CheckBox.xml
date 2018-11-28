@@ -352,7 +352,8 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.CheckBox" /> is in the checked state; otherwise, <see langword="false" />. The default value is <see langword="false" />.  
   
- <block subset="none" type="note"><para>  
+ <block subset="none" type="note">
+ <para>  
  If the <see cref="P:System.Windows.Forms.CheckBox.ThreeState" /> property is set to <see langword="true" />, the <see cref="P:System.Windows.Forms.CheckBox.Checked" /> property will return <see langword="true" /> for either a <see langword="Checked" /> or <see langword="Indeterminate" /><see cref="P:System.Windows.Forms.CheckBox.CheckState" />.  
   
 </para></block></value>

@@ -41,22 +41,26 @@
  The following example shows how to replace the numeric value of an enumeration with the corresponding declaration.  
   
 ```csharp  
-public enum eReorderLvl {  
-        zero = 0,  
-        five = 5,  
-        ten=10,  
-        fifteen=15,  
-        twenty=20,  
-        twenty_five=25,  
-        thirty=30  
+public enum ReorderLevel
+{
+    Zero = 0,
+    Five = 5,
+    Ten = 10,
+    Fifteen = 15,
+    Twenty = 20,
+    TwentyFive = 25,
+    Thirty = 30
+}
+
+[MetadataType(typeof(ProductMD))]  
+public partial class Product
+{  
+    public class ProductMD
+    {  
+        [EnumDataType(typeof(ReorderLevel))]  
+        public object ReorderLevel { get; set; }  
     }  
-    [MetadataType(typeof(Product_MD))]  
-    public partial class Product {  
-        public class Product_MD {  
-            [EnumDataType(typeof(eReorderLvl))]  
-            public object ReorderLevel { get; set; }  
-        }  
-    }  
+}  
 ```  
   
 ```vb  

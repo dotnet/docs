@@ -6,7 +6,7 @@ author: jralexander
 ---
 # Machine learning tasks
 
-When building a machine learning model, you first need to define what you are hoping to achieve with your data. After, you can pick the right machine learning task for your situation. The following list describes the different machine learning tasks that you can choose from and some common use cases.
+When building a machine learning model, you first need to define what you are hoping to achieve with your data. Afterwards, you can pick the right machine learning task for your situation. The following list describes the different machine learning tasks that you can choose from and some common use cases.
 
 > [!NOTE]
 > ML.NET is currently in Preview. Not all machine learning tasks are currently supported. To submit a request for a certain task, open an issue in the [dotnet/machinelearning repository](https://github.com/dotnet/machinelearning/issues).
@@ -112,7 +112,7 @@ The following learners are available for regression tasks:
 * [OlsLinearRegressionTrainer](xref:Microsoft.ML.Trainers.HalLearners.OlsLinearRegressionTrainer)
 * [OnlineGradientDescentTrainer](xref:Microsoft.ML.Trainers.Online.OnlineGradientDescentTrainer)
 * [PoissonRegression](xref:Microsoft.ML.Trainers.PoissonRegression)
-* [RegressionEnsembleTrainer](Microsoft.ML.Runtime.Ensemble.RegressionEnsembleTrainer)
+* [RegressionEnsembleTrainer](xref:Microsoft.ML.Runtime.Ensemble.RegressionEnsembleTrainer)
 * [RegressionGamTrainer](xref:Microsoft.ML.Trainers.FastTree.RegressionGamTrainer)
 * [SdcaRegressionTrainer](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer)
 * [FastTree.SingleTrainer](xref:Microsoft.ML.Trainers.FastTree.SingleTrainer)
@@ -136,7 +136,7 @@ The following learners are available for clustering tasks:
 
 This task creates an anomaly detection model by using Principal Component Analysis (PCA). PCA-Based Anomaly Detection helps you build a model in scenarios where it is easy to obtain training data from one class, such as valid transactions, but difficult to obtain sufficient samples of the targeted anomalies.
 
-Principal Component Analysis, which is frequently abbreviated to PCA, is an established technique in machine learning. PCA is frequently used in exploratory data analysis because it reveals the inner structure of the data and explains the variance in the data. PCA works by analyzing data that contains multiple variables. It looks for correlations among the variables and determines the combination of values that best captures differences in outcomes. These combined feature values are used to create a more compact feature space called the principal components.
+An established technique in machine learning, PCA is frequently used in exploratory data analysis because it reveals the inner structure of the data and explains the variance in the data. PCA works by analyzing data that contains multiple variables. It looks for correlations among the variables and determines the combination of values that best captures differences in outcomes. These combined feature values are used to create a more compact feature space called the principal components.
 
 Anomaly detection encompasses many important tasks in machine learning:
 

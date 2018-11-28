@@ -7581,21 +7581,21 @@ The `comparisonType` parameter is a <xref:System.StringComparison> enumeration m
   
  You can use the <xref:System.String.IsNullOrWhiteSpace%2A> method to test whether a string is `null`, its value is <xref:System.String.Empty?displayProperty=nameWithType>,  or it consists only of white-space characters.  
   
-## What is a null string?  
- A string is `null` if it has not been assigned a value (in C++ and Visual Basic) or if has explicitly been assigned a value of `null`. Although the [composite formatting](~/docs/standard/base-types/composite-formatting.md) feature can gracefully handle a null string, as the following example shows, attempting to call one if its members throws a <xref:System.NullReferenceException>.  
+## What is a null string?
+
+A string is `null` if it has not been assigned a value (in C++ and Visual Basic) or if it has explicitly been assigned a value of `null`. Although the [composite formatting](~/docs/standard/base-types/composite-formatting.md) feature can gracefully handle a null string, as the following example shows, attempting to call one if its members throws a <xref:System.NullReferenceException>.  
   
- [!code-cpp[System.String.IsNullOrEmpty#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.isnullorempty/cpp/NullString1.cpp#2)]
- [!code-csharp[System.String.IsNullOrEmpty#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.isnullorempty/cs/NullString1.cs#2)]
- [!code-vb[System.String.IsNullOrEmpty#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.isnullorempty/vb/NullString1.vb#2)]  
+[!code-cpp[System.String.IsNullOrEmpty#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.isnullorempty/cpp/NullString1.cpp#2)]
+[!code-csharp[System.String.IsNullOrEmpty#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.isnullorempty/cs/NullString1.cs#2)]
+[!code-vb[System.String.IsNullOrEmpty#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.isnullorempty/vb/NullString1.vb#2)]  
   
 ## What is an empty string?  
- A string is empty if it  is explicitly assigned an empty string ("") or <xref:System.String.Empty?displayProperty=nameWithType>. An empty string has a <xref:System.String.Length%2A> of 0.  The following example creates an empty string and displays its value and its length.  
+
+A string is empty if it  is explicitly assigned an empty string ("") or <xref:System.String.Empty?displayProperty=nameWithType>. An empty string has a <xref:System.String.Length%2A> of 0.  The following example creates an empty string and displays its value and its length.  
   
- [!code-cpp[System.String.IsNullOrEmpty#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.isnullorempty/cpp/NullString1.cpp#3)]
- [!code-csharp[System.String.IsNullOrEmpty#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.isnullorempty/cs/NullString1.cs#3)]
- [!code-vb[System.String.IsNullOrEmpty#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.isnullorempty/vb/NullString1.vb#3)]  
-  
-   
+[!code-cpp[System.String.IsNullOrEmpty#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.isnullorempty/cpp/NullString1.cpp#3)]
+[!code-csharp[System.String.IsNullOrEmpty#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.isnullorempty/cs/NullString1.cs#3)]
+[!code-vb[System.String.IsNullOrEmpty#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.isnullorempty/vb/NullString1.vb#3)]  
   
 ## Examples  
  The following example examines three strings and determines whether each string has a value, is an empty string, or is `null`.  

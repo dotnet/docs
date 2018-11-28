@@ -514,7 +514,7 @@ If the span is empty, this method returns a reference to the location where the 
         <exception cref="T:System.ArgumentException">
           <paramref name="T" /> contains references or pointers.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <param name="source" /> is smaller than <param name="T" /></exception>
+          <paramref name="source" /> is smaller than <paramref name="T" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToEnumerable&lt;T&gt;">
@@ -543,7 +543,7 @@ If the span is empty, this method returns a reference to the location where the 
         <typeparam name="T">The type of the items in the read-only memory buffer.</typeparam>
         <param name="memory">A read-only memory buffer.</param>
         <summary>Creates an <see cref="T:System.Collections.Generic.IEnumerable`1" /> view of the given read-only memory buffer.</summary>
-        <returns>An enumerable view of <param name="memory" />.</returns>
+        <returns>An enumerable view of <paramref name="memory" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -620,7 +620,7 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         <typeparam name="T">The type of the items in the read-only memory buffer.</typeparam>
         <typeparam name="TManager">The type of the <see cref="T:System.Buffers.MemoryManager`1" /> to retrieve.</typeparam>
         <param name="memory">The read-only memory buffer for which to get the memory manager.</param>
-        <param name="manager">When the method returns, the manager of <param name="memory" />. </param>
+        <param name="manager">When the method returns, the manager of <paramref name="memory" />. </param>
         <summary>Tries to retrieve a <see cref="T:System.Buffers.MemoryManager`1" /> from the underlying read-only memory buffer.</summary>
         <returns>
           <see langword="true" /> if the method retrieved the memory manager; otherwise, <see langword="false" />.</returns>
@@ -661,9 +661,9 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         <typeparam name="T">The type of the items in the read-only memory buffer.</typeparam>
         <typeparam name="TManager">The type of the <see cref="T:System.Buffers.MemoryManager`1" /> to retrieve.</typeparam>
         <param name="memory">The read-only memory buffer for which to get the memory manager.</param>
-        <param name="manager">When the method returns, the manager of <param name="memory" />. </param>
-        <param name="start">When the method returns, the offset from the start of the <param name="manager" /> that the <param name="memory" /> represents.</param>
-        <param name="length">When the method returns, the length of the <param name="manager" /> that the <param name="memory" /> represents.</param>
+        <param name="manager">When the method returns, the manager of <paramref name="memory" />. </param>
+        <param name="start">When the method returns, the offset from the start of the <paramref name="manager" /> that the <paramref name="memory" /> represents.</param>
+        <param name="length">When the method returns, the length of the <paramref name="manager" /> that the <paramref name="memory" /> represents.</param>
         <summary>Tries to retrieve a <see cref="T:System.Buffers.MemoryManager`1" />, start index, and length from the underlying read-only memory buffer.</summary>
         <returns>
           <see langword="true" /> if the method succeeded; otherwise, <see langword="false" />.</returns>
@@ -695,8 +695,8 @@ This method allows a read-only memory buffer to be used in existing APIs that re
       <Docs>
         <param name="memory">Read-only memory containing a block of characters.</param>
         <param name="text">When the method returns, the string contained in the memory buffer.</param>
-        <param name="start">The starting location in <param name="text" />.</param>
-        <param name="length">The number of characters in <param name="text" />.</param>
+        <param name="start">The starting location in <paramref name="text" />.</param>
+        <param name="length">The number of characters in <paramref name="text" />.</param>
         <summary>Tries to get the underlying string from a <see langword="System.ReadOnlyMemory&lt;Char&gt;" />.</summary>
         <returns>
           <see langword="true" /> if the method successfully retrieves the underlying string; otherwise, <see langword="false" />.</returns>
@@ -735,8 +735,8 @@ This method allows a read-only memory buffer to be used in existing APIs that re
       <Docs>
         <typeparam name="T">The type of the structure to retrieve.</typeparam>
         <param name="source">A read-only span of bytes. </param>
-        <param name="value">When the method returns, an instance of <param name="T" />.</param>
-        <summary>Tries to read a structure of type <param name="T" /> from a read-only span of bytes.</summary>
+        <param name="value">When the method returns, an instance of <paramref name="T" />.</param>
+        <summary>Tries to read a structure of type <paramref name="T" /> from a read-only span of bytes.</summary>
         <returns>
           <see langword="true" /> if the method succeeds in retrieving an instance of the structure; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -785,9 +785,9 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         <typeparam name="T">The type of the structure.</typeparam>
         <param name="destination">The span of bytes to contain the structure.</param>
         <param name="value">The structure to be written to the span.</param>
-        <summary>Tries to writes a structure of type <param name="T" /> into a span of bytes.</summary>
+        <summary>Tries to writes a structure of type <paramref name="T" /> into a span of bytes.</summary>
         <returns>
-          <see langword="true" /> if the write operation succeeded; otherwise, <see langword="false" />. The method returns <see langword="false" /> if the span is too small to contain <param name="T" />. </returns>
+          <see langword="true" /> if the write operation succeeded; otherwise, <see langword="false" />. The method returns <see langword="false" /> if the span is too small to contain <paramref name="T" />. </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -834,7 +834,7 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         <typeparam name="T">The type of the structure.</typeparam>
         <param name="destination">The span of bytes to contain the structure.</param>
         <param name="value">The structure to be written to the span.</param>
-        <summary>Writes a structure of type <param name="T" /> into a span of bytes.</summary>
+        <summary>Writes a structure of type <paramref name="T" /> into a span of bytes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

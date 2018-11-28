@@ -702,6 +702,7 @@
         <param name="row">The <see cref="T:System.Data.DataRow" /> to add.</param>
         <param name="pos">The (zero-based) location in the collection where you want to add the <see langword="DataRow" />.</param>
         <summary>Inserts a new row into the collection at the specified location.</summary>
+        <exception cref="T:System.IndexOutOfRangeException">The <paramref name="pos" /> is less than 0.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

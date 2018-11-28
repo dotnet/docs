@@ -30,9 +30,18 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of items in the memory buffer managed by this memory manager.</typeparam>
+    <summary>An abstract base class that is used to replace the implementation of <see cref="T:System.Memory`1" />.</summary>
+    <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+The `MemoryManager<T>` class is used to extend the knowledge of types that <xref:System.Memory%601> is able to represent. For example, you can derive from `MemoryManager<T>` to allow <xref:System.Memory%601> to be backed by a <xref:System.Runtime.InteropServices.SafeHandle>.
+
+> [!NOTE]
+> The `MemoryManager<T>` class is intended for advanced scenarios. Most developers do not need to use it.
+
+       ]]></format>    
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,7 +60,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Buffers.MemoryManager`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +86,9 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="length">The number of elements in the memory buffer, starting at offset 0.</param>
+        <summary>Returns a memory buffer consisting of a specified number of elements from the memory managed by the current memory manager.</summary>
+        <returns>A memory buffer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,10 +115,10 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="start">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="start">The offset to the element at which the returned memory buffer starts.</param>
+        <param name="length">The number of elements to include in the returned memory buffer.</param>
+        <summary>Returns a memory buffer consisting of a specified number of elements starting at a specified offest from the memory managed by the current memory manager.</summary>
+        <returns>A memory buffer that consists of <paramref name="length" /> elements starting at offset <paramref name="start" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,8 +144,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing"><see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases all resources used by the current memory manager.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +169,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a memory span that wraps the underlying memory buffer.</summary>
+        <returns>A memory span that wraps the underlying memory buffer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,8 +196,8 @@
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the memory block handled by this <see cref="T:System.Buffers.MemoryManager`1" />.</summary>
+        <value>The memory block handled by this <see cref="T:System.Buffers.MemoryManager`1" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,9 +225,9 @@
         <Parameter Name="elementIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="elementIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="elementIndex">The offset to the element in the memory buffer at which the returned <see cref="T:System.Buffers.MemoryHandle" /> points.</param>
+        <summary>Returns a handle to the memory that has been pinned and whose address can be taken.</summary>
+        <returns>A handle to the memory that has been pinned.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,8 +253,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the memory manager.</summary>
+        <remarks>This method provides the memory manager's <see cref="M:System.IDisposable.Dispose" /> implementation.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetArray">
@@ -270,10 +279,10 @@
         <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="segment">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="segment">The array segment to write to.</param>
+        <summary>Returns an array segment.</summary>
+        <returns><see langword="true" /> if the method succeeded in retrieving the array segment; otherwise, <see langword="false" />.</returns>
+        <remarks>If this method is not overridden, it returns the default array segment.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Unpin">
@@ -299,7 +308,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Unpins pinned memory so that the garbage collector is free to move it.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

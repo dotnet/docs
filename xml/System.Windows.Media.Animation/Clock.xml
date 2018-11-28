@@ -476,7 +476,7 @@
       <Parameters />
       <Docs>
         <summary>Returns whether the <see cref="T:System.Windows.Media.Animation.Clock" /> has its own external time source, which may require synchronization with the timing system.</summary>
-        <returns>Returns **true** if the <see cref="T:System.Windows.Media.Animation.Clock" /> has its own external source for time, which may require synchronization with the timing system; otherwise, **false**.</returns>
+        <returns>Returns <see langword="true" /> if the <see cref="T:System.Windows.Media.Animation.Clock" /> has its own external source for time, which may require synchronization with the timing system; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

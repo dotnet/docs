@@ -150,7 +150,7 @@
         <param name="ceilingTypes">Specifies one or more types that should stop the evaluation when they are encountered traversing upward in the object graph. This type holds the desired ambient property. May be <see langword="null" />.</param>
         <param name="searchLiveStackOnly">
           <see langword="true" /> to not use a saved context; <see langword="false" /> to use a saved context. The default is <see langword="false" />.</param>
-        <param name="types">To be added.</param>
+        <param name="types">Specifies one or more type identifier objects that identify the types to be considered ambient.</param>
         <param name="properties">Specifies one or more property identifier objects that identify the properties to be considered ambient.</param>
         <summary>Returns an enumerable set of ambient property information items for the requested set of types and properties.</summary>
         <returns>An enumerable set of ambient property information items for the requested set of types and properties. The property information for each <see cref="T:System.Xaml.AmbientPropertyValue" /> that is returned will match one of the input <paramref name="types" /> or <paramref name="properties" />.</returns>

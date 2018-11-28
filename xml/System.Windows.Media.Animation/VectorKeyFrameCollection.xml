@@ -677,7 +677,7 @@
         <summary>Gets or sets the <see cref="T:System.Windows.Media.Animation.VectorKeyFrame" /> at the specified index position.</summary>
         <value>The <see cref="T:System.Windows.Media.Animation.VectorKeyFrame" /> at the specified index.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The attempt to modify the collection is invalid because the collection is frozen (its <see cref="P:System.Windows.Freezable.IsFrozen" /> property is **true**).</exception>
+        <exception cref="T:System.InvalidOperationException">The attempt to modify the collection is invalid because the collection is frozen (its <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />).</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero.  
   

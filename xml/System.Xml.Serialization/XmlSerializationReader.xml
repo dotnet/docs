@@ -2906,7 +2906,7 @@
         <param name="isNull">
           <see langword="true" /> to return <see langword="null" />; <see langword="false" /> to return a hexadecimal byte array.</param>
         <summary>Instructs the <see cref="T:System.Xml.XmlReader" /> to read the string value at its current position and return it as a hexadecimal byte array.</summary>
-        <returns>A hexadecimal byte array; otherwise, <see langword="null" /> if the value of the <paramref name="isNull" /> parameter is **true**.</returns>
+        <returns>A hexadecimal byte array; otherwise, <see langword="null" /> if the value of the <paramref name="isNull" /> parameter is <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

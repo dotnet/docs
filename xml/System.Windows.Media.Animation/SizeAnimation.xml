@@ -542,7 +542,7 @@
 |||  
 |-|-|  
 |Identifier Field|<xref:System.Windows.Media.Animation.AnimationTimeline.IsAdditiveProperty>|  
-|Metadata properties set to **true**|None|  
+|Metadata properties set to `true`|None|  
   
 > [!NOTE]
 >  This dependency property is unusual in that the identifier field for it comes from <xref:System.Windows.Media.Animation.AnimationTimeline>, and is shared by various derived classes.  
@@ -569,12 +569,12 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that specifies whether the animation's value accumulates when it repeats.</summary>
-        <value>**true** if the animation accumulates its values when its <see cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" /> property causes it to repeat its simple duration. otherwise, **false**. The default value is **false**.</value>
+        <value><see langword="true" /> if the animation accumulates its values when its <see cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" /> property causes it to repeat its simple duration. otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this property is set to **true**, the animation's output values only accumulate when the animation's <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property causes it to repeat its simple duration. It does not accumulate its values when it restarts because its parent repeated or because its clock was restarted from a <xref:System.Windows.Media.Animation.ClockController.Begin%2A> call.  
+ When this property is set to `true`, the animation's output values only accumulate when the animation's <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property causes it to repeat its simple duration. It does not accumulate its values when it restarts because its parent repeated or because its clock was restarted from a <xref:System.Windows.Media.Animation.ClockController.Begin%2A> call.  
   
 <a name="dependencyPropertyInfo_Cumulative"></a>   
 ## Dependency Property Information  

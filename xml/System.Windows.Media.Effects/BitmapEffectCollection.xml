@@ -308,7 +308,7 @@
       <Docs>
         <param name="value">The bitmap effect to locate in the collection.</param>
         <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Indicates whether the collection contains the specified <see cref="T:System.Windows.Media.Effects.BitmapEffect" />.</summary>
-        <returns>**true** if the collection contains value; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if the collection contains value; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

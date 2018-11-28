@@ -1,4 +1,4 @@
-﻿<Type Name="DependencyObject" FullName="System.Workflow.ComponentModel.DependencyObject">
+<Type Name="DependencyObject" FullName="System.Workflow.ComponentModel.DependencyObject">
   <TypeSignature Language="C#" Value="public abstract class DependencyObject : IDisposable, System.ComponentModel.IComponent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DependencyObject extends System.Object implements class System.ComponentModel.IComponent, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.DependencyObject" />
@@ -868,8 +868,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the method that handles the Disposed event of a component.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+When you create a Disposed delegate, you identify the method that handles the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UserData">

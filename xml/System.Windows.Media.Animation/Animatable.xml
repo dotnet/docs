@@ -293,7 +293,7 @@
       <Parameters />
       <Docs>
         <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Animation.Animatable" />, making deep copies of this object's values. When copying this object's dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
-        <returns>A modifiable clone of this instance. The returned clone is effectively a deep copy of the current object. The clone's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is **false**.</returns>
+        <returns>A modifiable clone of this instance. The returned clone is effectively a deep copy of the current object. The clone's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -335,7 +335,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method will return **false** when <xref:System.Windows.Media.Animation.Animatable.HasAnimatedProperties%2A> is **true**.  
+ This method will return `false` when <xref:System.Windows.Media.Animation.Animatable.HasAnimatedProperties%2A> is `true`.  
   
  Do not call this method directly (except when calling base in an implementation). This method is called internally by <xref:System.Windows.Freezable.CanFreeze%2A> (with `isChecking` equal to `true`) and  <xref:System.Windows.Freezable.Freeze%2A> (with `isChecking` equal to `false`).  
   
@@ -414,7 +414,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether one or more <see cref="T:System.Windows.Media.Animation.AnimationClock" /> objects is associated with any of this object's dependency properties.</summary>
-        <value>**true** if one or more <see cref="T:System.Windows.Media.Animation.AnimationClock" /> objects is associated with any of this object's dependency properties; otherwise, **false**.</value>
+        <value><see langword="true" /> if one or more <see cref="T:System.Windows.Media.Animation.AnimationClock" /> objects is associated with any of this object's dependency properties; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -189,7 +189,7 @@
       <Parameters />
       <Docs>
         <summary>Returns a value that indicates whether the <see cref="P:System.Windows.Media.Animation.SeekStoryboard.Offset" /> property of this <see cref="T:System.Windows.Media.Animation.SeekStoryboard" /> should be serialized.</summary>
-        <returns>**true** if the <see cref="P:System.Windows.Media.Animation.SeekStoryboard.Offset" /> property of this <see cref="T:System.Windows.Media.Animation.SeekStoryboard" /> should be serialized; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if the <see cref="P:System.Windows.Media.Animation.SeekStoryboard.Offset" /> property of this <see cref="T:System.Windows.Media.Animation.SeekStoryboard" /> should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

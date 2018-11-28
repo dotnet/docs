@@ -8725,8 +8725,8 @@ XPathNodeIterator ni = nav.Select(expr);
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of the current node.</summary>
+        <value>The value of the current node as <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

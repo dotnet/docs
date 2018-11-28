@@ -188,5 +188,5 @@ After the initial architecture and patterns explanation sections, the next secti
   [*https://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html*](https://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html)
 
 >[!div class="step-by-step"]
-[Previous](identify-microservice-domain-model-boundaries.md)
-[Next](communication-in-microservice-architecture.md)
+>[Previous](identify-microservice-domain-model-boundaries.md)
+>[Next](communication-in-microservice-architecture.md)

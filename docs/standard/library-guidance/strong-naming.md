@@ -65,5 +65,5 @@ You should strong name your open-source .NET libraries. Strong naming an assembl
 > Publishing two packages forks your developer eco-system. Also, if an application ends up depending on both packages the developer can encounter type name conflicts. As far as .NET is concerned they are different types in different assemblies.
 
 >[!div class="step-by-step"]
-[Previous](./cross-platform-targeting.md)
-[Next](./nuget.md)
+>[Previous](cross-platform-targeting.md)
+>[Next](nuget.md)

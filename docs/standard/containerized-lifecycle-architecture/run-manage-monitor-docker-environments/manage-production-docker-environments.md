@@ -38,7 +38,6 @@ Following are Service Fabric management tools:
 
 -   [Azure Service Fabric Explorer](https://docs.microsoft.com/azure/service-fabric/service-fabric-visualizing-your-cluster) is a specialized web UI tool that provides insights and certain operations on the Service Fabric cluster from the nodes/VMs point of view and from the application and services point of view.
 
-
 >[!div class="step-by-step"]
-[Previous](run-microservices-based-applications-in-production.md)
-[Next](monitor-containerized-application-services.md)
+>[Previous](run-microservices-based-applications-in-production.md)
+>[Next](monitor-containerized-application-services.md)

@@ -119,8 +119,6 @@ public abstract class CardType : Enumeration
 - **SmartEnum**. Ardalis - Classes to help produce strongly typed smarter enums in .NET. \
   [*https://www.nuget.org/packages/Ardalis.SmartEnum/*](https://www.nuget.org/packages/Ardalis.SmartEnum/)
 
-
 >[!div class="step-by-step"]
-[Previous](implement-value-objects.md)
-[Next](domain-model-layer-validations.md)
-
+>[Previous](implement-value-objects.md)
+>[Next](domain-model-layer-validations.md)

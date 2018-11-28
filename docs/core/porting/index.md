@@ -41,4 +41,4 @@ The following list shows tools you might find helpful to use during the porting 
 * Reverse Package Search - A [useful web service](https://packagesearch.azurewebsites.net) that allows you to search for a type and find packages containing that type.
 
 >[!div class="step-by-step"]
-[Next](third-party-deps.md)
+>[Next](third-party-deps.md)

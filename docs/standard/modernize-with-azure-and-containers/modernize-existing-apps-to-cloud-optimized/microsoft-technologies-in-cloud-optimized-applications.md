@@ -32,5 +32,5 @@ It's important to highlight that monolithic applications (applications that are 
 Similarly, if monolithic applications can be Cloud-Optimized applications, other, more complex architectures like N-Tier applications can also be modernized as Cloud-Optimized applications.
 
 >[!div class="step-by-step"]
-[Previous](reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications.md)
-[Next](what-about-cloud-native-applications.md)
+>[Previous](reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications.md)
+>[Next](what-about-cloud-native-applications.md)

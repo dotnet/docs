@@ -83,5 +83,5 @@ An API gateway provides a single point of entry for clients and then intelligent
 * [Working with the change feed support in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/change-feed)
 
 >[!div class="step-by-step"]
-[Previous](serverless-architecture-considerations.md)
-[Next](azure-serverless-platform.md)
+>[Previous](serverless-architecture-considerations.md)
+>[Next](azure-serverless-platform.md)

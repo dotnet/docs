@@ -156,8 +156,6 @@ Until this point, the code shown is just performing regular Http requests, but t
 
     [*https://github.com/aspnet/HttpClientFactory*](https://github.com/aspnet/HttpClientFactory)
 
-
-
 >[!div class="step-by-step"]
-[Previous] (explore-custom-http-call-retries-exponential-backoff.md)
-[Next] (implement-http-call-retries-exponential-backoff-polly.md)
+>[Previous](explore-custom-http-call-retries-exponential-backoff.md)
+>[Next](implement-http-call-retries-exponential-backoff-polly.md)

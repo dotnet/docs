@@ -115,5 +115,5 @@ An alternative to creating a symbol package is embedding symbol files in the mai
 > The downside to embedded symbol files is they increase the package size by about 30% for .NET libraries compiled using SDK-style projects. If package size is a concern, you should publish symbols in a symbol package instead.
 
 >[!div class="step-by-step"]
-[Previous](./strong-naming.md)
-[Next](./dependencies.md)
+>[Previous](strong-naming.md)
+>[Next](dependencies.md)

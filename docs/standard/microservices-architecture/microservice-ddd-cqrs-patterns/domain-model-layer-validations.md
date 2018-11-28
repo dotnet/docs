@@ -102,7 +102,6 @@ Using field validation with data annotations, for example, you do not duplicate 
 - **Jimmy Bogard. Validation in a DDD world** \
   [*https://lostechies.com/jimmybogard/2009/02/15/validation-in-a-ddd-world/*](https://lostechies.com/jimmybogard/2009/02/15/validation-in-a-ddd-world/)
 
-
 >[!div class="step-by-step"]
-[Previous](enumeration-classes-over-enum-types.md)
-[Next](client-side-validation.md)
+>[Previous](enumeration-classes-over-enum-types.md)
+>[Next](client-side-validation.md)

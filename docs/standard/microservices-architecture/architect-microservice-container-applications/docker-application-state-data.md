@@ -62,5 +62,5 @@ In addition, when Docker containers are managed by an orchestrator, containers m
 **Relational databases and NoSQL databases.** There are many choices for external databases, from relational databases like SQL Server, PostgreSQL, Oracle, or NoSQL databases like Azure Cosmos DB, MongoDB, etc. These databases are not going to be explained as part of this guide since they are in a completely different subject.
 
 >[!div class="step-by-step"]
-[Previous](containerize-monolithic-applications.md)
-[Next](service-oriented-architecture.md)
+>[Previous](containerize-monolithic-applications.md)
+>[Next](service-oriented-architecture.md)

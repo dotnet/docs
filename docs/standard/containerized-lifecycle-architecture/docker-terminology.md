@@ -39,7 +39,6 @@ This section lists terms and definitions with which you should become familiar w
 
 -   **Orchestrator** A tool that simplifies management of clusters and Docker hosts. Using orchestrators, you can manage their images, containers, and hosts through a CLI or a graphical user interface. You can manage container networking, configurations, load balancing, service discovery, high availability, Docker host configuration, and more. An orchestrator is responsible for running, distributing, scaling, and healing workloads across a collection of nodes. Typically, orchestrator products are the same products that provide cluster infrastructure, like Mesosphere DC/OS, Kubernetes, Docker Swarm, and Azure Service Fabric.
 
-
 >[!div class="step-by-step"]
-[Previous](what-is-docker.md)
-[Next](docker-containers-images-and-registries.md)
+>[Previous](what-is-docker.md)
+>[Next](docker-containers-images-and-registries.md)

@@ -18,6 +18,62 @@ The reason marshalling is needed is because the types in the managed and unmanag
 static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
 ```
 
+## Default rules for marshalling common types
+
+Generally, the runtime tries to do the "Right Thing" when marshalling to require the least amount of work from you. The tables below describe how each type is marshalled by default when used in a parameter or field. We use the C99/C++11 fixed width integer and character types to ensure that the table below is correct for all platforms. You can use any native type that has the same alignment and size requirements as these types.
+
+This first table describes the mappings for various types for whom the marshalling is the same for both P/Invoke and field marshalling.
+
+| .NET Type | Native Type  |
+|-----------|-------------------------|
+| `byte`    | `uint8_t`               |
+| `sbyte`   | `int8_t`                |
+| `short`   | `int16_t`               |
+| `ushort`  | `uint16_t`              |
+| `int`     | `int32_t`               |
+| `uint`    | `uint32_t`              |
+| `long`    | `int64_t`               |
+| `ulong`   | `uint64_t`              |
+| `char`    | Either `char` or `char16_t` depending on the `CharSet` of the P/Invoke or structure. |
+| `string`  | Either `char*` or `char16_t*` depending on the `CharSet` of the P/Invoke or structure. |
+| `System.IntPtr` | `intptr_t`        |
+| `System.UIntPtr` | `uintptr_t`      |
+| .NET Pointer types (i.e. `void*`)  | `void*` |
+| Type derived from `System.Runtime.InteropServices.SafeHandle` | `void*` |
+| Type derived from `System.Runtime.InteropServices.CriticalHandle` | `void*`          |
+| `bool`    | Win32 `BOOL` type       |
+| `decimal` | COM `DECIMAL` struct |
+| .NET Delegate | Native function pointer |
+| `System.DateTime` | Win32 `DATE` type |
+| `System.Guid` | Win32 `GUID` type |
+
+A few categories of marshalling have different defaults if you are marshalling as a parameter or structure.
+
+| .NET Type | Native Type (Parameter) | Native Type (Field) |
+|-----------|-------------------------|---------------------|
+| .NET array | A pointer to the start of an array of native representations of the array elements. | Not allowed without a `[MarshalAs]` attribute|
+| A class with a `LayoutKind` of `Sequential` or `Explicit` | A pointer to the native representation of the class | The native representation of the class |
+
+The following table includes the default marshalling rules that are Windows-only. On non-Windows platforms, you cannot marshal these types.
+
+| .NET Type | Native Type (Parameter) | Native Type (Field) |
+|-----------|-------------------------|---------------------|
+| `object`  | `VARIANT`               | `IUnknown*`         |
+| `System.Array` | COM interface | Not allowed without a `[MarshalAs]` attribute |
+| `System.ArgIterator` | `va_list` | Not allowed |
+| `System.Collections.IEnumerator` | `IEnumVariant` | Not allowed |
+| `System.DateTimeOffset` | `int64_t` representing the number of ticks since midnight on January 1, 1601 || `int64_t` representing the number of ticks since midnight on January 1, 1601 |
+
+Some types can only be marshalled as parameters and not as fields. These types are listed below
+
+| .NET Type | Native Type (Parameter Only) |
+|-----------|------------------------------|
+| `System.Text.StringBuilder` | Either `char*` or `char16_t*` depending on the `CharSet` of the P/Invoke. |
+| `System.ArgIterator` | `va_list` (on Windows x86/x64/arm64 only) |
+| `System.Runtime.InteropSerivces.ArrayWithOffset` | `void*` |
+| `System.Runtime.InteropServices.HandleRef` | `void*` |
+
+
 ## Marshalling classes and structs
 
 Another aspect of type marshalling is how to pass in a struct to an unmanaged method. For instance, some of the unmanaged methods require a struct as a parameter. In these cases, we need to create a corresponding struct or a class in managed part of the world to use it as a parameter. However, just defining the class is not enough, we also need to instruct the marshaler how to map fields in the class to the unmanaged struct. This is where the `StructLayout` attribute comes into play.

@@ -48,6 +48,7 @@
 ## [Native interoperability](standard/native-interop/index.md)
 ### [P/Invoke](standard/native-interop/pinvoke.md)
 ### [Type Marshalling](standard/native-interop/type-marshalling.md)
+### [Customizing Structure Marshalling](standard/native-interop/customizing-struct-marshalling.md)
 ## [Collections and Data Structures](standard/collections/)
 ## [Numerics in .NET](standard/numerics.md)
 ## [Dates, times, and time zones](standard/datetime/)

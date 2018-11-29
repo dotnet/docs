@@ -84,7 +84,7 @@ This topic gives a brief introduction to [!INCLUDE[vbteclinq](~/includes/vbtecli
   
  In [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] you do not have to use `join` as often as you do in SQL because foreign keys in [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] are represented in the object model as properties that hold a collection of items. For example, a `Customer` object contains a collection of `Order` objects. Rather than performing a join, you access the orders by using dot notation:  
   
-```  
+```csharp
 from order in Customer.Orders...  
 ```  
   

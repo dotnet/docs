@@ -115,7 +115,7 @@ typedef struct _SYSTEMTIME {
 } SYSTEMTIME, *PSYSTEMTIME*;
 ```
 
-We already saw the Linux and MacOS example for this structure in the previous example. It is shown again below.
+We already saw the Linux and macOS example for this structure in the previous example. It is shown again below.
 
 ```csharp
 [StructLayout(LayoutKind.Sequential)]

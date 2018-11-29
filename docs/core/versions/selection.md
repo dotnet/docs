@@ -38,7 +38,7 @@ On rare occasions, you may need to use an earlier version of the SDK. You specif
 
 > [!TIP]
 > We recommend that you add a *global.json* file to the root of your drive set to the latest **supported** SDK version.
-> That way, you ensure that all your projects will use the latest **supported** SDK version by default and not the latest **installed** version. Whenever a new supported version is released, then you can just edit that file to update the SDK version.
+> That way, you ensure that all your projects will use the latest **supported** SDK version by default and not the latest **installed** version, which might be a preview version. Whenever a new supported version is released, then you can just edit that file to update the SDK version.
 
 The following example shows the *global.json* syntax:
 

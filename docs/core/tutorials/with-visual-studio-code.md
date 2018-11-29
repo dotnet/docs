@@ -3,7 +3,7 @@ title: Get started with C# and Visual Studio Code - C# Guide
 description: Learn how to create and debug your first .NET Core application in C# using Visual Studio Code.
 author: kendrahavens
 ms.author: mairaw
-ms.date: 09/27/2017
+ms.date: 11/28/2018
 ---
 # Get Started with C# and Visual Studio Code
 
@@ -75,9 +75,9 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 6. To start debugging, select <kbd>F5</kbd> or the green arrow. The debugger stops execution of your program when it reaches the breakpoint you set in the previous step.
     * While debugging, you can view your local variables in the top left pane or use the debug console.
 
-    ![Run and Debug](media/with-visual-studio-code/rundebug.png)
+7. Select the blue arrow at the top to continue debugging, or select the red square at the top to stop.
 
-7. Select the green arrow at the top to continue debugging, or select the red square at the top to stop.
+    ![Run and Debug](media/with-visual-studio-code/rundebug.png)
 
 > [!TIP]
 > For more information and troubleshooting tips on .NET Core debugging with OmniSharp in Visual Studio Code, see [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).

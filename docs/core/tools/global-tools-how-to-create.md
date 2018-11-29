@@ -157,7 +157,7 @@ Next, create a NuGet package for your application.
 dotnet pack
 ```
 
-The `botsay.1.0.0.nupkg` file is created in the folder identified by the `<PackageOutputPath>` XML value from the `botsay.csproj` file, which in this example is the `./nupkg` folder. This makes it easy to install and test. When you want to release a tool publicly, upload it to [https://www.nuget.org](https://www.nuget.org).
+The `botsay.1.0.0.nupkg` file is created in the folder identified by the `<PackageOutputPath>` XML value from the `botsay.csproj` file, which in this example is the `./nupkg` folder. This makes it easy to install and test. When you want to release a tool publicly, upload it to [https://www.nuget.org](https://www.nuget.org). Once the tool is available on NuGet, developers can perform a user-wide installation of the tool using the `--global` option of the [dotnet tool install](dotnet-tool-install.md) command.
 
 Now that you have a package, install the tool from that package: 
 

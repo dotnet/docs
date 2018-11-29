@@ -1,4 +1,4 @@
-﻿<Type Name="XmlNodeReader" FullName="System.Xml.XmlNodeReader">
+<Type Name="XmlNodeReader" FullName="System.Xml.XmlNodeReader">
   <TypeSignature Language="C#" Value="public class XmlNodeReader : System.Xml.XmlReader, System.Xml.IXmlNamespaceResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlNodeReader extends System.Xml.XmlReader implements class System.Xml.IXmlNamespaceResolver" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlNodeReader" />
@@ -891,10 +891,23 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="i">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="i">The index of the attribute.</param>
+        <summary>Gets the value of the attribute with the specified index.</summary>
+        <value>The value of the specified attribute.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+
+> [!NOTE]
+> In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.
+
+This property does not move the reader.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="i" /> parameter is less than 0 or greater than or equal to <see cref="P:System.Xml.XmlNodeReader.AttributeCount" />.</exception>
+        <altmember cref="Overload:System.Xml.XmlNodeReader.GetAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -922,10 +935,129 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="name">The qualified name of the attribute.</param>
+        <summary>Gets the value of the attribute with the specified name.</summary>
+        <value>The value of the specified attribute. If the attribute is not found, <see langword="null" /> is returned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+
+> [!NOTE]
+> In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.
+
+This property does not move the reader.
+
+If the reader is positioned on a DocumentType node, this method can be used to get the PUBLIC and SYSTEM literals, for example, reader\["PUBLIC"\].
+
+## Examples  
+The following example gets the value of the ISBN attribute.
+
+```vb
+Imports System
+Imports System.IO
+Imports System.Xml
+
+Public Class Sample
+
+    Public Shared Sub Main()
+        Dim reader As XmlNodeReader = Nothing
+        Try
+            'Create and load the XML document.
+            Dim doc As New XmlDocument()
+            doc.LoadXml("<book genre='novel' ISBN='1-861003-78' publicationdate='1987'>" & _
+                        "</book>")
+
+            ' Load the XmlNodeReader 
+            reader = New XmlNodeReader(doc)
+
+            'Read the ISBN attribute.
+            reader.MoveToContent()
+            Dim isbn As String = reader("ISBN")
+            Console.WriteLine("The ISBN value: " & isbn)
+        Finally
+            If Not (reader Is Nothing) Then
+                reader.Close()
+            End If
+        End Try
+    End Sub 'Main 
+End Class 'Sample
+```
+
+```csharp
+using System;
+using System.IO;
+using System.Xml;
+
+public class Sample 
+{
+  public static void Main()
+  {
+    XmlNodeReader reader = null;
+
+    try
+    {
+       //Create and load the XML document.
+       XmlDocument doc = new XmlDocument();
+       doc.LoadXml("<book genre='novel' ISBN='1-861003-78' publicationdate='1987'> " +
+                   "</book>"); 
+
+       // Load the XmlNodeReader 
+       reader = new XmlNodeReader(doc);
+
+       //Read the ISBN attribute.
+       reader.MoveToContent();
+       string isbn =reader["ISBN"];
+       Console.WriteLine("The ISBN value: " + isbn);
+
+     } 
+
+     finally 
+     {
+        if (reader != null)
+          reader.Close();
+      }
+  }
+
+} // End class
+```
+
+```cpp
+#using <System.Xml.dll>
+
+using namespace System;
+using namespace System::IO;
+using namespace System::Xml;
+
+int main()
+{
+   XmlNodeReader^ reader = nullptr;
+   try
+   {
+
+      //Create and load the XML document.
+      XmlDocument^ doc = gcnew XmlDocument;
+      doc->LoadXml( "<book genre='novel' ISBN='1-861003-78' publicationdate='1987'></book>" );
+
+      // Load the XmlNodeReader 
+      reader = gcnew XmlNodeReader( doc );
+
+      //Read the ISBN attribute.
+      reader->MoveToContent();
+      String^ isbn = reader[ "ISBN" ];
+      Console::WriteLine( "The ISBN value: {0}", isbn );
+   }
+   finally
+   {
+      if ( reader != nullptr )
+            reader->Close();
+   }
+}
+```
+
+]]></format>
+        </remarks>
+        <altmember cref="Overload:System.Xml.XmlNodeReader.GetAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -954,11 +1086,23 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <Parameter Name="namespaceURI" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="namespaceURI">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="name">The local name of the attribute.</param>
+        <param name="namespaceURI">The namespace URI of the attribute.</param>
+        <summary>Gets the value of the attribute with the specified local name and namespace URI.</summary>
+        <value>The value of the specified attribute. If the attribute is not found, <see langword="null" /> is returned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+
+> [!NOTE]
+> In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.
+
+This property does not move the reader.
+
+]]></format>
+        </remarks>
+        <altmember cref="Overload:System.Xml.XmlNodeReader.GetAttribute" />
       </Docs>
     </Member>
     <Member MemberName="LocalName">
@@ -1702,9 +1846,18 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the quotation mark character used to enclose the value of an attribute node.</summary>
+        <value>XmlNodeReader always uses a double quote (").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+
+> [!NOTE]
+>  In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Read">

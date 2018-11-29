@@ -996,6 +996,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -1020,9 +1021,17 @@
       </Parameters>
       <Docs>
         <param name="control">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Contains(System.Object)" />.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+ ## Remarks  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.Control.ControlCollection> instance is cast to an <xref:System.Collections.IList> interface.
+
+]]></format>        
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -1047,9 +1056,16 @@
       </Parameters>
       <Docs>
         <param name="control">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.IndexOf(System.Object)" />.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+ ## Remarks  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.Control.ControlCollection> instance is cast to an <xref:System.Collections.IList> interface.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -1076,8 +1092,15 @@
       <Docs>
         <param name="index">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+ ## Remarks  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.Control.ControlCollection> instance is cast to an <xref:System.Collections.IList> interface.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -1113,6 +1136,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -1146,6 +1170,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

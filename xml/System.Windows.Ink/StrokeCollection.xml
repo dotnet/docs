@@ -1,4 +1,4 @@
-﻿<Type Name="StrokeCollection" FullName="System.Windows.Ink.StrokeCollection">
+<Type Name="StrokeCollection" FullName="System.Windows.Ink.StrokeCollection">
   <TypeSignature Language="C#" Value="public class StrokeCollection : System.Collections.ObjectModel.Collection&lt;System.Windows.Ink.Stroke&gt;, System.Collections.Specialized.INotifyCollectionChanged, System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StrokeCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Windows.Ink.Stroke&gt; implements class System.Collections.Specialized.INotifyCollectionChanged, class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.StrokeCollection" />
@@ -1628,8 +1628,9 @@
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="T:System.Windows.Ink.StrokeCollection" /> changes.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.INotifyPropertyChanged.PropertyChanged">
@@ -1649,8 +1650,9 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the value of any <see cref="T:System.Windows.Ink.StrokeCollection" /> property has changed.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Transform">

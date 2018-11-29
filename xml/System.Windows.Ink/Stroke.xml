@@ -1,4 +1,4 @@
-﻿<Type Name="Stroke" FullName="System.Windows.Ink.Stroke">
+<Type Name="Stroke" FullName="System.Windows.Ink.Stroke">
   <TypeSignature Language="C#" Value="public class Stroke : System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Stroke extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.Stroke" />
@@ -1615,8 +1615,9 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the value of any <see cref="T:System.Windows.Ink.Stroke" /> property has changed.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Transform">

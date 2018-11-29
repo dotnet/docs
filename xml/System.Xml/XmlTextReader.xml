@@ -103,7 +103,7 @@
     <block subset="none" type="overrides">
       <para>This class has an inheritance demand. Full trust is required to inherit from <see langword="XmlTextReader" />.</para>
     </block>
-    <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+    <related type="Article" href="~/docs/standard/data/xml/index.md">XML Documents and Data</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -4087,9 +4087,17 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
         <ReturnType>System.Xml.XmlReaderSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Xml.XmlReaderSettings" /> object used to create this <see cref="T:System.Xml.XmlTextReader" /> instance.</summary>
+        <value>The <see cref="T:System.Xml.XmlReaderSettings" /> object used to create this <see cref="T:System.Xml.XmlTextReader" /> instance; <see langword="null" /> if the reader was not created using the <see cref="Overload:System.Xml.XmlReader.Create" /> method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+
+> In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the recommended practice is to create <xref:System.Xml.XmlReader> instances using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. This allows you to take full advantage of all the new features introduced in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For more information, see the Remarks section in the <xref:System.Xml.XmlReader> reference page.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Skip">
@@ -4174,9 +4182,16 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="M:System.Xml.IXmlLineInfo.HasLineInfo" />.</summary>
+        <returns><see langword="true" /> if <see cref="P:System.Xml.IXmlLineInfo.LineNumber" /> and <see cref="P:System.Xml.IXmlLineInfo.LinePosition" /> can be provided; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.XmlTextReader> instance is cast to an <xref:System.Xml.IXmlLineInfo> interface.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.IXmlNamespaceResolver.GetNamespacesInScope">

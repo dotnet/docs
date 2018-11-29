@@ -1,4 +1,4 @@
-﻿<Type Name="CanExecuteChangedEventManager" FullName="System.Windows.Input.CanExecuteChangedEventManager">
+<Type Name="CanExecuteChangedEventManager" FullName="System.Windows.Input.CanExecuteChangedEventManager">
   <TypeSignature Language="C#" Value="public class CanExecuteChangedEventManager : System.Windows.WeakEventManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CanExecuteChangedEventManager extends System.Windows.WeakEventManager" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.CanExecuteChangedEventManager" />
@@ -74,8 +74,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a new object to contain listeners to the <see cref="E:System.Windows.Input.ICommand.CanExecuteChanged" /> event.</summary>
+        <returns>A new object to contain listeners to the <see cref="E:System.Windows.Input.ICommand.CanExecuteChanged" /> event.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

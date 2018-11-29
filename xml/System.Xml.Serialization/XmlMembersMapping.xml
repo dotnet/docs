@@ -1,4 +1,4 @@
-﻿<Type Name="XmlMembersMapping" FullName="System.Xml.Serialization.XmlMembersMapping">
+<Type Name="XmlMembersMapping" FullName="System.Xml.Serialization.XmlMembersMapping">
   <TypeSignature Language="C#" Value="public class XmlMembersMapping : System.Xml.Serialization.XmlMapping" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlMembersMapping extends System.Xml.Serialization.XmlMapping" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlMembersMapping" />
@@ -136,9 +136,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the unqualified name of the XML Schema element that represents a SOAP message for which .NET Framework type mapping information is being provided.</summary>
+        <value>Gets the XML Schema element name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+A SOAP message is defined in a Web Services Description Language (WSDL) document using the message element.
+
+See the <xref:System.Xml.Serialization.XmlMembersMapping> class for the conditions under which the <xref:System.Xml.Serialization.XmlMapping.ElementName> property refers to a code entity defined in a Web service method (a parameter or return value) instead of to an extra parent or wrapper element.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -218,9 +228,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the XML namespace of the XML schema element that represents a SOAP message for which .NET Framework type mapping information is being provided.</summary>
+        <value>The XML namespace of the schema element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+A SOAP message is defined in a Web Services Description Language (WSDL) document using the message element.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeName">

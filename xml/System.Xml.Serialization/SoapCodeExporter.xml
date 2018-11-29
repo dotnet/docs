@@ -1,4 +1,4 @@
-﻿<Type Name="SoapCodeExporter" FullName="System.Xml.Serialization.SoapCodeExporter">
+<Type Name="SoapCodeExporter" FullName="System.Xml.Serialization.SoapCodeExporter">
   <TypeSignature Language="C#" Value="public class SoapCodeExporter : System.Xml.Serialization.CodeExporter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapCodeExporter extends System.Xml.Serialization.CodeExporter" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.SoapCodeExporter" />
@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.SoapCodeExporter> class is used by the [Web Services Description Language Tool (Wsdl.exe)](https://msdn.microsoft.com/library/b9210348-8bc2-4367-8c91-d1a04b403e88) and the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of using <xref:System.Xml.Serialization.SoapCodeExporter> directly, use Wsdl.exe.  
+ The <xref:System.Xml.Serialization.SoapCodeExporter> class is used by the [Web Services Description Language Tool (Wsdl.exe)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7h3ystb6(v=vs.100)) and the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of using <xref:System.Xml.Serialization.SoapCodeExporter> directly, use Wsdl.exe.  
   
  ]]></format>
     </remarks>
@@ -372,9 +372,19 @@
         <ReturnType>System.CodeDom.CodeAttributeDeclarationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of <see cref="T:System.Xml.Serialization.XmlIncludeAttribute" /> declarations, specifying derived types.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeAttributeDeclarationCollection" /> that contains the attributes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+One or more <xref:System.Xml.Serialization.XmlIncludeAttribute> attributes can be applied to a base type to allow one or more derived types to be serialized, depending on an object's actual type at run time.
+
+Rather than use the <xref:System.Xml.Serialization.SoapCodeExporter> class, use the Wsdl.exe tool.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

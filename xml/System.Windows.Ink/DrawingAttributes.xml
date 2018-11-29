@@ -1,4 +1,4 @@
-﻿<Type Name="DrawingAttributes" FullName="System.Windows.Ink.DrawingAttributes">
+<Type Name="DrawingAttributes" FullName="System.Windows.Ink.DrawingAttributes">
   <TypeSignature Language="C#" Value="public class DrawingAttributes : System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DrawingAttributes extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.DrawingAttributes" />
@@ -1176,8 +1176,9 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the value of any <see cref="T:System.Windows.Ink.DrawingAttributes" /> property has changed.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Width">

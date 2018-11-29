@@ -1,4 +1,4 @@
-﻿<Type Name="XmlSchemaDatatype" FullName="System.Xml.Schema.XmlSchemaDatatype">
+<Type Name="XmlSchemaDatatype" FullName="System.Xml.Schema.XmlSchemaDatatype">
   <TypeSignature Language="C#" Value="public abstract class XmlSchemaDatatype" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlSchemaDatatype extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaDatatype" />
@@ -327,12 +327,31 @@
         <Parameter Name="nsmgr" Type="System.Xml.XmlNamespaceManager" />
       </Parameters>
       <Docs>
-        <param name="s">To be added.</param>
-        <param name="nameTable">To be added.</param>
-        <param name="nsmgr">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="s">The string to validate against the simple type.</param>
+        <param name="nameTable">The <see cref="T:System.Xml.XmlNameTable" /> to use for atomization while parsing the string if this <see cref="T:System.Xml.Schema.XmlSchemaDatatype" /> object represents the xs:NCName type.</param>
+        <param name="nsmgr">The <see cref="T:System.Xml.XmlNamespaceManager" /> object to use while parsing the string if this <see cref="T:System.Xml.Schema.XmlSchemaDatatype" /> object represents the xs:QName type.</param>
+        <summary>When overridden in a derived class, validates the specified string against a built-in or user-defined simple type.</summary>
+        <returns>An <see cref="T:System.Object" /> that can be safely cast to the type that is returned by the <see cref="P:System.Xml.Schema.XmlSchemaDatatype.ValueType" /> property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The <xref:System.Xml.Schema.XmlSchemaDatatype.ParseValue%2A> method validates the specified string against a built-in or user-defined simple type. For example, if this <xref:System.Xml.Schema.XmlSchemaDatatype> represents the type xs:date, then an instance of <xref:System.DateTime> is returned.
+
+The following are the steps performed during the <xref:System.Xml.Schema.XmlSchemaDatatype.ParseValue%2A> method's validation process.
+
+1. Convert the specified string to its corresponding Common Language Runtime (CLR) type.
+
+2. Verify that the value does not violate any facets that are defined for the simple type.
+
+The converted value is then returned as an <xref:System.Object> and can be cast safely to the type that is returned by the <xref:System.Xml.Schema.XmlSchemaDatatype.ValueType> property.
+
+When the <xref:System.Xml.Schema.XmlSchemaDatatype> object represents a list type, the input string value is converted to a list of one or more objects. When the <xref:System.Xml.Schema.XmlSchemaDatatype> object represents a list type, an attempt is made to parse the input value as a member type of the union. If the parse attempt fails, then the conversion is attempted with the next member of the union until the parse is successful or there are no other member types to parse. If the parse is unsuccessful, an exception is thrown.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The input value is not a valid instance of this W3C XML Schema type.</exception>
+        <exception cref="T:System.ArgumentNullException">The value to parse cannot be null (Nothing in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="TokenizedType">

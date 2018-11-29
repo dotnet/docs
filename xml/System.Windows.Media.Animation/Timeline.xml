@@ -869,8 +869,27 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the desired frame rate for this timeline and its child timelines.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Use this property to define a specific frame rate at which animations should run.  This is a guideline only, and is not a guaranteed value. This property has two primary uses:
+
+- Limiting the amount of processing resources for slow-moving, background type animations that do not require a high degree of fidelity. This can be achieved by setting a small frame rate value on the timeline.
+
+- Reducing the visual impact of tearing on fast-moving horizontal animations. This can be achieved by setting a high frame rate value on the timeline.
+
+This property may only be set on a root timeline.
+
+## Examples  
+The following example uses the DesiredFrameRate property to limit several animations to 10 frames per second.
+
+[!code-xaml[timingbehaviors_snip#GraphicsMMDesiredFrameRateExample](~/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/DesiredFrameRateExample.xaml#GraphicsMMDesiredFrameRateExample)]
+
+]]></format>
+        </remarks>
+        <related type="Article" href="~/docs/framework/wpf/graphics-multimedia/animation-overview.md">Animation Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DesiredFrameRateProperty">

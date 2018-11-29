@@ -1,4 +1,4 @@
-﻿<Type Name="XmlValidatingReader" FullName="System.Xml.XmlValidatingReader">
+<Type Name="XmlValidatingReader" FullName="System.Xml.XmlValidatingReader">
   <TypeSignature Language="C#" Value="public class XmlValidatingReader : System.Xml.XmlReader, System.Xml.IXmlLineInfo, System.Xml.IXmlNamespaceResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlValidatingReader extends System.Xml.XmlReader implements class System.Xml.IXmlLineInfo, class System.Xml.IXmlNamespaceResolver" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlValidatingReader" />
@@ -3153,9 +3153,20 @@ object obj = vreader.SchemaType;
         <ReturnType>System.Xml.XmlReaderSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Xml.XmlReaderSettings" /> object that was used to create this <see cref="T:System.Xml.XmlValidatingReader" /> instance.</summary>
+        <value><see langword="null" /> because <see cref="T:System.Xml.XmlValidatingReader" /> objects are not instantiated using the <see cref="T:System.Xml.XmlReaderSettings" /> class and the <see cref="Overload:System.Xml.XmlReader.Create" /> method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+
+> [!NOTE]
+> The <xref:System.Xml.XmlValidatingReader> class is obsolete in .NET Framework version 2.0. 
+> You can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. 
+> For more information, see [Validating XML Data with XmlReader](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/hdf992b8(v=vs.100)).
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.IXmlLineInfo.HasLineInfo">
@@ -3183,8 +3194,8 @@ object obj = vreader.SchemaType;
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a value indicating whether the class can return line information.</summary>
+        <returns><see langword="true" /> if <see cref="P:System.Xml.IXmlLineInfo.LineNumber" /> and <see cref="P:System.Xml.IXmlLineInfo.LinePosition" /> can be provided; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

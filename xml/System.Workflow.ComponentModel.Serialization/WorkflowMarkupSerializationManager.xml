@@ -1,4 +1,4 @@
-﻿<Type Name="WorkflowMarkupSerializationManager" FullName="System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager">
+<Type Name="WorkflowMarkupSerializationManager" FullName="System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager">
   <TypeSignature Language="C#" Value="public class WorkflowMarkupSerializationManager : IServiceProvider, System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowMarkupSerializationManager extends System.Object implements class System.ComponentModel.Design.Serialization.IDesignerSerializationManager, class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager" />
@@ -516,8 +516,15 @@
         <ReturnType>System.ComponentModel.Design.Serialization.ResolveNameEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when <see cref="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#GetName(System.Object)" /> cannot locate the specified name in the serialization manager's name table.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This event provides a way for a serializer to create an object on demand, so that the serializer does not have to order object creation by dependency. The delegate for this event is cleared immediately after serialization or deserialization is complete.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SerializationComplete">
@@ -537,8 +544,17 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when serialization is complete.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This event is raised when serialization or deserialization is complete.
+
+Generally, serialization code is written to emit serialization data and does not typically require state-related checking and processing. If it is necessary to maintain state data throughout serialization, data can be set and accessed by a serializer, which can listen to the <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System%23ComponentModel%23Design%23Serialization%23IDesignerSerializationManager%23SerializationComplete> event, and clear the data after serialization. Restoring the proper state after serialization is important because serializers can be reused during serialization, and leftover state data or open streams might not be correct.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SetName">

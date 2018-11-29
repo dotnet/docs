@@ -2324,7 +2324,7 @@ There are problems accessing the performance counter API's used to get process i
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The main window is the window opened by the process that currently has the focus (the <xref:System.Windows.Forms.Form.TopLevel%2A> form). You must use the <xref:System.Diagnostics.Process.Refresh%2A> method to refresh the <xref:System.Diagnostics.Process> object to get the current main window handle if it has changed. In general, because the window handle is cached, use <xref:System.Diagnostics.Process.Refresh%2A> beforehand to guarantee that you’ll retrieve the current handle.  
+ The main window is the window opened by the process that currently has the focus (the <xref:System.Windows.Forms.Form.TopLevel%2A> form). You must use the <xref:System.Diagnostics.Process.Refresh%2A> method to refresh the <xref:System.Diagnostics.Process> object to get the current main window handle if it has changed. In general, because the window handle is cached, use <xref:System.Diagnostics.Process.Refresh%2A> beforehand to guarantee that you'll retrieve the current handle.  
   
  You can get the <xref:System.Diagnostics.Process.MainWindowHandle%2A> property only for processes that are running on the local computer. The <xref:System.Diagnostics.Process.MainWindowHandle%2A> property is a value that uniquely identifies the window that is associated with the process.  
   
@@ -2874,7 +2874,7 @@ There are problems accessing the performance counter API's used to get process i
 ## Examples  
  The following example illustrates how to perform asynchronous read operations on the redirected <xref:System.Diagnostics.Process.StandardOutput%2A> stream of the `ipconfig` command.  
   
- The example creates an event delegate for the `OutputHandler` event handler and associates it with the <xref:System.Diagnostics.Process.OutputDataReceived> event. The event handler receives text lines from the redirected <xref:System.Diagnostics.Process.StandardOutput%2A> stream, formats the text, and saves it in an output string that’s later shown in the example’s console window.  
+ The example creates an event delegate for the `OutputHandler` event handler and associates it with the <xref:System.Diagnostics.Process.OutputDataReceived> event. The event handler receives text lines from the redirected <xref:System.Diagnostics.Process.StandardOutput%2A> stream, formats the text, and saves it in an output string that's later shown in the example's console window.  
   
  [!code-cpp[Process_AsyncStreams#4](~/samples/snippets/cpp/VS_Snippets_CLR/process_asyncstreams/CPP/datareceivedevent.cpp#4)]
  [!code-csharp[Process_AsyncStreams#4](~/samples/snippets/csharp/VS_Snippets_CLR/process_asyncstreams/CS/datareceivedevent.cs#4)]
@@ -4524,7 +4524,7 @@ p.WaitForExit();
    
   
 ## Examples  
- The following example runs the ipconfig.exe command and redirects its standard output to the example’s console window.  
+ The following example runs the ipconfig.exe command and redirects its standard output to the example's console window.  
   
  [!code-cpp[Process_StandardOutput#2](~/samples/snippets/cpp/VS_Snippets_CLR/Process_StandardOutput/CPP/process_standardoutput.cpp#2)]
  [!code-csharp[Process_StandardOutput#2](~/samples/snippets/csharp/VS_Snippets_CLR/Process_StandardOutput/CS/process_standardoutput.cs#2)]
@@ -4673,7 +4673,7 @@ p.WaitForExit();
       <Docs>
         <param name="startInfo">The <see cref="T:System.Diagnostics.ProcessStartInfo" /> that contains the information that is used to start the process, including the file name and any command-line arguments.</param>
         <summary>Starts the process resource that is specified by the parameter containing process start information (for example, the file name of the process to start) and associates the resource with a new <see cref="T:System.Diagnostics.Process" /> component.</summary>
-        <returns>A new <see cref="T:System.Diagnostics.Process" /> that is associated with the process resource, or <see langword="null" /> if no process resource is started. Note that a new process that’s started alongside already running instances of the same process will be independent from the others. In addition, Start may return a non-null Process with its <see cref="P:System.Diagnostics.Process.HasExited" /> property already set to <see langword="true" />. In this case, the started process may have activated an existing instance of itself and then exited.</returns>
+        <returns>A new <see cref="T:System.Diagnostics.Process" /> that is associated with the process resource, or <see langword="null" /> if no process resource is started. Note that a new process that's started alongside already running instances of the same process will be independent from the others. In addition, Start may return a non-null Process with its <see cref="P:System.Diagnostics.Process.HasExited" /> property already set to <see langword="true" />. In this case, the started process may have activated an existing instance of itself and then exited.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4775,7 +4775,7 @@ p.WaitForExit();
       <Docs>
         <param name="fileName">The name of a document or application file to run in the process.</param>
         <summary>Starts a process resource by specifying the name of a document or application file and associates the resource with a new <see cref="T:System.Diagnostics.Process" /> component.</summary>
-        <returns>A new <see cref="T:System.Diagnostics.Process" /> that is associated with the process resource, or <see langword="null" /> if no process resource is started. Note that a new process that’s started alongside already running instances of the same process will be independent from the others. In addition, Start may return a non-null Process with its <see cref="P:System.Diagnostics.Process.HasExited" /> property already set to <see langword="true" />. In this case, the started process may have activated an existing instance of itself and then exited.</returns>
+        <returns>A new <see cref="T:System.Diagnostics.Process" /> that is associated with the process resource, or <see langword="null" /> if no process resource is started. Note that a new process that's started alongside already running instances of the same process will be independent from the others. In addition, Start may return a non-null Process with its <see cref="P:System.Diagnostics.Process.HasExited" /> property already set to <see langword="true" />. In this case, the started process may have activated an existing instance of itself and then exited.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4861,7 +4861,7 @@ p.WaitForExit();
         <param name="fileName">The name of an application file to run in the process.</param>
         <param name="arguments">Command-line arguments to pass when starting the process.</param>
         <summary>Starts a process resource by specifying the name of an application and a set of command-line arguments, and associates the resource with a new <see cref="T:System.Diagnostics.Process" /> component.</summary>
-        <returns>A new <see cref="T:System.Diagnostics.Process" /> that is associated with the process resource, or <see langword="null" /> if no process resource is started. Note that a new process that’s started alongside already running instances of the same process will be independent from the others. In addition, Start may return a non-null Process with its <see cref="P:System.Diagnostics.Process.HasExited" /> property already set to <see langword="true" />. In this case, the started process may have activated an existing instance of itself and then exited.</returns>
+        <returns>A new <see cref="T:System.Diagnostics.Process" /> that is associated with the process resource, or <see langword="null" /> if no process resource is started. Note that a new process that's started alongside already running instances of the same process will be independent from the others. In addition, Start may return a non-null Process with its <see cref="P:System.Diagnostics.Process.HasExited" /> property already set to <see langword="true" />. In this case, the started process may have activated an existing instance of itself and then exited.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4956,7 +4956,7 @@ p.WaitForExit();
         <param name="password">A <see cref="T:System.Security.SecureString" /> that contains the password to use when starting the process.</param>
         <param name="domain">The domain to use when starting the process.</param>
         <summary>Starts a process resource by specifying the name of an application, a user name, a password, and a domain and associates the resource with a new <see cref="T:System.Diagnostics.Process" /> component.</summary>
-        <returns>A new <see cref="T:System.Diagnostics.Process" /> that is associated with the process resource, or <see langword="null" /> if no process resource is started. Note that a new process that’s started alongside already running instances of the same process will be independent from the others. In addition, Start may return a non-null Process with its <see cref="P:System.Diagnostics.Process.HasExited" /> property already set to <see langword="true" />. In this case, the started process may have activated an existing instance of itself and then exited.</returns>
+        <returns>A new <see cref="T:System.Diagnostics.Process" /> that is associated with the process resource, or <see langword="null" /> if no process resource is started. Note that a new process that's started alongside already running instances of the same process will be independent from the others. In addition, Start may return a non-null Process with its <see cref="P:System.Diagnostics.Process.HasExited" /> property already set to <see langword="true" />. In this case, the started process may have activated an existing instance of itself and then exited.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5040,7 +5040,7 @@ p.WaitForExit();
         <param name="password">A <see cref="T:System.Security.SecureString" /> that contains the password to use when starting the process.</param>
         <param name="domain">The domain to use when starting the process.</param>
         <summary>Starts a process resource by specifying the name of an application, a set of command-line arguments, a user name, a password, and a domain and associates the resource with a new <see cref="T:System.Diagnostics.Process" /> component.</summary>
-        <returns>A new <see cref="T:System.Diagnostics.Process" /> that is associated with the process resource, or <see langword="null" /> if no process resource is started. Note that a new process that’s started alongside already running instances of the same process will be independent from the others. In addition, Start may return a non-null Process with its <see cref="P:System.Diagnostics.Process.HasExited" /> property already set to <see langword="true" />. In this case, the started process may have activated an existing instance of itself and then exited.</returns>
+        <returns>A new <see cref="T:System.Diagnostics.Process" /> that is associated with the process resource, or <see langword="null" /> if no process resource is started. Note that a new process that's started alongside already running instances of the same process will be independent from the others. In addition, Start may return a non-null Process with its <see cref="P:System.Diagnostics.Process.HasExited" /> property already set to <see langword="true" />. In this case, the started process may have activated an existing instance of itself and then exited.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -338,7 +338,7 @@
 ## Remarks  
  Use this to request a typed object such as an interface for setting properties or getting status from the appropriate layer in the channel factory stack. If a layer supports returning the requested object, it returns it. If not, it simply delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no channel factory layer supported the requested object, then the method returns `null`.  
   
- This is similar to COM+’s QueryService interface.  
+ This is similar to COM+'s QueryService interface.  
   
  ]]></format>
         </remarks>

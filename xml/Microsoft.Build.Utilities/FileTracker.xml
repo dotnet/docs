@@ -667,7 +667,7 @@
       </Parameters>
       <Docs>
         <param name="command">The command to track</param>
-        <param name="arguments">The command‘s arguments</param>
+        <param name="arguments">The command's arguments</param>
         <param name="toolType">The type of executable the wrapped tool is</param>
         <param name="rootFiles">Rooting marker</param>
         <summary>Start the process; tracking the command.</summary>

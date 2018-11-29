@@ -37,7 +37,7 @@
   
  An application's speech recognition engine, as managed by a <xref:System.Speech.Recognition.SpeechRecognizer> or <xref:System.Speech.Recognition.SpeechRecognitionEngine> object, can load multiple speech recognition grammars. The application can independently enable or disable individual grammars by setting the <xref:System.Speech.Recognition.Grammar.Enabled%2A> property, and modify recognition behavior through <xref:System.Speech.Recognition.Grammar> properties, such as the <xref:System.Speech.Recognition.Grammar.Priority%2A> and <xref:System.Speech.Recognition.Grammar.Weight%2A> properties.  
   
- The grammar’s <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event is raised when input matches a path through the grammar.  
+ The grammar's <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event is raised when input matches a path through the grammar.  
   
 > [!NOTE]
 >  It is a best practice to verify the safety of any URI or DLL used to build a <xref:System.Speech.Recognition.Grammar> object.  

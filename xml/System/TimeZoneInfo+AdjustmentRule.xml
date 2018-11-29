@@ -405,7 +405,7 @@ TimeZoneTime = BaseUtcOffset + DaylightDelta + UtcTime
  The value of the <xref:System.TimeZoneInfo.AdjustmentRule.DaylightDelta%2A> property can range from 14 hours to -14 hours.  
   
 > [!NOTE]
->  The <xref:System.TimeZoneInfo.AdjustmentRule.DaylightDelta%2A> property measures the difference between the time zone’s standard time and its daylight saving time. It does not apply to changes in a time zone's standard offset from Coordinated Universal Time (UTC). To represent a time zone that has changed its standard time offset from UTC, you must call the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method to create a new time zone.  
+>  The <xref:System.TimeZoneInfo.AdjustmentRule.DaylightDelta%2A> property measures the difference between the time zone's standard time and its daylight saving time. It does not apply to changes in a time zone's standard offset from Coordinated Universal Time (UTC). To represent a time zone that has changed its standard time offset from UTC, you must call the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method to create a new time zone.  
   
  The most common value of the <xref:System.TimeZoneInfo.AdjustmentRule.DaylightDelta%2A> property is 1.0 hours. The application of the daylight saving time adjustment rule increases the time zone's offset from Coordinated Universal Time (UTC) by one hour.  
   

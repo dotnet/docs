@@ -255,7 +255,7 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The activity to be executed if the activity’s <see cref="P:System.Activities.Statements.If.Condition" /> resolves to <see langword="false" />.</summary>
+        <summary>The activity to be executed if the activity's <see cref="P:System.Activities.Statements.If.Condition" /> resolves to <see langword="false" />.</summary>
         <value>The child activity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -349,7 +349,7 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The activity to be executed if the activity’s <see cref="P:System.Activities.Statements.If.Condition" /> resolves to <see langword="true" />.</summary>
+        <summary>The activity to be executed if the activity's <see cref="P:System.Activities.Statements.If.Condition" /> resolves to <see langword="true" />.</summary>
         <value>The child activity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -15962,7 +15962,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
    
   
 ## Examples  
- The following code example handles the <xref:System.Windows.Forms.Control.Resize> event of a <xref:System.Windows.Forms.Form>. When the form is resized, the event handler ensures that the form stays square (its <xref:System.Windows.Forms.Control.Height%2A> and <xref:System.Windows.Forms.Control.Width%2A> remain equal). To run this example, make sure and associate this event-handling method with the form’s <xref:System.Windows.Forms.Control.Resize> event.  
+ The following code example handles the <xref:System.Windows.Forms.Control.Resize> event of a <xref:System.Windows.Forms.Form>. When the form is resized, the event handler ensures that the form stays square (its <xref:System.Windows.Forms.Control.Height%2A> and <xref:System.Windows.Forms.Control.Width%2A> remain equal). To run this example, make sure and associate this event-handling method with the form's <xref:System.Windows.Forms.Control.Resize> event.  
   
  [!code-cpp[WinForms.Control.Resize#1](~/samples/snippets/cpp/VS_Snippets_Winforms/WinForms.Control.Resize/CPP/form1.cpp#1)]
  [!code-csharp[WinForms.Control.Resize#1](~/samples/snippets/csharp/VS_Snippets_Winforms/WinForms.Control.Resize/CS/form1.cs#1)]

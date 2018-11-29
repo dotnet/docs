@@ -78,11 +78,11 @@
   
 -   You need to be able to iterate over the data in performance critical sections  
   
--   You have many instances of immutable collections and you can’t afford keeping the data in trees  
+-   You have many instances of immutable collections and you can't afford keeping the data in trees  
   
  Reasons to use immutable list:  
   
--   Updating the data is common or the number of elements isn’t expected to be small  
+-   Updating the data is common or the number of elements isn't expected to be small  
   
 -   Updating the collection is more performance critical than iterating the contents  
   

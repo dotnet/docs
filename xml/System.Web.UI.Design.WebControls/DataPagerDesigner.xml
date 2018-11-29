@@ -264,7 +264,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>Override the <see cref="M:System.Web.UI.Design.WebControls.DataPagerDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method to add properties to or change attributes of properties in the design-time property collection. Make sure that you call the base class’s <see cref="M:System.Web.UI.Design.WebControls.DataPagerDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method before you perform other processing.</para>
+          <para>Override the <see cref="M:System.Web.UI.Design.WebControls.DataPagerDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method to add properties to or change attributes of properties in the design-time property collection. Make sure that you call the base class' <see cref="M:System.Web.UI.Design.WebControls.DataPagerDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method before you perform other processing.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.DataPager" />
         <altmember cref="P:System.Web.UI.WebControls.DataPager.PagedControlID" />

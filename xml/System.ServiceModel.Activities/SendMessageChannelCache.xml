@@ -142,7 +142,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the cache is only available for <xref:System.ServiceModel.Activities.Send> activities that don’t use endpoints defined in configuration. However, if you want to turn caching on in this case call this constructor with the `allowUnsafeCaching` parameter set to `true`. Next, add the new instance of this class as an extension to a workflow service host or a workflow instance.  
+ By default, the cache is only available for <xref:System.ServiceModel.Activities.Send> activities that don't use endpoints defined in configuration. However, if you want to turn caching on in this case call this constructor with the `allowUnsafeCaching` parameter set to `true`. Next, add the new instance of this class as an extension to a workflow service host or a workflow instance.  
   
  For more information about channel factories, see <xref:System.ServiceModel.ChannelFactory> and <xref:System.ServiceModel.ChannelFactory%601>.  
   

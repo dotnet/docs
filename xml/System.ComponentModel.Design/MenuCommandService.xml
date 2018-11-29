@@ -105,7 +105,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.Design.MenuCommandService.AddCommand%2A> method adds a command handler to the menu command service. Command handlers do not define the text, shortcut, or placement of a menu item. Rather, they define the menu item’s behavior if the item is clicked.  
+ The <xref:System.ComponentModel.Design.MenuCommandService.AddCommand%2A> method adds a command handler to the menu command service. Command handlers do not define the text, shortcut, or placement of a menu item. Rather, they define the menu item's behavior if the item is clicked.  
   
  ]]></format>
         </remarks>
@@ -557,7 +557,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.ComponentModel.Design.MenuCommandService.OnCommandsChanged(System.ComponentModel.Design.MenuCommandsChangedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.ComponentModel.Design.MenuCommandService.OnCommandsChanged(System.ComponentModel.Design.MenuCommandsChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.ComponentModel.Design.MenuCommandService.OnCommandsChanged(System.ComponentModel.Design.MenuCommandsChangedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.ComponentModel.Design.MenuCommandService.OnCommandsChanged(System.ComponentModel.Design.MenuCommandsChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
         <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
@@ -703,7 +703,7 @@
   
 -   Verbs offered by the currently selected designer.  
   
- Verbs added to this service through the <xref:System.ComponentModel.Design.MenuCommandService.AddVerb%2A> method are called global verbs because they are global to this service, but generally there is one instance of this service for each tool or document window. Designer verbs are obtained by querying the service provider for <xref:System.ComponentModel.Design.IDesignerHost> and <xref:System.ComponentModel.Design.ISelectionService>. If the selection service offers a primary selection, and a designer can be obtained for that selection from <xref:System.ComponentModel.Design.IDesignerHost>, the designer’s verbs are added to this list. If the name of a global verb conflicts with the name of a designer verb, the designer-provided designer verb takes precedence.  
+ Verbs added to this service through the <xref:System.ComponentModel.Design.MenuCommandService.AddVerb%2A> method are called global verbs because they are global to this service, but generally there is one instance of this service for each tool or document window. Designer verbs are obtained by querying the service provider for <xref:System.ComponentModel.Design.IDesignerHost> and <xref:System.ComponentModel.Design.ISelectionService>. If the selection service offers a primary selection, and a designer can be obtained for that selection from <xref:System.ComponentModel.Design.IDesignerHost>, the designer's verbs are added to this list. If the name of a global verb conflicts with the name of a designer verb, the designer-provided designer verb takes precedence.  
   
  ]]></format>
         </remarks>

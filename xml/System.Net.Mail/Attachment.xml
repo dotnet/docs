@@ -597,7 +597,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Mail.Attachment.Name%2A> property is used in the Content-Type header generated for this attachment. The <xref:System.Net.Mail.Attachment.Name%2A> is displayed as the attachment’s name when the email with the attachment is received. A grammar that details the syntax of the Content-Type header is described in RFC 2045 Section 5.1. RFC 2046 provides detailed information about MIME media types and their parameters. These RFCs are available at [https://www.ietf.org/](https://www.ietf.org/).  
+ The <xref:System.Net.Mail.Attachment.Name%2A> property is used in the Content-Type header generated for this attachment. The <xref:System.Net.Mail.Attachment.Name%2A> is displayed as the attachment's name when the email with the attachment is received. A grammar that details the syntax of the Content-Type header is described in RFC 2045 Section 5.1. RFC 2046 provides detailed information about MIME media types and their parameters. These RFCs are available at [https://www.ietf.org/](https://www.ietf.org/).  
   
    
   

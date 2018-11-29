@@ -450,10 +450,10 @@
       </Parameters>
       <Docs>
         <param name="message">The message that contains the <see cref="P:System.ServiceModel.Channels.Message.Properties" /> to inspect.</param>
-        <param name="property">When this method returns, contains the <see cref="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" /> contained in the specified message’s <see cref="P:System.ServiceModel.Channels.Message.Properties" />; otherwise, <see langword="null" />. This parameter is passed uninitialized.</param>
-        <summary>Attempts to get a <see cref="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" /> from the specified message’s <see cref="P:System.ServiceModel.Channels.Message.Properties" />.</summary>
+        <param name="property">When this method returns, contains the <see cref="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" /> contained in the specified message's <see cref="P:System.ServiceModel.Channels.Message.Properties" />; otherwise, <see langword="null" />. This parameter is passed uninitialized.</param>
+        <summary>Attempts to get a <see cref="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" /> from the specified message's <see cref="P:System.ServiceModel.Channels.Message.Properties" />.</summary>
         <returns>
-          <see langword="true" /> if the message’s <see cref="P:System.ServiceModel.Channels.Message.Properties" /> contain a <see cref="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" />; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the message's <see cref="P:System.ServiceModel.Channels.Message.Properties" /> contain a <see cref="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

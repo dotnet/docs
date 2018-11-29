@@ -23,7 +23,7 @@
   
  Use the <xref:System.Windows.Media.BitmapCacheBrush> class to efficiently reuse a cached element.  
   
- Set the <xref:System.Windows.Media.BitmapCache.RenderAtScale%2A> property to scale the bitmap cache. This is useful if an element will be zoomed, and you want the element to render more clearly than it would if the cache were simply generated at the element’s native resolution.  
+ Set the <xref:System.Windows.Media.BitmapCache.RenderAtScale%2A> property to scale the bitmap cache. This is useful if an element will be zoomed, and you want the element to render more clearly than it would if the cache were simply generated at the element's native resolution.  
   
  Set the <xref:System.Windows.Media.BitmapCache.SnapsToDevicePixels%2A> property when the cache displays content that requires pixel-alignment to render correctly, such as ClearType text. This property is ignored by the <xref:System.Windows.Media.BitmapCacheBrush> and <xref:System.Windows.Media.Media3D.Viewport2DVisual3D> classes.  
   

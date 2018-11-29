@@ -135,7 +135,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The binding is automatically created based on the protocols configured for the service host’s base address. Messages sent to the workflow instance control endpoint do not contain any personally identifiable information and therefore it need not be encrypted. Messages sent to the workflow control endpoint need to contain the user identity to use for authorization. When the HTTP protocol is enabled, the <xref:System.ServiceModel.WebHttpBinding> is used with the following settings.  
+ The binding is automatically created based on the protocols configured for the service host's base address. Messages sent to the workflow instance control endpoint do not contain any personally identifiable information and therefore it need not be encrypted. Messages sent to the workflow control endpoint need to contain the user identity to use for authorization. When the HTTP protocol is enabled, the <xref:System.ServiceModel.WebHttpBinding> is used with the following settings.  
   
 1.  Transaction flow is enabled.  
   
@@ -169,7 +169,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The binding is automatically created based on the protocols configured for the service host’s base address. Messages sent to the workflow instance control endpoint do not contain any personally identifiable information and therefore it need not be encrypted. Messages sent to the workflow control endpoint need to contain the user identity to use for authorization. When the net.pipe protocol is enabled, the <xref:System.ServiceModel.NetNamedPipeBinding> is used with the following settings.  
+ The binding is automatically created based on the protocols configured for the service host's base address. Messages sent to the workflow instance control endpoint do not contain any personally identifiable information and therefore it need not be encrypted. Messages sent to the workflow control endpoint need to contain the user identity to use for authorization. When the net.pipe protocol is enabled, the <xref:System.ServiceModel.NetNamedPipeBinding> is used with the following settings.  
   
 1.  Transaction flow is enabled.  
   

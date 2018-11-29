@@ -357,7 +357,7 @@
       <Docs>
         <typeparam name="T">The type of element stored by the array.</typeparam>
         <param name="location">The array to set to the specified value.</param>
-        <param name="value">The value to which the <paramref name="location" /> parameter is set, if it’s not initialized.</param>
+        <param name="value">The value to which the <paramref name="location" /> parameter is set, if it's not initialized.</param>
         <summary>  
   
  Sets an array to the specified array if the array has not been initialized.</summary>

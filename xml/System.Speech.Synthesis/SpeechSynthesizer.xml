@@ -411,7 +411,7 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices (engines for text-to-speech) it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+ When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices (engines for text-to-speech) it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice's <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
   
  ]]></format>
         </remarks>
@@ -822,7 +822,7 @@ namespace SampleSynthesis
 ## Remarks  
  Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. To select a voice, pass the entire contents of the <xref:System.Speech.Synthesis.VoiceInfo.Name%2A> property as the argument for the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice that contains `name` in the voice's <xref:System.Speech.Synthesis.VoiceInfo.Name%2A?displayProperty=nameWithType> property. The <xref:System.Speech.Synthesis.SpeechSynthesizer> performs a case-sensitive, substring comparison to determine if the voice matches the `name`.  
   
- When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+ When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice's <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
   
  To select a voice by gender, age, or locale, use one of the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods.  
   
@@ -845,7 +845,7 @@ namespace SampleSynthesis
 ## Remarks  
  Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice that matches the specified characteristics.  
   
- When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+ When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice's <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
   
  To select a voice by name, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method  
   
@@ -881,7 +881,7 @@ namespace SampleSynthesis
 ## Remarks  
  Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice whose <xref:System.Speech.Synthesis.VoiceInfo.Gender%2A> property matches the `gender` parameter.  
   
- When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+ When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice's <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
   
  To select a voice based on other characteristics, see the other <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods.  
   
@@ -924,7 +924,7 @@ namespace SampleSynthesis
 ## Remarks  
  Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice whose <xref:System.Speech.Synthesis.VoiceInfo.Gender%2A> and <xref:System.Speech.Synthesis.VoiceInfo.Age%2A> properties match the `gender` and `age` parameters.  
   
- When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+ When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice's <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
   
  To select a voice based on other characteristics, see the other <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods.  
   
@@ -970,7 +970,7 @@ namespace SampleSynthesis
 ## Remarks  
  Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object finds installed voices whose <xref:System.Speech.Synthesis.VoiceInfo.Gender%2A> and <xref:System.Speech.Synthesis.VoiceInfo.Age%2A> properties match the `gender` and `age` parameters. The <xref:System.Speech.Synthesis.SpeechSynthesizer> counts the matches it finds, and returns the voice when the count equals the `voiceAlternate` parameter.  
   
- When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+ When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice's <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
   
  To select a voice based on other characteristics, see the other <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> overloads.  
   
@@ -1028,7 +1028,7 @@ namespace SampleSynthesis
   
  Two-letter language codes such as "en" are also permitted.  
   
- When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+ When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice's <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
   
  To select a voice based on other characteristics, see the other <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> overloads.  
   
@@ -1071,7 +1071,7 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A> to release the <xref:System.Speech.Synthesis.SpeechSynthesizer>’s  reference to the stream.  
+ Call <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A> to release the <xref:System.Speech.Synthesis.SpeechSynthesizer>'s  reference to the stream.  
   
  For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> methods.  
   
@@ -1174,7 +1174,7 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to release the <xref:System.Speech.Synthesis.SpeechSynthesizer> ‘s reference to a file or stream. See <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> for an example.  
+ Use this method to release the <xref:System.Speech.Synthesis.SpeechSynthesizer>'s reference to a file or stream. See <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> for an example.  
   
  For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> methods.  
   
@@ -1193,7 +1193,7 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To release the <xref:System.Speech.Synthesis.SpeechSynthesizer>’s  reference to the file, reconfigure the <xref:System.Speech.Synthesis.SpeechSynthesizer>’s output, for example, by calling <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>.  
+ To release the <xref:System.Speech.Synthesis.SpeechSynthesizer>'s  reference to the file, reconfigure the <xref:System.Speech.Synthesis.SpeechSynthesizer>'s output, for example, by calling <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>.  
   
  For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> methods.  
   
@@ -1396,7 +1396,7 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To release the <xref:System.Speech.Synthesis.SpeechSynthesizer>’s reference to the stream, reconfigure the synthesizer's output, for example, by calling <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>.  
+ To release the <xref:System.Speech.Synthesis.SpeechSynthesizer>'s reference to the stream, reconfigure the synthesizer's output, for example, by calling <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>.  
   
  For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A> methods.  
   

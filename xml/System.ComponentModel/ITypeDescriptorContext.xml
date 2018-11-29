@@ -186,7 +186,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanged" /> in a derived class, be sure to call the base class’s <see cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanged" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanged" /> in a derived class, be sure to call the base class' <see cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanged" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" />
         <altmember cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanging" />
@@ -238,7 +238,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanging" /> in a derived class, be sure to call the base class’s <see cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanging" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanging" /> in a derived class, be sure to call the base class' <see cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanging" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanging" />
         <altmember cref="M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanged" />

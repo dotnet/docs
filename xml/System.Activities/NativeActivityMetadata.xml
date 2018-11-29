@@ -48,7 +48,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Adds the specified activity to the metadata’s list of child activities.</summary>
+        <summary>Adds the specified activity to the metadata's list of child activities.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddChild">
@@ -71,7 +71,7 @@
       </Parameters>
       <Docs>
         <param name="child">The activity to add.</param>
-        <summary>Adds the specified activity to the metadata’s list of child activities.</summary>
+        <summary>Adds the specified activity to the metadata's list of child activities.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -104,7 +104,7 @@
       <Docs>
         <param name="child">The activity to add.</param>
         <param name="origin">The origin of the activity.</param>
-        <summary>Adds the specified activity to the metadata’s list of child activities.</summary>
+        <summary>Adds the specified activity to the metadata's list of child activities.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,7 +153,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Adds the specified delegate to the metadata’s list of delegates.</summary>
+        <summary>Adds the specified delegate to the metadata's list of delegates.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddDelegate">
@@ -175,7 +175,7 @@
       </Parameters>
       <Docs>
         <param name="activityDelegate">The delegate to add.</param>
-        <summary>Adds the specified delegate to the metadata’s list of delegates.</summary>
+        <summary>Adds the specified delegate to the metadata's list of delegates.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,7 +200,7 @@
       <Docs>
         <param name="activityDelegate">The delegate to add.</param>
         <param name="origin">The origin of the delegate.</param>
-        <summary>Adds the specified delegate to the metadata’s list of delegates.</summary>
+        <summary>Adds the specified delegate to the metadata's list of delegates.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,12 +224,12 @@
       </Parameters>
       <Docs>
         <param name="implementationChild">The activity to add.</param>
-        <summary>Adds the specified activity to the metadata’s list of implementation activities.</summary>
+        <summary>Adds the specified activity to the metadata's list of implementation activities.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An activity added using <xref:System.Activities.NativeActivityMetadata.AddImplementationChild%2A> is a child activity that the parent activity can schedule directly.  These activities are implementation details of the activity. These activities (and any activities they add using <xref:System.Activities.NativeActivityMetadata.AddChild%2A> or <xref:System.Activities.NativeActivityMetadata.AddImportedChild%2A>) have access to this activity’s arguments as well as variables added through <xref:System.Activities.NativeActivityMetadata.AddImplementationVariable%2A>.  
+ An activity added using <xref:System.Activities.NativeActivityMetadata.AddImplementationChild%2A> is a child activity that the parent activity can schedule directly.  These activities are implementation details of the activity. These activities (and any activities they add using <xref:System.Activities.NativeActivityMetadata.AddChild%2A> or <xref:System.Activities.NativeActivityMetadata.AddImportedChild%2A>) have access to this activity's arguments as well as variables added through <xref:System.Activities.NativeActivityMetadata.AddImplementationVariable%2A>.  
   
  ]]></format>
         </remarks>
@@ -255,7 +255,7 @@
       </Parameters>
       <Docs>
         <param name="implementationDelegate">The delegate to add.</param>
-        <summary>Adds the specified delegate to the metadata’s list of implementation delegates.</summary>
+        <summary>Adds the specified delegate to the metadata's list of implementation delegates.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -279,7 +279,7 @@
       </Parameters>
       <Docs>
         <param name="implementationVariable">The variable to add.</param>
-        <summary>Adds the specified variable to the metadata’s collection of implementation variables.</summary>
+        <summary>Adds the specified variable to the metadata's collection of implementation variables.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,7 +289,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Adds the specified activity to the metadata’s list of imported child activities.</summary>
+        <summary>Adds the specified activity to the metadata's list of imported child activities.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddImportedChild">
@@ -312,7 +312,7 @@
       </Parameters>
       <Docs>
         <param name="importedChild">The activity to add.</param>
-        <summary>Adds the specified activity to the metadata’s list of imported child activities.</summary>
+        <summary>Adds the specified activity to the metadata's list of imported child activities.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -345,7 +345,7 @@
       <Docs>
         <param name="importedChild">The activity to add.</param>
         <param name="origin">The origin of the activity.</param>
-        <summary>Adds the specified activity to the metadata’s list of imported child activities.</summary>
+        <summary>Adds the specified activity to the metadata's list of imported child activities.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,7 +355,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Adds the specified delegate to the metadata’s list of imported delegates.</summary>
+        <summary>Adds the specified delegate to the metadata's list of imported delegates.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddImportedDelegate">
@@ -378,7 +378,7 @@
       </Parameters>
       <Docs>
         <param name="importedDelegate">The delegate to add.</param>
-        <summary>Adds the specified delegate to the metadata’s list of imported delegates.</summary>
+        <summary>Adds the specified delegate to the metadata's list of imported delegates.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,7 +404,7 @@
       <Docs>
         <param name="importedDelegate">The delegate to add.</param>
         <param name="origin">The origin of the delegate.</param>
-        <summary>Adds the specified delegate to the metadata’s list of imported delegates.</summary>
+        <summary>Adds the specified delegate to the metadata's list of imported delegates.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -414,7 +414,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Adds a validation error to the metadata’ collection of validation errors.</summary>
+        <summary>Adds a validation error to the metadata' collection of validation errors.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -444,7 +444,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       </Parameters>
       <Docs>
         <param name="validationError">The validation error to add.</param>
-        <summary>Adds the specified validation error to the metadata’s collection of validation errors.</summary>
+        <summary>Adds the specified validation error to the metadata's collection of validation errors.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -475,7 +475,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       </Parameters>
       <Docs>
         <param name="validationErrorMessage">A message that describes the validation error.</param>
-        <summary>Adds a validation error to the metadata’s collection of validation errors using the specified description.</summary>
+        <summary>Adds a validation error to the metadata's collection of validation errors using the specified description.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -492,7 +492,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Adds the specified variable to the metadata’s collection of variables.</summary>
+        <summary>Adds the specified variable to the metadata's collection of variables.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddVariable">
@@ -514,12 +514,12 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       </Parameters>
       <Docs>
         <param name="variable">The variable to add.</param>
-        <summary>Adds the specified variable to the metadata’s collection of variables.</summary>
+        <summary>Adds the specified variable to the metadata's collection of variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Variables added using this method are considered part of the activity’s publicly configurable surface, that is, they are to be provided by the consumer of the activity. An activity’s implementation cannot access variables added using this method. Activities added through <xref:System.Activities.NativeActivityMetadata.AddImportedChild%2A> or <xref:System.Activities.NativeActivityMetadata.AddChild%2A> (and any of their non-implementation child activities) can access variables added using this method.  
+ Variables added using this method are considered part of the activity's publicly configurable surface, that is, they are to be provided by the consumer of the activity. An activity's implementation cannot access variables added using this method. Activities added through <xref:System.Activities.NativeActivityMetadata.AddImportedChild%2A> or <xref:System.Activities.NativeActivityMetadata.AddChild%2A> (and any of their non-implementation child activities) can access variables added using this method.  
   
  ]]></format>
         </remarks>
@@ -546,7 +546,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       <Docs>
         <param name="variable">The variable to add.</param>
         <param name="origin">The origin of the variable.</param>
-        <summary>Adds the specified variable to the metadata’s collection of variables.</summary>
+        <summary>Adds the specified variable to the metadata's collection of variables.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -596,8 +596,8 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
         <ReturnType>System.Activities.LocationReferenceEnvironment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the activity’s <see cref="T:System.Activities.LocationReferenceEnvironment" /> of arguments, variables, delegate arguments, or symbols introduced by a <see cref="T:System.Activities.Hosting.SymbolResolver" />.</summary>
-        <value>The activity’s location reference environment of arguments, variables, delegate arguments, or symbols introduced by a <see cref="T:System.Activities.Hosting.SymbolResolver" />.</value>
+        <summary>Gets the activity's <see cref="T:System.Activities.LocationReferenceEnvironment" /> of arguments, variables, delegate arguments, or symbols introduced by a <see cref="T:System.Activities.Hosting.SymbolResolver" />.</summary>
+        <value>The activity's location reference environment of arguments, variables, delegate arguments, or symbols introduced by a <see cref="T:System.Activities.Hosting.SymbolResolver" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -650,7 +650,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Argument> and returns them in a collection.  
+ This method uses an activity's <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Argument> and returns them in a collection.  
   
  ]]></format>
         </remarks>
@@ -679,7 +679,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Activity>, or `IList<T>` or `ICollection<T>` where `T` derives from <xref:System.Activities.Activity>, and returns them in a collection.  
+ This method uses an activity's <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Activity>, or `IList<T>` or `ICollection<T>` where `T` derives from <xref:System.Activities.Activity>, and returns them in a collection.  
   
  ]]></format>
         </remarks>
@@ -708,7 +708,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.ActivityDelegate>, or `IList<T>` or `ICollection<T>` where `T` derives from <xref:System.Activities.ActivityDelegate>, and returns them in a collection.  
+ This method uses an activity's <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.ActivityDelegate>, or `IList<T>` or `ICollection<T>` where `T` derives from <xref:System.Activities.ActivityDelegate>, and returns them in a collection.  
   
  ]]></format>
         </remarks>
@@ -759,7 +759,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Variable>, or `IList<T>` or `ICollection<T>` where `T` derives from <xref:System.Activities.Variable>, and returns them in a collection.  
+ This method uses an activity's <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Variable>, or `IList<T>` or `ICollection<T>` where `T` derives from <xref:System.Activities.Variable>, and returns them in a collection.  
   
  ]]></format>
         </remarks>
@@ -930,7 +930,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       </Parameters>
       <Docs>
         <param name="arguments">The arguments to add.</param>
-        <summary>Adds the specified collection of arguments to the activity’s arguments.</summary>
+        <summary>Adds the specified collection of arguments to the activity's arguments.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1171,7 +1171,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       </Parameters>
       <Docs>
         <param name="validationErrors">The validation errors to add.</param>
-        <summary>Adds the specified collection of validation errors to the metadata’s collection of validation errors.</summary>
+        <summary>Adds the specified collection of validation errors to the metadata's collection of validation errors.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1195,7 +1195,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       </Parameters>
       <Docs>
         <param name="variables">The variables to add.</param>
-        <summary>Adds the specified collection of variables to the activity’s variables.</summary>
+        <summary>Adds the specified collection of variables to the activity's variables.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

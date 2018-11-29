@@ -83,7 +83,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The three <xref:System.Double> values that represent the scroll bar position are the <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabsPanel.HorizontalOffset%2A>, <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabsPanel.ExtentWidth%2A>, and <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabsPanel.ViewportWidth%2A> property values of the <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabsPanel> or <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel>. These properties contain values from the panel’s internal <xref:System.Windows.Controls.ScrollViewer>.  
+ The three <xref:System.Double> values that represent the scroll bar position are the <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabsPanel.HorizontalOffset%2A>, <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabsPanel.ExtentWidth%2A>, and <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabsPanel.ViewportWidth%2A> property values of the <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabsPanel> or <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel>. These properties contain values from the panel's internal <xref:System.Windows.Controls.ScrollViewer>.  
   
  The `parameter` value represents the desired percentage that the ribbon is scrolled to the right before the scroll button is hidden. By default, the left scroll button passes 0 as the parameter, and it is hidden when the ribbon is scrolled 0 percent to the right. The right scroll button passes 100 as the parameter, and it is hidden when the ribbon is scrolled 100 percent to the right.  
   

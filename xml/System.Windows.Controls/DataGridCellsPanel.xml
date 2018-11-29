@@ -98,7 +98,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The index is out of range.</exception>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Controls.DataGridCellsPanel.BringIndexIntoView(System.Int32)" /> in a derived class, make sure that you call the base class’s <see cref="M:System.Windows.Controls.DataGridCellsPanel.BringIndexIntoView(System.Int32)" /> method; otherwise, important functionality will be disabled.</para>
+          <para>When overriding <see cref="M:System.Windows.Controls.DataGridCellsPanel.BringIndexIntoView(System.Int32)" /> in a derived class, make sure that you call the base class' <see cref="M:System.Windows.Controls.DataGridCellsPanel.BringIndexIntoView(System.Int32)" /> method; otherwise, important functionality will be disabled.</para>
         </block>
       </Docs>
     </Member>
@@ -154,7 +154,7 @@
         <summary>Called when the collection of children in the <see cref="T:System.Windows.Controls.DataGrid" /> is cleared.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Controls.DataGridCellsPanel.OnClearChildren" /> in a derived class, make sure that you call the base class’s <see cref="M:System.Windows.Controls.DataGridCellsPanel.OnClearChildren" /> method; otherwise, important functionality will be disabled.</para>
+          <para>When overriding <see cref="M:System.Windows.Controls.DataGridCellsPanel.OnClearChildren" /> in a derived class, make sure that you call the base class' <see cref="M:System.Windows.Controls.DataGridCellsPanel.OnClearChildren" /> method; otherwise, important functionality will be disabled.</para>
         </block>
       </Docs>
     </Member>
@@ -183,7 +183,7 @@
         <summary>Indicates that the <see cref="P:System.Windows.Controls.Panel.IsItemsHost" /> property value has changed.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
-          <para>You can override this method and use it as a notification that the <see cref="P:System.Windows.Controls.Panel.IsItemsHost" /> property has changed. Then perform your own logic based on the old and new values. Be sure to call the base class’s <see cref="M:System.Windows.Controls.DataGridCellsPanel.OnIsItemsHostChanged(System.Boolean,System.Boolean)" /> method; otherwise, important functionality will be disabled. The base implementation synchronizes the <see cref="T:System.Windows.Controls.DataGridCellsPanel" /> with the <see cref="T:System.Windows.Controls.Primitives.DataGridCellsPresenter" /> or <see cref="T:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter" /> that it is associated with.</para>
+          <para>You can override this method and use it as a notification that the <see cref="P:System.Windows.Controls.Panel.IsItemsHost" /> property has changed. Then perform your own logic based on the old and new values. Be sure to call the base class' <see cref="M:System.Windows.Controls.DataGridCellsPanel.OnIsItemsHostChanged(System.Boolean,System.Boolean)" /> method; otherwise, important functionality will be disabled. The base implementation synchronizes the <see cref="T:System.Windows.Controls.DataGridCellsPanel" /> with the <see cref="T:System.Windows.Controls.Primitives.DataGridCellsPresenter" /> or <see cref="T:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter" /> that it is associated with.</para>
         </block>
       </Docs>
     </Member>
@@ -221,7 +221,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Controls.DataGridCellsPanel.OnItemsChanged(System.Object,System.Windows.Controls.Primitives.ItemsChangedEventArgs)" /> in a derived class, make sure that you call the base class’s <see cref="M:System.Windows.Controls.DataGridCellsPanel.OnItemsChanged(System.Object,System.Windows.Controls.Primitives.ItemsChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Controls.DataGridCellsPanel.OnItemsChanged(System.Object,System.Windows.Controls.Primitives.ItemsChangedEventArgs)" /> in a derived class, make sure that you call the base class' <see cref="M:System.Windows.Controls.DataGridCellsPanel.OnItemsChanged(System.Object,System.Windows.Controls.Primitives.ItemsChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>

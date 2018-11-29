@@ -2870,7 +2870,7 @@
 ## Remarks  
  This <xref:System.IO.DirectoryInfo.Name%2A> property returns only the name of the directory, such as "Bin". To get the full path, such as "c:\public\Bin", use the <xref:System.IO.FileSystemInfo.FullName%2A> property.  
   
- The <xref:System.IO.DirectoryInfo.Name%2A> property of a <xref:System.IO.DirectoryInfo> requires no permission (beyond the read permission to the directory necessary to construct the <xref:System.IO.DirectoryInfo.Exists%2A>) but can give out the directory name. If it is necessary to hand out a <xref:System.IO.DirectoryInfo> to a protected directory with a cryptographically secure name, create a dummy directory for the untrusted code’s use.  
+ The <xref:System.IO.DirectoryInfo.Name%2A> property of a <xref:System.IO.DirectoryInfo> requires no permission (beyond the read permission to the directory necessary to construct the <xref:System.IO.DirectoryInfo.Exists%2A>) but can give out the directory name. If it is necessary to hand out a <xref:System.IO.DirectoryInfo> to a protected directory with a cryptographically secure name, create a dummy directory for the untrusted code's use.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   

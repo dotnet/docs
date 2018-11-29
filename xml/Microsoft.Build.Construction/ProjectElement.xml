@@ -77,7 +77,7 @@
       <Docs>
         <summary>Gets or sets the Condition value.  
   
- It will return empty string IFF a condition attribute is legal but it’s not present or has no value.  
+ It will return empty string IFF a condition attribute is legal but it's not present or has no value.  
   
  It will return null IFF a Condition attribute is illegal on that element.  
   

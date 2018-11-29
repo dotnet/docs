@@ -6655,7 +6655,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property enables you to set the starting position of the form when it is displayed at run time. The form’s position can be specified manually by setting the <xref:System.Windows.Forms.Form.Location%2A> property or use the default location specified by Windows. You can also position the form to display in the center of the screen or in the center of its parent form for forms such as multiple-document interface (MDI) child forms.  
+ This property enables you to set the starting position of the form when it is displayed at run time. The form's position can be specified manually by setting the <xref:System.Windows.Forms.Form.Location%2A> property or use the default location specified by Windows. You can also position the form to display in the center of the screen or in the center of its parent form for forms such as multiple-document interface (MDI) child forms.  
   
  This property should be set before the form is shown.  You can set this property before you call the <xref:System.Windows.Forms.Form.Show%2A> or <xref:System.Windows.Forms.Form.ShowDialog%2A> method or in your form's constructor.  
   

@@ -141,7 +141,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dataObject" /> is <see langword="null" />.</exception>
         <block subset="none" type="overrides">
-          <para>A linked toolbox item is one whose existence is tied to the storage of a particular designer host. So, in a typical project system, a designer host is associated with a particular file. A toolbox item linked to a designer host would automatically be deleted from the toolbox when the designer host’s source file is deleted or removed from the project.  
+          <para>A linked toolbox item is one whose existence is tied to the storage of a particular designer host. So, in a typical project system, a designer host is associated with a particular file. A toolbox item linked to a designer host would automatically be deleted from the toolbox when the designer host's source file is deleted or removed from the project.  
   
  Linked toolbox items make possible scenarios such as disabling the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] toolbox items when the Windows Forms designer is open.</para>
         </block>
@@ -185,7 +185,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="item" /> is <see langword="null" />.</exception>
         <block subset="none" type="overrides">
-          <para>A linked toolbox item is one whose existence is tied to the storage of a particular designer host. So, in a typical project system, a designer host is associated with a particular file. A toolbox item linked to a designer host would automatically be deleted from the toolbox when the designer host’s source file is deleted or removed from the project.  
+          <para>A linked toolbox item is one whose existence is tied to the storage of a particular designer host. So, in a typical project system, a designer host is associated with a particular file. A toolbox item linked to a designer host would automatically be deleted from the toolbox when the designer host's source file is deleted or removed from the project.  
   
  Linked toolbox items make possible scenarios such as disabling the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] toolbox items when the Windows Forms designer is open.</para>
         </block>
@@ -210,7 +210,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Occurs when the toolbox service detects that the active designer’s toolbox item filter has changed.</summary>
+        <summary>Occurs when the toolbox service detects that the active designer's toolbox item filter has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

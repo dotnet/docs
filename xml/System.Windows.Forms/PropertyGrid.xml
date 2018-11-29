@@ -1763,7 +1763,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnEnabledChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.PropertyGrid.OnEnabledChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnEnabledChanged(System.EventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Forms.PropertyGrid.OnEnabledChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -2122,7 +2122,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnPropertySortChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.PropertyGrid.OnPropertySortChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnPropertySortChanged(System.EventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Forms.PropertyGrid.OnPropertySortChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -2274,7 +2274,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnSelectedGridItemChanged(System.Windows.Forms.SelectedGridItemChangedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.PropertyGrid.OnSelectedGridItemChanged(System.Windows.Forms.SelectedGridItemChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnSelectedGridItemChanged(System.Windows.Forms.SelectedGridItemChangedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Forms.PropertyGrid.OnSelectedGridItemChanged(System.Windows.Forms.SelectedGridItemChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -2350,7 +2350,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnSystemColorsChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.PropertyGrid.OnSystemColorsChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Forms.PropertyGrid.OnSystemColorsChanged(System.EventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Forms.PropertyGrid.OnSystemColorsChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>

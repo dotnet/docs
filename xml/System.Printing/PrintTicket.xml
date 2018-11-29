@@ -722,17 +722,17 @@
   
  When reading the <xref:System.Printing.PrintTicket.PageScalingFactor%2A> property, the property behaves as follows.  
   
--   If the PrintTicket XML document has the `PageScaling` feature set to the **CustomSquare** option, and the **CustomSquare** option’s **Scale** value is positive value, then that is the value that is returned.  
+-   If the PrintTicket XML document has the `PageScaling` feature set to the **CustomSquare** option, and the **CustomSquare** option's **Scale** value is positive value, then that is the value that is returned.  
   
--   If the PrintTicket XML document has the `PageScaling` feature set to the **Custom** option, and the **Custom** option’s **ScaleWidth** value is positive value, then that is the value that is returned.  
+-   If the PrintTicket XML document has the `PageScaling` feature set to the **Custom** option, and the **Custom** option's **ScaleWidth** value is positive value, then that is the value that is returned.  
   
 -   In all other cases, `null` is returned.  
   
  When setting the <xref:System.Printing.PrintTicket.PageScalingFactor%2A> property, the property behaves as follows.  
   
--   If it’s set to `null`, then the `PageScaling` markup is removed from the PrintTicket XML document.  
+-   If it's set to `null`, then the `PageScaling` markup is removed from the PrintTicket XML document.  
   
--   Otherwise, the `PageScaling` feature in the PrintTicket XML document is set to **CustomSquare** and the **CustomSquare** option’s **Scale** value is set to the passed value. (See **Exceptions** for what happens if the property is set to a value less than 1.)  
+-   Otherwise, the `PageScaling` feature in the PrintTicket XML document is set to **CustomSquare** and the **CustomSquare** option's **Scale** value is set to the passed value. (See **Exceptions** for what happens if the property is set to a value less than 1.)  
   
  ]]></format>
         </remarks>

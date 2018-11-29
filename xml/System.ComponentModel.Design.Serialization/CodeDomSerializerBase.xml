@@ -163,16 +163,16 @@
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="value">The object from which the properties are to be deserialized.</param>
         <param name="filter">An <see cref="T:System.Attribute" /> array that filters which properties will be deserialized.</param>
-        <summary>Deserializes properties on the given object from the invariant culture’s resource bundle.</summary>
+        <summary>Deserializes properties on the given object from the invariant culture's resource bundle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.DeserializePropertiesFromResources%2A> method is a helper method that derived classes can call. It looks for properties on the given object and attempts to load their values out of the invariant culture’s resource bundle. This is generally used to handle design-time properties that are not emitted into source code. It should not be used for localized properties because it only operates on the invariant culture.  
+ The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.DeserializePropertiesFromResources%2A> method is a helper method that derived classes can call. It looks for properties on the given object and attempts to load their values out of the invariant culture's resource bundle. This is generally used to handle design-time properties that are not emitted into source code. It should not be used for localized properties because it only operates on the invariant culture.  
   
  This method inspects all of the properties of the `value` parameter that match the attributes specified by the `filter` parameter, and then checks for those properties in a resource binary object. This is useful for deserializing properties that cannot be represented in code, such as design-time properties.  
   
- This method requires that a designer loader offers an <xref:System.ComponentModel.Design.IResourceService> to read resources. If the <xref:System.ComponentModel.Design.IResourceService> provides a <xref:System.Resources.ResXResourceReader> for the invariant culture, then <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.DeserializePropertiesFromResources%2A> will read resources from the XML resource (.resx) file’s metadata section, which is not included in final compiled code. If this service is not available, no resources will be read.  
+ This method requires that a designer loader offers an <xref:System.ComponentModel.Design.IResourceService> to read resources. If the <xref:System.ComponentModel.Design.IResourceService> provides a <xref:System.Resources.ResXResourceReader> for the invariant culture, then <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.DeserializePropertiesFromResources%2A> will read resources from the XML resource (.resx) file's metadata section, which is not included in final compiled code. If this service is not available, no resources will be read.  
   
  ]]></format>
         </remarks>
@@ -485,7 +485,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetSerializer%2A> method is an extension to the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetSerializer%2A?displayProperty=nameWithType> method. The <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetSerializer%2A?displayProperty=nameWithType> method takes an object type, rather than an object value. If an external party had overridden metadata for a specific object through <xref:System.ComponentModel.TypeDescriptor>, that metadata override would not be seen by the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetSerializer%2A?displayProperty=nameWithType> method, which only takes a type. The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetSerializer%2A> method checks the metadata of the value and the value’s type. If the two differ, <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetSerializer%2A> will look to see if there is a custom designer serializer attribute on the value. If so, <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetSerializer%2A> will attempt to use it. Otherwise, it will defer to <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetSerializer%2A?displayProperty=nameWithType>.  
+ The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetSerializer%2A> method is an extension to the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetSerializer%2A?displayProperty=nameWithType> method. The <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetSerializer%2A?displayProperty=nameWithType> method takes an object type, rather than an object value. If an external party had overridden metadata for a specific object through <xref:System.ComponentModel.TypeDescriptor>, that metadata override would not be seen by the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetSerializer%2A?displayProperty=nameWithType> method, which only takes a type. The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetSerializer%2A> method checks the metadata of the value and the value's type. If the two differ, <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetSerializer%2A> will look to see if there is a custom designer serializer attribute on the value. If so, <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetSerializer%2A> will attempt to use it. Otherwise, it will defer to <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetSerializer%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -732,7 +732,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeCreationExpression%2A> method can be used to serialize an expression that represents the creation of the `value` parameter. It is aware of instance descriptors.  
   
- The `isComplete` parameter is set to `true` if the expression represents a fully configured object, or `false` if further serialization must be done on the object’s properties.  
+ The `isComplete` parameter is set to `true` if the expression represents a fully configured object, or `false` if further serialization must be done on the object's properties.  
   
  ]]></format>
         </remarks>
@@ -919,7 +919,7 @@
         <param name="statements">Not used.</param>
         <param name="value">The object whose properties will be serialized.</param>
         <param name="filter">An <see cref="T:System.Attribute" /> array that filters which properties will be serialized.</param>
-        <summary>Serializes the properties on the given object into the invariant culture’s resource bundle.</summary>
+        <summary>Serializes the properties on the given object into the invariant culture's resource bundle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1018,7 +1018,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeResource%2A> method is a helper method that serializes a value to a resource bundle under the given name. The culture that the resource is written to is determined by searching the serialization manager’s <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties%2A> collection for a property called `ResourceCulture`. If this property exists, resources will be written to that culture. Otherwise, resources will be written to the invariant culture. The `value` parameter must be serializable.  
+ The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeResource%2A> method is a helper method that serializes a value to a resource bundle under the given name. The culture that the resource is written to is determined by searching the serialization manager's <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties%2A> collection for a property called `ResourceCulture`. If this property exists, resources will be written to that culture. Otherwise, resources will be written to the invariant culture. The `value` parameter must be serializable.  
   
  <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeResource%2A> requires an <xref:System.ComponentModel.Design.IResourceService> to obtain a <xref:System.Resources.ResourceWriter> to write resources for the correct culture. If this service is not available, <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeResource%2A> will instead build a binary object in code that represents the resource.  
   
@@ -1026,7 +1026,7 @@
         </remarks>
         <block subset="none" type="usage">
           <para>
-            <see langword="ResourceCulture" /> is a read-write property that is accessed through the serialization manager’s <see cref="P:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties" /> collection. The <see cref="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeResource(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.String,System.Object)" /> method never changes the value of this property; it merely reads it to identify the culture to which it will write. The property is set during deserialization as resources are parsed and loaded.</para>
+            <see langword="ResourceCulture" /> is a read-write property that is accessed through the serialization manager's <see cref="P:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties" /> collection. The <see cref="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeResource(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.String,System.Object)" /> method never changes the value of this property; it merely reads it to identify the culture to which it will write. The property is set during deserialization as resources are parsed and loaded.</para>
         </block>
         <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
         <altmember cref="T:System.ComponentModel.Design.IResourceService" />
@@ -1111,9 +1111,9 @@
   
 1.  It first calls the <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetExpression%2A> method to see if an expression has already been created for the object. If so, it returns the existing expression.  
   
-2.  It then locates the object’s serializer, and asks it to serialize.  
+2.  It then locates the object's serializer, and asks it to serialize.  
   
-3.  If the return value of the object’s serializer is a <xref:System.CodeDom.CodeExpression>, the expression is returned.  
+3.  If the return value of the object's serializer is a <xref:System.CodeDom.CodeExpression>, the expression is returned.  
   
 4.  It makes one last call to <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetExpression%2A> to see if the serializer added an expression.  
   
@@ -1231,7 +1231,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `ensureInvariant` parameter is `true`, the <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeToResourceExpression%2A> method will also write the resource value into the invariant culture’s resource file if the current `ResourceCulture` is not the invariant culture..  
+ If the `ensureInvariant` parameter is `true`, the <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeToResourceExpression%2A> method will also write the resource value into the invariant culture's resource file if the current `ResourceCulture` is not the invariant culture..  
   
  ]]></format>
         </remarks>
@@ -1286,7 +1286,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SetExpression%2A> method is a helper method that associates a <xref:System.CodeDom.CodeExpression> with an object. Objects that have been associated with expressions in this way are accessible through the <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetExpression%2A> method. <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SetExpression%2A> stores its expression table as an appended object on the context stack so it is accessible by any serializer’s <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetExpression%2A> method.  
+ The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SetExpression%2A> method is a helper method that associates a <xref:System.CodeDom.CodeExpression> with an object. Objects that have been associated with expressions in this way are accessible through the <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetExpression%2A> method. <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SetExpression%2A> stores its expression table as an appended object on the context stack so it is accessible by any serializer's <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetExpression%2A> method.  
   
  ]]></format>
         </remarks>
@@ -1330,7 +1330,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SetExpression%2A> method is a helper method that associates a <xref:System.CodeDom.CodeExpression> with an object. Objects that have been associated with expressions in this way are accessible through the <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetExpression%2A> method. The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SetExpression%2A> stores its expression table as an appended object on the context stack so it is accessible by any serializer’s <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetExpression%2A> method.  
+ The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SetExpression%2A> method is a helper method that associates a <xref:System.CodeDom.CodeExpression> with an object. Objects that have been associated with expressions in this way are accessible through the <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetExpression%2A> method. The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SetExpression%2A> stores its expression table as an appended object on the context stack so it is accessible by any serializer's <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetExpression%2A> method.  
   
  ]]></format>
         </remarks>

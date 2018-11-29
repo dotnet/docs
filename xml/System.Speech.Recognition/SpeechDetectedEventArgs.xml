@@ -75,7 +75,7 @@ _recognizer.SpeechDetected +=
       </ReturnValue>
       <Docs>
         <summary>Gets the position in the audio stream where speech was detected.</summary>
-        <value>Returns the location of a detected phrase within a recognition engine’s speech buffer.</value>
+        <value>Returns the location of a detected phrase within a recognition engine's speech buffer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

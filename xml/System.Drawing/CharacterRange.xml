@@ -117,7 +117,7 @@
    
   
 ## Examples  
- The following example demonstrates how to use the <xref:System.Drawing.CharacterRange.Equals%2A> method. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `CharacterRangeEquality2` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ The following example demonstrates how to use the <xref:System.Drawing.CharacterRange.Equals%2A> method. To run this example, paste it into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call the `CharacterRangeEquality2` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
  [!code-csharp[System.Drawing.MiscWhidbeySnippets#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/CS/Form1.cs#2)]
  [!code-vb[System.Drawing.MiscWhidbeySnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/VB/Form1.vb#2)]  
@@ -263,7 +263,7 @@
  The equivalent method for this operator is <xref:System.Drawing.CharacterRange.Equals%28System.Object%29?displayProperty=nameWithType>  
   
 ## Examples  
- The following example demonstrates how to use the <xref:System.Drawing.CharacterRange.op_Equality%2A> operator. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `CharacterRangeEquality1` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ The following example demonstrates how to use the <xref:System.Drawing.CharacterRange.op_Equality%2A> operator. To run this example, paste it into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call the `CharacterRangeEquality1` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
  [!code-csharp[System.Drawing.MiscWhidbeySnippets#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/CS/Form1.cs#1)]
  [!code-vb[System.Drawing.MiscWhidbeySnippets#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/VB/Form1.vb#1)]  
@@ -311,7 +311,7 @@
  The equivalent method for this operator is <xref:System.Drawing.CharacterRange.Equals%28System.Object%29?displayProperty=nameWithType>  
   
 ## Examples  
- The following example demonstrates how to use the <xref:System.Drawing.CharacterRange.op_Inequality%2A> method. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `CharacterRangeInequality` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ The following example demonstrates how to use the <xref:System.Drawing.CharacterRange.op_Inequality%2A> method. To run this example, paste it into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call the `CharacterRangeInequality` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
  [!code-csharp[System.Drawing.MiscWhidbeySnippets#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/CS/Form1.cs#3)]
  [!code-vb[System.Drawing.MiscWhidbeySnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/VB/Form1.vb#3)]  

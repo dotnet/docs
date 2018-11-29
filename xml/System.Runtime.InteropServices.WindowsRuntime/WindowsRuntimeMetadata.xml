@@ -20,10 +20,10 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike the .NET Framework, assembly identity isn’t important for [!INCLUDE[wrt](~/includes/wrt-md.md)] types. In the [!INCLUDE[wrt](~/includes/wrt-md.md)], Windows Metadata files (.WinMD files) contain only metadata, not code. Types can move from one Windows Metadata file to another in a service pack release, so it’s important to be able to locate the Windows Metadata files that are associated with a namespace.  
+ Unlike the .NET Framework, assembly identity isn't important for [!INCLUDE[wrt](~/includes/wrt-md.md)] types. In the [!INCLUDE[wrt](~/includes/wrt-md.md)], Windows Metadata files (.WinMD files) contain only metadata, not code. Types can move from one Windows Metadata file to another in a service pack release, so it's important to be able to locate the Windows Metadata files that are associated with a namespace.  
   
 > [!NOTE]
->  Sub-namespaces don’t imply containment. That is, namespace A.B isn't contained in namespace A.  
+>  Sub-namespaces don't imply containment. That is, namespace A.B isn't contained in namespace A.  
   
  ]]></format>
     </remarks>

@@ -453,7 +453,7 @@
       </Parameters>
       <Docs>
         <param name="serviceType">The service type to retrieve.</param>
-        <summary>Gets a service in the design surface manager’s service container.</summary>
+        <summary>Gets a service in the design surface manager's service container.</summary>
         <returns>An object that implements, or is a derived class of, the given service type; otherwise, <see langword="null" /> if the service does not exist in the service container.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

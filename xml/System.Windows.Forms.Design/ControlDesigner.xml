@@ -1553,7 +1553,7 @@
 ## Remarks  
  This method is called for each message the control would usually receive. This allows the designer to preprocess messages before optionally routing them to the control.  
   
- To send the message to the control’s <xref:System.Windows.Forms.Control.WndProc%2A?displayProperty=nameWithType> method, call <xref:System.Windows.Forms.Design.ControlDesigner.WndProc%2A> on the control's designer.  
+ To send the message to the control's <xref:System.Windows.Forms.Control.WndProc%2A?displayProperty=nameWithType> method, call <xref:System.Windows.Forms.Design.ControlDesigner.WndProc%2A> on the control's designer.  
   
 > [!NOTE]
 >  The designer filters messages, so some messages will not be sent to the control. For example, mouse messages are intercepted by the designer. If this is not the behavior you want, call <xref:System.Windows.Forms.Design.ControlDesigner.DefWndProc%2A> instead.  

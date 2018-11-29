@@ -395,7 +395,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to construct a bitmap from a type, and how to use the <xref:System.Drawing.Image.Save%2A> method. To run this example, paste the code into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `ConstructFromResourceSaveAsGif` method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>  
+ The following code example demonstrates how to construct a bitmap from a type, and how to use the <xref:System.Drawing.Image.Save%2A> method. To run this example, paste the code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call the `ConstructFromResourceSaveAsGif` method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>  
   
  [!code-cpp[System.Drawing.BmpCtorAndSave#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.BmpCtorAndSave/cpp/form1.cpp#1)]
  [!code-csharp[System.Drawing.BmpCtorAndSave#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.BmpCtorAndSave/CS/form1.cs#1)]

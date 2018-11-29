@@ -1516,7 +1516,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property determines what value (byte) defines the end of a line for the <xref:System.IO.Ports.SerialPort.ReadLine%2A> and <xref:System.IO.Ports.SerialPort.WriteLine%2A> methods. By default the end-of-line value is <xref:System.Environment.NewLine%2A>. You would change this to a different value if the particular serial device you’re working with uses a different value for the same purpose.  
+ This property determines what value (byte) defines the end of a line for the <xref:System.IO.Ports.SerialPort.ReadLine%2A> and <xref:System.IO.Ports.SerialPort.WriteLine%2A> methods. By default the end-of-line value is <xref:System.Environment.NewLine%2A>. You would change this to a different value if the particular serial device you're working with uses a different value for the same purpose.  
   
  ]]></format>
         </remarks>

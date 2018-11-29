@@ -42,7 +42,7 @@
   
  You can load XML into the DOM by using the <xref:System.Xml.XmlDocument> class, and then programmatically read, modify, and remove XML in the document.  
   
- If you want to pry open the <xref:System.Xml.XmlDocument> class and see how it’s implemented, see the [Reference Source](https://referencesource.microsoft.com/#System.Xml/Xml/System/Xml/Dom/XmlDocument.cs#f82a4c1bd1f0ee12).  
+ If you want to pry open the <xref:System.Xml.XmlDocument> class and see how it's implemented, see the [Reference Source](https://referencesource.microsoft.com/#System.Xml/Xml/System/Xml/Dom/XmlDocument.cs#f82a4c1bd1f0ee12).  
   
 <a name="Common"></a>   
 ## Tasks  
@@ -65,7 +65,7 @@
   
 <a name="Load"></a>   
 ## Load XML into the document object model  
- Start with an XML document like this one. It’s just a few books in a collection. But it does contain the basic things that you’d find in any XML document; a namespace, elements that represent data and attributes that describe the data.  
+ Start with an XML document like this one. it's just a few books in a collection. But it does contain the basic things that you'd find in any XML document; a namespace, elements that represent data and attributes that describe the data.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -87,7 +87,7 @@
   
  Next, load this data into the DOM so that you can work with it in memory. The most popular way to do this is refer to a file on your local computer or on a network.  
   
- This example loads XML from a file. If the file doesn’t exist, it just generates some XML and loads that.  
+ This example loads XML from a file. If the file doesn't exist, it just generates some XML and loads that.  
   
  [!code-cpp[XMLProcessingApp#1](~/samples/snippets/cpp/VS_Snippets_Data/xmlprocessingapp/cpp/xmldomprocessing.cpp#1)]
  [!code-csharp[XMLProcessingApp#1](~/samples/snippets/csharp/VS_Snippets_Data/xmlprocessingapp/cs/xmlhelpermethods.cs#1)]
@@ -141,7 +141,7 @@
   
 <a name="Navigate"></a>   
 ## Navigate the document tree  
- You can use properties to navigate around an XML document. But before you use any of them, let’s quickly review a few terms. Your document is composed of nodes. Each node has as single *parent* node directly above it. The only node that does not have a parent node is the document root, as it is the top-level node. Most nodes can have *child* nodes, which are nodes directly below them. Nodes that are at the same level are *siblings*.  
+ You can use properties to navigate around an XML document. But before you use any of them, let's quickly review a few terms. Your document is composed of nodes. Each node has as single *parent* node directly above it. The only node that does not have a parent node is the document root, as it is the top-level node. Most nodes can have *child* nodes, which are nodes directly below them. Nodes that are at the same level are *siblings*.  
   
  The following examples, show you how to obtain the root node, jump to the first child node of the root node, access any of its child nodes, get back out to the parent node, and then navigate across sibling nodes.  
   
@@ -191,7 +191,7 @@
   
 <a name="Find"></a>   
 ## Find nodes  
- The most popular way to find one or more nodes of data is to use an XPath query string, but there are also methods that don’t require one.  
+ The most popular way to find one or more nodes of data is to use an XPath query string, but there are also methods that don't require one.  
   
  **Get a single node**  
   
@@ -203,7 +203,7 @@
   
  The string used in this example is an Xpath query. You can find more examples of them here:   [XPath examples](https://msdn.microsoft.com/library/ms256086.aspx).  
   
- You can also use the <xref:System.Xml.XmlDocument.GetElementById%2A> to retrieve nodes. To use this approach, you’ll have to define ID’s in the document type definition declarations of your XML file.  
+ You can also use the <xref:System.Xml.XmlDocument.GetElementById%2A> to retrieve nodes. To use this approach, you'll have to define ID's in the document type definition declarations of your XML file.  
   
  After you get a node, you get the value of attributes or child nodes. This example does that with a book node.  
   

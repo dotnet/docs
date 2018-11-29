@@ -655,7 +655,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>In a derived class, be sure to call the base class’s implementation of this method so that registered delegates receive the event.</para>
+          <para>In a derived class, be sure to call the base class' implementation of this method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>

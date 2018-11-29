@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the activity’s timer expires, the <xref:System.Activities.Statements.Delay> activity completes its execution. If a workflow instance persists while a <xref:System.Activities.Statements.Delay> activity has an outstanding timer, then an <xref:System.ServiceModel.Activities.Description.ITimerExpiredNotification> standard endpoint must be configured to receive notification that the timer has expired.  
+ When the activity's timer expires, the <xref:System.Activities.Statements.Delay> activity completes its execution. If a workflow instance persists while a <xref:System.Activities.Statements.Delay> activity has an outstanding timer, then an <xref:System.ServiceModel.Activities.Description.ITimerExpiredNotification> standard endpoint must be configured to receive notification that the timer has expired.  
   
    
   

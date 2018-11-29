@@ -30,7 +30,7 @@
   
 -   To manage speech recognition grammars, use the <xref:System.Speech.Recognition.SpeechRecognizer.LoadGrammar%2A>, <xref:System.Speech.Recognition.SpeechRecognizer.LoadGrammarAsync%2A>, <xref:System.Speech.Recognition.SpeechRecognizer.UnloadGrammar%2A>, <xref:System.Speech.Recognition.SpeechRecognizer.UnloadAllGrammars%2A>, and <xref:System.Speech.Recognition.SpeechRecognizer.Grammars%2A>.  
   
--   To get information about current speech recognition operations, subscribe to the <xref:System.Speech.Recognition.SpeechRecognizer>’s <xref:System.Speech.Recognition.SpeechRecognizer.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized> events.  
+-   To get information about current speech recognition operations, subscribe to the <xref:System.Speech.Recognition.SpeechRecognizer>'s <xref:System.Speech.Recognition.SpeechRecognizer.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized> events.  
   
 -   To view or modify the number of alternate results the recognizer returns, use the <xref:System.Speech.Recognition.SpeechRecognizer.MaxAlternates%2A> property. The recognizer returns recognition results in a <xref:System.Speech.Recognition.RecognitionResult> object.  
   

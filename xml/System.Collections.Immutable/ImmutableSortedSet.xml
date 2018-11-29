@@ -316,7 +316,7 @@
       </Parameters>
       <Docs>
         <typeparam name="T">The type of items stored by the collection.</typeparam>
-        <param name="items">The items to add to the set with before it’s immutable.</param>
+        <param name="items">The items to add to the set with before it's immutable.</param>
         <summary>Creates a new immutable collection that contains the specified items.</summary>
         <returns>The new immutable set that contains the specified items.</returns>
         <remarks>To be added.</remarks>
@@ -350,7 +350,7 @@
       <Docs>
         <typeparam name="T">The type of items stored by the collection.</typeparam>
         <param name="comparer">The comparer to use to compare elements in this set.</param>
-        <param name="items">The items to add to the set before it’s immutable.</param>
+        <param name="items">The items to add to the set before it's immutable.</param>
         <summary>Creates a new immutable collection that contains the specified items.</summary>
         <returns>The new immutable set that contains the specified items.</returns>
         <remarks>To be added.</remarks>

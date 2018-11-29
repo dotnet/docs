@@ -981,8 +981,8 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that a <see langword="DataSet" />’s protected constructor <see cref="M:System.Data.DataSet.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> is invoked with during deserialization in remoting scenarios.</param>
-        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that a <see langword="DataSet" />’s protected constructor <see cref="M:System.Data.DataSet.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> is invoked with during deserialization in remoting scenarios.</param>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that a <see langword="DataSet" />'s protected constructor <see cref="M:System.Data.DataSet.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> is invoked with during deserialization in remoting scenarios.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that a <see langword="DataSet" />'s protected constructor <see cref="M:System.Data.DataSet.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> is invoked with during deserialization in remoting scenarios.</param>
         <summary>Determines the <see cref="P:System.Data.DataSet.SchemaSerializationMode" /> for a <see cref="T:System.Data.DataSet" />.</summary>
         <returns>An <see cref="T:System.Data.SchemaSerializationMode" /> enumeration indicating whether schema information has been omitted from the payload.</returns>
         <remarks>
@@ -2345,7 +2345,7 @@ class Program {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Returns the status of the <xref:System.Data.DataSet> while it’s being constructed, for instance by Visual Studio. The <xref:System.Data.DataSet.BeginInit%2A> method sets it to `false` and <xref:System.Data.DataSet.EndInit%2A> method sets it to `true`.  
+ Returns the status of the <xref:System.Data.DataSet> while it's being constructed, for instance by Visual Studio. The <xref:System.Data.DataSet.BeginInit%2A> method sets it to `false` and <xref:System.Data.DataSet.EndInit%2A> method sets it to `true`.  
   
  ]]></format>
         </remarks>

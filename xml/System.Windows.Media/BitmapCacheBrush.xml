@@ -25,7 +25,7 @@
   
 ||Target has no CacheMode|Target has CacheMode|  
 |-|-----------------------------|--------------------------|  
-|Brush has no CacheMode|Target visual renders normally; brush uses default cache behavior.|Target visual renders into its own cache; brush uses target’s cache when rendering.|  
+|Brush has no CacheMode|Target visual renders normally; brush uses default cache behavior.|Target visual renders into its own cache; brush uses target's cache when rendering.|  
 |Brush has CacheMode|Target visual renders normally; brush renders target into its own cache and uses this to render.|Target visual renders into its own cache; brush renders target into brush's own cache and uses this to render.|  
   
  The <xref:System.Windows.Media.BitmapCacheBrush> class is similar to the <xref:System.Windows.Media.VisualBrush> class, but <xref:System.Windows.Media.BitmapCacheBrush> always renders from a cache on the target element, or from a cache defined by the <xref:System.Windows.Media.BitmapCacheBrush.BitmapCache%2A> property. The <xref:System.Windows.Media.BitmapCacheBrush> class also supports dirty regions.  

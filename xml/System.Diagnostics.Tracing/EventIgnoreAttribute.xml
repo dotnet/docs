@@ -36,7 +36,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, when the <xref:System.Diagnostics.Tracing.EventSource.Write%2A> method is called, all of an object’s public properties are written to the event payload. Apply <xref:System.Diagnostics.Tracing.EventIgnoreAttribute> to a property to prevent the property from being written in the event.  
+ By default, when the <xref:System.Diagnostics.Tracing.EventSource.Write%2A> method is called, all of an object's public properties are written to the event payload. Apply <xref:System.Diagnostics.Tracing.EventIgnoreAttribute> to a property to prevent the property from being written in the event.  
   
  ]]></format>
     </remarks>

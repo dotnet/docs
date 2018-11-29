@@ -778,7 +778,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Net.Mail.SmtpClient.OnSendCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Net.Mail.SmtpClient.OnSendCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> method so that registered delegates receive the <see cref="E:System.Net.Mail.SmtpClient.SendCompleted" /> event.</para>
+          <para>When overriding <see cref="M:System.Net.Mail.SmtpClient.OnSendCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Net.Mail.SmtpClient.OnSendCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> method so that registered delegates receive the <see cref="E:System.Net.Mail.SmtpClient.SendCompleted" /> event.</para>
         </block>
       </Docs>
     </Member>

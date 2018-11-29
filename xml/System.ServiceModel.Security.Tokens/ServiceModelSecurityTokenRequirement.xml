@@ -929,13 +929,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the key for the token requirement property whose value indicates whether the secure conversation token is for a security session (in which case its lifetime is tied to the lifetime of the user’s channel) or for a datagram security channel.</summary>
+        <summary>Gets the key for the token requirement property whose value indicates whether the secure conversation token is for a security session (in which case its lifetime is tied to the lifetime of the user's channel) or for a datagram security channel.</summary>
         <value>The key for the token requirement property whose value indicates whether the secure conversation token should be cancelable.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the requirement is for a secure conversation token, `SupportSecurityContextCancellation` contains a value that indicates whether the secure conversation token is for a security session (in which case its lifetime is tied to the lifetime of the user’s channel) or for a datagram security channel.  
+ When the requirement is for a secure conversation token, `SupportSecurityContextCancellation` contains a value that indicates whether the secure conversation token is for a security session (in which case its lifetime is tied to the lifetime of the user's channel) or for a datagram security channel.  
   
  ]]></format>
         </remarks>

@@ -128,7 +128,7 @@
       <Docs>
         <param name="draggedViewElement">The UI element on which the operation happens.</param>
         <param name="referencePoint">The location of the drag point.</param>
-        <summary>Allows a UI element to be dragged by a mouse with its left button down over an exposed area of the UI element’s client area.</summary>
+        <summary>Allows a UI element to be dragged by a mouse with its left button down over an exposed area of the UI element's client area.</summary>
         <returns>A value from the <see cref="T:System.Windows.DragDropEffects" /> enumeration that represents the final effect that was performed during the drag-and-drop operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>

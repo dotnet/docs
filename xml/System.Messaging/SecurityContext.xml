@@ -34,7 +34,7 @@
   
 2.  Run the ASP.NET application as a domain identity and authorize that application to write to the queue.  
   
-3.  Do not impersonate the user when using the queue. Instead, get the caller’s identity and either perform authorization checking in the ASP.NET application or include the caller’s identity as part of the message and perform authorization checking in the receiver application.  
+3.  Do not impersonate the user when using the queue. Instead, get the caller's identity and either perform authorization checking in the ASP.NET application or include the caller's identity as part of the message and perform authorization checking in the receiver application.  
   
  ]]></format>
     </remarks>

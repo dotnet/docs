@@ -617,7 +617,7 @@
    
   
 ## Examples  
- The following example demonstrates how to use the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `CopyPixels1` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ The following example demonstrates how to use the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method. To run this example, paste it into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call the `CopyPixels1` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
  [!code-csharp[System.Drawing.MiscWhidbeySnippets#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/CS/Form1.cs#4)]
  [!code-vb[System.Drawing.MiscWhidbeySnippets#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/VB/Form1.vb#4)]  
@@ -670,7 +670,7 @@
    
   
 ## Examples  
- The following example demonstrates how to use the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `CopyPixels2` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ The following example demonstrates how to use the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method. To run this example, paste it into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call the `CopyPixels2` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
  [!code-csharp[System.Drawing.MiscWhidbeySnippets#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/CS/Form1.cs#5)]
  [!code-vb[System.Drawing.MiscWhidbeySnippets#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/VB/Form1.vb#5)]  
@@ -790,7 +790,7 @@
    
   
 ## Examples  
- The following example demonstrates how to use the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `CopyPixels4` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ The following example demonstrates how to use the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method. To run this example, paste it into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call the `CopyPixels4` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
  [!code-csharp[System.Drawing.MiscWhidbeySnippets#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/CS/Form1.cs#7)]
  [!code-vb[System.Drawing.MiscWhidbeySnippets#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/VB/Form1.vb#7)]  
@@ -5370,7 +5370,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates how to use the <xref:System.Drawing.Graphics.DrawImageUnscaledAndClipped%2A> method. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawImageUnscaled` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ The following example demonstrates how to use the <xref:System.Drawing.Graphics.DrawImageUnscaledAndClipped%2A> method. To run this example, paste it into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call the `DrawImageUnscaled` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
  [!code-csharp[System.Drawing.MiscWhidbeySnippets#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/CS/Form1.cs#8)]
  [!code-vb[System.Drawing.MiscWhidbeySnippets#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/VB/Form1.vb#8)]  

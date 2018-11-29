@@ -114,7 +114,7 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the identityConfiguration element to retrieve. This corresponds to the value of the element’s <see cref="P:System.IdentityModel.Configuration.IdentityConfigurationElement.Name" /> property.</param>
+        <param name="name">The name of the identityConfiguration element to retrieve. This corresponds to the value of the element's <see cref="P:System.IdentityModel.Configuration.IdentityConfigurationElement.Name" /> property.</param>
         <summary>Retrieves the <see cref="T:System.IdentityModel.Configuration.IdentityConfigurationElement" /> that has the specified name.</summary>
         <returns>The <see langword="&lt;identityConfiguration&gt;" /> element that has the specified name, or <see langword="null" /> if no matching element is found.</returns>
         <remarks>To be added.</remarks>

@@ -1494,7 +1494,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property provides the completion status of an asynchronous socket operation. A value of <xref:System.Net.Sockets.SocketError.Success?displayProperty=nameWithType> indicates successful completion of an operation. This property is primarily used in an application’s event handler routine.  
+ This property provides the completion status of an asynchronous socket operation. A value of <xref:System.Net.Sockets.SocketError.Success?displayProperty=nameWithType> indicates successful completion of an operation. This property is primarily used in an application's event handler routine.  
   
  This property is used with all of the asynchronous socket (xxxAsync) methods.  
   
@@ -1615,7 +1615,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property can be used by an application to associate an application state object with the <xref:System.Net.Sockets.SocketAsyncEventArgs> object. Primarily, this property is a way for an application to pass state to the application’s event handler (for example, the asynchronous operation completion method).  
+ This property can be used by an application to associate an application state object with the <xref:System.Net.Sockets.SocketAsyncEventArgs> object. Primarily, this property is a way for an application to pass state to the application's event handler (for example, the asynchronous operation completion method).  
   
  This property is used with all of the asynchronous socket (xxxAsync) methods.  
   

@@ -1006,8 +1006,8 @@ This property can have a value of **x86**, **x64**, **Itanium**, or **anycpu**. 
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the verbosity of the compiler’s output, which can be <c>Quiet</c>, <c>Normal</c>, or <c>Verbose</c>.</summary>
-        <value>The verbosity of the compiler’s output.</value>
+        <summary>Gets or sets the verbosity of the compiler's output, which can be <c>Quiet</c>, <c>Normal</c>, or <c>Verbose</c>.</summary>
+        <value>The verbosity of the compiler's output.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

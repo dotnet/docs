@@ -34,8 +34,8 @@
         <ReturnType>System.Activities.CodeActivityMetadata</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the activity’s arguments, variables, child activities, and activity delegates.</summary>
-        <value>The activity’s arguments, variables, child activities, and activity delegates.</value>
+        <summary>Gets the activity's arguments, variables, child activities, and activity delegates.</summary>
+        <value>The activity's arguments, variables, child activities, and activity delegates.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +58,7 @@
         <Parameter Name="metadata" Type="System.Activities.CodeActivityMetadata" />
       </Parameters>
       <Docs>
-        <param name="metadata">The activity’s metadata that encapsulates the activity’s arguments, variables, child activities, and activity delegates.</param>
+        <param name="metadata">The activity's metadata that encapsulates the activity's arguments, variables, child activities, and activity delegates.</param>
         <summary>Creates the description of the arguments, child activities, variables, and activity delegates.</summary>
         <returns>The description of the arguments, child activities, variables, and activity delegates.</returns>
         <remarks>To be added.</remarks>

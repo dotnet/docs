@@ -699,7 +699,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Forms.CurrencyManager.OnItemChanged(System.Windows.Forms.ItemChangedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.CurrencyManager.OnItemChanged(System.Windows.Forms.ItemChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Forms.CurrencyManager.OnItemChanged(System.Windows.Forms.ItemChangedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Forms.CurrencyManager.OnItemChanged(System.Windows.Forms.ItemChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Windows.Forms.CurrencyManager.ItemChanged" />
         <altmember cref="M:System.Windows.Forms.CurrencyManager.OnCurrentItemChanged(System.EventArgs)" />
@@ -738,7 +738,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Forms.CurrencyManager.OnMetaDataChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.CurrencyManager.OnMetaDataChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Forms.CurrencyManager.OnMetaDataChanged(System.EventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Forms.CurrencyManager.OnMetaDataChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -776,7 +776,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Forms.CurrencyManager.OnPositionChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.CurrencyManager.OnPositionChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Forms.CurrencyManager.OnPositionChanged(System.EventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Forms.CurrencyManager.OnPositionChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Windows.Forms.BindingManagerBase.PositionChanged" />
         <altmember cref="M:System.Windows.Forms.CurrencyManager.OnPositionChanged(System.EventArgs)" />

@@ -69,7 +69,7 @@ public sealed class ReadLine : NativeActivity<string>
 }  
 ```  
   
- In the following example, a workflow is created that uses the `ReadLine` activity to gather the user’s name and display it to the console window. The host application performs the actual work of gathering the input and passes it to the workflow by resuming the <xref:System.Activities.Bookmark>.  
+ In the following example, a workflow is created that uses the `ReadLine` activity to gather the user's name and display it to the console window. The host application performs the actual work of gathering the input and passes it to the workflow by resuming the <xref:System.Activities.Bookmark>.  
   
 ```csharp  
 Variable<string> name = new Variable<string>  

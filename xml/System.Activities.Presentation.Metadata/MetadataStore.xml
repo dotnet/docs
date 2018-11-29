@@ -71,7 +71,7 @@ internal class Metadata : IRegisterMetadata
       </Parameters>
       <Docs>
         <param name="table">The table to add.</param>
-        <summary>Adds the given table to the current <see cref="T:System.AppDomain" /> object’s attribute store.</summary>
+        <summary>Adds the given table to the current <see cref="T:System.AppDomain" /> object's attribute store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

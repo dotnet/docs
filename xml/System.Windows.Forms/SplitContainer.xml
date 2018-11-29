@@ -373,7 +373,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The contents of a control may change for many reasons; including display data changes; addition of child controls; layout and padding changes; or system font, language, or resolution changes. If the <xref:System.Windows.Forms.SplitContainer.AutoSize%2A> property is set to `true`, the <xref:System.Windows.Forms.SplitContainer> will resize automatically to encompass its contents, although it will never be resized to be smaller than its original <xref:System.Drawing.Size>. This operation will maintain the control’s <xref:System.Windows.Forms.SplitContainer.Padding%2A>. This property is not relevant to this class.  
+ The contents of a control may change for many reasons; including display data changes; addition of child controls; layout and padding changes; or system font, language, or resolution changes. If the <xref:System.Windows.Forms.SplitContainer.AutoSize%2A> property is set to `true`, the <xref:System.Windows.Forms.SplitContainer> will resize automatically to encompass its contents, although it will never be resized to be smaller than its original <xref:System.Drawing.Size>. This operation will maintain the control's <xref:System.Windows.Forms.SplitContainer.Padding%2A>. This property is not relevant to this class.  
   
  ]]></format>
         </remarks>
@@ -1464,7 +1464,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Forms.SplitContainer.OnMove(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.SplitContainer.OnMove(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Forms.SplitContainer.OnMove(System.EventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Forms.SplitContainer.OnMove(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>

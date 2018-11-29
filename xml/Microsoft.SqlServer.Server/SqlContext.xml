@@ -157,7 +157,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Common language runtime (CLR) code inside SQL Server is always invoked in the context of the process account. If it is necessary for the code to perform an action using calling user’s identity instead of the SQL Server process identity, then an impersonation token should be obtained through this property. After obtaining the <xref:System.Security.Principal.WindowsIdentity> object, callers can impersonate the client account and perform actions on their behalf.  
+ Common language runtime (CLR) code inside SQL Server is always invoked in the context of the process account. If it is necessary for the code to perform an action using calling user's identity instead of the SQL Server process identity, then an impersonation token should be obtained through this property. After obtaining the <xref:System.Security.Principal.WindowsIdentity> object, callers can impersonate the client account and perform actions on their behalf.  
   
  If invoked from outside SQL Server, a <xref:System.NotSupportedException> is thrown.  
   

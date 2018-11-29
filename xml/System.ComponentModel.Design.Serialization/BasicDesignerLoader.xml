@@ -37,7 +37,7 @@
   
 -   Deferred idle-time reloading.  
   
- A <xref:System.ComponentModel.Design.Serialization.BasicDesignerLoader> adds two kinds of services to the designer host’s service container: replaceable services and irreplaceable services. You can replace a replaceable service by changing the value of the protected <xref:System.ComponentModel.Design.Serialization.BasicDesignerLoader.LoaderHost%2A> property. You cannot replace irreplaceable services because their implementations depend on each other.  
+ A <xref:System.ComponentModel.Design.Serialization.BasicDesignerLoader> adds two kinds of services to the designer host's service container: replaceable services and irreplaceable services. You can replace a replaceable service by changing the value of the protected <xref:System.ComponentModel.Design.Serialization.BasicDesignerLoader.LoaderHost%2A> property. You cannot replace irreplaceable services because their implementations depend on each other.  
   
  The following table describes the services that are provided by default.  
   
@@ -391,7 +391,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Determines if the designer loader has detected that the designer has been modified. If this property is `true` when the designer loader’s <xref:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Flush%2A> method is called, the designer loader will call the <xref:System.ComponentModel.Design.Serialization.BasicDesignerLoader.PerformFlush%2A> method.  
+ Determines if the designer loader has detected that the designer has been modified. If this property is `true` when the designer loader's <xref:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Flush%2A> method is called, the designer loader will call the <xref:System.ComponentModel.Design.Serialization.BasicDesignerLoader.PerformFlush%2A> method.  
   
  ]]></format>
         </remarks>

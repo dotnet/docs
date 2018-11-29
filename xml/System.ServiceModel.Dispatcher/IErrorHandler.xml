@@ -17,7 +17,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To explicitly control the behavior of the application when an exception is thrown, implement the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface and add it to the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher>’s <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ErrorHandlers%2A> property. <xref:System.ServiceModel.Dispatcher.IErrorHandler> enables you to explicitly control the SOAP fault generated, decide whether to send it back to the client, and perform associated tasks, such as logging. Error handlers are called in the order in which they were added to the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ErrorHandlers%2A> property.  
+ To explicitly control the behavior of the application when an exception is thrown, implement the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface and add it to the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher>'s <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ErrorHandlers%2A> property. <xref:System.ServiceModel.Dispatcher.IErrorHandler> enables you to explicitly control the SOAP fault generated, decide whether to send it back to the client, and perform associated tasks, such as logging. Error handlers are called in the order in which they were added to the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ErrorHandlers%2A> property.  
   
  Implement the <xref:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault%2A> method to control the fault message that is returned to the client.  
   

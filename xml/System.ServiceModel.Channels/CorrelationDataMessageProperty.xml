@@ -73,7 +73,7 @@
       <Docs>
         <param name="name">The name of the correlation data provider.</param>
         <param name="dataProvider">The correlation data provider.</param>
-        <summary>Adds a correlation data provider to the property’s private dictionary of providers.</summary>
+        <summary>Adds a correlation data provider to the property's private dictionary of providers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,10 +212,10 @@
       </Parameters>
       <Docs>
         <param name="message">The message that contains the <see cref="P:System.ServiceModel.Channels.Message.Properties" /> to inspect.</param>
-        <param name="property">When this method returns, contains the <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> contained the specified message’s <see cref="P:System.ServiceModel.Channels.Message.Properties" />; otherwise, <see langword="null" />. This parameter is passed uninitialized.</param>
-        <summary>Attempts to get a <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> from the specified message’s <see cref="P:System.ServiceModel.Channels.Message.Properties" />.</summary>
+        <param name="property">When this method returns, contains the <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> contained the specified message's <see cref="P:System.ServiceModel.Channels.Message.Properties" />; otherwise, <see langword="null" />. This parameter is passed uninitialized.</param>
+        <summary>Attempts to get a <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> from the specified message's <see cref="P:System.ServiceModel.Channels.Message.Properties" />.</summary>
         <returns>
-          <see langword="true" /> if the message’s <see cref="P:System.ServiceModel.Channels.Message.Properties" /> property contains a <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> class; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the message's <see cref="P:System.ServiceModel.Channels.Message.Properties" /> property contains a <see cref="T:System.ServiceModel.Channels.CorrelationDataMessageProperty" /> class; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

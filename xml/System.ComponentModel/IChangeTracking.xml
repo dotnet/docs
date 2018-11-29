@@ -54,7 +54,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the object’s state to unchanged by accepting the modifications.</summary>
+        <summary>Resets the object's state to unchanged by accepting the modifications.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +87,7 @@
       <Docs>
         <summary>Gets the object's changed status.</summary>
         <value>
-          <see langword="true" /> if the object’s content has changed since the last call to <see cref="M:System.ComponentModel.IChangeTracking.AcceptChanges" />; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the object's content has changed since the last call to <see cref="M:System.ComponentModel.IChangeTracking.AcceptChanges" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

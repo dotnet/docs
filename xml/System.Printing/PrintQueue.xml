@@ -2768,7 +2768,7 @@
   
  The merged ticket is then checked against the actual capabilities of the printer. If any settings in the ticket are incompatible with the printer's capabilities, then the printer driver changes those settings by using whatever logic it wants. Typically, it substitutes the user's or printer's default value for the setting. It the driver's source of substitute values is not the same ticket as `basePrintTicket`, then the merged ticket might have some settings that are different from both of the input tickets. If the printer driver has to change any settings then this fact is reported in the <xref:System.Printing.ValidationResult.ConflictStatus%2A> property of the <xref:System.Printing.ValidationResult>.  
   
- To merge and validate based on a print queue’s default settings, you should set `basePrintTicket` to the <xref:System.Printing.PrintQueue.DefaultPrintTicket%2A> or the <xref:System.Printing.PrintQueue.UserPrintTicket%2A>.  
+ To merge and validate based on a print queue's default settings, you should set `basePrintTicket` to the <xref:System.Printing.PrintQueue.DefaultPrintTicket%2A> or the <xref:System.Printing.PrintQueue.UserPrintTicket%2A>.  
   
  The `deltaPrintTicket` parameter can be `null`, in which case the `basePrintTicket` is validated, checked for viability, and returned, possibly with changes.  
   
@@ -2831,7 +2831,7 @@
   
  The merged ticket is then checked against the actual capabilities of the printer. If any settings in the ticket are incompatible with the printer's capabilities, then the printer driver changes those settings by using whatever logic it wants. Typically, it substitutes the user's or printer's default value for the setting. It the driver's source of substitute values is not the same ticket as `basePrintTicket`, then the merged ticket might have some settings that are different from both of the input tickets. If the printer driver has to change any settings then this fact is reported in the <xref:System.Printing.ValidationResult.ConflictStatus%2A> property of the <xref:System.Printing.ValidationResult>.  
   
- To merge and validate based on a print queue’s default settings, you should set `basePrintTicket` to the <xref:System.Printing.PrintQueue.DefaultPrintTicket%2A> or the <xref:System.Printing.PrintQueue.UserPrintTicket%2A>.  
+ To merge and validate based on a print queue's default settings, you should set `basePrintTicket` to the <xref:System.Printing.PrintQueue.DefaultPrintTicket%2A> or the <xref:System.Printing.PrintQueue.UserPrintTicket%2A>.  
   
  The `deltaPrintTicket` parameter can be `null`, in which case the `basePrintTicket` is validated, checked for viability, and returned, possibly with changes.  
   

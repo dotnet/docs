@@ -45,7 +45,7 @@
       <Docs>
         <param name="instanceId">The instance ID of the associated activity.</param>
         <param name="recordNumber">A sequence that defines the order in which tracking records are generated.</param>
-        <param name="bookmarkScope">The ID of the associated activity’s <see cref="T:System.Activities.BookmarkScope" />.</param>
+        <param name="bookmarkScope">The ID of the associated activity's <see cref="T:System.Activities.BookmarkScope" />.</param>
         <param name="bookmarkName">The bookmark name.</param>
         <param name="owner">The activity that was waiting for the bookmark to be resumed.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Activities.Tracking.BookmarkResumptionRecord" /> class using the specified instance ID, record number, bookmark scope, bookmark name and owner.</summary>

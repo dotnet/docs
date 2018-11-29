@@ -142,7 +142,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The method creates the file if it doesn’t exist, but it doesn't create new directories. Therefore, the value of the `path` parameter must contain existing directories.  
+ The method creates the file if it doesn't exist, but it doesn't create new directories. Therefore, the value of the `path` parameter must contain existing directories.  
   
    
   
@@ -158,7 +158,7 @@
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">Either <paramref name="path" /> or <paramref name="contents" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">
-          <paramref name="path" /> is invalid (for example, the directory doesn’t exist or it is on an unmapped drive).</exception>
+          <paramref name="path" /> is invalid (for example, the directory doesn't exist or it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file specified by <paramref name="path" /> was not found.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
         <exception cref="T:System.IO.PathTooLongException">
@@ -222,7 +222,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The method creates the file if it doesn’t exist, but it doesn't create new directories. Therefore, the value of the `path` parameter must contain existing directories.  
+ The method creates the file if it doesn't exist, but it doesn't create new directories. Therefore, the value of the `path` parameter must contain existing directories.  
   
  You can use this method to create a file that contains the following:  
   
@@ -236,7 +236,7 @@
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">Either <paramref name="path" />, <paramref name="contents" />, or <paramref name="encoding" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">
-          <paramref name="path" /> is invalid (for example, the directory doesn’t exist or it is on an unmapped drive).</exception>
+          <paramref name="path" /> is invalid (for example, the directory doesn't exist or it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file specified by <paramref name="path" /> was not found.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
         <exception cref="T:System.IO.PathTooLongException">
@@ -386,7 +386,7 @@
 ## Remarks  
  Given a string and a file path, this method opens the specified file, appends the string to the end of the file, and then closes the file. The file handle is guaranteed to be closed by this method, even if exceptions are raised.  
   
- The method creates the file if it doesn’t exist, but it doesn't create new directories. Therefore, the value of the `path` parameter must contain existing directories.  
+ The method creates the file if it doesn't exist, but it doesn't create new directories. Therefore, the value of the `path` parameter must contain existing directories.  
   
    
   
@@ -403,7 +403,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, the directory doesn’t exist or it is on an unmapped drive).</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, the directory doesn't exist or it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
         <exception cref="T:System.UnauthorizedAccessException">
           <paramref name="path" /> specified a file that is read-only.  
@@ -472,7 +472,7 @@
 ## Remarks  
  Given a string and a file path, this method opens the specified file, appends the string to the end of the file using the specified encoding, and then closes the file. The file handle is guaranteed to be closed by this method, even if exceptions are raised.  
   
- The method creates the file if it doesn’t exist, but it doesn't create new directories. Therefore, the value of the `path` parameter must contain existing directories.  
+ The method creates the file if it doesn't exist, but it doesn't create new directories. Therefore, the value of the `path` parameter must contain existing directories.  
   
    
   
@@ -489,7 +489,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, the directory doesn’t exist or it is on an unmapped drive).</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, the directory doesn't exist or it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
         <exception cref="T:System.UnauthorizedAccessException">
           <paramref name="path" /> specified a file that is read-only.  
@@ -636,7 +636,7 @@
    
   
 ## Examples  
- The following example appends text to a file. The method creates a new file if the file doesn’t exist. However, the directory named `temp` on drive C must exist for the example to complete successfully.  
+ The following example appends text to a file. The method creates a new file if the file doesn't exist. However, the directory named `temp` on drive C must exist for the example to complete successfully.  
   
  [!code-cpp[File_AppendText#1](~/samples/snippets/cpp/VS_Snippets_CLR/File_AppendText/CPP/file_appendtext.cpp#1)]
  [!code-csharp[File_AppendText#1](~/samples/snippets/csharp/VS_Snippets_CLR/File_AppendText/CS/file_appendtext.cs#1)]
@@ -650,7 +650,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, the directory doesn’t exist or it is on an unmapped drive).</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, the directory doesn't exist or it is on an unmapped drive).</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for appending to the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" /></permission>

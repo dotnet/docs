@@ -308,7 +308,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When you override <see cref="M:System.Web.UI.Design.WebControls.ListViewDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" /> in a derived class, make sure that you call the base class’s <see cref="M:System.Web.UI.Design.WebControls.ListViewDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When you override <see cref="M:System.Web.UI.Design.WebControls.ListViewDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" /> in a derived class, make sure that you call the base class' <see cref="M:System.Web.UI.Design.WebControls.ListViewDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>

@@ -87,7 +87,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Adds a validation error to the metadata’s collection of validation errors.</summary>
+        <summary>Adds a validation error to the metadata's collection of validation errors.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -117,7 +117,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       </Parameters>
       <Docs>
         <param name="validationError">The validation error to add.</param>
-        <summary>Adds the specified validation error to the metadata’s collection of validation errors.</summary>
+        <summary>Adds the specified validation error to the metadata's collection of validation errors.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -148,7 +148,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       </Parameters>
       <Docs>
         <param name="validationErrorMessage">A message that describes the validation error.</param>
-        <summary>Adds a validation error to the metadata’s collection of validation errors using the specified description.</summary>
+        <summary>Adds a validation error to the metadata's collection of validation errors using the specified description.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -205,8 +205,8 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
         <ReturnType>System.Activities.LocationReferenceEnvironment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the activity’s <see cref="T:System.Activities.LocationReferenceEnvironment" /> of arguments or symbols introduced by a <see cref="T:System.Activities.Hosting.SymbolResolver" />.</summary>
-        <value>The activity’s location reference environment of arguments or symbols introduced by a <see cref="T:System.Activities.Hosting.SymbolResolver" />.</value>
+        <summary>Gets the activity's <see cref="T:System.Activities.LocationReferenceEnvironment" /> of arguments or symbols introduced by a <see cref="T:System.Activities.Hosting.SymbolResolver" />.</summary>
+        <value>The activity's location reference environment of arguments or symbols introduced by a <see cref="T:System.Activities.Hosting.SymbolResolver" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,7 +259,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Argument> and returns them in a collection.  
+ This method uses an activity's <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Argument> and returns them in a collection.  
   
  ]]></format>
         </remarks>
@@ -452,7 +452,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       </Parameters>
       <Docs>
         <param name="arguments">The arguments to add.</param>
-        <summary>Adds the specified collection of arguments to the activity’s arguments.</summary>
+        <summary>Adds the specified collection of arguments to the activity's arguments.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -476,7 +476,7 @@ For more information, see [Imperative Code-Based Validation](~/docs/framework/wi
       </Parameters>
       <Docs>
         <param name="validationErrors">The validation errors to add.</param>
-        <summary>Adds the specified collection of validation errors to the metadata’s collection of validation errors.</summary>
+        <summary>Adds the specified collection of validation errors to the metadata's collection of validation errors.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -293,7 +293,7 @@
       <Docs>
         <typeparam name="TKey">The type of keys in the dictionary.</typeparam>
         <typeparam name="TValue">The type of values in the dictionary.</typeparam>
-        <param name="items">The items used to populate the dictionary before it’s immutable.</param>
+        <param name="items">The items used to populate the dictionary before it's immutable.</param>
         <summary>Creates a new immutable dictionary that contains the specified items.</summary>
         <returns>A new immutable dictionary that contains the specified items.</returns>
         <remarks>To be added.</remarks>
@@ -329,7 +329,7 @@
         <typeparam name="TKey">The type of keys in the dictionary.</typeparam>
         <typeparam name="TValue">The type of values in the dictionary.</typeparam>
         <param name="keyComparer">The comparer implementation to use to compare keys for equality.</param>
-        <param name="items">The items to add to the dictionary before it’s immutable.</param>
+        <param name="items">The items to add to the dictionary before it's immutable.</param>
         <summary>Creates a new immutable dictionary that contains the specified items and uses the specified key comparer.</summary>
         <returns>A new immutable dictionary that contains the specified items and uses the specified comparer.</returns>
         <remarks>To be added.</remarks>
@@ -367,7 +367,7 @@
         <typeparam name="TValue">The type of values in the dictionary.</typeparam>
         <param name="keyComparer">The comparer implementation to use to compare keys for equality.</param>
         <param name="valueComparer">The comparer implementation to use to compare values for equality.</param>
-        <param name="items">The items to add to the dictionary before it’s immutable.</param>
+        <param name="items">The items to add to the dictionary before it's immutable.</param>
         <summary>Creates a new immutable dictionary that contains the specified items and uses the specified key comparer.</summary>
         <returns>A new immutable dictionary that contains the specified items and uses the specified comparer.</returns>
         <remarks>To be added.</remarks>

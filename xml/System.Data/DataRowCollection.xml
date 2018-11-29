@@ -40,7 +40,7 @@
   
  You can call the <xref:System.Data.DataRowCollection.Add%2A> and <xref:System.Data.DataRowCollection.Remove%2A> methods to insert and delete <xref:System.Data.DataRow> objects from the <xref:System.Data.DataRowCollection>. You can also call the <xref:System.Data.DataRowCollection.Find%2A> method to search for <xref:System.Data.DataRow> objects that contain specific values in primary key columns, and the <xref:System.Data.DataRowCollection.Contains%2A> method to search character-based data for single words or phrases.  
   
- For other operations, such as sorting or filtering the <xref:System.Data.DataRowCollection>, use methods on the <xref:System.Data.DataRowCollection>’s associated <xref:System.Data.DataTable>.  
+ For other operations, such as sorting or filtering the <xref:System.Data.DataRowCollection>, use methods on the <xref:System.Data.DataRowCollection>'s associated <xref:System.Data.DataTable>.  
   
    
   

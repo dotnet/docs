@@ -1015,9 +1015,9 @@ myDataTable.Rows[0][0] = newValue;
   
 -   Its <xref:System.Data.DataColumn.ColumnMapping%2A> can be only set to `MappingType.Element`.  
   
--   The class that implements the column’s data type must be must be marked with the <xref:System.SerializableAttribute>, and if necessary implement the <xref:System.Runtime.Serialization.ISerializable> or <xref:System.Xml.Serialization.IXmlSerializable> interface.  
+-   The class that implements the column's data type must be must be marked with the <xref:System.SerializableAttribute>, and if necessary implement the <xref:System.Runtime.Serialization.ISerializable> or <xref:System.Xml.Serialization.IXmlSerializable> interface.  
   
--   Support for change tracking is limited. To utilize the <xref:System.Data.DataTable> class’s change tracking mechanism, the class that implements the column’s data type must either implement the <xref:System.ComponentModel.IChangeTracking> interface, or take over the responsibility for informing the <xref:System.Data.DataRow> when the column value has been modified, either by calling <xref:System.Data.DataRow.SetModified%2A> on the row or by assigning the column value object to a separately instantiated column value object.  
+-   Support for change tracking is limited. To utilize the <xref:System.Data.DataTable> class' change tracking mechanism, the class that implements the column's data type must either implement the <xref:System.ComponentModel.IChangeTracking> interface, or take over the responsibility for informing the <xref:System.Data.DataRow> when the column value has been modified, either by calling <xref:System.Data.DataRow.SetModified%2A> on the row or by assigning the column value object to a separately instantiated column value object.  
   
    
   
@@ -1347,7 +1347,7 @@ DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"
 ## Parent/Child Relation Referencing  
  A parent table may be referenced in an expression by prepending the column name with `Parent`. For example, the `Parent.Price` references the parent table's column named `Price`.  
   
- When a child has more than one parent row, use Parent(RelationName).ColumnName. For example, the Parent(RelationName).Price references the parent table’s column named Price via the relation.  
+ When a child has more than one parent row, use Parent(RelationName).ColumnName. For example, the Parent(RelationName).Price references the parent table's column named Price via the relation.  
   
  A column in a child table may be referenced in an expression by prepending the column name with `Child`. However, because child relationships may return multiple rows, you must include the reference to the child column in an aggregate function. For example, `Sum(Child.Price)` would return the sum of the column named `Price` in the child table.  
   
@@ -1910,7 +1910,7 @@ DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"
 ## Remarks  
  Changes the ordinal or position of the <xref:System.Data.DataColumn> to the specified ordinal or position. If ordinal is less than 0 or greater than the existing number of columns – 1 (greater than the ordinal of the last column) then an Invalid <xref:System.ArgumentException> is thrown.  
   
- When you change a column’s ordinal, the column is moved to the new position in the collection of columns. Any columns between the previous and new ordinal will be renumbered, to adjust for a column's new ordinal.  
+ When you change a column's ordinal, the column is moved to the new position in the collection of columns. Any columns between the previous and new ordinal will be renumbered, to adjust for a column's new ordinal.  
   
  ]]></format>
         </remarks>

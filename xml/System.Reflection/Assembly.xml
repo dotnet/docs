@@ -266,9 +266,9 @@
   
 -   You haven't specified the fully qualified name of the type.  
   
--   You've specified the fully qualified type name, but its case doesn’t match the case of the type's <xref:System.Type.FullName%2A?displayProperty=nameWithType> property. For a case-insensitive comparison of `typeName` with the type's full name, call the <xref:System.Reflection.Assembly.CreateInstance%28System.String%2CSystem.Boolean%29> overload and specify `true` for the `ignoreCase` argument.  
+-   You've specified the fully qualified type name, but its case doesn't match the case of the type's <xref:System.Type.FullName%2A?displayProperty=nameWithType> property. For a case-insensitive comparison of `typeName` with the type's full name, call the <xref:System.Reflection.Assembly.CreateInstance%28System.String%2CSystem.Boolean%29> overload and specify `true` for the `ignoreCase` argument.  
   
--   The type doesn’t exist in the current <xref:System.Reflection.Assembly> instance.  
+-   The type doesn't exist in the current <xref:System.Reflection.Assembly> instance.  
   
    
   
@@ -358,12 +358,12 @@
   
 -   You haven't specified the fully qualified name of the type.  
   
--   The type doesn’t exist in the current <xref:System.Reflection.Assembly> instance.  
+-   The type doesn't exist in the current <xref:System.Reflection.Assembly> instance.  
   
    
   
 ## Examples  
- The following example defines a `Person` class. It then calls the <xref:System.Reflection.Assembly.CreateInstance%28System.String%29> method to instantiate it, but because the casing of the `typeName` argument doesn’t match that of the type's <xref:System.Type.FullName%2A> property, the method returns `null`. When the example passes the same string to the <xref:System.Reflection.Assembly.CreateInstance%28System.String%2CSystem.Boolean%29> overload and specifies that the comparison should be case-insensitive, the `Person` class is found, and a `Person` object is successfully instantiated.  
+ The following example defines a `Person` class. It then calls the <xref:System.Reflection.Assembly.CreateInstance%28System.String%29> method to instantiate it, but because the casing of the `typeName` argument doesn't match that of the type's <xref:System.Type.FullName%2A> property, the method returns `null`. When the example passes the same string to the <xref:System.Reflection.Assembly.CreateInstance%28System.String%2CSystem.Boolean%29> overload and specifies that the comparison should be case-insensitive, the `Person` class is found, and a `Person` object is successfully instantiated.  
   
  [!code-csharp[System.Reflection.Assembly.CreateInstance#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.assembly.createinstance/cs/createinstance2.cs#2)]
  [!code-vb[System.Reflection.Assembly.CreateInstance#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.assembly.createinstance/vb/createinstance2.vb#2)]  

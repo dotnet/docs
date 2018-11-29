@@ -73,7 +73,7 @@
    
   
 ## Examples  
- This example shows how to create a new <xref:System.AppDomain>, instantiate a type in that new <xref:System.AppDomain>, and communicate with that type’s object. In addition, this example shows how to unload the <xref:System.AppDomain> causing the object to be garbage collected.  
+ This example shows how to create a new <xref:System.AppDomain>, instantiate a type in that new <xref:System.AppDomain>, and communicate with that type's object. In addition, this example shows how to unload the <xref:System.AppDomain> causing the object to be garbage collected.  
   
  [!code-cpp[AppDomainX#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomainX/cpp/AppDomainX.cpp#1)]
  [!code-csharp[AppDomainX#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomainX/cs/AppDomainX.cs#1)]

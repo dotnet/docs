@@ -378,7 +378,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This read-only property indicates the custom SPN list that is used to match against a client's SPN. By default, the server will determine a default SPN list according to its registered endpoints. For scenarios which require SPN checking, this property can be specified using a using a constructor to override the default list used to match against the client’s SPN.  
+ This read-only property indicates the custom SPN list that is used to match against a client's SPN. By default, the server will determine a default SPN list according to its registered endpoints. For scenarios which require SPN checking, this property can be specified using a using a constructor to override the default list used to match against the client's SPN.  
   
  ]]></format>
         </remarks>

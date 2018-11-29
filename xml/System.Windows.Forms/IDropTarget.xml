@@ -49,7 +49,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Forms.IDropTarget.OnDragDrop(System.Windows.Forms.DragEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.IDropTarget.OnDragDrop(System.Windows.Forms.DragEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Forms.IDropTarget.OnDragDrop(System.Windows.Forms.DragEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Forms.IDropTarget.OnDragDrop(System.Windows.Forms.DragEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -86,7 +86,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Forms.IDropTarget.OnDragEnter(System.Windows.Forms.DragEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.IDropTarget.OnDragEnter(System.Windows.Forms.DragEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Forms.IDropTarget.OnDragEnter(System.Windows.Forms.DragEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Forms.IDropTarget.OnDragEnter(System.Windows.Forms.DragEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -123,7 +123,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Forms.IDropTarget.OnDragLeave(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.IDropTarget.OnDragLeave(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Forms.IDropTarget.OnDragLeave(System.EventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Forms.IDropTarget.OnDragLeave(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -160,7 +160,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Forms.IDropTarget.OnDragOver(System.Windows.Forms.DragEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.IDropTarget.OnDragOver(System.Windows.Forms.DragEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Forms.IDropTarget.OnDragOver(System.Windows.Forms.DragEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Forms.IDropTarget.OnDragOver(System.Windows.Forms.DragEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>

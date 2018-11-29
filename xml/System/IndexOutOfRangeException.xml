@@ -98,7 +98,7 @@
         > [!TIP]
         >  The starting index of an array or collection can never be a negative number.  
   
--   Assuming that an array must be zero-based. Arrays that are not zero-based can be created by the <xref:System.Array.CreateInstance%28System.Type%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%29?displayProperty=nameWithType> method and can be returned by COM interop, although they aren’t CLS-compliant. The following example illustrates the <xref:System.IndexOutOfRangeException> that is thrown when you try to iterate a non-zero-based array created by the <xref:System.Array.CreateInstance%28System.Type%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%29?displayProperty=nameWithType> method.  
+-   Assuming that an array must be zero-based. Arrays that are not zero-based can be created by the <xref:System.Array.CreateInstance%28System.Type%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%29?displayProperty=nameWithType> method and can be returned by COM interop, although they aren't CLS-compliant. The following example illustrates the <xref:System.IndexOutOfRangeException> that is thrown when you try to iterate a non-zero-based array created by the <xref:System.Array.CreateInstance%28System.Type%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%29?displayProperty=nameWithType> method.  
   
      [!code-csharp[System.IndexOutOfRangeException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.indexoutofrangeexception/cs/nonzero1.cs#1)]
      [!code-vb[System.IndexOutOfRangeException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.indexoutofrangeexception/vb/nonzero1.vb#1)]  
@@ -122,7 +122,7 @@
   
 -   Providing an invalid column name to the <xref:System.Data.DataView.Sort%2A?displayProperty=nameWithType> property.  
   
--   Violating thread safety. Operations such as reading from the same <xref:System.IO.StreamReader> object, writing to the same <xref:System.IO.StreamWriter> object from multiple threads, or enumerating the objects in a <xref:System.Collections.Hashtable> from different threads can throw an <xref:System.IndexOutOfRangeException> if the object isn’t accessed in a thread-safe way. This exception is typically intermittent because it relies on a race condition.  
+-   Violating thread safety. Operations such as reading from the same <xref:System.IO.StreamReader> object, writing to the same <xref:System.IO.StreamWriter> object from multiple threads, or enumerating the objects in a <xref:System.Collections.Hashtable> from different threads can throw an <xref:System.IndexOutOfRangeException> if the object isn't accessed in a thread-safe way. This exception is typically intermittent because it relies on a race condition.  
   
  Using hard-coded index values to manipulate an array is likely to throw an exception if the index value is incorrect or invalid, or if the size of the array being manipulation is unexpected. To prevent an operation from throwing an  <xref:System.IndexOutOfRangeException> exception, you can do the following:  
   

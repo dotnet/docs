@@ -62,7 +62,7 @@
   
  ASP.NET applications should set the `ASPCompat` attribute of the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive to `true` to force the page to be serviced by the STA thread pool.  
   
- Here are some of the cases in which you’ll want to use the <xref:System.STAThreadAttribute> attribute to explicitly set the threading model to single-threaded apartment:  
+ Here are some of the cases in which you'll want to use the <xref:System.STAThreadAttribute> attribute to explicitly set the threading model to single-threaded apartment:  
   
 -   You're developing a Windows Forms app. Windows Forms apps must be single-threaded if they communicate with Windows system components such as the Clipboard or Windows common dialog boxes, or if they use system features such as drag-and-drop functionality. The Windows Forms Application template for C# automatically adds the <xref:System.STAThreadAttribute> attribute to C# projects. Because the single-threaded apartment model is the default for Visual Basic, there is no need for the attribute.  
   

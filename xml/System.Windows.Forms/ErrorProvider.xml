@@ -55,7 +55,7 @@
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.ErrorProvider> class to notify the user of a data entry error. The example creates a <xref:System.Windows.Forms.Form> that contains a <xref:System.Windows.Forms.TextBox> control, a <xref:System.Windows.Forms.NumericUpDown> control, and a <xref:System.Windows.Forms.ComboBox> control, each validating its content, and an <xref:System.Windows.Forms.ErrorProvider> for each control. The example sets error icon options using the <xref:System.Windows.Forms.ErrorProvider.BlinkRate%2A> and <xref:System.Windows.Forms.ErrorProvider.BlinkStyle%2A> properties and the <xref:System.Windows.Forms.ErrorProvider.SetIconAlignment%2A> and <xref:System.Windows.Forms.ErrorProvider.SetIconPadding%2A> methods. The <xref:System.Windows.Forms.ErrorProvider.SetError%2A> method is called with or without appropriate error text during a control’s <xref:System.Windows.Forms.Control.Validated> event, depending upon the content in the control.  
+ The following code example demonstrates using the <xref:System.Windows.Forms.ErrorProvider> class to notify the user of a data entry error. The example creates a <xref:System.Windows.Forms.Form> that contains a <xref:System.Windows.Forms.TextBox> control, a <xref:System.Windows.Forms.NumericUpDown> control, and a <xref:System.Windows.Forms.ComboBox> control, each validating its content, and an <xref:System.Windows.Forms.ErrorProvider> for each control. The example sets error icon options using the <xref:System.Windows.Forms.ErrorProvider.BlinkRate%2A> and <xref:System.Windows.Forms.ErrorProvider.BlinkStyle%2A> properties and the <xref:System.Windows.Forms.ErrorProvider.SetIconAlignment%2A> and <xref:System.Windows.Forms.ErrorProvider.SetIconPadding%2A> methods. The <xref:System.Windows.Forms.ErrorProvider.SetError%2A> method is called with or without appropriate error text during a control's <xref:System.Windows.Forms.Control.Validated> event, depending upon the content in the control.  
   
  [!code-cpp[System.Windows.Forms.ErrorProvider#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ErrorProvider/CPP/errorproviderexample.cpp#1)]
  [!code-csharp[System.Windows.Forms.ErrorProvider#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ErrorProvider/CS/errorproviderexample.cs#1)]
@@ -772,7 +772,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Forms.ErrorProvider.OnRightToLeftChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.ErrorProvider.OnRightToLeftChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Forms.ErrorProvider.OnRightToLeftChanged(System.EventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Forms.ErrorProvider.OnRightToLeftChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>

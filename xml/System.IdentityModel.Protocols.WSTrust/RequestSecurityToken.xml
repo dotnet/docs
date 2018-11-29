@@ -168,7 +168,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Represents the contents of the wst:ActAs element. This optional element supports delegation scenarios and indicates that the requestor is making the request to act as another identity. This element is introduced in WS-Trust 1.4. This property is `null` in requests that don’t involve delegation.  
+ Represents the contents of the wst:ActAs element. This optional element supports delegation scenarios and indicates that the requestor is making the request to act as another identity. This element is introduced in WS-Trust 1.4. This property is `null` in requests that don't involve delegation.  
   
  ]]></format>
         </remarks>
@@ -337,7 +337,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Represents the contents of the wst:DelegateTo element. This optional element indicates that the issued token be delegated to the specified identity. This element is introduced in WS-Trust 1.4. This property is `null` in requests that don’t involve delegation. This property is used in conjunction with the <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.DelegateTo%2A> property.  
+ Represents the contents of the wst:DelegateTo element. This optional element indicates that the issued token be delegated to the specified identity. This element is introduced in WS-Trust 1.4. This property is `null` in requests that don't involve delegation. This property is used in conjunction with the <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.DelegateTo%2A> property.  
   
  ]]></format>
         </remarks>
@@ -394,7 +394,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Represents the contents of the wst:Forwardable element. This optional element indicates whether the returned token is bound to the requestor’s computer or service (indicated by a `false` value). This element is introduced in WS-Trust 1.4. This property used in conjunction with the <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.DelegateTo%2A> property.  
+ Represents the contents of the wst:Forwardable element. This optional element indicates whether the returned token is bound to the requestor's computer or service (indicated by a `false` value). This element is introduced in WS-Trust 1.4. This property used in conjunction with the <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.DelegateTo%2A> property.  
   
  ]]></format>
         </remarks>

@@ -196,7 +196,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Child elements by default are represented as placeholders. The placeholder starts with a "#" character, then the child element’s UID, then a ";". For example, "#TextBlock1;#TextBlock2;". Normal "#" and ";" characters inside the content are escaped with a "\\". This applies to the actual "\\" character itself. The removal of child placeholders in content is not allowed, because an element may be referenced in code, which could cause the localized application to fail at run time. However, it is allowed to reorder them in localizations.  
+ Child elements by default are represented as placeholders. The placeholder starts with a "#" character, then the child element's UID, then a ";". For example, "#TextBlock1;#TextBlock2;". Normal "#" and ";" characters inside the content are escaped with a "\\". This applies to the actual "\\" character itself. The removal of child placeholders in content is not allowed, because an element may be referenced in code, which could cause the localized application to fail at run time. However, it is allowed to reorder them in localizations.  
   
  Child elements in the content can also be formatted as XML markup to improve readability. To do so, when <xref:System.Windows.Markup.Localizer.BamlLocalizer> queries the <xref:System.Windows.Markup.Localizer.ElementLocalizability> of a desired element, set the <xref:System.Windows.Markup.Localizer.ElementLocalizability.FormattingTag%2A> property to the desired tag name.  
   

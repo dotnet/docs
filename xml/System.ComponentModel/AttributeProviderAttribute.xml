@@ -40,7 +40,7 @@
   
  Once this attribute is placed on a property, the rules for obtaining attributes for the property descriptor's <xref:System.ComponentModel.MemberDescriptor.Attributes%2A?displayProperty=nameWithType> collection differ. Typically, the property descriptor gathers local attributes, and then merges these with attributes from the property type. In this case, the attributes are taken from the type returned from the <xref:System.ComponentModel.AttributeProviderAttribute>, not from the actual property type. This attribute is used on <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=nameWithType> to point the <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=nameWithType> object's specific type to <xref:System.ComponentModel.IListSource>, and the appropriate metadata is placed on <xref:System.ComponentModel.IListSource> to enable data binding. In so doing, external parties can easily add metadata to all data sources.  
   
- Attributes obtained from a type declared in the <xref:System.ComponentModel.AttributeProviderAttribute> have a priority in between the attributes of the property’s type and the attributes on the property. The following list, in priority order, shows the full set of available merged attributes:  
+ Attributes obtained from a type declared in the <xref:System.ComponentModel.AttributeProviderAttribute> have a priority in between the attributes of the property's type and the attributes on the property. The following list, in priority order, shows the full set of available merged attributes:  
   
 -   Property Attributes  
   

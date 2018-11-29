@@ -603,7 +603,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SecurityTokenHandler.LoadCustomConfiguration%2A> method is called by the configuration infrastructure. When this method is called, the `nodelist` will contain the top-level child elements of the token handler’s [&lt;add&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/add.md) element from the configuration file. Each of these may, in turn, contain attributes or child elements depending on the configuration schema you define for your derived class.  
+ The <xref:System.IdentityModel.Tokens.SecurityTokenHandler.LoadCustomConfiguration%2A> method is called by the configuration infrastructure. When this method is called, the `nodelist` will contain the top-level child elements of the token handler's [&lt;add&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/add.md) element from the configuration file. Each of these may, in turn, contain attributes or child elements depending on the configuration schema you define for your derived class.  
   
  The default implementation throws a <xref:System.NotImplementedException>. Override this method in your derived class to enable initialization of your security token handler from a configuration file.  
   

@@ -346,7 +346,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="entitySetName" /> or <paramref name="current" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.Metadata.Edm.EntitySet" /> from <paramref name="entitySetName" /> does not match the <see cref="T:System.Data.Metadata.Edm.EntitySet" /> of the object’s <see cref="T:System.Data.EntityKey" />.  
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.Metadata.Edm.EntitySet" /> from <paramref name="entitySetName" /> does not match the <see cref="T:System.Data.Metadata.Edm.EntitySet" /> of the object's <see cref="T:System.Data.EntityKey" />.  
   
  -or-  
   
@@ -407,7 +407,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="entitySetName" /> or <paramref name="original" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.Metadata.Edm.EntitySet" /> from <paramref name="entitySetName" /> does not match the <see cref="T:System.Data.Metadata.Edm.EntitySet" /> of the object’s <see cref="T:System.Data.EntityKey" />.  
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.Metadata.Edm.EntitySet" /> from <paramref name="entitySetName" /> does not match the <see cref="T:System.Data.Metadata.Edm.EntitySet" /> of the object's <see cref="T:System.Data.EntityKey" />.  
   
  -or-  
   
@@ -482,7 +482,7 @@
  -or-  
   
  When <paramref name="changed" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">When the <see cref="T:System.Data.Metadata.Edm.EntitySet" /> from <paramref name="entitySetName" /> does not match the <see cref="T:System.Data.Metadata.Edm.EntitySet" /> of the object’s <see cref="T:System.Data.EntityKey" />.  
+        <exception cref="T:System.InvalidOperationException">When the <see cref="T:System.Data.Metadata.Edm.EntitySet" /> from <paramref name="entitySetName" /> does not match the <see cref="T:System.Data.Metadata.Edm.EntitySet" /> of the object's <see cref="T:System.Data.EntityKey" />.  
   
  -or-  
   
@@ -699,7 +699,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns the connection object that was passed into the constructor or created during construction. The connection’s ownership is determined by the constructors used.  
+ This property returns the connection object that was passed into the constructor or created during construction. The connection's ownership is determined by the constructors used.  
   
    
   
@@ -969,7 +969,7 @@
         <summary>Creates a new <see cref="T:System.Data.Objects.ObjectSet`1" /> instance that is used to query, add, modify, and delete objects of the specified type and with the specified entity set name.</summary>
         <returns>The new <see cref="T:System.Data.Objects.ObjectSet`1" /> instance.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.Metadata.Edm.EntitySet" /> from <paramref name="entitySetName" /> does not match the <see cref="T:System.Data.Metadata.Edm.EntitySet" /> of the object’s <see cref="T:System.Data.EntityKey" />.  
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.Metadata.Edm.EntitySet" /> from <paramref name="entitySetName" /> does not match the <see cref="T:System.Data.Metadata.Edm.EntitySet" /> of the object's <see cref="T:System.Data.EntityKey" />.  
   
  -or-  
   
@@ -2225,7 +2225,7 @@
   
  The order in which objects are refreshed is nondeterministic.  
   
- After <xref:System.Data.Objects.ObjectContext.Refresh%2A> is called, the object’s original values will always be updated with the data source value, but the current values might or might not be updated with the data source value. This depends on the <xref:System.Data.Objects.RefreshMode> value. The <xref:System.Data.Objects.RefreshMode.StoreWins> mode means that the objects in the collection should be updated to match the data source values. <xref:System.Data.Objects.RefreshMode.ClientWins> means that only the changes in the object context will be persisted, even if there have been other changes in the data source.  
+ After <xref:System.Data.Objects.ObjectContext.Refresh%2A> is called, the object's original values will always be updated with the data source value, but the current values might or might not be updated with the data source value. This depends on the <xref:System.Data.Objects.RefreshMode> value. The <xref:System.Data.Objects.RefreshMode.StoreWins> mode means that the objects in the collection should be updated to match the data source values. <xref:System.Data.Objects.RefreshMode.ClientWins> means that only the changes in the object context will be persisted, even if there have been other changes in the data source.  
   
  To ensure that objects have been updated by data source-side logic, you can call <xref:System.Data.Objects.ObjectContext.Refresh%2A> with <xref:System.Data.Objects.RefreshMode.StoreWins> after you call the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method.  
   
@@ -2275,7 +2275,7 @@
   
  The order in which objects are refreshed is nondeterministic.  
   
- After the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method is called, the object’s original values will always be updated with the data source value, but the current values might or might not be updated with the data source value. This depends on the <xref:System.Data.Objects.RefreshMode>. The <xref:System.Data.Objects.RefreshMode.StoreWins> mode means that the object should be updated to match the data source values. The <xref:System.Data.Objects.RefreshMode.ClientWins> value means that only the changes in the object context will be persisted, even if there have been other changes in the data source.  
+ After the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method is called, the object's original values will always be updated with the data source value, but the current values might or might not be updated with the data source value. This depends on the <xref:System.Data.Objects.RefreshMode>. The <xref:System.Data.Objects.RefreshMode.StoreWins> mode means that the object should be updated to match the data source values. The <xref:System.Data.Objects.RefreshMode.ClientWins> value means that only the changes in the object context will be persisted, even if there have been other changes in the data source.  
   
  To ensure that an object has been updated by data source-side logic, you can call the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode.StoreWins> value after you call the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method.  
   

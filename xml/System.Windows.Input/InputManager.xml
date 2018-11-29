@@ -107,7 +107,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Components register delegates with this event to respond to a control entering the input manager’s menu mode.  
+ Components register delegates with this event to respond to a control entering the input manager's menu mode.  
   
  ]]></format>
         </remarks>
@@ -212,7 +212,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Components register delegates with this event to respond to a control leaving the input manager’s menu mode.  
+ Components register delegates with this event to respond to a control leaving the input manager's menu mode.  
   
  ]]></format>
         </remarks>
@@ -273,7 +273,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A component calls this method to leave the input manager’s menu mode. The `menuSite` releases privileged access to window messages.  
+ A component calls this method to leave the input manager's menu mode. The `menuSite` releases privileged access to window messages.  
   
  Calling this method causes the internal count of open menus to decrement and sets the <xref:System.Windows.Input.InputManager.IsInMenuMode%2A> property to `false`, if this is the last menu to close.  
   
@@ -656,7 +656,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A component calls this method to enter the input manager’s menu mode. The `menuSite` gets privileged access to window messages. Calling this method causes the internal count of open menus to increment and sets the <xref:System.Windows.Input.InputManager.IsInMenuMode%2A> property to `true`, if this is the first menu to open.  
+ A component calls this method to enter the input manager's menu mode. The `menuSite` gets privileged access to window messages. Calling this method causes the internal count of open menus to increment and sets the <xref:System.Windows.Input.InputManager.IsInMenuMode%2A> property to `true`, if this is the first menu to open.  
   
  ]]></format>
         </remarks>

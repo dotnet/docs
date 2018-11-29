@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Activities.Statements.PickBranch> contains a <xref:System.Activities.Statements.PickBranch.Trigger%2A> and an <xref:System.Activities.Statements.PickBranch.Action%2A>. At the beginning of a <xref:System.Activities.Statements.Pick> element’s execution, all the trigger activities from all <xref:System.Activities.Statements.PickBranch> elements are scheduled. When the first (leftmost) activity completes, the corresponding action activity is scheduled, and all other trigger activities are canceled.  
+ A <xref:System.Activities.Statements.PickBranch> contains a <xref:System.Activities.Statements.PickBranch.Trigger%2A> and an <xref:System.Activities.Statements.PickBranch.Action%2A>. At the beginning of a <xref:System.Activities.Statements.Pick> element's execution, all the trigger activities from all <xref:System.Activities.Statements.PickBranch> elements are scheduled. When the first (leftmost) activity completes, the corresponding action activity is scheduled, and all other trigger activities are canceled.  
   
    
   

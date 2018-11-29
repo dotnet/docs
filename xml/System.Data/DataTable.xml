@@ -666,7 +666,7 @@
    
   
 ## Examples  
- The following sample demonstrates how to update the structure and constraints of the destination table after you execute DataTable.Clone. The ClonedDataTable class will return a destination table and includes all the updating events. After the clone, structure changes in the source table won’t be reflected in the destination table. Specifically, this sample will:  
+ The following sample demonstrates how to update the structure and constraints of the destination table after you execute DataTable.Clone. The ClonedDataTable class will return a destination table and includes all the updating events. After the clone, structure changes in the source table won't be reflected in the destination table. Specifically, this sample will:  
   
 -   Update the changes of the columns in source table.  
   
@@ -2389,7 +2389,7 @@ class Program {
   
  The new row will be added to the end of the data table.  
   
- If the new row violates a Constraint it won’t be added to the data table.  
+ If the new row violates a Constraint it won't be added to the data table.  
   
  You can get the index of the new row with as DataTable.Rows.Find and DataTable.Rows.IndexOf. See <xref:System.Data.DataRowCollection> and <xref:System.Data.DataTable.Rows%2A> for more information.  
   
@@ -2478,7 +2478,7 @@ class Program {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Returns the status of the <xref:System.Data.DataTable> while it’s being constructed, for instance by Visual Studio. The <xref:System.Data.DataTable.BeginInit%2A> method sets it to `false` and <xref:System.Data.DataTable.EndInit%2A> method sets it to `true`.  
+ Returns the status of the <xref:System.Data.DataTable> while it's being constructed, for instance by Visual Studio. The <xref:System.Data.DataTable.BeginInit%2A> method sets it to `false` and <xref:System.Data.DataTable.EndInit%2A> method sets it to `true`.  
   
  ]]></format>
         </remarks>
@@ -2663,7 +2663,7 @@ class Program {
 |---------------|--------------|  
 |The <xref:System.Data.DataTable> has no schema.|The `Load` method infers the schema based on the result set from the imported <xref:System.Data.IDataReader>.|  
 |The <xref:System.Data.DataTable> has a schema, but it is incompatible with the loaded schema.|The `Load` method throws an exception corresponding to the particular error that occurs when attempting to load data into the incompatible schema.|  
-|The schemas are compatible, but the loaded result set schema contains columns that don't exist in the `DataTable`.|The `Load` method adds the extra columns to `DataTable`’s schema. The method throws an exception if corresponding columns in the <xref:System.Data.DataTable> and the loaded result set are not value compatible. The method also retrieves constraint information from the result set for all added columns. Except for the case of Primary Key constraint, this constraint information is used only if the current <xref:System.Data.DataTable> does not contain any columns at the start of the load operation.|  
+|The schemas are compatible, but the loaded result set schema contains columns that don't exist in the `DataTable`.|The `Load` method adds the extra columns to `DataTable`'s schema. The method throws an exception if corresponding columns in the <xref:System.Data.DataTable> and the loaded result set are not value compatible. The method also retrieves constraint information from the result set for all added columns. Except for the case of Primary Key constraint, this constraint information is used only if the current <xref:System.Data.DataTable> does not contain any columns at the start of the load operation.|  
 |The schemas are compatible, but the loaded result set schema contains fewer columns than does the `DataTable`.|If a missing column has a default value defined or the column's data type is nullable, the `Load` method allows the rows to be added, substituting the default or null value for the missing column. If no default value or null can be used, then the `Load` method throws an exception. If no specific default value has been supplied, the `Load` method uses the null value as the implied default value.|  
   
  Before considering the behavior of the `Load` method in terms of data operations, consider that each row within a <xref:System.Data.DataTable> maintains both the current value and the original value for each column. These values may be equivalent, or may be different if the data in the row has been changed since filling the `DataTable`. See [Row States and Row Versions](~/docs/framework/data/adonet/dataset-datatable-dataview/row-states-and-row-versions.md) for more information.  
@@ -2755,7 +2755,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
 |---------------|--------------|  
 |The <xref:System.Data.DataTable> has no schema.|The `Load` method infers the schema based on the result set from the imported <xref:System.Data.IDataReader>.|  
 |The <xref:System.Data.DataTable> has a schema, but it is incompatible with the loaded schema.|The `Load` method throws an exception corresponding to the particular error that occurs when attempting to load data into the incompatible schema.|  
-|The schemas are compatible, but the loaded result set schema contains columns that don't exist in the `DataTable`.|The `Load` method adds the extra column(s) to `DataTable`’s schema. The method throws an exception if corresponding columns in the <xref:System.Data.DataTable> and the loaded result set are not value compatible. The method also retrieves constraint information from the result set for all added columns. Except for the case of Primary Key constraint, this constraint information is used only if the current <xref:System.Data.DataTable> does not contain any columns at the start of the load operation.|  
+|The schemas are compatible, but the loaded result set schema contains columns that don't exist in the `DataTable`.|The `Load` method adds the extra column(s) to `DataTable`'s schema. The method throws an exception if corresponding columns in the <xref:System.Data.DataTable> and the loaded result set are not value compatible. The method also retrieves constraint information from the result set for all added columns. Except for the case of Primary Key constraint, this constraint information is used only if the current <xref:System.Data.DataTable> does not contain any columns at the start of the load operation.|  
 |The schemas are compatible, but the loaded result set schema contains fewer columns than does the `DataTable`.|If a missing column has a default value defined or the column's data type is nullable, the `Load` method allows the rows to be added, substituting the default or null value for the missing column. If no default value or null can be used, then the `Load` method throws an exception. If no specific default value has been supplied, the `Load` method uses the null value as the implied default value.|  
   
  Before considering the behavior of the `Load` method in terms of data operations, consider that each row within a <xref:System.Data.DataTable> maintains both the current value and the original value for each column. These values may be equivalent, or may be different if the data in the row has been changed since filling the `DataTable`. See [Row States and Row Versions](~/docs/framework/data/adonet/dataset-datatable-dataview/row-states-and-row-versions.md) for more information.  

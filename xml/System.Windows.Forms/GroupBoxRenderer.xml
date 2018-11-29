@@ -303,7 +303,7 @@
       </Parameters>
       <Docs>
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the background of the parent of <paramref name="childControl" />.</param>
-        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> in which to draw the parent control's background. This rectangle should be inside the child control’s bounds.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> in which to draw the parent control's background. This rectangle should be inside the child control's bounds.</param>
         <param name="childControl">The control whose parent's background will be drawn.</param>
         <summary>Draws the background of a control's parent in the specified area.</summary>
         <remarks>To be added.</remarks>

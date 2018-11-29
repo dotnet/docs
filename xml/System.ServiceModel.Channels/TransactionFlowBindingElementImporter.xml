@@ -19,14 +19,14 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Imports the transaction policy (WS-Policy assertions) of a service endpoint, adds implementing binding elements to the binding on the client, and transaction flow attributes to the appropriate operations on the service’s proxy. This class cannot be inherited.</summary>
+    <summary>Imports the transaction policy (WS-Policy assertions) of a service endpoint, adds implementing binding elements to the binding on the client, and transaction flow attributes to the appropriate operations on the service's proxy. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The service endpoint must have enabled transaction flow and its methods must flow transactions. The converted policy assertions all adhere to the WS-PolicyAssertions standard.  
   
- This class is used mainly by the infrastructure when it builds a proxy for a service that is transaction-flow enabled. Calling the <xref:System.ServiceModel.Channels.TransactionFlowBindingElementImporter.System%23ServiceModel%23Description%23IPolicyImportExtension%23ImportPolicy%2A> method adds a <xref:System.ServiceModel.Channels.TransactionFlowBindingElement> instance to the <xref:System.ServiceModel.Description.PolicyConversionContext> collection of binding elements. This also adds <xref:System.ServiceModel.TransactionFlowAttribute> instances, as appropriate, on the `Operations` collection present in the conversion context’s contract.  
+ This class is used mainly by the infrastructure when it builds a proxy for a service that is transaction-flow enabled. Calling the <xref:System.ServiceModel.Channels.TransactionFlowBindingElementImporter.System%23ServiceModel%23Description%23IPolicyImportExtension%23ImportPolicy%2A> method adds a <xref:System.ServiceModel.Channels.TransactionFlowBindingElement> instance to the <xref:System.ServiceModel.Description.PolicyConversionContext> collection of binding elements. This also adds <xref:System.ServiceModel.TransactionFlowAttribute> instances, as appropriate, on the `Operations` collection present in the conversion context's contract.  
   
  ]]></format>
     </remarks>

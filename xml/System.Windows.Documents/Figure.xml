@@ -38,7 +38,7 @@
   
 -   Cannot be positioned and will render wherever space can be made available for it. You cannot set the offset or anchor a <xref:System.Windows.Documents.Floater>.  
   
--   Cannot be sized to more than one column: By default, <xref:System.Windows.Documents.Floater> sizes at one column. It has a <xref:System.Windows.Documents.Floater.Width%2A> property that can be set to an absolute pixel value, but if this value is greater than one column width it is ignored and the floater is sized at one column. You can size it to less than one column by setting the correct pixel width, but sizing is not column-relative, so "0.5Column" is not a valid expression for <xref:System.Windows.Documents.Floater> width. <xref:System.Windows.Documents.Floater> has no height property and it's height cannot be set, it’s height depends on the content  
+-   Cannot be sized to more than one column: By default, <xref:System.Windows.Documents.Floater> sizes at one column. It has a <xref:System.Windows.Documents.Floater.Width%2A> property that can be set to an absolute pixel value, but if this value is greater than one column width it is ignored and the floater is sized at one column. You can size it to less than one column by setting the correct pixel width, but sizing is not column-relative, so "0.5Column" is not a valid expression for <xref:System.Windows.Documents.Floater> width. <xref:System.Windows.Documents.Floater> has no height property and it's height cannot be set, it's height depends on the content  
   
 -   <xref:System.Windows.Documents.Floater> paginates: If its content at its specified width extends to more than 1 column height, floater breaks and paginates to the next column, the next page, etc.  
   

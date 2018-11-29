@@ -42,7 +42,7 @@
         <Parameter Name="operationContext" Type="System.ServiceModel.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="operationContext">The operation’s context under which the message is being sent.</param>
+        <param name="operationContext">The operation's context under which the message is being sent.</param>
         <summary>Executed when a service message is sent.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

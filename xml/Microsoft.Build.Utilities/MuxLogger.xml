@@ -21,7 +21,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a multiplexing logger. The purpose of this logger is to register and unregister multiple loggers during the build. Supports the Visual Studio IDE scenario in which loggers are registered and unregistered for each project system’s build request. One physical build can have multiple logical builds, each with its own set of loggers.  
+    <summary>Represents a multiplexing logger. The purpose of this logger is to register and unregister multiple loggers during the build. Supports the Visual Studio IDE scenario in which loggers are registered and unregistered for each project system's build request. One physical build can have multiple logical builds, each with its own set of loggers.  
   
  The <see langword="MuxLogger" /> registers itself with the build manager as a regular central /l style logger. It receives messages from the build manager and routes them to the correct logger, based on the logical build that the message came from.</summary>
     <remarks>
@@ -30,7 +30,7 @@
 ## Remarks  
  The `MuxLogger` generally functions as follows:  
   
--   The `MuxLogger` is registered at the beginning of the build manager’s Begin build.  
+-   The `MuxLogger` is registered at the beginning of the build manager's Begin build.  
   
      Any loggers registered before the build manager starts the build get the build-started event at the same time as the `MuxLogger`.  
   
@@ -50,7 +50,7 @@
   
 2.  The `MuxLogger` registers the logger to the `MuxLogger` event source.  
   
-3.  If the build-started event has already been logged, the `MuxLogger` creates a new build-started event and sends it to the logger’s event source.  
+3.  If the build-started event has already been logged, the `MuxLogger` creates a new build-started event and sends it to the logger's event source.  
   
  The `MuxLogger` unregisters loggers in the following way:  
   

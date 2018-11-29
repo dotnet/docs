@@ -124,7 +124,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.Design.IComponentInitializer.InitializeNewComponent%2A> method is called after a new component is created. It is typically called by the toolbox item itself and is used to configure the component’s default values.  
+ The <xref:System.ComponentModel.Design.IComponentInitializer.InitializeNewComponent%2A> method is called after a new component is created. It is typically called by the toolbox item itself and is used to configure the component's default values.  
   
  This dictionary may be `null` if no default values are specified. If the dictionary is `null`, the component properties should be left in their implicit default states.  
   

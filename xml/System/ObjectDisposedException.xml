@@ -45,14 +45,14 @@
 ## Remarks  
  An <xref:System.ObjectDisposedException> is thrown when you try to access a member of an object that implements the <xref:System.IDisposable> interface, and that object has been disposed. Typically, this exception is caused by one of the following conditions:  
   
--   You've called an object's `Dispose` method, and you’re trying to access an instance member that gets or sets the object's state. The following example illustrates the <xref:System.ObjectDisposedException> that is thrown when you try to reset the frequency of timer notifications after you call the <xref:System.Threading.Timer.Dispose%2A?displayProperty=nameWithType> method.  
+-   You've called an object's `Dispose` method, and you're trying to access an instance member that gets or sets the object's state. The following example illustrates the <xref:System.ObjectDisposedException> that is thrown when you try to reset the frequency of timer notifications after you call the <xref:System.Threading.Timer.Dispose%2A?displayProperty=nameWithType> method.  
   
      [!code-csharp[System.ObjectDisposedException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.objectdisposedexception/cs/dispose1.cs#1)]
      [!code-vb[System.ObjectDisposedException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.objectdisposedexception/vb/dispose1.vb#1)]  
   
--   You've called an object's `Close` method, and you’re trying to access an instance member that gets or sets the object's state. Often, the `Close` method provides a type's public implementation of the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method.  
+-   You've called an object's `Close` method, and you're trying to access an instance member that gets or sets the object's state. Often, the `Close` method provides a type's public implementation of the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method.  
   
--   You've called an object's `Dispose` method multiple times. Typically, this doesn’t throw an exception. However, depending on how a type implements <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>, it may not allow multiple calls to `Dispose`.  
+-   You've called an object's `Dispose` method multiple times. Typically, this doesn't throw an exception. However, depending on how a type implements <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>, it may not allow multiple calls to `Dispose`.  
   
  In most cases, this exception results from developer error. Instead of handling the error in a `try`/`catch` block, you should correct the error, typically by reinstantiating the object.  
   

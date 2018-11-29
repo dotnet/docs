@@ -98,7 +98,7 @@
   
 -   To return multiple values from a method without the use of `out` parameters (in C#) or `ByRef` parameters (in Visual Basic). For example, the previous example returns its computed statistics, along with the city name, in a <xref:System.Tuple%607> object.  
   
--   To pass multiple values to a method through a single parameter. For example, the <xref:System.Threading.Thread.Start%28System.Object%29?displayProperty=nameWithType> method has a single parameter that lets you supply one value to the method that the thread executes at startup. If you supply a <xref:System.Tuple%607> object as the method argument, you can supply the thread’s startup routine with seven items of data.  
+-   To pass multiple values to a method through a single parameter. For example, the <xref:System.Threading.Thread.Start%28System.Object%29?displayProperty=nameWithType> method has a single parameter that lets you supply one value to the method that the thread executes at startup. If you supply a <xref:System.Tuple%607> object as the method argument, you can supply the thread's startup routine with seven items of data.  
   
  ]]></format>
     </remarks>

@@ -345,7 +345,7 @@
       <Docs>
         <param name="result">The <see cref="T:System.IAsyncResult" /> that references the <see cref="Overload:System.Activities.WorkflowInvoker.BeginInvoke" /> operation that started the workflow.</param>
         <summary>Returns the results of a workflow that was invoked using one of the <see cref="Overload:System.Activities.WorkflowInvoker.BeginInvoke" /> overloads.</summary>
-        <returns>A dictionary of the root activity’s <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
+        <returns>A dictionary of the root activity's <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -408,7 +408,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes a workflow synchronously and returns a dictionary of the root activity’s <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</summary>
+        <summary>Invokes a workflow synchronously and returns a dictionary of the root activity's <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -437,7 +437,7 @@
       <Parameters />
       <Docs>
         <summary>Invokes a workflow synchronously using the workflow definition passed to the <see cref="M:System.Activities.WorkflowInvoker.#ctor(System.Activities.Activity)" /> constructor.</summary>
-        <returns>A dictionary of the root activity’s <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
+        <returns>A dictionary of the root activity's <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -482,7 +482,7 @@
       <Docs>
         <param name="workflow">The workflow definition of the workflow to invoke.</param>
         <summary>Invokes a workflow synchronously using the specified workflow definition.</summary>
-        <returns>A dictionary of the root activity’s <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
+        <returns>A dictionary of the root activity's <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -527,7 +527,7 @@
       <Docs>
         <param name="inputs">The dictionary of input parameters to the workflow, keyed by argument name.</param>
         <summary>Invokes the activity passed to the <see cref="M:System.Activities.WorkflowInvoker.#ctor(System.Activities.Activity)" /> constructor synchronously with the specified <see cref="T:System.Collections.Generic.IDictionary`2" /> of input parameters.</summary>
-        <returns>A dictionary of the root activity’s <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
+        <returns>A dictionary of the root activity's <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -574,7 +574,7 @@
       <Docs>
         <param name="timeout">The interval in which the workflow must complete before it is aborted and a <see cref="T:System.TimeoutException" /> is thrown.</param>
         <summary>Invokes a workflow synchronously with the specified time-out interval.</summary>
-        <returns>A dictionary of the root activity’s <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
+        <returns>A dictionary of the root activity's <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -625,7 +625,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
         <param name="workflow">The workflow definition of the workflow to invoke.</param>
         <param name="inputs">The dictionary of input parameters to the workflow, keyed by argument name.</param>
         <summary>Invokes a workflow synchronously using the specified workflow definition and <see cref="T:System.Collections.Generic.IDictionary`2" /> of input parameters.</summary>
-        <returns>A dictionary of the root activity’s <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
+        <returns>A dictionary of the root activity's <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -679,7 +679,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
         <param name="workflow">The workflow definition of the workflow to invoke.</param>
         <param name="timeout">The interval in which the workflow must complete before it is aborted and a <see cref="T:System.TimeoutException" /> is thrown.</param>
         <summary>Invokes a workflow synchronously using the specified workflow definition and time-out interval.</summary>
-        <returns>A dictionary of the root activity’s <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
+        <returns>A dictionary of the root activity's <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -725,7 +725,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
         <param name="inputs">The dictionary of input parameters to the workflow, keyed by argument name.</param>
         <param name="timeout">The interval in which the workflow must complete before it is aborted and a <see cref="T:System.TimeoutException" /> is thrown.</param>
         <summary>Invokes the activity passed to the <see cref="M:System.Activities.WorkflowInvoker.#ctor(System.Activities.Activity)" /> constructor synchronously with the specified <see cref="T:System.Collections.Generic.IDictionary`2" /> of input parameters and the specified time-out interval.</summary>
-        <returns>A dictionary of the root activity’s <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
+        <returns>A dictionary of the root activity's <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -783,7 +783,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
         <param name="inputs">The dictionary of input parameters to the workflow, keyed by argument name.</param>
         <param name="timeout">The interval in which the workflow must complete before it is aborted and a <see cref="T:System.TimeoutException" /> is thrown.</param>
         <summary>Invokes a workflow synchronously using the specified workflow definition, <see cref="T:System.Collections.Generic.IDictionary`2" /> of input parameters, and time-out interval.</summary>
-        <returns>A dictionary of the root activity’s <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
+        <returns>A dictionary of the root activity's <see cref="T:System.Activities.OutArgument" /> and <see cref="T:System.Activities.InOutArgument" /> values keyed by argument name that represent the outputs of the workflow.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

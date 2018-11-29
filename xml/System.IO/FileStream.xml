@@ -2164,7 +2164,7 @@
   
  When you call the <xref:System.IO.FileStream.Flush%2A?displayProperty=nameWithType> method, the operating system I/O buffer is also flushed.  
   
- A stream’s encoder is not flushed unless you explicitly call <xref:System.IO.FileStream.Flush%2A> or dispose of the object. Setting <xref:System.IO.StreamWriter.AutoFlush%2A?displayProperty=nameWithType> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
+ A stream's encoder is not flushed unless you explicitly call <xref:System.IO.FileStream.Flush%2A> or dispose of the object. Setting <xref:System.IO.StreamWriter.AutoFlush%2A?displayProperty=nameWithType> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
   
  Because a buffer can be used for either reading or writing, <xref:System.IO.FileStream.Flush> performs the following two functions:  
   

@@ -64,7 +64,7 @@
 ## Customizing the Calendar Control  
  To apply the same property settings to multiple <xref:System.Windows.Controls.Calendar> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.Calendar>, see [Calendar Styles and Templates](~/docs/framework/wpf/controls/calendar-styles-and-templates.md).  
   
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](https://go.microsoft.com/fwlink/?LinkID=158252).  
+ Dependency properties for this control might be set by the control's default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](https://go.microsoft.com/fwlink/?LinkID=158252).  
   
 > [!NOTE]
 >  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.Calendar> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
@@ -1009,7 +1009,7 @@ Calendar with dates that cannot be selected
         <summary>Raises the <see cref="E:System.Windows.Controls.Calendar.DisplayDateChanged" /> event.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Controls.Calendar.OnDisplayDateChanged(System.Windows.Controls.CalendarDateChangedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Controls.Calendar.OnDisplayDateChanged(System.Windows.Controls.CalendarDateChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Controls.Calendar.OnDisplayDateChanged(System.Windows.Controls.CalendarDateChangedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Controls.Calendar.OnDisplayDateChanged(System.Windows.Controls.CalendarDateChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -1036,7 +1036,7 @@ Calendar with dates that cannot be selected
         <summary>Raises the <see cref="E:System.Windows.Controls.Calendar.DisplayModeChanged" /> event.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Controls.Calendar.OnDisplayModeChanged(System.Windows.Controls.CalendarModeChangedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Controls.Calendar.OnDisplayModeChanged(System.Windows.Controls.CalendarModeChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Controls.Calendar.OnDisplayModeChanged(System.Windows.Controls.CalendarModeChangedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Controls.Calendar.OnDisplayModeChanged(System.Windows.Controls.CalendarModeChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -1138,7 +1138,7 @@ Calendar with dates that cannot be selected
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Controls.Calendar.OnSelectedDatesChanged(System.Windows.Controls.SelectionChangedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Controls.Calendar.OnSelectedDatesChanged(System.Windows.Controls.SelectionChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Controls.Calendar.OnSelectedDatesChanged(System.Windows.Controls.SelectionChangedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Controls.Calendar.OnSelectedDatesChanged(System.Windows.Controls.SelectionChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -1165,7 +1165,7 @@ Calendar with dates that cannot be selected
         <summary>Raises the <see cref="E:System.Windows.Controls.Calendar.SelectionModeChanged" /> event.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Controls.Calendar.OnSelectionModeChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Controls.Calendar.OnSelectionModeChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Controls.Calendar.OnSelectionModeChanged(System.EventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Controls.Calendar.OnSelectionModeChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>

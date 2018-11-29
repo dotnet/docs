@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Security.Permissions.HostProtectionAttribute> attribute is used to determine if a type or member can be loaded, based on the host’s protection preferences established when the common language runtime is started. If a type or member with an active <xref:System.Security.Permissions.HostProtectionAttribute> is called, a link demand occurs for that protection attribute. If the caller does not meet the demand for host protection, a <xref:System.Security.HostProtectionException> is thrown.  
+ A <xref:System.Security.Permissions.HostProtectionAttribute> attribute is used to determine if a type or member can be loaded, based on the host's protection preferences established when the common language runtime is started. If a type or member with an active <xref:System.Security.Permissions.HostProtectionAttribute> is called, a link demand occurs for that protection attribute. If the caller does not meet the demand for host protection, a <xref:System.Security.HostProtectionException> is thrown.  
   
 > [!NOTE]
 >  A <xref:System.Security.Permissions.HostProtectionAttribute> is not a permission, even though it is the target of a link demand. Because a <xref:System.Security.HostProtectionException> is thrown for a link demand, it cannot be handled, and therefore it cannot be trapped and processed in code.  

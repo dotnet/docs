@@ -19,10 +19,10 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Shell.WindowChrome> class enables you to extend Windows Presentation Foundation (WPF) content into the non-client area of a window that is typically reserved for the operating system’s window manager.  
+ The <xref:System.Windows.Shell.WindowChrome> class enables you to extend Windows Presentation Foundation (WPF) content into the non-client area of a window that is typically reserved for the operating system's window manager.  
   
 ## Standard Windows  
- Standard windows are composed of two overlapping rectangles. The outer rectangle is the *non-client area*, which is often referred to as *chrome*. It is drawn and managed by the operating system’s window manager. Its dimensions are determined by standard operating system settings. The non-client frame provides standard window features and behaviors. These include caption buttons (Minimize, Maximize, and Close), the window border, resize and move behaviors, the application icon and title, and the system menu. The inner rectangle is the *client area*. It contains the contents of your application, and it is drawn and managed by the application. For more information about windows in WPF applications, see [WPF Windows Overview](~/docs/framework/wpf/app-development/wpf-windows-overview.md).  
+ Standard windows are composed of two overlapping rectangles. The outer rectangle is the *non-client area*, which is often referred to as *chrome*. It is drawn and managed by the operating system's window manager. Its dimensions are determined by standard operating system settings. The non-client frame provides standard window features and behaviors. These include caption buttons (Minimize, Maximize, and Close), the window border, resize and move behaviors, the application icon and title, and the system menu. The inner rectangle is the *client area*. It contains the contents of your application, and it is drawn and managed by the application. For more information about windows in WPF applications, see [WPF Windows Overview](~/docs/framework/wpf/app-development/wpf-windows-overview.md).  
   
  The following illustration shows the parts of a standard window.  
   
@@ -521,7 +521,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">‘Left, Right, Top, Bottom’ is not a valid value. At least one edge must belong to the client.</exception>
+        <exception cref="T:System.ArgumentException">'Left, Right, Top, Bottom' is not a valid value. At least one edge must belong to the client.</exception>
       </Docs>
     </Member>
     <Member MemberName="NonClientFrameEdgesProperty">

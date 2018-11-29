@@ -46,7 +46,7 @@
       <Docs>
         <param name="parent">The <see cref="T:System.Windows.DependencyObject" /> to which an element (Child) was either added or removed.</param>
         <param name="child">The <see cref="T:System.Windows.DependencyObject" /> that was added to or removed from another element (Parent).</param>
-        <param name="childIndex">The index in the Parent element’s children where the Child element is located when the add or remove operation is complete.</param>
+        <param name="childIndex">The index in the Parent element's children where the Child element is located when the add or remove operation is complete.</param>
         <param name="changeType">A value that indicates whether the Child element was added to another element (Parent) or removed.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Diagnostics.VisualTreeChangeEventArgs" /> class.</summary>
         <remarks>
@@ -131,8 +131,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index in the Parent element’s children where the Child element is located when the add or remove operation is complete. On a removal, this value will always be -1.</summary>
-        <value>The index in the Parent element’s children where the Child element is located when the add or remove operation is complete.</value>
+        <summary>Gets the index in the Parent element's children where the Child element is located when the add or remove operation is complete. On a removal, this value will always be -1.</summary>
+        <value>The index in the Parent element's children where the Child element is located when the add or remove operation is complete.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

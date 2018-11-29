@@ -166,8 +166,8 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.StoreLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies the location of the certificate store the client can use to validate the server’s certificate.</summary>
-        <value>A <see cref="T:System.Security.Cryptography.X509Certificates.StoreLocation" /> that specifies the location of the certificate store the client can use to validate the server’s certificate. The default value is <see cref="F:System.Security.Cryptography.X509Certificates.StoreLocation.LocalMachine" />.</value>
+        <summary>Gets or sets a value that specifies the location of the certificate store the client can use to validate the server's certificate.</summary>
+        <value>A <see cref="T:System.Security.Cryptography.X509Certificates.StoreLocation" /> that specifies the location of the certificate store the client can use to validate the server's certificate. The default value is <see cref="F:System.Security.Cryptography.X509Certificates.StoreLocation.LocalMachine" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

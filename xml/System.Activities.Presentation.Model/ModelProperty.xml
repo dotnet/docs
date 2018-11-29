@@ -188,7 +188,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Underlying type converters are all wrapped so they accept <xref:System.Activities.Presentation.Model.ModelItem> objects. When performing a conversion to a particular value, the type converter’s return type is not wrapped. Type converters that return standard values also return values as <xref:System.Activities.Presentation.Model.ModelItem> objects.  
+ Underlying type converters are all wrapped so they accept <xref:System.Activities.Presentation.Model.ModelItem> objects. When performing a conversion to a particular value, the type converter's return type is not wrapped. Type converters that return standard values also return values as <xref:System.Activities.Presentation.Model.ModelItem> objects.  
   
  ]]></format>
         </remarks>

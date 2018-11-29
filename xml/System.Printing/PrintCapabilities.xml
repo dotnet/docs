@@ -668,19 +668,19 @@ foreach (PageResolution pageRes in pc.PageResolutionCapability)
   
      The <xref:System.Printing.PageScalingFactorRange.MinimumScale%2A> property of the <xref:System.Printing.PrintCapabilities.PageScalingFactorRange%2A?displayProperty=nameWithType> property's <xref:System.Printing.PageScalingFactorRange> object is the smallest of the following values.  
   
-    -   The **MinValue** property of the `PageScalingScaleWidth` datatype that provides the value of the **Custom** option’s **ScaleWidth** `ScoredProperty`.  
+    -   The **MinValue** property of the `PageScalingScaleWidth` datatype that provides the value of the **Custom** option's **ScaleWidth** `ScoredProperty`.  
   
-    -   The **MinValue** property of the `PageScalingScaleHeight` datatype that provides the value of the **Custom** option’s **ScaleHeight** `ScoredProperty`.  
+    -   The **MinValue** property of the `PageScalingScaleHeight` datatype that provides the value of the **Custom** option's **ScaleHeight** `ScoredProperty`.  
   
-    -   The **MinValue** property of the `PageScalingScale` datatype that provides the value of the **CustomSquare** option’s **Scale** `ScoredProperty`.  
+    -   The **MinValue** property of the `PageScalingScale` datatype that provides the value of the **CustomSquare** option's **Scale** `ScoredProperty`.  
   
      The <xref:System.Printing.PageScalingFactorRange.MaximumScale%2A> property of the <xref:System.Printing.PrintCapabilities.PageScalingFactorRange%2A?displayProperty=nameWithType> property's <xref:System.Printing.PageScalingFactorRange> object is the largest of the following values.  
   
-    -   The **MaxValue** property of the `PageScalingScaleWidth` datatype that provides the value of the **Custom** option’s **ScaleWidth** `ScoredProperty`.  
+    -   The **MaxValue** property of the `PageScalingScaleWidth` datatype that provides the value of the **Custom** option's **ScaleWidth** `ScoredProperty`.  
   
-    -   The **MaxValue** property of the `PageScalingScaleHeight` datatype that provides the value of the **Custom** option’s **ScaleHeight** `ScoredProperty`.  
+    -   The **MaxValue** property of the `PageScalingScaleHeight` datatype that provides the value of the **Custom** option's **ScaleHeight** `ScoredProperty`.  
   
-    -   The **MaxValue** property of the `PageScalingScale` datatype that provides the value of the **CustomSquare** option’s **Scale** `ScoredProperty`.  
+    -   The **MaxValue** property of the `PageScalingScale` datatype that provides the value of the **CustomSquare** option's **Scale** `ScoredProperty`.  
   
  ]]></format>
         </remarks>

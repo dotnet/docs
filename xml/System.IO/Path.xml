@@ -1427,7 +1427,7 @@ For more information on file path formats on Windows, see [File path formats on 
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method creates a temporary file with a .TMP file extension. The temporary file is created within the user’s temporary folder, which is the path returned by the <xref:System.IO.Path.GetTempPath%2A> method.  
+ This method creates a temporary file with a .TMP file extension. The temporary file is created within the user's temporary folder, which is the path returned by the <xref:System.IO.Path.GetTempPath%2A> method.  
   
  The <xref:System.IO.Path.GetTempFileName%2A> method will raise an <xref:System.IO.IOException> if it is used to create more than 65535 files without deleting previous temporary files.  
   

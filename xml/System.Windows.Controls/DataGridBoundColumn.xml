@@ -203,7 +203,7 @@
         <summary>Notifies the <see cref="T:System.Windows.Controls.DataGrid" /> when the value of the <see cref="P:System.Windows.Controls.DataGridBoundColumn.Binding" /> property changes.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Controls.DataGridBoundColumn.OnBindingChanged(System.Windows.Data.BindingBase,System.Windows.Data.BindingBase)" /> in a derived class, make sure that you call the base class’s <see cref="M:System.Windows.Controls.DataGridBoundColumn.OnBindingChanged(System.Windows.Data.BindingBase,System.Windows.Data.BindingBase)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Controls.DataGridBoundColumn.OnBindingChanged(System.Windows.Data.BindingBase,System.Windows.Data.BindingBase)" /> in a derived class, make sure that you call the base class' <see cref="M:System.Windows.Controls.DataGridBoundColumn.OnBindingChanged(System.Windows.Data.BindingBase,System.Windows.Data.BindingBase)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>

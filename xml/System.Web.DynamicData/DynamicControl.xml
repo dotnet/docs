@@ -650,7 +650,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.DynamicData.DynamicControl.DataField" /> property is not set.</exception>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Web.DynamicData.DynamicControl.OnInit(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.DynamicData.DynamicControl.OnInit(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Web.DynamicData.DynamicControl.OnInit(System.EventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Web.DynamicData.DynamicControl.OnInit(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>

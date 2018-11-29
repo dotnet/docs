@@ -237,7 +237,7 @@
 |Type|Description|  
 |----------|-----------------|  
 |<xref:Accessibility.IAccessible>|The accessible object at the specified direction.|  
-|integer|0 if the point specified is either the current object or outside the object’s boundaries; otherwise, the child ID that identifies the accessible object at the specified direction.|  
+|integer|0 if the point specified is either the current object or outside the object's boundaries; otherwise, the child ID that identifies the accessible object at the specified direction.|  
   
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
   
@@ -272,8 +272,8 @@
         <Parameter Name="childID" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="pxLeft">When this method returns, contains the x-coordinate of the object’s left edge. This parameter is passed uninitialized.</param>
-        <param name="pyTop">When this method returns, contains the y-coordinate of the object’s top edge. This parameter is passed uninitialized.</param>
+        <param name="pxLeft">When this method returns, contains the x-coordinate of the object's left edge. This parameter is passed uninitialized.</param>
+        <param name="pyTop">When this method returns, contains the y-coordinate of the object's top edge. This parameter is passed uninitialized.</param>
         <param name="pcxWidth">When this method returns, contains the width of the object. This parameter is passed uninitialized.</param>
         <param name="pcyHeight">When this method returns, contains the height of the object. This parameter is passed uninitialized.</param>
         <param name="childID">The ID number of the accessible object. This parameter is 0 to get the location of the object, or a child ID to get the location of one of the object's child objects.</param>

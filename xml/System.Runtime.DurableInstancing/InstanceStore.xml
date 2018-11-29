@@ -167,7 +167,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Creates an instance handle. If the DefaultInstanceOwner is set, the value is automatically bound as the new handle’s instance owner.</summary>
+        <summary>Creates an instance handle. If the DefaultInstanceOwner is set, the value is automatically bound as the new handle's instance owner.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="CreateInstanceHandle">
@@ -212,7 +212,7 @@
       </Parameters>
       <Docs>
         <param name="instanceId">An instance identifier. Must not be Guid.Empty.</param>
-        <summary>Creates an instance handle.  If the DefaultInstanceOwner is set, the value is automatically bound as the new handle’s instance owner.  The instance identifier passed as a parameter is automatically bound as the new handle’s instance.</summary>
+        <summary>Creates an instance handle.  If the DefaultInstanceOwner is set, the value is automatically bound as the new handle's instance owner.  The instance identifier passed as a parameter is automatically bound as the new handle's instance.</summary>
         <returns>The instance handle.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,7 +237,7 @@
       </Parameters>
       <Docs>
         <param name="owner">The owner of an instance.</param>
-        <summary>Creates an instance handle. If the instance owner passed as a parameter is not null, the value is automatically bound as the new handle’s instance owner.  (Otherwise, no instance owner is bound, even if DefaultInstanceOwner is set.)</summary>
+        <summary>Creates an instance handle. If the instance owner passed as a parameter is not null, the value is automatically bound as the new handle's instance owner.  (Otherwise, no instance owner is bound, even if DefaultInstanceOwner is set.)</summary>
         <returns>The instance handle. A null value indicates that the new handle should not be automatically bound to an instance owner.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -264,7 +264,7 @@
       <Docs>
         <param name="owner">An InstanceOwner object  that represents the owner of an instance. Pass null as the value for this parameter to indicate that the new handle should not be automatically bound to an instance owner.</param>
         <param name="instanceId">An instance identifier. Must not be Guid.Empty.</param>
-        <summary>Creates an instance handle. If the instance owner passed as a parameter is not null, the value is automatically bound as the new handle’s instance owner.  (Otherwise, no instance owner is bound, even if DefaultInstanceOwner is set.) The instance identifier passed as a parameter is automatically bound as the new handle’s instance.</summary>
+        <summary>Creates an instance handle. If the instance owner passed as a parameter is not null, the value is automatically bound as the new handle's instance owner.  (Otherwise, no instance owner is bound, even if DefaultInstanceOwner is set.) The instance identifier passed as a parameter is automatically bound as the new handle's instance.</summary>
         <returns>The instance handle.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -363,7 +363,7 @@
       <Docs>
         <param name="result">The result of the operation.</param>
         <summary>Ends an asynchronous operation.</summary>
-        <returns>A persistence provider implementation should return false if it doesn’t support the command passed to the BeginTryCommand method. Otherwise it should return true or throw an exception.</returns>
+        <returns>A persistence provider implementation should return false if it doesn't support the command passed to the BeginTryCommand method. Otherwise it should return true or throw an exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -436,7 +436,7 @@
 > [!WARNING]
 >  If this method is executed with a <xref:System.Activities.DurableInstancing.CreateWorkflowOwnerCommand>, it will create an <xref:System.Runtime.DurableInstancing.InstanceOwner> and bind it to the instance. This means that no other process will be able to access that workflow; if the process ends, the workflow cannot be recovered or executed. If such a workflow is executed again, a <xref:System.Runtime.DurableInstancing.InstanceLockedException> will be thrown.  
 >   
->  If <xref:System.Activities.DurableInstancing.CreateWorkflowOwnerCommand> is not used, the instance store will create a temporary <xref:System.Runtime.DurableInstancing.InstanceOwner> that will be deleted at the end of the process. However, if the process ends before the workflow’s final persistence point, this exception will be thrown, unless the period of time specified in the **HostLockRenewalPeriod** parameter has expired.  
+>  If <xref:System.Activities.DurableInstancing.CreateWorkflowOwnerCommand> is not used, the instance store will create a temporary <xref:System.Runtime.DurableInstancing.InstanceOwner> that will be deleted at the end of the process. However, if the process ends before the workflow's final persistence point, this exception will be thrown, unless the period of time specified in the **HostLockRenewalPeriod** parameter has expired.  
   
  ]]></format>
         </remarks>
@@ -516,7 +516,7 @@
       </Parameters>
       <Docs>
         <param name="instanceHandle">The instance handle that was freed.</param>
-        <param name="userContext">The persistence provider’s user context information that was returned from OnNewInstanceHandle, or null if OnNewInstanceHandle is not overridden.</param>
+        <param name="userContext">The persistence provider's user context information that was returned from OnNewInstanceHandle, or null if OnNewInstanceHandle is not overridden.</param>
         <summary>Invoked when an instance handle is freed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -622,7 +622,7 @@
         <param name="command">The command to be executed.</param>
         <param name="timeout">Timeout value for the operation.</param>
         <summary>A persistence provider implements this method, which determines whether a particular persistence command can be executed and if the command can be executed executes it asynchronously.</summary>
-        <returns>A persistence provider implementation should return <see langword="false" /> if it doesn’t support the command passed as a parameter; otherwise it should return <see langword="true" /> or throw an exception.</returns>
+        <returns>A persistence provider implementation should return <see langword="false" /> if it doesn't support the command passed as a parameter; otherwise it should return <see langword="true" /> or throw an exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

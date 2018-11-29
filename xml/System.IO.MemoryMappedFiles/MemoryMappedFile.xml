@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A memory-mapped file maps the contents of a file to an application’s logical address space. Memory-mapped files enable programmers to work with extremely large files because memory can be managed concurrently, and they allow complete, random access to a file without the need for seeking. Memory-mapped files can also be shared across multiple processes.  
+ A memory-mapped file maps the contents of a file to an application's logical address space. Memory-mapped files enable programmers to work with extremely large files because memory can be managed concurrently, and they allow complete, random access to a file without the need for seeking. Memory-mapped files can also be shared across multiple processes.  
   
  The <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile%2A> methods create a memory-mapped file from a specified path or a <xref:System.IO.FileStream> of an existing file on disk. Changes are automatically propagated to disk when the file is unmapped.  
   
@@ -510,7 +510,7 @@
         <param name="capacity">The maximum size, in bytes, to allocate to the memory-mapped file. Specify 0 to set the capacity to the size of <c>filestream</c>.</param>
         <param name="access">One of the enumeration values that specifies the type of access allowed to the memory-mapped file.  
   
- This parameter can’t be set to <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Write" />.</param>
+ This parameter can't be set to <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Write" />.</param>
         <param name="inheritability">One of the enumeration values that specifies whether a handle to the memory-mapped file can be inherited by a child process. The default is <see cref="F:System.IO.HandleInheritability.None" />.</param>
         <param name="leaveOpen">A value that indicates whether to close the source file stream when the <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFile" /> is disposed.</param>
         <summary>Creates a memory-mapped file from an existing file with the specified access mode, name, inheritability, and capacity.</summary>
@@ -589,7 +589,7 @@
         <param name="capacity">The maximum size, in bytes, to allocate to the memory-mapped file. Specify 0 to set the capacity to the size of the file on disk.</param>
         <param name="access">One of the enumeration values that specifies the type of access allowed to the memory-mapped file.  
   
- This parameter can’t be set to <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Write" />.</param>
+ This parameter can't be set to <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Write" />.</param>
         <param name="memoryMappedFileSecurity">The permissions that can be granted for file access and operations on memory-mapped files.  
   
  This parameter can be <see langword="null" />.</param>

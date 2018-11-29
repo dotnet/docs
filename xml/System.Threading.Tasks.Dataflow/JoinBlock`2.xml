@@ -44,7 +44,7 @@
   <Docs>
     <typeparam name="T1">Specifies the type of data accepted by the block's first target.</typeparam>
     <typeparam name="T2">Specifies the type of data accepted by the block's second target.</typeparam>
-    <summary>Provides a dataflow block that joins across multiple dataflow sources, not necessarily of the same type, waiting for one item to arrive for each type before they’re all released together as a tuple consisting of one item per type.</summary>
+    <summary>Provides a dataflow block that joins across multiple dataflow sources, not necessarily of the same type, waiting for one item to arrive for each type before they're all released together as a tuple consisting of one item per type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -163,7 +163,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A dataflow block is considered completed when it is not currently processing a message and when it has guaranteed that it will not process any more messages. The returned <xref:System.Threading.Tasks.Task> will transition to a completed state when the associated block has completed. It will transition to the <xref:System.Threading.Tasks.TaskStatus><xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state when the block completes its processing successfully according to the dataflow block’s defined semantics. It will transition to the <xref:System.Threading.Tasks.TaskStatus><xref:System.Threading.Tasks.TaskStatus.Faulted> state when the dataflow block has completed processing prematurely due to an unhandled exception, and it will transition to the <xref:System.Threading.Tasks.TaskStatus><xref:System.Threading.Tasks.TaskStatus.Canceled> state when the dataflow block has completed processing prematurely due to receiving a cancellation request. If the task completes in the <xref:System.Threading.Tasks.TaskStatus.Faulted> state, its `Exception` property will return an <xref:System.AggregateException> containing the one or more exceptions that caused the block to fail.  
+ A dataflow block is considered completed when it is not currently processing a message and when it has guaranteed that it will not process any more messages. The returned <xref:System.Threading.Tasks.Task> will transition to a completed state when the associated block has completed. It will transition to the <xref:System.Threading.Tasks.TaskStatus><xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state when the block completes its processing successfully according to the dataflow block's defined semantics. It will transition to the <xref:System.Threading.Tasks.TaskStatus><xref:System.Threading.Tasks.TaskStatus.Faulted> state when the dataflow block has completed processing prematurely due to an unhandled exception, and it will transition to the <xref:System.Threading.Tasks.TaskStatus><xref:System.Threading.Tasks.TaskStatus.Canceled> state when the dataflow block has completed processing prematurely due to receiving a cancellation request. If the task completes in the <xref:System.Threading.Tasks.TaskStatus.Faulted> state, its `Exception` property will return an <xref:System.AggregateException> containing the one or more exceptions that caused the block to fail.  
   
  ]]></format>
         </remarks>

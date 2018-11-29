@@ -643,7 +643,7 @@
   
 -   **Which claim types should be included in the response based on the RP for which it is intended?** Typically this is decided on a per-RP basis from lists of claim types required for each RP or on a per-request basis by examining the <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Claims%2A> property of the request. However, the logic and details for determining the claims to include in the response is completely up to your implementation.  
   
--   **Which claim values should be assigned to the claims in the response?** For an Identity Provider (IP-STS) this typically means using one or more claims in the requestor’s <xref:System.Security.Claims.ClaimsPrincipal> (provided by the `principal` parameter) to access a store (or other entity) to return values for the required claim types. For a Federation Provider (R-STS) this typically means performing some kind of processing on the requestor’s incoming claims to fulfill the request; perhaps performing filtering or transformation on some claims presented by the requestor, while passing others through unmodified. Of course, as in the case of deciding which claims to include in the response, the details and logic of how to determine the values of these claims is up to your implementation.  
+-   **Which claim values should be assigned to the claims in the response?** For an Identity Provider (IP-STS) this typically means using one or more claims in the requestor's <xref:System.Security.Claims.ClaimsPrincipal> (provided by the `principal` parameter) to access a store (or other entity) to return values for the required claim types. For a Federation Provider (R-STS) this typically means performing some kind of processing on the requestor's incoming claims to fulfill the request; perhaps performing filtering or transformation on some claims presented by the requestor, while passing others through unmodified. Of course, as in the case of deciding which claims to include in the response, the details and logic of how to determine the values of these claims is up to your implementation.  
   
    
   
@@ -724,7 +724,7 @@
       <Docs>
         <param name="request">A <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the incoming token request (RST).</param>
         <summary>Gets the requestor's proof encrypting credentials.</summary>
-        <returns>An <see cref="T:System.IdentityModel.Tokens.EncryptingCredentials" /> object that represents the requestor’s encrypting credentials.</returns>
+        <returns>An <see cref="T:System.IdentityModel.Tokens.EncryptingCredentials" /> object that represents the requestor's encrypting credentials.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

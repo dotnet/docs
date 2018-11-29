@@ -1230,7 +1230,7 @@
 ## Remarks  
  When shadow copying is enabled, the default is to shadow copy all assemblies found through probing; that is, in the directories specified by the <xref:System.AppDomainSetup.PrivateBinPath%2A> and <xref:System.AppDomainSetup.ApplicationBase%2A> properties. The <xref:System.AppDomainSetup.ShadowCopyDirectories%2A> property restricts the shadow copy to the assemblies in the directories specified by <xref:System.AppDomainSetup.ShadowCopyDirectories%2A>.  
   
- If you don’t assign a string to the <xref:System.AppDomainSetup.ShadowCopyDirectories%2A> property, or if you set this property to `null`, all assemblies in the directories specified by the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> properties are shadow copied.  
+ If you don't assign a string to the <xref:System.AppDomainSetup.ShadowCopyDirectories%2A> property, or if you set this property to `null`, all assemblies in the directories specified by the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> properties are shadow copied.  
   
 > [!IMPORTANT]
 >  Directory paths must not contain semicolons, because the semicolon is the delimiter character. There is no escape character for semicolons.  

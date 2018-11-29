@@ -511,7 +511,7 @@
   
 -   The default value of <xref:System.Xml.XmlWriterSettings.Encoding%2A> is `Encoding.UTF8`.  
   
--   The <xref:System.IO.StreamWriter> is set to `Encoding.Unicode` and the <xref:System.IO.StreamWriter>’s encoding overrides the <xref:System.Xml.XmlWriterSettings.Encoding%2A> setting.  
+-   The <xref:System.IO.StreamWriter> is set to `Encoding.Unicode` and the <xref:System.IO.StreamWriter>'s encoding overrides the <xref:System.Xml.XmlWriterSettings.Encoding%2A> setting.  
   
 -   The output will be `Encoding.Unicode`.  
   

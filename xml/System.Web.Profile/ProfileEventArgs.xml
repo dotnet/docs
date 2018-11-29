@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the <xref:System.Web.Profile.ProfileEventArgs> class during the <xref:System.Web.Profile.ProfileModule.Personalize> event to specify a custom user profile. If, when the <xref:System.Web.Profile.ProfileModule.Personalize> event completes, the <xref:System.Web.Profile.ProfileEventArgs> parameter of the <xref:System.Web.Profile.ProfileEventHandler> has its <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property set to a value that’s not `null`, then the <xref:System.Web.Profile.ProfileModule> uses the value of the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property in the current <xref:System.Web.HttpContext>.  
+ You can use the <xref:System.Web.Profile.ProfileEventArgs> class during the <xref:System.Web.Profile.ProfileModule.Personalize> event to specify a custom user profile. If, when the <xref:System.Web.Profile.ProfileModule.Personalize> event completes, the <xref:System.Web.Profile.ProfileEventArgs> parameter of the <xref:System.Web.Profile.ProfileEventHandler> has its <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property set to a value that's not `null`, then the <xref:System.Web.Profile.ProfileModule> uses the value of the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property in the current <xref:System.Web.HttpContext>.  
   
    
   
@@ -136,7 +136,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property during the <xref:System.Web.Profile.ProfileModule.Personalize> event to specify a custom user profile. If, when the <xref:System.Web.Profile.ProfileModule.Personalize> event completes, the <xref:System.Web.Profile.ProfileEventArgs> parameter of the <xref:System.Web.Profile.ProfileEventHandler> has its <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property set to a value that’s not `null`, then the <xref:System.Web.Profile.ProfileModule> uses the value of the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property in the current <xref:System.Web.HttpContext>.  
+ You can use the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property during the <xref:System.Web.Profile.ProfileModule.Personalize> event to specify a custom user profile. If, when the <xref:System.Web.Profile.ProfileModule.Personalize> event completes, the <xref:System.Web.Profile.ProfileEventArgs> parameter of the <xref:System.Web.Profile.ProfileEventHandler> has its <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property set to a value that's not `null`, then the <xref:System.Web.Profile.ProfileModule> uses the value of the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property in the current <xref:System.Web.HttpContext>.  
   
 > [!NOTE]
 >  The <xref:System.Web.Profile.ProfileModule> does not set the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property for the <xref:System.Web.Profile.ProfileModule.Personalize> event. The <xref:System.Web.Profile.ProfileModule> only gets the value of the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property when the code in the <xref:System.Web.Profile.ProfileModule.Personalize> event completes. If the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A?displayProperty=nameWithType> property is not explicitly set by application code during the <xref:System.Web.Profile.ProfileModule.Personalize> event, the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property value will be `null`.  

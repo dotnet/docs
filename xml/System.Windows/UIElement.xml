@@ -6614,7 +6614,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement.OnGotTouchCapture%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnGotTouchCapture%2A> in a derived class to handle the <xref:System.Windows.UIElement.GotTouchCapture> event. Be sure to call the base class’s <xref:System.Windows.UIElement.OnGotTouchCapture%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement.OnGotTouchCapture%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnGotTouchCapture%2A> in a derived class to handle the <xref:System.Windows.UIElement.GotTouchCapture> event. Be sure to call the base class' <xref:System.Windows.UIElement.OnGotTouchCapture%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -7144,7 +7144,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement.OnLostTouchCapture%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnLostTouchCapture%2A> in a derived class to handle the <xref:System.Windows.UIElement.LostTouchCapture> event. Be sure to call the base class’s <xref:System.Windows.UIElement.OnLostTouchCapture%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement.OnLostTouchCapture%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnLostTouchCapture%2A> in a derived class to handle the <xref:System.Windows.UIElement.LostTouchCapture> event. Be sure to call the base class' <xref:System.Windows.UIElement.OnLostTouchCapture%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -7330,7 +7330,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement.OnManipulationStarting%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnManipulationStarting%2A> in a derived class to handle the <xref:System.Windows.UIElement.ManipulationStarting> event. Be sure to call the base class’s <xref:System.Windows.UIElement.OnManipulationStarting%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement.OnManipulationStarting%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnManipulationStarting%2A> in a derived class to handle the <xref:System.Windows.UIElement.ManipulationStarting> event. Be sure to call the base class' <xref:System.Windows.UIElement.OnManipulationStarting%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -8779,7 +8779,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement.OnPreviewTouchDown%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnPreviewTouchDown%2A> in a derived class to handle the <xref:System.Windows.UIElement.PreviewTouchDown> event. Be sure to call the base class’s <xref:System.Windows.UIElement.OnPreviewTouchDown%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement.OnPreviewTouchDown%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnPreviewTouchDown%2A> in a derived class to handle the <xref:System.Windows.UIElement.PreviewTouchDown> event. Be sure to call the base class' <xref:System.Windows.UIElement.OnPreviewTouchDown%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -8810,7 +8810,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement.OnPreviewTouchMove%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnPreviewTouchMove%2A> in a derived class to handle the <xref:System.Windows.UIElement.PreviewTouchMove> event. Be sure to call the base class’s <xref:System.Windows.UIElement.OnPreviewTouchMove%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement.OnPreviewTouchMove%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnPreviewTouchMove%2A> in a derived class to handle the <xref:System.Windows.UIElement.PreviewTouchMove> event. Be sure to call the base class' <xref:System.Windows.UIElement.OnPreviewTouchMove%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -8841,7 +8841,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement.OnPreviewTouchUp%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnPreviewTouchUp%2A> in a derived class to handle the <xref:System.Windows.UIElement.PreviewTouchUp> event. Be sure to call the base class’s <xref:System.Windows.UIElement.OnPreviewTouchUp%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement.OnPreviewTouchUp%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnPreviewTouchUp%2A> in a derived class to handle the <xref:System.Windows.UIElement.PreviewTouchUp> event. Be sure to call the base class' <xref:System.Windows.UIElement.OnPreviewTouchUp%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -9460,7 +9460,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement.OnTouchDown%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnTouchDown%2A> in a derived class to handle the <xref:System.Windows.UIElement.TouchDown> event. Be sure to call the base class’s <xref:System.Windows.UIElement.OnTouchDown%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement.OnTouchDown%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnTouchDown%2A> in a derived class to handle the <xref:System.Windows.UIElement.TouchDown> event. Be sure to call the base class' <xref:System.Windows.UIElement.OnTouchDown%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -9491,7 +9491,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement.OnTouchEnter%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnTouchEnter%2A> in a derived class to handle the <xref:System.Windows.UIElement.TouchEnter> event. Be sure to call the base class’s <xref:System.Windows.UIElement.OnTouchEnter%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement.OnTouchEnter%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnTouchEnter%2A> in a derived class to handle the <xref:System.Windows.UIElement.TouchEnter> event. Be sure to call the base class' <xref:System.Windows.UIElement.OnTouchEnter%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -9522,7 +9522,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement.OnTouchLeave%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnTouchLeave%2A> in a derived class to handle the <xref:System.Windows.UIElement.TouchLeave> event. Be sure to call the base class’s <xref:System.Windows.UIElement.OnTouchLeave%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement.OnTouchLeave%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnTouchLeave%2A> in a derived class to handle the <xref:System.Windows.UIElement.TouchLeave> event. Be sure to call the base class' <xref:System.Windows.UIElement.OnTouchLeave%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -9553,7 +9553,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement.OnTouchMove%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnTouchMove%2A> in a derived class to handle the <xref:System.Windows.UIElement.TouchMove> event. Be sure to call the base class’s <xref:System.Windows.UIElement.OnTouchMove%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement.OnTouchMove%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnTouchMove%2A> in a derived class to handle the <xref:System.Windows.UIElement.TouchMove> event. Be sure to call the base class' <xref:System.Windows.UIElement.OnTouchMove%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -9584,7 +9584,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement.OnTouchUp%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnTouchUp%2A> in a derived class to handle the <xref:System.Windows.UIElement.TouchUp> event. Be sure to call the base class’s <xref:System.Windows.UIElement.OnTouchUp%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement.OnTouchUp%2A> method has no default implementation. Override <xref:System.Windows.UIElement.OnTouchUp%2A> in a derived class to handle the <xref:System.Windows.UIElement.TouchUp> event. Be sure to call the base class' <xref:System.Windows.UIElement.OnTouchUp%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>

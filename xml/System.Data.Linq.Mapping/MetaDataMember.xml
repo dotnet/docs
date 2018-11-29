@@ -427,7 +427,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this property is `true`, the class member represents a column that is part of the table’s unique key. More than one member of the class can have this property set to `true` for a key that is a composite of the associated columns. For an entity class, at least one member must have this attribute and should be mapped to the primary key or a unique key in the corresponding table or view. Otherwise, LINQ to SQL considers instances of the class as read-only for the purpose of submitting changes to the database.  
+ If this property is `true`, the class member represents a column that is part of the table's unique key. More than one member of the class can have this property set to `true` for a key that is a composite of the associated columns. For an entity class, at least one member must have this attribute and should be mapped to the primary key or a unique key in the corresponding table or view. Otherwise, LINQ to SQL considers instances of the class as read-only for the purpose of submitting changes to the database.  
   
  The set of columns identified with <xref:System.Data.Linq.Mapping.MetaDataMember.IsPrimaryKey%2A> are not required to be the primary key. They simply denote a set that uniquely identifies the entity. Common alternatives include clustering index columns or other unique key columns.  
   

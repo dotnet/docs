@@ -149,7 +149,7 @@
       </Parameters>
       <Docs>
         <typeparam name="T">The type of items in the stack.</typeparam>
-        <param name="items">The items to add to the stack before it’s immutable.</param>
+        <param name="items">The items to add to the stack before it's immutable.</param>
         <summary>Creates a new immutable stack that contains the specified items.</summary>
         <returns>An immutable stack that contains the specified items.</returns>
         <remarks>To be added.</remarks>

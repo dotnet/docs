@@ -153,7 +153,7 @@
   
 |Term|Definition|  
 |----------|----------------|  
-|<xref:System.ComponentModel.Design.Serialization.INameCreationService>|Provides semantics for creating names of objects. The service uses the CodeDOM provider’s <xref:System.CodeDom.Compiler.ICodeGenerator> interface to create names that are valid identifiers for the language. In addition, the name creation service supports empty names. Empty names should be interpreted as temporary local variables during serialization.|  
+|<xref:System.ComponentModel.Design.Serialization.INameCreationService>|Provides semantics for creating names of objects. The service uses the CodeDOM provider's <xref:System.CodeDom.Compiler.ICodeGenerator> interface to create names that are valid identifiers for the language. In addition, the name creation service supports empty names. Empty names should be interpreted as temporary local variables during serialization.|  
 |<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>|Allows other objects to serialize a group of components into a binary object. This service is most often used by features such as copy and paste or undo and redo. The <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader> class provides a designer serialization service that is based on creating CodeDOM trees for objects.|  
 |<xref:System.ComponentModel.Design.Serialization.ComponentSerializationService>|This service replaces <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> as a means to serialize components to a binary object.|  
   

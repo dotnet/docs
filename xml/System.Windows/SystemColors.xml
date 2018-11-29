@@ -3643,8 +3643,8 @@
         <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Media.SolidColorBrush" /> that is the color of an inactive selected item’s text.</summary>
-        <value>The color of an inactive selected item’s text.</value>
+        <summary>Gets a <see cref="T:System.Windows.Media.SolidColorBrush" /> that is the color of an inactive selected item's text.</summary>
+        <value>The color of an inactive selected item's text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3682,8 +3682,8 @@
         <ReturnType>System.Windows.ResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints a an inactive selected item’s text.</summary>
-        <value>The <see cref="T:System.Windows.ResourceKey" /> for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints a an inactive selected item’s text. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
+        <summary>Gets the <see cref="T:System.Windows.ResourceKey" /> for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints a an inactive selected item's text.</summary>
+        <value>The <see cref="T:System.Windows.ResourceKey" /> for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints a an inactive selected item's text. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

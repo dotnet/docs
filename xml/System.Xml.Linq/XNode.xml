@@ -942,7 +942,7 @@ Child
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.CompareDocumentOrder%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent’s child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.CompareDocumentOrder%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent's child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
   
    
   
@@ -1983,7 +1983,7 @@ Child 3 Information
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.CompareDocumentOrder%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent’s child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.CompareDocumentOrder%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent's child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
   
    
   
@@ -2078,7 +2078,7 @@ Child5 is after Child3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.IsBefore%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent’s child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.IsBefore%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent's child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
   
    
   

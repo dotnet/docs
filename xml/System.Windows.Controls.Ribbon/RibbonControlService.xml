@@ -313,7 +313,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition> contains properties that specify size and visibility information for the image and label associated with a control. If the <xref:System.Windows.Controls.Ribbon.RibbonControlService.ControlSizeDefinition%2A> property is not set for a ribbon control, the <xref:System.Windows.Controls.Ribbon.RibbonControlService.DefaultControlSizeDefinition%2A> property is used instead. The default control size definition is based on the control’s property settings. If a <xref:System.Windows.Controls.Ribbon.RibbonControlService.LargeImageSource%2A> is specified, it is the default. If <xref:System.Windows.Controls.Ribbon.RibbonControlService.LargeImageSource%2A> is `null`, and a <xref:System.Windows.Controls.Ribbon.RibbonControlService.SmallImageSource%2A> is specified, the <xref:System.Windows.Controls.Ribbon.RibbonControlService.SmallImageSource%2A> is the default. If both the <xref:System.Windows.Controls.Ribbon.RibbonControlService.LargeImageSource%2A> and <xref:System.Windows.Controls.Ribbon.RibbonControlService.SmallImageSource%2A> are `null`, the image is set to <xref:System.Windows.Controls.Ribbon.RibbonImageSize.Collapsed> by default. If the <xref:System.Windows.Controls.Ribbon.RibbonControlService.Label%2A> property is null or empty, it is hidden by default.  
+ A <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition> contains properties that specify size and visibility information for the image and label associated with a control. If the <xref:System.Windows.Controls.Ribbon.RibbonControlService.ControlSizeDefinition%2A> property is not set for a ribbon control, the <xref:System.Windows.Controls.Ribbon.RibbonControlService.DefaultControlSizeDefinition%2A> property is used instead. The default control size definition is based on the control's property settings. If a <xref:System.Windows.Controls.Ribbon.RibbonControlService.LargeImageSource%2A> is specified, it is the default. If <xref:System.Windows.Controls.Ribbon.RibbonControlService.LargeImageSource%2A> is `null`, and a <xref:System.Windows.Controls.Ribbon.RibbonControlService.SmallImageSource%2A> is specified, the <xref:System.Windows.Controls.Ribbon.RibbonControlService.SmallImageSource%2A> is the default. If both the <xref:System.Windows.Controls.Ribbon.RibbonControlService.LargeImageSource%2A> and <xref:System.Windows.Controls.Ribbon.RibbonControlService.SmallImageSource%2A> are `null`, the image is set to <xref:System.Windows.Controls.Ribbon.RibbonImageSize.Collapsed> by default. If the <xref:System.Windows.Controls.Ribbon.RibbonControlService.Label%2A> property is null or empty, it is hidden by default.  
   
 <a name="dependencyPropertyInfo_DefaultControlSizeDefinition"></a>   
 ## Dependency Property Information  
@@ -505,7 +505,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.CanAddToQuickAccessToolBarDirectly" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.CanAddToQuickAccessToolBarDirectly" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.CanAddToQuickAccessToolBarDirectly" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -531,7 +531,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.CheckedBackground" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.CheckedBackground" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.CheckedBackground" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -557,7 +557,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.CheckedBorderBrush" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.CheckedBorderBrush" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.CheckedBorderBrush" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -583,7 +583,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ControlSizeDefinition" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ControlSizeDefinition" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ControlSizeDefinition" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -609,7 +609,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.CornerRadius" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.CornerRadius" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.CornerRadius" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -635,7 +635,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.DefaultControlSizeDefinition" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.DefaultControlSizeDefinition" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.DefaultControlSizeDefinition" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -661,7 +661,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.FocusedBackground" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.FocusedBackground" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.FocusedBackground" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -687,7 +687,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.FocusedBorderBrush" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.FocusedBorderBrush" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.FocusedBorderBrush" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -713,7 +713,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.IsInControlGroup" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.IsInControlGroup" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.IsInControlGroup" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -739,7 +739,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.IsInQuickAccessToolBar" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.IsInQuickAccessToolBar" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.IsInQuickAccessToolBar" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -765,7 +765,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.Label" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.Label" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.Label" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -791,7 +791,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.LargeImageSource" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.LargeImageSource" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.LargeImageSource" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -817,7 +817,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.MouseOverBackground" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.MouseOverBackground" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.MouseOverBackground" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -843,7 +843,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.MouseOverBorderBrush" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.MouseOverBorderBrush" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.MouseOverBorderBrush" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -869,7 +869,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.PressedBackground" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.PressedBackground" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.PressedBackground" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -895,7 +895,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.PressedBorderBrush" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.PressedBorderBrush" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.PressedBorderBrush" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -921,7 +921,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.QuickAccessToolBarControlSizeDefinition" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.QuickAccessToolBarControlSizeDefinition" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.QuickAccessToolBarControlSizeDefinition" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -947,7 +947,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.QuickAccessToolBarId" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.QuickAccessToolBarId" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.QuickAccessToolBarId" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -973,7 +973,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.Ribbon" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.Ribbon" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.Ribbon" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -999,7 +999,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ShowKeyboardCues" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ShowKeyboardCues" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ShowKeyboardCues" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -1025,7 +1025,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.SmallImageSource" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.SmallImageSource" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.SmallImageSource" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -1051,7 +1051,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipDescription" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipDescription" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipDescription" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -1077,7 +1077,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterDescription" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterDescription" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterDescription" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -1103,7 +1103,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterImageSource" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterImageSource" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterImageSource" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -1129,7 +1129,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterTitle" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterTitle" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipFooterTitle" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -1155,7 +1155,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipImageSource" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipImageSource" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipImageSource" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -1181,7 +1181,7 @@
       <Docs>
         <param name="element">The object from which the property value is read.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipTitle" /> attached property for an object.</summary>
-        <returns>The object’s <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipTitle" /> property value.</returns>
+        <returns>The object's <see cref="P:System.Windows.Controls.Ribbon.RibbonControlService.ToolTipTitle" /> property value.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
@@ -2387,7 +2387,7 @@
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon's enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipDescription"></a>   
 ## Dependency Property Information  
@@ -2441,7 +2441,7 @@
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon's enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipFooterDescription"></a>   
 ## Dependency Property Information  
@@ -2495,7 +2495,7 @@
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon's enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipFooterImageSource"></a>   
 ## Dependency Property Information  
@@ -2549,7 +2549,7 @@
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon's enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipFooterTitle"></a>   
 ## Dependency Property Information  
@@ -2603,7 +2603,7 @@
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon's enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipImageSource"></a>   
 ## Dependency Property Information  
@@ -2657,7 +2657,7 @@
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon's enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipTitle"></a>   
 ## Dependency Property Information  

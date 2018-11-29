@@ -698,7 +698,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the connection to the database is closed, the `DataSource` property returns whatever is contained in `ConnectionString` for the data source keyword. If the connection is open and the `ConnectionString` data source keyword's value starts with "&#124;datadirectory&#124;", the property returns whatever is contained in `ConnectionString` for the data source keyword only. If the connection to the database is open, the property returns what the native provider returns for the `DBPROP_INIT_DATASOURCE,` and if that is empty, the native provider’s `DBPROP_DATASOURCENAME` is returned.  
+ If the connection to the database is closed, the `DataSource` property returns whatever is contained in `ConnectionString` for the data source keyword. If the connection is open and the `ConnectionString` data source keyword's value starts with "&#124;datadirectory&#124;", the property returns whatever is contained in `ConnectionString` for the data source keyword only. If the connection to the database is open, the property returns what the native provider returns for the `DBPROP_INIT_DATASOURCE,` and if that is empty, the native provider's `DBPROP_DATASOURCENAME` is returned.  
   
    
   

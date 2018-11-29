@@ -93,7 +93,7 @@
   
  The <xref:System.Windows.Media.Media3D.Viewport2DVisual3D> class projects 3-D content into 2-D to size the 2-D content in the 3-D element correctly.  
   
- Because caching always relies on the element’s size, instead of the transform applied to it, when you set the <xref:System.Windows.Media.CacheMode> property, initially your content may appear pixilated. This is because it is being upsampled to a much larger size than it was cached at. You can correct this situation by increasing the local size of your 2-D visual by setting the <xref:System.Windows.FrameworkElement.Height%2A> or <xref:System.Windows.FrameworkElement.Width%2A> properties. Also, you can increase the <xref:System.Windows.Media.BitmapCache.RenderAtScale%2A> on the <xref:System.Windows.Media.Media3D.Viewport2DVisual3D.CacheMode%2A> until the content reaches an acceptable level of clarity.  
+ Because caching always relies on the element's size, instead of the transform applied to it, when you set the <xref:System.Windows.Media.CacheMode> property, initially your content may appear pixilated. This is because it is being upsampled to a much larger size than it was cached at. You can correct this situation by increasing the local size of your 2-D visual by setting the <xref:System.Windows.FrameworkElement.Height%2A> or <xref:System.Windows.FrameworkElement.Width%2A> properties. Also, you can increase the <xref:System.Windows.Media.BitmapCache.RenderAtScale%2A> on the <xref:System.Windows.Media.Media3D.Viewport2DVisual3D.CacheMode%2A> until the content reaches an acceptable level of clarity.  
   
  ]]></format>
         </remarks>

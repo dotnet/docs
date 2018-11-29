@@ -89,7 +89,7 @@
         <Parameter Name="contractDescription" Type="System.ServiceModel.Description.ContractDescription" />
       </Parameters>
       <Docs>
-        <param name="contractDescription">An object whose properties define an endpoint’s characteristics, including  
+        <param name="contractDescription">An object whose properties define an endpoint's characteristics, including  
   
 -   the signature of the operations in terms of messages exchanged  
   
@@ -122,7 +122,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether different host computers can access each others’ scripts.</summary>
+        <summary>Gets or sets whether different host computers can access each others' scripts.</summary>
         <value>
           <see langword="true" /> if cross domain script access is enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>

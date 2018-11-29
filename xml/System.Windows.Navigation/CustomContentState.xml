@@ -60,7 +60,7 @@
  A class that derives from <xref:System.Windows.Navigation.CustomContentState> must be serializable, which means it must at least be augmented with <xref:System.SerializableAttribute>, and optionally implement <xref:System.Runtime.Serialization.ISerializable>.  
   
 > [!IMPORTANT]
->  When you store information in custom content state, you cannot store any references to the instance of the page for which you are remembering state if don’t want the content to be retained in memory. This prevents [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] from releasing the page instance, and defeats the purpose of the default navigation history behavior. If you must do this, consider using <xref:System.Windows.Controls.Page.KeepAlive%2A> instead.  
+>  When you store information in custom content state, you cannot store any references to the instance of the page for which you are remembering state if don't want the content to be retained in memory. This prevents [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] from releasing the page instance, and defeats the purpose of the default navigation history behavior. If you must do this, consider using <xref:System.Windows.Controls.Page.KeepAlive%2A> instead.  
   
    
   

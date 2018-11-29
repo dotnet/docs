@@ -123,12 +123,12 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Determines whether a message’s action matches the <see cref="P:System.ServiceModel.CorrelationActionMessageFilter.Action" /> of this <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" />.</summary>
+        <summary>Determines whether a message's action matches the <see cref="P:System.ServiceModel.CorrelationActionMessageFilter.Action" /> of this <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A message’s action is specified by the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property of the message’s <xref:System.ServiceModel.Channels.Message.Headers%2A>.  
+ A message's action is specified by the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property of the message's <xref:System.ServiceModel.Channels.Message.Headers%2A>.  
   
  ]]></format>
         </remarks>
@@ -153,14 +153,14 @@
       </Parameters>
       <Docs>
         <param name="message">The message to compare.</param>
-        <summary>Determines whether the specified message’s action matches the <see cref="P:System.ServiceModel.CorrelationActionMessageFilter.Action" /> of this <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" />.</summary>
+        <summary>Determines whether the specified message's action matches the <see cref="P:System.ServiceModel.CorrelationActionMessageFilter.Action" /> of this <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" />.</summary>
         <returns>
           <see langword="true" /> if the action matches; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A message’s action is specified by the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property of the message’s <xref:System.ServiceModel.Channels.Message.Headers%2A>.  
+ A message's action is specified by the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property of the message's <xref:System.ServiceModel.Channels.Message.Headers%2A>.  
   
  ]]></format>
         </remarks>
@@ -192,7 +192,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A message’s action is specified by the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property of the message’s <xref:System.ServiceModel.Channels.Message.Headers%2A>.  
+ A message's action is specified by the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property of the message's <xref:System.ServiceModel.Channels.Message.Headers%2A>.  
   
  ]]></format>
         </remarks>

@@ -5080,7 +5080,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement3D.OnGotTouchCapture%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnGotTouchCapture%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.GotTouchCapture> event. Be sure to call the base class’s <xref:System.Windows.UIElement3D.OnGotTouchCapture%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement3D.OnGotTouchCapture%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnGotTouchCapture%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.GotTouchCapture> event. Be sure to call the base class' <xref:System.Windows.UIElement3D.OnGotTouchCapture%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -5643,7 +5643,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement3D.OnLostTouchCapture%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnLostTouchCapture%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.LostTouchCapture> event. Be sure to call the base class’s <xref:System.Windows.UIElement3D.OnLostTouchCapture%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement3D.OnLostTouchCapture%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnLostTouchCapture%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.LostTouchCapture> event. Be sure to call the base class' <xref:System.Windows.UIElement3D.OnLostTouchCapture%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -7168,7 +7168,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement3D.OnPreviewTouchDown%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnPreviewTouchDown%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.PreviewTouchDown> event. Be sure to call the base class’s <xref:System.Windows.UIElement3D.OnPreviewTouchDown%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement3D.OnPreviewTouchDown%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnPreviewTouchDown%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.PreviewTouchDown> event. Be sure to call the base class' <xref:System.Windows.UIElement3D.OnPreviewTouchDown%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -7199,7 +7199,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement3D.OnPreviewTouchMove%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnPreviewTouchMove%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.PreviewTouchMove> event. Be sure to call the base class’s <xref:System.Windows.UIElement3D.OnPreviewTouchMove%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement3D.OnPreviewTouchMove%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnPreviewTouchMove%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.PreviewTouchMove> event. Be sure to call the base class' <xref:System.Windows.UIElement3D.OnPreviewTouchMove%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -7230,7 +7230,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement3D.OnPreviewTouchUp%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnPreviewTouchUp%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.PreviewTouchUp> event. Be sure to call the base class’s <xref:System.Windows.UIElement3D.OnPreviewTouchUp%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement3D.OnPreviewTouchUp%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnPreviewTouchUp%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.PreviewTouchUp> event. Be sure to call the base class' <xref:System.Windows.UIElement3D.OnPreviewTouchUp%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -7803,7 +7803,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement3D.OnTouchDown%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnTouchDown%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.TouchDown> event. Be sure to call the base class’s <xref:System.Windows.UIElement3D.OnTouchDown%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement3D.OnTouchDown%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnTouchDown%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.TouchDown> event. Be sure to call the base class' <xref:System.Windows.UIElement3D.OnTouchDown%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -7834,7 +7834,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement3D.OnTouchEnter%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnTouchEnter%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.TouchEnter> event. Be sure to call the base class’s <xref:System.Windows.UIElement3D.OnTouchEnter%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement3D.OnTouchEnter%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnTouchEnter%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.TouchEnter> event. Be sure to call the base class' <xref:System.Windows.UIElement3D.OnTouchEnter%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -7865,7 +7865,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement3D.OnTouchLeave%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnTouchLeave%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.TouchLeave> event. Be sure to call the base class’s <xref:System.Windows.UIElement3D.OnTouchLeave%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement3D.OnTouchLeave%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnTouchLeave%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.TouchLeave> event. Be sure to call the base class' <xref:System.Windows.UIElement3D.OnTouchLeave%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -7896,7 +7896,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement3D.OnTouchMove%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnTouchMove%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.TouchMove> event. Be sure to call the base class’s <xref:System.Windows.UIElement3D.OnTouchMove%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement3D.OnTouchMove%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnTouchMove%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.TouchMove> event. Be sure to call the base class' <xref:System.Windows.UIElement3D.OnTouchMove%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>
@@ -7927,7 +7927,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.UIElement3D.OnTouchUp%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnTouchUp%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.TouchUp> event. Be sure to call the base class’s <xref:System.Windows.UIElement3D.OnTouchUp%2A> method so that base classes receive the event.  
+ The <xref:System.Windows.UIElement3D.OnTouchUp%2A> method has no default implementation. Override <xref:System.Windows.UIElement3D.OnTouchUp%2A> in a derived class to handle the <xref:System.Windows.UIElement3D.TouchUp> event. Be sure to call the base class' <xref:System.Windows.UIElement3D.OnTouchUp%2A> method so that base classes receive the event.  
   
  ]]></format>
         </remarks>

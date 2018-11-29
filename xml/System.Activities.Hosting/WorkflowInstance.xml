@@ -15,7 +15,7 @@
   <Interfaces />
   <Docs>
     <summary>
-      <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is a lightweight, per-instance runtime for executing a workflow program. It can be constructed to create a new workflow instance or from existing instance state. The APIs that <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> exposes are the minimal set of runtime controls from which higher level operations can be implemented. This API set represents the entire breadth of functionality of the runtime. <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is an abstract class and relies on a host’s implementation of its abstract methods in order to provide host functionality such as synchronization, persistence, tracking, and extensions.</summary>
+      <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is a lightweight, per-instance runtime for executing a workflow program. It can be constructed to create a new workflow instance or from existing instance state. The APIs that <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> exposes are the minimal set of runtime controls from which higher level operations can be implemented. This API set represents the entire breadth of functionality of the runtime. <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is an abstract class and relies on a host's implementation of its abstract methods in order to provide host functionality such as synchronization, persistence, tracking, and extensions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -343,8 +343,8 @@
         <ReturnType>System.Activities.LocationReferenceEnvironment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the root environment for the workflow instance’s arguments and variables.</summary>
-        <value>The root environment for the workflow instance’s arguments and variables.</value>
+        <summary>Gets or sets the root environment for the workflow instance's arguments and variables.</summary>
+        <value>The root environment for the workflow instance's arguments and variables.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

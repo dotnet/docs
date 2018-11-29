@@ -597,7 +597,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Web.UI.WebControls.LoginView.OnViewChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.LoginView.OnViewChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Web.UI.WebControls.LoginView.OnViewChanged(System.EventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Web.UI.WebControls.LoginView.OnViewChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.LoginView.ViewChanged" />
         <altmember cref="M:System.Web.UI.WebControls.LoginView.OnViewChanging(System.EventArgs)" />
@@ -641,7 +641,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Web.UI.WebControls.LoginView.OnViewChanging(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.LoginView.OnViewChanging(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Web.UI.WebControls.LoginView.OnViewChanging(System.EventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Web.UI.WebControls.LoginView.OnViewChanging(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.LoginView.ViewChanging" />
         <altmember cref="M:System.Web.UI.WebControls.LoginView.OnViewChanged(System.EventArgs)" />

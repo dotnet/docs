@@ -217,7 +217,7 @@
         <Parameter Name="rid" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="rid">The RID of the Windows user group in which to check for the principal’s membership status.</param>
+        <param name="rid">The RID of the Windows user group in which to check for the principal's membership status.</param>
         <summary>Determines whether the current principal belongs to the Windows user group with the specified relative identifier (RID).</summary>
         <returns>
           <see langword="true" /> if the current principal is a member of the specified Windows user group, that is, in a particular role; otherwise, <see langword="false" />.</returns>

@@ -57,7 +57,7 @@
         <param name="value">The object to search for.</param>
         <summary>  
   
- Searches the sorted immutable array for a specified element using the default comparer and returns the zero-based index of the element, if it’s found.</summary>
+ Searches the sorted immutable array for a specified element using the default comparer and returns the zero-based index of the element, if it's found.</summary>
         <returns>The zero-based index of the item in the array, if item is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than <paramref name="value" /> or, if there is no larger element, the bitwise complement of <see cref="P:System.Collections.Generic.ICollection`1.Count" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -97,7 +97,7 @@
         <param name="comparer">The comparer implementation to use when comparing elements, or null to use the default comparer.</param>
         <summary>  
   
- Searches a sorted immutable array for a specified element and returns the zero-based index of the element, if it’s found.</summary>
+ Searches a sorted immutable array for a specified element and returns the zero-based index of the element, if it's found.</summary>
         <returns>The zero-based index of the item in the array, if item is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than <paramref name="value" /> or, if there is no larger element, the bitwise complement of <see cref="P:System.Collections.Generic.ICollection`1.Count" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -139,7 +139,7 @@
         <param name="value">The object to search for.</param>
         <summary>  
   
- Searches a sorted immutable array for a specified element and returns the zero-based index of the element, if it’s found.</summary>
+ Searches a sorted immutable array for a specified element and returns the zero-based index of the element, if it's found.</summary>
         <returns>The zero-based index of the item in the array, if item is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than <paramref name="value" /> or, if there is no larger element, the bitwise complement of <see cref="P:System.Collections.Generic.ICollection`1.Count" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">

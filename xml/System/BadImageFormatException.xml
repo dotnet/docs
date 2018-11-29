@@ -44,7 +44,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This exception is thrown when the file format of a dynamic link library (.dll file) or an executable (.exe file) doesn’t conform to the format that the common language runtime expects. In particular, the exception is thrown under the following conditions:  
+ This exception is thrown when the file format of a dynamic link library (.dll file) or an executable (.exe file) doesn't conform to the format that the common language runtime expects. In particular, the exception is thrown under the following conditions:  
   
 - An earlier version of a .NET Framework utility, such as ILDasm.exe or installutil.exe, is used with an assembly that was developed with a later version of the .NET Framework.  
   
@@ -66,7 +66,7 @@
   
      To address this exception, set the project's **Platform target** property to x86 (instead of x64 or AnyCPU) and recompile.  
   
--   Your application’s components were created using different versions of the .NET Framework. Typically, this exception occurs when an application or component that was developed using the [!INCLUDE[net_v10_short](~/includes/net-v10-short-md.md)] or the [!INCLUDE[net_v11_short](~/includes/net-v11-short-md.md)] tries to load an assembly that was developed using the [!INCLUDE[net_v20SP1_short](~/includes/net-v20sp1-short-md.md)] or later, or when an application that was developed using the [!INCLUDE[net_v20SP1_short](~/includes/net-v20sp1-short-md.md)] or [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] tries to load an assembly that was developed using the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] or later. The <xref:System.BadImageFormatException> may be reported as a compile-time error, or the exception may be thrown at run time. The following example defines a `StringLib` class that has a single member, `ToProperCase`, and that resides in an assembly named StringLib.dll.  
+-   Your application's components were created using different versions of the .NET Framework. Typically, this exception occurs when an application or component that was developed using the [!INCLUDE[net_v10_short](~/includes/net-v10-short-md.md)] or the [!INCLUDE[net_v11_short](~/includes/net-v11-short-md.md)] tries to load an assembly that was developed using the [!INCLUDE[net_v20SP1_short](~/includes/net-v20sp1-short-md.md)] or later, or when an application that was developed using the [!INCLUDE[net_v20SP1_short](~/includes/net-v20sp1-short-md.md)] or [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] tries to load an assembly that was developed using the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] or later. The <xref:System.BadImageFormatException> may be reported as a compile-time error, or the exception may be thrown at run time. The following example defines a `StringLib` class that has a single member, `ToProperCase`, and that resides in an assembly named StringLib.dll.  
   
      [!code-csharp[System.BadImageFormatException.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.badimageformatexception.class/cs/stringlib.cs#2)]
      [!code-vb[System.BadImageFormatException.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.badimageformatexception.class/vb/stringlib.vb#2)]  

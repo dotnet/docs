@@ -1071,7 +1071,7 @@
       </Parameters>
       <Docs>
         <param name="savedState">The saved state to restore.</param>
-        <summary>Loads the server control’s previously saved view state to the control.</summary>
+        <summary>Loads the server control's previously saved view state to the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1101,7 +1101,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves the changes to a server control’s view state to an Object.</summary>
+        <summary>Saves the changes to a server control's view state to an Object.</summary>
         <returns>The object that contains the changes to the <see cref="T:System.Web.UI.WebControls.ModelDataSourceView" /> view state; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

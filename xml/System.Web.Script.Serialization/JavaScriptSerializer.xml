@@ -136,7 +136,7 @@
   
  You can set the `resolver` parameter to `null`, which is equivalent to calling the <xref:System.Web.Script.Serialization.JavaScriptSerializer.%23ctor%2A> constructor.  
   
- The instance of <xref:System.Web.Script.Serialization.JavaScriptSerializer> that is used by the asynchronous communication layer for invoking Web services from client script uses a special type resolver. This type resolver restricts the types that can be deserialized to those defined in the Web service’s method signature, or the ones that have the <xref:System.Web.Script.Services.GenerateScriptTypeAttribute> applied. You cannot modify this built-in type resolver programmatically.  
+ The instance of <xref:System.Web.Script.Serialization.JavaScriptSerializer> that is used by the asynchronous communication layer for invoking Web services from client script uses a special type resolver. This type resolver restricts the types that can be deserialized to those defined in the Web service's method signature, or the ones that have the <xref:System.Web.Script.Services.GenerateScriptTypeAttribute> applied. You cannot modify this built-in type resolver programmatically.  
   
 > [!IMPORTANT]
 >  Using an instance of this object initialized with a custom type-resolver can present a security risk. Use this object only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
@@ -365,7 +365,7 @@
 ## Remarks  
  The <xref:System.Web.Script.Serialization.JavaScriptSerializer.Deserialize%2A> method is equivalent to first using the <xref:System.Web.Script.Serialization.JavaScriptSerializer.DeserializeObject%2A> method to obtain an object graph and then trying to cast the result to type `T`.  
   
- During deserialization, the serializer’s current type resolver is referenced, which determines the managed type to use when converting elements that are nested inside arrays and dictionary types. As a result, the deserialization process iterates through all nested elements of `input`. For more information about type resolvers, see the <xref:System.Web.Script.Serialization.JavaScriptTypeResolver> class.  
+ During deserialization, the serializer's current type resolver is referenced, which determines the managed type to use when converting elements that are nested inside arrays and dictionary types. As a result, the deserialization process iterates through all nested elements of `input`. For more information about type resolvers, see the <xref:System.Web.Script.Serialization.JavaScriptTypeResolver> class.  
   
    
   

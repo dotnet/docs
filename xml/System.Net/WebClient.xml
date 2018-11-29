@@ -2459,7 +2459,7 @@ internal class MyWebClient : WebClient
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Net.WebClient.OnDownloadDataCompleted(System.Net.DownloadDataCompletedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Net.WebClient.OnDownloadDataCompleted(System.Net.DownloadDataCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Net.WebClient.OnDownloadDataCompleted(System.Net.DownloadDataCompletedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Net.WebClient.OnDownloadDataCompleted(System.Net.DownloadDataCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -2519,7 +2519,7 @@ internal class MyWebClient : WebClient
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Net.WebClient.OnDownloadFileCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Net.WebClient.OnDownloadFileCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Net.WebClient.OnDownloadFileCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Net.WebClient.OnDownloadFileCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -2579,7 +2579,7 @@ internal class MyWebClient : WebClient
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Net.WebClient.OnDownloadProgressChanged(System.Net.DownloadProgressChangedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Net.WebClient.OnDownloadProgressChanged(System.Net.DownloadProgressChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Net.WebClient.OnDownloadProgressChanged(System.Net.DownloadProgressChangedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Net.WebClient.OnDownloadProgressChanged(System.Net.DownloadProgressChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -2639,7 +2639,7 @@ internal class MyWebClient : WebClient
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Net.WebClient.OnDownloadStringCompleted(System.Net.DownloadStringCompletedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Net.WebClient.OnDownloadStringCompleted(System.Net.DownloadStringCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Net.WebClient.OnDownloadStringCompleted(System.Net.DownloadStringCompletedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Net.WebClient.OnDownloadStringCompleted(System.Net.DownloadStringCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -2699,7 +2699,7 @@ internal class MyWebClient : WebClient
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Net.WebClient.OnOpenReadCompleted(System.Net.OpenReadCompletedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Net.WebClient.OnOpenReadCompleted(System.Net.OpenReadCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Net.WebClient.OnOpenReadCompleted(System.Net.OpenReadCompletedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Net.WebClient.OnOpenReadCompleted(System.Net.OpenReadCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -2759,7 +2759,7 @@ internal class MyWebClient : WebClient
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Net.WebClient.OnOpenWriteCompleted(System.Net.OpenWriteCompletedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Net.WebClient.OnOpenWriteCompleted(System.Net.OpenWriteCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Net.WebClient.OnOpenWriteCompleted(System.Net.OpenWriteCompletedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Net.WebClient.OnOpenWriteCompleted(System.Net.OpenWriteCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -2819,7 +2819,7 @@ internal class MyWebClient : WebClient
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Net.WebClient.OnUploadDataCompleted(System.Net.UploadDataCompletedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Net.WebClient.OnUploadDataCompleted(System.Net.UploadDataCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Net.WebClient.OnUploadDataCompleted(System.Net.UploadDataCompletedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Net.WebClient.OnUploadDataCompleted(System.Net.UploadDataCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -2879,7 +2879,7 @@ internal class MyWebClient : WebClient
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Net.WebClient.OnUploadFileCompleted(System.Net.UploadFileCompletedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Net.WebClient.OnUploadFileCompleted(System.Net.UploadFileCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Net.WebClient.OnUploadFileCompleted(System.Net.UploadFileCompletedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Net.WebClient.OnUploadFileCompleted(System.Net.UploadFileCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -2939,7 +2939,7 @@ internal class MyWebClient : WebClient
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Net.WebClient.OnUploadProgressChanged(System.Net.UploadProgressChangedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Net.WebClient.OnUploadProgressChanged(System.Net.UploadProgressChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Net.WebClient.OnUploadProgressChanged(System.Net.UploadProgressChangedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Net.WebClient.OnUploadProgressChanged(System.Net.UploadProgressChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -2999,7 +2999,7 @@ internal class MyWebClient : WebClient
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Net.WebClient.OnUploadStringCompleted(System.Net.UploadStringCompletedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Net.WebClient.OnUploadStringCompleted(System.Net.UploadStringCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Net.WebClient.OnUploadStringCompleted(System.Net.UploadStringCompletedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Net.WebClient.OnUploadStringCompleted(System.Net.UploadStringCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -3059,7 +3059,7 @@ internal class MyWebClient : WebClient
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Net.WebClient.OnUploadValuesCompleted(System.Net.UploadValuesCompletedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Net.WebClient.OnUploadValuesCompleted(System.Net.UploadValuesCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Net.WebClient.OnUploadValuesCompleted(System.Net.UploadValuesCompletedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Net.WebClient.OnUploadValuesCompleted(System.Net.UploadValuesCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>

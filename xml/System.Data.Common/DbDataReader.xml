@@ -967,7 +967,7 @@ private static void GetDataTypes(String connectiongString) {
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
         <exception cref="T:System.InvalidCastException">
-          <paramref name="T" /> doesn’t match the type returned by SQL Server or cannot be cast.</exception>
+          <paramref name="T" /> doesn't match the type returned by SQL Server or cannot be cast.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetFieldValueAsync&lt;T&gt;">
@@ -1052,7 +1052,7 @@ private static void GetDataTypes(String connectiongString) {
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
         <exception cref="T:System.InvalidCastException">
-          <paramref name="T" /> doesn’t match the type returned by the data source  or cannot be cast.</exception>
+          <paramref name="T" /> doesn't match the type returned by the data source  or cannot be cast.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFieldValueAsync&lt;T&gt;">
@@ -1121,7 +1121,7 @@ private static void GetDataTypes(String connectiongString) {
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
         <exception cref="T:System.InvalidCastException">
-          <paramref name="T" /> doesn’t match the type returned by the data source or cannot be cast.</exception>
+          <paramref name="T" /> doesn't match the type returned by the data source or cannot be cast.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFloat">

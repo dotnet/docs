@@ -567,7 +567,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="entitySet" /> is null, or <paramref name="keyValues" /> is null or contains null.</exception>
-        <exception cref="T:System.ArgumentException">The count of <paramref name="keyValues" /> does not match the count of key members declared by the <paramref name="entitySet" />’s element type, or <paramref name="keyValues" /> contains an expression with a result type that is not compatible with the type of the corresponding key member.</exception>
+        <exception cref="T:System.ArgumentException">The count of <paramref name="keyValues" /> does not match the count of key members declared by the <paramref name="entitySet" />'s element type, or <paramref name="keyValues" /> contains an expression with a result type that is not compatible with the type of the corresponding key member.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateRef">
@@ -602,7 +602,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="entitySet" /> is null, or <paramref name="keyValues" /> is null or contains null.</exception>
-        <exception cref="T:System.ArgumentException">The count of <paramref name="keyValues" /> does not match the count of key members declared by the <paramref name="entitySet" />’s element type, or <paramref name="keyValues" /> contains an expression with a result type that is not compatible with the type of the corresponding key member.</exception>
+        <exception cref="T:System.ArgumentException">The count of <paramref name="keyValues" /> does not match the count of key members declared by the <paramref name="entitySet" />'s element type, or <paramref name="keyValues" /> contains an expression with a result type that is not compatible with the type of the corresponding key member.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateRef">
@@ -633,7 +633,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="entitySet" /> or <paramref name="entityType" /> is null, or <paramref name="keyValues" /> is null or contains null.</exception>
-        <exception cref="T:System.ArgumentException">The count of <paramref name="keyValues" /> does not match the count of key members declared by the <paramref name="entitySet" />’s element type, or <paramref name="keyValues" /> contains an expression with a result type that is not compatible with the type of the corresponding key member.</exception>
+        <exception cref="T:System.ArgumentException">The count of <paramref name="keyValues" /> does not match the count of key members declared by the <paramref name="entitySet" />'s element type, or <paramref name="keyValues" /> contains an expression with a result type that is not compatible with the type of the corresponding key member.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateRef">
@@ -670,7 +670,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="entitySet" /> or <paramref name="entityType" /> is null, or <paramref name="keyValues" /> is null or contains null.</exception>
-        <exception cref="T:System.ArgumentException">The count of <paramref name="keyValues" /> does not match the count of key members declared by the <paramref name="entitySet" />’s element type, or <paramref name="keyValues" /> contains an expression with a result type that is not compatible with the type of the corresponding key member.</exception>
+        <exception cref="T:System.ArgumentException">The count of <paramref name="keyValues" /> does not match the count of key members declared by the <paramref name="entitySet" />'s element type, or <paramref name="keyValues" /> contains an expression with a result type that is not compatible with the type of the corresponding key member.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="CrossApply">

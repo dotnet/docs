@@ -29,7 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class represents an encrypted key that comes over the wire. The encrypted key is a symmetric key that is encrypted for the receiving party using the receiving party’s public key. When such a key is received, the receiver’s security token is resolved, the symmetric key is decrypted, and an instance of this class is created that contains these two pieces of information.  
+ This class represents an encrypted key that comes over the wire. The encrypted key is a symmetric key that is encrypted for the receiving party using the receiving party's public key. When such a key is received, the receiver's security token is resolved, the symmetric key is decrypted, and an instance of this class is created that contains these two pieces of information.  
   
  ]]></format>
     </remarks>

@@ -34,7 +34,7 @@ TabControl with different types in the Header property
   
  A <xref:System.Windows.Controls.HeaderedContentControl> has a limited default style. An application developer can create a <xref:System.Windows.Controls.HeaderedContentControl>, but its appearance will be very simple. If you wish to enhance the appearance of the control, you can create a new <xref:System.Windows.Controls.ControlTemplate>. A <xref:System.Windows.Controls.HeaderedContentControl> is useful for creating custom controls because it provides a model for single content controls with headers.  
   
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](https://go.microsoft.com/fwlink/?LinkID=158252).  
+ Dependency properties for this control might be set by the control's default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](https://go.microsoft.com/fwlink/?LinkID=158252).  
   
    
   

@@ -239,7 +239,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.FreezableCollection`1" /> and its contents, making deep copies. If this collection (or its contents) has animated dependency properties, the property’s base value is copied, not its current animated value.</summary>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.FreezableCollection`1" /> and its contents, making deep copies. If this collection (or its contents) has animated dependency properties, the property's base value is copied, not its current animated value.</summary>
         <returns>A modifiable copy of this collection and its contents. The copy's <see cref="P:System.Windows.Freezable.IsFrozen" /> value is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

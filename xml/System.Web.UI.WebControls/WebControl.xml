@@ -409,7 +409,7 @@
  The <xref:System.Web.UI.WebControls.WebControl.Attributes%2A> collection contains a collection of all attributes declared in the opening tag of a Web server control. This allows you to programmatically control the attributes associated with a Web server control. You can add attributes to the collection or remove attributes from the collection.  
   
 > [!NOTE]
->  This property is rendered with all attributes in the collection in the control’s opening tag, regardless of the browser settings. Not all browsers support every attribute that is rendered. The unsupported attributes are usually ignored by the browser.  
+>  This property is rendered with all attributes in the collection in the control's opening tag, regardless of the browser settings. Not all browsers support every attribute that is rendered. The unsupported attributes are usually ignored by the browser.  
   
 > [!NOTE]
 >  You cannot add client-side script to a <xref:System.Web.UI.WebControls.WebControl> instance using the <xref:System.Web.UI.WebControls.WebControl.Attributes%2A> collection. To add client-side script, use the <xref:System.Web.UI.Page.ClientScript%2A> property on the <xref:System.Web.UI.Page> control.  

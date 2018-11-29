@@ -372,7 +372,7 @@
   
  <paramref name="newState" /> is <see langword="null" />.</exception>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.VisualStateManager.RaiseCurrentStateChanged(System.Windows.VisualStateGroup,System.Windows.VisualState,System.Windows.VisualState,System.Windows.FrameworkElement,System.Windows.FrameworkElement)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.VisualStateManager.RaiseCurrentStateChanged(System.Windows.VisualStateGroup,System.Windows.VisualState,System.Windows.VisualState,System.Windows.FrameworkElement,System.Windows.FrameworkElement)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.VisualStateManager.RaiseCurrentStateChanged(System.Windows.VisualStateGroup,System.Windows.VisualState,System.Windows.VisualState,System.Windows.FrameworkElement,System.Windows.FrameworkElement)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.VisualStateManager.RaiseCurrentStateChanged(System.Windows.VisualStateGroup,System.Windows.VisualState,System.Windows.VisualState,System.Windows.FrameworkElement,System.Windows.FrameworkElement)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -420,7 +420,7 @@
   
  <paramref name="newState" /> is <see langword="null" />.</exception>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.VisualStateManager.RaiseCurrentStateChanging(System.Windows.VisualStateGroup,System.Windows.VisualState,System.Windows.VisualState,System.Windows.FrameworkElement,System.Windows.FrameworkElement)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.VisualStateManager.RaiseCurrentStateChanging(System.Windows.VisualStateGroup,System.Windows.VisualState,System.Windows.VisualState,System.Windows.FrameworkElement,System.Windows.FrameworkElement)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.VisualStateManager.RaiseCurrentStateChanging(System.Windows.VisualStateGroup,System.Windows.VisualState,System.Windows.VisualState,System.Windows.FrameworkElement,System.Windows.FrameworkElement)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.VisualStateManager.RaiseCurrentStateChanging(System.Windows.VisualStateGroup,System.Windows.VisualState,System.Windows.VisualState,System.Windows.FrameworkElement,System.Windows.FrameworkElement)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>

@@ -268,7 +268,7 @@
         <param name="otherPartyPublicKey">The other party's public key.</param>
         <param name="hashAlgorithm">The hash algorithm  to use to derive the key material.</param>
         <summary>Derives bytes that can be used as a key using a hash function, given another party's public key and hash algorithm's name.</summary>
-        <returns>The key material from the key exchange with the other party’s public key.</returns>
+        <returns>The key material from the key exchange with the other party's public key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -310,7 +310,7 @@
         <param name="secretPrepend">A value to prepend to the derived secret before hashing.</param>
         <param name="secretAppend">A value to append to the derived secret before hashing.</param>
         <summary>When implemented in a derived class, derives bytes that can be used as a key using a hash function, given another party's public key, hash algorithm's name, a prepend value and an append value.</summary>
-        <returns>The key material from the key exchange with the other party’s public key.</returns>
+        <returns>The key material from the key exchange with the other party's public key.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotImplementedException">A derived class must override this method.</exception>
       </Docs>
@@ -353,7 +353,7 @@
         <param name="hashAlgorithm">The hash algorithm to use to derive the key material.</param>
         <param name="hmacKey">The key for the HMAC.</param>
         <summary>Derives bytes that can be used as a key using a Hash-based Message Authentication Code (HMAC).</summary>
-        <returns>The key material from the key exchange with the other party’s public key.</returns>
+        <returns>The key material from the key exchange with the other party's public key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -397,7 +397,7 @@
         <param name="secretPrepend">A value to prepend to the derived secret before hashing.</param>
         <param name="secretAppend">A value to append to the derived secret before hashing.</param>
         <summary>When implemented in a derived class, derives bytes that can be used as a key using a Hash-based Message Authentication Code (HMAC).</summary>
-        <returns>The key material from the key exchange with the other party’s public key.</returns>
+        <returns>The key material from the key exchange with the other party's public key.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotImplementedException">A derived class must override this method.</exception>
       </Docs>
@@ -428,7 +428,7 @@
       <Docs>
         <param name="otherPartyPublicKey">The other party's public key.</param>
         <summary>Derives bytes that can be used as a key, given another party's public key.</summary>
-        <returns>The key material from the key exchange with the other party’s public key.</returns>
+        <returns>The key material from the key exchange with the other party's public key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -468,7 +468,7 @@
         <param name="prfLabel">The ASCII-encoded PRF label.</param>
         <param name="prfSeed">The 64-byte PRF seed.</param>
         <summary>When implemented in a derived class, derives bytes that can be used as a key using a Transport Layer Security (TLS) Pseudo-Random Function (PRF) derivation algorithm.</summary>
-        <returns>The key material from the key exchange with the other party’s public key.</returns>
+        <returns>The key material from the key exchange with the other party's public key.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotImplementedException">A derived class must override this method.</exception>
       </Docs>

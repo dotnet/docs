@@ -19,7 +19,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When added to endpoint’s behavior configuration, the <xref:System.ServiceModel.Discovery.Configuration.EndpointDiscoveryElement> element allows the discovery functionality of the endpoint to be enabled or disabled. Additionally it allows specifying custom scope URIs that can be used to filter service endpoints during discovery operations. It also allows specifying custom XML metadata that is published along with the standard discoverable metadata.  
+ When added to endpoint's behavior configuration, the <xref:System.ServiceModel.Discovery.Configuration.EndpointDiscoveryElement> element allows the discovery functionality of the endpoint to be enabled or disabled. Additionally it allows specifying custom scope URIs that can be used to filter service endpoints during discovery operations. It also allows specifying custom XML metadata that is published along with the standard discoverable metadata.  
   
 > [!NOTE]
 >  The <xref:System.ServiceModel.Discovery.Configuration.EndpointDiscoveryElement> is dependent on the <xref:System.ServiceModel.Discovery.Configuration.ServiceDiscoveryElement> that provides service level control of discoverability. This means that the <xref:System.ServiceModel.Discovery.Configuration.EndpointDiscoveryElement> and its settings are ignored if a <xref:System.ServiceModel.Discovery.Configuration.ServiceDiscoveryElement> element is not present.  

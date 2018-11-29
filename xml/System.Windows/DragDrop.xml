@@ -542,12 +542,12 @@
 ## Remarks  
  It is the responsibility of your application to determine when a drag occurs, and then initiate the drag-and-drop operation. Typically, this is when a <xref:System.Windows.UIElement.MouseDown> and <xref:System.Windows.UIElement.MouseMove> sequence of events occurs over the element to be dragged. You initiate the drag-and-drop operation by calling the static <xref:System.Windows.DragDrop.DoDragDrop%2A> method and passing the transferred data to it. The <xref:System.Windows.DragDrop.DoDragDrop%2A> method will automatically wrap the data in a <xref:System.Windows.DataObject> if necessary. For greater control over the data format, you can wrap the data in a <xref:System.Windows.DataObject> before passing it to the <xref:System.Windows.DragDrop.DoDragDrop%2A> method.  
   
- The value returned from the <xref:System.Windows.DragDrop.DoDragDrop%2A> method is the value of the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property set in the drop target’s <xref:System.Windows.DragDrop.Drop> event handler. If the return value does not match one of the `allowedEffects` specified in the call to <xref:System.Windows.DragDrop.DoDragDrop%2A>, the drag-and-drop operation is not performed.  
+ The value returned from the <xref:System.Windows.DragDrop.DoDragDrop%2A> method is the value of the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property set in the drop target's <xref:System.Windows.DragDrop.Drop> event handler. If the return value does not match one of the `allowedEffects` specified in the call to <xref:System.Windows.DragDrop.DoDragDrop%2A>, the drag-and-drop operation is not performed.  
   
    
   
 ## Examples  
- The following example shows how to initiate a drag-and-drop operation from the <xref:System.Windows.UIElement.MouseMove> event handler of an <xref:System.Windows.Shapes.Ellipse> element to make it a drag source. The transferred data is the string representation of the ellipse’s <xref:System.Windows.Shapes.Shape.Fill%2A> property. The data is passed to the <xref:System.Windows.DragDrop.DoDragDrop%2A> method as a string and is automatically wrapped in a <xref:System.Windows.DataObject>.  
+ The following example shows how to initiate a drag-and-drop operation from the <xref:System.Windows.UIElement.MouseMove> event handler of an <xref:System.Windows.Shapes.Ellipse> element to make it a drag source. The transferred data is the string representation of the ellipse's <xref:System.Windows.Shapes.Shape.Fill%2A> property. The data is passed to the <xref:System.Windows.DragDrop.DoDragDrop%2A> method as a string and is automatically wrapped in a <xref:System.Windows.DataObject>.  
   
  [!code-csharp[DragDropSnippets#DoDragDrop](~/samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml.cs#dodragdrop)]
  [!code-vb[DragDropSnippets#DoDragDrop](~/samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#dodragdrop)]  
@@ -576,7 +576,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event is raised once each time an object is dragged into the bounds of an element that is acting as a drop target. This event is not raised if the element’s <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
+ This event is raised once each time an object is dragged into the bounds of an element that is acting as a drop target. This event is not raised if the element's <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
   
  Handling this event is optional for the drop target, and is not necessary for all drag-and-drop scenarios. You typically handle this event to provide a preview of the effects of the drag-and-drop operation, if appropriate for your application. Do not set the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property in the <xref:System.Windows.DragDrop.DragEnter> event, as it will be overwritten in the <xref:System.Windows.DragDrop.DragOver> event.  
   
@@ -657,7 +657,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event is raised once each time an object is dragged out of the bounds of an element that is acting as a drop target without being dropped. This event is not raised if the element’s <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
+ This event is raised once each time an object is dragged out of the bounds of an element that is acting as a drop target without being dropped. This event is not raised if the element's <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
   
  You typically handle this event to undo any changes that you made in the <xref:System.Windows.DragDrop.DragEnter> event handler.  
   
@@ -738,7 +738,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event is raised continuously while a dragged object is within the bounds of an element that is acting as a drop target. This event is not raised if the element’s <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
+ This event is raised continuously while a dragged object is within the bounds of an element that is acting as a drop target. This event is not raised if the element's <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
   
  The <xref:System.Windows.DragDrop.DragOver> event is paired with the <xref:System.Windows.DragDrop.GiveFeedback> event on the drag source. In the <xref:System.Windows.DragDrop.DragOver> event handler, you typically check that the transferred data is in a format that the drop target can process. You can also check whether any modifier keys are pressed, which typically indicates whether the user intends a move or a copy action. After these checks are performed, you set the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property to notify the drag source what effect dropping the data will have. The drag source receives this information in the <xref:System.Windows.GiveFeedbackEventArgs.Effects%2A> property of the <xref:System.Windows.DragDrop.GiveFeedback> event arguments, and can set an appropriate cursor to give feedback to the user.  
   
@@ -819,7 +819,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.DragDrop.Drop> event is raised once when an object is dropped within the bounds of an element that is acting as a drop target. This event is not raised if the element’s <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`. This event ends the drag-and-drop operation.  
+ The <xref:System.Windows.DragDrop.Drop> event is raised once when an object is dropped within the bounds of an element that is acting as a drop target. This event is not raised if the element's <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`. This event ends the drag-and-drop operation.  
   
  In the <xref:System.Windows.DragDrop.Drop> event handler, you extract the transferred data from the <xref:System.Windows.DataObject> and perform any processing of the data that your application requires. To notify the drag source of the effect of the drop, such as a copy or move, set the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property in the <xref:System.Windows.DragDrop.Drop> event handler. The value of this property is the return value of the <xref:System.Windows.DragDrop.DoDragDrop%2A> method that initiated the drag-and-drop operation. If the value that is returned does not match one of the `allowedEffects` specified in the call to <xref:System.Windows.DragDrop.DoDragDrop%2A>, the drag-and-drop operation is not performed. The initial value of the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property is the same as the `allowedEffects` specified in the call to the <xref:System.Windows.DragDrop.DoDragDrop%2A> method. If you do not set the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property, this initial value is returned and it is assumed that one the `allowedEffects` occurred.  
   
@@ -974,7 +974,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event is raised once each time an object is dragged into the bounds of an element that is acting as a drop target. This event is not raised if the element’s <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
+ This event is raised once each time an object is dragged into the bounds of an element that is acting as a drop target. This event is not raised if the element's <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
   
  For more information, see the <xref:System.Windows.DragDrop.DragEnter> event.  
   
@@ -1047,7 +1047,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event is raised once each time an object is dragged out of the bounds of an element that is acting as a drop target without being dropped. This event is not raised if the element’s <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
+ This event is raised once each time an object is dragged out of the bounds of an element that is acting as a drop target without being dropped. This event is not raised if the element's <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
   
  For more information, see the <xref:System.Windows.DragDrop.DragLeave> event.  
   
@@ -1120,7 +1120,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event is raised continuously while a dragged object is within the bounds of an element that is acting as a drop target. This event is not raised if the element’s <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
+ This event is raised continuously while a dragged object is within the bounds of an element that is acting as a drop target. This event is not raised if the element's <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`.  
   
  For more information, see the <xref:System.Windows.DragDrop.DragOver> event.  
   
@@ -1193,7 +1193,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event is raised once when an object is dropped within the bounds of an element that is acting as a drop target. This event is not raised if the element’s <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`. This event ends the drag-and-drop operation.  
+ This event is raised once when an object is dropped within the bounds of an element that is acting as a drop target. This event is not raised if the element's <xref:System.Windows.UIElement.AllowDrop%2A> property is `false`. This event ends the drag-and-drop operation.  
   
  For more information, see the <xref:System.Windows.DragDrop.Drop> event.  
   

@@ -915,7 +915,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Controls.DataGridRow.OnSelected(System.Windows.RoutedEventArgs)" /> in a derived class, make sure to call the base class’s <see cref="M:System.Windows.Controls.DataGridRow.OnSelected(System.Windows.RoutedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Controls.DataGridRow.OnSelected(System.Windows.RoutedEventArgs)" /> in a derived class, make sure to call the base class' <see cref="M:System.Windows.Controls.DataGridRow.OnSelected(System.Windows.RoutedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="T:System.Windows.Controls.DataGrid" />
         <altmember cref="E:System.Windows.Controls.DataGridRow.Selected" />
@@ -982,7 +982,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Controls.DataGridRow.OnUnselected(System.Windows.RoutedEventArgs)" /> in a derived class, make sure to call the base class’s <see cref="M:System.Windows.Controls.DataGridRow.OnUnselected(System.Windows.RoutedEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Controls.DataGridRow.OnUnselected(System.Windows.RoutedEventArgs)" /> in a derived class, make sure to call the base class' <see cref="M:System.Windows.Controls.DataGridRow.OnUnselected(System.Windows.RoutedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="T:System.Windows.Controls.DataGrid" />
         <altmember cref="E:System.Windows.Controls.DataGridRow.Unselected" />

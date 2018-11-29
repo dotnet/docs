@@ -83,7 +83,7 @@
      [!code-csharp[System.FormatException#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/iformattable3.cs#9)]
      [!code-vb[System.FormatException#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/iformattable3.vb#9)]  
   
-     This exception also results from a coding error. To correct it, call a parsing method that doesn’t require a precise format, such as <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> or <xref:System.Guid.Parse%2A?displayProperty=nameWithType>, or substitute a valid format string. The following example corrects the error by calling the <xref:System.Guid.Parse%2A?displayProperty=nameWithType> method.  
+     This exception also results from a coding error. To correct it, call a parsing method that doesn't require a precise format, such as <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> or <xref:System.Guid.Parse%2A?displayProperty=nameWithType>, or substitute a valid format string. The following example corrects the error by calling the <xref:System.Guid.Parse%2A?displayProperty=nameWithType> method.  
   
      [!code-csharp[System.FormatException#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/iformattable4.cs#10)]
      [!code-vb[System.FormatException#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/iformattable4.vb#10)]  

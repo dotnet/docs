@@ -254,7 +254,7 @@
       <Docs>
         <typeparam name="TKey">The type of keys stored in the dictionary.</typeparam>
         <typeparam name="TValue">The type of values stored in the dictionary.</typeparam>
-        <param name="items">The items to add to the sorted dictionary before it’s immutable.</param>
+        <param name="items">The items to add to the sorted dictionary before it's immutable.</param>
         <summary>Creates an immutable sorted dictionary that contains the specified items and uses the default comparer.</summary>
         <returns>An immutable sorted dictionary that contains the specified items.</returns>
         <remarks>To be added.</remarks>
@@ -328,7 +328,7 @@
         <typeparam name="TValue">The type of values stored in the dictionary.</typeparam>
         <param name="keyComparer">The comparer implementation to use to compare keys for equality and sorting.</param>
         <param name="valueComparer">The comparer implementation to use to compare values for equality and sorting.</param>
-        <param name="items">The items to add to the sorted dictionary before it’s immutable.</param>
+        <param name="items">The items to add to the sorted dictionary before it's immutable.</param>
         <summary>Creates a new immutable sorted dictionary from the specified range of items with the specified key and value comparers.</summary>
         <returns>An immutable sorted dictionary that contains the specified items and uses the specified comparers.</returns>
         <remarks>To be added.</remarks>

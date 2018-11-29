@@ -283,7 +283,7 @@
       </ReturnValue>
       <Docs>
         <summary>The return value of the method operation.</summary>
-        <value>The operation’s return value.</value>
+        <value>The operation's return value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -323,7 +323,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the activity’s method is invoked asynchronously.</summary>
+        <summary>Gets or sets a value that indicates whether the activity's method is invoked asynchronously.</summary>
         <value>
           <see langword="true" /> if the method executes asynchronously.</value>
         <remarks>

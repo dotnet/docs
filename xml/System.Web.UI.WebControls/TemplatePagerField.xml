@@ -287,7 +287,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">There is no handler for the <see cref="E:System.Web.UI.WebControls.TemplatePagerField.PagerCommand" /> event.</exception>
         <block subset="none" type="overrides">
-          <para>When you override <see cref="M:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand(System.Web.UI.WebControls.DataPagerCommandEventArgs)" /> in a derived class, call the base class’s <see cref="M:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand(System.Web.UI.WebControls.DataPagerCommandEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When you override <see cref="M:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand(System.Web.UI.WebControls.DataPagerCommandEventArgs)" /> in a derived class, call the base class' <see cref="M:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand(System.Web.UI.WebControls.DataPagerCommandEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.DataPagerCommandEventArgs" />
         <altmember cref="E:System.Web.UI.WebControls.TemplatePagerField.PagerCommand" />

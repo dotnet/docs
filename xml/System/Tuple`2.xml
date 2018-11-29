@@ -72,7 +72,7 @@
      [!code-csharp[System.Tuple\`2.Item1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.tuple`2.item1/cs/item1.cs#1)]
      [!code-vb[System.Tuple\`2.Item1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.tuple`2.item1/vb/item1.vb#1)]  
   
--   To pass multiple values to a method through a single parameter. For example, the <xref:System.Threading.Thread.Start%28System.Object%29?displayProperty=nameWithType> method has a single parameter that lets you supply one value to the method that the thread executes at startup. If you supply a <xref:System.Tuple%602> object as the method argument, you can supply the thread’s startup routine with two items of data.  
+-   To pass multiple values to a method through a single parameter. For example, the <xref:System.Threading.Thread.Start%28System.Object%29?displayProperty=nameWithType> method has a single parameter that lets you supply one value to the method that the thread executes at startup. If you supply a <xref:System.Tuple%602> object as the method argument, you can supply the thread's startup routine with two items of data.  
   
  ]]></format>
     </remarks>

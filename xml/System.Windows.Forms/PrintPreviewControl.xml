@@ -42,7 +42,7 @@
    
   
 ## Examples  
- The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form’s constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+ The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
   
  [!code-cpp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CS/form1.cs#1)]
@@ -88,7 +88,7 @@
    
   
 ## Examples  
- The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form’s constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+ The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
   
  [!code-cpp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CS/form1.cs#1)]
@@ -220,7 +220,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form’s constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+ The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
   
  [!code-cpp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CS/form1.cs#1)]
@@ -353,7 +353,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Windows.Forms.PrintPreviewControl.OnStartPageChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.PrintPreviewControl.OnStartPageChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When overriding <see cref="M:System.Windows.Forms.PrintPreviewControl.OnStartPageChanged(System.EventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Windows.Forms.PrintPreviewControl.OnStartPageChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
       </Docs>
     </Member>
@@ -682,7 +682,7 @@
    
   
 ## Examples  
- The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form’s constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+ The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
   
  [!code-cpp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CS/form1.cs#1)]
@@ -750,7 +750,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form’s constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+ The following code example demonstrates the <xref:System.Windows.Forms.PrintPreviewControl.Document%2A>, <xref:System.Windows.Forms.PrintPreviewControl.UseAntiAlias%2A>, and <xref:System.Windows.Forms.PrintPreviewControl.Zoom%2A> properties of the <xref:System.Windows.Forms.PrintPreviewControl>. To run this example, place the following code in a form and call the `InitializePrintPreviewControl` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
   
  [!code-cpp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.PrintPreviewControlExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintPreviewControlExample/CS/form1.cs#1)]

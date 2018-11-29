@@ -28,7 +28,7 @@
   
  There are two ways to associate a <xref:System.Windows.Media.Animation.Timeline> to a <xref:System.Windows.Controls.MediaElement> using a <xref:System.Windows.Media.MediaTimeline>.  
   
-1.  Inside of a <xref:System.Windows.Media.Animation.Storyboard>, when a <xref:System.Windows.Media.MediaTimeline> is targets a <xref:System.Windows.Controls.MediaElement>, a <xref:System.Windows.Media.MediaClock> will be created and assigned to the <xref:System.Windows.Controls.MediaElement>’s associated player. See [How to: Control a MediaElement by Using a Storyboard](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-mediaelement-by-using-a-storyboard.md) for an example;  
+1.  Inside of a <xref:System.Windows.Media.Animation.Storyboard>, when a <xref:System.Windows.Media.MediaTimeline> is targets a <xref:System.Windows.Controls.MediaElement>, a <xref:System.Windows.Media.MediaClock> will be created and assigned to the <xref:System.Windows.Controls.MediaElement>'s associated player. See [How to: Control a MediaElement by Using a Storyboard](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-mediaelement-by-using-a-storyboard.md) for an example;  
   
 2.  By explicitly creating a <xref:System.Windows.Media.MediaClock> from a <xref:System.Windows.Media.MediaTimeline> and assigning it to a <xref:System.Windows.Controls.MediaElement>.  
   

@@ -73,8 +73,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the activity’s execution logic.</summary>
-        <value>The activity’s execution logic.</value>
+        <summary>Gets or sets the activity's execution logic.</summary>
+        <value>The activity's execution logic.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +97,8 @@
         <Parameter Name="metadata" Type="System.Activities.NativeActivityMetadata" />
       </Parameters>
       <Docs>
-        <param name="metadata">The activity’s metadata that encapsulates the activity’s arguments, variables, child activities, and activity delegates.</param>
-        <summary>Builds and validates a description of the activity’s arguments, variables, child activities, and activity delegates.</summary>
+        <param name="metadata">The activity's metadata that encapsulates the activity's arguments, variables, child activities, and activity delegates.</param>
+        <summary>Builds and validates a description of the activity's arguments, variables, child activities, and activity delegates.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -23,7 +23,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When an editing scope is committed, the editing store takes all changes that occurred within it and applies them to the model. If the editing scope’s <xref:System.Activities.Presentation.Model.ModelEditingScope.Revert%2A> method is called, or the editing scope is disposed of before <xref:System.Activities.Presentation.Model.ModelEditingScope.Complete%2A> is called, the editing scope will instead reverse the changes made to the underlying objects, reapplying state from the editing store. This provides a solid basis for an undo mechanism.  
+ When an editing scope is committed, the editing store takes all changes that occurred within it and applies them to the model. If the editing scope's <xref:System.Activities.Presentation.Model.ModelEditingScope.Revert%2A> method is called, or the editing scope is disposed of before <xref:System.Activities.Presentation.Model.ModelEditingScope.Complete%2A> is called, the editing scope will instead reverse the changes made to the underlying objects, reapplying state from the editing store. This provides a solid basis for an undo mechanism.  
   
  ]]></format>
     </remarks>

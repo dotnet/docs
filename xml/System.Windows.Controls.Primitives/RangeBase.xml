@@ -378,7 +378,7 @@
 ## Remarks  
  Subclasses of the <xref:System.Windows.Controls.Primitives.RangeBase> can use this method to respond when the value property changes instead of overriding the <xref:System.Windows.FrameworkPropertyMetadata> to provide a new <xref:System.Windows.PropertyChangedCallback> function. For more information, see [Dependency Property Callbacks and Validation](~/docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md).  
   
- The <xref:System.Windows.Controls.Primitives.RangeBase.OnValueChanged%2A> method raises the <xref:System.Windows.Controls.Primitives.RangeBase.ValueChanged> event. When overriding <xref:System.Windows.Controls.Primitives.RangeBase.OnValueChanged%2A> in a derived class, be sure to call the base class’s <xref:System.Windows.Controls.Primitives.RangeBase.OnValueChanged%2A> method so that registered delegates receive the event.  
+ The <xref:System.Windows.Controls.Primitives.RangeBase.OnValueChanged%2A> method raises the <xref:System.Windows.Controls.Primitives.RangeBase.ValueChanged> event. When overriding <xref:System.Windows.Controls.Primitives.RangeBase.OnValueChanged%2A> in a derived class, be sure to call the base class' <xref:System.Windows.Controls.Primitives.RangeBase.OnValueChanged%2A> method so that registered delegates receive the event.  
   
  ]]></format>
         </remarks>

@@ -473,7 +473,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%2A> method is equivalent to a call to the <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%28System.ComponentModel.IComponent%2CSystem.ComponentModel.Design.ComponentActionsType%29> method using a `type` parameter of <xref:System.ComponentModel.Design.ComponentActionsType.All>. Therefore, the collection returned will contain both the push and pull lists of smart tags.  
   
- The returned <xref:System.ComponentModel.Design.DesignerActionListCollection> is the union of item lists added through the <xref:System.ComponentModel.Design.DesignerActionService.Add%2A> methods and also the lists obtained from the <xref:System.ComponentModel.Design.DesignerCommandSet> instance obtained from the component’s site.  
+ The returned <xref:System.ComponentModel.Design.DesignerActionListCollection> is the union of item lists added through the <xref:System.ComponentModel.Design.DesignerActionService.Add%2A> methods and also the lists obtained from the <xref:System.ComponentModel.Design.DesignerCommandSet> instance obtained from the component's site.  
   
  ]]></format>
         </remarks>

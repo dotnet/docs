@@ -112,7 +112,7 @@
       </ReturnValue>
       <Docs>
         <summary>When overridden in a derived class, gets or sets a value associated with the node in the data where the XPath navigator is positioned.</summary>
-        <value>A value that is associated with the navigator’s current position.</value>
+        <value>A value that is associated with the navigator's current position.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -122,7 +122,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>This property does not have any intrinsic meaning: it is an opaque <see cref="T:System.Int64" /> value that an implementation associates with the navigator’s current position. No restrictions or requirements are placed on the value itself. No assumptions about its internal data structure can be made.  
+          <para>This property does not have any intrinsic meaning: it is an opaque <see cref="T:System.Int64" /> value that an implementation associates with the navigator's current position. No restrictions or requirements are placed on the value itself. No assumptions about its internal data structure can be made.  
   
  It is not required that the values be sequential, or even that a navigator position map to a unique value. Multiple values can refer to the same navigator position, so comparing two values does not provide useful information.  
   

@@ -43,7 +43,7 @@
   
 -   To return multiple values from a method without using `out` parameters (in C#) or `ByRef` parameters (in Visual Basic).  
   
--   To pass multiple values to a method through a single parameter. For example, the <xref:System.Threading.Thread.Start%28System.Object%29?displayProperty=nameWithType> method has a single parameter that lets you supply one value to the method that the thread executes at startup time. If you supply a <xref:System.Tuple%603> object as the method argument, you can supply the thread’s startup routine with three items of data.  
+-   To pass multiple values to a method through a single parameter. For example, the <xref:System.Threading.Thread.Start%28System.Object%29?displayProperty=nameWithType> method has a single parameter that lets you supply one value to the method that the thread executes at startup time. If you supply a <xref:System.Tuple%603> object as the method argument, you can supply the thread's startup routine with three items of data.  
   
  The <xref:System.Tuple> class does not itself represent a tuple. Instead, it is a class that provides static methods for creating instances of the tuple types that are supported by the .NET Framework. It provides helper methods that you can call to instantiate tuple objects without having to explicitly specify the type of each tuple component.  
   

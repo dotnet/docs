@@ -258,7 +258,7 @@
         <param name="secretPrepend">A value to prepend to the derived secret before hashing.</param>
         <param name="secretAppend">A value to append to the derived secret before hashing.</param>
         <summary>Derives bytes that can be used as a key using a hash function, given another party's public key, hash algorithm's name, a prepend value and an append value.</summary>
-        <returns>The key material from the key exchange with the other party’s public key.</returns>
+        <returns>The key material from the key exchange with the other party's public key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -325,7 +325,7 @@
         <param name="secretPrepend">A value to prepend to the derived secret before hashing.</param>
         <param name="secretAppend">A value to append to the derived secret before hashing.</param>
         <summary>Derives bytes that can be used as a key using a Hash-based Message Authentication Code (HMAC).</summary>
-        <returns>The key material from the key exchange with the other party’s public key.</returns>
+        <returns>The key material from the key exchange with the other party's public key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -356,7 +356,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The Elliptic Curve Diffie-Hellman (ECDH) algorithm accepts the private key and the other party’s public key as input, and produces the secret agreement as output. The key derivation function (KDF) then takes the secret agreement and produces the key material as output.  
+ The Elliptic Curve Diffie-Hellman (ECDH) algorithm accepts the private key and the other party's public key as input, and produces the secret agreement as output. The key derivation function (KDF) then takes the secret agreement and produces the key material as output.  
   
  ]]></format>
         </remarks>
@@ -474,7 +474,7 @@
         <param name="prfLabel">The ASCII-encoded PRF label.</param>
         <param name="prfSeed">The 64-byte PRF seed.</param>
         <summary>Derives bytes that can be used as a key using a Transport Layer Security (TLS) Pseudo-Random Function (PRF) derivation algorithm.</summary>
-        <returns>The key material from the key exchange with the other party’s public key.</returns>
+        <returns>The key material from the key exchange with the other party's public key.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="otherPartyPublicKey" /> is <see langword="null" />.  

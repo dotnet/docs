@@ -40,7 +40,7 @@
 ## Remarks  
  By default, in event tracing for Windows (ETW), the name of an event source matches the name of the event source class, but without the namespace name. This is sufficient for private event sources, but for more visible event sources it is better to have a hierarchical namespace such as: *CompanyName*.*ProviderName*.  The <xref:System.Diagnostics.Tracing.EventSourceAttribute> attribute lets you define the ETW name independently of the name of the class.  
   
- The <xref:System.Diagnostics.Tracing.EventSourceAttribute> attribute also lets you define a GUID explicitly for the event source.  In standard usage, you don’t need to specify a GUID when defining an event source or referring to it, because a GUID is implicitly derived from the name of the event source class. Explicitly defining a GUID is discouraged, except when upgrading existing ETW providers to using event sources.  
+ The <xref:System.Diagnostics.Tracing.EventSourceAttribute> attribute also lets you define a GUID explicitly for the event source.  In standard usage, you don't need to specify a GUID when defining an event source or referring to it, because a GUID is implicitly derived from the name of the event source class. Explicitly defining a GUID is discouraged, except when upgrading existing ETW providers to using event sources.  
   
  ]]></format>
     </remarks>
@@ -113,7 +113,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In standard usage, you don’t need to specify a GUID when defining an event source or referring to it, because a GUID is implicitly derived from the name of the event source class. Explicitly defining a GUID is discouraged, except when upgrading existing ETW providers to using event sources.  
+ In standard usage, you don't need to specify a GUID when defining an event source or referring to it, because a GUID is implicitly derived from the name of the event source class. Explicitly defining a GUID is discouraged, except when upgrading existing ETW providers to using event sources.  
   
  ]]></format>
         </remarks>

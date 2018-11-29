@@ -4907,7 +4907,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanged(System.EventArgs)" /> in a derived class, call the base class’s <see cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanged(System.EventArgs)" /> in a derived class, call the base class' <see cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanged" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanging" />
@@ -4950,7 +4950,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanging(System.Web.UI.WebControls.PagePropertiesChangingEventArgs)" /> in a derived class, call the base class’s <see cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanging(System.Web.UI.WebControls.PagePropertiesChangingEventArgs)" /> method so that registered delegates receive the event.</para>
+          <para>When you override <see cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanging(System.Web.UI.WebControls.PagePropertiesChangingEventArgs)" /> in a derived class, call the base class' <see cref="M:System.Web.UI.WebControls.ListView.OnPagePropertiesChanging(System.Web.UI.WebControls.PagePropertiesChangingEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanging" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanged" />

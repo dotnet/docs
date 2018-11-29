@@ -40,7 +40,7 @@
   
  The following are notes to consider when using the AllowXmlAttributes value.  
   
-1.  When a schema doesn’t import the Xml namespace.  
+1.  When a schema doesn't import the Xml namespace.  
   
     1.  If AllowXmlAttributes is set to `true` (default) and the instance document contains Xml attributes, the validation engine will load a snapshot of the default Xml namespace schema and use it for validation. If Xml attributes used in the instance document are not found in the default schema, the document will not validate.  
   

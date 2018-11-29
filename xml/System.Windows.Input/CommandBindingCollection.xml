@@ -237,7 +237,7 @@
       <Docs>
         <param name="commandBinding">The binding to locate in the collection.</param>
         <summary>Determines whether the specified <see cref="T:System.Windows.Input.CommandBinding" /> is in this <see cref="T:System.Windows.Input.CommandBindingCollection" />.</summary>
-        <returns>**true** if the specified <see cref="T:System.Windows.Input.CommandBinding" /> is in the collection; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if the specified <see cref="T:System.Windows.Input.CommandBinding" /> is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Input.RoutedCommand" />
         <altmember cref="T:System.Windows.Input.ICommand" />
@@ -407,12 +407,12 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether this <see cref="T:System.Windows.Input.CommandBindingCollection" /> has a fixed size.</summary>
-        <value>**true** if the collection has a fixed size; otherwise, **false**.  The default value is **false**.</value>
+        <value><see langword="true" /> if the collection has a fixed size; otherwise, <see langword="false" />.  The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Input.CommandBindingCollection> is never a fixed size; therefore, <xref:System.Windows.Input.CommandBindingCollection.IsFixedSize%2A> will always return **false**.  
+ A <xref:System.Windows.Input.CommandBindingCollection> is never a fixed size; therefore, <xref:System.Windows.Input.CommandBindingCollection.IsFixedSize%2A> will always return `false`.  
   
  ]]></format>
         </remarks>

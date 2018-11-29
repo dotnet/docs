@@ -778,6 +778,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
         <exception cref="T:System.ArrayTypeMismatchException">The array type is not compatible with the items in the <see cref="T:System.Windows.Forms.ListBox.ObjectCollection" />.</exception>
       </Docs>
     </Member>
@@ -885,6 +886,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
         <exception cref="T:System.ArgumentNullException">
           <paramref name="item" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The current <see cref="T:System.Windows.Forms.ListBox" /> has a data source.</exception>

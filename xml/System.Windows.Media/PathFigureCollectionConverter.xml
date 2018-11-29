@@ -66,7 +66,7 @@
         <param name="context">Describes the context information of a type.</param>
         <param name="sourceType">The source <see cref="T:System.Type" /> that is being queried for conversion support.</param>
         <summary>Indicates whether an object can be converted from a given type to an instance of a <see cref="T:System.Windows.Media.PathFigureCollection" />.</summary>
-        <returns>**true** if object of the specified type can be converted to a <see cref="T:System.Windows.Media.PathFigureCollection" />; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if object of the specified type can be converted to a <see cref="T:System.Windows.Media.PathFigureCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +94,7 @@
         <param name="context">Describes the context information of a type.</param>
         <param name="destinationType">The desired type this <see cref="T:System.Windows.Media.PathFigureCollection" /> is being evaluated to be converted to.</param>
         <summary>Determines whether instances of <see cref="T:System.Windows.Media.PathFigureCollection" /> can be converted to the specified type.</summary>
-        <returns>**true** if instances of <see cref="T:System.Windows.Media.PathFigureCollection" /> can be converted to <paramref name="destinationType" />; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if instances of <see cref="T:System.Windows.Media.PathFigureCollection" /> can be converted to <paramref name="destinationType" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

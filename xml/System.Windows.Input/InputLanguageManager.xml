@@ -61,9 +61,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an enumerator for currently available input languages.</summary>
-        <value>An enumerator for currently available input languages, or **null** if no input languages are available.  
-  
- This property has no default value.</value>
+        <value>An enumerator for currently available input languages, or <see langword="null" /> if no input languages are available. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -134,8 +132,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the current input language.</summary>
-        <value>A <see cref="T:System.Globalization.CultureInfo" /> object representing the currently selected input language.  This property may not be set to **null**.  
-  
+        <value>A <see cref="T:System.Globalization.CultureInfo" /> object representing the currently selected input language. This property may not be set to <see langword="null" />. 
  The default value is <see cref="P:System.Globalization.CultureInfo.InvariantCulture" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -148,7 +145,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">Raised when an attempt is made to set this property to **null**.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when an attempt is made to set this property to <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetInputLanguage">
@@ -193,7 +190,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Windows.Input.InputLanguageManager.SetInputLanguage(System.Windows.DependencyObject,System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
@@ -226,7 +223,7 @@
         <summary>Returns the value of <see cref="P:System.Windows.Input.InputLanguageManager.RestoreInputLanguage" /> attached property for a specified dependency object.</summary>
         <returns>The current value of <see cref="P:System.Windows.Input.InputLanguageManager.RestoreInputLanguage" /> for the specified dependency object.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Windows.Input.InputLanguageManager.SetRestoreInputLanguage(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
@@ -353,7 +350,7 @@
         <param name="inputLanguageSource">An object that specifies the input language to register.  This object must implement the <see cref="T:System.Windows.Input.IInputLanguageSource" /> interface.</param>
         <summary>Registers an input language source with the <see cref="T:System.Windows.Input.InputLanguageManager" />.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="inputLanguageSource" /> is **null**.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="inputLanguageSource" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReportInputLanguageChanged">
@@ -381,7 +378,7 @@
         <param name="previousLanguageId">A <see cref="T:System.Globalization.CultureInfo" /> object representing the previous input language.</param>
         <summary>Report the completion of a change of input language to the <see cref="T:System.Windows.Input.InputLanguageManager" />.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="newLanguageId" /> or <paramref name="previousLanguageId" /> is **null**.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="newLanguageId" /> or <paramref name="previousLanguageId" /> is <see langword="null" />.</exception>
         <altmember cref="E:System.Windows.Input.InputLanguageManager.InputLanguageChanged" />
         <altmember cref="M:System.Windows.Input.InputLanguageManager.ReportInputLanguageChanging(System.Globalization.CultureInfo,System.Globalization.CultureInfo)" />
       </Docs>
@@ -410,9 +407,9 @@
         <param name="newLanguageId">A <see cref="T:System.Globalization.CultureInfo" /> object representing the new input language.</param>
         <param name="previousLanguageId">A <see cref="T:System.Globalization.CultureInfo" /> object representing the previous input language.</param>
         <summary>Report the initiation of a change of input language to the <see cref="T:System.Windows.Input.InputLanguageManager" />.</summary>
-        <returns>**true** to indicate that the reported change of input language was accepted; otherwise, **false**.</returns>
+        <returns><see langword="true" /> to indicate that the reported change of input language was accepted; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="newLanguageId" /> or <paramref name="previousLanguageId" /> is **null**.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="newLanguageId" /> or <paramref name="previousLanguageId" /> is <see langword="null" />.</exception>
         <altmember cref="E:System.Windows.Input.InputLanguageManager.InputLanguageChanging" />
         <altmember cref="M:System.Windows.Input.InputLanguageManager.ReportInputLanguageChanged(System.Globalization.CultureInfo,System.Globalization.CultureInfo)" />
       </Docs>
@@ -508,7 +505,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Windows.Input.InputLanguageManager.GetInputLanguage(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
@@ -537,7 +534,7 @@
         <param name="restore">A Boolean value to set the <see cref="P:System.Windows.Input.InputLanguageManager.RestoreInputLanguage" /> attached property to.</param>
         <summary>Sets the value of the <see cref="P:System.Windows.Input.InputLanguageManager.RestoreInputLanguage" /> dependency property on the specified dependency object.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Windows.Input.InputLanguageManager.GetRestoreInputLanguage(System.Windows.DependencyObject)" />
       </Docs>
     </Member>

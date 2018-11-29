@@ -610,7 +610,7 @@
         <summary>Gets or sets the <see cref="T:System.Windows.Media.Geometry" /> at the specified index position.</summary>
         <value>The <see cref="T:System.Windows.Media.Geometry" /> at the specified index.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The attempt to modify the collection is invalid because the collection is frozen (its <see cref="P:System.Windows.Freezable.IsFrozen" /> property is **true**).</exception>
+        <exception cref="T:System.InvalidOperationException">The attempt to modify the collection is invalid because the collection is frozen (its <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />).</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero.  
   
@@ -644,7 +644,7 @@
       <Docs>
         <param name="value">The <see cref="T:System.Windows.Media.Geometry" /> to remove from this <see cref="T:System.Windows.Media.GeometryCollection" />.</param>
         <summary>Removes the first occurrence of the specified <see cref="T:System.Windows.Media.Geometry" /> from this <see cref="T:System.Windows.Media.GeometryCollection" />.</summary>
-        <returns>**true** if <paramref name="value" /> was removed from the collection; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if <paramref name="value" /> was removed from the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

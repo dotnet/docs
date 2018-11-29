@@ -357,7 +357,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Documents.Serialization.SerializerDescriptor.IsLoadable%2A> should be **false** unless <xref:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyVersion%2A> has the same value as <xref:System.Windows.Documents.Serialization.SerializerDescriptor.WinFXVersion%2A>.  
+ <xref:System.Windows.Documents.Serialization.SerializerDescriptor.IsLoadable%2A> should be `false` unless <xref:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyVersion%2A> has the same value as <xref:System.Windows.Documents.Serialization.SerializerDescriptor.WinFXVersion%2A>.  
   
    
   

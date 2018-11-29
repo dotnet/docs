@@ -82,8 +82,8 @@
         <param name="item">A table column to append to the collection of columns.</param>
         <summary>Appends a specified item to the collection.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">Raised when *item* already belongs to a collection.</exception>
-        <exception cref="T:System.ArgumentNullException">Raised when *item* is **null**.</exception>
+        <exception cref="T:System.ArgumentException">Raised when <paramref name="item" /> already belongs to a collection.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="item" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Capacity">
@@ -104,7 +104,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the pre-allocated collection item capacity for this collection.</summary>
-        <value>The pre-allocated collection item capacity for this collection.  The default value is **8**.</value>
+        <value>The pre-allocated collection item capacity for this collection. The default value is 8.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -177,7 +177,7 @@
       <Docs>
         <param name="item">An item to query for the presence of in the collection.</param>
         <summary>Queries for the presence of a specified item in the collection.</summary>
-        <returns>**true** if the specified *item* is present in the collection; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if the specified <paramref name="item" /> is present in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,9 +217,9 @@
         <param name="index">A zero-based index in <paramref name="array" /> specifying the position at which to begin inserting the copied collection objects.</param>
         <summary>Copies the contents of the collection and inserts them into a specified array starting at a specified index position in the array.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">Raised when *array* includes items that are not compatible with the type <see cref="T:System.Windows.Documents.TableColumn" />, or if *arrayIndex* specifies a position that falls outside of the bounds of *array*.</exception>
-        <exception cref="T:System.ArgumentNullException">Raised when *array* is **null**.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">Raised when *arrayIndex* is less than **0**.</exception>
+        <exception cref="T:System.ArgumentException">Raised when <paramref name="array" /> includes items that are not compatible with the type <see cref="T:System.Windows.Documents.TableColumn" />, or if <paramref name="index" /> specifies a position that falls outside of the bounds of <paramref name="array" />.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Raised when <paramref name="index" /> is less than **0**.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -247,9 +247,9 @@
         <param name="index">A zero-based index in <paramref name="array" /> specifying the position at which to begin inserting the copied collection objects.</param>
         <summary>Copies the contents of the collection and inserts them into a specified <see cref="T:System.Windows.Documents.TableColumn" /> array of starting at a specified index position in the array.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">Raised when *array* includes items that are not compatible with the type <see cref="T:System.Windows.Documents.TableColumn" />, or if *arrayIndex* specifies a position that falls outside of the bounds of *array*.</exception>
-        <exception cref="T:System.ArgumentNullException">Raised when *array* is **null**.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">Raised when *arrayIndex* is less than **0**.</exception>
+        <exception cref="T:System.ArgumentException">Raised when <paramref name="array" /> includes items that are not compatible with the type <see cref="T:System.Windows.Documents.TableColumn" />, or if <paramref name="index" /> specifies a position that falls outside of the bounds of <paramref name="array" />.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Raised when <paramref name="index" /> is less than **0**.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -347,14 +347,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Windows.Documents.TableColumnCollection.Count%2A> equals <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> for this collection, the collection capacity automatically is increased before the new item is inserted. Set *index* equal to the value of <xref:System.Windows.Documents.TableColumnCollection.Count%2A>, to append a new collection item to the collection.  
+ If <xref:System.Windows.Documents.TableColumnCollection.Count%2A> equals <xref:System.Windows.Documents.TableColumnCollection.Capacity%2A> for this collection, the collection capacity automatically is increased before the new item is inserted. Set `index` equal to the value of <xref:System.Windows.Documents.TableColumnCollection.Count%2A>, to append a new collection item to the collection.  
   
  Indices for existing collection items may be adjusted to accommodate the newly inserted collection item.  
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">Raised when *index* is less than **0**.</exception>
-        <exception cref="T:System.ArgumentNullException">Raised when *item* is **null**.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Raised when <paramref name="index" /> is less than **0**.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="item" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -379,7 +379,7 @@
       </ReturnValue>
       <Docs>
         <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
-        <value>Currently, this property always returns **false**.</value>
+        <value>Currently, this property always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,7 +404,7 @@
       </ReturnValue>
       <Docs>
         <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
-        <value>Currently, this property always returns **false**.</value>
+        <value>Currently, this property always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,7 +442,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">Raised when *index* is less than zero, or when *index* is greater than or equal to <see cref="P:System.Windows.Documents.TableColumnCollection.Count" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Raised when <paramref name="index" /> is less than zero, or when <paramref name="index" /> is greater than or equal to <see cref="P:System.Windows.Documents.TableColumnCollection.Count" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -470,7 +470,7 @@
       <Docs>
         <param name="item">An item to remove from the collection.</param>
         <summary>Removes a specified item from the collection.</summary>
-        <returns>**true** if the specified item was found and removed; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if the specified item was found and removed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -479,8 +479,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">Raised if *item* is not present in the collection.</exception>
-        <exception cref="T:System.ArgumentNullException">Raised when *item* is **null**.</exception>
+        <exception cref="T:System.ArgumentException">Raised if <paramref name="item" /> is not present in the collection.</exception>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="item" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Windows.Documents.TableColumnCollection.RemoveAt(System.Int32)" />
         <altmember cref="M:System.Windows.Documents.TableColumnCollection.RemoveRange(System.Int32,System.Int32)" />
       </Docs>
@@ -519,7 +519,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">Raised when *index* is less than zero, or when *index* is greater than or equal to <see cref="P:System.Windows.Documents.TableColumnCollection.Count" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Raised when <paramref name="index" /> is less than zero, or when <paramref name="index" /> is greater than or equal to <see cref="P:System.Windows.Documents.TableColumnCollection.Count" />.</exception>
         <altmember cref="M:System.Windows.Documents.TableColumnCollection.Remove(System.Windows.Documents.TableColumn)" />
         <altmember cref="M:System.Windows.Documents.TableColumnCollection.RemoveRange(System.Int32,System.Int32)" />
       </Docs>
@@ -556,8 +556,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">Raised when *index* or *count* is less than zero, or when *index* is greater than or equal to <see cref="P:System.Windows.Documents.TableColumnCollection.Count" />.</exception>
-        <exception cref="T:System.ArgumentException">Raised when *index* and *count* do not specify a valid range in this collection.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Raised when <paramref name="index" /> or <paramref name="count" /> is less than zero, or when <paramref name="index" /> is greater than or equal to <see cref="P:System.Windows.Documents.TableColumnCollection.Count" />.</exception>
+        <exception cref="T:System.ArgumentException">Raised when <paramref name="index" /> and <paramref name="count" /> do not specify a valid range in this collection.</exception>
         <altmember cref="M:System.Windows.Documents.TableColumnCollection.Remove(System.Windows.Documents.TableColumn)" />
         <altmember cref="M:System.Windows.Documents.TableColumnCollection.RemoveAt(System.Int32)" />
       </Docs>

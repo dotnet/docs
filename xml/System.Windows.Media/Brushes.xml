@@ -63,7 +63,7 @@ Color table including a color swatch, the color name, and the hexadecimal value
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because the brush returned by this property is frozen (its <xref:System.Windows.Freezable.IsFrozen%2A> property is **true**), it can't be animated. For information about how to animate a SolidColorBrush, see [How to: Animate the Color or Opacity of a SolidColorBrush](~/docs/framework/wpf/graphics-multimedia/how-to-animate-the-color-or-opacity-of-a-solidcolorbrush.md).  
+ Because the brush returned by this property is frozen (its <xref:System.Windows.Freezable.IsFrozen%2A> property is `true`), it can't be animated. For information about how to animate a SolidColorBrush, see [How to: Animate the Color or Opacity of a SolidColorBrush](~/docs/framework/wpf/graphics-multimedia/how-to-animate-the-color-or-opacity-of-a-solidcolorbrush.md).  
   
  See the <xref:System.Windows.Media.Brushes> class page for usage information, including examples, and for a listing of predefined system colors.  
   

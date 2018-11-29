@@ -1065,6 +1065,7 @@
         <summary>Implements the <see cref="M:System.Collections.IList.Contains(System.Object)" /> method. Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
         <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>
@@ -1095,6 +1096,7 @@
         <summary>Implements the <see cref="M:System.Collections.IList.IndexOf(System.Object)" /> method. Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
         <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>

@@ -107,7 +107,7 @@
     <altmember cref="T:System.Collections.IList" />
     <altmember cref="T:System.ComponentModel.IBindingList" />
     <altmember cref="T:System.ComponentModel.IEditableObject" />
-    <related type="Article" href="https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9">BindingSource Component</related>
+    <related type="Article" href="~/docs/framework/winforms/controls/bindingsource-component.md">BindingSource Component</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -3691,8 +3691,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see cref="T:System.Windows.Forms.BindingSource" /> is initialized.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.BindingSource> instance is cast to an <xref:System.ComponentModel.ISupportInitializeNotification> interface.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ISupportInitializeNotification.IsInitialized">

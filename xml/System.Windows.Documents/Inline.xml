@@ -135,7 +135,8 @@
 ## Remarks  
  The flow direction of content typically corresponds to the innate flow direction of the language being represented.  Hebrew and Arabic provide examples of languages that naturally flow from right-to-left.  English, German, and Russian provide examples of languages that naturally flow from left-to-right.  
   
- **Note:** The value of this property is not automatically changed to match the language used by the operating system. If you need to use a different value then the default of <xref:System.Windows.FlowDirection.LeftToRight>, you must specify it yourself.  
+ > [!NOTE] 
+ The value of this property is not automatically changed to match the language used by the operating system. If you need to use a different value then the default of <xref:System.Windows.FlowDirection.LeftToRight>, you must specify it yourself.  
   
 <a name="dependencyPropertyInfo_FlowDirection"></a>   
 ## Dependency Property Information  

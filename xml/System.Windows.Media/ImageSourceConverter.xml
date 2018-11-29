@@ -96,7 +96,7 @@
         <param name="context">Type context information used to evaluate conversion.</param>
         <param name="destinationType">The desired type to evaluate the conversion to.</param>
         <summary>Determines whether an instance of <see cref="T:System.Windows.Media.ImageSource" /> can be converted to a different type.</summary>
-        <returns>**true** if the converter can convert this instance of <see cref="T:System.Windows.Media.ImageSource" />; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if the converter can convert this instance of <see cref="T:System.Windows.Media.ImageSource" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="context" /> instance is not an <see cref="T:System.Windows.Media.ImageSource" />.</exception>

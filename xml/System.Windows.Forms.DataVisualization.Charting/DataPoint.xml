@@ -530,7 +530,8 @@
   
  The <xref:System.Windows.Forms.DataVisualization.Charting.DataPoint.YValues%2A> property returns an array of `double` values when used to retrieve the Y-values.  
   
- **Important** The <xref:System.Windows.Forms.DataVisualization.Charting.Series.YValuesPerPoint%2A> property determines the maximum number of Y-values that all data points in a <xref:System.Windows.Forms.DataVisualization.Charting.Series> can have. If you specify more than the allowable number of Y-values, an exception will be raised.  
+ > [!IMPORTANT] 
+ > The <xref:System.Windows.Forms.DataVisualization.Charting.Series.YValuesPerPoint%2A> property determines the maximum number of Y-values that all data points in a <xref:System.Windows.Forms.DataVisualization.Charting.Series> can have. If you specify more than the allowable number of Y-values, an exception will be raised.  
   
  ]]></format>
         </remarks>

@@ -177,7 +177,7 @@
       <Docs>
         <param name="item">An item to query for the presence of in the collection.</param>
         <summary>Queries for the presence of a specified item in the collection.</summary>
-        <returns>**true** if the specified *item* is present in the collection; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if the specified *item* is present in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -379,7 +379,7 @@
       </ReturnValue>
       <Docs>
         <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
-        <value>Currently, this property always returns **false**.</value>
+        <value>Currently, this property always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,7 +404,7 @@
       </ReturnValue>
       <Docs>
         <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
-        <value>Currently, this property always returns **false**.</value>
+        <value>Currently, this property always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -470,7 +470,7 @@
       <Docs>
         <param name="item">An item to remove from the collection.</param>
         <summary>Removes a specified item from the collection.</summary>
-        <returns>**true** if the specified item was found and removed; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if the specified item was found and removed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

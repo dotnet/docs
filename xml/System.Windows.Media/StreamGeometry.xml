@@ -391,7 +391,7 @@ FillRule Example
       <Parameters />
       <Docs>
         <summary>Determines whether this <see cref="T:System.Windows.Media.StreamGeometry" /> describes a geometric shape.</summary>
-        <returns>**true** if this <see cref="T:System.Windows.Media.StreamGeometry" /> describes a geometry shape; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if this <see cref="T:System.Windows.Media.StreamGeometry" /> describes a geometry shape; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -419,7 +419,7 @@ FillRule Example
       <Parameters />
       <Docs>
         <summary>Determines whether this <see cref="T:System.Windows.Media.StreamGeometry" /> contains a curved segment.</summary>
-        <returns>**true** if this <see cref="T:System.Windows.Media.StreamGeometry" /> object has a curved segment; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if this <see cref="T:System.Windows.Media.StreamGeometry" /> object has a curved segment; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -167,7 +167,7 @@
       <Docs>
         <param name="item">An item to query for the presence of in the collection.</param>
         <summary>Queries for the presence of a specified item in the collection.</summary>
-        <returns>**true** if the specified *item* is present in the collection; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if the specified *item* is present in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -335,12 +335,12 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether or not the collection is read-only.</summary>
-        <value>**true** if the collection is read-only; otherwise, **false**.</value>
+        <value><see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Currently, this property always returns **false**.  
+ Currently, this property always returns `false`.  
   
  ]]></format>
         </remarks>
@@ -371,12 +371,12 @@
       <Docs>
         <param name="item">An item to be removed fro the collection.</param>
         <summary>Removes a specified item from the collection.</summary>
-        <returns>**true** if the specified item was found and removed; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if the specified item was found and removed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns **false** if *item* is **null**.  
+ This method returns `false` if `item` is `null`.  
   
  ]]></format>
         </remarks>

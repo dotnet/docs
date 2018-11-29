@@ -4,7 +4,6 @@ description: Learn how .NET marshals your types to a native representation.
 author: jkoritzinsky
 ms.author: jekoritz
 ms.date: 11/28/2018
-ms.technology: dotnet-standard
 ---
 
 # Type marshalling
@@ -70,13 +69,13 @@ Some types can only be marshalled as parameters and not as fields. These types a
 |-----------|------------------------------|
 | `System.Text.StringBuilder` | Either `char*` or `char16_t*` depending on the `CharSet` of the P/Invoke. |
 | `System.ArgIterator` | `va_list` (on Windows x86/x64/arm64 only) |
-| `System.Runtime.InteropSerivces.ArrayWithOffset` | `void*` |
+| `System.Runtime.InteropServices.ArrayWithOffset` | `void*` |
 | `System.Runtime.InteropServices.HandleRef` | `void*` |
 
 
 ## Marshalling classes and structs
 
-Another aspect of type marshalling is how to pass in a struct to an unmanaged method. For instance, some of the unmanaged methods require a struct as a parameter. In these cases, we need to create a corresponding struct or a class in managed part of the world to use it as a parameter. However, just defining the class is not enough, we also need to instruct the marshaler how to map fields in the class to the unmanaged struct. This is where the `StructLayout` attribute comes into play.
+Another aspect of type marshalling is how to pass in a struct to an unmanaged method. For instance, some of the unmanaged methods require a struct as a parameter. In these cases, we need to create a corresponding struct or a class in managed part of the world to use it as a parameter. However, just defining the class isn't enough, we also need to instruct the marshaler how to map fields in the class to the unmanaged struct. This is where the `StructLayout` attribute comes into play.
 
 ```csharp
 [DllImport("kernel32.dll")]
@@ -101,7 +100,7 @@ public static void Main(string[] args) {
 }
 ```
 
-The example above shows off a simple example of calling into `GetSystemTime()` function. The interesting bit is on line 4. The attribute specifies that the fields of the class should be mapped sequentially to the struct on the other (unmanaged) side. This means that the naming of the fields is not important, only their order is important, as it needs to correspond to the unmanaged struct, shown below:
+The example above shows off a simple example of calling into `GetSystemTime()` function. The interesting bit is on line 4. The attribute specifies that the fields of the class should be mapped sequentially to the struct on the other (unmanaged) side. This means that the naming of the fields isn't important, only their order is important, as it needs to correspond to the unmanaged struct, shown below:
 
 ```c
 typedef struct _SYSTEMTIME {
@@ -215,7 +214,7 @@ struct VariantBool
 ```
 
 > [!NOTE]
-> `VARIANT_BOOL` is different than most bool types in that `VARIANT_TRUE = -1` and `VARIANT_FALSE = 0`. Additionally, all values that are not equal to `VARIANT_TRUE` are considered false.
+> `VARIANT_BOOL` is different than most bool types in that `VARIANT_TRUE = -1` and `VARIANT_FALSE = 0`. Additionally, all values that aren't equal to `VARIANT_TRUE` are considered false.
 
 #### Customizing Array Marshalling
 
@@ -274,10 +273,10 @@ struct InPlaceArray
 ```
 
 > [!NOTE]
-> .NET does not support marshalling a variable length array field as a C99 Flexible Array Member.
+> .NET doesn't support marshalling a variable length array field as a C99 Flexible Array Member.
 
 #### Customizing String Marshalling
-.NET also provides a wide variety of customizations for how to marshal string fields.
+.NET also provides a wide variety of customizations for marshalling string fields.
 
 By default, .NET marshals a string as a pointer to a null-terminated string. The encoding depends on the value of the <xref:System.Runtime.InteropServices.StructLayoutAttribute.CharSet?displayProperty=nameWithType> field in the <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=nameWithType>. If no attribute is specified, the encoding defaults to an ANSI encoding.
 
@@ -362,7 +361,7 @@ struct UTF8String
 ```
 
 > [!NOTE]
-> Using <xref:System.Runtime.InteropServices.UnmanagedType.LPUTF8Str?displayProperty=nameWithType> requires either .NET Framework 4.7+ or .NET Core 1.1+. It is not available in .NET Standard 2.0.
+> Using <xref:System.Runtime.InteropServices.UnmanagedType.LPUTF8Str?displayProperty=nameWithType> requires either .NET Framework 4.7+ or .NET Core 1.1+. It isn't available in .NET Standard 2.0.
 
 If you are working with COM APIs, you may need to marshal your string as a `BSTR`. Using the <xref:System.Runtime.InteropServices.UnmanagedType.BStr?displayProperty=nameWithType> value, you can marshal your string as a `BSTR`.
 

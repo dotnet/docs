@@ -1,10 +1,9 @@
 ---
 title: Platform Invoke (P/Invoke)
 description: Learn how to call native functions via P/Invoke in .NET.
-author: blackdwarf
-ms.author: ronpet
-ms.date: 06/20/2016
-ms.technology: dotnet-standard
+author: jkoritzinsky
+ms.author: jekoritz
+ms.date: 11/28/2018
 ---
 
 # Platform Invoke (P/Invoke)

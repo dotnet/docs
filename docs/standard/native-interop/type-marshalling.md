@@ -380,7 +380,7 @@ struct BString
 };
 ```
 
-If you are working with a WinRT-based API, you may need to marshal your string as an `HSTRING`.  Using the <xref:System.Runtime.InteropServices.UnmanagedType.HString?displayProperty=nameWithType> value, you can marshal your string as a `HSTRING`.
+When using a WinRT-based API, you may need to marshal your string as an `HSTRING`.  Using the <xref:System.Runtime.InteropServices.UnmanagedType.HString?displayProperty=nameWithType> value, you can marshal your string as a `HSTRING`.
 
 ```csharp
 public struct HString

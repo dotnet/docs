@@ -89,9 +89,6 @@ A [supervised machine learning](glossary.md#supervised-machine-learning) task th
 * Predicting future stock prices based on historical data and current market trends.
 * Predicting sales of a product based on advertising budgets.
 
-> [!NOTE]
-> Currently, ML.NET is still building support for regression tasks that involve time series.
-
 Recommended learners for regression:
 
 * FastTreeTweedieTrainer 

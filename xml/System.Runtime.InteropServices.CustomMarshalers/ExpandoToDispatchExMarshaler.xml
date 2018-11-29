@@ -1,4 +1,4 @@
-﻿<Type Name="ExpandoToDispatchExMarshaler" FullName="System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler">
+<Type Name="ExpandoToDispatchExMarshaler" FullName="System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler">
   <TypeSignature Language="C#" Value="public class ExpandoToDispatchExMarshaler : System.Runtime.InteropServices.ICustomMarshaler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpandoToDispatchExMarshaler extends System.Object implements class System.Runtime.InteropServices.ICustomMarshaler" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler" />
@@ -48,8 +48,17 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Provides the static class constructor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+
+> [!NOTE]
+> This member is removed in the .NET Framework version 2.0 and subsequent versions.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CleanUpManagedData">

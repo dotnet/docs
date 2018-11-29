@@ -1,4 +1,4 @@
-﻿<Type Name="FileDialogPermission" FullName="System.Security.Permissions.FileDialogPermission">
+<Type Name="FileDialogPermission" FullName="System.Security.Permissions.FileDialogPermission">
   <TypeSignature Language="C#" Value="public sealed class FileDialogPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit FileDialogPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.FileDialogPermission" />
@@ -373,9 +373,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a string representation of the current permission.</summary>
+        <returns>A string representation of the current permission.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+
+> [!NOTE]
+> This override of the <xref:System.Security.CodeAccessPermission.ToString> method is not implemented in the .NET Framework version 2.0 and later.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToXml">

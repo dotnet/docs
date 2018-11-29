@@ -29,7 +29,8 @@
 ## Remarks  
  This attribute marks the method that the infrastructure uses to perform the WMI get operation. The method must take the key values of the corresponding WMI class as parameters and return the associated instance of the WMI class.  
   
- **Important** The method parameters must have exactly the same name and type as the key parameters of the class. The key parameters are identified by the .<xref:System.Management.Instrumentation.ManagementKeyAttribute> attribute  
+ > [!IMPORTANT]
+ > The method parameters must have exactly the same name and type as the key parameters of the class. The key parameters are identified by the <xref:System.Management.Instrumentation.ManagementKeyAttribute> attribute.
   
  The method must assign values to all instrumented properties of the class.  
   

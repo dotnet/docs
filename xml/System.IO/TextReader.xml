@@ -1216,8 +1216,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="M:System.IDisposable.Dispose" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.IO.TextReader> instance is cast to an <xref:System.IDisposable> interface.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

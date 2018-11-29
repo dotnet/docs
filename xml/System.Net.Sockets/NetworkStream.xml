@@ -734,8 +734,39 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Closes the <see cref="T:System.Net.Sockets.NetworkStream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The `Close` method frees both unmanaged and managed resources associated with the <xref:System.Net.Sockets.NetworkStream>. If the <xref:System.Net.Sockets.NetworkStream> owns the underlying <xref:System.Net.Sockets.Socket>, it is closed as well.
+
+If a <xref:System.Net.Sockets.NetworkStream> was associated with a <xref:System.Net.Sockets.TcpClient>, the `Close` method will close the TCP connection, but not dispose of the associated <xref:System.Net.Sockets.TcpClient>.
+
+## Examples  
+The following code example closes the <xref:System.Net.Sockets.NetworkStream>.
+
+```vb
+' Example for closing the NetworkStream.
+' Close the NetworkStream
+myNetworkStream.Close()
+```
+
+```csharp
+// Example for closing the NetworkStream.
+
+// Close the NetworkStream
+myNetworkStream.Close();
+```
+
+```cpp
+// Example for closing the NetworkStream.
+// Close the NetworkStream
+myNetworkStream->Close();
+```
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -1639,8 +1670,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.Net.Sockets.NetworkStream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Call `Dispose` when you are finished using the <xref:System.Net.Sockets.NetworkStream>. The `Dispose` method leaves the <xref:System.Net.Sockets.NetworkStream> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Net.Sockets.NetworkStream> so the garbage collector can reclaim the memory that the <xref:System.Net.Sockets.NetworkStream> was occupying. For more information about using the Dispose method, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).
+
+> [!NOTE]
+> Always call `Dispose` before you release your last reference to the <xref:System.Net.Sockets.NetworkStream>. Otherwise, the resources it is using are not freed until the garbage collector calls the <xref:System.Net.Sockets.NetworkStream> object's Finalize method.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Write">

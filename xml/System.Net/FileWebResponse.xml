@@ -275,7 +275,7 @@
       </Parameters>
       <Docs>
         <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.FileWebResponse" /> and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -541,8 +541,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.Net.FileWebResponse" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Call Dispose() when you are finished using the <xref:System.Net.FileWebResponse>. The Dispose() method leaves the <xref:System.Net.FileWebResponse> in an unusable state. After calling Dispose(), you must release all references to the <xref:System.Net.FileWebResponse> so the garbage collector can reclaim the memory that the <xref:System.Net.FileWebResponse> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).
+
+
+> [!NOTE]
+> Always call Dispose() before you release your last reference to the <xref:System.Net.FileWebResponse>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Net.FileWebResponse> object's `Finalize` method. 
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">

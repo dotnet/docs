@@ -1,4 +1,4 @@
-﻿<Type Name="EnumerableToDispatchMarshaler" FullName="System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler">
+<Type Name="EnumerableToDispatchMarshaler" FullName="System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler">
   <TypeSignature Language="C#" Value="public class EnumerableToDispatchMarshaler : System.Runtime.InteropServices.ICustomMarshaler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EnumerableToDispatchMarshaler extends System.Object implements class System.Runtime.InteropServices.ICustomMarshaler" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler" />
@@ -44,8 +44,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Provides the static class constructor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+
+> [!NOTE]
+> This member is removed in the .NET Framework version 2.0 and subsequent versions.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CleanUpManagedData">

@@ -2066,8 +2066,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by instances of the <see cref="T:System.Net.NetworkInformation.Ping" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+If you call any method on a <xref:System.Net.NetworkInformation.Ping> object that has been disposed, you receive an <xref:System.ObjectDisposedException>.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

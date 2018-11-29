@@ -91,9 +91,10 @@
   
  The hash size for the <xref:System.Security.Cryptography.SHA384Managed> algorithm is 384 bits.  
   
- **Important** If you enable the following security setting either in the Local Security Policy or as part of Group Policy you will get an <xref:System.InvalidOperationException> when you attempt to use this constructor:  
-  
- **System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing**  
+ > [!IMPORTANT]
+ > If you enable the following security setting either in the Local Security Policy or as part of Group Policy you will get an <xref:System.InvalidOperationException> when you attempt to use this constructor:  
+ > 
+ > **System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing**  
   
  ]]></format>
         </remarks>

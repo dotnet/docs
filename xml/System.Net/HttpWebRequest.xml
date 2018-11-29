@@ -2571,9 +2571,16 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a hash value for a <see cref="T:System.Net.WebRequest" /> instance.</summary>
+        <returns>An integer hash value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The GetHashCode method returns a hash code of the web request. This value can be used as a key in hash tables.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">

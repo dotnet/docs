@@ -2598,8 +2598,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.Net.Sockets.UdpClient" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Call IDisposable.Dispose when you are finished using the <xref:System.Net.Sockets.UdpClient>. The IDisposable.Dispose method leaves the <xref:System.Net.Sockets.UdpClient> in an unusable state. After calling IDisposable.Dispose, you must release all references to the <xref:System.Net.Sockets.UdpClient> so the garbage collector can reclaim the memory that the <xref:System.Net.Sockets.UdpClient> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).
+
+> [!NOTE] 
+> Always call IDisposable.Dispose before you release your last reference to the <xref:System.Net.Sockets.UdpClient>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Net.Sockets.UdpClient> object's `Finalize` method.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ttl">

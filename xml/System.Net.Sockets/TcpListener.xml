@@ -1,4 +1,4 @@
-﻿<Type Name="TcpListener" FullName="System.Net.Sockets.TcpListener">
+<Type Name="TcpListener" FullName="System.Net.Sockets.TcpListener">
   <TypeSignature Language="C#" Value="public class TcpListener" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TcpListener extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.TcpListener" />
@@ -969,8 +969,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Frees resources used by the <see cref="T:System.Net.Sockets.TcpListener" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The <xref:System.Net.Sockets.TcpListener> class finalizer free resources associated with the <xref:System.Net.Sockets.TcpListener> instance.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LocalEndpoint">

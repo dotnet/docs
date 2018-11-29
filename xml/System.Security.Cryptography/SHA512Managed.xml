@@ -91,7 +91,8 @@
   
  The hash size for the <xref:System.Security.Cryptography.SHA512Managed> algorithm is 512 bits.  
   
- **Important** If you enable the FIPS security setting either in the Local Security Policy or as part of Group Policy you will get an <xref:System.InvalidOperationException> when you attempt to use this constructor.  
+ > [!IMPORTANT]
+ > If you enable the FIPS security setting either in the Local Security Policy or as part of Group Policy you will get an <xref:System.InvalidOperationException> when you attempt to use this constructor.  
   
  ]]></format>
         </remarks>

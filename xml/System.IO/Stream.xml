@@ -2238,8 +2238,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.IO.Stream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.IO.Stream> instance is cast to an <xref:System.IDisposable> interface.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">

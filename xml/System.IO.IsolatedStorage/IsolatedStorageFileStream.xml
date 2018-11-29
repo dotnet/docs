@@ -1,4 +1,4 @@
-﻿<Type Name="IsolatedStorageFileStream" FullName="System.IO.IsolatedStorage.IsolatedStorageFileStream">
+<Type Name="IsolatedStorageFileStream" FullName="System.IO.IsolatedStorage.IsolatedStorageFileStream">
   <TypeSignature Language="C#" Value="public class IsolatedStorageFileStream : System.IO.FileStream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IsolatedStorageFileStream extends System.IO.FileStream" />
   <TypeSignature Language="DocId" Value="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />
@@ -839,8 +839,64 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases resources associated with the <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+Any data previously written to the buffer is copied to the file before the file stream is closed, so it is not necessary to call <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream.Flush%2A> before invoking Close.
+
+Following a call to Close, any operations on the file stream might raise exceptions. After `Close` has been called once, it does nothing if called again. The <xref:System.Object.Finalize> method invokes Close so the file stream is closed before the garbage collector finalizes the object.
+
+<xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> objects require an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that determines the storage context for the files accessed. For streams opened without passing an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object, a default <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object is created for the executing assembly and then closed during the call to Close.
+
+> [!NOTE]
+> The `Close` method calls <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream.Dispose%2A> with disposing set to true to release its resources, then calls <xref:System.GC.SuppressFinalize%2A> to suppress finalization of this object by the garbage collector.
+
+## Examples
+
+The following code example demonstrates the Close method.
+
+```csharp
+IsolatedStorageFileStream source =
+     new IsolatedStorageFileStream(this.userName,FileMode.Open,isoFile);
+ // This stream is the one that data will be read from
+ Console.WriteLine("Source can be read?" + (source.CanRead?"true":"false"));
+ IsolatedStorageFileStream target =
+     new IsolatedStorageFileStream("Archive\\ " + this.userName,FileMode.OpenOrCreate,isoFile);
+ // This stream is the one that data will be written to
+ Console.WriteLine("Target is writable?" + (target.CanWrite?"true":"false"));
+ // Do work...
+ // After you have read and written to the streams, close them
+ source.Close();
+ target.Close();
+```
+
+```vb
+Dim source As New IsolatedStorageFileStream(UserName,FileMode.Open,isoFile)
+ ' This stream is the one that data will be read from
+ If source.CanRead Then
+     Console.WriteLine("Source can read ? true")
+ Else
+     Console.WriteLine("Source can read ? false")
+ End If
+ Dim target As New IsolatedStorageFileStream("Archive\\ " & UserName, _
+                                             FileMode.OpenOrCreate, _
+                                             isoFile)
+ ' This stream is the one that data will be written to
+ If target.CanWrite Then
+     Console.WriteLine("Target is writable? true")
+ Else
+     Console.WriteLine("Target is writable? false")
+ End If
+ ' After you have read and written to the streams, close them
+ source.Close()
+ target.Close()
+```
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">

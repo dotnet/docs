@@ -183,7 +183,7 @@
       <Docs>
         <param name="address">The <see cref="T:System.Net.IPAddress" /> object to be searched in the collection.</param>
         <summary>Checks whether the collection contains the specified <see cref="T:System.Net.IPAddress" /> object.</summary>
-        <returns>**true** if the <see cref="T:System.Net.IPAddress" /> object exists in the collection; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.Net.IPAddress" /> object exists in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

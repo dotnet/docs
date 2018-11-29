@@ -766,9 +766,19 @@
         <ReturnType>System.Security.Cryptography.KeySizes[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the key sizes that are supported by the asymmetric algorithm.</summary>
+        <value>Only key sizes that match an entry in this array are supported by the asymmetric algorithm.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Only values represented in this array are valid for the property <xref:System.Security.Cryptography.DSACryptoServiceProvider.KeySize>.
+
+This algorithm supports key lengths from 512 bits to 1024 bits in increments of 64 bits.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="PersistKeyInCsp">

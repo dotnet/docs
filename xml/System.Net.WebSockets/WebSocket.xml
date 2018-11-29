@@ -363,11 +363,10 @@
         <param name="keepAliveInterval">Determines how regularly a frame is sent over the connection as a keep-alive. Applies only when the connection is idle.</param>
         <param name="useZeroMaskingKey">Indicates whether a random key or a static key (just zeros) should be used for the WebSocket masking.</param>
         <param name="internalBuffer">Will be used as the internal buffer in the WPC. The size has to be at least <c>2 * ReceiveBufferSize + SendBufferSize + 256 + 20 (16 on 32-bit)</c>.</param>
-        <summary>This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
-  
- Allows callers to create a client side WebSocket class which will use the WSPC for framing purposes.</summary>
+        <summary>Allows callers to create a client side WebSocket class which will use the WSPC for framing purposes.</summary>
         <returns>Returns <see cref="T:System.Net.WebSockets.WebSocket" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateFromStream">
@@ -719,8 +718,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This API supports the .NET Framework infrastructure and is not intended to be used directly from your code. Allows callers to register prefixes for WebSocket requests (ws and wss).</summary>
+        <summary>Allows callers to register prefixes for WebSocket requests (ws and wss).</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SendAsync">

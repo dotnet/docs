@@ -1,4 +1,4 @@
-﻿<Type Name="ResourceReader" FullName="System.Resources.ResourceReader">
+<Type Name="ResourceReader" FullName="System.Resources.ResourceReader">
   <TypeSignature Language="C#" Value="public sealed class ResourceReader : System.Resources.IResourceReader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResourceReader extends System.Object implements class System.Collections.IEnumerable, class System.IDisposable, class System.Resources.IResourceReader" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResourceReader" />
@@ -750,8 +750,102 @@ Label11="Mobile Phone:"
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases the resources used by the <see cref="T:System.Resources.ResourceReader" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Calling Dispose allows the resources used by the <xref:System.Resources.ResourceReader> to be reallocated for other purposes. For more information about Dispose, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).
+
+## Examples  
+The following code example moves through a file's resources and prints out all the key/value pairs it finds. The code then uses theIDisposable.Dispose method to shut down the <xref:System.Resources.ResourceReader> and to release all resources used by it.
+
+```vb
+Imports System
+Imports System.Resources
+Imports System.Collections
+
+Public Class ReadResources
+
+    Public Shared Sub Main(args() As String)
+        ' Create a resource reader for items.resources 
+        ' and get an enumerator to iterate through the file. 
+        Dim reader As IResourceReader = New ResourceReader("items.resources")
+        Dim en As IDictionaryEnumerator = reader.GetEnumerator()
+
+        ' Iterate through the file, printing the key and value pairs. 
+        While en.MoveNext()
+            Console.WriteLine()
+            Console.WriteLine("Name: {0}", en.Key)
+            Console.WriteLine("Value: {0}", en.Value)
+        End While 
+
+        ' Clean up all resources associated with the reader. 
+        ' Calling Dispose is equivalent to calling Close.
+        reader.Dispose()
+    End Sub 
+
+End Class
+```
+
+```csharp
+using System;
+using System.Resources;
+using System.Collections;
+
+public class ReadResources 
+{
+    public static void Main(string[] args) 
+    {
+        // Create a resource reader for items.resources 
+        // and get an enumerator to iterate through the file.
+        IResourceReader reader = new ResourceReader("items.resources");
+        IDictionaryEnumerator en = reader.GetEnumerator();
+
+        // Iterate through the file, printing the key/value pairs. 
+        while (en.MoveNext()) 
+        {
+            Console.WriteLine();
+            Console.WriteLine("Name: {0}", en.Key);
+            Console.WriteLine("Value: {0}", en.Value);
+        }
+
+        // Clean up all resources associated with the reader. 
+        // Calling Dispose is equivalent to calling Close.
+        reader.Dispose();
+    }
+}
+```
+
+```cpp
+using namespace System;
+using namespace System::Resources;
+using namespace System::Collections;
+int main()
+{
+   array<String^>^args = Environment::GetCommandLineArgs();
+
+   // Create a resource reader for items.resources 
+   // and get an enumerator to iterate through the file.
+   IResourceReader^ reader = gcnew ResourceReader( "items.resources" );
+   IDictionaryEnumerator^ en = reader->GetEnumerator();
+
+   // Iterate through the file, printing the key/value pairs. 
+   while ( en->MoveNext() )
+   {
+      Console::WriteLine();
+      Console::WriteLine( "Name: {0}", en->Key );
+      Console::WriteLine( "Value: {0}", en->Value );
+   }
+
+   // Clean up all resources associated with the reader. 
+   // Calling the destructor is equivalent to calling Close.
+   reader->~IResourceReader();
+}
+```
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

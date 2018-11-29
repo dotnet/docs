@@ -837,8 +837,33 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Closes the stream for reading and writing.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This method overrides <xref:System.IO.Stream.Close?displayProperty=nameWithType>.
+
+The buffer is still available on a <xref:System.IO.MemoryStream> once the stream has been closed.
+
+Flushing the stream will not flush its underlying encoder unless you explicitly call <xref:System.IO.MemoryStream.Flush> or `Close`. Setting <xref:System.IO.StreamWriter.AutoFlush> to true means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.
+
+Attempting to manipulate a stream after it has been closed might throw an <xref:System.ObjectDisposedException>.
+
+## Examples  
+This code example is part of a larger example provided for the <xref:System.IO.MemoryStream> class.
+
+```vb
+Finally
+    memStream.Close()
+End Try
+```
+
+]]></format>
+        </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">

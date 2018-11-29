@@ -248,8 +248,10 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing"><see langword="true" /> to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        <summary>This member overrides <see cref="M:System.Security.Cryptography.KeyedHashAlgorithm.Dispose(System.Boolean)" />, and more complete documentation might be available in that topic.
+
+Releases the unmanaged resources used by the <see cref="T:System.Security.Cryptography.KeyedHashAlgorithm" /> and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -342,10 +344,10 @@
         <Parameter Name="cb" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="rgb">To be added.</param>
-        <param name="ib">To be added.</param>
-        <param name="cb">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rgb">The input data.</param>
+        <param name="ib">The offset into the byte array from which to begin using data.</param>
+        <param name="cb">The number of bytes in the array to use as data.</param>
+        <summary>Routes data written to the object into the SHA1 hash algorithm for computing the Hash-based Message Authentication Code (HMAC).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

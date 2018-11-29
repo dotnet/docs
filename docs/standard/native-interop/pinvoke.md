@@ -8,7 +8,7 @@ ms.date: 11/28/2018
 
 # Platform Invoke (P/Invoke)
 
-P/Invoke is a technology that allows you to access structs, callbacks and functions in unmanaged libraries from your managed code. Most of the P/Invoke API is contained in two namespaces: `System` and `System.Runtime.InteropServices`. Using these two namespaces will allow you access to the attributes that describe how you want to communicate with the native component.
+P/Invoke is a technology that allows you to access structs, callbacks, and functions in unmanaged libraries from your managed code. Most of the P/Invoke API is contained in two namespaces: `System` and `System.Runtime.InteropServices`. Using these two namespaces give you the tools to describe how you want to communicate with the native component.
 
 Let’s start from the most common example, and that is calling unmanaged functions in your managed code. Let’s show a message box from a command-line application:
 
@@ -29,15 +29,15 @@ public class Program {
 }
 ```
 
-The example above is pretty simple, but it does show off what is needed to invoke unmanaged functions from managed code. Let’s step through the example:
+The example above is simple, but it does show off what is needed to invoke unmanaged functions from managed code. Let’s step through the example:
 
-*   Line #1 shows the using statement for the `System.Runtime.InteropServices` which is the namespace that holds all of the items we need.
-*   Line #7 introduces the `DllImport` attribute. This attribute is crucial, as it tells the runtime that it should load the unmanaged DLL. This is the DLL into which we wish to invoke.
+*   Line #1 shows the using statement for the `System.Runtime.InteropServices` namespace that holds all of the items we need.
+*   Line #7 introduces the `DllImport` attribute. This attribute is crucial, as it tells the runtime that it should load the unmanaged DLL. The string passed in is the DLL our target function is in.
 *   Line #8 is the crux of the P/Invoke work. It defines a managed method that has the **exact same signature** as the unmanaged one. The declaration has a new keyword that you can notice, `extern`, which tells the runtime this is an external method, and that when you invoke it, the runtime should find it in the DLL specified in `DllImport` attribute.
 
 The rest of the example is just invoking the method as you would any other managed method.
 
-The sample is similar for macOS. One thing that needs to change is, of course, the name of the library in the `DllImport` attribute, as macOS has a different scheme of naming dynamic libraries. The sample below uses the `getpid(2)` function to get the process ID of the application and print it out to the console.
+The sample is similar for macOS. The name of the library in the `DllImport` attribute needs to change since macOS has a different scheme of naming dynamic libraries. The sample below uses the `getpid(2)` function to get the process ID of the application and print it out to the console.
 
 ```csharp
 using System;
@@ -83,9 +83,9 @@ namespace PInvokeSamples {
 
 ## Invoking managed code from unmanaged code
 
-Of course, the runtime allows communication to flow both ways which enables you to call into managed artifacts from native functions, using function pointers. The closest thing to a function pointer in managed code is a **delegate**, so this is what is used to allow callbacks from native code into managed code.
+The runtime allows communication to flow in both directions, enabling you to call back into managed code from native functions by using function pointers. The closest thing to a function pointer in managed code is a **delegate**, so this is what is used to allow callbacks from native code into managed code.
 
-The way to use this feature is similar to managed to native process described above. For a given callback, you define a delegate that matches the signature, and pass that into the external method. The runtime will take care of everything else.
+The way to use this feature is similar to the managed to native process described above. For a given callback, you define a delegate that matches the signature, and pass that into the external method. The runtime will take care of everything else.
 
 ```csharp
 using System;
@@ -117,16 +117,16 @@ namespace ConsoleApplication1 {
 }
 ```
 
-Before we walk through our example, it is good to go over the signatures of the unmanaged functions we need to work with. The function we want to call to enumerate all of the windows has the following signature: `BOOL EnumWindows (WNDENUMPROC lpEnumFunc, LPARAM lParam);`
+Before we walk through our example, it's good to review the signatures of the unmanaged functions we need to work with. The function we want to call to enumerate all of the windows has the following signature: `BOOL EnumWindows (WNDENUMPROC lpEnumFunc, LPARAM lParam);`
 
 The first parameter is a callback. The said callback has the following signature: `BOOL CALLBACK EnumWindowsProc (HWND hwnd, LPARAM lParam);`
 
-With this in mind, let’s walk through the example:
+Now, let’s walk through the example:
 
 *   Line #9 in the example defines a delegate that matches the signature of the callback from unmanaged code. Notice how the LPARAM and HWND types are represented using `IntPtr` in the managed code.
 *   Lines #13 and #14 introduce the `EnumWindows` function from the user32.dll library.
 *   Lines #17 - 20 implement the delegate. For this simple example, we just want to output the handle to the console.
-*   Finally, in line #24 we invoke the external method and pass in the delegate.
+*   Finally, in line #24 we call the external method and pass in the delegate.
 
 The Linux and macOS examples are shown below. For them, we use the `ftw` function that can be found in `libc`, the C library. This function is used to traverse directory hierarchies and it takes a pointer to a function as one of its parameters. The said function has the following signature: `int (*fn) (const char *fpath, const struct stat *sb, int typeflag)`.
 

@@ -8,9 +8,9 @@ ms.date: 11/28/2018
 
 # Type marshalling
 
-**Marshalling** is the process of transforming types when they need to cross the managed boundary into native and vice versa.
+**Marshalling** is the process of transforming types when they need to cross between managed and native code.
 
-The reason marshalling is needed is because the types in the managed and unmanaged code are different. In managed code, for instance, you have a `String`, while in the unmanaged world strings can be Unicode ("wide"), non-Unicode, null-terminated, ASCII, etc. By default, the P/Invoke subsystem will try to do the Right Thing based on the default behavior which you can see on [MSDN](../../framework/interop/default-marshaling-behavior.md). However, for those situations where you need extra control, you can employ the `MarshalAs` attribute to specify what is the expected type on the unmanaged side. For instance, if we want the string to be sent as a null-terminated ANSI string, we could do it like this:
+Marshalling is needed because the types in the managed and unmanaged code are different. In managed code, for instance, you have a `String`, while in the unmanaged world strings can be Unicode ("wide"), non-Unicode, null-terminated, ASCII, etc. By default, the P/Invoke subsystem will try to do the Right Thing based on the default behavior, which you can see on [MSDN](../../framework/interop/default-marshaling-behavior.md). However, for those situations where you need extra control, you can employ the `MarshalAs` attribute to specify what is the expected type on the unmanaged side. For instance, if we want the string to be sent as a null-terminated ANSI string, we could do it like this:
 
 ```csharp
 [DllImport("somenativelibrary.dll")]
@@ -37,7 +37,7 @@ This first table describes the mappings for various types for whom the marshalli
 | `string`  | Either `char*` or `char16_t*` depending on the `CharSet` of the P/Invoke or structure. |
 | `System.IntPtr` | `intptr_t`        |
 | `System.UIntPtr` | `uintptr_t`      |
-| .NET Pointer types (i.e. `void*`)  | `void*` |
+| .NET Pointer types (ex. `void*`)  | `void*` |
 | Type derived from `System.Runtime.InteropServices.SafeHandle` | `void*` |
 | Type derived from `System.Runtime.InteropServices.CriticalHandle` | `void*`          |
 | `bool`    | Win32 `BOOL` type       |
@@ -75,7 +75,7 @@ Some types can only be marshalled as parameters and not as fields. These types a
 
 ## Marshalling classes and structs
 
-Another aspect of type marshalling is how to pass in a struct to an unmanaged method. For instance, some of the unmanaged methods require a struct as a parameter. In these cases, we need to create a corresponding struct or a class in managed part of the world to use it as a parameter. However, just defining the class isn't enough, we also need to instruct the marshaler how to map fields in the class to the unmanaged struct. This is where the `StructLayout` attribute comes into play.
+Another aspect of type marshalling is how to pass in a struct to an unmanaged method. For instance, some of the unmanaged methods require a struct as a parameter. In these cases, we need to create a corresponding struct or a class in managed part of the world to use it as a parameter. However, just defining the class isn't enough, we also need to instruct the marshaler how to map fields in the class to the unmanaged struct. Here the `StructLayout` attribute becomes useful.
 
 ```csharp
 [DllImport("kernel32.dll")]
@@ -115,7 +115,7 @@ typedef struct _SYSTEMTIME {
 } SYSTEMTIME, *PSYSTEMTIME*;
 ```
 
-We already saw the Linux and macOS example for this in the previous example. It is shown again below.
+We already saw the Linux and macOS example for this structure in the previous example. It is shown again below.
 
 ```csharp
 [StructLayout(LayoutKind.Sequential)]
@@ -144,7 +144,7 @@ Sometimes the default marshalling rules for fields in a structure aren't exactly
 
 #### Customizing Boolean Marshalling
 
-Native code has many different boolean representations; on Windows alone there are 3 ways to represent boolean values. The runtime doesn't know the native definition of your structure, so the best it can do is make a guess on how to marshal your boolean values. So, .NET enable you to pick how to marshal your boolean field. See the examples below for how to marshal your .NET `bool` to different native boolean types:
+Native code has many different boolean representations; on Windows alone there are three ways to represent boolean values. The runtime doesn't know the native definition of your structure, so the best it can do is make a guess on how to marshal your boolean values. So, .NET enables you to pick how to marshal your boolean field. See the examples below for how to marshal your .NET `bool` to different native boolean types:
 
 Boolean values default to marshalling as a native 4-byte Win32 [`BOOL`](https://docs.microsoft.com/windows/desktop/winprog/windows-data-types#BOOL) value, shown below:
 
@@ -236,7 +236,7 @@ struct DefaultArray
 };
 ```
 
-If you are interfacing with COM APIs you may have to marshal your arrays as `SAFEARRAY*`s. To do so, you can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=nameWithType> and the <xref:System.Runtime.InteropServices.UnmanagedType.SafeArray?displayProperty=nameWithType> value to tell the runtime to marshal your array as a `SAFEARRAY*`.
+If you are interfacing with COM APIs, you may have to marshal your arrays as `SAFEARRAY*`s. You can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=nameWithType> and the <xref:System.Runtime.InteropServices.UnmanagedType.SafeArray?displayProperty=nameWithType> value to tell the runtime to marshal your array as a `SAFEARRAY*`.
 
 ```csharp
 public struct SafeArrayExample
@@ -433,7 +433,7 @@ struct DefaultString
 
 #### Customizing Decimal Marshalling
 
-If you are working on Windows, you might encounter some APIs that use the native [`CY` or `CURRENCY`](https://docs.microsoft.com/windows/desktop/api/wtypes/ns-wtypes-tagcy) structure. By default, the .NET `decimal` type marshals to the native [`DECIMAL`](https://docs.microsoft.com/windows/desktop/api/wtypes/ns-wtypes-tagdec) structure; however, you can use a <xref:System.Runtime.InteropServices.MarshalAsAttribute> with the <xref:System.Runtime.InteropServices.UnmanagedType.Currency?displayProperty=nameWithType> value to instruct the marshaller to convert your `decimal` value to a native `CY` value.
+If you are working on Windows, you might encounter some APIs that use the native [`CY` or `CURRENCY`](https://docs.microsoft.com/windows/desktop/api/wtypes/ns-wtypes-tagcy) structure. By default, the .NET `decimal` type marshals to the native [`DECIMAL`](https://docs.microsoft.com/windows/desktop/api/wtypes/ns-wtypes-tagdec) structure. However, you can use a <xref:System.Runtime.InteropServices.MarshalAsAttribute> with the <xref:System.Runtime.InteropServices.UnmanagedType.Currency?displayProperty=nameWithType> value to instruct the marshaler to convert your `decimal` value to a native `CY` value.
 
 
 ```csharp
@@ -503,7 +503,7 @@ struct ObjectVariant
 };
 ```
 
-The table below describes the mapping between the runtime type of the `obj` field and the type of stored value in the `VARIANT`.
+The table below describes how different runtime types of the `obj` field map to the various types stored in a `VARIANT`.
 
 | .NET Type | VARIANT Type | | .NET Type | VARIANT Type |
 |------------|--------------|-|----------|--------------|

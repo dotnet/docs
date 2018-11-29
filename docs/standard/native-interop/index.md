@@ -9,7 +9,7 @@ ms.date: 11/28/2018
 
 The following articles show the various ways of doing "native interoperability" that are available using .NET.
 
-There are a few of reasons why you'd want to call into native code:
+There are a few reasons why you'd want to call into native code:
 
 *   Operating Systems come with a large volume of APIs that aren't present in the managed class libraries. A prime example for this scenario would be access to hardware or operating system management functions.
 *   Communicating with other components that have or can produce C-style ABIs (native ABIs), such as Java code that is exposed via [Java Native Interface (JNI)](https://docs.oracle.com/javase/8/docs/technotes/guides/jni/) or any other managed language that could produce a native component.

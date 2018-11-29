@@ -115,7 +115,7 @@ typedef struct _SYSTEMTIME {
 } SYSTEMTIME, *PSYSTEMTIME*;
 ```
 
-We already saw the Linux and macOS example for this structure in the previous example. It is shown again below.
+We already saw the Linux and MacOS example for this structure in the previous example. It is shown again below.
 
 ```csharp
 [StructLayout(LayoutKind.Sequential)]
@@ -144,7 +144,7 @@ Sometimes the default marshalling rules for fields in a structure aren't exactly
 
 #### Customizing Boolean Marshalling
 
-Native code has many different boolean representations; on Windows alone there are three ways to represent boolean values. The runtime doesn't know the native definition of your structure, so the best it can do is make a guess on how to marshal your boolean values. So, .NET enables you to pick how to marshal your boolean field. See the examples below for how to marshal your .NET `bool` to different native boolean types:
+Native code has many different boolean representations; on Windows alone there are three ways to represent boolean values. The runtime doesn't know the native definition of your structure, so the best it can do is make a guess on how to marshal your boolean values. The .NET runtime provides a way to indicate how to marshal your boolean field. See the examples below for how to marshal your .NET `bool` to different native boolean types:
 
 Boolean values default to marshalling as a native 4-byte Win32 [`BOOL`](https://docs.microsoft.com/windows/desktop/winprog/windows-data-types#BOOL) value, shown below:
 

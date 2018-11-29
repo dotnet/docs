@@ -56,7 +56,7 @@ method name="Test!ns2.C0::m"
 ## Example  
  The following code sample is intended to be used with the preceding configuration file.  
   
-```  
+```csharp
 using System;  
 using System.Reflection;  
 using System.Runtime.CompilerServices;  

@@ -76,7 +76,7 @@ builder.QuoteSuffix = "]";
   
  The following code example writes to the console the update command that was automatically generated.  
   
-```  
+```csharp
 Console.WriteLine(builder.GetUpdateCommand().CommandText)  
 ```  
   

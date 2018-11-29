@@ -26,7 +26,7 @@ One of the new features in the .NET Framework version 2.0 is an enhanced tracing
   
 1.  The first step to instrumenting an application with tracing is to create a trace source. In large projects with various components, you can create a separate trace source for each component. The recommended practice is to use the application name for the trace source name. This will make it easier to keep the different traces separate. The following code creates a new trace source (`mySource)` and calls a method (`Activity1`) that traces events.  The trace messages are written by the default trace listener.  
   
-    ```  
+    ```csharp
     using System;  
     using System.Diagnostics;  
     using System.Threading;  
@@ -95,7 +95,7 @@ One of the new features in the .NET Framework version 2.0 is an enhanced tracing
   
 1.  The configuration file initializes the settings for the trace source at the time the application is initialized. To change those settings you must change the configuration file and restart the application or programmatically refresh the application using the <xref:System.Diagnostics.Trace.Refresh%2A?displayProperty=nameWithType> method. The application can dynamically change the properties set by the configuration file to override any settings specified by the user.  For example, you might want to assure that critical messages are always sent to a text file, regardless of the current configuration settings.  
   
-    ```  
+    ```csharp
     using System;  
     using System.Diagnostics;  
     using System.Threading;  

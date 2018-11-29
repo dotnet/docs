@@ -42,7 +42,7 @@ The `illegalPrepareConstrainedRegion` managed debugging assistant (MDA) is activ
 ## Example  
  The following code example demonstrates the pattern that causes this MDA to be activated.  
   
-```  
+```csharp
 void MethodWithInvalidPCR()  
 {  
     RuntimeHelpers.PrepareConstrainedRegions();  

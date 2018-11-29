@@ -49,7 +49,7 @@ The `loadFromContext` managed debugging assistant (MDA) is activated if an assem
 ## Example  
  The following code example demonstrates a situation that can activate this MDA:  
   
-```  
+```csharp
 using System.Reflection;  
 namespace ConsoleApplication1  
 {  

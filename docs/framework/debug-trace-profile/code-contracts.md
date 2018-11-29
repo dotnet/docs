@@ -51,7 +51,7 @@ Code contracts provide a way to specify preconditions, postconditions, and objec
   
  When `if`-`then`-`throw` statements appear in this form, the tools recognize them as legacy `requires` statements. If no other contracts follow the `if`-`then`-`throw` sequence, end the code with the <xref:System.Diagnostics.Contracts.Contract.EndContractBlock%2A?displayProperty=nameWithType> method.  
   
-```csharp
+```
 if ( x == null ) throw new ...  
 Contract.EndContractBlock(); // All previous "if" checks are preconditions  
 ```  
@@ -88,7 +88,7 @@ Contract.EndContractBlock(); // All previous "if" checks are preconditions
   
     -   You cannot refer to the method's return value in an old expression:  
   
-        ```csharp
+        ```
         Contract.OldValue(Contract.Result<int>() + x) // ERROR  
         ```  
   

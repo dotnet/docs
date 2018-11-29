@@ -1,9 +1,9 @@
 ---
 title: Manage production Docker environments
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Get to know the key points for managing a container-based production environment.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 11/23/2018
 ---
 # Manage production Docker environments
 

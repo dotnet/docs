@@ -1,9 +1,9 @@
 ---
 title: Steps in the outer-loop DevOps workflow for a Docker application
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Learn the steps for the "outer loop" of the DevOps workflow
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/10/2018
+ms.date: 11/23/2018
 ---
 # Steps in the outer-loop DevOps workflow for a Docker application
 
@@ -231,4 +231,4 @@ Only when monitoring and diagnostics are 100 percent within the realm of DevOps 
 
 >[!div class="step-by-step"]
 >[Previous](index.md)
->[Next](../run-manage-monitor-docker-environments/index.md)
+>[Next](create-ci-cd-pipelines-azure-devops-services-aspnetcore-kubernetes.md)

@@ -1,9 +1,9 @@
 ---
 title: SOA applications
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Bear in mind that containers can also be a useful deployment option for SOA applications.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 11/23/2018
 ---
 # SOA applications
 

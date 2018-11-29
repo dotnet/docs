@@ -1,9 +1,9 @@
 ---
 title: Docker containers, images, and registries
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Learn the key role that registries play overall in the Docker way of deploying applications.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 11/23/2018
 ---
 # Docker containers, images, and registries
 
@@ -29,4 +29,4 @@ Private image registries, either hosted on-premises or in the cloud, are recomme
 
 >[!div class="step-by-step"]
 >[Previous](docker-terminology.md)
->[Next](Docker-application-lifecycle/index.md)
+>[Next](road-to-modern-applications-based-on-containers.md)

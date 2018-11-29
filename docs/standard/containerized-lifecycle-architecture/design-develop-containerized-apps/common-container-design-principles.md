@@ -1,9 +1,9 @@
 ---
 title: Common container design principles
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Learn a fundamental principle of good container design, it's that a container should host just one process.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 11/23/2018
 ---
 # Common container design principles
 

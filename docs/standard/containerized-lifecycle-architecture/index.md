@@ -1,9 +1,9 @@
 ---
-title: Introduction to containers and Docker
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+title: Introduction to Containers and Docker
+description: Get a high level overview of the main benefits of using Docker.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 11/23/2018
 ---
 # Introduction to containers and Docker
 

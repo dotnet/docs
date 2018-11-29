@@ -1,9 +1,9 @@
 ---
 title: Docker terminology
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Learn some basic terminology that's used everyday when working with Docker.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/21/2017
+ms.date: 11/23/2018
 ---
 # Docker terminology
 

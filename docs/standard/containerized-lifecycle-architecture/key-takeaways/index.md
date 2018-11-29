@@ -1,9 +1,9 @@
 ---
 title: Key takeaways
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools (e-book)_v1.1
+description: Review the key takeaways for the guide.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 11/23/2018
 ---
 # Key takeaways
 

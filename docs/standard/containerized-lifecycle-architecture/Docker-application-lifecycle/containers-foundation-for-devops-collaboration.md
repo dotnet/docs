@@ -1,9 +1,9 @@
 ---
 title: Containers as the foundation for DevOps collaboration
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Understand the key role of containers to streamline DevOps.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 11/23/2018
 ---
 # Containers as the foundation for DevOps collaboration
 

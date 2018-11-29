@@ -1,9 +1,9 @@
 ---
-title: Orchestrating microservices and multicontainer applications for high scalability and availability
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+title: Orchestrating microservices and multi-container applications for high scalability and availability
+description: Real production applications have to be deployed and managed with orchestrators that handle the health, workload and life cycles of all containers.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 11/23/2018
 ---
 # Orchestrating microservices and multicontainer applications for high scalability and availability
 
@@ -175,4 +175,4 @@ Note that Docker containers are themselves stateless. If you want to implement a
 
 >[!div class="step-by-step"]
 >[Previous](soa-applications.md)
->[Next](docker-apps-development-environment.md)
+>[Next](deploy-azure-kubernetes-service.md)

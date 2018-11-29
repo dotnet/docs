@@ -18,7 +18,7 @@ There are a few of reasons why you'd want to call into native code:
 The list above doesn't cover all of the potential situations and scenarios in which the developer would want/like/need to interface with native components. .NET class library, for instance, uses the native interoperability support to implement a fair number of its APIs, like console support and manipulation, file system access and others. However, it is important to note that there is an option, should one need it.
 
 > [!NOTE]
-> Most of the examples in this section will be presented for all three supported platforms for .NET Core (Windows, Linux and macOS). However, for some short and illustrative examples, just one sample is shown that uses Windows filenames and extensions (that is, "dll" for libraries). This doesn't mean that those features aren't available on Linux or macOS, it was done merely for convenience sake.
+> Most of the examples in this section will be presented for all three supported platforms for .NET Core (Windows, Linux and MacOS). However, for some short and illustrative examples, just one sample is shown that uses Windows filenames and extensions (that is, "dll" for libraries). This doesn't mean that those features aren't available on Linux or MacOS, it was done merely for convenience sake.
 
 Take a look at the following pages to see how you can use these .NET features to interop with native libraries.
 

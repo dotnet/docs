@@ -4009,7 +4009,7 @@ Task t Status: RanToCompletion, Result: 42
  -or-  
   
  An exception was thrown during the execution of the task. The <see cref="P:System.AggregateException.InnerExceptions" /> collection contains information about the exception or exceptions.</exception>
-        <related type="ExternalDocumentation" href="https://blogs.msdn.com/b/pfxteam/archive/2009/10/15/9907713.aspx">Task.Wait and “Inlining”</related>
+        <related type="ExternalDocumentation" href="https://blogs.msdn.com/b/pfxteam/archive/2009/10/15/9907713.aspx">Task.Wait and "Inlining"</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">

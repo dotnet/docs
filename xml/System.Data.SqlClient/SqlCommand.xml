@@ -3254,7 +3254,8 @@ For more information about asynchronous programming in the .NET Framework Data P
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value indicating whether the application should automatically receive query notifications from a common <see cref="T:System.Data.SqlClient.SqlDependency" /> object.</summary>
-        <value><see langword="true" /> if the application should automatically receive query notifications; otherwise <see langword="false" />. The default value is <see langword="true" />.</value>
+        <value>
+          <see langword="true" /> if the application should automatically receive query notifications; otherwise <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

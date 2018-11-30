@@ -1,0 +1,195 @@
+﻿<Type Name="ServiceHealthModel+CommunicationTimeoutsModel" FullName="System.ServiceModel.Description.ServiceHealthModel+CommunicationTimeoutsModel">
+  <TypeSignature Language="C#" Value="public class ServiceHealthModel.CommunicationTimeoutsModel" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ServiceHealthModel/CommunicationTimeoutsModel extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceHealthModel.CommunicationTimeoutsModel" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class ServiceHealthModel::CommunicationTimeoutsModel" />
+  <TypeSignature Language="F#" Value="type ServiceHealthModel.CommunicationTimeoutsModel = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-4.8">
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommunicationTimeoutsModel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommunicationTimeoutsModel();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommunicationTimeoutsModel (System.ServiceModel.IDefaultCommunicationTimeouts timeouts);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.IDefaultCommunicationTimeouts timeouts) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel.#ctor(System.ServiceModel.IDefaultCommunicationTimeouts)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (timeouts As IDefaultCommunicationTimeouts)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommunicationTimeoutsModel(System::ServiceModel::IDefaultCommunicationTimeouts ^ timeouts);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel : System.ServiceModel.IDefaultCommunicationTimeouts -&gt; System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel" Usage="new System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel timeouts" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="timeouts" Type="System.ServiceModel.IDefaultCommunicationTimeouts" />
+      </Parameters>
+      <Docs>
+        <param name="timeouts">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan CloseTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan CloseTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel.CloseTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CloseTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan CloseTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.CloseTimeout : TimeSpan" Usage="System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel.CloseTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasTimeouts">
+      <MemberSignature Language="C#" Value="public bool HasTimeouts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasTimeouts" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel.HasTimeouts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasTimeouts As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasTimeouts { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasTimeouts : bool" Usage="System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel.HasTimeouts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan OpenTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan OpenTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel.OpenTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OpenTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan OpenTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.OpenTimeout : TimeSpan" Usage="System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel.OpenTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan ReceiveTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan ReceiveTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel.ReceiveTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReceiveTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ReceiveTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReceiveTimeout : TimeSpan" Usage="System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel.ReceiveTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan SendTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan SendTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel.SendTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SendTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan SendTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.SendTimeout : TimeSpan" Usage="System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel.SendTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

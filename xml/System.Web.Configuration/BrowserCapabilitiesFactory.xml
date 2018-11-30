@@ -1,4 +1,4 @@
-<Type Name="BrowserCapabilitiesFactory" FullName="System.Web.Configuration.BrowserCapabilitiesFactory">
+﻿<Type Name="BrowserCapabilitiesFactory" FullName="System.Web.Configuration.BrowserCapabilitiesFactory">
   <TypeSignature Language="C#" Value="public class BrowserCapabilitiesFactory : System.Web.Configuration.BrowserCapabilitiesFactoryBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BrowserCapabilitiesFactory extends System.Web.Configuration.BrowserCapabilitiesFactoryBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.BrowserCapabilitiesFactory" />
@@ -4797,7 +4797,8 @@
         <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
       </Parameters>
       <Docs>
-        <param name="ignoreApplicationBrowsers"><see langword="true" /> to ignore definitions for the Docomon505i browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
+        <param name="ignoreApplicationBrowsers">
+          <see langword="true" /> to ignore definitions for the Docomon505i browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
         <param name="headers">The collection of headers included in the current request.</param>
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Docomon505i browser making the current request.</summary>
@@ -5135,7 +5136,8 @@
         <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
       </Parameters>
       <Docs>
-        <param name="ignoreApplicationBrowsers"><see langword="true" /> to ignore definitions for the Docomop2102v browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
+        <param name="ignoreApplicationBrowsers">
+          <see langword="true" /> to ignore definitions for the Docomop2102v browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
         <param name="headers">The collection of headers included in the current request.</param>
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Docomop2102v browser making the current request.</summary>
@@ -5585,7 +5587,8 @@
         <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
       </Parameters>
       <Docs>
-        <param name="ignoreApplicationBrowsers"><see langword="true" /> to ignore definitions for the Docomop505i browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
+        <param name="ignoreApplicationBrowsers">
+          <see langword="true" /> to ignore definitions for the Docomop505i browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
         <param name="headers">The collection of headers included in the current request.</param>
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Docomop505i browser making the current request.</summary>
@@ -7886,7 +7889,8 @@
         <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
       </Parameters>
       <Docs>
-        <param name="ignoreApplicationBrowsers"><see langword="true" /> to ignore definitions for the Mozilla Firefox version 3 and later browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
+        <param name="ignoreApplicationBrowsers">
+          <see langword="true" /> to ignore definitions for the Mozilla Firefox version 3 and later browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
         <param name="headers">The collection of headers included in the current request.</param>
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Mozilla Firefox version 3 and later browser making the current request.</summary>
@@ -8791,7 +8795,8 @@
         <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
       </Parameters>
       <Docs>
-        <param name="ignoreApplicationBrowsers"><see langword="true" /> to ignore definitions for the Goamericarim857major6 browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
+        <param name="ignoreApplicationBrowsers">
+          <see langword="true" /> to ignore definitions for the Goamericarim857major6 browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
         <param name="headers">The collection of headers included in the current request.</param>
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Goamericarim857major6 browser making the current request.</summary>
@@ -20356,7 +20361,8 @@
         <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
       </Parameters>
       <Docs>
-        <param name="ignoreApplicationBrowsers"><see langword="true" /> to ignore definitions for the Opera7to9 browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
+        <param name="ignoreApplicationBrowsers">
+          <see langword="true" /> to ignore definitions for the Opera7to9 browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
         <param name="headers">The collection of headers included in the current request.</param>
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Opera7to9 browser making the current request.</summary>
@@ -22220,7 +22226,8 @@
         <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
       </Parameters>
       <Docs>
-        <param name="ignoreApplicationBrowsers"><see langword="true" /> to ignore definitions for the Piescreenbitdepth browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
+        <param name="ignoreApplicationBrowsers">
+          <see langword="true" /> to ignore definitions for the Piescreenbitdepth browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
         <param name="headers">The collection of headers included in the current request.</param>
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Piescreenbitdepth browser making the current request.</summary>
@@ -23856,7 +23863,8 @@
         <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
       </Parameters>
       <Docs>
-        <param name="ignoreApplicationBrowsers"><see langword="true" /> to ignore definitions for the Safari1plus browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
+        <param name="ignoreApplicationBrowsers">
+          <see langword="true" /> to ignore definitions for the Safari1plus browser in application-level browser definition files; otherwise, <see langword="false" />.</param>
         <param name="headers">The collection of headers included in the current request.</param>
         <param name="browserCaps">The <see cref="T:System.Web.HttpBrowserCapabilities" /> object to initialize.</param>
         <summary>Initializes an <see cref="T:System.Web.HttpBrowserCapabilities" /> object that represents the capabilities of the Safari1plus browser making the current request.</summary>

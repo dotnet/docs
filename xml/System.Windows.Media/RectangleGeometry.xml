@@ -282,7 +282,8 @@
       <Parameters />
       <Docs>
         <summary>Determines whether this <see cref="T:System.Windows.Media.RectangleGeometry" /> object is empty.</summary>
-        <returns><see langword="true" /> if this <see cref="T:System.Windows.Media.RectangleGeometry" /> is empty; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Windows.Media.RectangleGeometry" /> is empty; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,7 +311,8 @@
       <Parameters />
       <Docs>
         <summary>Determines whether this <see cref="T:System.Windows.Media.RectangleGeometry" /> object may have curved segments.</summary>
-        <returns><see langword="true" /> if this <see cref="T:System.Windows.Media.RectangleGeometry" /> object may have curved segments; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Windows.Media.RectangleGeometry" /> object may have curved segments; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -176,7 +176,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether or not a trailing paragraph break should be inserted after the last paragraph when placing the contents of a root <see cref="T:System.Windows.Documents.Section" /> element on the clipboard.</summary>
-        <value><see langword="true" /> to indicate that a trailing paragraph break should be included; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> to indicate that a trailing paragraph break should be included; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

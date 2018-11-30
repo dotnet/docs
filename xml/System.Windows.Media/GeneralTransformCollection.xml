@@ -362,7 +362,8 @@
       <Docs>
         <param name="value">The <see cref="T:System.Windows.Media.GeneralTransform" /> to locate in the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</param>
         <summary>Indicates whether the <see cref="T:System.Windows.Media.GeneralTransformCollection" /> contains the specified <see cref="T:System.Windows.Media.GeneralTransform" /> object.</summary>
-        <returns><see langword="true" /> if the collection contains <paramref name="value" />; otherwise <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the collection contains <paramref name="value" />; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -708,7 +709,8 @@
       <Docs>
         <param name="value">The object to remove.</param>
         <summary>Deletes a <see cref="T:System.Windows.Media.GeneralTransform" /> object from the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</summary>
-        <returns><see langword="true" /> if <paramref name="value" /> was successfully deleted; otherwise <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> was successfully deleted; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.GeneralTransformCollection" /> is read-only.  
   

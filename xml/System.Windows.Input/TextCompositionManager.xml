@@ -265,7 +265,8 @@
       <Docs>
         <param name="composition">A <see cref="T:System.Windows.Input.TextComposition" /> object to complete.</param>
         <summary>Completes a specified text composition.</summary>
-        <returns><see langword="true" /> if the text composition was successfully completed; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the text composition was successfully completed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when *composition* is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">Raised when there is no input manager associated with *composition*, or when the text composition is already marked as completed.</exception>
@@ -660,7 +661,8 @@
       <Docs>
         <param name="composition">A <see cref="T:System.Windows.Input.TextComposition" /> object to start.</param>
         <summary>Starts a specified text composition.</summary>
-        <returns><see langword="true" /> if the text composition was successfully started; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the text composition was successfully started; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Input.TextCompositionManager.CompleteComposition(System.Windows.Input.TextComposition)" />
         <altmember cref="M:System.Windows.Input.TextCompositionManager.UpdateComposition(System.Windows.Input.TextComposition)" />
@@ -843,7 +845,8 @@
       <Docs>
         <param name="composition">A <see cref="T:System.Windows.Input.TextComposition" /> object to update.</param>
         <summary>Updates a specified text composition.</summary>
-        <returns><see langword="true" /> if the text composition was successfully updated; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the text composition was successfully updated; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Input.TextCompositionManager.CompleteComposition(System.Windows.Input.TextComposition)" />
         <altmember cref="M:System.Windows.Input.TextCompositionManager.StartComposition(System.Windows.Input.TextComposition)" />

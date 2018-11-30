@@ -33,14 +33,14 @@
     <typeparam name="T">The type of items in the memory buffer managed by this memory manager.</typeparam>
     <summary>An abstract base class that is used to replace the implementation of <see cref="T:System.Memory`1" />.</summary>
     <remarks>
-          <format type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
 
 The `MemoryManager<T>` class is used to extend the knowledge of types that <xref:System.Memory%601> is able to represent. For example, you can derive from `MemoryManager<T>` to allow <xref:System.Memory%601> to be backed by a <xref:System.Runtime.InteropServices.SafeHandle>.
 
 > [!NOTE]
 > The `MemoryManager<T>` class is intended for advanced scenarios. Most developers do not need to use it.
 
-       ]]></format>    
+       ]]></format>
     </remarks>
   </Docs>
   <Members>
@@ -144,7 +144,8 @@ The `MemoryManager<T>` class is used to extend the knowledge of types that <xref
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing"><see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases all resources used by the current memory manager.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -281,7 +282,8 @@ The `MemoryManager<T>` class is used to extend the knowledge of types that <xref
       <Docs>
         <param name="segment">The array segment to write to.</param>
         <summary>Returns an array segment.</summary>
-        <returns><see langword="true" /> if the method succeeded in retrieving the array segment; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the method succeeded in retrieving the array segment; otherwise, <see langword="false" />.</returns>
         <remarks>If this method is not overridden, it returns the default array segment.</remarks>
       </Docs>
     </Member>

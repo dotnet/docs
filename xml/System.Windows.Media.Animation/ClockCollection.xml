@@ -110,7 +110,8 @@
       <Docs>
         <param name="item">The object to locate.</param>
         <summary>Indicates whether the <see cref="T:System.Windows.Media.Animation.ClockCollection" /> contains the specified <see cref="T:System.Windows.Media.Animation.Clock" /> object.</summary>
-        <returns><see langword="true" /> if <paramref name="item" /> is found; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> is found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,7 +198,8 @@
       <Docs>
         <param name="obj">The object to compare with this instance.</param>
         <summary>Indicates whether this instance is equal to the specified object.</summary>
-        <returns><see langword="true" /> if <paramref name="obj" /> is equal to this instance; otherwise <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is equal to this instance; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -279,7 +281,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the <see cref="T:System.Windows.Media.Animation.ClockCollection" /> is read-only.</summary>
-        <value><see langword="true" /> if this instance is read-only; otherwise <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if this instance is read-only; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -333,7 +336,8 @@
         <param name="objA">The first object to compare.</param>
         <param name="objB">The second object to compare.</param>
         <summary>Overloaded operator that compares two <see cref="T:System.Windows.Media.Animation.ClockCollection" /> collections for equality.</summary>
-        <returns><see langword="true" /> if <paramref name="objA" /> and <paramref name="objB" /> are equal; otherwise <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="objA" /> and <paramref name="objB" /> are equal; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,7 +365,8 @@
         <param name="objA">The first object to compare.</param>
         <param name="objB">The second object to compare.</param>
         <summary>Overloaded operator that compares two <see cref="T:System.Windows.Media.Animation.ClockCollection" /> collections for inequality.</summary>
-        <returns><see langword="true" /> if <paramref name="objA" /> and <paramref name="objB" /> are not equal; otherwise <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="objA" /> and <paramref name="objB" /> are not equal; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -390,7 +395,8 @@
       <Docs>
         <param name="item">The object to remove.</param>
         <summary>Removes the specified <see cref="T:System.Windows.Media.Animation.Clock" /> from the <see cref="T:System.Windows.Media.Animation.ClockCollection" />.</summary>
-        <returns><see langword="true" /> if <paramref name="item" /> was successfully removed; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> was successfully removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

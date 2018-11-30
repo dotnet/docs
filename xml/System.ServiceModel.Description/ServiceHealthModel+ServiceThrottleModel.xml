@@ -1,0 +1,264 @@
+﻿<Type Name="ServiceHealthModel+ServiceThrottleModel" FullName="System.ServiceModel.Description.ServiceHealthModel+ServiceThrottleModel">
+  <TypeSignature Language="C#" Value="public class ServiceHealthModel.ServiceThrottleModel" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ServiceHealthModel/ServiceThrottleModel extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceHealthModel.ServiceThrottleModel" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class ServiceHealthModel::ServiceThrottleModel" />
+  <TypeSignature Language="F#" Value="type ServiceHealthModel.ServiceThrottleModel = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-4.8">
+      <AttributeName>System.Runtime.Serialization.DataContract(Name="ServiceThrottle", Namespace="http://schemas.microsoft.com/net/2018/08/health")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceThrottleModel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceThrottleModel();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceThrottleModel (System.ServiceModel.Dispatcher.ServiceThrottle serviceThrottle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Dispatcher.ServiceThrottle serviceThrottle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel.#ctor(System.ServiceModel.Dispatcher.ServiceThrottle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceThrottleModel(System::ServiceModel::Dispatcher::ServiceThrottle ^ serviceThrottle);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel : System.ServiceModel.Dispatcher.ServiceThrottle -&gt; System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel" Usage="new System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel serviceThrottle" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serviceThrottle" Type="System.ServiceModel.Dispatcher.ServiceThrottle" />
+      </Parameters>
+      <Docs>
+        <param name="serviceThrottle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallsCapacity">
+      <MemberSignature Language="C#" Value="public int CallsCapacity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CallsCapacity" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel.CallsCapacity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallsCapacity As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CallsCapacity { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CallsCapacity : int" Usage="System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel.CallsCapacity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallsCount">
+      <MemberSignature Language="C#" Value="public int CallsCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CallsCount" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel.CallsCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallsCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CallsCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.CallsCount : int" Usage="System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel.CallsCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasThrottle">
+      <MemberSignature Language="C#" Value="public bool HasThrottle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasThrottle" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel.HasThrottle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasThrottle As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasThrottle { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasThrottle : bool" Usage="System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel.HasThrottle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceContextsCapacity">
+      <MemberSignature Language="C#" Value="public int InstanceContextsCapacity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 InstanceContextsCapacity" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel.InstanceContextsCapacity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceContextsCapacity As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InstanceContextsCapacity { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceContextsCapacity : int" Usage="System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel.InstanceContextsCapacity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceContextsCount">
+      <MemberSignature Language="C#" Value="public int InstanceContextsCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 InstanceContextsCount" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel.InstanceContextsCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceContextsCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InstanceContextsCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstanceContextsCount : int" Usage="System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel.InstanceContextsCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionsCapacity">
+      <MemberSignature Language="C#" Value="public int SessionsCapacity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SessionsCapacity" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel.SessionsCapacity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionsCapacity As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SessionsCapacity { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SessionsCapacity : int" Usage="System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel.SessionsCapacity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionsCount">
+      <MemberSignature Language="C#" Value="public int SessionsCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SessionsCount" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel.SessionsCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionsCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SessionsCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SessionsCount : int" Usage="System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel.SessionsCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

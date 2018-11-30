@@ -1488,5 +1488,40 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
+    <Member MemberName="SpeculationBarrier">
+      <MemberSignature Language="C#" Value="public static void SpeculationBarrier ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SpeculationBarrier() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.SpeculationBarrier" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SpeculationBarrier ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SpeculationBarrier();" />
+      <MemberSignature Language="F#" Value="static member SpeculationBarrier : unit -&gt; unit" Usage="System.Threading.Interlocked.SpeculationBarrier " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
   </Members>
 </Type>

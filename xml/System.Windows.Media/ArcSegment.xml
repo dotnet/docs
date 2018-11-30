@@ -261,7 +261,8 @@ ArcSegment objects with different SweepDirection settings
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the arc should be greater than 180 degrees.</summary>
-        <value><see langword="true" /> if the arc should be greater than 180 degrees; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the arc should be greater than 180 degrees; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -164,10 +164,7 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
   
  </term><description> A node has been or will be changed.  
   
- </description></item></list>
- 
- <block subset="none" type="note">
- <para>  
+ </description></item></list><block subset="none" type="note"><para>  
  The <see langword="Action" /> value does not differentiate between when the event occurred (before or after). You can create separate event handlers to handle both instances.  
   
 </para></block></value>
@@ -214,8 +211,7 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
         <summary>Gets the value of the <see cref="P:System.Xml.XmlNode.ParentNode" /> after the operation completes.</summary>
         <value>The value of the <see langword="ParentNode" /> after the operation completes. This property returns <see langword="null" /> if the node is being removed.  
   
- <block subset="none" type="note">
- <para>  
+ <block subset="none" type="note"><para>  
  For attribute nodes this property returns the <see cref="P:System.Xml.XmlAttribute.OwnerElement" />.  
   
 </para></block></value>
@@ -347,8 +343,7 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
         <summary>Gets the value of the <see cref="P:System.Xml.XmlNode.ParentNode" /> before the operation began.</summary>
         <value>The value of the <see langword="ParentNode" /> before the operation began. This property returns <see langword="null" /> if the node did not have a parent.  
   
- <block subset="none" type="note">
- <para>  
+ <block subset="none" type="note"><para>  
  For attribute nodes this property returns the <see cref="P:System.Xml.XmlAttribute.OwnerElement" />.  
   
 </para></block></value>

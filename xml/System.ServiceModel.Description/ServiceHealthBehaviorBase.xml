@@ -1,0 +1,357 @@
+﻿<Type Name="ServiceHealthBehaviorBase" FullName="System.ServiceModel.Description.ServiceHealthBehaviorBase">
+  <TypeSignature Language="C#" Value="public abstract class ServiceHealthBehaviorBase : System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ServiceHealthBehaviorBase extends System.Object implements class System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceHealthBehaviorBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ServiceHealthBehaviorBase&#xA;Implements IServiceBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceHealthBehaviorBase abstract : System::ServiceModel::Description::IServiceBehavior" />
+  <TypeSignature Language="F#" Value="type ServiceHealthBehaviorBase = class&#xA;    interface IServiceBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Description.IServiceBehavior</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ServiceHealthBehaviorBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthBehaviorBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ServiceHealthBehaviorBase();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HandleHealthRequest">
+      <MemberSignature Language="C#" Value="public abstract void HandleHealthRequest (System.ServiceModel.ServiceHostBase serviceHost, System.ServiceModel.Channels.Message httpGetRequest, string[] queries, out System.ServiceModel.Channels.Message replyMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void HandleHealthRequest(class System.ServiceModel.ServiceHostBase serviceHost, class System.ServiceModel.Channels.Message httpGetRequest, string[] queries, [out] class System.ServiceModel.Channels.Message&amp; replyMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthBehaviorBase.HandleHealthRequest(System.ServiceModel.ServiceHostBase,System.ServiceModel.Channels.Message,System.String[],System.ServiceModel.Channels.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub HandleHealthRequest (serviceHost As ServiceHostBase, httpGetRequest As Message, queries As String(), ByRef replyMessage As Message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void HandleHealthRequest(System::ServiceModel::ServiceHostBase ^ serviceHost, System::ServiceModel::Channels::Message ^ httpGetRequest, cli::array &lt;System::String ^&gt; ^ queries, [Runtime::InteropServices::Out] System::ServiceModel::Channels::Message ^ % replyMessage);" />
+      <MemberSignature Language="F#" Value="abstract member HandleHealthRequest : System.ServiceModel.ServiceHostBase * System.ServiceModel.Channels.Message * string[] *  -&gt; unit" Usage="serviceHealthBehaviorBase.HandleHealthRequest (serviceHost, httpGetRequest, queries, replyMessage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceHost" Type="System.ServiceModel.ServiceHostBase" />
+        <Parameter Name="httpGetRequest" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="queries" Type="System.String[]" />
+        <Parameter Name="replyMessage" Type="System.ServiceModel.Channels.Message" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="serviceHost">To be added.</param>
+        <param name="httpGetRequest">To be added.</param>
+        <param name="queries">To be added.</param>
+        <param name="replyMessage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HealthDetailsEnabled">
+      <MemberSignature Language="C#" Value="public bool HealthDetailsEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HealthDetailsEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthBehaviorBase.HealthDetailsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property HealthDetailsEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HealthDetailsEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HealthDetailsEnabled : bool with get, set" Usage="System.ServiceModel.Description.ServiceHealthBehaviorBase.HealthDetailsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpGetBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Binding HttpGetBinding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.Binding HttpGetBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpGetBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Property HttpGetBinding As Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::Binding ^ HttpGetBinding { System::ServiceModel::Channels::Binding ^ get(); void set(System::ServiceModel::Channels::Binding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpGetBinding : System.ServiceModel.Channels.Binding with get, set" Usage="System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpGetBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Binding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpGetEnabled">
+      <MemberSignature Language="C#" Value="public bool HttpGetEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HttpGetEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpGetEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property HttpGetEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HttpGetEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpGetEnabled : bool with get, set" Usage="System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpGetEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpGetUrl">
+      <MemberSignature Language="C#" Value="public Uri HttpGetUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri HttpGetUrl" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpGetUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property HttpGetUrl As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ HttpGetUrl { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpGetUrl : Uri with get, set" Usage="System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpGetUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.UriTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpsGetBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Binding HttpsGetBinding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.Binding HttpsGetBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpsGetBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Property HttpsGetBinding As Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::Binding ^ HttpsGetBinding { System::ServiceModel::Channels::Binding ^ get(); void set(System::ServiceModel::Channels::Binding ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpsGetBinding : System.ServiceModel.Channels.Binding with get, set" Usage="System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpsGetBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Binding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpsGetEnabled">
+      <MemberSignature Language="C#" Value="public bool HttpsGetEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HttpsGetEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpsGetEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property HttpsGetEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HttpsGetEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpsGetEnabled : bool with get, set" Usage="System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpsGetEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpsGetUrl">
+      <MemberSignature Language="C#" Value="public Uri HttpsGetUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri HttpsGetUrl" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpsGetUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property HttpsGetUrl As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ HttpsGetUrl { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpsGetUrl : Uri with get, set" Usage="System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpsGetUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.UriTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceStartTime">
+      <MemberSignature Language="C#" Value="protected DateTimeOffset ServiceStartTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset ServiceStartTime" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthBehaviorBase.ServiceStartTime" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ServiceStartTime As DateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property DateTimeOffset ServiceStartTime { DateTimeOffset get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceStartTime : DateTimeOffset" Usage="System.ServiceModel.Description.ServiceHealthBehaviorBase.ServiceStartTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IServiceBehavior.AddBindingParameters">
+      <MemberSignature Language="C#" Value="void IServiceBehavior.AddBindingParameters (System.ServiceModel.Description.ServiceDescription description, System.ServiceModel.ServiceHostBase serviceHostBase, System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, System.ServiceModel.Channels.BindingParameterCollection parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthBehaviorBase.System#ServiceModel#Description#IServiceBehavior#AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(System::ServiceModel::Description::ServiceDescription ^ description, System::ServiceModel::ServiceHostBase ^ serviceHostBase, System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::ServiceEndpoint ^&gt; ^ endpoints, System::ServiceModel::Channels::BindingParameterCollection ^ parameters) = System::ServiceModel::Description::IServiceBehavior::AddBindingParameters;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="description" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+        <Parameter Name="endpoints" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt;" />
+        <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
+      </Parameters>
+      <Docs>
+        <param name="description">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <param name="endpoints">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior">
+      <MemberSignature Language="C#" Value="void IServiceBehavior.ApplyDispatchBehavior (System.ServiceModel.Description.ServiceDescription description, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthBehaviorBase.System#ServiceModel#Description#IServiceBehavior#ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(System::ServiceModel::Description::ServiceDescription ^ description, System::ServiceModel::ServiceHostBase ^ serviceHostBase) = System::ServiceModel::Description::IServiceBehavior::ApplyDispatchBehavior;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="description" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="description">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IServiceBehavior.Validate">
+      <MemberSignature Language="C#" Value="void IServiceBehavior.Validate (System.ServiceModel.Description.ServiceDescription description, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.Validate(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthBehaviorBase.System#ServiceModel#Description#IServiceBehavior#Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IServiceBehavior.Validate(System::ServiceModel::Description::ServiceDescription ^ description, System::ServiceModel::ServiceHostBase ^ serviceHostBase) = System::ServiceModel::Description::IServiceBehavior::Validate;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="description" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="description">To be added.</param>
+        <param name="serviceHostBase">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

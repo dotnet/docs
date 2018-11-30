@@ -37,6 +37,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AutoConfigUrlRetryInterval">
+      <MemberSignature Language="C#" Value="public int AutoConfigUrlRetryInterval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AutoConfigUrlRetryInterval" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.WebProxyScriptElement.AutoConfigUrlRetryInterval" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoConfigUrlRetryInterval As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AutoConfigUrlRetryInterval { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoConfigUrlRetryInterval : int with get, set" Usage="System.Net.Configuration.WebProxyScriptElement.AutoConfigUrlRetryInterval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.8">
+          <AttributeName>System.Configuration.ConfigurationProperty("autoConfigUrlRetryInterval", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DownloadTimeout">
       <MemberSignature Language="C#" Value="public TimeSpan DownloadTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DownloadTimeout" />

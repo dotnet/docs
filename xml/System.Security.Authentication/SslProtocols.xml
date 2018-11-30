@@ -283,5 +283,31 @@
         <summary>Specifies the TLS 1.2 security protocol. The TLS protocol is defined in IETF RFC 5246.</summary>
       </Docs>
     </Member>
+    <Member MemberName="Tls13">
+      <MemberSignature Language="C#" Value="Tls13" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.SslProtocols Tls13 = int32(12288)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Authentication.SslProtocols.Tls13" />
+      <MemberSignature Language="VB.NET" Value="Tls13" />
+      <MemberSignature Language="C++ CLI" Value="Tls13" />
+      <MemberSignature Language="F#" Value="Tls13 = 12288" Usage="System.Security.Authentication.SslProtocols.Tls13" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Authentication.SslProtocols</ReturnType>
+      </ReturnValue>
+      <MemberValue>12288</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
   </Members>
 </Type>

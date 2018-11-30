@@ -618,8 +618,7 @@
         <summary>Copies both the structure and data for this <see cref="T:System.Data.DataSet" />.</summary>
         <returns>A new <see cref="T:System.Data.DataSet" /> with the same structure (table schemas, relations, and constraints) and data as this <see cref="T:System.Data.DataSet" />.  
   
- <block subset="none" type="note">
- <para>  
+ <block subset="none" type="note"><para>  
  If these classes have been subclassed, the copy will also be of the same subclasses.  
   
 </para></block></returns>

@@ -143,7 +143,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether a generic method contains unassigned generic type parameters.</summary>
-        <value><see langword="true" /> if the current <see cref="T:System.Reflection.MethodInfo" /> contains unassigned generic type parameters; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the current <see cref="T:System.Reflection.MethodInfo" /> contains unassigned generic type parameters; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[
 
@@ -761,7 +762,8 @@ public:
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the current <see cref="T:System.Reflection.MethodInfo" /> represents the definition of a generic method.</summary>
-        <value><see langword="true" /> if the <see cref="T:System.Reflection.MethodInfo" /> object represents the definition of a generic method; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Reflection.MethodInfo" /> object represents the definition of a generic method; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[
 

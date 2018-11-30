@@ -644,7 +644,8 @@
       <Docs>
         <param name="value">The <see cref="T:System.Windows.Media.Geometry" /> to remove from this <see cref="T:System.Windows.Media.GeometryCollection" />.</param>
         <summary>Removes the first occurrence of the specified <see cref="T:System.Windows.Media.Geometry" /> from this <see cref="T:System.Windows.Media.GeometryCollection" />.</summary>
-        <returns><see langword="true" /> if <paramref name="value" /> was removed from the collection; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> was removed from the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,4 @@
-<Type Name="IList&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.IList&lt;TValue&gt;">
+﻿<Type Name="IList&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.IList&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public interface IList&lt;TValue&gt; : ICloneable, Microsoft.VisualC.StlClr.Generic.IBidirectionalContainer&lt;TValue&gt;, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IList`1&lt;TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IBidirectionalContainer`1&lt;!TValue&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.IList`1" />
@@ -619,7 +619,6 @@ For more information, see [list::erase (STL/CLR)](/cpp/dotnet/list-stl-clr#erase
         <param name="_Count">The number of elements to insert into the container.</param>
         <param name="_Val">The value of the element to insert into the container.</param>
         <summary>Inserts an element of the given value into the container.</summary>
-        <returns>An iterator.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
 

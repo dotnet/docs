@@ -1,4 +1,4 @@
-<Type Name="IVector&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.IVector&lt;TValue&gt;">
+﻿<Type Name="IVector&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.IVector&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public interface IVector&lt;TValue&gt; : ICloneable, Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer&lt;TValue&gt;, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IVector`1&lt;TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer`1&lt;!TValue&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.IVector`1" />
@@ -705,7 +705,6 @@ For more information, see [vector::erase (STL/CLR)](/cpp/dotnet/vector-stl-clr#e
         <param name="_Count">The number of elements to insert into the container.</param>
         <param name="_Val">The value of the element to insert into the container.</param>
         <summary>Inserts the specified value into the container.</summary>
-        <returns>An iterator.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
 

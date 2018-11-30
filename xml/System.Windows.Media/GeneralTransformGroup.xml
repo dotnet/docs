@@ -279,7 +279,8 @@
         <param name="inPoint">The point to transform.</param>
         <param name="result">The result of transforming <paramref name="inPoint" />.</param>
         <summary>Attempts to transform the specified point.</summary>
-        <returns><see langword="true" /> if <paramref name="inPoint" /> was transformed; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="inPoint" /> was transformed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Media.GeneralTransform.TryTransform(System.Windows.Point,System.Windows.Point@)" />
         <altmember cref="M:System.Windows.Media.GeneralTransform.Transform(System.Windows.Point)" />

@@ -387,7 +387,8 @@
       <Parameters />
       <Docs>
         <summary>Determines whether the serviced component is activated in the default context. Serviced components that do not have COM+ catalog information are activated in the default context.</summary>
-        <returns><see langword="true" /> if the serviced component is activated in the default context; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the serviced component is activated in the default context; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

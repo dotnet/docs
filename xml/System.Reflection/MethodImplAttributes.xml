@@ -611,6 +611,35 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <Member MemberName="SecurityMitigations">
+      <MemberSignature Language="C#" Value="SecurityMitigations" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes SecurityMitigations = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.SecurityMitigations" />
+      <MemberSignature Language="VB.NET" Value="SecurityMitigations" />
+      <MemberSignature Language="C++ CLI" Value="SecurityMitigations" />
+      <MemberSignature Language="F#" Value="SecurityMitigations = 1024" Usage="System.Reflection.MethodImplAttributes.SecurityMitigations" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
+      </ReturnValue>
+      <MemberValue>1024</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="Synchronized">
       <MemberSignature Language="C#" Value="Synchronized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes Synchronized = int32(32)" />

@@ -66,7 +66,8 @@
         <param name="td">Describes the context information of a type.</param>
         <param name="t">The type of the source that is being evaluated for conversion.</param>
         <summary>Determines whether an object can be converted from a given type to an instance of a <see cref="T:System.Windows.Media.Color" />.</summary>
-        <returns><see langword="true" /> if the type can be converted to a <see cref="T:System.Windows.Media.Color" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the type can be converted to a <see cref="T:System.Windows.Media.Color" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +95,8 @@
         <param name="context">Describes the context information of a type.</param>
         <param name="destinationType">The desired type this <see cref="T:System.Windows.Media.Color" /> is being evaluated for conversion.</param>
         <summary>Determines whether an instance of a <see cref="T:System.Windows.Media.Color" /> can be converted to a different type.</summary>
-        <returns><see langword="true" /> if this <see cref="T:System.Windows.Media.Color" /> can be converted to <paramref name="destinationType" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Windows.Media.Color" /> can be converted to <paramref name="destinationType" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

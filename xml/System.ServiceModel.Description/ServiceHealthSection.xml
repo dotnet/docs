@@ -1,0 +1,148 @@
+﻿<Type Name="ServiceHealthSection" FullName="System.ServiceModel.Description.ServiceHealthSection">
+  <TypeSignature Language="C#" Value="public sealed class ServiceHealthSection : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceHealthDataCollection&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceHealthSection extends System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ServiceHealthDataCollection&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceHealthSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceHealthSection&#xA;Inherits Collection(Of ServiceHealthDataCollection)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceHealthSection sealed : System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::ServiceHealthDataCollection ^&gt;" />
+  <TypeSignature Language="F#" Value="type ServiceHealthSection = class&#xA;    inherit Collection&lt;ServiceHealthDataCollection&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceHealthDataCollection&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.ServiceModel.Description.ServiceHealthDataCollection</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceHealthSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceHealthSection();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceHealthSection (string title);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthSection.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (title As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceHealthSection(System::String ^ title);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ServiceHealthSection : string -&gt; System.ServiceModel.Description.ServiceHealthSection" Usage="new System.ServiceModel.Description.ServiceHealthSection title" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="title">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundColor">
+      <MemberSignature Language="C#" Value="public string BackgroundColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BackgroundColor" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthSection.BackgroundColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackgroundColor As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BackgroundColor { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BackgroundColor : string with get, set" Usage="System.ServiceModel.Description.ServiceHealthSection.BackgroundColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateElementsCollection">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceHealthDataCollection CreateElementsCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceHealthDataCollection CreateElementsCollection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthSection.CreateElementsCollection" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateElementsCollection () As ServiceHealthDataCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceHealthDataCollection ^ CreateElementsCollection();" />
+      <MemberSignature Language="F#" Value="member this.CreateElementsCollection : unit -&gt; System.ServiceModel.Description.ServiceHealthDataCollection" Usage="serviceHealthSection.CreateElementsCollection " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ServiceHealthDataCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForegroundColor">
+      <MemberSignature Language="C#" Value="public string ForegroundColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ForegroundColor" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthSection.ForegroundColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForegroundColor As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ForegroundColor { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ForegroundColor : string with get, set" Usage="System.ServiceModel.Description.ServiceHealthSection.ForegroundColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceHealthSection.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.ServiceModel.Description.ServiceHealthSection.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

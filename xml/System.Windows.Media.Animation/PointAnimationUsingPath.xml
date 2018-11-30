@@ -171,7 +171,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that specifies whether the animation's output value is added to the base value of the property being animated.</summary>
-        <value><see langword="true" /> if the animation adds its output value to the base value of the property being animated instead of replacing it; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the animation adds its output value to the base value of the property being animated instead of replacing it; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -210,7 +211,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that specifies whether the animation's value accumulates when it repeats.</summary>
-        <value><see langword="true" /> if the animation accumulates its values when its <see cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" /> property causes it to repeat its simple duration. otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the animation accumulates its values when its <see cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" /> property causes it to repeat its simple duration. otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

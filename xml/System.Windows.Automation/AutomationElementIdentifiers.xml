@@ -291,6 +291,26 @@
         <altmember cref="F:System.Windows.Automation.AutomationElement.ClickablePointProperty" />
       </Docs>
     </Member>
+    <Member MemberName="ControllerForProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty ControllerForProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty ControllerForProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElementIdentifiers.ControllerForProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ControllerForProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ ControllerForProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ControllerForProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElementIdentifiers.ControllerForProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ControlTypeProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty ControlTypeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty ControlTypeProperty" />
@@ -1600,6 +1620,26 @@ This identifier is for use by UI automation providers.
         <altmember cref="F:System.Windows.Automation.AutomationElement.OrientationProperty" />
       </Docs>
     </Member>
+    <Member MemberName="PositionInSetProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty PositionInSetProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty PositionInSetProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElementIdentifiers.PositionInSetProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PositionInSetProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ PositionInSetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PositionInSetProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElementIdentifiers.PositionInSetProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ProcessIdProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty ProcessIdProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty ProcessIdProperty" />
@@ -1657,6 +1697,26 @@ This identifier is for use by UI automation providers.
         </remarks>
         <altmember cref="F:System.Windows.Automation.AutomationElement.RuntimeIdProperty" />
         <altmember cref="M:System.Windows.Automation.Provider.IRawElementProviderFragment.GetRuntimeId" />
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOfSetProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty SizeOfSetProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty SizeOfSetProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElementIdentifiers.SizeOfSetProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SizeOfSetProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ SizeOfSetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SizeOfSetProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.AutomationElementIdentifiers.SizeOfSetProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StructureChangedEvent">

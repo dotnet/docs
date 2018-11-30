@@ -1,4 +1,4 @@
-<Type Name="WebOperationContext" FullName="System.ServiceModel.Web.WebOperationContext">
+﻿<Type Name="WebOperationContext" FullName="System.ServiceModel.Web.WebOperationContext">
   <TypeSignature Language="C#" Value="public class WebOperationContext : System.ServiceModel.IExtension&lt;System.ServiceModel.OperationContext&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebOperationContext extends System.Object implements class System.ServiceModel.IExtension`1&lt;class System.ServiceModel.OperationContext&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.WebOperationContext" />
@@ -85,7 +85,7 @@
       </Parameters>
       <Docs>
         <param name="context">To be added.</param>
-        <summary>Attaches the current <see cref="T:System.ServiceModel.Web.WebOperationContext" /> instance to the specified <see cref="T:System.ServiceModel.OperationContext" /> instance.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -680,7 +680,7 @@
       </Parameters>
       <Docs>
         <param name="context">To be added.</param>
-        <summary>Detaches the current <see cref="T:System.ServiceModel.Web.WebOperationContext" /> instance from the specified <see cref="T:System.ServiceModel.OperationContext" /> instance.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

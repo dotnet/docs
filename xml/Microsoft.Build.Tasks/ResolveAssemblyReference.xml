@@ -365,8 +365,7 @@
   
  If the parent reference from the project file is in the GAC then we will not copy the dependency locally.  
   
- <block subset="none" type="note">
- <para>  
+ <block subset="none" type="note"><para>  
  If there are multiple parent reference and ANY of them does not come from the GAC then we will set copy local to true.  
   
 </para></block></value>

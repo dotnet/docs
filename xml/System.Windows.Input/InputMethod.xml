@@ -57,7 +57,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether or not this input method can display configuration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].</summary>
-        <value><see langword="true" /> if configuration [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] can be displayed; otherwise, <see langword="false" />.  
+        <value>
+          <see langword="true" /> if configuration [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] can be displayed; otherwise, <see langword="false" />.  
   
  This property has no default value.</value>
         <remarks>
@@ -98,7 +99,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether this input method can display word registration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].</summary>
-        <value><see langword="true" /> if word registration [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] can be displayed; otherwise, <see langword="false" />.  
+        <value>
+          <see langword="true" /> if word registration [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] can be displayed; otherwise, <see langword="false" />.  
   
  This property has no default value.</value>
         <remarks>To be added.</remarks>

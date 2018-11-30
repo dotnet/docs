@@ -277,8 +277,7 @@
         <value>
           <see langword="true" /> to do character checking; otherwise <see langword="false" />. The default is <see langword="true" />.  
   
- <block subset="none" type="note">
- <para>  
+ <block subset="none" type="note"><para>  
  If the <see cref="T:System.Xml.XmlReader" /> is processing text data, it always checks that the XML names and text content are valid, regardless of the property setting. Setting <see cref="P:System.Xml.XmlReaderSettings.CheckCharacters" /> to <see langword="false" /> turns off character checking for character entity references.  
   
 </para></block></value>

@@ -40,7 +40,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.HandwritingState" /> property changed.</summary>
-        <value><see langword="true" /> if the <see cref="P:System.Windows.Input.InputMethod.HandwritingState" /> property changed; otherwise, <see langword="false" />.  
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Input.InputMethod.HandwritingState" /> property changed; otherwise, <see langword="false" />.  
   
  This property has no default value.</value>
         <remarks>To be added.</remarks>
@@ -64,7 +65,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.ImeConversionMode" /> property changed.</summary>
-        <value><see langword="true" /> if the <see cref="P:System.Windows.Input.InputMethod.ImeConversionMode" /> property changed; otherwise, <see langword="false" />.  
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Input.InputMethod.ImeConversionMode" /> property changed; otherwise, <see langword="false" />.  
   
  This property has no default value.</value>
         <remarks>To be added.</remarks>
@@ -88,7 +90,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.ImeSentenceMode" /> property changed.</summary>
-        <value><see langword="true" /> if the <see cref="P:System.Windows.Input.InputMethod.ImeSentenceMode" /> property changed; otherwise, <see langword="false" />.  
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Input.InputMethod.ImeSentenceMode" /> property changed; otherwise, <see langword="false" />.  
   
  This property has no default value.</value>
         <remarks>To be added.</remarks>
@@ -112,7 +115,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.ImeState" /> property changed.</summary>
-        <value><see langword="true" /> if the <see cref="P:System.Windows.Input.InputMethod.ImeState" /> property changed; otherwise, <see langword="false" />.  
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Input.InputMethod.ImeState" /> property changed; otherwise, <see langword="false" />.  
   
  This property has no default value.</value>
         <remarks>To be added.</remarks>
@@ -136,7 +140,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.MicrophoneState" /> property changed.</summary>
-        <value><see langword="true" /> if the <see cref="P:System.Windows.Input.InputMethod.MicrophoneState" /> property changed; otherwise, <see langword="false" />.  
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Input.InputMethod.MicrophoneState" /> property changed; otherwise, <see langword="false" />.  
   
  This property has no default value.</value>
         <remarks>To be added.</remarks>
@@ -160,7 +165,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.SpeechMode" /> property changed.</summary>
-        <value><see langword="true" /> if the <see cref="P:System.Windows.Input.InputMethod.SpeechMode" /> property changed; otherwise, <see langword="false" />.  
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Input.InputMethod.SpeechMode" /> property changed; otherwise, <see langword="false" />.  
   
  This property has no default value.</value>
         <remarks>To be added.</remarks>

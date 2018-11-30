@@ -4183,7 +4183,8 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
       <Parameters />
       <Docs>
         <summary>For a description of this member, see <see cref="M:System.Xml.IXmlLineInfo.HasLineInfo" />.</summary>
-        <returns><see langword="true" /> if <see cref="P:System.Xml.IXmlLineInfo.LineNumber" /> and <see cref="P:System.Xml.IXmlLineInfo.LinePosition" /> can be provided; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <see cref="P:System.Xml.IXmlLineInfo.LineNumber" /> and <see cref="P:System.Xml.IXmlLineInfo.LinePosition" /> can be provided; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
 

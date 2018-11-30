@@ -266,6 +266,32 @@
         <summary>The method signature is exported exactly as declared.</summary>
       </Docs>
     </Member>
+    <Member MemberName="SecurityMitigations">
+      <MemberSignature Language="C#" Value="SecurityMitigations" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.CompilerServices.MethodImplOptions SecurityMitigations = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.MethodImplOptions.SecurityMitigations" />
+      <MemberSignature Language="VB.NET" Value="SecurityMitigations" />
+      <MemberSignature Language="C++ CLI" Value="SecurityMitigations" />
+      <MemberSignature Language="F#" Value="SecurityMitigations = 1024" Usage="System.Runtime.CompilerServices.MethodImplOptions.SecurityMitigations" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.MethodImplOptions</ReturnType>
+      </ReturnValue>
+      <MemberValue>1024</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="Synchronized">
       <MemberSignature Language="C#" Value="Synchronized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.CompilerServices.MethodImplOptions Synchronized = int32(32)" />

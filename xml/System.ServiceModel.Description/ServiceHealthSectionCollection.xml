@@ -1,0 +1,123 @@
+﻿<Type Name="ServiceHealthSectionCollection" FullName="System.ServiceModel.Description.ServiceHealthSectionCollection">
+  <TypeSignature Language="C#" Value="public sealed class ServiceHealthSectionCollection : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceHealthSection&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceHealthSectionCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ServiceHealthSection&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceHealthSectionCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceHealthSectionCollection&#xA;Inherits Collection(Of ServiceHealthSection)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceHealthSectionCollection sealed : System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::ServiceHealthSection ^&gt;" />
+  <TypeSignature Language="F#" Value="type ServiceHealthSectionCollection = class&#xA;    inherit Collection&lt;ServiceHealthSection&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceHealthSection&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.ServiceModel.Description.ServiceHealthSection</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceHealthSectionCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthSectionCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceHealthSectionCollection();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSection">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceHealthSection CreateSection (string title);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceHealthSection CreateSection(string title) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthSectionCollection.CreateSection(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateSection (title As String) As ServiceHealthSection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceHealthSection ^ CreateSection(System::String ^ title);" />
+      <MemberSignature Language="F#" Value="member this.CreateSection : string -&gt; System.ServiceModel.Description.ServiceHealthSection" Usage="serviceHealthSectionCollection.CreateSection title" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ServiceHealthSection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="title">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSection">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceHealthSection CreateSection (string title, string backgroundColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceHealthSection CreateSection(string title, string backgroundColor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthSectionCollection.CreateSection(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateSection (title As String, backgroundColor As String) As ServiceHealthSection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceHealthSection ^ CreateSection(System::String ^ title, System::String ^ backgroundColor);" />
+      <MemberSignature Language="F#" Value="member this.CreateSection : string * string -&gt; System.ServiceModel.Description.ServiceHealthSection" Usage="serviceHealthSectionCollection.CreateSection (title, backgroundColor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ServiceHealthSection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="backgroundColor" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="title">To be added.</param>
+        <param name="backgroundColor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSection">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceHealthSection CreateSection (string title, string backgroundColor, string foregroundColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceHealthSection CreateSection(string title, string backgroundColor, string foregroundColor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthSectionCollection.CreateSection(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateSection (title As String, backgroundColor As String, foregroundColor As String) As ServiceHealthSection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceHealthSection ^ CreateSection(System::String ^ title, System::String ^ backgroundColor, System::String ^ foregroundColor);" />
+      <MemberSignature Language="F#" Value="member this.CreateSection : string * string * string -&gt; System.ServiceModel.Description.ServiceHealthSection" Usage="serviceHealthSectionCollection.CreateSection (title, backgroundColor, foregroundColor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ServiceHealthSection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="backgroundColor" Type="System.String" />
+        <Parameter Name="foregroundColor" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="title">To be added.</param>
+        <param name="backgroundColor">To be added.</param>
+        <param name="foregroundColor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

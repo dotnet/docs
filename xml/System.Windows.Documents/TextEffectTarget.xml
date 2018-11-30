@@ -156,7 +156,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that determines whether the text effect is enabled on the target element</summary>
-        <value><see langword="true" /> if the <see cref="T:System.Windows.Media.TextEffect" /> is enabled on the target; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.TextEffect" /> is enabled on the target; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

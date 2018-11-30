@@ -1,0 +1,120 @@
+﻿<Type Name="ServiceHealthDataCollection" FullName="System.ServiceModel.Description.ServiceHealthDataCollection">
+  <TypeSignature Language="C#" Value="public sealed class ServiceHealthDataCollection : System.Collections.ObjectModel.KeyedCollection&lt;string,System.ServiceModel.Description.ServiceHealthData&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceHealthDataCollection extends System.Collections.ObjectModel.KeyedCollection`2&lt;string, class System.ServiceModel.Description.ServiceHealthData&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceHealthDataCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceHealthDataCollection&#xA;Inherits KeyedCollection(Of String, ServiceHealthData)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceHealthDataCollection sealed : System::Collections::ObjectModel::KeyedCollection&lt;System::String ^, System::ServiceModel::Description::ServiceHealthData ^&gt;" />
+  <TypeSignature Language="F#" Value="type ServiceHealthDataCollection = class&#xA;    inherit KeyedCollection&lt;string, ServiceHealthData&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.KeyedCollection&lt;System.String,System.ServiceModel.Description.ServiceHealthData&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.String</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!1">System.ServiceModel.Description.ServiceHealthData</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceHealthDataCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthDataCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceHealthDataCollection();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string key, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string key, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthDataCollection.Add(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ key, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * string -&gt; unit" Usage="serviceHealthDataCollection.Add (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string key, string[] values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string key, string[] values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthDataCollection.Add(System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, values As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ key, cli::array &lt;System::String ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * string[] -&gt; unit" Usage="serviceHealthDataCollection.Add (key, values)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="values" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKeyForItem">
+      <MemberSignature Language="C#" Value="protected override string GetKeyForItem (System.ServiceModel.Description.ServiceHealthData element);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetKeyForItem(class System.ServiceModel.Description.ServiceHealthData element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthDataCollection.GetKeyForItem(System.ServiceModel.Description.ServiceHealthData)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (element As ServiceHealthData) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetKeyForItem(System::ServiceModel::Description::ServiceHealthData ^ element);" />
+      <MemberSignature Language="F#" Value="abstract member GetKeyForItem : System.ServiceModel.Description.ServiceHealthData -&gt; string&#xA;override this.GetKeyForItem : System.ServiceModel.Description.ServiceHealthData -&gt; string" Usage="serviceHealthDataCollection.GetKeyForItem element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.ServiceModel.Description.ServiceHealthData" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

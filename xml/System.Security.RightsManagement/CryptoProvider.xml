@@ -140,7 +140,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the user has rights to decrypt.</summary>
-        <value><see langword="true" /> if the <see cref="T:System.Security.RightsManagement.UseLicense" /> grants the user rights to decrypt; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Security.RightsManagement.UseLicense" /> grants the user rights to decrypt; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -179,7 +180,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the user has rights to encrypt.</summary>
-        <value><see langword="true" /> if the <see cref="T:System.Security.RightsManagement.UseLicense" /> grants the user rights to encrypt; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Security.RightsManagement.UseLicense" /> grants the user rights to encrypt; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -210,7 +212,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> and <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" /> can accept buffers that are different block sizes in length.</summary>
-        <value><see langword="true" /> if the buffer passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> can be a different length from the buffer passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" />; otherwise, <see langword="false" /> if the buffers passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> and <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" /> must be the exact same length.  For AES the default is <see langword="true" />.</value>
+        <value>
+          <see langword="true" /> if the buffer passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> can be a different length from the buffer passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" />; otherwise, <see langword="false" /> if the buffers passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> and <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" /> must be the exact same length.  For AES the default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -177,7 +177,8 @@
       <Docs>
         <param name="item">An item to query for the presence of in the collection.</param>
         <summary>Queries for the presence of a specified item in the collection.</summary>
-        <returns><see langword="true" /> if the specified <paramref name="item" /> is present in the collection; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the specified <paramref name="item" /> is present in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -470,7 +471,8 @@
       <Docs>
         <param name="item">An item to remove from the collection.</param>
         <summary>Removes a specified item from the collection.</summary>
-        <returns><see langword="true" /> if the specified item was found and removed; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the specified item was found and removed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

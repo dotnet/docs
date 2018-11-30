@@ -1,4 +1,4 @@
-<Type Name="ReverseBidirectionalIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;">
+﻿<Type Name="ReverseBidirectionalIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public class ReverseBidirectionalIterator&lt;TValue&gt; : Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator&lt;TValue&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReverseBidirectionalIterator`1&lt;TValue&gt; extends System.Object implements class Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator`1&lt;!TValue&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" />
@@ -323,7 +323,7 @@
         <summary>Gets the node, or element, that the iterator is pointing to.</summary>
         <returns>The node that the iterator is pointing to.</returns>
         <remarks>To be added.</remarks>
-     </Docs>
+      </Docs>
     </Member>
     <Member MemberName="get_ref">
       <MemberSignature Language="C#" Value="public virtual TValue get_ref ();" />
@@ -617,7 +617,7 @@
         <summary>Increments the iterator by one element. Incrementing a reverse iterator is the same as decrementing a regular iterator. This is the postfix version of the increment operator.</summary>
         <returns>An iterator.</returns>
         <remarks>To be added.</remarks>
-     </Docs>
+      </Docs>
     </Member>
     <MemberGroup MemberName="op_Inequality">
       <AssemblyInfo>

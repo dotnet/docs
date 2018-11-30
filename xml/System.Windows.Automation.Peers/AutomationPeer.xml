@@ -499,6 +499,50 @@
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>
+    <Member MemberName="GetControlledPeers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt; GetControlledPeers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;class System.Windows.Automation.Peers.AutomationPeer&gt; GetControlledPeers() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.AutomationPeer.GetControlledPeers" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetControlledPeers () As List(Of AutomationPeer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetControlledPeers();" />
+      <MemberSignature Language="F#" Value="member this.GetControlledPeers : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="automationPeer.GetControlledPeers " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetControlledPeersCore">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt; GetControlledPeersCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.List`1&lt;class System.Windows.Automation.Peers.AutomationPeer&gt; GetControlledPeersCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.AutomationPeer.GetControlledPeersCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetControlledPeersCore () As List(Of AutomationPeer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetControlledPeersCore();" />
+      <MemberSignature Language="F#" Value="abstract member GetControlledPeersCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;&#xA;override this.GetControlledPeersCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="automationPeer.GetControlledPeersCore " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetHelpText">
       <MemberSignature Language="C#" Value="public string GetHelpText ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetHelpText() cil managed" />
@@ -1091,6 +1135,94 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <param name="point">The position on the screen to get the <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> from.</param>
         <summary>When overridden in a derived class, is called from <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetPeerFromPoint(System.Windows.Point)" />.</summary>
         <returns>The <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> at the specified point.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPositionInSet">
+      <MemberSignature Language="C#" Value="public int GetPositionInSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetPositionInSet() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.AutomationPeer.GetPositionInSet" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPositionInSet () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetPositionInSet();" />
+      <MemberSignature Language="F#" Value="member this.GetPositionInSet : unit -&gt; int" Usage="automationPeer.GetPositionInSet " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPositionInSetCore">
+      <MemberSignature Language="C#" Value="protected virtual int GetPositionInSetCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 GetPositionInSetCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.AutomationPeer.GetPositionInSetCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetPositionInSetCore () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int GetPositionInSetCore();" />
+      <MemberSignature Language="F#" Value="abstract member GetPositionInSetCore : unit -&gt; int&#xA;override this.GetPositionInSetCore : unit -&gt; int" Usage="automationPeer.GetPositionInSetCore " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSizeOfSet">
+      <MemberSignature Language="C#" Value="public int GetSizeOfSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetSizeOfSet() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.AutomationPeer.GetSizeOfSet" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSizeOfSet () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetSizeOfSet();" />
+      <MemberSignature Language="F#" Value="member this.GetSizeOfSet : unit -&gt; int" Usage="automationPeer.GetSizeOfSet " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSizeOfSetCore">
+      <MemberSignature Language="C#" Value="protected virtual int GetSizeOfSetCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 GetSizeOfSetCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.AutomationPeer.GetSizeOfSetCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetSizeOfSetCore () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int GetSizeOfSetCore();" />
+      <MemberSignature Language="F#" Value="abstract member GetSizeOfSetCore : unit -&gt; int&#xA;override this.GetSizeOfSetCore : unit -&gt; int" Usage="automationPeer.GetSizeOfSetCore " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

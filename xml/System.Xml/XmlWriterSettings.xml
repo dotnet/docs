@@ -864,8 +864,7 @@ using (StreamWriter output =
         <value>
           <see langword="true" /> to write attributes on individual lines; otherwise, <see langword="false" />. The default is <see langword="false" />.  
   
- <block subset="none" type="note">
- <para>  
+ <block subset="none" type="note"><para>  
  This setting has no effect when the <see cref="P:System.Xml.XmlWriterSettings.Indent" /> property value is <see langword="false" />.  
   
 </para></block>  

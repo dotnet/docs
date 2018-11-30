@@ -717,7 +717,8 @@
       <Docs>
         <param name="manager">A serialization service manager object for this object.</param>
         <summary>Returns a value that indicates whether or not the effective value of the <see cref="P:System.Windows.Documents.AnchoredBlock.Blocks" /> property should be serialized during serialization of an object deriving from <see cref="T:System.Windows.Documents.AnchoredBlock" />.</summary>
-        <returns><see langword="true" /> if the <see cref="P:System.Windows.Documents.AnchoredBlock.Blocks" /> property should be serialized; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Windows.Documents.AnchoredBlock.Blocks" /> property should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NullReferenceException">Raised when <paramref name="manager" /> is <see langword="null" />.</exception>
       </Docs>

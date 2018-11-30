@@ -538,6 +538,56 @@
         <related type="Article" href="https://msdn.microsoft.com/library/a6c31d7b-b33e-49b3-b5c1-31a345f9b7c8">UI Automation Properties Overview</related>
       </Docs>
     </Member>
+    <Member MemberName="GetPositionInSet">
+      <MemberSignature Language="C#" Value="public static int GetPositionInSet (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetPositionInSet(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetPositionInSet(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPositionInSet (element As DependencyObject) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetPositionInSet(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetPositionInSet : System.Windows.DependencyObject -&gt; int" Usage="System.Windows.Automation.AutomationProperties.GetPositionInSet element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSizeOfSet">
+      <MemberSignature Language="C#" Value="public static int GetSizeOfSet (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetSizeOfSet(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetSizeOfSet(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSizeOfSet (element As DependencyObject) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetSizeOfSet(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetSizeOfSet : System.Windows.DependencyObject -&gt; int" Usage="System.Windows.Automation.AutomationProperties.GetSizeOfSet element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="HelpText">
       <MemberSignature Language="C#" Value="see GetHelpText, and SetHelpText" />
       <MemberSignature Language="ILAsm" Value="see GetHelpText, and SetHelpText" />
@@ -1057,6 +1107,42 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="PositionInSet">
+      <MemberSignature Language="C#" Value="see GetPositionInSet, and SetPositionInSet" />
+      <MemberSignature Language="ILAsm" Value="see GetPositionInSet, and SetPositionInSet" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationProperties.PositionInSet" />
+      <MemberSignature Language="VB.NET" Value="see GetPositionInSet, and SetPositionInSet" />
+      <MemberSignature Language="F#" Value="see GetPositionInSet, and SetPositionInSet" Usage="see GetPositionInSet, and SetPositionInSet" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PositionInSetProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PositionInSetProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PositionInSetProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.PositionInSetProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PositionInSetProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PositionInSetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PositionInSetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Automation.AutomationProperties.PositionInSetProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetAcceleratorKey">
       <MemberSignature Language="C#" Value="public static void SetAcceleratorKey (System.Windows.DependencyObject element, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAcceleratorKey(class System.Windows.DependencyObject element, string value) cil managed" />
@@ -1417,6 +1503,94 @@
         <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.Name" /> attached property.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/a6c31d7b-b33e-49b3-b5c1-31a345f9b7c8">UI Automation Properties Overview</related>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPositionInSet">
+      <MemberSignature Language="C#" Value="public static void SetPositionInSet (System.Windows.DependencyObject element, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetPositionInSet(class System.Windows.DependencyObject element, int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetPositionInSet(System.Windows.DependencyObject,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPositionInSet (element As DependencyObject, value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetPositionInSet(System::Windows::DependencyObject ^ element, int value);" />
+      <MemberSignature Language="F#" Value="static member SetPositionInSet : System.Windows.DependencyObject * int -&gt; unit" Usage="System.Windows.Automation.AutomationProperties.SetPositionInSet (element, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSizeOfSet">
+      <MemberSignature Language="C#" Value="public static void SetSizeOfSet (System.Windows.DependencyObject element, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSizeOfSet(class System.Windows.DependencyObject element, int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetSizeOfSet(System.Windows.DependencyObject,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetSizeOfSet (element As DependencyObject, value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetSizeOfSet(System::Windows::DependencyObject ^ element, int value);" />
+      <MemberSignature Language="F#" Value="static member SetSizeOfSet : System.Windows.DependencyObject * int -&gt; unit" Usage="System.Windows.Automation.AutomationProperties.SetSizeOfSet (element, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOfSet">
+      <MemberSignature Language="C#" Value="see GetSizeOfSet, and SetSizeOfSet" />
+      <MemberSignature Language="ILAsm" Value="see GetSizeOfSet, and SetSizeOfSet" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationProperties.SizeOfSet" />
+      <MemberSignature Language="VB.NET" Value="see GetSizeOfSet, and SetSizeOfSet" />
+      <MemberSignature Language="F#" Value="see GetSizeOfSet, and SetSizeOfSet" Usage="see GetSizeOfSet, and SetSizeOfSet" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOfSetProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SizeOfSetProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SizeOfSetProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.SizeOfSetProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SizeOfSetProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SizeOfSetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SizeOfSetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Automation.AutomationProperties.SizeOfSetProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

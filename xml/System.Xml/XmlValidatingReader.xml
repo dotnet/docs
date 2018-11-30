@@ -1,4 +1,4 @@
-<Type Name="XmlValidatingReader" FullName="System.Xml.XmlValidatingReader">
+﻿<Type Name="XmlValidatingReader" FullName="System.Xml.XmlValidatingReader">
   <TypeSignature Language="C#" Value="public class XmlValidatingReader : System.Xml.XmlReader, System.Xml.IXmlLineInfo, System.Xml.IXmlNamespaceResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlValidatingReader extends System.Xml.XmlReader implements class System.Xml.IXmlLineInfo, class System.Xml.IXmlNamespaceResolver" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlValidatingReader" />
@@ -2776,8 +2776,7 @@ reader.MoveToAttribute("name");
         <summary>Reads the contents of an element or text node as a string.</summary>
         <returns>The contents of the element or text node. This can be an empty string if the reader is positioned on something other than an element or text node, or if there is no more text content to return in the current context.  
   
- <block subset="none" type="note">
- <para>  
+ <block subset="none" type="note"><para>  
  The text node can be either an element or an attribute text node.  
   
 </para></block></returns>
@@ -3154,7 +3153,8 @@ object obj = vreader.SchemaType;
       </ReturnValue>
       <Docs>
         <summary>Gets the <see cref="T:System.Xml.XmlReaderSettings" /> object that was used to create this <see cref="T:System.Xml.XmlValidatingReader" /> instance.</summary>
-        <value><see langword="null" /> because <see cref="T:System.Xml.XmlValidatingReader" /> objects are not instantiated using the <see cref="T:System.Xml.XmlReaderSettings" /> class and the <see cref="Overload:System.Xml.XmlReader.Create" /> method.</value>
+        <value>
+          <see langword="null" /> because <see cref="T:System.Xml.XmlValidatingReader" /> objects are not instantiated using the <see cref="T:System.Xml.XmlReaderSettings" /> class and the <see cref="Overload:System.Xml.XmlReader.Create" /> method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[
 
@@ -3195,7 +3195,8 @@ object obj = vreader.SchemaType;
       <Parameters />
       <Docs>
         <summary>Gets a value indicating whether the class can return line information.</summary>
-        <returns><see langword="true" /> if <see cref="P:System.Xml.IXmlLineInfo.LineNumber" /> and <see cref="P:System.Xml.IXmlLineInfo.LinePosition" /> can be provided; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <see cref="P:System.Xml.IXmlLineInfo.LineNumber" /> and <see cref="P:System.Xml.IXmlLineInfo.LinePosition" /> can be provided; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -186,7 +186,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether this figure can delay its placement in the flow of content.</summary>
-        <value><see langword="true" /> if this figure can delay placement; otherwise, <see langword="false" />.  The default value is <see langword="true" />.</value>
+        <value>
+          <see langword="true" /> if this figure can delay placement; otherwise, <see langword="false" />.  The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

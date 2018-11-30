@@ -407,7 +407,8 @@
         <param name="newLanguageId">A <see cref="T:System.Globalization.CultureInfo" /> object representing the new input language.</param>
         <param name="previousLanguageId">A <see cref="T:System.Globalization.CultureInfo" /> object representing the previous input language.</param>
         <summary>Report the initiation of a change of input language to the <see cref="T:System.Windows.Input.InputLanguageManager" />.</summary>
-        <returns><see langword="true" /> to indicate that the reported change of input language was accepted; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> to indicate that the reported change of input language was accepted; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="newLanguageId" /> or <paramref name="previousLanguageId" /> is <see langword="null" />.</exception>
         <altmember cref="E:System.Windows.Input.InputLanguageManager.InputLanguageChanging" />

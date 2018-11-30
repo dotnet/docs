@@ -58,7 +58,7 @@
   </Interfaces>
   <Docs>
     <typeparam name="T">The generic class.</typeparam>
-    <summary>Represents the Generic ChannelBase class.</summary>
+    <summary>Represents the generic ChannelBase class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -757,8 +757,8 @@
         <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the destination of the service to which messages are sent out on the output channel.</summary>
+        <value>The <see cref="T:System.ServiceModel.EndpointAddress" /> of the service to which the output channel sends messages.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -863,8 +863,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URI that contains the transport address to which messages are sent on the output channel.</summary>
+        <value>The <see cref="T:System.Uri" /> that contains the transport address to which messages are sent on the output channel.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1338,8 +1338,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URI that contains the transport address to which messages are sent on the client channel.</summary>
+        <value>The URI that contains the transport address to which messages are sent on the channel.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2100,8 +2100,8 @@
         <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the remote address associated with the channel.</summary>
+        <value>The remote <see cref="T:System.ServiceModel.EndpointAddress" /> for the channel.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

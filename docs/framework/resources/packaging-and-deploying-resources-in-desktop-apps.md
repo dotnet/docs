@@ -127,11 +127,16 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
 ### .NET Core resource fallback process
  The .NET Core resource fallback process involves the following steps:
 
-1.  The runtime attempts to load a satellite assembly for the requested culture, eventually calling <xref:System.Runtime.Loader.AssemblyLoadContext.Load(System.Reflection.AssemblyName)?displayProperty=nameWithType> on the AssemblyLoadContext containing the the currently executing assembly.  The <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType>:
+1.  The runtime attempts to load a satellite assembly for the requested culture.
      * Checks the directory of the currently executing assembly for a subdirectory that matches the requested culture. If it finds the subdirectory, it searches that subdirectory for a valid satellite assembly for the requested culture and loads it.
+
        > [!NOTE]
        >  On operating systems with case sensistive file systems (e.g. Linux and OSX) the culture name subdirectory search is case sensitive.  The subdirectory name must exactly match the case of the <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType> i.e. `es` or `es-MX`.
-     * If a satellite has not been found, the AssemblyLoadContext raises the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> event to indicate that it is unable to find the satellite assembly. If you choose to handle the event, your event handler can load and return a reference to the satellite assembly.
+
+       > [!NOTE]
+       > If the programmer has derived a custom assembly load context from <xref:System.Runtime.Loader.AssemblyLoadContext> the situation is complicated.  If the executing assembly was loaded into the custom context the runtime will load the satellite into the custom context.  The details are out of scope for this document.  See  <xref:System.Runtime.Loader.AssemblyLoadContext>.
+
+     * If a satellite has not been found, the <xref:System.Runtime.Loader.AssemblyLoadContext> raises the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving?displayProperty=nameWithType> event to indicate that it is unable to find the satellite assembly. If you choose to handle the event, your event handler can load and return a reference to the satellite assembly.
      * If a satellite still has not been found, the AssemblyLoadContext causes the AppDomain to trigger an <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event to indicate that it is unable to find the satellite assembly. If you choose to handle the event, your event handler can load and return a reference to the satellite assembly.
 
 2. If a Satellite is found, the runtime then searches the satellite assembly for the requested resource. If it finds the resource in the assembly, it uses it. If it doesn't find the resource, it continues the search.

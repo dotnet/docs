@@ -33,8 +33,8 @@ This first table describes the mappings for various types for whom the marshalli
 | `uint`    | `uint32_t`              |
 | `long`    | `int64_t`               |
 | `ulong`   | `uint64_t`              |
-| `char`    | Either `char` or `char16_t` depending on the `CharSet` of the P/Invoke or structure. |
-| `string`  | Either `char*` or `char16_t*` depending on the `CharSet` of the P/Invoke or structure. |
+| `char`    | Either `char` or `char16_t` depending on the `CharSet` of the P/Invoke or structure. See the [charset documentation](/.charset.md). |
+| `string`  | Either `char*` or `char16_t*` depending on the `CharSet` of the P/Invoke or structure. See the [charset documentation](/.charset.md). |
 | `System.IntPtr` | `intptr_t`        |
 | `System.UIntPtr` | `uintptr_t`      |
 | .NET Pointer types (ex. `void*`)  | `void*` |

@@ -127,6 +127,9 @@ When you port existing code from the .NET Framework to .NET Core, you can use th
 
 .NET Core incorporates a new JIT compiler technology called *tiered compilation* (also known as *adaptive optimization*) that can significantly improve performance. Tiered compilation is an opt-in setting.
 
+> [!IMPORTANT]
+> Starting with .NET Core 2.2, tiered compilation is enabled by default.
+
 One of the important tasks performed by the JIT compiler is optimizing code execution. For little-used code paths, however, the compiler may spend more time optimizing code than the runtime spends running unoptimized code. Tiered compilation introduces two stages in JIT compilation:
 
 - A **first tier**, which generates code as quickly as possible.

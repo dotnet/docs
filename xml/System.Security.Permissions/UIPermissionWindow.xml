@@ -179,7 +179,7 @@
   
 -   Must have an entry in the Task Bar.  
   
--   Will have its controls prohibited from accessing the <xref:System.Windows.Forms.Control.Parent%2A> property. By implication, controls will also be barred from accessing siblings - i.e., other controls at the same level of nesting.  
+-   Will have its controls prohibited from accessing the <xref:System.Windows.Forms.Control.Parent%2A> property. By implication, controls will also be barred from accessing siblings - that is, other controls at the same level of nesting.  
   
 -   Cannot control focus using the <xref:System.Windows.Forms.Control.Focus%2A> method.  
   

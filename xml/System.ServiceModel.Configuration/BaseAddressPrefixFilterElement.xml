@@ -22,7 +22,7 @@
 ## Remarks  
  A prefix filter provider a mechanism for a service to bind to a specific URI .It enables you to host multiple applications with different base addresses for the same scheme on the same site.  
   
- IIS websites are containers for virtual applications which contain virtual directories. The application in a site can be accessed through one or more IIS binding. IIS bindings provide two pieces of information: binding protocol and binding information. Binding protocol (e.g., HTTP) defines the scheme over which communication occurs, and binding information (e.g., IPAddress, Port, Hostheader) contains data used to access the site.  
+ IIS websites are containers for virtual applications which contain virtual directories. The application in a site can be accessed through one or more IIS binding. IIS bindings provide two pieces of information: binding protocol and binding information. Binding protocol (for example, HTTP) defines the scheme over which communication occurs, and binding information (for example, IPAddress, Port, Hostheader) contains data used to access the site.  
   
  IIS supports specifying multiple IIS bindings per site, which results in multiple base addresses per scheme. Since a WCF service hosted under a site allows binding to only one base address per scheme, you can use the prefix filter feature to pick the required base address of the hosted service.  The incoming base addresses, supplied by IIS, are filtered based on the optional prefix list filter.  
   

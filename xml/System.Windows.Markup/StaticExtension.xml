@@ -159,7 +159,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string for <xref:System.Windows.Markup.StaticExtension.Member%2A> typically uses the format *prefix*`:`*typeName*`.`*fieldOrPropertyName*. (*prefix* is the mapping prefix for an XML namespace, and is only required to reference static values that are not mapped to the default XML namespace). The string can also specify only the member name, so long as <xref:System.Windows.Markup.StaticExtension.MemberType%2A> is also supplied., but note that this technique will not support XML namespaces and prefixes; it is working at the type system level.  
+ The string for <xref:System.Windows.Markup.StaticExtension.Member%2A> typically uses the format *prefix*`:`*typeName*`.`*fieldOrPropertyName*. (*prefix* is the mapping prefix for an XML namespace, and is only required to reference static values that are not mapped to the default XML namespace). The string can also specify only the member name, so long as <xref:System.Windows.Markup.StaticExtension.MemberType%2A> is also supplied, but note that this technique will not support XML namespaces and prefixes; it is working at the type system level.  
   
  For XAML usage information, see [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
   

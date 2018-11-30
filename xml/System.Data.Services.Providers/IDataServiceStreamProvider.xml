@@ -142,7 +142,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetReadStreamUri%2A> method is called by the data service runtime to obtain the URI that clients should use when they make retrieve (i.e., GET) requests for the media resource.  
+ The <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetReadStreamUri%2A> method is called by the data service runtime to obtain the URI that clients should use when they make retrieve (that is, GET) requests for the media resource.  
   
  The <xref:System.Uri> value returned by the <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetReadStreamUri%2A> method implementation is used as the edit-media link in the media link entry to references the location of the media resource.  
   

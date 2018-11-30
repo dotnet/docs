@@ -2281,7 +2281,7 @@
   
 -   Setting the <xref:System.ComponentModel.MaskedTextProvider.PasswordChar%2A> property to a non-`null` value.  
   
--   Setting the <xref:System.ComponentModel.MaskedTextProvider.IsPassword%2A> property to `true`., which also sets the <xref:System.ComponentModel.MaskedTextProvider.PasswordChar%2A> property to the <xref:System.ComponentModel.MaskedTextProvider.DefaultPasswordChar%2A> value.  
+-   Setting the <xref:System.ComponentModel.MaskedTextProvider.IsPassword%2A> property to `true`, which also sets the <xref:System.ComponentModel.MaskedTextProvider.PasswordChar%2A> property to the <xref:System.ComponentModel.MaskedTextProvider.DefaultPasswordChar%2A> value.  
   
  <xref:System.ComponentModel.MaskedTextProvider.IsPassword%2A> is used by the <xref:System.ComponentModel.MaskedTextProvider.ToDisplayString%2A> and <xref:System.ComponentModel.MaskedTextProvider.ToString%2A> methods to determine whether to reveal the actual input characters or obscure them with <xref:System.ComponentModel.MaskedTextProvider.PasswordChar%2A>.  
   

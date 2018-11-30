@@ -1159,7 +1159,7 @@ On .NET Core, calls to the `Regex.CompileToAssembly` method throw a <xref:System
       </Parameters>
       <Docs>
         <param name="str">The input string that contains the text to convert.</param>
-        <summary>Escapes a minimal set of characters (\\, *, +, ?, |, {, [, (,), ^, $,., #, and white space) by replacing them with their escape codes. This instructs the regular expression engine to interpret these characters literally rather than as metacharacters.</summary>
+        <summary>Escapes a minimal set of characters (\\, *, +, ?, |, {, [, (,), ^, $, ., #, and white space) by replacing them with their escape codes. This instructs the regular expression engine to interpret these characters literally rather than as metacharacters.</summary>
         <returns>A string of characters with metacharacters converted to their escaped form.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5144,7 +5144,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
 ## Remarks  
  The <xref:System.Text.RegularExpressions.Regex.Unescape%2A> method performs one of the following two transformations:  
   
--   It reverses the transformation performed by the <xref:System.Text.RegularExpressions.Regex.Escape%2A> method by removing the escape character ("\\") from each character escaped by the method. These include the \\, *, +, ?, &#124;, {, [, (,), ^, $,., #, and white space characters. In addition, the <xref:System.Text.RegularExpressions.Regex.Unescape%2A> method unescapes the closing bracket (]) and closing brace (}) characters.  
+-   It reverses the transformation performed by the <xref:System.Text.RegularExpressions.Regex.Escape%2A> method by removing the escape character ("\\") from each character escaped by the method. These include the \\, *, +, ?, &#124;, {, [, (,), ^, $, ., #, and white space characters. In addition, the <xref:System.Text.RegularExpressions.Regex.Unescape%2A> method unescapes the closing bracket (]) and closing brace (}) characters.  
   
 > [!NOTE]
 >  <xref:System.Text.RegularExpressions.Regex.Unescape%2A> cannot reverse an escaped string perfectly because it cannot deduce precisely which characters were escaped,  

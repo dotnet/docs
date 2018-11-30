@@ -11614,7 +11614,7 @@ A string is empty if it  is explicitly assigned an empty string ("") or <xref:Sy
      [!code-csharp[System.String.Substring#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.String.Substring/cs/Substring2.cs#2)]
      [!code-vb[System.String.Substring#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.String.Substring/vb/Substring2.vb#2)]  
   
--   If you've searched for multiple characters that are to mark the end of the substring, the `length` parameter equals  `endIndex` + `endMatchLength` - `startIndex`, where `endIndex` is the return value of the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOf%2A> method., and `endMatchLength` is the length of the character sequence that marks the end of the substring. The following example extracts a block of text that contains an XML `<definition>` element.  
+-   If you've searched for multiple characters that are to mark the end of the substring, the `length` parameter equals  `endIndex` + `endMatchLength` - `startIndex`, where `endIndex` is the return value of the <xref:System.String.IndexOf%2A> or <xref:System.String.IndexOf%2A> method, and `endMatchLength` is the length of the character sequence that marks the end of the substring. The following example extracts a block of text that contains an XML `<definition>` element.  
   
      [!code-csharp[System.String.Substring#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.String.Substring/cs/Substring3.cs#3)]
      [!code-vb[System.String.Substring#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.String.Substring/vb/Substring3.vb#3)]  

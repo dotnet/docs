@@ -1074,7 +1074,7 @@
   
  The behavior added by the <see cref="M:System.Windows.FrameworkPropertyMetadata.Merge(System.Windows.PropertyMetadata,System.Windows.DependencyProperty)" /> implementation in <see cref="T:System.Windows.FrameworkPropertyMetadata" /> is that specific WPF framework-level properties in the metadata such as <see cref="P:System.Windows.FrameworkPropertyMetadata.AffectsRender" /> are combined in a bitwise or operation.  
   
- The <see cref="M:System.Windows.FrameworkPropertyMetadata.Merge(System.Windows.PropertyMetadata,System.Windows.DependencyProperty)" /> behavior also implements the behavior when you override the property metadata on an existing dependency property by calling <see cref="M:System.Windows.DependencyProperty.OverrideMetadata(System.Type,System.Windows.PropertyMetadata)" />., using override metadata that is <see cref="T:System.Windows.FrameworkPropertyMetadata" />.</para>
+ The <see cref="M:System.Windows.FrameworkPropertyMetadata.Merge(System.Windows.PropertyMetadata,System.Windows.DependencyProperty)" /> behavior also implements the behavior when you override the property metadata on an existing dependency property by calling <see cref="M:System.Windows.DependencyProperty.OverrideMetadata(System.Type,System.Windows.PropertyMetadata)" />, using override metadata that is <see cref="T:System.Windows.FrameworkPropertyMetadata" />.</para>
         </block>
         <altmember cref="M:System.Windows.PropertyMetadata.Merge(System.Windows.PropertyMetadata,System.Windows.DependencyProperty)" />
         <altmember cref="P:System.Windows.PropertyMetadata.IsSealed" />

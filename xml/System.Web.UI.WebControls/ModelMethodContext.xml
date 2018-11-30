@@ -72,7 +72,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the <see cref="T:System.Web.UI.WebControls.ModelMethodContext" /> object that corresponds to the <see cref="T:System.Web.UI.Page" /> object that is in the <see cref="P:System.Web.HttpContext.Current" /> property.</summary>
-        <value>The <see cref="T:System.Web.UI.WebControls.ModelMethodContext" /> object., or <see langword="null" /> if the current request is not for a page.</value>
+        <value>The <see cref="T:System.Web.UI.WebControls.ModelMethodContext" /> object, or <see langword="null" /> if the current request is not for a page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

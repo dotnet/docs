@@ -109,7 +109,7 @@
   
  There are four common causes of this <xref:System.ArgumentOutOfRangeException> exception:  
   
--   You are working with an empty string., or <xref:System.String.Empty?displayProperty=nameWithType>. Because its <xref:System.String.Length%2A?displayProperty=nameWithType> property returns 0, any attempt to manipulate it by index throws an <xref:System.ArgumentOutOfRangeException> exception. The following example, defines a `GetFirstCharacter` method that returns the first character of a string. If the string is empty, as the final string passed to the method is, the method throws an <xref:System.ArgumentOutOfRangeException> exception.  
+-   You are working with an empty string, or <xref:System.String.Empty?displayProperty=nameWithType>. Because its <xref:System.String.Length%2A?displayProperty=nameWithType> property returns 0, any attempt to manipulate it by index throws an <xref:System.ArgumentOutOfRangeException> exception. The following example, defines a `GetFirstCharacter` method that returns the first character of a string. If the string is empty, as the final string passed to the method is, the method throws an <xref:System.ArgumentOutOfRangeException> exception.  
   
      [!code-csharp[System.ArgumentOutOfRangeException#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/EmptyString1.cs#15)]
      [!code-vb[System.ArgumentOutOfRangeException#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/EmptyString1.vb#15)]  

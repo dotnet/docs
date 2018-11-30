@@ -143,7 +143,7 @@
   
 -   Because Windows doesn't offer a secure string implementation at the operating system level, the .NET Framework still has to convert the secure string value to its plain text representation in order to use it.  
   
--   Whenever the value of the secure string is modified by methods such as <xref:System.Security.SecureString.AppendChar%2A> or <xref:System.Security.SecureString.RemoveAt%2A>, it must be decrypted (i.e., converted back to plain text), modified, and then encrypted again.  
+-   Whenever the value of the secure string is modified by methods such as <xref:System.Security.SecureString.AppendChar%2A> or <xref:System.Security.SecureString.RemoveAt%2A>, it must be decrypted (that is, converted back to plain text), modified, and then encrypted again.  
   
 -   If the secure string is used in an interop call, it must be converted to an ANSI string, a Unicode string, or a binary string (BSTR). For more information, see the [SecureString and interop](#interop) section.  
   

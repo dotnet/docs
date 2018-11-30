@@ -270,7 +270,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Net.PeerToPeer.PeerName> cannot be resolved (i.e., the peer name is not published) an <xref:System.Net.PeerToPeer.PeerToPeerException> is thrown.  
+ If the <xref:System.Net.PeerToPeer.PeerName> cannot be resolved (that is, the peer name is not published) an <xref:System.Net.PeerToPeer.PeerToPeerException> is thrown.  
   
  For unsecured peer names, the same name can be registered (and associated with different endpoints) by different peers within the same cloud.  
   

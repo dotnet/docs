@@ -2950,7 +2950,7 @@
         <typeparam name="T12">The type of the twelfth element, or <paramref name="value" /><see langword=".Rest.Item5" />.</typeparam>
         <typeparam name="T13">The type of the thirteenth element, or <paramref name="value" /><see langword=".Rest.Item6" />.</typeparam>
         <typeparam name="T14">The type of the fourteenth element, or <paramref name="value" /><see langword=".Rest.Item7" />.</typeparam>
-        <typeparam name="T15">The type of the fifteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
         <param name="value">The value tuple instance to convert to a tuple.</param>
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
@@ -3022,8 +3022,8 @@
         <typeparam name="T12">The type of the twelfth element, or <paramref name="value" /><see langword=".Rest.Item5" />.</typeparam>
         <typeparam name="T13">The type of the thirteenth element, or <paramref name="value" /><see langword=".Rest.Item6" />.</typeparam>
         <typeparam name="T14">The type of the fourteenth element, or <paramref name="value" /><see langword=".Rest.Item7" />.</typeparam>
-        <typeparam name="T15">The type of the fifteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
-        <typeparam name="T16">The type of the sixteenth element, ., or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
         <param name="value">The value tuple instance to convert to a tuple.</param>
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
@@ -3096,9 +3096,9 @@
         <typeparam name="T12">The type of the twelfth element, or <paramref name="value" /><see langword=".Rest.Item5" />.</typeparam>
         <typeparam name="T13">The type of the thirteenth element, or <paramref name="value" /><see langword=".Rest.Item6" />.</typeparam>
         <typeparam name="T14">The type of the fourteenth element, or <paramref name="value" /><see langword=".Rest.Item7" />.</typeparam>
-        <typeparam name="T15">The type of the fifteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
-        <typeparam name="T16">The type of the sixteenth element, ., or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
-        <typeparam name="T17">The type of the seventeenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
         <param name="value">The value tuple instance to convert to a tuple.</param>
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
@@ -3172,10 +3172,10 @@
         <typeparam name="T12">The type of the twelfth element, or <paramref name="value" /><see langword=".Rest.Item5" />.</typeparam>
         <typeparam name="T13">The type of the thirteenth element, or <paramref name="value" /><see langword=".Rest.Item6" />.</typeparam>
         <typeparam name="T14">The type of the fourteenth element, or <paramref name="value" /><see langword=".Rest.Item7" />.</typeparam>
-        <typeparam name="T15">The type of the fifteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
-        <typeparam name="T16">The type of the sixteenth element, ., or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
-        <typeparam name="T17">The type of the seventeenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
-        <typeparam name="T18">The type of the eighteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item4" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item4" />.</typeparam>
         <param name="value">The value tuple instance to convert to a tuple.</param>
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
@@ -3250,11 +3250,11 @@
         <typeparam name="T12">The type of the twelfth element, or <paramref name="value" /><see langword=".Rest.Item5" />.</typeparam>
         <typeparam name="T13">The type of the thirteenth element, or <paramref name="value" /><see langword=".Rest.Item6" />.</typeparam>
         <typeparam name="T14">The type of the fourteenth element, or <paramref name="value" /><see langword=".Rest.Item7" />.</typeparam>
-        <typeparam name="T15">The type of the fifteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
-        <typeparam name="T16">The type of the sixteenth element, ., or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
-        <typeparam name="T17">The type of the seventeenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
-        <typeparam name="T18">The type of the eighteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item4" />.</typeparam>
-        <typeparam name="T19">The type of the nineteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item5" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item4" />.</typeparam>
+        <typeparam name="T19">The type of the nineteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item5" />.</typeparam>
         <param name="value">The value tuple instance to convert to a tuple.</param>
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
@@ -3330,12 +3330,12 @@
         <typeparam name="T12">The type of the twelfth element, or <paramref name="value" /><see langword=".Rest.Item5" />.</typeparam>
         <typeparam name="T13">The type of the thirteenth element, or <paramref name="value" /><see langword=".Rest.Item6" />.</typeparam>
         <typeparam name="T14">The type of the fourteenth element, or <paramref name="value" /><see langword=".Rest.Item7" />.</typeparam>
-        <typeparam name="T15">The type of the fifteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
-        <typeparam name="T16">The type of the sixteenth element, ., or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
-        <typeparam name="T17">The type of the seventeenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
-        <typeparam name="T18">The type of the eighteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item4" />.</typeparam>
-        <typeparam name="T19">The type of the nineteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item5" />.</typeparam>
-        <typeparam name="T20">The type of the twentieth element., or <paramref name="value" /><see langword=".Rest.Rest.Item6" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item4" />.</typeparam>
+        <typeparam name="T19">The type of the nineteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item5" />.</typeparam>
+        <typeparam name="T20">The type of the twentieth element, or <paramref name="value" /><see langword=".Rest.Rest.Item6" />.</typeparam>
         <param name="value">The value tuple instance to convert to a tuple.</param>
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
@@ -3412,13 +3412,13 @@
         <typeparam name="T12">The type of the twelfth element, or <paramref name="value" /><see langword=".Rest.Item5" />.</typeparam>
         <typeparam name="T13">The type of the thirteenth element, or <paramref name="value" /><see langword=".Rest.Item6" />.</typeparam>
         <typeparam name="T14">The type of the fourteenth element, or <paramref name="value" /><see langword=".Rest.Item7" />.</typeparam>
-        <typeparam name="T15">The type of the fifteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
-        <typeparam name="T16">The type of the sixteenth element, ., or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
-        <typeparam name="T17">The type of the seventeenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
-        <typeparam name="T18">The type of the eighteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item4" />.</typeparam>
-        <typeparam name="T19">The type of the nineteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item5" />.</typeparam>
-        <typeparam name="T20">The type of the twentieth element., or <paramref name="value" /><see langword=".Rest.Rest.Item6" />.</typeparam>
-        <typeparam name="T21">The type of the twenty-first element., or <paramref name="value" /><see langword=".Rest.Rest.Item7" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item4" />.</typeparam>
+        <typeparam name="T19">The type of the nineteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item5" />.</typeparam>
+        <typeparam name="T20">The type of the twentieth element, or <paramref name="value" /><see langword=".Rest.Rest.Item6" />.</typeparam>
+        <typeparam name="T21">The type of the twenty-first element, or <paramref name="value" /><see langword=".Rest.Rest.Item7" />.</typeparam>
         <param name="value">The value tuple instance to convert to a tuple.</param>
         <summary>Converts an instance of the <see langword="ValueTuple" /> structure to an instance of the  <see langword="Tuple" /> class.</summary>
         <returns>The converted tuple.</returns>
@@ -4282,7 +4282,7 @@
         <typeparam name="T12">The type of the twelfth element, or <paramref name="value" /><see langword=".Rest.Item5" />.</typeparam>
         <typeparam name="T13">The type of the thirteenth element, or <paramref name="value" /><see langword=".Rest.Item6" />.</typeparam>
         <typeparam name="T14">The type of the fourteenth element, or <paramref name="value" /><see langword=".Rest.Item7" />.</typeparam>
-        <typeparam name="T15">The type of the fifteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
         <param name="value">The tuple object to convert to a value tuple</param>
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
@@ -4354,8 +4354,8 @@
         <typeparam name="T12">The type of the twelfth element, or <paramref name="value" /><see langword=".Rest.Item5" />.</typeparam>
         <typeparam name="T13">The type of the thirteenth element, or <paramref name="value" /><see langword=".Rest.Item6" />.</typeparam>
         <typeparam name="T14">The type of the fourteenth element, or <paramref name="value" /><see langword=".Rest.Item7" />.</typeparam>
-        <typeparam name="T15">The type of the fifteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
-        <typeparam name="T16">The type of the sixteenth element, ., or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
         <param name="value">The tuple object to convert to a value tuple</param>
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
@@ -4428,9 +4428,9 @@
         <typeparam name="T12">The type of the twelfth element, or <paramref name="value" /><see langword=".Rest.Item5" />.</typeparam>
         <typeparam name="T13">The type of the thirteenth element, or <paramref name="value" /><see langword=".Rest.Item6" />.</typeparam>
         <typeparam name="T14">The type of the fourteenth element, or <paramref name="value" /><see langword=".Rest.Item7" />.</typeparam>
-        <typeparam name="T15">The type of the fifteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
-        <typeparam name="T16">The type of the sixteenth element, ., or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
-        <typeparam name="T17">The type of the seventeenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
         <param name="value">The tuple object to convert to a value tuple</param>
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
@@ -4504,10 +4504,10 @@
         <typeparam name="T12">The type of the twelfth element, or <paramref name="value" /><see langword=".Rest.Item5" />.</typeparam>
         <typeparam name="T13">The type of the thirteenth element, or <paramref name="value" /><see langword=".Rest.Item6" />.</typeparam>
         <typeparam name="T14">The type of the fourteenth element, or <paramref name="value" /><see langword=".Rest.Item7" />.</typeparam>
-        <typeparam name="T15">The type of the fifteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
-        <typeparam name="T16">The type of the sixteenth element, ., or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
-        <typeparam name="T17">The type of the seventeenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
-        <typeparam name="T18">The type of the eighteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item4" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item4" />.</typeparam>
         <param name="value">The tuple object to convert to a value tuple</param>
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
@@ -4582,11 +4582,11 @@
         <typeparam name="T12">The type of the twelfth element, or <paramref name="value" /><see langword=".Rest.Item5" />.</typeparam>
         <typeparam name="T13">The type of the thirteenth element, or <paramref name="value" /><see langword=".Rest.Item6" />.</typeparam>
         <typeparam name="T14">The type of the fourteenth element, or <paramref name="value" /><see langword=".Rest.Item7" />.</typeparam>
-        <typeparam name="T15">The type of the fifteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
-        <typeparam name="T16">The type of the sixteenth element, ., or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
-        <typeparam name="T17">The type of the seventeenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
-        <typeparam name="T18">The type of the eighteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item4" />.</typeparam>
-        <typeparam name="T19">The type of the nineteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item5" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item4" />.</typeparam>
+        <typeparam name="T19">The type of the nineteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item5" />.</typeparam>
         <param name="value">The tuple object to convert to a value tuple</param>
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
@@ -4662,12 +4662,12 @@
         <typeparam name="T12">The type of the twelfth element, or <paramref name="value" /><see langword=".Rest.Item5" />.</typeparam>
         <typeparam name="T13">The type of the thirteenth element, or <paramref name="value" /><see langword=".Rest.Item6" />.</typeparam>
         <typeparam name="T14">The type of the fourteenth element, or <paramref name="value" /><see langword=".Rest.Item7" />.</typeparam>
-        <typeparam name="T15">The type of the fifteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
-        <typeparam name="T16">The type of the sixteenth element, ., or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
-        <typeparam name="T17">The type of the seventeenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
-        <typeparam name="T18">The type of the eighteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item4" />.</typeparam>
-        <typeparam name="T19">The type of the nineteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item5" />.</typeparam>
-        <typeparam name="T20">The type of the twentieth element., or <paramref name="value" /><see langword=".Rest.Rest.Item6" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item4" />.</typeparam>
+        <typeparam name="T19">The type of the nineteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item5" />.</typeparam>
+        <typeparam name="T20">The type of the twentieth element, or <paramref name="value" /><see langword=".Rest.Rest.Item6" />.</typeparam>
         <param name="value">The tuple object to convert to a value tuple</param>
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>
@@ -4744,13 +4744,13 @@
         <typeparam name="T12">The type of the twelfth element, or <paramref name="value" /><see langword=".Rest.Item5" />.</typeparam>
         <typeparam name="T13">The type of the thirteenth element, or <paramref name="value" /><see langword=".Rest.Item6" />.</typeparam>
         <typeparam name="T14">The type of the fourteenth element, or <paramref name="value" /><see langword=".Rest.Item7" />.</typeparam>
-        <typeparam name="T15">The type of the fifteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
-        <typeparam name="T16">The type of the sixteenth element, ., or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
-        <typeparam name="T17">The type of the seventeenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
-        <typeparam name="T18">The type of the eighteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item4" />.</typeparam>
-        <typeparam name="T19">The type of the nineteenth element., or <paramref name="value" /><see langword=".Rest.Rest.Item5" />.</typeparam>
-        <typeparam name="T20">The type of the twentieth element., or <paramref name="value" /><see langword=".Rest.Rest.Item6" />.</typeparam>
-        <typeparam name="T21">The type of the twenty-first element., or <paramref name="value" /><see langword=".Rest.Rest.Item7" />.</typeparam>
+        <typeparam name="T15">The type of the fifteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item1" />.</typeparam>
+        <typeparam name="T16">The type of the sixteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item2" />.</typeparam>
+        <typeparam name="T17">The type of the seventeenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item3" />.</typeparam>
+        <typeparam name="T18">The type of the eighteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item4" />.</typeparam>
+        <typeparam name="T19">The type of the nineteenth element, or <paramref name="value" /><see langword=".Rest.Rest.Item5" />.</typeparam>
+        <typeparam name="T20">The type of the twentieth element, or <paramref name="value" /><see langword=".Rest.Rest.Item6" />.</typeparam>
+        <typeparam name="T21">The type of the twenty-first element, or <paramref name="value" /><see langword=".Rest.Rest.Item7" />.</typeparam>
         <param name="value">The tuple object to convert to a value tuple</param>
         <summary>Converts an instance of the <see langword="Tuple" /> class to an instance of the  <see langword="ValueTuple" /> structure.</summary>
         <returns>The converted value tuple instance.</returns>

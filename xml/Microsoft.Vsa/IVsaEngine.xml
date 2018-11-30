@@ -226,7 +226,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a Boolean value that reports whether the script engine's source state has changed since the last save operation, or since the script engine was originally loaded.</summary>
-        <value>Returns true if the script engine is marked as modified (i.e., "dirty"). Returns false if the script engine is not dirty. The default value for this property is false.</value>
+        <value>Returns true if the script engine is marked as modified (that is, "dirty"). Returns false if the script engine is not dirty. The default value for this property is false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

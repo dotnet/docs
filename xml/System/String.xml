@@ -5068,7 +5068,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
   
  For more information about providing custom formatting solutions, see [How to: Define and Use Custom Numeric Format Providers](~/docs/standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md) and <xref:System.ICustomFormatter>. For an example that converts integers to formatted custom numbers, see [Example: A custom formatting operation](#Format6_Example). For an example that converts unsigned bytes to Roman numerals, see [Example: An intercept provider and Roman numeral formatter](#Format7_Example).  
   
-<a name="Format6_Example" />  
+<a name="Format6_Example"></a>   
 ### Example: A custom formatting operation  
  This example defines a format provider that formats an integer value as a customer account number in the form x-xxxxx-xx.  
   
@@ -5076,7 +5076,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
  [!code-csharp-interactive[System.String.Format#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/FormatExample2.cs#2)]
  [!code-vb[System.String.Format#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/FormatExample2.vb#2)]  
   
-<a name="Format7_Example" />  
+<a name="Format7_Example"></a>   
 ### Example: An intercept provider and Roman numeral formatter  
  This example defines a custom format provider that implements the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces to do two things:  
   
@@ -5155,7 +5155,7 @@ In contrast, the use of interpolated strings in the following example produce mu
 ### How many items can I include in the format list?  
  There is no practical limit. The second parameter of the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method is tagged with the <xref:System.ParamArrayAttribute> attribute, which allows you to include either a delimited list or an object array as your format list.  
   
-<a name="braces" />
+<a name="braces"></a>
 ### How do I include literal braces ("{" and "}") in the result string?  
  For example, how do you prevent the following method call from throwing a <xref:System.FormatException> exception?  
   

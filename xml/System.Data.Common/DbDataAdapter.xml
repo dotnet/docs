@@ -73,7 +73,7 @@
  </term><description> Initializes a new instance of the *Prv*DataAdapter class with an SQL SELECT statement and a *Prv*Connection object.  
   
  </description></item></list>  
-  
+
  To promote consistency among .NET Framework data providers, you should name the inheriting class in the form *Prv*DataAdapter, where *Prv* is the uniform prefix given to all classes in a specific .NET Framework data provider namespace. For example, "Sql" is the prefix of the <see cref="T:System.Data.SqlClient.SqlDataAdapter" /> class in the **System.Data.SqlClient** namespace.</para>
     </block>
     <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
@@ -3231,7 +3231,7 @@ DataSet dataset = new DataSet();
  </term><description> Changes are sent using batches of <see cref="P:System.Data.Common.DbDataAdapter.UpdateBatchSize" /> operations at a time.  
   
  </description></item></list>  
-  
+
  When setting this to a value other than 1, all the commands associated with the <see cref="T:System.Data.Common.DbDataAdapter" /> must have their <see cref="P:System.Data.IDbCommand.UpdatedRowSource" /> property set to **None** or **OutputParameters**. An exception will be thrown otherwise.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -2094,7 +2094,7 @@ namespace SampleSynthesis
  The <xref:System.Speech.Synthesis.PromptBuilder.StartStyle%2A> method takes a <xref:System.Speech.Synthesis.PromptStyle> object as its argument. You can use the properties of the <xref:System.Speech.Synthesis.PromptStyle> object to set the emphasis, speaking rate, and volume (loudness) to apply to speech output while the style is in effect. To stop using the current style, call the <xref:System.Speech.Synthesis.PromptBuilder.EndStyle%2A> method.  
   
 > [!NOTE]
->  -   The speech synthesis engines in Windows do not support the emphasis parameter at this time. Setting values for the emphasis parameter will produce no audible change in the synthesized speech output.  
+> -   The speech synthesis engines in Windows do not support the emphasis parameter at this time. Setting values for the emphasis parameter will produce no audible change in the synthesized speech output.  
 > -   The <xref:System.Speech.Synthesis.PromptVolume.Default> setting for <xref:System.Speech.Synthesis.PromptVolume> is full volume, which is the same as <xref:System.Speech.Synthesis.PromptVolume.ExtraLoud>. The other settings decrease the volume of speech output relative to full volume.  
   
    

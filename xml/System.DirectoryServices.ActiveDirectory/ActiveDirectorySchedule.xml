@@ -132,7 +132,7 @@
  </term><description> Saturday  
   
  </description></item></list>  
-  
+
  The hour is zero-based and specified in 24-hour format. For example, 2 P.M. would be specified as 14. Valid values are 0-23.  
   
  The 15-minute interval specifies the 15-minute block within the hour that the source is available for replication. The following table identifies the possible values for the 15-minute interval.  
@@ -158,7 +158,7 @@
  </term><description> The source is available for replication from 45 to 59 minutes after the hour.  
   
  </description></item></list>  
-  
+
  The following C# example shows how to use this property to determine if the source is available for replication at 15:50 Coordinated Universal Time on Tuesday.  
   
 ```csharp  

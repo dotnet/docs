@@ -1568,7 +1568,7 @@ while (myEnum->MoveNext())
   
  WinNT  
   
--   Connect to a group on a computer. For example, "WinNT**://\<domain name>/\<computer name>/\<group name>**". If you are connecting to a local computer, "WinNT://**\<computer name>/\<group name>**".  
+-   Connect to a group on a computer. For example, "WinNT://**\<domain name>/\<computer name>/\<group name>**". If you are connecting to a local computer, "WinNT://**\<computer name>/\<group name>**".  
   
 -   Connect to a user on a computer. For example, "WinNT://**\<domain name>/\<computer name>/\<user name>**". If you are connecting to a local computer, "WinNT://**\<computer name>/\<user name>**".  
   

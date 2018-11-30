@@ -45,7 +45,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  -   Do not use schemas from unknown or untrusted sources or locations. Doing so will compromise the security of your code.  
+> -   Do not use schemas from unknown or untrusted sources or locations. Doing so will compromise the security of your code.  
 > -   XML schemas (including inline schemas) are inherently vulnerable to denial of service attacks; do not accept them in untrusted scenarios.  
 > -   Exceptions raised as a result of using the <xref:System.Xml.Schema.XmlSchema> class, such as the <xref:System.Xml.Schema.XmlSchemaException> class, may contain sensitive information that should not be exposed in untrusted scenarios. For example, the <xref:System.Xml.Schema.XmlSchemaException.SourceUri%2A> property of an <xref:System.Xml.Schema.XmlSchemaException> returns the URI path to the schema file that caused the exception. The <xref:System.Xml.Schema.XmlSchemaException.SourceUri%2A> property should not be exposed in untrusted scenarios. Exceptions should be properly handled so this sensitive information is not exposed in untrusted scenarios.  
   

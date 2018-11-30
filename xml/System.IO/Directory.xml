@@ -944,7 +944,7 @@ Directory::CreateDirectory("Public\\Html");
 > [!NOTE]
 >  When you use the asterisk wildcard character in a `searchPattern` such as "\*.txt", the number of characters in the specified extension affects the search as follows:  
 >   
->  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
+> -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
 > -   In all other cases, the method returns files that exactly match the specified extension. For example, "\*.ai" returns "file.ai" but not "file.aif".  
 >   
 >  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file\*.txt" returns both files.  
@@ -1081,7 +1081,7 @@ Directory::CreateDirectory("Public\\Html");
 > [!NOTE]
 >  When you use the asterisk wildcard character in a `searchPattern` such as "\*.txt", the number of characters in the specified extension affects the search as follows:  
 >   
->  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
+> -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
 > -   In all other cases, the method returns files that exactly match the specified extension. For example, "\*.ai" returns "file.ai" but not "file.aif".  
 >   
 >  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file\*.txt" returns both files.  
@@ -1251,7 +1251,7 @@ Directory::CreateDirectory("Public\\Html");
 > [!NOTE]
 >  When you use the asterisk wildcard character in a `searchPattern` such as "\*.txt", the number of characters in the specified extension affects the search as follows:  
 >   
->  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
+> -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
 > -   In all other cases, the method returns files that exactly match the specified extension. For example, "\*.ai" returns "file.ai" but not "file.aif".  
 >   
 >  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file\*.txt" returns both files.  
@@ -1375,7 +1375,7 @@ Directory::CreateDirectory("Public\\Html");
 > [!NOTE]
 >  When you use the asterisk wildcard character in a `searchPattern` such as "\*.txt", the number of characters in the specified extension affects the search as follows:  
 >   
->  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
+> -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
 > -   In all other cases, the method returns files that exactly match the specified extension. For example, "\*.ai" returns "file.ai" but not "file.aif".  
 >   
 >  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file\*.txt" returns both files.  
@@ -2379,7 +2379,7 @@ Directory::CreateDirectory("Public\\Html");
 > [!NOTE]
 >  When you use the asterisk wildcard character in a `searchPattern` such as "\*.txt", the number of characters in the specified extension affects the search as follows:  
 >   
->  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
+> -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
 > -   In all other cases, the method returns files that exactly match the specified extension. For example, "\*.ai" returns "file.ai" but not "file.aif".  
 >   
 >  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file\*.txt" returns both files.  
@@ -2520,7 +2520,7 @@ Directory::CreateDirectory("Public\\Html");
 > [!NOTE]
 >  When you use the asterisk wildcard character in a `searchPattern` such as "\*.txt", the number of characters in the specified extension affects the search as follows:  
 >   
->  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
+> -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
 > -   In all other cases, the method returns files that exactly match the specified extension. For example, "\*.ai" returns "file.ai" but not "file.aif".  
 >   
 >  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file*.txt" returns both files.  
@@ -2711,7 +2711,7 @@ Directory::CreateDirectory("Public\\Html");
 > [!NOTE]
 >  When you use the asterisk wildcard character in a `searchPattern` such as "\*.txt", the number of characters in the specified extension affects the search as follows:  
 >   
->  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
+> -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
 > -   In all other cases, the method returns files that exactly match the specified extension. For example, "\*.ai" returns "file.ai" but not "file.aif".  
 >   
 >  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file\*.txt" returns both files.  
@@ -2846,7 +2846,7 @@ Directory::CreateDirectory("Public\\Html");
 > [!NOTE]
 >  When you use the asterisk wildcard character in a `searchPattern` such as "\*.txt", the number of characters in the specified extension affects the search as follows:  
 >   
->  -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
+> -   If the specified extension is exactly three characters long, the method returns files with extensions that begin with the specified extension. For example, "\*.xls" returns both "book.xls" and "book.xlsx".  
 > -   In all other cases, the method returns files that exactly match the specified extension. For example, "\*.ai" returns "file.ai" but not "file.aif".  
 >   
 >  When you use the question mark wildcard character, this method returns only files that match the specified file extension. For example, given two files, "file1.txt" and "file1.txtother", in a directory, a search pattern of "file?.txt" returns just the first file, whereas a search pattern of "file\*.txt" returns both files.  

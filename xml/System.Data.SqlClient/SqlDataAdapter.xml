@@ -1310,7 +1310,7 @@
  </term><description> Changes are sent using batches of <see cref="P:System.Data.SqlClient.SqlDataAdapter.UpdateBatchSize" /> operations at a time.  
   
  </description></item></list>  
-  
+
  When setting this to a value other than 1, all the commands associated with the <see cref="T:System.Data.SqlClient.SqlDataAdapter" /> have to have their **UpdatedRowSource** property set to <see langword="None" /> or <see langword="OutputParameters" />. An exception is thrown otherwise.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

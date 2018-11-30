@@ -575,7 +575,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-The `userName` argument in both overloads of this method must take the form *username* (for example, *mcampbell*) rather than *domain\username* or *username@domain*.   
+The `userName` argument in both overloads of this method must take the form *username* (for example, *mcampbell*) rather than *domain\username* or *username\@domain*.   
   
  ]]></format>
         </remarks>
@@ -615,7 +615,7 @@ The `userName` argument in both overloads of this method must take the form *use
 ## Remarks  
  The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` arguments are `null`, this method validates the default credentials for the current principal.  
 
-The `userName` argument must take the form *userName* (for example, *mcampbell*) rather than *domain\username* or *username@domain*.
+The `userName` argument must take the form *userName* (for example, *mcampbell*) rather than *domain\username* or *username\@domain*.
 
  ]]></format>
         </remarks>
@@ -657,7 +657,7 @@ The `userName` argument must take the form *userName* (for example, *mcampbell*)
 ## Remarks  
  The <xref:System.DirectoryServices.AccountManagement.PrincipalContext.ValidateCredentials%2A> method binds to the server specified in the constructor. If the `username` and `password` parameters are null, this method validates the default credentials for the current principal.  
 
-The `userName` argument must take the form *username* (for example, *mcampbell*) rather than *domain\username* or *username@domain*. 
+The `userName` argument must take the form *username* (for example, *mcampbell*) rather than *domain\username* or *username\@domain*. 
  
  ]]></format>
         </remarks>

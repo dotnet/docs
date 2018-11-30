@@ -2110,7 +2110,7 @@
    
   
 ## Examples  
- The following code example assigns a regular expression to the <xref:System.Web.UI.WebControls.CreateUserWizard.EmailRegularExpression%2A> property to make sure that the user entered their email address in a valid format, such as **username@contoso.com**.  
+ The following code example assigns a regular expression to the <xref:System.Web.UI.WebControls.CreateUserWizard.EmailRegularExpression%2A> property to make sure that the user entered their email address in a valid format, such as **username\@contoso.com**.  
   
  [!code-aspx-csharp[CreateUserWizardEmailRegex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardEmailRegex/CS/createuserwizardemailregexcs.aspx#1)]
  [!code-aspx-vb[CreateUserWizardEmailRegex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardEmailRegex/VB/createuserwizardemailregexvb.aspx#1)]  

@@ -1517,7 +1517,7 @@ public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)
  </term><description> Changes are sent using batches of <see cref="P:System.Data.OracleClient.OracleDataAdapter.UpdateBatchSize" /> operations at a time.  
   
  </description></item></list>  
-  
+
  When setting this to a value other than 1 all the commands associated with the <see cref="T:System.Data.OracleClient.OracleDataAdapter" /> have to have their <see cref="P:System.Data.IDbCommand.UpdatedRowSource" /> property set to <see langword="None" /> or <see langword="OutputParameters" />. An exception is thrown otherwise.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

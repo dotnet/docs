@@ -33,7 +33,7 @@ method name="Test!ns2.C0::m"
 ```  
   
 ## Configuration  
- The following configuration file shows a variety of filters that can be employed to filter out which methods are reported when they are first JIT-compiled. You can specify that all methods be reported by setting the value of the name attribute to *.  
+ The following configuration file shows a variety of filters that can be employed to filter out which methods are reported when they are first JIT-compiled. You can specify that all methods be reported by setting the value of the name attribute to \*.  
   
 ```xml  
 <mdaConfig>  

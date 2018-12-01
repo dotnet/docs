@@ -1,4 +1,4 @@
-﻿---
+---
 title: What's new in .NET Core 2.2
 description: Learn about the new features found in .NET Core 2.2.
 dev_langs: 

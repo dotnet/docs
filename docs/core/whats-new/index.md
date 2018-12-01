@@ -13,7 +13,7 @@ This page provides a summary of new features in each release of .NET Core starti
 
 - [.NET Core 2.1](dotnet-core-2-1.md)
 
-- .[NET Core 2.0](dotnet-core-2-0.md)
+- [.NET Core 2.0](dotnet-core-2-0.md)
 
 ## See also
 

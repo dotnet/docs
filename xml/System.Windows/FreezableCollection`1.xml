@@ -1,4 +1,4 @@
-﻿<Type Name="FreezableCollection&lt;T&gt;" FullName="System.Windows.FreezableCollection&lt;T&gt;">
+<Type Name="FreezableCollection&lt;T&gt;" FullName="System.Windows.FreezableCollection&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class FreezableCollection&lt;T&gt; : System.Windows.Media.Animation.Animatable, System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt;, System.Collections.IList, System.Collections.Specialized.INotifyCollectionChanged, System.ComponentModel.INotifyPropertyChanged where T : DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FreezableCollection`1&lt;(class System.Windows.DependencyObject) T&gt; extends System.Windows.Media.Animation.Animatable implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IList`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.Collections.Specialized.INotifyCollectionChanged, class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Windows.FreezableCollection`1" />
@@ -1303,8 +1303,15 @@
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this members, see <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.Collections.Specialized.INotifyCollectionChanged> interface.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.INotifyPropertyChanged.PropertyChanged">
@@ -1324,8 +1331,15 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this members, see <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FreezableCollection%601> instance is cast to an <xref:System.ComponentModel.INotifyPropertyChanged> interface.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

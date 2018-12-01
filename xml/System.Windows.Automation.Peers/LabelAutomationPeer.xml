@@ -1,4 +1,4 @@
-﻿<Type Name="LabelAutomationPeer" FullName="System.Windows.Automation.Peers.LabelAutomationPeer">
+<Type Name="LabelAutomationPeer" FullName="System.Windows.Automation.Peers.LabelAutomationPeer">
   <TypeSignature Language="C#" Value="public class LabelAutomationPeer : System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LabelAutomationPeer extends System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.LabelAutomationPeer" />
@@ -142,9 +142,9 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="patternInterface">A value in the enumeration.</param>
+        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.Label" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.LabelAutomationPeer" />.</summary>
+        <returns><see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -53,7 +53,7 @@
   
  You can sort the data that you retrieve with the <xref:System.Web.UI.WebControls.LinqDataSource> control by adding an `OrderBy` clause. You can provide a sort expression for the <xref:System.Web.UI.WebControls.LinqDataSourceView> instance by setting the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property of the <xref:System.Web.UI.DataSourceSelectArguments> object that is passed to the <xref:System.Web.UI.WebControls.LinqDataSourceView.Select%2A> method. The syntax for the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property is the same as the syntax for a <xref:System.Data.DataView.Sort%2A?displayProperty=nameWithType> property.  
   
- The <xref:System.Web.UI.WebControls.LinqDataSourceView> control implements the <xref:System.Web.UI.IStateManager> interface and uses view state to track its state across page requests. Implementations of the <xref:System.Web.UI.WebControls.QueryableDataSourceView.IsTrackingViewState%2A> property and the <xref:System.Web.UI.WebControls.QueryableDataSourceView.LoadViewState%2A>, <xref:System.Web.UI.WebControls.QueryableDataSourceView.SaveViewState%2A>, and <xref:System.Web.UI.WebControls.QueryableDataSourceView.TrackViewState%2A> methods are provided to enable view-state tracking for the control. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
+ The <xref:System.Web.UI.WebControls.LinqDataSourceView> control implements the <xref:System.Web.UI.IStateManager> interface and uses view state to track its state across page requests. Implementations of the <xref:System.Web.UI.WebControls.QueryableDataSourceView.IsTrackingViewState%2A> property and the <xref:System.Web.UI.WebControls.QueryableDataSourceView.LoadViewState%2A>, <xref:System.Web.UI.WebControls.QueryableDataSourceView.SaveViewState%2A>, and <xref:System.Web.UI.WebControls.QueryableDataSourceView.TrackViewState%2A> methods are provided to enable view-state tracking for the control. For more information, see [ASP.NET State Management Overview](https://docs.microsoft.com/previous-versions/aspnet/75x4ha6s(v=vs.100)).  
   
  ]]></format>
     </remarks>
@@ -110,9 +110,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.LinqDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control supports dynamic creation of an OrderBy clause.</summary>
+        <value><see langword="true" /> if the clause generation is supported; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+When you set the <xref:System.Web.UI.WebControls.LinqDataSource.AutoGenerateOrderByClause> property of the <xref:System.Web.UI.WebControls.LinqDataSource> control, that value is also set for the AutoGenerateOrderByClause property of the <xref:System.Web.UI.WebControls.LinqDataSourceView> control. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.AutoGenerateOrderByClause?displayProperty=nameWithType> property.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AutoGenerateWhereClause">
@@ -131,9 +139,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.LinqDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control supports dynamic creation of a Where clause.</summary>
+        <value><see langword="true" /> if the clause generation is supported; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+When you set the <xref:System.Web.UI.WebControls.LinqDataSource.AutoGenerateWhereClause> property of the <xref:System.Web.UI.WebControls.LinqDataSource> control, that value is also set for the AutoGenerateWhereClause property of the <xref:System.Web.UI.WebControls.LinqDataSourceView> control. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.AutoGenerateWhereClause?displayProperty=nameWithType> property.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AutoPage">
@@ -152,9 +168,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.LinqDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control supports automatic paging.</summary>
+        <value><see langword="true" /> if automatic paging is supported; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+When you set the <xref:System.Web.UI.WebControls.LinqDataSource.AutoPage> property of the <xref:System.Web.UI.WebControls.LinqDataSource> control, that value is also set for the AutoPage property of the <xref:System.Web.UI.WebControls.LinqDataSourceView> control. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.AutoPage?displayProperty=nameWithType> property.
+
+]]></format>
+        </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.AutoPage" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AutoSort">
@@ -173,9 +198,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.LinqDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control supports automatic sorting.</summary>
+        <value><see langword="true" /> if automatic sorting is supported; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+When you set the <xref:System.Web.UI.WebControls.LinqDataSource.AutoSort> property of the <xref:System.Web.UI.WebControls.LinqDataSource> control, that value is also set for the AutoSort property of the <xref:System.Web.UI.WebControls.LinqDataSourceView> control. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.AutoSort?displayProperty=nameWithType> property.
+
+]]></format>
+        </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.AutoSort" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CanDelete">
@@ -602,11 +636,23 @@
         <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="keys">To be added.</param>
-        <param name="oldValues">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="keys">The row key values for the records to delete.</param>
+        <param name="oldValues">The row values that are evaluated to detect data conflicts.</param>
+        <summary>Performs a delete operation.</summary>
+        <returns>The number of rows that were deleted from the data source.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The `Delete` method calls the <xref:System.Web.UI.WebControls.LinqDataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)> method, passing the `keys` and `oldValues` parameters.
+
+For information about how to delete data with the <xref:System.Web.UI.WebControls.LinqDataSource> control, see the <xref:System.Web.UI.WebControls.LinqDataSource.Delete(System.Collections.IDictionary,System.Collections.IDictionary)> method of the <xref:System.Web.UI.WebControls.LinqDataSource> class.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control cannot establish a connection to the underlying data source.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.LinqDataSourceView.CanDelete" /> property is <see langword="false" />.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Deleted">
@@ -709,9 +755,11 @@
         <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the parameters collection that contains the parameters that are used during a delete operation.</summary>
+        <value>A collection that contains the parameters that are used by the <see cref="M:System.Web.UI.WebControls.LinqDataSourceView.Delete(System.Collections.IDictionary,System.Collections.IDictionary)" /> method.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSource.DeleteParameters" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Deleting">
@@ -1061,10 +1109,11 @@
         <Parameter Name="tableType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="tableType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="tableType">The table type.</param>
+        <summary>Gets the data object type to use for delete, insert, and update operations.</summary>
+        <returns>The data object type.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSource">
@@ -1134,9 +1183,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name or names of the properties to use during the select operation for grouping data.</summary>
+        <value>A value that is used to create the GroupBy expression.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+When you set the <xref:System.Web.UI.WebControls.LinqDataSource.GroupBy> property of the <xref:System.Web.UI.WebControls.LinqDataSource> control, that value is also set for the GroupBy property of the <xref:System.Web.UI.WebControls.LinqDataSourceView> control. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.GroupBy> property of the <xref:System.Web.UI.WebControls.LinqDataSource> control.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GroupByParameters">
@@ -1155,9 +1212,17 @@
         <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of parameters whose values are used to create the GroupBy clause during the select operation.</summary>
+        <value>A collection of the parameters that are used to create the GroupBy clause.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.GroupByParameters?displayProperty=nameWithType> property.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HandleValidationErrors">
@@ -1205,10 +1270,23 @@
         <Parameter Name="values" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="values">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="values">A dictionary that specifies the data to insert.</param>
+        <summary>Performs an insert operation.</summary>
+        <returns>The number of rows that were inserted into the data source.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The `Insert` method calls the <xref:System.Web.UI.WebControls.LinqDataSourceView.ExecuteInsert(System.Collections.IDictionary)> method, passing the values parameter.
+
+For information about how to insert data through the <xref:System.Web.UI.WebControls.LinqDataSource> control, see the <xref:System.Web.UI.WebControls.LinqDataSource.Insert(System.Collections.IDictionary)> method of the <xref:System.Web.UI.WebControls.LinqDataSource> class.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control cannot create the data classes.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.LinqDataSourceView.CanInsert" /> property is <see langword="false" />.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSource.Insert(System.Collections.IDictionary)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="InsertDataObject">
@@ -1341,9 +1419,18 @@
         <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of parameters that are used during the insert operation.</summary>
+        <value>A collection that contains the parameters that are used during the insert operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.InsertParameters?displayProperty=nameWithType> property.
+
+]]></format>
+        </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSourceView.Insert(System.Collections.IDictionary)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -1365,9 +1452,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.LinqDataSourceView" /> object is saving changes to its view state.</summary>
+        <value><see langword="true" /> if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The IsTrackingViewState property is set to true when you call the <xref:System.Web.UI.WebControls.LinqDataSourceView.TrackViewState> method of the <xref:System.Web.UI.WebControls.LinqDataSourceView> class or the <xref:System.Web.UI.WebControls.LinqDataSource.TrackViewState> method of the <xref:System.Web.UI.WebControls.LinqDataSource> class.
+
+]]></format>
+        </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSourceView.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSourceView.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSourceView.TrackViewState" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1392,9 +1490,22 @@
         <Parameter Name="savedState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="savedState">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="savedState">The <see cref="T:System.Web.UI.WebControls.LinqDataSourceView" /> control state to restore.</param>
+        <summary>Restores the previously saved view state for the data source view.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This method is primarily used by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://docs.microsoft.com/previous-versions/aspnet/75x4ha6s(v=vs.100)).
+
+The `LoadViewState` method restores view-state information for the <xref:System.Web.UI.WebControls.LinqDataSourceView> object from a previous page request that was saved by the <xref:System.Web.UI.WebControls.LinqDataSourceView.SaveViewState> method.
+
+]]></format>
+        </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSourceView.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSourceView.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSourceView.TrackViewState" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnContextCreated">
@@ -1821,9 +1932,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name or names of the properties to use during the select operation for sorting data.</summary>
+        <value>A value that is used to create the <c>OrderBy</c> clause.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+When you set the <xref:System.Web.UI.WebControls.LinqDataSource.OrderBy> property of the <xref:System.Web.UI.WebControls.LinqDataSource> control, that value is also set for the OrderBy property of the <xref:System.Web.UI.WebControls.LinqDataSourceView> control.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OrderByParameters">
@@ -1842,9 +1961,17 @@
         <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of parameters that are used to create the <c>OrderBy</c> clause.</summary>
+        <value>The parameters that are used to create the <c>OrderBy</c> clause.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.OrderByParameters?displayProperty=nameWithType> property.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OrderGroupsBy">
@@ -1863,9 +1990,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the names of the properties to use during the select operation for sorting grouped data.</summary>
+        <value>A value that is used to create the <c>OrderGroupsBy</c> clause.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+When you set the <xref:System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy> property of the <xref:System.Web.UI.WebControls.LinqDataSource> control, that value is also set for the OrderGroupsBy property of the <xref:System.Web.UI.WebControls.LinqDataSourceView> control.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OrderGroupsByParameters">
@@ -1884,9 +2019,17 @@
         <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of parameters that are used to create the OrderGroupsBy clause.</summary>
+        <value>The parameters that are used to create the OrderGroupsBy clause.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.OrderGroupsByParameters?displayProperty=nameWithType> property.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ResetDataObject">
@@ -1936,9 +2079,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Saves the changes to view state for the <see cref="T:System.Web.UI.WebControls.LinqDataSourceView" /> control since the time that the page was posted back to the server.</summary>
+        <returns>The object that contains the changes to the <see cref="T:System.Web.UI.WebControls.LinqDataSourceView" /> control's view state, or null (Nothing in Visual Basic) if there is no view state associated with the object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The `SaveViewState` method is primarily used by control developers.
+
+View state is the accumulation of the values of the properties for a server control. These values are automatically added to the <xref:System.Web.UI.Control.ViewState> property of the server control, which is an instance of the <xref>:System.Web.UI.StateBag> class. The <xref:System.Web.UI.Control.ViewState> value for the server control is then persisted to a string object after the save-state stage of the server control life cycle.
+
+When view state is saved, the string object that was persisted after the save-state stage of the server control life cycle is rendered to the browser as an HTML hidden element. When you create custom server controls, you can improve efficiency by overriding the `SaveViewState` method and modifying the `ViewState` property for your server control. For more information, see [ASP.NET State Management Overview](https://docs.microsoft.com/previous-versions/aspnet/75x4ha6s(v=vs.100)).
+
+]]></format>
+        </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.LinqDataSourceView.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSourceView.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSourceView.TrackViewState" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2049,9 +2207,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the properties and calculated values that are included in the retrieved data.</summary>
+        <value>A value that is used to create the Select clause.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+When you set the <xref:System.Web.UI.WebControls.LinqDataSource.Select> property of the <xref:System.Web.UI.WebControls.LinqDataSource> control, that value is also set for the SelectNew property of the <xref:System.Web.UI.WebControls.LinqDataSourceView> control.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SelectNewParameters">
@@ -2070,9 +2236,17 @@
         <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of parameters that are used during a data-retrieval operation.</summary>
+        <value>The parameters that are used to create the Select clause.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.SelectParameters?displayProperty=nameWithType> property.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StoreOriginalValues">
@@ -2153,9 +2327,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see the <see cref="P:System.Web.UI.IStateManager.IsTrackingViewState" /> property.</summary>
+        <value><see langword="true" /> if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.LinqDataSourceView> instance is cast to an <xref:System.Web.UI.IStateManager?displayProperty=nameWithType> interface.
+
+]]></format>
+        </remarks>
+        <altmember cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />
+        <altmember cref="T:System.Web.UI.IStateManager" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -2179,9 +2363,19 @@
         <Parameter Name="savedState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="savedState">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="savedState">An object that represents the <see cref="T:System.Web.UI.WebControls.LinqDataSourceView" /> state to restore.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.LinqDataSourceView> instance is cast to the <xref:System.Web.UI.IStateManager> interface.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
+        <altmember cref="T:System.Web.UI.IStateManager" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -2203,9 +2397,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see the <see cref="M:System.Web.UI.IStateManager.SaveViewState" /> method.</summary>
+        <returns>The object that contains the changes to the <see cref="T:System.Web.UI.WebControls.LinqDataSourceView" /> view state, or null (Nothing in Visual Basic) if there is no view state associated with the object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.LinqDataSourceView> instance is cast to the <xref:System.Web.UI.IStateManager> interface.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
+        <altmember cref="T:System.Web.UI.IStateManager" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -2227,8 +2431,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see the IStateManagerTrackViewState method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.LinqDataSourceView> instance is cast to the <xref:System.Web.UI.IStateManager> interface.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
+        <altmember cref="T:System.Web.UI.IStateManager" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TableName">
@@ -2280,8 +2494,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Tracks view state changes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.IStateManager" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -2305,12 +2521,22 @@
         <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="keys">To be added.</param>
-        <param name="values">To be added.</param>
-        <param name="oldValues">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="keys">The row key values for the records to update.</param>
+        <param name="values">The row values to update in the data source.</param>
+        <param name="oldValues">The row values that are evaluated to detect data conflicts.</param>
+        <summary>Performs an update operation.</summary>
+        <returns>The number of rows that were updated in the data source.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The `Update` method calls the <xref:System.Web.UI.WebControls.LinqDataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)> method, passing the keys, values, and oldValues parameters.
+
+For information about how to update data through a <xref:System.Web.UI.WebControls.LinqDataSource> control, see the <xref:System.Web.UI.WebControls.LinqDataSource.Update(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)> method of the <xref:System.Web.UI.WebControls.LinqDataSource> class.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Updated">
@@ -2417,9 +2643,18 @@
         <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of parameters that are used during an update operation.</summary>
+        <value>A collection of the parameters that are used during an update operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.UpdateParameters?displayProperty=nameWithType> property.
+
+]]></format>
+        </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.LinqDataSourceView.Update(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Updating">
@@ -2600,10 +2835,12 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the parameter to validate.</param>
+        <param name="value">The value of the parameter to validate.</param>
+        <summary>Validates that the OrderBy parameter value is a valid field name for the automatically generated <c>OrderBy</c> clause.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The parameter <paramref name="name" /> is not valid.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ValidateParameterName">
@@ -2625,9 +2862,11 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The parameter name to verify.</param>
+        <summary>Verifies that the provided parameter name is valid.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The parameter <paramref name="name" /> is not valid.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ValidateTableType">
@@ -2711,9 +2950,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies what conditions must be true for a record to be included in the retrieved data.</summary>
+        <value>A string that is used to create the Where clause.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+When you set the <xref:System.Web.UI.WebControls.LinqDataSource.Where> property of the <xref:System.Web.UI.WebControls.LinqDataSource> control, that value is also set for the Where property of the <xref:System.Web.UI.WebControls.LinqDataSourceView> control. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Where?displayProperty=nameWithType> property.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
     <Member MemberName="WhereParameters">
@@ -2732,9 +2979,17 @@
         <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of parameters that are used to create the Where clause.</summary>
+        <value>A collection that contains the parameters that are used by the <see cref="P:System.Web.UI.WebControls.LinqDataSourceView.Where" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.WhereParameters?displayProperty=nameWithType> property.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
       </Docs>
     </Member>
   </Members>

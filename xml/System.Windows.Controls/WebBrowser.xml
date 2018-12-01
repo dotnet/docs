@@ -1211,10 +1211,19 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
         <Parameter Name="request" Type="System.Windows.Input.TraversalRequest" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="request">Specifies whether focus should be set to the first or the last tab stop.</param>
+        <summary>For a description of this member, see <see cref="M:System.Windows.Interop.IKeyboardInputSink.TabInto(System.Windows.Input.TraversalRequest)" />.</summary>
+        <returns><see langword="true" /> if the focus has been set as requested; <see langword="false" />, if there are no tab stops.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.WebBrowser> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="~/docs/framework/wpf/advanced/wpf-and-win32-interoperation.md">WPF and Win32 Interoperation Overview</related>
+        <related type="Article" href="~/docs/framework/wpf/advanced/input-overview.md">Input Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator">
@@ -1247,11 +1256,20 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
         <Parameter Name="modifiers" Type="System.Windows.Input.ModifierKeys" />
       </Parameters>
       <Docs>
-        <param name="msg">To be added.</param>
-        <param name="modifiers">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="msg">The message and associated data. Do not modify this structure. It is passed by reference for performance reasons only.</param>
+        <param name="modifiers">Modifier keys.</param>
+        <summary>For a description of this member, see <see cref="M:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />.</summary>
+        <returns><see langword="true" /> if the message was handled by the method implementation; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.WebBrowser> instance is cast to an <xref:System.Windows.Interop.IKeyboardInputSink> interface.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="~/docs/framework/wpf/advanced/wpf-and-win32-interoperation.md">WPF and Win32 Interoperation Overview</related>
+        <related type="Article" href="~/docs/framework/wpf/advanced/input-overview.md">Input Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TabIntoCore">

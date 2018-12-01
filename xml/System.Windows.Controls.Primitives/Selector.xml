@@ -170,7 +170,7 @@
       <Docs>
         <param name="element">Object to query concerning the <see cref="P:System.Windows.Controls.Primitives.Selector.IsSelected" /> property.</param>
         <summary>Gets the value of the <see cref="P:System.Windows.Controls.Primitives.Selector.IsSelected" /> attached property that indicates whether an item is selected.</summary>
-        <returns>Boolean value, **true** if the <see cref="P:System.Windows.Controls.Primitives.Selector.IsSelected" /> property is **true**.</returns>
+        <returns>Boolean value, <see langword="true" /> if the <see cref="P:System.Windows.Controls.Primitives.Selector.IsSelected" /> property is <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,7 +196,7 @@
       <Docs>
         <param name="element">The element from which to read the attached property.</param>
         <summary>Gets a value that indicates whether the keyboard focus is within the <see cref="T:System.Windows.Controls.Primitives.Selector" /></summary>
-        <returns>Value of the property, **true** if the keyboard focus is within the <see cref="T:System.Windows.Controls.Primitives.Selector" />.</returns>
+        <returns>Value of the property, <see langword="true" /> if the keyboard focus is within the <see cref="T:System.Windows.Controls.Primitives.Selector" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

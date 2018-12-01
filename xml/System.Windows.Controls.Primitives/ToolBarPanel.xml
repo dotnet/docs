@@ -1,4 +1,4 @@
-﻿<Type Name="ToolBarPanel" FullName="System.Windows.Controls.Primitives.ToolBarPanel">
+<Type Name="ToolBarPanel" FullName="System.Windows.Controls.Primitives.ToolBarPanel">
   <TypeSignature Language="C#" Value="public class ToolBarPanel : System.Windows.Controls.StackPanel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ToolBarPanel extends System.Windows.Controls.StackPanel" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.ToolBarPanel" />
@@ -97,9 +97,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">Specified index. Index must be between 0 and the count of the visual children.</param>
+        <summary>Gets the child at a specified index.</summary>
+        <returns>Returns the child at the specified index.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,8 +145,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of <see cref="T:System.Windows.Controls.ToolBar" /> items that are currently visible.</summary>
+        <value>Returns the number of visible items.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

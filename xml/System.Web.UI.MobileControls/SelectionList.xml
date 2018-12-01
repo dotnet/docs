@@ -1000,13 +1000,14 @@
         <returns>
           <see langword="true" /> if the state of the <see cref="T:System.Web.UI.MobileControls.SelectionList" /> changes as a result of the postback; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
+          <format type="text/markdown"><![CDATA[
+
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.SelectionList> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
-  
- ]]></format>
+
+]]></format>
         </remarks>
+        <forInternalUseOnly />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/x3z6e839(v=vs.85)">Creating New Controls</related>
         <related type="Article" href="https://msdn.microsoft.com/library/32797836-044C-433A-9DA5-F25C9D71AA95">Creating Custom Mobile Controls</related>

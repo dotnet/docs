@@ -28,7 +28,8 @@
   
  Panel elements do not receive focus by default. To compel a panel element to receive focus, set the <xref:System.Windows.UIElement.Focusable%2A> property to `true`.  
   
- **Note:** The position of child elements of a <xref:System.Windows.Controls.DockPanel> on the screen is determined by the <xref:System.Windows.Controls.DockPanel.Dock%2A> property of the respective child elements *and* the relative order of those child elements under the <xref:System.Windows.Controls.DockPanel>. Therefore, a set of child elements with the same Dock property values can be positioned differently on the screen depending on the order of these children under the <xref:System.Windows.Controls.DockPanel>. Child ordering effects positioning because the <xref:System.Windows.Controls.DockPanel> iterates through its child elements in order, setting the position of each element depending on remaining space.  
+ > [!NOTE] 
+ > The position of child elements of a <xref:System.Windows.Controls.DockPanel> on the screen is determined by the <xref:System.Windows.Controls.DockPanel.Dock%2A> property of the respective child elements *and* the relative order of those child elements under the <xref:System.Windows.Controls.DockPanel>. Therefore, a set of child elements with the same Dock property values can be positioned differently on the screen depending on the order of these children under the <xref:System.Windows.Controls.DockPanel>. Child ordering effects positioning because the <xref:System.Windows.Controls.DockPanel> iterates through its child elements in order, setting the position of each element depending on remaining space.  
   
  ]]></format>
     </remarks>
@@ -106,7 +107,8 @@
 ## Remarks  
  If you set the <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property to `true`, which is the default setting, the last child element of a <xref:System.Windows.Controls.DockPanel> always fills the remaining space, regardless of any other dock value that you set on the last child element. To.dock a child element in another direction, you must set the <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property to `false` and must also specify an explicit dock direction on the last child element.  
   
- **Note:** The position of child elements of a <xref:System.Windows.Controls.DockPanel> on the screen is determined by the <xref:System.Windows.Controls.DockPanel.Dock%2A> property of the respective child elements *and* the relative order of those child elements under the <xref:System.Windows.Controls.DockPanel>. Therefore, a set of child elements with the same Dock property values can be positioned differently on the screen depending on the order of these children under the <xref:System.Windows.Controls.DockPanel>. Child ordering effects positioning because the <xref:System.Windows.Controls.DockPanel> iterates through its child elements in order, setting the position of each element depending on remaining space.  
+ > [!NOTE] 
+ > The position of child elements of a <xref:System.Windows.Controls.DockPanel> on the screen is determined by the <xref:System.Windows.Controls.DockPanel.Dock%2A> property of the respective child elements *and* the relative order of those child elements under the <xref:System.Windows.Controls.DockPanel>. Therefore, a set of child elements with the same Dock property values can be positioned differently on the screen depending on the order of these children under the <xref:System.Windows.Controls.DockPanel>. Child ordering effects positioning because the <xref:System.Windows.Controls.DockPanel> iterates through its child elements in order, setting the position of each element depending on remaining space.  
   
 <a name="dependencyPropertyInfo_Dock"></a>   
 ## Dependency Property Information  

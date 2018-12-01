@@ -556,13 +556,14 @@
         <param name="savedState">To be added.</param>
         <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
+          <format type="text/markdown"><![CDATA[
+
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListFieldCollection> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
- ]]></format>
+
+]]></format>
         </remarks>
+        <forInternalUseOnly />
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/d7hb3s0f(v=vs.85)">Introduction to the ObjectList Control</related>
       </Docs>

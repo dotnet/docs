@@ -1,4 +1,4 @@
-﻿<Type Name="AnnotationResource" FullName="System.Windows.Annotations.AnnotationResource">
+<Type Name="AnnotationResource" FullName="System.Windows.Annotations.AnnotationResource">
   <TypeSignature Language="C#" Value="public sealed class AnnotationResource : System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AnnotationResource extends System.Object implements class System.ComponentModel.INotifyPropertyChanged, class System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.AnnotationResource" />
@@ -335,7 +335,7 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type or member supports the Windows Presentation Foundation (WPF) infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

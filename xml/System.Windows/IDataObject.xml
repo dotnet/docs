@@ -308,17 +308,17 @@
   
  Call <xref:System.Windows.IDataObject.GetFormats%2A> to obtain a list of all the formats that are available in this data object.  
   
- This method returns **true** when:  
+ This method returns `true` when:  
   
--   The *autoConvert* parameter is **true** and the data is in the specified format, or it can be converted to the specified format.  
+-   The *autoConvert* parameter is `true` and the data is in the specified format, or it can be converted to the specified format.  
   
--   The *autoConvert* parameter is **false** and the data is in the specified format.  
+-   The *autoConvert* parameter is `false` and the data is in the specified format.  
   
- This method returns **false** when:  
+ This method returns `false` when:  
   
--   The *autoConvert* parameter is **true** and the data is not available in the specified format and cannot be converted to the specified format.  
+-   The *autoConvert* parameter is `true` and the data is not available in the specified format and cannot be converted to the specified format.  
   
--   The *autoConvert* parameter is **false**, and the data is not available in the specified format.  
+-   The *autoConvert* parameter is `false`, and the data is not available in the specified format.  
   
  ]]></format>
         </remarks>

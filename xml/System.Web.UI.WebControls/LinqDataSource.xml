@@ -1056,10 +1056,22 @@
         <Parameter Name="viewName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="viewName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="viewName">The name of the view to retrieve, which must be "DefaultView".</param>
+        <summary>Returns the data source view that is associated with the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> object.</summary>
+        <returns>The data source view that is associated with the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one data source view. The <xref:System.Web.UI.WebControls.LinqDataSourceView> object has a default name of "DefaultView". The <xref:System.Web.UI.WebControls.LinqDataSourceView> object defines the data source control's capabilities, retrieves data from the underlying database, and performs operations such as sort, insert, delete, and update.
+
+]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <p>viewName is null (Nothing in Visual Basic) or something other than "DefaultView".</p>
+        </exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178359(v=vs.110)">ASP.NET Data Access Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetViewNames">
@@ -1082,9 +1094,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a collection of names that represents the list of view objects that are associated with the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control.</summary>
+        <returns>A collection with one element that contains the name "DefaultView".</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one view on its underlying data, which is named `DefaultView`. The `GetViewNames` method therefore returns a collection with only one element, which contains this view name.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178359(v=vs.110)">ASP.NET Data Access Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GroupBy">
@@ -1486,9 +1507,18 @@ End Sub
         <Parameter Name="savedState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="savedState">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="savedState">An object that represents the state of the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control.</param>
+        <summary>Loads the state of the values in the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control that must be persisted.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The `LoadViewState` method is used to load the previously saved view state of the <xref:System.Web.UI.WebControls.LinqDataSource> control.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178359(v=vs.110)">ASP.NET Data Access Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -1781,9 +1811,11 @@ End Sub
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Saves the current view state of the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control.</summary>
+        <returns>An object that contains the saved state of the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178359(v=vs.110)">ASP.NET Data Access Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2269,8 +2301,10 @@ protected void LinqDataSource_Selecting(object sender,
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Tracks view state changes to the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control so that the changes can be stored in the <see cref="T:System.Web.UI.StateBag" /> object for the control.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178359(v=vs.110)">ASP.NET Data Access Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Update">

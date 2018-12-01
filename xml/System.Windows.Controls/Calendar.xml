@@ -222,7 +222,7 @@ Calendar with dates that cannot be selected
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.CalendarButtonStyleProperty>|  
-|Metadata properties set to **true**|None|  
+|Metadata properties set to `true`|None|  
   
  ]]></format>
         </remarks>
@@ -293,7 +293,7 @@ Calendar with dates that cannot be selected
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.CalendarDayButtonStyleProperty>|  
-|Metadata properties set to **true**|None|  
+|Metadata properties set to `true`|None|  
   
  ]]></format>
         </remarks>
@@ -364,7 +364,7 @@ Calendar with dates that cannot be selected
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.CalendarItemStyleProperty>|  
-|Metadata properties set to **true**|None|  
+|Metadata properties set to `true`|None|  
   
  ]]></format>
         </remarks>
@@ -428,7 +428,7 @@ Calendar with dates that cannot be selected
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.DisplayDateProperty>|  
-|Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
   
 <a name="xamlAttributeUsage_DisplayDate"></a>   
 ## XAML Attribute Usage  
@@ -526,7 +526,7 @@ Calendar with dates that cannot be selected
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.DisplayDateEndProperty>|  
-|Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
   
 <a name="xamlAttributeUsage_DisplayDateEnd"></a>   
 ## XAML Attribute Usage  
@@ -624,7 +624,7 @@ Calendar with dates that cannot be selected
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.DisplayDateStartProperty>|  
-|Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
   
 <a name="xamlAttributeUsage_DisplayDateStart"></a>   
 ## XAML Attribute Usage  
@@ -708,7 +708,7 @@ Calendar with dates that cannot be selected
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.DisplayModeProperty>|  
-|Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
   
    
   
@@ -820,7 +820,7 @@ Calendar with dates that cannot be selected
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.FirstDayOfWeekProperty>|  
-|Metadata properties set to **true**|None|  
+|Metadata properties set to `true`|None|  
   
 <a name="xamlAttributeUsage_FirstDayOfWeek"></a>   
 ## XAML Attribute Usage  
@@ -887,7 +887,7 @@ Calendar with dates that cannot be selected
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.IsTodayHighlightedProperty>|  
-|Metadata properties set to **true**|None|  
+|Metadata properties set to `true`|None|  
   
 <a name="xamlAttributeUsage_IsTodayHighlighted"></a>   
 ## XAML Attribute Usage  
@@ -1198,7 +1198,7 @@ Calendar with dates that cannot be selected
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.SelectedDateProperty>|  
-|Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
   
  Use this property when <xref:System.Windows.Controls.Calendar.SelectionMode%2A> is set to <xref:System.Windows.Controls.CalendarSelectionMode.SingleDate>. In other modes, this property will always be the first date in <xref:System.Windows.Controls.Calendar.SelectedDates%2A>.  
   
@@ -1401,7 +1401,7 @@ Calendar with dates that cannot be selected
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Calendar.SelectionModeProperty>|  
-|Metadata properties set to **true**|None|  
+|Metadata properties set to `true`|None|  
   
  This property determines whether the <xref:System.Windows.Controls.Calendar> allows no selection, selection of a single date, or selection of multiple dates. The selection mode is specified with the <xref:System.Windows.Controls.CalendarSelectionMode> enumeration.  
   

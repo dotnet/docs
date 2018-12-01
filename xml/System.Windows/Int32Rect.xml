@@ -185,7 +185,7 @@
       <Docs>
         <param name="o">The object to compare to the current rectangle.</param>
         <summary>Determines whether the specified rectangle is equal to this rectangle.</summary>
-        <returns>**true** if *o* is an <see cref="T:System.Windows.Int32Rect" /> and the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" /> as this rectangle; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if <paramref name="o" /> is an <see cref="T:System.Windows.Int32Rect" /> and the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" /> as this rectangle; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -218,7 +218,7 @@
       <Docs>
         <param name="value">The rectangle to compare to the current rectangle.</param>
         <summary>Determines whether the specified rectangle is equal to this rectangle.</summary>
-        <returns>**true** if both rectangles have the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" /> as this rectangle; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if both rectangles have the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" /> as this rectangle; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -253,7 +253,7 @@
         <param name="int32Rect1">The first rectangle to compare.</param>
         <param name="int32Rect2">The second rectangle to compare.</param>
         <summary>Determines whether the specified rectangles are equal.</summary>
-        <returns>**true** if *int32Rect1* and *int32Rect2* have the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" />; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if <paramref name="int32Rect1" /> and <paramref name="int32Rect2" /> have the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -304,7 +304,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="P:System.Windows.Int32Rect.Width" /> and <see cref="P:System.Windows.Int32Rect.Height" /> properties of the <see cref="T:System.Windows.Int32Rect" /> are greater than 0.</summary>
-        <value>true if the <see cref="P:System.Windows.Int32Rect.Width" /> and <see cref="P:System.Windows.Int32Rect.Height" /> properties of the <see cref="T:System.Windows.Int32Rect" /> are greater than 0; otherwise, <paramref name="false" />.</value>
+        <value><see langword="true" /> if the <see cref="P:System.Windows.Int32Rect.Width" /> and <see cref="P:System.Windows.Int32Rect.Height" /> properties of the <see cref="T:System.Windows.Int32Rect" /> are greater than 0; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -356,7 +356,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the rectangle is empty.</summary>
-        <value>**true** if the rectangle is empty; otherwise, **false**. The default value is **true**.</value>
+        <value><see langword="true" /> if the rectangle is empty; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -384,7 +384,7 @@
         <param name="int32Rect1">The first rectangle to compare.</param>
         <param name="int32Rect2">The second rectangle to compare.</param>
         <summary>Compares two rectangles for exact equality.</summary>
-        <returns>**true** if *int32Rect1* and *int32Rect2* have the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" />; otherwise, **false**.</returns>
+        <returns><see langword="true" /> if <paramref name="int32Rect1" /> and <paramref name="int32Rect2" /> have the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Int32Rect.Equals%28System.Windows.Int32Rect%2CSystem.Windows.Int32Rect%29?displayProperty=nameWithType>]]></format>
         </remarks>
@@ -414,7 +414,7 @@
         <param name="int32Rect1">The first rectangle to compare.</param>
         <param name="int32Rect2">The second rectangle to compare.</param>
         <summary>Compares two rectangles for inequality.</summary>
-        <returns>**false** if *int32Rect1* and *int32Rect2* have the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" />; otherwise, if all of these values are the same, then **true**.</returns>
+        <returns><see langword="false" /> if <paramref name="int32Rect1" /> and <paramref name="int32Rect2" /> have the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" />; otherwise, if all of these values are the same, then <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is the negation of <xref:System.Windows.Int32Rect.Equals%2A>.]]></format>
         </remarks>

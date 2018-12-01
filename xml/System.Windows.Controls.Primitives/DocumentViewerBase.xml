@@ -110,7 +110,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether or not the viewer can jump to the next page in the current <see cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.Document" />.</summary>
-        <value>**true** if the viewer can jump to the next page; otherwise, **false**.  
+        <value><see langword="true" /> if the viewer can jump to the next page; otherwise, <see langword="false" />.  
   
  This property has no default value.</value>
         <remarks>
@@ -237,7 +237,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether or not the viewer can jump to the previous page in the current <see cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.Document" />.</summary>
-        <value>**true** if the viewer can jump to the previous page; otherwise, **false**.  
+        <value><see langword="true" /> if the viewer can jump to the previous page; otherwise, <see langword="false" />.  
   
  This property has no default value.</value>
         <remarks>
@@ -438,7 +438,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
+ The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of `true`.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
   
  ]]></format>
         </remarks>
@@ -470,7 +470,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Controls.Primitives.DocumentPageView> provides a viewport for a particular page of content (represented by an underlying <xref:System.Windows.Documents.DocumentPage>).  The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
+ A <xref:System.Windows.Controls.Primitives.DocumentPageView> provides a viewport for a particular page of content (represented by an underlying <xref:System.Windows.Documents.DocumentPage>).  The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of `true`.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
   
  ]]></format>
         </remarks>
@@ -725,7 +725,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
+ The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of `true`.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
   
 <a name="dependencyPropertyInfo_MasterPageNumber"></a>   
 ## Dependency Property Information  
@@ -1135,7 +1135,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
+ The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of `true`.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
   
  ]]></format>
         </remarks>
@@ -1383,7 +1383,7 @@
 ## Remarks  
  A <xref:System.Windows.Controls.Primitives.DocumentPageView> provides a viewport for a particular page of content (represented by an underlying <xref:System.Windows.Documents.DocumentPage>).  The set of <xref:System.Windows.Controls.Primitives.DocumentPageView> objects represented by the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> property is used by the viewer in order to display content.  
   
- The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
+ The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of `true`.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
   
  ]]></format>
         </remarks>
@@ -1509,7 +1509,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of **true**.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
+ The master page corresponds to the <xref:System.Windows.Controls.Primitives.DocumentPageView> object (in the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews%2A> collection) that includes the <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A> attached property with a value of `true`.  For more information, see <xref:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage%2A>.  
   
  ]]></format>
         </remarks>

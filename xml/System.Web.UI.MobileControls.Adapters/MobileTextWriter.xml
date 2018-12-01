@@ -566,9 +566,11 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The string to be encoded.</param>
+        <summary>Writes the given text, encoding it correctly for the target device. Derived writer classes can override this method.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="WriteEncodedUrl">
@@ -590,9 +592,20 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="url">The URL string.</param>
+        <summary>Writes the given URL, encoding it correctly for the target device. The URL might include parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The URL is translated in accordance with the specification for URL encoding. For example, spaces in the main part of the URL are translated into %20, spaces in the parameter part of the URL are translated into plus (+) signs, the '/' character is translated into %2f, and so forth.
+
+Derived writer classes can override this method.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="WriteEncodedUrlParameter">
@@ -614,9 +627,18 @@
         <Parameter Name="urlText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="urlText">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="urlText">The URL string.</param>
+        <summary>Writes the given URL parameter text, encoding it correctly for the target device.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Inherited writer classes can override this method.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="WriteUrlEncodedString">
@@ -639,10 +661,19 @@
         <Parameter Name="argument" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="s">To be added.</param>
-        <param name="argument">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="s">The string to be added.</param>
+        <param name="argument">If argument is <see langword="true" />, the encoding is done as if the string were a part of the URL parameters. If argument is <see langword="false" />, the encoding is done as if the string were part of the path portion of the URL.</param>
+        <summary>Writes the given string, encoding it according to URL requirements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The <xref:System.Web.UI.MobileControls.Adapters.MobileTextWriter.WriteEncodedUrl(System.String)> and <xref:System.Web.UI.MobileControls.Adapters.MobileTextWriter.WriteEncodedUrlParameter(System.String)> methods use this method as a utility method.
+
+]]></format>
+        </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/67276kc5(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/htxac286(v=vs.100)">Adapter Sets Functionality</related>
       </Docs>
     </Member>
   </Members>

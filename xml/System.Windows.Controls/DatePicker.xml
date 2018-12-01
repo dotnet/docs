@@ -281,7 +281,7 @@ DatePicker with dates that are not selectable
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.DatePicker.CalendarStyleProperty>|  
-|Metadata properties set to **true**|None|  
+|Metadata properties set to `true`|None|  
   
 <a name="xamlAttributeUsage_CalendarStyle"></a>   
 ## XAML Attribute Usage  
@@ -412,7 +412,7 @@ DatePicker with dates that are not selectable
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.DatePicker.DisplayDateProperty>|  
-|Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
   
  This property allows the developer to specify a date to display if <xref:System.Windows.Controls.DatePicker.SelectedDate%2A> is `null`.  
   
@@ -471,7 +471,7 @@ DatePicker with dates that are not selectable
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.DatePicker.DisplayDateEndProperty>|  
-|Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
   
 <a name="xamlAttributeUsage_DisplayDateEnd"></a>   
 ## XAML Attribute Usage  
@@ -569,7 +569,7 @@ DatePicker with dates that are not selectable
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.DatePicker.DisplayDateStartProperty>|  
-|Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
   
 <a name="xamlAttributeUsage_DisplayDateStart"></a>   
 ## XAML Attribute Usage  
@@ -647,7 +647,7 @@ DatePicker with dates that are not selectable
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.DatePicker.FirstDayOfWeekProperty>|  
-|Metadata properties set to **true**|None|  
+|Metadata properties set to `true`|None|  
   
 <a name="xamlAttributeUsage_FirstDayOfWeek"></a>   
 ## XAML Attribute Usage  
@@ -738,7 +738,7 @@ DatePicker with dates that are not selectable
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.DatePicker.IsDropDownOpenProperty>|  
-|Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
   
  Setting this property will cause the <xref:System.Windows.Controls.Calendar> drop-down to open or close.  
   
@@ -811,7 +811,7 @@ DatePicker with dates that are not selectable
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.DatePicker.IsTodayHighlightedProperty>|  
-|Metadata properties set to **true**|None|  
+|Metadata properties set to `true`|None|  
   
 <a name="xamlAttributeUsage_IsTodayHighlighted"></a>   
 ## XAML Attribute Usage  
@@ -1054,7 +1054,7 @@ DatePicker with dates that are not selectable
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.DatePicker.SelectedDateProperty>|  
-|Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
   
 <a name="xamlAttributeUsage_SelectedDate"></a>   
 ## XAML Attribute Usage  
@@ -1163,7 +1163,7 @@ DatePicker with dates that are not selectable
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.DatePicker.SelectedDateFormatProperty>|  
-|Metadata properties set to **true**|None|  
+|Metadata properties set to `true`|None|  
   
 <a name="xamlAttributeUsage_SelectedDateFormat"></a>   
 ## XAML Attribute Usage  
@@ -1255,7 +1255,7 @@ DatePicker with dates that are not selectable
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.DatePicker.TextProperty>|  
-|Metadata properties set to **true**|None|  
+|Metadata properties set to `true`|None|  
   
 <a name="xamlAttributeUsage_Text"></a>   
 ## XAML Attribute Usage  

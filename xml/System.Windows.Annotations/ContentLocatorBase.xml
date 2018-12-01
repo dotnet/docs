@@ -83,8 +83,18 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Occurs when a change is made to a content locator property.
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Annotations.ContentLocatorBase> instance is cast to an <xref:System.ComponentModel.INotifyPropertyChanged> interface.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

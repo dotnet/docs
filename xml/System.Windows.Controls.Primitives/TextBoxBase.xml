@@ -235,7 +235,8 @@
   
  When <xref:System.Windows.Controls.Primitives.TextBoxBase.AutoWordSelection%2A> is disabled, a selection is not automatically expanded to include whole words; in this case, precise selections are always determined manually.  
   
- **Note:** Auto selection does not affect the first word that the user drags across. It is only after this first word boundary is crossed that auto selection takes effect.  
+ > [!NOTE] 
+ > Auto selection does not affect the first word that the user drags across. It is only after this first word boundary is crossed that auto selection takes effect.  
   
 <a name="dependencyPropertyInfo_AutoWordSelection"></a>   
 ## Dependency Property Information  
@@ -292,8 +293,10 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- **Note:** When you call <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A>, you must also call <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> to complete the change block otherwise an exception will be thrown.  
+## Remarks
+
+ > [!NOTE] 
+ > When you call <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A>, you must also call <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> to complete the change block otherwise an exception will be thrown.  
   
  A change block logically groups multiple changes into a single undo unit and prevents text content or selection change events from being raised until after the change block. This way you can make multiple edits to the text element without the danger of the text element being changed at the same time by another listener. A change block is created by calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.DeclareChangeBlock%2A> method. Calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A> method causes all subsequent changes to be included in the specified change block until a corresponding call to the <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> method is made.  
   
@@ -586,7 +589,8 @@ TextBox with CaretBrush set to blue
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- **Note:** When you call <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A>, you must also call <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> to complete the change block otherwise an exception will be thrown.  
+ > [!NOTE] 
+ > When you call <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A>, you must also call <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> to complete the change block otherwise an exception will be thrown.  
   
  A change block logically groups multiple changes into a single undo unit and prevents text content or selection change events from being raised until after the change block. This way you can make multiple edits to the text element without the danger of the text element being changed at the same time by another process. A change block is created by calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.DeclareChangeBlock%2A> method. Calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A> method causes all subsequent changes to be included in the specified change block until a corresponding call to the <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> method is made.  
   

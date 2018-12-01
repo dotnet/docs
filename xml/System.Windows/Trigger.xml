@@ -115,7 +115,7 @@
    
   
 ## Examples  
- The following example contains two triggers. The first changes the <xref:System.Windows.Controls.Control.Background%2A> property of a <xref:System.Windows.Controls.Button> when the <xref:System.Windows.UIElement.IsMouseOver%2A> property is **true**. The second changes the <xref:System.Windows.Controls.Control.Foreground%2A> property of a button when the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property is **true**. The <xref:System.Windows.Style.TargetType%2A> of the <xref:System.Windows.Style> is set to <xref:System.Windows.Controls.Button> and therefore there is no need to qualify the `Property` properties with the class name.  
+ The following example contains two triggers. The first changes the <xref:System.Windows.Controls.Control.Background%2A> property of a <xref:System.Windows.Controls.Button> when the <xref:System.Windows.UIElement.IsMouseOver%2A> property is `true`. The second changes the <xref:System.Windows.Controls.Control.Foreground%2A> property of a button when the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property is `true`. The <xref:System.Windows.Style.TargetType%2A> of the <xref:System.Windows.Style> is set to <xref:System.Windows.Controls.Button> and therefore there is no need to qualify the `Property` properties with the class name.  
   
  [!code-xaml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
   
@@ -452,7 +452,7 @@
    
   
 ## Examples  
- The following example changes the <xref:System.Windows.Controls.Control.Foreground%2A> property of a button when the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property is **true**.  
+ The following example changes the <xref:System.Windows.Controls.Control.Foreground%2A> property of a button when the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property is `true`.  
   
  [!code-xaml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
   

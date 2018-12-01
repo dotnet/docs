@@ -1,4 +1,4 @@
-﻿<Type Name="ToolTipService" FullName="System.Windows.Controls.ToolTipService">
+<Type Name="ToolTipService" FullName="System.Windows.Controls.ToolTipService">
   <TypeSignature Language="C#" Value="public static class ToolTipService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed ToolTipService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ToolTipService" />
@@ -1027,8 +1027,19 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets whether a tooltip is currently visible.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+To determine whether a tooltip can appear, check the value of the <xref:System.Windows.Controls.ToolTipService.IsEnabled> property.
+
+This is an attached property. For information about how to get the value of this property in code, see the <xref:System.Windows.Controls.ToolTipService.GetIsOpen%2A> method.
+
+]]></format>
+        </remarks>
+        <altmember cref="P:System.Windows.Controls.ToolTipService.IsEnabled" />
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetIsOpen(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="IsOpenProperty">

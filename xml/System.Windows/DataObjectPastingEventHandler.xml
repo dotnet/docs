@@ -40,7 +40,8 @@
   
 -   Cancel the paste operation by calling <xref:System.Windows.DataObjectEventArgs.CancelCommand%2A>.  
   
- **Important** If the paste format is changed, the handler method is responsible for ensuring that a newly selected paste format is consumable by the paste target.  
+ > [!IMPORTANT] 
+ > If the paste format is changed, the handler method is responsible for ensuring that a newly selected paste format is consumable by the paste target.  
   
  ]]></format>
     </remarks>

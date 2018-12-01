@@ -1030,8 +1030,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Defines the notification characteristics of a particular live region.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.AutomationProperties.GetLiveSetting(System.Windows.DependencyObject)" />
+        <altmember cref="M:System.Windows.Automation.AutomationProperties.SetLiveSetting(System.Windows.DependencyObject,System.Windows.Automation.AutomationLiveSetting)" />
       </Docs>
     </Member>
     <Member MemberName="LiveSettingProperty">

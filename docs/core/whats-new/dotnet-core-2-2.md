@@ -12,9 +12,10 @@ ms.date: 12/04/2018
 
 .NET Core 2.2 includes enhancements and new features in the following areas:
 
-- [Core](core)
-- [Data](data)
+- [Core](#core)
+- [Data](#data)
 - [JIT compilation improvements](#jit-compiler-improvements)
+- [Runtime](#runtime)
 
 ## Core
 
@@ -62,13 +63,13 @@ In addition, .NET Core 2.2 adds the following two properties to the <xref:System
 
 **AAD authentication to Azure SQL databases with the SqlConnection.AccessToken property**
 
-Starting with .NET Core 2.2, an access token issued by Azure Active Directory can be used to authenticate to an Azure SQL database. To support access tokens, the <xref:System.Data.SqlClient.SqlConnection.AccessToken> property has been added to the <xref:System.Data.SqlClient.SqlConnection> class. To take advantage of AAD authentication, download version 4.6 of the System.Data.SqlClient NuGet package.
+Starting with .NET Core 2.2, an access token issued by Azure Active Directory can be used to authenticate to an Azure SQL database. To support access tokens, the <xref:System.Data.SqlClient.SqlConnection.AccessToken> property has been added to the <xref:System.Data.SqlClient.SqlConnection> class. To take advantage of AAD authentication, download version 4.6 of the System.Data.SqlClient NuGet package. In order to use the feature, you can obtain the access token value using the [Active Directory Authentication Library for .NET](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet) contained in the [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) NuGet package.
 
 ## JIT compiler improvements
 
-**Tiered compilation is enabled by default**
+**Tiered compilation remains an opt-in feature**
 
-In .NET Core 2.1, the JIT compiler implemented a new compiler technology, *tiered compilation*. The goal of tiered compilation is improved performance. One of the important tasks performed by the JIT compiler is optimizing code execution. For little-used code paths, however, the compiler may spend more time optimizing code than the runtime spends executing unoptimized code. Tiered compilation introduces two stages in JIT compilation:
+In .NET Core 2.1, the JIT compiler implemented a new compiler technology, *tiered compilation*, as an opt-in feature. The goal of tiered compilation is improved performance. One of the important tasks performed by the JIT compiler is optimizing code execution. For little-used code paths, however, the compiler may spend more time optimizing code than the runtime spends executing unoptimized code. Tiered compilation introduces two stages in JIT compilation:
 
 - A **first tier**, which generates code as quickly as possible.
 
@@ -76,23 +77,17 @@ In .NET Core 2.1, the JIT compiler implemented a new compiler technology, *tiere
 
 For information on the performance improvement that can result from tiered compilation, see [Announcing .NET Core 2.2 Preview 2](https://blogs.msdn.microsoft.com/dotnet/2018/09/12/announcing-net-core-2-2-preview-2/). 
 
-In .NET Core 2.1, tiered compilation was disabled by default; you had to explicitly opt in to take advantage of it. In .NET Core 2.2, on the other hand, tiered compilation is enabled by default. You can still disable tiered compilation in either of two ways.
+In .NET Core 2.2 Preview 2, tiered compilation was enabled by default. However, we've decided that we are still not ready to enable tiered compilation by default. So in .NET Core 2.2, tiered compilation continues to be an opt-in feature.
 
-- To disable tiered compilation in all projects that use the .NET Core 2.2 SDK, set the following environment variable:
+## Runtime
 
-  ```console
-  COMPlus_TieredCompilation="0"
-  ```
+**Injecting code prior to executing the Main method**
 
-- To disable tiered compilation on a per-project basis, add the `<TieredCompilation>` property to the `<PropertyGroup>` section of the MSBuild project file, as the following example shows:
+Starting with .NET Core 2.2, you can use a startup hook to inject code prior to running an application's Main method. Startup hooks make it possible for a host to customize the behavior of applications after they have been deployed without needing to recompile or change the application.
 
-   ```xml
-   <PropertyGroup>
-      <!-- other property definitions -->
+We expect hosting providers to define custom configuration and policy, including settings that potentially influence the load behavior of the main entry point, such as the <xref:System.Runtime.Loader.AssemblyLoadContext?displayProperty=nameWithType> behavior. The hook can be used to set up tracing or telemetry injection, to set up callbacks for handling, or to define other environment-dependent behavior. The hook is separate from the entry point, so that user code doesn't need to be modified.
 
-      <TieredCompilation>false</TieredCompilation>
-   </PropertyGroup>
-   ```
+See [Host startup hook](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/host-startup-hook.md) for more information.
 
 ## See also
 

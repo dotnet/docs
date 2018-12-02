@@ -1,7 +1,7 @@
 ---
 title: Design with nullable reference types
 description: This advanced tutorial provides an introduction to nullable reference types. You'll learn to express your design intent on when reference values may be null, and have the compiler enforce when they cannot be null.
-ms.date: 11/30/2018
+ms.date: 12/03/2018
 ---
 # Tutorial: Express your design intent more clearly with nullable and non-nullable reference types
 
@@ -337,4 +337,4 @@ Experiment by changing the type declarations between nullable and non-nullable r
 
 Learn more by reading an overview of nullable reference types...
 > [!div class="nextstepaction"]
-> [Next steps button](../programming-guide/nullable-references.md)
+> [Next steps button](../nullable-references.md)

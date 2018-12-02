@@ -17,13 +17,13 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You’ll need to setup your machine to run .NET Core, including the C# 8 beta compiler.  The C# 8 beta compiler is available with Visual Studio 2019 preview 1, or .NET Core 3.0 preview 1.
+You’ll need to set up your machine to run .NET Core, including the C# 8 beta compiler.  The C# 8 beta compiler is available with Visual Studio 2019 preview 1, or .NET Core 3.0 preview 1.
 
-This tutorial assumes you are familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
+This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
 
 ## Incorporate nullable reference types into your designs
 
-In this tutorial, you'll build a library that models running a survey. The code uses both nullable reference types and non-nullable reference types to represent the real world concepts. For example, the survey questions would never be null. However, a respondent might prefer not to answer an optional question. The responses might be null in this example.
+In this tutorial, you'll build a library that models running a survey. The code uses both nullable reference types and non-nullable reference types to represent the real world concepts. The survey questions would never be null. A respondent might prefer not to answer an optional question. The responses might be null in this example.
 
 The code you'll write for this sample expresses that intent, and the compiler enforces that intent.
 
@@ -56,25 +56,25 @@ This survey application requires creating a number of classes:
 - A class that models a list of people contacted for the survey.
 - A class that models the answers from a person that took the survey.
 
-These types will make use of both nullable and non-nullable reference types to express which members are required, and which members are optional. Nullable reference types communicates that design intent clearly:
+These types will make use of both nullable and non-nullable reference types to express which members are required, and which members are optional. Nullable reference types communicate that design intent clearly:
 
 - The questions that are part of the survey can never be null: It makes no sense to ask a blank question.
-- The respondents can never be null. You'll want to track people you contacted, even those that declined to participate.
+- The respondents can never be null. You'll want to track people you contacted, even respondents that declined to participate.
 - Any response to a question may be null. Respondents can decline to answer some, or all questions.
 
-If you've programmed in C#, you may be so accustomed to reference types allowing null values that you may have missed other opportunities to declare non-nullable instances:
+If you've programmed in C#, you may be so accustomed to reference types that allow null values that you may have missed other opportunities to declare non-nullable instances:
 
 - The collection of questions should be non-nullable.
 - The collection of respondents should be non-nullable.
 
-As you write the code, you'll see that selecting a non-nullable reference type as the default for references avoids common mistakes that could lead to null reference exceptions. This tutorial points out where you may have made a default decision in your C# coding.
+As you write the code, you'll see that a non-nullable reference type as the default for references avoids common mistakes that could lead to null reference exceptions. This tutorial points out where you may have made a default decision in your C# coding.
 
 The app you'll build will do the following steps:
 
 1. Create a survey and add questions to it.
 1. Create a pseudo-random set of respondents for the survey
 1. Contact respondents until the completed survey size reaches the goal number.
-1. Write out imprtant statistics on the survey responses.
+1. Write out important statistics on the survey responses.
 
 ## Build the survey with nullable and non-nullable types
 
@@ -111,7 +111,7 @@ namespace NullableIntroduction
 }
 ```
 
-Because you haven't initialized `QuestionText`, the compiler issues a warning that a non-nullable property has not been initialized. Your design requires the question text to be non-null, so you add a constructor to initialize it and the `QuestionType` value as well. The finished class definition looks like the following code:
+Because you haven't initialized `QuestionText`, the compiler issues a warning that a non-nullable property hasn't been initialized. Your design requires the question text to be non-null, so you add a constructor to initialize it and the `QuestionType` value as well. The finished class definition looks like the following code:
 
 ```csharp
 #nullable enable
@@ -135,7 +135,7 @@ namespace NullableIntroduction
 }
 ```
 
-Adding the constructor removes the warning. The constructor argument is also a non-nullable reference type, so the compiler does not issue any warnings.
+Adding the constructor removes the warning. The constructor argument is also a non-nullable reference type, so the compiler doesn't issue any warnings.
 
 Next, create a `public` class named `SurveyRun`. Include the `nullable enable` pragma following the `using` statements. This class contains a list of `SurveyQuestion` objects and methods to add questions to the survey, as shown in the following code:
 
@@ -175,7 +175,7 @@ Without the `#nullable enable` pragma at the top of the file, the compiler doesn
 Next, write the code that generates answers to the survey. This involves several small tasks:
 
 1. Build a method that generates respondent objects. These represent people asked to fill out the survey.
-1. Build logic to simulate asking the questions to a respondent, collecting answers or noting that a respondent did not answer.
+1. Build logic to simulate asking the questions to a respondent, collecting answers or noting that a respondent didn't answer.
 1. Repeat until enough respondents have answered the survey.
 
 You'll need a class to represent a survey response, so add that now. Enable nullable support. Add an Id field and a constructor that initializes the ID field, as shown in the following code:
@@ -200,7 +200,7 @@ private static Random idGenerator = new Random();
 public static SurveyResponse GetRandomId() => new SurveyResponse(idGenerator.Next());
 ```
 
-The main responsibility of this this class is to generate the responses for a participant to the questions in the survey. This responsibility has a few steps:
+The main responsibility of this class is to generate the responses for a participant to the questions in the survey. This responsibility has a few steps:
 
 1. Ask for participation in the survey. If the person doesn't consent, return a missing (or null) response.
 1. Ask each question and record the answer. Each answer may also be missing (or null).
@@ -277,7 +277,7 @@ public void PerformSurvey(int numberOfRespondents)
 }
 ```
 
-Here again, your choice of a nullable `List<SurveyResponse>?` indicates that the response may be null. That indicates that the survey has not been given to any respondents yet. Notice that respondents are added until enough have consented.
+Here again, your choice of a nullable `List<SurveyResponse>?` indicates the response may be null. That indicates the survey hasn't been given to any respondents yet. Notice that respondents are added until enough have consented.
 
 The last step to run the survey is to add a call to perform the survey at the end of the `Main` method:
 
@@ -304,7 +304,7 @@ public ICollection<SurveyQuestion> Questions => surveyQuestions;
 public SurveyQuestion GetQuestion(int index) => surveyQuestions[index];
 ```
 
-The `AllParticipants` member must take into account that the `respondents` variable might be null, but the return value can't be null. If you change that expression by removing the `??` and the empty sequence that follows, the compiler warns you that the method might return `null` and its return signature returns a non-nullable type.
+The `AllParticipants` member must take into account that the `respondents` variable might be null, but the return value can't be null. If you change that expression by removing the `??` and the empty sequence that follows, the compiler warns you the method might return `null` and its return signature returns a non-nullable type.
 
 Finally, add the following loop at the bottom of the `Main` method:
 

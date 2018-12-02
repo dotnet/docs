@@ -245,6 +245,7 @@
 ##### [String interpolation](csharp/tutorials/intro-to-csharp/interpolated-strings-local.md)
 ##### [List collections](csharp/tutorials/intro-to-csharp/arrays-and-collections.md)
 ##### [Introduction to classes](csharp/tutorials/intro-to-csharp/introduction-to-classes.md)
+### [Work with nullable reference types](csharo/tutorials/nullable-reference-types.md)
 ### [Console Application](csharp/tutorials/console-teleprompter.md)
 ### [REST Client](csharp/tutorials/console-webapiclient.md)
 ### [Inheritance in C# and .NET](csharp/tutorials/inheritance.md)

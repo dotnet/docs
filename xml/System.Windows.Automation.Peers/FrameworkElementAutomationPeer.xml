@@ -1,4 +1,4 @@
-<Type Name="FrameworkElementAutomationPeer" FullName="System.Windows.Automation.Peers.FrameworkElementAutomationPeer">
+﻿<Type Name="FrameworkElementAutomationPeer" FullName="System.Windows.Automation.Peers.FrameworkElementAutomationPeer">
   <TypeSignature Language="C#" Value="public class FrameworkElementAutomationPeer : System.Windows.Automation.Peers.UIElementAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FrameworkElementAutomationPeer extends System.Windows.Automation.Peers.UIElementAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
@@ -129,9 +129,9 @@
 For example, if the element is a <xref:System.Windows.Controls.ComboBox> control, the <xref:System.Windows.Automation.Peers.AutomationPeer.GetLabeledBy> method could get the <xref:System.Windows.Automation.Peers.AutomationPeer> for the <xref:System.Windows.Controls.Label> that is associated with the <xref:System.Windows.Controls.ComboBox>.
 
 ]]></format>
-      </remarks>
-      <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLabeledBy" />
-      <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLabeledByCore" />
+        </remarks>
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLabeledBy" />
+        <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLabeledByCore" />
       </Docs>
     </Member>
     <Member MemberName="GetNameCore">

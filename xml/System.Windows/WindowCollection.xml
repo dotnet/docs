@@ -144,7 +144,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the <see cref="T:System.Windows.WindowCollection" /> object is thread safe.</summary>
-        <value><see langword="true" /> if the object is thread safe; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the object is thread safe; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

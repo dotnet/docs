@@ -110,7 +110,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether or not the viewer can jump to the next page in the current <see cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.Document" />.</summary>
-        <value><see langword="true" /> if the viewer can jump to the next page; otherwise, <see langword="false" />.  
+        <value>
+          <see langword="true" /> if the viewer can jump to the next page; otherwise, <see langword="false" />.  
   
  This property has no default value.</value>
         <remarks>
@@ -237,7 +238,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether or not the viewer can jump to the previous page in the current <see cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.Document" />.</summary>
-        <value><see langword="true" /> if the viewer can jump to the previous page; otherwise, <see langword="false" />.  
+        <value>
+          <see langword="true" /> if the viewer can jump to the previous page; otherwise, <see langword="false" />.  
   
  This property has no default value.</value>
         <remarks>

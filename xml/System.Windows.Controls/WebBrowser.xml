@@ -1213,7 +1213,8 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
       <Docs>
         <param name="request">Specifies whether focus should be set to the first or the last tab stop.</param>
         <summary>For a description of this member, see <see cref="M:System.Windows.Interop.IKeyboardInputSink.TabInto(System.Windows.Input.TraversalRequest)" />.</summary>
-        <returns><see langword="true" /> if the focus has been set as requested; <see langword="false" />, if there are no tab stops.</returns>
+        <returns>
+          <see langword="true" /> if the focus has been set as requested; <see langword="false" />, if there are no tab stops.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
 
@@ -1259,7 +1260,8 @@ This member is an explicit interface member implementation. It can be used only 
         <param name="msg">The message and associated data. Do not modify this structure. It is passed by reference for performance reasons only.</param>
         <param name="modifiers">Modifier keys.</param>
         <summary>For a description of this member, see <see cref="M:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />.</summary>
-        <returns><see langword="true" /> if the message was handled by the method implementation; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the message was handled by the method implementation; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
 

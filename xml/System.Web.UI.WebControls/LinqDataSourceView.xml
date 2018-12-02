@@ -111,7 +111,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.LinqDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control supports dynamic creation of an OrderBy clause.</summary>
-        <value><see langword="true" /> if the clause generation is supported; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the clause generation is supported; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[
 
@@ -140,7 +141,8 @@ When you set the <xref:System.Web.UI.WebControls.LinqDataSource.AutoGenerateOrde
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.LinqDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control supports dynamic creation of a Where clause.</summary>
-        <value><see langword="true" /> if the clause generation is supported; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the clause generation is supported; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[
 
@@ -169,7 +171,8 @@ When you set the <xref:System.Web.UI.WebControls.LinqDataSource.AutoGenerateWher
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.LinqDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control supports automatic paging.</summary>
-        <value><see langword="true" /> if automatic paging is supported; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <value>
+          <see langword="true" /> if automatic paging is supported; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[
 
@@ -199,7 +202,8 @@ When you set the <xref:System.Web.UI.WebControls.LinqDataSource.AutoPage> proper
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.LinqDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control supports automatic sorting.</summary>
-        <value><see langword="true" /> if automatic sorting is supported; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <value>
+          <see langword="true" /> if automatic sorting is supported; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[
 
@@ -1453,7 +1457,8 @@ For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Ins
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.LinqDataSourceView" /> object is saving changes to its view state.</summary>
-        <value><see langword="true" /> if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[
 
@@ -2328,7 +2333,8 @@ For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.Sel
       </ReturnValue>
       <Docs>
         <summary>For a description of this member, see the <see cref="P:System.Web.UI.IStateManager.IsTrackingViewState" /> property.</summary>
-        <value><see langword="true" /> if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[
 

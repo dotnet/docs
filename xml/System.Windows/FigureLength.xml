@@ -306,7 +306,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that determines whether this <see cref="T:System.Windows.FigureLength" /> holds an absolute value (in pixels).</summary>
-        <value><see langword="true" /> if this <see cref="T:System.Windows.FigureLength" /> holds an absolute value (in pixels); otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Windows.FigureLength" /> holds an absolute value (in pixels); otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -328,7 +329,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that determines whether this <see cref="T:System.Windows.FigureLength" /> is automatic (not specified).</summary>
-        <value><see langword="true" /> if this <see cref="T:System.Windows.FigureLength" /> is automatic (not specified); otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Windows.FigureLength" /> is automatic (not specified); otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,7 +352,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that determines whether this <see cref="T:System.Windows.FigureLength" /> has a <see cref="T:System.Windows.FigureUnitType" /> property value of <see cref="F:System.Windows.FigureUnitType.Column" />.</summary>
-        <value><see langword="true" /> if this <see cref="T:System.Windows.FigureLength" /> has a <see cref="T:System.Windows.FigureUnitType" /> property value of <see cref="F:System.Windows.FigureUnitType.Column" />; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Windows.FigureLength" /> has a <see cref="T:System.Windows.FigureUnitType" /> property value of <see cref="F:System.Windows.FigureUnitType.Column" />; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -394,7 +397,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that determines whether this <see cref="T:System.Windows.FigureLength" /> has a <see cref="T:System.Windows.FigureUnitType" /> property value of <see cref="F:System.Windows.FigureUnitType.Page" />.</summary>
-        <value><see langword="true" /> if this <see cref="T:System.Windows.FigureLength" /> has a <see cref="T:System.Windows.FigureUnitType" /> property value of <see cref="F:System.Windows.FigureUnitType.Page" />; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Windows.FigureLength" /> has a <see cref="T:System.Windows.FigureUnitType" /> property value of <see cref="F:System.Windows.FigureUnitType.Page" />; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

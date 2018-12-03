@@ -67,11 +67,12 @@ Some types can only be marshalled as parameters and not as fields. These types a
 
 | .NET Type | Native Type (Parameter Only) |
 |-----------|------------------------------|
-| `System.Text.StringBuilder` | Either `char*` or `char16_t*` depending on the `CharSet` of the P/Invoke. |
+| `System.Text.StringBuilder` | Either `char*` or `char16_t*` depending on the `CharSet` of the P/Invoke.  See the [charset documentation](/.charset.md). |
 | `System.ArgIterator` | `va_list` (on Windows x86/x64/arm64 only) |
 | `System.Runtime.InteropServices.ArrayWithOffset` | `void*` |
 | `System.Runtime.InteropServices.HandleRef` | `void*` |
 
+If these defaults don't do exactly what you want, you can customize how parameters are marshalled. The [page on parameter marshalling](./customizing-parameter-marshalling.md) will walk you through how to customize how different parameter types are marshalled.
 
 ## Marshalling classes and structs
 

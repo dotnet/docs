@@ -329,7 +329,7 @@ struct Currency
 };
 ```
 
-### Marshalling `System.Object`s
+## Marshalling `System.Object`s
 
 On Windows, you can marshal `object`-typed fields to native code. You can marshal these fields to one of three types, [`VARIANT`](https://docs.microsoft.com/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [`IUnknown*`](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown), or [`IDispatch*`](https://docs.microsoft.com/windows/desktop/api/oaidl/nn-oaidl-idispatch). By default, an `object`-typed field will be marshalled to an `IUnknown*` that wraps the object.
 

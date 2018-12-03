@@ -1,9 +1,9 @@
 ---
 title: Prerequisites for .NET Core on Linux
 description: Supported Linux versions and .NET Core dependencies to develop, deploy, and run .NET Core applications on Linux machines.
-author: jralexander
-ms.author: johalex
-ms.date: 10/18/2018
+author: thraka
+ms.author: adegeo
+ms.date: 12/03/2018
 ---
 # Prerequisites for .NET Core on Linux
 
@@ -123,8 +123,9 @@ The installer bash script is used in automation scenarios and non-admin installa
 
 ## Troubleshoot
 
-> [!IMPORTANT]
-> If you have problems with a .NET Core installation on a supported Linux distribution/version, consult the following topics for your installed distributions/versions:
-> * [.NET Core 2.1 known issues](https://github.com/dotnet/core/tree/master/release-notes/2.1)
-> * [.NET Core 1.1 known issues](https://github.com/dotnet/core/blob/master/release-notes/1.1)
-> * [.NET Core 1.0 known issues](https://github.com/dotnet/core/blob/master/release-notes/1.0)
+If you have problems with a .NET Core installation on a supported Linux distribution/version, consult the following topics for your installed distributions/versions:
+
+* [.NET Core 2.2 known issues](https://github.com/dotnet/core/tree/master/release-notes/2.2)
+* [.NET Core 2.1 known issues](https://github.com/dotnet/core/tree/master/release-notes/2.1)
+* [.NET Core 1.1 known issues](https://github.com/dotnet/core/blob/master/release-notes/1.1)
+* [.NET Core 1.0 known issues](https://github.com/dotnet/core/blob/master/release-notes/1.0)

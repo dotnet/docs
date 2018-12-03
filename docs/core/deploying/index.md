@@ -3,7 +3,7 @@ title: .NET Core Application Deployment
 description: Deploying a .NET Core application.
 author: rpetrusha
 ms.author: ronpet
-ms.date: 12/XX/2018
+ms.date: 12/03/2018
 ---
 
 # .NET Core application deployment

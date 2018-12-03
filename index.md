@@ -5,7 +5,7 @@ hide_bc: true
 title: .NET Documentation
 description: Learn how to use .NET to create a variety of applications on any platform using C#, Visual Basic, and F#. Browse API reference, sample code, tutorials, and more.
 ms.custom: "updateeachrelease"
-ms.date: "06/21/2018"
+ms.date: "12/03/2018"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -29,7 +29,7 @@ ms.date: "06/21/2018"
                 </a>
             </li>
             <li>
-                <a href="/dotnet/api/?view=netcore-2.1">
+                <a href="/dotnet/api/?view=netcore-2.2">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -236,7 +236,7 @@ ms.date: "06/21/2018"
                             <li class="fullSpan">
                                 <div class="container footer">
                                     <p><a href="https://github.com/dotnet/Docs/blob/master/CONTRIBUTING.md">Contribute to .NET docs and samples</a></p>
-                                    <p><a href="/dotnet/project-json">Find Visual Studio 2015/project.json version of the documentation</a></p>
+                                    <p><a href="/dotnet/project-json">Find Visual Studio 5/project.json version of the documentation</a></p>
                                 </div>
                             </li>
                         </ul>
@@ -501,7 +501,7 @@ ms.date: "06/21/2018"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://msdn.microsoft.com/library/windows/apps/dn609832.aspx">
+                                                <a href="/uwp">
                                                     <h3>Universal Windows Apps</h3>
                                                     <p>Learn how you create Universal Windows apps that run on all Windows 10
                                                         devices.
@@ -585,7 +585,7 @@ ms.date: "06/21/2018"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://visualstudio.microsoft.com/vs/game-development">
+                                                <a href="https://visualstudio.microsoft.com/vs/features/game-development/">
                                                     <h3>Game Development with Visual Studio</h3>
                                                     <p>Write and debug your games using your game engine of choice with Visual
                                                         Studio.
@@ -606,7 +606,7 @@ ms.date: "06/21/2018"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="http://docs.cryengine.com/display/CEPROG/C%23+Programming">
+                                                <a href="https://docs.cryengine.com/display/CEPROG/C%23+Programming">
                                                 <h3>CRYENGINE</h3>
                                                 <p>Learn how to use CRYENGINE to build games with C#.</p>
                                                 </a>

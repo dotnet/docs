@@ -109,7 +109,7 @@ To build and run, install the following items:
 
 #### .NET Core 2.1 SDK
 
-* Install [.NET Core SDK 2.1](https://www.microsoft.com/net/core).
+* Install [.NET Core 2.1 SDK](https://www.microsoft.com/net/core).
 
 * Install your favorite code editor, if you haven't already.
 

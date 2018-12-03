@@ -5197,7 +5197,7 @@ public class A {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To ensure the proper sort order, specify sort criteria with <xref:System.Data.DataTable.Select%2A> or <xref:System.Data.DataTable.Select%2A>.  
+ To ensure the proper sort order, specify sort criteria with <xref:System.Data.DataTable.Select(System.String,System.String)> or <xref:System.Data.DataTable.Select(System.String,System.String,System.Data.DataViewRowState)>.  
   
    
   
@@ -5254,7 +5254,7 @@ public class A {
 ## Remarks  
  To create the `filterExpression` argument, use the same rules that apply to the <xref:System.Data.DataColumn> class's <xref:System.Data.DataColumn.Expression%2A> property value for creating filters.  
   
- To ensure the proper sort order, specify sort criteria with <xref:System.Data.DataTable.Select%2A> or <xref:System.Data.DataTable.Select%2A>.  
+To ensure the proper sort order, specify sort criteria with <xref:System.Data.DataTable.Select(System.String,System.String)> or <xref:System.Data.DataTable.Select(System.String,System.String,System.Data.DataViewRowState)>.
   
  If the column on the filter contains a null value, it will not be part of the result.  
   

@@ -70,7 +70,7 @@ Streaming support between SQL Server and an application (new in [!INCLUDE[net_v4
 ## Sample -- Streaming from SQL Server  
  Use the following [!INCLUDE[tsql](../../../../includes/tsql-md.md)] to create the sample database:  
   
-```  
+```sql
 CREATE DATABASE [Demo]  
 GO  
 USE [Demo]  
@@ -99,7 +99,7 @@ GO
   
 -   Transfer large files (BLOBs) from one SQL Server database to another without running out of memory.  
   
-```  
+```csharp
 using System;  
 using System.Data;  
 using System.Data.SqlClient;  
@@ -291,7 +291,7 @@ namespace StreamingFromServer {
 ## Sample -- Streaming to SQL Server  
  Use the following [!INCLUDE[tsql](../../../../includes/tsql-md.md)] to create the sample database:  
   
-```  
+```sql
 CREATE DATABASE [Demo2]  
 GO  
 USE [Demo2]  
@@ -324,7 +324,7 @@ GO
   
 -   Streaming from one SQL Server to another using the new asynchronous feature.  
   
-```  
+```csharp
 using System;  
 using System.Data;  
 using System.Data.SqlClient;  
@@ -447,7 +447,7 @@ namespace StreamingToServer {
 ## Sample -- Streaming From One SQL Server to Another SQL Server  
  This sample demonstrates how to asynchronously stream a large BLOB from one SQL Server to another, with support for cancellation.  
   
-```  
+```csharp
 using System;  
 using System.Data;  
 using System.Data.SqlClient;  

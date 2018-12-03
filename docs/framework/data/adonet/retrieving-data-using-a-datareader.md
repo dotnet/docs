@@ -138,7 +138,7 @@ using (OleDbConnection connection = new OleDbConnection(
   
  For example, consider the following Oracle package and package body.  
   
-```  
+```sql
 CREATE OR REPLACE PACKAGE CURSPKG AS   
   TYPE T_CURSOR IS REF CURSOR;   
   PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   

@@ -16,7 +16,7 @@ When the .NET runtime's default parameter marshalling behavior doesn't do what y
 
 ### C-Style strings
 
-Each of these formats pass a null-terminated string to native code. They differ by the encoding of the native string.
+Each of these formats passes a null-terminated string to native code. They differ by the encoding of the native string.
 
 | `System.Runtime.InteropServices.UnmanagedType` value | Encoding |
 |------------------------------------------------------|----------|
@@ -24,7 +24,7 @@ Each of these formats pass a null-terminated string to native code. They differ 
 | LPUTF8Str | UTF-8 | 
 | LPWStr | UTF-16 |
 
-The <xref:System.Runtime.InteropServices.UnmanagedType.VBByRefStr?displayProperty=nameWithType> format is slightly different. Like `LPWStr`, it marshals the string to a native C-style string encoded in UTF-16. However, the managed signature has you pass in the string by reference and the matching native signature takes the string by value. This distinction allows you to use a native API that takes a string by value and modifies it in-place without having to use a `StringBuilder`. We recommend against using this format since it is prone to cause confusion with the mismatching native and managed signatures.
+The <xref:System.Runtime.InteropServices.UnmanagedType.VBByRefStr?displayProperty=nameWithType> format is slightly different. Like `LPWStr`, it marshals the string to a native C-style string encoded in UTF-16. However, the managed signature has you pass in the string by reference and the matching native signature takes the string by value. This distinction allows you to use a native API that takes a string by value and modifies it in-place without having to use a `StringBuilder`. We recommend against manually using this format since it is prone to cause confusion with the mismatching native and managed signatures.
 
 ### Windows-centric string formats
 
@@ -34,9 +34,9 @@ If you are interacting with WinRT APIs, you can use the <xref:System.Runtime.Int
 
 ## Customizing array parameters
 
-.NET also provides you multiple ways to marshal your array parameters. If you are calling an API that takes a C-style array, you want to use the <xref:System.Runtime.InteropServices.UnmanagedType.LPArray?displayProperty=nameWithType> unmanaged type. If the values in the array need their marshalling customized, you can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute.ArraySubType> field on the `[MarshalAs]` attribute to customize marshalling.
+.NET also provides you multiple ways to marshal your array parameters. If you're calling an API that takes a C-style array, you want to use the <xref:System.Runtime.InteropServices.UnmanagedType.LPArray?displayProperty=nameWithType> unmanaged type. If the values in the array need customized marshalling, you can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute.ArraySubType> field on the `[MarshalAs]` attribute to customize marshalling.
 
-If you are using COM APIs, you will likely have to marshal your array parameters as `SAFEARRAY*`s. To do so, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.SafeArray?displayProperty=nameWithType> unmanaged type. The default type of the elements of the `SAFEARRAY` can be seen in the table on [customizing `object` fields](./customizing-struct-marshalling.md#marshalling-systemobjects). You can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArrayUserDefinedSubType?displayProperty=nameWithType> fields to customize the exact element type of the `SAFEARRAY`.
+If you are using COM APIs, you'll likely have to marshal your array parameters as `SAFEARRAY*`s. To do so, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.SafeArray?displayProperty=nameWithType> unmanaged type. The default type of the elements of the `SAFEARRAY` can be seen in the table on [customizing `object` fields](./customizing-struct-marshalling.md#marshalling-systemobjects). You can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArrayUserDefinedSubType?displayProperty=nameWithType> fields to customize the exact element type of the `SAFEARRAY`.
 
 ## Customizing boolean or decimal parameters
 

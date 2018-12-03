@@ -82,7 +82,7 @@ You can unbox the boxed value type to the corresponding nullable type, as the fo
 
 ## The bool? type
 
-The `bool?` nullable type can contain three different values: [true](../../language-reference/keywords/true-literal.md), [false](../../language-reference/keywords/false-literal.md) and [null](../../language-reference/keywords/null.md). The `bool?` type is like the Boolean variable type that is used in SQL. To ensure that the results produced by the `&` and `|` operators are consistent with the three-valued Boolean type in SQL, the following predefined operators are provided:
+The `bool?` nullable type can contain three different values: [true](../../language-reference/keywords/true-literal.md), [false](../../language-reference/keywords/false-literal.md), and [null](../../language-reference/keywords/null.md). The `bool?` type is like the Boolean variable type that is used in SQL. To ensure that the results produced by the `&` and `|` operators are consistent with the three-valued Boolean type in SQL, the following predefined operators are provided:
 
 - `bool? operator &(bool? x, bool? y)`  
 - `bool? operator |(bool? x, bool? y)`  

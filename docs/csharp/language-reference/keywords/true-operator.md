@@ -1,29 +1,22 @@
 ---
 title: "true operator (C# Reference)"
-ms.date: 07/20/2015
+ms.date: 12/03/2018
 helpviewer_keywords: 
   - "true operator [C#]"
 ms.assetid: acaba817-5da5-4364-b3b2-2e5c75ec1839
 ---
 # true operator (C# Reference)
 
-Returns the [bool](bool.md) value `true` to indicate that an operand is true and returns `false` otherwise.
+Returns the [bool](bool.md) value `true` to indicate that an operand is definitely true. If a type defines the `true` operator, it must also define the [false operator](false-operator.md). The `true` and `false` operators are not guaranteed to complement each other.
 
-Prior to C# 2.0, the `true` and `false` operators were used to create user-defined nullable value types that were compatible with types such as `SqlBool`. However, the language now provides built-in support for nullable value types, and whenever possible you should use those instead of overloading the `true` and `false` operators. For more information, see [Nullable Types](../../programming-guide/nullable-types/index.md).
+For the example that defines both `true` and `false` operators, see the [false operator](false-operator.md) article.
 
-With nullable Booleans, the expression `a != b` is not necessarily equal to `!(a == b)` because one or both of the values might be null. You need to overload both the `true` and `false` operators separately to correctly identify the null values in the expression. The following example shows how to overload and use the `true` and `false` operators.
+> [!TIP]
+> Use the `bool?` type, if you need to support the three-valued logic, for example, when you work with databases that support a three-valued logical type. For more information, see [The bool? type](../../programming-guide/nullable-types/using-nullable-types.md#the-bool-type) section of the [Using nullable types](../../programming-guide/nullable-types/using-nullable-types.md) article.
 
-[!code-csharp[csrefKeywordsOperator#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsOperator/CS/csrefKeywordsOperators.cs#16)]  
+If a type with the defined `true` operator [overloads](operator.md) the [logical OR operator](../operators/or-operator.md) `|` in a certain way, the [conditional logical OR operator](../operators/conditional-or-operator.md) `||`, which is short-circuiting, can be evaluated for the operands of that type. For more information, see the [User-defined conditional logical operators](~/_csharplang/spec/expressions.md#user-defined-conditional-logical-operators) section of the [C# language specification](../language-specification/index.md).
 
-A type that overloads the `true` and `false` operators can be used for the controlling expression in [if](if-else.md), [do](do.md), [while](while.md), and [for](for.md) statements and in [conditional expressions](../operators/conditional-operator.md).
-
-If a type defines operator `true`, it must also define operator [false](false.md).
-
-A type cannot directly overload the conditional logical operators ([&&](../operators/conditional-and-operator.md) and [&#124;&#124;](../operators/conditional-or-operator.md)), but an equivalent effect can be achieved by overloading the regular logical operators and operators `true` and `false`.
-
-## C# language specification
-
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+A type with the defined `true` operator can be the type of a result of a controlling conditional expression in the [if](if-else.md), [do](do.md), [while](while.md), and [for](for.md) statements and in the [conditional operator `?:`](../operators/conditional-operator.md). For more information, see the [Boolean expressions](~/_csharplang/spec/expressions.md#boolean-expressions) section of the [C# language specification](../language-specification/index.md).
 
 ## See also
 
@@ -31,4 +24,4 @@ A type cannot directly overload the conditional logical operators ([&&](../opera
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [C# Operators](../operators/index.md)
-- [false](false.md)
+- [`true` literal](true-literal.md)

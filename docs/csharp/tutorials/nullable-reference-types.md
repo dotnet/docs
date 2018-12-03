@@ -113,27 +113,7 @@ namespace NullableIntroduction
 
 Because you haven't initialized `QuestionText`, the compiler issues a warning that a non-nullable property hasn't been initialized. Your design requires the question text to be non-null, so you add a constructor to initialize it and the `QuestionType` value as well. The finished class definition looks like the following code:
 
-```csharp
-#nullable enable
-namespace NullableIntroduction
-{
-    public enum QuestionType
-    {
-        YesNo,
-        Number,
-        Text
-    }
-
-    public class SurveyQuestion
-    {
-        public string QuestionText { get; }
-        public QuestionType TypeOfQuestion { get; }
-
-        public SurveyQuestion(QuestionType typeOfQuestion, string text) =>
-            (TypeOfQuestion, QuestionText) = (typeOfQuestion, text);
-    }
-}
-```
+[!code-csharp[DefineQuestion](../../../samples/csharp/tutorials/NullableIntroduction/NullableIntroduction/SurveyQuestion.cs)]
 
 Adding the constructor removes the warning. The constructor argument is also a non-nullable reference type, so the compiler doesn't issue any warnings.
 
@@ -149,7 +129,7 @@ namespace NullableIntroduction
     {
         private List<SurveyQuestion> surveyQuestions = new List<SurveyQuestion>();
 
-       public void AddQuestion(QuestionType type, string question) =>
+        public void AddQuestion(QuestionType type, string question) =>
             AddQuestion(new SurveyQuestion(type, question));
         public void AddQuestion(SurveyQuestion surveyQuestion) => surveyQuestions.Add(surveyQuestion);
     }
@@ -160,13 +140,7 @@ As before, you must initialize the list object to a non-null value or the compil
 
 Switch to `program.cs` in your editor, and replace the contents of `Main` with the following lines of code:
 
-```csharp
-var surveyRun = new SurveyRun();
-surveyRun.AddQuestion(QuestionType.YesNo, "Has your code ever thrown a NullReferenceException?");
-surveyRun.AddQuestion(new SurveyQuestion(QuestionType.Number, "How many times (to the nearest 100) has that happened?"));
-surveyRun.AddQuestion(QuestionType.Text, "What is your favorite color?");
-surveyRun.AddQuestion(QuestionType.Text, default);
-```
+[!code-csharp[AddQuestions](../../../samples/csharp/tutorials/NullableIntroduction/NullableIntroduction/Program.cs#AddQuestions)]
 
 Without the `#nullable enable` pragma at the top of the file, the compiler doesn't issue a warning when you pass `null` as the text for the `AddQuestion` argument. Fix that by adding `#nullable enable` following the `using` statement. Now, that last line generates a warning. Remove that line because it can cause bugs later.
 
@@ -195,10 +169,7 @@ namespace NullableIntroduction
 
 Next, add a `static` method to create new participants by generating a random id:
 
-```csharp
-private static Random idGenerator = new Random();
-public static SurveyResponse GetRandomId() => new SurveyResponse(idGenerator.Next());
-```
+[!code-csharp[GenerateRespondents](../../../samples/csharp/tutorials/NullableIntroduction/NullableIntroduction/SurveyResponse.cs#Random)]
 
 The main responsibility of this class is to generate the responses for a participant to the questions in the survey. This responsibility has a few steps:
 
@@ -207,123 +178,37 @@ The main responsibility of this class is to generate the responses for a partici
 
 Add the following code to your `SurveyRespondent` class:
 
-```csharp
-private Dictionary<int, string>? surveyResponses;
-public void AnswerSurvey(IEnumerable<SurveyQuestion> questions)
-{
-    if (ConsentToSurvey())
-    {
-        surveyResponses = new Dictionary<int, string>();
-        int index = 0;
-        foreach (var question in questions)
-        {
-            var answer = GenerateAnswer(question);
-            if (answer != null)
-            {
-                surveyResponses.Add(index, answer);
-            }
-            index++;
-        }
-    }
-}
-
-private bool ConsentToSurvey() => randomGenerator.Next(0, 2) == 1;
-
-private string? GenerateAnswer(SurveyQuestion question)
-{
-    switch (question.TypeOfQuestion)
-    {
-        case QuestionType.YesNo:
-            int n = randomGenerator.Next(-1, 2);
-            return (n == -1) ? default : (n == 0) ? "No" : "Yes";
-        case QuestionType.Number:
-            n = randomGenerator.Next(-30, 101);
-            return (n < 0) ? default : n.ToString();
-        case QuestionType.Text:
-        default:
-            switch (randomGenerator.Next(0, 5))
-            {
-                case 0:
-                    return default;
-                case 1:
-                    return "Red";
-                case 2:
-                    return "Green";
-                case 3:
-                    return "Blue";
-            }
-            return "Red. No, Green. Wait.. Blue... AAARGGGGGHHH!";
-    }
-}
-```
+[!code-csharp[AnswerSurvey](../../../samples/csharp/tutorials/NullableIntroduction/NullableIntroduction/SurveyResponse.cs#AnswerSurvey)]
 
 The storage for the survey answers is a `Dictionary<int, string>?`, indicating that it may be null. You're using the new language feature to declare your design intent, both to the compiler and to anyone reading your code later. If you ever dereference `surveyResponses` without checking for the null value first, you'll get a compiler warning. You don't get a warning in the `AnswerSurvey` method because the compiler can determine the `surveyResponses` variable was set to a non-null value above.
 
 Next, you need to write the `PerformSurvey` method in the `SurveyRun` class. Add the following code in the `SurveyRun` class:
 
-```csharp
-private List<SurveyResponse>? respondents;
-public void PerformSurvey(int numberOfRespondents)
-{
-    int respondentsConsenting = 0;
-    respondents = new List<SurveyResponse>();
-    while (respondentsConsenting < numberOfRespondents)
-    {
-        var respondent = SurveyResponse.GetRandomId();
-        if (respondent.AnswerSurvey(surveyQuestions))
-            respondentsConsenting++;
-        respondents.Add(respondent);
-    }
-}
-```
+[!code-csharp[PerformSurvey](../../../samples/csharp/tutorials/NullableIntroduction/NullableIntroduction/SurveyRun.cs#PerformSurvey)]
 
 Here again, your choice of a nullable `List<SurveyResponse>?` indicates the response may be null. That indicates the survey hasn't been given to any respondents yet. Notice that respondents are added until enough have consented.
 
 The last step to run the survey is to add a call to perform the survey at the end of the `Main` method:
 
-```csharp
-surveyRun.PerformSurvey(50);
-```
+[!code-csharp[RunSurvey](../../../samples/csharp/tutorials/NullableIntroduction/NullableIntroduction/Program.cs#RunSurvey)]
 
 ## Examine survey responses
 
 The last step is to display survey results. You'll add code to many of the classes you've written. This code demonstrates the value of distinguishing nullable and non-nullable reference types. Start by adding the following two expression bodied members to the `SurveyResponse` class:
 
-```csharp
-public bool AnsweredSurvey => surveyResponses != null;
-public string Answer(int index) => surveyResponses?.GetValueOrDefault(index) ?? "No answer";
-```
+[!code-csharp[ReportResponses](../../../samples/csharp/tutorials/NullableIntroduction/NullableIntroduction/SurveyResponse.cs#SurveyStatus)]
 
 Because `surveyResponses` is a non-nullable reference type no checks are necessary before de-referencing it. The `Answer` method returns a non-nullable string, so choose the overload of `GetValueOrDefault` that takes a second argument for the default value.
 
 Next, add these three expression bodied members to the `SurveyRun` class:
 
-```csharp
-public IEnumerable<SurveyResponse> AllParticipants => (respondents ?? Enumerable.Empty<SurveyResponse>());
-public ICollection<SurveyQuestion> Questions => surveyQuestions;
-public SurveyQuestion GetQuestion(int index) => surveyQuestions[index];
-```
+[!code-csharp[ReportResults](../../../samples/csharp/tutorials/NullableIntroduction/NullableIntroduction/SurveyRun.cs#RunReport)]
 
 The `AllParticipants` member must take into account that the `respondents` variable might be null, but the return value can't be null. If you change that expression by removing the `??` and the empty sequence that follows, the compiler warns you the method might return `null` and its return signature returns a non-nullable type.
 
 Finally, add the following loop at the bottom of the `Main` method:
 
-```csharp
-foreach (var participant in surveyRun.AllParticipants)
-{
-    Console.WriteLine($"Participant: {participant.Id}:");
-    if (participant.AnsweredSurvey)
-    {
-        for (int i = 0; i < surveyRun.Questions.Count; i++)
-        {
-            string answer = participant.Answer(i);
-            Console.WriteLine($"\t{surveyRun.GetQuestion(i)} : {answer}");
-        }
-    }
-    else
-        Console.WriteLine("\tNo responses");
-}
-```
+[!code-csharp[DisplaySurveyResults](../../../samples/csharp/tutorials/NullableIntroduction/NullableIntroduction/Program.cs#WriteAnswers)]
 
 You don't need any `null` checks in this code because you've designed the underlying interfaces so that they all return non-nullable reference types.
 

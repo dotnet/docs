@@ -32,6 +32,8 @@ The following articles have a complete list of .NET Core supported operating sys
 * [.NET Core 2.1 - Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md)
 * [.NET Core 1.x - Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md)
 
+For download links and more information, see [.NET Core 2.2 downloads](https://www.microsoft.com/net/download/dotnet-core/2.2), [.NET Core 2.1 downloads](https://www.microsoft.com/net/download/dotnet-core/2.1), [.NET Core 1.1 downloads](https://www.microsoft.com/net/download/dotnet-core/1.1), or [.NET Core 1.0 downloads](https://www.microsoft.com/net/download/dotnet-core/1.0).
+
 ## .NET Core dependencies
 
 .NET Core 1.1 and earlier versions require the Visual C++ Redistributable when running on Windows versions earlier than Windows 10 and Windows Server 2016. This dependency is automatically installed by the .NET Core installer.

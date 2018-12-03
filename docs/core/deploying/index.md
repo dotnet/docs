@@ -3,16 +3,18 @@ title: .NET Core Application Deployment
 description: Deploying a .NET Core application.
 author: rpetrusha
 ms.author: ronpet
-ms.date: 09/03/2018
+ms.date: 12/XX/2018
 ---
 
 # .NET Core application deployment
 
-You can create two types of deployments for .NET Core applications:
+You can create three types of deployments for .NET Core applications:
 
 - Framework-dependent deployment. As the name implies, framework-dependent deployment (FDD) relies on the presence of a shared system-wide version of .NET Core on the target system. Because .NET Core is already present, your app is also portable between installations of .NET Core. Your app contains only its own code and any third-party dependencies that are outside of the .NET Core libraries. FDDs contain *.dll* files that can be launched by using the [dotnet utility](../tools/dotnet.md) from the command line. For example, `dotnet app.dll` runs an application named `app`.
 
-- Self-contained deployment. Unlike FDD, a self-contained deployment (SCD) doesn't rely on the presence of shared components on the target system. All components, including both the .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications. SCDs include an executable (such as *app.exe* on Windows platforms for an application named `app`), which is  a renamed version of the platform-specific .NET Core host, and a *.dll* file (such as *app.dll*), which is the actual application.
+- Self-contained deployment. Unlike FDD, a self-contained deployment (SCD) doesn't rely on the presence of shared components on the target system. All components, including both the .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications. SCDs include an executable (such as *app.exe* on Windows platforms for an application named `app`), which is a renamed version of the platform-specific .NET Core host, and a *.dll* file (such as *app.dll*), which is the actual application.
+
+- Framework-dependent executables. Functionally similar to FDDs, framework-dependent executables (FDE) are platform-specific and aren't self-contained. These deployments still rely on the presence of a shared system-wide version of .NET Core to run. Unlike an SCD, your app only contains your code and any third-party dependencies that are outside of the .NET Core libraries. FDEs produce an executable that runs on the target platform.
 
 ## Framework-dependent deployments (FDD)
 
@@ -25,6 +27,8 @@ Deploying an FDD has a number of advantages:
 - You don't have to define the target operating systems that your .NET Core app will run on in advance. Because .NET Core uses a common PE file format for executables and libraries regardless of operating system, .NET Core can execute your app regardless of the underlying operating system. For more information on the PE file format, see [.NET Assembly File Format](../../standard/assembly-format.md).
 
 - The size of your deployment package is small. You only deploy your app and its dependencies, not .NET Core itself.
+
+- Unless overridden, FDDs will use the latest serviced runtime installed on the target system. This allows your application to use the latest patched version of the .NET Core runtime. 
 
 - Multiple apps use the same .NET Core installation, which reduces both disk space and memory usage on host systems.
 
@@ -59,6 +63,28 @@ It also has a number of disadvantages:
   Starting with .NET Core 2.0, you can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET Core [*globalization invariant mode*](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md). Ordinarily, .NET Core on Linux relies on the [ICU libraries](https://github.com/dotnet/docs/issues/http%22//icu-project.org) for globalization support. In invariant mode, the libraries are not included with your deployment, and all cultures behave like the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
 
 - Deploying numerous self-contained .NET Core apps to a system can consume significant amounts of disk space, since each app duplicates .NET Core files.
+
+## Framework-dependent executables (FDE)
+
+Starting with .NET Core 2.2, you deploy your app as an FDE, and any required thrid-party dependencies. You don't have to deploy .NET Core, since your app will use the version of .NET Core that's installed on the target system.
+
+### Why deploy a framework-dependent executable?
+
+Deploying an FDE has a number of advantages:
+
+- The size of your deployment package is small. You only deploy your app and its dependencies, not .NET Core itself.
+
+- Multiple apps use the same .NET Core installation, which reduces both disk space and memory usage on host systems.
+
+- Your app can be run by calling the published executable without invoking the `dotnet` utility directly.
+
+There are also a few disadvantages:
+
+- Your app can run only if the version of .NET Core that you target, or a later version, is already installed on the host system.
+
+- It's possible for the .NET Core runtime and libraries to change without your knowledge in future releases. In rare cases, this may change the behavior of your app.
+
+- You must publish your app for each target-platform.
 
 ## Step-by-step examples
 

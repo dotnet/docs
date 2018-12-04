@@ -1,9 +1,7 @@
 ---
 title: dotnet msbuild command - .NET Core CLI
 description: The dotnet msbuild command provides access to the MSBuild command line.
-author: mairaw
-ms.author: mairaw
-ms.date: 05/25/2018
+ms.date: 12/03/2018
 ---
 # dotnet msbuild
 
@@ -21,22 +19,32 @@ ms.date: 05/25/2018
 
 The `dotnet msbuild` command allows access to a fully functional MSBuild.
 
-The command has the exact same capabilities as existing MSBuild command-line client. The options are all the same. For more information about the available options, see the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference).
+The command has the exact same capabilities as the existing MSBuild command-line client for SDK-style project only. The options are all the same. For more information about the available options, see the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference).
+
+The [dotnet build](dotnet-build.md) command is equivalent to `dotnet msbuild -restore -target:Build`. `dotnet build` is more commonly used for building projects, but `dotnet msbuild` gives you more control. For example, if you have a specific target you want to run (without running the build target), you probably want to use `dotnet msbuild`.
 
 ## Examples
 
-Build a project and its dependencies:
+* Build a project and its dependencies:
 
-`dotnet msbuild`
+  ```console
+  dotnet msbuild
+  ```
 
-Build a project and its dependencies using Release configuration:
+* Build a project and its dependencies using Release configuration:
 
-`dotnet msbuild -p:Configuration=Release`
+  ```console
+  dotnet msbuild -p:Configuration=Release
+  ```
 
-Run the publish target and publish for the `osx.10.11-x64` RID:
+* Run the publish target and publish for the `osx.10.11-x64` RID:
 
-`dotnet msbuild -t:Publish -p:RuntimeIdentifiers=osx.10.11-x64`
+  ```console
+  dotnet msbuild -t:Publish -p:RuntimeIdentifiers=osx.10.11-x64
+  ```
 
-See the whole project with all targets included by the SDK:
+* See the whole project with all targets included by the SDK:
 
-`dotnet msbuild -pp`
+  ```console
+  dotnet msbuild -pp
+  ```

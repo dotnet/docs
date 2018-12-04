@@ -1,9 +1,7 @@
 ---
 title: dotnet clean command - .NET Core CLI
 description: The dotnet clean command cleans the current directory.
-author: mairaw
-ms.author: mairaw
-ms.date: 05/25/2018
+ms.date: 12/04/2018
 ---
 # dotnet clean
 
@@ -15,17 +13,10 @@ ms.date: 05/25/2018
 
 ## Synopsis
 
-# [.NET Core 2.x](#tab/netcore2x)
 ```
 dotnet clean [<PROJECT>] [-c|--configuration] [-f|--framework] [-o|--output] [-r|--runtime] [-v|--verbosity]
 dotnet clean [-h|--help]
 ```
-# [.NET Core 1.x](#tab/netcore1x)
-```
-dotnet clean [<PROJECT>] [-c|--configuration] [-f|--framework] [-o|--output] [-v|--verbosity]
-dotnet clean [-h|--help]
-```
----
 
 ## Description
 
@@ -39,62 +30,40 @@ The MSBuild project to clean. If a project file is not specified, MSBuild search
 
 ## Options
 
-# [.NET Core 2.x](#tab/netcore2x)
+* **`-c|--configuration {Debug|Release}`**
 
-`-c|--configuration {Debug|Release}`
+  Defines the build configuration. The default value is `Debug`. This option is only required when cleaning if you specified it during build time.
 
-Defines the build configuration. The default value is `Debug`. This option is only required when cleaning if you specified it during build time.
+* **`-f|--framework <FRAMEWORK>`**
 
-`-f|--framework <FRAMEWORK>`
+  The [framework](../../standard/frameworks.md) that was specified at build time. The framework must be defined in the [project file](csproj.md). If you specified the framework at build time, you must specify the framework when cleaning.
 
-The [framework](../../standard/frameworks.md) that was specified at build time. The framework must be defined in the [project file](csproj.md). If you specified the framework at build time, you must specify the framework when cleaning.
+* **`-h|--help`**
 
-`-h|--help`
+  Prints out a short help for the command.
 
-Prints out a short help for the command.
+* **`-o|--output <OUTPUT_DIRECTORY>`**
 
-`-o|--output <OUTPUT_DIRECTORY>`
+  Directory in which the build outputs are placed. Specify the `-f|--framework <FRAMEWORK>` switch with the output directory switch if you specified the framework when the project was built.
 
-Directory in which the build outputs are placed. Specify the `-f|--framework <FRAMEWORK>` switch with the output directory switch if you specified the framework when the project was built.
+* **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-`-r|--runtime <RUNTIME_IDENTIFIER>`
+  Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#self-contained-deployments-scd) was created. Option available since .NET Core 2.0 SDK.
 
-Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#self-contained-deployments-scd) was created.
+* **`-v|--verbosity <LEVEL>`**
 
-`-v|--verbosity <LEVEL>`
-
-Sets the verbosity level of the command. Allowed levels are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
-
-# [.NET Core 1.x](#tab/netcore1x)
-
-`-c|--configuration {Debug|Release}`
-
-Defines the build configuration. The default value is `Debug`. This option is only required when cleaning if you specified it during build time.
-
-`-f|--framework <FRAMEWORK>`
-
-The [framework](../../standard/frameworks.md) that was specified at build time. The framework must be defined in the [project file](csproj.md). If you specified the framework at build time, you must specify the framework when cleaning.
-
-`-h|--help`
-
-Prints out a short help for the command.
-
-`-o|--output <OUTPUT_DIRECTORY>`
-
-Directory in which the build outputs are placed. Specify the `-f|--framework <FRAMEWORK>` switch with the output directory switch if you specified the framework when the project was built.
-
-`-v|--verbosity <LEVEL>`
-
-Sets the verbosity level of the command. Allowed levels are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
-
----
+  Sets the verbosity level of the command. Allowed levels are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
 
 ## Examples
 
-Clean a default build of the project:
+* Clean a default build of the project:
 
-`dotnet clean`
+  ```console
+  dotnet clean
+  ```
 
-Clean a project built using the Release configuration:
+* Clean a project built using the Release configuration:
 
-`dotnet clean --configuration Release`
+  ```console
+  dotnet clean --configuration Release
+  ```

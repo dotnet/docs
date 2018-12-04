@@ -1,9 +1,7 @@
 ---
 title: dotnet add package command - .NET Core CLI
 description: The 'dotnet add package' command provides a convenient option to add a NuGet package reference to a project.
-author: mairaw
-ms.author: mairaw
-ms.date: 05/25/2018
+ms.date: 12/04/2018
 ---
 # dotnet add package
 
@@ -15,82 +13,91 @@ ms.date: 05/25/2018
 
 ## Synopsis
 
-`dotnet add [<PROJECT>] package <PACKAGE_NAME> [-h|--help] [-f|--framework] [-n|--no-restore] [--package-directory] [-s|--source] [-v|--version] [--interactive]`
+`dotnet add [<PROJECT>] package <PACKAGE_NAME> [-h|--help] [-f|--framework] [--interactive] [-n|--no-restore] [--package-directory] [-s|--source] [-v|--version]`
 
 ## Description
 
 The `dotnet add package` command provides a convenient option to add a package reference to a project file. After running the command, there's a compatibility check to ensure the package is compatible with the frameworks in the project. If the check passes, a `<PackageReference>` element is added to the project file and [dotnet restore](dotnet-restore.md) is run.
 
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+[!INCLUDE[DotNet Restore Note](../../../includes/dotnet-restore-note.md)]
 
 For example, adding `Newtonsoft.Json` to *ToDo.csproj* produces output similar to the following example:
 
 ```console
   Writing C:\Users\mairaw\AppData\Local\Temp\tmp95A8.tmp
 info : Adding PackageReference for package 'Newtonsoft.Json' into project 'C:\projects\ToDo\ToDo.csproj'.
-log  : Restoring packages for C:\projects\ToDo\ToDo.csproj...
+log  : Restoring packages for C:\Temp\projects\consoleproj\consoleproj.csproj...
 info :   GET https://api.nuget.org/v3-flatcontainer/newtonsoft.json/index.json
-info :   OK https://api.nuget.org/v3-flatcontainer/newtonsoft.json/index.json 235ms
+info :   OK https://api.nuget.org/v3-flatcontainer/newtonsoft.json/index.json 79ms
+info :   GET https://api.nuget.org/v3-flatcontainer/newtonsoft.json/12.0.1/newtonsoft.json.12.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/newtonsoft.json/12.0.1/newtonsoft.json.12.0.1.nupkg 232ms
+log  : Installing Newtonsoft.Json 12.0.1.
 info : Package 'Newtonsoft.Json' is compatible with all the specified frameworks in project 'C:\projects\ToDo\ToDo.csproj'.
-info : PackageReference for package 'Newtonsoft.Json' version '10.0.3' added to file 'C:\projects\ToDo\ToDo.csproj'.
+info : PackageReference for package 'Newtonsoft.Json' version '12.0.1' added to file 'C:\projects\ToDo\ToDo.csproj'.
 ```
 
 The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-packages/package-references-in-project-files) element for the referenced package.
 
 ```xml
-<PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+<PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
 ```
 
 ## Arguments
 
-`PROJECT`
+* **`PROJECT`**
 
-Specifies the project file. If not specified, the command searches the current directory for one.
+  Specifies the project file. If not specified, the command searches the current directory for one.
 
-`PACKAGE_NAME`
+* **`PACKAGE_NAME`**
 
-The package reference to add.
+  The package reference to add.
 
 ## Options
 
-`-h|--help`
+* **`-f|--framework <FRAMEWORK>`**
 
-Prints out a short help for the command.
+  Adds a package reference only when targeting a specific [framework](../../standard/frameworks.md).
 
-`-f|--framework <FRAMEWORK>`
+* **`-h|--help`**
 
-Adds a package reference only when targeting a specific [framework](../../standard/frameworks.md).
+  Prints out a short help for the command.
 
-`-n|--no-restore`
+* **`--interactive`**
 
-Adds a package reference without performing a restore preview and compatibility check.
+  Allows the command to stop and wait for user input or action (for example to complete authentication). Available since .NET Core 2.1 SDK, version 2.1.400 or later.
 
-`--package-directory <PACKAGE_DIRECTORY>`
+* **`-n|--no-restore`**
 
-Restores the package to the specified directory.
+  Adds a package reference without performing a restore preview and compatibility check.
 
-`-s|--source <SOURCE>`
+* **`--package-directory <PACKAGE_DIRECTORY>`**
 
-Uses a specific NuGet package source during the restore operation.
+  Restores the package to the specified directory.
 
-`-v|--version <VERSION>`
+* **`-s|--source <SOURCE>`**
 
-Version of the package.
+  Uses a specific NuGet package source during the restore operation.
 
-`--interactive`
+* **`-v|--version <VERSION>`**
 
-Allows the command to stop and wait for user input or action (for example to complete authentication). Since .NET Core 2.1.400.
+  Version of the package.
 
 ## Examples
 
-Add `Newtonsoft.Json` NuGet package to a project:
+* Add `Newtonsoft.Json` NuGet package to a project:
 
-`dotnet add package Newtonsoft.Json`
+  ```console
+  dotnet add package Newtonsoft.Json
+  ```
 
-Add a specific version of a package to a project:
+* Add a specific version of a package to a project:
 
-`dotnet add ToDo.csproj package Microsoft.Azure.DocumentDB.Core -v 1.0.0`
+  ```console
+  dotnet add ToDo.csproj package Microsoft.Azure.DocumentDB.Core -v 1.0.0
+  ```
 
-Add a package using a specific NuGet source:
+* Add a package using a specific NuGet source:
 
-`dotnet add package Microsoft.AspNetCore.StaticFiles -s https://dotnet.myget.org/F/dotnet-core/api/v3/index.json`
+  ```console
+  dotnet add package Microsoft.AspNetCore.StaticFiles -s https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
+  ```

@@ -29,7 +29,7 @@ The [get](../../../csharp/language-reference/keywords/get.md) and [set](../../..
 -   The accessibility level on the accessor must be more restrictive than the accessibility level on the property or indexer itself.  
   
 ## Access Modifiers on Overriding Accessors  
- When you override a property or indexer, the overridden accessors must be accessible to the overriding code. Also, the accessibility level of both the property/indexer, and that of the accessors, must match the corresponding overridden property/indexer and the accessors. For example:  
+ When you override a property or indexer, the overridden accessors must be accessible to the overriding code. Also, the accessibility of both the property/indexer and its accessors must match the corresponding overridden property/indexer and its accessors. For example:  
   
  [!code-csharp[csProgGuideIndexers#7](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/restricting-accessor-accessibility_2.cs)]  
   

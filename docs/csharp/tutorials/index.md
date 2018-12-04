@@ -70,4 +70,4 @@ The following tutorials enable you to build C# programs using [.NET Core](../../
 * [Working with LINQ](working-with-linq.md): demonstrates many of the features of LINQ and the language elements that support it.
 * [String Interpolation](string-interpolation.md): demonstrates how to use string interpolation to create formatted strings in C#.
 * [Using Attributes](attributes.md): demonstrates how to create and use attributes in C#.
-* [Nullable reference types](nullable-reference-types.md): demonstrates how to use nullable reference types, and express your intent in when a reference may be null.
+* [Nullable reference types](nullable-reference-types.md): demonstrates how to use nullable reference types to express your intent for null references.

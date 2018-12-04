@@ -1180,6 +1180,7 @@
 ## [How-to guides](machine-learning/how-to-guides/index.md)
 ### [Apply categorical feature engineering ](machine-learning/how-to-guides/train-model-categorical-ml-net.md)
 ### [Apply textual feature engineering ](machine-learning/how-to-guides/train-model-textual-ml-net.md)
+### [Determine model feature importance with PFI](machine-learning/how-to-guides/determine-global-feature-importance-in-model.md)
 ### [Inspect intermediate pipeline data values](machine-learning/how-to-guides/inspect-intermediate-data-ml-net.md)
 ### [Load data with many columns](machine-learning/how-to-guides/load-data-from-mult-column-csv-ml-net.md)
 ### [Load data from multiple files](machine-learning/how-to-guides/load-data-from-multiple-files-ml-net.md)

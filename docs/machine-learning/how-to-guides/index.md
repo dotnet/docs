@@ -1,7 +1,7 @@
 ---
 title: ML.NET How-to guides
 description: Learn how to do specific tasks to assist with custom AI solutions creation and Machine Learning integration into your .NET applications.
-ms.date: 11/16/2018
+ms.date: 12/04/2018
 ---
 # How to (ML.NET)
 
@@ -11,6 +11,8 @@ to common questions. In some cases, articles may be listed in multiple sections 
 * [Apply feature engineering for model training on categorical data.](train-model-categorical-ml-net.md)
 
 * [Apply feature engineering for model training on textual data with ML.NET.](train-model-textual-ml-net.md)
+
+* [Determine the feature importance of models with Permutation Feature Importance.](machine-learning/how-to-guides/determine-global-feature-importance-in-model.md)
 
 * [Calculate metrics to evaluate model quality.](verify-model-quality-ml-net.md)
 

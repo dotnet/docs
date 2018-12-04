@@ -82,6 +82,51 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 > [!TIP]
 > For more information and troubleshooting tips on .NET Core debugging with OmniSharp in Visual Studio Code, see [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
 
+## Add a Class
+
+1. To add a new class right-click in the VSCode Explorer and select **New File**. This adds a new file to the folder you have open in VSCode.
+2. Name your file `Class1.cs`. You must save it with a `.cs` extension at the end for it to be recognized as a csharp file.
+3. Add the code below to create your first class. Make sure to include the correct namespace so you can reference it from your `Program.cs` file.
+``` csharp
+using System;
+
+namespace HelloWorld
+{
+    public class Class1
+    {
+        public Class1(){}
+        public string ReturnMessage()
+        {
+            return " Happy coding!";
+        }
+    }
+}
+```
+
+4. Call your new class from your main method in `Program.cs` by adding the code below.
+
+```csharp
+using System;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Class1 c1 = new Class1();
+            Console.WriteLine("Hello World!" + c1.ReturnMessage());
+        }
+    }
+}
+```
+
+5. Save your changes and run your program again. The new message should appear with the appended string.
+```console
+> dotnet run
+Hello World! Happy coding!
+```
+
 ## FAQ
 
 ### I'm missing required assets to build and debug C# in Visual Studio Code. My debugger says "No Configuration."

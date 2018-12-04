@@ -26,7 +26,7 @@ Create a new project using the **File** > **New Project** command. You can creat
 
 # [C#](#tab/csharp)
 ![Visualizing a C# syntax tree](media/syntax-visualizer/visualize-csharp.png)
-# [Visual Basic](#tab/visual-basic)
+# [Visual Basic](#tab/vb)
 ![Visualizing a VB syntax tree](media/syntax-visualizer/visualize-visual-basic.png)
 
 ---

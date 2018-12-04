@@ -76,7 +76,6 @@ Common AppDomain properties include:
 *  `APP_NI_PATHS` This list is very similar to APP_PATHS except that it's meant to be paths that will be probed for native images.
 *  `NATIVE_DLL_SEARCH_DIRECTORIES` This property is a list of paths the loader should probe when looking for native DLLs called via p/invoke.
 *  `PLATFORM_RESOURCE_ROOTS` This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).
-*  `AppDomainCompatSwitch` This string specifies which compatibility quirks should be used for assemblies without an explicit Target Framework Moniker (an assembly-level attribute indicating which Framework an assembly is meant to run against). Typically, this should be set to `"UseLatestBehaviorWhenTFMNotSpecified"` but some hosts may prefer to get older Silverlight or Windows Phone compatibility quirks, instead.
 
 In our [simple sample host](https://github.com/dotnet/samples/tree/master/core/hosting), these properties are set up as follows:
 

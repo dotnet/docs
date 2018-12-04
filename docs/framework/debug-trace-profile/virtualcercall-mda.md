@@ -52,7 +52,7 @@ declaringType name="VirtualCERCall+MyClass"
   
 ## Example  
   
-```  
+```csharp
 class MyClass  
 {  
     [ReliabilityContract(Consistency.MayCorruptProcess, CER.None)]  

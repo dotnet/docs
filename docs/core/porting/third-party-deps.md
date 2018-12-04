@@ -3,19 +3,19 @@ title: Porting to .NET Core - Analyze your third-party dependencies
 description: Learn how to analyze third-party dependencies in order to port your project from .NET Framework to .NET Core.
 author: cartermp
 ms.author: mairaw
-ms.date: 02/15/2018
+ms.date: 12/04/2018
 ---
 # Analyze your third-party dependencies
 
 If you're looking to port your code to .NET Core or .NET Standard, the first step in the porting process is to understand your third-party dependencies. Third-party dependencies are either [NuGet packages](#analyze-referenced-nuget-packages-on-your-project) or [DLLs](#analyze-dependencies-that-arent-nuget-packages) you're referencing in your project. Evaluate each dependency and develop a contingency plan for the dependencies that aren't compatible with .NET Core. This article shows you how to determine if the dependency is compatible with .NET Core.
 
-## Analyze referenced NuGet packages in your project
+## Analyze referenced NuGet packages in your projects
 
 If you're referencing NuGet packages in your project, you need to verify if they're compatible with .NET Core.
 There are two ways to accomplish that:
 
-* [Using the NuGet Package Explorer app](#analyze-nuget-packages-using-nuget-package-explorer) (the most reliable method).
-* [Using the nuget.org site](#analyze-nuget-packages-using-nugetorg).
+* [Using the NuGet Package Explorer app](#analyze-nuget-packages-using-nuget-package-explorer)
+* [Using the nuget.org site](#analyze-nuget-packages-using-nugetorg)
 
 After analyzing the packages, if they're not compatible with .NET Core and only target .NET Framework, you can check if the [.NET Framework compatibility mode](#net-framework-compatibility-mode) can help with your porting process.
 
@@ -46,6 +46,7 @@ netcoreapp1.0
 netcoreapp1.1
 netcoreapp2.0
 netcoreapp2.1
+netcoreapp2.2
 portable-net45-win8
 portable-win8-wpa8
 portable-net451-win81
@@ -103,6 +104,12 @@ To suppress the warning by editing the project file, find the `PackageReference`
 ```
 
 For more information on how to suppress compiler warnings in Visual Studio, see [Suppressing warnings for NuGet packages](/visualstudio/ide/how-to-suppress-compiler-warnings#suppressing-warnings-for-nuget-packages).
+
+### Port your packages to `PackageReference`
+
+.NET Core uses [PackageReference](/nuget/consume-packages/package-references-in-project-files) to specify package dependencies. If you are using [packages.config](/nuget/reference/packages-config) to specify your packages, you will need to convert over to `PackageReference`.
+
+You can learn more at [Migrate from packages.config to PackageReference](/nuget/reference/migrate-packages-config-to-package-reference).
 
 ### What to do when your NuGet package dependency doesn't run on .NET Core
 

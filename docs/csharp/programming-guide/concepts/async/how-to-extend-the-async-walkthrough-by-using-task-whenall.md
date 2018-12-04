@@ -240,7 +240,7 @@ namespace AsyncExampleWPF_WhenAll
   
             // Display the total count for all of the websites.  
             resultsTextBox.Text +=  
-                string.Format("\r\n\r\nTotal bytes returned:  {0}\r\n", total);  
+                $"\r\n\r\nTotal bytes returned:  {total}\r\n";
         }  
   
         private List<string> SetUpURLList()  
@@ -301,9 +301,8 @@ namespace AsyncExampleWPF_WhenAll
             var bytes = content.Length;  
             // Strip off the "https://".  
             var displayURL = url.Replace("https://", "");  
-            resultsTextBox.Text += string.Format("\n{0,-58} {1,8}", displayURL, bytes);  
-  
-        }  
+            resultsTextBox.Text += $"\n{displayURL,-58} {bytes,8}";
+        }
     }  
 }  
 ```  
@@ -387,7 +386,7 @@ namespace AsyncExampleWPF_HttpClient_WhenAll
   
             // Display the total count for all of the web addresses.  
             resultsTextBox.Text +=  
-                string.Format("\r\n\r\nTotal bytes returned:  {0}\r\n", total);  
+                $"\r\n\r\nTotal bytes returned:  {total}\r\n";
         }  
   
         private List<string> SetUpURLList()  
@@ -423,7 +422,7 @@ namespace AsyncExampleWPF_HttpClient_WhenAll
             var bytes = content.Length;  
             // Strip off the "https://".  
             var displayURL = url.Replace("https://", "");  
-            resultsTextBox.Text += string.Format("\n{0,-58} {1,8}", displayURL, bytes);  
+            resultsTextBox.Text += $"\n{displayURL,-58} {bytes,8}";
         }  
     }  
 }  

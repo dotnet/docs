@@ -14,5 +14,5 @@ Earlier we raised the question "Is Docker necessary when building a microservice
 However, if you know how to design and develop a microservices-based application that is also based on Docker containers, you will be able to design and develop any other, simpler application model. For example, you might design a three-tier application that also requires a multi-container approach. Because of that, and because microservice architectures are an important trend within the container world, this section focuses on a microservice architecture implementation using Docker containers.
 
 >[!div class="step-by-step"]
-[Previous](../docker-application-development-process/docker-app-development-workflow.md)
-[Next](microservice-application-design.md)
+>[Previous](../docker-application-development-process/docker-app-development-workflow.md)
+>[Next](microservice-application-design.md)

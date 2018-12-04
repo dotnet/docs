@@ -171,7 +171,6 @@ For example, in the preceding OrderAggregate code example, there are several pri
 - **Udi Dahan. How to create fully encapsulated Domain Models** \
   [*http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/*](http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/)
 
-
 >[!div class="step-by-step"]
-[Previous](microservice-domain-model.md)
-[Next](seedwork-domain-model-base-classes-interfaces.md)
+>[Previous](microservice-domain-model.md)
+>[Next](seedwork-domain-model-base-classes-interfaces.md)

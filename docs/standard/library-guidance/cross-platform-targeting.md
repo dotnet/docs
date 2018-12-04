@@ -89,5 +89,5 @@ To shield your consumers from having to build for individual frameworks, you sho
 **❌ DO NOT** include targets for .NET platforms that are no longer supported. For example, `SL4`, `WP`.
 
 >[!div class="step-by-step"]
-[Previous](./get-started.md)
-[Next](./strong-naming.md)
+>[Previous](get-started.md)
+>[Next](strong-naming.md)

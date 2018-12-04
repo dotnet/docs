@@ -1,1 +1,1 @@
-**This topic applies to: ✓** .NET Core SDK 2.1.300 and later versions
+**This topic applies to: ✓** .NET Core 2.1 SDK and later versions

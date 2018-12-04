@@ -33,7 +33,7 @@ public partial class MainWindow : Window
 
         // SIX
         resultsTextBox.Text +=
-            String.Format("\r\nLength of the downloaded string: {0}.\r\n", contentLength);
+            $"\r\nLength of the downloaded string: {contentLength}.\r\n";
     }
 
     async Task<int> AccessTheWebAsync()
@@ -193,7 +193,7 @@ To run the project, perform the following steps:
                     "           About to display contentLength and exit.\r\n";
 
                 resultsTextBox.Text +=
-                    String.Format("\r\nLength of the downloaded string: {0}.\r\n", contentLength);
+                    $"\r\nLength of the downloaded string: {contentLength}.\r\n";
             }
 
             async Task<int> AccessTheWebAsync()

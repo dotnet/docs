@@ -101,7 +101,7 @@ The multiple `from` clauses produce a <xref:System.Linq.Enumerable.SelectMany%2A
 
 It's important to keep in mind that whether you choose to write your LINQ in the query syntax used above or use method syntax instead, it's always possible to go from one form of syntax to the other. The above query written in query syntax can be written in method syntax as:
 ```csharp
-var startingDeck = Suits().SelectMany(suit => Ranks(rank => new { Suit = suit, Rank = rank }));
+var startingDeck = Suits().SelectMany(suit => Ranks().Select(rank => new { Suit = suit, Rank = rank }));
 ```
 The compiler translates LINQ statements written with query syntax into the equivalent method call syntax. Therefore, regardless of your syntax choice, the two versions of the query produce the same result. Choose which syntax works best for your situation: for instance, if you're working in a team where some of the members have difficulty with method syntax, try to prefer using query syntax.
 

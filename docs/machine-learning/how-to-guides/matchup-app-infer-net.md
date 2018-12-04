@@ -2,15 +2,14 @@
 title: Create a game match up list app with Infer.NET and probalistic programming
 description: Discover how to use probalistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
 ms.date: 10/04/2018
-ms.topic: how-to
-ms.custom: mvc
+ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use probalistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
 ---
 # Create a game match up list app with Infer.NET and probabilistic programming
 
 This how-to guide teaches you about probabilistic programming using Infer.NET. Probabilistic programming is a machine learning approach where custom models are expressed as computer programs. It allows for incorporating domain knowledge in the models and makes the machine learning system more interpretable. It also supports online inference – the process of learning as new data arrives. Infer.NET is used in various products at Microsoft in Azure, Xbox, and Bing.
 
-## What is probabilistic programming? 
+## What is probabilistic programming?
 
 Probabilistic programming allows us to create statistical models of real-world processes. 
 

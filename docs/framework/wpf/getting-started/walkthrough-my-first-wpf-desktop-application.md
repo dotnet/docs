@@ -248,7 +248,7 @@ In the section, you create a single-column table with three rows and a 10-pixel 
 
     [!code-xaml[ExpenseIt#8](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt3/ExpenseItHome.xaml#8)]
 
-    The <xref:System.Windows.Controls.RowDefinition.Height%2A> of two rows is set to <xref:System.Windows.GridLength.Auto%2A>, which means that the rows are sized base on the content in the rows. The default <xref:System.Windows.Controls.RowDefinition.Height%2A> is <xref:System.Windows.GridUnitType.Star> sizing, which means that the row height is a weighted proportion of the available space. For example if two rows each have a <xref:System.Windows.Controls.RowDefinition.Height%2A> of "*", they each have a height that is half of the available space.
+    The <xref:System.Windows.Controls.RowDefinition.Height%2A> of two rows is set to <xref:System.Windows.GridLength.Auto%2A>, which means that the rows are sized based on the content in the rows. The default <xref:System.Windows.Controls.RowDefinition.Height%2A> is <xref:System.Windows.GridUnitType.Star> sizing, which means that the row height is a weighted proportion of the available space. For example if two rows each have a <xref:System.Windows.Controls.RowDefinition.Height%2A> of "*", they each have a height that is half of the available space.
 
     Your <xref:System.Windows.Controls.Grid> should now look like the following XAML:
 

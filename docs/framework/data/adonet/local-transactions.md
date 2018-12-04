@@ -15,7 +15,7 @@ Transactions in [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] are us
  Each of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data providers has its own `Transaction` object for performing local transactions. If you require a transaction to be performed in a SQL Server database, select a <xref:System.Data.SqlClient> transaction. For an Oracle transaction, use the <xref:System.Data.OracleClient> provider. In addition, there is a <xref:System.Data.Common.DbTransaction> class that is available for writing provider-independent code that requires transactions.  
   
 > [!NOTE]
-> Transactions are most efficient when it is performed on the server. If you are working with a SQL Server database that makes extensive use of explicit transactions, consider writing them as stored procedures using the Transact-SQL BEGIN TRANSACTION statement.
+> Transactions are most efficient when they are performed on the server. If you are working with a SQL Server database that makes extensive use of explicit transactions, consider writing them as stored procedures using the Transact-SQL BEGIN TRANSACTION statement.
   
 ## Performing a Transaction Using a Single Connection  
  In [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)], you control transactions with the `Connection` object. You can initiate a local transaction with the `BeginTransaction` method. Once you have begun a transaction, you can enlist a command in that transaction with the `Transaction` property of a `Command` object. You can then commit or roll back modifications made at the data source based on the success or failure of the components of the transaction.  

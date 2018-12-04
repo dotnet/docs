@@ -3,7 +3,7 @@ title: Target frameworks
 description: Learn about target frameworks for .NET Core apps and libraries.
 author: richlander
 ms.author: mairaw
-ms.date: 05/31/2018
+ms.date: 12/03/2018
 ms.custom: "updateeachrelease"
 ms.technology: dotnet-standard
 ---
@@ -26,7 +26,7 @@ The following table defines the most common target frameworks, how they're refer
 | Target Framework      | Latest <br/> Stable Version | Target Framework Moniker (TFM) | Implemented <br/> .NET Standard Version |
 | :-------------------: | :-------------------------: | :----------------------------: | :-------------------------------------: |
 | .NET Standard         | 2.0                         | netstandard2.0                 | N/A                                     |
-| .NET Core             | 2.1                         | netcoreapp2.1                  | 2.0                                     |
+| .NET Core             | 2.2                         | netcoreapp2.2                  | 2.0                                     |
 | .NET Framework        | 4.7.2                       | net472                         | 2.0                                     |
 
 ## Supported target framework versions
@@ -36,7 +36,7 @@ A target framework is typically referenced by a TFM. The following table shows t
 | Target Framework           | TFM |
 | -------------------------- | --- |
 | .NET Standard              | netstandard1.0<br>netstandard1.1<br>netstandard1.2<br>netstandard1.3<br>netstandard1.4<br>netstandard1.5<br>netstandard1.6<br>netstandard2.0 |
-| .NET Core                  | netcoreapp1.0<br>netcoreapp1.1<br>netcoreapp2.0<br>netcoreapp2.1 |
+| .NET Core                  | netcoreapp1.0<br>netcoreapp1.1<br>netcoreapp2.0<br>netcoreapp2.1<br>netcoreapp2.2 |
 | .NET Framework             | net11<br>net20<br>net35<br>net40<br>net403<br>net45<br>net451<br>net452<br>net46<br>net461<br>net462<br>net47<br>net471<br>net472 |
 | Windows Store              | netcore [netcore45]<br>netcore45 [win] [win8]<br>netcore451 [win81] |
 | .NET Micro Framework       | netmf |
@@ -46,14 +46,14 @@ A target framework is typically referenced by a TFM. The following table shows t
 
 ## How to specify target frameworks
 
-Target frameworks are specified in your project file. When a single target framework is specified, use the **TargetFramework** element. The following console app project file demonstrates how to target .NET Core 2.0:
+Target frameworks are specified in your project file. When a single target framework is specified, use the **TargetFramework** element. The following console app project file demonstrates how to target .NET Core 2.2:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
 </Project>

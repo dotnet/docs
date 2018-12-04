@@ -2,8 +2,7 @@
 title: Train a machine learning model using cross-validation - ML.NET
 description: Discover how to train a machine learning model using cross-validation with ML.NET to have a greater level of accuracy for the model's predictions
 ms.date: 11/07/2018
-ms.topic: how-to
-ms.custom: mvc
+ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use ML.NET to train a machine learning model using cross-validation with ML.NET so that I can have a greater level of accuracy for my model's predictions.
 ---
 # Train a machine learning model using cross-validation - ML.NET

@@ -280,8 +280,8 @@ namespace AsyncFirstExample
   
             int contentLength = await AccessTheWebAsync();  
   
-            resultsTextBox.Text +=  
-                String.Format("\r\nLength of the downloaded string: {0}.\r\n", contentLength);  
+            resultsTextBox.Text +=
+                $"\r\nLength of the downloaded string: {contentLength}.\r\n";
         }  
   
         // Three things to note in the signature:  

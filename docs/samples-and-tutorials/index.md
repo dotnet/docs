@@ -70,10 +70,6 @@ This tutorial demonstrates web communications, JSON serialization, and object-or
 
 This tutorial demonstrates many of the features of LINQ and the language elements that support it. The [completed sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-linq) is available in the dotnet/samples repository on GitHub.
 
-**[Microservices hosted in Docker](../csharp/tutorials/microservices.md)**
-
-This tutorial demonstrates building an ASP.NET Core microservice and hosting it in Docker. The [completed sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/WeatherMicroservice) is available in the dotnet/samples repository on GitHub.
-
 **[Getting started with .NET Core on macOS using Visual Studio for Mac](../core/tutorials/using-on-mac-vs.md)**
 
 This tutorial shows you how to build a simple .NET Core console app using Visual Studio for Mac.

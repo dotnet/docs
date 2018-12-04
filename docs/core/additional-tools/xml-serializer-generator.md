@@ -24,7 +24,7 @@ Like the [Xml Serializer Generator (sgen.exe)](../../standard/serialization/xml-
 
 To complete this tutorial:
 
-* Install [.NET Core SDK 2.1.3 or later](https://www.microsoft.com/net/download)
+* Install [.NET Core 2.1 SDK or later](https://www.microsoft.com/net/download).
 * Install your favorite code editor, if you haven't already.
 
 > [!TIP]

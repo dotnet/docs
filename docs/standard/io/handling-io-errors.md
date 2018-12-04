@@ -2,7 +2,9 @@
 title: "Handling I/O errors in .NET"
 ms.date: "08/27/2018"
 ms.technology: dotnet-standard
-ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "I/O, exception handling"
   - "I/O, errors"

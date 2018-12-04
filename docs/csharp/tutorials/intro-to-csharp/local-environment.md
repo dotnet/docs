@@ -20,7 +20,7 @@ generates the files and assets necessary for your application. The introduction 
 The other commands you'll use are [`dotnet build`](../../../core/tools/dotnet-build.md) to build the executable,
 and [`dotnet run`](../../../core/tools/dotnet-run.md) to run the executable.
 
-## Pick your turorial
+## Pick your tutorial
 
 You can start with any of the following tutorials:
 

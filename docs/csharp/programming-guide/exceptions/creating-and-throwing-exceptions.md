@@ -35,7 +35,7 @@ Exceptions are used to indicate that an error has occurred while running the pro
   
  All exceptions contain a property named <xref:System.Exception.Message%2A>. This string should be set to explain the reason for the exception. Note that information that is sensitive to security should not be put in the message text. In addition to <xref:System.Exception.Message%2A>, <xref:System.ArgumentException> contains a property named <xref:System.ArgumentException.ParamName%2A> that should be set to the name of the argument that caused the exception to be thrown. In the case of a property setter, <xref:System.ArgumentException.ParamName%2A> should be set to `value`.  
   
- Public and protected methods members should throw exceptions whenever they cannot complete their intended functions. The exception class that is thrown should be the most specific exception available that fits the error conditions. These exceptions should be documented as part of the class functionality, and derived classes or updates to the original class should retain the same behavior for backward compatibility.  
+ Public and protected methods should throw exceptions whenever they cannot complete their intended functions. The exception class that is thrown should be the most specific exception available that fits the error conditions. These exceptions should be documented as part of the class functionality, and derived classes or updates to the original class should retain the same behavior for backward compatibility.  
   
 ## Things to Avoid When Throwing Exceptions  
  The following list identifies practices to avoid when throwing exceptions:  

@@ -10,12 +10,7 @@ ms.date: 12/04/2018
 ---
 # What's new in .NET Core 2.2
 
-.NET Core 2.2 includes enhancements and new features in the following areas:
-
-- [Core](#core)
-- [Data](#data)
-- [JIT compilation improvements](#jit-compiler-improvements)
-- [Runtime](#runtime)
+.NET Core 2.2 includes enhancements in event handling and runtime servixes, authentication to Azure SQL databases, JIT compiler performance, and  code injection prior to the execution of the `Main` method.
 
 ## Core
 
@@ -45,7 +40,7 @@ internal sealed class SimpleEventListener : EventListener
         Console.WriteLine($"ThreadID = {eventData.OSThreadId} ID = {eventData.EventId} Name = {eventData.EventName}");
         for (int i = 0; i < eventData.Payload.Count; i++)
         {
-            string payloadString = eventData.Payload[i] != null ? eventData.Payload[i].ToString() : string.Empty;
+            string payloadString = eventData.Payload[i]?.ToString() ?? string.Empty;
             Console.WriteLine($"\tName = \"{eventData.PayloadNames[i]}\" Value = \"{payloadString}\"");
         }
         Console.WriteLine("\n");
@@ -63,7 +58,7 @@ In addition, .NET Core 2.2 adds the following two properties to the <xref:System
 
 **AAD authentication to Azure SQL databases with the SqlConnection.AccessToken property**
 
-Starting with .NET Core 2.2, an access token issued by Azure Active Directory can be used to authenticate to an Azure SQL database. To support access tokens, the <xref:System.Data.SqlClient.SqlConnection.AccessToken> property has been added to the <xref:System.Data.SqlClient.SqlConnection> class. To take advantage of AAD authentication, download version 4.6 of the System.Data.SqlClient NuGet package. In order to use the feature, you can obtain the access token value using the [Active Directory Authentication Library for .NET](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet) contained in the [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) NuGet package.
+Starting with .NET Core 2.2, an access token issued by Azure Active Directory can be used to authenticate to an Azure SQL database. To support access tokens, the <xref:System.Data.SqlClient.SqlConnection.AccessToken> property has been added to the <xref:System.Data.SqlClient.SqlConnection> class. To take advantage of AAD authentication, download version 4.6 of the System.Data.SqlClient NuGet package. In order to use the feature, you can obtain the access token value using the [Active Directory Authentication Library for .NET](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet) contained in the [`Microsoft.IdentityModel.Clients.ActiveDirectory`](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) NuGet package.
 
 ## JIT compiler improvements
 
@@ -91,5 +86,6 @@ See [Host startup hook](https://github.com/dotnet/core-setup/blob/master/Documen
 
 ## See also
 
-* [What's new in .NET Core](index.md)  
+* [What's new in .NET Core](index.md)
+* [What's new in ASP.NET Core 2.2](/aspnet/core/release-notes/aspnetcore-2.2)  
 * [New features in EF Core 2.2](/ef/core/what-is-new/ef-core-2.2)  

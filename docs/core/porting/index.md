@@ -40,7 +40,7 @@ The following list shows tools you might find helpful to use during the porting 
 * .NET API analyzer - A Roslyn analyzer that discovers potential compatibility risks for C# APIs on different platforms and detects calls to deprecated APIs. For more information, see [.NET API analyzer](../../standard/analyzers/api-analyzer.md).
 * Reverse Package Search - A [useful web service](https://packagesearch.azurewebsites.net) that allows you to search for a type and find packages containing that type.
 
-Additionally, you can attempt to port smaller solutions or individual projects to the appropriate project file format with the [CsprojToVs2017](https://github.com/hvanbakel/CsprojToVs2017) tool. **Be warned:** There is no guarantee that this tool will work for all of your projects, and it may cause subtle changes in behavior that you depend on. This tool should be used as a _starting point_ that automates the basic things that can be automated.
+Additionally, you can attempt to port smaller solutions or individual projects to the .NET Core project file format with the [CsprojToVs2017](https://github.com/hvanbakel/CsprojToVs2017) tool. **Be warned:** There is no guarantee that this tool will work for all of your projects, and it may cause subtle changes in behavior that you depend on. This tool should be used as a _starting point_ that automates the basic things that can be automated.
 
 >[!div class="step-by-step"]
 >[Next](third-party-deps.md)

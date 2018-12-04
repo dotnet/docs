@@ -21,7 +21,7 @@ ms.date: "12/04/2018"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Get started with C#</h3>
+                                    <h3>Learn C#</h3>
                                 </div>
                             </div>
                         </div>
@@ -166,9 +166,9 @@ ms.date: "12/04/2018"
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/csharp">C# Guide</a></h3>
-                                                <p><a href="/dotnet/csharp/tutorials/intro-to-csharp">Learn C#</a></p>
                                                 <p><a href="/dotnet/csharp/getting-started">Get Started</a></p>
                                                 <p><a href="/dotnet/csharp/tour-of-csharp">Tour of C#</a></p>
+                                                <p><a href="/dotnet/csharp/whats-new">What's New in C#</a></p>
                                                 <p><a href="/dotnet/csharp/language-reference">C# Language Reference</a></p>
                                             </div>
                                         </div>

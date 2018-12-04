@@ -425,7 +425,6 @@ It is that simple. And because it is automatically generated, the Swagger metada
 - **Get started with NSwag and ASP.NET Core** \
   [*https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-nswag?view=aspnetcore-2.1\&tabs=visual-studio%2Cvisual-studio-xml*](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-nswag?view=aspnetcore-2.1\&tabs=visual-studio%2Cvisual-studio-xml)
 
-
 >[!div class="step-by-step"]
-[Previous](microservice-application-design.md)
-[Next](multi-container-applications-docker-compose.md)
+>[Previous](microservice-application-design.md)
+>[Next](multi-container-applications-docker-compose.md)

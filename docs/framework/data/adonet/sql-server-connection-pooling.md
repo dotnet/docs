@@ -25,7 +25,7 @@ Connecting to a database server typically consists of several time-consuming ste
   
  In the following C# example, three new <xref:System.Data.SqlClient.SqlConnection> objects are created, but only two connection pools are required to manage them. Note that the first and second connection strings differ by the value assigned for `Initial Catalog`.  
   
-```  
+```csharp
 using (SqlConnection connection = new SqlConnection(  
   "Integrated Security=SSPI;Initial Catalog=Northwind"))  
     {  

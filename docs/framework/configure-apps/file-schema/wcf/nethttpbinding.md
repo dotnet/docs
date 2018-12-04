@@ -133,7 +133,7 @@ Represents a binding that a Windows Communication Foundation (WCF) service can u
 ```  
   
 ## Example  
- Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. The functionality from the previous example can be accomplished by removing the bindingConfiguration from the endpoint address and the name frm the binding.  
+ Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. The functionality from the previous example can be accomplished by removing the bindingConfiguration from the endpoint address and the name from the binding.  
   
 ```xml  
 <system.serviceModel>   

@@ -14,10 +14,10 @@ type* identifier;
 void* identifier; //allowed but not recommended
 ```
 
-The type specified before the `*` in a pointer type is called the **referrent type**. Any of the following types may be a referrent type:
+The type specified before the `*` in a pointer type is called the **referent type**. Any of the following types may be a referent type:
 
 - Any integral type: [sbyte](../../language-reference/keywords/sbyte.md), [byte](../../language-reference/keywords/byte.md), [short](../../language-reference/keywords/short.md), [ushort](../../language-reference/keywords/ushort.md), [int](../../language-reference/keywords/int.md), [uint](../../language-reference/keywords/uint.md), [long](../../language-reference/keywords/long.md), [ulong](../../language-reference/keywords/ulong.md).
-- Any floating point type: [float](../../language-reference/keywords/float.md), [double](../../language-reference/keywords/double.md).
+- Any floating-point type: [float](../../language-reference/keywords/float.md), [double](../../language-reference/keywords/double.md).
 - [char](../../language-reference/keywords/char.md).
 - [bool](../../language-reference/keywords/bool.md).
 - [decimal](../../language-reference/keywords/decimal.md).

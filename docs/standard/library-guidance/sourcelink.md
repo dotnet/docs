@@ -34,5 +34,5 @@ You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuG
 > Ordinarily, you'd publish symbol files in a [symbol package](./nuget.md#symbol-packages). Currently the main public host for symbol packages doesn't support the portable symbol files (`*.pdb`) created by SDK-style projects, and symbol packages aren't useful.
 
 >[!div class="step-by-step"]
-[Previous](./dependencies.md)
-[Next](./publish-nuget-package.md)
+>[Previous](dependencies.md)
+>[Next](publish-nuget-package.md)

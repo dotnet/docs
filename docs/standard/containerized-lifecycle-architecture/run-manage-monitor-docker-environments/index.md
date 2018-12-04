@@ -14,7 +14,6 @@ This last pillar in the containerized Docker applications life cycle is centered
 
 How you run your containerized applications in production (infrastructure architecture and platform technologies) is also very much related and completely founded on the chosen architecture and development platforms that we looked at in the Chapter 1 of this e-book. This chapter examines specific products and technologies from Microsoft and other vendors that you can use to effectively run highly scalable, HA distributed applications plus how you can manage and monitor them from the IT perspective.
 
-
 >[!div class="step-by-step"]
-[Previous](../docker-devops-workflow/docker-application-outer-loop-devops-workflow.md)
-[Next](run-microservices-based-applications-in-production.md)
+>[Previous](../docker-devops-workflow/docker-application-outer-loop-devops-workflow.md)
+>[Next](run-microservices-based-applications-in-production.md)

@@ -42,4 +42,4 @@ And finally, **Do not** recommendations indicate something you should almost nev
 **❌ DO NOT** publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
 
 >[!div class="step-by-step"]
-[Next](./get-started.md)
+>[Next](get-started.md)

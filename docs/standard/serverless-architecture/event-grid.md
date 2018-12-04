@@ -136,5 +136,5 @@ In this chapter you learned about the Azure serverless platform that is composed
 * [Work with Azure Functions Proxies](https://docs.microsoft.com/azure/azure-functions/functions-proxies)
 
 >[!div class="step-by-step"]
-[Previous](logic-apps.md)
-[Next](durable-azure-functions.md)
+>[Previous](logic-apps.md)
+>[Next](durable-azure-functions.md)

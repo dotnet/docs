@@ -104,5 +104,5 @@ While the Web App is running, you can monitor the health of the application and 
 <https://docs.microsoft.com/azure/devops/build-release/apps/aspnet/build-aspnet-core>
 
 >[!div class="step-by-step"]
-[Previous](test-asp-net-core-mvc-apps.md)
-[Next](azure-hosting-recommendations-for-asp-net-web-apps.md)
+>[Previous](test-asp-net-core-mvc-apps.md)
+>[Next](azure-hosting-recommendations-for-asp-net-web-apps.md)

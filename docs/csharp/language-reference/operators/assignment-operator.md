@@ -1,6 +1,6 @@
 ---
 title: "= Operator (C# Reference)"
-ms.date: 10/31/2018
+ms.date: 11/26/2018
 f1_keywords: 
   - "=_CSharpKeyword"
 helpviewer_keywords: 
@@ -27,6 +27,16 @@ The following example demonstrates the usage of the assignment operator to assig
 
 [!code-csharp-interactive[assignment operator](~/samples/snippets/csharp/language-reference/operators/AssignmentExamples.cs#Assignments)]
 
+## ref assignment operator
+
+Beginning with C# 7.3, you can use the ref assignment operator `= ref` to reassign a [ref local](../keywords/ref.md#ref-locals) or [ref readonly local](../keywords/ref.md#ref-readonly-locals) variable. The following example demonstrates the usage of the ref assignment operator:
+
+[!code-csharp[ref assignment operator](~/samples/snippets/csharp/language-reference/operators/AssignmentExamples.cs#RefAssignment)]
+
+In the case of the ref assignment operator, the type of the left operand and the right operand must be the same.
+
+For more information, see the [feature proposal note](https://github.com/dotnet/csharplang/blob/master/proposals/csharp-7.3/ref-local-reassignment.md).
+
 ## Operator overloadability
 
 A user-defined type cannot overload the assignment operator. However, a user-defined type can define an implicit conversion to another type. That way, the value of a user-defined type can be assigned to a variable, a property, or an indexer element of another type. For more information, see the [implicit](../keywords/implicit.md) keyword article.
@@ -40,3 +50,4 @@ For more information, see the [Simple assignment](~/_csharplang/spec/expressions
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Operators](index.md)
+- [ref keyword](../keywords/ref.md)

@@ -98,5 +98,5 @@ Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Rec
     [https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-aws-to-azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-aws-to-azure)
 
 >[!div class="step-by-step"]
-[Previous](index.md)
-[Next](migrate-your-relational-databases-to-azure.md)
+>[Previous](index.md)
+>[Next](migrate-your-relational-databases-to-azure.md)

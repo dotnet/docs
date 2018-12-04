@@ -82,5 +82,5 @@ The following decision table summarizes whether to use .NET Framework or .NET Co
 </table>
 
 >[!div class="step-by-step"]
-[Previous](net-framework-container-scenarios.md)
-[Next](net-container-os-targets.md)
+>[Previous](net-framework-container-scenarios.md)
+>[Next](net-container-os-targets.md)

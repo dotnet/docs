@@ -41,5 +41,5 @@ It would take another guide to cover SOLID in detail. Therefore, this guide requ
   [*https://ardalis.com/new-is-glue*](https://ardalis.com/new-is-glue)
 
 >[!div class="step-by-step"]
-[Previous](nosql-database-persistence-infrastructure.md)
-[Next](microservice-application-layer-implementation-web-api.md)
+>[Previous](nosql-database-persistence-infrastructure.md)
+>[Next](microservice-application-layer-implementation-web-api.md)

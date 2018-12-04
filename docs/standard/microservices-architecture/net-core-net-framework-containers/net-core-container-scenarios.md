@@ -47,7 +47,6 @@ When your container-based system needs the best possible density, granularity, a
 
 This is especially relevant for microservices architectures, where you could have hundreds of microservices (containers) running. With ASP.NET Core images (based on the .NET Core runtime) on Linux or Windows Nano, you can run your system with a much lower number of servers or VMs, ultimately saving costs in infrastructure and hosting.
 
-
 >[!div class="step-by-step"]
-[Previous](general-guidance.md)
-[Next](net-framework-container-scenarios.md)
+>[Previous](general-guidance.md)
+>[Next](net-framework-container-scenarios.md)

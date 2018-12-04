@@ -2,8 +2,7 @@
 title: Use the PredictionFunction to make one prediction at a time - ML.NET 
 description: Learn how to use the ML.NET PredictionFunction to make one prediction at a time
 ms.date: 11/07/2018
-ms.topic: how-to
-ms.custom: mvc
+ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use the ML.NET PredictionFunction to run an example at a time through the prediction pipeline machine learning model so that I can use my machine learning model as part of my application to make and act on one prediction at a time.
 ---
 # Use the PredictionFunction to make one prediction at a time - ML.NET 

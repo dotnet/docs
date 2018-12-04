@@ -112,7 +112,7 @@ namespace QueryCompareTwoDirs
         // hash code.  
         public int GetHashCode(System.IO.FileInfo fi)  
         {  
-            string s = String.Format("{0}{1}", fi.Name, fi.Length);  
+            string s = $"{fi.Name}{fi.Length}";
             return s.GetHashCode();  
         }  
     }  

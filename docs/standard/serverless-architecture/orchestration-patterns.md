@@ -151,5 +151,5 @@ public static async Task CheckStockPrice([OrchestrationTrigger] DurableOrchestra
 * [Unit Testing in .NET Core and .NET Standard](https://docs.microsoft.com/dotnet/core/testing/)
 
 >[!div class="step-by-step"]
-[Previous](durable-azure-functions.md)
-[Next](serverless-business-scenarios.md)
+>[Previous](durable-azure-functions.md)
+>[Next](serverless-business-scenarios.md)

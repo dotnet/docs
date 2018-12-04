@@ -24,4 +24,4 @@ ms.date: 10/26/2017
 - Microsoft Azure provides the most comprehensive and complete environment to modernize your existing .NET Framework applications with Windows Containers, cloud infrastructure and PaaS services.
 
 >[!div class="step-by-step"]
-[Previous](walkthroughs-technical-get-started-overview.md)
+>[Previous](walkthroughs-technical-get-started-overview.md)

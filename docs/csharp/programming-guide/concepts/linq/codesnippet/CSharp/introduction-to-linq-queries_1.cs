@@ -3,7 +3,7 @@
         static void Main()
         {
             // The Three Parts of a LINQ Query:
-            //  1. Data source.
+            // 1. Data source.
             int[] numbers = new int[7] { 0, 1, 2, 3, 4, 5, 6 };
 
             // 2. Query creation.

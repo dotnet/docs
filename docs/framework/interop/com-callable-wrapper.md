@@ -135,8 +135,9 @@ End Class
   
 ```csharp
 [ClassInterface(ClassInterfaceType.None)]
-public class LoanApp : IExplicit {
-    public void M() {}
+public class LoanApp : IExplicit
+{
+    int IExplicit.M() { return 0; }
 }
 ```
   
@@ -159,8 +160,9 @@ End Class
   
 ```csharp
 [ClassInterface(ClassInterfaceType.AutoDispatch)]
-public class LoanApp : IAnother {
-    public void M() {}
+public class LoanApp
+{
+    public int M() { return 0; }
 }
 ```
   

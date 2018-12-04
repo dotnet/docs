@@ -29,7 +29,6 @@ An example of this kind of service is the ordering microservice from the eShopOn
 
 The application layer can be the Web API itself. The important design aspect here is that the microservice has split the queries and ViewModels (data models especially created for the client applications) from the commands, domain model, and transactions following the CQRS pattern. This approach keeps the queries independent from restrictions and constraints coming from DDD patterns that only make sense for transactions and updates, as explained in later sections.
 
-
 >[!div class="step-by-step"]
-[Previous](index.md)
-[Next](eshoponcontainers-cqrs-ddd-microservice.md)
+>[Previous](index.md)
+>[Next](eshoponcontainers-cqrs-ddd-microservice.md)

@@ -131,8 +131,7 @@ If you don't want to build the applications yourself, you can download [Async Sa
         }
 
         // Display the total count for all of the web addresses.
-        resultsTextBox.Text +=
-            string.Format("\r\n\r\nTotal bytes returned:  {0}\r\n", total);
+        resultsTextBox.Text += $"\r\n\r\nTotal bytes returned:  {total}\r\n";
     }
 
     private List<string> SetUpURLList()
@@ -186,7 +185,7 @@ If you don't want to build the applications yourself, you can download [Async Sa
         var bytes = content.Length;
         // Strip off the "https://".
         var displayURL = url.Replace("https://", "");
-        resultsTextBox.Text += string.Format("\n{0,-58} {1,8}", displayURL, bytes);
+        resultsTextBox.Text += $"\n{displayURL,-58} {bytes,8}";
     }
     ```
 
@@ -494,7 +493,7 @@ namespace AsyncExampleWPF
             }
             // Display the total count for all of the websites.
             resultsTextBox.Text +=
-                string.Format("\r\n\r\nTotal bytes returned:  {0}\r\n", total);
+                $"\r\n\r\nTotal bytes returned:  {total}\r\n";
         }
 
         private List<string> SetUpURLList()
@@ -560,7 +559,7 @@ namespace AsyncExampleWPF
             var bytes = content.Length;
             // Strip off the "https://".
             var displayURL = url.Replace("https://", "");
-            resultsTextBox.Text += string.Format("\n{0,-58} {1,8}", displayURL, bytes);
+            resultsTextBox.Text += $"\n{displayURL,-58} {bytes,8}";
         }
     }
 }
@@ -648,7 +647,7 @@ namespace AsyncExampleWPF
 
             // Display the total count for all of the websites.
             resultsTextBox.Text +=
-                string.Format("\r\n\r\nTotal bytes returned:  {0}\r\n", total);
+                $"\r\n\r\nTotal bytes returned:  {total}\r\n";
         }
 
         private List<string> SetUpURLList()
@@ -677,7 +676,7 @@ namespace AsyncExampleWPF
             var bytes = content.Length;
             // Strip off the "https://".
             var displayURL = url.Replace("https://", "");
-            resultsTextBox.Text += string.Format("\n{0,-58} {1,8}", displayURL, bytes);
+            resultsTextBox.Text += $"\n{displayURL,-58} {bytes,8}";
         }
     }
 }

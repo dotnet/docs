@@ -4,8 +4,7 @@ description: Recent enhancements to the C# language enable you to write verifiab
 ms.date: 10/23/2018
 ms.custom: mvc
 ---
-
-# Write safe and efficient C# code #
+# Write safe and efficient C# code
 
 New features in C# enable you to write verifiable safe code with better performance. If you carefully apply these techniques, fewer scenarios require unsafe code. These features make it easier to use references to value types as method arguments and method returns. When done safely, these techniques minimize copying value types. By using value types, you can minimize the number of allocations and garbage collection passes.
 
@@ -263,7 +262,7 @@ Contrast that with reference types in those same situations:
 
 - Storage for reference types are heap allocated for local variables and method arguments. The reference is stored on the stack.
 - Storage for reference types that are members of other objects are separately allocated on the heap. The containing object stores the reference.
-- Storage for value type return values is heap allocated. The reference to that storage is stored on the stack.
+- Storage for reference type return values is heap allocated. The reference to that storage is stored on the stack.
 
 Minimizing allocations comes with tradeoffs. You copy more memory when the size of the `struct` is larger than the size of a reference. A reference is typically 64 bits or 32 bits, and depends on the target machine CPU.
 
@@ -274,3 +273,8 @@ algorithms where minimizing memory allocations is a major factor in achieving th
 necessary performance. You may find that you don't often use these features in
 the code you write. However, these enhancements have been adopted throughout .NET. As more and more APIs make use of these features, you'll
 see the performance of your applications improve.
+
+## See also
+
+- [ref keyword](language-reference/keywords/ref.md)
+- [Ref returns and ref locals](programming-guide/classes-and-structs/ref-returns.md)

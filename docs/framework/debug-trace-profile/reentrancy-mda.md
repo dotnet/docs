@@ -63,7 +63,7 @@ ConsoleApplication1\bin\Debug\ConsoleApplication1.vshost.exe'.
 ## Example  
  The following code example causes an <xref:System.AccessViolationException> to be thrown.  On versions of Windows that support vectored exception handling, this will cause the managed vectored exception handler to be called.  If the `reentrancy` MDA is enabled, the MDA will activate during the attempted call to `MyHandler` from the operating system's vectored exception handling support code.  
   
-```  
+```csharp
 using System;  
 public delegate int ExceptionHandler(IntPtr ptrExceptionInfo);  
   

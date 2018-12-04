@@ -83,7 +83,7 @@ var result = await myTask;
         var bytes = content.Length;  
         // Strip off the "https://".  
         var displayURL = url.Replace("https://", "");  
-        resultsTextBox.Text += string.Format("\n{0,-58} {1,8}", displayURL, bytes);  
+        resultsTextBox.Text += $"\n{displayURL,-58} {bytes,8}";
     }  
     ```  
   
@@ -124,8 +124,7 @@ var result = await myTask;
         int total = length1 + length2 + length3;  
   
         // Display the total count for the downloaded websites.  
-        resultsTextBox.Text +=  
-            string.Format("\r\n\r\nTotal bytes returned:  {0}\r\n", total);  
+        resultsTextBox.Text += $"\r\n\r\nTotal bytes returned:  {total}\r\n";
     }  
     ```  
   
@@ -195,8 +194,7 @@ namespace AsyncExample_MultipleTasks
             int total = length1 + length2 + length3;  
   
             // Display the total count for the downloaded websites.  
-            resultsTextBox.Text +=  
-                string.Format("\r\n\r\nTotal bytes returned:  {0}\r\n", total);  
+            resultsTextBox.Text += $"\r\n\r\nTotal bytes returned:  {total}\r\n";
         }  
   
         async Task<int> ProcessURLAsync(string url, HttpClient client)  
@@ -214,8 +212,8 @@ namespace AsyncExample_MultipleTasks
             var bytes = content.Length;  
             // Strip off the "https://".  
             var displayURL = url.Replace("https://", "");  
-            resultsTextBox.Text += string.Format("\n{0,-58} {1,8}", displayURL, bytes);  
-        }  
+            resultsTextBox.Text += $"\n{displayURL,-58} {bytes,8}";
+        }
     }  
 }  
 ```  

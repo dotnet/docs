@@ -21,4 +21,4 @@ in fixing any errors you find, you may submit a [Pull Request](https://github.co
  [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)
 
 >[!div class="step-by-step"]
-[Next](../../../../_vblang/spec/introduction.md)
+>[Next](../../../../_vblang/spec/introduction.md)

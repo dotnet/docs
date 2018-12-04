@@ -6,9 +6,9 @@ ms.author: jeliknes
 ms.date: 6/26/2018
 ---
 
-![](./media/Cover.jpg)
-
 # Serverless apps: Architecture, patterns, and Azure implementation
+
+![](./media/Cover.jpg)
 
 > DOWNLOAD available at: <https://aka.ms/serverless-ebook>
 
@@ -133,4 +133,4 @@ The first part of this guide examines why serverless is a viable option by compa
 The guide and related samples are constantly evolving, so your feedback is welcomed! If you have comments about how this guide can be improved, use the feedback section at the bottom of any page built on [GitHub issues](https://github.com/dotnet/docs/issues).
 
 >[!div class="step-by-step"]
-[Next](architecture-approaches.md)
+>[Next](architecture-approaches.md)

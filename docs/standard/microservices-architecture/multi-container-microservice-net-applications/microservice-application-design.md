@@ -179,5 +179,5 @@ Especially when you deal with large applications composed by multiple sub-system
 There is no silver bullet or a right architecture pattern for every given case. You cannot have "one architecture pattern to rule them all." Depending on the priorities of each microservice, you must choose a different approach for each, as explained in the following sections.
 
 >[!div class="step-by-step"]
-[Previous](index.md)
-[Next](data-driven-crud-microservice.md)
+>[Previous](index.md)
+>[Next](data-driven-crud-microservice.md)

@@ -56,7 +56,6 @@ There is only one application architecture: the architecture of the system or en
 - **Event-Sourcing (ES)** \
   [*http://codebetter.com/gregyoung/2010/02/20/why-use-event-sourcing/*](http://codebetter.com/gregyoung/2010/02/20/why-use-event-sourcing/)
 
-
 >[!div class="step-by-step"]
-[Previous](apply-simplified-microservice-cqrs-ddd-patterns.md)
-[Next](cqrs-microservice-reads.md)
+>[Previous](apply-simplified-microservice-cqrs-ddd-patterns.md)
+>[Next](cqrs-microservice-reads.md)

@@ -15,7 +15,6 @@ It is challenging enough to design and deploy a microservices-based application.
 
 The many individual components of your application should also incorporate health monitoring features. By following the guidelines in this chapter, you can create an application that can work smoothly in spite of transient downtime or the normal hiccups that occur in complex and cloud-based deployments.
 
-
 >[!div class="step-by-step"]
-[Previous](../microservice-ddd-cqrs-patterns/microservice-application-layer-implementation-web-api.md)
-[Next](handle-partial-failure.md)
+>[Previous](../microservice-ddd-cqrs-patterns/microservice-application-layer-implementation-web-api.md)
+>[Next](handle-partial-failure.md)

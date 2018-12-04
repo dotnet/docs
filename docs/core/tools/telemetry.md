@@ -46,7 +46,7 @@ The feature collects the following data:
 
 &#8224;This metric is published.
 
-Starting with .NET Core SDK 2.0, new data points are collected:
+Starting with .NET Core 2.0 SDK, new data points are collected:
 
 - `dotnet` command arguments and options: only known arguments and options are collected (not arbitrary strings).
 - Whether the SDK is running in a container.

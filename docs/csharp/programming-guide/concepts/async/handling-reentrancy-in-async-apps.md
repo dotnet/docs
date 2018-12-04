@@ -253,7 +253,7 @@ async Task AccessTheWebAsync(CancellationToken ct)
   
     // Display the total count for all of the websites.  
     ResultsTextBox.Text +=  
-        string.Format("\r\n\r\nTOTAL bytes returned:  {0}\r\n", total);  
+        $"\r\n\r\nTOTAL bytes returned:  {total}\r\n";
 }     
 ```  
   
@@ -396,7 +396,7 @@ private async void StartButton_Click(object sender, RoutedEventArgs e)
     // ***Verify that each group's results are displayed together, and that  
     // the groups display in order, by marking each group with a letter.  
     group = (char)(group + 1);  
-    ResultsTextBox.Text += string.Format("\r\n\r\n#Starting group {0}.", group);  
+    ResultsTextBox.Text += $"\r\n\r\n#Starting group {group}.";
   
     try  
     {  
@@ -405,7 +405,7 @@ private async void StartButton_Click(object sender, RoutedEventArgs e)
   
         // The following line verifies a successful return from the download and  
         // display procedures.   
-        ResultsTextBox.Text += string.Format("\r\n\r\n#Group {0} is complete.\r\n", finishedGroup);  
+        ResultsTextBox.Text += $"\r\n\r\n#Group {finishedGroup} is complete.\r\n";
     }  
     catch (Exception)  
     {  
@@ -436,7 +436,7 @@ private async Task<char> AccessTheWebAsync(char grp)
     // Assign the Task that FinishOneGroupAsync returns to the gatekeeper task, pendingWork.  
     pendingWork = FinishOneGroupAsync(urlList, getContentTasks, grp);  
   
-    ResultsTextBox.Text += string.Format("\r\n#Task assigned for group {0}. Download tasks are active.\r\n", grp);  
+    ResultsTextBox.Text += $"\r\n#Task assigned for group {grp}. Download tasks are active.\r\n";
   
     // ***This task is complete when a group has finished downloading and displaying.  
     await pendingWork;  
@@ -471,7 +471,7 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
   
     // Display the total count for all of the websites.  
     ResultsTextBox.Text +=  
-        string.Format("\r\n\r\nTOTAL bytes returned:  {0}\r\n", total);  
+        $"\r\n\r\nTOTAL bytes returned:  {total}\r\n";
 }  
 ```  
   
@@ -666,7 +666,7 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
   
                 // Display the total count for all of the websites.  
                 ResultsTextBox.Text +=  
-                    string.Format("\r\n\r\nTOTAL bytes returned:  {0}\r\n", total);  
+                    $"\r\n\r\nTOTAL bytes returned:  {total}\r\n";
             }  
   
             private List<string> SetUpURLList()  
@@ -694,7 +694,7 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
                 // Strip off the "https://".  
                 var displayURL = url.Replace("https://", "");  
                 // Display position in the URL list, the URL, and the number of bytes.  
-                ResultsTextBox.Text += string.Format("\n{0}. {1,-58} {2,8}", pos, displayURL, content.Length);  
+                ResultsTextBox.Text += $"\n{pos}. {displayURL,-58} {content.Length,8}";
             }  
         }  
     }  

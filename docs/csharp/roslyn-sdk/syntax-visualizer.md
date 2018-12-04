@@ -26,7 +26,7 @@ Create a new project using the **File** > **New Project** command. You can creat
 
 # [C#](#tab/csharp)
 ![Visualizing a C# syntax tree](media/syntax-visualizer/visualize-csharp.png)
-# [Visual Basic](#tab/visual-basic)
+# [Visual Basic](#tab/vb)
 ![Visualizing a VB syntax tree](media/syntax-visualizer/visualize-visual-basic.png)
 
 ---
@@ -56,7 +56,7 @@ Right click on any item in the tree and click on **View Directed Syntax Graph**.
 The visualizer displays a graphical representation of the subtree rooted at the selected item. Try these steps for the **MethodDeclaration** node corresponding to the `Main()` method in the C# example. The visualizer displays a syntax graph that looks as follows:
 
 ![Viewing a C# syntax graph](media/syntax-visualizer/csharp-syntax-graph.png)
-# [Visual Basic](#tab/visual-basic)
+# [Visual Basic](#tab/vb)
 
 Try the same for the **SubBlock** node corresponding to the `Main()` method in the preceding VB example. The visualizer displays a syntax graph that looks as follows:
 
@@ -122,7 +122,7 @@ Inspect the symbol corresponding to any declared type, method, property. Select 
 
 The above VB examples can be easily replicated in C#. Type `using C = System.Console;` in place of `Imports C = System.Console` for the alias. The preceding steps in C# yield identical results in the visualizer window.
 
-Semantic inspection operations are only available on nodes. They are not available on tokens or trivia. Not all nodes have interesting semantic information to inspect. When a node doesn't have interesting semantic information, clicking on **View * Symbol (if any)** shows a blank property grid.
+Semantic inspection operations are only available on nodes. They are not available on tokens or trivia. Not all nodes have interesting semantic information to inspect. When a node doesn't have interesting semantic information, clicking on **View \* Symbol (if any)** shows a blank property grid.
 
 You can read more about APIs for performing semantic analysis in the [Work with semantics](work-with-semantics.md) overview document.
 

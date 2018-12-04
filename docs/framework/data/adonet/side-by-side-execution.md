@@ -41,7 +41,7 @@ Side-by-side execution in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdn
   
  Consider the following batch of commands executed in a call to <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A>.  
   
-```  
+```sql
 SET NOCOUNT ON;  
 SELECT * FROM dbo.Customers;  
 ```  
@@ -52,7 +52,7 @@ SELECT * FROM dbo.Customers;
   
  For applications that run on both earlier and later versions of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], you can write your code to make sure that the behavior is the same regardless of the version you are running on. If you want to make sure that a command modifies the state of the connection for all subsequent commands, we recommend that you execute your command using <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A>. If you want to make sure that a command does not modify the connection for all subsequent commands, we recommend that you include the commands to reset the state of the connection in your command. For example:  
   
-```  
+```sql
 SET NOCOUNT ON;  
 SELECT * FROM dbo.Customers;  
 SET NOCOUNT OFF;  

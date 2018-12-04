@@ -87,7 +87,7 @@ class MergeStrings
   
             IEnumerable<string> nameMatchQuery =  
                 tempQuery1.Concat(tempQuery2).OrderBy(s => s);  
-            OutputQueryResults(nameMatchQuery, String.Format("Concat based on partial name match \"{0}\":", nameMatch));  
+            OutputQueryResults(nameMatchQuery, $"Concat based on partial name match \"{nameMatch}\":");
   
             // Keep the console window open in debug mode.  
             Console.WriteLine("Press any key to exit");  

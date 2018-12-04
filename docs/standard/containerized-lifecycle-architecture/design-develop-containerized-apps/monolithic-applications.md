@@ -63,7 +63,6 @@ Figure 4-4: Publishing a container to Azure App Service from Visual Studio apps/
 
 Figure 4-4 also shows that the publish flow pushes an image through a Container Registry, which can be the Azure Container Registry (a registry near to your deployments in Azure and secured by Azure Active Directory groups and accounts) or any other Docker Registry like Docker Hub or on-premises registries.
 
-
 >[!div class="step-by-step"]
-[Previous](common-container-design-principles.md)
-[Next](state-and-data-in-docker-applications.md)
+>[Previous](common-container-design-principles.md)
+>[Next](state-and-data-in-docker-applications.md)

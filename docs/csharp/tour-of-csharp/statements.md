@@ -104,5 +104,5 @@ The following lists the kinds of statements that can be used, and provides an ex
  [!code-csharp[UsingStatement](../../../samples/snippets/csharp/tour/statements/Program.cs#L198-L206)]
 
 >[!div class="step-by-step"]
-[Previous](expressions.md)
-[Next](classes-and-objects.md)
+>[Previous](expressions.md)
+>[Next](classes-and-objects.md)

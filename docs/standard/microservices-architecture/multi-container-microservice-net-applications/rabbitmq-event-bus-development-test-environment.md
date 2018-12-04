@@ -103,7 +103,6 @@ Each event type has a related channel to get events from RabbitMQ. You can then 
 
 The Subscribe method accepts an IIntegrationEventHandler object, which is like a callback method in the current microservice, plus its related IntegrationEvent object. The code then adds that event handler to the list of event handlers that each integration event type can have per client microservice. If the client code has not already been subscribed to the event, the code creates a channel for the event type so it can receive events in a push style from RabbitMQ when that event is published from any other service.
 
-
 >[!div class="step-by-step"]
-[Previous](integration-event-based-microservice-communications.md)
-[Next](subscribe-events.md)
+>[Previous](integration-event-based-microservice-communications.md)
+>[Next](subscribe-events.md)

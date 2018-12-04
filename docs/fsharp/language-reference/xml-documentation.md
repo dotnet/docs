@@ -19,16 +19,16 @@ There are two ways to write XML documentation comments. One is to just write the
 
 |Tag syntax|Description|
 |----------|-----------|
-|**&lt;c&gt;***text***&lt;/c&gt;**|Specifies that *text* is code. This tag can be used by documentation generators to display text in a font that is appropriate for code.|
-|**&lt;summary&gt;***text***&lt;/summary&gt;**|Specifies that *text* is a brief description of the program element. The description is usually one or two sentences.|
-|**&lt;remarks&gt;***text***&lt;/remarks&gt;**|Specifies that *text* contains supplementary information about the program element.|
-|**&lt;param name="***name***"&gt;***description***&lt;/param&gt;**|Specifies the name and description for a function or method parameter.|
-|**&lt;typeparam name="***name***"&gt;***description***&lt;/typeparam&gt;**|Specifies the name and description for a type parameter.|
-|**&lt;returns&gt;***text***&lt;/returns&gt;**|Specifies that *text* describes the return value of a function or method.|
-|**&lt;exception cref="***type***"&gt;***description***&lt;/exception&gt;**|Specifies the type of exception that can be generated and the circumstances under which it is thrown.|
-|**&lt;see cref="***reference***"&gt;***text***&lt;/see&gt;**|Specifies an inline link to another program element. The *reference* is the name as it appears in the XML documentation file. The *text* is the text shown in the link.|
-|**&lt;seealso cref="***reference***"/&gt;**|Specifies a See Also link to the documentation for another type. The *reference* is the name as it appears in the XML documentation file. See Also links usually appear at the bottom of a documentation page.|
-|**&lt;para&gt;***text***&lt;/para&gt;**|Specifies a paragraph of text. This is used to separate text inside the **remarks** tag.|
+|**\<c\>**_text_**\</c\>**|Specifies that *text* is code. This tag can be used by documentation generators to display text in a font that is appropriate for code.|
+|**\<summary\>**_text_**\</summary\>**|Specifies that *text* is a brief description of the program element. The description is usually one or two sentences.|
+|**\<remarks\>**_text_**\</remarks\>**|Specifies that *text* contains supplementary information about the program element.|
+|**\<param name="**_name_**"\>**_description_**\</param\>**|Specifies the name and description for a function or method parameter.|
+|**\<typeparam name="**_name_**"\>**_description_**\</typeparam\>**|Specifies the name and description for a type parameter.|
+|**\<returns\>**_text_**\</returns\>**|Specifies that *text* describes the return value of a function or method.|
+|**\<exception cref="**_type_**"\>**_description_**\</exception\>**|Specifies the type of exception that can be generated and the circumstances under which it is thrown.|
+|**\<see cref="**_reference_**"\>**_text_**\</see\>**|Specifies an inline link to another program element. The *reference* is the name as it appears in the XML documentation file. The *text* is the text shown in the link.|
+|**\<seealso cref="**_reference_**"/\>**|Specifies a See Also link to the documentation for another type. The *reference* is the name as it appears in the XML documentation file. See Also links usually appear at the bottom of a documentation page.|
+|**\<para\>**_text_**\</para\>**|Specifies a paragraph of text. This is used to separate text inside the **remarks** tag.|
 
 ## Example
 

@@ -99,4 +99,4 @@ public class Document
 * [CoreFX Breaking Change Rules](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/breaking-change-rules.md)
 
 >[!div class="step-by-step"]
-[Previous](./versioning.md)
+>[Previous](versioning.md)

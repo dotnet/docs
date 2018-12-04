@@ -59,7 +59,7 @@
             // from System.Object.
             public override string ToString()
             {
-                return String.Format("{0} - {1}", this.ID, this.Title);
+                return $"{this.ID} - {this.Title}";
             }
         }
 

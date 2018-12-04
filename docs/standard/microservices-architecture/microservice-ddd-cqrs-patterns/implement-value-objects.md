@@ -325,5 +325,5 @@ public class Address
   [*https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs*](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs)
 
 >[!div class="step-by-step"]
-[Previous](seedwork-domain-model-base-classes-interfaces.md)
-[Next](enumeration-classes-over-enum-types.md)
+>[Previous](seedwork-domain-model-base-classes-interfaces.md)
+>[Next](enumeration-classes-over-enum-types.md)

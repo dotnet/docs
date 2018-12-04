@@ -104,5 +104,5 @@ The use of asynchronous communication is explained with additional details later
   [*http://udidahan.com/2014/07/30/service-oriented-composition-with-video/*](http://udidahan.com/2014/07/30/service-oriented-composition-with-video/)
 
 >[!div class="step-by-step"]
-[Previous](logical-versus-physical-architecture.md)
-[Next](identify-microservice-domain-model-boundaries.md)
+>[Previous](logical-versus-physical-architecture.md)
+>[Next](identify-microservice-domain-model-boundaries.md)

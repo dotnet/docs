@@ -84,7 +84,7 @@ Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]
   
  To run the following example, compile and register the following managed COM component using the [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)]. To register the component, on the **Project** menu, click **Properties**, click the **Build** tab, and then select the **Register for COM interop** check box.  
   
-```  
+```csharp
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
@@ -109,7 +109,7 @@ namespace BasicComObject
   
  Compile the following unmanaged C++ application, which activates the COM object that is created by the previous example.  
   
-```  
+```cpp
 #include "stdafx.h"  
 #include <string>  
 #include <iostream>  

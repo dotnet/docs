@@ -39,7 +39,6 @@ Using .NET Framework on Docker can improve your deployment experiences by minimi
 -   **Sample apps: Modernization of legacy ASP.NET web apps by using Windows Containers**  
     https://aka.ms/eshopmodernizing
 
-
 >[!div class="step-by-step"]
-[Previous](index.md)
-[Next](net-core-container-scenarios.md)
+>[Previous](index.md)
+>[Next](net-core-container-scenarios.md)

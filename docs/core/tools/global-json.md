@@ -3,7 +3,7 @@ title: global.json overview
 description: Learn how to use the global.json file to set the .NET Core SDK version when running .NET Core CLI commands.
 author: mairaw
 ms.author: mairaw
-ms.date: 07/30/2018
+ms.date: 12/03/2018
 ms.custom: "updateeachrelease"
 ---
 # global.json overview
@@ -40,14 +40,14 @@ The following example shows the contents of a *global.json* file:
 ```json
 {
   "sdk": {
-    "version": "2.1.500"
+    "version": "2.2.100"
   }
 }
 ```
 
 ## global.json and the .NET Core CLI
 
-It's helpful to know which versions are available in order to set one in the *global.json* file. You can find the full list of supported available SDKs at the [.NET Downloads](https://www.microsoft.com/net/download/all) site. Starting with .NET Core SDK 2.1, you can run the following command to verify which SDK versions are already installed on your machine:
+It's helpful to know which versions are available in order to set one in the *global.json* file. You can find the full list of supported available SDKs at the [.NET Downloads](https://www.microsoft.com/net/download/all) site. Starting with .NET Core 2.1 SDK, you can run the following command to verify which SDK versions are already installed on your machine:
 
 ```console
 dotnet --list-sdks
@@ -58,7 +58,7 @@ To install additional .NET Core SDK versions on your machine, visit the [.NET Do
 You can create a new the *global.json* file in the current directory by executing the [dotnet new](dotnet-new.md) command, similar to the following example:
 
 ```console
-dotnet new globaljson --sdk-version 2.1.500
+dotnet new globaljson --sdk-version 2.2.100
 ```
 
 ## Matching rules
@@ -97,8 +97,8 @@ This warning indicates that your project is being compiled using a preview versi
 > [!WARNING]
 > Startup project '{startupProject}' targets framework '.NETCoreApp' version '{targetFrameworkVersion}'. This version of the Entity Framework Core .NET Command-line Tools only supports version 2.0 or higher. For information on using older versions of the tools, see <https://go.microsoft.com/fwlink/?linkid=871254>
 
-Starting with .NET Core SDK 2.1 (v. 2.1.300), the `dotnet ef` command comes included in the SDK. This warning indicates that your project targets EF Core 1.0 or 1.1, which isn't compatible with .NET Core SDK 2.1 and later versions. To compile your project, install .NET Core SDK 2.0 (v. 2.1.201) and earlier on your machine and define the desired SDK version using the *global.json* file. For more information about the `dotnet ef` command, see [EF Core .NET Command-line Tools](/ef/core/miscellaneous/cli/dotnet).
+Starting with .NET Core 2.1 SDK (version 2.1.300), the `dotnet ef` command comes included in the SDK. This warning indicates that your project targets EF Core 1.0 or 1.1, which isn't compatible with .NET Core 2.1 SDK and later versions. To compile your project, install .NET Core 2.0 SDK (version 2.1.201) and earlier on your machine and define the desired SDK version using the *global.json* file. For more information about the `dotnet ef` command, see [EF Core .NET Command-line Tools](/ef/core/miscellaneous/cli/dotnet).
 
 ## See also
 
-* [How project SDKs are resolved](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved)
+- [How project SDKs are resolved](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved)

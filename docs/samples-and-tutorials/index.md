@@ -58,7 +58,7 @@ This series of samples demonstrate many of the features of Language Integrated Q
 
 **Microsoft Office PIA Sample**
 
-This [sample](https://github.com/dotnet/samples/tree/master/core/extensions/ExcelDemo) demonstrates the consumption of [Microsoft Office PIAs](https://docs.microsoft.com/en-us/visualstudio/vsto/office-primary-interop-assemblies?view=vs-2017) in .NET Core.
+This [sample](https://github.com/dotnet/samples/tree/master/core/extensions/ExcelDemo) demonstrates the consumption of [Microsoft Office PIAs](https://docs.microsoft.com/visualstudio/vsto/office-primary-interop-assemblies?view=vs-2017) in .NET Core.
 
 ### Tutorials
 

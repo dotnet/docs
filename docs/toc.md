@@ -1180,6 +1180,7 @@
 ## [How-to guides](machine-learning/how-to-guides/index.md)
 ### [Apply categorical feature engineering ](machine-learning/how-to-guides/train-model-categorical-ml-net.md)
 ### [Apply textual feature engineering ](machine-learning/how-to-guides/train-model-textual-ml-net.md)
+### [Determine model feature importance with PFI](machine-learning/how-to-guides/determine-global-feature-importance-in-model.md)
 ### [Inspect intermediate pipeline data values](machine-learning/how-to-guides/inspect-intermediate-data-ml-net.md)
 ### [Load data with many columns](machine-learning/how-to-guides/load-data-from-mult-column-csv-ml-net.md)
 ### [Load data from multiple files](machine-learning/how-to-guides/load-data-from-multiple-files-ml-net.md)
@@ -1191,6 +1192,7 @@
 ### [Train model with data not in a text file](machine-learning/how-to-guides/load-non-file-training-data-ml-net.md)
 ### [Train model using cross-validation](machine-learning/how-to-guides/train-cross-validation-ml-net.md)
 ### [Train regression model](machine-learning/how-to-guides/train-regression-model-ml-net.md)
+### [Use Generalized Additive Models for model explainability](machine-learning/how-to-guides/use-gams-for-model-explainability.md)
 ### [Use metrics to evaluate model quality](machine-learning/how-to-guides/verify-model-quality-ml-net.md)
 ## Reference
 ### [API Reference](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet)

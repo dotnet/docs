@@ -12,6 +12,12 @@ ms.date: 12/04/2018
 
 .NET Core 2.2 includes enhancements in event handling and runtime servixes, authentication to Azure SQL databases, JIT compiler performance, and  code injection prior to the execution of the `Main` method.
 
+## New deployment mode
+
+Starting with .NET Core 2.2, you can deploy [framework-dependent executables](../deploying/index.md#framework-dependent-executables-fde), which are **.exe** files instead of **.dll** files. Functionally similar to framework-dependent deployments, framework-dependent executables (FDE) still rely on the presence of a shared sysem-wide version of .NET Core to run. Your app contains only your code and any third-party dependencies. Unlike framework-dependent deployments, FDEs are platform-specific.  
+
+This new deployment mode has the distinct advantage of building an executable instead of a library, which means you can run your app directly without invoking `dotnet` first.
+
 ## Core
 
 **Handling events in runtime services**

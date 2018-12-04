@@ -94,10 +94,9 @@ namespace HelloWorld
 {
     public class Class1
     {
-        public Class1(){}
         public string ReturnMessage()
         {
-            return " Happy coding!";
+            return "Happy coding!";
         }
     }
 }
@@ -115,7 +114,7 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             Class1 c1 = new Class1();
-            Console.WriteLine("Hello World!" + c1.ReturnMessage());
+            Console.WriteLine($"Hello World! {c1.ReturnMessage()}");
         }
     }
 }

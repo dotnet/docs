@@ -2,8 +2,7 @@
 title: dotnet nuget push command - .NET Core CLI
 description: The dotnet nuget push command pushes a package to the server and publishes it.
 author: karann-msft
-ms.author: mairaw
-ms.date: 09/04/2018
+ms.date: 12/04/2018
 ---
 # dotnet nuget push
 
@@ -15,16 +14,10 @@ ms.date: 09/04/2018
 
 ## Synopsis
 
-# [.NET Core 2.1](#tab/netcore21)
+# [.NET Core 2.x](#tab/netcore2x)
 ```
-dotnet nuget push [<ROOT>] [-d|--disable-buffering] [--force-english-output] [-k|--api-key] [-n|--no-symbols]
+dotnet nuget push [<ROOT>] [-d|--disable-buffering] [--force-english-output] [--interactive] [-k|--api-key] [-n|--no-symbols]
     [--no-service-endpoint] [-s|--source] [-sk|--symbol-api-key] [-ss|--symbol-source] [-t|--timeout]
-dotnet nuget push [-h|--help]
-```
-# [.NET Core 2.0](#tab/netcore20)
-```
-dotnet nuget push [<ROOT>] [-d|--disable-buffering] [--force-english-output] [-k|--api-key] [-n|--no-symbols]
-    [-s|--source] [-sk|--symbol-api-key] [-ss|--symbol-source] [-t|--timeout]
 dotnet nuget push [-h|--help]
 ```
 # [.NET Core 1.x](#tab/netcore1x)
@@ -41,154 +34,132 @@ The `dotnet nuget push` command pushes a package to the server and publishes it.
 
 ## Arguments
 
-`ROOT`
+* **`ROOT`**
 
-Specifies the file path to the package to be pushed.
+  Specifies the file path to the package to be pushed.
 
 ## Options
 
-# [.NET Core 2.1](#tab/netcore21)
+# [.NET Core 2.x](#tab/netcore2x)
 
-`-d|--disable-buffering`
+* **`-d|--disable-buffering`**
 
-Disables buffering when pushing to an HTTP(S) server to reduce memory usage.
+  Disables buffering when pushing to an HTTP(S) server to reduce memory usage.
 
-`--force-english-output`
+* **`--force-english-output`**
 
-Forces the application to run using an invariant, English-based culture.
+  Forces the application to run using an invariant, English-based culture.
 
-`-h|--help`
-
-Prints out a short help for the command.
-
-`-k|--api-key <API_KEY>`
-
-The API key for the server.
-
-`-n|--no-symbols`
-
-Doesn't push symbols (even if present).
-
-`--no-service-endpoint`
-
-Doesn't append "api/v2/package" to the source URL.
-
-`-s|--source <SOURCE>`
-
-Specifies the server URL. This option is required unless `DefaultPushSource` config value is set in the NuGet config file.
-
-`-sk|--symbol-api-key <API_KEY>`
-
-The API key for the symbol server.
-
-`-ss|--symbol-source <SOURCE>`
-
-Specifies the symbol server URL.
-
-`-t|--timeout <TIMEOUT>`
-
-Specifies the timeout for pushing to a server in seconds. Defaults to 300 seconds (5 minutes). Specifying 0 (zero seconds) applies the default value.
-
-# [.NET Core 2.0](#tab/netcore20)
-
-`-d|--disable-buffering`
-
-Disables buffering when pushing to an HTTP(S) server to reduce memory usage.
-
-`--force-english-output`
-
-Forces the application to run using an invariant, English-based culture.
-
-`-h|--help`
+* **`-h|--help`**
 
 Prints out a short help for the command.
 
-`-k|--api-key <API_KEY>`
+* **`--interactive`**
 
-The API key for the server.
+  Allows the command to block and requires manual action for operations like authentication. Option available since .NET Core 2.2 SDK.
 
-`-n|--no-symbols`
+* **`-k|--api-key <API_KEY>`**
 
-Doesn't push symbols (even if present).
+  The API key for the server.
 
-`-s|--source <SOURCE>`
+* **`-n|--no-symbols`**
 
-Specifies the server URL. This option is required unless `DefaultPushSource` config value is set in the NuGet config file.
+  Doesn't push symbols (even if present).
 
-`-sk|--symbol-api-key <API_KEY>`
+* **`--no-service-endpoint`**
 
-The API key for the symbol server.
+  Doesn't append "api/v2/package" to the source URL. Option available since .NET Core 2.1 SDK.
 
-`-ss|--symbol-source <SOURCE>`
+* **`-s|--source <SOURCE>`**
 
-Specifies the symbol server URL.
+  Specifies the server URL. This option is required unless `DefaultPushSource` config value is set in the NuGet config file.
 
-`-t|--timeout <TIMEOUT>`
+* **`-sk|--symbol-api-key <API_KEY>`**
 
-Specifies the timeout for pushing to a server in seconds. Defaults to 300 seconds (5 minutes). Specifying 0 (zero seconds) applies the default value.
+  The API key for the symbol server.
+
+* **`-ss|--symbol-source <SOURCE>`**
+
+  Specifies the symbol server URL.
+
+* **`-t|--timeout <TIMEOUT>`**
+
+  Specifies the timeout for pushing to a server in seconds. Defaults to 300 seconds (5 minutes). Specifying 0 (zero seconds) applies the default value.
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-`-d|--disable-buffering`
+* **`-d|--disable-buffering`**
 
-Disables buffering when pushing to an HTTP(S) server to reduce memory usage.
+  Disables buffering when pushing to an HTTP(S) server to reduce memory usage.
 
-`--force-english-output`
+* **`--force-english-output`**
 
-Forces the application to run using an invariant, English-based culture.
+  Forces the application to run using an invariant, English-based culture.
 
-`-h|--help`
+* **`-h|--help`**
 
-Prints out a short help for the command.
+  Prints out a short help for the command.
 
-`-k|--api-key <API_KEY>`
+* **`-k|--api-key <API_KEY>`**
 
-The API key for the server.
+  The API key for the server.
 
-`-n|--no-symbols`
+* **`-n|--no-symbols`**
 
-Doesn't push symbols (even if present).
+  Doesn't push symbols (even if present).
 
-`-s|--source <SOURCE>`
+* **`-s|--source <SOURCE>`**
 
-Specifies the server URL. This option is required unless `DefaultPushSource` config value is set in the NuGet config file.
+  Specifies the server URL. This option is required unless `DefaultPushSource` config value is set in the NuGet config file.
 
-`-sk|--symbol-api-key <API_KEY>`
+* **`-sk|--symbol-api-key <API_KEY>`**
 
-The API key for the symbol server.
+  The API key for the symbol server.
 
-`-ss|--symbol-source <SOURCE>`
+* **`-ss|--symbol-source <SOURCE>`**
 
-Specifies the symbol server URL.
+  Specifies the symbol server URL.
 
-`-t|--timeout <TIMEOUT>`
+* **`-t|--timeout <TIMEOUT>`**
 
-Specifies the timeout for pushing to a server in seconds. Defaults to 300 seconds (5 minutes). Specifying 0 (zero seconds) applies the default value.
+  Specifies the timeout for pushing to a server in seconds. Defaults to 300 seconds (5 minutes). Specifying 0 (zero seconds) applies the default value.
 
 ---
 
 ## Examples
 
-Pushes *foo.nupkg* to the default push source, specifying an API key:
+* Pushes *foo.nupkg* to the default push source, specifying an API key:
 
-`dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a`
+  ```console
+  dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a
+  ```
 
-Push *foo.nupkg* to the custom push source `https://customsource`, specifying an API key:
+* Push *foo.nupkg* to the custom push source `https://customsource`, specifying an API key:
 
-`dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://customsource/`
+  ```console
+  dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://customsource/
+  ```
 
-Pushes *foo.nupkg* to the default push source:
+* Pushes *foo.nupkg* to the default push source:
 
-`dotnet nuget push foo.nupkg`
+  ```console
+  dotnet nuget push foo.nupkg
+  ```
 
-Pushes *foo.symbols.nupkg* to the default symbols source:
+* Pushes *foo.symbols.nupkg* to the default symbols source:
 
-`dotnet nuget push foo.symbols.nupkg`
+  ```console
+  dotnet nuget push foo.symbols.nupkg
+  ```
 
-Pushes *foo.nupkg* to the default push source, specifying a 360-second timeout:
+* Pushes *foo.nupkg* to the default push source, specifying a 360-second timeout:
 
-`dotnet nuget push foo.nupkg --timeout 360`
+  ```console
+  dotnet nuget push foo.nupkg --timeout 360
+  ```
 
-Pushes all *.nupkg* files in the current directory to the default push source:
+* Pushes all *.nupkg* files in the current directory to the default push source:
 
-`dotnet nuget push *.nupkg`
+  ```console
+  dotnet nuget push *.nupkg
+  ```

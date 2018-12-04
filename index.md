@@ -29,7 +29,7 @@ ms.date: "06/21/2018"
                 </a>
             </li>
             <li>
-                <a href="/dotnet/api/?view=netcore-2.1">
+                <a href="/dotnet/api/?view=netcore-2.2">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -496,7 +496,11 @@ ms.date: "06/21/2018"
                         <a href="#desktop">Desktop</a>
                         <ul id="desktop" class="cardsC">
                             <li>
+<<<<<<< HEAD
                                 <a href="https://msdn.microsoft.com/library/windows/apps/dn609832.aspx">
+=======
+                                <a href="/uwp">
+>>>>>>> master
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -581,7 +585,7 @@ ms.date: "06/21/2018"
                         <a href="#gaming">Gaming</a>
                         <ul id="gaming" class="cardsC">
                             <li>
-                                <a href="https://visualstudio.microsoft.com/vs/game-development">
+                                <a href="https://visualstudio.microsoft.com/vs/features/game-development/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -602,7 +606,7 @@ ms.date: "06/21/2018"
                                 </a>
                             </li>
                             <li>
-                                <a href="http://docs.cryengine.com/display/CEPROG/C%23+Programming">
+                                <a href="https://docs.cryengine.com/display/CEPROG/C%23+Programming">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

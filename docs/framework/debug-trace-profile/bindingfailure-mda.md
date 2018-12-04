@@ -71,7 +71,7 @@ The `bindingFailure` managed debugging assistant (MDA) is activated when an asse
 ## Example  
  The following code example demonstrates a situation that can activate this MDA:  
   
-```  
+```csharp
 using System;  
 using System.Collections.Generic;  
 using System.Text;  

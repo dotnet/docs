@@ -102,7 +102,7 @@ adapter.Update(table.Select(null, null, DataViewRowState.Added));
   
  Before you compile and run the sample, you need to create the sample database:  
   
-```  
+```sql
 USE [master]  
 GO  
   
@@ -168,7 +168,7 @@ GO
   
  C# and Visual Basic projects with this code sample can be found on [Developer Code Samples](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=How%20to%20use%20DataAdapter%20to%20retrieve%20and%20update%20data&f%5B1%5D).  
   
-```  
+```csharp
 using System;  
 using System.Data;  
 using System.Data.Common;  

@@ -3,7 +3,7 @@ title: dotnet-add reference command - .NET Core CLI
 description: The dotnet add reference command provides a convenient option to add project to project references.
 author: mairaw
 ms.author: mairaw
-ms.date: 05/25/2018
+ms.date: 12/04/2018
 ---
 # dotnet-add reference
 
@@ -31,34 +31,40 @@ The `dotnet add reference` command provides a convenient option to add project r
 
 ## Arguments
 
-`PROJECT`
+* **`PROJECT`**
 
-Specifies the project file. If not specified, the command searches the current directory for one.
+  Specifies the project file. If not specified, the command searches the current directory for one.
 
-`PROJECT_REFERENCES`
+* **`PROJECT_REFERENCES`**
 
-Project-to-project (P2P) references to add. Specify one or more projects. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux-based systems.
+  Project-to-project (P2P) references to add. Specify one or more projects. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux-based systems.
 
 ## Options
 
-`-h|--help`
+* **`-h|--help`**
 
-Prints out a short help for the command.
+  Prints out a short help for the command.
 
-`-f|--framework <FRAMEWORK>`
+* **`-f|--framework <FRAMEWORK>`**
 
-Adds project references only when targeting a specific [framework](../../standard/frameworks.md).
+  Adds project references only when targeting a specific [framework](../../standard/frameworks.md).
 
 ## Examples
 
-Add a project reference:
+* Add a project reference:
 
-`dotnet add app/app.csproj reference lib/lib.csproj`
+  ```console
+  dotnet add app/app.csproj reference lib/lib.csproj
+  ```
 
-Add multiple project references to the project in the current directory:
+* Add multiple project references to the project in the current directory:
 
-`dotnet add reference lib1/lib1.csproj lib2/lib2.csproj`
+  ```console
+  dotnet add reference lib1/lib1.csproj lib2/lib2.csproj
+  ```
 
-Add multiple project references using a globbing pattern on Linux/Unix:
+* Add multiple project references using a globbing pattern on Linux/Unix:
 
-`dotnet add app/app.csproj reference **/*.csproj`
+  ```console
+  dotnet add app/app.csproj reference **/*.csproj
+  ```

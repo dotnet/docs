@@ -15,17 +15,19 @@ ms.author: "markl"
 Adds a listener to the `sharedListeners` collection. `sharedListeners` is a collection of listeners that any [\<source>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/source-element.md) or [\<trace>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/trace-element.md) can reference.  By default, listeners in the `sharedListeners` collection are not placed in a `Listeners` collection. They must be added by name to the [\<source>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/source-element.md) or [\<trace>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/trace-element.md). It is not possible to get the listeners in the `sharedListeners` collection in code at run time.  
   
  \<configuration>  
-\<system.diagnostics>  
-\<sharedListeners> Element  
-\<add>  
+&nbsp;&nbsp;\<system.diagnostics>  
+&nbsp;&nbsp;&nbsp;&nbsp;\<sharedListeners> Element  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<add>  
   
 ## Syntax  
   
 ```xml  
 <add name="name"   
   type="TraceListenerClassName, Version, Culture, PublicKeyToken"  
-  initializeData="data"/>  
-```  
+  initializeData="data"
+  traceOutputOptions = "None"
+/>  
+```
   
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
@@ -37,7 +39,8 @@ Adds a listener to the `sharedListeners` collection. `sharedListeners` is a coll
 |`name`|Required attribute.<br /><br /> Specifies the name of the listener that is used to add the shared listener to a `Listeners` collection.|  
 |`type`|Required attribute.<br /><br /> Specifies the type of the listener. You must use a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
 |`initializeData`|Optional attribute.<br /><br /> The string passed to the constructor for the specified class.|  
-  
+|`traceOutputOptions`|Optional attribute.<br/><br/>The string representation of one or more <xref:System.Diagnostics.TraceOptions> enumeration members that indicates the data to be written to the trace output. Multiple items are separated by commas. The default value is "None".|
+
 ### Child Elements  
   
 |Element|Description|  

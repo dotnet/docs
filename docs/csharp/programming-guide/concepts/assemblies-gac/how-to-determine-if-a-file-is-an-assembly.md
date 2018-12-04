@@ -23,7 +23,7 @@ A file is an assembly if and only if it is managed, and contains an assembly ent
 ## Example  
  This example tests a DLL to see if it is an assembly.  
   
-```  
+```csharp
 class TestAssembly  
 {  
     static void Main()  

@@ -62,7 +62,7 @@ In *build.ps1*, the script uses [MSBuild](/visualstudio/msbuild/msbuild) to comp
 
 In the call to `Invoke-MSBuild` the `OutputPath` is set to **publish** and  `Configuration` set to **Release**. 
 
-```
+```powershell
 function Invoke-MSBuild ([string]$MSBuildPath, [string]$MSBuildParameters) {
     Invoke-Expression "$MSBuildPath $MSBuildParameters"
 }
@@ -136,7 +136,7 @@ In the sample project files there is also a *run.ps1* which is an example of how
 
 To run, open PowerShell and use the following command:
 
-```
+```powershell
 .\run.ps1 "Is this easy or what?"
 ```
 

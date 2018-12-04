@@ -1,9 +1,7 @@
 ---
 title: dotnet build-server command - .NET Core CLI
 description: The dotnet build-server command interacts with servers started by a build.
-author: mairaw
-ms.author: mairaw
-ms.date: 07/02/2018
+ms.date: 12/04/2018
 ---
 # dotnet build-server
 
@@ -23,24 +21,24 @@ dotnet build-server [-h|--help]
 
 ## Commands
 
-`shutdown`
+* **`shutdown`**
 
-Shuts down build servers that are started from dotnet. By default, all servers are shut down.
+  Shuts down build servers that are started from dotnet. By default, all servers are shut down.
 
 ## Options
 
-`-h|--help`
+* **`-h|--help`**
 
-Prints out a short help for the command.
+  Prints out a short help for the command.
 
-`--msbuild`
+* **`--msbuild`**
 
-Shuts down the MSBuild build server.
+  Shuts down the MSBuild build server.
 
-`--razor`
+* **`--razor`**
 
-Shuts down the Razor build server.
+  Shuts down the Razor build server.
 
-`--vbcscompiler`
+* **`--vbcscompiler`**
 
-Shuts down the VB/C# compiler build server.
+  Shuts down the VB/C# compiler build server.

@@ -3,7 +3,7 @@ title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
 author: mairaw
 ms.author: mairaw
-ms.date: 09/07/2018
+ms.date: 12/03/2018
 ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
@@ -23,6 +23,7 @@ For news about .NET, check the following blogs:
 
 Also follow the latest .NET events:
 
+- [Microsoft Connect()](https://www.microsoft.com/connectevent)
 - [Microsoft Build 2018](https://channel9.msdn.com/Events/Build/2018)
 - [.NET Conf](https://www.dotnetconf.net/)
 
@@ -43,12 +44,13 @@ This documentation covers the breadth of .NET across platforms and languages.  Y
 - [C# Guide](csharp/index.md)
 - [F# Guide](fsharp/index.md)
 - [Visual Basic Guide](visual-basic/index.md)
+- [ML.NET Guide](machine-learning/index.md)
 
 Additionally, you can browse the [.NET API reference](/dotnet/api).
 
 ## Open source
 
-This documentation is completely [open source](https://github.com/dotnet/docs). You can contribute in any way you like, from creating issues to writing documentation.  Additionally, much of .NET itself is also open source:
+This documentation is completely [open source](https://github.com/dotnet/docs). You can contribute in any way you like, from creating issues to writing documentation. Additionally, much of .NET itself is also open source:
 
 - [.NET Core Home](https://github.com/dotnet/core)
 - [.NET Libraries](https://github.com/dotnet/corefx)

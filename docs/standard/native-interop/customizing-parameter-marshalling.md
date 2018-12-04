@@ -12,7 +12,7 @@ When the .NET runtime's default parameter marshalling behavior doesn't do what y
 
 ## Customizing string parameters
 
-.NET has a variety of formats for you to marshal your string as. They're split up into a section on C-style strings and a section on Windows-centric string formats.
+.NET has a variety of formats for marshalling strings. These methods are split into distinct sections on C-style strings and Windows-centric string formats.
 
 ### C-Style strings
 
@@ -50,9 +50,9 @@ On Windows, the .NET runtime provides a number of different ways to marshal obje
 
 If your API takes a pointer to a COM object, you can use any of the following `UnmanagedType` formats on an `object`-typed parameter to tell .NET to marshal as these specific interfaces.
 
-- IUnknown
-- IDispatch
-- IInspectable
+- `IUnknown`
+- `IDispatch`
+- `IInspectable`
 
 Additionally, if your type is marked `[ComVisible(true)]` or you are marshalling the `object` type, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.Interface?displayProperty=nameWithType> format to marshal your object as a COM Callable Wrapper for the COM view of your type.
 

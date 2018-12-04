@@ -29,7 +29,7 @@ var featureNames = data.Schema.GetColumns()
 var myFeatureIndex = featureNames.ToList().FindIndex(str => str.Equals("MyFeature"));
  
 // The shape functions represent the deviation from the average prediction as a function of the feature value
-// It is represented by a discret set of bins
+// It is represented by a discrete set of bins
 // First, get the array of bin upper bounds from the model for this feature
 var myFeatureBins = gamModel.GetFeatureBinUpperBounds(myFeatureIndex);
 // Then get the array of bin weights; these are the effect size for each bin

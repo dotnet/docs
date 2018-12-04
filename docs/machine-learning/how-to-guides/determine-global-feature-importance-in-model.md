@@ -30,4 +30,4 @@ for (int i = 0; i < featureNames.Length; i++)
 
 See [the ML.NET repository](https://github.com/dotnet/machinelearning/blob/master/docs/samples/Microsoft.ML.Samples/Dynamic/PermutationFeatureImportance.cs) for a complete sample using PFI to analyze the feature importance of a model.
 
-* Well, not random exactly, but permuted across the set of examples.
+/* Well, not random exactly, but permuted across the set of examples.

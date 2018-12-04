@@ -5,6 +5,7 @@ ms.date: 12/04/2018
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use Generalized Additive Models in ML.NET to be able to analyze the shape function of my models so that I can understand how my machine learning models make decisions.
 ---
+# Use Generalized Additive Models and shape functions for model explainability in ML.NET
 
 When creating machine learning models, it is often not enough to simply make predictions. Often, machine learning developers, decision makers, and those affected by the models need to understand how machine learning models make decisions and which features contribute to their performance. **Generalized Additive Models (GAMs)** are used internally at Microsoft for model explainability to help machine learning developers create high-capacity models that can be easily interpreted by others.
 

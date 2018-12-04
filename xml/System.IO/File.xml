@@ -3295,7 +3295,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Opens a text file, reads all lines of the file into a string, and then closes the file.</summary>
+        <summary>Opens a text file, reads all the text in the file into a string, and then closes the file.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="ReadAllText">
@@ -3335,13 +3335,13 @@
       </Parameters>
       <Docs>
         <param name="path">The file to open for reading.</param>
-        <summary>Opens a text file, reads all lines of the file, and then closes the file.</summary>
-        <returns>A string containing all lines of the file.</returns>
+        <summary>Opens a text file, reads all the text in the file, and then closes the file.</summary>
+        <returns>A string containing all the text in the file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method opens a file, reads each line of the file, and then adds each line as an element of a string. It then closes the file. A line is defined as a sequence of characters followed by a carriage return ('\r'), a line feed ('\n'), or a carriage return immediately followed by a line feed. The resulting string does not contain the terminating carriage return and/or line feed.  
+ This method opens a file, reads all the text in the file, and returns it as a string. It then closes the file.
   
  This method attempts to automatically detect the encoding of a file based on the presence of byte order marks. Encoding formats UTF-8 and UTF-32 (both big-endian and little-endian) can be detected.  
   
@@ -3429,13 +3429,13 @@
       <Docs>
         <param name="path">The file to open for reading.</param>
         <param name="encoding">The encoding applied to the contents of the file.</param>
-        <summary>Opens a file, reads all lines of the file with the specified encoding, and then closes the file.</summary>
-        <returns>A string containing all lines of the file.</returns>
+        <summary>Opens a file, reads all text in the file with the specified encoding, and then closes the file.</summary>
+        <returns>A string containing all text in the file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method opens a file, reads each line of the file, and then adds each line as an element of a string. It then closes the file. A line is defined as a sequence of characters followed by a carriage return ('\r'), a line feed ('\n'), or a carriage return immediately followed by a line feed. The resulting string does not contain the terminating carriage return and/or line feed.  
+ This method opens a file, reads all the text in the file, and returns it as a string. It then closes the file.
   
  This method attempts to automatically detect the encoding of a file based on the presence of byte order marks. Encoding formats UTF-8 and UTF-32 (both big-endian and little-endian) can be detected.  
   

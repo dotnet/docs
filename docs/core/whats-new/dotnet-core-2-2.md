@@ -10,7 +10,7 @@ ms.date: 12/04/2018
 ---
 # What's new in .NET Core 2.2
 
-.NET Core 2.2 includes enhancements in event handling and runtime servixes, authentication to Azure SQL databases, JIT compiler performance, and  code injection prior to the execution of the `Main` method.
+.NET Core 2.2 includes enhancements in application deployment, event handling for runtime services, authentication to Azure SQL databases, JIT compiler performance, and code injection prior to the execution of the `Main` method.
 
 ## Core
 

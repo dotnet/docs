@@ -1192,6 +1192,7 @@
 ### [Train model with data not in a text file](machine-learning/how-to-guides/load-non-file-training-data-ml-net.md)
 ### [Train model using cross-validation](machine-learning/how-to-guides/train-cross-validation-ml-net.md)
 ### [Train regression model](machine-learning/how-to-guides/train-regression-model-ml-net.md)
+### [Use Generalized Additive Models for model explainability](machine-learning/how-to-guides/use-gams-for-model-explainability.md)
 ### [Use metrics to evaluate model quality](machine-learning/how-to-guides/verify-model-quality-ml-net.md)
 ## Reference
 ### [API Reference](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet)

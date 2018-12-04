@@ -1,11 +1,11 @@
 ---
-title: "using Directive (C# Reference)"
+title: "using directive (C# Reference)"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "using directive [C#]"
 ms.assetid: b42b8e61-5e7e-439c-bb71-370094b44ae8
 ---
-# using Directive (C# Reference)
+# using directive (C# Reference)
 
 The `using` directive has three uses:
 
@@ -77,7 +77,7 @@ The following example shows how to define and use a `using` alias for a namespac
 
 [!code-csharp[csrefKeywordsNamespace#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsNamespace/CS/csrefKeywordsNamespace2.cs#8)]
 
-A using alias directive cannot have an open generic type on the right hand side. For example, you cannot create a using alias for a List\<T>, but you can create one for a `List<int>`.
+A using alias directive cannot have an open generic type on the right hand side. For example, you cannot create a using alias for a `List<T>`, but you can create one for a `List<int>`.
 
 ## Example 2
 

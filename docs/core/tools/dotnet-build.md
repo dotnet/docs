@@ -1,7 +1,7 @@
 ---
 title: dotnet build command - .NET Core CLI
 description: The dotnet build command builds a project and all of its dependencies.
-ms.date: 12/03/2018
+ms.date: 12/04/2018
 ---
 # dotnet build
 
@@ -53,7 +53,9 @@ In order to produce a library, omit the `<OutputType>` property. The main differ
 
 `dotnet build` uses MSBuild to build the project, so it supports both parallel and incremental builds. For more information, see [Incremental Builds](/visualstudio/msbuild/incremental-builds).
 
-In addition to its options, the `dotnet build` command accepts MSBuild options, such as `-p` for setting properties or `-l` to define a logger. For more information about these options, see the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference).
+In addition to its options, the `dotnet build` command accepts MSBuild options, such as `-p` for setting properties or `-l` to define a logger. For more information about these options, see the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). Or you can also use the [dotnet msbuild](dotnet-msbuild.md) command.
+
+Running `dotnet build` is equivalent to `dotnet msbuild -restore -target:Build`.
 
 ## Arguments
 

@@ -1,7 +1,7 @@
 ---
 title: dotnet clean command - .NET Core CLI
 description: The dotnet clean command cleans the current directory.
-ms.date: 12/03/2018
+ms.date: 12/04/2018
 ---
 # dotnet clean
 

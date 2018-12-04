@@ -28,6 +28,6 @@ for (int i = 0; i < featureNames.Length; i++)
   Console.WriteLine($"{featureNames[i]}\t{permutationMetrics[i].rSquared:G4}");
 ```
 
-See [the ML.NET repository](https://github.com/dotnet/machinelearning/blob/master/docs/samples/Microsoft.ML.Samples/Dynamic/PermutationFeatureImportance.cs) for a complete sample using PFI to analyze the feature importance of a model.
+For a sample using PFI to analyze the feature importance of a model, see [the dotnet/machinelearning GitHub repository](https://github.com/dotnet/machinelearning/blob/master/docs/samples/Microsoft.ML.Samples/Dynamic/PermutationFeatureImportance.cs).
 
 /* Well, not random exactly, but permuted across the set of examples.

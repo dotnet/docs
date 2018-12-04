@@ -53,17 +53,13 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Transforms.Conversions.HashingTransformer> | Hashes either single valued columns or vector columns. For vector columns, it hashes each slot separately. It can hash either text values or key values. |
 | <xref:Microsoft.ML.Transforms.Conversions.KeyToBinaryVectorTransform> | Converts a key to a binary vector column. |
 | <xref:Microsoft.ML.Transforms.Conversions.KeyToValueTransform> | Utilizes KeyValues metadata to map key indices to the corresponding values in the KeyValues metadata. |
-| <xref:Microsoft.ML.Transforms.Conversions.KeyToVectorTransform> | Converts a key to a vector column.|
-| <xref:Microsoft.ML.Transforms.Conversions.KeyToVectorTransform> | Converts a key to a vector column.|
-| <xref:Microsoft.ML.Transforms.Conversions.KeyToVectorTransform> | Converts a key to a vector column.|
-| <xref:Microsoft.ML.Transforms.Conversions.KeyToVectorTransform> | Converts a key to a vector column.|
  
 ## Deep learning
 
 | Transform | Definition |
 | --- | --- |
-| <xref:Microsoft.ML.Transforms.OnnxTransform> | . |
-| <xref:Microsoft.ML.TransformsTensorFlowTransform> | . |
+| <xref:Microsoft.ML.Transforms.OnnxTransform> | Provides data to an existing ONNX model and returns the score (prediction). |
+| <xref:Microsoft.ML.Transforms.TensorFlowTransform> | Can either score with pretrained TensorFlow model or retrain TensorFlow model. |
 
 ## Feature selection
 
@@ -137,24 +133,20 @@ The following tables contain information about all of the data transforms suppor
 
 | Transform | Definition |
 | --- | --- |
-| <xref:Microsoft.ML.Transforms.Text.CharTokenizeTransform> | Character-oriented tokenizer where text is considered a sequence of characters. |
-| <xref:Microsoft.ML.Transforms.Text.CharTokenizeTransform> | Character-oriented tokenizer where text is considered a sequence of characters. |
-| <xref:Microsoft.ML.Legacy.Transforms.CustomStopWordsRemoverTransform> | A transform that turns a collection of text documents into numerical feature vectors. The feature vectors are normalized counts of (word and/or character) ngrams in a given tokenized text. |
-| <xref:Microsoft.ML.Legacy.Transforms.CustomStopWordsRemoverTransform> | A Stopword remover transform based on a custom list of stop words. |
-| <xref:Microsoft.ML.Transforms.Text.LdaTransform> | The LDA transform implements LightLDA, a state-of-the-art implementation of Latent Dirichlet Allocation.|
-| <xref:Microsoft.ML.Legacy.Transforms.Text.NGramTranslator> | Produces a bag of counts of ngrams (sequences of consecutive values of length 1-n) in a given vector of keys. It does so by building a dictionary of ngrams and using the id in the dictionary as the index in the bag. | 
+| <xref:Microsoft.ML.Transforms.Text.CustomStopWordsRemovingTransform> | Removes specified list of stop words by comparing individual tokens (case-insensitive comparison) to the stopwords.|
+| <xref:Microsoft.ML.Transforms.Text.LatentDirichletAllocationTransformer> | Implements LightLDA, a state-of-the-art implementation of Latent Dirichlet Allocation.|
+| <xref:Microsoft.ML.Transforms.Text.NgramExtractingTransformer> | Produces a bag of counts of ngrams (sequences of consecutive values of length 1-n) in a given vector of keys. It does so by building a dictionary of ngrams and using the id in the dictionary as the index in the bag. | 
 | <xref:Microsoft.ML.Transforms.Text.NgramExtractorTransform> | Turns a collection of tokenized text (vector of ReadOnlyMemory), or vectors of keys into numerical feature vectors. The feature vectors are counts of ngrams (sequences of consecutive tokens -words or keys- of length 1-n). | 
-| <xref:Microsoft.ML.Transforms.Text.NgramHashExtractorTransform> | Turns a collection of tokenized text (vector of ReadOnlyMemory) into numerical feature vectors using hashing. | 
-| <xref:Microsoft.ML.Transforms.Text.NgramHashTransform> | Turns a collection of tokenized text (vector of ReadOnlyMemory) into numerical feature vectors using the hashing trick. | 
-| <xref:Microsoft.ML.Transforms.Text.NgramTransform> | Turns a collection of tokenized text (vector of ReadOnlyMemory) into numerical feature vectors using the hashing trick. | 
+| <xref:Microsoft.ML.Transforms.Text.NgramHashExtractingTransformer> | Turns a collection of tokenized text (vector of ReadOnlyMemory) into numerical feature vectors using hashing. | 
+| <xref:Microsoft.ML.Transforms.Text.NgramHashingTransformer> | roduces a bag of counts of ngrams (sequences of consecutive words of length 1-n) in a given text. | 
 | <xref:Microsoft.ML.Transforms.Text.SentimentAnalyzingTransform> | Uses a pretrained sentiment model to score input strings. |
-| <xref:Microsoft.ML.Transforms.Text.StopWordsRemoverTransform> | A Stopword remover transform based on language-specific lists of stop words (most common words) from Office Named Entity Recognition project. |
+| <xref:Microsoft.ML.Transforms.Text.StopWordsRemovingTransformer> | Removes language-specific list of stop words (most common words) by comparing individual tokens (case-insensitive comparison) to the stopwords. |
 | <xref:Microsoft.ML.Transforms.Text.TextNormalizingTransformer> | A text normalization transform that allows normalizing text case, removing diacritical marks, punctuation marks and/or numbers. The transform operates on text input as well as vector of tokens/text (vector of ReadOnlyMemory). |
-| <xref:Microsoft.ML.Transforms.Text.WordBagTransform> | Produces a bag of counts of ngrams (sequences of consecutive words) in a given text. It does so by building a dictionary of ngrams and using the id in the dictionary as the index in the bag. |
-| <xref:Microsoft.ML.Transforms.Text.WordHashBagTransform> | Produces a bag of counts of ngrams (sequences of consecutive words of length 1-n) in a given text. It does so by hashing each ngram and using the hash value as the index in the bag. |
-| <xref:Microsoft.ML.Legacy.Transforms.Text.TextToKeyConverter> | Converts input values (words, numbers, etc.) to index in a dictionary. |
-| <xref:Microsoft.ML.Transforms.Text.WordEmbeddingsTransform > | Converts vectors of text tokens into numeric vectors using a pre-trained model. For more information about the technique, see [Word embedding](https://en.wikipedia.org/wiki/Word_embedding) Wikipedia page. |
-| <xref:Microsoft.ML.Transforms.Text.WordTokenizeTransform > | Splits the text into words using the separator character(s). |
+| <xref:Microsoft.ML.Transforms.Text.TokenizingByCharactersTransformer> | Character-oriented tokenizer where text is considered a sequence of characters. |
+| <xref:Microsoft.ML.Transforms.Text.WordBagBuildingTransformer> | Produces a bag of counts of ngrams (sequences of consecutive words) in a given text. It does so by building a dictionary of ngrams and using the id in the dictionary as the index in the bag. |
+| <xref:Microsoft.ML.Transforms.Text.WordHashBagProducingTransformer> | Produces a bag of counts of ngrams (sequences of consecutive words of length 1-n) in a given text. It does so by hashing each ngram and using the hash value as the index in the bag. |
+| <xref:Microsoft.ML.Legacy.Transforms.Text.TextToKeyConverter> | Converts input values (words, numbers, etc.) to index in a dictionary. 
+| <xref:Microsoft.ML.Transforms.Text.WordTokenizingTransformer> | Splits the text into words using the separator character(s). |
 
 ## Miscellaneous
 

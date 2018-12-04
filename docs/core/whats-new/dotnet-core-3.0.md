@@ -11,11 +11,11 @@ ms.date: 11/XX/2018
 
 # What's new in .NET Core 3.0 (Preview 1)
 
-This article describes what is new in .NET Core 3.0 (preview 1). One of the biggest enhancements is support for Windows desktop applications. By utilizing a .NET Core 3.0 Desktop Pack, you can port your Windows Forms and Windows Presentation Foundation based applications. To be clear, the Desktop Packs are only supported on Windows. See below for more information.
+This article describes what is new in .NET Core 3.0 (preview 1). One of the biggest enhancements is support for Windows desktop applications (Windows only). By utilizing a .NET Core 3.0 Windows Desktop pack, you can port your Windows Forms, Windows Presentation Foundation (WPF), and and Entity Framework 6 (EF6) applications. To be clear, the Windows Desktop pack is only supported on Windows. For more information, see the section [Windows Desktop pack](#desktop-pack) below.
 
 .NET Core 3.0 supports C# 8.0, F# 5.0, and Visual Basic.NET 16.0.
 
-Download the latest preview release of .NET Core 3.0 at [http://LINK].
+[Download and get started with .NET Core 3 Preview 1](https://aka.ms/netcore3download) right now on Windows, Mac and Linux. You can see complete details of the release in the [.NET Core 3 Preview 1 release notes](https://aka.ms/netcore3releasenotes).
 
 ## .NET Standard 2.1
 
@@ -30,7 +30,13 @@ The .NET Core 3.0 SDK (v3.0.0000) tooling includes the following changes:
 ## Build
 
 
-## Desktop Packs
+## Windows desktop Pack
+
+
+```dotnet
+dotnet new wpf 
+dotnet new winforms 
+```
 
 ## Built-in JSON support
 

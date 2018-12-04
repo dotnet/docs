@@ -18,7 +18,7 @@ You can create three types of deployments for .NET Core applications:
 
 ## Framework-dependent deployments (FDD)
 
-For an FDD, you deploy only your app and third-party dependencies. You don't have to deploy .NET Core, since your app will use the version of .NET Core that's present on the target system. This is the default deployment model for .NET Core and ASP.NET Core apps that target .NET Core.
+For an FDD, you deploy only your app and third-party dependencies. Your app will use the version of .NET Core that's present on the target system. This is the default deployment model for .NET Core and ASP.NET Core apps that target .NET Core.
 
 ### Why create a framework-dependent deployment?
 
@@ -34,7 +34,7 @@ Deploying an FDD has a number of advantages:
 
 There are also a few disadvantages:
 
-- Your app can run only if the version of .NET Core that you target, or a later version, is already installed on the host system.
+- Your app can run only if the version of .NET Core your app targets, [or a later version](../versions/selection.md#framework-dependent-apps-roll-forward), is already installed on the host system.
 
 - It's possible for the .NET Core runtime and libraries to change without your knowledge in future releases. In rare cases, this may change the behavior of your app.
 
@@ -66,7 +66,7 @@ It also has a number of disadvantages:
 
 ## Framework-dependent executables (FDE)
 
-Starting with .NET Core 2.2, you deploy your app as an FDE, and any required thrid-party dependencies. You don't have to deploy .NET Core, since your app will use the version of .NET Core that's installed on the target system.
+Starting with .NET Core 2.2, you can deploy your app as an FDE, along with any required third-party dependencies. Your app will use the version of .NET Core that's installed on the target system.
 
 ### Why deploy a framework-dependent executable?
 
@@ -80,15 +80,15 @@ Deploying an FDE has a number of advantages:
 
 There are also a few disadvantages:
 
-- Your app can run only if the version of .NET Core that you target, or a later version, is already installed on the host system.
+- Your app can run only if the version of .NET Core your app targets, [or a later version](../versions/selection.md#framework-dependent-apps-roll-forward), is already installed on the host system.
 
 - It's possible for the .NET Core runtime and libraries to change without your knowledge in future releases. In rare cases, this may change the behavior of your app.
 
-- You must publish your app for each target-platform.
+- You must publish your app for each target platform.
 
 ## Step-by-step examples
 
-For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md). For step-by-step examples of deploying .NET Core apps with Visual Studio, see [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md). Each topic includes examples of the following deployments:
+For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md). For step-by-step examples of deploying .NET Core apps with Visual Studio, see [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md). Each article includes examples of the following deployments:
 
 - Framework-dependent deployment
 - Framework-dependent deployment with third-party dependencies

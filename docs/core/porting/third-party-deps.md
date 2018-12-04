@@ -107,7 +107,7 @@ For more information on how to suppress compiler warnings in Visual Studio, see 
 
 ### Port your packages to `PackageReference`
 
-.NET Core uses [PackageReference](nuget/consume-packages/package-references-in-project-files_) to specify package dependencies. If you are using [packages.config](/nuget/reference/packages-config) to specify your packages, you will need to convert over to `PackageReference`.
+.NET Core uses [PackageReference](/nuget/consume-packages/package-references-in-project-files) to specify package dependencies. If you are using [packages.config](/nuget/reference/packages-config) to specify your packages, you will need to convert over to `PackageReference`.
 
 You can learn more at [Migrate from packages.config to PackageReference](/nuget/reference/migrate-packages-config-to-package-reference).
 

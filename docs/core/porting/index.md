@@ -15,7 +15,7 @@ This is the process we recommend you take when porting your project to .NET Core
 
 1. Identify and account for your third-party dependencies.
 
-   This step involves understanding what your third-party dependencies are, how you depend on them, how to check if they also run on .NET Core, and steps you can take if they don't. It also covers how you can migrate your dependencies over to the `PackageReference` format that is used in .NET Core.
+   This step involves understanding what your third-party dependencies are, how you depend on them, how to check if they also run on .NET Core, and steps you can take if they don't. It also covers how you can migrate your dependencies over to the [PackageReference](/nuget/consume-packages/package-references-in-project-files) format that is used in .NET Core.
 
 2. Retarget all projects you wish to port to target the latest version of .NET Framework.
 

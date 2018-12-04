@@ -88,11 +88,11 @@ For information on arithmetic expressions with mixed floating-point types and in
 
 For more information on implicit numeric conversion rules, see the [Implicit Numeric Conversions Table](implicit-numeric-conversions-table.md).
 
-## C# Language Specification
+## C# language specification
 
 For more information, see [Integral types](~/_csharplang/spec/types.md#integral-types) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
 
-## See Also
+## See also
 
 - <xref:System.UInt64>
 - [C# Reference](../index.md)

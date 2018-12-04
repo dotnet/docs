@@ -41,10 +41,6 @@ Building requires the *project.assets.json* file, which lists the dependencies o
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
-`dotnet build` uses MSBuild to build the project, so it supports both parallel and incremental builds. For more information, see [Incremental Builds](/visualstudio/msbuild/incremental-builds).
-
-In addition to its options, the `dotnet build` command accepts MSBuild options, such as `-p` for setting properties or `-l` to define a logger. For more information about these options, see the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference).
-
 Whether the project is executable or not is determined by the `<OutputType>` property in the project file. The following example shows a project that produces executable code:
 
 ```xml
@@ -54,6 +50,12 @@ Whether the project is executable or not is determined by the `<OutputType>` pro
 ```
 
 In order to produce a library, omit the `<OutputType>` property. The main difference in built output is that the IL DLL for a library doesn't contain entry points and can't be executed.
+
+### MSBuild
+
+`dotnet build` uses MSBuild to build the project, so it supports both parallel and incremental builds. For more information, see [Incremental Builds](/visualstudio/msbuild/incremental-builds).
+
+In addition to its options, the `dotnet build` command accepts MSBuild options, such as `-p` for setting properties or `-l` to define a logger. For more information about these options, see the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference).
 
 ## Arguments
 
@@ -166,3 +168,7 @@ Build a project and its dependencies for a specific runtime (in this example, Ub
 Build the project and use the specified NuGet package source during the restore operation (.NET Core SDK 2.0 and later versions):
 
 `dotnet build --source c:\packages\mypackages`
+
+Build the project and set 1.2.3.4 version as a build parameter
+
+`dotnet build -p:Version=1.2.3.4`

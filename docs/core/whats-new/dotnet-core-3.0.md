@@ -46,7 +46,7 @@ There are some operations, like linking and razor page publishing that will stil
 
 While .NET Core 2.1 supported global tools, .NET Core 3.0 now has local tools. Local tools are similar to global tools but are associated with a particular location on disk. This enables per-project and per-repository tooling. Any tool installed locally isn't available globally.
 
-Local tools rely on a manifest file name `dotnet-tools.json` in your current directory. This manifest file defines the tools to be available. By creating this manifest file at the root of your repository, you ensure anyone cloning your code can restore and use the tools needed to successfully work with your code.
+Local tools rely on a manifest file name `dotnet-tools.json` in your current directory. This manifest file defines the tools to be available. By creating this manifest file at the root of your repository, you ensure anyone cloning your code can restore and use the tools that are needed to successfully work with your code.
 
 When the local tools manifest file is available, use the following command to automatically download and install those tools locally:
 
@@ -54,7 +54,7 @@ When the local tools manifest file is available, use the following command to au
 dotnet tool restore
 ```
 
-Run a local tool with with the following command:
+Run a local tool with the following command:
 
 ```console
 dotnet tool run <tool-name>
@@ -147,7 +147,7 @@ In a .NET Core console project, the project uses the `Microsoft.NET.Sdk` SDK and
 </Project>
 ```
 
-To choose Windows Forms over WPF, set `UseWindowsForms` isntead of `UseWPF`:
+To choose Windows Forms over WPF, set `UseWindowsForms` instead of `UseWPF`:
 
 ```diff
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
@@ -166,7 +166,7 @@ Please share your feedback on the [dotnet/winforms](https://github.com/dotnet/wi
 
 ## Fast built-in JSON support
 
-`System.Text.Json.Utf8JsonReader` is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>`. The `Utf8JsonReader` is a foundational, low-level type, that can be leveraged to build custom parsers and deserializers. Reading through a JSON payload using the new `Utf8JsonReader` is 2x faster than using the reader from [Json.NET](https://www.newtonsoft.com/json). It does not allocate until you need to actualize JSON tokens as (UTF16)strings.
+`System.Text.Json.Utf8JsonReader` is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>`. The `Utf8JsonReader` is a foundational, low-level type, that can be leveraged to build custom parsers and deserializers. Reading through a JSON payload using the new `Utf8JsonReader` is 2x faster than using the reader from [Json.NET](https://www.newtonsoft.com/json). It does not allocate until you need to actualize JSON tokens as (UTF-16) strings.
 
 This new API will include the following components:
 
@@ -468,7 +468,7 @@ Additionally, types like `String` have seen under-the-cover improvements to make
 
 The following improvements are also new in .NET Core 3 Preview 1:
 
-* Brotli support built-in to HttpClient
+* Brotli support built in to HttpClient
 * ThreadPool.UnsafeQueueWorkItem(IThreadPoolWorkItem)
 * Unsafe.Unbox
 * CancellationToken.Unregister
@@ -482,7 +482,7 @@ The following improvements are also new in .NET Core 3 Preview 1:
 
 [Tiered compilation](https://blogs.msdn.microsoft.com/dotnet/2018/08/02/tiered-compilation-preview-in-net-core-2-1/) is on by default with .NET Core 3.0. It is a feature that enables the runtime to more adaptively use the Just-In-Time (JIT) compiler to get better performance, both at startup and to maximize throughput.
 
-This feature was added as an opt-in feature in [.NET Core 2.1](https://blogs.msdn.microsoft.com/dotnet/2018/05/30/announcing-net-core-2-1/) and then was enabled by default in [.NET Core 2.2 Preview 2](https://blogs.msdn.microsoft.com/dotnet/2018/09/12/announcing-net-core-2-2-preview-2/). Subsequently, it has been reverted back to opt-in with the .NET Core 2.2 release.
+This feature was added as an opt-in feature in [.NET Core 2.1](https://blogs.msdn.microsoft.com/dotnet/2018/05/30/announcing-net-core-2-1/) and then was enabled by default in [.NET Core 2.2 Preview 2](https://blogs.msdn.microsoft.com/dotnet/2018/09/12/announcing-net-core-2-2-preview-2/). Subsequently, it has been reverted back to opt in with the .NET Core 2.2 release.
 
 ## ARM64 Linux support
 

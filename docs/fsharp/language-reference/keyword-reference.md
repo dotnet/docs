@@ -58,7 +58,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`null`|[Null Values](values/null-values.md)<br /><br />[Constraints](generics/constraints.md)|Indicates the absence of an object.<br /><br />Also used in generic parameter constraints.|
 |`of`|[Discriminated Unions](discriminated-unions.md)<br /><br />[Delegates](delegates.md)<br /><br />[Exception Types](exception-handling/exception-types.md)|Used in discriminated unions to indicate the type of categories of values, and in delegate and exception declarations.|
 |`open`|[Import Declarations: The `open` Keyword](import-declarations-the-open-keyword.md)|Used to make the contents of a namespace or module available without qualification.|
-|`or`|[Symbol and Operator Reference](symbol-and-operator-reference/index.md)<br /><br />[Constraints](generics/constraints.md)|Used with Boolean conditions as a Boolean `or` operator. Equivalent to `||`.<br /><br />Also used in member constraints.|
+|`or`|[Symbol and Operator Reference](symbol-and-operator-reference/index.md)<br /><br />[Constraints](generics/constraints.md)|Used with Boolean conditions as a Boolean `or` operator. Equivalent to `&#124;&#124;`.<br /><br />Also used in member constraints.|
 |`override`|[Members](members/index.md)|Used to implement a version of an abstract or virtual method that differs from the base version.|
 |`private`|[Access Control](access-control.md)|Restricts access to a member to code in the same type or module.|
 |`public`|[Access Control](access-control.md)|Allows access to a member from outside the type.|

@@ -97,7 +97,7 @@ The project or solution file to build. If a project or solution file is not spec
 
 * **`-o|--output <OUTPUT_DIRECTORY>`**
 
-  Directory in which to place the built binaries. You also need to define `--framework` when you specify this option.
+  Directory in which to place the built binaries. You also need to define `--framework` when you specify this option. If not specified, the default path is `./bin/<configuration>/<framework>/`.
 
 * **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 

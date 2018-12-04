@@ -76,8 +76,7 @@ Class JoinStrings
                             From id In scores   
                             Let n2 = id.Split(New Char() {","})   
                             Where Convert.ToInt32(n(2)) = Convert.ToInt32(n2(0))
-                            Select n(0) & "," & n(1) & "," & n2(0) & "," & n2(1) & "," &  
-                              n2(2) & "," & n2(3)  
+                            Select n(0) & "," & n2(1) & "," & n2(2) & "," & n2(3) & "," &  n2(4)
   
         ' Pass a query variable to a Sub and execute it there.  
         ' The query itself is unchanged.  

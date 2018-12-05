@@ -57,7 +57,7 @@ dotnet tool restore
 Run a local tool with the following command:
 
 ```console
-dotnet tool run <tool-name>
+dotnet tool run <tool-command-name>
 ```
 
 When a local tool is called, dotnet searches for a manifest up the directory structure. When a tool manifest file is found, it is searched for the requested tool. If the tool is found, it includes the information needed to find the tool in the NuGet global packages location. 

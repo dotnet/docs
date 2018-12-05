@@ -1,6 +1,6 @@
 ---
 title: "Best Practices for Exceptions"
-ms.date: "03/30/2017"
+ms.date: "12/05.2018"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -9,20 +9,16 @@ dev_langs:
 helpviewer_keywords: 
   - "exceptions, best practices"
 ms.assetid: f06da765-235b-427a-bfb6-47cd219af539
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Best practices for exceptions
 
 A well-designed app handles exceptions and errors to prevent app crashes. This section describes best practices for handling and creating exceptions.
 
-## Use try/catch/finally blocks
+## Use try/catch/finally blocks to recover from errors or release resources
 
-Use `try`/`catch`/`finally` blocks around code that can potentially generate an exception. 
+Use `try`/`catch` blocks around code that can potentially generate an exception ***and*** your code can recover from that exception. In `catch` blocks, always order exceptions from the most derived to the least derived. All exceptions derive from <xref:System.Exception>. More derived exceptions are not handled by a catch clause that is preceded by a catch clause for a base exception class. When your code cannot recover from an exception, don't catch that exception. Enable methods further up the call stack to recover if possible.
 
-In `catch` blocks, always order exceptions from the most specific to the least specific.
-
-Use a `finally` block to clean up resources, whether you can recover or not.
+Clean up resources allocated with either `using` statements, or `finally` blocks. Prefer `using` statements to automatically clean up resources when exceptions are thrown. Use `finally` blocks to clean up resources that don't implement <xref:System.IDisposable>. Code in a `finally` claus is almost always executed even when exceptions are thrown.
 
 ## Handle common conditions without throwing exceptions
 
@@ -52,11 +48,11 @@ A class can provide methods or properties that enable you to avoid making a call
 [!code-csharp[Conceptual.Exception.Handling#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.exception.handling/cs/source.cs#5)]
 [!code-vb[Conceptual.Exception.Handling#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.exception.handling/vb/source.vb#5)]  
 
-Another way to avoid exceptions is to return null for extremely common error cases instead of throwing an exception. An extremely common error case can be considered normal flow of control. By returning null in these cases, you minimize the performance impact to an app.
+Another way to avoid exceptions is to return `null` for extremely common error cases instead of throwing an exception. An extremely common error case can be considered normal flow of control. By returning `null` in these cases, you minimize the performance impact to an app.
 
 ## Throw exceptions instead of returning an error code
 
-Exceptions ensure that failures do not go unnoticed because calling code didn't check a return code. 
+Exceptions ensure that failures do not go unnoticed because calling code didn't check a return code.
 
 ## Use the predefined .NET exception types
 
@@ -126,7 +122,7 @@ It is common for a class to throw the same exception from different places in it
   
 In some cases, it's more appropriate to use the exception's constructor to build the exception. An example is a global exception class such as <xref:System.ArgumentException>.
 
-## Clean up intermediate results when throwing an exception
+## Restore state when methods don't complete due to exceptions
 
 Callers should be able to assume that there are no side effects when an exception is thrown from a method. For example, if you have code that transfers money by withdrawing from one account and depositing in another account, and an exception is thrown while executing the deposit, you don't want the withdrawal to remain in effect.
 
@@ -138,6 +134,8 @@ public void TransferFunds(Account from, Account to, decimal amount)
     to.Deposit(amount);
 }
 ```
+
+The method above does not directly throw any exceptions, but must be written defensively so that if the deposit operation fails, the withdrawal is reversed.
 
 One way to handle this situation is to catch any exceptions thrown by the deposit transaction and roll back the withdrawal.
 
@@ -165,9 +163,9 @@ catch (Exception ex)
     from.RollbackTransaction(withdrawalTrxID);
     throw new TransferFundsException("Withdrawal failed", innerException: ex)
     {
-    	From = from,
-	To = to,
-	Amount = amount
+        From = from,
+        To = to,
+        Amount = amount
     };
 }
 ```

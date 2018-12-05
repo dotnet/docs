@@ -21,7 +21,7 @@ For more information, see the [.NET Core 3.0 Preview 1 announcement](https://blo
 
 ## .NET Standard 2.1
 
-.NET Core 3.0 will be compliant with .NET Standard 2.1.
+.NET Core 3.0 implements .NET Standard 2.1.
 
 ## Default executables
 
@@ -130,7 +130,7 @@ dotnet new wpf
 dotnet new winforms
 ```
 
-You can also open, launch, and debug .NET Core 3.0 WPF and Windows Forms projects in Visual Studio 2019 Preview 1. It is currently possible to open these projects in Visual Studio 2017 15.9, however, it isn't a supported scenario (and you need to [enable previews](https://blogs.msdn.microsoft.com/dotnet/2018/11/13/net-core-tooling-update-for-visual-studio-2017-version-15-9/)).
+You can also open, launch, and debug .NET Core 3.0 WPF and Windows Forms projects in Visual Studio 2019 Preview 1. It's currently possible to open these projects in Visual Studio 2017 15.9, however, it isn't a supported scenario (and you need to [enable previews](https://blogs.msdn.microsoft.com/dotnet/2018/11/13/net-core-tooling-update-for-visual-studio-2017-version-15-9/)).
 
 The new projects are the same as existing .NET Core projects, with a couple additions. Here is the comparison of the basic .NET Core console project and a basic Windows Forms and WPF project.
 
@@ -261,6 +261,9 @@ async IAsyncEnumerable<int> GetBigResultsAsync()
 }
 ```
 
+> [!WARNING]
+> .NET Core 3.0 Preview 1 currently has a bug with `await foreach`. Instead, use `GetEnumerator` and `MoveNext` to process elements. For more information, see [roslyn/#31268](https://github.com/dotnet/roslyn/issues/31268).
+
 In addition to being able to `await foreach`, you can also create async iterators, for example, an iterator that returns an `IAsyncEnumerable/IAsyncEnumerator` that you can both `await` and `yield` in. For objects that need to be disposed, you can use `IAsyncDisposable`, which various BCL types implement, such as `Stream` and `Timer`.
 
 > [!NOTE]
@@ -309,7 +312,7 @@ public static void ReadLines(ReadOnlySequence<byte> sequence)
 
 .NET Core 3.0 Preview 1 is capable of utilizing **OpenSSL 1.1.1**, **OpenSSL 1.1.0**, or **OpenSSL 1.0.2** (whatever the best version found is, on a Linux system).  When **OpenSSL 1.1.1** is available the SslStream and HttpClient types will use **TLS 1.3** when using `SslProtocols.None` (system default protocols), assuming both the client and server support **TLS 1.3**.
 
-The following sample demonstrates .NET Core 3.0 Preview 1 on Ubuntu 18.10 connecting to https://www.cloudflare.com:
+The following sample demonstrates .NET Core 3.0 Preview 1 on Ubuntu 18.10 connecting to <https://www.cloudflare.com>:
 
 ```csharp
 using System;
@@ -332,7 +335,6 @@ namespace tlstest
                 using (SslStream sslStream = new SslStream(tcpClient.GetStream()))
                 {
                     await sslStream.AuthenticateAsClientAsync(targetHost);
-
                     await Console.Out.WriteLineAsync($"Connected to {targetHost} with {sslStream.SslProtocol}");
                 }
             }
@@ -426,6 +428,7 @@ namespace rsakeyprint
     }
 }
 ```
+
 ```console
 user@comp-ubuntu1810:~/rsakeyprint$ echo Making a small key to save on screen space.
 Making a small key to save on screen space.

@@ -10,10 +10,10 @@ ms.assetid: 551cfe35-2632-4343-af49-33ad12da08e2
 ---
 # bool (C# Reference)
 
-The `bool` keyword is an alias of <xref:System.Boolean?displayProperty=nameWithType>. It is used to declare variables to store the Boolean values, [true](../../../csharp/language-reference/keywords/true.md) and [false](../../../csharp/language-reference/keywords/false.md).
+The `bool` keyword is an alias of <xref:System.Boolean?displayProperty=nameWithType>. It is used to declare variables to store the Boolean values: [true](true-literal.md) and [false](false-literal.md).
 
 > [!NOTE]
-> If you require a Boolean variable that can also have a value of `null`, use `bool?`. For more information, see [Nullable Types](../../../csharp/programming-guide/nullable-types/index.md).
+> If you require a Boolean variable that can also have a value of `null`, use `bool?`. For more information, see [The bool? type](../../programming-guide/nullable-types/using-nullable-types.md#the-bool-type) section of the [Using nullable types](../../programming-guide/nullable-types/using-nullable-types.md) article.
 
 ## Literals
 

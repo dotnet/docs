@@ -9,7 +9,7 @@ ms.assetid: fcc1c1a5-0e42-4226-a128-81492a9bf719
 
 Represents the [bool](bool.md) value `false`:
 
-[!code-csharp-interactive[false literal example](~/samples/snippets/csharp/keywords/TrueFalseLiteralsExample.cs#FalseLiteral)]
+[!code-csharp-interactive[false literal example](~/samples/snippets/csharp/keywords/TrueFalseLiteralsExamples.cs#FalseLiteral)]
 
 ## See also
 

@@ -9,7 +9,7 @@ ms.assetid: 7e36d493-1acf-460d-9258-a6d76c6b5a3a
 
 Represents the [bool](bool.md) value `true`:
 
-[!code-csharp-interactive[true literal example](~/samples/snippets/csharp/keywords/TrueFalseLiteralsExample.cs#TrueLiteral)]
+[!code-csharp-interactive[true literal example](~/samples/snippets/csharp/keywords/TrueFalseLiteralsExamples.cs#TrueLiteral)]
 
 ## See also
 

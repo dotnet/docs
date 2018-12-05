@@ -60,7 +60,8 @@ The following table includes the default marshalling rules that are Windows-only
 | `object`  | `VARIANT`               | `IUnknown*`         |
 | `System.Array` | COM interface | Not allowed without a `[MarshalAs]` attribute |
 | `System.ArgIterator` | `va_list` | Not allowed |
-| `System.Collections.IEnumerator` | `IEnumVariant` | Not allowed |
+| `System.Collections.IEnumerator` | `IEnumVARIANT*` | Not allowed |
+| `System.Collections.IEnumerable` | `IDispatch*` | Not allowed |
 | `System.DateTimeOffset` | `int64_t` representing the number of ticks since midnight on January 1, 1601 || `int64_t` representing the number of ticks since midnight on January 1, 1601 |
 
 Some types can only be marshalled as parameters and not as fields. These types are listed below

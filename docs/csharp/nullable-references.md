@@ -71,7 +71,7 @@ The compiler uses static analysis to determine the **null state** of any nullabl
 1. The variable has been definitely assigned to a non-null value.
 1. The variable has been checked against null before de-referencing it.
 
-The compiler enforces that non-nullable references may never be set to the null value. You must initialize them to a non-null value. If you don't, the compiler warns that a non-nullable reference wasn't initialized. The compiler also warns you whenever you assign a non-nullable reference to a nullable reference that **maybe null**. That implies you can only assign a non-nullable reference to a nullable reference if that nullable reference is **not null**.
+The compiler enforces that non-nullable references may never be set to the null value. You must initialize them to a non-null value. If you don't, the compiler warns that a non-nullable reference wasn't initialized. The compiler also warns you whenever you assign a non-nullable reference to a nullable reference that **may be null**. That implies you can only assign a non-nullable reference to a nullable reference if that nullable reference is **not null**.
 
 ## Learn more
 

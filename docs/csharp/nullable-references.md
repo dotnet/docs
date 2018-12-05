@@ -59,7 +59,7 @@ The compiler uses the following rules in an enabled nullable context:
 
 - Any variable of a reference type is a **non-nullable reference**.
 - Any non-nullable reference may be dereferenced safely.
-- Any nullable reference type (noted by `?` after the type in the variable declaration) may be null. Static analysis determines if the value is known to be not null when it is dereferenced. If not, the compiler warns you.
+- Any nullable reference type (noted by `?` after the type in the variable declaration) may be null. Static analysis determines if the value is known to be non-null when it is dereferenced. If not, the compiler warns you.
 - You can use the null-forgiving operator to declare that a nullable reference isn't null.
 
 A richer grammar is proposed for nullable contexts and will be available in future previews. For more information about nullable contexts, see the [nullable reference specification](https://github.com/dotnet/csharplang/blob/master/proposals/nullable-reference-types-specification.md#nullable-contexts) draft.

@@ -11,7 +11,7 @@ ms.date: 12/04/2018
 
 # What's new in .NET Core 3.0 (Preview 1)
 
-This article describes what is new in .NET Core 3.0 (preview 1). One of the biggest enhancements is support for Windows desktop applications (Windows only). By utilizing a .NET Core 3.0 Windows Desktop pack, you can port your Windows Forms, Windows Presentation Foundation (WPF), and Entity Framework 6 (EF6) applications. To be clear, the Windows Desktop pack is only supported on Windows. For more information, see the section [Windows Desktop pack](#desktop-pack) below.
+This article describes what is new in .NET Core 3.0 (preview 1). One of the biggest enhancements is support for Windows desktop applications (Windows only). By utilizing a .NET Core 3.0 component called Windows Desktop, you can port your Windows Forms Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported on Windows. For more information, see the section [Windows desktop](#windows-desktop) below.
 
 .NET Core 3.0 adds support for C# 8.0.
 
@@ -117,11 +117,11 @@ For both global and local tools, a compatible version of the runtime is required
 
 For more information, see [Local Tools Early Preview Documentation](https://github.com/dotnet/cli/issues/10288).
 
-## Windows desktop pack
+## Windows desktop
 
 Starting with .NET Core 3.0 Preview 1, you can build Windows desktop applications using WPF and Windows Forms. These frameworks also support using modern controls and Fluent styling from the Windows UI XAML Library (WinUI) via [XAML islands](/windows/uwp/xaml-platform/xaml-host-controls).
 
-The Windows Desktop pack is part of the Windows .NET Core 3.0 SDK.
+The Windows Desktop component is part of the Windows .NET Core 3.0 SDK.
 
 You can create a new WPF or Windows Forms app with the following `dotnet` commands:
 

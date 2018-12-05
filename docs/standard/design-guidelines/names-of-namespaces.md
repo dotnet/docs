@@ -1,6 +1,6 @@
 ---
 title: "Names of Namespaces"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 helpviewer_keywords: 
   - "names [.NET Framework], conflicts"
   - "names [.NET Framework], namespaces"

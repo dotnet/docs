@@ -1,6 +1,6 @@
 ---
 title: "Names of Classes, Structs, and Interfaces"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 helpviewer_keywords: 
   - "type names, guidelines"
   - "classes [.NET Framework], names"

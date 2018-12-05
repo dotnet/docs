@@ -1,6 +1,6 @@
 ---
 title: "Choosing Between Class and Struct"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "class library design guidelines [.NET Framework], structures"

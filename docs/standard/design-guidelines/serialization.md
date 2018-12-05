@@ -1,6 +1,6 @@
 ---
 title: "Serialization1"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 ms.assetid: bebb27ac-9712-4196-9931-de19fc04dbac
 author: "rpetrusha"

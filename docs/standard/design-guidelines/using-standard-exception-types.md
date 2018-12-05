@@ -1,6 +1,6 @@
 ---
 title: "Using Standard Exception Types"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "throwing exceptions, standard types"

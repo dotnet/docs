@@ -1,6 +1,6 @@
 ---
 title: "Naming Guidelines"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "names [.NET Framework], about naming guidelines"

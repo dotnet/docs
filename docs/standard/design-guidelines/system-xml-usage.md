@@ -1,6 +1,6 @@
 ---
 title: "System.Xml Usage"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 ms.assetid: 82302f0d-a621-4c6f-b57d-999bd61f21a6
 author: "rpetrusha"

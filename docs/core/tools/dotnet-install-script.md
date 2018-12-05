@@ -63,7 +63,7 @@ You can install a specific version using the `--version` argument. The version m
 
 * **`-InstallDir <DIRECTORY>`**
 
-  Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\.dotnet*. Binaries are placed directly in this directory.
+  Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\Microsoft\dotnet*. Binaries are placed directly in this directory.
 
 * **`-Architecture <ARCHITECTURE>`**
 

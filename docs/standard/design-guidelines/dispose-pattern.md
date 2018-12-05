@@ -185,7 +185,7 @@ public class Stream : IDisposable {
   
 <a name="finalizable_types"></a>   
 ## Finalizable Types  
- Finalizable types are types that extend the Basic Dispose Pattern by overriding the finalizer and providing finalization code path in the `Dispose(bool)` method.   Usually they are implemented to properly release unmanaged resources.
+ Finalizable types are types that extend the Basic Dispose Pattern by overriding the finalizer and providing finalization code path in the `Dispose(bool)` method. Usually they are implemented to properly release unmanaged resources.
   
  Finalizers are notoriously difficult to implement correctly, primarily because you cannot make certain (normally valid) assumptions about the state of the system during their execution, this is because the finalizers are executing on the finalizer thread, concurrently with your application, so access to global state in your application can corrupt the state of your application.
  
@@ -228,9 +228,9 @@ public class ComplexResourceHolder : IDisposable {
 
 When it comes to **releasing unmanaged resources** you need to take into consideration whether the underlying library that exposes the resource is thread safe.   If they are thread safe, you can call those methods directly, but if they are not thread safe, you will need to design a complementary solution.
 
-For example, consider the pair of C APIs `malloc()` and `free()`.  These are thread-safe, which means that if you were to use `malloc` in your finalizable type, you can very safely call the `free` method from your `Dispose` method above.   There are many unmanaged APIs that are not thread safe, for example, many UI toolkit APIs are not thread safe.  Consider the pair of calls `gtk_window_new()` and `gtk_window_destroy()`, if you were to call `gtk_window_destroy()` from the finalizer, you would most likely corrupt the state of the running application.   
+For example, consider the pair of C APIs `malloc()` and `free()`. These are thread-safe, which means that if you were to use `malloc` in your finalizable type, you can very safely call the `free` method from your `Dispose` method above. There are many unmanaged APIs that are not thread safe, for example, many UI toolkit APIs are not thread safe.  Consider the pair of calls `gtk_window_new()` and `gtk_window_destroy()`, if you were to call `gtk_window_destroy()` from the finalizer, you would most likely corrupt the state of the running application.   
 
-In those scenarios, the implementation for releasing your unmanaged resources should use the finalizer to queue the release of the operation to take place on the proper thread.   Typically this is done by adding the unamanged resource handle to a queue (remember to lock it), and triggering the main loop of the application to invoke the resource disposing task that would drain that queue on the main thread.
+In those scenarios, the implementation for releasing your unmanaged resources should use the finalizer to queue the release of the operation to take place on the proper thread. Typically this is done by adding the unamanged resource handle to a queue (remember to lock it), and triggering the main loop of the application to invoke the resource disposing task that would drain that queue on the main thread.
 
  **X AVOID** making types finalizable.  
   

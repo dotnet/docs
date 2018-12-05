@@ -110,7 +110,7 @@ To develop .NET Core 1.x apps in Visual Studio, [download and install Visual Stu
 <a name="vs-mapping"></a>
 
 > [!TIP]
-> To verify your Visual Studio 2017 version:
+> To verify your Visual Studio version:
 >
 > * On the **Help** menu, choose **About Microsoft Visual Studio**.
 > * In the **About Microsoft Visual Studio** dialog, verify the version number.

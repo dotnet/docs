@@ -73,7 +73,7 @@ If your code isn't targeting .NET Framework 4.7.2, we recommended that you retar
 
 For each of your projects in Visual Studio you wish to port, do the following:
 
-1. Right-click on the project and select Properties.
+1. Right-click on the project and select **Properties**.
 1. In the **Target Framework** dropdown, select **.NET Framework 4.7.2**.
 1. Recompile your projects.
 

@@ -3,7 +3,7 @@ title: Get started with C# and Visual Studio Code - C# Guide
 description: Learn how to create and debug your first .NET Core application in C# using Visual Studio Code.
 author: kendrahavens
 ms.author: mairaw
-ms.date: 11/28/2018
+ms.date: 12/05/2018
 ---
 # Get Started with C# and Visual Studio Code
 
@@ -82,7 +82,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 > [!TIP]
 > For more information and troubleshooting tips on .NET Core debugging with OmniSharp in Visual Studio Code, see [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
 
-## Add a Class
+## Add a class
 
 1. To add a new class right-click in the VSCode Explorer and select **New File**. This adds a new file to the folder you have open in VSCode.
 2. Name your file `Class1.cs`. You must save it with a `.cs` extension at the end for it to be recognized as a csharp file.

@@ -17,7 +17,7 @@ This is the process we recommend you take when porting your project to .NET Core
 
    This step involves understanding what your third-party dependencies are, how you depend on them, how to check if they also run on .NET Core, and steps you can take if they don't. It also covers how you can migrate your dependencies over to the [PackageReference](/nuget/consume-packages/package-references-in-project-files) format that is used in .NET Core.
 
-2. Retarget all projects you wish to port to target the latest version of .NET Framework.
+2. Retarget all projects you wish to port to target the .NET Framework 4.7.2 or higher.
 
    This step ensures that you can use API alternatives for .NET Framework-specific targets when .NET Core doesn't support a particular API.
 
@@ -35,12 +35,14 @@ This is the process we recommend you take when porting your project to .NET Core
 
 The following list shows tools you might find helpful to use during the porting process:
 
-* NuGet - [Nuget Client](https://dist.nuget.org/index.html) or [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer).
 * .NET Portability Analyzer - [command line tool](https://github.com/Microsoft/dotnet-apiport/releases) or [Visual Studio Extension](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b), a toolchain that can generate a report of how portable your code is between .NET Framework and .NET Core, with an assembly-by-assembly breakdown of issues. For more information, see [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md).
 * .NET API analyzer - A Roslyn analyzer that discovers potential compatibility risks for C# APIs on different platforms and detects calls to deprecated APIs. For more information, see [.NET API analyzer](../../standard/analyzers/api-analyzer.md).
 * Reverse Package Search - A [useful web service](https://packagesearch.azurewebsites.net) that allows you to search for a type and find packages containing that type.
 
-Additionally, you can attempt to port smaller solutions or individual projects to the .NET Core project file format with the [CsprojToVs2017](https://github.com/hvanbakel/CsprojToVs2017) tool. **Be warned:** There is no guarantee that this tool will work for all of your projects, and it may cause subtle changes in behavior that you depend on. This tool should be used as a _starting point_ that automates the basic things that can be automated.
+Additionally, you can attempt to port smaller solutions or individual projects to the .NET Core project file format with the [CsprojToVs2017](https://github.com/hvanbakel/CsprojToVs2017) tool.
+
+> [!WARNING] 
+> CsprojToVs2017 is a third-party tool. There is no guarantee that it will work for all of your projects, and it may cause subtle changes in behavior that you depend on. CsprojToVs2017 should be used as a _starting point_ that automates the basic things that can be automated. It is not a guaranteed solution to migrating project file formats.
 
 >[!div class="step-by-step"]
 >[Next](third-party-deps.md)

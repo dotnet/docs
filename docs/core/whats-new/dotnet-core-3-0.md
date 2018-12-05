@@ -269,7 +269,7 @@ In addition to being able to `await foreach`, you can also create async iterator
 > [!NOTE]
 > Only [C# 8.0](https://blogs.msdn.microsoft.com/dotnet/2018/11/12/building-c-8-0/) supports `await foreach` syntax.
 
-## SequenceReader
+## Type: SequenceReader
 
 In .NET Core 3.0, `System.Buffers.SequenceReader` has been added which can be used as a reader for `ReadOnlySequence<T>`. This allows easy, high performance, low allocation parsing of `System.IO.Pipelines` data that can cross multiple backing buffers. 
 
@@ -301,6 +301,37 @@ public static void ReadLines(ReadOnlySequence<byte> sequence)
     }
 }
 ```
+
+## Type: MetadataLoadContext
+
+The `MetadataLoadContext` type has been added that enables reading assembly metadata without affecting the caller’s application domain. Assemblies are read as data, including assemblies built for different architectures and platforms than the current runtime environment. `MetadataLoadContext` overlaps with the <xref:system.reflection.assembly.reflectiononlyload?displayProperty=name>, which is only available in the .NET Framework.
+
+`MetdataLoadContext` is available in the [System.Reflection.MetadataLoadContext package](https://www.nuget.org/packages/System.Reflection.MetadataLoadContext). It is a .NET Standard 2.0 package.
+
+The `MetadataLoadContext` exposes APIs similar to the <xref:system.runtime.loader.assemblyloadcontext?displayProperty=name> type, but is not based on that type. Much like <xref:system.runtime.loader.assemblyloadcontext?displayProperty=name>, the `MetadataLoadContext` enables loading assemblies within an isolated assembly loading universe. `MetdataLoadContext` APIs return <xref:system.reflection.assembly?displayProperty=name> objects, enabling the use of familiar reflection APIs. Execution-oriented APIs, such as [MethodBase.Invoke](https://github.com/dotnet/corefx/blob/master/src/System.Reflection.MetadataLoadContext/src/System/Reflection/TypeLoading/Methods/RoMethod.cs#L127), are not allowed and will throw InvalidOperationException.
+
+The following sample demonstrates how to find concrete types in an assembly that implements a given interface:
+
+```csharp
+var paths = new string[] {@"C:\myapp\mscorlib.dll", @"C:\myapp\myapp.dll"};
+var resolver = new PathAssemblyResolver(paths);
+using (var lc = new MetadataLoadContext(resolver))
+{
+    Assembly a = lc.LoadFromAssemblyName("myapp");
+    Type myInterface = a.GetType("MyApp.IPluginInterface");
+    foreach (Type t in a.GetTypes())
+    {
+        if (t.IsClass && myInterface.IsAssignableFrom(t))
+            Console.WriteLine($"Class {t.FullName} implements IPluginInterface");
+    }
+}
+```
+
+Scenarios for `MetadataLoadContext` include design-time features, build-time tooling, and runtime light-up features that need to inspect a set of assemblies as data and have all file locks and memory freed after inspection is performed.
+
+The `MetadataLoadContext` has a resolver class passed to its constructor. The resolver's job is to load an `Assembly` given its `AssemblyName`. The resolver class derives from the abstract `MetadataAssemblyResolver` class. An implementation of the resolver for path-based scenarios is provided with `PathAssemblyResolver`.
+
+The [MetadataLoadContext tests](https://github.com/dotnet/corefx/tree/master/src/System.Reflection.MetadataLoadContext/tests/src/Tests) demonstrate many use cases. The [Assembly tests](https://github.com/dotnet/corefx/blob/master/src/System.Reflection.MetadataLoadContext/tests/src/Tests/Assembly/AssemblyTests.cs) are a good place to start.
 
 ## TLS 1.3 & OpenSSL 1.1.1 on Linux
 

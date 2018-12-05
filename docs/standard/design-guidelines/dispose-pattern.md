@@ -206,7 +206,7 @@ public class ComplexResourceHolder : IDisposable {
     }  
   
     protected virtual void Dispose(bool disposing) {  
-            ReleaseBuffer(buffer); // release unmanaged memory  
+        ReleaseBuffer(buffer); // release unmanaged memory  
         if (disposing) { // release other disposable objects  
             if (resource!= null) resource.Dispose();  
         }  

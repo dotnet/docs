@@ -1,14 +1,13 @@
 ---
 title: "Field Design"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "fields, design guidelines"
   - "read-only fields"
   - "member design guidelines, fields"
 ms.assetid: 7cb4b0f3-7a10-4c93-b84d-733f7134fcf8
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Field Design
 The principle of encapsulation is one of the most important notions in object-oriented design. This principle states that data stored inside an object should be accessible only to that object.  

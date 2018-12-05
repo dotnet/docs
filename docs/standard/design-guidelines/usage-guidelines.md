@@ -1,12 +1,11 @@
 ---
 title: "Usage guidelines"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "class library design guidelines [.NET Framework], usage guidelines"
 ms.assetid: 42215ffa-a099-4a26-b14e-fb2bdb6f95b7
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Usage guidelines
 

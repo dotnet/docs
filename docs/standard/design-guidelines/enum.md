@@ -1,6 +1,6 @@
 ---
 title: "Enum Design"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "type design guidelines, enumerations"
@@ -9,8 +9,7 @@ helpviewer_keywords:
   - "class library design guidelines [.NET Framework], enumerations"
   - "flags enumerations"
 ms.assetid: dd53c952-9d9a-4736-86ff-9540e815d545
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Enum Design
 Enums are a special kind of value type. There are two kinds of enums: simple enums and flag enums.  

@@ -1,6 +1,6 @@
 ---
 title: "Dispose Pattern"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "Dispose method"
@@ -9,8 +9,7 @@ helpviewer_keywords:
   - "customizing Dispose method name"
   - "Finalize method"
 ms.assetid: 31a6c13b-d6a2-492b-9a9f-e5238c983bcb
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Dispose Pattern
 All programs acquire one or more system resources, such as memory, system handles, or database connections, during the course of their execution. Developers have to be careful when using such system resources, because they must be released after they have been acquired and used.  

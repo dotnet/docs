@@ -266,7 +266,7 @@ In addition to being able to `await foreach`, you can also create async iterator
 > [!NOTE]
 > Only [C# 8.0](https://blogs.msdn.microsoft.com/dotnet/2018/11/12/building-c-8-0/) supports `await foreach` syntax.
 
-## System.Buffers.SequenceReader
+## SequenceReader
 
 In .NET Core 3.0, `System.Buffers.SequenceReader` has been added which can be used as a reader for `ReadOnlySequence<T>`. This allows easy, high performance, low allocation parsing of `System.IO.Pipelines` data that can cross multiple backing buffers. 
 

@@ -1,11 +1,13 @@
 ---
-title: Machine learning glossary
-description: A glossary of machine learning terms.
+title: Machine learning glossary - ML.NET | Microsoft Docs
+description: A glossary of important machine learning terms that are useful as you build your custom models in ML.NET.
+ms.custom: seodec18
+ms.manager: cgronlun
 ms.date: 05/31/2018
 ---
-# Machine learning glossary
+# Machine learning glossary of important terms
 
-The following list is a compilation of important machine learning terms that are useful as you build your custom models.
+The following list is a compilation of important machine learning terms that are useful as you build your custom models in ML.NET.
 
 ## Accuracy
 

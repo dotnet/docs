@@ -731,7 +731,7 @@
 
 The `GetAllocatedBytesForCurrentThread` method returns the total number of bytes allocated on the managed heap during the lifetime of a thread, not the total number of bytes that have survived garbage collection. The returned value also does not include any native allocations.
 
-This method is most useful in monitoring scenarious for measuring the difference in memory allocation between time intervals or events.
+This method is most useful in monitoring scenarios for measuring the difference in memory allocation between time intervals or events.
 
        ]]></format>
         </remarks>

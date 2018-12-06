@@ -1,6 +1,6 @@
 ---
 title: "Anchors in .NET Regular Expressions"
-description: Learn to use anchors in regular expression patterns.
+description: Learn how to use anchors in regular expression patterns.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

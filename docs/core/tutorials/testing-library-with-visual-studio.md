@@ -1,13 +1,13 @@
 ---
 title: Testing a class library with .NET Core in Visual Studio 2017
-description: Learn how to test a class library written in C# using Visual Studio 2017
+description: Create a unit test project for your .NET Core class library. Verify that your .NET Core class library works correctly with unit tests.
 author: BillWagner
 ms.author: wiwagn
 ms.date: 08/07/2017
 dev_langs: 
   - "csharp"
   - "vb"
-ms.custom: vs-dotnet
+ms.custom: vs-dotnet, seodoc18
 ---
 # Testing a class library with .NET Core in Visual Studio 2017
 

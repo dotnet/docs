@@ -1,11 +1,11 @@
 ---
 title: .NET Core Application Deployment
-description: Deploying a .NET Core application.
+description: Learn about the ways to deploy a .NET Core application.
 author: rpetrusha
 ms.author: ronpet
 ms.date: 12/03/2018
+ms.custom: seodec18
 ---
-
 # .NET Core application deployment
 
 You can create three types of deployments for .NET Core applications:

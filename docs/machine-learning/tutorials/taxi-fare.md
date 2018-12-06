@@ -5,7 +5,7 @@ author: aditidugar
 ms.author: johalex
 ms.date: 11/06/2018
 ms.topic: tutorial
-ms.custom: mvc
+ms.custom: mvc, seodec18
 #Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict New York taxi fares.
 ---
 # Tutorial: Predict New York taxi fares using a regression learner with ML.NET

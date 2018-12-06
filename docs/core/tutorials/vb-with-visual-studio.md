@@ -6,9 +6,7 @@ ms.author: ronpet
 ms.date: 08/07/2017
 dev_langs: 
   - "vb"
-ms.custom: 
-  - vs-dotnet
-  - seodec18
+ms.custom: "vs-dotnet, seodec18"
 ---
 # Build a .NET Core Visual Basic Hello World application in Visual Studio 2017
 

@@ -3,7 +3,7 @@ title: Hosting .NET Core
 description: Hosting the .NET Core runtime from native code
 author: mjrousos
 ms.author: mairaw
-ms.date: 2/3/2017
+ms.date: 02/03/2017
 ---
 # Hosting .NET Core
 

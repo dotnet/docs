@@ -140,6 +140,7 @@ The following table shows the order of precedence of operators and other express
 |`.`|Left|
 |`f(x)`|Left|
 |`f<`*types*`>`|Left|
+
 F# supports custom operator overloading. This means that you can define your own operators. In the previous table, *op* can be any valid (possibly empty) sequence of operator characters, either built-in or user-defined. Thus, you can use this table to determine what sequence of characters to use for a custom operator to achieve the desired level of precedence. Leading `.` characters are ignored when the compiler determines precedence.
 
 ## See also

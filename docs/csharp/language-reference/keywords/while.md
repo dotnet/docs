@@ -10,7 +10,7 @@ ms.assetid: 72a0765c-6852-4aca-b327-4a11cb7f5c59
 ---
 # while (C# Reference)
 
-The `while` statement executes a statement or a block of statements while a specified boolean expression evaluates to `true`. Because that expression is evaluated before each execution of the loop, a `while` loop executes zero or more times. This differs from the [do](do.md) loop, which executes one or more times.
+The `while` statement executes a statement or a block of statements while a specified Boolean expression evaluates to `true`. Because that expression is evaluated before each execution of the loop, a `while` loop executes zero or more times. This differs from the [do](do.md) loop, which executes one or more times.
 
 At any point within the `while` statement block, you can break out of the loop by using the [break](break.md) statement.
 

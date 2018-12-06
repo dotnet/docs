@@ -1,6 +1,6 @@
 ---
 title: "Protected Members"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "members [.NET Framework], protected"
@@ -10,8 +10,7 @@ helpviewer_keywords:
   - "unsealed classes"
   - "customizing class behavior"
 ms.assetid: aa0b58ee-3956-494d-ab48-471ae5db8740
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Protected Members
 Protected members by themselves do not provide any extensibility, but they can make extensibility through subclassing more powerful. They can be used to expose advanced customization options without unnecessarily complicating the main public interface.  

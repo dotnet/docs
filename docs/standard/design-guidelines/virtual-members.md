@@ -1,14 +1,13 @@
 ---
 title: "Virtual Members"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "overridable members"
   - "virtual members"
   - "members [.NET Framework], virtual"
 ms.assetid: 8ff4eb97-0364-43ec-8a02-934b5cd94d19
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Virtual Members
 Virtual members can be overridden, thus changing the behavior of the subclass. They are quite similar to callbacks in terms of the extensibility they provide, but they are better in terms of execution performance and memory consumption. Also, virtual members feel more natural in scenarios that require creating a special kind of an existing type (specialization).  

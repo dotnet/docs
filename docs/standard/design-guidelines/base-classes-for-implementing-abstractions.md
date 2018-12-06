@@ -1,13 +1,12 @@
 ---
 title: "Base Classes for Implementing Abstractions"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "abstractions [.NET Framework]"
   - "base classes, abstractions"
 ms.assetid: 37a2d9a4-9721-482a-a40f-eee2c1d97875
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Base Classes for Implementing Abstractions
 Strictly speaking, a class becomes a base class when another class is derived from it. For the purpose of this section, however, a base class is a class designed mainly to provide a common abstraction or for other classes to reuse some default implementation though inheritance. Base classes usually sit in the middle of inheritance hierarchies, between an abstraction at the root of a hierarchy and several custom implementations at the bottom.  

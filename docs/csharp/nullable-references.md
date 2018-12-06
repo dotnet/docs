@@ -5,7 +5,7 @@ ms.date: 12/03/2018
 ---
 # Nullable reference types
 
-C# 8 introduces **nullable reference types** and **non-nullable reference types** that enable you to make important statements about the properties for reference type variables:
+C# 8.0 introduces **nullable reference types** and **non-nullable reference types** that enable you to make important statements about the properties for reference type variables:
 
 - **A reference is not supposed to be null**. When variables aren't supposed to be null, the compiler enforces rules that ensure it is safe to dereference these variables without first checking that it isn't null:
   - The variable must be initialized to a non-null value.
@@ -57,21 +57,21 @@ The behavior is the same as previous versions of C#.
 
 The compiler uses the following rules in an enabled nullable context:
 
-- Any variable of a reference type is a **non-nullable reference type**.
+- Any variable of a reference type is a **non-nullable reference**.
 - Any non-nullable reference may be dereferenced safely.
-- Any nullable reference type (noted by `?` after the type in the variable declaration) may be null, and must be verified as not null before it can be dereferenced.
+- Any nullable reference type (noted by `?` after the type in the variable declaration) may be null. Static analysis determines if the value is known to be non-null when it is dereferenced. If not, the compiler warns you.
 - You can use the null-forgiving operator to declare that a nullable reference isn't null.
 
 A richer grammar is proposed for nullable contexts and will be available in future previews. For more information about nullable contexts, see the [nullable reference specification](https://github.com/dotnet/csharplang/blob/master/proposals/nullable-reference-types-specification.md#nullable-contexts) draft.
 
-## Safely reference types by specifying nullable and non-nullable
+## Null states of nullable references
 
 The compiler uses static analysis to determine the **null state** of any nullable reference. The null state is either **not null** or **maybe null**. If you dereference a nullable reference when the compiler has determined it's **maybe null**, the compiler warns you. The state of a nullable reference is **maybe null** unless the compiler can determine one of two conditions:
 
 1. The variable has been definitely assigned to a non-null value.
 1. The variable has been checked against null before de-referencing it.
 
-The compiler enforces that non-nullable references may never be set to the null value. You must initialize them to a non-null value. If you don't, the compiler warns that a non-nullable reference wasn't initialized. The compiler also warns you whenever you assign a non-nullable reference to a value that **maybe null**. That implies you can only assign a non-nullable reference to a nullable reference if that nullable reference is **not null**.
+The compiler enforces that non-nullable references may never be set to the null value. You must initialize them to a non-null value. If you don't, the compiler warns that a non-nullable reference wasn't initialized. The compiler also warns you whenever you assign a non-nullable reference to a nullable reference that **may be null**. That implies you can only assign a non-nullable reference to a nullable reference if that nullable reference is **not null**.
 
 ## Learn more
 

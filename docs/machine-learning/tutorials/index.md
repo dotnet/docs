@@ -1,10 +1,10 @@
 ---
-title: Machine Learning tutorials - ML.NET 
+title:  .NET Machine learning tutorials - ML.NET
 description: Explore the ML.NET tutorials to learn how to build custom AI solutions and integrate them into your .NET applications.
 ms.custom: seodec18
 ms.date: 11/06/2018
 ---
-# Machine Learning tutorials - ML.NET
+# .NET Machine learning tutorials - ML.NET
 
 The following tutorials enable you to understand how to use [ML.NET](../index.md) to build custom machine learning solutions and integrate them into your .NET applications:
 

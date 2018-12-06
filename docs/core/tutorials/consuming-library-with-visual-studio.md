@@ -1,13 +1,13 @@
 ---
 title: Consuming a .NET Standard library in Visual Studio 2017
-description: Learn how to call the members in a class library with Visual Studio 2017.
+description: Build a .NET Core application that calls members of another class library with Visual Studio 2017.
 author: BillWagner
 ms.author: wiwagn
 ms.date: 06/05/2018
 dev_langs: 
   - "csharp"
   - "vb"
-ms.custom: vs-dotnet
+ms.custom: "vs-dotnet, seodec18"
 ---
 
 # Consuming a .NET Standard library in Visual Studio 2017
@@ -52,7 +52,7 @@ Just as you included unit tests in the same solution as your class library, you 
 1. If necessary, change the toolbar to compile the **Debug** release of the `ShowCase` project. Compile and run the program by selecting the green arrow on the **ShowCase** button.
 
    ![Image](./media/consuming-library-with-visual-studio/toolbar.png)
-# [Visual Basic](#tab/visual-basic)
+# [Visual Basic](#tab/vb)
 1. Open the `ClassLibraryProjects` solution you created in the [Building a class Library with Visual Basic and .NET Core in Visual Studio 2017](vb-library-with-visual-studio.md) topic. In **Solution Explorer**, right-click the **ClassLibraryProjects** solution and select **Add** > **New Project** from the context menu.
 
 1. In the **Add New Project** dialog, expand the **Visual Basic** node and select the **.NET Core** node followed by the **Console App (.NET Core)** project template. In the **Name** text box, type "ShowCase", and select the **OK** button.

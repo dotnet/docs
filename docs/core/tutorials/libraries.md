@@ -1,9 +1,10 @@
 ---
 title: Developing Libraries with Cross Platform Tools
-description: Learn how to create libraries for .NET using .NET Core CLI tools.
+description: Learn how to create .NET Core libraries using the .NET Core CLI tools. You'll create a library that supports multiple frameworks.
 author: cartermp
 ms.author: mairaw
 ms.date: 05/01/2017
+ms.custom: seodec18
 ---
 # Developing Libraries with Cross Platform Tools
 
@@ -13,9 +14,9 @@ This article covers how to write libraries for .NET using cross-platform CLI too
 
 You need [the .NET Core SDK and CLI](https://www.microsoft.com/net/core) installed on your machine.
 
-For the sections of this document dealing with .NET Framework versions, you need the [.NET Framework](http://getdotnet.azurewebsites.net/) installed on a Windows machine.
+For the sections of this document dealing with .NET Framework versions, you need the [.NET Framework](https://dotnet.microsoft.com) installed on a Windows machine.
 
-Additionally, if you wish to support older .NET Framework targets, you need to install targeting/developer packs for older framework versions from the [.NET target platforms page](http://getdotnet.azurewebsites.net/target-dotnet-platforms.html). Refer to this table:
+Additionally, if you wish to support older .NET Framework targets, you need to install targeting/developer packs for older framework versions from the [.NET download archives page](https://dotnet.microsoft.com/download/archives). Refer to this table:
 
 | .NET Framework Version | What to download                                       |
 | ---------------------- | ------------------------------------------------------ |

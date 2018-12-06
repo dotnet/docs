@@ -107,10 +107,10 @@
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
 ### [Self-contained deployment runtime roll forward](core/deploying/runtime-patch-selection.md)
 ### [Runtime package store](core/deploying/runtime-store.md)
-## [Docker](core/docker/index.md)
+## Docker
 ### [Introduction to .NET and Docker](core/docker/intro-net-docker.md)
-### [Learn Docker Basics with .NET Core](core/docker/docker-basics-dotnet-core.md)
-### [Building Docker Images for .NET Core Applications](core/docker/building-net-docker-images.md)
+### [Containerize a .NET Core app](core/docker/docker-basics-dotnet-core.md)
+### [Work with Docker base images](core/docker/building-net-docker-images.md)
 ### [Visual Studio Tools for Docker](/aspnet/core/publishing/visual-studio-tools-for-docker)
 ## [Unit Testing](core/testing/index.md)
 ### [Unit testing best practices](core/testing/unit-testing-best-practices.md)

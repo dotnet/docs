@@ -4,7 +4,7 @@ description: This article provides an introduction and overview to Docker in the
 author: jralexander
 ms.author: johalex
 ms.date: 11/06/2017
-ms.custom: "mvc", "seodec18"
+ms.custom: "mvc, seodec18"
 ---
 
 # Introduction to .NET and Docker

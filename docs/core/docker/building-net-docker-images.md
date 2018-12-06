@@ -5,7 +5,7 @@ author: jralexander
 ms.author: johalex
 ms.date: 11/06/2017
 ms.topic: tutorial
-ms.custom: "mvc", "seodec18"
+ms.custom: "mvc, seodec18"
 ---
 
 # Learn about Docker images for .NET Core

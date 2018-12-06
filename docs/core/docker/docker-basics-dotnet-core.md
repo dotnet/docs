@@ -3,7 +3,7 @@ title: Containerize an app with Docker - .NET Core
 description: This tutorial teaches how to create a basic .NET Core application and containerize it with Docker.
 ms.date: 10/11/2018
 ms.topic: tutorial
-ms.custom: "mvc", "seodec18"
+ms.custom: "mvc, seodec18"
 ---
 
 # How to containerize a .NET Core application

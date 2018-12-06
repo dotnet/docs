@@ -7,7 +7,9 @@ ms.date: 08/07/2017
 dev_langs: 
   - "csharp"
   - "vb"
-ms.custom: vs-dotnet, seodoc18
+ms.custom: 
+  - vs-dotnet
+  - seodoc18
 ---
 # Testing a class library with .NET Core in Visual Studio 2017
 

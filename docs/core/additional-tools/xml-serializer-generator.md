@@ -5,7 +5,7 @@ author: mlacouture
 ms.author: johalex
 ms.date: 01/19/2017
 ms.topic: tutorial
-ms.custom: "mvc", "seodec18"
+ms.custom: "mvc, seodec18"
 ---
 # Using Microsoft XML Serializer Generator on .NET Core
 

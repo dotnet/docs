@@ -4,7 +4,7 @@ description: An overview of the Microsoft WCF Web Service Reference Provider Too
 author: mlacouture
 ms.author: johalex
 ms.date: 04/19/2018
-ms.custom: "mvc", "seodec18"
+ms.custom: "mvc, seodec18"
 ---
 
 # Use the WCF Web Service Reference Provider Tool

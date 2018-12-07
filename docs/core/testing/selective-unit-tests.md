@@ -1,9 +1,10 @@
 ---
-title: Running selective unit tests
+title: Running selective unit tests - .NET Core
 description: Shows you how to use a filter expression to run selective unit tests with the dotnet test command.
 author: smadala
 ms.author: mairaw
 ms.date: 03/22/2017
+ms.custom: seodec18
 ---
 # Running selective unit tests
 

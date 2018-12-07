@@ -78,6 +78,7 @@
 ## [Linux Prerequisites](core/linux-prerequisites.md)
 ## [What's new in .NET Core](core/whats-new/index.md)
 ### [What's new in .NET Core 3.0](core/whats-new/dotnet-core-3-0.md)
+### [What's new in .NET Core 2.2](core/whats-new/dotnet-core-2-2.md)
 ### [What's new in .NET Core 2.1](core/whats-new/dotnet-core-2-1.md)
 ### [What's new in .NET Core 2.0](core/whats-new/dotnet-core-2-0.md)
 ## [Tutorials](core/tutorials/index.md)

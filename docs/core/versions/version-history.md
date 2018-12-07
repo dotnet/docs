@@ -1,5 +1,5 @@
 ---
-title: How versioning the SDK changed - .NET Core
+title: How versioning the .NET Core SDK changed
 description: This article describes how versioning of the .NET Core SDK and Runtime changed in the v2.1 timeframe.
 ms.date: 07/26/2018
 ms.custom: "seodec18"

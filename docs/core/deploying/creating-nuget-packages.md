@@ -66,4 +66,4 @@ It is important to note that at no point is the `dotnet publish` command involve
 
 ## See also
 
-- [Quickstart: Create and publish a package](~/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli)
+- [Quickstart: Create and publish a package](/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli)

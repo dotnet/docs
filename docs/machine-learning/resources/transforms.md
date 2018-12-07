@@ -102,7 +102,6 @@ The following tables contain information about all of the data transforms suppor
 | --- | --- |
 | <xref:Microsoft.ML.Legacy.Transforms.ColumnConcatenator> | Concatenates two columns of the same item type. |
 | <xref:Microsoft.ML.Legacy.Transforms.ColumnCopier> | Duplicates columns from the dataset.|
-| <xref:Microsoft.ML.Legacy.Transforms.ColumnDropper> | Drops columns from the dataset. |
 | <xref:Microsoft.ML.Legacy.Transforms.ColumnSelector> | Selects a set of columns, dropping all others. |
 | <xref:Microsoft.ML.Legacy.Transforms.ColumnTypeConverter> | Converts a column to a different type, using standard conversions. |
 | <xref:Microsoft.ML.Legacy.Transforms.KeyToTextConverter> | KeyToValueTransform utilizes KeyValues metadata to map key indices to the corresponding values in the KeyValues metadata. |

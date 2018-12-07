@@ -1,14 +1,14 @@
 ---
-title: Analyze dependencies to port to .NET Core
-description: Learn how to analyze third-party dependencies in order to port your project from .NET Framework to .NET Core.
+title: Analyze dependencies to port code to .NET Core
+description: Learn how to analyze external dependencies in order to port your project from .NET Framework to .NET Core.
 author: cartermp
 ms.author: mairaw
 ms.date: 12/04/2018
 ms.custom: seodec18
 ---
-# Analyze your third-party dependencies to port code to .NET Core
+# Analyze your dependencies to port code to .NET Core
 
-To port your code to .NET Core or .NET Standard, you must understand your third-party dependencies. Third-party dependencies are the [NuGet packages](#analyze-referenced-nuget-packages-on-your-project) or [DLLs](#analyze-dependencies-that-arent-nuget-packages) you reference in your project. Evaluate each dependency and develop a contingency plan for the ones that aren't compatible with .NET Core. Here's how to determine if a dependency is compatible with .NET Core.
+To port your code to .NET Core or .NET Standard, you must understand your dependencies. External dependencies are the [NuGet packages](#analyze-referenced-nuget-packages-on-your-project) or [DLLs](#analyze-dependencies-that-arent-nuget-packages) you reference in your project, but that you don't build. Evaluate each dependency and develop a contingency plan for the ones that aren't compatible with .NET Core. Here's how to determine if a dependency is compatible with .NET Core.
 
 ## Analyze referenced NuGet packages in your projects
 

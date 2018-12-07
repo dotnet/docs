@@ -8,7 +8,7 @@ ms.custom: seodec18
 ---
 # Port your code from .NET Framework to .NET Core
 
-If you've got code that runs on the .NET Framework, you may be interested in running your code on .NET Core for its cross-platform capabilities. Here's an overview of the porting process and a list of the tools you may find helpful when porting to .NET Core.
+If you've got code that runs on the .NET Framework, you may be interested in running your code on .NET Core, too. Here's an overview of the porting process and a list of the tools you may find helpful when porting your code to .NET Core.
 
 ## Overview of the porting process
 

@@ -3,7 +3,7 @@ title: Organizing your project to support .NET Framework and .NET Core
 description: Help for project owners who want to compile their solution against .NET Framework and .NET Core side-by-side.
 author: conniey
 ms.author: mairaw
-ms.date: 04/06/2017
+ms.date: 12/07/2018
 ---
 # Organizing your project to support .NET Framework and .NET Core
 
@@ -78,3 +78,6 @@ Changes to note are:
 
 [option-csproj]: #replace-existing-projects-with-a-multi-targeted-net-core-project
 [option-csproj-folder]: #keep-existing-projects-and-create-a-net-core-project
+
+>[!div class="step-by-step"]
+>[Next](tools.md)

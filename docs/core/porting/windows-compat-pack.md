@@ -1,11 +1,11 @@
 ---
-title: Porting to .NET Core - Using the Windows Compatibility Pack
+title: Porting to .NET Core - Using the Windows Compatibility Pack for .NET Core
 description: Learn about the Windows Compatibility Pack and how can you use it to port existing .NET Framework code to .NET Core
 author: terrajobst
 ms.author: mairaw
-ms.date: 11/13/2017
+ms.date: 12/07/2018
 ---
-# Using the Windows Compatibility Pack
+# Using the Windows Compatibility Pack for .NET Core
 
 One of the most common issues that developers face when porting their existing
 code to .NET Core is that they depend on APIs and technologies that only exist
@@ -92,4 +92,3 @@ For more information, see the [spec of the compatibility pack](https://github.co
     ```
 
 For a demo, check out the [Channel 9 video of the Windows Compatibility Pack](https://channel9.msdn.com/Events/Connect/2017/T123).
-

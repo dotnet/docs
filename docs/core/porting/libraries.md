@@ -1,5 +1,5 @@
 ---
-title: Porting to .NET Core - Libraries
+title: "Porting to .NET Core: Libraries"
 description: Learn how to port library projects from the .NET Framework to .NET Core.
 author: cartermp
 ms.author: mairaw

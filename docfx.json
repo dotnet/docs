@@ -102,7 +102,7 @@
         "enable_uhf_ppe"
       ]
     },
-    "fileMetadata": {
+    "fileMetadata": {      
       "feedback_system": {
         "docs/standard/design-guidelines/**/**.md": "None"
       },
@@ -201,6 +201,10 @@
         "docs/standard/serverless-architecture/**/**.md": "dotnet-ebooks",
         "docs/standard/security/**/**.md": "dotnet-security",
         "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics"
+      },
+      "titleSuffix": {
+        "docs/core/tools/**/**.md": ".NET Core CLI",
+        "docs/core/!(tools)/**/*.md": ".NET Core"
       }
     },
     "dest": "_site",

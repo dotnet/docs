@@ -1,5 +1,5 @@
 ---
-title: dotnet run command - .NET Core CLI
+title: dotnet run command
 description: The dotnet run command provides a convenient option to run your application from the source code.
 author: mairaw
 ms.author: mairaw

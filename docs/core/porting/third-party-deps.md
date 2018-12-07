@@ -1,5 +1,5 @@
 ---
-title: Porting to .NET Core - Analyze your third-party dependencies
+title: "Porting to .NET Core: Analyze your third-party dependencies"
 description: Learn how to analyze third-party dependencies in order to port your project from .NET Framework to .NET Core.
 author: cartermp
 ms.author: mairaw

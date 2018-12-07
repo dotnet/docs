@@ -2,8 +2,8 @@
 title: project.json and csproj comparison
 description: See a mapping between project.json and csproj elements.
 author: natemcmaster
-ms.author: mairaw
 ms.date: 03/13/2017
+ms.custom: "seodec18"
 ---
 # A mapping between project.json and csproj properties
 

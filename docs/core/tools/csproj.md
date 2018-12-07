@@ -2,7 +2,6 @@
 title: Additions to the csproj format for .NET Core
 description: Learn about the differences between existing and .NET Core csproj files
 author: blackdwarf
-ms.author: mairaw
 ms.date: 09/22/2017
 ---
 # Additions to the csproj format for .NET Core

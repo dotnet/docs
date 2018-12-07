@@ -1,9 +1,8 @@
 ---
 title: dotnet remove reference command
 description: The dotnet remove reference command provides a convenient option to remove project to project references.
-author: mairaw
-ms.author: mairaw
 ms.date: 05/29/2018
+ms.custom: "seodec18"
 ---
 # dotnet remove reference
 

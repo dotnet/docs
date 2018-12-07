@@ -2,7 +2,6 @@
 title: .NET Core distribution packaging
 description: Learn how to package, name, and version .NET Core for distribution.
 author: bleroy
-ms.author: mairaw
 ms.date: 06/28/2017
 ms.custom: "seodec18"
 ---

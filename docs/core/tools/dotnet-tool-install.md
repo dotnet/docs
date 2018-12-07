@@ -1,9 +1,8 @@
 ---
 title: dotnet tool install command
 description: The dotnet tool install command installs the specified .NET Core Global Tool on your machine.
-author: mairaw
-ms.author: mairaw
 ms.date: 05/29/2018
+ms.custom: "seodec18"
 ---
 # dotnet tool install
 

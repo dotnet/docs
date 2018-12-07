@@ -25,20 +25,20 @@ Let's get started with a simple "Hello World" program on .NET Core:
     * Click on the Explorer icon on the left menu and then click **Open Folder**.
     * Select **File** > **Open Folder** from the main menu to open the folder you want your C# project to be in and click **Select Folder**. For our example, we're creating a folder for our project named *HelloWorld*.
 
-      ![VSCodeOpenFolder](media/with-visual-studio-code/vscodeopenfolder.png)
+      ![Visual Studio Code open folder](media/with-visual-studio-code/vs-code-open-folder.png)
 
 2. Initialize a C# project:
     * Open the Integrated Terminal from Visual Studio Code by selecting **View** > **Integrated Terminal** from the main menu.
     * In the terminal window, type `dotnet new console`.
     * This command creates a `Program.cs` file in your folder with a simple "Hello World" program already written, along with a C# project file named `HelloWorld.csproj`.
 
-      ![The dotnet new command](media/with-visual-studio-code/dotnetnew.png)
+      ![The dotnet new command](media/with-visual-studio-code/dotnet-new-command.png)
 
 3. Resolve the build assets:
 
     * For **.NET Core 1.x**, type `dotnet restore`. Running `dotnet restore` gives you access to the  required .NET Core packages that are needed to build your project.
 
-      ![The dotnet restore command](media/with-visual-studio-code/dotnetrestore.png)
+      ![The dotnet restore command](media/with-visual-studio-code/dotnet-restore-command.png)
 
       [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
@@ -46,7 +46,7 @@ Let's get started with a simple "Hello World" program on .NET Core:
 
     * Type `dotnet run`.
 
-      ![The dotnet run command](media/with-visual-studio-code/dotnetrun.png)
+      ![The dotnet run command](media/with-visual-studio-code/dotnet-run-command.png)
 
 You can also watch a short video tutorial for further setup help on [Windows](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core), [macOS](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core-on-MacOS), or [Linux](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-Csharp-dotnet-Core-Ubuntu).
 
@@ -54,7 +54,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
 1. Open *Program.cs* by clicking on it. The first time you open a C# file in Visual Studio Code, [OmniSharp](https://www.omnisharp.net/) loads in the editor.
 
-    ![Open the Program.cs file](media/with-visual-studio-code/opencs.png)
+    ![Open the Program.cs file](media/with-visual-studio-code/open-program-cs.png)
 
 2. Visual Studio Code should prompt you to add the missing assets to build and debug your app. Select **Yes**.
 
@@ -62,22 +62,22 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
 3. To open the Debug view, click on the Debugging icon on the left side menu.
 
-    ![Open the Debug tab](media/with-visual-studio-code/opendebug.png)
+    ![Open the Debug tab in Visual Studio Codee](media/with-visual-studio-code/open-debug-tab.png)
 
 4. Locate the green arrow at the top of the pane. Make sure the drop-down next to it has `.NET Core Launch (console)` selected.
 
-    ![Selecting .NET Core](media/with-visual-studio-code/selectcore.png)
+    ![Selecting .NET Core in Visual Studio Code](media/with-visual-studio-code/select-net-core.png)
 
 5. Add a breakpoint to your project by clicking on the **editor margin**, which is the space on the left of the line numbers in the editor, next to line 9, or move the text cursor onto line 9 in the editor and  press <kbd>F9</kbd>.
 
-    ![Setting a Breakpoint](media/with-visual-studio-code/setbreakpoint.png)
+    ![Setting a Breakpoint](media/with-visual-studio-code/set-breakpoint-vs-code.png)
 
 6. To start debugging, select <kbd>F5</kbd> or the green arrow. The debugger stops execution of your program when it reaches the breakpoint you set in the previous step.
     * While debugging, you can view your local variables in the top left pane or use the debug console.
 
 7. Select the blue arrow at the top to continue debugging, or select the red square at the top to stop.
 
-    ![Run and Debug](media/with-visual-studio-code/rundebug.png)
+    ![Run and Debug in Visual Studio Code](media/with-visual-studio-code/run-debug-vs-code.png)
 
 > [!TIP]
 > For more information and troubleshooting tips on .NET Core debugging with OmniSharp in Visual Studio Code, see [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).

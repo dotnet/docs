@@ -1,13 +1,15 @@
 ---
 title: Testing a class library with .NET Core in Visual Studio 2017
-description: Learn how to test a class library written in C# using Visual Studio 2017
+description: Create a unit test project for your .NET Core class library. Verify that your .NET Core class library works correctly with unit tests.
 author: BillWagner
 ms.author: wiwagn
 ms.date: 08/07/2017
 dev_langs: 
   - "csharp"
   - "vb"
-ms.custom: vs-dotnet
+ms.custom: 
+  - vs-dotnet
+  - seodoc18
 ---
 # Testing a class library with .NET Core in Visual Studio 2017
 
@@ -46,7 +48,7 @@ To create the unit test project, do the following:
 1. In the **Reference Manager** dialog, expand the **Projects** node and check the box next to **StringLibrary**. Adding a reference to the `StringLibrary` assembly allows the compiler to find **StringLibrary** methods. Select the **OK** button. This adds a reference to your class library project, `StringLibrary`.
 
    ![Reference manager](./media/testing-library-with-visual-studio/referencemanager.png)
-# [Visual Basic](#tab/visual-basic) 
+# [Visual Basic](#tab/vb) 
 1. In **Solution Explorer**, open the context menu for the **ClassLibraryProjects** solution node and select **Add** > **New Project**.
 
 1. In the **Add New Project** dialog, select the **Visual Basic** node. Then select the **.NET Core** node followed by the **MSTest Test Project (.NET Core)** project template. In the **Name** text box, enter "StringLibraryTest" as the name of the project. Select **OK** to create the unit test project.
@@ -110,7 +112,7 @@ To create the test methods:
 1. On the menu bar, select **File** > **Save UnitTest1.cs As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
 
    ![Save File As dialog](./media/testing-library-with-visual-studio/savefileas.png)
-# [Visual Basic](#tab/visual-basic) 
+# [Visual Basic](#tab/vb) 
 1. In the *UnitTest1.vb* code window, replace the code with the following code:
 
     [!CODE-vb[Test#1](../../../samples/snippets/core/tutorials/vb-library-with-visual-studio/testlib.vb)]

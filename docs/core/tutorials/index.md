@@ -4,8 +4,9 @@ description: Follow tutorials for learning .NET Core to build apps and libraries
 author: richlander
 ms.author: mairaw
 ms.date: 03/16/2017
+ms.custom: seodec18
 ---
-# .NET Core Tutorials
+# Learn .NET Core and the .NET Core SDK tools by exploring these Tutorials
 
 The following tutorials are available for learning about .NET Core.
 

@@ -1,11 +1,12 @@
 ---
-title: Hosting .NET Core
-description: Hosting the .NET Core runtime from native code
+title: Write a custom .NET Core runtime host
+description: Learn to host the .NET Core runtime from native code to support advanced scenarios that require controlling how the .NET Core runtime works.
 author: mjrousos
 ms.author: mairaw
-ms.date: 2/3/2017
+ms.date: 02/03/2017
+ms.custom: seodec18
 ---
-# Hosting .NET Core
+# Write a custom .NET Core host to control the .NET runtime from your native code
 
 Like all managed code, .NET Core applications are executed by a host. The host is responsible for starting the runtime (including components like the JIT and garbage collector), creating AppDomains, and invoking managed entry points.
 

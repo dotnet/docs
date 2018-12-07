@@ -11,7 +11,7 @@ Over time, as you install updated versions of the .NET Core runtime and SDK, you
 
 Starting with .NET Core 2.1, the .NET CLI has options you can use to list the versions of the SDK and runtime that are installed on your machine.  Use [`dotnet --list-sdks`](../tools/dotnet.md#options) to see the list of SDKs installed on your machine. Use [`dotnet --list-runtimes`](../tools/dotnet.md#options) to see the list of runtimes installed on your machine. The following text shows typical output for Windows, macOS, or Linux:
 
-# [Windows](#tab/Windows)
+# [Windows](#tab/windows)
 
 ```console
 C:\> dotnet --list-sdks
@@ -49,7 +49,7 @@ Microsoft.NETCore.App 2.1.1 [C:\Program Files\dotnet\shared\Microsoft.NETCore.Ap
 Microsoft.NETCore.App 2.1.2 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
 ```
 
-# [Linux](#tab/Linux)
+# [Linux](#tab/linux)
 
 ```console
 $ dotnet --list-sdks
@@ -83,7 +83,7 @@ Microsoft.NETCore.App 2.1.0 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
 Microsoft.NETCore.App 2.1.1 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
 ```
 
-# [macOS](#tab/macOS)
+# [macOS](#tab/macos)
 
 ```console
 $ dotnet --list-sdks
@@ -121,7 +121,7 @@ Microsoft.NETCore.App 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.NETCore.Ap
 
 ## Uninstalling .NET Core
 
-# [Windows](#tab/Windows)
+# [Windows](#tab/windows)
 
 .NET Core uses the Windows **Add/Remove Programs** dialog to remove versions of the .NET Core runtime and SDK. The following figure shows the **Add/Remove Programs** dialog with several versions of the .NET runtime and SDK installed.
 
@@ -129,7 +129,7 @@ Microsoft.NETCore.App 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.NETCore.Ap
 
 Select any versions you want to remove from your machine and click **Uninstall**.
 
-# [Linux](#tab/Linux)
+# [Linux](#tab/linux)
 
 There are more options to uninstall .NET Core (either SDK or runtime) on Linux. The best way for you to uninstall .NET Core is to mirror the action you used to install .NET Core. The specifics depend on your chosen distribution and the installation method.
 
@@ -172,7 +172,7 @@ sudo rm -rf /usr/share/dotnet/host/fxr/1.0.1
 
 The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
 
-# [macOS](#tab/macOS)
+# [macOS](#tab/macos)
 
 On Mac, you must remove the SDKs and runtimes separately, by removing the directory that contains that version. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
 
@@ -184,7 +184,5 @@ sudo rm -rf /usr/local/share/dotnet/host/fxr/1.0.1
 ```
 
 The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
-
-Starting with .NET Core 2.1, there is no need to uninstall the .NET Core SDK when upgrading it using a package manager. The package manager `update` or `refresh` commands will automatically remove the older version upon the successful installation of a newer version.
 
 ---

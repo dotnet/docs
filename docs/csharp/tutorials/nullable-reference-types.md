@@ -18,13 +18,13 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You’ll need to set up your machine to run .NET Core, including the C# 8 beta compiler. The C# 8 beta compiler is available with [Visual Studio 2019 preview 1](https://visualstudio.microsoft.com/vs/preview/), or [.NET Core 3.0 preview 1](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+You’ll need to set up your machine to run .NET Core, including the C# 8.0 beta compiler. The C# 8 beta compiler is available with [Visual Studio 2019 preview 1](https://visualstudio.microsoft.com/vs/preview/), or [.NET Core 3.0 preview 1](https://dotnet.microsoft.com/download/dotnet-core/3.0).
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
 
 ## Incorporate nullable reference types into your designs
 
-In this tutorial, you'll build a library that models running a survey. The code uses both nullable reference types and non-nullable reference types to represent the real-world concepts. The survey questions can never be null. A respondent might prefer not to answer an optional question. The responses might be null in this example.
+In this tutorial, you'll build a library that models running a survey. The code uses both nullable reference types and non-nullable reference types to represent the real-world concepts. The survey questions can never be null. A respondent might prefer not to answer a question. The responses might be null in this case.
 
 The code you'll write for this sample expresses that intent, and the compiler enforces that intent.
 
@@ -46,8 +46,11 @@ You must opt into the **nullable reference types** feature, even in C# 8 project
 
 You can add the preceding pragma anywhere in a source file, and the nullable reference type feature is turned on from that point. The pragma also supports the `disable` argument to turn off the feature.
 
-> [!NOTE]
-> Future previews will build on the `#nullable` pragma to control the feature at a project level. In preview 1, you'll need to add this pragma to every source file.
+You can also turn on **nullable reference types** for an entire project by adding the following element to your .csproj file, for example, immediately following the `LangVersion` element that enabled C# 8.0:
+
+```xml
+<NullableReferenceTypes>true</NullableReferenceTypes>
+```
 
 ### Design the types for the application
 
@@ -59,7 +62,7 @@ This survey application requires creating a number of classes:
 
 These types will make use of both nullable and non-nullable reference types to express which members are required and which members are optional. Nullable reference types communicate that design intent clearly:
 
-- The questions that are part of the survey can never be null: It makes no sense to ask a blank question.
+- The questions that are part of the survey can never be null: It makes no sense to ask an empty question.
 - The respondents can never be null. You'll want to track people you contacted, even respondents that declined to participate.
 - Any response to a question may be null. Respondents can decline to answer some or all questions.
 
@@ -79,7 +82,7 @@ The app you'll build will do the following steps:
 
 ## Build the survey with nullable and non-nullable types
 
-The first code you'll write creates the survey. You'll write classes to model a survey question and a survey run. Your survey has three types of questions, distinguished by the format of the answer: Yes/No answers, number answers, and text answers. Create a `public` `SurveyQuestion` class. Include the `nullable enable` pragma immediately after the `using` statements:
+The first code you'll write creates the survey. You'll write classes to model a survey question and a survey run. Your survey has three types of questions, distinguished by the format of the answer: Yes/No answers, number answers, and text answers. Create a `public` `SurveyQuestion` class. Include the `#nullable enable` pragma immediately after the `using` statements:
 
 ```csharp
 #nullable enable
@@ -118,7 +121,7 @@ Because you haven't initialized `QuestionText`, the compiler issues a warning th
 
 Adding the constructor removes the warning. The constructor argument is also a non-nullable reference type, so the compiler doesn't issue any warnings.
 
-Next, create a `public` class named `SurveyRun`. Include the `nullable enable` pragma following the `using` statements. This class contains a list of `SurveyQuestion` objects and methods to add questions to the survey, as shown in the following code:
+Next, create a `public` class named `SurveyRun`. Include the `#nullable enable` pragma following the `using` statements. This class contains a list of `SurveyQuestion` objects and methods to add questions to the survey, as shown in the following code:
 
 ```csharp
 using System.Collections.Generic;
@@ -157,7 +160,7 @@ Next, write the code that generates answers to the survey. This involves several
 1. Build logic to simulate asking the questions to a respondent and collecting answers or noting that a respondent didn't answer.
 1. Repeat until enough respondents have answered the survey.
 
-You'll need a class to represent a survey response, so add that now. Enable nullable support. Add an `Id` field and a constructor that initializes the ID field, as shown in the following code:
+You'll need a class to represent a survey response, so add that now. Enable nullable support. Add an `Id` property and a constructor that initializes it, as shown in the following code:
 
 ```csharp
 #nullable enable

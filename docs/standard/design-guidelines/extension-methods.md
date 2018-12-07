@@ -1,10 +1,9 @@
 ---
 title: "Extension Methods"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 ms.assetid: 5de945cb-88f4-49d7-b0e6-f098300cf357
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Extension Methods
 Extension methods are a language feature that allows static methods to be called using instance method call syntax. These methods must take at least one parameter, which represents the instance the method is to operate on.  

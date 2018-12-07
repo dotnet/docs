@@ -1,11 +1,12 @@
 ---
-title: Introduction to .NET and Docker
-description: Understanding Docker and .NET Core
+title: Introduction to Docker - .NET Core
+description: This article provides an introduction and overview to Docker in the context of a .NET Core application.
 author: jralexander
 ms.author: johalex
 ms.date: 11/06/2017
-ms.custom: mvc
+ms.custom: "mvc, seodec18"
 ---
+
 # Introduction to .NET and Docker
 
 This article provides an introduction and conceptual background to working with .NET on Docker.

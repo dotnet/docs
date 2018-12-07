@@ -63,7 +63,8 @@ The application or computer configuration file holds the settings that determine
         <sharedListeners>  
           <add name="System.Net"  
             type="System.Diagnostics.TextWriterTraceListener"  
-            initializeData="network.log"  
+            initializeData="network.log"
+            traceOutputOptions="ProcessId, DateTime" 
           />  
         </sharedListeners>  
         <trace autoflush="true"/>  

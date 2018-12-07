@@ -125,6 +125,7 @@ The installer bash script is used in automation scenarios and non-admin installa
 
 If you have problems with a .NET Core installation on a supported Linux distribution/version, consult the following topics for your installed distributions/versions:
 
+* [.NET Core 3.0 known issues](https://github.com/dotnet/core/tree/master/release-notes/3.0)
 * [.NET Core 2.2 known issues](https://github.com/dotnet/core/tree/master/release-notes/2.2)
 * [.NET Core 2.1 known issues](https://github.com/dotnet/core/tree/master/release-notes/2.1)
 * [.NET Core 1.1 known issues](https://github.com/dotnet/core/blob/master/release-notes/1.1)

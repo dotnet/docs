@@ -159,6 +159,8 @@ Specifies a NuGet package source to use during the restore operation. This overr
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
+---
+
 ## Examples
 
 Restore dependencies and tools for the project in the current directory:

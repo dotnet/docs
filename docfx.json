@@ -203,7 +203,7 @@
         "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics"
       },
       "titleSuffix": {
-        "docs/core/!(tools)/**/*.md": ".NET Core",
+        "docs/core/!(tools)/**/**.md": ".NET Core",
         "docs/core/tools/**/**.md": ".NET Core CLI"
       }
     },

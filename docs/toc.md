@@ -129,7 +129,6 @@
 ## [Versioning](core/versions/index.md)
 ### [.NET Core version history](core/versions/version-history.md)
 ### [.NET Core version selection](core/versions/selection.md)
-### [.NET Core installation management](core/versions/install-management.md)
 ### [Removing outdated runtimes and SDKs](core/versions/remove-runtime-sdk-versions.md)
 ## [Runtime IDentifier catalog](core/rid-catalog.md)
 ## [.NET Core SDK Overview](core/sdk.md)

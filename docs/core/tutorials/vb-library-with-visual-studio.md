@@ -25,7 +25,7 @@ Start by creating a solution for your class library project and its related proj
 
 1. In the **New Project** dialog, expand the **Other Project Types** node, and select **Visual Studio Solutions**. Name the solution "ClassLibraryProjects" and select the **OK** button.
 
-   ![Visual Studio create new test project dialog](./media/library-with-visual-studio/create-new-test-project.png)
+   ![Visual Studio create new test project dialog](./media/library-with-visual-studio/new-project-dialog.png)
 
 ## Creating the class library project
 

@@ -15,7 +15,7 @@ In the typical model, services send reports about their status, and that informa
 
 ## Implementing health checks in ASP.NET Core services
 
-When developing an ASP.NET Core microservice or web application, you can use an library named `HealthChecks` from the ASP.NET team (generally as part of ASP.NETCore 2.2). It is available at this [GitHub repo](https://github.com/aspnet/AspNetCore/tree/release/2.2/src/Middleware).
+When developing an ASP.NET Core microservice or web application, you can use a library named `HealthChecks` from the ASP.NET team (generally as part of ASP.NET Core 2.2). The code for it is available at this [GitHub repo](https://github.com/aspnet/AspNetCore/tree/release/2.2/src/Middleware).
 
 This library is easy to use and provides features that let you validate that any specific external resource needed for your application (like a SQL Server database or remote API) is working properly. When you use this library, you can also decide what it means that the resource is healthy, as we explain later.
 

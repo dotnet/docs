@@ -22,11 +22,11 @@ Begin by creating a simple "Hello World" console application. Follow these steps
 
 1. Launch Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the *New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "HelloWorld". Select the **OK** button.
 
-   ![New Project dialog with Console App selected](./media/with-visual-studio/newproject.png)
+   ![New Project dialog with Console App selected](./media/with-visual-studio/visual-studio-new-project.png)
    
 1. Visual Studio uses the template to create your project. The C# Console Application template for .NET Core automatically defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
-   ![Visual Studio and the new HelloWorld project](./media/with-visual-studio/devenv.png)
+   ![Visual Studio and the new HelloWorld project](./media/with-visual-studio/visual-studio-main-window.png)
 
    The template creates a simple "Hello World" application. It calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display the literal string "Hello World!" in the console window. By selecting the **HelloWorld** button with the green arrow on the toolbar, you can run the program in Debug mode. If you do, the console window is visible for only a brief time interval before it closes. This occurs because the `Main` method terminates and the application ends as soon as the single statement in the `Main` method executes.
 
@@ -42,7 +42,7 @@ Begin by creating a simple "Hello World" console application. Follow these steps
 
 1. Run the program by selecting the **HelloWorld** button with the green arrow on the toolbar.
 
-   ![Console window showing Hello World Press any key to continue](./media/with-visual-studio/helloworld1.png)
+   ![Console window showing Hello World Press any key to continue](./media/with-visual-studio/hello-world-console.png)
 
 1. Press any key to close the console window.
 
@@ -56,7 +56,7 @@ Enhance your application to prompt the user for their name and display it along 
 
    This code replaces the existing <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, <xref:System.Console.Write%2A?displayProperty=nameWithType>, and <xref:System.Console.ReadKey%2A?displayProperty=nameWithType> statements.
 
-   ![Visual Studio Program c-sharp file with updated Main method](./media/with-visual-studio/codewindow.png)
+   ![Visual Studio Program c-sharp file with updated Main method](./media/with-visual-studio/visual-csharp-code-window.png)
 
    This code displays "What is your name?" in the console window and waits until the user enters a string followed by the Enter key. It stores this string into a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. Finally, it uses an [interpolated string](../../csharp/language-reference/tokens/interpolated.md) to display these values in the console window.
 
@@ -64,7 +64,7 @@ Enhance your application to prompt the user for their name and display it along 
 
 1. Run the program in Debug mode in Visual Studio by selecting the green arrow on the toolbar, pressing F5, or choosing the **Debug** > **Start Debugging** menu item. Respond to the prompt by entering a name and pressing the Enter key.
 
-   ![Console window with modified program output](./media/with-visual-studio/helloworld2.png)
+   ![Console window with modified program output](./media/with-visual-studio/hello-world-update.png)
 
 1. Press any key to close the console window.
 

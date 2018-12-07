@@ -1,10 +1,10 @@
 ---
-title: .NET Machine learning How-to guides - ML.NET
+title: .NET Machine learning how-to guides - ML.NET
 description: Learn how to do specific tasks to assist with custom AI solutions creation and Machine Learning integration into your .NET applications.
 ms.custom: seodec18
 ms.date: 12/04/2018
 ---
-# .NET Machine learning How-to guides - ML.NET
+# .NET Machine learning how-to guides - ML.NET
 
 In the How to section of the ML.NET Guide, you can find quick answers
 to common questions. In some cases, articles may be listed in multiple sections to make them easy to find.

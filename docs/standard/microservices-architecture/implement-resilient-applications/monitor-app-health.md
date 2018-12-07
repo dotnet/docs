@@ -15,7 +15,7 @@ In the typical model, services send reports about their status, and that informa
 
 ## Implementing health checks in ASP.NET Core services
 
-When developing an ASP.NET Core microservice or web application, you can use an out-of-band library (not official as part of ASP.NETCore) named `HealthChecks` from the ASP.NET team. It is available at this [GitHub repo](https://github.com/dotnet-architecture/HealthChecks).
+When developing an ASP.NET Core microservice or web application, you can use an library named `HealthChecks` from the ASP.NET team (generally as part of ASP.NETCore 2.2). It is available at this [GitHub repo](https://github.com/aspnet/AspNetCore/tree/release/2.2/src/Middleware).
 
 This library is easy to use and provides features that let you validate that any specific external resource needed for your application (like a SQL Server database or remote API) is working properly. When you use this library, you can also decide what it means that the resource is healthy, as we explain later.
 
@@ -25,14 +25,13 @@ In order to use this library, you need to first use the library in your microser
 
 You can see how the HealthChecks library is used in the eShopOnContainers sample application. To begin, you need to define what constitutes a healthy status for each microservice. In the sample application, the microservices are healthy if the microservice API is accessible via HTTP and if its related SQL Server database is also available.
 
-In the future, you will be able to install the HealthChecks library as a NuGet package. But as of this writing, you need to download and compile the code as part of your solution. Clone the code available at https://github.com/dotnet-architecture/HealthChecks and copy the following folders to your solution:
+As of ASP.NET Core 2.2 you can install the HealthChecks library as a NuGet package:
 
-  - src/common
-  - src/Microsoft.AspNetCore.HealthChecks
-  - src/Microsoft.Extensions.HealthChecks
-  - src/Microsoft.Extensions.HealthChecks.SqlServer
+  - Microsoft.AspNetCore.HealthChecks
+  - Microsoft.Extensions.HealthChecks
+  - Microsoft.Extensions.HealthChecks.SqlServer
 
-You could also use additional checks like the ones for Azure (Microsoft.Extensions.HealthChecks.AzureStorage), but since this version of eShopOnContainers does not have any dependency on Azure, you do not need it. You do not need the ASP.NET health checks, because eShopOnContainers is based on ASP.NET Core.
+You could also use additional checks like the ones for Azure (NuGet package Microsoft.Extensions.HealthChecks.AzureStorage), but since this version of eShopOnContainers does not have any dependency on Azure, you do not need it. You do not need the ASP.NET health checks, because eShopOnContainers is based on ASP.NET Core.
 
 Figure 10-6 shows the HealthChecks library in Visual Studio, ready to be used as a building block by any microservices.
 

@@ -107,7 +107,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the content has been written to the stream object passed as the `stream` parameter.  
+ This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after all of the content has been written to the stream object passed as the `stream` parameter.  
   
  ]]></format>
         </remarks>
@@ -148,7 +148,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the content has been written to the stream object passed as the `stream` parameter.  
+ This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after all of the content has been written to the stream object passed as the `stream` parameter.  
   
  ]]></format>
         </remarks>

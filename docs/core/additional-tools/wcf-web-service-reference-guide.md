@@ -1,12 +1,13 @@
 ---
-title: Microsoft WCF Web Service Reference Provider Tool
+title: Add WCF Web Service Reference - .NET Core
 description: An overview of the Microsoft WCF Web Service Reference Provider Tool that adds functionality for .NET Core and ASP.NET Core projects, similar to Add Service Reference for .NET Framework projects.
 author: mlacouture
 ms.author: johalex
 ms.date: 04/19/2018
-ms.custom: mvc
+ms.custom: "mvc, seodec18"
 ---
-# Microsoft WCF Web Service Reference Provider Tool
+
+# Use the WCF Web Service Reference Provider Tool
 
 Over the years, many Visual Studio developers have enjoyed the productivity that the [**Add Service Reference**](/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference) tool provided when their .NET Framework projects needed to access web services.  The **WCF Web Service Reference** tool is a Visual Studio connected service extension that provides an experience like the Add Service Reference functionality for .NET Core and ASP.NET Core projects. This tool retrieves metadata from a web service in the current solution, on a network location, or from a WSDL file, and generates a .NET Core compatible source file containing Windows Communication Foundation (WCF) client proxy code that you can use to access the web service.
 
@@ -31,11 +32,11 @@ Using the **ASP.NET Core Web Application** project template as an example, this 
 
 The **Connected Services** page appears as shown in the following image:
 
-![Connected Services tab](./media/wcf-web-service-reference-guide/wcfcs-ConnectedServicesPage.png)
+![Visual Studio Connected Services tab for .NET Core](./media/wcf-web-service-reference-guide/wcfcs-ConnectedServicesPage.png)
 
 2. On the **Connected Services** page, click **Microsoft WCF Web Service Reference Provider**. This brings up the **Configure WCF Web Service Reference** wizard:
 
-![Service Endpoint tab](./media/wcf-web-service-reference-guide/wcfcs-ServiceEndpointPage.png)
+![Visual Studio Service Endpoint tab for .NET Core](./media/wcf-web-service-reference-guide/wcfcs-ServiceEndpointPage.png)
 
 3. Select a service.
 
@@ -52,7 +53,7 @@ The **Connected Services** page appears as shown in the following image:
 
 4. The **Data Type Options** form enables you to refine the generated service reference configuration settings:
 
-![Data type options tab](./media/wcf-web-service-reference-guide/wcfcs-DataTypesPage.png)
+![Visual Studio Data type options tab for .NET Core](./media/wcf-web-service-reference-guide/wcfcs-DataTypesPage.png)
 
 > [!NOTE]
 > The **Reuse types in referenced assemblies** check box option is useful when data types needed for service reference code generation are defined in one of your project's referenced assemblies.  It's important to reuse those existing data types to avoid compile-time type clash or runtime issues.
@@ -68,7 +69,7 @@ While displaying progress, the tool:
 * Generates the service reference code in a file named *reference.cs*, and adds it to your project under the **Connected Services** node. 
 * Updates the project file (.csproj) with NuGet package references required to compile and run on the target platform.
 
-![Progress window](./media/wcf-web-service-reference-guide/wcfcs-ProgressWindow.png)
+![Visual Studio Progress window](./media/wcf-web-service-reference-guide/wcfcs-ProgressWindow.png)
 
 When these processes complete, you can create an instance of the generated WCF client type and invoke the service operations.
 

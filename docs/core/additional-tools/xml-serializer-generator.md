@@ -1,11 +1,11 @@
 ---
-title: Using Microsoft XML Serializer Generator on .NET Core
-description: An overview of the Microsoft XML Serializer Generator.
+title: "Microsoft XML Serializer Generator - .NET Core"
+description: An overview of the Microsoft XML Serializer Generator. Use the XML Serializer Generator to generate an XML serialization assembly for the types contained in your project.
 author: mlacouture
 ms.author: johalex
 ms.date: 01/19/2017
 ms.topic: tutorial
-ms.custom: mvc
+ms.custom: "mvc, seodec18"
 ---
 # Using Microsoft XML Serializer Generator on .NET Core
 

@@ -1,14 +1,14 @@
 ---
-title: Use ML.NET to predict New York taxi fares (regression)
-description: Learn how to use ML.NET in a regression scenario.
+title: Predict New York taxi fares using a regression learner with ML.NET
+description: Predict fares using a regression learner with ML.NET.
 author: aditidugar
 ms.author: johalex
 ms.date: 11/06/2018
 ms.topic: tutorial
-ms.custom: mvc
+ms.custom: mvc, seodec18
 #Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict New York taxi fares.
 ---
-# Tutorial: Use ML.NET to predict New York taxi fares (regression)
+# Tutorial: Predict New York taxi fares using a regression learner with ML.NET
 
 > [!NOTE]
 > This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, see the [ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
@@ -184,7 +184,7 @@ Add the following code into the `Train` method to add the `FastTreeRegressionTra
 
 ## Train the model
 
-The final step is to train the model. We train the model, <xref:Microsoft.ML.Runtime.Data.TransformerChain>, based on the dataset that has been loaded and transformed. Once the estimator has been defined, we train the model using the <xref:Microsoft.ML.Runtime.Data.EstimatorChain%601.Fit%2A> while providing the already loaded training data. This returns a model to use for predictions. `pipeline.Fit()` trains the pipeline and returns a `Transformer` based on the `DataView` passed in. The experiment is not executed until this happens.
+The final step is to train the model. We train the model, <xref:Microsoft.ML.Data.TransformerChain>, based on the dataset that has been loaded and transformed. Once the estimator has been defined, we train the model using the <xref:Microsoft.ML.Runtime.Data.EstimatorChain%601.Fit%2A> while providing the already loaded training data. This returns a model to use for predictions. `pipeline.Fit()` trains the pipeline and returns a `Transformer` based on the `DataView` passed in. The experiment is not executed until this happens.
 
 [!code-csharp[TrainModel](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#11 "Train the model")]
 
@@ -192,7 +192,7 @@ And that's it! You have successfully trained a machine learning model that can p
 
 ### Save the model
 
-At this point, you have a model of type <xref:Microsoft.ML.Runtime.Data.TransformerChain> that can be integrated into any of your existing or new .NET applications. To save the model to a .zip file, add the following code at the end of the `Train` method:
+At this point, you have a model of type <xref:Microsoft.ML.Data.TransformerChain> that can be integrated into any of your existing or new .NET applications. To save the model to a .zip file, add the following code at the end of the `Train` method:
 
 [!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#12 "Save the model as a .zip file and return the model")]
 
@@ -211,7 +211,7 @@ The `SaveModelAsFile` method executes the following tasks:
 
 * Saves the model as a .zip file.
 
-We need to create a method to save the model so that it can be reused and consumed in other applications. The `ITransformer` has a <xref:Microsoft.ML.Runtime.Data.TransformerChain%601.SaveTo(Microsoft.ML.Runtime.IHostEnvironment,System.IO.Stream)> method that takes in the `_modelPath` global field, and a <xref:System.IO.Stream>. Since we want to save this as a zip file, we'll create the `FileStream` immediately before calling the `SaveTo` method. Add the following code to the `SaveModelAsFile` method as the next line:
+We need to create a method to save the model so that it can be reused and consumed in other applications. The `ITransformer` has a <xref:Microsoft.ML.Data.TransformerChain%601.SaveTo(Microsoft.ML.Runtime.IHostEnvironment,System.IO.Stream)> method that takes in the `_modelPath` global field, and a <xref:System.IO.Stream>. Since we want to save this as a zip file, we'll create the `FileStream` immediately before calling the `SaveTo` method. Add the following code to the `SaveModelAsFile` method as the next line:
 
 [!code-csharp[SaveToMethod](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#13 "Add the SaveTo Method")]
 

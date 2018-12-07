@@ -27,6 +27,7 @@ dotnet restore [<ROOT>] [--configfile] [--disable-parallel] [--ignore-failed-sou
     [--no-dependencies] [--packages] [-r|--runtime] [-s|--source] [-v|--verbosity]
 dotnet restore [-h|--help]
 ```
+
 ---
 
 ## Description

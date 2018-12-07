@@ -46,7 +46,7 @@ Download the [Visual Studio for Mac installer](https://visualstudio.microsoft.co
 
 Run the app in Debug mode using <kbd>F5</kbd> or in Release mode using <kbd>CTRL</kbd>+<kbd>F5</kbd>.
 
-![The Application Output pane shows Hello World!](./media/using-on-mac-vs/vvisual-studio-mac-output.png)
+![The Application Output pane shows Hello World!](./media/using-on-mac-vs/visual-studio-mac-output.png)
 
 ## Next step
 

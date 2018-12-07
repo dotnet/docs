@@ -1,13 +1,17 @@
 ---
-title: How to remove .NET runtime and SDK
-description: Instructions for removing the .NET Core Runtime and SDK components on Windows, Mac, and Linux
+title: Remove the .NET runtime and SDK - .NET Core
+description: This article describes how to determine which versions of the .NET Core Runtime and SDK are currently installed, and then, how to remove them on Windows, Mac, and Linux.
 ms.date: 07/28/2018
 author: billwagner
 ms.author: wiwagn
+ms.custom: "seodec18"
 ---
+
 # How to remove the .NET Core Runtime and SDK
 
 Over time, as you install updated versions of the .NET Core runtime and SDK, you may want to remove outdated versions of .NET Core from your machine. Removing older versions of the runtime may change the runtime chosen to run shared framework applications, as detailed in the article on [.NET Core version selection](selection.md).
+
+## Determine what is installed
 
 Starting with .NET Core 2.1, the .NET CLI has options you can use to list the versions of the SDK and runtime that are installed on your machine.  Use [`dotnet --list-sdks`](../tools/dotnet.md#options) to see the list of SDKs installed on your machine. Use [`dotnet --list-runtimes`](../tools/dotnet.md#options) to see the list of runtimes installed on your machine. The following text shows typical output for Windows, macOS, or Linux:
 

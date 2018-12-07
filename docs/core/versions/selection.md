@@ -1,11 +1,13 @@
 ---
-title: .NET Core version selection
+title: Select which version to use - .NET Core
 description: Learn how .NET Core finds and chooses runtime versions for your program.
 author: billwagner
 ms.author: wiwagn
 ms.date: 06/27/2018
+ms.custom: "seodec18"
 ---
-# .NET Core version selection
+
+# Select the .NET Core version to use
 
 [!INCLUDE [topic-appliesto-net-core-2plus](../../../includes/topic-appliesto-net-core-2plus.md)]
 

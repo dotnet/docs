@@ -1,11 +1,14 @@
 ---
-title: .NET Core versioning
-description: Understand how .NET Core versioning works.
+title: Overview of .NET Core Runtime and SDK versioning - .NET Core
+title: How the Runtime and SDK are versioned - .NET Core
+description: This article teaches you how the .NET Core SDK and Runtime are versioned (similar to semantic versioning).
 author: bleroy
 ms.author: mairaw
 ms.date: 07/26/2018
+ms.custom: "seodec18"
 ---
-# .NET Core versioning
+
+# Overview of how .NET Core is versioned
 
 .NET Core refers to the .NET Core Runtime and the .NET Core SDK, which contains the tools you need to develop applications. .NET Core SDKs are designed to work with any previous version of the .NET Core Runtime. This article explains the runtime and the SDK version strategy. An explanation of version numbers for .NET Standard can be found in the article introducing [.NET Standard](../../standard/net-standard.md#net-implementation-support).
 

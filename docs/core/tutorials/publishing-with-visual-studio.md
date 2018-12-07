@@ -4,7 +4,7 @@ description: Publishing creates the set of files that are needed to run your app
 author: BillWagner
 ms.author: wiwagn
 ms.date: 10/05/2017
-ms.custom: vs-dotnet
+ms.custom: "vs-dotnet, seodec18"
 ---
 # Publish your Hello World application with Visual Studio 2017
 
@@ -18,10 +18,10 @@ To publish and run your application:
 
 1. Right-click on the **HelloWorld** project (not the HelloWorld solution) and select **Publish** from the menu. You can also select **Publish HelloWorld** from the main Visual Studio **Build** menu.
 
-   ![Visual Studio toolbar](media/publishing-with-visual-studio/publish1.png)
+   ![Visual Studio Publish context menu](media/publishing-with-visual-studio/publish1.png)
 
 
-   ![Visual Studio toolbar](media/publishing-with-visual-studio/publishwindow.png)
+   ![Visual Studio Publish window](media/publishing-with-visual-studio/publishwindow.png)
 
 1. Open a console window. For example in the **Type here to search** text box in the Windows taskbar, enter `Command Prompt` (or `cmd` for short), and open a console window by either selecting the **Command Prompt** desktop app or pressing Enter if it's selected in the search results.
 

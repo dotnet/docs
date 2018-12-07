@@ -4,6 +4,7 @@ description: This topic walks you through building a .NET Core solution that inc
 author: guardrex
 ms.author: mairaw
 ms.date: 06/12/2017
+ms.custom: seodec18
 ---
 # Building a complete .NET Core solution on macOS using Visual Studio for Mac
 
@@ -32,7 +33,7 @@ For more information on prerequisites, see the [Prerequisites for .NET Core on M
 
 1. Name the project "TextUtils" (a short name for "Text Utilities") and the solution "WordCounter". Leave **Create a project directory within the solution directory** checked. Select **Create**.
 
-   ![New project dialog](./media/using-on-mac-vs-full-solution/vsmacfull02.png)
+   ![New project dialog options](./media/using-on-mac-vs-full-solution/vsmacfull02.png)
 
 1. In the **Solution** sidebar, expand the `TextUtils` node to reveal the class file provided by the template, *Class1.cs*. Right-click the file, select **Rename** from the context menu, and rename the file to *WordCount.cs*. Open the file and replace the contents with the following code:
 
@@ -142,11 +143,11 @@ Unit tests provide automated software testing during your development and publis
 
 1. Save the file and run the tests again. The casing test passes but the three count tests fail. This is exactly what you expect to happen.
 
-   ![Test failure](./media/using-on-mac-vs-full-solution/vsmacfull11.png)
+   ![Expected test failure](./media/using-on-mac-vs-full-solution/vsmacfull11.png)
 
 1. Modify the `CountInstancesCorrectly` test method by changing `Assert.NotEqual` to `Assert.Equal`. Save the file. Run the tests again. All tests pass.
 
-   ![Test pass](./media/using-on-mac-vs-full-solution/vsmacfull12.png)
+   ![Expected test pass](./media/using-on-mac-vs-full-solution/vsmacfull12.png)
 
 ## Adding a console app
 

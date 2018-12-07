@@ -87,7 +87,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 # [C#](#tab/csharp)
 1. Right-click on the red dot that represents the breakpoint. On the context menu, select **Conditions** to open the **Breakpoint Settings** dialog. Check the box for **Conditions**.
 
-   ![Breakpoint settings panel](./media/debugging-with-visual-studio/breakpointsettings.png)
+   ![Breakpoint settings panel - C#](./media/debugging-with-visual-studio/breakpointsettings.png)
 
 1. For the **Conditional Expression** replace "e.g. x == 5" with the following:
 
@@ -113,7 +113,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
    ? name == String.Empty
    ```
 
-   ![Immediate Window returning a value of true after the statement is executed](./media/debugging-with-visual-studio/emptystring.png)
+   ![Immediate Window returning a value of true after the statement is executed - C#](./media/debugging-with-visual-studio/emptystring.png)
 
 1. Select the **Continue** button on the toolbar to continue program execution.
 
@@ -123,7 +123,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 # [Visual Basic](#tab/vb)
 1. Right-click on the red dot that represents the breakpoint. On the context menu, select **Conditions** to open the **Breakpoint Settings** dialog. Check the box for **Conditions**.
 
-   ![Breakpoint settings panel](./media/debugging-with-visual-studio/vb-breakpointsettings.png)
+   ![Breakpoint settings panel - Visual Basic](./media/debugging-with-visual-studio/vb-breakpointsettings.png)
 
 1. For the **Conditional Expression** replace "e.g. x = 5" with the following:
 
@@ -148,7 +148,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
    ```vb
    ? String.IsNullOrEmpty(name)
    ```
-  ![Immediate Window returning a value of true after the statement is executed](./media/debugging-with-visual-studio/vb-emptystring.png)
+  ![Immediate Window returning a value of true after the statement is executed - Visual Basic](./media/debugging-with-visual-studio/vb-emptystring.png)
 
 1. Select the **Continue** button on the toolbar to continue program execution.
 
@@ -163,13 +163,13 @@ Visual Studio also allows you to step line by line through a program and monitor
 # [C#](#tab/csharp)
 1. On the menu bar, choose **Debug** > **Step Into** or press the F11 key. Visual Studio highlights and displays an arrow beside the next line of execution.
 
-   ![Visual Studio window](./media/debugging-with-visual-studio/stepinto1.png)
+   ![Visual Studio window - C#](./media/debugging-with-visual-studio/stepinto1.png)
 
    At this point, the **Autos** window shows that your program has defined only one variable, `args`. Because you haven't passed any command-line arguments to the program, its value is an empty string array. In addition, Visual Studio has opened a blank console window.
 
 1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio now highlights the next line of execution. As the figure shows, it has taken less than one millisecond to execute the code between the last statement and this one. `args` remains the only declared variable, and the console window remains blank.
 
-   ![Visual Studio window](./media/debugging-with-visual-studio/stepinto2.png)
+   ![Visual Studio window - C#](./media/debugging-with-visual-studio/stepinto2.png)
 
 1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio highlights the statement that includes the `name` variable assignment. The **Autos** window shows that `name` is `null`, and the console window displays the string "What is your name?".
 
@@ -187,13 +187,13 @@ Visual Studio also allows you to step line by line through a program and monitor
 # [Visual Basic](#tab/vb)
 1. On the menu bar, choose **Debug** > **Step Into** or press the F11 key. Visual Studio highlights and displays an arrow beside the next line of execution.
 
-   ![Visual Studio window](./media/debugging-with-visual-studio/vb-stepinto1.png)
+   ![Visual Studio window - Visual Basic](./media/debugging-with-visual-studio/vb-stepinto1.png)
 
    At this point, because you haven't passed any command-line arguments to the program, the **Autos** window shows that the value of the `args` variable is an empty string array. In addition, Visual Studio has opened a blank console window.
 
 1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio now highlights the next line of execution. As the figure shows, it has taken less than one millisecond to execute the code between the last statement and this one. `args` remains the only declared variable, and the console window remains blank.
 
-   ![Visual Studio window](./media/debugging-with-visual-studio/vb-stepinto2.png)
+   ![Visual Studio window - Visual Basic](./media/debugging-with-visual-studio/vb-stepinto2.png)
 
 1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio highlights the statement that includes the `name` variable assignment. The **Autos** window shows that `name` is `Nothing`, and the console window displays the string "What is your name?".
 

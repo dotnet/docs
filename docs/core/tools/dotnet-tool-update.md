@@ -2,7 +2,6 @@
 title: dotnet tool update command
 description: The dotnet tool update command updates the specified .NET Core Global Tool on your machine.
 ms.date: 05/29/2018
-ms.custom: "seodec18"
 ---
 # dotnet tool update
 

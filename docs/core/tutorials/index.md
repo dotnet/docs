@@ -3,7 +3,7 @@ title: .NET Core Tutorials
 description: Follow tutorials for learning .NET Core to build apps and libraries on Mac, Linux, and Windows.
 author: richlander
 ms.date: 03/16/2017
-ms.custom: seodec18
+titleSuffix: ""
 ---
 # Learn .NET Core and the .NET Core SDK tools by exploring these Tutorials
 

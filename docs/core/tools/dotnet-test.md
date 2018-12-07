@@ -2,7 +2,6 @@
 title: dotnet test command
 description: The dotnet test command is used to execute unit tests in a given project.
 ms.date: 05/29/2018
-ms.custom: "seodec18"
 ---
 # dotnet test
 

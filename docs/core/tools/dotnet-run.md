@@ -2,7 +2,6 @@
 title: dotnet run command
 description: The dotnet run command provides a convenient option to run your application from the source code.
 ms.date: 05/29/2018
-ms.custom: "seodec18"
 ---
 # dotnet run
 

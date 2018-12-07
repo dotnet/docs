@@ -2,7 +2,6 @@
 title: dotnet migrate command
 description: The dotnet migrate command migrates a project and all of its dependencies.
 ms.date: 05/25/2018
-ms.custom: "seodec18"
 ---
 # dotnet migrate
 

@@ -2,7 +2,6 @@
 title: dotnet tool list command
 description: The dotnet tool list command lists the specified .NET Core Global Tool from your machine.
 ms.date: 05/29/2018
-ms.custom: "seodec18"
 ---
 # dotnet tool list
 

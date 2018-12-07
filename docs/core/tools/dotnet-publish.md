@@ -2,7 +2,6 @@
 title: dotnet publish command
 description: The dotnet publish command publishes your .NET Core project into a directory.
 ms.date: 05/29/2018
-ms.custom: "seodec18"
 ---
 # dotnet publish
 

@@ -3,7 +3,6 @@ title: About .NET Core
 description: Learn about .NET Core.
 author: richlander
 ms.date: 08/01/2018
-ms.custom: "seodec18"
 titleSuffix: ""
 ---
 # About .NET Core

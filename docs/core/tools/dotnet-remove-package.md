@@ -2,7 +2,6 @@
 title: dotnet remove package command
 description: The dotnet remove package command provides a convenient option to remove NuGet package reference to a project.
 ms.date: 05/29/2018
-ms.custom: "seodec18"
 ---
 # dotnet remove package
 

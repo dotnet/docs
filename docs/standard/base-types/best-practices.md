@@ -1,5 +1,6 @@
 ---
-title: "Best Practices for Regular Expressions in .NET"
+title: Best Practices for Regular Expressions in .NET
+description: Learn how to create efficient, effective regular expressions in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -11,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 618e5afb-3a97-440d-831a-70e4c526a51c
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.custom: serodec18
 ---
 # Best Practices for Regular Expressions in .NET
 <a name="top"></a> The regular expression engine in .NET is a powerful, full-featured tool that processes text based on pattern matches rather than on comparing and matching literal text. In most cases, it performs pattern matching rapidly and efficiently. However, in some cases, the regular expression engine can appear to be very slow. In extreme cases, it can even appear to stop responding as it processes a relatively small input over the course of hours or even days.  

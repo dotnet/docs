@@ -59,24 +59,6 @@ These values are the [Target Framework Monikers (TFMs)](../../standard/framework
 > When looking at the TFMs that a package supports, note that `netcoreapp*`, while compatible, is for .NET Core projects only and not for .NET Standard projects.
 > A library that only targets `netcoreapp*` and not `netstandard*` can only be consumed by other .NET Core apps.
 
-There are also some legacy TFMs used in pre-release versions of .NET Core that may also be compatible:
-
-```
-dnxcore50
-dotnet5.0
-dotnet5.1
-dotnet5.2
-dotnet5.3
-dotnet5.4
-dotnet5.5
-```
-
-While these TFMs likely work with your code, there is no guarantee of compatibility. Packages with these TFMs were built with pre-release .NET Core packages. Take note of when (or if) packages using these TFMs are updated to be .NET Standard-based.
-
-> [!NOTE]
-> To use a package targeting a traditional PCL or pre-release .NET Core target, you must use the `PackageTargetFallback` MSBuild element in your project file.
-> For more information about this MSBuild element, see [`PackageTargetFallback`](../tools/csproj.md#packagetargetfallback).
-
 ### Analyze NuGet packages using nuget.org
 
 Alternatively, you can see the TFMs that each package supports on [nuget.org](https://www.nuget.org/) under the **Dependencies** section of the package page.

@@ -1,11 +1,12 @@
 ---
-title: Learn Docker Basics with .NET Core
-description: A Docker and .NET Core Basic Tutorial
+title: Containerize an app with Docker - .NET Core
+description: This tutorial teaches how to create a basic .NET Core application and containerize it with Docker.
 ms.date: 10/11/2018
 ms.topic: tutorial
-ms.custom: mvc
+ms.custom: "mvc, seodec18"
 ---
-# Learn Docker Basics with .NET Core
+
+# How to containerize a .NET Core application
 
 This tutorial teaches the Docker container build and deploy tasks for a .NET Core application. The [Docker platform](https://docs.docker.com/engine/docker-overview/#the-docker-platform) uses the [Docker Engine](https://docs.docker.com/engine/docker-overview/#docker-engine) to quickly build and package apps as [Docker images](https://docs.docker.com/glossary/?term=image). These images are written in the [Dockerfile](https://docs.docker.com/glossary/?term=Dockerfile) format to be deployed and run in a [layered container](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#container-and-layers).
 
@@ -253,7 +254,7 @@ Congratulations! You have just:
 Here are some next steps you can take:
 
 * [Introduction to .NET Docker Images Video](https://channel9.msdn.com/Shows/Code-Conversations/Introduction-to-NET-Docker-Images-with-Kendra-Havens?term=docker)
-* [Visual Studio, Docker & Azure Container Instances better together!](https://blogs.msdn.microsoft.com/alimaz/2017/08/17/visual-studio-docker-azure-container-instances-better-together/)
+* [Visual Studio, Docker & Azure Container Instances better together!](https://medium.com/@AliMazaheri/visual-studio-docker-azure-container-instances-better-together-bf8c2f0419ae)
 * [Docker for Azure Quickstarts](https://docs.docker.com/docker-for-azure/#docker-community-edition-ce-for-azure)
 * [Deploy your app on Docker for Azure](https://docs.docker.com/docker-for-azure/deploy/)
 

@@ -1,5 +1,6 @@
 ---
-title: "Backreference Constructs in Regular Expressions"
+title: Backreference Constructs in .NET Regular Expressions
+desription: Learn how to identify repeated text elements by using backreference constructs in a regular expression.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -13,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: 567a4b8d-0e79-49dc-8df9-f4b1aa376a2a
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.custom: seodec18
 ---
 # Backreference Constructs in Regular Expressions
 Backreferences provide a convenient way to identify a repeated character or substring within a string. For example, if the input string contains multiple occurrences of an arbitrary substring, you can match the first occurrence with a capturing group, and then use a backreference to match subsequent occurrences of the substring.  

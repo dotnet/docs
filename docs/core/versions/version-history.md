@@ -1,10 +1,11 @@
 ---
-title: .NET Core version history
-description: See the timeline for versions of the .NET Core runtime, .NET Core SDK, C# compiler and VB.NET compiler.
+title: How versioning the .NET Core SDK changed
+description: This article describes how versioning of the .NET Core SDK and Runtime changed in the v2.1 timeframe.
 ms.date: 07/26/2018
+ms.custom: "seodec18"
 ---
 
-# NET Core version history
+# NET Core version changes between 1.0 and 2.1
 
 Version numbers for .NET Core are challenging because .NET Core SDK and .NET Core Runtime release on different cadences. The different cadences mean the team was forced to do only two of the following three things:
 

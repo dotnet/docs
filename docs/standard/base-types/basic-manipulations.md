@@ -1,5 +1,6 @@
 ---
-title: "How to: Perform Basic String Manipulations in the .NET Framework"
+title: "How to: Perform Basic String Manipulations in .NET"
+description: See an example that calls many string methods.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -10,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 121d1eae-251b-44c0-8818-57da04b8215e
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.custom: seodec18
 ---
 # How to: Perform Basic String Manipulations in .NET
 The following example uses some of the methods discussed in the [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md) topics to construct a class that performs string manipulations in a manner that might be found in a real-world application. The `MailToData` class stores the name and address of an individual in separate properties and provides a way to combine the `City`, `State`, and `Zip` fields into a single string for display to the user. Furthermore, the class allows the user to enter the city, state, and ZIP Code information as a single string; the application automatically parses the single string and enters the proper information into the corresponding property.  

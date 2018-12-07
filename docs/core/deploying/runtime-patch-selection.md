@@ -1,13 +1,14 @@
 ---
-title: Self-contained deployment runtime roll forward
+title: Runtime roll forward for .NET Core self-contained app deployments.
 description: Learn about dotnet publish changes for self-contained deployments.
 author: jralexander
 ms.author: kdollard
 ms.date: 05/31/2018
+ms.custom: seodec18
 ---
 # Self-contained deployment runtime roll forward
 
-.NET Core [self-contained application deployments](index.md) include both the .NET Core libraries and the .NET Core runtime. Starting in .NET Core 2.1 SDK (version 2.1.300), a self-contained application deployment [publishes the highest patch runtime on your machine](https://github.com/dotnet/designs/pull/36). By default, [`dotnet publish`](../tools/dotnet-publish.md) for a self-contained deployment selects the latest version installed as part of the SDK on the publishing machine. This enables your deployed application to run with security fixes (and other fixes) available during `publish`. The application must be re-published to obtain a new patch. Self-contained applications are created by specifying `-r <RID>` on `dotnet publish` command or by specifying the [runtime identifier (RID)](../rid-catalog.md) in the project file (csproj / vbproj) or on the command line.
+.NET Core [self-contained application deployments](index.md) include both the .NET Core libraries and the .NET Core runtime. Starting in .NET Core 2.1 SDK (version 2.1.300), a self-contained application deployment [publishes the highest patch runtime on your machine](https://github.com/dotnet/designs/pull/36). By default, [`dotnet publish`](../tools/dotnet-publish.md) for a self-contained deployment selects the latest version installed as part of the SDK on the publishing machine. This enables your deployed application to run with security fixes (and other fixes) available during `publish`. The application must be re-published to obtain a new patch. Self-contained applications are created by specifying `-r <RID>` on the `dotnet publish` command or by specifying the [runtime identifier (RID)](../rid-catalog.md) in the project file (csproj / vbproj) or on the command line.
 
 ## Patch version roll forward overview
 

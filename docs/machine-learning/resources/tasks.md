@@ -1,10 +1,11 @@
 ---
-title: Machine learning tasks
-description: Explore the different machine learning tasks supported in ML.NET.
+title: Machine learning tasks - ML.NET
+description: Explore the different machine learning tasks and associated learners that are supported in ML.NET.
+ms.custom: seodec18
 ms.date: 11/29/2018
 author: jralexander
 ---
-# Machine learning tasks
+# Machine learning tasks in ML.NET
 
 When building a machine learning model, you first need to define what you are hoping to achieve with your data. Afterwards, you can pick the right machine learning task for your situation. The following list describes the different machine learning tasks that you can choose from and some common use cases.
 
@@ -36,15 +37,13 @@ The following learners are available for binary classification tasks:
 
 * [AveragedPerceptronTrainer](xref:Microsoft.ML.Trainers.Online.AveragedPerceptronTrainer)
 * [BinaryClassificationGamTrainer](xref:Microsoft.ML.Trainers.FastTree.BinaryClassificationGamTrainer)
-* [EnsembleTrainer](xref:Microsoft.ML.Runtime.Ensemble.EnsembleTrainer)
 * [FastForestClassification](xref:Microsoft.ML.Trainers.FastTree.FastForestClassification)
 * [FastTreeBinaryClassificationTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryClassificationTrainer)
 * [FieldAwareFactorizationMachineTrainer](xref:Microsoft.ML.Runtime.FactorizationMachine.FieldAwareFactorizationMachineTrainer)
 * [LightGbmBinaryTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmBinaryTrainer)
-* [LinearClassificationTrainer](xref:Microsoft.ML.Trainers.LinearClassificationTrainer)
 * [LinearSvm](xref:Microsoft.ML.Trainers.Online.LinearSvm)
-* [PriorTrainer](xref:Microsoft.ML.Runtime.Learners.PriorTrainer)
-* [RandomTrainer](xref:Microsoft.ML.Runtime.Learners.RandomTrainer)
+* [PriorTrainer](xref:Microsoft.ML.Trainers.PriorTrainer)
+* [RandomTrainer](xref:Microsoft.ML.Trainers.RandomTrainer)
 * [StochasticGradientDescentClassificationTrainer](xref:Microsoft.ML.Trainers.StochasticGradientDescentClassificationTrainer)
 * [SymSgdClassificationTrainer](xref:Microsoft.ML.Trainers.SymSgd.SymSgdClassificationTrainer)
 
@@ -75,10 +74,9 @@ The following learners are available for multiclass classification tasks:
 * [LightGbmMulticlassTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmMulticlassTrainer)
 * [MetaMulticlassTrainer<TTransformer,TModel>](xref:Microsoft.ML.Runtime.Learners.MetaMulticlassTrainer%602)
 * [MultiClassClassificationTrainers](xref:Microsoft.ML.Trainers.MultiClassClassificationTrainers)
-* [MulticlassDataPartitionEnsembleTrainer](xref:Microsoft.ML.Runtime.Ensemble.MulticlassDataPartitionEnsembleTrainer)
 * [MultiClassNaiveBayesTrainer](xref:Microsoft.ML.Trainers.MultiClassNaiveBayesTrainer)
-* [Ova](xref:Microsoft.ML.Runtime.Learners.Ova)
-* [Pkpd](xref:Microsoft.ML.Runtime.Learners.Pkpd)
+* [Ova](xref:Microsoft.ML.Trainers.Ova)
+* [Pkpd](xref:Microsoft.ML.Trainers.Pkpd)
 * [SdcaMultiClassTrainer](xref:Microsoft.ML.Trainers.SdcaMultiClassTrainer)
 
 ## Regression
@@ -109,7 +107,6 @@ The following learners are available for regression tasks:
 * [OlsLinearRegressionTrainer](xref:Microsoft.ML.Trainers.HalLearners.OlsLinearRegressionTrainer)
 * [OnlineGradientDescentTrainer](xref:Microsoft.ML.Trainers.Online.OnlineGradientDescentTrainer)
 * [PoissonRegression](xref:Microsoft.ML.Trainers.PoissonRegression)
-* [RegressionEnsembleTrainer](xref:Microsoft.ML.Runtime.Ensemble.RegressionEnsembleTrainer)
 * [RegressionGamTrainer](xref:Microsoft.ML.Trainers.FastTree.RegressionGamTrainer)
 * [SdcaRegressionTrainer](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer)
 * [FastTree.SingleTrainer](xref:Microsoft.ML.Trainers.FastTree.SingleTrainer)

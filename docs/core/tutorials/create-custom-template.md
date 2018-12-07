@@ -4,6 +4,7 @@ description: Learn how to create a custom template for the dotnet new command in
 author: guardrex
 ms.author: mairaw
 ms.date: 08/12/2017
+ms.custom: seodec18
 ---
 # Create a custom template for dotnet new
 

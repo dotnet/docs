@@ -64,7 +64,7 @@
     -   You should implement a property that returns a <xref:System.Boolean> value that indicates whether particular functionality is available. For example, for a type that can be either read-only or read-write, you could implement a `IsReadOnly` property that indicates whether the set of read-write methods are available or unavailable.  
   
 ## Handling a NotSupportedException exception  
- The <xref:System.NotSupportedException> exception indicates that a method has no implementation and that you should not call it.  You should not handle the exception. Instead, what you should do depends on the cause of the exception:  whether an implementation is completely absent , or the member invocation is inconsistent with the purpose of an object (such as a call to the <xref:System.IO.FileStream.Read%2A?displayProperty=nameWithType> method on a read-only <xref:System.IO.FileStream> object .  
+ The <xref:System.NotSupportedException> exception indicates that a method has no implementation and that you should not call it.  You should not handle the exception. Instead, what you should do depends on the cause of the exception:  whether an implementation is completely absent , or the member invocation is inconsistent with the purpose of an object (such as a call to the <xref:System.IO.FileStream.Write%2A?displayProperty=nameWithType> method on a read-only <xref:System.IO.FileStream> object .  
   
  **An implementation has not been provided because the operation cannot be performed in a meaningful way.**  
  This is a common exception when you are calling methods on an object that provides implementations for the methods of an abstract base class, or that implements a general-purpose interface, and the method has no meaningful implementation.  

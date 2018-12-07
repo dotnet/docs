@@ -1,18 +1,18 @@
 ---
-title: .NET Core additional tools
-description: An overview of the additional tools that support and extend .NET Core functionality.
+title: .NET Core additional CLI tools - .NET Core
+description: An overview of the additional tools you can install that support and extend .NET Core functionality.
 author: mlacouture
 ms.author: johalex
 ms.date: 01/19/2018
-ms.custom: mvc
+ms.custom: "seodec18"
 ---
-# .NET Core additional tools
+# .NET Core additional tools overview
 
 This section compiles a list of tools that support and extend the .NET Core functionality, in addition to the [.NET Core command-line interface (CLI)](../tools/index.md) tools.
 
 ## [WCF Web Service Reference tool](wcf-web-service-reference-guide.md)
 
-The WCF (Windows Communication Foundation) Web Service Reference is a Visual Studio connected service provider that made its debut in [Visual Studio 2017 version 15.5](https://visualstudio.microsoft.com/news/releasenotes/vs2017-relnotes#WCFTools). This tool retrieves metadata from a web service in the current solution, on a network location, or from a WSDL file, and generates a source file compatible with .NET Core, defining a WCF proxy class with methods that you can use to access the web service operations.
+The WCF (Windows Communication Foundation) Web Service Reference is a Visual Studio connected service provider that made its debut in [Visual Studio 2017 version 15.5](/visualstudio/releasenotes/vs2017-relnotes-v15.5#WCFTools). This tool retrieves metadata from a web service in the current solution, on a network location, or from a WSDL file, and generates a source file compatible with .NET Core, defining a WCF proxy class with methods that you can use to access the web service operations.
 
 ## [WCF dotnet-svcutil tool](dotnet-svcutil-guide.md)
 

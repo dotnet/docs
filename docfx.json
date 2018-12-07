@@ -201,6 +201,10 @@
         "docs/standard/serverless-architecture/**/**.md": "dotnet-ebooks",
         "docs/standard/security/**/**.md": "dotnet-security",
         "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics"
+      },
+      "titleSuffix":{
+        "docs/docs/fsharp/tutorials/**.md": "F#",
+        "docs/docs/fsharp/language-reference/**.md": "F#"
       }
     },
     "dest": "_site",

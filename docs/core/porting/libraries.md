@@ -1,13 +1,14 @@
 ---
-title: Porting to .NET Core - Libraries
+title: Port libraries to .NET Core
 description: Learn how to port library projects from the .NET Framework to .NET Core.
 author: cartermp
 ms.author: mairaw
 ms.date: 07/14/2017
+ms.custom: seodec18
 ---
-# Porting to .NET Core - Libraries
+# Port .NET Framework libraries to .NET Core
 
-This article discusses porting library code to .NET Core so that it runs cross-platform.
+Learn how to port .NET Framework library code to .NET Core, to run cross-platform and expand the reach of the apps that use it.
 
 ## Prerequisites
 

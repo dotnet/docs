@@ -1,13 +1,14 @@
 ---
-title: Porting to .NET Core from .NET Framework
+title: Port code from .NET Framework to .NET Core
 description: Understand the porting process and discover tools you may find helpful when porting a .NET Framework project to .NET Core.
 author: cartermp
 ms.author: mairaw
 ms.date: 12/04/2018
+ms.custom: seodec18
 ---
-# Porting to .NET Core from .NET Framework
+# Port your code from .NET Framework to .NET Core
 
-If you've got code running on the .NET Framework, you may be interested in running your code on .NET Core. This article gives you an overview of the porting process and a list of the tools you may find helpful when porting to .NET Core.
+If you've got code that runs on the .NET Framework, you may be interested in running your code on .NET Core, too. Here's an overview of the porting process and a list of the tools you may find helpful when porting your code to .NET Core.
 
 ## Overview of the porting process
 

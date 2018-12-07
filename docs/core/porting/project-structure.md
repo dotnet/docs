@@ -1,13 +1,14 @@
 ---
-title: Organizing your project to support .NET Framework and .NET Core
+title: Organize projects for .NET Framework and .NET Core
 description: Help for project owners who want to compile their solution against .NET Framework and .NET Core side-by-side.
 author: conniey
 ms.author: mairaw
 ms.date: 04/06/2017
+ms.custom: seodec18
 ---
-# Organizing your project to support .NET Framework and .NET Core
+# Organize your project to support both .NET Framework and .NET Core
 
-This article helps project owners who want to compile their solution against .NET Framework and .NET Core side-by-side. It provides several options to organize projects to help developers achieve this goal. The following list provides some typical scenarios to consider when you're deciding how to setup your project layout with .NET Core. The list may not cover everything you want; prioritize based on your project's needs.
+Learn how to create a solution that compiles for both .NET Framework and .NET Core side-by-side. See several options to organize projects to help you achieve this goal. Here are some typical scenarios to consider when you're deciding how to setup your project layout with .NET Core. The list may not cover everything you want; prioritize based on your project's needs.
 
 * [**Combine existing projects and .NET Core projects into single projects**][option-csproj]
 
@@ -69,7 +70,7 @@ Changes to note are:
 [example-initial-project]: media/project-structure/project.png "Existing project"
 [example-initial-project-code]: https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library/
 
-[example-csproj]: media/project-structure/project.csproj.png "Create an csproj that targets multiple frameworks"
+[example-csproj]: media/project-structure/project.csproj.png "Create a csproj that targets multiple frameworks"
 [example-csproj-code]: https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj/
 [example-csproj-netcore]: https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj/src/Car/Car.csproj
 

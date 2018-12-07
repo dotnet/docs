@@ -5,6 +5,7 @@ author: richlander
 ms.author: mairaw
 ms.date: 08/01/2018
 ms.custom: "updateeachrelease"
+titleSuffix: ""
 ---
 # .NET Core Guide
 

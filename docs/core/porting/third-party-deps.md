@@ -4,6 +4,7 @@ description: Learn how to analyze third-party dependencies in order to port your
 author: cartermp
 ms.author: mairaw
 ms.date: 12/04/2018
+ms.custom: "seodec18"
 ---
 # Analyze your third-party dependencies
 

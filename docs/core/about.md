@@ -4,6 +4,8 @@ description: Learn about .NET Core.
 author: richlander
 ms.author: mairaw
 ms.date: 08/01/2018
+ms.custom: "seodec18"
+titleSuffix: ""
 ---
 # About .NET Core
 

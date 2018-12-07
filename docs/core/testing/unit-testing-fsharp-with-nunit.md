@@ -5,6 +5,7 @@ author: rprouse
 ms.date: 10/04/2018
 dev_langs: 
   - "fsharp"
+ms.custom: "seodec18"
 ---
 # Unit testing F# libraries in .NET Core using dotnet test and NUnit
 

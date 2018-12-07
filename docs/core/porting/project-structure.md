@@ -4,6 +4,7 @@ description: Help for project owners who want to compile their solution against 
 author: conniey
 ms.author: mairaw
 ms.date: 04/06/2017
+ms.custom: "seodec18"
 ---
 # Organizing your project to support .NET Framework and .NET Core
 

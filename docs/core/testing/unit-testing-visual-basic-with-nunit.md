@@ -5,6 +5,7 @@ author: rprouse
 ms.date: 10/04/2018
 dev_langs: 
   - "vb"
+ms.custom: "seodec18"
 ---
 # Unit testing Visual Basic .NET Core libraries using dotnet test and NUnit
 

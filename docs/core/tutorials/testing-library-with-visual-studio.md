@@ -7,7 +7,7 @@ ms.date: 08/07/2017
 dev_langs: 
   - "csharp"
   - "vb"
-ms.custom: 
+ms.custom:
   - vs-dotnet
   - seodoc18
 ---

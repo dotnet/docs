@@ -5,6 +5,7 @@ author: cartermp
 ms.author: mairaw
 ms.date: 09/10/2018
 ms.technology: dotnet-cli
+ms.custom: "seodec18"
 ---
 # Getting started with .NET Core on Windows/Linux/macOS using the command line
 

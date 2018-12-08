@@ -75,9 +75,9 @@ The assembly file version is used to display a file version in Windows and has n
 
 > For example, you are building version 1.0.0 of your project, and the continuous integration build number is 99 so your AssemblyFileVersion is 1.0.0.99.
 
-**✔️ DO** follow the format `Major.Minor.Build.Revision` for file version.
+**✔️ DO** use the format `Major.Minor.Build.Revision` for file version.
 
-> While the file version is never used by .NET, Windows deployment tools expect the file version to be in the `Major.Minor.Build.Revision` format. A warning is raised if the file version doesn't follow this format.
+> While the file version is never used by .NET, [Windows expects the file version](/windows/desktop/menurc/versioninfo-resource) to be in the `Major.Minor.Build.Revision` format. A warning is raised if the file version doesn't follow this format.
 
 ### Assembly informational version
 

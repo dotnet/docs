@@ -166,8 +166,7 @@ Whoami /user
  You can also access remote WMI instances programmatically by using classes provided by the <xref:System.Management> namespace. The following code sample demonstrates how to do this.  
   
 ```csharp
-String wcfNamespace = String.Format(@"\\{0}\Root\ServiceModel",      
-   this.serviceMachineName);  
+String wcfNamespace = $@"\\{this.serviceMachineName}\Root\ServiceModel");
   
 ConnectionOptions connection = new ConnectionOptions();  
 connection.Authentication = AuthenticationLevel.PacketPrivacy;  

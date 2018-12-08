@@ -77,7 +77,7 @@ The assembly file version is used to display a file version in Windows and has n
 
 **✔️ DO** follow the format `Major.Minor.Build.Revision` for file version.
 
-> While the file version is never used by .NET, some Windows deployment tools expect the file version to be in the `Major.Minor.Build.Revision` format. A warning is raised if the file version doesn't follow this format.
+> While the file version is never used by .NET, Windows deployment tools expect the file version to be in the `Major.Minor.Build.Revision` format. A warning is raised if the file version doesn't follow this format.
 
 ### Assembly informational version
 

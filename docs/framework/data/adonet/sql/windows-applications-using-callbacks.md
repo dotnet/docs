@@ -175,7 +175,7 @@ Imports System.Data.SqlClient
             ' invoke it, like this:  
             Me.Invoke(New _  
                 DisplayInfoDelegate(AddressOf DisplayStatus), _  
-                $"Ready(last error: {ex.Message}")
+                $"Ready (last error: {ex.Message}")
         Finally  
             isExecuting = False  
             If connection IsNot Nothing Then  
@@ -349,7 +349,7 @@ private void HandleCallback(IAsyncResult result)
         // You can create the delegate instance as you   
         // invoke it, like this:  
         this.Invoke(new DisplayInfoDelegate(DisplayStatus),  
-            $"Ready(last error: {ex.Message}");
+            $"Ready (last error: {ex.Message}");
     }  
     finally  
     {  

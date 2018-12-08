@@ -288,7 +288,7 @@ class Program {
   
       // Build the query string  
       String primaryCols = String.Join(",", primaryColumns.Select(col => col.ColumnName));  
-      String resetCols = String.Join(",", resetColumns.Select(col => "Max(" + col.ColumnName + ") as " + col.ColumnName));  
+      String resetCols = String.Join(",", resetColumns.Select(col => $"Max({col.ColumnName}) as {col.ColumnName}"));
   
       String selectString = $"Select {primaryCols},{resetCols} from Course Group by {primaryCols}");
   

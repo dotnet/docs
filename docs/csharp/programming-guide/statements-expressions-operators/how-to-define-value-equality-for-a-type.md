@@ -4,7 +4,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "overriding Equals method [C#]"
   - "object equivalence [C#]"
-  - "Equals method [C#] , overriding"
+  - "Equals method [C#], overriding"
   - "value equality [C#]"
   - "equivalence [C#]"
 ms.assetid: 4084581e-b931-498b-9534-cf7ef5b68690

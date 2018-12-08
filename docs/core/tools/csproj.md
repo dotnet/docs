@@ -70,9 +70,6 @@ To disable **all implicit globs**, you can set the `<EnableDefaultItems>` proper
 </PropertyGroup>
 ```
 
-### Recommendation
-With csproj, we recommend that you remove the default globs from your project and only add file paths with globs for those artifacts that your app/library needs for various scenarios (for example, runtime and NuGet packaging).
-
 ## How to see the whole project as MSBuild sees it
 
 While those csproj changes greatly simplify project files, you might want to see the fully expanded project as MSBuild sees it once the SDK and its targets are included. Preprocess the project with [the `/pp` switch](/visualstudio/msbuild/msbuild-command-line-reference#preprocess) of the [`dotnet msbuild`](dotnet-msbuild.md) command, which shows which files are imported, their sources, and their contributions to the build without actually building the project:

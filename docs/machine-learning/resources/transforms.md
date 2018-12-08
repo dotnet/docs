@@ -1,24 +1,13 @@
 ---
-title: Data transforms in ML.NET
+title: Machine learning data transforms - ML.NET
 description: Explore the different data transforms supported in ML.NET.
 author: JRAlexander
+ms.custom: seodec18
 ms.date: 12/04/2018
 ---
-# Data transforms in ML.NET
+# Machine learning data transforms - ML.NET
 
-The following tables contain information about all of the data transforms supported in ML.NET (select the data transform type to navigate to the corresponding table):
-
-* [Categorical](#categorical)
-* [Combiners and segregators](#combiners-and-segregators)
-* [Feature selection](#feature-selection)
-* [Featurizers](#featurizers)
-* [Label parsing](#label-parsing)
-* [Missing Values](#missing-values)
-* [Normalization](#normalization)
-* [Row filters](#row-filters)
-* [Schema](#schema)
-* [Text processing and featurization](#text-processing-and-featurization)
-* [Miscellaneous](#miscellaneous)
+The following tables contain information about all of the data transforms supported in ML.NET.
 
 > [!NOTE]
 > ML.NET is currently in Preview. Not all data transforms are currently supported. To submit a request for a certain transform, open an issue in the [dotnet/machinelearning](https://github.com/dotnet/machinelearning/issues) GitHub repository.
@@ -87,7 +76,7 @@ The following tables contain information about all of the data transforms suppor
 | --- | --- |
 | <xref:Microsoft.ML.Transforms.AlexNetExtension> | This is an extension method to be used with the <xref:Microsoft.ML.Transforms.DnnImageFeaturizerEstimator> in order to use a pretrained [AlexNet](https://en.wikipedia.org/wiki/AlexNet) model. The NuGet containing this extension is also guaranteed to include the binary model file. | 
 | <xref:Microsoft.ML.Transforms.ResNet18Extension> | This is an extension method to be used with the <xref:Microsoft.ML.Transforms.DnnImageFeaturizerEstimator> to use a pretrained ResNet18 model. The NuGet containing this extension is also guaranteed to include the binary model file. |
-| <xref:MMicrosoft.ML.Transforms.ResNet50Extension> | This is an extension method to be used with the <xref:Microsoft.ML.Transforms.DnnImageFeaturizerEstimator> to use a pretrained ResNet50model. The NuGet containing this extension is also guaranteed to include the binary model file. |
+| <xref:Microsoft.ML.Transforms.ResNet50Extension> | This is an extension method to be used with the <xref:Microsoft.ML.Transforms.DnnImageFeaturizerEstimator> to use a pretrained ResNet50model. The NuGet containing this extension is also guaranteed to include the binary model file. |
 | <xref:Microsoft.ML.Transforms.ResNet101Extension> | This is an extension method to be used with the <xref:Microsoft.ML.Transforms.DnnImageFeaturizerEstimator> to use a pretrained ResNet101 model. The NuGet containing this extension is also guaranteed to include the binary model file. |
 
 ## Label parsing
@@ -194,4 +183,3 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Transforms.ProduceIdTransform> | Produces a column with the cursor's ID as a column. |
 | <xref:Microsoft.ML.Transforms.RandomNumberGenerator> | Generates a random number. |
 | <xref:Microsoft.ML.Transforms.ScoringTransformer> | Combines information from multiple predictive models to generate a new model in the pipeline by using the scores from an already trained model. |
-| <xref:Microsoft.ML.Transforms.TrainAndScoreTransform> | Combines information from multiple predictive models to generate a new model in the pipeline by using the scores from an already trained model. |

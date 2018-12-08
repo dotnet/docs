@@ -397,7 +397,7 @@
 ## Remarks  
  Query paths can be used with Entity SQL and LINQ queries.  
   
- Paths are all-inclusive. For example, if an include call indicates `Include("Orders.OrderLines")`, not only will `OrderLines` be included, but also `Orders`. For more information, see [Loading Related Objects](https://msdn.microsoft.com/library/452347d2-7b3b-44cd-9001-231299a28cb1).  
+ Paths are all-inclusive. For example, if an include call indicates `Include("Orders.OrderLines")`, not only will `OrderLines` be included, but also `Orders`. For more information, see [Loading Related Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896272(v=vs.100)).  
   
  When you call the <xref:System.Data.Objects.ObjectQuery%601.Include%2A> method, the query path is only valid on the returned instance of the <xref:System.Data.Objects.ObjectQuery%601>. Other instances of <xref:System.Data.Objects.ObjectQuery%601> and the object context itself are not affected.  
   

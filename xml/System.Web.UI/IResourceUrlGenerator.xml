@@ -23,7 +23,7 @@
   
 -   On using embedded resources, see [NIB:How to: Use Resources to Set Property Values in Web Server Controls](https://msdn.microsoft.com/library/d8e0e5c0-1958-422b-b4f5-ebe63f6c45cb) and [How to: Retrieve Resource Values Programmatically](https://msdn.microsoft.com/library/7a06d512-6fc3-40ca-9cb6-7f41d1a9fa28).  
   
--   On control designers, see [ASP.NET Control Designers Overview](https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810).  
+-   On control designers, see [ASP.NET Control Designers Overview](https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)).  
   
  The <xref:System.Web.UI.IResourceUrlGenerator> interface has one method, the <xref:System.Web.UI.IResourceUrlGenerator.GetResourceUrl%2A> method, that returns a URL reference to a resource given the resource type and name.  
   
@@ -32,7 +32,7 @@
     <altmember cref="T:System.Web.UI.ClientScriptManager" />
     <related type="Article" href="https://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd">ASP.NET Web Page Resources Overview</related>
     <related type="Article" href="https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890">Resources in Applications</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">Introduction to ASP.NET Control Designers</related>
   </Docs>
   <Members>
     <Member MemberName="GetResourceUrl">

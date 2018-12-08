@@ -428,7 +428,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Objects.DataClasses.EntityCollection%601.Count%2A> property gets the number of entities currently in the local collection and does not reflect the size of the collection in the data source. A count of zero does not necessarily indicate that the related collection is empty. To determine the collection size in the data source, call the <xref:System.Data.Objects.DataClasses.EntityCollection%601.Load%2A> method or include the related object in the query path. For more information, see [Loading Related Objects](https://msdn.microsoft.com/library/452347d2-7b3b-44cd-9001-231299a28cb1).  
+ The <xref:System.Data.Objects.DataClasses.EntityCollection%601.Count%2A> property gets the number of entities currently in the local collection and does not reflect the size of the collection in the data source. A count of zero does not necessarily indicate that the related collection is empty. To determine the collection size in the data source, call the <xref:System.Data.Objects.DataClasses.EntityCollection%601.Load%2A> method or include the related object in the query path. For more information, see [Loading Related Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896272(v=vs.100)).  
   
  ]]></format>
         </remarks>

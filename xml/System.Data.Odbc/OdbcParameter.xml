@@ -76,7 +76,7 @@ OleDbDataReader reader = command.ExecuteReader();
   
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+    <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -86,7 +86,7 @@ OleDbDataReader reader = command.ExecuteReader();
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcParameter" /> class.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -125,7 +125,7 @@ OleDbDataReader reader = command.ExecuteReader();
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -166,7 +166,7 @@ OleDbDataReader reader = command.ExecuteReader();
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="type" /> parameter is an invalid back-end data type.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -209,7 +209,7 @@ Parameter = new OdbcParameter("@pname", Convert.ToInt32(0));
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -252,7 +252,7 @@ Parameter = new OdbcParameter("@pname", Convert.ToInt32(0));
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="type" /> parameter is an invalid back-end data type.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -297,7 +297,7 @@ Parameter = new OdbcParameter("@pname", Convert.ToInt32(0));
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="type" /> parameter is an invalid back-end data type.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -362,7 +362,7 @@ Parameter = new OdbcParameter("@pname", Convert.ToInt32(0));
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="type" /> parameter is an invalid back-end data type.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -440,7 +440,7 @@ public void CreateOdbcParameter()
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="type" /> parameter is an invalid back-end data type.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="DbType">
@@ -503,7 +503,7 @@ public void CreateOdbcParameter()
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property was not set to a valid <see cref="T:System.Data.DbType" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -583,7 +583,7 @@ public void CreateMyProc(OdbcConnection connection)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property was not set to one of the valid <see cref="T:System.Data.ParameterDirection" /> values.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="IsNullable">
@@ -655,7 +655,7 @@ public void CreateOdbcParameter()
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="OdbcType">
@@ -706,7 +706,7 @@ public void CreateOdbcParameter()
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -818,7 +818,7 @@ public void CreateMyProc(OdbcConnection connection)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="Precision">
@@ -890,7 +890,7 @@ public void CreateOdbcParameter()
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="ResetDbType">
@@ -926,7 +926,7 @@ public void CreateOdbcParameter()
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="ResetOdbcType">
@@ -960,7 +960,7 @@ public void CreateOdbcParameter()
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="Scale">
@@ -1039,7 +1039,7 @@ public void CreateOdbcParameter()
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -1121,7 +1121,7 @@ public void CreateOdbcParameter()
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="SourceColumn">
@@ -1186,7 +1186,7 @@ public void CreateOdbcParameter()
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="SourceColumnNullMapping">
@@ -1236,7 +1236,7 @@ FieldName = @OriginalFieldName
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="SourceVersion">
@@ -1303,7 +1303,7 @@ public void CreateOdbcParameter()
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -1369,7 +1369,7 @@ public void CreateOdbcParameter()
         <summary>Gets a string that contains the <see cref="P:System.Data.Odbc.OdbcParameter.ParameterName" />.</summary>
         <returns>A string that contains the <see cref="P:System.Data.Odbc.OdbcParameter.ParameterName" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -1449,7 +1449,7 @@ public void CreateOdbcParameter()
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
       </Docs>
     </Member>
   </Members>

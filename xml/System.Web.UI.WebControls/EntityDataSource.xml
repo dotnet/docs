@@ -1421,7 +1421,7 @@ protected void EntityDataSource2_ContextDisposing(object sender,
   
  The string supplied to the <xref:System.Web.UI.WebControls.EntityDataSource.Include%2A> property uses the same format as the string that is passed to the <xref:System.Data.Objects.ObjectQuery%601.Include%2A> method of <xref:System.Data.Objects.ObjectQuery%601>. For examples of how to use query paths to automatically load related objects, see [How to: Use Query Paths to Shape Results](https://msdn.microsoft.com/library/100bf7f5-00ba-4c17-8e27-7a8a14831093).  
   
- When the <xref:System.Web.UI.WebControls.EntityDataSource.Include%2A> property is used to specify query paths, the properties of the related entities can only be used for read-only data-binding. If related objects are not explicitly included in the query path, the property descriptors are still available for data binding, but the properties themselves return null values. In this case, the related objects must be explicitly loaded to display their values. For more information, see [Loading Related Objects](https://msdn.microsoft.com/library/452347d2-7b3b-44cd-9001-231299a28cb1).  
+ When the <xref:System.Web.UI.WebControls.EntityDataSource.Include%2A> property is used to specify query paths, the properties of the related entities can only be used for read-only data-binding. If related objects are not explicitly included in the query path, the property descriptors are still available for data binding, but the properties themselves return null values. In this case, the related objects must be explicitly loaded to display their values. For more information, see [Loading Related Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896272(v=vs.100)).  
   
    
   

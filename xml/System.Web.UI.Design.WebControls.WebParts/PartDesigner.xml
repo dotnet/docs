@@ -28,7 +28,7 @@
       <para>The <see cref="T:System.Web.UI.Design.WebControls.WebParts.PartDesigner" /> class does not have a public constructor, so you cannot inherit from it directly outside the <see cref="N:System.Web.UI.Design.WebControls.WebParts" /> namespace. Instead, use <see cref="T:System.Web.UI.Design.WebControls.WebParts.WebPartDesigner" />, <see cref="T:System.Web.UI.Design.WebControls.WebParts.EditorPartDesigner" />, or <see cref="T:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner" />, which derive from <see cref="T:System.Web.UI.Design.WebControls.WebParts.PartDesigner" /> and provide the same functionality with a public constructor.</para>
     </block>
     <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Initialize">

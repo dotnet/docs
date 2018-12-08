@@ -112,7 +112,7 @@
     <altmember cref="T:System.Web.UI.Design.DesignerRegion" />
     <altmember cref="T:System.Web.UI.Design.ContainerControlDesigner" />
     <altmember cref="T:System.Web.UI.Design.WebControls.CompositeControlDesigner" />
-    <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">Introduction to ASP.NET Control Designers</related>
     <related type="Article" href="https://msdn.microsoft.com/library/4881917b-628f-4689-b872-472e4f8a4e3a">Design-Time Architecture</related>
     <related type="Article" href="https://msdn.microsoft.com/library/14ea1ebb-3e38-41b3-b4b9-6db388e1ab4f">Sample Control Designer with Action Lists and Services</related>
   </Docs>
@@ -134,7 +134,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.ControlDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -172,7 +172,7 @@
         </block>
         <altmember cref="T:System.ComponentModel.Design.DesignerActionListCollection" />
         <related type="Article" href="https://msdn.microsoft.com/library/14ea1ebb-3e38-41b3-b4b9-6db388e1ab4f">Sample Control Designer with Action Lists and Services</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AllowResize">
@@ -217,7 +217,7 @@
         <block subset="none" type="overrides">
           <para>Use the <see cref="P:System.Web.UI.Design.ControlDesigner.AllowResize" /> property in derived classes to enable or disable page developers from resizing your control in the design host.</para>
         </block>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AutoFormats">
@@ -260,7 +260,7 @@
         </block>
         <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
         <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateErrorDesignTimeHtml">
@@ -270,7 +270,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates HTML markup to display an error message at design time.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CreateErrorDesignTimeHtml">
@@ -321,7 +321,7 @@
           <para>The <see cref="M:System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml(System.String)" /> overload is functionally equivalent to calling the <see cref="M:System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml(System.String,System.Exception)" /> method with e set to <see langword="null" />.</para>
         </block>
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateErrorDesignTimeHtml">
@@ -369,7 +369,7 @@
           <para>The <see cref="M:System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml(System.String,System.Exception)" /> method should be called from the <see cref="Overload:System.Web.UI.Design.ControlDesigner.GetViewRendering" /> or <see cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" /> method when exceptions occur.</para>
         </block>
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreatePlaceHolderDesignTimeHtml">
@@ -382,7 +382,7 @@
         <block subset="none" type="overrides">
           <para>The typical design pattern is to try to get HTML markup through the associated control, and then if an error is encountered, call the <see cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" /> method. If no markup is returned by the control, call the <see cref="M:System.Web.UI.Design.ControlDesigner.GetEmptyDesignTimeHtml" /> method, which if it is not overridden to provide specific markup, calls the <see cref="M:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml" /> method, which should contain information about the type and ID of the control.</para>
         </block>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CreatePlaceHolderDesignTimeHtml">
@@ -415,7 +415,7 @@
         <block subset="none" type="overrides">
           <para>The typical design pattern is to try to get HTML markup through the associated control, and then if an error is encountered, call the <see cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" /> method. If no markup is returned by the control, call the <see cref="M:System.Web.UI.Design.ControlDesigner.GetEmptyDesignTimeHtml" /> method, which if it is not overridden to provide specific markup, calls the <see cref="M:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml" /> method, which should contain information about the type and ID of the control.</para>
         </block>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreatePlaceHolderDesignTimeHtml">
@@ -458,7 +458,7 @@
         <block subset="none" type="overrides">
           <para>The typical design pattern is to try to get HTML markup through the associated control, and then if an error is encountered, call the <see cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" /> method. If no markup is returned by the control, call the <see cref="M:System.Web.UI.Design.ControlDesigner.GetEmptyDesignTimeHtml" /> method, which if it is not overridden to provide specific markup, calls the <see cref="M:System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml" /> method, which should contain information about the type and ID of the control.</para>
         </block>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateViewControl">
@@ -482,7 +482,7 @@
         <summary>Returns a copy of the associated control for viewing or rendering on the design surface.</summary>
         <returns>A Web server control.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataBindingsEnabled">
@@ -507,7 +507,7 @@
           <see langword="true" />, if the container for the control supports data binding; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Design.EditableDesignerRegion.SupportsDataBinding" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DesignerState">
@@ -539,7 +539,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DesignTimeElementView">
@@ -578,7 +578,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DesignTimeHtmlRequiresLoadComplete">
@@ -620,7 +620,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.Design.ViewFlags" />
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.SetViewFlags(System.Web.UI.Design.ViewFlags,System.Boolean)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetBounds">
@@ -646,7 +646,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Design.IControlDesignerView.GetBounds(System.Web.UI.Design.DesignerRegion)" />
         <altmember cref="M:System.Web.UI.Design.DesignerRegion.GetBounds" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetDesignTimeHtml">
@@ -657,7 +657,7 @@
       <Docs>
         <summary>Retrieves the HTML markup that is used to represent the control at design time.</summary>
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.UpdateDesignTimeHtml" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetDesignTimeHtml">
@@ -698,7 +698,7 @@
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetEmptyDesignTimeHtml" />
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" />
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -748,7 +748,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.Design.WebControls.GridViewDesigner" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeResourceProviderFactory">
@@ -788,7 +788,7 @@
         <altmember cref="T:System.Web.Compilation.ResourceProviderFactory" />
         <altmember cref="T:System.Web.Compilation.IResourceProvider" />
         <altmember cref="T:System.IServiceProvider" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetEditableDesignerRegionContent">
@@ -833,7 +833,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetEmptyDesignTimeHtml">
@@ -875,7 +875,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml(System.Exception)" />
         <altmember cref="Overload:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetErrorDesignTimeHtml">
@@ -923,7 +923,7 @@
         </block>
         <altmember cref="Overload:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml" />
         <altmember cref="Overload:System.Web.UI.Design.ControlDesigner.CreateErrorDesignTimeHtml" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPersistenceContent">
@@ -956,7 +956,7 @@
           <para>Override the <see cref="M:System.Web.UI.Design.ControlDesigner.GetPersistenceContent" /> method to provide custom handling of the inner content persistence for the design host.</para>
         </block>
         <altmember cref="T:System.Web.UI.Design.ControlPersister" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPersistInnerHtml">
@@ -999,7 +999,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.Tag" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetViewRendering">
@@ -1010,7 +1010,7 @@
       <Docs>
         <summary>Retrieves an object that contains the design-time markup for the content and regions of the associated control.</summary>
         <altmember cref="T:System.Web.UI.Design.ViewRendering" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetViewRendering">
@@ -1035,7 +1035,7 @@
         <returns>A <see cref="T:System.Web.UI.Design.ViewRendering" /> object.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.Design.ViewRendering" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetViewRendering">
@@ -1062,7 +1062,7 @@
         <returns>A <see cref="T:System.Web.UI.Design.ViewRendering" /> object.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.Design.ViewRendering" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetViewRendering">
@@ -1090,7 +1090,7 @@
         <returns>A <see cref="T:System.Web.UI.Design.ViewRendering" /> object.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.Design.ViewRendering" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HidePropertiesInTemplateMode">
@@ -1121,7 +1121,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -1153,7 +1153,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Control.ID" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -1202,7 +1202,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="InTemplateMode">
@@ -1243,7 +1243,7 @@
         <altmember cref="T:System.Web.UI.Design.TemplatedControlDesigner" />
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
         <altmember cref="M:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Invalidate">
@@ -1263,7 +1263,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnPaint(System.Windows.Forms.PaintEventArgs)" />
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.UpdateDesignTimeHtml" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Invalidate">
@@ -1295,7 +1295,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
@@ -1329,7 +1329,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="InvokeTransactedChange">
@@ -1339,7 +1339,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Wraps a series of changes into a transaction, using the specified parameters that can be rolled back as a unit with the undo functionality of the design host.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="InvokeTransactedChange">
@@ -1401,7 +1401,7 @@
  <paramref name="callback" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.ComponentModel.Design.CheckoutException" />
         <altmember cref="T:System.Web.UI.Design.TransactedChangeCallback" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="InvokeTransactedChange">
@@ -1458,7 +1458,7 @@
         <altmember cref="T:System.ComponentModel.EventDescriptor" />
         <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
         <altmember cref="T:System.Web.UI.Design.TransactedChangeCallback" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="InvokeTransactedChange">
@@ -1522,7 +1522,7 @@
         <altmember cref="T:System.ComponentModel.EventDescriptor" />
         <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
         <altmember cref="T:System.Web.UI.Design.TransactedChangeCallback" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsDirty">
@@ -1613,7 +1613,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.DataBindingCollection.Contains(System.String)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Localize">
@@ -1648,7 +1648,7 @@
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd">ASP.NET Web Page Resources Overview</related>
         <related type="Article" href="https://msdn.microsoft.com/library/fb71af46-bf58-47bc-8e22-6f02c9fe903e">Localizing ASP.NET Web Pages Using Resources</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnAutoFormatApplied">
@@ -1686,7 +1686,7 @@
         <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatStyle" />
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
         <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnBehaviorAttached">
@@ -1766,7 +1766,7 @@
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.DataBindingCollection.Changed" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -1827,7 +1827,7 @@
         <altmember cref="T:System.Web.UI.Design.ViewEventHandler" />
         <altmember cref="T:System.Web.UI.Design.DesignerRegionMouseEventArgs" />
         <altmember cref="T:System.Web.UI.Design.DesignerRegion" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanged">
@@ -1869,7 +1869,7 @@
  When overriding the <see cref="M:System.Web.UI.Design.ControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" /> method in a derived class, make sure that you call the <see cref="M:System.Web.UI.Design.ControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanging">
@@ -1908,7 +1908,7 @@
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.Localize(System.Web.UI.Design.IDesignTimeResourceWriter)" />
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnComponentChanging(System.Object,System.ComponentModel.Design.ComponentChangingEventArgs)" />
         <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnControlResize">
@@ -2001,7 +2001,7 @@
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.SetViewFlags(System.Web.UI.Design.ViewFlags,System.Boolean)" />
         <altmember cref="T:System.Web.UI.Design.ViewEventHandler" />
         <altmember cref="T:System.Web.UI.Design.IControlDesignerView" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -2041,7 +2041,7 @@
           <para>You can directly modify the dictionary that is accessible through the properties parameter, or you can leave it unchanged. If you override the <see cref="M:System.Web.UI.Design.ControlDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method, call the base implementation before you perform your own filtering.</para>
         </block>
         <related type="Article" href="https://msdn.microsoft.com/library/a8c49e6f-5f89-4004-8134-28fad60ada8d">How to: Adjust the Attributes, Events, and Properties of a Component in Design Mode</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RaiseResizeEvent">
@@ -2082,7 +2082,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
         <altmember cref="M:System.ComponentModel.Design.ComponentDesigner.RaiseComponentChanged(System.ComponentModel.MemberDescriptor,System.Object,System.Object)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -2170,7 +2170,7 @@
  -or-  
   
  <paramref name="clone" /> is null.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RootDesigner">
@@ -2201,7 +2201,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.Design.WebFormsRootDesigner" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SetEditableDesignerRegionContent">
@@ -2246,7 +2246,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
         <altmember cref="T:System.Web.UI.Design.EditableDesignerRegion" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SetRegionContent">
@@ -2285,7 +2285,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.Design.IControlDesignerView.SupportsRegions" />
         <altmember cref="Overload:System.Web.UI.Design.ControlDesigner.GetViewRendering" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SetViewFlags">
@@ -2330,7 +2330,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.ViewControl" />
         <altmember cref="T:System.Web.UI.Design.ViewFlags" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Tag">
@@ -2366,7 +2366,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.Design.IControlDesignerTag" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TemplateGroups">
@@ -2408,7 +2408,7 @@
         <altmember cref="T:System.Web.UI.Design.TemplateGroup" />
         <altmember cref="T:System.Web.UI.Design.TemplateDefinition" />
         <altmember cref="T:System.Web.UI.Design.TemplatedControlDesigner" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateDesignTimeHtml">
@@ -2453,7 +2453,7 @@
  ]]></format>
         </remarks>
         <altmember cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -2495,7 +2495,7 @@
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.ViewControl" />
         <altmember cref="Overload:System.Web.UI.Design.ControlDesigner.GetViewRendering" />
         <altmember cref="T:System.Web.UI.Design.WebControls.PreviewControlDesigner" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ViewControl">
@@ -2543,7 +2543,7 @@
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
         <altmember cref="Overload:System.Web.UI.Design.ControlDesigner.GetViewRendering" />
         <altmember cref="T:System.Web.UI.Design.WebControls.PreviewControlDesigner" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ViewControlCreated">
@@ -2576,7 +2576,7 @@
           <see langword="true" />, if a control has been created for viewing on the design surface; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.UsePreviewControl" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Visible">

@@ -28,8 +28,8 @@
   <Docs>
     <summary>Exposes <see cref="T:System.Windows.Controls.TreeViewItem" /> types to UI Automation.</summary>
     <remarks>To be added.</remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/b51206f2-1281-4ad0-9820-ea39d88ae577">UI Automation Text Pattern</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns.md">UI Automation Control Patterns</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-text-pattern.md">UI Automation Text Pattern</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,8 +57,8 @@
         <param name="owner">The <see cref="T:System.Windows.Controls.TreeViewItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TreeViewItemAutomationPeer" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.TreeViewItemAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b51206f2-1281-4ad0-9820-ea39d88ae577">UI Automation Text Pattern</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns.md">UI Automation Control Patterns</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-text-pattern.md">UI Automation Text Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="CreateItemAutomationPeer">
@@ -140,8 +140,8 @@
         <summary>Gets the control type for the <see cref="T:System.Windows.Controls.TreeViewItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TreeViewItemAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
         <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.TreeItem" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b51206f2-1281-4ad0-9820-ea39d88ae577">UI Automation Text Pattern</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns.md">UI Automation Control Patterns</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-text-pattern.md">UI Automation Text Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="GetChildrenCore">
@@ -194,8 +194,8 @@
         <summary>Gets the name of the <see cref="T:System.Windows.Controls.TreeViewItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TreeViewItemAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
         <returns>A string that contains "TreeViewItem".</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b51206f2-1281-4ad0-9820-ea39d88ae577">UI Automation Text Pattern</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns.md">UI Automation Control Patterns</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-text-pattern.md">UI Automation Text Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="GetPattern">
@@ -221,8 +221,8 @@
         <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.TreeViewItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TreeViewItemAutomationPeer" />.</summary>
         <returns>If <paramref name="patternInterface" /> is <see cref="F:System.Windows.Automation.Peers.PatternInterface.ScrollItem" />, <see cref="F:System.Windows.Automation.Peers.PatternInterface.SelectionItem" />, or <see cref="F:System.Windows.Automation.Peers.PatternInterface.ExpandCollapse" />, this method returns the current instance of the <see cref="T:System.Windows.Automation.Peers.TreeViewItemAutomationPeer" />; otherwise, it returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b51206f2-1281-4ad0-9820-ea39d88ae577">UI Automation Text Pattern</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns.md">UI Automation Control Patterns</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-text-pattern.md">UI Automation Text Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="IsOffscreenCore">

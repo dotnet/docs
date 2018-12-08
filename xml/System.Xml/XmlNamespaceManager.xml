@@ -122,7 +122,7 @@ while (reader.Read())
   
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+    <related type="Article" href="~/docs/standard/data/xml/index.md">XML Documents and Data</related>
     <related type="Article" href="https://msdn.microsoft.com/library/682643fc-b848-4e42-8c0d-50deeaeb5f2a">Managing Namespaces in an XML Document</related>
   </Docs>
   <Members>
@@ -183,7 +183,7 @@ while (reader.Read())
         </remarks>
         <exception cref="T:System.NullReferenceException">
           <see langword="null" /> is passed to the constructor</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+        <related type="Article" href="~/docs/standard/data/xml/index.md">XML Documents and Data</related>
         <related type="Article" href="https://msdn.microsoft.com/library/682643fc-b848-4e42-8c0d-50deeaeb5f2a">Managing Namespaces in an XML Document</related>
       </Docs>
     </Member>
@@ -258,7 +258,7 @@ while (reader.Read())
         <exception cref="T:System.ArgumentException">The value for <paramref name="prefix" /> is "xml" or "xmlns".</exception>
         <exception cref="T:System.ArgumentNullException">The value for <paramref name="prefix" /> or <paramref name="uri" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Xml.XmlNamespaceManager.RemoveNamespace(System.String,System.String)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+        <related type="Article" href="~/docs/standard/data/xml/index.md">XML Documents and Data</related>
         <related type="Article" href="https://msdn.microsoft.com/library/682643fc-b848-4e42-8c0d-50deeaeb5f2a">Managing Namespaces in an XML Document</related>
       </Docs>
     </Member>
@@ -313,7 +313,7 @@ while (reader.Read())
  ]]></format>
         </remarks>
         <altmember cref="M:System.Xml.XmlNamespaceManager.LookupNamespace(System.String)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+        <related type="Article" href="~/docs/standard/data/xml/index.md">XML Documents and Data</related>
         <related type="Article" href="https://msdn.microsoft.com/library/682643fc-b848-4e42-8c0d-50deeaeb5f2a">Managing Namespaces in an XML Document</related>
       </Docs>
     </Member>
@@ -371,7 +371,7 @@ Loop
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+        <related type="Article" href="~/docs/standard/data/xml/index.md">XML Documents and Data</related>
         <related type="Article" href="https://msdn.microsoft.com/library/682643fc-b848-4e42-8c0d-50deeaeb5f2a">Managing Namespaces in an XML Document</related>
       </Docs>
     </Member>
@@ -430,7 +430,7 @@ Loop
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+        <related type="Article" href="~/docs/standard/data/xml/index.md">XML Documents and Data</related>
         <related type="Article" href="https://msdn.microsoft.com/library/682643fc-b848-4e42-8c0d-50deeaeb5f2a">Managing Namespaces in an XML Document</related>
       </Docs>
     </Member>
@@ -492,7 +492,7 @@ Loop
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+        <related type="Article" href="~/docs/standard/data/xml/index.md">XML Documents and Data</related>
         <related type="Article" href="https://msdn.microsoft.com/library/682643fc-b848-4e42-8c0d-50deeaeb5f2a">Managing Namespaces in an XML Document</related>
       </Docs>
     </Member>
@@ -551,7 +551,7 @@ Loop
  ]]></format>
         </remarks>
         <altmember cref="M:System.Xml.XmlNamespaceManager.LookupPrefix(System.String)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+        <related type="Article" href="~/docs/standard/data/xml/index.md">XML Documents and Data</related>
         <related type="Article" href="https://msdn.microsoft.com/library/682643fc-b848-4e42-8c0d-50deeaeb5f2a">Managing Namespaces in an XML Document</related>
       </Docs>
     </Member>
@@ -646,7 +646,7 @@ writer.WriteEndElement()
  ]]></format>
         </remarks>
         <altmember cref="M:System.Xml.XmlNamespaceManager.LookupNamespace(System.String)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+        <related type="Article" href="~/docs/standard/data/xml/index.md">XML Documents and Data</related>
         <related type="Article" href="https://msdn.microsoft.com/library/682643fc-b848-4e42-8c0d-50deeaeb5f2a">Managing Namespaces in an XML Document</related>
       </Docs>
     </Member>
@@ -697,7 +697,7 @@ writer.WriteEndElement()
  ]]></format>
         </remarks>
         <altmember cref="T:System.Xml.XmlReader" />
-        <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+        <related type="Article" href="~/docs/standard/data/xml/index.md">XML Documents and Data</related>
         <related type="Article" href="https://msdn.microsoft.com/library/682643fc-b848-4e42-8c0d-50deeaeb5f2a">Managing Namespaces in an XML Document</related>
       </Docs>
     </Member>
@@ -754,7 +754,7 @@ writer.WriteEndElement()
  ]]></format>
         </remarks>
         <altmember cref="M:System.Xml.XmlNamespaceManager.PushScope" />
-        <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+        <related type="Article" href="~/docs/standard/data/xml/index.md">XML Documents and Data</related>
         <related type="Article" href="https://msdn.microsoft.com/library/682643fc-b848-4e42-8c0d-50deeaeb5f2a">Managing Namespaces in an XML Document</related>
       </Docs>
     </Member>
@@ -809,7 +809,7 @@ writer.WriteEndElement()
  ]]></format>
         </remarks>
         <altmember cref="M:System.Xml.XmlNamespaceManager.PopScope" />
-        <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+        <related type="Article" href="~/docs/standard/data/xml/index.md">XML Documents and Data</related>
         <related type="Article" href="https://msdn.microsoft.com/library/682643fc-b848-4e42-8c0d-50deeaeb5f2a">Managing Namespaces in an XML Document</related>
       </Docs>
     </Member>
@@ -854,7 +854,7 @@ writer.WriteEndElement()
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The value of <paramref name="prefix" /> or <paramref name="uri" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Xml.XmlNamespaceManager.AddNamespace(System.String,System.String)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+        <related type="Article" href="~/docs/standard/data/xml/index.md">XML Documents and Data</related>
         <related type="Article" href="https://msdn.microsoft.com/library/682643fc-b848-4e42-8c0d-50deeaeb5f2a">Managing Namespaces in an XML Document</related>
       </Docs>
     </Member>

@@ -56,7 +56,7 @@
     <altmember cref="T:System.Web.UI.Design.EditableDesignerRegion" />
     <altmember cref="T:System.Web.UI.WebControls.Panel" />
     <altmember cref="T:System.Web.UI.Design.WebControls.PanelContainerDesigner" />
-    <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">Introduction to ASP.NET Control Designers</related>
     <related type="Article" href="https://msdn.microsoft.com/library/7aed9eb4-124b-4a15-a0a3-458f37ac9ef7">Attributes and Design-Time Support</related>
   </Docs>
   <Members>
@@ -76,7 +76,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.ContainerControlDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddDesignTimeCssAttributes">
@@ -112,7 +112,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AllowResize">
@@ -146,7 +146,7 @@
         <block subset="none" type="overrides">
           <para>Classes that are derived from the <see cref="T:System.Web.UI.Design.ContainerControlDesigner" /> class can override the <see cref="P:System.Web.UI.Design.ContainerControlDesigner.AllowResize" /> property to indicate that the designer does not support resizing of the control on the design surface.</para>
         </block>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FrameCaption">
@@ -182,7 +182,7 @@
           <para>You can set a different frame caption for a control designer by deriving a class from the <see cref="T:System.Web.UI.Design.ContainerControlDesigner" /> class, and then overriding the <see cref="P:System.Web.UI.Design.ContainerControlDesigner.FrameCaption" /> property.</para>
         </block>
         <altmember cref="P:System.Web.UI.Design.ContainerControlDesigner.FrameStyle" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FrameStyle">
@@ -221,7 +221,7 @@
           <para>When deriving a class from the <see cref="T:System.Web.UI.Design.ContainerControlDesigner" /> class, override the <see cref="P:System.Web.UI.Design.ContainerControlDesigner.FrameStyle" /> property to change the <see cref="T:System.Web.UI.WebControls.Style" /> properties of the frame, such as the border, foreground color, background color, and caption font settings.</para>
         </block>
         <altmember cref="P:System.Web.UI.Design.ContainerControlDesigner.FrameCaption" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeCssAttributes">
@@ -260,7 +260,7 @@
           <para>The default implementation for the <see cref="M:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes" /> method initializes the style attribute collection by using the <see cref="M:System.Web.UI.Design.ContainerControlDesigner.AddDesignTimeCssAttributes(System.Collections.IDictionary)" /> method. To manipulate styles in a control designer that are derived from the <see cref="T:System.Web.UI.Design.ContainerControlDesigner" /> class, override the <see cref="M:System.Web.UI.Design.ContainerControlDesigner.AddDesignTimeCssAttributes(System.Collections.IDictionary)" /> method.</para>
         </block>
         <altmember cref="M:System.Web.UI.Design.ContainerControlDesigner.AddDesignTimeCssAttributes(System.Collections.IDictionary)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -296,7 +296,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetEditableDesignerRegionContent">
@@ -331,7 +331,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Design.ContainerControlDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPersistenceContent">
@@ -421,7 +421,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Design.ContainerControlDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
   </Members>

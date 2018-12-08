@@ -66,7 +66,7 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
   
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+    <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
     <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
   </Docs>
   <Members>
@@ -77,7 +77,7 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
       </AssemblyInfo>
       <Docs>
         <summary>Adds an <see cref="T:System.Data.Odbc.OdbcParameter" /> to the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
@@ -112,7 +112,7 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Data.Odbc.OdbcParameter" /> specified in the <paramref name="value" /> parameter is already added to this or another <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is null.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -153,7 +153,7 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
         <summary>Adds the specified <see cref="T:System.Data.Odbc.OdbcParameter" /> object to the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
         <returns>The index of the new <see cref="T:System.Data.Odbc.OdbcParameter" /> object in the collection.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -197,7 +197,7 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -257,7 +257,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The <paramref name="value" /> parameter is not an <see cref="T:System.Data.Odbc.OdbcParameter" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -303,7 +303,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -351,7 +351,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -362,7 +362,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Adds elements to the end of the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
@@ -393,7 +393,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="values">The <see cref="T:System.Array" /> values to add.</param>
         <summary>Adds an array of values to the end of the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -424,7 +424,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="values">An array of <see cref="T:System.Data.Odbc.OdbcParameter" /> objects to add to the collection.</param>
         <summary>Adds an array of <see cref="T:System.Data.Odbc.OdbcParameter" /> values to the end of the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -458,7 +458,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Adds a value to the end of the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
         <returns>An <see cref="T:System.Data.Odbc.OdbcParameter" /> object.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -487,7 +487,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <Docs>
         <summary>Removes all <see cref="T:System.Data.Odbc.OdbcParameter" /> objects from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -498,7 +498,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Gets a value indicating whether an <see cref="T:System.Data.Odbc.OdbcParameter" /> object exists in the collection.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
@@ -531,7 +531,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <returns>
           <see langword="true" /> if the <see cref="T:System.Data.Odbc.OdbcParameter" /> is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -565,7 +565,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <returns>
           <see langword="true" /> if the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> contains the value otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -609,7 +609,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -620,7 +620,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Copies all the elements of the current <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> to the specified object.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
@@ -653,7 +653,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="index">A 32-bit integer that represents the index in the <see cref="T:System.Array" /> at which copying starts.</param>
         <summary>Copies all the elements of the current <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> to the specified one-dimensional <see cref="T:System.Array" /> starting at the specified destination <see cref="T:System.Array" /> index.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -686,7 +686,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="index">A 32-bit integer that represents the index in the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> at which copying starts.</param>
         <summary>Copies all the elements of the current <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> to the specified <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> starting at the specified destination index.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -723,7 +723,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Returns an Integer that contains the number of elements in the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />. Read-only.</summary>
         <value>The number of elements in the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> as an Integer.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -753,7 +753,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Returns an enumerator that iterates through the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -824,7 +824,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Gets the location of the specified <see cref="T:System.Data.Odbc.OdbcParameter" /> within the collection.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
@@ -856,7 +856,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Gets the location of the specified <see cref="T:System.Data.Odbc.OdbcParameter" /> within the collection.</summary>
         <returns>The zero-based location of the specified <see cref="T:System.Data.Odbc.OdbcParameter" /> within the collection.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -889,7 +889,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Gets the location of the specified <see cref="T:System.Object" /> within the collection.</summary>
         <returns>The zero-based location of the specified <see cref="T:System.Object" /> that is a <see cref="T:System.Data.Odbc.OdbcParameter" /> within the collection.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -922,7 +922,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Gets the location of the specified <see cref="T:System.Data.Odbc.OdbcParameter" /> with the specified name.</summary>
         <returns>The zero-based location of the specified <see cref="T:System.Data.Odbc.OdbcParameter" /> with the specified case-sensitive name.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -933,7 +933,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Inserts a <see cref="T:System.Data.Odbc.OdbcParameter" /> object into the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
@@ -966,7 +966,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="value">A <see cref="T:System.Data.Odbc.OdbcParameter" /> object to be inserted in the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</param>
         <summary>Inserts a <see cref="T:System.Data.Odbc.OdbcParameter" /> object into the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -1000,7 +1000,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="value">A <see cref="T:System.Object" /> to be inserted in the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</param>
         <summary>Inserts a <see cref="T:System.Object" /> into the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -1029,7 +1029,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <value>
           <see langword="true" /> if the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> has a fixed size, otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -1058,7 +1058,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <value>
           <see langword="true" /> if the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> is read only, otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -1087,7 +1087,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <value>
           <see langword="true" /> if the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> is synchronized; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -1098,7 +1098,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Gets or sets the <see cref="T:System.Data.Odbc.OdbcParameter" /> with a specified attribute.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
@@ -1153,7 +1153,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The index specified does not exist.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -1208,7 +1208,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The name specified does not exist.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -1219,7 +1219,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Removes the <see cref="T:System.Data.Odbc.OdbcParameter" /> object from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
@@ -1252,7 +1252,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">The parameter is not a <see cref="T:System.Data.Odbc.OdbcParameter" />.</exception>
         <exception cref="T:System.SystemException">The parameter does not exist in the collection.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -1284,7 +1284,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="value">A <see cref="T:System.Object" /> to be removed from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</param>
         <summary>Removes the <see cref="T:System.Object" /> object from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -1295,7 +1295,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Removes the <see cref="T:System.Data.Odbc.OdbcParameter" /> object from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> at the specified index.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
@@ -1327,7 +1327,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="index">The zero-based index of the <see cref="T:System.Data.Odbc.OdbcParameter" /> object to remove.</param>
         <summary>Removes the <see cref="T:System.Data.Odbc.OdbcParameter" /> from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -1359,7 +1359,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="parameterName">The name of the <see cref="T:System.Data.Odbc.OdbcParameter" /> object to remove.</param>
         <summary>Removes the <see cref="T:System.Data.Odbc.OdbcParameter" /> from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> with the specified parameter name.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
@@ -1449,7 +1449,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />. Read-only.</summary>
         <value>An object that can be used to synchronize access to the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>

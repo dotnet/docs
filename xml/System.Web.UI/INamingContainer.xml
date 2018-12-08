@@ -20,7 +20,7 @@
 ## Remarks  
  Any control that implements this interface creates a new namespace in which all child control ID attributes are guaranteed to be unique within an entire application. The marker provided by this interface allows unique naming of the dynamically generated server control instances within the Web server controls that support data binding. These controls include the <xref:System.Web.UI.WebControls.Repeater>, <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.DataList>, <xref:System.Web.UI.WebControls.CheckBoxList>, <xref:System.Web.UI.WebControls.ChangePassword>, <xref:System.Web.UI.WebControls.LoginView>, <xref:System.Web.UI.WebControls.Menu>, <xref:System.Web.UI.WebControls.SiteMapNodeItem>, and <xref:System.Web.UI.WebControls.RadioButtonList> controls.  
   
- When you develop templated controls, you should implement this interface to avoid naming conflicts on a page. For more information, see [ASP.NET Control Designers Overview](https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810).  
+ When you develop templated controls, you should implement this interface to avoid naming conflicts on a page. For more information, see [ASP.NET Control Designers Overview](https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)).  
   
    
   
@@ -34,7 +34,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.Control" />
     <altmember cref="T:System.Web.UI.Page" />
-    <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
   </Docs>
   <Members />
 </Type>

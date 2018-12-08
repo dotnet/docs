@@ -17,8 +17,8 @@
   <Docs>
     <summary>Exposes <see cref="T:System.Windows.Documents.TextElement" /> types to UI Automation.</summary>
     <remarks>To be added.</remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/b51206f2-1281-4ad0-9820-ea39d88ae577">UI Automation Text Pattern</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns.md">UI Automation Control Patterns</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-text-pattern.md">UI Automation Text Pattern</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,8 +46,8 @@
         <param name="owner">The <see cref="T:System.Windows.Documents.TextElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextElementAutomationPeer" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.TextElementAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b51206f2-1281-4ad0-9820-ea39d88ae577">UI Automation Text Pattern</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns.md">UI Automation Control Patterns</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-text-pattern.md">UI Automation Text Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="GetBoundingRectangleCore">
@@ -79,8 +79,8 @@
         <summary>Gets the <see cref="T:System.Windows.Rect" /> representing the bounding rectangle of the <see cref="T:System.Windows.Documents.TextElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetBoundingRectangle" />.</summary>
         <returns>The <see cref="T:System.Windows.Rect" /> that contains the coordinates of the element, or <see cref="P:System.Windows.Rect.Empty" /> if the element is not a <see cref="T:System.Windows.Interop.HwndSource" /> and a <see cref="T:System.Windows.PresentationSource" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b51206f2-1281-4ad0-9820-ea39d88ae577">UI Automation Text Pattern</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns.md">UI Automation Control Patterns</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-text-pattern.md">UI Automation Text Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="GetChildrenCore">
@@ -112,8 +112,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b51206f2-1281-4ad0-9820-ea39d88ae577">UI Automation Text Pattern</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns.md">UI Automation Control Patterns</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-text-pattern.md">UI Automation Text Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="GetClickablePointCore">
@@ -145,8 +145,8 @@
         <summary>Gets a <see cref="T:System.Windows.Point" /> that represents the clickable space that is on the <see cref="T:System.Windows.Documents.TextElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClickablePoint" />.</summary>
         <returns>The <see cref="T:System.Windows.Point" /> on the element that allows a click. The point values are (<see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NaN" />) if the element is not a <see cref="T:System.Windows.Interop.HwndSource" /> and a <see cref="T:System.Windows.PresentationSource" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b51206f2-1281-4ad0-9820-ea39d88ae577">UI Automation Text Pattern</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns.md">UI Automation Control Patterns</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-text-pattern.md">UI Automation Text Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="IsOffscreenCore">
@@ -179,8 +179,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreenCore" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b51206f2-1281-4ad0-9820-ea39d88ae577">UI Automation Text Pattern</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns.md">UI Automation Control Patterns</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-text-pattern.md">UI Automation Text Pattern</related>
       </Docs>
     </Member>
   </Members>

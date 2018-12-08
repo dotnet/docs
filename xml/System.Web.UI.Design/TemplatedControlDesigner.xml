@@ -39,7 +39,7 @@
     </block>
     <altmember cref="T:System.ComponentModel.Design.IDesigner" />
     <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
-    <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,7 +61,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
         <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ActiveTemplateEditingFrame">
@@ -99,7 +99,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CanEnterTemplateMode">
@@ -129,7 +129,7 @@
         <value>
           <see langword="true" /> if the designer will allow the viewing or editing of templates; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateTemplateEditingFrame">
@@ -162,7 +162,7 @@
         <summary>When overridden in a derived class, creates a template editing frame for the specified verb.</summary>
         <returns>The new template editing frame.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataBindingsEnabled">
@@ -229,7 +229,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ExitTemplateMode">
@@ -277,7 +277,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetCachedTemplateEditingVerbs">
@@ -316,7 +316,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPersistInnerHtml">
@@ -380,7 +380,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetTemplateContainerDataSource">
@@ -413,7 +413,7 @@
         <summary>Gets the data source of the template's container.</summary>
         <returns>The data source of the container of the specified template.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetTemplateContent">
@@ -451,7 +451,7 @@
         <summary>When overridden in a derived class, gets the template's content.</summary>
         <returns>The content of the template.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetTemplateEditingVerbs">
@@ -481,7 +481,7 @@
         <summary>Gets the template editing verbs available to the designer.</summary>
         <returns>The template editing verbs available to the designer.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetTemplateFromText">
@@ -514,7 +514,7 @@
         <summary>Creates a template from the specified text.</summary>
         <returns>An <see cref="T:System.Web.UI.ITemplate" /> from the specified text.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetTemplatePropertyParentType">
@@ -556,7 +556,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetTextFromTemplate">
@@ -586,7 +586,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="template" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HidePropertiesInTemplateMode">
@@ -681,7 +681,7 @@ The <xref:System.Web.UI.Design.ControlDesigner.ID> property is never hidden.
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnBehaviorAttached">
@@ -719,7 +719,7 @@ The <xref:System.Web.UI.Design.ControlDesigner.ID> property is never hidden.
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanged">
@@ -755,7 +755,7 @@ The <xref:System.Web.UI.Design.ControlDesigner.ID> property is never hidden.
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnSetParent">
@@ -779,7 +779,7 @@ The <xref:System.Web.UI.Design.ControlDesigner.ID> property is never hidden.
       <Docs>
         <summary>Provides an opportunity to perform additional processing when the parent of this designer is changed.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnTemplateModeChanged">
@@ -824,7 +824,7 @@ The <xref:System.Web.UI.Design.ControlDesigner.ID> property is never hidden.
         <altmember cref="T:System.Web.UI.Design.ViewEventHandler" />
         <altmember cref="T:System.Web.UI.Design.TemplateModeChangedEventArgs" />
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.InTemplateMode" />
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -880,7 +880,7 @@ This method is called immediately before its corresponding Post method. If you a
       <Docs>
         <summary>Saves the active template editing frame.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SetTemplateContent">
@@ -916,7 +916,7 @@ This method is called immediately before its corresponding Post method. If you a
         <param name="templateContent">The content to set for the template.</param>
         <summary>When overridden in a derived class, sets the specified template's content to the specified content.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TemplateGroups">
@@ -939,7 +939,7 @@ This method is called immediately before its corresponding Post method. If you a
         <summary>Gets a collection of template groups, each containing a template definition.</summary>
         <value>A collection of <see cref="T:System.Web.UI.Design.TemplateGroup" /> elements.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateDesignTimeHtml">
@@ -970,7 +970,7 @@ This method is called immediately before its corresponding Post method. If you a
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
   </Members>

@@ -17,7 +17,7 @@
   <Docs>
     <summary>Exposes <see cref="T:System.Windows.Controls.ToolBar" /> types to UI Automation.</summary>
     <remarks>To be added.</remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns.md">UI Automation Control Patterns</related>
     <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
   </Docs>
   <Members>
@@ -46,7 +46,7 @@
         <param name="owner">The <see cref="T:System.Windows.Controls.ToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ToolBarAutomationPeer" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.ToolBarAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns.md">UI Automation Control Patterns</related>
         <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
@@ -71,7 +71,7 @@
         <summary>Gets the control type for the <see cref="T:System.Windows.Controls.ToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ToolBarAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
         <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.ToolBar" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns.md">UI Automation Control Patterns</related>
         <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
@@ -96,7 +96,7 @@
         <summary>Gets the name of the <see cref="T:System.Windows.Controls.ToolBar" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ToolBarAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
         <returns>A string that contains the word "ToolBar".</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns.md">UI Automation Control Patterns</related>
         <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>

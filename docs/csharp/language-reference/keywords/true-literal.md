@@ -16,6 +16,6 @@ Represents the [bool](bool.md) value `true`:
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [true operator](true-operator.md)
 - [false](false.md)
+- [true and false operators](true-false-operators.md)
 - [?: Operator](../operators/conditional-operator.md)

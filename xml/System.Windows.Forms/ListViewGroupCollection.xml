@@ -317,7 +317,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot add a <xref:System.Windows.Forms.ListViewGroup> to the collection more than once. However, attempting to add another copy will not throw an exception. Instead, the addition will simply fail. The <xref:System.Windows.Forms.ListViewGroupCollection.Add%2A> method will return a value of –1 in this case. The <xref:System.Windows.Forms.ListViewGroupCollection.AddRange%2A> and <xref:System.Windows.Forms.ListViewGroupCollection.Insert%2A> methods, however, do not have return values. When adding groups using one of these methods, use the <xref:System.Windows.Forms.ListViewGroupCollection.Contains%2A> method to determine whether a particular <xref:System.Windows.Forms.ListViewGroup> is already in the collection.  
+ You cannot add a <xref:System.Windows.Forms.ListViewGroup> to the collection more than once. However, attempting to add another copy will not throw an exception. Instead, the addition will simply fail. The <xref:System.Windows.Forms.ListViewGroupCollection.Add%2A> method will return a value of -1 in this case. The <xref:System.Windows.Forms.ListViewGroupCollection.AddRange%2A> and <xref:System.Windows.Forms.ListViewGroupCollection.Insert%2A> methods, however, do not have return values. When adding groups using one of these methods, use the <xref:System.Windows.Forms.ListViewGroupCollection.Contains%2A> method to determine whether a particular <xref:System.Windows.Forms.ListViewGroup> is already in the collection.  
   
  ]]></format>
         </remarks>

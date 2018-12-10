@@ -126,7 +126,7 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
    
   
 ## Examples  
- The following code example creates four <xref:System.Windows.Forms.Binding> objects to bind five controls—a <xref:System.Windows.Forms.DateTimePicker> and four <xref:System.Windows.Forms.TextBox> controls—to several data sources. The <xref:System.Windows.Forms.BindingContext> is then used to get the <xref:System.Windows.Forms.BindingManagerBase> for each data source.  
+ The following code example creates four <xref:System.Windows.Forms.Binding> objects to bind five controls - a <xref:System.Windows.Forms.DateTimePicker> and four <xref:System.Windows.Forms.TextBox> controls - to several data sources. The <xref:System.Windows.Forms.BindingContext> is then used to get the <xref:System.Windows.Forms.BindingManagerBase> for each data source.  
   
  [!code-cpp[Classic BindingContext Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic BindingContext Example/CPP/source.cpp#1)]
  [!code-csharp[Classic BindingContext Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic BindingContext Example/CS/source.cs#1)]

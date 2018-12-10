@@ -294,7 +294,7 @@
   
  [!code-xaml[MenuItems_snip#MenuItemCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItems_snip/CSharp/Pane1.xaml#menuitemcommand)]  
   
- A command is raised when a <xref:System.Windows.Controls.MenuItem> is clicked—just after the <xref:System.Windows.Controls.MenuItem.Click> event. The command is raised on the element according to the following priorities:  
+ A command is raised when a <xref:System.Windows.Controls.MenuItem> is clicked - just after the <xref:System.Windows.Controls.MenuItem.Click> event. The command is raised on the element according to the following priorities:  
   
 1.  If <xref:System.Windows.Controls.MenuItem.CommandTarget%2A> is set on the <xref:System.Windows.Controls.MenuItem>, that element is used.  
   

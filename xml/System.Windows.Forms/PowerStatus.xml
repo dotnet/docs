@@ -143,7 +143,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the approximate number of seconds of battery time remaining.</summary>
-        <value>The approximate number of seconds of battery life remaining, or –1 if the approximate remaining battery life is unknown.</value>
+        <value>The approximate number of seconds of battery life remaining, or -1 if the approximate remaining battery life is unknown.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.PowerStatus.BatteryChargeStatus" />
         <altmember cref="P:System.Windows.Forms.PowerStatus.BatteryFullLifetime" />

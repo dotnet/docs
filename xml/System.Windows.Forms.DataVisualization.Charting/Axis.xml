@@ -26,7 +26,7 @@
 ## Remarks  
  This class encapsulates all the functionality for axes in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control, and is exposed by the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisX%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisY%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisX2%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisY2%2A> properties of <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> objects.  
   
- For all charts—except bar, stacked bar, pie and doughnut—the primary and secondary axes are as follows:  
+ For all charts - except bar, stacked bar, pie and doughnut - the primary and secondary axes are as follows:  
   
 |Axis Type|Description|  
 |---------------|-----------------|  
@@ -37,7 +37,7 @@
   
  Bar and stacked-bar charts have their axes rotated 90 degrees clockwise, so the primary X axis for these two chart types is the left-vertical axis.  
   
- **Note** There can be only one set of axes—two vertical and two horizontal—for each <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object.  
+ **Note** There can be only one set of axes - two vertical and two horizontal - for each <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object.  
   
  The <xref:System.Windows.Forms.DataVisualization.Charting.Axis> class also contains several methods that can be used to convert axis values to absolute pixel coordinates, which are useful for 2D custom drawing, or to relative coordinates, which are useful for 3D custom drawing. Absolute and relative coordinates can also be converted to axis values.  
   
@@ -559,7 +559,7 @@
   
  The <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset%2A> property of the tick marks, labels and grid lines of an axis has priority over the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset%2A> property setting of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object.  
   
- A value of zero represents an "Auto" value. Also, <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Interval%2A> cannot be set to not set (that is, a <xref:System.Double.NaN>). If you assign <xref:System.Double.NaN>, a value of "Auto"—that is, a value of zero—will be used instead.  
+ A value of zero represents an "Auto" value. Also, <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Interval%2A> cannot be set to not set (that is, a <xref:System.Double.NaN>). If you assign <xref:System.Double.NaN>, a value of "Auto" - that is, a value of zero - will be used instead.  
   
  **Note** The minor grid lines and tick marks of an axis never use this property for their interval offset.  
   

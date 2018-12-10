@@ -118,12 +118,12 @@
       <Docs>
         <param name="position">A <see cref="T:System.Windows.Documents.TextPointer" /> that specifies a position to compare to the current position.</param>
         <summary>Performs an ordinal comparison between the positions specified by the current <see cref="T:System.Windows.Documents.TextPointer" /> and a second specified <see cref="T:System.Windows.Documents.TextPointer" />.</summary>
-        <returns>–1 if the current <see cref="T:System.Windows.Documents.TextPointer" /> precedes <paramref name="position" />; 0 if the locations are the same; +1 if the current <see cref="T:System.Windows.Documents.TextPointer" /> follows <paramref name="position" />.</returns>
+        <returns>-1 if the current <see cref="T:System.Windows.Documents.TextPointer" /> precedes <paramref name="position" />; 0 if the locations are the same; +1 if the current <see cref="T:System.Windows.Documents.TextPointer" /> follows <paramref name="position" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A value of –1 indicates that the position specified by the current <xref:System.Windows.Documents.TextPointer> precedes the position specified by `position`.  A value of 0 indicates that the indicated positions are equal.  A value of positive +1 indicates that the position specified by the current <xref:System.Windows.Documents.TextPointer> follows the position specified by `position`.  
+ A value of -1 indicates that the position specified by the current <xref:System.Windows.Documents.TextPointer> precedes the position specified by `position`.  A value of 0 indicates that the indicated positions are equal.  A value of positive +1 indicates that the position specified by the current <xref:System.Windows.Documents.TextPointer> follows the position specified by `position`.  
   
    
   
@@ -342,7 +342,7 @@
 ## Remarks  
  An insertion position is a position where new content may be added without breaking any semantic rules for the associated content.  In practice, an insertion position is anywhere in content where a caret may be positioned.  An example of a valid <xref:System.Windows.Documents.TextPointer> position that is not an insertion position is the position between two adjacent <xref:System.Windows.Documents.Paragraph> tags (that is, between the closing tag of the preceding paragraph and the opening tag of the next paragraph).  
   
- If the <xref:System.Windows.Documents.TextPointer> already points to a valid insertion position, but the closing tag for a non-empty formatting sequence directly follows that position in the given direction, then the <xref:System.Windows.Documents.TextPointer> returned by this method is adjusted to point to the insertion position just after the close of the formatting sequence. For example, consider the markup sequence `<Bold>a</Bold>b`. Note that there are two insertion positions between the letters `a` and `b` — one that precedes the closing `Bold` tag, and one directly following the closing `Bold` tag. If <xref:System.Windows.Documents.TextPointer.GetInsertionPosition%2A> is called on a <xref:System.Windows.Documents.TextPointer> to the position directly after the letter `a` and before of the closing `Bold` tag, and with a `direction` of <xref:System.Windows.Documents.LogicalDirection.Forward>, the returned <xref:System.Windows.Documents.TextPointer> is adjusted to point to the position just before the letter `b`, after the closing `Bold` tag. A similar adjustment is made for opening formatting tags when working in the opposite logical direction. This method is intended to provide a means of disambiguation between insertion positions in similar cases.  
+ If the <xref:System.Windows.Documents.TextPointer> already points to a valid insertion position, but the closing tag for a non-empty formatting sequence directly follows that position in the given direction, then the <xref:System.Windows.Documents.TextPointer> returned by this method is adjusted to point to the insertion position just after the close of the formatting sequence. For example, consider the markup sequence `<Bold>a</Bold>b`. Note that there are two insertion positions between the letters `a` and `b` - one that precedes the closing `Bold` tag, and one directly following the closing `Bold` tag. If <xref:System.Windows.Documents.TextPointer.GetInsertionPosition%2A> is called on a <xref:System.Windows.Documents.TextPointer> to the position directly after the letter `a` and before of the closing `Bold` tag, and with a `direction` of <xref:System.Windows.Documents.LogicalDirection.Forward>, the returned <xref:System.Windows.Documents.TextPointer> is adjusted to point to the position just before the letter `b`, after the closing `Bold` tag. A similar adjustment is made for opening formatting tags when working in the opposite logical direction. This method is intended to provide a means of disambiguation between insertion positions in similar cases.  
   
  This method can also be used to be selective about insertion points when a sequence of structural tags is involved. For example, when at a position between closing and opening paragraph tags, the direction parameter can be used to select the closest insertion point at the beginning of the following paragraph (by specifying <xref:System.Windows.Documents.LogicalDirection.Forward?displayProperty=nameWithType>) or at the end of the preceding paragraph (by specifying <xref:System.Windows.Documents.LogicalDirection.Backward?displayProperty=nameWithType>).  
   
@@ -618,7 +618,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates a use for this method. The example uses the <xref:System.Windows.Documents.TextPointer.GetPointerContext%2A> method to implement an algorithm for calculating the balance of opening and closing element tags between two specified <xref:System.Windows.Documents.TextPointer> positions.  Each opening element tag is counted as +1, and each closing element tag is counted as –1.  
+ The following example demonstrates a use for this method. The example uses the <xref:System.Windows.Documents.TextPointer.GetPointerContext%2A> method to implement an algorithm for calculating the balance of opening and closing element tags between two specified <xref:System.Windows.Documents.TextPointer> positions.  Each opening element tag is counted as +1, and each closing element tag is counted as -1.  
   
  [!code-csharp[TextPointer_Snippets#_TextPointer_GetOffsetToPosition2](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textpointer_getoffsettoposition2)]
  [!code-vb[TextPointer_Snippets#_TextPointer_GetOffsetToPosition2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textpointer_getoffsettoposition2)]  
@@ -1143,7 +1143,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As an example of how this property is used, the <xref:System.Windows.Documents.LogicalDirection> of the <xref:System.Windows.Documents.TextPointer> returned by a hit test method gives a hit that is between two characters of text. The logical direction specifies which of the two characters was actually hit—the left or the right.  
+ As an example of how this property is used, the <xref:System.Windows.Documents.LogicalDirection> of the <xref:System.Windows.Documents.TextPointer> returned by a hit test method gives a hit that is between two characters of text. The logical direction specifies which of the two characters was actually hit - the left or the right.  
   
  ]]></format>
         </remarks>

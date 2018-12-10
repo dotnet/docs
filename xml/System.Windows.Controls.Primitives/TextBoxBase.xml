@@ -2674,12 +2674,12 @@ If this property is `null`, selected text is not rendered.
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the number of actions stored in the undo queue.</summary>
-        <value>The number of actions stored in the undo queue. The default is –1, which means the undo queue is limited to the memory that is available.</value>
+        <value>The number of actions stored in the undo queue. The default is -1, which means the undo queue is limited to the memory that is available.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> clears the undo queue. When <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> is set to –1, the undo queue is limited only by the memory that is available. When <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> is set to 0, undo is disabled on the <xref:System.Windows.Controls.Primitives.TextBoxBase>.  
+ Setting <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> clears the undo queue. When <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> is set to -1, the undo queue is limited only by the memory that is available. When <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> is set to 0, undo is disabled on the <xref:System.Windows.Controls.Primitives.TextBoxBase>.  
   
  <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   

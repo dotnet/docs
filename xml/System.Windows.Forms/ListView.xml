@@ -1827,7 +1827,7 @@
 ## Remarks  
  The search is case-insensitive.  
   
- The `text` parameter can specify a substring of the desired matching text. In addition, this method will return the first item that starts with the specified text. For example, if a <xref:System.Windows.Forms.ListView> contains two list items—the first item's text set to "angle bracket" and the second item's text set to "bracket"—a call to <xref:System.Windows.Forms.ListView.FindItemWithText%2A> passing `brack` as the parameter will return the item whose text is "bracket".  
+ The `text` parameter can specify a substring of the desired matching text. In addition, this method will return the first item that starts with the specified text. For example, if a <xref:System.Windows.Forms.ListView> contains two list items - the first item's text set to "angle bracket" and the second item's text set to "bracket" - a call to <xref:System.Windows.Forms.ListView.FindItemWithText%2A> passing `brack` as the parameter will return the item whose text is "bracket".  
   
  The <xref:System.Windows.Forms.ListView.FindItemWithText%2A> method returns `null` if the list is empty or there is no matching item.  
   
@@ -1882,7 +1882,7 @@
 ## Remarks  
  The search is case-insensitive.  
   
- The `text` parameter can specify a substring of the desired matching text. In addition, this method will return the first item that starts with the specified text. For example, if a <xref:System.Windows.Forms.ListView> contains two list items—the first item's text set to "angle bracket" and the second item's text set to "bracket"—a call to <xref:System.Windows.Forms.ListView.FindItemWithText%2A> passing "brack" as the parameter will return the item whose text is "bracket".  
+ The `text` parameter can specify a substring of the desired matching text. In addition, this method will return the first item that starts with the specified text. For example, if a <xref:System.Windows.Forms.ListView> contains two list items - the first item's text set to "angle bracket" and the second item's text set to "bracket" - a call to <xref:System.Windows.Forms.ListView.FindItemWithText%2A> passing "brack" as the parameter will return the item whose text is "bracket".  
   
  The <xref:System.Windows.Forms.ListView.FindItemWithText%2A> method returns `null` if the list is empty or there is no matching item.  
   
@@ -1931,7 +1931,7 @@
   
  The search is case-insensitive.  
   
- The `text` parameter can specify a substring of the desired matching text. This method will return the first item that starts with the specified text, unless `false` is passed in for `isPrefixSearch`. For example, if a <xref:System.Windows.Forms.ListView> contains two list items—the first item's text set to "angle bracket" and the second item's text set to "bracket"—a call to <xref:System.Windows.Forms.ListView.FindItemWithText%2A> passing "brack" as the search text will return the item whose text is "bracket". If `isPrefixSearch` is set to `false`, this call will return `null`.  
+ The `text` parameter can specify a substring of the desired matching text. This method will return the first item that starts with the specified text, unless `false` is passed in for `isPrefixSearch`. For example, if a <xref:System.Windows.Forms.ListView> contains two list items - the first item's text set to "angle bracket" and the second item's text set to "bracket" - a call to <xref:System.Windows.Forms.ListView.FindItemWithText%2A> passing "brack" as the search text will return the item whose text is "bracket". If `isPrefixSearch` is set to `false`, this call will return `null`.  
   
  ]]></format>
         </remarks>

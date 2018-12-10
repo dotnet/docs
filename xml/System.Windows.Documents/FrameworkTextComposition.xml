@@ -78,7 +78,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Documents.FrameworkTextComposition.CompositionLength%2A> property indicates how many characters have been entered since the last <xref:System.Windows.Input.TextCompositionManager.TextInput> event. This property is only meaningful when the <xref:System.Windows.Input.TextCompositionManager.TextInputStart> or <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate> event occurs.  When the <xref:System.Windows.Input.TextCompositionManager.TextInput> event occurs, <xref:System.Windows.Documents.FrameworkTextComposition.CompositionLength%2A> is –1, and the <xref:System.Windows.Documents.FrameworkTextComposition.ResultLength%2A> property indicates the length of the composition.  
+ The <xref:System.Windows.Documents.FrameworkTextComposition.CompositionLength%2A> property indicates how many characters have been entered since the last <xref:System.Windows.Input.TextCompositionManager.TextInput> event. This property is only meaningful when the <xref:System.Windows.Input.TextCompositionManager.TextInputStart> or <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate> event occurs.  When the <xref:System.Windows.Input.TextCompositionManager.TextInput> event occurs, <xref:System.Windows.Documents.FrameworkTextComposition.CompositionLength%2A> is -1, and the <xref:System.Windows.Documents.FrameworkTextComposition.ResultLength%2A> property indicates the length of the composition.  
   
  <xref:System.Windows.Documents.FrameworkTextComposition.CompositionLength%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -109,7 +109,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is only meaningful when the <xref:System.Windows.Input.TextCompositionManager.TextInputStart> or <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate> event occurs.  When the <xref:System.Windows.Input.TextCompositionManager.TextInput> event occurs, <xref:System.Windows.Documents.FrameworkTextComposition.CompositionLength%2A> is –1, and the <xref:System.Windows.Documents.FrameworkTextComposition.ResultOffset%2A> property indicates the position of the composition text.  
+ This property is only meaningful when the <xref:System.Windows.Input.TextCompositionManager.TextInputStart> or <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate> event occurs.  When the <xref:System.Windows.Input.TextCompositionManager.TextInput> event occurs, <xref:System.Windows.Documents.FrameworkTextComposition.CompositionLength%2A> is -1, and the <xref:System.Windows.Documents.FrameworkTextComposition.ResultOffset%2A> property indicates the position of the composition text.  
   
  <xref:System.Windows.Documents.FrameworkTextComposition.CompositionOffset%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -140,7 +140,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Input.TextCompositionManager.TextInputStart> or <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate> event occurs, <xref:System.Windows.Documents.FrameworkTextComposition.ResultLength%2A> is –1.  
+ When the <xref:System.Windows.Input.TextCompositionManager.TextInputStart> or <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate> event occurs, <xref:System.Windows.Documents.FrameworkTextComposition.ResultLength%2A> is -1.  
   
  <xref:System.Windows.Documents.FrameworkTextComposition.ResultLength%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -171,7 +171,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Input.TextCompositionManager.TextInputStart> or <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate> event occurs, <xref:System.Windows.Documents.FrameworkTextComposition.ResultLength%2A> is –1.  
+ When the <xref:System.Windows.Input.TextCompositionManager.TextInputStart> or <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate> event occurs, <xref:System.Windows.Documents.FrameworkTextComposition.ResultLength%2A> is -1.  
   
  <xref:System.Windows.Documents.FrameworkTextComposition.ResultOffset%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   

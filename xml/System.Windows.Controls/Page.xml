@@ -233,7 +233,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Controls.Page> can have only a single child element. All other elements on a <xref:System.Windows.Controls.Page> must be descendents of that element. Typically, the content of a <xref:System.Windows.Controls.Page> hosts a layout element—such as <xref:System.Windows.Controls.Grid>, <xref:System.Windows.Controls.StackPanel>, and <xref:System.Windows.Controls.DockPanel>—that hosts the content of the <xref:System.Windows.Controls.Page>.  
+ A <xref:System.Windows.Controls.Page> can have only a single child element. All other elements on a <xref:System.Windows.Controls.Page> must be descendents of that element. Typically, the content of a <xref:System.Windows.Controls.Page> hosts a layout element - such as <xref:System.Windows.Controls.Grid>, <xref:System.Windows.Controls.StackPanel>, and <xref:System.Windows.Controls.DockPanel> - that hosts the content of the <xref:System.Windows.Controls.Page>.  
   
 <a name="dependencyPropertyInfo_PageContent"></a>   
 ## Dependency Property Information  

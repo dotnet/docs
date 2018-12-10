@@ -74,7 +74,7 @@
       <Docs>
         <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
         <param name="handler">The event handler to be added.</param>
-        <summary>Adds a handler for the <see langword="ToolTipService.ToolTipClosing" /> attached event.</summary>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Controls.ToolTipService.ToolTipClosing" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,7 +100,7 @@
       <Docs>
         <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
         <param name="handler">The event handler to be added.</param>
-        <summary>Adds a handler for the <see langword="ToolTipService.ToolTipOpening" /> attached event.</summary>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Controls.ToolTipService.ToolTipOpening" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,7 +159,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="ToolTipService.BetweenShowDelay" /> attached property.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ToolTipService.BetweenShowDelay" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,8 +189,8 @@
       </Parameters>
       <Docs>
         <param name="element">The object from which the property value is read.</param>
-        <summary>Gets the value of the <see langword="ToolTipService.BetweenShowDelay" /> attached property for an object.</summary>
-        <returns>The object's <see langword="ToolTipService.BetweenShowDelay" /> property value.</returns>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ToolTipService.BetweenShowDelay" /> attached property for an object.</summary>
+        <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.BetweenShowDelay" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -232,8 +232,8 @@
       </Parameters>
       <Docs>
         <param name="element">The object from which the property value is read.</param>
-        <summary>Gets the value of the <see langword="ToolTipService.HasDropShadow" /> attached property for an object.</summary>
-        <returns>The object's <see langword="ToolTipService.HasDropShadow" /> property value.</returns>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ToolTipService.HasDropShadow" /> attached property for an object.</summary>
+        <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.HasDropShadow" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -278,8 +278,8 @@
       </Parameters>
       <Docs>
         <param name="element">The object from which the property value is read.</param>
-        <summary>Gets the value of the <see langword="ToolTipService.HorizontalOffset" /> attached property for an object.</summary>
-        <returns>The object's <see langword="ToolTipService.HorizontalOffset" /> property value.</returns>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ToolTipService.HorizontalOffset" /> attached property for an object.</summary>
+        <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.HorizontalOffset" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -321,8 +321,8 @@
       </Parameters>
       <Docs>
         <param name="element">The object from which the property value is read.</param>
-        <summary>Gets the value of the <see langword="ToolTipService.InitialShowDelay" /> attached property for an object.</summary>
-        <returns>The object's <see langword="ToolTipService.InitialShowDelay" /> property value.</returns>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ToolTipService.InitialShowDelay" /> attached property for an object.</summary>
+        <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.InitialShowDelay" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -364,8 +364,8 @@
       </Parameters>
       <Docs>
         <param name="element">The object from which the property value is read.</param>
-        <summary>Gets the value of the <see langword="ToolTipService.IsEnabled" /> attached property for an object.</summary>
-        <returns>The object's <see langword="ToolTipService.IsEnabled" /> property value.</returns>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ToolTipService.IsEnabled" /> attached property for an object.</summary>
+        <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.IsEnabled" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -407,8 +407,8 @@
       </Parameters>
       <Docs>
         <param name="element">The object from which the property value is read.</param>
-        <summary>Gets the value of the <see langword="ToolTipService.IsOpen" /> attached property for an object.</summary>
-        <returns>The object's <see langword="ToolTipService.IsOpen" /> property value.</returns>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ToolTipService.IsOpen" /> attached property for an object.</summary>
+        <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.IsOpen" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -449,8 +449,8 @@
       </Parameters>
       <Docs>
         <param name="element">The object from which the property value is read.</param>
-        <summary>Gets the value of the <see langword="ToolTipService.Placement" /> attached property for an object.</summary>
-        <returns>The object's <see langword="ToolTipService.Placement" /> property value.</returns>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ToolTipService.Placement" /> attached property for an object.</summary>
+        <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.Placement" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -492,8 +492,8 @@
       </Parameters>
       <Docs>
         <param name="element">The object from which the property value is read.</param>
-        <summary>Gets the value of the <see langword="ToolTipService.PlacementRectangle" /> attached property for an object.</summary>
-        <returns>The object's <see langword="ToolTipService.PlacementRectangle" /> property value.</returns>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ToolTipService.PlacementRectangle" /> attached property for an object.</summary>
+        <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.PlacementRectangle" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -535,8 +535,8 @@
       </Parameters>
       <Docs>
         <param name="element">The object from which the property value is read.</param>
-        <summary>Gets the value of the <see langword="ToolTipService.PlacementTarget" /> attached property for an object.</summary>
-        <returns>The object's <see langword="ToolTipService.PlacementTarget" /> property value.</returns>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ToolTipService.PlacementTarget" /> attached property for an object.</summary>
+        <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.PlacementTarget" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -578,8 +578,8 @@
       </Parameters>
       <Docs>
         <param name="element">The object from which the property value is read.</param>
-        <summary>Gets the value of the <see langword="ToolTipService.ShowDuration" /> attached property for an object.</summary>
-        <returns>The object's <see langword="ToolTipService.ShowDuration" /> property value.</returns>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ToolTipService.ShowDuration" /> attached property for an object.</summary>
+        <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.ShowDuration" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -621,8 +621,8 @@
       </Parameters>
       <Docs>
         <param name="element">The object from which the property value is read.</param>
-        <summary>Gets the value of the <see langword="ToolTipService.ShowOnDisabled" /> attached property for an object.</summary>
-        <returns>The object's <see langword="ToolTipService.ShowOnDisabled" /> property value.</returns>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ToolTipService.ShowOnDisabled" /> attached property for an object.</summary>
+        <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.ShowOnDisabled" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -664,8 +664,8 @@
       </Parameters>
       <Docs>
         <param name="element">The object from which the property value is read.</param>
-        <summary>Gets the value of the <see langword="ToolTipService.ToolTip" /> attached property for an object.</summary>
-        <returns>The object's <see langword="ToolTipService.ToolTip" /> property value.</returns>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ToolTipService.ToolTip" /> attached property for an object.</summary>
+        <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.ToolTip" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -710,8 +710,8 @@
       </Parameters>
       <Docs>
         <param name="element">The object from which the property value is read.</param>
-        <summary>Gets the value of the <see langword="ToolTipService.VerticalOffset" /> attached property for an object.</summary>
-        <returns>The object's <see langword="ToolTipService.VerticalOffset" /> property value.</returns>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.ToolTipService.VerticalOffset" /> attached property for an object.</summary>
+        <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.VerticalOffset" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -790,7 +790,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="ToolTipService.HasDropShadow" /> attached property.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ToolTipService.HasDropShadow" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -877,7 +877,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="ToolTipService.HorizontalOffset" /> attached property.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ToolTipService.HorizontalOffset" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -944,7 +944,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="ToolTipService.InitialShowDelay" /> attached property.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ToolTipService.InitialShowDelay" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1011,7 +1011,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="ToolTipService.IsEnabled" /> attached property.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ToolTipService.IsEnabled" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1059,7 +1059,7 @@ This is an attached property. For information about how to get the value of this
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="ToolTipService.IsOpen" /> attached property.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ToolTipService.IsOpen" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1116,7 +1116,7 @@ This is an attached property. For information about how to get the value of this
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="ToolTipService.Placement" /> attached property.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ToolTipService.Placement" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1177,7 +1177,7 @@ This is an attached property. For information about how to get the value of this
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="ToolTipService.PlacementRectangle" /> attached property.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ToolTipService.PlacementRectangle" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1238,7 +1238,7 @@ This is an attached property. For information about how to get the value of this
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="ToolTipService.PlacementTarget" /> attached property.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ToolTipService.PlacementTarget" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1264,7 +1264,7 @@ This is an attached property. For information about how to get the value of this
       <Docs>
         <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
         <param name="handler">The event handler to be removed.</param>
-        <summary>Removes a handler for the <see langword="ToolTipService.ToolTipClosing" /> attached event.</summary>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Controls.ToolTipService.ToolTipClosing" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1290,7 +1290,7 @@ This is an attached property. For information about how to get the value of this
       <Docs>
         <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
         <param name="handler">The event handler to be removed.</param>
-        <summary>Removes a handler for the <see langword="ToolTipService.ToolTipOpening" /> attached event.</summary>
+        <summary>Removes a handler for the <see cref="E:System.Windows.Controls.ToolTipService.ToolTipOpening" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1317,7 +1317,7 @@ This is an attached property. For information about how to get the value of this
       <Docs>
         <param name="element">The object to which the attached property is written.</param>
         <param name="value">The value to set.</param>
-        <summary>Sets the value of the <see langword="ToolTipService.BetweenShowDelay" /> attached property for an object.</summary>
+        <summary>Sets the value of the <see cref="P:System.Windows.Controls.ToolTipService.BetweenShowDelay" /> attached property for an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1751,7 +1751,7 @@ This is an attached property. For information about how to get the value of this
       <Docs>
         <param name="element">The object to which the attached property is written.</param>
         <param name="value">The desired value.</param>
-        <summary>Sets the value of the <see langword="ToolTipService.VerticalOffset" /> attached property for an object.</summary>
+        <summary>Sets the value of the <see cref="P:System.Windows.Controls.ToolTipService.VerticalOffset" /> attached property for an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1833,7 +1833,7 @@ This is an attached property. For information about how to get the value of this
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="ToolTipService.ShowDuration" /> attached property.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ToolTipService.ShowDuration" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2106,7 +2106,7 @@ This is an attached property. For information about how to get the value of this
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="ToolTipService.ToolTip" /> attached property.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ToolTipService.ToolTip" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2189,7 +2189,7 @@ This is an attached property. For information about how to get the value of this
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="ToolTipService.VerticalOffset" /> attached property.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ToolTipService.VerticalOffset" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -101,7 +101,7 @@
       <Docs>
         <param name="element">The <see cref="T:System.Windows.DependencyObject" /> that is listening for this event.</param>
         <param name="handler">The event handler that is to be added.</param>
-        <summary>Adds an event handler for the <see langword="VirtualizingStackPanel.CleanUpVirtualizedItem" /> attached event.</summary>
+        <summary>Adds an event handler for the <see cref="E:System.Windows.Controls.VirtualizingStackPanel.CleanUpVirtualizedItem" /> attached event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -305,7 +305,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="VirtualizingStackPanel.CleanUpVirtualizedItem" /> attached event.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.VirtualizingStackPanel.CleanUpVirtualizedItem" /> attached event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1379,7 +1379,7 @@ Notice that the IsVirtualizing attached property is explicitly set to `true`.
       <Docs>
         <param name="element">The <see cref="T:System.Windows.DependencyObject" /> from which the handler is being removed.</param>
         <param name="handler">Specifies the event handler that is to be removed.</param>
-        <summary>Removes an event handler for the <see langword="VirtualizingStackPanel.CleanUpVirtualizedItem" /> attached event.</summary>
+        <summary>Removes an event handler for the <see cref="E:System.Windows.Controls.VirtualizingStackPanel.CleanUpVirtualizedItem" /> attached event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

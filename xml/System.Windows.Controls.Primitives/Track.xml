@@ -65,9 +65,9 @@
   
  The following calculation is used to compute the size of the <xref:System.Windows.Controls.Primitives.Track.Thumb%2A>.  
   
- thumbSize = (viewportSize/(maximum–minimum+viewportSize))×trackLength  
+ thumbSize = (viewportSize/(maximum-minimum+viewportSize))×trackLength  
   
- The viewportSize parameter is the value of the <xref:System.Windows.Controls.Primitives.Track.ViewportSize%2A> property. The maximum and minimum parameters correspond to the <xref:System.Windows.Controls.Primitives.Track.Maximum%2A> and <xref:System.Windows.Controls.Primitives.Track.Minimum%2A> property values. The value of the expression maximum–minimum+viewportSize is the size of the scrollable content. Note that the value of the <xref:System.Windows.Controls.Primitives.Track.Maximum%2A> property represents the <xref:System.Windows.Controls.Primitives.Track.Value%2A> of the <xref:System.Windows.Controls.Primitives.Track> when the content is scrolled to the bottom. This <xref:System.Windows.Controls.Primitives.Track.Maximum%2A> value is not the same as the length or extent of the content. For a more detailed explanation, see <xref:System.Windows.Controls.Primitives.Track.Maximum%2A?displayProperty=nameWithType>.  
+ The viewportSize parameter is the value of the <xref:System.Windows.Controls.Primitives.Track.ViewportSize%2A> property. The maximum and minimum parameters correspond to the <xref:System.Windows.Controls.Primitives.Track.Maximum%2A> and <xref:System.Windows.Controls.Primitives.Track.Minimum%2A> property values. The value of the expression maximum-minimum+viewportSize is the size of the scrollable content. Note that the value of the <xref:System.Windows.Controls.Primitives.Track.Maximum%2A> property represents the <xref:System.Windows.Controls.Primitives.Track.Value%2A> of the <xref:System.Windows.Controls.Primitives.Track> when the content is scrolled to the bottom. This <xref:System.Windows.Controls.Primitives.Track.Maximum%2A> value is not the same as the length or extent of the content. For a more detailed explanation, see <xref:System.Windows.Controls.Primitives.Track.Maximum%2A?displayProperty=nameWithType>.  
   
  The <xref:System.Windows.Controls.Primitives.Track.Value%2A> of a <xref:System.Windows.Controls.Primitives.Track> in a <xref:System.Windows.Controls.Primitives.ScrollBar> increases from top to bottom or from left to right depending on the orientation of the <xref:System.Windows.Controls.Primitives.ScrollBar>. Similarly, the <xref:System.Windows.Controls.Primitives.Track.Value%2A> of a <xref:System.Windows.Controls.Primitives.Track> in a <xref:System.Windows.Controls.Slider> increases from bottom to top or from left to right depending on the orientation of the <xref:System.Windows.Controls.Slider>. To change the direction of increasing value, set the <xref:System.Windows.Controls.Primitives.Track.IsDirectionReversed%2A> property of the <xref:System.Windows.Controls.Primitives.Track> to `true`.  
   
@@ -610,7 +610,7 @@
   
 -   If the <xref:System.Windows.Controls.Primitives.Track.ViewportSize%2A> property is specified and the size of the content is greater than the <xref:System.Windows.Controls.Primitives.Track.ViewportSize%2A>, the following formula is used:  
   
-     ThumbSize = TrackLength * ViewportSize / (Maximum – Minimum + ViewportSize)  
+     ThumbSize = TrackLength * ViewportSize / (Maximum - Minimum + ViewportSize)  
   
      Where the parameters are defined as follows:  
   

@@ -263,7 +263,7 @@ namespace SampleRecognition
 ## Remarks  
  Although they typically represent the same value, the <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken.Text%2A> form may be different than the <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken.Display%2A> form for a word or phrase in a <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken>. For example, the <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken.Display%2A> form may be an acronym, such as "USA", while the text that will be spoken, and to which the <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken.Pronunciation%2A> applies, is "United States of America".  
   
- The default value for the <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken.Text%2A> property is an empty string—"".  
+ The default value for the <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken.Text%2A> property is an empty string - "".  
   
  ]]></format>
         </remarks>

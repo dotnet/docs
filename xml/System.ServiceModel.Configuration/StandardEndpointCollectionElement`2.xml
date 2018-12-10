@@ -215,7 +215,7 @@
       <Docs>
         <param name="name">The identifier of the element to add to the collection.</param>
         <param name="endpoint">The endpoint element to add.</param>
-        <param name="config">The configuration file – not implemented.</param>
+        <param name="config">The configuration file - not implemented.</param>
         <summary>Attempts to add an endpoint element to the collection of standard endpoints elements.</summary>
         <returns>
           <see langword="true" /> if the element was added to the collection; otherwise, <see langword="false" />.</returns>

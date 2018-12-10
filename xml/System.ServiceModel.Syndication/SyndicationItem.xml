@@ -1565,7 +1565,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is not automatically set when you add a <xref:System.ServiceModel.Syndication.SyndicationItem> to a <xref:System.ServiceModel.Syndication.SyndicationFeed>—you must explicitly set it. When serialized to Atom 1.0 or RSS 2.0, this property is written to a `<source>` element. The contents of that element vary depending on the format you serialize to.  
+ This property is not automatically set when you add a <xref:System.ServiceModel.Syndication.SyndicationItem> to a <xref:System.ServiceModel.Syndication.SyndicationFeed> - you must explicitly set it. When serialized to Atom 1.0 or RSS 2.0, this property is written to a `<source>` element. The contents of that element vary depending on the format you serialize to.  
   
    
   

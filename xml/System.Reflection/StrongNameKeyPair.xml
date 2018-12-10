@@ -46,7 +46,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to open a Company.keys file (produced by running the [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md) with the **–k** switch), read the public key from the file, and display the key in the console window.  
+ The following code example shows how to open a Company.keys file (produced by running the [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md) with the **-k** switch), read the public key from the file, and display the key in the console window.  
   
  [!code-cpp[StrongNameKeyPairX#1](~/samples/snippets/cpp/VS_Snippets_CLR/StrongNameKeyPairX/cpp/strongnamekeypairx.cpp#1)]
  [!code-csharp[StrongNameKeyPairX#1](~/samples/snippets/csharp/VS_Snippets_CLR/StrongNameKeyPairX/cs/strongnamekeypairx.cs#1)]

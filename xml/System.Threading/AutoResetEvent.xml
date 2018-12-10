@@ -204,7 +204,7 @@
 The Set method releases a single thread. If there are no waiting threads, the wait handle remains signaled until a thread attempts to wait on it, or until its Reset method is called.
 
 > [!IMPORTANT]
-> There is no guarantee that every call to the Set method will release a thread. If two calls are too close together, so that the second call occurs before a thread has been released, only one thread is released — as if the second call did not happen. Also, if the Set method is called when there are no threads waiting and the <xref:System.Threading.AutoResetEvent> is already signaled, the call has no effect.
+> There is no guarantee that every call to the Set method will release a thread. If two calls are too close together, so that the second call occurs before a thread has been released, only one thread is released - as if the second call did not happen. Also, if the Set method is called when there are no threads waiting and the <xref:System.Threading.AutoResetEvent> is already signaled, the call has no effect.
 
 ]]></format>
         </remarks>

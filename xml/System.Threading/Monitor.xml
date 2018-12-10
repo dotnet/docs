@@ -830,7 +830,7 @@
       </Parameters>
       <Docs>
         <param name="obj">The object on which to acquire the lock.</param>
-        <param name="timeout">A <see cref="T:System.TimeSpan" /> representing the amount of time to wait for the lock. A value of –1 millisecond specifies an infinite wait.</param>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> representing the amount of time to wait for the lock. A value of -1 millisecond specifies an infinite wait.</param>
         <summary>Attempts, for the specified amount of time, to acquire an exclusive lock on the specified object.</summary>
         <returns>
           <see langword="true" /> if the current thread acquires the lock; otherwise, <see langword="false" />.</returns>
@@ -838,7 +838,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the value of the `timeout` parameter converted to milliseconds equals –1, this method is equivalent to <xref:System.Threading.Monitor.Enter%2A>. If the value of `timeout` equals 0, this method is equivalent to <xref:System.Threading.Monitor.TryEnter%2A>.  
+ If the value of the `timeout` parameter converted to milliseconds equals -1, this method is equivalent to <xref:System.Threading.Monitor.Enter%2A>. If the value of `timeout` equals 0, this method is equivalent to <xref:System.Threading.Monitor.TryEnter%2A>.  
   
 > [!NOTE]
 >  Use <xref:System.Threading.Monitor> to lock objects (that is, reference types), not value types. For details, see the <xref:System.Threading.Monitor> class topic.  
@@ -851,7 +851,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="timeout" /> in milliseconds is negative and is not equal to <see cref="F:System.Threading.Timeout.Infinite" /> (–1 millisecond), or is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="timeout" /> in milliseconds is negative and is not equal to <see cref="F:System.Threading.Timeout.Infinite" /> (-1 millisecond), or is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <altmember cref="T:System.Threading.Thread" />
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
       </Docs>
@@ -972,14 +972,14 @@
       </Parameters>
       <Docs>
         <param name="obj">The object on which to acquire the lock.</param>
-        <param name="timeout">The amount of time to wait for the lock. A value of –1 millisecond specifies an infinite wait.</param>
+        <param name="timeout">The amount of time to wait for the lock. A value of -1 millisecond specifies an infinite wait.</param>
         <param name="lockTaken">The result of the attempt to acquire the lock, passed by reference. The input must be <see langword="false" />. The output is <see langword="true" /> if the lock is acquired; otherwise, the output is <see langword="false" />. The output is set even if an exception occurs during the attempt to acquire the lock.</param>
         <summary>Attempts, for the specified amount of time, to acquire an exclusive lock on the specified object, and atomically sets a value that indicates whether the lock was taken.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the value of the `timeout` parameter converted to milliseconds equals –1, this method is equivalent to <xref:System.Threading.Monitor.Enter%28System.Object%29>. If the value of `timeout` equals 0, this method is equivalent to <xref:System.Threading.Monitor.TryEnter%28System.Object%29>.  
+ If the value of the `timeout` parameter converted to milliseconds equals -1, this method is equivalent to <xref:System.Threading.Monitor.Enter%28System.Object%29>. If the value of `timeout` equals 0, this method is equivalent to <xref:System.Threading.Monitor.TryEnter%28System.Object%29>.  
   
  If the lock was not taken because an exception was thrown, the variable specified for the `lockTaken` parameter is `false` after this method ends. This allows the program to determine, in all cases, whether it is necessary to release the lock.  
   
@@ -995,7 +995,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The input to <paramref name="lockTaken" /> is <see langword="true" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="timeout" /> in milliseconds is negative and is not equal to <see cref="F:System.Threading.Timeout.Infinite" /> (–1 millisecond), or is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="timeout" /> in milliseconds is negative and is not equal to <see cref="F:System.Threading.Timeout.Infinite" /> (-1 millisecond), or is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <altmember cref="T:System.Threading.Thread" />
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
       </Docs>
@@ -1217,7 +1217,7 @@
  When a thread calls `Wait`, it releases the lock on the object and enters the object's waiting queue. The next thread in the object's ready queue (if there is one) acquires the lock and has exclusive use of the object. The thread that invoked `Wait` remains in the waiting queue until either a thread that holds the lock invokes <xref:System.Threading.Monitor.PulseAll%2A>, or it is the next in the queue and a thread that holds the lock invokes <xref:System.Threading.Monitor.Pulse%2A>. However, if `timeout` elapses before another thread invokes this object's <xref:System.Threading.Monitor.Pulse%2A> or <xref:System.Threading.Monitor.PulseAll%2A> method, the original thread is moved to the ready queue in order to regain the lock.  
   
 > [!NOTE]
->  If a <xref:System.TimeSpan> representing –1 millisecond is specified for the `timeout` parameter, this method blocks indefinitely unless the holder of the lock calls <xref:System.Threading.Monitor.Pulse%2A> or <xref:System.Threading.Monitor.PulseAll%2A>. If `timeout` is 0 milliseconds, the thread that calls `Wait` releases the lock and then immediately enters the ready queue in order to regain the lock.  
+>  If a <xref:System.TimeSpan> representing -1 millisecond is specified for the `timeout` parameter, this method blocks indefinitely unless the holder of the lock calls <xref:System.Threading.Monitor.Pulse%2A> or <xref:System.Threading.Monitor.PulseAll%2A>. If `timeout` is 0 milliseconds, the thread that calls `Wait` releases the lock and then immediately enters the ready queue in order to regain the lock.  
   
  The caller executes `Wait` once, regardless of the number of times <xref:System.Threading.Monitor.Enter%2A> has been invoked for the specified object. Conceptually, the `Wait` method stores the number of times the caller invoked <xref:System.Threading.Monitor.Enter%2A> on the object and invokes <xref:System.Threading.Monitor.Exit%2A> as many times as necessary to fully release the locked object. The caller then blocks while waiting to reacquire the object. When the caller reacquires the lock, the system calls <xref:System.Threading.Monitor.Enter%2A> as many times as necessary to restore the saved <xref:System.Threading.Monitor.Enter%2A> count for the caller. Calling `Wait` releases the lock for the specified object only; if the caller is the owner of locks on other objects, these locks are not released.  
   
@@ -1233,7 +1233,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Threading.SynchronizationLockException">The calling thread does not own the lock for the specified object.</exception>
         <exception cref="T:System.Threading.ThreadInterruptedException">The thread that invokes <see langword="Wait" /> is later interrupted from the waiting state. This happens when another thread calls this thread's <see cref="M:System.Threading.Thread.Interrupt" /> method.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="timeout" /> parameter in milliseconds is negative and does not represent <see cref="F:System.Threading.Timeout.Infinite" /> (–1 millisecond), or is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="timeout" /> parameter in milliseconds is negative and does not represent <see cref="F:System.Threading.Timeout.Infinite" /> (-1 millisecond), or is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <altmember cref="T:System.Threading.Thread" />
         <altmember cref="T:System.Threading.Monitor" />
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
@@ -1404,7 +1404,7 @@
         <exception cref="T:System.Threading.SynchronizationLockException">
           <see langword="Wait" /> is not invoked from within a synchronized block of code.</exception>
         <exception cref="T:System.Threading.ThreadInterruptedException">The thread that invokes Wait is later interrupted from the waiting state. This happens when another thread calls this thread's <see cref="M:System.Threading.Thread.Interrupt" /> method.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="timeout" /> parameter is negative and does not represent <see cref="F:System.Threading.Timeout.Infinite" /> (–1 millisecond), or is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="timeout" /> parameter is negative and does not represent <see cref="F:System.Threading.Timeout.Infinite" /> (-1 millisecond), or is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <altmember cref="T:System.Threading.Thread" />
         <altmember cref="T:System.Threading.Monitor" />
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>

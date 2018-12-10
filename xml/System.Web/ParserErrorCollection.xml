@@ -291,7 +291,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot add the same <xref:System.Web.ParserError> object to the collection more than once. However, attempting to add a <xref:System.Web.ParserError> object more than once will not throw an exception. Instead, the addition will fail. In this case, the <xref:System.Web.ParserErrorCollection.Add%2A> method will return a value of –1. However, the <xref:System.Web.ParserErrorCollection.AddRange%2A> and <xref:System.Web.ParserErrorCollection.Insert%2A> methods do not have return values. When adding <xref:System.Web.ParserError> objects by using one of these methods, use the <xref:System.Web.ParserErrorCollection.Contains%2A> method to determine whether a particular <xref:System.Web.ParserError> object is already in the collection.  
+ You cannot add the same <xref:System.Web.ParserError> object to the collection more than once. However, attempting to add a <xref:System.Web.ParserError> object more than once will not throw an exception. Instead, the addition will fail. In this case, the <xref:System.Web.ParserErrorCollection.Add%2A> method will return a value of -1. However, the <xref:System.Web.ParserErrorCollection.AddRange%2A> and <xref:System.Web.ParserErrorCollection.Insert%2A> methods do not have return values. When adding <xref:System.Web.ParserError> objects by using one of these methods, use the <xref:System.Web.ParserErrorCollection.Contains%2A> method to determine whether a particular <xref:System.Web.ParserError> object is already in the collection.  
   
    
   

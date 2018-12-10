@@ -144,7 +144,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property can be used to provide additional information about the type of data that is stored by the model. For example, if the <xref:System.Web.ModelBinding.ModelMetadata.ModelType%2A> property is set to <xref:System.String>, this property might be "EmailAddress" or "Url" — that is, a name that indicates more than just that the data is typed as a string.  
+ This property can be used to provide additional information about the type of data that is stored by the model. For example, if the <xref:System.Web.ModelBinding.ModelMetadata.ModelType%2A> property is set to <xref:System.String>, this property might be "EmailAddress" or "Url" - that is, a name that indicates more than just that the data is typed as a string.  
   
  ]]></format>
         </remarks>

@@ -28,12 +28,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines methods that allow an <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> class to enumerate key container information, and import and export Microsoft Cryptographic API (CAPI)–compatible key blobs.</summary>
+    <summary>Defines methods that allow an <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> class to enumerate key container information, and import and export Microsoft Cryptographic API (CAPI)-compatible key blobs.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Classes that extend the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class should implement the <xref:System.Security.Cryptography.ICspAsymmetricAlgorithm> interface to enumerate key container information using a <xref:System.Security.Cryptography.CspKeyContainerInfo> object, and to import and export Microsoft Cryptographic API (CAPI)–compatible key blobs.  
+ Classes that extend the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class should implement the <xref:System.Security.Cryptography.ICspAsymmetricAlgorithm> interface to enumerate key container information using a <xref:System.Security.Cryptography.CspKeyContainerInfo> object, and to import and export Microsoft Cryptographic API (CAPI)-compatible key blobs.  
   
  ]]></format>
     </remarks>

@@ -1342,7 +1342,7 @@
   
  You can also read the object's current delegate and chain to it if you want.  
   
- If you are setting up a format validator, the delegate you supply will receive as an input parameter the <xref:System.Security.Cryptography.Xml.SignedXml> object being verified and returns a Boolean value – `true` if the format is acceptable, `false` if it is not. If the delegate returns `false` for any reason, the <xref:System.Security.Cryptography.Xml.SignedXml> object will report that the XML signature is not valid.  
+ If you are setting up a format validator, the delegate you supply will receive as an input parameter the <xref:System.Security.Cryptography.Xml.SignedXml> object being verified and returns a Boolean value - `true` if the format is acceptable, `false` if it is not. If the delegate returns `false` for any reason, the <xref:System.Security.Cryptography.Xml.SignedXml> object will report that the XML signature is not valid.  
   
  ]]></format>
         </remarks>

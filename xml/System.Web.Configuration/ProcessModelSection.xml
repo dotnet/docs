@@ -995,7 +995,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the number of requests allowed in the queue is exceeded, ASP.NET begins returning "503 – Server Too Busy" errors to new requests. When this limit is reached, the system is operating in abnormal conditions. This might be a symptom of a malfunction or, maybe, just high load. Restarting (bouncing) the worker process might become the only way to prevent further problems.  
+ If the number of requests allowed in the queue is exceeded, ASP.NET begins returning "503 - Server Too Busy" errors to new requests. When this limit is reached, the system is operating in abnormal conditions. This might be a symptom of a malfunction or, maybe, just high load. Restarting (bouncing) the worker process might become the only way to prevent further problems.  
   
    
   

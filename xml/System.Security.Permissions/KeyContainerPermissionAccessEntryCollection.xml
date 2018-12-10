@@ -336,12 +336,12 @@
       <Docs>
         <param name="accessEntry">The <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" /> object to locate.</param>
         <summary>Gets the index in the collection of the specified <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" /> object, if it exists in the collection.</summary>
-        <returns>The index of the specified <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" /> object in the collection, or –1 if no match is found.</returns>
+        <returns>The index of the specified <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" /> object in the collection, or -1 if no match is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to determine the index number of the specified <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> object in the collection. If the specified <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> object is not found, an value of –1 is returned.  
+ Use this method to determine the index number of the specified <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> object in the collection. If the specified <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> object is not found, an value of -1 is returned.  
   
  ]]></format>
         </remarks>

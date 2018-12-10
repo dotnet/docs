@@ -1322,7 +1322,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is provided only for compatibility with ASP—that is, for compatibility with COM-based Web-programming technology that preceded ASP.NET. If you want to jump ahead to the <xref:System.Web.HttpApplication.EndRequest> event and send a response to the client, it is usually preferable to call <xref:System.Web.HttpApplication.CompleteRequest%2A> instead.  
+ This method is provided only for compatibility with ASP - that is, for compatibility with COM-based Web-programming technology that preceded ASP.NET. If you want to jump ahead to the <xref:System.Web.HttpApplication.EndRequest> event and send a response to the client, it is usually preferable to call <xref:System.Web.HttpApplication.CompleteRequest%2A> instead.  
   
  To mimic the behavior of the `End` method in ASP, this method tries to raise a <xref:System.Threading.ThreadAbortException> exception. If this attempt is successful, the calling thread will be aborted, which is detrimental to your site's performance. In that case, no code after the call to the <xref:System.Web.HttpResponse.End%2A> method is executed.  
   

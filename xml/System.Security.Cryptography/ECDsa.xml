@@ -785,7 +785,7 @@
   
  -or-  
   
- <paramref name="offset" /> + <paramref name="count" /> – 1 results in an index that is beyond the upper bound of <paramref name="data" />.</exception>
+ <paramref name="offset" /> + <paramref name="count" /> - 1 results in an index that is beyond the upper bound of <paramref name="data" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SignHash">
@@ -1175,7 +1175,7 @@
   
  -or-  
   
- <paramref name="offset" /> + <paramref name="count" /> – 1 results in an index that is beyond the upper bound of <paramref name="data" />.</exception>
+ <paramref name="offset" /> + <paramref name="count" /> - 1 results in an index that is beyond the upper bound of <paramref name="data" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="VerifyHash">

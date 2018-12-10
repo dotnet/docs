@@ -655,7 +655,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The current instance handle must be bound to an instance as well as a lock on that instance. Each set of instance data completely replaces the previous set. The set of instance data may be null – this is the same as empty. Persisting a null set of instance data deletes the existing set of instance data. (Persisting a set of instance data has no effect on instance metadata.)  
+ The current instance handle must be bound to an instance as well as a lock on that instance. Each set of instance data completely replaces the previous set. The set of instance data may be null - this is the same as empty. Persisting a null set of instance data deletes the existing set of instance data. (Persisting a set of instance data has no effect on instance metadata.)  
   
  ]]></format>
         </remarks>

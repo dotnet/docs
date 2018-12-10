@@ -213,7 +213,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Specifies that the only valid captures are explicitly named or numbered groups of the form (?&lt;name&gt;…). This allows unnamed parentheses to act as noncapturing groups without the syntactic clumsiness of the expression (?:…). For more information, see the "Explicit Captures Only" section in the [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md) topic.</summary>
+        <summary>Specifies that the only valid captures are explicitly named or numbered groups of the form (?&lt;name&gt;...). This allows unnamed parentheses to act as noncapturing groups without the syntactic clumsiness of the expression (?:...). For more information, see the "Explicit Captures Only" section in the [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md) topic.</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreCase">

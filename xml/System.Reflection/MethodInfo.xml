@@ -1052,7 +1052,7 @@ public:
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=nameWithType>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes.Method?displayProperty=nameWithType> only when a given member is a method.  
+ This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A?displayProperty=nameWithType>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects - for example, the array returned by <xref:System.Type.GetMembers%2A> - the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes.Method?displayProperty=nameWithType> only when a given member is a method.  
   
  To get the `MemberType` property, first get the class `Type`. From the `Type`, get the `MethodInfo`. From the `MethodInfo`, get the `MemberType`.  
   

@@ -668,13 +668,13 @@
         <ReturnType>System.Reflection.MemberTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a <see cref="T:System.Reflection.MemberTypes" /> value indicating the type of the member — method, constructor, event, and so on.</summary>
+        <summary>When overridden in a derived class, gets a <see cref="T:System.Reflection.MemberTypes" /> value indicating the type of the member - method, constructor, event, and so on.</summary>
         <value>A <see cref="T:System.Reflection.MemberTypes" /> value indicating the type of member.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is overridden in derived classes, and the override returns the appropriate member type. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property can be used to determine the member type of any given member.  
+ This property is overridden in derived classes, and the override returns the appropriate member type. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects - for example, the array returned by <xref:System.Type.GetMembers%2A> - the <xref:System.Reflection.MemberInfo.MemberType%2A> property can be used to determine the member type of any given member.  
   
  To get the `MemberType` property, get the class <xref:System.Type>. From the `Type`, get the <xref:System.Reflection.MethodInfo> array. From the `MethodInfo` array, get the `MemberTypes`.  
   

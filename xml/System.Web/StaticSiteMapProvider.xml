@@ -246,7 +246,7 @@ NODEID URL            NAME       PARENTNODEID
 ## Remarks  
  Classes that are derived from the <xref:System.Web.StaticSiteMapProvider> class can override the <xref:System.Web.StaticSiteMapProvider.Clear%2A> method to perform additional cleanup, depending on what state the derived classes maintain.  
   
- The <xref:System.Web.StaticSiteMapProvider.Clear%2A> method does not reset state that is initialized during the <xref:System.Configuration.Provider.ProviderBase.Initialize%2A> method—it resets only state that is initialized during the <xref:System.Web.StaticSiteMapProvider.BuildSiteMap%2A> method.  
+ The <xref:System.Web.StaticSiteMapProvider.Clear%2A> method does not reset state that is initialized during the <xref:System.Configuration.Provider.ProviderBase.Initialize%2A> method - it resets only state that is initialized during the <xref:System.Web.StaticSiteMapProvider.BuildSiteMap%2A> method.  
   
    
   

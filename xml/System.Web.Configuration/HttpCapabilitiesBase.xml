@@ -2632,7 +2632,7 @@
  If `true`, server control adapters generate minimal output to reduce the size of the resulting page.  
   
 > [!NOTE]
->  The <xref:System.Web.Configuration.HttpCapabilitiesBase.RequiresOutputOptimization%2A> property returns `true` for i-mode–compatible browsers.  
+>  The <xref:System.Web.Configuration.HttpCapabilitiesBase.RequiresOutputOptimization%2A> property returns `true` for i-mode-compatible browsers.  
   
    
   
@@ -3490,9 +3490,9 @@ CACHE-CONTROL: NO-CACHE
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsInputMode%2A> property applies only to i-mode–compatible devices.  
+ The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsInputMode%2A> property applies only to i-mode-compatible devices.  
   
- Set i-Phone–specific picture symbols for i-mode–compatible browsers by using the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property.  
+ Set i-Phone-specific picture symbols for i-mode-compatible browsers by using the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property.  
   
    
   
@@ -3530,9 +3530,9 @@ CACHE-CONTROL: NO-CACHE
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsInputMode%2A> property applies only to i-mode–compatible devices.  
+ The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsInputMode%2A> property applies only to i-mode-compatible devices.  
   
- The `istyle` attribute is used for setting the input style of a text-input field on i-mode–compatible browsers.  
+ The `istyle` attribute is used for setting the input style of a text-input field on i-mode-compatible browsers.  
   
    
   
@@ -3570,9 +3570,9 @@ CACHE-CONTROL: NO-CACHE
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsInputMode%2A> property applies only to i-mode–compatible devices.  
+ The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsInputMode%2A> property applies only to i-mode-compatible devices.  
   
- The `MODE` attribute is used for setting the input mode of a text input field on i-mode–compatible browsers.  
+ The `MODE` attribute is used for setting the input mode of a text input field on i-mode-compatible browsers.  
   
    
   
@@ -3643,9 +3643,9 @@ CACHE-CONTROL: NO-CACHE
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsJPhoneMultiMediaAttributes%2A> property applies only to J-Phone–compatible mobile devices.  
+ The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsJPhoneMultiMediaAttributes%2A> property applies only to J-Phone-compatible mobile devices.  
   
- J-Phone is a markup language specification, based on HTML, for J-Phone–compatible browsers. If `true`, the browser supports additional attributes for HTML `<a>` (anchor) and `<select>` elements. The additional attributes supported are as follows:  
+ J-Phone is a markup language specification, based on HTML, for J-Phone-compatible browsers. If `true`, the browser supports additional attributes for HTML `<a>` (anchor) and `<select>` elements. The additional attributes supported are as follows:  
   
 -   `src`  
   
@@ -3688,21 +3688,21 @@ CACHE-CONTROL: NO-CACHE
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports J-Phone–specific picture symbols.</summary>
+        <summary>Gets a value indicating whether the browser supports J-Phone-specific picture symbols.</summary>
         <value>
-          <see langword="true" /> if the browser supports J-Phone–specific picture symbols; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+          <see langword="true" /> if the browser supports J-Phone-specific picture symbols; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsJPhoneSymbols%2A> property applies only to J-Phone–compatible mobile devices.  
+ The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsJPhoneSymbols%2A> property applies only to J-Phone-compatible mobile devices.  
   
- Set J-Phone–specific picture symbols for J-Phone–compatible browsers by using the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property.  
+ Set J-Phone-specific picture symbols for J-Phone-compatible browsers by using the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property.  
   
    
   
 ## Examples  
- The following code example shows how to determine whether the browser supports J-Phone–specific picture symbols.  
+ The following code example shows how to determine whether the browser supports J-Phone-specific picture symbols.  
   
  [!code-aspx-csharp[HttpCapabilitiesBase.SupportsJPhoneSymbols#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsJPhoneSymbols/CS/sample_cs.aspx#1)]
  [!code-aspx-vb[HttpCapabilitiesBase.SupportsJPhoneSymbols#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsJPhoneSymbols/VB/sample_vb.aspx#1)]  

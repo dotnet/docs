@@ -644,7 +644,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is commonly used when you override the <xref:System.Web.UI.Control.DataBind%2A> method when developing templated data-bound server controls. If you do not call this method, child control view–state information can be written to a parent server control, only to be overridden when the data is bound.  
+ This method is commonly used when you override the <xref:System.Web.UI.Control.DataBind%2A> method when developing templated data-bound server controls. If you do not call this method, child control view-state information can be written to a parent server control, only to be overridden when the data is bound.  
   
  When recreating child controls of a <xref:System.Web.UI.Control>, use the <xref:System.Web.UI.Control.ClearChildViewState%2A> method to clear child view state so that it does not get applied to the new controls inadvertently.  
   
@@ -2798,7 +2798,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET server controls such as the <xref:System.Web.UI.WebControls.Repeater>, <xref:System.Web.UI.WebControls.DataList> and <xref:System.Web.UI.WebControls.GridView> Web controls can contain child controls that raise events. For example, each row in a <xref:System.Web.UI.WebControls.GridView> control can contain one or more buttons created dynamically by templates. Rather than each button raising an event individually, events from the nested controls are "bubbled"—that is, they are sent to the naming container. The naming container in turn raises a generic event called <xref:System.Web.UI.WebControls.GridView.RowCommand> with parameter values. These values allow you to determine which individual control that raised the original event. By responding to this single event, you can avoid having to write individual event-handling methods for child controls.  
+ ASP.NET server controls such as the <xref:System.Web.UI.WebControls.Repeater>, <xref:System.Web.UI.WebControls.DataList> and <xref:System.Web.UI.WebControls.GridView> Web controls can contain child controls that raise events. For example, each row in a <xref:System.Web.UI.WebControls.GridView> control can contain one or more buttons created dynamically by templates. Rather than each button raising an event individually, events from the nested controls are "bubbled" - that is, they are sent to the naming container. The naming container in turn raises a generic event called <xref:System.Web.UI.WebControls.GridView.RowCommand> with parameter values. These values allow you to determine which individual control that raised the original event. By responding to this single event, you can avoid having to write individual event-handling methods for child controls.  
   
    
   
@@ -3229,7 +3229,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET server controls such as the <xref:System.Web.UI.WebControls.Repeater>, <xref:System.Web.UI.WebControls.DataList> and <xref:System.Web.UI.WebControls.GridView> Web controls can contain child controls that raise events. For example, each row in a <xref:System.Web.UI.WebControls.GridView> control can contain one or more buttons created dynamically by templates. Rather than each button raising an event individually, events from the nested controls are "bubbled"—that is, they are sent to the control's parent. The parent in turn raises a generic event called <xref:System.Web.UI.WebControls.GridView.RowCommand> with parameter values. These values allow you to determine which individual control that raised the original event. By responding to this single event, you can avoid having to write individual event-handling methods for child controls.  
+ ASP.NET server controls such as the <xref:System.Web.UI.WebControls.Repeater>, <xref:System.Web.UI.WebControls.DataList> and <xref:System.Web.UI.WebControls.GridView> Web controls can contain child controls that raise events. For example, each row in a <xref:System.Web.UI.WebControls.GridView> control can contain one or more buttons created dynamically by templates. Rather than each button raising an event individually, events from the nested controls are "bubbled" - that is, they are sent to the control's parent. The parent in turn raises a generic event called <xref:System.Web.UI.WebControls.GridView.RowCommand> with parameter values. These values allow you to determine which individual control that raised the original event. By responding to this single event, you can avoid having to write individual event-handling methods for child controls.  
   
  While you cannot override this method, controls you author can handle or raise bubbled events by overriding the <xref:System.Web.UI.Control.OnBubbleEvent%2A> method.  
   

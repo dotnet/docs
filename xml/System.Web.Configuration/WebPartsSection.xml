@@ -34,7 +34,7 @@
   <webParts>  
     <personalization  
       defaultProvider=" AspNetSqlPersonalizationProvider ">  
-        <!—- Providers may only be defined at the   
+        <!-- Providers may only be defined at the   
             application level -->  
       <providers>  
         <add name="AspNetSqlPersonalizationProvider"  

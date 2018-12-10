@@ -53,7 +53,7 @@
     <controls>  
       <clear />  
       <remove tagPrefix="MyTags" />  
-      <!—- Searches all linked assemblies for the namespace -->  
+      <!-- Searches all linked assemblies for the namespace -->  
       <add tagPrefix="MyTags1" namespace=" MyNameSpace "/>  
       <!-- Uses a specified assembly -->  
       <add tagPrefix="MyTags2" namespace="MyNameSpace"   

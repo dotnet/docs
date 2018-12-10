@@ -19,7 +19,7 @@ If you want to put code in a namespace, the first declaration in the file must d
 
 Namespaces cannot directly contain values and functions. Instead, values and functions must be included in modules, and modules are included in namespaces. Namespaces can contain types, modules.
 
-XML doc comments can be declared above a namespace, but they are ignored. Compiler directives can also be delcared above a namespace.
+XML doc comments can be declared above a namespace, but they're ignored. Compiler directives can also be declared above a namespace.
 
 Namespaces can be declared explicitly with the namespace keyword, or implicitly when declaring a module. To declare a namespace explicitly, use the namespace keyword followed by the namespace name. The following example shows a code file that declares a namespace Widgets with a type and a module included in that namespace.
 

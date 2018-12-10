@@ -34,7 +34,7 @@
 ## Remarks  
  Column mappings define the mapping between data source and the target table.  
   
- If mappings are not defined—that is, the <xref:System.Data.SqlClient.SqlBulkCopy.ColumnMappings%2A> collection is empty—the columns are mapped implicitly based on ordinal position. For this to work, source and target schemas must match. If they do not, an <xref:System.InvalidOperationException> will be thrown.  
+ If mappings are not defined - that is, the <xref:System.Data.SqlClient.SqlBulkCopy.ColumnMappings%2A> collection is empty - the columns are mapped implicitly based on ordinal position. For this to work, source and target schemas must match. If they do not, an <xref:System.InvalidOperationException> will be thrown.  
   
  If the <xref:System.Data.SqlClient.SqlBulkCopy.ColumnMappings%2A> collection is not empty, not every column present in the data source has to be specified. Those not mapped by the collection are ignored.  
   

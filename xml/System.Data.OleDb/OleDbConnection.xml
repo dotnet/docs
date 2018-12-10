@@ -1228,7 +1228,7 @@
 ## Remarks  
  The <xref:System.Data.OleDb.OleDbConnection.ServerVersion%2A> property maps to the OLE DB DBPROP_DBMSVER property. If <xref:System.Data.OleDb.OleDbConnection.ServerVersion%2A> is not supported by the underlying OLE DB provider, an empty string is returned.  
   
- The version is of the form *##.##.####*, where the first two digits are the major version, the next two digits are the minor version, and the last four digits are the release version. The provider must render the product version in this form but can also append the product-specific version—for example, "04.01.0000 Rdb 4.1". The string is of the form *major.minor.build*, where major and minor are exactly two digits and build is exactly four digits.  
+ The version is of the form *##.##.####*, where the first two digits are the major version, the next two digits are the minor version, and the last four digits are the release version. The provider must render the product version in this form but can also append the product-specific version - for example, "04.01.0000 Rdb 4.1". The string is of the form *major.minor.build*, where major and minor are exactly two digits and build is exactly four digits.  
   
    
   

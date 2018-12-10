@@ -334,7 +334,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="maximumFileSize" /> is a negative number.</exception>
+          <paramref name="maximumFileSize" /> is a negative number or less than <paramref name="bufferSize" />.
+
+-or-
+
+<paramref name="bufferSize" /> is a negative number.
+        </exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -383,7 +388,20 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="maximumNumberOfFiles" /> is less than 2, and <paramref name="logRetentionOption" /> is <see cref="F:System.Diagnostics.TraceLogRetentionOption.LimitedCircularFiles" />.</exception>
+          <paramref name="maximumFileSize" /> is a negative number or less than <paramref name="bufferSize" />.
+
+-or-
+
+<paramref name="maximumNumberOfFiles" /> is less than 1, and <paramref name="logRetentionOption" /> is <see cref="F:System.Diagnostics.TraceLogRetentionOption.LimitedSequentialFiles" />.
+
+-or-
+
+<paramref name="maximumNumberOfFiles" /> is less than 2, and <paramref name="logRetentionOption" /> is <see cref="F:System.Diagnostics.TraceLogRetentionOption.LimitedCircularFiles" />.
+
+-or-
+
+<paramref name="bufferSize" /> is a negative number.
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="BufferSize">

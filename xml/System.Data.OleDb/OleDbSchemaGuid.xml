@@ -923,7 +923,7 @@
 |Restriction column|CLR data type|Description|  
 |------------------------|-------------------|-----------------|  
 |SQL_LANGUAGE_SOURCE|`string`|"ISO 9075" for standard SQL.|  
-|SQL_LANGUAGE_YEAR|`string`|"1992" for ANSI SQL-92–compliant SQL.|  
+|SQL_LANGUAGE_YEAR|`string`|"1992" for ANSI SQL-92-compliant SQL.|  
 |SQL_LANGUAGE_CONFORMANCE|`string`|One of the following: "ENTRY", "INTERMEDIATE", or "FULL".|  
 |SQL_LANGUAGE_INTEGRITY|`string`|"YES"= Optional integrity feature is supported.<br /><br /> "NO"=Optional integrity feature is not supported.|  
 |SQL_LANGUAGE_IMPLEMENTATION|`string`|NULL for "ISO 9075" implementation.|  
@@ -1078,7 +1078,7 @@
 |STATISTICS_CATALOG|`string`|Catalog name of the statistic. A null value if the provider does not support catalogs.|  
 |STATISTICS_SCHEMA|`string`|Schema name of the statistic. A null value if the provider does not support schemas.|  
 |STATISTICS_NAME|`string`|Name of the statistic.|  
-|STATISTICS_TYPE|`UInt16 (Int32)`|Bitmask specifying the kinds of statistics supported by this statistic:<br /><br /> DBSTAT_HISTOGRAM—Indicates histogram support.<br /><br /> DBSTAT_COLUMN_CARDINALITY— Indicates column cardinality support.<br /><br /> DBSTAT_TUPLE_CARDINALITY—Indicates tuple cardinality support.<br /><br /> `Note:` Histograms correspond to only the first column for a multi-column statistic.|  
+|STATISTICS_TYPE|`UInt16 (Int32)`|Bitmask specifying the kinds of statistics supported by this statistic:<br /><br /> DBSTAT_HISTOGRAM - Indicates histogram support.<br /><br /> DBSTAT_COLUMN_CARDINALITY -  Indicates column cardinality support.<br /><br /> DBSTAT_TUPLE_CARDINALITY - Indicates tuple cardinality support.<br /><br /> `Note:` Histograms correspond to only the first column for a multi-column statistic.|  
   
  ]]></format>
         </remarks>

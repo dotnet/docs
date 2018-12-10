@@ -801,7 +801,7 @@
         <ReturnType>System.EventHandler&lt;System.Device.Location.GeoPositionChangedEventArgs&lt;System.Device.Location.GeoCoordinate&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the location data has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -830,7 +830,7 @@
         <ReturnType>System.EventHandler&lt;System.Device.Location.GeoPositionStatusChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the status of the location provider has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

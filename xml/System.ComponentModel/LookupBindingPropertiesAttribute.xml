@@ -341,7 +341,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.LookupBindingPropertiesAttribute.Equals%2A> method returns `true` if the `obj` parameter is of type <xref:System.ComponentModel.LookupBindingPropertiesAttribute> and all the public properties—<xref:System.ComponentModel.LookupBindingPropertiesAttribute.DataSource%2A>, <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DisplayMember%2A>, <xref:System.ComponentModel.LookupBindingPropertiesAttribute.ValueMember%2A>, and <xref:System.ComponentModel.LookupBindingPropertiesAttribute.LookupMember%2A>—are equal to each other.  
+ The <xref:System.ComponentModel.LookupBindingPropertiesAttribute.Equals%2A> method returns `true` if the `obj` parameter is of type <xref:System.ComponentModel.LookupBindingPropertiesAttribute> and all the public properties - <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DataSource%2A>, <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DisplayMember%2A>, <xref:System.ComponentModel.LookupBindingPropertiesAttribute.ValueMember%2A>, and <xref:System.ComponentModel.LookupBindingPropertiesAttribute.LookupMember%2A> - are equal to each other.  
   
  ]]></format>
         </remarks>

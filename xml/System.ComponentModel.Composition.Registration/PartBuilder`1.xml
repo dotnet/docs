@@ -299,7 +299,7 @@
         <Parameter Name="constructorFilter" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.ComponentModel.Composition.Registration.ParameterImportBuilder,T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="constructorFilter">An expression that constructs <c>T</c> by using the desired constructor. It is used only for reference, not actually invoked.</param>
+        <param name="constructorFilter">An expression that constructs <paramref name="T" /> by using the desired constructor. It is used only for reference, not actually invoked.</param>
         <summary>Specifies the constructor that should be used as an importing constructor.</summary>
         <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>

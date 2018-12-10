@@ -305,7 +305,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TRow">The type of the row elements in <paramref name="source" />, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-        <typeparam name="S">The type that <c>TRow</c> will be transformed into.</typeparam>
+        <typeparam name="S">The type that <paramref name="TRow" /> will be transformed into.</typeparam>
         <param name="source">An <see cref="T:System.Data.EnumerableRowCollection`1" /> containing the <see cref="T:System.Data.DataRow" /> elements to invoke a transform function upon.</param>
         <param name="selector">A transform function to apply to each element.</param>
         <summary>Projects each element of an <see cref="T:System.Data.EnumerableRowCollection`1" /> into a new form.</summary>

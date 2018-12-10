@@ -1576,7 +1576,7 @@ DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum length of a text column.</summary>
-        <value>The maximum length of the column in characters. If the column has no maximum length, the value is –1 (default).</value>
+        <value>The maximum length of the column in characters. If the column has no maximum length, the value is -1 (default).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1908,7 +1908,7 @@ DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Changes the ordinal or position of the <xref:System.Data.DataColumn> to the specified ordinal or position. If ordinal is less than 0 or greater than the existing number of columns – 1 (greater than the ordinal of the last column) then an Invalid <xref:System.ArgumentException> is thrown.  
+ Changes the ordinal or position of the <xref:System.Data.DataColumn> to the specified ordinal or position. If ordinal is less than 0 or greater than the existing number of columns - 1 (greater than the ordinal of the last column) then an Invalid <xref:System.ArgumentException> is thrown.  
   
  When you change a column's ordinal, the column is moved to the new position in the collection of columns. Any columns between the previous and new ordinal will be renumbered, to adjust for a column's new ordinal.  
   

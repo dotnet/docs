@@ -387,7 +387,8 @@
         <Parameter Name="Name" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="Name">To be added.</param>
+        <param name="name">The name of a <see cref="T:System.Configuration.ConnectionStringSettings" /> object in the collection.</param>
+        <param name="Name">The name of a <see cref="T:System.Configuration.ConnectionStringSettings" /> object in the collection.</param>
         <summary>Gets or sets the <see cref="T:System.Configuration.ConnectionStringSettings" /> object with the specified name in the collection.</summary>
         <value>The <see cref="T:System.Configuration.ConnectionStringSettings" /> object with the specified name; otherwise, <see langword="null" />.</value>
         <remarks>

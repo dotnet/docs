@@ -145,7 +145,7 @@
   
  The [&lt;system.codedom&gt; Element](~/docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md) in the machine configuration file contains the language provider and compiler configuration settings for each <xref:System.CodeDom.Compiler.CodeDomProvider> implementation on the computer. Each language provider configuration element can contain optional `compilerOptions` and `warningLevel` attributes. These attributes define the default values for the <xref:System.CodeDom.Compiler.CompilerParameters.CompilerOptions%2A?displayProperty=nameWithType> and <xref:System.CodeDom.Compiler.CompilerParameters.WarningLevel%2A?displayProperty=nameWithType> properties.  
   
- If the language provider configuration element does not define the `compilerOptions` attribute, the <xref:System.CodeDom.Compiler.CompilerParameters.CompilerOptions%2A?displayProperty=nameWithType> property value is an empty string (""). If the language provider configuration element does not define the `warningLevel` attribute, the <xref:System.CodeDom.Compiler.CompilerParameters.WarningLevel%2A?displayProperty=nameWithType> property value is –1.  
+ If the language provider configuration element does not define the `compilerOptions` attribute, the <xref:System.CodeDom.Compiler.CompilerParameters.CompilerOptions%2A?displayProperty=nameWithType> property value is an empty string (""). If the language provider configuration element does not define the `warningLevel` attribute, the <xref:System.CodeDom.Compiler.CompilerParameters.WarningLevel%2A?displayProperty=nameWithType> property value is -1.  
   
    
   

@@ -61,7 +61,7 @@
   
  Unlike dictionaries, an element of <xref:System.Collections.ObjectModel.KeyedCollection%602> is not a key/value pair; instead, the entire element is the value and the key is embedded within the value.  For example, an element of a collection derived from `KeyedCollection\<String,String>` (`KeyedCollection(Of String, String)` in Visual Basic) might be "John Doe Jr." where the value is "John Doe Jr." and the key is "Doe"; or a collection of employee records containing integer keys could be derived from `KeyedCollection\<int,Employee>`. The abstract <xref:System.Collections.ObjectModel.KeyedCollection%602.GetKeyForItem%2A> method extracts the key from the element.  
   
- By default, the <xref:System.Collections.ObjectModel.KeyedCollection%602> includes a lookup dictionary that you can obtain with the <xref:System.Collections.ObjectModel.KeyedCollection%602.Dictionary%2A> property.  When an item is added to the <xref:System.Collections.ObjectModel.KeyedCollection%602>, the item's key is extracted once and saved in the lookup dictionary for faster searches. This behavior is overridden by specifying a dictionary creation threshold when you create the <xref:System.Collections.ObjectModel.KeyedCollection%602>. The lookup dictionary is created the first time the number of elements exceeds that threshold.  If you specify –1 as the threshold, the lookup dictionary is never created.  
+ By default, the <xref:System.Collections.ObjectModel.KeyedCollection%602> includes a lookup dictionary that you can obtain with the <xref:System.Collections.ObjectModel.KeyedCollection%602.Dictionary%2A> property.  When an item is added to the <xref:System.Collections.ObjectModel.KeyedCollection%602>, the item's key is extracted once and saved in the lookup dictionary for faster searches. This behavior is overridden by specifying a dictionary creation threshold when you create the <xref:System.Collections.ObjectModel.KeyedCollection%602>. The lookup dictionary is created the first time the number of elements exceeds that threshold.  If you specify -1 as the threshold, the lookup dictionary is never created.  
   
 > [!NOTE]
 >  When the internal lookup dictionary is used, it contains references to all the items in the collection if `TItem` is a reference type, or copies of all the items in the collection if `TItem` is a value type. Thus, using the lookup dictionary may not be appropriate if `TItem` is a value type.  
@@ -247,13 +247,13 @@
       </Parameters>
       <Docs>
         <param name="comparer">The implementation of the <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> generic interface to use when comparing keys, or <see langword="null" /> to use the default equality comparer for the type of the key, obtained from <see cref="P:System.Collections.Generic.EqualityComparer`1.Default" />.</param>
-        <param name="dictionaryCreationThreshold">The number of elements the collection can hold without creating a lookup dictionary (0 creates the lookup dictionary when the first item is added), or –1 to specify that a lookup dictionary is never created.</param>
+        <param name="dictionaryCreationThreshold">The number of elements the collection can hold without creating a lookup dictionary (0 creates the lookup dictionary when the first item is added), or -1 to specify that a lookup dictionary is never created.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" /> class that uses the specified equality comparer and creates a lookup dictionary when the specified threshold is exceeded.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.Collections.ObjectModel.KeyedCollection%602> includes a lookup dictionary that is created when the first item is added. When an item is added to the <xref:System.Collections.ObjectModel.KeyedCollection%602>, the item's key is extracted once and saved in the lookup dictionary for faster searches. This constructor allows you to override that behavior. Specify 0 to create the dictionary when the first element is added, 1 to create the dictionary when the second element is added, and so on. If you specify –1 as the threshold, the lookup dictionary is never created.  
+ By default, the <xref:System.Collections.ObjectModel.KeyedCollection%602> includes a lookup dictionary that is created when the first item is added. When an item is added to the <xref:System.Collections.ObjectModel.KeyedCollection%602>, the item's key is extracted once and saved in the lookup dictionary for faster searches. This constructor allows you to override that behavior. Specify 0 to create the dictionary when the first element is added, 1 to create the dictionary when the second element is added, and so on. If you specify -1 as the threshold, the lookup dictionary is never created.  
   
  For very small collections the improvement in retrieval speed provided by the lookup dictionary might not be worth the extra memory required by the dictionary. Setting a threshold allows you to decide when to make that tradeoff.  
   
@@ -282,7 +282,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="dictionaryCreationThreshold" /> is less than –1.</exception>
+          <paramref name="dictionaryCreationThreshold" /> is less than -1.</exception>
         <altmember cref="T:System.Collections.Generic.IEqualityComparer`1" />
       </Docs>
     </Member>
@@ -335,7 +335,7 @@
  This method is an O(1) operation.  
   
 ## Notes for Implementers  
- Before modifying the key embedded in an item, you must call this method to update the key in the lookup dictionary. If the dictionary creation threshold is –1, calling this method is not necessary.  
+ Before modifying the key embedded in an item, you must call this method to update the key in the lookup dictionary. If the dictionary creation threshold is -1, calling this method is not necessary.  
   
  Do not expose the <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A> method as a public method of a derived class. Misuse of this method puts the lookup dictionary out of sync with item keys. For example, setting the key to `null` and then setting it to another value adds multiple keys for an item to the lookup dictionary. Expose this method internally to allow mutable item keys: When the key for an item changes, this method is used to change the key in the lookup dictionary.  
   

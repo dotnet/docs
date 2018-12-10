@@ -180,9 +180,7 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">The name of the configuration attribute contained in the <see cref="T:System.Configuration.PropertyInformationCollection" />  
-  
- object.</param>
+        <param name="propertyName">The name of the configuration attribute contained in the <see cref="T:System.Configuration.PropertyInformationCollection" /> object.</param>
         <summary>Gets the <see cref="T:System.Configuration.PropertyInformation" /> object in the collection, based on the specified property name.</summary>
         <value>A <see cref="T:System.Configuration.PropertyInformation" /> object.</value>
         <remarks>To be added.</remarks>

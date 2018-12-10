@@ -3575,7 +3575,7 @@ SVC_UPDATE.EXE
  Use this method to write an entry with an application-defined `category` to the event log. The Event Viewer uses the category to filter events written by an event source. The Event Viewer can display the category as a numeric value, or it can use the category as a resource identifier to display a localized category string.  
   
 > [!NOTE]
->  The `category` parameter should be a positive value. Negative category values appear as a complementary positive number in the Event Viewer. For example, a –10 appears as 65,526, a –1 as 65,535.  
+>  The `category` parameter should be a positive value. Negative category values appear as a complementary positive number in the Event Viewer. For example, a -10 appears as 65,526, a -1 as 65,535.  
   
 > [!NOTE]
 >  The `message` string cannot contain %*n*, where *n* is an integer value (for example, %1), because the event viewer treats it as an insertion string. Because an Internet Protocol, version 6 (IPv6) address can contain this character sequence, you cannot log an event message that contains an IPv6 address.  
@@ -3797,7 +3797,7 @@ SVC_UPDATE.EXE
 >  The `message` string cannot contain %*n*, where *n* is an integer value (for example, %1), because the event viewer treats it as an insertion string. Because an Internet Protocol, version 6 (IPv6) address can contain this character sequence, you cannot log an event message that contains an IPv6 address.  
   
 > [!NOTE]
->  The `category` parameter should be a positive value. Negative category values appear as a complementary positive number in the Event Viewer. For example, a –10 appears as 65,526, a –1 as 65,535.  
+>  The `category` parameter should be a positive value. Negative category values appear as a complementary positive number in the Event Viewer. For example, a -10 appears as 65,526, a -1 as 65,535.  
   
  To display localized category strings in the Event Viewer, you must use an event source configured with a category resource file, and set the `category` to a resource identifier in the category resource file. If the event source does not have a configured category resource file, or the specified `category` does not index a string in the category resource file, then the Event Viewer displays the numeric category value for that entry. Configure the category resource file, along with the number of category strings in the resource file, using the <xref:System.Diagnostics.EventLogInstaller> or the <xref:System.Diagnostics.EventSourceCreationData> class.  
   
@@ -3919,7 +3919,7 @@ SVC_UPDATE.EXE
  Use this method to write an entry with an application-defined `category` to the event log, using a source that is already registered as an event source for the appropriate log. The Event Viewer uses the category to filter events written by an event source. The Event Viewer can display the category as a numeric value, or it can use the category as a resource identifier to display a localized category string.  
   
 > [!NOTE]
->  The `category` parameter should be a positive value. Negative category values appear as a complementary positive number in the Event Viewer. For example, a –10 appears as 65,526, a –1 as 65,535.  
+>  The `category` parameter should be a positive value. Negative category values appear as a complementary positive number in the Event Viewer. For example, a -10 appears as 65,526, a -1 as 65,535.  
   
  To display localized category strings in the Event Viewer, you must use an event source configured with a category resource file, and set the `category` to a resource identifier in the category resource file. If the event source does not have a configured category resource file, or the specified `category` does not index a string in the category resource file, then the Event Viewer displays the numeric category value for that entry. Configure the category resource file, along with the number of category strings in the resource file, using the <xref:System.Diagnostics.EventLogInstaller> or the <xref:System.Diagnostics.EventSourceCreationData> class.  
   
@@ -4023,7 +4023,7 @@ SVC_UPDATE.EXE
  In addition to the binary data, you can specify an application-defined category and an application-defined event identifier. The Event Viewer uses the category to filter events written by an event source. The Event Viewer can display the category as a numeric value, or it can use the category as a resource identifier to display a localized category string.  
   
 > [!NOTE]
->  The `category` parameter should be a positive value. Negative category values appear as a complementary positive number in the Event Viewer. For example, a –10 will appear as 65,526, a –1 as 65,535.  
+>  The `category` parameter should be a positive value. Negative category values appear as a complementary positive number in the Event Viewer. For example, a -10 will appear as 65,526, a -1 as 65,535.  
   
  To display localized category strings in the Event Viewer, you must use an event source configured with a category resource file, and set the `category` to a resource identifier in the category resource file. If the event source does not have a configured category resource file, or the specified `category` does not index a string in the category resource file, then the Event Viewer displays the numeric category value for that entry. Configure the category resource file, along with the number of category strings in the resource file, using the <xref:System.Diagnostics.EventLogInstaller> or the <xref:System.Diagnostics.EventSourceCreationData> class.  
   

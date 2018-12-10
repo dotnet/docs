@@ -34,7 +34,7 @@
 > [!IMPORTANT]
 >  <xref:System.Configuration.DefaultSettingValueAttribute> can only be applied to individual settings properties; it is invalid to apply this attribute to an entire application settings class.  
   
- Different settings providers may have different requirements or limitations on the use of the <xref:System.Configuration.DefaultSettingValueAttribute>. For example, the <xref:System.Configuration.LocalFileSettingsProvider> does not require this attribute, and will override any value provided by this attribute if there are any values—default or user-modified— already present in the data store.  
+ Different settings providers may have different requirements or limitations on the use of the <xref:System.Configuration.DefaultSettingValueAttribute>. For example, the <xref:System.Configuration.LocalFileSettingsProvider> does not require this attribute, and will override any value provided by this attribute if there are any values - default or user-modified -  already present in the data store.  
   
  <xref:System.Configuration.DefaultSettingValueAttribute> requires that the default value can be represented as a string. As a result, settings using XML serialization cannot have a default value specified by means of this attribute. Some providers may choose to support multiple serialization schemes which can be specified at compile time using the <xref:System.Configuration.SettingsSerializeAsAttribute>.  
   

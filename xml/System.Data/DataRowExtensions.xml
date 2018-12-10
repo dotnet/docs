@@ -354,7 +354,7 @@
         <typeparam name="T">A generic parameter that specifies the value type of the column.</typeparam>
         <param name="row">The input <see cref="T:System.Data.DataRow" />, which acts as the <see langword="this" /> instance for the extension method.</param>
         <param name="column">The input <see cref="T:System.Data.DataColumn" /> specifies which row value to retrieve.</param>
-        <param name="value">The new row value for the specified column, of type <c>T</c>.</param>
+        <param name="value">The new row value for the specified column, of type <paramref name="T" />.</param>
         <summary>Sets a new value for the specified column in the <see cref="T:System.Data.DataRow" />. The <see cref="M:System.Data.DataRowExtensions.SetField``1(System.Data.DataRow,System.Data.DataColumn,``0)" /> method also supports nullable types.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -402,7 +402,7 @@
         <typeparam name="T">A generic parameter that specifies the value type of the column.</typeparam>
         <param name="row">The input <see cref="T:System.Data.DataRow" />, which acts as the <see langword="this" /> instance for the extension method.</param>
         <param name="columnIndex">The zero-based ordinal of the column to set the value of.</param>
-        <param name="value">The new row value for the specified column, of type <c>T</c>.</param>
+        <param name="value">The new row value for the specified column, of type <paramref name="T" />.</param>
         <summary>Sets a new value for the specified column in the <see cref="T:System.Data.DataRow" /> the method is called on. The <see cref="M:System.Data.DataRowExtensions.SetField``1(System.Data.DataRow,System.Int32,``0)" /> method also supports nullable types.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -449,7 +449,7 @@
         <typeparam name="T">A generic parameter that specifies the value type of the column.</typeparam>
         <param name="row">The input <see cref="T:System.Data.DataRow" />, which acts as the <see langword="this" /> instance for the extension method.</param>
         <param name="columnName">The name of the column to set the value of.</param>
-        <param name="value">The new row value for the specified column, of type <c>T</c>.</param>
+        <param name="value">The new row value for the specified column, of type <paramref name="T" />.</param>
         <summary>Sets a new value for the specified column in the <see cref="T:System.Data.DataRow" />. The <see cref="M:System.Data.DataRowExtensions.SetField``1(System.Data.DataRow,System.String,``0)" /> method also supports nullable types.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

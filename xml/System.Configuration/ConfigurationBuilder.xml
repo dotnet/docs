@@ -23,10 +23,10 @@
 
   Several implementations of ConfigurationBuilders are available from NuGet.org:
   
-  - [EnvironmentConfigBuilder](https://www.nuget.org/packages/Microsoft.Configuration.ConfigurationBuilders.Environment/) – Read from environment variables.
-  - [AzureKeyVaultConfigBuilder](https://www.nuget.org/packages/Microsoft.Configuration.ConfigurationBuilders.Azure/) – Read from Azure Key Vault.
-  - [UserSecretsConfigBuilder](https://www.nuget.org/packages/Microsoft.Configuration.ConfigurationBuilders.UserSecrets/) – Read from a usersecrets file on disk, similar to the ASP.NET Core functionality.
-  - [SimpleJsonConfigBuilder](https://www.nuget.org/packages/Microsoft.Configuration.ConfigurationBuilders.Json/) – Read from a JSON file.
+  - [EnvironmentConfigBuilder](https://www.nuget.org/packages/Microsoft.Configuration.ConfigurationBuilders.Environment/) - Read from environment variables.
+  - [AzureKeyVaultConfigBuilder](https://www.nuget.org/packages/Microsoft.Configuration.ConfigurationBuilders.Azure/) - Read from Azure Key Vault.
+  - [UserSecretsConfigBuilder](https://www.nuget.org/packages/Microsoft.Configuration.ConfigurationBuilders.UserSecrets/) - Read from a usersecrets file on disk, similar to the ASP.NET Core functionality.
+  - [SimpleJsonConfigBuilder](https://www.nuget.org/packages/Microsoft.Configuration.ConfigurationBuilders.Json/) - Read from a JSON file.
 
   ## Examples
   The following example shows how to implement a simple ConfigurationBuilder to read Environment variables: 

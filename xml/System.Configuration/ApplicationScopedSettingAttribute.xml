@@ -34,7 +34,7 @@
   
  The <xref:System.Configuration.ApplicationScopedSettingAttribute> indicates that a property should be considered an application-level setting, and that appropriate storage decisions should be made accordingly by the settings provider.  
   
- A scope attribute is required for each settings property. If a property is not applied with either a <xref:System.Configuration.ApplicationScopedSettingAttribute> or <xref:System.Configuration.UserScopedSettingAttribute>, the property is not recognized by the settings provider—it is not serialized. It is invalid, however, to apply both attributes to the same property. Such an attempt will cause a <xref:System.Configuration.ConfigurationErrorsException> to be thrown.  
+ A scope attribute is required for each settings property. If a property is not applied with either a <xref:System.Configuration.ApplicationScopedSettingAttribute> or <xref:System.Configuration.UserScopedSettingAttribute>, the property is not recognized by the settings provider - it is not serialized. It is invalid, however, to apply both attributes to the same property. Such an attempt will cause a <xref:System.Configuration.ConfigurationErrorsException> to be thrown.  
   
  ]]></format>
     </remarks>

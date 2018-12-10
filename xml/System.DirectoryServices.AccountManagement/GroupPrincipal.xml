@@ -26,8 +26,6 @@
   <Docs>
     <summary>Encapsulates group accounts. Group accounts can be arbitrary collections of principal objects or accounts created for administrative purposes.</summary>
     <remarks>To be added.</remarks>
-    <altmember cref="N:System.DirectoryServices.AccountManagement" />
-    <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -38,8 +36,6 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> class.</summary>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -70,8 +66,6 @@
   
  ]]></format>
         </remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -104,8 +98,6 @@
   
  ]]></format>
         </remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -129,8 +121,6 @@
       <Docs>
         <summary>Disposes the current instance of the <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object.</summary>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindByIdentity">
@@ -141,8 +131,6 @@
       </AssemblyInfo>
       <Docs>
         <summary>Returns a group principal object that matches the specified identity value.</summary>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FindByIdentity">
@@ -172,9 +160,7 @@
         <summary>Returns a group principal object that matches the specified identity value.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object that matches the specified identity value and type, or null if no matches are found.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.MultipleMatchesException">Multiple group principal objects matching the current group object were found.</exception>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
+        <exception cref="T:System.DirectoryServices.AccountManagement.MultipleMatchesException">Multiple group principal objects matching the current group object were found.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindByIdentity">
@@ -205,10 +191,8 @@
         <summary>Returns a group principal object that matches the specified identity type, and value. This version of the <see cref="Overload:System.DirectoryServices.AccountManagement.GroupPrincipal.FindByIdentity" /> method determines the format of the identity value.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> that matches the specified identity value and type, or null if no matches are found.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.MultipleMatchesException">Multiple group principal objects matching the current group object were found.</exception>
+        <exception cref="T:System.DirectoryServices.AccountManagement.MultipleMatchesException">Multiple group principal objects matching the current group object were found.</exception>
         <exception cref="T:System.ComponenetModel.InvalidEnumerationOperatorException">The identity value is not a valid <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value.</exception>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetMembers">
@@ -219,8 +203,6 @@
       </AssemblyInfo>
       <Docs>
         <summary>Returns a collection of the principal objects that is contained in the group.</summary>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetMembers">
@@ -259,8 +241,6 @@
   
  ]]></format>
         </remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -327,8 +307,6 @@ ctx.Dispose();
   
  ]]></format>
         </remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GroupScope">
@@ -353,8 +331,6 @@ ctx.Dispose();
         <value>A nullable <see cref="T:System.DirectoryServices.AccountManagement.GroupScope" /> enumeration value that specifies the scope of this group or null if no scope has been set.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The application may not set this property to null.</exception>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsSecurityGroup">
@@ -389,8 +365,6 @@ ctx.Dispose();
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The application may not set this property to null.</exception>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Members">
@@ -453,8 +427,6 @@ ctx.Dispose();
   
  ]]></format>
         </remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
   </Members>

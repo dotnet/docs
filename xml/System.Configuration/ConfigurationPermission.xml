@@ -107,7 +107,20 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="securityElement" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <see langword="unrestricted" /> attribute for the given <paramref name="securityElement" /> is neither <see langword="true" /> nor <see langword="false" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see langword="unrestricted" /> attribute for the given <paramref name="securityElement" /> is neither <see langword="true" /> nor <see langword="false" />.
+
+-or-
+
+The <see cref="P:System.Security.SecurityElement.Tag" /> for the given <paramref name="securityElement" /> does not equal "IPermission".
+
+-or-
+
+The <see langword="class" /> attribute of the given <paramref name="securityElement " /> is <see langword="null" /> or is not the type name for <see cref="T:System.Configuration.ConfigurationPermission" />.
+
+-or-
+
+The <see langword="version" /> attribute for the given <paramref name="securityElement" /> does not equal 1.
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Intersect">

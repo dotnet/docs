@@ -485,7 +485,7 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index at which to replace <paramref name="oldValue" />.</param>
-        <param name="oldValue">The value to replace with <c>newValue.</c></param>
+        <param name="oldValue">The value to replace with <paramref name="newValue" />.</param>
         <param name="newValue">The new value of the installer at <paramref name="index" />.</param>
         <summary>Performs additional custom processes before an existing installer is set to a new value.</summary>
         <remarks>To be added.</remarks>

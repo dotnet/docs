@@ -33,7 +33,7 @@
   
  Typically, you should design settings providers to be single-instanced to avoid storage resource contention. Providers should also be thread-safe because they can be called simultaneously from multiple wrapper instances in a single application domain or from multiple applications in different domains.  
   
- At minimum, a settings provider must recognize three attributes—<xref:System.Configuration.ApplicationScopedSettingAttribute>, <xref:System.Configuration.UserScopedSettingAttribute>, and <xref:System.Configuration.DefaultSettingValueAttribute>. For a full listing of attributes that can be applied to application settings, see [Application Settings Attributes](~/docs/framework/winforms/advanced/application-settings-attributes.md). A custom setting provider should resolve attributes applied to settings properties in the following manner:  
+ At minimum, a settings provider must recognize three attributes - <xref:System.Configuration.ApplicationScopedSettingAttribute>, <xref:System.Configuration.UserScopedSettingAttribute>, and <xref:System.Configuration.DefaultSettingValueAttribute>. For a full listing of attributes that can be applied to application settings, see [Application Settings Attributes](~/docs/framework/winforms/advanced/application-settings-attributes.md). A custom setting provider should resolve attributes applied to settings properties in the following manner:  
   
 1.  If the provider can fulfill the request implied by the attribute, obviously it should do so.  
   

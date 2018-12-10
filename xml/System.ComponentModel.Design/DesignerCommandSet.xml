@@ -123,7 +123,7 @@
       <Docs>
         <param name="name">The type of collection to return, indicating either a <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> or a <see cref="T:System.ComponentModel.Design.DesignerVerbCollection" />.</param>
         <summary>Returns a collection of command objects.</summary>
-        <returns>A collection that contains the specified type—either <see cref="T:System.ComponentModel.Design.DesignerActionList" /> or <see cref="T:System.ComponentModel.Design.DesignerVerb" />—of command objects. The base implementation always returns <see langword="null" />.</returns>
+        <returns>A collection that contains the specified type - either <see cref="T:System.ComponentModel.Design.DesignerActionList" /> or <see cref="T:System.ComponentModel.Design.DesignerVerb" /> - of command objects. The base implementation always returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

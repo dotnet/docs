@@ -906,7 +906,7 @@
         <param name="count">The number of elements in the section to search.</param>
         <param name="equalityComparer">The equality comparer to use in the search.</param>
         <summary>Searches for the specified object and returns the zero-based index of the first occurrence within the range of elements in the list that starts at the specified index and contains the specified number of elements.</summary>
-        <returns>The zero-based index of the first occurrence of item within the range of elements in the list that starts at index and contains count number of elements, if found; otherwise, –1.</returns>
+        <returns>The zero-based index of the first occurrence of item within the range of elements in the list that starts at index and contains count number of elements, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1094,7 +1094,7 @@
         <param name="count">The number of elements in the section to search.</param>
         <param name="equalityComparer">The equality comparer to use in the search.</param>
         <summary>Searches for the specified object and returns the zero-based index of the last occurrence within the range of elements in the list that contains the specified number of elements and ends at the specified index.</summary>
-        <returns>The zero-based index of the last occurrence of item within the range of elements in the list that contains count number of elements and ends at index, if found; otherwise, –1.</returns>
+        <returns>The zero-based index of the last occurrence of item within the range of elements in the list that contains count number of elements and ends at index, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

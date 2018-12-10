@@ -53,7 +53,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Exact numeric value with precision 19 (if signed) or 20 (if unsigned) and scale 0 (signed: –2[63] &lt;= n &lt;= 2[63] – 1, unsigned:0 &lt;= n &lt;= 2[64] – 1) (SQL_BIGINT). This maps to <see cref="T:System.Int64" />.</summary>
+        <summary>Exact numeric value with precision 19 (if signed) or 20 (if unsigned) and scale 0 (signed: -2[63] &lt;= n &lt;= 2[63] - 1, unsigned:0 &lt;= n &lt;= 2[64] - 1) (SQL_BIGINT). This maps to <see cref="T:System.Int64" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Binary">
@@ -235,7 +235,7 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>Signed, approximate, numeric value with a binary precision 53 (zero or absolute value 10[–308] to 10[308]) (SQL_DOUBLE). This maps to <see cref="T:System.Double" />.</summary>
+        <summary>Signed, approximate, numeric value with a binary precision 53 (zero or absolute value 10[-308] to 10[308]) (SQL_DOUBLE). This maps to <see cref="T:System.Double" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Image">
@@ -261,7 +261,7 @@
       </ReturnValue>
       <MemberValue>9</MemberValue>
       <Docs>
-        <summary>Variable length binary data. Maximum length is data source–dependent (SQL_LONGVARBINARY). This maps to an <see cref="T:System.Array" /> of type <see cref="T:System.Byte" />.</summary>
+        <summary>Variable length binary data. Maximum length is data source-dependent (SQL_LONGVARBINARY). This maps to an <see cref="T:System.Array" /> of type <see cref="T:System.Byte" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int">
@@ -287,7 +287,7 @@
       </ReturnValue>
       <MemberValue>10</MemberValue>
       <Docs>
-        <summary>Exact numeric value with precision 10 and scale 0 (signed: –2[31] &lt;= n &lt;= 2[31] – 1, unsigned:0 &lt;= n &lt;= 2[32] – 1) (SQL_INTEGER). This maps to <see cref="T:System.Int32" />.</summary>
+        <summary>Exact numeric value with precision 10 and scale 0 (signed: -2[31] &lt;= n &lt;= 2[31] - 1, unsigned:0 &lt;= n &lt;= 2[32] - 1) (SQL_INTEGER). This maps to <see cref="T:System.Int32" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="NChar">
@@ -339,7 +339,7 @@
       </ReturnValue>
       <MemberValue>12</MemberValue>
       <Docs>
-        <summary>Unicode variable-length character data. Maximum length is data source–dependent. (SQL_WLONGVARCHAR). This maps to <see cref="T:System.String" />.</summary>
+        <summary>Unicode variable-length character data. Maximum length is data source-dependent. (SQL_WLONGVARCHAR). This maps to <see cref="T:System.String" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Numeric">
@@ -417,7 +417,7 @@
       </ReturnValue>
       <MemberValue>14</MemberValue>
       <Docs>
-        <summary>Signed, approximate, numeric value with a binary precision 24 (zero or absolute value 10[–38] to 10[38]).(SQL_REAL). This maps to <see cref="T:System.Single" />.</summary>
+        <summary>Signed, approximate, numeric value with a binary precision 24 (zero or absolute value 10[-38] to 10[38]).(SQL_REAL). This maps to <see cref="T:System.Single" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallDateTime">
@@ -469,7 +469,7 @@
       </ReturnValue>
       <MemberValue>17</MemberValue>
       <Docs>
-        <summary>Exact numeric value with precision 5 and scale 0 (signed: –32,768 &lt;= n &lt;= 32,767, unsigned: 0 &lt;= n &lt;= 65,535) (SQL_SMALLINT). This maps to <see cref="T:System.Int16" />.</summary>
+        <summary>Exact numeric value with precision 5 and scale 0 (signed: -32,768 &lt;= n &lt;= 32,767, unsigned: 0 &lt;= n &lt;= 65,535) (SQL_SMALLINT). This maps to <see cref="T:System.Int16" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -495,7 +495,7 @@
       </ReturnValue>
       <MemberValue>18</MemberValue>
       <Docs>
-        <summary>Variable length character data. Maximum length is data source–dependent (SQL_LONGVARCHAR). This maps to <see cref="T:System.String" />.</summary>
+        <summary>Variable length character data. Maximum length is data source-dependent (SQL_LONGVARCHAR). This maps to <see cref="T:System.String" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Time">
@@ -573,7 +573,7 @@
       </ReturnValue>
       <MemberValue>20</MemberValue>
       <Docs>
-        <summary>Exact numeric value with precision 3 and scale 0 (signed: –128 &lt;= n &lt;= 127, unsigned:0 &lt;= n &lt;= 255)(SQL_TINYINT). This maps to <see cref="T:System.Byte" />.</summary>
+        <summary>Exact numeric value with precision 3 and scale 0 (signed: -128 &lt;= n &lt;= 127, unsigned:0 &lt;= n &lt;= 255)(SQL_TINYINT). This maps to <see cref="T:System.Byte" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="UniqueIdentifier">

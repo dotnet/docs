@@ -1184,11 +1184,11 @@
   
  The <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeToResourceExpression%2A> method will look on the <xref:System.ComponentModel.Design.Serialization.ContextStack> for the following objects:  
   
--   <xref:System.CodeDom.CodeStatementCollection>—a collection of statements to add a resource manager to, if one needs to be declared.  
+-   <xref:System.CodeDom.CodeStatementCollection> - a collection of statements to add a resource manager to, if one needs to be declared.  
   
--   <xref:System.ComponentModel.Design.Serialization.RootContext>—the root expression, which is needed to create a resource manager.  
+-   <xref:System.ComponentModel.Design.Serialization.RootContext> - the root expression, which is needed to create a resource manager.  
   
--   <xref:System.ComponentModel.Design.Serialization.ExpressionContext>—used to fabricate a name for the resource and to decide what type of resource manager call to make.  
+-   <xref:System.ComponentModel.Design.Serialization.ExpressionContext> - used to fabricate a name for the resource and to decide what type of resource manager call to make.  
   
  ]]></format>
         </remarks>

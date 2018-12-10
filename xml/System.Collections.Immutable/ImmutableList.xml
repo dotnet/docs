@@ -214,7 +214,7 @@
         <param name="list">The list to search.</param>
         <param name="item">The object to locate in the list. The value can be null for reference types.</param>
         <summary>Searches for the specified object and returns the zero-based index of the first occurrence within the list.</summary>
-        <returns>The zero-based index of the first occurrence of item within the range of elements in the list that extends from index to the last element, if found; otherwise, –1.</returns>
+        <returns>The zero-based index of the first occurrence of item within the range of elements in the list that extends from index to the last element, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,7 +250,7 @@
         <param name="item">The object to locate in the Immutable list. The value can be null for reference types.</param>
         <param name="equalityComparer">The equality comparer to use in the search.</param>
         <summary>Searches for the specified object and returns the zero-based index of the first occurrence within the list.</summary>
-        <returns>The zero-based index of the first occurrence of item within the range of elements in the immutable list that extends from index to the last element, if found; otherwise, –1.</returns>
+        <returns>The zero-based index of the first occurrence of item within the range of elements in the immutable list that extends from index to the last element, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,7 +286,7 @@
         <param name="item">The object to locate in the Immutable list. The value can be null for reference types.</param>
         <param name="startIndex">The zero-based starting index of the search. 0 (zero) is valid in an empty list.</param>
         <summary>Searches for the specified object and returns the zero-based index of the first occurrence within the range of elements in the immutable list that extends from the specified index to the last element.</summary>
-        <returns>The zero-based index of the first occurrence of item within the range of elements in the Immutable list that extends from index to the last element, if found; otherwise, –1.</returns>
+        <returns>The zero-based index of the first occurrence of item within the range of elements in the Immutable list that extends from index to the last element, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,7 +324,7 @@
         <param name="startIndex">The zero-based starting index of the search. 0 (zero) is valid in an empty list.</param>
         <param name="count">The number of elements in the section to search.</param>
         <summary>Searches for the specified object and returns the zero-based index of the first occurrence within the range of elements in the immutable list that extends from the specified index to the last element.</summary>
-        <returns>The zero-based index of the first occurrence of item within the range of elements in the Immutable list that extends from index to the last element, if found; otherwise, –1.</returns>
+        <returns>The zero-based index of the first occurrence of item within the range of elements in the Immutable list that extends from index to the last element, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,7 +358,7 @@
         <param name="list">The list to search.</param>
         <param name="item">The object to locate in the Immutable list. The value can be null for reference types.</param>
         <summary>Searches for the specified object and returns the zero-based index of the last occurrence within the entire immutable list.</summary>
-        <returns>The zero-based index of the last occurrence of item within the entire the Immutable list, if found; otherwise, –1.</returns>
+        <returns>The zero-based index of the last occurrence of item within the entire the Immutable list, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -394,7 +394,7 @@
         <param name="item">The object to locate in the Immutable list. The value can be null for reference types.</param>
         <param name="equalityComparer">The equality comparer to use in the search.</param>
         <summary>Searches for the specified object and returns the zero-based index of the last occurrence within the entire immutable list.</summary>
-        <returns>The zero-based index of the last occurrence of item within the entire the Immutable list, if found; otherwise, –1.</returns>
+        <returns>The zero-based index of the last occurrence of item within the entire the Immutable list, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -430,7 +430,7 @@
         <param name="item">The object to locate in the Immutable list. The value can be null for reference types.</param>
         <param name="startIndex">The zero-based starting index of the backward search.</param>
         <summary>Searches for the specified object and returns the zero-based index of the last occurrence within the range of elements in the immutable list that extends from the first element to the specified index.</summary>
-        <returns>The zero-based index of the last occurrence of item within the range of elements in the Immutable list that extends from the first element to index, if found; otherwise, –1.</returns>
+        <returns>The zero-based index of the last occurrence of item within the range of elements in the Immutable list that extends from the first element to index, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -468,7 +468,7 @@
         <param name="startIndex">The zero-based starting index of the backward search.</param>
         <param name="count">The number of elements in the section to search.</param>
         <summary>Searches for the specified object and returns the zero-based index of the last occurrence within the range of elements in the immutable list that extends from the first element to the specified index.</summary>
-        <returns>The zero-based index of the last occurrence of item within the range of elements in the Immutable list that extends from the first element to index, if found; otherwise, –1.</returns>
+        <returns>The zero-based index of the last occurrence of item within the range of elements in the Immutable list that extends from the first element to index, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

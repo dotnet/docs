@@ -226,7 +226,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerActionPropertyItem.MemberName%2A> property specifies which property—in the class derived from the <xref:System.ComponentModel.Design.DesignerActionList> class—the item should be bound to. When the programmer interacts with the panel item through the user interface (UI), this associated property will be set.  
+ The <xref:System.ComponentModel.Design.DesignerActionPropertyItem.MemberName%2A> property specifies which property - in the class derived from the <xref:System.ComponentModel.Design.DesignerActionList> class - the item should be bound to. When the programmer interacts with the panel item through the user interface (UI), this associated property will be set.  
   
  <xref:System.ComponentModel.Design.DesignerActionPropertyItem.MemberName%2A> is set in the constructor. Its value is case-sensitive.  
   

@@ -1536,7 +1536,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="queries">Array of <see cref="T:System.Data.Services.Client.DataServiceRequest[]" /> objects that make up the queries.</param>
+        <param name="queries">Array of <see cref="T:System.Data.Services.Client.DataServiceRequest" /> objects that make up the queries.</param>
         <summary>Submits a group of queries as a batch to the data service.</summary>
         <returns>The response to the batch operation.</returns>
         <remarks>

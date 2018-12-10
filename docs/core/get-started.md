@@ -5,6 +5,7 @@ author: thraka
 ms.author: adegeo
 ms.date: 06/27/2018
 ---
+
 # Get started with .NET Core
 
 This article provides information on getting started with .NET Core. .NET Core can be installed on Windows, Linux, and macOS. You can code in your favorite text editor and produce cross-platform libraries and applications. 

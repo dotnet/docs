@@ -23,7 +23,7 @@ Start by creating a solution for your class library project and its related proj
 
 1. In the **New Project** dialog, expand the **Other Project Types** node, and select **Visual Studio Solutions**. Name the solution "ClassLibraryProjects" and select the **OK** button.
 
-   ![New project dialog](./media/library-with-visual-studio/newproject.png)
+   ![New project dialog with new blank solution highlighted](./media/library-with-visual-studio/new-project-dialog.png)
 
 ## Creating the class library project
 
@@ -33,15 +33,15 @@ Create your class library project:
 
 1. In the **Add New Project** dialog, expand the **Visual C#** node, then select the **.NET Standard** node followed by the **Class Library (.NET Standard)** project template. In the **Name** text box, enter "StringLibrary" as the name of the project. Select **OK** to create the class library project.
 
-   ![Add New Project dialog](./media/library-with-visual-studio/libproject.png)
+   ![Add New library Project dialog](./media/library-with-visual-studio/add-new-library-project.png)
 
    The code window then opens in the Visual Studio development environment.
 
-   ![Visual Studio application window showing the default class library template code](./media/library-with-visual-studio/stringlibrary.png)
+   ![Visual Studio application window showing the default class library template code](./media/library-with-visual-studio/string-library-project.png)
 
 1. Check to make sure that our library targets the correct version of the .NET Standard. Right-click on the library project in the **Solution Explorer** windows, then select **Properties**. The **Target Framework** text box shows that we're targeting .NET Standard 2.0.
 
-   ![Project properties for the class library](./media/library-with-visual-studio/properties.png)
+   ![Project properties for the class library](./media/library-with-visual-studio/library-project-properties.png)
 
 1. Replace the code in the code window with the following code and save the file:
 
@@ -51,7 +51,7 @@ Create your class library project:
 
 1. On the menu bar, select **Build** > **Build Solution**. The project should compile without error.
 
-   ![Output pane showing that the build succeeded](./media/library-with-visual-studio/buildsucceeds.png)
+   ![Output pane showing that the build succeeded](./media/library-with-visual-studio/output-pane-successful-build.png)
 
 ## Next step
 

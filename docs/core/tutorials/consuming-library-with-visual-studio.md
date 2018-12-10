@@ -27,19 +27,19 @@ Just as you included unit tests in the same solution as your class library, you 
 
 1. In the **Add New Project** dialog, expand the **Visual C#** node and select the **.NET Core** node followed by the **Console App (.NET Core)** project template. In the **Name** text box, type "ShowCase", and select the **OK** button.
 
-   ![Add New Project dialog](./media/consuming-library-with-visual-studio/addnewproject.png)
+   ![Visual Studio Add New Project dialog - C#](./media/consuming-library-with-visual-studio/add-new-project-dialog.png)
 
-1. In **Solution Explorer**, right-click the **ShowCase** project and select **Set as StartUp Project** in the context menu. 
+1. In **Solution Explorer**, right-click the **ShowCase** project and select **Set as StartUp Project** in the context menu.
 
-   ![ShowCase context menu](./media/consuming-library-with-visual-studio/setstartupproject.png)
+   ![Visual Studio project context menu to set startup project- C#](./media/consuming-library-with-visual-studio/set-startup-project-context-menu.png)
 
 1. Initially, your project doesn't have access to your class library. To allow it to call methods in your class library, you create a reference to the class library. In **Solution Explorer**, right-click the `ShowCase` project's **Dependencies** node and select **Add Reference**.
 
-   ![ShowCase Dependencies context menu](./media/consuming-library-with-visual-studio/addreference.png)
+   ![Visual Studio project add reference context menu - C#](./media/consuming-library-with-visual-studio/add-reference-context-menu.png)
 
 1. In the **Reference Manager** dialog, select **StringLibrary**, your class library project, and select the **OK** button.
 
-   ![Reference manager](./media/consuming-library-with-visual-studio/referencemanager.png)
+   ![Visual Studio Manage references dialog - C#](./media/consuming-library-with-visual-studio/manage-project-references.png)
 
 1. In the code window for the *Program.cs* file, replace all of the code with the following code:
 
@@ -51,25 +51,25 @@ Just as you included unit tests in the same solution as your class library, you 
 
 1. If necessary, change the toolbar to compile the **Debug** release of the `ShowCase` project. Compile and run the program by selecting the green arrow on the **ShowCase** button.
 
-   ![Image](./media/consuming-library-with-visual-studio/toolbar.png)
+   ![Visual Studio project toolbar showing Debug button - C#](./media/consuming-library-with-visual-studio/visual-studio-project-toolbar.png)
 # [Visual Basic](#tab/vb)
 1. Open the `ClassLibraryProjects` solution you created in the [Building a class Library with Visual Basic and .NET Core in Visual Studio 2017](vb-library-with-visual-studio.md) topic. In **Solution Explorer**, right-click the **ClassLibraryProjects** solution and select **Add** > **New Project** from the context menu.
 
 1. In the **Add New Project** dialog, expand the **Visual Basic** node and select the **.NET Core** node followed by the **Console App (.NET Core)** project template. In the **Name** text box, type "ShowCase", and select the **OK** button.
 
-   ![Add New Project dialog](./media/consuming-library-with-visual-studio/vb-addnewproject.png)
+   ![Visual Studio Add New Project dialog - Visual Basic](./media/consuming-library-with-visual-studio/add-new-vb-project-dialog.png)
 
 1. In **Solution Explorer**, right-click the **ShowCase** project and select **Set as StartUp Project** in the context menu. 
 
-   ![ShowCase context menu](./media/consuming-library-with-visual-studio/setstartupproject.png)
+   ![Visual Studio project context menu to set startup project - Visual Basic](./media/consuming-library-with-visual-studio/set-startup-project-context-menu.png)
 
 1. Initially, your project doesn't have access to your class library. To allow it to call methods in your class library, you create a reference to the class library. In **Solution Explorer**, right-click the `ShowCase` project's **Dependencies** node and select **Add Reference**.
 
-   ![ShowCase Dependencies context menu](./media/consuming-library-with-visual-studio/addreference.png)
+   ![Visual Studio project add reference context menu - Visual Basic](./media/consuming-library-with-visual-studio/add-reference-context-menu.png)
 
 1. In the **Reference Manager** dialog, select **StringLibrary**, your class library project, and select the **OK** button.
 
-   ![Reference manager](./media/consuming-library-with-visual-studio/referencemanager.png)
+   ![Visual Studio Manage references dialog - Visual Basic](./media/consuming-library-with-visual-studio/manage-project-references.png)
 
 1. In the code window for the *Program.vb* file, replace all of the code with the following code:
 
@@ -81,7 +81,7 @@ Just as you included unit tests in the same solution as your class library, you 
 
 1. If necessary, change the toolbar to compile the **Debug** release of the `ShowCase` project. Compile and run the program by selecting the green arrow on the **ShowCase** button.
 
-   ![Image](./media/consuming-library-with-visual-studio/toolbar.png)
+   ![Debug on toolbar - Visual Basic](./media/consuming-library-with-visual-studio/visual-studio-project-toolbar.png)
 ---
 
 You can debug and publish the application that uses this library by following the steps in [Debugging your Hello World application with Visual Studio 2017](debugging-with-visual-studio.md) and [Publishing your Hello World Application with Visual Studio 2017](publishing-with-visual-studio.md).

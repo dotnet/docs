@@ -28,25 +28,25 @@ Download the [Visual Studio for Mac installer](https://visualstudio.microsoft.co
 
 1. Select **New Project** on the Welcome screen.
 
-   ![New project button on the Visual Studio for Mac Welcome screen](./media/using-on-mac-vs/vsmac1.png)
+   ![New project button on the Visual Studio for Mac Welcome screen](./media/using-on-mac-vs/visual-studio-mac-new-project.png)
 
 1. In the **New Project** dialog, select **App** under the **.NET Core** node. Select the **Console Application** template followed by **Next**.
 
-   ![New project templates list](./media/using-on-mac-vs/vsmac2.png)
+   ![New project templates list](./media/using-on-mac-vs/visual-studio-mac-new-dialog.png)
 
 1. Type "HelloWorld" for the **Project Name**. Select **Create**.
 
-   ![Configure your new Console Application dialog](./media/using-on-mac-vs/vsmac3.png)
+   ![Configure your new Console Application dialog](./media/using-on-mac-vs/visual-studio-mac-new-options.png)
 
 1. Wait while the project's dependencies are restored. The project has a single C# file, *Program.cs*, containing a `Program` class with a `Main` method. The `Console.WriteLine` statement will output "Hello World!" to the console when the app is run.
 
-   ![Main window with the Program.cs file open](./media/using-on-mac-vs/vsmac4.png)
+   ![Main window with the Program.cs file open](./media/using-on-mac-vs/visual-studio-mac-editor.png)
 
 ## Run the application
 
 Run the app in Debug mode using <kbd>F5</kbd> or in Release mode using <kbd>CTRL</kbd>+<kbd>F5</kbd>.
 
-![The Application Output pane shows Hello World!](./media/using-on-mac-vs/vsmac5.png)
+![The Application Output pane shows Hello World!](./media/using-on-mac-vs/visual-studio-mac-output.png)
 
 ## Next step
 

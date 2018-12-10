@@ -1,7 +1,7 @@
 ---
 title: F# style guide
 description: Learn the five principles of good F# code.
-ms.date: 05/14/2018
+ms.date: 12/10/2018
 ---
 # F# style guide
 
@@ -11,15 +11,15 @@ This guidance has been formulated based on the use of F# in large codebases with
 
 ## Five principles of good F# code
 
-You should keep the following principles in mind any time you write F# code, especially in systems that will change over time. Every piece of guidance in further articles stems from these five points.
+Keep the following principles in mind any time you write F# code, especially in systems that will change over time. Every piece of guidance in further articles stems from these five points.
 
-1. **Good F# code is succinct and expressive**
+1. **Good F# code is succinct, expressive, and composable**
 
-    F# has many features that allow you to express actions in fewer lines of code and reuse generic functionality. The F# core library also contains many useful types and functions for working with common collections of data. As a general rule, if you can express a solution to a problem in fewer lines of code, other developers (or your future self) will be appreciative. It is also highly recommended that you use a library such as FSharp.Core, the [vast .NET libraries](https://docs.microsoft.com/dotnet/api/) that F# runs on, or a third-party package on [NuGet](https://www.nuget.org/) when you need to do a nontrivial task.
+    F# has many features that allow you to express actions in fewer lines of code and reuse generic functionality. The F# core library also contains many useful types and functions for working with common collections of data. Composition of your own functions and those in the F# core library (or other libraries) is a part of routine idiomatic F# programming. As a general rule, if you can express a solution to a problem in fewer lines of code, other developers (or your future self) will be appreciative. It's also highly recommended that you use a library such as FSharp.Core, the [vast .NET libraries](https://docs.microsoft.com/dotnet/api/) that F# runs on, or a third-party package on [NuGet](https://www.nuget.org/) when you need to do a nontrivial task.
 
 2. **Good F# code is interoperable**
 
-    Interoperation can take multiple forms, including consuming code in different languages. The boundaries of your code that other callers interoperate with are critical pieces to get right. When writing F#, you should always be thinking about how other code will call into the code you are writing, including if they do so from another language like C#. The [F# Component Design Guidelines](component-design-guidelines.md) describe interoperability in detail.
+    Interoperation can take multiple forms, including consuming code in different languages. The boundaries of your code that other callers interoperate with are critical pieces to get right, even if the callers are also in F#. When writing F#, you should always be thinking about how other code will call into the code you're writing, including if they do so from another language like C#. The [F# Component Design Guidelines](component-design-guidelines.md) describe interoperability in detail.
 
 3. **Good F# code makes use of object programming, not object orientation**
 

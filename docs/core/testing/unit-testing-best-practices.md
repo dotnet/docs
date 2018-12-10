@@ -1,19 +1,19 @@
 ---
 title: Best practices for writing unit tests
-description: Learn best practices for writing unit tests that drive code quality and resilience
+description: Learn best practices for writing unit tests that drive code quality and resilience for .NET Core and .NET Standard projects.
 author: jpreese
 ms.author: wiwagn
 ms.date: 07/28/2018
 ms.custom: "seodec18"
 ---
 
-# Unit testing best practices
+# Unit testing best practices with .NET Core and .NET Standard
 
-By [John Reese](http://reesespieces.io) with special thanks to [Roy Osherove](http://osherove.com/)
-
-There are numerous benefits to writing unit tests; they help with regression, provide documentation, and facilitate good design. However, hard to read and brittle unit tests can wreak havoc on your code base.
+There are numerous benefits to writing unit tests; they help with regression, provide documentation, and facilitate good design. However, hard to read and brittle unit tests can wreak havoc on your code base. This article describes some best practices regarding unit test design for your .NET Core and .NET Standard projects.
 
 In this guide, you'll learn some best practices when writing unit tests to keep your tests resilient and easy to understand.
+
+By [John Reese](http://reesespieces.io) with special thanks to [Roy Osherove](http://osherove.com/)
 
 ## Why unit test?
 

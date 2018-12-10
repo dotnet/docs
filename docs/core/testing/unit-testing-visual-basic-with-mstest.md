@@ -1,5 +1,5 @@
 ---
-title: Unit testing Visual Basic in .NET Core using dotnet test and MSTest
+title: Unit testing Visual Basic in .NET Core with dotnet test and MSTest
 description: Learn unit test concepts in .NET Core through an interactive experience building a sample Visual Basic solution step-by-step using MSTest.
 author: billwagner
 ms.author: wiwagn

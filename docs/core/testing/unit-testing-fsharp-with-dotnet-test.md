@@ -1,5 +1,5 @@
 ---
-title: Unit testing F# libraries in .NET Core using dotnet test and xUnit
+title: Unit testing F# in .NET Core with dotnet test and xUnit
 description: Learn unit test concepts for F# in .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and xUnit.
 author: billwagner
 ms.author: wiwagn

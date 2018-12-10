@@ -1,11 +1,12 @@
 ---
 title: Unit testing in .NET Core and .NET Standard
-description: Unit testing in .NET Core and .NET Standard projects.
+description: This article gives a brief overview of unit testing for .NET Core and .NET Standard projects.
 author: ardalis
 ms.author: wiwagn
 ms.date: 08/30/2017
 ms.custom: "seodec18"
 ---
+
 # Unit testing in .NET Core and .NET Standard
 
 .NET Core makes it easy to create unit tests. This article introduces unit tests and illustrates how they differ from other kinds of tests. The linked resources near the bottom of the page show you how to add a test project to your solution. After you set up your test project, you will be able to run your unit tests using the command line or Visual Studio.
@@ -24,6 +25,8 @@ Also, keep in mind there are best practices for writing tests. For example, [Tes
 > The ASP.NET team follows [these conventions](https://github.com/aspnet/Home/wiki/Engineering-guidelines#unit-tests-and-functional-tests) to help developers come up with good names for test classes and methods.
 
 Try not to introduce dependencies on infrastructure when writing unit tests. These make the tests slow and brittle, and should be reserved for integration tests. You can avoid these dependencies in your application by following the [Explicit Dependencies Principle](https://deviq.com/explicit-dependencies-principle/) and using [Dependency Injection](/aspnet/core/fundamentals/dependency-injection). You can also keep your unit tests in a separate project from your integration tests. This ensures your unit test project doesn’t have references to or dependencies on infrastructure packages.
+
+## Next steps
 
 More information on unit testing in .NET Core projects:
 

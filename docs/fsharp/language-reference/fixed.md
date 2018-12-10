@@ -1,5 +1,6 @@
 ---
-title: The Fixed Keyword (F#)
+title: The Fixed Keyword
+ms.custom: seodec18
 description: Learn how you can 'pin' a local onto the stack to prevent collection with the F# 'fixed' keyword.
 ms.date: 04/24/2017
 ---

@@ -1,5 +1,6 @@
 ---
-title: let Bindings in Classes (F#)
+title: let Bindings in Classes
+ms.custom: seodec18
 description: Learn how to define private fields and private functions for F# classes by using 'let' bindings in the class definition.
 ms.date: 05/16/2016
 ---

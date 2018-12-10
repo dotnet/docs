@@ -1,5 +1,6 @@
 ---
-title: "Loops: for...to Expression (F#)"
+title: "Loops: for...to Expression"
+ms.custom: seodec18
 description: See how the F# for...to expression is used to iterate in a loop over a range of values of a loop variable.
 ms.date: 05/16/2016
 ---

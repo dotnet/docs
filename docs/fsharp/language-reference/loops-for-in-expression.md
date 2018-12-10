@@ -1,5 +1,6 @@
 ---
-title: "Loops: for...in Expression (F#)"
+title: "Loops: for...in Expression"
+ms.custom: seodec18
 description: See how the F# for...in expression looping construct is used to iterate over the matches of a pattern in an enumerable collection.
 ms.date: 05/16/2016
 ---

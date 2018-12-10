@@ -1,5 +1,6 @@
 ---
-title: Object Expressions (F#)
+title: Object Expressions
+ms.custom: seodec18
 description: Learn how to use F# object expressions when you want to avoid the extra code and overhead required to create a new, named type.
 ms.date: 05/16/2016
 ---

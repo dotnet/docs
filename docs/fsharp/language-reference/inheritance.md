@@ -1,5 +1,6 @@
 ---
-title: Inheritance (F#)
+title: Inheritance
+ms.custom: seodec18
 description: Learn how to specify F# inheritance relationships using the 'inherit' keyword.
 ms.date: 05/16/2016
 ---

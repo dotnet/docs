@@ -1,5 +1,6 @@
 ---
-title: Compiler Directives (F#)
+title: Compiler Directives
+ms.custom: seodec18
 description: Learn about F# language preprocessor directives, conditional compilation directives, line directives, and compiler directives.
 ms.date: 05/16/2016
 ---

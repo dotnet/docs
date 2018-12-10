@@ -1,5 +1,6 @@
 ---
-title: Match expressions (F#)
+title: Match expressions
+ms.custom: seodec18
 description: Learn how the F# match expression provides branching control that is based on the comparison of an expression with a set of patterns.
 ms.date: 04/19/2018
 ---
@@ -76,6 +77,6 @@ foo() // returns 42
 
 ## See also
 
-- [F# Language Reference](index.md)  
-- [Active Patterns](active-patterns.md)  
-- [Pattern Matching](pattern-matching.md)  
+- [F# Language Reference](index.md)
+- [Active Patterns](active-patterns.md)
+- [Pattern Matching](pattern-matching.md)

@@ -1,5 +1,6 @@
 ---
-title: do Bindings (F#)
+title: do Bindings
+ms.custom: seodec18
 description: Learn how an F# 'do' binding is used to execute code without defining a function or value.
 ms.date: 05/16/2016
 ---

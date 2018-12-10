@@ -1,5 +1,5 @@
 ---
-title: dotnet build command - .NET Core CLI
+title: dotnet build command
 description: The dotnet build command builds a project and all of its dependencies.
 ms.date: 12/04/2018
 ---

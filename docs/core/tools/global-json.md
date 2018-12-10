@@ -1,10 +1,8 @@
 ---
 title: global.json overview
 description: Learn how to use the global.json file to set the .NET Core SDK version when running .NET Core CLI commands.
-author: mairaw
-ms.author: mairaw
 ms.date: 12/03/2018
-ms.custom: "updateeachrelease"
+ms.custom: "updateeachrelease, seodec18"
 ---
 # global.json overview
 

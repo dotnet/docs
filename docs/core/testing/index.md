@@ -1,9 +1,10 @@
 ---
-title: Unit Testing in .NET Core
+title: Unit testing in .NET Core and .NET Standard
 description: Unit testing in .NET Core and .NET Standard projects.
 author: ardalis
 ms.author: wiwagn
 ms.date: 08/30/2017
+ms.custom: "seodec18"
 ---
 # Unit testing in .NET Core and .NET Standard
 

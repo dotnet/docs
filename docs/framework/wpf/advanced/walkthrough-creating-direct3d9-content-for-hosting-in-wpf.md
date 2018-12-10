@@ -24,7 +24,7 @@ This walkthrough shows how to create Direct3D9 content that is suitable for host
 
 -   Visual Studio 2010.
 
--   DirectX SDK 9or later.
+-   DirectX SDK 9 or later.
 
 ## Creating the Direct3D9 Project
  The first step is to create and configure the Direct3D9 project.

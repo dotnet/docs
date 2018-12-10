@@ -1,8 +1,7 @@
 ---
-title: dotnet vstest command - .NET Core CLI
+title: dotnet vstest command
 description: The dotnet vstest command builds a project and all of its dependencies.
 author: guardrex
-ms.author: mairaw
 ms.date: 05/30/2018
 ---
 # dotnet vstest

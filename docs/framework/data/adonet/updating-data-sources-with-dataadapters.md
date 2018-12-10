@@ -288,9 +288,9 @@ class Program {
   
       // Build the query string  
       String primaryCols = String.Join(",", primaryColumns.Select(col => col.ColumnName));  
-      String resetCols = String.Join(",", resetColumns.Select(col => "Max(" + col.ColumnName + ") as " + col.ColumnName));  
+      String resetCols = String.Join(",", resetColumns.Select(col => $"Max({col.ColumnName}) as {col.ColumnName}"));
   
-      String selectString = String.Format("Select {0},{1} from Course Group by {0}", primaryCols, resetCols);  
+      String selectString = $"Select {primaryCols},{resetCols} from Course Group by {primaryCols}");
   
       SqlCommand selectCommand = new SqlCommand(selectString);  
   

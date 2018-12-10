@@ -1899,7 +1899,7 @@ FieldName = @OriginalFieldName
 ## Remarks  
  For input parameters, the value is bound to the <xref:System.Data.SqlClient.SqlCommand> that is sent to the server. For output and return value parameters, the value is set on completion of the <xref:System.Data.SqlClient.SqlCommand> and after the <xref:System.Data.SqlClient.SqlDataReader> is closed.  
   
- This property can be set to null or <xref:System.DBNull.Value>. Use <xref:System.DBNull.Value> to send a NULL value as the value of the parameter. Use null or do not set <xref:System.Data.SqlClient.SqlParameter.Value%2A> to use the default value for the parameter.  
+ This property can be set to `null` or <xref:System.DBNull.Value?displayProperty=nameWithType>. Use <xref:System.DBNull.Value?displayProperty=nameWithType> to send a NULL value as the value of the parameter. Use `null` or do not set <xref:System.Data.SqlClient.SqlParameter.Value%2A> to use the default value for the parameter.  
   
  An exception is thrown if non-Unicode XML data is passed as a string.  
   

@@ -761,7 +761,7 @@
       </Parameters>
       <Docs>
         <param name="Expression">Required. Expression to be formatted.</param>
-        <param name="NumDigitsAfterDecimal">Optional. Numeric value indicating how many places are displayed to the right of the decimal. Default value is –1, which indicates that the computer's regional settings are used.</param>
+        <param name="NumDigitsAfterDecimal">Optional. Numeric value indicating how many places are displayed to the right of the decimal. Default value is -1, which indicates that the computer's regional settings are used.</param>
         <param name="IncludeLeadingDigit">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> enumeration that indicates whether or not a leading zero is displayed for fractional values. See "Remarks" for values.</param>
         <param name="UseParensForNegativeNumbers">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> enumeration that indicates whether or not to place negative values within parentheses. See "Remarks" for values.</param>
         <param name="GroupDigits">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> enumeration that indicates whether or not numbers are grouped using the group delimiter specified in the computer's regional settings. See "Remarks" for values.</param>
@@ -896,7 +896,7 @@
       </Parameters>
       <Docs>
         <param name="Expression">Required. Expression to be formatted.</param>
-        <param name="NumDigitsAfterDecimal">Optional. Numeric value indicating how many places are displayed to the right of the decimal. The default value is –1, which indicates that the computer's regional settings are used.</param>
+        <param name="NumDigitsAfterDecimal">Optional. Numeric value indicating how many places are displayed to the right of the decimal. The default value is -1, which indicates that the computer's regional settings are used.</param>
         <param name="IncludeLeadingDigit">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> constant that indicates whether a leading 0 is displayed for fractional values. See "Settings" for values.</param>
         <param name="UseParensForNegativeNumbers">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> constant that indicates whether to place negative values within parentheses. See "Settings" for values.</param>
         <param name="GroupDigits">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> constant that indicates whether or not numbers are grouped using the group delimiter specified in the locale settings. See "Settings" for values.</param>
@@ -962,7 +962,7 @@
       </Parameters>
       <Docs>
         <param name="Expression">Required. Expression to be formatted.</param>
-        <param name="NumDigitsAfterDecimal">Optional. Numeric value indicating how many places to the right of the decimal are displayed. Default value is –1, which indicates that the locale settings are used.</param>
+        <param name="NumDigitsAfterDecimal">Optional. Numeric value indicating how many places to the right of the decimal are displayed. Default value is -1, which indicates that the locale settings are used.</param>
         <param name="IncludeLeadingDigit">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> constant that indicates whether or not a leading zero displays for fractional values. See "Settings" for values.</param>
         <param name="UseParensForNegativeNumbers">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> constant that indicates whether or not to place negative values within parentheses. See "Settings" for values.</param>
         <param name="GroupDigits">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> constant that indicates whether or not numbers are grouped using the group delimiter specified in the locale settings. See "Settings" for values.</param>
@@ -1322,7 +1322,7 @@
       <Docs>
         <param name="StringCheck">Required. String expression being searched.</param>
         <param name="StringMatch">Required. String expression being searched for.</param>
-        <param name="Start">Optional. Numeric expression setting the one-based starting position for each search, starting from the left side of the string. If <paramref name="Start" /> is omitted then –1 is used, meaning the search begins at the last character position. Search then proceeds from right to left.</param>
+        <param name="Start">Optional. Numeric expression setting the one-based starting position for each search, starting from the left side of the string. If <paramref name="Start" /> is omitted then -1 is used, meaning the search begins at the last character position. Search then proceeds from right to left.</param>
         <param name="Compare">Optional. Numeric value indicating the kind of comparison to use when evaluating substrings. If omitted, a binary comparison is performed. See Settings for values.</param>
         <summary>Returns the position of the first occurrence of one string within another, starting from the right side of the string.</summary>
         <returns>
@@ -2878,7 +2878,7 @@
         <param name="Find">Required. Substring being searched for.</param>
         <param name="Replacement">Required. Replacement substring.</param>
         <param name="Start">Optional. Position within <paramref name="Expression" /> that starts a substring used for replacement. The return value of <see langword="Replace" /> is a string that begins at <paramref name="Start" />, with appropriate substitutions. If omitted, 1 is assumed.</param>
-        <param name="Count">Optional. Number of substring substitutions to perform. If omitted, the default value is –1, which means "make all possible substitutions."</param>
+        <param name="Count">Optional. Number of substring substitutions to perform. If omitted, the default value is -1, which means "make all possible substitutions."</param>
         <param name="Compare">Optional. Numeric value indicating the kind of comparison to use when evaluating substrings. See Settings for values.</param>
         <summary>Returns a string in which a specified substring has been replaced with another substring a specified number of times.</summary>
         <returns>
@@ -3150,7 +3150,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <Docs>
         <param name="Expression">Required. <see langword="String" /> expression containing substrings and delimiters.</param>
         <param name="Delimiter">Optional. Any single character used to identify substring limits. If <paramref name="Delimiter" /> is omitted, the space character (" ") is assumed to be the delimiter.</param>
-        <param name="Limit">Optional. Maximum number of substrings into which the input string should be split. The default, –1, indicates that the input string should be split at every occurrence of the <paramref name="Delimiter" /> string.</param>
+        <param name="Limit">Optional. Maximum number of substrings into which the input string should be split. The default, -1, indicates that the input string should be split at every occurrence of the <paramref name="Delimiter" /> string.</param>
         <param name="Compare">Optional. Numeric value indicating the comparison to use when evaluating substrings. See "Settings" for values.</param>
         <summary>Returns a zero-based, one-dimensional array containing a specified number of substrings.</summary>
         <returns>

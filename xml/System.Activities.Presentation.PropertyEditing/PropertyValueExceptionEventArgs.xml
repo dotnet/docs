@@ -38,7 +38,7 @@
       <Docs>
         <param name="message">A message that indicates what failed during the property value change.</param>
         <param name="value">The <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> instance in which the exception is occurring.</param>
-        <param name="source">The source that generated this exception—a <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> get or set operation.</param>
+        <param name="source">The source that generated this exception - a <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> get or set operation.</param>
         <param name="exception">The error that occurred during the property value change.</param>
         <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueExceptionEventArgs" /> class that contains information about an error that has occurred during the updating of a property value.</summary>
         <remarks>To be added.</remarks>

@@ -52,7 +52,7 @@
         <Parameter Name="collection" Type="System.AddIn.Contract.IListContract&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of objects that are contained in the list. <c>T</c> must be serializable.</typeparam>
+        <typeparam name="T">The type of objects that are contained in the list. <paramref name="T" /> must be serializable.</typeparam>
         <param name="collection">The collection from the other side of the pipeline.</param>
         <summary>Converts the specified <see cref="T:System.AddIn.Contract.IListContract`1" /> collection to an <see cref="T:System.Collections.Generic.IList`1" /> collection.</summary>
         <returns>The converted collection.</returns>
@@ -102,7 +102,7 @@
         <Parameter Name="viewContractAdapter" Type="System.Converter&lt;TView,TContract&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TContract">The type that defines the contract for passing objects of type <c>TView</c> across the isolation boundary.</typeparam>
+        <typeparam name="TContract">The type that defines the contract for passing objects of type <paramref name="TView" /> across the isolation boundary.</typeparam>
         <typeparam name="TView">The type that defines the view of the objects in the list.</typeparam>
         <param name="collection">The collection to pass to the other side of the pipeline.</param>
         <param name="contractViewAdapter">A converter that adapts the data from the type defined in the contract to the type expected in the view.</param>
@@ -142,7 +142,7 @@
         <Parameter Name="collection" Type="System.Collections.Generic.IList&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of objects that are contained in the list. <c>T</c> must be serializable.</typeparam>
+        <typeparam name="T">The type of objects that are contained in the list. <paramref name="T" /> must be serializable.</typeparam>
         <param name="collection">The collection to convert.</param>
         <summary>Converts a specified <see cref="T:System.Collections.Generic.IList`1" /> collection to an <see cref="T:System.AddIn.Contract.IListContract`1" /> collection.</summary>
         <returns>The converted collection.</returns>
@@ -193,7 +193,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TView">The type that defines the view of the objects in the list.</typeparam>
-        <typeparam name="TContract">The type that defines the contract for passing objects of type <c>TView</c> across the isolation boundary.</typeparam>
+        <typeparam name="TContract">The type that defines the contract for passing objects of type <paramref name="TView" /> across the isolation boundary.</typeparam>
         <param name="collection">The collection to convert.</param>
         <param name="viewContractAdapter">A converter that adapts the data from the type defined in the view to the type expected by the contract.</param>
         <param name="contractViewAdapter">A converter that adapts the data from the type defined in the contract to the type expected in the view.</param>

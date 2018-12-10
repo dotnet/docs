@@ -1713,7 +1713,7 @@
 ## Remarks  
  The <xref:System.TimeZoneInfo.GetAdjustmentRules%2A> method retrieves an array of <xref:System.TimeZoneInfo.AdjustmentRule?displayProperty=nameWithType> objects. Each object in the array defines the effective start and end date of that time zone adjustment, as well as its delta (the exact amount by which the adjustment causes the time to change). In addition, two properties return <xref:System.TimeZoneInfo.TransitionTime?displayProperty=nameWithType> objects that define when each annual transition to and from standard time occurs.  
   
- If a time zone has multiple adjustment rules, they are generally ordered from earliest (at index 0) to latest (at index <xref:System.Array.Length%2A> – 1).  
+ If a time zone has multiple adjustment rules, they are generally ordered from earliest (at index 0) to latest (at index <xref:System.Array.Length%2A> - 1).  
   
  If a time zone has no adjustment rules, the <xref:System.TimeZoneInfo.GetAdjustmentRules%2A> method returns an empty array (an array whose <xref:System.Array.Length%2A> is zero).  
   

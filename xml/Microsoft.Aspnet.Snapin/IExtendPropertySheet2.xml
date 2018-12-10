@@ -101,7 +101,7 @@ For more information about programming with the <xref:Microsoft.Aspnet.Snapin.IE
         <param name="lphHeader">The handle to a bitmap that serves as the header for Wizard 97 pages.</param>
         <param name="lphPalette">The handle to a palette used for the bitmaps specified by lphWatermark and lphHeader.</param>
         <param name="bStretch">A GetWatermarks return value: true if the watermark and header bitmaps should be stretched rather than tiled; otherwise, false.</param>
-        <summary>Retrieves the watermark and header bitmaps for wizard sheets that are implemented as Wizard 97–style wizards.</summary>
+        <summary>Retrieves the watermark and header bitmaps for wizard sheets that are implemented as Wizard 97-style wizards.</summary>
         <returns>| Return Value | Description |
 | --- | --- |
 | etch | true if the watermark and header bitmaps should be stretched rather than tiled; otherwise, false. |</returns>

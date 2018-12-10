@@ -175,7 +175,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
    
   
 ## Examples  
- The following example uses the `Add` method to add `child` objects — instances of a class called `child` containing a `Public` property `name` — to a collection called `family`. To see how this works, create a <xref:System.Windows.Forms.Form> with two <xref:System.Windows.Forms.Button> controls and set their <xref:System.Windows.Forms.Control.Text%2A> properties to `Add` and `List`. Add the `child` class definition and the `family` declaration to the form code. Modify the `_Click` event handlers for the **Add** and **List** buttons as shown. The **Add** button allows you to add children. The **List** button displays the names of all the children.  
+ The following example uses the `Add` method to add `child` objects - instances of a class called `child` containing a `Public` property `name` - to a collection called `family`. To see how this works, create a <xref:System.Windows.Forms.Form> with two <xref:System.Windows.Forms.Button> controls and set their <xref:System.Windows.Forms.Control.Text%2A> properties to `Add` and `List`. Add the `child` class definition and the `family` declaration to the form code. Modify the `_Click` event handlers for the **Add** and **List** buttons as shown. The **Add** button allows you to add children. The **List** button displays the names of all the children.  
   
  [!code-vb[VbVbalrCollectionObject#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Form1.vb#2)]  
   

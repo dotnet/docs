@@ -34,9 +34,9 @@
   
  The <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.RequestPause%2A> method of the <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> instance returned by the <xref:System.Activities.Hosting.WorkflowInstance.Controller%2A> property is the only method which can be called while the <xref:System.Activities.Hosting.WorkflowInstance> is in the Running state. All other methods will throw an <xref:System.InvalidOperationException> if called.Given the rules for how <xref:System.Activities.Hosting.WorkflowInstance> transitions from one state to another, the public notion of Running and Paused can be defined as follows:  
   
--   Running – The state between a call to <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Run%2A> and the next WorkflowInstance.OnNotify*.  
+-   Running - The state between a call to <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Run%2A> and the next WorkflowInstance.OnNotify*.  
   
--   Paused – The state between the last WorkflowInstance.OnNotify* and the next call to <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Run%2A>.  
+-   Paused - The state between the last WorkflowInstance.OnNotify* and the next call to <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Run%2A>.  
   
  ]]></format>
     </remarks>

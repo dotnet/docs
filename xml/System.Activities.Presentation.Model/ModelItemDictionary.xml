@@ -695,8 +695,8 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The element to add.</param>
+        <summary>Adds a new element to the end of the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -726,9 +726,9 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The key/value pair to find.</param>
+        <summary>Determines whether the dictionary contains the given key/value pair.</summary>
+        <returns><see langword="true" /> if the dictionary contains the given key/value pair; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -751,9 +751,9 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The array of key/value pairs to copy.</param>
+        <param name="arrayIndex">The zero-based index in the current dictionary at which copying begins.</param>
+        <summary>Copies an array of key/value pairs into the given dictionary.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -778,9 +778,9 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The key/value pair to remove.</param>
+        <summary>Removes the specified key/value pair from the dictionary.</summary>
+        <returns><see langword="true" /> if the item exists and is removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

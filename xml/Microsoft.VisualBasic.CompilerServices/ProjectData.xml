@@ -96,7 +96,7 @@
         <Parameter Name="hr" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="hr">An integer value that identifies the nature of the error. Visual Basic errors are in the range 0–65535; the range 0–512 is reserved for system errors; the range 513–65535 is available for user-defined errors.</param>
+        <param name="hr">An integer value that identifies the nature of the error. Visual Basic errors are in the range 0-65535; the range 0-512 is reserved for system errors; the range 513-65535 is available for user-defined errors.</param>
         <summary>Performs the work for the <see langword="Raise" /> method of the <see langword="Err" /> object. A helper method.</summary>
         <returns>An <see cref="T:System.Exception" /> object.</returns>
         <remarks>

@@ -1136,7 +1136,7 @@
       </Parameters>
       <Docs>
         <param name="Operand">Required. Any numeric expression.</param>
-        <summary>Represents the Visual Basic unary minus (–) operator.</summary>
+        <summary>Represents the Visual Basic unary minus (-) operator.</summary>
         <returns>The negative value of <paramref name="Operand" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1317,7 +1317,7 @@
       <Docs>
         <param name="Left">Required. Any numeric expression.</param>
         <param name="Right">Required. Any numeric expression.</param>
-        <summary>Represents the Visual Basic subtraction (–) operator.</summary>
+        <summary>Represents the Visual Basic subtraction (-) operator.</summary>
         <returns>The difference between <paramref name="Left" /> and <paramref name="Right" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -86,7 +86,7 @@
     -   The following equation must be true for the dimension of the array that you want to iterate:  
   
         ```  
-        start_index >= lower_bound And start_index + items_to_iterate – 1 <= upper_bound  
+        start_index >= lower_bound And start_index + items_to_iterate - 1 <= upper_bound  
         ```  
   
          For a collection, the following equation must be true:  

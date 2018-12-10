@@ -128,7 +128,7 @@ testVbName = VbTypeName(sysBadName)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The properties of the `Err` object are set by the generator of an error—Visual Basic, an object, or the programmer.  
+ The properties of the `Err` object are set by the generator of an error - Visual Basic, an object, or the programmer.  
   
  When a run-time error occurs, the properties of the `Err` object are filled with information that uniquely identifies the error and that you can use to handle the error. To generate a run-time error in your code, use the `Raise` method.  
   
@@ -603,7 +603,7 @@ Dim a(100, 5, 4) As Byte
         <Parameter Name="Color" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Color">Required. A whole number in the range 0–15.</param>
+        <param name="Color">Required. A whole number in the range 0-15.</param>
         <summary>Returns an <see langword="Integer" /> value representing the RGB color code corresponding to the specified color number.</summary>
         <returns>Returns an <see langword="Integer" /> value representing the RGB color code corresponding to the specified color number.</returns>
         <remarks>
@@ -663,9 +663,9 @@ Dim a(100, 5, 4) As Byte
         <Parameter Name="Blue" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Red">Required. <see langword="Integer" /> in the range 0–255, inclusive, that represents the intensity of the red component of the color.</param>
-        <param name="Green">Required. <see langword="Integer" /> in the range 0–255, inclusive, that represents the intensity of the green component of the color.</param>
-        <param name="Blue">Required. <see langword="Integer" /> in the range 0–255, inclusive, that represents the intensity of the blue component of the color.</param>
+        <param name="Red">Required. <see langword="Integer" /> in the range 0-255, inclusive, that represents the intensity of the red component of the color.</param>
+        <param name="Green">Required. <see langword="Integer" /> in the range 0-255, inclusive, that represents the intensity of the green component of the color.</param>
+        <param name="Blue">Required. <see langword="Integer" /> in the range 0-255, inclusive, that represents the intensity of the blue component of the color.</param>
         <summary>Returns an <see langword="Integer" /> value representing an RGB color value from a set of red, green and blue color components.</summary>
         <returns>Returns an <see langword="Integer" /> value representing an RGB color value from a set of red, green and blue color components.</returns>
         <remarks>

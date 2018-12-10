@@ -23,7 +23,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="C">The type of objects to enumerate. <c>C</c> must implement the <see cref="T:System.AddIn.Contract.IContract" /> interface.</typeparam>
+    <typeparam name="C">The type of objects to enumerate. <paramref name="C" /> must implement the <see cref="T:System.AddIn.Contract.IContract" /> interface.</typeparam>
     <summary>Enumerates the elements of a generic collection of <see cref="T:System.AddIn.Contract.IContract" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  

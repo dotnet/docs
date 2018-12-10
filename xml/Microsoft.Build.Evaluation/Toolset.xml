@@ -234,7 +234,7 @@
   
  Otherwise, if "VisualStudioVersion" is set as a property on the toolset itself, then sub toolset version is set to "VisualStudioVersion".  
   
- Otherwise, if the Visual Studio version corresponding to the solution version (Visual Studio version = solution version – 1) passed in maps to an existing sub toolset, then sub toolset version is set to the Visual Studio version.  
+ Otherwise, if the Visual Studio version corresponding to the solution version (Visual Studio version = solution version - 1) passed in maps to an existing sub toolset, then sub toolset version is set to the Visual Studio version.  
   
  Otherwise, sub toolset version is set to the DefaultSubToolsetVersion of the toolset.  
   

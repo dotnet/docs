@@ -1003,7 +1003,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Set this property to any non-null string value, including <xref:System.String.Empty?displayProperty=nameWithType> (""), to exclude the application directory path — that is, <xref:System.AppDomainSetup.ApplicationBase%2A> — from the search path for the application, and to search for assemblies only in <xref:System.AppDomainSetup.PrivateBinPath%2A>.  
+ Set this property to any non-null string value, including <xref:System.String.Empty?displayProperty=nameWithType> (""), to exclude the application directory path - that is, <xref:System.AppDomainSetup.ApplicationBase%2A> - from the search path for the application, and to search for assemblies only in <xref:System.AppDomainSetup.PrivateBinPath%2A>.  
   
  ]]></format>
         </remarks>

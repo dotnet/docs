@@ -136,7 +136,7 @@
      [!code-csharp[System.Random#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/nextbytes1.cs#5)]
      [!code-vb[System.Random#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/nextbytes1.vb#5)]  
   
--   A single integer. You can choose whether you want an integer from 0 to a maximum value (<xref:System.Int32.MaxValue?displayProperty=nameWithType> – 1) by calling the <xref:System.Random.Next> method, an integer between 0 and a specific value by calling the <xref:System.Random.Next%28System.Int32%29> method, or an integer within a range of values by calling the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method. In the parameterized overloads, the specified maximum value is exclusive; that is, the actual maximum number generated is one less than the specified value.  
+-   A single integer. You can choose whether you want an integer from 0 to a maximum value (<xref:System.Int32.MaxValue?displayProperty=nameWithType> - 1) by calling the <xref:System.Random.Next> method, an integer between 0 and a specific value by calling the <xref:System.Random.Next%28System.Int32%29> method, or an integer within a range of values by calling the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method. In the parameterized overloads, the specified maximum value is exclusive; that is, the actual maximum number generated is one less than the specified value.  
   
      The following example calls the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method to generate 10 random numbers between -10 and 10. Note that the second argument to the method specifies the exclusive upper bound of the range of random values returned by the method. In other words, the largest integer that the method can return is one less than this value.  
   
@@ -222,7 +222,7 @@
  To generate random floating-point numbers between two arbitrary values, like the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method does for integers, use the following formula:  
   
 ```csharp  
-Random.NextDouble() * (maxValue – minValue) + minValue  
+Random.NextDouble() * (maxValue - minValue) + minValue  
 ```  
   
  The following example generates 1 million random numbers that range from 10.0 to 11.0, and displays their distribution.  
@@ -567,7 +567,7 @@ Random.NextDouble() * (maxValue – minValue) + minValue
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Random.Next%28System.Int32%29> overload returns random integers that range from 0 to `maxValue` – 1. However, if `maxValue` is 0, the method returns 0.  
+ The <xref:System.Random.Next%28System.Int32%29> overload returns random integers that range from 0 to `maxValue` - 1. However, if `maxValue` is 0, the method returns 0.  
   
    
   
@@ -634,7 +634,7 @@ Random.NextDouble() * (maxValue – minValue) + minValue
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> overload returns random integers that range from `minValue` to `maxValue` – 1. However, if `maxValue` equals `minValue`, the method returns `minValue`.  
+ The <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> overload returns random integers that range from `minValue` to `maxValue` - 1. However, if `maxValue` equals `minValue`, the method returns `minValue`.  
   
  Unlike the other overloads of the <xref:System.Random.Next%2A> method, which return only non-negative values, this method can return a negative random integer.  
   

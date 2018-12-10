@@ -45,7 +45,7 @@
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
- Registry keys are the base unit of organization in the registry, and can be compared to folders in File Explorer. A particular key can have subkeys, just as a folder can have subfolders. Each key can be deleted, as long as the user has the appropriate permissions to do so, and the key is not a base key or at the level directly under the base keys. Each key can also have multiple values associated with it (a value can be compared to a file), which are used to store the information — for example, information about an application installed on the computer. Each value holds one particular piece of information, which can be retrieved or updated when required. For instance, you can create a <xref:Microsoft.Win32.RegistryKey> for your company, under the key HKEY_LOCAL_MACHINE\Software, and then a subkey for each application that your company creates. Each subkey holds the information specific to that application, such as color settings, screen location and size, or recognized file extensions.  
+ Registry keys are the base unit of organization in the registry, and can be compared to folders in File Explorer. A particular key can have subkeys, just as a folder can have subfolders. Each key can be deleted, as long as the user has the appropriate permissions to do so, and the key is not a base key or at the level directly under the base keys. Each key can also have multiple values associated with it (a value can be compared to a file), which are used to store the information - for example, information about an application installed on the computer. Each value holds one particular piece of information, which can be retrieved or updated when required. For instance, you can create a <xref:Microsoft.Win32.RegistryKey> for your company, under the key HKEY_LOCAL_MACHINE\Software, and then a subkey for each application that your company creates. Each subkey holds the information specific to that application, such as color settings, screen location and size, or recognized file extensions.  
   
  Note that information stored in the registry is available to other applications and users, and therefore should not be used to store security data or critical application information.  
   
@@ -294,9 +294,7 @@
         <param name="subkey">The name or path of the subkey to create or open. This string is not case-sensitive.</param>
         <param name="writable">
           <see langword="true" /> to indicate the new subkey is writable; otherwise, <see langword="false" />.</param>
-        <summary>Creates a new subkey or opens an existing subkey with the specified access.  
-  
- Available starting in [!INCLUDE[net_v46](~/includes/net-v46-md.md)]</summary>
+        <summary>Creates a new subkey or opens an existing subkey with the specified access. Available starting with .NET Framework 4.6.</summary>
         <returns>The newly created subkey, or <see langword="null" /> if the operation failed. If a zero-length string is specified for <paramref name="subkey" />, the current <see cref="T:Microsoft.Win32.RegistryKey" /> object is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -432,9 +430,7 @@
         <param name="writable">
           <see langword="true" /> to indicate the new subkey is writable; otherwise, <see langword="false" />.</param>
         <param name="options">The registry option to use.</param>
-        <summary>Creates a new subkey or opens an existing subkey with the specified access.  
-  
- Available starting in [!INCLUDE[net_v46](~/includes/net-v46-md.md)]</summary>
+        <summary>Creates a new subkey or opens an existing subkey with the specified access. Available starting with .NET Framework 4.6.</summary>
         <returns>The newly created subkey, or <see langword="null" /> if the operation failed. If a zero-length string is specified for <paramref name="subkey" />, the current <see cref="T:Microsoft.Win32.RegistryKey" /> object is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1516,7 +1512,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this overload of <xref:Microsoft.Win32.RegistryKey.GetValue%2A> to handle the case where a name does not exist yet — for example, the first time your application is run. Whenever you call this overload, use the `defaultValue` parameter to specify the value to return if `name` does not exist.  
+ Use this overload of <xref:Microsoft.Win32.RegistryKey.GetValue%2A> to handle the case where a name does not exist yet - for example, the first time your application is run. Whenever you call this overload, use the `defaultValue` parameter to specify the value to return if `name` does not exist.  
   
 > [!NOTE]
 >  A registry key can have one value that is not associated with any name. When this unnamed value is displayed in the registry editor, the string "(Default)" appears instead of a name. To retrieve this unnamed value, specify either `null` or the empty string ("") for `name`.  
@@ -1752,7 +1748,7 @@
 ## Remarks  
  If no value names for the key are found, an empty array is returned.  
   
- A registry key can have a default value — that is, a name/value pair in which the name is the empty string (""). If a default value has been set for a registry key, the array returned by the <xref:Microsoft.Win32.RegistryKey.GetValueNames%2A> method includes the empty string.  
+ A registry key can have a default value - that is, a name/value pair in which the name is the empty string (""). If a default value has been set for a registry key, the array returned by the <xref:Microsoft.Win32.RegistryKey.GetValueNames%2A> method includes the empty string.  
   
    
   
@@ -2316,9 +2312,7 @@
       <Docs>
         <param name="name">The name or path of the subkey to create or open.</param>
         <param name="rights">The rights for the registry key.</param>
-        <summary>Retrieves a subkey with the specified name and .  
-  
- Available starting in .NET Framework 4.6</summary>
+        <summary>Retrieves a subkey with the specified name and access rights. Available starting with .NET Framework 4.6.</summary>
         <returns>The subkey requested, or <see langword="null" /> if the operation failed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

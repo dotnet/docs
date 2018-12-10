@@ -45,7 +45,7 @@
         <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.CategoryEntry" /> class.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="name" /> is <see langword="empty" />.</exception>
+          <paramref name="name" /> is <see langword="null" /> or <see langword="empty" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ApplyFilter">

@@ -444,10 +444,10 @@ End Sub
   
  The type of object variable you use to store the returned object can affect your application's performance. Declaring an object variable with the `As Object` clause creates a variable that can contain a reference to any type of object. However, access to the object through that variable is *late-bound*, that is, the binding occurs when your program runs. There are many reasons you should avoid late binding, including slower application performance.  
   
- You can create an object variable that results in early binding—that is, binding when the program is compiled. To do so, add a reference to the type library for your object from the **COM** tab of the **Add Reference** dialog box on the **Project** menu. Then declare the object variable of the specific type of your object. In most cases, it is more efficient to use the `Dim` statement and a primary interop assembly to create objects than it is to use the `CreateObject` function.  
+ You can create an object variable that results in early binding - that is, binding when the program is compiled. To do so, add a reference to the type library for your object from the **COM** tab of the **Add Reference** dialog box on the **Project** menu. Then declare the object variable of the specific type of your object. In most cases, it is more efficient to use the `Dim` statement and a primary interop assembly to create objects than it is to use the `CreateObject` function.  
   
 ## Interacting with Unmanaged Code  
- Another issue is that COM objects use unmanaged code — code without the benefit of the common language runtime. There is a fair degree of complexity involved in mixing the managed code of Visual Basic with unmanaged code from COM. When you add a reference to a COM object, Visual Basic searches for a primary interop assembly (PIA) for that library; if it finds one, then it uses it. If it does not find a PIA, then it creates an interoperability assembly that contains local interoperability classes for each class in the COM library. For more information, see [COM Interoperability in .NET Framework Applications](~/docs/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md).  
+ Another issue is that COM objects use unmanaged code - code without the benefit of the common language runtime. There is a fair degree of complexity involved in mixing the managed code of Visual Basic with unmanaged code from COM. When you add a reference to a COM object, Visual Basic searches for a primary interop assembly (PIA) for that library; if it finds one, then it uses it. If it does not find a PIA, then it creates an interoperability assembly that contains local interoperability classes for each class in the COM library. For more information, see [COM Interoperability in .NET Framework Applications](~/docs/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md).  
   
  You should generally use strongly bound objects and primary interop assemblies whenever possible. The examples below use the `CreateObject` function with Microsoft Office objects for demonstration purposes only. However, these objects are easier to use and more reliable when used with the appropriate primary interop assembly.  
   
@@ -596,7 +596,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `Expression` contains a string, the <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function returns the text assigned to the specified environment string—that is, the text following the equal sign (=) in the environment-string table for that environment variable. If the string in `Expression` cannot be found in the environment-string table, a zero-length string ("") is returned.  
+ If `Expression` contains a string, the <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function returns the text assigned to the specified environment string - that is, the text following the equal sign (=) in the environment-string table for that environment variable. If the string in `Expression` cannot be found in the environment-string table, a zero-length string ("") is returned.  
   
  If `Expression` contains an integer, the string occupying that numeric position in the environment-string table is returned. In this case, <xref:Microsoft.VisualBasic.Interaction.Environ%2A> returns all of the text, including the name of the environment variable. If there is no environment string in the specified position, <xref:Microsoft.VisualBasic.Interaction.Environ%2A> returns a zero-length string.  
   
@@ -646,7 +646,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `Expression` contains a string, the <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function returns the text assigned to the specified environment string—that is, the text following the equal sign (=) in the environment-string table for that environment variable. If the string in `Expression` cannot be found in the environment-string table, a zero-length string ("") is returned.  
+ If `Expression` contains a string, the <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function returns the text assigned to the specified environment string - that is, the text following the equal sign (=) in the environment-string table for that environment variable. If the string in `Expression` cannot be found in the environment-string table, a zero-length string ("") is returned.  
   
  If `Expression` contains an integer, the string occupying that numeric position in the environment-string table is returned. In this case, <xref:Microsoft.VisualBasic.Interaction.Environ%2A> returns all of the text, including the name of the environment variable. If there is no environment string in the specified position, <xref:Microsoft.VisualBasic.Interaction.Environ%2A> returns a zero-length string.  
   
@@ -1149,7 +1149,7 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
 |`MsgBoxRight`|524288|Text is right-aligned.|  
 |`MsgBoxRtlReading`|1048576|Specifies text should appear as right-to-left reading on Hebrew and Arabic systems.|  
   
- The first group of values (0–5) describes the number and type of buttons displayed in the dialog box. The second group (16, 32, 48, 64) describes the icon style. The third group (0, 256, 512) determines which button is the default. The fourth group (0, 4096) determines the modality of the message box, and the fifth group specifies whether or not the message box window is the foreground window, along with the alignment and direction of the text. When adding numbers to create a final value for the `Buttons` argument, use only one number from each group.  
+ The first group of values (0-5) describes the number and type of buttons displayed in the dialog box. The second group (16, 32, 48, 64) describes the icon style. The third group (0, 256, 512) determines which button is the default. The fourth group (0, 4096) determines the modality of the message box, and the fifth group specifies whether or not the message box window is the foreground window, along with the alignment and direction of the text. When adding numbers to create a final value for the `Buttons` argument, use only one number from each group.  
   
    
   

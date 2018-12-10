@@ -1540,7 +1540,7 @@ This method is most useful in monitoring scenarios for measuring the difference 
         <Parameter Name="lohSize" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. <paramref name="totalSize" /> –<paramref name="lohSize" /> must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the [Fundamentals of Garbage Collection](~/docs/standard/garbage-collection/fundamentals.md) article.</param>
+        <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. <paramref name="totalSize" /> -<paramref name="lohSize" /> must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the [Fundamentals of Garbage Collection](~/docs/standard/garbage-collection/fundamentals.md) article.</param>
         <param name="lohSize">The number of bytes in <paramref name="totalSize" /> to use for large object heap (LOH) allocations.</param>
         <summary>Attempts to disallow garbage collection during the execution of a critical path if a specified amount of memory is available for the large object heap and the small object heap.</summary>
         <returns>
@@ -1549,9 +1549,9 @@ This method is most useful in monitoring scenarios for measuring the difference 
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.GC.TryStartNoGCRegion%28System.Int64%2CSystem.Int64%29> method attempts to place the garbage collector in no GC region latency mode, which disallows garbage collection while an app executes a critical region of code.  If the runtime is unable to initially allocate the requested amount of memory, the garbage collector performs a full blocking garbage collection in an attempt to free additional memory. The garbage collector enters no GC region latency mode if it is able to allocate `lohSize` for the LOH and `totalSize` – `lohSize` for the small object heap (SOH).  
+ The <xref:System.GC.TryStartNoGCRegion%28System.Int64%2CSystem.Int64%29> method attempts to place the garbage collector in no GC region latency mode, which disallows garbage collection while an app executes a critical region of code.  If the runtime is unable to initially allocate the requested amount of memory, the garbage collector performs a full blocking garbage collection in an attempt to free additional memory. The garbage collector enters no GC region latency mode if it is able to allocate `lohSize` for the LOH and `totalSize` - `lohSize` for the small object heap (SOH).  
   
- `lohSize` must be large enough to handle all memory allocations that occur in the critical path for the LOH, and `totalSize` – `lohSize` must be large enough to handle all memory allocations that occur in the critical path for the SOH. This includes allocations by the app, as well as allocations that the runtime makes on the app's behalf.  
+ `lohSize` must be large enough to handle all memory allocations that occur in the critical path for the LOH, and `totalSize` - `lohSize` must be large enough to handle all memory allocations that occur in the critical path for the SOH. This includes allocations by the app, as well as allocations that the runtime makes on the app's behalf.  
   
 > [!IMPORTANT]
 >  You cannot nest calls to the <xref:System.GC.TryStartNoGCRegion%2A> method, and you should only call the <xref:System.GC.EndNoGCRegion%2A> method if the runtime is currently in no GC region latency mode. In other words, you should not call <xref:System.GC.TryStartNoGCRegion%2A> multiple times (after the first method call, subsequent calls will not succeed), and you should not expect calls to <xref:System.GC.EndNoGCRegion%2A> to succeed just because the first call to <xref:System.GC.TryStartNoGCRegion%2A> succeeded.  
@@ -1561,7 +1561,7 @@ This method is most useful in monitoring scenarios for measuring the difference 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="totalSize" /> – <paramref name="lohSize" /> exceeds the ephemeral segment size.</exception>
+          <paramref name="totalSize" /> - <paramref name="lohSize" /> exceeds the ephemeral segment size.</exception>
         <exception cref="T:System.InvalidOperationException">The process is already in no GC region latency mode.</exception>
         <altmember cref="M:System.GC.EndNoGCRegion" />
         <related type="Article" href="https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2">Fundamentals of Garbage Collection</related>
@@ -1604,7 +1604,7 @@ This method is most useful in monitoring scenarios for measuring the difference 
         <Parameter Name="disallowFullBlockingGC" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. <paramref name="totalSize" /> –<paramref name="lohSize" /> must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the [Fundamentals of Garbage Collection](~/docs/standard/garbage-collection/fundamentals.md) article.</param>
+        <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. <paramref name="totalSize" /> -<paramref name="lohSize" /> must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segment, see the "Ephemeral generations and segments" section in the [Fundamentals of Garbage Collection](~/docs/standard/garbage-collection/fundamentals.md) article.</param>
         <param name="lohSize">The number of bytes in <paramref name="totalSize" /> to use for large object heap (LOH) allocations.</param>
         <param name="disallowFullBlockingGC">
           <see langword="true" /> to omit a full blocking garbage collection if the garbage collector is initially unable to allocate the specified memory on the small object heap (SOH) and LOH; otherwise, <see langword="false" />.</param>
@@ -1615,9 +1615,9 @@ This method is most useful in monitoring scenarios for measuring the difference 
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.GC.TryStartNoGCRegion%28System.Int64%2CSystem.Int64%2CSystem.Boolean%29> method attempts to place the garbage collector in no GC region latency mode, which disallows garbage collection while an app executes a critical region of code.  If the runtime is unable to initially allocate the requested amount of memory and the `disallowFullBlockingGC` argument is `false`, the garbage collector performs a full blocking garbage collection in an attempt to free additional memory; otherwise, the allocation fails, and the method returns `false`. The garbage collector enters no GC region latency mode if it is able to allocate `lohSize` for the LOH and `totalSize` – `lohSize` for the small object heap (SOH).  
+ The <xref:System.GC.TryStartNoGCRegion%28System.Int64%2CSystem.Int64%2CSystem.Boolean%29> method attempts to place the garbage collector in no GC region latency mode, which disallows garbage collection while an app executes a critical region of code.  If the runtime is unable to initially allocate the requested amount of memory and the `disallowFullBlockingGC` argument is `false`, the garbage collector performs a full blocking garbage collection in an attempt to free additional memory; otherwise, the allocation fails, and the method returns `false`. The garbage collector enters no GC region latency mode if it is able to allocate `lohSize` for the LOH and `totalSize` - `lohSize` for the small object heap (SOH).  
   
- `lohSize` must be large enough to handle all memory allocations that occur in the critical path for the LOH, and `totalSize` – `lohSize` must be large enough to handle all memory allocations that occur in the critical path for the SOH. This includes allocations by the app, as well as allocations that the runtime makes on the app's behalf.  
+ `lohSize` must be large enough to handle all memory allocations that occur in the critical path for the LOH, and `totalSize` - `lohSize` must be large enough to handle all memory allocations that occur in the critical path for the SOH. This includes allocations by the app, as well as allocations that the runtime makes on the app's behalf.  
   
  Setting `disallowFullBlockingGC` to `true` to prevent a full blocking garbage collection if not enough memory is initially available is most useful in load balancing scenarios: one system can call this method and report itself as ready to accept requests if it returns `true`, and have the load balancer redirect requests to other systems if it returns `false`. It can then do a full blocking garbage collection when it's not handling requests by calling the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%2CSystem.Boolean%29> method.  
   
@@ -1629,7 +1629,7 @@ This method is most useful in monitoring scenarios for measuring the difference 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="totalSize" /> – <paramref name="lohSize" /> exceeds the ephemeral segment size.</exception>
+          <paramref name="totalSize" /> - <paramref name="lohSize" /> exceeds the ephemeral segment size.</exception>
         <exception cref="T:System.InvalidOperationException">The process is already in no GC region latency mode.</exception>
         <altmember cref="M:System.GC.EndNoGCRegion" />
         <related type="Article" href="https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2">Fundamentals of Garbage Collection</related>

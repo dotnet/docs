@@ -369,7 +369,7 @@
       <Docs>
         <param name="item">The object to locate in the collection.</param>
         <summary>Returns the zero-based index of the first occurrence of a value in the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />.</summary>
-        <returns>The zero-based index of the first occurrence of <paramref name="item" /> within the entire <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />, if found; otherwise, –1.</returns>
+        <returns>The zero-based index of the first occurrence of <paramref name="item" /> within the entire <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

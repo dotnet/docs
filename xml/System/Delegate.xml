@@ -984,7 +984,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overload can create open static method delegates and open instance method delegates — that is, delegates that expose the hidden first argument of instance methods. For a detailed explanation, see the more general <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Object%2CSystem.Reflection.MethodInfo%2CSystem.Boolean%29> method overload, which allows you to create all combinations of open or closed delegates for instance or static methods.  
+ This method overload can create open static method delegates and open instance method delegates - that is, delegates that expose the hidden first argument of instance methods. For a detailed explanation, see the more general <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Object%2CSystem.Reflection.MethodInfo%2CSystem.Boolean%29> method overload, which allows you to create all combinations of open or closed delegates for instance or static methods.  
   
 > [!NOTE]
 >  This method overload should be used when the delegate is not closed over its first argument, because it is somewhat faster in that case.  

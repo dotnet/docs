@@ -82,7 +82,7 @@
       </Parameters>
       <Docs>
         <param name="registryRoot">The root registry location for the targeted framework. For .NET this is SOFTWARE\MICROSOFT\\.NETFramework.</param>
-        <param name="targetFrameworkVersion">The targeted framework version (2.0, 3.0, 3.5, 4.0, ….).</param>
+        <param name="targetFrameworkVersion">The target framework version (2.0, 3.0, 3.5, 4.0, etc.).</param>
         <param name="registryKeySuffix">The name of the folder, (AssemblyFoldersEx) could also be PocketPC\AssemblyFoldersEx, or others.</param>
         <param name="osVersion">The targeted minimum and maximum OS versions in the registry. These values are used to return only directories for OS versions between the declared minimum and maximum. If this value is blank or null, no filtering is done.</param>
         <param name="platform">The targeted platform GUIDs. Used to return only directories which have a matching platform GUID. If this value is blank or null no filtering is done.</param>

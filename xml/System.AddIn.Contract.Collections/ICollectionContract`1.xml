@@ -26,7 +26,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="C">The type of elements in the collection. <c>C</c> must implement the <see cref="T:System.AddIn.Contract.IContract" /> interface.</typeparam>
+    <typeparam name="C">The type of elements in the collection. <paramref name="C" /> must implement the <see cref="T:System.AddIn.Contract.IContract" /> interface.</typeparam>
     <summary>Represents a generic collection of <see cref="T:System.AddIn.Contract.IContract" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  

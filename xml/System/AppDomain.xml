@@ -7956,7 +7956,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event provides notification of uncaught exceptions. It allows the application to log information about the exception before the system default handler reports the exception to the user and terminates the application. If sufficient information about the state of the application is available, other actions may be undertaken — such as saving program data for later recovery. Caution is advised, because program data can become corrupted when exceptions are not handled.  
+ This event provides notification of uncaught exceptions. It allows the application to log information about the exception before the system default handler reports the exception to the user and terminates the application. If sufficient information about the state of the application is available, other actions may be undertaken - such as saving program data for later recovery. Caution is advised, because program data can become corrupted when exceptions are not handled.  
   
 > [!NOTE]
 >  In the .NET Framework versions 1.0 and 1.1, application termination and debugging options are reported to the user before this event is raised, rather than after.  

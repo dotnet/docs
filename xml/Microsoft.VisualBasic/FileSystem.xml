@@ -2030,7 +2030,7 @@
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number. Use the <see langword="FreeFile" /> function to obtain the next available file number.</param>
-        <param name="FileName">Required. <see langword="String" /> expression that specifies a file name—may include directory or folder, and drive.</param>
+        <param name="FileName">Required. <see langword="String" /> expression that specifies a file name - may include directory or folder, and drive.</param>
         <param name="Mode">Required. Enumeration specifying the file mode: <see langword="Append" />, <see langword="Binary" />, <see langword="Input" />, <see langword="Output" />, or <see langword="Random" />. For more information, see <see cref="T:Microsoft.VisualBasic.OpenMode" /> .</param>
         <param name="Access">Optional. Enumeration specifying the operations permitted on the open file: <see langword="Read" />, <see langword="Write" />, or <see langword="ReadWrite" />. Defaults to <see langword="ReadWrite" />. For more information, see <see cref="T:Microsoft.VisualBasic.OpenAccess" /> .</param>
         <param name="Share">Optional. Enumeration specifying the operations not permitted on the open file by other processes: <see langword="Shared" />, <see langword="Lock Read" />, <see langword="Lock Write" />, and <see langword="Lock Read Write" />. Defaults to <see langword="Lock Read Write" />. For more information, see <see cref="T:Microsoft.VisualBasic.OpenShare" /> .</param>
@@ -3553,7 +3553,7 @@
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
-        <param name="RecordWidth">Required. Numeric expression in the range 0–255, inclusive, which indicates how many characters appear on a line before a new line is started. If <paramref name="RecordWidth" /> equals 0, there is no limit to the length of a line. The default value for <paramref name="RecordWidth" /> is 0.</param>
+        <param name="RecordWidth">Required. Numeric expression in the range 0-255, inclusive, which indicates how many characters appear on a line before a new line is started. If <paramref name="RecordWidth" /> equals 0, there is no limit to the length of a line. The default value for <paramref name="RecordWidth" /> is 0.</param>
         <summary>Assigns an output line width to a file opened by using the <see langword="FileOpen" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3729,7 +3729,7 @@ Result = GetAttr(FName) And vbArchive
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
-        <param name="Value">Required. Variable that is assigned the values read from the file—cannot be an array or object variable.</param>
+        <param name="Value">Required. Variable that is assigned the values read from the file - cannot be an array or object variable.</param>
         <summary>Reads data from an open sequential file and assigns the data to variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3804,7 +3804,7 @@ Result = GetAttr(FName) And vbArchive
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
-        <param name="Value">Required. Variable that is assigned the values read from the file—cannot be an array or object variable.</param>
+        <param name="Value">Required. Variable that is assigned the values read from the file - cannot be an array or object variable.</param>
         <summary>Reads data from an open sequential file and assigns the data to variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3879,7 +3879,7 @@ Result = GetAttr(FName) And vbArchive
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
-        <param name="Value">Required. Variable that is assigned the values read from the file—cannot be an array or object variable.</param>
+        <param name="Value">Required. Variable that is assigned the values read from the file - cannot be an array or object variable.</param>
         <summary>Reads data from an open sequential file and assigns the data to variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3954,7 +3954,7 @@ Result = GetAttr(FName) And vbArchive
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
-        <param name="Value">Required. Variable that is assigned the values read from the file—cannot be an array or object variable.</param>
+        <param name="Value">Required. Variable that is assigned the values read from the file - cannot be an array or object variable.</param>
         <summary>Reads data from an open sequential file and assigns the data to variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4029,7 +4029,7 @@ Result = GetAttr(FName) And vbArchive
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
-        <param name="Value">Required. Variable that is assigned the values read from the file—cannot be an array or object variable.</param>
+        <param name="Value">Required. Variable that is assigned the values read from the file - cannot be an array or object variable.</param>
         <summary>Reads data from an open sequential file and assigns the data to variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4104,7 +4104,7 @@ Result = GetAttr(FName) And vbArchive
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
-        <param name="Value">Required. Variable that is assigned the values read from the file—cannot be an array or object variable.</param>
+        <param name="Value">Required. Variable that is assigned the values read from the file - cannot be an array or object variable.</param>
         <summary>Reads data from an open sequential file and assigns the data to variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4179,7 +4179,7 @@ Result = GetAttr(FName) And vbArchive
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
-        <param name="Value">Required. Variable that is assigned the values read from the file—cannot be an array or object variable.</param>
+        <param name="Value">Required. Variable that is assigned the values read from the file - cannot be an array or object variable.</param>
         <summary>Reads data from an open sequential file and assigns the data to variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4254,7 +4254,7 @@ Result = GetAttr(FName) And vbArchive
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
-        <param name="Value">Required. Variable that is assigned the values read from the file—cannot be an array or object variable.</param>
+        <param name="Value">Required. Variable that is assigned the values read from the file - cannot be an array or object variable.</param>
         <summary>Reads data from an open sequential file and assigns the data to variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4329,7 +4329,7 @@ Result = GetAttr(FName) And vbArchive
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
-        <param name="Value">Required. Variable that is assigned the values read from the file—cannot be an array or object variable.</param>
+        <param name="Value">Required. Variable that is assigned the values read from the file - cannot be an array or object variable.</param>
         <summary>Reads data from an open sequential file and assigns the data to variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4404,7 +4404,7 @@ Result = GetAttr(FName) And vbArchive
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
-        <param name="Value">Required. Variable that is assigned the values read from the file—cannot be an array or object variable.</param>
+        <param name="Value">Required. Variable that is assigned the values read from the file - cannot be an array or object variable.</param>
         <summary>Reads data from an open sequential file and assigns the data to variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4479,7 +4479,7 @@ Result = GetAttr(FName) And vbArchive
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
-        <param name="Value">Required. Variable that is assigned the values read from the file—cannot be an array or object variable.</param>
+        <param name="Value">Required. Variable that is assigned the values read from the file - cannot be an array or object variable.</param>
         <summary>Reads data from an open sequential file and assigns the data to variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4554,7 +4554,7 @@ Result = GetAttr(FName) And vbArchive
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
-        <param name="Value">Required. Variable that is assigned the values read from the file—cannot be an array or object variable.</param>
+        <param name="Value">Required. Variable that is assigned the values read from the file - cannot be an array or object variable.</param>
         <summary>Reads data from an open sequential file and assigns the data to variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5440,7 +5440,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `Seek` returns a value between 1 and 2,147,483,647 (equivalent to 2^31 – 1), inclusive.  
+ `Seek` returns a value between 1 and 2,147,483,647 (equivalent to 2^31 - 1), inclusive.  
   
  The following describes the return values for each file access mode:  
   
@@ -5505,13 +5505,13 @@ Result = GetAttr(FName) And vbArchive
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. An <see langword="Integer" /> that contains a valid file number.</param>
-        <param name="Position">Required. Number in the range 1–2,147,483,647, inclusive, that indicates where the next read/write operation should occur.</param>
+        <param name="Position">Required. Number in the range 1-2,147,483,647, inclusive, that indicates where the next read/write operation should occur.</param>
         <summary>Returns a <see langword="Long" /> specifying the current read/write position in a file opened by using the <see langword="FileOpen" /> function, or sets the position for the next read/write operation in a file opened by using the <see langword="FileOpen" /> function. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="Seek" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `Seek` returns a value between 1 and 2,147,483,647 (equivalent to 2^31 – 1), inclusive.  
+ `Seek` returns a value between 1 and 2,147,483,647 (equivalent to 2^31 - 1), inclusive.  
   
  The following describes the return values for each file access mode:  
   
@@ -5650,7 +5650,7 @@ Result = GetAttr(FName) And vbArchive
   
  `currentprintposition`(+(`Count``Mod``width`))  
   
- For example, if the current print position is 24, the output line width is 80, and you specify `SPC(90)`, the next print will start at position 34 (current print position + the remainder of 90/80). If the difference between the current print position and the output line width is less than `Count` (or `Count` `Mod` *width*), the `SPC` function skips to the start of the next line and generates spaces equal to `Count` – (*width* – *currentprintposition*).  
+ For example, if the current print position is 24, the output line width is 80, and you specify `SPC(90)`, the next print will start at position 34 (current print position + the remainder of 90/80). If the difference between the current print position and the output line width is less than `Count` (or `Count` `Mod` *width*), the `SPC` function skips to the start of the next line and generates spaces equal to `Count` - (*width* - *currentprintposition*).  
   
 > [!NOTE]
 >  Make sure your tabular columns are wide enough to allow for wide letters.  

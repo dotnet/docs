@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you call file access–related functions, you can use enumeration members in your code in place of the actual values.  
+ When you call file access-related functions, you can use enumeration members in your code in place of the actual values.  
   
  The `OpenShare` enumeration defines constants that specify whether or not other processes can access the file while your application has it open. The following table lists the `OpenShare` enumeration members.  
   

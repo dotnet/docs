@@ -29,7 +29,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="C">The type of objects in the list. <c>C</c> must implement the <see cref="T:System.AddIn.Contract.IContract" /> interface.</typeparam>
+    <typeparam name="C">The type of objects in the list. <paramref name="C" /> must implement the <see cref="T:System.AddIn.Contract.IContract" /> interface.</typeparam>
     <summary>Represents a generic collection of <see cref="T:System.AddIn.Contract.IContract" /> objects that can be individually accessed by index.</summary>
     <remarks>To be added.</remarks>
   </Docs>

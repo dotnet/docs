@@ -77,11 +77,11 @@ thisDate = Today
         <Parameter Name="DateValue" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="Interval">Required. <see langword="DateInterval" /> enumeration value or <see langword="String" /> expression representing the time interval you want to add.</param>
-        <param name="Number">Required. <see langword="Double" />. Floating-point expression representing the number of intervals you want to add. <paramref name="Number" /> can be positive (to get date/time values in the future) or negative (to get date/time values in the past). It can contain a fractional part when <paramref name="Interval" /> specifies hours, minutes, or seconds. For other values of <paramref name="Interval" />, any fractional part of <paramref name="Number" /> is ignored.</param>
-        <param name="DateValue">Required. <see langword="Date" />. An expression representing the date and time to which the interval is to be added. <paramref name="DateValue" /> itself is not changed in the calling program.</param>
-        <summary>Returns a <see langword="Date" /> value containing a date and time value to which a specified time interval has been added.</summary>
-        <returns>Returns a <see langword="Date" /> value containing a date and time value to which a specified time interval has been added.</returns>
+        <param name="Interval">Required. A <see cref="T:Microsoft.VisualBasic.DateInterval" /> enumeration value or a string expression representing the time interval you want to add.</param>
+        <param name="Number">Required. Floating-point expression representing the number of intervals you want to add. It can be positive (to get date/time values in the future) or negative (to get date/time values in the past). It can contain a fractional part when <paramref name="Interval" /> specifies hours, minutes, or seconds. For other values of <paramref name="Interval" />, any fractional part of <paramref name="Number" /> is ignored.</param>
+        <param name="DateValue">Required. An expression representing the date and time to which the interval is to be added. <paramref name="DateValue" /> itself is not changed in the calling program.</param>
+        <summary>Returns a value containing a date and time value to which a specified time interval has been added.</summary>
+        <returns>A value containing a date and time value to which a specified time interval has been added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -170,11 +170,11 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
         <Parameter Name="DateValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Interval">Required. <see langword="DateInterval" /> enumeration value or <see langword="String" /> expression representing the time interval you want to add.</param>
-        <param name="Number">Required. <see langword="Double" />. Floating-point expression representing the number of intervals you want to add. <paramref name="Number" /> can be positive (to get date/time values in the future) or negative (to get date/time values in the past). It can contain a fractional part when <paramref name="Interval" /> specifies hours, minutes, or seconds. For other values of <paramref name="Interval" />, any fractional part of <paramref name="Number" /> is ignored.</param>
-        <param name="DateValue">Required. <see langword="Date" />. An expression representing the date and time to which the interval is to be added. <paramref name="DateValue" /> itself is not changed in the calling program.</param>
-        <summary>Returns a <see langword="Date" /> value containing a date and time value to which a specified time interval has been added.</summary>
-        <returns>Returns a <see langword="Date" /> value containing a date and time value to which a specified time interval has been added.</returns>
+        <param name="Interval">Required. A <see cref="T:Microsoft.VisualBasic.DateInterval" /> enumeration value or a string expression representing the time interval you want to add.</param>
+        <param name="Number">Required. Floating-point expression representing the number of intervals you want to add. <paramref name="Number" /> can be positive (to get date/time values in the future) or negative (to get date/time values in the past). It can contain a fractional part when <paramref name="Interval" /> specifies hours, minutes, or seconds. For other values of <paramref name="Interval" />, any fractional part of <paramref name="Number" /> is ignored.</param>
+        <param name="DateValue">Required. An expression representing the date and time to which the interval is to be added. <paramref name="DateValue" /> itself is not changed in the calling program.</param>
+        <summary>Returns a value containing a date and time value to which a specified time interval has been added.</summary>
+        <returns>A value containing a date and time value to which a specified time interval has been added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -246,7 +246,7 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Returns a <see langword="Long" /> value specifying the number of time intervals between two <see langword="Date" /> values.</summary>
+        <summary>Returns a value specifying the number of time intervals between two <see langword="Date" /> values.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="DateDiff">
@@ -273,13 +273,13 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
         <Parameter Name="WeekOfYear" Type="Microsoft.VisualBasic.FirstWeekOfYear" />
       </Parameters>
       <Docs>
-        <param name="Interval">Required. <see langword="DateInterval" /> enumeration value or <see langword="String" /> expression representing the time interval you want to use as the unit of difference between <paramref name="Date1" /> and <paramref name="Date2" />.</param>
-        <param name="Date1">Required. <see langword="Date" />. The first date/time value you want to use in the calculation.</param>
-        <param name="Date2">Required. <see langword="Date" />. The second date/time value you want to use in the calculation.</param>
-        <param name="DayOfWeek">Optional. A value chosen from the <see langword="FirstDayOfWeek" /> enumeration that specifies the first day of the week. If not specified, <see langword="FirstDayOfWeek.Sunday" /> is used.</param>
-        <param name="WeekOfYear">Optional. A value chosen from the <see langword="FirstWeekOfYear" /> enumeration that specifies the first week of the year. If not specified, <see langword="FirstWeekOfYear.Jan1" /> is used.</param>
-        <summary>Returns a <see langword="Long" /> value specifying the number of time intervals between two <see langword="Date" /> values.</summary>
-        <returns>Returns a <see langword="Long" /> value specifying the number of time intervals between two <see langword="Date" /> values.</returns>
+        <param name="Interval">Required. A <see cref="T:Microsoft.VisualBasic.DateInterval" /> enumeration value or a string expression representing the time interval you want to use as the unit of difference between <paramref name="Date1" /> and <paramref name="Date2" />.</param>
+        <param name="Date1">Required. The first date/time value you want to use in the calculation.</param>
+        <param name="Date2">Required. The second date/time value you want to use in the calculation.</param>
+        <param name="DayOfWeek">Optional. A value chosen from the <see cref="T:Microsoft.VisualBasic.FirstDayOfWeek" /> enumeration that specifies the first day of the week. If not specified, <see cref="F:Microsoft.VisualBasic.FirstDayOfWeek.Sunday" /> is used.</param>
+        <param name="WeekOfYear">Optional. A value chosen from the <see cref="T:Microsoft.VisualBasic.FirstWeekOfYear" /> enumeration that specifies the first week of the year. If not specified, <see cref="F:Microsoft.VisualBasic.FirstWeekOfYear.Jan1" /> is used.</param>
+        <summary>Returns a long value specifying the number of time intervals between two <see langword="Date" /> values.</summary>
+        <returns>A long value specifying the number of time intervals between two <see langword="Date" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -398,13 +398,13 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
         <Parameter Name="WeekOfYear" Type="Microsoft.VisualBasic.FirstWeekOfYear" />
       </Parameters>
       <Docs>
-        <param name="Interval">Required. <see langword="DateInterval" /> enumeration value or <see langword="String" /> expression representing the time interval you want to use as the unit of difference between <paramref name="Date1" /> and <paramref name="Date2" />.</param>
-        <param name="Date1">Required. <see langword="Date" />. The first date/time value you want to use in the calculation.</param>
-        <param name="Date2">Required. <see langword="Date" />. The second date/time value you want to use in the calculation.</param>
-        <param name="DayOfWeek">Optional. A value chosen from the <see langword="FirstDayOfWeek" /> enumeration that specifies the first day of the week. If not specified, <see langword="FirstDayOfWeek.Sunday" /> is used.</param>
-        <param name="WeekOfYear">Optional. A value chosen from the <see langword="FirstWeekOfYear" /> enumeration that specifies the first week of the year. If not specified, <see langword="FirstWeekOfYear.Jan1" /> is used.</param>
-        <summary>Returns a <see langword="Long" /> value specifying the number of time intervals between two <see langword="Date" /> values.</summary>
-        <returns>Returns a <see langword="Long" /> value specifying the number of time intervals between two <see langword="Date" /> values.</returns>
+        <param name="Interval">Required. A <see cref="T:Microsoft.VisualBasic.DateInterval" /> enumeration value or a string expression representing the time interval you want to use as the unit of difference between <paramref name="Date1" /> and <paramref name="Date2" />.</param>
+        <param name="Date1">Required. The first date/time value you want to use in the calculation.</param>
+        <param name="Date2">Required. The second date/time value you want to use in the calculation.</param>
+        <param name="DayOfWeek">Optional. A value chosen from the <see cref="T:Microsoft.VisualBasic.FirstDayOfWeek" /> enumeration that specifies the first day of the week. If not specified, <see cref="F:Microsoft.VisualBasic.FirstDayOfWeek.Sunday" /> is used.</param>
+        <param name="WeekOfYear">Optional. A value chosen from the <see cref="T:Microsoft.VisualBasic.FirstWeekOfYear" /> enumeration that specifies the first week of the year. If not specified, <see cref="F:Microsoft.VisualBasic.FirstWeekOfYear.Jan1" /> is used.</param>
+        <summary>Returns a long value specifying the number of time intervals between two <see langword="Date" /> values.</summary>
+        <returns>A long value specifying the number of time intervals between two <see langword="Date" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -505,7 +505,7 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Returns an <see langword="Integer" /> value containing the specified component of a given <see langword="Date" /> value.</summary>
+        <summary>Returns an integer value containing the specified component of a given <see langword="Date" /> value.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="DatePart">
@@ -531,12 +531,12 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
         <Parameter Name="FirstWeekOfYearValue" Type="Microsoft.VisualBasic.FirstWeekOfYear" />
       </Parameters>
       <Docs>
-        <param name="Interval">Required. <see langword="DateInterval" /> enumeration value or <see langword="String" /> expression representing the part of the date/time value you want to return.</param>
-        <param name="DateValue">Required. <see langword="Date" /> value that you want to evaluate.</param>
-        <param name="FirstDayOfWeekValue">Optional. A value chosen from the <see langword="FirstDayOfWeek" /> enumeration that specifies the first day of the week. If not specified, <see langword="FirstDayOfWeek.Sunday" /> is used.</param>
-        <param name="FirstWeekOfYearValue">Optional. A value chosen from the <see langword="FirstWeekOfYear" /> enumeration that specifies the first week of the year. If not specified, <see langword="FirstWeekOfYear.Jan1" /> is used.</param>
-        <summary>Returns an <see langword="Integer" /> value containing the specified component of a given <see langword="Date" /> value.</summary>
-        <returns>Returns an <see langword="Integer" /> value containing the specified component of a given <see langword="Date" /> value.</returns>
+        <param name="Interval">Required. A <see cref="T:Microsoft.VisualBasic.DateInterval" /> enumeration value or a string expression representing the part of the date/time value you want to return.</param>
+        <param name="DateValue">Required. The <see langword="Date" /> value that you want to evaluate.</param>
+        <param name="FirstDayOfWeekValue">Optional. A value chosen from the <see cref="T:Microsoft.VisualBasic.FirstDayOfWeek" /> enumeration that specifies the first day of the week. If not specified, <see cref="F:Microsoft.VisualBasic.FirstDayOfWeek.Sunday" /> is used.</param>
+        <param name="FirstWeekOfYearValue">Optional. A value chosen from the <see cref="T:Microsoft.VisualBasic.FirstWeekOfYear" /> enumeration that specifies the first week of the year. If not specified, <see cref="F:Microsoft.VisualBasic.FirstWeekOfYear.Jan1" /> is used.</param>
+        <summary>Returns an integer value containing the specified component of a given <see langword="Date" /> value.</summary>
+        <returns>An integer value containing the specified component of a given <see langword="Date" /> value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -638,12 +638,12 @@ Dim LastMidnight As Date = CurrDatTim.Date   ' At midnight.
         <Parameter Name="WeekOfYear" Type="Microsoft.VisualBasic.FirstWeekOfYear" />
       </Parameters>
       <Docs>
-        <param name="Interval">Required. <see langword="DateInterval" /> enumeration value or <see langword="String" /> expression representing the part of the date/time value you want to return.</param>
-        <param name="DateValue">Required. <see langword="Date" /> value that you want to evaluate.</param>
-        <param name="DayOfWeek">Optional. A value chosen from the <see langword="FirstDayOfWeek" /> enumeration that specifies the first day of the week. If not specified, <see langword="FirstDayOfWeek.Sunday" /> is used.</param>
-        <param name="WeekOfYear">Optional. A value chosen from the <see langword="FirstWeekOfYear" /> enumeration that specifies the first week of the year. If not specified, <see langword="FirstWeekOfYear.Jan1" /> is used.</param>
-        <summary>Returns an <see langword="Integer" /> value containing the specified component of a given <see langword="Date" /> value.</summary>
-        <returns>Returns an <see langword="Integer" /> value containing the specified component of a given <see langword="Date" /> value.</returns>
+        <param name="Interval">Required. A <see cref="T:Microsoft.VisualBasic.DateInterval" /> enumeration value or a string expression representing the part of the date/time value you want to return.</param>
+        <param name="DateValue">Required. A <see langword="Date" /> value that you want to evaluate.</param>
+        <param name="DayOfWeek">Optional. A value chosen from the <see cref="T:Microsoft.VisualBasic.FirstDayOfWeek" /> enumeration that specifies the first day of the week. If not specified, <see cref="F:Microsoft.VisualBasic.FirstDayOfWeek.Sunday" /> is used.</param>
+        <param name="WeekOfYear">Optional. A value chosen from the <see cref="T:Microsoft.VisualBasic.FirstWeekOfYear" /> enumeration that specifies the first week of the year. If not specified, <see cref="F:Microsoft.VisualBasic.FirstWeekOfYear.Jan1" /> is used.</param>
+        <summary>Returns an value containing the specified component of a given <see langword="Date" /> value.</summary>
+        <returns>An integer value containing the specified component of a given <see langword="Date" /> value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -745,8 +745,8 @@ Dim LastMidnight As Date = CurrDatTim.Date   ' At midnight.
         <Parameter Name="Day" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Year">Required. <see langword="Integer" /> expression from 1 through 9999. However, values below this range are also accepted. If <paramref name="Year" /> is 0 through 99, it is interpreted as being between 1930 and 2029, as explained in the "Remarks" section below. If <paramref name="Year" /> is less than 1, it is subtracted from the current year.</param>
-        <param name="Month">Required. <see langword="Integer" /> expression from 1 through 12. However, values outside this range are also accepted. The value of <paramref name="Month" /> is offset by 1 and applied to January of the calculated year. In other words, (<paramref name="Month" /> - 1) is added to January. The year is recalculated if necessary. The following results illustrate this effect:  
+        <param name="Year">Required. Integer expression from 1 through 9999. However, values below this range are also accepted. If <paramref name="Year" /> is 0 through 99, it is interpreted as being between 1930 and 2029, as explained in the "Remarks" section below. If <paramref name="Year" /> is less than 1, it is subtracted from the current year.</param>
+        <param name="Month">Required. Integer expression from 1 through 12. However, values outside this range are also accepted. The value of <paramref name="Month" /> is offset by 1 and applied to January of the calculated year. In other words, (<paramref name="Month" /> - 1) is added to January. The year is recalculated if necessary. The following results illustrate this effect:  
   
  If <paramref name="Month" /> is 1, the result is January of the calculated year.  
   
@@ -755,7 +755,7 @@ Dim LastMidnight As Date = CurrDatTim.Date   ' At midnight.
  If <paramref name="Month" /> is -1, the result is November of the previous year.  
   
  If <paramref name="Month" /> is 13, the result is January of the following year.</param>
-        <param name="Day">Required. <see langword="Integer" /> expression from 1 through 31. However, values outside this range are also accepted. The value of <paramref name="Day" /> is offset by 1 and applied to the first day of the calculated month. In other words, (<paramref name="Day" /> - 1) is added to the first of the month. The month and year are recalculated if necessary. The following results illustrate this effect:  
+        <param name="Day">Required. Integer expression from 1 through 31. However, values outside this range are also accepted. The value of <paramref name="Day" /> is offset by 1 and applied to the first day of the calculated month. In other words, (<paramref name="Day" /> - 1) is added to the first of the month. The month and year are recalculated if necessary. The following results illustrate this effect:  
   
  If <paramref name="Day" /> is 1, the result is the first day of the calculated month.  
   
@@ -765,12 +765,12 @@ Dim LastMidnight As Date = CurrDatTim.Date   ' At midnight.
   
  If <paramref name="Day" /> is past the end of the current month, the result is the appropriate day of the following month. For example, if <paramref name="Month" /> is 4 and <paramref name="Day" /> is 31, the result is May 1.</param>
         <summary>Returns a <see langword="Date" /> value representing a specified year, month, and day, with the time information set to midnight (00:00:00).</summary>
-        <returns>Returns a <see langword="Date" /> value representing a specified year, month, and day, with the time information set to midnight (00:00:00).</returns>
+        <returns>A <see langword="Date" /> value representing a specified year, month, and day, with the time information set to midnight (00:00:00).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Under Windows 98 or Windows 2000, two-digit years for the `Year` argument are interpreted based on user-defined computer settings. The default settings are that values from 0 through 29 are interpreted as the years 2000–2029, and values from 30 through 99 are interpreted as the years 1930–1999. For all other `Year` arguments, use a four-digit year; for example, 1924.  
+ Under Windows 98 or Windows 2000, two-digit years for the `Year` argument are interpreted based on user-defined computer settings. The default settings are that values from 0 through 29 are interpreted as the years 2000-2029, and values from 30 through 99 are interpreted as the years 1930-1999. For all other `Year` arguments, use a four-digit year; for example, 1924.  
   
  Earlier versions of Windows interpret two-digit years based on the defaults described previously. To be sure the function returns the proper value, use a four-digit `Year`.  
   
@@ -829,8 +829,8 @@ Dim NewDateTime As Date = New Date(1978, 5, 6, 8, 29, 59, 900)
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns or sets a <see langword="String" /> value representing the current date according to your system.</summary>
-        <value>Returns or sets a <see langword="String" /> value representing the current date according to your system.</value>
+        <summary>Returns or sets a string value representing the current date according to your system.</summary>
+        <value>Returns or sets a string value representing the current date according to your system.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -861,7 +861,7 @@ MsgBox("The formatted date is " & Format(Now, "dddd, d MMM yyyy"))
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidCastException">Invalid format used to set the value of <see langword="DateString" />.</exception>
+        <exception cref="T:System.InvalidCastException">Invalid format used to set the value of <see cref="T:Microsoft.VisualBasic.DateAndTime.DateString" />.</exception>
         <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Now" />
         <altmember cref="P:Microsoft.VisualBasic.DateAndTime.TimeString" />
         <altmember cref="P:Microsoft.VisualBasic.DateAndTime.Today" />
@@ -889,10 +889,9 @@ MsgBox("The formatted date is " & Format(Now, "dddd, d MMM yyyy"))
         <Parameter Name="StringDate" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="StringDate">Required. <see langword="String" /> expression representing a date/time value from 00:00:00 on January 1 of the year 1 through 23:59:59 on December 31, 9999.</param>
+        <param name="StringDate">Required. string expression representing a date/time value from 00:00:00 on January 1 of the year 1 through 23:59:59 on December 31, 9999.</param>
         <summary>Returns a <see langword="Date" /> value containing the date information represented by a string, with the time information set to midnight (00:00:00).</summary>
-        <returns>
-          <see langword="Date" /> value containing the date information represented by a string, with the time information set to midnight (00:00:00).</returns>
+        <returns>A <see langword="Date" /> value containing the date information represented by a string, with the time information set to midnight (00:00:00).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -949,9 +948,9 @@ MsgBox("The formatted date is " & Format(Now, "dddd, d MMM yyyy"))
         <Parameter Name="DateValue" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="DateValue">Required. <see langword="Date" /> value from which you want to extract the day.</param>
-        <summary>Returns an <see langword="Integer" /> value from 1 through 31 representing the day of the month.</summary>
-        <returns>Returns an <see langword="Integer" /> value from 1 through 31 representing the day of the month.</returns>
+        <param name="DateValue">Required. A <see langword="Date" /> value from which you want to extract the day.</param>
+        <summary>Returns an integer value from 1 through 31 representing the day of the month.</summary>
+        <returns>An integer value from 1 through 31 representing the day of the month.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1006,9 +1005,9 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
         <Parameter Name="TimeValue" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="TimeValue">Required. <see langword="Date" /> value from which you want to extract the hour.</param>
-        <summary>Returns an <see langword="Integer" /> value from 0 through 23 representing the hour of the day.</summary>
-        <returns>Returns an <see langword="Integer" /> value from 0 through 23 representing the hour of the day.</returns>
+        <param name="TimeValue">Required. A <see langword="Date" /> value from which you want to extract the hour.</param>
+        <summary>Returns an integer value from 0 through 23 representing the hour of the day.</summary>
+        <returns>An integer value from 0 through 23 representing the hour of the day.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1057,9 +1056,9 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
         <Parameter Name="TimeValue" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="TimeValue">Required. <see langword="Date" /> value from which you want to extract the minute.</param>
-        <summary>Returns an <see langword="Integer" /> value from 0 through 59 representing the minute of the hour.</summary>
-        <returns>Returns an <see langword="Integer" /> value from 0 through 59 representing the minute of the hour.</returns>
+        <param name="TimeValue">Required. A <see langword="Date" /> value from which you want to extract the minute.</param>
+        <summary>Returns an integer value from 0 through 59 representing the minute of the hour.</summary>
+        <returns>An integer value from 0 through 59 representing the minute of the hour.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1108,9 +1107,9 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
         <Parameter Name="DateValue" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="DateValue">Required. <see langword="Date" /> value from which you want to extract the month.</param>
-        <summary>Returns an <see langword="Integer" /> value from 1 through 12 representing the month of the year.</summary>
-        <returns>Returns an <see langword="Integer" /> value from 1 through 12 representing the month of the year.</returns>
+        <param name="DateValue">Required. A <see langword="Date" /> value from which you want to extract the month.</param>
+        <summary>Returns an integer value from 1 through 12 representing the month of the year.</summary>
+        <returns>An integer value from 1 through 12 representing the month of the year.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1158,10 +1157,10 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
         <Parameter Name="Abbreviate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Month">Required. <see langword="Integer" />. The numeric designation of the month, from 1 through 13; 1 indicates January and 12 indicates December. You can use the value 13 with a 13-month calendar. If your system is using a 12-month calendar and <paramref name="Month" /> is 13, <see langword="MonthName" /> returns an empty string.</param>
-        <param name="Abbreviate">Optional. <see langword="Boolean" /> value that indicates if the month name is to be abbreviated. If omitted, the default is <see langword="False" />, which means the month name is not abbreviated.</param>
-        <summary>Returns a <see langword="String" /> value containing the name of the specified month.</summary>
-        <returns>Returns a <see langword="String" /> value containing the name of the specified month.</returns>
+        <param name="Month">Required. The numeric designation of the month, from 1 through 13; 1 indicates January and 12 indicates December. You can use the value 13 with a 13-month calendar. If your system is using a 12-month calendar and <paramref name="Month" /> is 13, <c>MonthName</c> returns an empty string.</param>
+        <param name="Abbreviate">Optional. <see langword="True" /> to abbreviate the month name; otherwise, <see langword="False" />. The default is <see langword="False" />.</param>
+        <summary>Returns a string value containing the name of the specified month.</summary>
+        <returns>A string value containing the name of the specified month.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1256,9 +1255,9 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
         <Parameter Name="TimeValue" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="TimeValue">Required. <see langword="Date" /> value from which you want to extract the second.</param>
-        <summary>Returns an <see langword="Integer" /> value from 0 through 59 representing the second of the minute.</summary>
-        <returns>Returns an <see langword="Integer" /> value from 0 through 59 representing the second of the minute.</returns>
+        <param name="TimeValue">Required. A <see langword="Date" /> value from which you want to extract the second.</param>
+        <summary>Returns an integer value from 0 through 59 representing the second of the minute.</summary>
+        <returns>An integer value from 0 through 59 representing the second of the minute.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1350,8 +1349,8 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a <see langword="Double" /> value representing the number of seconds elapsed since midnight.</summary>
-        <value>Returns a <see langword="Double" /> value representing the number of seconds elapsed since midnight.</value>
+        <summary>Returns a <see cref="T:System.Double" /> value representing the number of seconds elapsed since midnight.</summary>
+        <value>A value representing the number of seconds elapsed since midnight.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1402,11 +1401,11 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
         <Parameter Name="Second" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Hour">Required. <see langword="Integer" /> expression from 0 through 23. However, values outside this range are also accepted.</param>
-        <param name="Minute">Required. <see langword="Integer" /> expression from 0 through 59. However, values outside this range are also accepted. The value of <paramref name="Minute" /> is added to the calculated hour, so a negative value specifies minutes before that hour.</param>
-        <param name="Second">Required. <see langword="Integer" /> expression from 0 through 59. However, values outside this range are also accepted. The value of <paramref name="Second" /> is added to the calculated minute, so a negative value specifies seconds before that minute.</param>
+        <param name="Hour">Required. Integer expression from 0 through 23. However, values outside this range are also accepted.</param>
+        <param name="Minute">Required. Integer expression from 0 through 59. However, values outside this range are also accepted. The value of <paramref name="Minute" /> is added to the calculated hour, so a negative value specifies minutes before that hour.</param>
+        <param name="Second">Required. Integer expression from 0 through 59. However, values outside this range are also accepted. The value of <paramref name="Second" /> is added to the calculated minute, so a negative value specifies seconds before that minute.</param>
         <summary>Returns a <see langword="Date" /> value representing a specified hour, minute, and second, with the date information set relative to January 1 of the year 1.</summary>
-        <returns>Returns a <see langword="Date" /> value representing a specified hour, minute, and second, with the date information set relative to January 1 of the year 1.</returns>
+        <returns>A <see langword="Date" /> value representing a specified hour, minute, and second, with the date information set relative to January 1 of the year 1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1474,8 +1473,8 @@ Dim newDateTime As Date = New Date(1978, 5, 6, 8, 29, 59, 900)
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns or sets a <see langword="String" /> value representing the current time of day according to your system.</summary>
-        <value>Returns or sets a <see langword="String" /> value representing the current time of day according to your system.</value>
+        <summary>Returns or sets a string value representing the current time of day according to your system.</summary>
+        <value>Returns or sets a string value representing the current time of day according to your system.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1532,9 +1531,9 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
         <Parameter Name="StringTime" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="StringTime">Required. <see langword="String" /> expression representing a date/time value from 00:00:00 on January 1 of the year 1 through 23:59:59 on December 31, 9999.</param>
+        <param name="StringTime">Required. A string expression representing a date/time value from 00:00:00 on January 1 of the year 1 through 23:59:59 on December 31, 9999.</param>
         <summary>Returns a <see langword="Date" /> value containing the time information represented by a string, with the date information set to January 1 of the year 1.</summary>
-        <returns>Returns a <see langword="Date" /> value containing the time information represented by a string, with the date information set to January 1 of the year 1.</returns>
+        <returns>A <see langword="Date" /> value containing the time information represented by a string, with the date information set to January 1 of the year 1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1632,10 +1631,10 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
         <Parameter Name="DayOfWeek" Type="Microsoft.VisualBasic.FirstDayOfWeek" />
       </Parameters>
       <Docs>
-        <param name="DateValue">Required. <see langword="Date" /> value for which you want to determine the day of the week.</param>
-        <param name="DayOfWeek">Optional. A value chosen from the <see langword="FirstDayOfWeek" /> enumeration that specifies the first day of the week. If not specified, <see langword="FirstDayOfWeek.Sunday" /> is used.</param>
-        <summary>Returns an <see langword="Integer" /> value containing a number representing the day of the week.</summary>
-        <returns>Returns an <see langword="Integer" /> value containing a number representing the day of the week.</returns>
+        <param name="DateValue">Required. A <see langword="Date" /> value for which you want to determine the day of the week.</param>
+        <param name="DayOfWeek">Optional. A value chosen from the <see cref="T:Microsoft.VisualBasic.FirstDayOfWeek" /> enumeration that specifies the first day of the week. If not specified, <see cref="F:Microsoft.VisualBasic.FirstDayOfWeek.Sunday" /> is used.</param>
+        <summary>Returns an integer value containing a number representing the day of the week.</summary>
+        <returns>An integer value containing a number representing the day of the week.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1700,11 +1699,11 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
         <Parameter Name="FirstDayOfWeekValue" Type="Microsoft.VisualBasic.FirstDayOfWeek" />
       </Parameters>
       <Docs>
-        <param name="Weekday">Required. <see langword="Integer" />. The numeric designation for the weekday, from 1 through 7; 1 indicates the first day of the week and 7 indicates the last day of the week. The identities of the first and last days depend on the setting of <paramref name="FirstDayOfWeekValue" />.</param>
+        <param name="Weekday">Required. Integer. The numeric designation for the weekday, from 1 through 7; 1 indicates the first day of the week and 7 indicates the last day of the week. The identities of the first and last days depend on the setting of <paramref name="FirstDayOfWeekValue" />.</param>
         <param name="Abbreviate">Optional. <see langword="Boolean" /> value that indicates if the weekday name is to be abbreviated. If omitted, the default is <see langword="False" />, which means the weekday name is not abbreviated.</param>
-        <param name="FirstDayOfWeekValue">Optional. A value chosen from the <see langword="FirstDayOfWeek" /> enumeration that specifies the first day of the week. If not specified, <see langword="FirstDayOfWeek.System" /> is used.</param>
-        <summary>Returns a <see langword="String" /> value containing the name of the specified weekday.</summary>
-        <returns>Returns a <see langword="String" /> value containing the name of the specified weekday.</returns>
+        <param name="FirstDayOfWeekValue">Optional. A value chosen from the <see cref="T:Microsoft.VisualBasic.FirstDayOfWeek" /> enumeration that specifies the first day of the week. If not specified, <see langword="FirstDayOfWeek.System" /> is used.</param>
+        <summary>Returns a string value containing the name of the specified weekday.</summary>
+        <returns>A string value containing the name of the specified weekday.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1768,9 +1767,9 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
         <Parameter Name="DateValue" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="DateValue">Required. <see langword="Date" /> value from which you want to extract the year.</param>
-        <summary>Returns an <see langword="Integer" /> value from 1 through 9999 representing the year.</summary>
-        <returns>Returns an <see langword="Integer" /> value from 1 through 9999 representing the year.</returns>
+        <param name="DateValue">Required. A <see langword="Date" /> value from which you want to extract the year.</param>
+        <summary>Returns an integer value from 1 through 9999 representing the year.</summary>
+        <returns>An integer value from 1 through 9999 representing the year.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

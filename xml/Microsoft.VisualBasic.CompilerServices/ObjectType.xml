@@ -470,7 +470,7 @@
       </Parameters>
       <Docs>
         <param name="obj">Required. Any numeric expression.</param>
-        <summary>Performs a unary minus (–) operation.</summary>
+        <summary>Performs a unary minus (-) operation.</summary>
         <returns>The negative value of <paramref name="obj" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -810,7 +810,7 @@
       <Docs>
         <param name="o1">Required. Any numeric expression.</param>
         <param name="o2">Required. Any numeric expression.</param>
-        <summary>Performs a subtraction (–) operation.</summary>
+        <summary>Performs a subtraction (-) operation.</summary>
         <returns>The difference between <paramref name="o1" /> and <paramref name="o2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

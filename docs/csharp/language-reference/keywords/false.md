@@ -12,7 +12,7 @@ ms.assetid: a11aa532-efe2-442b-9fcc-8fdb33b8c8b4
 
 Used as an overloaded operator or as a literal:
 
-- [false operator](false-operator.md)
+- [false operator](true-false-operators.md)
 - [false literal](false-literal.md)
 
 ## See also

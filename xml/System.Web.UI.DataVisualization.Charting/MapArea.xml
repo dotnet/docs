@@ -34,7 +34,7 @@
   
  There are two types of <xref:System.Web.UI.DataVisualization.Charting.MapArea> objects:  
   
--   Map areas that are automatically created when a chart element—for example, a data point, series, legend item or strip line object—has a non-empty `ToolTip`, `Url` or `MapAreaAttributes` property; note that other HTML elements that are required for a client-side image map are also created. In this case, the dimensions and location of a map area are automatically determined by the chart element. Use the <xref:System.Web.UI.DataVisualization.Charting.Chart.CustomizeMapAreas> event of the root <xref:System.Web.UI.DataVisualization.Charting.Chart> object to delete or modify these map areas at run time.  
+-   Map areas that are automatically created when a chart element - for example, a data point, series, legend item or strip line object - has a non-empty `ToolTip`, `Url` or `MapAreaAttributes` property; note that other HTML elements that are required for a client-side image map are also created. In this case, the dimensions and location of a map area are automatically determined by the chart element. Use the <xref:System.Web.UI.DataVisualization.Charting.Chart.CustomizeMapAreas> event of the root <xref:System.Web.UI.DataVisualization.Charting.Chart> object to delete or modify these map areas at run time.  
   
 -   Custom map areas that have a user-defined shape and coordinates. Use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> object to add these custom map areas at design time or run time.  
   

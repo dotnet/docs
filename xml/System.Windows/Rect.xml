@@ -844,7 +844,7 @@
 ## Remarks  
  The <xref:System.Windows.Rect.Width%2A> of the resulting rectangle is increased or decreased by twice the specified width offset, because it is applied to both the left and right sides of the rectangle. Likewise, the <xref:System.Windows.Rect.Height%2A> of the resulting rectangle is increased or decreased by twice the specified height.  
   
- If the specified width or height shrink the rectangle by more than its current <xref:System.Windows.Rect.Width%2A> or <xref:System.Windows.Rect.Height%2A>—giving the rectangle a negative area—the rectangle becomes the <xref:System.Windows.Rect.Empty%2A> rectangle.  
+ If the specified width or height shrink the rectangle by more than its current <xref:System.Windows.Rect.Width%2A> or <xref:System.Windows.Rect.Height%2A> - giving the rectangle a negative area - the rectangle becomes the <xref:System.Windows.Rect.Empty%2A> rectangle.  
   
    
   
@@ -935,7 +935,7 @@
 ## Remarks  
  The <xref:System.Windows.Rect.Width%2A> of the resulting rectangle is increased or decreased by twice the specified width offset, because it is applied to both the left and right sides of the rectangle. Likewise, the <xref:System.Windows.Rect.Height%2A> of the resulting rectangle is increased or decreased by twice the specified height.  
   
- If the specified width or height modifiers shrink the rectangle by more than its current <xref:System.Windows.Rect.Width%2A> or <xref:System.Windows.Rect.Height%2A>—giving the rectangle a negative area—this method returns <xref:System.Windows.Rect.Empty%2A?displayProperty=nameWithType>.  
+ If the specified width or height modifiers shrink the rectangle by more than its current <xref:System.Windows.Rect.Width%2A> or <xref:System.Windows.Rect.Height%2A> - giving the rectangle a negative area - this method returns <xref:System.Windows.Rect.Empty%2A?displayProperty=nameWithType>.  
   
    
   

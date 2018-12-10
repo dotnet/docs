@@ -187,7 +187,7 @@
   
  This <xref:System.Web.UI.DataVisualization.Charting.NamedImage.Name%2A> property value is used when you set a chart image property to a <xref:System.Web.UI.DataVisualization.Charting.NamedImage> object.  
   
- When one of the image properties of the <xref:System.Web.UI.DataVisualization.Charting.Chart> control is set by specifying a `string` value, the <xref:System.Web.UI.DataVisualization.Charting.Chart.Images%2A> collection property—of type <xref:System.Web.UI.DataVisualization.Charting.NamedImagesCollection>—is first checked to determine whether an image with the specified name exists. If a matching <xref:System.Web.UI.DataVisualization.Charting.NamedImage> object is found, this image is used. If a matching <xref:System.Web.UI.DataVisualization.Charting.NamedImage> object is not located, the `string` value is treated as a URL, an image resource name, or an image path.  
+ When one of the image properties of the <xref:System.Web.UI.DataVisualization.Charting.Chart> control is set by specifying a `string` value, the <xref:System.Web.UI.DataVisualization.Charting.Chart.Images%2A> collection property - of type <xref:System.Web.UI.DataVisualization.Charting.NamedImagesCollection> - is first checked to determine whether an image with the specified name exists. If a matching <xref:System.Web.UI.DataVisualization.Charting.NamedImage> object is found, this image is used. If a matching <xref:System.Web.UI.DataVisualization.Charting.NamedImage> object is not located, the `string` value is treated as a URL, an image resource name, or an image path.  
   
  ]]></format>
         </remarks>

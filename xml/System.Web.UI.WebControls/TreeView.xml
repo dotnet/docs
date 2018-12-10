@@ -153,7 +153,7 @@
 |<xref:System.Web.UI.WebControls.TreeView.RootNodeStyle%2A>|The style settings for the root node.|  
 |<xref:System.Web.UI.WebControls.TreeView.SelectedNodeStyle%2A>|The style settings for a selected node.|  
   
- You can also control the style of nodes at specific depths within the tree by using the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> collection. The first style in the collection corresponds to the style of the nodes at the first level in the tree. The second style in the collection corresponds to the style of the nodes at the second level in the tree, and so on. This is most often used to generate table of contents–style navigation menus where nodes at a certain depth should have the same appearance, regardless of whether they have child nodes.  
+ You can also control the style of nodes at specific depths within the tree by using the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> collection. The first style in the collection corresponds to the style of the nodes at the first level in the tree. The second style in the collection corresponds to the style of the nodes at the second level in the tree, and so on. This is most often used to generate table of contents-style navigation menus where nodes at a certain depth should have the same appearance, regardless of whether they have child nodes.  
   
 > [!NOTE]
 >  If a style is defined for a certain depth level using the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> collection, that style overrides any root, parent, or leaf node style settings for the nodes at that depth.  
@@ -1692,7 +1692,7 @@
   
 4.  <xref:System.Web.UI.WebControls.TreeView.HoverNodeStyle%2A>.  
   
- If you need to generate table of contents–style navigation menus where nodes at a certain level should have the same appearance, regardless of whether they have child nodes, you might consider using the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> property instead of setting the individual style properties.  
+ If you need to generate table of contents-style navigation menus where nodes at a certain level should have the same appearance, regardless of whether they have child nodes, you might consider using the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> property instead of setting the individual style properties.  
   
    
   
@@ -1749,7 +1749,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> collection as an alternative to the individual style properties (such as the <xref:System.Web.UI.WebControls.TreeView.NodeStyle%2A> property) to control the style of nodes at the individual levels of the tree. The first style in the collection corresponds to the style of nodes in the first level of the tree. The second style in the collection corresponds to the style of nodes in the second level of the tree, and so on. This property is most often used to generate table of contents–style navigation menus where nodes at a certain level should have the same appearance, regardless of whether they have child nodes.  
+ Use the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> collection as an alternative to the individual style properties (such as the <xref:System.Web.UI.WebControls.TreeView.NodeStyle%2A> property) to control the style of nodes at the individual levels of the tree. The first style in the collection corresponds to the style of nodes in the first level of the tree. The second style in the collection corresponds to the style of nodes in the second level of the tree, and so on. This property is most often used to generate table of contents-style navigation menus where nodes at a certain level should have the same appearance, regardless of whether they have child nodes.  
   
  Style properties are applied in the following order:  
   

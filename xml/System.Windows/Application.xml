@@ -1590,7 +1590,7 @@
  <xref:System.Windows.Application.ResourceAssembly%2A> can only be set once because it is unlikely that the resource assembly will change after the [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] assembly is loaded.  
   
 > [!NOTE]
->  <xref:System.Windows.Application.ResourceAssembly%2A> cannot be set when a [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] assembly can discover the entry assembly—that is, when <xref:System.Reflection.Assembly.GetEntryAssembly%2A> returns a reference to an assembly rather than `null`.  
+>  <xref:System.Windows.Application.ResourceAssembly%2A> cannot be set when a [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] assembly can discover the entry assembly - that is, when <xref:System.Reflection.Assembly.GetEntryAssembly%2A> returns a reference to an assembly rather than `null`.  
   
  This property is thread safe and is available from any thread.  
   

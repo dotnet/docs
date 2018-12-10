@@ -86,7 +86,7 @@
   
 <a name="data_provider"></a>   
 ## Data Provider  
- By default, the <xref:System.Web.UI.WebControls.SqlDataSource> control works with the .NET Framework Data Provider for SQL Server, but <xref:System.Web.UI.WebControls.SqlDataSource> is not Microsoft SQL Server–specific. You can connect the <xref:System.Web.UI.WebControls.SqlDataSource> control with any database product for which there is a managed ADO.NET provider. When used with the <xref:System.Data.OleDb?displayProperty=nameWithType> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can work with any OLE DB-compliant database. When used with the <xref:System.Data.Odbc?displayProperty=nameWithType> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can be used with any ODBC driver and database, including IBM DB2, MySQL, and PostgreSQL. When used with the <xref:System.Data.OracleClient?displayProperty=nameWithType> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can work with Oracle 8.1.7 databases and later. The list of allowable providers is registered in the `DbProviderFactories` section of the configuration file, either in the Machine.config or Web.config file. For more information, see [Selecting Data Using the SqlDataSource Control](https://msdn.microsoft.com/library/44623286-ff5a-4148-8a3c-85c56ed545eb).  
+ By default, the <xref:System.Web.UI.WebControls.SqlDataSource> control works with the .NET Framework Data Provider for SQL Server, but <xref:System.Web.UI.WebControls.SqlDataSource> is not Microsoft SQL Server-specific. You can connect the <xref:System.Web.UI.WebControls.SqlDataSource> control with any database product for which there is a managed ADO.NET provider. When used with the <xref:System.Data.OleDb?displayProperty=nameWithType> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can work with any OLE DB-compliant database. When used with the <xref:System.Data.Odbc?displayProperty=nameWithType> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can be used with any ODBC driver and database, including IBM DB2, MySQL, and PostgreSQL. When used with the <xref:System.Data.OracleClient?displayProperty=nameWithType> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can work with Oracle 8.1.7 databases and later. The list of allowable providers is registered in the `DbProviderFactories` section of the configuration file, either in the Machine.config or Web.config file. For more information, see [Selecting Data Using the SqlDataSource Control](https://msdn.microsoft.com/library/44623286-ff5a-4148-8a3c-85c56ed545eb).  
   
 <a name="caching"></a>   
 ## Caching  
@@ -1007,8 +1007,8 @@ This section contains four code examples:
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ADO.NET provider–specific connection string that the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control uses to connect to an underlying database.</summary>
-        <value>A .NET Framework data provider–specific string that the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> uses to connect to the SQL database that it represents. The default is an empty string ("").</value>
+        <summary>Gets or sets the ADO.NET provider-specific connection string that the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control uses to connect to an underlying database.</summary>
+        <value>A .NET Framework data provider-specific string that the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> uses to connect to the SQL database that it represents. The default is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

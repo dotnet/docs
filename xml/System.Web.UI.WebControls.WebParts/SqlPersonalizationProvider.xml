@@ -24,9 +24,9 @@
   
  The data design for using Web Parts personalization with SQL Server relies on the existence of two common SQL database tables, and their supporting stored procedures, that are shared for most SQL-based feature implementations. These tables and views are installed and uninstalled using the following scripts:  
   
--   installpagepersonalization.sql – Installs the personalization tables, views, and related stored procedures.  
+-   installpagepersonalization.sql - Installs the personalization tables, views, and related stored procedures.  
   
--   uninstallpagepersonalization.sql – Uninstalls the personalization tables, views, and related stored procedures.  
+-   uninstallpagepersonalization.sql - Uninstalls the personalization tables, views, and related stored procedures.  
   
  It is important to be aware that personalization will fail if your Web application does not run at the default trust level of <xref:System.Web.AspNetHostingPermissionLevel.Medium> or higher (you can set custom trust levels in a Web.config file using the `<trust level="" />` element). The <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration> and <xref:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider> classes both check for a trust level of <xref:System.Web.AspNetHostingPermissionLevel.Low> when they are initialized. If you configure your application to run at a trust level of <xref:System.Web.AspNetHostingPermissionLevel.Low>, and you use the default <xref:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider> provider to manage the personalization data for your application, the first time that the application tries to access personalization data, it will fail because an ASP.NET worker process running in <xref:System.Web.AspNetHostingPermissionLevel.Low> trust does not have the permissions necessary to call into the various classes in the <xref:System.Data.SqlClient> namespace.  
   

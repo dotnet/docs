@@ -21,7 +21,7 @@
 ## Remarks  
  The <xref:System.Web.UI.DataVisualization.Charting.Point3D> class represents the coordinates of a 3D data point.  
   
- Any point used in custom 3D drawing—which is accomplished using GDI+—must be transformed from relative X, Y and Z (3D) coordinates into relative X and Y (2D) coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method. By calling <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A>, the X and Y-values of the <xref:System.Web.UI.DataVisualization.Charting.Point3D> objects are changed so that they reflect the 3-dimensional space. The new X and Y points can then be used for GDI+ method calls—the Z value is then disregarded—after being changed to absolute pixel coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetAbsolutePoint%2A> method.  
+ Any point used in custom 3D drawing - which is accomplished using GDI+ - must be transformed from relative X, Y and Z (3D) coordinates into relative X and Y (2D) coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method. By calling <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A>, the X and Y-values of the <xref:System.Web.UI.DataVisualization.Charting.Point3D> objects are changed so that they reflect the 3-dimensional space. The new X and Y points can then be used for GDI+ method calls - the Z value is then disregarded - after being changed to absolute pixel coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetAbsolutePoint%2A> method.  
   
  Note that the Z coordinate may be less than zero (located behind a chart area) or greater than 100 (located in front of a chart area).  
   
@@ -115,7 +115,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Any point used in custom 3D drawing—which is accomplished using GDI+—must be transformed from X, Y and Z (3D) coordinates into X and Y (2D) coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method. This method takes an array of <xref:System.Web.UI.DataVisualization.Charting.Point3D> objects as its only parameter. By calling <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A>, the X and Y property values are changed to reflect the 3-dimensional space.  
+ Any point used in custom 3D drawing - which is accomplished using GDI+ - must be transformed from X, Y and Z (3D) coordinates into X and Y (2D) coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method. This method takes an array of <xref:System.Web.UI.DataVisualization.Charting.Point3D> objects as its only parameter. By calling <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A>, the X and Y property values are changed to reflect the 3-dimensional space.  
   
  These new X and Y coordinates are then converted to absolute coordinates, by using a method such as the <xref:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetAbsolutePoint%2A> method. After converting the coordinates, the <xref:System.Web.UI.DataVisualization.Charting.Point3D.PointF%2A> property of each Point3D object can be used for any GDI+ method that take a <xref:System.Drawing.PointF> object as a parameter.  
   
@@ -153,7 +153,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Any point used in custom 3D drawing—which is accomplished using GDI+—must be transformed from X, Y and Z (3D) coordinates into X and Y (2D) coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method. This method takes an array of Point3D objects as its only parameter. By calling the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method, the X and Y property values are changed to reflect the 3-dimensional space.  
+ Any point used in custom 3D drawing - which is accomplished using GDI+ - must be transformed from X, Y and Z (3D) coordinates into X and Y (2D) coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method. This method takes an array of Point3D objects as its only parameter. By calling the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method, the X and Y property values are changed to reflect the 3-dimensional space.  
   
  These new X and Y coordinates are then converted to absolute coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetAbsolutePoint%2A> method. They are then used for GDI+ method calls.  
   
@@ -193,7 +193,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Any point used in custom 3D drawing—which is accomplished using GDI+—must be transformed from X, Y and Z (3D) coordinates into X and Y (2D) coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method. This method takes an array of Point3D objects as its only parameter. By calling the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method, the X and Y property values are changed to reflect the 3-dimensional space.  
+ Any point used in custom 3D drawing - which is accomplished using GDI+ - must be transformed from X, Y and Z (3D) coordinates into X and Y (2D) coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method. This method takes an array of Point3D objects as its only parameter. By calling the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method, the X and Y property values are changed to reflect the 3-dimensional space.  
   
  These new X and Y coordinates are then converted to absolute coordinates by using the <xref:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetAbsolutePoint%2A> method. They are then used for GDI+ method calls.  
   
@@ -243,7 +243,7 @@
   
  **Note** This Z property may be less than zero (located behind a chart area) or greater than 100 (located in front of a chart area).  
   
- Any point used in custom 3D drawing—which is accomplished using GDI+—must be transformed from X, Y and Z (3D) coordinates into X and Y (2D) coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method. This method takes an array of Point3D objects as its only parameter. By calling the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method, the X and Y property values are changed to reflect the 3-dimensional space.  
+ Any point used in custom 3D drawing - which is accomplished using GDI+ - must be transformed from X, Y and Z (3D) coordinates into X and Y (2D) coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method. This method takes an array of Point3D objects as its only parameter. By calling the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method, the X and Y property values are changed to reflect the 3-dimensional space.  
   
  These new X and Y coordinates are then converted to absolute coordinates by using the <xref:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetAbsolutePoint%2A> method. They are then used for GDI+ method calls.  
   

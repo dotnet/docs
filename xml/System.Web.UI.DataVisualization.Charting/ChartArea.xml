@@ -370,7 +370,7 @@
   
  At run time, the axes for a chart area should be accessed using the individual axis properties, such as <xref:System.Web.UI.DataVisualization.Charting.ChartArea.AxisX%2A>, <xref:System.Web.UI.DataVisualization.Charting.ChartArea.AxisX2%2A>, and so forth.  
   
- If you decide to use this property at run time—for example, in an event—you can access an item in this array by specifying an <xref:System.Web.UI.DataVisualization.Charting.AxisName> enumeration member as the identifier.  
+ If you decide to use this property at run time - for example, in an event - you can access an item in this array by specifying an <xref:System.Web.UI.DataVisualization.Charting.AxisName> enumeration member as the identifier.  
   
  ]]></format>
         </remarks>
@@ -608,7 +608,7 @@
   
  The <xref:System.Web.UI.DataVisualization.Charting.ChartArea.BackColor%2A> value will be the first color used if you have specified gradient colors for the background.  
   
- The alpha value controls the opacity of a color. If you set this color to "transparent"—that is, if you use an alpha value of 0—no color will be assigned to the background of the chart area. As a result, the background will be transparent.  
+ The alpha value controls the opacity of a color. If you set this color to "transparent" - that is, if you use an alpha value of 0 - no color will be assigned to the background of the chart area. As a result, the background will be transparent.  
   
  ]]></format>
         </remarks>
@@ -1052,7 +1052,7 @@
  You can set the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.BorderColor%2A> property to any valid ARGB (alpha, red, green, blue) value.  
   
 > [!NOTE]
->  For pie and doughnut charts, this property determines the color of radial and horizontal lines if data labels are drawn outside the pie or doughnut—that is, if the `LabelStyle` custom property is set to "Outside".  
+>  For pie and doughnut charts, this property determines the color of radial and horizontal lines if data labels are drawn outside the pie or doughnut - that is, if the `LabelStyle` custom property is set to "Outside".  
   
  This property also determines the marker lines for 3D charts if the `ShowMarkerLines` custom property is set to `true`.  
   

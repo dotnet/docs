@@ -424,7 +424,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the cached parent of this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <value>The parent element. The return value can be <see langword="null" /> if the specified element has no parent—for example, if this element is the root node.</value>
+        <value>The parent element. The return value can be <see langword="null" /> if the specified element has no parent - for example, if this element is the root node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

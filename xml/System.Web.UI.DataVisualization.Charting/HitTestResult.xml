@@ -27,7 +27,7 @@
   
  If a data point is located, you can use the <xref:System.Web.UI.DataVisualization.Charting.HitTestResult.PointIndex%2A> property to get the index of that data point; that is, the zero-based index of the point in the <xref:System.Web.UI.DataVisualization.Charting.DataPointCollection>. Use the <xref:System.Web.UI.DataVisualization.Charting.HitTestResult.Series%2A> property to get the associated <xref:System.Web.UI.DataVisualization.Charting.Series> object for that data point.  
   
- The <xref:System.Web.UI.DataVisualization.Charting.HitTestResult.ChartArea%2A> and <xref:System.Web.UI.DataVisualization.Charting.HitTestResult.Axis%2A> properties are used to get the associated chart area and axis of the chart element—if any—returned by the hit test. Note that these properties may be `null` if the returned chart element does not have an associated chart area or axis.  
+ The <xref:System.Web.UI.DataVisualization.Charting.HitTestResult.ChartArea%2A> and <xref:System.Web.UI.DataVisualization.Charting.HitTestResult.Axis%2A> properties are used to get the associated chart area and axis of the chart element - if any - returned by the hit test. Note that these properties may be `null` if the returned chart element does not have an associated chart area or axis.  
   
  Use the <xref:System.Web.UI.DataVisualization.Charting.ChartElementType> property to determine the type of the chart element returned by a hit test.  
   
@@ -82,7 +82,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the chart object returned by the hit test is an object that is associated with an axis—for example, a scrollbar element, tick mark, grid line or strip line—the <xref:System.Web.UI.DataVisualization.Charting.HitTestResult.Axis%2A> property will reference the <xref:System.Web.UI.DataVisualization.Charting.Axis> object with which the returned chart object is associated. Otherwise this property will be `null`.  
+ If the chart object returned by the hit test is an object that is associated with an axis - for example, a scrollbar element, tick mark, grid line or strip line - the <xref:System.Web.UI.DataVisualization.Charting.HitTestResult.Axis%2A> property will reference the <xref:System.Web.UI.DataVisualization.Charting.Axis> object with which the returned chart object is associated. Otherwise this property will be `null`.  
   
  Note that the <xref:System.Web.UI.DataVisualization.Charting.Chart.HitTest%2A> method can be called explicitly, in which case a chart element may or may not be at the specified location.  
   

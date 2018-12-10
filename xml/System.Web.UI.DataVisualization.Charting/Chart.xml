@@ -427,7 +427,7 @@
   
  The <xref:System.Web.UI.DataVisualization.Charting.Chart.BackColor%2A> value will be the first color used if you are using gradient colors for the background.  
   
- The alpha value controls the opacity of a color. If you set this color to "transparent"—that is, if you use an alpha value of 0—no color will be assigned to the background of the title. As a result, the background will be transparent.  
+ The alpha value controls the opacity of a color. If you set this color to "transparent" - that is, if you use an alpha value of 0 - no color will be assigned to the background of the title. As a result, the background will be transparent.  
   
  The following table represents the <xref:System.Web.UI.DataVisualization.Charting.Series> types that support gradients:  
   
@@ -2080,7 +2080,7 @@ These data point properties include:
 ## Remarks  
  Call this method to determine the chart element, if any, that is located at a specified point.  
   
- This method is often used in some mouse-related event—for example, MouseDown—to determine which chart element the end-user clicked. The X and Y mouse coordinates obtained from the event parameters are then used for the `x` and `y` parameter values of this method call.  
+ This method is often used in some mouse-related event - for example, MouseDown - to determine which chart element the end-user clicked. The X and Y mouse coordinates obtained from the event parameters are then used for the `x` and `y` parameter values of this method call.  
   
  The properties of the returned <xref:System.Web.UI.DataVisualization.Charting.HitTestResult> object can then be used to determine which chart element was clicked; the <xref:System.Web.UI.DataVisualization.Charting.HitTestResult> object also provides an instance of the actual object selected, if any.  
   
@@ -2358,7 +2358,7 @@ These data point properties include:
 ## Remarks  
  Use this property to add <xref:System.Web.UI.DataVisualization.Charting.NamedImage> objects to and remove <xref:System.Web.UI.DataVisualization.Charting.NamedImage> objects from the <xref:System.Web.UI.DataVisualization.Charting.NamedImagesCollection> object of the <xref:System.Web.UI.DataVisualization.Charting.Chart>. This collection property is available at run time only.  
   
- An image—that is, an object derived from type <xref:System.Drawing.Image>, such as <xref:System.Drawing.Bitmap>, that is created dynamically—can be stored in this collection, and then assigned at a later time to any image-related <xref:System.Web.UI.DataVisualization.Charting.Chart> property, such as <xref:System.Web.UI.DataVisualization.Charting.Chart.BackImage%2A>.  
+ An image - that is, an object derived from type <xref:System.Drawing.Image>, such as <xref:System.Drawing.Bitmap>, that is created dynamically - can be stored in this collection, and then assigned at a later time to any image-related <xref:System.Web.UI.DataVisualization.Charting.Chart> property, such as <xref:System.Web.UI.DataVisualization.Charting.Chart.BackImage%2A>.  
   
  When you assign a <xref:System.Web.UI.DataVisualization.Charting.NamedImage> object to an image-related property in the <xref:System.Web.UI.DataVisualization.Charting.Chart> class, use the name of the <xref:System.Web.UI.DataVisualization.Charting.NamedImage> object for the `string` value of the image-related property.  
   
@@ -3245,7 +3245,7 @@ These data point properties include:
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Several chart properties can be set to "Auto"—for example, <xref:System.Web.UI.DataVisualization.Charting.Axis.Minimum%2A>; these properties are calculated prior to the chart being rendered. "Auto" is usually represented as a <xref:System.Double.NaN> value.  
+ Several chart properties can be set to "Auto" - for example, <xref:System.Web.UI.DataVisualization.Charting.Axis.Minimum%2A>; these properties are calculated prior to the chart being rendered. "Auto" is usually represented as a <xref:System.Double.NaN> value.  
   
  Call this method to reset these properties from their calculated value to "Auto" (<xref:System.Double.NaN>).  
   

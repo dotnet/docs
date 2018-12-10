@@ -502,7 +502,7 @@
   
  If calling <xref:System.Windows.UIElement3D.CaptureMouse%2A> returns `true`, then <xref:System.Windows.UIElement3D.IsMouseCaptured%2A> is also `true`.  
   
- If calling <xref:System.Windows.UIElement3D.CaptureMouse%2A> returns `true`, then the <xref:System.Windows.UIElement3D.GotMouseCapture> and <xref:System.Windows.UIElement3D.IsMouseCapturedChanged> events are raised, with <xref:System.Windows.RoutedEventArgs.Source%2A?displayProperty=nameWithType> in the event data reported as the element where the <xref:System.Windows.UIElement3D.CaptureMouse%2A> method is called. If you force capture, you might interfere with existing captures—especially with captures that relate to drag-and-drop with the mouse.  
+ If calling <xref:System.Windows.UIElement3D.CaptureMouse%2A> returns `true`, then the <xref:System.Windows.UIElement3D.GotMouseCapture> and <xref:System.Windows.UIElement3D.IsMouseCapturedChanged> events are raised, with <xref:System.Windows.RoutedEventArgs.Source%2A?displayProperty=nameWithType> in the event data reported as the element where the <xref:System.Windows.UIElement3D.CaptureMouse%2A> method is called. If you force capture, you might interfere with existing captures - especially with captures that relate to drag-and-drop with the mouse.  
   
  To clear mouse capture from all elements, call <xref:System.Windows.Input.Mouse.Capture%2A?displayProperty=nameWithType> with the `element` parameter provided as `null`.  
   
@@ -2535,7 +2535,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike <xref:System.Windows.UIElement3D.IsMouseOver%2A>, this property is only `true` if the mouse pointer is over the literal element—as it is for a hit test. If the mouse pointer is instead over a child element, this property will be `false`. For most scenarios where you are not authoring controls, use <xref:System.Windows.UIElement3D.IsMouseOver%2A> instead.  
+ Unlike <xref:System.Windows.UIElement3D.IsMouseOver%2A>, this property is only `true` if the mouse pointer is over the literal element - as it is for a hit test. If the mouse pointer is instead over a child element, this property will be `false`. For most scenarios where you are not authoring controls, use <xref:System.Windows.UIElement3D.IsMouseOver%2A> instead.  
   
  If the mouse is captured by this element, and this property is `true` at time of capture, this property will continue to return `true` until mouse capture is lost and the pointer is not over its bounds.  
   
@@ -10221,7 +10221,7 @@
 ## Remarks  
  The <xref:System.Windows.UIElement3D.PreviewTextInput> event allows a component or application to listen for text input in a device-independent manner. The keyboard is the primary means of <xref:System.Windows.UIElement3D.PreviewTextInput>; but speech, handwriting, and other input devices can also generate <xref:System.Windows.UIElement3D.PreviewTextInput>.  
   
- Because of key combinations—either in default keyboards or through input method editors—multiple key events may raise just one text input event.  
+ Because of key combinations - either in default keyboards or through input method editors - multiple key events may raise just one text input event.  
   
  This event creates an alias for the <xref:System.Windows.Input.TextCompositionManager.PreviewTextInput?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.UIElement3D.PreviewTextInput> is part of the class members list when <xref:System.Windows.UIElement3D> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement3D.PreviewTextInput> event are attached to the underlying <xref:System.Windows.Input.TextCompositionManager.PreviewTextInput?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
@@ -11825,7 +11825,7 @@
 ## Remarks  
  The <xref:System.Windows.UIElement3D.TextInput> event allows a component or application to listen for text input in a device-independent manner. The keyboard is the primary means of <xref:System.Windows.UIElement3D.TextInput>, but speech, handwriting, and other input devices can also raise <xref:System.Windows.UIElement3D.TextInput>.  
   
- Because of key combinations—either in default keyboards or through input method editors—multiple key events might raise just one text input event.  
+ Because of key combinations - either in default keyboards or through input method editors - multiple key events might raise just one text input event.  
   
  This event creates an alias for the <xref:System.Windows.Input.TextCompositionManager.TextInput?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.UIElement3D.TextInput> is part of the class members list when <xref:System.Windows.UIElement3D> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement3D.TextInput> event are attached to the underlying <xref:System.Windows.Input.TextCompositionManager.TextInput?displayProperty=nameWithType> attached event and receive the same event data instance.  
   

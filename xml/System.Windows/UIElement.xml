@@ -1022,7 +1022,7 @@
   
  If calling <xref:System.Windows.UIElement.CaptureMouse%2A> returns `true`, then <xref:System.Windows.UIElement.IsMouseCaptured%2A> is also `true`.  
   
- If calling <xref:System.Windows.UIElement.CaptureMouse%2A> returns `true`, then the <xref:System.Windows.UIElement.GotMouseCapture> and <xref:System.Windows.UIElement.IsMouseCapturedChanged> events are raised, with <xref:System.Windows.RoutedEventArgs.Source%2A?displayProperty=nameWithType> in the event data reported as the element where the <xref:System.Windows.UIElement.CaptureMouse%2A> method is called. If you force capture, you might interfere with existing captures—especially with captures that relate to drag-and-drop with the mouse.  
+ If calling <xref:System.Windows.UIElement.CaptureMouse%2A> returns `true`, then the <xref:System.Windows.UIElement.GotMouseCapture> and <xref:System.Windows.UIElement.IsMouseCapturedChanged> events are raised, with <xref:System.Windows.RoutedEventArgs.Source%2A?displayProperty=nameWithType> in the event data reported as the element where the <xref:System.Windows.UIElement.CaptureMouse%2A> method is called. If you force capture, you might interfere with existing captures - especially with captures that relate to drag-and-drop with the mouse.  
   
  To clear mouse capture from all elements, call <xref:System.Windows.Input.Mouse.Capture%2A?displayProperty=nameWithType> with the `element` parameter provided as `null`.  
   
@@ -3685,7 +3685,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike <xref:System.Windows.UIElement.IsMouseOver%2A>, this property is only `true` if the mouse pointer is over the literal element—as it is for a hit test. If the mouse pointer is instead over a child element, in particular over elements that are part of an element's deeper template and compositing, this property will be `false`. Unless you know how a control is composited (for example, you use this property in a custom control template for a control that you define), this property might return unexpected results. For most scenarios where you are not authoring controls, use <xref:System.Windows.UIElement.IsMouseOver%2A> instead.  
+ Unlike <xref:System.Windows.UIElement.IsMouseOver%2A>, this property is only `true` if the mouse pointer is over the literal element - as it is for a hit test. If the mouse pointer is instead over a child element, in particular over elements that are part of an element's deeper template and compositing, this property will be `false`. Unless you know how a control is composited (for example, you use this property in a custom control template for a control that you define), this property might return unexpected results. For most scenarios where you are not authoring controls, use <xref:System.Windows.UIElement.IsMouseOver%2A> instead.  
   
  If the mouse is captured by this element, and this property is `true` at time of capture, this property will continue to return `true` until mouse capture is lost and the pointer is not over its bounds.  
   
@@ -11903,7 +11903,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  The <xref:System.Windows.UIElement.PreviewTextInput> event allows a component or application to listen for text input in a device-independent manner. The keyboard is the primary means of <xref:System.Windows.UIElement.PreviewTextInput>; but speech, handwriting, and other input devices can also generate <xref:System.Windows.UIElement.PreviewTextInput>.  
   
- Because of key combinations—either in default keyboards or through input method editors—multiple key events may raise just one text input event.  
+ Because of key combinations - either in default keyboards or through input method editors - multiple key events may raise just one text input event.  
   
  This event creates an alias for the <xref:System.Windows.Input.TextCompositionManager.PreviewTextInput?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.UIElement.PreviewTextInput> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.PreviewTextInput> event are attached to the underlying <xref:System.Windows.Input.TextCompositionManager.PreviewTextInput?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
@@ -13782,7 +13782,7 @@ Image with an Elliptical Clip Region
   
  The <xref:System.Windows.UIElement.TextInput> event allows a component or application to listen for text input in a device-independent manner. The keyboard is the primary means of <xref:System.Windows.UIElement.TextInput>, but speech, handwriting, and other input devices can also raise <xref:System.Windows.UIElement.TextInput>.  
   
- Because of key combinations—either in default keyboards or through input method editors—multiple key events might raise just one text input event.  
+ Because of key combinations - either in default keyboards or through input method editors - multiple key events might raise just one text input event.  
   
  This event creates an alias for the <xref:System.Windows.Input.TextCompositionManager.TextInput?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.UIElement.TextInput> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.TextInput> event are attached to the underlying <xref:System.Windows.Input.TextCompositionManager.TextInput?displayProperty=nameWithType> attached event and receive the same event data instance.  
   

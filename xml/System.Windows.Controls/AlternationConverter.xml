@@ -130,7 +130,7 @@
         <param name="parameter">The converter parameter to use.</param>
         <param name="culture">The culture to use in the converter.</param>
         <summary>Converts an object in the <see cref="P:System.Windows.Controls.AlternationConverter.Values" /> list to an integer.</summary>
-        <returns>The index of <paramref name="o" /> if it is in <see cref="P:System.Windows.Controls.AlternationConverter.Values" />, or –1 if o does not exist in <see cref="P:System.Windows.Controls.AlternationConverter.Values" />.</returns>
+        <returns>The index of <paramref name="o" /> if it is in <see cref="P:System.Windows.Controls.AlternationConverter.Values" />, or -1 if o does not exist in <see cref="P:System.Windows.Controls.AlternationConverter.Values" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

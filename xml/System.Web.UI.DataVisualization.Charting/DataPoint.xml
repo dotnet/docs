@@ -480,7 +480,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- All chart types can be displayed as either scatter plots or as non-scatter plots, because both X-values and Y-values can be set. Setting an X-value will result in a scatter plot, whereas not setting this property—which is equivalent to setting it to zero—will result in a non-scatter plot. For example, to draw a point chart type, add data points that have X-values of zero. To display a traditional scatter chart, add data points that have X-values other than zero.  
+ All chart types can be displayed as either scatter plots or as non-scatter plots, because both X-values and Y-values can be set. Setting an X-value will result in a scatter plot, whereas not setting this property - which is equivalent to setting it to zero - will result in a non-scatter plot. For example, to draw a point chart type, add data points that have X-values of zero. To display a traditional scatter chart, add data points that have X-values other than zero.  
   
  The X-values of data points are not required to be set. If they are not set, data points are plotted sequentially, using their index values from the <xref:System.Web.UI.DataVisualization.Charting.DataPointCollection>.  
   

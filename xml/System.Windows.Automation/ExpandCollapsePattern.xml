@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Aggregate controls—built with child objects that provide the UI for expand/collapse functionality—must support the <xref:System.Windows.Automation.ExpandCollapsePattern> control pattern while their child elements do not. For example, a combo box control is built with a combination of list box, button, and edit controls, but it is only the parent combo box that must support the <xref:System.Windows.Automation.ExpandCollapsePattern>.  
+ Aggregate controls - built with child objects that provide the UI for expand/collapse functionality - must support the <xref:System.Windows.Automation.ExpandCollapsePattern> control pattern while their child elements do not. For example, a combo box control is built with a combination of list box, button, and edit controls, but it is only the parent combo box that must support the <xref:System.Windows.Automation.ExpandCollapsePattern>.  
   
 > [!NOTE]
 >  A menu control, even though an aggregate of individual menu items, is an exception to this rule. The menu items support the <xref:System.Windows.Automation.ExpandCollapsePattern> control pattern, but the parent menu control does not. A similar exception applies to the tree and tree item controls.  

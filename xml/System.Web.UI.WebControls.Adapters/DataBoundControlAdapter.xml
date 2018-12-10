@@ -190,7 +190,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>Override the <see cref="M:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter.PerformDataBinding(System.Collections.IEnumerable)" /> method when specialized binding logic is required for the target browser—for example, when item names must be constructed differently than for the general usage of the control.  
+          <para>Override the <see cref="M:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter.PerformDataBinding(System.Collections.IEnumerable)" /> method when specialized binding logic is required for the target browser - for example, when item names must be constructed differently than for the general usage of the control.  
   
  The <see cref="M:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter.PerformDataBinding(System.Collections.IEnumerable)" /> base method calls <see cref="M:System.Web.UI.WebControls.DataBoundControl.PerformDataBinding(System.Collections.IEnumerable)" />. You should call the <see cref="M:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter.PerformDataBinding(System.Collections.IEnumerable)" /> base method only if you require the data binding functionality of the <see cref="T:System.Web.UI.WebControls.DataBoundControl" />.</para>
         </block>

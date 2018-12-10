@@ -510,7 +510,7 @@ public void CreateSecondLegend()
  This is useful when you do not want to have missing data points for intervals that you know you will not have data for, such as weekends.  
   
 > [!IMPORTANT]
->  If you are displaying multiple series and at least one series uses indexed X-values, then all series must be aligned—that is, have the same number of data points—and the corresponding points must have the same X-values.  
+>  If you are displaying multiple series and at least one series uses indexed X-values, then all series must be aligned - that is, have the same number of data points - and the corresponding points must have the same X-values.  
   
  ]]></format>
         </remarks>

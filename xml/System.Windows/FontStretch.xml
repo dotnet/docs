@@ -34,7 +34,7 @@
 ## Remarks  
  A font stretch describes the degree to which a font form is stretched from its normal aspect ratio, which is the original width to height ratio specified for the glyphs in the font.  
   
- The <xref:System.Windows.FontStretches> values correspond to the `usWidthClass` definition in the [!INCLUDE[TLA2#tla_opentype](~/includes/tla2sharptla-opentype-md.md)] specification. The `usWidthClass` represents an integer value between 1 and 9—lower values indicate narrower widths; higher values indicate wider widths.  
+ The <xref:System.Windows.FontStretches> values correspond to the `usWidthClass` definition in the [!INCLUDE[TLA2#tla_opentype](~/includes/tla2sharptla-opentype-md.md)] specification. The `usWidthClass` represents an integer value between 1 and 9 - lower values indicate narrower widths; higher values indicate wider widths.  
   
 |Font stretch|usWidthClass|% of normal|  
 |------------------|------------------|-----------------|  

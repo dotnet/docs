@@ -1,5 +1,6 @@
 ---
-title: "Jagged Arrays (C# Programming Guide)"
+title: "Jagged Arrays - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "jagged arrays [C#]"

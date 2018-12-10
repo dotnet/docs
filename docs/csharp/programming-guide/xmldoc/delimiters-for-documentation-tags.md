@@ -1,5 +1,6 @@
 ---
-title: "Delimiters for Documentation Tags (C# Programming Guide)"
+title: "Delimiters for Documentation Tags - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "XML [C#], delimiters"

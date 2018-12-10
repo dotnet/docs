@@ -12,7 +12,7 @@ So far, you've followed the steps in [Build a C# Hello World Application with .N
 
 *Debug* and *Release* are two of Visual Studio's default build configurations. The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile your application in **Debug** mode.
 
-   ![Visual Studio toolbar](./media/debugging-with-visual-studio/toolbar1.png)
+   ![default Visual Studio toolbar with debug highlighted](./media/debugging-with-visual-studio/visual-studio-toolbar-debug.png)
 
 You should always begin by testing your program in Debug mode. Debug mode turns off most compiler optimizations and provides richer information during the build process.
 
@@ -25,7 +25,7 @@ Run your program in Debug mode and try a few debugging features:
 
    Set a breakpoint on the line that reads `Console.WriteLine($"\nHello, {name}, on {date:d} at {date:t}!");` by clicking in the left margin of the code window on that line or by choosing the **Debug** > **Toggle Breakpoint** menu item with the line selected. As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
 
-   ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio/setbreakpoint.png)
+   ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio/set-breakpoint-in-editor.png)
 
 1. Run the program in Debug mode by selecting the **HelloWorld** button with the green arrow on the toolbar, pressing F5, or choosing **Debug** > **Start Debugging**.
 
@@ -43,11 +43,11 @@ Run your program in Debug mode and try a few debugging features:
 
    The **Immediate Window** displays the value of the string variable and the properties of the <xref:System.DateTime> value. In addition, the value of the variables is updated in the **Autos** and **Locals** windows.
 
-   ![Autos window and Immediate Window](./media/debugging-with-visual-studio/autosimmediate.png)
+   ![Autos window and Immediate Window](./media/debugging-with-visual-studio/autos-immediate-window.png)
 
 1. Continue program execution by selecting the **Continue** button in the toolbar or by selecting the **Debug** > **Continue** menu item. The values displayed in the console window correspond to the changes you made in the **Immediate Window**.
 
-   ![Console window showing the typed value Jack at the What is your name? prompt followed by Hello Gracie on 11/1/2016 at 11:59am](./media/debugging-with-visual-studio/changed.png)
+   ![Console window showing the value Jack at the What is your name? prompt followed by Hello Gracie](./media/debugging-with-visual-studio/debug-changed-value.png)
 
 1. Press any key to exit the application and end Debug mode.
 # [Visual Basic](#tab/vb)
@@ -55,7 +55,7 @@ Run your program in Debug mode and try a few debugging features:
 
    Set a breakpoint on the line that reads `Console.WriteLine(vbCrLf + $"Hello, {name}, on {currentDate:d} at {currentDate:t}!")` by clicking in the left margin of the code window on that line or by choosing the **Debug** > **Toggle Breakpoint** menu item with the line selected. As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
 
-   ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio/vb-setbreakpoint.png)
+   ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio/vb-set-breakpoint-in-editor.png)
 
 1. Run the program in Debug mode by selecting the **HelloWorld** button with the green arrow on the toolbar, pressing F5, or choosing **Debug** > **Start Debugging**.
 
@@ -63,7 +63,7 @@ Run your program in Debug mode and try a few debugging features:
 
 1. Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes. The **Autos** window displays the values of variables that are used around the current line. The **Locals** window (which you can view by clicking the **Locals** tab) displays the values of variables that are defined in the currently executing method.
 
-   ![Visual Studio application window](./media/debugging-with-visual-studio/vb-break.png)
+   ![Visual Studio application window at breakpoint](./media/debugging-with-visual-studio/vb-stop-at-breakpoint.png)
 
 1. You can change the value of the variables to see how it affects your program. If the **Immediate Window** is not visible, display it by choosing the **Debug** > **Windows** > **Immediate** menu item. The **Immediate Window** lets you interact with the application you're debugging.
 
@@ -73,7 +73,7 @@ Run your program in Debug mode and try a few debugging features:
 
 1. Continue program execution by selecting the **Continue** button in the toolbar or by selecting the **Debug** > **Continue** menu item. The values displayed in the console window correspond to the changes you made in the **Immediate Window**.
 
-   ![Console window showing the changed values entered in the Immediate Window](./media/debugging-with-visual-studio/changed.png)
+   ![Console window showing the changed values entered in the Immediate Window](./media/debugging-with-visual-studio/debug-changed-value.png)
 
 1. Press any key to exit the application and end Debug mode.
 ---
@@ -87,7 +87,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 # [C#](#tab/csharp)
 1. Right-click on the red dot that represents the breakpoint. On the context menu, select **Conditions** to open the **Breakpoint Settings** dialog. Check the box for **Conditions**.
 
-   ![Breakpoint settings panel](./media/debugging-with-visual-studio/breakpointsettings.png)
+   ![Editor showing breakpoint settings panel - C#](./media/debugging-with-visual-studio/breakpoint-settings.png)
 
 1. For the **Conditional Expression** replace "e.g. x == 5" with the following:
 
@@ -113,7 +113,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
    ? name == String.Empty
    ```
 
-   ![Immediate Window returning a value of true after the statement is executed](./media/debugging-with-visual-studio/emptystring.png)
+   ![Immediate Window returning a value of true after the statement is executed - C#](./media/debugging-with-visual-studio/immediate-window-output.png)
 
 1. Select the **Continue** button on the toolbar to continue program execution.
 
@@ -123,7 +123,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 # [Visual Basic](#tab/vb)
 1. Right-click on the red dot that represents the breakpoint. On the context menu, select **Conditions** to open the **Breakpoint Settings** dialog. Check the box for **Conditions**.
 
-   ![Breakpoint settings panel](./media/debugging-with-visual-studio/vb-breakpointsettings.png)
+   ![Editor showing breakpoint settings panel - Visual Basic](./media/debugging-with-visual-studio/vb-breakpointsettings.png)
 
 1. For the **Conditional Expression** replace "e.g. x = 5" with the following:
 
@@ -148,7 +148,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
    ```vb
    ? String.IsNullOrEmpty(name)
    ```
-  ![Immediate Window returning a value of true after the statement is executed](./media/debugging-with-visual-studio/vb-emptystring.png)
+  ![Immediate Window returning a value of true after the statement is executed - Visual Basic](./media/debugging-with-visual-studio/vb-immediate-window-output.png)
 
 1. Select the **Continue** button on the toolbar to continue program execution.
 
@@ -163,13 +163,13 @@ Visual Studio also allows you to step line by line through a program and monitor
 # [C#](#tab/csharp)
 1. On the menu bar, choose **Debug** > **Step Into** or press the F11 key. Visual Studio highlights and displays an arrow beside the next line of execution.
 
-   ![Visual Studio window](./media/debugging-with-visual-studio/stepinto1.png)
+   ![Visual Studio step into method - C#](./media/debugging-with-visual-studio/step-into-method.png)
 
    At this point, the **Autos** window shows that your program has defined only one variable, `args`. Because you haven't passed any command-line arguments to the program, its value is an empty string array. In addition, Visual Studio has opened a blank console window.
 
 1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio now highlights the next line of execution. As the figure shows, it has taken less than one millisecond to execute the code between the last statement and this one. `args` remains the only declared variable, and the console window remains blank.
 
-   ![Visual Studio window](./media/debugging-with-visual-studio/stepinto2.png)
+   ![Visual Studio step in method source - C#](./media/debugging-with-visual-studio/step-into-source-method.png)
 
 1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio highlights the statement that includes the `name` variable assignment. The **Autos** window shows that `name` is `null`, and the console window displays the string "What is your name?".
 
@@ -187,13 +187,13 @@ Visual Studio also allows you to step line by line through a program and monitor
 # [Visual Basic](#tab/vb)
 1. On the menu bar, choose **Debug** > **Step Into** or press the F11 key. Visual Studio highlights and displays an arrow beside the next line of execution.
 
-   ![Visual Studio window](./media/debugging-with-visual-studio/vb-stepinto1.png)
+   ![Visual Studio step into method - Visual Basic](./media/debugging-with-visual-studio/vb-step-into-method.png)
 
    At this point, because you haven't passed any command-line arguments to the program, the **Autos** window shows that the value of the `args` variable is an empty string array. In addition, Visual Studio has opened a blank console window.
 
 1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio now highlights the next line of execution. As the figure shows, it has taken less than one millisecond to execute the code between the last statement and this one. `args` remains the only declared variable, and the console window remains blank.
 
-   ![Visual Studio window](./media/debugging-with-visual-studio/vb-stepinto2.png)
+   ![Visual Studio step into method source - Visual Basic](./media/debugging-with-visual-studio/vb-step-into-source-method.png)
 
 1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio highlights the statement that includes the `name` variable assignment. The **Autos** window shows that `name` is `Nothing`, and the console window displays the string "What is your name?".
 
@@ -216,7 +216,7 @@ Once you've tested the Debug build of your application, you should also compile 
 
 To build and test the Release version of your console application, change the build configuration on the toolbar from **Debug** to **Release**.
 
-![Image](./media/debugging-with-visual-studio/toolbar2.png)
+![default Visual Studio toolbar with debug highlighted](./media/debugging-with-visual-studio/visual-studio-toolbar-release.png)
 
 When you press F5 or choose **Build Solution** from the **Build** menu, Visual Studio compiles the Release version of your console application. You can test it as you did the Debug version of the application.
 

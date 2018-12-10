@@ -1,5 +1,6 @@
 ---
-title: "Comparison Between Properties and Indexers (C# Programming Guide)"
+title: "Comparison Between Properties and Indexers - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "properties [C#], vs. indexers"

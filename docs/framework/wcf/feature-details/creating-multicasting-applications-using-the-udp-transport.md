@@ -9,7 +9,7 @@ Multicasting applications send small messages to a large number of recipients at
 ## Implementing a Multicast Application  
  To implement a multicast application, define a service contract and for each software component that needs to respond to the multicast messages, implement the service contract. For example, a stock ticker application might define a service contract:  
   
-```  
+```csharp
 // Shared contracts between the client and the service  
 [ServiceContract]
 interface IStockTicker
@@ -37,7 +37,7 @@ class StockInfo
   
  Each application that wants to receive multicast messages must host a service that exposes this interface.  For example, here is a code sample that illustrates how to receive multicast messages:  
   
-```  
+```csharp
 // Service Address
 string serviceAddress = "soap.udp://224.0.0.1:40000";
 // Binding
@@ -57,7 +57,7 @@ Console.ReadLine();
   
  In this type of a scenario it is the client that actually sends out multicast messages. Each service that is listening at the correct UDP address will receive the multicast messages. Here is an example of a client that sends out multicast messages:  
   
-```  
+```csharp
 // Multicast Address
 string serviceAddress = "soap.udp://224.0.0.1:40000";
 
@@ -76,7 +76,7 @@ while (true)
 {
     // This will continue to mulicast stock information
     proxy.SendStockInfo(GetStockInfo());
-    Console.WriteLine(String.Format("sent stock info at {0}", DateTime.Now));
+    Console.WriteLine($"sent stock info at {DateTime.Now}");
     // Wait for one second before sending another update
     System.Threading.Thread.Sleep(new TimeSpan(0, 0, 1));
 }
@@ -90,7 +90,7 @@ while (true)
 ### Two-way Multicast Messaging  
  While multicast messages are generally one-way, the UdpBinding does support request/reply message exchange. Messages sent using the UDP transport contain both a From and To address. Care must be taken when using the From address as it could be maliciously changed en-route.  The address can be checked using the following code:  
   
-```  
+```csharp
 if (address.AddressFamily == AddressFamily.InterNetwork)
 {
     // IPv4

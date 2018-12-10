@@ -9,9 +9,9 @@ ms.assetid: 0db12548-82cb-4903-ac88-13103d70aa77
 
 ## Introduction
 
-This tutorial teaches you a number of features in .NET Core and the C# language. You’ll learn:
+This tutorial teaches you features in .NET Core and the C# language. You’ll learn:
 
-*	How to generate sequences with LINQ
+*	How to generate sequences with LINQ.
 *   How to write methods that can be easily used in LINQ queries.
 *   How to distinguish between eager and lazy evaluation.
 

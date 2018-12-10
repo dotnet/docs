@@ -2,8 +2,8 @@
 title: .NET Core migration from project.json
 description: Learn how to migrate an older .NET Core project using project.json
 author: blackdwarf
-ms.author: mairaw
 ms.date: 07/19/2017
+ms.custom: "seodec18"
 ---
 # Migrating .NET Core projects from project.json
 

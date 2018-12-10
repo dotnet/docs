@@ -1,5 +1,6 @@
 ---
-title: "How to: Implement Custom Event Accessors (C# Programming Guide)"
+title: "How to: Implement Custom Event Accessors - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "accessors [C#], event accessors"

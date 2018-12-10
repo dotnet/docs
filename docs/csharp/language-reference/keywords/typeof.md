@@ -1,5 +1,7 @@
 ---
-title: "typeof (C# Reference)"
+title: "typeof - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "typeof"
@@ -10,7 +12,7 @@ ms.assetid: 0c08d880-515e-46bb-8cd2-48b8dd62c08d
 ---
 # typeof (C# Reference)
 
-Used to obtain the `System.Type` object for a type. A `typeof` expression takes the following form:
+Used to obtain the <xref:System.Type?displayProperty=nameWithType> object for a type. A `typeof` expression takes the following form:
 
 ```csharp
 System.Type type = typeof(int);

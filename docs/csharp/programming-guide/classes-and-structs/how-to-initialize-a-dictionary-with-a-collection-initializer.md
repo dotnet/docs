@@ -1,5 +1,6 @@
 ---
-title: "How to initialize a dictionary with a collection initializer (C# Programming Guide)"
+title: "How to initialize a dictionary with a collection initializer - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "collection initializers [C#], with Dictionary"

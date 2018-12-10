@@ -1,5 +1,6 @@
 ---
-title: "How to: Write to a Text File (C# Programming Guide)"
+title: "How to: Write to a Text File - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
   - "TextWriter.WriteLine"

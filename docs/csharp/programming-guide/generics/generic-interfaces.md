@@ -1,5 +1,6 @@
 ---
-title: "Generic Interfaces (C# Programming Guide)"
+title: "Generic Interfaces - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, generic interfaces"

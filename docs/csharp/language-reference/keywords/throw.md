@@ -1,5 +1,7 @@
 ---
-title: "throw (C# Reference)"
+title: "throw - C# Reference"
+ms.custom: seodec18
+
 ms.date: 03/02/2015
 f1_keywords: 
   - "throw"

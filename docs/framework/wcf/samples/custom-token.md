@@ -22,7 +22,7 @@ This sample demonstrates how to add a custom token implementation into a Windows
 ## Client Authentication Using a Custom Security Token
  The service exposes a single endpoint that is programmatically created using `BindingHelper` and `EchoServiceHost` classes. The endpoint consists of an address, a binding, and a contract. The binding is configured with a custom binding using `SymmetricSecurityBindingElement` and `HttpTransportBindingElement`. This sample sets the `SymmetricSecurityBindingElement` to use a service's X.509 certificate to protect the symmetric key during transmission and to pass a custom `CreditCardToken` in a WS-Security message header as a signed and encrypted security token. The behavior specifies the service credentials that are to be used for client authentication and also information about the service X.509 certificate.
 
-```
+```csharp
 public static class BindingHelper
 {
     public static Binding CreateCreditCardBinding()
@@ -43,7 +43,7 @@ public static class BindingHelper
 
  To consume a credit card token in the message, the sample uses custom service credentials to provide this functionality. The service credentials class is located in the `CreditCardServiceCredentials` class and is added to the behaviors collections of the service host in the `EchoServiceHost.InitializeRuntime` method.
 
-```
+```csharp
 class EchoServiceHost : ServiceHost
 {
     string creditCardFile;
@@ -58,7 +58,6 @@ class EchoServiceHost : ServiceHost
         }
 
         creditCardFile = String.Format("{0}\\{1}", System.Web.Hosting.HostingEnvironment.ApplicationPhysicalPath, creditCardFile);
-
     }
 
     override protected void InitializeRuntime()
@@ -80,13 +79,12 @@ class EchoServiceHost : ServiceHost
 
  The client endpoint is configured in a similar manner as the service endpoint. The client uses the same `BindingHelper` class to create a binding. The rest of the setup is located in the `Client` class. The client also sets information to be contained in the `CreditCardToken` and information about the service X.509 certificate in the setup code by adding a `CreditCardClientCredentials` instance with the proper data to the client endpoint behaviors collection. The sample uses X.509 certificate with subject name set to `CN=localhost` as the service certificate.
 
-```
+```csharp
 Binding creditCardBinding = BindingHelper.CreateCreditCardBinding();
 EndpointAddress serviceAddress = new EndpointAddress("http://localhost/servicemodelsamples/service.svc");
 
 // Create a client with given client endpoint configuration
-channelFactory =
-new ChannelFactory<IEchoService>(creditCardBinding, serviceAddress);
+channelFactory = new ChannelFactory<IEchoService>(creditCardBinding, serviceAddress);
 
 // configure the credit card credentials on the channel factory
 CreditCardClientCredentials credentials =
@@ -113,7 +111,7 @@ channelFactory.Close();
 
  The next section describes what must be done to enable a custom token to be transmitted over the wire and consumed by a WCF endpoint.
 
-```
+```csharp
 class CreditCardToken : SecurityToken
 {
     CreditCardInfo cardInfo;
@@ -155,7 +153,7 @@ class CreditCardToken : SecurityToken
 
  On the client, the `CreditCardSecurityTokenSerializer` class writes the information contained in the security token object representation into the XML writer.
 
-```
+```csharp
 public class CreditCardSecurityTokenSerializer : WSSecurityTokenSerializer
 {
     public CreditCardSecurityTokenSerializer(SecurityTokenVersion version) : base() { }
@@ -251,7 +249,7 @@ public class CreditCardSecurityTokenSerializer : WSSecurityTokenSerializer
 
  On the service, the functionality resides in the `CreditCardServiceCredentials`, `CreditCardServiceCredentialsSecurityTokenManager`, `CreditCardTokenAuthenticator` and `CreditCardTokenAuthorizationPolicy` classes.
 
-```
+```csharp
     public class CreditCardClientCredentials : ClientCredentials
     {
         CreditCardInfo creditCardInfo;
@@ -281,7 +279,7 @@ public class CreditCardSecurityTokenSerializer : WSSecurityTokenSerializer
         }
     }
 
-public class CreditCardClientCredentialsSecurityTokenManager : ClientCredentialsSecurityTokenManager
+    public class CreditCardClientCredentialsSecurityTokenManager : ClientCredentialsSecurityTokenManager
     {
         CreditCardClientCredentials creditCardClientCredentials;
 
@@ -336,7 +334,7 @@ public class CreditCardClientCredentialsSecurityTokenManager : ClientCredentials
         }
     }
 
-public class CreditCardServiceCredentials : ServiceCredentials
+    public class CreditCardServiceCredentials : ServiceCredentials
     {
         string creditCardFile;
 
@@ -365,8 +363,8 @@ public class CreditCardServiceCredentials : ServiceCredentials
         }
     }
 
-public class CreditCardServiceCredentialsSecurityTokenManager : ServiceCredentialsSecurityTokenManager
-{
+    public class CreditCardServiceCredentialsSecurityTokenManager : ServiceCredentialsSecurityTokenManager
+    {
         CreditCardServiceCredentials creditCardServiceCredentials;
 
         public CreditCardServiceCredentialsSecurityTokenManager(CreditCardServiceCredentials creditCardServiceCredentials)
@@ -496,12 +494,11 @@ public class CreditCardServiceCredentialsSecurityTokenManager : ServiceCredentia
 ## Displaying the Callers' Information
  To display the caller's information, use the `ServiceSecurityContext.Current.AuthorizationContext.ClaimSets` as shown in the following sample code. The `ServiceSecurityContext.Current.AuthorizationContext.ClaimSets` contains authorization claims associated with the current caller. The claims are supplied by the `CreditCardToken` class in its `AuthorizationPolicies` collection.
 
-```
+```csharp
 bool TryGetStringClaimValue(ClaimSet claimSet, string claimType, out string claimValue)
 {
     claimValue = null;
-    IEnumerable<Claim> matchingClaims = claimSet.FindClaims(claimType,
-        Rights.PossessProperty);
+    IEnumerable<Claim> matchingClaims = claimSet.FindClaims(claimType, Rights.PossessProperty);
     if (matchingClaims == null)
         return false;
     IEnumerator<Claim> enumerator = matchingClaims.GetEnumerator();
@@ -526,9 +523,7 @@ string GetCallerCreditCardNumber()
                  {
                      issuer = "Unknown";
                  }
-                 return String.Format(
-                   "Credit card '{0}' issued by '{1}'",
-                   creditCardNumber, issuer);
+                 return $"Credit card '{creditCardNumber}' issued by '{issuer}'";
         }
     }
     return "Credit card is not known";

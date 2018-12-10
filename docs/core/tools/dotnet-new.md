@@ -1,8 +1,6 @@
 ---
-title: dotnet new command - .NET Core CLI
+title: dotnet new command
 description: The dotnet new command creates new .NET Core projects based on the specified template.
-author: mairaw
-ms.author: mairaw
 ms.date: 10/24/2018
 ---
 # dotnet new

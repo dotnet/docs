@@ -1,5 +1,6 @@
 ---
-title: "How to: Provide a Progress Dialog Box for File Operations (C# Programming Guide)"
+title: "How to: Provide a Progress Dialog Box for File Operations - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "progress dialog [C#]"

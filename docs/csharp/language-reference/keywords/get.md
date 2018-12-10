@@ -1,5 +1,7 @@
 ---
-title: "get (C# Reference)"
+title: "get - C# Reference"
+ms.custom: seodec18
+
 ms.date: 03/10/2017
 f1_keywords: 
   - "get_CSharpKeyword"

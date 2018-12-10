@@ -249,7 +249,7 @@ Standard date and time format strings can be used with both <xref:System.DateTim
   
 -   <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType> date and time values have no time zone information.  
   
- Because the O" or "o" standard format specifier conforms to an international standard, the formatting or parsing operation that uses the specifier always uses the invariant culture and the Gregorian calendar.  
+ Because the "O" or "o" standard format specifier conforms to an international standard, the formatting or parsing operation that uses the specifier always uses the invariant culture and the Gregorian calendar.  
   
  Strings that are passed to the `Parse`, `TryParse`, `ParseExact`, and `TryParseExact` methods of <xref:System.DateTime> and <xref:System.DateTimeOffset> can be parsed by using the "O" or "o" format specifier if they are in one of these formats. In the case of <xref:System.DateTime> objects, the parsing overload that you call should also include a `styles` parameter with a value of <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType>. Note that if you call a parsing method with the custom format string that corresponds to the "O" or "o" format specifier, you won't get the same results as "O" or "o". This is because parsing methods that use a custom format string can't parse the string representation of date and time values that lack a time zone component or use "Z" to indicate UTC.  
   

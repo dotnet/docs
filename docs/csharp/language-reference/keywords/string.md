@@ -59,8 +59,8 @@ for (int i = 0; i < str.Length; i++)
 {
   Console.Write(str[i] + " ");
 }
-// Output: test
-```
+// Output: t e s t
+``` 
 
 String literals are of type `string` and can be written in two forms, quoted and @-quoted. Quoted string literals are enclosed in double quotation marks ("):
 

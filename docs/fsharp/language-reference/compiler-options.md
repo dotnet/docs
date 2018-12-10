@@ -1,7 +1,7 @@
 ---
 title: Compiler Options (F#)
 description: Use F# compiler command-line options to control the compilation of your F# apps and libraries.
-ms.date: 05/16/2016
+ms.date: 12/10/2018
 ---
 # Compiler Options
 
@@ -17,7 +17,7 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |---------------|-----------|
 |`-a filename.fs`|Generates a library from the specified file. This option is a short form of `--target:library filename.fs`.|
 |`--baseaddress:address`|Specifies the preferred base address at which to load a DLL.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;baseaddress &#40;C&#35; Compiler Options&#41;](https://msdn.microsoft.com/library/2fdbz5xd.aspx).|
-|`--codepage:id`|Specifies which codepage to use during compilation if the required page is not the current default codepage for the system.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;codepage &#40;C&#35; Compiler Options&#41;](https://msdn.microsoft.com/library/w0kyekyh.aspx).|
+|`--codepage:id`|Specifies which code page to use during compilation if the required page isn't the current default code page for the system.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;code pages &#40;C&#35; Compiler Options&#41;](windows/desktop/intl/code-pages).|
 |`--consolecolors`|Specifies that errors and warnings use color-coded text on the console.|
 |`--crossoptimize[+|-]`|Enables or disables cross-module optimizations.|
 |<code>--delaysign[+&#124;-]</code>|Delay-signs the assembly using only the public portion of the strong name key.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;delaysign &#40;C&#35; Compiler Options&#41;](https://msdn.microsoft.com/library/ta1sxwy8.aspx).|

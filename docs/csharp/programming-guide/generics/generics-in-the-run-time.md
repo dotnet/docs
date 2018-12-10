@@ -1,6 +1,6 @@
 ---
-title: "Generics in the Run Time - C# Programming Guide
-ms.custom:seodec18
+title: "Generics in the Run Time - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "generics [C#], at run time"

@@ -1,6 +1,6 @@
 ---
-title: "&lt;permission&gt; - C# Programming Guide
-ms.custom:seodec18
+title: "&lt;permission&gt; - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
   - "permission"

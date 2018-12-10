@@ -1,6 +1,6 @@
 ---
-title: "Expressions - C# Programming Guide
-ms.custom:seodec18
+title: "Expressions - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 05/11/2017
 helpviewer_keywords: 
   - "expressions [C#]"

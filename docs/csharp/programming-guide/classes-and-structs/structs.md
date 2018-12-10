@@ -1,6 +1,6 @@
 ---
-title: "Structs - C# Programming Guide
-ms.custom:seodec18
+title: "Structs - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 08/21/2018
 helpviewer_keywords: 
   - "C# language, structs"

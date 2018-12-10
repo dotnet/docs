@@ -1,6 +1,6 @@
 ---
-title: "Using Indexers - C# Programming Guide
-ms.custom:seodec18
+title: "Using Indexers - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 10/03/2018
 helpviewer_keywords: 
   - "indexers [C#], about indexers"

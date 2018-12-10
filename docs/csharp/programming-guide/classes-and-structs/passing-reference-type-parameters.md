@@ -1,6 +1,6 @@
 ---
-title: "Passing Reference-Type Parameters - C# Programming Guide
-ms.custom:seodec18
+title: "Passing Reference-Type Parameters - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "method parameters [C#], reference types"

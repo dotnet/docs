@@ -1,6 +1,6 @@
 ---
-title: "Manipulating Pointers - C# Programming Guide
-ms.custom:seodec18
+title: "Manipulating Pointers - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "pointers [C#], manipulation"

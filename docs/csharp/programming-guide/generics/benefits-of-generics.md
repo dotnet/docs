@@ -1,6 +1,6 @@
 ---
-title: "Benefits of Generics - C# Programming Guide
-ms.custom:seodec18
+title: "Benefits of Generics - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "generics [C#], benefits"

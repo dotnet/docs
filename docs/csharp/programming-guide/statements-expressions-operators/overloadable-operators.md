@@ -1,6 +1,6 @@
 ---
-title: "Overloadable operators - C# Programming Guide
-ms.custom:seodec18
+title: "Overloadable operators - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 08/27/2018
 helpviewer_keywords: 
   - "C# language, operator overloading"

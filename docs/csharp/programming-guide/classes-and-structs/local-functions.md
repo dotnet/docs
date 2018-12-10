@@ -1,6 +1,6 @@
 ---
-title: "Local functions - C# Programming Guide
-ms.custom:seodec18
+title: "Local functions - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 06/14/2017
 helpviewer_keywords: 
   - "local functions [C#]"

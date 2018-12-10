@@ -1,6 +1,6 @@
 ---
-title: "Inheritance - C# Programming Guide
-ms.custom:seodec18
+title: "Inheritance - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "abstract methods [C#]"

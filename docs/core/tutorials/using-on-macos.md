@@ -2,7 +2,6 @@
 title: Getting started with .NET Core on macOS
 description: This document provides the steps and workflow to create a .NET Core Solution using Visual Studio Code.
 author: bleroy
-ms.author: mairaw
 ms.date: 03/23/2017
 ms.custom: seodec18
 ---

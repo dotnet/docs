@@ -2,7 +2,6 @@
 title: Developing Libraries with Cross Platform Tools
 description: Learn how to create .NET Core libraries using the .NET Core CLI tools. You'll create a library that supports multiple frameworks.
 author: cartermp
-ms.author: mairaw
 ms.date: 05/01/2017
 ms.custom: seodec18
 ---

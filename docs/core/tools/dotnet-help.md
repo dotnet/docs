@@ -1,5 +1,5 @@
 ---
-title: dotnet help command - .NET Core CLI
+title: dotnet help command
 description: The dotnet help command shows more detailed documentation online for the specified command.
 ms.date: 12/04/2018
 ---

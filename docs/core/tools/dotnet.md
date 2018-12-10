@@ -1,8 +1,6 @@
 ---
-title: dotnet command - .NET Core CLI
+title: dotnet command
 description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.
-author: mairaw
-ms.author: mairaw
 ms.date: 06/04/2018
 ---
 # dotnet command

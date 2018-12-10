@@ -1,5 +1,5 @@
 ---
-title: dotnet build-server command - .NET Core CLI
+title: dotnet build-server command
 description: The dotnet build-server command interacts with servers started by a build.
 ms.date: 12/04/2018
 ---

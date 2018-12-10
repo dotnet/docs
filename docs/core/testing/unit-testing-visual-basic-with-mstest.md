@@ -6,6 +6,7 @@ ms.author: wiwagn
 ms.date: 09/01/2017
 dev_langs: 
   - "vb"
+ms.custom: "seodec18"
 ---
 # Unit testing Visual Basic .NET Core libraries using dotnet test and MStest
 

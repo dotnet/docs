@@ -111,7 +111,7 @@ module BananaHelpers =
         | Down -> b |> peelSides
 ```
 
-Note that the exception `DontSqueezeTheBananaException` and the class `Banana` both refer to each other.  Additionally, the module `BananaHelpers` and the class `Banana` also refer to each other.  This would not be possible to express in F# if you removed the `rec` keyword from the `MutualReferences` namespace.
+Note that the exception `DontSqueezeTheBananaException` and the class `Banana` both refer to each other.  Additionally, the module `BananaHelpers` and the class `Banana` also refer to each other. This wouldn't be possible to express in F# if you removed the `rec` keyword from the `MutualReferences` namespace.
 
 This feature is also available for top-level [Modules](modules.md).
 

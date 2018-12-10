@@ -9,7 +9,7 @@ You can get started with F# on your machine or online.
 
 ## Get started on your machine
 
-We have multiple guides on how to install and use F# for the first time on your machine.  You can use the following table to help in making a decision.
+There are multiple guides on how to install and use F# for the first time on your machine.  You can use the following table to help in making a decision:
 
 | OS | Prefer Visual Studio | Prefer Visual Studio Code | Prefer a command line |
 | -- |------------------------|--------------------------|-----------------------------|-------------------------|

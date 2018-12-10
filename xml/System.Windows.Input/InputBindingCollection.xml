@@ -370,7 +370,7 @@
       <Docs>
         <param name="value">The object to locate in the collection.</param>
         <summary>Searches for the first occurrence of the specified <see cref="T:System.Windows.Input.InputBinding" /> in his <see cref="T:System.Windows.Input.InputBindingCollection" />.</summary>
-        <returns>The index of the first occurrence of <paramref name="value" />, if found; otherwise, –1.</returns>
+        <returns>The index of the first occurrence of <paramref name="value" />, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

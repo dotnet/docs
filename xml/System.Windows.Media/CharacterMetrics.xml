@@ -97,7 +97,7 @@
   
 -   <xref:System.Windows.Media.CharacterMetrics.BottomSideBearing%2A>  
   
- The first two properties, <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A> and <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, are required. However, the other five properties are optional, and will default to zero if not specified. For example, if you specify the string value of "0.75,0.75,,0.1" for the `metrics` parameter, the <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A>, <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, and <xref:System.Windows.Media.CharacterMetrics.LeftSideBearing%2A> properties are set—the unspecified properties are set to zero.  
+ The first two properties, <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A> and <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, are required. However, the other five properties are optional, and will default to zero if not specified. For example, if you specify the string value of "0.75,0.75,,0.1" for the `metrics` parameter, the <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A>, <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, and <xref:System.Windows.Media.CharacterMetrics.LeftSideBearing%2A> properties are set - the unspecified properties are set to zero.  
   
  ]]></format>
         </remarks>
@@ -369,7 +369,7 @@
   
 -   <xref:System.Windows.Media.CharacterMetrics.BottomSideBearing%2A>  
   
- The first two properties, <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A> and <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, are required. However, the other five properties are optional, and will default to zero if not specified. For example, if you specify the string value of "`0.75,0.75,,0.1`" for the `metrics` parameter, the <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A>, <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, and <xref:System.Windows.Media.CharacterMetrics.LeftSideBearing%2A> properties are set—the unspecified properties are set to zero.  
+ The first two properties, <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A> and <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, are required. However, the other five properties are optional, and will default to zero if not specified. For example, if you specify the string value of "`0.75,0.75,,0.1`" for the `metrics` parameter, the <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A>, <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, and <xref:System.Windows.Media.CharacterMetrics.LeftSideBearing%2A> properties are set - the unspecified properties are set to zero.  
   
  ]]></format>
         </remarks>

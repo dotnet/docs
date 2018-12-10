@@ -1503,7 +1503,7 @@ Metric values of glyph characters
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Version strings vary significantly in format. To obtain the version as a numeric value, use the <xref:System.Windows.Media.GlyphTypeface.Version%2A>—do not attempt to parse the value of the <xref:System.Windows.Media.GlyphTypeface.VersionStrings%2A> property.  
+ Version strings vary significantly in format. To obtain the version as a numeric value, use the <xref:System.Windows.Media.GlyphTypeface.Version%2A> - do not attempt to parse the value of the <xref:System.Windows.Media.GlyphTypeface.VersionStrings%2A> property.  
   
  ]]></format>
         </remarks>

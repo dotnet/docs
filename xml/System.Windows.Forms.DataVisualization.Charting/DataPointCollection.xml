@@ -110,7 +110,7 @@
   
  Use the <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCollection.AddXY%2A> method overload if your data points require more than one Y-value.  
   
- If your data points do not need an X-value—that is, if you are creating non-scatter plots—use the <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCollection.AddY%2A> method instead.  
+ If your data points do not need an X-value - that is, if you are creating non-scatter plots - use the <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCollection.AddY%2A> method instead.  
   
  ]]></format>
         </remarks>
@@ -156,7 +156,7 @@
   
  In order for <xref:System.DateTime> formatting to have an effect, a value must be a <xref:System.DateTime> object.  
   
- If your data points do not need an X-value—that is, if you are creating non-scatter plots—use the <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCollection.AddY%2A> method instead  
+ If your data points do not need an X-value - that is, if you are creating non-scatter plots - use the <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCollection.AddY%2A> method instead  
   
  ]]></format>
         </remarks>
@@ -201,7 +201,7 @@
   
  Use the method definition that allows for an array of Y-values if your data points require more than one Y-value.  
   
- If your data points need an X-value—that is, if you are creating scatter plots—use one of the `AddXY` methods instead.  
+ If your data points need an X-value - that is, if you are creating scatter plots - use one of the `AddXY` methods instead.  
   
  ]]></format>
         </remarks>

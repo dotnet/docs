@@ -322,7 +322,7 @@ Example of a formatted text string
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When text is converted to a <xref:System.Windows.Media.Geometry> object, it is no longer a collection of characters—you cannot modify the characters in the text string. However, you can affect the appearance of the converted text by modifying its stroke and fill properties.  
+ When text is converted to a <xref:System.Windows.Media.Geometry> object, it is no longer a collection of characters - you cannot modify the characters in the text string. However, you can affect the appearance of the converted text by modifying its stroke and fill properties.  
   
  The following examples illustrate several ways of creating visual effects by modifying the stroke and fill of converted text.  
   
@@ -719,7 +719,7 @@ Example of an image brush applied to the stroke and highlight
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The following illustrated text uses the minimum text width for the source text, which displays as multiple lines. The minimum text width corresponds to the word that has the greatest width—in this case, the word "jumped". Notice that multiple words can appear on the same line, as long as their total width does not exceed the minimum text width.  
+ The following illustrated text uses the minimum text width for the source text, which displays as multiple lines. The minimum text width corresponds to the word that has the greatest width - in this case, the word "jumped". Notice that multiple words can appear on the same line, as long as their total width does not exceed the minimum text width.  
   
  ![Text Formatter using the minimum paragraph width](~/add/media/textformatter03.png "Text Formatter using the minimum paragraph width")  
 Minimum text width  

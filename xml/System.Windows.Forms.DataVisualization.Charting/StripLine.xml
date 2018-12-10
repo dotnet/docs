@@ -115,7 +115,7 @@
   
  To set a gradient for the strip line, set the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackColor%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BackSecondaryColor%2A> properties.  
   
- If you set this color to "transparent"—in other words, set the alpha value to 0—no color will be assigned to the background of the element. As a result, the background will be transparent.  
+ If you set this color to "transparent" - in other words, set the alpha value to 0 - no color will be assigned to the background of the element. As a result, the background will be transparent.  
   
  If the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.StripWidth%2A> property is set to 0.0, a line will be drawn and the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.BorderColor%2A> property will determine the color of the line, not this property.  
   
@@ -895,7 +895,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Interval types can be set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto>, in which case the type depends on: the X-value or Y-value types of the plotted <xref:System.Windows.Forms.DataVisualization.Charting.DataPoint> objects—depending on which axis the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine> objects belong to—and the axis scale.  
+ Interval types can be set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto>, in which case the type depends on: the X-value or Y-value types of the plotted <xref:System.Windows.Forms.DataVisualization.Charting.DataPoint> objects - depending on which axis the <xref:System.Windows.Forms.DataVisualization.Charting.StripLine> objects belong to - and the axis scale.  
   
  The <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.Interval%2A> property determines how often a strip or line is drawn.  
   

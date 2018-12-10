@@ -967,7 +967,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A `Shared` directive (when it is set to `true`) specifies that when an item is found in a dictionary, references to the object should always return the singleton instead of a new instance. This behavior is related to the concept that a dictionary might be used as a source for a shared content or template mechanism by particular frameworks that use XAML. `Shared` is not specified in [MS-XAML] but is part of the `x` namespace–defined behavior for XAML in WPF and .NET Framework version 3.0 and version 3.5.  
+ A `Shared` directive (when it is set to `true`) specifies that when an item is found in a dictionary, references to the object should always return the singleton instead of a new instance. This behavior is related to the concept that a dictionary might be used as a source for a shared content or template mechanism by particular frameworks that use XAML. `Shared` is not specified in [MS-XAML] but is part of the `x` namespace-defined behavior for XAML in WPF and .NET Framework version 3.0 and version 3.5.  
   
  ]]></format>
         </remarks>
@@ -1135,7 +1135,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A `SynchronousMode` directive (when set to `Async`) is used to specify that when a XAML file is loaded, the root node is processed first. The resulting object can be inserted even though its content is still processing. In this mode you can bypass the default XAML processing behavior of working from deepest node to the root. In the default processing logic for XAML, any caller that is waiting for the root object is blocked until the full parse is complete. `SynchronousMode` is not specified in [MS-XAML] but is part of the `x` namespace–defined behavior for XAML in WPF beginning in .NET Framework version 3.5 with SP1 (or any subsequent service pack).  
+ A `SynchronousMode` directive (when set to `Async`) is used to specify that when a XAML file is loaded, the root node is processed first. The resulting object can be inserted even though its content is still processing. In this mode you can bypass the default XAML processing behavior of working from deepest node to the root. In the default processing logic for XAML, any caller that is waiting for the root object is blocked until the full parse is complete. `SynchronousMode` is not specified in [MS-XAML] but is part of the `x` namespace-defined behavior for XAML in WPF beginning in .NET Framework version 3.5 with SP1 (or any subsequent service pack).  
   
  ]]></format>
         </remarks>

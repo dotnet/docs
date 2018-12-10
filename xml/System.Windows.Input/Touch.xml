@@ -28,7 +28,7 @@
    
   
 ## Examples  
- The following example enables you to create simple patterns on a <xref:System.Windows.Controls.Canvas> by dragging two fingers across a touchscreen. Each touch is represented by a <xref:System.Windows.Input.TouchDevice>.The pattern is created by drawing a line between the touch points provided by the touches. This example requires a Windows Touch–compatible screen.  
+ The following example enables you to create simple patterns on a <xref:System.Windows.Controls.Canvas> by dragging two fingers across a touchscreen. Each touch is represented by a <xref:System.Windows.Input.TouchDevice>.The pattern is created by drawing a line between the touch points provided by the touches. This example requires a Windows Touch-compatible screen.  
   
  The following markup creates the user interface, which consists of a <xref:System.Windows.Controls.Canvas> that is centered in a <xref:System.Windows.Controls.Grid>.  
   

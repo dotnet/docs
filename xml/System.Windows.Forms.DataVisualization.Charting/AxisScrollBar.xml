@@ -36,7 +36,7 @@
   
  The background color, button color and width of scrollbars can be set using this <xref:System.Windows.Forms.DataVisualization.Charting.AxisScrollBar> class.  
   
- Note that there are two main types of scrolling: large scrolling, which occurs when the end user clicks in the background of a scrollbar—that is, that part of a scrollbar not covered by the thumb; and small scrolling, which occurs when the end user clicks a left/right or up/down button. To control the large scrolling size, use the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.Size%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.ScaleView%2A> object. To set the small scrolling size, use the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.SmallScrollSize%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView> class.  
+ Note that there are two main types of scrolling: large scrolling, which occurs when the end user clicks in the background of a scrollbar - that is, that part of a scrollbar not covered by the thumb; and small scrolling, which occurs when the end user clicks a left/right or up/down button. To control the large scrolling size, use the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.Size%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.ScaleView%2A> object. To set the small scrolling size, use the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.SmallScrollSize%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView> class.  
   
  ]]></format>
     </remarks>

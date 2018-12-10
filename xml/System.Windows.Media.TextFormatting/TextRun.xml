@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A text run is a sequence of characters sharing a single property set. Any change to the format, such as font style, foreground color, font family, or any other formatting effect, breaks the text run. The following example illustrates how changes in formatting to a text string results in a series of text runs—each text run has a common set of formatting properties.  
+ A text run is a sequence of characters sharing a single property set. Any change to the format, such as font style, foreground color, font family, or any other formatting effect, breaks the text run. The following example illustrates how changes in formatting to a text string results in a series of text runs - each text run has a common set of formatting properties.  
   
  The <xref:System.Windows.Media.TextFormatting.TextRun> class is the root of a type hierarchy representing several types of text content processed by <xref:System.Windows.Media.TextFormatting.TextFormatter>. Each class that is derived from <xref:System.Windows.Media.TextFormatting.TextRun> represents a distinct type of text content.  
   

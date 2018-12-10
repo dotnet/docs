@@ -25,7 +25,7 @@
   
 -   The <xref:System.Windows.Forms.DataVisualization.Charting.CursorEventArgs.ChartArea%2A> property, which is used to get the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object that the event was raised for. The <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.Name> property gets the name of the chart area; other chart area properties can also be set.  
   
--   The <xref:System.Windows.Forms.DataVisualization.Charting.CursorEventArgs.Axis%2A> property, which is used to get the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object that the event was raised for. To determine the type of axis—X, X2, Y or Y2—use the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.AxisName%2A> property. Other axis properties can also be set.  
+-   The <xref:System.Windows.Forms.DataVisualization.Charting.CursorEventArgs.Axis%2A> property, which is used to get the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object that the event was raised for. To determine the type of axis - X, X2, Y or Y2 - use the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.AxisName%2A> property. Other axis properties can also be set.  
   
 -   The <xref:System.Windows.Forms.DataVisualization.Charting.CursorEventArgs.NewPosition%2A> property, which represents the position of a cursor along an axis, measured as an axis value, at the time the event was raised. The <xref:System.Windows.Forms.DataVisualization.Charting.CursorEventArgs.NewPosition%2A> property can be used to get the position of a cursor. In the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.CursorPositionChanging> event, this property can also be used to reset the cursor position.  
   
@@ -127,7 +127,7 @@
   
  This property can be used to:  
   
--   determine the type of axis—X, X2, Y or Y2—that the event is being raised for, using the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.AxisName%2A> property.  
+-   determine the type of axis - X, X2, Y or Y2 - that the event is being raised for, using the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.AxisName%2A> property.  
   
 -   get and set axis properties, such as <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor%2A>.  
   

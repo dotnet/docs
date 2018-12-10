@@ -19,7 +19,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A snapline's priority acts as a suggestion to visual designers about how to treat a snapline with respect to its peers. The layout engine uses a simple method of determining whether to display the snaplines for a control: only the highest priority snaplines, including those with a value of Always, are shown for each orientation—vertical or horizontal.  
+ A snapline's priority acts as a suggestion to visual designers about how to treat a snapline with respect to its peers. The layout engine uses a simple method of determining whether to display the snaplines for a control: only the highest priority snaplines, including those with a value of Always, are shown for each orientation - vertical or horizontal.  
   
  To set the priority of a snapline, a <xref:System.Windows.Forms.Design.Behavior.SnapLinePriority.Always> enumeration is specified when creating an instance of the <xref:System.Windows.Forms.Design.Behavior.SnapLinePriority> class.  
   

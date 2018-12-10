@@ -101,7 +101,7 @@
   
  This property can be used to:  
   
--   determine the type of axis—X, X2, Y or Y2—that the event is being raised for, using the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.AxisName%2A> property.  
+-   determine the type of axis - X, X2, Y or Y2 - that the event is being raised for, using the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.AxisName%2A> property.  
   
 -   get and set axis properties, such as <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor%2A>.  
   
@@ -213,7 +213,7 @@
   
 -   If the user clicks the Reset/Zoom button, the previous view will be displayed.  
   
--   If the user clicks in the scrollbar background—that is, not on the scrolling thumb, otherwise known as the tracker— large increments and/or decrements of the scrollbar will occur, with the increment and/or decrement size being determined by the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.Size%2A> property.  
+-   If the user clicks in the scrollbar background - that is, not on the scrolling thumb, otherwise known as the tracker -  large increments and/or decrements of the scrollbar will occur, with the increment and/or decrement size being determined by the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.Size%2A> property.  
   
  To turn off these default behaviors, set the <xref:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.IsHandled%2A> property to `true` after providing custom logic in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisScrollBarClicked> event.  
   

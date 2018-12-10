@@ -211,7 +211,7 @@
  [!code-csharp[DrawingVisualSample#101](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingVisualSample/CSharp/Window1.xaml.cs#101)]
  [!code-vb[DrawingVisualSample#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingVisualSample/visualbasic/window1.xaml.vb#101)]  
   
- The order in which you draw into the drawing context is important—each succeeding drawing is drawn on top of the others. In the following example, the rectangle is drawn first, then the text.  
+ The order in which you draw into the drawing context is important - each succeeding drawing is drawn on top of the others. In the following example, the rectangle is drawn first, then the text.  
   
  [!code-csharp[VisualSnippets#RenderOrderSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Snippets.cs#renderordersnippet1)]
  [!code-vb[VisualSnippets#RenderOrderSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualSnippets/visualbasic/snippets.vb#renderordersnippet1)]  

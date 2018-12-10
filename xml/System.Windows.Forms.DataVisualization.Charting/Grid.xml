@@ -138,7 +138,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set—either by default, by explicitly using <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.NotSet> at design time, or by assigning a value of <xref:System.Double.NaN> at run time—the actual value of this property is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Interval%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object to which the chart element, such as a grid line or tick mark, belongs.  
+ By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set - either by default, by explicitly using <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.NotSet> at design time, or by assigning a value of <xref:System.Double.NaN> at run time - the actual value of this property is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Interval%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object to which the chart element, such as a grid line or tick mark, belongs.  
   
  The interval of minor tick marks and grid lines is never affected by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Interval%2A> property value.  
   
@@ -185,7 +185,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set—either by default, by explicitly specifying "Not Set"at design time, or by assigning it a value of <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.NotSet> at run time—the actual value of this property is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object that the chart element, such as a grid line or a tick mark, belongs to.  
+ By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set - either by default, by explicitly specifying "Not Set"at design time, or by assigning it a value of <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.NotSet> at run time - the actual value of this property is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object that the chart element, such as a grid line or a tick mark, belongs to.  
   
  The interval offset of minor tick marks and grid lines is never affected by the value of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object.  
   
@@ -230,7 +230,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set—either by default, by explicitly specifying "Not Set" at design time, or by assigning it a value of <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.NotSet> at run time—the actual value of this property is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffsetType%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object that the chart element—a grid line or tick mark, for example—belongs to.  
+ By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set - either by default, by explicitly specifying "Not Set" at design time, or by assigning it a value of <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.NotSet> at run time - the actual value of this property is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffsetType%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object that the chart element - a grid line or tick mark, for example - belongs to.  
   
  The interval offset type of minor tick marks and grid lines is never affected by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffsetType%2A> property value.  
   
@@ -273,7 +273,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set—either by default, by explicitly using "Not Set" at design time, or by assigning it a value of <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.NotSet> at run time— the actual value of this property is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffsetType%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object that the chart element—a grid line or tick mark, for example—belongs to.  
+ By default this property is not set for axis labels, major tick marks and major grid lines. If it is not set - either by default, by explicitly using "Not Set" at design time, or by assigning it a value of <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.NotSet> at run time -  the actual value of this property is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffsetType%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object that the chart element - a grid line or tick mark, for example - belongs to.  
   
  The interval type of minor tick marks and grid lines is never affected by the value of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalType%2A> property.  
   

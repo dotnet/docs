@@ -285,7 +285,7 @@
   
  The difference between the values of the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.ToPosition%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.FromPosition%2A> properties determines where the label text will be displayed. For example, suppose the X-axis has a scale that ranges from 1 to 5 (1, 2 ,3 , 4, 5). In order to display a custom label just underneath the second point, you would set the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.ToPosition%2A> property to 1.5 and the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.FromPosition%2A> property to 2.5.  
   
- If the <xref:System.Windows.Forms.DataVisualization.Charting.Series.XValueType%2A>—or <xref:System.Windows.Forms.DataVisualization.Charting.Series.YValueType%2A>, depending on the axis in question—is set to a <xref:System.DateTime> value, then this <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.FromPosition%2A> property will be displayed as a <xref:System.DateTime> value in the designer.  
+ If the <xref:System.Windows.Forms.DataVisualization.Charting.Series.XValueType%2A> - or <xref:System.Windows.Forms.DataVisualization.Charting.Series.YValueType%2A>, depending on the axis in question - is set to a <xref:System.DateTime> value, then this <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.FromPosition%2A> property will be displayed as a <xref:System.DateTime> value in the designer.  
   
  This property should not be set to the same value as the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.ToPosition%2A> property.  
   

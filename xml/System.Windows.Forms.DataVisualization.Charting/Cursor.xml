@@ -92,7 +92,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a data view does not display all data points in a plotted series and a range is being selected by the user, automatic scrolling of the view will occur if this property is `true` and the mouse—and therefore the cursor—is moved outside the chart area boundary.  
+ If a data view does not display all data points in a plotted series and a range is being selected by the user, automatic scrolling of the view will occur if this property is `true` and the mouse - and therefore the cursor - is moved outside the chart area boundary.  
   
  Scrolling will only occur along an axis if there is more data available to be viewed.  
   
@@ -387,7 +387,7 @@
 > [!NOTE]
 >  Interval-related properties have no effect when a range selection or cursor position is set programmatically.  
   
- If the axis interval type represents a time—for example, hours, minutes, and so forth—then in order to correctly enable the zooming function, the <xref:System.Windows.Forms.DataVisualization.Charting.Cursor.IntervalType%2A> must also be set to a time value. For example, if the ChartArea1.AxisX.IntervalType is expressed in hours, then the ChartArea1.CursorX.IntervalType could be set to minutes.  
+ If the axis interval type represents a time - for example, hours, minutes, and so forth - then in order to correctly enable the zooming function, the <xref:System.Windows.Forms.DataVisualization.Charting.Cursor.IntervalType%2A> must also be set to a time value. For example, if the ChartArea1.AxisX.IntervalType is expressed in hours, then the ChartArea1.CursorX.IntervalType could be set to minutes.  
   
  ]]></format>
         </remarks>

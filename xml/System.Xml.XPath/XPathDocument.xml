@@ -183,7 +183,7 @@
   
 -   An <xref:System.Xml.XmlReader> object with the appropriate associated <xref:System.Xml.XmlResolver> object settings can be used to resolve entities or other references in XML data.  
   
--   If the <xref:System.Xml.XmlReader> object is positioned on a leaf node that is not valid for the root level of a document—for example, a white space or attribute node—the <xref:System.Xml.XmlReader> object continues to read until it is positioned on a node that can be used for the root. The <xref:System.Xml.XPath.XPathDocument> begins loading at this point.  
+-   If the <xref:System.Xml.XmlReader> object is positioned on a leaf node that is not valid for the root level of a document - for example, a white space or attribute node - the <xref:System.Xml.XmlReader> object continues to read until it is positioned on a node that can be used for the root. The <xref:System.Xml.XPath.XPathDocument> begins loading at this point.  
   
 -   To preserve white space, use the <xref:System.Xml.XPath.XPathDocument.%23ctor%2A> constructor that accepts an <xref:System.Xml.XmlSpace> object as a parameter.  
   

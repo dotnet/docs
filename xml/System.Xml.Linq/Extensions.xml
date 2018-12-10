@@ -2960,7 +2960,7 @@ Text: ddd
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses snapshot semantics—that is, it copies the attributes in the source collection to a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> before disconnecting them from their parents. This is required to avoid issues with mixed imperative/declarative code. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](https://msdn.microsoft.com/library/d9a5c404-2b0e-46cd-a358-0e78773b3094).  
+ This method uses snapshot semantics - that is, it copies the attributes in the source collection to a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> before disconnecting them from their parents. This is required to avoid issues with mixed imperative/declarative code. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](https://msdn.microsoft.com/library/d9a5c404-2b0e-46cd-a358-0e78773b3094).  
   
    
   
@@ -3060,7 +3060,7 @@ Console.WriteLine(root)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses snapshot semantics—that is, it copies the attributes in the source collection to a `List<T>` before disconnecting them from their parents. This is required to avoid issues with mixed imperative/declarative code. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](https://msdn.microsoft.com/library/d9a5c404-2b0e-46cd-a358-0e78773b3094).  
+ This method uses snapshot semantics - that is, it copies the attributes in the source collection to a `List<T>` before disconnecting them from their parents. This is required to avoid issues with mixed imperative/declarative code. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](https://msdn.microsoft.com/library/d9a5c404-2b0e-46cd-a358-0e78773b3094).  
   
    
   

@@ -640,7 +640,7 @@
       <Docs>
         <param name="value">The object to locate.</param>
         <summary>Searches for the specified <see cref="T:System.Windows.Media.Media3D.GeneralTransform3D" /> object within the collection.</summary>
-        <returns>The zero-based index position of <paramref name="value" />, or –1 if the object is not found in the collection.</returns>
+        <returns>The zero-based index position of <paramref name="value" />, or -1 if the object is not found in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

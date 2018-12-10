@@ -29,13 +29,13 @@
     <block subset="none" type="overrides">
       <para>To create a custom animation, override or implement the following members:  
   
--   <see cref="M:System.Windows.Freezable.CreateInstanceCore" /> – If your new class is concrete, you must override <see cref="M:System.Windows.Freezable.CreateInstanceCore" /> to return a new instance of your class.  
+-   <see cref="M:System.Windows.Freezable.CreateInstanceCore" /> - If your new class is concrete, you must override <see cref="M:System.Windows.Freezable.CreateInstanceCore" /> to return a new instance of your class.  
   
--   <see cref="M:System.Windows.Media.Animation.AnimationTimeline.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock)" /> – Override this method to return the current value of your animation. It takes three parameters: a default origin value, a default destination value, and an <see cref="T:System.Windows.Media.Animation.AnimationClock" />. Use the <see cref="T:System.Windows.Media.Animation.AnimationClock" /> to obtain the current time or progress for the animation. You can choose whether to use the default origin and destination values.  
+-   <see cref="M:System.Windows.Media.Animation.AnimationTimeline.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock)" /> - Override this method to return the current value of your animation. It takes three parameters: a default origin value, a default destination value, and an <see cref="T:System.Windows.Media.Animation.AnimationClock" />. Use the <see cref="T:System.Windows.Media.Animation.AnimationClock" /> to obtain the current time or progress for the animation. You can choose whether to use the default origin and destination values.  
   
--   <see cref="P:System.Windows.Media.Animation.AnimationTimeline.IsDestinationDefault" /> – Override this property to indicate whether your animation uses the default destination value specified by the <see cref="M:System.Windows.Media.Animation.AnimationTimeline.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock)" /> method.  
+-   <see cref="P:System.Windows.Media.Animation.AnimationTimeline.IsDestinationDefault" /> - Override this property to indicate whether your animation uses the default destination value specified by the <see cref="M:System.Windows.Media.Animation.AnimationTimeline.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock)" /> method.  
   
--   <see cref="P:System.Windows.Media.Animation.AnimationTimeline.TargetPropertyType" /> – Override this property to indicate the <see cref="T:System.Type" /> of output your animation produces.  
+-   <see cref="P:System.Windows.Media.Animation.AnimationTimeline.TargetPropertyType" /> - Override this property to indicate the <see cref="T:System.Type" /> of output your animation produces.  
   
  If the class does not use dependency properties to store its data or it requires extra initialization after creation, you might need to override additional methods; see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md) for more information.  
   

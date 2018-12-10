@@ -4,7 +4,6 @@ description: .NET Core is a modular, high-performance implementation of .NET for
 author: richlander
 ms.date: 08/01/2018
 ms.custom: "updateeachrelease"
-titleSuffix: ""
 ---
 # .NET Core Guide
 

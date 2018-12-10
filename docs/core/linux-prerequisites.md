@@ -4,7 +4,6 @@ description: Supported Linux versions and .NET Core dependencies to develop, dep
 author: thraka
 ms.author: adegeo
 ms.date: 12/03/2018
-ms.custom: "seodec18"
 ---
 # Prerequisites for .NET Core on Linux
 

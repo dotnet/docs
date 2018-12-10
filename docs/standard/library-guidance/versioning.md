@@ -88,7 +88,7 @@ The assembly informational version is used to record additional version informat
 ```
 
 > [!NOTE]
-> Older versions of Visual Studio will raise a build warning if this version does not follow the format `Major.Minor.Build.Revision`. The warning can be safely ignored.
+> Older versions of Visual Studio raise a build warning if this version doesn't follow the format `Major.Minor.Build.Revision`. The warning can be safely ignored.
 
 **❌ AVOID** setting the assembly informational version yourself.
 

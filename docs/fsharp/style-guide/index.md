@@ -19,7 +19,7 @@ Keep the following principles in mind any time you write F# code, especially in 
 
 2. **Good F# code is interoperable**
 
-    Interoperation can take multiple forms, including consuming code in different languages. The boundaries of your code that other callers interoperate with are critical pieces to get right, even if the callers are also in F#. When writing F#, you should always be thinking about how other code will call into the code you are writing, including if they do so from another language like C#. The [F# Component Design Guidelines](component-design-guidelines.md) describe interoperability in detail.
+    Interoperation can take multiple forms, including consuming code in different languages. The boundaries of your code that other callers interoperate with are critical pieces to get right, even if the callers are also in F#. When writing F#, you should always be thinking about how other code will call into the code you're writing, including if they do so from another language like C#. The [F# Component Design Guidelines](component-design-guidelines.md) describe interoperability in detail.
 
 3. **Good F# code makes use of object programming, not object orientation**
 

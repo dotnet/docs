@@ -1,5 +1,7 @@
 ---
-title: "operator keyword (C# Reference)"
+title: "operator keyword - C# Reference"
+ms.custom: seodec18
+
 description: "Learn how to overload a built-in C# operator"
 ms.date: 08/27/2018
 f1_keywords: 

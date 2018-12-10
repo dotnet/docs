@@ -1,5 +1,6 @@
 ---
-title: "How to: Implement User-Defined Conversions Between Structs (C# Programming Guide)"
+title: "How to: Implement User-Defined Conversions Between Structs - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "user-defined conversions [C#]"

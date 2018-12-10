@@ -1,5 +1,7 @@
 ---
-title: "on keyword (C# Reference)"
+title: "on keyword - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "on_CSharpKeyword"

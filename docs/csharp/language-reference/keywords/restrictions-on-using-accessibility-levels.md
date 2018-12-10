@@ -1,5 +1,7 @@
 ---
-title: "Restrictions on using accessibility levels (C# Reference)"
+title: "Restrictions on using accessibility levels - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "access modifiers [C#], accessibility level restrictions"

@@ -1,5 +1,7 @@
 ---
-title: "true (C# Reference)"
+title: "true - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "true_CSharpKeyword"

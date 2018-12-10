@@ -1,5 +1,7 @@
 ---
-title: "Modifiers (C# Reference)"
+title: "Modifiers - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "keywords [C#], modifiers"

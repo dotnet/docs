@@ -1,5 +1,7 @@
 ---
-title: "true and false operators (C# Reference)"
+title: "true and false operators - C# Reference"
+ms.custom: seodec18
+
 ms.date: 12/10/2018
 helpviewer_keywords: 
   - "false operator [C#]"

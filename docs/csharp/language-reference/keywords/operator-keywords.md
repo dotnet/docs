@@ -1,5 +1,7 @@
 ---
-title: "Operator Keywords (C# Reference)"
+title: "Operator Keywords - C# Reference"
+ms.custom: seodec18
+
 ms.date: 12/10/2018
 helpviewer_keywords: 
   - "keywords [C#], operators"

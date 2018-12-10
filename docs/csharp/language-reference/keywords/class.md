@@ -1,5 +1,7 @@
 ---
-title: "class keyword (C# Reference)"
+title: "class keyword - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/18/2017
 f1_keywords: 
   - "class_CSharpKeyword"

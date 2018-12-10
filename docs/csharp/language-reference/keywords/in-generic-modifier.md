@@ -1,5 +1,7 @@
 ---
-title: "in (Generic Modifier) (C# Reference)"
+title: "in (Generic Modifier) - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "contravariance, in keyword [C#]"

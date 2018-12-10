@@ -1,5 +1,6 @@
 ---
-title: "How to: Access Command-Line Arguments Using foreach (C# Programming Guide)"
+title: "How to: Access Command-Line Arguments Using foreach - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "command-line arguments [C#]"

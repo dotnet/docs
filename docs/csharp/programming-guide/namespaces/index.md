@@ -1,5 +1,6 @@
 ---
-title: "Namespaces (C# Programming Guide)"
+title: "Namespaces - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 08/21/2018
 helpviewer_keywords: 
   - "C# language, namespaces"

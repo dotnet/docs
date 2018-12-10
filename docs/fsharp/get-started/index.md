@@ -24,4 +24,4 @@ In general, there is no specific that is better than the rest. We recommend tryi
 If you'd rather not install F# and .NET on your machine, you can also get started with F# in the browser:
 
 * [Introduction to F# on Azure Notebooks](https://notebooks.azure.com/Microsoft/projects/2018-Intro-FSharp/html/Introduction%20to%20FSharp.ipynb) is a [Jupyter notebook](https://jupyter.org/) on the free Azure Notebooks service. Just sign in with an account and you can hack away directly in the browser!
-* [The Fable REPL](https://fable.io/repl/) is an interactive, in-browser REPL that uses [Fable](https://fable.io/) to translate F# code into JavaScript. Check out the numerous samples that range from F# basics to a fully-fledged video game all executing in your browser!
+* [The Fable REPL](https://fable.io/repl/) is an interactive, in-browser REPL that uses [Fable](https://fable.io/) to translate F# code into JavaScript. Check out the numerous samples that range from F# basics to a fully fledged video game all executing in your browser!

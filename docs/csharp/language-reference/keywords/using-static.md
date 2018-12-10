@@ -1,5 +1,5 @@
 ---
-title: "using static Directive (C# Reference)"
+title: "using static directive (C# Reference)"
 ms.date: 03/10/2017
 helpviewer_keywords: 
   - "using static directive [C#]"
@@ -7,7 +7,7 @@ ms.assetid: 8b8f9e34-c75e-469b-ba85-6f2eb4090314
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# using static Directive (C# Reference)
+# using static directive (C# Reference)
 
 The `using static` directive designates a type whose static members and nested types you can access without specifying a type name. Its syntax is:
 

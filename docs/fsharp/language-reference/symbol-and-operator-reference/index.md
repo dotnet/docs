@@ -55,7 +55,7 @@ The following table describes symbols used in the F# language, provides links to
 |`::`|[Lists](../lists.md)<br /><br />[Match Expressions](../match-expressions.md)|<ul><li>Creates a list. The element on the left side is prepended to the list on the right side.<br /></li><li>Used in pattern matching to separate the parts of a list.<br /></li></ul>|
 |`:=`|[Reference Cells](../reference-cells.md)|<ul><li>Assigns a value to a reference cell.<br /></li></ul>|
 |`:>`|[Casting and Conversions](../casting-and-conversions.md)|<ul><li>Converts a type to type that is higher in the hierarchy.<br /></li></ul>|
-|`:?`|[Match Expressions](../match-expressions.md)|<ul><li>Returns `true` if the value matches the specified type; otherwise, returns `false` (type test operator).<br /></li></ul>|
+|`:?`|[Match Expressions](../match-expressions.md)|<ul><li>Returns `true` if the value matches the specified type (including if it is a subtype); otherwise, returns `false` (type test operator).<br /></li></ul>|
 |`:?>`|[Casting and Conversions](../casting-and-conversions.md)|<ul><li>Converts a type to a type that is lower in the hierarchy.<br /></li></ul>|
 |`;`|[Verbose Syntax](../verbose-syntax.md)<br /><br />[Lists](../lists.md)<br /><br />[Records](../records.md)|<ul><li>Separates expressions (used mostly in verbose syntax).<br /></li><li>Separates elements of a list.<br /></li><li>Separates fields of a record.<br /></li></ul>|
 |`<`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Computes the less-than operation.<br /></li></ul>|

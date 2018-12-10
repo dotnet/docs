@@ -6750,7 +6750,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
-        <param name="source">A sequence of values of type <c>TSource</c>.</param>
+        <param name="source">A sequence of values of type <paramref name="TSource" />.</param>
         <param name="selector">A projection function to apply to each element.</param>
         <summary>Computes the sum of the sequence of <see cref="T:System.Decimal" /> values that is obtained by invoking a projection function on each element of the input sequence.</summary>
         <returns>The sum of the projected values.</returns>
@@ -6816,7 +6816,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
-        <param name="source">A sequence of values of type <c>TSource</c>.</param>
+        <param name="source">A sequence of values of type <paramref name="TSource" />.</param>
         <param name="selector">A projection function to apply to each element.</param>
         <summary>Computes the sum of the sequence of <see cref="T:System.Double" /> values that is obtained by invoking a projection function on each element of the input sequence.</summary>
         <returns>The sum of the projected values.</returns>
@@ -6881,7 +6881,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
-        <param name="source">A sequence of values of type <c>TSource</c>.</param>
+        <param name="source">A sequence of values of type <paramref name="TSource" />.</param>
         <param name="selector">A projection function to apply to each element.</param>
         <summary>Computes the sum of the sequence of <see cref="T:System.Int32" /> values that is obtained by invoking a projection function on each element of the input sequence.</summary>
         <returns>The sum of the projected values.</returns>
@@ -6947,7 +6947,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
-        <param name="source">A sequence of values of type <c>TSource</c>.</param>
+        <param name="source">A sequence of values of type <paramref name="TSource" />.</param>
         <param name="selector">A projection function to apply to each element.</param>
         <summary>Computes the sum of the sequence of <see cref="T:System.Int64" /> values that is obtained by invoking a projection function on each element of the input sequence.</summary>
         <returns>The sum of the projected values.</returns>
@@ -7013,7 +7013,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
-        <param name="source">A sequence of values of type <c>TSource</c>.</param>
+        <param name="source">A sequence of values of type <paramref name="TSource" />.</param>
         <param name="selector">A projection function to apply to each element.</param>
         <summary>Computes the sum of the sequence of nullable <see cref="T:System.Decimal" /> values that is obtained by invoking a projection function on each element of the input sequence.</summary>
         <returns>The sum of the projected values.</returns>
@@ -7079,7 +7079,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
-        <param name="source">A sequence of values of type <c>TSource</c>.</param>
+        <param name="source">A sequence of values of type <paramref name="TSource" />.</param>
         <param name="selector">A projection function to apply to each element.</param>
         <summary>Computes the sum of the sequence of nullable <see cref="T:System.Double" /> values that is obtained by invoking a projection function on each element of the input sequence.</summary>
         <returns>The sum of the projected values.</returns>
@@ -7144,7 +7144,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
-        <param name="source">A sequence of values of type <c>TSource</c>.</param>
+        <param name="source">A sequence of values of type <paramref name="TSource" />.</param>
         <param name="selector">A projection function to apply to each element.</param>
         <summary>Computes the sum of the sequence of nullable <see cref="T:System.Int32" /> values that is obtained by invoking a projection function on each element of the input sequence.</summary>
         <returns>The sum of the projected values.</returns>
@@ -7210,7 +7210,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
-        <param name="source">A sequence of values of type <c>TSource</c>.</param>
+        <param name="source">A sequence of values of type <paramref name="TSource" />.</param>
         <param name="selector">A projection function to apply to each element.</param>
         <summary>Computes the sum of the sequence of nullable <see cref="T:System.Int64" /> values that is obtained by invoking a projection function on each element of the input sequence.</summary>
         <returns>The sum of the projected values.</returns>
@@ -7276,7 +7276,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
-        <param name="source">A sequence of values of type <c>TSource</c>.</param>
+        <param name="source">A sequence of values of type <paramref name="TSource" />.</param>
         <param name="selector">A projection function to apply to each element.</param>
         <summary>Computes the sum of the sequence of nullable <see cref="T:System.Single" /> values that is obtained by invoking a projection function on each element of the input sequence.</summary>
         <returns>The sum of the projected values.</returns>
@@ -7341,7 +7341,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
-        <param name="source">A sequence of values of type <c>TSource</c>.</param>
+        <param name="source">A sequence of values of type <paramref name="TSource" />.</param>
         <param name="selector">A projection function to apply to each element.</param>
         <summary>Computes the sum of the sequence of <see cref="T:System.Single" /> values that is obtained by invoking a projection function on each element of the input sequence.</summary>
         <returns>The sum of the projected values.</returns>

@@ -34,8 +34,6 @@
   
  ]]></format>
     </remarks>
-    <altmember cref="N:System.DirectoryServices.AccountManagement" />
-    <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -57,8 +55,6 @@
   
  ]]></format>
         </remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -83,8 +79,6 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">A name or container must be specified when using the application directory context.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.</exception>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -113,8 +107,6 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">A name must be specified when <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> is specified in the <paramref name="contextType" /> parameter.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="F:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.</exception>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -158,8 +150,6 @@
   
  A name or container must be specified when <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> is specified in the <paramref name="contextType" /> parameter.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="F:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.</exception>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -212,8 +202,6 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.  
   
  The <paramref name="options" /> parameter does not contain a combination of valid <see cref="T:System.DirectoryServices.AccountManagement.ContextOptions" /> enumeration values.</exception>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -248,8 +236,6 @@
   
  A name must be specified when <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> is specified in the <paramref name="contextType" /> parameter.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.</exception>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -299,8 +285,6 @@
   
  A <paramref name="name" /> or <paramref name="container" /> must be specified when <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> is specified in the <paramref name="contextType" /> parameter.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.</exception>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -354,8 +338,6 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="contextType" /> parameter does not contain a valid <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value.  
   
  The <paramref name="options" /> parameter does not contain a combination of valid <see cref="T:System.DirectoryServices.AccountManagement.ContextOptions" /> enumeration values.</exception>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectedServer">
@@ -386,8 +368,6 @@
   
  ]]></format>
         </remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Container">
@@ -418,8 +398,6 @@
   
  ]]></format>
         </remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ContextType">
@@ -450,8 +428,6 @@
   
  ]]></format>
         </remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -478,8 +454,6 @@
       <Docs>
         <summary>Disposes the current instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object.</summary>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -503,8 +477,6 @@
         <summary>Gets the value specified as the <paramref name="name" /> parameter in the constructor.</summary>
         <value>The name of the domain or server for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Domain" /> contexts types, the host name for <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" /> context types, the name of the server hosting the <see cref="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" /> instance, or null if no name is set.</value>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Options">
@@ -528,8 +500,6 @@
         <summary>Gets the options specified in the <paramref name="contextOptions" /> parameter of the constructor.</summary>
         <value>A <see cref="T:System.DirectoryServices.AccountManagement.ContextOptions" /> enumeration value specifying the type of target to connect to.</value>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -560,8 +530,6 @@
   
  ]]></format>
         </remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ValidateCredentials">
@@ -579,7 +547,6 @@ The `userName` argument in both overloads of this method must take the form *use
   
  ]]></format>
         </remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </MemberGroup>
     <Member MemberName="ValidateCredentials">
@@ -619,7 +586,6 @@ The `userName` argument must take the form *userName* (for example, *mcampbell*)
 
  ]]></format>
         </remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="ValidateCredentials">
@@ -662,7 +628,6 @@ The `userName` argument must take the form *username* (for example, *mcampbell*)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="options" /> parameter must specify <see cref="F:System.DirectoryServices.AccountManagement.ContextOptions.Negotiate" /> when the context type is <see cref="F:System.DirectoryServices.AccountManagement.ContextType.Machine" />.</exception>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
   </Members>

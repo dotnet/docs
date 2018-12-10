@@ -1123,7 +1123,7 @@ remove_<EventName>(<EventHandlerType> handler)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes.Event?displayProperty=nameWithType> only when a given member is an event.  
+ This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects - for example, the array returned by <xref:System.Type.GetMembers%2A> - the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes.Event?displayProperty=nameWithType> only when a given member is an event.  
   
  ]]></format>
         </remarks>

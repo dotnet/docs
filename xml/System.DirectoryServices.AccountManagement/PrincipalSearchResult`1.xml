@@ -32,9 +32,7 @@
     <typeparam name="T">To be added.</typeparam>
     <summary>Returns a collection of <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> objects that are returned by a search.</summary>
     <remarks>To be added.</remarks>
-    <altmember cref="N:System.DirectoryServices.AccountManagement" />
     <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Dispose">
@@ -61,7 +59,6 @@
       <Docs>
         <summary>Disposes the current instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> object.</summary>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -94,9 +91,7 @@
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>The <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that is used to iterate through the principal objects.</returns>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
         <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -131,9 +126,7 @@
         <summary>Returns an enumerator that can be used to iterate over the objects in this collection.</summary>
         <returns>Returns an <see cref="T:System.Collections.IEnumerator" /> containing the principals in the search result collection.</returns>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
         <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
   </Members>

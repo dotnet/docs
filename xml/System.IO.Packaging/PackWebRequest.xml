@@ -245,7 +245,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Do not use—<see cref="M:System.IO.Packaging.PackWebRequest.GetRequestStream" /> is not supported by <see cref="T:System.IO.Packaging.PackWebRequest" />.</summary>
+        <summary>Do not use-<see cref="M:System.IO.Packaging.PackWebRequest.GetRequestStream" /> is not supported by <see cref="T:System.IO.Packaging.PackWebRequest" />.</summary>
         <returns>If <see cref="M:System.IO.Packaging.PackWebRequest.GetRequestStream" /> is called, a <see cref="T:System.NotSupportedException" /> is thrown.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -478,7 +478,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Requests to the package cache do not time out.  For requests that resolve from the <xref:System.IO.Packaging.PackageStore> cache, <xref:System.IO.Packaging.PackWebRequest.Timeout%2A> returns a value of –1.  
+ Requests to the package cache do not time out.  For requests that resolve from the <xref:System.IO.Packaging.PackageStore> cache, <xref:System.IO.Packaging.PackWebRequest.Timeout%2A> returns a value of -1.  
   
  The <xref:System.IO.Packaging.PackWebRequest.Timeout%2A> property is shared with the inner request (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
   

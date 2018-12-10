@@ -319,7 +319,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default hash algorithm identifier for the standard digital signature manager is <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigSHA1Url> (<xref:System.Security.Cryptography.SHA1>—Secure Hash Algorithm version 1.0).  
+ The default hash algorithm identifier for the standard digital signature manager is <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigSHA1Url> (<xref:System.Security.Cryptography.SHA1> - Secure Hash Algorithm version 1.0).  
   
  Unless explicitly set otherwise, this property gets the same value as <xref:System.IO.Packaging.PackageDigitalSignatureManager.DefaultHashAlgorithm%2A>.  
   

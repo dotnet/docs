@@ -1110,7 +1110,7 @@
 > [!NOTE]
 >  The <xref:System.Globalization.RegionInfo.NativeName%2A> property retrieves a full culture name if the `RegionInfo` object is constructed using a full culture name.  
   
- We recommend that you use the culture name—for example, "en-US" for English (United States)—to access the <xref:System.Globalization.RegionInfo.NativeName%2A> property. The string used for this property depends on the language associated with the country/region. For example, the culture names en-US for English (United States) and es-US for Spanish (United States) can retrieve different values on Windows Vista. Therefore, creating the `RegionInfo` object with only a country/region name of US is not specific enough to distinguish the appropriate string.  
+ We recommend that you use the culture name - for example, "en-US" for English (United States) - to access the <xref:System.Globalization.RegionInfo.NativeName%2A> property. The string used for this property depends on the language associated with the country/region. For example, the culture names en-US for English (United States) and es-US for Spanish (United States) can retrieve different values on Windows Vista. Therefore, creating the `RegionInfo` object with only a country/region name of US is not specific enough to distinguish the appropriate string.  
   
    
   

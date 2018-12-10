@@ -41,7 +41,6 @@
     <typeparam name="T">To be added.</typeparam>
     <summary>Multi-valued properties, such as <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.PermittedWorkstations" />, have a value of the type <see cref="T:System.DirectoryServices.AccountManagement.PrincipalValueCollection`1" />.  This class provides methods to enumerate and manipulate those values.</summary>
     <remarks>To be added.</remarks>
-    <altmember cref="N:System.DirectoryServices.AccountManagement" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -71,8 +70,6 @@
         <param name="value">An object to be added to the collection.</param>
         <summary>Adds the specified value to the end of the collection.</summary>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -100,8 +97,6 @@
       <Docs>
         <summary>Clears the contents of the collection.</summary>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -132,8 +127,6 @@
         <summary>Returns <see langword="true" /> if the specified object is in the collection, and <see langword="false" /> otherwise.</summary>
         <returns>Returns a <see langword="bool" />.</returns>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -165,8 +158,6 @@
         <param name="index">An integer representing the position in <paramref name="array" /> to which the first object in the collection should be copied.</param>
         <summary>Copys the contents of the collection to the specified array, starting at the specified position in the array.</summary>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -193,7 +184,6 @@
         <summary>Gets the number of objects in the collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -226,8 +216,6 @@
         <summary>Returns an enumerator that can be used to iterate through the collection.</summary>
         <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object.</returns>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -265,8 +253,6 @@
   
  ]]></format>
         </remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -298,8 +284,6 @@
         <param name="value">An object.</param>
         <summary>Inserts the specified object into the collection at the specified index.</summary>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -326,7 +310,6 @@
         <summary>Gets a <see langword="bool" /> that represents whether or not the collection is fixed in size.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -354,7 +337,6 @@
         <summary>Gets a bool that represents whether or not the collection is read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -381,7 +363,6 @@
         <summary>Gets a value indicating whether access to the collection is synchronized (thread safe).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -412,7 +393,6 @@
         <summary>Gets the object at the specified index in the collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -443,8 +423,6 @@
         <summary>Removes the specified object from the collection.</summary>
         <returns>Returns a <see langword="bool" />.  Returns <see langword="true" /> if the object was removed, or <see langword="false" /> if the object was not in the collection.</returns>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -482,7 +460,6 @@
   
  ]]></format>
         </remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -509,7 +486,6 @@
         <summary>Gets an object that can be used to synchronize access to the collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -539,7 +515,6 @@
         <param name="index">An integer representing the position in <paramref name="array" /> to which the first object in the collection should be copied.</param>
         <summary>Copies the contents of the collection to the specified array, starting at the specified index.</summary>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -566,7 +541,6 @@
         <summary>Gets the number of objects in the collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -601,7 +575,6 @@
         <summary>Gets a value indicating whether access to the collection is synchronized (thread safe).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -636,7 +609,6 @@
         <summary>Gets an object that can be used to synchronize access to the collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -671,8 +643,6 @@
         <summary>Returns an enumerator for iterating through the collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object.</returns>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -707,8 +677,6 @@
         <summary>Adds the specified object to the end of the collection.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -742,8 +710,6 @@
       <Docs>
         <summary>Deletes the contents of the collection.</summary>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -775,7 +741,6 @@
           <see langword="boolean" />
         </returns>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -810,8 +775,6 @@
         <summary>Returns the index of the specified object in the collection, or -1 if it is not in the collection.</summary>
         <returns>An <see langword="integer" />.</returns>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -847,8 +810,6 @@
         <param name="value">An object</param>
         <summary>Inserts the specified object at the specified position into the collection.</summary>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -883,7 +844,6 @@
         <summary>Gets a value indicating whether the collection is fixed-size.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsReadOnly">
@@ -918,7 +878,6 @@
         <summary>Gets a value indicating whether access to the collection is read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -957,7 +916,6 @@
         <summary>Gets the object at the specified index in the collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -986,8 +944,6 @@
         <param name="value">The object to be removed from the collection.</param>
         <summary>Removes the specified object from the collection.</summary>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -1024,8 +980,6 @@
         <param name="index">The index of the object to be removed from the collection.</param>
         <summary>Removes the object at the specified index from the collection.</summary>
         <remarks>To be added.</remarks>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
   </Members>

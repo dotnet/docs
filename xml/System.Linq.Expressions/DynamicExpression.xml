@@ -893,7 +893,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the number of arguments to the expression tree node.  You should not use this member.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.</summary>
+        <summary>Returns the number of arguments to the expression tree node. You should not use this member. It is only public due to assembly refactoring, and it is used internally for performance optimizations.</summary>
         <value>Returns <see cref="T:System.Int32" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -934,7 +934,7 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the argument.</param>
-        <summary>Returns the argument at index, throwing if index is out of bounds.  You should not use this member.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.</summary>
+        <summary>Returns the argument at index, throwing if index is out of bounds. You should not use this member. It is only public due to assembly refactoring, and it is used internally for performance optimizations.</summary>
         <returns>Returns <see cref="T:System.Linq.Expressions.Expression" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -972,7 +972,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Optionally creates the CallSite and returns the CallSite for the DynamicExpression's polymorphic inline cache.  You should not use this member.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.</summary>
+        <summary>Optionally creates the CallSite and returns the CallSite for the DynamicExpression's polymorphic inline cache. You should not use this member. It is only public due to assembly refactoring, and it is used internally for performance optimizations.</summary>
         <returns>Returns <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1013,7 +1013,7 @@
       </Parameters>
       <Docs>
         <param name="args">The arguments.</param>
-        <summary>Rewrite this node replacing the dynamic expression's arguments with the provided values.  The number of <paramref name="args" /> needs to match the number of the current expression.  You should not use this type.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.  This helper method allows re-writing of nodes to be independent of the specific implementation class deriving from DynamicExpression that is being used at the call site.</summary>
+        <summary>Rewrite this node replacing the dynamic expression's arguments with the provided values. The number of <paramref name="args" /> needs to match the number of the current expression. You should not use this type. It is only public due to assembly refactoring, and it is used internally for performance optimizations. This helper method allows re-writing of nodes to be independent of the specific implementation class deriving from DynamicExpression that is being used at the call site.</summary>
         <returns>Returns <see cref="T:System.Linq.Expressions.Expression" />, the rewritten expression.</returns>
         <remarks>To be added.</remarks>
       </Docs>

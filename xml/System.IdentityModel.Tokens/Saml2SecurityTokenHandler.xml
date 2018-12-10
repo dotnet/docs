@@ -2375,7 +2375,7 @@
   
  -or-  
   
- The assertion specified by <paramref name="data" /> contains an authentication, attribute, or authorization decision statement and no subject—these statements require a subject. (The <see cref="P:System.IdentityModel.Tokens.Saml2Assertion.Statements" /> property contains a statement of type <see cref="T:System.IdentityModel.Tokens.Saml2AttributeStatement" />, <see cref="T:System.IdentityModel.Tokens.Saml2AuthenticationStatement" />, or <see cref="T:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement" /> and the <see cref="P:System.IdentityModel.Tokens.Saml2Assertion.Subject" /> property is <see langword="null" />).</exception>
+ The assertion specified by <paramref name="data" /> contains an authentication, attribute, or authorization decision statement and no subject - these statements require a subject. (The <see cref="P:System.IdentityModel.Tokens.Saml2Assertion.Statements" /> property contains a statement of type <see cref="T:System.IdentityModel.Tokens.Saml2AttributeStatement" />, <see cref="T:System.IdentityModel.Tokens.Saml2AuthenticationStatement" />, or <see cref="T:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement" /> and the <see cref="P:System.IdentityModel.Tokens.Saml2Assertion.Subject" /> property is <see langword="null" />).</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The token encrypting credentials do not have a Symmetric Key specified.</exception>
       </Docs>
     </Member>

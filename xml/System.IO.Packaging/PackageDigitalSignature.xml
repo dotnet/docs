@@ -28,7 +28,7 @@
   
 -   Validates that the part has not been modified.  
   
- The digital signature does not preclude a part from being modified, but a validation check against the signature fails if the part has changed in any way. The application can then take appropriate action—for example, it can prevent the part from opening or it can notify the user that the part has been modified and is not secure.  
+ The digital signature does not preclude a part from being modified, but a validation check against the signature fails if the part has changed in any way. The application can then take appropriate action - for example, it can prevent the part from opening or it can notify the user that the part has been modified and is not secure.  
   
  For more information about package digital signatures, see the MSDN article [Digital Signing Framework of the Open Packaging Conventions](https://go.microsoft.com/fwlink/?LinkId=74494).  
   

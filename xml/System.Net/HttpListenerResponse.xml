@@ -1038,7 +1038,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The body of a chunked message is made up of a series of chunks. Each chunk comprises of two parts—the size of the chunk data and the actual data. When set to true the response is sent using chunked transfer encoding.  
+ The body of a chunked message is made up of a series of chunks. Each chunk comprises of two parts - the size of the chunk data and the actual data. When set to true the response is sent using chunked transfer encoding.  
   
  ]]></format>
         </remarks>

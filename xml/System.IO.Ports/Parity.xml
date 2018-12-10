@@ -26,7 +26,7 @@
 ## Remarks  
  Use this enumeration when setting the <xref:System.IO.Ports.SerialPort.Parity%2A> property for a serial port connection.  
   
- Parity is an error-checking procedure in which the number of 1s must always be the same—either even or odd—for each group of bits that is transmitted without error. In modem-to-modem communications, parity is often one of the parameters that must be agreed upon by sending parties and receiving parties before transmission can take place.  
+ Parity is an error-checking procedure in which the number of 1s must always be the same - either even or odd - for each group of bits that is transmitted without error. In modem-to-modem communications, parity is often one of the parameters that must be agreed upon by sending parties and receiving parties before transmission can take place.  
   
    
   

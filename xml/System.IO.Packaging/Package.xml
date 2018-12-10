@@ -200,7 +200,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For the <xref:System.IO.Packaging.Package> class <xref:System.IO.Packaging.Package.Close%2A> and <xref:System.IO.Packaging.Package.Dispose%2A> perform the same operation—there is no reason to call <xref:System.IO.Packaging.Package.Dispose%2A> if you call <xref:System.IO.Packaging.Package.Close%2A>, or vice-versa.  
+ For the <xref:System.IO.Packaging.Package> class <xref:System.IO.Packaging.Package.Close%2A> and <xref:System.IO.Packaging.Package.Dispose%2A> perform the same operation - there is no reason to call <xref:System.IO.Packaging.Package.Dispose%2A> if you call <xref:System.IO.Packaging.Package.Close%2A>, or vice-versa.  
   
  <xref:System.IO.Packaging.Package.Close%2A> and <xref:System.IO.Packaging.Package.Dispose%2A> internally call <xref:System.IO.Packaging.Package.Flush%2A>.  
   

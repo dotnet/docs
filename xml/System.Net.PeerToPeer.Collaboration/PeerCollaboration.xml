@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is a static class – it is sealed, abstract and does not have a public constructor. It is used to contain and manage application, object, and presence information for peers that have accepted invitations to a collaboration session. In terms of peers, objects, and applications, the PeerCollaboration class provides three accessors, one for each collection, as an interface or point of connectivity for whatever else is happening on the machine.  This class cannot be inherited; a compile-time error will occur if this sealed class is specified as the base class.  
+ This class is a static class - it is sealed, abstract and does not have a public constructor. It is used to contain and manage application, object, and presence information for peers that have accepted invitations to a collaboration session. In terms of peers, objects, and applications, the PeerCollaboration class provides three accessors, one for each collection, as an interface or point of connectivity for whatever else is happening on the machine.  This class cannot be inherited; a compile-time error will occur if this sealed class is specified as the base class.  
   
  Methods and properties in this class can be used to:  
   

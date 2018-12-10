@@ -7840,7 +7840,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
   
  For message-oriented sockets, an incoming message is placed into the buffer up to the total size of the buffer. The <xref:System.Net.Sockets.SocketAsyncEventArgs.Count%2A?displayProperty=nameWithType> and <xref:System.Net.Sockets.SocketAsyncEventArgs.Offset%2A?displayProperty=nameWithType> properties determine where in the buffer the data is placed and the amount of data.  
   
- For byte stream–style sockets, incoming data is placed into the buffer until the buffer is filled, the connection is closed, or the internally buffered data is exhausted. The <xref:System.Net.Sockets.SocketAsyncEventArgs.Count%2A?displayProperty=nameWithType> and <xref:System.Net.Sockets.SocketAsyncEventArgs.Offset%2A?displayProperty=nameWithType> properties determine where in the buffer the data is placed and the amount of data.  
+ For byte stream-style sockets, incoming data is placed into the buffer until the buffer is filled, the connection is closed, or the internally buffered data is exhausted. The <xref:System.Net.Sockets.SocketAsyncEventArgs.Count%2A?displayProperty=nameWithType> and <xref:System.Net.Sockets.SocketAsyncEventArgs.Offset%2A?displayProperty=nameWithType> properties determine where in the buffer the data is placed and the amount of data.  
   
  ]]></format>
         </remarks>

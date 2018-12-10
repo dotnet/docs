@@ -1632,7 +1632,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Parity is an error-checking procedure in which the number of 1s must always be the same—either even or odd—for each group of bits that is transmitted without error. In modem-to-modem communications, parity is often one of the parameters that must be agreed upon by sending parties and receiving parties before transmission can take place.  
+ Parity is an error-checking procedure in which the number of 1s must always be the same - either even or odd - for each group of bits that is transmitted without error. In modem-to-modem communications, parity is often one of the parameters that must be agreed upon by sending parties and receiving parties before transmission can take place.  
   
  If a parity error occurs on the trailing byte of a stream, an extra byte will be added to the input buffer with a value of 126.  
   

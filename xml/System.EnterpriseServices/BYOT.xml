@@ -23,7 +23,7 @@
 ## Remarks  
  <xref:System.EnterpriseServices.BYOT> (Bring Your Own Transaction) allows a component to be created with or to inherit an external transaction. That is, a component that does not already have an associated transaction can acquire a transaction. COM+ allows setting an arbitrary pre-existing Distributed Transaction Coordinator (DTC) or Transaction Internet Protocol (TIP) transaction as the transaction property of a new component's context. This allows COM+ components to be associated with transactions whose lifetimes are controlled by a transaction processing (TP) monitor, Object/Task Selector (OTS), or database management system (DBMS).  
   
- <xref:System.EnterpriseServices.BYOT> transactions must be used with caution. In certain situations, they can result in a transaction spanning multiple synchronization domains—that is, they allow parallelism with another transaction, causing a deadlock condition.  
+ <xref:System.EnterpriseServices.BYOT> transactions must be used with caution. In certain situations, they can result in a transaction spanning multiple synchronization domains - that is, they allow parallelism with another transaction, causing a deadlock condition.  
   
  Automatic transactions, rather than <xref:System.EnterpriseServices.BYOT> transactions, are the preferred programming model for writers of business components.  
   

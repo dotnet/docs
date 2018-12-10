@@ -33,7 +33,7 @@
  If a <xref:System.Messaging.MessageQueue> opens a queue with the `sharedModeDenyReceive` parameter set to true, any <xref:System.Messaging.MessageQueue> that subsequently tries to read from the queue generates a <xref:System.Messaging.MessageQueueException> exception because of a sharing violation. The same exception is thrown if a <xref:System.Messaging.MessageQueue> tries to access the queue in exclusive mode while another <xref:System.Messaging.MessageQueue> already has nonexclusive access to the queue.  
   
 > **alert tag is not supported!!!!**  
-> <xref:System.Messaging.MessageQueueTransaction> is threading-apartment–aware. Visual Basic sets the state of the main thread to `STA`, so you must apply the <xref:System.MTAThreadAttribute> in the `Main` subroutine. Otherwise, sending a transactional message using another thread throws a <xref:System.Messaging.MessageQueueException> exception.  
+> <xref:System.Messaging.MessageQueueTransaction> is threading-apartment-aware. Visual Basic sets the state of the main thread to `STA`, so you must apply the <xref:System.MTAThreadAttribute> in the `Main` subroutine. Otherwise, sending a transactional message using another thread throws a <xref:System.Messaging.MessageQueueException> exception.  
   
    
   

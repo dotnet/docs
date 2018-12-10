@@ -36,7 +36,7 @@
   
  <xref:System.Messaging.MessageQueue> uses the <xref:System.Messaging.Message> class when it peeks or receives messages from queues, because both the <xref:System.Messaging.MessageQueue.Peek%2A?displayProperty=nameWithType> and <xref:System.Messaging.MessageQueue.Receive%2A?displayProperty=nameWithType> methods create a new instance of the <xref:System.Messaging.Message> class and set the instance's properties. The <xref:System.Messaging.Message> class's read-only properties apply to retrieving messages from a queue, while the read/write properties apply to sending and retrieving messages. When <xref:System.Messaging.MessageQueue> peeks or receives a message from a queue, its <xref:System.Messaging.MessageQueue.MessageReadPropertyFilter%2A> property determines which of the message's properties are retrieved.  
   
- The <xref:System.Messaging.MessageQueue> class's <xref:System.Messaging.MessageQueue.Send%2A> method allows you to specify any object type for a message being sent to that queue. You can use the <xref:System.Messaging.MessageQueue> instance's <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property to specify settings for generic messages sent to the queue. The types of settings include formatter, label, encryption, and authentication. You can also specify values for the appropriate <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> members when you coordinate your messaging application to respond to acknowledgment and report messages. Using a <xref:System.Messaging.Message> instance to send a message to the queue gives you the flexibility to access and modify many of these properties—either for a single message or on a message-by-message basis. <xref:System.Messaging.Message> properties take precedence over <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A>.  
+ The <xref:System.Messaging.MessageQueue> class's <xref:System.Messaging.MessageQueue.Send%2A> method allows you to specify any object type for a message being sent to that queue. You can use the <xref:System.Messaging.MessageQueue> instance's <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property to specify settings for generic messages sent to the queue. The types of settings include formatter, label, encryption, and authentication. You can also specify values for the appropriate <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> members when you coordinate your messaging application to respond to acknowledgment and report messages. Using a <xref:System.Messaging.Message> instance to send a message to the queue gives you the flexibility to access and modify many of these properties - either for a single message or on a message-by-message basis. <xref:System.Messaging.Message> properties take precedence over <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A>.  
   
  Message data is stored in the <xref:System.Messaging.Message.Body%2A> property and to a lesser extent, the <xref:System.Messaging.Message.AppSpecific%2A> and <xref:System.Messaging.Message.Extension%2A> properties. When message data is encrypted, serialized, or deserialized, only the contents of the <xref:System.Messaging.Message.Body%2A> property are affected.  
   
@@ -366,7 +366,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Messaging.Message.AcknowledgeType%2A> property specifies the type of acknowledgment messages requested by the sending application. Set the <xref:System.Messaging.Message.AcknowledgeType%2A> property before sending the message to request notification of certain occurrences—for example, a message reaching its destination queue, a message being retrieved, or a time-out preventing a message from reaching or being retrieved from the destination queue.  
+ The <xref:System.Messaging.Message.AcknowledgeType%2A> property specifies the type of acknowledgment messages requested by the sending application. Set the <xref:System.Messaging.Message.AcknowledgeType%2A> property before sending the message to request notification of certain occurrences - for example, a message reaching its destination queue, a message being retrieved, or a time-out preventing a message from reaching or being retrieved from the destination queue.  
   
  Message Queuing returns notification by sending acknowledgment messages to the <xref:System.Messaging.Message.AdministrationQueue%2A> property specified by the original message. An acknowledgment message's <xref:System.Messaging.Message.Acknowledgment%2A> property indicates the type of acknowledgment that it represents. For example, if an acknowledgment message was sent because a message did not reach the destination before the <xref:System.Messaging.Message.TimeToReachQueue%2A> interval expired, the <xref:System.Messaging.Message.Acknowledgment%2A> property of the acknowledgment message would contain the value `ReachQueueTimeout`.  
   
@@ -977,7 +977,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The body of a message can consist of any type of information—for example, a string, a date, a currency, a number, an array of bytes, or any managed object. This information is serialized into a <xref:System.IO.Stream> to be passed to the queue.  
+ The body of a message can consist of any type of information - for example, a string, a date, a currency, a number, an array of bytes, or any managed object. This information is serialized into a <xref:System.IO.Stream> to be passed to the queue.  
   
  Specify either the <xref:System.Messaging.Message.Body%2A> property or the <xref:System.Messaging.Message.BodyStream%2A> property before sending the <xref:System.Messaging.Message> object. If you set the <xref:System.Messaging.Message.Body%2A> property, the contents are serialized into the <xref:System.Messaging.Message.BodyStream%2A> property. However, you can choose to write the <xref:System.Messaging.Message.BodyStream%2A> property directly. This is useful, for example, when you want to open a connection to a file and stream its contents as the body of your message.  
   
@@ -1360,7 +1360,7 @@ if (myObject is float) {
   
  You can only use the <xref:System.Messaging.Message.DigitalSignature%2A> property when running Message Queuing version 2.0. The sending application must specify Message Queuing version 1.0 signatures when requesting authentication. If the sending application sends a Message Queuing version 2.0 signature, this property contains a buffer of four bytes, each containing zero.  
   
- The <xref:System.Messaging.Message.DigitalSignature%2A> property, together with the <xref:System.Messaging.Message.SenderCertificate%2A> property, is also used by connector applications when a message is sent. In this scenario, the connector application—rather than Message Queuing—generates the digital signature, which it bases on the certificate of the user sending the message.  
+ The <xref:System.Messaging.Message.DigitalSignature%2A> property, together with the <xref:System.Messaging.Message.SenderCertificate%2A> property, is also used by connector applications when a message is sent. In this scenario, the connector application - rather than Message Queuing - generates the digital signature, which it bases on the certificate of the user sending the message.  
   
  The <xref:System.Messaging.Message.DigitalSignature%2A> property has a maximum array size of 256.  
   
@@ -1637,7 +1637,7 @@ if (myObject is float) {
 ## Remarks  
  Message Queuing generates a message identifier when the message is sent. The identifier is composed of 20 bytes and includes two items: the machine <xref:System.Guid> of the sending computer and a unique identifier for the message on the computer. The combination of the two items produces a message identifier that is unique on the network.  
   
- Message Queuing generates message identifiers for all messages—including acknowledgment and report messages. An acknowledgment message is generally sent by Message Queuing in reaction to the arrival or failure of an original, sent message. You can find the <xref:System.Messaging.Message.Id%2A> property value of the original message in the <xref:System.Messaging.Message.CorrelationId%2A> property of an acknowledgment message.  
+ Message Queuing generates message identifiers for all messages - including acknowledgment and report messages. An acknowledgment message is generally sent by Message Queuing in reaction to the arrival or failure of an original, sent message. You can find the <xref:System.Messaging.Message.Id%2A> property value of the original message in the <xref:System.Messaging.Message.CorrelationId%2A> property of an acknowledgment message.  
   
  You can also use the <xref:System.Messaging.Message.Id%2A> property when sending a response message to a response queue. To include the identifier of the original message in a response message, set the <xref:System.Messaging.Message.CorrelationId%2A> property of the response message to the <xref:System.Messaging.Message.Id%2A> property of the original message. The application reading the response message can then use the correlation identifier of the response message to identify the original message.  
   
@@ -2087,7 +2087,7 @@ if (myObject is float) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Messaging.Message.Recoverable%2A> property indicates whether the delivery of a message is guaranteed—even if a computer crashes while the message is en route to the destination queue.  
+ The <xref:System.Messaging.Message.Recoverable%2A> property indicates whether the delivery of a message is guaranteed - even if a computer crashes while the message is en route to the destination queue.  
   
  If delivery of a message is guaranteed, the message is stored locally at every step along the route, until the message is successfully forwarded to the next computer. Setting the <xref:System.Messaging.Message.Recoverable%2A> property to `true` could affect throughput.  
   
@@ -2595,7 +2595,7 @@ if (myObject is float) {
   
  You can set he message's <xref:System.Messaging.Message.AcknowledgeType%2A> property to request that Message Queuing send a negative acknowledgment message back to the sending application if the message does not arrive before the timer expires.  
   
- If the <xref:System.Messaging.Message.TimeToReachQueue%2A> property is set to 0 seconds, Message Queuing tries once to send the message to its destination—if the queue is waiting for the message. If the queue is local, the message always reaches it.  
+ If the <xref:System.Messaging.Message.TimeToReachQueue%2A> property is set to 0 seconds, Message Queuing tries once to send the message to its destination - if the queue is waiting for the message. If the queue is local, the message always reaches it.  
   
  If the value specified by the <xref:System.Messaging.Message.TimeToReachQueue%2A> property is greater than the value specified by the <xref:System.Messaging.Message.TimeToBeReceived%2A> property, <xref:System.Messaging.Message.TimeToBeReceived%2A> takes precedence.  
   

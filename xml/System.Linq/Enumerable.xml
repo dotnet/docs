@@ -1889,7 +1889,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TResult">The type to cast the elements of <paramref name="source" /> to.</typeparam>
-        <param name="source">The <see cref="T:System.Collections.IEnumerable" /> that contains the elements to be cast to type <c>TResult</c>.</param>
+        <param name="source">The <see cref="T:System.Collections.IEnumerable" /> that contains the elements to be cast to type <paramref name="TResult" />.</param>
         <summary>Casts the elements of an <see cref="T:System.Collections.IEnumerable" /> to the specified type.</summary>
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> that contains each element of the source sequence cast to the specified type.</returns>
         <remarks>

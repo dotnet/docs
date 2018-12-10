@@ -111,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Specifies a context value that must be returned with the issued token if it is passed in the request. The value is opaque, that is, its semantics are known only by the originator of the message (typically a relying party – RP); it is not interpreted by the receiver of the message or any intermediaries. The wctx parameter is optional. Set the <xref:System.IdentityModel.Services.WSFederationMessage.Context%2A> property to `null` or an empty string to remove the wctx parameter from the message.  
+ Specifies a context value that must be returned with the issued token if it is passed in the request. The value is opaque, that is, its semantics are known only by the originator of the message (typically a relying party - RP); it is not interpreted by the receiver of the message or any intermediaries. The wctx parameter is optional. Set the <xref:System.IdentityModel.Services.WSFederationMessage.Context%2A> property to `null` or an empty string to remove the wctx parameter from the message.  
   
 > [!IMPORTANT]
 >  If your application receives a WS-Federation message with the wctx parameter set, it should ensure that the same value is returned in any response to the sender, or forwarded if the message is passed on to another party.  

@@ -1,5 +1,7 @@
 ---
-title: "await (C# Reference)"
+title: "await - C# Reference"
+ms.custom: seodec18
+
 ms.date: 05/22/2017
 f1_keywords: 
   - "await_CSharpKeyword"

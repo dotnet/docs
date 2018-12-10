@@ -1,5 +1,5 @@
 ---
-title: dotnet msbuild command - .NET Core CLI
+title: dotnet msbuild command
 description: The dotnet msbuild command provides access to the MSBuild command line.
 ms.date: 12/03/2018
 ---

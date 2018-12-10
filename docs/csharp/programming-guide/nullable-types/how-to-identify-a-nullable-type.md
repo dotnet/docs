@@ -1,5 +1,6 @@
 ---
-title: "How to: Identify a nullable type (C# Programming Guide)"
+title: "How to: Identify a nullable type - C# Programming Guide"
+ms.custom: seodec18
 description: "Learn how to determine whether a type is a nullable type or an instance is of a nullable type"
 ms.date: 09/24/2018
 helpviewer_keywords: 

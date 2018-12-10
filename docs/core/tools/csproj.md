@@ -2,7 +2,6 @@
 title: Additions to the csproj format for .NET Core
 description: Learn about the differences between existing and .NET Core csproj files
 author: blackdwarf
-ms.author: mairaw
 ms.date: 09/22/2017
 ---
 # Additions to the csproj format for .NET Core
@@ -69,9 +68,6 @@ To disable **all implicit globs**, you can set the `<EnableDefaultItems>` proper
     <EnableDefaultItems>false</EnableDefaultItems>
 </PropertyGroup>
 ```
-
-### Recommendation
-With csproj, we recommend that you remove the default globs from your project and only add file paths with globs for those artifacts that your app/library needs for various scenarios (for example, runtime and NuGet packaging).
 
 ## How to see the whole project as MSBuild sees it
 

@@ -1,5 +1,7 @@
 ---
-title: "short (C# Reference)"
+title: "short - C# Reference"
+ms.custom: seodec18
+
 ms.date: 03/14/2017
 f1_keywords: 
   - "short"

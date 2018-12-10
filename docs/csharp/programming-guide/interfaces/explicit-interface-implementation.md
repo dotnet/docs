@@ -1,5 +1,6 @@
 ---
-title: "Explicit Interface Implementation (C# Programming Guide)"
+title: "Explicit Interface Implementation - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "explicit interfaces [C#]"

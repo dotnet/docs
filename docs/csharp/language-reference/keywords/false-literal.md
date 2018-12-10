@@ -1,5 +1,7 @@
 ---
-title: "false literal (C# Reference)"
+title: "false literal - C# Reference"
+ms.custom: seodec18
+
 ms.date: 12/03/2018
 helpviewer_keywords: 
   - "false literal keyword [C#]"
@@ -16,6 +18,6 @@ Represents the [bool](bool.md) value `false`:
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [false operator](false-operator.md)
 - [true](true.md)
+- [true and false operators](true-false-operators.md)
 - [?: Operator](../operators/conditional-operator.md)

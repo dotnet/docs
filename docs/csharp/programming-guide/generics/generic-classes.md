@@ -1,5 +1,6 @@
 ---
-title: "Generic Classes (C# Programming Guide)"
+title: "Generic Classes - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, generic classes"

@@ -1,5 +1,7 @@
 ---
-title: "Default values table (C# Reference)"
+title: "Default values table - C# Reference"
+ms.custom: seodec18
+
 description: Learn what are the default values of C# value types.
 ms.date: 08/23/2018
 helpviewer_keywords: 

@@ -59,8 +59,7 @@ public class CustomTextMessageEncoder : MessageEncoder
   
         this.writerSettings = new XmlWriterSettings();  
         this.writerSettings.Encoding = Encoding.GetEncoding(factory.CharSet);  
-        this.contentType = string.Format("{0}; charset={1}",   
-            this.factory.MediaType, this.writerSettings.Encoding.HeaderName);  
+        this.contentType = $"{this.factory.MediaType}; charset={this.writerSettings.Encoding.HeaderName}";
     }  
   
     public override string ContentType  

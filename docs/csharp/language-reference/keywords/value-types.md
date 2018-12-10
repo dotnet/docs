@@ -1,5 +1,7 @@
 ---
-title: "Value types (C# Reference)"
+title: "Value types - C# Reference"
+ms.custom: seodec18
+
 ms.date: 11/26/2018
 f1_keywords: 
   - "cs.valuetypes"

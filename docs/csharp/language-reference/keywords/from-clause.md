@@ -1,5 +1,7 @@
 ---
-title: "from clause (C# Reference)"
+title: "from clause - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "from_CSharpKeyword"

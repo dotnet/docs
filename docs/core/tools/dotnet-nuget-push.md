@@ -1,5 +1,5 @@
 ---
-title: dotnet nuget push command - .NET Core CLI
+title: dotnet nuget push command
 description: The dotnet nuget push command pushes a package to the server and publishes it.
 author: karann-msft
 ms.date: 12/04/2018

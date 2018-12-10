@@ -1,5 +1,6 @@
 ---
-title: "Partial Classes and Methods (C# Programming Guide)"
+title: "Partial Classes and Methods - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "partial methods [C#]"

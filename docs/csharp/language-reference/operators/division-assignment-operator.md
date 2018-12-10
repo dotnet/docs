@@ -1,6 +1,7 @@
 ---
-title: "/= Operator (C# Reference)"
-ms.date: 12/10/2018
+title: "/= Operator - C# Reference"
+ms.custom: seodec18
+ms.date: 12/13/2018
 f1_keywords: 
   - "/=_CSharpKeyword"
 helpviewer_keywords: 

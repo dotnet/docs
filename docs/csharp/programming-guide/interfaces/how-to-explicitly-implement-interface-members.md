@@ -1,5 +1,6 @@
 ---
-title: "How to: Explicitly Implement Interface Members (C# Programming Guide)"
+title: "How to: Explicitly Implement Interface Members - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "interfaces [C#], explicitly implementing"

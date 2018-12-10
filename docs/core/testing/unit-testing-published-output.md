@@ -1,6 +1,6 @@
 ---
 title: Test published output with dotnet vstest
-description: Learn how to run tests on published output with the dotnet vstest command.
+description: Learn how to run tests on published libraries, instead of on source code, with the dotnet vstest command.
 author: kendrahavens
 ms.author: kehavens
 ms.date: 10/18/2017
@@ -14,9 +14,11 @@ You can run tests on already published output by using the `dotnet vstest` comma
 dotnet vstest <MyPublishedTests>.dll
 ```
 
-where `<MyPublishedTests>` is the name of your published test project.
+Where `<MyPublishedTests>` is the name of your published test project.
 
-## Example of running tests on a published DLL
+## Example
+
+The commands below demonstrate running tests on a published DLL.
 
 ```
 dotnet new mstest -o MyProject.Tests

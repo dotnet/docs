@@ -1,5 +1,7 @@
 ---
-title: "Contextual Keywords (C# Reference)"
+title: "Contextual Keywords - C# Reference"
+ms.custom: seodec18
+
 ms.date: 03/07/2017
 helpviewer_keywords: 
   - "contextual keywords [C#]"

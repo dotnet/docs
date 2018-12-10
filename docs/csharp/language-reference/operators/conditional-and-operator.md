@@ -1,5 +1,7 @@
 ---
-title: "&amp;&amp; Operator (C# Reference)"
+title: "&amp;&amp; Operator - C# Reference"
+ms.custom: seodec18
+
 ms.date: 11/06/2018
 f1_keywords: 
   - "&&_CSharpKeyword"

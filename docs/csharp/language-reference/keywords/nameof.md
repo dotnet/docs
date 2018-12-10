@@ -1,5 +1,7 @@
 ---
-title: "nameof  (C# Reference)"
+title: "nameof  - C# Reference"
+ms.custom: seodec18
+
 ms.date: 06/16/2017
 f1_keywords: 
   - "nameof_CSharpKeyword"

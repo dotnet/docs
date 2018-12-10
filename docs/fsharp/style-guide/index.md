@@ -11,7 +11,7 @@ This guidance has been formulated based on the use of F# in large codebases with
 
 ## Five principles of good F# code
 
-You should keep the following principles in mind any time you write F# code, especially in systems that will change over time. Every piece of guidance in further articles stems from these five points.
+Keep the following principles in mind any time you write F# code, especially in systems that will change over time. Every piece of guidance in further articles stems from these five points.
 
 1. **Good F# code is succinct, expressive, and composable**
 

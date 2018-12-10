@@ -1,5 +1,6 @@
 ---
-title: Query Expressions (F#)
+title: Query Expressions
+ms.custom: seodec18
 description: Learn about query expression support for LINQ in the F# programming language.
 ms.date: 05/16/2016
 ---

@@ -1,5 +1,6 @@
 ---
-title: Type Inference (F#)
+title: Type Inference
+ms.custom: seodec18
 description: Learn how the F# compiler infers the types of values, variables, parameters, and return values.
 ms.date: 05/16/2016
 ---

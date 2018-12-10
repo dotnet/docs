@@ -1,5 +1,6 @@
 ---
-title: Assertions (F#)
+title: Assertions
+ms.custom: seodec18
 description: Learn how to use the 'assert' expression as a debugging feature for testing expressions in the F# programming language.
 ms.date: 05/16/2016
 ---

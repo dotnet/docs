@@ -1,5 +1,6 @@
 ---
-title: Reference Cells (F#)
+title: Reference Cells
+ms.custom: seodec18
 description: Learn how F# reference cells are storage locations that enable you to create mutable values with reference semantics.
 ms.date: 05/16/2016
 ---

@@ -1,5 +1,6 @@
 ---
-title: Properties (F#)
+title: Properties
+ms.custom: seodec18
 description: Learn about F# properties, which are members that represent values associated with an object.
 ms.date: 05/16/2016
 ---

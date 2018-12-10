@@ -1,5 +1,6 @@
 ---
-title: Discriminated Unions (F#)
+title: Discriminated Unions
+ms.custom: seodec18
 description: Learn how to use F# discriminated unions.
 ms.date: 05/16/2016
 ---

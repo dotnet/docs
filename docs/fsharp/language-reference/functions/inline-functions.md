@@ -1,5 +1,6 @@
 ---
-title: Inline Functions (F#)
+title: Inline Functions
+ms.custom: seodec18
 description: Learn how to use F# inline functions that are integrated directly into the calling code.
 ms.date: 05/16/2016
 ---

@@ -291,9 +291,9 @@
       </Parameters>
       <Docs>
         <param name="uriList">A space-delimited list of URIs.</param>
-        <summary>Checks for the presence of <see langword="http://schemas.xmlsoap.org/soap/encoding/" /> in a string that represents a list of Uniform Resource Indicators (URIs).</summary>
+        <summary>Checks for the presence of <c>"http://schemas.xmlsoap.org/soap/encoding/"</c> in a string that represents a list of Uniform Resource Indicators (URIs).</summary>
         <returns>
-          <see langword="true" /> if the string contains <see langword="http://schemas.xmlsoap.org/soap/encoding/" />; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the string contains <c>"http://schemas.xmlsoap.org/soap/encoding/"</c>; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

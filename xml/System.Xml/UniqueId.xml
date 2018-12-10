@@ -316,7 +316,11 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="chars" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> less than zero or greater than the length of the array minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> less than zero or greater than the length of the array.
+
+-or-
+
+<paramref name="count" /> less than zero or greater than the length of the array minus <paramref name="offset" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="count" /> equals zero.</exception>
       </Docs>

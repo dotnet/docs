@@ -909,6 +909,7 @@
         <Parameter Name="symAlg" Type="System.Security.Cryptography.SymmetricAlgorithm" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
+        <param name="plaintext">The data to encrypt.</param>
         <param name="plainText">The data to encrypt.</param>
         <param name="symmetricAlgorithm">The symmetric algorithm to use for encryption.</param>
         <param name="symAlg">The symmetric algorithm to use for encryption.</param>

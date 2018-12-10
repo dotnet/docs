@@ -89,9 +89,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value indicating the level of authentication and impersonation used for this request.</summary>
-        <value>Returns <see cref="T:System.Net.Security.AuthenticationLevel" />.  
-  
- A bitwise combination of the <see cref="T:System.Net.Security.AuthenticationLevel" /> values.  The default value is <see cref="F:System.Net.Security.AuthenticationLevel.MutualAuthRequested" />.</value>
+        <value>A bitwise combination of the <see cref="T:System.Net.Security.AuthenticationLevel" /> values. The default value is <see cref="F:System.Net.Security.AuthenticationLevel.MutualAuthRequested" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -119,9 +117,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the cache policy for this request.</summary>
-        <value>Returns <see cref="T:System.Net.Cache.RequestCachePolicy" />.  
-  
- A <see cref="T:System.Net.Cache.RequestCachePolicy" /> object that defines a cache policy. The default is <see cref="P:System.Net.WebRequest.DefaultCachePolicy" />.</value>
+        <value>A <see cref="T:System.Net.Cache.RequestCachePolicy" /> object that defines a cache policy. The default is <see cref="P:System.Net.WebRequest.DefaultCachePolicy" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -153,9 +149,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the collection of security certificates that are associated with this request.</summary>
-        <value>Returns <see cref="T:System.Security.Cryptography.X509Certificates.X509CertificateCollection" />.  
-  
- The collection of security certificates associated with this request.</value>
+        <value>The collection of security certificates associated with this request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,9 +170,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the amount of time, in milliseconds, the application will wait for 100-continue from the server before uploading data.</summary>
-        <value>Returns <see cref="T:System.TimeSpan" />.  
-  
- The amount of time, in milliseconds, the application will wait for 100-continue from the server before uploading data. The default value is 350 milliseconds.</value>
+        <value>The amount of time, in milliseconds, the application will wait for 100-continue from the server before uploading data. The default value is 350 milliseconds.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,9 +191,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the impersonation level for the current request.</summary>
-        <value>Returns <see cref="T:System.Security.Principal.TokenImpersonationLevel" />.  
-  
- The impersonation level for the request. The default is <see cref="F:System.Security.Principal.TokenImpersonationLevel.Delegation" />.</value>
+        <value>The impersonation level for the request. The default is <see cref="F:System.Security.Principal.TokenImpersonationLevel.Delegation" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -229,9 +219,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum allowed length of the response headers.</summary>
-        <value>Returns <see cref="T:System.Int32" />.  
-  
- The length, in kilobytes (1024 bytes), of the response headers.</value>
+        <value>The length, in kilobytes (1024 bytes), of the response headers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -263,9 +251,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a time-out in milliseconds when writing a request to or reading a response from a server.</summary>
-        <value>Returns <see cref="T:System.Int32" />.  
-  
- The number of milliseconds before the writing or reading times out. The default value is 300,000 milliseconds (5 minutes).</value>
+        <value>The number of milliseconds before the writing or reading times out. The default value is 300,000 milliseconds (5 minutes).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,9 +272,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a callback method to validate the server certificate.</summary>
-        <value>Returns <see cref="T:System.Net.Security.RemoteCertificateValidationCallback" />.  
-  
- A callback method to validate the server certificate.</value>
+        <value>A callback method to validate the server certificate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

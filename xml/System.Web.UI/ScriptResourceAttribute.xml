@@ -110,8 +110,8 @@
         <param name="scriptName">The name of the script library.</param>
         <param name="stringResourceName">The name of the resource file for the script library.</param>
         <param name="stringResourceClientTypeName">The name of the type to create for the values in the resource file.</param>
-        <param name="scriptResourceName">To be added.</param>
-        <param name="typeName">To be added.</param>
+        <param name="scriptResourceName">The name of the resource file for the script library.</param>
+        <param name="typeName">The name of the type to create for the values in the resource file.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ScriptResourceAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

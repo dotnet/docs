@@ -81,11 +81,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.OperationContext" />
+        <Parameter Name="owner" Type="System.ServiceModel.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The <see cref="T:System.ServiceModel.OperationContext" /> to attach to.</param>
+        <summary>Attaches the current <see cref="T:System.ServiceModel.Web.WebOperationContext" /> instance to the specified <see cref="T:System.ServiceModel.OperationContext" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -676,11 +676,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.OperationContext" />
+        <Parameter Name="owner" Type="System.ServiceModel.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The <see cref="T:System.ServiceModel.OperationContext" /> to detach from.</param>
+        <summary>Detaches the current <see cref="T:System.ServiceModel.Web.WebOperationContext" /> instance from the specified <see cref="T:System.ServiceModel.OperationContext" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

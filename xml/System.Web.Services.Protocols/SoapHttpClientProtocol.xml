@@ -194,7 +194,12 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Exception">The proxy class does not have a binding defined.</exception>
+        <exception cref="T:System.Exception">
+          The binding defined in the proxy class could not be found in the discovery document at <see cref="P:System.Web.Services.Protocols.WebClientProtocol.Url" />.
+
+-or-
+        
+The proxy class does not have a binding defined.</exception>
         <altmember cref="T:System.Web.Services.WebServiceBindingAttribute" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/fxx6cfx2(v=vs.100)">XML Web Service Discovery</related>
       </Docs>

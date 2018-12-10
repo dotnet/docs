@@ -95,7 +95,7 @@ public int MainNew(string[] args)
       </Parameters>
       <Docs>
         <param name="value">An instance of the class that implements the provider to publish.</param>
-        <param name="obj">To be added.</param>
+        <param name="obj">An instance of the class that implements the provider to publish.</param>
         <summary>Makes an instance of a provider available within the WMI infrastructure.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -227,7 +227,7 @@
       <Docs>
         <param name="username">The user name to be validated.</param>
         <param name="password">The password for the specified user.</param>
-        <param name="customCredential">The value or values to validate in addition to <c>userName</c> and <paramref name="password" />, if any.</param>
+        <param name="customCredential">The value or values to validate in addition to <paramref name="username" /> and <paramref name="password" />, if any.</param>
         <param name="isPersistent">A value that indicates whether the authentication ticket remains valid across sessions.</param>
         <summary>Checks user credentials and creates an authentication ticket (cookie) if the credentials are valid.</summary>
         <returns>
@@ -323,7 +323,7 @@
       <Docs>
         <param name="username">The user name to be validated.</param>
         <param name="password">The password for the specified user.</param>
-        <param name="customCredential">The value or values to validate in addition to <c>userName</c> and <paramref name="password" />, if any.</param>
+        <param name="customCredential">The value or values to validate in addition to <paramref name="username" /> and <paramref name="password" />, if any.</param>
         <summary>Authenticates user credentials without issuing an authentication ticket.</summary>
         <returns>
           <see langword="true" /> if the user credentials are valid; otherwise, <see langword="false" />.</returns>

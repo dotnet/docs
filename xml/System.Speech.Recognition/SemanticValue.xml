@@ -910,8 +910,8 @@ newGrammar.SpeechRecognized +=
         <Parameter Name="key" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">A key for a <see cref="T:System.Speech.Recognition.SemanticValue" />.</param>
+        <summary>Adds the specified key and <see cref="T:System.Speech.Recognition.SemanticValue" /> to the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -935,7 +935,7 @@ newGrammar.SpeechRecognized +=
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all key/value pairs from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -959,9 +959,9 @@ newGrammar.SpeechRecognized +=
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The array of key/value pairs that is the target of the operation.</param>
+        <param name="index">An integer that specifies the location in the array to which the key/value pair will be copied.</param>
+        <summary>Copies a key/value pair to a specific location in a targeted array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -985,8 +985,8 @@ newGrammar.SpeechRecognized +=
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the collection is read-only.</summary>
+        <value>Returns a value that indicates whether the collection is read-only.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1012,9 +1012,9 @@ newGrammar.SpeechRecognized +=
         <Parameter Name="key" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">A key for a <see cref="T:System.Speech.Recognition.SemanticValue" />.</param>
+        <summary>Removes the specified key and <see cref="T:System.Speech.Recognition.SemanticValue" /> from the collection.</summary>
+        <returns><see langword="true" /> if the key/value pair was successfully removed from the collection; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if the key/value pair is not found in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1041,9 +1041,9 @@ newGrammar.SpeechRecognized +=
         <Parameter Name="value" Type="System.Speech.Recognition.SemanticValue" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">A key for a <see cref="T:System.Speech.Recognition.SemanticValue" />.</param>
+        <param name="value">The <see cref="T:System.Speech.Recognition.SemanticValue" /> to add.</param>
+        <summary>Adds the specified key and <see cref="T:System.Speech.Recognition.SemanticValue" /> to the dictionary.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1067,8 +1067,8 @@ newGrammar.SpeechRecognized +=
         <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection that contains the keys from a dictionary of key/value pairs.</summary>
+        <value>A collection that contains the keys from a dictionary of key/value pairs.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1094,9 +1094,9 @@ newGrammar.SpeechRecognized +=
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">A key for a <see cref="T:System.Speech.Recognition.SemanticValue" />.</param>
+        <summary>Removes the specified key and <see cref="T:System.Speech.Recognition.SemanticValue" /> from the dictionary.</summary>
+        <returns><see langword="true" /> if the key/value pair was successfully removed from the dictionary; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if the key/value pair is not found in the dictionary.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1120,10 +1120,10 @@ newGrammar.SpeechRecognized +=
         <Parameter Name="value" Type="System.Speech.Recognition.SemanticValue" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">A key for a <see cref="T:System.Speech.Recognition.SemanticValue" />.</param>
+        <param name="value">The <see cref="T:System.Speech.Recognition.SemanticValue" /> to get.</param>
+        <summary>Gets the <see cref="T:System.Speech.Recognition.SemanticValue" /> associated with the specified key.</summary>
+        <returns><see langword="true" /> if the dictionary contains a key/value pair with the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1147,8 +1147,8 @@ newGrammar.SpeechRecognized +=
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Speech.Recognition.SemanticValue&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection that contains the values from a dictionary of key/value pairs.</summary>
+        <value>A collection that contains the values from a dictionary of key/value pairs.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1172,8 +1172,8 @@ newGrammar.SpeechRecognized +=
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>An enumerator that iterates through a collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

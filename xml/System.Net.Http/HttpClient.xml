@@ -1001,7 +1001,7 @@ public class GoodController : ApiController
       </Parameters>
       <Docs>
         <param name="requestUri">The Uri the request is sent to.</param>
-        <summary>Send a GET request to the specified Uri and return the response body as a byte array in an asynchronous operation.</summary>
+        <summary>Sends a GET request to the specified Uri and return the response body as a byte array in an asynchronous operation.</summary>
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

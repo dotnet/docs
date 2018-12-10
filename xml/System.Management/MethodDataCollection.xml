@@ -115,8 +115,8 @@
         <param name="methodName">The name of the method to add.</param>
         <param name="inParameters">The <see cref="T:System.Management.ManagementBaseObject" /> holding the input parameters to the method.</param>
         <param name="outParameters">The <see cref="T:System.Management.ManagementBaseObject" /> holding the output parameters to the method.</param>
-        <param name="inParams">To be added.</param>
-        <param name="outParams">To be added.</param>
+        <param name="inParams">The <see cref="T:System.Management.ManagementBaseObject" /> holding the input parameters to the method.</param>
+        <param name="outParams">The <see cref="T:System.Management.ManagementBaseObject" /> holding the output parameters to the method.</param>
         <summary>Adds a <see cref="T:System.Management.MethodData" /> to the <see cref="T:System.Management.MethodDataCollection" />. This overload will add a new method with the specified parameter objects to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

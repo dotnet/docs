@@ -105,7 +105,7 @@
       </Parameters>
       <Docs>
         <param name="app">An <see cref="T:System.Web.HttpApplication" /> object that provides access to the methods, properties, and events that are common to all applications in an ASP.NET application.</param>
-        <param name="context">To be added.</param>
+        <param name="context">An <see cref="T:System.Web.HttpApplication" /> object that provides access to the methods, properties, and events that are common to all applications in an ASP.NET application.</param>
         <summary>Initializes a module and prepares it to handle requests.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

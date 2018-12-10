@@ -738,7 +738,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -788,7 +792,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -838,7 +846,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -888,7 +900,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -938,7 +954,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -988,7 +1008,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -1038,7 +1062,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -1088,7 +1116,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -1138,7 +1170,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -1188,7 +1224,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -1238,7 +1278,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -1288,7 +1332,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -1338,7 +1386,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -1388,7 +1440,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -1438,7 +1494,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -1488,7 +1548,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -1538,7 +1602,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -1588,7 +1656,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -1638,7 +1710,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteArray">
@@ -1688,7 +1764,11 @@ binarywriter.WriteEndAttribute();
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
+          <paramref name="offset" /> is &lt; 0 or &gt; <paramref name="array" /> length.
+
+-or-
+
+<paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteAttributeString">
@@ -1827,7 +1907,12 @@ binarywriter.WriteEndAttribute();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlDictionaryWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -2569,7 +2654,12 @@ binarywriter.WriteEndAttribute();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlDictionaryWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>

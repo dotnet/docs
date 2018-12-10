@@ -284,7 +284,8 @@
       <Docs>
         <param name="message">A message that identifies the reason the exception occurred. This parameter sets the <see cref="P:System.Exception.Message" /> property.</param>
         <param name="code">An <see cref="T:System.Xml.XmlQualifiedName" /> that specifies the type of error that occurred. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Code" /> property.</param>
-        <param name="subcode">To be added.</param>
+        <param name="subCode">An optional subcode for the SOAP fault. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.SubCode" /> property.</param>
+        <param name="subcode">An optional subcode for the SOAP fault. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.SubCode" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class with the specified exception message, exception code, and subcode.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Exception.Message" />
@@ -358,7 +359,8 @@
         <param name="actor">A URI that identifies the piece of code that caused the exception. Typically, this is a URL to an XML Web service method. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Actor" /> property.</param>
         <param name="role">A URI that represents the XML Web service's function in processing the SOAP message. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Role" /> property.</param>
         <param name="detail">An <see cref="T:System.Xml.XmlNode" /> that contains application specific exception information. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Detail" /> property.</param>
-        <param name="subcode">To be added.</param>
+        <param name="subCode">An optional subcode for the SOAP fault. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.SubCode" /> property.</param>
+        <param name="subcode">An optional subcode for the SOAP fault. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.SubCode" /> property.</param>
         <param name="innerException">An exception that is the root cause of the exception. This parameter sets the <see cref="P:System.Exception.InnerException" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class with the specified exception message, exception code, URI that identifies the piece of code that caused the exception, application-specific exception information, and reference to the root cause of the exception.</summary>
         <remarks>To be added.</remarks>
@@ -400,7 +402,8 @@
         <param name="role">A URI that represents the XML Web service's function in processing the SOAP message. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Role" /> property.</param>
         <param name="lang">A human language associated with the exception. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Lang" /> property.</param>
         <param name="detail">An <see cref="T:System.Xml.XmlNode" /> that contains application specific exception information. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Detail" /> property.</param>
-        <param name="subcode">To be added.</param>
+        <param name="subcode">An optional subcode for the SOAP fault. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.SubCode" /> property</param>
+        <param name="subCode">An optional subcode for the SOAP fault. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.SubCode" /> property</param>
         <param name="innerException">An exception that is the root cause of the exception. This parameter sets the <see cref="P:System.Exception.InnerException" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class with the specified exception message, exception code, URI that identifies the piece of code that caused the exception, URI that represents the XML Web service's function in processing the SOAP message, the human language associated with the exception, the application-specific exception information, the subcode for the SOAP fault and reference to the root cause of the exception.</summary>
         <remarks>To be added.</remarks>

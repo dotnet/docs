@@ -92,7 +92,8 @@
       </Parameters>
       <Docs>
         <param name="code">An <see cref="T:System.Xml.XmlQualifiedName" /> specifying the application specific error code. Sets the <see cref="P:System.Web.Services.Protocols.SoapFaultSubCode.Code" /> property.</param>
-        <param name="subcode">To be added.</param>
+        <param name="subCode">A <see cref="T:System.Web.Services.Protocols.SoapFaultSubCode" /> specifying additional application specific error information. Sets the <see cref="P:System.Web.Services.Protocols.SoapFaultSubCode.SubCode" /> property.</param>
+        <param name="subcode">A <see cref="T:System.Web.Services.Protocols.SoapFaultSubCode" /> specifying additional application specific error information. Sets the <see cref="P:System.Web.Services.Protocols.SoapFaultSubCode.SubCode" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapFaultSubCode" /> class setting the application specific error code and additional error information.</summary>
         <remarks>To be added.</remarks>
       </Docs>

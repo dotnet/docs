@@ -617,7 +617,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       </ReturnValue>
       <Docs>
         <summary>Gets the lock token of the instance owner bound to the current instance handle.</summary>
-        <value>The lock token bound to the current instance handle, or Guid.Empty if the handle isn't bound to an instance owner.</value>
+        <value>The lock token bound to the current instance handle, or <see cref="F:System.Guid.Empty" /> if the handle isn't bound to an instance owner.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

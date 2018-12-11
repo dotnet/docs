@@ -1,6 +1,6 @@
 ---
 title: Machine learning data transforms - ML.NET
-description: Explore the different data transforms supported in ML.NET.
+description: Explore the feature engineering components supported in ML.NET.
 author: JRAlexander
 ms.custom: seodec18
 ms.date: 12/04/2018

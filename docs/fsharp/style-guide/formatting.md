@@ -337,16 +337,23 @@ type PostalAddress =
     }
 ```
 
-Placing the opening token on the same line and the closing token on a new line is also fine, but be aware that you need to use the [verbose syntax](../language-reference/verbose-syntax.md) to define members (the `with` keyword):
+Placing the opening token on a new line and the closing token on a new line is preferrable if you are declaring interface implementations or members on the record:
 
 ```fsharp
-//  OK, but verbose syntax required
-type PostalAddress = { 
-    Address: string
-    City: string
-    Zip: string
-} with
+// Declaring additional members on PostalAddress
+type PostalAddress =
+    { 
+        Address: string
+        City: string
+        Zip: string
+    } with
     member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
+    
+type MyRecord =
+    {
+        SomeField : int
+    }
+    interface IMyInterface
 ```
 
 ## Formatting records
@@ -365,27 +372,51 @@ let rainbow =
       Lackeys = ["Zippy"; "George"; "Bungle"] }
 ```
 
-Placing the opening token on the same line and the closing token on a new line is also fine:
+Placing the opening token on a new line, the contents tabbed over one scope, and the closing token on a new line is preferrable if you are:
+
+* Moving records around in code with different indentation scopes
+* Piping them into a function
 
 ```fsharp
-let rainbow = {
-    Boss1 = "Jeffrey"
-    Boss2 = "Jeffrey"
-    Boss3 = "Jeffrey"
-    Boss4 = "Jeffrey"
-    Boss5 = "Jeffrey"
-    Boss6 = "Jeffrey"
-    Boss7 = "Jeffrey"
-    Boss8 = "Jeffrey"
-    Lackeys = ["Zippy"; "George"; "Bungle"]
-}
+let rainbow =
+    {
+        Boss1 = "Jeffrey"
+        Boss2 = "Jeffrey"
+        Boss3 = "Jeffrey"
+        Boss4 = "Jeffrey"
+        Boss5 = "Jeffrey"
+        Boss6 = "Jeffrey"
+        Boss7 = "Jeffrey"
+        Boss8 = "Jeffrey"
+        Lackeys = ["Zippy"; "George"; "Bungle"]
+    }
+    
+type MyRecord =
+    {
+        SomeField : int
+    }
+    interface IMyInterface
+
+let foo a =
+    a
+    |> Option.map (fun x ->
+        {
+            MyField = x
+        })
 ```
 
 The same rules apply for list and array elements.
 
 ## Formatting lists and arrays
 
-Write `x :: l` with spaces around the `::` operator (`::` is an infix operator, hence surrounded by spaces) and `[1; 2; 3]` (`;` is a delimiter, hence followed by a space).
+Write `x :: l` with spaces around the `::` operator (`::` is an infix operator, hence surrounded by spaces).
+
+List and arrays declared on a single line should have a space after the opening bracket and before the closing bracket:
+
+```fsharp
+let xs = [ 1; 2; 3 ]
+let ys = [| 1; 2; 3; |]
+```
 
 Always use at least one space between two distinct brace-like operators. For example, leave a space between a `[` and a `{`.
 
@@ -408,18 +439,21 @@ Always use at least one space between two distinct brace-like operators. For exa
 Lists and arrays that split across multiple lines follow a similar rule as records do:
 
 ```fsharp
-let pascalsTriangle = [|
-    [|1|]
-    [|1; 1|]
-    [|1; 2; 1|]
-    [|1; 3; 3; 1|]
-    [|1; 4; 6; 4; 1|]
-    [|1; 5; 10; 10; 5; 1|]
-    [|1; 6; 15; 20; 15; 6; 1|]
-    [|1; 7; 21; 35; 35; 21; 7; 1|]
-    [|1; 8; 28; 56; 70; 56; 28; 8; 1|]
-|]
+let pascalsTriangle =
+    [|
+        [|1|]
+        [|1; 1|]
+        [|1; 2; 1|]
+        [|1; 3; 3; 1|]
+        [|1; 4; 6; 4; 1|]
+        [|1; 5; 10; 10; 5; 1|]
+        [|1; 6; 15; 20; 15; 6; 1|]
+        [|1; 7; 21; 35; 35; 21; 7; 1|]
+        [|1; 8; 28; 56; 70; 56; 28; 8; 1|]
+    |]
 ```
+
+And as with records, declaring the opening and closing brackets on their own line will make moving code around and piping into functions easier.
 
 ## Formatting if expressions
 

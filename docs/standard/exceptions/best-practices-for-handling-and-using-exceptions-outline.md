@@ -1,6 +1,6 @@
 ---
 title: [Best practices for handling and using exceptions]
-description: [Practical guide to .]
+description: [Practical guide to handling and using exceptions.]
 author: [sam.wheat@outlook.com]
 ms.date: [12/10/2018]
 ---

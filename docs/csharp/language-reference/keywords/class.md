@@ -89,7 +89,7 @@ Accessing private members of `Child` from `Main` would only be possible if `Main
 
 Types declared inside a class without an access modifier default to `private`, so the data members in this example would still be `private` if the keyword were removed.
 
-Finally, notice that for the object created using the default constructor (`child3`), the age field was initialized to zero by default.
+Finally, notice that for the object created using the default constructor (`child3`), the `age` field was initialized to zero by default.
 
 ## C# language specification
 

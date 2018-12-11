@@ -38,7 +38,7 @@ If the current version of Visual Studio is installed on a computer that also has
 
 ### Available options for VsDevCmd.BAT
 
-To see the available options for VsDevCmd.BAT, run the command with the `-help` flag:
+To see the available options for VsDevCmd.BAT, run the command with the `-help` option:
 ```console
 VsDevCmd.bat -help
 ```

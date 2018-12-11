@@ -10,7 +10,7 @@
       "(?i)dotnet-fsharp$": ":books: Area - F# Guide",
       "(?i)dotnet-ml$": ":books: Area - ML.NET Guide",
       "(?i)dotnet$": ":books: Area - .NET Guide",
-      "(?i)dotnet-api$": ":books: Area - API Reference,:file_folder: Repo - dotnet-api-docs"
+      "(?i)dotnet-ml-api$": ":books: Area - API Reference,:file_folder: Repo - ml-api-docs"
     },
     "contentsource": {
       "(?i).*master\/docs\/core\/tools.*": ":card_file_box: Technology - CLI",
@@ -30,9 +30,7 @@
       "(?i).*master\/docs\/standard\/modernize-with-azure-and-containers.*": ":card_file_box: Technology - .NET Architecture,:book: guide - Modernizing w/ Windows containers",
       "(?i).*master\/docs\/standard\/security.*": ":card_file_box: Technology - Security",
       "(?i).*master\/docs\/standard\/serverless-architecture.*": ":card_file_box: Technology - .NET Architecture,:book: guide - Serverless apps",
-      "(?i).*dotnet-api-docs\/blob\/master\/xml\/system\\.net.*": ":card_file_box: Technology - NCL",
-      "(?i).*dotnet-api-docs\/blob\/master\/xml\/system\\.windows\\.forms.*": ":card_file_box: Technology - WinForms",
-      "(?i).*dotnet-api-docs\/blob\/master\/xml\/system\\.security.*": ":card_file_box: Technology - Security"
+      "(?i).*master\/docs\/standard\/standard\/design-guidelines\/.*": ":book: guide - Framework Design Guidelines"
     }
   }
 }

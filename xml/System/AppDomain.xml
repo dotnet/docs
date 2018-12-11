@@ -55,6 +55,9 @@
   
 -   If an assembly is loaded into the default application domain, it cannot be unloaded from memory while the process is running. However, if you open a second application domain to load and execute the assembly, the assembly is unloaded when that application domain is unloaded. Use this technique to minimize the working set of long-running processes that occasionally use large DLLs.  
   
+ > [!NOTE]
+ >  On .NET Core, the <xref:System.AppDomain> implementation is limited by design and does not provide isolation, unloading, or security boundaries. For .NET Core, there is exactly one <xref:System.AppDomain>. Isolation and unloading are provided through <xref:System.Runtime.Loader.AssemblyLoadContext>. Security boundaries should be provided by process boundaries and appropriate remoting techniques.
+ 
  Multiple application domains can run in a single process; however, there is not a one-to-one correlation between application domains and threads. Several threads can belong to a single application domain, and while a given thread is not confined to a single application domain, at any given time, a thread executes in a single application domain.  
   
  Application domains are created using the <xref:System.AppDomain.CreateDomain%2A> method. <xref:System.AppDomain> instances are used to load and execute assemblies (<xref:System.Reflection.Assembly>). When an <xref:System.AppDomain> is no longer in use, it can be unloaded.  
@@ -874,6 +877,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="friendlyName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Method not supported on .NET Core.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to provide evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
         <altmember cref="P:System.AppDomain.FriendlyName" />
       </Docs>

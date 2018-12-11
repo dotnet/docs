@@ -1,5 +1,7 @@
 ---
-title: "using Directive (C# Reference)"
+title: "using Directive - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "using directive [C#]"

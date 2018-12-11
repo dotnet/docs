@@ -1,5 +1,6 @@
 ---
-title: "Enumeration types (C# Programming Guide)"
+title: "Enumeration types - C# Programming Guide"
+ms.custom: seodec18
 ms.date: "09/10/2017"
 helpviewer_keywords: 
   - "enumerations [C#]"

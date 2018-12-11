@@ -1,8 +1,6 @@
 ---
-title: dotnet restore command - .NET Core CLI
+title: dotnet restore command
 description: Learn how to restore dependencies and project-specific tools with the dotnet restore command.
-author: mairaw
-ms.author: mairaw
 ms.date: 05/29/2018
 ---
 # dotnet restore
@@ -158,6 +156,8 @@ Specifies a NuGet package source to use during the restore operation. This overr
 `--verbosity <LEVEL>`
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+
+---
 
 ## Examples
 

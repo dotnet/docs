@@ -1,5 +1,6 @@
 ---
-title: "Single-Dimensional Arrays (C# Programming Guide)"
+title: "Single-Dimensional Arrays - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "single-dimensional arrays [C#]"

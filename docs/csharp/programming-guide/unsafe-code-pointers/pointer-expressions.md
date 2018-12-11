@@ -1,5 +1,6 @@
 ---
-title: "Pointer Expressions (C# Programming Guide)"
+title: "Pointer Expressions - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "expressions [C#], pointer types"

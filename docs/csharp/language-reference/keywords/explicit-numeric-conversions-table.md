@@ -1,5 +1,7 @@
 ---
-title: "Explicit numeric conversions table (C# Reference)"
+title: "Explicit numeric conversions table - C# Reference"
+ms.custom: seodec18
+
 ms.date: 09/06/2018
 helpviewer_keywords: 
   - "conversions [C#], explicit numeric"

@@ -201,6 +201,18 @@
         "docs/standard/serverless-architecture/**/**.md": "dotnet-ebooks",
         "docs/standard/security/**/**.md": "dotnet-security",
         "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics"
+      },
+      "titleSuffix": {
+        "docs/core/additional-tools/**.md": ".NET Core",
+        "docs/core/build/**.md": ".NET Core",
+        "docs/core/deploying/**.md": ".NET Core",
+        "docs/core/docker/**.md": ".NET Core",
+        "docs/core/migration/**.md": ".NET Core",
+        "docs/core/porting/**.md": ".NET Core",
+        "docs/core/testing/**.md": ".NET Core",
+        "docs/core/tools/**.md": ".NET Core CLI",
+        "docs/core/tutorials/**.md": ".NET Core",
+        "docs/core/versions/**.md": ".NET Core"
       }
     },
     "dest": "_site",

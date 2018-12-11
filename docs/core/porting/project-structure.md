@@ -2,7 +2,6 @@
 title: Organize projects for .NET Framework and .NET Core
 description: Help for project owners who want to compile their solution against .NET Framework and .NET Core side-by-side.
 author: conniey
-ms.author: mairaw
 ms.date: 12/07/2018
 ms.custom: seodec18
 ---

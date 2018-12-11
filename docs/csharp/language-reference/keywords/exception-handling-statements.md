@@ -1,5 +1,7 @@
 ---
-title: "Exception Handling Statements (C# Reference)"
+title: "Exception Handling Statements - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "keywords [C#], exception handling"

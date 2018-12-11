@@ -2,8 +2,8 @@
 title: .NET Core CLI extensibility model
 description: Learn how you can extend the Command-line Interface (CLI) tools.
 author: blackdwarf
-ms.author: mairaw
 ms.date: 04/12/2017
+ms.custom: "seodec18"
 ---
 
 # .NET Core CLI tools extensibility model

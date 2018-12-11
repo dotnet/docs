@@ -1,5 +1,6 @@
 ---
-title: "How to: Implement and Call a Custom Extension Method (C# Programming Guide)"
+title: "How to: Implement and Call a Custom Extension Method - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "extension methods [C#], implementing and calling"

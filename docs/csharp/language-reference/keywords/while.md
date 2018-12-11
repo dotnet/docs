@@ -1,5 +1,7 @@
 ---
-title: "while (C# Reference)"
+title: "while - C# Reference"
+ms.custom: seodec18
+
 ms.date: 05/28/2018
 f1_keywords: 
   - "while_CSharpKeyword"

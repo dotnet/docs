@@ -1,8 +1,6 @@
 ---
-title: dotnet tool update command - .NET Core CLI
+title: dotnet tool update command
 description: The dotnet tool update command updates the specified .NET Core Global Tool on your machine.
-author: mairaw
-ms.author: mairaw
 ms.date: 05/29/2018
 ---
 # dotnet tool update

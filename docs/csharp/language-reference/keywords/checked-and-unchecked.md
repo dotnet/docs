@@ -1,5 +1,7 @@
 ---
-title: "Checked and Unchecked (C# Reference)"
+title: "Checked and Unchecked - C# Reference"
+ms.custom: seodec18
+
 ms.date: 05/15/2018
 helpviewer_keywords: 
   - "operators [C#], checked and unchecked"

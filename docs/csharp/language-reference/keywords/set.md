@@ -1,5 +1,7 @@
 ---
-title: "set keyword (C# Reference)"
+title: "set keyword - C# Reference"
+ms.custom: seodec18
+
 ms.date: 03/10/2017
 f1_keywords: 
   - "set"

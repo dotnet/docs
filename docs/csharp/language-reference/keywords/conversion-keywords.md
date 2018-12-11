@@ -1,5 +1,7 @@
 ---
-title: "Conversion Keywords (C# Reference)"
+title: "Conversion Keywords - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "conversions [C#], keywords"

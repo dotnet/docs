@@ -108,7 +108,7 @@ Add the following code right above the `Main` method to specify those paths and 
 
 [!code-csharp[InitializePaths](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#2 "Define variables to store the data file paths")]
 
-When building a model with ML .NET you start by creating an ML Context. This is comparable conceptually to using `DbContext` in Entity Framework. The environment provides a context for your machine learning job that can be used for exception tracking and logging.
+When building a model with ML.NET you start by creating an ML Context. This is comparable conceptually to using `DbContext` in Entity Framework. The environment provides a context for your machine learning job that can be used for exception tracking and logging.
 
 ### Initialize variables in Main
 
@@ -174,7 +174,7 @@ The last step in data preparation combines all of the feature columns into the *
 
 ## Choose a learning algorithm
 
-After adding the data to the pipeline and transforming it into the correct input format, we select a learning algorithm (**learner**). The learner trains the model. We chose a **regression** task for this problem, so we use a `FastTreeRegressionTrainer` learner, which is one of the regression learners provided by ML .NET.
+After adding the data to the pipeline and transforming it into the correct input format, we select a learning algorithm (**learner**). The learner trains the model. We chose a **regression** task for this problem, so we use a `FastTreeRegressionTrainer` learner, which is one of the regression learners provided by ML.NET.
 
 The `FastTreeRegressionTrainer` learner utilizes gradient boosting. Gradient boosting is a machine learning technique for regression problems. It builds each regression tree in a step-wise fashion. It uses a pre-defined loss function to measure the error in each step and correct for it in the next. The result is a prediction model that is actually an ensemble of weaker prediction models. For more information about gradient boosting, see [Boosted Decision Tree Regression](/azure/machine-learning/studio-module-reference/boosted-decision-tree-regression).
 

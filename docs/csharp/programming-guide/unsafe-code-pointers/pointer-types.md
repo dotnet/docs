@@ -1,5 +1,6 @@
 ---
-title: "Pointer types (C# Programming Guide)"
+title: "Pointer types - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 04/20/2018
 helpviewer_keywords: 
   - "unsafe code [C#], pointers"

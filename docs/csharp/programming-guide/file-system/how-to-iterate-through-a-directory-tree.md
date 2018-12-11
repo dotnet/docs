@@ -1,5 +1,6 @@
 ---
-title: "How to: Iterate Through a Directory Tree (C# Programming Guide)"
+title: "How to: Iterate Through a Directory Tree - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "iterating through folders [C#]"

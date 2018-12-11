@@ -7,9 +7,7 @@ ms.date: 08/07/2017
 dev_langs: 
   - "csharp"
   - "vb"
-ms.custom: 
-  - vs-dotnet
-  - seodoc18
+ms.custom: "vs-dotnet, seodoc18"
 ---
 # Testing a class library with .NET Core in Visual Studio 2017
 
@@ -24,14 +22,14 @@ To create the unit test project, do the following:
 
 1. In the **Add New Project** dialog, select the **Visual C#** node. Then select the **.NET Core** node followed by the **MSTest Test Project (.NET Core)** project template. In the **Name** text box, enter "StringLibraryTest" as the name of the project. Select **OK** to create the unit test project.
 
-   ![Add New Project dialog](./media/testing-library-with-visual-studio/testproject.png)
+   ![Add New Project dialog with unit test project displayed - C#](./media/testing-library-with-visual-studio/create-new-test-project.png)
 
    > [!NOTE]  
    > In addition to an MSTest Test project, you can also use Visual Studio to create an xUnit test project for .NET Core.
 
 1. Visual Studio creates the project and opens the *UnitTest1.cs* file in the code window.
 
-   ![Visual Studio code window showing the default unit test project UnitTest1 class and TestMethod1 method](./media/testing-library-with-visual-studio/unittestwindow.png)
+   ![Visual Studio code window for the unit test project class and method - C#](./media/testing-library-with-visual-studio/unit-test-editor-window.png)
 
    The source code created by the unit test template does the following:
 
@@ -43,24 +41,24 @@ To create the unit test project, do the following:
 
 1. In **Solution Explorer**, right-click the **Dependencies** node of the **StringLibraryTest** project and select **Add Reference** from the context menu.
 
-   ![Context menu of StringLibraryTest Dependencies](./media/testing-library-with-visual-studio/addreference.png)
+   ![Context menu of StringLibraryTest Dependencies - C#](./media/testing-library-with-visual-studio/add-reference-context-menu.png)
 
 1. In the **Reference Manager** dialog, expand the **Projects** node and check the box next to **StringLibrary**. Adding a reference to the `StringLibrary` assembly allows the compiler to find **StringLibrary** methods. Select the **OK** button. This adds a reference to your class library project, `StringLibrary`.
 
-   ![Reference manager](./media/testing-library-with-visual-studio/referencemanager.png)
+   ![Visual Studio add project reference dialog](./media/testing-library-with-visual-studio/project-reference-manager.png)
 # [Visual Basic](#tab/vb) 
 1. In **Solution Explorer**, open the context menu for the **ClassLibraryProjects** solution node and select **Add** > **New Project**.
 
 1. In the **Add New Project** dialog, select the **Visual Basic** node. Then select the **.NET Core** node followed by the **MSTest Test Project (.NET Core)** project template. In the **Name** text box, enter "StringLibraryTest" as the name of the project. Select **OK** to create the unit test project.
 
-   ![Add New Project dialog](./media/testing-library-with-visual-studio/vb-testproject.png)
+   ![Add New Project dialog with unit test project displayed - Visual Basic](./media/testing-library-with-visual-studio/vb-create-new-test-project.png)
 
    > [!NOTE]  
    > In addition to an MSTest Test project, you can also use Visual Studio to create an xUnit test project for .NET Core.
 
 1. Visual Studio creates the project and opens the *UnitTest1.vb* file in the code window.
 
-   ![Visual Studio code window showing the default unit test project UnitTest1 class and TestMethod1 method](./media/testing-library-with-visual-studio/vb-unittestwindow.png)
+   ![Visual Studio code window for the unit test project class and method - Visual Basic](./media/testing-library-with-visual-studio/vb-unit-test-editor-window.png)
 
    The source code created by the unit test template does the following:
 
@@ -72,11 +70,11 @@ To create the unit test project, do the following:
 
 1. In **Solution Explorer**, right-click the **Dependencies** node of the **StringLibraryTest** project and select **Add Reference** from the context menu.
 
-   ![Context menu of StringLibraryTest Dependencies](./media/testing-library-with-visual-studio/addreference.png)
+   ![Context menu of StringLibraryTest Dependencies](./media/testing-library-with-visual-studio/add-reference-context-menu.png)
 
 1. In the **Reference Manager** dialog, expand the **Projects** node and check the box next to **StringLibrary**. Adding a reference to the `StringLibrary` assembly allows the compiler to find **StringLibrary** methods. Select the **OK** button. This adds a reference to your class library project, `StringLibrary`.
 
-   ![Reference manager](./media/testing-library-with-visual-studio/referencemanager.png)
+   ![Visual Studio add project reference dialog - Visual Basic](./media/testing-library-with-visual-studio/project-reference-manager.png)
 ---
 
 ## Adding and running unit test methods
@@ -111,7 +109,7 @@ To create the test methods:
 
 1. On the menu bar, select **File** > **Save UnitTest1.cs As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
 
-   ![Save File As dialog](./media/testing-library-with-visual-studio/savefileas.png)
+   ![Visual Studio Save File As dialog - C#](./media/testing-library-with-visual-studio/save-file-as-dialog.png)
 # [Visual Basic](#tab/vb) 
 1. In the *UnitTest1.vb* code window, replace the code with the following code:
 
@@ -121,20 +119,20 @@ To create the test methods:
 
 1. On the menu bar, select **File** > **Save UnitTest1.vb As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
 
-   ![Save File As dialog](./media/testing-library-with-visual-studio/savefileas.png)
+   ![Visual Studio Save File As dialog - Visual Basic](./media/testing-library-with-visual-studio/save-file-as-dialog.png)
 ---
 
 1. In the **Confirm Save As** dialog, select the **Yes** button to save the file.
 
 1. In the **Advanced Save Options** dialog, select **Unicode (UTF-8 with signature) - Codepage 65001** from the **Encoding** drop-down list and select **OK**.
 
-   ![Advanced Save Options dialog](./media/testing-library-with-visual-studio/advancedsaveoptions.png)
+   ![Visual Studio Advanced Save Options dialog](./media/testing-library-with-visual-studio/advanced-save-options.png)
 
    If you fail to save your source code as a UTF8-encoded file, Visual Studio may save it as an ASCII file. When that happens, the runtime doesn't accurately decode the UTF8 characters outside of the ASCII range, and the test results won't be accurate.
 
 1. On the menu bar, select **Test** > **Run** > **All Tests**. The **Test Explorer** window opens and shows that the tests ran successfully. The three tests are listed in the **Passed Tests** section, and the **Summary** section reports the result of the test run.
 
-   ![Test Explorer window](./media/testing-library-with-visual-studio/firsttest.png)
+   ![Test Explorer window with passing tests](./media/testing-library-with-visual-studio/test-explorer-window.png)
 
 ## Handling test failures
 
@@ -153,11 +151,11 @@ Your test run had no failures, but change it slightly so that one of the test me
    ```
 1. Run the test by selecting **Test** > **Run** > **All Tests** from the menu bar. The **Test Explorer** window indicates that two tests succeeded and one failed.
 
-   ![Test Explorer window](./media/testing-library-with-visual-studio/failedtest.png)
+   ![Test Explorer window with failing tests](./media/testing-library-with-visual-studio/failed-test-window.png)
 
 1. In the **Failed Tests** section, select the failed test, `TestDoesNotStartWith`. The **Test Explorer** window displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, all strings in the array after "Error" were not tested.
 
-   ![Test Explorer window showing the Is False assertion failure](./media/testing-library-with-visual-studio/failedtestdetail.png)
+   ![Test Explorer window showing the Is False assertion failure](./media/testing-library-with-visual-studio/failed-test-detail.png)
 
 1. Remove the code that you added (`"Error", `) and rerun the test. The tests will pass.
 
@@ -169,11 +167,11 @@ To test the Release build:
 
 1. In the Visual Studio toolbar, change the build configuration from **Debug** to **Release**.
 
-   ![Visual Studio toolbar](./media/testing-library-with-visual-studio/toolbar.png)
+   ![Visual Studio toolbar with release build highlighted](./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png)
 
 1. In **Solution Explorer**, right-click the **StringLibrary** project and select **Build** from the context menu to recompile the library.
 
-   ![StringLibrary context menu](./media/testing-library-with-visual-studio/buildlibrary.png)
+   ![StringLibrary context menu with build command](./media/testing-library-with-visual-studio/build-library-context-menu.png)
 
 1. Run the unit tests by choosing **Test** > **Run** > **All Tests** from the menu bar. The tests pass.
 

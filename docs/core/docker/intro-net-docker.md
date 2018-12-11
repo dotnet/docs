@@ -1,5 +1,5 @@
 ---
-title: Introduction to Docker - .NET Core
+title: Introduction to Docker
 description: This article provides an introduction and overview to Docker in the context of a .NET Core application.
 author: jralexander
 ms.author: johalex

@@ -1,5 +1,6 @@
 ---
-title: "How to: Display Command Line Arguments (C# Programming Guide)"
+title: "How to: Display Command Line Arguments - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "command-line arguments [C#], displaying"

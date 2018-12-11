@@ -2,7 +2,6 @@
 title: About .NET Core
 description: Learn about .NET Core.
 author: richlander
-ms.author: mairaw
 ms.date: 08/01/2018
 ---
 # About .NET Core

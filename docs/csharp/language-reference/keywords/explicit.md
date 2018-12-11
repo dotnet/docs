@@ -1,5 +1,7 @@
 ---
-title: "explicit keyword (C# Reference)"
+title: "explicit keyword - C# Reference"
+ms.custom: seodec18
+
 ms.date: 08/24/2018
 f1_keywords: 
   - "explicit_CSharpKeyword"

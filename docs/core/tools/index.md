@@ -1,9 +1,8 @@
 ---
 title: .NET Core Command-Line Interface (CLI) Tools
 description: An overview of the .NET Core Command-Line Interface (CLI) tools and features.
-author: mairaw
-ms.author: mairaw
 ms.date: 08/14/2017
+ms.custom: "seodec18"
 ---
 # .NET Core command-line interface (CLI) tools
 

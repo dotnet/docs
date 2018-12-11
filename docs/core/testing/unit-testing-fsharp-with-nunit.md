@@ -1,10 +1,11 @@
 ---
-title: Unit testing F# libraries in .NET Core using dotnet test and NUnit
+title: Unit testing F# in .NET Core with dotnet test and NUnit
 description: Learn unit test concepts for F# in .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and NUnit.
 author: rprouse
 ms.date: 10/04/2018
 dev_langs: 
   - "fsharp"
+ms.custom: "seodec18"
 ---
 # Unit testing F# libraries in .NET Core using dotnet test and NUnit
 

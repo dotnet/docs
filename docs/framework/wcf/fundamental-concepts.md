@@ -49,7 +49,7 @@ This document provides a high-level view of the Windows Communication Foundation
  A construct that exposes one or more endpoints, with each endpoint exposing one or more service operations.  
   
  endpoint  
- A construct at which messages are sent or received (or both). It comprises a location (an address) that defines where messages can be sent, a specification of the communication mechanism (a binding) that described how messages should be sent, and a definition for a set of messages that can be sent or received (or both) at that location (a service contract) that describes what message can be sent.  
+ A construct at which messages are sent or received (or both). It comprises a location (an address) that defines where messages can be sent, a specification of the communication mechanism (a binding) that describes how messages should be sent, and a definition for a set of messages that can be sent or received (or both) at that location (a service contract) that describes what message can be sent.  
   
  A WCF service is exposed to the world as a collection of endpoints.  
   

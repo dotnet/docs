@@ -107,7 +107,7 @@
       </Parameters>
       <Docs>
         <param name="disposing">
-          <see langword="True" /> to release both managed and unmanaged resources; <see langword="False" /> to release only unmanaged resources.</param>
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Web.UI.DataVisualization.Charting.ChartElementCollection`1" /> and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>

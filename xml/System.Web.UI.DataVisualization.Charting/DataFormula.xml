@@ -284,7 +284,7 @@
       <Docs>
         <summary>Gets or sets a flag that indicates whether empty points are ignored while performing calculations.</summary>
         <value>
-          <see langword="True" /> if empty points are ignored, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if empty points are ignored, otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -313,7 +313,7 @@
       <Docs>
         <summary>Gets or sets a flag that indicates whether to start formulas such as a rolling average from zero.</summary>
         <value>
-          <see langword="True" /> if formulas such as "rolling average" start from zero; otherwise, <see langword="False" />.</value>
+          <see langword="true" /> if formulas such as "rolling average" start from zero; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

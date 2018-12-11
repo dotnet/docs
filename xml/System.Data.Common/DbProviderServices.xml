@@ -344,7 +344,7 @@
         <param name="storeItemCollection">The structure of the database whose existence is determined by this method.</param>
         <summary>Returns a value indicating whether a given database exists on the server and whether schema objects contained in the storeItemCollection have been created.</summary>
         <returns>
-          <see langword="True" /> if the database indicated by the connection and the storeItemCollection parameter exists; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the database indicated by the connection and the storeItemCollection parameter exists; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

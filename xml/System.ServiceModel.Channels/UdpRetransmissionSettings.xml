@@ -230,7 +230,7 @@
       <Docs>
         <summary>Indicates whether the UDP retransmission settings should serialize the lower bound delay.</summary>
         <returns>
-          <see langword="True" /> if the UDP retransmission settings should serialize the lower bound delay; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the UDP retransmission settings should serialize the lower bound delay; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,7 +253,7 @@
       <Docs>
         <summary>Indicates whether the UDP retransmission settings should serialize the upper bound delay.</summary>
         <returns>
-          <see langword="True" /> if the UDP retransmission settings should serialize the upper bound delay; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the UDP retransmission settings should serialize the upper bound delay; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,7 +276,7 @@
       <Docs>
         <summary>Indicates whether the UDP retransmission settings should serialize the maximum delay per retransmission.</summary>
         <returns>
-          <see langword="True" /> if the UDP retransmission settings should serialize the maximum delay per retransmission; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the UDP retransmission settings should serialize the maximum delay per retransmission; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -169,7 +169,7 @@
         <param name="property">The method returns true, networkInterfaceMessageProperty contains a NetworkInterfaceMessageProperty that is associated with the message.</param>
         <summary>Attempts to get the NetworkInterfaceMessageProperty from the properties of a specified message.</summary>
         <returns>
-          <see langword="True" /> when a value for the NetworkInterfaceMessageproperty is obtained from the message; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> when a value for the NetworkInterfaceMessageproperty is obtained from the message; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,7 +197,7 @@
         <param name="property">The method returns true, networkInterfaceMessageProperty contains a NetworkInterfaceMessageProperty that is associated with the properties.</param>
         <summary>Attempts to get the NetworkInterfaceMessageProperty from a specified collection of message properties.</summary>
         <returns>
-          <see langword="True" /> when a value for the NetworkInterfaceMessageProperty is obtained from the properties; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> when a value for the NetworkInterfaceMessageProperty is obtained from the properties; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

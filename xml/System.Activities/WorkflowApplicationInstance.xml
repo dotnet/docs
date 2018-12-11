@@ -186,7 +186,7 @@
         <param name="activitiesBlockingUpdate">The activities blocking update.</param>
         <summary>Returns a value that indicates whether the WorkflowApplicationInstance can apply update.</summary>
         <returns>
-          <see langword="True" /> if the WorkflowApplicationInstance can apply update; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the WorkflowApplicationInstance can apply update; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

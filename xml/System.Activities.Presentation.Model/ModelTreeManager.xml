@@ -115,7 +115,7 @@
       <Docs>
         <param name="instance">The instance.</param>
         <param name="shouldExpandModelTree">
-          <see langword="True" /> if the manager should expand the model tree; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if the manager should expand the model tree; otherwise, <see langword="false" />.</param>
         <summary>Returns the model item for the manager.</summary>
         <returns>The model item for the manager.</returns>
         <remarks>To be added.</remarks>

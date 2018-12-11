@@ -317,7 +317,7 @@
       </Parameters>
       <Docs>
         <param name="disposing">
-          <see langword="True" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
+          <see langword="true" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisScrollBar" /> class and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -351,7 +351,7 @@
       <Docs>
         <summary>Gets or sets a flag that determines whether a scrollbar is enabled.</summary>
         <value>
-          <see langword="True" /> if the scrollbar is enabled for an axis, <see langword="false" /> if the scrollbar is not enabled. The default value is <see langword="true" />.</value>
+          <see langword="true" /> if the scrollbar is enabled for an axis, <see langword="false" /> if the scrollbar is not enabled. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -384,7 +384,7 @@
       <Docs>
         <summary>Gets or sets a flag that indicates whether scroll bar is positioned inside or outside the chart area.</summary>
         <value>
-          <see langword="True" /> if the scroll bar is positioned inside or outside the chart area; otherwise, <see langword="False" />.</value>
+          <see langword="true" /> if the scroll bar is positioned inside or outside the chart area; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -411,7 +411,7 @@
       <Docs>
         <summary>Gets a flag that indicates whether the scrollbar is visible.</summary>
         <value>
-          <see langword="True" /> if the scrollbar is visible; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the scrollbar is visible; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

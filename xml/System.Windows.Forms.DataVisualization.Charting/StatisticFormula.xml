@@ -593,7 +593,7 @@
       <Docs>
         <param name="inputSeriesName">The input series name.</param>
         <param name="sampleVariance">
-          <see langword="True" /> if the data is a sample of the population; <see langword="false" /> if the data is the entire population.</param>
+          <see langword="true" /> if the data is a sample of the population; <see langword="false" /> if the data is the entire population.</param>
         <summary>Returns the variance for a series.</summary>
         <returns>A <see langword="double" /> value that represents the variance.</returns>
         <remarks>To be added.</remarks>

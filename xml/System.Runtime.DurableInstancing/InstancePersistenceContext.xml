@@ -709,7 +709,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
         <param name="key">The instance key identifier for the key whose metadata was read. Must not be Guid.Empty.</param>
         <param name="metadata">The metadata as a dictionary of <see cref="T:System.Xml.Linq.XName" /> and <see cref="T:System.Runtime.DurableInstancing.InstanceValue" /> objects.</param>
         <param name="complete">
-          <see langword="True" /> if the metadata represents all of the metadata associated to the instance key, otherwise <see langword="false" />.</param>
+          <see langword="true" /> if the metadata represents all of the metadata associated to the instance key; otherwise, <see langword="false" />.</param>
         <summary>Indicates that the persistence provider has successfully read some instance key metadata for a key associated to the current instance from the instance store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -743,7 +743,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
       <Docs>
         <param name="metadata">The metadata as a dictionary of <see cref="T:System.Xml.Linq.XName" /> and <see cref="T:System.Runtime.DurableInstancing.InstanceValue" /> objects.</param>
         <param name="complete">
-          <see langword="True" /> if the metadata represents all of the metadata associated to the instance, otherwise <see langword="false" />.</param>
+          <see langword="true" /> if the metadata represents all of the metadata associated to the instance; otherwise, <see langword="false" />.</param>
         <summary>Indicates that the persistence provider has successfully read some instance metadata for the current instance from the instance store.</summary>
         <remarks>To be added.</remarks>
       </Docs>

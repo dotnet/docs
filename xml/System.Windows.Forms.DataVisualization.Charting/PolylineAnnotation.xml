@@ -305,7 +305,7 @@
       </Parameters>
       <Docs>
         <param name="disposing">
-          <see langword="True" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
+          <see langword="true" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases unmanaged and, optionally, managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -567,7 +567,7 @@
       <Docs>
         <summary>Gets or sets a flag that determines whether an annotation should be placed using the free-draw mode.</summary>
         <value>
-          <see langword="True" /> if an annotation should be placed using free-draw mode, otherwise <see langword="false" />. The default value is <see langword="false" />.</value>
+          <see langword="true" /> if an annotation should be placed using free-draw mode; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -86,7 +86,7 @@
       <Docs>
         <summary>Returns a value that indicates whether the persistence provider may choose not to enlist in the ambient transaction (Transaction.Currnet) when executing this command.</summary>
         <value>
-          <see langword="True" /> if enlisting in the transaction is optional for this command, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if enlisting in the transaction is optional for this command, otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

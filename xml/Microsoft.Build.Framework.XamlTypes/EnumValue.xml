@@ -220,7 +220,7 @@
       <Docs>
         <summary>Gets or sets a flag that determines whether this <see cref="T:Microsoft.Build.Framework.XamlTypes.EnumValue" /> is the default value for the associated <see cref="T:Microsoft.Build.Framework.XamlTypes.EnumProperty" />.</summary>
         <value>
-          <see langword="True" /> if the enum value is the default value; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the enum value is the default value; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

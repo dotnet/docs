@@ -156,7 +156,7 @@
       <Docs>
         <param name="content">The serializable content.</param>
         <param name="serializable">
-          <see langword="True" /> to get a serializable string; <see langword="false" /> to get a non-serializable string.</param>
+          <see langword="true" /> to get a serializable string; <see langword="false" /> to get a non-serializable string.</param>
         <summary>Returns a serializable or non-serializable class and/or property names, depending on the specific flag value.</summary>
         <returns>A <see langword="string" /> value that represents the serializable or non-serializable class and/or property names.</returns>
         <remarks>To be added.</remarks>
@@ -185,7 +185,7 @@
       <Docs>
         <summary>Gets or sets a flag that indicates whether object properties are reset to default values before loading.</summary>
         <value>
-          <see langword="True" /> if object properties are reset to default values before loading; otherwise, <see langword="False" />.</value>
+          <see langword="true" /> if object properties are reset to default values before loading; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,7 +212,7 @@
       <Docs>
         <summary>Gets or sets a flag that indicates whether the chart serializer is working in template-creation mode.</summary>
         <value>
-          <see langword="True" /> if the chart serializer is working in template-creation mode; otherwise, <see langword="False" />.</value>
+          <see langword="true" /> if the chart serializer is working in template-creation mode; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,7 +239,7 @@
       <Docs>
         <summary>Gets or sets a flag that indicates whether unknown XML properties and elements will be ignored without throwing an exception.</summary>
         <value>
-          <see langword="True" /> if unknown XML properties and elements are ignored without throwing an exception; otherwise, <see langword="False" />.</value>
+          <see langword="true" /> if unknown XML properties and elements are ignored without throwing an exception; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

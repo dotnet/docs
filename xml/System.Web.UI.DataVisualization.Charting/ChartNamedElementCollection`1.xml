@@ -130,7 +130,7 @@
         <param name="name">The new chart element name.</param>
         <summary>Determines whether the chart element with the specified name already exists in the collection.</summary>
         <returns>
-          <see langword="True" /> if the new chart element name is unique, otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the new chart element name is unique; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

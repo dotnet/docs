@@ -1195,7 +1195,7 @@
         <param name="result">Out parameter containing the result. If no element was removed from the current collection, then <see langword="result" /> is a new collection          identical to the original one.</param>
         <summary>Removes a collection of <see cref="T:System.Windows.TextDecorations" /> from the current collection and returns the resultant (new) collection.</summary>
         <returns>
-          <see langword="True" /> if at least one item was removed from the current collection, <see langword="False" /> otherwise</returns>
+          <see langword="true" /> if at least one item was removed from the current collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

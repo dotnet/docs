@@ -59,7 +59,7 @@
         <param name="sourceType">The type to convert from.</param>
         <summary>Determines whether the specified type can be converted from.</summary>
         <returns>
-          <see langword="True" /> if the specified type can be converted from; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the specified type can be converted from; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +87,7 @@
         <param name="destinationType">The type to convert to.</param>
         <summary>Determines whether the specified type can be converted to.</summary>
         <returns>
-          <see langword="True" /> if the specified type can be converted to; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the specified type can be converted to; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,7 +117,7 @@
         <param name="value">The object to convert.</param>
         <summary>Converts the specified value to a new representation specified by the derived class.</summary>
         <returns>
-          <see langword="True" /> if the specified value to a new representation is converted; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the specified value to a new representation is converted; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,7 +149,7 @@
         <param name="destinationType">The type to convert to.</param>
         <summary>Converts the specified value to the specified representation.</summary>
         <returns>
-          <see langword="True" /> if the specified value to the specified representation is converted; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the specified value to the specified representation is converted; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

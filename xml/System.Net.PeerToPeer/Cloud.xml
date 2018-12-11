@@ -177,7 +177,7 @@
         <param name="other">The cloud to compare with this <see cref="T:System.Net.PeerToPeer.Cloud" />.</param>
         <summary>Performs a case-sensitive comparison between two cloud objects.</summary>
         <returns>
-          <see langword="True" /> if the <see cref="T:System.Net.PeerToPeer.Cloud" /> specified identifies the same resource as the current one, otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Cloud" /> specified identifies the same resource as the current one, otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -213,7 +213,7 @@
         <param name="obj">The <see cref="T:System.Object" /> to compare with this <see cref="T:System.Net.PeerToPeer.Cloud" />.</param>
         <summary>Determines whether the content of this peer <see cref="T:System.Net.PeerToPeer.Cloud" /> is equivalent to the content of a <see cref="N:System" /> object.</summary>
         <returns>
-          <see langword="True" /> if the <see cref="T:System.Net.PeerToPeer.PeerName" /> and the comparison object contain the same information; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.PeerName" /> and the comparison object contain the same information; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

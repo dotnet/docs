@@ -39,12 +39,12 @@
       <Docs>
         <param name="expressionText">The expression text used.</param>
         <param name="isReference">
-          <see langword="True" /> if reference; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if reference; otherwise, <see langword="false" />.</param>
         <param name="locations">The collection of locations.</param>
         <param name="expressionId">The expression identifier.</param>
         <summary>Indicates whether the <see cref="T:System.Activities.XamlIntegration.ICompiledExpressionRoot" /> can execute expression.</summary>
         <returns>
-          <see langword="True" /> if the <see cref="T:System.Activities.XamlIntegration.ICompiledExpressionRoot" /> can execute expression; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the <see cref="T:System.Activities.XamlIntegration.ICompiledExpressionRoot" /> can execute expression; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

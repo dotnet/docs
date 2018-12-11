@@ -6500,7 +6500,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <Docs>
         <summary>Gets a value indicating whether the window will be activated when it is shown.</summary>
         <value>
-          <see langword="True" /> if the window will not be activated when it is shown; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+          <see langword="true" /> if the window will not be activated when it is shown; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

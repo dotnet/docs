@@ -120,7 +120,7 @@
         <param name="ex">The input exception.</param>
         <summary>Determines whether an exception that occurred during the processing of a security token should be handled.</summary>
         <returns>
-          <see langword="True" /> if the exception should be handled; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the exception should be handled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

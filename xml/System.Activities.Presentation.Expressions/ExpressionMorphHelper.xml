@@ -61,7 +61,7 @@
         <param name="returnType">The return type of the expression.</param>
         <summary>Returns whether the expression tries to infer the return type.</summary>
         <returns>
-          <see langword="True" /> if the expression tries to infer the return type; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the expression tries to infer the return type; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,7 +90,7 @@
       <Docs>
         <param name="expression">The expression to morph.</param>
         <param name="isLocationExpression">
-          <see langword="True" /> if the expression is a location expression; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if the expression is a location expression; otherwise, <see langword="false" />.</param>
         <param name="newType">The new type of the expression.</param>
         <param name="context">The context.</param>
         <param name="newExpression">The new expression.</param>

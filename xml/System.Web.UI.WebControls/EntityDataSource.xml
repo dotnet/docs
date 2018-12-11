@@ -1102,7 +1102,7 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <Docs>
         <summary>Gets or sets the value that indicates whether you want to turn off wrapper creation.</summary>
         <value>
-          <see langword="True" /> if the properties will be flattened; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the properties will be flattened; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

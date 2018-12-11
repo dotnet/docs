@@ -101,7 +101,7 @@
       <Docs>
         <summary>Gets or sets a flag that specifies whether an annotation anchor may be moved with a mouse by the end user.</summary>
         <value>
-          <see langword="True" /> if the annotation anchor may be moved, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the annotation anchor may be moved; otherwise,<see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,7 +128,7 @@
       <Docs>
         <summary>Gets or sets a flag that specifies whether an annotation may be moved with a mouse by the end user.</summary>
         <value>
-          <see langword="True" /> if the annotation may be moved, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the annotation may be moved; otherwise,<see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,7 +155,7 @@
       <Docs>
         <summary>Gets or sets a flag that specifies whether the points of a polygon annotation may be moved with a mouse by the end user.</summary>
         <value>
-          <see langword="True" /> if the points of the polygon annotation may be moved, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the points of the polygon annotation may be moved; otherwise,<see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,7 +182,7 @@
       <Docs>
         <summary>Gets or sets a flag that specifies whether an annotation may be resized with a mouse by the end user.</summary>
         <value>
-          <see langword="True" /> if the annotation may be resized, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the annotation may be resized; otherwise,<see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,7 +209,7 @@
       <Docs>
         <summary>Gets or sets a flag that specifies whether an annotation may be selected with a mouse by the end user.</summary>
         <value>
-          <see langword="True" /> if the annotation may be selected, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the annotation may be selected; otherwise,<see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,7 +236,7 @@
       <Docs>
         <summary>Gets or sets a flag that specifies whether an annotation's text may be edited when the end user double clicks the text.</summary>
         <value>
-          <see langword="True" /> if the annotation text may be edited, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the annotation text may be edited; otherwise,<see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -564,7 +564,7 @@
       </Parameters>
       <Docs>
         <param name="disposing">
-          <see langword="True" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
+          <see langword="true" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases unmanaged and, optionally, managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -662,7 +662,7 @@
       <Docs>
         <summary>Gets or sets a flag that determines if an annotation is selected.</summary>
         <value>
-          <see langword="True" /> if the annotation is selected, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the annotation is selected; otherwise,<see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -689,7 +689,7 @@
       <Docs>
         <summary>Gets or sets a flag that specifies whether the size of an annotation is always defined in relative chart coordinates.</summary>
         <value>
-          <see langword="True" /> if the <see cref="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Width" /> and <see cref="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Height" /> of an annotation are always in chart relative coordinates, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Width" /> and <see cref="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Height" /> of an annotation are always in chart relative coordinates; otherwise,<see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -920,7 +920,7 @@
       <Docs>
         <summary>Gets or sets a flag that indicates whether the annotation is visible.</summary>
         <value>
-          <see langword="True" /> if the annotation is visible, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the annotation is visible; otherwise,<see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

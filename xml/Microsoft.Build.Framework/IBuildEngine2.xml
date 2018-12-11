@@ -106,7 +106,7 @@
         <param name="unloadProjectsOnCompletion">If <see langword="true" /> the project is unloaded once the operation completes.</param>
         <summary>Allows tasks to initiate parallel builds of the specified project files on systems with multiple processors or multiple core processors. If the builds are successful, the outputs of the specified targets are returned, if any exist.</summary>
         <returns>
-          <see langword="True" /> if the build succeeded, <see langword="false" /> if otherwise.</returns>
+          <see langword="true" /> if the build succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -64,7 +64,7 @@
         <param name="activity">The current activity.</param>
         <summary>Specifies whether the <see cref="T:System.Activities.DynamicUpdate.DynamicUpdateMapQuery" /> can update while running.</summary>
         <returns>
-          <see langword="True" /> if the <see cref="T:System.Activities.DynamicUpdate.DynamicUpdateMapQuery" /> can update while running; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the <see cref="T:System.Activities.DynamicUpdate.DynamicUpdateMapQuery" /> can update while running; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -338,7 +338,7 @@
       </Parameters>
       <Docs>
         <param name="disposing">
-          <see langword="True" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources and optionally releases the managed resources used by the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="usage">
@@ -702,7 +702,7 @@
       <Docs>
         <summary>Gets or sets a value that specifies whether to use automatic endpoint selection when traversing a peer mesh or <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.Cloud" />.</summary>
         <value>
-          <see langword="True" /> if automatic endpoint selection is to be used; <see langword="false" /> if some other method will be used to determine an endpoint. The default value is <see langword="true" />.</value>
+          <see langword="true" /> if automatic endpoint selection is to be used; <see langword="false" /> if some other method will be used to determine an endpoint. The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -498,7 +498,7 @@
         <param name="target">The target object.</param>
         <summary>Represents a value that indicates whether the object should serialize namespaces.</summary>
         <returns>
-          <see langword="True" /> if the object should serialize namespaces; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the object should serialize namespaces; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -524,7 +524,7 @@
         <param name="target">The target object.</param>
         <summary>Represents a value that indicates whether the target should serialize namespaces for implementation.</summary>
         <returns>
-          <see langword="True" /> if the target should serialize namespaces for implementation; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the target should serialize namespaces for implementation; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -550,7 +550,7 @@
         <param name="target">The target object.</param>
         <summary>Represents a value that indicates whether the object should serialize references.</summary>
         <returns>
-          <see langword="True" /> if the object should serialize references; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the object should serialize references; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -576,7 +576,7 @@
         <param name="target">The target object.</param>
         <summary>Represents a value that indicates whether the text expression should serialize namespaces for implementation.</summary>
         <returns>
-          <see langword="True" /> if the text expression should serialize namespaces for implementation; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the text expression should serialize namespaces for implementation; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

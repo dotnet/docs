@@ -357,9 +357,9 @@
       <Docs>
         <param name="other">The peer name to compare with this <see cref="T:System.Net.PeerToPeer.PeerName" />.</param>
         <summary>Performs a case-sensitive comparison of the current <see cref="T:System.Net.PeerToPeer.PeerName" /> and the specified peer name.</summary>
-        <returns>Returns <see langword="True" /> if the specified <see cref="T:System.Net.PeerToPeer.PeerName" /> identifies the same resource as the current peer name object; otherwise this method returns <see langword="False" />.  
+        <returns>Returns <see langword="true" /> if the specified <see cref="T:System.Net.PeerToPeer.PeerName" /> identifies the same resource as the current peer name object; otherwise, <see langword="false" />.  
   
- This method also returns <see langword="False" /> if <paramref name="other" /> is set to <see langword="null" />.</returns>
+ This method also returns <see langword="false" /> if <paramref name="other" /> is set to <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -396,7 +396,7 @@
         <param name="obj">The <see cref="T:System.Object" /> to compare with the current <see cref="T:System.Net.PeerToPeer.PeerName" />.</param>
         <summary>Determines whether the content of this <see cref="T:System.Net.PeerToPeer.PeerName" /> is equal to the content of another object.</summary>
         <returns>
-          <see langword="True" /> if the <see cref="T:System.Net.PeerToPeer.PeerName" /> and the comparison object contain the same information; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.PeerName" /> and the comparison object contain the same information; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

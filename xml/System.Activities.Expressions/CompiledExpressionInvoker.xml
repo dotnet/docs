@@ -38,7 +38,7 @@
       <Docs>
         <param name="expression">The expression.</param>
         <param name="isReference">
-          <see langword="True" /> to keep object reference data; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to keep object reference data; otherwise, <see langword="false" />.</param>
         <param name="metadata">The activity metadata.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.CompiledExpressionInvoker" /> class using the expression, isReference and metadata.</summary>
         <remarks>To be added.</remarks>

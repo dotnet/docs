@@ -425,7 +425,7 @@
       <Docs>
         <summary>Gets or sets a flag that indicates whether an infinite line should be drawn.</summary>
         <value>
-          <see langword="True" /> if a line should be drawn infinitely through two points provided, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if a line should be drawn infinitely through two points provided, otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -452,7 +452,7 @@
       <Docs>
         <summary>Gets or sets a flag that specifies whether the size of an annotation is always defined in relative chart coordinates.</summary>
         <value>
-          <see langword="True" /> if the <see cref="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Width" /> and <see cref="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Height" /> of an annotation are always in chart relative coordinates, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Width" /> and <see cref="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Height" /> of an annotation are always in chart relative coordinates, otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

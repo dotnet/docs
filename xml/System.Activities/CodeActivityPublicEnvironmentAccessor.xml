@@ -86,7 +86,7 @@
         <param name="obj">The object to compare.</param>
         <summary>Determines whether the specified object is equal to the public environment accessor.</summary>
         <returns>
-          <see langword="True" /> if the specified object is equal to the public environment accessor; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the specified object is equal to the public environment accessor; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,7 +136,7 @@
         <param name="right">The second item to compare.</param>
         <summary>Returns a value that indicates whether the two specified metadata instances are equal.</summary>
         <returns>
-          <see langword="True" /> if the two specified metadata instances are equal; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the two specified metadata instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,7 +164,7 @@
         <param name="right">The second item to compare.</param>
         <summary>Returns a value that indicates whether the two specified metadata instances are not equal.</summary>
         <returns>
-          <see langword="True" /> if the two specified metadata instances are not equal; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the two specified metadata instances are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,7 +194,7 @@
         <param name="equivalentLocation">The equivalent location reference.</param>
         <summary>Returns a value that indicates whether the activity will try to get access to public location.</summary>
         <returns>
-          <see langword="True" /> if the activity to try will get access to public location; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the activity to try will get access to public location; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,7 +222,7 @@
         <param name="equivalentReference">The equivalent reference location.</param>
         <summary>Returns a value that indicates whether the activity will try to get reference for the public location.</summary>
         <returns>
-          <see langword="True" /> if the activity will try to get reference for the public location; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the activity will try to get reference for the public location; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

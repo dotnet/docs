@@ -273,7 +273,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the issued tokens are cached.</summary>
         <value>
-          <see langword="True" /> if the issued tokens are cached; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the issued tokens are cached; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1033,7 +1033,7 @@
       <Docs>
         <summary>Gets a value that indicates whether token cancellation is supported.</summary>
         <value>
-          <see langword="True" /> if token cancellation is supported; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if token cancellation is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -937,7 +937,7 @@
       <Docs>
         <summary>Gets a nullable Boolean value indicating whether this DbGeometry value is closed, which may be null if this value does not represent a curve.</summary>
         <value>
-          <see langword="True" /> if this DbGeometry value is closed; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if this DbGeometry value is closed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -959,7 +959,7 @@
       <Docs>
         <summary>Gets a nullable Boolean value indicating whether this DbGeometry value is empty, which may be null if this value does not represent a curve.</summary>
         <value>
-          <see langword="True" /> if this DbGeometry value is empty; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if this DbGeometry value is empty; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -981,7 +981,7 @@
       <Docs>
         <summary>Gets a nullable Boolean value indicating whether this DbGeometry value is a ring, which may be null if this value does not represent a curve.</summary>
         <value>
-          <see langword="True" /> if this DbGeometry value is a ring; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if this DbGeometry value is a ring; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1003,7 +1003,7 @@
       <Docs>
         <summary>Gets a nullable Boolean value indicating whether this DbGeometry value is simple.</summary>
         <value>
-          <see langword="True" /> if this DbGeometry value is simple; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if this DbGeometry value is simple; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1025,7 +1025,7 @@
       <Docs>
         <summary>Gets a nullable Boolean value indicating whether this DbGeometry value is valid.</summary>
         <value>
-          <see langword="True" /> if this DbGeometry value is valid; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if this DbGeometry value is valid; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -416,7 +416,7 @@
         <param name="escapeCharacter">If the provider supports escaping, the character that would be used as the escape character.</param>
         <summary>Indicates if the provider supports escaping strings to be used as patterns in a Like expression.</summary>
         <returns>
-          <see langword="True" /> if this provider supports escaping strings to be used as patterns in a Like expression; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if this provider supports escaping strings to be used as patterns in a Like expression; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

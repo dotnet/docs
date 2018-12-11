@@ -558,7 +558,7 @@
         <summary>Gets a <see cref="T:System.Windows.Documents.TextSelection" /> object containing the current selection in the <see cref="T:System.Windows.Controls.RichTextBox" />.</summary>
         <value>A <see cref="T:System.Windows.Documents.TextSelection" /> object containing the current selection in the <see cref="T:System.Windows.Controls.RichTextBox" />.  
   
- The default returned <see cref="T:System.Windows.Documents.TextSelection" /> has an <see cref="P:System.Windows.Documents.TextRange.IsEmpty" /> property value of <see langword="True" />. An empty <see cref="T:System.Windows.Documents.TextSelection" /> renders as a caret in the text area with no selection.</value>
+ The default returned <see cref="T:System.Windows.Documents.TextSelection" /> has an <see cref="P:System.Windows.Documents.TextRange.IsEmpty" /> property value of <see langword="true" />. An empty <see cref="T:System.Windows.Documents.TextSelection" /> renders as a caret in the text area with no selection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

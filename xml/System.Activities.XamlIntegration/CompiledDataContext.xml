@@ -117,7 +117,7 @@
         <param name="activityContext">The activity context.</param>
         <param name="compiledRoot">The compiled root.</param>
         <param name="forImplementation">
-          <see langword="True" /> if the compiled data context is for implementation; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if the compiled data context is for implementation; otherwise, <see langword="false" />.</param>
         <param name="compiledDataContextCount">The number of compiled data context.</param>
         <summary>Retrieves the cache used by the data context.</summary>
         <returns>The data context.</returns>
@@ -146,7 +146,7 @@
       <Docs>
         <param name="compiledRoot">The compiled root.</param>
         <param name="forImplementation">
-          <see langword="True" /> if the compiled data context is for implementation; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if the compiled data context is for implementation; otherwise, <see langword="false" />.</param>
         <summary>Gets the activities for the compiled data using the specified compiled root and implementation.</summary>
         <returns>The activities for the compiled data.</returns>
         <remarks>To be added.</remarks>

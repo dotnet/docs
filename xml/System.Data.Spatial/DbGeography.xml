@@ -728,7 +728,7 @@
       <Docs>
         <summary>Gets a nullable Boolean value indicating whether this DbGeography value is closed, which may be null if this value does not represent a curve.</summary>
         <value>
-          <see langword="True" /> if this DbGeography value is closed; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if this DbGeography value is closed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -750,7 +750,7 @@
       <Docs>
         <summary>Gets a nullable Boolean value indicating whether this DbGeography value is empty.</summary>
         <value>
-          <see langword="True" /> if this DbGeography value is empty; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if this DbGeography value is empty; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

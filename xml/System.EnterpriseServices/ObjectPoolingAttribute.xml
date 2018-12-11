@@ -267,8 +267,7 @@
       <Docs>
         <param name="info">A hash table that contains an internal object to which object pooling properties are applied, referenced by an internal key.</param>
         <summary>Called internally by the .NET Framework infrastructure while applying the <see cref="T:System.EnterpriseServices.ObjectPoolingAttribute" /> class attribute to a serviced component.</summary>
-        <returns>
-          <see langword="true " />if the method has made changes.</returns>
+        <returns><see langword="true" /> if the method has made changes; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

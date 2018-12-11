@@ -350,8 +350,8 @@ After NuGet package v4.3.2, the default value of <xref:System.Net.DecompressionM
         <ReturnType>System.Func&lt;System.Net.Http.HttpRequestMessage,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors,System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a cached delegate that always returns <see langword="True" />.</summary>
-        <value>A cached delegate that always returns <see langword="True" />.</value>
+        <summary>Gets a cached delegate that always returns <see langword="true" />.</summary>
+        <value>A cached delegate that always returns <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

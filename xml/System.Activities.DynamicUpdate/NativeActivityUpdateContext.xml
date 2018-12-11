@@ -573,7 +573,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the currently executing NativeActivity instance is to be canceled.</summary>
         <value>
-          <see langword="True" /> if the currently executing NativeActivity instance is to be canceled; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the currently executing NativeActivity instance is to be canceled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -599,7 +599,7 @@
         <param name="childActivity">The child activity.</param>
         <summary>Initializes whether the <see cref="T:System.Activities.DynamicUpdate.NativeActivityUpdateContext" /> is newly added.</summary>
         <returns>
-          <see langword="True" /> if the <see cref="T:System.Activities.DynamicUpdate.NativeActivityUpdateContext" /> is newly added; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the <see cref="T:System.Activities.DynamicUpdate.NativeActivityUpdateContext" /> is newly added; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -654,7 +654,7 @@
         <param name="bookmark">A point at which a NativeActivity instance can passively wait to be resumed.</param>
         <summary>Removes the specified bookmark from the currently executing NativeActivity instance.</summary>
         <returns>
-          <see langword="True" /> if the specified bookmark from the currently executing NativeActivity instance was removed; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the specified bookmark from the currently executing NativeActivity instance was removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -680,7 +680,7 @@
         <param name="name">The name of the bookmark.</param>
         <summary>Removes the bookmark with the specified name.</summary>
         <returns>
-          <see langword="True" /> if the bookmark with the specified name was removed; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the bookmark with the specified name was removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -708,7 +708,7 @@
         <param name="scope">The unique GUID identifier for a group of Bookmark objects that are categorized as operating under the same protocol.</param>
         <summary>Removes the bookmark with the specified name and the specified bookmark scope.</summary>
         <returns>
-          <see langword="True" /> if the bookmark with the specified name and the specified bookmark scope were removed; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the bookmark with the specified name and the specified bookmark scope were removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

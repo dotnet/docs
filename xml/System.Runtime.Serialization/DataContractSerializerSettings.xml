@@ -145,7 +145,7 @@
       <Docs>
         <summary>Gets or sets a value that specifies whether to ignore data supplied by an extension of the class when the class is being serialized or deserialized.</summary>
         <value>
-          <see langword="True" /> to ignore data supplied by an extension of the class when the class is being serialized or deserialized; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> to ignore data supplied by an extension of the class when the class is being serialized or deserialized; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,7 +242,7 @@
       <Docs>
         <summary>Gets or sets a value that specifies whether to use non-standard XML constructs to preserve object reference data.</summary>
         <value>
-          <see langword="True" /> to use non-standard XML constructs to preserve object reference data; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> to use non-standard XML constructs to preserve object reference data; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,7 +339,7 @@
       <Docs>
         <summary>Gets or sets a value that specifies whether to serialize read only types.</summary>
         <value>
-          <see langword="True" /> to serialize read only types; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> to serialize read only types; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

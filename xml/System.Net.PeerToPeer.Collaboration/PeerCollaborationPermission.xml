@@ -244,7 +244,7 @@
         <param name="target">A permission that is to be tested for the subset relationship. This permission must be of the same type as the current permission.</param>
         <summary>Determines whether the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" /> is a subset of the specified <paramref name="target" /> permission.</summary>
         <returns>
-          <see langword="True" /> if the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" /> is a subset of the specified permission; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" /> is a subset of the specified permission; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -294,7 +294,7 @@
       <Docs>
         <summary>Returns a value specifying whether the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" /> is unrestricted.</summary>
         <returns>
-          <see langword="True" /> if the current permission is unrestricted; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the current permission is unrestricted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

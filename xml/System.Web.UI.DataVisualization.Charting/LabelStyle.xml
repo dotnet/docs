@@ -105,7 +105,7 @@
       </Parameters>
       <Docs>
         <param name="disposing">
-          <see langword="True" /> to release both managed and unmanaged resources; <see langword="False" /> to release only unmanaged resources.</param>
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="False" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Web.UI.DataVisualization.Charting.LabelStyle" /> and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,7 +142,7 @@
       <Docs>
         <summary>Gets or sets a flag that indicates whether the label is enabled.</summary>
         <value>
-          <see langword="True" /> if the label is enabled; otherwise, <see langword="False" />.</value>
+          <see langword="true" /> if the label is enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -478,7 +478,7 @@
       <Docs>
         <summary>Gets or sets a flag that determines whether the labels are shown at axis ends.</summary>
         <value>
-          <see langword="True" /> if the labels are shown at axis ends; otherwise, <see langword="False" />.</value>
+          <see langword="true" /> if the labels are shown at axis ends; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -517,7 +517,7 @@
       <Docs>
         <summary>Gets or sets a flag that determines whether the labels are shown with an offset.</summary>
         <value>
-          <see langword="True" /> if the labels are shown with an offset; otherwise, <see langword="False" />.</value>
+          <see langword="true" /> if the labels are shown with an offset; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,7 +553,7 @@
       <Docs>
         <summary>Gets or sets a flag that determines whether the labels can be truncated.</summary>
         <value>
-          <see langword="True" /> if the labels can be truncated; otherwise, <see langword="False" />.</value>
+          <see langword="true" /> if the labels can be truncated; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

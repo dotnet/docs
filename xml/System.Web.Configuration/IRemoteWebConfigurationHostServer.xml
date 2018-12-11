@@ -58,7 +58,7 @@
       </Parameters>
       <Docs>
         <param name="doEncrypt">
-          <see langword="True" /> to encrypt; <see langword="false" /> to decrypt.</param>
+          <see langword="true" /> to encrypt; <see langword="false" /> to decrypt.</param>
         <param name="xmlString">The XML to be encrypted or decrypted.</param>
         <param name="protectionProviderName">The provider used to protect the configuration data.</param>
         <param name="protectionProviderType">The <see cref="T:System.Type" /> of the protection provider.</param>

@@ -523,7 +523,7 @@
       <Docs>
         <summary>Indicates whether the connection oriented transport binding element should serialize maximum pending accepts.</summary>
         <returns>
-          <see langword="True" /> if the connection oriented transport binding element should serialize maximum pending accepts; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the connection oriented transport binding element should serialize maximum pending accepts; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -554,7 +554,7 @@
       <Docs>
         <summary>Indicates whether the connection oriented transport binding element should serialize maximum pending connections.</summary>
         <returns>
-          <see langword="True" /> if the connection oriented transport binding element should serialize maximum pending connections; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the connection oriented transport binding element should serialize maximum pending connections; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

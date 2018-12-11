@@ -233,7 +233,7 @@
       <Docs>
         <summary>Gets a value that indicates whether the token has an asymmetric key.</summary>
         <value>
-          <see langword="True" /> if the token has an asymmetric key; otherwise, <see langword="false" />. Always returns <see langword="false" />.</value>
+          <see langword="true" /> if the token has an asymmetric key; otherwise, <see langword="false" />. Always returns <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -306,7 +306,7 @@
       <Docs>
         <summary>Gets a value that indicates whether the token supports client authentication.</summary>
         <value>
-          <see langword="True" /> if the token supports client authentication; otherwise, <see langword="false" />. Always returns <see langword="true" />.</value>
+          <see langword="true" /> if the token supports client authentication; otherwise, <see langword="false" />. Always returns <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -333,7 +333,7 @@
       <Docs>
         <summary>Gets a value that indicates whether the token supports a Windows identity for authentication.</summary>
         <value>
-          <see langword="True" /> if the token supports a Windows identity for authentication; otherwise, <see langword="false" />. Always returns <see langword="true" />.</value>
+          <see langword="true" /> if the token supports a Windows identity for authentication; otherwise, <see langword="false" />. Always returns <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,7 +360,7 @@
       <Docs>
         <summary>Gets a value that indicates whether the token supports server authentication.</summary>
         <value>
-          <see langword="True" /> if the token supports server authentication; otherwise, <see langword="false" />. Always returns <see langword="false" />.</value>
+          <see langword="true" /> if the token supports server authentication; otherwise, <see langword="false" />. Always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -52,7 +52,7 @@
       <Docs>
         <param name="obj">The object to be compared with the current object.</param>
         <summary>Determines whether the current <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceEvent" /> object and the passed object converted as the <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceEvent" /> are the same.</summary>
-        <returns>Returns <see langword="True" /> if the objects are same; otherwise, returns <see langword="False" />.</returns>
+        <returns><see langword="true" /> if the objects are same; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +80,7 @@
       <Docs>
         <param name="persistenceEvent">The object to be compared with the current object.</param>
         <summary>Determines whether the current <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceEvent" /> object and the passed <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceEvent" /> object are the same.</summary>
-        <returns>Returns <see langword="True" /> if the objects are same; otherwise, returns <see langword="False" />.</returns>
+        <returns><see langword="true" /> if the objects are same; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,7 +156,7 @@
         <param name="right">The second <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceEvent" /> object to compare.</param>
         <summary>Returns a value indicating whether the specified <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceEvent" /> objects are the same.</summary>
         <returns>
-          <see langword="True" /> if the two objects are the same; otherwise, <see langword="False" />.</returns>
+          <see langword="true" /> if the two objects are the same; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,7 +184,7 @@
         <param name="right">The second <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceEvent" /> object to compare.</param>
         <summary>Returns a value indicating whether the specified <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceEvent" /> objects are not the same.</summary>
         <returns>
-          <see langword="True" /> if the two objects are the same; otherwise, <see langword="False" />.</returns>
+          <see langword="true" /> if the two objects are the same; otherwise, <see langword="False" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

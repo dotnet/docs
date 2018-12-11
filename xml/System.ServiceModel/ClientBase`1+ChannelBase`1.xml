@@ -1155,7 +1155,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the client channel allows an initialization UI.</summary>
         <value>
-          <see langword="True" /> if the client channel allows an initialization UR; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the client channel allows an initialization UR; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1221,7 +1221,7 @@
       <Docs>
         <summary>Gets a value that indicates whether a call was done to a user interface to obtain credential information.</summary>
         <value>
-          <see langword="True" /> if a call was done to a user interface to obtain credential information; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if a call was done to a user interface to obtain credential information; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1951,7 +1951,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the batching of outgoing messages is allowed; otherwise, false.</summary>
         <value>
-          <see langword="True" /> if the batching of outgoing messages is allowed; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the batching of outgoing messages is allowed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

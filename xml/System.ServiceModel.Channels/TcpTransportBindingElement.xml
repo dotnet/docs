@@ -625,7 +625,7 @@
       <Docs>
         <summary>Indicates whether the TCP transport binding element should serialize listen backlog.</summary>
         <returns>
-          <see langword="True" /> if the TCP transport binding element should serialize listen backlog; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the TCP transport binding element should serialize listen backlog; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

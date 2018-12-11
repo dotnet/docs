@@ -353,7 +353,7 @@
       <Docs>
         <summary>Gets or sets a flag that indicates whether a <see cref="T:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle" /> algorithm is enabled.</summary>
         <value>
-          <see langword="True" /> if an algorithm will be applied to prevent data point labels from overlapping. <see langword="False" /> if overlapping of data point labels will not be prevented. The default value is <see langword="True" />.</value>
+          <see langword="true" /> if an algorithm will be applied to prevent data point labels from overlapping. <see langword="False" /> if overlapping of data point labels will not be prevented. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -386,7 +386,7 @@
       <Docs>
         <summary>Gets or sets a flag that specifies whether the point labels are allowed to overlap a point marker.</summary>
         <value>
-          <see langword="True" /> if data point labels are permitted to overlap point markers. <see langword="False" /> if data point labels will be prevented from overlapping the point markers. The default value is <see langword="false" />.</value>
+          <see langword="true" /> if data point labels are permitted to overlap point markers. <see langword="False" /> if data point labels will be prevented from overlapping the point markers. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -419,7 +419,7 @@
       <Docs>
         <summary>Gets or sets a flag that indicates whether overlapped labels that cannot be repositioned will be hidden.</summary>
         <value>
-          <see langword="True" /> if labels will be hidden if they overlap. <see langword="False" /> if overlapped labels will not be hidden. The default value is <see langword="True" />.</value>
+          <see langword="true" /> if labels will be hidden if they overlap. <see langword="false" /> if overlapped labels will not be hidden. The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

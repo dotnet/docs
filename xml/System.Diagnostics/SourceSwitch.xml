@@ -303,7 +303,7 @@
         <param name="eventType">One of the <see cref="T:System.Diagnostics.TraceEventType" /> values.</param>
         <summary>Determines if trace listeners should be called, based on the trace event type.</summary>
         <returns>
-          <see langword="True" /> if the trace listeners should be called; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the trace listeners should be called; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

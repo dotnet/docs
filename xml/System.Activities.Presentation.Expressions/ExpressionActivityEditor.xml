@@ -53,7 +53,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the expression activity accepts returns.</summary>
         <value>
-          <see langword="True" /> if the expression activity accepts returns; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the expression activity accepts returns; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +95,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the expression activity accepts tabs.</summary>
         <value>
-          <see langword="True" /> if the expression activity accepts tabs; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the expression activity accepts tabs; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,7 +229,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the commit is explicit.</summary>
         <value>
-          <see langword="True" /> if the commit is explicit; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the commit is explicit; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -502,7 +502,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the expression activity is read-only.</summary>
         <value>
-          <see langword="True" /> if the expression activity is read-only; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the expression activity is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -544,7 +544,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the expression is supported.</summary>
         <value>
-          <see langword="True" /> if the expression is supported; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the expression is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -694,7 +694,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the instance uses the location expression.</summary>
         <value>
-          <see langword="True" /> if the instance uses the location expression; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the instance uses the location expression; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

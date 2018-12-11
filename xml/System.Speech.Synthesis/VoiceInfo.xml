@@ -252,7 +252,7 @@ namespace SampleSynthesis
       <Docs>
         <param name="obj">The specified <see cref="T:System.Speech.Synthesis.VoiceInfo" /> object.</param>
         <summary>Compares the fields of the voice with the specified <see cref="T:System.Speech.Synthesis.VoiceInfo" /> object to determine whether they contain the same values.</summary>
-        <returns>Returns <see langword="True" /> if the fields of the two <see cref="T:System.Speech.Synthesis.VoiceInfo" /> objects are equal; otherwise returns <see langword="False" />.</returns>
+        <returns><see langword="true" /> if the fields of the two <see cref="T:System.Speech.Synthesis.VoiceInfo" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

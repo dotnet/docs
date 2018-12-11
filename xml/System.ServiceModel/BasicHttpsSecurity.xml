@@ -126,7 +126,7 @@
       <Docs>
         <summary>Indicates whether the message element should be serialized.</summary>
         <returns>
-          <see langword="True" /> if the message element should be serialized; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the message element should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,7 +157,7 @@
       <Docs>
         <summary>Indicates whether the transport element should be serialized.</summary>
         <returns>
-          <see langword="True" /> if the transport element should be serialized; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the transport element should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

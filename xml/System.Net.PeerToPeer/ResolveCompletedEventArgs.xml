@@ -59,7 +59,7 @@
         <param name="peerNameRecordCollection">The collection associated with the peer name that was resolved.</param>
         <param name="error">Returns an exception if an error occurred.</param>
         <param name="canceled">
-          <see langword="True" /> if the <see cref="Overload:System.Net.PeerToPeer.PeerNameResolver.ResolveAsync" /> operation was cancelled, otherwise <see langword="False" />.</param>
+          <see langword="true" /> if the <see cref="Overload:System.Net.PeerToPeer.PeerNameResolver.ResolveAsync" /> operation was cancelled; otherwise, <see langword="false" />.</param>
         <param name="userToken">The user token specified when a <see cref="Overload:System.Net.PeerToPeer.PeerNameResolver.ResolveAsync" /> operation was started.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.ResolveCompletedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>

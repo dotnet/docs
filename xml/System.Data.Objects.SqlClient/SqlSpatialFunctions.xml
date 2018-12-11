@@ -266,7 +266,7 @@
         <param name="geographyOther">Another geography instance to compare against the instance on which Filter is invoked.</param>
         <summary>Offers a fast, index-only intersection method to determine if a geography instance intersects another SqlGeography instance, assuming an index is available.</summary>
         <returns>
-          <see langword="True" /> if a geography instance potentially intersects another SqlGeography instance; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if a geography instance potentially intersects another SqlGeography instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,7 +299,7 @@
         <param name="geometryOther">Another geography instance to compare against the instance on which Filter is invoked.</param>
         <summary>Offers a fast, index-only intersection method to determine if a geography instance intersects another SqlGeometry instance, assuming an index is available.</summary>
         <returns>
-          <see langword="True" /> if a geography instance potentially intersects another SqlGeography instance; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if a geography instance potentially intersects another SqlGeography instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

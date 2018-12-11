@@ -135,7 +135,7 @@
       <Docs>
         <param name="securityMode">The type of security used with the binding.</param>
         <param name="reliableSessionEnabled">
-          <see langword="True" /> if reliable sessions are enabled; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if reliable sessions are enabled; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.NetHttpsBinding" /> class with the type of security used and with the value that indicates whether reliable sessions are explicitly enabled.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -343,7 +343,7 @@
       <Docs>
         <summary>Indicates whether the reliable session property has changed from its default value and should be serialized.</summary>
         <returns>
-          <see langword="True" /> if the reliable session property value should be serialized; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the reliable session property value should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -375,7 +375,7 @@
       <Docs>
         <summary>Indicates whether the security property has changed from its default value and should be serialized.</summary>
         <returns>
-          <see langword="True" /> if the security property value should be serialized; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the security property value should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

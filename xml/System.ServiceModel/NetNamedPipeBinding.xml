@@ -566,7 +566,7 @@
       <Docs>
         <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.NetNamedPipeBinding.MaxConnections" /> property has changed from its default value and should be serialized.</summary>
         <returns>
-          <see langword="True" /> if the <see cref="P:System.ServiceModel.NetNamedPipeBinding.MaxConnections" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.NetNamedPipeBinding.MaxConnections" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

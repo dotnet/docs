@@ -402,7 +402,7 @@
       </Parameters>
       <Docs>
         <param name="disposing">
-          <see langword="True" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
+          <see langword="true" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases unmanaged and, optionally, managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -500,7 +500,7 @@
       <Docs>
         <summary>Gets or sets a flag that determines if an annotation is selected.</summary>
         <value>
-          <see langword="True" /> if the annotation is selected, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the annotation is selected; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -527,7 +527,7 @@
       <Docs>
         <summary>Gets or sets a flag that specifies whether the size of an annotation is always defined in relative chart coordinates.</summary>
         <value>
-          <see langword="True" /> if the <see cref="P:System.Web.UI.DataVisualization.Charting.Annotation.Width" /> and <see cref="P:System.Web.UI.DataVisualization.Charting.Annotation.Height" /> of an annotation are always in chart relative coordinates, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="P:System.Web.UI.DataVisualization.Charting.Annotation.Width" /> and <see cref="P:System.Web.UI.DataVisualization.Charting.Annotation.Height" /> of an annotation are always in chart relative coordinates; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -758,7 +758,7 @@
       <Docs>
         <summary>Gets or sets a flag that indicates whether the annotation is visible.</summary>
         <value>
-          <see langword="True" /> if the annotation is visible, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the annotation is visible; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -172,7 +172,7 @@
         <param name="obj">The de-referenced activity, if the reference is available, or null otherwise.</param>
         <summary>Obtains the actual reference to the object by its ObjectReference.</summary>
         <returns>
-          <see langword="True" /> if the actual reference to the object is obtained by the object reference; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the actual reference to the object is obtained by the object reference; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

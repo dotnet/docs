@@ -707,7 +707,7 @@
         <param name="message">The Windows event message to filter.</param>
         <summary>Runs any filters against a window message, and returns a copy of the modified message.</summary>
         <returns>
-          <see langword="True" /> if the filters were processed; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the filters were processed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

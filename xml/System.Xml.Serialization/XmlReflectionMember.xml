@@ -281,7 +281,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates that the value of the corresponding XML element definition's <c>isNullable</c> attribute is <see langword="false" />.</summary>
         <value>
-          <see langword="True" /> to override the <see cref="P:System.Xml.Serialization.XmlElementAttribute.IsNullable" /> property; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> to override the <see cref="P:System.Xml.Serialization.XmlElementAttribute.IsNullable" /> property; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

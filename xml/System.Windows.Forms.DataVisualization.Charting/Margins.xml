@@ -157,7 +157,7 @@
         <param name="obj">The object to compare with the current object.</param>
         <summary>Determines whether the specified object is equal to the current object.</summary>
         <returns>
-          <see langword="True" /> if the specified object is equal to the current object, otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,7 +202,7 @@
       <Docs>
         <summary>Determines whether the margins are empty.</summary>
         <returns>
-          <see langword="True" /> if all margins values are zero, otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if all margins values are zero; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

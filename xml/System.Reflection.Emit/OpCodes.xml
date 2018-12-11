@@ -13585,7 +13585,7 @@ callvirt m
         <param name="inst">An instance of an Opcode object.</param>
         <summary>Returns true or false if the supplied opcode takes a single byte argument.</summary>
         <returns>
-          <see langword="True" /> or <see langword="false" />.</returns>
+          <see langword="true" /> or <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

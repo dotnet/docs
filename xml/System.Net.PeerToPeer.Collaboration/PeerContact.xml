@@ -205,7 +205,7 @@
       </Parameters>
       <Docs>
         <param name="disposing">
-          <see langword="True" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources and optionally releases the managed resources used by the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1326,7 +1326,7 @@
       <Docs>
         <summary>Gets or sets a value specifying whether the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> is subscribed or unsubscribed to an endpoint. Alternatively, this property gets or sets a value specifying whether the current peer host or hosting application has subscribed or unsubscribed to this <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />.</summary>
         <value>
-          <see langword="True" /> if this <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> is subscribed to this endpoint, <see langword="false" /> if the contact has not subscribed or has unsubscribed.</value>
+          <see langword="true" /> if this <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> is subscribed to this endpoint, <see langword="false" /> if the contact has not subscribed or has unsubscribed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

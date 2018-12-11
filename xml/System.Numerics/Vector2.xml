@@ -1805,7 +1805,7 @@
         <Parameter Name="format" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="format">A  or  that defines the format of individual elements.</param>
+        <param name="format">A standard or custom numeric format string that defines the format of individual elements.</param>
         <summary>Returns the string representation of the current instance using the specified format string to format individual elements.</summary>
         <returns>The string representation of the current instance.</returns>
         <remarks>
@@ -1855,7 +1855,7 @@
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">A  or  that defines the format of individual elements.</param>
+        <param name="format">A standard or custom numeric format string that defines the format of individual elements.</param>
         <param name="formatProvider">A format provider that supplies culture-specific formatting information.</param>
         <summary>Returns the string representation of the current instance using the specified format string to format individual elements and the specified format provider to define culture-specific formatting.</summary>
         <returns>The string representation of the current instance.</returns>

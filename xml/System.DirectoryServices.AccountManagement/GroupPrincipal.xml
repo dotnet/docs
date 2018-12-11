@@ -192,7 +192,7 @@
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> that matches the specified identity value and type, or null if no matches are found.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.MultipleMatchesException">Multiple group principal objects matching the current group object were found.</exception>
-        <exception cref="T:System.ComponenetModel.InvalidEnumerationOperatorException">The identity value is not a valid <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The identity value is not a valid <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetMembers">

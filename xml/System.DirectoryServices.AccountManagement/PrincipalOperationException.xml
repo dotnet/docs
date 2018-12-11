@@ -263,9 +263,7 @@
       </ReturnValue>
       <Docs>
         <summary>Returns an integer error code.</summary>
-        <value>Returns an <see langword="integer" />.  
-  
- The system will return 0 (zero) in the exception error code property if no underlying error was received from a win32 API. Callers need to distinguish between 0 (zero) and a valid win32 error code.</value>
+        <value>An integer error code. The system will return 0 (zero) in the exception error code property if no underlying error was received from a win32 API. Callers need to distinguish between 0 (zero) and a valid win32 error code.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

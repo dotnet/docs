@@ -199,7 +199,7 @@
 |---------------|---------------|  
 |ArgumentNullException|`array` is a null reference (`Nothing` in Visual Basic).|  
 |ArgumentOutOfRangeException|`index` is less than zero.|  
-|ArgumentException|`array` is multidimensional<br /><br /> -or-<br /><br /> The number of elements in the source <xref:System.DirectoryServices.Protocols.DirectoryAttributeCollection> is greater than the available space from `index` to the end of the destination `array`.|  
+|ArgumentException|`array` is multidimensional.<br /><br /> -or-<br /><br /> The number of elements in the source <xref:System.DirectoryServices.Protocols.DirectoryAttributeCollection> is greater than the available space from `index` to the end of the destination `array`.|  
 |InvalidCastException|The type of the source <xref:System.DirectoryServices.Protocols.DirectoryAttributeCollection> cannot be cast automatically to the type of the destination `array`.|  
   
  ]]></format>

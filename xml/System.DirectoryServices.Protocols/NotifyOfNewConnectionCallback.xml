@@ -38,7 +38,7 @@
     <param name="errorCodeFromBind">A <see cref="T:System.Int32" /> object that specifies the error code from the bind operation.</param>
     <summary>The <see cref="T:System.DirectoryServices.Protocols.NotifyOfNewConnectionCallback" /> delegate is called if a new connection was created while chasing a referral.</summary>
     <returns>
-      <see langword="true" /> if the connection is to be cached.  <see langword="false" /> if not required to cache the connection.</returns>
+      <see langword="true" /> if the connection is to be cached. <see langword="false" /> if not required to cache the connection.</returns>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

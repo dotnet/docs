@@ -1289,7 +1289,12 @@ ctx.Dispose();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">An exception occurred when saving the changes to the store.</exception>
+        <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">
+          The caller does not have appropriate rights.
+
+-or-
+
+An exception occurred when saving the changes to the store.</exception>
       </Docs>
     </Member>
     <Member MemberName="UserCannotChangePassword">

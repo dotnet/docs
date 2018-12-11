@@ -359,15 +359,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is <see cref="F:System.Double.NaN" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is <see cref="F:System.Double.NegativeInfinity" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is <see cref="F:System.Double.PositiveInfinity" />.</exception>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NegativeInfinity" />, or <see cref="F:System.Double.PositiveInfinity" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -519,15 +511,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is <see cref="F:System.Single.NaN" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is <see cref="F:System.Single.NegativeInfinity" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is <see cref="F:System.Single.PositiveInfinity" />.</exception>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is <see cref="F:System.Single.NaN" />, <see cref="F:System.Single.NegativeInfinity" />, or <see cref="F:System.Single.PositiveInfinity" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -3144,15 +3128,7 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is <see cref="F:System.Double.NaN" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is <see cref="F:System.Double.PositiveInfinity" />.
-  
- -or-  
-  
- The value of <paramref name="value" /> is <see cref="F:System.Double.NegativeInfinity" />.</exception>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.PositiveInfinity" />, or <see cref="F:System.Double.NegativeInfinity" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3204,11 +3180,7 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Byte.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.Byte.MaxValue" />.</exception>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.Byte.MinValue" /> or greater than <see cref="F:System.Byte.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3260,11 +3232,7 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Decimal.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3374,11 +3342,7 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Int16.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.Int16.MaxValue" />.</exception>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.Int16.MinValue" /> or is greater than <see cref="F:System.Int16.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3430,11 +3394,7 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Int32.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.Int32.MinValue" /> or is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3486,11 +3446,7 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Int64.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.Int64.MaxValue" />.</exception>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.Int64.MinValue" /> or is greater than <see cref="F:System.Int64.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3549,11 +3505,7 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.SByte.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.SByte.MaxValue" />.</exception>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.SByte.MinValue" /> or is greater than <see cref="F:System.SByte.MaxValue" />.</exception>
         <altCompliant cref="T:System.Int16" />
       </Docs>
     </Member>
@@ -3671,11 +3623,7 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt16.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.UInt16.MinValue" /> or is greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
         <altCompliant cref="T:System.Int32" />
       </Docs>
     </Member>
@@ -3735,11 +3683,7 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt32.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.UInt32.MinValue" /> or is greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
         <altCompliant cref="T:System.Int64" />
       </Docs>
     </Member>
@@ -3799,11 +3743,7 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt64.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.UInt64.MinValue" /> or is greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
         <altCompliant cref="T:System.Double" />
       </Docs>
     </Member>
@@ -3859,15 +3799,7 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is <see cref="F:System.Single.NaN" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is <see cref="F:System.Single.PositiveInfinity" />.
-  
- -or-  
-  
- The value of <paramref name="value" /> is <see cref="F:System.Single.NegativeInfinity" />.</exception>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is <see cref="F:System.Single.NaN" />, <see cref="F:System.Single.PositiveInfinity" />, or <see cref="F:System.Single.NegativeInfinity" />.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="op_GreaterThan">
@@ -6768,7 +6700,7 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="exponent" /> parameter is negative.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="exponent" /> is negative.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remainder">

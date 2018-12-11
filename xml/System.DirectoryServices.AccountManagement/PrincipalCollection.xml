@@ -32,7 +32,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>A mutable collection of objects derived from the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> class.  This class is designed to be used for multi-valued properties that contain Principals.  Manipulating the contents of this collection changes the contents of the corresponding store property, which is made permanent when <see cref="M:System.DirectoryServices.AccountManagement.Principal.Save" /> is called on the corresponding principal object.</summary>
+    <summary>A mutable collection of objects derived from the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> class. This class is designed to be used for multi-valued properties that contain <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> objects. Manipulating the contents of this collection changes the contents of the corresponding store property, which is made permanent when <see cref="M:System.DirectoryServices.AccountManagement.Principal.Save" /> is called on the corresponding principal object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,7 +47,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As with <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Remove%2A> and <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Contains%2A>, There are four overloads to this function, but they all do the same thing.  The extra overloads are only implemented to improve usability, so that developers using Intellisense see overloads that take a <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal>, or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> object.  Calling any one of the User, Group, or Computer overloads is exactly equivalent to calling the <xref:System.DirectoryServices.AccountManagement.Principal> overload.  
+ As with <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Remove%2A> and <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Contains%2A>, There are four overloads to this function, but they all do the same thing. The extra overloads are only implemented to improve usability, so that developers using IntelliSense see overloads that take a <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal>, or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> object. Calling any one of the User, Group, or Computer overloads is exactly equivalent to calling the <xref:System.DirectoryServices.AccountManagement.Principal> overload.  
   
  ]]></format>
         </remarks>
@@ -307,7 +307,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all Principals from the collection.</summary>
+        <summary>Removes all <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> objects from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -316,7 +316,7 @@
   
 |Exception|Description|  
 |---------------|-----------------|  
-|<xref:System.InvalidOperationException>|If this method is called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> PrincipalCollection, the  <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> property cannot be cleared because one or more of the group's members have this group as their primary group|  
+|<xref:System.InvalidOperationException>|If this method is called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> PrincipalCollection, the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> property cannot be cleared because one or more of the group's members have this group as their primary group.|  
   
  ]]></format>
         </remarks>
@@ -328,12 +328,12 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Returns true if the specified Principal is a member of the PrincipalCollection, false otherwise.  The Principal can be specified in the same manner as in the <see cref="Overload:System.DirectoryServices.AccountManagement.PrincipalCollection.Add" />.methods.</summary>
+        <summary>Returns a value that indicates whether the specified <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> is a member of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />. The <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> can be specified in the same manner as in the <see cref="Overload:System.DirectoryServices.AccountManagement.PrincipalCollection.Add" /> methods.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As with <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Add%2A>, and <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Remove%2A> there are four overloads to this function, but they all do the same thing.  The extra overloads are only implemented to improve usability, so that developers using Intellisense see overloads that take a <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal>, or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> object.  Calling any one of the User, Group, or Computer overloads is exactly equivalent to calling the <xref:System.DirectoryServices.AccountManagement.Principal> overload.  
+ As with <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Add%2A>, and <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Remove%2A> there are four overloads to this function, but they all do the same thing. The extra overloads are only implemented to improve usability, so that developers using IntelliSense see overloads that take a <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal>, or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> object. Calling any one of the User, Group, or Computer overloads is exactly equivalent to calling the <xref:System.DirectoryServices.AccountManagement.Principal> overload.  
   
  ]]></format>
         </remarks>
@@ -369,8 +369,8 @@
       </Parameters>
       <Docs>
         <param name="computer">A <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object.</param>
-        <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object.</summary>
-        <returns>Returns <see langword="true" /> if the collection contains the specified object; <see langword="false" /> otherwise.</returns>
+        <summary>Returns a value indicating whether the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object.</summary>
+        <returns><see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,8 +404,8 @@
       </Parameters>
       <Docs>
         <param name="group">A <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object</param>
-        <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object.</summary>
-        <returns>Returns <see langword="true" /> if the collection contains the specified object; <see langword="false" /> otherwise.</returns>
+        <summary>Returns a value indicating whether the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object.</summary>
+        <returns><see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -438,8 +438,8 @@
       </Parameters>
       <Docs>
         <param name="principal">A <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object</param>
-        <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object.</summary>
-        <returns>Returns <see langword="true" /> if the collection contains the specified object; <see langword="false" /> otherwise.</returns>
+        <summary>Returns a value indicating whether the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object.</summary>
+        <returns><see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -473,8 +473,8 @@
       </Parameters>
       <Docs>
         <param name="user">A <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object.</param>
-        <summary>Returns true if the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object.</summary>
-        <returns>Returns <see langword="true" /> if the collection contains the specified object; <see langword="false" /> otherwise.</returns>
+        <summary>Returns a value indicating whether the collection contains the specified <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object.</summary>
+        <returns><see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -508,8 +508,8 @@
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object of the principal.</param>
         <param name="identityType">An <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> object that specifies the format of <paramref name="identityValue" /></param>
         <param name="identityValue">A string that identifies the principal, in the format specified by <paramref name="identityType" /></param>
-        <summary>Returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object matching the <paramref name="identityType" />/<paramref name="identityValue" /> pair is in the collection. </summary>
-        <returns>Returns <see langword="true" /> if an object matching the <paramref name="identityType" />/<paramref name="identityValue" /> pair is in the collection; <see langword="false" /> otherwise.</returns>
+        <summary>Returns a value indicating whether the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object matching the <paramref name="identityType" />/<paramref name="identityValue" /> pair is in the collection. </summary>
+        <returns><see langword="true" /> if an object matching the <paramref name="identityType" />/<paramref name="identityValue" /> pair is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -554,7 +554,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `array` must be one-dimensional.  If it is not, an <xref:System.ArgumentException> is thrown.  Further exceptions are thrown if the number of elements to copy is greater than the available space from `index` to the end of `array`, if `array` is `null`, or if `index` is less than 0.  
+ `array` must be one-dimensional. If it is not, an <xref:System.ArgumentException> is thrown. Further exceptions are thrown if the number of elements to copy is greater than the available space from `index` to the end of `array`, if `array` is `null`, or if `index` is less than 0.  
   
  ]]></format>
         </remarks>
@@ -587,7 +587,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the count of Principal objects in this collection.</summary>
+        <summary>Returns the count of <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> objects in this collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -625,7 +625,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Conceptually, each instance of <xref:System.DirectoryServices.AccountManagement.PrincipalCollection> has a single enumerator associated with it.  Although multiple calls to <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.System%23Collections%23IEnumerable%23GetEnumerator%2A> return distinct <xref:System.Collections.IEnumerator> objects, they share the same internal state.  
+ Conceptually, each instance of <xref:System.DirectoryServices.AccountManagement.PrincipalCollection> has a single enumerator associated with it. Although multiple calls to <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.System%23Collections%23IEnumerable%23GetEnumerator%2A> return distinct <xref:System.Collections.IEnumerator> objects, they share the same internal state.  
   
  ]]></format>
         </remarks>
@@ -652,8 +652,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns false.  This is not a read-only collection.</summary>
-        <value>Returns a <see langword="bool" />.</value>
+        <summary>Returns <see langword="false" />. This is not a read-only collection.</summary>
+        <value>Always <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -678,8 +678,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns false.  It is up to the application to serialize access to this collection.</summary>
-        <value>Returns a <see langword="bool" />.</value>
+        <summary>Returns <see langword="false" />. It is up to the application to serialize access to this collection.</summary>
+        <value>Always <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -694,7 +694,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As with <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Add%2A>, and <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Contains%2A> there are four overloads to this function, but they all do the same thing.  The extra overloads are only implemented to improve usability, so that developers using Intellisense see overloads that take a <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal>, or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> object.  Calling any one of the User, Group, or Computer overloads is exactly equivalent to calling the <xref:System.DirectoryServices.AccountManagement.Principal> overload.  
+ As with <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Add%2A>, and <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Contains%2A> there are four overloads to this function, but they all do the same thing. The extra overloads are only implemented to improve usability, so that developers using IntelliSense see overloads that take a <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal>, or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> object. Calling any one of the User, Group, or Computer overloads is exactly equivalent to calling the <xref:System.DirectoryServices.AccountManagement.Principal> overload.  
   
  ]]></format>
         </remarks>
@@ -731,7 +731,7 @@
       <Docs>
         <param name="computer">A <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object.</param>
         <summary>Removes the specified <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object from the collection, and returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />, and <see langword="false" /> otherwise (in which case the method performs no operation).</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />; <see langword="false" /> otherwise.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -777,7 +777,7 @@
       <Docs>
         <param name="group">A <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object.</param>
         <summary>Removes the specified <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object from the collection, and returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />, and <see langword="false" /> otherwise (in which case the method performs no operation).</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />; <see langword="false" /> otherwise.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -822,7 +822,7 @@
       <Docs>
         <param name="principal">A <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object.</param>
         <summary>Removes the specified <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object from the collection, and returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />, and <see langword="false" /> otherwise (in which case the method performs no operation).</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />; <see langword="false" /> otherwise.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -868,7 +868,7 @@
       <Docs>
         <param name="user">A <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object.</param>
         <summary>Removes the specified <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object from the collection, and returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />, and <see langword="false" /> otherwise (in which case the method performs no operation).</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />; <see langword="false" /> otherwise.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -914,7 +914,7 @@
         <param name="identityType">An <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> that identifies the format of <paramref name="identityValue" />.</param>
         <param name="identityValue">A string.</param>
         <summary>Finds the <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object specified by the given <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> and <paramref name="identityType" />/<paramref name="identityValue" /> pair from the collection, and returns <see langword="true" /> if the identified <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />, and <see langword="false" /> otherwise (in which case the method performs no operation).</summary>
-        <returns>Returns <see langword="true" /> if the identified <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />; <see langword="false" /> otherwise.</returns>
+        <returns><see langword="true" /> if the identified <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> was a member of this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -925,7 +925,7 @@
 |---------------|-----------------|  
 |<xref:System.InvalidOperationException>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
 |<xref:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException>|No principal matching the specified parameters was found.|  
-|<xref:System.DirectoryServices.AccountManagement.MultipleMatchesException>|More than one principal matches the specified parameters.  In theory, this should never happen, because <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Add%2A> throws an exception when there is an attempt to add duplicate principals to the collection.  However, it is possible that another API created the duplicate.|  
+|<xref:System.DirectoryServices.AccountManagement.MultipleMatchesException>|More than one principal matches the specified parameters. In theory, this should never happen, because <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Add%2A> throws an exception when there is an attempt to add duplicate principals to the collection. However, it is possible that another API created the duplicate.|  
 |<xref:System.ArgumentException>|`identityType` is an empty string.|  
   
  ]]></format>
@@ -993,7 +993,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `array` must be one-dimensional.  If it is not, an <xref:System.ArgumentException> is thrown.  Further exceptions are thrown if the number of elements to copy is greater than the available space from `index` to the end of `array`, if `array` is `null`, or if `index` is less than 0.  
+ `array` must be one-dimensional. If it is not, an <xref:System.ArgumentException> is thrown. Further exceptions are thrown if the number of elements to copy is greater than the available space from `index` to the end of `array`, if `array` is `null`, or if `index` is less than 0.  
   
  ]]></format>
         </remarks>
@@ -1028,8 +1028,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the count of Principal objects in this collection.</summary>
-        <value>Returns an <see langword="integer" />.</value>
+        <summary>Returns the count of <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> objects in this collection.</summary>
+        <value>The count of <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> objects in this collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1062,16 +1062,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Always returns <see langword="false" />.  It is up to the application to synchronize access to this collection.</summary>
-        <value>Returns a <see langword="bool" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Always returns `false`.  
-  
- ]]></format>
-        </remarks>
+        <summary>Always returns <see langword="false" />. It is up to the application to synchronize access to this collection.</summary>
+        <value>Always <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -1103,7 +1096,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a synchronization object that can be used to synchronize access to this collection.  Returns the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" /> object itself.</summary>
+        <summary>Returns a synchronization object that can be used to synchronize access to this collection. Returns the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" /> object itself.</summary>
         <value>The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1143,7 +1136,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Conceptually, each instance of <xref:System.DirectoryServices.AccountManagement.PrincipalCollection> has a single enumerator associated with it.  Although multiple calls to <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.System%23Collections%23IEnumerable%23GetEnumerator%2A> return distinct <xref:System.Collections.IEnumerator> objects, they share the same internal state.  
+ Conceptually, each instance of <xref:System.DirectoryServices.AccountManagement.PrincipalCollection> has a single enumerator associated with it. Although multiple calls to <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.System%23Collections%23IEnumerable%23GetEnumerator%2A> return distinct <xref:System.Collections.IEnumerator> objects, they share the same internal state.  
   
  ]]></format>
         </remarks>

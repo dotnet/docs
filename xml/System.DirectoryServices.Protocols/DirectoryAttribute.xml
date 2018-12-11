@@ -351,9 +351,9 @@
           <paramref name="index" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">This exception can occur under one of the following conditions:  
   
--   <paramref name="array" /> is multidimensional  
+-   <paramref name="array" /> is multidimensional.
   
--   <paramref name="index" /> is equal to, or greater than, the length of <paramref name="array" />  
+-   <paramref name="index" /> is equal to, or greater than, the length of <paramref name="array" />.
   
 -   The number of elements in the source <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> is greater than the space available from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>

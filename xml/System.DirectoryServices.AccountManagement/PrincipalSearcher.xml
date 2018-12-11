@@ -96,7 +96,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">Persisted principal objects can not be used as the <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" />.  
   
- The <paramref name="queryFilter" /> parameter cannot be null or empty.</exception>
+ The <paramref name="queryFilter" /> parameter cannot be <see langword="null" /> or empty.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
       </Docs>
     </Member>
@@ -240,7 +240,7 @@
       <Parameters />
       <Docs>
         <summary>Returns a principal search result that contains the first principal object found that matches the principal specified in the <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> property.</summary>
-        <returns>A  <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object that contains the principal object that matches the query filter or null if no results are found.</returns>
+        <returns>A  <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object that contains the principal object that matches the query filter or <see langword="null" /> if no results are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -358,7 +358,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the query filter that is used to locate matching principals.</summary>
-        <value>The <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object that is used for the query or null if no filter is set.</value>
+        <value>The <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object that is used for the query or <see langword="null" /> if no filter is set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -369,7 +369,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">Persisted Principal objects can not be used as the <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" />.  
   
- The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> cannot be null or empty.</exception>
+ The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> cannot be <see langword="null" /> or empty.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query by Example</related>
       </Docs>
     </Member>

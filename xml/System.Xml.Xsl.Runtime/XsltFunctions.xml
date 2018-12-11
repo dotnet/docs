@@ -536,7 +536,7 @@
       </Parameters>
       <Docs>
         <param name="value">The string from which to retrieve the substring.</param>
-        <param name="startIndex">The starting character position of a substring in <c>s</c>.</param>
+        <param name="startIndex">The starting character position of a substring in <paramref name="value" />.</param>
         <summary>Implements <see langword="substring" /> XPath function according to the [W3C specification](https://go.microsoft.com/fwlink/?LinkID=4873).</summary>
         <returns>The substring of the first argument starting at the position specified in the second argument</returns>
         <remarks>To be added.</remarks>
@@ -570,7 +570,7 @@
       </Parameters>
       <Docs>
         <param name="value">The string from which to retrieve the substring.</param>
-        <param name="startIndex">The starting character position of a substring in <c>s</c>.</param>
+        <param name="startIndex">The starting character position of a substring in <paramref name="value" />.</param>
         <param name="length">The number of characters in the substring.</param>
         <summary>Implements <see langword="substring" /> XPath function according to the [W3C specification](https://go.microsoft.com/fwlink/?LinkID=4873).</summary>
         <returns>The substring of the first argument, starting at the position specified in the second argument, with the length specified in the third argument.</returns>

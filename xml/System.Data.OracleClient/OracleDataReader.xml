@@ -449,7 +449,7 @@ public void ReadOracleTypesExample(string connectionString)
         <param name="i">The zero-based column ordinal.</param>
         <param name="fieldOffset">The index within the field where the read operation is to begin.</param>
         <param name="buffer2">The buffer into which to read the stream of bytes.</param>
-        <param name="bufferoffset">The index where <c>buffer</c> is to begin the write operation.</param>
+        <param name="bufferoffset">The index where <paramref name="buffer2" /> is to begin the write operation.</param>
         <param name="length">The number of bytes to read.</param>
         <summary>Reads a stream of bytes from the specified column offset into the buffer as an array, starting at the given buffer offset.</summary>
         <returns>The actual number of bytes read.</returns>
@@ -528,7 +528,7 @@ public void ReadOracleTypesExample(string connectionString)
         <param name="i">The zero-based column ordinal.</param>
         <param name="fieldOffset">The index within the row where the read operation is to begin.</param>
         <param name="buffer2">The buffer into which to copy data.</param>
-        <param name="bufferoffset">The index where <c>buffer</c> is to begin the write operation.</param>
+        <param name="bufferoffset">The index where <paramref name="buffer2" /> is to begin the write operation.</param>
         <param name="length">The number of characters to read.</param>
         <summary>Reads a stream of characters from the specified column offset into the buffer as an array, starting at the given buffer offset.</summary>
         <returns>The actual number of characters read.</returns>

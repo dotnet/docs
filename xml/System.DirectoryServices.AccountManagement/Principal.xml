@@ -821,7 +821,7 @@
         <summary>Returns the underlying <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that provides the contact data for the principal object.</summary>
         <returns>The underlying <see cref="T:System.DirectoryServices.DirectoryEntry" /> object.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationExtension">The current principal has not been persisted and does not have an associated <see cref="T:System.DirectoryServices.DirectoryEntry" /> object.</exception>
+        <exception cref="T:System.InvalidOperationException">The current principal has not been persisted and does not have an associated <see cref="T:System.DirectoryServices.DirectoryEntry" /> object.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetUnderlyingObjectType">

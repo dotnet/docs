@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The class that contains the model representing a WCF service's timeouts.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see xref="T:System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +56,8 @@
         <Parameter Name="timeouts" Type="System.ServiceModel.IDefaultCommunicationTimeouts" />
       </Parameters>
       <Docs>
-        <param name="timeouts">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="timeouts">An object that contains the communication timeout values used to populate the properties of this model.</param>
+        <summary>Initializes an instance of the <see xref="T:System.ServiceModel.Description.ServiceHealthModel.CommunicationTimeoutsModel" /> class using default values specified by the <see cref="T:System.ServiceModel.IDefaultCommunicationTimeouts" /> argument.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the time interval after which the <see cref="T:System.ServiceModel.Channels.CommunicationObject.Close" /> method invoked by a communication object times out.</summary>
+        <value>The time interval after which the <see cref="T:System.ServiceModel.Channels.CommunicationObject.Close" /> method invoked by a communication object times out.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +108,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the communication object has timeouts.</summary>
+        <value><see langword="true" /> if the communication object has timeouts; <see langword="false" /> otherwise.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,8 +134,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the time interval after which the <see cref="T:System.ServiceModel.Channels.CommunicationObject.Open" /> method invoked by a communication object times out.</summary>
+        <value>The time interval after which the <see cref="T:System.ServiceModel.Channels.CommunicationObject.Open" /> method invoked by a communication object times out.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +160,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the time interval after which the <c>Receive</c> method invoked by a communication object times out.</summary>
+        <value>The time interval after which the <c>Receive</c> method invoked by a communication object times out.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,8 +186,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the time interval after which the <c>Send</c> method invoked by a communication object times out.</summary>
+        <value>The time interval after which the <c>Send</c> method invoked by a communication object times out.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

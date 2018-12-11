@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains the model that represents the channel dispatchers associated with a WCF service.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel.ChannelDispatcherModel" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +56,8 @@
         <Parameter Name="channelDispatcher" Type="System.ServiceModel.Dispatcher.ChannelDispatcherBase" />
       </Parameters>
       <Docs>
-        <param name="channelDispatcher">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="channelDispatcher">An instance of the channel dispatcher that is used to build the model.</param>
+        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel.ChannelDispatcherModel" /> class using a specified channel dispatcher.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the binding used to configure the service.</summary>
+        <value>The name of the binding used to configure the service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +108,8 @@
         <ReturnType>System.ServiceModel.Description.ServiceHealthModel+CommunicationTimeoutsModel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the model that represents the WCF service's communication timeouts.</summary>
+        <value>The model that represents the WCF service's communication timeouts. </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,8 +134,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the contract of the service endpoint.</summary>
+        <value>The name of the contract of the service endpoint.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +160,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether the endpoint associated with the channel dispatcher is a system endpoint.</summary>
+        <value><paramref name="true" /> if the endpoint associated with the channel dispatcher is a system endpoint; <paramref name="false" /> if it is a user-defined endpoint. </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,8 +186,8 @@
         <ReturnType>System.Nullable&lt;System.ServiceModel.CommunicationState&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the state of the listener.</summary>
+        <value>The state of the listener.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,8 +212,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URI at which the service endpoint listens.</summary>
+        <value> the URI at which the service endpoint listens.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,8 +238,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the full name of the message encoder, which is used to write and read messages.</summary>
+        <value>The full name of the message encoder.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,8 +264,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an array containing the full names of all custom <see cref="T:System.ServiceModel.Dispatcher.IClientMessageInspector" /> implementations that inspect or modify messages handled by the WCF service.</summary>
+        <value>The full names of all custom inspectors that inspect or modify messages handled by the WCF service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,8 +290,8 @@
         <ReturnType>System.ServiceModel.Description.ServiceHealthModel+ServiceThrottleModel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the model that represents the service throttles associated with this channel dispatcher and that control the WCF service's throughput settings.</summary>
+        <value>The model that represents the service throttles associated with this channel dispatcher. </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,8 +316,8 @@
         <ReturnType>System.Nullable&lt;System.ServiceModel.CommunicationState&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the state of the WCF service's channel dispatcher.</summary>
+        <value>The state of the WCF service's channel dispatcher.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

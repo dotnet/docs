@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides process information about the service that this health service is monitoring.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel.ProcessInformationModel" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +56,10 @@
         <Parameter Name="serviceHost" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceHost">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceHost">The service host to monitor.</param>
+        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel.ProcessInformationModel" /> class that provides process information for a specified service host.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="serviceHost" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Bitness">
@@ -82,8 +83,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of bits ("bitness") of the processor architecture on which the monitored service is running.</summary>
+        <value>The number of bits of the processor architecture. </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +109,21 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the GC mode of the monitored service process.</summary>
+        <value>The GC mode ("Server" or "Workstation") of the monitored service process.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+For more information on server and workstation garbage collections, see:
+
+- [Workstation and server garbage collection]~/docs/standard/garbage-collection/fundamentals.md#workstation_and_server_garbage_collection).
+
+- <xref:System.Runtime.GCSettings.IsServerGC?displayProperty=nameWithType>
+
+- [\<gcServer> Element](~/docs/framework/configure-apps/file-schema/runtime/gcserver-element.md).
+
+         ]]></format>
+          </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessName">
@@ -134,8 +147,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the service process executable.</summary>
+        <value>The name of the service process executable.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +173,8 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the start date of the service process.</summary>
+        <value>The service process start date.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,8 +199,8 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the start date of the service.</summary>
+        <value>The start date of the service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,9 +223,15 @@
         <Parameter Name="serviceStartTime" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="serviceStartTime">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceStartTime">The start date and time of this health service.</param>
+        <summary>Sets the start date and time of this health service.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+Calling this method sets the value of the <xref:System.ServiceModel.Description.ServiceHealthModel.ProcessInformationModel.ServiceStartDate> property.
+
+         ]]></format>
+          </remarks>
       </Docs>
     </Member>
     <Member MemberName="Threads">
@@ -236,8 +255,8 @@
         <ReturnType>System.ServiceModel.Description.ServiceHealthModel+ProcessThreadsModel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets threading information for a health service process.</summary>
+        <value>An object that contains threading information for a health service process.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,8 +281,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the elapsed time since the start of the service.</summary>
+        <value>The amount of time that the service has been running.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -14,8 +14,60 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a Windows Communication Foundation (WCF) service behavior that provides a health endpoint.</summary>
+    <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+Health endpoints are used to perform health checks that assess the health of a component. Health endpoints can be used to:
+
+- Notify orchestration tools to kill a process that is failing a critical health check. 
+
+- Serve as an early problem indicator for monitoring tools by tracking and providing alerts about the the availability and performance of a service.
+
+`ServiceHealthBehavior` is a WCF service behavior that extends IServiceBehavior and derives from <xref:System.ServiceModel.Description.ServiceHealthBehaviorBase>.  Adding a `ServiceHealthBehavior` instance to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors?displayProperty=nameWithType> collection enables the following:
+
+-	**Publication of Service Health:** Service-specific details such as service state, throttle counts, and capacity can be displayed using an HTTP/GET request with the `?health` query string. Knowing and easily having access to the information displayed is of paramount importance when troubleshooting a misbehaving WCF service.
+
+-	**Return of HTTP response codes:** One can specify in the query string the HTTP status code for an HTTP/GET health probe request.
+
+A health endpoint is only meaningful in the context of the component whose health it monitors. It has no other meaning or purpose. As such, its health is a conduit to the health of the component. Clients *should* assume that the HTTP response code returned by the health endpoint is applicable to the entire component. This is compatible with the behavior expected by current infrastructural tooling that utilize health checks, such as load-balancers, service discoveries, and others.
+
+### Enable a health endpoint
+
+There are two ways to specify how to expose the health endpoint and publish WCF service health information:
+
+- By using a configuration file. For example:
+
+   ```xml
+   <behaviors>
+     <serviceBehaviors>
+       <behavior name="DefaultBehavior">
+         <serviceHealth httpGetEnabled="true"/>
+       </behavior>
+     </serviceBehaviors>
+   </behaviors>
+   ```
+
+- Programatically. The following code fragment uses C# to expose the health endpoint:
+
+    ```csharp
+    ServiceHost host = new ServiceHost(typeof(Service1),
+        new Uri("http://jconde-dev1:81/Service1"));
+    ServiceHealthBehavior healthBehavior =
+                host.Description.Behaviors.Find<ServiceHealthBehavior>();
+    if (healthBehavior == null)
+    {
+        healthBehavior = new ServiceHealthBehavior();
+    }
+    //healthBehavior.HttpGetEnabled = false;
+    //healthBehavior.HttpsGetEnabled = false;
+    host.Description.Behaviors.Add(healthBehavior);
+    ```
+
+       ]]></format>    
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +83,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthBehavior" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,11 +107,12 @@
         <Parameter Name="isXml" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="status">To be added.</param>
-        <param name="isXml">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The reply message.</param>
+        <param name="status">The HTTP status code.</param>
+        <param name="isXml">Defines the type of <see langWord="ContentType" /> header to write to the message. If <see langword="true" />, the <see langWord="ContentType" /> is <see langword="text/xml" /> content type; otherwise, the <see langWord="ContentType" /> is <see langword="text/sml" />. </param>
+        <summary>Sets the content type and the HTTP status code for the response message.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="message" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="EnsureHttpStatusCode">
@@ -81,9 +134,9 @@
         <Parameter Name="code" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="code">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="code">The HTTP status code.</param>
+        <summary>Ensure that the HTTP status code is within the range of 200 and 599, inclusive.</summary>
+        <returns><see langword="true" /> if the HTTP status code is within the range of 200 to 599, inclusive; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,11 +160,12 @@
         <Parameter Name="queries" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="serviceHost">To be added.</param>
-        <param name="queries">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serviceHost">An instance of the service host that contains the WCF service with the <see cref="T:System.ServiceModel.Description.ServiceHealthBehavior" /> enabled.</param>
+        <param name="queries">An array that contains the field/value pairs of the query string.</param>
+        <summary>Parses the query string fields and returns its defined HTTP response code.</summary>
+        <returns>The HTTP response code.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="serviceHost" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetServiceHealthSections">
@@ -133,10 +187,11 @@
         <Parameter Name="serviceHost" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceHost">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serviceHost">An instance of the service host that contains the WCF service with the <see cref="T:System.ServiceModel.Description.ServiceHealthBehavior" /> enabled.</param>
+        <summary>Gets a collection of the <see cref="T:System.ServiceModel.Description.ServiceHealthSection" /> objects defined in the <see cref="T:System.ServiceModel.Description.ServiceHealthBehavior" />.  </summary>
+        <returns>A collection of the <see cref="T:System.ServiceModel.Description.ServiceHealthSection" /> objects defined in the <see cref="T:System.ServiceModel.Description.ServiceHealthBehavior" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="serviceHost" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetXmlDocument">
@@ -159,9 +214,10 @@
       </Parameters>
       <Docs>
         <param name="serviceHost">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Serializes the <see cref="T:System.ServiceModel.Description.ServiceHealthModel" /> object associated with the specified <paramref name="serviceHost" /> and returns it in XML format.</summary>
+        <returns>An XML document that corresponds to the serialized <see cref="T:System.ServiceModel.Description.ServiceHealthModel" /> object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="serviceHost" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="HandleHealthRequest">
@@ -186,12 +242,28 @@
         <Parameter Name="replyMessage" Type="System.ServiceModel.Channels.Message" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="serviceHost">To be added.</param>
-        <param name="httpGetRequest">To be added.</param>
-        <param name="queries">To be added.</param>
-        <param name="replyMessage">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceHost">An instance of the service host that contains the WCF service with the <see cref="T:System.ServiceModel.Description.ServiceHealthBehavior" /> enabled.</param>
+        <param name="httpGetRequest">The HTTP request made to the health endpoint.</param>
+        <param name="queries">An array containing the field/value pairs of the query string.</param>
+        <param name="replyMessage">When the method returns, the response message of the health behavior. This message has a content type of <see langword="text/html" /> or <see langword="text/xml" /> , depending on whether the request was for XML or HTML. </param>
+        <summary>Returns the response message to a specified request.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+This method is invoked by the <xref:System.ServiceModel.Description.ServiceHealthBehaviorBase> instance and is reponsible for crafting the response message to the health endpoint.
+
+         ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="serviceHost" /> is <see langword="null" />.
+
+-or-
+
+<paramref name="httpGetRequest" /> is <see langword="null" />
+
+-or-
+
+<paramref name="queries" /> is <see langword="null" />.
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="HasXmlSupport">
@@ -210,8 +282,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether XML response messages are supported.</summary>
+        <value>Unless it is overridden in a derived class, this method always return <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,13 +309,25 @@
         <Parameter Name="result" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="parameterName">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <param name="defaultValue">To be added.</param>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="parameterName">The name of the parameter whose value the method attempts to parse.</param>
+        <param name="parameter">The field/value pair of the query string.</param>
+        <param name="defaultValue">The value to be assigned to the <paramName name="result" /> argument if the parsing operation fails. </param>
+        <param name="result">When the method returns, the value of the parsed Boolean argument.</param>
+        <summary>Attempts to parse a Boolean query string parameter and returns a value that indicates whether the parsing operation succeeded.</summary>
+        <returns><see langword="true" /> if the parsing operation succeeded; otherwise, <see langword="false" />.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The method returns `true` if the value of the field was successfully parsed by the <xref:System.Boolean.TryParse%2A?displayProperty=nameWithType> method.
+
+         ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="parameterName" /> is <see langword="null" />.
+        
+-or-
+
+<paramref name="parameter" /> is <see langword="null" />.
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="TryParseHttpStatusCodeQueryParameter">
@@ -268,13 +352,19 @@
         <Parameter Name="result" Type="System.Net.HttpStatusCode" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="parameterName">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <param name="defaultErrorCode">To be added.</param>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="parameterName">The name of the parameter whose value the method attempts to parse.</param>
+        <param name="parameter">The field/value pair of the query string.</param>
+        <param name="defaultValue">The value to assign to the <paramName name="result" /> argument if the specified HTTP status code in the query string is not valid.</param>
+        <param name="result">When the method returns, the value of the parsed HTTP status code argument.</param>
+        <summary>Attempts to parse the HTTP status code of a query string variable and returns a value that indicates whether the parsing operation succeeded.</summary>
+        <returns><see langword="true" /> if the parsing operation succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="parameterName" /> is <see langword="null" />.
+        
+-or-
+
+<paramref name="parameter" /> is <see langword="null" />.
+        </exception>
       </Docs>
     </Member>
   </Members>

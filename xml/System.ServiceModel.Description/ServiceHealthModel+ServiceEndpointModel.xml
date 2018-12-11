@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides information about the endpoints that this health service behavior monitors.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="System.ServiceModel.Description.ServiceHealthModel.ServiceEndpointModel" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +56,8 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">The endpoint of a service.</param>
+        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel.ServiceEndpointModel" /> class that provides information about a specified service endpoint.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the endpoint address of the service.</summary>
+        <value>The endpoint address.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +108,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the names of the behaviors applied to this service host endpoint.</summary>
+        <value>An array that contains the names of the behaviors applied to this service host endpoint.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,9 +134,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the binding used by this service endpoint.</summary>
+        <value>The name of the binding.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The value returned by this property corresponds to the [ServiceEndpoint.Binding.Name](xref:System.ServiceModel.Channels.Binding.Name) property.
+
+         ]]></format>
+          </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContractName">
@@ -160,8 +166,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the contract associated with this endpoint.</summary>
+        <value>The name of the contract associated with this endpoint.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -18,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Serves as the base class for a Windows Communication Foundation (WCF) service behavior that provides a health endpoint.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,8 +35,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthBehaviorBase" /> class.</summary>
+        <remarks>This constructor is <see langword="protected" />; it can only be called from a derived class.</remarks>
       </Docs>
     </Member>
     <Member MemberName="HandleHealthRequest">
@@ -61,11 +61,11 @@
         <Parameter Name="replyMessage" Type="System.ServiceModel.Channels.Message" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="serviceHost">To be added.</param>
-        <param name="httpGetRequest">To be added.</param>
-        <param name="queries">To be added.</param>
-        <param name="replyMessage">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceHost">The service host.</param>
+        <param name="httpGetRequest">The HTTP/Get or HTTPS/Get request.</param>
+        <param name="queries">The variables in the query string.</param>
+        <param name="replyMessage">The response .</param>
+        <summary>Processes an HTTP/Get or HTTPS/Get request and returns a response.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +90,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies if the health endpoint should return the service details or if the response should contain no content.</summary>
+        <value>A value that specifies if the health endpoint should return the service details or if the response should contain no content. Its default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,9 +111,26 @@
         <ReturnType>System.ServiceModel.Channels.Binding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the binding that is used for health retrieval via an HTTP/Get request.</summary>
+        <value>The binding used for health retrieval via an HTTP/Get request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+Setting this property is optional. If it is not set, the default bindings are used. 
+
+Only bindings with inner binding elements that support <xref:System.ServiceModel.Channels.IReplyChannel> are supported. In addition, the <xref:System.ServiceModel.Channels.Binding.MessageVersion> property of the binding must be <xref:System.ServiceModel.Channels.MessageVersion.None?displayProperty=nameWithType>.
+
+       ]]></format>    
+        </remarks>
+        <exception cref="T:System.ArgumentException">In a set operation, the Url of the <see cref="P:System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpGetUrl" /> argument must be relative or its scheme must be "HTTP".
+
+-or-
+
+The message version is incorrect.
+
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="HttpGetEnabled">
@@ -137,9 +154,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether to publish service metadata for retrieval using an HTTP/Get request.</summary>
+        <value>A value that specifies whether to publish service metadata for retrieval using an HTTP/Get request. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+If the `httpGetUrl` attribute is not specified, the address to which the metadata is published is the service address plus "?health". For example, if the service address is `http://localhost:8080/CalculatorService`, the HTTP/Get metadata address is `http://localhost:8080/CalculatorService?health`.
+
+If this property is `false`, or if the address of the service is not based on HTTP or HTTPS, "?health" is ignored.
+
+       ]]></format>    
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpGetUrl">
@@ -166,9 +193,10 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Uri that specifes the address to which metadata is published for retrieval using an HTTP/Get request.</summary>
+        <value>The address to which metadata is published for retrieval using an HTTP/Get request.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException"><paramref name="value" /> must use the HTTP protocol or be a relative Uri.</exception>
       </Docs>
     </Member>
     <Member MemberName="HttpsGetBinding">
@@ -187,9 +215,26 @@
         <ReturnType>System.ServiceModel.Channels.Binding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the binding that is used for health retrieval via an HTTPS/Get request.</summary>
+        <value>The binding used for health retrieval via an HTTPS/Get request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+Setting this property is optional. If it is not set, the default bindings are used. 
+
+Only bindings with inner binding elements that support <xref:System.ServiceModel.Channels.IReplyChannel> are supported. In addition, the <xref:System.ServiceModel.Channels.Binding.MessageVersion> property of the binding must be <xref:System.ServiceModel.Channels.MessageVersion.None?displayProperty=nameWithType>.
+
+       ]]></format>    
+        </remarks>
+        <exception cref="T:System.ArgumentException">In a set operation, the Url of the <see cref="P:System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpsGetUrl" /> argument must be relative or its scheme must be "HTTPS:".
+
+-or-
+
+The message version is incorrect.
+
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="HttpsGetEnabled">
@@ -213,9 +258,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether to publish service metadata for retrieval using an HTTPS/Get request.</summary>
+        <value>A value that specifies whether to publish service metadata for retrieval using an HTTPS/Get request. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+If the `httpsGetUrl` attribute is not specified, the address to which the metadata is published is the service address plus "?health". For example, if the service address is `https://localhost:8080/CalculatorService`, the HTTP/Get metadata address is `https://localhost:8080/CalculatorService?health`.
+
+If this property is `false`, or if the address of the service is not based on HTTP or HTTPS, "?health" is ignored.
+
+       ]]></format>    
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpsGetUrl">
@@ -242,9 +297,10 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Uri that specifes the address to which metadata is published for retrieval using an HTTPS/Get request.</summary>
+        <value>The address to which metadata is published for retrieval using an HTTPS/Get request.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException"><paramref name="value" /> must use the HTTPS protocol or be a relative Uri.</exception>
       </Docs>
     </Member>
     <Member MemberName="ServiceStartTime">
@@ -263,8 +319,8 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the date and time that the health check service started.</summary>
+        <value>The date and time that the health check service started.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,12 +347,13 @@
         <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="description">To be added.</param>
-        <param name="serviceHostBase">To be added.</param>
-        <param name="endpoints">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="description">The service description.</param>
+        <param name="serviceHostBase">The service host.</param>
+        <param name="endpoints">The service endpoints.</param>
+        <param name="parameters">A collection of custom objects to which binding elements have access.</param>
+        <summary>Passes custom data to binding elements to support the contact implementation.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="parameters" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior">
@@ -320,10 +377,11 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="description">To be added.</param>
-        <param name="serviceHostBase">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="description">The service description.</param>
+        <param name="serviceHostBase">The service host that is currently being built.</param>
+        <summary>Changes run-time property values or inserts custom extension objects such as error handlers, message or parameter interceptors, security extensions, and other custom extension objects.</summary>
         <remarks>To be added.</remarks>
+       <exception cref="T:System.ArgumentNullException">The channel dispatcher does not support the scheme.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IServiceBehavior.Validate">
@@ -347,10 +405,11 @@
         <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="description">To be added.</param>
-        <param name="serviceHostBase">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="description">The service description.</param>
+        <param name="serviceHostBase">The service host to validate.</param>
+        <summary>Inspects the service host and the service description to confirm that the service can run successfully.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There is a duplicate behavior.</exception>
       </Docs>
     </Member>
   </Members>

@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a data item that consists of a key and multiple values for use by a Windows Communication Foundation (WCF) health service.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,10 +35,11 @@
         <Parameter Name="values" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="values">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The name of the key that is used to identify the data.</param>
+        <param name="values">A set of data items. </param>
+        <summary>Initializes a new <see cref="T:System.ServiceModel.Description.ServiceHealthData" /> item that consists of a key and multiple values.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -57,9 +58,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the key of this <see cref="T:System.ServiceModel.Description.ServiceHealthData" /> item.</summary>
+        <value>The key of this <see cref="T:System.ServiceModel.Description.ServiceHealthData" /> item.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">In a set operation, the key value is <see langword="null" /> or consists only of whitespace characters.</exception>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -78,8 +80,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the values that belong to this <see cref="T:System.ServiceModel.Description.ServiceHealthData" /> item.</summary>
+        <value>An array that contains the values belonging to this <see cref="T:System.ServiceModel.Description.ServiceHealthData" /> item..</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

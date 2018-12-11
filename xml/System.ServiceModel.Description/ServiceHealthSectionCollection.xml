@@ -17,7 +17,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a collection of <see cref="T:System.ServiceModel.Description.ServiceHealthSection" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthSectionCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,10 +57,11 @@
         <Parameter Name="title" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="title">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="title">The title of the service health section.</param>
+        <summary>Creates a service health section with the specified title and adds it to the current collection.</summary>
+        <returns>The service health section.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="title" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateSection">
@@ -83,11 +84,17 @@
         <Parameter Name="backgroundColor" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="title">To be added.</param>
-        <param name="backgroundColor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="title">The title of the service health section.</param>
+        <param name="backgroundColor">A hexadecimal color string that defines the background color of the service.</param>
+        <summary>Creates a service health section with the specified title and background color, and adds it to the current collection.</summary>
+        <returns>The service health section.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="title" /> is <see langword="null" />.
+
+-or-
+
+<paramref name="backgroundcolor" /> is <see langword="null" />.       
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateSection">
@@ -111,12 +118,22 @@
         <Parameter Name="foregroundColor" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="title">To be added.</param>
-        <param name="backgroundColor">To be added.</param>
-        <param name="foregroundColor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="title">The title of the service health section.</param>
+        <param name="backgroundColor">A hexadecimal color string that defines the background color of the section.</param>
+        <param name="foregroundColor">A hexadecimal color string that defines the foreground color of the section.</param>
+        <summary>Creates a service health section with the specified title, background color, and foreground color, and adds it to the current collection.</summary>
+        <returns>The service health section.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="title" /> is <see langword="null" />.
+
+-or-
+
+<paramref name="backgroundcolor" /> is <see langword="null" />.
+
+-or-
+
+<paramref name="foregroundcolor" /> is <see langword="null" />.
+        </exception>
       </Docs>
     </Member>
   </Members>

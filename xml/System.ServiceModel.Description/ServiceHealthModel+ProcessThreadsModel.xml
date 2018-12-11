@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides threading information about this service health process. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel.ProcessThreadsModel" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +61,15 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of completion port threads available to this health service process.</summary>
+        <value>The number of available completion port threads for this health service process.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+For more information, see [I/O Completion Ports](/windows/desktop/fileio/i-o-completion-ports).
+
+         ]]></format>
+          </remarks>
       </Docs>
     </Member>
     <Member MemberName="AvailableWorkerThreads">
@@ -87,8 +93,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of worker threads available to this health service process.</summary>
+        <value>The number of available worker threads for this health service process.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,9 +119,15 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the maximum number of completion port threads available to this health service process.</summary>
+        <value>The maximum number of completion port threads for this health service process.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+For more information, see [I/O Completion Ports](/windows/desktop/fileio/i-o-completion-ports).
+
+         ]]></format>
+          </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxWorkerThreads">
@@ -139,8 +151,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the maximum number of worker threads available to this health service process.</summary>
+        <value>The maximum number of worker threads for this health service process.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,9 +177,15 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the minimum number of completion port threads available to this health service process.</summary>
+        <value>The minimum number of completion port threads for this health service process.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+For more information, see [I/O Completion Ports](/windows/desktop/fileio/i-o-completion-ports).
+
+         ]]></format>
+          </remarks>
       </Docs>
     </Member>
     <Member MemberName="MinWorkerThreads">
@@ -191,8 +209,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the minimum number of worker threads available to this health service process.</summary>
+        <value>The minimum number of available worker threads for this health service process.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,8 +235,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of native threads used by this health service process.</summary>
+        <value>The number of native threads used by this health service process.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

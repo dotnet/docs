@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains the model that provides information about the state and status of a WCF service.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +56,10 @@
         <Parameter Name="serviceHost" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceHost">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceHost">The service host that this health service behavior monitors.</param>
+        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel" /> class that monitors a specified service host.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="serviceHost" /> is <see langword="null" />.</exception> 
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -78,10 +79,11 @@
         <Parameter Name="serviceStartTime" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="serviceHost">To be added.</param>
-        <param name="serviceStartTime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceHost">An instance of the service host that contains a WCF service with its <see cref="T:System.ServiceModel.Description.ServiceHealthBehavior" /> enabled.</param>
+        <param name="serviceStartTime">The start date and time to be assigned to the service.</param>
+        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel" /> class that monitors a specified service host and assigns its start date and time.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="serviceHost" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ChannelDispatchers">
@@ -105,8 +107,8 @@
         <ReturnType>System.ServiceModel.Description.ServiceHealthModel+ChannelDispatcherModel[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the model that represents the channel dispatchers associated with the WCF service.</summary>
+        <value>A model that represents the channel dispatchers associated with the WCF service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,8 +133,8 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the date and time that the health service was initialized. </summary>
+        <value> The date and time that the health service was initialized. </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +154,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets the namespace URI of WCF health services.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The value of this field is `"http://schemas.microsoft.com/net/2018/08/health`.
+
+         ]]></format>
+          </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessInformation">
@@ -177,8 +185,8 @@
         <ReturnType>System.ServiceModel.Description.ServiceHealthModel+ProcessInformationModel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+       <summary>Gets process information for the service that this health service behavior monitors.</summary>
+        <value>An object that contains process information for the service that this health service monitors.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,8 +211,8 @@
         <ReturnType>System.ServiceModel.Description.ServiceHealthModel+ProcessThreadsModel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets threading information for the service that this health service behavior monitors.</summary>
+        <value>An object that contains threading information for the service that this health service monitors.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,8 +237,8 @@
         <ReturnType>System.ServiceModel.Description.ServiceHealthModel+ServiceEndpointModel[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets endpoint information for the service that this health service monitors.</summary>
+        <value>An object that contains endpoint information for the service that this health service monitors.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,8 +263,8 @@
         <ReturnType>System.ServiceModel.Description.ServiceHealthModel+ServicePropertiesModel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets property information for the service that this health service monitors.</summary>
+        <value>An object that contains property information for the service that this health service monitors.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

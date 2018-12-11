@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains the model that provides information about service throttle that controls the throughput of a WCF service.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +55,8 @@
         <Parameter Name="serviceThrottle" Type="System.ServiceModel.Dispatcher.ServiceThrottle" />
       </Parameters>
       <Docs>
-        <param name="serviceThrottle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceThrottle">An object that contains the values that are used to populate the properties of this model. </param>
+        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel.ServiceThrottleModel" /> class with the specified service throttle.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +84,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the maximum number of messages that the service throttle for this WCF service can process.</summary>
+        <value>The maximum number of messages that the service throttle for this WCF service can process.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +113,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of messages processed by this WCF service.</summary>
+        <value>the number of messages processed by this WCF service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,8 +139,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether service throttle information about the WCF service is available to this service throttle model.</summary>
+        <value><see langword="true" /> if service throttle information is available; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,8 +168,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the maximum number of service objects that can execute at one time.</summary>
+        <value>the maximum number of service objects that can execute at one time.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,8 +197,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of service objects that are executing.</summary>
+        <value>The number of service objects that are executing.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,8 +226,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the maximum number of sessions that a WCF servixe that can accept at one time.</summary>
+        <value>The maximum number of sessions that a WCF servixe that can accept at one time.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,8 +255,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current number of sessions.</summary>
+        <value>The current number of sessions.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

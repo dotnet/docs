@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a <c>&lt;serviceHealth&gt;</c> configuration element that defines a service health behavior.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ServiceHealthElement" /> class. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of this service health behavior element.</summary>
+        <value>The type of this service health behavior element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +75,8 @@
         <Parameter Name="from" Type="System.ServiceModel.Configuration.ServiceModelExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="from">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="from">The configuration section to be copied.</param>
+        <summary>Copies the content of the specified configuration sextion to this configuration section.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +97,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a health service behavior based on the current configuration settings.</summary>
+        <returns>The health service behavior extension.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,9 +123,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that controls whether the service is allowed to display service details and information in the health page.</summary>
+        <value><see langword="true" /> if the health endpoint should return the service details, or <see langword="false" /> if the response should contain no content. Its default value is <see langword="true" />.</value>
+        <remarks>   
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+The `HealthDetailsEnabled` property corresponds to the value of the `HealthDetailsEnabled` attribute of a `<serviceHealth>` element. If the attribute is not defined in a configuration file, its default value is `true`. It defines the value of the [ServiceHealthBehavior.HealthDetailsEnabled](xref:System.ServiceModel.Description.ServiceHealthBehaviorBase.HealthDetailsEnabled) property. 
+
+         ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpGetBinding">
@@ -152,9 +160,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a string that represents the type of binding used for health retrieval via an HTTP/Get request.</summary>
+        <value>A string that represents the binding used for health retrieval via an HTTP/Get request.</value>
+       <remarks>   
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+The `HttpGetBinding` property corresponds to the value of the `HttpGetBinding` attribute of a `<serviceHealth>` element. If the attribute is not defined in a configuration file, its default value is <xref:System.String.Empty?displayProperty=nameWithType>. The property defines the value of the [ServiceHealthBehavior.HttpGetBinding](xref:System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpGetBinding) property. 
+
+         ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpGetBindingConfiguration">
@@ -181,9 +197,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the binding that is specified in the <see cref="P:System.ServiceModel.Configuration.ServiceHealthElement.HttpGetBinding" /> property. </summary>
+        <value>The name of the binding that is specified in the <see cref="P:System.ServiceModel.Configuration.ServiceHealthElement.HttpGetBinding" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+The binding name must be defined in the [\<bindings> section](~/docs/framework/configure-apps/file-schema/wcf/bindings.md).
+
+         ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpGetEnabled">
@@ -207,9 +229,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that controls whether the service publishes its health information at the address specified by the <see langword="HttpGetUrl" /> attribute.</summary>
+        <value><see langword="true" /> to publish health information at the address specified by the <see langword="HttpGetUrl" /> attribute; otherwise, <see langword="false" />.</value>
+      <remarks>   
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+The `HttpGetEnabled` property corresponds to the value of the `HttpGetEnabled` attribute of a `<serviceHealth>` element. If the attribute is not defined in a configuration file, its default value is `true`. The property defines the value of the [ServiceHealthBehavior.HttpGetEnabled](xref:System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpGetEnabled) property. 
+
+         ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpGetUrl">
@@ -233,9 +263,17 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the location at which the service health information is published for retrieval using HTTP.</summary>
+        <value>The location at which the service health information is published for retrieval using HTTP.</value>
+      <remarks>   
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+The `HttpGetUrl` property corresponds to the value of the `HttpGetUrl` attribute of a `<serviceHealth>` element. The property defines the value of the [ServiceHealthBehavior.HttpGetUrl](xref:System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpGetUrl) property. 
+
+         ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpsGetBinding">
@@ -262,9 +300,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a string that represents the type of binding used for health retrieval via an HTTPS/Get request.</summary>
+        <value>A string that represents the binding used for health retrieval via an HTTPS/Get request.</value>
+       <remarks>   
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+The `HttpsGetBinding` property corresponds to the value of the `HttpsGetBinding` attribute of a `<serviceHealth>` element. If the attribute is not defined in a configuration file, its default value is <xref:System.String.Empty?displayProperty=nameWithType>. The property defines the value of the [ServiceHealthBehavior.HttpsGetBinding](xref:System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpsGetBinding) property. 
+
+         ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpsGetBindingConfiguration">
@@ -291,9 +337,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the binding that is specified in the <see cref="P:System.ServiceModel.Configuration.ServiceHealthElement.HttpsGetBinding" /> property. </summary>
+        <value>The name of the binding that is specified in the <see cref="P:System.ServiceModel.Configuration.ServiceHealthElement.HttpsGetBinding" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+The binding name must be defined in the [\<bindings> section](~/docs/framework/configure-apps/file-schema/wcf/bindings.md).
+
+         ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpsGetEnabled">
@@ -317,9 +369,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that controls whether the service publishes its health information at the address specified by the <see langword="HttpsGetUrl" /> attribute.</summary>
+        <value><see langword="true" /> to publish health information at the address specified by the <see langword="HttpsGetUrl" /> attribute; otherwise, <see langword="false" />.</value>
+      <remarks>   
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+The `HttpsGetEnabled` property corresponds to the value of the `HttpsGetEnabled` attribute of a `<serviceHealth>` element. If the attribute is not defined in a configuration file, its default value is `true`. The property defines the value of the [ServiceHealthBehavior.HttpsGetEnabled](xref:System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpsGetEnabled) property. 
+
+         ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HttpsGetUrl">
@@ -343,9 +403,17 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the location at which the service health information is published for retrieval using HTTPS.</summary>
+        <value>The location at which the service health information is published for retrieval using HTTPS.</value>
+      <remarks>   
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+The `HttpsGetUrl` property corresponds to the value of the `HttpsGetUrl` attribute of a `<serviceHealth>` element. The property defines the value of the [ServiceHealthBehavior.HttpsGetUrl](xref:System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpsGetUrl) property. 
+
+         ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -364,9 +432,15 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of properties for this configuration element.</summary>
+        <value>The collection of properties for this configuration element.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The `Properties` property, also called the property bag, contains all the attributes that apply to the `<serviceHealth>` configuration element represented by this instance.  
+
+         ]]></format>
+          </remarks>
       </Docs>
     </Member>
   </Members>

@@ -17,8 +17,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a section of a Service Health Behavior HTML page.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The Service Health Behavior HTML page is accessed by adding the `?health` query string to the URL of the WCF service that the health behavior is monitoring.
+
+         ]]></format>
+          </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthSection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +60,8 @@
         <Parameter Name="title" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="title">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="title">The title of the section.</param>
+        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthSection" /> class with the specified title.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +81,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the background color of the section.</summary>
+        <value>A string that represents the background color of the section. </value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The value of the `BackgroundColor` property is a hexadecimal color string. The default value is ""#ffffff", or <xref:System.Drawing.Color.Transparent?displayProperty=nameWithType>.
+
+         ]]></format>
+          </remarks>
+          <exception cref="T:System.ArgumentNullException">The string in a set operation is <see langword="null" />, <see cref="F:System.String.Empty" />, or consists only of whitespace characters.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateElementsCollection">
@@ -97,8 +110,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a keyed collection of data items that belong to this section.</summary>
+        <returns>TA collection object that stores data items belonging to this section.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +131,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the foreground color of the section.</summary>
+        <value>A string that represents the foreground color of the section. </value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The value of the `ForegroundColor` property is a hexadecimal color string. The default value is "#000000", or <xref:System.Drawing.Color.Black?displayProperty=nameWithType>.
+
+         ]]></format>
+          </remarks>
+          <exception cref="T:System.ArgumentNullException">The string in a set operation is <see langword="null" />, <see cref="F:System.String.Empty" />, or consists only of whitespace characters.</exception>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -139,9 +159,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the section title.</summary>
+        <value>The section title.</value>
         <remarks>To be added.</remarks>
+          <exception cref="T:System.ArgumentNullException">The string in a set operation is <see langword="null" />, <see cref="F:System.String.Empty" />, or consists only of whitespace characters.</exception>
       </Docs>
     </Member>
   </Members>

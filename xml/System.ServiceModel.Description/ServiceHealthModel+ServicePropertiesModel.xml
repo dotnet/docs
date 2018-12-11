@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides property information about a WCF service.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel.ServicePropertiesModel" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +56,10 @@
         <Parameter Name="serviceHost" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceHost">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceHost">The WCF service to monitor.</param>
+        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel.ServicePropertiesModel" /> class that provides property information for the specied WCF service.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="serviceHost" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="BaseAddresses">
@@ -82,8 +83,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the base addresses of the WCF service.</summary>
+        <value>An array containing the base addresses of the WCF service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +109,15 @@
         <ReturnType>System.Nullable&lt;System.ServiceModel.ConcurrencyMode&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the concurrency mode of the WCF service.</summary>
+        <value>The concurrency mode of the service.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+A service's concurrency mode specifies whether it supports single- or multi-threaded modes of operation. For more information, see <xref:System.ServiceModel.ConcurrencyMode?displayProperty=nameWithType>.
+
+         ]]></format>
+          </remarks>
       </Docs>
     </Member>
     <Member MemberName="InstanceContextMode">
@@ -134,9 +141,15 @@
         <ReturnType>System.Nullable&lt;System.ServiceModel.InstanceContextMode&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the instance context mode of the WCF service.</summary>
+        <value>The instance context mode of the service.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+A service's instance context mode determines how service instances handle calls that are contained in incoming messages. For more information, see <xref:System.ServiceModel.InstanceContextMode?displayPrpoerty=nameWithtype>.
+
+         ]]></format>
+          </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -160,8 +173,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the WCF service.</summary>
+        <value>The name of the service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,8 +199,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the names of the behaviors associated with this WCF service.</summary>
+        <value>An array containing the names of the behaviors associated with this service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,9 +225,15 @@
         <ReturnType>System.ServiceModel.Description.ServiceHealthModel+ServiceThrottleModel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets information about the service throttle of a WCF service.</summary>
+        <value>An object that contains information about the service throttle of the service.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+For more information, see <xref:System.ServiceModel.Dispatcher.ServiceThrottle?displayProperty=nameWithType>.
+
+         ]]></format>
+          </remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceTypeName">
@@ -238,8 +257,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the fully qualified type name of the WCF service.</summary>
+        <value>The fully qualified type name of the service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,8 +283,8 @@
         <ReturnType>System.ServiceModel.CommunicationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current state of the WCF service.</summary>
+        <value>The state of the service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

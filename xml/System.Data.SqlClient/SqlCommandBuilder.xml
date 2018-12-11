@@ -489,7 +489,7 @@
         <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names if possible. If <see langword="false" />, generate @p1, @p2, and so on.</param>
+        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names if possible. If <see langword="false" />, generate <c>@p1</c>, <c>@p2</c>, and so on.</param>
         <summary>Gets the automatically generated <see cref="T:System.Data.SqlClient.SqlCommand" /> object that is required to perform deletions on the database.</summary>
         <returns>The automatically generated <see cref="T:System.Data.SqlClient.SqlCommand" /> object that is required to perform deletions.</returns>
         <remarks>
@@ -502,7 +502,7 @@
   
  After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand%2A> will still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand%2A>.  
   
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.OleDb.OleDbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
+ The default behavior, when generating parameter names, is to use `@p1`, `@p2`, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.OleDb.OleDbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
   
 -   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> returned from the **GetSchema** method call and found in the <xref:System.Data.Common.DbMetaDataCollectionNames.DataSourceInformation> collection has been specified and its length is equal to or greater than the generated parameter name.  
   
@@ -618,7 +618,7 @@
         <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names if possible. If <see langword="false" />, generate @p1, @p2, and so on.</param>
+        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names if possible. If <see langword="false" />, generate <c>@p1</c>, <c>@p2</c>, and so on.</param>
         <summary>Gets the automatically generated <see cref="T:System.Data.SqlClient.SqlCommand" /> object that is required to perform insertions on the database.</summary>
         <returns>The automatically generated <see cref="T:System.Data.SqlClient.SqlCommand" /> object that is required to perform insertions.</returns>
         <remarks>
@@ -631,7 +631,7 @@
   
  After the Transact-SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.SqlClient.SqlCommandBuilder.GetInsertCommand%2A> will still be using information from the previous statement, which might not be correct. The Transact-SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.SqlClient.SqlCommandBuilder.GetInsertCommand%2A>.  
   
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.OleDb.OleDbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
+ The default behavior, when generating parameter names, is to use `@p1`, `@p2`, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.OleDb.OleDbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
   
 -   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> returned from the **GetSchema** method call and found in the <xref:System.Data.Common.DbMetaDataCollectionNames.DataSourceInformation> collection has been specified and its length is equal to or greater than the generated parameter name.  
   
@@ -872,7 +872,7 @@
         <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names if possible. If <see langword="false" />, generate @p1, @p2, and so on.</param>
+        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names if possible. If <see langword="false" />, generate <c>@p1</c>, <c>@p2</c>, and so on.</param>
         <summary>Gets the automatically generated <see cref="T:System.Data.SqlClient.SqlCommand" /> object required to perform updates on the database.</summary>
         <returns>The automatically generated <see cref="T:System.Data.SqlClient.SqlCommand" /> object required to perform updates.</returns>
         <remarks>
@@ -885,7 +885,7 @@
   
  After the Transact-SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.SqlClient.SqlCommandBuilder.GetUpdateCommand%2A> will still be using information from the previous statement, which might not be correct. The Transact-SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.SqlClient.SqlCommandBuilder.GetUpdateCommand%2A>.  
   
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.OleDb.OleDbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
+ The default behavior, when generating parameter names, is to use `@p1`, `@p2`, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.OleDb.OleDbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
   
 -   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> returned from the **GetSchema** method call and found in the <xref:System.Data.Common.DbMetaDataCollectionNames.DataSourceInformation> collection has been specified and its length is equal to or greater than the generated parameter name.  
   

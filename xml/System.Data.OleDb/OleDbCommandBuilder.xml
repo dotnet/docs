@@ -322,7 +322,7 @@
         <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names, if it is possible. If <see langword="false" />, generate @p1, @p2, and so on.</param>
+        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names, if it is possible. If <see langword="false" />, generate <c>@p1</c>, <c>@p2</c>, and so on.</param>
         <summary>Gets the automatically generated <see cref="T:System.Data.OleDb.OleDbCommand" /> object required to perform deletions at the data source.</summary>
         <returns>The automatically generated <see cref="T:System.Data.OleDb.OleDbCommand" /> object required to perform deletions.</returns>
         <remarks>
@@ -335,7 +335,7 @@
   
  After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.UpdateCommand*> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A>.  
   
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.OleDb.OleDbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
+ The default behavior, when generating parameter names, is to use `@p1`, `@p2`, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.OleDb.OleDbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
   
 -   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> has been specified and its length is equal to or greater than the generated parameter name.  
   
@@ -426,7 +426,7 @@
         <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names, if it is possible. If <see langword="false" />, generate @p1, @p2, and so on.</param>
+        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names, if it is possible. If <see langword="false" />, generate <c>@p1</c>, <c>@p2</c>, and so on.</param>
         <summary>Gets the automatically generated <see cref="T:System.Data.OleDb.OleDbCommand" /> object required to perform insertions at the data source.</summary>
         <returns>The automatically generated <see cref="T:System.Data.OleDb.OleDbCommand" /> object required to perform insertions.</returns>
         <remarks>
@@ -439,7 +439,7 @@
   
  After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.UpdateCommand*> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A>.  
   
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.OleDb.OleDbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
+ The default behavior, when generating parameter names, is to use `@p1`, `@p2`, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.OleDb.OleDbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
   
 -   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> has been specified and its length is equal to or greater than the generated parameter name.  
   
@@ -608,7 +608,7 @@
         <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names, if it is possible. If <see langword="false" />, generate @p1, @p2, and so on.</param>
+        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names, if it is possible. If <see langword="false" />, generate <c>@p1</c>, <c>@p2</c>, and so on.</param>
         <summary>Gets the automatically generated <see cref="T:System.Data.OleDb.OleDbCommand" /> object required to perform updates at the data source, optionally using columns for parameter names.</summary>
         <returns>The automatically generated <see cref="T:System.Data.OleDb.OleDbCommand" /> object required to perform updates.</returns>
         <remarks>
@@ -621,7 +621,7 @@
   
  After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.UpdateCommand*> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A>.  
   
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.OleDb.OleDbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
+ The default behavior, when generating parameter names, is to use `@p1`, `@p2`, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.OleDb.OleDbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
   
 -   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> has been specified and its length is equal to or greater than the generated parameter name.  
   

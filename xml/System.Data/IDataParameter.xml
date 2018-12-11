@@ -263,7 +263,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.IDataParameter.ParameterName%2A> is specified in the form @paramname. You must set <xref:System.Data.IDataParameter.ParameterName%2A> before executing a command that relies on parameters.  
+
+ The <xref:System.Data.IDataParameter.ParameterName%2A> is specified in the form \@*paramname*. You must set <xref:System.Data.IDataParameter.ParameterName%2A> before executing a command that relies on parameters.  
   
    
   

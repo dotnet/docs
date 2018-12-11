@@ -242,9 +242,7 @@
 Parameter = new SqlParameter("@pname", (object)0);  
 ```  
   
- If you do not perform this conversion, the compiler assumes that you are trying to call the `SqlParameter` (`string`, `SqlDbType`) constructor overload.  
-  
-   
+If you do not perform this conversion, the compiler assumes that you are trying to call the <xref:System.Data.SqlClient.SqlParameter.%23ctor(System.String,System.Data.SqlDbType)> constructor overload.  
   
 ## Examples  
  The following example creates a <xref:System.Data.SqlClient.SqlParameter> and sets some of its properties.  

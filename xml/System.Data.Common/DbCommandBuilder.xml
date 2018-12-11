@@ -372,7 +372,7 @@
   
  After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Common.DbCommandBuilder.GetDeleteCommand%2A> will still be using information from the previous statement, which might not be correct. The SQL statements are first generated either when the application calls <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Common.DbCommandBuilder.GetDeleteCommand%2A>.  
   
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. If the overloaded version of <xref:System.Data.Common.DbCommandBuilder.GetDeleteCommand%2A> allows you to specify this behavior by supplying a Boolean value, you can cause the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead by passing `True`.  
+ The default behavior, when generating parameter names, is to use `@p1`, `@p2`, and so on for the various parameters. If the overloaded version of <xref:System.Data.Common.DbCommandBuilder.GetDeleteCommand%2A> allows you to specify this behavior by supplying a Boolean value, you can cause the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead by passing `True`.  
   
  ]]></format>
         </remarks>
@@ -456,7 +456,7 @@
         <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names, if possible. If <see langword="false" />, generate @p1, @p2, and so on.</param>
+        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names, if possible. If <see langword="false" />, generate <c>@p1</c>, <c>@p2</c>, and so on.</param>
         <summary>Gets the automatically generated <see cref="T:System.Data.Common.DbCommand" /> object required to perform deletions at the data source, optionally using columns for parameter names.</summary>
         <returns>The automatically generated <see cref="T:System.Data.Common.DbCommand" /> object required to perform deletions.</returns>
         <remarks>
@@ -469,7 +469,7 @@
   
  After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Common.DbCommandBuilder.GetDeleteCommand%2A> will still be using information from the previous statement, which might not be correct. The SQL statements are first generated either when the application calls <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Common.DbCommandBuilder.GetDeleteCommand%2A>.  
   
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter allows you to force the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
+ The default behavior, when generating parameter names, is to use `@p1`, `@p2`, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter allows you to force the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
   
 -   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> has been specified and its length is equal to or greater than the generated parameter name.  
   
@@ -501,7 +501,7 @@
   
  After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Common.DbCommandBuilder.GetInsertCommand%2A> will still be using information from the previous statement, which might not be correct. The SQL statements are first generated either when the application calls <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Common.DbCommandBuilder.GetInsertCommand%2A>.  
   
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. If the overloaded version of <xref:System.Data.Common.DbCommandBuilder.GetInsertCommand%2A> allows you to specify this behavior, you can cause the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead.  
+ The default behavior, when generating parameter names, is to use `@p1`, `@p2`, and so on for the various parameters. If the overloaded version of <xref:System.Data.Common.DbCommandBuilder.GetInsertCommand%2A> allows you to specify this behavior, you can cause the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead.  
   
  ]]></format>
         </remarks>
@@ -585,7 +585,7 @@
         <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names, if possible. If <see langword="false" />, generate @p1, @p2, and so on.</param>
+        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names, if possible. If <see langword="false" />, generate <c>@p1</c>, <c>@p2</c>, and so on.</param>
         <summary>Gets the automatically generated <see cref="T:System.Data.Common.DbCommand" /> object required to perform insertions at the data source, optionally using columns for parameter names.</summary>
         <returns>The automatically generated <see cref="T:System.Data.Common.DbCommand" /> object required to perform insertions.</returns>
         <remarks>
@@ -598,7 +598,7 @@
   
  After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Common.DbCommandBuilder.GetInsertCommand%2A> will still be using information from the previous statement, which might not be correct. The SQL statements are first generated either when the application calls <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Common.DbCommandBuilder.GetInsertCommand%2A>.  
   
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter allows you to force the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead. Generation of the parameters based on column names succeeds only if the following conditions are met:  
+ The default behavior, when generating parameter names, is to use `@p1`, `@p2`, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter allows you to force the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead. Generation of the parameters based on column names succeeds only if the following conditions are met:  
   
 -   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> has been specified and its length is equal to or greater than the generated parameter name.  
   
@@ -654,7 +654,7 @@
       </Parameters>
       <Docs>
         <param name="parameterOrdinal">The number to be included as part of the parameter's name..</param>
-        <summary>Returns the name of the specified parameter in the format of @p#. Use when building a custom command builder.</summary>
+        <summary>Returns the name of the specified parameter in the format of <c>@p#</c>. Use when building a custom command builder.</summary>
         <returns>The name of the parameter with the specified number appended as part of the parameter name.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
@@ -807,7 +807,7 @@
   
  After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Common.DbCommandBuilder.GetUpdateCommand%2A> will still be using information from the previous statement, which might not be correct. The SQL statements are first generated either when the application calls <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Common.DbCommandBuilder.GetUpdateCommand%2A>.  
   
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. If the overloaded version of <xref:System.Data.Common.DbCommandBuilder.GetUpdateCommand%2A> allows you to specify this behavior, you can cause the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead.  
+ The default behavior, when generating parameter names, is to use `@p1`, `@p2`, and so on for the various parameters. If the overloaded version of <xref:System.Data.Common.DbCommandBuilder.GetUpdateCommand%2A> allows you to specify this behavior, you can cause the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead.  
   
  ]]></format>
         </remarks>
@@ -891,7 +891,7 @@
         <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names, if possible. If <see langword="false" />, generate @p1, @p2, and so on.</param>
+        <param name="useColumnsForParameterNames">If <see langword="true" />, generate parameter names matching column names, if possible. If <see langword="false" />, generate <c>@p1</c>, <c>@p2</c>, and so on.</param>
         <summary>Gets the automatically generated <see cref="T:System.Data.Common.DbCommand" /> object required to perform updates at the data source, optionally using columns for parameter names.</summary>
         <returns>The automatically generated <see cref="T:System.Data.Common.DbCommand" /> object required to perform updates.</returns>
         <remarks>
@@ -904,7 +904,7 @@
   
  After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Common.DbCommandBuilder.GetUpdateCommand%2A> will still be using information from the previous statement, which might not be correct. The SQL statements are first generated either when the application calls <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Common.DbCommandBuilder.GetUpdateCommand%2A>.  
   
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter allows you to force the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead. Generation of the parameters based on column names succeeds only if the following conditions are met:  
+ The default behavior, when generating parameter names, is to use `@p1`, `@p2`, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter allows you to force the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead. Generation of the parameters based on column names succeeds only if the following conditions are met:  
   
 -   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> has been specified and its length is equal to or greater than the generated parameter name.  
   

@@ -3296,8 +3296,14 @@
         <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary> Describes the ordinal location of an automation element within a set of elements that are considered to be siblings.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+`PositionInSetProperty` works in conjunction with <xref:System.Windows.Automation.AutomationElement.SizeOfSetProperty> to describe the ordinal location of an automation element in the set.
+
+         ]]></format>
+          </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessIdProperty">
@@ -3476,8 +3482,14 @@
         <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Describes the count of automation elements in a group or set that are considered to be siblings.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+`SizeOfSetProperty` works in conjunction with <xref:System.Windows.Automation.AutomationElement.PositionInSetProperty> to describe the count of items in the set.
+
+         ]]></format>
+          </remarks>
       </Docs>
     </Member>
     <Member MemberName="StructureChangedEvent">

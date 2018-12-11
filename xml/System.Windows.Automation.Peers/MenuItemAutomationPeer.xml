@@ -235,8 +235,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the position of a <see cref="T:System.Windows.Controls.MenuItem" /> contained in a set.</summary>
+        <returns>The value of the <see cref="F:System.Windows.Automation.AutomationProperties.PositionInSetProperty" /> if it has been set, or its position relative to the parent <see cref="T:System.Windows.Controls.ItemsControl"/> or <see cref="T:System.Windows.Controls.GroupItem" /> control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,8 +257,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the size of a set that contains this <see cref="T:System.Windows.Controls.MenuItem" />.</summary>
+        <returns>The value of <see cref="F:System.Windows.Automation.AutomationProperties.PositionInSetProperty" /> if it has been set, or its position relative to the parent <see cref="T:System.Windows.Controls.ItemsControl" /> or <see cref="T:System.Windows.Controls.GroupItem" /> control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -664,8 +664,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reads <see cref="F:System.Windows.Automation.AutomationProperties.PositionInSetProperty" /> and returns the value of the <c>PositionInSet</c> attached property.</summary>
+        <returns>The value of UI Automation's <c>PositionInSet</c> attached property</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -686,8 +686,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides a value for UI Automation's SizeOfSet property.</summary>
+        <returns>Reads <see cref="F:System.Windows.Automation.AutomationProperties.SizeOfSetProperty" /> and returns the value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

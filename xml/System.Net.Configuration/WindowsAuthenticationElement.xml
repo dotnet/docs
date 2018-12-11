@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the Windows authentication element in a configuration file. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.WindowsAuthenticationElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,10 +56,23 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
+        <summary>Defines the default size of the Windows credential handle cache.</summary>
+        <value>The default size of the Windows credential handle cache.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+By default, Windows allocates a separate SSPI handle for each <xref:System.Net.HttpWebRequest>. If this behavior impacts performance, you can use the `DefaultCredentialsHandleCacheSize` to use a single cached SSPI credential handle for default network credentials. You can do this by setting this property value to 0. This corresponds to the following configuration setting:
+
+```xml
+<system.net>
+  <settings>
+    <windowsAuthentication defaultCredentialsHandleCacheSize="0" />
+  </settings>
+</system.net>
+```
+
+         ]]></format>
+          </remarks>      </Docs>
     </Member>
     <Member MemberName="Properties">
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
@@ -77,9 +90,15 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of properties that apply to this <see cref="T:System.Net.Configuration.WindowsAuthenticationElement" />.</summary>
+        <value>The collection of properties for this `WindowsAuthenticationElement` instance.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The `Properties` property, also called the property bag, contains all the properties (or attributes) that apply to the element. In the case of the <xref:System.Net.Configuration.WindowsAuthenticationElement> object, it contains a single <xref:System.Configuration.ConfigurationProperty> object that represents the <xref:System.Net.Configuration.WindowsAuthenticationElement.DefaultCredentialsHandleCacheSize> property.
+
+         ]]></format>
+          </remarks>
       </Docs>
     </Member>
   </Members>

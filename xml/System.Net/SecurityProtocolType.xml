@@ -36,6 +36,9 @@
   
 ## Remarks  
  This enumeration defines the set of values that you can use to specify which transport security protocol to use. It is the enumerated type for the <xref:System.Net.ServicePointManager.SecurityProtocol%2A> property. Use this enumeration to determine your transport security protocol policy when you're using HTTP APIs in the .NET Framework such as <xref:System.Net.WebClient>, <xref:System.Net.HttpWebRequest>, <xref:System.Net.Http.HttpClient>, and <xref:System.Net.Mail.SmtpClient> (when using TLS/SSL).
+
+The Transport Layer Security (TLS) protocols assume that a connection-oriented protocol, typically TCP, is in use.
+
  ]]></format>
     </remarks>
   </Docs>
@@ -74,15 +77,8 @@
       </ReturnValue>
       <MemberValue>48</MemberValue>
       <Docs>
-        <summary>Specifies the Secure Socket Layer (SSL) 3.0 security protocol.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- SSL 3.0 has been superseded by the Transport Layer Security (TLS) protocol and is provided for backward compatibility only.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies the Secure Socket Layer (SSL) 3.0 security protocol. SSL 3.0 has been superseded by the Transport Layer Security (TLS) protocol and is provided for backward compatibility only. </summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SystemDefault">
@@ -142,15 +138,8 @@
       </ReturnValue>
       <MemberValue>192</MemberValue>
       <Docs>
-        <summary>Specifies the Transport Layer Security (TLS) 1.0 security protocol.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- TLS assumes that a connection-oriented protocol, typically TCP, is in use. The TLS protocol is defined in IETF RFC 2246.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies the Transport Layer Security (TLS) 1.0 security protocol. The TLS 1.0 protocol is defined in IETF RFC 2246.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Tls11">
@@ -180,17 +169,8 @@
       </ReturnValue>
       <MemberValue>768</MemberValue>
       <Docs>
-        <summary>Specifies the Transport Layer Security (TLS) 1.1 security protocol.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- TLS assumes that a connection-oriented protocol, typically TCP, is in use. The TLS 1.1 protocol is defined in IETF RFC 4346.  
-  
- This value is supported on [!INCLUDE[win7](~/includes/win7-md.md)] and later.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies the Transport Layer Security (TLS) 1.1 security protocol. The TLS 1.1 protocol is defined in IETF RFC 4346. On Windows systems, this value is supported starting with Windows 7. </summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Tls12">
@@ -220,17 +200,8 @@
       </ReturnValue>
       <MemberValue>3072</MemberValue>
       <Docs>
-        <summary>Specifies the Transport Layer Security (TLS) 1.2 security protocol.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- TLS assumes that a connection-oriented protocol, typically TCP, is in use. The TLS 1.2 protocol is defined in IETF RFC 5246.  
-  
- This value is supported on [!INCLUDE[win7](~/includes/win7-md.md)] and later.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies the Transport Layer Security (TLS) 1.2 security protocol. The TLS 1.2 protocol is defined in IETF RFC 5246. On Windows systems, this value is supported starting with Windows 7.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Tls13">
@@ -256,7 +227,7 @@
       </ReturnValue>
       <MemberValue>12288</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the TLS 1.3 security protocol. The TLS protocol is defined in IETF RFC 8446.</summary>
       </Docs>
     </Member>
   </Members>

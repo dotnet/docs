@@ -1522,6 +1522,11 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCertHash">
+      <Docs>
+        <summary>Returns the hash value for an <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCertHash">
       <MemberSignature Language="C#" Value="public virtual byte[] GetCertHash ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetCertHash() cil managed" />
@@ -1600,12 +1605,17 @@
         <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
       </Parameters>
       <Docs>
-        <param name="hashAlgorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="hashAlgorithm">The name of the cryptographic hash algorithm to use.</param>
+        <summary>Returns the hash value for the X.509v3 certificate that is computed by using the specified cryptographic hash algorithm.</summary>
+        <returns>A byte array that contains the hash value for the X.509 certificate.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCertHashString">
+      <Docs>
+        <summary>Returns a hexadecimal string that contains the hash value for the X.509v3 certificate.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCertHashString">
       <MemberSignature Language="C#" Value="public virtual string GetCertHashString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetCertHashString() cil managed" />
@@ -1677,9 +1687,9 @@
         <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
       </Parameters>
       <Docs>
-        <param name="hashAlgorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="hashAlgorithm">The name of the cryptographic hash algorithm to use.</param>
+        <summary>Returns a hexadecimal string containing the hash value for the X.509v3 certificate computed using the specified cryptographic hash algorithm.</summary>
+        <returns>The hexadecimal string representation of the X.509 certificate hash value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

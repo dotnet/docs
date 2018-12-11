@@ -241,9 +241,8 @@ dotNetFx45_Full_x86_x64.exe /q /norestart /ChainingPackage Contoso
 
 |Version|Value of the Release DWORD|
 |-------------|--------------------------------|
-|.NET Framework 4.7.2 installed on Windows 10 October 2018 Update|461814|
 |.NET Framework 4.7.2 installed on Windows 10 April 2018 Update and on Windows Server, version 1803|461808|
-|.NET Framework 4.7.2 installed on all OS versions other than Windows 10 October 2018 Update, Windows 10 April 2018 Update, and Windows Server, version 1803|461814|
+|.NET Framework 4.7.2 installed on all OS versions other than Windows 10 April 2018 Update, and Windows Server, version 1803. This includes Windows 10 October 2018 Update. |461814|
 |.NET Framework 4.7.1 installed on Windows 10 Fall Creators Update and on Windows Server, version 1709|461308|
 |.NET Framework 4.7.1 installed on all OS versions other than Windows 10 Fall Creators Update and Windows Server, version 1709|461310|
 |.NET Framework 4.7 installed on Windows 10 Creators Update|460798|

@@ -15,8 +15,8 @@ Those two questions are complicated by factors that affect string comparisons:
 
 - You can choose an ordinal or linguistic comparison.
 - You can choose if case matters.
-- You can choose culture specific comparisons.
-- Linguistic comparisons are culture and platform dependent.
+- You can choose culture-specific comparisons.
+- Linguistic comparisons are culture and platform-dependent.
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
@@ -28,10 +28,8 @@ equality, but some differences, such as case differences, may be ignored.
 
 ## Default ordinal comparisons
 
-The most common operations, <xref:System.String.CompareTo%2A?displayProperty=nameWithType> and
-<xref:System.String.Equals%2A?displayProperty=nameWithType> or <xref:System.String.op_Equality%2A?displayProperty=nameWithType> use
-an ordinal comparison, a case-sensitive comparison, and use the current
-culture. The results are shown in the following example.
+The most common tests for equality, <xref:System.String.Equals%2A?displayProperty=nameWithType> and <xref:System.String.op_Equality%2A?displayProperty=nameWithType>, use
+a case-sensitive ordinal comparison. The results are shown in the following example.
 
 [!code-csharp-interactive[Comparing strings using an ordinal comparison](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#1)]
 
@@ -43,6 +41,8 @@ culture, the results depend on the locale and language settings of the
 machine where they run. These comparisons are unsuitable for comparisons
 where order should be consistent across machines or locations.
 
+Note that the test for equality with <xref:System.String.Equals%2A?displayProperty=nameWithType> and <xref:System.String.op_Equality%2A?displayProperty=nameWithType> differs from string comparison using the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> and <xref:System.String.Compare(System.String,System.String?displayProperty=nameWithType)> methods. While the latter perform a case-sensitive ordinal comparison, the latter perform a case-sensitive, culture-sensitive comparison using the current culture.
+ 
 ## Case-insensitive ordinal comparisons
 
 The <xref:System.String.Equals%2A?displayProperty=nameWithType> method

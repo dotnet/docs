@@ -47,5 +47,6 @@ The delegate must be instantiated with a method or lambda expression that has a 
 - [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)  
 - [Delegates](../../../csharp/programming-guide/delegates/index.md)  
 - [Events](../../../csharp/programming-guide/events/index.md)  
-- [Delegates with Named vs. Anonymous Methods](../../../csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md)  
+- [Delegates with Named vs. Anonymous Methods](../../../csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md) 
 - [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)
+- [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)

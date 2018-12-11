@@ -1,5 +1,6 @@
 ---
-title: "Knowing When to Use Override and New Keywords (C# Programming Guide)"
+title: "Knowing When to Use Override and New Keywords - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "override keyword [C#]"

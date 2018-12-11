@@ -1,5 +1,6 @@
 ---
-title: "Classes (C# Programming Guide)"
+title: "Classes - C# Programming Guide"
+ms.custom: seodec18
 description: Learn about the class types and how to create them
 ms.date: 08/21/2018
 helpviewer_keywords: 

@@ -1,5 +1,6 @@
 ---
-title: "Nullable types (C# Programming Guide)"
+title: "Nullable types - C# Programming Guide"
+ms.custom: seodec18
 description: Learn about C# nullable types and how to use them
 ms.date: 07/30/2018
 helpviewer_keywords: 

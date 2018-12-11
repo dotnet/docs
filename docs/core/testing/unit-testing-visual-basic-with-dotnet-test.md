@@ -1,5 +1,5 @@
 ---
-title: Unit testing with Visual Basic in .NET Core using dotnet test and xUnit
+title: Unit testing Visual Basic in .NET Core with dotnet test and xUnit
 description: Learn unit test concepts in .NET Core through an interactive experience building a sample Visual Basic solution step-by-step using dotnet test and xUnit.
 author: billwagner
 ms.author: wiwagn

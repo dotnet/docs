@@ -1,5 +1,6 @@
 ---
-title: "Nested Types (C# Programming Guide)"
+title: "Nested Types - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/10/2017
 helpviewer_keywords: 
   - "nested types [C#]"

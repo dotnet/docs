@@ -256,7 +256,7 @@
 ## [Tour of C#](csharp/tour-of-csharp/)
 <!-- The "What's New" section is short, and one level
     deep, so leave it in the main TOC -->
-## [What's new in C#](csharp/whats-new/index.md)
+## What's new in C#
 ### [C# 7.3](csharp/whats-new/csharp-7-3.md)
 ### [C# 7.2](csharp/whats-new/csharp-7-2.md)
 ### [C# 7.1](csharp/whats-new/csharp-7-1.md)

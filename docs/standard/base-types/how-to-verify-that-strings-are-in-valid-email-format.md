@@ -1,6 +1,6 @@
 ---
 title: "How to: Verify that Strings Are in Valid Email Format"
-ms.date: "08/10/2018"
+ms.date: "12/10/2018"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"

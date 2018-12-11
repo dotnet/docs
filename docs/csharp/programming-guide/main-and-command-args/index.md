@@ -1,5 +1,6 @@
 ---
-title: "Main() and command-line arguments (C# Programming Guide)"
+title: "Main() and command-line arguments - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 08/02/2017
 f1_keywords: 
   - "CS5001"

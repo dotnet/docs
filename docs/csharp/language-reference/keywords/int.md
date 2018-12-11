@@ -1,5 +1,7 @@
 ---
-title: "int (C# Reference)"
+title: "int - C# Reference"
+ms.custom: seodec18
+
 ms.date: 03/14/2017
 f1_keywords: 
   - "int_CSharpKeyword"

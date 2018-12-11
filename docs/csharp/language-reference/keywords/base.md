@@ -1,5 +1,7 @@
 ---
-title: "base keyword (C# Reference)"
+title: "base keyword - C# Reference"
+ms.custom: seodec18
+
 description: Learn about the base keyword, which is used to access members of the base class from within a derived class in C#.
 ms.date: 07/20/2015
 f1_keywords: 

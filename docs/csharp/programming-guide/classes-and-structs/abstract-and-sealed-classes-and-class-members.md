@@ -1,5 +1,6 @@
 ---
-title: "Abstract and Sealed Classes and Class Members (C# Programming Guide)"
+title: "Abstract and Sealed Classes and Class Members - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "abstract classes [C#]"

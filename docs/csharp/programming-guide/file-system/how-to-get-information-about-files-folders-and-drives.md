@@ -1,5 +1,6 @@
 ---
-title: "How to: Get Information About Files, Folders, and Drives  (C# Programming Guide)"
+title: "How to: Get Information About Files, Folders, and Drives  - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "files [C#], getting information about"

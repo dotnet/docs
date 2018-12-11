@@ -1,5 +1,6 @@
 ---
-title: "Classes and Structs (C# Programming Guide)"
+title: "Classes and Structs - C# Programming Guide"
+ms.custom: seodec18
 description: Describes the use of classes and structures (structs) in C#.
 ms.date: 01/17/2016
 helpviewer_keywords: 

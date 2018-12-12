@@ -148,7 +148,7 @@ This article discusses ways to avoid problems of type identity that can lead to 
  If it is not possible to put all your assemblies in the probing path, consider alternatives such as using the .NET Framework add-in model, placing assemblies into the global assembly cache, or creating application domains.  
   
 ### Consider Using the .NET Framework Add-In Model  
- If you are using the load-from context to implement add-ins, which typically are not installed in the application base, use the .NET Framework add-in model. This model provides isolation at the application domain or process level, without requiring you to manage application domains yourself. For information about the add-in model, see [Add-ins and Extensibility](../../../docs/framework/add-ins/index.md).  
+ If you are using the load-from context to implement add-ins, which typically are not installed in the application base, use the .NET Framework add-in model. This model provides isolation at the application domain or process level, without requiring you to manage application domains yourself. For information about the add-in model, see [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)).  
   
 ### Consider Using the Global Assembly Cache  
  Place assemblies in the global assembly cache to get the benefit of a shared assembly path that is outside the application base, without losing the advantages of the default load context or taking on the disadvantages of the other contexts.  
@@ -164,4 +164,3 @@ This article discusses ways to avoid problems of type identity that can lead to 
 - <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>
 - <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=nameWithType>
 - <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType>
-- [Add-ins and Extensibility](../../../docs/framework/add-ins/index.md)

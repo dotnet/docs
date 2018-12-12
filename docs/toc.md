@@ -221,7 +221,6 @@
 ### [Performance](framework/performance/)
 ### [Dynamic Programming](framework/reflection-and-codedom/)
 ### [Managed Extensibility Framework (MEF)](framework/mef/)
-### [Add-ins and Extensibility](framework/add-ins/)
 ### [Interoperating with Unmanaged Code](framework/interop/)
 ### [Unmanaged API Reference](framework/unmanaged-api/)
 ### [XAML Services](framework/xaml-services/)

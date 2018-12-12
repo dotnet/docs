@@ -496,11 +496,7 @@ ms.date: "12/04/2018"
                         <a href="#desktop">Desktop</a>
                         <ul id="desktop" class="cardsC">
                             <li>
-<<<<<<< HEAD
-                                <a href="https://msdn.microsoft.com/library/windows/apps/dn609832.aspx">
-=======
                                 <a href="/uwp">
->>>>>>> master
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

@@ -298,7 +298,12 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          A call is made to write more output after <see langword="Close" /> has been called or the result of this call is an invalid XML document.
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="Create">
@@ -1169,7 +1174,12 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -1436,7 +1446,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -1523,7 +1538,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The state of writer is not <see langword="WriteState.Element" /> or writer is closed.
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.ArgumentException">The <see langword="xml:space" /> or <see langword="xml:lang" /> attribute value is invalid.</exception>
       </Docs>
     </Member>
@@ -1599,7 +1619,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The state of writer is not <see langword="WriteState.Element" /> or writer is closed.
+
+-or-
+        
+An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.ArgumentException">The <see langword="xml:space" /> or <see langword="xml:lang" /> attribute value is invalid.</exception>
       </Docs>
     </Member>
@@ -1672,7 +1697,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The state of writer is not <see langword="WriteState.Element" /> or writer is closed.
+
+-or-
+        
+An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.ArgumentException">The <see langword="xml:space" /> or <see langword="xml:lang" /> attribute value is invalid.</exception>
         <exception cref="T:System.Xml.XmlException">The <paramref name="localName" /> or <paramref name="ns" /> is <see langword="null" />.</exception>
       </Docs>
@@ -1731,7 +1761,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+    
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -1851,7 +1886,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -1913,7 +1953,11 @@ This member may behave differently when it is used in a Portable Class Library p
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The writer is closed or in error state.
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> or <paramref name="count" /> is less than zero.  
   
@@ -1969,7 +2013,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -2074,7 +2123,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -2176,7 +2230,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -2296,7 +2355,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -2403,7 +2467,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -2470,7 +2539,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          This method was called outside the prolog (after the root element).
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.ArgumentException">The value for <paramref name="name" /> would result in invalid XML.</exception>
       </Docs>
     </Member>
@@ -2523,7 +2597,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -2794,7 +2873,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -2889,7 +2973,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -2990,7 +3079,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -3048,7 +3142,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          This results in an invalid XML document.
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteEndElementAsync">
@@ -3091,7 +3190,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -3195,7 +3299,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -3293,7 +3402,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -3391,7 +3505,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -3487,7 +3606,12 @@ This member may behave differently when it is used in a Portable Class Library p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -3763,7 +3887,12 @@ while (!reader.EOF){
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -3815,7 +3944,12 @@ while (!reader.EOF){
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -3939,7 +4073,12 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -4067,7 +4206,12 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -4278,7 +4422,12 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -4329,7 +4478,12 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -4403,7 +4557,12 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The writer is closed.
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Text.EncoderFallbackException">There is a character in the buffer that is a valid XML character but is not valid for the output encoding. For example, if the output encoding is ASCII, you should only use characters from the range of 0 to 127 for element and attribute names. The invalid character might be in the argument of this method or in an argument of previous methods that were writing to the buffer. Such characters are escaped by character entity references when possible (for example, in text nodes or attribute values). However, the character entity reference is not allowed in element and attribute names, comments, processing instructions, or CDATA sections.</exception>
       </Docs>
     </Member>
@@ -4571,7 +4730,12 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -4642,7 +4806,12 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          This is not the first write method called after the constructor.
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteStartDocument">
@@ -4695,7 +4864,12 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          This is not the first write method called after the constructor.
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteStartDocumentAsync">
@@ -4759,7 +4933,12 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -4806,7 +4985,12 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -4888,7 +5072,12 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The writer is closed.
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Text.EncoderFallbackException">There is a character in the buffer that is a valid XML character but is not valid for the output encoding. For example, if the output encoding is ASCII, you should only use characters from the range of 0 to 127 for element and attribute names. The invalid character might be in the argument of this method or in an argument of previous methods that were writing to the buffer. Such characters are escaped by character entity references when possible (for example, in text nodes or attribute values). However, the character entity reference is not allowed in element and attribute names, comments, processing instructions, or CDATA sections.</exception>
       </Docs>
     </Member>
@@ -4957,7 +5146,12 @@ writer.WriteEndElement();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The writer is closed.
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Text.EncoderFallbackException">There is a character in the buffer that is a valid XML character but is not valid for the output encoding. For example, if the output encoding is ASCII, you should only use characters from the range of 0 to 127 for element and attribute names. The invalid character might be in the argument of this method or in an argument of previous methods that were writing to the buffer. Such characters are escaped by character entity references when possible (for example, in text nodes or attribute values). However, the character entity reference is not allowed in element and attribute names, comments, processing instructions, or CDATA sections.</exception>
       </Docs>
     </Member>
@@ -5018,7 +5212,12 @@ writer.WriteEndElement();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The writer is closed.
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Text.EncoderFallbackException">There is a character in the buffer that is a valid XML character but is not valid for the output encoding. For example, if the output encoding is ASCII, you should only use characters from the range of 0 to 127 for element and attribute names. The invalid character might be in the argument of this method or in an argument of previous methods that were writing to the buffer. Such characters are escaped by character entity references when possible (for example, in text nodes or attribute values). However, the character entity reference is not allowed in element and attribute names, comments, processing instructions, or CDATA sections.</exception>
       </Docs>
     </Member>
@@ -5069,7 +5268,12 @@ writer.WriteEndElement();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -5228,7 +5432,12 @@ test&lt;item&gt;test
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -5335,7 +5544,12 @@ test&lt;item&gt;test
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -5828,7 +6042,12 @@ test&lt;item&gt;test
         </remarks>
         <exception cref="T:System.ArgumentException">An invalid value was specified.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The writer is closed or in error state.
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteValue">
@@ -6032,7 +6251,12 @@ test&lt;item&gt;test
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>

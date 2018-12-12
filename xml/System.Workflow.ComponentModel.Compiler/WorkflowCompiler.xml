@@ -111,7 +111,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="files" /> is a null reference (Visual Basic <see langword="Nothing" />).</exception>
+          <paramref name="parameters" /> is a null reference (Visual Basic <see langword="Nothing" />).
+
+-or-
+
+<paramref name="files" /> is a null reference (Visual Basic <see langword="Nothing" />).</exception>
       </Docs>
     </Member>
   </Members>

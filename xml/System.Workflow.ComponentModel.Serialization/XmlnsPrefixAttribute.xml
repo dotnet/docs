@@ -56,7 +56,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Serialization.XmlnsPrefixAttribute" /> class, initializing <see cref="P:System.Workflow.ComponentModel.Serialization.XmlnsPrefixAttribute.XmlNamespace" /> and <see cref="P:System.Workflow.ComponentModel.Serialization.XmlnsPrefixAttribute.Prefix" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="prefix" /> is a null reference (Visual Basic <see langword="Nothing" />).</exception>
+          <paramref name="xmlNamespace" /> is a null reference (Visual Basic <see langword="Nothing" />).
+
+-or-
+
+<paramref name="prefix" /> is a null reference (Visual Basic <see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="Prefix">

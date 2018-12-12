@@ -381,7 +381,11 @@ public class HasOneChildActivity : CompositeActivity
         <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> that results from an attempt to cancel this instance.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="exception" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+          <paramref name="executionContext" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="exception" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -437,7 +441,11 @@ public class HasOneChildActivity : CompositeActivity
         <summary>Calls when an activity is added.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="addedActivity" /> is a null reference (<see langword="Nothing" />).</exception>
+          <paramref name="executionContext" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="addedActivity" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="OnActivityChangeRemove">

@@ -163,9 +163,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets information that determines if the type has a mixed content model.</summary>
-        <value>If this property is <see langword="true" />, character data is allowed to appear between the child elements of the complex type (mixed content model). The default is <see langword="false" />.  
-  
- Optional.</value>
+        <value>If this property is <see langword="true" />, character data is allowed to appear between the child elements of the complex type (mixed content model). The default is <see langword="false" />. Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

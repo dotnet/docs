@@ -66,8 +66,8 @@
       </Parameters>
       <Docs>
         <param name="RootWeb">The root Web server.</param>
-        <param name="PhysicalDirectory">The physical path of the virtual root, which corresponds to <c>PhysicalPath</c> from the <see cref="M:System.EnterpriseServices.Internal.IComSoapPublisher.CreateVirtualRoot(System.String,System.String,System.String@,System.String@,System.String@,System.String@)" /> method.</param>
-        <param name="VirtualDirectory">The name of the virtual root, which corresponds to <c>VirtualRoot</c> from the <see cref="M:System.EnterpriseServices.Internal.IComSoapPublisher.CreateVirtualRoot(System.String,System.String,System.String@,System.String@,System.String@,System.String@)" /> method.</param>
+        <param name="PhysicalDirectory">The physical path of the virtual root, which corresponds to <paramref name="PhysicalPath" /> from the <see cref="M:System.EnterpriseServices.Internal.IComSoapPublisher.CreateVirtualRoot(System.String,System.String,System.String@,System.String@,System.String@,System.String@)" /> method.</param>
+        <param name="VirtualDirectory">The name of the virtual root, which corresponds to <paramref name="VirtualRoot" /> from the <see cref="M:System.EnterpriseServices.Internal.IComSoapPublisher.CreateVirtualRoot(System.String,System.String,System.String@,System.String@,System.String@,System.String@)" /> method.</param>
         <param name="Error">A string to which an error message can be written.</param>
         <summary>Creates an Internet Information Services (IIS) virtual root.</summary>
         <remarks>

@@ -78,7 +78,11 @@
         <returns>A <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> that contains the errors from this operation.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="obj" /> is a null reference (Visual Basic <see langword="Nothing" />).</exception>
+          <paramref name="manager" /> is a null reference (Visual Basic <see langword="Nothing" />).
+
+-or-
+
+<paramref name="obj" /> is a null reference (Visual Basic <see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="obj" /> cannot be cast to type <see cref="T:System.Workflow.ComponentModel.DependencyObject" />.</exception>
       </Docs>

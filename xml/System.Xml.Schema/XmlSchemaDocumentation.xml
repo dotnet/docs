@@ -121,9 +121,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the <see langword="xml:lang" /> attribute. This serves as an indicator of the language used in the contents.</summary>
-        <value>The <see langword="xml:lang" /> attribute.  
-  
- Optional.</value>
+        <value>The <see langword="xml:lang" /> attribute. Optional.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,9 +212,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Uniform Resource Identifier (URI) source of the information.</summary>
-        <value>A URI reference. The default is <see langword="String.Empty" />.  
-  
- Optional.</value>
+        <value>A URI reference. The default is <see langword="String.Empty" />. Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -377,8 +377,16 @@
         <returns>The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> added to the workflow service.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="address" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The workflow service does not implement <paramref name="implementedContract" />.</exception>
+          <paramref name="implementedContract" /> is <see langword="null" />.
+
+-or-
+
+<paramref name="address" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="T:System.ServiceModel.ServiceContractAttribute" /> not specified for <paramref name="implementedContract" />.
+-or-
+
+The workflow service does not implement <paramref name="implementedContract" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddServiceEndpoint">
@@ -409,8 +417,17 @@
         <returns>The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> added to the workflow service.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="address" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The workflow service does not implement <paramref name="implementedContract" />.</exception>
+          <paramref name="implementedContract" /> is <see langword="null" />.
+
+-or-
+
+<paramref name="address" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="T:System.ServiceModel.ServiceContractAttribute" /> not specified for <paramref name="implementedContract" />.
+
+-or-
+
+The workflow service does not implement <paramref name="implementedContract" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddServiceEndpoint">
@@ -443,9 +460,17 @@
         <returns>The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> added to the workflow service.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="address" /> is <see langword="null" />.</exception>
+          <paramref name="implementedContract" /> is <see langword="null" />.
+
+-or-
+
+<paramref name="address" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
-          <see cref="T:System.ServiceModel.ServiceContractAttribute" /> not specified for <paramref name="implementedContract" />.</exception>
+          The workflow service does not implement <paramref name="implementedContract" />.
+
+-or-
+
+<see cref="T:System.ServiceModel.ServiceContractAttribute" /> not specified for <paramref name="implementedContract" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddServiceEndpoint">
@@ -478,9 +503,17 @@
         <returns>The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> added to the workflow service.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="address" /> is <see langword="null" />.</exception>
+          <paramref name="implementedContract" /> is <see langword="null" />.
+
+-or-
+
+<paramref name="address" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
-          <see cref="T:System.ServiceModel.ServiceContractAttribute" /> not specified for <paramref name="implementedContract" />.</exception>
+          The workflow service does not implement <paramref name="implementedContract" />.
+
+-or-
+
+<see cref="T:System.ServiceModel.ServiceContractAttribute" /> not specified for <paramref name="implementedContract" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateDescription">

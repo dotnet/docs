@@ -2147,9 +2147,7 @@
       <Parameters />
       <Docs>
         <summary>Returns a UDP datagram asynchronously that was sent by a remote host.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

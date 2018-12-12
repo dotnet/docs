@@ -347,9 +347,7 @@
       <Parameters />
       <Docs>
         <summary>Accepts a pending connection request as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />  
-  
- The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns a <see cref="T:System.Net.Sockets.Socket" /> used to send and receive data.</returns>
+        <returns>The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns a <see cref="T:System.Net.Sockets.Socket" /> used to send and receive data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -459,9 +457,7 @@
       <Parameters />
       <Docs>
         <summary>Accepts a pending connection request as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />  
-  
- The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns a <see cref="T:System.Net.Sockets.TcpClient" /> used to send and receive data.</returns>
+        <returns>The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns a <see cref="T:System.Net.Sockets.TcpClient" /> used to send and receive data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -752,9 +748,7 @@
       <Docs>
         <param name="port">The port on which to listen for incoming connection attempts.</param>
         <summary>Creates a new <see cref="T:System.Net.Sockets.TcpListener" /> instance to listen on the specified port.</summary>
-        <returns>Returns <see cref="T:System.Net.Sockets.TcpListener" />.  
-  
- A new <see cref="T:System.Net.Sockets.TcpListener" /> instance to listen on the specified port.</returns>
+        <returns>A new <see cref="T:System.Net.Sockets.TcpListener" /> instance to listen on the specified port.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1056,9 +1056,7 @@ The `Available` property is a way to determine whether data is queued for readin
         <param name="address">The <see cref="T:System.Net.IPAddress" /> of the host to which you intend to connect.</param>
         <param name="port">The port number to which you intend to connect.</param>
         <summary>Connects the client to a remote TCP host using the specified IP address and port number as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1117,9 +1115,7 @@ The `Available` property is a way to determine whether data is queued for readin
         <param name="addresses">The <see cref="T:System.Net.IPAddress" /> array of the host to which you intend to connect.</param>
         <param name="port">The port number to which you intend to connect.</param>
         <summary>Connects the client to a remote TCP host using the specified IP addresses and port number as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1179,9 +1175,7 @@ The `Available` property is a way to determine whether data is queued for readin
         <param name="host">The DNS name of the remote host to which you intend to connect.</param>
         <param name="port">The port number of the remote host to which you intend to connect.</param>
         <summary>Connects the client to the specified TCP port on the specified host as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

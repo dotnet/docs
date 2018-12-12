@@ -222,8 +222,8 @@
         <Parameter Name="A_0" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
-        <param name="A_0">To be added.</param>
+        <param name=""><see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <param name="A_0"><see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Printing.PrintSystemObject" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

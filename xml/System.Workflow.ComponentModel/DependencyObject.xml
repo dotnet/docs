@@ -105,7 +105,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Either of the arguments is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="dependencyEvent" /> represents a non-event <see cref="T:System.Workflow.ComponentModel.DependencyProperty" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          Value is of incorrect <see cref="T:System.Type" />
+
+-or-
+
+The <paramref name="dependencyEvent" /> represents a non-event <see cref="T:System.Workflow.ComponentModel.DependencyProperty" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DesignMode">
@@ -298,7 +303,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="targetType" /> is a null reference (<see langword="Nothing" />).</exception>
+          <paramref name="bind" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="targetType" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="GetInvocationList&lt;T&gt;">
@@ -577,7 +586,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Either of the arguments is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="dependencyEvent" /> is not an event.</exception>
+        <exception cref="T:System.ArgumentException">
+          The <paramref name="dependencyEvent" /> is a <see langword="metaproperty" />.
+
+-or-
+
+The <paramref name="dependencyEvent" /> is not an event.</exception>
         <exception cref="T:System.Data.ReadOnlyException">The <paramref name="value" /> is a <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> and this instance is not in <see cref="P:System.Workflow.ComponentModel.DependencyObject.DesignMode" />.</exception>
       </Docs>
     </Member>
@@ -654,7 +668,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Either of the arguments is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
-        <exception cref="T:System.ArgumentException">The <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> associated with the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> is not bindable.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> associated with the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> is read-only, is metadata, or is not bindable.</exception>
         <exception cref="T:System.InvalidOperationException">This instance is not in <see cref="P:System.Workflow.ComponentModel.DependencyObject.DesignMode" />.</exception>
       </Docs>
     </Member>

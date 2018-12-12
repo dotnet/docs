@@ -309,9 +309,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the <see langword="block" /> attribute.</summary>
-        <value>The <see langword="block" /> attribute prevents a complex type from being used in the specified type of derivation. The default is <see langword="XmlSchemaDerivationMethod.None" />.  
-  
- Optional.</value>
+        <value>The <see langword="block" /> attribute prevents a complex type from being used in the specified type of derivation. The default is <see langword="XmlSchemaDerivationMethod.None" />. Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -591,9 +589,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the information that determines if the <see langword="complexType" /> element can be used in the instance document.</summary>
-        <value>If <see langword="true" />, an element cannot use this <see langword="complexType" /> element directly and must use a complex type that is derived from this <see langword="complexType" /> element. The default is <see langword="false" />.  
-  
- Optional.</value>
+        <value>If <see langword="true" />, an element cannot use this <see langword="complexType" /> element directly and must use a complex type that is derived from this <see langword="complexType" /> element. The default is <see langword="false" />. Optional.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -635,9 +631,7 @@
       <Docs>
         <summary>Gets or sets information that determines if the complex type has a mixed content model (markup within the content).</summary>
         <value>
-          <see langword="true" />, if character data can appear between child elements of this complex type; otherwise, <see langword="false" />. The default is <see langword="false" />.  
-  
- Optional.</value>
+          <see langword="true" />, if character data can appear between child elements of this complex type; otherwise, <see langword="false" />. The default is <see langword="false" />. Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

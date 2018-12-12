@@ -179,7 +179,12 @@ Example of a Grid Control with Empty Coordinates
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The requested row coordinate is larger than the <see cref="P:System.Windows.Automation.GridPattern.GridPatternInformation.RowCount" /> or the column coordinate is larger than the <see cref="P:System.Windows.Automation.GridPattern.GridPatternInformation.ColumnCount" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          Either the requested row or column coordinate is less than zero.
+
+-or-
+
+The requested row coordinate is larger than the <see cref="P:System.Windows.Automation.GridPattern.GridPatternInformation.RowCount" /> or the column coordinate is larger than the <see cref="P:System.Windows.Automation.GridPattern.GridPatternInformation.ColumnCount" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Pattern">

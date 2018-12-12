@@ -266,7 +266,7 @@
       <Docs>
         <summary>Gets a value indicating whether the node is read-only.</summary>
         <value>
-          <see langword="true" /> if the node is read-only; otherwise <see langword="false" />.  
+          <see langword="true" /> if the node is read-only; otherwise, <see langword="false" />.  
   
  Because DocumentType nodes are read-only, this property always returns <see langword="true" />.</value>
         <remarks>

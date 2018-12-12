@@ -113,9 +113,16 @@ If `array` is `null`, this constructor returns a  <xref:System.Memory%601> objec
        ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="array" /> is <see langword="null" />, but <paramref name="start" /> or <paramref name="length" /> is non-zero.<p />
-          --or--<p /><paramref name="start" /> is outside the bounds of the array. <p />
-          --or--<p /><paramref name="start" /> and <paramref name="length" /> exceeds the number of elements in the array.
+          <paramref name="array" /> is <see langword="null" />, but <paramref name="start" /> or <paramref name="length" /> is non-zero.
+
+
+-or-
+
+<paramref name="start" /> is outside the bounds of the array.
+
+-or-
+
+<paramref name="start" /> and <paramref name="length" /> exceeds the number of elements in the array.
         </exception>
         <exception cref="T:System.ArrayTypeMismatchException">
           <paramref name="T" /> is a reference type, and <paramref name="array" /> is not an array of type <paramref name="T" />.</exception>

@@ -258,7 +258,7 @@
       <Parameters />
       <Docs>
         <summary>Implements an enumeration interface to the <see cref="T:System.Collections.ICollection" />.</summary>
-        <returns>Returns an enumerator that can iterate through the <see cref="T:System.Collections.ReadOnlyCollectionBase" /> instance.</returns>
+        <returns>An enumerator that can iterate through the <see cref="T:System.Collections.ReadOnlyCollectionBase" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1117,9 +1117,7 @@
       <Docs>
         <param name="value">The <see cref="T:System.Object" /> to add to the <see cref="T:System.Collections.IList" />.</param>
         <summary>Adds an object to the <see cref="T:System.Collections.IList" /> at the end of the <see cref="T:System.Collections.IList" />.</summary>
-        <returns>Returns <see cref="T:System.Int32" />.  
-  
- The zero-based index of the <see cref="T:System.Object" /> that was just added.</returns>
+        <returns>The zero-based index of the <see cref="T:System.Object" /> that was just added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1171,7 +1169,7 @@
       <Docs>
         <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Collections.IList" />.</param>
         <summary>Gets a value that indicates whether the <see cref="T:System.Object" /> is a member of the collection.</summary>
-        <returns>Returns <see cref="T:System.Boolean" /><see langword="true" /> if <paramref name="value" /> is in the collection; otherwise, <see langword="false" />.</returns>
+        <returns><see langword="true" /> if <paramref name="value" /> is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1287,7 +1285,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
-        <value>Returns <see cref="T:System.Boolean" /><see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</value>
+        <value><see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1316,7 +1314,7 @@
       <Docs>
         <param name="index">Zero-based index into the <see cref="T:System.Collections.ICollection" />.</param>
         <summary>Gets or sets the activity in the <see cref="T:System.Collections.ICollection" /> based on the index.</summary>
-        <value>Returns <see cref="T:System.Object" />, a member activity of the <see cref="T:System.Collections.ICollection" />, whose index in the <see cref="T:System.Collections.ICollection" /> was specified in the call.</value>
+        <value>An <see cref="T:System.Object" />, a member activity of the <see cref="T:System.Collections.ICollection" />, whose index in the <see cref="T:System.Collections.ICollection" /> was specified in the call.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

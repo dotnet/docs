@@ -1029,7 +1029,7 @@ d.</elem>
       </Parameters>
       <Docs>
         <param name="newChild">The <see langword="XmlNode" /> to insert.</param>
-        <param name="refChild">The <see langword="XmlNode" /> that is the reference node. The <c>newNode</c> is placed after the <c>refNode</c>.</param>
+        <param name="refChild">The <see langword="XmlNode" /> that is the reference node. The <paramref name="newChild" /> is placed after the <paramref name="refChild" />.</param>
         <summary>Inserts the specified node immediately after the specified reference node.</summary>
         <returns>The node being inserted.</returns>
         <remarks>

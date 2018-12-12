@@ -2046,7 +2046,12 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress".
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -3210,7 +3215,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -3797,7 +3807,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -3952,7 +3967,12 @@ public class Sample
         <exception cref="T:System.FormatException">The content is not in the correct format for the target type.</exception>
         <exception cref="T:System.InvalidCastException">The attempted cast is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="returnType" /> value is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The current node is not a supported node type. See the table below for details.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.OverflowException">Read <see langword="Decimal.MaxValue" />.</exception>
       </Docs>
     </Member>
@@ -4006,7 +4026,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -4072,7 +4097,12 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="buffer" /> value is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="M:System.Xml.XmlReader.ReadContentAsBase64(System.Byte[],System.Int32,System.Int32)" /> is not supported on the current node.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The index into the buffer or index + count is larger than the allocated buffer size.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Xml.XmlReader" /> implementation does not support this method.</exception>
         <altmember cref="M:System.Xml.XmlReader.ReadElementContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
@@ -4126,7 +4156,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -4192,7 +4227,12 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="buffer" /> value is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="M:System.Xml.XmlReader.ReadContentAsBinHex(System.Byte[],System.Int32,System.Int32)" /> is not supported on the current node.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The index into the buffer or index + count is larger than the allocated buffer size.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Xml.XmlReader" /> implementation does not support this method.</exception>
         <altmember cref="M:System.Xml.XmlReader.ReadElementContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
@@ -4246,7 +4286,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -4830,7 +4875,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -4936,7 +4986,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -5017,7 +5072,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -5081,7 +5141,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -5142,7 +5207,11 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -5213,7 +5282,12 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="buffer" /> value is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The current node is not an element node.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The index into the buffer or index + count is larger than the allocated buffer size.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Xml.XmlReader" /> implementation does not support this method.</exception>
         <exception cref="T:System.Xml.XmlException">The element contains mixed-content.</exception>
@@ -5268,7 +5342,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -5339,7 +5418,12 @@ public class Sample
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="buffer" /> value is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The current node is not an element node.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The index into the buffer or index + count is larger than the allocated buffer size.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Xml.XmlReader" /> implementation does not support this method.</exception>
         <exception cref="T:System.Xml.XmlException">The element contains mixed-content.</exception>
@@ -5394,7 +5478,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -5456,7 +5545,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -5515,7 +5609,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -5593,7 +5692,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -5652,7 +5756,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -5720,7 +5829,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -5779,7 +5893,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -5859,7 +5978,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -5918,7 +6042,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -5986,7 +6115,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -6045,7 +6179,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+        
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -6113,7 +6252,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+        
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -6172,7 +6316,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+        
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -6252,7 +6401,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+        
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -6311,7 +6465,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+        
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -6397,7 +6556,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+        
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -6454,7 +6618,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+        
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -6509,7 +6678,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -6583,7 +6757,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -6652,7 +6831,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The <see cref="T:System.Xml.XmlReader" /> is not positioned on an element.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Xml.XmlException">The current element contains child elements.  
   
  -or-  
@@ -6718,7 +6902,12 @@ public class Sample
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+        An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <summary>Reads the simple text-only elements. However, we recommend that you use the <see cref="Overload:System.Xml.XmlReader.ReadElementContentAsString" /> method instead, because it provides a more straightforward way to handle this operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -7072,7 +7261,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -7563,7 +7757,12 @@ public class Sample
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The XML reader isn't positioned on an element when this method is called.
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadToDescendant">
@@ -8019,7 +8218,12 @@ reader.ReadToFollowing("item", "urn:1");
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The current node does not have a value (<see cref="P:System.Xml.XmlReader.HasValue" /> is <see langword="false" />).
+
+-or-
+    
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="buffer" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The index into the buffer, or index + count is larger than the allocated buffer size.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Xml.XmlReader" /> implementation does not support this method.</exception>
@@ -8073,7 +8277,11 @@ reader.ReadToFollowing("item", "urn:1");
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>
@@ -8121,7 +8329,12 @@ reader.ReadToFollowing("item", "urn:1");
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The reader is not positioned on an <see langword="EntityReference" /> node; this implementation of the reader cannot resolve entities (<see cref="P:System.Xml.XmlReader.CanResolveEntity" /> returns <see langword="false" />).
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <altmember cref="T:System.Xml.EntityHandling" />
         <altmember cref="P:System.Xml.XmlReader.CanResolveEntity" />
       </Docs>
@@ -8348,7 +8561,12 @@ reader.ReadToFollowing("item", "urn:1");
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
+        <exception cref="T:System.InvalidOperationException">
+          An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."
+
+-or-
+
+An <see cref="T:System.Xml.XmlReader" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlReaderSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlReaderSettings.Async to true if you want to use Async Methods."</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Asynchronous Programming with Async and Await (C# and Visual Basic)</related>
       </Docs>
     </Member>

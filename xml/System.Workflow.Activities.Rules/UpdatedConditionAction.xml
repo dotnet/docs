@@ -77,7 +77,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.UpdatedConditionAction" /> class, with the existing and new conditions of the change.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="newConditionDefinition" /> is a null reference (<see langword="Nothing" />).</exception>
+          <paramref name="conditionDefinition" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="newConditionDefinition" /> is a null reference (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentException">The name of the <paramref name="conditionDefinition" /> is not equal to the name of <paramref name="newConditionDefinition." /></exception>
       </Docs>
     </Member>

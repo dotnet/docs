@@ -376,7 +376,11 @@
         <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> that results from an attempt to cancel this instance.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="exception" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+          <paramref name="executionContext" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="exception" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Initialize">

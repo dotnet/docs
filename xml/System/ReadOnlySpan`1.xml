@@ -130,9 +130,15 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
         <summary>Creates a new <see cref="T:System.ReadOnlySpan`1" /> that includes a specified number of elements of an array starting at a specified index.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="array" /> is <see langword="null" />, but <paramref name="start" /> or <paramref name="length" /> is non-zero.<p />
-          --or--<p /><paramref name="start" /> is outside the bounds of the array. <p />
-          --or--<p /><paramref name="start" /> and <paramref name="length" /> exceeds the number of elements in the array.
+          <paramref name="array" /> is <see langword="null" />, but <paramref name="start" /> or <paramref name="length" /> is non-zero.
+
+-or-
+
+<paramref name="start" /> is outside the bounds of the array.
+
+-or-
+
+<paramref name="start" /> and <paramref name="length" /> exceeds the number of elements in the array.
         </exception>
       </Docs>
     </Member>

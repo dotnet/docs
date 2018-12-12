@@ -164,7 +164,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Threading.DispatcherTimer" /> class which uses the specified time interval, priority, event handler, and <see cref="T:System.Windows.Threading.Dispatcher" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="callback" /> is <see langword="null" />.</exception>
+          <paramref name="callback" /> is <see langword="null" />.
+
+-or-
+
+          <paramref name="dispatcher" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="interval" /> is less than 0 or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
       </Docs>

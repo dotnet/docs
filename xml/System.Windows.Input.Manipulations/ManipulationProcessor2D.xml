@@ -368,9 +368,7 @@
         <summary>Gets or sets the current set of supported manipulations.</summary>
         <value>The current set of supported manipulations.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The property tries to set a value that is not a valid combination of the <see cref="T:System.Windows.Input.Manipulations.Manipulations2D" />  
-  
- enumeration values.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property tries to set a value that is not a valid combination of the <see cref="T:System.Windows.Input.Manipulations.Manipulations2D" /> enumeration values.</exception>
       </Docs>
     </Member>
   </Members>

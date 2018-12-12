@@ -125,7 +125,11 @@
         <returns>A <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> that contains the validation errors resulting from this operation.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="obj" /> is a null reference (<see langword="Nothing" />).</exception>
+          <paramref name="manager" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="obj" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="ValidateActivityChange">
@@ -161,7 +165,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="action" /> is a null reference (<see langword="Nothing" />).</exception>
+          <paramref name="activity" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="action" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="ValidateProperties">
@@ -191,7 +199,11 @@
         <returns>A <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> that contains the validation errors resulting from this operation.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="obj" /> is a null reference (<see langword="Nothing" />).</exception>
+          <paramref name="manager" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="obj" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="ValidateProperty">

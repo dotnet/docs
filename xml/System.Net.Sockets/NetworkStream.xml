@@ -1182,9 +1182,7 @@ myNetworkStream->Close();
       <Docs>
         <param name="cancellationToken">A cancellation token used to propagate notification that this  operation should be canceled.</param>
         <summary>Flushes data from the stream as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

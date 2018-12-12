@@ -880,7 +880,7 @@
       </Parameters>
       <Docs>
         <param name="moveLocation">Location to move activities to.</param>
-        <param name="activitiesToMove">Collection that contains the activities to move to <c>moveLocation.</c></param>
+        <param name="activitiesToMove">Collection that contains the activities to move to <paramref name="moveLocation" />.</param>
         <summary>Moves activities to a specified location within the design surface.</summary>
         <remarks>To be added.</remarks>
       </Docs>

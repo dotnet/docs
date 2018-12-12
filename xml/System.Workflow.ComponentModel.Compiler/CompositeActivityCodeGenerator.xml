@@ -79,7 +79,11 @@
         <summary>Generates code for the specified <see cref="T:System.Object" /> using the specific <see cref="T:System.Workflow.ComponentModel.Compiler.CodeGenerationManager" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="obj" /> is a null reference (<see langword="Nothing" />).</exception>
+          <paramref name="manager" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="obj" /> is a null reference (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="obj" /> cannot be cast to type <see cref="T:System.Workflow.ComponentModel.CompositeActivity" />.</exception>
       </Docs>

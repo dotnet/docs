@@ -97,7 +97,7 @@
           <paramref name="parameters" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
         <exception cref="T:System.ArgumentException">One of the key values in the <paramref name="parameters" /> collection contains a null reference (<see langword="Nothing" />).  
   
- --or--  
+ -or-  
   
  One of the key values in the <paramref name="parameters" /> collection does not match the default key for <see cref="T:System.Workflow.Runtime.Hosting.DefaultWorkflowSchedulerService" />.</exception>
         <exception cref="T:System.FormatException">One of the parameters cannot be converted to a double-precision floating point number that matches <see cref="P:System.Workflow.Runtime.Hosting.DefaultWorkflowSchedulerService.MaxSimultaneousWorkflows" />.</exception>

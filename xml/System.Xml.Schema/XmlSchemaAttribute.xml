@@ -220,9 +220,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the default value for the attribute.</summary>
-        <value>The default value for the attribute. The default is a null reference.  
-  
- Optional.</value>
+        <value>The default value for the attribute. The default is a null reference. Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -280,9 +278,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the fixed value for the attribute.</summary>
-        <value>The fixed value for the attribute. The default is null.  
-  
- Optional.</value>
+        <value>The fixed value for the attribute. The default is null. Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -338,9 +334,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the form for the attribute.</summary>
-        <value>One of the <see cref="T:System.Xml.Schema.XmlSchemaForm" /> values. The default is the value of the <see cref="P:System.Xml.Schema.XmlSchema.AttributeFormDefault" /> of the schema element containing the attribute.  
-  
- Optional.</value>
+        <value>One of the <see cref="T:System.Xml.Schema.XmlSchemaForm" /> values. The default is the value of the <see cref="P:System.Xml.Schema.XmlSchema.AttributeFormDefault" /> of the schema element containing the attribute. Optional.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -639,9 +633,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets information about how the attribute is used.</summary>
-        <value>One of the following values: None, Prohibited, Optional, or Required. The default is Optional.  
-  
- Optional.</value>
+        <value>One of the following values: None, Prohibited, Optional, or Required. The default is Optional. Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -56,7 +56,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute" /> class, initializing <see cref="P:System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute.XmlNamespace" /> and <see cref="P:System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute.ClrNamespace" /> properties.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="clrNamespace" /> is a null reference (<see langword="Nothing" />).</exception>
+          <paramref name="xmlNamespace" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="clrNamespace" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="AssemblyName">

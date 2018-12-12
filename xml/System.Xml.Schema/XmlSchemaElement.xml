@@ -126,9 +126,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a <see langword="Block" /> derivation.</summary>
-        <value>The attribute used to block a type derivation. Default value is <see langword="XmlSchemaDerivationMethod.None" />.  
-  
- Optional.</value>
+        <value>The attribute used to block a type derivation. Default value is <see langword="XmlSchemaDerivationMethod.None" />. Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -302,9 +300,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the default value of the element if its content is a simple type or content of the element is <see langword="textOnly" />.</summary>
-        <value>The default value for the element. The default is a null reference.  
-  
- Optional.</value>
+        <value>The default value for the element. The default is a null reference. Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -458,9 +454,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the <see langword="Final" /> property to indicate that no further derivations are allowed.</summary>
-        <value>The <see langword="Final" /> property. The default is <see langword="XmlSchemaDerivationMethod.None" />.  
-  
- Optional.</value>
+        <value>The <see langword="Final" /> property. The default is <see langword="XmlSchemaDerivationMethod.None" />. Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -581,9 +575,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the fixed value.</summary>
-        <value>The fixed value that is predetermined and unchangeable. The default is a null reference.  
-  
- Optional.</value>
+        <value>The fixed value that is predetermined and unchangeable. The default is a null reference. Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -637,9 +629,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the form for the element.</summary>
-        <value>The form for the element. The default is the <see cref="P:System.Xml.Schema.XmlSchema.ElementFormDefault" /> value.  
-  
- Optional.</value>
+        <value>The form for the element. The default is the <see cref="P:System.Xml.Schema.XmlSchema.ElementFormDefault" /> value. Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -697,9 +687,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets information to indicate if the element can be used in an instance document.</summary>
-        <value>If <see langword="true" />, the element cannot appear in the instance document. The default is <see langword="false" />.  
-  
- Optional.</value>
+        <value>If <see langword="true" />, the element cannot appear in the instance document. The default is <see langword="false" />. Optional.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -743,9 +731,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets information that indicates if <see langword="xsi:nil" /> can occur in the instance data. Indicates if an explicit nil value can be assigned to the element.</summary>
-        <value>If nillable is <see langword="true" />, this enables an instance of the element to have the <see langword="nil" /> attribute set to <see langword="true" />. The <see langword="nil" /> attribute is defined as part of the XML Schema namespace for instances. The default is <see langword="false" />.  
-  
- Optional.</value>
+        <value>If nillable is <see langword="true" />, this enables an instance of the element to have the <see langword="nil" /> attribute set to <see langword="true" />. The <see langword="nil" /> attribute is defined as part of the XML Schema namespace for instances. The default is <see langword="false" />. Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1040,9 +1026,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the name of an element that is being substituted by this element.</summary>
-        <value>The qualified name of an element that is being substituted by this element.  
-  
- Optional.</value>
+        <value>The qualified name of an element that is being substituted by this element. Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -111,9 +111,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the string id.</summary>
-        <value>The string id. The default is <see langword="String.Empty" />.  
-  
- Optional.</value>
+        <value>The string id. The default is <see langword="String.Empty" />. Optional.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,9 +199,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Uniform Resource Identifier (URI) location for the schema, which tells the schema processor where the schema physically resides.</summary>
-        <value>The URI location for the schema.  
-  
- Optional for imported schemas.</value>
+        <value>The URI location for the schema. Optional for imported schemas.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

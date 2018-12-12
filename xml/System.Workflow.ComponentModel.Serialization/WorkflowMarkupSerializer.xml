@@ -166,7 +166,11 @@
           <see langword="true" /> if the specified object can be serialized to a string; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="value" /> is a null reference (<see langword="Nothing" />).</exception>
+          <paramref name="serializationManager" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="value" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="ClearChildren">
@@ -202,7 +206,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="obj" /> is a null reference (<see langword="Nothing" />).</exception>
+          <paramref name="serializationManager" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="obj" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="ClrNamespacesProperty">
@@ -268,7 +276,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="type" /> is a null reference (<see langword="Nothing" />).</exception>
+          <paramref name="serializationManager" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="type" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="Deserialize">
@@ -347,7 +359,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="reader" /> is a null reference (<see langword="Nothing" />).</exception>
+          <paramref name="serializationManager" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="reader" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="DeserializeFromString">
@@ -755,7 +771,11 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="obj" /> is a null reference (<see langword="Nothing" />).</exception>
+          <paramref name="writer" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="obj" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -795,7 +815,14 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="obj" /> is a null reference (<see langword="Nothing" />).</exception>
+          <paramref name="serializationManager" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+-or-
+
+<paramref name="writer" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="obj" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="SerializeToString">

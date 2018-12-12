@@ -104,13 +104,13 @@
         <Parameter Name="returnType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="returnType">The return type that this  [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] reports.</param>
+        <param name="returnType">The return type that this attribute reports.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.MarkupExtensionReturnTypeAttribute" /> class using the provided <see cref="T:System.Type" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Markup.MarkupExtension> derived custom class should apply this [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] to indicate the type-safe return type that is returned by its <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A> implementation.  
+ A <xref:System.Windows.Markup.MarkupExtension> derived custom class should apply this attribute to indicate the type-safe return type that is returned by its <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A> implementation.  
   
  ]]></format>
         </remarks>

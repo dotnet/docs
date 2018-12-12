@@ -77,7 +77,11 @@
         <returns>An instance of the specified <see cref="T:System.Type" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="type" /> is a null reference (<see langword="Nothing" />).</exception>
+          <paramref name="serializationManager" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="type" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="GetProperties">

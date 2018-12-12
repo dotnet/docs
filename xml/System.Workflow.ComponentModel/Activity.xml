@@ -947,7 +947,11 @@ public class SendEmail : Activity
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="exception" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+          <paramref name="executionContext" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="exception" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -1180,7 +1184,12 @@ public class SendEmail : Activity
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="formatter" /> is a null reference (<see langword="Nothing" />).</exception>
+          <paramref name="stream" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+
+<paramref name="formatter" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1586,7 +1595,11 @@ public class SendEmail : Activity
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="formatter" /> is a null reference (<see langword="Nothing" />).</exception>
+          <paramref name="stream" /> is a null reference (<see langword="Nothing" /> in Visual Basic).
+
+-or-
+    
+<paramref name="formatter" /> is a null reference (<see langword="Nothing" />).</exception>
         <exception cref="T:System.InvalidOperationException">This instance is in design mode.</exception>
       </Docs>
     </Member>

@@ -250,7 +250,7 @@
         <param name="stream">Stream to which the canonical stream should be written.</param>
         <param name="includeComments">The value indicates if comments written should be canonicalized as well.</param>
         <param name="inclusivePrefixes">Set of prefixes that needs to be included into the canonical stream. The prefixes are defined at the first element that is written to the canonical stream.</param>
-        <summary>Indicates the start of canonicalization. Any write operation following this will canonicalize the data          and will write it to the given stream.</summary>
+        <summary>Indicates the start of canonicalization. Any write operation following this will canonicalize the data and will write it to the given stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

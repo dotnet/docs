@@ -114,8 +114,18 @@
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbQuantifierExpression" /> that determines whether the given predicate holds for all elements of the input set.</summary>
         <returns>A new DbQuantifierExpression that represents the All operation.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The expression produced by <paramref name="predicate" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">The expression produced by <paramref name="Predicate" /> does not have a Boolean result type.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> or <paramref name="predicate" /> is null.
+
+-or-
+
+The expression produced by <paramref name="predicate" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="source" />  does not have a collection result type.
+
+-or-
+
+The expression produced by <paramref name="Predicate" /> does not have a Boolean result type.</exception>
       </Docs>
     </Member>
     <Member MemberName="All">
@@ -243,8 +253,18 @@
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbQuantifierExpression" /> that determines whether the given predicate holds for any element of the input set.</summary>
         <returns>A new DbQuantifierExpression that represents the Any operation.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The expression produced by <paramref name="predicate" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">The expression produced by <paramref name="predicate" /> does not have a Boolean result type.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> or <paramref name="predicate" /> is null.
+
+-or-
+
+The expression produced by <paramref name="predicate" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="source" /> does not have a collection result type.
+
+-or-
+        
+The expression produced by <paramref name="predicate" /> does not have a Boolean result type.</exception>
       </Docs>
     </Member>
     <Member MemberName="Any">
@@ -631,9 +651,13 @@
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbRefExpression" /> that encodes a reference to a specific entity of a given type based on key values.</summary>
         <returns>A new DbRefExpression that references the element with the specified key values in the given entity set.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="entitySet" /> or <paramref name="entityType" /> is null, or <paramref name="keyValues" /> is null or contains null.</exception>
-        <exception cref="T:System.ArgumentException">The count of <paramref name="keyValues" /> does not match the count of key members declared by the <paramref name="entitySet" />'s element type, or <paramref name="keyValues" /> contains an expression with a result type that is not compatible with the type of the corresponding key member.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="entitySet" /> or <paramref name="entityType" /> is null, or <paramref name="keyValues" /> is null or contains null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="entityType" /> is not from the same type hierarchy (a subtype, supertype, or the same type) as <paramref name="entitySet" />'s element type.
+
+-or-
+
+The count of <paramref name="keyValues" /> does not match the count of key members declared by the <paramref name="entitySet" />'s element type, or <paramref name="keyValues" /> contains an expression with a result type that is not compatible with the type of the corresponding key member.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateRef">
@@ -670,7 +694,12 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="entitySet" /> or <paramref name="entityType" /> is null, or <paramref name="keyValues" /> is null or contains null.</exception>
-        <exception cref="T:System.ArgumentException">The count of <paramref name="keyValues" /> does not match the count of key members declared by the <paramref name="entitySet" />'s element type, or <paramref name="keyValues" /> contains an expression with a result type that is not compatible with the type of the corresponding key member.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="entityType" /> is not from the same type hierarchy (a subtype, supertype, or the same type) as <paramref name="entitySet" />'s element type.
+
+-or-
+
+The count of <paramref name="keyValues" /> does not match the count of key members declared by the <paramref name="entitySet" />'s element type, or <paramref name="keyValues" /> contains an expression with a result type that is not compatible with the type of the corresponding key member.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="CrossApply">
@@ -707,8 +736,18 @@
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbApplyExpression" /> that evaluates the given <paramref name="apply" /> expression once for each element of a given input set, producing a collection of rows with corresponding input and apply columns. Rows for which <paramref name="apply" /> evaluates to an empty set are not included.</summary>
         <returns>An new DbApplyExpression with the specified input and apply bindings and an <see cref="T:System.Data.Common.CommandTrees.DbExpressionKind" /> of CrossApply.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The result of <paramref name="apply" /> contains a name or expression that is null.</exception>
-        <exception cref="T:System.ArgumentException">The result of <paramref name="apply" /> contains a name or expression that is not valid in an expression binding.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> or <paramref name="apply" /> is null.
+
+-or-
+
+The result of <paramref name="apply" /> contains a name or expression that is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="source" /> does not have a collection result type.
+
+-or-
+        
+The result of <paramref name="apply" /> contains a name or expression that is not valid in an expression binding.</exception>
       </Docs>
     </Member>
     <Member MemberName="CrossApply">
@@ -1063,8 +1102,18 @@
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbJoinExpression" /> that joins the sets specified by the left and right expressions, on the specified join condition, using FullOuterJoin as the <see cref="T:System.Data.Common.CommandTrees.DbExpressionKind" />.</summary>
         <returns>A new DbJoinExpression, with an <see cref="T:System.Data.Common.CommandTrees.DbExpressionKind" /> of FullOuterJoin, that represents the full outer join operation applied to the left and right input sets under the given join condition.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The expression produced by <paramref name="joinCondition" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">The expression produced by <paramref name="joinCondition" /> does not have a Boolean result type.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="left" />, <paramref name="right" /> or <paramref name="joinCondition" /> is null.
+
+-or-
+
+The expression produced by <paramref name="joinCondition" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="left" /> or <paramref name="right" /> does not have a collection result type.
+
+-or-
+        
+The expression produced by <paramref name="joinCondition" /> does not have a Boolean result type.</exception>
       </Docs>
     </Member>
     <Member MemberName="FullOuterJoin">
@@ -1354,8 +1403,18 @@
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbJoinExpression" /> that joins the sets specified by the left and right expressions, on the specified join condition, using InnerJoin as the <see cref="T:System.Data.Common.CommandTrees.DbExpressionKind" />.</summary>
         <returns>A new DbJoinExpression, with an <see cref="T:System.Data.Common.CommandTrees.DbExpressionKind" /> of InnerJoin, that represents the inner join operation applied to the left and right input sets under the given join condition.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The expression produced by <paramref name="joinCondition" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">The expression produced by <paramref name="joinCondition" /> does not have a Boolean result type.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="left" />,  <paramref name="right" /> or <paramref name="joinCondition" /> is null.
+
+-or-
+
+The expression produced by <paramref name="joinCondition" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="left" /> or <paramref name="right" /> does not have a collection result type.
+
+-or-
+
+The expression produced by <paramref name="joinCondition" /> does not have a Boolean result type.</exception>
       </Docs>
     </Member>
     <Member MemberName="InnerJoin">
@@ -1725,8 +1784,18 @@
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbJoinExpression" /> that joins the sets specified by the outer and inner expressions, on an equality condition between the specified outer and inner keys, using InnerJoin as the <see cref="T:System.Data.Common.CommandTrees.DbExpressionKind" />.</summary>
         <returns>A new DbJoinExpression, with an <see cref="T:System.Data.Common.CommandTrees.DbExpressionKind" /> of InnerJoin, that represents the inner join operation applied to the left and right input sets under a join condition that compares the outer and inner key values for equality.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The expression produced by <paramref name="outerKey" /> or <paramref name="innerKey" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">The expressions produced by <paramref name="outerKey" /> and <paramref name="innerKey" /> are not comparable for equality.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="outer" />, <paramref name="inner" />, <paramref name="outerKey" /> or <paramref name="innerKey" /> is null.
+
+-or-
+        
+The expression produced by <paramref name="outerKey" /> or <paramref name="innerKey" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="outer" /> or <paramref name="inner" /> does not have a collection result type.
+
+-or-
+
+The expressions produced by <paramref name="outerKey" /> and <paramref name="innerKey" /> are not comparable for equality.</exception>
       </Docs>
     </Member>
     <Member MemberName="Join&lt;TSelector&gt;">
@@ -1783,8 +1852,26 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The result of <paramref name="selector" /> is null after conversion to DbExpression.</exception>
-        <exception cref="T:System.ArgumentException">The result of <paramref name="Selector" /> is not compatible with SelectMany.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="outer" />,  <paramref name="inner" />,  <paramref name="outerKey" />,  <paramref name="innerKey" /> or <paramref name="selector" /> is null.
+
+-or-
+
+The expression produced by <paramref name="outerKey" /> or <paramref name="innerKey" /> is null.
+
+-or-
+
+The result of <paramref name="selector" /> is null after conversion to DbExpression.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="outer" /> or <paramref name="inner" /> does not have a collection result type.
+
+-or-
+
+The expressions produced by <paramref name="outerKey" /> and <paramref name="innerKey" /> is not comparable for equality.
+
+-or-
+        
+The result of <paramref name="selector" /> is not compatible with SelectMany.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="Lambda">
@@ -1900,8 +1987,18 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbJoinExpression" /> that joins the sets specified by the left and right expressions, on the specified join condition, using LeftOuterJoin as the <see cref="T:System.Data.Common.CommandTrees.DbExpressionKind" />.</summary>
         <returns>A new DbJoinExpression, with an <see cref="T:System.Data.Common.CommandTrees.DbExpressionKind" /> of LeftOuterJoin, that represents the left outer join operation applied to the left and right input sets under the given join condition.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The expression produced by <paramref name="joinCondition" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">The expression produced by <paramref name="joinCondition" /> does not have a Boolean result type.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="left" />,  <paramref name="right" /> or <paramref name="joinCondition" /> is null.
+
+-or-
+
+The expression produced by <paramref name="joinCondition" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="left" /> or <paramref name="right" /> does not have a collection result type.
+
+-or-
+
+The expression produced by <paramref name="joinCondition" /> does not have a Boolean result type.</exception>
       </Docs>
     </Member>
     <Member MemberName="LeftOuterJoin">
@@ -2469,7 +2566,7 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
         <returns>A new DbNewInstanceExpression with the specified collection type and arguments.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="elements" /> is null, or contains null..</exception>
+          <paramref name="elements" /> is null, or contains null.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="elements" /> is empty or contains expressions for which no common result type exists.</exception>
       </Docs>
@@ -2759,8 +2856,18 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" /> that sorts the given input set by the specified sort key, with ascending sort order and default collation.</summary>
         <returns>A new DbSortExpression that represents the order-by operation.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The expression produced by <paramref name="sortKey" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">The expression produced by <paramref name="sortKey" /> does not have an order-comparable result type.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> or <paramref name="sortKey" /> is null.
+
+-or-
+
+The expression produced by <paramref name="sortKey" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="source" /> does not have a collection result type.
+
+-or-
+
+The expression produced by <paramref name="sortKey" /> does not have an order-comparable result type.</exception>
       </Docs>
     </Member>
     <Member MemberName="OrderBy">
@@ -2790,8 +2897,18 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" /> that sorts the given input set by the specified sort key, with ascending sort order and the specified collation.</summary>
         <returns>A new DbSortExpression that represents the order-by operation.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The expression produced by <paramref name="sortKey" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">The expression produced by <paramref name="sortKey" /> does not have an order-comparable string result type.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" />,  <paramref name="sortKey" /> or <paramref name="collation" /> is null.
+
+-or-
+        
+The expression produced by <paramref name="sortKey" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="source" /> does not have a collection result type.
+
+-or-
+
+The expression produced by <paramref name="sortKey" /> does not have an order-comparable string result type.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="collation" /> is empty or contains only space characters.</exception>
       </Docs>
@@ -2830,8 +2947,18 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" /> that sorts the given input set by the specified sort key, with descending sort order and default collation.</summary>
         <returns>A new DbSortExpression that represents the order-by operation.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The expression produced by <paramref name="sortKey" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">The expression produced by <paramref name="sortKey" /> does not have an order-comparable result type.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> or <paramref name="sortKey" /> is null.
+
+-or-
+
+The expression produced by <paramref name="sortKey" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="source" /> does not have a collection result type.
+
+-or-
+
+The expression produced by <paramref name="sortKey" /> does not have an order-comparable result type.</exception>
       </Docs>
     </Member>
     <Member MemberName="OrderByDescending">
@@ -2861,8 +2988,18 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" /> that sorts the given input set by the specified sort key, with descending sort order and the specified collation.</summary>
         <returns>A new DbSortExpression that represents the order-by operation.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The expression produced by <paramref name="sortKey" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">The expression produced by <paramref name="sortKey" /> does not have an order-comparable string result type.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" />,  <paramref name="sortKey" /> or <paramref name="collation" /> is null.
+
+-or-
+
+The expression produced by <paramref name="sortKey" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="source" /> does not have a collection result type.
+
+-or-
+
+The expression produced by <paramref name="sortKey" /> does not have an order-comparable string result type.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="collation" /> is empty or contains only space characters.</exception>
       </Docs>
@@ -2901,8 +3038,18 @@ outer.Join(inner, o => o.Property("ID"), i => i.Property("ID"), (o, i) => new { 
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbApplyExpression" /> that evaluates the given <paramref name="apply" /> expression once for each element of a given input set, producing a collection of rows with corresponding input and apply columns. Rows for which <paramref name="apply" /> evaluates to an empty set have an apply column value of <see langword="null" />.</summary>
         <returns>An new DbApplyExpression with the specified input and apply bindings and an <see cref="T:System.Data.Common.CommandTrees.DbExpressionKind" /> of OuterApply.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The result of <paramref name="apply" /> contains a name or expression that is null.</exception>
-        <exception cref="T:System.ArgumentException">The result of <paramref name="apply" /> contains a name or expression that is not valid in an expression binding.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> or <paramref name="apply" /> is null.
+
+-or-
+        
+The result of <paramref name="apply" /> contains a name or expression that is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Source" /> does not have a collection result type.
+
+-or-
+
+The result of <paramref name="apply" /> contains a name or expression that is not valid in an expression binding.</exception>
       </Docs>
     </Member>
     <Member MemberName="OuterApply">
@@ -3305,7 +3452,12 @@ source.Select(x => new { Name = x.Property("Name") })
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The result of <paramref name="projection" /> is null.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> or <paramref name="projection" /> is null.
+
+-or-
+
+The result of <paramref name="projection" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="SelectMany">
@@ -3333,8 +3485,18 @@ source.Select(x => new { Name = x.Property("Name") })
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbApplyExpression" /> that evaluates the given <paramref name="apply" /> expression once for each element of a given input set, producing a collection of rows with corresponding input and apply columns. Rows for which <paramref name="apply" /> evaluates to an empty set are not included. A <see cref="T:System.Data.Common.CommandTrees.DbProjectExpression" /> is then created that selects the <paramref name="apply" /> column from each row, producing the overall collection of <paramref name="apply" /> results.</summary>
         <returns>An new DbProjectExpression that selects the apply column from a new DbApplyExpression with the specified input and apply bindings and an <see cref="T:System.Data.Common.CommandTrees.DbExpressionKind" /> of CrossApply.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The expression produced by <paramref name="apply" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">The expression produced by <paramref name="apply" /> does not have a collection type.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> or <paramref name="apply" /> is null.
+
+-or-
+
+The expression produced by <paramref name="apply" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="source" />  does not have a collection result type.
+
+-or-
+
+The expression produced by <paramref name="apply" /> does not have a collection type.</exception>
       </Docs>
     </Member>
     <Member MemberName="SelectMany&lt;TSelector&gt;">
@@ -3364,7 +3526,7 @@ source.Select(x => new { Name = x.Property("Name") })
         <typeparam name="TSelector">The method result type of <paramref name="selector" />.</typeparam>
         <param name="source">A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the input set.</param>
         <param name="apply">A method that represents the logic to evaluate once for each member of the input set.</param>
-        <param name="selector">A method that specifies how an element of the result set should be derived given an element of the input and apply sets. This method must produce an instance of a type that is compatible with SelectMany and can be resolved into a <see cref="T:System.Data.Common.CommandTrees.DbExpression" />. Compatibility requirements for <c>TSelector</c> are described in remarks.</param>
+        <param name="selector">A method that specifies how an element of the result set should be derived given an element of the input and apply sets. This method must produce an instance of a type that is compatible with SelectMany and can be resolved into a <see cref="T:System.Data.Common.CommandTrees.DbExpression" />. Compatibility requirements for <typeparamref name="TSelector" /> are described in remarks.</param>
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbApplyExpression" /> that evaluates the given <paramref name="apply" /> expression once for each element of a given input set, producing a collection of rows with corresponding input and apply columns. Rows for which <paramref name="apply" /> evaluates to an empty set are not included. A <see cref="T:System.Data.Common.CommandTrees.DbProjectExpression" /> is then created that selects the specified <paramref name="selector" /> over each row, producing the overall collection of results.</summary>
         <returns>An new DbProjectExpression that selects the result of the given selector from a new DbApplyExpression with the specified input and apply bindings and an <see cref="T:System.Data.Common.CommandTrees.DbExpressionKind" /> of CrossApply.</returns>
         <remarks>
@@ -3387,8 +3549,22 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The result of <paramref name="selector" /> is null on conversion to DbExpression.</exception>
-        <exception cref="T:System.ArgumentException">The expression produced by <paramref name="apply" /> does not have a collection type. does not have a collection type.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" />,  <paramref name="apply" /> or <paramref name="selector" /> is null.
+
+-or-
+
+The expression produced by <paramref name="apply" /> is null.
+
+-or-
+
+The result of <paramref name="selector" /> is null on conversion to DbExpression.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="source" /> does not have a collection result type.
+
+-or-
+        
+The expression produced by <paramref name="apply" /> does not have a collection type. does not have a collection type.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="Skip">
@@ -3560,9 +3736,18 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" /> that with a sort order that includes the sort order of the given order input set together with the specified sort key in ascending sort order and  with default collation.</summary>
         <returns>A new DbSortExpression that represents the new overall order-by operation.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The expression produced by <paramref name="sortKey" /> is null.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> or <paramref name="sortKey" /> is null.
+
+-or-
+
+The expression produced by <paramref name="sortKey" /> is null.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="sortKey" /> does not have an order-comparable result type.</exception>
+          <paramref name="source" /> does not have a collection result type.
+
+-or-
+
+<paramref name="sortKey" /> does not have an order-comparable result type.</exception>
       </Docs>
     </Member>
     <Member MemberName="ThenBy">
@@ -3592,8 +3777,18 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" /> that with a sort order that includes the sort order of the given order input set together with the specified sort key in ascending sort order and  with the specified collation.</summary>
         <returns>A new DbSortExpression that represents the new overall order-by operation.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The expression produced by <paramref name="sortKey" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">The expression produced by <paramref name="sortKey" /> does not have an order-comparable string result type.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" />,  <paramref name="sortKey" /> or <paramref name="collation" /> is null.
+
+-or-
+        
+The expression produced by <paramref name="sortKey" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="source" /> does not have a collection result type.
+
+-or-
+
+The expression produced by <paramref name="sortKey" /> does not have an order-comparable string result type.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="collation" /> is empty or contains only space characters.</exception>
       </Docs>
@@ -3632,8 +3827,18 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" /> that with a sort order that includes the sort order of the given order input set together with the specified sort key in descending sort order and  with default collation.</summary>
         <returns>A new DbSortExpression that represents the new overall order-by operation.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The expression produced by <paramref name="sortKey" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">The expression produced by <paramref name="sortKey" /> does not have an order-comparable result type.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> or <paramref name="sortKey" /> is null.
+
+-or-
+
+The expression produced by <paramref name="sortKey" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="source" /> does not have a collection result type.
+
+-or-
+        
+The expression produced by <paramref name="sortKey" /> does not have an order-comparable result type.</exception>
       </Docs>
     </Member>
     <Member MemberName="ThenByDescending">
@@ -3663,8 +3868,18 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" /> that with a sort order that includes the sort order of the given order input set together with the specified sort key in descending sort order and  with the specified collation.</summary>
         <returns>A new DbSortExpression that represents the new overall order-by operation.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The expression produced by <paramref name="sortKey" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">The expression produced by <paramref name="sortKey" /> does not have an order-comparable string result type.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" />,  <paramref name="sortKey" /> or <paramref name="collation" /> is null.
+
+-or-
+
+The expression produced by <paramref name="sortKey" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="source" /> does not have a collection result type.
+
+-or-
+        
+The expression produced by <paramref name="sortKey" /> does not have an order-comparable string result type.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="collation" /> is empty or contains only space characters.</exception>
       </Docs>
@@ -4010,7 +4225,12 @@ source.SelectMany(x => x.Property("RelatedCollection"), (source, apply) => new {
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbFilterExpression" /> that filters the elements in the given input set using the specified predicate.</summary>
         <returns>A new DbQuantifierExpression that represents the Any operation.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The expression produced by <paramref name="predicate" /> is null.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> or <paramref name="predicate" /> is null.
+
+-or-
+        
+The expression produced by <paramref name="predicate" /> is null.</exception>
         <exception cref="T:System.ArgumentException">The expression produced by <paramref name="predicate" /> does not have a Boolean result type.</exception>
       </Docs>
     </Member>

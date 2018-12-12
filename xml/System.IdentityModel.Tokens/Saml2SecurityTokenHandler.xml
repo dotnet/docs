@@ -734,7 +734,7 @@
       </Parameters>
       <Docs>
         <param name="normalizedAuthenticationType">The normalized value.</param>
-        <summary>Returns the AuthenticationContextClasses value matching a normalized value for a SAML authentication context class reference.</summary>
+        <summary>Returns the Saml2 AuthenticationContext matching a normalized value.</summary>
         <returns>A string that represents the denormalized authentication type used to obtain the token.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1011,7 +1011,7 @@
         <Parameter Name="saml2AuthenticationContextClassReference" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="saml2AuthenticationContextClassReference">One of the System.IdentityModel.Tokens.Saml2Constants.AuthenticationContextClasses constants.</param>
+        <param name="saml2AuthenticationContextClassReference">A string representing one of the System.IdentityModel.Tokens.Saml2Constants.AuthenticationContextClasses constants.</param>
         <summary>Returns the normalized value matching a SAML authentication context class reference.</summary>
         <returns>A string that contains the normalized value.</returns>
         <remarks>To be added.</remarks>

@@ -1639,11 +1639,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <typeparam name="TElement">To be added.</typeparam>
+        <typeparam name="TElement">The type of the returned data.</typeparam>
         <param name="commandText">The command to execute, in the native language of the data source.</param>
         <param name="parameters">An array of parameters to pass to the command.</param>
         <summary>Executes a query directly against the data source that returns a sequence of typed results.</summary>
-        <returns>An enumeration of objects of type <paramref name="TResult" />.</returns>
+        <returns>An enumeration of objects of type <paramref name="TElement" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1700,9 +1700,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <typeparam name="TEntity">To be added.</typeparam>
+        <typeparam name="TEntity">The entity type of the returned data.</typeparam>
         <param name="commandText">The command to execute, in the native language of the data source.</param>
-        <param name="entitySetName">The entity set of the <c>TResult</c> type. If an entity set name is not provided, the results are not going to be tracked.</param>
+        <param name="entitySetName">The entity set of the <typeparamref name="TEntity" /> type. If an entity set name is not provided, the results are not going to be tracked.</param>
         <param name="mergeOption">The <see cref="T:System.Data.Objects.MergeOption" /> to use when executing the query. The default is <see cref="F:System.Data.Objects.MergeOption.AppendOnly" />.</param>
         <param name="parameters">An array of parameters to pass to the command.</param>
         <summary>Executes a query directly against the data source and returns a sequence of typed results. Specify the entity set and the merge option so that query results can be tracked as entities.</summary>
@@ -1971,7 +1971,7 @@
         <Parameter Name="selector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TEntity">To be added.</typeparam>
+        <typeparam name="TEntity">The type of the supplied object.</typeparam>
         <param name="entity">The source object for which related objects are to be loaded.</param>
         <param name="selector">A LINQ expression that defines the related objects to be loaded.</param>
         <summary>Explicitly loads an object that is related to the supplied object by the specified LINQ query and by using the default merge option.</summary>
@@ -2023,7 +2023,7 @@
         <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" />
       </Parameters>
       <Docs>
-        <typeparam name="TEntity">To be added.</typeparam>
+        <typeparam name="TEntity">The type of the supplied object.</typeparam>
         <param name="entity">The source object for which related objects are to be loaded.</param>
         <param name="selector">A LINQ expression that defines the related objects to be loaded.</param>
         <param name="mergeOption">The <see cref="T:System.Data.Objects.MergeOption" /> value to use when you load the related objects.</param>
@@ -2503,7 +2503,7 @@
         <Parameter Name="reader" Type="System.Data.Common.DbDataReader" />
       </Parameters>
       <Docs>
-        <typeparam name="TElement">To be added.</typeparam>
+        <typeparam name="TElement">The entity type of the data in the <see cref="T:System.Data.Common.DbDataReader" />.</typeparam>
         <param name="reader">The <see cref="T:System.Data.Common.DbDataReader" /> that contains entity data to translate into entity objects.</param>
         <summary>Translates a <see cref="T:System.Data.Common.DbDataReader" /> that contains rows of entity data to objects of the requested entity type.</summary>
         <returns>An enumeration of objects of type <paramref name="TResult" />.</returns>
@@ -2549,9 +2549,9 @@
         <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" />
       </Parameters>
       <Docs>
-        <typeparam name="TEntity">To be added.</typeparam>
+        <typeparam name="TEntity">The entity type of the data in the <see cref="T:System.Data.Common.DbDataReader" />.</typeparam>
         <param name="reader">The <see cref="T:System.Data.Common.DbDataReader" /> that contains entity data to translate into entity objects.</param>
-        <param name="entitySetName">The entity set of the <c>TResult</c> type.</param>
+        <param name="entitySetName">The entity set of the <typeparamref name="TEntity" /> type.</param>
         <param name="mergeOption">The <see cref="T:System.Data.Objects.MergeOption" /> to use when translated objects are added to the object context. The default is <see cref="F:System.Data.Objects.MergeOption.AppendOnly" />.</param>
         <summary>Translates a <see cref="T:System.Data.Common.DbDataReader" /> that contains rows of entity data to objects of the requested entity type, in a specific entity set, and with the specified merge option.</summary>
         <returns>An enumeration of objects of type <paramref name="TResult" />.</returns>

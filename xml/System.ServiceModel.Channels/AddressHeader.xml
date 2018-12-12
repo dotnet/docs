@@ -467,9 +467,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">A class of type <c>T</c> with its fields and properties set to the values supplied by the current address header object.</typeparam>
+        <typeparam name="T">A class of type <typeparamref name="T" /> with its fields and properties set to the values supplied by the current address header object.</typeparam>
         <summary>Deserializes the information item from the current address header to an object of a specified type.</summary>
-        <returns>An instance of a class of type <paramref name="T" /> with its fields and properties set to the values supplied by the current address header object.</returns>
+        <returns>An instance of a class of type <typeparamref name="T" /> with its fields and properties set to the values supplied by the current address header object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -522,10 +522,10 @@
         <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
       </Parameters>
       <Docs>
-        <typeparam name="T">A class of type <c>T</c> with its fields and properties set to the values supplied by the current address header object.</typeparam>
+        <typeparam name="T">A class of type <typeparamref name="T" /> with its fields and properties set to the values supplied by the current address header object.</typeparam>
         <param name="serializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> used to deserialize the information item from the current address header object.</param>
         <summary>Deserializes the information item from the current address header to an object of a specified type that uses a specified formatter to serialize this information.</summary>
-        <returns>An instance of a class of type <paramref name="T" /> with its fields and properties set to the values supplied by the current address header object.</returns>
+        <returns>An instance of a class of type <typeparamref name="T" /> with its fields and properties set to the values supplied by the current address header object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

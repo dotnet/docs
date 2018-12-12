@@ -69,7 +69,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ArgumentException">This exception will occur for any of the following reasons.  
   
--   The target in the <paramref name="context" /> parameter is not a forest,  configuration set, domain controller, or an AD LDS server.  
+-   The target in the <paramref name="context" /> parameter is not a forest, configuration set, domain controller, or an AD LDS server.  
   
 -   <paramref name="siteLinkName" /> is an empty string.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -352,7 +352,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ArgumentException">This exception will occur for any one of the following reasons:  
   
--   The target in the <paramref name="context" /> parameter is not a forest,  configuration set, domain controller, or an AD LDS server.  
+-   The target in the <paramref name="context" /> parameter is not a forest, configuration set, domain controller, or an AD LDS server.  
   
 -   <paramref name="siteLinkName" /> is an empty string.</exception>
         <exception cref="T:System.ArgumentNullException">

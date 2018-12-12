@@ -637,7 +637,7 @@
       <Docs>
         <typeparam name="T">The type that represents the metadata element that is being read; for example, <see cref="T:System.IdentityModel.Metadata.ContactPerson" />.</typeparam>
         <param name="reader">The XML reader.</param>
-        <param name="target">An object of type <c>T</c>.</param>
+        <param name="target">An object of type <typeparamref name="T" />.</param>
         <summary>Extensibility point for reading custom attributes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -667,7 +667,7 @@
       <Docs>
         <typeparam name="T">The type that represents the metadata element that is being read; for example, <see cref="T:System.IdentityModel.Metadata.ContactPerson" />.</typeparam>
         <param name="reader">The XML reader.</param>
-        <param name="target">An object of type <c>T</c>.</param>
+        <param name="target">An object of type <typeparamref name="T" />.</param>
         <summary>Extensibility point for reading custom elements. By default, returns <see langword="false" />.</summary>
         <returns>
           <see langword="true" /> if an element of type <paramref name="T" /> is read; otherwise, <see langword="false" />.</returns>
@@ -1663,7 +1663,7 @@
       <Docs>
         <typeparam name="T">The type that represents the element whose attribute is being written. For example <see cref="T:System.IdentityModel.Metadata.ContactPerson" />.</typeparam>
         <param name="writer">The XML writer.</param>
-        <param name="source">The source element of type <c>T</c>.</param>
+        <param name="source">The source element of type <typeparamref name="T" />.</param>
         <summary>Extensible point to write custom attributes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1693,7 +1693,7 @@
       <Docs>
         <typeparam name="T">The type that represents the element that is being written.</typeparam>
         <param name="writer">The XML writer.</param>
-        <param name="source">The source element of type <c>T</c>.</param>
+        <param name="source">The source element of type <typeparamref name="T" />.</param>
         <summary>Extensible point to write custom elements.</summary>
         <remarks>To be added.</remarks>
       </Docs>

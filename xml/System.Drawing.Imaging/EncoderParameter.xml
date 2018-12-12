@@ -528,7 +528,7 @@
         <param name="encoder">An <see cref="T:System.Drawing.Imaging.Encoder" /> object that encapsulates the globally unique identifier of the parameter category.</param>
         <param name="denominator">A 32-bit integer that represents the denominator of a fraction. Must be nonnegative.</param>
         <param name="numerator">A 32-bit integer that represents the numerator of a fraction. Must be nonnegative.</param>
-        <param name="demoninator">To be added.</param>
+        <param name="demoninator">A 32-bit integer that represents the denominator of a fraction. Must be nonnegative.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and a pair of 32-bit integers. The pair of integers represents a fraction, the first integer being the numerator, and the second integer being the denominator. Sets the <see cref="P:System.Drawing.Imaging.EncoderParameter.ValueType" /> property to <see cref="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeRational" />, and sets the <see cref="P:System.Drawing.Imaging.EncoderParameter.NumberOfValues" /> property to 1.</summary>
         <remarks>To be added.</remarks>
       </Docs>

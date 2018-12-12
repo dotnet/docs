@@ -5847,7 +5847,7 @@
       <Docs>
         <param name="number">A numeric expression.</param>
         <param name="length">The total length of the string. This includes decimal point, sign, digits, and spaces. The default is 10.</param>
-        <param name="decimalArg">The number of places to the right of the decimal point. <c>decimal</c> must be less than or equal to 16. If <c>decimal</c> is more than 16 then the result is truncated to sixteen places to the right of the decimal point.</param>
+        <param name="decimalArg">The number of places to the right of the decimal point. <paramref name="decimalArg" /> must be less than or equal to 16. If <paramref name="decimalArg" /> is more than 16 then the result is truncated to sixteen places to the right of the decimal point.</param>
         <summary>Returns character data converted from numeric data.</summary>
         <returns>The input expression converted to a string.</returns>
         <remarks>
@@ -5890,7 +5890,7 @@
       <Docs>
         <param name="number">A numeric expression.</param>
         <param name="length">The total length of the string. This includes decimal point, sign, digits, and spaces. The default is 10.</param>
-        <param name="decimalArg">The number of places to the right of the decimal point. <c>decimal</c> must be less than or equal to 16. If <c>decimal</c> is more than 16 then the result is truncated to sixteen places to the right of the decimal point.</param>
+        <param name="decimalArg">The number of places to the right of the decimal point. <paramref name="decimalArg" /> must be less than or equal to 16. If <paramref name="decimalArg" /> is more than 16 then the result is truncated to sixteen places to the right of the decimal point.</param>
         <summary>Returns character data converted from numeric data.</summary>
         <returns>The numeric input expression converted to a string.</returns>
         <remarks>
@@ -5933,7 +5933,7 @@
       </Parameters>
       <Docs>
         <param name="stringInput">The target string.</param>
-        <param name="start">The character position in <c>stringinput</c> where the replacement string is to be inserted.</param>
+        <param name="start">The character position in <paramref name="stringInput" /> where the replacement string is to be inserted.</param>
         <param name="length">The number of characters to delete from <paramref name="stringInput" />. If <paramref name="length" /> is longer than <paramref name="stringInput" />, deletion occurs up to the last character in <paramref name="stringReplacement" />.</param>
         <param name="stringReplacement">The substring to be inserted into <paramref name="stringInput" />.</param>
         <summary>Inserts a string into another string. It deletes a specified length of characters in the target string at the start position and then inserts the second string into the target string at the start position.</summary>

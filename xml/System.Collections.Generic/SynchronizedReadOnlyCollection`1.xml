@@ -213,7 +213,7 @@
       <Docs>
         <param name="syncRoot">The object used to synchronize access to the thread-safe, read-only collection.</param>
         <param name="sync_root">The object used to synchronize access to the thread-safe, read-only collection.</param>
-        <param name="list">The <see cref="T:System.Array" /> of type <c>T</c> elements used to initialize the thread-safe, read-only collection.</param>
+        <param name="list">The <see cref="T:System.Array" /> of type <typeparamref name="T" /> elements used to initialize the thread-safe, read-only collection.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedReadOnlyCollection`1" /> class from a specified array of elements and with the object used to synchronize access to the thread-safe, read-only collection.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -553,11 +553,8 @@
       </Parameters>
       <Docs>
         <param name="value">The value to be removed from the collection.</param>
-        <summary>Returns <see langword="false" /> and throws a <see cref="T:System.NotSupportedException" /> if called.</summary>
-        <returns>
-          <see langword="False" />.  
-  
- The method returns <see langword="false" /> to indicate that the item was not removed from the read-only collection.</returns>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
+        <returns>Always throws a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Items cannot be removed from a read-only collection.</exception>
       </Docs>
@@ -890,17 +887,8 @@
       <Docs>
         <param name="value">The object to locate in the collection.</param>
         <summary>Checks whether the specified object exists in the collection.</summary>
-        <returns>Returns <see cref="T:System.Boolean" />.  
-  
- True if the object is located in the collection; otherwise false.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Returns `true` if the element `value` is found in the collection; otherwise `false`.  
-  
- ]]></format>
-        </remarks>
+        <returns><see langword="true" /> if the object is located in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is not an object of the type contained in the collection.</exception>
       </Docs>
@@ -930,9 +918,7 @@
       <Docs>
         <param name="value">The element whose index is being retrieved.</param>
         <summary>Gets the index of the specified item.</summary>
-        <returns>Returns <see cref="T:System.Int32" />.  
-  
- The zero-based index of the first occurrence of the <paramref name="value" /> in the collection.</returns>
+        <returns>The zero-based index of the first occurrence of the <paramref name="value" /> in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

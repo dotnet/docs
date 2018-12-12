@@ -62,7 +62,7 @@
         <param name="resource">The resource the subject is seeking access to.</param>
         <param name="accessDecision">The authorization decision rendered by the SAML authority regarding the access to the resource by the subject.</param>
         <param name="decision">The authorization decision rendered by the SAML authority regarding the access to the resource by the subject.</param>
-        <param name="actionNamespace">The XML namespace in which the action specified in the <c>action</c> parameter is defined.</param>
+        <param name="actionNamespace">The XML namespace in which the action specified in the <paramref name="actionName" /> parameter is defined.</param>
         <param name="actionName">The action sought by the subject on the resource specified in the <paramref name="resource" /> parameter.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource" /> class using the specified resource the subject is seeking access to, the authorization decision regarding the resource, the action sought on the resource, and the XML namespace in which the action is defined.</summary>
         <remarks>
@@ -81,11 +81,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="resource" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="actionName" /> is <see langword="null" />.</exception>
+          <paramref name="resource" /> or <paramref name="actionName" /> is <see langword="null" /> or an empty string.</exception>
       </Docs>
     </Member>
     <Member MemberName="AccessDecision">

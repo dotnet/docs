@@ -636,8 +636,8 @@
         <Parameter Name="pair" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="pair">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pair">A key/value pair that contains the name and value of the element to add.</param>
+        <summary>Adds an element with the specified name and property into the <see cref="T:System.ServiceModel.Channels.MessageProperties" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -670,9 +670,10 @@
         <Parameter Name="pair" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="pair">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pair">A key/value pair that contains the name and value of the element to locate in the <see cref="T:System.ServiceModel.Channels.MessageProperties" />.</param>
+        <summary>Determines whether the <see cref="T:System.ServiceModel.Channels.MessageProperties" /> contains a specific name.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.ServiceModel.Channels.MessageProperties" /> contains an element with the name and value in the specified <paramref name="pair" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -703,9 +704,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The array to copy the collection to.</param>
+        <param name="index">The index to start from.</param>
+        <summary>Copies the content of the specified <see cref="T:System.ServiceModel.Channels.MessageProperties" /> to an array, starting at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -767,9 +768,10 @@
         <Parameter Name="pair" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="pair">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pair">A key/value pair that contains the name and value of the element to be removed.</param>
+        <summary>Removes the element with the specified name from the <see cref="T:System.ServiceModel.Channels.MessageProperties" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.ServiceModel.Channels.MessageProperties" /> contains an element with the specified name and value in the <paramref name="pair" /> parameter and can be removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -800,8 +802,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that can iterate through a collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

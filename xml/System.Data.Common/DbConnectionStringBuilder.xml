@@ -2260,7 +2260,7 @@ jet oledb:system database=system.mdw
       </Parameters>
       <Docs>
         <param name="keyword">The key of the item to retrieve.</param>
-        <param name="value">The value corresponding to the <c>key</c>.</param>
+        <param name="value">The value corresponding to the <paramref name="keyword" />.</param>
         <summary>Retrieves a value corresponding to the supplied key from this <see cref="T:System.Data.Common.DbConnectionStringBuilder" />.</summary>
         <returns>
           <see langword="true" /> if <paramref name="keyword" /> was found within the connection string, <see langword="false" /> otherwise.</returns>

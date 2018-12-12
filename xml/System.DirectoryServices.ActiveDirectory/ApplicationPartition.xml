@@ -382,7 +382,7 @@
   
 -   The <paramref name="context" /> parameter is not a valid forest, configuration set, or directory server.  
   
--   The <paramref name="distinguishedName" /> has a zero length  
+-   The <paramref name="distinguishedName" /> has a zero length.
   
 -   The <paramref name="distinguishedName" /> parameter is in an invalid format.</exception>
         <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />

@@ -189,7 +189,7 @@
       </Parameters>
       <Docs>
         <param name="syncRoot">The object used to synchronize access the thread-safe collection.</param>
-        <param name="list">The <see cref="T:System.Array" /> of type <c>T</c> elements used to initialize the thread-safe collection.</param>
+        <param name="list">The <see cref="T:System.Array" /> of type <typeparamref name="T" /> elements used to initialize the thread-safe collection.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedCollection`1" /> class from a specified array of elements and with the object used to synchronize access to the thread-safe collection.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -382,7 +382,7 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The destination <see cref="T:System.Array" /> for the elements of type <c>T</c> copied from the collection.</param>
+        <param name="array">The destination <see cref="T:System.Array" /> for the elements of type <typeparamref name="T" /> copied from the collection.</param>
         <param name="index">The zero-based index in the array at which copying begins.</param>
         <summary>Copies the elements of the collection to a specified array, starting at a particular index.</summary>
         <remarks>To be added.</remarks>
@@ -885,7 +885,7 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">The destination <see cref="T:System.Array" /> for the elements of type <c>T</c> copied from the collection.</param>
+        <param name="array">The destination <see cref="T:System.Array" /> for the elements of type <typeparamref name="T" /> copied from the collection.</param>
         <param name="index">The zero-based index in the array at which copying begins.</param>
         <summary>Copies the elements of the collection to a specified array, starting at a particular index.</summary>
         <remarks>To be added.</remarks>

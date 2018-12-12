@@ -1178,8 +1178,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="rects" /> is a zero-length array.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="pen" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawArc">

@@ -2500,7 +2500,7 @@ Database = AdventureWorks
       </Parameters>
       <Docs>
         <param name="keyword">The key of the item to retrieve.</param>
-        <param name="value">The value corresponding to <c>keyword.</c></param>
+        <param name="value">The value corresponding to <paramref name="keyword" />.</param>
         <summary>Retrieves a value corresponding to the supplied key from this <see cref="T:System.Data.SqlClient.SqlConnectionStringBuilder" />.</summary>
         <returns>
           <see langword="true" /> if <paramref name="keyword" /> was found within the connection string; otherwise, <see langword="false" />.</returns>

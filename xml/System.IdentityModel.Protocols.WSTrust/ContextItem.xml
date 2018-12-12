@@ -63,9 +63,9 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNull">
+        <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Argument">
+        <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is not an absolute URI.</exception>
       </Docs>
     </Member>
@@ -97,9 +97,9 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNull">
+        <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Argument">
+        <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is not an absolute URI.</exception>
       </Docs>
     </Member>
@@ -126,9 +126,9 @@
         <param name="scope">The context item scope. Can be <see langword="null" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" /> class with the specified Name URI, value, and Scope URI.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNull">
+        <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Argument">
+        <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is not an absolute URI.  
   
  -or-  

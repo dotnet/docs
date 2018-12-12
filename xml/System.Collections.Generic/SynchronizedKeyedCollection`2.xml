@@ -122,7 +122,7 @@
       </Parameters>
       <Docs>
         <param name="syncRoot">The object used to synchronize access to the thread-safe collection.</param>
-        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> of type <c>K</c> used to compare key objects of type <c>K</c> for equality.</param>
+        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> of type <typeparamref name="K" /> used to compare key objects of type <typeparamref name="K" /> for equality.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedKeyedCollection`2" /> class with access synchronized by an explicitly specified object and with keys compared in a specified way.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -162,7 +162,7 @@
       </Parameters>
       <Docs>
         <param name="syncRoot">The object used to synchronize access to the thread-safe collection.</param>
-        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> of type <c>K</c> used to compare key objects of type <c>K</c> for equality.</param>
+        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> of type <typeparamref name="K" /> used to compare key objects of type <typeparamref name="K" /> for equality.</param>
         <param name="dictionaryCreationThreshold">The number of items required to create a dictionary for the collection.</param>
         <param name="capacity">The number of items required to create a dictionary for the collection.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedKeyedCollection`2" /> class with access synchronized by an explicitly specified object and with keys compared in a specified way.</summary>
@@ -252,7 +252,7 @@
         <Parameter Name="key" Type="K" />
       </Parameters>
       <Docs>
-        <param name="key">The key of type <c>K</c> being tested for.</param>
+        <param name="key">The key of type <typeparamref name="K" /> being tested for.</param>
         <summary>Returns a value that indicates whether the collection contains an item with a specified key.</summary>
         <returns>
           <see langword="true" /> if the collection contains an item with the key specified; otherwise, <see langword="false" />.</returns>
@@ -308,7 +308,7 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="item">The item of type <c>T</c> whose key is being retrieved.</param>
+        <param name="item">The item of type <typeparamref name="T" /> whose key is being retrieved.</param>
         <summary>When overridden in a derived class, gets the key for a specified item.</summary>
         <returns>The key of type K for the specified <paramref name="item" /> of type <paramref name="T" />.</returns>
         <remarks>To be added.</remarks>
@@ -337,7 +337,7 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index that specifies the insertion location for the item in the collection.</param>
-        <param name="item">The item of type <c>T</c> to be inserted into the collection.</param>
+        <param name="item">The item of type <typeparamref name="T" /> to be inserted into the collection.</param>
         <summary>Inserts an item into the collection at a specified location.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -446,7 +446,7 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index that specifies the insertion location for the item in the collection.</param>
-        <param name="item">The item of type <c>T</c> to be inserted into the collection.</param>
+        <param name="item">The item of type <typeparamref name="T" /> to be inserted into the collection.</param>
         <summary>Replaces an item at a specified location of the collection with a new item.</summary>
         <remarks>To be added.</remarks>
       </Docs>

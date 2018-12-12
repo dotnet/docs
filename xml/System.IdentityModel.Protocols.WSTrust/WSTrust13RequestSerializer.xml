@@ -290,8 +290,10 @@
         <param name="context">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the current serialization context.</param>
         <summary>Writes the specified RST parameter to the outgoing stream. Override of the base class method.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
+        <exception cref="T:System.ArgumentException">
           <paramref name="elementName" /> is <see langword="null" /> or an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" />, <paramref name="rst" />, or <paramref name="context" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

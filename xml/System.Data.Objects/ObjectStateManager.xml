@@ -159,7 +159,7 @@
       <Docs>
         <param name="sourceEntity">The object instance or <see cref="T:System.Data.EntityKey" /> of the source entity at one end of the relationship.</param>
         <param name="targetEntity">The object instance or <see cref="T:System.Data.EntityKey" /> of the target entity at the other end of the relationship.</param>
-        <param name="navigationProperty">The name of the navigation property on <c>source</c> that returns the specified <c>target</c>.</param>
+        <param name="navigationProperty">The name of the navigation property on <paramref name="sourceEntity" /> that returns the specified <paramref name="targetEntity" />.</param>
         <param name="relationshipState">The requested <see cref="T:System.Data.EntityState" /> of the specified relationship.</param>
         <summary>Changes the state of the relationship between two entity objects that is specified based on the two related objects and the name of the navigation property.</summary>
         <returns>The <see cref="T:System.Data.Objects.ObjectStateEntry" /> for the relationship that was changed.</returns>
@@ -212,7 +212,7 @@
         <param name="sourceEntity">The object instance or <see cref="T:System.Data.EntityKey" /> of the source entity at one end of the relationship.</param>
         <param name="targetEntity">The object instance or <see cref="T:System.Data.EntityKey" /> of the target entity at the other end of the relationship.</param>
         <param name="relationshipName">The name of the relationship.</param>
-        <param name="targetRoleName">The role name at the <c>target</c> end of the relationship.</param>
+        <param name="targetRoleName">The role name at the <paramref name="targetEntity" /> end of the relationship.</param>
         <param name="relationshipState">The requested <see cref="T:System.Data.EntityState" /> of the specified relationship.</param>
         <summary>Changes the state of the relationship between two entity objects that is specified based on the two related objects and the properties of the relationship.</summary>
         <returns>The <see cref="T:System.Data.Objects.ObjectStateEntry" /> for the relationship that was changed.</returns>
@@ -268,10 +268,10 @@
         <Parameter Name="relationshipState" Type="System.Data.EntityState" />
       </Parameters>
       <Docs>
-        <typeparam name="TEntity">The entity type of the <c>source</c> object.</typeparam>
+        <typeparam name="TEntity">The entity type of the <paramref name="sourceEntity" /> object.</typeparam>
         <param name="sourceEntity">The object instance or <see cref="T:System.Data.EntityKey" /> of the source entity at one end of the relationship.</param>
         <param name="targetEntity">The object instance or <see cref="T:System.Data.EntityKey" /> of the target entity at the other end of the relationship.</param>
-        <param name="navigationPropertySelector">A LINQ expression that selects the navigation property on <c>source</c> that returns the specified <c>target</c>.</param>
+        <param name="navigationPropertySelector">A LINQ expression that selects the navigation property on <paramref name="sourceEntity" /> that returns the specified <paramref name="targetEntity" />.</param>
         <param name="relationshipState">The requested <see cref="T:System.Data.EntityState" /> of the specified relationship.</param>
         <summary>Changes the state of the relationship between two entity objects that is specified based on the two related objects and a LINQ expression that defines the navigation property.</summary>
         <returns>The <see cref="T:System.Data.Objects.ObjectStateEntry" /> for the relationship that was changed.</returns>

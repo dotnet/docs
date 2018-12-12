@@ -296,7 +296,12 @@
  -or-  
   
  <paramref name="samlSerializer" /> is <see langword="null" /></exception>
-        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">The <see langword="&lt;AuthorityBinding&gt;" /> element does not have one of the <see langword="AuthorityKind" />, <see langword="Location" />, or <see langword="Binding" /> attributes.</exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">
+          <paramref name="reader" /> does not refer to a SAML assertion.
+
+-or-
+
+The <see langword="&lt;AuthorityBinding&gt;" /> element does not have one of the <see langword="AuthorityKind" />, <see langword="Location" />, or <see langword="Binding" /> attributes.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteXml">

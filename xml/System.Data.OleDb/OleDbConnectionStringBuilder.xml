@@ -690,7 +690,7 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
       </Parameters>
       <Docs>
         <param name="keyword">The key of the item to retrieve.</param>
-        <param name="value">The value corresponding to <c>keyword.</c></param>
+        <param name="value">The value corresponding to <paramref name="keyword" />.</param>
         <summary>Retrieves a value corresponding to the supplied key from the <see cref="T:System.Data.OleDb.OleDbConnectionStringBuilder" /> instance.</summary>
         <returns>
           <see langword="true" /> if <paramref name="keyword" /> was found within the connection string; otherwise <see langword="false" />.</returns>

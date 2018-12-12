@@ -653,7 +653,7 @@
         <Parameter Name="parameterOrdinal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="parameterOrdinal">The number to be included as part of the parameter's name..</param>
+        <param name="parameterOrdinal">The number to be included as part of the parameter's name.</param>
         <summary>Returns the name of the specified parameter in the format of <c>@p#</c>. Use when building a custom command builder.</summary>
         <returns>The name of the parameter with the specified number appended as part of the parameter name.</returns>
         <remarks>To be added.</remarks>

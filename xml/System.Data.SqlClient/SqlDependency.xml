@@ -159,7 +159,7 @@
       </Parameters>
       <Docs>
         <param name="command">The <see cref="T:System.Data.SqlClient.SqlCommand" /> object to associate with this <see cref="T:System.Data.SqlClient.SqlDependency" /> object. The constructor sets up a <see cref="T:System.Data.Sql.SqlNotificationRequest" /> object and bind it to the command.</param>
-        <param name="options">The notification request options to be used by this dependency.  <c>null</c> to use the default service.</param>
+        <param name="options">The notification request options to be used by this dependency. <see langword="null" /> to use the default service.</param>
         <param name="timeout">The time-out for this notification in seconds. The default is 0, indicating that the server's time-out should be used.</param>
         <summary>Creates a new instance of the <see cref="T:System.Data.SqlClient.SqlDependency" /> class, associates it with the <see cref="T:System.Data.SqlClient.SqlCommand" /> parameter, and specifies notification options and a time-out value.</summary>
         <remarks>

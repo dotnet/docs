@@ -233,7 +233,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <see cref="M:System.ServiceModel.Channels.FaultConverter.OnTryCreateException(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.MessageFault,System.Exception@)" /> returned <see langword="false" /> but <paramref name="exception" /> is not <see langword="null" />.</exception>
+          <paramref name="message" /> or <paramref name="fault" /> is <see langword="null" />.
+
+-or-
+
+<see cref="M:System.ServiceModel.Channels.FaultConverter.OnTryCreateException(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.MessageFault,System.Exception@)" /> returned <see langword="true" /> but <paramref name="exception" /> is <see langword="null" />.
+
+-or- 
+
+<see cref="M:System.ServiceModel.Channels.FaultConverter.OnTryCreateException(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.MessageFault,System.Exception@)" /> returned <see langword="false" /> but <paramref name="exception" /> is not <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryCreateFaultMessage">
@@ -274,7 +282,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <see cref="M:System.ServiceModel.Channels.FaultConverter.OnTryCreateException(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.MessageFault,System.Exception@)" /> returned <see langword="false" /> but <paramref name="message" /> is not <see langword="null" />.</exception>
+          <see cref="M:System.ServiceModel.Channels.FaultConverter.OnTryCreateException(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.MessageFault,System.Exception@)" /> returned <see langword="true" /> but <paramref name="message" /> is <see langword="null" />.
+
+-or-
+
+<see cref="M:System.ServiceModel.Channels.FaultConverter.OnTryCreateException(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.MessageFault,System.Exception@)" /> returned <see langword="false" /> but <paramref name="message" /> is not <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

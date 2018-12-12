@@ -143,7 +143,7 @@ are the same object. This can lead to inconsistent results in string comparisons
 > [!NOTE]
 > When you test for equality of strings, you should use the methods that explicitly specify what kind of comparison you intend to perform. Your code is much more maintainable and readable. Use the overloads of the methods of the <xref:System.String?displayProperty=nameWithType> and <xref:System.Array?displayProperty=nameWithType> classes that take a <xref:System.StringComparison> enumeration parameter. You specify which type of comparison to perform. Avoid using the `==` and `!=` operators when you test for equality. The <xref:System.String.CompareTo%2A?displayProperty=nameWithType> instance methods always perform an ordinal case-sensitive comparison. They are primarily suited for ordering strings alphabetically.
 
-You can intern a string or retrieve a reference to an existing interned string by calling the <xref:System.String.Intern%2A?displayProperty=nameWithType> method. To determine whether a string is interned, call the <xref:System.String.IsInterned?displayProperty=nameWithType> method.
+You can intern a string or retrieve a reference to an existing interned string by calling the <xref:System.String.Intern%2A?displayProperty=nameWithType> method. To determine whether a string is interned, call the <xref:System.String.IsInterned%2A?displayProperty=nameWithType> method.
 
 ## See also
 

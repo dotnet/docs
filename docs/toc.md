@@ -128,7 +128,6 @@
 ### [Unit testing published output](core/testing/unit-testing-published-output.md)
 ### [Live unit testing .NET Core projects with Visual Studio](/visualstudio/test/live-unit-testing-start)
 ## [Versioning](core/versions/index.md)
-### [.NET Core version history](core/versions/version-history.md)
 ### [.NET Core version selection](core/versions/selection.md)
 ### [Removing outdated runtimes and SDKs](core/versions/remove-runtime-sdk-versions.md)
 ## [Runtime IDentifier catalog](core/rid-catalog.md)

@@ -10848,7 +10848,7 @@
         <param name="liftToNull">
           <see langword="true" /> to set <see cref="P:System.Linq.Expressions.BinaryExpression.IsLiftedToNull" /> to <see langword="true" />; <see langword="false" /> to set <see cref="P:System.Linq.Expressions.BinaryExpression.IsLiftedToNull" /> to <see langword="false" />.</param>
         <param name="method">A <see cref="T:System.Reflection.MethodInfo" /> that specifies the implementing method.</param>
-        <param name="conversion">A <see cref="T:System.Linq.Expressions.LambdaExpression" /> that represents a type conversion function. This parameter is used only if <paramref name="binaryType" /> is <see cref="F:System.Linq.Expressions.ExpressionType.Coalesce" /> or compound assignment..</param>
+        <param name="conversion">A <see cref="T:System.Linq.Expressions.LambdaExpression" /> that represents a type conversion function. This parameter is used only if <paramref name="binaryType" /> is <see cref="F:System.Linq.Expressions.ExpressionType.Coalesce" /> or compound assignment.</param>
         <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" />, given the left operand, right operand, implementing method and type conversion function, by calling the appropriate factory method.</summary>
         <returns>The <see cref="T:System.Linq.Expressions.BinaryExpression" /> that results from calling the appropriate factory method.</returns>
         <remarks>
@@ -18095,7 +18095,7 @@
         <param name="defaultBody">The result of the switch if <paramref name="switchValue" /> does not match any of the cases.</param>
         <param name="comparison">The equality comparison method to use.</param>
         <param name="cases">The set of cases for this switch expression.</param>
-        <summary>Creates a <see cref="T:System.Linq.Expressions.SwitchExpression" /> that represents a <see langword="switch" /> statement that has a default case..</summary>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.SwitchExpression" /> that represents a <see langword="switch" /> statement that has a default case.</summary>
         <returns>The created <see cref="T:System.Linq.Expressions.SwitchExpression" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>

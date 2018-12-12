@@ -551,7 +551,7 @@
       <Docs>
         <param name="width">The width, in pixels, of the new <see cref="T:System.Drawing.Bitmap" />.</param>
         <param name="height">The height, in pixels, of the new <see cref="T:System.Drawing.Bitmap" />.</param>
-        <param name="stride">Integer that specifies the byte offset between the beginning of one scan line and the next. This is usually (but not necessarily) the number of bytes in the pixel format (for example, 2 for 16 bits per pixel) multiplied by the width of the bitmap. The value passed to this parameter must be a multiple of four..</param>
+        <param name="stride">Integer that specifies the byte offset between the beginning of one scan line and the next. This is usually (but not necessarily) the number of bytes in the pixel format (for example, 2 for 16 bits per pixel) multiplied by the width of the bitmap. The value passed to this parameter must be a multiple of four.</param>
         <param name="format">The pixel format for the new <see cref="T:System.Drawing.Bitmap" />. This must specify a value that begins with <c>Format</c>.</param>
         <param name="scan0">Pointer to an array of bytes that contains the pixel data.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Bitmap" /> class with the specified size, pixel format, and pixel data.</summary>

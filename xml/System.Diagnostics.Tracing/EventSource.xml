@@ -1097,7 +1097,7 @@
         <returns>
           <see langword="true" /> if the event source is enabled for the specified event level, keywords and channel; otherwise, <see langword="false" />.  
   
- The result of this method is only an approximation of whether a particular event is active.  Use it to avoid expensive computation for logging when logging is disabled.   Event sources may have additional filtering that determines their activity..</returns>
+ The result of this method is only an approximation of whether a particular event is active.  Use it to avoid expensive computation for logging when logging is disabled. Event sources may have additional filtering that determines their activity.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

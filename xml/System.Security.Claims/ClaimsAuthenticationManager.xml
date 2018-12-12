@@ -34,7 +34,7 @@
    
   
 ## Examples  
- The following code shows a simple claims authentication manager that adds a role claim to the incoming principal without performing any check on the incoming claims..  
+ The following code shows a simple claims authentication manager that adds a role claim to the incoming principal without performing any check on the incoming claims. 
   
  [!code-csharp[WifWebApplication1#1](~/samples/snippets/csharp/VS_Snippets_Misc/wifwebapplication1/cs/myclaimsauthenticationmanager/simpleclaimsauthenticatonmanager.cs#1)]  
   

@@ -57,7 +57,7 @@
         <Parameter Name="methodName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">An object that describes the type of the startup method..</param>
+        <param name="type">An object that describes the type of the startup method.</param>
         <param name="methodName">An empty parameter signature that has no return value.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.PreApplicationStartMethodAttribute" /> class.</summary>
         <remarks>

@@ -143,7 +143,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When set to `true`, the <xref:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute.IsByteOrdered%2A> property in effect guarantees that the serialized binary data can be used for semantic ordering of the information. Thus, each instance of a byte-ordered UDT object can only have one serialized representation. When a comparison operation is performed in SQL Server on the serialized bytes, its results should be the same as if the same comparison operation had taken place in managed code..  
+ When set to `true`, the <xref:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute.IsByteOrdered%2A> property in effect guarantees that the serialized binary data can be used for semantic ordering of the information. Thus, each instance of a byte-ordered UDT object can only have one serialized representation. When a comparison operation is performed in SQL Server on the serialized bytes, its results should be the same as if the same comparison operation had taken place in managed code.  
   
  The following features are supported when <xref:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute.IsByteOrdered%2A> is set to `true`:  
   

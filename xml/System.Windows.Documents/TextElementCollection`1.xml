@@ -409,7 +409,7 @@
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.ICollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
         <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying begins.</param>
-        <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index..  Use the type-safe <see cref="M:System.Windows.Documents.TextElementCollection`1.CopyTo(`0[],System.Int32)" /> method instead.</summary>
+        <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index. Use the type-safe <see cref="M:System.Windows.Documents.TextElementCollection`1.CopyTo(`0[],System.Int32)" /> method instead.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -609,7 +609,7 @@
       </Parameters>
       <Docs>
         <param name="value">The object to locate in the <see cref="T:System.Collections.IList" />.</param>
-        <summary>Determines whether the <see cref="T:System.Collections.IList" /> contains a specific value..  Use the type-safe <see cref="M:System.Windows.Documents.TextElementCollection`1.Contains(`0)" /> method instead.</summary>
+        <summary>Determines whether the <see cref="T:System.Collections.IList" /> contains a specific value. Use the type-safe <see cref="M:System.Windows.Documents.TextElementCollection`1.Contains(`0)" /> method instead.</summary>
         <returns>
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Collections.IList" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

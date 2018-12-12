@@ -440,7 +440,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.XmlValidatingReader> class is obsolete in [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)]. You can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page..  
+>  The <xref:System.Xml.XmlValidatingReader> class is obsolete in [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)]. You can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page. 
   
  The binary content read methods include the <xref:System.Xml.XmlValidatingReader.ReadContentAsBase64%2A>, <xref:System.Xml.XmlValidatingReader.ReadContentAsBinHex%2A>, <xref:System.Xml.XmlValidatingReader.ReadElementContentAsBase64%2A>, and <xref:System.Xml.XmlValidatingReader.ReadElementContentAsBinHex%2A> methods.  
   
@@ -1502,7 +1502,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.XmlValidatingReader> class is obsolete in [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)]. You can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page..  
+>  The <xref:System.Xml.XmlValidatingReader> class is obsolete in [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)]. You can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page. 
   
  In the following XML string, if the reader is positioned on the `href` attribute, the prefix `a` is resolved by calling `reader.LookupNamespace("a", true)`. The returned string is `urn:456`.  
   
@@ -2424,7 +2424,7 @@ reader.MoveToAttribute("name");
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.XmlValidatingReader> class is obsolete in [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)]. You can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page..  
+>  The <xref:System.Xml.XmlValidatingReader> class is obsolete in [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)]. You can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page. 
   
  This method streams the content, decodes the Base64 content, and returns the decoded binary bytes (for example, an inline Base64 encoded GIF image) into the buffer. This method can be called successively to read large streams of embedded text. For more information, see RFC 1521, "MIME (Multipurpose Internet Mail Extensions) Part One: Mechanisms for Specifying and Describing the Format of Internet Message Bodies". You can obtain RFCs from the [Request for Comments Web site](https://www.rfc-editor.org).  
   
@@ -2493,7 +2493,7 @@ reader.MoveToAttribute("name");
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.XmlValidatingReader> class is obsolete in [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)]. You can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page..  
+>  The <xref:System.Xml.XmlValidatingReader> class is obsolete in [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)]. You can create a validating <xref:System.Xml.XmlReader> instance by using the <xref:System.Xml.XmlReaderSettings> class and the <xref:System.Xml.XmlReader.Create%2A> method. For more information, see the Remarks section of the <xref:System.Xml.XmlReader> reference page. 
   
  This method streams the content, decodes the BinHex content, and returns the decoded binary bytes (for example, an inline BinHex encoded GIF image) into the buffer. This method can be called successively to read large streams of embedded text.  
   

@@ -251,7 +251,7 @@
         <Parameter Name="source" Type="TFrom&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <typeparam name="TFrom">The type of reference to reinterpret..</typeparam>
+        <typeparam name="TFrom">The type of reference to reinterpret.</typeparam>
         <typeparam name="TTo">The desired type of the reference.</typeparam>
         <param name="source">The reference to reinterpret.</param>
         <summary>

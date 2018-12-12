@@ -1110,7 +1110,7 @@ namespace SpeechRecognitionApp
       findServices.Append("near");  
       findServices.Append(cities);  
   
-      // Create a Grammar object from the GrammarBuilder..  
+      // Create a Grammar object from the GrammarBuilder. 
       Grammar servicesGrammar = new Grammar(findServices);  
       servicesGrammar.Name = ("FindServices");  
       return servicesGrammar;  
@@ -2382,7 +2382,7 @@ namespace SpeechRecognitionApp
       findServices.Append("near");  
       findServices.Append(cities);  
   
-      // Create a Grammar object from the GrammarBuilder..  
+      // Create a Grammar object from the GrammarBuilder. 
       Grammar servicesGrammar = new Grammar(findServices);  
       servicesGrammar.Name = ("FindServices");  
       return servicesGrammar;  

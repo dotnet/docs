@@ -139,7 +139,7 @@
       <Docs>
         <param name="service">The annotation service to use to create the ink sticky note annotation.</param>
         <param name="author">The author of the annotation.</param>
-        <summary>Creates an ink sticky note annotation on the current selection of the viewer control associated with the specified <see cref="T:System.Windows.Annotations.AnnotationService" />..</summary>
+        <summary>Creates an ink sticky note annotation on the current selection of the viewer control associated with the specified <see cref="T:System.Windows.Annotations.AnnotationService" />.</summary>
         <returns>The ink sticky note annotation; or <see langword="null" />, if there is no selected content to annotate.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

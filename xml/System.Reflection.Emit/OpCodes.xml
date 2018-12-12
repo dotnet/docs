@@ -2619,7 +2619,7 @@
   
  The stack transitional behavior, in sequential order, is:  
   
-1.  `value` is pushed onto the stack..  
+1.  `value` is pushed onto the stack. 
   
 2.  `value` is popped from the stack and the `ckfinite` instruction is performed on it.  
   
@@ -8091,7 +8091,7 @@
   
 2.  The address is popped from the stack; the value located at the address is fetched.  
   
-3.  The fetched value is pushed onto the stack..  
+3.  The fetched value is pushed onto the stack. 
   
  The `ldind.i1` instruction indirectly loads an `int8` value from the specified address (of type `native int`, `&`, or *) onto the stack as an `int32`.  
   

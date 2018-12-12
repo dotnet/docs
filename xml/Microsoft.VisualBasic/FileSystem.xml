@@ -3284,7 +3284,7 @@
         <param name="Value">Required. Valid variable name that contains data written to disk.</param>
         <param name="RecordNumber">Optional. Record number (<see langword="Random" /> mode files) or byte number (<see langword="Binary" /> mode files) at which writing starts.</param>
         <param name="StringIsFixedLength">Optional. Applies only when writing a string. Specifies whether to write a two-byte string length descriptor for the string to the file. The default is <see langword="False" />.</param>
-        <summary>Writes data from a variable to a disk file. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FilePut" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />..</summary>
+        <summary>Writes data from a variable to a disk file. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FilePut" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

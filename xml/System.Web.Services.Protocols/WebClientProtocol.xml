@@ -132,7 +132,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="type">The <see cref="T:System.Type" /> of the client protocol handler..</param>
+        <param name="type">The <see cref="T:System.Type" /> of the client protocol handler.</param>
         <param name="value">The client protocol handler to be added to the cache.</param>
         <summary>Add an instance of the client protocol handler to the cache.</summary>
         <remarks>To be added.</remarks>

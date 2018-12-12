@@ -236,7 +236,7 @@
       <Docs>
         <param name="implementedContract">The service contract exposed by the endpoint.</param>
         <param name="binding">The binding for the endpoint.</param>
-        <param name="address">The address of the endpoint..</param>
+        <param name="address">The address of the endpoint.</param>
         <summary>Adds a service endpoint to the workflow service host using the specified contract, binding, and address.</summary>
         <returns>A service endpoint.</returns>
         <remarks>

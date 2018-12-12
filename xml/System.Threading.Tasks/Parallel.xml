@@ -2216,7 +2216,7 @@
         <param name="localInit">The function delegate that returns the initial state of the local data for each task.</param>
         <param name="body">The delegate that is invoked once per iteration.</param>
         <param name="localFinally">The delegate that performs a final action on the local state of each task.</param>
-        <summary>Executes a <see langword="foreach" /> (<see langword="For Each" /> in Visual Basic) operation with thread-local data on an <see cref="T:System.Collections.IEnumerable" /> in which iterations may run in parallel, loop options can be configured, and the state of the loop can be monitored and manipulated..</summary>
+        <summary>Executes a <see langword="foreach" /> (<see langword="For Each" /> in Visual Basic) operation with thread-local data on an <see cref="T:System.Collections.IEnumerable" /> in which iterations may run in parallel, loop options can be configured, and the state of the loop can be monitored and manipulated.</summary>
         <returns>A structure that contains information about which portion of the loop completed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

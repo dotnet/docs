@@ -670,7 +670,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <paramref name="value" /> should be inserted..</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
         <param name="value">The object to be inserted into the <see cref="T:System.Windows.Forms.ListView.SelectedIndexCollection" />.</param>
         <summary>Inserts an item into the collection at a specified index.</summary>
         <remarks>

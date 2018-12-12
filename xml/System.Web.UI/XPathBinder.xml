@@ -288,7 +288,7 @@
         <param name="xPath">The XPath query from the <paramref name="container" /> to the property value to be placed in the bound control property.</param>
         <param name="format">A .NET Framework format string, similar to those used by <see cref="M:System.String.Format(System.String,System.Object)" />, that converts the <see cref="T:System.Xml.XPath.IXPathNavigable" /> object (which results from the evaluation of the data-binding expression) to a <see cref="T:System.String" /> that can be displayed by the requesting browser.</param>
         <param name="resolver">The <see cref="T:System.Xml.IXmlNamespaceResolver" /> object used to resolve namespace prefixes in the XPath expression.</param>
-        <summary>Evaluates XPath data-binding expressions at run time and formats the result as text to be displayed in the requesting browser, using the <see cref="T:System.Xml.IXmlNamespaceResolver" /> object specified to resolve namespace prefixes in the XPath expression..</summary>
+        <summary>Evaluates XPath data-binding expressions at run time and formats the result as text to be displayed in the requesting browser, using the <see cref="T:System.Xml.IXmlNamespaceResolver" /> object specified to resolve namespace prefixes in the XPath expression.</summary>
         <returns>A <see cref="T:System.String" /> that results from the evaluation of the data-binding expression and conversion to a string type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

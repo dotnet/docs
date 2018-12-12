@@ -55,7 +55,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to specify the event handler you want to use to subscribe to the <xref:System.ComponentModel.ICollectionView.CurrentChanging> event..  When you use this method, your listener object does not need to implement the <xref:System.Windows.IWeakEventListener> interface.  
+ Use this method to specify the event handler you want to use to subscribe to the <xref:System.ComponentModel.ICollectionView.CurrentChanging> event. When you use this method, your listener object does not need to implement the <xref:System.Windows.IWeakEventListener> interface.  
   
  ]]></format>
         </remarks>

@@ -157,7 +157,7 @@
         <param name="callback">The method to be called after the asynchronous operation is complete.</param>
         <param name="state">An object containing the state information associated with the asynchronous operation.</param>
         <summary>Begins an asynchronous operation to listen for any events raised by the instance store for a specific instance handle.</summary>
-        <returns>Returns an <see cref="T:System.IAsyncResult" /> object..</returns>
+        <returns>Returns an <see cref="T:System.IAsyncResult" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -397,7 +397,7 @@
       <Docs>
         <param name="result">An IAsyncResult object that was handed over to the client by the Begin method.</param>
         <summary>Ends the asynchronous operation initiated by the <see cref="M:System.Runtime.DurableInstancing.InstanceStore.BeginWaitForEvents(System.Runtime.DurableInstancing.InstanceHandle,System.TimeSpan,System.AsyncCallback,System.Object)" /> method.</summary>
-        <returns>Returns a list of <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceEvent" /> objects..</returns>
+        <returns>Returns a list of <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceEvent" /> objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -463,7 +463,7 @@
       <Docs>
         <param name="owner">An <see cref="T:System.Runtime.DurableInstancing.InstanceOwner" /> object representing the owner of an instance.</param>
         <summary>Gets all the signaled events bound to an <see cref="T:System.Runtime.DurableInstancing.InstanceOwner" /> object.</summary>
-        <returns>Returns an array of <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceEvent" /> objects..</returns>
+        <returns>Returns an array of <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceEvent" /> objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

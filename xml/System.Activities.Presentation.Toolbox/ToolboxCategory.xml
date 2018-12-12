@@ -180,7 +180,7 @@
       <Docs>
         <param name="index">The zero-based index of the tool to get or set.</param>
         <summary>Gets or sets the tool at the specified index.</summary>
-        <value>The <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> object at the specified <paramref name="index" />..</value>
+        <value>The <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> object at the specified <paramref name="index" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is not valid for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> collection.</exception>
       </Docs>

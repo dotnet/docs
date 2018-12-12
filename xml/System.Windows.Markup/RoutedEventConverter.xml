@@ -181,7 +181,7 @@
         <returns>Always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="value" /> cannot be converted. This is not a functioning converter for a save path..</exception>
+          <paramref name="value" /> cannot be converted. This is not a functioning converter for a save path.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> or <paramref name="destinationType" /> are <see langword="null" />.</exception>
       </Docs>

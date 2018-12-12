@@ -256,7 +256,7 @@
 ## Remarks  
  This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Windows.Media.Animation.ObjectKeyFrameCollection.Count%2A>. That is, this method is an O(*n*) operation, where *n* is  <xref:System.Windows.Media.Animation.ObjectKeyFrameCollection.Count%2A>.  
   
- This method determines equality by calling the object's Equals method..  
+ This method determines equality by calling the object's Equals method. 
   
  ]]></format>
         </remarks>

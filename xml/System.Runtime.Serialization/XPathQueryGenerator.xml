@@ -99,7 +99,7 @@
         <param name="type">The type that represents a data contract.</param>
         <param name="pathToMember">The metadata, generated using the <see cref="Overload:System.Type.GetMember" /> method of the <see cref="T:System.Type" /> class, that points to the specific data member used to generate the query.</param>
         <param name="namespaces">The XML namespaces and their prefixes found in the data contract.</param>
-        <summary>Creates an XPath from a data contract using the specified data contract type, array of metadata elements, and namespaces..</summary>
+        <summary>Creates an XPath from a data contract using the specified data contract type, array of metadata elements, and namespaces.</summary>
         <returns>
           <see cref="T:System.String" />  
   

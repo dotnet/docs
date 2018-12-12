@@ -1944,7 +1944,7 @@
         <param name="remoteEP">An <see cref="T:System.Net.EndPoint" /> that represents the source of the data.</param>
         <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate.</param>
         <param name="state">An object that contains state information for this request.</param>
-        <summary>Begins to asynchronously receive the specified number of bytes of data into the specified location of the data buffer, using the specified <see cref="T:System.Net.Sockets.SocketFlags" />, and stores the endpoint and packet information..</summary>
+        <summary>Begins to asynchronously receive the specified number of bytes of data into the specified location of the data buffer, using the specified <see cref="T:System.Net.Sockets.SocketFlags" />, and stores the endpoint and packet information.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> that references the asynchronous read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

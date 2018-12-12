@@ -2480,7 +2480,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.UInt16.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.UInt16%40%29> method is like the <xref:System.UInt16.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29> method, except that it does not throw an exception if the conversion fails. This method eliminates the need to use exception handling to test for a <xref:System.FormatException> if `s` is invalid and cannot be parsed successfully..  
+ The <xref:System.UInt16.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.UInt16%40%29> method is like the <xref:System.UInt16.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29> method, except that it does not throw an exception if the conversion fails. This method eliminates the need to use exception handling to test for a <xref:System.FormatException> if `s` is invalid and cannot be parsed successfully. 
   
  The `style` parameter defines the style elements (such as white space or a positive or negative sign) that are allowed in the `s` parameter for the parse operation to succeed. It must be a combination of bit flags from the <xref:System.Globalization.NumberStyles> enumeration. Depending on the value of `style`, the `s` parameter may include the following elements:  
   

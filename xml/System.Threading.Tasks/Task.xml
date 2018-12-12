@@ -559,7 +559,7 @@
       <Docs>
         <param name="action">The delegate that represents the code to execute in the task.</param>
         <param name="state">An object representing data to be used by the action.</param>
-        <param name="cancellationToken">The <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> that that the new task will observe..</param>
+        <param name="cancellationToken">The <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> that that the new task will observe.</param>
         <param name="creationOptions">The <see cref="T:System.Threading.Tasks.TaskCreationOptions" /> used to customize the task's behavior.</param>
         <summary>Initializes a new <see cref="T:System.Threading.Tasks.Task" /> with the specified action, state, and options.</summary>
         <remarks>

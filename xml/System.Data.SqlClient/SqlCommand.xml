@@ -1807,7 +1807,7 @@ public class A {
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Data.SqlClient.SqlCommand.Connection" /> property was changed while the command was enlisted in a transaction..</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Data.SqlClient.SqlCommand.Connection" /> property was changed while the command was enlisted in a transaction.</exception>
         <altmember cref="P:System.Data.SqlClient.SqlCommand.CommandText" />
         <altmember cref="P:System.Data.SqlClient.SqlCommand.CommandTimeout" />
         <altmember cref="P:System.Data.SqlClient.SqlCommand.CommandType" />

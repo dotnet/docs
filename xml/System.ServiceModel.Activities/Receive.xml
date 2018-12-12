@@ -200,7 +200,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether a new workflow instance is created to process the message if the message does not correlate to an existing workflow instance..</summary>
+        <summary>Gets or sets a value that indicates whether a new workflow instance is created to process the message if the message does not correlate to an existing workflow instance.</summary>
         <value>
           <see langword="true" /> if a new workflow instance is created to process the message, otherwise <see langword="false" />.</value>
         <remarks>

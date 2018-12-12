@@ -1441,7 +1441,7 @@
           <see langword="True" /> if the search should be case-sensitive; otherwise <see langword="False" />. Default is <see langword="True" />.</param>
         <param name="searchType">Whether to include subfolders. Default is <see langword="SearchOption.SearchTopLevelOnly" />.</param>
         <summary>Returns a read-only collection of strings representing the names of files containing the specified text.</summary>
-        <returns>Read-only collection of the names of files containing the specified text..</returns>
+        <returns>Read-only collection of the names of files containing the specified text.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1517,7 +1517,7 @@
         <param name="searchType">Whether to include subfolders. Default is <see langword="SearchOption.SearchTopLevelOnly" />.</param>
         <param name="fileWildcards">Pattern to be matched.</param>
         <summary>Returns a read-only collection of strings representing the names of files containing the specified text.</summary>
-        <returns>Read-only collection of the names of files containing the specified text..</returns>
+        <returns>Read-only collection of the names of files containing the specified text.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1592,7 +1592,7 @@
       <Docs>
         <param name="directory">Name and path of directory.</param>
         <summary>Returns a collection of strings representing the path names of subdirectories within a directory.</summary>
-        <returns>Read-only collection of the path names of subdirectories within the specified directory..</returns>
+        <returns>Read-only collection of the path names of subdirectories within the specified directory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

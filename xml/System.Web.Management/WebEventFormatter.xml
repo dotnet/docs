@@ -22,7 +22,7 @@
 ## Remarks  
  ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
   
- The <xref:System.Web.Management.WebEventFormatter> is a supporting type used to uniformly format event-related information, which is useful if the event data must be logged and later presented to the user..  
+ The <xref:System.Web.Management.WebEventFormatter> is a supporting type used to uniformly format event-related information, which is useful if the event data must be logged and later presented to the user. 
   
  Instances of the <xref:System.Web.Management.WebEventFormatter> class are passed as arguments to the formatting methods defined by the health-event types.  
   

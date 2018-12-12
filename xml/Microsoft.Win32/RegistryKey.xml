@@ -2022,7 +2022,7 @@
         <Parameter Name="view" Type="Microsoft.Win32.RegistryView" />
       </Parameters>
       <Docs>
-        <param name="hKey">The HKEY to open from the <see cref="T:Microsoft.Win32.RegistryHive" /> enumeration..</param>
+        <param name="hKey">The HKEY to open from the <see cref="T:Microsoft.Win32.RegistryHive" /> enumeration.</param>
         <param name="machineName">The remote machine.</param>
         <param name="view">The registry view to use.</param>
         <summary>Opens a new registry key that represents the requested key on a remote machine with the specified view.</summary>

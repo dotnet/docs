@@ -69,7 +69,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Security.Claims.Claim> with a claim type of <xref:System.Security.Claims.ClaimTypes.AuthenticationMethod> and a value of `authType` and a <xref:System.Security.Claims.Claim> with a claim type of <xref:System.Security.Claims.ClaimTypes.AuthenticationInstant> and a value of <xref:System.DateTime.UtcNow%2A> are added to the <xref:System.Security.Claims.ClaimsIdentity> specified by the <xref:System.IdentityModel.Tokens.SecurityTokenDescriptor.Subject%2A> property..  
+ A <xref:System.Security.Claims.Claim> with a claim type of <xref:System.Security.Claims.ClaimTypes.AuthenticationMethod> and a value of `authType` and a <xref:System.Security.Claims.Claim> with a claim type of <xref:System.Security.Claims.ClaimTypes.AuthenticationInstant> and a value of <xref:System.DateTime.UtcNow%2A> are added to the <xref:System.Security.Claims.ClaimsIdentity> specified by the <xref:System.IdentityModel.Tokens.SecurityTokenDescriptor.Subject%2A> property. 
   
  ]]></format>
         </remarks>

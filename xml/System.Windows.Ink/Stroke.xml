@@ -73,7 +73,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stylusPoints" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="stylusPoints" /> is empty..</exception>
+          <paramref name="stylusPoints" /> is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1161,7 +1161,7 @@
       </Parameters>
       <Docs>
         <param name="bounds">A <see cref="T:System.Windows.Rect" /> that represents the bounds of the area to hit test.</param>
-        <param name="percentageWithinBounds">The percentage of the length of the <see cref="T:System.Windows.Ink.Stroke" />, that must be in <paramref name="percentageWithinBounds" /> for the <see cref="T:System.Windows.Ink.Stroke" /> to be considered hit..</param>
+        <param name="percentageWithinBounds">The percentage of the length of the <see cref="T:System.Windows.Ink.Stroke" />, that must be in <paramref name="percentageWithinBounds" /> for the <see cref="T:System.Windows.Ink.Stroke" /> to be considered hit.</param>
         <summary>Returns a value that indicates whether the <see cref="T:System.Windows.Ink.Stroke" /> is within the bounds of the specified rectangle.</summary>
         <returns>
           <see langword="true" /> if the current stroke is within the bounds of <paramref name="bounds" />; otherwise, <see langword="false" />.</returns>

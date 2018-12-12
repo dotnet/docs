@@ -52,7 +52,7 @@
         <Parameter Name="attributeType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="attributeType">The <see cref="T:System.Type" /> of the  [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] that must also be applied on a class in order for the attached property to be browsable on the class where <see cref="T:System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute" /> is applied..</param>
+        <param name="attributeType">The <see cref="T:System.Type" /> of the  [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] that must also be applied on a class in order for the attached property to be browsable on the class where <see cref="T:System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute" /> is applied.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>

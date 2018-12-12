@@ -142,7 +142,7 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">The object that holds the serialized object data about the exception being thrown..</param>
+        <param name="info">The object that holds the serialized object data about the exception being thrown.</param>
         <param name="context">The contextual information about the source or destination.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.CSharp.RuntimeBinder.RuntimeBinderException" /> class that has serialized data.</summary>
         <remarks>

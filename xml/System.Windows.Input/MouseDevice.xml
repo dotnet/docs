@@ -152,7 +152,7 @@
         <Parameter Name="captureMode" Type="System.Windows.Input.CaptureMode" />
       </Parameters>
       <Docs>
-        <param name="element">The element to capture the mouse..</param>
+        <param name="element">The element to capture the mouse.</param>
         <param name="captureMode">The capture policy to use.</param>
         <summary>Captures mouse input to the specified element using the specified <see cref="T:System.Windows.Input.CaptureMode" />.</summary>
         <returns>

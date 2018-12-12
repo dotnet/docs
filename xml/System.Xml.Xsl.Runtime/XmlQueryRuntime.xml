@@ -931,7 +931,7 @@
       </Parameters>
       <Docs>
         <param name="item">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
-        <param name="indexType">The index in the array of XML types..</param>
+        <param name="indexType">The index in the array of XML types.</param>
         <summary>Returns <see langword="true" /> if the type of the specified <see cref="T:System.Xml.XPath.XPathItem" /> object matches the specified XML type.</summary>
         <returns>
           <see langword="true" /> if the type of the specified <see cref="T:System.Xml.XPath.XPathItem" /> matches the specified XML type; otherwise, <see langword="false" />.</returns>

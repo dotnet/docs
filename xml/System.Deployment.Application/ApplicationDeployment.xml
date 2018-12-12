@@ -397,7 +397,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateProgressChanged> event to inform the user how much of the deployment manifest is left to download. The example requires that you deploy a Windows Forms application that includes a <xref:System.Windows.Forms.StatusStrip> control, and that this control contain a <xref:System.Windows.Forms.ToolStripStatusLabel> control named `downloadStatus`..  
+ The following code example uses the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateProgressChanged> event to inform the user how much of the deployment manifest is left to download. The example requires that you deploy a Windows Forms application that includes a <xref:System.Windows.Forms.StatusStrip> control, and that this control contain a <xref:System.Windows.Forms.ToolStripStatusLabel> control named `downloadStatus`. 
   
  [!code-cpp[ClickOnceAPI#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#1)]
  [!code-csharp[ClickOnceAPI#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#1)]
@@ -744,7 +744,7 @@
    
   
 ## Examples  
- The following code example downloads a group of Help files in the background. The example requires that you deploy a Windows Forms application that includes a <xref:System.Windows.Forms.StatusStrip> control, and that this control contain a <xref:System.Windows.Forms.ToolStripStatusLabel> control named `downloadStatus`..  
+ The following code example downloads a group of Help files in the background. The example requires that you deploy a Windows Forms application that includes a <xref:System.Windows.Forms.StatusStrip> control, and that this control contain a <xref:System.Windows.Forms.ToolStripStatusLabel> control named `downloadStatus`. 
   
  [!code-cpp[ClickOnceAPI#8](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#8)]
  [!code-csharp[ClickOnceAPI#8](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#8)]

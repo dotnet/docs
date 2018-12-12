@@ -3127,7 +3127,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
       <Parameters />
       <Docs>
         <summary>Converts this <see cref="T:System.Data.SqlTypes.SqlString" /> structure to <see cref="T:System.Data.SqlTypes.SqlSingle" />.</summary>
-        <returns>A new <see cref="T:System.Data.SqlTypes.SqlSingle" /> that is equal to the numeric value of this <see cref="T:System.Data.SqlTypes.SqlString" />..</returns>
+        <returns>A new <see cref="T:System.Data.SqlTypes.SqlSingle" /> that is equal to the numeric value of this <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>

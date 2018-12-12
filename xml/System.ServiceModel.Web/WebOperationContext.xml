@@ -324,7 +324,7 @@
         <Parameter Name="contentType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bodyWriter">The stream body writer containing the data to write to the message..</param>
+        <param name="bodyWriter">The stream body writer containing the data to write to the message.</param>
         <param name="contentType">The content type of the message</param>
         <summary>Creates a stream formatted message.</summary>
         <returns>A stream formatted message.</returns>

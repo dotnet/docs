@@ -47,7 +47,7 @@
    
   
 ## Examples  
- The following code example has two parts. The first is an excerpt of the configuration file that enables ASP.NET to use a custom event that uses the <xref:System.Web.Management.WebProcessStatistics> type. The second shows how to implement this custom event..  
+ The following code example has two parts. The first is an excerpt of the configuration file that enables ASP.NET to use a custom event that uses the <xref:System.Web.Management.WebProcessStatistics> type. The second shows how to implement this custom event. 
   
  Ensure that your custom event is raised at the proper time, that is, when the equivalent system health event it replaces would be raised.  
   

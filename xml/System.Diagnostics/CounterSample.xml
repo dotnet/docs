@@ -709,7 +709,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example displays the value of the <xref:System.Diagnostics.CounterSample.SystemFrequency%2A> property for a counter..  
+ The following example displays the value of the <xref:System.Diagnostics.CounterSample.SystemFrequency%2A> property for a counter. 
   
  [!code-cpp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CPP/averagecount32.cpp#1)]
  [!code-csharp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CS/averagecount32.cs#1)]

@@ -30,7 +30,7 @@
 >  For Windows applications, only projects built on the **Windows Application** template initialize the `My.User` object by default. In all other Windows project types, you must initialize the `My.User` object by calling the <xref:Microsoft.VisualBasic.ApplicationServices.User.InitializeWithWindowsUser%2A> method explicitly or by assigning a value to <xref:System.Threading.Thread.CurrentPrincipal%2A>.  
   
 > [!NOTE]
->  The `My.User` object cannot report information about the current Windows user when run under Windows 95 and Windows 98 because those operating systems do not support the concept of a logged-on user. You must implement custom authentication to use the `My.User` object on those operating systems..  
+>  The `My.User` object cannot report information about the current Windows user when run under Windows 95 and Windows 98 because those operating systems do not support the concept of a logged-on user. You must implement custom authentication to use the `My.User` object on those operating systems.  
   
    
   

@@ -1095,7 +1095,7 @@
  This property contains a sequence number that is guaranteed to be larger than the sequence number of the last appended record. Valid sequence numbers are greater than or equal to <xref:System.IO.Log.IRecordSequence.BaseSequenceNumber%2A> and less than <xref:System.IO.Log.IRecordSequence.LastSequenceNumber%2A>.  
   
 > [!NOTE]
->  When using a <xref:System.IO.Log.LogRecordSequence> instance, the <xref:System.IO.Log.LogRecordSequence.LastSequenceNumber%2A> value can become out of date until records are flushed to the log. See <xref:System.IO.Log.IRecordSequence.Flush%2A> and <xref:System.IO.Log.RecordAppendOptions> for more information on flushing records..  
+>  When using a <xref:System.IO.Log.LogRecordSequence> instance, the <xref:System.IO.Log.LogRecordSequence.LastSequenceNumber%2A> value can become out of date until records are flushed to the log. See <xref:System.IO.Log.IRecordSequence.Flush%2A> and <xref:System.IO.Log.RecordAppendOptions> for more information on flushing records. 
   
  ]]></format>
         </remarks>

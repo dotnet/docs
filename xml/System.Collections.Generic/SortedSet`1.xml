@@ -1576,7 +1576,7 @@
       <Docs>
         <param name="match">The delegate that defines the conditions of the elements to remove.</param>
         <summary>Removes all elements that match the conditions defined by the specified predicate from a <see cref="T:System.Collections.Generic.SortedSet`1" />.</summary>
-        <returns>The number of elements that were removed from the <see cref="T:System.Collections.Generic.SortedSet`1" /> collection..</returns>
+        <returns>The number of elements that were removed from the <see cref="T:System.Collections.Generic.SortedSet`1" /> collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

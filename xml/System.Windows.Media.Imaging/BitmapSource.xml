@@ -168,7 +168,7 @@
         <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
       </Parameters>
       <Docs>
-        <param name="sourceFreezable">The <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> to clone..</param>
+        <param name="sourceFreezable">The <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> to clone.</param>
         <summary>Makes this instance a deep copy of the specified <see cref="T:System.Windows.Media.Imaging.BitmapSource" />. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

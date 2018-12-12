@@ -337,7 +337,7 @@
       <Docs>
         <param name="encryptedData">The data to be unencrypted.</param>
         <summary>Specifies the delegate method in the derived class that the <see cref="M:System.Security.Cryptography.DataProtector.Unprotect(System.Byte[])" /> method in the base class calls back into.</summary>
-        <returns>The unencrypted data..</returns>
+        <returns>The unencrypted data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

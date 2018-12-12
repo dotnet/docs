@@ -931,7 +931,7 @@
         <exception cref="T:System.Security.Cryptography.CryptographicException">
           <paramref name="parameters" /> does not validate.</exception>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="parameters" /> references a curve that cannot be imported..</exception>
+          <paramref name="parameters" /> references a curve that cannot be imported.</exception>
         <exception cref="T:System.PlatformNotSupportedException">
           <paramref name="parameters" /> references a curve that is not supported by this platform.</exception>
       </Docs>

@@ -44,7 +44,7 @@
         <Parameter Name="arrayContents" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Build.Tasks.Xaml.AttributeParameterData&gt;" />
       </Parameters>
       <Docs>
-        <param name="type">The type of the data..</param>
+        <param name="type">The type of the data.</param>
         <param name="arrayContents">The array contents.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Xaml.AttributeParameterData" /> class with specified type and array contents.</summary>
         <remarks>To be added.</remarks>

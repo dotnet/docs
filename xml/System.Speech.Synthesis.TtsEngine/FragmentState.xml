@@ -491,7 +491,7 @@
         <ReturnType>System.Speech.Synthesis.TtsEngine.SayAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns information about the context for the generation of speech from text..</summary>
+        <summary>Returns information about the context for the generation of speech from text.</summary>
         <value>Returns a value <see cref="T:System.Speech.Synthesis.TtsEngine.SayAs" /> instance if the SSML used by a speech synthesis engine contains detailed information about the context to be used to generate speech, otherwise <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

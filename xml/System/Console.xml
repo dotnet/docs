@@ -2269,7 +2269,7 @@
   
  Note that this overload of the <xref:System.Console.ReadKey%2A> method by default echoes any displayable keys that the user presses to the console. To suppress them, call the  <xref:System.Console.ReadKey%2A> method with an `intercept` argument of `true`.  
   
- The following example uses the <xref:System.Console.ReadKey> method to display information about which key the user pressed..  
+ The following example uses the <xref:System.Console.ReadKey> method to display information about which key the user pressed. 
   
  [!code-cpp[console.readkey1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.readkey1/CPP/rk.cpp#1)]
  [!code-csharp[console.readkey1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.readkey1/CS/rk.cs#1)]

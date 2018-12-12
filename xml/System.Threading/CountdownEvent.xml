@@ -396,7 +396,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the <see cref="T:System.Threading.CountdownEvent" /> object's current count has reached zero..</summary>
+        <summary>Indicates whether the <see cref="T:System.Threading.CountdownEvent" /> object's current count has reached zero.</summary>
         <value>
           <see langword="true" /> if the current count is zero; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -459,7 +459,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed..</exception>
+        <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Reset">

@@ -1239,7 +1239,7 @@ Directory::CreateDirectory("Public\\Html");
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`..  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`. 
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  

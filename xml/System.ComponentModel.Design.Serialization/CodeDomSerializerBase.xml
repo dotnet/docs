@@ -1231,7 +1231,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `ensureInvariant` parameter is `true`, the <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeToResourceExpression%2A> method will also write the resource value into the invariant culture's resource file if the current `ResourceCulture` is not the invariant culture..  
+ If the `ensureInvariant` parameter is `true`, the <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeToResourceExpression%2A> method will also write the resource value into the invariant culture's resource file if the current `ResourceCulture` is not the invariant culture.  
   
  ]]></format>
         </remarks>

@@ -130,7 +130,7 @@
       </Parameters>
       <Docs>
         <param name="operationDescription">The operation description.</param>
-        <param name="clientOperation">The client operation..</param>
+        <param name="clientOperation">The client operation.</param>
         <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)" /> method. Used by the WCF infrastructure and is not intended to be used by developers.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1136,7 +1136,7 @@
         <param name="year">An integer that represents the year.</param>
         <param name="month">An integer from 1 to 13 that represents the month.</param>
         <param name="day">An integer from 1 to 30 that represents the day.</param>
-        <param name="era">An integer that represents the era. Specify either <see cref="F:System.Globalization.HebrewCalendar.HebrewEra" /> or <see langword="HebrewCalendar.Eras[Calendar.CurrentEra]" />..</param>
+        <param name="era">An integer that represents the era. Specify either <see cref="F:System.Globalization.HebrewCalendar.HebrewEra" /> or <see langword="HebrewCalendar.Eras[Calendar.CurrentEra]" />.</param>
         <summary>Determines whether the specified date in the specified era is a leap day.</summary>
         <returns>
           <see langword="true" /> if the specified day is a leap day; otherwise, <see langword="false" />.</returns>

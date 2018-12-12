@@ -192,7 +192,7 @@
       <Docs>
         <param name="properties">The message properties object from which to extract the property.</param>
         <param name="property">When this method returns, contains the <see cref="T:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty" /> property extracted from the message.</param>
-        <summary>Gets the <see cref="T:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty" /> property from the specified <see cref="T:System.ServiceModel.Channels.MessageProperties" /> object..</summary>
+        <summary>Gets the <see cref="T:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty" /> property from the specified <see cref="T:System.ServiceModel.Channels.MessageProperties" /> object.</summary>
         <returns>
           <see langword="true" /> if the  property was found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

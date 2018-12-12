@@ -372,7 +372,7 @@
         <param name="source">A sequence whose elements to apply the predicate to.</param>
         <param name="predicate">A function to test each element for a condition.</param>
         <summary>Determines in parallel whether all elements of a sequence satisfy a condition.</summary>
-        <returns>true if every element of the source sequence passes the test in the specified predicate, or if the sequence is empty; otherwise, false..</returns>
+        <returns>true if every element of the source sequence passes the test in the specified predicate, or if the sequence is empty; otherwise, false.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -6847,7 +6847,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="source" /> or <paramref name="KeySelector" /> is a null reference (Nothing in Visual Basic)..</exception>
+          <paramref name="source" /> or <paramref name="KeySelector" /> is a null reference (Nothing in Visual Basic).</exception>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
         <exception cref="T:System.AggregateException">One or more exceptions occurred during the evaluation of the query.</exception>
         <related type="Article" href="~/docs/standard/parallel-programming/parallel-linq-plinq.md">Parallel LINQ (PLINQ)</related>

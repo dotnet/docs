@@ -323,7 +323,7 @@
         <param name="searchRoot">The node in the Active Directory Domain Services hierarchy where the search starts. The <see cref="P:System.DirectoryServices.DirectorySearcher.SearchRoot" /> property is initialized to this value.</param>
         <param name="filter">The search filter string in Lightweight Directory Access Protocol (LDAP) format. The <see cref="P:System.DirectoryServices.DirectorySearcher.Filter" /> property is initialized to this value.</param>
         <param name="propertiesToLoad">The set of properties that are retrieved during the search. The <see cref="P:System.DirectoryServices.DirectorySearcher.PropertiesToLoad" /> property is initialized to this value.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DirectorySearcher" /> class with the specified search root, search filter, and properties to retrieve..</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DirectorySearcher" /> class with the specified search root, search filter, and properties to retrieve.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

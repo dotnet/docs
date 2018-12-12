@@ -1564,7 +1564,7 @@ P' = C.Transform(P);
       <Docs>
         <param name="point">
           <see cref="T:System.Windows.Media.Media3D.Point4D" /> to transform.</param>
-        <summary>Transforms the specified <see cref="T:System.Windows.Media.Media3D.Point4D" /> by the <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> and returns the result..</summary>
+        <summary>Transforms the specified <see cref="T:System.Windows.Media.Media3D.Point4D" /> by the <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> and returns the result.</summary>
         <returns>The result of transforming <paramref name="point" /> by this Matrix3D.</returns>
         <remarks>To be added.</remarks>
       </Docs>

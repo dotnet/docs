@@ -328,7 +328,7 @@
       <Docs>
         <param name="isChecking">
           <see langword="true" /> if this method should simply determine whether this instance can be frozen. <see langword="false" /> if this instance should actually freeze itself when this method is called.</param>
-        <summary>Makes this instance of <see cref="T:System.Windows.Media.Animation.Int32AnimationUsingKeyFrames" /> object unmodifiable or determines whether it can be made unmodifiable..</summary>
+        <summary>Makes this instance of <see cref="T:System.Windows.Media.Animation.Int32AnimationUsingKeyFrames" /> object unmodifiable or determines whether it can be made unmodifiable.</summary>
         <returns>If <paramref name="isChecking" /> is true, this method returns <see langword="true" /> if this instance can be made read-only, or <see langword="false" /> if it cannot be made read-only. If <paramref name="isChecking" /> is false, this method returns <see langword="true" /> if this instance is now read-only, or <see langword="false" /> if it cannot be made read-only, with the side effect of having begun to change the frozen status of this object.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Freezable.FreezeCore(System.Boolean)" />

@@ -114,7 +114,7 @@
         <param name="validationContext">The context that describes the object to validate.</param>
         <param name="validationResults">A collection to hold each failed validation.</param>
         <param name="validateAllProperties">
-          <see langword="true" /> to validate all properties; if <see langword="false" />, only required attributes are validated..</param>
+          <see langword="true" /> to validate all properties; if <see langword="false" />, only required attributes are validated.</param>
         <summary>Determines whether the specified object is valid using the validation context, validation results collection, and a value that specifies whether to validate all properties.</summary>
         <returns>
           <see langword="true" /> if the object validates; otherwise, <see langword="false" />.</returns>

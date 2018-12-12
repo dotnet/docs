@@ -116,7 +116,7 @@
         <Parameter Name="assemblyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xmlNamespace">The prefix for the XML namespace..</param>
+        <param name="xmlNamespace">The prefix for the XML namespace.</param>
         <param name="clrNamespace">The CLR  namespace that contains the types to map.</param>
         <param name="assemblyName">The assembly that contains the CLR  namespace.</param>
         <summary>Defines a mapping between an XML namespace and CLR namespaces in assemblies, and adds these to the <see cref="T:System.Windows.Markup.XamlTypeMapper" /> information.</summary>

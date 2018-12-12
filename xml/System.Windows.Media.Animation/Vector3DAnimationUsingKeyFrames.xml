@@ -301,7 +301,7 @@
       <Docs>
         <param name="isChecking">
           <see langword="true" /> to check if this instance can be frozen; <see langword="false" /> to freeze this instance.</param>
-        <summary>Makes this instance of <see cref="T:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames" /> object unmodifiable or determines whether it can be made unmodifiable..</summary>
+        <summary>Makes this instance of <see cref="T:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames" /> object unmodifiable or determines whether it can be made unmodifiable.</summary>
         <returns>If <paramref name="isChecking" /> is true, this method returns <see langword="true" /> if this instance can be made read-only, or <see langword="false" /> if it cannot be made read-only.  
   
  If <paramref name="isChecking" /> is false, this method returns <see langword="true" /> if this instance is now read-only, or <see langword="false" /> if it cannot be made read-only, with the side effect of having begun to change the frozen status of this object.</returns>

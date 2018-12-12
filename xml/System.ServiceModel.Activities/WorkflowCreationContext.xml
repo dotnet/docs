@@ -72,7 +72,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates if the workflow instance should be suspended or run after creation..</summary>
+        <summary>Gets or sets a value that indicates if the workflow instance should be suspended or run after creation.</summary>
         <value>
           <see langword="true" /> if the workflow instance is suspended after it is created ; <see langword="false" /> if the workflow is run after it is created.</value>
         <remarks>To be added.</remarks>
@@ -105,7 +105,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="M:System.ServiceModel.Activities.WorkflowCreationContext.OnBeginWorkflowCompleted(System.Activities.ActivityInstanceState,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception,System.TimeSpan,System.AsyncCallback,System.Object)" /> method is called in a transaction..</summary>
+        <summary>Gets or sets a value that indicates whether the <see cref="M:System.ServiceModel.Activities.WorkflowCreationContext.OnBeginWorkflowCompleted(System.Activities.ActivityInstanceState,System.Collections.Generic.IDictionary{System.String,System.Object},System.Exception,System.TimeSpan,System.AsyncCallback,System.Object)" /> method is called in a transaction.</summary>
         <value>
           <see langword="true" /> if a completion transaction is required; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>

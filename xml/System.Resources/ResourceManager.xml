@@ -1447,7 +1447,7 @@ al /out:fr-FR\ShowNumbers.resources.dll /culture:fr-FR /embed:NumberResources.fr
  [!code-csharp[Conceptual.Resources.Retrieving#5](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.retrieving/cs/getstream.cs#5)]
  [!code-vb[Conceptual.Resources.Retrieving#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.retrieving/vb/getstream.vb#5)]  
   
- You can use the following batch file to build the C# example. For Visual Basic, change `csc` to `vbc`, and change the extension of the source code file from `.cs` to `.vb`..  
+ You can use the following batch file to build the C# example. For Visual Basic, change `csc` to `vbc`, and change the extension of the source code file from `.cs` to `.vb`. 
   
 ```  
   

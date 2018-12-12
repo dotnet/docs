@@ -379,8 +379,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">If true, releases both managed and unmanaged resources; otherwise releases only unmanaged resources..</param>
-        <summary>Releases both managed and unmanaged resources.  Called when a host no longer needs the project collection.. Shuts down any logging services that the project collection owns and releases the logger thread.</summary>
+        <param name="disposing">If true, releases both managed and unmanaged resources; otherwise releases only unmanaged resources.</param>
+        <summary>Releases both managed and unmanaged resources.  Called when a host no longer needs the project collection. Shuts down any logging services that the project collection owns and releases the logger thread.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

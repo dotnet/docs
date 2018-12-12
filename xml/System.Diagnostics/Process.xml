@@ -4882,7 +4882,7 @@ p.WaitForExit();
 > [!NOTE]
 >  ASP.NET Web page and server control code executes in the context of the ASP.NET worker process on the Web server.  If you use the <xref:System.Diagnostics.Process.Start%2A> method in an ASP.NET Web page or server control, the new process executes on the Web server with restricted permissions. The process does not start in the same context as the client browser, and does not have access to the user desktop.  
   
- Whenever you use <xref:System.Diagnostics.Process.Start%2A> to start a process, you might need to close it or you risk losing system resources. Close processes using <xref:System.Diagnostics.Process.CloseMainWindow%2A> or <xref:System.Diagnostics.Process.Kill%2A>. You can check whether a process has already been closed by using its <xref:System.Diagnostics.Process.HasExited%2A> property..  
+ Whenever you use <xref:System.Diagnostics.Process.Start%2A> to start a process, you might need to close it or you risk losing system resources. Close processes using <xref:System.Diagnostics.Process.CloseMainWindow%2A> or <xref:System.Diagnostics.Process.Kill%2A>. You can check whether a process has already been closed by using its <xref:System.Diagnostics.Process.HasExited%2A> property. 
   
  A note about apartment states in managed threads is necessary here. When <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> is `true` on the process component's <xref:System.Diagnostics.Process.StartInfo%2A> property, make sure you have set a threading model on your application by setting the attribute `[STAThread]` on the `main()` method. Otherwise, a managed thread can be in an `unknown` state or put in the `MTA` state, the latter of which conflicts with <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute%2A> being `true`. Some methods require that the apartment state not be `unknown`. If the state is not explicitly set, when the application encounters such a method, it defaults to `MTA`, and once set, the apartment state cannot be changed. However, `MTA` causes an exception to be thrown when the operating system shell is managing the thread.  
   
@@ -4976,7 +4976,7 @@ p.WaitForExit();
 > [!NOTE]
 >  The file name must represent an executable file in the <xref:System.Diagnostics.Process.Start%2A> overloads that have `userName`, `password`, and `domain` parameters.  
   
- Whenever you use <xref:System.Diagnostics.Process.Start%2A> to start a process, you might need to close it or you risk losing system resources. Close processes using <xref:System.Diagnostics.Process.CloseMainWindow%2A> or <xref:System.Diagnostics.Process.Kill%2A>. You can check whether a process has already been closed by using its <xref:System.Diagnostics.Process.HasExited%2A> property..  
+ Whenever you use <xref:System.Diagnostics.Process.Start%2A> to start a process, you might need to close it or you risk losing system resources. Close processes using <xref:System.Diagnostics.Process.CloseMainWindow%2A> or <xref:System.Diagnostics.Process.Kill%2A>. You can check whether a process has already been closed by using its <xref:System.Diagnostics.Process.HasExited%2A> property. 
   
    
   
@@ -5060,7 +5060,7 @@ p.WaitForExit();
 > [!NOTE]
 >  The file name must represent an executable file in the <xref:System.Diagnostics.Process.Start%2A> overloads that have `userName`, `password`, and `domain` parameters.  
   
- Whenever you use <xref:System.Diagnostics.Process.Start%2A> to start a process, you might need to close it or you risk losing system resources. Close processes using <xref:System.Diagnostics.Process.CloseMainWindow%2A> or <xref:System.Diagnostics.Process.Kill%2A>. You can check whether a process has already been closed by using its <xref:System.Diagnostics.Process.HasExited%2A> property..  
+ Whenever you use <xref:System.Diagnostics.Process.Start%2A> to start a process, you might need to close it or you risk losing system resources. Close processes using <xref:System.Diagnostics.Process.CloseMainWindow%2A> or <xref:System.Diagnostics.Process.Kill%2A>. You can check whether a process has already been closed by using its <xref:System.Diagnostics.Process.HasExited%2A> property. 
   
  ]]></format>
         </remarks>

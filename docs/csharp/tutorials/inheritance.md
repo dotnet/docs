@@ -243,7 +243,7 @@ In addition to the members that it inherits from `Publication`, the `Book` class
 
 - Two constructors
 
-  The two `Book` constructors share three common parameters. Two, *title* and *publisher*, correspond to parameters of the `Publication` constructor. The third is *author*, which is stored to a public readonly `Author` property. One constructor includes an *isbn* parameter, which is stored in the `ISBN` auto-property.
+  The two `Book` constructors share three common parameters. Two, *title* and *publisher*, correspond to parameters of the `Publication` constructor. The third is *author*, which is stored to a public immutable `Author` property. One constructor includes an *isbn* parameter, which is stored in the `ISBN` auto-property.
 
   The first constructor uses the [this](../language-reference/keywords/this.md) keyword to call the other constructor. Constructor chaining is a common pattern in defining constructors. Constructors with fewer parameters provide default values when calling the constructor with the greatest number of parameters.
 

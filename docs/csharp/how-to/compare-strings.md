@@ -28,7 +28,7 @@ equality, but some differences, such as case differences, may be ignored.
 
 ## Default ordinal comparisons
 
-The most common methos that test for equality, <xref:System.String.Equals%2A?displayProperty=nameWithType> and <xref:System.String.op_Equality%2A?displayProperty=nameWithType>, use
+The most common methods that test for equality, <xref:System.String.Equals%2A?displayProperty=nameWithType> and <xref:System.String.op_Equality%2A?displayProperty=nameWithType>, use
 a case-sensitive ordinal comparison. The results are shown in the following example.
 
 [!code-csharp-interactive[Comparing strings using an ordinal comparison](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#1)]
@@ -48,7 +48,7 @@ for a case-insensitive ordinal comparison. There is also a static
 
 [!code-csharp-interactive[Comparing strings ignoring case](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#2)]
 
-When performing a case-insensitive ordinal comparison, these methods use the casing conventions of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture)
+When performing a case-insensitive ordinal comparison, these methods use the casing conventions of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture).
 
 ## Linguistic comparisons
 

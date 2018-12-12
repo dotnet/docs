@@ -728,8 +728,10 @@
   
 ## Remarks  
  The <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property accepts only calendars that are valid for the culture that is associated with the <xref:System.Globalization.DateTimeFormatInfo> object. The <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=nameWithType> property specifies the calendars that can be used by a particular culture, and the <xref:System.Globalization.CultureInfo.Calendar%2A?displayProperty=nameWithType> property specifies the default calendar for the culture.  
-  
- Changing the value of this property affects the following properties as well: <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A>, <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A>, <xref:System.Globalization.DateTimeFormatInfo.DayNames%2A>, <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A>, <xref:System.Globalization.DateTimeFormatInfo.CalendarWeekRule%2A>, <xref:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek%2A>, <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A>, <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A>, <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A>, <xref:System.Globalization.DateTimeFormatInfo.YearMonthPattern%2A>, and <xref:System.Globalization.DateTimeFormatInfo.MonthDayPattern%2A>.  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
+
+Changing the value of this property affects the following properties as well: <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A>, <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A>, <xref:System.Globalization.DateTimeFormatInfo.DayNames%2A>, <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A>, <xref:System.Globalization.DateTimeFormatInfo.CalendarWeekRule%2A>, <xref:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek%2A>, <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A>, <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A>, <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A>, <xref:System.Globalization.DateTimeFormatInfo.YearMonthPattern%2A>, and <xref:System.Globalization.DateTimeFormatInfo.MonthDayPattern%2A>.  
   
  For example, if the culture of the current thread is Japanese, this property accepts <xref:System.Globalization.JapaneseCalendar>, <xref:System.Globalization.GregorianCalendarTypes.Localized><xref:System.Globalization.GregorianCalendar>, or <xref:System.Globalization.GregorianCalendarTypes.USEnglish><xref:System.Globalization.GregorianCalendar>. When the <xref:System.Globalization.JapaneseCalendar> is used, the default long date specifier is "gg y'\x5e74'M'\x6708'd'\x65e5'". When the <xref:System.Globalization.GregorianCalendarTypes.Localized><xref:System.Globalization.GregorianCalendar>, is used, the default long date specifier is "yyyy'\x5e74'M'\x6708'd'\x65e5'".  
   
@@ -1634,9 +1636,9 @@
  <xref:System.Globalization.DateTimeFormatInfo.GetEra%2A> ignores punctuation in abbreviated era names, only if the <xref:System.Globalization.GregorianCalendar> is selected in <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=nameWithType> and the culture uses "A.D." as the era name, that is, "A.D." is equivalent to "AD".  
   
  <xref:System.Globalization.DateTimeFormatInfo.GetEra%2A> compares `eraName` with the full era name returned by <xref:System.Globalization.DateTimeFormatInfo.GetEraName%2A> and with the abbreviated era name returned by <xref:System.Globalization.DateTimeFormatInfo.GetAbbreviatedEraName%2A>.  
-  
-   
-  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
+
 ## Examples  
  The following example shows that <xref:System.Globalization.DateTimeFormatInfo> ignores the punctuation in the era name, only if the calendar is Gregorian and the culture uses the era name "A.D.".  
   
@@ -1698,6 +1700,8 @@
  The era name is the name a calendar uses to refer to a period of time reckoned from a fixed point or event. For example, "A.D." or "C.E." is the current era in the Gregorian calendar.  
   
  The valid values for `era` are listed in the <xref:System.Globalization.Calendar.Eras%2A> property of the appropriate class derived from <xref:System.Globalization.Calendar>. For example: <xref:System.Globalization.JapaneseCalendar.Eras%2A?displayProperty=nameWithType> displays a list of eras that are supported by this implementation.  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
   
  ]]></format>
         </remarks>

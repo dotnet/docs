@@ -45,7 +45,20 @@
 >  For information about using the <xref:System.Globalization.JapaneseLunisolarCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
   
  For example, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns a number between 1 and 13 that indicates the month associated with a specified date. If there is a leap month between the eighth and ninth months of the year, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns 8 for the eighth month, 9 for the leap eighth month, and 10 for the ninth month.  
+
+The `JapaneseLuniSolarCalendar` class recognizes one era for every emperor's reign. The current era is the Heisei era, which began in the Gregorian calendar year 1989. The era name is typically displayed before the year. For example, the Gregorian calendar year 2001 is the Japanese calendar year Heisei 13. Note that the first year of an era is called "Gannen." Therefore, the Gregorian calendar year 1989 was the Japanese calendar year Heisei Gannen.  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
+
+ This class assigns numbers to the eras as follows:  
   
+|GetEra value|Era Name|Era Abbreviation|Gregorian Dates|  
+|------------------|--------------|----------------------|---------------------|  
+|4|平成 (Heisei)|平 (H, h)|January 8, 1989 to present|  
+|3|昭和 (Showa)|昭 (S, s)|December 25, 1926 to January 7, 1989|  
+|2|大正 (Taisho)|大 (T, t)|July 30, 1912 to December 24, 1926|  
+|1|明治 (Meiji)|明 (M, m)|September 8, 1868 to July 29, 1912|  
+
  Currently, the <xref:System.Globalization.JapaneseLunisolarCalendar> is not used by any of the cultures supported by the <xref:System.Globalization.CultureInfo> class. Therefore, this class can be used only to calculate dates in the Japanese lunisolar calendar. It cannot be used as the default calendar for any culture supported by the <xref:System.Globalization.CultureInfo> class. 
   
  Each <xref:System.Globalization.CultureInfo> object supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A?displayProperty=nameWithType> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=nameWithType> property returns an array containing all the calendars supported by the culture. You can change the default calendar to any one of the optional calendars supported by a <xref:System.Globalization.CultureInfo> instance. To do this, set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of the <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property to the new <xref:System.Globalization.Calendar>.
@@ -168,7 +181,9 @@
   
 ## Remarks  
  The values in the array returned by this property are numbers that range from 1 to the largest era number. The largest era number is returned in the first array element, and the smallest era number is returned in the last element.  
-  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
+
  The <xref:System.Globalization.JapaneseLunisolarCalendar.Eras%2A?displayProperty=nameWithType> property returns the same values as the <xref:System.Globalization.JapaneseCalendar.Eras%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
@@ -212,7 +227,13 @@
         <param name="time">The <see cref="T:System.DateTime" /> to read.</param>
         <summary>Retrieves the era that corresponds to the specified <see cref="T:System.DateTime" />.</summary>
         <returns>An integer that represents the era specified in the <paramref name="time" /> parameter.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="JapaneseEra">
@@ -252,7 +273,9 @@
   
 ## Remarks  
  The value of this field is 1.  
-  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
+
  ]]></format>
         </remarks>
       </Docs>

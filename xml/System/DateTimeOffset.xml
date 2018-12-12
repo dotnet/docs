@@ -59,11 +59,10 @@
   
 ## Remarks  
  The <xref:System.DateTimeOffset> structure includes a <xref:System.DateTime> value, together with an <xref:System.DateTimeOffset.Offset%2A> property that defines the difference between the current <xref:System.DateTimeOffset> instance's date and time and Coordinated Universal Time (UTC). Because it exactly defines a date and time relative to UTC, the <xref:System.DateTimeOffset> structure does not include a `Kind` member, as the <xref:System.DateTime> structure does. It represents dates and times with values whose UTC ranges from 12:00:00 midnight, January 1, 0001 Anno Domini (Common Era), to 11:59:59 P.M., December 31, 9999 A.D. (C.E.).  
-  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
+
  The time component of a <xref:System.DateTimeOffset> value is measured in 100-nanosecond units called ticks, and a particular date is the number of ticks since 12:00 midnight, January 1, 0001 A.D. (C.E.) in the <xref:System.Globalization.GregorianCalendar> calendar. A <xref:System.DateTimeOffset> value is always expressed in the context of an explicit or default calendar. Ticks that are attributable to leap seconds are not included in the total number of ticks.  
-  
-> [!NOTE]
->  If you are working with a ticks value that you want to convert to some other time interval, such as minutes or seconds, you should use the <xref:System.TimeSpan.TicksPerDay?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerHour?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerMinute?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerSecond?displayProperty=nameWithType>, or <xref:System.TimeSpan.TicksPerMillisecond?displayProperty=nameWithType> constant to perform the conversion. For example, to add the number of seconds represented by a specified number of ticks to the <xref:System.DateTimeOffset.Second%2A> component of a <xref:System.DateTimeOffset> value, you can use the expression `dateValue.Second + nTicks/Timespan.TicksPerSecond`.  
   
  Although a <xref:System.DateTimeOffset> value includes an offset, it is not a fully time zone-aware data structure. While an offset from UTC is one characteristic of a time zone, it does not unambiguously identify a time zone. Not only do multiple time zones share the same offset from UTC, but the offset of a single time zone changes if it observes daylight saving time. This means that, as soon as a <xref:System.DateTimeOffset> value is disassociated from its time zone, it can no longer be unambiguously linked back to its original time zone.  
   
@@ -87,7 +86,11 @@
 -   Time manipulation and extraction operations.  
   
      You can extract either the date or the time of a <xref:System.DateTimeOffset> value. You can also retrieve the value of a particular <xref:System.DateTimeOffset> component, such as its year or its month.  
+
+   > [!NOTE]
+   >  If you are working with a ticks value that you want to convert to some other time interval, such as minutes or seconds, you should use the <xref:System.TimeSpan.TicksPerDay?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerHour?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerMinute?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerSecond?displayProperty=nameWithType>, or <xref:System.TimeSpan.TicksPerMillisecond?displayProperty=nameWithType> constant to perform the conversion. For example, to add the number of seconds represented by a specified number of ticks to the <xref:System.DateTimeOffset.Second%2A> component of a <xref:System.DateTimeOffset> value, you can use the expression `dateValue.Second + nTicks/Timespan.TicksPerSecond`.  
   
+
 -   Date and time conversion.  
   
      You can convert any <xref:System.DateTimeOffset> value to another <xref:System.DateTimeOffset> value that represents the same point in time in another time zone. However, a time zone's adjustment rules are applied only in the case of the <xref:System.DateTimeOffset.ToLocalTime%2A> method, which converts a <xref:System.DateTimeOffset> value to the date and time in the local system zone.  
@@ -565,9 +568,9 @@
   
 ## Remarks  
  The `year`, `month`, `day`, `hour`, `minute`, `second`, and `millisecond` parameters all reflect values expressed in the calendar specified by the `calendar` parameter. An exception is thrown if these values form a date and time that cannot be expressed by using this calendar.  
-  
-   
-  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]   
+
 ## Examples  
  The following example uses instances of both the <xref:System.Globalization.HebrewCalendar> class and the <xref:System.Globalization.HijriCalendar> class to instantiate a <xref:System.DateTimeOffset> value. That date is then displayed to the console using the respective calendars and the Gregorian calendar.  
   
@@ -3242,6 +3245,13 @@
       </AssemblyInfo>
       <Docs>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]        
+
+         ]]></format>
+         </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName="Parse">
@@ -3579,6 +3589,11 @@
       </AssemblyInfo>
       <Docs>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent. The format of the string representation must match a specified format exactly.</summary>
+          <format type="text/markdown"><![CDATA[  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]        
+
+         ]]></format>
       </Docs>
     </MemberGroup>
     <Member MemberName="ParseExact">
@@ -4738,6 +4753,11 @@ Me.ToUtcDateTime().ToFileTime()
       </AssemblyInfo>
       <Docs>
         <summary>Converts the value of the current <see cref="T:System.DateTimeOffset" /> object to its equivalent string representation.</summary>
+          <format type="text/markdown"><![CDATA[  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]        
+
+         ]]></format>
       </Docs>
     </MemberGroup>
     <Member MemberName="ToString">
@@ -5268,6 +5288,11 @@ Me.ToUtcDateTime().ToFileTime()
       </AssemblyInfo>
       <Docs>
         <summary>Converts a specified string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent.</summary>
+          <format type="text/markdown"><![CDATA[  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]        
+
+         ]]></format>
       </Docs>
     </MemberGroup>
     <Member MemberName="TryParse">
@@ -5540,6 +5565,11 @@ Me.ToUtcDateTime().ToFileTime()
       </AssemblyInfo>
       <Docs>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent. The format of the string representation must match a specified format exactly.</summary>
+          <format type="text/markdown"><![CDATA[  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]        
+
+         ]]></format>
       </Docs>
     </MemberGroup>
     <Member MemberName="TryParseExact">

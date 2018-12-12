@@ -49,7 +49,9 @@
 >  For information about using the <xref:System.Globalization.JapaneseCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
   
  The Japanese calendar recognizes one era for every emperor's reign. The current era is the Heisei era, which began in the Gregorian calendar year 1989. The era name is typically displayed before the year. For example, the Gregorian calendar year 2001 is the Japanese calendar year Heisei 13. Note that the first year of an era is called "Gannen." Therefore, the Gregorian calendar year 1989 was the Japanese calendar year Heisei Gannen.  
-  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
+
  This class assigns numbers to the eras as follows:  
   
 |GetEra value|Era Name|Era Abbreviation|Gregorian Dates|  
@@ -387,7 +389,9 @@
   
 ## Remarks  
  The Japanese calendar recognizes one era for every emperor's reign. The current era is the Heisei era, which began in the Gregorian calendar year 1989. The era name is typically displayed before the year. For example, the Gregorian calendar year 2001 is the Japanese calendar year Heisei 13. Note that the first year of an era is called "Gannen." Therefore, the Gregorian calendar year 1989 was the Japanese calendar year Heisei Gannen.  
-  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
+
  This class assigns numbers to the eras as follows:  
   
 |GetEra value|Era Name|Era Abbreviation|Gregorian Dates|  
@@ -801,7 +805,9 @@
   
 ## Remarks  
  The Japanese calendar recognizes one era for every emperor's reign. The current era is the Heisei era, which began in the Gregorian calendar year 1989. The era name is typically displayed before the year. For example, the Gregorian calendar year 2001 is the Japanese calendar year Heisei 13. Note that the first year of an era is called "Gannen." Therefore, the Gregorian calendar year 1989 was the Japanese calendar year Heisei Gannen.  
-  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
+
  This class assigns numbers to the eras as follows:  
   
 |GetEra value|Era Name|Era Abbreviation|Gregorian Dates|  
@@ -812,8 +818,6 @@
 |1|明治 (Meiji)|明 (M, m)|September 8, 1868 to July 29, 1912|  
   
  Ordinarily, the <xref:System.Globalization.JapaneseCalendar> class supports dates from September 8 in the year Meiji 1 (September 8, 1868 of the Gregorian calendar), which is the value of the <xref:System.Globalization.JapaneseCalendar.MinSupportedDateTime%2A> property. However, the <xref:System.Globalization.JapaneseCalendar.GetEra%2A> method successfully returns the era for dates from January 1 through September 7 in the year Meiji 1 (January 1, 1868 through September 7, 1868 in the Gregorian calendar). For dates earlier than January 1, 1868 in the Gregorian calendar, the method throws an <xref:System.ArgumentOutOfRangeException> exception.  
-  
-   
   
 ## Examples  
  The following example displays the values of several components of a <xref:System.DateTime> in terms of the Japanese calendar.  

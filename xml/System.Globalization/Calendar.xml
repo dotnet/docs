@@ -56,7 +56,9 @@
  Any moment in time can be represented as a set of numeric values using a particular calendar. For example, a vernal equinox occurred at (1999, 3, 20, 8, 46, 0, 0.0) in the Gregorian calendar, that is, March 20, 1999 C.E. at 8:46:00:0.0. An implementation of <xref:System.Globalization.Calendar> can map any date in the range of a specific calendar to a similar set of numeric values, and <xref:System.DateTime> can map such sets of numeric values to a textual representation using information from <xref:System.Globalization.Calendar> and <xref:System.Globalization.DateTimeFormatInfo>. The textual representation can be culture-sensitive, for example, "8:46 AM March 20th 1999 AD" for the en-US culture, or culture-insensitive, for example, "1999-03-20T08:46:00" in ISO 8601 format.  
   
  A <xref:System.Globalization.Calendar> implementation can define one or more eras. The <xref:System.Globalization.Calendar> class identifies the eras as enumerated integers, where the current era (<xref:System.Globalization.Calendar.CurrentEra>) has the value 0.  
-  
+
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
+
  To make up for the difference between the calendar year and the actual time that the earth rotates around the sun or the actual time that the moon rotates around the earth, a leap year has a different number of days from a standard calendar year. Each <xref:System.Globalization.Calendar> implementation defines leap years differently.  
   
  For consistency, the first unit in each interval (the first month, for example) is assigned the value 1.  
@@ -946,7 +948,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Represents the current era of the current calendar.</summary>
+        <summary>Represents the current era of the current calendar. The value of this field is 0.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1038,10 +1040,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The eras are in reverse chronological order, with the current era as the first element of the array, and the oldest era as the last element of the array. For example, the value of the current era in <xref:System.Globalization.JapaneseCalendar> is 4, which is the first element of the array.  
+ The eras are in reverse chronological order, with the current era as the first element of the array, and the oldest era as the last element of the array. For example, the value of the current era in <xref:System.Globalization.JapaneseCalendar> is 4, which is the first element of the array. Only the <xref:System.Globalization.JapaneseCalendar> and the <xref:System.Globalization.JapaneseLunisolarCalendar> classes support multiple eras.
   
-   
-  
+[!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
+
 ## Examples  
  The following code example displays the values contained in <xref:System.Globalization.JapaneseCalendar.Eras%2A?displayProperty=nameWithType>.  
   
@@ -1586,7 +1588,10 @@
         <returns>An integer that represents the era in <paramref name="time" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+## Remarks
+
+Only the <xref:System.Globalization.JapaneseCalendar> and the <xref:System.Globalization.JapaneseLunisolarCalendar> classes support multiple eras.
+
 ## Examples  
  The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
   

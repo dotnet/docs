@@ -886,7 +886,7 @@
       <Docs>
         <param name="writer">The specified XmlWriter.</param>
         <param name="token">The security token.</param>
-        <param name="inToken">To be added.</param>
+        <param name="inToken">The security token.</param>
         <summary>Writes the token core with a specified security token using the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Xml.XmlException">An error occurred when serializing the security token.</exception>

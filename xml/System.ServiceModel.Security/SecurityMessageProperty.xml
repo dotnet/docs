@@ -365,7 +365,16 @@
         <value>The sender ID prefix for this message.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The property value is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">No character of the property value is alphabetic, numeric, or equal to "_", ".", or "-".</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          The length of the property value is 0.
+
+-or-
+
+The first character of the property value is not alphabetic and not equal to "_".
+
+-or-
+        
+No character of the property value is alphabetic, numeric, or equal to "_", ".", or "-".</exception>
       </Docs>
     </Member>
     <Member MemberName="ServiceSecurityContext">

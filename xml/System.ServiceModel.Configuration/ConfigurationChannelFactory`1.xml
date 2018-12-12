@@ -50,7 +50,7 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.ConfigurationChannelFactory`1" /> class with the specified endpoint configuration name, <see cref="T:System.Configuration.Configuration" /> object, and the <see cref="T:System.ServiceModel.EndpointAddress" /> object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="configuration" /> is <see langword="null" />.</exception>
+          <paramref name="endpointConfigurationName" /> or <paramref name="configuration" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

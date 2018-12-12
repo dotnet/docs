@@ -231,7 +231,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a collection of resource types that can be added to the collection.</summary>
-        <value>Returns <see cref="T:System.Collections.ObjectModel.Collection`1" />.</value>
+        <value>A collection of resource types that can be added to the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -261,7 +261,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a collection of attribute extensions.</summary>
-        <value>Returns <see cref="T:System.Collections.Generic.Dictionary`2" />.</value>
+        <value>A collection of attribute extensions.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,8 +290,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the base URI for the <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> instance.</summary>
-        <value>Returns <see cref="T:System.Uri" />.</value>
+        <summary>Gets or sets the base URI for the <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> instance.</summary>
+        <value>The base URI for the <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> instance</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,7 +321,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a collection of <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> objects.</summary>
-        <value>Returns <see cref="T:System.Collections.ObjectModel.Collection`1" />.</value>
+        <value>A collection of <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> objects.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,7 +413,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the element extensions for the service document.</summary>
-        <value>Returns <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtensionCollection" />.</value>
+        <value>The element extensions for the service document.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -453,8 +453,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the URI for the collection.</summary>
-        <value>Returns <see cref="T:System.Uri" />.</value>
+        <summary>Gets or sets the URI for the collection.</summary>
+        <value>The URI for the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -483,8 +483,8 @@
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The title of the collection.</summary>
-        <value>Returns <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" />.</value>
+        <summary>Gets or sets the title of the collection.</summary>
+        <value>The title of the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

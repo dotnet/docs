@@ -630,8 +630,8 @@
       </Parameters>
       <Docs>
         <param name="buffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> to test.</param>
-        <param name="filter">The <see langword="out" /> parameter that stores the filter that is satisfied by the <c>messageBuffer</c>.</param>
-        <param name="result">The <see langword="out" /> parameter that stores the filter that is satisfied by the <c>messageBuffer</c>.</param>
+        <param name="filter">The <see langword="out" /> parameter that stores the filter that is satisfied by the <paramref name="buffer" />.</param>
+        <param name="result">The <see langword="out" /> parameter that stores the filter that is satisfied by the <paramref name="buffer" />.</param>
         <summary>Returns a value that indicates whether the match criterion of exactly one filter in the table is satisfied by the specified message and returns that filter in an <see langword="out" /> parameter.</summary>
         <returns>
           <see langword="true" /> if match criterion of exactly one filter in the table is satisfied by the message; <see langword="false" /> if no filter is satisfied.</returns>
@@ -852,7 +852,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> to test.</param>
-        <param name="data">The <see langword="out" /> parameter that stores the <c>FilterData</c> that matches the <c>messageBuffer</c>.</param>
+        <param name="data">The <see langword="out" /> parameter that stores the <c>FilterData</c> that matches the <paramref name="buffer" />.</param>
         <summary>Returns a value that indicates whether the match criterion of exactly one filter in the table is satisfied by the specified buffered message and adds the matching filter data to a collection.</summary>
         <returns>
           <see langword="true" /> if the match criterion of one filter in the table is satisfied by the buffered message; <see langword="false" /> if no filter is satisfied.</returns>
@@ -956,7 +956,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> to test.</param>
-        <param name="results">The reference parameter that stores the filter data of the filters that are satisfied by the <c>messageBuffer</c>.</param>
+        <param name="results">The reference parameter that stores the filter data of the filters that are satisfied by the <paramref name="buffer" />.</param>
         <summary>Returns a value that indicates whether the match criterion of exactly one filter in the table is satisfied by the specified message buffer and adds the <paramref name="FilterData" /> of the matching filters to the <paramref name="results" /> collection.</summary>
         <returns>
           <see langword="true" /> if the match criterion of exactly one <see cref="T:System.ServiceModel.Dispatcher.ActionMessageFilter" /> in the table is satisfied by the buffered message; <see langword="false" /> if no filter is satisfied.</returns>

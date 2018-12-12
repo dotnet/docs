@@ -159,7 +159,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a collection of attribute extensions.</summary>
-        <value>Returns <see cref="T:System.Collections.Generic.Dictionary`2" />.</value>
+        <value>A collection of attribute extensions.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -195,8 +195,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the base URI for the <see cref="T:System.ServiceModel.Syndication.Workspace" /> instance.</summary>
-        <value>Returns <see cref="T:System.Uri" />.</value>
+        <summary>Gets or sets the base URI for the <see cref="T:System.ServiceModel.Syndication.Workspace" /> instance.</summary>
+        <value>The base URI for the <see cref="T:System.ServiceModel.Syndication.Workspace" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,7 +226,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the collection associated with the workspace.</summary>
-        <value>Returns <see cref="T:System.Collections.ObjectModel.Collection`1" />.</value>
+        <value>The collection associated with the workspace.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,7 +287,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the element extensions contained within the <see cref="T:System.ServiceModel.Syndication.Workspace" /> instance.</summary>
-        <value>Returns <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtensionCollection" />.</value>
+        <value>The element extensions contained within the <see cref="T:System.ServiceModel.Syndication.Workspace" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,8 +316,8 @@
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The title of the <see cref="T:System.ServiceModel.Syndication.Workspace" /> instance.</summary>
-        <value>Returns <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" />.</value>
+        <summary>Gets or sets the title of the <see cref="T:System.ServiceModel.Syndication.Workspace" /> instance.</summary>
+        <value>The title of the <see cref="T:System.ServiceModel.Syndication.Workspace" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -357,7 +357,7 @@
         <param name="value">The attribute to parse.</param>
         <param name="version">The syndication version to use when parsing.</param>
         <summary>Attempts to parse an attribute extension.</summary>
-        <returns>Returns <see cref="T:System.Boolean" />.</returns>
+        <returns><see langword="true" /> if the attribute extension was parsed successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -393,7 +393,7 @@
         <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
         <param name="version">The syndication version to use when parsing.</param>
         <summary>Attempts to parse an element extension.</summary>
-        <returns>Returns <see cref="T:System.Boolean" />.</returns>
+        <returns><see langword="true" /> if the attribute extension was parsed successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -215,7 +215,12 @@
           <paramref name="reader" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="reader" /> is not positioned on the starting element.</exception>
-        <exception cref="T:System.InvalidOperationException">An invalid dialect attribute was read: it was not XPath.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          There were problems reading the dialect attribute, namespace URI, or duplicate attributes were found.
+
+-or-
+
+An invalid dialect attribute was read: it was not XPath.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -603,7 +608,11 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="reader" /> encountered an empty element.</exception>
+          <paramref name="reader" /> is not positioned on the starting element.
+
+-or-
+
+<paramref name="reader" /> encountered an empty element.</exception>
         <exception cref="T:System.InvalidOperationException">Content of a node is invalid.</exception>
       </Docs>
     </Member>
@@ -894,7 +903,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="localName" /> is <see langword="null" />.</exception>
+          <paramref name="writer" /> or <paramref name="localName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="localName" /> has length = 0.</exception>
       </Docs>

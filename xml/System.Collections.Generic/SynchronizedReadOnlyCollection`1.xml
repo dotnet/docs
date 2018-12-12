@@ -523,9 +523,7 @@
       </ReturnValue>
       <Docs>
         <summary>This property always returns <see langword="true" /> because the collection is read-only.</summary>
-        <value>Returns <see cref="T:System.Boolean" />.  
-  
- This property always returns <see langword="true" /> because the collection is read-only.</value>
+        <value>This property always returns <see langword="true" /> because the collection is read-only.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -629,9 +627,7 @@
       <Docs>
         <param name="index">The zero-based index of the element to be retrieved from the collection.</param>
         <summary>Returns the object in the collection that has the specified <paramref name="index" />.</summary>
-        <value>Returns <see cref="T:System.Boolean" />.  
-  
- Returns the object in the collection that has the specified <paramref name="index" />.</value>
+        <value>The object in the collection that has the specified <paramref name="index" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -720,9 +716,7 @@
       </ReturnValue>
       <Docs>
         <summary>This property always returns <see langword="true" /> because the collection is thread safe.</summary>
-        <value>Returns <see cref="T:System.Boolean" />.  
-  
- This property always returns <see langword="true" /> because the collection is thread safe.</value>
+        <value>This property always returns <see langword="true" /> because the collection is thread safe.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -748,9 +742,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the object used to synchronize access to the thread-safe, read-only collection.</summary>
-        <value>Returns <see cref="T:System.Object" />.  
-  
- The object used to synchronize access to the thread-safe, read-only collection.</value>
+        <value>The object used to synchronize access to the thread-safe, read-only collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -783,7 +775,7 @@
       <Parameters />
       <Docs>
         <summary>Returns an enumerator that iterates through the synchronized, read-only collection.</summary>
-        <returns>Returns <see cref="T:System.Collections.IEnumerator" />.  An enumerator that iterates through the synchronized, read-only collection.</returns>
+        <returns>An enumerator that iterates through the synchronized, read-only collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -812,7 +804,7 @@
       <Docs>
         <param name="value">The element to be added to the collection.</param>
         <summary>Adds an element to the collection.</summary>
-        <returns>Returns <see cref="T:System.Int32" />. The position into which the new element was inserted.</returns>
+        <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -851,14 +843,7 @@
       <Parameters />
       <Docs>
         <summary>Items cannot be cleared from a read-only collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Items cannot be cleared from a read-only collection.  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Items cannot be cleared from a read-only collection.</exception>
       </Docs>
     </Member>
@@ -987,9 +972,7 @@
       </ReturnValue>
       <Docs>
         <summary>This property returns <see langword="true" /> because the read-only collection is always fixed in size.</summary>
-        <value>Returns <see cref="T:System.Boolean" />.  
-  
- This property returns <see langword="true" /> because the read-only collection is always fixed in size.</value>
+        <value>This property returns <see langword="true" /> because the read-only collection is always fixed in size.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1015,9 +998,7 @@
       </ReturnValue>
       <Docs>
         <summary>This property always returns <see langword="true" /> because the collection is read-only.</summary>
-        <value>Returns <see cref="T:System.Boolean" />.  
-  
- This property always returns <see langword="true" /> because the collection is read-only.</value>
+        <value>This property always returns <see langword="true" /> because the collection is read-only.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1052,9 +1033,7 @@
       <Docs>
         <param name="index">The zero-based index of the element to be retrieved from the collection.</param>
         <summary>Gets the item at a specified zero-based index.</summary>
-        <value>Returns <see cref="T:System.Object" />.  
-  
- Gets the item at a specified zero-based index.</value>
+        <value>The item at a specified zero-based index.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Items cannot be set in a read-only collection.</exception>
       </Docs>

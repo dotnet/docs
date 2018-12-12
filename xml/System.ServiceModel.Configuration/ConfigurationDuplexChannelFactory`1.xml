@@ -52,7 +52,7 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.ConfigurationDuplexChannelFactory`1" /> class with the specified callback object, endpoint configuration name, remote address, and configuration settings.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="configuration" /> is <see langword="null" />.</exception>
+          <paramref name="callbackObject" />, <paramref name="endpointConfigurationName" />, or <paramref name="configuration" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

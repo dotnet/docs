@@ -1390,7 +1390,7 @@
       <Docs>
         <param name="addressingVersion">The <see cref="T:System.ServiceModel.Channels.AddressingVersion" /> of the current endpoint address.</param>
         <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> to which the endpoint address is saved.</param>
-        <param name="localname">To be added.</param>
+        <param name="localname">The <see cref="T:System.Xml.XmlDictionaryString" /> that contains the local name for the XML node to contain the endpoint address.</param>
         <param name="ns">The <see cref="T:System.Xml.XmlDictionaryString" /> that contains the namespace for the XML node to contain the endpoint address.</param>
         <summary>Saves the current endpoint address of a specified version to an XML dictionary writer with a specified namespace and local name.</summary>
         <remarks>
@@ -1437,7 +1437,7 @@
       <Docs>
         <param name="addressingVersion">The <see cref="T:System.ServiceModel.Channels.AddressingVersion" /> of the current endpoint address.</param>
         <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to which the endpoint address is saved.</param>
-        <param name="localname">To be added.</param>
+        <param name="localname">The <see cref="T:System.Xml.XmlDictionaryString" /> that contains the local name for the XML node to contain the endpoint address.</param>
         <param name="ns">The <see cref="T:System.Xml.XmlDictionaryString" /> that contains the namespace for the XML node to contain the endpoint address.</param>
         <summary>Saves the current endpoint address of a specified version to an XML writer with a specified namespace and local name.</summary>
         <remarks>

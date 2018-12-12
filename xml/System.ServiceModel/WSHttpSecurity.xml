@@ -66,8 +66,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the message-level security settings for this binding.</summary>
-        <value>A <see cref="T:System.ServiceModel.NonDualMessageSecurityOverHttp" /> instance.  
-  
+        <value>The message-level security settings for this binding. 
  The default value includes: <see cref="P:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext" /> with default set to <see langword="true" />, <see cref="P:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType" /> is <see cref="F:System.ServiceModel.MessageCredentialType.Windows" />, <see cref="P:System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite" /> is <see cref="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256" />, and <see cref="P:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential" /> is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

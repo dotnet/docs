@@ -346,7 +346,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="serviceHostBase" /> is <see langword="null" />.</exception>
+          <paramref name="description" /> or <paramref name="serviceHostBase" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IServiceBehavior.Validate">

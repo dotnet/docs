@@ -676,7 +676,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="results" /> is <see langword="null" />.</exception>
+          <paramref name="message" /> or <paramref name="results" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ServiceModel.Dispatcher.InvalidBodyAccessException">A filter attempted to examine the contents of the message body.</exception>
       </Docs>
     </Member>
@@ -723,7 +723,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="results" /> is <see langword="null" />.</exception>
+          <paramref name="messageBuffer" /> or <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingFilters">
@@ -763,7 +763,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="results" /> is <see langword="null" />.</exception>
+          <paramref name="navigator" /> or <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingFilters">
@@ -803,7 +803,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="matches" /> is <see langword="null" />.</exception>
+          <paramref name="navigator" /> or <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetMatchingValue">
@@ -1053,7 +1053,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="results" /> is <see langword="null" />.</exception>
+          <paramref name="message" /> or <paramref name="results" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ServiceModel.Dispatcher.InvalidBodyAccessException">A filter attempted to examine the contents of the message body.</exception>
       </Docs>
     </Member>
@@ -1098,7 +1098,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="results" /> is <see langword="null" />.</exception>
+          <paramref name="messageBuffer" /> or <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingValues">
@@ -1138,7 +1138,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="results" /> is <see langword="null" />.</exception>
+          <paramref name="navigator" /> or <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingValues">
@@ -1178,7 +1178,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="results" /> is <see langword="null" />.</exception>
+          <paramref name="navigator" /> or <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">

@@ -365,7 +365,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> associated with the formatter.</summary>
-        <value>Returns the <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> associated with the formatter.</value>
+        <value>The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> associated with the formatter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -638,7 +638,7 @@
         <param name="categories">The <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> to use to parse the attribute extension.</param>
         <param name="version">The syndication version to use when parsing.</param>
         <summary>Attempts to parse an attribute extension.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the attribute extension was successfully parsed.</returns>
+        <returns><see langword="true" /> if the attribute extension was successfully parsed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -680,7 +680,7 @@
         <param name="collection">The <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> to use to parse the attribute.</param>
         <param name="version">The syndication version to use when parsing.</param>
         <summary>Attempts to parse an attribute extension.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the attribute extension was parsed successfully.</returns>
+        <returns><see langword="true" /> if the attribute extension was parsed successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -722,7 +722,7 @@
         <param name="document">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to use to parse the attribute extension.</param>
         <param name="version">The syndication version to use when parsing.</param>
         <summary>Attempts to parse an attribute extensions.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the attribute extension was parsed successfully.</returns>
+        <returns><see langword="true" /> if the attribute extension was parsed successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -763,7 +763,7 @@
         <param name="workspace">The <see cref="T:System.ServiceModel.Syndication.Workspace" /> to use to parse the attribute.</param>
         <param name="version">The syndication version to use when parsing.</param>
         <summary>Attempts to parse an attribute extension</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the attribute extension was parsed successfully.</returns>
+        <returns><see langword="true" /> if the attribute extension was parsed successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -810,7 +810,7 @@
         <param name="categories">The <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> to use to parse the element extension.</param>
         <param name="version">The syndication version to use when parsing.</param>
         <summary>Attempts to parse an element extension.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the element extension was parsed successfully.</returns>
+        <returns><see langword="true" /> if the element extension was parsed successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -848,7 +848,7 @@
         <param name="collection">The <see cref="T:System.ServiceModel.Syndication.ResourceCollectionInfo" /> to use to parse the element extension.</param>
         <param name="version">The syndication version to use when parsing.</param>
         <summary>Attempts to parse an element extension.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the element extension was parsed successfully.</returns>
+        <returns><see langword="true" /> if the element extension was parsed successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -886,7 +886,7 @@
         <param name="document">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> to use to parse the element extension.</param>
         <param name="version">The syndication version to use when parsing.</param>
         <summary>Attempts to parse an element extension.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the element extension was successfully parsed.</returns>
+        <returns><see langword="true" /> if the element extension was successfully parsed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -923,7 +923,7 @@
         <param name="workspace">The <see cref="T:System.ServiceModel.Syndication.Workspace" /> to use to parse the element extension.</param>
         <param name="version">The syndication version to use when parsing.</param>
         <summary>Attempts to parse an element extension.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> that indicates whether the element extension was parsed successfully.</returns>
+        <returns><see langword="true" /> if the element extension was parsed successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -953,7 +953,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the version of the formatter.</summary>
-        <value>Returns a <see cref="T:System.String" /> that contains the version of the formatter.</value>
+        <value>The version of the formatter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1632,7 +1632,15 @@
         <summary>Adds the required WS-Trust namespaces to the WSDL if not already present.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> is <see langword="null" />.</exception>
+          <paramref name="context" /> is <see langword="null" />.
+
+-or-
+
+<paramref name="prefix" /> is <see langword="null" /> or an empty string.
+          
+-or-
+
+<paramref name="ns" /> is <see langword="null" /> or an empty string.</exception>
       </Docs>
     </Member>
     <Member MemberName="ProcessCore">

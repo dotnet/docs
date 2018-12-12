@@ -183,8 +183,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A string value that specifies the name of the binding to be used for metadata retrieval in HTTP GET scenarios.</summary>
-        <value>Returns <see cref="T:System.String" />.</value>
+        <summary>Gets or sets a string value that specifies the name of the binding to be used for metadata retrieval in HTTP GET scenarios.</summary>
+        <value>The name of the binding to be used for metadata retrieval in HTTP GET scenarios.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -221,7 +221,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a string that points to an XML section defining additional configuration information for the binding specified in <see cref="P:System.ServiceModel.Configuration.ServiceMetadataPublishingElement.HttpGetBinding" />.</summary>
-        <value>Returns <see cref="T:System.String" />.</value>
+        <value>A string that points to an XML section defining additional configuration information for the binding specified in <see cref="P:System.ServiceModel.Configuration.ServiceMetadataPublishingElement.HttpGetBinding" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,8 +314,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A string value that specifies the name of the binding to be used for metadata retrieval in HTTPS GET scenarios.</summary>
-        <value>Returns <see cref="T:System.String" />.</value>
+        <summary>Gets or sets a string value that specifies the name of the binding to be used for metadata retrieval in HTTPS GET scenarios.</summary>
+        <value>The name of the binding to be used for metadata retrieval in HTTPS GET scenarios.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -352,7 +352,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a string that points to an XML section defining additional configuration information for the binding specified in <see cref="P:System.ServiceModel.Configuration.ServiceMetadataPublishingElement.HttpsGetBinding" />.</summary>
-        <value>Returns <see cref="T:System.String" />.</value>
+        <value>A string that points to an XML section defining additional configuration information for the binding specified in <see cref="P:System.ServiceModel.Configuration.ServiceMetadataPublishingElement.HttpsGetBinding" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

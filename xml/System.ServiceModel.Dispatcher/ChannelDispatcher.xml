@@ -436,7 +436,12 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="host" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="F:System.ServiceModel.CommunicationState.Opening" /> or <see cref="F:System.ServiceModel.CommunicationState.Opened" /> state.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="host" /> is not the host of the channel dispatcher.
+
+-or-
+
+The communication object is in an <see cref="F:System.ServiceModel.CommunicationState.Opening" /> or <see cref="F:System.ServiceModel.CommunicationState.Opened" /> state.</exception>
         <exception cref="T:System.ObjectDisposedException">The communication object is in a <see cref="F:System.ServiceModel.CommunicationState.Closing" /> or <see cref="F:System.ServiceModel.CommunicationState.Closed" /> state.</exception>
         <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="F:System.ServiceModel.CommunicationState.Faulted" /> state.</exception>
       </Docs>

@@ -460,7 +460,12 @@
         <summary>Gets the <see cref="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty" /> for a given message.</summary>
         <returns>A <see cref="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty" /> object that contains the Message Queuing integration properties for the specified message.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The property collection on the message is null.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="message" /> is <see langword="null" />.
+
+-or-
+
+The property collection on the message is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -778,7 +783,12 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value is not infinite and is greater than Int32.MaxValue milliseconds.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          The value is not null and is less than zero.
+
+-or-
+
+The value is not infinite and is greater than Int32.MaxValue milliseconds.</exception>
       </Docs>
     </Member>
   </Members>

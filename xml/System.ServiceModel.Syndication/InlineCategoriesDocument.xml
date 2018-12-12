@@ -152,7 +152,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the collection of syndication categories associated with the <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" />.</summary>
-        <value>Returns a collection of syndication categories.</value>
+        <value>A collection of syndication categories.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,7 +183,7 @@
       <Parameters />
       <Docs>
         <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</summary>
-        <returns>Returns a new  <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</returns>
+        <returns>A new  <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,8 +212,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets a value that specifies whether syndication categories can be added to the <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" />.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> that specifies if new syndication categories can be added.</value>
+        <summary>Gets or sets a value that specifies whether syndication categories can be added to the <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" />.</summary>
+        <value>A <see cref="T:System.Boolean" /> that specifies if new syndication categories can be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

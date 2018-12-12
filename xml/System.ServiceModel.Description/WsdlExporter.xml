@@ -192,7 +192,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The exporter encountered an error.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="wsdlServiceQName" /> is <see langword="null" />.</exception>
+          <paramref name="endpoints" /> or <paramref name="wsdlServiceQName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">A binding is <see langword="null" />.</exception>
       </Docs>
     </Member>

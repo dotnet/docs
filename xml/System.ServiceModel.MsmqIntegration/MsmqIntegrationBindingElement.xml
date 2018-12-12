@@ -89,7 +89,39 @@
         <exception cref="T:System.ArgumentNullException">The context value is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="TChannel" /> is not <see langword="IOutputChannel" />.</exception>
         <exception cref="T:System.InvalidOperationException">
-          <see cref="P:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode" /> is Certificate or WindowsDomain and <see cref="P:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel" /> is None.</exception>
+          <paramref name="ExactlyOnce" /> is <see langword="true" /> and <paramref name="Durable" /> is <see langword="false" />.
+
+-or-
+
+CustomDeadLetterQueue is not null and DeadLetterQueue is not Custom.
+
+-or-
+
+DeadLetterQueue is set to Custom on Windows 2003/XP.
+
+-or-
+
+ExactlyOnce is false and DeadLetterQueue is Custom.
+
+-or-
+
+CustomDeadLetterQueue is set and if there is no write permission to write to queue or if queue does not exist.
+
+-or-
+
+If CustomDeadLetterQueue is non-transactional.
+
+-or-
+
+<see cref="P:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode" /> is set to WindowsDomain and if MSMQ is installed without Active Directory integration.
+
+-or-
+
+<see cref="P:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode" /> is None and <see cref="P:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel" /> is not None.
+
+-or-
+
+<see cref="P:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode" /> is Certificate or WindowsDomain and <see cref="P:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel" /> is None.</exception>
       </Docs>
     </Member>
     <Member MemberName="BuildChannelListener&lt;TChannel&gt;">
@@ -135,7 +167,43 @@
         <exception cref="T:System.ArgumentNullException">The context value is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="TChannel" /> is not <see langword="IInputChannel" />.</exception>
         <exception cref="T:System.InvalidOperationException">
-          <see cref="P:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode" /> is Certificate or WindowsDomain and <see cref="P:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel" /> is None.</exception>
+          ExactlyOnce is <see langword="true" /> and Durable is <see langword="false" />.
+
+-or-
+
+Queue not readable.
+
+-or-
+
+ExactlyOnce is <see langword="true" /> and queue is non-transactional.
+
+-or-
+
+ExactlyOnce is <see langword="false" /> and queue is transactional.
+
+-or-
+
+ReceiveErrorHandling is set to Move and queue name contains a ";" in Windows Vista.
+
+-or-
+
+ExactlyOnce is set to <see langword="true" /> and cannot open retry sub-queue in Windows Vista.
+
+-or-
+
+ReceiveErrorHandling is set to Reject or Move and the platform is Windows Vista.
+
+-or-
+
+<see cref="P:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode" /> is set to WindowsDomain and if MSMQ is installed without Active Directory integration.
+
+-or-
+
+<see cref="P:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode" /> is None and <see cref="P:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel" /> is not None.
+
+-or-
+
+<see cref="P:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode" /> is Certificate or WindowsDomain and <see cref="P:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel" /> is None.</exception>
       </Docs>
     </Member>
     <Member MemberName="CanBuildChannelFactory&lt;TChannel&gt;">

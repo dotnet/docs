@@ -125,7 +125,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a collection of attribute extensions.</summary>
-        <value>A <see cref="T:System.Collections.Generic.Dictionary`2" /> instance.</value>
+        <value>A collection of attribute extensions.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,7 +154,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the base URI for the <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> instance.</summary>
+        <summary>Gets or sets the base URI for the <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> instance.</summary>
         <value>The base URI.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -287,7 +287,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the language of the service document.</summary>
+        <summary>Gets or sets the language of the service document.</summary>
         <value>The language of the service document.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -439,7 +439,7 @@
         <param name="version">The syndication version to use when parsing.</param>
         <summary>Attempts to parse an attribute extension.</summary>
         <returns>
-          <see langword="true" /> if the attribute is successfully parsed; otherwise, <see langword="false" />. Returns <see cref="T:System.Boolean" />.</returns>
+          <see langword="true" /> if the attribute is successfully parsed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

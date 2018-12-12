@@ -69,6 +69,8 @@ Be sure to follow the proper Markdown syntax. For more information, see the [sty
 
 **Step 4:** Submit a Pull Request (PR) from your branch to `dotnet/docs/master`.
 
+Your PR should *always* target the master branch. You should *never* open a PR that targets the live branch.
+
 Each PR should usually address one issue at a time. The PR can modify one or multiple files. If you're addressing multiple fixes on different files, separate PRs are preferred.
 
 If your PR is addressing an existing issue, add the `Fixes #Issue_Number` keyword to the commit message or PR description. That way, the issue is automatically closed when the PR is merged. For more information, see [Closing issues via commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/).

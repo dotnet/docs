@@ -78,7 +78,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For very large <xref:System.Collections.Concurrent.ConcurrentDictionary%602> objects, you can increase the maximum array size to 2 gigabytes (GB) on a 64-bit system by setting the  configuration element to `true` in the run-time environment.  
+ For very large <xref:System.Collections.Concurrent.ConcurrentDictionary%602> objects, you can increase the maximum array size to 2 gigabytes (GB) on a 64-bit system by setting the [`<gcAllowVeryLargeObjects>`](~/docs/framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) configuration element to `true` in the run-time environment.  
   
 > [!NOTE]
 >  <xref:System.Collections.Concurrent.ConcurrentDictionary%602> implements the <xref:System.Collections.Generic.IReadOnlyCollection%601> and <xref:System.Collections.Generic.IReadOnlyDictionary%602> interfaces starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)]; in previous versions of the .NET Framework, the <xref:System.Collections.Concurrent.ConcurrentDictionary%602> class did not implement these interfaces.  

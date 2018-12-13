@@ -243,7 +243,7 @@ namespace SampleSynthesis
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the block alignment in bytes.</summary>
+        <summary>Gets or sets the block alignment in bytes.</summary>
         <value>The value for the block alignment.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

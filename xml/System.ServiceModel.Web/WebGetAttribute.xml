@@ -83,7 +83,7 @@
         <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the body style of the messages that are sent to and from the service operation.</summary>
+        <summary>Gets or sets the body style of the messages that are sent to and from the service operation.</summary>
         <value>One of the <see cref="T:System.ServiceModel.Web.WebMessageBodyStyle" /> enumeration values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -211,7 +211,7 @@
         <ReturnType>System.ServiceModel.Web.WebMessageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the <see cref="P:System.ServiceModel.Web.WebGetAttribute.RequestFormat" /> property.</summary>
+        <summary>Gets or sets the <see cref="P:System.ServiceModel.Web.WebGetAttribute.RequestFormat" /> property.</summary>
         <value>One of the <see cref="T:System.ServiceModel.Web.WebMessageFormat" /> enumeration values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -249,7 +249,7 @@
         <ReturnType>System.ServiceModel.Web.WebMessageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the <see cref="P:System.ServiceModel.Web.WebGetAttribute.ResponseFormat" /> property.</summary>
+        <summary>Gets or sets the <see cref="P:System.ServiceModel.Web.WebGetAttribute.ResponseFormat" /> property.</summary>
         <value>One of the <see cref="T:System.ServiceModel.Web.WebMessageFormat" /> enumeration values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -526,7 +526,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the Uniform Resource Identifier (URI) template for the service operation.</summary>
+        <summary>Gets or sets the Uniform Resource Identifier (URI) template for the service operation.</summary>
         <value>The URI template for the service operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

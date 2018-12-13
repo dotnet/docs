@@ -352,7 +352,7 @@
         <ReturnType>System.ServiceModel.PeerResolvers.PeerReferralPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the referral policy for the PNRP peer resolver created by this binding element.</summary>
+        <summary>Gets or sets the referral policy for the PNRP peer resolver created by this binding element.</summary>
         <value>
           <see cref="T:System.ServiceModel.PeerResolvers.PeerReferralPolicy" /> that specifies the referral policy for resolvers created by this binding element instance.</value>
         <remarks>To be added.</remarks>

@@ -1221,7 +1221,7 @@ schema.Includes.Add(include);
         <ReturnType>System.Xml.XmlAttribute[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the qualified attributes which do not belong to the schema target namespace.</summary>
+        <summary>Gets or sets the qualified attributes which do not belong to the schema target namespace.</summary>
         <value>An array of qualified <see cref="T:System.Xml.XmlAttribute" /> objects that do not belong to the schema target namespace.</value>
         <remarks>To be added.</remarks>
       </Docs>

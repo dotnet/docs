@@ -127,7 +127,7 @@
         <ReturnType>System.Web.UI.WebControls.SortDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the sort direction of the <see cref="T:System.Linq.IQueryable" /> data source object.</summary>
+        <summary>Gets or sets the sort direction of the <see cref="T:System.Linq.IQueryable" /> data source object.</summary>
         <value>The sort direction of the data source object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

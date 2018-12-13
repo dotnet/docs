@@ -322,7 +322,7 @@
         <ReturnType>System.Net.IPAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the IP address on which peer message transports created by this binding element listen.</summary>
+        <summary>Gets or sets the IP address on which peer message transports created by this binding element listen.</summary>
         <value>
           <see cref="T:System.Net.IPAddress" /> that contains the IP address on which peer message transports created by this binding element listen.</value>
         <remarks>To be added.</remarks>
@@ -345,7 +345,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the value that specifies the maximum size, in bytes, of messages sent over transport channels created by this binding element.</summary>
+        <summary>Gets or sets the value that specifies the maximum size, in bytes, of messages sent over transport channels created by this binding element.</summary>
         <value>The maximum size of messages sent over transport channels created by this binding element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -379,7 +379,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the network port on which peer message transport channels created by this binding element listen.</summary>
+        <summary>Gets or sets the network port on which peer message transport channels created by this binding element listen.</summary>
         <value>The network port on which peer message transports created by this binding element listen.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -463,8 +463,8 @@
         <ReturnType>System.Diagnostics.Tracing.EventTags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the <see cref="T:System.Diagnostics.Tracing.EventTags" /> value for this <see cref="T:System.Diagnostics.Tracing.EventAttribute" /> object. An event tag is a user-defined value that is passed through when the event is logged.</summary>
-        <value>Returns the <see cref="T:System.Diagnostics.Tracing.EventTags" /> value.</value>
+        <summary>Gets or sets the <see cref="T:System.Diagnostics.Tracing.EventTags" /> value for this <see cref="T:System.Diagnostics.Tracing.EventAttribute" /> object. An event tag is a user-defined value that is passed through when the event is logged.</summary>
+        <value>The <see cref="T:System.Diagnostics.Tracing.EventTags" /> value for this <see cref="T:System.Diagnostics.Tracing.EventAttribute" /> object. An event tag is a user-defined value that is passed through when the event is logged.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -282,7 +282,7 @@
         <ReturnType>System.ServiceModel.Web.WebMessageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the default outgoing response message format.</summary>
+        <summary>Gets or sets the default outgoing response message format.</summary>
         <value>The <see cref="T:System.ServiceModel.Web.WebMessageFormat" /> used by outgoing response messages. The default value is <see cref="F:System.ServiceModel.Web.WebMessageFormat.Json" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The message format set is not a valid value of <see cref="T:System.ServiceModel.Web.WebMessageFormat" />.</exception>

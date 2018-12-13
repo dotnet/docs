@@ -2077,7 +2077,7 @@ internal class MyWebClient : WebClient
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the <see cref="T:System.Text.Encoding" /> used to upload and download strings.</summary>
+        <summary>Gets or sets the <see cref="T:System.Text.Encoding" /> used to upload and download strings.</summary>
         <value>A <see cref="T:System.Text.Encoding" /> that is used to encode strings. The default value of this property is the encoding returned by <see cref="P:System.Text.Encoding.Default" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

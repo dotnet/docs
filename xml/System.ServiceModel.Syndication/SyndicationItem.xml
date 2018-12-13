@@ -491,7 +491,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the base Uniform Resource Identifier (URI) for the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</summary>
+        <summary>Gets or sets the base Uniform Resource Identifier (URI) for the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</summary>
         <value>The base URI of the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -625,7 +625,7 @@
         <ReturnType>System.ServiceModel.Syndication.SyndicationContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the content of the syndication item.</summary>
+        <summary>Gets or sets the content of the syndication item.</summary>
         <value>A <see cref="T:System.ServiceModel.Syndication.SyndicationContent" /> instance that contains the content of the syndication item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -781,7 +781,7 @@
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the copyright information for the syndication item.</summary>
+        <summary>Gets or sets the copyright information for the syndication item.</summary>
         <value>A <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> instance that represents copyright information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1146,7 +1146,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the ID of the syndication item.</summary>
+        <summary>Gets or sets the ID of the syndication item.</summary>
         <value>The ID of the syndication item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1203,7 +1203,7 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the last updated time for the syndication item.</summary>
+        <summary>Gets or sets the last updated time for the syndication item.</summary>
         <value>A <see cref="T:System.DateTimeOffset" /> instance that represents the time the syndication item was last updated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1416,7 +1416,7 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the publish date for the syndication item.</summary>
+        <summary>Gets or sets the publish date for the syndication item.</summary>
         <value>A <see cref="T:System.DateTimeOffset" /> object that represents the publish date for the syndication item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1559,7 +1559,7 @@
         <ReturnType>System.ServiceModel.Syndication.SyndicationFeed</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the source feed of the syndication item.</summary>
+        <summary>Gets or sets the source feed of the syndication item.</summary>
         <value>A <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance where the syndication item is located.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1607,7 +1607,7 @@
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the summary of the syndication item.</summary>
+        <summary>Gets or sets the summary of the syndication item.</summary>
         <value>A <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> that contains a summary of the item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1660,7 +1660,7 @@
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the title of the syndication item.</summary>
+        <summary>Gets or sets the title of the syndication item.</summary>
         <value>A <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> object that contains the title of the syndication item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

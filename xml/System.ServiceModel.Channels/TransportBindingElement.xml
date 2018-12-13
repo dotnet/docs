@@ -285,7 +285,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the maximum allowable message size, in bytes, that can be received.</summary>
+        <summary>Gets or sets the maximum allowable message size, in bytes, that can be received.</summary>
         <value>The maximum allowable message size that can be received. The default is 65,536 bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -127,7 +127,7 @@
         <ReturnType>System.ServiceModel.PeerResolvers.PeerReferralPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the referral policy for peer resolvers created with binding elements created by implementations of this class.</summary>
+        <summary>Gets or sets the referral policy for peer resolvers created with binding elements created by implementations of this class.</summary>
         <value>
           <see cref="T:System.ServiceModel.PeerResolvers.PeerReferralPolicy" /> enumeration value that specifies the referral policy for peer resolvers created with this binding element.</value>
         <remarks>To be added.</remarks>

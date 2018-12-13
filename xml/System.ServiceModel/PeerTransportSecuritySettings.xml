@@ -58,7 +58,7 @@
         <ReturnType>System.ServiceModel.PeerTransportCredentialType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the type of credential used to authenticate the peer channel transport.</summary>
+        <summary>Gets or sets the type of credential used to authenticate the peer channel transport.</summary>
         <value>A <see cref="T:System.ServiceModel.PeerTransportCredentialType" /> enumeration value that specifies the type of credentials to provide for authentication.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The credential type is an invalid <see cref="T:System.ServiceModel.PeerTransportCredentialType" /> enumeration value.</exception>

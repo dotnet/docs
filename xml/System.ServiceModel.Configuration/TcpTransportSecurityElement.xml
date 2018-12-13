@@ -66,7 +66,7 @@
         <ReturnType>System.ServiceModel.TcpClientCredentialType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the type of client credential used for authentication.</summary>
+        <summary>Gets or sets the type of client credential used for authentication.</summary>
         <value>A <see cref="T:System.ServiceModel.TcpClientCredentialType" /> that specifies the type of client credential used for authentication.</value>
         <remarks>To be added.</remarks>
       </Docs>

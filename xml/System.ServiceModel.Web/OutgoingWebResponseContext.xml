@@ -57,7 +57,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the content length header from the outgoing Web response.</summary>
+        <summary>Gets or sets the content length header from the outgoing Web response.</summary>
         <value>The content length header of the outgoing Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -79,7 +79,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the content type header from the outgoing Web response.</summary>
+        <summary>Gets or sets the content type header from the outgoing Web response.</summary>
         <value>The content type header of the outgoing Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -101,7 +101,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the etag header from the outgoing Web response.</summary>
+        <summary>Gets or sets the etag header from the outgoing Web response.</summary>
         <value>The etag header of the outgoing Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -166,7 +166,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the last modified header of the outgoing Web response.</summary>
+        <summary>Gets or sets the last modified header of the outgoing Web response.</summary>
         <value>A <see cref="T:System.DateTime" /> instance that contains the time the requested resource was last modified.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,7 +188,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the location header from the outgoing Web response.</summary>
+        <summary>Gets or sets the location header from the outgoing Web response.</summary>
         <value>The location header from the outgoing Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -396,7 +396,7 @@
         <ReturnType>System.Net.HttpStatusCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the status code of the outgoing Web response.</summary>
+        <summary>Gets or sets the status code of the outgoing Web response.</summary>
         <value>An <see cref="T:System.Net.HttpStatusCode" /> instance that contains the status code of the outgoing Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -418,7 +418,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the status description of the outgoing Web response.</summary>
+        <summary>Gets or sets the status description of the outgoing Web response.</summary>
         <value>The status description of the outgoing Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -440,7 +440,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets a value that indicates whether Windows Communication Foundation (WCF) omits data that is normally written to the entity body of the response and forces an empty response to be returned.</summary>
+        <summary>Gets or sets a value that indicates whether Windows Communication Foundation (WCF) omits data that is normally written to the entity body of the response and forces an empty response to be returned.</summary>
         <value>If <see langword="true" />, WCF omits any data that is normally written to the entity body of the response and forces an empty response to be returned. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>

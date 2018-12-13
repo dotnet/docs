@@ -225,7 +225,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the <see cref="T:System.Type" /> of the exceptions to be handled by the <see cref="T:System.Workflow.ComponentModel.FaultHandlerActivity" />. Exceptions of the type derived from the type specified in <see cref="P:System.Workflow.ComponentModel.FaultHandlerActivity.FaultType" /> are also handled.</summary>
+        <summary>Gets or sets the <see cref="T:System.Type" /> of the exceptions to be handled by the <see cref="T:System.Workflow.ComponentModel.FaultHandlerActivity" />. Exceptions of the type derived from the type specified in <see cref="P:System.Workflow.ComponentModel.FaultHandlerActivity.FaultType" /> are also handled.</summary>
         <value>The <see cref="T:System.Type" /> of the associated <see cref="T:System.Exception" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

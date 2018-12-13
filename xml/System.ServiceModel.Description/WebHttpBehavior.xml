@@ -256,7 +256,7 @@
         <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the default message body style.</summary>
+        <summary>Gets or sets the default message body style.</summary>
         <value>One of the values defined in the <see cref="T:System.ServiceModel.Web.WebMessageBodyStyle" /> enumeration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -286,7 +286,7 @@
         <ReturnType>System.ServiceModel.Web.WebMessageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the default outgoing request format.</summary>
+        <summary>Gets or sets the default outgoing request format.</summary>
         <value>One of the values defined in the <see cref="T:System.ServiceModel.Web.WebMessageFormat" /> enumeration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -316,7 +316,7 @@
         <ReturnType>System.ServiceModel.Web.WebMessageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the default outgoing response format.</summary>
+        <summary>Gets or sets the default outgoing response format.</summary>
         <value>One of the values defined in the <see cref="T:System.ServiceModel.Web.WebMessageFormat" /> enumeration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

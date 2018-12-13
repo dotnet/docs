@@ -70,7 +70,7 @@
         <ReturnType>System.Workflow.Runtime.Tracking.TrackingAnnotationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the list of annotations associated with the extracted data.</summary>
+        <summary>Gets or sets the list of annotations associated with the extracted data.</summary>
         <value>A <see cref="T:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" /> that contains the annotations associated with the extracted data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

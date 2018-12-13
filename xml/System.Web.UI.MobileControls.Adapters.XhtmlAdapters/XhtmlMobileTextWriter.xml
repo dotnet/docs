@@ -366,7 +366,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets custom style settings for the body of the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <summary>Gets or sets custom style settings for the body of the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A <see langword="string" /> containing style-sheet information if the property has been set; otherwise, <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

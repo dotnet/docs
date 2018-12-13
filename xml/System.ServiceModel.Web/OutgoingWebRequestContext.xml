@@ -38,7 +38,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the <see langword="Accept" /> header value from the outgoing Web request.</summary>
+        <summary>Gets or sets the <see langword="Accept" /> header value from the outgoing Web request.</summary>
         <value>The <see langword="Accept" /> header from the outgoing Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,7 +61,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the content length header value of the outgoing Web request.</summary>
+        <summary>Gets or sets the content length header value of the outgoing Web request.</summary>
         <value>The content length header of the outgoing Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,7 +84,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the content type header value from the outgoing Web request.</summary>
+        <summary>Gets or sets the content type header value from the outgoing Web request.</summary>
         <value>The content type header from the outgoing Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -130,7 +130,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the <see langword="IfMatch" /> header value from the outgoing Web request.</summary>
+        <summary>Gets or sets the <see langword="IfMatch" /> header value from the outgoing Web request.</summary>
         <value>The <see langword="IfMatch" /> header from the outgoing Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,7 +153,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the <see langword="IfModifiedSince" /> header value from the outgoing Web request.</summary>
+        <summary>Gets or sets the <see langword="IfModifiedSince" /> header value from the outgoing Web request.</summary>
         <value>The <see langword="IfModifiedSince" /> header from the outgoing Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,7 +176,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the <see langword="IfNoneMatch" /> header value from the outgoing Web request.</summary>
+        <summary>Gets or sets the <see langword="IfNoneMatch" /> header value from the outgoing Web request.</summary>
         <value>The <see langword="IfNoneMatch" /> header from the outgoing Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -199,7 +199,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the <see langword="IfUnmodifiedSince" /> header value from the outgoing Web request.</summary>
+        <summary>Gets or sets the <see langword="IfUnmodifiedSince" /> header value from the outgoing Web request.</summary>
         <value>The <see langword="IfUnmodifiedSince" /> header from the outgoing Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>

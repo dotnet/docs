@@ -65,7 +65,7 @@
         <ReturnType>System.ServiceModel.PeerTransportCredentialType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the configuration for the type of credentials used to verify messages sent with the peer transport.</summary>
+        <summary>Gets or sets the configuration for the type of credentials used to verify messages sent with the peer transport.</summary>
         <value>
           <see cref="T:System.ServiceModel.PeerTransportCredentialType" /> enumeration value that contains the type of credentials used to verify messages sent with the peer transport.</value>
         <remarks>To be added.</remarks>

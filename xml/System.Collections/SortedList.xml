@@ -1718,7 +1718,7 @@ A <xref:System.Collections.SortedList> element can be accessed by its key, like 
       </Parameters>
       <Docs>
         <param name="key">The key associated with the value to get or set.</param>
-        <summary>Gets and sets the value associated with a specific key in a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <summary>Gets or sets the value associated with a specific key in a <see cref="T:System.Collections.SortedList" /> object.</summary>
         <value>The value associated with the <paramref name="key" /> parameter in the <see cref="T:System.Collections.SortedList" /> object, if <paramref name="key" /> is found; otherwise, <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

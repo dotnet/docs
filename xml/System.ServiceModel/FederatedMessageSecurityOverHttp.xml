@@ -65,8 +65,8 @@
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the algorithm suite that specifies the message encryption and key-wrap algorithms.</summary>
-        <value>A <see cref="T:System.ServiceModel.Security.SecurityAlgorithmSuite" />. The default is <see cref="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256" />.</value>
+        <summary>Gets or sets the algorithm suite that specifies the message encryption and key-wrap algorithms.</summary>
+        <value>The algorithm suite that specifies the message encryption and key-wrap algorithms. The default is <see cref="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

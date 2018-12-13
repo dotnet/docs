@@ -361,7 +361,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets a value that specifies whether to preserve attribute extensions during serialization.</summary>
+        <summary>Gets or sets a value that specifies whether to preserve attribute extensions during serialization.</summary>
         <value>A value that specifies whether to preserve attribute extensions during serialization.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -398,7 +398,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets a value that specifies whether to preserve element extensions during serialization.</summary>
+        <summary>Gets or sets a value that specifies whether to preserve element extensions during serialization.</summary>
         <value>A value that specifies whether to preserve element extensions during serialization.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -566,7 +566,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets a value that specifies whether to serialize extensions within the Atom 1.0 namespace.</summary>
+        <summary>Gets or sets a value that specifies whether to serialize extensions within the Atom 1.0 namespace.</summary>
         <value>A value that specifies whether to serialize extensions within the Atom 1.0 namespace.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

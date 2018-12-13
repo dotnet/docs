@@ -92,7 +92,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Architecture attribute of this inline task.</summary>
-        <value>Returns the value of the Architecture attribute. Returns an empty string if the attribute is not present.</value>
+        <value>The value of the Architecture attribute, or an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +112,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the Architecture attribute on this element, if any.</summary>
-        <value>Returns  the Architecture attribute location. If there is no such attribute, returns null.</value>
+        <summary>Gets the location of the Architecture attribute on this element, if any.</summary>
+        <value>The Architecture attribute location, or <see langword="null" /> if there is no Architecture attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,7 +134,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the value of the AssemblyFile attribute, which selects the name of the assembly to load.</summary>
-        <value>Returns the value of the AssemblyFile attribute. Returns an empty string if the attribute is not present.</value>
+        <value>The value of the AssemblyFile attribute. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -161,8 +161,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the AssemblyFile attribute on this element, if any.</summary>
-        <value>Returns  the AssemblyFile attribute location. If there is no such attribute, returns null.</value>
+        <summary>Gets the location of the AssemblyFile attribute on this element, if any.</summary>
+        <value>The AssemblyFile attribute location, or <see langword="null" /> if there is no AssemblyFile attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,8 +182,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the value of the AssemblyName attribute.</summary>
-        <value>Returns the value of the AssemblyName attribute. Returns an empty string if the attribute is not present.</value>
+        <summary>Gets or sets the value of the AssemblyName attribute.</summary>
+        <value>The value of the AssemblyName attribute. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -210,8 +210,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the AssemblyName attribute on this element, if any.</summary>
-        <value>Returns  the AssemblyName attribute location. If there is no such attribute, returns null.</value>
+        <summary>Gets the location of the AssemblyName attribute on this element, if any.</summary>
+        <value>The AssemblyName attribute location, or <see langword="null" /> if there is no AssemblyName attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,7 +232,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets any ParameterGroup element for this inline task.</summary>
-        <value>Returns the parameter group. Returns null if no parameter group exists.</value>
+        <value>The parameter group. Returns null if no parameter group exists.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,7 +253,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Runtime attribute of this inline task.</summary>
-        <value>Returns the value of the Runtime attribute. Returns an empty string if the attribute is not present.</value>
+        <value>The value of the Runtime attribute. Returns an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,8 +273,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the Runtime attribute on this element, if any.</summary>
-        <value>Returns  the Runtime attribute location. If there is no such attribute, returns null.</value>
+        <summary>Gets the location of the Runtime attribute on this element, if any.</summary>
+        <value>The Runtime attribute location, or <see langword="null" /> if there is no Runtime attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,7 +295,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the inner XML content of this inline task.</summary>
-        <value>Returns the inner XML content of the inline task. Returns null if no body exists.</value>
+        <value>The inner XML content of the inline task. Returns null if no body exists.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -322,8 +322,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the value of the TaskFactory attribute of this inline task.</summary>
-        <value>Returns the value of the TaskFactory attribute. Returns an empty string if the attribute is not present.</value>
+        <summary>Gets or sets the value of the TaskFactory attribute of this inline task.</summary>
+        <value>The value of the TaskFactory attribute. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -350,8 +350,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the TaskFactory attribute on this element, if any.</summary>
-        <value>Returns the value of the TaskFactory attribute. Returns an empty string if the attribute is not present.</value>
+        <summary>Gets the location of the TaskFactory attribute on this element, if any.</summary>
+        <value>The value of the TaskFactory attribute. Returns an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,8 +371,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the value of the TaskName attribute.</summary>
-        <value>Returns the value of the TaskName attribute. Returns an empty string if the attribute is not present.</value>
+        <summary>Gets or sets the value of the TaskName attribute.</summary>
+        <value>The value of the TaskName attribute. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -399,8 +399,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the TaskName attribute on this element, if any.</summary>
-        <value>Returns the value of the TaskName attribute. Returns an empty string if the attribute is not present.</value>
+        <summary>Gets the location of the TaskName attribute on this element, if any.</summary>
+        <value>The value of the TaskName attribute. Returns an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

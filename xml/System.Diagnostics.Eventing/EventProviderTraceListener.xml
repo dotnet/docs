@@ -206,7 +206,7 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the delimiter used to delimit the event data that is written to the ETW subsystem.</summary>
+        <summary>Gets or sets the delimiter used to delimit the event data that is written to the ETW subsystem.</summary>
         <value>The delimiter used to delimit the event data. The default delimiter is a comma.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

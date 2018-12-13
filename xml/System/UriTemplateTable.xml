@@ -245,7 +245,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the base address for the <see cref="T:System.UriTemplateTable" /> instance.</summary>
+        <summary>Gets or sets the base address for the <see cref="T:System.UriTemplateTable" /> instance.</summary>
         <value>A <see cref="T:System.Uri" /> that contains the base address.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

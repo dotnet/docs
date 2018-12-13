@@ -813,7 +813,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Gets and sets a <see cref="T:System.Data.Common.DbParameter" /> in the collection.</summary>
+        <summary>Gets or sets a <see cref="T:System.Data.Common.DbParameter" /> in the collection.</summary>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
@@ -849,7 +849,7 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the parameter.</param>
-        <summary>Gets and sets the <see cref="T:System.Data.Common.DbParameter" /> at the specified index.</summary>
+        <summary>Gets or sets the <see cref="T:System.Data.Common.DbParameter" /> at the specified index.</summary>
         <value>The <see cref="T:System.Data.Common.DbParameter" /> at the specified index.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.IndexOutOfRangeException">The specified index does not exist.</exception>
@@ -888,7 +888,7 @@
       </Parameters>
       <Docs>
         <param name="parameterName">The name of the parameter.</param>
-        <summary>Gets and sets the <see cref="T:System.Data.Common.DbParameter" /> with the specified name.</summary>
+        <summary>Gets or sets the <see cref="T:System.Data.Common.DbParameter" /> with the specified name.</summary>
         <value>The <see cref="T:System.Data.Common.DbParameter" /> with the specified name.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.IndexOutOfRangeException">The specified index does not exist.</exception>

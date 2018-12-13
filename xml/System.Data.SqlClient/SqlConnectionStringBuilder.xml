@@ -556,7 +556,7 @@ Modified: Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security
         <ReturnType>System.Data.SqlClient.SqlConnectionColumnEncryptionSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the column encryption settings for the connection string builder.</summary>
+        <summary>Gets or sets the column encryption settings for the connection string builder.</summary>
         <value>The column encryption settings for the connection string builder.</value>
         <remarks>To be added.</remarks>
       </Docs>

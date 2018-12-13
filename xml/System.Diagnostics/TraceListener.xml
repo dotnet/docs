@@ -545,7 +545,7 @@
         <ReturnType>System.Diagnostics.TraceFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the trace filter for the trace listener.</summary>
+        <summary>Gets or sets the trace filter for the trace listener.</summary>
         <value>An object derived from the <see cref="T:System.Diagnostics.TraceFilter" /> base class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

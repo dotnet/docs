@@ -159,7 +159,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets a value specifying whether the <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" /> will retry when performing a database operation.</summary>
+        <summary>Gets or sets a value specifying whether the <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" /> will retry when performing a database operation.</summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" /> should retry the operation; otherwise, <see langword="false" />.</value>
         <remarks>

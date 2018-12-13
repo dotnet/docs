@@ -177,7 +177,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the amount of time, in minutes, allowed between requests before the session-state provider terminates the session.</summary>
+        <summary>Gets or sets the amount of time, in minutes, allowed between requests before the session-state provider terminates the session.</summary>
         <value>The time-out period in minutes.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>

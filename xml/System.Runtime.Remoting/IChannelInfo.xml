@@ -61,7 +61,7 @@
         <ReturnType>System.Object[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the channel data for each channel.</summary>
+        <summary>Gets or sets the channel data for each channel.</summary>
         <value>The channel data for each channel.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>

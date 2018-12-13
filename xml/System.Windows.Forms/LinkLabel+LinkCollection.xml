@@ -515,7 +515,7 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the link in the collection to get.</param>
-        <summary>Gets and sets the link at the specified index within the collection.</summary>
+        <summary>Gets or sets the link at the specified index within the collection.</summary>
         <value>An object representing the link located at the specified index within the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

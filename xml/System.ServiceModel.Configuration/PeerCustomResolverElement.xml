@@ -95,7 +95,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the name of the string binding used for the custom peer resolver.</summary>
+        <summary>Gets or sets the name of the string binding used for the custom peer resolver.</summary>
         <value>The name of the string binding used for the custom peer resolver.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -125,7 +125,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the binding configuration string for the custom peer resolver.</summary>
+        <summary>Gets or sets the binding configuration string for the custom peer resolver.</summary>
         <value>The binding configuration string for the custom peer resolver.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -233,7 +233,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets a string value that contains the "type" of the custom peer resolver.</summary>
+        <summary>Gets or sets a string value that contains the "type" of the custom peer resolver.</summary>
         <value>A string value that contains the "type" of the custom peer resolver.</value>
         <remarks>To be added.</remarks>
       </Docs>

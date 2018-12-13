@@ -632,7 +632,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the security reference domain for this application partition.</summary>
+        <summary>Gets or sets the security reference domain for this application partition.</summary>
         <value>The distinguished name of the security reference domain for this application.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>

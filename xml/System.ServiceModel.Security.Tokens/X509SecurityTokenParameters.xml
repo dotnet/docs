@@ -421,8 +421,8 @@
         <ReturnType>System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the X.509 reference style.</summary>
-        <value>An <see cref="T:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType" />.</value>
+        <summary>Gets or sets the X.509 reference style.</summary>
+        <value>The X.509 reference style.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

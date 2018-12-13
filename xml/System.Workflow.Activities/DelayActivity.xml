@@ -474,7 +474,7 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the duration of the delay in the workflow.</summary>
+        <summary>Gets or sets the duration of the delay in the workflow.</summary>
         <value>A <see cref="T:System.TimeSpan" /> that indicates the length of the delay in the workflow.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

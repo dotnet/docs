@@ -912,7 +912,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the time-out period (in minutes) allowed between requests before the session-state provider terminates the session.</summary>
+        <summary>Gets or sets the time-out period (in minutes) allowed between requests before the session-state provider terminates the session.</summary>
         <value>The time-out period, in minutes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

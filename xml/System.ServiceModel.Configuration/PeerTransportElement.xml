@@ -197,7 +197,7 @@
         <ReturnType>System.Net.IPAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets a configuration element that specifies the IP address upon which the peer transport listens.</summary>
+        <summary>Gets or sets a configuration element that specifies the IP address upon which the peer transport listens.</summary>
         <value>A <see cref="T:System.Net.IPAddress" /> that contains the IP address upon which the peer transport listens.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -234,7 +234,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets a configuration element that specifies the maximum size of the TCP message buffer pool, in bytes.</summary>
+        <summary>Gets or sets a configuration element that specifies the maximum size of the TCP message buffer pool, in bytes.</summary>
         <value>A <see cref="T:System.Int64" /> that specifies the maximum size of the TCP message buffer pool, in bytes. The default value is 524,288 bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -271,7 +271,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets a configuration element that specifies the maximum size, in bytes, for TCP messages received by the peer binding.</summary>
+        <summary>Gets or sets a configuration element that specifies the maximum size, in bytes, for TCP messages received by the peer binding.</summary>
         <value>A <see cref="T:System.Int64" /> value that specifies the maximum size in bytes of TCP messages received over the peer channels created by this binding. The default value is 65,536 (64 KB).</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -301,7 +301,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets a configuration element that specifies the port for the peer transport binding.</summary>
+        <summary>Gets or sets a configuration element that specifies the port for the peer transport binding.</summary>
         <value>A <see cref="T:System.Int32" /> value that specifies the port for the peer transport binding.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -357,7 +357,7 @@
         <ReturnType>System.ServiceModel.Configuration.PeerSecurityElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets a configuration element that specifies the security to set on peer channels created by this binding.</summary>
+        <summary>Gets or sets a configuration element that specifies the security to set on peer channels created by this binding.</summary>
         <value>A <see cref="T:System.ServiceModel.PeerSecuritySettings" /> enumeration value that indicates the security to set on peer channels created by this binding. Security can be either message- or transport-specific.</value>
         <remarks>To be added.</remarks>
       </Docs>

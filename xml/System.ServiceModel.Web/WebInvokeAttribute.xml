@@ -84,7 +84,7 @@
         <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the body style of the messages that are sent to and from the service operation.</summary>
+        <summary>Gets or sets the body style of the messages that are sent to and from the service operation.</summary>
         <value>One of the <see cref="T:System.ServiceModel.Web.WebMessageBodyStyle" /> enumeration values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -215,7 +215,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the protocol (for example HTTP) method the service operation responds to.</summary>
+        <summary>Gets or sets the protocol (for example HTTP) method the service operation responds to.</summary>
         <value>The protocol method associated with the operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -253,7 +253,7 @@
         <ReturnType>System.ServiceModel.Web.WebMessageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the <see cref="P:System.ServiceModel.Web.WebInvokeAttribute.RequestFormat" /> property.</summary>
+        <summary>Gets or sets the <see cref="P:System.ServiceModel.Web.WebInvokeAttribute.RequestFormat" /> property.</summary>
         <value>One of the <see cref="T:System.ServiceModel.Web.WebMessageFormat" /> enumeration values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -291,7 +291,7 @@
         <ReturnType>System.ServiceModel.Web.WebMessageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the <see cref="P:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat" /> property.</summary>
+        <summary>Gets or sets the <see cref="P:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat" /> property.</summary>
         <value>One of the <see cref="T:System.ServiceModel.Web.WebMessageFormat" /> enumeration values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

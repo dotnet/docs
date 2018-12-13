@@ -2837,7 +2837,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the size of the form when it is maximized.</summary>
+        <summary>Gets or sets the size of the form when it is maximized.</summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the form when it is maximized.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of the <see cref="P:System.Drawing.Rectangle.Top" /> property is greater than the height of the form.  

@@ -291,7 +291,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the URL for a XML Web service implementing the service description referenced in the <see cref="P:System.Web.Services.Discovery.ContractReference.Ref" /> property.</summary>
+        <summary>Gets or sets the URL for a XML Web service implementing the service description referenced in the <see cref="P:System.Web.Services.Discovery.ContractReference.Ref" /> property.</summary>
         <value>The URL for a XML Web service implementing the Service Description referenced in the <see cref="P:System.Web.Services.Discovery.ContractReference.Ref" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

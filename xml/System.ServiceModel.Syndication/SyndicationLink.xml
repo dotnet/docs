@@ -281,7 +281,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the base URI of the syndication link.</summary>
+        <summary>Gets or sets the base URI of the syndication link.</summary>
         <value>A <see cref="T:System.Uri" /> instance that contains the base URI of the syndication link.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -710,7 +710,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the length of the linked resource in bytes.</summary>
+        <summary>Gets or sets the length of the linked resource in bytes.</summary>
         <value>The length of the linked resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -764,7 +764,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the media type of the linked resource.</summary>
+        <summary>Gets or sets the media type of the linked resource.</summary>
         <value>The media type of the linked resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -816,7 +816,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the relationship type of the linked resource.</summary>
+        <summary>Gets or sets the relationship type of the linked resource.</summary>
         <value>The relationship type of the linked resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -880,7 +880,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the title of the linked resource.</summary>
+        <summary>Gets or sets the title of the linked resource.</summary>
         <value>The title of the linked resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1027,7 +1027,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the URI for the linked resource.</summary>
+        <summary>Gets or sets the URI for the linked resource.</summary>
         <value>A <see cref="T:System.Uri" /> instance that contains the URI for the linked resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

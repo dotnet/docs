@@ -100,7 +100,7 @@
         <ReturnType>System.ServiceModel.PeerResolvers.PeerResolverMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the type of the peer resolver represented by this configuration element.</summary>
+        <summary>Gets or sets the type of the peer resolver represented by this configuration element.</summary>
         <value>
           <see cref="T:System.ServiceModel.PeerResolvers.PeerResolverMode" /> enumeration value that specifies the type of peer resolvder represented by this configuration element.</value>
         <remarks>To be added.</remarks>
@@ -150,7 +150,7 @@
         <ReturnType>System.ServiceModel.PeerResolvers.PeerReferralPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the referral policy for peer resolvers configured with this element.</summary>
+        <summary>Gets or sets the referral policy for peer resolvers configured with this element.</summary>
         <value>
           <see cref="T:System.ServiceModel.PeerResolvers.PeerReferralPolicy" /> that specifies the referral policy for peer resolvers configured with this element.</value>
         <remarks>To be added.</remarks>

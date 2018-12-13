@@ -194,7 +194,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the maximum allowed array length.</summary>
+        <summary>Gets or sets the maximum allowed array length.</summary>
         <value>The maximum allowed array length. The default is 16384.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -245,7 +245,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the maximum allowed bytes returned for each read.</summary>
+        <summary>Gets or sets the maximum allowed bytes returned for each read.</summary>
         <value>The maximum allowed bytes returned for each read. The default is 4096.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -296,7 +296,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the maximum nested node depth.</summary>
+        <summary>Gets or sets the maximum nested node depth.</summary>
         <value>The maximum nested node depth. The default is 32;</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -343,7 +343,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the maximum characters allowed in a table name.</summary>
+        <summary>Gets or sets the maximum characters allowed in a table name.</summary>
         <value>The maximum characters allowed in a table name. The default is 16384.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -390,7 +390,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the maximum string length returned by the reader.</summary>
+        <summary>Gets or sets the maximum string length returned by the reader.</summary>
         <value>The maximum string length returned by the reader. The default is 8192.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

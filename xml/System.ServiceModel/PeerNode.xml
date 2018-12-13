@@ -84,7 +84,7 @@
         <ReturnType>System.ServiceModel.PeerMessagePropagationFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets a custom filter for messages received over the peer channel.</summary>
+        <summary>Gets or sets a custom filter for messages received over the peer channel.</summary>
         <value>
           <see cref="T:System.ServiceModel.PeerMessagePropagationFilter" /> that contains a custom message filter.</value>
         <remarks>

@@ -113,7 +113,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the <see cref="P:System.Workflow.ComponentModel.ActivityChangeAction.OwnerActivityDottedPath" /> of the <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> associated with this instance.</summary>
+        <summary>Gets or sets the <see cref="P:System.Workflow.ComponentModel.ActivityChangeAction.OwnerActivityDottedPath" /> of the <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> associated with this instance.</summary>
         <value>The <see cref="P:System.Workflow.ComponentModel.ActivityChangeAction.OwnerActivityDottedPath" /> of the <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> associated with this instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

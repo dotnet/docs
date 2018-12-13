@@ -65,7 +65,7 @@
         <ReturnType>System.ServiceModel.SecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the type of security used by peers configured with this element.</summary>
+        <summary>Gets or sets the type of security used by peers configured with this element.</summary>
         <value>
           <see cref="T:System.ServiceModel.SecurityMode" /> enumeration value that specifies the type of security used by peers configured with this element.</value>
         <remarks>To be added.</remarks>

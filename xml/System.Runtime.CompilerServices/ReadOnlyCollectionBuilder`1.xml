@@ -79,7 +79,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Constructs a <c>ReadOnlyCollectionBuilder</c>.</summary>
+        <summary>Constructs a <see cref="T:System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,7 +110,7 @@
       </Parameters>
       <Docs>
         <param name="collection">Collection to copy elements from.</param>
-        <summary>Constructs a <c>ReadOnlyCollectionBuilder</c>, copying contents of the given collection.</summary>
+        <summary>Constructs a <see cref="T:System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1" />, copying the contents of the given collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,7 +141,7 @@
       </Parameters>
       <Docs>
         <param name="capacity">Initial capacity.</param>
-        <summary>Constructs a <c>ReadOnlyCollectionBuilder</c> with a given initial capacity. The contents are empty but builder will have reserved room for the given number of elements before any reallocations are required.</summary>
+        <summary>Constructs a <see cref="T:System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1" /> with a given initial capacity. The contents are empty but builder will have reserved room for the given number of elements before any reallocations are required.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,7 +208,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the capacity of this <c>ReadOnlyCollectionBuilder</c>.</summary>
+        <summary>Gets or sets the capacity of this <see cref="T:System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1" />.</summary>
         <value>The capacity of this <c>ReadOnlyCollectionBuilder.</c></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,8 +359,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns number of elements in the <c>ReadOnlyCollectionBuilder</c>.</summary>
-        <value>The number of elements in the <c>ReadOnlyCollectionBuilder</c>.</value>
+        <summary>Gets the number of elements in the <see cref="T:System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1" />.</summary>
+        <value>The number of elements in the <see cref="T:System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

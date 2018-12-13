@@ -251,7 +251,7 @@
         <ReturnType>System.Xml.XmlAttribute[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the qualified attributes, which do not belong to the schema target namespace.</summary>
+        <summary>Gets or sets the qualified attributes, which do not belong to the schema target namespace.</summary>
         <value>Qualified attributes that belong to another target namespace.</value>
         <remarks>To be added.</remarks>
       </Docs>

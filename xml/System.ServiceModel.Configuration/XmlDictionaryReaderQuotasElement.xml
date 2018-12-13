@@ -79,7 +79,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the maximum allowed array length.</summary>
+        <summary>Gets or sets the maximum allowed array length.</summary>
         <value>The maximum allowed array length.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,7 +109,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the maximum allowed bytes returned for each read.</summary>
+        <summary>Gets or sets the maximum allowed bytes returned for each read.</summary>
         <value>The maximum allowed bytes returned for each read.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,7 +139,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the maximum nested node depth for each read.</summary>
+        <summary>Gets or sets the maximum nested node depth for each read.</summary>
         <value>The maximum nested node depth for each read.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -169,7 +169,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the maximum characters allowed in a table name.</summary>
+        <summary>Gets or sets the maximum characters allowed in a table name.</summary>
         <value>The maximum characters allowed in a table name.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -199,7 +199,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the maximum characters allowed in XML element content.</summary>
+        <summary>Gets or sets the maximum characters allowed in XML element content.</summary>
         <value>The maximum characters allowed in XML element content.</value>
         <remarks>To be added.</remarks>
       </Docs>

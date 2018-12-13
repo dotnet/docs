@@ -153,7 +153,7 @@
         <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the endpoint address of the peer on which resolvers created by this binding will run.</summary>
+        <summary>Gets or sets the endpoint address of the peer on which resolvers created by this binding will run.</summary>
         <value>
           <see cref="T:System.ServiceModel.EndpointAddress" /> object that contains the network address of the peer on which resolvers created by this binding will run.</value>
         <remarks>To be added.</remarks>
@@ -184,7 +184,7 @@
         <ReturnType>System.ServiceModel.Channels.Binding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the network binding used by resolvers created with this binding element.</summary>
+        <summary>Gets or sets the network binding used by resolvers created with this binding element.</summary>
         <value>
           <see cref="T:System.ServiceModel.Channels.Binding" /> that specifies the network binding used by resolvers created with this binding element.</value>
         <remarks>To be added.</remarks>
@@ -455,7 +455,7 @@
         <ReturnType>System.ServiceModel.PeerResolvers.PeerReferralPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the referral policy for peer resolvers created with this binding element.</summary>
+        <summary>Gets or sets the referral policy for peer resolvers created with this binding element.</summary>
         <value>
           <see cref="T:System.ServiceModel.PeerResolvers.PeerReferralPolicy" /> that specifies the referral policy for peer resolvers created with this binding element.</value>
         <remarks>To be added.</remarks>

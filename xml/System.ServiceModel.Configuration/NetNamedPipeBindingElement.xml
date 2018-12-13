@@ -305,7 +305,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the maximum allowable message size, in bytes, that can be received on a channel configured with this binding.</summary>
+        <summary>Gets or sets the maximum allowable message size, in bytes, that can be received on a channel configured with this binding.</summary>
         <value>The maximum allowable message size that is processed by the binding. The default value is 65,536 bytes.</value>
         <remarks>To be added.</remarks>
       </Docs>

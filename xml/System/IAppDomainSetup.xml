@@ -110,7 +110,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the name of an area specific to the application where files are shadow copied.</summary>
+        <summary>Gets or sets the name of an area specific to the application where files are shadow copied.</summary>
         <value>A <see cref="T:System.String" /> that is the fully-qualified name of the directory path and file name where files are shadow copied.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IAppDomainSetup.ShadowCopyFiles" />
@@ -136,7 +136,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the name of the configuration file for an application domain.</summary>
+        <summary>Gets or sets the name of the configuration file for an application domain.</summary>
         <value>A <see cref="T:System.String" /> that specifies the name of the configuration file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

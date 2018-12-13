@@ -133,7 +133,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets a value specifying whether the <see cref="T:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService" /> will retry committing a work batch.</summary>
+        <summary>Gets or sets a value specifying whether the <see cref="T:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService" /> will retry committing a work batch.</summary>
         <value>
           <see langword="true" /> if the service should retry committing the work batch; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>

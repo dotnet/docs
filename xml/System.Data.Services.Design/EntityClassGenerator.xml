@@ -294,7 +294,7 @@
         <ReturnType>System.Data.Services.Design.DataServiceCodeVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the version of [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] that the generated code targets.</summary>
+        <summary>Gets or sets the version of [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] that the generated code targets.</summary>
         <value>A <see cref="T:System.Data.Services.Design.DataServiceCodeVersion" /> value that indicates the version of the generated code.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -217,7 +217,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the maximum size, in bytes, for messages received by peer TCP bindings configured with this element.</summary>
+        <summary>Gets or sets the maximum size, in bytes, for messages received by peer TCP bindings configured with this element.</summary>
         <value>
           <see cref="T:System.Int32" /> that specifies the maximum size for messages received by peer TCP bindings configured with this element.</value>
         <remarks>

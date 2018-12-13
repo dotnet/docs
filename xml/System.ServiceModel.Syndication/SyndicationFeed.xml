@@ -529,7 +529,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the base URI for the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</summary>
+        <summary>Gets or sets the base URI for the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</summary>
         <value>The base URI for the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -728,7 +728,7 @@
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets copyright information for the feed.</summary>
+        <summary>Gets or sets copyright information for the feed.</summary>
         <value>A <see cref="T:System.ServiceModel.Syndication.SyndicationContent" /> object that represents copyright information for the feed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -939,7 +939,7 @@
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets a description of the feed.</summary>
+        <summary>Gets or sets a description of the feed.</summary>
         <value>A <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> object that represents the description of the feed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1073,7 +1073,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the generator of the feed.</summary>
+        <summary>Gets or sets the generator of the feed.</summary>
         <value>The name of the tool that generated the feed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1235,7 +1235,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the ID of the feed.</summary>
+        <summary>Gets or sets the ID of the feed.</summary>
         <value>The ID of the feed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1290,7 +1290,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the image URL for the feed.</summary>
+        <summary>Gets or sets the image URL for the feed.</summary>
         <value>The URL for the image for the feed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1400,7 +1400,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the language of the feed.</summary>
+        <summary>Gets or sets the language of the feed.</summary>
         <value>The name of the language the feed is written in.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1455,7 +1455,7 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the time the feed was last updated.</summary>
+        <summary>Gets or sets the time the feed was last updated.</summary>
         <value>A <see cref="T:System.DateTimeOffset" /> instance set to the time the feed was last updated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1862,7 +1862,7 @@
         <ReturnType>System.ServiceModel.Syndication.TextSyndicationContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the title of the feed.</summary>
+        <summary>Gets or sets the title of the feed.</summary>
         <value>A <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> instance that contains the title of the feed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -58,7 +58,7 @@
         <ReturnType>System.ServiceModel.SecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the value that indicates the security mode of the peer channel.</summary>
+        <summary>Gets or sets the value that indicates the security mode of the peer channel.</summary>
         <value>
           <see cref="T:System.ServiceModel.SecurityMode" /> enumeration value that indicates the security mode for the peer channel.</value>
         <remarks>To be added.</remarks>

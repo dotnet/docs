@@ -349,7 +349,7 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the base configuration for this security token handler collection.</summary>
+        <summary>Gets or sets the base configuration for this security token handler collection.</summary>
         <value>The configuration for the token handler collection.</value>
         <remarks>To be added.</remarks>
       </Docs>

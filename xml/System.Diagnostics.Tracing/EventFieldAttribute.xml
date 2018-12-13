@@ -92,8 +92,8 @@
         <ReturnType>System.Diagnostics.Tracing.EventFieldFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the value that specifies how to format the value of a user-defined type.</summary>
-        <value>Returns a <see cref="T:System.Diagnostics.Tracing.EventFieldFormat" /> value.</value>
+        <summary>Gets or sets the value that specifies how to format the value of a user-defined type.</summary>
+        <value>The value that specifies how to format the value of a user-defined type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,7 +125,7 @@
         <ReturnType>System.Diagnostics.Tracing.EventFieldTags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the user-defined <see cref="T:System.Diagnostics.Tracing.EventFieldTags" /> value that is required for fields that contain data that isn't one of the supported types.</summary>
+        <summary>Gets or sets the user-defined <see cref="T:System.Diagnostics.Tracing.EventFieldTags" /> value that is required for fields that contain data that isn't one of the supported types.</summary>
         <value>Returns <see cref="T:System.Diagnostics.Tracing.EventFieldTags" />.</value>
         <remarks>To be added.</remarks>
       </Docs>

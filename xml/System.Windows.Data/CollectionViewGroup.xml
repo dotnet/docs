@@ -244,7 +244,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the number of items in the subtree under this group.</summary>
+        <summary>Gets or sets the number of items in the subtree under this group.</summary>
         <value>The number of items (leaves) in the subtree under this group</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

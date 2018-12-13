@@ -405,7 +405,7 @@
         <ReturnType>System.ServiceModel.PeerSecuritySettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the security to set on peer channels created by this binding.</summary>
+        <summary>Gets or sets the security to set on peer channels created by this binding.</summary>
         <value>
           <see cref="T:System.ServiceModel.PeerSecuritySettings" /> enumeration value that indicates the security to set on peer channels created by this binding. Security can be either message- or transport-specific.</value>
         <remarks>To be added.</remarks>

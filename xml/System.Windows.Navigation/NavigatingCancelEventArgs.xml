@@ -118,7 +118,7 @@
         <ReturnType>System.Windows.Navigation.CustomContentState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the <see cref="T:System.Windows.Navigation.CustomContentState" /> object that is associated with the back navigation history entry for the page being navigated from.</summary>
+        <summary>Gets or sets the <see cref="T:System.Windows.Navigation.CustomContentState" /> object that is associated with the back navigation history entry for the page being navigated from.</summary>
         <value>The <see cref="T:System.Windows.Navigation.CustomContentState" /> object that is associated with the back navigation history entry for the page being navigated from.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -167,8 +167,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the Parameters attribute, required by the <see langword="ILogger" /> interface.</summary>
-        <value>Returns the Parameters attribute.</value>
+        <summary>Gets or sets the Parameters attribute, required by the <see langword="ILogger" /> interface.</summary>
+        <value>The Parameters attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,8 +266,8 @@
         <ReturnType>Microsoft.Build.Framework.LoggerVerbosity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the Verbosity attribute, required by the <see langword="ILogger" /> interface.</summary>
-        <value>Returns the Verbosity attribute.</value>
+        <summary>Gets or sets the Verbosity attribute, required by the <see langword="ILogger" /> interface.</summary>
+        <value>The Verbosity attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

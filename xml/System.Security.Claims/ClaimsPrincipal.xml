@@ -521,7 +521,7 @@ if (null != principal)
         <ReturnType>System.Func&lt;System.Security.Claims.ClaimsPrincipal&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the delegate used to select the claims principal returned by the <see cref="P:System.Security.Claims.ClaimsPrincipal.Current" /> property.</summary>
+        <summary>Gets or sets the delegate used to select the claims principal returned by the <see cref="P:System.Security.Claims.ClaimsPrincipal.Current" /> property.</summary>
         <value>The delegate. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1175,7 +1175,7 @@ if (null != principal)
         <ReturnType>System.Func&lt;System.Collections.Generic.IEnumerable&lt;System.Security.Claims.ClaimsIdentity&gt;,System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the delegate used to select the claims identity returned by the <see cref="P:System.Security.Claims.ClaimsPrincipal.Identity" /> property.</summary>
+        <summary>Gets or sets the delegate used to select the claims identity returned by the <see cref="P:System.Security.Claims.ClaimsPrincipal.Identity" /> property.</summary>
         <value>The delegate. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

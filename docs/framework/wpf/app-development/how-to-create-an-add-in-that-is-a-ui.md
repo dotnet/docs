@@ -11,25 +11,25 @@ helpviewer_keywords:
 ms.assetid: 86375525-282b-4039-8352-8680051a10ea
 ---
 # How to: Create an Add-In That Is a UI
-This example shows how to create an add-in that is a Windows Presentation Foundation (WPF) which is hosted by a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] standalone application.  
+This example shows how to create an add-in that is a Windows Presentation Foundation (WPF) which is hosted by a WPF standalone application.  
   
- The add-in is a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] that is a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] user control. The content of the user control is a single button that, when clicked, displays a message box. The [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] standalone application hosts the add-in [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] as the content of the main application window.  
+ The add-in is a UI that is a WPF user control. The content of the user control is a single button that, when clicked, displays a message box. The WPF standalone application hosts the add-in UI as the content of the main application window.  
   
  **Prerequisites**  
   
- This example highlights the [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] extensions to the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] add-in model that enable this scenario, and assumes the following:  
+ This example highlights the WPF extensions to the .NET Framework add-in model that enable this scenario, and assumes the following:  
   
--   Knowledge of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] add-in model, including pipeline, add-in, and host development. If you are unfamiliar with these concepts, see [Add-ins and Extensibility](../../../../docs/framework/add-ins/index.md). For a tutorial that demonstrates the implementation of a pipeline, an add-in, and a host application, see [Walkthrough: Creating an Extensible Application](../../../../docs/framework/add-ins/walkthrough-create-extensible-app.md).  
+-   Knowledge of the .NET Framework add-in model, including pipeline, add-in, and host development. If you are unfamiliar with these concepts, see [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)). For a tutorial that demonstrates the implementation of a pipeline, an add-in, and a host application, see [Walkthrough: Creating an Extensible Application](/previous-versions/dotnet/netframework-4.0/bb788290(v%3dvs.100)).  
   
--   Knowledge of the [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] extensions to the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] add-in model, which can be found here:     [WPF Add-Ins Overview](../../../../docs/framework/wpf/app-development/wpf-add-ins-overview.md).  
+-   Knowledge of the WPF extensions to the .NET Framework add-in model. See [WPF Add-Ins Overview](../../../../docs/framework/wpf/app-development/wpf-add-ins-overview.md).  
   
 ## Example  
- To create an add-in that is a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)][!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] requires specific code for each pipeline segment, the add-in, and the host application.  
+ To create an add-in that is a WPF UI requires specific code for each pipeline segment, the add-in, and the host application.  
     
   
 <a name="Contract"></a>   
 ## Implementing the Contract Pipeline Segment  
- When an add-in is a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], the contract for the add-in must implement <xref:System.AddIn.Contract.INativeHandleContract>. In the example, `IWPFAddInContract` implements <xref:System.AddIn.Contract.INativeHandleContract>, as shown in the following code.  
+ When an add-in is a UI, the contract for the add-in must implement <xref:System.AddIn.Contract.INativeHandleContract>. In the example, `IWPFAddInContract` implements <xref:System.AddIn.Contract.INativeHandleContract>, as shown in the following code.  
   
  [!code-csharp[SimpleAddInIsAUISample#ContractCode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SimpleAddInIsAUISample/CSharp/Contracts/IWPFAddInContract.cs#contractcode)]  
   
@@ -39,7 +39,7 @@ This example shows how to create an add-in that is a Windows Presentation Founda
   
  [!code-csharp[SimpleAddInIsAUISample#AddInViewCode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SimpleAddInIsAUISample/CSharp/AddInViews/WPFAddInView.cs#addinviewcode)]  
   
- Here, the add-in view is derived from <xref:System.Windows.Controls.UserControl>. Consequently, the add-in [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] should also derive from <xref:System.Windows.Controls.UserControl>.  
+ Here, the add-in view is derived from <xref:System.Windows.Controls.UserControl>. Consequently, the add-in UI should also derive from <xref:System.Windows.Controls.UserControl>.  
   
 <a name="AddInSideAdapter"></a>   
 ## Implementing the Add-In-Side Adapter Pipeline Segment  
@@ -47,10 +47,10 @@ This example shows how to create an add-in that is a Windows Presentation Founda
   
  [!code-csharp[SimpleAddInIsAUISample#AddInSideAdapterCode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SimpleAddInIsAUISample/CSharp/AddInSideAdapters/WPFAddIn_ViewToContractAddInSideAdapter.cs#addinsideadaptercode)]  
   
- In the add-in model where an add-in returns a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] (see [Create an Add-In That Returns a UI](../../../../docs/framework/wpf/app-development/how-to-create-an-add-in-that-returns-a-ui.md)), the add-in adapter converted the <xref:System.Windows.FrameworkElement> to an <xref:System.AddIn.Contract.INativeHandleContract> by calling <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter%2A>. <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter%2A> must also be called in this model, although you need to implement a method from which to write the code to call it. You do this by overriding <xref:System.AddIn.Pipeline.ContractBase.QueryContract%2A> and implementing the code that calls <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter%2A> if the code that is calling <xref:System.AddIn.Pipeline.ContractBase.QueryContract%2A> is expecting an <xref:System.AddIn.Contract.INativeHandleContract>. In this case, the caller will be the host-side adapter, which is covered in a subsequent subsection.  
+ In the add-in model where an add-in returns a UI (see [Create an Add-In That Returns a UI](../../../../docs/framework/wpf/app-development/how-to-create-an-add-in-that-returns-a-ui.md)), the add-in adapter converted the <xref:System.Windows.FrameworkElement> to an <xref:System.AddIn.Contract.INativeHandleContract> by calling <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter%2A>. <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter%2A> must also be called in this model, although you need to implement a method from which to write the code to call it. You do this by overriding <xref:System.AddIn.Pipeline.ContractBase.QueryContract%2A> and implementing the code that calls <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter%2A> if the code that is calling <xref:System.AddIn.Pipeline.ContractBase.QueryContract%2A> is expecting an <xref:System.AddIn.Contract.INativeHandleContract>. In this case, the caller will be the host-side adapter, which is covered in a subsequent subsection.  
   
 > [!NOTE]
->  You also need to override <xref:System.AddIn.Pipeline.ContractBase.QueryContract%2A> in this model to enable tabbing between host application [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] and add-in [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]. For more information, see "WPF Add-In Limitations" in [WPF Add-Ins Overview](../../../../docs/framework/wpf/app-development/wpf-add-ins-overview.md).  
+>  You also need to override <xref:System.AddIn.Pipeline.ContractBase.QueryContract%2A> in this model to enable tabbing between host application UI and add-in UI. For more information, see "WPF Add-In Limitations" in [WPF Add-Ins Overview](../../../../docs/framework/wpf/app-development/wpf-add-ins-overview.md).  
   
  Because the add-in-side adapter implements an interface that derives from <xref:System.AddIn.Contract.INativeHandleContract>, you also need to implement <xref:System.AddIn.Contract.INativeHandleContract.GetHandle%2A>, although this is ignored when <xref:System.AddIn.Pipeline.ContractBase.QueryContract%2A> is overridden.  
   
@@ -80,7 +80,7 @@ This example shows how to create an add-in that is a Windows Presentation Founda
   
   
   
- From this example, you can see one interesting benefit of this model: add-in developers only need to implement the add-in (since it is the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] as well), rather than both an add-in class and an add-in [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)].  
+ From this example, you can see one interesting benefit of this model: add-in developers only need to implement the add-in (since it is the UI as well), rather than both an add-in class and an add-in UI.  
   
 <a name="HostApp"></a>   
 ## Implementing the Host Application  
@@ -88,9 +88,9 @@ This example shows how to create an add-in that is a Windows Presentation Founda
   
   
   
- The host application uses typical [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] add-in model code to activate the add-in, which implicitly returns the host view to the host application. The host application subsequently displays the host view (which is a <xref:System.Windows.Controls.UserControl>) from a <xref:System.Windows.Controls.Grid>.  
+ The host application uses typical .NET Framework add-in model code to activate the add-in, which implicitly returns the host view to the host application. The host application subsequently displays the host view (which is a <xref:System.Windows.Controls.UserControl>) from a <xref:System.Windows.Controls.Grid>.  
   
- The code for processing interactions with the add-in [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] runs in the add-in's application domain. These interactions include the following:  
+ The code for processing interactions with the add-in UI runs in the add-in's application domain. These interactions include the following:  
   
 -   Handling the <xref:System.Windows.Controls.Button><xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
   
@@ -99,5 +99,5 @@ This example shows how to create an add-in that is a Windows Presentation Founda
  This activity is completely isolated from the host application.  
   
 ## See Also  
- [Add-ins and Extensibility](../../../../docs/framework/add-ins/index.md)  
+ [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100))  
  [WPF Add-Ins Overview](../../../../docs/framework/wpf/app-development/wpf-add-ins-overview.md)

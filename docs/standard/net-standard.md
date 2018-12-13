@@ -23,7 +23,7 @@ The various .NET implementations target specific versions of .NET Standard. Each
 
 The following table lists the minimum platform versions that support each .NET Standard version.
 
-[!INCLUDE [net-standard-table](~/includes/net-standard-table.md)]
+[!INCLUDE [net-standard-table](/includes/net-standard-table.md)]
 
 To find the highest version of .NET Standard that you can target, do the following steps:
 

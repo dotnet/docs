@@ -728,7 +728,12 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="asyncResult" /> did not originate from a <see cref="M:System.IO.Compression.DeflateStream.BeginRead(System.Byte[],System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /> method on the current stream.</exception>
         <exception cref="T:System.SystemException">An exception was thrown during a call to <see cref="M:System.Threading.WaitHandle.WaitOne" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The stream is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The end call is invalid because asynchronous read operations for this stream are not yet complete.
+
+-or-
+
+The stream is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="EndWrite">
@@ -786,7 +791,12 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="asyncResult" /> did not originate from a <see cref="M:System.IO.Compression.DeflateStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /> method on the current stream.</exception>
         <exception cref="T:System.Exception">An exception was thrown during a call to <see cref="M:System.Threading.WaitHandle.WaitOne" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The end write call is invalid.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          The stream is <see langword="null" />.
+
+-or-
+
+The end write call is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="Flush">

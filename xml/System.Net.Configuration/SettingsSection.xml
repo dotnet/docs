@@ -100,9 +100,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the configuration element that controls the settings used by an <see cref="T:System.Net.HttpWebRequest" /> object.</summary>
-        <value>A <see cref="T:System.Net.Configuration.HttpWebRequestElement" /> object.  
-  
- The configuration element that controls the maximum response header length and other settings used by an <see cref="T:System.Net.HttpWebRequest" /> object.</value>
+        <value>The configuration element that controls the maximum response header length and other settings used by an <see cref="T:System.Net.HttpWebRequest" /> object.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.Configuration.HttpWebRequestElement" />
         <altmember cref="T:System.Net.HttpWebRequest" />
@@ -131,9 +129,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the configuration element that enables Internet Protocol version 6 (IPv6).</summary>
-        <value>A <see cref="T:System.Net.Configuration.Ipv6Element" />.  
-  
- The configuration element that controls setting used by IPv6.</value>
+        <value>The configuration element that controls the setting used by IPv6.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.Configuration.Ipv6Element" />
       </Docs>
@@ -161,9 +157,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the configuration element that controls whether network performance counters are enabled.</summary>
-        <value>A <see cref="T:System.Net.Configuration.PerformanceCountersElement" />.  
-  
- The configuration element that controls setting used network performance counters.</value>
+        <value>The configuration element that controls usage of network performance counters.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.Configuration.PerformanceCountersElement" />
       </Docs>
@@ -218,9 +212,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the configuration element that controls settings for connections to remote host computers.</summary>
-        <value>A <see cref="T:System.Net.Configuration.ServicePointManagerElement" /> object.  
-  
- The configuration element that that controls setting used network performance counters for connections to remote host computers.</value>
+        <value>The configuration element that controls settings for connections to remote host computers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -256,9 +248,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the configuration element that controls settings for sockets.</summary>
-        <value>A <see cref="T:System.Net.Configuration.SocketElement" /> object.  
-  
- The configuration element that controls settings for sockets.</value>
+        <value>The configuration element that controls settings for sockets.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.Configuration.SocketElement" />
         <altmember cref="N:System.Net.Sockets" />
@@ -288,9 +278,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the configuration element that controls the execution timeout and download timeout of Web proxy scripts.</summary>
-        <value>A <see cref="T:System.Net.Configuration.WebProxyScriptElement" /> object.  
-  
- The configuration element that controls settings for the execution timeout and download timeout used by the Web proxy scripts.</value>
+        <value>The configuration element that controls settings for the execution timeout and download timeout used by the Web proxy scripts.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.Configuration.WebProxyScriptElement" />
       </Docs>
@@ -317,9 +305,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the configuration element that controls the settings used by an <see cref="T:System.Net.WebUtility" /> object.</summary>
-        <value>Returns <see cref="T:System.Net.Configuration.WebUtilityElement" />.  
-  
- The configuration element that controls the settings used by an <see cref="T:System.Net.WebUtility" /> object.</value>
+        <value>The configuration element that controls the settings used by a <see cref="T:System.Net.WebUtility" /> object.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.Configuration.WebUtilityElement" />
         <altmember cref="T:System.Net.WebUtility" />

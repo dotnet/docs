@@ -146,7 +146,7 @@
       </Parameters>
       <Docs>
         <param name="contentStream">A readable <see cref="T:System.IO.Stream" /> that contains the content for this attachment.</param>
-        <param name="contentType">A <see cref="T:System.Net.Mime.ContentType" /> that describes the data in <c>stream</c>.</param>
+        <param name="contentType">A <see cref="T:System.Net.Mime.ContentType" /> that describes the data in <paramref name="contentStream" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.Attachment" /> class with the specified stream and content type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -255,7 +255,7 @@
       </Parameters>
       <Docs>
         <param name="fileName">A <see cref="T:System.String" /> that contains a file path to use to create this attachment.</param>
-        <param name="contentType">A <see cref="T:System.Net.Mime.ContentType" /> that describes the data in <c>string</c>.</param>
+        <param name="contentType">A <see cref="T:System.Net.Mime.ContentType" /> that describes the data in <paramref name="fileName" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.Attachment" /> class with the specified content string and <see cref="T:System.Net.Mime.ContentType" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

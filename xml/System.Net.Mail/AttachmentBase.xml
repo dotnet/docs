@@ -322,9 +322,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the content stream of this attachment.</summary>
-        <value>A <see cref="T:System.IO.Stream" />.  
-  
- The content stream of this attachment.</value>
+        <value>The content stream of this attachment.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -356,9 +354,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the content type of this attachment.</summary>
-        <value>A <see cref="T:System.Net.Mime.ContentType" />.  
-  
- The content type for this attachment.</value>
+        <value>The content type for this attachment.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -500,9 +496,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the encoding of this attachment.</summary>
-        <value>A <see cref="T:System.Net.Mime.TransferEncoding" />.  
-  
- The encoding for this attachment.</value>
+        <value>The encoding for this attachment.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

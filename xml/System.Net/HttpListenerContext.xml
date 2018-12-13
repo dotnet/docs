@@ -96,9 +96,7 @@
       <Docs>
         <param name="subProtocol">The supported WebSocket sub-protocol.</param>
         <summary>Accept a WebSocket connection as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.  
-  
- The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.WebSockets.HttpListenerWebSocketContext" /> object.</returns>
+        <returns>The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.WebSockets.HttpListenerWebSocketContext" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -157,9 +155,7 @@
         <param name="subProtocol">The supported WebSocket sub-protocol.</param>
         <param name="keepAliveInterval">The WebSocket protocol keep-alive interval in milliseconds.</param>
         <summary>Accept a WebSocket connection specifying the supported WebSocket sub-protocol  and WebSocket keep-alive interval as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.  
-  
- The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.WebSockets.HttpListenerWebSocketContext" /> object.</returns>
+        <returns>The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.WebSockets.HttpListenerWebSocketContext" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -222,9 +218,7 @@
         <param name="receiveBufferSize">The receive buffer size in bytes.</param>
         <param name="keepAliveInterval">The WebSocket protocol keep-alive interval in milliseconds.</param>
         <summary>Accept a WebSocket connection specifying the supported WebSocket sub-protocol, receive buffer size, and WebSocket keep-alive interval as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.  
-  
- The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.WebSockets.HttpListenerWebSocketContext" /> object.</returns>
+        <returns>The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.WebSockets.HttpListenerWebSocketContext" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -298,9 +292,7 @@
         <param name="keepAliveInterval">The WebSocket protocol keep-alive interval in milliseconds.</param>
         <param name="internalBuffer">An internal buffer to use for this operation.</param>
         <summary>Accept a WebSocket connection specifying the supported WebSocket sub-protocol, receive buffer size, WebSocket keep-alive interval, and the internal buffer as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.  
-  
- The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.WebSockets.HttpListenerWebSocketContext" /> object.</returns>
+        <returns>The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.WebSockets.HttpListenerWebSocketContext" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

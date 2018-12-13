@@ -701,9 +701,7 @@
       <Docs>
         <param name="targetHost">The name of the server that shares this <see cref="T:System.Net.Security.SslStream" />.</param>
         <summary>Called by clients to authenticate the server and optionally the client in a client-server connection as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -855,9 +853,7 @@
         <param name="enabledSslProtocols">The <see cref="T:System.Security.Authentication.SslProtocols" /> value that represents the protocol used for authentication.</param>
         <param name="checkCertificateRevocation">A <see cref="T:System.Boolean" /> value that specifies whether the certificate revocation list is checked during authentication.</param>
         <summary>Called by clients to authenticate the server and optionally the client in a client-server connection as an asynchronous operation. The authentication process uses the specified certificate collection and SSL protocol.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1130,9 +1126,7 @@
       <Docs>
         <param name="serverCertificate">The certificate used to authenticate the server.</param>
         <summary>Called by servers to authenticate the server and optionally the client in a client-server connection using the specified certificate as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1280,9 +1274,7 @@
         <param name="enabledSslProtocols">The <see cref="T:System.Security.Authentication.SslProtocols" /> value that represents the protocol used for authentication.</param>
         <param name="checkCertificateRevocation">A <see cref="T:System.Boolean" /> value that specifies whether the certificate revocation list is checked during authentication.</param>
         <summary>Called by servers to authenticate the server and optionally the client in a client-server connection using the specified certificates, requirements and security protocol as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2242,7 +2234,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that identifies the bulk encryption algorithm used by this <see cref="T:System.Net.Security.SslStream" />.</summary>
-        <value>A <see cref="T:System.Security.Authentication.CipherAlgorithmType" /> value.</value>
+        <value>A value that identifies the bulk encryption algorithm used by this <see cref="T:System.Net.Security.SslStream" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2554,7 +2546,12 @@
           <paramref name="asyncResult" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="asyncResult" /> was not created by a call to <see cref="M:System.Net.Security.SslStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />.</exception>
-        <exception cref="T:System.InvalidOperationException">Authentication has not occurred.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          There is no pending read operation to complete.
+
+-or-
+
+Authentication has not occurred.</exception>
         <exception cref="T:System.IO.IOException">The read operation failed.</exception>
       </Docs>
     </Member>
@@ -2617,7 +2614,12 @@
           <paramref name="asyncResult" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="asyncResult" /> was not created by a call to <see cref="M:System.Net.Security.SslStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />.</exception>
-        <exception cref="T:System.InvalidOperationException">Authentication has not occurred.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          There is no pending write operation to complete.
+
+-or-
+
+Authentication has not occurred.</exception>
         <exception cref="T:System.IO.IOException">The write operation failed.</exception>
       </Docs>
     </Member>
@@ -2735,7 +2737,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the algorithm used for generating message authentication codes (MACs).</summary>
-        <value>A <see cref="T:System.Security.Authentication.HashAlgorithmType" /> value.</value>
+        <value>The algorithm used for generating message authentication codes (MACs).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3216,9 +3218,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the length of the underlying stream.</summary>
-        <value>A <see cref="T:System.Int64" />.  
-  
- The length of the underlying stream.</value>
+        <value>The length of the underlying stream.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3333,9 +3333,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the current position in the underlying stream.</summary>
-        <value>A <see cref="T:System.Int64" />.  
-  
- The current position in the underlying stream.</value>
+        <value>The current position in the underlying stream.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3462,7 +3460,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the amount of time a read operation blocks waiting for data.</summary>
-        <value>A <see cref="T:System.Int32" /> that specifies the amount of time that elapses before a synchronous read operation fails.</value>
+        <value>The amount of time that elapses before a synchronous read operation fails.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3918,7 +3916,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the amount of time a write operation blocks waiting for data.</summary>
-        <value>A <see cref="T:System.Int32" /> that specifies the amount of time that elapses before a synchronous write operation fails.</value>
+        <value>The amount of time that elapses before a synchronous write operation fails.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

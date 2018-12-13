@@ -1294,7 +1294,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the proxy used to communicate with the FTP server.</summary>
-        <value>An <see cref="T:System.Net.IWebProxy" /> instance responsible for communicating with the FTP server. On .NET Core, its value is<see langword="null" />. </value>
+        <value>An <see cref="T:System.Net.IWebProxy" /> instance responsible for communicating with the FTP server. On .NET Core, its value is <see langword="null" />. </value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

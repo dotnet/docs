@@ -757,9 +757,7 @@
       <Parameters />
       <Docs>
         <summary>Waits for an incoming request as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.  
-  
- The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.HttpListenerContext" /> object that represents a client request.</returns>
+        <returns>The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.HttpListenerContext" /> object that represents a client request.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1207,9 +1205,7 @@
       </ReturnValue>
       <Docs>
         <summary>The timeout manager for this <see cref="T:System.Net.HttpListener" /> instance.</summary>
-        <value>Returns <see cref="T:System.Net.HttpListenerTimeoutManager" />.  
-  
- The timeout manager for this <see cref="T:System.Net.HttpListener" /> instance.</value>
+        <value>The timeout manager for this <see cref="T:System.Net.HttpListener" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

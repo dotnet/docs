@@ -396,9 +396,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the delivery format used by <see cref="T:System.Net.Mail.SmtpClient" /> to send email.</summary>
-        <value>Returns <see cref="T:System.Net.Mail.SmtpDeliveryFormat" />.  
-  
- The delivery format used by <see cref="T:System.Net.Mail.SmtpClient" />.</value>
+        <value>The delivery format used by <see cref="T:System.Net.Mail.SmtpClient" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1517,9 +1515,7 @@
       <Docs>
         <param name="message">A <see cref="T:System.Net.Mail.MailMessage" /> that contains the message to send.</param>
         <summary>Sends the specified message to an SMTP server for delivery as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1569,9 +1565,7 @@
         <param name="subject">A <see cref="T:System.String" /> that contains the subject line for the message.</param>
         <param name="body">A <see cref="T:System.String" /> that contains the message body.</param>
         <summary>Sends the specified message to an SMTP server for delivery as an asynchronous operation. . The message sender, recipients, subject, and message body are specified using <see cref="T:System.String" /> objects.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

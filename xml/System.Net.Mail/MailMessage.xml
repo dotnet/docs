@@ -637,9 +637,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the transfer encoding used to encode the message body.</summary>
-        <value>Returns <see cref="T:System.Net.Mime.TransferEncoding" />.  
-  
- A <see cref="T:System.Net.Mime.TransferEncoding" /> applied to the contents of the <see cref="P:System.Net.Mail.MailMessage.Body" />.</value>
+        <value>A <see cref="T:System.Net.Mime.TransferEncoding" /> applied to the contents of the <see cref="P:System.Net.Mail.MailMessage.Body" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

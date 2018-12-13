@@ -1015,7 +1015,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="cookieHeader" /> is <see langword="null" />.</exception>
+          <paramref name="uri" /> or <paramref name="cookieHeader" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.CookieException">One of the cookies is invalid.  
   
  -or-  

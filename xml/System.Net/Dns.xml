@@ -741,9 +741,7 @@
       <Docs>
         <param name="hostNameOrAddress">The host name or IP address to resolve.</param>
         <summary>Returns the Internet Protocol (IP) addresses for the specified host as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.  
-  
- The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an array of type <see cref="T:System.Net.IPAddress" /> that holds the IP addresses for the host that is specified by the <paramref name="hostNameOrAddress" /> parameter.</returns>
+        <returns>The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an array of type <see cref="T:System.Net.IPAddress" /> that holds the IP addresses for the host that is specified by the <paramref name="hostNameOrAddress" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -813,9 +811,7 @@
       <Docs>
         <param name="address">An <see cref="T:System.Net.IPAddress" />.</param>
         <summary>Creates an <see cref="T:System.Net.IPHostEntry" /> instance from the specified <see cref="T:System.Net.IPAddress" />.</summary>
-        <returns>An <see cref="T:System.Net.IPHostEntry" />.  
-  
- An <see cref="T:System.Net.IPHostEntry" /> instance.</returns>
+        <returns>An <see cref="T:System.Net.IPHostEntry" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1173,9 +1169,7 @@
       <Docs>
         <param name="address">An IP address.</param>
         <summary>Resolves an IP address to an <see cref="T:System.Net.IPHostEntry" /> instance as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.  
-  
- The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.IPHostEntry" /> instance that contains address information about the host specified in <paramref name="address" />.</returns>
+        <returns>The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.IPHostEntry" /> instance that contains address information about the host specified in <paramref name="address" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1232,9 +1226,7 @@
       <Docs>
         <param name="hostNameOrAddress">The host name or IP address to resolve.</param>
         <summary>Resolves a host name or IP address to an <see cref="T:System.Net.IPHostEntry" /> instance as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.  
-  
- The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.IPHostEntry" /> instance that contains address information about the host specified in <paramref name="hostNameOrAddress" />.</returns>
+        <returns>The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns an <see cref="T:System.Net.IPHostEntry" /> instance that contains address information about the host specified in <paramref name="hostNameOrAddress" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -147,9 +147,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the type information for a custom Web proxy implementation.</summary>
-        <value>A <see cref="T:System.Net.Configuration.ModuleElement" />.  
-  
- The type information for a custom Web proxy implementation.</value>
+        <value>The type information for a custom Web proxy implementation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -239,9 +237,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the URI that identifies the Web proxy server to use.</summary>
-        <value>A <see cref="T:System.Net.Configuration.ProxyElement" />.  
-  
- The URI that identifies the Web proxy server.</value>
+        <value>The URI that identifies the Web proxy server.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

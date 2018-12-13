@@ -330,9 +330,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.FormatException">The <paramref name="address" /> parameter contains an illegal hardware address.  
-  
- This exception also occurs if the <paramref name="address" /> parameter contains a string in the incorrect format.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="address" /> contains an illegal hardware address or contains a string in the incorrect format.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">

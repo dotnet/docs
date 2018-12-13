@@ -3178,7 +3178,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <Docs>
         <param name="match">The <see cref="T:System.Predicate`1" /> delegate that defines the conditions of the elements to remove.</param>
         <summary>Removes all the elements that match the conditions defined by the specified predicate.</summary>
-        <returns>The number of elements removed from the <see cref="T:System.Collections.Generic.List`1" /> .</returns>
+        <returns>The number of elements removed from the <see cref="T:System.Collections.Generic.List`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

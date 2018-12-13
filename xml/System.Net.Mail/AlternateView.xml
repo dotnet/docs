@@ -383,9 +383,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the base URI to use for resolving relative URIs in the <see cref="T:System.Net.Mail.AlternateView" />.</summary>
-        <value>A <see cref="T:System.Uri" />.  
-  
- The base <see cref="T:System.Uri" />.</value>
+        <value>The base URI to use for resolving relative URIs in the <see cref="T:System.Net.Mail.AlternateView" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -475,7 +473,7 @@
       </Parameters>
       <Docs>
         <param name="content">A <see cref="T:System.String" /> that contains the content for this attachment.</param>
-        <param name="contentType">A <see cref="T:System.Net.Mime.ContentType" /> that describes the data in <c>string</c>.</param>
+        <param name="contentType">A <see cref="T:System.Net.Mime.ContentType" /> that describes the data in <paramref name="content" />.</param>
         <summary>Creates an <see cref="T:System.Net.Mail.AlternateView" /> of an email message using the content specified in a <see cref="T:System.String" /> and the specified MIME media type of the content.</summary>
         <returns>An <see cref="T:System.Net.Mail.AlternateView" /> object that represents an alternate view of an email message.</returns>
         <remarks>To be added.</remarks>

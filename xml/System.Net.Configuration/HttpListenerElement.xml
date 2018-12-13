@@ -162,9 +162,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the default timeout elements used for an <see cref="T:System.Net.HttpListener" /> object.</summary>
-        <value>Returns <see cref="T:System.Net.Configuration.HttpListenerTimeoutsElement" />.  
-  
- The timeout elements used for an <see cref="T:System.Net.HttpListener" /> object.</value>
+        <value>The timeout elements used for an <see cref="T:System.Net.HttpListener" /> object.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.HttpListener" />
         <altmember cref="T:System.Net.HttpListenerTimeoutManager" />

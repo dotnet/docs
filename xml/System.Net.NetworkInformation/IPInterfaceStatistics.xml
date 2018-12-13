@@ -99,9 +99,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of bytes that were received on the interface.</summary>
-        <value>Returns <see cref="T:System.Int64" />.  
-  
- The total number of bytes that were received on the interface.</value>
+        <value>The total number of bytes that were received on the interface.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,9 +131,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of bytes that were sent on the interface.</summary>
-        <value>Returns <see cref="T:System.Int64" />.  
-  
- The total number of bytes that were sent on the interface.</value>
+        <value>The total number of bytes that were sent on the interface.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,9 +163,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of incoming packets that were discarded.</summary>
-        <value>Returns <see cref="T:System.Int64" />.  
-  
- The total number of incoming packets that were discarded.</value>
+        <value>The total number of incoming packets that were discarded.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -208,9 +202,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of incoming packets with errors.</summary>
-        <value>Returns <see cref="T:System.Int64" />.  
-  
- The total number of incoming packets with errors.</value>
+        <value>The total number of incoming packets with errors.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -249,9 +241,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of incoming packets with an unknown protocol that were received on the interface.</summary>
-        <value>Returns <see cref="T:System.Int64" />.  
-  
- The total number of incoming packets with an unknown protocol that were received on the interface.</value>
+        <value>The total number of incoming packets with an unknown protocol that were received on the interface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -290,9 +280,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of non-unicast packets that were received on the interface.</summary>
-        <value>Returns <see cref="T:System.Int64" />.  
-  
- The total number of incoming non-unicast packets received on the interface.</value>
+        <value>The total number of incoming non-unicast packets received on the interface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -331,9 +319,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of non-unicast packets that were sent on the interface.</summary>
-        <value>Returns <see cref="T:System.Int64" />.  
-  
- The total number of non-unicast packets that were sent on the interface.</value>
+        <value>The total number of non-unicast packets that were sent on the interface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -372,9 +358,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of outgoing packets that were discarded.</summary>
-        <value>Returns <see cref="T:System.Int64" />.  
-  
- The total number of outgoing packets that were discarded.</value>
+        <value>The total number of outgoing packets that were discarded.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -413,9 +397,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of outgoing packets with errors.</summary>
-        <value>Returns <see cref="T:System.Int64" />.  
-  
- The total number of outgoing packets with errors.</value>
+        <value>The total number of outgoing packets with errors.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -454,9 +436,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the length of the output queue.</summary>
-        <value>Returns <see cref="T:System.Int64" />.  
-  
- The total number of packets in the output queue.</value>
+        <value>The total number of packets in the output queue.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -488,9 +468,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of unicast packets that were received on the interface.</summary>
-        <value>Returns <see cref="T:System.Int64" />.  
-  
- The total number of unicast packets that were received on the interface.</value>
+        <value>The total number of unicast packets that were received on the interface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -529,9 +507,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of unicast packets that were sent on the interface.</summary>
-        <value>Returns <see cref="T:System.Int64" />.  
-  
- The total number of unicast packets that were sent on the interface.</value>
+        <value>The total number of unicast packets that were sent on the interface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -773,7 +773,7 @@
       </Parameters>
       <Docs>
         <param name="prop">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to search for.</param>
-        <param name="key">The value of <c>property</c> to match.</param>
+        <param name="key">The value of <paramref name="prop" /> to match.</param>
         <summary>Searches for the index of the item that has the specified property descriptor with the specified value, if searching is implemented in a derived class; otherwise, a <see cref="T:System.NotSupportedException" />.</summary>
         <returns>The zero-based index of the item that matches the property descriptor and contains the specified value.</returns>
         <remarks>
@@ -1861,9 +1861,9 @@
       </Parameters>
       <Docs>
         <param name="prop">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to search on.</param>
-        <param name="key">The value of the <c>property</c> parameter to search for.</param>
+        <param name="key">The value of the <paramref name="prop" /> parameter to search for.</param>
         <summary>For a description of this member, see <see cref="M:System.ComponentModel.IBindingList.Find(System.ComponentModel.PropertyDescriptor,System.Object)" />.</summary>
-        <returns>The index of the row that has the given <see cref="T:System.ComponentModel.PropertyDescriptor" /> .</returns>
+        <returns>The index of the row that has the given <see cref="T:System.ComponentModel.PropertyDescriptor" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

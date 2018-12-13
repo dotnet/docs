@@ -120,9 +120,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether local resources are retrieved by using a Web proxy server.</summary>
-        <value>A <see cref="T:System.Net.Configuration.ProxyElement.BypassOnLocalValues" />.  
-  
- Avalue that indicates whether local resources are retrieved by using a Web proxy server.</value>
+        <value>A value that indicates whether local resources are retrieved by using a Web proxy server.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -186,7 +184,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the URI that identifies the Web proxy server to use.</summary>
-        <value>A <see cref="T:System.String" /> containing a URI.</value>
+        <value>The URI that identifies the Web proxy server to use.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.WebProxy" />
         <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>

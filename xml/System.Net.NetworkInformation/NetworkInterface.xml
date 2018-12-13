@@ -283,9 +283,7 @@
       <Parameters />
       <Docs>
         <summary>Gets the IP statistics for this <see cref="T:System.Net.NetworkInformation.NetworkInterface" /> instance.</summary>
-        <returns>Returns <see cref="T:System.Net.NetworkInformation.IPInterfaceStatistics" />.  
-  
- The IP statistics.</returns>
+        <returns>The IP statistics.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,9 +488,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the index of the IPv6 loopback interface.</summary>
-        <value>Returns <see cref="T:System.Int32" />.  
-  
- The index for the IPv6 loopback interface.</value>
+        <value>The index for the IPv6 loopback interface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

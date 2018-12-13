@@ -365,11 +365,11 @@
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.NamespaceInfo" /> object with the specified key in the collection.  
   
- \- or -  
+-or-
   
  The element has already been removed.  
   
- \- or -  
+-or-
   
  The collection is read-only.</exception>
         <altmember cref="T:System.Web.Configuration.PagesSection" />
@@ -415,11 +415,11 @@
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.NamespaceInfo" /> object at the specified index in the collection.  
   
- \- or -  
+-or-
   
  The element has already been removed.  
   
- \- or -  
+-or-
   
  The collection is read-only.</exception>
         <altmember cref="T:System.Web.Configuration.PagesSection" />

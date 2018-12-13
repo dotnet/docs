@@ -322,7 +322,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The specified control is not found.  
   
- \- or -  
+-or-
   
  The specified control does not have a <see cref="T:System.Web.UI.ValidationPropertyAttribute" /> attribute associated with it; therefore, it cannot be validated with a validation control.</exception>
         <altmember cref="M:System.Web.UI.WebControls.BaseValidator.ControlPropertiesValid" />
@@ -365,11 +365,11 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">No value is specified for the <see cref="P:System.Web.UI.WebControls.BaseValidator.ControlToValidate" /> property.  
   
- \- or -  
+-or-
   
  The input control specified by the <see cref="P:System.Web.UI.WebControls.BaseValidator.ControlToValidate" /> property is not found on the page.  
   
- \- or -  
+-or-
   
  The input control specified by the <see cref="P:System.Web.UI.WebControls.BaseValidator.ControlToValidate" /> property does not have a <see cref="T:System.Web.UI.ValidationPropertyAttribute" /> attribute associated with it; therefore, it cannot be validated with a validation control.</exception>
         <altmember cref="T:System.Web.UI.ValidationPropertyAttribute" />
@@ -1221,7 +1221,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">No value is specified in the <see cref="P:System.Web.UI.WebControls.BaseValidator.ControlToValidate" /> property.  
   
- \- or -  
+-or-
   
  The input control specified by the <see cref="P:System.Web.UI.WebControls.BaseValidator.ControlToValidate" /> property is not found on the page.</exception>
         <altmember cref="M:System.Web.UI.WebControls.BaseValidator.ControlPropertiesValid" />

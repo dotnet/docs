@@ -46,12 +46,12 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The provider type defined in configuration was <see langword="null" /> or an empty string ("").  
   
- \- or -  
+-or-
   
  The provider type defined in configuration is not compatible with the type used by the feature that is attempting to create a new instance of the provider.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The provider threw an exception while it was being initialized.  
   
- \- or -  
+-or-
   
  An error occurred while attempting to resolve a <see cref="T:System.Type" /> instance for the provider specified in <paramref name="providerSettings" />.</exception>
       </Docs>

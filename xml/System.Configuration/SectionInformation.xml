@@ -1076,7 +1076,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Configuration.SectionInformation.AllowLocation" /> property is set to <see langword="false" />.  
   
- \- or -  
+-or-
   
  The target section is already a protected data section.</exception>
         <altmember cref="T:System.Configuration.DpapiProtectedConfigurationProvider" />

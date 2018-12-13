@@ -108,7 +108,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dependencies" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  A <see cref="T:System.Web.Caching.CacheDependency" /> object in <paramref name="dependencies" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">A <see cref="T:System.Web.Caching.CacheDependency" /> object is referenced from more than one <see cref="T:System.Web.Caching.Cache" /> entry.</exception>

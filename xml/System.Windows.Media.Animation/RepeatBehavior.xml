@@ -41,19 +41,19 @@
 ## XAML Attribute Usage  
  \<*object* *property*="*iterationCount*x"/>  
   
- \- or -  
+-or-
   
  \<*object* *property*="[*days*.]*hours*:*minutes*:*seconds*[.*fractionalSeconds*]"/>  
   
- \- or -  
+-or-
   
  \<*object* *property*="[*days*.]*hours*:*minutes*"/>  
   
- \- or -  
+-or-
   
  \<*object* *property*="*days*"/>  
   
- \- or -  
+-or-
   
  \<*object* *property*="<xref:System.Windows.Media.Animation.RepeatBehavior.Forever%2A>"/>  
   

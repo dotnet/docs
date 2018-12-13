@@ -398,13 +398,13 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="container" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="expr" /> is <see langword="null" /> or an empty string ("").</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="expr" /> is not a valid indexed expression.  
   
- \- or -  
+-or-
   
  <paramref name="expr" /> does not allow indexed access.</exception>
         <altmember cref="Overload:System.Web.UI.DataBinder.GetPropertyValue" />
@@ -560,7 +560,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="container" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="propName" /> is <see langword="null" /> or an empty string ("").</exception>
         <exception cref="T:System.Web.HttpException">The object in <paramref name="container" /> does not have the property specified by <paramref name="propName" />.</exception>

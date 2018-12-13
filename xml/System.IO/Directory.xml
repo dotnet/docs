@@ -668,7 +668,7 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains invalid characters. You can query for invalid characters with the  <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.  
   
- \- or -  
+-or-
   
  <paramref name="searchPattern" /> does not contain a valid pattern.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -792,7 +792,7 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains invalid characters. You can query for invalid characters by using the  <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.  
   
- \- or -  
+-or-
   
  <paramref name="searchPattern" /> does not contain a valid pattern.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -975,7 +975,7 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains invalid characters. You can query for invalid characters by using the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.  
   
- \- or -  
+-or-
   
  <paramref name="searchPattern" /> does not contain a valid pattern.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -1112,7 +1112,7 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains invalid characters. You can query for invalid characters by using the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.  
   
- \- or -  
+-or-
   
  <paramref name="searchPattern" /> does not contain a valid pattern.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -1269,7 +1269,7 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains invalid characters. You can query for invalid characters by using the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.  
   
- \- or -  
+-or-
   
  <paramref name="searchPattern" /> does not contain a valid pattern.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -1393,7 +1393,7 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains invalid characters. You can query for invalid characters by using the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.  
   
- \- or -  
+-or-
   
  <paramref name="searchPattern" /> does not contain a valid pattern.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -2860,7 +2860,7 @@ Directory::CreateDirectory("Public\\Html");
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains invalid characters. You can query for invalid characters by using the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.  
   
- \- or -  
+-or-
   
  <paramref name="searchPattern" /> does not contain a valid pattern.</exception>
         <exception cref="T:System.ArgumentNullException">

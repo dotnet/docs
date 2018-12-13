@@ -222,11 +222,11 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">No <see cref="T:System.Web.UI.ScriptManager" /> control was found on the page.  
   
- \- or -  
+-or-
   
  The event that is named in the <see cref="P:System.Web.UI.AsyncPostBackTrigger.EventName" /> property is not found for the control that is named in the <see cref="P:System.Web.UI.UpdatePanelControlTrigger.ControlID" /> property.  
   
- \- or -  
+-or-
   
  The event that is named in the <see cref="P:System.Web.UI.AsyncPostBackTrigger.EventName" /> property for the control that is named in the <see cref="P:System.Web.UI.UpdatePanelControlTrigger.ControlID" /> property does not match a standard event handler signature.</exception>
         <altmember cref="P:System.Web.UI.AsyncPostBackTrigger.EventName" />

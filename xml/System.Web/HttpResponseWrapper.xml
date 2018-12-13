@@ -1125,7 +1125,7 @@
         <exception cref="T:System.ArgumentNullException">The encoding value is <see langword="null" />.</exception>
         <exception cref="T:System.Web.HttpException">The encoding value is <see cref="P:System.Text.Encoding.Unicode" />.  
   
- \- or -  
+-or-
   
  The headers have already been sent.</exception>
       </Docs>
@@ -2419,16 +2419,16 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="offset" /> parameter is less than zero.  
   
- \- or -  
+-or-
   
  The <paramref name="length" /> parameter is less than -1.  
   
- \- or -  
+-or-
   
  The <paramref name="length" /> parameter is greater than the file size minus <paramref name="offset" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The out-of-process worker request is not supported.  
   
- \- or -  
+-or-
   
  The response is not using a <see cref="T:System.Web.HttpWriter" /> object.</exception>
       </Docs>
@@ -2689,7 +2689,7 @@
         <exception cref="T:System.Web.HttpException">
           <paramref name="offset" /> is less than 0.  
   
- \- or -  
+-or-
   
  <paramref name="size" /> is greater than the file size minus <paramref name="offset" />.</exception>
       </Docs>
@@ -2727,7 +2727,7 @@
         <exception cref="T:System.Web.HttpException">
           <paramref name="offset" /> is less than 0.  
   
- \- or -  
+-or-
   
  <paramref name="size" /> is greater than the file size minus <paramref name="offset" />.</exception>
       </Docs>

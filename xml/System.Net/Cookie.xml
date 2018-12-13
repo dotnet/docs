@@ -972,7 +972,7 @@
         </remarks>
         <exception cref="T:System.Net.CookieException">The value specified for a set operation is <see langword="null" /> or the empty string  
   
- \- or -  
+-or-
   
  The value specified for a set operation contained an illegal character. The following characters must not be used inside the <see cref="P:System.Net.Cookie.Name" /> property: equal sign, semicolon, comma, newline (\n), return (\r), tab (\t), and space character. The dollar sign character ("$") cannot be the first character.</exception>
         <altmember cref="T:System.Net.CookieCollection" />

@@ -2597,7 +2597,7 @@
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See remarks section below.</exception>
         <exception cref="T:System.NotSupportedException">The operating system is not Windows NT or later.  
   
- \- or -  
+-or-
   
  The socket is not connected to a remote host.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file <paramref name="fileName" /> was not found.</exception>
@@ -5454,7 +5454,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
         </remarks>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.  
   
- \- or -  
+-or-
   
  In .NET Compact Framework applications, the Windows CE default buffer space is set to 32768 bytes. You can change the per socket buffer space by calling <see cref="Overload:System.Net.Sockets.Socket.SetSocketOption" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
@@ -5530,7 +5530,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
         </remarks>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.  
   
- \- or -  
+-or-
   
  In .NET Compact Framework applications, the Windows CE default buffer space is set to 32768 bytes. You can change the per socket buffer space by calling <see cref="Overload:System.Net.Sockets.Socket.SetSocketOption" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
@@ -9389,7 +9389,7 @@ The GetHashCode method returns a hash code of this instance. This value can be u
         </remarks>
         <exception cref="T:System.NotSupportedException">The operating system is not Windows NT or later.  
   
- \- or -  
+-or-
   
  The socket is not connected to a remote host.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> object has been closed.</exception>

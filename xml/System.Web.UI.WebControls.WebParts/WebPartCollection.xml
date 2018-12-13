@@ -155,7 +155,7 @@
           <paramref name="webParts" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An object in the <paramref name="webParts" /> collection is <see langword="null" />.  
   
- \- or -  
+-or-
   
  An object in the <paramref name="webParts" /> collection is not a of type <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" />.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>

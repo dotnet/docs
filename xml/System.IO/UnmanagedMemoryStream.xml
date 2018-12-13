@@ -161,7 +161,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="pointer" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="length" /> value is less than zero.  
   
- \- or -  
+-or-
   
  The <paramref name="length" /> is large enough to cause an overflow.</exception>
         <permission cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode">for accessing unmanaged memory.</permission>
@@ -281,11 +281,11 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="pointer" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="length" /> value is less than zero.  
   
- \- or -  
+-or-
   
  The <paramref name="capacity" /> value is less than zero.  
   
- \- or -  
+-or-
   
  The <paramref name="length" /> value is greater than the <paramref name="capacity" /> value.</exception>
         <permission cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode">for accessing unmanaged memory.</permission>
@@ -769,11 +769,11 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="pointer" /> value is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="length" /> value is less than zero.  
   
- \- or -  
+-or-
   
  The <paramref name="capacity" /> value is less than zero.  
   
- \- or -  
+-or-
   
  The <paramref name="length" /> value is large enough to cause an overflow.</exception>
         <permission cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode">for accessing unmanaged memory.</permission>
@@ -1099,13 +1099,13 @@
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
         <exception cref="T:System.NotSupportedException">The underlying memory does not support reading.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.IO.UnmanagedMemoryStream.CanRead" /> property is set to <see langword="false" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="buffer" /> parameter is set to <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="offset" /> parameter is less than zero.  
   
- \- or -  
+-or-
   
  The <paramref name="count" /> parameter is less than zero.</exception>
         <exception cref="T:System.ArgumentException">The length of the buffer array minus the <paramref name="offset" /> parameter is less than the <paramref name="count" /> parameter.</exception>
@@ -1226,7 +1226,7 @@
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
         <exception cref="T:System.NotSupportedException">The underlying memory does not support reading.  
   
- \- or -  
+-or-
   
  The current position is at the end of the stream.</exception>
       </Docs>
@@ -1340,12 +1340,12 @@
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
         <exception cref="T:System.NotSupportedException">The underlying memory does not support writing.  
   
- \- or -  
+-or-
   
  An attempt is made to write to the stream and the <see cref="P:System.IO.UnmanagedMemoryStream.CanWrite" /> property is <see langword="false" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified <paramref name="value" /> exceeds the capacity of the stream.  
   
- \- or -  
+-or-
   
  The specified <paramref name="value" /> is negative.</exception>
       </Docs>
@@ -1446,15 +1446,15 @@
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
         <exception cref="T:System.NotSupportedException">The underlying memory does not support writing.  
   
- \- or -  
+-or-
   
  An attempt is made to write to the stream and the <see cref="P:System.IO.UnmanagedMemoryStream.CanWrite" /> property is <see langword="false" />.  
   
- \- or -  
+-or-
   
  The <paramref name="count" /> value is greater than the capacity of the stream.  
   
- \- or -  
+-or-
   
  The position is at the end of the stream capacity.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
@@ -1575,11 +1575,11 @@
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
         <exception cref="T:System.NotSupportedException">The underlying memory does not support writing.  
   
- \- or -  
+-or-
   
  An attempt is made to write to the stream and the <see cref="P:System.IO.UnmanagedMemoryStream.CanWrite" /> property is <see langword="false" />.  
   
- \- or -  
+-or-
   
  The current position is at the end of the capacity of the stream.</exception>
         <exception cref="T:System.IO.IOException">The supplied <paramref name="value" /> causes the stream exceed its maximum capacity.</exception>

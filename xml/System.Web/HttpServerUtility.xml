@@ -246,13 +246,13 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The current <see cref="T:System.Web.HttpContext" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  An error occurred while executing the handler specified by <paramref name="path" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="path" /> is not a virtual path.</exception>
       </Docs>
@@ -300,13 +300,13 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The current <see cref="T:System.Web.HttpContext" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  An error occurred while executing the handler specified by <paramref name="path" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="path" /> is not a virtual path.</exception>
         <altmember cref="Overload:System.Web.HttpServerUtility.Transfer" />
@@ -366,13 +366,13 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The current <see cref="T:System.Web.HttpContext" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  An error occurred while executing the handler specified by <paramref name="path" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="path" /> is not a virtual path.</exception>
         <altmember cref="Overload:System.Web.HttpServerUtility.Transfer" />
@@ -429,11 +429,11 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The current <see cref="T:System.Web.HttpContext" /> is a null reference (<see langword="Nothing" /> in Visual Basic).  
   
- \- or -  
+-or-
   
  <paramref name="path" /> ends with a period (.).  
   
- \- or -  
+-or-
   
  An error occurred while executing the handler specified by <paramref name="path" />.</exception>
         <exception cref="T:System.ArgumentNullException">

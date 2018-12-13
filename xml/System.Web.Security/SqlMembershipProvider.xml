@@ -227,41 +227,41 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="username" /> is an empty string (""), contains a comma, or is longer than 256 characters.  
   
- \- or -  
+-or-
   
  <paramref name="oldPassword" /> is an empty string or longer than 128 characters.  
   
- \- or -  
+-or-
   
  <paramref name="newPassword" /> is an empty string or longer than 128 characters.  
   
- \- or -  
+-or-
   
  The encoded version of <paramref name="newPassword" /> is greater than 128 characters.  
   
- \- or -  
+-or-
   
  The change-password action was canceled by a subscriber to the <see cref="E:System.Web.Security.Membership.ValidatingPassword" /> event, and the <see cref="P:System.Web.Security.ValidatePasswordEventArgs.FailureInformation" /> property was <see langword="null" />.  
   
- \- or -  
+-or-
   
  The length of <paramref name="newPassword" /> is less than the minimum length specified in the <see cref="P:System.Web.Security.SqlMembershipProvider.MinRequiredPasswordLength" /> property.  
   
- \- or -  
+-or-
   
  The number of non-alphabetic characters in <paramref name="newPassword" /> is less than the required number of non-alphabetic characters specified in the <see cref="P:System.Web.Security.SqlMembershipProvider.MinRequiredNonAlphanumericCharacters" /> property.  
   
- \- or -  
+-or-
   
  <paramref name="newPassword" /> does not pass the regular expression defined in the <see cref="P:System.Web.Security.SqlMembershipProvider.PasswordStrengthRegularExpression" /> property.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="oldPassword" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="newPassword" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Web.Security.MembershipPasswordException">
@@ -333,33 +333,33 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="username" /> is an empty string (""), contains a comma, or is longer than 256 characters.  
   
- \- or -  
+-or-
   
  <paramref name="password" /> is an empty string or is longer than 128 characters.  
   
- \- or -  
+-or-
   
  <paramref name="newPasswordQuestion" /> is an empty string or is longer than 256 characters.  
   
- \- or -  
+-or-
   
  <paramref name="newPasswordAnswer" /> is an empty string or is longer than 128 characters.  
   
- \- or -  
+-or-
   
  The encoded version of <paramref name="newPasswordAnswer" /> is longer than 128 characters.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="password" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="newPasswordQuestion" /> is <see langword="null" /> and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresQuestionAndAnswer" /> is <see langword="true" />.  
   
- \- or -  
+-or-
   
  <paramref name="newPasswordAnswer" /> is <see langword="null" /> and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresQuestionAndAnswer" /> is <see langword="true" />.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">An error occurred when changing the password question and answer in the database.</exception>
@@ -695,15 +695,15 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="emailToMatch" /> is longer than 256 characters.  
   
- \- or -  
+-or-
   
  <paramref name="pageIndex" /> is less than zero.  
   
- \- or -  
+-or-
   
  <paramref name="pageSize" /> is less than one.  
   
- \- or -  
+-or-
   
  <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> plus <paramref name="pageSize" /> minus one exceeds <see cref="F:System.Int32.MaxValue" />.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
@@ -766,15 +766,15 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="usernameToMatch" /> is an empty string ("") or is longer than 256 characters.  
   
- \- or -  
+-or-
   
  <paramref name="pageIndex" /> is less than zero.  
   
- \- or -  
+-or-
   
  <paramref name="pageSize" /> is less than 1.  
   
- \- or -  
+-or-
   
  <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> plus <paramref name="pageSize" /> minus one exceeds <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -879,11 +879,11 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="pageIndex" /> is less than zero.  
   
- \- or -  
+-or-
   
  <paramref name="pageSize" /> is less than one.  
   
- \- or -  
+-or-
   
  <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> plus <paramref name="pageSize" /> minus one exceeds <see cref="F:System.Int32.MaxValue" />.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
@@ -993,7 +993,7 @@
         <exception cref="T:System.Web.Security.MembershipPasswordException">
           <paramref name="passwordAnswer" /> is invalid.  
   
- \- or -  
+-or-
   
  The membership user identified by <paramref name="username" /> is locked out.</exception>
         <exception cref="T:System.NotSupportedException">
@@ -1001,30 +1001,30 @@
         <exception cref="T:System.Configuration.Provider.ProviderException">
           <paramref name="username" /> is not found in the membership database.  
   
- \- or -  
+-or-
   
  An error occurred while retrieving the password from the database.</exception>
         <exception cref="T:System.ArgumentException">One of the parameter values exceeds the maximum allowed length.  
   
- \- or -  
+-or-
   
  <paramref name="username" /> is an empty string (""), contains a comma, or is longer than 256 characters.  
   
- \- or -  
+-or-
   
  <paramref name="passwordAnswer" /> is an empty string and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresQuestionAndAnswer" /> is <see langword="true" />.  
   
- \- or -  
+-or-
   
  <paramref name="passwordAnswer" /> is greater than 128 characters.  
   
- \- or -  
+-or-
   
  The encoded version of <paramref name="passwordAnswer" /> is greater than 128 characters.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="passwordAnswer" /> is <see langword="null" /> and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresQuestionAndAnswer" /> is <see langword="true" />.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
@@ -1133,7 +1133,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="username" /> exceeds 256 characters.  
   
- \- or -  
+-or-
   
  <paramref name="username" /> contains a comma.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -1229,51 +1229,51 @@
           <paramref name="config" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">The <see langword="enablePasswordRetrieval" />, <see langword="enablePasswordReset" />, <see langword="requiresQuestionAndAnswer" />, or <see langword="requiresUniqueEmail" /> attribute is set to a value other than a <see langword="Boolean" />.  
   
- \- or -  
+-or-
   
  The <see langword="maxInvalidPasswordAttempts" /> or the <see langword="passwordAttemptWindow" /> attribute is set to a value other than a positive integer.  
   
- \- or -  
+-or-
   
  The <see langword="minRequiredPasswordLength" /> attribute is set to a value other than a positive integer, or the value is greater than 128.  
   
- \- or -  
+-or-
   
  The <see langword="minRequiredNonalphanumericCharacters" /> attribute is set to a value other than zero or a positive integer, or the value is greater than 128.  
   
- \- or -  
+-or-
   
  The value for the <see langword="passwordStrengthRegularExpression" /> attribute is not a valid regular expression.  
   
- \- or -  
+-or-
   
  The <see langword="applicationName" /> attribute is set to a value that is greater than 256 characters.  
   
- \- or -  
+-or-
   
  The <see langword="passwordFormat" /> attribute specified in the application configuration file is an invalid <see cref="T:System.Web.Security.MembershipPasswordFormat" /> enumeration.  
   
- \- or -  
+-or-
   
  The <see langword="passwordFormat" /> attribute is set to <see cref="F:System.Web.Security.MembershipPasswordFormat.Hashed" /> and the <see langword="enablePasswordRetrieval" /> attribute is set to <see langword="true" /> in the application configuration.  
   
- \- or -  
+-or-
   
  The <see langword="passwordFormat" /> attribute is set to <see langword="Encrypted" /> and the  configuration element specifies <see langword="AutoGenerate" /> for the <see langword="decryptionKey" /> attribute.  
   
- \- or -  
+-or-
   
  The <see langword="connectionStringName" /> attribute is empty or does not exist in the application configuration.  
   
- \- or -  
+-or-
   
  The value of the connection string for the <see langword="connectionStringName" /> attribute value is empty, or the specified <see langword="connectionStringName" /> does not exist in the application configuration file.  
   
- \- or -  
+-or-
   
  The value for the <see langword="commandTimeout" /> attribute is set to a value other than zero or a positive integer.  
   
- \- or -  
+-or-
   
  The application configuration file for this <see cref="T:System.Web.Security.SqlMembershipProvider" /> instance contains an unrecognized attribute.</exception>
         <exception cref="T:System.Web.HttpException">The current trust level is less than <see langword="Low" />.</exception>
@@ -1813,7 +1813,7 @@
         <exception cref="T:System.Web.Security.MembershipPasswordException">
           <paramref name="passwordAnswer" /> is invalid.  
   
- \- or -  
+-or-
   
  The user account is currently locked.</exception>
         <exception cref="T:System.NotSupportedException">
@@ -1821,27 +1821,27 @@
         <exception cref="T:System.Configuration.Provider.ProviderException">
           <paramref name="username" /> is not found in the membership database.  
   
- \- or -  
+-or-
   
  The change password action was canceled by a subscriber to the <see cref="E:System.Web.Security.Membership.ValidatingPassword" /> event and the <see cref="P:System.Web.Security.ValidatePasswordEventArgs.FailureInformation" /> property was <see langword="null" />.  
   
- \- or -  
+-or-
   
  An error occurred while retrieving the password from the database.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="username" /> is an empty string (""), contains a comma, or is longer than 256 characters.  
   
- \- or -  
+-or-
   
  <paramref name="passwordAnswer" /> is an empty string, or is longer than 128 characters, and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresQuestionAndAnswer" /> is <see langword="true" />.  
   
- \- or -  
+-or-
   
  <paramref name="passwordAnswer" /> is longer than 128 characters after encoding.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="passwordAnswer" /> is <see langword="null" /> and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresQuestionAndAnswer" /> is <see langword="true" />.</exception>
         <exception cref="T:System.Exception">An unhandled exception occurred.</exception>
@@ -1937,29 +1937,29 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="user" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.Security.MembershipUser.UserName" /> property of <paramref name="user" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.Security.MembershipUser.Email" /> property of <paramref name="user" /> is <see langword="null" /> and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail" /> is set to <see langword="true" />.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.Security.MembershipUser.UserName" /> property of <paramref name="user" /> is an empty string (""), contains a comma, or is longer than 256 characters.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.Security.MembershipUser.Email" /> property of <paramref name="user" /> is longer than 256 characters.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.Security.MembershipUser.Email" /> property of <paramref name="user" /> is an empty string and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail" /> is set to <see langword="true" />.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">The <see cref="P:System.Web.Security.MembershipUser.UserName" /> property of <paramref name="user" /> was not found in the database.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.Security.MembershipUser.Email" /> property of <paramref name="user" /> was equal to an existing email address in the database and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail" /> is set to true.  
   
- \- or -  
+-or-
   
  The user update failed.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>

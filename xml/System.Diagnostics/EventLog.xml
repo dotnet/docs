@@ -753,35 +753,35 @@ SVC_UPDATE.EXE
         </remarks>
         <exception cref="T:System.ArgumentException">The computer name specified in <paramref name="sourceData" /> is not valid.  
   
- \- or -  
+-or-
   
  The source name specified in <paramref name="sourceData" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  The log name specified in <paramref name="sourceData" /> is not valid. Event log names must consist of printable characters and cannot include the characters '*', '?', or '\\'.  
   
- \- or -  
+-or-
   
  The log name specified in <paramref name="sourceData" /> is not valid for user log creation. The Event log names AppEvent, SysEvent, and SecEvent are reserved for system use.  
   
- \- or -  
+-or-
   
  The log name matches an existing event source name.  
   
- \- or -  
+-or-
   
  The source name specified in <paramref name="sourceData" /> results in a registry key path longer than 254 characters.  
   
- \- or -  
+-or-
   
  The first 8 characters of the log name specified in <paramref name="sourceData" /> are not unique.  
   
- \- or -  
+-or-
   
  The source name specified in <paramref name="sourceData" /> is already registered.  
   
- \- or -  
+-or-
   
  The source name specified in <paramref name="sourceData" /> matches an existing event log name.</exception>
         <exception cref="T:System.InvalidOperationException">The registry key for the event log could not be opened.</exception>
@@ -875,31 +875,31 @@ SVC_UPDATE.EXE
         <exception cref="T:System.ArgumentException">
           <paramref name="source" /> is an empty string ("") or <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="logName" /> is not a valid event log name. Event log names must consist of printable characters, and cannot include the characters '*', '?', or '\\'.  
   
- \- or -  
+-or-
   
  <paramref name="logName" /> is not valid for user log creation. The event log names AppEvent, SysEvent, and SecEvent are reserved for system use.  
   
- \- or -  
+-or-
   
  The log name matches an existing event source name.  
   
- \- or -  
+-or-
   
  The source name results in a registry key path longer than 254 characters.  
   
- \- or -  
+-or-
   
  The first 8 characters of <paramref name="logName" /> match the first 8 characters of an existing event log name.  
   
- \- or -  
+-or-
   
  The source cannot be registered because it already exists on the local computer.  
   
- \- or -  
+-or-
   
  The source name matches an existing event log name.</exception>
         <exception cref="T:System.InvalidOperationException">The registry key for the event log could not be opened on the local computer.</exception>
@@ -997,35 +997,35 @@ SVC_UPDATE.EXE
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="machineName" /> is not a valid computer name.  
   
- \- or -  
+-or-
   
  <paramref name="source" /> is an empty string ("") or <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="logName" /> is not a valid event log name. Event log names must consist of printable characters, and cannot include the characters '*', '?', or '\\'.  
   
- \- or -  
+-or-
   
  <paramref name="logName" /> is not valid for user log creation. The event log names AppEvent, SysEvent, and SecEvent are reserved for system use.  
   
- \- or -  
+-or-
   
  The log name matches an existing event source name.  
   
- \- or -  
+-or-
   
  The source name results in a registry key path longer than 254 characters.  
   
- \- or -  
+-or-
   
  The first 8 characters of <paramref name="logName" /> match the first 8 characters of an existing event log name on the specified computer.  
   
- \- or -  
+-or-
   
  The source cannot be registered because it already exists on the specified computer.  
   
- \- or -  
+-or-
   
  The source name matches an existing event source name.</exception>
         <exception cref="T:System.InvalidOperationException">The registry key for the event log could not be opened on the specified computer.</exception>
@@ -1112,7 +1112,7 @@ SVC_UPDATE.EXE
           <paramref name="logName" /> is an empty string ("") or <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The registry key for the event log could not be opened on the local computer.  
   
- \- or -  
+-or-
   
  The log does not exist on the local computer.</exception>
         <exception cref="T:System.ComponentModel.Win32Exception">The event log was not cleared successfully.  
@@ -1193,12 +1193,12 @@ SVC_UPDATE.EXE
         <exception cref="T:System.ArgumentException">
           <paramref name="logName" /> is an empty string ("") or <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="machineName" /> is not a valid computer name.</exception>
         <exception cref="T:System.InvalidOperationException">The registry key for the event log could not be opened on the specified computer.  
   
- \- or -  
+-or-
   
  The log does not exist on the specified computer.</exception>
         <exception cref="T:System.ComponentModel.Win32Exception">The event log was not cleared successfully.  
@@ -1286,7 +1286,7 @@ SVC_UPDATE.EXE
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="source" /> parameter does not exist in the registry of the local computer.  
   
- \- or -  
+-or-
   
  You do not have write access on the registry key for the event log.</exception>
         <permission cref="T:System.Diagnostics.EventLogPermission">for administering event log information on the computer. Associated enumeration: <see cref="F:System.Diagnostics.EventLogPermissionAccess.Administer" /></permission>
@@ -1362,11 +1362,11 @@ SVC_UPDATE.EXE
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="machineName" /> parameter is invalid.  
   
- \- or -  
+-or-
   
  The <paramref name="source" /> parameter does not exist in the registry of the specified computer.  
   
- \- or -  
+-or-
   
  You do not have write access on the registry key for the event log.</exception>
         <exception cref="T:System.InvalidOperationException">
@@ -2295,7 +2295,7 @@ SVC_UPDATE.EXE
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is less than 64, or greater than 4194240, or not an even multiple of 64.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Diagnostics.EventLog.Log" /> value is not a valid log name.  
   
- \- or -  
+-or-
   
  The registry key for the event log could not be opened on the target computer.</exception>
         <permission cref="T:System.Diagnostics.EventLogPermission">for administering event log information on the computer. Associated enumeration: <see cref="F:System.Diagnostics.EventLogPermissionAccess.Administer" /></permission>
@@ -2440,7 +2440,7 @@ SVC_UPDATE.EXE
           <paramref name="retentionDays" /> is less than one, or larger than 365.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Diagnostics.EventLog.Log" /> value is not a valid log name.  
   
- \- or -  
+-or-
   
  The registry key for the event log could not be opened on the target computer.</exception>
         <permission cref="T:System.Diagnostics.EventLogPermission">for administering event log information on the computer. Associated enumeration: <see cref="F:System.Diagnostics.EventLogPermissionAccess.Administer" /></permission>
@@ -2688,7 +2688,7 @@ SVC_UPDATE.EXE
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Diagnostics.EventLog.Log" /> value is not a valid log name.  
   
- \- or -  
+-or-
   
  The registry key for the event log could not be opened on the target computer.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -3111,15 +3111,15 @@ SVC_UPDATE.EXE
   
  The method attempted to register a new event source, but the computer name in <see cref="P:System.Diagnostics.EventLog.MachineName" /> is not valid.  
   
- \- or -  
+-or-
   
  The source is already registered for a different event log.  
   
- \- or -  
+-or-
   
  The message string is longer than 31,839 bytes (32,766 bytes on Windows operating systems before Windows Vista).  
   
- \- or -  
+-or-
   
  The source name results in a registry key path longer than 254 characters.</exception>
         <exception cref="T:System.InvalidOperationException">The registry key for the event log could not be opened.</exception>
@@ -3216,15 +3216,15 @@ SVC_UPDATE.EXE
   
  The method attempted to register a new event source, but the computer name in <see cref="P:System.Diagnostics.EventLog.MachineName" /> is not valid.  
   
- \- or -  
+-or-
   
  The source is already registered for a different event log.  
   
- \- or -  
+-or-
   
  The message string is longer than 31,839 bytes (32,766 bytes on Windows operating systems before Windows Vista).  
   
- \- or -  
+-or-
   
  The source name results in a registry key path longer than 254 characters.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -3304,15 +3304,15 @@ SVC_UPDATE.EXE
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="source" /> value is an empty string ("").  
   
- \- or -  
+-or-
   
  The <paramref name="source" /> value is <see langword="null" />.  
   
- \- or -  
+-or-
   
  The message string is longer than 31,839 bytes (32,766 bytes on Windows operating systems before Windows Vista).  
   
- \- or -  
+-or-
   
  The source name results in a registry key path longer than 254 characters.</exception>
         <exception cref="T:System.InvalidOperationException">The registry key for the event log could not be opened.</exception>
@@ -3411,19 +3411,19 @@ SVC_UPDATE.EXE
   
  The method attempted to register a new event source, but the computer name in <see cref="P:System.Diagnostics.EventLog.MachineName" /> is not valid.  
   
- \- or -  
+-or-
   
  The source is already registered for a different event log.  
   
- \- or -  
+-or-
   
  <paramref name="eventID" /> is less than zero or greater than <see cref="F:System.UInt16.MaxValue" />.  
   
- \- or -  
+-or-
   
  The message string is longer than 31,839 bytes (32,766 bytes on Windows operating systems before Windows Vista).  
   
- \- or -  
+-or-
   
  The source name results in a registry key path longer than 254 characters.</exception>
         <exception cref="T:System.InvalidOperationException">The registry key for the event log could not be opened.</exception>
@@ -3506,15 +3506,15 @@ SVC_UPDATE.EXE
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="source" /> value is an empty string ("").  
   
- \- or -  
+-or-
   
  The <paramref name="source" /> value is <see langword="null" />.  
   
- \- or -  
+-or-
   
  The message string is longer than 31,839 bytes (32,766 bytes on Windows operating systems before Windows Vista).  
   
- \- or -  
+-or-
   
  The source name results in a registry key path longer than 254 characters.</exception>
         <exception cref="T:System.InvalidOperationException">The registry key for the event log could not be opened.</exception>
@@ -3625,19 +3625,19 @@ SVC_UPDATE.EXE
   
  The method attempted to register a new event source, but the computer name in <see cref="P:System.Diagnostics.EventLog.MachineName" /> is not valid.  
   
- \- or -  
+-or-
   
  The source is already registered for a different event log.  
   
- \- or -  
+-or-
   
  <paramref name="eventID" /> is less than zero or greater than <see cref="F:System.UInt16.MaxValue" />.  
   
- \- or -  
+-or-
   
  The message string is longer than 31,839 bytes (32,766 bytes on Windows operating systems before Windows Vista).  
   
- \- or -  
+-or-
   
  The source name results in a registry key path longer than 254 characters.</exception>
         <exception cref="T:System.InvalidOperationException">The registry key for the event log could not be opened.</exception>
@@ -3722,19 +3722,19 @@ SVC_UPDATE.EXE
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="source" /> value is an empty string ("").  
   
- \- or -  
+-or-
   
  The <paramref name="source" /> value is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="eventID" /> is less than zero or greater than <see cref="F:System.UInt16.MaxValue" />.  
   
- \- or -  
+-or-
   
  The message string is longer than 31,839 bytes (32,766 bytes on Windows operating systems before Windows Vista).  
   
- \- or -  
+-or-
   
  The source name results in a registry key path longer than 254 characters.</exception>
         <exception cref="T:System.InvalidOperationException">The registry key for the event log could not be opened.</exception>
@@ -3844,19 +3844,19 @@ SVC_UPDATE.EXE
   
  The method attempted to register a new event source, but the computer name in <see cref="P:System.Diagnostics.EventLog.MachineName" /> is not valid.  
   
- \- or -  
+-or-
   
  The source is already registered for a different event log.  
   
- \- or -  
+-or-
   
  <paramref name="eventID" /> is less than zero or greater than <see cref="F:System.UInt16.MaxValue" />.  
   
- \- or -  
+-or-
   
  The message string is longer than 31,839 bytes (32,766 bytes on Windows operating systems before Windows Vista).  
   
- \- or -  
+-or-
   
  The source name results in a registry key path longer than 254 characters.</exception>
         <exception cref="T:System.InvalidOperationException">The registry key for the event log could not be opened.</exception>
@@ -3949,19 +3949,19 @@ SVC_UPDATE.EXE
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="source" /> value is an empty string ("").  
   
- \- or -  
+-or-
   
  The <paramref name="source" /> value is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="eventID" /> is less than zero or greater than <see cref="F:System.UInt16.MaxValue" />.  
   
- \- or -  
+-or-
   
  The message string is longer than 31,839 bytes (32,766 bytes on Windows operating systems before Windows Vista).  
   
- \- or -  
+-or-
   
  The source name results in a registry key path longer than 254 characters.</exception>
         <exception cref="T:System.InvalidOperationException">The registry key for the event log could not be opened.</exception>
@@ -4053,19 +4053,19 @@ SVC_UPDATE.EXE
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="source" /> value is an empty string ("").  
   
- \- or -  
+-or-
   
  The <paramref name="source" /> value is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="eventID" /> is less than zero or greater than <see cref="F:System.UInt16.MaxValue" />.  
   
- \- or -  
+-or-
   
  The message string is longer than 31,839 bytes (32,766 bytes on Windows operating systems before Windows Vista).  
   
- \- or -  
+-or-
   
  The source name results in a registry key path longer than 254 characters.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -4281,23 +4281,23 @@ SVC_UPDATE.EXE
   
  The method attempted to register a new event source, but the computer name in <see cref="P:System.Diagnostics.EventLog.MachineName" /> is not valid.  
   
- \- or -  
+-or-
   
  The source is already registered for a different event log.  
   
- \- or -  
+-or-
   
  <paramref name="instance.InstanceId" /> is less than zero or greater than <see cref="F:System.UInt16.MaxValue" />.  
   
- \- or -  
+-or-
   
  <paramref name="values" /> has more than 256 elements.  
   
- \- or -  
+-or-
   
  One of the <paramref name="values" /> elements is longer than 32766 bytes.  
   
- \- or -  
+-or-
   
  The source name results in a registry key path longer than 254 characters.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -4506,23 +4506,23 @@ SVC_UPDATE.EXE
   
  The method attempted to register a new event source, but the computer name in <see cref="P:System.Diagnostics.EventLog.MachineName" /> is not valid.  
   
- \- or -  
+-or-
   
  The source is already registered for a different event log.  
   
- \- or -  
+-or-
   
  <paramref name="instance.InstanceId" /> is less than zero or greater than <see cref="F:System.UInt16.MaxValue" />.  
   
- \- or -  
+-or-
   
  <paramref name="values" /> has more than 256 elements.  
   
- \- or -  
+-or-
   
  One of the <paramref name="values" /> elements is longer than 32766 bytes.  
   
- \- or -  
+-or-
   
  The source name results in a registry key path longer than 254 characters.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -4714,23 +4714,23 @@ SVC_UPDATE.EXE
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="source" /> value is an empty string ("").  
   
- \- or -  
+-or-
   
  The <paramref name="source" /> value is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="instance.InstanceId" /> is less than zero or greater than <see cref="F:System.UInt16.MaxValue" />.  
   
- \- or -  
+-or-
   
  <paramref name="values" /> has more than 256 elements.  
   
- \- or -  
+-or-
   
  One of the <paramref name="values" /> elements is longer than 32766 bytes.  
   
- \- or -  
+-or-
   
  The source name results in a registry key path longer than 254 characters.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -4926,23 +4926,23 @@ SVC_UPDATE.EXE
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="source" /> value is an empty string ("").  
   
- \- or -  
+-or-
   
  The <paramref name="source" /> value is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="instance.InstanceId" /> is less than zero or greater than <see cref="F:System.UInt16.MaxValue" />.  
   
- \- or -  
+-or-
   
  <paramref name="values" /> has more than 256 elements.  
   
- \- or -  
+-or-
   
  One of the <paramref name="values" /> elements is longer than 32766 bytes.  
   
- \- or -  
+-or-
   
  The source name results in a registry key path longer than 254 characters.</exception>
         <exception cref="T:System.ArgumentNullException">

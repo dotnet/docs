@@ -203,7 +203,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object is the root section group.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object has a location.</exception>
         <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
@@ -553,7 +553,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object is the root section group.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object has a location.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The section or group is already defined at another level.</exception>

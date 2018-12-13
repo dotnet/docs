@@ -566,11 +566,11 @@
         <exception cref="T:System.Web.HttpException">
           <paramref name="typeName" /> is invalid.  
   
- \- or -  
+-or-
   
  <paramref name="typeName" /> is ambiguous.  
   
- \- or -  
+-or-
   
  <paramref name="typeName" /> could not be found, and <paramref name="throwOnError" /> is <see langword="true" />.</exception>
       </Docs>
@@ -615,11 +615,11 @@
         <exception cref="T:System.Web.HttpException">
           <paramref name="typeName" /> is invalid.  
   
- \- or -  
+-or-
   
  <paramref name="typeName" /> is ambiguous.  
   
- \- or -  
+-or-
   
  <paramref name="typeName" /> could not be found, and <paramref name="throwOnError" /> is <see langword="true" />.</exception>
       </Docs>

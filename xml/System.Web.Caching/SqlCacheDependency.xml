@@ -181,33 +181,33 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The internal check for <see cref="T:System.Data.SqlClient.SqlClientPermission" /> failed.  
   
- \- or -  
+-or-
   
  The <paramref name="databaseEntryName" /> was not found in the list of databases configured for table-based notifications.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Web.Caching.SqlCacheDependency" /> object could not connect to the database during initialization.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Web.Caching.SqlCacheDependency" /> object encountered a permission-denied error either on the database or on the database stored procedures that support the <see cref="T:System.Web.Caching.SqlCacheDependency" /> object.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="tableName" /> parameter is <see cref="F:System.String.Empty" />.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">Polling is not enabled for the <see cref="T:System.Web.Caching.SqlCacheDependency" />.  
   
- \- or -  
+-or-
   
  The polling interval is not correctly configured.  
   
- \- or -  
+-or-
   
  No connection string was specified in the application's configuration file.  
   
- \- or -  
+-or-
   
  The connection string specified in the application's configuration file could not be found.  
   
- \- or -  
+-or-
   
  The connection string specified in the application's configuration file is an empty string.</exception>
         <exception cref="T:System.Web.Caching.DatabaseNotEnabledForNotificationException">The database specified in the <paramref name="databaseEntryName" /> parameter is not enabled for change notifications.</exception>
@@ -215,7 +215,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="databaseEntryName" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="tableName" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Web.Caching.SqlCacheDependency.#ctor(System.Data.SqlClient.SqlCommand)" />

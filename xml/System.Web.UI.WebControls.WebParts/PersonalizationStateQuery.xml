@@ -99,11 +99,11 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="queryKey" /> is an empty string ("").  
   
- \- or -  
+-or-
   
  When trimmed, <paramref name="queryKey" /> results in an empty string.  
   
- \- or -  
+-or-
   
  A value provided for one of the three properties on <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery" /> was of the wrong type.</exception>
       </Docs>

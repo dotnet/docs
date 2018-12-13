@@ -155,11 +155,11 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="array" /> is multidimensional  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is greater than or equal to the length of <paramref name="array" />.  
   
- \- or -  
+-or-
   
  The number of <see cref="T:System.Web.UI.WebControls.SubMenuStyle" /> objects in the source <see cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" /> collection is greater than the available space from the <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
       </Docs>
@@ -447,7 +447,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero.  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Web.UI.StateManagedCollection.Count" />.</exception>
         <altmember cref="M:System.Web.UI.WebControls.SubMenuStyleCollection.Remove(System.Web.UI.WebControls.SubMenuStyle)" />

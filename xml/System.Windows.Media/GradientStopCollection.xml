@@ -191,7 +191,7 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.GradientStopCollection" /> is read-only.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Windows.Media.GradientStopCollection" /> has a fixed size.</exception>
         <altmember cref="M:System.Collections.Generic.ICollection`1.Add(`0)" />
@@ -657,7 +657,7 @@
           <paramref name="index" /> is not a valid index in the <see cref="T:System.Windows.Media.GradientStopCollection" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.GradientStopCollection" /> is read-only.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Windows.Media.GradientStopCollection" /> has a fixed size.</exception>
         <altmember cref="M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)" />
@@ -703,7 +703,7 @@
           <paramref name="index" /> is not a valid index in the <see cref="T:System.Windows.Media.GradientStopCollection" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.GradientStopCollection" /> is read-only.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Windows.Media.GradientStopCollection" /> has a fixed size.</exception>
       </Docs>
@@ -764,7 +764,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.GradientStopCollection" /> is read-only.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Windows.Media.GradientStopCollection" /> has a fixed size.</exception>
         <altmember cref="M:System.Collections.Generic.ICollection`1.Remove(`0)" />

@@ -1447,7 +1447,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="formattedValue" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  The type of <paramref name="formattedValue" /> does not match the type indicated by the <see cref="P:System.Windows.Forms.DataGridViewCell.FormattedValueType" /> property.</exception>
         <altmember cref="T:System.Windows.Forms.DataGridView" />

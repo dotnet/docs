@@ -71,13 +71,13 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="path" />, after trimming, is an empty string ("").  
   
- \- or -  
+-or-
   
  <paramref name="username" />, after trimming, is an empty string ("").</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="username" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">

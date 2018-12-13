@@ -292,41 +292,41 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="username" /> is empty, or exceeds the maximum length for the user name (usually 256 characters).  
   
- \- or -  
+-or-
   
  <paramref name="username" /> contains commas.  
   
- \- or -  
+-or-
   
  The user name is mapped to the <see langword="userPrincipalName" /> attribute and the <paramref name="username" /> parameter contains backslashes.  
   
- \- or -  
+-or-
   
  <paramref name="oldPassword" /> or <paramref name="newPassword" /> is a zero-length string.  
   
- \- or -  
+-or-
   
  <paramref name="oldPassword" /> or <paramref name="newPassword" /> exceeds the maximum password length (usually 128 characters).  
   
- \- or -  
+-or-
   
  <paramref name="newPassword" /> is less than the minimum password size specified in the <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.MinRequiredPasswordLength" /> property  
   
- \- or -  
+-or-
   
  <paramref name="newPassword" /> contains fewer than the number of non-alphabetic characters specified in the <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.MinRequiredNonAlphanumericCharacters" /> property.  
   
- \- or -  
+-or-
   
  <paramref name="newPassword" /> fails validation by the regular expression defined in the <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.PasswordStrengthRegularExpression" /> property.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="oldPassword" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="newPassword" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Web.Security.MembershipPasswordException">
@@ -403,45 +403,45 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="username" /> is empty, or exceeds the maximum length for the user name (usually 256 characters).  
   
- \- or -  
+-or-
   
  <paramref name="username" /> contains commas.  
   
- \- or -  
+-or-
   
  The user name is mapped to the <see langword="userPrincipalName" /> attribute and the <paramref name="username" /> parameter contains backslashes.  
   
- \- or -  
+-or-
   
  <paramref name="password" /> is a zero-length string.  
   
- \- or -  
+-or-
   
  <paramref name="password" /> exceeds the maximum password length (usually 128 characters).  
   
- \- or -  
+-or-
   
  <paramref name="newPasswordQuestion" /> is empty and the <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.RequiresQuestionAndAnswer" /> property value is <see langword="true" />.  
   
- \- or -  
+-or-
   
  <paramref name="newPasswordQuestion" /> exceeds 256 characters.  
   
- \- or -  
+-or-
   
  <paramref name="newPasswordAnswer" /> exceeds 128 characters after the answer is encrypted.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="password" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="newPasswordQuestion" /> is <see langword="null" /> and <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.RequiresQuestionAndAnswer" /> property is <see langword="true" />.  
   
- \- or -  
+-or-
   
  <paramref name="newPasswordAnswer" /> is <see langword="null" /> and <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.RequiresQuestionAndAnswer" /> property is <see langword="true" />.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">The [machineKey Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) configuration element indicates an auto-generated machine encryption key. You must explicitly set the <see langword="decriptionKey" /> attribute of the [machineKey Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) element to store password answers with the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" />.</exception>
@@ -535,7 +535,7 @@
         <exception cref="T:System.NotSupportedException">The administrator has not mapped the password question-and-answer fields to attributes of the Active Directory schema, and either the <paramref name="passwordQuestion" /> or <paramref name="passwordAnswer" /> parameter is not <see langword="null" />.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">The [machineKey Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) configuration element indicates an auto-generated machine encryption key. You must explicitly set the <see langword="decriptionKey" /> attribute of the [machineKey Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) element to store password answers with the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" />.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> was unable to establish a secure connection to the directory when attempting to set the password for the new user.</exception>
         <exception cref="T:System.Runtime.InteropServices.COMException">An error occurred while attempting to create the user.</exception>
@@ -646,11 +646,11 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="username" /> is empty, or exceeds the maximum length for the user name (usually 256 characters).  
   
- \- or -  
+-or-
   
  <paramref name="username" /> contains commas.  
   
- \- or -  
+-or-
   
  The user name is mapped to the <see langword="userPrincipalName" /> attribute and the <paramref name="userName" /> parameter contains backslashes.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -896,19 +896,19 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="emailToMatch" /> is empty.  
   
- \- or -  
+-or-
   
  <paramref name="emailToMatch" /> exceeds 256 characters.  
   
- \- or -  
+-or-
   
  <paramref name="pageIndex" /> is less than 0.  
   
- \- or -  
+-or-
   
  <paramref name="pageSize" /> is less than 1.  
   
- \- or -  
+-or-
   
  <paramref name="pageSize" /> multiplied by <paramref name="pageIndex" />, plus <paramref name="pageSize" />, minus 1 is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.EnableSearchMethods" /> property is <see langword="false" />.</exception>
@@ -966,11 +966,11 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="usernameToMatch" /> is empty, or exceeds the maximum length for the user name (usually 256 characters).  
   
- \- or -  
+-or-
   
  <paramref name="usernameToMatch" /> contains commas.  
   
- \- or -  
+-or-
   
  <paramref name="pageIndex" /> is less than 0.  
   
@@ -978,7 +978,7 @@
   
  <paramref name="pageSize" /> is less than 1.  
   
- \- or -  
+-or-
   
  <paramref name="pageSize" /> multiplied by <paramref name="pageIndex" />, plus <paramref name="pageSize" />, minus 1 is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -1080,7 +1080,7 @@
   
  <paramref name="pageSize" /> is less than 1.  
   
- \- or -  
+-or-
   
  <paramref name="pageSize" /> multiplied by <paramref name="pageIndex" />, plus <paramref name="pageSize" />, minus 1 is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.EnableSearchMethods" /> property is <see langword="false" />.</exception>
@@ -1249,11 +1249,11 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="username" /> is empty, or exceeds the maximum length for the user name (usually 256 characters).  
   
- \- or -  
+-or-
   
  <paramref name="username" /> contains commas.  
   
- \- or -  
+-or-
   
  The user name is mapped to the <see langword="userPrincipalName" /> attribute and the <paramref name="username" /> parameter contains backslashes.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -1309,7 +1309,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="email" /> exceeds 256 characters  
   
- \- or -  
+-or-
   
  after trimming, <paramref name="email" /> is empty.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">More than one user exists in the data store with the same email address and the <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.RequiresUniqueEmail" /> property value is <see langword="true" />.</exception>
@@ -1353,173 +1353,173 @@
           <paramref name="config" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">The <see langword="applicationName" /> attribute specified in the application configuration exceeds 256 characters.  
   
- \- or -  
+-or-
   
  The <see langword="connectionStringName" /> attribute is empty or does not exist in the application configuration.  
   
- \- or -  
+-or-
   
  The connection string specified in the <see langword="connectionStringName" /> attribute in the application configuration file is empty or does not exist.  
   
- \- or -  
+-or-
   
  The <see langword="connectionProtection" /> attribute is set to a value other than <see cref="F:System.Web.Security.ActiveDirectoryConnectionProtection.SignAndSeal" /> or <see cref="F:System.Web.Security.ActiveDirectoryConnectionProtection.None" /> in the application configuration file.  
   
- \- or -  
+-or-
   
  The <see langword="connectionUsername" /> attribute is specified in the application configuration file but its value is empty.  
   
- \- or -  
+-or-
   
  The <see langword="connectionPassword" /> attribute is specified in the application configuration file but its value is empty.  
   
- \- or -  
+-or-
   
  Either the <see langword="connectionUsername" /> attribute or the <see langword="connectionPassword" /> attribute is specified in the application configuration file, but not both.  
   
- \- or -  
+-or-
   
  The <see langword="clientSearchTimeout" /> attribute is specified but is not a positive integer.  
   
- \- or -  
+-or-
   
  The <see langword="serverSearchTimeout" /> attribute is specified but is not a positive integer.  
   
- \- or -  
+-or-
   
  The <see langword="enableSearchMethods" /> attribute is specified, but is not a Boolean value.  
   
- \- or -  
+-or-
   
  The <see langword="requiresUniqueEmail" /> attribute is specified, but is not a Boolean value.  
   
- \- or -  
+-or-
   
  The <see langword="enablePasswordReset" /> attribute is specified, but is not a Boolean value.  
   
- \- or -  
+-or-
   
  The <see langword="requiresQuestionAndAnswer" /> attribute is specified, but is not a Boolean value.  
   
- \- or -  
+-or-
   
  The <see langword="minRequiredPasswordLength" /> attribute is specified and it is either negative or greater than 128.  
   
- \- or -  
+-or-
   
  The <see langword="minRequiredNonalphanumericCharacters" /> attribute is specified and it is either negative or greater than 128.  
   
- \- or -  
+-or-
   
  The regular expression specified in the <see langword="passwordStrengthRegularExpression" /> attribute in the application configuration file is not a valid regular expression  
   
- \- or -  
+-or-
   
  The <see langword="attributeMapUsername" /> attribute is specified, but it is an empty string.  
   
- \- or -  
+-or-
   
  The <see langword="connectionString" /> attribute does not begin with "LDAP".  
   
- \- or -  
+-or-
   
  The connection string specified in the <see langword="connectionString" /> attribute is invalid.  
   
- \- or -  
+-or-
   
  The connection string in the <see langword="connectionString" /> attribute specifies a server-less bind.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> could not establish a connection with the domain or directory server.  
   
- \- or -  
+-or-
   
  The <see langword="connectionProtection" /> attribute is set to <see cref="F:System.Web.Security.ActiveDirectoryConnectionProtection.SignAndSeal" />, but neither an SSL nor a signed and sealed connection can be established with the server.  
   
- \- or -  
+-or-
   
  The <see langword="connectionProtection" /> attribute is set to <see cref="F:System.Web.Security.ActiveDirectoryConnectionProtection.None" /> but the <see langword="connectionUsername" /> and <see langword="connectionPassword" /> attributes are not set.  
   
- \- or -  
+-or-
   
  The <see langword="connectionProtection" /> attribute is set to <see cref="F:System.Web.Security.ActiveDirectoryConnectionProtection.SignAndSeal" /> but the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> could not establish an SSL connection with an ADAM server.  
   
- \- or -  
+-or-
   
  The <see langword="connectionString" /> attribute specifies either the global catalog (GC) or an SSL global catalog port.  
   
- \- or -  
+-or-
   
  The <see langword="connectionString" /> attribute specifies an Active Directory server or domain, but the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> could not retrieve the default naming context for the domain.  
   
- \- or -  
+-or-
   
  The <see langword="connectionString" /> attribute specifies an Active Directory server or domain, but the <see cref="T:System.Web.Security.ActiveDirectoryMembershipProvider" /> could not retrieve the default users container.  
   
- \- or -  
+-or-
   
  The <see langword="connectionString" /> attribute specifies an ADAM server, but it does not specify an application partition or container.  
   
- \- or -  
+-or-
   
  The <see langword="connectionString" /> attribute specifies an application partition or container, but the specified container does not exist.  
   
- \- or -  
+-or-
   
  The <see langword="connectionString" /> attribute specifies a container that is not allowed to contain user instances.  
   
  An attribute mapping is specified but its value was empty.  
   
- \- or -  
+-or-
   
  An attribute mapping is specified twice.  
   
- \- or -  
+-or-
   
  An attribute mapping is specified but the attribute does not exist on the user instance.  
   
- \- or -  
+-or-
   
  An attribute mapping is specified but the directory attribute is not of the correct data type.  
   
- \- or -  
+-or-
   
  An attribute mapping is specified but the directory attribute is multi-valued.  
   
- \- or -  
+-or-
   
  The <see langword="attributeMapUserName" /> attribute is specified but was mapped to neither the <c>sAMAccountName</c> nor the <c>userPrincipalName</c> directory attribute when connecting to an Active Directory.  
   
- \- or -  
+-or-
   
  The <see langword="attributeMapUserName" /> attribute is specified but was not mapped to the <c>userPrincipalName</c> directory attribute when connecting to an ADAM server.  
   
- \- or -  
+-or-
   
  The <see langword="enablePasswordReset" /> attribute is <see langword="true" /> and the <see langword="requiresQuestionAndAnswer" /> attribute is <see langword="false" /> in the application configuration file.  
   
- \- or -  
+-or-
   
  The <see langword="maxInvalidPasswordAttempts" /> attribute was specified but is not a non-zero positive integer.  
   
- \- or -  
+-or-
   
  The <see langword="passwordAttemptWindow" /> attribute was specified but is not a non-zero positive integer.  
   
- \- or -  
+-or-
   
  The <see langword="passwordAnswerAttemptLockoutDuration" /> attribute was specified but is not a non-zero positive integer.  
   
- \- or -  
+-or-
   
  The <see langword="enablePasswordReset" /> attribute is <see langword="true" /> and any of the <see langword="attributeMapFailedPasswordAnswerCount" />, <see langword="attributeMapFailedPasswordAnswerTime" />, and <see langword="attributeMapFailedPasswordAnswerLockoutTime" /> attributes are empty.  
   
- \- or -  
+-or-
   
  The <see langword="requiresQuestionAndAnswer" /> attribute is <see langword="true" /> but either the <see langword="attributeMapPasswordQuestion" /> or the <see langword="attributeMapPasswordAnswer" /> attribute is empty.  
   
- \- or -  
+-or-
   
  An attribute specified in the application configuration file is not valid.</exception>
         <exception cref="T:System.Web.HttpException">The application is running in a hosted environment and the <see cref="T:System.Web.AspNetHostingPermissionLevel" /> is set to <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</exception>
@@ -2132,43 +2132,43 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="passwordAnswer" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="username" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="passwordAnswer" /> is empty after trimming  
   
- \- or -  
+-or-
   
  <paramref name="passwordAnswer" /> exceeds 128 characters.  
   
- \- or -  
+-or-
   
  <paramref name="username" /> is empty, or exceeds the maximum length allowed for user names (usually 256 characters).  
   
- \- or -  
+-or-
   
  <paramref name="username" /> contains commas.  
   
- \- or -  
+-or-
   
  The user name is mapped to <see langword="userPrincipalName" /> but the <paramref name="username" /> parameter contains backslashes.</exception>
         <exception cref="T:System.Web.Security.MembershipPasswordException">The user is locked out because of too many bad logon attempts or too many attempted password-answer reset attempts.  
   
- \- or -  
+-or-
   
  <paramref name="passwordAnswer" /> does not match the stored password answer.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">The user specified in <paramref name="username" /> does not exist in the Active Directory data store.  
   
- \- or -  
+-or-
   
  A generated password does not pass a custom validation handler.  
   
- \- or -  
+-or-
   
  The generated password is not complex enough to satisfy custom password policies set on the Active Directory server.  
   
- \- or -  
+-or-
   
  A secure connection cannot be made to an Active Directory Application Mode server to set the new password.</exception>
         <exception cref="T:System.Exception">An unhandled exception occurred.</exception>
@@ -2216,11 +2216,11 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="username" /> is empty, or exceeds the maximum length allowed for user names (usually 256 characters).  
   
- \- or -  
+-or-
   
  <paramref name="username" /> contains commas.  
   
- \- or -  
+-or-
   
  The user name is mapped to <see langword="userPrincipalName" /> but the <paramref name="username" /> parameter contains backslashes.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -2269,37 +2269,37 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="user" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.RequiresUniqueEmail" /> property is <see langword="true" /> but the email address from the supplied <see cref="T:System.Web.Security.MembershipUser" /> instance is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.Security.MembershipUser.Email" /> property is empty after trimming.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.Security.MembershipUser.Email" /> property exceeds 256 characters.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.Security.MembershipUser.Comment" /> property exceeds 1024 characters.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.Security.MembershipUser.Comment" /> property is empty.  
   
- \- or -  
+-or-
   
  The user name from the supplied <see cref="T:System.Web.Security.MembershipUser" /> instance is empty, or exceeds the maximum length allowed for user names (usually 256 characters).  
   
- \- or -  
+-or-
   
  The user name from the supplied <see cref="T:System.Web.Security.MembershipUser" /> instance contains commas.  
   
- \- or -  
+-or-
   
  The user name is mapped to <see langword="userPrincipalName" /> but the user name from the supplied <see cref="T:System.Web.Security.MembershipUser" /> instance contains backslashes.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">The specified user is not found in the Active Directory data store.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.Security.ActiveDirectoryMembershipProvider.RequiresUniqueEmail" /> property is <see langword="true" />, and the new value of the <see cref="P:System.Web.Security.MembershipUser.Email" /> property duplicates an existing email address.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>

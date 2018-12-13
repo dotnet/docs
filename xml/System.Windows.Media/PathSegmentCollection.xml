@@ -190,7 +190,7 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.PathSegmentCollection" /> is read-only.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Windows.Media.PathSegmentCollection" /> has a fixed size.</exception>
         <altmember cref="T:System.Windows.Media.PathSegment" />
@@ -653,7 +653,7 @@
           <paramref name="index" /> is not a valid index in the <see cref="T:System.Windows.Media.PathSegmentCollection" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.PathSegmentCollection" /> is read-only.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Windows.Media.PathSegmentCollection" /> has a fixed size.</exception>
         <altmember cref="M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)" />
@@ -699,7 +699,7 @@
           <paramref name="index" /> is not a valid index in the <see cref="T:System.Windows.Media.PathSegmentCollection" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.PathSegmentCollection" /> is read-only.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Windows.Media.PathSegmentCollection" /> has a fixed size.</exception>
         <altmember cref="P:System.Collections.Generic.IList`1.Item(System.Int32)" />
@@ -735,7 +735,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.PathSegmentCollection" /> is read-only.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Windows.Media.PathSegmentCollection" /> has a fixed size.</exception>
         <altmember cref="M:System.Collections.Generic.ICollection`1.Remove(`0)" />

@@ -247,15 +247,15 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="buffer" />, is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is less than zero.  
   
- \- or -  
+-or-
   
  <paramref name="count" /> is less than zero.  
   
- \- or -  
+-or-
   
  <paramref name="buffer" /> length minus <paramref name="index" /> is less than <paramref name="count" />.</exception>
         <altmember cref="Overload:System.Web.HttpWriter.Write" />
@@ -344,11 +344,11 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is less than zero.  
   
- \- or -  
+-or-
   
  The <paramref name="count" /> is less than zero.  
   
- \- or -  
+-or-
   
  The sum of the <paramref name="index" /> and the <paramref name="count" /> are greater than the string length.</exception>
       </Docs>

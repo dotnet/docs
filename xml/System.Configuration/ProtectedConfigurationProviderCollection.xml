@@ -107,7 +107,7 @@
           <paramref name="provider" /> is not a <see cref="T:System.Configuration.ProtectedConfigurationProvider" /> object.</exception>
         <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Configuration.ProtectedConfigurationProvider" /> object to add already exists in the collection.  
   
- \- or -  
+-or-
   
  The collection is read-only.</exception>
         <altmember cref="T:System.Configuration.ProtectedConfigurationProvider" />

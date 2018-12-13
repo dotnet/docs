@@ -3832,7 +3832,7 @@
  The file described by the <paramref name="destinationBackupFileName" /> parameter could not be found.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.  
   
- \- or -  
+-or-
   
  The <paramref name="sourceFileName" /> and <paramref name="destinationFileName" /> parameters specify the same file.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
@@ -3934,7 +3934,7 @@
  The file described by the <paramref name="destinationBackupFileName" /> parameter could not be found.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.  
   
- \- or -  
+-or-
   
  The <paramref name="sourceFileName" /> and <paramref name="destinationFileName" /> parameters specify the same file.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>

@@ -46,11 +46,11 @@
 ## XAML Attribute Usage  
  \<*object* *property*="*predefinedCommandName*"/>  
   
- \- or -  
+-or-
   
  \<*object* *property*="*predefinedClassName*.*predefinedCommandName*"/>  
   
- \- or -  
+-or-
   
  \<*object* *property*="{ *customClassName*.*customCommandName*}"/>  
   
@@ -173,7 +173,7 @@
           <paramref name="name" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">the length of <paramref name="name" /> is zero  
   
- \- or -  
+-or-
   
  <paramref name="ownerType" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Windows.Input.CommandBinding" />

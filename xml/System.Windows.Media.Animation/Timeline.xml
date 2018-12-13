@@ -394,15 +394,15 @@
 ## XAML Attribute Usage  
  \<*object* <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A>="[-][*days*.]*hours*:*minutes*:*seconds*[.*fractionalSeconds*]"/>  
   
- \- or -  
+-or-
   
  \<*object* <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A>="[-][*days*.]*hours*:*minutes*"/>  
   
- \- or -  
+-or-
   
  \<*object* <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A>="[-]*days*"/>  
   
- \- or -  
+-or-
   
  \<*object* <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A>="{[x:Null Markup Extension](~/docs/framework/xaml-services/x-null-markup-extension.md)}"/>  
   

@@ -269,13 +269,13 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="zone" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="zone" /> is not registered in the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's collection of zones.  
   
- \- or -  
+-or-
   
  <paramref name="webPart" /> is already in <paramref name="zone" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="zoneIndex" /> is less than zero.</exception>
@@ -402,7 +402,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="webPart" /> is closed.  
   
- \- or -  
+-or-
   
  <paramref name="webPart" /> is not part of the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.Controls" /> collection.  
   
@@ -450,7 +450,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="webPart" /> is closed.  
   
- \- or -  
+-or-
   
  <paramref name="webPart" /> is not part of the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.Controls" /> collection.  
   
@@ -873,7 +873,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="webPart" /> is not in the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.Controls" /> collection.  
   
- \- or -  
+-or-
   
  <paramref name="webPart" /> is a shared control and has already been closed by another user.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowClose" />
@@ -1968,15 +1968,15 @@
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.StaticConnections" /> is read-only.  
   
- \- or -  
+-or-
   
  <paramref name="connection" /> has already been disconnected from <see cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.StaticConnections" />.  
   
- \- or -  
+-or-
   
  <see cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DynamicConnections" /> is read-only.  
   
- \- or -  
+-or-
   
  <paramref name="connection" /> has already been disconnected from <see cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DynamicConnections" />.</exception>
         <block subset="none" type="overrides">
@@ -2047,7 +2047,7 @@
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> object being assigned to the property is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> object being assigned to the property is not one of the supported display modes.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> object being assigned to the property is disabled.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModes" />
@@ -2529,13 +2529,13 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="webPart" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="writer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="webPart" /> is not contained in the collection of controls referenced in <see cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.Controls" />.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.ExportMode" /> property of <paramref name="webPart" /> is set to a value of <see cref="F:System.Web.UI.WebControls.WebParts.WebPartExportMode.None" />, which means that export is disabled for <paramref name="webPart" />.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.ExportMode" />
@@ -2938,11 +2938,11 @@
         <exception cref="T:System.IO.EndOfStreamException">
           <paramref name="reader" /> could not read the file.  
   
- \- or -  
+-or-
   
  <paramref name="reader" /> needed to display an import error message but did not find one in the file.  
   
- \- or -  
+-or-
   
  <paramref name="reader" /> reached the end of the file without finding the XML element that contains the exported data.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.ImportCatalogPart" />
@@ -3189,7 +3189,7 @@ else
         <exception cref="T:System.ArgumentException">
           <paramref name="type" /> is a user control, and <paramref name="path" /> is either <see langword="null" /> or an empty string ("").  
   
- \- or -  
+-or-
   
  <paramref name="type" /> is not a user control, and <paramref name="path" /> has a value assigned to it.</exception>
         <block subset="none" type="overrides">
@@ -3449,11 +3449,11 @@ else
         <exception cref="T:System.ArgumentException">
           <paramref name="webPart" /> is not contained in the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.Controls" /> collection of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control.  
   
- \- or -  
+-or-
   
  <paramref name="zone" /> is not contained in the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.Zones" /> collection of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control.  
   
- \- or -  
+-or-
   
  The zone referenced by the <paramref name="webPart" /> control's <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Zone" /> property is <see langword="null" />, which means that <paramref name="webPart" /> is not currently contained in a zone.</exception>
         <exception cref="T:System.ArgumentNullException">

@@ -108,7 +108,7 @@
           <paramref name="provider" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Configuration.Provider.ProviderBase.Name" /> of <paramref name="provider" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  The length of the <see cref="P:System.Configuration.Provider.ProviderBase.Name" /> of <paramref name="provider" /> is less than 1.</exception>
       </Docs>

@@ -161,7 +161,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to apply personalization state prior to the state being loaded from the underlying data store.  
   
- \- or -  
+-or-
   
  The personalization state returned from the data store was <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
@@ -207,11 +207,11 @@
           <paramref name="webPart" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to apply personalization state prior to the state being loaded from the underlying data store.  
   
- \- or -  
+-or-
   
  The personalization state returned from the data store was <see langword="null" />.  
   
- \- or -  
+-or-
   
  An attempt was made to apply personalization data more than once to the same Web Parts control.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
@@ -356,11 +356,11 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="webPartA" /> and <paramref name="webPartB" /> are not of the same <see cref="T:System.Type" />.  
   
- \- or -  
+-or-
   
  <paramref name="webPartA" /> and <paramref name="webPartB" /> are <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> controls but one or both lack a child control.  
   
- \- or -  
+-or-
   
  <paramref name="webPartA" /> and <paramref name="webPartB" /> are <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> controls, but their child controls are not of the same <see cref="T:System.Type" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
@@ -448,7 +448,7 @@
   
 -   The <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> instance has completed initialization (for example, the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Load%2A> method was called and successfully completed). This check is made if the `ensureModifiable` parameter equals `false`.  
   
-     \- or -  
+    -or-
   
 -   The current user has rights to modify personalization state. This check is made if `ensureModifiable` equals `true`.  
   
@@ -468,7 +468,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current user does not have rights to modify personalization information, or other checks failed.  
   
- \- or -  
+-or-
   
  <see cref="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled" /> returned <see langword="false" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
@@ -551,15 +551,15 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to extract personalization state prior to the state being loaded from the underlying data store.  
   
- \- or -  
+-or-
   
  Personalization state has not been applied yet.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.UI.Control.ID" /> of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> has changed since personalization data was applied.  
   
- \- or -  
+-or-
   
  The personalization state returned from the data store was <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
@@ -601,15 +601,15 @@
         <exception cref="T:System.ArgumentException">An attempt was made to extract personalization state from a Web Parts control that is not managed by the parent <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to extract personalization state prior to the state being loaded from the underlying data store.  
   
- \- or -  
+-or-
   
  Personalization state has not been applied yet.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.UI.Control.ID" /> of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> has changed since personalization data was applied.  
   
- \- or -  
+-or-
   
  The personalization state returned from the data store was <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
@@ -652,7 +652,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to retrieve an authorization filter when <see cref="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled" /> is <see langword="false" /> by calling this method too early in the page life cycle.  
   
- \- or -  
+-or-
   
  An attempt was made to retrieve an authorization filter and no personalization state has been loaded.  
   
@@ -709,11 +709,11 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">There is no personalization provider associated with the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> instance. This can occur if the property is accessed prior to the completion of the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit(System.EventArgs)" /> method.  
   
- \- or -  
+-or-
   
  The value of the <see cref="P:System.Web.UI.Control.Page" /> property for the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  The value of the <see cref="P:System.Web.UI.Page.Request" /> property on the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's associated <see cref="T:System.Web.UI.Page" /> instance is <see langword="null" />.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
@@ -966,21 +966,21 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">This method is called when personalization is not enabled (<see cref="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Enabled" /> equals <see langword="false" />).  
   
- \- or -  
+-or-
   
  The value of the <see cref="P:System.Web.UI.Control.Page" /> property for the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  The value of the <see cref="P:System.Web.UI.Page.Request" /> property on the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's associated <see cref="T:System.Web.UI.Page" /> instance is <see langword="null" />.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">A provider was explicitly set in either the page markup or the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ProviderName" /> property and the provider could not be found.  
   
- \- or -  
+-or-
   
  The object containing the personalization state data is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">A problem occurred while loading and deserializing data.  
   
- \- or -  
+-or-
   
  An error occurred in the definition of a personalization provider in the configuration file.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The underlying personalization providers failed to initialize because a default provider could not be found or because a failure occurred while attempting to initialize a personalization provider.</exception>
@@ -1136,23 +1136,23 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current user does not have the capability called <see cref="F:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ModifyStateUserCapability" />.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> instance cannot reference a valid personalization provider.  
   
- \- or -  
+-or-
   
  No personalization provider is currently associated with the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> instance. This can occur if this method is called prior to calling <see cref="M:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Load" /> (the personalization provider reference is obtained during the call to <see cref="M:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Load" />.  
   
- \- or -  
+-or-
   
  No personalization state has been loaded.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Web.UI.Page" /> instance for the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  The value of the <see cref="P:System.Web.UI.Page.Request" /> property on the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's associated <see cref="T:System.Web.UI.Page" /> instance is <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
@@ -1380,15 +1380,15 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current user does not have the user capability to enter <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared" /> scope when attempting to switch from <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.User" /> scope to <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared" /> scope.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> instance has not completed initialization.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Web.UI.Page" /> instance for the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  The value of the <see cref="P:System.Web.UI.Page.Request" /> property on the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's associated <see cref="T:System.Web.UI.Page" /> instance is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">An attempt was made to toggle to a scope that is not defined in the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration. Technically, this situation should never occur.</exception>

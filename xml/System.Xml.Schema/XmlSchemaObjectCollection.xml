@@ -286,11 +286,11 @@ schema.Includes.Add(include);
         <exception cref="T:System.ArgumentException">
           <paramref name="array" /> is multi-dimensional.  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is equal to or greater than the length of <paramref name="array" />.  
   
- \- or -  
+-or-
   
  The number of elements in the source <see cref="T:System.Xml.Schema.XmlSchemaObject" /> is greater than the available space from index to the end of the destination array.</exception>
         <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Xml.Schema.XmlSchemaObject" /> cannot be cast automatically to the type of the destination array.</exception>

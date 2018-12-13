@@ -183,15 +183,15 @@
         <exception cref="T:System.Configuration.ConfigurationErrorsException">
           <paramref name="config" /> does not include an attribute with the name "template".  
   
- \- or -  
+-or-
   
  The template attribute supplied by <paramref name="config" /> has a <see cref="P:System.String.Length" /> of <see langword="0" />.  
   
- \- or -  
+-or-
   
  The URL specified by the template attribute is not an application-relative URL.  
   
- \- or -  
+-or-
   
  The specified template URL is outside the App Domain Path.</exception>
       </Docs>

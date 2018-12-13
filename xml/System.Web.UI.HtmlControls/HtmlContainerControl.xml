@@ -224,7 +224,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">There is more than one HTML server control.  
   
- \- or -  
+-or-
   
  The HTML server control is not a <see cref="T:System.Web.UI.LiteralControl" /> or a <see cref="T:System.Web.UI.DataBoundLiteralControl" />.</exception>
         <altmember cref="P:System.Web.UI.HtmlControls.HtmlContainerControl.InnerText" />
@@ -291,7 +291,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">There is more than one HTML server control.  
   
- \- or -  
+-or-
   
  The HTML server control is not a <see cref="T:System.Web.UI.LiteralControl" /> or a <see cref="T:System.Web.UI.DataBoundLiteralControl" />.</exception>
         <altmember cref="P:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml" />

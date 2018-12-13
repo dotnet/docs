@@ -124,7 +124,7 @@ AccessSiteMapProvider   Samples.AspNet.Controls.AccessSiteMapProvider
         <exception cref="T:System.ArgumentException">
           <paramref name="provider" /> is not an instance of the <see cref="T:System.Web.SiteMapProvider" /> class.  
   
- \- or -  
+-or-
   
  A <see cref="T:System.Web.SiteMapProvider" /> with the same name already exists in the <see cref="T:System.Web.SiteMapProviderCollection" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapProviderCollection" /> is read-only.</exception>

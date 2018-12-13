@@ -749,11 +749,11 @@
         <exception cref="T:System.InvalidOperationException">A URL is specified for the <see cref="P:System.Web.UI.WebControls.XmlDataSource.DataFile" /> property; however, the <see cref="T:System.Web.UI.WebControls.XmlDataSource" /> control does not have the correct permissions for the Web resource.</exception>
         <exception cref="T:System.NotSupportedException">A URL is specified for the <see cref="P:System.Web.UI.WebControls.XmlDataSource.DataFile" /> property; however, it is not an HTTP-based URL.  
   
- \- or -  
+-or-
   
  A design-time relative path was not mapped correctly by the designer before using the <see cref="T:System.Web.UI.WebControls.XmlDataSource" /> control.  
   
- \- or -  
+-or-
   
  Both caching and client impersonation are enabled. The <see cref="T:System.Web.UI.WebControls.XmlDataSource" /> control does not support caching when client impersonation is enabled.</exception>
         <exception cref="T:System.Web.HttpException">Access is denied to the path specified for the <see cref="P:System.Web.UI.WebControls.XmlDataSource.DataFile" /> property.</exception>
@@ -958,12 +958,12 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">XML data was loaded using the <see cref="P:System.Web.UI.WebControls.XmlDataSource.Data" /> property instead of the <see cref="P:System.Web.UI.WebControls.XmlDataSource.DataFile" /> property.  
   
- \- or -  
+-or-
   
  A URL is specified for the <see cref="P:System.Web.UI.WebControls.XmlDataSource.DataFile" /> property; however, the <see cref="T:System.Web.UI.WebControls.XmlDataSource" /> control does not have the correct permissions for the Web resource.</exception>
         <exception cref="T:System.NotSupportedException">A URL is specified for the <see cref="P:System.Web.UI.WebControls.XmlDataSource.DataFile" /> property; however, it is not an HTTP-based URL.  
   
- \- or -  
+-or-
   
  A design-time relative path was not mapped correctly by the designer before using the <see cref="T:System.Web.UI.WebControls.XmlDataSource" /> control.</exception>
         <exception cref="T:System.Web.HttpException">Access is denied to the path specified for the <see cref="P:System.Web.UI.WebControls.XmlDataSource.DataFile" /> property.</exception>

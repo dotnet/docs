@@ -37,19 +37,19 @@
 ## XAML Attribute Usage  
  \<*object* *property*="[*days*.]*hours*:*minutes*:*seconds*[.*fractionalSeconds*]"/>  
   
- \- or -  
+-or-
   
  \<*object* *property*="[*days*.]*hours*:*minutes*"/>  
   
- \- or -  
+-or-
   
  \<*object* *property*="*pctValue*%"/>  
   
- \- or -  
+-or-
   
  \<*object* *property*="<xref:System.Windows.Media.Animation.KeyTime.Uniform%2A>"/>  
   
- \- or -  
+-or-
   
  \<*object* *property*="<xref:System.Windows.Media.Animation.KeyTime.Paced%2A>"/>  
   

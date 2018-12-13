@@ -157,7 +157,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="providerUserKey" /> is not a <see cref="T:System.Security.Principal.SecurityIdentifier" /> object.  
   
- \- or -  
+-or-
   
  <paramref name="providerName" /> is <see langword="null" /> and a provider is not set in the application's configuration file.</exception>
       </Docs>

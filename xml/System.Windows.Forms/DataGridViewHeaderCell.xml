@@ -333,11 +333,11 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The cell is a row header cell, the cell is not contained within a <see cref="T:System.Windows.Forms.DataGridView" /> control, and <paramref name="rowIndex" /> is not -1.  
   
- \- or -  
+-or-
   
  The cell is a row header cell, the cell is contained within a <see cref="T:System.Windows.Forms.DataGridView" /> control, and <paramref name="rowIndex" /> is outside the valid range of 0 to the number of rows in the control minus 1.  
   
- \- or -  
+-or-
   
  The cell is a row header cell and <paramref name="rowIndex" /> is not the index of the row containing this cell.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The cell is a column header cell or the control's <see cref="P:System.Windows.Forms.DataGridView.TopLeftHeaderCell" /> and <paramref name="rowIndex" /> is not -1.</exception>

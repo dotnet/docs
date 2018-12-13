@@ -1001,7 +1001,7 @@
         <exception cref="T:System.Web.HttpException">
           <paramref name="useDataSource" /> is <see langword="true" />, the value of <see cref="P:System.Web.UI.WebControls.DataGrid.VirtualItemCount" /> is not set, and the selected data source does not implement the <see cref="T:System.Collections.ICollection" /> interface.  
   
- \- or -  
+-or-
   
  <paramref name="useDataSource" /> is <see langword="true" /> and the data source has an invalid <see cref="P:System.Web.UI.WebControls.PagedDataSource.CurrentPageIndex" /> property.</exception>
       </Docs>

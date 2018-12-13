@@ -267,23 +267,23 @@
         <exception cref="T:System.Exception">
           <paramref name="fileName" /> does not point to a file with the .config extension.  
   
- \- or -  
+-or-
   
  The file has changed since it was read.  
   
- \- or -  
+-or-
   
  The file is hidden or read-only.  
   
- \- or -  
+-or-
   
  The method fails to generate a temp file.  
   
- \- or -  
+-or-
   
  The method fails to create a <see cref="T:System.IO.FileStream" />.  
   
- \- or -  
+-or-
   
  The temp file fails to overwrite the target file.</exception>
         <forInternalUseOnly />

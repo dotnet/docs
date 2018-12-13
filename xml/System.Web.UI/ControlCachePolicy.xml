@@ -76,7 +76,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.Web.HttpException">The user control is not associated with a <see cref="T:System.Web.UI.BasePartialCachingControl" /> and is not cacheable.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.UI.ControlCachePolicy.Cached" /> property is set outside of the initialization and rendering stages of the control.</exception>
       </Docs>
@@ -110,7 +110,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The user control is not associated with a <see cref="T:System.Web.UI.BasePartialCachingControl" /> and is not cacheable.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.UI.ControlCachePolicy.Dependency" /> property is set outside of the initialization and rendering stages of the control.</exception>
         <altmember cref="T:System.Web.Caching.CacheDependency" />
@@ -154,7 +154,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The user control is not associated with a <see cref="T:System.Web.UI.BasePartialCachingControl" /> and is not cacheable.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.UI.ControlCachePolicy.Duration" /> property is set outside of the initialization and rendering stages of the control.</exception>
         <altmember cref="M:System.Web.UI.ControlCachePolicy.SetExpires(System.DateTime)" />
@@ -366,7 +366,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.Web.HttpException">The user control is not associated with a <see cref="T:System.Web.UI.BasePartialCachingControl" /> and is not cacheable.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.UI.ControlCachePolicy.VaryByControl" /> property is set outside of the initialization and rendering stages of the control.</exception>
         <altmember cref="P:System.Web.UI.PartialCachingAttribute.VaryByControls" />

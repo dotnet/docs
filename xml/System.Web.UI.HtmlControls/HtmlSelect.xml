@@ -607,12 +607,12 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" /> property is not of type <see cref="T:System.Web.UI.IDataSource" />.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" /> property is not of type <see cref="T:System.Web.UI.IHierarchicalDataSource" />.</exception>
         <exception cref="T:System.InvalidOperationException">Both a <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" /> and a <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" /> property are defined for the <see cref="T:System.Web.UI.HtmlControls.HtmlSelect" /> control.  
   
- \- or -  
+-or-
   
  The requested data view cannot be found.</exception>
         <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" />
@@ -1008,12 +1008,12 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" /> property is not of type <see cref="T:System.Web.UI.IDataSource" />.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" /> property is not of type <see cref="T:System.Web.UI.IHierarchicalDataSource" />.</exception>
         <exception cref="T:System.InvalidOperationException">Both a <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" /> and a <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" /> property are defined for the <see cref="T:System.Web.UI.HtmlControls.HtmlSelect" /> control.  
   
- \- or -  
+-or-
   
  The requested data view cannot be found.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.SelectedIndex" /> property was set to a value greater than the number of items in the <see cref="T:System.Web.UI.HtmlControls.HtmlSelect" /> control or less than <see langword="-1" />.</exception>
@@ -1173,12 +1173,12 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The ID specified in the <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" /> property cannot be found.  
   
- \- or -  
+-or-
   
  The control specified in the <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" /> property is not of the type <see cref="T:System.Web.UI.IDataSource" />.</exception>
         <exception cref="T:System.InvalidOperationException">The data source cannot be resolved because a value is specified for both the <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" /> property and the <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSourceID" /> property.  
   
- \- or -  
+-or-
   
  The requested <see cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataMember" /> property could not be found.</exception>
         <altmember cref="P:System.Web.UI.HtmlControls.HtmlSelect.DataSource" />

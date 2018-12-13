@@ -278,7 +278,7 @@
           <paramref name="replacements" /> does not contain strings.</exception>
         <exception cref="T:System.Web.HttpException">The <see langword="From" /> value in the SMTP section of the configuration file is <see langword="null" /> or the empty string  
   
- \- or -  
+-or-
   
  <paramref name="recipients" /> contains an incorrect email address.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -354,7 +354,7 @@
           <paramref name="replacements" /> does not contain strings.</exception>
         <exception cref="T:System.Web.HttpException">The <see langword="From" /> value in the SMTP section of the configuration file is <see langword="null" /> or an empty string ("").  
   
- \- or -  
+-or-
   
  <paramref name="recipients" /> contains an incorrect email address.</exception>
         <exception cref="T:System.ArgumentNullException">

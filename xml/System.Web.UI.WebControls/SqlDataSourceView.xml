@@ -422,7 +422,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection" /> property is set to the <see cref="F:System.Web.UI.ConflictOptions.CompareAllValues" /> value and no <paramref name="oldValues" /> parameters are passed.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.CanDelete" /> property is <see langword="false" />.</exception>
@@ -697,17 +697,17 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection" /> property is set to the <see cref="F:System.Web.UI.ConflictOptions.CompareAllValues" /> value and no <paramref name="oldValues" /> parameters are passed.</exception>
         <exception cref="T:System.Web.HttpException">The current user does not have the correct permissions to access to the database.  
   
- \- or -  
+-or-
   
  The instance of the control is an <see cref="T:System.Web.UI.WebControls.AccessDataSource" /> control and access is denied to the path specified for the <see cref="P:System.Web.UI.WebControls.AccessDataSource.DataFile" /> property.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.CanDelete" /> property is <see langword="false" />.  
   
- \- or -  
+-or-
   
  A design-time relative path was not mapped correctly by the designer before using an instance of the <see cref="T:System.Web.UI.WebControls.AccessDataSource" /> control.</exception>
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.Delete(System.Collections.IDictionary,System.Collections.IDictionary)" />
@@ -804,16 +804,16 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">The <paramref name="arguments" /> passed to the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" /> method specify that the data source should perform some additional work while retrieving data to enable paging or sorting through the retrieved data, but the data source control does not support the requested capability.  
   
- \- or -  
+-or-
   
  Caching is enabled but the <see cref="P:System.Web.UI.WebControls.SqlDataSource.DataSourceMode" /> property of the data source is not set to <see cref="F:System.Web.UI.WebControls.SqlDataSourceMode.DataSet" />.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.SortParameterName" /> property is set but <see cref="P:System.Data.SqlClient.SqlCommand.CommandType" /> is not set to <see cref="F:System.Data.CommandType.StoredProcedure" />.</exception>
         <exception cref="T:System.InvalidOperationException">The data source cannot create a database connection.  
   
- \- or -  
+-or-
   
  Caching is enabled but the internal cache and command types do not match.</exception>
         <altmember cref="M:System.Web.UI.WebControls.SqlDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" />
@@ -864,7 +864,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection" /> property is set to the <see cref="F:System.Web.UI.ConflictOptions.CompareAllValues" /> value and no <paramref name="oldValues" /> parameters are passed.</exception>
         <exception cref="T:System.Web.HttpException">The current user does not have the correct permissions to gain access to the database.</exception>

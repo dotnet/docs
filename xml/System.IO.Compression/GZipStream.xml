@@ -955,7 +955,7 @@
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.IO.Compression.CompressionMode" /> value was <see langword="Compress" /> when the object was created.  
   
- \- or -  
+-or-
   
  The underlying stream does not support reading.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">

@@ -156,15 +156,15 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="callbackMethod" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="interfaceType" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="controlType" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="displayName" /> is <see langword="null" /> or an empty string ("").</exception>
         <exception cref="T:System.ArgumentException">

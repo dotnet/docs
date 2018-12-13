@@ -81,7 +81,7 @@
         <returns>
           <see cref="F:System.Windows.DependencyProperty.UnsetValue" /> when the converter cannot produce a value; for example, when <paramref name="value" /> is <see langword="null" /> or when <paramref name="targetType" /> is not <see cref="T:System.Double" /> or <see cref="T:System.String" />.  
   
- \- or -  
+-or-
   
  The new <see cref="T:System.Object" /> of the designated type. As implemented in this class, this must be either a <see cref="T:System.Double" /> or a <see cref="T:System.String" />. If it is a string, it will be formatted appropriately for the <paramref name="culture" />.</returns>
         <remarks>
@@ -131,7 +131,7 @@
         <returns>
           <see cref="F:System.Windows.DependencyProperty.UnsetValue" /> when the converter cannot produce a value; for example, when <paramref name="value" /> is not a valid percentage when <paramref name="targetType" /> is not <see cref="T:System.Double" /> or <see cref="T:System.String" />.  
   
- \- or -  
+-or-
   
  A <see cref="T:System.Double" /> representing the zoom percentage of a <see cref="T:System.Windows.Controls.DocumentViewer" />.</returns>
         <remarks>

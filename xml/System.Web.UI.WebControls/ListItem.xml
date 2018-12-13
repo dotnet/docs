@@ -786,7 +786,7 @@
         <exception cref="T:System.Web.HttpException">
           <paramref name="obj" /> is a <see cref="T:System.Web.UI.DataBoundLiteralControl" />.  
   
- \- or -  
+-or-
   
  <paramref name="obj" /> is not a <see cref="T:System.Web.UI.LiteralControl" />.</exception>
         <altmember cref="M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)" />

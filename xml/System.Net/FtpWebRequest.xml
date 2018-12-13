@@ -952,7 +952,7 @@
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.FtpWebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" /> has been called and has not completed.  
   
- \- or -  
+-or-
   
  An HTTP proxy is enabled, and you attempted to use an FTP command other than <see cref="F:System.Net.WebRequestMethods.Ftp.DownloadFile" />, <see cref="F:System.Net.WebRequestMethods.Ftp.ListDirectory" />, or <see cref="F:System.Net.WebRequestMethods.Ftp.ListDirectoryDetails" />.</exception>
         <exception cref="T:System.Net.WebException">A connection to the FTP server could not be established.</exception>
@@ -1028,13 +1028,13 @@
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.FtpWebRequest.GetResponse" /> or <see cref="M:System.Net.FtpWebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" /> has already been called for this instance.  
   
- \- or -  
+-or-
   
  An HTTP proxy is enabled, and you attempted to use an FTP command other than <see cref="F:System.Net.WebRequestMethods.Ftp.DownloadFile" />, <see cref="F:System.Net.WebRequestMethods.Ftp.ListDirectory" />, or <see cref="F:System.Net.WebRequestMethods.Ftp.ListDirectoryDetails" />.</exception>
         <exception cref="T:System.Net.WebException">
           <see cref="P:System.Net.FtpWebRequest.EnableSsl" /> is set to <see langword="true" />, but the server does not support this feature.  
   
- \- or -  
+-or-
   
  A <see cref="P:System.Net.FtpWebRequest.Timeout" /> was specified and the timeout has expired.</exception>
         <block subset="none" type="usage">
@@ -1211,11 +1211,11 @@
         <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
         <exception cref="T:System.ArgumentException">The method is invalid.  
   
- \- or -  
+-or-
   
  The method is not supported.  
   
- \- or -  
+-or-
   
  Multiple methods were specified.</exception>
         <altmember cref="T:System.Net.FtpWebResponse" />

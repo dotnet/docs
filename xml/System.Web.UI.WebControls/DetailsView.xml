@@ -1588,15 +1588,15 @@
         <exception cref="T:System.Web.HttpException">
           <paramref name="dataSource" /> returns a null <see cref="T:System.Web.UI.DataSourceView" />.  
   
- \- or -  
+-or-
   
  <paramref name="dataSource" /> is not an <see cref="T:System.Collections.ICollection" /> and cannot return a total row count.  
   
- \- or -  
+-or-
   
  <paramref name="dataBinding" /> is <see langword="false" /> and <paramref name="dataSource" /> does not implement the <see cref="T:System.Collections.ICollection" /> interface.  
   
- \- or -  
+-or-
   
  <paramref name="dataSource" /> does not implement the <see cref="T:System.Collections.ICollection" /> interface and <see cref="P:System.Web.UI.WebControls.DetailsView.AllowPaging" /> is set to <see langword="true" />.</exception>
         <block subset="none" type="overrides">
@@ -3606,7 +3606,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">This method is called when the <see cref="T:System.Web.UI.WebControls.DetailsView" /> control is not in insert mode.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Web.UI.DataSourceView" /> associated with the <see cref="T:System.Web.UI.WebControls.DetailsView" /> control is <see langword="null" />.</exception>
         <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemInserted" />
@@ -6495,7 +6495,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">This method is called when the <see cref="T:System.Web.UI.WebControls.DetailsView" /> control is not in edit mode.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Web.UI.DataSourceView" /> associated with the <see cref="T:System.Web.UI.WebControls.DetailsView" /> control is <see langword="null" />.</exception>
         <altmember cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdated" />

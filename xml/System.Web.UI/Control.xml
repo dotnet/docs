@@ -1463,7 +1463,7 @@ span#ProductIDLabel { background-color: white; }
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see langword="Page_PreInit" /> event has already occurred.  
   
- \- or -  
+-or-
   
  The control has already been added to the <see langword="Controls" /> collection.</exception>
         <altmember cref="P:System.Web.UI.Control.SkinID" />
@@ -4015,11 +4015,11 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
         </remarks>
         <exception cref="T:System.InvalidOperationException">The style sheet has already been applied.  
   
- \- or -  
+-or-
   
  The <see langword="Page_PreInit" /> event has already occurred.  
   
- \- or -  
+-or-
   
  The control was already added to the <see langword="Controls" /> collection.</exception>
         <altmember cref="P:System.Web.UI.Control.EnableTheming" />

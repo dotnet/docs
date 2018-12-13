@@ -192,7 +192,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="innerStream" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="innerStream" /> is equal to <see cref="F:System.IO.Stream.Null" />.</exception>
       </Docs>
@@ -258,7 +258,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to use the explicit <see cref="T:System.Net.NetworkCredential" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
@@ -321,7 +321,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -388,14 +388,14 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="targetName" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="credential" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The authentication failed. You can use this object to retry the authentication.</exception>
         <exception cref="T:System.Security.Authentication.InvalidCredentialException">The authentication failed. You can use this object to retry the authentication.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
@@ -468,7 +468,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to use the explicit <see cref="T:System.Net.NetworkCredential" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
@@ -534,7 +534,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="targetName" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="credential" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -543,7 +543,7 @@
         <exception cref="T:System.Security.Authentication.InvalidCredentialException">The authentication failed. You can use this object to retry the authentication.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
@@ -608,7 +608,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to use the explicit <see cref="T:System.Net.NetworkCredential" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
@@ -664,7 +664,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -724,14 +724,14 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="targetName" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="credential" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The authentication failed. You can use this object to retry the authentication.</exception>
         <exception cref="T:System.Security.Authentication.InvalidCredentialException">The authentication failed. You can use this object to retry the authentication.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
@@ -797,7 +797,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to use the explicit <see cref="T:System.Net.NetworkCredential" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
@@ -859,7 +859,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="targetName" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="credential" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -868,7 +868,7 @@
         <exception cref="T:System.Security.Authentication.InvalidCredentialException">The authentication failed. You can use this object to retry the authentication.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
@@ -1077,7 +1077,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the client. You cannot use the stream to retry authentication as the server.</exception>
         <exception cref="T:System.NotSupportedException">Windows 95 and Windows 98 are not supported.</exception>
@@ -1150,7 +1150,7 @@
         <exception cref="T:System.Security.Authentication.InvalidCredentialException">The authentication failed. You can use this object to retry the authentication.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the client. You cannot use the stream to retry authentication as the server.</exception>
         <exception cref="T:System.NotSupportedException">Windows 95 and Windows 98 are not supported.</exception>
@@ -1332,7 +1332,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the client. You cannot use the stream to retry authentication as the server.</exception>
         <exception cref="T:System.NotSupportedException">Windows 95 and Windows 98 are not supported.</exception>
@@ -1399,7 +1399,7 @@
         <exception cref="T:System.Security.Authentication.InvalidCredentialException">The authentication failed. You can use this object to retry the authentication.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the client. You cannot use the stream to retry authentication as the server.</exception>
         <exception cref="T:System.NotSupportedException">Windows 95 and Windows 98 are not supported.</exception>
@@ -1493,7 +1493,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to use the explicit <see cref="T:System.Net.NetworkCredential" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
@@ -1560,7 +1560,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="credential" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="targetName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The authentication failed. You can use this object to retry the authentication.</exception>
@@ -1568,7 +1568,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to use the explicit <see cref="T:System.Net.NetworkCredential" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
@@ -1637,14 +1637,14 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="credential" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="targetName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The authentication failed. You can use this object to retry the authentication.</exception>
         <exception cref="T:System.Security.Authentication.InvalidCredentialException">The authentication failed. You can use this object to retry the authentication.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
@@ -1719,7 +1719,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="credential" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="targetName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The authentication failed. You can use this object to retry the authentication.</exception>
@@ -1727,7 +1727,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to use the explicit <see cref="T:System.Net.NetworkCredential" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
@@ -1799,14 +1799,14 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="credential" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="targetName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The authentication failed. You can use this object to retry the authentication.</exception>
         <exception cref="T:System.Security.Authentication.InvalidCredentialException">The authentication failed. You can use this object to retry the authentication.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the server. You cannot use the stream to retry authentication as the client.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
@@ -2030,7 +2030,7 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the client. You cannot use the stream to retry authentication as the server.</exception>
         <exception cref="T:System.NotSupportedException">Windows 95 and Windows 98 are not supported.</exception>
@@ -2109,7 +2109,7 @@
         <exception cref="T:System.Security.Authentication.InvalidCredentialException">The authentication failed. You can use this object to retry the authentication.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has already occurred.  
   
- \- or -  
+-or-
   
  This stream was used previously to attempt authentication as the client. You cannot use the stream to retry authentication as the server.</exception>
         <exception cref="T:System.NotSupportedException">Windows 95 and Windows 98 are not supported.</exception>
@@ -2193,16 +2193,16 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="offset" /> is less than 0.  
   
- \- or -  
+-or-
   
  <paramref name="offset" /> is greater than the length of <paramref name="buffer" />.  
   
- \- or -  
+-or-
   
  <paramref name="offset" /> plus <paramref name="count" /> is greater than the length of <paramref name="buffer" />.</exception>
         <exception cref="T:System.IO.IOException">The read operation failed.  
   
- \- or -  
+-or-
   
  Encryption is in use, but the data could not be decrypted.</exception>
         <exception cref="T:System.NotSupportedException">There is already a read operation in progress.</exception>
@@ -2289,16 +2289,16 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="offset is less than 0" />.  
   
- \- or -  
+-or-
   
  <paramref name="offset" /> is greater than the length of <paramref name="buffer" />.  
   
- \- or -  
+-or-
   
  <paramref name="offset" /> plus count is greater than the length of <paramref name="buffer" />.</exception>
         <exception cref="T:System.IO.IOException">The write operation failed.  
   
- \- or -  
+-or-
   
  Encryption is in use, but the data could not be encrypted.</exception>
         <exception cref="T:System.NotSupportedException">There is already a write operation in progress.</exception>
@@ -3322,7 +3322,7 @@ Authentication has not occurred.</exception>
         </remarks>
         <exception cref="T:System.NotSupportedException">Setting this property is not supported.  
   
- \- or -  
+-or-
   
  Getting the value of this property is not supported when the underlying stream is a <see cref="T:System.Net.Sockets.NetworkStream" />.</exception>
       </Docs>
@@ -3661,16 +3661,16 @@ Authentication has not occurred.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="offset is less than 0" />.  
   
- \- or -  
+-or-
   
  <paramref name="offset" /> is greater than the length of <paramref name="buffer" />.  
   
- \- or -  
+-or-
   
  <paramref name="offset" /> plus count is greater than the length of <paramref name="buffer" />.</exception>
         <exception cref="T:System.IO.IOException">The write operation failed.  
   
- \- or -  
+-or-
   
  Encryption is in use, but the data could not be encrypted.</exception>
         <exception cref="T:System.NotSupportedException">There is already a write operation in progress.</exception>

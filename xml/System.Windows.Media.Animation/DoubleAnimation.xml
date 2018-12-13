@@ -223,7 +223,7 @@
 ## XAML Attribute Usage  
  <*object* `By`="<xref:System.Double>"/>  
   
- \- or -  
+-or-
   
  <*object* `By`="{}"/>  
   
@@ -410,7 +410,7 @@
 ## XAML Attribute Usage  
  <*object* `From`="<xref:System.Double>"/>  
   
- \- or -  
+-or-
   
  <*object* `From`="{[x:Null Markup Extension](~/docs/framework/xaml-services/x-null-markup-extension.md)}"/>  
   
@@ -613,7 +613,7 @@
 ## XAML Attribute Usage  
  <*object* `To`="<xref:System.Double>"/>  
   
- \- or -  
+-or-
   
  <*object* `To`="{[x:Null Markup Extension](~/docs/framework/xaml-services/x-null-markup-extension.md)}"/>  
   

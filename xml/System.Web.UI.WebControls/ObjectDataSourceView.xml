@@ -876,16 +876,16 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">The <paramref name="arguments" /> passed to the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" /> method specify that the data source should perform some additional work while retrieving data to enable paging or sorting through the retrieved data, but the data source control does not support the requested capability.  
   
- \- or -  
+-or-
   
  The object returned by the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" /> method is not a <see cref="T:System.Data.DataSet" /> or <see cref="T:System.Data.DataTable" />, and caching is enabled. Only <see cref="T:System.Data.DataSet" /> and <see cref="T:System.Data.DataTable" /> objects can be cached for the <see cref="T:System.Web.UI.WebControls.ObjectDataSourceView" /> control.  
   
- \- or -  
+-or-
   
  Both caching and client impersonation are enabled. The <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> does not support caching when client impersonation is enabled.</exception>
         <exception cref="T:System.InvalidOperationException">The object returned by the <see cref="M:System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" /> method is a <see cref="T:System.Data.DataSet" />, but has no tables in its <see cref="P:System.Data.DataSet.Tables" /> collection.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.UI.WebControls.ObjectDataSourceView.EnablePaging" /> property is set to <see langword="true" />, but the <see cref="P:System.Web.UI.WebControls.ObjectDataSourceView.StartRowIndexParameterName" /> and <see cref="P:System.Web.UI.WebControls.ObjectDataSourceView.MaximumRowsParameterName" /> properties are not set.</exception>
         <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" />

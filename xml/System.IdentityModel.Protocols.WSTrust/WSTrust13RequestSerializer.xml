@@ -98,7 +98,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="context" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationException">An inner <see langword="SecondaryParameter" /> element was found while processing the outer <see langword="SecondaryParameter" /> element.</exception>
@@ -132,7 +132,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="context" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationException">There was an error parsing the RST.</exception>

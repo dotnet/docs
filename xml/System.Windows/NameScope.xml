@@ -621,11 +621,11 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> was provided as empty string  
   
- \- or -  
+-or-
   
  <paramref name="name" /> provided was rejected by the parser, because it contained characters that are invalid for a XAML name  
   
- \- or -  
+-or-
   
  <paramref name="name" /> provided would result in a duplicate name registration.</exception>
         <altmember cref="T:System.Windows.Markup.INameScope" />
@@ -892,7 +892,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> was provided as empty string.  
   
- \- or -  
+-or-
   
  <paramref name="name" /> provided had not been registered.</exception>
         <exception cref="T:System.ArgumentNullException">

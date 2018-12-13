@@ -692,7 +692,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0.  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is greater than <see cref="P:System.Windows.FreezableCollection`1.Count" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.FreezableCollection`1" /> is frozen (its <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />).</exception>
@@ -728,7 +728,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0.  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Windows.FreezableCollection`1.Count" />.</exception>
         <exception cref="T:System.ArgumentException">The specified element is <see langword="null" />.</exception>
@@ -796,7 +796,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0.  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is greater than <see cref="P:System.Windows.FreezableCollection`1.Count" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.FreezableCollection`1" /> is frozen (its <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />).</exception>

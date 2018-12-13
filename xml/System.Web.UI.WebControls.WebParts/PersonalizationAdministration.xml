@@ -81,7 +81,7 @@
         <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
@@ -155,16 +155,16 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="pathToMatch" /> or <paramref name="usernameToMatch" /> before or after trimming is an empty string ("").  
   
- \- or -  
+-or-
   
  The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
@@ -232,28 +232,28 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="pathToMatch" /> or <paramref name="usernameToMatch" /> before or after trimming is an empty string ("").  
   
- \- or -  
+-or-
   
  <paramref name="pageIndex" /> is less than zero  
   
- \- or -  
+-or-
   
  <paramref name="pageSize" /> is less than or equal to zero.  
   
- \- or -  
+-or-
   
  the combination of <paramref name="pageIndex" /> and <paramref name="pageSize" /> exceeds <see cref="F:System.Int32.MaxValue" />.  
   
- \- or -  
+-or-
   
  The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
@@ -319,16 +319,16 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="pathToMatch" /> is an empty string ("") either before or after trimming.  
   
- \- or -  
+-or-
   
  The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
@@ -388,28 +388,28 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="pathToMatch" /> before or after trimming is an empty string ("").  
   
- \- or -  
+-or-
   
  <paramref name="pageIndex" /> is less than zero.  
   
- \- or -  
+-or-
   
  <paramref name="pageSize" /> is less than or equal to zero.  
   
- \- or -  
+-or-
   
  The combination of <paramref name="pageIndex" /> and <paramref name="pageSize" /> exceeds <see cref="F:System.Int32.MaxValue" />.  
   
- \- or -  
+-or-
   
  The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
@@ -489,16 +489,16 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="pathToMatch" /> or <paramref name="usernameToMatch" /> before or after trimming is an empty string ("").  
   
- \- or -  
+-or-
   
  The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
@@ -572,11 +572,11 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="pathToMatch" /> or <paramref name="usernameToMatch" /> before or after trimming is an empty string ("").  
   
- \- or -  
+-or-
   
  <paramref name="pageIndex" /> is less than zero.  
   
- \- or -  
+-or-
   
  <paramref name="pageSize" /> is less than or equal to zero.  
   
@@ -584,16 +584,16 @@
   
  The combination of <paramref name="pageIndex" /> and <paramref name="pageSize" /> exceeds <see cref="F:System.Int32.MaxValue" />.  
   
- \- or -  
+-or-
   
  The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
@@ -653,7 +653,7 @@
         <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
@@ -707,20 +707,20 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="pageIndex" /> is less than zero.  
   
- \- or -  
+-or-
   
  <paramref name="pageSize" /> is less than or equal to zero.  
   
- \- or -  
+-or-
   
  The combination of <paramref name="pageIndex" /> and <paramref name="pageSize" /> exceeds <see cref="F:System.Int32.MaxValue" />.  
   
- \- or -  
+-or-
   
  The provider for a personalization provider defined in configuration is not of the correct type.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
@@ -773,7 +773,7 @@
         <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -829,22 +829,22 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="pageIndex" /> is less than zero.  
   
- \- or -  
+-or-
   
  <paramref name="pageSize" /> is less than or equal to zero.  
   
- \- or -  
+-or-
   
  The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The combination of <paramref name="pageIndex" /> and <paramref name="pageSize" /> exceeds <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="scope" /> is not a valid member of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
@@ -906,12 +906,12 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
@@ -964,16 +964,16 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="pathToMatch" />, after trimming, is an empty string ("").  
   
- \- or -  
+-or-
   
  The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
@@ -1045,12 +1045,12 @@
           <paramref name="scope" /> is not a valid member of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
         <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
@@ -1096,16 +1096,16 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  <paramref name="pathToMatch" />, after trimming, is an empty string ("").  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1158,16 +1158,16 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="usernameToMatch" /> is an empty string ("") after trimming.  
   
- \- or -  
+-or-
   
  The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
@@ -1215,7 +1215,7 @@
         <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
@@ -1257,7 +1257,7 @@
         <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
@@ -1303,7 +1303,7 @@
         <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count of affected rows.</exception>
@@ -1368,12 +1368,12 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
@@ -1428,16 +1428,16 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is an empty string ("") after trimming.  
   
- \- or -  
+-or-
   
  The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
@@ -1499,16 +1499,16 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is an empty string ("") after trimming.  
   
- \- or -  
+-or-
   
  The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was either a negative number or was greater than one.</exception>
@@ -1555,20 +1555,20 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="paths" /> is a zero-length array.  
   
- \- or -  
+-or-
   
  A member of <paramref name="paths" /> is either <see langword="null" /> or an empty string ("") after trimming.  
   
- \- or -  
+-or-
   
  The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
@@ -1702,16 +1702,16 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is an empty string ("").  
   
- \- or -  
+-or-
   
  The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
@@ -1760,20 +1760,20 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="usernames" /> is a zero-length array.  
   
- \- or -  
+-or-
   
  A member of <paramref name="usernames" /> is either <see langword="null" />, contains commas, or is an empty string ("") after trimming.  
   
- \- or -  
+-or-
   
  The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
@@ -1822,20 +1822,20 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> or <paramref name="username" /> is an empty string ("") after trimming.  
   
- \- or -  
+-or-
   
  <paramref name="username" /> contains commas.  
   
- \- or -  
+-or-
   
  The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
@@ -1886,24 +1886,24 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is an empty string ("") after trimming.  
   
- \- or -  
+-or-
   
  A member of <paramref name="usernames" /> is <see langword="null" />, an empty string after trimming, or contains commas.  
   
- \- or -  
+-or-
   
  <paramref name="usernames" /> is a zero-length array.  
   
- \- or -  
+-or-
   
  The provider for a personalization provider defined in configuration is not of the correct type.  
   
- \- or -  
+-or-
   
  The length of the string of any parameter is greater than 256 characters.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration exception occurred while attempting to create and initialize an instance of one of the configured personalization providers.  
   
- \- or -  
+-or-
   
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>

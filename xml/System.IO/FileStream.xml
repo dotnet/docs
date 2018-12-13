@@ -2749,7 +2749,7 @@ If the absolute path is not known, this property returns a string similar to "[U
         <exception cref="T:System.NotSupportedException">The stream does not support seeking.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.  
   
- \- or -  
+-or-
   
  The position was set to a very large value beyond the end of the stream in Windows 98 or earlier.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">Attempted to set the position to a negative value.</exception>
@@ -3409,7 +3409,7 @@ If the absolute path is not known, this property returns a string similar to "[U
           <paramref name="offset" /> or <paramref name="count" /> is negative.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.  
   
- \- or -  
+-or-
   
  Another thread may have caused an unexpected change in the position of the operating system's file handle.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>

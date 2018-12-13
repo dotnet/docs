@@ -1439,7 +1439,7 @@ For more information on file path formats on Windows, see [File path formats on 
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs, such as no unique temporary file name is available.  
   
- \- or -  
+-or-
   
  This method was unable to create a temporary file.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to the temporary directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>

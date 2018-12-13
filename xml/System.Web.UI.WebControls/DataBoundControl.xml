@@ -314,7 +314,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">Both the <see cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" /> and <see cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID" /> properties are set.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.UI.WebControls.DataBoundControl.DataMember" /> property is set but a <see cref="T:System.Web.UI.DataSourceView" /> object by that name does not exist.</exception>
         <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.GetDataSource" />
@@ -351,7 +351,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The control identified by the <see cref="P:System.Web.UI.WebControls.DataBoundControl.DataSourceID" /> property does not exist in the current container.  
   
- \- or -  
+-or-
   
  The control identified by the <see cref="P:System.Web.UI.WebControls.DataBoundControl.DataSourceID" /> property does not implement the <see cref="T:System.Web.UI.IDataSource" /> interface.</exception>
         <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.GetData" />

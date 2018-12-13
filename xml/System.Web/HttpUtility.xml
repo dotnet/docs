@@ -727,7 +727,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="query" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="encoding" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Text.Encoding" />
@@ -966,7 +966,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="offset" /> is less than <see langword="0" /> or greater than the length of the <paramref name="bytes" /> array.  
   
- \- or -  
+-or-
   
  <paramref name="count" /> is less than <see langword="0" />, or <paramref name="count" /> + <paramref name="offset" /> is greater than the length of the <paramref name="bytes" /> array.</exception>
         <altmember cref="M:System.Web.HttpUtility.UrlEncode(System.String)" />
@@ -1195,7 +1195,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="offset" /> is less than <see langword="0" /> or greater than the length of the <paramref name="bytes" /> array.  
   
- \- or -  
+-or-
   
  <paramref name="count" /> is less than <see langword="0" />, or <paramref name="count" /> + <paramref name="offset" /> is greater than the length of the <paramref name="bytes" /> array.</exception>
         <altmember cref="M:System.Web.HttpUtility.UrlEncodeToBytes(System.String)" />
@@ -1666,7 +1666,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="offset" /> is less than <see langword="0" /> or greater than the length of the <paramref name="bytes" /> array.  
   
- \- or -  
+-or-
   
  <paramref name="count" /> is less than <see langword="0" />, or <paramref name="count" /> + <paramref name="offset" /> is greater than the length of the <paramref name="bytes" /> array.</exception>
         <altmember cref="M:System.Web.HttpUtility.UrlDecodeToBytes(System.String)" />

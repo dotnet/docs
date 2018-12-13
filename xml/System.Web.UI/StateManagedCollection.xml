@@ -156,11 +156,11 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="array" /> is multidimensional.  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is greater than or equal to the length of <paramref name="array" />.  
   
- \- or -  
+-or-
   
  The number of elements in the source <see cref="T:System.Web.UI.StateManagedCollection" /> is greater than the available space from the <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
       </Docs>

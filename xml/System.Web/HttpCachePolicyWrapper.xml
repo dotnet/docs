@@ -253,7 +253,7 @@
           <paramref name="etag" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see langword="ETag" /> header has already been set.  
   
- \- or -  
+-or-
   
  The <see cref="M:System.Web.HttpCachePolicy.SetETagFromFileDependencies" /> method has already been called.</exception>
       </Docs>

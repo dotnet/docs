@@ -524,11 +524,11 @@
 ## XAML Attribute Usage  
  <<xref:System.Windows.Input.KeyBinding> `Gesture`="<xref:System.Windows.Input.KeyGesture>"/>  
   
- \- or -  
+-or-
   
  <<xref:System.Windows.Input.MouseBinding> `Gesture`="<xref:System.Windows.Input.MouseGesture>"/>  
   
- \- or -  
+-or-
   
  <`inputBindingDerivedClass` `Gesture`="<xref:System.Windows.Input.InputGesture>"/>  
   

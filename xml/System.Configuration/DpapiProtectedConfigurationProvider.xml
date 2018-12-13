@@ -150,11 +150,11 @@
         <exception cref="T:System.Configuration.ConfigurationErrorsException">
           <paramref name="encryptedNode" /> does not have <see cref="P:System.Xml.XmlNode.Name" /> set to "EncryptedData" and <see cref="T:System.Xml.XmlNodeType" /> set to <see cref="F:System.Xml.XmlNodeType.Element" />.  
   
- \- or -  
+-or-
   
  <paramref name="encryptedNode" /> does not have a child node named "CipherData" with a child node named "CipherValue".  
   
- \- or -  
+-or-
   
  The child node named "CipherData" is an empty node.</exception>
       </Docs>

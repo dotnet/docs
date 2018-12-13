@@ -371,7 +371,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0.  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is greater than <see cref="P:System.Web.UI.StateManagedCollection.Count" />.</exception>
         <altmember cref="M:System.Web.UI.WebControls.DataControlFieldCollection.IndexOf(System.Web.UI.WebControls.DataControlField)" />

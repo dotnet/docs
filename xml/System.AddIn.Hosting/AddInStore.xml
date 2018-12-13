@@ -99,7 +99,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The length of <paramref name="pipelineRootFolderPath" /> or <paramref name="addInFilePath" /> or <paramref name="addInTypeName" /> is 0.  
   
- \- or -  
+-or-
   
  The add-in file does not exist in <paramref name="addInfilePath" />.</exception>
         <exception cref="T:System.ArgumentNullException">One or more parameters are <see langword="null" />.</exception>

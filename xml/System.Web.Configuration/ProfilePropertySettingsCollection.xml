@@ -480,7 +480,7 @@
         <exception cref="T:System.Configuration.ConfigurationErrorsException">
           <paramref name="elementName" /> equals "clear"  
   
- \- or -  
+-or-
   
  <paramref name="elementName" /> equals "group".</exception>
       </Docs>
@@ -552,11 +552,11 @@
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object with the specified key in the collection.  
   
- \- or -  
+-or-
   
  The element has already been removed.  
   
- \- or -  
+-or-
   
  The collection is read-only.</exception>
         <altmember cref="T:System.Web.Configuration.ProfilePropertySettings" />
@@ -603,11 +603,11 @@
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">There is no <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object at the specified index in the collection.  
   
- \- or -  
+-or-
   
  The element has already been removed.  
   
- \- or -  
+-or-
   
  The collection is read-only.</exception>
         <altmember cref="T:System.Web.Configuration.ProfilePropertySettings" />

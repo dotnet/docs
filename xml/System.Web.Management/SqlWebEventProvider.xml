@@ -177,15 +177,15 @@
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">There is no connection string declared in <paramref name="config" />.  
   
- \- or -  
+-or-
   
  There is more than one connection string declared in <paramref name="config" />.  
   
- \- or -  
+-or-
   
  The connection string supplied by <paramref name="config" /> specifies Integrated Security.  
   
- \- or -  
+-or-
   
  The value of the <see langword="maxEventDetailsLength" /> attribute supplied by <paramref name="config" /> is less than <see langword="0" /> or greater than <see langword="1073741823" />.</exception>
       </Docs>

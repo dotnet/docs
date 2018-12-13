@@ -785,7 +785,7 @@ End Sub
         </remarks>
         <exception cref="T:System.Resources.MissingManifestResourceException">A resource object with the specified <paramref name="classKey" /> parameter was not found.  
   
- \- or -  
+-or-
   
  The main assembly does not contain the resources for the neutral culture, and these resources are required because the appropriate satellite assembly is missing.</exception>
         <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
@@ -834,7 +834,7 @@ End Sub
         </remarks>
         <exception cref="T:System.Resources.MissingManifestResourceException">A resource object for which the specified <paramref name="classKey" /> parameter was not found.  
   
- \- or -  
+-or-
   
  The main assembly does not contain the resources for the neutral culture, and these resources are required because the appropriate satellite assembly is missing.</exception>
         <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />

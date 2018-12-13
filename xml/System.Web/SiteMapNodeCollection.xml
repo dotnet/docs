@@ -911,7 +911,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero.  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is great than the <see cref="P:System.Collections.CollectionBase.Count" />.</exception>
         <exception cref="T:System.ArgumentNullException">The value supplied to the setter is <see langword="null" />.</exception>
@@ -1088,12 +1088,12 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero.  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is greater than the <see cref="P:System.Collections.CollectionBase.Count" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapNodeCollection" /> is read-only.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Web.SiteMapNodeCollection" /> has a fixed sized.</exception>
         <altmember cref="M:System.Web.SiteMapNodeCollection.Remove(System.Web.SiteMapNode)" />

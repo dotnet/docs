@@ -59,7 +59,7 @@
           <paramref name="serviceProvider" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
         <exception cref="T:System.InvalidOperationException">The hosting environment obtained through <paramref name="serviceProvider" /> is null (<see langword="Nothing" />).  
   
- \- or -  
+-or-
   
  The design surface obtained through <paramref name="serviceProvider" /> is null (<see langword="Nothing" />).</exception>
       </Docs>

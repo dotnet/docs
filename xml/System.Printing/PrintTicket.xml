@@ -529,11 +529,11 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property with a <see cref="T:System.Printing.PageMediaSize" /> object that has at least one <see langword="null" /> property.  
   
- \- or -  
+-or-
   
  Calling code has attempted to set the property with a <see cref="T:System.Printing.PageMediaSize" /> object whose <see cref="P:System.Printing.PageMediaSize.PageMediaSizeName" /> property is set to a value that is not in the <see cref="T:System.Printing.PageMediaSizeName" /> enumeration.  
   
- \- or -  
+-or-
   
  Calling code has attempted to set the property with a <see cref="T:System.Printing.PageMediaSize" /> object whose <see cref="P:System.Printing.PageMediaSize.Width" /> or <see cref="P:System.Printing.PageMediaSize.Height" /> property is set to a value less than 1.</exception>
       </Docs>
@@ -681,11 +681,11 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property with a <see cref="T:System.Printing.PageResolution" /> object that has at least one <see langword="null" /> property.  
   
- \- or -  
+-or-
   
  Calling code has attempted to set the property with a <see cref="T:System.Printing.PageMediaSize" /> object whose <see cref="P:System.Printing.PageResolution.QualitativeResolution" /> property is set to a value that is not in the <see cref="T:System.Printing.PageQualitativeResolution" /> enumeration.  
   
- \- or -  
+-or-
   
  Calling code has attempted to set the property with a <see cref="T:System.Printing.PageResolution" /> object whose <see cref="P:System.Printing.PageResolution.X" /> or <see cref="P:System.Printing.PageResolution.Y" /> property is set to a value less than 1.</exception>
         <altmember cref="T:System.Printing.PageResolution" />

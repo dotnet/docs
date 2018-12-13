@@ -385,7 +385,7 @@
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration is read-only.  
   
- \- or -  
+-or-
   
  A collection item has been locked in a higher-level configuration.</exception>
       </Docs>
@@ -441,7 +441,7 @@
         <exception cref="T:System.Configuration.ConfigurationErrorsException">
           <paramref name="index" /> is less than <see langword="0" />.  
   
- \- or -  
+-or-
   
  There is no <see cref="T:System.Configuration.ConfigurationElement" /> at the specified <paramref name="index" />.</exception>
       </Docs>
@@ -552,7 +552,7 @@
         <exception cref="T:System.Configuration.ConfigurationErrorsException">
           <paramref name="index" /> is less than <see langword="0" />.  
   
- \- or -  
+-or-
   
  There is no <see cref="T:System.Configuration.ConfigurationElement" /> at the specified <paramref name="index" />.</exception>
       </Docs>
@@ -712,23 +712,23 @@
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration is read-only.  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is less than <see langword="0" /> or greater than the number of <see cref="T:System.Configuration.ConfigurationElement" /> objects in the collection.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Configuration.ConfigurationElement" /> object has already been removed.  
   
- \- or -  
+-or-
   
  The value of the <see cref="T:System.Configuration.ConfigurationElement" /> object has been locked at a higher level.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Configuration.ConfigurationElement" /> object was inherited.  
   
- \- or -  
+-or-
   
  The value of the <see cref="T:System.Configuration.ConfigurationElement" /> object's <see cref="P:System.Configuration.ConfigurationProperty.Type" /> is not <see cref="F:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap" /> or <see cref="F:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMapAlternate" />.</exception>
       </Docs>

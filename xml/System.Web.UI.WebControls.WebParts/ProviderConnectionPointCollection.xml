@@ -116,11 +116,11 @@
           <paramref name="connectionPoints" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The collection contains a null connection point.  
   
- \- or -  
+-or-
   
  The collection contains an object that is not of type <see cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />.  
   
- \- or -  
+-or-
   
  There are duplicate IDs in the collection of connection points.</exception>
         <altmember cref="T:System.Collections.ICollection" />

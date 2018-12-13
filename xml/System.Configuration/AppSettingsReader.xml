@@ -195,13 +195,13 @@ class Program
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="type" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="key" /> does not exist in the <see langword="&lt;appSettings&gt;" /> configuration section.  
   
- \- or -  
+-or-
   
  The value in the <see langword="&lt;appSettings&gt;" /> configuration section for <paramref name="key" /> is not of type <paramref name="type" />.</exception>
         <altmember cref="T:System.Configuration.AppSettingsSection" />

@@ -193,7 +193,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The data source control identified by the <see cref="P:System.Web.UI.WebControls.HierarchicalDataBoundControl.DataSourceID" /> property does not exist in the current container.  
   
- \- or -  
+-or-
   
  The data source control identified by the <see cref="P:System.Web.UI.WebControls.HierarchicalDataBoundControl.DataSourceID" /> property does not implement the <see cref="T:System.Web.UI.IHierarchicalDataSource" /> interface.</exception>
         <altmember cref="M:System.Web.UI.WebControls.HierarchicalDataBoundControl.GetData(System.String)" />

@@ -377,15 +377,15 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="encryptedTicket" /> is <see langword="null" />.  
   
- \- or -  
+-or-
   
  <paramref name="encryptedTicket" /> is an empty string ("").  
   
- \- or -  
+-or-
   
  The length of <paramref name="encryptedTicket" /> is greater than 4096 characters.  
   
- \- or -  
+-or-
   
  <paramref name="encryptedTicket" /> is of an invalid format.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8">ASP.NET Web Application Security</related>

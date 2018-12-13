@@ -120,13 +120,13 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="uriFormat" /> is invalid.  
   
- \- or -  
+-or-
   
  <paramref name="uriComponents" /> is not a combination of valid <see cref="T:System.UriComponents" /> values.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="uri" /> requires user-driven parsing  
   
- \- or -  
+-or-
   
  <paramref name="uri" /> is not an absolute URI. Relative URIs cannot be used with this method.</exception>
         <altmember cref="T:System.UriComponents" />
@@ -432,13 +432,13 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="uriParser" /> parameter is null  
   
- \- or -  
+-or-
   
  <paramref name="schemeName" /> parameter is null.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="schemeName" /> parameter is not valid  
   
- \- or -  
+-or-
   
  <paramref name="defaultPort" /> parameter is not valid. The <paramref name="defaultPort" /> parameter is less than -1 or greater than 65,534.</exception>
       </Docs>
@@ -493,7 +493,7 @@
         <exception cref="T:System.InvalidOperationException">
           <paramref name="baseUri" /> parameter is not an absolute <see cref="T:System.Uri" />  
   
- \- or -  
+-or-
   
  <paramref name="baseUri" /> parameter requires user-driven parsing.</exception>
       </Docs>

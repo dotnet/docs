@@ -70,11 +70,11 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="enumType" /> is not an <see cref="T:System.Enum" />.  
   
- \- or -  
+-or-
   
  <paramref name="value" /> is either an empty string ("") or contains only white spaces.  
   
- \- or -  
+-or-
   
  <paramref name="value" /> is a name, but not one of the named constants defined for the enumeration.</exception>
         <forInternalUseOnly />
@@ -121,11 +121,11 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="enumType" /> or <paramref name="enumValue" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="enumType" /> parameter is not an <see cref="T:System.Enum" /> type.  
   
- \- or -  
+-or-
   
  The <paramref name="enumValue" /> parameter contains a value from an enumeration that differs in type from <paramref name="enumType" />.  
   
- \- or -  
+-or-
   
  The type of <paramref name="enumValue" /> is not an underlying type of <paramref name="enumType" />.</exception>
         <forInternalUseOnly />

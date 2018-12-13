@@ -994,7 +994,7 @@ static void Main(string[] args)
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> is already disposed of.</exception>
         <exception cref="T:System.InvalidOperationException">The workflow run-time engine has started (<see cref="P:System.Workflow.Runtime.WorkflowRuntime.IsStarted" /> is <see langword="true" />) and <paramref name="service" /> is a core service.  
   
- \- or -  
+-or-
   
  <paramref name="service" /> is not registered with the workflow run-time engine.</exception>
       </Docs>

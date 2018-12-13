@@ -174,7 +174,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="virtualPath" /> is not rooted.  
   
- \- or -  
+-or-
   
  <paramref name="virtualPath" /> is <see langword="null" /> or an empty string.</exception>
         <altmember cref="M:System.Web.VirtualPathUtility.GetExtension(System.String)" />
@@ -407,7 +407,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="fromPath" /> is not rooted.  
   
- \- or -  
+-or-
   
  <paramref name="toPath" /> is not rooted.</exception>
         <altmember cref="M:System.Uri.MakeRelative(System.Uri)" />

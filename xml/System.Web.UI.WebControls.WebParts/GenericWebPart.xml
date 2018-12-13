@@ -114,11 +114,11 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="control" /> is of type <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" />.  
   
- \- or -  
+-or-
   
  <paramref name="control" /> has a <see langword="null" /> or empty <see cref="P:System.Web.UI.Control.ID" /> property.  
   
- \- or -  
+-or-
   
  <paramref name="control" /> has been output-cached.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>

@@ -406,13 +406,13 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.UI.WebControls.ControlParameter.ControlID" /> property is not set.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.UI.WebControls.ControlParameter.PropertyName" /> property is not set and the <see cref="T:System.Web.UI.Control" /> identified by the <see cref="P:System.Web.UI.WebControls.ControlParameter.ControlID" /> property is not decorated with a <see cref="T:System.Web.UI.ControlValuePropertyAttribute" /> attribute.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Web.UI.Control.FindControl(System.String)" /> does not return the specified control.  
   
- \- or -  
+-or-
   
  The control identified by the <see cref="P:System.Web.UI.WebControls.ControlParameter.ControlID" /> property does not support the property named by <see cref="P:System.Web.UI.WebControls.ControlParameter.PropertyName" />.</exception>
         <altmember cref="P:System.Web.UI.WebControls.ControlParameter.ControlID" />

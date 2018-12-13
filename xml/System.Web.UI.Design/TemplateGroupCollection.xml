@@ -421,7 +421,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero.  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is greater than the <see cref="P:System.Web.UI.Design.TemplateGroupCollection.Count" /> property.</exception>
         <altmember cref="M:System.Web.UI.Design.TemplateGroupCollection.Add(System.Web.UI.Design.TemplateGroup)" />
@@ -466,7 +466,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="value" /> is less than zero.  
   
- \- or -  
+-or-
   
  <paramref name="value" /> is greater than the <see cref="P:System.Web.UI.Design.TemplateGroupCollection.Count" /> property.</exception>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>
@@ -557,7 +557,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero.  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is greater than the <see cref="P:System.Web.UI.Design.TemplateGroupCollection.Count" /> property.</exception>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>

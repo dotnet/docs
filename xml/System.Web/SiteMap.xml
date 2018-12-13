@@ -304,7 +304,7 @@ AccessSiteMapProvider   Samples.AspNet.AccessSiteMapProvider
         </remarks>
         <exception cref="T:System.InvalidOperationException">The site map feature is not enabled.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Web.SiteMap.RootNode" /> resolves to <see langword="null" />, which occurs if security trimming is enabled and the root node is not visible to the current user.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The default provider specified in the configuration does not exist.</exception>

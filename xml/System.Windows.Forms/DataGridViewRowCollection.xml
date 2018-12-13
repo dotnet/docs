@@ -334,7 +334,7 @@
   
  The <see cref="P:System.Windows.Forms.DataGridView.VirtualMode" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is set to <see langword="true" />.  
   
- \- or -  
+-or-
   
  The <see cref="P:System.Windows.Forms.DataGridView.DataSource" /> property of the <see cref="T:System.Windows.Forms.DataGridView" /> is not <see langword="null" />.  
   
@@ -1955,7 +1955,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0.  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Windows.Forms.DataGridViewRowCollection.Count" />.</exception>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
@@ -2850,7 +2850,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0.  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Windows.Forms.DataGridViewRowCollection.Count" />.</exception>
         <altmember cref="T:System.Windows.Forms.DataGridView" />

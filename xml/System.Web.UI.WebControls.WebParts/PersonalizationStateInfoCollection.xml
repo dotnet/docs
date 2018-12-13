@@ -326,7 +326,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero.  
   
- \- or -  
+-or-
   
  <paramref name="index" /> is greater than <see cref="P:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection.Count" />.</exception>
       </Docs>
@@ -411,7 +411,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path" /> is null.  
   
- \- or -  
+-or-
   
  both parameters are null.</exception>
       </Docs>

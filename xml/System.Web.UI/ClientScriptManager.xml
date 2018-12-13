@@ -674,7 +674,7 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
         </remarks>
         <exception cref="T:System.ArgumentNullException">The web resource name is <see langword="null" />.  
   
- \- or -  
+-or-
   
  The web resource name has a length of zero.</exception>
         <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterClientScriptResource(System.Type,System.String)" />
@@ -1368,7 +1368,7 @@ function DoClick() {Form1.Message.value='Text from include script.'}
         <exception cref="T:System.ArgumentNullException">The client script include type is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The URL is <see langword="null" />.  
   
- \- or -  
+-or-
   
  The URL is empty.</exception>
         <altmember cref="M:System.Web.UI.ClientScriptManager.RegisterClientScriptInclude(System.String,System.String)" />
@@ -1429,7 +1429,7 @@ function DoClick() {Form1.Message.value='Text from resource script.'}
         </remarks>
         <exception cref="T:System.ArgumentNullException">The client resource name is <see langword="null" />.  
   
- \- or -  
+-or-
   
  The client resource name has a length of zero.</exception>
         <altmember cref="M:System.Web.UI.ClientScriptManager.GetWebResourceUrl(System.Type,System.String)" />

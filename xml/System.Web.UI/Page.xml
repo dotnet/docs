@@ -229,7 +229,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see langword="&lt;async&gt;" /> page directive is not set to <see langword="true" />.  
   
- \- or -  
+-or-
   
  The <see cref="M:System.Web.UI.Page.AddOnPreRenderCompleteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" /> method is called after the <see cref="E:System.Web.UI.Control.PreRender" /> event.</exception>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Web.UI.PageAsyncTask.BeginHandler" /> or <see cref="P:System.Web.UI.PageAsyncTask.EndHandler" /> is <see langword="null" />.</exception>
@@ -293,7 +293,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see langword="&lt;async&gt;" /> page directive is not set to <see langword="true" />.  
   
- \- or -  
+-or-
   
  The <see cref="M:System.Web.UI.Page.AddOnPreRenderCompleteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" /> method is called after the <see cref="E:System.Web.UI.Control.PreRender" /> event.</exception>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Web.UI.PageAsyncTask.BeginHandler" /> or <see cref="P:System.Web.UI.PageAsyncTask.EndHandler" /> is <see langword="null" />.</exception>
@@ -2426,7 +2426,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The cache profile was not found.  
   
- \- or -  
+-or-
   
  A missing directive or configuration settings profile attribute.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The output cache settings location is invalid.</exception>
@@ -3297,7 +3297,7 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.Page.MasterPageFile" /> property is set after the <see cref="E:System.Web.UI.Page.PreInit" /> event is complete.</exception>
         <exception cref="T:System.Web.HttpException">The file specified in the <see cref="P:System.Web.UI.Page.MasterPageFile" /> property does not exist.  
   
- \- or -  
+-or-
   
  The page does not have a <see cref="T:System.Web.UI.WebControls.Content" /> control as the top level control.</exception>
         <altmember cref="P:System.Web.UI.Page.Master" />
@@ -5334,7 +5334,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Web.UI.Page.SetFocus(System.String)" /> is called when the control is not part of a Web Forms page.  
   
- \- or -  
+-or-
   
  <see cref="M:System.Web.UI.Page.SetFocus(System.String)" /> is called after the <see cref="E:System.Web.UI.Control.PreRender" /> event.</exception>
       </Docs>
@@ -5387,7 +5387,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Web.UI.Page.SetFocus(System.Web.UI.Control)" /> is called when the control is not part of a Web Forms page.  
   
- \- or -  
+-or-
   
  <see cref="M:System.Web.UI.Page.SetFocus(System.Web.UI.Control)" /> is called after the <see cref="E:System.Web.UI.Control.PreRender" /> event.</exception>
       </Docs>

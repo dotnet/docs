@@ -210,11 +210,11 @@
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The element to read is locked.  
   
- \- or -  
+-or-
   
  An attribute of the current node is not recognized.  
   
- \- or -  
+-or-
   
  The lock status of the current node cannot be determined.</exception>
       </Docs>
@@ -1119,27 +1119,27 @@
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The element identified by <paramref name="elementName" /> is locked.  
   
- \- or -  
+-or-
   
  One or more of the element's attributes is locked.  
   
- \- or -  
+-or-
   
  <paramref name="elementName" /> is unrecognized, or the element has an unrecognized attribute.  
   
- \- or -  
+-or-
   
  The element has a Boolean attribute with an invalid value.  
   
- \- or -  
+-or-
   
  An attempt was made to deserialize a property more than once.  
   
- \- or -  
+-or-
   
  An attempt was made to deserialize a property that is not a valid member of the element.  
   
- \- or -  
+-or-
   
  The element cannot contain a CDATA or text element.</exception>
       </Docs>

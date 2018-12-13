@@ -30,15 +30,15 @@
 ## XAML Attribute Usage  
  \<*object* *property*="[*days*.]*hours*:*minutes*:*seconds*[.*fractionalSeconds*]"/>  
   
- \- or -  
+-or-
   
  \<*object* *property*="[*days*.]*hours*:*minutes*"/>  
   
- \- or -  
+-or-
   
  \<*object* *property*="<xref:System.Windows.Duration.Automatic%2A>"/>  
   
- \- or -  
+-or-
   
  \<*object* *property*="<xref:System.Windows.Duration.Forever%2A>"/>  
   

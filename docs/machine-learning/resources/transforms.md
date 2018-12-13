@@ -3,7 +3,7 @@ title: Machine learning data transforms - ML.NET
 description: Explore the feature engineering components supported in ML.NET.
 author: JRAlexander
 ms.custom: seodec18
-ms.date: 12/04/2018
+ms.date: 12/14/2018
 ---
 # Machine learning data transforms - ML.NET
 
@@ -34,7 +34,7 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Transforms.Conversions.KeyToBinaryVectorMappingTransformer> | Converts a key to a binary vector column. |
 | <xref:Microsoft.ML.Transforms.Conversions.KeyToValueMappingTransformer > | Utilizes KeyValues metadata to map key indices to the corresponding values in the KeyValues metadata. |
 | <xref:Microsoft.ML.Transforms.Conversions.KeyToVectorMappingTransformer> | Converts a key to a vector column. |
-| <xref:Microsoft.ML.Transforms.Conversions.TypeConvertingTransformer> | Changes underlying column type provided the type is able to be converted. |
+| <xref:Microsoft.ML.Transforms.Conversions.TypeConvertingTransformer> | Changes underlying column type provided the type can be converted. |
 | <xref:Microsoft.ML.Transforms.Conversions.ValueToKeyMappingTransformer> | Converts input values (words, numbers, etc.) to index in a dictionary. |
 
 
@@ -123,7 +123,7 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Transforms.BootstrapSamplingTransformer> | Approximates bootstrap sampling using Poisson sampling. |
 | <xref:Microsoft.ML.Transforms.Projections.RandomFourierFeaturizingTransformer> | Produces random Fourier feature. |
 | <xref:Microsoft.ML.Transforms.Text.TokenizingByCharactersTransformer> | Character-oriented tokenizer where text is considered a sequence of characters. |
-| <xref:Microsoft.ML.Transforms.Projections.VectorWhiteningTransformer> | Simplfies optimatization to assist with identifying weights. |
+| <xref:Microsoft.ML.Transforms.Projections.VectorWhiteningTransformer> | Simplfies optimization to assist with identifying weights. |
 
 ## Row Filters
 
@@ -164,8 +164,8 @@ The following tables contain information about all of the data transforms suppor
 | Transform | Definition |
 | --- | --- |
 | <xref:Microsoft.ML.Runtime.TimeSeriesProcessing.ExponentialAverageTransform> | Takes a weighted average of the values: ExpAvg(y_t) = a * y_t + (1-a) * ExpAvg(y_(t-1)). |
-| <xref:Microsoft.ML.Runtime.TimeSeriesProcessing.IidChangePointDetector> | Implements the change point detector transform for an i.i.d. sequence based on adaptive kernel density estimation and martingales. |
-| <xref:Microsoft.ML.Runtime.TimeSeriesProcessing.IidSpikeDetector> | Implements the spike detector transform for an i.i.d. sequence based on adaptive kernel density estimation. |
+| <xref:Microsoft.ML.Runtime.TimeSeriesProcessing.IidChangePointDetector> | Implements the change point detector transform for an i.i.d. sequence (random sample) based on adaptive kernel density estimation and martingales. |
+| <xref:Microsoft.ML.Runtime.TimeSeriesProcessing.IidSpikeDetector> | Implements the spike detector transform for an i.i.d. sequence (random sample) based on adaptive kernel density estimation. |
 | <xref:Microsoft.ML.Runtime.TimeSeriesProcessing.MovingAverageTransform> | Provides a weighted average of the sliding window values. |
 | <xref:Microsoft.ML.Runtime.TimeSeriesProcessing.PercentileThresholdTransform> | Decides whether the time-series current value belongs to the sliding window top values percentile. |
 | <xref:Microsoft.ML.Runtime.TimeSeriesProcessing.PValueTransform> | Computes the series current value empirical p-value based on the other values in the sliding window. |
@@ -178,7 +178,7 @@ The following tables contain information about all of the data transforms suppor
 | Transform | Definition |
 | --- | --- |
 | <xref:Microsoft.ML.Transforms.CompositeTransformer> | Creates a Composite DataTransform. |
-| <xref:Microsoft.ML.Transforms.CustomMappingTransformer%602> | Generates additional columns to the provided IDataView. It doesn't change the number of rows, and can be seen as a result of application of the user's function to every row of the input data.|
+| <xref:Microsoft.ML.Transforms.CustomMappingTransformer%602> | Generates additional columns to the provided `IDataView`. It doesn't change the number of rows and can be seen as a result of application of the user's function to every row of the input data.|
 | <xref:Microsoft.ML.Transforms.GenerateNumberTransform> | Adds a column with a generated number sequence. |
 | <xref:Microsoft.ML.Transforms.ProduceIdTransform> | Produces a column with the cursor's ID as a column. |
 | <xref:Microsoft.ML.Transforms.RandomNumberGenerator> | Generates a random number. |

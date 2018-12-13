@@ -27,11 +27,11 @@ You can see how the HealthChecks library is used in the eShopOnContainers sample
 
 As of ASP.NET Core 2.2 you can install the HealthChecks library as a NuGet package:
 
-  - Microsoft.AspNetCore.HealthChecks
-  - Microsoft.Extensions.HealthChecks
-  - Microsoft.Extensions.HealthChecks.SqlServer
+  - [Microsoft.AspNetCore.HealthChecks](https://www.nuget.org/packages/Microsoft.AspNetCore.HealthChecks)
+  - [Microsoft.Extensions.HealthChecks](https://www.nuget.org/packages/Microsoft.Extensions.HealthChecks)
+  - [Microsoft.Extensions.HealthChecks.SqlServer](https://www.nuget.org/packages/Microsoft.AspNetCore.HealthChecks)
 
-You could also use additional checks like the ones for Azure (NuGet package Microsoft.Extensions.HealthChecks.AzureStorage), but since this version of eShopOnContainers does not have any dependency on Azure, you do not need it. You do not need the ASP.NET health checks, because eShopOnContainers is based on ASP.NET Core.
+You could also use additional checks like the ones for Azure (NuGet package [Microsoft.Extensions.HealthChecks.AzureStorage](https://www.nuget.org/packages/Microsoft.Extensions.HealthChecks.AzureStorage)), but since this version of eShopOnContainers does not have any dependency on Azure, you do not need it. You do not need the ASP.NET health checks, because eShopOnContainers is based on ASP.NET Core.
 
 Figure 10-6 shows the HealthChecks library in Visual Studio, ready to be used as a building block by any microservices.
 

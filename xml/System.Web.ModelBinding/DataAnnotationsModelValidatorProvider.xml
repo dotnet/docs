@@ -216,7 +216,12 @@
         <summary>Registers an adapter for default object validation.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The adapter type does not have a public constructor that accepts two parameters that are typed as <see cref="T:System.Web.ModelBinding.ModelMetadata" /> and <see cref="T:System.Web.ModelBinding.ModelBindingExecutionContext" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          The adapter type does not derive from <see cref="T:System.Web.ModelBinding.ModelValidator" />.
+
+-or-
+
+The adapter type does not have a public constructor that accepts two parameters that are typed as <see cref="T:System.Web.ModelBinding.ModelMetadata" /> and <see cref="T:System.Web.ModelBinding.ModelBindingExecutionContext" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RegisterDefaultValidatableObjectAdapterFactory">
@@ -270,7 +275,16 @@
         <summary>Registers an adapter for object validation.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="adapterType" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The adapter type does not have a public constructor that accepts two parameters that are typed <see cref="T:System.Web.ModelBinding.ModelMetadata" /> and <see cref="T:System.Web.ModelBinding.ModelBindingExecutionContext" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          The model type does not implement the <see cref="T:System.ComponentModel.DataAnnotations.IValidatableObject" /> interface.
+
+-or-
+
+The adapter type does not implement <see cref="T:System.Web.ModelBinding.ModelValidator" />.
+
+-or-
+
+The adapter type does not have a public constructor that accepts two parameters that are typed <see cref="T:System.Web.ModelBinding.ModelMetadata" /> and <see cref="T:System.Web.ModelBinding.ModelBindingExecutionContext" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RegisterValidatableObjectAdapterFactory">

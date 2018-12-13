@@ -67,7 +67,7 @@
   
     -   Before an item is inserted into the cache, it is the responsibility of caller to dispose of a <see cref="T:System.Runtime.Caching.ChangeMonitor" /> instance.  
   
-    -   Once cache item and the <see cref="T:System.Runtime.Caching.ChangeMonitor" /> instances that are associated with it are passed to a cache, the cache implementer must make sure that that the <see cref="Overload:System.Runtime.Caching.ChangeMonitor.Dispose" /> method is called, even if the insert fails.  
+    -   Once cache item and the <see cref="T:System.Runtime.Caching.ChangeMonitor" /> instances that are associated with it are passed to a cache, the cache implementer must make sure that the <see cref="Overload:System.Runtime.Caching.ChangeMonitor.Dispose" /> method is called, even if the insert fails.  
   
     -   After an item and its associated <see cref="T:System.Runtime.Caching.ChangeMonitor" /> instances are passed to a cache, the caller must not dispose the dependency because when the <see cref="Overload:System.Runtime.Caching.ChangeMonitor.Dispose" /> method is called, the call is treated as if the dependency has changed. As a result, the <see cref="M:System.Runtime.Caching.ChangeMonitor.OnChanged(System.Object)" /> method is automatically invoked.  
   

@@ -23,7 +23,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.BaseCompareValidator> class is inherited by validation controls that compare values, such as the <xref:System.Web.UI.WebControls.CompareValidator> and <xref:System.Web.UI.WebControls.RangeValidator> controls, to provide basic common functionality.  
   
- Use the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A> property to specify the data type that that the values are converted to before being compared.  
+ Use the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A> property to specify the data type that the values are converted to before being compared.  
   
 > [!NOTE]
 >  If the value of the input control being validated cannot be converted to the specified data type, validation fails. The <xref:System.Web.UI.WebControls.BaseValidator.IsValid%2A> property of the validation control is set to `false`.  

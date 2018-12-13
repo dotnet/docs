@@ -2689,7 +2689,7 @@ Directory::CreateDirectory("Public\\Html");
       <Docs>
         <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
         <param name="searchPattern">The search string to match against the names of file and directories in <paramref name="path" />.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</param>
-        <summary>Returns an array of file names and directory names that that match a search pattern in a specified path.</summary>
+        <summary>Returns an array of file names and directory names that match a search pattern in a specified path.</summary>
         <returns>An array of file names and directory names that match the specified search criteria, or an empty array if no files or directories are found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

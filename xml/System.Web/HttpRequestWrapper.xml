@@ -831,7 +831,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="offset" /> is a negative value.</exception>
+          <paramref name="offset" /> or <paramref name="count" /> is a negative value.</exception>
         <exception cref="T:System.ArgumentException">The number of items in <paramref name="count" /> is larger than the available space in <paramref name="buffer" />, given the <paramref name="offset" /> value.</exception>
       </Docs>
     </Member>
@@ -1066,7 +1066,12 @@
         <summary>Maps the specified virtual path to a physical path on the server.</summary>
         <returns>The physical path on the server.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Web.HttpException">No <see cref="T:System.Web.HttpContext" /> object is defined for the request.</exception>
+        <exception cref="T:System.Web.HttpException">
+          <paramref name="allowCrossAppMapping" /> is <see langword="false" /> and <paramref name="virtualPath" /> belongs to another application.
+
+-or-
+        
+No <see cref="T:System.Web.HttpContext" /> object is defined for the request.</exception>
       </Docs>
     </Member>
     <Member MemberName="MapRawImageCoordinates">

@@ -215,7 +215,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="enabled" /> is set to <see langword="true" /> and the process host was not previously passed an <see cref="T:System.Web.Hosting.IApplicationPreloadUtil" /> interface to its <see cref="M:System.Web.Hosting.IApplicationPreloadManager.SetApplicationPreloadUtil(System.Web.Hosting.IApplicationPreloadUtil)" /> method</exception>
+          The <see cref="T:System.Web.Hosting.IApplicationPreloadUtil" /> instance that contains information for preloading the application is <see langword="null" /> or empty.
+
+-or-
+
+<paramref name="appId" /> is <see langword="null" /> or empty.
+
+-or-
+
+<paramref name="enabled" /> is set to <see langword="true" /> and the process host was not previously passed an <see cref="T:System.Web.Hosting.IApplicationPreloadUtil" /> interface to its <see cref="M:System.Web.Hosting.IApplicationPreloadManager.SetApplicationPreloadUtil(System.Web.Hosting.IApplicationPreloadUtil)" /> method</exception>
         <forInternalUseOnly />
       </Docs>
     </Member>

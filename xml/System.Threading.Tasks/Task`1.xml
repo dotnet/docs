@@ -648,7 +648,7 @@ For operations that do not return a value, you use the <xref:System.Threading.Ta
       <Docs>
         <param name="continuationAction">An action to run when the <see cref="T:System.Threading.Tasks.Task`1" /> completes. When run, the delegate is   passed the completed task and the caller-supplied state object as arguments.</param>
         <param name="state">An object representing data to be used by the continuation action.</param>
-        <summary>Creates a continuation that that is passed state information and that executes when the target <see cref="T:System.Threading.Tasks.Task`1" /> completes.</summary>
+        <summary>Creates a continuation that is passed state information and that executes when the target <see cref="T:System.Threading.Tasks.Task`1" /> completes.</summary>
         <returns>A new continuation <see cref="T:System.Threading.Tasks.Task" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

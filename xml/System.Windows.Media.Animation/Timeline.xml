@@ -209,7 +209,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> property to create animations that start slowly and then speed up as time progresses. The <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> property is useful for creating ease-in effects or making movement seem more natural. Use the <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> and <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> properties together to create animations that that start slowly, speed up, and then slow down again before finishing.  
+ Use the <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> property to create animations that start slowly and then speed up as time progresses. The <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> property is useful for creating ease-in effects or making movement seem more natural. Use the <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> and <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> properties together to create animations that start slowly, speed up, and then slow down again before finishing.  
   
 <a name="dependencyPropertyInfo_AccelerationRatio"></a>   
 ## Dependency Property Information  
@@ -818,7 +818,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> property to create animations that slow down before stopping. The <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> property is useful for creating ease-in effects or making movement seem more natural. Use the <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> and <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> properties together to create animations that that start slowly, speed up, and then slow down again before finishing.  
+ Use the <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> property to create animations that slow down before stopping. The <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> property is useful for creating ease-in effects or making movement seem more natural. Use the <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> and <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> properties together to create animations that start slowly, speed up, and then slow down again before finishing.  
   
 <a name="dependencyPropertyInfo_DecelerationRatio"></a>   
 ## Dependency Property Information  

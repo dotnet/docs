@@ -2175,7 +2175,7 @@ d.</elem>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property has faster performance than the <xref:System.Xml.XmlNode.PreviousSibling%2A> property but you can use it only to get a node of type <xref:System.Xml.XmlNodeType.Text>. To get any other type of node that that precedes this node, use the <xref:System.Xml.XmlNode.PreviousSibling%2A> property.  
+ This property has faster performance than the <xref:System.Xml.XmlNode.PreviousSibling%2A> property but you can use it only to get a node of type <xref:System.Xml.XmlNodeType.Text>. To get any other type of node that precedes this node, use the <xref:System.Xml.XmlNode.PreviousSibling%2A> property.  
   
  ]]></format>
         </remarks>

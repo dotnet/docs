@@ -848,8 +848,7 @@
       <Docs>
         <summary>Allows the first user to declare exclusive ownership of this dependency.</summary>
         <returns>
-          <see langword="true" />
-          <see langword="true" /> if the item was the first to take ownership otherwise <see langword="false" />. <see langword="false" />.</returns>
+          <see langword="true" /> if the item was the first to take ownership; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -628,9 +628,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>[Supported in the .NET Framework 4.5.2 and later versions]  
-  
- Schedules a task which can run in the background, independent of any request.  
+        <summary>Schedules a task which can run in the background, independent of any request.  
   
  This overloaded method doesn't flow the <see cref="T:System.Threading.ExecutionContext" /> or <see cref="T:System.Security.SecurityContext" /> from the caller to the callee. Therefore, members of those objects, such as the <see cref="P:System.Threading.Thread.CurrentPrincipal" /> property, will not flow from the caller to the callee.</summary>
       </Docs>
@@ -655,9 +653,7 @@
       </Parameters>
       <Docs>
         <param name="workItem">A unit of execution.</param>
-        <summary>[Supported in the .NET Framework 4.5.2 and later versions]  
-  
- Schedules a task which can run in the background, independent of any request.</summary>
+        <summary>Schedules a task which can run in the background, independent of any request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -690,9 +686,7 @@
       </Parameters>
       <Docs>
         <param name="workItem">A unit of execution.</param>
-        <summary>[Supported in the .NET Framework 4.5.2 and later versions]  
-  
- Schedules a task which can run in the background, independent of any request.</summary>
+        <summary>Schedules a task which can run in the background, independent of any request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

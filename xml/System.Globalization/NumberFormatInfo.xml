@@ -268,7 +268,7 @@
   
 <a name="currency"></a>   
 ### Modifying the currency symbol and pattern  
- The following example modifies a <xref:System.Globalization.NumberFormatInfo> object that that represents the formatting conventions of the en-US culture. It assigns the ISO-4217 currency symbol to the <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A> property and defines a pattern for currency values that consists of the currency symbol followed by a space and a numeric value.  
+ The following example modifies a <xref:System.Globalization.NumberFormatInfo> object that represents the formatting conventions of the en-US culture. It assigns the ISO-4217 currency symbol to the <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A> property and defines a pattern for currency values that consists of the currency symbol followed by a space and a numeric value.  
   
  [!code-csharp[System.Globalization.NumberFormatInfo.Customize#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.customize/cs/customize_currency1.cs#1)]
  [!code-vb[System.Globalization.NumberFormatInfo.Customize#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.customize/vb/customize_currency1.vb#1)]  

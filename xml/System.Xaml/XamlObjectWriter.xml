@@ -375,7 +375,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- XAML schema context is a necessary information source for most practical object-writing scenarios. The XAML schema context influences the type lookup for backing types and holds information about the assemblies where backing types exist. The default XAML schema context is based on CLR type-mapping rules. Frameworks typically provide their own XAML schema context in order to assure that that the assembly-loading mechanisms match the framework's programming amd application models.  
+ XAML schema context is a necessary information source for most practical object-writing scenarios. The XAML schema context influences the type lookup for backing types and holds information about the assemblies where backing types exist. The default XAML schema context is based on CLR type-mapping rules. Frameworks typically provide their own XAML schema context in order to assure that the assembly-loading mechanisms match the framework's programming amd application models.  
   
  ]]></format>
         </remarks>

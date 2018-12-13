@@ -658,7 +658,7 @@
       </Parameters>
       <Docs>
         <param name="controlId">The ID of the control whose event has the event handler to process.</param>
-        <param name="eventName">The event name of the <c>controlID</c> to filter on.</param>
+        <param name="eventName">The event name of the <paramref name="controlId" /> to filter on.</param>
         <param name="handlerName">The handler of the <paramref name="eventName" /> name to filter on.</param>
         <summary>Returns a value that indicates whether event handlers should be processed further by the parser filter.</summary>
         <returns>

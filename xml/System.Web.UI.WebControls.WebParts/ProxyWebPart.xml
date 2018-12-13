@@ -124,7 +124,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="originalPath" /> is specified but <paramref name="genericWebPartID" /> is <see langword="null" /> or an empty string.</exception>
+          <paramref name="originalID" /> is <see langword="null" /> or an empty string.
+
+-or-
+
+<paramref name="originalTypeName" /> is <see langword="null" /> or an empty string.
+
+-or-
+
+<paramref name="originalPath" /> is specified but <paramref name="genericWebPartID" /> is <see langword="null" /> or an empty string.</exception>
       </Docs>
     </Member>
     <Member MemberName="GenericWebPartID">

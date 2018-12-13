@@ -209,7 +209,12 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Web.HttpException">The value of a target property cannot be converted to the expected <see cref="T:System.Type" />.</exception>
+        <exception cref="T:System.Web.HttpException">
+          <see cref="P:System.Web.UI.WebControls.BaseValidator.ControlToValidate" /> and <see cref="P:System.Web.UI.WebControls.CompareValidator.ControlToCompare" /> have the same <see cref="P:System.Web.UI.Control.ID" />.
+
+-or-
+        
+The value of a target property cannot be converted to the expected <see cref="T:System.Type" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ControlToCompare">

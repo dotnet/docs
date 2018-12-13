@@ -205,7 +205,7 @@
       </Parameters>
       <Docs>
         <param name="msbuildBinPath">The fully qualified path to MSBuild.exe.</param>
-        <summary>This is the entry point method, which performs the project file format conversion. This method will overwrite "newProjectFile" if it already exists, so the caller of this method should confirm with the user that that's what he really wants to do.</summary>
+        <summary>This is the entry point method, which performs the project file format conversion. This method will overwrite "newProjectFile" if it already exists, so the caller of this method should confirm with the user if that's what he really wants to do.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

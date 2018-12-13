@@ -203,9 +203,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the status indicating whether the <see langword="ETag" /> header has been set  based on the timestamps of the file   dependencies of the handler.</summary>
+        <summary>Gets the status indicating whether the <see langword="ETag" /> header has been set based on the timestamps of the file dependencies of the handler.</summary>
         <returns>
-          <see langword="true" /> if the <see langword="ETag" /> header has been set  based on the timestamps of the file   dependencies of the handler; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the <see langword="ETag" /> header has been set based on the timestamps of the file dependencies of the handler; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,9 +271,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the status of the Last-Modified headerset to base on the timestamps of the   file dependencies of the handler.</summary>
+        <summary>Gets the status of the Last-Modified headerset to base on the timestamps of the file dependencies of the handler.</summary>
         <returns>
-          <see langword="true" /> if the Last-Modified header  is set to base on the timestamps of the   file dependencies of the handler; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the Last-Modified header is set to base on the timestamps of the file dependencies of the handler; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -364,7 +364,7 @@
       <Docs>
         <summary>Gets the status of the HTTP No-Transform Directive.</summary>
         <returns>
-          <see langword="true" /> if the HTTP No-Transform Directive is set; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the HTTP No-Transform Directive is set; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -437,8 +437,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the Cache-Control: header to reflect either the must-revalidate or   proxy-revalidate directives.</summary>
-        <returns>The Cache-Control: header to reflect either the must-revalidate or   proxy-revalidate directives.</returns>
+        <summary>Gets the Cache-Control: header to reflect either the must-revalidate or proxy-revalidate directives.</summary>
+        <returns>The Cache-Control: header to reflect either the must-revalidate or proxy-revalidate directives.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

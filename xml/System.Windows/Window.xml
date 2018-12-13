@@ -1694,7 +1694,7 @@
  When you open a child window by calling <xref:System.Windows.Window.ShowDialog%2A>, you should also set the <xref:System.Windows.Window.Owner%2A> property of the child window. If you don't, then your users won't be able to restore both child window and parent window by pressing the task bar button. Instead, pressing the task bar button will yield a list of windows, including both child and parent window, for them to select; only the selected window is restored.  
   
 > [!IMPORTANT]
->  You should also set the <xref:System.Windows.Window.Owner%2A> property on a window that that is opened by calling <xref:System.Windows.Window.ShowDialog%2A> to ensure correct behavior with .  
+>  You should also set the <xref:System.Windows.Window.Owner%2A> property on a window that is opened by calling <xref:System.Windows.Window.ShowDialog%2A> to ensure correct behavior with .  
   
 > [!NOTE]
 >  You cannot set or get this property when a window is hosted in a browser.  

@@ -486,8 +486,8 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The key/value pair to add to the dictionary.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.Generic.ICollection`1.Add(`0)" />.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -517,9 +517,9 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The key and value pair to locate in the dictionary.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.Generic.ICollection`1.Contains(`0)" />.</summary>
+        <returns><see langword="true" /> if <paramref name="item" /> is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -547,9 +547,9 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from the dictionary.</param>
+        <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying starts.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)" />.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -577,8 +577,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
+        <value><see langword="true" /> if the dictionary is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -608,9 +608,9 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The key of the element to remove.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.Generic.ICollection`1.Remove(`0)" />.</summary>
+        <returns><see langword="true" /> if <paramref name="item" /> was successfully removed from the collection; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="item" /> is not found in the collection.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -638,8 +638,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>For a description of this member, see <see cref="P:System.Collections.Generic.IDictionary`2.Keys" />.</summary>
+        <value>A collection that contains the keys in the dictionary.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -667,8 +667,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>For a description of this member, see <see cref="P:System.Collections.Generic.IDictionary`2.Values" />.</summary>
+        <value>A collection that contains the values in the dictionary.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -696,8 +696,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
+        <returns>A structure for reading data in the dictionary.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>

@@ -100,7 +100,7 @@
       </Parameters>
       <Docs>
         <param name="context">Context information of a type.</param>
-        <param name="destinationType">The desired type that that this instance of <see cref="T:System.Windows.FontWeight" /> is being evaluated for conversion to.</param>
+        <param name="destinationType">The desired type that this instance of <see cref="T:System.Windows.FontWeight" /> is being evaluated for conversion to.</param>
         <summary>Determines whether an instance of <see cref="T:System.Windows.FontWeight" /> can be converted to a different type.</summary>
         <returns>
           <see langword="true" /> if the converter can convert this instance of <see cref="T:System.Windows.FontWeight" />; otherwise, <see langword="false" />.</returns>

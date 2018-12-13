@@ -103,14 +103,6 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">
-          <paramref name="input" /> contains a character that has an invalid Unicode value.</exception>
-        <exception cref="T:Microsoft.Security.Application.InvalidSurrogatePairException">
-          <paramref name="input" /> contained a high surrogate code point that was not followed by a low surrogate code point.  
-  
- -or-  
-  
- <paramref name="input" /> contained a low surrogate code point that was not preceded by a high surrogate code point.</exception>
       </Docs>
     </Member>
     <Member MemberName="HtmlAttributeEncode">
@@ -198,14 +190,6 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">
-          <paramref name="input" /> contains a character that has an invalid Unicode value.</exception>
-        <exception cref="T:Microsoft.Security.Application.InvalidSurrogatePairException">
-          <paramref name="input" /> contained a high surrogate code point that was not followed by a low surrogate code point.  
-  
- -or-  
-  
- <paramref name="input" /> contained a low surrogate code point that was not preceded by a high surrogate code point.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="HtmlEncode">
@@ -305,14 +289,6 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">
-          <paramref name="input" /> contains a character that has an invalid Unicode value.</exception>
-        <exception cref="T:Microsoft.Security.Application.InvalidSurrogatePairException">
-          <paramref name="input" /> contained a high surrogate code point that was not followed by a low surrogate code point.  
-  
- -or-  
-  
- <paramref name="input" /> contained a low surrogate code point that was not preceded by a high surrogate code point.</exception>
       </Docs>
     </Member>
     <Member MemberName="HtmlEncode">
@@ -401,14 +377,6 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">
-          <paramref name="input" /> contains a character that has an invalid Unicode value.</exception>
-        <exception cref="T:Microsoft.Security.Application.InvalidSurrogatePairException">
-          <paramref name="input" /> contained a high surrogate code point that was not followed by a low surrogate code point.  
-  
- -or-  
-  
- <paramref name="input" /> contained a low surrogate code point that was not preceded by a high surrogate code point.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="HtmlFormUrlEncode">
@@ -1036,14 +1004,6 @@ MarkAsSafe(
   
  ]]></format>
         </remarks>
-        <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">
-          <paramref name="input" /> contains a character that has an invalid Unicode value.</exception>
-        <exception cref="T:Microsoft.Security.Application.InvalidSurrogatePairException">
-          <paramref name="input" /> contained a high surrogate code point that was not followed by a low surrogate code point.  
-  
- -or-  
-  
- <paramref name="input" /> contained a low surrogate code point that was not preceded by a high surrogate code point.</exception>
       </Docs>
     </Member>
     <Member MemberName="XmlEncode">
@@ -1131,14 +1091,6 @@ MarkAsSafe(
   
  ]]></format>
         </remarks>
-        <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">
-          <paramref name="input" /> contains a character that has an invalid Unicode value.</exception>
-        <exception cref="T:Microsoft.Security.Application.InvalidSurrogatePairException">
-          <paramref name="input" /> contained a high surrogate code point that was not followed by a low surrogate code point.  
-  
- -or-  
-  
- <paramref name="input" /> contained a low surrogate code point that was not preceded by a high surrogate code point.</exception>
       </Docs>
     </Member>
   </Members>

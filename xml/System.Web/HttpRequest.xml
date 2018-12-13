@@ -1229,7 +1229,7 @@ End Class
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="offset" /> is a negative value.</exception>
+          <paramref name="offset" /> or <paramref name="count" /> is a negative value.</exception>
         <exception cref="T:System.ArgumentException">The number of items in <paramref name="count" /> is larger than the available space in <paramref name="buffer" />, given the <paramref name="offset" /> value.</exception>
         <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Web.AspNetHostingPermissionLevel.High" /></permission>
       </Docs>
@@ -1528,7 +1528,12 @@ End Class
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Web.HttpException">No <see cref="T:System.Web.HttpContext" /> object is defined for the request.</exception>
+        <exception cref="T:System.Web.HttpException">
+          <paramref name="allowCrossMapping" /> is <see langword="false" /> and <paramref name="virtualPath" /> belongs to another application.
+
+-or-
+        
+No <see cref="T:System.Web.HttpContext" /> object is defined for the request.</exception>
       </Docs>
     </Member>
     <Member MemberName="MapRawImageCoordinates">

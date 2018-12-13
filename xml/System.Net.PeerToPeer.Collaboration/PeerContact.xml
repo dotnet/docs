@@ -34,7 +34,7 @@
 ## Remarks  
  A contact represents a trusted peer. A <xref:System.Net.PeerToPeer.Collaboration.PeerContact> object must be created for a remote peer or <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> for a user to collaborate with the remote peer when it is outside of the "People Near Me" scope. A <xref:System.Net.PeerToPeer.Collaboration.PeerContact> object can exist as either an application running on a remote computer, or the user of a remote computer. An instance of this class can be added to the <xref:System.Net.PeerToPeer.Collaboration.ContactManager> which stores the contact information in a persistent manner.  
   
- An application invitation from a <xref:System.Net.PeerToPeer.Collaboration.PeerContact> is both authenticated and encrypted.  The UI dialog to accept or reject an invitation from a peer contact also indicates that that the inviter is trusted.  
+ An application invitation from a <xref:System.Net.PeerToPeer.Collaboration.PeerContact> is both authenticated and encrypted. The UI dialog to accept or reject an invitation from a peer contact also indicates that the inviter is trusted.  
   
  Subscribing to a <xref:System.Net.PeerToPeer.Collaboration.PeerContact> object means a remote peer can see its registered applications, objects and presence information. To subscribe to a <xref:System.Net.PeerToPeer.Collaboration.PeerContact>, the caller must be signed in to the peer collaboration infrastructure via <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn%2A> or signed in via the Windows UI.  All other operations do not require sign-in.  
   

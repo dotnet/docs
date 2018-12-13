@@ -342,7 +342,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> object that receives the server control content.</param>
-        <param name="output">To be added.</param>
+        <param name="output">The <see cref="T:System.Web.UI.HtmlTextWriter" /> object that receives the server control content.</param>
         <summary>Sends server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter" /> object, which writes the content to be rendered on the client.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

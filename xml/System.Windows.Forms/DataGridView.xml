@@ -228,7 +228,7 @@
         <Parameter Name="isLastVisibleColumn" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="dataGridViewAdvancedBorderStyleInput">A <see cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" /> that that represents the column header border style to modify.</param>
+        <param name="dataGridViewAdvancedBorderStyleInput">A <see cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" /> that represents the column header border style to modify.</param>
         <param name="dataGridViewAdvancedBorderStylePlaceholder">A <see cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" /> that is used to store intermediate changes to the column header border style.</param>
         <param name="isFirstDisplayedColumn">
           <see langword="true" /> to indicate that the <see cref="T:System.Windows.Forms.DataGridViewCell" /> that is currently being painted is in the first column displayed on the <see cref="T:System.Windows.Forms.DataGridView" />; otherwise, <see langword="false" />.</param>

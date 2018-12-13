@@ -93,7 +93,7 @@
       </Parameters>
       <Docs>
         <param name="context">Context information of a type.</param>
-        <param name="destinationType">The desired type that that this instance of <see cref="T:System.Windows.FontStretch" /> is being evaluated for conversion to.</param>
+        <param name="destinationType">The desired type that this instance of <see cref="T:System.Windows.FontStretch" /> is being evaluated for conversion to.</param>
         <summary>Determines whether an instance of <see cref="T:System.Windows.FontStretch" /> can be converted to a different type.</summary>
         <returns>
           <see langword="true" /> if the converter can convert <see cref="T:System.Windows.FontStretch" /> to <paramref name="destinationType" />; otherwise, <see langword="false" />.</returns>

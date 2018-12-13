@@ -63,7 +63,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="length" /> is less than zero.</exception>
+          <paramref name="offset" /> or <paramref name="length" /> is less than zero.</exception>
       </Docs>
     </Member>
     <Member MemberName="Length">

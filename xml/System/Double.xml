@@ -962,7 +962,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Floating-point operations return <xref:System.Double.NaN> to signal that that result of the operation is undefined. For example, dividing 0.0 by 0.0 results in <xref:System.Double.NaN>.  
+ Floating-point operations return <xref:System.Double.NaN> to signal that result of the operation is undefined. For example, dividing 0.0 by 0.0 results in <xref:System.Double.NaN>.  
   
 > [!NOTE]
 >  <xref:System.Double.IsNaN%2A> returns `false` if a <xref:System.Double> value is either <xref:System.Double.PositiveInfinity> or <xref:System.Double.NegativeInfinity>. To test for these values, use the <xref:System.Double.IsInfinity%2A>, <xref:System.Double.IsPositiveInfinity%2A>, and <xref:System.Double.IsNegativeInfinity%2A> methods.  

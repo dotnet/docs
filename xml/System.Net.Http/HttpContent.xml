@@ -192,7 +192,7 @@
 ## Remarks  
  This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the content has been written to the memory stream.  
   
- Once the operation completes, the  <xref:System.Threading.Tasks.Task%601.Result%2A> property on the returned task object contains the memory stream that that represents the HTTP content. The returned stream can then be used to read the content using various stream APIs.  
+ Once the operation completes, the  <xref:System.Threading.Tasks.Task%601.Result%2A> property on the returned task object contains the memory stream that represents the HTTP content. The returned stream can then be used to read the content using various stream APIs.  
   
  The <xref:System.Net.Http.HttpContent.CreateContentReadStreamAsync%2A> method buffers the content to a memory stream. Derived classes can override this behavior if there is a better way to retrieve the content as stream. For example, a byte array or a string could use a more efficient method way such as wrapping a read-only <xref:System.IO.MemoryStream> around the bytes or string.)  
   
@@ -502,7 +502,7 @@
 ## Remarks  
  This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the stream that represents content has been read.  
   
- Once the operation completes, the  <xref:System.Threading.Tasks.Task%601.Result%2A> property on the returned task object contains the stream that that represents the HTTP content. The returned stream can then be used to read the content using various stream APIs.  
+ Once the operation completes, the  <xref:System.Threading.Tasks.Task%601.Result%2A> property on the returned task object contains the stream that represents the HTTP content. The returned stream can then be used to read the content using various stream APIs.  
   
  ]]></format>
         </remarks>

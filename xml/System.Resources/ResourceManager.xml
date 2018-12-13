@@ -1423,7 +1423,7 @@ al /out:fr-FR\ShowNumbers.resources.dll /culture:fr-FR /embed:NumberResources.fr
       <Docs>
         <param name="name">The name of a resource.</param>
         <summary>Returns an unmanaged memory stream object from the specified resource.</summary>
-        <returns>An unmanaged memory stream object that represents a resource .</returns>
+        <returns>An unmanaged memory stream object that represents a resource.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

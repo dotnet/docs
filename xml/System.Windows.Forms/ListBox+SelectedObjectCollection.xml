@@ -207,8 +207,8 @@
         <Parameter Name="index" Type="System.Int32" Index="1" />
       </Parameters>
       <Docs>
-        <param name="destination">An <see cref="T:System.Array" /> representing the array to copy the contents of the collection to.</param>
-        <param name="dest">To be added.</param>
+         <param name="destination">An array to copy the contents of the collection to.</param>
+        <param name="dest">An array to copy the contents of the collection to.</param>
         <param name="index">The location within the destination array to copy the items from the collection to.</param>
         <summary>Copies the entire collection into an existing array at a specified location within the array.</summary>
         <remarks>

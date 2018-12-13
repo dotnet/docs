@@ -414,8 +414,8 @@
         <Parameter Name="arrayIndex" Type="System.Int32" Index="1" />
       </Parameters>
       <Docs>
-        <param name="destination">The object array in which the items from the collection are copied to.</param>
-        <param name="dest">To be added.</param>
+        <param name="destination">The object array to which the items from the collection are copied.</param>
+        <param name="dest">The object array to which the items from the collection are copied.</param>
         <param name="arrayIndex">The location within the destination array to copy the items from the collection to.</param>
         <summary>Copies the entire collection into an existing array of objects at a specified location within the array.</summary>
         <remarks>
@@ -767,7 +767,7 @@
       </Parameters>
       <Docs>
         <param name="destination">The one-dimensional array that is the destination of the elements copied from <see cref="T:System.Collections.ICollection" />. The array must have zero-based indexing.</param>
-        <param name="dest">To be added.</param>
+        <param name="dest">The one-dimensional array that is the destination of the elements copied from <see cref="T:System.Collections.ICollection" />. The array must have zero-based indexing.</param>
         <param name="index">The zero-based index in the array at which copying begins.</param>
         <summary>Copies the elements of the collection to an array, starting at a particular array index.</summary>
         <remarks>

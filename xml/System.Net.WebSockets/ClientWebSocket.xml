@@ -145,9 +145,7 @@
         <param name="statusDescription">A description of the close status.</param>
         <param name="cancellationToken">A cancellation token used to propagate notification that this  operation should be canceled.</param>
         <summary>Close the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -198,9 +196,7 @@
         <param name="statusDescription">A description of the close status.</param>
         <param name="cancellationToken">A cancellation token used to propagate notification that this  operation should be canceled.</param>
         <summary>Close the output for the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -239,9 +235,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the reason why the close handshake was initiated on <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance.</summary>
-        <value>Returns <see cref="T:System.Net.WebSockets.WebSocketCloseStatus" />.  
-  
- The reason why the close handshake was initiated.</value>
+        <value>The reason why the close handshake was initiated.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,9 +267,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a description of the reason why the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance was closed.</summary>
-        <value>Returns <see cref="T:System.String" />.  
-  
- The description of the reason why the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance was closed.</value>
+        <value>The description of the reason why the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance was closed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,9 +309,7 @@
         <param name="uri">The URI of the WebSocket server to connect to.</param>
         <param name="cancellationToken">A cancellation token used to propagate notification that the  operation should be canceled.</param>
         <summary>Connect to a WebSocket server as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -397,9 +387,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the WebSocket options for the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance.</summary>
-        <value>Returns <see cref="T:System.Net.WebSockets.ClientWebSocketOptions" />.  
-  
- The WebSocket options for the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance.</value>
+        <value>The WebSocket options for the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -435,10 +423,8 @@
       <Docs>
         <param name="buffer">The buffer to receive the response.</param>
         <param name="cancellationToken">A cancellation token used to propagate notification that this  operation should be canceled.</param>
-        <summary>Receive data on <see cref="T:System.Net.WebSockets.ClientWebSocket" /> as an asynchronous operation.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.  
-  
- The task object representing the asynchronous operation.</returns>
+        <summary>Receives data on <see cref="T:System.Net.WebSockets.ClientWebSocket" /> as an asynchronous operation.</summary>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -528,10 +514,8 @@
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get the WebSocket state of the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance.</summary>
-        <value>Returns <see cref="T:System.Net.WebSockets.WebSocketState" />.  
-  
- The WebSocket state of the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance.</value>
+        <summary>Gets the WebSocket state of the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance.</summary>
+        <value>The WebSocket state of the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -563,9 +547,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the supported WebSocket sub-protocol for the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance.</summary>
-        <value>Returns <see cref="T:System.String" />.  
-  
- The supported WebSocket sub-protocol.</value>
+        <value>The supported WebSocket sub-protocol.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -171,7 +171,7 @@
           <paramref name="securityElement" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.SecurityElement.Tag" /> property of <paramref name="securityElement" /> is not equal to "IPermission".  
   
- <see langword="-" /> or-  
+-or-  
   
  The class <see cref="M:System.Security.SecurityElement.Attribute(System.String)" /> of <paramref name="securityElement" /> is <see langword="null" /> or an empty string ("").</exception>
         <altmember cref="T:System.Security.ISecurityEncodable" />

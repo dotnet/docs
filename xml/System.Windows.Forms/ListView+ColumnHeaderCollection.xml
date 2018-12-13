@@ -318,7 +318,7 @@
       </Parameters>
       <Docs>
         <param name="text">The text to display in the column header.</param>
-        <param name="str">To be added.</param>
+        <param name="str">The text to display in the column header.</param>
         <param name="width">The initial width of the column header.</param>
         <param name="textAlign">One of the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> values.</param>
         <summary>Adds a column header to the collection with specified text, width, and alignment settings.</summary>
@@ -961,7 +961,7 @@
       <Docs>
         <param name="index">The zero-based index location where the column header is inserted.</param>
         <param name="text">The text to display in the column header.</param>
-        <param name="str">To be added.</param>
+        <param name="str">The text to display in the column header.</param>
         <param name="width">The initial width of the column header. Set to -1 to autosize the column header to the size of the largest subitem text in the column or -2 to autosize the column header to the size of the text of the column header.</param>
         <param name="textAlign">One of the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> values.</param>
         <summary>Creates a new column header and inserts it into the collection at the specified index.</summary>

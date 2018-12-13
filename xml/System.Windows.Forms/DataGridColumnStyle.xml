@@ -668,7 +668,7 @@
         <param name="rowNum">The row number in this column which is being edited.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> in which the control is to be sited.</param>
         <param name="readOnly">A value indicating whether the column is a read-only. <see langword="true" /> if the value is read-only; otherwise, <see langword="false" />.</param>
-        <param name="instantText">To be added.</param>
+        <param name="instantText">The text to display in the control.</param>
         <summary>Prepares the cell for editing using the specified <see cref="T:System.Windows.Forms.CurrencyManager" />, row number, and <see cref="T:System.Drawing.Rectangle" /> parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -726,7 +726,7 @@
         <param name="rowNum">The row number in this column which is being edited.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> in which the control is to be sited.</param>
         <param name="readOnly">A value indicating whether the column is a read-only. <see langword="true" /> if the value is read-only; otherwise, <see langword="false" />.</param>
-        <param name="instantText">To be added.</param>
+        <param name="instantText">The text to display in the control.</param>
         <param name="cellIsVisible">A value indicating whether the cell is visible. <see langword="true" /> if the cell is visible; otherwise, <see langword="false" />.</param>
         <summary>When overridden in a deriving class, prepares a cell for editing.</summary>
         <remarks>
@@ -1901,7 +1901,7 @@
         <param name="source">The <see cref="T:System.Windows.Forms.CurrencyManager" /> associated with the <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</param>
         <param name="displayText">The new value.</param>
         <param name="rowNum">The row to update.</param>
-        <param name="instantText">To be added.</param>
+        <param name="instantText">The new value.</param>
         <summary>Updates the value of a specified row with the given text.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -155,7 +155,12 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="items" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The cell is in a shared row.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          One or more of the items in the <paramref name="items" /> array is <see langword="null" />.
+
+-or-
+
+The cell is in a shared row.</exception>
         <exception cref="T:System.ArgumentException">The cell's <see cref="P:System.Windows.Forms.DataGridViewComboBoxCell.DataSource" /> property value is not <see langword="null" />.</exception>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
         <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />
@@ -186,7 +191,12 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The cell is in a shared row.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          One or more of the items in the <paramref name="value" /> collection is <see langword="null" />.
+
+-or-
+
+The cell is in a shared row.</exception>
         <exception cref="T:System.ArgumentException">The cell's <see cref="P:System.Windows.Forms.DataGridViewComboBoxCell.DataSource" /> property value is not <see langword="null" />.</exception>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
         <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />
@@ -277,7 +287,7 @@
       </Parameters>
       <Docs>
         <param name="destination">The destination array to which the contents will be copied.</param>
-        <param name="arrayIndex">The index of the element in <c>dest</c> at which to start copying.</param>
+        <param name="arrayIndex">The index of the element in <paramref name="destination" /> at which to start copying.</param>
         <summary>Copies the entire collection into an existing array of objects at a specified location within the array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

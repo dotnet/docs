@@ -135,9 +135,7 @@
         <param name="statusDescription">Specifies a human readable explanation as to why the connection is closed.</param>
         <param name="cancellationToken">The token that can be used to propagate notification that operations should be canceled.</param>
         <summary>Closes the WebSocket connection as an asynchronous operation using the close handshake defined in the <see href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-06">WebSocket protocol specification</see> section 7.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -185,9 +183,7 @@
         <param name="statusDescription">Allows applications to specify a human readable explanation as to why the connection is closed.</param>
         <param name="cancellationToken">The token that can be used to propagate notification that operations should be canceled.</param>
         <summary>Initiates or completes the close handshake defined in the <see href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-06">WebSocket protocol specification section 7</see>.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.  
-  
- The task object representing the asynchronous operation.</returns>
+        <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -307,9 +303,7 @@
         <param name="receiveBufferSize">The size, in bytes, of the client receive buffer.</param>
         <param name="sendBufferSize">The size, in bytes, of the send buffer.</param>
         <summary>Create client buffers to use with this <see cref="T:System.Net.WebSockets.WebSocket" /> instance.</summary>
-        <returns>Returns <see cref="T:System.ArraySegment`1" />.  
-  
- An array with the client buffers.</returns>
+        <returns>An array with the client buffers.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -477,7 +471,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the default WebSocket protocol keep-alive interval.</summary>
-        <value>Returns the default WebSocket protocol keep-alive interval. The typical value for this interval is 30 seconds (as defined by the OS or the .NET platform). It is used to initialize <see cref="P:System.Net.WebSockets.ClientWebSocketOptions.KeepAliveInterval" /> value.</value>
+        <value>The default WebSocket protocol keep-alive interval. The typical value for this interval is 30 seconds (as defined by the OS or the .NET platform). It is used to initialize <see cref="P:System.Net.WebSockets.ClientWebSocketOptions.KeepAliveInterval" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -560,9 +554,7 @@
       <Parameters />
       <Docs>
         <summary>Returns a value that indicates if the WebSocket instance is targeting [!INCLUDE[net_v45](~/includes/net-v45-md.md)].</summary>
-        <returns>Returns <see cref="T:System.Boolean" />.  
-  
- <see langword="true" /> if the <see cref="T:System.Net.WebSockets.WebSocket" /> is targeting [!INCLUDE[net_v45](~/includes/net-v45-md.md)]; otherwise <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.Net.WebSockets.WebSocket" /> is targeting [!INCLUDE[net_v45](~/includes/net-v45-md.md)]; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -597,9 +589,7 @@
       <Docs>
         <param name="state">The current state of the WebSocket.</param>
         <summary>Returns a value that indicates if the state of the WebSocket instance is closed or aborted.</summary>
-        <returns>Returns <see cref="T:System.Boolean" />.  
-  
- <see langword="true" /> if the <see cref="T:System.Net.WebSockets.WebSocket" /> is closed or aborted; otherwise <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.Net.WebSockets.WebSocket" /> is closed or aborted; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -636,9 +626,7 @@
         <param name="buffer">References the application buffer that is the storage location for the received data.</param>
         <param name="cancellationToken">Propagates the notification that operations should be canceled.</param>
         <summary>Receives data from the <see cref="T:System.Net.WebSockets.WebSocket" /> connection asynchronously.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.  
-  
- The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns a <see cref="T:System.Byte" /> array containing the received data.</returns>
+        <returns>The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns a <see cref="T:System.Byte" /> array containing the received data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -837,7 +825,7 @@
       </ReturnValue>
       <Docs>
         <summary>Returns the current state of the WebSocket connection.</summary>
-        <value>Returns <see cref="T:System.Net.WebSockets.WebSocketState" />.</value>
+        <value>The current state of the WebSocket connection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -868,8 +856,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The subprotocol that was negotiated during the opening handshake.</summary>
-        <value>Returns <see cref="T:System.String" />.</value>
+        <summary>Gets the subprotocol that was negotiated during the opening handshake.</summary>
+        <value>The subprotocol that was negotiated during the opening handshake.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

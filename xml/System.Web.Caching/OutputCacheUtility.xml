@@ -166,7 +166,7 @@
         <param name="originalCacheUrl">The original cache URL.</param>
         <param name="response">The HTTP response.</param>
         <summary>Gets the kernel cache key.</summary>
-        <returns>The kernel cache key If the response can be kernel cached;         otherwise <see langword="null" /> .</returns>
+        <returns>The kernel cache key if the response can be kernel cached; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

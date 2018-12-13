@@ -139,7 +139,7 @@
         <typeparam name="T">The type of items in the read-only memory buffer.</typeparam>
         <param name="memory">The read-only memory buffer.</param>
         <summary>Creates a <see cref="T:System.Memory`1" /> instance from a <see cref="T:System.ReadOnlyMemory`1" />.</summary>
-        <returns>A memory block that represetns the same memory as the <see cref="T:System.ReadOnlyMemory`1" /> .</returns>
+        <returns>A memory block that represetns the same memory as the <see cref="T:System.ReadOnlyMemory`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

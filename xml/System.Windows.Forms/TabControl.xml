@@ -3145,7 +3145,8 @@
       <Docs>
         <param name="updateFocus">
           <see langword="true" /> to change focus to the next <see cref="T:System.Windows.Forms.TabPage" />; otherwise, <see langword="false" />.</param>
-        <param name="uiselected">To be added.</param>
+        <param name="uiselected">
+          <see langword="true" /> to change focus to the next <see cref="T:System.Windows.Forms.TabPage" />; otherwise, <see langword="false" />.</param>
         <summary>Sets the <see cref="P:System.Windows.Forms.TabPage.Visible" /> property to <see langword="true" /> for the appropriate <see cref="T:System.Windows.Forms.TabPage" /> control in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

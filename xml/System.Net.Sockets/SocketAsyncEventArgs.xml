@@ -1436,9 +1436,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the protocol to use to download the socket client access policy file.</summary>
-        <value>Returns <see cref="T:System.Net.Sockets.SocketClientAccessPolicyProtocol" />.  
-  
- The protocol to use to download the socket client access policy file.</value>
+        <value>The protocol to use to download the socket client access policy file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

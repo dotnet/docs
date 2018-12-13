@@ -95,9 +95,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a buffer with the data received in the UDP packet.</summary>
-        <value>Returns <see cref="T:System.Byte" />.  
-  
- A <see cref="T:System.Byte" /> array with the data received in the UDP packet.</value>
+        <value>A <see cref="T:System.Byte" /> array with the data received in the UDP packet.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -323,9 +321,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the remote endpoint from which the UDP packet was received.</summary>
-        <value>Returns <see cref="T:System.Net.IPEndPoint" />.  
-  
- The remote endpoint from which the UDP packet was received.</value>
+        <value>The remote endpoint from which the UDP packet was received.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

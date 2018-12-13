@@ -216,7 +216,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="reader" /> is not positioned on the starting element.</exception>
         <exception cref="T:System.InvalidOperationException">
-          There were problems reading the dialect attribute, namespace URI, or duplicate attributes were found.
+          There were problems reading the dialect attribute or namespace URI, or duplicate attributes were found.
 
 -or-
 

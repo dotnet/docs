@@ -325,7 +325,7 @@
         <param name="data">The data to encrypt.</param>
         <param name="padding">The padding mode.</param>
         <summary>Encrypts the input data using the specified padding.</summary>
-        <returns>Returns <see cref="T:System.Byte" /> .</returns>
+        <returns>The encrypted data.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="data" /> is <see langword="null" />.  

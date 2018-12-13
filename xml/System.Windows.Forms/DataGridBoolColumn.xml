@@ -372,7 +372,7 @@
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> in which the control is to be sited.</param>
         <param name="readOnly">
           <see langword="true" /> if the value is read only; otherwise, <see langword="false" />.</param>
-        <param name="instantText">To be added.</param>
+        <param name="instantText">The text to display in the cell.</param>
         <param name="cellIsVisible">
           <see langword="true" /> to show the cell; otherwise, <see langword="false" />.</param>
         <summary>Prepares the cell for editing a value.</summary>

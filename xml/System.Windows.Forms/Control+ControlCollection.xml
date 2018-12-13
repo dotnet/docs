@@ -439,7 +439,7 @@
         <summary>Searches for controls by their <see cref="P:System.Windows.Forms.Control.Name" /> property and builds an array of all the controls that match.</summary>
         <returns>An array of type <see cref="T:System.Windows.Forms.Control" /> containing the matching controls.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="key" /> parameter is <see langword="null" /> or the empty string ("").</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="key" /> is <see langword="null" /> or the empty string ("").</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetChildIndex">
@@ -985,7 +985,7 @@
         <Parameter Name="control" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="control">To be added.</param>
+        <param name="control">The object to add to this collection.</param>
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Add(System.Object)" />.</summary>
         <returns>To be added.</returns>
         <remarks>

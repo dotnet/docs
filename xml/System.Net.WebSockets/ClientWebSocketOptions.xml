@@ -116,9 +116,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a collection of client side certificates.</summary>
-        <value>Returns <see cref="T:System.Security.Cryptography.X509Certificates.X509CertificateCollection" />.  
-  
- A collection of client side certificates.</value>
+        <value>A collection of client side certificates.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,9 +148,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the cookies associated with the request.</summary>
-        <value>Returns <see cref="T:System.Net.CookieContainer" />.  
-  
- The cookies associated with the request.</value>
+        <value>The cookies associated with the request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,9 +180,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the credential information for the client.</summary>
-        <value>Returns <see cref="T:System.Net.ICredentials" />.  
-  
- The credential information for the client.</value>
+        <value>The credential information for the client.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,7 +212,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the WebSocket protocol keep-alive interval.</summary>
-        <value>Returns the WebSocket protocol keep-alive interval.</value>
+        <value>The WebSocket protocol keep-alive interval.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,9 +244,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the proxy for WebSocket requests.</summary>
-        <value>Returns <see cref="T:System.Net.IWebProxy" />.  
-  
- The proxy for WebSocket requests.</value>
+        <value>The proxy for WebSocket requests.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,9 +423,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a <see cref="T:System.Boolean" /> value that indicates if default credentials should be used during WebSocket handshake.</summary>
-        <value>Returns <see cref="T:System.Boolean" />.  
-  
- <see langword="true" /> if default credentials should be used during WebSocket handshake; otherwise <see langword="false" />. The default is <see langword="true" />.</value>
+        <value><see langword="true" /> if default credentials should be used during WebSocket handshake; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

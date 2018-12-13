@@ -329,7 +329,7 @@
         <param name="socket">The socket to perform the receive operation on.</param>
         <param name="buffer">An array that is the storage location for the received data.</param>
         <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
-        <summary>Receive data from a connected socket.</summary>
+        <summary>Receives data from a connected socket.</summary>
         <returns>A task that represents the asynchronous receive operation. The value of the <paramref name="TResult" /> parameter contains the number of bytes received.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -451,7 +451,7 @@
         <param name="buffer">An array of type Byte that is the storage location for the received data.</param>
         <param name="socketFlags">A bitwise combination of the <see cref="T:System.Net.Sockets.SocketFlags" /> values.</param>
         <param name="remoteEndPoint">An EndPoint that represents the source of the data.</param>
-        <summary>Receive data from a specified network device.</summary>
+        <summary>Receives data from a specified network device.</summary>
         <returns>An asynchronous Task that completes with a SocketReceiveFromResult struct.</returns>
         <remarks>To be added.</remarks>
       </Docs>

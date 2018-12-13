@@ -2125,7 +2125,27 @@ This method must be overridden in derived classes that support the UI automation
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">More than one argument is specified for a field set operation.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="invokeAttr" /> is <see cref="F:System.Reflection.BindingFlags.CreateInstance" /> and another bit flag is also set.
+
+-or-
+<paramref name="invokeAttr" /> is not <see cref="F:System.Reflection.BindingFlags.CreateInstance" /> and name is <see langword="null" />.
+
+-or-
+
+<paramref name="invokeAttr" /> is not an invocation attribute from <see cref="T:System.Reflection.BindingFlags" />.
+
+-or-
+
+<paramref name="invokeAttr" /> specifies both get and set for a property or field.
+
+-or-
+
+<paramref name="invokeAttr" /> specifies both a field set and an Invoke method.<paramref name="args" /> is provided for a field get operation.
+
+-or-
+
+More than one argument is specified for a field set operation.</exception>
         <exception cref="T:System.MissingFieldException">The field or property cannot be found.</exception>
         <exception cref="T:System.MissingMethodException">The method cannot be found.</exception>
         <exception cref="T:System.Security.SecurityException">A private member is invoked without the necessary <see cref="T:System.Security.Permissions.ReflectionPermission" />.</exception>

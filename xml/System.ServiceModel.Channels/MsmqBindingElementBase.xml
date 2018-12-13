@@ -461,7 +461,7 @@
         
 -or-
 
-The value is not infinite and larger than Int32.MaxValue milliseconds.</exception>
+The value is not infinite and is larger than Int32.MaxValue milliseconds.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy">
@@ -609,7 +609,7 @@ The value is not infinite and larger than Int32.MaxValue milliseconds.</exceptio
           
 -or-
 
-The value is not infinite and larger than Int32.MaxValue milliseconds.</exception>
+The value is not infinite and is larger than Int32.MaxValue milliseconds.</exception>
       </Docs>
     </Member>
     <Member MemberName="TransactedReceiveEnabled">

@@ -408,7 +408,7 @@
       </Parameters>
       <Docs>
         <param name="items">An array of <see cref="T:System.Windows.Forms.ListViewItem" /> objects to add to the collection.</param>
-        <param name="values">To be added.</param>
+        <param name="values">An array of <see cref="T:System.Windows.Forms.ListViewItem" /> objects to add to the collection.</param>
         <summary>Adds an array of <see cref="T:System.Windows.Forms.ListViewItem" /> objects to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1136,7 +1136,7 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the item in the collection to get or set.</param>
-        <param name="displayIndex">To be added.</param>
+        <param name="displayIndex">The index of the item in the collection to get or set.</param>
         <summary>Gets or sets the item at the specified index within the collection.</summary>
         <value>A <see cref="T:System.Windows.Forms.ListViewItem" /> representing the item located at the specified index within the collection.</value>
         <remarks>

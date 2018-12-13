@@ -1354,7 +1354,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="str" /> parameter was <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="end" /> parameter was less the <paramref name="start" /> parameter.</exception>
+        <exception cref="T:System.ArgumentException">
+          The <paramref name="start" /> parameter was less than zero.
+
+-or-
+        
+The <paramref name="end" /> parameter was less the <paramref name="start" /> parameter.</exception>
       </Docs>
     </Member>
     <Member MemberName="Font">

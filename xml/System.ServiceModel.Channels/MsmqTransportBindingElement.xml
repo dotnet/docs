@@ -121,7 +121,7 @@ ExactlyOnce is false and DeadLetterQueue is Custom.
 
 -or-
 
-CustomDeadLetterQueue is set and if there is no write permission to write to queue or if queue does not exist.
+CustomDeadLetterQueue is set and either there is no write permission to write to the queue, or the queue does not exist.
 
 -or-
 
@@ -129,7 +129,7 @@ CustomDeadLetterQueue is non-transactional.
 
 -or-
 
-MsmqTransportSecurity.MsmqAuthenticationMode is set to WindowsDomain and if MSMQ is installed without ActiveDirectory integration.
+MsmqTransportSecurity.MsmqAuthenticationMode is set to WindowsDomain and MSMQ is installed without ActiveDirectory integration.
 
 -or-
 
@@ -215,7 +215,7 @@ ReceiveErrorHandling is set to Reject or Move and the platform is Windows Vista.
 
 -or-
 
-MsmqTransportSecurity.MsmqAuthenticationMode is set to WindowsDomain and if MSMQ is installed without ActiveDirectory integration.
+MsmqTransportSecurity.MsmqAuthenticationMode is set to WindowsDomain and MSMQ is installed without ActiveDirectory integration.
 
 -or-
 

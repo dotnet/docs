@@ -141,7 +141,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="binding" /> is null.</exception>
-        <exception cref="T:System.ArgumentException">The <see cref="T:System.Windows.Forms.Binding" /> does not specify a valid column of the <see cref="P:System.Windows.Forms.Binding.DataSource" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          The control property is already data-bound.
+
+-or-
+
+The <see cref="T:System.Windows.Forms.Binding" /> does not specify a valid column of the <see cref="P:System.Windows.Forms.Binding.DataSource" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -192,7 +197,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="binding" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Exception">The <paramref name="dataMember" /> doesn't specify a valid member of the <paramref name="dataSource" />.</exception>
+        <exception cref="T:System.Exception">
+          The <paramref name="propertyName" /> is already data-bound.
+
+-or-
+
+The <paramref name="dataMember" /> doesn't specify a valid member of the <paramref name="dataSource" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">

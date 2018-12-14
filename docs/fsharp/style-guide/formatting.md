@@ -436,20 +436,22 @@ Always use at least one space between two distinct brace-like operators. For exa
  { IngredientName = "Lemon"; Quantity = 1 }]
 ```
 
+The same guideline applies for lists or arrays of tuples.
+
 Lists and arrays that split across multiple lines follow a similar rule as records do:
 
 ```fsharp
 let pascalsTriangle =
     [|
-        [|1|]
-        [|1; 1|]
-        [|1; 2; 1|]
-        [|1; 3; 3; 1|]
-        [|1; 4; 6; 4; 1|]
-        [|1; 5; 10; 10; 5; 1|]
-        [|1; 6; 15; 20; 15; 6; 1|]
-        [|1; 7; 21; 35; 35; 21; 7; 1|]
-        [|1; 8; 28; 56; 70; 56; 28; 8; 1|]
+        [| 1 |]
+        [| 1; 1 |]
+        [| 1; 2; 1 |]
+        [| 1; 3; 3; 1 |]
+        [| 1; 4; 6; 4; 1 |]
+        [| 1; 5; 10; 10; 5; 1 |]
+        [| 1; 6; 15; 20; 15; 6; 1 |]
+        [| 1; 7; 21; 35; 35; 21; 7; 1 |]
+        [| 1; 8; 28; 56; 70; 56; 28; 8; 1 |]
     |]
 ```
 

@@ -25,16 +25,19 @@ For download links and more information, see [.NET Core 3.0 downloads](https://d
 
 .NET Core 3.0 Preview 1 is supported on the following Linux distributions/versions. 
 
-* Red Hat Enterprise Linux 7, 6 - 64-bit (`x86_64` or `amd64`)
-* CentOS 7  - 64-bit (`x86_64` or `amd64`)
-* Oracle Linux 7 - 64-bit (`x86_64` or `amd64`)
-* Fedora 28, 27, 26 - 64-bit (`x86_64` or `amd64`)
-* Debian 9 (64-bit, `arm32`, or `arm64`)
-* Ubuntu 18.04 (64-bit, `arm32`, or `arm64`), 16.04 (64-bit, `arm32`, or `arm64`)
-* Linux Mint 18, 17 - 64-bit (`x86_64` or `amd64`)
-* openSUSE 42.3 or later versions - 64-bit (`x86_64` or `amd64`)
-* SUSE Enterprise Linux (SLES) 12 Service Pack 2 or later - 64-bit (`x86_64` or `amd64`)
-* Alpine Linux 3.8 - 64-bit (`x86_64`, `amd64`, or `arm64`)
+OS                            | Version               | Architectures  
+------------------------------|-----------------------|----------------
+Red Hat Enterprise Linux      | 6, 7                  | x64
+CentOS<br>Oracle Linux        | 7                     | x64
+Fedora                        | 28                    | x64
+Debian                        | 9                     | x64, ARM32\*, ARM64\*
+Ubuntu                        | 16.04+, 18.04+        | x64, ARM32\*, ARM64\*
+Linux Mint                    | 18                    | x64
+openSUSE                      | 42.3+                 | x64
+SUSE Enterprise Linux (SLES)  | 12 SP2+               | x64
+Alpine Linux                  | 3.8+                  | x64
+
+\* ARM32 and ARM64 support starts with Debian 9 and Ubuntu 16.04. Earlier versions of those distros are not supported on ARM chips.
 
 See [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) for the complete list of .NET Core 3.0 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
 

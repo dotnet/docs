@@ -458,6 +458,18 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/add-ins/index.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/add-ins/pipeline-development.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb384201(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/add-ins/walkthrough-create-extensible-app.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb788290(v%3dvs.100)"
+        },
+        {
             "source_path": "docs/framework/deployment/repair.md",
             "redirect_url": "/dotnet/framework/install/repair"
         },
@@ -629,6 +641,10 @@
         {
             "source_path": "docs/framework/security/json-web-token-handler-api-reference.md",
             "redirect_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki"
+        },
+        {
+            "source_path": "docs/standard/design-guidelines/dispose-pattern.md",
+             "redirect_url": "/dotnet/standard/garbage-collection/implementing-dispose"
         },
         {
             "source_path": "docs/framework/wcf/extending/extending-wcf.md",

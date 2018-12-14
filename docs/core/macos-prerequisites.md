@@ -3,13 +3,23 @@ title: Prerequisites for .NET Core on Mac
 description: Supported macOS versions and .NET Core dependencies to develop, deploy, and run .NET Core applications on macOS machines.
 author: guardrex
 ms.author: adegeo
-ms.date: 12/03/2018
+ms.date: 12/14/2018
 ---
 # Prerequisites for .NET Core on macOS
 
 This article shows you the supported macOS versions and .NET Core dependencies that you need to develop, deploy, and run .NET Core applications on macOS machines. The supported OS versions and dependencies that follow apply to the three ways of developing .NET Core apps on a Mac: via the [command-line with your favorite editor](tutorials/using-with-xplat-cli.md), [Visual Studio Code](https://code.visualstudio.com/), and [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/).
 
 ## Supported macOS versions
+
+# [.NET Core 3.0 Preview 1](#tab/netcore30p1)
+
+.NET Core 3.0 Preview 1 is supported on the following versions of macOS:
+
+* macOS 10.12 "Sierra" and later versions
+
+See [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) for the complete list of .NET Core 3.0 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+
+For download links and more information, see [.NET Core 3.0 downloads](https://www.microsoft.com/net/download/dotnet-core/3.0).
 
 # [.NET Core 2.x](#tab/netcore2x)
 

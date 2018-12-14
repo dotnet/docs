@@ -3,7 +3,7 @@ title: Prerequisites for .NET Core on Linux
 description: Supported Linux versions and .NET Core dependencies to develop, deploy, and run .NET Core applications on Linux machines.
 author: thraka
 ms.author: adegeo
-ms.date: 12/03/2018
+ms.date: 12/14/2018
 ---
 # Prerequisites for .NET Core on Linux
 
@@ -16,6 +16,30 @@ This article shows the dependencies needed to develop .NET Core applications on 
 > The .NET Core SDK package is not required for production servers/environments. Only the .NET Core runtime package is needed for apps deployed to production environments. The .NET Core runtime is deployed with apps as part of a self-contained deployment, however, it must be deployed for Framework-dependent deployed apps separately. For more information about framework-dependent and self-contained deployment types, see [.NET Core application deployment](./deploying/index.md). Also see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md) for specific guidelines.
 
 ## Supported Linux versions
+
+# [.NET Core 3.0 Preview 1](#tab/netcore30p1)
+
+.NET Core 3.0 Preview 1 treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions. 
+
+For download links and more information, see [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+
+.NET Core 3.0 Preview 1 is supported on the following Linux distributions/versions. 
+
+* Red Hat Enterprise Linux 7, 6 - 64-bit (`x86_64` or `amd64`)
+* CentOS 7  - 64-bit (`x86_64` or `amd64`)
+* Oracle Linux 7 - 64-bit (`x86_64` or `amd64`)
+* Fedora 28, 27, 26 - 64-bit (`x86_64` or `amd64`)
+* Debian 9 (64-bit, `arm32`, or `arm64`)
+* Ubuntu 18.04 (64-bit, `arm32`, or `arm64`), 16.04 (64-bit, `arm32`, or `arm64`)
+* Linux Mint 18, 17 - 64-bit (`x86_64` or `amd64`)
+* openSUSE 42.3 or later versions - 64-bit (`x86_64` or `amd64`)
+* SUSE Enterprise Linux (SLES) 12 Service Pack 2 or later - 64-bit (`x86_64` or `amd64`)
+* Alpine Linux 3.8 - 64-bit (`x86_64`, `amd64`, or `arm64`)
+
+See [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) for the complete list of .NET Core 3.0 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+
+For more information about how to install .NET Core 3.0 on ARM64, see [Installing .NET Core 3.0 on Linux ARM64](https://gist.github.com/richlander/467813274cea8abc624553ee72b28213).
+
 
 # [.NET Core 2.x](#tab/netcore2x)
 

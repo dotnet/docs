@@ -19,6 +19,8 @@ Operands of the [built-in value types](../keywords/value-types-table.md) are equ
 
 [!code-csharp-interactive[value types equality](~/samples/snippets/csharp/language-reference/operators/EqualityAndNonEqualityExamples.cs#ValueTypesEquality)]
 
+Two [enum](../keywords/enum.md) operands are equal if the corresponding values of the underlying integral type are equal.
+
 By default, the `==` operator is not defined for a user-defined [struct](../keywords/struct.md) type. A user-defined type can [overload](#operator-overloadability) the `==` operator.
 
 Beginning with C# 7.3, the `==` and [`!=`](not-equal-operator.md) operators are supported by C# [tuples](../../tuples.md). For more information, see the [Equality and tuples](../../tuples.md#equality-and-tuples) section of the [C# tuple types](../../tuples.md) article.

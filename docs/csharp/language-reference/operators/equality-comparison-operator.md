@@ -19,7 +19,7 @@ Operands of the [built-in value types](../keywords/value-types-table.md) are equ
 
 [!code-csharp-interactive[value types equality](~/samples/snippets/csharp/language-reference/operators/EqualityAndNonEqualityExamples.cs#ValueTypesEquality)]
 
-Two [enum](../keywords/enum.md) operands are equal if the corresponding values of the underlying integral type are equal.
+Two operands of the same [enum](../keywords/enum.md) type are equal if the corresponding values of the underlying integral type are equal.
 
 By default, the `==` operator is not defined for a user-defined [struct](../keywords/struct.md) type. A user-defined type can [overload](#operator-overloadability) the `==` operator.
 

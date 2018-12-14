@@ -33,7 +33,7 @@ That is case-sensitive ordinal comparison. For more information about how to com
 
 ## Reference types equality
 
-Two reference type operands are equal when they refer to the same object:
+Two other than `string` reference type operands are equal when they refer to the same object:
 
 [!code-csharp-interactive[reference type equality](~/samples/snippets/csharp/language-reference/operators/EqualityAndNonEqualityExamples.cs#ReferenceTypesEquality)]
 

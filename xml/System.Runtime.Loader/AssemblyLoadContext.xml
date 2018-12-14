@@ -20,8 +20,56 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the runtime's concept of a scope for binding. This class is abstract.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks
+ The <xref:System.Runtime.Loader.AssemblyLoadContext> represents a load context. Conceptually, a load context creates a scope for loading, resolving, and potentially unloading a set of assemblies.
+ 
+ <xref:System.Runtime.Loader.AssemblyLoadContext> is an abstract class. The <xref:System.Runtime.Loader.AssemblyLoadContext.Load(System.Reflection.AssemblyName)?displayProperty=nameWithType> needs to be implemented to create a concrete class.
+ 
+ The <xref:System.Runtime.Loader.AssemblyLoadContext> exists primarily to provide assembly binding isolation. It allows multiple versions of the same assembly to be loaded within a single process. It replaces the isolation mechanisms provided by multiple <xref:System.AppDomain> instances in the .NET Framework.
+ 
+ > [!NOTE]
+ > <xref:System.Runtime.Loader.AssemblyLoadContext> does not provide any security features. All code has full permissions of the process.
+
+### Usage in the runtime
+ The runtime implements two assembly load contexts:
+     * <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> represents the runtime's default binding context which is used for the application main assembly and its static dependencies.
+     * The <xref:System.Reflection.Assembly.LoadFile(System.String)?displayProperty=nameWithType> method isolates the assemblies it loads by instantiating the most basic <xref:System.Runtime.Loader.AssemblyLoadContext>. It has a simplistic isolation scheme which loads each assembly in its own <xref:System.Runtime.Loader.AssemblyLoadContext> with no dependency resolution.
+ 
+### Application usage
+ An application can create its own <xref:System.Runtime.Loader.AssemblyLoadContext> to create a custom solution for advanced binding scenarios. The customization focuses on defining dependency resolution mechanisms.
+ 
+ The <xref:System.Runtime.Loader.AssemblyLoadContext> provides two extension points to implement managed assembly resolution:
+     1. The <xref:System.Runtime.Loader.AssemblyLoadContext.Load(System.Reflection.AssemblyName)?displayProperty=nameWithType> provides the first chance for the <xref:System.Runtime.Loader.AssemblyLoadContext> to resolve the assembly, load it and return it. If the <xref:System.Runtime.Loader.AssemblyLoadContext.Load(System.Reflection.AssemblyName)?displayProperty=nameWithType> returns `null`, the loader will try to load the assembly into the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType>.
+     2. If the <xref:System.Runtime.Loader.AssemblyLoadContext.Default?displayProperty=nameWithType> is unable to resolve the assembly, the original <xref:System.Runtime.Loader.AssemblyLoadContext> gets a second chance to resolve the assembly. The runtime raises the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving> event.
+ 
+ Additionally the <xref:System.Runtime.Loader.AssemblyLoadContext.LoadUnmanagedDll(System.String)?displayProperty=nameWithType> virtual method allows customization of the default unmanaged assembly resolution. The default implementation returns `null`, which causes the runtime search to use its default search policy which is sufficient for most scenarios.
+
+### Technical challenges
+ * It is not possible to load multiple versions of the runtime in a single process.
+	 > [!CAUTION]
+	 > Loading multiple copies or different versions of framework assemblies can lead to unexpected and hard to diagnose behavior.
+	 
+	 > [!TIP]
+	 > Use process boundaries with remoting and/or interprocess communication to solve this isolation problem.
+ 
+ * The timing of assembly loading can make testing and debugging difficult. Assemblies are typically loaded without their dependencies immediately being resolved. The dependencies are loaded as they are needed:
+     * When code branches into a dependent assembly.
+     * When code loads resources.
+     * When code explicitly loads assemblies.
+ 
+ * The implementation of <xref:System.Runtime.Loader.AssemblyLoadContext.Load(System.Reflection.AssemblyName)?displayProperty=nameWithType> can add new dependencies which may need to be isolated to allow different versions to exist. The most natural implementation would place these dependencies in the default context. Careful design can isolate the new dependencies.
+ 
+ * The binding isolation process creates multiple types with the same type name.
+     * This can lead to confusing error messages, for example "type Foo.Foo cannot be cast to type Foo.Foo."
+     * Marshalling across isolation boundaries is non-trivial. A typical solution would be to use an interface defined in an assembly which is only loaded into the default load context.
+ 
+ ]]></format>
+    </remarks>
+    <related type="Article" href="https://github.com/dotnet/coreclr/blob/master/Documentation/design-docs/assemblyloadcontext.md">AssemblyLoadContext CoreCLR design document</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,8 +91,16 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Loader.AssemblyLoadContext" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This constructor is protected. It can only be called from the <xref:System.Runtime.Loader.AssemblyLoadContext> class or its derived classes.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -69,8 +125,8 @@
         <ReturnType>System.Runtime.Loader.AssemblyLoadContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />. The default context contains the main application assembly and its static dependencies.</summary>
+        <value>The default assembly load context.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,11 +155,15 @@
         <Parameter Name="assemblyPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assemblyPath">The path to the assembly.</param>
+        <summary>Gets an <see cref="T:System.Reflection.AssemblyName" /> for an assembly path.</summary>
+        <returns>An object that contains the fully parsed assembly name for the assembly at <paramref name="assemblyPath" />.</returns>
         <remarks>To be added.</remarks>
-      </Docs>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assemblyPath" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The assembly cannot be found.</exception>
+        <exception cref="T:System.BadImageFormatException">The assembly is not a valid assembly.</exception>
+       </Docs>
     </Member>
     <Member MemberName="GetLoadContext">
       <MemberSignature Language="C#" Value="public static System.Runtime.Loader.AssemblyLoadContext GetLoadContext (System.Reflection.Assembly assembly);" />
@@ -129,10 +189,12 @@
         <Parameter Name="assembly" Type="System.Reflection.Assembly" />
       </Parameters>
       <Docs>
-        <param name="assembly">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assembly">An assembly.</param>
+        <summary>Gets the <see cref="T:System.Runtime.Loader.AssemblyLoadContext" /> containing the specified <see cref="T:System.Reflection.Assembly" />.</summary>
+        <returns>The assembly load context containing the <paramref name="assembly" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assembly" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -159,10 +221,20 @@
         <Parameter Name="assemblyName" Type="System.Reflection.AssemblyName" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="assemblyName">The object that describes the assembly to be loaded.</param>
+        <summary>When overridden in a derived class, allows an assembly to be resolved and loaded based on its <see cref="T:System.Reflection.AssemblyName" />.</summary>
+        <returns>The loaded assembly, or <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+ 
+## Remarks
+ During assembly resolution, the <xref:System.Runtime.Loader.AssemblyLoadContext.Load(System.Reflection.AssemblyName)> method has the first chance to resolve the assembly name to a loaded assembly. It can either load an assembly or return `null`. If it returns `null`, the resolution process continues. See <xref:System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyName(System.Reflection.AssemblyName)> for the full process description.
+ 
+ > [!IMPORTANT]
+ > To prevent recursive stack overflow, do not call this instance's <xref:System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyName(System.Reflection.AssemblyName)> method from this method.
+ 
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadFromAssemblyName">
@@ -189,10 +261,37 @@
         <Parameter Name="assemblyName" Type="System.Reflection.AssemblyName" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="assemblyName">The object that describes the assembly to load.</param>
+        <summary>Resolves and loads an assembly given its <see cref="T:System.Reflection.AssemblyName" />.</summary>
+        <returns>The loaded assembly, or throws.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ <xref:System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyName%2A> loads an assembly by resolving the <xref:System.Reflection.AssemblyName>. This triggers a full resolution. The resolution fallback sequence follows this process:
+     1. The method calls <xref:System.Runtime.Loader.AssemblyLoadContext.Load(System.Reflection.AssemblyName)>.
+         > [!IMPORTANT]
+         > <xref:System.Runtime.Loader.AssemblyLoadContext.Load(System.Reflection.AssemblyName)> must not call this method to prevent recursive stack overflow.
+     2. Unless the assembly is loaded or an exception is thrown, the method attempts to load the assembly in the default <xref:System.Runtime.Loader.AssemblyLoadContext>.
+     3. Unless the assembly is loaded or an exception is thrown, the method fires the <xref:System.Runtime.Loader.AssemblyLoadContext.Resolving> event.
+     4. Unless the assembly is loaded or an exception is thrown, the method fires the <xref:System.AppDomain.AssemblyResolve> event.
+ 
+ > [!NOTE]
+ > <xref:System.IO.FileLoadException> is thrown if `assemblyRef` specifies the full assembly name, and the first assembly that matches the simple name has a incompatible version or culture. The loader does not continue probing for other assemblies that match the simple name.
+ 
+ Each <xref:System.Runtime.Loader.AssemblyLoadContext> can load only:
+     * One version of an executable assembly.
+     * One version of a satellite assembly for each culture.
+ 
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assemblyName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="assemblyName" /> is not found.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyName" /> is not a valid assembly.</exception>
+        <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded which did not match the <paramref name="assemblyName" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="LoadFromAssemblyPath">
@@ -220,10 +319,16 @@
         <Parameter Name="assemblyPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assemblyPath">The fully qualified path of the file to load.</param>
+        <summary>Loads the contents of an assembly file on the specified path.</summary>
+        <returns>The loaded assembly.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="assemblyPath" /> argument is not an absolute path.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="assemblyPath" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.FileLoadException">A file that was found could not be loaded.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The <paramref name="assemblyPath" /> parameter is an empty string ("") or does not exist.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyPath" /> is not a valid assembly.</exception>
       </Docs>
     </Member>
     <Member MemberName="LoadFromNativeImagePath">
@@ -252,11 +357,27 @@
         <Parameter Name="assemblyPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="nativeImagePath">To be added.</param>
-        <param name="assemblyPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="nativeImagePath">The fully qualified path of the file to load.</param>
+        <param name="assemblyPath">The fully qualified path of the IL version of the file to load, or <see langword="null" />.</param>
+        <summary>Loads the contents of the native image of a managed assembly file on the specified path.</summary>
+        <returns>The loaded assembly.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ The native image of a managed assembly is pre-jitted to optimize running on a specific platform.
+ 
+ The assembly path refers to the path to the IL version of the assembly. It is an optional argument as the IL is typically included in the native image. It can be used by the runtime as a fallback if the native image is not found.
+ 
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="nativeImagePath" /> argument is not an absolute path.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="assemblyPath" /> argument is not an absolute path.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="nativeImagePath" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.FileLoadException">A file that was found could not be loaded.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The <paramref name="nativeImagePath" /> parameter is an empty string ("") or does not exist.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyPath" /> is not a valid assembly.</exception>
       </Docs>
     </Member>
     <Member MemberName="LoadFromStream">
@@ -283,10 +404,14 @@
         <Parameter Name="assembly" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="assembly">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assembly">A byte array that is a COFF-based image containing a managed assembly.</param>
+        <summary>Loads the assembly with a common object file format (COFF)-based image containing a managed assembly.</summary>
+        <returns>The loaded assembly.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assembly" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assembly" /> is not a valid assembly.</exception>
       </Docs>
     </Member>
     <Member MemberName="LoadFromStream">
@@ -314,11 +439,15 @@
         <Parameter Name="assemblySymbols" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="assembly">To be added.</param>
-        <param name="assemblySymbols">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assembly">A byte array that is a COFF-based image containing a managed assembly.</param>
+        <param name="assemblySymbols">A byte array that contains the raw bytes representing the symbols for the assembly.</param>
+        <summary>Loads the assembly with a common object file format (COFF)-based image containing a managed assembly, optionally including symbols for the assembly.</summary>
+        <returns>The loaded assembly.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assembly" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assembly" /> is not a valid assembly.</exception>
       </Docs>
     </Member>
     <Member MemberName="LoadUnmanagedDll">
@@ -346,10 +475,19 @@
         <Parameter Name="unmanagedDllName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="unmanagedDllName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="unmanagedDllName">Name of the unmanaged library. Typically this is the filename without its path or extensions. </param>
+        <summary>Allows derived class to load an unmanaged library by name.</summary>
+        <returns>A handle to the loaded library, or <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ The default implementation always return `null`. When `null` is returned, the runtime loads the library with its default policy.
+ 
+ This virtual method can be overridden to customize the unmanaged library search algorithm. When overridden the name can be used to identify the library. The loaded library does not need to match the requested name, but can be transformed as needed. This could include adjusting the name for platform specific naming.
+ 
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadUnmanagedDllFromPath">
@@ -377,10 +515,14 @@
         <Parameter Name="unmanagedDllPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="unmanagedDllPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="unmanagedDllPath">The path to the unmanaged library.</param>
+        <summary>Loads an unmanaged library from the specified path.</summary>
+        <returns>A handle to the loaded library.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="unmanagedDllPath" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="unmanagedDllPath" /> argument is not an absolute path.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The unmanaged library cannot be found.</exception>
       </Docs>
     </Member>
     <Member MemberName="Resolving">
@@ -405,8 +547,22 @@
         <ReturnType>System.Func&lt;System.Runtime.Loader.AssemblyLoadContext,System.Reflection.AssemblyName,System.Reflection.Assembly&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the resolution of an assembly fails when attempting to load into this assembly load context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ It is the responsibility of the handler for this event to return the assembly that is specified, or to return `null` if the assembly is not recognized.
+ 
+ > [!IMPORTANT]
+ >  If more than one event handler is registered for this event, the event handlers are called in order until an event handler returns a value that isn't `null`. Subsequent event handlers are ignored.
+ 
+ For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).
+ 
+ It is noteworthy that a handler can be added for this event on any <xref:System.Runtime.Loader.AssemblyLoadContext>, including the default context.
+ 
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetProfileOptimizationRoot">
@@ -491,7 +647,7 @@
         <ReturnType>System.Action&lt;System.Runtime.Loader.AssemblyLoadContext&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="T:System.Runtime.Loader.AssemblyLoadContext" /> is unloaded .</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -425,7 +425,7 @@
  For this event, the <xref:System.ResolveEventArgs.Name%2A?displayProperty=nameWithType> property returns the assembly name before policy is applied.  
   
 > [!IMPORTANT]
->  If more than one event handler is registered for this event, the event handlersarecalled in order until an event handler returns a value that isn't `null`. Subsequent event handlers are ignored.  
+>  If more than one event handler is registered for this event, the event handlers are called in order until an event handler returns a value that isn't `null`. Subsequent event handlers are ignored.
   
  For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   

@@ -1,0 +1,297 @@
+### YamlMime:Tutorial
+title: Explore C# 6 - C# interactive C# tutorial
+metadata:
+  title: Explore C# 6 - Try the new features in C# 6 interactively, using your browser
+  description: In this tutorial, you'll use your browser to explore C# 6 interactively. You'll explore the new idioms you can use with C# 6 that enable more concise and readable code.
+  audience: Developer
+  level: intermediate
+  ms.date: 12/11/2018
+  displayType: two-column
+  interactive: csharp
+items:
+- durationInMinutes: 1
+  content: |
+    This tutorial lets you explore C# 6 interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that modify earlier C# practices to use newer, more concise C# 6 features.
+- title: Read only auto-properties enable readonly types
+  durationInMinutes: 2
+  content: |
+    Two enhancements to auto-property syntax make it easier to use auto-properties in more places: read-only auto-properties and auto-property initializers. Consider this small program:
+
+    ```csharp
+    using System;
+
+    public class Person
+    {
+        public string FirstName { get; private set; }
+        public string LastName { get; private set; }
+
+        public Person(string first, string last)
+        {
+            FirstName = first;
+            LastName = last;
+        }
+
+        public override string ToString()
+        {
+            return FirstName + " " + LastName;
+        }
+
+        public string AllCaps()
+        {
+            FirstName = FirstName.ToUpper();
+            LastName = LastName.ToUpper();
+            return ToString();
+        }
+    }
+
+    public class Program
+    {
+        public static void Main()
+        {
+            var p = new Person("Bill", "Wagner");
+            Console.WriteLine("The name, in all caps " + p.AllCaps());
+            Console.WriteLine("The name " + p);
+        }
+    }
+    ```
+    
+    Click *Run* to see the error. The author of the `Person` class intended the strings for `FirstName` and `LastName` to be readonly. With C# 6, you can make that intent clear. Remove the `private set` from both properties to create a reaonly auto property. Click *Run* to see that the compiler spots the two locations where the `FirstName` and `LastName` properties are changed when they should not have been. You can change the `AllCaps` method to the following code to fix the compiler error:
+
+    ```csharp
+    public string AllCaps()
+    {
+      return FirstName.ToUpper() + " " + LastName.ToUpper();
+    }
+    ```
+
+    Using this new syntax, the compiler ensures that the properties are immutable.
+
+- title: Initialize backing fields for auto-properties
+  durationInMinutes: 1
+  content: |
+    New syntax in C# 6 enables you to use initializers for auto-properties. This becomes more important as classes grow new capabilities. Add a middle name property, and a new constructor that takes three strings to your `Person` class:
+
+    ```csharp
+    public string MiddleName { get; } = "";
+
+    public Person(string first, string middle, string last)
+    {
+        FirstName = first;
+        MiddleName = middle;
+        LastName = last;
+    }
+    ```
+
+    The assignment on the `MiddleName` property is an initializer. It initializes the compiler-generated backing field for the middle name.
+
+- title: Expression-bodied members
+  durationInMinutes: 2
+  content: |
+    Expression-bodied members provide a lightweight syntax for lightweight methods. The `Person` class has two great candidates.  Replace the declaration of `ToString` with the following code:
+
+    ```csharp
+    public override string ToString() => FirstName + " " + LastName;
+    ```
+
+    Try the same with the `Caps` method. This is a small improvement, but when used wisely it creates much more readable code, especially for Data Transfer Objects (DTOs) and other types with minimal behavior.
+
+- title: importing a single class
+  durationInMinutes: 2
+  content: |
+    You may use a class' static methods throughout our code. Repeatedly typing the class name obscures the meaning of your code. The `Person` class currently imports the `System` namespace, even those only <xref:System.Console?displayProperty=nameWithType> is used. Modify the `using` statement as follows:
+
+    ```csharp
+    using static System.Console;
+    ```
+    
+    The `static using` statement becomes more useful in larger programs that make extensive use of a single class with many static methods, like the `string` class or the <xref:System.Math?displayProperty=nameWithType> class.
+
+- title: A better string format
+  durationInMinutes: 2
+  content: |
+    C# 6 contains new syntax for composing strings from a string and embedded expressions that are evaluated to produce other string values. You can change the `ToString` and `AllCaps` methods to use this syntax:
+
+    ```csharp
+    public override string ToString() => $"{FirstName} {LastName}";
+    public string AllCaps() => $"{FirstName.ToUpper()} {LastName.ToUpper()}";
+    ```
+
+    Instead of positional arguments between the `{` and `}`, you write C# expressions directly. You can do the same in the `Main` method. Replace the existing code with the following:
+
+    ```csharp
+    var p = new Person("Bill", "Wagner");
+    Console.WriteLine($"The name, in all caps {p.AllCaps()}");
+    Console.WriteLine($"The name is {p}");
+    ```
+
+    You're not limited to a single variable in these expressions. Let's start with a new example and modify it to demonstrate. Paste the following code into the interactive window in the `Main` method:
+
+    ```csharp
+    var phrase = "the quick brown fox jumps over the lazy dog";
+    var wordLength = from word in phrase.Split(" ") select word.Length;
+    var average = wordLength.Average();
+    Console.WriteLine(average);
+    ```
+
+    You can remove the local variable `average` and perform that calculation as part of the interpolated string expression. Replace the last two lines with the following:
+
+    ```csharp
+    Console.WriteLine($"The average word length is: {wordLength.Average()}");
+    ```
+
+    Running the preceding example, you would find that the output for `Average()` has more decimal places than you would like. The string interpolation syntax supports all the format strings available using earlier formatting methods. You specify the format string inside the braces. Add a `:` following the expression to format:
+
+    ```csharp
+    Console.WriteLine($"The average word length is: {wordLength.Average():F2}");
+    ```
+
+- title: Quick and easy null checks
+  durationInMinutes: 2
+  content: |
+   The `?.` operator makes it easier to write logic that takes `null` values into account seamlessly, without extra `if` checks. To explore the feature, start by copying the following code into the interactive window to try it:
+
+   ```csharp
+   using System;
+
+   public class Program
+   {
+       public static void Main()
+       {
+         string s = null;
+         Console.WriteLine(s.Length);
+       }
+   }
+   ```
+
+   It throws a <xref:System.NullReferenceException>. Change the `.` member access to the **null conditional operator**:
+
+   ```csharp
+   Console.WriteLine(s?.Length);
+   ``` 
+
+   After this change, there's no output. That's because the result of `s?.Length` is a `int?` whose value in this example is `null`.  The `?.` returns `null` if its left operand is `null`. If the type of the right operand is a value type, the `?.` operator returns a nullable type for that type. In addition to `?.` you can use `?[]` for array or indexer access. Try the following code in the interactive window:
+
+    ```csharp
+    char? c = s?[0];
+    Console.WriteLine(c.HasValue);
+    ```
+
+    The null conditional operator composes, making it easy to avoid nested if clauses to access members of members. For example, try the following code in the interactive window:
+
+    ```csharp
+    string s = null;
+    bool? hasMore = s?.ToCharArray()?.GetEnumerator()?.MoveNext();
+    Console.WriteLine(hasMore.HasValue);
+    ```
+
+    The preceding example can be simplified by using the **null coalescing operator** to provide a default value:
+
+    ```csharp
+    bool hasMore = s?.ToCharArray()?.GetEnumerator()?.MoveNext() ?? false;
+    Console.WriteLine(hasMore);
+    ```
+
+    The **null conditional operator** helps you write code that makes your core logic clear while seamlessly testing for `null` values.
+
+- title: Exception filers
+  durationInMinutes: 2
+  content: |
+    Exception filters enable you to catch an exception based on some condition. A typical use is to create a filter method that logs exceptions and always returns false. Try the following code in the interactive window: It logs the exception type and message to the console. It returns false which indicates that the exception can't be handled. Try the program in the interactive window.
+
+    ```csharp
+    using System;
+
+    public class Program
+    {
+        public static void Main()
+        {
+            try 
+            {
+                string s = null;
+                Console.WriteLine(s.Length);
+
+                bool? hasMore = s?.ToCharArray()?.GetEnumerator()?.MoveNext();
+                Console.WriteLine(hasMore.HasValue);
+            } catch (Exception e) when (LogException(e))
+            {
+            }
+            Console.WriteLine("Exception must have been handled");
+        }
+
+        private static bool LogException(Exception e)
+        {
+            Console.WriteLine($"\tIn the log routine. Caught {e.GetType()}");
+            Console.WriteLine($"\tMessage: {e.Message}");
+            return false;
+        }
+    }
+    ```
+
+    You should have seen the message from the log method, followed by the default exception message. Just to experiment, change the `return false` statement to `return true` and run this again. Now, the exception is caught and the program runs to completion.
+
+    Beyond logging scenarios, exception filters can be most useful when a property of the exception determines what action to take. Consider looking inside an <xref:System.AggregateException> to see what the contained exceptions are.
+
+- title: using nameof
+  durationInMinutes: 2
+  content: |
+    The `nameof` operator returns the name of any variable or type. Try the following code in the interactive window to see how it works:
+
+    ```csharp
+    using System;
+
+    public class Program
+    {
+        public static void Main()
+        {
+            Console.WriteLine(nameof(System.String));
+            int j = 5;
+            Console.WriteLine(nameof(j));
+            List<string> names = new List<string>();
+            Console.WriteLine(nameof(names));
+        }
+    }
+    ```
+   
+    The output matches the name of the variable or type. Even when you provided the fully-qualified type name (such as `System.String`) the `nameof` operator returns the unqualified name. This feature is most useful when you need to convert a parameter or property name to a string. Examples include throwing <xref:System.ArgumentNullException> or <xref:System.ArgumentException>, or implementing <xref:System.ComponentModel.INotifyPropertyChanged>. 
+
+- title: New object initialization syntax
+  durationInMinutes: 2
+  content: |
+    New object initialization enables you to create methods that make it easier to initialize dictionaries, and other types. Start with a dictionary. Run the following code in the interactive window:
+
+    ```csharp
+    var messages = new Dictionary<int, string>
+    {
+        [404] = "Page not Found",
+        [302] = "Page moved, but left a forwarding address.",
+        [500] = "The web server can't come out to play today."
+    };
+
+    Console.WriteLine(messages[302]);
+    ```
+
+    You can extend this syntax to any class that implements <xref:System.Collections.IEnumerable> and has a publicly accessible `Add` method.  Try the following sample in the interactive window. It creates a `Path` class that implements `IEnumerable<Point3D>` and has a method to add points that takes three arguments. It also combines other techniques already demonstrated in this tutorial such as expression bodied members, and string interpolation. 
+
+    In the `Main` method, you initialize a path by providing coordinates for the points. Those points are added to the collection through the `Add` method.
+
+    The Add method can also be an extension method. You could update the preceding sample as follows. This sample won't compile in the interactive experience because of sandbox limitations. You can try it on your own machine.
+
+    ```csharp
+    public class Path : IEnumerable<Point3D>
+    {
+        private List<Point3D> points = new List<Point3D>();
+        public IEnumerator<Point3D> GetEnumerator() => points.GetEnumerator();
+        IEnumerator IEnumerable.GetEnumerator() => points.GetEnumerator();
+
+        public void Add(Point3D pt) => points.Add(pt);
+    }
+
+    public static class Extensions
+    {
+        public static void Add(this Path path, double x, double y, double z) => path.Add(new Point3D(x, y, z));
+    }
+    ```
+
+ - content: |
+    You've completed an exploration of the new features in C# 6. Now try them yourself in your applications.
+    

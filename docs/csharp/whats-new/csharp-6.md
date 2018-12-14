@@ -83,11 +83,11 @@ The `static using` directive also imports any nested types. You can reference an
 
 ## Null-conditional operators
 
-The *null conditional operator* makes null checks much easier and fluid. Replace the member access `.` with `?.` and use expressions between `{` and `}` instead of ordinals:
+The *null conditional operator* makes null checks much easier and fluid. Replace the member access `.` with `?.`:
 
 [!code-csharp[NullConditional](../../../samples/snippets/csharp/new-in-6/program.cs#NullConditional)]
 
-In the preceding example, the variable `first` is assigned `null` if the person object is `null`. Otherwise, it gets assigned the value of the `FirstName` property. Most importantly, the `?.` means that this line of code doesn't generate a `NullReferenceException` when the `person` variable is `null`. Instead, it short-circuits and produces `null`.
+In the preceding example, the variable `first` is assigned `null` if the person object is `null`. Otherwise, it gets assigned the value of the `FirstName` property. Most importantly, the `?.` means that this line of code doesn't generate a `NullReferenceException` when the `person` variable is `null`. Instead, it short-circuits and produces `null`. You can also use a null conditional operator for array or indexer access. Replace `[]` with `?[]` in the index expression.
 
 This expression returns a `string`, regardless of the value of `person`. When the expression short-circuits, the `null` value returned is typed to match the full expression.
 
@@ -109,7 +109,7 @@ Ensuring that the left side is evaluated only once also enables you to use any e
 
 ## String interpolation
 
-With C# 6, the new [string interpolation](../language-reference/tokens/interpolated.md) feature enables you to embed the expressions in a string. Simply preface the string with `$`:
+With C# 6, the new [string interpolation](../language-reference/tokens/interpolated.md) feature enables you to embed the expressions in a string. Simply preface the string with `$`and use expressions between `{` and `}` instead of ordinals:
 
 [!code-csharp[stringInterpolation](../../../samples/snippets/csharp/new-in-6/newcode.cs#FullNameExpressionMember)]
 

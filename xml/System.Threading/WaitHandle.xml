@@ -74,7 +74,8 @@
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type or a type derived from it, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.Threading.WaitHandle.Close%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
- <xref:System.Threading.WaitHandle> implements the <xref:System.IDisposable.Dispose%2A> pattern. See [Dispose Pattern](~/docs/standard/design-guidelines/dispose-pattern.md). When you derive from <xref:System.Threading.WaitHandle>, use the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A> property to store your native operating system handle. You do not need to override the protected <xref:System.Threading.WaitHandle.Dispose%2A> method unless you use additional unmanaged resources.  
+ <xref:System.Threading.WaitHandle> implements the <xref:System.IDisposable.Dispose%2A> pattern. See [Implementing a Dispose method](~/docs/standard/garbage-collection/implementing-dispose
+.md). When you derive from <xref:System.Threading.WaitHandle>, use the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A> property to store your native operating system handle. You do not need to override the protected <xref:System.Threading.WaitHandle.Dispose%2A> method unless you use additional unmanaged resources.  
   
    
   
@@ -487,7 +488,8 @@ Application code does not call this method; it is automatically invoked during g
 ## Remarks  
  When you assign a new value to the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A> property, the previous handle will be closed when the previous <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> object is collected. Do not manually close the handle, because this results in an <xref:System.ObjectDisposedException> when the <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> attempts to close the handle.  
   
- <xref:System.Threading.WaitHandle> implements the <xref:System.IDisposable.Dispose%2A> pattern. See [Dispose Pattern](~/docs/standard/design-guidelines/dispose-pattern.md). When you derive from <xref:System.Threading.WaitHandle>, use the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A> property to store your native handle operating system handle. You do not need to override the protected <xref:System.Threading.WaitHandle.Dispose%2A> method unless you use additional unmanaged resources.  
+ <xref:System.Threading.WaitHandle> implements the <xref:System.IDisposable.Dispose%2A> pattern. See [Implementing a Dispose method](~/docs/standard/garbage-collection/implementing-dispose
+.md). When you derive from <xref:System.Threading.WaitHandle>, use the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A> property to store your native handle operating system handle. You do not need to override the protected <xref:System.Threading.WaitHandle.Dispose%2A> method unless you use additional unmanaged resources.  
   
  ]]></format>
         </remarks>

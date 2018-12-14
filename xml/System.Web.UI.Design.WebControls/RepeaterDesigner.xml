@@ -252,7 +252,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>The <see cref="M:System.Web.UI.Design.WebControls.RepeaterDesigner.Dispose(System.Boolean)" /> method can be called multiple times by other objects. When overriding it, ensure that you do not reference objects that have been disposed in an earlier call to <see cref="M:System.Web.UI.Design.WebControls.RepeaterDesigner.Dispose(System.Boolean)" />. For more information about how to implement this method, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md). For more information about the Dispose and Finalize methods, see [Dispose Pattern](~/docs/standard/design-guidelines/dispose-pattern.md).</para>
+          <para>The <see cref="M:System.Web.UI.Design.WebControls.RepeaterDesigner.Dispose(System.Boolean)" /> method can be called multiple times by other objects. When overriding it, ensure that you do not reference objects that have been disposed in an earlier call to <see cref="M:System.Web.UI.Design.WebControls.RepeaterDesigner.Dispose(System.Boolean)" />. For more information about how to implement this method, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md). For more information about the Dispose and Finalize methods, see [Implementing a Dispose method](~/docs/standard/garbage-collection/implementing-dispose.md).</para>
         </block>
         <forInternalUseOnly />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">ASP.NET Control Designers Overview</related>

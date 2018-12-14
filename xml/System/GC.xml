@@ -1343,7 +1343,8 @@ This method is most useful in monitoring scenarios for measuring the difference 
    
   
 ## Examples  
- The following example demonstrates how to use the <xref:System.GC.SuppressFinalize%2A> method in a resource class to prevent a redundant garbage collection from being called. The example uses the [dispose pattern](~/docs/standard/design-guidelines/dispose-pattern.md) to free both managed resources (that is, objects that implement <xref:System.IDisposable>) and unmanaged resources.  
+ The following example demonstrates how to use the <xref:System.GC.SuppressFinalize%2A> method in a resource class to prevent a redundant garbage collection from being called. The example uses the [dispose pattern](~/docs/standard/garbage-collection/implementing-dispose
+.md) to free both managed resources (that is, objects that implement <xref:System.IDisposable>) and unmanaged resources.  
   
  [!code-csharp[System.GC.SuppressFinalize#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.gc.suppressfinalize/cs/suppressfinalize1.cs#1)]
  [!code-vb[System.GC.SuppressFinalize#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.gc.suppressfinalize/vb/suppressfinalize1.vb#1)]  

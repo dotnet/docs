@@ -21,6 +21,10 @@ ms.date: [12/10/2018]
 	3.	Preventing exceptions, not recovering from them, should be your first design objective.  
 		i.	Patterns and practices that prevent exceptions make your code stronger:
 			1.	Explicit business logic, robust validation, proper use of types, proper use of DBMS schema, DRY, SOLID.
+		ii.
+			1.  Resilience is your second goal
+				i. Use transactions when writing to a database
+				ii.  Consider using a resilience or fault-handling library. 
 	4.	Blindly running your application after an unhandled exception has occurred is almost always a bad choice.
 		i.	Running an application in an invalid or unknown state often leads to incorrect results, data corruption, intermittent errors and errors that are difficult or impossible to trace.
 		ii.	The default behavior for your application should be to stop processing when an exception occurs.
@@ -81,11 +85,10 @@ ms.date: [12/10/2018]
 		ii.	Include as much diagnostic information as possible in your error message.
 		iii. Include instructions on how the caller might prevent the error and/or the location of additional resources to help them resolve it.
 
-4.	Multi-threaded scenarios and Tasks
-	1.	[To-do]
 
-5.	Examples	[To-do]
+4.	Examples	[To-do]
 	1.	Global exception handler 
-	2.	Try/Catch
+	2.	Try/catch
+	3.	Try/catch/finally - examples with transactions, temp files
 	3.	Throw
 	4.	Task

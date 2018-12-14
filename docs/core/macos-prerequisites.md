@@ -11,16 +11,6 @@ This article shows you the supported macOS versions and .NET Core dependencies t
 
 ## Supported macOS versions
 
-# [.NET Core 3.0 Preview 1](#tab/netcore30p1)
-
-.NET Core 3.0 Preview 1 is supported on the following versions of macOS:
-
-* macOS 10.12 "Sierra" and later versions
-
-See [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) for the complete list of .NET Core 3.0 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
-
-For download links and more information, see [.NET Core 3.0 downloads](https://www.microsoft.com/net/download/dotnet-core/3.0).
-
 # [.NET Core 2.x](#tab/netcore2x)
 
 .NET Core 2.x is supported on the following versions of macOS:
@@ -44,6 +34,17 @@ See [.NET Core 1.1 Supported OS Versions](https://github.com/dotnet/core/blob/ma
 For download links and more information, see [.NET Core 1.1 downloads](https://www.microsoft.com/net/download/dotnet-core/1.1) or [.NET Core 1.0 downloads](https://www.microsoft.com/net/download/dotnet-core/1.0).
 
 ---
+
+# [.NET Core 3.0 Preview 1](#tab/netcore30)
+
+.NET Core 3.0 Preview 1 is supported on the following versions of macOS:
+
+* macOS 10.12 "Sierra" and later versions
+
+See [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) for the complete list of .NET Core 3.0 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+
+For download links and more information, see [.NET Core 3.0 downloads](https://www.microsoft.com/net/download/dotnet-core/3.0).
+
 
 ## .NET Core dependencies
 
